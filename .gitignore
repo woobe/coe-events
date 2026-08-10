@@ -216,3 +216,20 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# --- coe-events project policy ---
+# Local-only artifacts (plans, review reports) — never tracked
+/local/
+# Project memory bank — local-only
+/memory_bank.md
+# Project context hook — local-only
+/.hermes.md
+# In-progress bundle staging / pointer swap temp files (never tracked)
+**/.bundle-*.stage-*/
+**/.current.tmp-*
+# Python artifacts (kept alongside generic rules above)
+__pycache__/
+*.py[codz]
+.pytest_cache/
+.coverage*
+# NOTE: .bundle-* and current/ ARE tracked — they are the immutable evidence record.

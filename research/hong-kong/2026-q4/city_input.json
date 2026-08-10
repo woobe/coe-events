@@ -1,0 +1,32 @@
+{
+  "city_slug": "hong-kong-hk",
+  "city_name": "Hong Kong",
+  "country": "Hong Kong SAR",
+  "target_date": "2026-09-26",
+  "date_window": "2026-09-19 through 2026-10-31; candidate Saturdays: 2026-09-19, 2026-09-26, 2026-10-03, 2026-10-10, 2026-10-17, 2026-10-24, 2026-10-31",
+  "target_attendance": 50,
+  "currency": "HKD",
+  "currency_assumptions": [
+    "Costs retain their published local amount and ISO code: HKD where the venue publishes HKD (Banyan Workspace HK$888/hr, Garage Society HKD 3,000/hr, the Hive Wan Chai HK$2,500/hr and HK$1,250/hr).",
+    "HKD-to-USD conversion: European Central Bank euro foreign exchange reference rates, retrieved 2026-08-10 (ECB daily feed, https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml): EUR 1 = USD 1.1555 and EUR 1 = HKD 9.0653, therefore USD 1 = HKD 7.845348 (computed 9.0653 / 1.1555) and 1 HKD = USD 0.1274640663. This is a documented, date-stamped source rate; it is a planning conversion, not a bank/venue quote.",
+    "All USD estimates are derived 8-hour calculations labeled in evidence.inference and rate_estimate_note; +taxes/fees and any AV add-ons are preserved as verification questions where the page does not show them included.",
+    "Good Lab's published '$900-$1,200' hourly figures carry no HKD marker and the page's Webflow currency setting declares USD; per the Run A currency rule the HKD amount is not page-visible, so its cost stays null with a confirm-currency question instead of an assumed conversion.",
+    "The Wave homepage advertises an event-space Flash Sale 'From $1,200/Hour' without a currency marker; the official event-space page is quote-based, so cost stays null with a confirm-cost question."
+  ],
+  "workflow_phase": "venue",
+  "budget_usd": 5000.0,
+  "event_duration_hours": 8,
+  "decision_note": "target_date set to the recommended Saturday 2026-09-26. Per the Budapest rollout precedent (kanban t_f4ae38cc, Joe's 2026-08-10 instruction 'Don't worry too much about the date. Just continue.'), the bundle carries a concrete recommended date so the summary can render. The plan's date-recommendation logic names no preferred Saturday for Hong Kong (recommendation.selected_venue is null; the plan states Joe has not selected a date and calendar flags never choose one), so the default recommendation 2026-09-26 is used and noted here (cleanest candidate: no calendar flag overlaps that Saturday; same default as the NYC and Budapest 2026-09-26 precedent). This is a recommendation for summary display only — Joe decides later whether to book.",
+  "research_completed_on": "2026-08-10",
+  "open_questions": [
+    "Trusted-venue matching for hong-kong-hk is expected to be ZERO: references/trusted_venues.json contains no hong-kong-hk seed (the 12-record reference covers San Francisco, Budapest, Vienna, Seattle, Frankfurt, Tokyo x2, Toronto, Prague and Bangkok). This is a provenance result, not a suitability conclusion; no seed from another city was substituted.",
+    "Hong Kong Wine & Dine Festival 2026 (Oct 29 - Nov 1, Central Harbourfront) dates rest on consistent secondary sources (dailypeter.com, foodwithkidappeal.com, hungrytimes.com); the official Discover Hong Kong (HKTB) page is Cloudflare-blocked from this research environment, so the official confirmation question is carried in the calendar record.",
+    "HKICC 2026 (Hong Kong International Computer Conference): the official HKCS site (hkcs.org.hk / hkicc.hkcs.org.hk) was rate-limited in this pass and no 2026 dates are published on the reachable pages; the 2025 edition ran Nov 17-18. Recorded as a recurring November signal, not a dated conflict.",
+    "Chinese-only official venue/event pages (e.g. JCCAC venue rental, CoCoon member login, Campfire Hack Club landing) were out of the English-only scope; their existence is logged as a discovery gap, not translated evidence.",
+    "Hong Kong Web3 Festival 2026 ran April 20-23 (official web3festival.org) and WAIC UP! Global Summit ran January 16, 2026 (official hkstp.org) - both before the 09-15..12-15 coverage window; they are logged as out-of-window signals, not stored calendar records."
+  ],
+  "recommendation": {
+    "selected_venue": null,
+    "rationale": "Run A evidence package only. Venue selection deferred: a later deterministic pipeline card scores venues and assembles the venue-phase bundle; Joe selects from eligible/shortlist_ready results. Recommended date 2026-09-26 is carried in target_date (see decision_note) for summary rendering; Joe confirms the date before booking."
+  }
+}

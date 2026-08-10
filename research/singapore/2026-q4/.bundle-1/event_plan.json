@@ -1,0 +1,2144 @@
+{
+  "budget_usd": 5000.0,
+  "calendar_conflicts": [
+    {
+      "accessed_on": "2026-08-10",
+      "city_slug": "singapore-sg",
+      "conflict_severity": "medium",
+      "end_date": "2026-09-16",
+      "event_name": "Tech in Asia Conference 2026",
+      "evidence": {
+        "inference": "A mid-September enterprise-AI conference starts exactly on the first day of the 09-15..12-15 coverage window and precedes candidate Saturday 2026-09-19; recorded as a medium awareness flag for Joe (informational, not an elimination).",
+        "observed_facts": "Official Tech in Asia Conference page (conference.techinasia.com, fetched 2026-08-10) states '15 - 16 SEPTEMBER 2026 • Sands Expo and Convention Centre, SINGAPORE' and positions the 2026 edition as 'APAC's only enterprise-first AI conference' with 1,500+ enterprise leaders."
+      },
+      "needs_human_verify": true,
+      "relevance": "ai",
+      "source_title": "Tech in Asia Conference 2026 (official): 'APAC's only enterprise-first AI conference' - 15-16 September 2026, Sands Expo and Convention Centre, Singapore; 1,500+ enterprise leaders",
+      "source_url": "https://conference.techinasia.com/",
+      "start_date": "2026-09-15",
+      "verification_questions": [
+        "Confirm the final 2026 dates and venue (official page states 15-16 September 2026 at Sands Expo and Convention Centre) and whether side networking events spill into the following days.",
+        "Assess audience adjacency: an enterprise-AI crowd in town just before candidate Saturday 2026-09-19."
+      ]
+    },
+    {
+      "accessed_on": "2026-08-10",
+      "city_slug": "singapore-sg",
+      "conflict_severity": "medium",
+      "end_date": "2026-09-30",
+      "event_name": "Tech Week Singapore 2026 (Big Data & AI World Asia, Cloud & AI Infrastructure Asia, DevOps Live, Cyber Security World Asia, Data Centre World Asia)",
+      "evidence": {
+        "inference": "A two-day AI/infrastructure enterprise conference immediately before candidate Saturday 2026-10-03 adds an AI-ecosystem cluster in Singapore that week; recorded as a medium awareness flag for Joe (informational, never an elimination).",
+        "observed_facts": "Official Tech Week Singapore page (singaporetechnologyweek.com, fetched 2026-08-10) states 'Tech Week Singapore will return on 29-30 September 2026' at Sands Expo Convention Centre, presenting five co-located events: Cloud & AI Infrastructure Asia, DevOps Live!, Cyber Security World Asia, Data Centre World Asia and Big Data & AI World Asia, with 29,000+ attendees and 500+ exhibitors."
+      },
+      "needs_human_verify": true,
+      "relevance": "ai",
+      "source_title": "Tech Week Singapore | 29-30 September 2026, Sands Expo Convention Centre (official): five co-located shows including Big Data & AI World Asia and Cloud & AI Infrastructure Asia; 29,000+ business leaders, 500+ exhibitors",
+      "source_url": "https://www.singaporetechnologyweek.com/",
+      "start_date": "2026-09-29",
+      "verification_questions": [
+        "Confirm the final 2026 dates and venue (official page states 29-30 September 2026 at Sands Expo Convention Centre) and any satellite/community side events around the co-located shows.",
+        "Assess audience adjacency: an AI/infrastructure enterprise crowd in town the week before candidate Saturday 2026-10-03."
+      ]
+    },
+    {
+      "accessed_on": "2026-08-10",
+      "city_slug": "singapore-sg",
+      "conflict_severity": "low",
+      "end_date": "2026-10-09",
+      "event_name": "Milken Institute Asia Summit 2026",
+      "evidence": {
+        "inference": "A senior finance/investment summit overlapping the TOKEN2049 week adds to the October 7-11 citywide conference cluster around candidate Saturdays 10-03 and 10-10; recorded as a low-severity awareness flag for Joe.",
+        "observed_facts": "Official Milken Institute events page (milkeninstitute.org/events, fetched 2026-08-10) states 'The 2026 Milken Institute Asia Summit takes place October 7-9, 2026 in Singapore'."
+      },
+      "needs_human_verify": true,
+      "relevance": "other",
+      "source_title": "Events | Milken Institute (official): 'The 2026 Milken Institute Asia Summit takes place October 7-9, 2026 in Singapore'",
+      "source_url": "https://milkeninstitute.org/events",
+      "start_date": "2026-10-07",
+      "verification_questions": [
+        "Confirm the final 2026 dates and venue (official page states October 7-9, 2026 in Singapore; a 10times listing cites Four Seasons Hotel Singapore but the official page does not name the venue).",
+        "Assess whether the finance/investment delegate crowd generates side events relevant to an AI/Web3 community audience."
+      ]
+    },
+    {
+      "accessed_on": "2026-08-10",
+      "city_slug": "singapore-sg",
+      "conflict_severity": "high",
+      "end_date": "2026-10-08",
+      "event_name": "TOKEN2049 Singapore 2026",
+      "evidence": {
+        "inference": "Candidate Saturdays 2026-10-03 and 2026-10-10 bracket the conference days, so a free 50-person DeAI Day in that week is a genuine side-event opportunity for the Web3/crypto audience already in Singapore — the literal side-event designation is warranted by TOKEN2049's own 1,000-side-event positioning. Informational flag for Joe; not an elimination and not a venue-score input.",
+        "observed_facts": "Official TOKEN2049 page (token2049.com/singapore, fetched 2026-08-10) states 'TOKEN2049 Singapore will bring together top decision-makers... on 7-8 October 2026' at Marina Bay Sands, tickets on sale; official TOKEN2049 press release (via Chainwire/Decrypt, 2026-08-06) describes 25,000 attendees, 500 exhibitors, 300 speakers and 1,000 side events bringing the global crypto industry to Singapore in October."
+      },
+      "needs_human_verify": true,
+      "relevance": "web3",
+      "source_title": "TOKEN2049 | 7-8 October 2026 | Singapore (official): 'TOKEN2049 Singapore will bring together top decision-makers to connect, exchange ideas, network, and shape the industry on 7-8 October 2026' at Marina Bay Sands",
+      "source_url": "https://www.token2049.com/singapore",
+      "start_date": "2026-10-07",
+      "verification_questions": [
+        "Confirm whether Joe wants to position a DeAI Day as a side event of the TOKEN2049 side-event week (7-8 October main days; the official programme describes a week of 1,000+ side events around the main conference, with candidate Saturdays 2026-10-03 and 2026-10-10 adjacent).",
+        "Assess practical effects: Marina Bay area demand, hotel/venue pricing and MRT crowding during the same week as the F1 Singapore Grand Prix (9-11 October)."
+      ]
+    },
+    {
+      "accessed_on": "2026-08-10",
+      "city_slug": "singapore-sg",
+      "conflict_severity": "high",
+      "end_date": "2026-10-11",
+      "event_name": "Formula 1 Singapore Airlines Singapore Grand Prix 2026",
+      "evidence": {
+        "inference": "The race weekend (Oct 9-11) contains candidate Saturday 2026-10-10, so citywide road closures around the Marina Bay street circuit, MRT crowding, and elevated hotel/venue demand are likely that weekend. This is a Joe-awareness logistics flag, not a venue-score input and not a date elimination.",
+        "observed_facts": "Official formula1.com race page for the 2026 Singapore Grand Prix (fetched 2026-08-10) and the official Singapore GP site (singaporegp.sg, fetched 2026-08-10) confirm the 2026 edition; official F1 ticketing (tickets.formula1.com) lists the event as '09 - 11 Oct' and RacingNews365's 2026 season page states the race starts Sunday 11 October with sprint qualifying Friday 9 October."
+      },
+      "needs_human_verify": true,
+      "relevance": "other",
+      "source_title": "Singapore Grand Prix 2026 - F1 Race (official formula1.com race page) and official Singapore GP site singaporegp.sg: 2026 race weekend 9-11 October 2026 (tickets.formula1.com lists '09 - 11 Oct')",
+      "source_url": "https://www.formula1.com/en/racing/2026/singapore",
+      "start_date": "2026-10-09",
+      "verification_questions": [
+        "Confirm the final 2026 race weekend dates, road-closure schedule and MRT changes with Singapore GP Pte Ltd / LTA before planning any event activity on candidate Saturday 2026-10-10 (the race weekend is 9-11 October with the race on Sunday 11 October; the Marina Bay street circuit is closed to traffic from before the weekend).",
+        "Assess whether Saturday 10-10 carries practical citywide access, hotel-rate and venue-demand effects for a 50-person community event (informational flag for Joe; not an elimination)."
+      ]
+    },
+    {
+      "accessed_on": "2026-08-10",
+      "city_slug": "singapore-sg",
+      "conflict_severity": "low",
+      "end_date": "2026-11-05",
+      "event_name": "STACK Conference 2026 (GovTech Singapore)",
+      "evidence": {
+        "inference": "GovTech's biennial flagship tech conference in early November is outside the candidate Saturday window and is recorded as an awareness-only signal with a date-verification question due to the 404 on the cited URL.",
+        "observed_facts": "GovTech Singapore's official event page (tech.gov.sg/events/stack-conference-2026/) described 'STACK Conference 2026 (4-5 Nov 2026)' as GovTech's hallmark tech conference connecting government, industry and the tech community (search-indexed copy dated 10 July 2026; the live page returned 404 when fetched 2026-08-10)."
+      },
+      "needs_human_verify": true,
+      "relevance": "other",
+      "source_title": "STACK Conference 2026 (4-5 Nov 2026) | Government Technology Agency of Singapore (official tech.gov.sg event page, last updated 10 July 2026); live page returned 404 on fetch 2026-08-10",
+      "source_url": "https://www.tech.gov.sg/events/stack-conference-2026/",
+      "start_date": "2026-11-04",
+      "verification_questions": [
+        "Confirm the final 2026 dates and venue for STACK Conference 2026 with GovTech (the official tech.gov.sg event page stated 4-5 Nov 2026 when indexed; the live page returned 404 on 2026-08-10, suggesting the URL moved).",
+        "This November record is informational awareness only; no candidate Saturday falls in November."
+      ]
+    },
+    {
+      "accessed_on": "2026-08-10",
+      "city_slug": "singapore-sg",
+      "conflict_severity": "medium",
+      "end_date": "2026-11-20",
+      "event_name": "Singapore FinTech Festival 2026 (SFF)",
+      "evidence": {
+        "inference": "A large fintech/Web3-adjacent festival in late November is outside the candidate Saturday window and is recorded as an awareness-only signal for the 09-15..12-15 coverage window (the DeAI Day audience overlaps fintech/AI communities).",
+        "observed_facts": "Official Singapore FinTech Festival page (fintechfestival.sg, fetched 2026-08-10) states '18 - 20 November 2026 | Singapore Expo' and describes the world's most influential fintech gathering with 70,000+ participants, 940+ speakers, 600+ sponsors and exhibitors."
+      },
+      "needs_human_verify": true,
+      "relevance": "other",
+      "source_title": "Home | Singapore Fintech Festival (official): '18 - 20 November 2026 | Singapore Expo'; 70,000+ participants, 940+ speakers, 600+ sponsors & exhibitors",
+      "source_url": "https://www.fintechfestival.sg/",
+      "start_date": "2026-11-18",
+      "verification_questions": [
+        "Confirm the final 2026 dates and venue (official page states 18-20 November 2026 at Singapore Expo).",
+        "This November record is informational awareness only; no candidate Saturday falls in November, so it is not a venue-candidate-date conflict."
+      ]
+    }
+  ],
+  "city_name": "Singapore",
+  "city_slug": "singapore-sg",
+  "co_host_candidates": [],
+  "communities": [],
+  "country": "Singapore",
+  "currency": "SGD",
+  "currency_assumptions": [
+    "Costs retain their published local amount and ISO code: SGD where the venue publishes SGD (all recorded Singapore venues publish SGD or quote-based).",
+    "SGD-to-USD conversion: European Central Bank euro foreign exchange reference rates, retrieved 2026-08-10 (ECB daily feed, https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml): EUR 1 = USD 1.1555 and EUR 1 = SGD 1.4785, therefore USD 1 = SGD 1.27953 (computed 1.4785 / 1.1555) and 1 SGD = USD 0.78153534. This is a documented, date-stamped source rate; it is a planning conversion, not a bank/venue quote.",
+    "All USD estimates are derived 8-hour or published-rate calculations labeled in evidence.inference and rate_estimate_note; GST is included where the page states it (Tagvenue pages state 'All prices include GST'; LLI rates state w/GST columns), and any taxes/fees/AV extras not shown on the page remain verification questions."
+  ],
+  "date_window": "2026-09-19 through 2026-10-31; candidate Saturdays: 2026-09-19, 2026-09-26, 2026-10-03, 2026-10-10, 2026-10-17, 2026-10-24, 2026-10-31",
+  "event_duration_hours": 8,
+  "generated_at": "2026-08-10T00:00:00Z",
+  "open_questions": [
+    "Assess audience adjacency: an AI/infrastructure enterprise crowd in town the week before candidate Saturday 2026-10-03.",
+    "Assess audience adjacency: an enterprise-AI crowd in town just before candidate Saturday 2026-09-19.",
+    "Assess practical effects: Marina Bay area demand, hotel/venue pricing and MRT crowding during the same week as the F1 Singapore Grand Prix (9-11 October).",
+    "Assess whether Saturday 10-10 carries practical citywide access, hotel-rate and venue-demand effects for a 50-person community event (informational flag for Joe; not an elimination).",
+    "Assess whether the finance/investment delegate crowd generates side events relevant to an AI/Web3 community audience.",
+    "Confirm availability of Event Hall 2-1 on the chosen 2026 Saturday (LLI venues are open Mon-Sun and public holidays 0800-2200).",
+    "Confirm availability of Training Room 1-1 on the chosen 2026 Saturday (LLI venues are open Mon-Sun and public holidays 0800-2200).",
+    "Confirm availability on the chosen 2026 Saturday.",
+    "Confirm minimum booking and cancellation terms.",
+    "Confirm minimum booking duration and cancellation terms.",
+    "Confirm minimum booking duration, the 9:00-23:00 window on the booked date, and the catering arrangement (venue offers catering; external catering not allowed, approved caterers only).",
+    "Confirm minimum spend and catering package terms (alcohol licence until 0:00; all prices include GST).",
+    "Confirm Saturday availability and the 7:00-23:30 window on the chosen 2026 date.",
+    "Confirm Saturday availability for the Studio at Industrious (formerly The Great Room) One George Street on the chosen 2026 date.",
+    "Confirm Saturday availability of the Level 1 Auditorium at WeWork 21 Collyer Quay on the chosen 2026 date.",
+    "Confirm Saturday availability of the Level 17 Common Area at WeWork Suntec Tower 5 on the chosen 2026 date (weekend window is 9:00-23:00; weekdays are 18:00-23:00 only).",
+    "Confirm Saturday availability of the Level 2 Business Centre on the chosen 2026 date.",
+    "Confirm Saturday availability of The Lounge at Singapore Land Tower (The Exchange, TEC) on the chosen 2026 date, and that the 50-seat / 100-standing configuration comfortably seats 50 in a talk layout.",
+    "Confirm Saturday availability on the chosen 2026 date.",
+    "Confirm screen/projector availability (not stated on the venue-rental page).",
+    "Confirm screen/projector availability for the selected room.",
+    "Confirm screen/projector availability in the Glass Room (not stated on the venue-rental page).",
+    "Confirm screen/projector availability in the Multi-Purpose Hall (Venuexplorer lists AV features; the official page does not itemize).",
+    "Confirm screen/projector availability in the rooftop studios (not stated on the venue-rental page).",
+    "Confirm screen/projector availability in the seminar rooms (not stated on the venue-rental page).",
+    "Confirm the 120-140 seminar capacity can be configured for an intimate 50-person talk event (oversized for the target), and the catering policy (not stated on the rates PDF).",
+    "Confirm the 140-person standing-capacity space can be configured for an intimate 50-person talk event (oversized for the target).",
+    "Confirm the 2-hour minimum / 4-hour block extension rules for a 09:00-17:00 booking (8am-5pm block published).",
+    "Confirm the 212-seat auditorium can be configured for an intimate 50-person talk event with the foyer as reception (oversized for the target).",
+    "Confirm the 50-person seminar capacity (chairs only) suits a 50-person talk format, and the catering policy (not stated on the rates PDF).",
+    "Confirm the 80-seat / 70-standing configuration comfortably seats 50 in a talk layout and whether exclusive use of the function room is included.",
+    "Confirm the all-in total for the 8am-5pm block (published S$1,264.40 w/GST; confirm no additional AV/cleaning charges).",
+    "Confirm the all-in total for the 8am-5pm block (published S$621.30 w/GST; confirm no additional AV/cleaning charges for a community event).",
+    "Confirm the bookable window (staffed hours Mon-Fri 8:30am-6pm; 24/7 member access; event-hours policy not published).",
+    "Confirm the bookable window (the listing publishes no opening/closing hours).",
+    "Confirm the bookable window (the official page publishes no event hours).",
+    "Confirm the bookable window and any weekend exception policy (the listing publishes Mon-Fri 9:00-18:00 only).",
+    "Confirm the bookable window for venue hire (the official page publishes no event hours).",
+    "Confirm the bookable window for venue hire (the venue-rental page publishes no event hours).",
+    "Confirm the bookable window for venue hire (venue hire hours not published on the page).",
+    "Confirm the exact all-in cost for an 8-hour Saturday event (Tagvenue publishes per-session offers: afternoon 11:00-15:00 from S$750 hire fee, evening 17:00-22:00 from S$950 hire fee, from S$1,000 min spend per session, and S$48/person catering packages; no published 8-hour day rate).",
+    "Confirm the exact all-in quote including any AV or staffing charges.",
+    "Confirm the exact all-in quote including any AV, cleaning or staffing charges.",
+    "Confirm the exact all-in quote including any event-management fees.",
+    "Confirm the exact all-in quote including any technical/staffing charges, and the exact postal address (28 Aliwal Street per NAC documentation; one directory lists 32 Aliwal Street).",
+    "Confirm the exact all-in quote including any technical/staffing charges.",
+    "Confirm the exact all-in quote including AV and any event-management fees.",
+    "Confirm the exact all-in Saturday total (published S$1,192/hour incl GST; cleaning fee and Event Management Fee from S$500 before GST; catering and any AV extras not itemized).",
+    "Confirm the exact all-in Saturday total (published S$1,227/hour or S$6,132/day incl GST for 9:00-18:00; taxes/fees not itemized).",
+    "Confirm the exact all-in Saturday total (published S$1,290/hour incl GST; cleaning fee and Event Management Fee from S$500 before GST not included).",
+    "Confirm the exact all-in Saturday total (published S$1,759/hour incl GST; cleaning fee and Event Management Fee from S$500 before GST not included).",
+    "Confirm the exact all-in Saturday total (published S$4,578/day incl GST for the 9:00-18:00 day; taxes, cleaning and any AV fees not itemized on the listing).",
+    "Confirm the exact all-in total if a weekday or after-hours alternative is arranged (published S$321/hour Mon-Fri 9:00-18:00 incl GST).",
+    "Confirm the exact rate for Seminar Room 1 (Tagvenue lists 'from S$60 hire fee' without a visible rate unit; minimum 2-hour booking).",
+    "Confirm the film-theatrette AV setup (projector/screen availability for a talk format).",
+    "Confirm the final 2026 dates and venue (official page states 15-16 September 2026 at Sands Expo and Convention Centre) and whether side networking events spill into the following days.",
+    "Confirm the final 2026 dates and venue (official page states 18-20 November 2026 at Singapore Expo).",
+    "Confirm the final 2026 dates and venue (official page states 29-30 September 2026 at Sands Expo Convention Centre) and any satellite/community side events around the co-located shows.",
+    "Confirm the final 2026 dates and venue (official page states October 7-9, 2026 in Singapore; a 10times listing cites Four Seasons Hotel Singapore but the official page does not name the venue).",
+    "Confirm the final 2026 dates and venue for STACK Conference 2026 with GovTech (the official tech.gov.sg event page stated 4-5 Nov 2026 when indexed; the live page returned 404 on 2026-08-10, suggesting the URL moved).",
+    "Confirm the final 2026 race weekend dates, road-closure schedule and MRT changes with Singapore GP Pte Ltd / LTA before planning any event activity on candidate Saturday 2026-10-10 (the race weekend is 9-11 October with the race on Sunday 11 October; the Marina Bay street circuit is closed to traffic from before the weekend).",
+    "Confirm the hire rate for a Saturday event (JustCo meeting rooms and event spaces are quote/portal-based; no public rates).",
+    "Confirm the hire rate for a Saturday event (TEC event spaces are quote-based; no public rates published).",
+    "Confirm the hire rate for the Glass Room for a 50-person event (National Gallery venue rental is quote-based; no public rates on the venue-rental page).",
+    "Confirm the hire rate for the Multi-Purpose Hall for a 50-person event (Venuexplorer lists 'from SGD 1,000'; the official Aliwal Arts Centre venue-hire page is quote-based and does not publish rates).",
+    "Confirm the hire rate for the Ngee Ann Kongsi Auditorium and Foyer for a 50-person event (quote-based; no public rates).",
+    "Confirm the hire rate for the Rooftop Studios (quote-based; no public rates).",
+    "Confirm the hire rate for the Screening Room for a 50-person event (The Arts House publishes rental rates by category — Arts/General, Corporate/Private, Non-profit — via its venue kit; no numeric rates on the public venue-hire page).",
+    "Confirm the hire rate for the Seminar Rooms (quote-based; no public rates).",
+    "Confirm the minimum booking and set-up/tear-down terms (published minimum 2 hours; layout changes require 1h set-up + 1h tear-down inside a minimum 4-hour booking).",
+    "Confirm the minimum booking duration and any event-management fee.",
+    "Confirm the semi-private nature of the space (listed as 'semi-private area') and whether exclusive hire is available for a 50-person event.",
+    "Confirm the specific meeting room/event space and its capacity for a 50-person event (the official JustCo location page publishes the centre and address but no per-room capacities or rates).",
+    "Confirm the specific room and its capacity for a 50-person event (the official page states The Exchange offers 'versatile event spaces for 24 to 250 pax' with 4 meeting rooms; no per-room capacity published).",
+    "Confirm whether a projector/screen is included (the listing shows Wi-Fi available but projector/flipchart listed as unavailable).",
+    "Confirm whether Joe wants to position a DeAI Day as a side event of the TOKEN2049 side-event week (7-8 October main days; the official programme describes a week of 1,000+ side events around the main conference, with candidate Saturdays 2026-10-03 and 2026-10-10 adjacent).",
+    "Confirm whether the 120-seat space can be configured for an intimate 50-person talk event without excess cost (oversized for the target; room_assignment check).",
+    "Confirm whether the Studio (capacity up to 30 seats / 30 standing per Tagvenue) could ever be combined with an adjacent room to reach 50 — as published it cannot seat the 50-person target, so this record is an evidence-bound lead, not a candidate.",
+    "Confirm whether The Work Project Asia Square can host the event on a Saturday (Tagvenue lists the Boardroom 'Saturday Closed' and 'Sunday Closed'; all candidate dates are Saturdays).",
+    "Confirm Wi-Fi availability (not stated on the venue-rental page).",
+    "Confirm Wi-Fi availability for the selected room.",
+    "Confirm Wi-Fi availability in the event halls (the rates PDF confirms projector and air-conditioning but does not mention Wi-Fi).",
+    "Confirm Wi-Fi availability in the Glass Room (not stated on the venue-rental page).",
+    "Confirm Wi-Fi availability in the Multi-Purpose Hall.",
+    "Confirm Wi-Fi availability in the rooftop studios (not stated on the venue-rental page).",
+    "Confirm Wi-Fi availability in the Screening Room.",
+    "Confirm Wi-Fi availability in the seminar rooms (not stated on the venue-rental page).",
+    "Confirm Wi-Fi availability in the training rooms (the rates PDF confirms projector and air-conditioning but does not mention Wi-Fi).",
+    "Formula 1 Singapore Airlines Singapore Grand Prix 2026 is scheduled for 9-11 October 2026 (official formula1.com race page and official tickets.formula1.com page '09 - 11 Oct'); candidate Saturday 2026-10-10 falls inside the race weekend, so citywide road closures, MRT crowding and hotel/venue demand are expected that weekend. Informational flag for Joe; not an elimination.",
+    "Singapore FinTech Festival 2026 (18-20 November 2026, Singapore EXPO) and STACK Conference 2026 (4-5 November 2026, GovTech) are November awareness records only; no candidate Saturday falls in November.",
+    "Singapore Future AI Summit 2026 (sfais.org) confirms a 2026 edition ('first annual') but publishes no dates or venue; recorded as a recurring undated signal, not a dated conflict.",
+    "The AI Summit Singapore 2026 (May 20-22, Singapore EXPO, part of ATxEnterprise/Asia Tech x Singapore) and AI Everything Asia at GITEX Asia (April 9-10) fall before the 2026-09-15..12-15 coverage window and are noted as out-of-window signals, not stored records.",
+    "This November record is informational awareness only; no candidate Saturday falls in November, so it is not a venue-candidate-date conflict.",
+    "This November record is informational awareness only; no candidate Saturday falls in November.",
+    "TOKEN2049 Singapore 2026 (7-8 October 2026, Marina Bay Sands) is the world's largest crypto event with an official side-event week of 1,000+ events; candidate Saturdays 2026-10-03 and 2026-10-10 are adjacent, making a DeAI Day a genuine side-event opportunity for the crypto/Web3 audience in town that week.",
+    "Trusted-venue match for singapore-sg is ZERO: references/trusted_venues.json contains no singapore-sg seed (12 records: san-francisco x2, budapest-hu x2, vienna, seattle, frankfurt, tokyo x2, toronto, prague, bangkok). This is a provenance result, not a suitability conclusion; no other-city seed was substituted."
+  ],
+  "recommendation": {
+    "rationale": "Run A evidence package only. Venue selection deferred: a later deterministic pipeline card scores venues and assembles the venue-phase bundle; Joe selects from eligible/shortlist_ready results. Recommended date 2026-09-26 is carried in target_date (see decision_note) for summary rendering; Joe confirms the date before booking.",
+    "selected_venue": null,
+    "unresolved_checks": [
+      "Assess audience adjacency: an AI/infrastructure enterprise crowd in town the week before candidate Saturday 2026-10-03.",
+      "Assess audience adjacency: an enterprise-AI crowd in town just before candidate Saturday 2026-09-19.",
+      "Assess practical effects: Marina Bay area demand, hotel/venue pricing and MRT crowding during the same week as the F1 Singapore Grand Prix (9-11 October).",
+      "Assess whether Saturday 10-10 carries practical citywide access, hotel-rate and venue-demand effects for a 50-person community event (informational flag for Joe; not an elimination).",
+      "Assess whether the finance/investment delegate crowd generates side events relevant to an AI/Web3 community audience.",
+      "Confirm availability of Event Hall 2-1 on the chosen 2026 Saturday (LLI venues are open Mon-Sun and public holidays 0800-2200).",
+      "Confirm availability of Training Room 1-1 on the chosen 2026 Saturday (LLI venues are open Mon-Sun and public holidays 0800-2200).",
+      "Confirm availability on the chosen 2026 Saturday.",
+      "Confirm minimum booking and cancellation terms.",
+      "Confirm minimum booking duration and cancellation terms.",
+      "Confirm minimum booking duration, the 9:00-23:00 window on the booked date, and the catering arrangement (venue offers catering; external catering not allowed, approved caterers only).",
+      "Confirm minimum spend and catering package terms (alcohol licence until 0:00; all prices include GST).",
+      "Confirm Saturday availability and the 7:00-23:30 window on the chosen 2026 date.",
+      "Confirm Saturday availability for the Studio at Industrious (formerly The Great Room) One George Street on the chosen 2026 date.",
+      "Confirm Saturday availability of the Level 1 Auditorium at WeWork 21 Collyer Quay on the chosen 2026 date.",
+      "Confirm Saturday availability of the Level 17 Common Area at WeWork Suntec Tower 5 on the chosen 2026 date (weekend window is 9:00-23:00; weekdays are 18:00-23:00 only).",
+      "Confirm Saturday availability of the Level 2 Business Centre on the chosen 2026 date.",
+      "Confirm Saturday availability of The Lounge at Singapore Land Tower (The Exchange, TEC) on the chosen 2026 date, and that the 50-seat / 100-standing configuration comfortably seats 50 in a talk layout.",
+      "Confirm Saturday availability on the chosen 2026 date.",
+      "Confirm screen/projector availability (not stated on the venue-rental page).",
+      "Confirm screen/projector availability for the selected room.",
+      "Confirm screen/projector availability in the Glass Room (not stated on the venue-rental page).",
+      "Confirm screen/projector availability in the Multi-Purpose Hall (Venuexplorer lists AV features; the official page does not itemize).",
+      "Confirm screen/projector availability in the rooftop studios (not stated on the venue-rental page).",
+      "Confirm screen/projector availability in the seminar rooms (not stated on the venue-rental page).",
+      "Confirm the 120-140 seminar capacity can be configured for an intimate 50-person talk event (oversized for the target), and the catering policy (not stated on the rates PDF).",
+      "Confirm the 140-person standing-capacity space can be configured for an intimate 50-person talk event (oversized for the target).",
+      "Confirm the 2-hour minimum / 4-hour block extension rules for a 09:00-17:00 booking (8am-5pm block published).",
+      "Confirm the 212-seat auditorium can be configured for an intimate 50-person talk event with the foyer as reception (oversized for the target).",
+      "Confirm the 50-person seminar capacity (chairs only) suits a 50-person talk format, and the catering policy (not stated on the rates PDF).",
+      "Confirm the 80-seat / 70-standing configuration comfortably seats 50 in a talk layout and whether exclusive use of the function room is included.",
+      "Confirm the all-in total for the 8am-5pm block (published S$1,264.40 w/GST; confirm no additional AV/cleaning charges).",
+      "Confirm the all-in total for the 8am-5pm block (published S$621.30 w/GST; confirm no additional AV/cleaning charges for a community event).",
+      "Confirm the bookable window (staffed hours Mon-Fri 8:30am-6pm; 24/7 member access; event-hours policy not published).",
+      "Confirm the bookable window (the listing publishes no opening/closing hours).",
+      "Confirm the bookable window (the official page publishes no event hours).",
+      "Confirm the bookable window and any weekend exception policy (the listing publishes Mon-Fri 9:00-18:00 only).",
+      "Confirm the bookable window for venue hire (the official page publishes no event hours).",
+      "Confirm the bookable window for venue hire (the venue-rental page publishes no event hours).",
+      "Confirm the bookable window for venue hire (venue hire hours not published on the page).",
+      "Confirm the exact all-in cost for an 8-hour Saturday event (Tagvenue publishes per-session offers: afternoon 11:00-15:00 from S$750 hire fee, evening 17:00-22:00 from S$950 hire fee, from S$1,000 min spend per session, and S$48/person catering packages; no published 8-hour day rate).",
+      "Confirm the exact all-in quote including any AV or staffing charges.",
+      "Confirm the exact all-in quote including any AV, cleaning or staffing charges.",
+      "Confirm the exact all-in quote including any event-management fees.",
+      "Confirm the exact all-in quote including any technical/staffing charges, and the exact postal address (28 Aliwal Street per NAC documentation; one directory lists 32 Aliwal Street).",
+      "Confirm the exact all-in quote including any technical/staffing charges.",
+      "Confirm the exact all-in quote including AV and any event-management fees.",
+      "Confirm the exact all-in Saturday total (published S$1,192/hour incl GST; cleaning fee and Event Management Fee from S$500 before GST; catering and any AV extras not itemized).",
+      "Confirm the exact all-in Saturday total (published S$1,227/hour or S$6,132/day incl GST for 9:00-18:00; taxes/fees not itemized).",
+      "Confirm the exact all-in Saturday total (published S$1,290/hour incl GST; cleaning fee and Event Management Fee from S$500 before GST not included).",
+      "Confirm the exact all-in Saturday total (published S$1,759/hour incl GST; cleaning fee and Event Management Fee from S$500 before GST not included).",
+      "Confirm the exact all-in Saturday total (published S$4,578/day incl GST for the 9:00-18:00 day; taxes, cleaning and any AV fees not itemized on the listing).",
+      "Confirm the exact all-in total if a weekday or after-hours alternative is arranged (published S$321/hour Mon-Fri 9:00-18:00 incl GST).",
+      "Confirm the exact rate for Seminar Room 1 (Tagvenue lists 'from S$60 hire fee' without a visible rate unit; minimum 2-hour booking).",
+      "Confirm the film-theatrette AV setup (projector/screen availability for a talk format).",
+      "Confirm the final 2026 dates and venue (official page states 15-16 September 2026 at Sands Expo and Convention Centre) and whether side networking events spill into the following days.",
+      "Confirm the final 2026 dates and venue (official page states 18-20 November 2026 at Singapore Expo).",
+      "Confirm the final 2026 dates and venue (official page states 29-30 September 2026 at Sands Expo Convention Centre) and any satellite/community side events around the co-located shows.",
+      "Confirm the final 2026 dates and venue (official page states October 7-9, 2026 in Singapore; a 10times listing cites Four Seasons Hotel Singapore but the official page does not name the venue).",
+      "Confirm the final 2026 dates and venue for STACK Conference 2026 with GovTech (the official tech.gov.sg event page stated 4-5 Nov 2026 when indexed; the live page returned 404 on 2026-08-10, suggesting the URL moved).",
+      "Confirm the final 2026 race weekend dates, road-closure schedule and MRT changes with Singapore GP Pte Ltd / LTA before planning any event activity on candidate Saturday 2026-10-10 (the race weekend is 9-11 October with the race on Sunday 11 October; the Marina Bay street circuit is closed to traffic from before the weekend).",
+      "Confirm the hire rate for a Saturday event (JustCo meeting rooms and event spaces are quote/portal-based; no public rates).",
+      "Confirm the hire rate for a Saturday event (TEC event spaces are quote-based; no public rates published).",
+      "Confirm the hire rate for the Glass Room for a 50-person event (National Gallery venue rental is quote-based; no public rates on the venue-rental page).",
+      "Confirm the hire rate for the Multi-Purpose Hall for a 50-person event (Venuexplorer lists 'from SGD 1,000'; the official Aliwal Arts Centre venue-hire page is quote-based and does not publish rates).",
+      "Confirm the hire rate for the Ngee Ann Kongsi Auditorium and Foyer for a 50-person event (quote-based; no public rates).",
+      "Confirm the hire rate for the Rooftop Studios (quote-based; no public rates).",
+      "Confirm the hire rate for the Screening Room for a 50-person event (The Arts House publishes rental rates by category — Arts/General, Corporate/Private, Non-profit — via its venue kit; no numeric rates on the public venue-hire page).",
+      "Confirm the hire rate for the Seminar Rooms (quote-based; no public rates).",
+      "Confirm the minimum booking and set-up/tear-down terms (published minimum 2 hours; layout changes require 1h set-up + 1h tear-down inside a minimum 4-hour booking).",
+      "Confirm the minimum booking duration and any event-management fee.",
+      "Confirm the semi-private nature of the space (listed as 'semi-private area') and whether exclusive hire is available for a 50-person event.",
+      "Confirm the specific meeting room/event space and its capacity for a 50-person event (the official JustCo location page publishes the centre and address but no per-room capacities or rates).",
+      "Confirm the specific room and its capacity for a 50-person event (the official page states The Exchange offers 'versatile event spaces for 24 to 250 pax' with 4 meeting rooms; no per-room capacity published).",
+      "Confirm whether a projector/screen is included (the listing shows Wi-Fi available but projector/flipchart listed as unavailable).",
+      "Confirm whether Joe wants to position a DeAI Day as a side event of the TOKEN2049 side-event week (7-8 October main days; the official programme describes a week of 1,000+ side events around the main conference, with candidate Saturdays 2026-10-03 and 2026-10-10 adjacent).",
+      "Confirm whether the 120-seat space can be configured for an intimate 50-person talk event without excess cost (oversized for the target; room_assignment check).",
+      "Confirm whether the Studio (capacity up to 30 seats / 30 standing per Tagvenue) could ever be combined with an adjacent room to reach 50 — as published it cannot seat the 50-person target, so this record is an evidence-bound lead, not a candidate.",
+      "Confirm whether The Work Project Asia Square can host the event on a Saturday (Tagvenue lists the Boardroom 'Saturday Closed' and 'Sunday Closed'; all candidate dates are Saturdays).",
+      "Confirm Wi-Fi availability (not stated on the venue-rental page).",
+      "Confirm Wi-Fi availability for the selected room.",
+      "Confirm Wi-Fi availability in the event halls (the rates PDF confirms projector and air-conditioning but does not mention Wi-Fi).",
+      "Confirm Wi-Fi availability in the Glass Room (not stated on the venue-rental page).",
+      "Confirm Wi-Fi availability in the Multi-Purpose Hall.",
+      "Confirm Wi-Fi availability in the rooftop studios (not stated on the venue-rental page).",
+      "Confirm Wi-Fi availability in the Screening Room.",
+      "Confirm Wi-Fi availability in the seminar rooms (not stated on the venue-rental page).",
+      "Confirm Wi-Fi availability in the training rooms (the rates PDF confirms projector and air-conditioning but does not mention Wi-Fi).",
+      "Formula 1 Singapore Airlines Singapore Grand Prix 2026 is scheduled for 9-11 October 2026 (official formula1.com race page and official tickets.formula1.com page '09 - 11 Oct'); candidate Saturday 2026-10-10 falls inside the race weekend, so citywide road closures, MRT crowding and hotel/venue demand are expected that weekend. Informational flag for Joe; not an elimination.",
+      "Singapore FinTech Festival 2026 (18-20 November 2026, Singapore EXPO) and STACK Conference 2026 (4-5 November 2026, GovTech) are November awareness records only; no candidate Saturday falls in November.",
+      "Singapore Future AI Summit 2026 (sfais.org) confirms a 2026 edition ('first annual') but publishes no dates or venue; recorded as a recurring undated signal, not a dated conflict.",
+      "The AI Summit Singapore 2026 (May 20-22, Singapore EXPO, part of ATxEnterprise/Asia Tech x Singapore) and AI Everything Asia at GITEX Asia (April 9-10) fall before the 2026-09-15..12-15 coverage window and are noted as out-of-window signals, not stored records.",
+      "This November record is informational awareness only; no candidate Saturday falls in November, so it is not a venue-candidate-date conflict.",
+      "This November record is informational awareness only; no candidate Saturday falls in November.",
+      "TOKEN2049 Singapore 2026 (7-8 October 2026, Marina Bay Sands) is the world's largest crypto event with an official side-event week of 1,000+ events; candidate Saturdays 2026-10-03 and 2026-10-10 are adjacent, making a DeAI Day a genuine side-event opportunity for the crypto/Web3 audience in town that week.",
+      "Trusted-venue match for singapore-sg is ZERO: references/trusted_venues.json contains no singapore-sg seed (12 records: san-francisco x2, budapest-hu x2, vienna, seattle, frankfurt, tokyo x2, toronto, prague, bangkok). This is a provenance result, not a suitability conclusion; no other-city seed was substituted."
+    ]
+  },
+  "schema_version": "2.2",
+  "shortlist_ready_venues": [
+    {
+      "accessed_on": "2026-08-10",
+      "address": "2 Finlayson Green, Raffles Place, Singapore 049247",
+      "booking_url": "https://www.tagvenue.com/sg/rooms/singapore/58971/cali-ascott-raffles-place/function-room",
+      "capacity_basis": "venue_claim",
+      "capacity_comfortable": 80,
+      "catering_policy": "in_house_available",
+      "city_slug": "singapore-sg",
+      "closing_time": "23:30",
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "cost_rate_unit": "unknown",
+      "estimated_cost_usd": null,
+      "estimated_hours": null,
+      "event_window_evidence": {
+        "accessed_on": "2026-08-10",
+        "claim": "Tagvenue pricing table shows the function room bookable 7:00-23:30, which supports an 8-hour 09:00-17:00 event.",
+        "title": "Raffles Place Function Room at Raffles Place Event Venue (CALI, Ascott Raffles Place) - Tagvenue.com (pricing section)",
+        "url": "https://www.tagvenue.com/sg/rooms/singapore/58971/cali-ascott-raffles-place/function-room"
+      },
+      "event_window_status": "allows_to_6",
+      "evidence": {
+        "geo": "https://www.tagvenue.com/sg/rooms/singapore/58971/cali-ascott-raffles-place/function-room",
+        "inference": "Capacity 80 meets the target with confirmed screen+Wi-Fi; no published 8-hour day rate exists (session-based pricing), so cost stays unknown with a confirm-cost question and the venue remains shortlist_ready.",
+        "observed_facts": "Tagvenue room page (fetched 2026-08-10) lists the Raffles Place Function Room at CALI, Ascott Raffles Place, 2 Finlayson Green, Singapore 049247: up to 80 seats / 70 standing; window 7:00-23:30; pricing from S$48/person catering packages, afternoon 11:00-15:00 from S$750 hire fee, evening 17:00-22:00 from S$950 hire fee, from S$1,000 min spend per session (all prices include GST, alcohol licence until 0:00); facilities Wi-Fi, projector, flatscreen TV, whiteboard, flipchart, PA system/speakers; venue offers catering and external catering allowed."
+      },
+      "hourly_rate_local": null,
+      "hourly_rate_usd": null,
+      "latitude": 1.2820846,
+      "longitude": 103.8515444,
+      "max_booking_hours": null,
+      "name": "CALI at Ascott Raffles Place — Raffles Place Function Room",
+      "needs_human_verify": true,
+      "opening_hours": "07:00",
+      "rate_currency": null,
+      "rate_estimate_note": null,
+      "recording_suitability": "unknown",
+      "score": 0.6767,
+      "score_breakdown": {
+        "booking_path": {
+          "contribution": 0.1,
+          "factor": 1.0,
+          "weight": 0.1
+        },
+        "budget_efficiency": {
+          "contribution": 0.1,
+          "factor": 0.5,
+          "weight": 0.2
+        },
+        "capacity_fit": {
+          "contribution": 0.2,
+          "factor": 1.0,
+          "weight": 0.2
+        },
+        "catering_flexibility": {
+          "contribution": 0.105,
+          "factor": 0.7,
+          "weight": 0.15
+        },
+        "event_window_fit": {
+          "contribution": 0.05,
+          "factor": 1.0,
+          "weight": 0.05
+        },
+        "evidence_freshness": {
+          "contribution": 0.0717,
+          "factor": 0.7167,
+          "weight": 0.1
+        },
+        "recording_suitability": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.15
+        },
+        "technical_readiness": {
+          "contribution": 0.05,
+          "factor": 1.0,
+          "weight": 0.05
+        },
+        "total": 0.6767
+      },
+      "screen_status": "confirmed",
+      "source_title": "Raffles Place Function Room at Raffles Place Event Venue (CALI, Ascott Raffles Place) - Tagvenue.com: 2 Finlayson Green, Singapore 049247; up to 80 seats / 70 standing; from S$48/person catering packages, afternoon from S$750, evening from S$950, from S$1,000 min spend per session incl GST; Wi-Fi, projector, flatscreen TV, whiteboard, flipchart, PA system",
+      "source_url": "https://www.tagvenue.com/sg/rooms/singapore/58971/cali-ascott-raffles-place/function-room",
+      "tier_reasons": [],
+      "venue_flags": [
+        "cost_unknown",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "stale_evidence"
+      ],
+      "venue_tier": "shortlist_ready",
+      "verification_question_kinds": [
+        "cost_unknown",
+        "final_quote",
+        "availability",
+        "booking_terms"
+      ],
+      "verification_questions": [
+        "Confirm the exact all-in cost for an 8-hour Saturday event (Tagvenue publishes per-session offers: afternoon 11:00-15:00 from S$750 hire fee, evening 17:00-22:00 from S$950 hire fee, from S$1,000 min spend per session, and S$48/person catering packages; no published 8-hour day rate).",
+        "Confirm the 80-seat / 70-standing configuration comfortably seats 50 in a talk layout and whether exclusive use of the function room is included.",
+        "Confirm Saturday availability and the 7:00-23:30 window on the chosen 2026 date.",
+        "Confirm minimum spend and catering package terms (alcohol licence until 0:00; all prices include GST)."
+      ],
+      "wifi_status": "confirmed"
+    },
+    {
+      "accessed_on": "2026-08-10",
+      "address": "11 Eunos Road 8, Singapore 408601",
+      "booking_url": "https://www.lli.sg/facilities-venue-spaces/book-a-venue",
+      "capacity_basis": "venue_claim",
+      "capacity_comfortable": 50,
+      "catering_policy": "unknown",
+      "city_slug": "singapore-sg",
+      "closing_time": "22:00",
+      "cost_basis": "published_rate",
+      "cost_local_amount": 621.3,
+      "cost_local_currency": "SGD",
+      "cost_rate_unit": "day",
+      "estimated_cost_usd": 485.57,
+      "estimated_hours": null,
+      "event_window_evidence": {
+        "accessed_on": "2026-08-10",
+        "claim": "The rates table states facilities are available Monday to Sunday and public holidays, 0800-2200 hours, which supports an 8-hour 09:00-17:00 event (8am-5pm block).",
+        "title": "Lifelong Learning Singapore — Pay-Per-Use Facilities Schedule of Rates (official PDF, effective 1 September 2025)",
+        "url": "https://www.lli.sg/docs/lifelonglearninginstitutelibraries/facility-documents/ppuf-sor_wef_1_september_2025_2.pdf"
+      },
+      "event_window_status": "allows_to_6",
+      "evidence": {
+        "geo": "https://www.lli.sg/facilities-venue-spaces/book-a-venue",
+        "inference": "Training Room 1-1 seats exactly 50 in seminar mode with a published 8am-5pm block of S$621.30 w/GST (485.57 USD at the documented ECB 2026-08-10 rate, 1 SGD = USD 0.78153534) — comfortably within the USD 5,000 soft budget and the strongest budget fit in this city pass; projector confirmed, Wi-Fi unconfirmed.",
+        "observed_facts": "Official LLI rates PDF (fetched 2026-08-10 from lli.sg) publishes Training Room 1-1 (Level 1, ~100 sqm): capacity 50 seminar (chairs only) / 30 classroom / 30 cluster; rates Mon-Sun & public holidays 0800-2200: 4-hour block S$250 (S$272.50 w/GST), 8am-5pm/1pm-10pm block S$570 (S$621.30 w/GST), full day 8am-10pm S$750 (S$817.50 w/GST), 1-hour extension S$70; note 1: 'All rates include provision of Projector and Air-conditioning except for open-air venue spaces'. The LLI Book-a-Venue page (lli.sg/facilities-venue-spaces/book-a-venue) confirms the booking process and lists training rooms, thematic rooms and event halls."
+      },
+      "hourly_rate_local": null,
+      "hourly_rate_usd": null,
+      "latitude": 1.3196003,
+      "longitude": 103.8923741,
+      "max_booking_hours": null,
+      "name": "Lifelong Learning Institute (LLSG) — Training Room 1-1",
+      "needs_human_verify": true,
+      "opening_hours": "08:00",
+      "rate_currency": null,
+      "rate_estimate_note": null,
+      "recording_suitability": "unknown",
+      "score": 0.6272,
+      "score_breakdown": {
+        "booking_path": {
+          "contribution": 0.1,
+          "factor": 1.0,
+          "weight": 0.1
+        },
+        "budget_efficiency": {
+          "contribution": 0.1806,
+          "factor": 0.9029,
+          "weight": 0.2
+        },
+        "capacity_fit": {
+          "contribution": 0.2,
+          "factor": 1.0,
+          "weight": 0.2
+        },
+        "catering_flexibility": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.15
+        },
+        "event_window_fit": {
+          "contribution": 0.05,
+          "factor": 1.0,
+          "weight": 0.05
+        },
+        "evidence_freshness": {
+          "contribution": 0.0717,
+          "factor": 0.7167,
+          "weight": 0.1
+        },
+        "recording_suitability": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.15
+        },
+        "technical_readiness": {
+          "contribution": 0.025,
+          "factor": 0.5,
+          "weight": 0.05
+        },
+        "total": 0.6272
+      },
+      "screen_status": "confirmed",
+      "source_title": "Lifelong Learning Singapore — Pay-Per-Use Facilities Schedule of Rates (official PDF, effective 1 September 2025): Training Room 1-1, 100 sqm, capacity 50 seminar (chairs only); 8am-5pm block S$570 (S$621.30 w/GST); all rates include projector and air-conditioning; Mon-Sun 0800-2200",
+      "source_url": "https://www.lli.sg/docs/lifelonglearninginstitutelibraries/facility-documents/ppuf-sor_wef_1_september_2025_2.pdf",
+      "tier_reasons": [],
+      "venue_flags": [
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "stale_evidence"
+      ],
+      "venue_tier": "shortlist_ready",
+      "verification_question_kinds": [
+        "availability",
+        "final_quote",
+        "wifi",
+        "booking_terms",
+        "room_assignment"
+      ],
+      "verification_questions": [
+        "Confirm availability of Training Room 1-1 on the chosen 2026 Saturday (LLI venues are open Mon-Sun and public holidays 0800-2200).",
+        "Confirm the all-in total for the 8am-5pm block (published S$621.30 w/GST; confirm no additional AV/cleaning charges for a community event).",
+        "Confirm Wi-Fi availability in the training rooms (the rates PDF confirms projector and air-conditioning but does not mention Wi-Fi).",
+        "Confirm the 2-hour minimum / 4-hour block extension rules for a 09:00-17:00 booking (8am-5pm block published).",
+        "Confirm the 50-person seminar capacity (chairs only) suits a 50-person talk format, and the catering policy (not stated on the rates PDF)."
+      ],
+      "wifi_status": "unknown"
+    },
+    {
+      "accessed_on": "2026-08-10",
+      "address": "50 Raffles Place, Level 4, Singapore 048623",
+      "booking_url": "https://www.tagvenue.com/sg/rooms/singapore/100995/singapore-land-tower/the-lounge",
+      "capacity_basis": "venue_claim",
+      "capacity_comfortable": 50,
+      "catering_policy": "outside_allowed",
+      "city_slug": "singapore-sg",
+      "closing_time": "18:00",
+      "cost_basis": "estimated_from_rate",
+      "cost_local_amount": 1227,
+      "cost_local_currency": "SGD",
+      "cost_rate_unit": "hour",
+      "estimated_cost_usd": 7671.55,
+      "estimated_hours": 8,
+      "event_window_evidence": {
+        "accessed_on": "2026-08-10",
+        "claim": "Tagvenue pricing table shows The Lounge bookable 9:00-18:00 per hour and per day, which supports an 8-hour 09:00-17:00 event.",
+        "title": "The Lounge - Singapore Land Tower - Event Venue Rental - Tagvenue.com (pricing section)",
+        "url": "https://www.tagvenue.com/sg/rooms/singapore/100995/singapore-land-tower/the-lounge"
+      },
+      "event_window_status": "allows_to_6",
+      "evidence": {
+        "geo": "https://www.tagvenue.com/sg/rooms/singapore/100995/singapore-land-tower/the-lounge",
+        "inference": "Capacity 50 exactly meets the target with confirmed screen+Wi-Fi; the Saturday 8-hour estimate (7,671.55 USD) exceeds the USD 5,000 soft budget, so the venue is shortlist_ready with an over_soft_budget signal.",
+        "observed_facts": "Tagvenue room page (fetched 2026-08-10) lists The Lounge at Singapore Land Tower, 50 Raffles Place, Level 4, Singapore 048623: up to 50 seats / 100 standing; S$818/hour Mon-Fri and S$1,227/hour Sat-Sun (9:00-18:00, all prices include GST), day rates S$4,088/S$6,132; facilities Wi-Fi, projector, flatscreen TV, PA system/speakers, air conditioning, natural light; external catering allowed. The Executive Centre official event-space page (executivecentre.com/en-sg/event-space-venue/) describes 'The Exchange by Singapore Land Group, Level 4-5, Singapore Land Tower, 50 Raffles Place' with 'versatile event spaces for 24 to 250 pax' and 4 meeting rooms."
+      },
+      "hourly_rate_local": 1227,
+      "hourly_rate_usd": 958.9439,
+      "latitude": 1.2846277,
+      "longitude": 103.8520433,
+      "max_booking_hours": null,
+      "name": "The Executive Centre — The Lounge at Singapore Land Tower (The Exchange)",
+      "needs_human_verify": true,
+      "opening_hours": "09:00",
+      "rate_currency": "SGD",
+      "rate_estimate_note": "Tagvenue listing (fetched 2026-08-10) publishes The Lounge at S$818/hour Mon-Fri and S$1,227/hour Sat-Sun (9:00-18:00, all prices include GST); day rate S$4,088 Mon-Fri / S$6,132 Sat-Sun. Saturday 8-hour estimate = 1,227 x 8 = 9,816 SGD = 7,671.55 USD at the documented ECB 2026-08-10 rate (1 SGD = USD 0.78153534), above the USD 5,000 soft budget.",
+      "recording_suitability": "unknown",
+      "score": 0.6217,
+      "score_breakdown": {
+        "booking_path": {
+          "contribution": 0.1,
+          "factor": 1.0,
+          "weight": 0.1
+        },
+        "budget_efficiency": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.2
+        },
+        "capacity_fit": {
+          "contribution": 0.2,
+          "factor": 1.0,
+          "weight": 0.2
+        },
+        "catering_flexibility": {
+          "contribution": 0.15,
+          "factor": 1.0,
+          "weight": 0.15
+        },
+        "event_window_fit": {
+          "contribution": 0.05,
+          "factor": 1.0,
+          "weight": 0.05
+        },
+        "evidence_freshness": {
+          "contribution": 0.0717,
+          "factor": 0.7167,
+          "weight": 0.1
+        },
+        "recording_suitability": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.15
+        },
+        "technical_readiness": {
+          "contribution": 0.05,
+          "factor": 1.0,
+          "weight": 0.05
+        },
+        "total": 0.6217
+      },
+      "screen_status": "confirmed",
+      "source_title": "The Lounge - Singapore Land Tower - Event Venue Rental - Tagvenue.com: 50 Raffles Place, Level 4, Singapore 048623; up to 50 seats / 100 standing; S$818/hour Mon-Fri, S$1,227/hour Sat-Sun incl GST (9:00-18:00); Wi-Fi, projector, flatscreen TV, PA system, air conditioning, natural light; external catering allowed",
+      "source_url": "https://www.tagvenue.com/sg/rooms/singapore/100995/singapore-land-tower/the-lounge",
+      "tier_reasons": [],
+      "venue_flags": [
+        "over_soft_budget",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "stale_evidence"
+      ],
+      "venue_tier": "shortlist_ready",
+      "verification_question_kinds": [
+        "availability",
+        "final_quote",
+        "booking_terms"
+      ],
+      "verification_questions": [
+        "Confirm Saturday availability of The Lounge at Singapore Land Tower (The Exchange, TEC) on the chosen 2026 date, and that the 50-seat / 100-standing configuration comfortably seats 50 in a talk layout.",
+        "Confirm the exact all-in Saturday total (published S$1,227/hour or S$6,132/day incl GST for 9:00-18:00; taxes/fees not itemized).",
+        "Confirm the minimum booking duration and any event-management fee."
+      ],
+      "wifi_status": "confirmed"
+    },
+    {
+      "accessed_on": "2026-08-10",
+      "address": "11 Eunos Road 8, Singapore 408601",
+      "booking_url": "https://www.lli.sg/facilities-venue-spaces/book-a-venue",
+      "capacity_basis": "venue_claim",
+      "capacity_comfortable": 120,
+      "catering_policy": "unknown",
+      "city_slug": "singapore-sg",
+      "closing_time": "22:00",
+      "cost_basis": "published_rate",
+      "cost_local_amount": 1264.4,
+      "cost_local_currency": "SGD",
+      "cost_rate_unit": "day",
+      "estimated_cost_usd": 988.17,
+      "estimated_hours": null,
+      "event_window_evidence": {
+        "accessed_on": "2026-08-10",
+        "claim": "The rates table states facilities are available Monday to Sunday and public holidays, 0800-2200 hours, which supports an 8-hour 09:00-17:00 event (8am-5pm block).",
+        "title": "Lifelong Learning Singapore — Pay-Per-Use Facilities Schedule of Rates (official PDF, effective 1 September 2025)",
+        "url": "https://www.lli.sg/docs/lifelonglearninginstitutelibraries/facility-documents/ppuf-sor_wef_1_september_2025_2.pdf"
+      },
+      "event_window_status": "allows_to_6",
+      "evidence": {
+        "geo": "https://www.lli.sg/facilities-venue-spaces/book-a-venue",
+        "inference": "Event Hall 2-1 seats 120-140 in seminar mode with a published 8am-5pm block of S$1,264.40 w/GST (988.17 USD at the documented ECB 2026-08-10 rate, 1 SGD = USD 0.78153534) — within the USD 5,000 soft budget; oversized for 50 but a strong affordable option; projector confirmed, Wi-Fi unconfirmed.",
+        "observed_facts": "Official LLI rates PDF (fetched 2026-08-10 from lli.sg) publishes Event Hall 2-1 (Level 2, ~215 sqm): capacity 120-140 seminar / 72-80 classroom / 48-50 cluster; rates Mon-Sun & public holidays 0800-2200: 4-hour block S$510 (S$555.90 w/GST), 8am-5pm/1pm-10pm block S$1,160 (S$1,264.40 w/GST), full day 8am-10pm S$1,530 (S$1,667.70 w/GST); note 1: 'All rates include provision of Projector and Air-conditioning except for open-air venue spaces'."
+      },
+      "hourly_rate_local": null,
+      "hourly_rate_usd": null,
+      "latitude": 1.3196003,
+      "longitude": 103.8923741,
+      "max_booking_hours": null,
+      "name": "Lifelong Learning Institute (LLSG) — Event Hall 2-1",
+      "needs_human_verify": true,
+      "opening_hours": "08:00",
+      "rate_currency": null,
+      "rate_estimate_note": null,
+      "recording_suitability": "unknown",
+      "score": 0.6071,
+      "score_breakdown": {
+        "booking_path": {
+          "contribution": 0.1,
+          "factor": 1.0,
+          "weight": 0.1
+        },
+        "budget_efficiency": {
+          "contribution": 0.1605,
+          "factor": 0.8024,
+          "weight": 0.2
+        },
+        "capacity_fit": {
+          "contribution": 0.2,
+          "factor": 1.0,
+          "weight": 0.2
+        },
+        "catering_flexibility": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.15
+        },
+        "event_window_fit": {
+          "contribution": 0.05,
+          "factor": 1.0,
+          "weight": 0.05
+        },
+        "evidence_freshness": {
+          "contribution": 0.0717,
+          "factor": 0.7167,
+          "weight": 0.1
+        },
+        "recording_suitability": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.15
+        },
+        "technical_readiness": {
+          "contribution": 0.025,
+          "factor": 0.5,
+          "weight": 0.05
+        },
+        "total": 0.6071
+      },
+      "screen_status": "confirmed",
+      "source_title": "Lifelong Learning Singapore — Pay-Per-Use Facilities Schedule of Rates (official PDF, effective 1 September 2025): Event Hall 2-1, 215 sqm, capacity 120-140 seminar; 8am-5pm block S$1,160 (S$1,264.40 w/GST); all rates include projector and air-conditioning; Mon-Sun 0800-2200",
+      "source_url": "https://www.lli.sg/docs/lifelonglearninginstitutelibraries/facility-documents/ppuf-sor_wef_1_september_2025_2.pdf",
+      "tier_reasons": [],
+      "venue_flags": [
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "stale_evidence"
+      ],
+      "venue_tier": "shortlist_ready",
+      "verification_question_kinds": [
+        "availability",
+        "final_quote",
+        "wifi",
+        "booking_terms",
+        "room_assignment"
+      ],
+      "verification_questions": [
+        "Confirm availability of Event Hall 2-1 on the chosen 2026 Saturday (LLI venues are open Mon-Sun and public holidays 0800-2200).",
+        "Confirm the all-in total for the 8am-5pm block (published S$1,264.40 w/GST; confirm no additional AV/cleaning charges).",
+        "Confirm Wi-Fi availability in the event halls (the rates PDF confirms projector and air-conditioning but does not mention Wi-Fi).",
+        "Confirm the 2-hour minimum / 4-hour block extension rules for a 09:00-17:00 booking (8am-5pm block published).",
+        "Confirm the 120-140 seminar capacity can be configured for an intimate 50-person talk event (oversized for the target), and the catering policy (not stated on the rates PDF)."
+      ],
+      "wifi_status": "unknown"
+    },
+    {
+      "accessed_on": "2026-08-10",
+      "address": "21 Collyer Quay, Singapore 049320",
+      "booking_url": "https://www.tagvenue.com/sg/rooms/singapore/85884/wework-21-collyer-quay/level-1-auditorium",
+      "capacity_basis": "venue_claim",
+      "capacity_comfortable": 55,
+      "catering_policy": "in_house_available",
+      "city_slug": "singapore-sg",
+      "closing_time": "23:00",
+      "cost_basis": "estimated_from_rate",
+      "cost_local_amount": 1192,
+      "cost_local_currency": "SGD",
+      "cost_rate_unit": "hour",
+      "estimated_cost_usd": 7452.72,
+      "estimated_hours": 8,
+      "event_window_evidence": {
+        "accessed_on": "2026-08-10",
+        "claim": "Tagvenue pricing table shows the Auditorium bookable 9:00-23:00 on Saturdays (and 9:00-18:00 day rate Mon-Fri), which supports an 8-hour 09:00-17:00 event.",
+        "title": "Level 1 - Auditorium - WeWork - 21 Collyer Quay - Event Venue Rental - Tagvenue.com (pricing section)",
+        "url": "https://www.tagvenue.com/sg/rooms/singapore/85884/wework-21-collyer-quay/level-1-auditorium"
+      },
+      "event_window_status": "allows_to_6",
+      "evidence": {
+        "geo": "https://www.tagvenue.com/sg/rooms/singapore/85884/wework-21-collyer-quay/level-1-auditorium",
+        "inference": "Capacity 55 meets the 50-person target and screen+Wi-Fi are confirmed; the Saturday 8-hour estimate (7,452.72 USD) exceeds the USD 5,000 soft budget, so the venue is shortlist_ready with an over_soft_budget ranking signal for Joe.",
+        "observed_facts": "Tagvenue room page (fetched 2026-08-10) lists the Level 1 Auditorium at WeWork 21 Collyer Quay, 21 Collyer Quay, Singapore 049320: up to 55 seats theatre; S$963/hour 9:00-18:00 Mon-Fri, S$1,192/hour Saturday and 18:00-23:00 (all prices include GST); window 9:00-23:00; facilities Wi-Fi, projector, flipchart, PA system/speakers, air conditioning, soundproof; venue offers catering, external catering not allowed (approved caterers only); additional charges cleaning fee and Event Management Fee from S$500 before GST."
+      },
+      "hourly_rate_local": 1192,
+      "hourly_rate_usd": 931.5901,
+      "latitude": 1.2829319,
+      "longitude": 103.8525275,
+      "max_booking_hours": null,
+      "name": "WeWork 21 Collyer Quay — Level 1 Auditorium",
+      "needs_human_verify": true,
+      "opening_hours": "09:00",
+      "rate_currency": "SGD",
+      "rate_estimate_note": "Tagvenue listing (fetched 2026-08-10) publishes the Auditorium at S$963/hour 9:00-18:00 Mon-Fri and S$1,192/hour Saturday (9:00-23:00, all prices include GST). Saturday 8-hour estimate = 1,192 x 8 = 9,536 SGD = 7,452.72 USD at the documented ECB 2026-08-10 rate (1 SGD = USD 0.78153534), above the USD 5,000 soft budget. Cleaning fee and Event Management Fee start at S$500 before GST (not included).",
+      "recording_suitability": "unknown",
+      "score": 0.5767,
+      "score_breakdown": {
+        "booking_path": {
+          "contribution": 0.1,
+          "factor": 1.0,
+          "weight": 0.1
+        },
+        "budget_efficiency": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.2
+        },
+        "capacity_fit": {
+          "contribution": 0.2,
+          "factor": 1.0,
+          "weight": 0.2
+        },
+        "catering_flexibility": {
+          "contribution": 0.105,
+          "factor": 0.7,
+          "weight": 0.15
+        },
+        "event_window_fit": {
+          "contribution": 0.05,
+          "factor": 1.0,
+          "weight": 0.05
+        },
+        "evidence_freshness": {
+          "contribution": 0.0717,
+          "factor": 0.7167,
+          "weight": 0.1
+        },
+        "recording_suitability": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.15
+        },
+        "technical_readiness": {
+          "contribution": 0.05,
+          "factor": 1.0,
+          "weight": 0.05
+        },
+        "total": 0.5767
+      },
+      "screen_status": "confirmed",
+      "source_title": "Level 1 - Auditorium - WeWork - 21 Collyer Quay - Event Venue Rental - Tagvenue.com: 21 Collyer Quay, Singapore 049320; up to 55 seats theatre; S$963/hour 9:00-18:00 Mon-Fri, S$1,192/hour Sat & evenings incl GST; Wi-Fi, projector, flipchart, PA system, air conditioning, soundproof",
+      "source_url": "https://www.tagvenue.com/sg/rooms/singapore/85884/wework-21-collyer-quay/level-1-auditorium",
+      "tier_reasons": [],
+      "venue_flags": [
+        "over_soft_budget",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "stale_evidence"
+      ],
+      "venue_tier": "shortlist_ready",
+      "verification_question_kinds": [
+        "availability",
+        "final_quote",
+        "booking_terms"
+      ],
+      "verification_questions": [
+        "Confirm Saturday availability of the Level 1 Auditorium at WeWork 21 Collyer Quay on the chosen 2026 date.",
+        "Confirm the exact all-in Saturday total (published S$1,192/hour incl GST; cleaning fee and Event Management Fee from S$500 before GST; catering and any AV extras not itemized).",
+        "Confirm minimum booking duration, the 9:00-23:00 window on the booked date, and the catering arrangement (venue offers catering; external catering not allowed, approved caterers only)."
+      ],
+      "wifi_status": "confirmed"
+    },
+    {
+      "accessed_on": "2026-08-10",
+      "address": "21 Collyer Quay, Singapore 049320",
+      "booking_url": "https://www.tagvenue.com/sg/rooms/singapore/85991/wework-21-collyer-quay/level-2-business-centre",
+      "capacity_basis": "venue_claim",
+      "capacity_comfortable": 120,
+      "catering_policy": "in_house_available",
+      "city_slug": "singapore-sg",
+      "closing_time": "23:00",
+      "cost_basis": "estimated_from_rate",
+      "cost_local_amount": 1759,
+      "cost_local_currency": "SGD",
+      "cost_rate_unit": "hour",
+      "estimated_cost_usd": 10997.77,
+      "estimated_hours": 8,
+      "event_window_evidence": {
+        "accessed_on": "2026-08-10",
+        "claim": "Tagvenue pricing table shows the Business Centre bookable 9:00-23:00 on Saturdays, which supports an 8-hour 09:00-17:00 event.",
+        "title": "Level 2 - Business Centre - WeWork - 21 Collyer Quay - Event Venue Rental - Tagvenue.com (pricing section)",
+        "url": "https://www.tagvenue.com/sg/rooms/singapore/85991/wework-21-collyer-quay/level-2-business-centre"
+      },
+      "event_window_status": "allows_to_6",
+      "evidence": {
+        "geo": "https://www.tagvenue.com/sg/rooms/singapore/85991/wework-21-collyer-quay/level-2-business-centre",
+        "inference": "Capacity 120 comfortably exceeds 50 but the Saturday 8-hour estimate (10,997.77 USD) is more than double the soft budget; shortlist_ready with over_soft_budget and oversized_capacity ranking signals.",
+        "observed_facts": "Tagvenue room page (fetched 2026-08-10) lists the Level 2 Business Centre at WeWork 21 Collyer Quay: up to 120 seats / 150 standing; S$1,399/hour 9:00-18:00 Mon-Fri, S$1,759/hour Saturday and 18:00-23:00 (all prices include GST); window 9:00-23:00; facilities Wi-Fi, two projector screens, whiteboard, flipchart, PA system/speakers, air conditioning; venue offers catering, external catering not allowed (approved caterers only)."
+      },
+      "hourly_rate_local": 1759,
+      "hourly_rate_usd": 1374.7207,
+      "latitude": 1.2829319,
+      "longitude": 103.8525275,
+      "max_booking_hours": null,
+      "name": "WeWork 21 Collyer Quay — Level 2 Business Centre",
+      "needs_human_verify": true,
+      "opening_hours": "09:00",
+      "rate_currency": "SGD",
+      "rate_estimate_note": "Tagvenue listing (fetched 2026-08-10) publishes the Business Centre at S$1,399/hour 9:00-18:00 Mon-Fri and S$1,759/hour Saturday (9:00-23:00, all prices include GST). Saturday 8-hour estimate = 1,759 x 8 = 14,072 SGD = 10,997.77 USD at the documented ECB 2026-08-10 rate (1 SGD = USD 0.78153534), well above the USD 5,000 soft budget.",
+      "recording_suitability": "unknown",
+      "score": 0.5767,
+      "score_breakdown": {
+        "booking_path": {
+          "contribution": 0.1,
+          "factor": 1.0,
+          "weight": 0.1
+        },
+        "budget_efficiency": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.2
+        },
+        "capacity_fit": {
+          "contribution": 0.2,
+          "factor": 1.0,
+          "weight": 0.2
+        },
+        "catering_flexibility": {
+          "contribution": 0.105,
+          "factor": 0.7,
+          "weight": 0.15
+        },
+        "event_window_fit": {
+          "contribution": 0.05,
+          "factor": 1.0,
+          "weight": 0.05
+        },
+        "evidence_freshness": {
+          "contribution": 0.0717,
+          "factor": 0.7167,
+          "weight": 0.1
+        },
+        "recording_suitability": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.15
+        },
+        "technical_readiness": {
+          "contribution": 0.05,
+          "factor": 1.0,
+          "weight": 0.05
+        },
+        "total": 0.5767
+      },
+      "screen_status": "confirmed",
+      "source_title": "Level 2 - Business Centre - WeWork - 21 Collyer Quay - Event Venue Rental - Tagvenue.com: up to 120 seats / 150 standing; S$1,399/hour 9:00-18:00 Mon-Fri, S$1,759/hour Sat & evenings incl GST; two projector screens, Wi-Fi, whiteboard, flipchart, PA system, air conditioning",
+      "source_url": "https://www.tagvenue.com/sg/rooms/singapore/85991/wework-21-collyer-quay/level-2-business-centre",
+      "tier_reasons": [],
+      "venue_flags": [
+        "over_soft_budget",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "stale_evidence"
+      ],
+      "venue_tier": "shortlist_ready",
+      "verification_question_kinds": [
+        "availability",
+        "final_quote",
+        "booking_terms"
+      ],
+      "verification_questions": [
+        "Confirm Saturday availability of the Level 2 Business Centre on the chosen 2026 date.",
+        "Confirm the exact all-in Saturday total (published S$1,759/hour incl GST; cleaning fee and Event Management Fee from S$500 before GST not included).",
+        "Confirm whether the 120-seat space can be configured for an intimate 50-person talk event without excess cost (oversized for the target; room_assignment check)."
+      ],
+      "wifi_status": "confirmed"
+    },
+    {
+      "accessed_on": "2026-08-10",
+      "address": "5 Temasek Boulevard, Level 17 Community Floor, Singapore 038985",
+      "booking_url": "https://www.tagvenue.com/sg/rooms/singapore/85994/wework-suntec-tower-5/level-17-common-area",
+      "capacity_basis": "venue_claim",
+      "capacity_comfortable": 60,
+      "catering_policy": "in_house_available",
+      "city_slug": "singapore-sg",
+      "closing_time": "23:00",
+      "cost_basis": "estimated_from_rate",
+      "cost_local_amount": 1290,
+      "cost_local_currency": "SGD",
+      "cost_rate_unit": "hour",
+      "estimated_cost_usd": 8065.44,
+      "estimated_hours": 8,
+      "event_window_evidence": {
+        "accessed_on": "2026-08-10",
+        "claim": "Tagvenue pricing table shows the space bookable 9:00-23:00 on Saturdays and Sundays, which supports an 8-hour 09:00-17:00 event.",
+        "title": "Level 17 - Common Area - WeWork - Suntec Tower 5 - Event Venue Rental - Tagvenue.com (pricing section)",
+        "url": "https://www.tagvenue.com/sg/rooms/singapore/85994/wework-suntec-tower-5/level-17-common-area"
+      },
+      "event_window_status": "allows_to_6",
+      "evidence": {
+        "geo": "https://www.tagvenue.com/sg/rooms/singapore/85994/wework-suntec-tower-5/level-17-common-area",
+        "inference": "Capacity 60 meets the target with confirmed screen+Wi-Fi, but the Saturday 8-hour estimate (8,065.44 USD) exceeds the soft budget and the space is a semi-private community area rather than a private room; shortlist_ready with over_soft_budget signal.",
+        "observed_facts": "Tagvenue room page (fetched 2026-08-10) lists the Level 17 Common Area at WeWork Suntec Tower 5, 5 Temasek Boulevard, Level 17 Community Floor, Singapore 038985: up to 60 seats / 100 standing; S$1,290/hour incl GST, weekends 9:00-23:00 and weekdays 18:00-23:00; facilities Wi-Fi, projector, whiteboard, flipchart, PA system/speakers, air conditioning, natural light; venue offers catering, external catering not allowed (approved caterers only); additional charges cleaning fee and Event Management Fee from S$500 before GST."
+      },
+      "hourly_rate_local": 1290,
+      "hourly_rate_usd": 1008.1806,
+      "latitude": 1.2945258,
+      "longitude": 103.8579722,
+      "max_booking_hours": null,
+      "name": "WeWork Suntec Tower 5 — Level 17 Common Area",
+      "needs_human_verify": true,
+      "opening_hours": "09:00",
+      "rate_currency": "SGD",
+      "rate_estimate_note": "Tagvenue listing (fetched 2026-08-10) publishes the Level 17 Common Area at S$1,290/hour (all prices include GST); weekends 9:00-23:00, weekdays only 18:00-23:00. Saturday 8-hour estimate = 1,290 x 8 = 10,320 SGD = 8,065.44 USD at the documented ECB 2026-08-10 rate (1 SGD = USD 0.78153534), above the USD 5,000 soft budget. Cleaning fee and Event Management Fee start at S$500 before GST (not included).",
+      "recording_suitability": "unknown",
+      "score": 0.5767,
+      "score_breakdown": {
+        "booking_path": {
+          "contribution": 0.1,
+          "factor": 1.0,
+          "weight": 0.1
+        },
+        "budget_efficiency": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.2
+        },
+        "capacity_fit": {
+          "contribution": 0.2,
+          "factor": 1.0,
+          "weight": 0.2
+        },
+        "catering_flexibility": {
+          "contribution": 0.105,
+          "factor": 0.7,
+          "weight": 0.15
+        },
+        "event_window_fit": {
+          "contribution": 0.05,
+          "factor": 1.0,
+          "weight": 0.05
+        },
+        "evidence_freshness": {
+          "contribution": 0.0717,
+          "factor": 0.7167,
+          "weight": 0.1
+        },
+        "recording_suitability": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.15
+        },
+        "technical_readiness": {
+          "contribution": 0.05,
+          "factor": 1.0,
+          "weight": 0.05
+        },
+        "total": 0.5767
+      },
+      "screen_status": "confirmed",
+      "source_title": "Level 17 - Common Area - WeWork - Suntec Tower 5 - Event Venue Rental - Tagvenue.com: 5 Temasek Boulevard, Level 17, Singapore 038985; up to 60 seats / 100 standing; S$1,290/hour incl GST (weekends 9:00-23:00); Wi-Fi, projector, whiteboard, flipchart, PA system, air conditioning",
+      "source_url": "https://www.tagvenue.com/sg/rooms/singapore/85994/wework-suntec-tower-5/level-17-common-area",
+      "tier_reasons": [],
+      "venue_flags": [
+        "over_soft_budget",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "stale_evidence"
+      ],
+      "venue_tier": "shortlist_ready",
+      "verification_question_kinds": [
+        "availability",
+        "final_quote",
+        "booking_terms"
+      ],
+      "verification_questions": [
+        "Confirm Saturday availability of the Level 17 Common Area at WeWork Suntec Tower 5 on the chosen 2026 date (weekend window is 9:00-23:00; weekdays are 18:00-23:00 only).",
+        "Confirm the exact all-in Saturday total (published S$1,290/hour incl GST; cleaning fee and Event Management Fee from S$500 before GST not included).",
+        "Confirm the semi-private nature of the space (listed as 'semi-private area') and whether exclusive hire is available for a 50-person event."
+      ],
+      "wifi_status": "confirmed"
+    },
+    {
+      "accessed_on": "2026-08-10",
+      "address": "28 Aliwal Street, Singapore 199918",
+      "booking_url": "https://www.aliwalartscentre.sg/venue-hire/",
+      "capacity_basis": "venue_claim",
+      "capacity_comfortable": 120,
+      "catering_policy": "unknown",
+      "city_slug": "singapore-sg",
+      "closing_time": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "cost_rate_unit": "unknown",
+      "estimated_cost_usd": null,
+      "estimated_hours": null,
+      "event_window_evidence": null,
+      "event_window_status": "unknown",
+      "evidence": {
+        "geo": "https://www.aliwalartscentre.sg/venue-hire/",
+        "inference": "The Multi-Purpose Hall's 120-seat capacity meets the 50-person target in Kampong Glam at a published from-price of S$1,000 (rate basis/session unclear); cost stays unknown pending a quote, so the record is shortlist_ready with cost_unknown and screen/wifi questions.",
+        "observed_facts": "Official Aliwal Arts Centre venue-hire page (fetched 2026-08-10, HTTP 200) confirms the centre manages venue hire for its spaces including the Multi-Purpose Hall (Level 1). Venuexplorer Singapore listing (fetched 2026-08-10) states the Multi-Purpose Hall seats up to 120 (theatre) / 150 standing, 'from SGD 1,000', ~220 sqm with high ceiling, suitable for black-box performances, rehearsals and corporate events; NAC documentation (nac.gov.sg, 2023 open-call info pack) gives the address as 28 Aliwal St, Singapore 199918."
+      },
+      "hourly_rate_local": null,
+      "hourly_rate_usd": null,
+      "latitude": 1.302719,
+      "longitude": 103.8610238,
+      "max_booking_hours": null,
+      "name": "Aliwal Arts Centre — Multi-Purpose Hall",
+      "needs_human_verify": true,
+      "opening_hours": null,
+      "rate_currency": null,
+      "rate_estimate_note": null,
+      "recording_suitability": "unknown",
+      "score": 0.4967,
+      "score_breakdown": {
+        "booking_path": {
+          "contribution": 0.1,
+          "factor": 1.0,
+          "weight": 0.1
+        },
+        "budget_efficiency": {
+          "contribution": 0.1,
+          "factor": 0.5,
+          "weight": 0.2
+        },
+        "capacity_fit": {
+          "contribution": 0.2,
+          "factor": 1.0,
+          "weight": 0.2
+        },
+        "catering_flexibility": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.15
+        },
+        "event_window_fit": {
+          "contribution": 0.025,
+          "factor": 0.5,
+          "weight": 0.05
+        },
+        "evidence_freshness": {
+          "contribution": 0.0717,
+          "factor": 0.7167,
+          "weight": 0.1
+        },
+        "recording_suitability": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.15
+        },
+        "technical_readiness": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.05
+        },
+        "total": 0.4967
+      },
+      "screen_status": "unknown",
+      "source_title": "Aliwal Arts Centre — Venue Hire (official, Arts House Group): Multi-Purpose Hall on Level 1, 28 Aliwal Street, Singapore; venue-hire enquiries via Arts House Group",
+      "source_url": "https://www.aliwalartscentre.sg/venue-hire/",
+      "tier_reasons": [],
+      "venue_flags": [
+        "cost_unknown",
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "venue_tier": "shortlist_ready",
+      "verification_question_kinds": [
+        "cost_unknown",
+        "screen",
+        "wifi",
+        "availability",
+        "final_quote",
+        "event_window"
+      ],
+      "verification_questions": [
+        "Confirm the hire rate for the Multi-Purpose Hall for a 50-person event (Venuexplorer lists 'from SGD 1,000'; the official Aliwal Arts Centre venue-hire page is quote-based and does not publish rates).",
+        "Confirm screen/projector availability in the Multi-Purpose Hall (Venuexplorer lists AV features; the official page does not itemize).",
+        "Confirm Wi-Fi availability in the Multi-Purpose Hall.",
+        "Confirm Saturday availability on the chosen 2026 date.",
+        "Confirm the exact all-in quote including any technical/staffing charges, and the exact postal address (28 Aliwal Street per NAC documentation; one directory lists 32 Aliwal Street).",
+        "Confirm the bookable window for venue hire (the official page publishes no event hours)."
+      ],
+      "wifi_status": "unknown"
+    },
+    {
+      "accessed_on": "2026-08-10",
+      "address": "1 Old Parliament Lane, Singapore 179429",
+      "booking_url": "https://www.theartshouse.sg/venue-hire/",
+      "capacity_basis": "venue_claim",
+      "capacity_comfortable": 75,
+      "catering_policy": "unknown",
+      "city_slug": "singapore-sg",
+      "closing_time": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "cost_rate_unit": "unknown",
+      "estimated_cost_usd": null,
+      "estimated_hours": null,
+      "event_window_evidence": null,
+      "event_window_status": "unknown",
+      "evidence": {
+        "geo": "https://www.theartshouse.sg/venue-hire/",
+        "inference": "The Screening Room's 75-seat capacity meets the 50-person target in a historic Civic District venue; cost and AV facts are not public, so the record is shortlist_ready with cost_unknown and screen/wifi questions.",
+        "observed_facts": "The Arts House official venue-hire page (fetched 2026-08-10 via Wayback Machine 2024 snapshot of theartshouse.sg/venue-hire/ because the live page is script-rendered) lists the venue rooms — Chamber, Blue Room, Living Room, Gallery II, Screening Room, Play Den, Council Room — and describes the Screening Room as 'Versatile & Intimate. This 75-seater film theatrette...'; rental rates are published by category (Arts/General, Corporate/Private, Non-profit) via the downloadable venue kit; the live theartshouse.sg/venue-hire/ page (HTTP 200) confirms the venue-hire programme and contact venues@artshouse.sg."
+      },
+      "hourly_rate_local": null,
+      "hourly_rate_usd": null,
+      "latitude": 1.2886695,
+      "longitude": 103.851099,
+      "max_booking_hours": null,
+      "name": "The Arts House at the Old Parliament — Screening Room",
+      "needs_human_verify": true,
+      "opening_hours": null,
+      "rate_currency": null,
+      "rate_estimate_note": null,
+      "recording_suitability": "unknown",
+      "score": 0.4967,
+      "score_breakdown": {
+        "booking_path": {
+          "contribution": 0.1,
+          "factor": 1.0,
+          "weight": 0.1
+        },
+        "budget_efficiency": {
+          "contribution": 0.1,
+          "factor": 0.5,
+          "weight": 0.2
+        },
+        "capacity_fit": {
+          "contribution": 0.2,
+          "factor": 1.0,
+          "weight": 0.2
+        },
+        "catering_flexibility": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.15
+        },
+        "event_window_fit": {
+          "contribution": 0.025,
+          "factor": 0.5,
+          "weight": 0.05
+        },
+        "evidence_freshness": {
+          "contribution": 0.0717,
+          "factor": 0.7167,
+          "weight": 0.1
+        },
+        "recording_suitability": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.15
+        },
+        "technical_readiness": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.05
+        },
+        "total": 0.4967
+      },
+      "screen_status": "unknown",
+      "source_title": "Venue Hire — The Arts House at the Old Parliament (official, via Wayback Machine 2024 snapshot): Screening Room - 'Versatile & Intimate. This 75-seater film theatrette used to house several offices during Singapore's Legislative Assembly era'; rental rates by category (Arts/General, Corporate/Private, Non-profit); venue kit download available",
+      "source_url": "https://web.archive.org/web/2024/https://www.theartshouse.sg/venue-hire/",
+      "tier_reasons": [],
+      "venue_flags": [
+        "cost_unknown",
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "venue_tier": "shortlist_ready",
+      "verification_question_kinds": [
+        "cost_unknown",
+        "screen",
+        "wifi",
+        "availability",
+        "final_quote",
+        "event_window"
+      ],
+      "verification_questions": [
+        "Confirm the hire rate for the Screening Room for a 50-person event (The Arts House publishes rental rates by category — Arts/General, Corporate/Private, Non-profit — via its venue kit; no numeric rates on the public venue-hire page).",
+        "Confirm the film-theatrette AV setup (projector/screen availability for a talk format).",
+        "Confirm Wi-Fi availability in the Screening Room.",
+        "Confirm Saturday availability on the chosen 2026 date.",
+        "Confirm the exact all-in quote including any technical/staffing charges.",
+        "Confirm the bookable window for venue hire (venue hire hours not published on the page)."
+      ],
+      "wifi_status": "unknown"
+    },
+    {
+      "accessed_on": "2026-08-10",
+      "address": "1 St Andrew's Road, Singapore 178957",
+      "booking_url": "https://www.nationalgallery.sg/venue-rental",
+      "capacity_basis": "venue_claim",
+      "capacity_comfortable": 140,
+      "catering_policy": "unknown",
+      "city_slug": "singapore-sg",
+      "closing_time": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "cost_rate_unit": "unknown",
+      "estimated_cost_usd": null,
+      "estimated_hours": null,
+      "event_window_evidence": null,
+      "event_window_status": "unknown",
+      "evidence": {
+        "geo": "https://www.nationalgallery.sg/venue-rental",
+        "inference": "The Glass Room comfortably exceeds 50 but no price or AV facts are published, so cost stays unknown with confirm questions; shortlist_ready (capacity 140, oversized signal) pending quote.",
+        "observed_facts": "National Gallery Singapore official venue-rental page (fetched 2026-08-10, HTTP 200) lists event spaces with capacities: Supreme Court Terrace (standing 300), Glass Room (standing capacity 140 pax, 6 x 5-feet round tables, wheelchair accessible), The Ngee Ann Kongsi Auditorium and Foyer (seating 212 + 2 wheelchair spaces), Rooftop Studios (seating 23-28), Seminar Rooms (seating 15-28). No prices, screen/Wi-Fi, or event hours are published on the page."
+      },
+      "hourly_rate_local": null,
+      "hourly_rate_usd": null,
+      "latitude": 1.2902557,
+      "longitude": 103.8514709,
+      "max_booking_hours": null,
+      "name": "National Gallery Singapore — Glass Room",
+      "needs_human_verify": true,
+      "opening_hours": null,
+      "rate_currency": null,
+      "rate_estimate_note": null,
+      "recording_suitability": "unknown",
+      "score": 0.4167,
+      "score_breakdown": {
+        "booking_path": {
+          "contribution": 0.1,
+          "factor": 1.0,
+          "weight": 0.1
+        },
+        "budget_efficiency": {
+          "contribution": 0.1,
+          "factor": 0.5,
+          "weight": 0.2
+        },
+        "capacity_fit": {
+          "contribution": 0.12,
+          "factor": 0.6,
+          "weight": 0.2
+        },
+        "catering_flexibility": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.15
+        },
+        "event_window_fit": {
+          "contribution": 0.025,
+          "factor": 0.5,
+          "weight": 0.05
+        },
+        "evidence_freshness": {
+          "contribution": 0.0717,
+          "factor": 0.7167,
+          "weight": 0.1
+        },
+        "recording_suitability": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.15
+        },
+        "technical_readiness": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.05
+        },
+        "total": 0.4167
+      },
+      "screen_status": "unknown",
+      "source_title": "Venue Rental | National Gallery Singapore (official): Glass Room - standing capacity 140 pax, 6 x 5-feet round tables, wheelchair accessible",
+      "source_url": "https://www.nationalgallery.sg/venue-rental",
+      "tier_reasons": [],
+      "venue_flags": [
+        "cost_unknown",
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "venue_tier": "shortlist_ready",
+      "verification_question_kinds": [
+        "cost_unknown",
+        "screen",
+        "wifi",
+        "availability",
+        "final_quote",
+        "room_assignment",
+        "event_window"
+      ],
+      "verification_questions": [
+        "Confirm the hire rate for the Glass Room for a 50-person event (National Gallery venue rental is quote-based; no public rates on the venue-rental page).",
+        "Confirm screen/projector availability in the Glass Room (not stated on the venue-rental page).",
+        "Confirm Wi-Fi availability in the Glass Room (not stated on the venue-rental page).",
+        "Confirm availability on the chosen 2026 Saturday.",
+        "Confirm the exact all-in quote including any AV, cleaning or staffing charges.",
+        "Confirm the 140-person standing-capacity space can be configured for an intimate 50-person talk event (oversized for the target).",
+        "Confirm the bookable window for venue hire (the venue-rental page publishes no event hours)."
+      ],
+      "wifi_status": "unknown"
+    },
+    {
+      "accessed_on": "2026-08-10",
+      "address": "1 St Andrew's Road, Singapore 178957",
+      "booking_url": "https://www.nationalgallery.sg/venue-rental",
+      "capacity_basis": "venue_claim",
+      "capacity_comfortable": 212,
+      "catering_policy": "unknown",
+      "city_slug": "singapore-sg",
+      "closing_time": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "cost_rate_unit": "unknown",
+      "estimated_cost_usd": null,
+      "estimated_hours": null,
+      "event_window_evidence": null,
+      "event_window_status": "unknown",
+      "evidence": {
+        "geo": "https://www.nationalgallery.sg/venue-rental",
+        "inference": "The auditorium exceeds 50 by a wide margin; no price or AV facts are published, so cost stays unknown with confirm questions; shortlist_ready (capacity 212, oversized signal) pending quote.",
+        "observed_facts": "National Gallery Singapore official venue-rental page (fetched 2026-08-10, HTTP 200) lists 'The Ngee Ann Kongsi Auditorium and Foyer — Seating capacity: 212 pax, with 2 additional wheelchair spaces; Wheelchair accessible'. No prices, screen/Wi-Fi, or event hours are published on the page."
+      },
+      "hourly_rate_local": null,
+      "hourly_rate_usd": null,
+      "latitude": 1.2902557,
+      "longitude": 103.8514709,
+      "max_booking_hours": null,
+      "name": "National Gallery Singapore — The Ngee Ann Kongsi Auditorium & Foyer",
+      "needs_human_verify": true,
+      "opening_hours": null,
+      "rate_currency": null,
+      "rate_estimate_note": null,
+      "recording_suitability": "unknown",
+      "score": 0.2967,
+      "score_breakdown": {
+        "booking_path": {
+          "contribution": 0.1,
+          "factor": 1.0,
+          "weight": 0.1
+        },
+        "budget_efficiency": {
+          "contribution": 0.1,
+          "factor": 0.5,
+          "weight": 0.2
+        },
+        "capacity_fit": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.2
+        },
+        "catering_flexibility": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.15
+        },
+        "event_window_fit": {
+          "contribution": 0.025,
+          "factor": 0.5,
+          "weight": 0.05
+        },
+        "evidence_freshness": {
+          "contribution": 0.0717,
+          "factor": 0.7167,
+          "weight": 0.1
+        },
+        "recording_suitability": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.15
+        },
+        "technical_readiness": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.05
+        },
+        "total": 0.2967
+      },
+      "screen_status": "unknown",
+      "source_title": "Venue Rental | National Gallery Singapore (official): The Ngee Ann Kongsi Auditorium and Foyer - seating capacity 212 pax with 2 additional wheelchair spaces, wheelchair accessible",
+      "source_url": "https://www.nationalgallery.sg/venue-rental",
+      "tier_reasons": [],
+      "venue_flags": [
+        "oversized_capacity",
+        "cost_unknown",
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "venue_tier": "shortlist_ready",
+      "verification_question_kinds": [
+        "cost_unknown",
+        "screen",
+        "wifi",
+        "availability",
+        "final_quote",
+        "room_assignment",
+        "event_window"
+      ],
+      "verification_questions": [
+        "Confirm the hire rate for the Ngee Ann Kongsi Auditorium and Foyer for a 50-person event (quote-based; no public rates).",
+        "Confirm screen/projector availability (not stated on the venue-rental page).",
+        "Confirm Wi-Fi availability (not stated on the venue-rental page).",
+        "Confirm availability on the chosen 2026 Saturday.",
+        "Confirm the exact all-in quote including any AV, cleaning or staffing charges.",
+        "Confirm the 212-seat auditorium can be configured for an intimate 50-person talk event with the foyer as reception (oversized for the target).",
+        "Confirm the bookable window for venue hire (the venue-rental page publishes no event hours)."
+      ],
+      "wifi_status": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "accessed_on": "2026-08-10",
+      "title": "Tech in Asia Conference 2026 (official): 'APAC's only enterprise-first AI conference' - 15-16 September 2026, Sands Expo and Convention Centre, Singapore; 1,500+ enterprise leaders",
+      "url": "https://conference.techinasia.com/"
+    },
+    {
+      "accessed_on": "2026-08-10",
+      "title": "Events | Milken Institute (official): 'The 2026 Milken Institute Asia Summit takes place October 7-9, 2026 in Singapore'",
+      "url": "https://milkeninstitute.org/events"
+    },
+    {
+      "accessed_on": "2026-08-10",
+      "title": "Venue Hire — The Arts House at the Old Parliament (official, via Wayback Machine 2024 snapshot): Screening Room - 'Versatile & Intimate. This 75-seater film theatrette used to house several offices during Singapore's Legislative Assembly era'; rental rates by category (Arts/General, Corporate/Private, Non-profit); venue kit download available",
+      "url": "https://web.archive.org/web/2024/https://www.theartshouse.sg/venue-hire/"
+    },
+    {
+      "accessed_on": "2026-08-10",
+      "title": "Aliwal Arts Centre — Venue Hire (official, Arts House Group): Multi-Purpose Hall on Level 1, 28 Aliwal Street, Singapore; venue-hire enquiries via Arts House Group",
+      "url": "https://www.aliwalartscentre.sg/venue-hire/"
+    },
+    {
+      "accessed_on": "2026-08-10",
+      "title": "Event Space and Venue Rental - The Executive Centre SG (official): The Exchange by Singapore Land Group, Level 4-5, Singapore Land Tower, 50 Raffles Place - 'versatile event spaces for 24 to 250 pax', function rooms seating 20-220 pax, high-end AV systems, quote-based",
+      "url": "https://www.executivecentre.com/en-sg/event-space-venue/?city=singapore-city"
+    },
+    {
+      "accessed_on": "2026-08-10",
+      "title": "Home | Singapore Fintech Festival (official): '18 - 20 November 2026 | Singapore Expo'; 70,000+ participants, 940+ speakers, 600+ sponsors & exhibitors",
+      "url": "https://www.fintechfestival.sg/"
+    },
+    {
+      "accessed_on": "2026-08-10",
+      "title": "Singapore Grand Prix 2026 - F1 Race (official formula1.com race page) and official Singapore GP site singaporegp.sg: 2026 race weekend 9-11 October 2026 (tickets.formula1.com lists '09 - 11 Oct')",
+      "url": "https://www.formula1.com/en/racing/2026/singapore"
+    },
+    {
+      "accessed_on": "2026-08-10",
+      "title": "JustCo Marina Square | Flexible workspaces | Offices in Singapore (official): 6 Raffles Boulevard, Marina Square, #03-308, Singapore 039594; one of the few centres with a product showcase area; staffed hours Mon-Fri 8.30am-6pm; 24/7 access for JustCo members",
+      "url": "https://www.justcoglobal.com/en-sg/centre/justco-marina-square/"
+    },
+    {
+      "accessed_on": "2026-08-10",
+      "title": "Lifelong Learning Singapore — Pay-Per-Use Facilities Schedule of Rates (official PDF, effective 1 September 2025): Training Room 1-1, 100 sqm, capacity 50 seminar (chairs only); 8am-5pm block S$570 (S$621.30 w/GST); all rates include projector and air-conditioning; Mon-Sun 0800-2200",
+      "url": "https://www.lli.sg/docs/lifelonglearninginstitutelibraries/facility-documents/ppuf-sor_wef_1_september_2025_2.pdf"
+    },
+    {
+      "accessed_on": "2026-08-10",
+      "title": "Venue Rental | National Gallery Singapore (official): Glass Room - standing capacity 140 pax, 6 x 5-feet round tables, wheelchair accessible",
+      "url": "https://www.nationalgallery.sg/venue-rental"
+    },
+    {
+      "accessed_on": "2026-08-10",
+      "title": "Tech Week Singapore | 29-30 September 2026, Sands Expo Convention Centre (official): five co-located shows including Big Data & AI World Asia and Cloud & AI Infrastructure Asia; 29,000+ business leaders, 500+ exhibitors",
+      "url": "https://www.singaporetechnologyweek.com/"
+    },
+    {
+      "accessed_on": "2026-08-10",
+      "title": "The Lounge - Singapore Land Tower - Event Venue Rental - Tagvenue.com: 50 Raffles Place, Level 4, Singapore 048623; up to 50 seats / 100 standing; S$818/hour Mon-Fri, S$1,227/hour Sat-Sun incl GST (9:00-18:00); Wi-Fi, projector, flatscreen TV, PA system, air conditioning, natural light; external catering allowed",
+      "url": "https://www.tagvenue.com/sg/rooms/singapore/100995/singapore-land-tower/the-lounge"
+    },
+    {
+      "accessed_on": "2026-08-10",
+      "title": "Studio - Industrious at One George Street - Event Venue Rental - Tagvenue.com: 1 George Street, Level 10, Singapore 049145; up to 30 seats / 30 standing; S$1,875/day Mon-Fri, S$4,578/day Sat-Sun incl GST; Wi-Fi, projector, flatscreen TV, whiteboard, flipchart, PA system; external catering allowed; 'No promoted and ticketed events allowed'",
+      "url": "https://www.tagvenue.com/sg/rooms/singapore/27844/industrious-at-one-george-street/studio"
+    },
+    {
+      "accessed_on": "2026-08-10",
+      "title": "Boardroom - The Work Project Asia Square - Event Venue Rental - Tagvenue.com: 12 Marina View, Singapore 018961; up to 14 seats / 24 standing; from S$321/hour Mon-Fri 9:00-18:00 incl GST; Saturday/Sunday Closed; Wi-Fi, flatscreen TV, whiteboard, natural light; external catering allowed",
+      "url": "https://www.tagvenue.com/sg/rooms/singapore/42425/the-work-project-asia-square/boardroom"
+    },
+    {
+      "accessed_on": "2026-08-10",
+      "title": "Raffles Place Function Room at Raffles Place Event Venue (CALI, Ascott Raffles Place) - Tagvenue.com: 2 Finlayson Green, Singapore 049247; up to 80 seats / 70 standing; from S$48/person catering packages, afternoon from S$750, evening from S$950, from S$1,000 min spend per session incl GST; Wi-Fi, projector, flatscreen TV, whiteboard, flipchart, PA system",
+      "url": "https://www.tagvenue.com/sg/rooms/singapore/58971/cali-ascott-raffles-place/function-room"
+    },
+    {
+      "accessed_on": "2026-08-10",
+      "title": "Level 1 - Auditorium - WeWork - 21 Collyer Quay - Event Venue Rental - Tagvenue.com: 21 Collyer Quay, Singapore 049320; up to 55 seats theatre; S$963/hour 9:00-18:00 Mon-Fri, S$1,192/hour Sat & evenings incl GST; Wi-Fi, projector, flipchart, PA system, air conditioning, soundproof",
+      "url": "https://www.tagvenue.com/sg/rooms/singapore/85884/wework-21-collyer-quay/level-1-auditorium"
+    },
+    {
+      "accessed_on": "2026-08-10",
+      "title": "Level 2 - Business Centre - WeWork - 21 Collyer Quay - Event Venue Rental - Tagvenue.com: up to 120 seats / 150 standing; S$1,399/hour 9:00-18:00 Mon-Fri, S$1,759/hour Sat & evenings incl GST; two projector screens, Wi-Fi, whiteboard, flipchart, PA system, air conditioning",
+      "url": "https://www.tagvenue.com/sg/rooms/singapore/85991/wework-21-collyer-quay/level-2-business-centre"
+    },
+    {
+      "accessed_on": "2026-08-10",
+      "title": "Level 17 - Common Area - WeWork - Suntec Tower 5 - Event Venue Rental - Tagvenue.com: 5 Temasek Boulevard, Level 17, Singapore 038985; up to 60 seats / 100 standing; S$1,290/hour incl GST (weekends 9:00-23:00); Wi-Fi, projector, whiteboard, flipchart, PA system, air conditioning",
+      "url": "https://www.tagvenue.com/sg/rooms/singapore/85994/wework-suntec-tower-5/level-17-common-area"
+    },
+    {
+      "accessed_on": "2026-08-10",
+      "title": "Meeting Room Rental Singapore | Reviews, Photos & Prices - Tagvenue.com: 601 MacPherson Road, Grantral Complex, #07-08, Singapore 368242; Seminar Room 1 up to 36 seats; from S$60 hire fee; Wi-Fi available; managed by Zion Global Marketing Pte Ltd (2 hr minimum)",
+      "url": "https://www.tagvenue.com/sg/venues/singapore/39832/meeting-room-rental-singapore"
+    },
+    {
+      "accessed_on": "2026-08-10",
+      "title": "STACK Conference 2026 (4-5 Nov 2026) | Government Technology Agency of Singapore (official tech.gov.sg event page, last updated 10 July 2026); live page returned 404 on fetch 2026-08-10",
+      "url": "https://www.tech.gov.sg/events/stack-conference-2026/"
+    },
+    {
+      "accessed_on": "2026-08-10",
+      "title": "TOKEN2049 | 7-8 October 2026 | Singapore (official): 'TOKEN2049 Singapore will bring together top decision-makers to connect, exchange ideas, network, and shape the industry on 7-8 October 2026' at Marina Bay Sands",
+      "url": "https://www.token2049.com/singapore"
+    }
+  ],
+  "speakers": [],
+  "target_attendance": 50,
+  "target_date": "2026-09-26",
+  "trusted_contacts": [],
+  "trusted_venue_matches": [],
+  "venue_leads_needing_verification": [
+    {
+      "accessed_on": "2026-08-10",
+      "address": "1 George Street, Level 10, Singapore 049145",
+      "booking_url": "https://www.tagvenue.com/sg/rooms/singapore/27844/industrious-at-one-george-street/studio",
+      "capacity_basis": "venue_claim",
+      "capacity_comfortable": 30,
+      "catering_policy": "outside_allowed",
+      "city_slug": "singapore-sg",
+      "closing_time": "18:00",
+      "cost_basis": "published_rate",
+      "cost_local_amount": 4578,
+      "cost_local_currency": "SGD",
+      "cost_rate_unit": "day",
+      "estimated_cost_usd": 3577.87,
+      "estimated_hours": null,
+      "event_window_evidence": {
+        "accessed_on": "2026-08-10",
+        "claim": "Tagvenue pricing table shows the Studio bookable 9:00-18:00 per day (full day rate from 9AM-6PM; evening rates after 6PM), which supports an 8-hour 09:00-17:00 event.",
+        "title": "Studio - Industrious at One George Street - Event Venue Rental - Tagvenue.com (pricing section)",
+        "url": "https://www.tagvenue.com/sg/rooms/singapore/27844/industrious-at-one-george-street/studio"
+      },
+      "event_window_status": "allows_to_6",
+      "evidence": {
+        "geo": "https://www.tagvenue.com/sg/rooms/singapore/27844/industrious-at-one-george-street/studio",
+        "inference": "The 30-person capacity is below the 40-person shortlist threshold, so this venue is an evidence-bound lead despite confirmed screen+Wi-Fi; the Saturday day rate of S$4,578 incl GST converts to 3,577.87 USD at the documented ECB 2026-08-10 rate (1 SGD = USD 0.78153534), within the USD 5,000 soft budget; the 'no promoted and ticketed events' rule is compatible with a free RSVP DeAI Day.",
+        "observed_facts": "Tagvenue room page (fetched 2026-08-10) lists the Studio at Industrious at One George Street (formerly The Great Room), 1 George Street, Level 10, Singapore 049145: up to 30 seats / 30 standing, theatre 30 / boardroom 18 / cabaret 20; prices S$1,875/day Mon-Fri and S$4,578/day Sat-Sun (9:00-18:00, all prices include GST); minimum booking 2 hours; facilities Wi-Fi, projector, flatscreen TV, whiteboard, flipchart, PA system/speakers, air conditioning; venue does not offer catering, external catering allowed; rules state 'No promoted and ticketed events allowed'."
+      },
+      "hourly_rate_local": null,
+      "hourly_rate_usd": null,
+      "latitude": 1.285739,
+      "longitude": 103.8477899,
+      "max_booking_hours": null,
+      "name": "Industrious at One George Street — Studio (formerly The Great Room)",
+      "needs_human_verify": true,
+      "opening_hours": "09:00",
+      "rate_currency": null,
+      "rate_estimate_note": null,
+      "recording_suitability": "unknown",
+      "score": null,
+      "score_breakdown": null,
+      "screen_status": "confirmed",
+      "source_title": "Studio - Industrious at One George Street - Event Venue Rental - Tagvenue.com: 1 George Street, Level 10, Singapore 049145; up to 30 seats / 30 standing; S$1,875/day Mon-Fri, S$4,578/day Sat-Sun incl GST; Wi-Fi, projector, flatscreen TV, whiteboard, flipchart, PA system; external catering allowed; 'No promoted and ticketed events allowed'",
+      "source_url": "https://www.tagvenue.com/sg/rooms/singapore/27844/industrious-at-one-george-street/studio",
+      "tier_reasons": [
+        "capacity_comfortable 30 below minimum 40"
+      ],
+      "venue_flags": [
+        "availability_unconfirmed",
+        "final_quote_required",
+        "stale_evidence"
+      ],
+      "venue_tier": "lead",
+      "verification_question_kinds": [
+        "availability",
+        "final_quote",
+        "booking_terms",
+        "room_assignment"
+      ],
+      "verification_questions": [
+        "Confirm Saturday availability for the Studio at Industrious (formerly The Great Room) One George Street on the chosen 2026 date.",
+        "Confirm the exact all-in Saturday total (published S$4,578/day incl GST for the 9:00-18:00 day; taxes, cleaning and any AV fees not itemized on the listing).",
+        "Confirm the minimum booking and set-up/tear-down terms (published minimum 2 hours; layout changes require 1h set-up + 1h tear-down inside a minimum 4-hour booking).",
+        "Confirm whether the Studio (capacity up to 30 seats / 30 standing per Tagvenue) could ever be combined with an adjacent room to reach 50 — as published it cannot seat the 50-person target, so this record is an evidence-bound lead, not a candidate."
+      ],
+      "wifi_status": "confirmed"
+    },
+    {
+      "accessed_on": "2026-08-10",
+      "address": "6 Raffles Boulevard, Marina Square, #03-308, Singapore 039594",
+      "booking_url": "https://www.justcoglobal.com/en-sg/centre/justco-marina-square/",
+      "capacity_basis": "unknown",
+      "capacity_comfortable": 0,
+      "catering_policy": "unknown",
+      "city_slug": "singapore-sg",
+      "closing_time": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "cost_rate_unit": "unknown",
+      "estimated_cost_usd": null,
+      "estimated_hours": null,
+      "event_window_evidence": null,
+      "event_window_status": "unknown",
+      "evidence": {
+        "geo": "https://www.justcoglobal.com/en-sg/centre/justco-marina-square/",
+        "inference": "JustCo Marina Square exists as a major coworking option in Marina Centre, but without published capacity/rate facts it is an evidence-bound lead pending a venue inquiry.",
+        "observed_facts": "JustCo official location page (fetched 2026-08-10) confirms the JustCo Marina Square centre at 6 Raffles Boulevard, Marina Square, #03-308, Singapore 039594, describes it as one of the few centres with a product showcase area, minutes from Suntec City Convention Centre, Marina Bay Sands and Gardens By The Bay; staffed hours Mon-Fri 8:30am-6pm except public holidays; 24/7 access for JustCo members. No public per-room capacities, rates, screen or Wi-Fi facts are published on the page."
+      },
+      "hourly_rate_local": null,
+      "hourly_rate_usd": null,
+      "latitude": 1.2912739,
+      "longitude": 103.8571836,
+      "max_booking_hours": null,
+      "name": "JustCo Marina Square — Coworking & Meeting Rooms",
+      "needs_human_verify": true,
+      "opening_hours": null,
+      "rate_currency": null,
+      "rate_estimate_note": null,
+      "recording_suitability": "unknown",
+      "score": null,
+      "score_breakdown": null,
+      "screen_status": "unknown",
+      "source_title": "JustCo Marina Square | Flexible workspaces | Offices in Singapore (official): 6 Raffles Boulevard, Marina Square, #03-308, Singapore 039594; one of the few centres with a product showcase area; staffed hours Mon-Fri 8.30am-6pm; 24/7 access for JustCo members",
+      "source_url": "https://www.justcoglobal.com/en-sg/centre/justco-marina-square/",
+      "tier_reasons": [
+        "material verification question(s): capacity",
+        "capacity_comfortable 0 below minimum 40"
+      ],
+      "venue_flags": [
+        "cost_unknown",
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "venue_tier": "lead",
+      "verification_question_kinds": [
+        "capacity",
+        "cost_unknown",
+        "screen",
+        "wifi",
+        "availability",
+        "final_quote",
+        "event_window"
+      ],
+      "verification_questions": [
+        "Confirm the specific meeting room/event space and its capacity for a 50-person event (the official JustCo location page publishes the centre and address but no per-room capacities or rates).",
+        "Confirm the hire rate for a Saturday event (JustCo meeting rooms and event spaces are quote/portal-based; no public rates).",
+        "Confirm screen/projector availability for the selected room.",
+        "Confirm Wi-Fi availability for the selected room.",
+        "Confirm Saturday availability on the chosen 2026 date.",
+        "Confirm the exact all-in quote including any event-management fees.",
+        "Confirm the bookable window (staffed hours Mon-Fri 8:30am-6pm; 24/7 member access; event-hours policy not published)."
+      ],
+      "wifi_status": "unknown"
+    },
+    {
+      "accessed_on": "2026-08-10",
+      "address": "601 MacPherson Road, Grantral Complex, #07-08, Singapore 368242",
+      "booking_url": "https://www.tagvenue.com/sg/venues/singapore/39832/meeting-room-rental-singapore",
+      "capacity_basis": "venue_claim",
+      "capacity_comfortable": 36,
+      "catering_policy": "unknown",
+      "city_slug": "singapore-sg",
+      "closing_time": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "cost_rate_unit": "unknown",
+      "estimated_cost_usd": null,
+      "estimated_hours": null,
+      "event_window_evidence": null,
+      "event_window_status": "unknown",
+      "evidence": {
+        "geo": "https://www.tagvenue.com/sg/venues/singapore/39832/meeting-room-rental-singapore",
+        "inference": "The 36-person capacity is below the 40-person shortlist threshold, so this is an evidence-bound lead; it documents an affordable Tai Seng-area seminar operator for follow-up.",
+        "observed_facts": "Tagvenue venue page (fetched 2026-08-10) lists 'Meeting Room Rental Singapore' managed by Zion Global Marketing Pte Ltd at 601 MacPherson Road, Grantral Complex, #07-08, Singapore 368242 (Tai Seng MRT 200m): Seminar Room 1 up to 36 seats, from S$60 hire fee, 2-hour minimum; Wi-Fi available; projector/flipchart listed as unavailable; venue does not offer catering; parking available."
+      },
+      "hourly_rate_local": null,
+      "hourly_rate_usd": null,
+      "latitude": 1.333755,
+      "longitude": 103.8877346,
+      "max_booking_hours": null,
+      "name": "Meeting Room Rental Singapore (Zion Global Marketing) — Seminar Room 1",
+      "needs_human_verify": true,
+      "opening_hours": null,
+      "rate_currency": null,
+      "rate_estimate_note": null,
+      "recording_suitability": "unknown",
+      "score": null,
+      "score_breakdown": null,
+      "screen_status": "unknown",
+      "source_title": "Meeting Room Rental Singapore | Reviews, Photos & Prices - Tagvenue.com: 601 MacPherson Road, Grantral Complex, #07-08, Singapore 368242; Seminar Room 1 up to 36 seats; from S$60 hire fee; Wi-Fi available; managed by Zion Global Marketing Pte Ltd (2 hr minimum)",
+      "source_url": "https://www.tagvenue.com/sg/venues/singapore/39832/meeting-room-rental-singapore",
+      "tier_reasons": [
+        "capacity_comfortable 36 below minimum 40"
+      ],
+      "venue_flags": [
+        "cost_unknown",
+        "screen_unknown",
+        "availability_unconfirmed",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "venue_tier": "lead",
+      "verification_question_kinds": [
+        "cost_unknown",
+        "screen",
+        "availability",
+        "booking_terms",
+        "event_window"
+      ],
+      "verification_questions": [
+        "Confirm the exact rate for Seminar Room 1 (Tagvenue lists 'from S$60 hire fee' without a visible rate unit; minimum 2-hour booking).",
+        "Confirm whether a projector/screen is included (the listing shows Wi-Fi available but projector/flipchart listed as unavailable).",
+        "Confirm availability on the chosen 2026 Saturday.",
+        "Confirm minimum booking and cancellation terms.",
+        "Confirm the bookable window (the listing publishes no opening/closing hours)."
+      ],
+      "wifi_status": "confirmed"
+    },
+    {
+      "accessed_on": "2026-08-10",
+      "address": "1 St Andrew's Road, Singapore 178957",
+      "booking_url": "https://www.nationalgallery.sg/venue-rental",
+      "capacity_basis": "venue_claim",
+      "capacity_comfortable": 28,
+      "catering_policy": "unknown",
+      "city_slug": "singapore-sg",
+      "closing_time": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "cost_rate_unit": "unknown",
+      "estimated_cost_usd": null,
+      "estimated_hours": null,
+      "event_window_evidence": null,
+      "event_window_status": "unknown",
+      "evidence": {
+        "geo": "https://www.nationalgallery.sg/venue-rental",
+        "inference": "The 23-28 seating range is below the 40-person shortlist threshold, so these studios are evidence-bound leads.",
+        "observed_facts": "National Gallery Singapore official venue-rental page (fetched 2026-08-10) lists 'Rooftop Studios — Seating capacity: 23 - 28 pax; Wheelchair accessible'. No prices, screen/Wi-Fi, or event hours are published."
+      },
+      "hourly_rate_local": null,
+      "hourly_rate_usd": null,
+      "latitude": 1.2902557,
+      "longitude": 103.8514709,
+      "max_booking_hours": null,
+      "name": "National Gallery Singapore — Rooftop Studios",
+      "needs_human_verify": true,
+      "opening_hours": null,
+      "rate_currency": null,
+      "rate_estimate_note": null,
+      "recording_suitability": "unknown",
+      "score": null,
+      "score_breakdown": null,
+      "screen_status": "unknown",
+      "source_title": "Venue Rental | National Gallery Singapore (official): Rooftop Studios - seating capacity 23 - 28 pax, wheelchair accessible",
+      "source_url": "https://www.nationalgallery.sg/venue-rental",
+      "tier_reasons": [
+        "capacity_comfortable 28 below minimum 40"
+      ],
+      "venue_flags": [
+        "cost_unknown",
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "venue_tier": "lead",
+      "verification_question_kinds": [
+        "cost_unknown",
+        "screen",
+        "wifi",
+        "availability",
+        "final_quote",
+        "event_window"
+      ],
+      "verification_questions": [
+        "Confirm the hire rate for the Rooftop Studios (quote-based; no public rates).",
+        "Confirm screen/projector availability in the rooftop studios (not stated on the venue-rental page).",
+        "Confirm Wi-Fi availability in the rooftop studios (not stated on the venue-rental page).",
+        "Confirm availability on the chosen 2026 Saturday.",
+        "Confirm the exact all-in quote including any AV or staffing charges.",
+        "Confirm the bookable window for venue hire (the venue-rental page publishes no event hours)."
+      ],
+      "wifi_status": "unknown"
+    },
+    {
+      "accessed_on": "2026-08-10",
+      "address": "1 St Andrew's Road, Singapore 178957",
+      "booking_url": "https://www.nationalgallery.sg/venue-rental",
+      "capacity_basis": "venue_claim",
+      "capacity_comfortable": 28,
+      "catering_policy": "unknown",
+      "city_slug": "singapore-sg",
+      "closing_time": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "cost_rate_unit": "unknown",
+      "estimated_cost_usd": null,
+      "estimated_hours": null,
+      "event_window_evidence": null,
+      "event_window_status": "unknown",
+      "evidence": {
+        "geo": "https://www.nationalgallery.sg/venue-rental",
+        "inference": "The 15-28 seating range is below the 40-person shortlist threshold, so these rooms are evidence-bound leads; they document in-gallery smaller options for a future use case.",
+        "observed_facts": "National Gallery Singapore official venue-rental page (fetched 2026-08-10) lists 'Seminar Rooms — Seating capacity: 15 - 28 pax'. No prices, screen/Wi-Fi, or event hours are published."
+      },
+      "hourly_rate_local": null,
+      "hourly_rate_usd": null,
+      "latitude": 1.2902557,
+      "longitude": 103.8514709,
+      "max_booking_hours": null,
+      "name": "National Gallery Singapore — Seminar Rooms",
+      "needs_human_verify": true,
+      "opening_hours": null,
+      "rate_currency": null,
+      "rate_estimate_note": null,
+      "recording_suitability": "unknown",
+      "score": null,
+      "score_breakdown": null,
+      "screen_status": "unknown",
+      "source_title": "Venue Rental | National Gallery Singapore (official): Seminar Rooms - seating capacity 15 - 28 pax",
+      "source_url": "https://www.nationalgallery.sg/venue-rental",
+      "tier_reasons": [
+        "capacity_comfortable 28 below minimum 40"
+      ],
+      "venue_flags": [
+        "cost_unknown",
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "venue_tier": "lead",
+      "verification_question_kinds": [
+        "cost_unknown",
+        "screen",
+        "wifi",
+        "availability",
+        "final_quote",
+        "event_window"
+      ],
+      "verification_questions": [
+        "Confirm the hire rate for the Seminar Rooms (quote-based; no public rates).",
+        "Confirm screen/projector availability in the seminar rooms (not stated on the venue-rental page).",
+        "Confirm Wi-Fi availability in the seminar rooms (not stated on the venue-rental page).",
+        "Confirm availability on the chosen 2026 Saturday.",
+        "Confirm the exact all-in quote including any AV or staffing charges.",
+        "Confirm the bookable window for venue hire (the venue-rental page publishes no event hours)."
+      ],
+      "wifi_status": "unknown"
+    },
+    {
+      "accessed_on": "2026-08-10",
+      "address": "Singapore Land Tower, 50 Raffles Place, Level 4-5, Singapore 048623",
+      "booking_url": "https://www.executivecentre.com/en-sg/event-space-venue/?city=singapore-city",
+      "capacity_basis": "unknown",
+      "capacity_comfortable": 0,
+      "catering_policy": "unknown",
+      "city_slug": "singapore-sg",
+      "closing_time": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "cost_rate_unit": "unknown",
+      "estimated_cost_usd": null,
+      "estimated_hours": null,
+      "event_window_evidence": null,
+      "event_window_status": "unknown",
+      "evidence": {
+        "geo": "https://www.executivecentre.com/en-sg/event-space-venue/?city=singapore-city",
+        "inference": "The range '24 to 250 pax' does not pin a specific 50-person room, and no price/screen/Wi-Fi facts are published, so this is an evidence-bound lead rather than a scored candidate; it documents an enterprise flexible-workspace option for a quote inquiry.",
+        "observed_facts": "The Executive Centre official event-space page (fetched 2026-08-10) lists Singapore venues including 'The Exchange by Singapore Land Group, Level 4-5, Singapore Land Tower, 50 Raffles Place, 048623' with 'versatile event spaces for 24 to 250 pax' and 4 meeting rooms; the site describes function rooms seating 20-220 pax, flexible lounge event spaces, and high-end AV systems with onsite IT technicians; pricing is quote-based (no public rates)."
+      },
+      "hourly_rate_local": null,
+      "hourly_rate_usd": null,
+      "latitude": 1.2846277,
+      "longitude": 103.8520433,
+      "max_booking_hours": null,
+      "name": "The Executive Centre — The Exchange (Singapore Land Tower) Event Space",
+      "needs_human_verify": true,
+      "opening_hours": null,
+      "rate_currency": null,
+      "rate_estimate_note": null,
+      "recording_suitability": "unknown",
+      "score": null,
+      "score_breakdown": null,
+      "screen_status": "unknown",
+      "source_title": "Event Space and Venue Rental - The Executive Centre SG (official): The Exchange by Singapore Land Group, Level 4-5, Singapore Land Tower, 50 Raffles Place - 'versatile event spaces for 24 to 250 pax', function rooms seating 20-220 pax, high-end AV systems, quote-based",
+      "source_url": "https://www.executivecentre.com/en-sg/event-space-venue/?city=singapore-city",
+      "tier_reasons": [
+        "material verification question(s): capacity",
+        "capacity_comfortable 0 below minimum 40"
+      ],
+      "venue_flags": [
+        "cost_unknown",
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "venue_tier": "lead",
+      "verification_question_kinds": [
+        "capacity",
+        "cost_unknown",
+        "screen",
+        "wifi",
+        "availability",
+        "final_quote",
+        "event_window"
+      ],
+      "verification_questions": [
+        "Confirm the specific room and its capacity for a 50-person event (the official page states The Exchange offers 'versatile event spaces for 24 to 250 pax' with 4 meeting rooms; no per-room capacity published).",
+        "Confirm the hire rate for a Saturday event (TEC event spaces are quote-based; no public rates published).",
+        "Confirm screen/projector availability for the selected room.",
+        "Confirm Wi-Fi availability for the selected room.",
+        "Confirm Saturday availability on the chosen 2026 date.",
+        "Confirm the exact all-in quote including AV and any event-management fees.",
+        "Confirm the bookable window (the official page publishes no event hours)."
+      ],
+      "wifi_status": "unknown"
+    },
+    {
+      "accessed_on": "2026-08-10",
+      "address": "12 Marina View, Asia Square Tower 2, Singapore 018961",
+      "booking_url": "https://www.tagvenue.com/sg/rooms/singapore/42425/the-work-project-asia-square/boardroom",
+      "capacity_basis": "venue_claim",
+      "capacity_comfortable": 14,
+      "catering_policy": "outside_allowed",
+      "city_slug": "singapore-sg",
+      "closing_time": "18:00",
+      "cost_basis": "estimated_from_rate",
+      "cost_local_amount": 321,
+      "cost_local_currency": "SGD",
+      "cost_rate_unit": "hour",
+      "estimated_cost_usd": 2006.98,
+      "estimated_hours": 8,
+      "event_window_evidence": {
+        "accessed_on": "2026-08-10",
+        "claim": "Tagvenue pricing table shows Mon-Fri 9:00-18:00 availability and 'Saturday Closed'/'Sunday Closed'; the room cannot support a Saturday event ending at 17:00 on any candidate date.",
+        "title": "Boardroom - The Work Project Asia Square - Event Venue Rental - Tagvenue.com (pricing section)",
+        "url": "https://www.tagvenue.com/sg/rooms/singapore/42425/the-work-project-asia-square/boardroom"
+      },
+      "event_window_status": "cannot_to_5",
+      "evidence": {
+        "geo": "https://www.tagvenue.com/sg/rooms/singapore/42425/the-work-project-asia-square/boardroom",
+        "inference": "The 14-person capacity is far below the 50-person target and the room is closed on weekends (all candidate Saturdays), so this is an evidence-bound lead; it documents the coworking chain for a future weekday/alternative inquiry. The 8-hour estimate (2,006.98 USD) is informational only because the room is not bookable on Saturdays.",
+        "observed_facts": "Tagvenue room page (fetched 2026-08-10) lists the Boardroom at The Work Project Asia Square, 12 Marina View, Singapore 018961: up to 14 seats / 24 standing; from S$321/hour Mon-Fri 9:00-18:00 (all prices include GST); Saturday Closed, Sunday Closed; facilities Wi-Fi, flatscreen TV, whiteboard, natural light; venue does not offer catering, external catering allowed; minimum booking 2 hours. The Work Project official site (theworkproject.com) lists Asia Square as one of its 10 Singapore coworking locations (12 Marina View, Levels 11 and 10, Asia Square Tower 2)."
+      },
+      "hourly_rate_local": 321,
+      "hourly_rate_usd": 250.8728,
+      "latitude": 1.2781208,
+      "longitude": 103.8508059,
+      "max_booking_hours": null,
+      "name": "The Work Project Asia Square Tower 2 — Boardroom",
+      "needs_human_verify": true,
+      "opening_hours": "09:00",
+      "rate_currency": "SGD",
+      "rate_estimate_note": "Tagvenue listing (fetched 2026-08-10) publishes the Boardroom at S$321/hour Mon-Fri 9:00-18:00 incl GST; Saturday and Sunday are CLOSED. 8-hour estimate = 321 x 8 = 2,568 SGD = 2,006.98 USD at the documented ECB 2026-08-10 rate (1 SGD = USD 0.78153534). The venue is closed on weekends, so this rate does not apply to candidate Saturdays; kept for completeness.",
+      "recording_suitability": "unknown",
+      "score": null,
+      "score_breakdown": null,
+      "screen_status": "confirmed",
+      "source_title": "Boardroom - The Work Project Asia Square - Event Venue Rental - Tagvenue.com: 12 Marina View, Singapore 018961; up to 14 seats / 24 standing; from S$321/hour Mon-Fri 9:00-18:00 incl GST; Saturday/Sunday Closed; Wi-Fi, flatscreen TV, whiteboard, natural light; external catering allowed",
+      "source_url": "https://www.tagvenue.com/sg/rooms/singapore/42425/the-work-project-asia-square/boardroom",
+      "tier_reasons": [
+        "capacity_comfortable 14 below minimum 40"
+      ],
+      "venue_flags": [
+        "availability_unconfirmed",
+        "final_quote_required",
+        "duration_window_not_supported",
+        "stale_evidence"
+      ],
+      "venue_tier": "lead",
+      "verification_question_kinds": [
+        "availability",
+        "final_quote",
+        "event_window",
+        "booking_terms"
+      ],
+      "verification_questions": [
+        "Confirm whether The Work Project Asia Square can host the event on a Saturday (Tagvenue lists the Boardroom 'Saturday Closed' and 'Sunday Closed'; all candidate dates are Saturdays).",
+        "Confirm the exact all-in total if a weekday or after-hours alternative is arranged (published S$321/hour Mon-Fri 9:00-18:00 incl GST).",
+        "Confirm the bookable window and any weekend exception policy (the listing publishes Mon-Fri 9:00-18:00 only).",
+        "Confirm minimum booking duration and cancellation terms."
+      ],
+      "wifi_status": "confirmed"
+    }
+  ],
+  "venues": [],
+  "workflow_phase": "venue"
+}

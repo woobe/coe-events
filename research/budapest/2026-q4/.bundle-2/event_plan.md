@@ -1,0 +1,404 @@
+# Event Plan: Budapest (budapest-hu) — Run A: Venue & Date
+
+- Schema version: 2.2
+- Phase: venue
+- City: Budapest (budapest-hu), Hungary
+- Target date: 2026-09-26
+- Date window: 2026-09-19 through 2026-10-31; candidate Saturdays: 2026-09-19, 2026-09-26, 2026-10-03, 2026-10-10, 2026-10-17, 2026-10-24, 2026-10-31
+- Target attendance: 50
+- Currency: HUF (Costs retain their published local amount and ISO code: HUF where the venue publishes HUF (Impact Hub, Loffice, bee@work ANKER, Eco Office, KUBIK, Danubius, Signature Budapest, Regus Budapest); EUR where the venue publishes EUR (KAPTÁR Coworking, New York Palace — both publish euro-denominated rates).; HUF-to-USD conversion: ECB euro foreign exchange reference rates, retrieved 2026-08-10 (ECB daily feed, https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml): EUR 1 = USD 1.1555 and EUR 1 = HUF 363.65, therefore USD 1 = HUF 314.71 (computed 363.65 / 1.1555) and 1 HUF = USD 0.00317751. This is a documented, date-stamped source rate; it is a planning conversion, not a bank/venue quote.; EUR-to-USD conversion for EUR-published venues uses the same ECB 2026-08-10 reference: EUR 1 = USD 1.1555.; All USD estimates are derived 8-hour or published-rate calculations labeled in evidence.inference and rate_estimate_note; +VAT and weekend surcharges are preserved as verification questions where the page does not show them included.)
+- Soft budget: USD 5000 (over-budget venues stay selectable with Joe's approval)
+- Event duration: 8 hours (requested local window 09:00-17:00)
+- Generated: 2026-08-10T00:00:00Z
+
+## Executive Summary
+
+- Top selectable venue: Loffice Budapest — Maxi Event Room (score 0.7909) — tier shortlist_ready
+- Eligible venues: 0; shortlist-ready: 15; leads: 6
+- Speaker candidates: deferred to Run B after venue selection
+- Calendar flags: 6 (high severity: 1) — informational, never eliminations
+- Open questions: 102
+- Recommendation: none selected yet
+
+## Calendar flags for Joe — informational, not eliminations
+
+- ScaleupFest 2026 — 2026-09-16 to 2026-09-17 (severity: low, relevance: other) — [The Scaleup Fest 2026 — official: September 16-17, 2026, Budapest, curated CEE scaleup & investor conference (~250 participants)](https://thescaleupfest.com/). This is an awareness flag for Joe's decision; it never removes the date automatically.
+- IEEE Tech Summit: Ethical AI 2026 (Budapest) — 2026-10-01 to 2026-10-02 (severity: medium, relevance: ai) — [Ethical AI Tech Summit Budapest 2026 — official IEEE page: 1-2 October 2026, Budapest, Hungary, two-day AI governance summit](https://techsummit.ieee.org/ethical-ai-2026/). This is an awareness flag for Joe's decision; it never removes the date automatically.
+- SPAR Budapest Marathon 2026 (41st) — 2026-10-10 to 2026-10-11 (severity: high, relevance: other) — [41st SPAR Budapest Marathon — official homepage: SAVE THE DATE October 10-11, 2026, Hungary's largest sports event](https://marathon.runinbudapest.com/). This is an awareness flag for Joe's decision; it never removes the date automatically.
+- AI Forward '26 (Nokia) — 2026-10-21 to 2026-10-21 (severity: low, relevance: ai) — [AI Forward Conference — official: AI Forward is coming to Budapest on 21st October 2026 at MVM Dome](https://techforward.hu/). This is an awareness flag for Joe's decision; it never removes the date automatically.
+- EMNLP 2026 (Budapest) — 2026-10-24 to 2026-10-29 (severity: medium, relevance: ml) — [EMNLP 2026 — official conference site: October 24-29, 2026, Budapest, Hungary (main conference dates for workshops/tutorials TBD)](https://2026.emnlp.org/). This is an awareness flag for Joe's decision; it never removes the date automatically.
+- MeOut Summit 2026 — 2026-11-25 to 2026-11-26 (severity: low, relevance: other) — [MeOut Summit 2026 — official: Central European startup conference, Budapest, November 25-26, 2026, at Akvárium Klub (2,000+ founders, investors, corporate leaders)](https://meoutsummit.com/). This is an awareness flag for Joe's decision; it never removes the date automatically.
+
+## Venue Shortlist (eligible, ranked)
+
+- No fully evidenced eligible venues.
+
+## Shortlist-Ready Venues (manual checks remain; selectable by Joe)
+
+1. Loffice Budapest — Maxi Event Room (tier shortlist_ready, score 0.7909) — capacity 55 (venue_claim), screen unknown, wifi confirmed, cost USD 457.56 / 18000 HUF (estimated_from_rate), catering in_house_available
+   - Flags: screen_unknown, availability_unconfirmed, final_quote_required, duration_unconfirmed, stale_evidence
+   - Rate estimate: USD 57.1952 per hour x 8 hour(s) — Official Loffice event-spaces page (fetched 2026-08-10) publishes 18,000 HUF/hour (+VAT) for the Maxi Event Room; 8-hour estimate = 18,000 x 8 = 144,000 HUF converted at the ECB 2026-08-10 reference rate USD 1 = 314.71 HUF (EUR 1 = USD 1.1555, EUR 1 = HUF 363.65) = 457.56 USD. +VAT and any AV add-ons are not included; not a written quote.
+   - Local rate: 18000 HUF per hour
+   - Cost rate unit: hour
+   - Event window: unknown
+   - Source: [Event Spaces — Loffice Budapest (official): Maxi Event Room 18,000 HUF/hour (+VAT), up to 50-60 people, street-front bright event space, secure WiFi, Full AV equipment at bespoke price; Paulay Ede st. 55, 1061 Budapest](https://loffice.hu/budapest/en/event-spaces/index.php)
+   - Booking: [https://loffice.hu/budapest/en/event-spaces/index.php](https://loffice.hu/budapest/en/event-spaces/index.php)
+   - Unresolved: Confirm the exact all-in Saturday total including 27% VAT and any AV equipment charge (published 18,000 HUF/hour +VAT; 8-hour estimate 457.56 USD at the documented ECB 2026-08-10 rate).
+   - Unresolved: Confirm whether a projector/screen is included in the Maxi Event Room rental or requires the bespoke-priced Full AV package (the page lists full AV equipment at bespoke price).
+   - Unresolved: Confirm availability of the Maxi Event Room on the chosen 2026 Saturday.
+   - Unresolved: Confirm the bookable window on weekends (the page publishes no opening hours).
+   - Unresolved: Confirm the Maxi Event Room (50-60 people) comfortably seats 50 in a talk configuration.
+2. Loffice Budapest — 'A' event space (lower ground) (tier shortlist_ready, score 0.7873) — capacity 50 (venue_claim), screen unknown, wifi confirmed, cost USD 546.53 / 21500 HUF (estimated_from_rate), catering in_house_available
+   - Flags: screen_unknown, availability_unconfirmed, final_quote_required, duration_unconfirmed, stale_evidence
+   - Rate estimate: USD 68.3165 per hour x 8 hour(s) — Official Loffice event-spaces page (fetched 2026-08-10) publishes 21,500 HUF/hour (+VAT) for the 'A' event space; 8-hour estimate = 21,500 x 8 = 172,000 HUF converted at the ECB 2026-08-10 reference rate USD 1 = 314.71 HUF = 546.53 USD. +VAT not included; not a written quote.
+   - Local rate: 21500 HUF per hour
+   - Cost rate unit: hour
+   - Event window: unknown
+   - Source: [Event Spaces — Loffice Budapest (official): 'A' event space (lower ground) 21,500 HUF/hour (+VAT), up to 50 people, signature pink floor, modern kitchenette, secure WiFi, Full AV equipment at bespoke price](https://loffice.hu/budapest/en/event-spaces/index.php)
+   - Booking: [https://loffice.hu/budapest/en/event-spaces/index.php](https://loffice.hu/budapest/en/event-spaces/index.php)
+   - Unresolved: Confirm the exact all-in Saturday total including 27% VAT (published 21,500 HUF/hour +VAT; 8-hour estimate 546.53 USD at the documented ECB 2026-08-10 rate).
+   - Unresolved: Confirm whether a projector/screen is included or requires the bespoke-priced Full AV package.
+   - Unresolved: Confirm availability of the 'A' event space on the chosen 2026 Saturday.
+   - Unresolved: Confirm the bookable window on weekends (the page publishes no opening hours).
+   - Unresolved: Confirm the 'A' event space (up to 50 people, lower-ground with kitchenette) comfortably seats 50 in a talk configuration.
+3. Create.26 — Event space (South hall) (tier shortlist_ready, score 0.7767) — capacity 50 (seated), screen confirmed, wifi unknown, cost unknown (unknown) — confirm cost with venue, catering in_house_available
+   - Flags: cost_unknown, wifi_unknown, availability_unconfirmed, duration_unconfirmed, stale_evidence
+   - Event window: unknown
+   - Source: [Event space — Create.26 Budapest (official): capacity 10-150 people; Full House 90 theatre, South 50 theatre, North 25 theatre; 1 multimedia projector, modern sound system, streaming/live/video-recording support, catering and meeting rooms on request; Nagymező utca 26, 1065 Budapest](https://create26.hu/en/event-space/)
+   - Booking: [https://create26.hu/en/event-space/](https://create26.hu/en/event-space/)
+   - Unresolved: Confirm the hire rate for a 50-person Saturday event (Create.26 publishes 'Based on a unique offer' with no numeric price).
+   - Unresolved: Confirm WiFi availability in the event space (not listed on the event-space page).
+   - Unresolved: Confirm availability on the chosen 2026 Saturday.
+   - Unresolved: Confirm the bookable window on weekends (the event-space page publishes no hours).
+   - Unresolved: Confirm the South hall (50 theatre) vs Full House (90 theatre) configuration for a 50-person event.
+4. KAPTÁR Coworking — Event space (tier shortlist_ready, score 0.7350) — capacity 50 (venue_claim), screen unknown, wifi confirmed, cost USD 415.98 / 360 EUR (published_rate), catering in_house_available
+   - Flags: screen_unknown, availability_unconfirmed, final_quote_required, stale_evidence
+   - Cost rate unit: day
+   - Event window: allows_to_5 (max booking 8h)
+   - Source: [Meeting rooms — KAPTÁR Coworking Budapest (official): Event space 25-50 ppl, available after 6pm weekdays or weekends; weekend full day (8h) 360 EUR +VAT, half day 210 EUR +VAT; enterprise-level WiFi; Révay köz 4, 1065 Budapest](https://kaptarbudapest.hu/en/meeting-rooms/)
+   - Booking: [https://kaptarbudapest.hu/en/meeting-rooms/](https://kaptarbudapest.hu/en/meeting-rooms/)
+   - Unresolved: Confirm the exact all-in weekend total including VAT (published weekend full-day 360 EUR +VAT for 8 hours = 415.98 USD at the ECB 2026-08-10 rate EUR 1 = USD 1.1555; workday minimum 2 hours at 175 EUR +VAT).
+   - Unresolved: Confirm whether a projector/screen is included for the event space (the page lists projector + electric canvas for the WS workshop rooms; the event space section does not list one).
+   - Unresolved: Confirm availability on the chosen 2026 Saturday (event space is available after 6pm on weekdays or on weekends).
+   - Unresolved: Confirm the 25-50 person event space (street-level, ideal for 10-50 people) comfortably seats 50 in a talk configuration.
+5. Budapest Music Center (BMC) — Corner Hall (tier shortlist_ready, score 0.6492) — capacity 40 (seated), screen confirmed, wifi unknown, cost unknown (unknown) — confirm cost with venue, catering in_house_available
+   - Flags: capacity_40_49, cost_unknown, wifi_unknown, availability_unconfirmed, duration_unconfirmed, stale_evidence
+   - Event window: unknown
+   - Source: [BMC House — Event Rooms (official): Corner Hall 61 m2, 40 theatre / 30 rectangle seats, built-in sound and projection equipment; Rooftop Hall 112 m2, 60 theatre; Concert Hall 285 m2, 295 theatre; Mátyás utca 8, 1093 Budapest](https://bmc.hu/en/about-us)
+   - Booking: [https://bmc.hu/en/about-us](https://bmc.hu/en/about-us)
+   - Unresolved: Confirm the hire rate for a Saturday event (BMC publishes no numeric event-space prices; business-event enquiries go to rendezveny@bmc.hu).
+   - Unresolved: Confirm WiFi availability in the Corner Hall (not listed on the event-rooms page).
+   - Unresolved: Confirm availability on the chosen 2026 Saturday.
+   - Unresolved: Confirm the bookable window for business events (the page notes the hall opens 2 hours before performances; business-event hours are not published).
+   - Unresolved: Confirm whether the Corner Hall (40 theatre / 30 rectangle) or the Rooftop Hall (60 theatre) is the better fit for 50 attendees (Corner Hall is 40-seat theatre, slightly below target).
+6. A38 Ship — Event spaces (Bistro / Schweppes Terrace / Concert Hall) (tier shortlist_ready, score 0.6267) — capacity 50 (seated), screen unknown, wifi unknown, cost unknown (unknown) — confirm cost with venue, catering in_house_available
+   - Flags: cost_unknown, screen_unknown, wifi_unknown, availability_unconfirmed, stale_evidence
+   - Event window: allows_to_6 (closing 22:00) (opening 08:00-22:00)
+   - Source: [Event management and renting — A38 Ship (official): Bistro standing 110/seated 90, Schweppes Terrace standing 80/seated 50, Concert Hall standing 400/seated 180-200, banquet and mixed layouts; hot/cold catering, built-in sound and lighting; open Mon-Sun 8-22](https://www.a38.hu/en/event-organizing)
+   - Booking: [https://www.a38.hu/en/event-organizing](https://www.a38.hu/en/event-organizing)
+   - Unresolved: Confirm the hire rate for a 50-person Saturday event (A38 publishes venue capacities and catering packages but no numeric rental price on the event-organizing page).
+   - Unresolved: Confirm screen/projection availability in the chosen space (the event-organizing page lists built-in sound and lighting for the Concert Hall but no projector/screen inventory).
+   - Unresolved: Confirm WiFi availability for event guests (not listed on the event-organizing page).
+   - Unresolved: Confirm availability on the chosen 2026 Saturday.
+   - Unresolved: Confirm which space fits a 50-person talk event: Schweppes Terrace (50 seated), Bistro (90 seated), or Concert Hall (180-200 seated).
+7. Impact Hub Budapest — Community & Event space (tier shortlist_ready, score 0.6267) — capacity 50 (venue_claim), screen confirmed, wifi unknown, cost unknown (unknown) — confirm cost with venue, catering in_house_available
+   - Flags: cost_unknown, wifi_unknown, availability_unconfirmed, duration_unconfirmed, stale_evidence
+   - Event window: unknown
+   - Source: [Book your Event Space — Impact Hub Budapest (official): Community & Event space 20-50 people with weekend exclusive hire; free flip charts, projectors, speaker/microphone; address 1131 Budapest, Babér utca 1-5](https://budapest.impacthub.net/book-your-event-space/)
+   - Booking: [https://budapest.impacthub.net/book-your-event-space/](https://budapest.impacthub.net/book-your-event-space/)
+   - Unresolved: Confirm the weekend exclusive-hire rate for the Community & Event space for a 50-person event (the official booking page publishes no numeric price; prices are per hour on request).
+   - Unresolved: Confirm WiFi coverage in the Community & Event space (the booking page lists WiFi explicitly only for the Grund workshop room's videoconferencing kit).
+   - Unresolved: Confirm availability on the chosen 2026 Saturday (weekend exclusive hire is offered).
+   - Unresolved: Confirm the bookable window on weekends (the page states weekend exclusive hire but publishes no hours).
+   - Unresolved: Confirm the 20-50 person Community & Event space comfortably seats 50 in a talk configuration (listed range is 20-50).
+8. Impact Hub Budapest — Great Hall (tier shortlist_ready, score 0.6267) — capacity 100 (venue_claim), screen confirmed, wifi unknown, cost unknown (unknown) — confirm cost with venue, catering in_house_available
+   - Flags: cost_unknown, wifi_unknown, availability_unconfirmed, duration_unconfirmed, stale_evidence
+   - Event window: unknown
+   - Source: [Book your Event Space — Impact Hub Budapest (official): Great Hall 100-150 people, historic venue with elevated stage, large built-in projector, free 2 microphones + speaker, gallery and reception area](https://budapest.impacthub.net/book-your-event-space/)
+   - Booking: [https://budapest.impacthub.net/book-your-event-space/](https://budapest.impacthub.net/book-your-event-space/)
+   - Unresolved: Confirm the hire rate for the Great Hall for a 50-person event (no numeric price published on the official booking page).
+   - Unresolved: Confirm WiFi coverage in the Great Hall (the booking page lists WiFi explicitly only for the Grund workshop room's videoconferencing kit).
+   - Unresolved: Confirm availability on the chosen 2026 Saturday.
+   - Unresolved: Confirm the bookable window (the page publishes no hours for the Great Hall).
+   - Unresolved: Confirm the Great Hall's 100-150 person capacity can be configured for an intimate 50-person talk event with the gallery/stage layout (capacity range is venue-published).
+9. bee@work ANKER — Conference Room (lower ground, up to 50 people) (tier shortlist_ready, score 0.6125) — capacity 50 (venue_claim), screen unknown, wifi confirmed, cost USD 228.78 / 72000 HUF (published_rate), catering unknown
+   - Flags: screen_unknown, availability_unconfirmed, final_quote_required, duration_unconfirmed, stale_evidence
+   - Cost rate unit: day
+   - Event window: unknown (closing 17:00) (opening 09:00-17:00)
+   - Source: [Meeting room rental — bee@work ANKER (official): Conference Room up to 50 people (lower ground floor) HUF 12,000/hour gross, HUF 72,000/day gross; meeting rooms for 2-60 people; 100/100 fiber internet; Anker köz 2-4, 1061 Budapest](https://www.bee-at-work.hu/en/meeting-room-rental)
+   - Booking: [https://www.bee-at-work.hu/en/meeting-room-rental](https://www.bee-at-work.hu/en/meeting-room-rental)
+   - Unresolved: Confirm the exact all-in Saturday total (published gross day rate HUF 72,000 = 228.78 USD at the ECB 2026-08-10 rate; hourly HUF 12,000; confirm whether VAT is already included in the 'gross' prices).
+   - Unresolved: Confirm whether a projector/screen is included in the Conference Room rental (the page lists audio-visual equipment and reception among included services).
+   - Unresolved: Confirm availability of the Conference Room on the chosen 2026 Saturday (the page lists office hours Monday-Friday 9-17; weekend availability is unstated).
+   - Unresolved: Confirm the bookable window on weekends (the page's office hours are Mon-Fri 9h-17h).
+   - Unresolved: Confirm the Conference Room (up to 50 people, lower ground floor) comfortably seats 50 in a talk configuration.
+10. Akvárium Klub — Aranyhall Conference Center (tier shortlist_ready, score 0.6017) — capacity 100 (venue_claim), screen unknown, wifi unknown, cost unknown (unknown) — confirm cost with venue, catering in_house_available
+   - Flags: cost_unknown, screen_unknown, wifi_unknown, availability_unconfirmed, duration_unconfirmed, stale_evidence
+   - Event window: unknown
+   - Source: [Event venue — Akvárium Klub Budapest (official): Aranyhall Conference Center with two 100-seat halls (partitionable), event capacities from 50 to 1,000 guests, total venue capacity 2,100; Erzsébet tér 12](https://akvariumklub.hu/en/event-venue/)
+   - Booking: [https://akvariumklub.hu/en/event-venue/](https://akvariumklub.hu/en/event-venue/)
+   - Unresolved: Confirm the hire rate for a 50-person Saturday event in the Aranyhall Conference Center (no numeric price published; personalized offer within 24 hours via the form).
+   - Unresolved: Confirm screen/projection availability in the conference center (the page lists full technical support but no specific screen/AV inventory).
+   - Unresolved: Confirm WiFi availability (not listed on the event-venue page).
+   - Unresolved: Confirm availability on the chosen 2026 Saturday.
+   - Unresolved: Confirm whether the Aranyhall Conference Center's two 100-seat halls (Main Hall + Glass Hall, partitionable) can be booked individually for a 50-person event.
+   - Unresolved: Confirm the bookable window on the chosen 2026 Saturday (the reviewed source publishes no opening/closing hours).
+11. Danubius Hotel Hungaria City Center — Conference & event rooms (tier shortlist_ready, score 0.5342) — capacity 60 (venue_claim), screen unknown, wifi unknown, cost unknown (unknown) — confirm cost with venue, catering in_house_only
+   - Flags: cost_unknown, screen_unknown, wifi_unknown, availability_unconfirmed, duration_unconfirmed, stale_evidence
+   - Event window: unknown
+   - Source: [Danubius Hotel Hungaria City Center — Meetings (official): 12 event rooms, 500 largest room capacity, 455 m2 largest room size; rooms from 60 to 500 max capacity; Rákóczi út 90, 1074 Budapest](https://www.danubiushotels.com/en/our-hotels-budapest/hotel-hungaria-city-center/events-and-meetings)
+   - Booking: [https://www.danubiushotels.com/en/our-hotels-budapest/hotel-hungaria-city-center/events-and-meetings](https://www.danubiushotels.com/en/our-hotels-budapest/hotel-hungaria-city-center/events-and-meetings)
+   - Unresolved: Confirm the hire rate for the 60-person conference room for a Saturday event (the official meetings page publishes room capacities but no prices).
+   - Unresolved: Confirm screen/projection availability in the chosen room (the official meetings page does not list AV equipment).
+   - Unresolved: Confirm WiFi availability in meeting rooms (not listed on the official meetings page).
+   - Unresolved: Confirm availability on the chosen 2026 Saturday.
+   - Unresolved: Confirm which of the 12 event rooms (60 to 500 capacity) fits a 50-person event.
+   - Unresolved: Confirm the bookable window on the chosen 2026 Saturday (the reviewed source publishes no opening/closing hours).
+12. Várkert Bazaar — Screening Room (tier shortlist_ready, score 0.5342) — capacity 80 (venue_claim), screen unknown, wifi unknown, cost unknown (unknown) — confirm cost with venue, catering in_house_only
+   - Flags: cost_unknown, screen_unknown, wifi_unknown, availability_unconfirmed, duration_unconfirmed, stale_evidence
+   - Event window: unknown
+   - Source: [Várkert Bazaar — Event Venues (Budapest Party Service, official venue page): Multifunctional Event Hall 900 m2 (500-800 guests), Screening Room 130 m2 (80-120 guests), Event Hall Foyer 880 m2, Foundry Courtyard outdoor 200-500; conferences, receptions, corporate events](https://budapestpartyservice.hu/en/rendezvenyhelyszinek/varkert-bazaar/)
+   - Booking: [https://budapestpartyservice.hu/en/rendezvenyhelyszinek/varkert-bazaar/](https://budapestpartyservice.hu/en/rendezvenyhelyszinek/varkert-bazaar/)
+   - Unresolved: Confirm the hire rate for a 50-person Saturday event (Várkert Bazaar publishes no numeric price; proposal via the venue page).
+   - Unresolved: Confirm screen/projection availability in the Screening Room (the venue page mentions advanced technical capabilities but no specific AV inventory).
+   - Unresolved: Confirm WiFi availability (not listed).
+   - Unresolved: Confirm availability on the chosen 2026 Saturday.
+   - Unresolved: Confirm whether the Screening Room (130 m2, 80-120 guests) or a smaller partition fits a 50-person event.
+   - Unresolved: Confirm the bookable window on the chosen 2026 Saturday (the reviewed source publishes no opening/closing hours).
+13. New York Palace Budapest — Meeting & Event Rooms (tier shortlist_ready, score 0.4592) — capacity 100 (venue_claim), screen confirmed, wifi unknown, cost USD 6644.13 / 5750 EUR (published_rate), catering in_house_only
+   - Flags: over_soft_budget, wifi_unknown, availability_unconfirmed, final_quote_required, duration_unconfirmed, stale_evidence
+   - Cost rate unit: package
+   - Event window: unknown
+   - Source: [Event Meeting — New York Palace Budapest (official): 12 flexibly combinable rooms up to 600 guests; FULL-DAY CONFERENCE PACKAGE EUR 115/person/day incl. room, coffee breaks, business lunch, built-in LCD projector and screen, flipchart; Erzsébet körút 9-11](https://newyorkcafe.hu/en/event-meeting/)
+   - Booking: [https://newyorkcafe.hu/en/event-meeting/](https://newyorkcafe.hu/en/event-meeting/)
+   - Unresolved: Confirm the all-in Saturday rate for 50 people (published FULL-DAY CONFERENCE PACKAGE EUR 115/person/day = EUR 5,750 = 6,644.13 USD at the ECB 2026-08-10 rate, over the USD 5,000 soft budget; confirm VAT and any room minimums).
+   - Unresolved: Confirm WiFi availability in the meeting rooms (not listed on the event-meeting page).
+   - Unresolved: Confirm availability on the chosen 2026 Saturday.
+   - Unresolved: Confirm which room (12 rooms from private meeting rooms to ballrooms, up to 600 guests; e.g. Rome 550, Rossini 150, Red+White Salons combined 100) fits a 50-person event.
+   - Unresolved: Confirm the bookable window on the chosen 2026 Saturday (the reviewed source publishes no opening/closing hours).
+14. Winehub Budapest — venue (Goldberger factory) (tier shortlist_ready, score 0.3342) — capacity 200 (venue_claim), screen unknown, wifi unknown, cost unknown (unknown) — confirm cost with venue, catering in_house_only
+   - Flags: oversized_capacity, cost_unknown, screen_unknown, wifi_unknown, availability_unconfirmed, duration_unconfirmed, stale_evidence
+   - Event window: unknown
+   - Source: [Venue rental — Winehub (official): Budapest's newest special event venue in the former Goldberger textile factory, total capacity 200-250 people, in-house kitchen/bistro/fine dining catering, quote on request](https://winehub.hu/venue-rental/)
+   - Booking: [https://winehub.hu/venue-rental/](https://winehub.hu/venue-rental/)
+   - Unresolved: Confirm the hire rate for a 50-person Saturday event (Winehub publishes no numeric price; quote via the venue-rental form).
+   - Unresolved: Confirm screen/projection and sound availability (not listed on the venue-rental page).
+   - Unresolved: Confirm WiFi availability (not listed on the venue-rental page).
+   - Unresolved: Confirm availability on the chosen 2026 Saturday.
+   - Unresolved: Confirm whether the 200-250 person venue can be configured for a 50-person community event (capacity is large; smaller groups are stated as welcome).
+   - Unresolved: Confirm the bookable window on the chosen 2026 Saturday (the reviewed source publishes no opening/closing hours).
+15. Millenáris — Glass Hall (Building D) (tier shortlist_ready, score 0.3217) — capacity 660 (venue_claim), screen unknown, wifi unknown, cost unknown (unknown) — confirm cost with venue, catering unknown
+   - Flags: oversized_capacity, cost_unknown, screen_unknown, wifi_unknown, availability_unconfirmed, stale_evidence
+   - Event window: allows_to_6 (closing 23:00) (opening 06:00-23:00)
+   - Source: [Venue rental — Millenáris (official): Great Hall (B), Glass Hall (D), National Dance Theatre; open daily 06:00-23:00; Kis Rókus utca 16-20, 1024 Budapest; capacities approx. 600-800 (Glass Hall) to 2,500 (Great Hall)](https://2023.millenaris.hu/en/venue-rental/)
+   - Booking: [https://2023.millenaris.hu/en/venue-rental/](https://2023.millenaris.hu/en/venue-rental/)
+   - Unresolved: Confirm the hire rate for a 50-person event in the Glass Hall or a smaller bookable unit (no numeric price published; venue rental is quote-based).
+   - Unresolved: Confirm screen/projection and sound availability for the chosen hall (not listed on the venue-rental page).
+   - Unresolved: Confirm WiFi availability (not listed on the venue-rental page).
+   - Unresolved: Confirm availability on the chosen 2026 Saturday.
+   - Unresolved: Confirm whether the venue can allocate a smaller partitioned area for 50 people (Glass Hall capacity is 600-800; Great Hall approx. 1,200-1,500).
+
+## Venue Leads (not selectable until re-evidenced)
+
+- Brody House — Private events & space rental (tier lead, score unknown) — capacity 0 (unknown), screen unknown, wifi unknown, cost unknown (unknown) — confirm cost with venue, catering unknown
+   - Flags: cost_unknown, screen_unknown, wifi_unknown, availability_unconfirmed, duration_unconfirmed, stale_evidence
+   - Tier notes: material verification question(s): capacity; capacity_comfortable 0 below minimum 40
+   - Event window: unknown
+   - Source: [Events — Brody House Budapest (official): private events & space rental (events@brody.house), galleries/rooms across the house; Bródy Sándor utca 10, 1088 Budapest](https://www.brody.house/events)
+   - Booking: [https://www.brody.house/events](https://www.brody.house/events)
+   - Unresolved: Confirm the private-event/space-rental rate for a 50-person Saturday event (Brody House publishes no numeric price; enquiries via events@brody.house).
+   - Unresolved: Confirm capacity for 50 attendees (the events page and rental contact do not publish a capacity figure).
+   - Unresolved: Confirm screen/projection availability (not listed).
+   - Unresolved: Confirm WiFi availability (not listed on the events page).
+   - Unresolved: Confirm availability on the chosen 2026 Saturday.
+   - Unresolved: Confirm the bookable window on the chosen 2026 Saturday (the reviewed source publishes no opening/closing hours).
+- Eco Office Budapest — Large Meeting Room (tier lead, score unknown) — capacity 14 (venue_claim), screen confirmed, wifi confirmed, cost USD 203.36 / 8000 HUF (estimated_from_rate), catering unknown
+   - Flags: availability_unconfirmed, final_quote_required, stale_evidence
+   - Tier notes: material verification question(s): capacity, cost; capacity_comfortable 14 below minimum 40
+   - Rate estimate: USD 25.4201 per hour x 8 hour(s) — Official Eco Office page (fetched 2026-08-10) publishes the Large Meeting Room at 8,000 HUF/hour for 7-14 people (6,000 HUF/hour for 2-6); 8-hour estimate = 64,000 HUF converted at the ECB 2026-08-10 reference rate USD 1 = 314.71 HUF = 203.36 USD. Not a written quote.
+   - Local rate: 8000 HUF per hour
+   - Cost rate unit: hour
+   - Event window: allows_to_6 (opening 00:00-24:00)
+   - Source: [Meeting Room & Office Rental Budapest — Eco Office (official): Large Meeting Room 2-14 people, 6,000-8,000 HUF/hour, projector + projection screen, flipchart, Gigabit Wi-Fi, unlimited coffee/tea/water, open 24/7, no maximum booking time](https://eco-office.hu/en/meeting-rooms/)
+   - Booking: [https://eco-office.hu/en/meeting-rooms/](https://eco-office.hu/en/meeting-rooms/)
+   - Unresolved: Confirm whether the 7-14 person Large Meeting Room can be combined with the adjacent rooms/loft space to seat 50 (the room alone is far below the 50-person target).
+   - Unresolved: Confirm the all-in Saturday total including VAT and any minimums (published 8,000 HUF/hour for 7-14 people; 8-hour estimate 203.36 USD at the documented rate).
+   - Unresolved: Confirm availability on the chosen 2026 Saturday (the space is open 24/7 per the page; weekend rates are unstated).
+   - Unresolved: Confirm the 24/7 opening supports a 09:00-17:00 event (the page states open 24/7 and no maximum booking time).
+   - Unresolved: Confirm whether the published hourly rate stands for a full Saturday booking and whether any weekend minimum or cleaning fee applies (published 8,000 HUF/hour for 7-14 people; 8-hour estimate 203.36 USD at the documented ECB 2026-08-10 rate).
+- KUBIK Coworking — Meeting rooms (tier lead, score unknown) — capacity 0 (unknown), screen unknown, wifi confirmed, cost unknown (unknown) — confirm cost with venue, catering unknown
+   - Flags: cost_unknown, screen_unknown, availability_unconfirmed, duration_unconfirmed, stale_evidence
+   - Tier notes: material verification question(s): capacity; capacity_comfortable 0 below minimum 40
+   - Event window: unknown
+   - Source: [KUBIK Coworking Budapest (official): coworking, meeting rooms bookable by hour or whole day, high-speed WiFi, reception weekdays 9-18, 24/7 member access; Jászai Mari tér 5-6, 1137 Budapest](https://kubik.hu/en/)
+   - Booking: [https://kubik.hu/en/](https://kubik.hu/en/)
+   - Unresolved: Confirm meeting-room rental rates for a 50-person event (KUBIK publishes no numeric meeting-room prices on the reviewed page).
+   - Unresolved: Confirm meeting-room capacity (the homepage lists meeting rooms bookable by hour/day but no capacity figures).
+   - Unresolved: Confirm screen availability in the meeting rooms (not listed on the homepage).
+   - Unresolved: Confirm availability on the chosen 2026 Saturday.
+   - Unresolved: Confirm whether multiple meeting rooms can be combined for a 50-person event (reception is available weekdays 9-18; 24/7 card access for members).
+   - Unresolved: Confirm the bookable window on the chosen 2026 Saturday (the reviewed source publishes no opening/closing hours).
+- Pesti Vigadó — Ceremonial Hall (conference) (tier lead, score unknown) — capacity 0 (unknown), screen unknown, wifi unknown, cost unknown (unknown) — confirm cost with venue, catering unknown
+   - Flags: cost_unknown, screen_unknown, wifi_unknown, availability_unconfirmed, duration_unconfirmed, stale_evidence
+   - Tier notes: material verification question(s): capacity; capacity_comfortable 0 below minimum 40
+   - Event window: unknown
+   - Source: [Ceremonial Hall — Pesti Vigadó (official venue page): second-floor historic hall for concerts, cultural events, conferences, standing/seated receptions and gala dinners; Vigadó tér 2, 1051 Budapest](https://vir.vigado.hu/web/en/135)
+   - Booking: [https://vir.vigado.hu/web/en/135](https://vir.vigado.hu/web/en/135)
+   - Unresolved: Confirm the hire rate for a 50-person Saturday event in the Ceremonial Hall (Pesti Vigadó publishes no numeric price on the reviewed pages).
+   - Unresolved: Confirm the Ceremonial Hall's capacity for a 50-person event (the official hall page publishes no capacity figure).
+   - Unresolved: Confirm screen/projection availability (not listed on the official hall page).
+   - Unresolved: Confirm WiFi availability (not listed).
+   - Unresolved: Confirm availability on the chosen 2026 Saturday.
+   - Unresolved: Confirm the bookable window on the chosen 2026 Saturday (the reviewed source publishes no opening/closing hours).
+- Regus Budapest First Site — Frankfurt room (tier lead, score unknown) — capacity 0 (unknown), screen confirmed, wifi confirmed, cost USD 193.49 / 60894 HUF (published_rate), catering unknown
+   - Flags: availability_unconfirmed, duration_unconfirmed, stale_evidence
+   - Tier notes: material verification question(s): capacity, cost; capacity_comfortable 0 below minimum 40
+   - Cost rate unit: day
+   - Event window: unknown
+   - Source: [Meeting rooms for rent in Budapest — workin.space (booking platform): Regus BUDAPEST First Site, Kossuth Lajos utca 7-9, 1053; Frankfurt room listed in the 11-20 people training category at HUF 10,900/hour, HUF 60,894/day (excl. VAT) with Wi-Fi, Screen, Reception](https://book.workin.space/en/hungary/budapest/meeting-room)
+   - Booking: [https://book.workin.space/en/hungary/budapest/meeting-room](https://book.workin.space/en/hungary/budapest/meeting-room)
+   - Unresolved: Confirm the capacity of the Frankfurt room at Regus Budapest First Site for a 50-person event (the workin.space listing groups it in the 11-20 people training-room category; exact capacity not stated on the reviewed listing).
+   - Unresolved: Confirm the all-in Saturday total including VAT (workin.space lists day rate HUF 60,894 excl. VAT = 193.49 USD at the ECB 2026-08-10 rate; hourly HUF 10,900).
+   - Unresolved: Confirm availability on the chosen 2026 Saturday.
+   - Unresolved: Confirm the bookable window (workin.space default day 9h-17h; weekend availability unstated).
+   - Unresolved: Confirm whether the room can be combined with an adjacent room for a 50-person event.
+- Signature Budapest — MR 01 (Szervita Square) (tier lead, score unknown) — capacity 0 (unknown), screen confirmed, wifi confirmed, cost USD 353.25 / 111173 HUF (published_rate), catering unknown
+   - Flags: availability_unconfirmed, duration_unconfirmed, stale_evidence
+   - Tier notes: material verification question(s): capacity, cost; capacity_comfortable 0 below minimum 40
+   - Cost rate unit: day
+   - Event window: unknown
+   - Source: [Meeting rooms for rent in Budapest — workin.space (booking platform): Signature Budapest, Szervita square 8, 1052; MR 01 listed in the 21+ event/conference category at HUF 19,900/hour, HUF 111,173/day (excl. VAT) with Wi-Fi, Screen, Reception](https://book.workin.space/en/hungary/budapest/meeting-room)
+   - Booking: [https://book.workin.space/en/hungary/budapest/meeting-room](https://book.workin.space/en/hungary/budapest/meeting-room)
+   - Unresolved: Confirm the capacity of MR 01 at Signature Budapest for a 50-person event (the workin.space listing shows Wi-Fi/Screen/Reception but the room is in the 21+ category and exact capacity is not stated on the reviewed listing page).
+   - Unresolved: Confirm the all-in Saturday total including VAT (workin.space lists day rate HUF 111,173 excl. VAT = 353.25 USD at the ECB 2026-08-10 rate; hourly HUF 19,900).
+   - Unresolved: Confirm availability on the chosen 2026 Saturday.
+   - Unresolved: Confirm the bookable window (workin.space default day 9h-17h; weekend availability unstated).
+   - Unresolved: Confirm the room can be configured for a 50-person talk event if capacity allows.
+
+## Trusted Venue Seeds (discovery provenance only)
+
+- Impact Hub Budapest (tv-02) — https://budapest.impacthub.net/book-your-event-space/ — seed from joe-chow-personal-list on 2026-08-09
+- Loffice Budapest (tv-03) — https://loffice.hu/budapest/en/event-spaces/index.php — seed from joe-chow-personal-list on 2026-08-09
+
+## Speaker Candidates
+
+- Speaker candidates: deferred to Run B after venue selection. No speaker candidates research is performed in Run A.
+
+## Local Communities
+
+- Community research: deferred to Run B after venue selection. No community research research is performed in Run A.
+
+## Trusted Network
+
+- Trusted-network research: deferred to Run B after venue selection. No trusted-network research research is performed in Run A.
+
+## Co-Host Candidates
+
+- Co-host research: deferred to Run B after venue selection. No co-host research research is performed in Run A.
+
+## Open Questions
+
+- Assess audience adjacency to candidate Saturdays 2026-10-17 and 2026-10-24.
+- Assess audience adjacency: an ethics/governance AI audience overlaps the AI/Web3 community for a DeAI Day on adjacent candidate Saturday 2026-10-03.
+- Assess audience adjacency: the NLP research community overlaps AI/ML enthusiasts for a DeAI Day on candidate Saturday 2026-10-24 (the conference runs through that Saturday).
+- Assess whether Saturday 10-10 carries practical downtown access effects for a 50-person community event (informational flag for Joe; not an elimination).
+- Assess whether the startup/investor crowd generates side events near candidate Saturday 2026-09-19.
+- Budapest Fintech Week 2026: the official Luma page confirms the event is returning in 2026 but publishes no dates yet (program TBA); the 2025 edition ran December 4-5. Recorded as a recurring November/December signal, not a dated conflict.
+- Confirm AI Forward '26 final date and venue (official page states 21 October 2026 at MVM Dome, Budapest) and whether registration/side programming is open to community attendees.
+- Confirm availability of the 'A' event space on the chosen 2026 Saturday.
+- Confirm availability of the Conference Room on the chosen 2026 Saturday (the page lists office hours Monday-Friday 9-17; weekend availability is unstated).
+- Confirm availability of the Maxi Event Room on the chosen 2026 Saturday.
+- Confirm availability on the chosen 2026 Saturday (event space is available after 6pm on weekdays or on weekends).
+- Confirm availability on the chosen 2026 Saturday (the space is open 24/7 per the page; weekend rates are unstated).
+- Confirm availability on the chosen 2026 Saturday (weekend exclusive hire is offered).
+- Confirm availability on the chosen 2026 Saturday.
+- Confirm capacity for 50 attendees (the events page and rental contact do not publish a capacity figure).
+- Confirm meeting-room capacity (the homepage lists meeting rooms bookable by hour/day but no capacity figures).
+- Confirm meeting-room rental rates for a 50-person event (KUBIK publishes no numeric meeting-room prices on the reviewed page).
+- Confirm MeOut Summit 2026 dates and venue with the organizer (official page states November 25-26, 2026; Akvárium Klub is cited by event listings).
+- Confirm ScaleupFest 2026 dates and the final venue list (official page publishes September 16-17, 2026, Budapest, 'multiple venues in downtown Budapest' with details pending).
+- Confirm screen availability in the meeting rooms (not listed on the homepage).
+- Confirm screen/projection and sound availability (not listed on the venue-rental page).
+- Confirm screen/projection and sound availability for the chosen hall (not listed on the venue-rental page).
+- Confirm screen/projection availability (not listed on the official hall page).
+- Confirm screen/projection availability (not listed).
+- Confirm screen/projection availability in the chosen room (the official meetings page does not list AV equipment).
+- Confirm screen/projection availability in the chosen space (the event-organizing page lists built-in sound and lighting for the Concert Hall but no projector/screen inventory).
+- Confirm screen/projection availability in the conference center (the page lists full technical support but no specific screen/AV inventory).
+- Confirm screen/projection availability in the Screening Room (the venue page mentions advanced technical capabilities but no specific AV inventory).
+- Confirm the 'A' event space (up to 50 people, lower-ground with kitchenette) comfortably seats 50 in a talk configuration.
+- Confirm the 20-50 person Community & Event space comfortably seats 50 in a talk configuration (listed range is 20-50).
+- Confirm the 24/7 opening supports a 09:00-17:00 event (the page states open 24/7 and no maximum booking time).
+- Confirm the 25-50 person event space (street-level, ideal for 10-50 people) comfortably seats 50 in a talk configuration.
+- Confirm the all-in Saturday rate for 50 people (published FULL-DAY CONFERENCE PACKAGE EUR 115/person/day = EUR 5,750 = 6,644.13 USD at the ECB 2026-08-10 rate, over the USD 5,000 soft budget; confirm VAT and any room minimums).
+- Confirm the all-in Saturday total including VAT (workin.space lists day rate HUF 111,173 excl. VAT = 353.25 USD at the ECB 2026-08-10 rate; hourly HUF 19,900).
+- Confirm the all-in Saturday total including VAT (workin.space lists day rate HUF 60,894 excl. VAT = 193.49 USD at the ECB 2026-08-10 rate; hourly HUF 10,900).
+- Confirm the all-in Saturday total including VAT and any minimums (published 8,000 HUF/hour for 7-14 people; 8-hour estimate 203.36 USD at the documented rate).
+- Confirm the bookable window (the page publishes no hours for the Great Hall).
+- Confirm the bookable window (workin.space default day 9h-17h; weekend availability unstated).
+- Confirm the bookable window for business events (the page notes the hall opens 2 hours before performances; business-event hours are not published).
+- Confirm the bookable window on the chosen 2026 Saturday (the reviewed source publishes no opening/closing hours).
+- Confirm the bookable window on weekends (the event-space page publishes no hours).
+- Confirm the bookable window on weekends (the page publishes no opening hours).
+- Confirm the bookable window on weekends (the page states weekend exclusive hire but publishes no hours).
+- Confirm the bookable window on weekends (the page's office hours are Mon-Fri 9h-17h).
+- Confirm the capacity of MR 01 at Signature Budapest for a 50-person event (the workin.space listing shows Wi-Fi/Screen/Reception but the room is in the 21+ category and exact capacity is not stated on the reviewed listing page).
+- Confirm the capacity of the Frankfurt room at Regus Budapest First Site for a 50-person event (the workin.space listing groups it in the 11-20 people training-room category; exact capacity not stated on the reviewed listing).
+- Confirm the Ceremonial Hall's capacity for a 50-person event (the official hall page publishes no capacity figure).
+- Confirm the Conference Room (up to 50 people, lower ground floor) comfortably seats 50 in a talk configuration.
+- Confirm the EMNLP 2026 venue and workshop/tutorial schedule in Budapest (official site publishes Oct 24-29, Budapest; zplatform.ai lists Hungexpo as the venue but the official site does not yet name it).
+- Confirm the exact all-in Saturday total (published gross day rate HUF 72,000 = 228.78 USD at the ECB 2026-08-10 rate; hourly HUF 12,000; confirm whether VAT is already included in the 'gross' prices).
+- Confirm the exact all-in Saturday total including 27% VAT (published 21,500 HUF/hour +VAT; 8-hour estimate 546.53 USD at the documented ECB 2026-08-10 rate).
+- Confirm the exact all-in Saturday total including 27% VAT and any AV equipment charge (published 18,000 HUF/hour +VAT; 8-hour estimate 457.56 USD at the documented ECB 2026-08-10 rate).
+- Confirm the exact all-in weekend total including VAT (published weekend full-day 360 EUR +VAT for 8 hours = 415.98 USD at the ECB 2026-08-10 rate EUR 1 = USD 1.1555; workday minimum 2 hours at 175 EUR +VAT).
+- Confirm the final 2026 route, street-closure schedule, and public-transport changes with the organizers and BKK before planning any event activity on candidate Saturday 2026-10-10 (the marathon festival weekend runs October 10-11 with the marathon itself on Sunday October 11).
+- Confirm the Great Hall's 100-150 person capacity can be configured for an intimate 50-person talk event with the gallery/stage layout (capacity range is venue-published).
+- Confirm the hire rate for a 50-person event in the Glass Hall or a smaller bookable unit (no numeric price published; venue rental is quote-based).
+- Confirm the hire rate for a 50-person Saturday event (A38 publishes venue capacities and catering packages but no numeric rental price on the event-organizing page).
+- Confirm the hire rate for a 50-person Saturday event (Create.26 publishes 'Based on a unique offer' with no numeric price).
+- Confirm the hire rate for a 50-person Saturday event (Várkert Bazaar publishes no numeric price; proposal via the venue page).
+- Confirm the hire rate for a 50-person Saturday event (Winehub publishes no numeric price; quote via the venue-rental form).
+- Confirm the hire rate for a 50-person Saturday event in the Aranyhall Conference Center (no numeric price published; personalized offer within 24 hours via the form).
+- Confirm the hire rate for a 50-person Saturday event in the Ceremonial Hall (Pesti Vigadó publishes no numeric price on the reviewed pages).
+- Confirm the hire rate for a Saturday event (BMC publishes no numeric event-space prices; business-event enquiries go to rendezveny@bmc.hu).
+- Confirm the hire rate for the 60-person conference room for a Saturday event (the official meetings page publishes room capacities but no prices).
+- Confirm the hire rate for the Great Hall for a 50-person event (no numeric price published on the official booking page).
+- Confirm the IEEE Ethical AI Tech Summit's venue and any satellite community events in Budapest on October 1-2, 2026 (the official page publishes the dates and city but not yet the venue).
+- Confirm the Maxi Event Room (50-60 people) comfortably seats 50 in a talk configuration.
+- Confirm the private-event/space-rental rate for a 50-person Saturday event (Brody House publishes no numeric price; enquiries via events@brody.house).
+- Confirm the room can be configured for a 50-person talk event if capacity allows.
+- Confirm the South hall (50 theatre) vs Full House (90 theatre) configuration for a 50-person event.
+- Confirm the weekend exclusive-hire rate for the Community & Event space for a 50-person event (the official booking page publishes no numeric price; prices are per hour on request).
+- Confirm whether a projector/screen is included for the event space (the page lists projector + electric canvas for the WS workshop rooms; the event space section does not list one).
+- Confirm whether a projector/screen is included in the Conference Room rental (the page lists audio-visual equipment and reception among included services).
+- Confirm whether a projector/screen is included in the Maxi Event Room rental or requires the bespoke-priced Full AV package (the page lists full AV equipment at bespoke price).
+- Confirm whether a projector/screen is included or requires the bespoke-priced Full AV package.
+- Confirm whether multiple meeting rooms can be combined for a 50-person event (reception is available weekdays 9-18; 24/7 card access for members).
+- Confirm whether the 200-250 person venue can be configured for a 50-person community event (capacity is large; smaller groups are stated as welcome).
+- Confirm whether the 7-14 person Large Meeting Room can be combined with the adjacent rooms/loft space to seat 50 (the room alone is far below the 50-person target).
+- Confirm whether the Aranyhall Conference Center's two 100-seat halls (Main Hall + Glass Hall, partitionable) can be booked individually for a 50-person event.
+- Confirm whether the Corner Hall (40 theatre / 30 rectangle) or the Rooftop Hall (60 theatre) is the better fit for 50 attendees (Corner Hall is 40-seat theatre, slightly below target).
+- Confirm whether the published hourly rate stands for a full Saturday booking and whether any weekend minimum or cleaning fee applies (published 8,000 HUF/hour for 7-14 people; 8-hour estimate 203.36 USD at the documented ECB 2026-08-10 rate).
+- Confirm whether the room can be combined with an adjacent room for a 50-person event.
+- Confirm whether the Screening Room (130 m2, 80-120 guests) or a smaller partition fits a 50-person event.
+- Confirm whether the venue can allocate a smaller partitioned area for 50 people (Glass Hall capacity is 600-800; Great Hall approx. 1,200-1,500).
+- Confirm which of the 12 event rooms (60 to 500 capacity) fits a 50-person event.
+- Confirm which room (12 rooms from private meeting rooms to ballrooms, up to 600 guests; e.g. Rome 550, Rossini 150, Red+White Salons combined 100) fits a 50-person event.
+- Confirm which space fits a 50-person talk event: Schweppes Terrace (50 seated), Bistro (90 seated), or Concert Hall (180-200 seated).
+- Confirm WiFi availability (not listed on the event-venue page).
+- Confirm WiFi availability (not listed on the events page).
+- Confirm WiFi availability (not listed on the venue-rental page).
+- Confirm WiFi availability (not listed).
+- Confirm WiFi availability for event guests (not listed on the event-organizing page).
+- Confirm WiFi availability in meeting rooms (not listed on the official meetings page).
+- Confirm WiFi availability in the Corner Hall (not listed on the event-rooms page).
+- Confirm WiFi availability in the event space (not listed on the event-space page).
+- Confirm WiFi availability in the meeting rooms (not listed on the event-meeting page).
+- Confirm WiFi coverage in the Community & Event space (the booking page lists WiFi explicitly only for the Grund workshop room's videoconferencing kit).
+- Confirm WiFi coverage in the Great Hall (the booking page lists WiFi explicitly only for the Grund workshop room's videoconferencing kit).
+- Hungarian-only official venue/event pages (e.g. MOM Kulturális Központ, Bálna Budapest) were out of the English-only scope; their existence is logged as a discovery gap, not translated evidence.
+- Impact Hub Budapest (tv-02) and Loffice Budapest (tv-03) are the trusted-venue seeds for budapest-hu; both were re-verified from current official pages on 2026-08-10 and are included as candidate records (status not marked used).
+- SPAR Budapest Marathon 2026 runs October 10-11; candidate Saturday 2026-10-10 falls inside the festival weekend, so 10-10 carries a citywide transport/street-closure awareness flag for Joe.
+- This November record is informational awareness only; no candidate Saturday falls in November, so it is not a venue-candidate-date conflict.
+
+Full source list: see sources.md

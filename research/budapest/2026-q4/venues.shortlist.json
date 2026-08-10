@@ -1,0 +1,2036 @@
+{
+  "meta": {
+    "generator": "score_venues.py",
+    "schema_version": "2.2",
+    "budget_usd": 5000.0,
+    "target_attendance": 50,
+    "event_date": "2026-09-26",
+    "event_duration_hours": 8,
+    "weights": {
+      "budget_efficiency": 0.2,
+      "capacity_fit": 0.2,
+      "catering_flexibility": 0.15,
+      "recording_suitability": 0.15,
+      "booking_path": 0.1,
+      "evidence_freshness": 0.1,
+      "technical_readiness": 0.05,
+      "event_window_fit": 0.05
+    },
+    "tier_order": [
+      "eligible",
+      "shortlist_ready",
+      "lead"
+    ]
+  },
+  "eligible": [],
+  "shortlist_ready": [
+    {
+      "name": "Loffice Budapest — Maxi Event Room",
+      "city_slug": "budapest-hu",
+      "address": "Paulay Ede st. 55, 1061 Budapest",
+      "capacity_comfortable": 55,
+      "capacity_basis": "venue_claim",
+      "screen_status": "unknown",
+      "wifi_status": "confirmed",
+      "catering_policy": "in_house_available",
+      "recording_suitability": "likely_good",
+      "estimated_cost_usd": 457.56,
+      "cost_basis": "estimated_from_rate",
+      "cost_local_amount": 18000,
+      "cost_local_currency": "HUF",
+      "hourly_rate_usd": 57.1952,
+      "estimated_hours": 8,
+      "rate_estimate_note": "Official Loffice event-spaces page (fetched 2026-08-10) publishes 18,000 HUF/hour (+VAT) for the Maxi Event Room; 8-hour estimate = 18,000 x 8 = 144,000 HUF converted at the ECB 2026-08-10 reference rate USD 1 = 314.71 HUF (EUR 1 = USD 1.1555, EUR 1 = HUF 363.65) = 457.56 USD. +VAT and any AV add-ons are not included; not a written quote.",
+      "booking_url": "https://loffice.hu/budapest/en/event-spaces/index.php",
+      "verification_question_kinds": [
+        "final_quote",
+        "screen",
+        "availability",
+        "event_window",
+        "room_assignment"
+      ],
+      "verification_questions": [
+        "Confirm the exact all-in Saturday total including 27% VAT and any AV equipment charge (published 18,000 HUF/hour +VAT; 8-hour estimate 457.56 USD at the documented ECB 2026-08-10 rate).",
+        "Confirm whether a projector/screen is included in the Maxi Event Room rental or requires the bespoke-priced Full AV package (the page lists full AV equipment at bespoke price).",
+        "Confirm availability of the Maxi Event Room on the chosen 2026 Saturday.",
+        "Confirm the bookable window on weekends (the page publishes no opening hours).",
+        "Confirm the Maxi Event Room (50-60 people) comfortably seats 50 in a talk configuration."
+      ],
+      "source_url": "https://loffice.hu/budapest/en/event-spaces/index.php",
+      "source_title": "Event Spaces — Loffice Budapest (official): Maxi Event Room 18,000 HUF/hour (+VAT), up to 50-60 people, street-front bright event space, secure WiFi, Full AV equipment at bespoke price; Paulay Ede st. 55, 1061 Budapest",
+      "accessed_on": "2026-08-10",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "Official Loffice Budapest event-spaces page (fetched 2026-08-10, HTTP 200) lists the Maxi Event Room at 18,000 HUF/hour (+VAT), described as an ideal downtown venue for workshops, team buildings, product launches, trainings and exhibitions, up to 50-60 people, street-front and bright; page lists secure WiFi, community kitchen, and Full AV equipment (webcam, microport, recording software) at bespoke price; address Paulay Ede st. 55, 1061 Budapest.",
+        "inference": "8-hour estimate at the documented ECB 2026-08-10 planning rate (USD 1 = 314.71 HUF) is 144,000 HUF = 457.56 USD, well within the USD 5,000 soft budget; VAT and AV extras remain verification questions. This is the trusted-venue seed tv-03, re-verified from the current official page (status unknown, not marked used).",
+        "geo": "https://loffice.hu/budapest/en/event-spaces/index.php"
+      },
+      "latitude": 47.502984,
+      "longitude": 19.061948,
+      "cost_rate_unit": "hour",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "hourly_rate_local": 18000,
+      "rate_currency": "HUF",
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "screen_unknown",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "score": 0.7909,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.9085,
+          "weight": 0.2,
+          "contribution": 0.1817
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 0.7,
+          "weight": 0.15,
+          "contribution": 0.105
+        },
+        "recording_suitability": {
+          "factor": 0.55,
+          "weight": 0.15,
+          "contribution": 0.0825
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 0.7167,
+          "weight": 0.1,
+          "contribution": 0.0717
+        },
+        "technical_readiness": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "event_window_fit": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "total": 0.7909
+      }
+    },
+    {
+      "name": "Loffice Budapest — 'A' event space (lower ground)",
+      "city_slug": "budapest-hu",
+      "address": "Paulay Ede st. 55, 1061 Budapest",
+      "capacity_comfortable": 50,
+      "capacity_basis": "venue_claim",
+      "screen_status": "unknown",
+      "wifi_status": "confirmed",
+      "catering_policy": "in_house_available",
+      "recording_suitability": "likely_good",
+      "estimated_cost_usd": 546.53,
+      "cost_basis": "estimated_from_rate",
+      "cost_local_amount": 21500,
+      "cost_local_currency": "HUF",
+      "hourly_rate_usd": 68.3165,
+      "estimated_hours": 8,
+      "rate_estimate_note": "Official Loffice event-spaces page (fetched 2026-08-10) publishes 21,500 HUF/hour (+VAT) for the 'A' event space; 8-hour estimate = 21,500 x 8 = 172,000 HUF converted at the ECB 2026-08-10 reference rate USD 1 = 314.71 HUF = 546.53 USD. +VAT not included; not a written quote.",
+      "booking_url": "https://loffice.hu/budapest/en/event-spaces/index.php",
+      "verification_question_kinds": [
+        "final_quote",
+        "screen",
+        "availability",
+        "event_window",
+        "room_assignment"
+      ],
+      "verification_questions": [
+        "Confirm the exact all-in Saturday total including 27% VAT (published 21,500 HUF/hour +VAT; 8-hour estimate 546.53 USD at the documented ECB 2026-08-10 rate).",
+        "Confirm whether a projector/screen is included or requires the bespoke-priced Full AV package.",
+        "Confirm availability of the 'A' event space on the chosen 2026 Saturday.",
+        "Confirm the bookable window on weekends (the page publishes no opening hours).",
+        "Confirm the 'A' event space (up to 50 people, lower-ground with kitchenette) comfortably seats 50 in a talk configuration."
+      ],
+      "source_url": "https://loffice.hu/budapest/en/event-spaces/index.php",
+      "source_title": "Event Spaces — Loffice Budapest (official): 'A' event space (lower ground) 21,500 HUF/hour (+VAT), up to 50 people, signature pink floor, modern kitchenette, secure WiFi, Full AV equipment at bespoke price",
+      "accessed_on": "2026-08-10",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "Official Loffice Budapest event-spaces page (fetched 2026-08-10) lists the 'A' event space on the -1 level at 21,500 HUF/hour (+VAT), described as an ultimate versatile space for workshops, team-building, product launches, presentations, trainings or smaller conferences, accommodating up to 50 people, with a modern kitchenette and signature pink floor.",
+        "inference": "8-hour estimate at the documented ECB 2026-08-10 planning rate is 172,000 HUF = 546.53 USD, within the USD 5,000 soft budget; VAT and AV extras remain verification questions.",
+        "geo": "https://loffice.hu/budapest/en/event-spaces/index.php"
+      },
+      "latitude": 47.502984,
+      "longitude": 19.061948,
+      "cost_rate_unit": "hour",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "hourly_rate_local": 21500,
+      "rate_currency": "HUF",
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "screen_unknown",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "score": 0.7873,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.8907,
+          "weight": 0.2,
+          "contribution": 0.1781
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 0.7,
+          "weight": 0.15,
+          "contribution": 0.105
+        },
+        "recording_suitability": {
+          "factor": 0.55,
+          "weight": 0.15,
+          "contribution": 0.0825
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 0.7167,
+          "weight": 0.1,
+          "contribution": 0.0717
+        },
+        "technical_readiness": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "event_window_fit": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "total": 0.7873
+      }
+    },
+    {
+      "name": "Create.26 — Event space (South hall)",
+      "city_slug": "budapest-hu",
+      "address": "1065 Budapest, Nagymező utca 26",
+      "capacity_comfortable": 50,
+      "capacity_basis": "seated",
+      "screen_status": "confirmed",
+      "wifi_status": "unknown",
+      "catering_policy": "in_house_available",
+      "recording_suitability": "confirmed_good",
+      "estimated_cost_usd": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "booking_url": "https://create26.hu/en/event-space/",
+      "verification_question_kinds": [
+        "cost_unknown",
+        "wifi",
+        "availability",
+        "event_window",
+        "room_assignment"
+      ],
+      "verification_questions": [
+        "Confirm the hire rate for a 50-person Saturday event (Create.26 publishes 'Based on a unique offer' with no numeric price).",
+        "Confirm WiFi availability in the event space (not listed on the event-space page).",
+        "Confirm availability on the chosen 2026 Saturday.",
+        "Confirm the bookable window on weekends (the event-space page publishes no hours).",
+        "Confirm the South hall (50 theatre) vs Full House (90 theatre) configuration for a 50-person event."
+      ],
+      "source_url": "https://create26.hu/en/event-space/",
+      "source_title": "Event space — Create.26 Budapest (official): capacity 10-150 people; Full House 90 theatre, South 50 theatre, North 25 theatre; 1 multimedia projector, modern sound system, streaming/live/video-recording support, catering and meeting rooms on request; Nagymező utca 26, 1065 Budapest",
+      "accessed_on": "2026-08-10",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "Official Create.26 event-space page (fetched 2026-08-10, HTTP 200) states the downtown event space hosts events from smaller workshops to bigger panel discussions, capacity 10-150 people with layout on demand: Full House 90 theatre, South 50 theatre (South hall), North 35 m2/25 theatre; 1 multimedia projector, modern sound system, streaming/live show/video recording support, on-site staff, event catering and meeting rooms (2-10 people) on request; 'Based on a unique offer'.",
+        "inference": "The South hall's 50-theatre capacity exactly matches the 50-person target; no price published, so cost stays unknown (quote-based).",
+        "geo": "https://create26.hu/en/event-space/"
+      },
+      "latitude": 47.503672,
+      "longitude": 19.05924,
+      "cost_rate_unit": "unknown",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "cost_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "score": 0.7767,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.5,
+          "weight": 0.2,
+          "contribution": 0.1
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 0.7,
+          "weight": 0.15,
+          "contribution": 0.105
+        },
+        "recording_suitability": {
+          "factor": 1.0,
+          "weight": 0.15,
+          "contribution": 0.15
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 0.7167,
+          "weight": 0.1,
+          "contribution": 0.0717
+        },
+        "technical_readiness": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "event_window_fit": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "total": 0.7767
+      }
+    },
+    {
+      "name": "KAPTÁR Coworking — Event space",
+      "city_slug": "budapest-hu",
+      "address": "4. Révay köz, 1065 Budapest",
+      "capacity_comfortable": 50,
+      "capacity_basis": "venue_claim",
+      "screen_status": "unknown",
+      "wifi_status": "confirmed",
+      "catering_policy": "in_house_available",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": 415.98,
+      "cost_basis": "published_rate",
+      "cost_local_amount": 360,
+      "cost_local_currency": "EUR",
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "booking_url": "https://kaptarbudapest.hu/en/meeting-rooms/",
+      "verification_question_kinds": [
+        "final_quote",
+        "screen",
+        "availability",
+        "room_assignment"
+      ],
+      "verification_questions": [
+        "Confirm the exact all-in weekend total including VAT (published weekend full-day 360 EUR +VAT for 8 hours = 415.98 USD at the ECB 2026-08-10 rate EUR 1 = USD 1.1555; workday minimum 2 hours at 175 EUR +VAT).",
+        "Confirm whether a projector/screen is included for the event space (the page lists projector + electric canvas for the WS workshop rooms; the event space section does not list one).",
+        "Confirm availability on the chosen 2026 Saturday (event space is available after 6pm on weekdays or on weekends).",
+        "Confirm the 25-50 person event space (street-level, ideal for 10-50 people) comfortably seats 50 in a talk configuration."
+      ],
+      "source_url": "https://kaptarbudapest.hu/en/meeting-rooms/",
+      "source_title": "Meeting rooms — KAPTÁR Coworking Budapest (official): Event space 25-50 ppl, available after 6pm weekdays or weekends; weekend full day (8h) 360 EUR +VAT, half day 210 EUR +VAT; enterprise-level WiFi; Révay köz 4, 1065 Budapest",
+      "accessed_on": "2026-08-10",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "Official KAPTÁR meeting-rooms page (fetched 2026-08-10, HTTP 200) lists an Event space for 25-50 people: street-level bright space ideal for 10-50 people, for events/press conferences/screenings, available after 6pm on weekdays or on weekends; workday min booking 2 hours (175 EUR +VAT); weekends half-day (4h) 210 EUR +VAT or full-day (8h) 360 EUR +VAT; basic catering (fresh lemon water) included; page also lists enterprise-level WiFi with dual internet gateways. Address: 4. Révay köz, 1065 Budapest.",
+        "inference": "Weekend full-day (8h) 360 EUR converts to 415.98 USD at the ECB 2026-08-10 rate, within the USD 5,000 soft budget; screen inclusion for the event space is not explicit, so it remains a verification question.",
+        "geo": "https://kaptarbudapest.hu/en/meeting-rooms/"
+      },
+      "latitude": 47.501055,
+      "longitude": 19.055561,
+      "cost_rate_unit": "day",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": 8.0,
+      "event_window_status": "allows_to_5",
+      "event_window_evidence": {
+        "url": "https://kaptarbudapest.hu/en/meeting-rooms/",
+        "title": "Meeting rooms — KAPTÁR Coworking Budapest (official)",
+        "accessed_on": "2026-08-10",
+        "claim": "The official page states the event space is available on weekends and accepts full-day (8h) weekend bookings, which supports a 09:00-17:00 event on a Saturday (allows_to_5); exact weekend start/end hours are confirmed at booking."
+      },
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "screen_unknown",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "stale_evidence"
+      ],
+      "score": 0.735,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.9168,
+          "weight": 0.2,
+          "contribution": 0.1834
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 0.7,
+          "weight": 0.15,
+          "contribution": 0.105
+        },
+        "recording_suitability": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 0.7167,
+          "weight": 0.1,
+          "contribution": 0.0717
+        },
+        "technical_readiness": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "event_window_fit": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "total": 0.735
+      }
+    },
+    {
+      "name": "Budapest Music Center (BMC) — Corner Hall",
+      "city_slug": "budapest-hu",
+      "address": "1093 Budapest, Mátyás utca 8 (BMC House)",
+      "capacity_comfortable": 40,
+      "capacity_basis": "seated",
+      "screen_status": "confirmed",
+      "wifi_status": "unknown",
+      "catering_policy": "in_house_available",
+      "recording_suitability": "likely_good",
+      "estimated_cost_usd": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "booking_url": "https://bmc.hu/en/about-us",
+      "verification_question_kinds": [
+        "cost_unknown",
+        "wifi",
+        "availability",
+        "event_window",
+        "room_assignment"
+      ],
+      "verification_questions": [
+        "Confirm the hire rate for a Saturday event (BMC publishes no numeric event-space prices; business-event enquiries go to rendezveny@bmc.hu).",
+        "Confirm WiFi availability in the Corner Hall (not listed on the event-rooms page).",
+        "Confirm availability on the chosen 2026 Saturday.",
+        "Confirm the bookable window for business events (the page notes the hall opens 2 hours before performances; business-event hours are not published).",
+        "Confirm whether the Corner Hall (40 theatre / 30 rectangle) or the Rooftop Hall (60 theatre) is the better fit for 50 attendees (Corner Hall is 40-seat theatre, slightly below target)."
+      ],
+      "source_url": "https://bmc.hu/en/about-us",
+      "source_title": "BMC House — Event Rooms (official): Corner Hall 61 m2, 40 theatre / 30 rectangle seats, built-in sound and projection equipment; Rooftop Hall 112 m2, 60 theatre; Concert Hall 285 m2, 295 theatre; Mátyás utca 8, 1093 Budapest",
+      "accessed_on": "2026-08-10",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "Official BMC House event-rooms section (bmc.hu/en/about-us, fetched 2026-08-10, HTTP 200) lists: Concert Hall and lobby (285 m2, 295 theatre / 210 round-table, lobby 250 standing; built-in sound, projection and lighting); a 100-theatre/50-rectangle room with foyer for 75; Rooftop Hall (112 m2, 60 theatre / 40 rectangle, built-in sound and projection); Corner Hall (61 m2, 40 theatre / 30 rectangle, built-in sound and projection). Business-event contacts rendezveny@bmc.hu.",
+        "inference": "The Corner Hall's 40-seat theatre capacity is just below the 50-person target (capacity_40_49 flag), while the Rooftop Hall's 60 seats fits comfortably; no prices are published, so cost stays unknown.",
+        "geo": "https://bmc.hu/en/about-us"
+      },
+      "latitude": 47.485687,
+      "longitude": 19.061114,
+      "cost_rate_unit": "unknown",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "capacity_40_49",
+        "cost_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "score": 0.6492,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.5,
+          "weight": 0.2,
+          "contribution": 0.1
+        },
+        "capacity_fit": {
+          "factor": 0.7,
+          "weight": 0.2,
+          "contribution": 0.14
+        },
+        "catering_flexibility": {
+          "factor": 0.7,
+          "weight": 0.15,
+          "contribution": 0.105
+        },
+        "recording_suitability": {
+          "factor": 0.55,
+          "weight": 0.15,
+          "contribution": 0.0825
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 0.7167,
+          "weight": 0.1,
+          "contribution": 0.0717
+        },
+        "technical_readiness": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "event_window_fit": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "total": 0.6492
+      }
+    },
+    {
+      "name": "A38 Ship — Event spaces (Bistro / Schweppes Terrace / Concert Hall)",
+      "city_slug": "budapest-hu",
+      "address": "Petőfi bridge, Buda side, lower quay, 1117 Budapest",
+      "capacity_comfortable": 50,
+      "capacity_basis": "seated",
+      "screen_status": "unknown",
+      "wifi_status": "unknown",
+      "catering_policy": "in_house_available",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "booking_url": "https://www.a38.hu/en/event-organizing",
+      "verification_question_kinds": [
+        "cost_unknown",
+        "screen",
+        "wifi",
+        "availability",
+        "room_assignment"
+      ],
+      "verification_questions": [
+        "Confirm the hire rate for a 50-person Saturday event (A38 publishes venue capacities and catering packages but no numeric rental price on the event-organizing page).",
+        "Confirm screen/projection availability in the chosen space (the event-organizing page lists built-in sound and lighting for the Concert Hall but no projector/screen inventory).",
+        "Confirm WiFi availability for event guests (not listed on the event-organizing page).",
+        "Confirm availability on the chosen 2026 Saturday.",
+        "Confirm which space fits a 50-person talk event: Schweppes Terrace (50 seated), Bistro (90 seated), or Concert Hall (180-200 seated)."
+      ],
+      "source_url": "https://www.a38.hu/en/event-organizing",
+      "source_title": "Event management and renting — A38 Ship (official): Bistro standing 110/seated 90, Schweppes Terrace standing 80/seated 50, Concert Hall standing 400/seated 180-200, banquet and mixed layouts; hot/cold catering, built-in sound and lighting; open Mon-Sun 8-22",
+      "accessed_on": "2026-08-10",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "Official A38 Ship event-organizing page (fetched 2026-08-10, HTTP 200) lists rentable spaces with capacities: Bistro (standing 110, banquet 90, seated 90, mixed 90), Schweppes Terrace (standing 80, seated 50), Concert Hall (192 m2, standing 400, seated 180-200, banquet 100), plus further halls (standing 120, 280, 80, 70); services include hot/cold catering, bar counter, cloakroom, built-in sound and lighting, AV equipment, business services; ship open Mon-Sun 8-22h or until end of events; located at Petőfi bridge, Buda side.",
+        "inference": "The Schweppes Terrace seats exactly 50 and the Bistro seats 90, both workable for a 50-person event; no rental price is published, so cost stays unknown with a quote question.",
+        "geo": "https://www.a38.hu/en/event-organizing"
+      },
+      "latitude": 47.476844,
+      "longitude": 19.059327,
+      "cost_rate_unit": "unknown",
+      "opening_hours": "08:00-22:00",
+      "closing_time": "22:00",
+      "max_booking_hours": null,
+      "event_window_status": "allows_to_6",
+      "event_window_evidence": {
+        "url": "https://www.a38.hu/en/event-organizing",
+        "title": "Event management and renting — A38 Ship (official)",
+        "accessed_on": "2026-08-10",
+        "claim": "The official page states the ship is open Mon-Sun 8-22h or until the end of events, so an event ending at 18:00 is supported (allows_to_6)."
+      },
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "cost_unknown",
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "stale_evidence"
+      ],
+      "score": 0.6267,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.5,
+          "weight": 0.2,
+          "contribution": 0.1
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 0.7,
+          "weight": 0.15,
+          "contribution": 0.105
+        },
+        "recording_suitability": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 0.7167,
+          "weight": 0.1,
+          "contribution": 0.0717
+        },
+        "technical_readiness": {
+          "factor": 0.0,
+          "weight": 0.05,
+          "contribution": 0.0
+        },
+        "event_window_fit": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "total": 0.6267
+      }
+    },
+    {
+      "name": "Impact Hub Budapest — Community & Event space",
+      "city_slug": "budapest-hu",
+      "address": "1131 Budapest, Babér utca 1-5 (\"Danubius Ház\")",
+      "capacity_comfortable": 50,
+      "capacity_basis": "venue_claim",
+      "screen_status": "confirmed",
+      "wifi_status": "unknown",
+      "catering_policy": "in_house_available",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "booking_url": "https://budapest.impacthub.net/book-your-event-space/",
+      "verification_question_kinds": [
+        "cost_unknown",
+        "wifi",
+        "availability",
+        "event_window",
+        "room_assignment"
+      ],
+      "verification_questions": [
+        "Confirm the weekend exclusive-hire rate for the Community & Event space for a 50-person event (the official booking page publishes no numeric price; prices are per hour on request).",
+        "Confirm WiFi coverage in the Community & Event space (the booking page lists WiFi explicitly only for the Grund workshop room's videoconferencing kit).",
+        "Confirm availability on the chosen 2026 Saturday (weekend exclusive hire is offered).",
+        "Confirm the bookable window on weekends (the page states weekend exclusive hire but publishes no hours).",
+        "Confirm the 20-50 person Community & Event space comfortably seats 50 in a talk configuration (listed range is 20-50)."
+      ],
+      "source_url": "https://budapest.impacthub.net/book-your-event-space/",
+      "source_title": "Book your Event Space — Impact Hub Budapest (official): Community & Event space 20-50 people with weekend exclusive hire; free flip charts, projectors, speaker/microphone; address 1131 Budapest, Babér utca 1-5",
+      "accessed_on": "2026-08-10",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "Official Impact Hub Budapest booking page (fetched 2026-08-10, HTTP 200) lists a 'Community & Event space (20-50 people)' with weekend exclusive hire in the heart of the city; the page states for each space rental the hub provides flip charts, projectors, speaker/microphone free of charge, and that the team can handle setup, catering, and promotion. Address 1131 Budapest, Babér utca 1-5 (Danubius Ház).",
+        "inference": "Capacity 50 at the top of the 20-50 range fits a 50-person event if seating configuration allows; no price is published, so cost stays unknown with a confirm-cost question. This is the trusted-venue seed tv-02, re-verified from the current official page (status unknown, not marked used).",
+        "geo": "https://budapest.impacthub.net/book-your-event-space/"
+      },
+      "latitude": 47.548166,
+      "longitude": 19.074764,
+      "cost_rate_unit": "unknown",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "cost_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "score": 0.6267,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.5,
+          "weight": 0.2,
+          "contribution": 0.1
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 0.7,
+          "weight": 0.15,
+          "contribution": 0.105
+        },
+        "recording_suitability": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 0.7167,
+          "weight": 0.1,
+          "contribution": 0.0717
+        },
+        "technical_readiness": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "event_window_fit": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "total": 0.6267
+      }
+    },
+    {
+      "name": "Impact Hub Budapest — Great Hall",
+      "city_slug": "budapest-hu",
+      "address": "1131 Budapest, Babér utca 1-5 (\"Danubius Ház\")",
+      "capacity_comfortable": 100,
+      "capacity_basis": "venue_claim",
+      "screen_status": "confirmed",
+      "wifi_status": "unknown",
+      "catering_policy": "in_house_available",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "booking_url": "https://budapest.impacthub.net/book-your-event-space/",
+      "verification_question_kinds": [
+        "cost_unknown",
+        "wifi",
+        "availability",
+        "event_window",
+        "room_assignment"
+      ],
+      "verification_questions": [
+        "Confirm the hire rate for the Great Hall for a 50-person event (no numeric price published on the official booking page).",
+        "Confirm WiFi coverage in the Great Hall (the booking page lists WiFi explicitly only for the Grund workshop room's videoconferencing kit).",
+        "Confirm availability on the chosen 2026 Saturday.",
+        "Confirm the bookable window (the page publishes no hours for the Great Hall).",
+        "Confirm the Great Hall's 100-150 person capacity can be configured for an intimate 50-person talk event with the gallery/stage layout (capacity range is venue-published)."
+      ],
+      "source_url": "https://budapest.impacthub.net/book-your-event-space/",
+      "source_title": "Book your Event Space — Impact Hub Budapest (official): Great Hall 100-150 people, historic venue with elevated stage, large built-in projector, free 2 microphones + speaker, gallery and reception area",
+      "accessed_on": "2026-08-10",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "Official Impact Hub Budapest booking page (fetched 2026-08-10) describes the Great Hall as a historic venue for conferences, panel discussions, small concerts, receptions and banquets, with a gallery overlooking the main floor, an elevated stage, a large built-in projector, and 2 microphones + a speaker provided free (technician for Dolby surround available). Capacity range 100-150 people is on the booking form.",
+        "inference": "The Great Hall is sized well above 50, so it is a comfortable fit but oversized for the target event (oversized_capacity flag expected); no price published, so cost stays unknown.",
+        "geo": "https://budapest.impacthub.net/book-your-event-space/"
+      },
+      "latitude": 47.548166,
+      "longitude": 19.074764,
+      "cost_rate_unit": "unknown",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "cost_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "score": 0.6267,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.5,
+          "weight": 0.2,
+          "contribution": 0.1
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 0.7,
+          "weight": 0.15,
+          "contribution": 0.105
+        },
+        "recording_suitability": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 0.7167,
+          "weight": 0.1,
+          "contribution": 0.0717
+        },
+        "technical_readiness": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "event_window_fit": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "total": 0.6267
+      }
+    },
+    {
+      "name": "bee@work ANKER — Conference Room (lower ground, up to 50 people)",
+      "city_slug": "budapest-hu",
+      "address": "1061 Budapest, Anker köz 2-4",
+      "capacity_comfortable": 50,
+      "capacity_basis": "venue_claim",
+      "screen_status": "unknown",
+      "wifi_status": "confirmed",
+      "catering_policy": "unknown",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": 228.78,
+      "cost_basis": "published_rate",
+      "cost_local_amount": 72000,
+      "cost_local_currency": "HUF",
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "booking_url": "https://www.bee-at-work.hu/en/meeting-room-rental",
+      "verification_question_kinds": [
+        "final_quote",
+        "screen",
+        "availability",
+        "event_window",
+        "room_assignment"
+      ],
+      "verification_questions": [
+        "Confirm the exact all-in Saturday total (published gross day rate HUF 72,000 = 228.78 USD at the ECB 2026-08-10 rate; hourly HUF 12,000; confirm whether VAT is already included in the 'gross' prices).",
+        "Confirm whether a projector/screen is included in the Conference Room rental (the page lists audio-visual equipment and reception among included services).",
+        "Confirm availability of the Conference Room on the chosen 2026 Saturday (the page lists office hours Monday-Friday 9-17; weekend availability is unstated).",
+        "Confirm the bookable window on weekends (the page's office hours are Mon-Fri 9h-17h).",
+        "Confirm the Conference Room (up to 50 people, lower ground floor) comfortably seats 50 in a talk configuration."
+      ],
+      "source_url": "https://www.bee-at-work.hu/en/meeting-room-rental",
+      "source_title": "Meeting room rental — bee@work ANKER (official): Conference Room up to 50 people (lower ground floor) HUF 12,000/hour gross, HUF 72,000/day gross; meeting rooms for 2-60 people; 100/100 fiber internet; Anker köz 2-4, 1061 Budapest",
+      "accessed_on": "2026-08-10",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "Official bee@work ANKER meeting-room page (fetched 2026-08-10, HTTP 200) publishes meeting-room rental prices (gross): Conference Room (up to 50 people, Lower Ground Floor) HUF 12,000/hour and HUF 72,000/working day; BEE room (up to 4) HUF 5,000/hour / HUF 30,000/day; BLUE room (up to 12) HUF 9,000/hour / HUF 50,000/day; included services are use of meeting rooms for 4 to 60 occupants, reception for guests, common areas, and audio-visual equipment; address Anker köz 2-4, 1061 Budapest; office hours Monday-Friday 9-17.",
+        "inference": "Day rate HUF 72,000 converts to 228.78 USD at the ECB 2026-08-10 rate, within budget; screen inclusion is listed as included AV but unconfirmed in detail, and weekend availability is not stated (event_window question).",
+        "geo": "https://www.bee-at-work.hu/en/meeting-room-rental"
+      },
+      "latitude": 47.498246,
+      "longitude": 19.055877,
+      "cost_rate_unit": "day",
+      "opening_hours": "09:00-17:00",
+      "closing_time": "17:00",
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "screen_unknown",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "score": 0.6125,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.9542,
+          "weight": 0.2,
+          "contribution": 0.1908
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "recording_suitability": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 0.7167,
+          "weight": 0.1,
+          "contribution": 0.0717
+        },
+        "technical_readiness": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "event_window_fit": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "total": 0.6125
+      }
+    },
+    {
+      "name": "Akvárium Klub — Aranyhall Conference Center",
+      "city_slug": "budapest-hu",
+      "address": "1051 Budapest, Erzsébet tér 12 (Deák Ferenc tér)",
+      "capacity_comfortable": 100,
+      "capacity_basis": "venue_claim",
+      "screen_status": "unknown",
+      "wifi_status": "unknown",
+      "catering_policy": "in_house_available",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "booking_url": "https://akvariumklub.hu/en/event-venue/",
+      "verification_question_kinds": [
+        "cost_unknown",
+        "screen",
+        "wifi",
+        "availability",
+        "room_assignment",
+        "event_window"
+      ],
+      "verification_questions": [
+        "Confirm the hire rate for a 50-person Saturday event in the Aranyhall Conference Center (no numeric price published; personalized offer within 24 hours via the form).",
+        "Confirm screen/projection availability in the conference center (the page lists full technical support but no specific screen/AV inventory).",
+        "Confirm WiFi availability (not listed on the event-venue page).",
+        "Confirm availability on the chosen 2026 Saturday.",
+        "Confirm whether the Aranyhall Conference Center's two 100-seat halls (Main Hall + Glass Hall, partitionable) can be booked individually for a 50-person event.",
+        "Confirm the bookable window on the chosen 2026 Saturday (the reviewed source publishes no opening/closing hours)."
+      ],
+      "source_url": "https://akvariumklub.hu/en/event-venue/",
+      "source_title": "Event venue — Akvárium Klub Budapest (official): Aranyhall Conference Center with two 100-seat halls (partitionable), event capacities from 50 to 1,000 guests, total venue capacity 2,100; Erzsébet tér 12",
+      "accessed_on": "2026-08-10",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "Official Akvárium Klub event-venue page (fetched 2026-08-10, HTTP 200) states the venue is suitable for events of 50-1,000 guests (conferences to standing receptions), consists of four halls usable individually or combined (Main Hall 320 m2/1,280; Small Hall 230 m2/700; Lokál 150 m2/200; Aranyhall Conference Center in a separate wing with Main Hall and Glass Hall, each 100 seats, partitionable, separate washrooms), plus Budapest's largest terrace; technical background and personalized offers within 24 hours.",
+        "inference": "The Aranyhall Conference Center (2x100 seats, partitionable) fits a 50-person event; no price published, so cost stays unknown with a quote question.",
+        "geo": "https://akvariumklub.hu/en/event-venue/"
+      },
+      "latitude": 47.498576,
+      "longitude": 19.054001,
+      "cost_rate_unit": "unknown",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "cost_unknown",
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "score": 0.6017,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.5,
+          "weight": 0.2,
+          "contribution": 0.1
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 0.7,
+          "weight": 0.15,
+          "contribution": 0.105
+        },
+        "recording_suitability": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 0.7167,
+          "weight": 0.1,
+          "contribution": 0.0717
+        },
+        "technical_readiness": {
+          "factor": 0.0,
+          "weight": 0.05,
+          "contribution": 0.0
+        },
+        "event_window_fit": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "total": 0.6017
+      }
+    },
+    {
+      "name": "Danubius Hotel Hungaria City Center — Conference & event rooms",
+      "city_slug": "budapest-hu",
+      "address": "Rákóczi út 90, 1074 Budapest",
+      "capacity_comfortable": 60,
+      "capacity_basis": "venue_claim",
+      "screen_status": "unknown",
+      "wifi_status": "unknown",
+      "catering_policy": "in_house_only",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "booking_url": "https://www.danubiushotels.com/en/our-hotels-budapest/hotel-hungaria-city-center/events-and-meetings",
+      "verification_question_kinds": [
+        "cost_unknown",
+        "screen",
+        "wifi",
+        "availability",
+        "room_assignment",
+        "event_window"
+      ],
+      "verification_questions": [
+        "Confirm the hire rate for the 60-person conference room for a Saturday event (the official meetings page publishes room capacities but no prices).",
+        "Confirm screen/projection availability in the chosen room (the official meetings page does not list AV equipment).",
+        "Confirm WiFi availability in meeting rooms (not listed on the official meetings page).",
+        "Confirm availability on the chosen 2026 Saturday.",
+        "Confirm which of the 12 event rooms (60 to 500 capacity) fits a 50-person event.",
+        "Confirm the bookable window on the chosen 2026 Saturday (the reviewed source publishes no opening/closing hours)."
+      ],
+      "source_url": "https://www.danubiushotels.com/en/our-hotels-budapest/hotel-hungaria-city-center/events-and-meetings",
+      "source_title": "Danubius Hotel Hungaria City Center — Meetings (official): 12 event rooms, 500 largest room capacity, 455 m2 largest room size; rooms from 60 to 500 max capacity; Rákóczi út 90, 1074 Budapest",
+      "accessed_on": "2026-08-10",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "Official Danubius Hotels meetings page for Hotel Hungaria City Center (fetched 2026-08-10, HTTP 200) lists 12 event rooms with capacities from 60 to 500 (e.g., rooms 11.85x6.6x3 m max 60; 15.3x6.6x3 m max 80; 17.3x11.4x2.8 m max 150; 27.5x16.5x2.8 m max 500), largest room 455 m2; contact via group reservations. No prices, AV, or WiFi details published on this page.",
+        "inference": "A 60-person-capacity conference room fits a 50-person event comfortably; cost, screen, and WiFi are unknown and remain verification questions.",
+        "geo": "https://www.danubiushotels.com/en/our-hotels-budapest/hotel-hungaria-city-center/events-and-meetings"
+      },
+      "latitude": 47.499715,
+      "longitude": 19.078776,
+      "cost_rate_unit": "unknown",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "cost_unknown",
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "score": 0.5342,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.5,
+          "weight": 0.2,
+          "contribution": 0.1
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 0.25,
+          "weight": 0.15,
+          "contribution": 0.0375
+        },
+        "recording_suitability": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 0.7167,
+          "weight": 0.1,
+          "contribution": 0.0717
+        },
+        "technical_readiness": {
+          "factor": 0.0,
+          "weight": 0.05,
+          "contribution": 0.0
+        },
+        "event_window_fit": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "total": 0.5342
+      }
+    },
+    {
+      "name": "Várkert Bazaar — Screening Room",
+      "city_slug": "budapest-hu",
+      "address": "1013 Budapest, Ybl Miklós tér 2-6 (Buda Castle foot)",
+      "capacity_comfortable": 80,
+      "capacity_basis": "venue_claim",
+      "screen_status": "unknown",
+      "wifi_status": "unknown",
+      "catering_policy": "in_house_only",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "booking_url": "https://budapestpartyservice.hu/en/rendezvenyhelyszinek/varkert-bazaar/",
+      "verification_question_kinds": [
+        "cost_unknown",
+        "screen",
+        "wifi",
+        "availability",
+        "room_assignment",
+        "event_window"
+      ],
+      "verification_questions": [
+        "Confirm the hire rate for a 50-person Saturday event (Várkert Bazaar publishes no numeric price; proposal via the venue page).",
+        "Confirm screen/projection availability in the Screening Room (the venue page mentions advanced technical capabilities but no specific AV inventory).",
+        "Confirm WiFi availability (not listed).",
+        "Confirm availability on the chosen 2026 Saturday.",
+        "Confirm whether the Screening Room (130 m2, 80-120 guests) or a smaller partition fits a 50-person event.",
+        "Confirm the bookable window on the chosen 2026 Saturday (the reviewed source publishes no opening/closing hours)."
+      ],
+      "source_url": "https://budapestpartyservice.hu/en/rendezvenyhelyszinek/varkert-bazaar/",
+      "source_title": "Várkert Bazaar — Event Venues (Budapest Party Service, official venue page): Multifunctional Event Hall 900 m2 (500-800 guests), Screening Room 130 m2 (80-120 guests), Event Hall Foyer 880 m2, Foundry Courtyard outdoor 200-500; conferences, receptions, corporate events",
+      "accessed_on": "2026-08-10",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "Budapest Party Service venue page for Várkert Bazaar (fetched 2026-08-10, HTTP 200) describes the restored neo-Renaissance complex at the foot of Buda Castle as suitable for conferences, award ceremonies, receptions and corporate events, with a Multifunctional Event Hall (900 m2, 500-800 guests), Screening Room (130 m2, 80-120 guests), Event Hall Foyer (880 m2), and Foundry Courtyard (outdoor, 200-500 guests); exclusive catering partner Budapest Party Service.",
+        "inference": "The Screening Room (80-120) is the smallest advertised space but still well above 50; cost and AV/WiFi facts are unpublished, so the venue is a lead with quote-based questions.",
+        "geo": "https://budapestpartyservice.hu/en/rendezvenyhelyszinek/varkert-bazaar/"
+      },
+      "latitude": 47.495446,
+      "longitude": 19.042321,
+      "cost_rate_unit": "unknown",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "cost_unknown",
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "score": 0.5342,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.5,
+          "weight": 0.2,
+          "contribution": 0.1
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 0.25,
+          "weight": 0.15,
+          "contribution": 0.0375
+        },
+        "recording_suitability": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 0.7167,
+          "weight": 0.1,
+          "contribution": 0.0717
+        },
+        "technical_readiness": {
+          "factor": 0.0,
+          "weight": 0.05,
+          "contribution": 0.0
+        },
+        "event_window_fit": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "total": 0.5342
+      }
+    },
+    {
+      "name": "New York Palace Budapest — Meeting & Event Rooms",
+      "city_slug": "budapest-hu",
+      "address": "1073 Budapest, Erzsébet körút 9-11",
+      "capacity_comfortable": 100,
+      "capacity_basis": "venue_claim",
+      "screen_status": "confirmed",
+      "wifi_status": "unknown",
+      "catering_policy": "in_house_only",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": 6644.13,
+      "cost_basis": "published_rate",
+      "cost_local_amount": 5750,
+      "cost_local_currency": "EUR",
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "booking_url": "https://newyorkcafe.hu/en/event-meeting/",
+      "verification_question_kinds": [
+        "final_quote",
+        "wifi",
+        "availability",
+        "room_assignment",
+        "event_window"
+      ],
+      "verification_questions": [
+        "Confirm the all-in Saturday rate for 50 people (published FULL-DAY CONFERENCE PACKAGE EUR 115/person/day = EUR 5,750 = 6,644.13 USD at the ECB 2026-08-10 rate, over the USD 5,000 soft budget; confirm VAT and any room minimums).",
+        "Confirm WiFi availability in the meeting rooms (not listed on the event-meeting page).",
+        "Confirm availability on the chosen 2026 Saturday.",
+        "Confirm which room (12 rooms from private meeting rooms to ballrooms, up to 600 guests; e.g. Rome 550, Rossini 150, Red+White Salons combined 100) fits a 50-person event.",
+        "Confirm the bookable window on the chosen 2026 Saturday (the reviewed source publishes no opening/closing hours)."
+      ],
+      "source_url": "https://newyorkcafe.hu/en/event-meeting/",
+      "source_title": "Event Meeting — New York Palace Budapest (official): 12 flexibly combinable rooms up to 600 guests; FULL-DAY CONFERENCE PACKAGE EUR 115/person/day incl. room, coffee breaks, business lunch, built-in LCD projector and screen, flipchart; Erzsébet körút 9-11",
+      "accessed_on": "2026-08-10",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "Official New York Palace event-meeting page (fetched 2026-08-10, HTTP 200) lists 12 rooms of various sizes that can be flexibly combined, from private meeting rooms to ballrooms, accommodating up to 600 guests; room examples include Rome (550 classroom/270 boardroom), Rossini (150 classroom/60 boardroom), Red Salon (can combine with White Salon for capacity of 100); the FULL-DAY CONFERENCE PACKAGE is EUR 115/person/day including conference room rental for the whole day, morning and afternoon coffee breaks, business lunch with non-alcoholic drinks, mineral water, built-in LCD projector and projection screen, and 1 flipchart; minimum 15 guests.",
+        "inference": "At EUR 115/person/day, a 50-person full-day event costs EUR 5,750 = 6,644.13 USD (ECB 2026-08-10), above the USD 5,000 soft budget (over_soft_budget flag expected); the venue is a premium fallback, not a budget-primary candidate.",
+        "geo": "https://newyorkcafe.hu/en/event-meeting/"
+      },
+      "latitude": 47.498607,
+      "longitude": 19.070698,
+      "cost_rate_unit": "package",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "over_soft_budget",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "score": 0.4592,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.0,
+          "weight": 0.2,
+          "contribution": 0.0
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 0.25,
+          "weight": 0.15,
+          "contribution": 0.0375
+        },
+        "recording_suitability": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 0.7167,
+          "weight": 0.1,
+          "contribution": 0.0717
+        },
+        "technical_readiness": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "event_window_fit": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "total": 0.4592
+      }
+    },
+    {
+      "name": "Winehub Budapest — venue (Goldberger factory)",
+      "city_slug": "budapest-hu",
+      "address": "Óbuda, Budapest (former Goldberger textile factory, Szőlő utca area)",
+      "capacity_comfortable": 200,
+      "capacity_basis": "venue_claim",
+      "screen_status": "unknown",
+      "wifi_status": "unknown",
+      "catering_policy": "in_house_only",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "booking_url": "https://winehub.hu/venue-rental/",
+      "verification_question_kinds": [
+        "cost_unknown",
+        "screen",
+        "wifi",
+        "availability",
+        "room_assignment",
+        "event_window"
+      ],
+      "verification_questions": [
+        "Confirm the hire rate for a 50-person Saturday event (Winehub publishes no numeric price; quote via the venue-rental form).",
+        "Confirm screen/projection and sound availability (not listed on the venue-rental page).",
+        "Confirm WiFi availability (not listed on the venue-rental page).",
+        "Confirm availability on the chosen 2026 Saturday.",
+        "Confirm whether the 200-250 person venue can be configured for a 50-person community event (capacity is large; smaller groups are stated as welcome).",
+        "Confirm the bookable window on the chosen 2026 Saturday (the reviewed source publishes no opening/closing hours)."
+      ],
+      "source_url": "https://winehub.hu/venue-rental/",
+      "source_title": "Venue rental — Winehub (official): Budapest's newest special event venue in the former Goldberger textile factory, total capacity 200-250 people, in-house kitchen/bistro/fine dining catering, quote on request",
+      "accessed_on": "2026-08-10",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "Official Winehub venue-rental page (fetched 2026-08-10, HTTP 200) states Winehub opened at the end of 2022 in the heart of Óbuda in the former Goldberger textile factory building, is Budapest's newest special event venue, has a total capacity of 200-250 people, is suitable for larger corporate events and also welcomes smaller groups, and offers a state-of-the-art kitchen, bistro, fine dining restaurant and in-house staff for catering.",
+        "inference": "Capacity 200-250 is far oversized for a 50-person event (oversized_capacity flag expected); no price published; recorded as an awareness/lead option with quote-based cost question.",
+        "geo": "https://winehub.hu/venue-rental/"
+      },
+      "latitude": 47.537137,
+      "longitude": 19.038157,
+      "cost_rate_unit": "unknown",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "oversized_capacity",
+        "cost_unknown",
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "score": 0.3342,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.5,
+          "weight": 0.2,
+          "contribution": 0.1
+        },
+        "capacity_fit": {
+          "factor": 0.0,
+          "weight": 0.2,
+          "contribution": 0.0
+        },
+        "catering_flexibility": {
+          "factor": 0.25,
+          "weight": 0.15,
+          "contribution": 0.0375
+        },
+        "recording_suitability": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 0.7167,
+          "weight": 0.1,
+          "contribution": 0.0717
+        },
+        "technical_readiness": {
+          "factor": 0.0,
+          "weight": 0.05,
+          "contribution": 0.0
+        },
+        "event_window_fit": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "total": 0.3342
+      }
+    },
+    {
+      "name": "Millenáris — Glass Hall (Building D)",
+      "city_slug": "budapest-hu",
+      "address": "1024 Budapest, Kis Rókus utca 16-20",
+      "capacity_comfortable": 660,
+      "capacity_basis": "venue_claim",
+      "screen_status": "unknown",
+      "wifi_status": "unknown",
+      "catering_policy": "unknown",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "booking_url": "https://2023.millenaris.hu/en/venue-rental/",
+      "verification_question_kinds": [
+        "cost_unknown",
+        "screen",
+        "wifi",
+        "availability",
+        "room_assignment"
+      ],
+      "verification_questions": [
+        "Confirm the hire rate for a 50-person event in the Glass Hall or a smaller bookable unit (no numeric price published; venue rental is quote-based).",
+        "Confirm screen/projection and sound availability for the chosen hall (not listed on the venue-rental page).",
+        "Confirm WiFi availability (not listed on the venue-rental page).",
+        "Confirm availability on the chosen 2026 Saturday.",
+        "Confirm whether the venue can allocate a smaller partitioned area for 50 people (Glass Hall capacity is 600-800; Great Hall approx. 1,200-1,500)."
+      ],
+      "source_url": "https://2023.millenaris.hu/en/venue-rental/",
+      "source_title": "Venue rental — Millenáris (official): Great Hall (B), Glass Hall (D), National Dance Theatre; open daily 06:00-23:00; Kis Rókus utca 16-20, 1024 Budapest; capacities approx. 600-800 (Glass Hall) to 2,500 (Great Hall)",
+      "accessed_on": "2026-08-10",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "Official Millenáris venue-rental page (fetched 2026-08-10, HTTP 200) lists the Great Hall (B), Glass Hall (D), and National Dance Theatre with venue services (event security, coordinator, cleaning, catering, event technology, IT); open daily 06:00-23:00; address Kis Rókus utca 16-20, 1024 Budapest. Budapest Party Service venue page (fetched same day) gives capacities: Great Hall approx. 1,200-1,500 guests (approx. 5,200 m2), Glass Hall approx. 600-800 guests (approx. 1,680 m2).",
+        "inference": "Millenáris is a large conference/exhibition venue; its smallest advertised hall (Glass Hall, 600-800) is far oversized for a 50-person event, so it is recorded as a lead-level awareness option with an oversize flag, not a primary candidate.",
+        "geo": "https://2023.millenaris.hu/en/venue-rental/"
+      },
+      "latitude": 47.511596,
+      "longitude": 19.025389,
+      "cost_rate_unit": "unknown",
+      "opening_hours": "06:00-23:00",
+      "closing_time": "23:00",
+      "max_booking_hours": null,
+      "event_window_status": "allows_to_6",
+      "event_window_evidence": {
+        "url": "https://2023.millenaris.hu/en/venue-rental/",
+        "title": "Venue rental — Millenáris (official)",
+        "accessed_on": "2026-08-10",
+        "claim": "The official venue-rental page states the venue is open every day 06:00-23:00, so an event ending at 18:00 is supported (allows_to_6)."
+      },
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "oversized_capacity",
+        "cost_unknown",
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "stale_evidence"
+      ],
+      "score": 0.3217,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.5,
+          "weight": 0.2,
+          "contribution": 0.1
+        },
+        "capacity_fit": {
+          "factor": 0.0,
+          "weight": 0.2,
+          "contribution": 0.0
+        },
+        "catering_flexibility": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "recording_suitability": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 0.7167,
+          "weight": 0.1,
+          "contribution": 0.0717
+        },
+        "technical_readiness": {
+          "factor": 0.0,
+          "weight": 0.05,
+          "contribution": 0.0
+        },
+        "event_window_fit": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "total": 0.3217
+      }
+    }
+  ],
+  "lead": [
+    {
+      "name": "Brody House — Private events & space rental",
+      "city_slug": "budapest-hu",
+      "address": "Bródy Sándor utca 10, 1088 Budapest",
+      "capacity_comfortable": 0,
+      "capacity_basis": "unknown",
+      "screen_status": "unknown",
+      "wifi_status": "unknown",
+      "catering_policy": "unknown",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "booking_url": "https://www.brody.house/events",
+      "verification_question_kinds": [
+        "cost_unknown",
+        "capacity",
+        "screen",
+        "wifi",
+        "availability",
+        "event_window"
+      ],
+      "verification_questions": [
+        "Confirm the private-event/space-rental rate for a 50-person Saturday event (Brody House publishes no numeric price; enquiries via events@brody.house).",
+        "Confirm capacity for 50 attendees (the events page and rental contact do not publish a capacity figure).",
+        "Confirm screen/projection availability (not listed).",
+        "Confirm WiFi availability (not listed on the events page).",
+        "Confirm availability on the chosen 2026 Saturday.",
+        "Confirm the bookable window on the chosen 2026 Saturday (the reviewed source publishes no opening/closing hours)."
+      ],
+      "source_url": "https://www.brody.house/events",
+      "source_title": "Events — Brody House Budapest (official): private events & space rental (events@brody.house), galleries/rooms across the house; Bródy Sándor utca 10, 1088 Budapest",
+      "accessed_on": "2026-08-10",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "Official Brody House events page (fetched 2026-08-10, HTTP 200) lists a public cultural events calendar (exhibitions, concerts, quiz nights, parties) and a 'Private events & space rental' contact (events@brody.house) for renting rooms, quarters, an entire floor, or the whole house; the house terms page describes 8 double bedrooms with en-suite bathrooms, private kitchens and several living spaces; address Bródy Sándor utca 10, 1088 Budapest.",
+        "inference": "Brody House is a boutique hotel/gallery with rentable spaces but publishes no capacity, price, screen, or WiFi facts on the pages reviewed; it remains an evidence-bound lead with verification questions.",
+        "geo": "https://www.brody.house/events"
+      },
+      "latitude": 47.492337,
+      "longitude": 19.063116,
+      "cost_rate_unit": "unknown",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "venue_tier": "lead",
+      "tier_reasons": [
+        "material verification question(s): capacity",
+        "capacity_comfortable 0 below minimum 40"
+      ],
+      "venue_flags": [
+        "cost_unknown",
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "score": null,
+      "score_breakdown": null
+    },
+    {
+      "name": "Eco Office Budapest — Large Meeting Room",
+      "city_slug": "budapest-hu",
+      "address": "Izabella utca 68/b, Terézváros, Budapest (Eco-Office complex)",
+      "capacity_comfortable": 14,
+      "capacity_basis": "venue_claim",
+      "screen_status": "confirmed",
+      "wifi_status": "confirmed",
+      "catering_policy": "unknown",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": 203.36,
+      "cost_basis": "estimated_from_rate",
+      "cost_local_amount": 8000,
+      "cost_local_currency": "HUF",
+      "hourly_rate_usd": 25.4201,
+      "estimated_hours": 8,
+      "rate_estimate_note": "Official Eco Office page (fetched 2026-08-10) publishes the Large Meeting Room at 8,000 HUF/hour for 7-14 people (6,000 HUF/hour for 2-6); 8-hour estimate = 64,000 HUF converted at the ECB 2026-08-10 reference rate USD 1 = 314.71 HUF = 203.36 USD. Not a written quote.",
+      "booking_url": "https://eco-office.hu/en/meeting-rooms/",
+      "verification_question_kinds": [
+        "cost",
+        "capacity",
+        "availability",
+        "event_window",
+        "final_quote"
+      ],
+      "verification_questions": [
+        "Confirm whether the 7-14 person Large Meeting Room can be combined with the adjacent rooms/loft space to seat 50 (the room alone is far below the 50-person target).",
+        "Confirm the all-in Saturday total including VAT and any minimums (published 8,000 HUF/hour for 7-14 people; 8-hour estimate 203.36 USD at the documented rate).",
+        "Confirm availability on the chosen 2026 Saturday (the space is open 24/7 per the page; weekend rates are unstated).",
+        "Confirm the 24/7 opening supports a 09:00-17:00 event (the page states open 24/7 and no maximum booking time).",
+        "Confirm whether the published hourly rate stands for a full Saturday booking and whether any weekend minimum or cleaning fee applies (published 8,000 HUF/hour for 7-14 people; 8-hour estimate 203.36 USD at the documented ECB 2026-08-10 rate)."
+      ],
+      "source_url": "https://eco-office.hu/en/meeting-rooms/",
+      "source_title": "Meeting Room & Office Rental Budapest — Eco Office (official): Large Meeting Room 2-14 people, 6,000-8,000 HUF/hour, projector + projection screen, flipchart, Gigabit Wi-Fi, unlimited coffee/tea/water, open 24/7, no maximum booking time",
+      "accessed_on": "2026-08-10",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "Official Eco Office meeting-rooms page (fetched 2026-08-10, HTTP 200) lists the Large Meeting Room (35 m2, basement) for 2-14 people at 6,000 HUF/hour (2-6 people) or 8,000 HUF/hour (7-14 people), with projector, large projection screen, flipchart, sound system, unlimited coffee/tea/water; page states instant online booking, no maximum booking time, open 24/7, and Gigabit Wi-Fi; address Izabella utca 68/b, Budapest (Eco-Office complex, 7 min from Oktogon).",
+        "inference": "The room alone seats at most 14, so it cannot host a 50-person event by itself; recorded as an evidence-bound lead with a combination question rather than discarded, per the no-price-ceiling and no-deletion rules.",
+        "geo": "https://eco-office.hu/en/meeting-rooms/"
+      },
+      "latitude": 47.508819,
+      "longitude": 19.065683,
+      "cost_rate_unit": "hour",
+      "opening_hours": "00:00-24:00",
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "allows_to_6",
+      "event_window_evidence": {
+        "url": "https://eco-office.hu/en/meeting-rooms/",
+        "title": "Meeting Room & Office Rental Budapest — Eco Office (official)",
+        "accessed_on": "2026-08-10",
+        "claim": "The official page states the space is open 24/7 with no maximum booking time, so an event ending at 18:00 is supported (allows_to_6)."
+      },
+      "hourly_rate_local": 8000,
+      "rate_currency": "HUF",
+      "venue_tier": "lead",
+      "tier_reasons": [
+        "material verification question(s): capacity, cost",
+        "capacity_comfortable 14 below minimum 40"
+      ],
+      "venue_flags": [
+        "availability_unconfirmed",
+        "final_quote_required",
+        "stale_evidence"
+      ],
+      "score": null,
+      "score_breakdown": null
+    },
+    {
+      "name": "KUBIK Coworking — Meeting rooms",
+      "city_slug": "budapest-hu",
+      "address": "1137 Budapest, Jászai Mari tér 5-6",
+      "capacity_comfortable": 0,
+      "capacity_basis": "unknown",
+      "screen_status": "unknown",
+      "wifi_status": "confirmed",
+      "catering_policy": "unknown",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "booking_url": "https://kubik.hu/en/",
+      "verification_question_kinds": [
+        "cost_unknown",
+        "capacity",
+        "screen",
+        "availability",
+        "room_assignment",
+        "event_window"
+      ],
+      "verification_questions": [
+        "Confirm meeting-room rental rates for a 50-person event (KUBIK publishes no numeric meeting-room prices on the reviewed page).",
+        "Confirm meeting-room capacity (the homepage lists meeting rooms bookable by hour/day but no capacity figures).",
+        "Confirm screen availability in the meeting rooms (not listed on the homepage).",
+        "Confirm availability on the chosen 2026 Saturday.",
+        "Confirm whether multiple meeting rooms can be combined for a 50-person event (reception is available weekdays 9-18; 24/7 card access for members).",
+        "Confirm the bookable window on the chosen 2026 Saturday (the reviewed source publishes no opening/closing hours)."
+      ],
+      "source_url": "https://kubik.hu/en/",
+      "source_title": "KUBIK Coworking Budapest (official): coworking, meeting rooms bookable by hour or whole day, high-speed WiFi, reception weekdays 9-18, 24/7 member access; Jászai Mari tér 5-6, 1137 Budapest",
+      "accessed_on": "2026-08-10",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "Official KUBIK Coworking homepage (fetched 2026-08-10, HTTP 200) describes a coworking space in the heart of Budapest (Jászai Mari tér 5-6, 1137) with meeting rooms bookable by the hour or for the whole day, 30 workstations, fully equipped kitchen, phone booths, high-speed wireless broadband internet, reception weekdays 9-18, 24/7 card access, and regular professional events.",
+        "inference": "KUBIK offers meeting rooms and an event space, but the reviewed page publishes no meeting-room capacity, price, or screen facts, so the record is an evidence-bound lead pending a room-specific page.",
+        "geo": "https://kubik.hu/en/"
+      },
+      "latitude": 47.514242,
+      "longitude": 19.047881,
+      "cost_rate_unit": "unknown",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "venue_tier": "lead",
+      "tier_reasons": [
+        "material verification question(s): capacity",
+        "capacity_comfortable 0 below minimum 40"
+      ],
+      "venue_flags": [
+        "cost_unknown",
+        "screen_unknown",
+        "availability_unconfirmed",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "score": null,
+      "score_breakdown": null
+    },
+    {
+      "name": "Pesti Vigadó — Ceremonial Hall (conference)",
+      "city_slug": "budapest-hu",
+      "address": "1051 Budapest, Vigadó tér 2",
+      "capacity_comfortable": 0,
+      "capacity_basis": "unknown",
+      "screen_status": "unknown",
+      "wifi_status": "unknown",
+      "catering_policy": "unknown",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "booking_url": "https://vir.vigado.hu/web/en/135",
+      "verification_question_kinds": [
+        "cost_unknown",
+        "capacity",
+        "screen",
+        "wifi",
+        "availability",
+        "event_window"
+      ],
+      "verification_questions": [
+        "Confirm the hire rate for a 50-person Saturday event in the Ceremonial Hall (Pesti Vigadó publishes no numeric price on the reviewed pages).",
+        "Confirm the Ceremonial Hall's capacity for a 50-person event (the official hall page publishes no capacity figure).",
+        "Confirm screen/projection availability (not listed on the official hall page).",
+        "Confirm WiFi availability (not listed).",
+        "Confirm availability on the chosen 2026 Saturday.",
+        "Confirm the bookable window on the chosen 2026 Saturday (the reviewed source publishes no opening/closing hours)."
+      ],
+      "source_url": "https://vir.vigado.hu/web/en/135",
+      "source_title": "Ceremonial Hall — Pesti Vigadó (official venue page): second-floor historic hall for concerts, cultural events, conferences, standing/seated receptions and gala dinners; Vigadó tér 2, 1051 Budapest",
+      "accessed_on": "2026-08-10",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "Official Pesti Vigadó Ceremonial Hall page (fetched 2026-08-10, HTTP 200) describes the second-floor hall as an excellent venue for concerts, cultural events, conferences, standing and seated receptions, gala dinners and similar events; the venue also lists Makovecz Hall, Northern/Southern Halls, and Sinkovits Imre Chamber Theatre among its bookable spaces; address Vigadó tér 2, 1051 Budapest.",
+        "inference": "Pesti Vigadó is a prestigious historic conference venue but publishes no capacity, price, screen, or WiFi facts on the reviewed pages; it remains an evidence-bound lead pending a quote.",
+        "geo": "https://vir.vigado.hu/web/en/135"
+      },
+      "latitude": 47.495756,
+      "longitude": 19.049531,
+      "cost_rate_unit": "unknown",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "venue_tier": "lead",
+      "tier_reasons": [
+        "material verification question(s): capacity",
+        "capacity_comfortable 0 below minimum 40"
+      ],
+      "venue_flags": [
+        "cost_unknown",
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "score": null,
+      "score_breakdown": null
+    },
+    {
+      "name": "Regus Budapest First Site — Frankfurt room",
+      "city_slug": "budapest-hu",
+      "address": "Kossuth Lajos utca 7-9, 1053 Budapest",
+      "capacity_comfortable": 0,
+      "capacity_basis": "unknown",
+      "screen_status": "confirmed",
+      "wifi_status": "confirmed",
+      "catering_policy": "unknown",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": 193.49,
+      "cost_basis": "published_rate",
+      "cost_local_amount": 60894,
+      "cost_local_currency": "HUF",
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "booking_url": "https://book.workin.space/en/hungary/budapest/meeting-room",
+      "verification_question_kinds": [
+        "cost",
+        "capacity",
+        "availability",
+        "event_window",
+        "room_assignment"
+      ],
+      "verification_questions": [
+        "Confirm the capacity of the Frankfurt room at Regus Budapest First Site for a 50-person event (the workin.space listing groups it in the 11-20 people training-room category; exact capacity not stated on the reviewed listing).",
+        "Confirm the all-in Saturday total including VAT (workin.space lists day rate HUF 60,894 excl. VAT = 193.49 USD at the ECB 2026-08-10 rate; hourly HUF 10,900).",
+        "Confirm availability on the chosen 2026 Saturday.",
+        "Confirm the bookable window (workin.space default day 9h-17h; weekend availability unstated).",
+        "Confirm whether the room can be combined with an adjacent room for a 50-person event."
+      ],
+      "source_url": "https://book.workin.space/en/hungary/budapest/meeting-room",
+      "source_title": "Meeting rooms for rent in Budapest — workin.space (booking platform): Regus BUDAPEST First Site, Kossuth Lajos utca 7-9, 1053; Frankfurt room listed in the 11-20 people training category at HUF 10,900/hour, HUF 60,894/day (excl. VAT) with Wi-Fi, Screen, Reception",
+      "accessed_on": "2026-08-10",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "workin.space Budapest meeting-room listing (fetched 2026-08-10, HTTP 200) lists the Frankfurt room at Regus BUDAPEST First Site, Kossuth Lajos utca 7-9, 1053, in the 'Large meeting rooms / Training rooms (11 to 20 people)' category with Wi-Fi, Screen, Reception amenities, HUF 10,900/hour, HUF 34,709/half-day, HUF 60,894/day (excl. VAT).",
+        "inference": "The room is a mid-size training room (11-20 category) that is likely below the 50-person target; exact capacity is not published on the reviewed listing, so capacity stays unknown (lead) and cost is recorded at the published day rate.",
+        "geo": "https://book.workin.space/en/hungary/budapest/meeting-room"
+      },
+      "latitude": 47.493557,
+      "longitude": 19.058397,
+      "cost_rate_unit": "day",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "venue_tier": "lead",
+      "tier_reasons": [
+        "material verification question(s): capacity, cost",
+        "capacity_comfortable 0 below minimum 40"
+      ],
+      "venue_flags": [
+        "availability_unconfirmed",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "score": null,
+      "score_breakdown": null
+    },
+    {
+      "name": "Signature Budapest — MR 01 (Szervita Square)",
+      "city_slug": "budapest-hu",
+      "address": "Szervita square 8, 1052 Budapest",
+      "capacity_comfortable": 0,
+      "capacity_basis": "unknown",
+      "screen_status": "confirmed",
+      "wifi_status": "confirmed",
+      "catering_policy": "unknown",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": 353.25,
+      "cost_basis": "published_rate",
+      "cost_local_amount": 111173,
+      "cost_local_currency": "HUF",
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "booking_url": "https://book.workin.space/en/hungary/budapest/meeting-room",
+      "verification_question_kinds": [
+        "cost",
+        "capacity",
+        "availability",
+        "event_window",
+        "room_assignment"
+      ],
+      "verification_questions": [
+        "Confirm the capacity of MR 01 at Signature Budapest for a 50-person event (the workin.space listing shows Wi-Fi/Screen/Reception but the room is in the 21+ category and exact capacity is not stated on the reviewed listing page).",
+        "Confirm the all-in Saturday total including VAT (workin.space lists day rate HUF 111,173 excl. VAT = 353.25 USD at the ECB 2026-08-10 rate; hourly HUF 19,900).",
+        "Confirm availability on the chosen 2026 Saturday.",
+        "Confirm the bookable window (workin.space default day 9h-17h; weekend availability unstated).",
+        "Confirm the room can be configured for a 50-person talk event if capacity allows."
+      ],
+      "source_url": "https://book.workin.space/en/hungary/budapest/meeting-room",
+      "source_title": "Meeting rooms for rent in Budapest — workin.space (booking platform): Signature Budapest, Szervita square 8, 1052; MR 01 listed in the 21+ event/conference category at HUF 19,900/hour, HUF 111,173/day (excl. VAT) with Wi-Fi, Screen, Reception",
+      "accessed_on": "2026-08-10",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "workin.space Budapest meeting-room listing (fetched 2026-08-10, HTTP 200) lists MR 01 at Signature Budapest, Szervita square 8, 1052, in the 'Event spaces / Conference rooms (21+ people)' category with Wi-Fi, Screen, Reception amenities, HUF 19,900/hour, HUF 63,369/half-day, HUF 111,173/day (excl. VAT).",
+        "inference": "The room is a corporate conference room in the 21+ capacity band, but exact capacity is not published on the reviewed listing, so capacity stays unknown (lead) and cost is recorded at the published day rate.",
+        "geo": "https://book.workin.space/en/hungary/budapest/meeting-room"
+      },
+      "latitude": 47.49565,
+      "longitude": 19.052993,
+      "cost_rate_unit": "day",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "venue_tier": "lead",
+      "tier_reasons": [
+        "material verification question(s): capacity, cost",
+        "capacity_comfortable 0 below minimum 40"
+      ],
+      "venue_flags": [
+        "availability_unconfirmed",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "score": null,
+      "score_breakdown": null
+    }
+  ]
+}

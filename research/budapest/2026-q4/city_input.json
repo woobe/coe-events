@@ -1,0 +1,30 @@
+{
+  "city_slug": "budapest-hu",
+  "city_name": "Budapest",
+  "country": "Hungary",
+  "target_date": "2026-09-26",
+  "date_window": "2026-09-19 through 2026-10-31; candidate Saturdays: 2026-09-19, 2026-09-26, 2026-10-03, 2026-10-10, 2026-10-17, 2026-10-24, 2026-10-31",
+  "target_attendance": 50,
+  "currency": "HUF",
+  "currency_assumptions": [
+    "Costs retain their published local amount and ISO code: HUF where the venue publishes HUF (Impact Hub, Loffice, bee@work ANKER, Eco Office, KUBIK, Danubius, Signature Budapest, Regus Budapest); EUR where the venue publishes EUR (KAPTÁR Coworking, New York Palace — both publish euro-denominated rates).",
+    "HUF-to-USD conversion: ECB euro foreign exchange reference rates, retrieved 2026-08-10 (ECB daily feed, https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml): EUR 1 = USD 1.1555 and EUR 1 = HUF 363.65, therefore USD 1 = HUF 314.71 (computed 363.65 / 1.1555) and 1 HUF = USD 0.00317751. This is a documented, date-stamped source rate; it is a planning conversion, not a bank/venue quote.",
+    "EUR-to-USD conversion for EUR-published venues uses the same ECB 2026-08-10 reference: EUR 1 = USD 1.1555.",
+    "All USD estimates are derived 8-hour or published-rate calculations labeled in evidence.inference and rate_estimate_note; +VAT and weekend surcharges are preserved as verification questions where the page does not show them included."
+  ],
+  "workflow_phase": "venue",
+  "budget_usd": 5000.0,
+  "event_duration_hours": 8,
+  "decision_note": "target_date set to the recommended Saturday 2026-09-26. Per Joe's 2026-08-10 instruction ('Don't worry too much about the date. Just continue.'), the bundle carries a concrete recommended date so the summary can render. The plan's date-recommendation logic and the plan/recommendation section name no preferred Saturday for Budapest (recommendation.selected_venue is null; the plan states Joe has not selected a date and calendar flags never choose one), so the default recommendation 2026-09-26 is used and noted here (cleanest candidate: no calendar flag overlaps that Saturday; same default as the NYC 2026-09-26 precedent). This is a recommendation for summary display only — Joe decides later whether to book.",
+  "research_completed_on": "2026-08-10",
+  "open_questions": [
+    "Impact Hub Budapest (tv-02) and Loffice Budapest (tv-03) are the trusted-venue seeds for budapest-hu; both were re-verified from current official pages on 2026-08-10 and are included as candidate records (status not marked used).",
+    "Budapest Fintech Week 2026: the official Luma page confirms the event is returning in 2026 but publishes no dates yet (program TBA); the 2025 edition ran December 4-5. Recorded as a recurring November/December signal, not a dated conflict.",
+    "SPAR Budapest Marathon 2026 runs October 10-11; candidate Saturday 2026-10-10 falls inside the festival weekend, so 10-10 carries a citywide transport/street-closure awareness flag for Joe.",
+    "Hungarian-only official venue/event pages (e.g. MOM Kulturális Központ, Bálna Budapest) were out of the English-only scope; their existence is logged as a discovery gap, not translated evidence."
+  ],
+  "recommendation": {
+    "selected_venue": null,
+    "rationale": "Run A evidence package only. Venue selection deferred: a later deterministic pipeline card scores venues and assembles the venue-phase bundle; Joe selects from eligible/shortlist_ready results. Recommended date 2026-09-26 is carried in target_date (see decision_note) for summary rendering; Joe confirms the date before booking."
+  }
+}

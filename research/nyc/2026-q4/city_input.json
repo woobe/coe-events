@@ -1,0 +1,24 @@
+{
+  "city_slug": "new-york-ny-us",
+  "city_name": "New York",
+  "country": "United States",
+  "target_date": "2026-09-26",
+  "date_window": "2026-09-19 to 2026-10-31 (candidate Saturdays: 2026-09-19, 2026-09-26, 2026-10-03, 2026-10-10, 2026-10-17, 2026-10-24, 2026-10-31)",
+  "target_attendance": 50,
+  "currency": "USD",
+  "currency_assumptions": [],
+  "workflow_phase": "venue",
+  "budget_usd": 5000.0,
+  "event_duration_hours": 8,
+  "decision_note": null,
+  "research_completed_on": "2026-08-09",
+  "open_questions": [
+    "No NYC city-slug match in references/trusted_venues.json (zero trusted-venue match, reported honestly as a provenance result).",
+    "Messari Mainnet 2026 dates were unconfirmed at research time; treat calendar flags as informational for Joe, never eliminations.",
+    "NYC is a high-cost market: many listed venues are inquiry-only or above the USD 5,000 soft budget; all-in totals (taxes, fees, AV, F&B) remain verification questions until a written quote."
+  ],
+  "recommendation": {
+    "selected_venue": null,
+    "rationale": "Run A evidence package only. Venue selection deferred: a later deterministic pipeline card scores venues and assembles the venue-phase bundle; Joe selects from eligible/shortlist_ready results."
+  }
+}

@@ -1,0 +1,122 @@
+[
+  {
+    "event_name": "SPAR Budapest Marathon 2026 (41st)",
+    "city_slug": "budapest-hu",
+    "start_date": "2026-10-10",
+    "end_date": "2026-10-11",
+    "relevance": "other",
+    "conflict_severity": "high",
+    "source_url": "https://marathon.runinbudapest.com/",
+    "source_title": "41st SPAR Budapest Marathon — official homepage: SAVE THE DATE October 10-11, 2026, Hungary's largest sports event",
+    "accessed_on": "2026-08-10",
+    "needs_human_verify": true,
+    "verification_questions": [
+      "Confirm the final 2026 route, street-closure schedule, and public-transport changes with the organizers and BKK before planning any event activity on candidate Saturday 2026-10-10 (the marathon festival weekend runs October 10-11 with the marathon itself on Sunday October 11).",
+      "Assess whether Saturday 10-10 carries practical downtown access effects for a 50-person community event (informational flag for Joe; not an elimination)."
+    ],
+    "evidence": {
+      "observed_facts": "Official organizer homepage (marathon.runinbudapest.com, fetched 2026-08-10) states 'SAVE THE DATE: october 10-11, 2026. 41TH SPAR BUDAPEST MARATHON - The Day of Running - Hungary's largest sports event'; the dedicated 2026 page (marathon.runinbudapest.com/spar-budapest-marathon-2026/) confirms 'Your finish line is October 11, 2026'.",
+      "inference": "The festival weekend (Oct 10-11) contains candidate Saturday 2026-10-10, so citywide road closures, tram/bus diversions, and large crowds are likely that weekend. This is a Joe-awareness logistics flag, not a venue-score input and not a date elimination."
+    }
+  },
+  {
+    "event_name": "IEEE Tech Summit: Ethical AI 2026 (Budapest)",
+    "city_slug": "budapest-hu",
+    "start_date": "2026-10-01",
+    "end_date": "2026-10-02",
+    "relevance": "ai",
+    "conflict_severity": "medium",
+    "source_url": "https://techsummit.ieee.org/ethical-ai-2026/",
+    "source_title": "Ethical AI Tech Summit Budapest 2026 — official IEEE page: 1-2 October 2026, Budapest, Hungary, two-day AI governance summit",
+    "accessed_on": "2026-08-10",
+    "needs_human_verify": true,
+    "verification_questions": [
+      "Confirm the IEEE Ethical AI Tech Summit's venue and any satellite community events in Budapest on October 1-2, 2026 (the official page publishes the dates and city but not yet the venue).",
+      "Assess audience adjacency: an ethics/governance AI audience overlaps the AI/Web3 community for a DeAI Day on adjacent candidate Saturday 2026-10-03."
+    ],
+    "evidence": {
+      "observed_facts": "Official IEEE Tech Summit page (techsummit.ieee.org/ethical-ai-2026/, fetched 2026-08-10) states '1-2 October 2026 | Budapest, Hungary' for the two-day 2026 IEEE Tech Summit: Ethical AI, covering bias/fairness, AI policy and regulation, privacy, misinformation, transparency, accountability, and human-centered AI.",
+      "inference": "A two-day institutional AI event immediately before candidate Saturday 2026-10-03 creates an AI-ecosystem cluster in Budapest that week; recorded as a medium awareness flag for Joe (informational, never an elimination)."
+    }
+  },
+  {
+    "event_name": "ScaleupFest 2026",
+    "city_slug": "budapest-hu",
+    "start_date": "2026-09-16",
+    "end_date": "2026-09-17",
+    "relevance": "other",
+    "conflict_severity": "low",
+    "source_url": "https://thescaleupfest.com/",
+    "source_title": "The Scaleup Fest 2026 — official: September 16-17, 2026, Budapest, curated CEE scaleup & investor conference (~250 participants)",
+    "accessed_on": "2026-08-10",
+    "needs_human_verify": true,
+    "verification_questions": [
+      "Confirm ScaleupFest 2026 dates and the final venue list (official page publishes September 16-17, 2026, Budapest, 'multiple venues in downtown Budapest' with details pending).",
+      "Assess whether the startup/investor crowd generates side events near candidate Saturday 2026-09-19."
+    ],
+    "evidence": {
+      "observed_facts": "Official ScaleupFest page (thescaleupfest.com, fetched 2026-08-10) states 'September 16-17, 2026 | Budapest | Hungary', positions itself as a curated CEE scaleup/investor conference for around 250 selected founders, operators, investors and tech leaders, and confirms the programme runs across several venues in downtown Budapest.",
+      "inference": "A mid-September startup/investor event adds local ecosystem activity before candidate Saturday 2026-09-19; recorded as a low-severity awareness flag for Joe."
+    }
+  },
+  {
+    "event_name": "AI Forward '26 (Nokia)",
+    "city_slug": "budapest-hu",
+    "start_date": "2026-10-21",
+    "end_date": "2026-10-21",
+    "relevance": "ai",
+    "conflict_severity": "low",
+    "source_url": "https://techforward.hu/",
+    "source_title": "AI Forward Conference — official: AI Forward is coming to Budapest on 21st October 2026 at MVM Dome",
+    "accessed_on": "2026-08-10",
+    "needs_human_verify": true,
+    "verification_questions": [
+      "Confirm AI Forward '26 final date and venue (official page states 21 October 2026 at MVM Dome, Budapest) and whether registration/side programming is open to community attendees.",
+      "Assess audience adjacency to candidate Saturdays 2026-10-17 and 2026-10-24."
+    ],
+    "evidence": {
+      "observed_facts": "Official AI Forward Conference page (techforward.hu, fetched 2026-08-10) states 'AI Forward is coming to Budapest on 21st October 2026 at MVM Dome!' and describes a Nokia-branded conference for engineers, innovators and business professionals exploring AI applications.",
+      "inference": "A single-day corporate AI conference in Budapest on a Wednesday is low same-day overlap with candidate Saturdays; recorded as an awareness signal for the late-October cluster."
+    }
+  },
+  {
+    "event_name": "EMNLP 2026 (Budapest)",
+    "city_slug": "budapest-hu",
+    "start_date": "2026-10-24",
+    "end_date": "2026-10-29",
+    "relevance": "ml",
+    "conflict_severity": "medium",
+    "source_url": "https://2026.emnlp.org/",
+    "source_title": "EMNLP 2026 — official conference site: October 24-29, 2026, Budapest, Hungary (main conference dates for workshops/tutorials TBD)",
+    "accessed_on": "2026-08-10",
+    "needs_human_verify": true,
+    "verification_questions": [
+      "Confirm the EMNLP 2026 venue and workshop/tutorial schedule in Budapest (official site publishes Oct 24-29, Budapest; zplatform.ai lists Hungexpo as the venue but the official site does not yet name it).",
+      "Assess audience adjacency: the NLP research community overlaps AI/ML enthusiasts for a DeAI Day on candidate Saturday 2026-10-24 (the conference runs through that Saturday)."
+    ],
+    "evidence": {
+      "observed_facts": "Official EMNLP 2026 site (2026.emnlp.org, fetched 2026-08-10) states the conference will be held in Budapest, Hungary from October 24th to October 29th, 2026; the FinNLP workshop page (sigfintech.github.io/finnlp2026) independently confirms FinNLP-2026 @ EMNLP-2026, October 24-29, 2026, Budapest, with its workshop day on October 28.",
+      "inference": "Candidate Saturday 2026-10-24 falls inside the EMNLP 2026 window, so an international NLP/AI research audience will be in Budapest that weekend; recorded as a medium awareness flag for Joe (informational, not an elimination)."
+    }
+  },
+  {
+    "event_name": "MeOut Summit 2026",
+    "city_slug": "budapest-hu",
+    "start_date": "2026-11-25",
+    "end_date": "2026-11-26",
+    "relevance": "other",
+    "conflict_severity": "low",
+    "source_url": "https://meoutsummit.com/",
+    "source_title": "MeOut Summit 2026 — official: Central European startup conference, Budapest, November 25-26, 2026, at Akvárium Klub (2,000+ founders, investors, corporate leaders)",
+    "accessed_on": "2026-08-10",
+    "needs_human_verify": true,
+    "verification_questions": [
+      "Confirm MeOut Summit 2026 dates and venue with the organizer (official page states November 25-26, 2026; Akvárium Klub is cited by event listings).",
+      "This November record is informational awareness only; no candidate Saturday falls in November, so it is not a venue-candidate-date conflict."
+    ],
+    "evidence": {
+      "observed_facts": "Official MeOut Summit page (meoutsummit.com, fetched 2026-08-10) states 'MeOut Summit 2026 | Central European Startup Conference, Budapest' and 'Join 2,000+ startup founders, investors, and corporate leaders at the MeOut Summit 2026 in Budapest on November 25-26'; AllEvents and happeningnext list Akvárium Klub as the venue.",
+      "inference": "A large startup ecosystem event in late November is outside the candidate Saturday window and is recorded as an awareness-only signal for the 09-15..12-15 coverage window."
+    }
+  }
+]

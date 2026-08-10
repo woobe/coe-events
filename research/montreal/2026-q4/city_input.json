@@ -1,0 +1,27 @@
+{
+  "city_slug": "montreal-qc-ca",
+  "city_name": "Montreal",
+  "country": "Canada",
+  "target_date": "2026-10-03",
+  "date_window": "2026-09-19 to 2026-10-31 (candidate Saturdays: 2026-09-19, 2026-09-26, 2026-10-03, 2026-10-10, 2026-10-17, 2026-10-24, 2026-10-31)",
+  "target_attendance": 50,
+  "currency": "CAD",
+  "currency_assumptions": [
+    "Planning estimate only: CAD 1.00 = USD 0.72 (research-time manual conversion assumption, documented in source_uncertainty_notes.md), applied ONLY where a venue record carries an estimated_cost_usd. Eventective amounts are retained as CAD because each listing page's embedded schema.org structured data (JSON-LD) declares priceCurrency CAD (verified full-page 2026-08-09); Tagvenue amounts use the C$ marker on-page. Versa Loft's page renders only '175$/h' with no CAD declaration, so its cost is null/unknown pending a written quote. All CAD-local amounts are preserved in cost_local_amount + cost_local_currency CAD. Confirm the live rate, taxes, and fees before booking."
+  ],
+  "workflow_phase": "venue",
+  "budget_usd": 5000.0,
+  "event_duration_hours": 8,
+  "decision_note": null,
+  "research_completed_on": "2026-08-09",
+  "open_questions": [
+    "No montreal-qc-ca city-slug match in references/trusted_venues.json (12 seed records across 9 city slugs; toronto-ca Startuptive is the only Canadian record and is NOT a Montreal match). Zero-match reported honestly as a provenance result.",
+    "Montreal prices are published in CAD; USD conversion uses the documented CAD 1.00 = USD 0.72 planning estimate only where estimated_cost_usd is set. Currency evidence: Eventective pages embed schema.org JSON-LD declaring priceCurrency CAD (verified full-page 2026-08-09); Tagvenue uses C$ on-page; Versa Loft's page does not declare CAD so its cost is null pending a quote.",
+    "Calendar flags (ALL IN, UCI Road World Championships, MTL connect, ICBC, Women in Tech, The Techfair) are informational for Joe, never eliminations; all seven Saturdays remain candidates.",
+    "No venue has a written quote or confirmed live Saturday availability; every record carries needs_human_verify true and verification questions until a manual booking check."
+  ],
+  "recommendation": {
+    "selected_venue": null,
+    "rationale": "Run A evidence package only. Venue selection deferred: a later deterministic pipeline card scores venues and assembles the venue-phase bundle; Joe selects from eligible/shortlist_ready results. Calendar preference carried from v1 recommendation logic: 2026-10-03 had the fewest total signals, but all dates stay flagged alternatives per Joe's flag-not-elimination rule."
+  }
+}

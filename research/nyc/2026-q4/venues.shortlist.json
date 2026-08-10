@@ -1,0 +1,2025 @@
+{
+  "meta": {
+    "generator": "score_venues.py",
+    "schema_version": "2.2",
+    "budget_usd": 5000.0,
+    "target_attendance": 50,
+    "event_date": "2026-09-26",
+    "event_duration_hours": 8,
+    "weights": {
+      "budget_efficiency": 0.2,
+      "capacity_fit": 0.2,
+      "catering_flexibility": 0.15,
+      "recording_suitability": 0.15,
+      "booking_path": 0.1,
+      "evidence_freshness": 0.1,
+      "technical_readiness": 0.05,
+      "event_window_fit": 0.05
+    },
+    "tier_order": [
+      "eligible",
+      "shortlist_ready",
+      "lead"
+    ]
+  },
+  "eligible": [],
+  "shortlist_ready": [
+    {
+      "name": "Large Flex Event Loft Studio — Entire Space",
+      "city_slug": "new-york-ny-us",
+      "address": "307 West 38th Street, Studio 1401, 14th floor, New York, NY 10018",
+      "capacity_comfortable": 60,
+      "capacity_basis": "seated",
+      "screen_status": "confirmed",
+      "wifi_status": "confirmed",
+      "catering_policy": "outside_allowed",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": 1400,
+      "cost_basis": "estimated_from_rate",
+      "cost_local_amount": 1400,
+      "cost_local_currency": "USD",
+      "hourly_rate_usd": 175,
+      "estimated_hours": 8,
+      "rate_estimate_note": "Tagvenue lists the Entire Space at Large Flex Event Loft Studio from $175/hour (all prices include sales tax); 8-hour estimate = $1,400, not a written quote.",
+      "booking_url": "https://www.tagvenue.com/us/rooms/new-york/69406/large-flex-event-loft-studio/entire-space",
+      "verification_question_kinds": [
+        "availability",
+        "final_quote"
+      ],
+      "verification_questions": [
+        "Confirm live availability of the Entire Space on the chosen 2026 Saturday.",
+        "Confirm the exact all-in Saturday total at the published from-$175/hour rate including taxes/fees (8-hour estimate $1,400)."
+      ],
+      "source_url": "https://www.tagvenue.com/us/rooms/new-york/69406/large-flex-event-loft-studio/entire-space",
+      "source_title": "Entire Space at Large Flex Event Loft Studio — Tagvenue listing (from $175/hr, up to 60 seats / 60 standing, Wi-Fi + projector + flatscreen TV + PA, external catering allowed)",
+      "accessed_on": "2026-08-09",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "Tagvenue room page (accessed 2026-08-09) for the Entire Space at Large Flex Event Loft Studio, 307 West 38th Street Studio 1401, 14th floor, Garment District: up to 60 seats / 60 standing; facilities Wi-Fi, projector, flatscreen TV, whiteboard, flipchart, PA/speakers; external catering allowed; from $175/hour with sales tax included.",
+        "inference": "60-person capacity fits a 50-person event; 8-hour estimate $1,400 is well within the USD 5,000 soft budget.",
+        "geo": "https://www.tagvenue.com/us/rooms/new-york/69406/large-flex-event-loft-studio/entire-space"
+      },
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "latitude": 40.755184,
+      "longitude": -73.99215,
+      "cost_rate_unit": "hour",
+      "opening_hours": "06:00-24:00",
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "allows_to_6",
+      "event_window_evidence": {
+        "url": "https://www.tagvenue.com/us/rooms/new-york/69406/large-flex-event-loft-studio/entire-space",
+        "title": "Entire Space at Large Flex Event Loft Studio — Tagvenue room listing",
+        "accessed_on": "2026-08-09",
+        "claim": "Tagvenue room page (accessed 2026-08-09) lists bookable hours 6:00 am-6:00 am (24-hour window) for the Entire Space, so an event ending at 18:00 is supported (allows_to_6)."
+      },
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "availability_unconfirmed",
+        "final_quote_required",
+        "stale_evidence"
+      ],
+      "score": 0.764,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.72,
+          "weight": 0.2,
+          "contribution": 0.144
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 1.0,
+          "weight": 0.15,
+          "contribution": 0.15
+        },
+        "recording_suitability": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 0.7,
+          "weight": 0.1,
+          "contribution": 0.07
+        },
+        "technical_readiness": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "event_window_fit": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "total": 0.764
+      }
+    },
+    {
+      "name": "Times Square Jay Suites — Meeting Room I",
+      "city_slug": "new-york-ny-us",
+      "address": "11 Times Square, New York, NY 10036",
+      "capacity_comfortable": 52,
+      "capacity_basis": "seated",
+      "screen_status": "confirmed",
+      "wifi_status": "confirmed",
+      "catering_policy": "outside_allowed",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": 2800,
+      "cost_basis": "published_rate",
+      "cost_local_amount": 2800,
+      "cost_local_currency": "USD",
+      "booking_url": "https://www.tagvenue.com/us/rooms/new-york/29800/times-square-jay-suites/meeting-room-i",
+      "verification_question_kinds": [
+        "availability",
+        "final_quote",
+        "room_assignment"
+      ],
+      "verification_questions": [
+        "Confirm live availability of Meeting Room I on the chosen 2026 Saturday (9:00am-6:00pm).",
+        "Confirm the exact all-in Saturday total (Tagvenue publishes Saturday-Sunday from $400/hour or from $2,800/day, tax included; the day rate is used as the cost basis).",
+        "Confirm whether the 52-person mixed table/bench layout is comfortable for a seated talk format for 50 attendees."
+      ],
+      "source_url": "https://www.tagvenue.com/us/rooms/new-york/29800/times-square-jay-suites/meeting-room-i",
+      "source_title": "Meeting Room I at Times Square Jay Suites — Tagvenue listing (52 seats; Sat-Sun from $400/hr or $2,800/day, tax included; Wi-Fi + flatscreen TV + whiteboard, catering available)",
+      "accessed_on": "2026-08-09",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "Tagvenue room page (accessed 2026-08-09) for Meeting Room I, 6th floor, Times Square Jay Suites, 11 Times Square: up to 52 seats; facilities Wi-Fi, flatscreen TV, whiteboard, conference call facilities; venue offers catering and external catering allowed; prices Sunday-Saturday 9:00am-6:00pm, Saturday and Sunday from $400/hour or from $2,800/day, all prices include sales tax.",
+        "inference": "A Saturday day rate of $2,800 fits within the USD 5,000 soft budget; capacity 52 comfortably covers 50 attendees. Screen and Wi-Fi are confirmed by the listing.",
+        "geo": "https://www.tagvenue.com/us/rooms/new-york/29800/times-square-jay-suites/meeting-room-i"
+      },
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "latitude": 40.756604,
+      "longitude": -73.989657,
+      "cost_rate_unit": "day",
+      "opening_hours": "09:00-18:00",
+      "closing_time": "18:00",
+      "max_booking_hours": 9.0,
+      "event_window_status": "allows_to_6",
+      "event_window_evidence": {
+        "url": "https://www.tagvenue.com/us/rooms/new-york/29800/times-square-jay-suites/meeting-room-i",
+        "title": "Meeting Room I at Times Square Jay Suites — Tagvenue room listing",
+        "accessed_on": "2026-08-09",
+        "claim": "Tagvenue room page (accessed 2026-08-09) lists Sunday-Saturday 9:00am-6:00pm availability, so an event ending at 18:00 is supported (allows_to_6)."
+      },
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "availability_unconfirmed",
+        "final_quote_required",
+        "stale_evidence"
+      ],
+      "score": 0.708,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.44,
+          "weight": 0.2,
+          "contribution": 0.088
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 1.0,
+          "weight": 0.15,
+          "contribution": 0.15
+        },
+        "recording_suitability": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 0.7,
+          "weight": 0.1,
+          "contribution": 0.07
+        },
+        "technical_readiness": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "event_window_fit": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "total": 0.708
+      }
+    },
+    {
+      "name": "LOFT39 — 3rd Floor Speakeasy",
+      "city_slug": "new-york-ny-us",
+      "address": "38 West 39th Street, New York, NY 10018",
+      "capacity_comfortable": 75,
+      "capacity_basis": "seated",
+      "screen_status": "unknown",
+      "wifi_status": "confirmed",
+      "catering_policy": "outside_allowed",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": null,
+      "cost_basis": "unknown",
+      "booking_url": "https://www.tagvenue.com/us/rooms/new-york/39296/loft39/3rd-floor-speakeasy-at-loft39",
+      "verification_question_kinds": [
+        "cost_unknown",
+        "availability",
+        "screen"
+      ],
+      "verification_questions": [
+        "Confirm the numeric hire rate for the 3rd Floor Speakeasy for a 50-person daytime event; the Tagvenue page publishes a $2,500 min-spend corporate cocktail package for the 4th Floor Warehouse Gallery but no hourly rate for the Speakeasy in the accessed snapshot.",
+        "Confirm live availability on the chosen 2026 Saturday.",
+        "Confirm screen/projector availability (the listing facilities list Wi-Fi, PA/speakers, lighting, backdrops — no projector or TV)."
+      ],
+      "source_url": "https://www.tagvenue.com/us/rooms/new-york/39296/loft39/3rd-floor-speakeasy-at-loft39",
+      "source_title": "3rd Floor Speakeasy at LOFT39 — Tagvenue listing (75 seated / 125 standing, Wi-Fi + PA, external catering allowed; corporate mixer package from $2,500 min spend)",
+      "accessed_on": "2026-08-09",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "Tagvenue room page (accessed 2026-08-09) for the 3rd Floor Speakeasy at LOFT39, 38 West 39th Street, Garment District: 2,500 sqft, comfortably seats up to 75 or hosts up to 125 standing; facilities Wi-Fi, PA/speakers, AC, natural light, lighting equipment, backdrops; external catering allowed; corporate hospitality offer from $2,500 min spend (4th Floor Warehouse Gallery corporate mixer package).",
+        "inference": "Capacity 75 fits 50 attendees, but no hourly rate for the Speakeasy was captured (cost_unknown flag); screen availability is not stated (screen_unknown flag).",
+        "geo": "https://www.tagvenue.com/us/rooms/new-york/39296/loft39/3rd-floor-speakeasy-at-loft39"
+      },
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "latitude": 40.752157,
+      "longitude": -73.984219,
+      "cost_rate_unit": "unknown",
+      "opening_hours": "06:00-03:00",
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "allows_to_6",
+      "event_window_evidence": {
+        "url": "https://www.tagvenue.com/us/rooms/new-york/39296/loft39/3rd-floor-speakeasy-at-loft39",
+        "title": "3rd Floor Speakeasy at LOFT39 — Tagvenue room listing",
+        "accessed_on": "2026-08-09",
+        "claim": "Tagvenue room page (accessed 2026-08-09) lists bookable hours 6:00 am-3:00 am for the 3rd Floor Speakeasy (promo packages conclude by 10:00 PM), so an event ending at 18:00 is supported (allows_to_6)."
+      },
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "cost_unknown",
+        "screen_unknown",
+        "availability_unconfirmed",
+        "stale_evidence"
+      ],
+      "score": 0.695,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.5,
+          "weight": 0.2,
+          "contribution": 0.1
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 1.0,
+          "weight": 0.15,
+          "contribution": 0.15
+        },
+        "recording_suitability": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 0.7,
+          "weight": 0.1,
+          "contribution": 0.07
+        },
+        "technical_readiness": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "event_window_fit": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "total": 0.695
+      }
+    },
+    {
+      "name": "Nomadworks Times Square — Innovation Hub",
+      "city_slug": "new-york-ny-us",
+      "address": "240 West 40th Street, New York, NY 10018",
+      "capacity_comfortable": 50,
+      "capacity_basis": "standing",
+      "screen_status": "confirmed",
+      "wifi_status": "confirmed",
+      "catering_policy": "outside_allowed",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": 2400,
+      "cost_basis": "estimated_from_rate",
+      "cost_local_amount": 2400,
+      "cost_local_currency": "USD",
+      "hourly_rate_usd": 300,
+      "estimated_hours": 8,
+      "rate_estimate_note": "Tagvenue lists the Innovation Hub at Nomadworks Times Square from $300/hour (Saturday 9:00am-4:00pm hours listed, all prices include sales tax); 8-hour Saturday estimate = $2,400, not a written quote.",
+      "booking_url": "https://www.tagvenue.com/us/rooms/new-york/60620/nomadworks-times-square/innovation-hub",
+      "verification_question_kinds": [
+        "availability",
+        "final_quote",
+        "room_assignment"
+      ],
+      "verification_questions": [
+        "Confirm live availability of the Innovation Hub on the chosen 2026 Saturday (Saturday hours listed 9:00am-4:00pm).",
+        "Confirm the exact all-in Saturday total including taxes/fees (published from $300/hour; 8-hour estimate $2,400).",
+        "Confirm whether the 50-person 'up to 50 standing' space can be configured with comfortable seating for a talk format, or is standing-only at that count."
+      ],
+      "source_url": "https://www.tagvenue.com/us/rooms/new-york/60620/nomadworks-times-square/innovation-hub",
+      "source_title": "Innovation Hub at Nomadworks Times Square — Tagvenue listing (from $300/hr, Saturday 9am-4pm, up to 50 standing, Wi-Fi + flatscreen TV, external catering allowed)",
+      "accessed_on": "2026-08-09",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "Tagvenue room page (accessed 2026-08-09) lists the Innovation Hub at Nomadworks Times Square, 240 West 40th Street, Garment District: up to 50 standing, facilities Wi-Fi, flatscreen TV, natural light, soundproof; external catering allowed; prices from $300/hour with Saturday 9:00am-4:00pm hours and sales tax included.",
+        "inference": "Capacity is exactly 50 standing, so comfortable seated capacity for a 50-person talk event is unconfirmed (room_assignment question). Rate-derived 8-hour estimate $2,400 stays within the USD 5,000 soft budget.",
+        "geo": "https://www.tagvenue.com/us/rooms/new-york/60620/nomadworks-times-square/innovation-hub"
+      },
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "latitude": 40.755197,
+      "longitude": -73.989578,
+      "cost_rate_unit": "hour",
+      "opening_hours": "09:00-16:00",
+      "closing_time": "16:00",
+      "max_booking_hours": 7.0,
+      "event_window_status": "cannot_to_5",
+      "event_window_evidence": {
+        "url": "https://www.tagvenue.com/us/rooms/new-york/60620/nomadworks-times-square/innovation-hub",
+        "title": "Innovation Hub at Nomadworks Times Square — Tagvenue room listing",
+        "accessed_on": "2026-08-09",
+        "claim": "Tagvenue room page (accessed 2026-08-09) lists Saturday 9:00am-4:00pm hours; the venue closes at 16:00 on Saturdays, so it cannot support an event ending at 17:00 (cannot_to_5)."
+      },
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "availability_unconfirmed",
+        "final_quote_required",
+        "duration_window_not_supported",
+        "duration_window_not_supported",
+        "stale_evidence"
+      ],
+      "score": 0.674,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.52,
+          "weight": 0.2,
+          "contribution": 0.104
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 1.0,
+          "weight": 0.15,
+          "contribution": 0.15
+        },
+        "recording_suitability": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 0.7,
+          "weight": 0.1,
+          "contribution": 0.07
+        },
+        "technical_readiness": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "event_window_fit": {
+          "factor": 0.0,
+          "weight": 0.05,
+          "contribution": 0.0
+        },
+        "total": 0.674
+      }
+    },
+    {
+      "name": "Cre8ive NYC — Multi-Space Coworking",
+      "city_slug": "new-york-ny-us",
+      "address": "134 West 29th Street, New York, NY 10001",
+      "capacity_comfortable": 40,
+      "capacity_basis": "venue_claim",
+      "screen_status": "confirmed",
+      "wifi_status": "confirmed",
+      "catering_policy": "outside_allowed",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": null,
+      "cost_basis": "unknown",
+      "booking_url": "https://www.tagvenue.com/us/venues/new-york/17708/cre8ive-nyc",
+      "verification_question_kinds": [
+        "cost_unknown",
+        "availability",
+        "room_assignment"
+      ],
+      "verification_questions": [
+        "Confirm the all-in rate for a 50-person event; individual spaces price from $35-$60/hour but a multi-room configuration for 50 attendees has no published total.",
+        "Confirm live availability of the needed combination of spaces on the chosen 2026 Saturday.",
+        "Confirm which combination of the 13 spaces (largest single spaces seat 15-25; venue overview states up to 40 seats venue-wide) comfortably hosts 50 attendees as one event."
+      ],
+      "source_url": "https://www.tagvenue.com/us/venues/new-york/17708/cre8ive-nyc",
+      "source_title": "Cre8ive NYC — Tagvenue venue listing (134 West 29th Street, from $35/hr, up to 40 seats / 40 standing venue-wide, 13 spaces, Wi-Fi + rentable projector + PA, external catering allowed)",
+      "accessed_on": "2026-08-09",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "Tagvenue venue page (accessed 2026-08-09) for Cre8ive NYC, 134 West 29th Street, NoMad: venue overview states up to 40 seats / 40 standing, from $35 hire fee, 154 reviews; 13 individual spaces including Cre8ive Meeting Room 3-4 (15 seats, Wi-Fi, projector, whiteboard, PA), Cre8ive Space 2-2 (25 seats), etc.; amenities include Wi-Fi, on-site staff, water dispenser, rentable projector and speakers; external catering allowed.",
+        "inference": "No single space seats 50; a multi-room combination may work but capacity/cost for a single 50-person event are unconfirmed (capacity_40_49 + cost_unknown flags expected).",
+        "geo": "https://www.tagvenue.com/us/venues/new-york/17708/cre8ive-nyc"
+      },
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "latitude": 40.747246,
+      "longitude": -73.991706,
+      "cost_rate_unit": "unknown",
+      "opening_hours": "08:00-22:00",
+      "closing_time": "22:00",
+      "max_booking_hours": 14.0,
+      "event_window_status": "allows_to_6",
+      "event_window_evidence": {
+        "url": "https://www.tagvenue.com/us/venues/new-york/17708/cre8ive-nyc",
+        "title": "Cre8ive NYC — Tagvenue venue listing (opening hours + prices)",
+        "accessed_on": "2026-08-09",
+        "claim": "Tagvenue venue page (accessed 2026-08-09) lists Saturday 8:00 am-10:00 pm opening hours for the multi-space venue, so an event ending at 18:00 is supported (allows_to_6)."
+      },
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "capacity_40_49",
+        "cost_unknown",
+        "availability_unconfirmed",
+        "stale_evidence"
+      ],
+      "score": 0.66,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.5,
+          "weight": 0.2,
+          "contribution": 0.1
+        },
+        "capacity_fit": {
+          "factor": 0.7,
+          "weight": 0.2,
+          "contribution": 0.14
+        },
+        "catering_flexibility": {
+          "factor": 1.0,
+          "weight": 0.15,
+          "contribution": 0.15
+        },
+        "recording_suitability": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 0.7,
+          "weight": 0.1,
+          "contribution": 0.07
+        },
+        "technical_readiness": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "event_window_fit": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "total": 0.66
+      }
+    },
+    {
+      "name": "Love Studios NYC — Midtown Loft Venue 23B",
+      "city_slug": "new-york-ny-us",
+      "address": "545 8th Avenue, New York, NY 10018",
+      "capacity_comfortable": 40,
+      "capacity_basis": "seated",
+      "screen_status": "confirmed",
+      "wifi_status": "confirmed",
+      "catering_policy": "outside_allowed",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": null,
+      "cost_basis": "unknown",
+      "booking_url": "https://www.tagvenue.com/us/rooms/new-york/45920/love-studios-nyc/midtown-loft-venue-23b",
+      "verification_question_kinds": [
+        "cost_unknown",
+        "availability",
+        "room_assignment"
+      ],
+      "verification_questions": [
+        "Confirm the all-in rate for a 50-person daytime event; the Tagvenue page publishes a Conference Offer with $895 min spend but no fixed hourly rate in the accessed snapshot.",
+        "Confirm live availability on the chosen 2026 Saturday.",
+        "Confirm whether the 40-seat configuration can be extended to comfortably seat 50, or whether the 50-standing mode is used for a talk format (capacity_40_49 flag expected)."
+      ],
+      "source_url": "https://www.tagvenue.com/us/rooms/new-york/45920/love-studios-nyc/midtown-loft-venue-23b",
+      "source_title": "Midtown Loft Venue 23B at Love Studios NYC — Tagvenue listing (40 seats / 50 standing, conference offer from $895 min spend, projector + flatscreen TV + PA + Wi-Fi, external catering allowed)",
+      "accessed_on": "2026-08-09",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "Tagvenue room page (accessed 2026-08-09) for Midtown Loft Venue 23B at Love Studios NYC, 545 8th Avenue, Garment District: up to 40 seats / 50 standing; facilities Wi-Fi, projector, flatscreen TV, PA/speakers, AC, photo equipment; external catering allowed; Conference Offer from $895 min spend includes two 6ft x 3ft banquet tables and 20 chairs.",
+        "inference": "Seated capacity 40 is below the 50 target (capacity_40_49 flag expected) but standing 50 is possible; no fixed total rate was published in the snapshot, so cost stays unknown (cost_unknown flag).",
+        "geo": "https://www.tagvenue.com/us/rooms/new-york/45920/love-studios-nyc/midtown-loft-venue-23b"
+      },
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "latitude": 40.754498,
+      "longitude": -73.992194,
+      "cost_rate_unit": "unknown",
+      "opening_hours": "06:00-24:00",
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "allows_to_6",
+      "event_window_evidence": {
+        "url": "https://www.tagvenue.com/us/rooms/new-york/45920/love-studios-nyc/midtown-loft-venue-23b",
+        "title": "Midtown Loft Venue 23B at Love Studios NYC — Tagvenue room listing",
+        "accessed_on": "2026-08-09",
+        "claim": "Tagvenue room page (accessed 2026-08-09) lists bookable hours 6:00 am-6:00 am (24-hour window) and 24-hour freight/passenger elevators and concierge, so an event ending at 18:00 is supported (allows_to_6)."
+      },
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "capacity_40_49",
+        "cost_unknown",
+        "availability_unconfirmed",
+        "stale_evidence"
+      ],
+      "score": 0.66,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.5,
+          "weight": 0.2,
+          "contribution": 0.1
+        },
+        "capacity_fit": {
+          "factor": 0.7,
+          "weight": 0.2,
+          "contribution": 0.14
+        },
+        "catering_flexibility": {
+          "factor": 1.0,
+          "weight": 0.15,
+          "contribution": 0.15
+        },
+        "recording_suitability": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 0.7,
+          "weight": 0.1,
+          "contribution": 0.07
+        },
+        "technical_readiness": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "event_window_fit": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "total": 0.66
+      }
+    },
+    {
+      "name": "NYC Seminar and Conference Center — Seminar Room A",
+      "city_slug": "new-york-ny-us",
+      "address": "114 West 26th Street, 3rd Floor, New York, NY",
+      "capacity_comfortable": 65,
+      "capacity_basis": "venue_claim",
+      "screen_status": "confirmed",
+      "wifi_status": "confirmed",
+      "catering_policy": "unknown",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": 1150,
+      "cost_basis": "published_rate",
+      "cost_local_amount": 1150,
+      "cost_local_currency": "USD",
+      "booking_url": "https://nycseminarcenter.com/seminar_room_a/",
+      "verification_question_kinds": [
+        "availability",
+        "booking_terms",
+        "room_assignment"
+      ],
+      "verification_questions": [
+        "Confirm a Seminar Room A booking is available on the chosen 2026 Saturday (the official pricing page was rate-limited on 2026-08-09; pricing below is from the Wayback Machine snapshot of the official pricing page).",
+        "Confirm the exact all-in Saturday rate and booking terms (published day rate $1,150 for up to 65 attendees at 800sf including projector/screen or flat-panel display, wireless Internet, and whiteboard; a prior same-day research pass recorded a Tagvenue listing with capacity 70 theatre and from $180/hr — reconcile before booking).",
+        "Confirm Seminar Room A is the 800sf room at the published rate (other rooms at $975/30ppl, $1,075/45ppl; 2nd Floor Conference Hall $7,500/day)."
+      ],
+      "source_url": "https://web.archive.org/web/2026/https://nycseminarcenter.com/pricing/",
+      "source_title": "NYC Seminar and Conference Center — Room Rates (Wayback Machine snapshot of official pricing page, accessed 2026-08-09): day rate $1,150 for up to 65 attendees (800sf) including projector/screen, wireless Internet, and whiteboard",
+      "accessed_on": "2026-08-09",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "Wayback snapshot of nycseminarcenter.com/pricing/ (accessed 2026-08-09) publishes day rates Monday-Sunday 8am-5pm: $1,150/day for up to 65 attendees (800sf)** with ** denoting inclusion of projector and screen or Flat Panel Display plus wireless Internet and whiteboard; also $975/day up to 30, $1,075/day up to 45, $2,500/day up to 175 (Training Rooms combined), $7,500/day for the 2nd Floor Conference Hall (330 attendees). Official seminar_room_a page title confirms the venue has been a neighborhood fixture for over 20 years in Chelsea/Flatiron. Deskpass and Breather listings (search snippets, 2026-08-09) list 'Seminar Room A, 114 West 26th Street 3rd Floor New York, NY, rooms starting at $175/hour and $1,540/day'.",
+        "inference": "The published day rate for an 800sf room seating up to 65 attendees fits a 50-person event within the USD 5,000 soft budget with projector + Wi-Fi + whiteboard included; the venue is the historical past venue of the Numerai Community NYC Meetup (meetup-02 seed, 2022-09-24). Because the live site returned HTTP 429 on 2026-08-09, all live-rate confirmation is deferred to the manual booking check.",
+        "geo": "https://web.archive.org/web/2026/https://nycseminarcenter.com/pricing/"
+      },
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "latitude": 40.74498,
+      "longitude": -73.992381,
+      "cost_rate_unit": "day",
+      "opening_hours": "08:00-17:00",
+      "closing_time": "17:00",
+      "max_booking_hours": 9.0,
+      "event_window_status": "allows_to_5",
+      "event_window_evidence": {
+        "url": "https://web.archive.org/web/2026/https://nycseminarcenter.com/pricing/",
+        "title": "NYC Seminar and Conference Center — Room Rates (Wayback snapshot of official pricing page)",
+        "accessed_on": "2026-08-09",
+        "claim": "Wayback snapshot of the official pricing page (accessed 2026-08-09) publishes day rates Monday-Sunday 8am-5pm, so a full-day event ending at 17:00 is supported (closing 17:00)."
+      },
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "availability_unconfirmed",
+        "stale_evidence"
+      ],
+      "score": 0.624,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.77,
+          "weight": 0.2,
+          "contribution": 0.154
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "recording_suitability": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 0.7,
+          "weight": 0.1,
+          "contribution": 0.07
+        },
+        "technical_readiness": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "event_window_fit": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "total": 0.624
+      }
+    },
+    {
+      "name": "Civic Hall — Event Rooms",
+      "city_slug": "new-york-ny-us",
+      "address": "28 East 28th Street (Zero Irving), New York, NY 10016",
+      "capacity_comfortable": 75,
+      "capacity_basis": "venue_claim",
+      "screen_status": "confirmed",
+      "wifi_status": "unknown",
+      "catering_policy": "unknown",
+      "recording_suitability": "likely_good",
+      "estimated_cost_usd": null,
+      "cost_basis": "unknown",
+      "booking_url": "https://civichall.org/our-spaces/",
+      "verification_question_kinds": [
+        "cost_unknown",
+        "availability",
+        "wifi",
+        "booking_terms",
+        "event_window"
+      ],
+      "verification_questions": [
+        "Confirm the rental rate for a free community event; Civic Hall offers 'special rates for nonprofits, community organizations, Civic Hall members and Zero Irving tenants' and a Community Event Option for free-to-attend, open-to-the-public events that benefit the local community — confirm whether a free Decentralized AI Day qualifies.",
+        "Confirm live availability of an event room (larger flexible spaces up to 75 attendees) on the chosen 2026 Saturday.",
+        "Confirm Wi-Fi availability and quality in the event rooms (not explicitly stated on the our-spaces page).",
+        "Confirm booking terms, A/V configuration, and any F&B or staffing minimums.",
+        "Confirm the event-room booking window on the chosen 2026 Saturday (opening/closing time and whether a full-day 09:00-17:00 or 09:00-18:00 booking is allowed); the our-spaces page does not publish room hours."
+      ],
+      "source_url": "https://civichall.org/our-spaces/",
+      "source_title": "Our Spaces — Civic Hall (Union Square): event rooms accommodating up to 75 attendees with A/V, classrooms 10-50, Craig Newmark Auditorium 300+/500+, community-event option and special nonprofit/community rates",
+      "accessed_on": "2026-08-09",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "Civic Hall our-spaces page (accessed 2026-08-09) describes a state-of-the-art venue at the edge of Union Square (Zero Irving) with 10-800 guest capacity across 30+ configurable spaces, 85,000 total sq ft; event rooms 'larger, flexible space accommodating several dozen people up to 75 attendees, with furniture to fit and A/V'; classrooms 10-50; Craig Newmark Auditorium 250-person gala / 300+ keynote / 500+ standing with streaming cameras and video wall; 'Special rates for nonprofits, community organizations, Civic Hall members and Zero Irving tenants'; Community Event Option for free-to-attend, open-to-the-public events that benefit the local community.",
+        "inference": "A free community AI/Web3 event may qualify for a community/nonprofit rate, making Civic Hall one of the strongest fits if a rate is confirmed; cost is inquiry-only (cost_unknown flag).",
+        "geo": "https://civichall.org/our-spaces/"
+      },
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "latitude": 40.743846,
+      "longitude": -73.985534,
+      "cost_rate_unit": "unknown",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "cost_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "score": 0.6025,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.5,
+          "weight": 0.2,
+          "contribution": 0.1
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "recording_suitability": {
+          "factor": 0.55,
+          "weight": 0.15,
+          "contribution": 0.0825
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 0.7,
+          "weight": 0.1,
+          "contribution": 0.07
+        },
+        "technical_readiness": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "event_window_fit": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "total": 0.6025
+      }
+    },
+    {
+      "name": "CUNY Graduate Center — Event and Space Rentals",
+      "city_slug": "new-york-ny-us",
+      "address": "365 Fifth Avenue, New York, NY 10016",
+      "capacity_comfortable": 50,
+      "capacity_basis": "venue_claim",
+      "screen_status": "unknown",
+      "wifi_status": "confirmed",
+      "catering_policy": "unknown",
+      "recording_suitability": "likely_good",
+      "estimated_cost_usd": null,
+      "cost_basis": "unknown",
+      "booking_url": "https://spacerentals.gc.cuny.edu/",
+      "verification_question_kinds": [
+        "cost_unknown",
+        "availability",
+        "screen",
+        "room_assignment",
+        "event_window"
+      ],
+      "verification_questions": [
+        "Obtain a written quote for a mid-size event space (50+ guests) on a Saturday; the site says outside entities are charged a rental fee but publishes no numeric rates.",
+        "Confirm weekend availability for the target date.",
+        "Confirm screen/projector availability in the booked space (page states state-of-the-art technology and livestreaming but not per-room screen specs).",
+        "Confirm which specific space (e.g., Ninth Floor Conference Room Suite) fits 50 attendees comfortably.",
+        "Confirm the rented space's booking window on the chosen 2026 Saturday (opening/closing time and whether a full-day 09:00-17:00 or 09:00-18:00 booking is allowed); the rentals page does not publish room hours."
+      ],
+      "source_url": "https://spacerentals.gc.cuny.edu/",
+      "source_title": "Event and Space Rentals in NYC — CUNY Graduate Center (spaces for 10-400 guests, high speed WiFi, on-site event manager, livestreaming available, affordable pricing)",
+      "accessed_on": "2026-08-09",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "CUNY Graduate Center event and space rentals page (accessed 2026-08-09): located at 365 Fifth Avenue, New York, NY 10016, landmark building on Fifth Avenue between 34th and 35th Streets; multiple event and meeting spaces accommodate 10 to 400 guests; key features include planning/production support, on-site event manager, state-of-the-art technology, high speed WiFi, livestreaming available, affordable pricing; spaces include Proshansky Auditorium, Elebash Recital Hall, Segal Theatre, Dining Commons, Kelly Skylight Room, Ninth Floor Conference Room Suite, plus uptown ASRC spaces.",
+        "inference": "Inquiry-only pricing (cost_unknown flag); capacity range covers 50 attendees; screen specs are per-space and unconfirmed.",
+        "geo": "https://spacerentals.gc.cuny.edu/"
+      },
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "latitude": 40.748519,
+      "longitude": -73.983639,
+      "cost_rate_unit": "unknown",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "cost_unknown",
+        "screen_unknown",
+        "availability_unconfirmed",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "score": 0.6025,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.5,
+          "weight": 0.2,
+          "contribution": 0.1
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "recording_suitability": {
+          "factor": 0.55,
+          "weight": 0.15,
+          "contribution": 0.0825
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 0.7,
+          "weight": 0.1,
+          "contribution": 0.07
+        },
+        "technical_readiness": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "event_window_fit": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "total": 0.6025
+      }
+    },
+    {
+      "name": "Exposed Brick Multi-Use Event Space — Entire Venue",
+      "city_slug": "new-york-ny-us",
+      "address": "91 East 3rd Street, New York, NY 10003",
+      "capacity_comfortable": 74,
+      "capacity_basis": "venue_claim",
+      "screen_status": "unknown",
+      "wifi_status": "unknown",
+      "catering_policy": "unknown",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": 1280,
+      "cost_basis": "estimated_from_rate",
+      "cost_local_amount": 1280,
+      "cost_local_currency": "USD",
+      "hourly_rate_usd": 160,
+      "estimated_hours": 8,
+      "rate_estimate_note": "Tagvenue lists the Entire Venue at Exposed Brick Multi-Use Event Space from $160/hour; 8-hour estimate = $1,280, not a written quote.",
+      "booking_url": "https://www.tagvenue.com/us/hire/large-venues/new-york-city",
+      "verification_question_kinds": [
+        "availability",
+        "final_quote",
+        "screen",
+        "wifi"
+      ],
+      "verification_questions": [
+        "Confirm live availability of the Entire Venue on the chosen 2026 Saturday and obtain the room page/quote (this record's evidence is the Tagvenue NYC large-venues hub listing).",
+        "Confirm the exact all-in Saturday total at the from-$160/hour rate including taxes/fees.",
+        "Confirm screen/projector availability (not stated in the hub listing).",
+        "Confirm Wi-Fi availability and reliability for a talk-heavy event (not stated in the hub listing)."
+      ],
+      "source_url": "https://www.tagvenue.com/us/hire/large-venues/new-york-city",
+      "source_title": "Large Event Venues for Rent in New York City — Tagvenue hub listing (Entire Venue at Exposed Brick Multi-Use Event Space, 74 guests, from $160/hr, Bowery)",
+      "accessed_on": "2026-08-09",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "Tagvenue New York City large-venues hub page (accessed 2026-08-09) lists 'Entire Venue, 74 guests, Exposed Brick Multi-Use Event Space (54), Bowery, New York City, NY, from $160 hire fee / per hour'.",
+        "inference": "Capacity 74 fits 50 attendees; 8-hour estimate $1,280 is within budget. Screen and Wi-Fi are unverified from the hub listing, so the room page must be checked before shortlisting confidence increases.",
+        "geo": "https://www.tagvenue.com/us/rooms/new-york/63027/exposed-brick-multi-use-event-space/entire-venue"
+      },
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "latitude": 40.724843,
+      "longitude": -73.987808,
+      "cost_rate_unit": "hour",
+      "opening_hours": "06:00-24:00",
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "allows_to_6",
+      "event_window_evidence": {
+        "url": "https://www.tagvenue.com/us/rooms/new-york/63027/exposed-brick-multi-use-event-space/entire-venue",
+        "title": "Entire Venue at Exposed Brick Multi-Use Event Space — Tagvenue room listing",
+        "accessed_on": "2026-08-09",
+        "claim": "Tagvenue room page (accessed 2026-08-09) lists bookable hours 6:00 am-12:00 am (midnight) for the Entire Venue at 91 East 3rd Street, so an event ending at 18:00 is supported (allows_to_6)."
+      },
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "stale_evidence"
+      ],
+      "score": 0.5688,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.744,
+          "weight": 0.2,
+          "contribution": 0.1488
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "recording_suitability": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 0.7,
+          "weight": 0.1,
+          "contribution": 0.07
+        },
+        "technical_readiness": {
+          "factor": 0.0,
+          "weight": 0.05,
+          "contribution": 0.0
+        },
+        "event_window_fit": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "total": 0.5688
+      }
+    },
+    {
+      "name": "Event Loft 1505 — Studio 1505",
+      "city_slug": "new-york-ny-us",
+      "address": "307 West 38th Street, 1505, New York, NY 10018",
+      "capacity_comfortable": 175,
+      "capacity_basis": "seated",
+      "screen_status": "confirmed",
+      "wifi_status": "confirmed",
+      "catering_policy": "outside_allowed",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": 2000,
+      "cost_basis": "estimated_from_rate",
+      "cost_local_amount": 2000,
+      "cost_local_currency": "USD",
+      "hourly_rate_usd": 250,
+      "estimated_hours": 8,
+      "rate_estimate_note": "Venue's own tier pricing published on the Tagvenue room page: 26-50 people $250/hr (3-hour minimum, $99 set-up and cleaning fee not included); 8-hour estimate for a 50-person event = $2,000, not a written quote.",
+      "booking_url": "https://www.tagvenue.com/us/rooms/new-york/77196/event-loft-1505/studio-1505",
+      "verification_question_kinds": [
+        "availability",
+        "final_quote"
+      ],
+      "verification_questions": [
+        "Confirm live availability of Studio 1505 on the chosen 2026 Saturday.",
+        "Confirm the exact all-in Saturday total for 50 people at the 26-50 tier ($250/hr) including the $99 set-up/cleaning fee and any overtime/doorman fees (after 10:00PM a $50/hr doorman fee applies)."
+      ],
+      "source_url": "https://www.tagvenue.com/us/rooms/new-york/77196/event-loft-1505/studio-1505",
+      "source_title": "Studio 1505 at Event Loft 1505 — Tagvenue listing (tier pricing 26-50 people $250/hr, 3-hour min, up to 175 seats / 200 standing, projector + flatscreen TV + PA + Wi-Fi, external catering allowed)",
+      "accessed_on": "2026-08-09",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "Tagvenue room page (accessed 2026-08-09) for Studio 1505 at Event Loft 1505, 307 West 38th Street, Garment District: up to 175 seats / 200 standing; facilities Wi-Fi, projector, flatscreen TV, whiteboard, flipchart, PA/speakers; external catering allowed; venue publishes tier pricing: up to 25 people $200/hr, 26-50 people $250/hr, 51-75 $300/hr, with $99 set-up/cleaning fee and 3-hour minimum; party rate $500/hr.",
+        "inference": "At the 26-50 tier, an 8-hour event for 50 people estimates to $2,000 plus $99 setup, within the USD 5,000 soft budget. Capacity 175 is oversized for 50 (oversized_capacity flag expected).",
+        "geo": "https://www.tagvenue.com/us/rooms/new-york/77196/event-loft-1505/studio-1505"
+      },
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "latitude": 40.755184,
+      "longitude": -73.99215,
+      "cost_rate_unit": "hour",
+      "opening_hours": "06:00-24:00",
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "allows_to_6",
+      "event_window_evidence": {
+        "url": "https://www.tagvenue.com/us/rooms/new-york/77196/event-loft-1505/studio-1505",
+        "title": "Studio 1505 at Event Loft 1505 — Tagvenue room listing",
+        "accessed_on": "2026-08-09",
+        "claim": "Tagvenue room page (accessed 2026-08-09) lists bookable hours 6:00 am-6:00 am (24-hour window) with a 3-hour minimum and a $50/hr doorman fee only after 10:00 PM, so an event ending at 18:00 is supported (allows_to_6)."
+      },
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "oversized_capacity",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "stale_evidence"
+      ],
+      "score": 0.54,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.6,
+          "weight": 0.2,
+          "contribution": 0.12
+        },
+        "capacity_fit": {
+          "factor": 0.0,
+          "weight": 0.2,
+          "contribution": 0.0
+        },
+        "catering_flexibility": {
+          "factor": 1.0,
+          "weight": 0.15,
+          "contribution": 0.15
+        },
+        "recording_suitability": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 0.7,
+          "weight": 0.1,
+          "contribution": 0.07
+        },
+        "technical_readiness": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "event_window_fit": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "total": 0.54
+      }
+    },
+    {
+      "name": "The Farm SoHo — SoHo Event Space (2nd Fl Loft Venue)",
+      "city_slug": "new-york-ny-us",
+      "address": "447 Broadway, 2nd Floor (Loft Venue), New York, NY 10013",
+      "capacity_comfortable": 50,
+      "capacity_basis": "venue_claim",
+      "screen_status": "confirmed",
+      "wifi_status": "confirmed",
+      "catering_policy": "unknown",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": 4000,
+      "cost_basis": "estimated_from_rate",
+      "cost_local_amount": 4000,
+      "cost_local_currency": "USD",
+      "hourly_rate_usd": 500,
+      "estimated_hours": 8,
+      "rate_estimate_note": "The Farm SoHo Soho 2nd Fl Loft Venue page price options (accessed 2026-08-09): Price Mon-Thu $350/h • $2,380/day; Price Fri-Sun $500/h • $3,400/day. 8-hour Saturday estimate at the Fri-Sun rate = $4,000, not a written quote.",
+      "booking_url": "https://www.thefarmsoho.com/event-venues/the-farm-soho/",
+      "verification_question_kinds": [
+        "availability",
+        "final_quote",
+        "room_assignment"
+      ],
+      "verification_questions": [
+        "Confirm live availability of the Soho 2nd Fl Loft Venue (Main Venue, up to 50 people) at 447 Broadway on the chosen 2026 Saturday.",
+        "Confirm the exact all-in Saturday total: the venue's price options publish Fri-Sun $500/h • $3,400/day and Mon-Thu $350/h • $2,380/day; 8-hour Saturday estimate = $4,000, not a written quote.",
+        "Confirm whether the 50 seated theater-style configuration requires additional rooms beyond the Main Venue (FAQ: 'can host 50 seated (theater style) or 75 standing, when additional rooms are booked'; the Main Venue option alone is published as 'Up to 50 people' at 1,154 sq ft), and confirm the all-in cost of the chosen room configuration."
+      ],
+      "source_url": "https://www.thefarmsoho.com/event-venues/the-farm-soho/",
+      "source_title": "SoHo Event Space NYC — The Farm SoHo (Soho 2nd Fl Loft Venue at 447 Broadway): Main Venue option data-option-capacity 'Up to 50 people', 1,154 sq ft; Price Fri-Sun $500/h • $3,400/day, Mon-Thu $350/h • $2,380/day; FAQ 'can host 50 seated (theater style) or 75 standing, when additional rooms are booked'; rental includes Wi-Fi, projector + large screen, TV, 2 wireless mics, speakers",
+      "accessed_on": "2026-08-09",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "The Farm SoHo Soho 2nd Fl Loft Venue page (accessed 2026-08-09) lists 'Soho - 2nd Fl - Loft Venue' at 447 Broadway, New York, NY 10013: Main Venue option with data-option-capacity 'Up to 50 people' and 1,154 sq ft; price options 'Price Mon-Thu $350/h • $2,380/day' and 'Price Fri-Sun $500/h • $3,400/day'; FAQ states 'The Farm Soho Event Venue can host 50 seated (theater style) or 75 standing, when additional rooms are booked'; rental fee includes 1 hour setup + 30 min breakdown, WIFI, furniture/chairs, and A/V systems with a projector with a large screen, a TV, 2 wireless microphones, and speakers; staff member on standby; 30-day full-refund cancellation; venue tours Mon-Fri 9am-5pm.",
+        "inference": "Capacity 50 is directly claim-bearing on the venue's own page for the specific Soho 2nd Fl Loft Venue (Main Venue option data-option-capacity 'Up to 50 people', 1,154 sq ft), replacing the prior carried venue-claim 50; the page does NOT establish that the Main Venue alone seats 50 theater-style — the FAQ's '50 seated (theater style) or 75 standing' is conditioned on additional rooms being booked, so room composition and seating layout for a 50-person talk event must be confirmed with the venue (room_assignment question). The Saturday (Fri-Sun) rate is $500/h • $3,400/day (not the Mon-Thu $350/h header rate), so an 8-hour Saturday estimate is $4,000, within the USD 5,000 soft budget; screen (projector + large screen + TV) and Wi-Fi are confirmed by the page's included-amenities FAQ.",
+        "geo": "https://www.thefarmsoho.com/event-venues/the-farm-soho/"
+      },
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "latitude": 40.720449,
+      "longitude": -74.001218,
+      "cost_rate_unit": "hour",
+      "opening_hours": "24/7",
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "allows_to_6",
+      "event_window_evidence": {
+        "url": "https://www.thefarmsoho.com/event-venues/the-farm-soho/",
+        "title": "SoHo Event Space NYC — The Farm SoHo (Soho 2nd Fl Loft Venue)",
+        "accessed_on": "2026-08-09",
+        "claim": "The Farm SoHo venue page (accessed 2026-08-09) states Operating hours Monday-Sunday 24/7 (front desk and tours Mon-Fri 9AM-5PM), so an event ending at 18:00 is supported (allows_to_6)."
+      },
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "availability_unconfirmed",
+        "final_quote_required",
+        "stale_evidence"
+      ],
+      "score": 0.51,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.2,
+          "weight": 0.2,
+          "contribution": 0.04
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "recording_suitability": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 0.7,
+          "weight": 0.1,
+          "contribution": 0.07
+        },
+        "technical_readiness": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "event_window_fit": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "total": 0.51
+      }
+    },
+    {
+      "name": "Well& by Durst at One Five One — Astoria",
+      "city_slug": "new-york-ny-us",
+      "address": "151 West 42nd Street, New York, NY 10036",
+      "capacity_comfortable": 70,
+      "capacity_basis": "seated",
+      "screen_status": "confirmed",
+      "wifi_status": "confirmed",
+      "catering_policy": "in_house_only",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": 10000,
+      "cost_basis": "published_rate",
+      "cost_local_amount": 10000,
+      "cost_local_currency": "USD",
+      "booking_url": "https://www.tagvenue.com/us/rooms/new-york/82993/well-by-durst-at-one-five-one/astoria",
+      "verification_question_kinds": [
+        "availability",
+        "final_quote"
+      ],
+      "verification_questions": [
+        "Confirm live availability of the Astoria room on the chosen 2026 Saturday.",
+        "Confirm the exact all-in session total and whether any smaller/weekend package exists below the published from-$10,000/session rate (well above the USD 5,000 soft budget — over_soft_budget flag expected)."
+      ],
+      "source_url": "https://www.tagvenue.com/us/rooms/new-york/82993/well-by-durst-at-one-five-one/astoria",
+      "source_title": "Astoria at Well& by Durst at One Five One — Tagvenue listing (70 seats / 75 standing, from $10,000/session, projector + Wi-Fi + PA, in-house catering only)",
+      "accessed_on": "2026-08-09",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "Tagvenue room page (accessed 2026-08-09) for Astoria at Well& by Durst at One Five One, 151 West 42nd Street, Times Square: up to 70 seats / 75 standing; facilities Wi-Fi, projector, whiteboard, flipchart, PA/speakers, conference call facilities; venue offers catering, external catering not allowed; from $10,000/session (all prices include sales tax).",
+        "inference": "Fully-equipped 70-person room but the published from-$10,000/session rate far exceeds the USD 5,000 soft budget; preserved as a selectable-with-flags candidate (over_soft_budget) per v2 cost-is-not-a-gate policy.",
+        "geo": "https://www.tagvenue.com/us/rooms/new-york/82993/well-by-durst-at-one-five-one/astoria"
+      },
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "latitude": 40.755404,
+      "longitude": -73.985225,
+      "cost_rate_unit": "event",
+      "opening_hours": "06:00-24:00",
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "allows_to_6",
+      "event_window_evidence": {
+        "url": "https://www.tagvenue.com/us/rooms/new-york/82993/well-by-durst-at-one-five-one/astoria",
+        "title": "Astoria at Well& by Durst at One Five One — Tagvenue room listing",
+        "accessed_on": "2026-08-09",
+        "claim": "Tagvenue room page (accessed 2026-08-09) lists bookable hours 6:00 am-6:00 am (24-hour window) for the Astoria session rate, so an event ending at 18:00 is supported (allows_to_6)."
+      },
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "over_soft_budget",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "stale_evidence"
+      ],
+      "score": 0.5075,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.0,
+          "weight": 0.2,
+          "contribution": 0.0
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 0.25,
+          "weight": 0.15,
+          "contribution": 0.0375
+        },
+        "recording_suitability": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 0.7,
+          "weight": 0.1,
+          "contribution": 0.07
+        },
+        "technical_readiness": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "event_window_fit": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "total": 0.5075
+      }
+    },
+    {
+      "name": "Bogart House — Main Floor",
+      "city_slug": "new-york-ny-us",
+      "address": "230 Bogart Street, Brooklyn, NY 11206",
+      "capacity_comfortable": 300,
+      "capacity_basis": "venue_claim",
+      "screen_status": "unknown",
+      "wifi_status": "unknown",
+      "catering_policy": "unknown",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": 2000,
+      "cost_basis": "published_rate",
+      "cost_local_amount": 2000,
+      "cost_local_currency": "USD",
+      "booking_url": "https://www.tagvenue.com/us/hire/large-venues/new-york-city",
+      "verification_question_kinds": [
+        "availability",
+        "final_quote",
+        "screen",
+        "wifi"
+      ],
+      "verification_questions": [
+        "Confirm live availability of the Main Floor on the chosen 2026 Saturday and obtain the room page/quote (this record's evidence is the Tagvenue NYC large-venues hub listing).",
+        "Confirm the exact all-in Saturday total and whether the from-$2,000/day rate applies to an 8-hour day event.",
+        "Confirm screen/projector availability (not stated in the hub listing).",
+        "Confirm Wi-Fi availability (not stated in the hub listing)."
+      ],
+      "source_url": "https://www.tagvenue.com/us/hire/large-venues/new-york-city",
+      "source_title": "Large Event Venues for Rent in New York City — Tagvenue hub listing (Bogart House Main Floor, 300 guests, from $2,000/day, Williamsburg)",
+      "accessed_on": "2026-08-09",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "Tagvenue New York City large-venues hub page (accessed 2026-08-09) lists 'Bogart House (Main Floor), 300 guests, Bogart House (8), Williamsburg, New York City, NY, from $2,000 hire fee / per day'.",
+        "inference": "Published day rate $2,000 is within the soft budget but capacity 300 is far oversized for a 50-person event (oversized_capacity flag expected); screen/Wi-Fi unverified.",
+        "geo": "https://www.tagvenue.com/us/venues/new-york/29451/bogart-house"
+      },
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "latitude": 40.711619,
+      "longitude": -73.935601,
+      "cost_rate_unit": "day",
+      "opening_hours": "10:00-04:00",
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "allows_to_6",
+      "event_window_evidence": {
+        "url": "https://www.tagvenue.com/us/venues/new-york/29451/bogart-house",
+        "title": "Bogart House — Tagvenue venue listing (opening hours + prices)",
+        "accessed_on": "2026-08-09",
+        "claim": "Tagvenue venue page (accessed 2026-08-09) lists Bogart House (Main Floor) bookable 10:00 am-4:00 am per day, so an event ending at 18:00 is supported (allows_to_6)."
+      },
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "oversized_capacity",
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "stale_evidence"
+      ],
+      "score": 0.34,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.6,
+          "weight": 0.2,
+          "contribution": 0.12
+        },
+        "capacity_fit": {
+          "factor": 0.0,
+          "weight": 0.2,
+          "contribution": 0.0
+        },
+        "catering_flexibility": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "recording_suitability": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 0.7,
+          "weight": 0.1,
+          "contribution": 0.07
+        },
+        "technical_readiness": {
+          "factor": 0.0,
+          "weight": 0.05,
+          "contribution": 0.0
+        },
+        "event_window_fit": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "total": 0.34
+      }
+    },
+    {
+      "name": "Jay Conference Bryant Park — The Dubai Room",
+      "city_slug": "new-york-ny-us",
+      "address": "109 West 39th Street, 2nd Floor & Concourse Level, New York, NY 10018",
+      "capacity_comfortable": 150,
+      "capacity_basis": "venue_claim",
+      "screen_status": "unknown",
+      "wifi_status": "unknown",
+      "catering_policy": "unknown",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": 24000,
+      "cost_basis": "estimated_from_rate",
+      "cost_local_amount": 24000,
+      "cost_local_currency": "USD",
+      "hourly_rate_usd": 3000,
+      "estimated_hours": 8,
+      "rate_estimate_note": "Tagvenue New York conference-rooms hub page lists The Dubai Room (150 guests) at Jay Conference Bryant Park from $3,000/hour; 8-hour estimate = $24,000, not a written quote.",
+      "booking_url": "https://www.tagvenue.com/us/hire/conference-rooms/new-york-city",
+      "verification_question_kinds": [
+        "availability",
+        "final_quote",
+        "screen",
+        "wifi",
+        "event_window"
+      ],
+      "verification_questions": [
+        "Confirm live availability of The Dubai Room on the chosen 2026 Saturday and obtain the room page/quote.",
+        "Confirm the exact all-in Saturday total; the from-$3,000/hour rate far exceeds the USD 5,000 soft budget (over_soft_budget flag expected).",
+        "Confirm screen/projector availability (not stated in the hub listing).",
+        "Confirm Wi-Fi availability (not stated in the hub listing).",
+        "Confirm The Dubai Room's booking window on the chosen 2026 Saturday (opening/closing time and whether a full-day 09:00-17:00 or 09:00-18:00 booking is allowed); the cited Tagvenue hub listing does not publish room hours."
+      ],
+      "source_url": "https://www.tagvenue.com/us/hire/conference-rooms/new-york-city",
+      "source_title": "Conference Rooms for Rent in New York City — Tagvenue hub listing (The Dubai Room at Jay Conference Bryant Park, 150 guests, from $3,000/hr)",
+      "accessed_on": "2026-08-09",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "Tagvenue New York City conference-rooms hub page (accessed 2026-08-09) lists 'The Dubai Room, 150 guests, Jay Conference Bryant Park, Garment District, New York City, NY, from $3,000 hire fee / per hour'.",
+        "inference": "Capacity 150 fits 50 attendees but the published rate is far above the soft budget; preserved as a selectable-with-flags candidate (over_soft_budget, oversized_capacity) per v2 cost-is-not-a-gate policy.",
+        "geo": "https://www.eventective.com/new-york-ny/jay-conference-bryant-park-749847.html"
+      },
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "latitude": 40.753112,
+      "longitude": -73.985685,
+      "cost_rate_unit": "hour",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "over_soft_budget",
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "score": 0.315,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.0,
+          "weight": 0.2,
+          "contribution": 0.0
+        },
+        "capacity_fit": {
+          "factor": 0.6,
+          "weight": 0.2,
+          "contribution": 0.12
+        },
+        "catering_flexibility": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "recording_suitability": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 0.7,
+          "weight": 0.1,
+          "contribution": 0.07
+        },
+        "technical_readiness": {
+          "factor": 0.0,
+          "weight": 0.05,
+          "contribution": 0.0
+        },
+        "event_window_fit": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "total": 0.315
+      }
+    },
+    {
+      "name": "VOLUME — The Club",
+      "city_slug": "new-york-ny-us",
+      "address": "265 West 37th Street, New York, NY 10018",
+      "capacity_comfortable": 225,
+      "capacity_basis": "venue_claim",
+      "screen_status": "unknown",
+      "wifi_status": "unknown",
+      "catering_policy": "unknown",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": 3000,
+      "cost_basis": "estimated_from_rate",
+      "cost_local_amount": 3000,
+      "cost_local_currency": "USD",
+      "hourly_rate_usd": 375,
+      "estimated_hours": 8,
+      "rate_estimate_note": "Tagvenue New York large-venues hub page lists VOLUME - The Club (225 guests) from $375/hour; 8-hour estimate = $3,000, not a written quote.",
+      "booking_url": "https://www.tagvenue.com/us/hire/large-venues/new-york-city",
+      "verification_question_kinds": [
+        "availability",
+        "final_quote",
+        "screen",
+        "wifi"
+      ],
+      "verification_questions": [
+        "Confirm live availability of VOLUME - The Club on the chosen 2026 Saturday and obtain the room page/quote.",
+        "Confirm the exact all-in Saturday total at the from-$375/hour rate including taxes/fees.",
+        "Confirm screen/projector availability (not stated in the hub listing).",
+        "Confirm Wi-Fi availability (not stated in the hub listing)."
+      ],
+      "source_url": "https://www.tagvenue.com/us/hire/large-venues/new-york-city",
+      "source_title": "Large Event Venues for Rent in New York City — Tagvenue hub listing (VOLUME - The Club, 225 guests, from $375/hr, Garment District)",
+      "accessed_on": "2026-08-09",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "Tagvenue New York City large-venues hub page (accessed 2026-08-09) lists 'VOLUME - The Club, 225 guests, VOLUME (36), Garment District, New York City, NY, from $375 hire fee / per hour'.",
+        "inference": "Capacity far exceeds 50 (oversized_capacity flag expected); 8-hour estimate $3,000 is within the soft budget. Screen/Wi-Fi unverified from the hub listing.",
+        "geo": "https://www.tagvenue.com/us/rooms/new-york/51662/volume/volume-the-club"
+      },
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "latitude": 40.754075,
+      "longitude": -73.991656,
+      "cost_rate_unit": "hour",
+      "opening_hours": "10:00-04:00",
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "allows_to_6",
+      "event_window_evidence": {
+        "url": "https://www.tagvenue.com/us/rooms/new-york/51662/volume/volume-the-club",
+        "title": "VOLUME - The Club at VOLUME — Tagvenue room listing",
+        "accessed_on": "2026-08-09",
+        "claim": "Tagvenue room page (accessed 2026-08-09) lists Saturday 10:00 am-4:00 am availability (alcohol licence until 3:00 am), so an event ending at 18:00 is supported (allows_to_6)."
+      },
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "oversized_capacity",
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "stale_evidence"
+      ],
+      "score": 0.3,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.4,
+          "weight": 0.2,
+          "contribution": 0.08
+        },
+        "capacity_fit": {
+          "factor": 0.0,
+          "weight": 0.2,
+          "contribution": 0.0
+        },
+        "catering_flexibility": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "recording_suitability": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 0.7,
+          "weight": 0.1,
+          "contribution": 0.07
+        },
+        "technical_readiness": {
+          "factor": 0.0,
+          "weight": 0.05,
+          "contribution": 0.0
+        },
+        "event_window_fit": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "total": 0.3
+      }
+    },
+    {
+      "name": "Ideal Glass Studios — Atrium",
+      "city_slug": "new-york-ny-us",
+      "address": "9 West 8th Street, New York, NY 10011",
+      "capacity_comfortable": 500,
+      "capacity_basis": "venue_claim",
+      "screen_status": "unknown",
+      "wifi_status": "unknown",
+      "catering_policy": "unknown",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": 10000,
+      "cost_basis": "estimated_from_rate",
+      "cost_local_amount": 10000,
+      "cost_local_currency": "USD",
+      "hourly_rate_usd": 1250,
+      "estimated_hours": 8,
+      "rate_estimate_note": "Tagvenue New York large-venues hub page lists the Atrium (500 guests) at Ideal Glass Studios from $1,250/hour; 8-hour estimate = $10,000, not a written quote.",
+      "booking_url": "https://www.tagvenue.com/us/hire/large-venues/new-york-city",
+      "verification_question_kinds": [
+        "availability",
+        "final_quote",
+        "screen",
+        "wifi",
+        "event_window"
+      ],
+      "verification_questions": [
+        "Confirm live availability of the Atrium on the chosen 2026 Saturday and obtain the room page/quote.",
+        "Confirm the exact all-in Saturday total at the from-$1,250/hour rate (8-hour estimate $10,000 is above the USD 5,000 soft budget — over_soft_budget flag expected).",
+        "Confirm screen/projector availability (not stated in the hub listing).",
+        "Confirm Wi-Fi availability (not stated in the hub listing).",
+        "Confirm the Atrium's booking window on the chosen 2026 Saturday (opening/closing time and whether a full-day 09:00-17:00 or 09:00-18:00 booking is allowed); no window hours are published on the cited sources."
+      ],
+      "source_url": "https://www.tagvenue.com/us/hire/large-venues/new-york-city",
+      "source_title": "Large Event Venues for Rent in New York City — Tagvenue hub listing (Atrium at Ideal Glass Studios, 500 guests, from $1,250/hr, Greenwich Village)",
+      "accessed_on": "2026-08-09",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "Tagvenue New York City large-venues hub page (accessed 2026-08-09) lists 'Atrium, 500 guests, Ideal Glass Studios (4), Greenwich Village, New York City, NY, from $1,250 hire fee / per hour'.",
+        "inference": "Capacity far exceeds 50 (oversized_capacity flag expected) and the 8-hour estimate $10,000 exceeds the soft budget (over_soft_budget flag expected); preserved as a selectable-with-flags candidate per v2 cost-is-not-a-gate policy.",
+        "geo": "https://idealglassstudios.com/"
+      },
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "latitude": 40.73275,
+      "longitude": -73.996995,
+      "cost_rate_unit": "hour",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "oversized_capacity",
+        "over_soft_budget",
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "score": 0.195,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.0,
+          "weight": 0.2,
+          "contribution": 0.0
+        },
+        "capacity_fit": {
+          "factor": 0.0,
+          "weight": 0.2,
+          "contribution": 0.0
+        },
+        "catering_flexibility": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "recording_suitability": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 0.7,
+          "weight": 0.1,
+          "contribution": 0.07
+        },
+        "technical_readiness": {
+          "factor": 0.0,
+          "weight": 0.05,
+          "contribution": 0.0
+        },
+        "event_window_fit": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "total": 0.195
+      }
+    }
+  ],
+  "lead": [
+    {
+      "name": "Brooklyn Public Library — Meeting Rooms",
+      "city_slug": "new-york-ny-us",
+      "address": "Multiple Brooklyn branches; Central Library at Grand Army Plaza, Brooklyn, NY",
+      "capacity_comfortable": 50,
+      "capacity_basis": "unknown",
+      "screen_status": "unknown",
+      "wifi_status": "unknown",
+      "catering_policy": "unknown",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": null,
+      "cost_basis": "unknown",
+      "booking_url": "https://www.bklynlibrary.org/use-the-library/meeting-rooms",
+      "verification_question_kinds": [
+        "cost_unknown",
+        "capacity",
+        "availability",
+        "screen",
+        "wifi",
+        "event_window"
+      ],
+      "verification_questions": [
+        "Confirm whether a Numerai-funded free community event qualifies as a community/non-profit group under BPL's meeting-room policy and what (if any) fee applies.",
+        "Confirm which branch meeting rooms seat 50+ attendees and their comfortable capacity (most branch rooms are smaller; Central Library spaces are larger).",
+        "Confirm availability on the chosen 2026 Saturday (library hours and room-reservation windows apply).",
+        "Confirm screen/projector availability in the booked room.",
+        "Confirm Wi-Fi availability in the booked room.",
+        "Confirm the meeting-room booking window at the chosen branch on the chosen 2026 Saturday (library hours and room-reservation windows apply; most branch rooms are smaller and Central Library spaces are larger); the cited page does not publish per-room hours."
+      ],
+      "source_url": "https://web.archive.org/web/2026/https://www.bklynlibrary.org/use-the-library/meeting-rooms",
+      "source_title": "Meeting Rooms — Brooklyn Public Library (Wayback snapshot, accessed 2026-08-09; meeting rooms for patron/community/non-profit use)",
+      "accessed_on": "2026-08-09",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "Wayback snapshot of bklynlibrary.org/use-the-library/meeting-rooms (accessed 2026-08-09) confirms BPL operates a meeting-rooms program across ~60 branches including the Central Library at Grand Army Plaza; the live page was Cloudflare-protected on 2026-08-09. A prior same-day research pass recorded BPL policy allowing designated meeting rooms for patrons and community/non-profit groups holding educational, cultural, or civic meetings, with reservation limits and some rooms at the Central Library suitable for larger groups.",
+        "inference": "A free educational AI/Web3 meetup may fit BPL's community-use intent, but capacity for 50, fee, screen, and Wi-Fi are unconfirmed — lead tier until the branch and room are identified.",
+        "geo": "https://maps.apple.com/place?address=10+Grand+Army+Plaza,+Brooklyn,+NY+11238,+United+States&coordinate=40.672952882052016,-73.96990656852722&name=Brooklyn+Public+Library+-+Central+Library"
+      },
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "latitude": 40.674574,
+      "longitude": -73.970429,
+      "cost_rate_unit": "unknown",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "venue_tier": "lead",
+      "tier_reasons": [
+        "material verification question(s): capacity"
+      ],
+      "venue_flags": [
+        "cost_unknown",
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "score": null,
+      "score_breakdown": null
+    },
+    {
+      "name": "Coalition Space Penn Station — 12-Person Conference Room",
+      "city_slug": "new-york-ny-us",
+      "address": "462 Seventh Ave, FL 6, New York, NY 10018",
+      "capacity_comfortable": 12,
+      "capacity_basis": "seated",
+      "screen_status": "no",
+      "wifi_status": "confirmed",
+      "catering_policy": "unknown",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": 400,
+      "cost_basis": "estimated_from_rate",
+      "cost_local_amount": 400,
+      "cost_local_currency": "USD",
+      "hourly_rate_usd": 50,
+      "estimated_hours": 8,
+      "rate_estimate_note": "Tagvenue lists the 12-Person Conference Room at Coalition Space Penn Station from $50/hour; 8-hour estimate = $400, not a written quote.",
+      "booking_url": "https://www.tagvenue.com/us/venues/new-york/29979/coalition-space-penn-station",
+      "verification_question_kinds": [
+        "availability",
+        "final_quote",
+        "screen",
+        "capacity"
+      ],
+      "verification_questions": [
+        "Confirm live availability on the chosen 2026 Saturday.",
+        "Confirm the exact all-in Saturday total at the from-$50/hour rate.",
+        "Confirm screen options (the listing marks projector as unavailable; a TV/monitor may be available — verify).",
+        "Confirm capacity: 12 seats is far below the 50-attendee target (lead-tier capacity gap)."
+      ],
+      "source_url": "https://www.tagvenue.com/us/venues/new-york/29979/coalition-space-penn-station",
+      "source_title": "Coalition Space Penn Station — Tagvenue venue listing (12-seat conference room from $50/hr, Wi-Fi, no projector, external catering not offered)",
+      "accessed_on": "2026-08-09",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "Tagvenue venue page (accessed 2026-08-09) for Coalition Space Penn Station, 462 Seventh Ave FL 6, Garment District: 12-Person Conference Room, up to 12 seats / 12 standing, from $50 hire fee, Wi-Fi available, projector unavailable, flipchart unavailable; venue doesn't offer catering.",
+        "inference": "Capacity 12 is a material gap for a 50-person event — lead tier, recorded to document the search breadth.",
+        "geo": "https://www.tagvenue.com/us/venues/new-york/29979/coalition-space-penn-station"
+      },
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "latitude": 40.751964,
+      "longitude": -73.990328,
+      "cost_rate_unit": "hour",
+      "opening_hours": "09:00-17:00",
+      "closing_time": "17:00",
+      "max_booking_hours": 8.0,
+      "event_window_status": "cannot_to_5",
+      "event_window_evidence": {
+        "url": "https://www.tagvenue.com/us/venues/new-york/29979/coalition-space-penn-station",
+        "title": "Coalition Space Penn Station — Tagvenue venue listing (opening hours)",
+        "accessed_on": "2026-08-09",
+        "claim": "Tagvenue venue page (accessed 2026-08-09) lists Saturday Closed for the 12-Person Conference Room (weekdays 9:00 am-5:00 pm), so the venue cannot support a Saturday event ending at 17:00 (cannot_to_5)."
+      },
+      "venue_tier": "lead",
+      "tier_reasons": [
+        "material verification question(s): capacity",
+        "capacity_comfortable 12 below minimum 40"
+      ],
+      "venue_flags": [
+        "screen_unavailable",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "duration_window_not_supported",
+        "stale_evidence"
+      ],
+      "score": null,
+      "score_breakdown": null
+    },
+    {
+      "name": "Jay Suites — Chelsea Location (Meeting Room C)",
+      "city_slug": "new-york-ny-us",
+      "address": "159 West 25th Street, Floors 4, 5, 7 & 8, New York, NY 10001",
+      "capacity_comfortable": 14,
+      "capacity_basis": "seated",
+      "screen_status": "confirmed",
+      "wifi_status": "confirmed",
+      "catering_policy": "in_house_only",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": 600,
+      "cost_basis": "estimated_from_rate",
+      "cost_local_amount": 600,
+      "cost_local_currency": "USD",
+      "hourly_rate_usd": 75,
+      "estimated_hours": 8,
+      "rate_estimate_note": "Tagvenue lists Meeting Room C (*50% Promo*) at Jay Suites Chelsea from $75/hour; 8-hour estimate = $600, not a written quote.",
+      "booking_url": "https://www.tagvenue.com/us/venues/new-york/47427/jay-suites-chelsea-location",
+      "verification_question_kinds": [
+        "availability",
+        "final_quote",
+        "capacity",
+        "room_assignment"
+      ],
+      "verification_questions": [
+        "Confirm live availability on the chosen 2026 Saturday.",
+        "Confirm the exact all-in Saturday total at the promotional from-$75/hour rate.",
+        "Confirm capacity: Meeting Room C seats 14 — far below the 50-attendee target (lead-tier capacity gap); confirm whether multiple rooms can be combined into one event space.",
+        "Confirm which room configuration (if any) hosts a single 50-person event."
+      ],
+      "source_url": "https://www.tagvenue.com/us/venues/new-york/47427/jay-suites-chelsea-location",
+      "source_title": "Jay Suites - Chelsea Location — Tagvenue venue listing (Meeting Room C *50% Promo* from $75/hr, 14 seats; venue up to 268 seats across rooms; Wi-Fi, flatscreen TV, in-house catering only)",
+      "accessed_on": "2026-08-09",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "Tagvenue venue page (accessed 2026-08-09) for Jay Suites Chelsea, 159 West 25th Street, NoMad: venue overview states from $30 hire fee, up to 268 seats across the location; Meeting Room C *50% Promo* seats 14, from $75/hr, Wi-Fi + flatscreen TV + whiteboard + conference call facilities, in-house catering only, 1-hour minimum.",
+        "inference": "Individual meeting rooms seat 5-14; no single room fits 50, and multi-room combination for one 50-person event is unconfirmed — lead-tier capacity gap.",
+        "geo": "https://www.tagvenue.com/us/venues/new-york/47427/jay-suites-chelsea-location"
+      },
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "latitude": 40.745284,
+      "longitude": -73.993956,
+      "cost_rate_unit": "hour",
+      "opening_hours": "09:00-18:00",
+      "closing_time": "18:00",
+      "max_booking_hours": 9.0,
+      "event_window_status": "allows_to_6",
+      "event_window_evidence": {
+        "url": "https://www.tagvenue.com/us/venues/new-york/47427/jay-suites-chelsea-location",
+        "title": "Jay Suites - Chelsea Location — Tagvenue venue listing (opening hours)",
+        "accessed_on": "2026-08-09",
+        "claim": "Tagvenue venue page (accessed 2026-08-09) lists Meeting Room C bookable 9:00 am-6:00 pm, so an event ending at 18:00 is supported (allows_to_6)."
+      },
+      "venue_tier": "lead",
+      "tier_reasons": [
+        "material verification question(s): capacity",
+        "capacity_comfortable 14 below minimum 40"
+      ],
+      "venue_flags": [
+        "availability_unconfirmed",
+        "final_quote_required",
+        "stale_evidence"
+      ],
+      "score": null,
+      "score_breakdown": null
+    }
+  ]
+}
