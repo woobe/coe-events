@@ -4,6 +4,7 @@
     "city_slug": "montreal-qc-ca",
     "start_date": "2026-09-16",
     "end_date": "2026-09-17",
+    "kind": "related",
     "relevance": "ai",
     "conflict_severity": "medium",
     "source_url": "https://allinevent.ai/",
@@ -24,8 +25,9 @@
     "city_slug": "montreal-qc-ca",
     "start_date": "2026-09-20",
     "end_date": "2026-09-27",
+    "kind": "major_other",
     "relevance": "other",
-    "conflict_severity": "medium",
+    "conflict_severity": "none",
     "source_url": "https://www.montreal2026.org/en/our-ambassadors-on-recon-in-monteregie/",
     "source_title": "Montréal 2026 (official UCI Road World Championships host site) — Elite Women and Men road races on September 26 and 27, 2026",
     "accessed_on": "2026-08-10",
@@ -44,6 +46,7 @@
     "city_slug": "montreal-qc-ca",
     "start_date": "2026-10-13",
     "end_date": "2026-10-16",
+    "kind": "related",
     "relevance": "ai",
     "conflict_severity": "medium",
     "source_url": "https://mtlconnecte.ca/en/",
@@ -60,30 +63,11 @@
     }
   },
   {
-    "event_name": "The Techfair (Mount Royal Center)",
-    "city_slug": "montreal-qc-ca",
-    "start_date": "2026-09-30",
-    "end_date": "2026-10-01",
-    "relevance": "ai",
-    "conflict_severity": "low",
-    "source_url": "https://10times.com/montreal-ca/education-training?month=october",
-    "source_title": "The Techfair — September 30 to October 1, 2026, Mount Royal Center, Montreal (10times listing, re-verified 2026-08-09)",
-    "accessed_on": "2026-08-10",
-    "needs_human_verify": true,
-    "verification_questions": [
-      "Confirm The Techfair dates (September 30 - October 1) and scope from the organizer; the 10times listing is a secondary calendar.",
-      "Assess whether a two-day weekday tech trade event adjacent to candidate Saturday 2026-10-03 affects the community-meetup audience."
-    ],
-    "evidence": {
-      "observed_facts": "Re-verified 2026-08-09: 10times.com/montreal-ca/education-training?month=october lists The Techfair at the Mount Royal Center in Montreal from September 30 to October 1, 2026 as a premier gathering for technology enthusiasts, innovators, and industry leaders.",
-      "inference": "Weekday tech event ending two days before candidate Saturday 2026-10-03; low direct audience overlap but adds to the early-October tech cluster."
-    }
-  },
-  {
     "event_name": "ICBC 2026 — International Conference on Blockchain and Cryptocurrencies (Montreal-titled academic aggregator listing)",
     "city_slug": "montreal-qc-ca",
     "start_date": "2026-10-26",
     "end_date": "2026-10-29",
+    "kind": "related",
     "relevance": "crypto",
     "conflict_severity": "low",
     "source_url": "https://conferenceindex.org/event/international-conference-on-blockchain-and-cryptocurrencies-icbc-2026-october-montreal-ca",
@@ -104,6 +88,7 @@
     "city_slug": "montreal-qc-ca",
     "start_date": "2026-10-29",
     "end_date": "2026-10-29",
+    "kind": "related",
     "relevance": "ai",
     "conflict_severity": "low",
     "source_url": "https://www.eventbrite.com/e/women-in-tech-montreal-2026-tickets-1993040074514",
@@ -117,26 +102,6 @@
     "evidence": {
       "observed_facts": "v1 research recorded an Eventbrite listing for Women in Tech Montreal 2026 on Thursday, October 29, 2026 at 6:00 PM, organized by OutGeekWomen / Badass Pros, venue not yet fixed. Re-verification on 2026-08-09 surfaced womenhack.com/women-in-tech/montreal/ (general hub, September 2026 events mentioned) but not a live copy of the specific October 29 Eventbrite listing.",
       "inference": "Weekday evening tech networking event adjacent to late-October candidate Saturdays; low direct conflict. The specific listing could not be re-confirmed on 2026-08-09, so the record stays a low-severity awareness flag with a verification question."
-    }
-  },
-  {
-    "event_name": "/dev/mtl 2026",
-    "city_slug": "montreal-qc-ca",
-    "start_date": "2026-11-27",
-    "end_date": "2026-11-27",
-    "relevance": "other",
-    "conflict_severity": "low",
-    "source_url": "https://www.eventbrite.com/e/devmtl-2026-tickets-1987111133893",
-    "source_title": "/dev/mtl 2026 Tickets — Friday, November 27, 2026, 8 AM-5 PM, Concordia University, Montreal (Eventbrite registration page)",
-    "accessed_on": "2026-08-10",
-    "needs_human_verify": true,
-    "verification_questions": [
-      "Confirm the final program, venue arrangements, and whether AI/ML, Web3, or community programming is included; the registration listing establishes a developer conference, not those topic details.",
-      "Assess whether its Friday timing creates relevant local-community awareness for any future Montreal event; no participant overlap or side-event opportunity is asserted."
-    ],
-   "evidence": {
-      "observed_facts": "The live Eventbrite registration page title identifies '/dev/mtl 2026' as Friday, November 27, 8 AM-5 PM. Search-result metadata for the same registration listing identifies Concordia University, Montreal, QC; the organizer's official /dev/mtl site describes the event as supporting the Montreal tech community but did not expose the dated event detail in the page text reviewed.",
-      "inference": "This is a dated local developer-community awareness signal in the extended November window. Its specific AI/ML and Web3 relevance is unconfirmed, so it is kept as a low-severity AI-adjacent flag rather than evidence of overlap."
     }
   }
 ]

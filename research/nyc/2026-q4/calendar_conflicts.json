@@ -4,6 +4,7 @@
     "city_slug": "new-york-ny-us",
     "start_date": "2026-09-10",
     "end_date": "2026-09-19",
+    "kind": "related",
     "relevance": "web3",
     "conflict_severity": "high",
     "source_url": "https://unblockchainweek.com/events/",
@@ -24,6 +25,7 @@
     "city_slug": "new-york-ny-us",
     "start_date": "2026-10-06",
     "end_date": "2026-10-08",
+    "kind": "related",
     "relevance": "crypto",
     "conflict_severity": "medium",
     "source_url": "https://blockchainacademics.com/events/messari-mainnet-2026",
@@ -44,6 +46,7 @@
     "city_slug": "new-york-ny-us",
     "start_date": "2026-10-05",
     "end_date": "2026-10-11",
+    "kind": "related",
     "relevance": "ai",
     "conflict_severity": "medium",
     "source_url": "https://pulse.nyc/ai-week/",
@@ -64,6 +67,7 @@
     "city_slug": "new-york-ny-us",
     "start_date": "2026-10-12",
     "end_date": "2026-10-14",
+    "kind": "related",
     "relevance": "ai",
     "conflict_severity": "medium",
     "source_url": "https://www.ai.engineer/nyc/2026",
@@ -84,6 +88,7 @@
     "city_slug": "new-york-ny-us",
     "start_date": "2026-10-27",
     "end_date": "2026-10-29",
+    "kind": "related",
     "relevance": "crypto",
     "conflict_severity": "low",
     "source_url": "https://swell.ripple.com/",
@@ -100,52 +105,13 @@
     }
   },
   {
-    "event_name": "The Bridge Conference 2026",
-    "city_slug": "new-york-ny-us",
-    "start_date": "2026-10-27",
-    "end_date": "2026-10-27",
-    "relevance": "web3",
-    "conflict_severity": "low",
-    "source_url": "https://events.coinpedia.org/the-bridge-conference-2026-8654/",
-    "source_title": "The Bridge Conference 2026 — October 27, 2026, New York City (coinpedia events listing)",
-    "accessed_on": "2026-08-10",
-    "needs_human_verify": true,
-    "verification_questions": [
-      "Confirm The Bridge Conference 2026 date and venue; listed only on a secondary events aggregator (coinpedia).",
-      "Assess whether this one-day institutional digital-assets event affects the candidate weekends 2026-10-24 or 2026-10-31 (likely negligible for a community meetup)."
-    ],
-    "evidence": {
-      "observed_facts": "events.coinpedia.org lists The Bridge Conference 2026 in New York City on October 27, 2026, connecting finance and digital-assets/blockchain voices.",
-      "inference": "Weekday single-day event in the same late-October week as Swell and ONUG; adds to the crypto cluster adjacent to candidate Saturdays but low same-day impact."
-    }
-  },
-  {
-    "event_name": "ONUG AI Networking Summit New York (Fall 2026)",
-    "city_slug": "new-york-ny-us",
-    "start_date": "2026-10-28",
-    "end_date": "2026-10-29",
-    "relevance": "ai",
-    "conflict_severity": "low",
-    "source_url": "https://onug.net/ai-networking-summit-nyc-fall-2026/",
-    "source_title": "AI Networking Summit New York 2026 (ONUG) — official page: October 28-29, 2026, 1,000+ attendees, 45+ sponsors",
-    "accessed_on": "2026-08-10",
-    "needs_human_verify": true,
-    "verification_questions": [
-      "Confirm ONUG AI Networking Summit NYC fall 2026 dates (Oct 28-29) and venue from the organizer.",
-      "Assess whether an enterprise-IT/AI audience event adjacent to candidate Saturdays 2026-10-24 and 2026-10-31 matters for a free community AI/Web3 meetup (likely low overlap)."
-    ],
-    "evidence": {
-      "observed_facts": "Official onug.net page states the AI Networking Summit New York 2026 takes place October 28-29, 2026, with 1,000+ attendees and 45+ sponsors; the fall 2026 agenda page confirms the two-day window.",
-      "inference": "Weekday enterprise-focused event; low audience overlap with a free community AI/Web3 meetup, added here as an awareness signal for the late-October cluster."
-    }
-  },
-  {
     "event_name": "TCS New York City Marathon 2026",
     "city_slug": "new-york-ny-us",
     "start_date": "2026-11-01",
     "end_date": "2026-11-01",
+    "kind": "major_other",
     "relevance": "other",
-    "conflict_severity": "high",
+    "conflict_severity": "none",
     "source_url": "https://organizations.nyrr.org/sites/organization_sites/07a100ee6605183fc2df/pages/2026_tcs_new_york_city_marathon",
     "source_title": "Team for Kids — 2026 TCS New York City Marathon: November 1, 2026 (NYRR official charity-program page)",
     "accessed_on": "2026-08-10",
@@ -164,6 +130,7 @@
     "city_slug": "new-york-ny-us",
     "start_date": "2026-12-02",
     "end_date": "2026-12-03",
+    "kind": "related",
     "relevance": "ai",
     "conflict_severity": "medium",
     "source_url": "https://summit.ai/",
@@ -184,6 +151,7 @@
     "city_slug": "new-york-ny-us",
     "start_date": "2026-12-09",
     "end_date": "2026-12-10",
+    "kind": "related",
     "relevance": "ai",
     "conflict_severity": "high",
     "source_url": "https://newyork.theaisummit.com/",
