@@ -1,0 +1,36 @@
+# Sources: Boston (boston-ma-us)
+
+32 source(s) referenced by this event plan.
+
+1. [DahShu Data Science Symposium 2026 (official): October 22-23, 2026, Harvard Medical School Joseph B. Martin Conference Center, Boston MA](https://2026.dahshu.org/) — accessed 2026-08-12
+2. [Boston AI Week 2026 — The Festival of AI in Massachusetts (official): September 16 – October 28, 2026; core festival week September 24 – October 2; flagship Boston AI Summit on October 1, 2026 at Foundation Medicine, 400 Summer Street, Boston (250 seats, by application)](https://aiweek.boston/) — accessed 2026-08-12
+3. [AI Tinkerers Boston — AI Events, Meetups, and Builder Demos 2026 (official chapter page)](https://boston.aitinkerers.org/) — accessed 2026-08-12
+4. [Impact Hub Boston (official boston.impacthub.net, fetched 2026-08-12): 'Coming Soon' page stating the hub is developing new space, events, services, partnerships, and programs and that a new location is coming soon](https://boston.impacthub.net/) — accessed 2026-08-12
+5. [PyData Boston — official Boston-area chapter page (PyData / NumFOCUS)](https://boston.pydata.org/) — accessed 2026-08-12
+6. [Boston Book Festival (official bostonbookfest.org): Saturday, October 17, 2026, 10am-5pm, Copley Square, Boston](https://bostonbookfest.org/) — accessed 2026-08-12
+7. [Boston Fintech Week 2026 — official Fintech Sandbox page: September 22-25, 2026, Boston MA; theme 'Fintech That Thinks'; headlined by the Fintech Sandbox Innovation Forum (September 22-23)](https://bostonfintechweek.org/) — accessed 2026-08-12
+8. [The Foundry (Cambridge) — Event Rentals (official cambridgefoundry.org, fetched 2026-08-12): Performance Space 2,067 sq ft, 150 standing / 115 seated, speakers, mics, projector; small event rentals $300/hr business hours](https://cambridgefoundry.org/event-rentals) — accessed 2026-08-12
+9. [CIC Cambridge — Event Spaces (official cic.com/cambridge/events-spaces, fetched 2026-08-12): Venture Café 5th Floor One Broadway, capacity 150, 'Inquire for Pricing', basic AV + free onsite Wi-Fi included](https://cic.com/cambridge/events-spaces/) — accessed 2026-08-12
+10. [Harvard Data Science Initiative — official HDSI page (Harvard University)](https://datascience.harvard.edu/) — accessed 2026-08-12
+11. [WPI Seaport Events Center — District Hall Boston (official districthallboston.org/wpi-events, fetched 2026-08-12): 303 Congress Street, Boston, 6,400 sq ft, event request form, no published rates](https://districthallboston.org/wpi-events/) — accessed 2026-08-12
+12. [Harvard Square Business Association (official harvardsquare.com Scheduled Events): 47th Annual Oktoberfest and 21st HONK! Parade, October 11, 2026, Harvard Square, Cambridge (rain date October 12)](https://harvardsquare.com/scheduled-events/) — accessed 2026-08-12
+13. [Head Of The Charles Regatta (official hocr.org): 2026 Regatta, October 16-18, 2026, Charles River, Boston/Cambridge](https://hocr.org/) — accessed 2026-08-12
+14. [Harvard Innovation Labs — Visit (official innovationlabs.harvard.edu, fetched 2026-08-12): Batten Hall 125 Western Ave, Allston; public entry by invitation or to attend public events; lobby open 7am-7pm; i-lab lecture hall hosts RSVP events](https://innovationlabs.harvard.edu/about/visit) — accessed 2026-08-12
+15. [LangChain Boston Meetup: Loop Engineering and Open Models — Luma event page (organizer-owned)](https://luma.com/iaie4h2x) — accessed 2026-08-12
+16. [MIT Museum — MIT Future Fest (official): inaugural five-day campus-wide festival, September 30-October 4, 2026, MIT campus, Cambridge MA](https://mitmuseum.mit.edu/programs/mit-future-fest-2) — accessed 2026-08-12
+17. [Nxt AI-2026 — official conference page: International Conference on Next-Generation AI & Machine Learning, November 2-4, 2026, Boston, MA](https://nxtai-conference.com/) — accessed 2026-08-12
+18. [MIT Samberg Conference Center — Room Capacities, Rates (official scheduling.mit.edu use-fees PDF, fetched 2026-08-12): 7th Floor Conference I 1,830 NSF, rounds 125, theater 150; external day fee $725; weekend events require $3,500 F&B minimum](https://scheduling.mit.edu/static/samberg-use-fees.pdf--v20260122215024302) — accessed 2026-08-12
+19. [MIT Sloan AI & ML Club — official club page (MIT Sloan School of Management)](https://sloangroups.mit.edu/aiml/home/) — accessed 2026-08-12
+20. [Generative AI Summit Boston (official AI Accelerator Institute page): October 29, 2026, The Westin Boston Seaport, 425 Summer Street, Boston](https://world.aiacceleratorinstitute.com/location/boston) — accessed 2026-08-12
+21. [Artisan's Asylum — Facility Rentals & Private Events (official artisansasylum.com, fetched 2026-08-12): 52,000 sq ft nonprofit makerspace in Allston with classrooms, teaching spaces, and open gathering areas; no published capacities or rates](https://www.artisansasylum.com/rentals-events) — accessed 2026-08-12
+22. [Boston Athletic Association (official baa.org): Boston Half, presented by Dana-Farber Cancer Institute & The Jimmy Fund, Sunday, November 8, 2026, running through the Emerald Necklace, 9,000 participants](https://www.baa.org/races/boston-half/) — accessed 2026-08-12
+23. [MassRobotics (official massrobotics.org, fetched 2026-08-12): robotics/AI innovation hub at 12 Channel Street, Boston Seaport; hosts events and programs; no public external venue-rental page or rates found](https://www.massrobotics.org/) — accessed 2026-08-12
+24. [MassRobotics (official): RoboBoston 2026, 9th Annual Robot Block Party, Saturday, September 26, 2026, Boston Seaport; Robotics & AI Technical Career Fair on September 25, 2026](https://www.massrobotics.org/massrobotics-opens-sponsorship-opportunities-for-roboboston-2026-and-invites-hiring-companies-to-robotics-ai-technical-career-fair/) — accessed 2026-08-12
+25. [Boston Blockchain Association Presents group page (Meetup, official group page)](https://www.meetup.com/boston-blockchain-association/) — accessed 2026-08-12
+26. [ODSC AI Boston group page (Meetup, official group page; part of ODSC-AI-Community)](https://www.meetup.com/boston-data-mining/) — accessed 2026-08-12
+27. [Boston FinTech group page (Meetup, official group page)](https://www.meetup.com/boston-fintech/) — accessed 2026-08-12
+28. [The Boston Python User Group — Meetup group page (official group page)](https://www.meetup.com/bostonpython/) — accessed 2026-08-12
+29. [CryptoMondays Boston group page (Meetup, official group page)](https://www.meetup.com/crypto-mondays-boston/) — accessed 2026-08-12
+30. [Tagvenue Boston — Parish Hall, Emmanuel Episcopal Church of Boston (platform listing, fetched 2026-08-12): capacity 150 standing / 160 max, 'from $49 hire fee per hour' (conflicting with space-pal 'from USD 2000/day')](https://www.tagvenue.com/us/city/boston) — accessed 2026-08-12
+31. [MIT Technology Review — All Events (official): EmTech Future, September 29-October 1, 2026, Cambridge, MA; MIT Future Fest, September 30-October 4, 2026, Cambridge, MA](https://www.technologyreview.com/all-events/) — accessed 2026-08-12
+32. [Workbar — Event Space Rentals in Boston (official workbar.com, fetched 2026-08-12): event spaces for 20-100 people, rates starting at $250/hour](https://www.workbar.com/event-space-rental) — accessed 2026-08-12

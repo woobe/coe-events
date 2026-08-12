@@ -1,0 +1,27 @@
+{
+  "city_slug": "boston-ma-us",
+  "city_name": "Boston",
+  "country": "United States",
+  "target_date": "2026-09-26",
+  "date_window": "2026-09-19 to 2026-10-31 (window start 09-19 follows the operational city_input convention of prior cities, diverging from registry stubs' 09-12; reviewer P3)",
+  "target_attendance": 50,
+  "currency": "USD",
+  "currency_assumptions": [
+    "All costs are reported in USD where evidenced; no currency conversion is needed (Joe locked USD for Boston)."
+  ],
+  "workflow_phase": "venue",
+  "budget_usd": 5000.0,
+  "event_duration_hours": 8,
+  "decision_note": "technical placeholder for pipeline integrity; Joe decides the date.",
+  "research_completed_on": "2026-08-12",
+  "open_questions": [
+    "Calendar-awareness research coverage is 2026-09-15 through 2026-12-15 and is informational only; no calendar record is an elimination, tier input, or date recommendation.",
+    "target_date 2026-09-26 is a neutral technical placeholder required by score/bundle/summary integrity; it is never a recommendation and no output may present it as one.",
+    "Community-research open question: no public Northeastern University or BU student AI/data community page with observed activity was retained in this pass; AI Salon Boston was not found as an active chapter; the Boston web3 community landscape beyond CryptoMondays Boston and the Boston Blockchain Association is thin on own-page activity evidence — verify whether a newer web3/DeAI group should be added.",
+    "Venue research open question: most Boston university and coworking event spaces are inquiry-only (no published rate); written quotes are required before any cost claim above published-rate or estimated-from-rate status."
+  ],
+  "recommendation": {
+    "selected_venue": null,
+    "rationale": "Run A evidence package only. Venue selection deferred: a later deterministic pipeline card scores venues and assembles the venue-phase bundle; Joe selects from eligible/shortlist_ready results. No date recommendation is made."
+  }
+}

@@ -1,0 +1,928 @@
+{
+  "meta": {
+    "generator": "score_venues.py",
+    "schema_version": "2.4",
+    "budget_usd": 5000.0,
+    "target_attendance": 50,
+    "event_date": "2026-09-26",
+    "event_duration_hours": 8,
+    "weights": {
+      "budget_efficiency": 0.2,
+      "capacity_fit": 0.2,
+      "catering_flexibility": 0.15,
+      "recording_suitability": 0.15,
+      "booking_path": 0.1,
+      "evidence_freshness": 0.1,
+      "technical_readiness": 0.05,
+      "event_window_fit": 0.05
+    },
+    "tier_order": [
+      "eligible",
+      "shortlist_ready",
+      "lead"
+    ]
+  },
+  "eligible": [],
+  "shortlist_ready": [
+    {
+      "name": "MIT Samberg Conference Center — Conference I (7th Floor)",
+      "city_slug": "boston-ma-us",
+      "address": "Chang Building (E52), 50 Memorial Drive, Cambridge, MA 02139",
+      "capacity_comfortable": 125,
+      "capacity_basis": "venue_claim",
+      "screen_status": "unknown",
+      "wifi_status": "unknown",
+      "catering_policy": "in_house_available",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": 725,
+      "cost_basis": "published_rate",
+      "cost_local_amount": 725,
+      "cost_local_currency": "USD",
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "booking_url": "https://sambergconferencecenter.mit.edu/",
+      "cost_rate_unit": "day",
+      "opening_hours": "08:00-17:00",
+      "closing_time": "17:00",
+      "max_booking_hours": null,
+      "event_window_status": "allows_to_5",
+      "event_window_evidence": {
+        "url": "https://scheduling.mit.edu/static/samberg-use-fees.pdf--v20260122215024302",
+        "title": "MIT Samberg Conference Center — Room Capacities, Rates (official use-fees PDF)",
+        "accessed_on": "2026-08-12",
+        "claim": "Official use-fees PDF states the Day Fee applies to use of a room for more than 4 hours anytime between 8AM and 5PM, so an 8-hour event running 09:00-17:00 is supported (closing 17:00); weekend events require a $3,500 food & beverage minimum."
+      },
+      "verification_question_kinds": [
+        "screen",
+        "wifi",
+        "availability",
+        "booking_terms",
+        "final_quote",
+        "room_assignment"
+      ],
+      "verification_questions": [
+        "Confirm screen/projector and Wi-Fi availability in Conference I for an external event (the official use-fees PDF lists room capacities and rates but not AV inventory; MIT's Restaurant Associates partnership covers food/beverage).",
+        "Confirm Wi-Fi availability in Conference I for external events (not listed in the official use-fees PDF).",
+        "Confirm availability for an external (non-MIT) organization: External Fees apply only to non-MIT organizations sponsored by an MIT DLC (department, lab, or center), so a sponsoring MIT contact is required.",
+        "Confirm the weekend requirement: weekend events require a minimum spend of $3,500 on food & beverage excluding labor/additional charges, which materially affects the all-in cost for a Saturday event (room fee $725 external day plus $3,500 F&B minimum).",
+        "Confirm the exact all-in Saturday total including the F&B minimum, labor, AV, and linen for an external sponsored booking (published day fee is not a written quote).",
+        "Confirm the exact room assignment (Conference I 1,830 NSF, rounds 125 / theater 150) and whether adjacent 7th-floor rooms are needed for a 50-person event."
+      ],
+      "source_url": "https://scheduling.mit.edu/static/samberg-use-fees.pdf--v20260122215024302",
+      "source_title": "MIT Samberg Conference Center — Room Capacities, Rates (official scheduling.mit.edu use-fees PDF, fetched 2026-08-12): 7th Floor Conference I 1,830 NSF, rounds 125, theater 150; external day fee $725; weekend events require $3,500 F&B minimum",
+      "accessed_on": "2026-08-12",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "The official MIT Samberg Conference Center use-fees PDF (scheduling.mit.edu/static/samberg-use-fees.pdf, fetched 2026-08-12) publishes 7th Floor Conference I: 1,830 NSF, rounds 125, crescent rounds 85, classroom 60, theater 150, reception 150, conference style 35; external day fee $725 (Institute $604); F&B minimum $600 1/2 day / $1,000 full day. The PDF notes: day fee applies to use of a room for more than 4 hours between 8AM and 5PM; weekend events require a minimum spend of $3,500 on food & beverage excluding labor or additional charges; external fees apply to non-MIT organizations sponsored by an MIT DLC. sambergconferencecenter.mit.edu confirms the center encompasses the sixth-floor space and a 20,000 sq ft glass-enclosed seventh floor available to the MIT community; institute-events.mit.edu lists Samberg (Chang Building E52) with reservations accepted up to 18 months in advance on a rolling 540-day basis.",
+        "inference": "Conference I at the external day rate of $725 fits the USD 5,000 soft budget on room fee alone, but a Saturday event adds the $3,500 F&B weekend minimum (about $4,225 all-in before AV/linen/labor), and external access requires an MIT DLC sponsor. Screen/Wi-Fi and AV inventory are not documented in the fees PDF, so they remain verification questions; the venue stays shortlist_ready pending those checks."
+      },
+      "latitude": null,
+      "longitude": null,
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "map_location_unknown",
+        "stale_evidence"
+      ],
+      "score": 0.701,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.855,
+          "weight": 0.2,
+          "contribution": 0.171
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 0.7,
+          "weight": 0.15,
+          "contribution": 0.105
+        },
+        "recording_suitability": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 0.75,
+          "weight": 0.1,
+          "contribution": 0.075
+        },
+        "technical_readiness": {
+          "factor": 0.0,
+          "weight": 0.05,
+          "contribution": 0.0
+        },
+        "event_window_fit": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "total": 0.701
+      }
+    },
+    {
+      "name": "The Foundry (Cambridge) — Performance Space",
+      "city_slug": "boston-ma-us",
+      "address": "101 Rogers Street, Cambridge, MA 02142",
+      "capacity_comfortable": 115,
+      "capacity_basis": "venue_claim",
+      "screen_status": "confirmed",
+      "wifi_status": "unknown",
+      "catering_policy": "unknown",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": 2400,
+      "cost_basis": "published_rate",
+      "cost_local_amount": 2400,
+      "cost_local_currency": "USD",
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "booking_url": "https://cambridgefoundry.org/event-rentals",
+      "cost_rate_unit": "hour",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "latitude": 42.3674,
+      "longitude": -71.0808,
+      "verification_question_kinds": [
+        "availability",
+        "wifi",
+        "event_window",
+        "final_quote"
+      ],
+      "verification_questions": [
+        "Confirm live availability of the Performance Space on the chosen fall Saturday (the official event-rentals page lists small event rentals at $300/hr business hours / $600/hr after closing but no calendar).",
+        "Confirm Performance Space Wi-Fi (the page confirms speakers, mics, projector; Wi-Fi is not stated).",
+        "Confirm the event-window definition of business hours vs after closing and closing time, to verify an 8-hour 09:00-17:00 event at the $300/hr rate.",
+        "Confirm the exact all-in 8-hour total including setup/cleanup (published small-event rate $300/hr business hours; sliding-scale by application)."
+      ],
+      "source_url": "https://cambridgefoundry.org/event-rentals",
+      "source_title": "The Foundry (Cambridge) — Event Rentals (official cambridgefoundry.org, fetched 2026-08-12): Performance Space 2,067 sq ft, 150 standing / 115 seated, speakers, mics, projector; small event rentals $300/hr business hours",
+      "accessed_on": "2026-08-12",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "The official cambridgefoundry.org Event Rentals page (fetched 2026-08-12) lists the Performance Space (STEAM Set): 2,067 sq ft, 150 standing capacity, 115 seated capacity, 'Equipped with speakers, mics, and a projector' in a black-box environment with dark curtains and electric shades. Small Event Rentals (private): $300/hr during business hours, $600/hr after closing, sliding-scale available.",
+        "inference": "The Performance Space comfortably exceeds 50 seated with confirmed projection and audio; at the published small-event rate an 8-hour business-hours booking estimates $2,400 within budget. Wi-Fi and exact business-hours definition need manual confirmation; retained as a second Foundry option for the same shortlist_ready tier.",
+        "geo": "https://cambridgefoundry.org/event-rentals"
+      },
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "score": 0.529,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.52,
+          "weight": 0.2,
+          "contribution": 0.104
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "recording_suitability": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 0.75,
+          "weight": 0.1,
+          "contribution": 0.075
+        },
+        "technical_readiness": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "event_window_fit": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "total": 0.529
+      }
+    },
+    {
+      "name": "The Foundry (Cambridge) — Red Multi",
+      "city_slug": "boston-ma-us",
+      "address": "101 Rogers Street, Cambridge, MA 02142",
+      "capacity_comfortable": 50,
+      "capacity_basis": "venue_claim",
+      "screen_status": "confirmed",
+      "wifi_status": "unknown",
+      "catering_policy": "unknown",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": 2400,
+      "cost_basis": "published_rate",
+      "cost_local_amount": 2400,
+      "cost_local_currency": "USD",
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "booking_url": "https://cambridgefoundry.org/event-rentals",
+      "cost_rate_unit": "hour",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "latitude": 42.3674,
+      "longitude": -71.0808,
+      "verification_question_kinds": [
+        "availability",
+        "wifi",
+        "event_window",
+        "final_quote"
+      ],
+      "verification_questions": [
+        "Confirm live availability of Red Multi on the chosen fall Saturday (the official event-rentals page lists small event rentals at $300/hr during business hours and $600/hr after closing, but does not publish a calendar).",
+        "Confirm Red Multi's Wi-Fi availability (the page lists whiteboard and projector; Wi-Fi is not stated).",
+        "Confirm the event-window definition of 'business hours' vs 'after closing' and the closing time, to verify an 8-hour 09:00-17:00 event is bookable at the $300/hr rate.",
+        "Confirm the exact all-in 8-hour total for 50 seated in Red Multi including setup/cleanup and any after-hours charges (published small-event rate $300/hr business hours; sliding-scale discounts available by application)."
+      ],
+      "source_url": "https://cambridgefoundry.org/event-rentals",
+      "source_title": "The Foundry (Cambridge) — Event Rentals (official cambridgefoundry.org, fetched 2026-08-12): Red Multi 1,335 sq ft, 100 standing / 50 seated, whiteboard + projector; small event rentals $300/hr business hours, $600/hr after closing; sliding-scale pricing",
+      "accessed_on": "2026-08-12",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "The official cambridgefoundry.org Event Rentals page (fetched 2026-08-12) describes the community space at 101 Rogers Street, Cambridge (21,500 sq ft total, 400 total capacity). Red Multi: 1,335 sq ft, 100 standing capacity / 50 seated capacity, 'spacious... equipped with a whiteboard and projector for multimedia use and window shades'. Performance Space: 2,067 sq ft, 150 standing / 115 seated, equipped with speakers, mics, and a projector. Small Event Rentals (private): $300/hr during business hours, $600/hr after closing, with a sliding-scale discount table (down to $125/hr at 50% for orgs under $50k revenue). Full building private rentals $8,000 for 6hr day (+$1,000/additional hr) with sliding scale; full building public rentals $6,000 for 6hr day (+$500/additional hr).",
+        "inference": "Red Multi at 50 seated exactly fits the 50-person target; an 8-hour booking at the published $300/hr business-hours rate estimates $2,400, within the USD 5,000 soft budget and well below the full-building rate. The projector is confirmed; Wi-Fi and the exact business-hours/closing definition need manual confirmation, so the venue is shortlist_ready.",
+        "geo": "https://cambridgefoundry.org/event-rentals"
+      },
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "score": 0.529,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.52,
+          "weight": 0.2,
+          "contribution": 0.104
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "recording_suitability": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 0.75,
+          "weight": 0.1,
+          "contribution": 0.075
+        },
+        "technical_readiness": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "event_window_fit": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "total": 0.529
+      }
+    },
+    {
+      "name": "CIC Cambridge — Venture Café (5th Floor, One Broadway)",
+      "city_slug": "boston-ma-us",
+      "address": "One Broadway, Cambridge, MA 02142",
+      "capacity_comfortable": 150,
+      "capacity_basis": "venue_claim",
+      "screen_status": "confirmed",
+      "wifi_status": "confirmed",
+      "catering_policy": "unknown",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "booking_url": "https://cic.com/cambridge/events-spaces/",
+      "cost_rate_unit": "unknown",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "latitude": 42.3637,
+      "longitude": -71.0835,
+      "verification_question_kinds": [
+        "cost_unknown",
+        "availability",
+        "event_window"
+      ],
+      "verification_questions": [
+        "Confirm the all-in rate for the Venture Café space on the chosen fall Saturday (official page says 'Inquire for Pricing'; basic AV and free onsite Wi-Fi are included in room rentals).",
+        "Confirm availability of the wood-paneled Venture Café space (capacity 150) on the chosen fall Saturday and whether a 50-person event can book a section rather than the full room.",
+        "Confirm event-window and after-hours access rules (CIC event FAQ covers guest check-in at the concierge/security desk and BEO details; Saturday hours need confirmation)."
+      ],
+      "source_url": "https://cic.com/cambridge/events-spaces/",
+      "source_title": "CIC Cambridge — Event Spaces (official cic.com/cambridge/events-spaces, fetched 2026-08-12): Venture Café 5th Floor One Broadway, capacity 150, 'Inquire for Pricing', basic AV + free onsite Wi-Fi included",
+      "accessed_on": "2026-08-12",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "The official CIC Cambridge events page (cic.com/cambridge/events-spaces, fetched 2026-08-12) lists event spaces 'from 2-150+' including Venture Café (5th Floor, One Broadway): 'the heartbeat of Kendall Square's entrepreneurial community', capacity 150, 'Inquire for Pricing', connected to a terrace; Mosaic (3rd Floor, 245 Main Street), capacity 150; and a rooftop space, capacity 150. CIC's event FAQ states basic AV is included in room rentals (HDMI + USB-C adapter to connect to TV screens), free onsite Wi-Fi, tables and chairs, and a dedicated event coordinator; guests check in at the concierge or security desk. The CIC meeting-rooms page (cic.com/cambridge/meeting-rooms) confirms event spaces for up to 150+ people and notes meeting-room rentals require no membership.",
+        "inference": "CIC Cambridge offers several 150-capacity Kendall Square event spaces with confirmed screen and Wi-Fi, but rates are inquiry-only, so cost remains unknown and the venue is shortlist_ready pending a written quote.",
+        "geo": "https://cic.com/cambridge/events-spaces/"
+      },
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "cost_unknown",
+        "availability_unconfirmed",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "score": 0.47,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.5,
+          "weight": 0.2,
+          "contribution": 0.1
+        },
+        "capacity_fit": {
+          "factor": 0.6,
+          "weight": 0.2,
+          "contribution": 0.12
+        },
+        "catering_flexibility": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "recording_suitability": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 0.75,
+          "weight": 0.1,
+          "contribution": 0.075
+        },
+        "technical_readiness": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "event_window_fit": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "total": 0.47
+      }
+    }
+  ],
+  "lead": [
+    {
+      "name": "Artisan's Asylum (Allston)",
+      "city_slug": "boston-ma-us",
+      "address": "Allston-Brighton, Boston, MA (Holton and Antwerp buildings)",
+      "capacity_comfortable": 0,
+      "capacity_basis": "unknown",
+      "screen_status": "unknown",
+      "wifi_status": "unknown",
+      "catering_policy": "unknown",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "booking_url": "https://www.artisansasylum.com/rentals-events",
+      "cost_rate_unit": "unknown",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "latitude": null,
+      "longitude": null,
+      "verification_question_kinds": [
+        "capacity",
+        "cost_unknown",
+        "screen",
+        "wifi",
+        "availability",
+        "event_window"
+      ],
+      "verification_questions": [
+        "Confirm which Artisan's Asylum space (classrooms, flexible teaching spaces, or open gathering areas) fits a 50-person talk/networking event and its capacity (the official rentals page describes the 52,000 sq ft campus and event types but publishes no per-space capacity).",
+        "Confirm pricing and rate basis for a private event rental (the official page lists no published rates and directs inquiries to the front desk).",
+        "Confirm screen/AV and Wi-Fi availability in the selected space (not stated on the rentals page).",
+        "Confirm Wi-Fi availability in the selected space (not stated on the rentals page).",
+        "Confirm availability and booking terms for the chosen fall Saturday.",
+        "Confirm the booking window on the chosen fall Saturday (campus is 24/7 for members; external event hours need confirmation)."
+      ],
+      "source_url": "https://www.artisansasylum.com/rentals-events",
+      "source_title": "Artisan's Asylum — Facility Rentals & Private Events (official artisansasylum.com, fetched 2026-08-12): 52,000 sq ft nonprofit makerspace in Allston with classrooms, teaching spaces, and open gathering areas; no published capacities or rates",
+      "accessed_on": "2026-08-12",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "The official Artisan's Asylum rentals page (artisansasylum.com/rentals-events, fetched 2026-08-12) states the nonprofit makerspace manages two adjacent open innovation spaces in Allston-Brighton (Holton and Antwerp buildings), more than 52,000 square feet total, hosting shared workshops, artist studios, classes and community events, and that 'our classrooms, flexible teaching spaces, and open gathering areas can accommodate everything from small team meetings to large group events'. The page invites inquiries for meetings, workshops, celebrations, and community events but publishes no per-space capacity, pricing, screen, or Wi-Fi details.",
+        "inference": "Artisan's Asylum is a plausible creative-community venue in Allston with a documented event-rental program, but capacity, cost, screen, Wi-Fi, and availability are all unsubstantiated, so it remains a lead pending written details."
+      },
+      "venue_tier": "lead",
+      "tier_reasons": [
+        "material verification question(s): capacity",
+        "capacity_comfortable 0 below minimum 40"
+      ],
+      "venue_flags": [
+        "cost_unknown",
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "duration_unconfirmed",
+        "map_location_unknown",
+        "stale_evidence"
+      ],
+      "score": null,
+      "score_breakdown": null
+    },
+    {
+      "name": "Emmanuel Episcopal Church — Parish Hall (Back Bay)",
+      "city_slug": "boston-ma-us",
+      "address": "15 Newbury Street, Boston, MA 02116",
+      "capacity_comfortable": 150,
+      "capacity_basis": "venue_claim",
+      "screen_status": "unknown",
+      "wifi_status": "unknown",
+      "catering_policy": "unknown",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "booking_url": "https://www.tagvenue.com/us/city/boston",
+      "cost_rate_unit": "unknown",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "latitude": 42.3493,
+      "longitude": -71.0808,
+      "verification_question_kinds": [
+        "cost",
+        "cost_unknown",
+        "capacity",
+        "screen",
+        "wifi",
+        "availability",
+        "event_window"
+      ],
+      "verification_questions": [
+        "Confirm Parish Hall's actual rental rate: platform listings conflict (Tagvenue Boston city listing shows 'from $49 hire fee per hour' while space-pal.com shows 'from USD 2000/day'), so the true all-in rate and minimums are unconfirmed and the venue's own booking terms must be obtained.",
+        "Confirm the venue's own published rate and minimums from the church's official booking page (platform rates conflict; no official rate obtained).",
+        "Confirm capacity and configuration for a 50-person event (Tagvenue lists 150 standing / 160 max; the venue's own page should confirm layout and seating).",
+        "Confirm screen/projector and Wi-Fi availability (not stated in the platform listings fetched).",
+        "Confirm Wi-Fi availability (not stated in the platform listings fetched).",
+        "Confirm Saturday availability and the church's booking process/terms for a community tech event.",
+        "Confirm the Parish Hall booking window on the chosen fall Saturday (platform listings do not publish hours; the church's own booking terms must confirm whether a full-day 09:00-17:00 event is allowed)."
+      ],
+      "source_url": "https://www.tagvenue.com/us/city/boston",
+      "source_title": "Tagvenue Boston — Parish Hall, Emmanuel Episcopal Church of Boston (platform listing, fetched 2026-08-12): capacity 150 standing / 160 max, 'from $49 hire fee per hour' (conflicting with space-pal 'from USD 2000/day')",
+      "accessed_on": "2026-08-12",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "The Tagvenue Boston city page (tagvenue.com/us/city/boston, fetched 2026-08-12) lists Parish Hall at Emmanuel Episcopal Church of Boston, 15 Newbury Street, Back Bay: capacity 150 standing / 160 max, described as a wood-paneled room with a stage, grand piano, and adjacent kitchen, 'from $49 hire fee per hour'. The independent space-pal.com listing for the same venue (fetched 2026-08-12) shows 'From USD 2000/day, up to 160 guests'. Tripadvisor corroborates the address (15 Newbury St, Boston).",
+        "inference": "Parish Hall is a historic Back Bay room with plausible capacity for a 50-person event, but the conflicting platform rates ($49/hr vs $2,000/day) mean cost is unsubstantiated and the venue's own booking terms must be confirmed; it is a lead pending source-support and rate verification.",
+        "geo": "https://www.tagvenue.com/us/city/boston"
+      },
+      "venue_tier": "lead",
+      "tier_reasons": [
+        "material verification question(s): capacity, cost"
+      ],
+      "venue_flags": [
+        "cost_unknown",
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "score": null,
+      "score_breakdown": null
+    },
+    {
+      "name": "Harvard Innovation Labs (i-lab) — Batten Hall",
+      "city_slug": "boston-ma-us",
+      "address": "125 Western Avenue, Allston, MA 02163",
+      "capacity_comfortable": 0,
+      "capacity_basis": "unknown",
+      "screen_status": "confirmed",
+      "wifi_status": "confirmed",
+      "catering_policy": "unknown",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "booking_url": "https://innovationlabs.harvard.edu/about/visit",
+      "cost_rate_unit": "unknown",
+      "opening_hours": "07:00-19:00",
+      "closing_time": "19:00",
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "latitude": 42.3665,
+      "longitude": -71.1267,
+      "verification_question_kinds": [
+        "capacity",
+        "cost_unknown",
+        "room_assignment",
+        "accessibility",
+        "event_window"
+      ],
+      "verification_questions": [
+        "Confirm whether the i-lab's multi-media lecture hall (used for RSVP events) and other spaces can host an external 50-person community event: the official Visit page states members of the public may enter the i-lab only upon invitation by an i-lab affiliate or to attend a public event, so external booking terms are unclear.",
+        "Confirm pricing and availability for a non-Harvard community organization (no public rate sheet; i-lab is primarily for Harvard students and affiliates).",
+        "Confirm the lecture hall capacity for a 50-person seated audience (the i-lab occupies 30,000+ sq ft with a multi-media lecture hall, flex-space, and 20+ reservable conference rooms, but no per-room capacity is published on the fetched page).",
+        "Confirm accessible entry and the 7am-7pm public lobby hours relative to an 8-hour daytime event.",
+        "Confirm the i-lab's booking window for a full-day event (public lobby hours are 7am-7pm; i-lab student access 7am-11pm; external event hours and whether a 09:00-17:00 booking is allowed are unconfirmed)."
+      ],
+      "source_url": "https://innovationlabs.harvard.edu/about/visit",
+      "source_title": "Harvard Innovation Labs — Visit (official innovationlabs.harvard.edu, fetched 2026-08-12): Batten Hall 125 Western Ave, Allston; public entry by invitation or to attend public events; lobby open 7am-7pm; i-lab lecture hall hosts RSVP events",
+      "accessed_on": "2026-08-12",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "The official Harvard Innovation Labs Visit page (innovationlabs.harvard.edu/about/visit, fetched 2026-08-12) states members of the public may enter the i-lab upon invitation by an i-lab affiliate or to attend a public event; the Batten Hall lobby is open to the public 7am-7pm; all degree-seeking Harvard students have swipe access. The i-lab occupies over 30,000 sq ft divided into a public lobby, a multi-media lecture hall used to host RSVP events, a flex-space open area for registered residents, and 20+ reservable conference rooms. Wikipedia corroborates the i-lab description at 125 Western Avenue, Allston.",
+        "inference": "The i-lab is a Harvard-affiliated innovation space with confirmed AV-friendly meeting rooms, but external community-event access is restricted (invitation or public event) and no external rate or per-room capacity is published, so it remains a lead pending access and cost confirmation.",
+        "geo": "https://innovationlabs.harvard.edu/about/visit"
+      },
+      "venue_tier": "lead",
+      "tier_reasons": [
+        "material verification question(s): accessibility, capacity",
+        "capacity_comfortable 0 below minimum 40"
+      ],
+      "venue_flags": [
+        "cost_unknown",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "score": null,
+      "score_breakdown": null
+    },
+    {
+      "name": "Impact Hub Boston",
+      "city_slug": "boston-ma-us",
+      "address": null,
+      "capacity_comfortable": 0,
+      "capacity_basis": "unknown",
+      "screen_status": "unknown",
+      "wifi_status": "unknown",
+      "catering_policy": "unknown",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "booking_url": "https://boston.impacthub.net/",
+      "cost_rate_unit": "unknown",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "latitude": null,
+      "longitude": null,
+      "verification_question_kinds": [
+        "capacity",
+        "cost",
+        "cost_unknown",
+        "screen",
+        "wifi",
+        "availability",
+        "event_window"
+      ],
+      "verification_questions": [
+        "Confirm whether Impact Hub Boston has a physical, bookable event space at all: the official boston.impacthub.net page (fetched 2026-08-12) says 'Coming Soon', 'We're developing new SPACE EVENTS SERVICES PARTNERSHIPS PROGRAMS', and 'New location coming soon!' — the hub's current capacity, address, availability, cost, screen, and Wi-Fi are all unsubstantiated.",
+        "Confirm the new location's capacity for a 50-person event and its address when announced (the current page provides no address or room details).",
+        "Confirm any published rate or booking path once the new space launches (no pricing or booking form exists on the current page).",
+        "Confirm screen and Wi-Fi availability at the new location (not stated on the current page).",
+        "Confirm Wi-Fi availability at the new location (not stated on the current page).",
+        "Confirm whether the new space will be open and bookable by the fall season (the current page only promises a launch announcement).",
+        "Confirm the new location's booking window once announced (opening/closing hours and whether a full-day 09:00-17:00 booking would be allowed)."
+      ],
+      "source_url": "https://boston.impacthub.net/",
+      "source_title": "Impact Hub Boston (official boston.impacthub.net, fetched 2026-08-12): 'Coming Soon' page stating the hub is developing new space, events, services, partnerships, and programs and that a new location is coming soon",
+      "accessed_on": "2026-08-12",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "The official Impact Hub Boston page (boston.impacthub.net, fetched 2026-08-12) states 'Coming Soon', that the hub 'is part of the Impact Hub global network – a group of 120 hubs across 60+ countries', that since 2013 it has provided innovation spaces for social entrepreneurs, and that 'Over the next several months, we're looking to develop a new space' with a 'New location coming soon!' banner. The page contains a newsletter signup, no address, no capacity, no room list, no pricing, and no booking form. The installed skill's Impact Hub locations reference record ih-019 (impact_hub_locations.json) lists this hub as Up&Running, type HUB, city Boston, country USA, url https://boston.impacthub.net — a resolver/discovery seed only, not evidence of current suitability.",
+        "inference": "Impact Hub Boston is a discovery seed (ih-019) whose own current page confirms it is between spaces and cannot yet support any capacity, cost, screen, Wi-Fi, availability, or window claim. It stays a lead until a current claim-bearing page supports its material fields — Budapest tv-02 precedent."
+      },
+      "venue_tier": "lead",
+      "tier_reasons": [
+        "material verification question(s): capacity, cost",
+        "capacity_comfortable 0 below minimum 40"
+      ],
+      "venue_flags": [
+        "cost_unknown",
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "duration_unconfirmed",
+        "map_location_unknown",
+        "stale_evidence"
+      ],
+      "score": null,
+      "score_breakdown": null
+    },
+    {
+      "name": "MassRobotics (Seaport)",
+      "city_slug": "boston-ma-us",
+      "address": "12 Channel Street, Boston, MA 02210",
+      "capacity_comfortable": 0,
+      "capacity_basis": "unknown",
+      "screen_status": "unknown",
+      "wifi_status": "unknown",
+      "catering_policy": "unknown",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "booking_url": "https://www.massrobotics.org/",
+      "cost_rate_unit": "unknown",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "latitude": 42.3523,
+      "longitude": -71.0461,
+      "verification_question_kinds": [
+        "capacity",
+        "cost_unknown",
+        "screen",
+        "wifi",
+        "availability",
+        "event_window"
+      ],
+      "verification_questions": [
+        "Confirm whether MassRobotics' Seaport facility (12 Channel Street) is bookable for an external 50-person community event and at what rate (the official site describes a robotics/innovation hub and event programming but publishes no external venue-rental page or rates).",
+        "Confirm the numeric rental rate for a 50-person community event (no external venue-rental rate published on the official site).",
+        "Confirm the facility's event-space capacity and AV/Wi-Fi availability for a 50-person gathering.",
+        "Confirm Wi-Fi availability for a 50-person gathering (not documented on the official site).",
+        "Confirm availability on the chosen fall Saturday and the booking process for non-member organizations.",
+        "Confirm the booking window on the chosen fall Saturday (event hours not published on the official site)."
+      ],
+      "source_url": "https://www.massrobotics.org/",
+      "source_title": "MassRobotics (official massrobotics.org, fetched 2026-08-12): robotics/AI innovation hub at 12 Channel Street, Boston Seaport; hosts events and programs; no public external venue-rental page or rates found",
+      "accessed_on": "2026-08-12",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "The official MassRobotics site (massrobotics.org, fetched 2026-08-12) describes the nonprofit robotics and AI innovation hub at 12 Channel Street, Boston Seaport, with resident-startup, STEM, and event programming (RoboBoston, National Robotics Week, IROS Startup Pitchfest, and a robotics events calendar). No external venue-rental page, capacity list, or rate sheet was found on the fetched site; the facility page URL returned 'Page not found'.",
+        "inference": "MassRobotics is an active robotics/AI community hub in the Seaport, but external venue rental is not documented on its official site, so capacity, cost, AV, Wi-Fi, and availability remain unknown; it is a lead pending direct inquiry.",
+        "geo": "https://www.massrobotics.org/"
+      },
+      "venue_tier": "lead",
+      "tier_reasons": [
+        "material verification question(s): capacity",
+        "capacity_comfortable 0 below minimum 40"
+      ],
+      "venue_flags": [
+        "cost_unknown",
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "score": null,
+      "score_breakdown": null
+    },
+    {
+      "name": "Workbar Boston — Event Space (Back Bay / Downtown)",
+      "city_slug": "boston-ma-us",
+      "address": null,
+      "capacity_comfortable": 100,
+      "capacity_basis": "venue_claim",
+      "screen_status": "unknown",
+      "wifi_status": "unknown",
+      "catering_policy": "outside_allowed",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": 2000,
+      "cost_basis": "estimated_from_rate",
+      "cost_local_amount": 2000,
+      "cost_local_currency": "USD",
+      "hourly_rate_usd": 250,
+      "estimated_hours": 8,
+      "rate_estimate_note": "Workbar's official event-space page states event space rentals for 20-100 people start at $250/hour with pricing varying by location size and day of the week; 8-hour estimate = $2,000, not a written quote.",
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "booking_url": "https://www.workbar.com/event-space-rental",
+      "cost_rate_unit": "hour",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "latitude": null,
+      "longitude": null,
+      "verification_question_kinds": [
+        "location",
+        "final_quote",
+        "screen",
+        "wifi",
+        "availability",
+        "event_window"
+      ],
+      "verification_questions": [
+        "Confirm which Workbar Boston location (Back Bay, Downtown, Central Square, Harvard Square, or Union Square) can host a 50-person event in the needed configuration (the official page covers Greater Boston event spaces generically without per-room capacities).",
+        "Confirm the exact all-in Saturday rate for the specific location and room (published 'starting at $250/hour'; pricing varies by location size and day of the week).",
+        "Confirm screen/AV and Wi-Fi availability for the specific event room (the official event-space page does not list per-room AV).",
+        "Confirm Wi-Fi availability for the specific event room (not listed on the official event-space page).",
+        "Confirm availability and booking terms for the chosen fall Saturday.",
+        "Confirm the event-space booking window on the chosen fall Saturday (hours not published on the event-space page)."
+      ],
+      "source_url": "https://www.workbar.com/event-space-rental",
+      "source_title": "Workbar — Event Space Rentals in Boston (official workbar.com, fetched 2026-08-12): event spaces for 20-100 people, rates starting at $250/hour",
+      "accessed_on": "2026-08-12",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "The official Workbar event-space page (workbar.com/event-space-rental, fetched 2026-08-12) states 'Event space for 20-100 people and affordable rates starting at $250/hour', 'Event space rentals start at $250 per hour, with pricing varying by location size and day of the week', and lists Greater Boston locations: Boston Back Bay, Boston Downtown, Cambridge Central Square, Cambridge Harvard Square, Somerville Union Square. The page positions the spaces for networking events, panels, workshops, pitch contests, and community events and states the spaces are for professional events, not personal celebrations.",
+        "inference": "Workbar is a coworking-network event-space option sized for 20-100 people with a published starting rate; the 8-hour estimate ($2,000) fits the USD 5,000 soft budget, but the exact location/room, AV, Wi-Fi, and Saturday availability remain verification questions, so the venue is shortlist_ready."
+      },
+      "venue_tier": "lead",
+      "tier_reasons": [
+        "material verification question(s): location"
+      ],
+      "venue_flags": [
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "duration_unconfirmed",
+        "map_location_unknown",
+        "stale_evidence"
+      ],
+      "score": null,
+      "score_breakdown": null
+    },
+    {
+      "name": "WPI Seaport Events Center (District Hall Boston)",
+      "city_slug": "boston-ma-us",
+      "address": "303 Congress Street, Boston, MA 02210",
+      "capacity_comfortable": 0,
+      "capacity_basis": "unknown",
+      "screen_status": "unknown",
+      "wifi_status": "unknown",
+      "catering_policy": "unknown",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "booking_url": "https://districthallboston.org/wpi-events/",
+      "cost_rate_unit": "unknown",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "latitude": 42.3526,
+      "longitude": -71.049,
+      "verification_question_kinds": [
+        "capacity",
+        "cost_unknown",
+        "screen",
+        "wifi",
+        "availability",
+        "event_window"
+      ],
+      "verification_questions": [
+        "Confirm the room capacity of the 6,400-square-foot WPI Seaport Events Center for a 50-person event (the official page describes an open adaptable area, a classroom, a conference room, and five technology suites but publishes no attendee capacity).",
+        "Confirm pricing and rate basis: the official booking path is an event request form with no published rates, so cost is unknown until a written quote is returned.",
+        "Confirm screen/AV and Wi-Fi availability in the requested configuration (the page lists technology suites and sweeping city views but no AV inventory).",
+        "Confirm Wi-Fi availability for the requested configuration (not listed on the official events page).",
+        "Confirm availability on the chosen fall Saturday and the event request-form lead time (form asks for first- and second-choice dates and whether the event extends past 5pm).",
+        "Confirm the booking window and the 'extends past 5pm' policy on the chosen fall Saturday (the request form asks this question; hours are not published)."
+      ],
+      "source_url": "https://districthallboston.org/wpi-events/",
+      "source_title": "WPI Seaport Events Center — District Hall Boston (official districthallboston.org/wpi-events, fetched 2026-08-12): 303 Congress Street, Boston, 6,400 sq ft, event request form, no published rates",
+      "accessed_on": "2026-08-12",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "The official districthallboston.org WPI Events page (fetched 2026-08-12) states that through a partnership with WPI (Worcester Polytechnic Institute), the District Hall Boston team activates WPI Seaport Events Center at 303 Congress Street, a 5-minute walk from District Hall Boston; the 6,400-square-foot location features an open adaptable area, a classroom, a conference room, and five technology suites with views of Fort Point Channel. Booking is via a detailed event request form (organization type, anticipated guest count 1-1000, date flexibility, start time, 'Will your event extend past 5pm?', Wi-Fi/AV checkboxes). No rates or capacities are published.",
+        "inference": "WPI Seaport is a plausible 50-person Seaport venue with an established nonprofit booking process, but capacity and price are unpublished, so it is a lead pending a written quote and capacity confirmation.",
+        "geo": "https://districthallboston.org/wpi-events/"
+      },
+      "venue_tier": "lead",
+      "tier_reasons": [
+        "material verification question(s): capacity",
+        "capacity_comfortable 0 below minimum 40"
+      ],
+      "venue_flags": [
+        "cost_unknown",
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "score": null,
+      "score_breakdown": null
+    }
+  ]
+}
