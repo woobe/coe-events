@@ -123,11 +123,17 @@ section.venue-map-section > p { margin: 0.25rem 0; color: var(--muted); font-siz
   position: relative;
   background: #eef0f2;
 }
+/* The wide 12-column matrix is kept usable inside a scoped horizontal
+   scroll container at EVERY viewport width (desktop >=641px AND narrow
+   screens) so it never widens the document: the wrapper takes the
+   content width while the table keeps its intrinsic width and scrolls
+   internally (overflow-x auto / contain semantics). This is the
+   desktop-overflow boundary — at 1280px a realistic wide matrix would
+   otherwise push document.scrollWidth past clientWidth (28px in the
+   Budapest rollout review). */
+.venue-matrix-scroll { overflow-x: auto; }
 @media (max-width: 640px) {
   .venue-map-container { height: 20rem; }
-  /* Narrow screens: keep the wide 12-column matrix usable inside a
-     scoped horizontal scroll container so it never widens the page. */
-  .venue-matrix-scroll { overflow-x: auto; }
 }
 .venue-map-note {
   margin: 0;
@@ -1060,7 +1066,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 <p class="related-event-verify">Human verification: needed</p>
 <p class="related-event-questions-label">Verification questions</p>
 <ul class="related-event-questions"><li>Confirm the EMNLP 2026 venue and workshop/tutorial schedule in Budapest (official site publishes Oct 24-29, Budapest; zplatform.ai lists Hungexpo as the venue but the official site does not yet name it).</li><li>Assess audience adjacency: the NLP research community overlaps AI/ML enthusiasts for a DeAI Day on a nearby fall weekend (the conference runs through that Saturday).</li></ul>
-<div class="related-event-evidence"><p><strong>Observed facts</strong>: Official EMNLP 2026 site (2026.emnlp.org, fetched 2026-08-10) states the conference will be held in Budapest, Hungary from October 24th to October 29th, 2026; the FinNLP workshop page (sigfintech.github.io/finnlp2026) independently confirms FinNLP-2026 @ EMNLP-2026, October 24-29, 2026, Budapest, with its workshop day on October 28.</p><p><strong>Inference</strong>: A nearby fall weekend falls inside the EMNLP 2026 window, so an international NLP/AI research audience will be in Budapest that weekend; recorded as a medium awareness flag for Joe (informational, not an elimination).</p></div></div></details></li>
+<div class="related-event-evidence"><p><strong>Observed facts</strong>: Official EMNLP 2026 site (2026.emnlp.org, fetched 2026-08-10) states the conference will be held in Budapest, Hungary from October 24th to October 29th, 2026; the FinNLP workshop page (sigfintech.github.io/finnlp2026) independently confirms FinNLP-2026 @ EMNLP-2026, October 24-29, 2026, Budapest, with its workshop day on October 28.</p><p><strong>Inference</strong>: A nearby fall weekend falls inside the EMNLP 2026 dates, so an international NLP/AI research audience will be in Budapest that weekend; recorded as a medium awareness flag for Joe (informational, not an elimination).</p></div></div></details></li>
 </ul></div>
 </section>
 <section class="other-major-events" aria-labelledby="other-major-events-heading">
@@ -1081,7 +1087,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 <p class="major-other-event-tag">Major city event</p>
 <p class="major-other-event-note">Official organizer homepage (marathon.runinbudapest.com, fetched 2026-08-10) states &#x27;SAVE THE DATE: october 10-11, 2026. 41TH SPAR BUDAPEST MARATHON - The Day of Running - Hungary&#x27;s largest sports event&#x27;; the dedicated 2026 page (marathon.runinbudapest.com/spar-budapest-marathon-2026/) confirms &#x27;Your finish line is October 11, 2026&#x27;.</p>
 <p class="major-other-event-source">Source: <a href="https://marathon.runinbudapest.com/" target="_blank" rel="noopener noreferrer">41st SPAR Budapest Marathon — official homepage: SAVE THE DATE October 10-11, 2026, Hungary&#x27;s largest sports event</a></p>
-<p class="major-other-event-verify">Verify: Confirm the final 2026 route, street-closure schedule, and public-transport changes with the organizers and BKK before planning any event activity on a nearby fall weekend (the marathon festival weekend runs October 10-11 with the marathon itself on Sunday October 11).; Assess whether Saturday 10-10 carries practical downtown access effects for a 50-person community event (informational flag for Joe; not an elimination).</p>
+<p class="major-other-event-verify">Verify: Confirm the final 2026 route, street-closure schedule, and public-transport changes with the organizers and BKK before planning any event activity on a nearby fall weekend (the marathon festival weekend runs October 10-11 with the marathon itself on Sunday October 11).; Assess whether the marathon festival weekend carries practical downtown access effects for a 50-person community event (informational flag for Joe; not an elimination).</p>
 </article></li>
 <li><article class="major-other-event">
 <h3 class="major-other-event-name">MeOut Summit 2026</h3>
@@ -1089,11 +1095,11 @@ svg.leaflet-image-layer.leaflet-interactive path {
 <p class="major-other-event-tag">Major city event</p>
 <p class="major-other-event-note">Official MeOut Summit page (meoutsummit.com, fetched 2026-08-10) states &#x27;MeOut Summit 2026 | Central European Startup Conference, Budapest&#x27; and &#x27;Join 2,000+ startup founders, investors, and corporate leaders at the MeOut Summit 2026 in Budapest on November 25-26&#x27;; AllEvents and happeningnext list Akvárium Klub as the venue.</p>
 <p class="major-other-event-source">Source: <a href="https://meoutsummit.com/" target="_blank" rel="noopener noreferrer">MeOut Summit 2026 — official: Central European startup conference, Budapest, November 25-26, 2026, at Akvárium Klub (2,000+ founders, investors, corporate leaders)</a></p>
-<p class="major-other-event-verify">Verify: Confirm MeOut Summit 2026 dates and venue with the organizer (official page states November 25-26, 2026; Akvárium Klub is cited by event listings).; This November record is informational awareness only; no fall weekend in the candidate window falls in November, so it is not a venue-candidate-date conflict. As an unresolved logistics question: assess whether the summit&#x27;s 2,000+ attendee footprint could create crowding, hotel-demand, or transport effects around November 25-26.</p>
+<p class="major-other-event-verify">Verify: Confirm MeOut Summit 2026 dates and venue with the organizer (official page states November 25-26, 2026; Akvárium Klub is cited by event listings).; This November record is informational awareness only; no nearby fall weekend falls in November, so it is not a venue-date conflict. As an unresolved logistics question: assess whether the summit&#x27;s 2,000+ attendee footprint could create crowding, hotel-demand, or transport effects around November 25-26.</p>
 </article></li>
 </ol>
 </section>
-  <section class="provenance"><h2>Provenance</h2><ul><li><strong>Source bundle version</strong>: <code>research/budapest/2026-q4/.bundle-5</code></li><li><strong>Source lookup</strong>: resolved <code>research/budapest/2026-q4/current/</code> once at generation time to the immutable bundle above</li><li><strong>Generated</strong>: 2026-08-11</li><li><strong>Schema version</strong>: 2.4</li><li><code>research/budapest/2026-q4/.bundle-5/event_plan.json</code> — SHA-256: <code>37739e0099bd91c6779102039eca94f1dc4b98c21eb8b215c46a3863c698a69a</code></li><li><code>research/budapest/2026-q4/.bundle-5/event_plan.md</code> — SHA-256: <code>bf5a19d2672e241c498b86b0b1fc3fd3b4a84c8bfb3d175e2a153285cdd0d63f</code></li><li><code>research/budapest/2026-q4/.bundle-5/next_steps.md</code> — SHA-256: <code>4c5faf3385579ed8a4e41387746f7ddfc335ca3d801e7843110f91acd96d8532</code></li><li><code>research/budapest/2026-q4/.bundle-5/sources.md</code> — SHA-256: <code>1d514ad125a22ef02d745c5184271556e0b70310b9b707edd0c4f2c8b6c56611</code></li></ul></section>
+  <section class="provenance"><h2>Provenance</h2><ul><li><strong>Source bundle version</strong>: <code>research/budapest/2026-q4/.bundle-6</code></li><li><strong>Source lookup</strong>: resolved <code>research/budapest/2026-q4/current/</code> once at generation time to the immutable bundle above</li><li><strong>Generated</strong>: 2026-08-11</li><li><strong>Schema version</strong>: 2.4</li><li><code>research/budapest/2026-q4/.bundle-6/event_plan.json</code> — SHA-256: <code>8b4f1f71044e3bf635db5642c8274b5f1dd2410a26cbe9e44b8f59cafb3d3620</code></li><li><code>research/budapest/2026-q4/.bundle-6/event_plan.md</code> — SHA-256: <code>fa55ea7581893596106deeab20f763c0779f659b8a94a2eb6c804004eb17a75a</code></li><li><code>research/budapest/2026-q4/.bundle-6/next_steps.md</code> — SHA-256: <code>4c5faf3385579ed8a4e41387746f7ddfc335ca3d801e7843110f91acd96d8532</code></li><li><code>research/budapest/2026-q4/.bundle-6/sources.md</code> — SHA-256: <code>1d514ad125a22ef02d745c5184271556e0b70310b9b707edd0c4f2c8b6c56611</code></li></ul></section>
   <footer class="matrix-footer">
     Projection of event_plan.json — schema 2.4, phase venue, generated 2026-08-10T00:00:00Z
   </footer>

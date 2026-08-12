@@ -1,6 +1,6 @@
 # Event Plan: New York (new-york-ny-us) — Run A: Venue & Date
 
-- Schema version: 2.3
+- Schema version: 2.4
 - Phase: venue
 - City: New York (new-york-ny-us), United States
 - Target date: 2026-09-26
@@ -16,22 +16,22 @@
 - Top selectable venue: Large Flex Event Loft Studio — Entire Space (score 0.7640) — tier shortlist_ready
 - Eligible venues: 0; shortlist-ready: 17; leads: 3
 - Speaker candidates: deferred to Run B after venue selection
-- Calendar flags: 10 (high severity: 3) — informational, never eliminations
-- Open questions: 113
+- Calendar awareness: 8 record(s) — 7 related-event opportunity/relevance, 1 major-city logistics — informational, never eliminations
+- Open questions: 109
 - Recommendation: none selected yet
 
 ## Calendar flags for Joe — informational, not eliminations
 
-- UN Blockchain Week 2026 — 2026-09-10 to 2026-09-19 (severity: high, relevance: web3) — [Events — UN Blockchain Week 2026 (official): UNGA + NYFW 2026 September 10-19, New York City; 10 days, 100+ experiences; AI × Blockchain Summit on autonomous agents and on-chain intelligence](https://unblockchainweek.com/events/). This is an awareness flag for Joe's decision; it never removes the date automatically.
-- AI Week New York 2026 (Fall Edition) — 2026-10-05 to 2026-10-11 (severity: medium, relevance: ai) — [AI Week New York (Fall Edition) — Oct 5-11, 2026, Pulse NYC citywide community-led tech festival](https://pulse.nyc/ai-week/). This is an awareness flag for Joe's decision; it never removes the date automatically.
-- Messari Mainnet 2026 — 2026-10-06 to 2026-10-08 (severity: medium, relevance: crypto) — [Messari Mainnet 2026 — blockchainacademics.com event listing (October 6-8, 2026, New York, USA, expected 4,000+ attendees)](https://blockchainacademics.com/events/messari-mainnet-2026). This is an awareness flag for Joe's decision; it never removes the date automatically.
-- AI Engineer NYC 2026 — 2026-10-12 to 2026-10-14 (severity: medium, relevance: ai) — [AI Engineer New York 2026 — official page: October 12-14, 2026 at Sheraton New York Times Square, 1,000+ in-person AI engineers and leaders](https://www.ai.engineer/nyc/2026). This is an awareness flag for Joe's decision; it never removes the date automatically.
-- Ripple Swell 2026 — 2026-10-27 to 2026-10-29 (severity: low, relevance: crypto) — [Swell 2026 — official Ripple page: New York City, October 27-29, 2026, at The Shed (545 W 30th St); 1,500+ attendees; AI & Agentic Finance among topics](https://swell.ripple.com/). This is an awareness flag for Joe's decision; it never removes the date automatically.
-- The Bridge Conference 2026 — 2026-10-27 to 2026-10-27 (severity: low, relevance: web3) — [The Bridge Conference 2026 — October 27, 2026, New York City (coinpedia events listing)](https://events.coinpedia.org/the-bridge-conference-2026-8654/). This is an awareness flag for Joe's decision; it never removes the date automatically.
-- ONUG AI Networking Summit New York (Fall 2026) — 2026-10-28 to 2026-10-29 (severity: low, relevance: ai) — [AI Networking Summit New York 2026 (ONUG) — official page: October 28-29, 2026, 1,000+ attendees, 45+ sponsors](https://onug.net/ai-networking-summit-nyc-fall-2026/). This is an awareness flag for Joe's decision; it never removes the date automatically.
-- TCS New York City Marathon 2026 — 2026-11-01 to 2026-11-01 (severity: high, relevance: other) — [Team for Kids — 2026 TCS New York City Marathon: November 1, 2026 (NYRR official charity-program page)](https://organizations.nyrr.org/sites/organization_sites/07a100ee6605183fc2df/pages/2026_tcs_new_york_city_marathon). This is an awareness flag for Joe's decision; it never removes the date automatically.
-- ODSC AI NYC 2026 — AI for Work Summit — 2026-12-02 to 2026-12-03 (severity: medium, relevance: ai) — [ODSC AI NYC 2026 — AI for Work Summit: December 2-3, 2026, Jay Conference Center Bryant Park, New York City (official)](https://summit.ai/). This is an awareness flag for Joe's decision; it never removes the date automatically.
-- The AI Summit New York 2026 — 2026-12-09 to 2026-12-10 (severity: high, relevance: ai) — [The AI Summit New York — December 9-10, 2026, Javits Center, New York (official)](https://newyork.theaisummit.com/). This is an awareness flag for Joe's decision; it never removes the date automatically.
+Calendar awareness has two categories in schema 2.4: related-event opportunity/relevance and major-city logistics. Neither category scores, tiers, selects, or rejects a venue; these flags are awareness only.
+
+- UN Blockchain Week 2026 — 2026-09-10 to 2026-09-19 (related-event opportunity, relevance: web3) — [Events — UN Blockchain Week 2026 (official): UNGA + NYFW 2026 September 10-19, New York City; 10 days, 100+ experiences; AI × Blockchain Summit on autonomous agents and on-chain intelligence](https://unblockchainweek.com/events/). This is an awareness flag for Joe's decision; it never removes the date automatically.
+- AI Week New York 2026 (Fall Edition) — 2026-10-05 to 2026-10-11 (related-event opportunity, relevance: ai) — [AI Week New York (Fall Edition) — Oct 5-11, 2026, Pulse NYC citywide community-led tech festival](https://pulse.nyc/ai-week/). This is an awareness flag for Joe's decision; it never removes the date automatically.
+- Messari Mainnet 2026 — 2026-10-06 to 2026-10-08 (related-event opportunity, relevance: crypto) — [Messari Mainnet 2026 — blockchainacademics.com event listing (October 6-8, 2026, New York, USA, expected 4,000+ attendees)](https://blockchainacademics.com/events/messari-mainnet-2026). This is an awareness flag for Joe's decision; it never removes the date automatically.
+- AI Engineer NYC 2026 — 2026-10-12 to 2026-10-14 (related-event opportunity, relevance: ai) — [AI Engineer New York 2026 — official page: October 12-14, 2026 at Sheraton New York Times Square, 1,000+ in-person AI engineers and leaders](https://www.ai.engineer/nyc/2026). This is an awareness flag for Joe's decision; it never removes the date automatically.
+- Ripple Swell 2026 — 2026-10-27 to 2026-10-29 (related-event opportunity, relevance: crypto) — [Swell 2026 — official Ripple page: New York City, October 27-29, 2026, at The Shed (545 W 30th St); 1,500+ attendees; AI & Agentic Finance among topics](https://swell.ripple.com/). This is an awareness flag for Joe's decision; it never removes the date automatically.
+- TCS New York City Marathon 2026 — 2026-11-01 to 2026-11-01 (major-city logistics) — [Team for Kids — 2026 TCS New York City Marathon: November 1, 2026 (NYRR official charity-program page)](https://organizations.nyrr.org/sites/organization_sites/07a100ee6605183fc2df/pages/2026_tcs_new_york_city_marathon). This is a logistics awareness flag for Joe's decision; it never removes the date automatically.
+- ODSC AI NYC 2026 — AI for Work Summit — 2026-12-02 to 2026-12-03 (related-event opportunity, relevance: ai) — [ODSC AI NYC 2026 — AI for Work Summit: December 2-3, 2026, Jay Conference Center Bryant Park, New York City (official)](https://summit.ai/). This is an awareness flag for Joe's decision; it never removes the date automatically.
+- The AI Summit New York 2026 — 2026-12-09 to 2026-12-10 (related-event opportunity, relevance: ai) — [The AI Summit New York — December 9-10, 2026, Javits Center, New York (official)](https://newyork.theaisummit.com/). This is an awareness flag for Joe's decision; it never removes the date automatically.
 
 ## Venue Shortlist (eligible, ranked)
 
@@ -446,12 +446,10 @@
 - Assess audience overlap: a finance-focused AI engineering audience is adjacent to (not identical with) a free DeAI/Web3 community meetup audience.
 - Assess side-event potential: a DeAI Day on 2026-09-19 could ride the week's Web3/AI audience as a side event, per Joe's standing instruction that calendar overlaps are flags and side-event opportunities, never eliminations.
 - Assess whether a future DeAI event could appropriately coordinate with this enterprise-AI audience; no side-event opportunity is asserted from the organizer page alone.
-- Assess whether an enterprise-IT/AI audience event adjacent to candidate Saturdays 2026-10-24 and 2026-10-31 matters for a free community AI/Web3 meetup (likely low overlap).
 - Assess whether the festival disperses the local AI/Web3 community audience on 10-10 (awareness flag for Joe, not an elimination).
-- Assess whether the institutional-focused event (banks, fintechs, regulators, XRP community) draws the same community audience as a 50-person free AI/Web3 meetup on adjacent candidate Saturdays 2026-10-24 and 2026-10-31.
-- Assess whether this one-day institutional digital-assets event affects the candidate weekends 2026-10-24 or 2026-10-31 (likely negligible for a community meetup).
+- Assess whether the institutional-focused event (banks, fintechs, regulators, XRP community) draws the same community audience as a 50-person free AI/Web3 meetup on adjacent fall weekends.
 - Confirm a Seminar Room A booking is available on the chosen 2026 Saturday (the official pricing page was rate-limited on 2026-08-09; pricing below is from the Wayback Machine snapshot of the official pricing page).
-- Confirm AI Engineer NYC 2026 dates (Oct 12-14) still hold at the Sheraton New York Times Square and whether pre/post-conference community meetups are planned around the candidate Saturdays 2026-10-10 or 2026-10-17.
+- Confirm AI Engineer NYC 2026 dates (Oct 12-14) still hold at the Sheraton New York Times Square and whether pre/post-conference community meetups are planned around adjacent fall weekends.
 - Confirm AI Salon New York's late-2026 in-person event dates and venues (the March 2026 event was at Casa 51, 625 W 51st St) and the current sponsorship/co-hosting process for the NYC chapter.
 - Confirm AI Tinkerers NYC's late-2026 in-person demo-night schedule and typical venue (recent events were hosted at sponsor/partner venues, which are not named on the chapter page).
 - Confirm AICamp NYC's in-person meetup cadence and venues for late 2026 (recent in-person event was at 307 West 38th Street) and the current co-hosting/partnership process.
@@ -487,7 +485,6 @@
 - Confirm nyhackr's late-2026 in-person talk schedule and whether the monthly $7 in-person ticket model continues (upcoming 2026-08-11 talk at Pless Hall, NYU).
 - Confirm NYU Data Science Club's late-2026 public events and whether the annual Datathon and workshops are open beyond NYU students.
 - Confirm ODSC AI New York's late-2026 in-person meetup cadence and venues (the 2026-07-23 event was at Studio 1505, 307 West 38th Street; most other listed events are online).
-- Confirm ONUG AI Networking Summit NYC fall 2026 dates (Oct 28-29) and venue from the organizer.
 - Confirm Papers We Love NYC's late-2026 schedule and venues (recent events were at Datadog, 620 8th Ave).
 - Confirm PyData NYC's upcoming in-person meetup cadence and venues for late 2026 (recent in-person events were at CUNY Graduate Center and 919 Third Avenue) and the current sponsorship/co-hosting process for a community AI event.
 - Confirm screen options (the listing marks projector as unavailable; a TV/monitor may be available — verify).
@@ -497,12 +494,11 @@
 - Confirm screen/projector availability in the booked space (page states state-of-the-art technology and livestreaming but not per-room screen specs).
 - Confirm Seminar Room A is the 800sf room at the published rate (other rooms at $975/30ppl, $1,075/45ppl; 2nd Floor Conference Hall $7,500/day).
 - Confirm Startup Grind NYC's AI Briefing and AI Workflow Exchange schedule for late 2026 and whether these recurring AI events are open to non-members (upcoming events are at Civic Hall and The Yard Herald Square).
-- Confirm Swell 2026 dates (Oct 27-29) and venue (The Shed, Hudson Yards) with Ripple's registration page; the official page publishes the window but exact schedule is TBA.
-- Confirm the AI Week New York fall edition still runs October 5-11, 2026 and whether community-led AI events are scheduled on the candidate Saturday 2026-10-10 (the Luma community calendar at luma.com/ai-week-ny is the live schedule source).
+- Confirm Swell 2026 dates (Oct 27-29) and venue (The Shed, Hudson Yards) with Ripple's registration page; the official page publishes the dates but exact schedule is TBA.
+- Confirm the AI Week New York fall edition still runs October 5-11, 2026 and whether community-led AI events are scheduled on a nearby fall weekend (the Luma community calendar at luma.com/ai-week-ny is the live schedule source).
 - Confirm the all-in rate for a 50-person daytime event; the Tagvenue page publishes a Conference Offer with $895 min spend but no fixed hourly rate in the accessed snapshot.
 - Confirm the all-in rate for a 50-person event; individual spaces price from $35-$60/hour but a multi-room configuration for 50 attendees has no published total.
 - Confirm the Atrium's booking window on the chosen 2026 Saturday (opening/closing time and whether a full-day 09:00-17:00 or 09:00-18:00 booking is allowed); no window hours are published on the cited sources.
-- Confirm The Bridge Conference 2026 date and venue; listed only on a secondary events aggregator (coinpedia).
 - Confirm The Dubai Room's booking window on the chosen 2026 Saturday (opening/closing time and whether a full-day 09:00-17:00 or 09:00-18:00 booking is allowed); the cited Tagvenue hub listing does not publish room hours.
 - Confirm the event-room booking window on the chosen 2026 Saturday (opening/closing time and whether a full-day 09:00-17:00 or 09:00-18:00 booking is allowed); the our-spaces page does not publish room hours.
 - Confirm the exact all-in Saturday rate and booking terms (published day rate $1,150 for up to 65 attendees at 800sf including projector/screen or flat-panel display, wireless Internet, and whiteboard; a prior same-day research pass recorded a Tagvenue listing with capacity 70 theatre and from $180/hr — reconcile before booking).
@@ -539,7 +535,7 @@
 - Confirm whether the 50-person 'up to 50 standing' space can be configured with comfortable seating for a talk format, or is standing-only at that count.
 - Confirm whether the 52-person mixed table/bench layout is comfortable for a seated talk format for 50 attendees.
 - Confirm whether The AI Collective New York chapter runs regular in-person events beyond the 2026-05-12 founders lunch (chapter page aicollective.com/chapters/new-york is a JS shell; the Luma event page is the visible organizer source).
-- Confirm whether UN Blockchain Week 2026 runs its final-day programming on the candidate Saturday 2026-09-19 and whether any same-day flagship (e.g. a gala or AI × Blockchain Summit session) overlaps a 50-person community AI event (flag for Joe to weigh; the official page confirms the Sept 10-19 window and lists a Washington Elite Gala on Sept 18 in Times Square).
+- Confirm whether UN Blockchain Week 2026 runs its final-day programming on a nearby fall weekend and whether any same-day flagship (e.g. a gala or AI × Blockchain Summit session) overlaps a 50-person community AI event (flag for Joe to weigh; the official page confirms the Sept 10-19 dates and lists a Washington Elite Gala on Sept 18 in Times Square).
 - Confirm which branch meeting rooms seat 50+ attendees and their comfortable capacity (most branch rooms are smaller; Central Library spaces are larger).
 - Confirm which combination of the 13 spaces (largest single spaces seat 15-25; venue overview states up to 40 seats venue-wide) comfortably hosts 50 attendees as one event.
 - Confirm which room configuration (if any) hosts a single 50-person event.
@@ -549,7 +545,7 @@
 - Confirm Wi-Fi availability and reliability for a talk-heavy event (not stated in the hub listing).
 - Confirm Wi-Fi availability in the booked room.
 - Confirm WiMLDS NYC's late-2026 in-person event cadence and venues (recent in-person events were at BrainStation, 136 Crosby Street).
-- If Mainnet lands in the week of October 5-11, confirm whether side events spill onto the candidate Saturday 2026-10-10.
+- If Mainnet lands in the week of October 5-11, confirm whether side events spill onto a nearby fall weekend.
 - Messari Mainnet 2026 dates were unconfirmed at research time; treat calendar flags as informational for Joe, never eliminations.
 - No NYC city-slug match in references/trusted_venues.json (zero trusted-venue match, reported honestly as a provenance result).
 - NYC is a high-cost market: many listed venues are inquiry-only or above the USD 5,000 soft budget; all-in totals (taxes, fees, AV, F&B) remain verification questions until a written quote.

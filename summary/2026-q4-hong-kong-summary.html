@@ -123,11 +123,17 @@ section.venue-map-section > p { margin: 0.25rem 0; color: var(--muted); font-siz
   position: relative;
   background: #eef0f2;
 }
+/* The wide 12-column matrix is kept usable inside a scoped horizontal
+   scroll container at EVERY viewport width (desktop >=641px AND narrow
+   screens) so it never widens the document: the wrapper takes the
+   content width while the table keeps its intrinsic width and scrolls
+   internally (overflow-x auto / contain semantics). This is the
+   desktop-overflow boundary — at 1280px a realistic wide matrix would
+   otherwise push document.scrollWidth past clientWidth (28px in the
+   Budapest rollout review). */
+.venue-matrix-scroll { overflow-x: auto; }
 @media (max-width: 640px) {
   .venue-map-container { height: 20rem; }
-  /* Narrow screens: keep the wide 12-column matrix usable inside a
-     scoped horizontal scroll container so it never widens the page. */
-  .venue-matrix-scroll { overflow-x: auto; }
 }
 .venue-map-note {
   margin: 0;

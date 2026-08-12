@@ -103,7 +103,9 @@ Generated from the event plan for 2026-09-26
 
 ## Calendar Note (informational — never a date removal)
 
-- High-severity flags Joe should consider before confirming the date: UN Blockchain Week 2026, TCS New York City Marathon 2026, The AI Summit New York 2026. Joe decides all date conflicts himself.
+- Related-event opportunity/relevance to review before confirming the date: UN Blockchain Week 2026, AI Week New York 2026 (Fall Edition), Messari Mainnet 2026, AI Engineer NYC 2026, Ripple Swell 2026, ODSC AI NYC 2026 — AI for Work Summit, The AI Summit New York 2026.
+- Major-city logistics to verify before confirming the date: TCS New York City Marathon 2026.
+- Joe decides all date conflicts himself; calendar flags never remove the date automatically.
 
 ## Community Verification (manual review)
 

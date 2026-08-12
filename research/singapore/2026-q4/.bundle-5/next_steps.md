@@ -119,7 +119,9 @@ Generated from the event plan for 2026-09-26
 
 ## Calendar Note (informational — never a date removal)
 
-- High-severity flags Joe should consider before confirming the date: TOKEN2049 Singapore 2026, Formula 1 Singapore Airlines Singapore Grand Prix 2026. Joe decides all date conflicts himself.
+- Related-event opportunity/relevance to review before confirming the date: Tech in Asia Conference 2026, Tech Week Singapore 2026 (Big Data & AI World Asia, Cloud & AI Infrastructure Asia, DevOps Live, Cyber Security World Asia, Data Centre World Asia), TOKEN2049 Singapore 2026, Singapore FinTech Festival 2026 (SFF).
+- Major-city logistics to verify before confirming the date: Milken Institute Asia Summit 2026, Formula 1 Singapore Airlines Singapore Grand Prix 2026, STACK Conference 2026 (GovTech Singapore).
+- Joe decides all date conflicts himself; calendar flags never remove the date automatically.
 
 ## Community Verification (manual review)
 

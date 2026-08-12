@@ -1,6 +1,6 @@
 # Event Plan: Singapore (singapore-sg) — Run A: Venue & Date
 
-- Schema version: 2.3
+- Schema version: 2.4
 - Phase: venue
 - City: Singapore (singapore-sg), Singapore
 - Target date: 2026-09-26
@@ -16,19 +16,21 @@
 - Top selectable venue: CALI at Ascott Raffles Place — Raffles Place Function Room (score 0.6767) — tier shortlist_ready
 - Eligible venues: 0; shortlist-ready: 11; leads: 7
 - Speaker candidates: deferred to Run B after venue selection
-- Calendar flags: 7 (high severity: 2) — informational, never eliminations
+- Calendar awareness: 7 record(s) — 4 related-event opportunity/relevance, 3 major-city logistics — informational, never eliminations
 - Open questions: 118
 - Recommendation: none selected yet
 
 ## Calendar flags for Joe — informational, not eliminations
 
-- Tech in Asia Conference 2026 — 2026-09-15 to 2026-09-16 (severity: medium, relevance: ai) — [Tech in Asia Conference 2026 (official): 'APAC's only enterprise-first AI conference' - 15-16 September 2026, Sands Expo and Convention Centre, Singapore; 1,500+ enterprise leaders](https://conference.techinasia.com/). This is an awareness flag for Joe's decision; it never removes the date automatically.
-- Tech Week Singapore 2026 (Big Data & AI World Asia, Cloud & AI Infrastructure Asia, DevOps Live, Cyber Security World Asia, Data Centre World Asia) — 2026-09-29 to 2026-09-30 (severity: medium, relevance: ai) — [Tech Week Singapore | 29-30 September 2026, Sands Expo Convention Centre (official): five co-located shows including Big Data & AI World Asia and Cloud & AI Infrastructure Asia; 29,000+ business leaders, 500+ exhibitors](https://www.singaporetechnologyweek.com/). This is an awareness flag for Joe's decision; it never removes the date automatically.
-- Milken Institute Asia Summit 2026 — 2026-10-07 to 2026-10-09 (severity: low, relevance: other) — [Events | Milken Institute (official): 'The 2026 Milken Institute Asia Summit takes place October 7-9, 2026 in Singapore'](https://milkeninstitute.org/events). This is an awareness flag for Joe's decision; it never removes the date automatically.
-- TOKEN2049 Singapore 2026 — 2026-10-07 to 2026-10-08 (severity: high, relevance: web3) — [TOKEN2049 | 7-8 October 2026 | Singapore (official): 'TOKEN2049 Singapore will bring together top decision-makers to connect, exchange ideas, network, and shape the industry on 7-8 October 2026' at Marina Bay Sands](https://www.token2049.com/singapore). This is an awareness flag for Joe's decision; it never removes the date automatically.
-- Formula 1 Singapore Airlines Singapore Grand Prix 2026 — 2026-10-09 to 2026-10-11 (severity: high, relevance: other) — [Singapore Grand Prix 2026 - F1 Race (official formula1.com race page) and official Singapore GP site singaporegp.sg: 2026 race weekend 9-11 October 2026 (tickets.formula1.com lists '09 - 11 Oct')](https://www.formula1.com/en/racing/2026/singapore). This is an awareness flag for Joe's decision; it never removes the date automatically.
-- STACK Conference 2026 (GovTech Singapore) — 2026-11-04 to 2026-11-05 (severity: low, relevance: other) — [STACK Conference 2026 (4-5 Nov 2026) | Government Technology Agency of Singapore (official tech.gov.sg event page, last updated 10 July 2026); live page returned 404 on fetch 2026-08-10](https://www.tech.gov.sg/events/stack-conference-2026/). This is an awareness flag for Joe's decision; it never removes the date automatically.
-- Singapore FinTech Festival 2026 (SFF) — 2026-11-18 to 2026-11-20 (severity: medium, relevance: other) — [Home | Singapore Fintech Festival (official): '18 - 20 November 2026 | Singapore Expo'; 70,000+ participants, 940+ speakers, 600+ sponsors & exhibitors](https://www.fintechfestival.sg/). This is an awareness flag for Joe's decision; it never removes the date automatically.
+Calendar awareness has two categories in schema 2.4: related-event opportunity/relevance and major-city logistics. Neither category scores, tiers, selects, or rejects a venue; these flags are awareness only.
+
+- Tech in Asia Conference 2026 — 2026-09-15 to 2026-09-16 (related-event opportunity, relevance: ai) — [Tech in Asia Conference 2026 (official): 'APAC's only enterprise-first AI conference' - 15-16 September 2026, Sands Expo and Convention Centre, Singapore; 1,500+ enterprise leaders](https://conference.techinasia.com/). This is an awareness flag for Joe's decision; it never removes the date automatically.
+- Tech Week Singapore 2026 (Big Data & AI World Asia, Cloud & AI Infrastructure Asia, DevOps Live, Cyber Security World Asia, Data Centre World Asia) — 2026-09-29 to 2026-09-30 (related-event opportunity, relevance: ai) — [Tech Week Singapore | 29-30 September 2026, Sands Expo Convention Centre (official): five co-located shows including Big Data & AI World Asia and Cloud & AI Infrastructure Asia; 29,000+ business leaders, 500+ exhibitors](https://www.singaporetechnologyweek.com/). This is an awareness flag for Joe's decision; it never removes the date automatically.
+- TOKEN2049 Singapore 2026 — 2026-10-07 to 2026-10-08 (related-event opportunity, relevance: web3) — [TOKEN2049 | 7-8 October 2026 | Singapore (official): 'TOKEN2049 Singapore will bring together top decision-makers to connect, exchange ideas, network, and shape the industry on 7-8 October 2026' at Marina Bay Sands](https://www.token2049.com/singapore). This is an awareness flag for Joe's decision; it never removes the date automatically.
+- Milken Institute Asia Summit 2026 — 2026-10-07 to 2026-10-09 (major-city logistics) — [Events | Milken Institute (official): 'The 2026 Milken Institute Asia Summit takes place October 7-9, 2026 in Singapore'](https://milkeninstitute.org/events). This is a logistics awareness flag for Joe's decision; it never removes the date automatically.
+- Formula 1 Singapore Airlines Singapore Grand Prix 2026 — 2026-10-09 to 2026-10-11 (major-city logistics) — [Singapore Grand Prix 2026 - F1 Race (official formula1.com race page) and official Singapore GP site singaporegp.sg: 2026 race weekend 9-11 October 2026 (tickets.formula1.com lists '09 - 11 Oct')](https://www.formula1.com/en/racing/2026/singapore). This is a logistics awareness flag for Joe's decision; it never removes the date automatically.
+- STACK Conference 2026 (GovTech Singapore) — 2026-11-04 to 2026-11-05 (major-city logistics) — [STACK Conference 2026 (4-5 Nov 2026) | Government Technology Agency of Singapore (official tech.gov.sg event page, last updated 10 July 2026); live page returned 404 on fetch 2026-08-10](https://www.tech.gov.sg/events/stack-conference-2026/). This is a logistics awareness flag for Joe's decision; it never removes the date automatically.
+- Singapore FinTech Festival 2026 (SFF) — 2026-11-18 to 2026-11-20 (related-event opportunity, relevance: fintech) — [Home | Singapore Fintech Festival (official): '18 - 20 November 2026 | Singapore Expo'; 70,000+ participants, 940+ speakers, 600+ sponsors & exhibitors](https://www.fintechfestival.sg/). This is an awareness flag for Joe's decision; it never removes the date automatically.
 
 ## Venue Shortlist (eligible, ranked)
 
@@ -403,11 +405,12 @@
 
 ## Open Questions
 
-- Assess audience adjacency: an AI/infrastructure enterprise crowd in town the week before candidate Saturday 2026-10-03.
-- Assess audience adjacency: an enterprise-AI crowd in town just before candidate Saturday 2026-09-19.
+- Assess audience adjacency: an AI/infrastructure enterprise crowd in town the week before a nearby fall weekend.
+- Assess audience adjacency: an enterprise-AI crowd in town just before a nearby fall weekend.
 - Assess practical effects: Marina Bay area demand, hotel/venue pricing and MRT crowding during the same week as the F1 Singapore Grand Prix (9-11 October).
-- Assess whether Saturday 10-10 carries practical citywide access, hotel-rate and venue-demand effects for a 50-person community event (informational flag for Joe; not an elimination).
-- Assess whether the finance/investment delegate crowd generates side events relevant to an AI/Web3 community audience.
+- Assess whether the conference's delegate presence affects hotel/venue demand or city crowding in Singapore on 4-5 November (informational city-logistics flag; the official page does not quantify attendance, so no attendance effect is assumed, and no scheduling weekend falls in November).
+- Assess whether the race weekend carries practical citywide access, hotel-rate and venue-demand effects for a 50-person community event (informational flag for Joe; not an elimination).
+- Assess whether the summit's delegate presence affects hotel/venue demand or city crowding in Singapore during 7-9 October, which overlaps the TOKEN2049 week and the F1 race weekend (informational city-logistics flag; the official page does not quantify attendance, so no attendance effect is assumed).
 - Confirm Ads & AI Singapore's next in-person meetup and whether it remains free and open to all (recent editions at SQ Collective x Gen-AI Labs).
 - Confirm AI Tinkerers Singapore's next in-person demo night and typical venue for late 2026 (recent events were hosted at sponsor/partner venues; venues are not named on the chapter page).
 - Confirm AISOC's upcoming public events for late 2026 and whether workshops are open beyond NUS students.
@@ -478,7 +481,7 @@
 - Confirm the final 2026 dates and venue (official page states 29-30 September 2026 at Sands Expo Convention Centre) and any satellite/community side events around the co-located shows.
 - Confirm the final 2026 dates and venue (official page states October 7-9, 2026 in Singapore; a 10times listing cites Four Seasons Hotel Singapore but the official page does not name the venue).
 - Confirm the final 2026 dates and venue for STACK Conference 2026 with GovTech (the official tech.gov.sg event page stated 4-5 Nov 2026 when indexed; the live page returned 404 on 2026-08-10, suggesting the URL moved).
-- Confirm the final 2026 race weekend dates, road-closure schedule and MRT changes with Singapore GP Pte Ltd / LTA before planning any event activity on candidate Saturday 2026-10-10 (the race weekend is 9-11 October with the race on Sunday 11 October; the Marina Bay street circuit is closed to traffic from before the weekend).
+- Confirm the final 2026 race weekend dates, road-closure schedule and MRT changes with Singapore GP Pte Ltd / LTA before planning any event activity on a nearby fall weekend (the race weekend is 9-11 October with the race on Sunday 11 October; the Marina Bay street circuit is closed to traffic from before the weekend).
 - Confirm the hire rate for a Saturday event (JustCo meeting rooms and event spaces are quote/portal-based; no public rates).
 - Confirm the hire rate for a Saturday event (TEC event spaces are quote-based; no public rates published).
 - Confirm the hire rate for the Glass Room for a 50-person event (National Gallery venue rental is quote-based; no public rates on the venue-rental page).
@@ -495,7 +498,7 @@
 - Confirm the specific room and its capacity for a 50-person event (the official page states The Exchange offers 'versatile event spaces for 24 to 250 pax' with 4 meeting rooms; no per-room capacity published).
 - Confirm the typical in-person venue for Global AI Singapore's AgenticNights/AgentCamp events (venues are not named on the chapter page).
 - Confirm whether a projector/screen is included (the listing shows Wi-Fi available but projector/flipchart listed as unavailable).
-- Confirm whether Joe wants to position a DeAI Day as a side event of the TOKEN2049 side-event week (7-8 October main days; the official programme describes a week of 1,000+ side events around the main conference, with candidate Saturdays 2026-10-03 and 2026-10-10 adjacent).
+- Confirm whether Joe wants to position a DeAI Day as a side event of the TOKEN2049 side-event week (7-8 October main days; the official programme describes a week of 1,000+ side events around the main conference, with adjacent fall weekends).
 - Confirm whether ODSC AI Singapore holds any in-person Singapore meetups (recent listed events are online-only; the group's About text promotes hands-on events but recent listings are virtual).
 - Confirm whether PyData Singapore has held any local in-person meetup since the Dec 2, 2019 'Tracking Economic Change with Open Data' meetup (the archived official group page 2023-03-30 lists only a partner event and PyData Global online conferences after it; the live page lists only PyData network events).
 - Confirm whether R-Ladies Singapore has resumed in-person meetups (last in-person event 2025-01-12; later listed events were online).
@@ -517,8 +520,7 @@
 - Singapore FinTech Festival 2026 (18-20 November 2026, Singapore EXPO) and STACK Conference 2026 (4-5 November 2026, GovTech) are November awareness records only; no candidate Saturday falls in November.
 - Singapore Future AI Summit 2026 (sfais.org) confirms a 2026 edition ('first annual') but publishes no dates or venue; recorded as a recurring undated signal, not a dated conflict.
 - The AI Summit Singapore 2026 (May 20-22, Singapore EXPO, part of ATxEnterprise/Asia Tech x Singapore) and AI Everything Asia at GITEX Asia (April 9-10) fall before the 2026-09-15..12-15 coverage window and are noted as out-of-window signals, not stored records.
-- This November record is informational awareness only; no candidate Saturday falls in November, so it is not a venue-candidate-date conflict.
-- This November record is informational awareness only; no candidate Saturday falls in November.
+- This November record is informational awareness only; no scheduling weekend falls in November, so it is not a venue-date conflict.
 - TOKEN2049 Singapore 2026 (7-8 October 2026, Marina Bay Sands) is the world's largest crypto event with an official side-event week of 1,000+ events; candidate Saturdays 2026-10-03 and 2026-10-10 are adjacent, making a DeAI Day a genuine side-event opportunity for the crypto/Web3 audience in town that week.
 - Trusted-venue match for singapore-sg is ZERO: references/trusted_venues.json contains no singapore-sg seed (12 records: san-francisco x2, budapest-hu x2, vienna, seattle, frankfurt, tokyo x2, toronto, prague, bangkok). This is a provenance result, not a suitability conclusion; no other-city seed was substituted.
 
