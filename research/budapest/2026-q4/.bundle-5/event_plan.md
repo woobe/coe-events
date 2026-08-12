@@ -1,6 +1,6 @@
 # Event Plan: Budapest (budapest-hu) — Run A: Venue & Date
 
-- Schema version: 2.2
+- Schema version: 2.4
 - Phase: venue
 - City: Budapest (budapest-hu), Hungary
 - Target date: 2026-09-26
@@ -16,18 +16,20 @@
 - Top selectable venue: Loffice Budapest — Maxi Event Room (score 0.7909) — tier shortlist_ready
 - Eligible venues: 0; shortlist-ready: 15; leads: 6
 - Speaker candidates: deferred to Run B after venue selection
-- Calendar flags: 6 (high severity: 1) — informational, never eliminations
-- Open questions: 102
+- Calendar awareness: 6 record(s) — 3 related-event opportunity/relevance, 3 major-city logistics — informational, never eliminations
+- Open questions: 120
 - Recommendation: none selected yet
 
 ## Calendar flags for Joe — informational, not eliminations
 
-- ScaleupFest 2026 — 2026-09-16 to 2026-09-17 (severity: low, relevance: other) — [The Scaleup Fest 2026 — official: September 16-17, 2026, Budapest, curated CEE scaleup & investor conference (~250 participants)](https://thescaleupfest.com/). This is an awareness flag for Joe's decision; it never removes the date automatically.
-- IEEE Tech Summit: Ethical AI 2026 (Budapest) — 2026-10-01 to 2026-10-02 (severity: medium, relevance: ai) — [Ethical AI Tech Summit Budapest 2026 — official IEEE page: 1-2 October 2026, Budapest, Hungary, two-day AI governance summit](https://techsummit.ieee.org/ethical-ai-2026/). This is an awareness flag for Joe's decision; it never removes the date automatically.
-- SPAR Budapest Marathon 2026 (41st) — 2026-10-10 to 2026-10-11 (severity: high, relevance: other) — [41st SPAR Budapest Marathon — official homepage: SAVE THE DATE October 10-11, 2026, Hungary's largest sports event](https://marathon.runinbudapest.com/). This is an awareness flag for Joe's decision; it never removes the date automatically.
-- AI Forward '26 (Nokia) — 2026-10-21 to 2026-10-21 (severity: low, relevance: ai) — [AI Forward Conference — official: AI Forward is coming to Budapest on 21st October 2026 at MVM Dome](https://techforward.hu/). This is an awareness flag for Joe's decision; it never removes the date automatically.
-- EMNLP 2026 (Budapest) — 2026-10-24 to 2026-10-29 (severity: medium, relevance: ml) — [EMNLP 2026 — official conference site: October 24-29, 2026, Budapest, Hungary (main conference dates for workshops/tutorials TBD)](https://2026.emnlp.org/). This is an awareness flag for Joe's decision; it never removes the date automatically.
-- MeOut Summit 2026 — 2026-11-25 to 2026-11-26 (severity: low, relevance: other) — [MeOut Summit 2026 — official: Central European startup conference, Budapest, November 25-26, 2026, at Akvárium Klub (2,000+ founders, investors, corporate leaders)](https://meoutsummit.com/). This is an awareness flag for Joe's decision; it never removes the date automatically.
+Calendar awareness has two categories in schema 2.4: related-event opportunity/relevance and major-city logistics. Neither category scores, tiers, selects, or rejects a venue; these flags are awareness only.
+
+- ScaleupFest 2026 — 2026-09-16 to 2026-09-17 (major-city logistics) — [The Scaleup Fest 2026 — official: September 16-17, 2026, Budapest, curated CEE scaleup & investor conference (~250 participants)](https://thescaleupfest.com/). This is a logistics awareness flag for Joe's decision; it never removes the date automatically.
+- IEEE Tech Summit: Ethical AI 2026 (Budapest) — 2026-10-01 to 2026-10-02 (related-event opportunity, relevance: ai) — [Ethical AI Tech Summit Budapest 2026 — official IEEE page: 1-2 October 2026, Budapest, Hungary, two-day AI governance summit](https://techsummit.ieee.org/ethical-ai-2026/). This is an awareness flag for Joe's decision; it never removes the date automatically.
+- SPAR Budapest Marathon 2026 (41st) — 2026-10-10 to 2026-10-11 (major-city logistics) — [41st SPAR Budapest Marathon — official homepage: SAVE THE DATE October 10-11, 2026, Hungary's largest sports event](https://marathon.runinbudapest.com/). This is a logistics awareness flag for Joe's decision; it never removes the date automatically.
+- AI Forward '26 (Nokia) — 2026-10-21 to 2026-10-21 (related-event opportunity, relevance: ai) — [AI Forward Conference — official: AI Forward is coming to Budapest on 21st October 2026 at MVM Dome](https://techforward.hu/). This is an awareness flag for Joe's decision; it never removes the date automatically.
+- EMNLP 2026 (Budapest) — 2026-10-24 to 2026-10-29 (related-event opportunity, relevance: ml) — [EMNLP 2026 — official conference site: October 24-29, 2026, Budapest, Hungary (main conference dates for workshops/tutorials TBD)](https://2026.emnlp.org/). This is an awareness flag for Joe's decision; it never removes the date automatically.
+- MeOut Summit 2026 — 2026-11-25 to 2026-11-26 (major-city logistics) — [MeOut Summit 2026 — official: Central European startup conference, Budapest, November 25-26, 2026, at Akvárium Klub (2,000+ founders, investors, corporate leaders)](https://meoutsummit.com/). This is a logistics awareness flag for Joe's decision; it never removes the date automatically.
 
 ## Venue Shortlist (eligible, ranked)
 
@@ -286,7 +288,118 @@
 
 ## Local Communities
 
-- Community research: deferred to Run B after venue selection. No community research research is performed in Run A.
+- AI CEE (Budapest) Meetup Group (Shiwaforce) — activity: active — focus: ai — members: 230 — cadence: Roughly monthly (2026-03-04, 2026-05-07, 2026-08-11) — typical venue: ShiwaForce, Alkotas utca 17-19, Budapest
+  - Contact: [Organizer website (shiwaforce.com, linked from group page)](https://shiwaforce.com)
+  - Verify: Confirm the AI CEE meetup schedule for late 2026 and whether events are open beyond Shiwaforce staff and partners.
+  - Source: [AI CEE (Budapest) Meetup Group page (Meetup)](https://www.meetup.com/ai-cee-budapest-meetup-group/)
+  - Observed: Group page states 230 members, Budapest HU, and is labeled 'Part of Shiwaforce - 2 groups'. About text describes the Shiwaforce AI Evolution community for technology leaders and practitioners exploring agentic, human-centered AI. Page lists in-person events at ShiwaForce, Alkotas utca 17-19, Budapest: 2026-08-11 'Women in AI x Shiwaforce, AI Robotics' (upcoming, 20 attendees, talk in English); 2026-05-07 'Women in AI x Shiwaforce - homecoming meetup!' (38 attendees); 2026-03-04 'AI Forge 2026: Physical AI' (49 attendees). Organizer: Shiwaforce.
+  - Inference (displayable uncertainty, not proof): The group is an active company-hosted AI community with a Women in AI co-branded series; relevant to the local AI audience.
+  - Uncertainty: Company-hosted (Shiwaforce); contact route is the organizer's company website. No sponsorship/collaboration invitation language observed on the page.
+- Budapest Data & Analytics Meetup (independent) — activity: active — focus: data_science, machine_learning — members: 2587 — cadence: Irregular (past events: 2025-10-08, 2026-03-31) — typical venue: Carl Zeiss Digital Innovation Hungary Kft., 1138 Budapest, Esztergomi ut 31-39 (most recent meetup)
+  - Verify: Confirm upcoming in-person meetups for late 2026; the group's descriptive text is Hungarian-only and was not translated.
+  - Source: [Budapest Data & Analytics Meetup group page (Meetup)](https://www.meetup.com/big-data-meetup-budapest/)
+  - Observed: Group page states 2,587 members and Budapest, HU. Page lists in-person meetups: 'Modern Data Engineering Meetup #2' on 2026-03-31 at Carl Zeiss Digital Innovation Hungary Kft., Esztergomi ut 31-39, Budapest (69 attendees); 'Modern Data Engineering Meetup #1' on 2025-10-08 at EPAM Meetup Room, Budapest (81 attendees). Related topics include Big Data, Data Engineering, Machine Learning. Organizers listed: Arato Bence and 4 others.
+  - Inference (displayable uncertainty, not proof): The group runs an in-person data-engineering/data-analytics meetup series; no English sponsorship or collaboration language is present on the page.
+  - Uncertainty: The group's descriptive About text is Hungarian-only; under the English-only evidence scope only language-neutral page facts (names, dates, venues, counts) were recorded and no Hungarian claims were translated.
+- Budapest Data Science Meetup (independent) — activity: active — focus: data_science, machine_learning, ai — members: 4209 — cadence: Roughly bimonthly (past events: 2025-09-10, 2025-11-26, 2026-01-29, 2026-03-26) — typical venue: Shapr3D Office, Akademia u. 6, 1054 Budapest (most recent meetup; earlier venues vary)
+  - Verify: Confirm upcoming in-person meetups for late 2026 and whether Shapr3D Office remains the typical venue.
+  - Source: [Budapest Data Science Meetup group page (Meetup)](https://www.meetup.com/budapest_data_science/)
+  - Observed: Group page states 4,209 members and Budapest, HU. Page lists in-person meetups: 2026-03-26 'Beyond the Catalog and Drug discovery with AI' at Shapr3D Office, Akademia u. 6, 1054 Budapest (44 attendees); 2026-01-29 at Mastercard Office, Vaci ut 26, Budapest (99 attendees); 2025-11-26 at BrokerChooser Office / CEU; 2025-09-10 'Compass AI & Data Meetup' at Create26, Kiraly u. 26 (43 attendees).
+  - Inference (displayable uncertainty, not proof): The group runs a recurring in-person data/AI meetup series with recent AI/ML-themed talks.
+  - Uncertainty: No public contact URL is offered on the page (message form only), so contact_info is null. Venues vary between events; typical_venue reflects the most recent listed venue.
+- Budapest Databricks Meetup Group (independent) — activity: active — focus: data_science, ai — members: 332 — cadence: About 2-3 meetups per year (2025-04-01, 2025-11-18, 2026-05-27) — typical venue: Agora irodahaz, Vaci ut 116-118, Budapest (all three listed meetups)
+  - Verify: Confirm the next Budapest Databricks Meetup date and venue for late 2026 and whether attendance is open to non-Databricks users.
+  - Source: [Budapest Databricks Meetup Group page (Meetup)](https://www.meetup.com/budapest-databricks-meetup-group/)
+  - Observed: Group page states 332 members and Budapest, HU, and describes a community for data-management/BI discussion focused mainly on Databricks. Page lists in-person meetups: 'Budapest Databricks Meetup #3: Metadata, AI & SAP Integration' on 2026-05-27 at Agora irodahaz, Vaci ut 116-118, Budapest (68 attendees); '#2: Lakebridge Experiences and Agentic AI in Practice' on 2025-11-18 (70 attendees); '#1' on 2025-04-01 (85 attendees).
+  - Inference (displayable uncertainty, not proof): The group is an active vendor-aligned data/AI user group with technical content (Agentic AI, metadata/AI integration), not a company marketing page alone.
+  - Uncertainty: Vendor-aligned (Databricks ecosystem); event topics include AI but the group's core is data-platform/BI. No public contact URL on the page.
+- Budapest Quant Group (BQG) (independent) — activity: active — focus: quant, machine_learning — members: 402 — cadence: About annual (2019-11-27, 2024-06-20, 2025-06-26, 2026-06-11) — typical venue: HUB 55, Ulloi ut 55, Budapest (multiple past meetups)
+  - Verify: Confirm the next BQG meetup date and location for late 2026 (recent meetups at Promenade Gardens and HUB 55).
+  - Source: [Budapest Quant Group group page (Meetup)](https://www.meetup.com/budapest-quant-group/)
+  - Observed: Group page states 402 members and Budapest, HU. About text describes a forum/network for quantitative finance and financial modeling. Page lists in-person meetups: 'VI. BQG Meetup - Neural Network Deamericanization' on 2026-06-11 at Promenade Gardens, Vaci ut 80, Budapest (47 attendees); 'V.' on 2025-06-26 at HUB 55 (62 attendees); 'IV. Current Landscape of AI and ML in Quant Finance' on 2024-06-20 at HUB 55 (102 attendees). Organizers listed: Laszlo Antal and 2 others.
+  - Inference (displayable uncertainty, not proof): The group is an active quant-finance community whose recent meetups cover AI/ML methods; direct audience fit with Numerai-style quant interests.
+  - Uncertainty: Cadence is about annual and venues vary; no public contact URL on the page.
+- Budapest Users of R Network (R User Groups) — activity: active — focus: data_science — members: 1701 — cadence: Every 1-2 months (stated on page); most recent listed in-person meetup 2025-11-20 — typical venue: CEU Nador 15 building, Nador utca 15, Budapest (multiple past meetups)
+  - Contact: [Hungarian R community portal (r-projekt.hu, linked from group page)](https://r-projekt.hu)
+  - Verify: Confirm the group's current 2026 meeting schedule and typical venue (page states every 1-2 months; most recent listed in-person meetup 2025-11-20).
+  - Source: [Budapest Users of R Network group page (Meetup)](https://www.meetup.com/budapest-users-of-r-network/)
+  - Observed: Group page states 1,701 members, Budapest HU, and is labeled 'Part of R User Groups - 96 groups'. Page states the group meets every 1-2 months to discuss R topics. Page lists an in-person meetup on 2025-11-20 at CEU Nador 15 building, Nador utca 15, Budapest (34 attendees). Sponsors section names R Consortium, CEU Catering, Quanopt Kft, Kogentum. Organizers listed: Gergely Daroczi and 4 others. Page links r-projekt.hu.
+  - Inference (displayable uncertainty, not proof): The page's stated 1-2 month cadence is not fully reflected in the visible past-event list (recent gaps), so actual late-2026 cadence needs manual confirmation.
+  - Uncertainty: The page claims a 1-2 month cadence but the visible event list shows longer gaps; verification question covers current schedule. r-projekt.hu is the linked Hungarian R community portal.
+- Comets of Web3 (Blockchain Builders Community) (Comets of Web3) — activity: active — focus: web3 — members: unknown — cadence: Irregular Budapest editions (2025-10-30, 2026-06-27) — typical venue: unknown venue
+  - Verify: Confirm the next Comets of Web3 Budapest meetup date and venue for late 2026 (2026-06-27 Budapest edition listed on the official site).
+  - Source: [Comets of Web3 official site](https://cometsweb3.space/)
+  - Observed: Official site lists '27th of June '26: COMETS Builders Meetup in Budapest' with a sign-up link. Site recap page 'Blockchain Builders Meetup in Budapest' describes an in-person Budapest edition and states 'The Budapest Web3 community is active and ready to build together'; the first Budapest Blockchain Builders Meetup was held on 2025-10-30 per the site's recap. Site names ecosystem partners (Solana Foundation, Sui Foundation, Ethereum Foundation, Polygon Labs, Polkadot Ecosystem).
+  - Inference (displayable uncertainty, not proof): The community runs recurring in-person Budapest web3 builder meetups; Budapest venue and exact cadence are not published on the site pages reviewed.
+  - Uncertainty: No page-visible Budapest member count (the regional 10,000-strong community claim is not a local member count), so member_size_public is null. Budapest venue not named on the reviewed pages; no sponsorship invitation language observed (cohost_open false).
+- PyData Budapest (PyData) — activity: active — focus: data_science, machine_learning — members: 1458 — cadence: Irregular (34 past events listed; most recent listed in-person meetup 2025-11-20) — typical venue: unknown venue
+  - Verify: Confirm PyData Budapest's planned in-person meetups for September-October 2026 and the typical venue (recent meetup was at CEU Nador 15 building).
+  - Source: [PyData Budapest group page (Meetup)](https://www.meetup.com/pydata-budapest/)
+  - Observed: Group page states 1,458 members and Budapest, HU. Page lists an in-person meetup on 2025-11-20 at CEU Nador 15 building, Nador utca 15, Budapest (26 attendees). About text states PyData is an educational program of NumFOCUS. Organizers listed: Arato Bence and 4 others.
+  - Inference (displayable uncertainty, not proof): The group is an active local data-science community; venue and cadence for late 2026 are not published on the page.
+  - Uncertainty: Member count and past-event facts come from the group's own page. No public contact URL is offered on the page (only a message form), so contact_info is null.
+- ShareTech | AI & DeepTech (formerly Budapest AI Hub) (independent) — activity: active — focus: ai, machine_learning — members: 1238 — cadence: Roughly monthly in 2025-2026 (page events: 2025-07-22, 2025-11-25, 2026-03-05; foundation site lists further 2026 events) — typical venue: Szervita Square Building, Szervita ter 8, Budapest (two past meetups; other venues vary)
+  - Contact: [ShareTech Foundation website (linked from group page)](https://sharetech.foundation)
+  - Open to co-hosting: "Organizer's own page (sharetech.foundation, linked from the group page) states: 'Partner with us in a high-trust, non-commercial environment. Connect with senior tech communities and position your organisation as a long-term technology partner.'" — own-page phrase; manual assessment required, never a confirmed commitment
+  - Verify: Confirm ShareTech Foundation's current co-hosting or venue-partnership process for community AI events in Budapest and the best public contact route.
+  - Source: [ShareTech | AI & DeepTech group page (Meetup)](https://www.meetup.com/budapest-ai-hub/)
+  - Observed: Group page states 1,238 members and Budapest, HU. About text describes a high-signal AI and DeepTech community (frontier AI, agent-based systems, robotics) run as part of ShareTech Foundation, a Budapest-based non-profit that is the Hungarian chapter lead of the Agentics Foundation. Page lists in-person meetups: 2026-03-05 'Robots Everywhere - The Rise of Embodied AI' at City Gate Officepark, Koztelek u. 6, Budapest (125 attendees); 2025-11-25 'Inside the AI Engine Room' at Szervita Square Building (241 attendees); 2025-07-22 at Create26 (217 attendees); 2025-04-14 at Szervita Square Building (82 attendees). The linked organizer page sharetech.foundation invites partnership (quoted in cohost_evidence_phrase).
+  - Inference (displayable uncertainty, not proof): The partnership invitation indicates possible openness to collaboration or venue partnership, but it is a manual assessment, not authorization or a confirmed relationship.
+  - Uncertainty: cohost_open true is based on the organizer's own foundation site (linked from the group page), not the Meetup page text itself; needs human verification of the current process and contact route.
+- Turbine AI Meetups - Budapest (Turbine) — activity: active — focus: machine_learning, ai — members: 985 — cadence: Last Wednesday monthly (stated on page; events 2026-04-01, 2026-04-29, 2026-06-08, 2026-06-17) — typical venue: Turbine Kft., Szigony utca 26-32, Budapest
+  - Verify: Confirm Turbine AI Meetups continue on the last Wednesday monthly and are open to external attendees.
+  - Source: [Turbine AI Meetups - Budapest group page (Meetup)](https://www.meetup.com/turbine-ai-meetups/)
+  - Observed: Group page states 985 members and Budapest, HU, and is labeled 'Part of Turbine Meetups - 1 group'. Page states meetups are held on the last Wednesday of every month for researchers, engineers, scientists and students working on machine learning. Page lists in-person meetups: 2026-06-17 'Virtual Cells at ICLR'26 Conference' at Turbine Kft., Szigony utca 26-32, Budapest (27 attendees); 2026-06-08 (13); 2026-04-29 'The Platonic Representation Hypothesis' (54); 2026-04-01 'Titans: Long-Context Sequence Models' (56).
+  - Inference (displayable uncertainty, not proof): The group is an active company-run ML/AI community meetup hosted by Turbine (a computational biology company); relevance to the local AI/ML audience is direct.
+  - Uncertainty: Company-hosted and company-branded; no public contact URL on the page beyond company social links (not recorded as contact routes).
+- AI Tinkerers Budapest (AI Tinkerers) — activity: intermittent — focus: ai, machine_learning — members: unknown — cadence: Chapter page reports 'Local cadence 1 recent event'; network states most chapters run monthly but frequency varies by city — typical venue: unknown venue
+  - Verify: Confirm whether AI Tinkerers Budapest currently runs regular in-person demo nights in 2026 and the typical venue (the 2025-12-11 hackathon partner event was at Puzl Coworking per attendee testimonial).
+  - Source: [AI Tinkerers Budapest chapter page](https://budapest.aitinkerers.org/)
+  - Observed: Chapter page lists organizers Tamas and Norbert and describes an in-person builder meetup format (live demos, technical Q&A, no-pitch networking). Page lists a hackathon partner event, ElevenLabs Worldwide Hackathon, on 2025-12-11 in Budapest with an attendee testimonial naming Puzl Coworking; page event data lists the address as Lajos street 126-130, Budapest. Page states 'Local cadence 1 recent event'.
+  - Inference (displayable uncertainty, not proof): The chapter exists and ran/co-located an in-person event in the past 12 months, but the chapter page itself reports only one recent event, so current regular cadence is unproven.
+  - Uncertainty: Puzl Coworking's address (1036 Budapest, Lajos utca 126-130) is corroborated externally but the chapter page is the claim-bearing source here. No chapter-level member count or public contact URL on the page; typical_venue left null (single-event evidence).
+- Budapest Artificial Intelligence Meetup Group (independent) — activity: intermittent — focus: ai — members: 55 — cadence: Irregular (last listed in-person event 2025-11-06) — typical venue: unknown venue
+  - Verify: Confirm whether the Budapest Artificial Intelligence Meetup Group holds in-person meetups in 2026 (last listed in-person event 2025-11-06 had 1 attendee).
+  - Source: [Budapest Artificial Intelligence Meetup Group page (Meetup)](https://www.meetup.com/meetup-group-wgkpuftl/)
+  - Observed: Group page states 55 members and Budapest, HU. About text describes a group for individuals interested in pragmatic software development and AI. Page lists an in-person event 'AWS Serverless & AI at Scale' on 2025-11-06 at high five budapest, Kiraly u. 15, Budapest (1 attendee); earlier events were online or in 2024.
+  - Inference (displayable uncertainty, not proof): The group is AI-relevant but very small and irregular; current in-person cadence is unproven.
+  - Uncertainty: 55 members and 1-attendee events suggest minimal activity; retained as a clearly relevant but intermittent group. No public contact URL on the page.
+- Budapest dataSTREAM Meetup Series (independent) — activity: intermittent — focus: data_science, ai — members: 1037 — cadence: About annual (listed events 2021, 2022, 2023, 2025) — typical venue: unknown venue
+  - Verify: Confirm whether Budapest dataSTREAM plans an in-person event in late 2026 (most recent listed 2025-12-03 was a paid conference-style event).
+  - Source: [Budapest dataSTREAM Meetup Series group page (Meetup)](https://www.meetup.com/Budapest-dataSTREAM-Meetup-Series/)
+  - Observed: Group page states 1,037 members and Budapest, HU. About text describes a group for data enthusiasts interested in data science and innovative analytical technologies. Page lists an in-person paid event 'conTEXT 2025 - Mi es az MI' on 2025-12-03 at CEU Nador 15 Building, Budapest; earlier listed events were 2023-07-03, 2022-12-06 and 2021-09-21 (in-person, Budapest/Veszprem).
+  - Inference (displayable uncertainty, not proof): The group runs irregular, roughly annual data-science events, the most recent being in-person and AI-themed; cadence for late 2026 is unproven.
+  - Uncertainty: Most recent event was ticketed (EUR 60 per the listing) and had 1 attendee listed; actual community scale is uncertain. No public contact URL on the page.
+- Global AI Budapest (Global AI Community) — activity: intermittent — focus: ai — members: 39 — cadence: Monthly online interview events plus an in-person conference (2026-09-15) — typical venue: unknown venue
+  - Verify: Confirm whether Global AI Budapest holds in-person Budapest events beyond the 2026-09-15 Global AI Conference Budapest (recent chapter events were online interviews).
+  - Source: [Global AI Budapest chapter page (Global AI Community)](https://globalai.community/chapters/budapest/)
+  - Observed: Official chapter page states 39 members, 7 events, 2 organizers (Eve Pardi and one other). Page lists an in-person 'Global AI Conference Budapest' scheduled 2026-09-15 in Budapest, Hungary (venue TBA); other listed chapter events are online Women in AI interview events (2026-07-15, 2026-08-12, 2026-09-09, 2026-10-07, 2026-11-04) and a 2026-05-20 event in Copenhagen.
+  - Inference (displayable uncertainty, not proof): The chapter is mostly digital-first with a scheduled in-person conference; no in-person Budapest event is dated within the 12 months before accessed_on, so it is not labelled active.
+  - Uncertainty: Member count (39) is the chapter's own page count. No public contact URL on the chapter page (organizer LinkedIn buttons not recorded as contact routes).
+- AI Meetups (aimeetups.hu) (independent) — activity: dormant — focus: ai — members: unknown — cadence: No listed events since 2024-08-13 — typical venue: Balna Terasz & Bisztro, 1093 Budapest, Fovam ter 11-12 (both listed 2024 meetups)
+  - Verify: Confirm whether AI Meetups (aimeetups.hu) plans further in-person meetups (last listed 2024-08-13); the official page is Hungarian-only.
+  - Source: [AI Meetups (aimeetups.hu) official site](https://aimeetups.hu/)
+  - Observed: Official site describes AI meetup events and lists two in-person paid meetups (35 EUR) on 2024-08-13 and 2024-08-15 at Balna Terasz & Bisztro, 1093 Budapest, Fovam ter 11-12. Site footer credits AI2Know.IT and is dated 2024; no listed events within the last 12 months.
+  - Inference (displayable uncertainty, not proof): The group ran paid in-person AI networking meetups in Budapest in August 2024 and has no visible activity since; retained as dormant historical/contextual context.
+  - Uncertainty: Official page is Hungarian-only; only language-neutral facts (dates, venue name, price, attribution) were recorded and no Hungarian claims were translated. No member count on the page.
+- Budapest Artificial Intelligence Meetup (ELTE + Ericsson) (university) — activity: dormant — focus: ai, machine_learning — members: 1711 — cadence: Page describes a monthly networking event; no listed events since 2023-10-04 — typical venue: unknown venue
+  - Verify: Confirm whether the ELTE/Ericsson Budapest AI Meetup has held any in-person event since 2023 (last listed 2023-10-04).
+  - Source: [Budapest Artificial Intelligence Meetup group page (Meetup)](https://www.meetup.com/budapest-artificial-intelligence-meetup/)
+  - Observed: Group page states 1,711 members and Budapest, HU. About text (English) states the meetup is a monthly networking event initiated by ELTE Faculty of Informatics and organized by ELTE Faculty of Informatics and Ericsson Hungary. Last listed events: 2023-10-04 'AI A DIAGNOSZTIKABAN', 2023-09-26, 2023-09-20 (locations not specified), and 2023-03-30 at CEU Nador 15 building; no listed events within the last 12 months.
+  - Inference (displayable uncertainty, not proof): The group is a university-affiliated AI community that is currently silent; retained as dormant historical/contextual context for the university channel.
+  - Uncertainty: Page claims monthly cadence but the event list shows no activity since 2023-10-04. No public contact URL on the page.
+- Data Natives, Budapest (independent) — activity: dormant — focus: data_science, ai — members: 1491 — cadence: No listed events since 2023-05-17 — typical venue: unknown venue
+  - Verify: Confirm whether Data Natives Budapest has any in-person presence in Budapest beyond the online events listed (last listed event 2023-05-17).
+  - Source: [Data Natives, Budapest group page (Meetup)](https://www.meetup.com/big-data-budapest/)
+  - Observed: Group page states 1,491 members and Budapest, HU, and states the group is hosted and managed by Dataconomy Media GmbH. Page describes the group as an event for people interested in AI, data and future tech. Most recent listed events are online events (2023-05-17 and earlier); no listed events within the last 12 months.
+  - Inference (displayable uncertainty, not proof): The group is AI/data-relevant but shows no recent activity and its recent listed events were online; retained as dormant historical/contextual context, not as an active local meetup.
+  - Uncertainty: The page publishes an organizer email in the About text; emails are not recorded under the contact policy. Digital-first history is explicit; any in-person Budapest presence is unverified.
+- R-Ladies Budapest (R-Ladies) — activity: dormant — focus: data_science — members: 739 — cadence: Irregular before pause; no listed events since 2023-10-03 — typical venue: unknown venue
+  - Verify: Confirm whether R-Ladies Budapest has resumed any in-person meetups since 2023 (last listed 2023-10-03).
+  - Source: [R-Ladies Budapest group page (Meetup)](https://www.meetup.com/rladies-budapest/)
+  - Observed: Group page states 739 members and Budapest, HU, and is labeled 'Part of RLadies+ - 251 groups'. Page states the group is a local chapter of rladies.org, a worldwide organization promoting gender diversity in the R community. Last listed in-person event is 'bioinfoRmatics by Budapest Users of R Network' on 2023-10-03 at CEU Nador 15 building, Budapest (8 attendees); no listed events within the last 12 months.
+  - Inference (displayable uncertainty, not proof): The group is a relevant R/data-science community that is currently silent (no listed activity since 2023-10-03); retained as dormant historical/contextual context, not as fresh audience evidence.
+  - Uncertainty: Page's descriptive text is Hungarian-only; only language-neutral facts recorded. The page publishes an organizer email and social pages, which are not recorded as contact routes under the contact policy.
 
 ## Trusted Network
 
@@ -298,11 +411,11 @@
 
 ## Open Questions
 
-- Assess audience adjacency to candidate Saturdays 2026-10-17 and 2026-10-24.
-- Assess audience adjacency: an ethics/governance AI audience overlaps the AI/Web3 community for a DeAI Day on adjacent candidate Saturday 2026-10-03.
-- Assess audience adjacency: the NLP research community overlaps AI/ML enthusiasts for a DeAI Day on candidate Saturday 2026-10-24 (the conference runs through that Saturday).
+- Assess audience adjacency to adjacent fall weekends.
+- Assess audience adjacency: an ethics/governance AI audience overlaps the AI/Web3 community for a DeAI Day on a nearby fall weekend.
+- Assess audience adjacency: the NLP research community overlaps AI/ML enthusiasts for a DeAI Day on a nearby fall weekend (the conference runs through that Saturday).
 - Assess whether Saturday 10-10 carries practical downtown access effects for a 50-person community event (informational flag for Joe; not an elimination).
-- Assess whether the startup/investor crowd generates side events near candidate Saturday 2026-09-19.
+- Assess whether the startup/investor crowd generates side events near a nearby fall weekend.
 - Budapest Fintech Week 2026: the official Luma page confirms the event is returning in 2026 but publishes no dates yet (program TBA); the 2025 edition ran December 4-5. Recorded as a recurring November/December signal, not a dated conflict.
 - Confirm AI Forward '26 final date and venue (official page states 21 October 2026 at MVM Dome, Budapest) and whether registration/side programming is open to community attendees.
 - Confirm availability of the 'A' event space on the chosen 2026 Saturday.
@@ -316,6 +429,7 @@
 - Confirm meeting-room capacity (the homepage lists meeting rooms bookable by hour/day but no capacity figures).
 - Confirm meeting-room rental rates for a 50-person event (KUBIK publishes no numeric meeting-room prices on the reviewed page).
 - Confirm MeOut Summit 2026 dates and venue with the organizer (official page states November 25-26, 2026; Akvárium Klub is cited by event listings).
+- Confirm PyData Budapest's planned in-person meetups for September-October 2026 and the typical venue (recent meetup was at CEU Nador 15 building).
 - Confirm ScaleupFest 2026 dates and the final venue list (official page publishes September 16-17, 2026, Budapest, 'multiple venues in downtown Budapest' with details pending).
 - Confirm screen availability in the meeting rooms (not listed on the homepage).
 - Confirm screen/projection and sound availability (not listed on the venue-rental page).
@@ -326,10 +440,12 @@
 - Confirm screen/projection availability in the chosen space (the event-organizing page lists built-in sound and lighting for the Concert Hall but no projector/screen inventory).
 - Confirm screen/projection availability in the conference center (the page lists full technical support but no specific screen/AV inventory).
 - Confirm screen/projection availability in the Screening Room (the venue page mentions advanced technical capabilities but no specific AV inventory).
+- Confirm ShareTech Foundation's current co-hosting or venue-partnership process for community AI events in Budapest and the best public contact route.
 - Confirm the 'A' event space (up to 50 people, lower-ground with kitchenette) comfortably seats 50 in a talk configuration.
 - Confirm the 20-50 person Community & Event space comfortably seats 50 in a talk configuration (listed range is 20-50).
 - Confirm the 24/7 opening supports a 09:00-17:00 event (the page states open 24/7 and no maximum booking time).
 - Confirm the 25-50 person event space (street-level, ideal for 10-50 people) comfortably seats 50 in a talk configuration.
+- Confirm the AI CEE meetup schedule for late 2026 and whether events are open beyond Shiwaforce staff and partners.
 - Confirm the all-in Saturday rate for 50 people (published FULL-DAY CONFERENCE PACKAGE EUR 115/person/day = EUR 5,750 = 6,644.13 USD at the ECB 2026-08-10 rate, over the USD 5,000 soft budget; confirm VAT and any room minimums).
 - Confirm the all-in Saturday total including VAT (workin.space lists day rate HUF 111,173 excl. VAT = 353.25 USD at the ECB 2026-08-10 rate; hourly HUF 19,900).
 - Confirm the all-in Saturday total including VAT (workin.space lists day rate HUF 60,894 excl. VAT = 193.49 USD at the ECB 2026-08-10 rate; hourly HUF 10,900).
@@ -351,8 +467,9 @@
 - Confirm the exact all-in Saturday total including 27% VAT (published 21,500 HUF/hour +VAT; 8-hour estimate 546.53 USD at the documented ECB 2026-08-10 rate).
 - Confirm the exact all-in Saturday total including 27% VAT and any AV equipment charge (published 18,000 HUF/hour +VAT; 8-hour estimate 457.56 USD at the documented ECB 2026-08-10 rate).
 - Confirm the exact all-in weekend total including VAT (published weekend full-day 360 EUR +VAT for 8 hours = 415.98 USD at the ECB 2026-08-10 rate EUR 1 = USD 1.1555; workday minimum 2 hours at 175 EUR +VAT).
-- Confirm the final 2026 route, street-closure schedule, and public-transport changes with the organizers and BKK before planning any event activity on candidate Saturday 2026-10-10 (the marathon festival weekend runs October 10-11 with the marathon itself on Sunday October 11).
+- Confirm the final 2026 route, street-closure schedule, and public-transport changes with the organizers and BKK before planning any event activity on a nearby fall weekend (the marathon festival weekend runs October 10-11 with the marathon itself on Sunday October 11).
 - Confirm the Great Hall's 100-150 person capacity can be configured for an intimate 50-person talk event with the gallery/stage layout (capacity range is venue-published).
+- Confirm the group's current 2026 meeting schedule and typical venue (page states every 1-2 months; most recent listed in-person meetup 2025-11-20).
 - Confirm the hire rate for a 50-person event in the Glass Hall or a smaller bookable unit (no numeric price published; venue rental is quote-based).
 - Confirm the hire rate for a 50-person Saturday event (A38 publishes venue capacities and catering packages but no numeric rental price on the event-organizing page).
 - Confirm the hire rate for a 50-person Saturday event (Create.26 publishes 'Based on a unique offer' with no numeric price).
@@ -365,19 +482,33 @@
 - Confirm the hire rate for the Great Hall for a 50-person event (no numeric price published on the official booking page).
 - Confirm the IEEE Ethical AI Tech Summit's venue and any satellite community events in Budapest on October 1-2, 2026 (the official page publishes the dates and city but not yet the venue).
 - Confirm the Maxi Event Room (50-60 people) comfortably seats 50 in a talk configuration.
+- Confirm the next BQG meetup date and location for late 2026 (recent meetups at Promenade Gardens and HUB 55).
+- Confirm the next Budapest Databricks Meetup date and venue for late 2026 and whether attendance is open to non-Databricks users.
+- Confirm the next Comets of Web3 Budapest meetup date and venue for late 2026 (2026-06-27 Budapest edition listed on the official site).
 - Confirm the private-event/space-rental rate for a 50-person Saturday event (Brody House publishes no numeric price; enquiries via events@brody.house).
 - Confirm the room can be configured for a 50-person talk event if capacity allows.
 - Confirm the South hall (50 theatre) vs Full House (90 theatre) configuration for a 50-person event.
 - Confirm the weekend exclusive-hire rate for the Community & Event space for a 50-person event (the official booking page publishes no numeric price; prices are per hour on request).
+- Confirm Turbine AI Meetups continue on the last Wednesday monthly and are open to external attendees.
+- Confirm upcoming in-person meetups for late 2026 and whether Shapr3D Office remains the typical venue.
+- Confirm upcoming in-person meetups for late 2026; the group's descriptive text is Hungarian-only and was not translated.
 - Confirm whether a projector/screen is included for the event space (the page lists projector + electric canvas for the WS workshop rooms; the event space section does not list one).
 - Confirm whether a projector/screen is included in the Conference Room rental (the page lists audio-visual equipment and reception among included services).
 - Confirm whether a projector/screen is included in the Maxi Event Room rental or requires the bespoke-priced Full AV package (the page lists full AV equipment at bespoke price).
 - Confirm whether a projector/screen is included or requires the bespoke-priced Full AV package.
+- Confirm whether AI Meetups (aimeetups.hu) plans further in-person meetups (last listed 2024-08-13); the official page is Hungarian-only.
+- Confirm whether AI Tinkerers Budapest currently runs regular in-person demo nights in 2026 and the typical venue (the 2025-12-11 hackathon partner event was at Puzl Coworking per attendee testimonial).
+- Confirm whether Budapest dataSTREAM plans an in-person event in late 2026 (most recent listed 2025-12-03 was a paid conference-style event).
+- Confirm whether Data Natives Budapest has any in-person presence in Budapest beyond the online events listed (last listed event 2023-05-17).
+- Confirm whether Global AI Budapest holds in-person Budapest events beyond the 2026-09-15 Global AI Conference Budapest (recent chapter events were online interviews).
 - Confirm whether multiple meeting rooms can be combined for a 50-person event (reception is available weekdays 9-18; 24/7 card access for members).
+- Confirm whether R-Ladies Budapest has resumed any in-person meetups since 2023 (last listed 2023-10-03).
 - Confirm whether the 200-250 person venue can be configured for a 50-person community event (capacity is large; smaller groups are stated as welcome).
 - Confirm whether the 7-14 person Large Meeting Room can be combined with the adjacent rooms/loft space to seat 50 (the room alone is far below the 50-person target).
 - Confirm whether the Aranyhall Conference Center's two 100-seat halls (Main Hall + Glass Hall, partitionable) can be booked individually for a 50-person event.
+- Confirm whether the Budapest Artificial Intelligence Meetup Group holds in-person meetups in 2026 (last listed in-person event 2025-11-06 had 1 attendee).
 - Confirm whether the Corner Hall (40 theatre / 30 rectangle) or the Rooftop Hall (60 theatre) is the better fit for 50 attendees (Corner Hall is 40-seat theatre, slightly below target).
+- Confirm whether the ELTE/Ericsson Budapest AI Meetup has held any in-person event since 2023 (last listed 2023-10-04).
 - Confirm whether the published hourly rate stands for a full Saturday booking and whether any weekend minimum or cleaning fee applies (published 8,000 HUF/hour for 7-14 people; 8-hour estimate 203.36 USD at the documented ECB 2026-08-10 rate).
 - Confirm whether the room can be combined with an adjacent room for a 50-person event.
 - Confirm whether the Screening Room (130 m2, 80-120 guests) or a smaller partition fits a 50-person event.
@@ -399,6 +530,6 @@
 - Hungarian-only official venue/event pages (e.g. MOM Kulturális Központ, Bálna Budapest) were out of the English-only scope; their existence is logged as a discovery gap, not translated evidence.
 - Impact Hub Budapest (tv-02) and Loffice Budapest (tv-03) are the trusted-venue seeds for budapest-hu; both were re-verified from current official pages on 2026-08-10 and are included as candidate records (status not marked used).
 - SPAR Budapest Marathon 2026 runs October 10-11; candidate Saturday 2026-10-10 falls inside the festival weekend, so 10-10 carries a citywide transport/street-closure awareness flag for Joe.
-- This November record is informational awareness only; no candidate Saturday falls in November, so it is not a venue-candidate-date conflict.
+- This November record is informational awareness only; no fall weekend in the candidate window falls in November, so it is not a venue-candidate-date conflict. As an unresolved logistics question: assess whether the summit's 2,000+ attendee footprint could create crowding, hotel-demand, or transport effects around November 25-26.
 
 Full source list: see sources.md

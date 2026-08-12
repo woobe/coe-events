@@ -103,11 +103,75 @@ Generated from the event plan for 2026-09-26
 
 ## Calendar Note (informational — never a date removal)
 
-- High-severity flags Joe should consider before confirming the date: UN Blockchain Week 2026, TCS New York City Marathon 2026, The AI Summit New York 2026. Joe decides all date conflicts himself.
+- Related-event opportunity/relevance to review before confirming the date: UN Blockchain Week 2026, AI Week New York 2026 (Fall Edition), Messari Mainnet 2026, AI Engineer NYC 2026, Ripple Swell 2026, ODSC AI NYC 2026 — AI for Work Summit, The AI Summit New York 2026.
+- Major-city logistics to verify before confirming the date: TCS New York City Marathon 2026.
+- Joe decides all date conflicts himself; calendar flags never remove the date automatically.
+
+## Community Verification (manual review)
+
+- (NYAI) New York Artificial Intelligence (AI Community Collective) — activity: active — contact: [NYAI official site (nyai.co, linked from group About)](https://www.nyai.co/)
+  - Verify: Confirm NYAI's current in-person event cadence and the best public contact route for a community AI event (the group's About invites event/workshop partnerships and sponsorship applications).
+  - Co-host openness: assess the own-page phrase manually before any partnership discussion.
+- AI Salon New York (AI Salon) — activity: active
+  - Verify: Confirm AI Salon New York's late-2026 in-person event dates and venues (the March 2026 event was at Casa 51, 625 W 51st St) and the current sponsorship/co-hosting process for the NYC chapter.
+  - Co-host openness: assess the own-page phrase manually before any partnership discussion.
+- AI Tinkerers New York City (AI Tinkerers) — activity: active
+  - Verify: Confirm AI Tinkerers NYC's late-2026 in-person demo-night schedule and typical venue (recent events were hosted at sponsor/partner venues, which are not named on the chapter page).
+- Columbia AI Club CUB (independent) — activity: active
+  - Verify: Confirm Columbia AI Club CUB's late-2026 public events and whether its summit/events are open beyond Columbia students and faculty.
+- CryptoMondays NYC (CryptoMondays) — activity: active — contact: [CryptoMondays official site (linked from group About)](https://www.cryptomondays.io/)
+  - Verify: Confirm CryptoMondays NYC's late-2026 Monday meetup schedule and venues (recent weekly events were at Pubkey, 85 Washington Pl).
+- GDG NYC (Google Developer Groups) — activity: active
+  - Verify: Confirm GDG NYC's late-2026 event calendar and venues (no upcoming events were listed at access time) and the current sponsorship/co-hosting process for a community AI event.
+  - Co-host openness: assess the own-page phrase manually before any partnership discussion.
+- Global AI New York (Global AI Community) — activity: active
+  - Verify: Confirm Global AI New York's late-2026 in-person event schedule and typical venues (venues are not named on the chapter page).
+- LangChain NYC (LangChain) — activity: active
+  - Verify: Confirm LangChain NYC's late-2026 in-person meetup schedule and venues (past event was at Grammarly NYC; registration-required address).
+- Mindstone NY AI Meetup (Mindstone) — activity: active — contact: [Mindstone official site (linked from group page)](https://mindstone.com)
+  - Verify: Confirm Mindstone NY AI Meetup's late-2026 in-person schedule and venues (recent in-person events were at Wix Playground, All Souls NYC, and CIBC New York).
+- New York AI Engineers (AI Engineers) — activity: active
+  - Verify: Confirm New York AI Engineers' late-2026 in-person event schedule and venues (recent events were at Fonzi HQ, 25 Kent Ave).
+- New York Open Statistical Programming Meetup (nyhackr) (independent) — activity: active — contact: [nyhackr.org official site (linked from group page)](https://nyhackr.org/)
+  - Verify: Confirm nyhackr's late-2026 in-person talk schedule and whether the monthly $7 in-person ticket model continues (upcoming 2026-08-11 talk at Pless Hall, NYU).
+- NYC AI Developers Group (AICamp) (AICamp) — activity: active — contact: [AICamp official site (linked from group page)](https://www.aicamp.ai/)
+  - Verify: Confirm AICamp NYC's in-person meetup cadence and venues for late 2026 (recent in-person event was at 307 West 38th Street) and the current co-hosting/partnership process.
+  - Co-host openness: assess the own-page phrase manually before any partnership discussion.
+- NYC Creative AI (formerly ComfyUI NYC) (independent) — activity: active
+  - Verify: Confirm NYC Creative AI's late-2026 in-person event dates and venues (monthly events have been at ZeroSpace, 337-345 Butler St, Brooklyn).
+- NYC Women in Machine Learning & Data Science (WiMLDS NYC) (WiMLDS) — activity: active — contact: [WiMLDS NYC chapter page (linked from group page)](https://wimlds.org/chapters/about-nyc)
+  - Verify: Confirm WiMLDS NYC's late-2026 in-person event cadence and venues (recent in-person events were at BrainStation, 136 Crosby Street).
+- NYU Data Science Club (DSC@NYU) (independent) — activity: active
+  - Verify: Confirm NYU Data Science Club's late-2026 public events and whether the annual Datathon and workshops are open beyond NYU students.
+- ODSC AI New York (ODSC) — activity: active
+  - Verify: Confirm ODSC AI New York's late-2026 in-person meetup cadence and venues (the 2026-07-23 event was at Studio 1505, 307 West 38th Street; most other listed events are online).
+- Papers We Love NYC (Papers We Love) — activity: active — contact: [Papers We Love official site (linked from group page)](https://paperswelove.org)
+  - Verify: Confirm Papers We Love NYC's late-2026 schedule and venues (recent events were at Datadog, 620 8th Ave).
+- PyData NYC (PyData) — activity: active
+  - Verify: Confirm PyData NYC's upcoming in-person meetup cadence and venues for late 2026 (recent in-person events were at CUNY Graduate Center and 919 Third Avenue) and the current sponsorship/co-hosting process for a community AI event.
+  - Co-host openness: assess the own-page phrase manually before any partnership discussion.
+- Startup Grind NYC (Startup Grind) — activity: active
+  - Verify: Confirm Startup Grind NYC's AI Briefing and AI Workflow Exchange schedule for late 2026 and whether these recurring AI events are open to non-members (upcoming events are at Civic Hall and The Yard Herald Square).
+- The New York Python Meetup Group (NYC Python) (independent) — activity: active — contact: [NYC Python official site (linked from group page)](https://nycpython.org)
+  - Verify: Confirm NYC Python's late-2026 event schedule and typical venues (recent events were at Datadog and 11 Times Square).
+- AI Professionals NYC Machine Learning (AI Professionals) — activity: intermittent
+  - Verify: Confirm whether AI Professionals NYC Machine Learning holds any in-person New York meetups (recent and upcoming listed events are online-only; the About text mentions both virtual and in-person but recent listings are virtual).
+- Data Umbrella NYC (Data Umbrella) — activity: intermittent — contact: [Data Umbrella official site (linked from group page)](https://www.dataumbrella.org)
+  - Verify: Confirm whether Data Umbrella holds any in-person New York events (recent listed events are online-only speaker series and workshops; the About text organizes online speaker series).
+- The AI Collective New York (The AI Collective) — activity: intermittent
+  - Verify: Confirm whether The AI Collective New York chapter runs regular in-person events beyond the 2026-05-12 founders lunch (chapter page aicollective.com/chapters/new-york is a JS shell; the Luma event page is the visible organizer source).
+- New York R User Group (independent) — activity: dormant
+  - Verify: Confirm whether New York R User Group has resumed in-person meetups (last listed events were online: 2024-02-01, 2022-09-27; the About text's sponsorship line is historical).
+- NYC PyLadies (PyLadies) — activity: dormant — contact: [NYC PyLadies official site (linked from group page)](https://nyc.pyladies.com)
+  - Verify: Confirm whether NYC PyLadies has resumed in-person meetups (last in-person event 2024-10-24 at ElasticSearch; the official site describes monthly events but none is listed within the 12 months before accessed_on).
+- Python for Quant Finance NYC (independent) — activity: dormant
+  - Verify: Confirm whether Python for Quant Finance NYC has resumed any meetups (last listed events were 2016-2017; group retained as the standing NYC quant-relevant community signal).
+- R-Ladies New York (R-Ladies) — activity: dormant — contact: [R-Ladies NYC official site (linked from group page)](https://www.rladiesnyc.org/)
+  - Verify: Confirm whether R-Ladies New York has resumed in-person meetups (last in-person event 2025-06-16 at Cafe-Flor, 218 8th Ave; no event listed within the 12 months before accessed_on).
 
 ## Deferred to Run B (after venue selection)
 
-- Speaker research, community outreach, trusted-network matching, and co-host planning are deferred to Run B — no speaker or community outreach happens in Run A.
+- Speaker research, trusted-network matching, and co-host planning are deferred to Run B — no speaker or co-host outreach happens in Run A. Community research is completed in Run A.
 
 ## Verification Checklist
 

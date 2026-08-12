@@ -142,11 +142,53 @@ Generated from the event plan for 2026-09-26
 
 ## Calendar Note (informational — never a date removal)
 
-- High-severity flags Joe should consider before confirming the date: SPAR Budapest Marathon 2026 (41st). Joe decides all date conflicts himself.
+- Related-event opportunity/relevance to review before confirming the date: IEEE Tech Summit: Ethical AI 2026 (Budapest), AI Forward '26 (Nokia), EMNLP 2026 (Budapest).
+- Major-city logistics to verify before confirming the date: ScaleupFest 2026, SPAR Budapest Marathon 2026 (41st), MeOut Summit 2026.
+- Joe decides all date conflicts himself; calendar flags never remove the date automatically.
+
+## Community Verification (manual review)
+
+- AI CEE (Budapest) Meetup Group (Shiwaforce) — activity: active — contact: [Organizer website (shiwaforce.com, linked from group page)](https://shiwaforce.com)
+  - Verify: Confirm the AI CEE meetup schedule for late 2026 and whether events are open beyond Shiwaforce staff and partners.
+- Budapest Data & Analytics Meetup (independent) — activity: active
+  - Verify: Confirm upcoming in-person meetups for late 2026; the group's descriptive text is Hungarian-only and was not translated.
+- Budapest Data Science Meetup (independent) — activity: active
+  - Verify: Confirm upcoming in-person meetups for late 2026 and whether Shapr3D Office remains the typical venue.
+- Budapest Databricks Meetup Group (independent) — activity: active
+  - Verify: Confirm the next Budapest Databricks Meetup date and venue for late 2026 and whether attendance is open to non-Databricks users.
+- Budapest Quant Group (BQG) (independent) — activity: active
+  - Verify: Confirm the next BQG meetup date and location for late 2026 (recent meetups at Promenade Gardens and HUB 55).
+- Budapest Users of R Network (R User Groups) — activity: active — contact: [Hungarian R community portal (r-projekt.hu, linked from group page)](https://r-projekt.hu)
+  - Verify: Confirm the group's current 2026 meeting schedule and typical venue (page states every 1-2 months; most recent listed in-person meetup 2025-11-20).
+- Comets of Web3 (Blockchain Builders Community) (Comets of Web3) — activity: active
+  - Verify: Confirm the next Comets of Web3 Budapest meetup date and venue for late 2026 (2026-06-27 Budapest edition listed on the official site).
+- PyData Budapest (PyData) — activity: active
+  - Verify: Confirm PyData Budapest's planned in-person meetups for September-October 2026 and the typical venue (recent meetup was at CEU Nador 15 building).
+- ShareTech | AI & DeepTech (formerly Budapest AI Hub) (independent) — activity: active — contact: [ShareTech Foundation website (linked from group page)](https://sharetech.foundation)
+  - Verify: Confirm ShareTech Foundation's current co-hosting or venue-partnership process for community AI events in Budapest and the best public contact route.
+  - Co-host openness: assess the own-page phrase manually before any partnership discussion.
+- Turbine AI Meetups - Budapest (Turbine) — activity: active
+  - Verify: Confirm Turbine AI Meetups continue on the last Wednesday monthly and are open to external attendees.
+- AI Tinkerers Budapest (AI Tinkerers) — activity: intermittent
+  - Verify: Confirm whether AI Tinkerers Budapest currently runs regular in-person demo nights in 2026 and the typical venue (the 2025-12-11 hackathon partner event was at Puzl Coworking per attendee testimonial).
+- Budapest Artificial Intelligence Meetup Group (independent) — activity: intermittent
+  - Verify: Confirm whether the Budapest Artificial Intelligence Meetup Group holds in-person meetups in 2026 (last listed in-person event 2025-11-06 had 1 attendee).
+- Budapest dataSTREAM Meetup Series (independent) — activity: intermittent
+  - Verify: Confirm whether Budapest dataSTREAM plans an in-person event in late 2026 (most recent listed 2025-12-03 was a paid conference-style event).
+- Global AI Budapest (Global AI Community) — activity: intermittent
+  - Verify: Confirm whether Global AI Budapest holds in-person Budapest events beyond the 2026-09-15 Global AI Conference Budapest (recent chapter events were online interviews).
+- AI Meetups (aimeetups.hu) (independent) — activity: dormant
+  - Verify: Confirm whether AI Meetups (aimeetups.hu) plans further in-person meetups (last listed 2024-08-13); the official page is Hungarian-only.
+- Budapest Artificial Intelligence Meetup (ELTE + Ericsson) (university) — activity: dormant
+  - Verify: Confirm whether the ELTE/Ericsson Budapest AI Meetup has held any in-person event since 2023 (last listed 2023-10-04).
+- Data Natives, Budapest (independent) — activity: dormant
+  - Verify: Confirm whether Data Natives Budapest has any in-person presence in Budapest beyond the online events listed (last listed event 2023-05-17).
+- R-Ladies Budapest (R-Ladies) — activity: dormant
+  - Verify: Confirm whether R-Ladies Budapest has resumed any in-person meetups since 2023 (last listed 2023-10-03).
 
 ## Deferred to Run B (after venue selection)
 
-- Speaker research, community outreach, trusted-network matching, and co-host planning are deferred to Run B — no speaker or community outreach happens in Run A.
+- Speaker research, trusted-network matching, and co-host planning are deferred to Run B — no speaker or co-host outreach happens in Run A. Community research is completed in Run A.
 
 ## Verification Checklist
 

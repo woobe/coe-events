@@ -119,11 +119,61 @@ Generated from the event plan for 2026-09-26
 
 ## Calendar Note (informational — never a date removal)
 
-- High-severity flags Joe should consider before confirming the date: TOKEN2049 Singapore 2026, Formula 1 Singapore Airlines Singapore Grand Prix 2026. Joe decides all date conflicts himself.
+- Related-event opportunity/relevance to review before confirming the date: Tech in Asia Conference 2026, Tech Week Singapore 2026 (Big Data & AI World Asia, Cloud & AI Infrastructure Asia, DevOps Live, Cyber Security World Asia, Data Centre World Asia), TOKEN2049 Singapore 2026, Singapore FinTech Festival 2026 (SFF).
+- Major-city logistics to verify before confirming the date: Milken Institute Asia Summit 2026, Formula 1 Singapore Airlines Singapore Grand Prix 2026, STACK Conference 2026 (GovTech Singapore).
+- Joe decides all date conflicts himself; calendar flags never remove the date automatically.
+
+## Community Verification (manual review)
+
+- Ads & AI Singapore (independent) — activity: active
+  - Verify: Confirm Ads & AI Singapore's next in-person meetup and whether it remains free and open to all (recent editions at SQ Collective x Gen-AI Labs).
+- AI Tinkerers Singapore (AI Tinkerers) — activity: active
+  - Verify: Confirm AI Tinkerers Singapore's next in-person demo night and typical venue for late 2026 (recent events were hosted at sponsor/partner venues; venues are not named on the chapter page).
+- AWS User Group Singapore (AWS User Group Community) — activity: active
+  - Verify: Confirm AWS User Group Singapore's late-2026 meetup schedule and whether the AWS Community Day Singapore 2026 (2026-08-22, SGD 80) is open to non-members.
+- Claude Singapore Community (ClaudeSG) (independent) — activity: active
+  - Verify: Confirm ClaudeSG's in-person event cadence and typical venues for late 2026 (recent events were at AWS Singapore, LLI, WeWork and *SCAPE).
+- Free and Open Source Singapore (Open Source Singapore) (independent) — activity: active
+  - Verify: Confirm Open Source Singapore's upcoming meetup cadence and venue for late 2026 (recent events were at SQ Collective, 65 Mohamed Sultan Road).
+- GDG Singapore (Google Developer Groups) — activity: active — contact: [GDG Singapore events calendar (Luma, linked from chapter page)](https://luma.com/gdg-singapore)
+  - Verify: Confirm GDG Singapore's current partnership/co-hosting process and the best public contact route for a community AI event (the chapter page invites partnership ideas via email).
+  - Co-host openness: assess the own-page phrase manually before any partnership discussion.
+- Global AI Singapore (Global AI Community) — activity: active
+  - Verify: Confirm the typical in-person venue for Global AI Singapore's AgenticNights/AgentCamp events (venues are not named on the chapter page).
+- Lorong AI (Lorong AI) — activity: active
+  - Verify: Confirm Lorong AI's typical in-person event venue and whether its community events are open to non-members for late 2026.
+- NUS Fintech Society (university) — activity: active
+  - Verify: Confirm NUS Fintech Society's public events for late 2026 and whether its department activities are open beyond NUS students.
+- NUS SoC AI Society (AISOC) (university) — activity: active
+  - Verify: Confirm AISOC's upcoming public events for late 2026 and whether workshops are open beyond NUS students.
+- OpenClaw Singapore (Claw SG) (OpenClaw) — activity: active
+  - Verify: Confirm OpenClaw Singapore's next in-person meetup and typical venue for late 2026 (first event was at SQ Collective x Gen-AI Labs; AWS edition at IOI Central Boulevard Towers).
+- Python User Group Singapore (PUGS) (independent) — activity: active — contact: [Python User Group Singapore official site (linked from Luma calendar)](https://pugs.org.sg)
+  - Verify: Confirm PUGS' upcoming monthly meetups for late 2026 and the typical venue (recent meetups were at library@harbourfront as an NLB LearnX community).
+- Singapore AI & Robotics Demo Nights (independent) — activity: active
+  - Verify: Confirm the next Singapore AI & Robotics Demo Night date and venue for late 2026 (calendar lists monthly editions; June 2026 was at the National Library).
+- Superteam SG (Superteam) — activity: active — contact: [Superteam SG website (linked from Luma calendar)](https://sg.superteam.fun)
+  - Verify: Confirm Superteam SG's weekly Thursday Lunch venue for late 2026 (calendar does not name a fixed venue).
+- The Generative Beings (TGB) (The Generative Beings) — activity: active
+  - Verify: Confirm TGB's weekly Singapore in-person event cadence and venue for late 2026 (platform lists 124 Singapore events; GenAI Lab is at SQ Collective).
+- Build Club Singapore (Build Club) — activity: intermittent
+  - Verify: Confirm Build Club Singapore's local event cadence and venues for late 2026 (chapter events are irregular; a 2026 APAC flagship conference was hosted at the AWS Singapore office).
+- ODSC AI Singapore (ODSC) — activity: intermittent
+  - Verify: Confirm whether ODSC AI Singapore holds any in-person Singapore meetups (recent listed events are online-only; the group's About text promotes hands-on events but recent listings are virtual).
+- R User Group - Singapore (RUGS) (independent) — activity: intermittent
+  - Verify: Confirm RUGS' recent in-person meetup history and cadence for late 2026 (official Luma calendar lists an upcoming 2026-08-20 meetup at Autodesk Asia; the group's Meetup group is private and its last visible past event was 2025-05-21).
+- Vibe Coders SG (independent) — activity: intermittent
+  - Verify: Confirm whether Vibe Coders SG's 2026 monthly shareouts are in-person and the typical venue (the group Meetup page shows one in-person 2025-04-25 meetup at Genius Central; a jam session with Base44 was listed in Singapore on 2026-08-11).
+- Women in AI - The AI Collective Singapore (The AI Collective) — activity: intermittent
+  - Verify: Confirm whether The AI Collective Singapore chapter runs regular in-person events beyond the 2026-03-13 Women in AI gathering (chapter page is a JS shell; the Luma event page is the visible organizer source).
+- PyData Singapore (PyData) — activity: dormant
+  - Verify: Confirm whether PyData Singapore has held any local in-person meetup since the Dec 2, 2019 'Tracking Economic Change with Open Data' meetup (the archived official group page 2023-03-30 lists only a partner event and PyData Global online conferences after it; the live page lists only PyData network events).
+- R-Ladies Singapore (R-Ladies) — activity: dormant
+  - Verify: Confirm whether R-Ladies Singapore has resumed in-person meetups (last in-person event 2025-01-12; later listed events were online).
 
 ## Deferred to Run B (after venue selection)
 
-- Speaker research, community outreach, trusted-network matching, and co-host planning are deferred to Run B — no speaker or community outreach happens in Run A.
+- Speaker research, trusted-network matching, and co-host planning are deferred to Run B — no speaker or co-host outreach happens in Run A. Community research is completed in Run A.
 
 ## Verification Checklist
 

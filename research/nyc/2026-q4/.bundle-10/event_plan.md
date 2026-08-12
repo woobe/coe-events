@@ -1,0 +1,555 @@
+# Event Plan: New York (new-york-ny-us) — Run A: Venue & Date
+
+- Schema version: 2.4
+- Phase: venue
+- City: New York (new-york-ny-us), United States
+- Target date: 2026-09-26
+- Date window: 2026-09-19 to 2026-10-31 (candidate Saturdays: 2026-09-19, 2026-09-26, 2026-10-03, 2026-10-10, 2026-10-17, 2026-10-24, 2026-10-31)
+- Target attendance: 50
+- Currency: USD (no assumptions recorded)
+- Soft budget: USD 5000 (over-budget venues stay selectable with Joe's approval)
+- Event duration: 8 hours (requested local window 09:00-17:00)
+- Generated: 2026-08-09T00:00:00Z
+
+## Executive Summary
+
+- Top selectable venue: Large Flex Event Loft Studio — Entire Space (score 0.7640) — tier shortlist_ready
+- Eligible venues: 0; shortlist-ready: 17; leads: 3
+- Speaker candidates: deferred to Run B after venue selection
+- Calendar awareness: 8 record(s) — 7 related-event opportunity/relevance, 1 major-city logistics — informational, never eliminations
+- Open questions: 109
+- Recommendation: none selected yet
+
+## Calendar flags for Joe — informational, not eliminations
+
+Calendar awareness has two categories in schema 2.4: related-event opportunity/relevance and major-city logistics. Neither category scores, tiers, selects, or rejects a venue; these flags are awareness only.
+
+- UN Blockchain Week 2026 — 2026-09-10 to 2026-09-19 (related-event opportunity, relevance: web3) — [Events — UN Blockchain Week 2026 (official): UNGA + NYFW 2026 September 10-19, New York City; 10 days, 100+ experiences; AI × Blockchain Summit on autonomous agents and on-chain intelligence](https://unblockchainweek.com/events/). This is an awareness flag for Joe's decision; it never removes the date automatically.
+- AI Week New York 2026 (Fall Edition) — 2026-10-05 to 2026-10-11 (related-event opportunity, relevance: ai) — [AI Week New York (Fall Edition) — Oct 5-11, 2026, Pulse NYC citywide community-led tech festival](https://pulse.nyc/ai-week/). This is an awareness flag for Joe's decision; it never removes the date automatically.
+- Messari Mainnet 2026 — 2026-10-06 to 2026-10-08 (related-event opportunity, relevance: crypto) — [Messari Mainnet 2026 — blockchainacademics.com event listing (October 6-8, 2026, New York, USA, expected 4,000+ attendees)](https://blockchainacademics.com/events/messari-mainnet-2026). This is an awareness flag for Joe's decision; it never removes the date automatically.
+- AI Engineer NYC 2026 — 2026-10-12 to 2026-10-14 (related-event opportunity, relevance: ai) — [AI Engineer New York 2026 — official page: October 12-14, 2026 at Sheraton New York Times Square, 1,000+ in-person AI engineers and leaders](https://www.ai.engineer/nyc/2026). This is an awareness flag for Joe's decision; it never removes the date automatically.
+- Ripple Swell 2026 — 2026-10-27 to 2026-10-29 (related-event opportunity, relevance: crypto) — [Swell 2026 — official Ripple page: New York City, October 27-29, 2026, at The Shed (545 W 30th St); 1,500+ attendees; AI & Agentic Finance among topics](https://swell.ripple.com/). This is an awareness flag for Joe's decision; it never removes the date automatically.
+- TCS New York City Marathon 2026 — 2026-11-01 to 2026-11-01 (major-city logistics) — [Team for Kids — 2026 TCS New York City Marathon: November 1, 2026 (NYRR official charity-program page)](https://organizations.nyrr.org/sites/organization_sites/07a100ee6605183fc2df/pages/2026_tcs_new_york_city_marathon). This is a logistics awareness flag for Joe's decision; it never removes the date automatically.
+- ODSC AI NYC 2026 — AI for Work Summit — 2026-12-02 to 2026-12-03 (related-event opportunity, relevance: ai) — [ODSC AI NYC 2026 — AI for Work Summit: December 2-3, 2026, Jay Conference Center Bryant Park, New York City (official)](https://summit.ai/). This is an awareness flag for Joe's decision; it never removes the date automatically.
+- The AI Summit New York 2026 — 2026-12-09 to 2026-12-10 (related-event opportunity, relevance: ai) — [The AI Summit New York — December 9-10, 2026, Javits Center, New York (official)](https://newyork.theaisummit.com/). This is an awareness flag for Joe's decision; it never removes the date automatically.
+
+## Venue Shortlist (eligible, ranked)
+
+- No fully evidenced eligible venues.
+
+## Shortlist-Ready Venues (manual checks remain; selectable by Joe)
+
+1. Large Flex Event Loft Studio — Entire Space (tier shortlist_ready, score 0.7640) — capacity 60 (seated), screen confirmed, wifi confirmed, cost USD 1400 / 1400 USD (estimated_from_rate), catering outside_allowed
+   - Flags: availability_unconfirmed, final_quote_required, stale_evidence
+   - Rate estimate: USD 175 per hour x 8 hour(s) — Tagvenue lists the Entire Space at Large Flex Event Loft Studio from $175/hour (all prices include sales tax); 8-hour estimate = $1,400, not a written quote.
+   - Cost rate unit: hour
+   - Event window: allows_to_6 (opening 06:00-24:00)
+   - Source: [Entire Space at Large Flex Event Loft Studio — Tagvenue listing (from $175/hr, up to 60 seats / 60 standing, Wi-Fi + projector + flatscreen TV + PA, external catering allowed)](https://www.tagvenue.com/us/rooms/new-york/69406/large-flex-event-loft-studio/entire-space)
+   - Booking: [https://www.tagvenue.com/us/rooms/new-york/69406/large-flex-event-loft-studio/entire-space](https://www.tagvenue.com/us/rooms/new-york/69406/large-flex-event-loft-studio/entire-space)
+   - Unresolved: Confirm live availability of the Entire Space on the chosen 2026 Saturday.
+   - Unresolved: Confirm the exact all-in Saturday total at the published from-$175/hour rate including taxes/fees (8-hour estimate $1,400).
+2. Times Square Jay Suites — Meeting Room I (tier shortlist_ready, score 0.7080) — capacity 52 (seated), screen confirmed, wifi confirmed, cost USD 2800 / 2800 USD (published_rate), catering outside_allowed
+   - Flags: availability_unconfirmed, final_quote_required, stale_evidence
+   - Cost rate unit: day
+   - Event window: allows_to_6 (closing 18:00) (opening 09:00-18:00) (max booking 9h)
+   - Source: [Meeting Room I at Times Square Jay Suites — Tagvenue listing (52 seats; Sat-Sun from $400/hr or $2,800/day, tax included; Wi-Fi + flatscreen TV + whiteboard, catering available)](https://www.tagvenue.com/us/rooms/new-york/29800/times-square-jay-suites/meeting-room-i)
+   - Booking: [https://www.tagvenue.com/us/rooms/new-york/29800/times-square-jay-suites/meeting-room-i](https://www.tagvenue.com/us/rooms/new-york/29800/times-square-jay-suites/meeting-room-i)
+   - Unresolved: Confirm live availability of Meeting Room I on the chosen 2026 Saturday (9:00am-6:00pm).
+   - Unresolved: Confirm the exact all-in Saturday total (Tagvenue publishes Saturday-Sunday from $400/hour or from $2,800/day, tax included; the day rate is used as the cost basis).
+   - Unresolved: Confirm whether the 52-person mixed table/bench layout is comfortable for a seated talk format for 50 attendees.
+3. LOFT39 — 3rd Floor Speakeasy (tier shortlist_ready, score 0.6950) — capacity 75 (seated), screen unknown, wifi confirmed, cost unknown (unknown) — confirm cost with venue, catering outside_allowed
+   - Flags: cost_unknown, screen_unknown, availability_unconfirmed, stale_evidence
+   - Event window: allows_to_6 (opening 06:00-03:00)
+   - Source: [3rd Floor Speakeasy at LOFT39 — Tagvenue listing (75 seated / 125 standing, Wi-Fi + PA, external catering allowed; corporate mixer package from $2,500 min spend)](https://www.tagvenue.com/us/rooms/new-york/39296/loft39/3rd-floor-speakeasy-at-loft39)
+   - Booking: [https://www.tagvenue.com/us/rooms/new-york/39296/loft39/3rd-floor-speakeasy-at-loft39](https://www.tagvenue.com/us/rooms/new-york/39296/loft39/3rd-floor-speakeasy-at-loft39)
+   - Unresolved: Confirm the numeric hire rate for the 3rd Floor Speakeasy for a 50-person daytime event; the Tagvenue page publishes a $2,500 min-spend corporate cocktail package for the 4th Floor Warehouse Gallery but no hourly rate for the Speakeasy in the accessed snapshot.
+   - Unresolved: Confirm live availability on the chosen 2026 Saturday.
+   - Unresolved: Confirm screen/projector availability (the listing facilities list Wi-Fi, PA/speakers, lighting, backdrops — no projector or TV).
+4. Nomadworks Times Square — Innovation Hub (tier shortlist_ready, score 0.6740) — capacity 50 (standing), screen confirmed, wifi confirmed, cost USD 2400 / 2400 USD (estimated_from_rate), catering outside_allowed
+   - Flags: availability_unconfirmed, final_quote_required, duration_window_not_supported, duration_window_not_supported, stale_evidence
+   - Rate estimate: USD 300 per hour x 8 hour(s) — Tagvenue lists the Innovation Hub at Nomadworks Times Square from $300/hour (Saturday 9:00am-4:00pm hours listed, all prices include sales tax); 8-hour Saturday estimate = $2,400, not a written quote.
+   - Cost rate unit: hour
+   - Event window: cannot_to_5 (closing 16:00) (opening 09:00-16:00) (max booking 7h)
+   - Source: [Innovation Hub at Nomadworks Times Square — Tagvenue listing (from $300/hr, Saturday 9am-4pm, up to 50 standing, Wi-Fi + flatscreen TV, external catering allowed)](https://www.tagvenue.com/us/rooms/new-york/60620/nomadworks-times-square/innovation-hub)
+   - Booking: [https://www.tagvenue.com/us/rooms/new-york/60620/nomadworks-times-square/innovation-hub](https://www.tagvenue.com/us/rooms/new-york/60620/nomadworks-times-square/innovation-hub)
+   - Unresolved: Confirm live availability of the Innovation Hub on the chosen 2026 Saturday (Saturday hours listed 9:00am-4:00pm).
+   - Unresolved: Confirm the exact all-in Saturday total including taxes/fees (published from $300/hour; 8-hour estimate $2,400).
+   - Unresolved: Confirm whether the 50-person 'up to 50 standing' space can be configured with comfortable seating for a talk format, or is standing-only at that count.
+5. Cre8ive NYC — Multi-Space Coworking (tier shortlist_ready, score 0.6600) — capacity 40 (venue_claim), screen confirmed, wifi confirmed, cost unknown (unknown) — confirm cost with venue, catering outside_allowed
+   - Flags: capacity_40_49, cost_unknown, availability_unconfirmed, stale_evidence
+   - Event window: allows_to_6 (closing 22:00) (opening 08:00-22:00) (max booking 14h)
+   - Source: [Cre8ive NYC — Tagvenue venue listing (134 West 29th Street, from $35/hr, up to 40 seats / 40 standing venue-wide, 13 spaces, Wi-Fi + rentable projector + PA, external catering allowed)](https://www.tagvenue.com/us/venues/new-york/17708/cre8ive-nyc)
+   - Booking: [https://www.tagvenue.com/us/venues/new-york/17708/cre8ive-nyc](https://www.tagvenue.com/us/venues/new-york/17708/cre8ive-nyc)
+   - Unresolved: Confirm the all-in rate for a 50-person event; individual spaces price from $35-$60/hour but a multi-room configuration for 50 attendees has no published total.
+   - Unresolved: Confirm live availability of the needed combination of spaces on the chosen 2026 Saturday.
+   - Unresolved: Confirm which combination of the 13 spaces (largest single spaces seat 15-25; venue overview states up to 40 seats venue-wide) comfortably hosts 50 attendees as one event.
+6. Love Studios NYC — Midtown Loft Venue 23B (tier shortlist_ready, score 0.6600) — capacity 40 (seated), screen confirmed, wifi confirmed, cost unknown (unknown) — confirm cost with venue, catering outside_allowed
+   - Flags: capacity_40_49, cost_unknown, availability_unconfirmed, stale_evidence
+   - Event window: allows_to_6 (opening 06:00-24:00)
+   - Source: [Midtown Loft Venue 23B at Love Studios NYC — Tagvenue listing (40 seats / 50 standing, conference offer from $895 min spend, projector + flatscreen TV + PA + Wi-Fi, external catering allowed)](https://www.tagvenue.com/us/rooms/new-york/45920/love-studios-nyc/midtown-loft-venue-23b)
+   - Booking: [https://www.tagvenue.com/us/rooms/new-york/45920/love-studios-nyc/midtown-loft-venue-23b](https://www.tagvenue.com/us/rooms/new-york/45920/love-studios-nyc/midtown-loft-venue-23b)
+   - Unresolved: Confirm the all-in rate for a 50-person daytime event; the Tagvenue page publishes a Conference Offer with $895 min spend but no fixed hourly rate in the accessed snapshot.
+   - Unresolved: Confirm live availability on the chosen 2026 Saturday.
+   - Unresolved: Confirm whether the 40-seat configuration can be extended to comfortably seat 50, or whether the 50-standing mode is used for a talk format (capacity_40_49 flag expected).
+7. NYC Seminar and Conference Center — Seminar Room A (tier shortlist_ready, score 0.6240) — capacity 65 (venue_claim), screen confirmed, wifi confirmed, cost USD 1150 / 1150 USD (published_rate), catering unknown
+   - Flags: availability_unconfirmed, stale_evidence
+   - Cost rate unit: day
+   - Event window: allows_to_5 (closing 17:00) (opening 08:00-17:00) (max booking 9h)
+   - Source: [NYC Seminar and Conference Center — Room Rates (Wayback Machine snapshot of official pricing page, accessed 2026-08-09): day rate $1,150 for up to 65 attendees (800sf) including projector/screen, wireless Internet, and whiteboard](https://web.archive.org/web/2026/https://nycseminarcenter.com/pricing/)
+   - Booking: [https://nycseminarcenter.com/seminar_room_a/](https://nycseminarcenter.com/seminar_room_a/)
+   - Unresolved: Confirm a Seminar Room A booking is available on the chosen 2026 Saturday (the official pricing page was rate-limited on 2026-08-09; pricing below is from the Wayback Machine snapshot of the official pricing page).
+   - Unresolved: Confirm the exact all-in Saturday rate and booking terms (published day rate $1,150 for up to 65 attendees at 800sf including projector/screen or flat-panel display, wireless Internet, and whiteboard; a prior same-day research pass recorded a Tagvenue listing with capacity 70 theatre and from $180/hr — reconcile before booking).
+   - Unresolved: Confirm Seminar Room A is the 800sf room at the published rate (other rooms at $975/30ppl, $1,075/45ppl; 2nd Floor Conference Hall $7,500/day).
+8. Civic Hall — Event Rooms (tier shortlist_ready, score 0.6025) — capacity 75 (venue_claim), screen confirmed, wifi unknown, cost unknown (unknown) — confirm cost with venue, catering unknown
+   - Flags: cost_unknown, wifi_unknown, availability_unconfirmed, duration_unconfirmed, stale_evidence
+   - Event window: unknown
+   - Source: [Our Spaces — Civic Hall (Union Square): event rooms accommodating up to 75 attendees with A/V, classrooms 10-50, Craig Newmark Auditorium 300+/500+, community-event option and special nonprofit/community rates](https://civichall.org/our-spaces/)
+   - Booking: [https://civichall.org/our-spaces/](https://civichall.org/our-spaces/)
+   - Unresolved: Confirm the rental rate for a free community event; Civic Hall offers 'special rates for nonprofits, community organizations, Civic Hall members and Zero Irving tenants' and a Community Event Option for free-to-attend, open-to-the-public events that benefit the local community — confirm whether a free Decentralized AI Day qualifies.
+   - Unresolved: Confirm live availability of an event room (larger flexible spaces up to 75 attendees) on the chosen 2026 Saturday.
+   - Unresolved: Confirm Wi-Fi availability and quality in the event rooms (not explicitly stated on the our-spaces page).
+   - Unresolved: Confirm booking terms, A/V configuration, and any F&B or staffing minimums.
+   - Unresolved: Confirm the event-room booking window on the chosen 2026 Saturday (opening/closing time and whether a full-day 09:00-17:00 or 09:00-18:00 booking is allowed); the our-spaces page does not publish room hours.
+9. CUNY Graduate Center — Event and Space Rentals (tier shortlist_ready, score 0.6025) — capacity 50 (venue_claim), screen unknown, wifi confirmed, cost unknown (unknown) — confirm cost with venue, catering unknown
+   - Flags: cost_unknown, screen_unknown, availability_unconfirmed, duration_unconfirmed, stale_evidence
+   - Event window: unknown
+   - Source: [Event and Space Rentals in NYC — CUNY Graduate Center (spaces for 10-400 guests, high speed WiFi, on-site event manager, livestreaming available, affordable pricing)](https://spacerentals.gc.cuny.edu/)
+   - Booking: [https://spacerentals.gc.cuny.edu/](https://spacerentals.gc.cuny.edu/)
+   - Unresolved: Obtain a written quote for a mid-size event space (50+ guests) on a Saturday; the site says outside entities are charged a rental fee but publishes no numeric rates.
+   - Unresolved: Confirm weekend availability for the target date.
+   - Unresolved: Confirm screen/projector availability in the booked space (page states state-of-the-art technology and livestreaming but not per-room screen specs).
+   - Unresolved: Confirm which specific space (e.g., Ninth Floor Conference Room Suite) fits 50 attendees comfortably.
+   - Unresolved: Confirm the rented space's booking window on the chosen 2026 Saturday (opening/closing time and whether a full-day 09:00-17:00 or 09:00-18:00 booking is allowed); the rentals page does not publish room hours.
+10. Exposed Brick Multi-Use Event Space — Entire Venue (tier shortlist_ready, score 0.5688) — capacity 74 (venue_claim), screen unknown, wifi unknown, cost USD 1280 / 1280 USD (estimated_from_rate), catering unknown
+   - Flags: screen_unknown, wifi_unknown, availability_unconfirmed, final_quote_required, stale_evidence
+   - Rate estimate: USD 160 per hour x 8 hour(s) — Tagvenue lists the Entire Venue at Exposed Brick Multi-Use Event Space from $160/hour; 8-hour estimate = $1,280, not a written quote.
+   - Cost rate unit: hour
+   - Event window: allows_to_6 (opening 06:00-24:00)
+   - Source: [Large Event Venues for Rent in New York City — Tagvenue hub listing (Entire Venue at Exposed Brick Multi-Use Event Space, 74 guests, from $160/hr, Bowery)](https://www.tagvenue.com/us/hire/large-venues/new-york-city)
+   - Booking: [https://www.tagvenue.com/us/hire/large-venues/new-york-city](https://www.tagvenue.com/us/hire/large-venues/new-york-city)
+   - Unresolved: Confirm live availability of the Entire Venue on the chosen 2026 Saturday and obtain the room page/quote (this record's evidence is the Tagvenue NYC large-venues hub listing).
+   - Unresolved: Confirm the exact all-in Saturday total at the from-$160/hour rate including taxes/fees.
+   - Unresolved: Confirm screen/projector availability (not stated in the hub listing).
+   - Unresolved: Confirm Wi-Fi availability and reliability for a talk-heavy event (not stated in the hub listing).
+11. Event Loft 1505 — Studio 1505 (tier shortlist_ready, score 0.5400) — capacity 175 (seated), screen confirmed, wifi confirmed, cost USD 2000 / 2000 USD (estimated_from_rate), catering outside_allowed
+   - Flags: oversized_capacity, availability_unconfirmed, final_quote_required, stale_evidence
+   - Rate estimate: USD 250 per hour x 8 hour(s) — Venue's own tier pricing published on the Tagvenue room page: 26-50 people $250/hr (3-hour minimum, $99 set-up and cleaning fee not included); 8-hour estimate for a 50-person event = $2,000, not a written quote.
+   - Cost rate unit: hour
+   - Event window: allows_to_6 (opening 06:00-24:00)
+   - Source: [Studio 1505 at Event Loft 1505 — Tagvenue listing (tier pricing 26-50 people $250/hr, 3-hour min, up to 175 seats / 200 standing, projector + flatscreen TV + PA + Wi-Fi, external catering allowed)](https://www.tagvenue.com/us/rooms/new-york/77196/event-loft-1505/studio-1505)
+   - Booking: [https://www.tagvenue.com/us/rooms/new-york/77196/event-loft-1505/studio-1505](https://www.tagvenue.com/us/rooms/new-york/77196/event-loft-1505/studio-1505)
+   - Unresolved: Confirm live availability of Studio 1505 on the chosen 2026 Saturday.
+   - Unresolved: Confirm the exact all-in Saturday total for 50 people at the 26-50 tier ($250/hr) including the $99 set-up/cleaning fee and any overtime/doorman fees (after 10:00PM a $50/hr doorman fee applies).
+12. The Farm SoHo — SoHo Event Space (2nd Fl Loft Venue) (tier shortlist_ready, score 0.5100) — capacity 50 (venue_claim), screen confirmed, wifi confirmed, cost USD 4000 / 4000 USD (estimated_from_rate), catering unknown
+   - Flags: availability_unconfirmed, final_quote_required, stale_evidence
+   - Rate estimate: USD 500 per hour x 8 hour(s) — The Farm SoHo Soho 2nd Fl Loft Venue page price options (accessed 2026-08-09): Price Mon-Thu $350/h • $2,380/day; Price Fri-Sun $500/h • $3,400/day. 8-hour Saturday estimate at the Fri-Sun rate = $4,000, not a written quote.
+   - Cost rate unit: hour
+   - Event window: allows_to_6 (opening 24/7)
+   - Source: [SoHo Event Space NYC — The Farm SoHo (Soho 2nd Fl Loft Venue at 447 Broadway): Main Venue option data-option-capacity 'Up to 50 people', 1,154 sq ft; Price Fri-Sun $500/h • $3,400/day, Mon-Thu $350/h • $2,380/day; FAQ 'can host 50 seated (theater style) or 75 standing, when additional rooms are booked'; rental includes Wi-Fi, projector + large screen, TV, 2 wireless mics, speakers](https://www.thefarmsoho.com/event-venues/the-farm-soho/)
+   - Booking: [https://www.thefarmsoho.com/event-venues/the-farm-soho/](https://www.thefarmsoho.com/event-venues/the-farm-soho/)
+   - Unresolved: Confirm live availability of the Soho 2nd Fl Loft Venue (Main Venue, up to 50 people) at 447 Broadway on the chosen 2026 Saturday.
+   - Unresolved: Confirm the exact all-in Saturday total: the venue's price options publish Fri-Sun $500/h • $3,400/day and Mon-Thu $350/h • $2,380/day; 8-hour Saturday estimate = $4,000, not a written quote.
+   - Unresolved: Confirm whether the 50 seated theater-style configuration requires additional rooms beyond the Main Venue (FAQ: 'can host 50 seated (theater style) or 75 standing, when additional rooms are booked'; the Main Venue option alone is published as 'Up to 50 people' at 1,154 sq ft), and confirm the all-in cost of the chosen room configuration.
+13. Well& by Durst at One Five One — Astoria (tier shortlist_ready, score 0.5075) — capacity 70 (seated), screen confirmed, wifi confirmed, cost USD 10000 / 10000 USD (published_rate), catering in_house_only
+   - Flags: over_soft_budget, availability_unconfirmed, final_quote_required, stale_evidence
+   - Cost rate unit: event
+   - Event window: allows_to_6 (opening 06:00-24:00)
+   - Source: [Astoria at Well& by Durst at One Five One — Tagvenue listing (70 seats / 75 standing, from $10,000/session, projector + Wi-Fi + PA, in-house catering only)](https://www.tagvenue.com/us/rooms/new-york/82993/well-by-durst-at-one-five-one/astoria)
+   - Booking: [https://www.tagvenue.com/us/rooms/new-york/82993/well-by-durst-at-one-five-one/astoria](https://www.tagvenue.com/us/rooms/new-york/82993/well-by-durst-at-one-five-one/astoria)
+   - Unresolved: Confirm live availability of the Astoria room on the chosen 2026 Saturday.
+   - Unresolved: Confirm the exact all-in session total and whether any smaller/weekend package exists below the published from-$10,000/session rate (well above the USD 5,000 soft budget — over_soft_budget flag expected).
+14. Bogart House — Main Floor (tier shortlist_ready, score 0.3400) — capacity 300 (venue_claim), screen unknown, wifi unknown, cost USD 2000 / 2000 USD (published_rate), catering unknown
+   - Flags: oversized_capacity, screen_unknown, wifi_unknown, availability_unconfirmed, final_quote_required, stale_evidence
+   - Cost rate unit: day
+   - Event window: allows_to_6 (opening 10:00-04:00)
+   - Source: [Large Event Venues for Rent in New York City — Tagvenue hub listing (Bogart House Main Floor, 300 guests, from $2,000/day, Williamsburg)](https://www.tagvenue.com/us/hire/large-venues/new-york-city)
+   - Booking: [https://www.tagvenue.com/us/hire/large-venues/new-york-city](https://www.tagvenue.com/us/hire/large-venues/new-york-city)
+   - Unresolved: Confirm live availability of the Main Floor on the chosen 2026 Saturday and obtain the room page/quote (this record's evidence is the Tagvenue NYC large-venues hub listing).
+   - Unresolved: Confirm the exact all-in Saturday total and whether the from-$2,000/day rate applies to an 8-hour day event.
+   - Unresolved: Confirm screen/projector availability (not stated in the hub listing).
+   - Unresolved: Confirm Wi-Fi availability (not stated in the hub listing).
+15. Jay Conference Bryant Park — The Dubai Room (tier shortlist_ready, score 0.3150) — capacity 150 (venue_claim), screen unknown, wifi unknown, cost USD 24000 / 24000 USD (estimated_from_rate), catering unknown
+   - Flags: over_soft_budget, screen_unknown, wifi_unknown, availability_unconfirmed, final_quote_required, duration_unconfirmed, stale_evidence
+   - Rate estimate: USD 3000 per hour x 8 hour(s) — Tagvenue New York conference-rooms hub page lists The Dubai Room (150 guests) at Jay Conference Bryant Park from $3,000/hour; 8-hour estimate = $24,000, not a written quote.
+   - Cost rate unit: hour
+   - Event window: unknown
+   - Source: [Conference Rooms for Rent in New York City — Tagvenue hub listing (The Dubai Room at Jay Conference Bryant Park, 150 guests, from $3,000/hr)](https://www.tagvenue.com/us/hire/conference-rooms/new-york-city)
+   - Booking: [https://www.tagvenue.com/us/hire/conference-rooms/new-york-city](https://www.tagvenue.com/us/hire/conference-rooms/new-york-city)
+   - Unresolved: Confirm live availability of The Dubai Room on the chosen 2026 Saturday and obtain the room page/quote.
+   - Unresolved: Confirm the exact all-in Saturday total; the from-$3,000/hour rate far exceeds the USD 5,000 soft budget (over_soft_budget flag expected).
+   - Unresolved: Confirm screen/projector availability (not stated in the hub listing).
+   - Unresolved: Confirm Wi-Fi availability (not stated in the hub listing).
+   - Unresolved: Confirm The Dubai Room's booking window on the chosen 2026 Saturday (opening/closing time and whether a full-day 09:00-17:00 or 09:00-18:00 booking is allowed); the cited Tagvenue hub listing does not publish room hours.
+16. VOLUME — The Club (tier shortlist_ready, score 0.3000) — capacity 225 (venue_claim), screen unknown, wifi unknown, cost USD 3000 / 3000 USD (estimated_from_rate), catering unknown
+   - Flags: oversized_capacity, screen_unknown, wifi_unknown, availability_unconfirmed, final_quote_required, stale_evidence
+   - Rate estimate: USD 375 per hour x 8 hour(s) — Tagvenue New York large-venues hub page lists VOLUME - The Club (225 guests) from $375/hour; 8-hour estimate = $3,000, not a written quote.
+   - Cost rate unit: hour
+   - Event window: allows_to_6 (opening 10:00-04:00)
+   - Source: [Large Event Venues for Rent in New York City — Tagvenue hub listing (VOLUME - The Club, 225 guests, from $375/hr, Garment District)](https://www.tagvenue.com/us/hire/large-venues/new-york-city)
+   - Booking: [https://www.tagvenue.com/us/hire/large-venues/new-york-city](https://www.tagvenue.com/us/hire/large-venues/new-york-city)
+   - Unresolved: Confirm live availability of VOLUME - The Club on the chosen 2026 Saturday and obtain the room page/quote.
+   - Unresolved: Confirm the exact all-in Saturday total at the from-$375/hour rate including taxes/fees.
+   - Unresolved: Confirm screen/projector availability (not stated in the hub listing).
+   - Unresolved: Confirm Wi-Fi availability (not stated in the hub listing).
+17. Ideal Glass Studios — Atrium (tier shortlist_ready, score 0.1950) — capacity 500 (venue_claim), screen unknown, wifi unknown, cost USD 10000 / 10000 USD (estimated_from_rate), catering unknown
+   - Flags: oversized_capacity, over_soft_budget, screen_unknown, wifi_unknown, availability_unconfirmed, final_quote_required, duration_unconfirmed, stale_evidence
+   - Rate estimate: USD 1250 per hour x 8 hour(s) — Tagvenue New York large-venues hub page lists the Atrium (500 guests) at Ideal Glass Studios from $1,250/hour; 8-hour estimate = $10,000, not a written quote.
+   - Cost rate unit: hour
+   - Event window: unknown
+   - Source: [Large Event Venues for Rent in New York City — Tagvenue hub listing (Atrium at Ideal Glass Studios, 500 guests, from $1,250/hr, Greenwich Village)](https://www.tagvenue.com/us/hire/large-venues/new-york-city)
+   - Booking: [https://www.tagvenue.com/us/hire/large-venues/new-york-city](https://www.tagvenue.com/us/hire/large-venues/new-york-city)
+   - Unresolved: Confirm live availability of the Atrium on the chosen 2026 Saturday and obtain the room page/quote.
+   - Unresolved: Confirm the exact all-in Saturday total at the from-$1,250/hour rate (8-hour estimate $10,000 is above the USD 5,000 soft budget — over_soft_budget flag expected).
+   - Unresolved: Confirm screen/projector availability (not stated in the hub listing).
+   - Unresolved: Confirm Wi-Fi availability (not stated in the hub listing).
+   - Unresolved: Confirm the Atrium's booking window on the chosen 2026 Saturday (opening/closing time and whether a full-day 09:00-17:00 or 09:00-18:00 booking is allowed); no window hours are published on the cited sources.
+
+## Venue Leads (not selectable until re-evidenced)
+
+- Brooklyn Public Library — Meeting Rooms (tier lead, score unknown) — capacity 50 (unknown), screen unknown, wifi unknown, cost unknown (unknown) — confirm cost with venue, catering unknown
+   - Flags: cost_unknown, screen_unknown, wifi_unknown, availability_unconfirmed, duration_unconfirmed, stale_evidence
+   - Tier notes: material verification question(s): capacity
+   - Event window: unknown
+   - Source: [Meeting Rooms — Brooklyn Public Library (Wayback snapshot, accessed 2026-08-09; meeting rooms for patron/community/non-profit use)](https://web.archive.org/web/2026/https://www.bklynlibrary.org/use-the-library/meeting-rooms)
+   - Booking: [https://www.bklynlibrary.org/use-the-library/meeting-rooms](https://www.bklynlibrary.org/use-the-library/meeting-rooms)
+   - Unresolved: Confirm whether a Numerai-funded free community event qualifies as a community/non-profit group under BPL's meeting-room policy and what (if any) fee applies.
+   - Unresolved: Confirm which branch meeting rooms seat 50+ attendees and their comfortable capacity (most branch rooms are smaller; Central Library spaces are larger).
+   - Unresolved: Confirm availability on the chosen 2026 Saturday (library hours and room-reservation windows apply).
+   - Unresolved: Confirm screen/projector availability in the booked room.
+   - Unresolved: Confirm Wi-Fi availability in the booked room.
+   - Unresolved: Confirm the meeting-room booking window at the chosen branch on the chosen 2026 Saturday (library hours and room-reservation windows apply; most branch rooms are smaller and Central Library spaces are larger); the cited page does not publish per-room hours.
+- Coalition Space Penn Station — 12-Person Conference Room (tier lead, score unknown) — capacity 12 (seated), screen no, wifi confirmed, cost USD 400 / 400 USD (estimated_from_rate), catering unknown
+   - Flags: screen_unavailable, availability_unconfirmed, final_quote_required, duration_window_not_supported, stale_evidence
+   - Tier notes: material verification question(s): capacity; capacity_comfortable 12 below minimum 40
+   - Rate estimate: USD 50 per hour x 8 hour(s) — Tagvenue lists the 12-Person Conference Room at Coalition Space Penn Station from $50/hour; 8-hour estimate = $400, not a written quote.
+   - Cost rate unit: hour
+   - Event window: cannot_to_5 (closing 17:00) (opening 09:00-17:00) (max booking 8h)
+   - Source: [Coalition Space Penn Station — Tagvenue venue listing (12-seat conference room from $50/hr, Wi-Fi, no projector, external catering not offered)](https://www.tagvenue.com/us/venues/new-york/29979/coalition-space-penn-station)
+   - Booking: [https://www.tagvenue.com/us/venues/new-york/29979/coalition-space-penn-station](https://www.tagvenue.com/us/venues/new-york/29979/coalition-space-penn-station)
+   - Unresolved: Confirm live availability on the chosen 2026 Saturday.
+   - Unresolved: Confirm the exact all-in Saturday total at the from-$50/hour rate.
+   - Unresolved: Confirm screen options (the listing marks projector as unavailable; a TV/monitor may be available — verify).
+   - Unresolved: Confirm capacity: 12 seats is far below the 50-attendee target (lead-tier capacity gap).
+- Jay Suites — Chelsea Location (Meeting Room C) (tier lead, score unknown) — capacity 14 (seated), screen confirmed, wifi confirmed, cost USD 600 / 600 USD (estimated_from_rate), catering in_house_only
+   - Flags: availability_unconfirmed, final_quote_required, stale_evidence
+   - Tier notes: material verification question(s): capacity; capacity_comfortable 14 below minimum 40
+   - Rate estimate: USD 75 per hour x 8 hour(s) — Tagvenue lists Meeting Room C (*50% Promo*) at Jay Suites Chelsea from $75/hour; 8-hour estimate = $600, not a written quote.
+   - Cost rate unit: hour
+   - Event window: allows_to_6 (closing 18:00) (opening 09:00-18:00) (max booking 9h)
+   - Source: [Jay Suites - Chelsea Location — Tagvenue venue listing (Meeting Room C *50% Promo* from $75/hr, 14 seats; venue up to 268 seats across rooms; Wi-Fi, flatscreen TV, in-house catering only)](https://www.tagvenue.com/us/venues/new-york/47427/jay-suites-chelsea-location)
+   - Booking: [https://www.tagvenue.com/us/venues/new-york/47427/jay-suites-chelsea-location](https://www.tagvenue.com/us/venues/new-york/47427/jay-suites-chelsea-location)
+   - Unresolved: Confirm live availability on the chosen 2026 Saturday.
+   - Unresolved: Confirm the exact all-in Saturday total at the promotional from-$75/hour rate.
+   - Unresolved: Confirm capacity: Meeting Room C seats 14 — far below the 50-attendee target (lead-tier capacity gap); confirm whether multiple rooms can be combined into one event space.
+   - Unresolved: Confirm which room configuration (if any) hosts a single 50-person event.
+
+## Trusted Venue Seeds (discovery provenance only)
+
+- No matching trusted-venue seeds for this city. A seed is a head-start for research, never proof of current availability, capacity, screen, Wi-Fi, or cost.
+
+## Speaker Candidates
+
+- Speaker candidates: deferred to Run B after venue selection. No speaker candidates research is performed in Run A.
+
+## Local Communities
+
+- (NYAI) New York Artificial Intelligence (AI Community Collective) — activity: active — focus: ai, machine_learning — members: 4164 — cadence: Irregular (past in-person events 2025-12-10 and 2026-06-02; upcoming partner event 2026-08-28) — typical venue: Jacob Javits Center, 429 West 11th Avenue (2025-12-10 event); venues vary
+  - Contact: [NYAI official site (nyai.co, linked from group About)](https://www.nyai.co/)
+  - Open to co-hosting: "Group About text states: 'Have a message to share with the AI community? Partner with us to lead an event or workshop.' and 'Interested in Sponsoring an AI event? Apply here.'" — own-page phrase; manual assessment required, never a confirmed commitment
+  - Verify: Confirm NYAI's current in-person event cadence and the best public contact route for a community AI event (the group's About invites event/workshop partnerships and sponsorship applications).
+  - Source: [(NYAI) New York Artificial Intelligence group page (Meetup)](https://www.meetup.com/nyaimeetup/)
+  - Observed: Group page states 4,164 members, New York NY US, and is labeled 'Part of AI Community Collective - 9 groups'. About text states 'NYAI.co is a global community focused on AI in NYC and beyond' and includes the partnership/sponsorship invitations quoted in cohost_evidence_phrase. Past events: 'Vibe Code Live: Build, Learn, Repeat - #NYTechWeek (NYAI, WIMLDS, Brainstation)' on 2026-06-02 (9 attendees); 'AI Summit New York 2025' on 2025-12-10 at Jacob Javits Center, 429 West 11th Avenue (10 attendees). Upcoming: 'AIAI Information Leaders New York meetup' on 2026-08-28 (6:30PM, in-person partner event with AI Accelerator Institute). Sponsors listed: Capital One; venue: Nebulas.
+  - Inference (displayable uncertainty, not proof): The group's own About text explicitly invites partners to lead events/workshops and invites sponsorship applications, indicating possible openness to collaboration; it is a manual assessment, not authorization.
+  - Uncertainty: cohost_open true is based on the group's own About language. Contact is the official site nyai.co linked in the About text; the listed hello@nyai.co email is not recorded (contact policy).
+- AI Salon New York (AI Salon) — activity: active — focus: ai — members: unknown — cadence: Irregular (in-person event 2026-03-26/27; organizer posts reference a 2026 salon series) — typical venue: Casa 51, 625 W 51st St, New York (2026-03-26/27 event)
+  - Open to co-hosting: "Event page ticket section states: 'Apply to be a Sponsor - Sponsor AI Salon New York and connect with the city's leading voices in artificial intelligence.'" — own-page phrase; manual assessment required, never a confirmed commitment
+  - Verify: Confirm AI Salon New York's late-2026 in-person event dates and venues (the March 2026 event was at Casa 51, 625 W 51st St) and the current sponsorship/co-hosting process for the NYC chapter.
+  - Source: [AI Salon New York event page (Luma, organizer-owned)](https://luma.com/AI-Salon-NewYork-March-2026)
+  - Observed: Organizer-owned Luma event page describes 'AI Salon' as 'the global community bringing together AI founders and builders, investors, and partners to connect and collaborate. Decentralized, chapter-based.' NYC event 'AI Salon New York' was held 2026-03-26/27 in person at Casa 51, 625 W 51st St, New York (hosted by chapter leads Blanca Ireri Espinosa Savinon, Sandy McCarron, Nicky Schaub, Jasper Wognum, Jeffrey D Abbott). Ticket section offers 'Standard Ticket' and 'Apply to be a Sponsor' with the sponsorship language quoted in cohost_evidence_phrase. Event description: 'A high-profile event for founders, company executives, investors, entrepreneurs, developers, and creators interested in Artificial Intelligence.' Organizer LinkedIn (Sandy McCarron) confirms a 2026 AI Salon New York was held.
+  - Inference (displayable uncertainty, not proof): AI Salon New York is a chapter of a global AI community with a recent in-person NYC event; the chapter's own event page invites sponsors, which is a manual assessment, not authorization.
+  - Uncertainty: cohost_open true is based on the chapter event page's own sponsorship ticket. No member count on the event page. No public contact URL (Contact the Host form).
+- AI Tinkerers New York City (AI Tinkerers) — activity: active — focus: ai, machine_learning — members: unknown — cadence: Chapter page reports 'Local cadence 36 events in the last 12 months'; next event August Demo Day on 2026-08-19 — typical venue: unknown venue
+  - Verify: Confirm AI Tinkerers NYC's late-2026 in-person demo-night schedule and typical venue (recent events were hosted at sponsor/partner venues, which are not named on the chapter page).
+  - Source: [AI Tinkerers New York City chapter page](https://nyc.aitinkerers.org/)
+  - Observed: Chapter page states 'Local cadence 36 events in the last 12 months' and describes a hands-on AI builder meetup with live demos, technical Q&A, and no-pitch networking. Page lists in-person events: 'NYC Vision Hack v.2 — Live Feeds, Open Data with Google Cloud, Roboflow, and Veris' on 2026-08-07 (+130); 'Run and Hack with Chat.dev' on 2026-08-01 (+21); 'NYC Summer Social: Rooftop Oyster Demo Day' on 2026-07-29 (+302); 'Morning Build Sprint/Coworking Cafe v2' on 2026-07-24 (+36); 'After Tokenmaxxing: A Closed-Door Dinner' on 2026-07-22 (+151); 'Morning Build Sprint/Coworking Cafe' on 2026-07-10 (+38); 'Run and Hack NY Tech Week 5k' on 2026-06-06 (+20); 'Emotionally Intelligent AI Hackathon with ElevenLabs' on 2026-06-06 (+122); 'NYTW Omakase Dinner with Auth0 & MongoDB' on 2026-06-04 (+157). Next event: 'August Demo Day ft Runpod' on 2026-08-19, 6PM to 9PM (+107). About text states the chapter is part of a 252-city global network with 122,000+ members.
+  - Inference (displayable uncertainty, not proof): The chapter runs frequent in-person AI builder meetups in New York City; event venues are sponsor-provided and vary, so no single typical venue is evidenced on the chapter page.
+  - Uncertainty: No chapter-level member count is published on the page, so member_size_public is null. No public contact URL on the page (message-organizers form only).
+- Columbia AI Club CUB (independent) — activity: active — focus: ai, machine_learning — members: unknown — cadence: Annual flagship summit plus event-based programming (CUB AI Summit 2026 on 2026-04-26; founded Fall 2025) — typical venue: International Affairs Building, Room 1501, Columbia University, 420 W 118th St (2026-04-26 summit)
+  - Verify: Confirm Columbia AI Club CUB's late-2026 public events and whether its summit/events are open beyond Columbia students and faculty.
+  - Source: [Columbia CUB AI Summit 2026 event page (Luma, organizer-owned)](https://luma.com/t4kmbswi)
+  - Observed: Organizer-owned Luma event page (hosted by 'Columbia AI Club CUB', Silver Yin and Keer Wang) describes 'Columbia CUB AI Summit 2026' on 2026-04-26, 12:30-5:00PM, in person at International Affairs Building, Room 1501, Columbia University (28 went; page states 'Join 100+ students, researchers, and industry leaders'). About CUB: 'Columbia University's only university-wide AI club - a student-led community focused on emerging technologies, with a current emphasis on artificial intelligence. Founded in Fall 2025, CUB has grown to 370+ members and a 14-person board.' Four tracks: AI x Energy, AI x Finance, AI x Blockchain, AI x Governance; speakers from Morgan Stanley, Google, Microsoft, Amazon/AWS, Circle, LayerZero, Wood Mackenzie.
+  - Inference (displayable uncertainty, not proof): Columbia AI Club CUB is an active university-wide AI club with a large in-person flagship summit in 2026; its AI x Blockchain track is relevant to the AI/Web3 audience.
+  - Uncertainty: Member count is '370+', not an exact integer, so member_size_public is null. Contact is via co-president emails listed on the page, not recorded (contact policy).
+- CryptoMondays NYC (CryptoMondays) — activity: active — focus: web3 — members: 11648 — cadence: Weekly Monday meetups at Pubkey (2026-04-06, 2026-04-13, 2026-04-20) — typical venue: Pubkey, 85 Washington Pl, New York (recent weekly events)
+  - Contact: [CryptoMondays official site (linked from group About)](https://www.cryptomondays.io/)
+  - Verify: Confirm CryptoMondays NYC's late-2026 Monday meetup schedule and venues (recent weekly events were at Pubkey, 85 Washington Pl).
+  - Source: [CryptoMondays NYC group page (Meetup)](https://www.meetup.com/cryptomondaysnyc/)
+  - Observed: Group page states 11,648 members, New York NY US. About text states 'While CryptoMondays NYC was the first CryptoMondays we have chapters in over 65 cities around the world' and describes a meetup for people passionate about crypto. Past in-person events: 'CryptoMondays (Bitcoin)' on 2026-04-20 at Pubkey, 85 Washington Pl (9 attendees); 'CryptoMondays NYC Featuring Splyce' on 2026-04-13 at Pubkey (9 attendees); 'CryptoMondays Wall St, April 6' on 2026-04-06 at Pubkey (24 attendees). About text links cryptomondays.io ('Learn more about CryptoMondays').
+  - Inference (displayable uncertainty, not proof): CryptoMondays NYC is the flagship chapter of the world's largest IRL Web3 community, with weekly in-person Monday meetups in New York.
+  - Uncertainty: Contact is the official site cryptomondays.io linked in the group About. Social media links (X/Instagram/LinkedIn) are not recorded as contact routes.
+- GDG NYC (Google Developer Groups) — activity: active — focus: ai, machine_learning — members: 5183 — cadence: Event-based (past events 2026-04-23, 2026-05-22, 2026-06-05, 2026-06-10; no upcoming events listed at access time) — typical venue: New York City Google Office (2026-06-10 event); venues vary
+  - Open to co-hosting: "Chapter page states: 'Looking to showcase your brand or hire top tech talent? Explore sponsorship opportunities with North America's largest Google Developer Group'" — own-page phrase; manual assessment required, never a confirmed commitment
+  - Verify: Confirm GDG NYC's late-2026 event calendar and venues (no upcoming events were listed at access time) and the current sponsorship/co-hosting process for a community AI event.
+  - Source: [Google Developer Groups GDG NYC chapter page](https://gdg.community.dev/gdg-nyc/)
+  - Observed: Chapter page states 5,183 group members and describes a technology community offering hackathons, workshops, trainings, talks, and meetups 'both in-person and online'. Chapter page states GDG NYC won the 2026 'Technical Vanguard' award by Google Developer Groups. Past events: 'Google Maps Platform Developer Community Day at the New York City Google Office' on 2026-06-10 (external registration); 'Vibe Code & Tea: Intro to Gemini AI - #NYTechWeek' on 2026-06-05 (external registration); 'Google I/O Build with AI Hackathon x Google Cloud Labs' on 2026-05-22 (free registration); 'Gemini in Motion: See Yourself as AI' on 2026-04-23 (free registration). Chapter page includes the sponsorship language quoted in cohost_evidence_phrase.
+  - Inference (displayable uncertainty, not proof): GDG NYC is an active Google Developer Group chapter with recent in-person AI/cloud events; its own chapter page invites sponsorship opportunities, which is a manual assessment, not authorization.
+  - Uncertainty: cohost_open true is based on the chapter page's own sponsorship-invitation language. No public contact URL on the chapter page (Contact Us is a form), so contact_info is null.
+- Global AI New York (Global AI Community) — activity: active — focus: ai — members: 338 — cadence: Event-based (past 2025-11-13 and 2026-03-09 in-person events; upcoming 2026-09-21 Global AI Night) — typical venue: unknown venue
+  - Verify: Confirm Global AI New York's late-2026 in-person event schedule and typical venues (venues are not named on the chapter page).
+  - Source: [Global AI New York chapter page (Global AI Community)](https://globalai.community/chapters/new-york/)
+  - Observed: Official chapter page states 338 members, 3 events, 3 organizers, and 'Welcome to the official Global AI Chapter page of New York in United States.' Events listed: 'Global AI Night' upcoming on 2026-09-21 (17:30-21:00, in person, 9); 'AgentCon - New York' on 2026-03-09 (10:00-17:00, in person, 13); 'Agentic AI: Implementation and Org Transformation' on 2025-11-13 (17:15-19:15, in person).
+  - Inference (displayable uncertainty, not proof): The chapter runs in-person AI events in New York with an upcoming Global AI Night; venues are not published on the chapter page.
+  - Uncertainty: Member count (338) is the chapter's own page count. No public contact URL on the chapter page (organizer LinkedIn/GitHub buttons not recorded as contact routes).
+- LangChain NYC (LangChain) — activity: active — focus: ai, machine_learning — members: unknown — cadence: Irregular (past in-person event 2025-08-21; an upcoming meetup is listed on an aggregator calendar) — typical venue: Grammarly NYC (2025-08-21 event; exact address registration-only)
+  - Verify: Confirm LangChain NYC's late-2026 in-person meetup schedule and venues (past event was at Grammarly NYC; registration-required address).
+  - Source: [NYC LangChain Meetup: Ambient Agent Architectures event page (Luma, organizer-owned)](https://luma.com/mimsk691)
+  - Observed: Organizer-owned Luma event page (presented by 'LangChain Events') describes 'NYC LangChain Meetup' as a place to 'meet other NYC-based engineers and developers building with LangChain and LangGraph'. Event 'NYC LangChain Meetup: Ambient Agent Architectures' was held 2025-08-21 (210 went), in-person at Grammarly NYC (page states: 'Due to Grammarly's security policies, you will need to sign and NDA prior to or upon arrival' and registration is required to see the exact address). Hosts: Al Chen, Matt D, Amada (LangChain). An upcoming 'LangChain NY Meetup: LLM Wikis and Managing Agent Context' is listed on the Bond AI - New York calendar (aggregator, discovery-level only).
+  - Inference (displayable uncertainty, not proof): LangChain NYC is an active NYC-based AI engineering meetup community; events are registration-gated and venues vary.
+  - Uncertainty: The Luma event page shows no member count (Meetup Pro listing '357 members' is a network landing, discovery only), so member_size_public is null. Contact email community@langchain.dev is visible but not recorded (contact policy).
+- Mindstone NY AI Meetup (Mindstone) — activity: active — focus: ai, machine_learning — members: 2597 — cadence: Irregular (in-person events 2025-06-04, 2025-12-09, 2026-02-26) — typical venue: Wix Playground, 100 Gansevoort St (2026-02-26); All Souls NYC, 1157 Lexington Ave (2025-12-09); CIBC New York, 300 Madison Avenue (2025-06-04)
+  - Contact: [Mindstone official site (linked from group page)](https://mindstone.com)
+  - Verify: Confirm Mindstone NY AI Meetup's late-2026 in-person schedule and venues (recent in-person events were at Wix Playground, All Souls NYC, and CIBC New York).
+  - Source: [Mindstone NY AI Meetup group page (Meetup)](https://www.meetup.com/mindstone-ny-ai-meetup/)
+  - Observed: Group page states 2,597 members, New York NY US, and is labeled 'Part of Mindstone #PracticalAI Community - 44 groups'. About text: 'Delve into the world of AI, explore its practical applications, and marvel at the astonishing projects that are shaping our future. This event is part of the Global Mindstone AI community.' Past in-person events: 'Mindstone New York February AI Meetup' on 2026-02-26 at Wix Playground, 100 Gansevoort St (121 attendees); 'Mindstone New York December AI Meetup' on 2025-12-09 at All Souls NYC, 1157 Lexington Ave (19 attendees); 'Mindstone / Anote NYC June AI Meetup' on 2025-06-04 at CIBC New York, 300 Madison Avenue (26 attendees); 'Mindstone NY AI Meetup' on 2025-06-04 at CIBC Commercial Banking Center (51 attendees).
+  - Inference (displayable uncertainty, not proof): Mindstone runs a recurring in-person practical-AI meetup in New York with varying venues.
+  - Uncertainty: Contact is the official site mindstone.com linked on the page. No co-host invitation observed on the group page.
+- New York AI Engineers (AI Engineers) — activity: active — focus: ai, machine_learning — members: 9664 — cadence: Monthly-ish (past events 2026-06-24, 2026-07-16, 2026-07-23, 2026-07-29) — typical venue: Fonzi HQ, 25 Kent Ave, Ground Floor, New York (2026-07-29 event)
+  - Verify: Confirm New York AI Engineers' late-2026 in-person event schedule and venues (recent events were at Fonzi HQ, 25 Kent Ave).
+  - Source: [New York AI Engineers group page (Meetup)](https://www.meetup.com/new-york-ai-engineers/)
+  - Observed: Group page states 9,664 members, New York NY US. About text describes 'a community for builders working with AI' run by Fonzi, a talent marketplace, with communities in New York and San Francisco. Past events: 'NY AI Engineers: July' on 2026-07-29 at Fonzi HQ, 25 Kent Ave, Ground Floor (Rad Power Bikes sign), New York (1 attendee); 'AI Engineers: Devs & Drinks' on 2026-07-23; 'AI Engineers: Poker & Game Night' on 2026-07-16; 'AI Engineers Presents: Founders to Follow' on 2026-06-24.
+  - Inference (displayable uncertainty, not proof): The group is an active AI-builder community in New York with regular in-person events at Fonzi HQ.
+  - Uncertainty: Speaker submissions go via email (lauren@fonzi.ai), not recorded as contact (contact policy); no public contact URL on the page.
+- New York Open Statistical Programming Meetup (nyhackr) (independent) — activity: active — focus: data_science, machine_learning, ai — members: 13617 — cadence: Monthly in-person talks at NYU (upcoming 2026-08-11; past 2026-07-13 and 2026-06-16) — typical venue: Pless Hall, 82 Washington Square East, New York (recent/upcoming events; NYU-hosted)
+  - Contact: [nyhackr.org official site (linked from group page)](https://nyhackr.org/)
+  - Verify: Confirm nyhackr's late-2026 in-person talk schedule and whether the monthly $7 in-person ticket model continues (upcoming 2026-08-11 talk at Pless Hall, NYU).
+  - Source: [New York Open Statistical Programming Meetup group page (Meetup)](https://www.meetup.com/nyhackr/)
+  - Observed: Group page states 13,617 members, New York NY US. About text states 'Visit our new site at https://nyhackr.org/' and that the meetup now covers all open-source data analysis tools (Python, Julia, C++, Stan). Upcoming in-person event: 'Data exploration of Pixar films' on 2026-08-11 at Pless Hall, 82 Washington Square East (7PM, $7 in-person charge, virtual free; external registration at nyhackr; page states 'Thank you to NYU for hosting us'). Past in-person events: 'Typst for Efficient Typesetting' on 2026-07-13 at Pless Hall; 'Genealogy and LLMs' on 2026-06-16 at Pless Hall. Own site nyhackr.org confirms the same August talk and describes the monthly format with pizza.
+  - Inference (displayable uncertainty, not proof): The group runs a monthly in-person open-source statistics/data meetup hosted at NYU; the venue is a recurring university host, but the page only thanks NYU for a specific event and carries no standing co-host invitation, so cohost_open is false.
+  - Uncertainty: Contact is the group's own site nyhackr.org (public route linked from the page). Event-level venue hosting (NYU) is recorded as an observed fact, not a co-host flag.
+- NYC AI Developers Group (AICamp) (AICamp) — activity: active — focus: ai, machine_learning — members: 12211 — cadence: Regular (475 past events; recent in-person 2026-08-04; many events are virtual) — typical venue: 307 West 38th Street, 14th Floor, Studio 1401, New York (2026-08-04 event)
+  - Contact: [AICamp official site (linked from group page)](https://www.aicamp.ai/)
+  - Open to co-hosting: "Group About text states: 'If you'd like to speak at our meetups, co-host your events, or inquire about partnership opportunities, please feel free to reach out to us.'" — own-page phrase; manual assessment required, never a confirmed commitment
+  - Verify: Confirm AICamp NYC's in-person meetup cadence and venues for late 2026 (recent in-person event was at 307 West 38th Street) and the current co-hosting/partnership process.
+  - Source: [NYC AI Developers Group group page (Meetup)](https://www.meetup.com/aittg-nyc/)
+  - Observed: Group page states 12,211 members, New York NY US. About text describes the group as a community 'to learn and practice AI, Gen AI, LLMs, Agentic AI, Machine Learning, Deep Learning, MLOps, Data engineering and Data technology' and includes the co-host invitation quoted in cohost_evidence_phrase. Past in-person event: 'Agentic AI in Finance' on 2026-08-04 at 307 West 38th Street, 14th Floor, Studio 1401, New York, NY 10018 (18 attendees). AICamp's own event page (aicamp.ai/event/eventdetails/W2025101614) for the 'AI Meetup (NYC): GenAI, LLMs and Agents' on 2025-10-16 at JPMC, 450 W 33rd St (273 RSVPs) states 'We are actively seeking sponsors to support our community. Whether it is by offering venue spaces, providing food/drink, or cash sponsorship.'
+  - Inference (displayable uncertainty, not proof): The group is AICamp's active NYC developer community with in-person and virtual events; its own About text explicitly invites co-hosting and partnerships, which is a manual assessment, not authorization.
+  - Uncertainty: cohost_open true is based on the group's own About text ('co-host your events'). Contact is the AICamp official site linked on the page. The aicamp.ai event page's sponsor-seeking language corroborates openness but is event-level.
+- NYC Creative AI (formerly ComfyUI NYC) (independent) — activity: active — focus: ai — members: unknown — cadence: Monthly (event page states 'Join for our monthly event'; past monthly editions listed through 2026-07) — typical venue: ZeroSpace, 337-345 Butler St, Brooklyn (recent monthly events)
+  - Verify: Confirm NYC Creative AI's late-2026 in-person event dates and venues (monthly events have been at ZeroSpace, 337-345 Butler St, Brooklyn).
+  - Source: [NYC Creative AI July Forum event page (Luma, organizer-owned)](https://luma.com/nyc-creative-ai-july-2026)
+  - Observed: Organizer-owned Luma event page states 'Over 4000 community members. Join for our monthly event, where we dive into practical topics around creative AI, featuring speakers from leading companies, practitioners, and networking time.' Event 'NYC Creative AI July Forum (formerly ComfyUI NYC)' was held 2026-07-10/11 at ZeroSpace, 337-345 Butler St, Brooklyn (449 went; livestream and in-person). Page lists monthly past editions (June, May, April, March, February, January 2026 and earlier) with technical sessions and demos, and states 'ComfyUI remains close to the community's roots, and as the AI landscape evolves, this event is growing into a home for all of creative AI in New York.'
+  - Inference (displayable uncertainty, not proof): The community runs a monthly in-person creative-AI meetup in Brooklyn; the event page is the organizer-owned claim-bearing source.
+  - Uncertainty: Member count is a '4000+' network claim, not an exact integer, so member_size_public is null. No public contact URL on the event page (speaker-interest form only).
+- NYC Women in Machine Learning & Data Science (WiMLDS NYC) (WiMLDS) — activity: active — focus: machine_learning, data_science — members: 4764 — cadence: Irregular (in-person events 2025-10-14, 2025-12-11, 2026-06-02; online events in between) — typical venue: BrainStation, 136 Crosby Street, New York (recent in-person events)
+  - Contact: [WiMLDS NYC chapter page (linked from group page)](https://wimlds.org/chapters/about-nyc)
+  - Verify: Confirm WiMLDS NYC's late-2026 in-person event cadence and venues (recent in-person events were at BrainStation, 136 Crosby Street).
+  - Source: [NYC Women in Machine Learning & Data Science group page (Meetup)](https://www.meetup.com/nyc-wimlds/)
+  - Observed: Group page states 4,764 members, New York NY US. About text describes WiMLDS's mission to support and promote women and gender minorities in machine learning and data science via talks, workshops, networking events, and hackathons. Past in-person events: 'Vibe Code Live! WiMLDS at #NYTechWeek' on 2026-06-02 at BrainStation, 136 Crosby Street (33 attendees); 'AI Demo Night with Women in Machine Learning & Data Science' on 2025-12-11 at BrainStation (32 attendees); 'WiMLDS: AI Workshop Series - Bootcamp #3: Women in AI Tech Panel' on 2025-10-14 at BrainStation (117 attendees); 'AI Demo Night' on 2026-03-18 was online (45 attendees). Chapter page wimlds.org/chapters/about-nyc is linked on the group page.
+  - Inference (displayable uncertainty, not proof): WiMLDS NYC is an active women-in-ML/data-science community with recurring in-person events at BrainStation and periodic online events.
+  - Uncertainty: Contact is the linked chapter page on the official wimlds.org site. No co-host invitation observed on the group page; cohost_open false.
+- NYU Data Science Club (DSC@NYU) (independent) — activity: active — focus: data_science, machine_learning — members: unknown — cadence: Annual Datathon plus workshops/socials (Datathon 2026 on 2026-04-10..2026-04-12; founded 2019) — typical venue: NYU campus, 19 West 4th, Room 101 (Datathon 2026 kickoff)
+  - Verify: Confirm NYU Data Science Club's late-2026 public events and whether the annual Datathon and workshops are open beyond NYU students.
+  - Source: [Data Science Club @ NYU official site (dscnyu.org)](https://www.dscnyu.org/)
+  - Observed: Official site dscnyu.org describes 'Datathon 2026' on 2026-04-10..2026-04-12 in New York (kickoff at 19 West 4th, Room 101; hosted by the Data Science Club at NYU and Pulse Foundry AI; prizes incl. Vercel credits and a pitch to an AI startup incubator). Instagram bio states '@nyucds Bringing the Data Science community at NYU together!'. NYU Center for Data Science student-groups page (cds.nyu.edu/student-groups/) lists 'Data Science Club and WiDS' as student groups. Datathon 2025 site describes the club as 'founded in 2019' bringing NYU data science students together through workshops, socials, project expo, and datathon.
+  - Inference (displayable uncertainty, not proof): NYU Data Science Club is an active student data-science community with a large annual in-person Datathon and workshops.
+  - Uncertainty: No public member count on the official site. No public contact URL on the site (registration forms only), so contact_info is null.
+- ODSC AI New York (ODSC) — activity: active — focus: data_science, machine_learning, ai — members: 6931 — cadence: Irregular (in-person 2026-07-23; most upcoming events are online webinars or out-of-city conferences) — typical venue: Studio 1505, 307 West 38th Street, New York (2026-07-23 event)
+  - Verify: Confirm ODSC AI New York's late-2026 in-person meetup cadence and venues (the 2026-07-23 event was at Studio 1505, 307 West 38th Street; most other listed events are online).
+  - Source: [ODSC AI New York group page (Meetup)](https://www.meetup.com/open-data-science-ny-odsc/)
+  - Observed: Group page states 6,931 members, New York NY US, and is labeled 'Part of ODSC-AI-Community - 33 groups'. About text describes a hub for data science/AI with hackathons, workshops, and expert-led lectures. Past in-person event: 'Mind Games: Understanding AI Through Play' on 2026-07-23 at Studio 1505, 307 West 38th Street, New York (27 attendees). Upcoming events are online (e.g. 'Building Context-Aware AI Agents with Real-Time Data' on 2026-09-09, online) or out-of-city (ODSC AI West 2026 on 2026-10-27 in San Francisco).
+  - Inference (displayable uncertainty, not proof): ODSC AI New York is an active AI/data community with occasional in-person NYC events; most programming is online or conference-based.
+  - Uncertainty: Speaker/volunteer/startup forms and Slack are visible on the page but are participation routes, not contact URLs; contact_info null (contact policy).
+- Papers We Love NYC (Papers We Love) — activity: active — focus: machine_learning, data_science — members: 4241 — cadence: Monthly (chapter page states the New York chapter 'meets monthly at different locations throughout the city') — typical venue: Datadog, 620 8th Ave, New York (recent events)
+  - Contact: [Papers We Love official site (linked from group page)](https://paperswelove.org)
+  - Verify: Confirm Papers We Love NYC's late-2026 schedule and venues (recent events were at Datadog, 620 8th Ave).
+  - Source: [Papers We Love group page (Meetup)](https://www.meetup.com/papers-we-love/)
+  - Observed: Group page states 4,241 members, New York NY US. Chapter page (paperswelove.org/chapter/newyork/) states the New York chapter 'meets monthly at different locations throughout the city' and is the original Papers We Love chapter (since 2014). Past in-person events: 'Rylan Talerico on Zep: A Temporal Knowledge Graph Architecture for Agent Memory' on 2025-10-15 at Datadog, 620 8th Ave (76 attendees); 'Michael Vaughn on EXE: Automatically Generating Inputs of Death' on 2025-09-17 at Datadog (86 attendees); 'Alex Weisberger on Performal' on 2025-03-12 at Datadog (104 attendees). Chapter page lists Two Sigma as Platinum Sponsor.
+  - Inference (displayable uncertainty, not proof): Papers We Love NYC is an active CS-papers community with monthly in-person talks in New York; recent papers are AI/ML and data-systems oriented.
+  - Uncertainty: Contact is the official site paperswelove.org linked on the page. Two Sigma's sponsor listing is a sponsor relationship, not a co-host invitation; cohost_open false.
+- PyData NYC (PyData) — activity: active — focus: data_science, machine_learning, ai — members: 8006 — cadence: Irregular in-person meetups (past events 2026-03-26 and 2026-04-20; 92 past events total on the group page) — typical venue: CUNY Graduate Center, 365 5th Avenue (2026-03-26 event); 919 Third Avenue, 23rd floor (2026-04-20 event)
+  - Open to co-hosting: "Official site nyc.pydata.org states: 'Whether you're interested in giving a talk or sponsoring our event, we'd love to hear from you!' and 'For Sponsors: Supporting our meetups can help foster the growth of the data science community, gain exposure, and connect with industry experts.'" — own-page phrase; manual assessment required, never a confirmed commitment
+  - Verify: Confirm PyData NYC's upcoming in-person meetup cadence and venues for late 2026 (recent in-person events were at CUNY Graduate Center and 919 Third Avenue) and the current sponsorship/co-hosting process for a community AI event.
+  - Source: [PyData NYC official site (nyc.pydata.org)](https://nyc.pydata.org/)
+  - Observed: Official site states 'Welcome to PyData NYC!' and 'All the PyData NYC Meetup events are first announced on [the Meetup page]'. The group's Meetup page (meetup.com/pydatanyc/) states 8,006 members, New York NY US, and is labeled 'Part of PyData - 98 groups'. Past events on the Meetup page: 'Making Static & Interactive Visualizations using Matplotlib' on 2026-03-26 at CUNY Graduate Center, 365 5th Avenue (62 attendees); 'Jupyter Open Studio Day' on 2026-04-20 at 919 Third Avenue, 23rd floor Cafeteria (1 attendee); the two most recent listed past events are 'Network event' cards (PyData & PyCon Yerevan 2026 on 2026-07-24; PyData London 2026 on 2026-06-05). Official site lists past events including LLMOps with Hopsworks and Modal Labs @ Microsoft and Time Series Forecasting @ Microsoft, and invites speakers and sponsors with the sponsorship language quoted in cohost_evidence_phrase.
+  - Inference (displayable uncertainty, not proof): PyData NYC is an active NumFOCUS-affiliated data-science community with recent in-person NYC meetups; the official site's speaker/sponsor invitation indicates possible openness to collaboration, but it is a manual assessment, not authorization.
+  - Uncertainty: cohost_open true is based on the group's own official site's speaker/sponsor invitation; the interest form is linked on the site but its URL is a form route, so contact_info stays null (contact policy). Discord/X/LinkedIn links on the Meetup page are not recorded as contact routes.
+- Startup Grind NYC (Startup Grind) — activity: active — focus: ai — members: 13276 — cadence: Monthly AI Briefing series at Civic Hall plus startup pitch/demo events (2026-04-10, 2026-07-10, upcoming 2026-08-14, 2026-08-20, 2026-08-25, 2026-08-28) — typical venue: Civic Hall, 124 East 14th Street (AI Briefing series); The Yard: Herald Square, 106 West 32nd Street (pitch/demo events)
+  - Verify: Confirm Startup Grind NYC's AI Briefing and AI Workflow Exchange schedule for late 2026 and whether these recurring AI events are open to non-members (upcoming events are at Civic Hall and The Yard Herald Square).
+  - Source: [Startup Grind NYC group page (Meetup)](https://www.meetup.com/startup-grind-nyc/)
+  - Observed: Group page states 13,276 members, New York NY US, and is labeled 'Part of Startup Grind - 17 groups'. About text describes Startup Grind as the largest independent startup community. Upcoming in-person events: 'The AI Briefing by Startup Grind - Agentic Governance' on 2026-08-14 at Civic Hall, 124 East 14th Street (co-hosted with Lazy 8 AI; page describes it as 'a recurring AI deep-dive for decision-makers'); 'The Startup Pitch: Demo Showcase' on 2026-08-20 at The Yard: Herald Square (5PM-7:30PM, $5); 'The AI Workflow Exchange: Live Builder Demos by Startup Grind' on 2026-08-25 at The Yard: Herald Square; 'Tech Happy Hour by Startup Grind' on 2026-08-28 at Time Out Market Union Square. The group's own event feed (startupgrind.com) lists past AI Briefing editions 'Financial Services' on 2026-04-10 and 'The C-Suite Gap in AI Readiness' on 2026-07-10, both at Civic Hall, 124 East 14th Street.
+  - Inference (displayable uncertainty, not proof): Startup Grind NYC runs a recurring monthly AI Briefing series and AI workflow demo events in New York, making it relevant to an AI community audience; the chapter's network-level 'Sponsor an event!' line is a participation route, not a standing NYC co-host invitation.
+  - Uncertainty: cohost_open false: the page's sponsorship line routes to the global startupgrind.com/sponsor network page, not a standing chapter co-host invitation (false-positive risk avoided per calibration). No chapter-specific public contact URL on the page.
+- The New York Python Meetup Group (NYC Python) (independent) — activity: active — focus: data_science, machine_learning — members: 17449 — cadence: Event-based (past events 2025-06-03, 2025-10-01, 2025-10-15) — typical venue: Datadog, New York Times Bldg, 620 8th Avenue, 45th Floor (2025-10-01 event); 11 Times Sq (2025-06-03 event)
+  - Contact: [NYC Python official site (linked from group page)](https://nycpython.org)
+  - Verify: Confirm NYC Python's late-2026 event schedule and typical venues (recent events were at Datadog and 11 Times Square).
+  - Source: [The New York Python Meetup Group group page (Meetup)](https://www.meetup.com/nycpython/)
+  - Observed: Group page states 17,449 members, New York NY US. About text: 'Meet other local Python Programming Language enthusiasts!' Past events: 'NYC Python x PyData NYC: Talk Night at Datadog!' on 2025-10-01 at Datadog, New York Times Bldg, 620 8th Avenue, 45th Floor (106 attendees); 'Git for Data: How Table Formats Unify Software and Data Development' on 2025-10-15 (17 attendees); 'GenAI Zoo - NY Tech Week' on 2025-06-03 at 11 Times Sq (1 attendee); 'Python and Data: Project Night with PyData NYC!' on 2025-03-12 at 11 Times Sq. Official site nycpython.org linked on the page.
+  - Inference (displayable uncertainty, not proof): NYC Python is an active, large Python programming community with recurring data/AI-themed events, including joint events with PyData NYC.
+  - Uncertainty: Contact is the official site nycpython.org linked on the page. The group is a general Python community; the data/AI relevance is evidenced by its joint PyData events and GenAI Zoo event.
+- AI Professionals NYC Machine Learning (AI Professionals) — activity: intermittent — focus: ai, machine_learning — members: 12310 — cadence: Irregular; recent and upcoming listed events are online-only (2026-08-06, 2026-08-10, 2026-08-13, 2026-08-17) — typical venue: unknown venue
+  - Verify: Confirm whether AI Professionals NYC Machine Learning holds any in-person New York meetups (recent and upcoming listed events are online-only; the About text mentions both virtual and in-person but recent listings are virtual).
+  - Source: [AI Professionals NYC Machine Learning group page (Meetup)](https://www.meetup.com/nyc-machine-learning/)
+  - Observed: Group page states 12,310 members, New York NY US. About text describes 'AI Professionals' connecting 100,000+ practitioners globally and offering 'Regular meetups and events (virtual and in-person)'. Recent/upcoming listed events are online-only: 'Networking for AI Professionals around the world - August 13' on 2026-08-13 (online); 'Get Google AI Certified - AI Professionals July 2026 Cohort [7 of 7]' on 2026-08-17 (online); 'Get Google AI Certified [6 of 7]' on 2026-08-10 (online); 'Info Session: Central Europe' on 2026-08-06 (online). No in-person NYC event is listed within the 12 months before accessed_on.
+  - Inference (displayable uncertainty, not proof): The group is relevant to the local AI/ML audience but recent activity is digital-first; any current in-person New York presence is unverified.
+  - Uncertainty: Digital-only evidence is explicit in the observed facts; the group is labeled intermittent (not active) with an in-person verification question and is never presented as a local in-person meetup. No public contact URL (online-community platform and forms only).
+- Data Umbrella NYC (Data Umbrella) — activity: intermittent — focus: data_science, machine_learning, ai — members: 3340 — cadence: Irregular; recent listed events are online-only (2025-12-09, 2026-01-20, 2026-01-29, 2026-02-10) — typical venue: unknown venue
+  - Contact: [Data Umbrella official site (linked from group page)](https://www.dataumbrella.org)
+  - Verify: Confirm whether Data Umbrella holds any in-person New York events (recent listed events are online-only speaker series and workshops; the About text organizes online speaker series).
+  - Source: [Data Umbrella group page (Meetup)](https://www.meetup.com/nyc-data-umbrella/)
+  - Observed: Group page states 3,340 members, New York NY US. About text: 'Our mission is to provide a welcoming and educational space for under-represented persons in the fields of data science, machine learning, deep learning, artificial intelligence and analytics.' Recent listed events are online-only: '[Online] Dataverse: an Open-Source Platform for Research Data' on 2026-02-10 (online); '[Online] PREreview' on 2026-01-29 (online); '[Online] The Internet Archive for Data Scientists' on 2026-01-20 (online); 'PyData Global 2025 (Online)' on 2025-12-09 (online). Official site dataumbrella.org linked on the page.
+  - Inference (displayable uncertainty, not proof): Data Umbrella is a NYC-based diversity-in-data-science community whose recent programming is digital-first; any current in-person New York presence is unverified.
+  - Uncertainty: Digital-only evidence is explicit in the observed facts; the group is labeled intermittent (not active) with an in-person verification question and is never presented as a local in-person meetup.
+- The AI Collective New York (The AI Collective) — activity: intermittent — focus: ai — members: unknown — cadence: Irregular (in-person NYC event 2026-05-12; chapter newsletter reports a Research Roundtable with 170+ attendees) — typical venue: Fabrik NYC (2026-05-12 event; address registration-only on event page)
+  - Verify: Confirm whether The AI Collective New York chapter runs regular in-person events beyond the 2026-05-12 founders lunch (chapter page aicollective.com/chapters/new-york is a JS shell; the Luma event page is the visible organizer source).
+  - Source: [The AI Collective New York event page (Luma, organizer-owned)](https://luma.com/aic-ny-5-12)
+  - Observed: Organizer-owned Luma event page describes 'B2B Fintech Founders Lunch: Using Content & Events to Scale' on 2026-05-12 in New York (past event; hosted by The AI Collective, Paula McMahon, Cat Valverde, Carlos Caro, Supriya Gupta, Fabrik NYC; register to see exact address). About text: 'The AI Collective is a global non-profit building the human layer for the AI era. We unite 200,000+ leaders, builders, and stakeholders across 100+ forums worldwide.' The AI Collective newsletter (newsletter.aicollective.com) reports the New York chapter hosted a Research Roundtable with Tandem AI (NVIDIA senior research scientists) drawing 170+ attendees at Tandem AI's New York office.
+  - Inference (displayable uncertainty, not proof): The AI Collective has an active New York chapter evidenced by the May 2026 in-person event and the reported Research Roundtable; regular local cadence is unproven.
+  - Uncertainty: Chapter page aicollective.com/chapters/new-york renders only a heading (JS shell) in this environment, so the organizer-owned Luma event page is the claim-bearing source. No member count. No public contact URL.
+- New York R User Group (independent) — activity: dormant — focus: data_science — members: 1394 — cadence: No in-person event since 2022; last listed event online on 2024-02-01 — typical venue: unknown venue
+  - Verify: Confirm whether New York R User Group has resumed in-person meetups (last listed events were online: 2024-02-01, 2022-09-27; the About text's sponsorship line is historical).
+  - Source: [New York R User Group group page (Meetup)](https://www.meetup.com/new-york-r-users-group/)
+  - Observed: Group page states 1,394 members, New York NY US. About text mentions NYC Data Science Academy support and includes a historical line 'Press inquiries, event space, food and drink sponsorship are welcome! please contact info@nycdatascience.com' (recorded as observed fact, not a co-host flag for a dormant group). Past events: 'Develop prompts for a Language Model (LLM) from the ground up' on 2024-02-01 (online, 8 attendees); 'Readability Counts: Best Practices in Coding' on 2022-09-27 (online, 12 attendees); 'Open House at NYC Data Science Academy' on 2022-09-21 (online, 2 attendees); 'Designing and Implementing Production Machine Learning Systems' on 2022-09-07 (online, 15 attendees). No in-person event within the 12 months before accessed_on.
+  - Inference (displayable uncertainty, not proof): New York R User Group is a relevant R/data-science community currently dormant on in-person activity; retained as dormant historical/contextual context, never presented as fresh.
+  - Uncertainty: The About text's old sponsorship/venue line (with an email) is recorded as an observed fact but NOT flagged cohost (false-positive risk avoided for a dormant group per Budapest AISHK calibration). No public contact URL (sponsor's nycdatascience.com blog is not the group's own route).
+- NYC PyLadies (PyLadies) — activity: dormant — focus: data_science, machine_learning — members: 4035 — cadence: No in-person event since 2024-10-24 (site describes monthly events; the Meetup page shows no event within the 12 months before accessed_on) — typical venue: ElasticSearch, 45 W 27th Street (2024-10-24 event); Google NYC - Chelsea Market, 75 9th Ave (2023-12-14 event)
+  - Contact: [NYC PyLadies official site (linked from group page)](https://nyc.pyladies.com)
+  - Verify: Confirm whether NYC PyLadies has resumed in-person meetups (last in-person event 2024-10-24 at ElasticSearch; the official site describes monthly events but none is listed within the 12 months before accessed_on).
+  - Source: [NYC PyLadies group page (Meetup)](https://www.meetup.com/nyc-pyladies/)
+  - Observed: Group page states 4,035 members, New York NY US, and is labeled 'Part of Python Software Foundation Meetup Pro Network - 123 groups'. About text describes the group as 'A group for Python ladies and non-binary people of all levels of programming experience, in the NYC metro area' with a focus on mentorship and the Python open-source community. Past in-person events: '[In-Person] Exploring Vector Search and PyLadies Meet & Greet' on 2024-10-24 at ElasticSearch, 45 W 27th Street (48 attendees); '[In-Person] Pyladies Study Group (@GoogleNYC)' on 2023-12-14 at Google NYC - Chelsea Market, 75 9th Ave (19 attendees). No event within the 12 months before accessed_on. Official site nyc.pyladies.com linked on the page.
+  - Inference (displayable uncertainty, not proof): NYC PyLadies is a relevant Python/data-science community currently silent on in-person activity; retained as dormant historical/contextual context.
+  - Uncertainty: Contact is the official site nyc.pyladies.com linked on the page. Slack/Twitter/GitHub links are not recorded as contact routes.
+- Python for Quant Finance NYC (independent) — activity: dormant — focus: quant, data_science — members: 1421 — cadence: No event since 2017-05-08 (last listed events 2016 and 2017) — typical venue: CQF - Fitch Learning, 55 Broad St, 3rd Floor, New York (historical events)
+  - Verify: Confirm whether Python for Quant Finance NYC has resumed any meetups (last listed events were 2016-2017; group retained as the standing NYC quant-relevant community signal).
+  - Source: [Python for Quant Finance NYC group page (Meetup)](https://www.meetup.com/python-for-quant-finance-nyc/)
+  - Observed: Group page states 1,421 members, New York NY US. About text: 'This group is about the use of Python for Quantitative Financial Applications and Interactive Financial Analytics.' Past events: 'For Python Quants Bootcamp New York (paid event)' on 2017-05-08 at CQF - Fitch Learning, 55 Broad St (10 attendees); 'For Python Quants Meetup' on 2016-05-02 at CQF - Fitch Learning (83 attendees); 'Python for Quant Finance Meetup' on 2016-01-13 (54 attendees); 'Third Python Quants Conference!' on 2015-05-01 (1 attendee). No event within the 12 months before accessed_on.
+  - Inference (displayable uncertainty, not proof): Python for Quant Finance NYC is the standing NYC quant-relevant community signal found in this pass; it is dormant, so the quant category is documented as an evidence gap rather than an active presence claim.
+  - Uncertainty: Retained as dormant historical/contextual context (quant category coverage), never as fresh audience evidence. No public contact URL on the page.
+- R-Ladies New York (R-Ladies) — activity: dormant — focus: data_science — members: 3114 — cadence: No in-person event since 2025-06-16 (last listed events 2025-05-07 and 2025-06-16) — typical venue: Cafe-Flor, 218 8th Ave, New York (2025-06-16 event); NYU Steinhardt (Kimball Hall), 246 Greene Street (2025-05-07 event)
+  - Contact: [R-Ladies NYC official site (linked from group page)](https://www.rladiesnyc.org/)
+  - Verify: Confirm whether R-Ladies New York has resumed in-person meetups (last in-person event 2025-06-16 at Cafe-Flor, 218 8th Ave; no event listed within the 12 months before accessed_on).
+  - Source: [R-Ladies New York group page (Meetup)](https://www.meetup.com/rladiesnyc/)
+  - Observed: Group page states 3,114 members, New York NY US, and is labeled 'Part of RLadies+ - 251 groups'. About text describes a local chapter of the R-Ladies Global organization promoting gender diversity in the R community. Past in-person events: 'R-Ladies Tea and Code Hangout' on 2025-06-16 at Cafe-Flor, 218 8th Ave (6 attendees); 'BRMS2Stan: Intro to Stan for BRMS Users' on 2025-05-07 at NYU Steinhardt (Kimball Hall), 246 Greene Street, 3rd floor (11 attendees); 'R-Ladies Tea and Code Hangout' on 2025-02-24 at Cafe-Flor (25 attendees). No in-person event within the 12 months before accessed_on. Official site rladiesnyc.org linked on the page.
+  - Inference (displayable uncertainty, not proof): R-Ladies New York is a relevant R/data-science community currently silent on in-person activity; retained as dormant historical/contextual context.
+  - Uncertainty: Contact is the official site rladiesnyc.org linked on the page. No co-host invitation observed; cohost_open false.
+
+## Trusted Network
+
+- Trusted-network research: deferred to Run B after venue selection. No trusted-network research research is performed in Run A.
+
+## Co-Host Candidates
+
+- Co-host research: deferred to Run B after venue selection. No co-host research research is performed in Run A.
+
+## Open Questions
+
+- Assess any legitimate community partnership or side-event possibility; the official page supports the conference facts, not that interpretation.
+- Assess audience overlap: a finance-focused AI engineering audience is adjacent to (not identical with) a free DeAI/Web3 community meetup audience.
+- Assess side-event potential: a DeAI Day on 2026-09-19 could ride the week's Web3/AI audience as a side event, per Joe's standing instruction that calendar overlaps are flags and side-event opportunities, never eliminations.
+- Assess whether a future DeAI event could appropriately coordinate with this enterprise-AI audience; no side-event opportunity is asserted from the organizer page alone.
+- Assess whether the festival disperses the local AI/Web3 community audience on 10-10 (awareness flag for Joe, not an elimination).
+- Assess whether the institutional-focused event (banks, fintechs, regulators, XRP community) draws the same community audience as a 50-person free AI/Web3 meetup on adjacent fall weekends.
+- Confirm a Seminar Room A booking is available on the chosen 2026 Saturday (the official pricing page was rate-limited on 2026-08-09; pricing below is from the Wayback Machine snapshot of the official pricing page).
+- Confirm AI Engineer NYC 2026 dates (Oct 12-14) still hold at the Sheraton New York Times Square and whether pre/post-conference community meetups are planned around adjacent fall weekends.
+- Confirm AI Salon New York's late-2026 in-person event dates and venues (the March 2026 event was at Casa 51, 625 W 51st St) and the current sponsorship/co-hosting process for the NYC chapter.
+- Confirm AI Tinkerers NYC's late-2026 in-person demo-night schedule and typical venue (recent events were hosted at sponsor/partner venues, which are not named on the chapter page).
+- Confirm AICamp NYC's in-person meetup cadence and venues for late 2026 (recent in-person event was at 307 West 38th Street) and the current co-hosting/partnership process.
+- Confirm availability on the chosen 2026 Saturday (library hours and room-reservation windows apply).
+- Confirm booking terms, A/V configuration, and any F&B or staffing minimums.
+- Confirm capacity: 12 seats is far below the 50-attendee target (lead-tier capacity gap).
+- Confirm capacity: Meeting Room C seats 14 — far below the 50-attendee target (lead-tier capacity gap); confirm whether multiple rooms can be combined into one event space.
+- Confirm Columbia AI Club CUB's late-2026 public events and whether its summit/events are open beyond Columbia students and faculty.
+- Confirm CryptoMondays NYC's late-2026 Monday meetup schedule and venues (recent weekly events were at Pubkey, 85 Washington Pl).
+- Confirm GDG NYC's late-2026 event calendar and venues (no upcoming events were listed at access time) and the current sponsorship/co-hosting process for a community AI event.
+- Confirm Global AI New York's late-2026 in-person event schedule and typical venues (venues are not named on the chapter page).
+- Confirm LangChain NYC's late-2026 in-person meetup schedule and venues (past event was at Grammarly NYC; registration-required address).
+- Confirm live availability of an event room (larger flexible spaces up to 75 attendees) on the chosen 2026 Saturday.
+- Confirm live availability of Meeting Room I on the chosen 2026 Saturday (9:00am-6:00pm).
+- Confirm live availability of Studio 1505 on the chosen 2026 Saturday.
+- Confirm live availability of the Astoria room on the chosen 2026 Saturday.
+- Confirm live availability of the Atrium on the chosen 2026 Saturday and obtain the room page/quote.
+- Confirm live availability of The Dubai Room on the chosen 2026 Saturday and obtain the room page/quote.
+- Confirm live availability of the Entire Space on the chosen 2026 Saturday.
+- Confirm live availability of the Entire Venue on the chosen 2026 Saturday and obtain the room page/quote (this record's evidence is the Tagvenue NYC large-venues hub listing).
+- Confirm live availability of the Innovation Hub on the chosen 2026 Saturday (Saturday hours listed 9:00am-4:00pm).
+- Confirm live availability of the Main Floor on the chosen 2026 Saturday and obtain the room page/quote (this record's evidence is the Tagvenue NYC large-venues hub listing).
+- Confirm live availability of the needed combination of spaces on the chosen 2026 Saturday.
+- Confirm live availability of the Soho 2nd Fl Loft Venue (Main Venue, up to 50 people) at 447 Broadway on the chosen 2026 Saturday.
+- Confirm live availability of VOLUME - The Club on the chosen 2026 Saturday and obtain the room page/quote.
+- Confirm live availability on the chosen 2026 Saturday.
+- Confirm Messari Mainnet 2026 official dates and city: third-party sources conflict (Oct 6-8 per blockchainacademics; September 2026 per webmobi aggregator); the official messari.io/mainnet page was blocked by a Vercel security checkpoint on 2026-08-09 and the Pier 36 venue page still documents the 2025 edition (September 21, 2025).
+- Confirm Mindstone NY AI Meetup's late-2026 in-person schedule and venues (recent in-person events were at Wix Playground, All Souls NYC, and CIBC New York).
+- Confirm New York AI Engineers' late-2026 in-person event schedule and venues (recent events were at Fonzi HQ, 25 Kent Ave).
+- Confirm NYAI's current in-person event cadence and the best public contact route for a community AI event (the group's About invites event/workshop partnerships and sponsorship applications).
+- Confirm NYC Creative AI's late-2026 in-person event dates and venues (monthly events have been at ZeroSpace, 337-345 Butler St, Brooklyn).
+- Confirm NYC Python's late-2026 event schedule and typical venues (recent events were at Datadog and 11 Times Square).
+- Confirm nyhackr's late-2026 in-person talk schedule and whether the monthly $7 in-person ticket model continues (upcoming 2026-08-11 talk at Pless Hall, NYU).
+- Confirm NYU Data Science Club's late-2026 public events and whether the annual Datathon and workshops are open beyond NYU students.
+- Confirm ODSC AI New York's late-2026 in-person meetup cadence and venues (the 2026-07-23 event was at Studio 1505, 307 West 38th Street; most other listed events are online).
+- Confirm Papers We Love NYC's late-2026 schedule and venues (recent events were at Datadog, 620 8th Ave).
+- Confirm PyData NYC's upcoming in-person meetup cadence and venues for late 2026 (recent in-person events were at CUNY Graduate Center and 919 Third Avenue) and the current sponsorship/co-hosting process for a community AI event.
+- Confirm screen options (the listing marks projector as unavailable; a TV/monitor may be available — verify).
+- Confirm screen/projector availability (not stated in the hub listing).
+- Confirm screen/projector availability (the listing facilities list Wi-Fi, PA/speakers, lighting, backdrops — no projector or TV).
+- Confirm screen/projector availability in the booked room.
+- Confirm screen/projector availability in the booked space (page states state-of-the-art technology and livestreaming but not per-room screen specs).
+- Confirm Seminar Room A is the 800sf room at the published rate (other rooms at $975/30ppl, $1,075/45ppl; 2nd Floor Conference Hall $7,500/day).
+- Confirm Startup Grind NYC's AI Briefing and AI Workflow Exchange schedule for late 2026 and whether these recurring AI events are open to non-members (upcoming events are at Civic Hall and The Yard Herald Square).
+- Confirm Swell 2026 dates (Oct 27-29) and venue (The Shed, Hudson Yards) with Ripple's registration page; the official page publishes the window but exact schedule is TBA.
+- Confirm the AI Week New York fall edition still runs October 5-11, 2026 and whether community-led AI events are scheduled on a nearby fall weekend (the Luma community calendar at luma.com/ai-week-ny is the live schedule source).
+- Confirm the all-in rate for a 50-person daytime event; the Tagvenue page publishes a Conference Offer with $895 min spend but no fixed hourly rate in the accessed snapshot.
+- Confirm the all-in rate for a 50-person event; individual spaces price from $35-$60/hour but a multi-room configuration for 50 attendees has no published total.
+- Confirm the Atrium's booking window on the chosen 2026 Saturday (opening/closing time and whether a full-day 09:00-17:00 or 09:00-18:00 booking is allowed); no window hours are published on the cited sources.
+- Confirm The Dubai Room's booking window on the chosen 2026 Saturday (opening/closing time and whether a full-day 09:00-17:00 or 09:00-18:00 booking is allowed); the cited Tagvenue hub listing does not publish room hours.
+- Confirm the event-room booking window on the chosen 2026 Saturday (opening/closing time and whether a full-day 09:00-17:00 or 09:00-18:00 booking is allowed); the our-spaces page does not publish room hours.
+- Confirm the exact all-in Saturday rate and booking terms (published day rate $1,150 for up to 65 attendees at 800sf including projector/screen or flat-panel display, wireless Internet, and whiteboard; a prior same-day research pass recorded a Tagvenue listing with capacity 70 theatre and from $180/hr — reconcile before booking).
+- Confirm the exact all-in Saturday total (Tagvenue publishes Saturday-Sunday from $400/hour or from $2,800/day, tax included; the day rate is used as the cost basis).
+- Confirm the exact all-in Saturday total and whether the from-$2,000/day rate applies to an 8-hour day event.
+- Confirm the exact all-in Saturday total at the from-$1,250/hour rate (8-hour estimate $10,000 is above the USD 5,000 soft budget — over_soft_budget flag expected).
+- Confirm the exact all-in Saturday total at the from-$160/hour rate including taxes/fees.
+- Confirm the exact all-in Saturday total at the from-$375/hour rate including taxes/fees.
+- Confirm the exact all-in Saturday total at the from-$50/hour rate.
+- Confirm the exact all-in Saturday total at the promotional from-$75/hour rate.
+- Confirm the exact all-in Saturday total at the published from-$175/hour rate including taxes/fees (8-hour estimate $1,400).
+- Confirm the exact all-in Saturday total for 50 people at the 26-50 tier ($250/hr) including the $99 set-up/cleaning fee and any overtime/doorman fees (after 10:00PM a $50/hr doorman fee applies).
+- Confirm the exact all-in Saturday total including taxes/fees (published from $300/hour; 8-hour estimate $2,400).
+- Confirm the exact all-in Saturday total: the venue's price options publish Fri-Sun $500/h • $3,400/day and Mon-Thu $350/h • $2,380/day; 8-hour Saturday estimate = $4,000, not a written quote.
+- Confirm the exact all-in Saturday total; the from-$3,000/hour rate far exceeds the USD 5,000 soft budget (over_soft_budget flag expected).
+- Confirm the exact all-in session total and whether any smaller/weekend package exists below the published from-$10,000/session rate (well above the USD 5,000 soft budget — over_soft_budget flag expected).
+- Confirm the final 2026 race route, street-closure schedule, and neighborhood-specific access effects with NYRR and NYC authorities before planning activity near race day.
+- Confirm the final agenda, attendee mix, satellite events, and local venue-demand effects nearer the event date.
+- Confirm the meeting-room booking window at the chosen branch on the chosen 2026 Saturday (library hours and room-reservation windows apply; most branch rooms are smaller and Central Library spaces are larger); the cited page does not publish per-room hours.
+- Confirm the numeric hire rate for the 3rd Floor Speakeasy for a 50-person daytime event; the Tagvenue page publishes a $2,500 min-spend corporate cocktail package for the 4th Floor Warehouse Gallery but no hourly rate for the Speakeasy in the accessed snapshot.
+- Confirm the program, attendee profile, and any public community events or side programming as the December schedule is finalized.
+- Confirm the rental rate for a free community event; Civic Hall offers 'special rates for nonprofits, community organizations, Civic Hall members and Zero Irving tenants' and a Community Event Option for free-to-attend, open-to-the-public events that benefit the local community — confirm whether a free Decentralized AI Day qualifies.
+- Confirm the rented space's booking window on the chosen 2026 Saturday (opening/closing time and whether a full-day 09:00-17:00 or 09:00-18:00 booking is allowed); the rentals page does not publish room hours.
+- Confirm weekend availability for the target date.
+- Confirm whether a Numerai-funded free community event qualifies as a community/non-profit group under BPL's meeting-room policy and what (if any) fee applies.
+- Confirm whether AI Professionals NYC Machine Learning holds any in-person New York meetups (recent and upcoming listed events are online-only; the About text mentions both virtual and in-person but recent listings are virtual).
+- Confirm whether Data Umbrella holds any in-person New York events (recent listed events are online-only speaker series and workshops; the About text organizes online speaker series).
+- Confirm whether New York R User Group has resumed in-person meetups (last listed events were online: 2024-02-01, 2022-09-27; the About text's sponsorship line is historical).
+- Confirm whether NYC PyLadies has resumed in-person meetups (last in-person event 2024-10-24 at ElasticSearch; the official site describes monthly events but none is listed within the 12 months before accessed_on).
+- Confirm whether Python for Quant Finance NYC has resumed any meetups (last listed events were 2016-2017; group retained as the standing NYC quant-relevant community signal).
+- Confirm whether R-Ladies New York has resumed in-person meetups (last in-person event 2025-06-16 at Cafe-Flor, 218 8th Ave; no event listed within the 12 months before accessed_on).
+- Confirm whether the 40-seat configuration can be extended to comfortably seat 50, or whether the 50-standing mode is used for a talk format (capacity_40_49 flag expected).
+- Confirm whether the 50 seated theater-style configuration requires additional rooms beyond the Main Venue (FAQ: 'can host 50 seated (theater style) or 75 standing, when additional rooms are booked'; the Main Venue option alone is published as 'Up to 50 people' at 1,154 sq ft), and confirm the all-in cost of the chosen room configuration.
+- Confirm whether the 50-person 'up to 50 standing' space can be configured with comfortable seating for a talk format, or is standing-only at that count.
+- Confirm whether the 52-person mixed table/bench layout is comfortable for a seated talk format for 50 attendees.
+- Confirm whether The AI Collective New York chapter runs regular in-person events beyond the 2026-05-12 founders lunch (chapter page aicollective.com/chapters/new-york is a JS shell; the Luma event page is the visible organizer source).
+- Confirm whether UN Blockchain Week 2026 runs its final-day programming on a nearby fall weekend and whether any same-day flagship (e.g. a gala or AI × Blockchain Summit session) overlaps a 50-person community AI event (flag for Joe to weigh; the official page confirms the Sept 10-19 window and lists a Washington Elite Gala on Sept 18 in Times Square).
+- Confirm which branch meeting rooms seat 50+ attendees and their comfortable capacity (most branch rooms are smaller; Central Library spaces are larger).
+- Confirm which combination of the 13 spaces (largest single spaces seat 15-25; venue overview states up to 40 seats venue-wide) comfortably hosts 50 attendees as one event.
+- Confirm which room configuration (if any) hosts a single 50-person event.
+- Confirm which specific space (e.g., Ninth Floor Conference Room Suite) fits 50 attendees comfortably.
+- Confirm Wi-Fi availability (not stated in the hub listing).
+- Confirm Wi-Fi availability and quality in the event rooms (not explicitly stated on the our-spaces page).
+- Confirm Wi-Fi availability and reliability for a talk-heavy event (not stated in the hub listing).
+- Confirm Wi-Fi availability in the booked room.
+- Confirm WiMLDS NYC's late-2026 in-person event cadence and venues (recent in-person events were at BrainStation, 136 Crosby Street).
+- If Mainnet lands in the week of October 5-11, confirm whether side events spill onto a nearby fall weekend.
+- Messari Mainnet 2026 dates were unconfirmed at research time; treat calendar flags as informational for Joe, never eliminations.
+- No NYC city-slug match in references/trusted_venues.json (zero trusted-venue match, reported honestly as a provenance result).
+- NYC is a high-cost market: many listed venues are inquiry-only or above the USD 5,000 soft budget; all-in totals (taxes, fees, AV, F&B) remain verification questions until a written quote.
+- Obtain a written quote for a mid-size event space (50+ guests) on a Saturday; the site says outside entities are charged a rental fee but publishes no numeric rates.
+- This Sunday logistics flag is informational only; confirm whether any related Saturday setup or travel effects matter to a future event date.
+
+Full source list: see sources.md

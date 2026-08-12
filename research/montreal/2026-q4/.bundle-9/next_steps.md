@@ -165,11 +165,55 @@ Generated from the event plan for 2026-10-03
 
 ## Calendar Note (informational — never a date removal)
 
-- No high-severity calendar flags recorded; re-check the calendar within 7 days of presentation. Conflicts are awareness flags only.
+- Related-event opportunity/relevance to review before confirming the date: ALL IN 2026 — Canada's Largest AI and Tech Event, MTL connect 2026 — Montreal Digital Week (8th edition), ICBC 2026 — International Conference on Blockchain and Cryptocurrencies (Montreal-titled academic aggregator listing), Women in Tech Montreal 2026.
+- Major-city logistics to verify before confirming the date: 2026 UCI Road World Championships (Montréal).
+- Joe decides all date conflicts himself; calendar flags never remove the date automatically.
+
+## Community Verification (manual review)
+
+- AI ML Montreal Meetup Group (independent) — activity: active
+  - Verify: Confirm AI ML Montreal Meetup Group's late-2026 event schedule and venues (recent events were at Café 8oz. Chez l'Éditeur - Villeray and Grande Bibliothèque - BAnQ) and whether the group's About 'AI Innovators Guild' branding indicates a rebranded community.
+- AI Salon Montreal (AI Salon) — activity: active
+  - Verify: Confirm AI Salon Montreal's late-2026 in-person event dates and venues (the March 2026 edition was at CRIM offices, 405 Avenue Ogilvy, with 226 attending) and whether the chapter offers a sponsorship or co-hosting route (its event pages acknowledge sponsors but show no application-to-sponsor language).
+- AI Tinkerers Montreal (AI Tinkerers) — activity: active
+  - Verify: Confirm AI Tinkerers Montreal's late-2026 in-person demo-night schedule and typical venue (recent events were hosted at sponsor venues such as Ubisoft La Forge, Ateko, Shopify, and LightSpeed, which are not fixed on the chapter page).
+- Bitcoin Bay Montréal (independent) — activity: active
+  - Verify: Confirm Bitcoin Bay Montréal's late-2026 event schedule and venues (recent events were at D3 Innovation Center, 1250 Guy St Suite #600) and whether attendance is free (the upcoming August event requests a symbolic $15 contribution for the volunteer-run Human IP initiative).
+- Bitcoin Montreal (independent) — activity: active
+  - Verify: Confirm Bitcoin Montreal's late-2026 event schedule and venues (recent events were at Le 1000 de la Gauchetiere and Le Bon Vieux Temps) and whether the group offers a sponsorship or co-hosting route.
+- Data Drinks Montreal (independent) — activity: active
+  - Verify: Confirm Data Drinks Montreal's monthly meetup cadence and venues (recurring venue is Bar Bisou Bisou, 416 Rue Saint-Vincent) and whether RSVPs are free (page states free RSVP, limited spots).
+- GDG Cloud Montreal (Google Developer Groups) — activity: active
+  - Verify: Confirm GDG Cloud Montreal's late-2026 local event schedule and venues (several listed past events are partner/other-chapter events such as GDG Cloud Southlake and GDG Windsor) and the chapter's sponsorship/co-hosting process.
+- GDG Montreal (Google Developer Groups) — activity: active
+  - Verify: Confirm GDG Montreal's late-2026 event calendar and venues (no upcoming events were listed at access time) and whether the chapter offers a sponsorship or co-hosting process for a community AI event.
+- Global AI Montreal (Global AI Community) — activity: active
+  - Verify: Confirm Global AI Montreal's late-2026 in-person event schedule and venues (no upcoming events were listed at access time; the March 2026 meetup was at BHive Cafe) and the chapter's current organizer contact route.
+- McGill Artificial Intelligence Society (MAIS) (McGill University) — activity: active
+  - Verify: Confirm MAIS's late-2026 public event schedule and whether its hackathon/learnathon/project-fair events are open beyond McGill students (the club's own site invites sponsorship and partnership; the listed contact is an email, not recorded per contact policy).
+  - Co-host openness: assess the own-page phrase manually before any partnership discussion.
+- Montreal AI Night (independent) — activity: active
+  - Verify: Confirm Montreal AI Night's late-2026 edition dates, venues, and whether attendance is free (editions #2 and #5 were at Université de Montréal Campus MIL; edition #5 is themed 'Women Shaping the Future With AI').
+- Montreal Python (Python Software Foundation) — activity: active
+  - Verify: Confirm Montréal-Python's late-2026 in-person meeting schedule and venues (recent events were at Saint Patrick Square and NAD), and whether the official site montrealpython.org is functional again (it served a misconfigured Odoo page — /web/database/selector — at access time).
+- PyData Montreal (PyData) — activity: active
+  - Verify: Confirm PyData Montreal's late-2026 in-person meetup schedule and venues (recent in-person events were at Moov AI and Potloc) and whether the group's own page offers a sponsorship or co-hosting route (the group page shows no such invitation; the PyData network-level sponsor page is not a chapter invitation).
+- UdeM AI (UdeMAI) (Université de Montréal) — activity: intermittent
+  - Verify: Confirm UdeMAI's current meeting schedule and 2026 activity (its own French page is undated with a © 2023 footer; a cross-referenced Montreal AI Undergraduate Project Fair on 2026-04-08 at MILA was co-hosted with MAIS per MAIS's English events page) and whether meetings are open to non-UdeM participants.
+- Ethereum Blockchain Montreal 2.0 (ETHMontreal) (independent) — activity: dormant
+  - Verify: Confirm whether Ethereum Blockchain Montreal has resumed events (About states 'at least once a month' but the last listed event was May 2020; the ethmontreal.com companion site is a static historical page).
+- Montreal Machine Learning (independent) — activity: dormant — contact: [Montreal Machine Learning companion site (montrealml.dev, linked from group page)](https://www.montrealml.dev/)
+  - Verify: Confirm whether Montreal Machine Learning has resumed in-person events since 2020 (last listed event was the Study Group on 2020-03-08; companion site montrealml.dev last article is from 2019).
+- MTL Data (independent) — activity: dormant
+  - Verify: Confirm whether MTL Data has resumed monthly meetups (About describes monthly meetups, but the last listed in-person event was 'Real-World AI: Development to Deployment' on 2024-04-17).
+- R-Ladies Montreal (R-Ladies) — activity: dormant
+  - Verify: Confirm R-Ladies Montreal's current activity (chapter page update March 2025 said a survey would gauge interest; last in-person event was February 2024 and the last listed event was a virtual meetup in June 2025) and whether in-person events will resume.
+- WiMLDS Montreal (WiMLDS) — activity: dormant
+  - Verify: Confirm whether WiMLDS Montreal has resumed events (last listed events were online in November 2020 and in-person in November 2019) and whether in-person presence will return.
 
 ## Deferred to Run B (after venue selection)
 
-- Speaker research, community outreach, trusted-network matching, and co-host planning are deferred to Run B — no speaker or community outreach happens in Run A.
+- Speaker research, trusted-network matching, and co-host planning are deferred to Run B — no speaker or co-host outreach happens in Run A. Community research is completed in Run A.
 
 ## Verification Checklist
 

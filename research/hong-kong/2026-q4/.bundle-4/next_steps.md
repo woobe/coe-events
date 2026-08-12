@@ -147,11 +147,53 @@ Generated from the event plan for 2026-09-26
 
 ## Calendar Note (informational — never a date removal)
 
-- High-severity flags Joe should consider before confirming the date: Sun Hung Kai Properties Hong Kong Cyclothon 2026. Joe decides all date conflicts himself.
+- Related-event opportunity/relevance to review before confirming the date: Hong Kong FinTech Week x StartmeupHK Festival 2026.
+- Major-city logistics to verify before confirming the date: Sun Hung Kai Properties Hong Kong Cyclothon 2026, Hong Kong Wine & Dine Festival 2026, Business of Design Week (BODW) 2026 Summit, Clockenflap Music & Arts Festival 2026.
+- Joe decides all date conflicts himself; calendar flags never remove the date automatically.
+
+## Community Verification (manual review)
+
+- AI Tinkerers Hong Kong (AI Tinkerers) — activity: active
+  - Verify: Confirm the AI Tinkerers Hong Kong typical venue rotation and whether the August 31, 2026 meetup is open to external builders who are not yet screened members.
+- AWS User Group Hong Kong (AWS UGHK) (AWS User Group Community) — activity: active
+  - Verify: Confirm the AWS UGHK late-2026 meetup schedule and whether AI/ML-focused sessions continue at the Tower 535 venue.
+- Data Science & Generative AI Hong Kong (independent) — activity: active
+  - Verify: Confirm whether the group's late-2026 meetups remain in-person at 300 Hennessy Rd, Wan Chai and open to non-paying attendees (the upcoming 2026-08-29 workshop is a paid event).
+- GDG Hong Kong (Google Developer Groups) — activity: active
+  - Verify: Confirm whether GDG Hong Kong's AI Paper Reading Club and AI sessions continue in person in late 2026 and the typical venue rotation.
+- Global AI Hong Kong (Global AI Community) — activity: active
+  - Verify: Confirm whether Global AI Hong Kong holds in-person events in late 2026 beyond the 2026-04-11 AgentCon (recent AgentCamp events were online/hybrid).
+- Hong Kong Ethereum Community Hub (Hong Kong Ethereum Community Hub) — activity: active
+  - Verify: Confirm the HK Ethereum Community Hub's regular event cadence and venue for late 2026 (the hub opened 2026-04-21; no further dated events are listed).
+- Hong Kong Machine Learning Meetup (HKML) (independent) — activity: active — contact: [HKML archives site (hkml.ai, linked from group page)](https://www.hkml.ai)
+  - Verify: Confirm the HKML sponsorship process and the best public route for a sponsor/co-host proposal (About text invites sponsors and points to LinkedIn).
+  - Co-host openness: assess the own-page phrase manually before any partnership discussion.
+- Hong Kong Python User Group (HKPUG) (independent) — activity: active — contact: [PyCon Hong Kong website (pycon.hk, linked from group page)](https://pycon.hk)
+  - Verify: Confirm HKPUG's typical late-2026 venue rotation (recent meetups at CityU and PolyU) and whether non-members are welcome.
+- Open Source Hong Kong (OSHK) (Open Source Hong Kong) — activity: active — contact: [Open Source Hong Kong website (own site)](https://opensource.hk)
+  - Verify: Confirm the OSHK meetup cadence and venue rotation for late 2026 (recent meetups at CityU and PolyU) and whether AI/ML topics continue to be covered.
+- PyData Hong Kong (PyData) — activity: active
+  - Verify: Confirm whether PyData Hong Kong plans in-person meetups in late 2026 (most recent local in-person meetup 2025-12-16; no upcoming events listed on the group page).
+- Women in Web3 Hong Kong (WiW3 HK) (Women in Web3) — activity: active
+  - Verify: Confirm whether Women in Web3 Hong Kong runs further in-person events in late 2026 and the best public contact route (their site womeninweb3hk.com is a JS shell; Luma has a contact-host form).
+- Advanced AI Concepts-Hong Kong (independent) — activity: intermittent
+  - Verify: Confirm whether Advanced AI Concepts-Hong Kong has any in-person Hong Kong presence beyond its online classes (all listed upcoming events are online).
+- AI Builders Hong Kong (AI Builders) — activity: intermittent
+  - Verify: Confirm whether AI Builders Hong Kong holds further in-person meetups after the 2026-08-18 hackathon and whether the group is open beyond Tencent Cloud-sponsored events.
+- Global Women in AI Hong Kong Chapter (GWAI HK) (Global Women in AI) — activity: intermittent
+  - Verify: Confirm whether the GWAI Hong Kong Chapter has a standing events calendar and contact route for late 2026 (only the 2026-07-09 launch is listed).
+- R programming hub (R 程式交流組) (independent) — activity: intermittent
+  - Verify: Confirm whether the R programming hub plans further R/data-science meetups in late 2026 (one paid tutorial event 2026-05-31 is listed).
+- 852Web3 (852Web3) — activity: dormant
+  - Verify: Confirm whether 852Web3 currently runs in-person Hong Kong web3 community events (the official site lists no events since July 2023; LinkedIn claims ongoing media/ecosystem activity).
+- Artificial Intelligence Society of Hong Kong (AISHK) (independent) — activity: dormant — contact: [Artificial Intelligence Society of Hong Kong website (aisociety.hk, linked from group page)](https://aisociety.hk)
+  - Verify: Confirm whether the Artificial Intelligence Society of Hong Kong has resumed in-person events (last listed 2024-04-19 on Meetup; official site shows no upcoming events).
+- Hong Kong Data Science Society (HKDSS) (Hong Kong Data Science Society) — activity: dormant — contact: [Hong Kong Data Science Society website (hkdss.org, linked from group page)](https://hkdss.org)
+  - Verify: Confirm whether the Hong Kong Data Science Society has resumed any data-science events (last listed Meetup event 2018; official site events end 2019).
 
 ## Deferred to Run B (after venue selection)
 
-- Speaker research, community outreach, trusted-network matching, and co-host planning are deferred to Run B — no speaker or community outreach happens in Run A.
+- Speaker research, trusted-network matching, and co-host planning are deferred to Run B — no speaker or co-host outreach happens in Run A. Community research is completed in Run A.
 
 ## Verification Checklist
 
