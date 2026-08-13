@@ -1,0 +1,31 @@
+{
+  "city_slug": "geneva-ch",
+  "city_name": "Geneva",
+  "country": "Switzerland",
+  "target_date": "2026-09-26",
+  "date_window": "2026-09-19 to 2026-10-31",
+  "target_attendance": 50,
+  "currency": "USD",
+  "currency_assumptions": [
+    "Budget/scoring currency is USD; venue-local costs are recorded in CHF (cost_local_amount/cost_local_currency CHF).",
+    "USD-equivalent conversion basis for every converted CHF amount: ECB euro foreign exchange reference rate dated 2026-08-13 (EUR 1 = USD 1.1534; EUR 1 = CHF 0.9373), fetched 2026-08-13 from https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml — derived 1 CHF = USD 1.230556 (USD per CHF = 1.1534 / 0.9373). Every venue rate_estimate_note records this dated basis. No FX rate is invented; where no dated conversion basis exists the USD equivalent stays null with a question."
+  ],
+  "workflow_phase": "venue",
+  "budget_usd": 5000.0,
+  "event_duration_hours": 8,
+  "decision_note": "technical placeholder for pipeline integrity; Joe decides the date.",
+  "research_completed_on": "2026-08-13",
+  "open_questions": [
+    "Event window: 09:00-17:00 (8 hours), per the locked plan.",
+    "Calendar-awareness research coverage is 2026-09-15 through 2026-10-31 and is informational only; no calendar record is an elimination, tier input, or date recommendation.",
+    "target_date 2026-09-26 is a neutral technical placeholder required by score/bundle/summary integrity; it is never a recommendation and no output may present it as one.",
+    "Venue open question: most Geneva hotel and convention venues (Palexpo meeting rooms, Hotel N'vY, Warwick Geneva, Mövenpick Hotel & Casino, CICG, BFM) are inquiry-only with no published rates; written quotes are required before any cost claim above published-rate or estimated-from-rate status. Impact Hub Geneva and the Ville de Genève municipal Salle communale de Plainpalais publish rates on their own pages and are retained as scored candidates.",
+    "Impact Hub Geneva (ih-038) is a Tier-1 trusted resolver match and publishes Grand Salon/Petit Salon rates on its own spaces page; its stated reception hours are Monday-Friday 9h-19h, so Saturday event availability and full-day booking terms are unconfirmed and remain verification questions.",
+    "Community-research open question: no PyData Geneva chapter exists (the nearest PyData group is PyData Lausanne, ~60 km away); the Genève R User Group Meetup page returned 'Group not found' at fetch time; no standing Geneva quant community page with observed activity was found in this pass; Crypto Valley (Zug) and Swiss AI (swissai.ch, primarily German-speaking Switzerland) are adjacent ecosystem context, not Geneva-local community records — verify whether newer Geneva web3/quant groups should be added.",
+    "FX conversion basis gap: the ECB 2026-08-13 reference rate is used for all USD equivalents in this package; it is a dated published basis but is not a live market rate and does not predict the 2026 Q4 rate. Re-confirm the conversion basis at booking time."
+  ],
+  "recommendation": {
+    "selected_venue": null,
+    "rationale": "Run A evidence package only. Venue selection deferred: a later deterministic pipeline card scores venues and assembles the venue-phase bundle; Joe selects from eligible/shortlist_ready results. No date recommendation is made."
+  }
+}

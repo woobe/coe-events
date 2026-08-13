@@ -1,0 +1,174 @@
+[
+  {
+    "group_name": "AI Tinkerers Geneva",
+    "network": "AI Tinkerers",
+    "city_slug": "geneva-ch",
+    "focus_tags": [
+      "ai",
+      "machine_learning"
+    ],
+    "activity_status": "active",
+    "cohost_open": false,
+    "cohost_evidence_phrase": null,
+    "contact_info": null,
+    "member_size_public": null,
+    "cadence": "Irregular hands-on builder meetups (3-hour format with two sets of lightning demos per the chapter page); inaugural Geneva meetup held May 13, 2026 at SDG Solution Space; past events in the region at Lausanne-area venues (Logitech, EPFL, UBS, AXA per the inaugural page)",
+    "typical_venue": "SDG Solution Space, Geneva (inaugural meetup); Lausanne-area venues for earlier regional editions",
+    "source_url": "https://geneva.aitinkerers.org/",
+    "source_title": "AI Tinkerers Geneva — AI Events in Geneva (official chapter page): screened, demo-first, no-pitch AI builder meetups; organizers Ilia & Sajad; part of the 252-city AI Tinkerers network",
+    "accessed_on": "2026-08-13",
+    "needs_human_verify": true,
+    "verification_questions": [
+      "Confirm AI Tinkerers Geneva's fall 2026 in-person meetup schedule and venues (the inaugural Geneva meetup was May 13, 2026; the chapter page advertises the 3-hour demo format but the /events subpage returned HTTP 403 to direct fetch on 2026-08-13).",
+      "Confirm whether the chapter is open to co-hosting or venue-partner arrangements (no sponsorship/venue-partner page content could be fetched; the global AI Tinkerers network has a venue-partner program but the Geneva chapter page itself was not verified)."
+    ],
+    "evidence": {
+      "observed_facts": "Official chapter page geneva.aitinkerers.org (fetched 2026-08-13) identifies 'AI Tinkerers - Geneva' with organizers Ilia & Sajad, states the Geneva chapter is part of a 252-city global network with 122,000+ members, and describes the chapter: 'AI Tinkerers Geneva is screened, demo-first, and no-pitch. The goal is a room of people actively building AI systems...' and 'A typical AI Tinkerers Geneva meetup runs about 3 hours with two sets of lightning demos (5 minutes each), separated by a networking break. Every demo must show running code.' The inaugural meetup page (geneva.aitinkerers.org/p/ai-tinkerers-geneva-inaugural-meetup-may-2026, indexed snippet fetched 2026-08-13) confirms 'AI Tinkerers Geneva Inaugural Meetup - May 2026' and notes 'Our past events in Lausanne @Logitech, EPFL, UBS & AXA'. Geneva Network of Innovators page ge-ni.ch/ai-tinkerers-meetup (fetched 2026-08-13) confirms the inaugural Geneva meetup took place Wednesday 13 May 2026 at SDG Solution Space, co-organized with AI Tinkerers, Bengoo AI and Young AI Leaders.",
+      "inference": "AI Tinkerers Geneva is an active in-person AI-builder community with a May 2026 Geneva inaugural meetup and a documented 3-hour demo format; co-host openness is not evidenced from the chapter's own page in this pass (subpages 403 to direct fetch), so cohost_open stays false with a verification question."
+    },
+    "uncertainty_notes": "The chapter's /events subpage returned HTTP 403 (WAF) to direct fetch on 2026-08-13, so the fall 2026 schedule and any sponsorship/venue-partner page could not be verified; member count is not published on the chapter page."
+  },
+  {
+    "group_name": "Geneva AI (Mindstone)",
+    "network": "Mindstone AI Community",
+    "city_slug": "geneva-ch",
+    "focus_tags": [
+      "ai"
+    ],
+    "activity_status": "intermittent",
+    "cohost_open": false,
+    "cohost_evidence_phrase": null,
+    "contact_info": null,
+    "member_size_public": null,
+    "cadence": "Irregular practical-AI meetups (Mindstone Geneva AI Meetup at Voisins Plainpalais with a February 2025 follow-up newsletter; a 'Geneva AI November 28' event page at BIRD - The Playground, 1214 Vernier shows 'Unavailable' at fetch)",
+    "typical_venue": "Voisins Plainpalais, Geneva (Feb 2025); BIRD - The Playground, Chemin de Blandonnet 8, 1214 Vernier (November event page)",
+    "source_url": "https://community.mindstone.com/events/geneva_ai_november_28",
+    "source_title": "Geneva AI November 28 — Mindstone AI Community event page (organizer-owned community.mindstone.com): 'Welcome to the biggest Practical AI meetup in Geneva!', BIRD - The Playground, Chemin de Blandonnet 8, 1214 Vernier, free, limited to 200 spots",
+    "accessed_on": "2026-08-13",
+    "needs_human_verify": true,
+    "verification_questions": [
+      "Confirm the date and status of the most recent Geneva AI in-person meetup: the 'Geneva AI November 28' event page shows 'Unavailable' at fetch, and the Mindstone newsletter confirms a February 2025 meetup at Voisins Plainpalais; the 2026 cadence is unconfirmed.",
+      "Confirm whether Geneva AI (Mindstone) is open to co-hosting or venue-partner arrangements (no explicit sponsorship/partnership language observed on the fetched event page)."
+    ],
+    "evidence": {
+      "observed_facts": "Organizer-owned Mindstone event page community.mindstone.com/events/geneva_ai_november_28 (fetched 2026-08-13) describes 'Geneva AI November 28' at BIRD - The Playground, Chemin de Blandonnet 8, 1214 Vernier as 'the biggest Practical AI meetup in Geneva!', free, limited to 200 spots, with an agenda (doors open, 'What I learned from building with LLMs', 'How to be more productive using AI', 'The Future of Work with AI', pizza/drinks/networking); the page shows 'Past Event'/'Unavailable' state at fetch. The official Mindstone newsletter (mindstone.beehiiv.com/p/geneva-ai-meetup-jan25-follow-up, fetched 2026-08-13) confirms the Mindstone Geneva AI Meetup at Voisins Plainpalais in early 2025 with recorded talks and a follow-up Geneva event on February 27, 2025.",
+      "inference": "Geneva AI (Mindstone) is a practical-AI meetup community with evidenced 2025 in-person events in Geneva; current 2026 in-person activity is not evidenced, so it is honestly labeled intermittent pending confirmation of the 2026 schedule."
+    },
+    "uncertainty_notes": "The November 28 event page has no year in its slug and shows 'Unavailable'; only the February 2025 newsletter gives a concrete dated Geneva meetup. No member count or public contact URL is published on the fetched pages."
+  },
+  {
+    "group_name": "Decentral House — Community Hub",
+    "network": "Decentral House",
+    "city_slug": "geneva-ch",
+    "focus_tags": [
+      "ai",
+      "web3"
+    ],
+    "activity_status": "active",
+    "cohost_open": false,
+    "cohost_evidence_phrase": null,
+    "contact_info": null,
+    "member_size_public": 100,
+    "cadence": "Full events calendar (homepage: '100+ founders, a full events calendar'; hosts the Onchain Leaders Gathering, workshops, hackathons and launch events)",
+    "typical_venue": "Decentral House, Lancy-Pont-Rouge, Geneva (main hall up to 120 guests)",
+    "source_url": "https://decentral.house/",
+    "source_title": "Decentral House — Geneva's Innovation Hub for AI · FinTech · Web3 (official decentral.house): private hub in Lancy-Pont-Rouge, 100+ founders, community hub, co-working & private offices, events & venue rental, backed by STORM Partners",
+    "accessed_on": "2026-08-13",
+    "needs_human_verify": true,
+    "verification_questions": [
+      "Confirm Decentral House's current 2026 community-event cadence and open-event formats (the site advertises a full events calendar and the Onchain Leaders Gathering; the Luma calendar luma.com/DecentralHouse lists Web3 events in Geneva).",
+      "Confirm whether the hub is open to co-hosting an external community AI/Web3 event (the events page advertises venue rental and 'preferential rates' for members but no explicit external co-host partnership language)."
+    ],
+    "evidence": {
+      "observed_facts": "Official decentral.house homepage (fetched 2026-08-13) describes Decentral House as 'Geneva's innovation hub for AI, FinTech and Web3 builders. A private hub for AI, FinTech and Web3 builders in Lancy-Pont-Rouge: 100+ founders, a full events calendar, and a floor away from Switzerland's banks, investors and regulators. Backed by STORM Partners.' The events page (decentral.house/events, fetched 2026-08-13) states 'We host the Onchain Leaders Gathering, we can host yours', lists event capabilities (Main Hall up to 120 guests, boardroom, AV & production support, catering & hospitality), and positions the venue for Web3 & Crypto projects and community & partners. The Luma calendar (luma.com/DecentralHouse) lists Web3 events in Geneva per its page description.",
+      "inference": "Decentral House is an active Geneva AI/FinTech/Web3 community hub with a recurring events calendar and a built-in audience of founders, investors and institutions; co-host openness is not explicitly evidenced on its own pages, so cohost_open stays false with a verification question."
+    },
+    "uncertainty_notes": "member_size_public uses the '100+' founders figure displayed on the official homepage (stored as 100); no exact member count is published. contact@decentral.house appears on the contact page but email is not recorded per contact policy; no public HTTPS contact URL was found."
+  },
+  {
+    "group_name": "Open Geneva",
+    "network": "independent",
+    "city_slug": "geneva-ch",
+    "focus_tags": [
+      "mixed"
+    ],
+    "activity_status": "active",
+    "cohost_open": false,
+    "cohost_evidence_phrase": null,
+    "contact_info": null,
+    "member_size_public": 6000,
+    "cadence": "Hackathons and collaborative open-innovation events since 2018 (official site: 140+ hackathons and events, 1,600+ solutions, 1,400+ certificates delivered)",
+    "typical_venue": "Geneva-area venues (Campus Biotech, SDG Solution Space, municipal and partner spaces)",
+    "source_url": "https://opengeneva.org/",
+    "source_title": "Open Geneva (official opengeneva.org): nonprofit association based in Geneva mobilizing collective intelligence for the common good through UN-recognized hackathons; community of 6,000+",
+    "accessed_on": "2026-08-13",
+    "needs_human_verify": true,
+    "verification_questions": [
+      "Confirm Open Geneva's 2026 hackathon/event calendar and which events are open to the broader AI/data community (the official site confirms the association's activity since 2018; the events page lists current hackathons).",
+      "Confirm whether Open Geneva is open to co-hosting an external community AI event (the site describes a partner ecosystem but no explicit external co-host application language was observed)."
+    ],
+    "evidence": {
+      "observed_facts": "Official opengeneva.org (fetched 2026-08-13) states Open Geneva is 'une association à but non lucratif reconnue d'intérêt public, basée à Genève, dédiée à mobiliser l'intelligence collective pour le bien commun', bringing together 'une communauté de plus de 6000 passionnés et un écosystème divers de partenaires genevois et internationaux'; its activities include the open-innovation festival, hackathons and collaborative events, digitalization and co-creation resources, and research/certification; results since 2018: 140+ hackathons and events, 1,600+ innovative solutions, 6,000+ community members, 1,400+ certificates delivered; hackathons are 'reconnus par les Nations Unies'.",
+      "inference": "Open Geneva is an active, sizable Geneva open-innovation/hackathon community whose audience overlaps the AI/data/tech community targeted by a DeAI event; co-host openness is not explicitly evidenced, so cohost_open stays false with a verification question."
+    },
+    "uncertainty_notes": "member_size_public uses the '6,000+' community figure displayed on the official homepage (stored as 6000). No public HTTPS contact URL is displayed on the homepage; newsletter signup and contact forms are the visible routes (not recorded per contact policy)."
+  },
+  {
+    "group_name": "GDG Geneva",
+    "network": "Google Developer Groups",
+    "city_slug": "geneva-ch",
+    "focus_tags": [
+      "ai",
+      "data_science"
+    ],
+    "activity_status": "intermittent",
+    "cohost_open": false,
+    "cohost_evidence_phrase": null,
+    "contact_info": null,
+    "member_size_public": 55,
+    "cadence": "Group About describes Google developer programming 'with particular focus on AI and Data products'; the Meetup page listed 'No upcoming events' at fetch time (2026-08-13)",
+    "typical_venue": "Geneva (venue varies; group listed as Genève, CH)",
+    "source_url": "https://www.meetup.com/gdg-geneva/",
+    "source_title": "GDG Geneva — Meetup group page (official group page): 55 members, Genève CH, independent Google Developer Group focused on AI and Data products",
+    "accessed_on": "2026-08-13",
+    "needs_human_verify": true,
+    "verification_questions": [
+      "Confirm GDG Geneva's 2026 in-person event schedule: the Meetup page showed 'No upcoming events' on 2026-08-13, so current activity is unconfirmed.",
+      "Assess whether the small (55-member) group's AI/Data-focused programming is relevant to a DeAI community audience and whether it is open to co-hosting (no partnership language observed on the group page)."
+    ],
+    "evidence": {
+      "observed_facts": "Official Meetup group page meetup.com/gdg-geneva (fetched 2026-08-13) states GDG Geneva has 55 members, is based in Genève CH, with About text: 'GDG Geneva is your first step into the Google Developer world. We are passionate and excited about everything Google offers to developers, from Android to Cloud with particular focus on AI and Data products. Join us if you want to be part of a thrilling group that wants to share knowledge, ideas and experiences.' The page includes the standard GDG disclaimer that the group is independent of Google. The Events tab showed 'No upcoming events' at fetch time.",
+      "inference": "GDG Geneva is a small Google Developer Group focused on AI and Data products; with no upcoming events visible and only 55 members, current in-person activity is not evidenced, so it is honestly labeled intermittent pending confirmation."
+    },
+    "uncertainty_notes": "member_size_public uses the 55-member count displayed on the Meetup page. No public contact URL is displayed on the group page (organizer 'Message' button only)."
+  },
+  {
+    "group_name": "Geneva Network of Innovators (ge-ni)",
+    "network": "Geneva Network of Innovators",
+    "city_slug": "geneva-ch",
+    "focus_tags": [
+      "ai",
+      "mixed"
+    ],
+    "activity_status": "active",
+    "cohost_open": true,
+    "cohost_evidence_phrase": "Official ge-ni.ch meetup invitation page states: 'Geneva Macro Labs and the Geneva Network of Innovators are happy to invite you to the first AI Tinkerers Geneva Meetup ... The event is co-organised with the AI Tinkerers, Bengoo AI, and the Young AI leaders' — explicit own-page co-organization/collaboration language.",
+    "contact_info": null,
+    "member_size_public": null,
+    "cadence": "Flagship initiatives and community meetups connecting International Geneva innovators (co-organized the inaugural AI Tinkerers Geneva Meetup on May 13, 2026; site describes annual flagship initiatives)",
+    "typical_venue": "SDG Solution Space, Geneva (May 13, 2026 co-organized AI Tinkerers meetup)",
+    "source_url": "https://ge-ni.ch/ai-tinkerers-meetup/",
+    "source_title": "Geneva Network of Innovators — AI Tinkerers – Inaugural Geneva Meetup (official ge-ni.ch page): invitation to the first AI Tinkerers Geneva Meetup on Wednesday 13 May 2026 at SDG Solution Space, co-organised with AI Tinkerers, Bengoo AI and Young AI Leaders",
+    "accessed_on": "2026-08-13",
+    "needs_human_verify": true,
+    "verification_questions": [
+      "Confirm ge-ni's 2026-27 event cadence beyond the May 2026 AI Tinkerers co-organized meetup (the site describes an innovation network with annual flagship initiatives; no public events calendar was found on the fetched pages).",
+      "Confirm whether ge-ni would be open to co-hosting an external community AI event (its own page evidences co-organizing meetups with AI/tech partners, which is manual collaboration-openness evidence, not confirmation)."
+    ],
+    "evidence": {
+      "observed_facts": "Official ge-ni.ch AI Tinkerers meetup page (fetched 2026-08-13) states 'Geneva Macro Labs and the Geneva Network of Innovators are happy to invite you to the first AI Tinkerers Geneva Meetup featuring innovative AI demos and Q&A from our organizing partners. The event is co-organised with the AI Tinkerers, Bengoo AI, and the Young AI leaders' and places the event at SDG Solution Space from 17:30 on Wednesday 13 May. The ge-ni.ch homepage (fetched 2026-08-13) describes the network: 'Connecting innovators to power International Geneva', a collaborative framework that unites innovators across institutions, sectors and communities, with strategic goals including strengthening the innovation ecosystem and launching joint initiatives.",
+      "inference": "ge-ni is an active Geneva innovation network that evidences co-organizing AI meetups with partner communities on its own page; cohost_open true reflects that explicit collaboration language as a manual assessment lead, not a confirmed partnership."
+    },
+    "uncertainty_notes": "No member count is published. No public HTTPS contact URL is displayed on the fetched pages (a 'Contact Us' page exists but no direct contact link was captured on the same page). The network appears new/emerging; its long-term cadence is unconfirmed."
+  }
+]
