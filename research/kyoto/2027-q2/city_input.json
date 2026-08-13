@@ -1,0 +1,31 @@
+{
+  "city_slug": "kyoto-jp",
+  "city_name": "Kyoto",
+  "country": "Japan",
+  "target_date": "2027-04-03",
+  "date_window": "2027-04-03 to 2027-06-26",
+  "target_attendance": 50,
+  "currency": "USD",
+  "currency_assumptions": [
+    "Budget/scoring currency is USD; venue-local costs are recorded in JPY (cost_local_amount/cost_local_currency JPY).",
+    "USD-equivalent conversion basis for every converted JPY amount: ECB euro foreign exchange reference rate dated 2026-08-12 (EUR 1 = USD 1.1545; EUR 1 = JPY 183.67), fetched 2026-08-13 from https://www.ecb.europa.eu/stats/eurofxref/eurofxref-hist-90d.xml — derived USD 1 = JPY 159.0905, 1 JPY = USD 0.00628573. Every venue rate_estimate_note records this dated basis. No FX rate is invented; where no dated conversion basis exists the USD equivalent stays null with a question."
+  ],
+  "workflow_phase": "venue",
+  "budget_usd": 5000.0,
+  "event_duration_hours": 8,
+  "decision_note": "technical placeholder for pipeline integrity; Joe decides the date.",
+  "research_completed_on": "2026-08-13",
+  "open_questions": [
+    "Event window: 09:00-17:00 (8 hours), per the locked plan.",
+    "Calendar-awareness research coverage is 2027-03-15 through 2027-06-30 and is informational only; no calendar record is an elimination, tier input, or date recommendation.",
+    "target_date 2027-04-03 is a neutral technical placeholder required by score/bundle/summary integrity; it is never a recommendation and no output may present it as one.",
+    "Related-event open question: as of 2026-08-13 no 2027 Q2 Kyoto/Kansai AI/ML/data/web3/fintech/quant/DeAI/agent event has an official organizer page with published in-window dates (IVS 2027 not yet announced — its recent editions are early July in Kyoto, adjacent-Q3; ACL 2027 is August 17-22 in Kyoto, Q3; ETHTokyo 2026 is September; PyCon JP and PyCon Kansai run later in the year; MLPR 2026 was December 2026). This is an evidence gap as of the research date, not a false absence; the calendar should be re-checked closer to Q2 2027.",
+    "Venue open question: most Kyoto hotel/coworking event spaces are inquiry-only (no published rate); written quotes are required before any cost claim above published-rate or estimated-from-rate status. Impact Hub Kyoto published weekend event-space rates on its own page (fetched 2026-08-13) and is retained as a scored candidate, not just a seed.",
+    "Community-research open question: AI Tinkerers has no Kyoto or Osaka chapter (official all_cities list shows Tokyo as the only Japan chapter); no standing Kansai quant community page and no public Kyoto University student AI/ML club page with observed activity were found in this pass; web3 landscape beyond the Kyoto University Blockchain Research Center is thin on own-page activity evidence — verify whether newer groups should be added.",
+    "FX conversion basis gap: the ECB 2026-08-12 reference rate is used for all USD equivalents in this package; it is a dated published basis but is not a live market rate and does not predict the 2027 Q2 rate. Re-confirm the conversion basis at booking time."
+  ],
+  "recommendation": {
+    "selected_venue": null,
+    "rationale": "Run A evidence package only. Venue selection deferred: a later deterministic pipeline card scores venues and assembles the venue-phase bundle; Joe selects from eligible/shortlist_ready results. No date recommendation is made."
+  }
+}
