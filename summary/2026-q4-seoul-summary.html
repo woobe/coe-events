@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Decentralized AI Day - Seoul - Research - 2026 Q4</title>
+<style>
+/* plan-event venue matrix — inline CSS only. No external stylesheets,
+   fonts, images, or network requests are loaded at page-load time.
+   Source and booking URLs appear only as user-clicked anchors. */
+:root {
+  --ok: #1a7f37;
+  --warn: #9a6700;
+  --bad: #cf222e;
+  --ink: #1f2328;
+  --muted: #656d76;
+  --line: #d0d7de;
+  --bg: #ffffff;
+  --gold: #b8860b;
+  --silver: #6e7781;
+  --bronze: #a97142;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 1.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    Arial, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.45;
+}
+main { max-width: 72rem; margin: 0 auto; }
+h1 { font-size: 1.35rem; margin: 0 0 0.25rem; }
+.matrix-meta { color: var(--muted); font-size: 0.9rem; margin: 0 0 1rem; }
+.matrix-meta dl { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; margin: 0.5rem 0 0; }
+.matrix-meta dt { font-weight: 600; }
+.matrix-meta dd { margin: 0; }
+table { border-collapse: collapse; width: 100%; font-size: 0.9rem; }
+caption {
+  text-align: left; font-weight: 600; padding: 0.5rem 0;
+  color: var(--muted); caption-side: top;
+}
+th, td {
+  border: 1px solid var(--line);
+  padding: 0.45rem 0.55rem;
+  text-align: left;
+  vertical-align: top;
+}
+thead th {
+  background: #f6f8fa;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+}
+thead th[aria-sort]::after { content: ""; }
+thead th[aria-sort="ascending"]::after { content: " \2191"; }
+thead th[aria-sort="descending"]::after { content: " \2193"; }
+tbody tr.venue-row { cursor: pointer; }
+tbody tr.venue-row:focus-visible { outline: 2px solid var(--ink); outline-offset: -2px; }
+tbody tr.venue-row:hover { background: #f6f8fa; }
+tbody tr.venue-details td { background: #fbfcfd; color: var(--muted); }
+tbody tr.venue-details dl { margin: 0; display: grid; grid-template-columns: max-content 1fr; gap: 0.2rem 0.75rem; }
+tbody tr.venue-details dt { font-weight: 600; }
+tbody tr.venue-details dd { margin: 0; overflow-wrap: anywhere; }
+.tier-badge {
+  display: inline-block;
+  padding: 0.05rem 0.45rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+.tier-gold { background: var(--gold); }
+.tier-silver { background: var(--silver); }
+.tier-bronze { background: var(--bronze); }
+.sym { font-weight: 700; }
+.sym-ok { color: var(--ok); }
+.sym-warn { color: var(--warn); }
+.sym-bad { color: var(--bad); }
+.cost-over { color: var(--bad); font-weight: 600; }
+.flags { list-style: none; margin: 0; padding: 0; }
+.flags li::before { content: "\2022 "; color: var(--muted); }
+section.leads {
+  margin-top: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 0.6rem 0.8rem;
+  font-size: 0.9rem;
+}
+section.leads h2 { font-size: 0.95rem; margin: 0 0 0.3rem; }
+section.leads p { margin: 0.25rem 0; color: var(--muted); }
+section.leads ul { margin: 0.5rem 0 0; padding-left: 1.2rem; }
+section.leads li { margin: 0.3rem 0; }
+section.leads button.map-focus {
+  margin-left: 0.4rem;
+  padding: 0.1rem 0.5rem;
+  font-size: 0.78rem;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: #f6f8fa;
+  cursor: pointer;
+}
+tr.venue-row .map-highlight,
+section.leads li.map-highlight {
+  outline: 3px solid var(--gold);
+  outline-offset: 1px;
+}
+section.venue-map-section {
+  margin-top: 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 0.6rem 0.8rem;
+}
+section.venue-map-section h2 { font-size: 0.95rem; margin: 0 0 0.3rem; }
+section.venue-map-section > p { margin: 0.25rem 0; color: var(--muted); font-size: 0.85rem; }
+.venue-map-container {
+  height: 26rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  position: relative;
+  background: #eef0f2;
+}
+/* The wide 12-column matrix is kept usable inside a scoped horizontal
+   scroll container at EVERY viewport width (desktop >=641px AND narrow
+   screens) so it never widens the document: the wrapper takes the
+   content width while the table keeps its intrinsic width and scrolls
+   internally (overflow-x auto / contain semantics). This is the
+   desktop-overflow boundary — at 1280px a realistic wide matrix would
+   otherwise push document.scrollWidth past clientWidth (28px in the
+   Budapest rollout review). */
+.venue-matrix-scroll { overflow-x: auto; }
+@media (max-width: 640px) {
+  .venue-map-container { height: 20rem; }
+}
+.venue-map-note {
+  margin: 0;
+  padding: 0.75rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+.venue-map-attribution {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+.venue-map-popup { font-size: 0.85rem; }
+.venue-map-popup strong { display: block; margin-bottom: 0.15rem; }
+.venue-map-popup-cost { display: block; margin-bottom: 0.15rem; color: var(--muted); }
+.venue-map-marker { display: block; }
+.venue-map-marker-dot {
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.4);
+}
+.venue-map-marker:focus-visible .venue-map-marker-dot {
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
+}
+/* Related events and calendar flags — informational awareness section.
+   Native <details>/<summary> disclosure only; no JavaScript, no external
+   resources. Chips carry high-contrast text; long tokens wrap anywhere;
+   summaries wrap safely on narrow screens. */
+section.related-events {
+  margin-top: 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 0.6rem 0.8rem;
+}
+section.related-events h2 { font-size: 0.95rem; margin: 0 0 0.3rem; }
+section.related-events > p { margin: 0.25rem 0; color: var(--muted); font-size: 0.85rem; }
+.related-events-empty { font-style: italic; }
+.related-month { margin-top: 0.9rem; }
+.related-month h3 {
+  font-size: 0.9rem;
+  margin: 0 0 0.35rem;
+  padding-bottom: 0.2rem;
+  border-bottom: 1px solid var(--line);
+}
+.related-month-list { list-style: none; margin: 0; padding: 0; }
+.related-month-list > li { margin: 0.45rem 0; }
+.related-event {
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #fbfcfd;
+}
+.related-event summary {
+  cursor: pointer;
+  padding: 0.5rem 0.6rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.3rem 0.6rem;
+}
+.related-event summary::-webkit-details-marker { display: none; }
+.related-event summary::before { content: "\25B8  "; }
+.related-event[open] summary::before { content: "\25BE  "; }
+.related-event summary:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: -2px;
+}
+.related-event-name { font-weight: 600; }
+.related-event-dates { color: var(--muted); font-size: 0.85rem; }
+.chip {
+  display: inline-block;
+  padding: 0.05rem 0.45rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  border: 1px solid var(--line);
+  color: var(--ink);
+  background: #f6f8fa;
+}
+.chip-relevance { border-color: var(--warn); color: #7a5900; background: #fff8e6; }
+.chip-severity-high { border-color: var(--bad); color: var(--bad); background: #fff0f0; }
+.chip-severity-medium { border-color: var(--warn); color: #7a5900; background: #fff8e6; }
+.chip-severity-low { border-color: var(--ok); color: var(--ok); background: #f0fff4; }
+.chip-severity-none { border-color: var(--line); color: var(--muted); background: #f6f8fa; }
+.side-event-marker {
+  display: inline-block;
+  padding: 0.05rem 0.45rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #ffffff;
+  background: var(--ok);
+}
+.related-event-body { padding: 0 0.6rem 0.6rem; font-size: 0.85rem; color: var(--muted); }
+.related-event-body p { margin: 0.35rem 0; overflow-wrap: anywhere; }
+.related-event-questions { margin: 0.25rem 0 0; padding-left: 1.2rem; }
+.related-event-questions li { margin: 0.2rem 0; overflow-wrap: anywhere; }
+.related-event-evidence { margin-top: 0.5rem; padding-top: 0.4rem; border-top: 1px solid var(--line); }
+.related-event-evidence p { overflow-wrap: anywhere; }
+/* Local communities and collaboration map — v2.6 awareness section.
+   Native <details>/<summary> disclosure only; no JavaScript, no external
+   resources. Chips wrap safely on narrow screens; long tokens wrap
+   anywhere; the disclosure summary has a visible focus ring. */
+section.local-communities {
+  margin-top: 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 0.6rem 0.8rem;
+}
+section.local-communities h2 { font-size: 0.95rem; margin: 0 0 0.3rem; }
+section.local-communities > p { margin: 0.25rem 0; color: var(--muted); font-size: 0.85rem; }
+.local-communities-empty { font-style: italic; }
+details.local-community {
+  margin-top: 0.6rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #fbfcfd;
+}
+details.local-community summary {
+  cursor: pointer;
+  padding: 0.5rem 0.6rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.3rem 0.6rem;
+}
+details.local-community summary::-webkit-details-marker { display: none; }
+details.local-community summary::before { content: "\25B8  "; }
+details.local-community[open] summary::before { content: "\25BE  "; }
+details.local-community summary:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: -2px;
+}
+.local-community-name { font-weight: 600; }
+.local-community-network { color: var(--muted); font-size: 0.85rem; }
+.local-community-chip {
+  display: inline-block;
+  padding: 0.05rem 0.45rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  border: 1px solid var(--line);
+  color: var(--ink);
+  background: #f6f8fa;
+}
+.local-community-badge {
+  display: inline-block;
+  padding: 0.05rem 0.45rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #ffffff;
+  background: var(--ok);
+}
+.local-community-body { padding: 0 0.6rem 0.6rem; font-size: 0.85rem; color: var(--muted); }
+.local-community-body p { margin: 0.35rem 0; overflow-wrap: anywhere; }
+.local-community-questions { margin: 0.25rem 0 0; padding-left: 1.2rem; }
+.local-community-questions li { margin: 0.2rem 0; overflow-wrap: anywhere; }
+.local-community-evidence { margin-top: 0.5rem; padding-top: 0.4rem; border-top: 1px solid var(--line); }
+.local-community-evidence p { overflow-wrap: anywhere; }
+/* Other major events — v2.7 compact logistics-only awareness section.
+   Flat <article> list (no native disclosure, no chips, no side-event
+   marker); the fixed `Major city event` tag uses a distinct class so it
+   is never mistaken for a relevance/severity chip. Long tokens wrap
+   anywhere; the tag wraps safely on narrow screens. No JavaScript, no
+   external resources. */
+section.other-major-events {
+  margin-top: 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 0.6rem 0.8rem;
+}
+section.other-major-events h2 { font-size: 0.95rem; margin: 0 0 0.3rem; }
+section.other-major-events > p { margin: 0.25rem 0; color: var(--muted); font-size: 0.85rem; }
+.other-major-events-empty { font-style: italic; }
+.other-major-events-list { list-style: none; margin: 0; padding: 0; }
+.other-major-events-list > li { margin: 0.45rem 0; }
+article.major-other-event {
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #fbfcfd;
+  padding: 0.5rem 0.6rem;
+}
+article.major-other-event h3 {
+  font-size: 0.9rem;
+  margin: 0 0 0.25rem;
+  overflow-wrap: anywhere;
+}
+.major-other-event-dates { color: var(--muted); font-size: 0.85rem; margin: 0.2rem 0; }
+.major-other-event-tag {
+  display: inline-block;
+  padding: 0.05rem 0.45rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #ffffff;
+  background: var(--bronze);
+}
+.major-other-event-note { margin: 0.3rem 0; overflow-wrap: anywhere; }
+.major-other-event-source { margin: 0.25rem 0; overflow-wrap: anywhere; }
+.major-other-event-verify { margin: 0.25rem 0; overflow-wrap: anywhere; }
+section.compat-notice {
+  margin-top: 1.25rem;
+  border: 1px solid var(--warn);
+  border-radius: 6px;
+  padding: 0.5rem 0.8rem;
+  background: #fff8e6;
+  font-size: 0.85rem;
+}
+section.compat-notice p { margin: 0; }
+section.provenance {
+  margin-top: 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 0.6rem 0.8rem;
+  font-size: 0.8rem;
+  color: var(--muted);
+  background: #f6f8fa;
+  overflow-wrap: anywhere;
+}
+section.provenance h2 { font-size: 0.85rem; margin: 0 0 0.35rem; color: var(--ink); }
+section.provenance ul { margin: 0.25rem 0 0; padding-left: 1.2rem; }
+section.provenance li { margin: 0.2rem 0; }
+section.provenance code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
+    monospace;
+  font-size: 0.75rem;
+}
+footer.matrix-footer {
+  margin-top: 1.5rem;
+  color: var(--muted);
+  font-size: 0.8rem;
+  border-top: 1px solid var(--line);
+  padding-top: 0.5rem;
+}
+a { color: #0969da; }
+</style>
+</head>
+<body>
+<main>
+  <header class="matrix-header">
+    <h1>Decentralized AI Day - Seoul - Research - 2026 Q4</h1>
+<div class="matrix-meta">
+<p>Seoul (seoul-kr) — Run A: Venue research</p>
+<dl>
+<dt>Target attendance</dt><dd>50</dd>
+<dt>Soft budget</dt><dd>USD 5000</dd>
+</dl>
+</div>
+  </header>
+  <div class="venue-matrix-scroll">
+  <table id="venue-matrix">
+    <caption>Venue matrix — eligible (Gold) and shortlist-ready (Silver) venues; leads appear only in the always-visible non-selectable list below. Event-duration costs are shown for the selected duration.</caption>
+    <thead>
+      <tr>
+        <th data-sort="venue" aria-sort="none" scope="col">Venue</th>
+        <th data-sort="tier" aria-sort="none" scope="col">Tier</th>
+        <th data-sort="score" aria-sort="none" scope="col">Score</th>
+        <th data-sort="cost" aria-sort="none" scope="col">Cost USD</th>
+        <th data-sort="capacity" aria-sort="none" scope="col">Capacity</th>
+        <th data-sort="screen" aria-sort="none" scope="col">Screen</th>
+        <th data-sort="wifi" aria-sort="none" scope="col">Wi-Fi</th>
+        <th data-sort="catering" aria-sort="none" scope="col">Catering</th>
+        <th data-sort="recording" aria-sort="none" scope="col">Recording</th>
+        <th data-sort="window" aria-sort="none" scope="col">Event window</th>
+        <th data-sort="flags" aria-sort="none" scope="col">Flags</th>
+        <th data-sort="booking" aria-sort="none" scope="col">Booking link</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="venue-row" id="venue-row-0" tabindex="0" role="button" aria-expanded="false" aria-controls="venue-details-0" data-sort-venue="Mongsang Space (Mullae) — Main Hall" data-sort-tier="1" data-sort-score="0.6876" data-sort-cost="561.2" data-sort-capacity="50" data-sort-screen="1" data-sort-wifi="1" data-sort-catering="3" data-sort-recording="1" data-sort-window="1" data-sort-flags="screen_unknown, wifi_unknown, availability_unconfirmed, final_quote_required, duration_unconfirmed, map_location_unknown, stale_evidence" data-sort-booking="yes"><td>Mongsang Space (Mullae) — Main Hall</td><td><span class="tier-badge tier-silver">Silver</span></td><td>0.6876</td><td title="USD 561.2">USD 561.2</td><td>50</td><td><span class="sym sym-warn" title="unknown">? unknown</span></td><td><span class="sym sym-warn" title="unknown">? unknown</span></td><td><span class="sym sym-ok" title="in_house_available">✓ in_house_available</span></td><td><span class="sym sym-warn" title="unknown">? unknown</span></td><td><span class="sym sym-warn" title="window unknown; selected duration 8h">? unknown</span></td><td><ul class="flags"><li>screen_unknown</li><li>wifi_unknown</li><li>availability_unconfirmed</li><li>final_quote_required</li><li>duration_unconfirmed</li><li>map_location_unknown</li><li>stale_evidence</li></ul></td><td><a href="https://www.mongsang-space.com/pricing">book / contact</a></td></tr>
+<tr class="venue-details" id="venue-details-0" hidden><td colspan="12"><dl><dt>Source</dt><dd><a href="https://www.mongsang-space.com/pricing">몽상가들 스페이스 — 대관 요금 안내 (official Mongsang Space pricing page, mongsang-space.com, fetched 2026-08-15): base KRW 88,000/h weekday (Mon-Thu), KRW 99,000/h weekend (Fri/holidays incl.); max 50 pax with prior inquiry; catering from KRW 10,000/person; setup fee KRW 50,000/100,000; address 서울 영등포구 문래북로8 에이스NS타워 B102호</a> (accessed 2026-08-15)</dd><dt>Booking</dt><dd><a href="https://www.mongsang-space.com/pricing">book / contact</a></dd><dt>Tier reasons</dt><dd><em>none</em></dd><dt>Flags</dt><dd><ul class="flags"><li>screen_unknown</li><li>wifi_unknown</li><li>availability_unconfirmed</li><li>final_quote_required</li><li>duration_unconfirmed</li><li>map_location_unknown</li><li>stale_evidence</li></ul></dd><dt>Event window</dt><dd>unknown</dd><dt>Coordinates</dt><dd>unknown — no marker is fabricated for this venue</dd><dt>Verification questions</dt><dd><ul><li>Confirm the booking hours for the assessed 09:00-17:00 Saturday window (the pricing page publishes hourly rates but not opening/closing hours). <span class="sym sym-warn">(kind: event_window)</span></li><li>Confirm Saturday availability and the reservation flow (the site states a pre-reservation (선예약) system is used). <span class="sym sym-warn">(kind: availability)</span></li><li>Confirm screen/projection availability (the site mentions 방음/방송/live-streaming support and event AV services, but a presentation screen/projector is not itemized on the pricing page). <span class="sym sym-warn">(kind: screen)</span></li><li>Confirm Wi-Fi availability for attendees (not itemized on the pricing page). <span class="sym sym-warn">(kind: wifi)</span></li><li>Confirm the exact all-in quote for a 50-person 8-hour Saturday event: base 8h at KRW 99,000/h = KRW 792,000, plus KRW 10,000/person over the base 6 (approx. KRW 440,000 for 50) and setup fee KRW 100,000 (over 20 people), catering optional — written quote required. <span class="sym sym-warn">(kind: final_quote)</span></li><li>Confirm booking terms and the maximum comfortable seated configuration for 50 people (the about page states max 60; the pricing page says max 50 with prior inquiry). <span class="sym sym-warn">(kind: booking_terms)</span></li></ul></dd></dl></td></tr>
+<tr class="venue-row" id="venue-row-1" tabindex="0" role="button" aria-expanded="false" aria-controls="venue-details-1" data-sort-venue="COEX — Conference Room 300 (Conference Rooms, 3F)" data-sort-tier="1" data-sort-score="0.5300" data-sort-cost="-1" data-sort-capacity="114" data-sort-screen="2" data-sort-wifi="1" data-sort-catering="1" data-sort-recording="1" data-sort-window="1" data-sort-flags="cost_unknown, wifi_unknown, availability_unconfirmed, final_quote_required, duration_unconfirmed, map_location_unknown, stale_evidence" data-sort-booking="yes"><td>COEX — Conference Room 300 (Conference Rooms, 3F)</td><td><span class="tier-badge tier-silver">Silver</span></td><td>0.5300</td><td title="? — no published price">?</td><td>114</td><td><span class="sym sym-ok" title="confirmed">✓ confirmed</span></td><td><span class="sym sym-warn" title="unknown">? unknown</span></td><td><span class="sym sym-warn" title="unknown">? unknown</span></td><td><span class="sym sym-warn" title="unknown">? unknown</span></td><td><span class="sym sym-warn" title="window unknown; selected duration 8h">? unknown</span></td><td><ul class="flags"><li>cost_unknown</li><li>wifi_unknown</li><li>availability_unconfirmed</li><li>final_quote_required</li><li>duration_unconfirmed</li><li>map_location_unknown</li><li>stale_evidence</li></ul></td><td><a href="https://business.coex.co.kr/meeting-room/">book / contact</a></td></tr>
+<tr class="venue-details" id="venue-details-1" hidden><td colspan="12"><dl><dt>Source</dt><dd><a href="https://business.coex.co.kr/meeting-room/conference/">COEX BUSINESS — 컨퍼런스룸(남) 3F (official COEX meeting-room page, business.coex.co.kr, fetched 2026-08-15): 29 conference rooms on 3F, 20-300 pax, A/V system and fixed projector (6,200 ANSI) for rooms 207 m² and above; Room 300: 264 m², 114 classroom / 225 theatre; screen 3.6x2.7 (180&quot;), 6,200 ANSI projector</a> (accessed 2026-08-15)</dd><dt>Booking</dt><dd><a href="https://business.coex.co.kr/meeting-room/">book / contact</a></dd><dt>Tier reasons</dt><dd><em>none</em></dd><dt>Flags</dt><dd><ul class="flags"><li>cost_unknown</li><li>wifi_unknown</li><li>availability_unconfirmed</li><li>final_quote_required</li><li>duration_unconfirmed</li><li>map_location_unknown</li><li>stale_evidence</li></ul></dd><dt>Event window</dt><dd>unknown</dd><dt>Coordinates</dt><dd>unknown — no marker is fabricated for this venue</dd><dt>Verification questions</dt><dd><ul><li>Confirm the 2026 rental fee for Conference Room 300: the official COEX business site publishes room specs but not rates (rates are inquiry-based via the rental consultation/application path). <span class="sym sym-warn">(kind: cost_unknown)</span></li><li>Confirm the rental hours and whether the assessed 09:00-17:00 Saturday window is bookable (COEX meeting-room hours are not published on the fetched pages). <span class="sym sym-warn">(kind: event_window)</span></li><li>Confirm Wi-Fi availability for attendees (COEX provides venue Wi-Fi in public areas but per-room Wi-Fi is not stated on the meeting-room page). <span class="sym sym-warn">(kind: wifi)</span></li><li>Confirm Saturday availability for the assessed window (COEX is an active exhibition/convention venue with a busy calendar). <span class="sym sym-warn">(kind: availability)</span></li><li>Confirm the final quote and booking terms via the official COEX rental inquiry path (임대절차 및 상담 / meeting-room rental application). <span class="sym sym-warn">(kind: final_quote)</span></li><li>Confirm that Room 300 (264 m², 114 classroom / 225 theatre per official specs) is available as a single configured room for a 50-person event. <span class="sym sym-warn">(kind: booking_terms)</span></li></ul></dd></dl></td></tr>
+<tr class="venue-row" id="venue-row-2" tabindex="0" role="button" aria-expanded="false" aria-controls="venue-details-2" data-sort-venue="DDP — Design Hall (Design Lab 3F)" data-sort-tier="1" data-sort-score="0.5300" data-sort-cost="-1" data-sort-capacity="110" data-sort-screen="1" data-sort-wifi="1" data-sort-catering="1" data-sort-recording="1" data-sort-window="2" data-sort-flags="cost_unknown, screen_unknown, wifi_unknown, availability_unconfirmed, final_quote_required, map_location_unknown, stale_evidence" data-sort-booking="yes"><td>DDP — Design Hall (Design Lab 3F)</td><td><span class="tier-badge tier-silver">Silver</span></td><td>0.5300</td><td title="? — no published price">?</td><td>110</td><td><span class="sym sym-warn" title="unknown">? unknown</span></td><td><span class="sym sym-warn" title="unknown">? unknown</span></td><td><span class="sym sym-warn" title="unknown">? unknown</span></td><td><span class="sym sym-warn" title="unknown">? unknown</span></td><td><span class="sym sym-ok" title="window allows_to_5; closing 20:00; selected duration 8h">✓ allows_to_5</span></td><td><ul class="flags"><li>cost_unknown</li><li>screen_unknown</li><li>wifi_unknown</li><li>availability_unconfirmed</li><li>final_quote_required</li><li>map_location_unknown</li><li>stale_evidence</li></ul></td><td><a href="https://deep.ddp.or.kr/">book / contact</a></td></tr>
+<tr class="venue-details" id="venue-details-2" hidden><td colspan="12"><dl><dt>Source</dt><dd><a href="http://www.ddp.or.kr/?menuno=714">DDP 공간안내 — 디자인홀 (official DDP space page, ddp.or.kr): Design Lab 3F, 627.6 m², about 110 people, lectures/presentations/forums; convention hours 08:00-20:00 (12h); waiting rooms, VIP waiting room, lockers, interpretation booth, control room, lounge</a> (accessed 2026-08-15)</dd><dt>Booking</dt><dd><a href="https://deep.ddp.or.kr/">book / contact</a></dd><dt>Tier reasons</dt><dd><em>none</em></dd><dt>Flags</dt><dd><ul class="flags"><li>cost_unknown</li><li>screen_unknown</li><li>wifi_unknown</li><li>availability_unconfirmed</li><li>final_quote_required</li><li>map_location_unknown</li><li>stale_evidence</li></ul></dd><dt>Opening hours</dt><dd>08:00-20:00 (convention, 12h per official page)</dd><dt>Closing time</dt><dd>20:00</dd><dt>Event window</dt><dd>allows_to_5</dd><dt>Window evidence</dt><dd><a href="http://www.ddp.or.kr/?menuno=714">DDP 공간안내 — 디자인홀, 디자인랩, 대관 공간 (official DDP space page)</a> — 디자인홀 (Design Hall) at Design Lab 3F, 627.6 m², 약 110명 (about 110 people), for lectures/presentations/forums; 대관 가능 시간 컨벤션 08:00 ~ 20:00 (12시간) — the convention window 08:00-20:00 covers the assessed 09:00-17:00 window. (accessed 2026-08-15)</dd><dt>Coordinates</dt><dd>unknown — no marker is fabricated for this venue</dd><dt>Verification questions</dt><dd><ul><li>Confirm the 2026 Design Hall rental fee: the official DDP space page lists capacity, area, and hours but not a rate; the 2026 regular-rental notice (culture.seoul.go.kr, DDP 아트홀·야외공간 정기대관 공고) publishes Art Hall 1/2 and Conference Hall daily rates but the Design Hall fee requires an application via deep.ddp.or.kr. <span class="sym sym-warn">(kind: cost_unknown)</span></li><li>Confirm screen/AV availability in the Design Hall (the official space page lists the room, waiting rooms, lockers, interpretation booth, control room, lounge, and stepped chairs but does not itemize a presentation screen or projector). <span class="sym sym-warn">(kind: screen)</span></li><li>Confirm Wi-Fi availability for attendees in the Design Hall (not stated on the official space page). <span class="sym sym-warn">(kind: wifi)</span></li><li>Confirm Saturday availability and the application/심의 (review-committee) calendar for the assessed window (DDP rental requires an application, committee review, and approval; regular-rental windows are announced in advance). <span class="sym sym-warn">(kind: availability)</span></li><li>Confirm the final quote and booking terms via the DDP rental site (deep.ddp.or.kr; contact 1833-4321, venue@seouldesign.or.kr) including any non-profit/community rates. <span class="sym sym-warn">(kind: final_quote)</span></li><li>Confirm whether the Design Hall&#x27;s stepped-chair seating (~30) plus chairs (~80) configuration comfortably seats 50 for an all-day event (official page: 계단식의자 약 30명, 의자 약 80대). <span class="sym sym-warn">(kind: booking_terms)</span></li></ul></dd></dl></td></tr>
+<tr class="venue-row" id="venue-row-3" tabindex="0" role="button" aria-expanded="false" aria-controls="venue-details-3" data-sort-venue="Nodeul Island — Livehouse (Nodeul Island 1F)" data-sort-tier="1" data-sort-score="0.2599" data-sort-cost="4251.48" data-sort-capacity="456" data-sort-screen="1" data-sort-wifi="1" data-sort-catering="1" data-sort-recording="1" data-sort-window="2" data-sort-flags="oversized_capacity, screen_unknown, wifi_unknown, availability_unconfirmed, final_quote_required, map_location_unknown, stale_evidence" data-sort-booking="yes"><td>Nodeul Island — Livehouse (Nodeul Island 1F)</td><td><span class="tier-badge tier-silver">Silver</span></td><td>0.2599</td><td title="USD 4251.48">USD 4251.48</td><td>456</td><td><span class="sym sym-warn" title="unknown">? unknown</span></td><td><span class="sym sym-warn" title="unknown">? unknown</span></td><td><span class="sym sym-warn" title="unknown">? unknown</span></td><td><span class="sym sym-warn" title="unknown">? unknown</span></td><td><span class="sym sym-ok" title="window allows_to_5; closing 23:00; selected duration 8h">✓ allows_to_5</span></td><td><ul class="flags"><li>oversized_capacity</li><li>screen_unknown</li><li>wifi_unknown</li><li>availability_unconfirmed</li><li>final_quote_required</li><li>map_location_unknown</li><li>stale_evidence</li></ul></td><td><a href="https://nodeul.org/rent-calendar/?calendar_type=rent-livehouse">book / contact</a></td></tr>
+<tr class="venue-details" id="venue-details-3" hidden><td colspan="12"><dl><dt>Source</dt><dd><a href="https://nodeul.org/facility/livehouse/">노들섬 라이브하우스 (official Nodeul Island Livehouse facility page, nodeul.org): 1F, 1,320 m², 456 designated seats / 708 standing; performance rental Sat/Sun/holiday KRW 4,000,000 (1회) / KRW 6,000,000 (2회) VAT excluded; hours 10:00-23:00; sound/lighting/instruments, house manager, ushers included</a> (accessed 2026-08-15)</dd><dt>Booking</dt><dd><a href="https://nodeul.org/rent-calendar/?calendar_type=rent-livehouse">book / contact</a></dd><dt>Tier reasons</dt><dd><em>none</em></dd><dt>Flags</dt><dd><ul class="flags"><li>oversized_capacity</li><li>screen_unknown</li><li>wifi_unknown</li><li>availability_unconfirmed</li><li>final_quote_required</li><li>map_location_unknown</li><li>stale_evidence</li></ul></dd><dt>Opening hours</dt><dd>10:00-23:00 (performance rental); prep/teardown rental 10:00-22:00</dd><dt>Closing time</dt><dd>23:00</dd><dt>Event window</dt><dd>allows_to_5</dd><dt>Window evidence</dt><dd><a href="https://nodeul.org/facility/livehouse/">노들섬 라이브하우스 대관 (official Nodeul Island facility page)</a> — 공연 대관 시간: 10시 ~ 23시 (performance rental hours 10:00-23:00); prep/teardown rental 10:00-22:00 — the venue is open through the 17:00 end of the assessed 09:00-17:00 window, but the published standard start is 10:00, so a 09:00 start must be confirmed. (accessed 2026-08-15)</dd><dt>Coordinates</dt><dd>unknown — no marker is fabricated for this venue</dd><dt>Verification questions</dt><dd><ul><li>Confirm whether a 09:00 start is possible for an 8-hour event: the official Livehouse page publishes performance rental hours 10:00-23:00 and prep/teardown slots 10:00-22:00, so the assessed 09:00-17:00 window&#x27;s start is not covered by the published standard hours. <span class="sym sym-warn">(kind: event_window)</span></li><li>Confirm Saturday availability for the assessed window on the specific date (the official rent calendar at nodeul.org/rent-calendar/?calendar_type=rent-livehouse shows per-day availability; the Livehouse is a working concert venue with an active performance schedule). <span class="sym sym-warn">(kind: availability)</span></li><li>Confirm screen/projection availability in the Livehouse (the facility page lists sound/lighting/instrument equipment included and a house manager, but does not itemize a presentation screen or projector). <span class="sym sym-warn">(kind: screen)</span></li><li>Confirm Wi-Fi availability for attendees in the Livehouse (not stated on the facility page). <span class="sym sym-warn">(kind: wifi)</span></li><li>Confirm the exact all-in price for an 8-hour Saturday event: the published rate is KRW 4,000,000 (1 performance) or KRW 6,000,000 (2 performances, applicable when runtime exceeds 3h) VAT excluded; prep/teardown and any event-specific fees are separate. <span class="sym sym-warn">(kind: final_quote)</span></li><li>Confirm booking terms via the official rental calendar/application (대관신청) and whether a community/private event (non-concert) is accepted at the performance-rental rate. <span class="sym sym-warn">(kind: booking_terms)</span></li></ul></dd></dl></td></tr>
+    </tbody>
+  </table>
+  </div>
+  <section class="leads" aria-label="Venues needing verification"><h2>Venues needing verification — 2 venue lead(s) — not selectable</h2><p>Leads are visible for reference only and are never selectable until their material gaps are resolved. The list works without JavaScript; the map control (when present) requires the interactive map below.</p><ul><li id="lead-item-0" data-lead-id="lead-item-0"><strong>DDP — Conference Hall (414 m²)</strong> <span class="tier-badge tier-bronze">Bronze</span> — material verification question(s): capacity; capacity_comfortable 0 below minimum 40 <a href="https://culture.seoul.go.kr/culture/bbs/B0000000/view.do?nttId=15313&amp;menuNo=200050&amp;pageIndex=12">source</a></li><li id="lead-item-1" data-lead-id="lead-item-1"><strong>KT&amp;G SangSangMadang Hongdae — Live Hall</strong> <span class="tier-badge tier-bronze">Bronze</span> — material verification question(s): capacity, location; capacity_comfortable 0 below minimum 40 <a href="https://www.sangsangmadang.com/rental/list">source</a></li></ul></section>
+  <section class="venue-map-section" aria-label="Venue map"><h2>Venue map</h2><p>No listed venues currently have verified coordinates. See the venue lists above.</p></section>
+  <section class="local-communities" aria-labelledby="local-communities-heading">
+<h2 id="local-communities-heading">Local communities</h2>
+<p class="local-communities-intro">The records below are evidence-backed local audience and collaboration context for Joe — informational, not an outreach authorization and never a confirmed co-host commitment.</p>
+<details class="local-community"><summary><span class="local-community-name">AI Tinkerers Seoul</span> <span class="local-community-network">AI Tinkerers</span> <span class="local-community-chip">machine_learning</span> <span class="local-community-chip">ai</span> <span class="local-community-chip local-community-activity">active</span> <span class="local-community-badge">🤝 Open to co-hosting</span></summary><div class="local-community-body"><p class="local-community-source">Source: <a href="https://seoul.aitinkerers.org/" target="_blank" rel="noopener noreferrer">AI Tinkerers Seoul — AI Events in Seoul (official chapter page, seoul.aitinkerers.org, fetched 2026-08-15): hands-on AI builder meetup with live demos; 252-city global network with 120,000+ members; next event August 20, 2026 &#x27;AI Tinkerers Seoul: August Demo Night ft PostHog and DanaIX&#x27;</a> — accessed 2026-08-15</p>
+<p class="local-community-meta">Cadence: Irregular builder demo nights; inaugural Seoul meetup July 2, 2026 (7-10pm KST) and next event August 20, 2026 (7-10pm KST) per the official chapter page</p>
+<p class="local-community-cohost">Co-host openness: "Official chapter page seoul.aitinkerers.org (fetched 2026-08-15) states the next event &#x27;AI Tinkerers Seoul: August Demo Night ft PostHog and DanaIX&#x27; is &#x27;sponsored by PostHog and DanaIX.&#x27;" — own-page phrase; manual assessment required, never a confirmed commitment</p>
+<p class="local-community-questions-label">Verification questions</p>
+<ul class="local-community-questions"><li>Confirm AI Tinkerers Seoul&#x27;s fall 2026 in-person meetup schedule and venues (the official chapter page confirms the inaugural July 2, 2026 meetup and the next August 20, 2026 demo night, both 7-10pm KST; later 2026 dates were not published at fetch time).</li><li>Confirm whether the chapter is open to co-hosting or venue-partner arrangements with an external organizer (the official page shows event sponsorship by PostHog and DanaIX, which evidences sponsorship acceptance; explicit external co-host/venue-partner application language was not captured).</li></ul>
+<div class="local-community-evidence"><p><strong>Observed facts</strong>: Official chapter page seoul.aitinkerers.org (fetched 2026-08-15) identifies &#x27;AI Tinkerers Seoul&#x27; as part of a 252-city global network with 120,000+ members; states the Seoul chapter is a hands-on AI builder meetup with live demos, technical discussion, and no-pitch networking, typically running about three hours; lists &#x27;AUG 20 AI Tinkerers Seoul: August Demo Night ft PostHog and DanaIX 7:00 PM • Open Next event: Thursday, August 20, 2026&#x27; and &#x27;sponsored by PostHog and DanaIX&#x27;; lists a past meetup &#x27;about 1 month ago AI Tinkerers Seoul: Inaugural Demo Night Thursday, July 2nd 7PM to 10PM +17&#x27;.</p><p><strong>Inference</strong>: AI Tinkerers Seoul is an active Seoul-local AI-builder community with observed in-person events in July and August 2026; sponsorship language on its official page evidences sponsorship acceptance, so cohost_open is true with a verification question rather than a confirmed relationship.</p></div>
+<p class="local-community-uncertainty"><strong>Uncertainty</strong>: Later-2026 Seoul meetup dates and venues were not published at fetch time (2026-08-15); chapter member count is not displayed on the fetched page; the sponsorship phrase evidences sponsor acceptance but not an external co-host application path.</p></div></details>
+<details class="local-community"><summary><span class="local-community-name">AWSKRUG (AWS 한국사용자모임)</span> <span class="local-community-network">AWS User Group Community</span> <span class="local-community-chip">ai</span> <span class="local-community-chip">mixed</span> <span class="local-community-chip local-community-activity">active</span> <span class="local-community-badge">🤝 Open to co-hosting</span></summary><div class="local-community-body"><p class="local-community-source">Source: <a href="https://www.meetup.com/ko-kr/awskrug/" target="_blank" rel="noopener noreferrer">AWSKRUG — AWS 한국사용자모임 (official Meetup group page, meetup.com/ko-kr/awskrug, fetched 2026-08-15): 11,671 members, Seoul KR; part of Global AWS User Group Community (417 groups); 9 upcoming events incl. DevOps 25th meetup Aug 19, 2026 and AI Engineering OpenClaw workshop Aug 20, 2026</a> — accessed 2026-08-15</p>
+<p class="local-community-contact">Public contact: <a href="https://www.awskr.org" target="_blank" rel="noopener noreferrer">AWSKRUG official site</a></p>
+<p class="local-community-meta">Public member size: 11671</p>
+<p class="local-community-meta">Cadence: Multiple active sub-meetups (DevOps 25th meetup Aug 19, 2026; AI Engineering OpenClaw workshop Aug 20, 2026; Incheon sub-meetup Aug 24, 2026; 9 upcoming events at fetch)</p>
+<p class="local-community-meta">Typical venue: Centerfield, 231 Teheran-ro, Gangnam-gu, Seoul (Aug 2026 DevOps/AI Engineering meetups)</p>
+<p class="local-community-cohost">Co-host openness: "Official Meetup page meetup.com/ko-kr/awskrug (fetched 2026-08-15) displays a sponsor section (&#x27;후원사 모두 보기&#x27;) listing sponsors including Musinsa, LG U+, Daangn, Olive Young and event-venue sponsors." — own-page phrase; manual assessment required, never a confirmed commitment</p>
+<p class="local-community-questions-label">Verification questions</p>
+<ul class="local-community-questions"><li>Confirm AWSKRUG&#x27;s fall 2026 Seoul meetup schedule and whether a community AI event could align with an existing sub-meetup or venue (the official Meetup page confirms multiple August 2026 Seoul events at Centerfield, Gangnam).</li><li>Confirm whether the group is open to co-hosting or venue-partner arrangements with an external organizer (the official page displays sponsor logos and venue sponsors, which evidences sponsorship acceptance; explicit external co-host language was not captured).</li></ul>
+<div class="local-community-evidence"><p><strong>Observed facts</strong>: Official Meetup page meetup.com/ko-kr/awskrug (fetched 2026-08-15) states &#x27;AWSKRUG - AWS한국사용자모임 4.7 • 3964개의 평가 Seoul, KR 회원 11,671명&#x27; (4.7 rating, 3,964 reviews, Seoul KR, 11,671 members), &#x27;Global AWS User Group Community의 일부 - 417 그룹&#x27;, references https://www.awskr.org, displays a &#x27;후원사 모두 보기&#x27; (view all sponsors) section with sponsors (Musinsa, LG U+, Daangn, Olive Young, etc.) and venue sponsors, and lists 9 upcoming events including &#x27;AWSKRUG 데브옵스 #DevOps 소모임 25번째 밋업 - 8월 19일&#x27; 2026 at Centerfield, 231 Teheran-ro, Gangnam-gu, 19:00-21:00 KST and &#x27;AWSKRUG #AIEngineering 소모임 - OpenClaw on AWS Workshop [8월 20일]&#x27; 2026 at the same venue.</p><p><strong>Inference</strong>: AWSKRUG is an active, large Seoul-based developer community with observed August 2026 in-person meetups and a sponsor/venue-sponsor program on its official page; sponsorship language evidences co-host openness, so cohost_open is true with a verification question.</p></div>
+<p class="local-community-uncertainty"><strong>Uncertainty</strong>: Meetup.com pages are mutable point-in-time representations; the sponsor section evidences sponsorship acceptance but not an external co-host application path.</p></div></details>
+<details class="local-community"><summary><span class="local-community-name">GDG Seoul</span> <span class="local-community-network">Google Developer Groups (GDG)</span> <span class="local-community-chip">ai</span> <span class="local-community-chip">mixed</span> <span class="local-community-chip local-community-activity">active</span></summary><div class="local-community-body"><p class="local-community-source">Source: <a href="https://gdg.community.dev/gdg-seoul/" target="_blank" rel="noopener noreferrer">GDG Seoul — Google Developer Groups chapter page (official gdg.community.dev, fetched 2026-08-15): 1,321 group members; &#x27;Build with AI Seoul 2026 with Google DeepMind&#x27; held May 2, 2026; independent group, not officially linked to Google</a> — accessed 2026-08-15</p>
+<p class="local-community-meta">Public member size: 1321</p>
+<p class="local-community-meta">Cadence: Large seasonal events: Build with AI Seoul 2026 with Google DeepMind (May 2, 2026), GDG DevFest Cloud x Seoul 2025 (Nov 30, 2025), 2025 I/O Extended Seoul (Aug 9, 2025), Build with AI 2025 Seoul (May 24, 2025)</p>
+<p class="local-community-questions-label">Verification questions</p>
+<ul class="local-community-questions"><li>Confirm GDG Seoul&#x27;s next in-person event and 2026 fall/winter schedule (the official chapter page shows &#x27;no upcoming events&#x27; at fetch and the most recent event was Build with AI Seoul 2026 on May 2, 2026).</li><li>Confirm whether GDG Seoul is open to co-hosting or venue-partner arrangements with an external organizer (no explicit sponsorship/partnership language was captured from the fetched chapter page).</li></ul>
+<div class="local-community-evidence"><p><strong>Observed facts</strong>: Official GDG chapter page gdg.community.dev/gdg-seoul (fetched 2026-08-15) states &#x27;GDG Seoul 1321 그룹 멤버&#x27; (1,321 group members), displays the disclaimer &#x27;GDG Seoul is an independent group; our activities and the opinions expressed here should in no way be linked to Google&#x27;, and lists past events: &#x27;2026년 5월 2일 Build with AI Seoul 2026 with Google DeepMind&#x27; (external ticketing), &#x27;2025년 11월 30일 GDG DevFest Cloud x Seoul 2025&#x27;, &#x27;2025년 8월 9일 2025 I/O Extended Seoul&#x27;, and &#x27;2025년 5월 24일 Build with AI 2025 Seoul&#x27;.</p><p><strong>Inference</strong>: GDG Seoul is an active Seoul-local developer community with a recent (May 2026) in-person Build with AI Seoul event co-branded with Google DeepMind; no co-host openness language was captured, so cohost_open stays false with a verification question.</p></div>
+<p class="local-community-uncertainty"><strong>Uncertainty</strong>: No upcoming events were displayed at fetch time (2026-08-15), so the fall 2026 cadence is unconfirmed; the chapter is Seoul-local by its own page.</p></div></details>
+<details class="local-community"><summary><span class="local-community-name">Korea R User Group / Seoul R Meetup</span> <span class="local-community-network">R User Groups (R Consortium)</span> <span class="local-community-chip">machine_learning</span> <span class="local-community-chip">data_science</span> <span class="local-community-chip local-community-activity">active</span> <span class="local-community-badge">🤝 Open to co-hosting</span></summary><div class="local-community-body"><p class="local-community-source">Source: <a href="https://r2bit.com/" target="_blank" rel="noopener noreferrer">한국 R 사용자회 (Korea R User Group) — official site (r2bit.com, fetched 2026-08-15): public-interest corporation founded 2022; runs the monthly Seoul R Meetup (registered with R Consortium R User Groups), Korea R Conference, and open-source BitStat packages</a> — accessed 2026-08-15</p>
+<p class="local-community-meta">Cadence: Seoul R Meetup held monthly per the official Korea R User Group site (&#x27;서울 R 미트업 ... 매월 개최되는 데이터 사이언스 R/Tidyverse 미트업&#x27;); Korea R Conference is annual</p>
+<p class="local-community-meta">Typical venue: Seoul (Seoul R Meetup; the group is based at 서초구 법원로3길 15, 4층)</p>
+<p class="local-community-cohost">Co-host openness: "Official r2bit.com homepage (fetched 2026-08-15) states &#x27;여러분의 후원으로 더욱 강력해지세요! 전문적인 R/쿼토 지원 서울 R 사용자 모임의 일원이 되어...&#x27; (become stronger with your sponsorship) in its sponsorship/donation section." — own-page phrase; manual assessment required, never a confirmed commitment</p>
+<p class="local-community-questions-label">Verification questions</p>
+<ul class="local-community-questions"><li>Confirm the Seoul R Meetup&#x27;s fall 2026 schedule and venue (the official site states it is a monthly data-science R/Tidyverse meetup; the meetup.com page for the Seoul R Meetup should confirm 2026 dates).</li><li>Confirm whether the Korea R User Group is open to co-hosting or venue-partner arrangements with an external organizer (the official site&#x27;s sponsorship language is donation-oriented; explicit event co-host language was not captured).</li></ul>
+<div class="local-community-evidence"><p><strong>Observed facts</strong>: Official Korea R User Group site r2bit.com (fetched 2026-08-15) states the public-interest corporation was founded in 2022 to address digital inequality and popularize statistics; describes &#x27;서울 R 미트업&#x27; as &#x27;R Consortium R User Groups에 등록된 Seoul R Meetup은 매월 개최되는 데이터 사이언스 R/Tidyverse 미트업&#x27; (a monthly data-science R/Tidyverse meetup registered with R Consortium R User Groups) covering ChatGPT, Data Analytics, Tidyverse, Tidymodels, Shiny, Dashboard, Machine Learning, Quarto/RMarkdown, Deep Learning; the site includes a sponsorship/donation section (&#x27;여러분의 후원으로 더욱 강력해지세요!&#x27;) and lists the address 서울특별시 서초구 법원로3길 15, 4층.</p><p><strong>Inference</strong>: Korea R User Group / Seoul R Meetup is an active Seoul-based data-science community with a monthly meetup claim on its official page; the sponsorship language is donation-oriented, so cohost_open is flagged true conservatively with a verification question distinguishing donations from event co-hosting.</p></div>
+<p class="local-community-uncertainty"><strong>Uncertainty</strong>: The monthly cadence is stated on the official site; specific 2026 Seoul R Meetup dates and venue were not captured from the fetched page (the site links out to meetup.com for scheduling). The sponsorship language is donation-oriented, not event co-hosting.</p></div></details>
+<details class="local-community"><summary><span class="local-community-name">PyLadies Seoul</span> <span class="local-community-network">PyLadies</span> <span class="local-community-chip">data_science</span> <span class="local-community-chip">ai</span> <span class="local-community-chip local-community-activity">active</span></summary><div class="local-community-body"><p class="local-community-source">Source: <a href="https://www.meetup.com/seoul-pyladies-meetup/" target="_blank" rel="noopener noreferrer">PyLadies Seoul Meetup (official Meetup group page, meetup.com/seoul-pyladies-meetup, fetched 2026-08-15): 253 members, Seoul KR, part of Python Software Foundation Meetup Pro Network (125 groups)</a> — accessed 2026-08-15</p>
+<p class="local-community-meta">Public member size: 253</p>
+<p class="local-community-meta">Cadence: Monthly bookclub (online/voice), plus in-person workshops and seminars in Seoul (upcoming git tutorial workshop Jul 26, 2026; past 2026 events at 관악청년청 and 서울시공익활동지원센터)</p>
+<p class="local-community-meta">Typical venue: 신림 관악청년청 (Sillim Gwanak Youth Center) and 서울시공익활동지원센터 (Seoul Public Activities Center), Seoul</p>
+<p class="local-community-questions-label">Verification questions</p>
+<ul class="local-community-questions"><li>Confirm PyLadies Seoul&#x27;s fall 2026 in-person event schedule and venues (the official events page pyladies.kr/en/events lists an upcoming git tutorial workshop Jul 26, 2026 at 관악청년청 and regular 2026 workshops/seminars; fall dates were not all published at fetch).</li><li>Confirm whether PyLadies Seoul is open to co-hosting or venue-partner arrangements with an external organizer (no explicit sponsorship/partnership language was captured from the fetched pages).</li></ul>
+<div class="local-community-evidence"><p><strong>Observed facts</strong>: Official Meetup group page meetup.com/seoul-pyladies-meetup (fetched 2026-08-15) states &#x27;PyLadies Seoul Meetup 4.8 • 31 ratings Seoul, KR 253 members&#x27; and that the group is part of the Python Software Foundation Meetup Pro Network (125 groups), with the mission to promote, educate and advance a diverse Python community. Official events page pyladies.kr/en/events/ (fetched 2026-08-15) lists &#x27;Upcoming 깃 튜토리얼 워크샵 (2회차) 2026. 07. 26 (Sun) 13:00-17:00 at 신림 관악청년청&#x27; and past 2026 events including monthly bookclubs (2026년 6월 북클럽 etc.), &#x27;2026. 05. 30 (Sat) 14:00-16:00 at 관악청년청 3층 다목적강당&#x27;, &#x27;Django 오픈소스 기여 워크샵 2026. 04. 25 at 서울시공익활동지원센터&#x27;, and the 2025 year-end party.</p><p><strong>Inference</strong>: PyLadies Seoul is an active Seoul-local Python/data community with observed 2026 in-person events and an upcoming July 26, 2026 workshop; no co-host openness language was captured, so cohost_open stays false with a verification question.</p></div>
+<p class="local-community-uncertainty"><strong>Uncertainty</strong>: The Meetup member count (253) and the pyladies.kr event list are point-in-time observations; fall 2026 dates were not fully published at fetch time.</p></div></details>
+<details class="local-community"><summary><span class="local-community-name">모두의연구소 (Modulabs) — Community &amp; 모두모임</span> <span class="local-community-network">Modulabs (모두의연구소)</span> <span class="local-community-chip">machine_learning</span> <span class="local-community-chip">data_science</span> <span class="local-community-chip">ai</span> <span class="local-community-chip local-community-activity">active</span></summary><div class="local-community-body"><p class="local-community-source">Source: <a href="https://modulabs.co.kr/community/momos" target="_blank" rel="noopener noreferrer">모두의연구소 — 모두모임 (official Modulabs community page, modulabs.co.kr, fetched 2026-08-15): &#x27;국내 최대 AI/ML 연구 커뮤니티&#x27; (Korea&#x27;s largest AI/ML research community); offline seminars and study groups in Seoul incl. 모두팝 events; 모두콘 2025 conference</a> — accessed 2026-08-15</p>
+<p class="local-community-meta">Cadence: Ongoing community: 모두모임 (open study/seminar groups), MODUPOP AI/SW seminars, offline study groups and events in Seoul (e.g., 모두팝 quantum-computing seminar Dec 4; AI for Science seminar Mar 26, Seoul; 모두콘 2025 Dec 13)</p>
+<p class="local-community-meta">Typical venue: Seoul (모두연 커뮤니티 / Gangnam-based; offline events listed with &#x27;서울&#x27; locations)</p>
+<p class="local-community-questions-label">Verification questions</p>
+<ul class="local-community-questions"><li>Confirm Modulabs&#x27; fall 2026 offline community-event schedule and venues in Seoul (the official 모두모임 page lists events with &#x27;서울&#x27; locations including a Dec 4 quantum-computing seminar and a Mar 26 AI for Science seminar; 2026 fall dates were not all published at fetch).</li><li>Confirm whether Modulabs is open to co-hosting or venue-partner arrangements with an external organizer (no explicit sponsorship/partnership language was captured from the fetched community page).</li></ul>
+<div class="local-community-evidence"><p><strong>Observed facts</strong>: Official Modulabs community page modulabs.co.kr/community/momos (fetched 2026-08-15) describes 모두모임 as &#x27;같은 관심사를 가진 동료들과 함께 몰입하고 성장하는 경험&#x27; (open groups where peers with shared interests grow together) and lists offline and online study groups/seminars including &#x27;[모두팝/오프라인] 양자컴퓨팅과 AI의 만남&#x27; (Dec 4, 서울 모두의연구소 기업교육), &#x27;SEMINAR [AI for Science] 3월 : 주요국 AI for Science 투자 현황과 국가 경쟁력 전략&#x27; (Mar 26, 서울 모두연 커뮤니티, 36/80), &#x27;모두콘 2025 사전등록&#x27; (Dec 13, 서울 모두연 커뮤니티, 296/300), and multiple study groups; the Instagram official account describes 모두의연구소 as &#x27;국내 최대 AI/ML 연구 커뮤니티&#x27;.</p><p><strong>Inference</strong>: Modulabs is an active Seoul-based AI/ML/data community organization with observed 2025-2026 offline events in Seoul; no co-host openness language was captured, so cohost_open stays false with a verification question.</p></div>
+<p class="local-community-uncertainty"><strong>Uncertainty</strong>: The 모두모임 page lists a mix of 2025 and 2026 events; fall 2026 dates were not fully published at fetch time. Modulabs is also an education company (bootcamps/classes), so community records are limited to the community/study-group layer.</p></div></details>
+<details class="local-community"><summary><span class="local-community-name">Ethereum Seoul Community</span> <span class="local-community-network">Ethereum Seoul Community</span> <span class="local-community-chip">web3</span> <span class="local-community-chip local-community-activity">intermittent</span></summary><div class="local-community-body"><p class="local-community-source">Source: <a href="https://ethereum-seoul.community/" target="_blank" rel="noopener noreferrer">Ethereum Seoul Community (official ethereum-seoul.community, fetched 2026-08-15): &#x27;A hub for Ethereum Punks in Seoul. Participate in bi-weekly meetups, Open Research Club, Civic Hack Club, and the annual Ethcon conference&#x27;; meetup notices list Ethaewon Hacker House, Yongsan-gu</a> — accessed 2026-08-15</p>
+<p class="local-community-meta">Cadence: Bi-weekly small meetups (월 2회) plus sub-groups (Civic Hackers&#x27; Club, Open Research Club) and the annual Ethcon conference per the official site; the most recent listed meetup notices reference 2024-era organizing activity</p>
+<p class="local-community-meta">Typical venue: Ethaewon Hacker House (EHH), 60-1 Hoenamu-ro, Yongsan-gu, Seoul (per meetup notices on the official site)</p>
+<p class="local-community-questions-label">Verification questions</p>
+<ul class="local-community-questions"><li>Confirm the Ethereum Seoul Community&#x27;s most recent meetup and whether it has held events in 2026 (the official site describes bi-weekly meetups at Ethaewon Hacker House, but the most recent dated notices captured reference 2024-era Ethcon organizing).</li><li>Confirm whether the community is open to co-hosting or venue-partner arrangements with an external organizer (no explicit sponsorship/partnership language was captured from the fetched page).</li></ul>
+<div class="local-community-evidence"><p><strong>Observed facts</strong>: Official ethereum-seoul.community (fetched 2026-08-15) states &#x27;A hub for Ethereum Punks in Seoul. Participate in bi-weekly meetups, Open Research Club, Civic Hack Club, and the annual Ethcon conference&#x27; and &#x27;이더리움 서울 커뮤니티는 월 2회 소규모 밋업을 가지며&#x27; (holds small meetups twice a month) with three sub-groups; meetup notices on the page list location Ethaewon Hacker House (EHH), 용산구 회나무로 60-1 and reference Ethcon Korea 2024 organizing-committee meetings (이드콘한국 2024 운영위원회 회의).</p><p><strong>Inference</strong>: Ethereum Seoul Community is a Seoul-local Web3 community with a stated bi-weekly cadence, but the most recent observable dated activity references 2024, so it is honestly labeled intermittent pending confirmation of 2026 activity.</p></div>
+<p class="local-community-uncertainty"><strong>Uncertainty</strong>: The official site&#x27;s dated meetup notices reference 2024-era activity; no 2026 event date was captured at fetch time (2026-08-15).</p></div></details>
+<details class="local-community"><summary><span class="local-community-name">Seoul Ethereum Meetup</span> <span class="local-community-network">Seoul Ethereum Meetup</span> <span class="local-community-chip">web3</span> <span class="local-community-chip local-community-activity">intermittent</span></summary><div class="local-community-body"><p class="local-community-source">Source: <a href="https://www.meetup.com/seoul-ethereum-meetup/" target="_blank" rel="noopener noreferrer">Seoul Ethereum Meetup (official Meetup group page, meetup.com/seoul-ethereum-meetup, fetched 2026-08-15): 4,156 members, Seoul KR; Korean-language group for Ethereum and dApp developers, businesses, investors, students</a> — accessed 2026-08-15</p>
+<p class="local-community-meta">Public member size: 4156</p>
+<p class="local-community-meta">Cadence: Historically regular Ethereum/dApp meetups; no upcoming event visible at fetch time (2026-08-15)</p>
+<p class="local-community-questions-label">Verification questions</p>
+<ul class="local-community-questions"><li>Confirm the Seoul Ethereum Meetup&#x27;s most recent in-person meetup date and whether it has held events in 2026 (the official Meetup page shows 4,156 members but displayed no upcoming events at fetch time).</li><li>Confirm whether the group is open to co-hosting or venue-partner arrangements with an external organizer (no explicit sponsorship/partnership language was captured from the fetched page).</li></ul>
+<div class="local-community-evidence"><p><strong>Observed facts</strong>: Official Meetup group page meetup.com/seoul-ethereum-meetup (fetched 2026-08-15) states &#x27;Seoul Ethereum Meetup 4.5 • 437 ratings Seoul, KR 4,156 members&#x27; with the Korean-language About text: &#x27;이더리움(ethereum)과 이에 기반한 dApp (탈중앙화 어플리케이션)에 관심이 있는 개발자, 사업자, 투자자, 학생 등 모든 분들의 모임입니다&#x27; (a gathering for developers, businesses, investors, and students interested in Ethereum and dApps); no upcoming events were displayed at fetch time.</p><p><strong>Inference</strong>: Seoul Ethereum Meetup is a large Seoul-local Ethereum community whose recent activity is unconfirmed at fetch time (no upcoming events displayed), so it is honestly labeled intermittent pending confirmation of 2026 activity.</p></div>
+<p class="local-community-uncertainty"><strong>Uncertainty</strong>: The page displayed no upcoming or recent events at fetch time (2026-08-15); activity is labeled intermittent, not active, because current in-person activity is not evidenced.</p></div></details>
+<details class="local-community"><summary><span class="local-community-name">Superteam Korea</span> <span class="local-community-network">Superteam</span> <span class="local-community-chip">web3</span> <span class="local-community-chip local-community-activity">intermittent</span></summary><div class="local-community-body"><p class="local-community-source">Source: <a href="https://superteam.fun/earn/regions/korea" target="_blank" rel="noopener noreferrer">Superteam Earn South Korea (official Superteam Korea page, superteam.fun/earn/regions/korea, fetched 2026-08-15): &#x27;Welcome to Superteam Korea&#x27;s earnings page — use these opportunities to earn in global standards and gain membership in the most exclusive Solana community of South Korea&#x27;</a> — accessed 2026-08-15</p>
+<p class="local-community-meta">Cadence: Solana ecosystem bounties/grants community for South Korea; digital-first earnings platform; in-person meetup cadence not evidenced on the fetched page</p>
+<p class="local-community-questions-label">Verification questions</p>
+<ul class="local-community-questions"><li>Confirm Superteam Korea&#x27;s 2026 Seoul in-person meetup activity and schedule (the official Earn page evidences the South Korea Solana community and bounties/grants; in-person Seoul meetup evidence was not captured from the fetched page).</li><li>Confirm whether Superteam Korea is open to co-hosting or venue-partner arrangements with an external organizer (no explicit sponsorship/partnership language was captured from the fetched page).</li></ul>
+<div class="local-community-evidence"><p><strong>Observed facts</strong>: Official Superteam Earn South Korea page (superteam.fun/earn/regions/korea, fetched 2026-08-15) states &#x27;Welcome to Superteam Korea&#x27;s earnings page — use these opportunities to earn in global standards and gain membership in the most exclusive Solana community of South Korea&#x27; and presents bounties/projects/grants opportunities. Superteam Korea&#x27;s public Telegram (t.me/superteamkoreapublic, third-party channel) posted community updates in April 2026 including the passing of a co-lead.</p><p><strong>Inference</strong>: Superteam Korea is a South Korea-local Solana ecosystem community evidenced by its official Earn page; observed activity is digital-first (bounties/grants), and 2026 Seoul in-person meetup activity is not evidenced from the official page, so it is honestly labeled intermittent.</p></div>
+<p class="local-community-uncertainty"><strong>Uncertainty</strong>: The official page evidences the community&#x27;s existence and South Korea locality but not in-person Seoul meetup cadence; digital-first activity is documented honestly without presenting the group as a standing in-person meetup.</p></div></details>
+<details class="local-community"><summary><span class="local-community-name">파이토치 한국 사용자 모임 (PyTorch Korea)</span> <span class="local-community-network">PyTorch Korea</span> <span class="local-community-chip">machine_learning</span> <span class="local-community-chip">ai</span> <span class="local-community-chip local-community-activity">intermittent</span></summary><div class="local-community-body"><p class="local-community-source">Source: <a href="https://pytorch.kr/" target="_blank" rel="noopener noreferrer">파이토치 한국 사용자 모임 (official PyTorch Korea community site, pytorch.kr, fetched 2026-08-15): independent Korean PyTorch user community with Korean tutorials, model hub, community links; blog translation posts dated July 2026</a> — accessed 2026-08-15</p>
+<p class="local-community-meta">Cadence: Digital-first community: continuous Korean tutorial/blog translation activity (blog posts July 2026); in-person meetup cadence not evidenced on the fetched site</p>
+<p class="local-community-questions-label">Verification questions</p>
+<ul class="local-community-questions"><li>Confirm whether PyTorch Korea holds in-person Seoul meetups and their 2026 schedule (the official site evidences a digital-first community with Korean tutorials and July 2026 blog translations; an in-person meetup calendar was not captured from the fetched pages).</li><li>Confirm whether the community is open to co-hosting or venue-partner arrangements with an external organizer (no explicit sponsorship/partnership language was captured from the fetched pages).</li></ul>
+<div class="local-community-evidence"><p><strong>Observed facts</strong>: Official PyTorch Korea site pytorch.kr (fetched 2026-08-15) identifies itself as &#x27;파이토치 한국 사용자 모임&#x27; (PyTorch Korea user community), an independent user community (&#x27;이 사이트는 독립적인 파이토치 사용자 커뮤니티로&#x27;), providing Korean tutorials, a Korean model hub, community links, and translated official blog posts with July 2026 dates (e.g., &#x27;블로그, July 30, 2026&#x27;).</p><p><strong>Inference</strong>: PyTorch Korea is a Korea-wide digital-first ML community with current (July 2026) online activity; because the official site evidences digital activity but not standing Seoul in-person meetups, it is labeled intermittent with a digital-only marker and an in-person question.</p></div>
+<p class="local-community-uncertainty"><strong>Uncertainty</strong>: Digital-first record: the official site evidences online/tutorial activity but not in-person Seoul meetup presence; the community is Korea-wide rather than strictly Seoul-local, so locality is documented as the community&#x27;s operating base rather than a physical meetup address.</p></div></details>
+</section>
+<section class="related-events" aria-labelledby="related-events-heading">
+<h2 id="related-events-heading">Related events and calendar flags</h2>
+<p class="related-events-intro">Entries below are informational related-event research findings for Joe. They never change venue scoring or make a scheduling decision.</p>
+<div class="related-month">
+<h3>September 2026</h3>
+<ul class="related-month-list">
+<li><details class="related-event"><summary><span class="related-event-name">GWDC 2026 Korea — Global Web3 Developer Conference</span> <span class="related-event-dates">2026-09-29 – 2026-09-30</span> <span class="chip chip-relevance">web3</span> <span class="chip chip-severity chip-severity-medium">medium</span></summary><div class="related-event-body"><p class="related-event-source">Source: <a href="https://www.gwdc.net/" target="_blank" rel="noopener noreferrer">GWDC — Global Web3 Dev Con official site (gwdc.net, fetched 2026-08-15): &#x27;29 - 30 Sep 2026 | aT Center, Seoul&#x27;; 2nd Global Web3 Developer Conference (GWDC 2026 Korea) focused on Web3 and AI convergence</a> — accessed 2026-08-15</p>
+<p class="related-event-verify">Human verification: needed</p>
+<p class="related-event-questions-label">Verification questions</p>
+<ul class="related-event-questions"><li>Confirm the final GWDC 2026 Korea programme and participant scale (the official gwdc.net site confirms September 29-30, 2026 at aT Center, Seoul; the organizers describe it as the 2nd Global Web3 Developer Conference focused on Web3 + AI).</li><li>Assess audience overlap: GWDC&#x27;s Web3 + AI developer focus draws builders overlapping a community AI/Web3 gathering&#x27;s target audience.</li></ul>
+<div class="related-event-evidence"><p><strong>Observed facts</strong>: Official gwdc.net homepage (fetched 2026-08-15) states &#x27;29 - 30 Sep 2026 | aT Center, Seoul&#x27; for GWDC 2026 Korea and describes the event as the 2nd Global Web3 Developer Conference, with Web3Labs as the organizer brand on the site, registration/hackathon/sponsor sections, and speakers including Web3 policy figures from Hong Kong and South Korea. KuCoin News and Cryptorank News (third-party factual dates) both list GWDC 2026 Korea at aT Center, Seoul on September 29-30, 2026.</p><p><strong>Inference</strong>: A two-day Web3 + AI developer conference at aT Center in the autumn season adds parallel Web3/AI developer activity in Seoul; informational awareness flag for Joe, never an elimination and never a date recommendation.</p></div></div></details></li>
+<li><details class="related-event"><summary><span class="related-event-name">Korea Blockchain Week 2026 (KBW2026)</span> <span class="related-event-dates">2026-09-29 – 2026-10-01</span> <span class="chip chip-relevance">web3</span> <span class="chip chip-severity chip-severity-high">high</span></summary><div class="related-event-body"><p class="related-event-source">Source: <a href="https://koreablockchainweek.com/pages/application-2026" target="_blank" rel="noopener noreferrer">Korea Blockchain Week — official organizer page (koreablockchainweek.com, fetched 2026-08-15): KBW2026 &#x27;Sep. 29 - Oct 1, Seoul&#x27;; September 29 Upbit Institutional Summit (invite-only), September 30 - October 1 Main Conference at Walkerhill Hotels &amp; Resorts; tickets on sale</a> — accessed 2026-08-15</p>
+<p class="related-event-verify">Human verification: needed</p>
+<p class="related-event-questions-label">Verification questions</p>
+<ul class="related-event-questions"><li>Confirm the final KBW2026 main-conference footprint and any official side-event schedule published closer to the event (the official organizer page confirms September 29 - October 1, 2026 in Seoul with the Main Conference September 30 - October 1 at Walkerhill Hotels &amp; Resorts).</li><li>Assess audience overlap: KBW&#x27;s stated blockchain/Web3 topics (AI integration, RWA tokenization, L1/L2 scalability) draw the same crypto/Web3/startup crowd targeted by a community AI/Web3 gathering.</li></ul>
+<div class="related-event-evidence"><p><strong>Observed facts</strong>: Official koreablockchainweek.com application page (fetched 2026-08-15) states &#x27;KBW2026 | Asia&#x27;s Premier Crypto Event (Sep. 29 - Oct 1, Seoul)&#x27;, &#x27;Get your tickets&#x27; for KBW2026, and &#x27;September 29 Upbit Institutional Summit (Invite Only*) September 30 - Oct 1 Main Conference at Walkerhill Hotels &amp; Resorts&#x27;. The same official site&#x27;s About copy describes KBW as &#x27;Asia&#x27;s largest blockchain event&#x27; with a 7,000+ professional attendance figure referenced from the 2025 edition and notes topics including AI integration, real-world asset (RWA) tokenization, L1/L2 scalability, and the intersection of geopolitics and Web3. Chainwire/PRNewswire (2026-01-13, third-party factual dates) confirm KBW 2026 returns to Seoul September 29 - October 1 with Upbit as main sponsor.</p><p><strong>Inference</strong>: KBW is Seoul&#x27;s flagship blockchain/Web3 conference in the autumn season and draws a large crypto/Web3 professional audience; this is an awareness flag for Joe about strong parallel Web3 activity in the city, never an elimination and never a date recommendation.</p></div></div></details></li>
+</ul></div>
+<div class="related-month">
+<h3>November 2026</h3>
+<ul class="related-month-list">
+<li><details class="related-event"><summary><span class="related-event-name">Korea Fintech Week 2026</span> <span class="related-event-dates">2026-11-25 – 2026-11-27</span> <span class="chip chip-relevance">fintech</span> <span class="chip chip-severity chip-severity-low">low</span></summary><div class="related-event-body"><p class="related-event-source">Source: <a href="https://www.fsc.go.kr/comm/getFile?srvcId=BBSTY1&amp;upperNo=87427&amp;fileTy=ATTACH&amp;fileNo=1" target="_blank" rel="noopener noreferrer">Financial Services Commission official press release PDF (fsc.go.kr, fetched 2026-08-15): &#x27;2026 Korea Fintech Week To Be Held on Nov 25-27 — Beyond Finance, Into the Future&#x27; at aT Center (Yangjae-dong), Seoul; eighth annual global fintech expo focusing on AI, quantum computing, digital assets</a> — accessed 2026-08-15</p>
+<p class="related-event-verify">Human verification: needed</p>
+<p class="related-event-questions-label">Verification questions</p>
+<ul class="related-event-questions"><li>Confirm the final Korea Fintech Week 2026 programme and aT Center footprint (the FSC press release dated July 29, 2026 confirms November 25-27, 2026 at aT Center, Yangjae-dong, Seoul; the official fintechweek.or.kr site lists the same November 25-27 window at aT Center Halls 1/2).</li><li>Assess audience overlap: the FSC describes the 2026 expo as focusing on future financial technologies including AI and quantum computing, with 35 programs across fintech, investment, and employment tracks — a plausible audience overlap with a community AI/data gathering.</li></ul>
+<div class="related-event-evidence"><p><strong>Observed facts</strong>: Official Financial Services Commission press release (fsc.go.kr PDF, fetched 2026-08-15, dated July 29, 2026) states &#x27;The Financial Services Commission announced that the 2026 Korea Fintech Week is scheduled to be held for three days from November 25 to 27 at aT Center (Yangjae-dong) in Seoul&#x27; under the theme &#x27;Beyond Finance, Into the Future&#x27;, focusing on future financial technologies and trends such as AI and quantum computing, with 35 programs, national fintech pavilions, and seminars on agentic AI, quantum computing, digital assets, and cybersecurity. The official Korea Fintech Week site (fintechweek.or.kr, search-indexed 2026-08-15) lists &#x27;코리아 핀테크 위크 2026 | 2026.11.25 | aT센터 제1/2전시장&#x27;.</p><p><strong>Inference</strong>: Korea Fintech Week is a major government-hosted fintech exhibition in Seoul in late November with explicit AI/quantum/digital-asset content and a plausible overlapping startup/fintech audience; informational awareness flag for Joe, never an elimination and never a date recommendation.</p></div></div></details></li>
+</ul></div>
+<div class="related-month">
+<h3>December 2026</h3>
+<ul class="related-month-list">
+<li><details class="related-event"><summary><span class="related-event-name">COMEUP 2026 — Korea Startup Festival</span> <span class="related-event-dates">2026-12-09 – 2026-12-11</span> <span class="chip chip-relevance">ai</span> <span class="chip chip-severity chip-severity-low">low</span></summary><div class="related-event-body"><p class="related-event-source">Source: <a href="https://www.comeup.org/" target="_blank" rel="noopener noreferrer">COMEUP official organizer site (comeup.org, Korea Startup Forum; fetched 2026-08-15 — JS-rendered; third-party factual dates: mhnet.kr and ntradeshows.com both list COMEUP 2026 at COEX, Seoul, December 9-11, 2026)</a> — accessed 2026-08-15</p>
+<p class="related-event-verify">Human verification: needed</p>
+<p class="related-event-questions-label">Verification questions</p>
+<ul class="related-event-questions"><li>Confirm the final COMEUP 2026 dates and COEX footprint (Korea Startup Forum&#x27;s official comeup.org site describes COMEUP as the world&#x27;s most startup-like festival; third-party event calendars list December 9-11, 2026 at COEX, Seoul — confirm on the official site when the 2026 edition page publishes exact dates).</li><li>Assess audience overlap: COMEUP is Korea&#x27;s flagship global startup festival with deep-tech/AI startup content and a startup-builder/investor audience plausibly overlapping a community AI gathering.</li></ul>
+<div class="related-event-evidence"><p><strong>Observed facts</strong>: Official COMEUP site (comeup.org, fetched 2026-08-15) states &#x27;COMEUP(컴업)은 세상에서 가장 스타트업다운 행사입니다&#x27; (COMEUP is the most startup-like event in the world) and is operated by Korea Startup Forum; the site shell is JS-rendered and does not expose 2026 dates in static HTML. Korean business press (mhnet.kr, besuccess.com, third-party factual dates, 2026) report COMEUP 2026 will be held December 9-11, 2026 at COEX, Gangnam-gu, Seoul, described as a deep-tech and global startup festival; ntradeshows.com and neventum.com (third-party factual dates) list COMEUP 2026 at COEX Seoul on December 9-11, 2026.</p><p><strong>Inference</strong>: Korea&#x27;s largest startup festival at COEX in mid-December draws a large startup/AI/deep-tech audience and creates significant COEX-area activity; informational awareness flag for Joe, never an elimination and never a date recommendation.</p></div></div></details></li>
+</ul></div>
+</section>
+<section class="other-major-events" aria-labelledby="other-major-events-heading">
+<h2 id="other-major-events-heading">Other major events</h2>
+<p class="other-major-events-intro">Major city events below are logistics heads-ups only. They are not topic or audience recommendations and never change venue scoring or date selection automatically.</p>
+<ol class="other-major-events-list">
+<li><article class="major-other-event">
+<h3 class="major-other-event-name">Chuseok 2026 (Korean Thanksgiving Day)</h3>
+<p class="major-other-event-dates">2026-09-24 – 2026-09-26</p>
+<p class="major-other-event-tag">Major city event</p>
+<p class="major-other-event-note">Official VISITKOREA Korea Public Holidays page (english.visitkorea.or.kr, fetched 2026-08-15) lists &#x27;September 24-26 2026 Chuseok (September 24-26, Lunar Calendar August 15)&#x27; and states Chuseok is one of the year&#x27;s most important traditional holidays when &#x27;millions of people visit their hometown to celebrate with their families&#x27;; the same page states &#x27;During the official holidays, offices and banks are closed&#x27; and that during official Korean public holidays &#x27;government offices and banks are closed. However, palaces, museums, department stores, and amusement facilities are open.&#x27;</p>
+<p class="major-other-event-source">Source: <a href="https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=140038" target="_blank" rel="noopener noreferrer">Korea Tourism Organization / VISITKOREA official page (english.visitkorea.or.kr, fetched 2026-08-15): Korea Public Holidays 2026 — &#x27;September 24-26 2026 Chuseok (September 24-26, Lunar Calendar August 15)&#x27;; Chuseok is one of the year&#x27;s most important traditional holidays; millions of people visit their hometown</a></p>
+<p class="major-other-event-verify">Verify: Confirm the final Chuseok 2026 travel period and any mass-travel congestion, transport, or hotel-demand effects in Seoul during the late-September holiday window (the official VISITKOREA holiday page confirms September 24-26, 2026 and states millions of people travel to their hometowns during Chuseok).; Confirm whether offices/banks and many businesses close during the Chuseok holiday, affecting venue staffing and service availability (VISITKOREA states government offices and banks are closed during official Korean public holidays).</p>
+</article></li>
+<li><article class="major-other-event">
+<h3 class="major-other-event-name">National Foundation Day (Gaecheonjeol) 2026 + substitute holiday</h3>
+<p class="major-other-event-dates">2026-10-03 – 2026-10-05</p>
+<p class="major-other-event-tag">Major city event</p>
+<p class="major-other-event-note">Official VISITKOREA Korea Public Holidays page (fetched 2026-08-15) lists &#x27;October 3 2026 National Foundation Day (October 3) * Observed October 5&#x27; and states during official Korean public holidays &#x27;government offices and banks are closed&#x27; (closure and service-availability effect). Korean public-holiday reference pages (dallyeok.com, dayoff.ttpk.co.kr, third-party factual dates) state National Foundation Day 2026 falls Saturday October 3 with the substitute holiday Monday October 5.</p>
+<p class="major-other-event-source">Source: <a href="https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=140038" target="_blank" rel="noopener noreferrer">Korea Tourism Organization / VISITKOREA official page (english.visitkorea.or.kr, fetched 2026-08-15): &#x27;October 3 2026 National Foundation Day (October 3) * Observed October 5&#x27;; government offices and banks closed on official public holidays</a></p>
+<p class="major-other-event-verify">Verify: Confirm the 2026 National Foundation Day holiday treatment and substitute day (VISITKOREA lists October 3, 2026 as National Foundation Day with October 5 observed; the October 3 date falls on a Saturday in 2026, and the substitute-holiday application is a Korean public-holiday rule to confirm).; Confirm whether the public holiday creates office/bank closures, transport-pattern changes, or hotel/venue-demand effects in Seoul on those dates (VISITKOREA states government offices and banks are closed during official Korean public holidays).</p>
+</article></li>
+<li><article class="major-other-event">
+<h3 class="major-other-event-name">Hangeul Day 2026</h3>
+<p class="major-other-event-dates">2026-10-09</p>
+<p class="major-other-event-tag">Major city event</p>
+<p class="major-other-event-note">Official VISITKOREA Korea Public Holidays page (fetched 2026-08-15) lists &#x27;October 9 2026 Hangeul Day (October 9)&#x27; and states during official Korean public holidays &#x27;government offices and banks are closed&#x27; (closure and service-availability effect).</p>
+<p class="major-other-event-source">Source: <a href="https://english.visitkorea.or.kr/svc/contents/contentsView.do?vcontsId=140038" target="_blank" rel="noopener noreferrer">Korea Tourism Organization / VISITKOREA official page (english.visitkorea.or.kr, fetched 2026-08-15): &#x27;October 9 2026 Hangeul Day (October 9)&#x27;; government offices and banks closed on official public holidays</a></p>
+<p class="major-other-event-verify">Verify: Confirm the 2026 Hangeul Day public-holiday treatment and any office/bank closures, transport-pattern changes, or venue-service effects in Seoul (VISITKOREA lists October 9, 2026 as Hangeul Day and states government offices and banks are closed during official Korean public holidays).; Confirm whether Hangeul Day affects venue or service availability in Seoul on that date (single-day national holiday; no material crowding event expected).</p>
+</article></li>
+</ol>
+</section>
+  <section class="provenance"><h2>Provenance</h2><ul><li><strong>Source bundle version</strong>: <code>research/seoul/2026-q4/.bundle-2</code></li><li><strong>Source lookup</strong>: resolved <code>research/seoul/2026-q4/current/</code> once at generation time to the immutable bundle above</li><li><strong>Generated</strong>: 2026-08-15</li><li><strong>Schema version</strong>: 2.4</li><li><code>research/seoul/2026-q4/.bundle-2/event_plan.json</code> — SHA-256: <code>e93236bcbf86c60a72987f2e978d6162bd2de9341ed80fe932b9735a865bc0db</code></li><li><code>research/seoul/2026-q4/.bundle-2/event_plan.md</code> — SHA-256: <code>c744d61efb6d52acc125792559263d54dcc660481c71015b96896e2be09e11a3</code></li><li><code>research/seoul/2026-q4/.bundle-2/next_steps.md</code> — SHA-256: <code>ad059109af37de8fce5f5387caa756de745c672c19a897bdd6fc5c847fa5b7a5</code></li><li><code>research/seoul/2026-q4/.bundle-2/sources.md</code> — SHA-256: <code>27811807b932edba3125e51d0f64ebb5f78320431c2a13a7cc0624d34190f493</code></li></ul></section>
+  <footer class="matrix-footer">
+    Projection of event_plan.json — schema 2.4, phase venue, generated 2026-08-15T00:00:00Z
+  </footer>
+</main>
+<script>
+/* plan-event venue matrix — inline JavaScript only.
+   This script performs two local interactions only:
+     1. column-header sorting of the rendered rows (deterministic, typed),
+     2. toggling the details row that follows each venue row.
+   It never fetches anything, never loads external resources, and never
+   interpolates data into script source: all values are read from the DOM
+   (data attributes and text content) that the server-side renderer
+   escaped. Sorting and expansion work without JavaScript as well: the
+   table is fully visible and links are ordinary anchors. */
+(function () {
+  "use strict";
+  var table = document.getElementById("venue-matrix");
+  if (!table) { return; }
+  var tbody = table.querySelector("tbody");
+  var headers = Array.prototype.slice.call(table.querySelectorAll("thead th"));
+  var NUMERIC_KEYS = { score: true, cost: true, capacity: true };
+  var TIER_RANK = { eligible: 0, shortlist_ready: 1, lead: 2 };
+  var currentKey = null;
+  var currentDir = 1;
+
+  function venueRows() {
+    return Array.prototype.slice.call(tbody.querySelectorAll("tr.venue-row"));
+  }
+
+  function sortValue(row, key) {
+    var raw = row.getAttribute("data-sort-" + key);
+    if (raw === null || raw === "") { return null; }
+    if (NUMERIC_KEYS[key]) {
+      var num = parseFloat(raw);
+      return isNaN(num) ? null : num;
+    }
+    if (key === "tier") { return TIER_RANK[raw] !== undefined ? TIER_RANK[raw] : null; }
+    return raw;
+  }
+
+  function compare(aVal, bVal, dir) {
+    var aIsNull = (aVal === null);
+    var bIsNull = (bVal === null);
+    if (aIsNull && bIsNull) { return 0; }
+    if (aIsNull) { return 1; }
+    if (bIsNull) { return -1; }
+    if (aVal < bVal) { return -dir; }
+    if (aVal > bVal) { return dir; }
+    return 0;
+  }
+
+  function sortRows(key, dir) {
+    var rows = venueRows();
+    rows.sort(function (a, b) {
+      var aVal = sortValue(a, key);
+      var bVal = sortValue(b, key);
+      var cmp = compare(aVal, bVal, dir);
+      if (cmp !== 0) { return cmp; }
+      var aName = (a.getAttribute("data-sort-venue") || "").toLowerCase();
+      var bName = (b.getAttribute("data-sort-venue") || "").toLowerCase();
+      if (aName < bName) { return -1; }
+      if (aName > bName) { return 1; }
+      return 0;
+    });
+    var fragment = document.createDocumentFragment();
+    rows.forEach(function (row) {
+      // Pair the venue row with its details row BEFORE either is detached:
+      // once the row is moved into the fragment it no longer has a
+      // nextElementSibling, so the lookup must happen first. Appending
+      // row then details keeps every detail row adjacent to its own venue
+      // row through the sort, so toggling stays valid after every reorder.
+      var details = row.nextElementSibling;
+      fragment.appendChild(row);
+      if (details && details.classList.contains("venue-details")) {
+        fragment.appendChild(details);
+      }
+    });
+    tbody.appendChild(fragment);
+  }
+
+  function setHeaderState(key) {
+    headers.forEach(function (th) {
+      var thKey = th.getAttribute("data-sort");
+      th.setAttribute("aria-sort", thKey === key ? (currentDir === 1 ? "ascending" : "descending") : "none");
+    });
+  }
+
+  headers.forEach(function (th) {
+    var key = th.getAttribute("data-sort");
+    if (!key) { return; }
+    th.setAttribute("tabindex", "0");
+    th.setAttribute("role", "button");
+    th.addEventListener("click", function () {
+      if (currentKey === key) {
+        currentDir = -currentDir;
+      } else {
+        currentKey = key;
+        currentDir = 1;
+      }
+      sortRows(currentKey, currentDir);
+      setHeaderState(currentKey);
+    });
+    th.addEventListener("keydown", function (event) {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        th.click();
+      }
+    });
+  });
+
+  function toggleRow(row) {
+    var details = row.nextElementSibling;
+    if (!details || !details.classList.contains("venue-details")) { return; }
+    var hidden = details.hasAttribute("hidden");
+    if (hidden) {
+      details.removeAttribute("hidden");
+      row.setAttribute("aria-expanded", "true");
+    } else {
+      details.setAttribute("hidden", "hidden");
+      row.setAttribute("aria-expanded", "false");
+    }
+  }
+
+  venueRows().forEach(function (row) {
+    row.addEventListener("click", function () { toggleRow(row); });
+    row.addEventListener("keydown", function (event) {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        toggleRow(row);
+      }
+    });
+  });
+})();
+</script>
+</body>
+</html>

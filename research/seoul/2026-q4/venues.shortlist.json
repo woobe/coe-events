@@ -1,0 +1,617 @@
+{
+  "meta": {
+    "generator": "score_venues.py",
+    "schema_version": "2.4",
+    "budget_usd": 5000.0,
+    "target_attendance": 50,
+    "event_date": "2026-09-26",
+    "event_duration_hours": 8,
+    "weights": {
+      "budget_efficiency": 0.2,
+      "capacity_fit": 0.2,
+      "catering_flexibility": 0.15,
+      "recording_suitability": 0.15,
+      "booking_path": 0.1,
+      "evidence_freshness": 0.1,
+      "technical_readiness": 0.05,
+      "event_window_fit": 0.05
+    },
+    "tier_order": [
+      "eligible",
+      "shortlist_ready",
+      "lead"
+    ]
+  },
+  "eligible": [],
+  "shortlist_ready": [
+    {
+      "name": "Mongsang Space (Mullae) — Main Hall",
+      "city_slug": "seoul-kr",
+      "address": "Ace NS Tower B102, 8 Mullae-buk-ro, Yeongdeungpo-gu, Seoul (Mongsang Space; about 80 pyeong independent space)",
+      "capacity_comfortable": 50,
+      "capacity_basis": "venue_claim",
+      "screen_status": "unknown",
+      "wifi_status": "unknown",
+      "catering_policy": "in_house_available",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": 561.2,
+      "cost_basis": "estimated_from_rate",
+      "cost_local_amount": 792000.0,
+      "cost_local_currency": "KRW",
+      "hourly_rate_usd": 70.15,
+      "estimated_hours": 8,
+      "rate_estimate_note": "Official Mongsang Space pricing page (mongsang-space.com/pricing, fetched 2026-08-15) publishes: base rental KRW 88,000/hour weekdays (Mon-Thu) and KRW 99,000/hour weekends (주말; Friday and holidays included) — Saturday applies the weekend rate. 8-hour 09:00-17:00 estimate = 8 x KRW 99,000 = KRW 792,000. USD equivalent at ECB 2026-08-14 reference (1 KRW = 0.0007085799 USD): KRW 99,000/hour x 0.0007085799 = USD 70.15/hour; x 8h = USD 561.20. The pricing page also states max 50 people (사전 문의 필수), base 6 people with KRW 10,000/person added beyond 6, event setup fee KRW 50,000 (up to 20) / KRW 100,000 (over 20), and catering from KRW 10,000/person — so the all-in cost for 50 people exceeds the base 8h rate; a written quote is required.",
+      "hourly_rate_local": 99000.0,
+      "rate_currency": "KRW",
+      "booking_url": "https://www.mongsang-space.com/pricing",
+      "cost_rate_unit": "hour",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "latitude": null,
+      "longitude": null,
+      "verification_question_kinds": [
+        "event_window",
+        "availability",
+        "screen",
+        "wifi",
+        "final_quote",
+        "booking_terms"
+      ],
+      "verification_questions": [
+        "Confirm the booking hours for the assessed 09:00-17:00 Saturday window (the pricing page publishes hourly rates but not opening/closing hours).",
+        "Confirm Saturday availability and the reservation flow (the site states a pre-reservation (선예약) system is used).",
+        "Confirm screen/projection availability (the site mentions 방음/방송/live-streaming support and event AV services, but a presentation screen/projector is not itemized on the pricing page).",
+        "Confirm Wi-Fi availability for attendees (not itemized on the pricing page).",
+        "Confirm the exact all-in quote for a 50-person 8-hour Saturday event: base 8h at KRW 99,000/h = KRW 792,000, plus KRW 10,000/person over the base 6 (approx. KRW 440,000 for 50) and setup fee KRW 100,000 (over 20 people), catering optional — written quote required.",
+        "Confirm booking terms and the maximum comfortable seated configuration for 50 people (the about page states max 60; the pricing page says max 50 with prior inquiry)."
+      ],
+      "source_url": "https://www.mongsang-space.com/pricing",
+      "source_title": "몽상가들 스페이스 — 대관 요금 안내 (official Mongsang Space pricing page, mongsang-space.com, fetched 2026-08-15): base KRW 88,000/h weekday (Mon-Thu), KRW 99,000/h weekend (Fri/holidays incl.); max 50 pax with prior inquiry; catering from KRW 10,000/person; setup fee KRW 50,000/100,000; address 서울 영등포구 문래북로8 에이스NS타워 B102호",
+      "accessed_on": "2026-08-15",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "Official Mongsang Space pricing page (mongsang-space.com/pricing, fetched 2026-08-15) states: base rental fee weekday (Mon-Thu) KRW 88,000/hour and weekend KRW 99,000/hour (Friday and holidays included); sub seminar room KRW 33,000/hour weekday / KRW 44,000/hour weekend; catering from KRW 10,000/person; max 50 people with prior inquiry required; base 6 people with KRW 10,000/person for each additional person; event setup fee KRW 50,000 (up to 20 people) / KRW 100,000 (over 20 people); the homepage (mongsang-space.com, fetched 2026-08-15) describes the space as an about-80-pyeong premium multi-purpose cultural space in Mullae-dong, Yeongdeungpo-gu, Seoul with soundproofing and unlimited parking, address 서울특별시 영등포구 문래북로8 에이스NS타워 B102호, and the about page states max 60.",
+        "inference": "Mongsang Space is a small private event venue in Yeongdeungpo with published KRW hourly rates; at KRW 99,000/h the base 8-hour cost is well within the USD 5,000 soft budget, but the per-person surcharge and setup fee mean the all-in 50-person cost needs a written quote; screen/Wi-Fi/window are unconfirmed, so it stays shortlist_ready pending confirmation."
+      },
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "duration_unconfirmed",
+        "map_location_unknown",
+        "stale_evidence"
+      ],
+      "score": 0.6876,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.8878,
+          "weight": 0.2,
+          "contribution": 0.1776
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 0.7,
+          "weight": 0.15,
+          "contribution": 0.105
+        },
+        "recording_suitability": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 0.8,
+          "weight": 0.1,
+          "contribution": 0.08
+        },
+        "technical_readiness": {
+          "factor": 0.0,
+          "weight": 0.05,
+          "contribution": 0.0
+        },
+        "event_window_fit": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "total": 0.6876
+      }
+    },
+    {
+      "name": "COEX — Conference Room 300 (Conference Rooms, 3F)",
+      "city_slug": "seoul-kr",
+      "address": "COEX, 513 Yeongdong-daero, Gangnam-gu, Seoul (Conference Rooms 3F, Room 300)",
+      "capacity_comfortable": 114,
+      "capacity_basis": "venue_claim",
+      "screen_status": "confirmed",
+      "wifi_status": "unknown",
+      "catering_policy": "unknown",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "booking_url": "https://business.coex.co.kr/meeting-room/",
+      "cost_rate_unit": "unknown",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "latitude": null,
+      "longitude": null,
+      "verification_question_kinds": [
+        "cost_unknown",
+        "event_window",
+        "wifi",
+        "availability",
+        "final_quote",
+        "booking_terms"
+      ],
+      "verification_questions": [
+        "Confirm the 2026 rental fee for Conference Room 300: the official COEX business site publishes room specs but not rates (rates are inquiry-based via the rental consultation/application path).",
+        "Confirm the rental hours and whether the assessed 09:00-17:00 Saturday window is bookable (COEX meeting-room hours are not published on the fetched pages).",
+        "Confirm Wi-Fi availability for attendees (COEX provides venue Wi-Fi in public areas but per-room Wi-Fi is not stated on the meeting-room page).",
+        "Confirm Saturday availability for the assessed window (COEX is an active exhibition/convention venue with a busy calendar).",
+        "Confirm the final quote and booking terms via the official COEX rental inquiry path (임대절차 및 상담 / meeting-room rental application).",
+        "Confirm that Room 300 (264 m², 114 classroom / 225 theatre per official specs) is available as a single configured room for a 50-person event."
+      ],
+      "source_url": "https://business.coex.co.kr/meeting-room/conference/",
+      "source_title": "COEX BUSINESS — 컨퍼런스룸(남) 3F (official COEX meeting-room page, business.coex.co.kr, fetched 2026-08-15): 29 conference rooms on 3F, 20-300 pax, A/V system and fixed projector (6,200 ANSI) for rooms 207 m² and above; Room 300: 264 m², 114 classroom / 225 theatre; screen 3.6x2.7 (180\"), 6,200 ANSI projector",
+      "accessed_on": "2026-08-15",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "Official COEX BUSINESS meeting-room page (business.coex.co.kr/meeting-room/conference/, fetched 2026-08-15) states the Conference Rooms (남) on 3F comprise 29 meeting rooms usable as 50 sub-divided rooms, capacity 20-300 pax, with A/V system, fixed projector (6,200 ANSI) and simultaneous-interpretation booths for rooms 207 m² and above, and a fixed stage for rooms 207 m² and above. Room-by-room table lists Room 300: 14x18x3.5 m, 264 m², 114 classroom / 225 theatre / 90 banquet; screen 3.6x2.7 m (180\") and 6,200 ANSI projector. The COEX main site (coex.co.kr, fetched 2026-08-15) describes COEX as a convention and exhibition center at 513 Yeongdong-daero, Gangnam-gu, Seoul and directs rental inquiries to the rental-consultation path.",
+        "inference": "COEX Conference Room 300 is a well-equipped mid-size meeting room with confirmed screen/projector and capacity comfortably above 50; the rental fee and window are inquiry-only, so the record stays shortlist_ready with cost/window/availability questions pending a quote."
+      },
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "cost_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "duration_unconfirmed",
+        "map_location_unknown",
+        "stale_evidence"
+      ],
+      "score": 0.53,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.5,
+          "weight": 0.2,
+          "contribution": 0.1
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "recording_suitability": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 0.8,
+          "weight": 0.1,
+          "contribution": 0.08
+        },
+        "technical_readiness": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "event_window_fit": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "total": 0.53
+      }
+    },
+    {
+      "name": "DDP — Design Hall (Design Lab 3F)",
+      "city_slug": "seoul-kr",
+      "address": "281 Eulji-ro, Jung-gu, Seoul (DDP, Design Lab 3F; Seoul Design Foundation)",
+      "capacity_comfortable": 110,
+      "capacity_basis": "venue_claim",
+      "screen_status": "unknown",
+      "wifi_status": "unknown",
+      "catering_policy": "unknown",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "booking_url": "https://deep.ddp.or.kr/",
+      "cost_rate_unit": "unknown",
+      "opening_hours": "08:00-20:00 (convention, 12h per official page)",
+      "closing_time": "20:00",
+      "max_booking_hours": null,
+      "event_window_status": "allows_to_5",
+      "event_window_evidence": {
+        "url": "http://www.ddp.or.kr/?menuno=714",
+        "title": "DDP 공간안내 — 디자인홀, 디자인랩, 대관 공간 (official DDP space page)",
+        "accessed_on": "2026-08-15",
+        "claim": "디자인홀 (Design Hall) at Design Lab 3F, 627.6 m², 약 110명 (about 110 people), for lectures/presentations/forums; 대관 가능 시간 컨벤션 08:00 ~ 20:00 (12시간) — the convention window 08:00-20:00 covers the assessed 09:00-17:00 window."
+      },
+      "latitude": null,
+      "longitude": null,
+      "verification_question_kinds": [
+        "cost_unknown",
+        "screen",
+        "wifi",
+        "availability",
+        "final_quote",
+        "booking_terms"
+      ],
+      "verification_questions": [
+        "Confirm the 2026 Design Hall rental fee: the official DDP space page lists capacity, area, and hours but not a rate; the 2026 regular-rental notice (culture.seoul.go.kr, DDP 아트홀·야외공간 정기대관 공고) publishes Art Hall 1/2 and Conference Hall daily rates but the Design Hall fee requires an application via deep.ddp.or.kr.",
+        "Confirm screen/AV availability in the Design Hall (the official space page lists the room, waiting rooms, lockers, interpretation booth, control room, lounge, and stepped chairs but does not itemize a presentation screen or projector).",
+        "Confirm Wi-Fi availability for attendees in the Design Hall (not stated on the official space page).",
+        "Confirm Saturday availability and the application/심의 (review-committee) calendar for the assessed window (DDP rental requires an application, committee review, and approval; regular-rental windows are announced in advance).",
+        "Confirm the final quote and booking terms via the DDP rental site (deep.ddp.or.kr; contact 1833-4321, venue@seouldesign.or.kr) including any non-profit/community rates.",
+        "Confirm whether the Design Hall's stepped-chair seating (~30) plus chairs (~80) configuration comfortably seats 50 for an all-day event (official page: 계단식의자 약 30명, 의자 약 80대)."
+      ],
+      "source_url": "http://www.ddp.or.kr/?menuno=714",
+      "source_title": "DDP 공간안내 — 디자인홀 (official DDP space page, ddp.or.kr): Design Lab 3F, 627.6 m², about 110 people, lectures/presentations/forums; convention hours 08:00-20:00 (12h); waiting rooms, VIP waiting room, lockers, interpretation booth, control room, lounge",
+      "accessed_on": "2026-08-15",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "Official DDP space page (ddp.or.kr/?menuno=714, fetched 2026-08-15) states Design Hall (디자인홀) is at Design Lab 3F, 627.6 m², about 110 people capacity, for lectures/presentations/forums and various events, with general waiting room, VIP waiting room, locker room, interpretation booth, control room, and lounge; convention rental window 08:00-20:00 (12 hours); equipment note lists HDMI video and 3.5mm audio connections, stepped chairs (~30) and chairs (~80). The Seoul Culture Portal 2026 regular-rental notice for DDP Art Hall/outdoor spaces (culture.seoul.go.kr/bbs/B0000000/view.do?nttId=15313, fetched 2026-08-15) publishes 2026 daily rates for Art Hall 1 (2,992 m²; KRW 17,969,950-28,238,490 depending on season, VAT included), Art Hall 2 (1,547 m²; KRW 9,291,280-14,600,580), and Conference Hall (414 m²; KRW 2,486,480-3,907,330), with the September/October high-season multiplier 1.1 and Art Hall base window 08:00-20:00; the notice states rental applications are via deep.ddp.or.kr with committee review (대관심의위원회).",
+        "inference": "DDP Design Hall is an official Seoul Design Foundation event space of suitable size (about 110 pax) with a published convention window that covers the assessed 09:00-17:00 period, but its specific rental fee is not published on the fetched pages (application/quote required), so the record keeps cost unknown with a confirm-cost question and stays shortlist_ready pending a quote."
+      },
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "cost_unknown",
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "map_location_unknown",
+        "stale_evidence"
+      ],
+      "score": 0.53,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.5,
+          "weight": 0.2,
+          "contribution": 0.1
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "recording_suitability": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 0.8,
+          "weight": 0.1,
+          "contribution": 0.08
+        },
+        "technical_readiness": {
+          "factor": 0.0,
+          "weight": 0.05,
+          "contribution": 0.0
+        },
+        "event_window_fit": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "total": 0.53
+      }
+    },
+    {
+      "name": "Nodeul Island — Livehouse (Nodeul Island 1F)",
+      "city_slug": "seoul-kr",
+      "address": "445 Yangnyeong-ro, Yongsan-gu, Seoul (Nodeul Island 1F; Nodeul Island, 445-446 Yangnyeong-ro, Yongsan-gu, Seoul, Republic of Korea per official footer)",
+      "capacity_comfortable": 456,
+      "capacity_basis": "venue_claim",
+      "screen_status": "unknown",
+      "wifi_status": "unknown",
+      "catering_policy": "unknown",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": 4251.48,
+      "cost_basis": "published_rate",
+      "cost_local_amount": 6000000.0,
+      "cost_local_currency": "KRW",
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "booking_url": "https://nodeul.org/rent-calendar/?calendar_type=rent-livehouse",
+      "cost_rate_unit": "event",
+      "opening_hours": "10:00-23:00 (performance rental); prep/teardown rental 10:00-22:00",
+      "closing_time": "23:00",
+      "max_booking_hours": null,
+      "event_window_status": "allows_to_5",
+      "event_window_evidence": {
+        "url": "https://nodeul.org/facility/livehouse/",
+        "title": "노들섬 라이브하우스 대관 (official Nodeul Island facility page)",
+        "accessed_on": "2026-08-15",
+        "claim": "공연 대관 시간: 10시 ~ 23시 (performance rental hours 10:00-23:00); prep/teardown rental 10:00-22:00 — the venue is open through the 17:00 end of the assessed 09:00-17:00 window, but the published standard start is 10:00, so a 09:00 start must be confirmed."
+      },
+      "latitude": null,
+      "longitude": null,
+      "verification_question_kinds": [
+        "event_window",
+        "availability",
+        "screen",
+        "wifi",
+        "final_quote",
+        "booking_terms"
+      ],
+      "verification_questions": [
+        "Confirm whether a 09:00 start is possible for an 8-hour event: the official Livehouse page publishes performance rental hours 10:00-23:00 and prep/teardown slots 10:00-22:00, so the assessed 09:00-17:00 window's start is not covered by the published standard hours.",
+        "Confirm Saturday availability for the assessed window on the specific date (the official rent calendar at nodeul.org/rent-calendar/?calendar_type=rent-livehouse shows per-day availability; the Livehouse is a working concert venue with an active performance schedule).",
+        "Confirm screen/projection availability in the Livehouse (the facility page lists sound/lighting/instrument equipment included and a house manager, but does not itemize a presentation screen or projector).",
+        "Confirm Wi-Fi availability for attendees in the Livehouse (not stated on the facility page).",
+        "Confirm the exact all-in price for an 8-hour Saturday event: the published rate is KRW 4,000,000 (1 performance) or KRW 6,000,000 (2 performances, applicable when runtime exceeds 3h) VAT excluded; prep/teardown and any event-specific fees are separate.",
+        "Confirm booking terms via the official rental calendar/application (대관신청) and whether a community/private event (non-concert) is accepted at the performance-rental rate."
+      ],
+      "source_url": "https://nodeul.org/facility/livehouse/",
+      "source_title": "노들섬 라이브하우스 (official Nodeul Island Livehouse facility page, nodeul.org): 1F, 1,320 m², 456 designated seats / 708 standing; performance rental Sat/Sun/holiday KRW 4,000,000 (1회) / KRW 6,000,000 (2회) VAT excluded; hours 10:00-23:00; sound/lighting/instruments, house manager, ushers included",
+      "accessed_on": "2026-08-15",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "Official Nodeul Island Livehouse facility page (nodeul.org/facility/livehouse/, fetched 2026-08-15) states: location Nodeul Island 1F; area 1,320 m²; capacity 456 designated seats / 708 standing; performance rental hours 10:00-23:00, prep/teardown rental 10:00-22:00; 2026 rental rate table (VAT excluded) — Sat/Sun/holiday event rental KRW 4,000,000 for 1 performance and KRW 6,000,000 for 2 performances, with the rule that a single performance exceeding 3 hours is billed as 2 performances; prep/teardown rental KRW 1,067,000 per slot on Sat/Sun/holidays; rental includes sound/lighting/instrument equipment, one house manager, four ushers, dressing rooms, lobby, ticket booth. USD conversion basis: ECB 2026-08-14 reference (EUR 1 = USD 1.1567; EUR 1 = KRW 1632.42; 1 KRW = 0.0007085799 USD); an 8-hour 09:00-17:00 event would exceed the 3-hour single-performance runtime, so the published Saturday 2-performance rate KRW 6,000,000 x 0.0007085799 = USD 4,251.48 is used as the 8-hour cost figure; VAT excluded; separate prep/teardown and event-specific terms apply. The official Nodeul Island homepage (nodeul.org, fetched 2026-08-15) notes a 2026 second-half rolling rental notice (노들섬 2026년 하반기 수시대관 공고) and that the '노들 글로벌 예술섬' construction project may change facility conditions; the rent calendar shows per-day availability for the Livehouse and other spaces.",
+        "inference": "Nodeul Island Livehouse is a Seoul city-run performance venue (Seoul Foundation for Arts & Culture) with published 2026 KRW rates and a standard performance window through 23:00; it is oversized for a 50-person community event (456-708 capacity) and its published start time is 10:00, so the assessed 09:00-17:00 window requires start-time confirmation; retained as a scored candidate with availability/screen/Wi-Fi/quotes open."
+      },
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "oversized_capacity",
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "map_location_unknown",
+        "stale_evidence"
+      ],
+      "score": 0.2599,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.1497,
+          "weight": 0.2,
+          "contribution": 0.0299
+        },
+        "capacity_fit": {
+          "factor": 0.0,
+          "weight": 0.2,
+          "contribution": 0.0
+        },
+        "catering_flexibility": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "recording_suitability": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 0.8,
+          "weight": 0.1,
+          "contribution": 0.08
+        },
+        "technical_readiness": {
+          "factor": 0.0,
+          "weight": 0.05,
+          "contribution": 0.0
+        },
+        "event_window_fit": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "total": 0.2599
+      }
+    }
+  ],
+  "lead": [
+    {
+      "name": "DDP — Conference Hall (414 m²)",
+      "city_slug": "seoul-kr",
+      "address": "281 Eulji-ro, Jung-gu, Seoul (DDP; Seoul Design Foundation)",
+      "capacity_comfortable": 0,
+      "capacity_basis": "unknown",
+      "screen_status": "unknown",
+      "wifi_status": "unknown",
+      "catering_policy": "unknown",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": 2768.66,
+      "cost_basis": "published_rate",
+      "cost_local_amount": 3907330.0,
+      "cost_local_currency": "KRW",
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "booking_url": "https://deep.ddp.or.kr/",
+      "cost_rate_unit": "day",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "latitude": null,
+      "longitude": null,
+      "verification_question_kinds": [
+        "capacity",
+        "event_window",
+        "screen",
+        "wifi",
+        "availability",
+        "final_quote",
+        "booking_terms"
+      ],
+      "verification_questions": [
+        "Confirm the Conference Hall's capacity and room configuration for a 50-person seated event (the 2026 DDP rental notice publishes the 414 m² area and daily rate but not a seat count; DDP's standard configuration for the Conference Hall must be confirmed).",
+        "Confirm the Conference Hall's rental hours for the assessed 09:00-17:00 window (the notice states the Art Hall base window is 08:00-20:00; the Conference Hall window is not separately stated).",
+        "Confirm screen/AV availability in the Conference Hall (not itemized in the 2026 rental notice).",
+        "Confirm Wi-Fi availability for attendees (not stated in the notice).",
+        "Confirm Saturday availability and the application/심의 calendar for the assessed window (DDP rental requires committee review and approval).",
+        "Confirm the final quote and booking terms via deep.ddp.or.kr (the published high-season daily rate is KRW 3,907,330 VAT included; any community/non-profit rates or additional fees need confirmation).",
+        "Confirm whether the published 2026 rate remains current for the assessed window (rates are published per rental period; the notice is the 2026 regular-rental announcement)."
+      ],
+      "source_url": "https://culture.seoul.go.kr/culture/bbs/B0000000/view.do?nttId=15313&menuNo=200050&pageIndex=12",
+      "source_title": "Seoul Culture Portal — [DDP] 2026년 DDP 아트홀·야외공간 정기대관 공고 (official notice, culture.seoul.go.kr, fetched 2026-08-15): DDP Conference Hall 414 m², 2026 daily rates VAT included (high season 1.1 = KRW 3,907,330; Sep/Oct apply 1.1); Art Hall base window 08:00-20:00; applications via deep.ddp.or.kr",
+      "accessed_on": "2026-08-15",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "Official Seoul Culture Portal DDP 2026 regular-rental notice (culture.seoul.go.kr, nttId=15313, fetched 2026-08-15) states DDP rental spaces include Art Hall 1 (2,992 m²), Art Hall 2 (1,547 m²), and Conference Hall (414 m²), with 2026 daily rate table (VAT included): Conference Hall off-season 0.7 = KRW 2,486,480, 0.9 = KRW 3,196,900, standard 1.0 = KRW 3,552,120, high season 1.1 = KRW 3,907,330; the monthly multiplier table applies 1.1 for September and October; the notice states the Art Hall base window is 08:00-20:00 (12h) and that rental requires an online application via deep.ddp.or.kr with review by the rental review committee (대관심의위원회), advance deposit (20%), mid-payment (30%), and balance payment before use. USD conversion basis: ECB 2026-08-14 reference (EUR 1 = USD 1.1567; EUR 1 = KRW 1632.42; 1 KRW = 0.0007085799 USD); the September/October high-season daily rate KRW 3,907,330 x 0.0007085799 = USD 2,768.66. The Conference Hall capacity is not published on the fetched notice (area only), so capacity is a verification question; VAT included.",
+        "inference": "DDP Conference Hall has a published 2026 KRW daily rate within the USD 5,000 soft budget, but its capacity and equipment are not published in the notice, so it is retained as a priced lead pending capacity/AV/window confirmation."
+      },
+      "venue_tier": "lead",
+      "tier_reasons": [
+        "material verification question(s): capacity",
+        "capacity_comfortable 0 below minimum 40"
+      ],
+      "venue_flags": [
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "duration_unconfirmed",
+        "map_location_unknown",
+        "stale_evidence"
+      ],
+      "score": null,
+      "score_breakdown": null
+    },
+    {
+      "name": "KT&G SangSangMadang Hongdae — Live Hall",
+      "city_slug": "seoul-kr",
+      "address": null,
+      "capacity_comfortable": 0,
+      "capacity_basis": "unknown",
+      "screen_status": "unknown",
+      "wifi_status": "unknown",
+      "catering_policy": "unknown",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "booking_url": "https://www.sangsangmadang.com/rental/list",
+      "cost_rate_unit": "unknown",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "latitude": null,
+      "longitude": null,
+      "verification_question_kinds": [
+        "capacity",
+        "cost_unknown",
+        "location",
+        "event_window",
+        "screen",
+        "wifi",
+        "availability",
+        "final_quote"
+      ],
+      "verification_questions": [
+        "Confirm the Live Hall's capacity and whether it can be configured for a 50-person seated event (the official site lists the Live Hall as a music performance hall; capacity/seat configuration is not published on the fetched rental page).",
+        "Confirm the 2026 rental fee for the Live Hall (the official rental guide describes the process — STEP 1 reservation inquiry — but does not publish rates on the fetched page).",
+        "Confirm the exact street address of KT&G SangSangMadang Hongdae for the record (the official site identifies the Hongdae complex; the street address was not captured from the fetched page).",
+        "Confirm the rental hours for the assessed 09:00-17:00 window (music venue; performance-oriented scheduling).",
+        "Confirm screen/projection availability for a presentation event (the Live Hall is equipped for concerts; presentation equipment not itemized on the fetched page).",
+        "Confirm Wi-Fi availability for attendees (not stated on the fetched page).",
+        "Confirm Saturday availability for the assessed window (the venue runs a busy music/culture programme).",
+        "Confirm the final quote and booking terms via the official rental inquiry path (대관안내 STEP 1 예약문의; KT&G 상상마당 홍대 대관 02-330-6200)."
+      ],
+      "source_url": "https://www.sangsangmadang.com/rental/list",
+      "source_title": "KT&G 상상마당 — 대관안내 (official SangSangMadang rental guide, sangsangmadang.com, fetched 2026-08-15): rental available for each SangSangMadang space; process: STEP 1 reservation inquiry to the relevant department, then review/approval; Hongdae complex includes Live Hall (B2F performance hall), cinema, gallery, academy",
+      "accessed_on": "2026-08-15",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "Official KT&G SangSangMadang site (sangsangmadang.com/main/HD and /rental/list, fetched 2026-08-15) describes the Hongdae complex (홍대) with a Live Hall (라이브홀, B2F 공연장 / B1F performer waiting room, '음악 전문 공연장' music performance hall, phone 02-330-6200 extension 3), cinema, gallery, academy, and F&B; the rental guide states each space can be rented and the process is STEP 1 reservation inquiry to the relevant department, then schedule confirmation and review. The Live Hall's capacity and rental rates are not published on the fetched pages; the Wikipedia entry (third-party) gives the address as 서울특별시 마포구 어울마당로 65.",
+        "inference": "KT&G SangSangMadang Hongdae is a major Hongdae cultural complex with a rental program, but the Live Hall is a performance-oriented venue whose capacity, rate, and window are unpublished on the fetched pages; retained as a lead pending capacity/cost/window confirmation rather than a scored candidate."
+      },
+      "venue_tier": "lead",
+      "tier_reasons": [
+        "material verification question(s): capacity, location",
+        "capacity_comfortable 0 below minimum 40"
+      ],
+      "venue_flags": [
+        "cost_unknown",
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "duration_unconfirmed",
+        "map_location_unknown",
+        "stale_evidence"
+      ],
+      "score": null,
+      "score_breakdown": null
+    }
+  ]
+}

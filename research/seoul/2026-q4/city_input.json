@@ -1,0 +1,33 @@
+{
+  "city_slug": "seoul-kr",
+  "city_name": "Seoul",
+  "country": "South Korea",
+  "target_date": "2026-09-26",
+  "date_window": "2026-09-19 through 2026-10-31",
+  "target_attendance": 50,
+  "currency": "KRW",
+  "currency_assumptions": [
+    "Budget/scoring currency is USD; venue-local costs are recorded in KRW (cost_local_amount/cost_local_currency KRW).",
+    "USD-equivalent conversion basis for every converted KRW amount: ECB euro foreign exchange reference rate dated 2026-08-14 (EUR 1 = USD 1.1567; EUR 1 = KRW 1632.42), fetched 2026-08-15 from https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml (Cube time='2026-08-14') — derived 1 KRW = USD 0.0007085799 (USD per KRW = 1.1567 / 1632.42); equivalently 1 USD = 1411.2735 KRW. Every venue rate_estimate_note records this dated basis. No FX rate is invented; where no dated conversion basis exists the USD equivalent stays null with a question."
+  ],
+  "workflow_phase": "venue",
+  "budget_usd": 5000.0,
+  "event_duration_hours": 8,
+  "decision_note": "technical placeholder for pipeline integrity; Joe decides the date.",
+  "research_completed_on": "2026-08-15",
+  "open_questions": [
+    "Event window: 09:00-17:00 (8 hours), per the locked plan.",
+    "Calendar-awareness research coverage is 2026-09-15 through 2026-12-15 and is informational only; no calendar record is an elimination, tier input, or date recommendation.",
+    "target_date 2026-09-26 is a neutral technical placeholder required by score/bundle/summary integrity; it is never a recommendation and no output may present it as one.",
+    "Candidate Saturdays are operational input only (all seven, from the locked date_window): 2026-09-19, 2026-09-26, 2026-10-03, 2026-10-10, 2026-10-17, 2026-10-24, 2026-10-31. They are not a recommendation, an elimination set, or a date selection; Joe alone decides the date.",
+    "Venue open question: most Seoul conference/hotel venues (COEX, DDP, KT&G SangSangMadang, hotels) are inquiry-only with no published KRW rates; written quotes are required before any cost claim above published-rate or estimated-from-rate status. Venues with published rates on their own pages this pass: Nodeul Island Livehouse (KRW 4,000,000 Saturday performance rental), DDP Art Hall 2 / Conference Hall (published 2026 daily rate table), Mongsang Space Mullae (KRW 99,000/hour weekend).",
+    "Impact Hub Seoul does not exist: the installed skill reference impact_hub_locations.json (150 records) has no Seoul/Korea/KR record, and the live global impacthub.net/locations page lists no Seoul location. Impact Hub Seoul cannot be a trusted resolver match or a seeded venue candidate; Seoul venue discovery proceeds without a hub seed.",
+    "Community-research open question: no standing Seoul quant community with an official own page and observed activity was found in this pass (QuantNode is a GitHub-hosted open community and dcinside quant gallery is a forum; neither is a standing Seoul-local organization page). PyData Seoul does not appear to have an active Seoul chapter page (PyData Korea repo 'pydata.kr' is marked 준비중/under construction; PyLadies Seoul is the active Seoul Python-adjacent group). Korea's Web3 market is a discovery hypothesis, not a retained fact: this pass retained only own-page-evidenced Seoul web3 groups (Seoul Ethereum Meetup 4,156 members; Ethereum Seoul Community bi-weekly meetups; Superteam Korea Solana community), with activity honestly labeled.",
+    "FX conversion basis gap: the ECB 2026-08-14 reference rate is used for all USD equivalents in this package; it is a dated published basis but is not a live market rate and does not predict the 2026 Q4 rate. Re-confirm the conversion basis at booking time.",
+    "WAF/access limitations: aT Center (atcenter.or.kr) returns a JavaScript CUPID challenge to direct fetch and blocks curl (HTTP 000/403); ST Center (Korea Science and Technology Center, stcenter.or.kr) times out from this environment; WeWork Seoul (wework.com) returns HTTP 403; Grand Hyatt Seoul (hyatt.com) returns HTTP 403; Fastfive and SparkPlus space-rental pages are JS-rendered with rates only inside their booking flows. These are logged as unresolved leads, not retained venue records, with verification questions."
+  ],
+  "recommendation": {
+    "selected_venue": null,
+    "rationale": "Run A evidence package only. Venue selection deferred: a later deterministic pipeline card scores venues and assembles the venue-phase bundle; Joe selects from eligible/shortlist_ready results. No date recommendation is made."
+  }
+}

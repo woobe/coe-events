@@ -1,0 +1,327 @@
+{
+  "probe_version": "1.0.0",
+  "rules_version": "R4-v1",
+  "schema_version": "2.4",
+  "input_path": "venues.raw.json",
+  "input_sha256": "534a4163e55e90640af4bb8d20367c0b9afe7f375e0b5463107dc0f9e7fce0c0",
+  "quarter": "2026-q4",
+  "city": "seoul",
+  "generated_at": "2026-08-15",
+  "finding_count": {
+    "match": 0,
+    "mismatch_candidate": 0,
+    "ambiguous_candidate": 7,
+    "insufficient_evidence": 7,
+    "ignored": 0
+  },
+  "findings": [
+    {
+      "record_path": "venues[0]",
+      "observed_facts_path": "venues[0].evidence.observed_facts",
+      "observed_facts_char_span": [
+        0,
+        0
+      ],
+      "raw_excerpt": "",
+      "field": "capacity_comfortable",
+      "target_path": "venues[0].capacity_comfortable",
+      "target_value": 456,
+      "target_normalized": "456",
+      "observed_normalized": [
+        "456"
+      ],
+      "currency": null,
+      "status": "ambiguous_candidate",
+      "reason_code": "configuration_ambiguous",
+      "table_amounts": [],
+      "eligible_segments": [],
+      "review_action": null
+    },
+    {
+      "record_path": "venues[0]",
+      "observed_facts_path": "venues[0].evidence.observed_facts",
+      "observed_facts_char_span": [
+        0,
+        0
+      ],
+      "raw_excerpt": "",
+      "field": "cost_local_amount",
+      "target_path": "venues[0].cost_local_amount",
+      "target_value": 6000000.0,
+      "target_normalized": "6000000",
+      "observed_normalized": [],
+      "currency": "KRW",
+      "status": "insufficient_evidence",
+      "reason_code": "insufficient_evidence",
+      "table_amounts": [],
+      "eligible_segments": [],
+      "review_action": null
+    },
+    {
+      "record_path": "venues[0]",
+      "observed_facts_path": "venues[0].evidence.observed_facts",
+      "observed_facts_char_span": [
+        778,
+        965
+      ],
+      "raw_excerpt": "0.0007085799 USD); an 8-hour 09:00-17:00 event would exceed the 3-hour single-performance runtime, so the published Saturday 2-performance rate KRW 6,000,000 x 0.0007085799 = USD 4,251.48",
+      "field": "estimated_cost_usd",
+      "target_path": "venues[0].estimated_cost_usd",
+      "target_value": 4251.48,
+      "target_normalized": "4251.48",
+      "observed_normalized": [
+        "0.0007085799",
+        "4251.48"
+      ],
+      "currency": "USD",
+      "status": "ambiguous_candidate",
+      "reason_code": "ambiguous_rate_or_range",
+      "table_amounts": [],
+      "eligible_segments": [],
+      "review_action": null
+    },
+    {
+      "record_path": "venues[1]",
+      "observed_facts_path": "venues[1].evidence.observed_facts",
+      "observed_facts_char_span": [
+        0,
+        0
+      ],
+      "raw_excerpt": "",
+      "field": "capacity_comfortable",
+      "target_path": "venues[1].capacity_comfortable",
+      "target_value": 110,
+      "target_normalized": "110",
+      "observed_normalized": [
+        "110",
+        "14600580",
+        "17969950",
+        "2486480",
+        "28238490",
+        "3907330",
+        "9291280"
+      ],
+      "currency": null,
+      "status": "ambiguous_candidate",
+      "reason_code": "ambiguous_range",
+      "table_amounts": [],
+      "eligible_segments": [],
+      "review_action": null
+    },
+    {
+      "record_path": "venues[2]",
+      "observed_facts_path": "venues[2].evidence.observed_facts",
+      "observed_facts_char_span": [
+        0,
+        0
+      ],
+      "raw_excerpt": "",
+      "field": "capacity_comfortable",
+      "target_path": "venues[2].capacity_comfortable",
+      "target_value": 0,
+      "target_normalized": "0",
+      "observed_normalized": [],
+      "currency": null,
+      "status": "insufficient_evidence",
+      "reason_code": "insufficient_evidence",
+      "table_amounts": [],
+      "eligible_segments": [],
+      "review_action": null
+    },
+    {
+      "record_path": "venues[2]",
+      "observed_facts_path": "venues[2].evidence.observed_facts",
+      "observed_facts_char_span": [
+        0,
+        0
+      ],
+      "raw_excerpt": "",
+      "field": "cost_local_amount",
+      "target_path": "venues[2].cost_local_amount",
+      "target_value": 3907330.0,
+      "target_normalized": "3907330",
+      "observed_normalized": [],
+      "currency": "KRW",
+      "status": "insufficient_evidence",
+      "reason_code": "insufficient_evidence",
+      "table_amounts": [],
+      "eligible_segments": [],
+      "review_action": null
+    },
+    {
+      "record_path": "venues[2]",
+      "observed_facts_path": "venues[2].evidence.observed_facts",
+      "observed_facts_char_span": [
+        823,
+        930
+      ],
+      "raw_excerpt": "0.0007085799 USD); the September/October high-season daily rate KRW 3,907,330 x 0.0007085799 = USD 2,768.66",
+      "field": "estimated_cost_usd",
+      "target_path": "venues[2].estimated_cost_usd",
+      "target_value": 2768.66,
+      "target_normalized": "2768.66",
+      "observed_normalized": [
+        "0.0007085799",
+        "2768.66"
+      ],
+      "currency": "USD",
+      "status": "ambiguous_candidate",
+      "reason_code": "ambiguous_rate_or_range",
+      "table_amounts": [],
+      "eligible_segments": [],
+      "review_action": null
+    },
+    {
+      "record_path": "venues[3]",
+      "observed_facts_path": "venues[3].evidence.observed_facts",
+      "observed_facts_char_span": [
+        0,
+        0
+      ],
+      "raw_excerpt": "",
+      "field": "capacity_comfortable",
+      "target_path": "venues[3].capacity_comfortable",
+      "target_value": 114,
+      "target_normalized": "114",
+      "observed_normalized": [
+        "2",
+        "20",
+        "300"
+      ],
+      "currency": null,
+      "status": "ambiguous_candidate",
+      "reason_code": "ambiguous_range",
+      "table_amounts": [],
+      "eligible_segments": [],
+      "review_action": null
+    },
+    {
+      "record_path": "venues[4]",
+      "observed_facts_path": "venues[4].evidence.observed_facts",
+      "observed_facts_char_span": [
+        0,
+        0
+      ],
+      "raw_excerpt": "",
+      "field": "capacity_comfortable",
+      "target_path": "venues[4].capacity_comfortable",
+      "target_value": 50,
+      "target_normalized": "50",
+      "observed_normalized": [
+        "20",
+        "50",
+        "6",
+        "60"
+      ],
+      "currency": null,
+      "status": "ambiguous_candidate",
+      "reason_code": "configuration_ambiguous",
+      "table_amounts": [],
+      "eligible_segments": [],
+      "review_action": null
+    },
+    {
+      "record_path": "venues[4]",
+      "observed_facts_path": "venues[4].evidence.observed_facts",
+      "observed_facts_char_span": [
+        0,
+        0
+      ],
+      "raw_excerpt": "",
+      "field": "cost_local_amount",
+      "target_path": "venues[4].cost_local_amount",
+      "target_value": 792000.0,
+      "target_normalized": "792000",
+      "observed_normalized": [],
+      "currency": "KRW",
+      "status": "insufficient_evidence",
+      "reason_code": "insufficient_evidence",
+      "table_amounts": [],
+      "eligible_segments": [],
+      "review_action": null
+    },
+    {
+      "record_path": "venues[4]",
+      "observed_facts_path": "venues[4].evidence.observed_facts",
+      "observed_facts_char_span": [
+        0,
+        0
+      ],
+      "raw_excerpt": "",
+      "field": "estimated_cost_usd",
+      "target_path": "venues[4].estimated_cost_usd",
+      "target_value": 561.2,
+      "target_normalized": "561.2",
+      "observed_normalized": [],
+      "currency": "USD",
+      "status": "insufficient_evidence",
+      "reason_code": "insufficient_evidence",
+      "table_amounts": [],
+      "eligible_segments": [],
+      "review_action": null
+    },
+    {
+      "record_path": "venues[4]",
+      "observed_facts_path": "venues[4].evidence.observed_facts",
+      "observed_facts_char_span": [
+        0,
+        0
+      ],
+      "raw_excerpt": "",
+      "field": "hourly_rate_local",
+      "target_path": "venues[4].hourly_rate_local",
+      "target_value": 99000.0,
+      "target_normalized": "99000",
+      "observed_normalized": [],
+      "currency": "KRW",
+      "status": "insufficient_evidence",
+      "reason_code": "insufficient_evidence",
+      "table_amounts": [],
+      "eligible_segments": [],
+      "review_action": null
+    },
+    {
+      "record_path": "venues[4]",
+      "observed_facts_path": "venues[4].evidence.observed_facts",
+      "observed_facts_char_span": [
+        0,
+        0
+      ],
+      "raw_excerpt": "",
+      "field": "hourly_rate_usd",
+      "target_path": "venues[4].hourly_rate_usd",
+      "target_value": 70.15,
+      "target_normalized": "70.15",
+      "observed_normalized": [],
+      "currency": "USD",
+      "status": "insufficient_evidence",
+      "reason_code": "insufficient_evidence",
+      "table_amounts": [],
+      "eligible_segments": [],
+      "review_action": null
+    },
+    {
+      "record_path": "venues[5]",
+      "observed_facts_path": "venues[5].evidence.observed_facts",
+      "observed_facts_char_span": [
+        0,
+        0
+      ],
+      "raw_excerpt": "",
+      "field": "capacity_comfortable",
+      "target_path": "venues[5].capacity_comfortable",
+      "target_value": 0,
+      "target_normalized": "0",
+      "observed_normalized": [
+        "2",
+        "330"
+      ],
+      "currency": null,
+      "status": "ambiguous_candidate",
+      "reason_code": "ambiguous_range",
+      "table_amounts": [],
+      "eligible_segments": [],
+      "review_action": null
+    }
+  ]
+}

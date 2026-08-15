@@ -1,0 +1,45 @@
+{
+  "scanner_version": "1.0.0",
+  "rules_version": "v1",
+  "invocation": {
+    "project_root": "/home/joe/repo_dev/coe-events",
+    "quarter": "2026-q4",
+    "city": "seoul",
+    "generated_at": "2026-08-15",
+    "report": "/home/joe/repo_dev/coe-events/research/seoul/2026-q4/release_gate_reports/.bundle-2/scan_event_output.json",
+    "surface": "both"
+  },
+  "concrete_bundle": "research/seoul/2026-q4/.bundle-2",
+  "event_plan_hash": "e93236bcbf86c60a72987f2e978d6162bd2de9341ed80fe932b9735a865bc0db",
+  "temporary_render_hash": "f14f7008b0df1be95cbe004a32b1355c066504fb9e6bd22a77ffbb07b44428c0",
+  "canonical_summary": {
+    "path": "/home/joe/repo_dev/coe-events/summary/2026-q4-seoul-summary.html",
+    "before": {
+      "state": "absent",
+      "sha256": null
+    },
+    "after": {
+      "state": "absent",
+      "sha256": null
+    },
+    "unchanged": true
+  },
+  "surfaces_requested": [
+    "html",
+    "source"
+  ],
+  "finding_count": 1,
+  "findings": [
+    {
+      "surface": "html",
+      "rule": "PE29-DATE-004",
+      "dom_context": "html > body > main > section > ol > li > article > p",
+      "text_node_index": 510,
+      "span": [
+        0,
+        210
+      ],
+      "excerpt": "Verify: Confirm the 2026 National Foundation Day holiday treatment and substitute day (VISITKOREA lists October 3, 2026 as National Foundation Day with October 5 observed; the October 3 date falls on a Saturday"
+    }
+  ]
+}
