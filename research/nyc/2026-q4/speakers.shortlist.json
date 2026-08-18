@@ -1,0 +1,67 @@
+{
+  "schema": "speakers.shortlist.json@1",
+  "plan_event_schema_version": "2.4",
+  "city": "nyc",
+  "event_date": "2026-10-10",
+  "source_schema": "speakers.raw.json@1",
+  "selection_policy": "computed shortlist: score >= 70, attendance_mode in (local, self_funded_travel), needs_human_verify false, zero_hype_fit true, no reject reason; sorted by score descending then candidate_id ascending; capped at 8; cohosts excluded",
+  "candidates": [
+    {
+      "candidate_id": "speaker-nyc-2026-006",
+      "name": "sota",
+      "real_name": null,
+      "source_pool": "numerai_ecosystem",
+      "community_id": null,
+      "artifact_summary": "Senior/lead data scientist at a NY-based fintech startup, active Numerai tournament participant, and 2nd-place finisher in the Signals Season 2024 Leaderboard; publicly self-identified in the 2026 CoE election thread.",
+      "topics": [
+        "ml",
+        "ai"
+      ],
+      "format_fit": [
+        "talk",
+        "workshop"
+      ],
+      "attendance_mode": "local",
+      "location_city": "New York",
+      "numerai_affiliation": {
+        "is_affiliated": true,
+        "types": [
+          "participant",
+          "signals",
+          "forum_contributor"
+        ],
+        "evidence_urls": [
+          "https://forum.numer.ai/t/8265/16"
+        ],
+        "public_username": "sota"
+      },
+      "zero_hype_fit": true,
+      "score_breakdown": {
+        "artifact_depth": 24,
+        "relevance": 22,
+        "format_fit": 12,
+        "numerai_affinity": 15,
+        "community_embeddedness": 12
+      },
+      "score": 85,
+      "tier": "shortlist",
+      "reject_reason": null,
+      "needs_human_verify": false,
+      "verify_reason": null,
+      "unknowns": [
+        "Forum self-description states employment at a NY-based fintech startup; explicit NYC residence or neighborhood is not separately verified.",
+        "AI Week New York (Oct 5-11 2026) overlap is an adjacency note; the candidate is a local attendee so schedule awareness matters."
+      ],
+      "contact_route": null,
+      "evidence": [
+        {
+          "source_url": "https://forum.numer.ai/t/8265/16",
+          "source_type": "forum_post",
+          "observed_facts": "In the public 2026 CoE election thread, the user sota posts (2026-04-22): 'I'm a senior/lead data scientist, currently working for a NY-based fintech startup. I've been actively participating in Numerai for the last few years, scoring #2 in the Signals Season 2024 Leaderboard.' Public self-identification of NY-based employment, tournament participation, and Signals ranking.",
+          "accessed_date": "2026-08-16",
+          "public_self_identification": true
+        }
+      ]
+    }
+  ]
+}

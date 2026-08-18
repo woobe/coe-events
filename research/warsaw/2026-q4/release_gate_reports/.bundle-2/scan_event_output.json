@@ -1,0 +1,105 @@
+{
+  "scanner_version": "1.0.0",
+  "rules_version": "v1",
+  "invocation": {
+    "project_root": ".",
+    "quarter": "2026-q4",
+    "city": "warsaw",
+    "generated_at": "2026-08-18",
+    "report": "/home/joe/repo_dev/coe-events/research/warsaw/2026-q4/release_gate_reports/.bundle-2/scan_event_output.json",
+    "surface": "both"
+  },
+  "concrete_bundle": "research/warsaw/2026-q4/.bundle-2",
+  "event_plan_hash": "fb9ef279ef846d0d82ca10e4a67d494fe3613a32b78a3f06e043e70351e01d6c",
+  "temporary_render_hash": "343c1f9c26243264739a71b00c41ac8025acc404a4bd33322b3736b3ad73ada3",
+  "canonical_summary": {
+    "path": "/home/joe/repo_dev/coe-events/summary/2026-q4-warsaw-summary.html",
+    "before": {
+      "state": "absent",
+      "sha256": null
+    },
+    "after": {
+      "state": "absent",
+      "sha256": null
+    },
+    "unchanged": true
+  },
+  "surfaces_requested": [
+    "html",
+    "source"
+  ],
+  "finding_count": 7,
+  "findings": [
+    {
+      "surface": "html",
+      "rule": "PE29-DATE-001",
+      "dom_context": "html > body > main > section > div > ul > li > details > div > ul > li",
+      "text_node_index": 207,
+      "span": [
+        96,
+        115
+      ],
+      "excerpt": "candidate Saturdays"
+    },
+    {
+      "surface": "source",
+      "rule": "PE29-DATE-001",
+      "json_path": "$.calendar_conflicts[0].verification_questions[1]",
+      "span": [
+        96,
+        115
+      ],
+      "excerpt": "candidate Saturdays"
+    },
+    {
+      "surface": "source",
+      "rule": "PE29-DATE-001",
+      "json_path": "$.calendar_conflicts[1].evidence.inference",
+      "span": [
+        149,
+        167
+      ],
+      "excerpt": "candidate Saturday"
+    },
+    {
+      "surface": "source",
+      "rule": "PE29-DATE-001",
+      "json_path": "$.calendar_conflicts[2].evidence.inference",
+      "span": [
+        130,
+        148
+      ],
+      "excerpt": "candidate Saturday"
+    },
+    {
+      "surface": "source",
+      "rule": "PE29-DATE-001",
+      "json_path": "$.venue_leads_needing_verification[0].verification_questions[2]",
+      "span": [
+        24,
+        43
+      ],
+      "excerpt": "candidate Saturdays"
+    },
+    {
+      "surface": "source",
+      "rule": "PE29-DATE-001",
+      "json_path": "$.venue_leads_needing_verification[1].verification_questions[2]",
+      "span": [
+        24,
+        43
+      ],
+      "excerpt": "candidate Saturdays"
+    },
+    {
+      "surface": "source",
+      "rule": "PE29-DATE-001",
+      "json_path": "$.venue_leads_needing_verification[3].verification_questions[2]",
+      "span": [
+        24,
+        43
+      ],
+      "excerpt": "candidate Saturdays"
+    }
+  ]
+}

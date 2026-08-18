@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Decentralized AI Day - Warsaw - Research - 2026 Q4</title>
+<style>
+/* plan-event venue matrix — inline CSS only. No external stylesheets,
+   fonts, images, or network requests are loaded at page-load time.
+   Source and booking URLs appear only as user-clicked anchors. */
+:root {
+  --ok: #1a7f37;
+  --warn: #9a6700;
+  --bad: #cf222e;
+  --ink: #1f2328;
+  --muted: #656d76;
+  --line: #d0d7de;
+  --bg: #ffffff;
+  --gold: #b8860b;
+  --silver: #6e7781;
+  --bronze: #a97142;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 1.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    Arial, sans-serif;
+  color: var(--ink);
+  background: var(--bg);
+  line-height: 1.45;
+}
+main { max-width: 72rem; margin: 0 auto; }
+h1 { font-size: 1.35rem; margin: 0 0 0.25rem; }
+.matrix-meta { color: var(--muted); font-size: 0.9rem; margin: 0 0 1rem; }
+.matrix-meta dl { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; margin: 0.5rem 0 0; }
+.matrix-meta dt { font-weight: 600; }
+.matrix-meta dd { margin: 0; }
+table { border-collapse: collapse; width: 100%; font-size: 0.9rem; }
+caption {
+  text-align: left; font-weight: 600; padding: 0.5rem 0;
+  color: var(--muted); caption-side: top;
+}
+th, td {
+  border: 1px solid var(--line);
+  padding: 0.45rem 0.55rem;
+  text-align: left;
+  vertical-align: top;
+}
+thead th {
+  background: #f6f8fa;
+  font-weight: 600;
+  white-space: nowrap;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+}
+thead th[aria-sort]::after { content: ""; }
+thead th[aria-sort="ascending"]::after { content: " \2191"; }
+thead th[aria-sort="descending"]::after { content: " \2193"; }
+tbody tr.venue-row { cursor: pointer; }
+tbody tr.venue-row:focus-visible { outline: 2px solid var(--ink); outline-offset: -2px; }
+tbody tr.venue-row:hover { background: #f6f8fa; }
+tbody tr.venue-details td { background: #fbfcfd; color: var(--muted); }
+tbody tr.venue-details dl { margin: 0; display: grid; grid-template-columns: max-content 1fr; gap: 0.2rem 0.75rem; }
+tbody tr.venue-details dt { font-weight: 600; }
+tbody tr.venue-details dd { margin: 0; overflow-wrap: anywhere; }
+.tier-badge {
+  display: inline-block;
+  padding: 0.05rem 0.45rem;
+  border-radius: 999px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+.tier-gold { background: var(--gold); }
+.tier-silver { background: var(--silver); }
+.tier-bronze { background: var(--bronze); }
+.sym { font-weight: 700; }
+.sym-ok { color: var(--ok); }
+.sym-warn { color: var(--warn); }
+.sym-bad { color: var(--bad); }
+.cost-over { color: var(--bad); font-weight: 600; }
+.flags { list-style: none; margin: 0; padding: 0; }
+.flags li::before { content: "\2022 "; color: var(--muted); }
+section.leads {
+  margin-top: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 0.6rem 0.8rem;
+  font-size: 0.9rem;
+}
+section.leads h2 { font-size: 0.95rem; margin: 0 0 0.3rem; }
+section.leads p { margin: 0.25rem 0; color: var(--muted); }
+section.leads ul { margin: 0.5rem 0 0; padding-left: 1.2rem; }
+section.leads li { margin: 0.3rem 0; }
+section.leads button.map-focus {
+  margin-left: 0.4rem;
+  padding: 0.1rem 0.5rem;
+  font-size: 0.78rem;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: #f6f8fa;
+  cursor: pointer;
+}
+tr.venue-row .map-highlight,
+section.leads li.map-highlight {
+  outline: 3px solid var(--gold);
+  outline-offset: 1px;
+}
+section.venue-map-section {
+  margin-top: 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 0.6rem 0.8rem;
+}
+section.venue-map-section h2 { font-size: 0.95rem; margin: 0 0 0.3rem; }
+section.venue-map-section > p { margin: 0.25rem 0; color: var(--muted); font-size: 0.85rem; }
+.venue-map-container {
+  height: 26rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  position: relative;
+  background: #eef0f2;
+}
+/* The wide 12-column matrix is kept usable inside a scoped horizontal
+   scroll container at EVERY viewport width (desktop >=641px AND narrow
+   screens) so it never widens the document: the wrapper takes the
+   content width while the table keeps its intrinsic width and scrolls
+   internally (overflow-x auto / contain semantics). This is the
+   desktop-overflow boundary — at 1280px a realistic wide matrix would
+   otherwise push document.scrollWidth past clientWidth (28px in the
+   Budapest rollout review). */
+.venue-matrix-scroll { overflow-x: auto; }
+@media (max-width: 640px) {
+  .venue-map-container { height: 20rem; }
+}
+.venue-map-note {
+  margin: 0;
+  padding: 0.75rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+.venue-map-attribution {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+.venue-map-popup { font-size: 0.85rem; }
+.venue-map-popup strong { display: block; margin-bottom: 0.15rem; }
+.venue-map-popup-cost { display: block; margin-bottom: 0.15rem; color: var(--muted); }
+.venue-map-marker { display: block; }
+.venue-map-marker-dot {
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  box-shadow: 0 0 0 1px rgba(0,0,0,0.4);
+}
+.venue-map-marker:focus-visible .venue-map-marker-dot {
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
+}
+/* Related events and calendar flags — informational awareness section.
+   Native <details>/<summary> disclosure only; no JavaScript, no external
+   resources. Chips carry high-contrast text; long tokens wrap anywhere;
+   summaries wrap safely on narrow screens. */
+section.related-events {
+  margin-top: 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 0.6rem 0.8rem;
+}
+section.related-events h2 { font-size: 0.95rem; margin: 0 0 0.3rem; }
+section.related-events > p { margin: 0.25rem 0; color: var(--muted); font-size: 0.85rem; }
+.related-events-empty { font-style: italic; }
+.related-month { margin-top: 0.9rem; }
+.related-month h3 {
+  font-size: 0.9rem;
+  margin: 0 0 0.35rem;
+  padding-bottom: 0.2rem;
+  border-bottom: 1px solid var(--line);
+}
+.related-month-list { list-style: none; margin: 0; padding: 0; }
+.related-month-list > li { margin: 0.45rem 0; }
+.related-event {
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #fbfcfd;
+}
+.related-event summary {
+  cursor: pointer;
+  padding: 0.5rem 0.6rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.3rem 0.6rem;
+}
+.related-event summary::-webkit-details-marker { display: none; }
+.related-event summary::before { content: "\25B8  "; }
+.related-event[open] summary::before { content: "\25BE  "; }
+.related-event summary:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: -2px;
+}
+.related-event-name { font-weight: 600; }
+.related-event-dates { color: var(--muted); font-size: 0.85rem; }
+.chip {
+  display: inline-block;
+  padding: 0.05rem 0.45rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  border: 1px solid var(--line);
+  color: var(--ink);
+  background: #f6f8fa;
+}
+.chip-relevance { border-color: var(--warn); color: #7a5900; background: #fff8e6; }
+.chip-severity-high { border-color: var(--bad); color: var(--bad); background: #fff0f0; }
+.chip-severity-medium { border-color: var(--warn); color: #7a5900; background: #fff8e6; }
+.chip-severity-low { border-color: var(--ok); color: var(--ok); background: #f0fff4; }
+.chip-severity-none { border-color: var(--line); color: var(--muted); background: #f6f8fa; }
+.side-event-marker {
+  display: inline-block;
+  padding: 0.05rem 0.45rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #ffffff;
+  background: var(--ok);
+}
+.related-event-body { padding: 0 0.6rem 0.6rem; font-size: 0.85rem; color: var(--muted); }
+.related-event-body p { margin: 0.35rem 0; overflow-wrap: anywhere; }
+.related-event-questions { margin: 0.25rem 0 0; padding-left: 1.2rem; }
+.related-event-questions li { margin: 0.2rem 0; overflow-wrap: anywhere; }
+.related-event-evidence { margin-top: 0.5rem; padding-top: 0.4rem; border-top: 1px solid var(--line); }
+.related-event-evidence p { overflow-wrap: anywhere; }
+/* Local communities and collaboration map — v2.6 awareness section.
+   Native <details>/<summary> disclosure only; no JavaScript, no external
+   resources. Chips wrap safely on narrow screens; long tokens wrap
+   anywhere; the disclosure summary has a visible focus ring. */
+section.local-communities {
+  margin-top: 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 0.6rem 0.8rem;
+}
+section.local-communities h2 { font-size: 0.95rem; margin: 0 0 0.3rem; }
+section.local-communities > p { margin: 0.25rem 0; color: var(--muted); font-size: 0.85rem; }
+.local-communities-empty { font-style: italic; }
+details.local-community {
+  margin-top: 0.6rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #fbfcfd;
+}
+details.local-community summary {
+  cursor: pointer;
+  padding: 0.5rem 0.6rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.3rem 0.6rem;
+}
+details.local-community summary::-webkit-details-marker { display: none; }
+details.local-community summary::before { content: "\25B8  "; }
+details.local-community[open] summary::before { content: "\25BE  "; }
+details.local-community summary:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: -2px;
+}
+.local-community-name { font-weight: 600; }
+.local-community-network { color: var(--muted); font-size: 0.85rem; }
+.local-community-chip {
+  display: inline-block;
+  padding: 0.05rem 0.45rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  border: 1px solid var(--line);
+  color: var(--ink);
+  background: #f6f8fa;
+}
+.local-community-badge {
+  display: inline-block;
+  padding: 0.05rem 0.45rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #ffffff;
+  background: var(--ok);
+}
+.local-community-body { padding: 0 0.6rem 0.6rem; font-size: 0.85rem; color: var(--muted); }
+.local-community-body p { margin: 0.35rem 0; overflow-wrap: anywhere; }
+.local-community-questions { margin: 0.25rem 0 0; padding-left: 1.2rem; }
+.local-community-questions li { margin: 0.2rem 0; overflow-wrap: anywhere; }
+.local-community-evidence { margin-top: 0.5rem; padding-top: 0.4rem; border-top: 1px solid var(--line); }
+.local-community-evidence p { overflow-wrap: anywhere; }
+/* Other major events — v2.7 compact logistics-only awareness section.
+   Flat <article> list (no native disclosure, no chips, no side-event
+   marker); the fixed `Major city event` tag uses a distinct class so it
+   is never mistaken for a relevance/severity chip. Long tokens wrap
+   anywhere; the tag wraps safely on narrow screens. No JavaScript, no
+   external resources. */
+section.other-major-events {
+  margin-top: 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 0.6rem 0.8rem;
+}
+section.other-major-events h2 { font-size: 0.95rem; margin: 0 0 0.3rem; }
+section.other-major-events > p { margin: 0.25rem 0; color: var(--muted); font-size: 0.85rem; }
+.other-major-events-empty { font-style: italic; }
+.other-major-events-list { list-style: none; margin: 0; padding: 0; }
+.other-major-events-list > li { margin: 0.45rem 0; }
+article.major-other-event {
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: #fbfcfd;
+  padding: 0.5rem 0.6rem;
+}
+article.major-other-event h3 {
+  font-size: 0.9rem;
+  margin: 0 0 0.25rem;
+  overflow-wrap: anywhere;
+}
+.major-other-event-dates { color: var(--muted); font-size: 0.85rem; margin: 0.2rem 0; }
+.major-other-event-tag {
+  display: inline-block;
+  padding: 0.05rem 0.45rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #ffffff;
+  background: var(--bronze);
+}
+.major-other-event-note { margin: 0.3rem 0; overflow-wrap: anywhere; }
+.major-other-event-source { margin: 0.25rem 0; overflow-wrap: anywhere; }
+.major-other-event-verify { margin: 0.25rem 0; overflow-wrap: anywhere; }
+section.compat-notice {
+  margin-top: 1.25rem;
+  border: 1px solid var(--warn);
+  border-radius: 6px;
+  padding: 0.5rem 0.8rem;
+  background: #fff8e6;
+  font-size: 0.85rem;
+}
+section.compat-notice p { margin: 0; }
+section.provenance {
+  margin-top: 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 0.6rem 0.8rem;
+  font-size: 0.8rem;
+  color: var(--muted);
+  background: #f6f8fa;
+  overflow-wrap: anywhere;
+}
+section.provenance h2 { font-size: 0.85rem; margin: 0 0 0.35rem; color: var(--ink); }
+section.provenance ul { margin: 0.25rem 0 0; padding-left: 1.2rem; }
+section.provenance li { margin: 0.2rem 0; }
+section.provenance code {
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
+    monospace;
+  font-size: 0.75rem;
+}
+footer.matrix-footer {
+  margin-top: 1.5rem;
+  color: var(--muted);
+  font-size: 0.8rem;
+  border-top: 1px solid var(--line);
+  padding-top: 0.5rem;
+}
+a { color: #0969da; }
+</style>
+</head>
+<body>
+<main>
+  <header class="matrix-header">
+    <h1>Decentralized AI Day - Warsaw - Research - 2026 Q4</h1>
+<div class="matrix-meta">
+<p>Warsaw (warsaw-pl) — Run A: Venue research</p>
+<dl>
+<dt>Target attendance</dt><dd>50</dd>
+<dt>Soft budget</dt><dd>USD 5000</dd>
+</dl>
+</div>
+  </header>
+  <div class="venue-matrix-scroll">
+  <table id="venue-matrix">
+    <caption>Venue matrix — eligible (Gold) and shortlist-ready (Silver) venues; leads appear only in the always-visible non-selectable list below. Event-duration costs are shown for the selected duration.</caption>
+    <thead>
+      <tr>
+        <th data-sort="venue" aria-sort="none" scope="col">Venue</th>
+        <th data-sort="tier" aria-sort="none" scope="col">Tier</th>
+        <th data-sort="score" aria-sort="none" scope="col">Score</th>
+        <th data-sort="cost" aria-sort="none" scope="col">Cost USD</th>
+        <th data-sort="capacity" aria-sort="none" scope="col">Capacity</th>
+        <th data-sort="screen" aria-sort="none" scope="col">Screen</th>
+        <th data-sort="wifi" aria-sort="none" scope="col">Wi-Fi</th>
+        <th data-sort="catering" aria-sort="none" scope="col">Catering</th>
+        <th data-sort="recording" aria-sort="none" scope="col">Recording</th>
+        <th data-sort="window" aria-sort="none" scope="col">Event window</th>
+        <th data-sort="flags" aria-sort="none" scope="col">Flags</th>
+        <th data-sort="booking" aria-sort="none" scope="col">Booking link</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="venue-row" tabindex="0" role="button" aria-expanded="false"><td colspan="12">No eligible or shortlist-ready venues in this bundle — see the lead list and research more candidates.</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <section class="leads" aria-label="Venues needing verification"><h2>Venues needing verification — 7 venue lead(s) — not selectable</h2><p>Leads are visible for reference only and are never selectable until their material gaps are resolved. The list works without JavaScript; the map control (when present) requires the interactive map below.</p><ul><li id="lead-item-0" data-lead-id="lead-item-0"><strong>CIC Warsaw — Event Spaces at Varso Place</strong> <span class="tier-badge tier-bronze">Bronze</span> — capacity_comfortable 0 below minimum 40 <a href="https://cic.com/warsaw/event-spaces/">source</a></li><li id="lead-item-1" data-lead-id="lead-item-1"><strong>Impact Hub Warsaw</strong> <span class="tier-badge tier-bronze">Bronze</span> — capacity_comfortable 0 below minimum 40 <a href="https://warsaw.impacthub.net/">source</a></li><li id="lead-item-2" data-lead-id="lead-item-2"><strong>Regus Warsaw — Meeting Rooms</strong> <span class="tier-badge tier-bronze">Bronze</span> — capacity_comfortable 0 below minimum 40 <a href="https://www.regus.com/en-gb/poland/warsaw/meeting-rooms">source</a></li><li id="lead-item-3" data-lead-id="lead-item-3"><strong>Varso Place — Event Space</strong> <span class="tier-badge tier-bronze">Bronze</span> — capacity_comfortable 0 below minimum 40 <a href="https://varso.com/en/leasing/event-space-for-rent">source</a></li><li id="lead-item-4" data-lead-id="lead-item-4"><strong>Warsaw.ai — Event Venue</strong> <span class="tier-badge tier-bronze">Bronze</span> — capacity_comfortable 0 below minimum 40 <a href="https://warsaw.ai/">source</a></li><li id="lead-item-5" data-lead-id="lead-item-5"><strong>WeWork Warsaw — Krucza 50</strong> <span class="tier-badge tier-bronze">Bronze</span> — capacity_comfortable 0 below minimum 40 <a href="https://www.wework.com/en-GB/buildings/krucza-50--warsaw">source</a></li><li id="lead-item-6" data-lead-id="lead-item-6"><strong>workin.space — Warsaw Meeting Rooms</strong> <span class="tier-badge tier-bronze">Bronze</span> — capacity_comfortable 0 below minimum 40 <a href="https://book.workin.space/en/poland/warsaw/meeting-room">source</a></li></ul></section>
+  <section class="venue-map-section" aria-label="Venue map"><h2>Venue map</h2><p>No listed venues currently have verified coordinates. See the venue lists above.</p></section>
+  <section class="local-communities" aria-labelledby="local-communities-heading">
+<h2 id="local-communities-heading">Local communities</h2>
+<p class="local-communities-intro">The records below are evidence-backed local audience and collaboration context for Joe — informational, not an outreach authorization and never a confirmed co-host commitment.</p>
+<details class="local-community"><summary><span class="local-community-name">ETHWarsaw / Kolektyw3</span> <span class="local-community-network">independent</span> <span class="local-community-chip">ai</span> <span class="local-community-chip">web3</span> <span class="local-community-chip local-community-activity">active</span></summary><div class="local-community-body"><p class="local-community-source">Source: <a href="https://ethwarsaw.dev/" target="_blank" rel="noopener noreferrer">ETHWarsaw - Disruptive tech community</a> — accessed 2026-08-18</p>
+<p class="local-community-contact">Public contact: <a href="https://t.me/joinethwarsaw" target="_blank" rel="noopener noreferrer">ETHWarsaw Telegram</a></p>
+<p class="local-community-meta">Public member size: 2000</p>
+<p class="local-community-meta">Cadence: Regular events including flagship annual conference and hackathon plus specialized blockchain and AI gatherings</p>
+<p class="local-community-meta">Typical venue: Kolektyw3 (ETHWarsaw coworking space and event venue)</p>
+<p class="local-community-questions-label">Verification questions</p>
+<ul class="local-community-questions"><li>Confirm current event cadence at Kolektyw3 (beyond the annual conference).</li><li>Confirm whether Kolektyw3 offers event space rental for external groups.</li><li>Check if ETHWarsaw/Kolektyw3 is open to co-hosting or partnership.</li></ul>
+<div class="local-community-evidence"><p><strong>Observed facts</strong>: ETHWarsaw describes itself as a &#x27;disruptive tech community&#x27; with 2000+ community members (from the Open Graph description &#x27;Join 2000+ community members&#x27;). Kolektyw3 is their coworking space and event venue in Warsaw. The ETHWarsaw Conference &amp; Hackathon is their flagship event. The page mentions &#x27;specialized blockchain and AI gatherings&#x27; beyond the flagship conference. Telegram group at t.me/joinethwarsaw. Schema.org markup confirms the organization and website. ETHWarsaw hosted its 2025 conference September 4-7, 2025 at ADN Conference Hall in Browary Warszawskie, Warsaw (source: cryptoevents.global/ethwarsaw-2025/). The Kolektyw3 coworking space and event venue is described as active on the ethwarsaw.dev website (accessed 2026-08-18).</p><p><strong>Inference</strong>: ETHWarsaw is a well-established Ethereum/Web3 community in Warsaw with a physical hub (Kolektyw3) that serves as both coworking space and event venue.</p></div>
+<p class="local-community-uncertainty"><strong>Uncertainty</strong>: Kolektyw3&#x27;s capacity, rental terms, and availability for external events are not confirmed.</p></div></details>
+<details class="local-community"><summary><span class="local-community-name">AI Tinkerers Poland</span> <span class="local-community-network">AI Tinkerers</span> <span class="local-community-chip">machine_learning</span> <span class="local-community-chip">ai</span> <span class="local-community-chip local-community-activity">intermittent</span></summary><div class="local-community-body"><p class="local-community-source">Source: <a href="https://poland.aitinkerers.org/" target="_blank" rel="noopener noreferrer">AI Events in Poland | AI Tinkerers Meetups 2026</a> — accessed 2026-08-18</p>
+<p class="local-community-contact">Public contact: <a href="https://poland.aitinkerers.org/" target="_blank" rel="noopener noreferrer">AI Tinkerers Poland</a></p>
+<p class="local-community-meta">Cadence: Monthly Warsaw meetups (most recent visible: September 2025)</p>
+<p class="local-community-questions-label">Verification questions</p>
+<ul class="local-community-questions"><li>Confirm current meetup cadence in Warsaw (most recent event listed is September 2025).</li><li>Confirm whether AI Tinkerers Poland has regular Warsaw-specific meetups.</li><li>Check if AI Tinkerers Poland is open to co-hosting or partnership.</li></ul>
+<div class="local-community-evidence"><p><strong>Observed facts</strong>: AI Tinkerers Poland page (poland.aitinkerers.org) lists &#x27;AI Events in Poland | AI Tinkerers Meetups 2026.&#x27; The most recent visible event is &#x27;Founding Engineer AI Tinkerers Poland #5 - Meetup in Warsaw (September)&#x27; dated September 18, 2025. AI Tinkerers is a global network with 252+ city chapters per the community_sources.md reference. The Poland chapter page is live and accessible.</p><p><strong>Inference</strong>: AI Tinkerers Poland is part of the global AI Tinkerers network. The Poland chapter has hosted Warsaw meetups.</p></div>
+<p class="local-community-uncertainty"><strong>Uncertainty</strong>: The most recent visible event is September 2025 — need to confirm whether 2026 meetups are scheduled.</p></div></details>
+<details class="local-community"><summary><span class="local-community-name">ETHWarsaw Community (Telegram)</span> <span class="local-community-network">independent</span> <span class="local-community-chip">web3</span> <span class="local-community-chip local-community-activity">intermittent</span></summary><div class="local-community-body"><p class="local-community-source">Source: <a href="https://t.me/joinethwarsaw" target="_blank" rel="noopener noreferrer">ETHWarsaw Telegram Group</a> — accessed 2026-08-18</p>
+<p class="local-community-contact">Public contact: <a href="https://t.me/joinethwarsaw" target="_blank" rel="noopener noreferrer">ETHWarsaw Telegram Group</a></p>
+<p class="local-community-meta">Cadence: Ongoing online community discussion</p>
+<p class="local-community-questions-label">Verification questions</p>
+<ul class="local-community-questions"><li>Confirm group member count and activity level.</li><li>Check if the Telegram group is used for event announcements and community coordination.</li></ul>
+<div class="local-community-evidence"><p><strong>Observed facts</strong>: ETHWarsaw maintains a Telegram group at t.me/joinethwarsaw, listed as a &#x27;sameAs&#x27; link on their official website (ethwarsaw.dev). The group appears to be the primary communication channel for the ETHWarsaw community.</p><p><strong>Inference</strong>: The Telegram group is the ETHWarsaw community&#x27;s primary communication channel, linked from their official website.</p></div>
+<p class="local-community-uncertainty"><strong>Uncertainty</strong>: Member count and activity level not confirmed.</p></div></details>
+<details class="local-community"><summary><span class="local-community-name">Mindstone Warsaw AI Community</span> <span class="local-community-network">Mindstone</span> <span class="local-community-chip">ai</span> <span class="local-community-chip local-community-activity">intermittent</span></summary><div class="local-community-body"><p class="local-community-source">Source: <a href="https://www.meetup.com/mindstone-warsaw-ai-community/" target="_blank" rel="noopener noreferrer">Mindstone Warsaw AI Community | Meetup</a> — accessed 2026-08-18</p>
+<p class="local-community-contact">Public contact: <a href="https://www.meetup.com/mindstone-warsaw-ai-community/" target="_blank" rel="noopener noreferrer">Mindstone Warsaw AI Community on Meetup</a></p>
+<p class="local-community-meta">Cadence: Monthly AI meetups</p>
+<p class="local-community-questions-label">Verification questions</p>
+<ul class="local-community-questions"><li>Confirm current meetup cadence and most recent event date.</li><li>Confirm member count from the Meetup page.</li><li>Check if Mindstone Warsaw is open to co-hosting or partnership.</li></ul>
+<div class="local-community-evidence"><p><strong>Observed facts</strong>: Mindstone Warsaw AI Community is a Meetup group described as &#x27;the most electrifying and ground-breaking AI Meetup in Warsaw.&#x27; Meets once a month to &#x27;delve into the world of artificial intelligence, explore its cutting-edge practical applications, and marvel at the astonishing projects.&#x27; Active Meetup page with event listings.</p><p><strong>Inference</strong>: Mindstone is a known AI community platform. The Warsaw chapter appears active with monthly in-person meetups focused on practical AI applications.</p></div>
+<p class="local-community-uncertainty"><strong>Uncertainty</strong>: Exact member count and most recent event date not extracted from search results.</p></div></details>
+<details class="local-community"><summary><span class="local-community-name">Warsaw AI Meetup Group</span> <span class="local-community-network">independent</span> <span class="local-community-chip">ai</span> <span class="local-community-chip local-community-activity">intermittent</span></summary><div class="local-community-body"><p class="local-community-source">Source: <a href="https://www.meetup.com/warsaw-ai-meetup-group/" target="_blank" rel="noopener noreferrer">Warsaw AI Meetup Group | Meetup</a> — accessed 2026-08-18</p>
+<p class="local-community-contact">Public contact: <a href="https://www.meetup.com/warsaw-ai-meetup-group/" target="_blank" rel="noopener noreferrer">Warsaw AI Meetup Group on Meetup</a></p>
+<p class="local-community-meta">Cadence: unknown</p>
+<p class="local-community-questions-label">Verification questions</p>
+<ul class="local-community-questions"><li>Confirm current meetup cadence and most recent event date.</li><li>Confirm member count from the Meetup page.</li><li>Check if the group is open to co-hosting or partnership.</li></ul>
+<div class="local-community-evidence"><p><strong>Observed facts</strong>: Warsaw AI Meetup Group is a Meetup group where &#x27;enthusiasts, professionals, and curious minds come together to explore the fascinating world of AI.&#x27; The most recent visible event date from search results is May 27, 2025. The group describes itself as &#x27;a welcoming space to share ideas, discuss the latest advancements.&#x27;</p><p><strong>Inference</strong>: An AI-focused community in Warsaw with a Meetup presence. The most recent visible event (May 2025) suggests the group is active but may not have frequent events.</p></div>
+<p class="local-community-uncertainty"><strong>Uncertainty</strong>: The most recent visible event is May 2025 — need to confirm whether the group is still active in 2026.</p></div></details>
+<details class="local-community"><summary><span class="local-community-name">Warsaw.ai</span> <span class="local-community-network">independent</span> <span class="local-community-chip">machine_learning</span> <span class="local-community-chip">ai</span> <span class="local-community-chip local-community-activity">intermittent</span></summary><div class="local-community-body"><p class="local-community-source">Source: <a href="https://warsaw.ai/" target="_blank" rel="noopener noreferrer">Warsaw.AI – Warsaw.AI community</a> — accessed 2026-08-18</p>
+<p class="local-community-contact">Public contact: <a href="https://warsaw.ai/" target="_blank" rel="noopener noreferrer">Warsaw.ai website</a></p>
+<p class="local-community-meta">Cadence: Monthly AI practitioner meetups</p>
+<p class="local-community-questions-label">Verification questions</p>
+<ul class="local-community-questions"><li>Confirm current meetup cadence and most recent event date.</li><li>Confirm whether Warsaw.ai has a dedicated venue or uses external spaces.</li><li>Check if Warsaw.ai is open to co-hosting or partnership for community events.</li></ul>
+<div class="local-community-evidence"><p><strong>Observed facts</strong>: Warsaw.ai is described as &#x27;a series of events to gather the community of AI practitioners.&#x27; The site states practitioners come from &#x27;technology companies, startups and academic institutions.&#x27; Uses a conference WordPress theme (GrandConference). Google Analytics tracking active (GT-TW5S7DL7, UA-125283035-1), indicating an actively maintained site. The site was last accessed on 2026-08-18.</p><p><strong>Inference</strong>: Warsaw.ai appears to be an active AI community in Warsaw hosting regular events.</p></div>
+<p class="local-community-uncertainty"><strong>Uncertainty</strong>: Exact cadence, member count, and most recent event date not confirmed from the page.</p></div></details>
+<details class="local-community"><summary><span class="local-community-name">Web3 Devs Poland</span> <span class="local-community-network">independent</span> <span class="local-community-chip">web3</span> <span class="local-community-chip local-community-activity">intermittent</span></summary><div class="local-community-body"><p class="local-community-source">Source: <a href="https://www.meetup.com/web3-devs-poland/" target="_blank" rel="noopener noreferrer">Web3 Devs Poland | Meetup</a> — accessed 2026-08-18</p>
+<p class="local-community-contact">Public contact: <a href="https://www.meetup.com/web3-devs-poland/" target="_blank" rel="noopener noreferrer">Web3 Devs Poland on Meetup</a></p>
+<p class="local-community-meta">Cadence: unknown</p>
+<p class="local-community-questions-label">Verification questions</p>
+<ul class="local-community-questions"><li>Confirm current meetup cadence and most recent event date.</li><li>Confirm member count from the Meetup page.</li><li>Confirm whether the community is Warsaw-specific or national.</li><li>Check if Web3 Devs Poland is open to co-hosting or partnership.</li></ul>
+<div class="local-community-evidence"><p><strong>Observed facts</strong>: Web3 Devs Poland is described as &#x27;Polish community for people oriented in a blockchain technology.&#x27; Active Meetup page. The community appears to be national rather than Warsaw-specific.</p><p><strong>Inference</strong>: Web3 Devs Poland is a blockchain-focused developer community. Being a national community, it may have Warsaw-based members and events.</p></div>
+<p class="local-community-uncertainty"><strong>Uncertainty</strong>: National community, not Warsaw-specific. Activity cadence and member count not confirmed.</p></div></details>
+</section>
+<section class="related-events" aria-labelledby="related-events-heading">
+<h2 id="related-events-heading">Related events and calendar flags</h2>
+<p class="related-events-intro">Entries below are informational related-event research findings for Joe. They never change venue scoring or make a scheduling decision.</p>
+<div class="related-month">
+<h3>September 2026</h3>
+<ul class="related-month-list">
+<li><details class="related-event"><summary><span class="related-event-name">Web3 Warsaw 2026</span> <span class="related-event-dates">2026-09-09 – 2026-09-10</span> <span class="chip chip-relevance">web3</span> <span class="chip chip-severity chip-severity-medium">medium</span> <span class="side-event-marker">Side-event opportunity</span></summary><div class="related-event-body"><p class="related-event-source">Source: <a href="https://web3warsaw.com/" target="_blank" rel="noopener noreferrer">Web3 Warsaw – Conference &amp; Event</a> — accessed 2026-08-18</p>
+<p class="related-event-verify">Human verification: needed</p>
+<p class="related-event-questions-label">Verification questions</p>
+<ul class="related-event-questions"><li>Official venue and final schedule not yet confirmed on the event page; check closer to the date.</li><li>5000+ expected attendees — the largest blockchain conference in Eastern Europe; adjacency to Q4 candidate Saturdays should be assessed.</li></ul>
+<div class="related-event-evidence"><p><strong>Observed facts</strong>: Web3 Warsaw 2026 will take place on September 9-10, 2026 in Warsaw, Poland, anchoring Blockchain Week Warsaw. Billed as the largest blockchain and technology conference in Eastern Europe. Expected 5000+ attendees including builders, founders, and investors. Title sponsor and &#x27;Future Driven Web3 Events&#x27; tagline visible on the event page. Multiple corroborating sources (Cryptonomist, AMBCrypto, CoinDesk, KuCoin, Visionary Financial) confirm the September 9-10 dates and Warsaw location.</p><p><strong>Inference</strong>: Adjacent to Q4 2026 (ends Sep 10, Q4 starts Oct 1). This is a major web3/blockchain conference with potential audience overlap for a Decentralized AI Day. Could be a side-event opportunity or awareness flag for Joe.</p></div></div></details></li>
+</ul></div>
+<div class="related-month">
+<h3>November 2026</h3>
+<ul class="related-month-list">
+<li><details class="related-event"><summary><span class="related-event-name">FINTECH Poland Expo 2026</span> <span class="related-event-dates">2026-11-17 – 2026-11-19</span> <span class="chip chip-relevance">fintech</span> <span class="chip chip-severity chip-severity-low">low</span></summary><div class="related-event-body"><p class="related-event-source">Source: <a href="https://warsawexpo.eu/en/fair-calendar/fintech-poland-expo/" target="_blank" rel="noopener noreferrer">FINTECH Poland Expo - Ptak Warsaw Expo</a> — accessed 2026-08-18</p>
+<p class="related-event-verify">Human verification: needed</p>
+<p class="related-event-questions-label">Verification questions</p>
+<ul class="related-event-questions"><li>Fintech audience overlap with AI/web3/quant communities — verify attendee profile and relevance to Decentralized AI Day crowd.</li></ul>
+<div class="related-event-evidence"><p><strong>Observed facts</strong>: FINTECH Poland Expo 2026 is a trade fair for the financial sector, banking, payments, commerce, and business technology. Dates: November 17-19, 2026 at Ptak Warsaw Expo. Conferences led by experts from finance, payments, technology, and regulatory sectors. Multiple corroborating sources (Showsbee, Eventseye) confirm the November 17-19 dates.</p><p><strong>Inference</strong>: Fintech-focused event with potential audience overlap for AI/web3/quant communities. Not a direct DeAI-Day-relevant topic but adjacent to the quant/fintech audience that Numerai/CoE events attract.</p></div></div></details></li>
+</ul></div>
+</section>
+<section class="other-major-events" aria-labelledby="other-major-events-heading">
+<h2 id="other-major-events-heading">Other major events</h2>
+<p class="other-major-events-intro">Major city events below are logistics heads-ups only. They are not topic or audience recommendations and never change venue scoring or date selection automatically.</p>
+<ol class="other-major-events-list">
+<li><article class="major-other-event">
+<h3 class="major-other-event-name">Warsaw Home Build 2026</h3>
+<p class="major-other-event-dates">2026-10-21 – 2026-10-24</p>
+<p class="major-other-event-tag">Major city event</p>
+<p class="major-other-event-note">Warsaw Home Build 2026 is an international trade fair for building and finishing materials and architecture, held October 21-24, 2026 at Ptak Warsaw Expo in Nadarzyn (near Warsaw). 12th edition. Multiple corroborating sources (Tohify, Prefab Catalog, AFFAEL, Showsbee) confirm the October 21-24 dates and Ptak Warsaw Expo venue.</p>
+<p class="major-other-event-source">Source: <a href="https://warsawbuild.eu/en/" target="_blank" rel="noopener noreferrer">International Trade Fair for Building and Finishing Materials</a></p>
+<p class="major-other-event-verify">Verify: Crowd/hotel/transport impact on Warsaw city center during Oct 21-24 trade fair week.</p>
+</article></li>
+<li><article class="major-other-event">
+<h3 class="major-other-event-name">Warsaw Industry Week 2026</h3>
+<p class="major-other-event-dates">2026-11-03 – 2026-11-05</p>
+<p class="major-other-event-tag">Major city event</p>
+<p class="major-other-event-note">Warsaw Industry Week 2026 is described as &#x27;one of the most important industrial events in Central and Eastern Europe,&#x27; held November 3-5, 2026 at Ptak Warsaw Expo in Nadarzyn. Zones for metal/wood processing, painting, hydraulics, welding, 3D printing, robotics, and automation software. RoboHorizon magazine confirms November 3-5, 2026 dates.</p>
+<p class="major-other-event-source">Source: <a href="https://industryweek.pl/en/" target="_blank" rel="noopener noreferrer">The Largest Industrial Trade Fair in Poland - Warsaw Industry Week 2026</a></p>
+<p class="major-other-event-verify">Verify: Crowd/hotel/transport impact on Warsaw city center during Nov 3-5 trade fair week.</p>
+</article></li>
+</ol>
+</section>
+  <section class="provenance"><h2>Provenance</h2><ul><li><strong>Source bundle version</strong>: <code>research/warsaw/2026-q4/.bundle-2</code></li><li><strong>Source lookup</strong>: resolved <code>research/warsaw/2026-q4/current/</code> once at generation time to the immutable bundle above</li><li><strong>Generated</strong>: 2026-08-18</li><li><strong>Schema version</strong>: 2.4</li><li><code>research/warsaw/2026-q4/.bundle-2/event_plan.json</code> — SHA-256: <code>fb9ef279ef846d0d82ca10e4a67d494fe3613a32b78a3f06e043e70351e01d6c</code></li><li><code>research/warsaw/2026-q4/.bundle-2/event_plan.md</code> — SHA-256: <code>89fa4897ac4ac51b8cf8247fd92b6e44211f5e61014a4a0fa404860606b92b78</code></li><li><code>research/warsaw/2026-q4/.bundle-2/next_steps.md</code> — SHA-256: <code>3772b17e67a293f211d5601a5ab45666f1367a01d9c8c3ac43bbb7b64bf985b3</code></li><li><code>research/warsaw/2026-q4/.bundle-2/sources.md</code> — SHA-256: <code>92d13d8e6e0cbf45e64c7fb11997b0dead7d9d0ba19d980410e8240785ac8dc2</code></li></ul></section>
+  <footer class="matrix-footer">
+    Projection of event_plan.json — schema 2.4, phase venue, generated 2026-08-18T00:00:00Z
+  </footer>
+</main>
+<script>
+/* plan-event venue matrix — inline JavaScript only.
+   This script performs two local interactions only:
+     1. column-header sorting of the rendered rows (deterministic, typed),
+     2. toggling the details row that follows each venue row.
+   It never fetches anything, never loads external resources, and never
+   interpolates data into script source: all values are read from the DOM
+   (data attributes and text content) that the server-side renderer
+   escaped. Sorting and expansion work without JavaScript as well: the
+   table is fully visible and links are ordinary anchors. */
+(function () {
+  "use strict";
+  var table = document.getElementById("venue-matrix");
+  if (!table) { return; }
+  var tbody = table.querySelector("tbody");
+  var headers = Array.prototype.slice.call(table.querySelectorAll("thead th"));
+  var NUMERIC_KEYS = { score: true, cost: true, capacity: true };
+  var TIER_RANK = { eligible: 0, shortlist_ready: 1, lead: 2 };
+  var currentKey = null;
+  var currentDir = 1;
+
+  function venueRows() {
+    return Array.prototype.slice.call(tbody.querySelectorAll("tr.venue-row"));
+  }
+
+  function sortValue(row, key) {
+    var raw = row.getAttribute("data-sort-" + key);
+    if (raw === null || raw === "") { return null; }
+    if (NUMERIC_KEYS[key]) {
+      var num = parseFloat(raw);
+      return isNaN(num) ? null : num;
+    }
+    if (key === "tier") { return TIER_RANK[raw] !== undefined ? TIER_RANK[raw] : null; }
+    return raw;
+  }
+
+  function compare(aVal, bVal, dir) {
+    var aIsNull = (aVal === null);
+    var bIsNull = (bVal === null);
+    if (aIsNull && bIsNull) { return 0; }
+    if (aIsNull) { return 1; }
+    if (bIsNull) { return -1; }
+    if (aVal < bVal) { return -dir; }
+    if (aVal > bVal) { return dir; }
+    return 0;
+  }
+
+  function sortRows(key, dir) {
+    var rows = venueRows();
+    rows.sort(function (a, b) {
+      var aVal = sortValue(a, key);
+      var bVal = sortValue(b, key);
+      var cmp = compare(aVal, bVal, dir);
+      if (cmp !== 0) { return cmp; }
+      var aName = (a.getAttribute("data-sort-venue") || "").toLowerCase();
+      var bName = (b.getAttribute("data-sort-venue") || "").toLowerCase();
+      if (aName < bName) { return -1; }
+      if (aName > bName) { return 1; }
+      return 0;
+    });
+    var fragment = document.createDocumentFragment();
+    rows.forEach(function (row) {
+      // Pair the venue row with its details row BEFORE either is detached:
+      // once the row is moved into the fragment it no longer has a
+      // nextElementSibling, so the lookup must happen first. Appending
+      // row then details keeps every detail row adjacent to its own venue
+      // row through the sort, so toggling stays valid after every reorder.
+      var details = row.nextElementSibling;
+      fragment.appendChild(row);
+      if (details && details.classList.contains("venue-details")) {
+        fragment.appendChild(details);
+      }
+    });
+    tbody.appendChild(fragment);
+  }
+
+  function setHeaderState(key) {
+    headers.forEach(function (th) {
+      var thKey = th.getAttribute("data-sort");
+      th.setAttribute("aria-sort", thKey === key ? (currentDir === 1 ? "ascending" : "descending") : "none");
+    });
+  }
+
+  headers.forEach(function (th) {
+    var key = th.getAttribute("data-sort");
+    if (!key) { return; }
+    th.setAttribute("tabindex", "0");
+    th.setAttribute("role", "button");
+    th.addEventListener("click", function () {
+      if (currentKey === key) {
+        currentDir = -currentDir;
+      } else {
+        currentKey = key;
+        currentDir = 1;
+      }
+      sortRows(currentKey, currentDir);
+      setHeaderState(currentKey);
+    });
+    th.addEventListener("keydown", function (event) {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        th.click();
+      }
+    });
+  });
+
+  function toggleRow(row) {
+    var details = row.nextElementSibling;
+    if (!details || !details.classList.contains("venue-details")) { return; }
+    var hidden = details.hasAttribute("hidden");
+    if (hidden) {
+      details.removeAttribute("hidden");
+      row.setAttribute("aria-expanded", "true");
+    } else {
+      details.setAttribute("hidden", "hidden");
+      row.setAttribute("aria-expanded", "false");
+    }
+  }
+
+  venueRows().forEach(function (row) {
+    row.addEventListener("click", function () { toggleRow(row); });
+    row.addEventListener("keydown", function (event) {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        toggleRow(row);
+      }
+    });
+  });
+})();
+</script>
+</body>
+</html>

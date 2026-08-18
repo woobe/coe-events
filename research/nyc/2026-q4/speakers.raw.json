@@ -1,0 +1,718 @@
+{
+  "schema": "speakers.raw.json@1",
+  "plan_event_schema_version": "2.4",
+  "city": "nyc",
+  "event_date": "2026-10-10",
+  "run_a_sources": {
+    "communities": "research/nyc/2026-q4/communities.raw.json"
+  },
+  "candidates": [
+    {
+      "candidate_id": "speaker-nyc-2026-001",
+      "name": "Aventurine",
+      "real_name": null,
+      "source_pool": "past_deai_day",
+      "community_id": null,
+      "artifact_summary": "Numerai Council of Elders elder who has given technical 'Introduction to Numerai' talks at multiple past DeAI Days (Vienna Sep 2025, Vienna Mar 2026, Tokyo May 2026) and spoke at the CoE's 2022 NYC meetup.",
+      "topics": ["ml", "ai"],
+      "format_fit": ["talk"],
+      "attendance_mode": "unknown",
+      "location_city": null,
+      "numerai_affiliation": {
+        "is_affiliated": true,
+        "types": ["coe", "past_speaker"],
+        "evidence_urls": ["https://luma.com/5w9wvbjf", "https://councilofelders.github.io/"],
+        "public_username": "aventurine"
+      },
+      "zero_hype_fit": true,
+      "score_breakdown": {
+        "artifact_depth": 22,
+        "relevance": 20,
+        "format_fit": 11,
+        "numerai_affinity": 15,
+        "community_embeddedness": 13
+      },
+      "score": 81,
+      "tier": "watchlist",
+      "reject_reason": null,
+      "needs_human_verify": true,
+      "verify_reason": "Confirm current city and in-person availability for 2026-10-10; a past NYC meetup talk (2022) does not establish current NYC residency.",
+      "unknowns": [
+        "Current city not stated on allowed public sources; CoE Hub lists the persona as an Elder with a public numer.ai profile only.",
+        "AI Week New York (Oct 5-11 2026) overlap is an adjacency note, never an automatic rejection."
+      ],
+      "contact_route": null,
+      "evidence": [
+        {
+          "source_url": "https://luma.com/5w9wvbjf",
+          "source_type": "luma_event_page",
+          "observed_facts": "Decentralized AI Day (Vienna) Luma page, event start 2025-09-20, agenda lists 'Introduction to Numerai by Aventurine @ Numerai Council of Elders' (10:15-10:45) and closing remarks by the Numerai CoE.",
+          "accessed_date": "2026-08-16"
+        },
+        {
+          "source_url": "https://councilofelders.github.io/",
+          "source_type": "community_page",
+          "observed_facts": "Numerai CoE Hub team section lists 'aventurine' with subtitle 'Elder' and a public profile link https://numer.ai/~aventurine.",
+          "accessed_date": "2026-08-16"
+        }
+      ]
+    },
+    {
+      "candidate_id": "speaker-nyc-2026-002",
+      "name": "gBrecht",
+      "real_name": null,
+      "source_pool": "past_deai_day",
+      "community_id": null,
+      "artifact_summary": "Long-time Numerai tournament participant and forum contributor who gave a technical talk on the 'era' metadata for Numerai model training at DeAI Day Vienna (Sep 2025) and publicly promised technical talks for future CoE meetups.",
+      "topics": ["ml"],
+      "format_fit": ["talk", "workshop"],
+      "attendance_mode": "unknown",
+      "location_city": null,
+      "numerai_affiliation": {
+        "is_affiliated": true,
+        "types": ["participant", "forum_contributor", "past_speaker"],
+        "evidence_urls": ["https://luma.com/5w9wvbjf", "https://forum.numer.ai/t/8265/10"],
+        "public_username": "gbrecht"
+      },
+      "zero_hype_fit": true,
+      "score_breakdown": {
+        "artifact_depth": 20,
+        "relevance": 18,
+        "format_fit": 12,
+        "numerai_affinity": 14,
+        "community_embeddedness": 12
+      },
+      "score": 76,
+      "tier": "watchlist",
+      "reject_reason": null,
+      "needs_human_verify": true,
+      "verify_reason": "Confirm current location and whether NYC travel would be self-funded.",
+      "unknowns": [
+        "A third-party election summary in the CoE thread describes the user as Germany-based; that text is not the user's own self-identification and was not used for locality.",
+        "AI Week New York (Oct 5-11 2026) overlap is an adjacency note, never an automatic rejection."
+      ],
+      "contact_route": null,
+      "evidence": [
+        {
+          "source_url": "https://luma.com/5w9wvbjf",
+          "source_type": "luma_event_page",
+          "observed_facts": "Decentralized AI Day (Vienna) Luma page, event start 2025-09-20, agenda lists 'What does the \"era\" information mean for (Numerai) model training by gBrecht' (11:15-12:00).",
+          "accessed_date": "2026-08-16"
+        },
+        {
+          "source_url": "https://forum.numer.ai/t/8265/10",
+          "source_type": "forum_post",
+          "observed_facts": "In the public 2026 CoE election thread, the user gbrecht posts: 'Thank you very much for the nomination. I gratefully accept and promise technical talks for every meetup Joe puts together.'",
+          "accessed_date": "2026-08-16"
+        }
+      ]
+    },
+    {
+      "candidate_id": "speaker-nyc-2026-003",
+      "name": "Diederik Kruijssen",
+      "real_name": null,
+      "source_pool": "past_deai_day",
+      "community_id": null,
+      "artifact_summary": "Chief Scientist at Allora Labs (decentralized machine intelligence network) who presented 'Allora: Turning Your Alpha into Intelligence' at DeAI Day Vienna (Mar 2026).",
+      "topics": ["decentralized_ai", "ai"],
+      "format_fit": ["talk"],
+      "attendance_mode": "unknown",
+      "location_city": null,
+      "numerai_affiliation": {
+        "is_affiliated": false,
+        "types": [],
+        "evidence_urls": [],
+        "public_username": null
+      },
+      "zero_hype_fit": true,
+      "score_breakdown": {
+        "artifact_depth": 25,
+        "relevance": 24,
+        "format_fit": 12,
+        "numerai_affinity": 5,
+        "community_embeddedness": 8
+      },
+      "score": 74,
+      "tier": "watchlist",
+      "reject_reason": null,
+      "needs_human_verify": true,
+      "verify_reason": "Confirm current location and whether NYC travel would be self-funded (Allora is a featured ecosystem project; Allora Labs is publicly described as New York-founded).",
+      "unknowns": [
+        "Current city not confirmed from an allowed public source; the candidate's own Luma talk page cites the Allora affiliation only.",
+        "AI Week New York (Oct 5-11 2026) overlap is an adjacency note, never an automatic rejection."
+      ],
+      "contact_route": null,
+      "evidence": [
+        {
+          "source_url": "https://luma.com/sb1g8oyb",
+          "source_type": "luma_event_page",
+          "observed_facts": "Decentralized AI Day (Vienna) Luma page, event start 2026-03-21, agenda lists 'Allora: Turning Your Alpha into Intelligence by Diederik Kruijssen @ Allora' (11:45-12:15) and an Allora Forge workshop track.",
+          "accessed_date": "2026-08-16"
+        }
+      ]
+    },
+    {
+      "candidate_id": "speaker-nyc-2026-004",
+      "name": "Philipp Singer",
+      "real_name": null,
+      "source_pool": "past_deai_day",
+      "community_id": null,
+      "artifact_summary": "Kaggle Grandmaster and Prior Labs (TabPFN) representative who gave the TabPFN talk and led hands-on Kaggle-challenge workshops at DeAI Day Vienna (Mar 2026).",
+      "topics": ["ml", "ai"],
+      "format_fit": ["talk", "workshop"],
+      "attendance_mode": "unknown",
+      "location_city": null,
+      "numerai_affiliation": {
+        "is_affiliated": false,
+        "types": [],
+        "evidence_urls": [],
+        "public_username": null
+      },
+      "zero_hype_fit": true,
+      "score_breakdown": {
+        "artifact_depth": 27,
+        "relevance": 22,
+        "format_fit": 13,
+        "numerai_affinity": 5,
+        "community_embeddedness": 8
+      },
+      "score": 75,
+      "tier": "watchlist",
+      "reject_reason": null,
+      "needs_human_verify": true,
+      "verify_reason": "Confirm current location and whether NYC travel would be self-funded.",
+      "unknowns": [
+        "Current city not confirmed from an allowed public source.",
+        "AI Week New York (Oct 5-11 2026) overlap is an adjacency note, never an automatic rejection."
+      ],
+      "contact_route": null,
+      "evidence": [
+        {
+          "source_url": "https://luma.com/sb1g8oyb",
+          "source_type": "luma_event_page",
+          "observed_facts": "Decentralized AI Day (Vienna) Luma page, event start 2026-03-21, announces 'Meet the Kaggle Grandmaster: Philipp Singer from Prior Labs' leading a TabPFN talk (11:00-11:45) and TabPFN Kaggle-challenge workshop tracks (14:00-18:30).",
+          "accessed_date": "2026-08-16"
+        }
+      ]
+    },
+    {
+      "candidate_id": "speaker-nyc-2026-005",
+      "name": "Michael Oliver",
+      "real_name": null,
+      "source_pool": "past_deai_day",
+      "community_id": null,
+      "artifact_summary": "Chief Scientist at Numerai who spoke at DeAI Day Seattle (Mar 2025) and presented at the SF DeAI Day (Jan 2026) alongside the Numerai core team.",
+      "topics": ["ml", "decentralized_ai"],
+      "format_fit": ["talk"],
+      "attendance_mode": "unknown",
+      "location_city": null,
+      "numerai_affiliation": {
+        "is_affiliated": true,
+        "types": ["past_speaker"],
+        "evidence_urls": ["https://luma.com/diyyxy5r", "https://luma.com/he32nz84"],
+        "public_username": null
+      },
+      "zero_hype_fit": true,
+      "score_breakdown": {
+        "artifact_depth": 26,
+        "relevance": 23,
+        "format_fit": 12,
+        "numerai_affinity": 13,
+        "community_embeddedness": 10
+      },
+      "score": 84,
+      "tier": "watchlist",
+      "reject_reason": null,
+      "needs_human_verify": true,
+      "verify_reason": "Confirm availability: the event page About text places Numerai in San Francisco, so NYC attendance would require travel not confirmed as self-funded.",
+      "unknowns": [
+        "Numerai is described as an SF-based hedge fund on the SF DeAI Day page; no current NYC locality evidence for the candidate.",
+        "AI Week New York (Oct 5-11 2026) overlap is an adjacency note, never an automatic rejection."
+      ],
+      "contact_route": null,
+      "evidence": [
+        {
+          "source_url": "https://luma.com/diyyxy5r",
+          "source_type": "luma_event_page",
+          "observed_facts": "Decentralized AI Day (Seattle) Luma page, event start 2025-03-29, agenda lists 'Talk (Title TBC) by Michael Oliver (Chief Scientist @ Numerai)' (11:30-12:30).",
+          "accessed_date": "2026-08-16"
+        },
+        {
+          "source_url": "https://luma.com/he32nz84",
+          "source_type": "luma_event_page",
+          "observed_facts": "SF DeAI Day Luma page, event start 2026-01-27, agenda lists 'Presentations by the Numerai core team - Michael Oliver (Chief Scientist) and Michael Philips (Chief Data Officer)' (19:15-20:30); page About text states 'Numerai is an AI-driven hedge fund in San Francisco'.",
+          "accessed_date": "2026-08-16"
+        }
+      ]
+    },
+    {
+      "candidate_id": "speaker-nyc-2026-006",
+      "name": "sota",
+      "real_name": null,
+      "source_pool": "numerai_ecosystem",
+      "community_id": null,
+      "artifact_summary": "Senior/lead data scientist at a NY-based fintech startup, active Numerai tournament participant, and 2nd-place finisher in the Signals Season 2024 Leaderboard; publicly self-identified in the 2026 CoE election thread.",
+      "topics": ["ml", "ai"],
+      "format_fit": ["talk", "workshop"],
+      "attendance_mode": "local",
+      "location_city": "New York",
+      "numerai_affiliation": {
+        "is_affiliated": true,
+        "types": ["participant", "signals", "forum_contributor"],
+        "evidence_urls": ["https://forum.numer.ai/t/8265/16"],
+        "public_username": "sota"
+      },
+      "zero_hype_fit": true,
+      "score_breakdown": {
+        "artifact_depth": 24,
+        "relevance": 22,
+        "format_fit": 12,
+        "numerai_affinity": 15,
+        "community_embeddedness": 12
+      },
+      "score": 85,
+      "tier": "shortlist",
+      "reject_reason": null,
+      "needs_human_verify": false,
+      "verify_reason": null,
+      "unknowns": [
+        "Forum self-description states employment at a NY-based fintech startup; explicit NYC residence or neighborhood is not separately verified.",
+        "AI Week New York (Oct 5-11 2026) overlap is an adjacency note; the candidate is a local attendee so schedule awareness matters."
+      ],
+      "contact_route": null,
+      "evidence": [
+        {
+          "source_url": "https://forum.numer.ai/t/8265/16",
+          "source_type": "forum_post",
+          "observed_facts": "In the public 2026 CoE election thread, the user sota posts (2026-04-22): 'I'm a senior/lead data scientist, currently working for a NY-based fintech startup. I've been actively participating in Numerai for the last few years, scoring #2 in the Signals Season 2024 Leaderboard.' Public self-identification of NY-based employment, tournament participation, and Signals ranking.",
+          "accessed_date": "2026-08-16",
+          "public_self_identification": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "speaker-nyc-2026-007",
+      "name": "Jason Rosenfeld",
+      "real_name": "Jason Rosenfeld",
+      "source_pool": "numerai_ecosystem",
+      "community_id": null,
+      "artifact_summary": "Co-founder & CEO of CrowdCent, creator of the open-source numerblox Numerai pipeline library, ex-Millennium Management data scientist, and a public Numerai Grandmaster.",
+      "topics": ["ml", "decentralized_ai"],
+      "format_fit": ["workshop", "talk"],
+      "attendance_mode": "unknown",
+      "location_city": null,
+      "numerai_affiliation": {
+        "is_affiliated": true,
+        "types": ["participant"],
+        "evidence_urls": ["https://crowdcent.com/about/"],
+        "public_username": null
+      },
+      "zero_hype_fit": true,
+      "score_breakdown": {
+        "artifact_depth": 22,
+        "relevance": 22,
+        "format_fit": 12,
+        "numerai_affinity": 14,
+        "community_embeddedness": 12
+      },
+      "score": 82,
+      "tier": "watchlist",
+      "reject_reason": null,
+      "needs_human_verify": true,
+      "verify_reason": "Confirm current NYC residency and availability; the company page does not state a current city.",
+      "unknowns": [
+        "CrowdCent's team background (Millennium Management, NYC hedge funds) implies a NYC history but the public About page does not state the current city.",
+        "AI Week New York (Oct 5-11 2026) overlap is an adjacency note, never an automatic rejection."
+      ],
+      "contact_route": null,
+      "evidence": [
+        {
+          "source_url": "https://crowdcent.com/about/",
+          "source_type": "community_page",
+          "observed_facts": "CrowdCent About page team section states 'Jason Rosenfeld CO-FOUNDER & CEO' and describes him as a 'full-stack' machine learning engineer and value investor, ex-Data Scientist & Investment Analyst at Millennium Management, Scikit-learn Expert and Numerai Grandmaster. The company self-publishes its own leadership publicly.",
+          "accessed_date": "2026-08-16",
+          "public_self_identification": true
+        },
+        {
+          "source_url": "https://github.com/crowdcent/numerblox",
+          "source_type": "github_repo",
+          "observed_facts": "Public GitHub repository crowdcent/numerblox is described as 'Solid Numerai pipelines'.",
+          "accessed_date": "2026-08-16"
+        }
+      ]
+    },
+    {
+      "candidate_id": "speaker-nyc-2026-008",
+      "name": "uuazed",
+      "real_name": null,
+      "source_pool": "numerai_ecosystem",
+      "community_id": null,
+      "artifact_summary": "Numerai Council of Elders elder and maintainer of numerapi, the widely used Python API and CLI for the Numerai tournament; a strong workshop-format candidate.",
+      "topics": ["ml"],
+      "format_fit": ["workshop", "talk"],
+      "attendance_mode": "unknown",
+      "location_city": null,
+      "numerai_affiliation": {
+        "is_affiliated": true,
+        "types": ["participant", "coe"],
+        "evidence_urls": ["https://councilofelders.github.io/"],
+        "public_username": "uuazed"
+      },
+      "zero_hype_fit": true,
+      "score_breakdown": {
+        "artifact_depth": 21,
+        "relevance": 18,
+        "format_fit": 13,
+        "numerai_affinity": 14,
+        "community_embeddedness": 12
+      },
+      "score": 78,
+      "tier": "watchlist",
+      "reject_reason": null,
+      "needs_human_verify": true,
+      "verify_reason": "Confirm current location and availability for an in-person NYC workshop.",
+      "unknowns": [
+        "Current city not stated on allowed public sources.",
+        "AI Week New York (Oct 5-11 2026) overlap is an adjacency note, never an automatic rejection."
+      ],
+      "contact_route": null,
+      "evidence": [
+        {
+          "source_url": "https://councilofelders.github.io/",
+          "source_type": "community_page",
+          "observed_facts": "Numerai CoE Hub team section lists 'uuazed' with subtitle 'Elder' and a public profile link https://numer.ai/~uuazed.",
+          "accessed_date": "2026-08-16"
+        },
+        {
+          "source_url": "https://github.com/uuazed/numerapi",
+          "source_type": "github_repo",
+          "observed_facts": "Public GitHub repository uuazed/numerapi is described as 'Python API and command line interface for the numer.ai machine learning competition'.",
+          "accessed_date": "2026-08-16"
+        }
+      ]
+    },
+    {
+      "candidate_id": "speaker-nyc-2026-009",
+      "name": "Maryam Farooq",
+      "real_name": null,
+      "source_pool": "run_a_community",
+      "community_id": "(NYAI) New York Artificial Intelligence",
+      "artifact_summary": "Founder & Director of NYAI (New York Artificial Intelligence), a NYC-based technical AI community running events since 2016, whose group page explicitly invites event/workshop partnerships and sponsors.",
+      "topics": ["ai", "ml"],
+      "format_fit": ["talk"],
+      "attendance_mode": "local",
+      "location_city": "New York",
+      "numerai_affiliation": {
+        "is_affiliated": false,
+        "types": [],
+        "evidence_urls": [],
+        "public_username": null
+      },
+      "zero_hype_fit": true,
+      "score_breakdown": {
+        "artifact_depth": 14,
+        "relevance": 17,
+        "format_fit": 12,
+        "numerai_affinity": 5,
+        "community_embeddedness": 14
+      },
+      "score": 62,
+      "tier": "watchlist",
+      "reject_reason": null,
+      "needs_human_verify": false,
+      "verify_reason": null,
+      "unknowns": [
+        "NYAI is a technical-nontechnical AI community; DeAI-specific content may need curation. Community record already flags a human verification question on the partnership process.",
+        "AI Week New York (Oct 5-11 2026) overlap is an adjacency note; as a local attendee, schedule awareness matters."
+      ],
+      "contact_route": {
+        "type": "community_channel",
+        "source_url": "https://www.nyai.co/"
+      },
+      "evidence": [
+        {
+          "source_url": "https://www.nyai.co/nyai-home/about/maryam-farooq/",
+          "source_type": "community_page",
+          "observed_facts": "NYAI public bio page for Maryam Farooq (content verified via public search index; direct fetch is blocked by the site firewall) states she 'currently serves as the Founder & Director for NYAI (New York Artificial Intelligence), and has been running AI events since 2016.'",
+          "accessed_date": "2026-08-16"
+        },
+        {
+          "source_url": "https://www.meetup.com/nyaimeetup/",
+          "source_type": "community_page",
+          "observed_facts": "(NYAI) New York Artificial Intelligence Meetup page states 4,164 members, New York NY US; About text invites collaboration: 'Have a message to share with the AI community? Partner with us to lead an event or workshop.' and 'Interested in Sponsoring an AI event? Apply here.'",
+          "accessed_date": "2026-08-16"
+        }
+      ]
+    },
+    {
+      "candidate_id": "speaker-nyc-2026-010",
+      "name": "Sandy McCarron",
+      "real_name": "Sandy McCarron",
+      "source_pool": "run_a_community",
+      "community_id": "AI Salon New York",
+      "artifact_summary": "Publicly listed chapter host of AI Salon New York, the NYC chapter of the global AI Salon community, whose event pages invite sponsorship and feature a high-profile founder/builder audience.",
+      "topics": ["ai"],
+      "format_fit": ["talk"],
+      "attendance_mode": "unknown",
+      "location_city": null,
+      "numerai_affiliation": {
+        "is_affiliated": false,
+        "types": [],
+        "evidence_urls": [],
+        "public_username": null
+      },
+      "zero_hype_fit": true,
+      "score_breakdown": {
+        "artifact_depth": 12,
+        "relevance": 14,
+        "format_fit": 10,
+        "numerai_affinity": 5,
+        "community_embeddedness": 13
+      },
+      "score": 54,
+      "tier": "watchlist",
+      "reject_reason": null,
+      "needs_human_verify": true,
+      "verify_reason": "Confirm the chapter lead's current NYC residency and availability; public evidence is a host listing on an NYC event page, not a personal city statement.",
+      "unknowns": [
+        "AI Salon NY events target founders/executives and the audience skews non-technical; fit with the zero-hype technical format needs manual assessment.",
+        "AI Week New York (Oct 5-11 2026) overlap is an adjacency note, never an automatic rejection."
+      ],
+      "contact_route": null,
+      "evidence": [
+        {
+          "source_url": "https://luma.com/AI-Salon-NewYork-March-2026",
+          "source_type": "luma_event_page",
+          "observed_facts": "AI Salon New York Luma event page (in-person event 2026-03-26, Casa 51, 625 W 51st St, New York) lists chapter hosts including Sandy McCarron in its Hosted By section; the same page's ticket section offers 'Apply to be a Sponsor'.",
+          "accessed_date": "2026-08-16",
+          "public_self_identification": true
+        }
+      ]
+    },
+    {
+      "candidate_id": "speaker-nyc-2026-011",
+      "name": "Nick Emmons",
+      "real_name": null,
+      "source_pool": "local_web",
+      "community_id": null,
+      "artifact_summary": "Co-founder & CEO of Allora Labs (Allora Network), a self-improving decentralized machine intelligence network featured in the DeAI Days ecosystem; publicly described as New York-based by secondary sources.",
+      "topics": ["decentralized_ai", "ai", "web3"],
+      "format_fit": ["talk"],
+      "attendance_mode": "unknown",
+      "location_city": null,
+      "numerai_affiliation": {
+        "is_affiliated": false,
+        "types": [],
+        "evidence_urls": [],
+        "public_username": null
+      },
+      "zero_hype_fit": true,
+      "score_breakdown": {
+        "artifact_depth": 22,
+        "relevance": 24,
+        "format_fit": 12,
+        "numerai_affinity": 5,
+        "community_embeddedness": 8
+      },
+      "score": 71,
+      "tier": "watchlist",
+      "reject_reason": null,
+      "needs_human_verify": true,
+      "verify_reason": "Verify current NYC residency from an allowed public source: LinkedIn and Crunchbase describe the candidate as New York-based but those are not allowed evidence sources.",
+      "unknowns": [
+        "Current city is not confirmed from an allowed public page; Allora Labs itself is publicly described as founded in New York (2019) and based in New York by third-party sources.",
+        "AI Week New York (Oct 5-11 2026) overlap is an adjacency note, never an automatic rejection."
+      ],
+      "contact_route": null,
+      "evidence": [
+        {
+          "source_url": "https://www.youtube.com/watch?v=LBB-X6aCX7c",
+          "source_type": "talk_recording",
+          "observed_facts": "Public interview recording titled 'Inside the Race to Decentralize AI with Allora Labs CEO Nick Emmons' featuring the candidate as Allora Labs CEO discussing decentralized AI.",
+          "accessed_date": "2026-08-16"
+        },
+        {
+          "source_url": "https://www.allora.network/research/allora-a-self-improving-decentralized-machine-intelligence-network",
+          "source_type": "official_document",
+          "observed_facts": "Allora Network research paper 'Allora: a Self-Improving, Decentralized Machine Intelligence Network' (content verified via public search index) describes the network's context-aware performance forecasting and differentiated incentive structure.",
+          "accessed_date": "2026-08-16"
+        }
+      ]
+    },
+    {
+      "candidate_id": "speaker-nyc-2026-012",
+      "name": "Jared Lander",
+      "real_name": "Jared Lander",
+      "source_pool": "local_web",
+      "community_id": null,
+      "artifact_summary": "Chief Data Scientist of New York data science and AI firm Lander Analytics, Adjunct Professor at Columbia University, organizer of the New York Open Statistical Programming meetup (nyhackr) and the New York R and Government Data Science and AI Conferences, and author of 'R for Everyone'.",
+      "topics": ["ml", "ai"],
+      "format_fit": ["workshop", "talk"],
+      "attendance_mode": "local",
+      "location_city": "New York",
+      "numerai_affiliation": {
+        "is_affiliated": false,
+        "types": [],
+        "evidence_urls": [],
+        "public_username": null
+      },
+      "zero_hype_fit": true,
+      "score_breakdown": {
+        "artifact_depth": 23,
+        "relevance": 15,
+        "format_fit": 14,
+        "numerai_affinity": 5,
+        "community_embeddedness": 12
+      },
+      "score": 69,
+      "tier": "watchlist",
+      "reject_reason": null,
+      "needs_human_verify": false,
+      "verify_reason": null,
+      "unknowns": [
+        "Relevance is practical statistics/ML teaching rather than DeAI or web3; a strong local general ML/tech speaker rather than a decentralized-AI specialist.",
+        "AI Week New York (Oct 5-11 2026) overlap is an adjacency note; as a local attendee, schedule awareness matters."
+      ],
+      "contact_route": null,
+      "evidence": [
+        {
+          "source_url": "https://www.jaredlander.com/",
+          "source_type": "other_public_page",
+          "observed_facts": "Personal website bio states: 'Jared Lander is the Chief Data Scientist of Lander Analytics a New York data science and AI firm, Adjunct Professor at Columbia University, Organizer of the New York Open Statistical Programming meetup and the New York R and Government Data Science and AI Conferences and author of R for Everyone.'",
+          "accessed_date": "2026-08-16",
+          "public_self_identification": true
+        }
+      ]
+    }
+  ],
+  "cohost_candidates": [
+    {
+      "cohost_id": "cohost-nyc-2026-001",
+      "community_id": "(NYAI) New York Artificial Intelligence",
+      "community_name": "(NYAI) New York Artificial Intelligence",
+      "cohost_open": true,
+      "organizer": {
+        "name": "Maryam Farooq",
+        "public_role": "Founder & Director",
+        "source_url": "https://www.nyai.co/nyai-home/about/maryam-farooq/"
+      },
+      "contact_route": {
+        "type": "community_channel",
+        "source_url": "https://www.nyai.co/"
+      },
+      "needs_human_verify": true,
+      "verify_reason": "Confirm co-hosting interest with NYAI leadership and the group's partnership process.",
+      "unknowns": [
+        "AI Week New York (Oct 5-11 2026) overlap is an adjacency note for co-hosting capacity, never an automatic rejection."
+      ],
+      "linked_speaker_candidate_id": "speaker-nyc-2026-009",
+      "evidence": [
+        {
+          "source_url": "https://www.meetup.com/nyaimeetup/",
+          "source_type": "community_page",
+          "observed_facts": "Group About text states 'Have a message to share with the AI community? Partner with us to lead an event or workshop' and 'Interested in Sponsoring an AI event? Apply here.'; group is New York NY US with 4,164 members.",
+          "accessed_date": "2026-08-16"
+        }
+      ]
+    },
+    {
+      "cohost_id": "cohost-nyc-2026-002",
+      "community_id": "AI Salon New York",
+      "community_name": "AI Salon New York",
+      "cohost_open": true,
+      "organizer": {
+        "name": "Sandy McCarron",
+        "public_role": "Chapter host (AI Salon New York)",
+        "source_url": "https://luma.com/AI-Salon-NewYork-March-2026"
+      },
+      "contact_route": null,
+      "needs_human_verify": true,
+      "verify_reason": "Confirm co-hosting interest with AI Salon New York chapter leads.",
+      "unknowns": [
+        "The chapter's own page offers an event-level 'Apply to be a Sponsor' ticket; the co-hosting process for a joint event is unconfirmed.",
+        "AI Week New York (Oct 5-11 2026) overlap is an adjacency note for co-hosting capacity, never an automatic rejection."
+      ],
+      "linked_speaker_candidate_id": "speaker-nyc-2026-010",
+      "evidence": [
+        {
+          "source_url": "https://luma.com/AI-Salon-NewYork-March-2026",
+          "source_type": "luma_event_page",
+          "observed_facts": "Event page ticket section states 'Apply to be a Sponsor - Sponsor AI Salon New York and connect with the city's leading voices in artificial intelligence.'",
+          "accessed_date": "2026-08-16"
+        }
+      ]
+    },
+    {
+      "cohost_id": "cohost-nyc-2026-003",
+      "community_id": "GDG NYC",
+      "community_name": "GDG NYC",
+      "cohost_open": true,
+      "organizer": null,
+      "contact_route": null,
+      "needs_human_verify": true,
+      "verify_reason": "Confirm co-hosting interest with GDG NYC organizers; the chapter page's Contact Us is a form, so no public contact URL was recorded.",
+      "unknowns": [
+        "Chapter-page sponsorship language is brand/showcase oriented; a joint co-hosting process for a community AI event is unconfirmed.",
+        "AI Week New York (Oct 5-11 2026) overlap is an adjacency note for co-hosting capacity, never an automatic rejection."
+      ],
+      "linked_speaker_candidate_id": null,
+      "evidence": [
+        {
+          "source_url": "https://gdg.community.dev/gdg-nyc/",
+          "source_type": "community_page",
+          "observed_facts": "Chapter page states 'Looking to showcase your brand or hire top tech talent? Explore sponsorship opportunities with North America's largest Google Developer Group' and notes GDG NYC won the 2026 'Technical Vanguard' award by Google Developer Groups.",
+          "accessed_date": "2026-08-16"
+        }
+      ]
+    },
+    {
+      "cohost_id": "cohost-nyc-2026-004",
+      "community_id": "NYC AI Developers Group (AICamp)",
+      "community_name": "NYC AI Developers Group (AICamp)",
+      "cohost_open": true,
+      "organizer": null,
+      "contact_route": {
+        "type": "community_channel",
+        "source_url": "https://www.aicamp.ai/"
+      },
+      "needs_human_verify": true,
+      "verify_reason": "Confirm co-hosting interest with AICamp NYC leadership.",
+      "unknowns": [
+        "AICamp runs many virtual events; confirm the NYC in-person cadence and venue for late 2026.",
+        "AI Week New York (Oct 5-11 2026) overlap is an adjacency note for co-hosting capacity, never an automatic rejection."
+      ],
+      "linked_speaker_candidate_id": null,
+      "evidence": [
+        {
+          "source_url": "https://www.meetup.com/aittg-nyc/",
+          "source_type": "community_page",
+          "observed_facts": "Group About text states 'If you'd like to speak at our meetups, co-host your events, or inquire about partnership opportunities, please feel free to reach out to us'; group page lists 476 past events and links the AICamp official site.",
+          "accessed_date": "2026-08-16"
+        }
+      ]
+    },
+    {
+      "cohost_id": "cohost-nyc-2026-005",
+      "community_id": "PyData NYC",
+      "community_name": "PyData NYC",
+      "cohost_open": true,
+      "organizer": null,
+      "contact_route": null,
+      "needs_human_verify": true,
+      "verify_reason": "Confirm co-hosting interest with PyData NYC organizers; the official site's interest form is not a recordable public contact URL.",
+      "unknowns": [
+        "Official site lists Speaking, Sponsorship, and Volunteering sections (speaker/sponsor invitation); a joint co-hosting process is unconfirmed.",
+        "AI Week New York (Oct 5-11 2026) overlap is an adjacency note for co-hosting capacity, never an automatic rejection."
+      ],
+      "linked_speaker_candidate_id": null,
+      "evidence": [
+        {
+          "source_url": "https://nyc.pydata.org/",
+          "source_type": "community_page",
+          "observed_facts": "Official PyData NYC site includes dedicated Getting Involved, Speaking, Sponsorship, and Volunteering sections and states all meetup events are first announced on its Meetup page; the Run A record documented the site's speaker/sponsor invitation language.",
+          "accessed_date": "2026-08-16"
+        }
+      ]
+    }
+  ]
+}
