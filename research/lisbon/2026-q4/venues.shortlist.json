@@ -1,0 +1,799 @@
+{
+  "meta": {
+    "generator": "score_venues.py",
+    "schema_version": "2.4",
+    "budget_usd": 5000.0,
+    "target_attendance": 50,
+    "event_date": "2026-10-03",
+    "event_duration_hours": 8,
+    "weights": {
+      "budget_efficiency": 0.2,
+      "capacity_fit": 0.2,
+      "catering_flexibility": 0.15,
+      "recording_suitability": 0.15,
+      "booking_path": 0.1,
+      "evidence_freshness": 0.1,
+      "technical_readiness": 0.05,
+      "event_window_fit": 0.05
+    },
+    "tier_order": [
+      "eligible",
+      "shortlist_ready",
+      "lead"
+    ]
+  },
+  "eligible": [],
+  "shortlist_ready": [
+    {
+      "name": "Avila Spaces — Saldanha",
+      "city_slug": "lisbon-pt",
+      "address": "Praça Duque de Saldanha, 1050-094 Lisboa",
+      "capacity_comfortable": 50,
+      "capacity_basis": "venue_claim",
+      "screen_status": "confirmed",
+      "wifi_status": "confirmed",
+      "catering_policy": "unknown",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "booking_url": "https://avilaspaces.com/en/services/event-spaces-lisbon/",
+      "verification_question_kinds": [
+        "availability",
+        "booking_terms",
+        "final_quote",
+        "cost_unknown",
+        "event_window"
+      ],
+      "verification_questions": [
+        "Confirm event space availability at Avila Spaces Saldanha on the chosen 2026 Saturday for a 50-person event.",
+        "Confirm booking terms and pricing.",
+        "Confirm the exact room configuration for 50 attendees.",
+        "Confirm cost and pricing for a full-day Saturday event.",
+        "Confirm event window (opening/closing times) and whether the venue supports an 8-hour event ending at 17:00."
+      ],
+      "source_url": "https://avilaspaces.com/en/services/event-spaces-lisbon/",
+      "source_title": "Event Spaces and Venues in Lisbon, Portugal — AVILA SPACES (official): fully equipped event spaces for up to 50 guests",
+      "accessed_on": "2026-08-18",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "Avila Spaces official event spaces page (accessed 2026-08-18) states 'Fully equipped event spaces in central Lisbon for corporate and private events. LED walls, stage, professional AV systems, screens, and hybrid video-conference setup. Flexible venues for meetings, workshops, talks, and celebrations for up to 50 guests.' Location is inside Atrium Saldanha shopping mall, next to Saldanha Metro station. Multiple coworker reviews praise the event support: 'Avila Spaces were unsurpassed in their help and support for the event. Without a shadow of a doubt, this is the place to be.' The space has dedicated event rooms with AV equipment.",
+        "inference": "Avila Spaces explicitly advertises event spaces for up to 50 guests with professional AV systems, LED walls, and hybrid video-conference setup — this directly matches the 50-person DeAI Day target. The Saldanha location is well-connected by metro. Screen and Wi-Fi are confirmed by the venue's own description. Pricing needs confirmation. This is a strong shortlist candidate due to the exact capacity match and confirmed AV equipment.",
+        "geo": "https://avilaspaces.com/en/services/event-spaces-lisbon/"
+      },
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "latitude": 38.7376,
+      "longitude": -9.1455,
+      "cost_rate_unit": "unknown",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "cost_unknown",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "score": 0.5483,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.5,
+          "weight": 0.2,
+          "contribution": 0.1
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "recording_suitability": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 0.7333,
+          "weight": 0.1,
+          "contribution": 0.0733
+        },
+        "technical_readiness": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "event_window_fit": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "total": 0.5483
+      }
+    },
+    {
+      "name": "Heden — Lisbon",
+      "city_slug": "lisbon-pt",
+      "address": "Multiple locations: Chiado, Santa Apolónia, Alvalade",
+      "capacity_comfortable": 75,
+      "capacity_basis": "venue_claim",
+      "screen_status": "unknown",
+      "wifi_status": "confirmed",
+      "catering_policy": "unknown",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "booking_url": "https://heden.co/event-spaces/",
+      "verification_question_kinds": [
+        "availability",
+        "booking_terms",
+        "final_quote",
+        "room_assignment",
+        "screen",
+        "cost_unknown",
+        "event_window"
+      ],
+      "verification_questions": [
+        "Confirm which Heden location has event space availability on the chosen 2026 Saturday for a 50-person event.",
+        "Confirm the exact room/auditorium capacity at the available location.",
+        "Confirm booking terms, A/V configuration, and pricing.",
+        "Confirm screen/projector availability in the event space.",
+        "Confirm cost and pricing for a full-day Saturday event.",
+        "Confirm event window (opening/closing times) and whether the venue supports an 8-hour event ending at 17:00.",
+        "Confirm event window (opening/closing times) and whether the venue supports an 8-hour event ending at 17:00."
+      ],
+      "source_url": "https://heden.co/event-spaces/",
+      "source_title": "Product Event Spaces — Heden (official): auditoriums up to 75 seated, AV system, catering solutions",
+      "accessed_on": "2026-08-18",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "Heden official event spaces page (accessed 2026-08-18) states: 'Find the perfect venue for your next event in one of our Lisbon coworking spaces. Auditoriums that can fit up to 75 seated people, catering solutions, AV system and a dedicated operations team.' Multiple Lisbon locations including Chiado (with members bar), Santa Apolónia (waterfront, Edifício NE), and Alvalade. The spaces are described as 'vibrant, engaging and sustainable workspaces' with 'superfast wi-fi, unlimited printing, phone booths, meeting rooms, fully equipped kitchen areas and dedicated event spaces.' Santa Apolónia is near the cruise terminal with metro and train access.",
+        "inference": "Heden's auditorium capacity of up to 75 seated is well-suited for a 50-person event. The AV system and dedicated operations team are strong assets. Wi-Fi is confirmed as 'superfast.' Multiple location options provide flexibility. Screen/projector availability and pricing need confirmation. The Chiado location is centrally located; Santa Apolónia has good transit access.",
+        "geo": "https://heden.co/event-spaces/"
+      },
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "latitude": 38.7104,
+      "longitude": -9.135,
+      "cost_rate_unit": "unknown",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "cost_unknown",
+        "screen_unknown",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "score": 0.5233,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.5,
+          "weight": 0.2,
+          "contribution": 0.1
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "recording_suitability": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 0.7333,
+          "weight": 0.1,
+          "contribution": 0.0733
+        },
+        "technical_readiness": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "event_window_fit": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "total": 0.5233
+      }
+    },
+    {
+      "name": "Impact Hub Lisbon — Baixa/Chiado",
+      "city_slug": "lisbon-pt",
+      "address": "1 Travessa das Pedras Negras, 1100-404 Lisboa",
+      "capacity_comfortable": 50,
+      "capacity_basis": "venue_claim",
+      "screen_status": "unknown",
+      "wifi_status": "unknown",
+      "catering_policy": "unknown",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "booking_url": "https://lisbon.impacthub.net/event-venue/",
+      "verification_question_kinds": [
+        "availability",
+        "booking_terms",
+        "final_quote",
+        "room_assignment",
+        "screen",
+        "wifi",
+        "cost_unknown",
+        "event_window"
+      ],
+      "verification_questions": [
+        "Confirm event space availability at Baixa/Chiado location on the chosen 2026 Saturday for a 50-person event.",
+        "Confirm which room/space would be assigned for a 50-person event.",
+        "Confirm booking terms, A/V configuration, and pricing.",
+        "Confirm screen/projector availability.",
+        "Confirm Wi-Fi capacity for 50+ attendees.",
+        "Confirm cost and pricing for a full-day Saturday event.",
+        "Confirm event window (opening/closing times) and whether the venue supports an 8-hour event ending at 17:00.",
+        "Confirm event window (opening/closing times) and whether the venue supports an 8-hour event ending at 17:00."
+      ],
+      "source_url": "https://lisbon.impacthub.net/event-venue/",
+      "source_title": "Event Venue — Impact Hub Lisbon (official): Baixa location at Travessa das Pedras Negras, historic city centre",
+      "accessed_on": "2026-08-18",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "Impact Hub Lisbon event venue page (accessed 2026-08-18) lists three locations including Baixa at 1 Travessa das Pedras Negras, 1100-040 Lisboa. Letswork listing describes it as 'Impact Hub Lisbon Baixa on Travessa das Pedras Negras is a thoughtfully designed coworking space in the historic city centre with proper lighting, good chairs, free coffee, phone booths and a warm community.' Meeting rooms page shows boardroom capacity up to 6 people. Eventbrite listing for 'Better Together' events confirms the Baixa location.",
+        "inference": "The Baixa/Chiado location is centrally located in Lisbon's historic centre, which is attractive for attendee accessibility. However, meeting room capacity appears limited (boardroom up to 6). The event venue page suggests larger spaces may be available. Capacity for 50 people needs confirmation — this may be a better fit as a secondary option or for smaller gatherings.",
+        "geo": "https://lisbon.impacthub.net/event-venue/"
+      },
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "latitude": 38.7104,
+      "longitude": -9.135,
+      "cost_rate_unit": "unknown",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "cost_unknown",
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "score": 0.4983,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.5,
+          "weight": 0.2,
+          "contribution": 0.1
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "recording_suitability": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 0.7333,
+          "weight": 0.1,
+          "contribution": 0.0733
+        },
+        "technical_readiness": {
+          "factor": 0.0,
+          "weight": 0.05,
+          "contribution": 0.0
+        },
+        "event_window_fit": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "total": 0.4983
+      }
+    },
+    {
+      "name": "Impact Hub Lisbon — Penha (Impact Hall)",
+      "city_slug": "lisbon-pt",
+      "address": "R. Neves Ferreira 13, 1170-273 Lisboa",
+      "capacity_comfortable": 100,
+      "capacity_basis": "venue_claim",
+      "screen_status": "unknown",
+      "wifi_status": "unknown",
+      "catering_policy": "unknown",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "booking_url": "https://lisbon.impacthub.net/event-venue/",
+      "verification_question_kinds": [
+        "availability",
+        "booking_terms",
+        "final_quote",
+        "screen",
+        "wifi",
+        "cost_unknown",
+        "event_window"
+      ],
+      "verification_questions": [
+        "Confirm Impact Hall availability on the chosen 2026 Saturday for a 50-person event.",
+        "Confirm booking terms, A/V configuration, and any F&B or staffing minimums.",
+        "Confirm pricing for a full-day Saturday event rental.",
+        "Confirm screen/projector availability in Impact Hall.",
+        "Confirm Wi-Fi capacity for 50+ attendees.",
+        "Confirm cost and pricing for a full-day Saturday event.",
+        "Confirm event window (opening/closing times) and whether the venue supports an 8-hour event ending at 17:00."
+      ],
+      "source_url": "https://lisbon.impacthub.net/event-venue/",
+      "source_title": "Event Venue — Impact Hub Lisbon (official): multi-usage venues for trainings, meetings, workshops, team-building and celebrations; conference room up to 100 auditorium, 200 standing",
+      "accessed_on": "2026-08-18",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "Impact Hub Lisbon official event venue page (accessed 2026-08-18) lists multi-usage venues for trainings, meetings, workshops, team-building and celebrations. Conference room page shows capacity: Standing up to 200 people, Auditorium up to 100 people. Three locations: Baixa, Chiado, Penha de França. Impact Hall is on the ground floor of Impact Hub Lisbon - Penha de França, described as an old industrial typography transformed into a vibrant space for events. 600 m² space with adaptable layout and professional equipment. The 1200m² coworking and events space offers abundant natural light, three terraces, and modern amenities. Discounts available for non-profits/startups adding community value.",
+        "inference": "Impact Hall at Penha with 600m² and auditorium capacity up to 100 is well-suited for a 50-person DeAI Day event. The industrial-creative setting aligns with tech community events. Pricing and availability need manual confirmation. The venue is part of the global Impact Hub network, which is already referenced in the Lisbon hub_evidence.",
+        "geo": "https://lisbon.impacthub.net/event-venue/"
+      },
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "latitude": 38.7223,
+      "longitude": -9.1185,
+      "cost_rate_unit": "unknown",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "cost_unknown",
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "score": 0.4983,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.5,
+          "weight": 0.2,
+          "contribution": 0.1
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "recording_suitability": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 0.7333,
+          "weight": 0.1,
+          "contribution": 0.0733
+        },
+        "technical_readiness": {
+          "factor": 0.0,
+          "weight": 0.05,
+          "contribution": 0.0
+        },
+        "event_window_fit": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "total": 0.4983
+      }
+    },
+    {
+      "name": "Village Underground Lisbon",
+      "city_slug": "lisbon-pt",
+      "address": "Av. da Índia 52, 1300-299 Lisboa (Alcântara)",
+      "capacity_comfortable": 60,
+      "capacity_basis": "venue_claim",
+      "screen_status": "unknown",
+      "wifi_status": "unknown",
+      "catering_policy": "unknown",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "booking_url": null,
+      "verification_question_kinds": [
+        "availability",
+        "booking_terms",
+        "final_quote",
+        "screen",
+        "wifi",
+        "cost_unknown",
+        "event_window"
+      ],
+      "verification_questions": [
+        "Confirm event space availability at Village Underground Lisbon on the chosen 2026 Saturday for a 50-person event.",
+        "Confirm booking terms, A/V configuration, and pricing.",
+        "Confirm screen/projector availability.",
+        "Confirm Wi-Fi capacity for 50+ attendees.",
+        "Confirm cost and pricing for a full-day Saturday event.",
+        "Confirm event window (opening/closing times) and whether the venue supports an 8-hour event ending at 17:00.",
+        "Confirm event window (opening/closing times) and whether the venue supports an 8-hour event ending at 17:00."
+      ],
+      "source_url": "https://www.coworker.com/portugal/lisbon/village-underground",
+      "source_title": "Coworking Space at Village Underground, Lisbon — Coworker: Forbes chosen as one of the 4 most disruptive coworking spaces in the world",
+      "accessed_on": "2026-08-18",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "Coworker listing (accessed 2026-08-18) states Forbes chose Village Underground Lisboa as one of the 4 most disruptive coworking spaces in the world. Big 7 Media ranked it number 10 in the 50 best coworking spots in Europe (2019). Composed of 14 maritime containers and 2 disabled buses, it is a co-work space for creative activities and a venue for cultural events. Located at Museu da Carris, Alcântara. Alternative Lisbon guide describes it as hosting up to 60 people in a creative environment. Lisboacool describes it as a 21st century cultural centre for the creative industry, co-working space and events venue.",
+        "inference": "Village Underground's creative container-based design and proximity to LX Factory (Alcântara creative district) makes it culturally fitting for a tech community event. The 60-person capacity fits a 50-person event. However, it may be more suited for smaller, more intimate gatherings. Pricing and availability need confirmation. The venue is part of the same complex as Impact Hub Lisbon (Museu da Carris village).",
+        "geo": "https://www.coworker.com/portugal/lisbon/village-underground"
+      },
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "latitude": 38.7075,
+      "longitude": -9.1786,
+      "cost_rate_unit": "unknown",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "cost_unknown",
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "score": 0.3983,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.5,
+          "weight": 0.2,
+          "contribution": 0.1
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "recording_suitability": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "booking_path": {
+          "factor": 0.0,
+          "weight": 0.1,
+          "contribution": 0.0
+        },
+        "evidence_freshness": {
+          "factor": 0.7333,
+          "weight": 0.1,
+          "contribution": 0.0733
+        },
+        "technical_readiness": {
+          "factor": 0.0,
+          "weight": 0.05,
+          "contribution": 0.0
+        },
+        "event_window_fit": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "total": 0.3983
+      }
+    }
+  ],
+  "lead": [
+    {
+      "name": "IDEA Spaces — Saldanha",
+      "city_slug": "lisbon-pt",
+      "address": "Av. Defensores de Chaves, Lisboa",
+      "capacity_comfortable": 50,
+      "capacity_basis": "venue_claim",
+      "screen_status": "unknown",
+      "wifi_status": "unknown",
+      "catering_policy": "unknown",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "booking_url": null,
+      "verification_question_kinds": [
+        "availability",
+        "booking_terms",
+        "final_quote",
+        "capacity",
+        "screen",
+        "wifi",
+        "cost_unknown",
+        "event_window"
+      ],
+      "verification_questions": [
+        "Confirm event space availability at IDEA Spaces Saldanha on the chosen 2026 Saturday for a 50-person event.",
+        "Confirm the exact event space capacity (the 10-floor campus has event space for rent but capacity unclear).",
+        "Confirm booking terms, A/V configuration, and pricing.",
+        "Confirm screen/projector availability.",
+        "Confirm Wi-Fi capacity for 50+ attendees.",
+        "Confirm cost and pricing for a full-day Saturday event.",
+        "Confirm event window (opening/closing times) and whether the venue supports an 8-hour event ending at 17:00.",
+        "Confirm event window (opening/closing times) and whether the venue supports an 8-hour event ending at 17:00."
+      ],
+      "source_url": "https://ideaspaces.pt/saldanha.html",
+      "source_title": "IDEA SPACES — Saldanha (official): 10-floor coworking campus with event space for rent",
+      "accessed_on": "2026-08-18",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "IDEA Spaces Saldanha official page (accessed 2026-08-18) describes a 10-floor coworking campus on Avenida Defensores de Chaves, three minutes' walk from Saldanha Square. The space offers 'incredible facilities' and is described as 'the perfect starting point for taking off your business.' Workin.space listing states 'Private offices: 2 to 50. Visit & tailored quote.' The campus has event space for rent (listed on Coworker and OneCoworking). PyData Lisbon meets at IDEA Spaces São Sebastião location (from Meetup listing).",
+        "inference": "IDEA Spaces is a large coworking campus with event space capability. The 10-floor layout suggests multiple room options. The PyData Lisbon meetup meets at IDEA Spaces, indicating the venue is used for tech community events. However, the exact event capacity for 50 people and pricing need confirmation. The Saldanha location is well-connected by metro. This is a lead-tier venue due to capacity uncertainty.",
+        "geo": "https://ideaspaces.pt/saldanha.html"
+      },
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "latitude": 38.7376,
+      "longitude": -9.1455,
+      "cost_rate_unit": "unknown",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "venue_tier": "lead",
+      "tier_reasons": [
+        "material verification question(s): capacity"
+      ],
+      "venue_flags": [
+        "cost_unknown",
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "score": null,
+      "score_breakdown": null
+    },
+    {
+      "name": "Second Home Lisbon",
+      "city_slug": "lisbon-pt",
+      "address": "Mercado da Ribeira, Avenida 24 de Julho, 1200-479 Lisboa",
+      "capacity_comfortable": 50,
+      "capacity_basis": "venue_claim",
+      "screen_status": "unknown",
+      "wifi_status": "unknown",
+      "catering_policy": "unknown",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "booking_url": "https://secondhome.io/venue-hire-lisbon/",
+      "verification_question_kinds": [
+        "availability",
+        "booking_terms",
+        "final_quote",
+        "capacity",
+        "screen",
+        "wifi",
+        "cost_unknown",
+        "event_window"
+      ],
+      "verification_questions": [
+        "Confirm event space availability at Second Home Lisbon on the chosen 2026 Saturday for a 50-person event.",
+        "Confirm the exact capacity of the event space (the 1100 sqm total includes coworking areas).",
+        "Confirm booking terms, A/V configuration, and pricing.",
+        "Confirm screen/projector availability.",
+        "Confirm Wi-Fi capacity for 50+ attendees.",
+        "Confirm cost and pricing for a full-day Saturday event.",
+        "Confirm event window (opening/closing times) and whether the venue supports an 8-hour event ending at 17:00.",
+        "Confirm event window (opening/closing times) and whether the venue supports an 8-hour event ending at 17:00."
+      ],
+      "source_url": "https://secondhome.io/venue-hire-lisbon/",
+      "source_title": "Venue Hire Lisbon — Second Home (official): design-led event spaces at Mercado da Ribeira",
+      "accessed_on": "2026-08-18",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "Second Home official venue hire page (accessed 2026-08-18) states 'Hire inspiring event spaces in Lisbon at Second Home Mercado da Ribeira' — unique event spaces inside Mercado da Ribeira filled with natural light and plants, designed to inspire creativity. The space is 1,100 sqm inside Lisbon's oldest food market. Domus article describes it as an 'innovative creative workspace provider' with a mission to support creativity, entrepreneurship and wellbeing. Akommo listing rates it 4.9/5 on Google. The space is described as 'filled with natural light and quirky furniture' and 'a very unique and inspiring space.'",
+        "inference": "Second Home's design-led approach and location inside Mercado da Ribeira (Time Out Market area) makes it an attractive venue for a tech community event. The 1,100 sqm total space likely includes coworking areas; the dedicated event space capacity needs confirmation. Pricing and availability for a 50-person Saturday event need manual verification.",
+        "geo": "https://secondhome.io/venue-hire-lisbon/"
+      },
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "latitude": 38.7067,
+      "longitude": -9.1459,
+      "cost_rate_unit": "unknown",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "venue_tier": "lead",
+      "tier_reasons": [
+        "material verification question(s): capacity"
+      ],
+      "venue_flags": [
+        "cost_unknown",
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "score": null,
+      "score_breakdown": null
+    },
+    {
+      "name": "The Block Lisboa",
+      "city_slug": "lisbon-pt",
+      "address": "R. Latino Coelho 63, 1er Andar, Lisboa (Picoas)",
+      "capacity_comfortable": 50,
+      "capacity_basis": "venue_claim",
+      "screen_status": "unknown",
+      "wifi_status": "unknown",
+      "catering_policy": "unknown",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "booking_url": "https://www.theblocklisboa.com/events",
+      "verification_question_kinds": [
+        "availability",
+        "booking_terms",
+        "final_quote",
+        "capacity",
+        "screen",
+        "wifi",
+        "cost_unknown",
+        "event_window"
+      ],
+      "verification_questions": [
+        "Confirm event space availability at The Block Lisboa on the chosen 2026 Saturday for a 50-person event.",
+        "Confirm the exact capacity of the event space (the coworking has 9 spaces but event capacity is unclear).",
+        "Confirm booking terms and pricing for event hosting.",
+        "Confirm screen/projector availability.",
+        "Confirm Wi-Fi capacity for 50+ attendees.",
+        "Confirm cost and pricing for a full-day Saturday event.",
+        "Confirm event window (opening/closing times) and whether the venue supports an 8-hour event ending at 17:00.",
+        "Confirm event window (opening/closing times) and whether the venue supports an 8-hour event ending at 17:00."
+      ],
+      "source_url": "https://www.theblocklisboa.com/",
+      "source_title": "Coworking — The Block | Lisboa (official): Lisbon's original crypto and Web3 community hub, running since 2017, 6,500+ members",
+      "accessed_on": "2026-08-18",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "The Block Lisboa official site (accessed 2026-08-18) states: 'The Block was born as a space for professionals and enthusiasts in blockchain and crypto. Nowadays, people from different communities join us to meet, work and share their ideas.' Meetup page describes it as 'Lisbon's original crypto and Web3 community hub, running since 2017. Home to a community of 6,500+ members, it hosts weekly CryptoFriday meetups, Block Sessions, and works as a coworking space for builders, founders, and anyone curious about the space.' Events page invites event hosting. Deskamigo describes it as 'a cozy, lived-in space in a traditional Lisbon building in Picoas, with a sun-drenched rooftop terrace.' Coworker reviews mention 'numerous evening events ranging from crypto currency mining to 3D printing.'",
+        "inference": "The Block Lisboa is the most established crypto/Web3 community space in Lisbon with 6,500+ members and weekly events since 2017. It has dedicated event hosting capability. However, it is primarily a coworking space — the exact event capacity for 50 people needs confirmation. The crypto/Web3 focus aligns well with DeAI Day's audience. This venue could also serve as a community partnership lead (cohost possibility). Pricing needs confirmation.",
+        "geo": "https://www.theblocklisboa.com/"
+      },
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "latitude": 38.7376,
+      "longitude": -9.1455,
+      "cost_rate_unit": "unknown",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "venue_tier": "lead",
+      "tier_reasons": [
+        "material verification question(s): capacity"
+      ],
+      "venue_flags": [
+        "cost_unknown",
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "score": null,
+      "score_breakdown": null
+    }
+  ]
+}
