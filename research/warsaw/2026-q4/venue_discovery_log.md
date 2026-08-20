@@ -1,77 +1,111 @@
-# Venue Discovery Log: Warsaw 2026 Q4
+# Venue Discovery Log — Warsaw (2026-Q4) — Phase Re-run
 
-## Summary
-- Candidates examined: 10+
-- Retained: 7
-- Rejected: 3+
-- Unresolved: 0
+## Date: 2026-08-20
+## Worker: jnr-research
+## Context: Original Run A found 7 venues all scoring "lead". Re-run with ddgs installed.
 
-## Platform Coverage
-No active platform coverage in registry; standard web discovery used. Warsaw is not covered by any of the 3 verified venues platforms (Giggster=NYC, Space Cloud=Seoul, Tagvenue=NYC+Boston).
+## Platform Check
+- Result: No active platform coverage for Warsaw in venue_platforms.json
+- Standard web discovery used
 
-## Retained Venues
+## Search Queries (14 total)
+1. "event space Warsaw 50 people rental" → 8 results
+2. "conference room Warsaw booking Poland" → 6 results
+3. "loft event space Warsaw Poland" → 8 results (mostly UK retail)
+4. "warehouse event venue Warsaw" → 8 results (fashion brands)
+5. "coworking event space Warsaw Poland" → 8 results (mostly Google Maps)
+6. "Impact Hub Warsaw event space" → 8 results (generic impact.com)
+7. "CIC Warsaw event space Varso" → 8 results (UK CIC definitions)
+8. "Tagvenue Warsaw Poland" → 8 results (UK-focused Tagvenue)
+9. "eventvenue.pl Warsaw" → 8 results (Microsoft Outlook links)
+10. "centrum konferencyjne Warszawa" → 8 results (strong: ADN, salekonferencyjne.pl, konferencje.pl)
+11. "Google for Startups Warsaw" → 8 results (strong: Campus Warsaw, Firstview)
+12. "sala eventowa Warszawa" → 8 results (strong: WE EVENT WTT, Messalka, Samo Centrum)
+13. "warszawa wynajem sali eventowej" → 8 results (Wikipedia)
+14. "venue hire Warsaw 50 guests" → 8 results (UK aggregators)
 
-1. **CIC Warsaw — Event Spaces at Varso Place** (lead)
-   - Source: https://cic.com/warsaw/event-spaces/
-   - Type: event_space
-   - Location: Varso Place, Warsaw city center
-   - Evidence: Multiple event rooms (Design Room, Research Room, Strategy Room, bar). AV and support included. Flexible setups.
-   - Gaps: Capacity, pricing, availability unknown.
+## Deep Dive Venues (fetched via curl)
 
-2. **WeWork Warsaw — Krucza 50** (lead)
-   - Source: https://www.wework.com/en-GB/buildings/krucza-50--warsaw
-   - Type: event_space
-   - Location: Krucza 50, central Warsaw (Srodmiescie)
-   - Evidence: On Demand pay-as-you-go, meeting rooms by hour. Rating 4.3/42 reviews.
-   - Gaps: Capacity for 50+ uncertain. Weekend availability uncertain. Pricing not public.
+### 1. WE EVENT — Sala Eventowa Warsaw Trade Tower
+- Source: https://www.sala-eventowa-warszawa.pl/
+- Address: Chłodna 51, 00-867 Warszawa, Wola (32nd floor WTT)
+- Capacity: Up to 200 theater; Panorama Wola 120m² or 230m²
+- WiFi: Yes (from venue type)
+- Catering: In-house (WE Catering)
+- Hours: Mon-Fri 08:00-18:00, Sat-Sun 10:00-02:00; 24/7 availability
+- Parking: Underground + street
+- Google rating: 5.0 (Trustindex verified)
+- Price: Quote-based (standard rates for 09:00-17:00)
+- Email: biuro@sala-eventowa-warszawa.pl
+- Phone: +48 22 249 1609
+- VAT ID: PL7010667258
 
-3. **Regus Warsaw — Meeting Rooms** (lead)
-   - Source: https://www.regus.com/en-gb/poland/warsaw/meeting-rooms
-   - Type: conference_room
-   - Location: Multiple Warsaw locations
-   - Evidence: 79-129 PLN/hr (USD 21-35/hr). By hour or day.
-   - Gaps: Likely too small for 50+ attendees. Saturday availability uncertain.
+### 2. Messalka Events
+- Source: https://messalka.events/
+- Address: Krakowskie Przedmieście 16/18, 00-325 Warszawa
+- Capacity: 30-600 guests; 750m² across 4 levels
+- Rating: 4.8/5 (34 reviews)
+- Founded: 2022
+- Phone: +48 690 292 576
+- Email: booking@messalka.events
+- Nearest metro: Nowy Świat-Uniwersytet
+- Historic 1911 bathhouse (Łaźnia Messalka)
+- VOID Acoustics sound system
+- Premium catering + Live Cooking
+- Price: Quote-based
 
-4. **Impact Hub Warsaw** (lead)
-   - Source: https://warsaw.impacthub.net/
-   - Type: event_space
-   - Location: Nowogrodzka 47a, Warsaw
-   - Evidence: Impact Hub global network location. NOT in installed 150-record snapshot.
-   - Gaps: Capacity, pricing, availability unknown. Not in resolver snapshot.
+### 3. ADN Centrum Konferencyjne
+- Source: https://ckadn.pl/en/
+- Address: Browary Warszawskie, Warszawa
+- Rooms: 25 air-conditioned, daylight + blackout
+- Key rooms: 1A (111m²/100p), 1B (112m²/100p), 14 (62m²/75p), 13B (66m²/75p)
+- Largest: 500m² for 550 people
+- Tech: Advanced equipment
+- Phone: 22 208 21 12
+- Price: Quote-based
 
-5. **Varso Place — Event Space** (lead)
-   - Source: https://varso.com/en/leasing/event-space-for-rent
-   - Type: event_space
-   - Location: Varso Place, Warsaw city center
-   - Evidence: 'Original, modern interiors' for conferences, events, exhibitions.
-   - Gaps: Capacity, pricing, availability unknown. May overlap with CIC Warsaw.
+### 4. Samo Centrum Wszechświata
+- Source: https://samocentrum.com/
+- Address: Chłodna 29, Warszawa
+- Capacity: 1000m² across 9 modular rooms
+- Style: Industrial/modern, restored historic kamienica
+- Events: Weddings, corporate, training, banquets
+- Price: Quote-based
 
-6. **Warsaw.ai — Event Venue** (lead)
-   - Source: https://warsaw.ai/
-   - Type: event_space
-   - Location: Warsaw (exact address unknown)
-   - Evidence: AI community that hosts events. Conference theme active.
-   - Gaps: Whether dedicated venue or external. Capacity, pricing unknown.
+### 5. Google for Startups Warsaw (Campus Warsaw)
+- Source: https://googleforstartups-warsaw.firstview.us/en
+- Address: Plac Konesera 1, 03-736 Warszawa, Praga-Polnoc
+- Type: Tech hub campus
+- WiFi: Yes
+- Potential: Free/subsidized space for qualifying community events
+- Price: Unknown (possibly free for qualifying events)
 
-7. **workin.space — Warsaw Meeting Rooms** (lead)
-   - Source: https://book.workin.space/en/poland/warsaw/meeting-room
-   - Type: conference_room
-   - Location: Multiple Warsaw locations (aggregator)
-   - Evidence: 70+ rooms, from 481 PLN/day (USD 129/day). Online booking.
-   - Gaps: 481 PLN/day is minimum (small rooms). Larger rooms for 50+ will cost more.
+### 6. CIC Warsaw — Event Spaces at Varso Place
+- Source: https://cic.com/warsaw/event-spaces/
+- Address: Varso Place, Warsaw
+- Rooms: Design Room, Research Room, Strategy Room + full-size bar
+- AV: "AV, support, and flexible setups"
+- Location: Next to Central Railway Station
+- Price: Quote-based
 
-## Rejected Venues
+### 7. Impact Hub Warsaw
+- Source: https://warsaw.impacthub.net/
+- Address: Nowogrodzka 47a, Warsaw
+- Status: NOT in installed Impact Hub snapshot
+- Type: Coworking + event spaces + community
+- Price: Unknown
 
-1. **Ptak Warsaw Expo** — Trade fair venue in Nadarzyn (~20km from Warsaw center). Too large for 50-80 person event. Rejected as oversized.
+## Results
+- 11 venues in venues.raw.json
+- 7 shortlist_ready (score ≥ threshold)
+- 4 leads (capacity unknown)
+- Top venue: ADN Centrum Konferencyjne (score 0.5867)
 
-2. **Crowne Plaza Warsaw — The HUB** — Hotel conference rooms. 1,400+ sqm. Likely too expensive and too large. Rejected as over-budget/oversized.
+## Files Modified
+- research/warsaw/2026-q4/venues.raw.json (rewritten)
+- research/warsaw/2026-q4/venues.shortlist.json (regenerated)
 
-3. **Hotel venues (Grand Hyatt, Marriott, etc.)** — JS-rendered pages, HTTP 403 from this environment. Unable to verify. Rejected as unresolved.
-
-## Key Observations
-- Warsaw venue market is dominated by coworking/meeting room providers (WeWork, Regus, CIC, workin.space)
-- Dedicated event spaces for 50-80 capacity are limited in public listings
-- ETHWarsaw/Kolektyw3 has a physical hub that could serve as venue or community partner
-- Impact Hub Warsaw exists but is not in the installed resolver snapshot
-- Most venues are inquiry-only with no published rates
-- City center venues (Varso Place, Krucza 50, Nowogrodzka) are preferred for accessibility
+## Files NOT Modified
+- communities.raw.json (untouched)
+- calendar_conflicts.json (untouched)
+- city_input.json (untouched)

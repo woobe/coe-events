@@ -13,18 +13,21 @@
 
 ## Executive Summary
 
-- Top selectable venue: none — no selectable venue passed the tier classification
-- Eligible venues: 0; shortlist-ready: 0; leads: 7
+- Top selectable venue: ADN Centrum Konferencyjne (score 0.5867) — tier shortlist_ready
+- Eligible venues: 0; shortlist-ready: 7; leads: 4
 - Speaker candidates: deferred to Run B after venue selection
-- Calendar awareness: 1 record(s) — 1 related-event opportunity/relevance, 0 major-city logistics — informational, never eliminations
-- Open questions: 51
+- Calendar awareness: 4 record(s) — 2 related-event opportunity/relevance, 2 major-city logistics — informational, never eliminations
+- Open questions: 65
 - Recommendation: none selected yet
 
 ## Calendar flags for Joe — informational, not eliminations
 
 Calendar awareness has two categories in schema 2.4: related-event opportunity/relevance and major-city logistics. Neither category scores, tiers, selects, or rejects a venue; these flags are awareness only.
 
-- Web3 Warsaw 2026 — 2026-09-09 to 2026-09-10 (related-event opportunity, relevance: web3) — [Web3 Warsaw 2026 — Largest blockchain conference in Eastern Europe, Sep 9-10](https://web3warsaw.com/). This is an awareness flag for Joe's decision; it never removes the date automatically.
+- Agent Conf 2026 — 2026-09-17 to 2026-09-18 (related-event opportunity, relevance: ai) — [Agent Conf 2026 — Europe's first major conference for engineers building agentic systems, Sep 17-18, Crowne Plaza Warsaw](https://www.eventbrite.com/e/agent-conf-2026-tickets-1989991661629). This is an awareness flag for Joe's decision; it never removes the date automatically.
+- Warsaw Tech Week 2026 — 2026-09-22 to 2026-09-24 (major-city logistics) — [Warsaw Tech Week 2026 — International Trade Fair of Technologies and Innovations, Sep 22-24, PTAK Warsaw Expo](https://www.eventbrite.com/e/warsaw-tech-week-tickets-1986300787124). This is a logistics awareness flag for Joe's decision; it never removes the date automatically.
+- Warsaw Home Build 2026 — 2026-10-21 to 2026-10-24 (major-city logistics) — [Warsaw Home Build 2026 — Construction and interior trade fair, Oct 21-24](https://www.homebuild.pl/en/). This is a logistics awareness flag for Joe's decision; it never removes the date automatically.
+- FINTECH Poland Expo 2026 — 2026-11-17 to 2026-11-19 (related-event opportunity, relevance: fintech) — [FINTECH Poland Expo 2026 — Fintech trade fair, Nov 17-19](https://fintechpoland.pl/). This is an awareness flag for Joe's decision; it never removes the date automatically.
 
 ## Venue Shortlist (eligible, ranked)
 
@@ -32,53 +35,89 @@ Calendar awareness has two categories in schema 2.4: related-event opportunity/r
 
 ## Shortlist-Ready Venues (manual checks remain; selectable by Joe)
 
-- None — every candidate is fully evidenced or a lead.
-
-## Venue Leads (not selectable until re-evidenced)
-
-- CIC Warsaw — Event Spaces at Varso Place (tier lead, score unknown) — capacity 0 (unknown), screen unknown, wifi unknown, cost unknown (unknown) — confirm cost with venue, catering unknown
-   - Flags: cost_unknown, screen_unknown, wifi_unknown, availability_unconfirmed, final_quote_required, duration_unconfirmed, map_location_unknown, stale_evidence
-   - Tier notes: capacity_comfortable 0 below minimum 40
-   - Event window: unknown (opening unknown)
+1. ADN Centrum Konferencyjne (tier shortlist_ready, score 0.5867) — capacity 75 (venue_claim), screen confirmed, wifi confirmed, cost unknown (unknown) — confirm cost with venue, catering in_house_available
+   - Flags: cost_unknown, availability_unconfirmed, final_quote_required, duration_unconfirmed, map_location_unknown, stale_evidence
+   - Event window: unknown (opening unknown) (max booking 8h)
+   - Source: [ADN Conference Center — Rooms](https://ckadn.pl/en/)
+   - Booking: [https://ckadn.pl/en/](https://ckadn.pl/en/)
+   - Unresolved: Confirm exact rental rate for 8-hour Saturday event for 50-80 people.
+   - Unresolved: Confirm Saturday availability at ADN Conference Center.
+   - Unresolved: Confirm event window (opening/closing times) and whether 8-hour hire is supported.
+   - Unresolved: Confirm screen/projector is available in recommended rooms (1B or 14).
+   - Unresolved: Confirm WiFi availability in event rooms.
+   - Unresolved: Confirm the exact all-in price for an 8-hour Saturday event.
+2. WE EVENT — Sala Eventowa Warsaw Trade Tower (tier shortlist_ready, score 0.5617) — capacity 80 (venue_claim), screen unknown, wifi confirmed, cost unknown (unknown) — confirm cost with venue, catering in_house_available
+   - Flags: cost_unknown, screen_unknown, availability_unconfirmed, final_quote_required, duration_unconfirmed, map_location_unknown, stale_evidence
+   - Event window: unknown (closing 18:00) (opening 08:00-18:00 Mon-Fri; 10:00-02:00 Sat-Sun) (max booking 8h)
+   - Source: [Sala eventowa Warszawa | Sale konferencyjne WTT Wola – WE EVENT](https://www.sala-eventowa-warszawa.pl/)
+   - Booking: [https://www.sala-eventowa-warszawa.pl/](https://www.sala-eventowa-warszawa.pl/)
+   - Unresolved: Confirm exact rental rate for 8-hour Saturday event (Panorama Wola 120m2 config for ~80 seated).
+   - Unresolved: Confirm event window and whether 8-hour hire is supported.
+   - Unresolved: Confirm screen/projector availability in the event space.
+   - Unresolved: Confirm availability on candidate Saturdays in Sep-Nov 2026.
+   - Unresolved: Confirm the exact all-in price for an 8-hour Saturday event.
+3. Messalka Events (tier shortlist_ready, score 0.5367) — capacity 80 (venue_claim), screen unknown, wifi unknown, cost unknown (unknown) — confirm cost with venue, catering in_house_available
+   - Flags: cost_unknown, screen_unknown, wifi_unknown, final_quote_required, duration_unconfirmed, map_location_unknown, stale_evidence
+   - Event window: unknown (closing 23:00) (opening 08:00-23:00 Mon-Fri; 10:00-02:00 Sat-Sun) (max booking 8h)
+   - Source: [Messalka Events – przestrzeń eventowa w centrum Warszawy](https://messalka.events/)
+   - Booking: [https://messalka.events/](https://messalka.events/)
+   - Unresolved: Confirm exact rental rate for 8-hour Saturday event for 50-80 guests.
+   - Unresolved: Confirm event window and whether 8-hour hire is supported.
+   - Unresolved: Confirm AV equipment (projector, screen, PA system) availability.
+   - Unresolved: Confirm WiFi availability in event spaces.
+   - Unresolved: Confirm the exact all-in price for an 8-hour Saturday event.
+4. CIC Warsaw — Event Spaces at Varso Place (tier shortlist_ready, score 0.4567) — capacity 80 (venue_claim), screen unknown, wifi confirmed, cost unknown (unknown) — confirm cost with venue, catering unknown
+   - Flags: cost_unknown, screen_unknown, availability_unconfirmed, final_quote_required, duration_unconfirmed, map_location_unknown, stale_evidence
+   - Event window: unknown (opening unknown) (max booking 8h)
    - Source: [Event Space Warsaw | Business & Networking Events | CIC](https://cic.com/warsaw/event-spaces/)
    - Booking: [https://cic.com/warsaw/event-spaces/](https://cic.com/warsaw/event-spaces/)
    - Unresolved: Confirm capacity for 50-80 seated attendees in the main event space.
    - Unresolved: Confirm hourly/daily rental rates in PLN.
    - Unresolved: Confirm availability on candidate Saturdays in Q4 2026.
-   - Unresolved: Confirm screen/projector and Wi-Fi availability.
-   - Unresolved: Confirm event window (opening/closing times) and whether 8-hour hire is supported.
+   - Unresolved: Confirm screen/projector availability.
+   - Unresolved: Confirm WiFi availability in event spaces.
    - Unresolved: Confirm the exact all-in price for an 8-hour Saturday event.
-   - Unresolved: Confirm booking terms and whether a community/private event is accepted.
-- Impact Hub Warsaw (tier lead, score unknown) — capacity 0 (unknown), screen unknown, wifi unknown, cost unknown (unknown) — confirm cost with venue, catering unknown
-   - Flags: cost_unknown, screen_unknown, wifi_unknown, availability_unconfirmed, final_quote_required, duration_unconfirmed, map_location_unknown, stale_evidence
-   - Tier notes: capacity_comfortable 0 below minimum 40
-   - Event window: unknown (opening unknown)
+5. Google for Startups Warsaw (Campus Warsaw) (tier shortlist_ready, score 0.4567) — capacity 80 (venue_claim), screen unknown, wifi confirmed, cost unknown (unknown) — confirm cost with venue, catering unknown
+   - Flags: cost_unknown, screen_unknown, availability_unconfirmed, final_quote_required, duration_unconfirmed, map_location_unknown, stale_evidence
+   - Event window: unknown (opening unknown) (max booking 8h)
+   - Source: [Google for Startups Warsaw](https://googleforstartups-warsaw.firstview.us/en)
+   - Booking: [https://googleforstartups-warsaw.firstview.us/en](https://googleforstartups-warsaw.firstview.us/en)
+   - Unresolved: Confirm whether Google for Startups Warsaw offers event space for community/tech events.
+   - Unresolved: Confirm capacity and booking process.
+   - Unresolved: Confirm whether space is free or subsidized for AI/community events.
+   - Unresolved: Confirm Saturday availability.
+   - Unresolved: Confirm screen/projector availability in event space.
+   - Unresolved: Confirm WiFi availability.
+6. Impact Hub Warsaw (tier shortlist_ready, score 0.4567) — capacity 50 (venue_claim), screen unknown, wifi confirmed, cost unknown (unknown) — confirm cost with venue, catering unknown
+   - Flags: cost_unknown, screen_unknown, availability_unconfirmed, final_quote_required, duration_unconfirmed, map_location_unknown, stale_evidence
+   - Event window: unknown (opening unknown) (max booking 8h)
    - Source: [Impact Hub Warsaw](https://warsaw.impacthub.net/)
    - Booking: [https://warsaw.impacthub.net/](https://warsaw.impacthub.net/)
    - Unresolved: Confirm capacity for 50-80 seated attendees in Impact Hub Warsaw event space.
    - Unresolved: Confirm hourly/daily rental rates in PLN.
    - Unresolved: Confirm availability on candidate Saturdays.
-   - Unresolved: Confirm screen/projector and Wi-Fi availability.
-   - Unresolved: Confirm event window (opening/closing times) and whether 8-hour hire is supported.
+   - Unresolved: Confirm screen/projector availability.
+   - Unresolved: Confirm WiFi availability in event spaces.
    - Unresolved: Confirm the exact all-in price for an 8-hour Saturday event.
-   - Unresolved: Confirm booking terms and whether a community/private event is accepted.
-- Regus Warsaw — Meeting Rooms (tier lead, score unknown) — capacity 0 (unknown), screen unknown, wifi unknown, cost unknown (unknown) — confirm cost with venue, catering unknown
+7. Samo Centrum Wszechświata (tier shortlist_ready, score 0.4317) — capacity 80 (venue_claim), screen unknown, wifi unknown, cost unknown (unknown) — confirm cost with venue, catering unknown
    - Flags: cost_unknown, screen_unknown, wifi_unknown, availability_unconfirmed, final_quote_required, duration_unconfirmed, map_location_unknown, stale_evidence
-   - Tier notes: capacity_comfortable 0 below minimum 40
-   - Event window: unknown (opening unknown)
-   - Source: [Meeting Room Warsaw - Boardroom & Training Room | Regus](https://www.regus.com/en-gb/poland/warsaw/meeting-rooms)
-   - Booking: [https://www.regus.com/en-gb/poland/warsaw/meeting-rooms](https://www.regus.com/en-gb/poland/warsaw/meeting-rooms)
-   - Unresolved: Confirm capacity for 50-80 seated attendees — Regus meeting rooms may max out at smaller sizes.
-   - Unresolved: Confirm the 79-129 PLN/hr rate applies to the largest available room.
-   - Unresolved: Confirm Saturday availability at Warsaw locations.
-   - Unresolved: Confirm screen/projector and Wi-Fi availability.
+   - Event window: unknown (opening unknown) (max booking 8h)
+   - Source: [Sale do wynajęcia | Przestrzeń eventowa na wynajem Warszawa - Samo Centrum Wszechświata](https://samocentrum.com/)
+   - Booking: [https://samocentrum.com/](https://samocentrum.com/)
+   - Unresolved: Confirm exact rental rate for 8-hour Saturday event for 50-80 people.
+   - Unresolved: Confirm Saturday availability.
+   - Unresolved: Confirm AV equipment (projector, screen, PA) in event rooms.
+   - Unresolved: Confirm WiFi availability.
    - Unresolved: Confirm event window and whether 8-hour hire is supported.
    - Unresolved: Confirm the exact all-in price for an 8-hour Saturday event.
+
+## Venue Leads (not selectable until re-evidenced)
+
 - Varso Place — Event Space (tier lead, score unknown) — capacity 0 (unknown), screen unknown, wifi unknown, cost unknown (unknown) — confirm cost with venue, catering unknown
    - Flags: cost_unknown, screen_unknown, wifi_unknown, availability_unconfirmed, final_quote_required, duration_unconfirmed, map_location_unknown, stale_evidence
    - Tier notes: capacity_comfortable 0 below minimum 40
    - Event window: unknown (opening unknown)
-   - Source: [Varso Place - A unique place in the center of Warsaw - Event space for rent](https://varso.com/en/leasing/event-space-for-rent)
+   - Source: [Varso Place - Event space for rent](https://varso.com/en/leasing/event-space-for-rent)
    - Booking: [https://varso.com/en/leasing/event-space-for-rent](https://varso.com/en/leasing/event-space-for-rent)
    - Unresolved: Confirm capacity for 50-80 seated attendees in the event space.
    - Unresolved: Confirm rental rates and booking process in PLN.
@@ -97,19 +136,17 @@ Calendar awareness has two categories in schema 2.4: related-event opportunity/r
    - Unresolved: Confirm event window and whether 8-hour hire is supported.
    - Unresolved: Confirm screen/projector and Wi-Fi availability.
    - Unresolved: Confirm Saturday availability.
-- WeWork Warsaw — Krucza 50 (tier lead, score unknown) — capacity 0 (unknown), screen unknown, wifi unknown, cost unknown (unknown) — confirm cost with venue, catering unknown
-   - Flags: cost_unknown, screen_unknown, wifi_unknown, availability_unconfirmed, final_quote_required, duration_unconfirmed, map_location_unknown, stale_evidence
+- WeWork Warsaw — Krucza 50 (tier lead, score unknown) — capacity 0 (unknown), screen unknown, wifi confirmed, cost unknown (unknown) — confirm cost with venue, catering unknown
+   - Flags: cost_unknown, screen_unknown, availability_unconfirmed, duration_unconfirmed, map_location_unknown, stale_evidence
    - Tier notes: capacity_comfortable 0 below minimum 40
    - Event window: unknown (opening unknown)
    - Source: [Coworking Office Space in Center Warsaw District - 50 Krucza | WeWork](https://www.wework.com/en-GB/buildings/krucza-50--warsaw)
    - Booking: [https://www.wework.com/l/meeting-rooms/warsaw](https://www.wework.com/l/meeting-rooms/warsaw)
-   - Unresolved: Confirm capacity for 50-80 seated attendees in the largest available room at Krucza 50.
-   - Unresolved: Confirm hourly rental rates in PLN for meeting/conference rooms.
+   - Unresolved: Confirm whether WeWork Krucza 50 has rooms large enough for 50+ seated attendees.
    - Unresolved: Confirm Saturday availability (WeWork hours may be limited on weekends).
-   - Unresolved: Confirm screen/projector and Wi-Fi availability in event-capable rooms.
    - Unresolved: Confirm event window and whether 8-hour hire is supported.
-   - Unresolved: Confirm the exact all-in price for an 8-hour Saturday event.
-   - Unresolved: Confirm booking terms via the WeWork app.
+   - Unresolved: Confirm screen/projector availability in event-capable rooms.
+   - Unresolved: Confirm WiFi availability in event-capable rooms.
 - workin.space — Warsaw Meeting Rooms (tier lead, score unknown) — capacity 0 (unknown), screen unknown, wifi unknown, cost unknown (unknown) — confirm cost with venue, catering unknown
    - Flags: cost_unknown, screen_unknown, wifi_unknown, availability_unconfirmed, final_quote_required, duration_unconfirmed, map_location_unknown, stale_evidence
    - Tier notes: capacity_comfortable 0 below minimum 40
@@ -117,11 +154,11 @@ Calendar awareness has two categories in schema 2.4: related-event opportunity/r
    - Source: [Meeting rooms for rent in Varsovie - 70+ rooms from 481 PLN/day | workin.space](https://book.workin.space/en/poland/warsaw/meeting-room)
    - Booking: [https://book.workin.space/en/poland/warsaw/meeting-room](https://book.workin.space/en/poland/warsaw/meeting-room)
    - Unresolved: Confirm capacity for 50-80 seated attendees in the largest available rooms.
-   - Unresolved: Confirm whether the 481 PLN/day rate applies to rooms large enough for 50+ people.
    - Unresolved: Confirm Saturday availability.
    - Unresolved: Confirm AV equipment availability in listed rooms.
    - Unresolved: Confirm event window and whether 8-hour hire is supported.
    - Unresolved: Confirm the exact all-in price for an 8-hour Saturday event.
+   - Unresolved: Confirm parking and accessibility for attendees.
 
 ## Trusted Venue Seeds (discovery provenance only)
 
@@ -216,41 +253,55 @@ Calendar awareness has two categories in schema 2.4: related-event opportunity/r
 - Check if the Telegram group is used for event announcements and community coordination.
 - Check if Warsaw.ai is open to co-hosting or partnership for community events.
 - Check if Web3 Devs Poland is open to co-hosting or partnership.
+- Confirm Agent Conf 2026 dates and venue. Assess audience overlap with DeAI Day.
+- Confirm AV equipment (projector, screen, PA system) availability.
+- Confirm AV equipment (projector, screen, PA) in event rooms.
 - Confirm AV equipment (screen, projector, Wi-Fi) availability.
 - Confirm AV equipment availability in listed rooms.
 - Confirm availability on candidate Saturdays in Q4 2026.
+- Confirm availability on candidate Saturdays in Sep-Nov 2026.
 - Confirm availability on candidate Saturdays.
-- Confirm booking terms and whether a community/private event is accepted.
-- Confirm booking terms via the WeWork app.
+- Confirm capacity and booking process.
 - Confirm capacity for 50-80 seated attendees in Impact Hub Warsaw event space.
 - Confirm capacity for 50-80 seated attendees in the event space.
-- Confirm capacity for 50-80 seated attendees in the largest available room at Krucza 50.
 - Confirm capacity for 50-80 seated attendees in the largest available rooms.
 - Confirm capacity for 50-80 seated attendees in the main event space.
-- Confirm capacity for 50-80 seated attendees — Regus meeting rooms may max out at smaller sizes.
 - Confirm current event cadence at Kolektyw3 (beyond the annual conference).
 - Confirm current meetup cadence and most recent event date.
 - Confirm current meetup cadence in Warsaw (most recent event listed is September 2025).
 - Confirm event window (opening/closing times) and whether 8-hour hire is supported.
 - Confirm event window and whether 8-hour hire is supported.
+- Confirm exact rental rate for 8-hour Saturday event (Panorama Wola 120m2 config for ~80 seated).
+- Confirm exact rental rate for 8-hour Saturday event for 50-80 guests.
+- Confirm exact rental rate for 8-hour Saturday event for 50-80 people.
 - Confirm group member count and activity level.
-- Confirm hourly rental rates in PLN for meeting/conference rooms.
 - Confirm hourly/daily rental rates in PLN.
 - Confirm member count from the Meetup page.
+- Confirm parking and accessibility for attendees.
 - Confirm rental rates and booking process in PLN.
 - Confirm Saturday availability (WeWork hours may be limited on weekends).
-- Confirm Saturday availability at Warsaw locations.
+- Confirm Saturday availability at ADN Conference Center.
 - Confirm Saturday availability.
-- Confirm screen/projector and Wi-Fi availability in event-capable rooms.
 - Confirm screen/projector and Wi-Fi availability.
-- Confirm the 79-129 PLN/hr rate applies to the largest available room.
+- Confirm screen/projector availability in event space.
+- Confirm screen/projector availability in event-capable rooms.
+- Confirm screen/projector availability in the event space.
+- Confirm screen/projector availability.
+- Confirm screen/projector is available in recommended rooms (1B or 14).
 - Confirm the exact all-in price for an 8-hour Saturday event.
+- Confirm Warsaw Tech Week 2026 dates, venue, and expected attendance to assess logistics impact on Warsaw city center during Sep 22-24.
 - Confirm whether AI Tinkerers Poland has regular Warsaw-specific meetups.
+- Confirm whether Google for Startups Warsaw offers event space for community/tech events.
 - Confirm whether Kolektyw3 offers event space rental for external groups.
-- Confirm whether the 481 PLN/day rate applies to rooms large enough for 50+ people.
+- Confirm whether space is free or subsidized for AI/community events.
 - Confirm whether the community is Warsaw-specific or national.
 - Confirm whether Warsaw.ai has a dedicated event space or uses external venues.
 - Confirm whether Warsaw.ai has a dedicated venue or uses external spaces.
+- Confirm whether WeWork Krucza 50 has rooms large enough for 50+ seated attendees.
+- Confirm WiFi availability in event rooms.
+- Confirm WiFi availability in event spaces.
+- Confirm WiFi availability in event-capable rooms.
+- Confirm WiFi availability.
 - Event window: 09:00-17:00 (8 hours), per the locked plan.
 - FX conversion basis gap: the ECB 2026-08-18 reference rate is used for all USD equivalents in this package; it is a dated published basis but is not a live market rate and does not predict the 2026 Q4 rate. Re-confirm the conversion basis at booking time.
 - Hub evidence: ETHWarsaw 1000+ builders (ethwarsaw.dev), Web3 Warsaw largest blockchain conference in Eastern Europe (web3warsaw.com, Sep 9-10 2026 — will flag as calendar conflict), Impact Hub Warsaw exists externally (Nowogrodzka 47a) but is NOT in the installed 150-record Impact Hub snapshot — no hub seed, no fabricated match; AppGala/Zircuit meetups, strong general tech ecosystem.

@@ -4,33 +4,56 @@ Generated from the event plan for 2026-11-14
 
 ## Venue Outreach and Verification
 
-- No selectable venue yet: resolve leads or find new candidates before outreach.
-
-## Venue Leads (resolve before they can be selected)
-
-- CIC Warsaw — Event Spaces at Varso Place — capacity_comfortable 0 below minimum 40
+- ADN Centrum Konferencyjne — tier shortlist_ready — confirm: availability, seated capacity >= 50, cost (no published price — confirm with venue), catering policy, recording permission. [booking/contact](https://ckadn.pl/en/)
+  - Verify: Confirm exact rental rate for 8-hour Saturday event for 50-80 people.
+  - Verify: Confirm Saturday availability at ADN Conference Center.
+  - Verify: Confirm event window (opening/closing times) and whether 8-hour hire is supported.
+  - Verify: Confirm screen/projector is available in recommended rooms (1B or 14).
+  - Verify: Confirm WiFi availability in event rooms.
+  - Verify: Confirm the exact all-in price for an 8-hour Saturday event.
+- WE EVENT — Sala Eventowa Warsaw Trade Tower — tier shortlist_ready — confirm: availability, seated capacity >= 50, screen (unknown — confirm equipment/workaround), cost (no published price — confirm with venue), catering policy, recording permission. [booking/contact](https://www.sala-eventowa-warszawa.pl/)
+  - Verify: Confirm exact rental rate for 8-hour Saturday event (Panorama Wola 120m2 config for ~80 seated).
+  - Verify: Confirm event window and whether 8-hour hire is supported.
+  - Verify: Confirm screen/projector availability in the event space.
+  - Verify: Confirm availability on candidate Saturdays in Sep-Nov 2026.
+  - Verify: Confirm the exact all-in price for an 8-hour Saturday event.
+- Messalka Events — tier shortlist_ready — confirm: availability, seated capacity >= 50, screen (unknown — confirm equipment/workaround), Wi-Fi (unknown — confirm equipment/workaround), cost (no published price — confirm with venue), catering policy, recording permission. [booking/contact](https://messalka.events/)
+  - Verify: Confirm exact rental rate for 8-hour Saturday event for 50-80 guests.
+  - Verify: Confirm event window and whether 8-hour hire is supported.
+  - Verify: Confirm AV equipment (projector, screen, PA system) availability.
+  - Verify: Confirm WiFi availability in event spaces.
+  - Verify: Confirm the exact all-in price for an 8-hour Saturday event.
+- CIC Warsaw — Event Spaces at Varso Place — tier shortlist_ready — confirm: availability, seated capacity >= 50, screen (unknown — confirm equipment/workaround), cost (no published price — confirm with venue), catering policy, recording permission. [booking/contact](https://cic.com/warsaw/event-spaces/)
   - Verify: Confirm capacity for 50-80 seated attendees in the main event space.
   - Verify: Confirm hourly/daily rental rates in PLN.
   - Verify: Confirm availability on candidate Saturdays in Q4 2026.
-  - Verify: Confirm screen/projector and Wi-Fi availability.
-  - Verify: Confirm event window (opening/closing times) and whether 8-hour hire is supported.
+  - Verify: Confirm screen/projector availability.
+  - Verify: Confirm WiFi availability in event spaces.
   - Verify: Confirm the exact all-in price for an 8-hour Saturday event.
-  - Verify: Confirm booking terms and whether a community/private event is accepted.
-- Impact Hub Warsaw — capacity_comfortable 0 below minimum 40
+- Google for Startups Warsaw (Campus Warsaw) — tier shortlist_ready — confirm: availability, seated capacity >= 50, screen (unknown — confirm equipment/workaround), cost (no published price — confirm with venue), catering policy, recording permission. [booking/contact](https://googleforstartups-warsaw.firstview.us/en)
+  - Verify: Confirm whether Google for Startups Warsaw offers event space for community/tech events.
+  - Verify: Confirm capacity and booking process.
+  - Verify: Confirm whether space is free or subsidized for AI/community events.
+  - Verify: Confirm Saturday availability.
+  - Verify: Confirm screen/projector availability in event space.
+  - Verify: Confirm WiFi availability.
+- Impact Hub Warsaw — tier shortlist_ready — confirm: availability, seated capacity >= 50, screen (unknown — confirm equipment/workaround), cost (no published price — confirm with venue), catering policy, recording permission. [booking/contact](https://warsaw.impacthub.net/)
   - Verify: Confirm capacity for 50-80 seated attendees in Impact Hub Warsaw event space.
   - Verify: Confirm hourly/daily rental rates in PLN.
   - Verify: Confirm availability on candidate Saturdays.
-  - Verify: Confirm screen/projector and Wi-Fi availability.
-  - Verify: Confirm event window (opening/closing times) and whether 8-hour hire is supported.
+  - Verify: Confirm screen/projector availability.
+  - Verify: Confirm WiFi availability in event spaces.
   - Verify: Confirm the exact all-in price for an 8-hour Saturday event.
-  - Verify: Confirm booking terms and whether a community/private event is accepted.
-- Regus Warsaw — Meeting Rooms — capacity_comfortable 0 below minimum 40
-  - Verify: Confirm capacity for 50-80 seated attendees — Regus meeting rooms may max out at smaller sizes.
-  - Verify: Confirm the 79-129 PLN/hr rate applies to the largest available room.
-  - Verify: Confirm Saturday availability at Warsaw locations.
-  - Verify: Confirm screen/projector and Wi-Fi availability.
+- Samo Centrum Wszechświata — tier shortlist_ready — confirm: availability, seated capacity >= 50, screen (unknown — confirm equipment/workaround), Wi-Fi (unknown — confirm equipment/workaround), cost (no published price — confirm with venue), catering policy, recording permission. [booking/contact](https://samocentrum.com/)
+  - Verify: Confirm exact rental rate for 8-hour Saturday event for 50-80 people.
+  - Verify: Confirm Saturday availability.
+  - Verify: Confirm AV equipment (projector, screen, PA) in event rooms.
+  - Verify: Confirm WiFi availability.
   - Verify: Confirm event window and whether 8-hour hire is supported.
   - Verify: Confirm the exact all-in price for an 8-hour Saturday event.
+
+## Venue Leads (resolve before they can be selected)
+
 - Varso Place — Event Space — capacity_comfortable 0 below minimum 40
   - Verify: Confirm capacity for 50-80 seated attendees in the event space.
   - Verify: Confirm rental rates and booking process in PLN.
@@ -45,25 +68,23 @@ Generated from the event plan for 2026-11-14
   - Verify: Confirm screen/projector and Wi-Fi availability.
   - Verify: Confirm Saturday availability.
 - WeWork Warsaw — Krucza 50 — capacity_comfortable 0 below minimum 40
-  - Verify: Confirm capacity for 50-80 seated attendees in the largest available room at Krucza 50.
-  - Verify: Confirm hourly rental rates in PLN for meeting/conference rooms.
+  - Verify: Confirm whether WeWork Krucza 50 has rooms large enough for 50+ seated attendees.
   - Verify: Confirm Saturday availability (WeWork hours may be limited on weekends).
-  - Verify: Confirm screen/projector and Wi-Fi availability in event-capable rooms.
   - Verify: Confirm event window and whether 8-hour hire is supported.
-  - Verify: Confirm the exact all-in price for an 8-hour Saturday event.
-  - Verify: Confirm booking terms via the WeWork app.
+  - Verify: Confirm screen/projector availability in event-capable rooms.
+  - Verify: Confirm WiFi availability in event-capable rooms.
 - workin.space — Warsaw Meeting Rooms — capacity_comfortable 0 below minimum 40
   - Verify: Confirm capacity for 50-80 seated attendees in the largest available rooms.
-  - Verify: Confirm whether the 481 PLN/day rate applies to rooms large enough for 50+ people.
   - Verify: Confirm Saturday availability.
   - Verify: Confirm AV equipment availability in listed rooms.
   - Verify: Confirm event window and whether 8-hour hire is supported.
   - Verify: Confirm the exact all-in price for an 8-hour Saturday event.
+  - Verify: Confirm parking and accessibility for attendees.
 
 ## Calendar Note (informational — never a date removal)
 
-- Related-event opportunity/relevance to review before confirming the date: Web3 Warsaw 2026.
-- Major-city logistics to verify before confirming the date: none recorded.
+- Related-event opportunity/relevance to review before confirming the date: Agent Conf 2026, FINTECH Poland Expo 2026.
+- Major-city logistics to verify before confirming the date: Warsaw Tech Week 2026, Warsaw Home Build 2026.
 - Joe decides all date conflicts himself; calendar flags never remove the date automatically.
 
 ## Community Verification (manual review)

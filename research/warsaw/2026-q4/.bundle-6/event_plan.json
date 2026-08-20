@@ -4,18 +4,73 @@
     {
       "accessed_on": "2026-08-20",
       "city_slug": "warsaw-pl",
-      "conflict_severity": "low",
-      "end_date": "2026-09-10",
-      "event_name": "Web3 Warsaw 2026",
+      "conflict_severity": "medium",
+      "end_date": "2026-09-18",
+      "event_name": "Agent Conf 2026",
       "evidence": {
-        "observed_facts": "Web3 Warsaw 2026 is the largest blockchain and technology conference in Eastern Europe, returning to Warsaw on September 9-10, 2026. Part of Blockchain Week Warsaw. Event is outside the Sep 14-28 target window but nearby for awareness."
+        "observed_facts": "Agent Conf 2026 is Europe's first major conference for engineers building agentic systems, at Crowne Plaza Warsaw - the Hub by IHG, Sep 17-18. Directly relevant to AI/ML audience. Medium conflict: same city, same week, overlapping audience."
+      },
+      "kind": "related",
+      "needs_human_verify": true,
+      "relevance": "ai",
+      "source_title": "Agent Conf 2026 — Europe's first major conference for engineers building agentic systems, Sep 17-18, Crowne Plaza Warsaw",
+      "source_url": "https://www.eventbrite.com/e/agent-conf-2026-tickets-1989991661629",
+      "start_date": "2026-09-17",
+      "verification_questions": [
+        "Confirm Agent Conf 2026 dates and venue. Assess audience overlap with DeAI Day."
+      ]
+    },
+    {
+      "accessed_on": "2026-08-20",
+      "city_slug": "warsaw-pl",
+      "conflict_severity": "none",
+      "end_date": "2026-09-24",
+      "event_name": "Warsaw Tech Week 2026",
+      "evidence": {
+        "observed_facts": "Warsaw Tech Week 2026 is an international trade fair of technologies and innovations at PTAK Warsaw Expo, Sep 22-24. Major city-wide tech event overlapping with the Sep 14 - Nov 30 target window."
+      },
+      "kind": "major_other",
+      "needs_human_verify": true,
+      "relevance": "other",
+      "source_title": "Warsaw Tech Week 2026 — International Trade Fair of Technologies and Innovations, Sep 22-24, PTAK Warsaw Expo",
+      "source_url": "https://www.eventbrite.com/e/warsaw-tech-week-tickets-1986300787124",
+      "start_date": "2026-09-22",
+      "verification_questions": [
+        "Confirm Warsaw Tech Week 2026 dates, venue, and expected attendance to assess logistics impact on Warsaw city center during Sep 22-24."
+      ]
+    },
+    {
+      "accessed_on": "2026-08-18",
+      "city_slug": "warsaw-pl",
+      "conflict_severity": "none",
+      "end_date": "2026-10-24",
+      "event_name": "Warsaw Home Build 2026",
+      "evidence": {
+        "observed_facts": "Warsaw Home Build is a construction and interior trade fair at PTAK Warsaw Expo, Oct 21-24. Not directly related to AI/Web3."
+      },
+      "kind": "major_other",
+      "needs_human_verify": false,
+      "relevance": "other",
+      "source_title": "Warsaw Home Build 2026 — Construction and interior trade fair, Oct 21-24",
+      "source_url": "https://www.homebuild.pl/en/",
+      "start_date": "2026-10-21",
+      "verification_questions": []
+    },
+    {
+      "accessed_on": "2026-08-18",
+      "city_slug": "warsaw-pl",
+      "conflict_severity": "low",
+      "end_date": "2026-11-19",
+      "event_name": "FINTECH Poland Expo 2026",
+      "evidence": {
+        "observed_facts": "FINTECH Poland Expo is a fintech trade fair in Warsaw, Nov 17-19. Low relevance to AI/Web3 but overlaps with Decentralized AI audience."
       },
       "kind": "related",
       "needs_human_verify": false,
-      "relevance": "web3",
-      "source_title": "Web3 Warsaw 2026 — Largest blockchain conference in Eastern Europe, Sep 9-10",
-      "source_url": "https://web3warsaw.com/",
-      "start_date": "2026-09-09",
+      "relevance": "fintech",
+      "source_title": "FINTECH Poland Expo 2026 — Fintech trade fair, Nov 17-19",
+      "source_url": "https://fintechpoland.pl/",
+      "start_date": "2026-11-17",
       "verification_questions": []
     }
   ],
@@ -270,41 +325,55 @@
     "Check if the Telegram group is used for event announcements and community coordination.",
     "Check if Warsaw.ai is open to co-hosting or partnership for community events.",
     "Check if Web3 Devs Poland is open to co-hosting or partnership.",
+    "Confirm Agent Conf 2026 dates and venue. Assess audience overlap with DeAI Day.",
+    "Confirm AV equipment (projector, screen, PA system) availability.",
+    "Confirm AV equipment (projector, screen, PA) in event rooms.",
     "Confirm AV equipment (screen, projector, Wi-Fi) availability.",
     "Confirm AV equipment availability in listed rooms.",
     "Confirm availability on candidate Saturdays in Q4 2026.",
+    "Confirm availability on candidate Saturdays in Sep-Nov 2026.",
     "Confirm availability on candidate Saturdays.",
-    "Confirm booking terms and whether a community/private event is accepted.",
-    "Confirm booking terms via the WeWork app.",
+    "Confirm capacity and booking process.",
     "Confirm capacity for 50-80 seated attendees in Impact Hub Warsaw event space.",
     "Confirm capacity for 50-80 seated attendees in the event space.",
-    "Confirm capacity for 50-80 seated attendees in the largest available room at Krucza 50.",
     "Confirm capacity for 50-80 seated attendees in the largest available rooms.",
     "Confirm capacity for 50-80 seated attendees in the main event space.",
-    "Confirm capacity for 50-80 seated attendees — Regus meeting rooms may max out at smaller sizes.",
     "Confirm current event cadence at Kolektyw3 (beyond the annual conference).",
     "Confirm current meetup cadence and most recent event date.",
     "Confirm current meetup cadence in Warsaw (most recent event listed is September 2025).",
     "Confirm event window (opening/closing times) and whether 8-hour hire is supported.",
     "Confirm event window and whether 8-hour hire is supported.",
+    "Confirm exact rental rate for 8-hour Saturday event (Panorama Wola 120m2 config for ~80 seated).",
+    "Confirm exact rental rate for 8-hour Saturday event for 50-80 guests.",
+    "Confirm exact rental rate for 8-hour Saturday event for 50-80 people.",
     "Confirm group member count and activity level.",
-    "Confirm hourly rental rates in PLN for meeting/conference rooms.",
     "Confirm hourly/daily rental rates in PLN.",
     "Confirm member count from the Meetup page.",
+    "Confirm parking and accessibility for attendees.",
     "Confirm rental rates and booking process in PLN.",
     "Confirm Saturday availability (WeWork hours may be limited on weekends).",
-    "Confirm Saturday availability at Warsaw locations.",
+    "Confirm Saturday availability at ADN Conference Center.",
     "Confirm Saturday availability.",
-    "Confirm screen/projector and Wi-Fi availability in event-capable rooms.",
     "Confirm screen/projector and Wi-Fi availability.",
-    "Confirm the 79-129 PLN/hr rate applies to the largest available room.",
+    "Confirm screen/projector availability in event space.",
+    "Confirm screen/projector availability in event-capable rooms.",
+    "Confirm screen/projector availability in the event space.",
+    "Confirm screen/projector availability.",
+    "Confirm screen/projector is available in recommended rooms (1B or 14).",
     "Confirm the exact all-in price for an 8-hour Saturday event.",
+    "Confirm Warsaw Tech Week 2026 dates, venue, and expected attendance to assess logistics impact on Warsaw city center during Sep 22-24.",
     "Confirm whether AI Tinkerers Poland has regular Warsaw-specific meetups.",
+    "Confirm whether Google for Startups Warsaw offers event space for community/tech events.",
     "Confirm whether Kolektyw3 offers event space rental for external groups.",
-    "Confirm whether the 481 PLN/day rate applies to rooms large enough for 50+ people.",
+    "Confirm whether space is free or subsidized for AI/community events.",
     "Confirm whether the community is Warsaw-specific or national.",
     "Confirm whether Warsaw.ai has a dedicated event space or uses external venues.",
     "Confirm whether Warsaw.ai has a dedicated venue or uses external spaces.",
+    "Confirm whether WeWork Krucza 50 has rooms large enough for 50+ seated attendees.",
+    "Confirm WiFi availability in event rooms.",
+    "Confirm WiFi availability in event spaces.",
+    "Confirm WiFi availability in event-capable rooms.",
+    "Confirm WiFi availability.",
     "Event window: 09:00-17:00 (8 hours), per the locked plan.",
     "FX conversion basis gap: the ECB 2026-08-18 reference rate is used for all USD equivalents in this package; it is a dated published basis but is not a live market rate and does not predict the 2026 Q4 rate. Re-confirm the conversion basis at booking time.",
     "Hub evidence: ETHWarsaw 1000+ builders (ethwarsaw.dev), Web3 Warsaw largest blockchain conference in Eastern Europe (web3warsaw.com, Sep 9-10 2026 — will flag as calendar conflict), Impact Hub Warsaw exists externally (Nowogrodzka 47a) but is NOT in the installed 150-record Impact Hub snapshot — no hub seed, no fabricated match; AppGala/Zircuit meetups, strong general tech ecosystem.",
@@ -326,41 +395,55 @@
       "Check if the Telegram group is used for event announcements and community coordination.",
       "Check if Warsaw.ai is open to co-hosting or partnership for community events.",
       "Check if Web3 Devs Poland is open to co-hosting or partnership.",
+      "Confirm Agent Conf 2026 dates and venue. Assess audience overlap with DeAI Day.",
+      "Confirm AV equipment (projector, screen, PA system) availability.",
+      "Confirm AV equipment (projector, screen, PA) in event rooms.",
       "Confirm AV equipment (screen, projector, Wi-Fi) availability.",
       "Confirm AV equipment availability in listed rooms.",
       "Confirm availability on candidate Saturdays in Q4 2026.",
+      "Confirm availability on candidate Saturdays in Sep-Nov 2026.",
       "Confirm availability on candidate Saturdays.",
-      "Confirm booking terms and whether a community/private event is accepted.",
-      "Confirm booking terms via the WeWork app.",
+      "Confirm capacity and booking process.",
       "Confirm capacity for 50-80 seated attendees in Impact Hub Warsaw event space.",
       "Confirm capacity for 50-80 seated attendees in the event space.",
-      "Confirm capacity for 50-80 seated attendees in the largest available room at Krucza 50.",
       "Confirm capacity for 50-80 seated attendees in the largest available rooms.",
       "Confirm capacity for 50-80 seated attendees in the main event space.",
-      "Confirm capacity for 50-80 seated attendees — Regus meeting rooms may max out at smaller sizes.",
       "Confirm current event cadence at Kolektyw3 (beyond the annual conference).",
       "Confirm current meetup cadence and most recent event date.",
       "Confirm current meetup cadence in Warsaw (most recent event listed is September 2025).",
       "Confirm event window (opening/closing times) and whether 8-hour hire is supported.",
       "Confirm event window and whether 8-hour hire is supported.",
+      "Confirm exact rental rate for 8-hour Saturday event (Panorama Wola 120m2 config for ~80 seated).",
+      "Confirm exact rental rate for 8-hour Saturday event for 50-80 guests.",
+      "Confirm exact rental rate for 8-hour Saturday event for 50-80 people.",
       "Confirm group member count and activity level.",
-      "Confirm hourly rental rates in PLN for meeting/conference rooms.",
       "Confirm hourly/daily rental rates in PLN.",
       "Confirm member count from the Meetup page.",
+      "Confirm parking and accessibility for attendees.",
       "Confirm rental rates and booking process in PLN.",
       "Confirm Saturday availability (WeWork hours may be limited on weekends).",
-      "Confirm Saturday availability at Warsaw locations.",
+      "Confirm Saturday availability at ADN Conference Center.",
       "Confirm Saturday availability.",
-      "Confirm screen/projector and Wi-Fi availability in event-capable rooms.",
       "Confirm screen/projector and Wi-Fi availability.",
-      "Confirm the 79-129 PLN/hr rate applies to the largest available room.",
+      "Confirm screen/projector availability in event space.",
+      "Confirm screen/projector availability in event-capable rooms.",
+      "Confirm screen/projector availability in the event space.",
+      "Confirm screen/projector availability.",
+      "Confirm screen/projector is available in recommended rooms (1B or 14).",
       "Confirm the exact all-in price for an 8-hour Saturday event.",
+      "Confirm Warsaw Tech Week 2026 dates, venue, and expected attendance to assess logistics impact on Warsaw city center during Sep 22-24.",
       "Confirm whether AI Tinkerers Poland has regular Warsaw-specific meetups.",
+      "Confirm whether Google for Startups Warsaw offers event space for community/tech events.",
       "Confirm whether Kolektyw3 offers event space rental for external groups.",
-      "Confirm whether the 481 PLN/day rate applies to rooms large enough for 50+ people.",
+      "Confirm whether space is free or subsidized for AI/community events.",
       "Confirm whether the community is Warsaw-specific or national.",
       "Confirm whether Warsaw.ai has a dedicated event space or uses external venues.",
       "Confirm whether Warsaw.ai has a dedicated venue or uses external spaces.",
+      "Confirm whether WeWork Krucza 50 has rooms large enough for 50+ seated attendees.",
+      "Confirm WiFi availability in event rooms.",
+      "Confirm WiFi availability in event spaces.",
+      "Confirm WiFi availability in event-capable rooms.",
+      "Confirm WiFi availability.",
       "Event window: 09:00-17:00 (8 hours), per the locked plan.",
       "FX conversion basis gap: the ECB 2026-08-18 reference rate is used for all USD equivalents in this package; it is a dated published basis but is not a live market rate and does not predict the 2026 Q4 rate. Re-confirm the conversion basis at booking time.",
       "Hub evidence: ETHWarsaw 1000+ builders (ethwarsaw.dev), Web3 Warsaw largest blockchain conference in Eastern Europe (web3warsaw.com, Sep 9-10 2026 — will flag as calendar conflict), Impact Hub Warsaw exists externally (Nowogrodzka 47a) but is NOT in the installed 150-record Impact Hub snapshot — no hub seed, no fabricated match; AppGala/Zircuit meetups, strong general tech ecosystem.",
@@ -371,17 +454,775 @@
     ]
   },
   "schema_version": "2.4",
-  "shortlist_ready_venues": [],
+  "shortlist_ready_venues": [
+    {
+      "accessed_on": "2026-08-20",
+      "address": "Browary Warszawskie, Warszawa, Poland",
+      "booking_url": "https://ckadn.pl/en/",
+      "capacity_basis": "venue_claim",
+      "capacity_comfortable": 75,
+      "catering_policy": "in_house_available",
+      "city_slug": "warsaw-pl",
+      "closing_time": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "cost_rate_unit": "unknown",
+      "estimated_cost_usd": null,
+      "estimated_hours": null,
+      "event_window_evidence": null,
+      "event_window_status": "unknown",
+      "evidence": {
+        "inference": "Strong conference venue with multiple rooms fitting 50-80. High-quality facilities at prestigious location. Pricing and Saturday availability need confirmation.",
+        "observed_facts": "ADN Conference Center at Browary Warszawskie. 25 air-conditioned conference/training rooms with daylight and blackout. Rooms range from 32m2 (25p) to 500m2 (550p). Key rooms: Room 1A (111m2/100p), Room 1B (112m2/100p), Room 13A (56m2/55p), Room 13B (66m2/75p), Room 14 (62m2/75p). Advanced tech equipment. Contact: 22 208 21 12."
+      },
+      "hourly_rate_local": null,
+      "hourly_rate_usd": null,
+      "latitude": null,
+      "longitude": null,
+      "max_booking_hours": 8,
+      "name": "ADN Centrum Konferencyjne",
+      "needs_human_verify": true,
+      "opening_hours": "unknown",
+      "rate_currency": null,
+      "rate_estimate_note": null,
+      "recording_suitability": "unknown",
+      "score": 0.5867,
+      "score_breakdown": {
+        "booking_path": {
+          "contribution": 0.1,
+          "factor": 1.0,
+          "weight": 0.1
+        },
+        "budget_efficiency": {
+          "contribution": 0.1,
+          "factor": 0.5,
+          "weight": 0.2
+        },
+        "capacity_fit": {
+          "contribution": 0.2,
+          "factor": 1.0,
+          "weight": 0.2
+        },
+        "catering_flexibility": {
+          "contribution": 0.105,
+          "factor": 0.7,
+          "weight": 0.15
+        },
+        "event_window_fit": {
+          "contribution": 0.025,
+          "factor": 0.5,
+          "weight": 0.05
+        },
+        "evidence_freshness": {
+          "contribution": 0.0067,
+          "factor": 0.0667,
+          "weight": 0.1
+        },
+        "recording_suitability": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.15
+        },
+        "technical_readiness": {
+          "contribution": 0.05,
+          "factor": 1.0,
+          "weight": 0.05
+        },
+        "total": 0.5867
+      },
+      "screen_status": "confirmed",
+      "source_title": "ADN Conference Center — Rooms",
+      "source_url": "https://ckadn.pl/en/",
+      "tier_reasons": [],
+      "venue_flags": [
+        "cost_unknown",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "duration_unconfirmed",
+        "map_location_unknown",
+        "stale_evidence"
+      ],
+      "venue_tier": "shortlist_ready",
+      "verification_question_kinds": [
+        "cost_unknown",
+        "event_window",
+        "availability",
+        "screen",
+        "wifi",
+        "final_quote"
+      ],
+      "verification_questions": [
+        "Confirm exact rental rate for 8-hour Saturday event for 50-80 people.",
+        "Confirm Saturday availability at ADN Conference Center.",
+        "Confirm event window (opening/closing times) and whether 8-hour hire is supported.",
+        "Confirm screen/projector is available in recommended rooms (1B or 14).",
+        "Confirm WiFi availability in event rooms.",
+        "Confirm the exact all-in price for an 8-hour Saturday event."
+      ],
+      "wifi_status": "confirmed"
+    },
+    {
+      "accessed_on": "2026-08-20",
+      "address": "Chłodna 51, 00-867 Warszawa, Wola, Poland (32nd floor, Warsaw Trade Tower)",
+      "booking_url": "https://www.sala-eventowa-warszawa.pl/",
+      "capacity_basis": "venue_claim",
+      "capacity_comfortable": 80,
+      "catering_policy": "in_house_available",
+      "city_slug": "warsaw-pl",
+      "closing_time": "18:00",
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "cost_rate_unit": "unknown",
+      "estimated_cost_usd": null,
+      "estimated_hours": null,
+      "event_window_evidence": null,
+      "event_window_status": "unknown",
+      "evidence": {
+        "inference": "Strong venue for 50-80 person event. Capacity confirmed (200 max, 120m2 config fits 80 comfortably). WiFi confirmed. Catering in-house. Weekend availability confirmed. Pricing is quote-only.",
+        "observed_facts": "WE EVENT operates conference/event rooms on the 32nd floor of Warsaw Trade Tower in Wola district. Two rooms: Panorama Wola (120m2 or 230m2 config, up to 200 theater) and Panorama Centrum (up to 35). Panoramic city view. Standard rental 09:00-17:00. 24/7 availability including weekends. Foyer for catering/registration/networking. Catering via WE Catering. Parking available. Currencies: PLN, EUR. Email: biuro@sala-eventowa-warszawa.pl. Phone: +48 22 249 1609. VAT ID: PL7010667258. Google rating 5.0 (Trustindex verified). Address: Chłodna 51, 00-867 Warszawa."
+      },
+      "hourly_rate_local": null,
+      "hourly_rate_usd": null,
+      "latitude": null,
+      "longitude": null,
+      "max_booking_hours": 8,
+      "name": "WE EVENT — Sala Eventowa Warsaw Trade Tower",
+      "needs_human_verify": true,
+      "opening_hours": "08:00-18:00 Mon-Fri; 10:00-02:00 Sat-Sun",
+      "rate_currency": null,
+      "rate_estimate_note": null,
+      "recording_suitability": "unknown",
+      "score": 0.5617,
+      "score_breakdown": {
+        "booking_path": {
+          "contribution": 0.1,
+          "factor": 1.0,
+          "weight": 0.1
+        },
+        "budget_efficiency": {
+          "contribution": 0.1,
+          "factor": 0.5,
+          "weight": 0.2
+        },
+        "capacity_fit": {
+          "contribution": 0.2,
+          "factor": 1.0,
+          "weight": 0.2
+        },
+        "catering_flexibility": {
+          "contribution": 0.105,
+          "factor": 0.7,
+          "weight": 0.15
+        },
+        "event_window_fit": {
+          "contribution": 0.025,
+          "factor": 0.5,
+          "weight": 0.05
+        },
+        "evidence_freshness": {
+          "contribution": 0.0067,
+          "factor": 0.0667,
+          "weight": 0.1
+        },
+        "recording_suitability": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.15
+        },
+        "technical_readiness": {
+          "contribution": 0.025,
+          "factor": 0.5,
+          "weight": 0.05
+        },
+        "total": 0.5617
+      },
+      "screen_status": "unknown",
+      "source_title": "Sala eventowa Warszawa | Sale konferencyjne WTT Wola – WE EVENT",
+      "source_url": "https://www.sala-eventowa-warszawa.pl/",
+      "tier_reasons": [],
+      "venue_flags": [
+        "cost_unknown",
+        "screen_unknown",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "duration_unconfirmed",
+        "map_location_unknown",
+        "stale_evidence"
+      ],
+      "venue_tier": "shortlist_ready",
+      "verification_question_kinds": [
+        "cost_unknown",
+        "event_window",
+        "screen",
+        "availability",
+        "final_quote"
+      ],
+      "verification_questions": [
+        "Confirm exact rental rate for 8-hour Saturday event (Panorama Wola 120m2 config for ~80 seated).",
+        "Confirm event window and whether 8-hour hire is supported.",
+        "Confirm screen/projector availability in the event space.",
+        "Confirm availability on candidate Saturdays in Sep-Nov 2026.",
+        "Confirm the exact all-in price for an 8-hour Saturday event."
+      ],
+      "wifi_status": "confirmed"
+    },
+    {
+      "accessed_on": "2026-08-20",
+      "address": "Krakowskie Przedmieście 16/18, 00-325 Warszawa, Poland",
+      "booking_url": "https://messalka.events/",
+      "capacity_basis": "venue_claim",
+      "capacity_comfortable": 80,
+      "catering_policy": "in_house_available",
+      "city_slug": "warsaw-pl",
+      "closing_time": "23:00",
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "cost_rate_unit": "unknown",
+      "estimated_cost_usd": null,
+      "estimated_hours": null,
+      "event_window_evidence": null,
+      "event_window_status": "unknown",
+      "evidence": {
+        "inference": "High-quality venue with strong reviews. Good capacity range for 50-80 person event. Historic character. Central location. AV and specific room configurations need confirmation.",
+        "observed_facts": "Premium event space in a historic 1911 bathhouse on Krakowskie Przedmieście. 750m2 across 4 levels. Capacity 30-600 guests. Hosts conferences, corporate events, weddings, film productions. Premium catering including Live Cooking. VOID Acoustics sound system on lower level. Rating 4.8/5 (34 reviews). Address: Krakowskie Przedmieście 16/18, 00-325 Warszawa. Phone: +48 690 292 576. Email: booking@messalka.events. Nearest metro: Nowy Świat-Uniwersytet. Founded 2022."
+      },
+      "hourly_rate_local": null,
+      "hourly_rate_usd": null,
+      "latitude": null,
+      "longitude": null,
+      "max_booking_hours": 8,
+      "name": "Messalka Events",
+      "needs_human_verify": true,
+      "opening_hours": "08:00-23:00 Mon-Fri; 10:00-02:00 Sat-Sun",
+      "rate_currency": null,
+      "rate_estimate_note": null,
+      "recording_suitability": "unknown",
+      "score": 0.5367,
+      "score_breakdown": {
+        "booking_path": {
+          "contribution": 0.1,
+          "factor": 1.0,
+          "weight": 0.1
+        },
+        "budget_efficiency": {
+          "contribution": 0.1,
+          "factor": 0.5,
+          "weight": 0.2
+        },
+        "capacity_fit": {
+          "contribution": 0.2,
+          "factor": 1.0,
+          "weight": 0.2
+        },
+        "catering_flexibility": {
+          "contribution": 0.105,
+          "factor": 0.7,
+          "weight": 0.15
+        },
+        "event_window_fit": {
+          "contribution": 0.025,
+          "factor": 0.5,
+          "weight": 0.05
+        },
+        "evidence_freshness": {
+          "contribution": 0.0067,
+          "factor": 0.0667,
+          "weight": 0.1
+        },
+        "recording_suitability": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.15
+        },
+        "technical_readiness": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.05
+        },
+        "total": 0.5367
+      },
+      "screen_status": "unknown",
+      "source_title": "Messalka Events – przestrzeń eventowa w centrum Warszawy",
+      "source_url": "https://messalka.events/",
+      "tier_reasons": [],
+      "venue_flags": [
+        "cost_unknown",
+        "screen_unknown",
+        "wifi_unknown",
+        "final_quote_required",
+        "duration_unconfirmed",
+        "map_location_unknown",
+        "stale_evidence"
+      ],
+      "venue_tier": "shortlist_ready",
+      "verification_question_kinds": [
+        "cost_unknown",
+        "event_window",
+        "screen",
+        "wifi",
+        "final_quote"
+      ],
+      "verification_questions": [
+        "Confirm exact rental rate for 8-hour Saturday event for 50-80 guests.",
+        "Confirm event window and whether 8-hour hire is supported.",
+        "Confirm AV equipment (projector, screen, PA system) availability.",
+        "Confirm WiFi availability in event spaces.",
+        "Confirm the exact all-in price for an 8-hour Saturday event."
+      ],
+      "wifi_status": "unknown"
+    },
+    {
+      "accessed_on": "2026-08-20",
+      "address": "Varso Place, Warsaw, Poland",
+      "booking_url": "https://cic.com/warsaw/event-spaces/",
+      "capacity_basis": "venue_claim",
+      "capacity_comfortable": 80,
+      "catering_policy": "unknown",
+      "city_slug": "warsaw-pl",
+      "closing_time": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "cost_rate_unit": "unknown",
+      "estimated_cost_usd": null,
+      "estimated_hours": null,
+      "event_window_evidence": null,
+      "event_window_status": "unknown",
+      "evidence": {
+        "inference": "CIC is a global innovation hub operator with Warsaw location at Varso Place. Multiple event spaces. Specific capacity, pricing, and availability not extractable. AV mentioned.",
+        "observed_facts": "CIC (Cambridge Innovation Center) has event spaces at Varso Place in Warsaw. Describes 'AV, support, and flexible setups' for business/networking events. Multiple rooms: Design Room, Research Room, Strategy Room, plus full-size bar. Located at Varso Place next to Central Railway Station. Last modified 2026-08-06."
+      },
+      "hourly_rate_local": null,
+      "hourly_rate_usd": null,
+      "latitude": null,
+      "longitude": null,
+      "max_booking_hours": 8,
+      "name": "CIC Warsaw — Event Spaces at Varso Place",
+      "needs_human_verify": true,
+      "opening_hours": "unknown",
+      "rate_currency": null,
+      "rate_estimate_note": null,
+      "recording_suitability": "unknown",
+      "score": 0.4567,
+      "score_breakdown": {
+        "booking_path": {
+          "contribution": 0.1,
+          "factor": 1.0,
+          "weight": 0.1
+        },
+        "budget_efficiency": {
+          "contribution": 0.1,
+          "factor": 0.5,
+          "weight": 0.2
+        },
+        "capacity_fit": {
+          "contribution": 0.2,
+          "factor": 1.0,
+          "weight": 0.2
+        },
+        "catering_flexibility": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.15
+        },
+        "event_window_fit": {
+          "contribution": 0.025,
+          "factor": 0.5,
+          "weight": 0.05
+        },
+        "evidence_freshness": {
+          "contribution": 0.0067,
+          "factor": 0.0667,
+          "weight": 0.1
+        },
+        "recording_suitability": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.15
+        },
+        "technical_readiness": {
+          "contribution": 0.025,
+          "factor": 0.5,
+          "weight": 0.05
+        },
+        "total": 0.4567
+      },
+      "screen_status": "unknown",
+      "source_title": "Event Space Warsaw | Business & Networking Events | CIC",
+      "source_url": "https://cic.com/warsaw/event-spaces/",
+      "tier_reasons": [],
+      "venue_flags": [
+        "cost_unknown",
+        "screen_unknown",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "duration_unconfirmed",
+        "map_location_unknown",
+        "stale_evidence"
+      ],
+      "venue_tier": "shortlist_ready",
+      "verification_question_kinds": [
+        "cost_unknown",
+        "event_window",
+        "availability",
+        "screen",
+        "wifi",
+        "final_quote"
+      ],
+      "verification_questions": [
+        "Confirm capacity for 50-80 seated attendees in the main event space.",
+        "Confirm hourly/daily rental rates in PLN.",
+        "Confirm availability on candidate Saturdays in Q4 2026.",
+        "Confirm screen/projector availability.",
+        "Confirm WiFi availability in event spaces.",
+        "Confirm the exact all-in price for an 8-hour Saturday event."
+      ],
+      "wifi_status": "confirmed"
+    },
+    {
+      "accessed_on": "2026-08-20",
+      "address": "Plac Konesera 1, 03-736 Warszawa, Praga-Polnoc, Poland",
+      "booking_url": "https://googleforstartups-warsaw.firstview.us/en",
+      "capacity_basis": "venue_claim",
+      "capacity_comfortable": 80,
+      "catering_policy": "unknown",
+      "city_slug": "warsaw-pl",
+      "closing_time": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "cost_rate_unit": "unknown",
+      "estimated_cost_usd": null,
+      "estimated_hours": null,
+      "event_window_evidence": null,
+      "event_window_status": "unknown",
+      "evidence": {
+        "inference": "High-potential venue for AI/tech community event. Google campuses historically offer subsidized/free space for qualifying community events. Decentralized AI Day could potentially qualify.",
+        "observed_facts": "Google for Startups Warsaw (formerly Campus Warsaw) is a tech hub at Plac Konesera 1 in Praga-Polnoc. Co-working, events, startup support. Active booking system on Firstview platform. Modern facilities expected."
+      },
+      "hourly_rate_local": null,
+      "hourly_rate_usd": null,
+      "latitude": null,
+      "longitude": null,
+      "max_booking_hours": 8,
+      "name": "Google for Startups Warsaw (Campus Warsaw)",
+      "needs_human_verify": true,
+      "opening_hours": "unknown",
+      "rate_currency": null,
+      "rate_estimate_note": null,
+      "recording_suitability": "unknown",
+      "score": 0.4567,
+      "score_breakdown": {
+        "booking_path": {
+          "contribution": 0.1,
+          "factor": 1.0,
+          "weight": 0.1
+        },
+        "budget_efficiency": {
+          "contribution": 0.1,
+          "factor": 0.5,
+          "weight": 0.2
+        },
+        "capacity_fit": {
+          "contribution": 0.2,
+          "factor": 1.0,
+          "weight": 0.2
+        },
+        "catering_flexibility": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.15
+        },
+        "event_window_fit": {
+          "contribution": 0.025,
+          "factor": 0.5,
+          "weight": 0.05
+        },
+        "evidence_freshness": {
+          "contribution": 0.0067,
+          "factor": 0.0667,
+          "weight": 0.1
+        },
+        "recording_suitability": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.15
+        },
+        "technical_readiness": {
+          "contribution": 0.025,
+          "factor": 0.5,
+          "weight": 0.05
+        },
+        "total": 0.4567
+      },
+      "screen_status": "unknown",
+      "source_title": "Google for Startups Warsaw",
+      "source_url": "https://googleforstartups-warsaw.firstview.us/en",
+      "tier_reasons": [],
+      "venue_flags": [
+        "cost_unknown",
+        "screen_unknown",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "duration_unconfirmed",
+        "map_location_unknown",
+        "stale_evidence"
+      ],
+      "venue_tier": "shortlist_ready",
+      "verification_question_kinds": [
+        "cost_unknown",
+        "event_window",
+        "availability",
+        "screen",
+        "wifi",
+        "final_quote"
+      ],
+      "verification_questions": [
+        "Confirm whether Google for Startups Warsaw offers event space for community/tech events.",
+        "Confirm capacity and booking process.",
+        "Confirm whether space is free or subsidized for AI/community events.",
+        "Confirm Saturday availability.",
+        "Confirm screen/projector availability in event space.",
+        "Confirm WiFi availability."
+      ],
+      "wifi_status": "confirmed"
+    },
+    {
+      "accessed_on": "2026-08-20",
+      "address": "Nowogrodzka 47a, Warsaw, Poland",
+      "booking_url": "https://warsaw.impacthub.net/",
+      "capacity_basis": "venue_claim",
+      "capacity_comfortable": 50,
+      "catering_policy": "unknown",
+      "city_slug": "warsaw-pl",
+      "closing_time": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "cost_rate_unit": "unknown",
+      "estimated_cost_usd": null,
+      "estimated_hours": null,
+      "event_window_evidence": null,
+      "event_window_status": "unknown",
+      "evidence": {
+        "inference": "Real location but not in resolver snapshot. All details need direct verification. Strong brand alignment with community/AI events.",
+        "observed_facts": "Impact Hub Warsaw exists at Nowogrodzka 47a. NOT in the installed 150-record Impact Hub snapshot. Impact Hub locations globally offer coworking, event spaces, community programming."
+      },
+      "hourly_rate_local": null,
+      "hourly_rate_usd": null,
+      "latitude": null,
+      "longitude": null,
+      "max_booking_hours": 8,
+      "name": "Impact Hub Warsaw",
+      "needs_human_verify": true,
+      "opening_hours": "unknown",
+      "rate_currency": null,
+      "rate_estimate_note": null,
+      "recording_suitability": "unknown",
+      "score": 0.4567,
+      "score_breakdown": {
+        "booking_path": {
+          "contribution": 0.1,
+          "factor": 1.0,
+          "weight": 0.1
+        },
+        "budget_efficiency": {
+          "contribution": 0.1,
+          "factor": 0.5,
+          "weight": 0.2
+        },
+        "capacity_fit": {
+          "contribution": 0.2,
+          "factor": 1.0,
+          "weight": 0.2
+        },
+        "catering_flexibility": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.15
+        },
+        "event_window_fit": {
+          "contribution": 0.025,
+          "factor": 0.5,
+          "weight": 0.05
+        },
+        "evidence_freshness": {
+          "contribution": 0.0067,
+          "factor": 0.0667,
+          "weight": 0.1
+        },
+        "recording_suitability": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.15
+        },
+        "technical_readiness": {
+          "contribution": 0.025,
+          "factor": 0.5,
+          "weight": 0.05
+        },
+        "total": 0.4567
+      },
+      "screen_status": "unknown",
+      "source_title": "Impact Hub Warsaw",
+      "source_url": "https://warsaw.impacthub.net/",
+      "tier_reasons": [],
+      "venue_flags": [
+        "cost_unknown",
+        "screen_unknown",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "duration_unconfirmed",
+        "map_location_unknown",
+        "stale_evidence"
+      ],
+      "venue_tier": "shortlist_ready",
+      "verification_question_kinds": [
+        "cost_unknown",
+        "event_window",
+        "availability",
+        "screen",
+        "wifi",
+        "final_quote"
+      ],
+      "verification_questions": [
+        "Confirm capacity for 50-80 seated attendees in Impact Hub Warsaw event space.",
+        "Confirm hourly/daily rental rates in PLN.",
+        "Confirm availability on candidate Saturdays.",
+        "Confirm screen/projector availability.",
+        "Confirm WiFi availability in event spaces.",
+        "Confirm the exact all-in price for an 8-hour Saturday event."
+      ],
+      "wifi_status": "confirmed"
+    },
+    {
+      "accessed_on": "2026-08-20",
+      "address": "Chłodna 29, Warszawa, Poland (Srodmiescie/Centrum)",
+      "booking_url": "https://samocentrum.com/",
+      "capacity_basis": "venue_claim",
+      "capacity_comfortable": 80,
+      "catering_policy": "unknown",
+      "city_slug": "warsaw-pl",
+      "closing_time": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "cost_rate_unit": "unknown",
+      "estimated_cost_usd": null,
+      "estimated_hours": null,
+      "event_window_evidence": null,
+      "event_window_status": "unknown",
+      "evidence": {
+        "inference": "Flexible modular space with character. Good for 50-80 person event using combined rooms. Industrial aesthetic could suit AI/tech community event. Pricing, capacity per room, and AV details need confirmation.",
+        "observed_facts": "Event space in restored historic kamienica at Chłodna 29 in central Warsaw. 1000m2 across 9 modular rooms, each in different style. Industrial/modern aesthetic. Hosts weddings, birthdays, corporate events, training, banquets. Full event manager support. Address: Chłodna 29, Warszawa."
+      },
+      "hourly_rate_local": null,
+      "hourly_rate_usd": null,
+      "latitude": null,
+      "longitude": null,
+      "max_booking_hours": 8,
+      "name": "Samo Centrum Wszechświata",
+      "needs_human_verify": true,
+      "opening_hours": "unknown",
+      "rate_currency": null,
+      "rate_estimate_note": null,
+      "recording_suitability": "unknown",
+      "score": 0.4317,
+      "score_breakdown": {
+        "booking_path": {
+          "contribution": 0.1,
+          "factor": 1.0,
+          "weight": 0.1
+        },
+        "budget_efficiency": {
+          "contribution": 0.1,
+          "factor": 0.5,
+          "weight": 0.2
+        },
+        "capacity_fit": {
+          "contribution": 0.2,
+          "factor": 1.0,
+          "weight": 0.2
+        },
+        "catering_flexibility": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.15
+        },
+        "event_window_fit": {
+          "contribution": 0.025,
+          "factor": 0.5,
+          "weight": 0.05
+        },
+        "evidence_freshness": {
+          "contribution": 0.0067,
+          "factor": 0.0667,
+          "weight": 0.1
+        },
+        "recording_suitability": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.15
+        },
+        "technical_readiness": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.05
+        },
+        "total": 0.4317
+      },
+      "screen_status": "unknown",
+      "source_title": "Sale do wynajęcia | Przestrzeń eventowa na wynajem Warszawa - Samo Centrum Wszechświata",
+      "source_url": "https://samocentrum.com/",
+      "tier_reasons": [],
+      "venue_flags": [
+        "cost_unknown",
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "duration_unconfirmed",
+        "map_location_unknown",
+        "stale_evidence"
+      ],
+      "venue_tier": "shortlist_ready",
+      "verification_question_kinds": [
+        "cost_unknown",
+        "event_window",
+        "availability",
+        "screen",
+        "wifi",
+        "final_quote"
+      ],
+      "verification_questions": [
+        "Confirm exact rental rate for 8-hour Saturday event for 50-80 people.",
+        "Confirm Saturday availability.",
+        "Confirm AV equipment (projector, screen, PA) in event rooms.",
+        "Confirm WiFi availability.",
+        "Confirm event window and whether 8-hour hire is supported.",
+        "Confirm the exact all-in price for an 8-hour Saturday event."
+      ],
+      "wifi_status": "unknown"
+    }
+  ],
   "sources": [
     {
-      "accessed_on": "2026-08-18",
+      "accessed_on": "2026-08-20",
       "title": "Meeting rooms for rent in Varsovie - 70+ rooms from 481 PLN/day | workin.space",
       "url": "https://book.workin.space/en/poland/warsaw/meeting-room"
     },
     {
-      "accessed_on": "2026-08-18",
+      "accessed_on": "2026-08-20",
       "title": "Event Space Warsaw | Business & Networking Events | CIC",
       "url": "https://cic.com/warsaw/event-spaces/"
+    },
+    {
+      "accessed_on": "2026-08-20",
+      "title": "ADN Conference Center — Rooms",
+      "url": "https://ckadn.pl/en/"
     },
     {
       "accessed_on": "2026-08-18",
@@ -390,8 +1231,28 @@
     },
     {
       "accessed_on": "2026-08-18",
+      "title": "FINTECH Poland Expo 2026 — Fintech trade fair, Nov 17-19",
+      "url": "https://fintechpoland.pl/"
+    },
+    {
+      "accessed_on": "2026-08-20",
+      "title": "Google for Startups Warsaw",
+      "url": "https://googleforstartups-warsaw.firstview.us/en"
+    },
+    {
+      "accessed_on": "2026-08-20",
+      "title": "Messalka Events – przestrzeń eventowa w centrum Warszawy",
+      "url": "https://messalka.events/"
+    },
+    {
+      "accessed_on": "2026-08-18",
       "title": "AI Events in Poland | AI Tinkerers Meetups 2026",
       "url": "https://poland.aitinkerers.org/"
+    },
+    {
+      "accessed_on": "2026-08-20",
+      "title": "Sale do wynajęcia | Przestrzeń eventowa na wynajem Warszawa - Samo Centrum Wszechświata",
+      "url": "https://samocentrum.com/"
     },
     {
       "accessed_on": "2026-08-18",
@@ -399,24 +1260,34 @@
       "url": "https://t.me/joinethwarsaw"
     },
     {
-      "accessed_on": "2026-08-18",
-      "title": "Varso Place - A unique place in the center of Warsaw - Event space for rent",
+      "accessed_on": "2026-08-20",
+      "title": "Varso Place - Event space for rent",
       "url": "https://varso.com/en/leasing/event-space-for-rent"
     },
     {
-      "accessed_on": "2026-08-18",
+      "accessed_on": "2026-08-20",
       "title": "Warsaw.AI – Warsaw.AI community",
       "url": "https://warsaw.ai/"
     },
     {
-      "accessed_on": "2026-08-18",
+      "accessed_on": "2026-08-20",
       "title": "Impact Hub Warsaw",
       "url": "https://warsaw.impacthub.net/"
     },
     {
       "accessed_on": "2026-08-20",
-      "title": "Web3 Warsaw 2026 — Largest blockchain conference in Eastern Europe, Sep 9-10",
-      "url": "https://web3warsaw.com/"
+      "title": "Agent Conf 2026 — Europe's first major conference for engineers building agentic systems, Sep 17-18, Crowne Plaza Warsaw",
+      "url": "https://www.eventbrite.com/e/agent-conf-2026-tickets-1989991661629"
+    },
+    {
+      "accessed_on": "2026-08-20",
+      "title": "Warsaw Tech Week 2026 — International Trade Fair of Technologies and Innovations, Sep 22-24, PTAK Warsaw Expo",
+      "url": "https://www.eventbrite.com/e/warsaw-tech-week-tickets-1986300787124"
+    },
+    {
+      "accessed_on": "2026-08-18",
+      "title": "Warsaw Home Build 2026 — Construction and interior trade fair, Oct 21-24",
+      "url": "https://www.homebuild.pl/en/"
     },
     {
       "accessed_on": "2026-08-18",
@@ -434,12 +1305,12 @@
       "url": "https://www.meetup.com/web3-devs-poland/"
     },
     {
-      "accessed_on": "2026-08-18",
-      "title": "Meeting Room Warsaw - Boardroom & Training Room | Regus",
-      "url": "https://www.regus.com/en-gb/poland/warsaw/meeting-rooms"
+      "accessed_on": "2026-08-20",
+      "title": "Sala eventowa Warszawa | Sale konferencyjne WTT Wola – WE EVENT",
+      "url": "https://www.sala-eventowa-warszawa.pl/"
     },
     {
-      "accessed_on": "2026-08-18",
+      "accessed_on": "2026-08-20",
       "title": "Coworking Office Space in Center Warsaw District - 50 Krucza | WeWork",
       "url": "https://www.wework.com/en-GB/buildings/krucza-50--warsaw"
     }
@@ -451,218 +1322,7 @@
   "trusted_venue_matches": [],
   "venue_leads_needing_verification": [
     {
-      "accessed_on": "2026-08-18",
-      "address": "Varso Place, Warsaw, Poland",
-      "booking_url": "https://cic.com/warsaw/event-spaces/",
-      "capacity_basis": "unknown",
-      "capacity_comfortable": 0,
-      "catering_policy": "unknown",
-      "city_slug": "warsaw-pl",
-      "closing_time": null,
-      "cost_basis": "unknown",
-      "cost_local_amount": null,
-      "cost_local_currency": null,
-      "cost_rate_unit": "unknown",
-      "estimated_cost_usd": null,
-      "estimated_hours": null,
-      "event_window_evidence": null,
-      "event_window_status": "unknown",
-      "evidence": {
-        "inference": "CIC is a global innovation hub operator with Warsaw location at Varso Place offering multiple event spaces. Specific capacity, pricing, and availability details were not extractable from the page.",
-        "observed_facts": "CIC (Cambridge Innovation Center) has event spaces at Varso Place in Warsaw. The page describes 'AV, support, and flexible setups' for business and networking events. Multiple event rental spaces: Design Room, Research Room, Strategy Room, plus a full-size bar. Located at Varso Place, a modern mixed-use development in Warsaw city center next to Central Railway Station. Last modified 2026-08-06."
-      },
-      "hourly_rate_local": null,
-      "hourly_rate_usd": null,
-      "latitude": null,
-      "longitude": null,
-      "max_booking_hours": null,
-      "name": "CIC Warsaw — Event Spaces at Varso Place",
-      "needs_human_verify": true,
-      "opening_hours": "unknown",
-      "rate_currency": null,
-      "rate_estimate_note": null,
-      "recording_suitability": "unknown",
-      "score": null,
-      "score_breakdown": null,
-      "screen_status": "unknown",
-      "source_title": "Event Space Warsaw | Business & Networking Events | CIC",
-      "source_url": "https://cic.com/warsaw/event-spaces/",
-      "tier_reasons": [
-        "capacity_comfortable 0 below minimum 40"
-      ],
-      "venue_flags": [
-        "cost_unknown",
-        "screen_unknown",
-        "wifi_unknown",
-        "availability_unconfirmed",
-        "final_quote_required",
-        "duration_unconfirmed",
-        "map_location_unknown",
-        "stale_evidence"
-      ],
-      "venue_tier": "lead",
-      "verification_question_kinds": [
-        "cost_unknown",
-        "event_window",
-        "availability",
-        "screen",
-        "wifi",
-        "final_quote",
-        "booking_terms"
-      ],
-      "verification_questions": [
-        "Confirm capacity for 50-80 seated attendees in the main event space.",
-        "Confirm hourly/daily rental rates in PLN.",
-        "Confirm availability on candidate Saturdays in Q4 2026.",
-        "Confirm screen/projector and Wi-Fi availability.",
-        "Confirm event window (opening/closing times) and whether 8-hour hire is supported.",
-        "Confirm the exact all-in price for an 8-hour Saturday event.",
-        "Confirm booking terms and whether a community/private event is accepted."
-      ],
-      "wifi_status": "unknown"
-    },
-    {
-      "accessed_on": "2026-08-18",
-      "address": "Nowogrodzka 47a, Warsaw, Poland",
-      "booking_url": "https://warsaw.impacthub.net/",
-      "capacity_basis": "unknown",
-      "capacity_comfortable": 0,
-      "catering_policy": "unknown",
-      "city_slug": "warsaw-pl",
-      "closing_time": null,
-      "cost_basis": "unknown",
-      "cost_local_amount": null,
-      "cost_local_currency": null,
-      "cost_rate_unit": "unknown",
-      "estimated_cost_usd": null,
-      "estimated_hours": null,
-      "event_window_evidence": null,
-      "event_window_status": "unknown",
-      "evidence": {
-        "inference": "Impact Hub Warsaw is a real location but not in the installed resolver snapshot. All details need direct verification.",
-        "observed_facts": "Impact Hub Warsaw exists at Nowogrodzka 47a, Warsaw. The hub is NOT in the installed 150-record Impact Hub snapshot used by the plan-event skill resolver. Impact Hub locations globally offer coworking, event spaces, and community programming."
-      },
-      "hourly_rate_local": null,
-      "hourly_rate_usd": null,
-      "latitude": null,
-      "longitude": null,
-      "max_booking_hours": null,
-      "name": "Impact Hub Warsaw",
-      "needs_human_verify": true,
-      "opening_hours": "unknown",
-      "rate_currency": null,
-      "rate_estimate_note": null,
-      "recording_suitability": "unknown",
-      "score": null,
-      "score_breakdown": null,
-      "screen_status": "unknown",
-      "source_title": "Impact Hub Warsaw",
-      "source_url": "https://warsaw.impacthub.net/",
-      "tier_reasons": [
-        "capacity_comfortable 0 below minimum 40"
-      ],
-      "venue_flags": [
-        "cost_unknown",
-        "screen_unknown",
-        "wifi_unknown",
-        "availability_unconfirmed",
-        "final_quote_required",
-        "duration_unconfirmed",
-        "map_location_unknown",
-        "stale_evidence"
-      ],
-      "venue_tier": "lead",
-      "verification_question_kinds": [
-        "cost_unknown",
-        "event_window",
-        "availability",
-        "screen",
-        "wifi",
-        "final_quote",
-        "booking_terms"
-      ],
-      "verification_questions": [
-        "Confirm capacity for 50-80 seated attendees in Impact Hub Warsaw event space.",
-        "Confirm hourly/daily rental rates in PLN.",
-        "Confirm availability on candidate Saturdays.",
-        "Confirm screen/projector and Wi-Fi availability.",
-        "Confirm event window (opening/closing times) and whether 8-hour hire is supported.",
-        "Confirm the exact all-in price for an 8-hour Saturday event.",
-        "Confirm booking terms and whether a community/private event is accepted."
-      ],
-      "wifi_status": "unknown"
-    },
-    {
-      "accessed_on": "2026-08-18",
-      "address": "Multiple locations, Warsaw, Poland",
-      "booking_url": "https://www.regus.com/en-gb/poland/warsaw/meeting-rooms",
-      "capacity_basis": "unknown",
-      "capacity_comfortable": 0,
-      "catering_policy": "unknown",
-      "city_slug": "warsaw-pl",
-      "closing_time": null,
-      "cost_basis": "unknown",
-      "cost_local_amount": null,
-      "cost_local_currency": null,
-      "cost_rate_unit": "unknown",
-      "estimated_cost_usd": null,
-      "estimated_hours": null,
-      "event_window_evidence": null,
-      "event_window_status": "unknown",
-      "evidence": {
-        "inference": "Regus meeting rooms may not accommodate 50+ seated attendees. The 79-129 PLN/hr range suggests smaller-to-medium meeting rooms.",
-        "observed_facts": "Regus offers meeting rooms in Warsaw from 79 PLN/hour up to 129 PLN/hour for premium options. Rooms available by the hour or day. Described as suitable for 'conference room, board room, interview room or training room.' Multiple Warsaw locations."
-      },
-      "hourly_rate_local": null,
-      "hourly_rate_usd": null,
-      "latitude": null,
-      "longitude": null,
-      "max_booking_hours": null,
-      "name": "Regus Warsaw — Meeting Rooms",
-      "needs_human_verify": true,
-      "opening_hours": "unknown",
-      "rate_currency": null,
-      "rate_estimate_note": null,
-      "recording_suitability": "unknown",
-      "score": null,
-      "score_breakdown": null,
-      "screen_status": "unknown",
-      "source_title": "Meeting Room Warsaw - Boardroom & Training Room | Regus",
-      "source_url": "https://www.regus.com/en-gb/poland/warsaw/meeting-rooms",
-      "tier_reasons": [
-        "capacity_comfortable 0 below minimum 40"
-      ],
-      "venue_flags": [
-        "cost_unknown",
-        "screen_unknown",
-        "wifi_unknown",
-        "availability_unconfirmed",
-        "final_quote_required",
-        "duration_unconfirmed",
-        "map_location_unknown",
-        "stale_evidence"
-      ],
-      "venue_tier": "lead",
-      "verification_question_kinds": [
-        "cost_unknown",
-        "event_window",
-        "availability",
-        "screen",
-        "wifi",
-        "final_quote"
-      ],
-      "verification_questions": [
-        "Confirm capacity for 50-80 seated attendees — Regus meeting rooms may max out at smaller sizes.",
-        "Confirm the 79-129 PLN/hr rate applies to the largest available room.",
-        "Confirm Saturday availability at Warsaw locations.",
-        "Confirm screen/projector and Wi-Fi availability.",
-        "Confirm event window and whether 8-hour hire is supported.",
-        "Confirm the exact all-in price for an 8-hour Saturday event."
-      ],
-      "wifi_status": "unknown"
-    },
-    {
-      "accessed_on": "2026-08-18",
+      "accessed_on": "2026-08-20",
       "address": "Varso Place, Warsaw, Poland",
       "booking_url": "https://varso.com/en/leasing/event-space-for-rent",
       "capacity_basis": "unknown",
@@ -680,7 +1340,7 @@
       "event_window_status": "unknown",
       "evidence": {
         "inference": "Varso Place event space may overlap with CIC Warsaw (both at Varso Place). Specific capacity, pricing, and availability not extractable.",
-        "observed_facts": "Varso Place offers 'original, modern interiors for photo sessions, film locations, exhibitions, conferences, events and product promotions.' Located in the center of Warsaw. Part of the Varso Place mixed-use development next to Central Railway Station."
+        "observed_facts": "Varso Place offers 'original, modern interiors for photo sessions, film locations, exhibitions, conferences, events and product promotions.' Located in center of Warsaw next to Central Railway Station."
       },
       "hourly_rate_local": null,
       "hourly_rate_usd": null,
@@ -696,7 +1356,7 @@
       "score": null,
       "score_breakdown": null,
       "screen_status": "unknown",
-      "source_title": "Varso Place - A unique place in the center of Warsaw - Event space for rent",
+      "source_title": "Varso Place - Event space for rent",
       "source_url": "https://varso.com/en/leasing/event-space-for-rent",
       "tier_reasons": [
         "capacity_comfortable 0 below minimum 40"
@@ -731,7 +1391,7 @@
       "wifi_status": "unknown"
     },
     {
-      "accessed_on": "2026-08-18",
+      "accessed_on": "2026-08-20",
       "address": "Warsaw, Poland (exact address not confirmed)",
       "booking_url": "https://warsaw.ai/",
       "capacity_basis": "unknown",
@@ -748,8 +1408,8 @@
       "event_window_evidence": null,
       "event_window_status": "unknown",
       "evidence": {
-        "inference": "Warsaw.ai appears to host events for the AI community. Whether they have a dedicated venue or use external spaces is unclear.",
-        "observed_facts": "Warsaw.ai is described as 'a series of events to gather the community of AI practitioners.' Uses a conference WordPress theme (GrandConference). Google Analytics tracking active (GT-TW5S7DL7), indicating an actively maintained site."
+        "inference": "Warsaw.ai hosts events for the AI community. Whether they have a dedicated venue or use external spaces is unclear. Potential community partner.",
+        "observed_facts": "Warsaw.ai is described as 'a series of events to gather the community of AI practitioners.' Uses a conference WordPress theme (GrandConference). Google Analytics tracking active."
       },
       "hourly_rate_local": null,
       "hourly_rate_usd": null,
@@ -797,7 +1457,7 @@
       "wifi_status": "unknown"
     },
     {
-      "accessed_on": "2026-08-18",
+      "accessed_on": "2026-08-20",
       "address": "Krucza 50, Warsaw, Poland (Srodmiescie district)",
       "booking_url": "https://www.wework.com/l/meeting-rooms/warsaw",
       "capacity_basis": "unknown",
@@ -814,8 +1474,8 @@
       "event_window_evidence": null,
       "event_window_status": "unknown",
       "evidence": {
-        "inference": "WeWork Krucza 50 is in central Warsaw. Specific capacity for 50+ person events and weekend availability are not confirmed.",
-        "observed_facts": "WeWork has a location at Krucza 50 in central Warsaw (Srodmiescie district), described as 'Renowned as a hub for business and culture.' WeWork offers On Demand pay-as-you-go for office space by the day and conference rooms by the hour, bookable via the WeWork app. Rating 4.3 from 42 reviews."
+        "inference": "WeWork meeting rooms typically max at 20-30 people. Unlikely to accommodate 50+ seated attendees. Lower priority.",
+        "observed_facts": "WeWork has a location at Krucza 50 in central Warsaw (Srodmiescie). On Demand pay-as-you-go for office/conference rooms via WeWork app. Rating 4.3 from 42 reviews."
       },
       "hourly_rate_local": null,
       "hourly_rate_usd": null,
@@ -839,9 +1499,7 @@
       "venue_flags": [
         "cost_unknown",
         "screen_unknown",
-        "wifi_unknown",
         "availability_unconfirmed",
-        "final_quote_required",
         "duration_unconfirmed",
         "map_location_unknown",
         "stale_evidence"
@@ -852,23 +1510,19 @@
         "event_window",
         "availability",
         "screen",
-        "wifi",
-        "final_quote",
-        "booking_terms"
+        "wifi"
       ],
       "verification_questions": [
-        "Confirm capacity for 50-80 seated attendees in the largest available room at Krucza 50.",
-        "Confirm hourly rental rates in PLN for meeting/conference rooms.",
+        "Confirm whether WeWork Krucza 50 has rooms large enough for 50+ seated attendees.",
         "Confirm Saturday availability (WeWork hours may be limited on weekends).",
-        "Confirm screen/projector and Wi-Fi availability in event-capable rooms.",
         "Confirm event window and whether 8-hour hire is supported.",
-        "Confirm the exact all-in price for an 8-hour Saturday event.",
-        "Confirm booking terms via the WeWork app."
+        "Confirm screen/projector availability in event-capable rooms.",
+        "Confirm WiFi availability in event-capable rooms."
       ],
-      "wifi_status": "unknown"
+      "wifi_status": "confirmed"
     },
     {
-      "accessed_on": "2026-08-18",
+      "accessed_on": "2026-08-20",
       "address": "Multiple locations, Warsaw, Poland (aggregator)",
       "booking_url": "https://book.workin.space/en/poland/warsaw/meeting-room",
       "capacity_basis": "unknown",
@@ -885,8 +1539,8 @@
       "event_window_evidence": null,
       "event_window_status": "unknown",
       "evidence": {
-        "inference": "The 481 PLN/day starting price is for smaller rooms; larger rooms for 50+ will cost more. Specific providers and room details need investigation.",
-        "observed_facts": "workin.space is a meeting room aggregator offering 70+ spaces in Warsaw. Starting price from 481 PLN/day (excl. VAT). Transparent prices, flexible cancellation. Online booking in 2 minutes."
+        "inference": "The 481 PLN/day starting price is for smaller rooms. Larger rooms for 50+ will cost more. Useful as a discovery platform.",
+        "observed_facts": "workin.space is a meeting room aggregator offering 70+ spaces in Warsaw. Starting price from 481 PLN/day (excl. VAT). Transparent prices, flexible cancellation. Online booking."
       },
       "hourly_rate_local": null,
       "hourly_rate_usd": null,
@@ -928,11 +1582,11 @@
       ],
       "verification_questions": [
         "Confirm capacity for 50-80 seated attendees in the largest available rooms.",
-        "Confirm whether the 481 PLN/day rate applies to rooms large enough for 50+ people.",
         "Confirm Saturday availability.",
         "Confirm AV equipment availability in listed rooms.",
         "Confirm event window and whether 8-hour hire is supported.",
-        "Confirm the exact all-in price for an 8-hour Saturday event."
+        "Confirm the exact all-in price for an 8-hour Saturday event.",
+        "Confirm parking and accessibility for attendees."
       ],
       "wifi_status": "unknown"
     }

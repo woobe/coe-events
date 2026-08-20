@@ -1,0 +1,107 @@
+{
+  "scanner_version": "1.0.0",
+  "rules_version": "v1",
+  "invocation": {
+    "project_root": ".",
+    "quarter": "2026-q4",
+    "city": "warsaw",
+    "generated_at": "2026-08-20",
+    "report": "/home/joe/repo_dev/coe-events/research/warsaw/2026-q4/release_gate_reports/.bundle-6/scan_event_output.json",
+    "surface": "both"
+  },
+  "concrete_bundle": "research/warsaw/2026-q4/.bundle-6",
+  "event_plan_hash": "74c5ee7688e2472098ea7cf74a3c0aef2d0bcb662002c7677f41d2a653635210",
+  "temporary_render_hash": "a5c10487305955baab5ae281707a2e306d13ced83ad58a0d706e39d9e5069cdb",
+  "canonical_summary": {
+    "path": "/home/joe/repo_dev/coe-events/summary/2026-q4-warsaw-summary.html",
+    "before": {
+      "state": "present",
+      "sha256": "fc9b5f386b2ac2ffdda4515c02f23b962d1e5f12d60416529b0ab04c0e5e8fd0"
+    },
+    "after": {
+      "state": "present",
+      "sha256": "fc9b5f386b2ac2ffdda4515c02f23b962d1e5f12d60416529b0ab04c0e5e8fd0"
+    },
+    "unchanged": true
+  },
+  "surfaces_requested": [
+    "html",
+    "source"
+  ],
+  "finding_count": 7,
+  "findings": [
+    {
+      "surface": "html",
+      "rule": "PE29-DATE-001",
+      "dom_context": "html > body > main > div > table > tbody > tr > td > dl > dd > ul > li",
+      "text_node_index": 123,
+      "span": [
+        24,
+        43
+      ],
+      "excerpt": "candidate Saturdays"
+    },
+    {
+      "surface": "html",
+      "rule": "PE29-DATE-001",
+      "dom_context": "html > body > main > div > table > tbody > tr > td > dl > dd > ul > li",
+      "text_node_index": 227,
+      "span": [
+        24,
+        43
+      ],
+      "excerpt": "candidate Saturdays"
+    },
+    {
+      "surface": "html",
+      "rule": "PE29-DATE-001",
+      "dom_context": "html > body > main > div > table > tbody > tr > td > dl > dd > ul > li",
+      "text_node_index": 335,
+      "span": [
+        24,
+        43
+      ],
+      "excerpt": "candidate Saturdays"
+    },
+    {
+      "surface": "source",
+      "rule": "PE29-DATE-001",
+      "json_path": "$.shortlist_ready_venues[1].verification_questions[3]",
+      "span": [
+        24,
+        43
+      ],
+      "excerpt": "candidate Saturdays"
+    },
+    {
+      "surface": "source",
+      "rule": "PE29-DATE-001",
+      "json_path": "$.shortlist_ready_venues[3].verification_questions[2]",
+      "span": [
+        24,
+        43
+      ],
+      "excerpt": "candidate Saturdays"
+    },
+    {
+      "surface": "source",
+      "rule": "PE29-DATE-001",
+      "json_path": "$.shortlist_ready_venues[5].verification_questions[2]",
+      "span": [
+        24,
+        43
+      ],
+      "excerpt": "candidate Saturdays"
+    },
+    {
+      "surface": "source",
+      "rule": "PE29-DATE-001",
+      "json_path": "$.venue_leads_needing_verification[0].verification_questions[2]",
+      "span": [
+        24,
+        43
+      ],
+      "excerpt": "candidate Saturdays"
+    }
+  ]
+}
