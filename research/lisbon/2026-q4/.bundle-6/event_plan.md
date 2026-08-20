@@ -16,19 +16,17 @@
 - Top selectable venue: Avila Spaces — Saldanha (score 0.5483) — tier shortlist_ready
 - Eligible venues: 0; shortlist-ready: 5; leads: 3
 - Speaker candidates: deferred to Run B after venue selection
-- Calendar awareness: 5 record(s) — 3 related-event opportunity/relevance, 2 major-city logistics — informational, never eliminations
-- Open questions: 57
+- Calendar awareness: 3 record(s) — 1 related-event opportunity/relevance, 2 major-city logistics — informational, never eliminations
+- Open questions: 55
 - Recommendation: none selected yet
 
 ## Calendar flags for Joe — informational, not eliminations
 
 Calendar awareness has two categories in schema 2.4: related-event opportunity/relevance and major-city logistics. Neither category scores, tiers, selects, or rejects a venue; these flags are awareness only.
 
-- BUIDL Europe Lisbon — 2026-01-01 to 2026-01-01 (related-event opportunity, relevance: crypto) — [BUIDL Europe Lisbon](https://www.coingabbar.com/en/event-details/buidl-europe-2025-lisbon-portugal-crypto-conference). This is an awareness flag for Joe's decision; it never removes the date automatically.
-- Blockchain Lisbon 2026 — 2026-05-21 to 2026-05-22 (related-event opportunity, relevance: crypto) — [Blockchain Lisbon 2026](https://www.blockchainlisbon.com/). This is an awareness flag for Joe's decision; it never removes the date automatically.
-- ETHGlobal Lisbon 2026 — 2026-07-24 to 2026-07-26 (related-event opportunity, relevance: crypto) — [ETHGlobal Lisbon 2026](https://ethglobal.com/lisbon). This is an awareness flag for Joe's decision; it never removes the date automatically.
-- Portugal Tech Week 2026 — 2026-11-06 to 2026-11-15 (major-city logistics) — [Portugal Tech Week 2026 — Official: November 6-15, 2026; largest decentralized tech event in Portugal, +300 events in +20 cities](https://portugaltechweek.com/). This is a logistics awareness flag for Joe's decision; it never removes the date automatically.
-- Web Summit 2026 — 2026-11-09 to 2026-11-12 (major-city logistics) — [Web Summit 2026 — Official: November 9-12, 2026, MEO Arena, Lisbon; 70,000+ attendees from 160+ countries](https://websummit.com/web-summit-2026/). This is a logistics awareness flag for Joe's decision; it never removes the date automatically.
+- Startup Summit Lisbon 2026 — 2026-09-17 to 2026-09-18 (related-event opportunity, relevance: fintech) — [Startup Summit Lisbon 2026 — Founder/investor conference, Sep 17-18, Beato Innovation District](https://startupsummit.io/lisbon). This is an awareness flag for Joe's decision; it never removes the date automatically.
+- Portugal Tech Week 2026 — 2026-11-06 to 2026-11-15 (major-city logistics) — [Portugal Tech Week 2026 — Nationwide tech week, Nov 6-15](https://portugaltechweek.com/). This is a logistics awareness flag for Joe's decision; it never removes the date automatically.
+- Web Summit 2026 — 2026-11-09 to 2026-11-12 (major-city logistics) — [Web Summit 2026 — November 9-12, MEO Arena, Lisbon; 70,000+ attendees from 160+ countries](https://websummit.com/web-summit-2026/). This is a logistics awareness flag for Joe's decision; it never removes the date automatically.
 
 ## Venue Shortlist (eligible, ranked)
 
@@ -223,7 +221,6 @@ Calendar awareness has two categories in schema 2.4: related-event opportunity/r
 ## Open Questions
 
 - Assess logistics impact on Lisbon city center during Nov 9-12 (transport, hotel demand, road access, venue availability).
-- Assess logistics impact on Lisbon during Nov 6-15 (300+ events across 20+ cities, potential venue demand).
 - Assess whether Web Summit week (Nov 9-12) creates a side-event opportunity for a DeAI Day audience synergy.
 - Assess whether Web Summit week creates a side-event opportunity for a DeAI Day audience synergy.
 - Confirm availability on the chosen 2026 Saturday for each shortlisted venue (Impact Hub Lisbon, Second Home, Village Underground, Avila Spaces, Heden).
@@ -233,7 +230,6 @@ Calendar awareness has two categories in schema 2.4: related-event opportunity/r
 - Confirm booking terms, A/V configuration, and any F&B or staffing minimums for each shortlisted venue.
 - Confirm booking terms, A/V configuration, and any F&B or staffing minimums.
 - Confirm booking terms, A/V configuration, and pricing.
-- Confirm BUIDL Europe Lisbon 2026 dates. Listed as January event; exact dates unverified.
 - Confirm cost and pricing for a full-day Saturday event.
 - Confirm CryptoMondays Lisbon's current event cadence and venues for late 2026.
 - Confirm Data, Cloud and AI in Lisbon's current event cadence and venues for late 2026.
@@ -252,15 +248,15 @@ Calendar awareness has two categories in schema 2.4: related-event opportunity/r
 - Confirm member count and whether they are open to co-hosting.
 - Confirm Mindstone Lisbon's current event cadence and venues for late 2026.
 - Confirm Neural Networkers Lisbon's current event cadence and venues for late 2026.
-- Confirm Portugal Tech Week 2026 dates remain November 6-15.
+- Confirm Portugal Tech Week 2026 dates and assess logistics impact on Lisbon city center (transport, hotel demand, road access) during Nov 6-15.
 - Confirm Portugal Tech Week 2026 logistics impact on Lisbon during Nov 6-15 (300+ events across 20+ cities, potential venue demand).
 - Confirm pricing for a full-day Saturday event rental.
-- Confirm PTW Palace programming in Lisbon during Nov 9-13 (talks, coworking, networking, music sessions, Future Tech Cinema Festival).
 - Confirm PyData Lisbon's current event cadence and venues for late 2026.
 - Confirm screen/projector availability in Impact Hall.
 - Confirm screen/projector availability in the event space.
 - Confirm screen/projector availability.
 - Confirm Second Home Lisbon event space capacity and pricing for a 50-person event.
+- Confirm Startup Summit Lisbon 2026 dates and venue at Beato Innovation District (Unicorn Factory Lisboa).
 - Confirm The Block Lisboa's current event cadence and whether they are open to co-hosting a DeAI Day event.
 - Confirm the event space capacity at The Block for a 50-person gathering.
 - Confirm the exact capacity of the event space (the 1100 sqm total includes coworking areas).

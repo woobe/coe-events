@@ -76,7 +76,7 @@ Generated from the event plan for 2026-10-03
 
 ## Calendar Note (informational — never a date removal)
 
-- Related-event opportunity/relevance to review before confirming the date: BUIDL Europe Lisbon, Blockchain Lisbon 2026, ETHGlobal Lisbon 2026.
+- Related-event opportunity/relevance to review before confirming the date: Startup Summit Lisbon 2026.
 - Major-city logistics to verify before confirming the date: Portugal Tech Week 2026, Web Summit 2026.
 - Joe decides all date conflicts himself; calendar flags never remove the date automatically.
 
