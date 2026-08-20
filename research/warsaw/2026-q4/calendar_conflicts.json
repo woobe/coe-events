@@ -1,1 +1,57 @@
-[]
+[
+  {
+    "event_name": "Warsaw Tech Week 2026",
+    "city_slug": "warsaw-pl",
+    "start_date": "2026-09-22",
+    "end_date": "2026-09-24",
+    "kind": "major_other",
+    "relevance": "other",
+    "conflict_severity": "none",
+    "source_url": "https://www.eventbrite.com/e/warsaw-tech-week-tickets-1986300787124",
+    "source_title": "Warsaw Tech Week 2026 — International Trade Fair of Technologies and Innovations, Sep 22-24, PTAK Warsaw Expo",
+    "accessed_on": "2026-08-20",
+    "needs_human_verify": true,
+    "verification_questions": [
+      "Confirm Warsaw Tech Week 2026 dates, venue, and expected attendance to assess logistics impact on Warsaw city center during Sep 22-24."
+    ],
+    "evidence": {
+      "observed_facts": "Warsaw Tech Week 2026 is an international trade fair of technologies and innovations at PTAK Warsaw Expo, Sep 22-24. Major city-wide tech event overlapping with the Sep 14-28 target window."
+    }
+  },
+  {
+    "event_name": "Agent Conf 2026",
+    "city_slug": "warsaw-pl",
+    "start_date": "2026-09-17",
+    "end_date": "2026-09-18",
+    "kind": "related",
+    "relevance": "ai",
+    "conflict_severity": "medium",
+    "source_url": "https://www.eventbrite.com/e/agent-conf-2026-tickets-1989991661629",
+    "source_title": "Agent Conf 2026 — Europe's first major conference for engineers building agentic systems, Sep 17-18, Crowne Plaza Warsaw",
+    "accessed_on": "2026-08-20",
+    "needs_human_verify": true,
+    "verification_questions": [
+      "Confirm Agent Conf 2026 dates and venue. Assess audience overlap with DeAI Day."
+    ],
+    "evidence": {
+      "observed_facts": "Agent Conf 2026 is Europe's first major conference for engineers building agentic systems, at Crowne Plaza Warsaw - the Hub by IHG, Sep 17-18. Directly relevant to AI/ML audience. Medium conflict: same city, same week, overlapping audience."
+    }
+  },
+  {
+    "event_name": "Web3 Warsaw 2026",
+    "city_slug": "warsaw-pl",
+    "start_date": "2026-09-09",
+    "end_date": "2026-09-10",
+    "kind": "related",
+    "relevance": "web3",
+    "conflict_severity": "low",
+    "source_url": "https://web3warsaw.com/",
+    "source_title": "Web3 Warsaw 2026 — Largest blockchain conference in Eastern Europe, Sep 9-10",
+    "accessed_on": "2026-08-20",
+    "needs_human_verify": false,
+    "verification_questions": [],
+    "evidence": {
+      "observed_facts": "Web3 Warsaw 2026 is the largest blockchain conference in Eastern Europe, Sep 9-10. Outside the Sep 14-28 window but nearby for awareness."
+    }
+  }
+]
