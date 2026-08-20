@@ -142,8 +142,8 @@ Generated from the event plan for 2026-09-26
 
 ## Calendar Note (informational — never a date removal)
 
-- Related-event opportunity/relevance to review before confirming the date: IEEE Tech Summit: Ethical AI 2026 (Budapest), AI Forward '26 (Nokia), EMNLP 2026 (Budapest).
-- Major-city logistics to verify before confirming the date: ScaleupFest 2026, SPAR Budapest Marathon 2026 (41st), MeOut Summit 2026.
+- Related-event opportunity/relevance to review before confirming the date: none recorded.
+- Major-city logistics to verify before confirming the date: ScaleupFest 2026.
 - Joe decides all date conflicts himself; calendar flags never remove the date automatically.
 
 ## Community Verification (manual review)

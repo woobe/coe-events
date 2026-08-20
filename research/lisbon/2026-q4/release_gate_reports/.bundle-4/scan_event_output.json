@@ -1,0 +1,33 @@
+{
+  "scanner_version": "1.0.0",
+  "rules_version": "v1",
+  "invocation": {
+    "project_root": ".",
+    "quarter": "2026-q4",
+    "city": "lisbon",
+    "generated_at": "2026-08-20",
+    "report": "/home/joe/repo_dev/coe-events/research/lisbon/2026-q4/release_gate_reports/.bundle-4/scan_event_output.json",
+    "surface": "both"
+  },
+  "concrete_bundle": "research/lisbon/2026-q4/.bundle-4",
+  "event_plan_hash": "18b512dd8e5eb103a54783d2c29f1f69ec76c5e7a458cd8f865563914335f2ea",
+  "temporary_render_hash": "24e1385565f5281f895e3f3d94d69f082a4168add928294e0d9f54391b626322",
+  "canonical_summary": {
+    "path": "/home/joe/repo_dev/coe-events/summary/2026-q4-lisbon-summary.html",
+    "before": {
+      "state": "present",
+      "sha256": "86d4496530ccd1cd66dc132b5ac99f6fbfb47eb3558db28c0faa3f0ad91c3cee"
+    },
+    "after": {
+      "state": "present",
+      "sha256": "86d4496530ccd1cd66dc132b5ac99f6fbfb47eb3558db28c0faa3f0ad91c3cee"
+    },
+    "unchanged": true
+  },
+  "surfaces_requested": [
+    "html",
+    "source"
+  ],
+  "finding_count": 0,
+  "findings": []
+}

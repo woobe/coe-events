@@ -1,0 +1,64 @@
+{
+  "scanner_version": "1.0.0",
+  "rules_version": "v1",
+  "invocation": {
+    "project_root": ".",
+    "quarter": "2026-q4",
+    "city": "warsaw",
+    "generated_at": "2026-08-20",
+    "report": "/home/joe/repo_dev/coe-events/research/warsaw/2026-q4/release_gate_reports/.bundle-3/scan_event_output.json",
+    "surface": "both"
+  },
+  "concrete_bundle": "research/warsaw/2026-q4/.bundle-3",
+  "event_plan_hash": "5959f6ca2b7eacf2cb51f43caa33440866292c543e964fb3fe1b6f288a98ea52",
+  "temporary_render_hash": "1c06a6cf78dc36a77c47251438bfdfbc7aed72ef62f6f0403c8ef1bfdad8218a",
+  "canonical_summary": {
+    "path": "/home/joe/repo_dev/coe-events/summary/2026-q4-warsaw-summary.html",
+    "before": {
+      "state": "present",
+      "sha256": "343c1f9c26243264739a71b00c41ac8025acc404a4bd33322b3736b3ad73ada3"
+    },
+    "after": {
+      "state": "present",
+      "sha256": "343c1f9c26243264739a71b00c41ac8025acc404a4bd33322b3736b3ad73ada3"
+    },
+    "unchanged": true
+  },
+  "surfaces_requested": [
+    "html",
+    "source"
+  ],
+  "finding_count": 3,
+  "findings": [
+    {
+      "surface": "source",
+      "rule": "PE29-DATE-001",
+      "json_path": "$.venue_leads_needing_verification[0].verification_questions[2]",
+      "span": [
+        24,
+        43
+      ],
+      "excerpt": "candidate Saturdays"
+    },
+    {
+      "surface": "source",
+      "rule": "PE29-DATE-001",
+      "json_path": "$.venue_leads_needing_verification[1].verification_questions[2]",
+      "span": [
+        24,
+        43
+      ],
+      "excerpt": "candidate Saturdays"
+    },
+    {
+      "surface": "source",
+      "rule": "PE29-DATE-001",
+      "json_path": "$.venue_leads_needing_verification[3].verification_questions[2]",
+      "span": [
+        24,
+        43
+      ],
+      "excerpt": "candidate Saturdays"
+    }
+  ]
+}

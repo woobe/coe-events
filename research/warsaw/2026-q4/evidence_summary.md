@@ -1,4 +1,4 @@
-# Warsaw 2026 Q4 — Run A Evidence Summary
+# Warsaw September 2026 — Evidence Summary (Sep 14-28 Window)
 
 ## City Metadata
 - city_slug: warsaw-pl
@@ -9,8 +9,8 @@
 - timezone: Europe/Warsaw
 - currency: PLN
 - target_attendance: 50
-- Quarter: 2026 Q4 (Oct 1 – Dec 31 2026)
-- Candidate Saturdays: Oct 3, 10, 17, 24, 31; Nov 7, 14, 21, 28; Dec 5, 12, 19, 26 (13 Saturdays)
+- Target Window: September 14-28, 2026
+- Candidate Saturdays in window: Sep 19, Sep 26 (2 Saturdays)
 
 ## Hub Evidence
 - ETHWarsaw 1000+ builders (ethwarsaw.dev) — web3/Ethereum community hub with physical space (Kolektyw3)
@@ -26,11 +26,11 @@ No active platform coverage in registry; standard web discovery used. Warsaw is 
 ECB 2026-08-18: EUR 1 = USD 1.1576; EUR 1 = PLN 4.3190
 Derived: 1 PLN = USD 0.268048; 1 USD = PLN 3.73122
 
-## Calendar Conflicts (4 records)
-1. **Web3 Warsaw 2026** (Sep 9-10) — related, web3, medium severity. Adjacent to Q4. 5000+ attendees, largest blockchain conference in Eastern Europe.
-2. **Warsaw Home Build 2026** (Oct 21-24) — major_other, construction, medium severity. Overlaps with candidate Saturday Oct 24. Ptak Warsaw Expo.
-3. **Warsaw Industry Week 2026** (Nov 3-5) — major_other, industrial_tech, low severity. Adjacent to candidate Saturday Nov 7. Ptak Warsaw Expo.
-4. **FINTECH Poland Expo 2026** (Nov 17-19) — related, fintech, low severity. Potential audience overlap for AI/web3/quant. Ptak Warsaw Expo.
+## Calendar Conflicts (0 records in Sep 14-28 window)
+No major tech/AI/web3/blockchain events found in the Sep 14-28, 2026 window for Warsaw.
+
+### Nearby Event (outside window, for awareness only)
+- **Web3 Warsaw 2026** (Sep 9-10) — related, web3, low severity. Outside Sep 14-28 window but nearby. 5000+ expected attendees, largest blockchain conference in Eastern Europe. Source: web3warsaw.com. Not included in calendar_conflicts.json as it falls outside the target window.
 
 ## Venues (7 records)
 All venues are leads — no venue has sufficient evidence for shortlist_ready or eligible tier. Key gaps: capacity unknown for all venues, pricing unknown for most, Saturday availability unconfirmed.
@@ -63,7 +63,7 @@ All communities are evidence-backed with own-page or official Meetup sources. No
 6. ETHWarsaw/Kolektyw3 has a physical hub that could serve as venue or community partner — needs direct inquiry.
 
 ## Source Count
-- Calendar: 4 events, 8+ source URLs
+- Calendar: 0 events in window, 1 nearby event noted (Web3 Warsaw)
 - Venues: 7 venues, 7 source URLs
 - Communities: 7 communities, 7 source URLs
 - FX: 1 source (ECB)

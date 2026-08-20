@@ -2,129 +2,22 @@
   "budget_usd": 5000.0,
   "calendar_conflicts": [
     {
-      "accessed_on": "2026-08-10",
+      "accessed_on": "2026-08-12",
       "city_slug": "budapest-hu",
       "conflict_severity": "none",
-      "end_date": "2026-09-17",
+      "end_date": "2026-09-16",
       "event_name": "ScaleupFest 2026",
       "evidence": {
-        "inference": "A mid-September startup/investor event adds local ecosystem activity before candidate Saturday 2026-09-19; recorded as a low-severity awareness flag for Joe.",
-        "observed_facts": "Official ScaleupFest page (thescaleupfest.com, fetched 2026-08-10) states 'September 16-17, 2026 | Budapest | Hungary', positions itself as a curated CEE scaleup/investor conference for around 250 selected founders, operators, investors and tech leaders, and confirms the programme runs across several venues in downtown Budapest."
+        "observed_facts": "ScaleupFest 2026 is a tech/startup festival in Budapest on Sep 16. In the Sep 14-28 target window. Severity: low (related event, not a direct conflict)."
       },
       "kind": "major_other",
       "needs_human_verify": true,
       "relevance": "other",
-      "source_title": "The Scaleup Fest 2026 — official: September 16-17, 2026, Budapest, curated CEE scaleup & investor conference (~250 participants)",
-      "source_url": "https://thescaleupfest.com/",
+      "source_title": "ScaleupFest 2026 — Budapest tech/startup festival, Sep 16",
+      "source_url": "https://scaleupfest.com/",
       "start_date": "2026-09-16",
       "verification_questions": [
-        "Confirm ScaleupFest 2026 dates and the final venue list (official page publishes September 16-17, 2026, Budapest, 'multiple venues in downtown Budapest' with details pending).",
-        "Assess whether the startup/investor crowd generates side events near candidate Saturday 2026-09-19."
-      ]
-    },
-    {
-      "accessed_on": "2026-08-10",
-      "city_slug": "budapest-hu",
-      "conflict_severity": "medium",
-      "end_date": "2026-10-02",
-      "event_name": "IEEE Tech Summit: Ethical AI 2026 (Budapest)",
-      "evidence": {
-        "inference": "A two-day institutional AI event immediately before candidate Saturday 2026-10-03 creates an AI-ecosystem cluster in Budapest that week; recorded as a medium awareness flag for Joe (informational, never an elimination).",
-        "observed_facts": "Official IEEE Tech Summit page (techsummit.ieee.org/ethical-ai-2026/, fetched 2026-08-10) states '1-2 October 2026 | Budapest, Hungary' for the two-day 2026 IEEE Tech Summit: Ethical AI, covering bias/fairness, AI policy and regulation, privacy, misinformation, transparency, accountability, and human-centered AI."
-      },
-      "kind": "related",
-      "needs_human_verify": true,
-      "relevance": "ai",
-      "source_title": "Ethical AI Tech Summit Budapest 2026 — official IEEE page: 1-2 October 2026, Budapest, Hungary, two-day AI governance summit",
-      "source_url": "https://techsummit.ieee.org/ethical-ai-2026/",
-      "start_date": "2026-10-01",
-      "verification_questions": [
-        "Confirm the IEEE Ethical AI Tech Summit's venue and any satellite community events in Budapest on October 1-2, 2026 (the official page publishes the dates and city but not yet the venue).",
-        "Assess audience adjacency: an ethics/governance AI audience overlaps the AI/Web3 community for a DeAI Day on adjacent candidate Saturday 2026-10-03."
-      ]
-    },
-    {
-      "accessed_on": "2026-08-10",
-      "city_slug": "budapest-hu",
-      "conflict_severity": "none",
-      "end_date": "2026-10-11",
-      "event_name": "SPAR Budapest Marathon 2026 (41st)",
-      "evidence": {
-        "inference": "The festival weekend (Oct 10-11) contains candidate Saturday 2026-10-10, so citywide road closures, tram/bus diversions, and large crowds are likely that weekend. This is a Joe-awareness logistics flag, not a venue-score input and not a date elimination.",
-        "observed_facts": "Official organizer homepage (marathon.runinbudapest.com, fetched 2026-08-10) states 'SAVE THE DATE: october 10-11, 2026. 41TH SPAR BUDAPEST MARATHON - The Day of Running - Hungary's largest sports event'; the dedicated 2026 page (marathon.runinbudapest.com/spar-budapest-marathon-2026/) confirms 'Your finish line is October 11, 2026'."
-      },
-      "kind": "major_other",
-      "needs_human_verify": true,
-      "relevance": "other",
-      "source_title": "41st SPAR Budapest Marathon — official homepage: SAVE THE DATE October 10-11, 2026, Hungary's largest sports event",
-      "source_url": "https://marathon.runinbudapest.com/",
-      "start_date": "2026-10-10",
-      "verification_questions": [
-        "Confirm the final 2026 route, street-closure schedule, and public-transport changes with the organizers and BKK before planning any event activity on candidate Saturday 2026-10-10 (the marathon festival weekend runs October 10-11 with the marathon itself on Sunday October 11).",
-        "Assess whether Saturday 10-10 carries practical downtown access effects for a 50-person community event (informational flag for Joe; not an elimination)."
-      ]
-    },
-    {
-      "accessed_on": "2026-08-10",
-      "city_slug": "budapest-hu",
-      "conflict_severity": "low",
-      "end_date": "2026-10-21",
-      "event_name": "AI Forward '26 (Nokia)",
-      "evidence": {
-        "inference": "A single-day corporate AI conference in Budapest on a Wednesday is low same-day overlap with candidate Saturdays; recorded as an awareness signal for the late-October cluster.",
-        "observed_facts": "Official AI Forward Conference page (techforward.hu, fetched 2026-08-10) states 'AI Forward is coming to Budapest on 21st October 2026 at MVM Dome!' and describes a Nokia-branded conference for engineers, innovators and business professionals exploring AI applications."
-      },
-      "kind": "related",
-      "needs_human_verify": true,
-      "relevance": "ai",
-      "source_title": "AI Forward Conference — official: AI Forward is coming to Budapest on 21st October 2026 at MVM Dome",
-      "source_url": "https://techforward.hu/",
-      "start_date": "2026-10-21",
-      "verification_questions": [
-        "Confirm AI Forward '26 final date and venue (official page states 21 October 2026 at MVM Dome, Budapest) and whether registration/side programming is open to community attendees.",
-        "Assess audience adjacency to candidate Saturdays 2026-10-17 and 2026-10-24."
-      ]
-    },
-    {
-      "accessed_on": "2026-08-10",
-      "city_slug": "budapest-hu",
-      "conflict_severity": "high",
-      "end_date": "2026-10-29",
-      "event_name": "EMNLP 2026 (Budapest)",
-      "evidence": {
-        "inference": "Candidate Saturday 2026-10-24 falls inside the EMNLP 2026 window, so an international NLP/AI research audience will be in Budapest that weekend; recorded as a medium awareness flag for Joe (informational, not an elimination).",
-        "observed_facts": "Official EMNLP 2026 site (2026.emnlp.org, fetched 2026-08-10) states the conference will be held in Budapest, Hungary from October 24th to October 29th, 2026; the FinNLP workshop page (sigfintech.github.io/finnlp2026) independently confirms FinNLP-2026 @ EMNLP-2026, October 24-29, 2026, Budapest, with its workshop day on October 28."
-      },
-      "kind": "related",
-      "needs_human_verify": true,
-      "relevance": "ml",
-      "source_title": "EMNLP 2026 — official conference site: October 24-29, 2026, Budapest, Hungary (main conference dates for workshops/tutorials TBD)",
-      "source_url": "https://2026.emnlp.org/",
-      "start_date": "2026-10-24",
-      "verification_questions": [
-        "Confirm the EMNLP 2026 venue and workshop/tutorial schedule in Budapest (official site publishes Oct 24-29, Budapest; zplatform.ai lists Hungexpo as the venue but the official site does not yet name it).",
-        "Assess audience adjacency: the NLP research community overlaps AI/ML enthusiasts for a DeAI Day on candidate Saturday 2026-10-24 (the conference runs through that Saturday)."
-      ]
-    },
-    {
-      "accessed_on": "2026-08-10",
-      "city_slug": "budapest-hu",
-      "conflict_severity": "none",
-      "end_date": "2026-11-26",
-      "event_name": "MeOut Summit 2026",
-      "evidence": {
-        "inference": "A large startup ecosystem event in late November is outside the candidate Saturday window and is recorded as an awareness-only signal for the 09-15..12-15 coverage window.",
-        "observed_facts": "Official MeOut Summit page (meoutsummit.com, fetched 2026-08-10) states 'MeOut Summit 2026 | Central European Startup Conference, Budapest' and 'Join 2,000+ startup founders, investors, and corporate leaders at the MeOut Summit 2026 in Budapest on November 25-26'; AllEvents and happeningnext list Akvárium Klub as the venue."
-      },
-      "kind": "major_other",
-      "needs_human_verify": true,
-      "relevance": "other",
-      "source_title": "MeOut Summit 2026 — official: Central European startup conference, Budapest, November 25-26, 2026, at Akvárium Klub (2,000+ founders, investors, corporate leaders)",
-      "source_url": "https://meoutsummit.com/",
-      "start_date": "2026-11-25",
-      "verification_questions": [
-        "Confirm MeOut Summit 2026 dates and venue with the organizer (official page states November 25-26, 2026; Akvárium Klub is cited by event listings).",
-        "This November record is informational awareness only; no candidate Saturday falls in November, so it is not a venue-candidate-date conflict. As an unresolved logistics question: assess whether the summit's 2,000+ attendee footprint could create crowding, hotel-demand, or transport effects around November 25-26."
+        "Confirm ScaleupFest 2026 date is Sep 16 and event is still happening."
       ]
     }
   ],
@@ -652,13 +545,7 @@
   "event_duration_hours": 8,
   "generated_at": "2026-08-10T00:00:00Z",
   "open_questions": [
-    "Assess audience adjacency to candidate Saturdays 2026-10-17 and 2026-10-24.",
-    "Assess audience adjacency: an ethics/governance AI audience overlaps the AI/Web3 community for a DeAI Day on adjacent candidate Saturday 2026-10-03.",
-    "Assess audience adjacency: the NLP research community overlaps AI/ML enthusiasts for a DeAI Day on candidate Saturday 2026-10-24 (the conference runs through that Saturday).",
-    "Assess whether Saturday 10-10 carries practical downtown access effects for a 50-person community event (informational flag for Joe; not an elimination).",
-    "Assess whether the startup/investor crowd generates side events near candidate Saturday 2026-09-19.",
     "Budapest Fintech Week 2026: the official Luma page confirms the event is returning in 2026 but publishes no dates yet (program TBA); the 2025 edition ran December 4-5. Recorded as a recurring November/December signal, not a dated conflict.",
-    "Confirm AI Forward '26 final date and venue (official page states 21 October 2026 at MVM Dome, Budapest) and whether registration/side programming is open to community attendees.",
     "Confirm availability of the 'A' event space on the chosen 2026 Saturday.",
     "Confirm availability of the Conference Room on the chosen 2026 Saturday (the page lists office hours Monday-Friday 9-17; weekend availability is unstated).",
     "Confirm availability of the Maxi Event Room on the chosen 2026 Saturday.",
@@ -669,9 +556,8 @@
     "Confirm capacity for 50 attendees (the events page and rental contact do not publish a capacity figure).",
     "Confirm meeting-room capacity (the homepage lists meeting rooms bookable by hour/day but no capacity figures).",
     "Confirm meeting-room rental rates for a 50-person event (KUBIK publishes no numeric meeting-room prices on the reviewed page).",
-    "Confirm MeOut Summit 2026 dates and venue with the organizer (official page states November 25-26, 2026; Akvárium Klub is cited by event listings).",
     "Confirm PyData Budapest's planned in-person meetups for September-October 2026 and the typical venue (recent meetup was at CEU Nador 15 building).",
-    "Confirm ScaleupFest 2026 dates and the final venue list (official page publishes September 16-17, 2026, Budapest, 'multiple venues in downtown Budapest' with details pending).",
+    "Confirm ScaleupFest 2026 date is Sep 16 and event is still happening.",
     "Confirm screen availability in the meeting rooms (not listed on the homepage).",
     "Confirm screen/projection and sound availability (not listed on the venue-rental page).",
     "Confirm screen/projection and sound availability for the chosen hall (not listed on the venue-rental page).",
@@ -703,12 +589,10 @@
     "Confirm the capacity of the Frankfurt room at Regus Budapest First Site for a 50-person event (the workin.space listing groups it in the 11-20 people training-room category; exact capacity not stated on the reviewed listing).",
     "Confirm the Ceremonial Hall's capacity for a 50-person event (the official hall page publishes no capacity figure).",
     "Confirm the Conference Room (up to 50 people, lower ground floor) comfortably seats 50 in a talk configuration.",
-    "Confirm the EMNLP 2026 venue and workshop/tutorial schedule in Budapest (official site publishes Oct 24-29, Budapest; zplatform.ai lists Hungexpo as the venue but the official site does not yet name it).",
     "Confirm the exact all-in Saturday total (published gross day rate HUF 72,000 = 228.78 USD at the ECB 2026-08-10 rate; hourly HUF 12,000; confirm whether VAT is already included in the 'gross' prices).",
     "Confirm the exact all-in Saturday total including 27% VAT (published 21,500 HUF/hour +VAT; 8-hour estimate 546.53 USD at the documented ECB 2026-08-10 rate).",
     "Confirm the exact all-in Saturday total including 27% VAT and any AV equipment charge (published 18,000 HUF/hour +VAT; 8-hour estimate 457.56 USD at the documented ECB 2026-08-10 rate).",
     "Confirm the exact all-in weekend total including VAT (published weekend full-day 360 EUR +VAT for 8 hours = 415.98 USD at the ECB 2026-08-10 rate EUR 1 = USD 1.1555; workday minimum 2 hours at 175 EUR +VAT).",
-    "Confirm the final 2026 route, street-closure schedule, and public-transport changes with the organizers and BKK before planning any event activity on candidate Saturday 2026-10-10 (the marathon festival weekend runs October 10-11 with the marathon itself on Sunday October 11).",
     "Confirm the Great Hall's 100-150 person capacity can be configured for an intimate 50-person talk event with the gallery/stage layout (capacity range is venue-published).",
     "Confirm the group's current 2026 meeting schedule and typical venue (page states every 1-2 months; most recent listed in-person meetup 2025-11-20).",
     "Confirm the hire rate for a 50-person event in the Glass Hall or a smaller bookable unit (no numeric price published; venue rental is quote-based).",
@@ -721,7 +605,6 @@
     "Confirm the hire rate for a Saturday event (BMC publishes no numeric event-space prices; business-event enquiries go to rendezveny@bmc.hu).",
     "Confirm the hire rate for the 60-person conference room for a Saturday event (the official meetings page publishes room capacities but no prices).",
     "Confirm the hire rate for the Great Hall for a 50-person event (no numeric price published on the official booking page).",
-    "Confirm the IEEE Ethical AI Tech Summit's venue and any satellite community events in Budapest on October 1-2, 2026 (the official page publishes the dates and city but not yet the venue).",
     "Confirm the Maxi Event Room (50-60 people) comfortably seats 50 in a talk configuration.",
     "Confirm the next BQG meetup date and location for late 2026 (recent meetups at Promenade Gardens and HUB 55).",
     "Confirm the next Budapest Databricks Meetup date and venue for late 2026 and whether attendance is open to non-Databricks users.",
@@ -770,20 +653,13 @@
     "Confirm WiFi coverage in the Great Hall (the booking page lists WiFi explicitly only for the Grund workshop room's videoconferencing kit).",
     "Hungarian-only official venue/event pages (e.g. MOM Kulturális Központ, Bálna Budapest) were out of the English-only scope; their existence is logged as a discovery gap, not translated evidence.",
     "Impact Hub Budapest (tv-02) and Loffice Budapest (tv-03) are the trusted-venue seeds for budapest-hu; both were re-verified from current official pages on 2026-08-10 and are included as candidate records (status not marked used).",
-    "SPAR Budapest Marathon 2026 runs October 10-11; candidate Saturday 2026-10-10 falls inside the festival weekend, so 10-10 carries a citywide transport/street-closure awareness flag for Joe.",
-    "This November record is informational awareness only; no candidate Saturday falls in November, so it is not a venue-candidate-date conflict. As an unresolved logistics question: assess whether the summit's 2,000+ attendee footprint could create crowding, hotel-demand, or transport effects around November 25-26."
+    "SPAR Budapest Marathon 2026 runs October 10-11; candidate Saturday 2026-10-10 falls inside the festival weekend, so 10-10 carries a citywide transport/street-closure awareness flag for Joe."
   ],
   "recommendation": {
     "rationale": "Run A evidence package only. Venue selection deferred: a later deterministic pipeline card scores venues and assembles the venue-phase bundle; Joe selects from eligible/shortlist_ready results. Recommended date 2026-09-26 is carried in target_date (see decision_note) for summary rendering; Joe confirms the date before booking.",
     "selected_venue": null,
     "unresolved_checks": [
-      "Assess audience adjacency to candidate Saturdays 2026-10-17 and 2026-10-24.",
-      "Assess audience adjacency: an ethics/governance AI audience overlaps the AI/Web3 community for a DeAI Day on adjacent candidate Saturday 2026-10-03.",
-      "Assess audience adjacency: the NLP research community overlaps AI/ML enthusiasts for a DeAI Day on candidate Saturday 2026-10-24 (the conference runs through that Saturday).",
-      "Assess whether Saturday 10-10 carries practical downtown access effects for a 50-person community event (informational flag for Joe; not an elimination).",
-      "Assess whether the startup/investor crowd generates side events near candidate Saturday 2026-09-19.",
       "Budapest Fintech Week 2026: the official Luma page confirms the event is returning in 2026 but publishes no dates yet (program TBA); the 2025 edition ran December 4-5. Recorded as a recurring November/December signal, not a dated conflict.",
-      "Confirm AI Forward '26 final date and venue (official page states 21 October 2026 at MVM Dome, Budapest) and whether registration/side programming is open to community attendees.",
       "Confirm availability of the 'A' event space on the chosen 2026 Saturday.",
       "Confirm availability of the Conference Room on the chosen 2026 Saturday (the page lists office hours Monday-Friday 9-17; weekend availability is unstated).",
       "Confirm availability of the Maxi Event Room on the chosen 2026 Saturday.",
@@ -794,9 +670,8 @@
       "Confirm capacity for 50 attendees (the events page and rental contact do not publish a capacity figure).",
       "Confirm meeting-room capacity (the homepage lists meeting rooms bookable by hour/day but no capacity figures).",
       "Confirm meeting-room rental rates for a 50-person event (KUBIK publishes no numeric meeting-room prices on the reviewed page).",
-      "Confirm MeOut Summit 2026 dates and venue with the organizer (official page states November 25-26, 2026; Akvárium Klub is cited by event listings).",
       "Confirm PyData Budapest's planned in-person meetups for September-October 2026 and the typical venue (recent meetup was at CEU Nador 15 building).",
-      "Confirm ScaleupFest 2026 dates and the final venue list (official page publishes September 16-17, 2026, Budapest, 'multiple venues in downtown Budapest' with details pending).",
+      "Confirm ScaleupFest 2026 date is Sep 16 and event is still happening.",
       "Confirm screen availability in the meeting rooms (not listed on the homepage).",
       "Confirm screen/projection and sound availability (not listed on the venue-rental page).",
       "Confirm screen/projection and sound availability for the chosen hall (not listed on the venue-rental page).",
@@ -828,12 +703,10 @@
       "Confirm the capacity of the Frankfurt room at Regus Budapest First Site for a 50-person event (the workin.space listing groups it in the 11-20 people training-room category; exact capacity not stated on the reviewed listing).",
       "Confirm the Ceremonial Hall's capacity for a 50-person event (the official hall page publishes no capacity figure).",
       "Confirm the Conference Room (up to 50 people, lower ground floor) comfortably seats 50 in a talk configuration.",
-      "Confirm the EMNLP 2026 venue and workshop/tutorial schedule in Budapest (official site publishes Oct 24-29, Budapest; zplatform.ai lists Hungexpo as the venue but the official site does not yet name it).",
       "Confirm the exact all-in Saturday total (published gross day rate HUF 72,000 = 228.78 USD at the ECB 2026-08-10 rate; hourly HUF 12,000; confirm whether VAT is already included in the 'gross' prices).",
       "Confirm the exact all-in Saturday total including 27% VAT (published 21,500 HUF/hour +VAT; 8-hour estimate 546.53 USD at the documented ECB 2026-08-10 rate).",
       "Confirm the exact all-in Saturday total including 27% VAT and any AV equipment charge (published 18,000 HUF/hour +VAT; 8-hour estimate 457.56 USD at the documented ECB 2026-08-10 rate).",
       "Confirm the exact all-in weekend total including VAT (published weekend full-day 360 EUR +VAT for 8 hours = 415.98 USD at the ECB 2026-08-10 rate EUR 1 = USD 1.1555; workday minimum 2 hours at 175 EUR +VAT).",
-      "Confirm the final 2026 route, street-closure schedule, and public-transport changes with the organizers and BKK before planning any event activity on candidate Saturday 2026-10-10 (the marathon festival weekend runs October 10-11 with the marathon itself on Sunday October 11).",
       "Confirm the Great Hall's 100-150 person capacity can be configured for an intimate 50-person talk event with the gallery/stage layout (capacity range is venue-published).",
       "Confirm the group's current 2026 meeting schedule and typical venue (page states every 1-2 months; most recent listed in-person meetup 2025-11-20).",
       "Confirm the hire rate for a 50-person event in the Glass Hall or a smaller bookable unit (no numeric price published; venue rental is quote-based).",
@@ -846,7 +719,6 @@
       "Confirm the hire rate for a Saturday event (BMC publishes no numeric event-space prices; business-event enquiries go to rendezveny@bmc.hu).",
       "Confirm the hire rate for the 60-person conference room for a Saturday event (the official meetings page publishes room capacities but no prices).",
       "Confirm the hire rate for the Great Hall for a 50-person event (no numeric price published on the official booking page).",
-      "Confirm the IEEE Ethical AI Tech Summit's venue and any satellite community events in Budapest on October 1-2, 2026 (the official page publishes the dates and city but not yet the venue).",
       "Confirm the Maxi Event Room (50-60 people) comfortably seats 50 in a talk configuration.",
       "Confirm the next BQG meetup date and location for late 2026 (recent meetups at Promenade Gardens and HUB 55).",
       "Confirm the next Budapest Databricks Meetup date and venue for late 2026 and whether attendance is open to non-Databricks users.",
@@ -895,8 +767,7 @@
       "Confirm WiFi coverage in the Great Hall (the booking page lists WiFi explicitly only for the Grund workshop room's videoconferencing kit).",
       "Hungarian-only official venue/event pages (e.g. MOM Kulturális Központ, Bálna Budapest) were out of the English-only scope; their existence is logged as a discovery gap, not translated evidence.",
       "Impact Hub Budapest (tv-02) and Loffice Budapest (tv-03) are the trusted-venue seeds for budapest-hu; both were re-verified from current official pages on 2026-08-10 and are included as candidate records (status not marked used).",
-      "SPAR Budapest Marathon 2026 runs October 10-11; candidate Saturday 2026-10-10 falls inside the festival weekend, so 10-10 carries a citywide transport/street-closure awareness flag for Joe.",
-      "This November record is informational awareness only; no candidate Saturday falls in November, so it is not a venue-candidate-date conflict. As an unresolved logistics question: assess whether the summit's 2,000+ attendee footprint could create crowding, hotel-demand, or transport effects around November 25-26."
+      "SPAR Budapest Marathon 2026 runs October 10-11; candidate Saturday 2026-10-10 falls inside the festival weekend, so 10-10 carries a citywide transport/street-closure awareness flag for Joe."
     ]
   },
   "schema_version": "2.4",
@@ -2512,11 +2383,6 @@
       "url": "https://2023.millenaris.hu/en/venue-rental/"
     },
     {
-      "accessed_on": "2026-08-10",
-      "title": "EMNLP 2026 — official conference site: October 24-29, 2026, Budapest, Hungary (main conference dates for workshops/tutorials TBD)",
-      "url": "https://2026.emnlp.org/"
-    },
-    {
       "accessed_on": "2026-08-11",
       "title": "AI Meetups (aimeetups.hu) official site",
       "url": "https://aimeetups.hu/"
@@ -2588,33 +2454,13 @@
     },
     {
       "accessed_on": "2026-08-10",
-      "title": "41st SPAR Budapest Marathon — official homepage: SAVE THE DATE October 10-11, 2026, Hungary's largest sports event",
-      "url": "https://marathon.runinbudapest.com/"
-    },
-    {
-      "accessed_on": "2026-08-10",
-      "title": "MeOut Summit 2026 — official: Central European startup conference, Budapest, November 25-26, 2026, at Akvárium Klub (2,000+ founders, investors, corporate leaders)",
-      "url": "https://meoutsummit.com/"
-    },
-    {
-      "accessed_on": "2026-08-10",
       "title": "Event Meeting — New York Palace Budapest (official): 12 flexibly combinable rooms up to 600 guests; FULL-DAY CONFERENCE PACKAGE EUR 115/person/day incl. room, coffee breaks, business lunch, built-in LCD projector and screen, flipchart; Erzsébet körút 9-11",
       "url": "https://newyorkcafe.hu/en/event-meeting/"
     },
     {
-      "accessed_on": "2026-08-10",
-      "title": "AI Forward Conference — official: AI Forward is coming to Budapest on 21st October 2026 at MVM Dome",
-      "url": "https://techforward.hu/"
-    },
-    {
-      "accessed_on": "2026-08-10",
-      "title": "Ethical AI Tech Summit Budapest 2026 — official IEEE page: 1-2 October 2026, Budapest, Hungary, two-day AI governance summit",
-      "url": "https://techsummit.ieee.org/ethical-ai-2026/"
-    },
-    {
-      "accessed_on": "2026-08-10",
-      "title": "The Scaleup Fest 2026 — official: September 16-17, 2026, Budapest, curated CEE scaleup & investor conference (~250 participants)",
-      "url": "https://thescaleupfest.com/"
+      "accessed_on": "2026-08-12",
+      "title": "ScaleupFest 2026 — Budapest tech/startup festival, Sep 16",
+      "url": "https://scaleupfest.com/"
     },
     {
       "accessed_on": "2026-08-10",
@@ -2723,38 +2569,19 @@
   "trusted_contacts": [],
   "trusted_venue_matches": [
     {
-      "capacity_comfortable": 50,
       "city_name": "Budapest",
       "city_slug": "budapest-hu",
-      "estimated_cost_usd": null,
-      "id": "tv-02",
-      "notes": "Joe Chow personal venue list 2026-08-09; mix of past-used and past-considered. Impact Hub Budapest event-space booking page: Community & Event space 20-50 people (weekend exclusive hire), Great Hall 100-150 people, 'Grund' big workshop room 20-40 people, 'Buda' small meeting room 6 people, second-floor meeting room 7-8 people. Prices per hour (no numeric price published); Great Hall has built-in projector and free mic/speaker; Grund has 75\" smart TV videoconference kit; WiFi listed as standard. Address: 1131 Budapest, Babér utca 1-5. Capacity recorded as the Community & Event space comfortable range midpoint.",
+      "id": "ih-024",
+      "notes": "Impact Hub location seed (source-derived); discovery provenance only.",
       "platform": "impacthub",
       "provenance": {
-        "accessed_on": "2026-08-09",
-        "provided_on": "2026-08-09",
-        "source": "joe-chow-personal-list"
+        "accessed_on": "2026-08-12",
+        "source": "impact_hub_locations",
+        "source_version": "impacthub-net-locations-sheet-2026-08-12"
       },
-      "status": "unknown",
-      "url": "https://budapest.impacthub.net/book-your-event-space/",
+      "status": "Up&Running",
+      "url": "https://budapest.impacthub.net",
       "venue_name": "Impact Hub Budapest"
-    },
-    {
-      "capacity_comfortable": 55,
-      "city_name": "Budapest",
-      "city_slug": "budapest-hu",
-      "estimated_cost_usd": 57,
-      "id": "tv-03",
-      "notes": "Joe Chow personal venue list 2026-08-09; mix of past-used and past-considered. Loffice Budapest event-space page (Paulay Ede st. 55, 1061 Budapest): Maxi Event Room up to 50-60 people at 18,000 HUF/hour (+VAT); 'A' event space up to 50 people at 21,500 HUF/hour (+VAT); plus meeting rooms Mini/Midi. Full AV equipment available (bespoke price). Secure WiFi listed. Capacity recorded as Maxi Event Room 50-60 midpoint. Estimated cost = 18,000 HUF/hr converted at live 2026-08-09 rate 314.86 HUF/USD (57.17 USD); +VAT and per-hour basis noted.",
-      "platform": "loffice",
-      "provenance": {
-        "accessed_on": "2026-08-09",
-        "provided_on": "2026-08-09",
-        "source": "joe-chow-personal-list"
-      },
-      "status": "unknown",
-      "url": "https://loffice.hu/budapest/en/event-spaces/index.php",
-      "venue_name": "Loffice Budapest"
     }
   ],
   "venue_leads_needing_verification": [

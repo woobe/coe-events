@@ -1,0 +1,41 @@
+# Sources: Budapest (budapest-hu)
+
+37 source(s) referenced by this event plan.
+
+1. [Venue rental — Millenáris (official): Great Hall (B), Glass Hall (D), National Dance Theatre; open daily 06:00-23:00; Kis Rókus utca 16-20, 1024 Budapest; capacities approx. 600-800 (Glass Hall) to 2,500 (Great Hall)](https://2023.millenaris.hu/en/venue-rental/) — accessed 2026-08-10
+2. [AI Meetups (aimeetups.hu) official site](https://aimeetups.hu/) — accessed 2026-08-11
+3. [Event venue — Akvárium Klub Budapest (official): Aranyhall Conference Center with two 100-seat halls (partitionable), event capacities from 50 to 1,000 guests, total venue capacity 2,100; Erzsébet tér 12](https://akvariumklub.hu/en/event-venue/) — accessed 2026-08-10
+4. [BMC House — Event Rooms (official): Corner Hall 61 m2, 40 theatre / 30 rectangle seats, built-in sound and projection equipment; Rooftop Hall 112 m2, 60 theatre; Concert Hall 285 m2, 295 theatre; Mátyás utca 8, 1093 Budapest](https://bmc.hu/en/about-us) — accessed 2026-08-10
+5. [Meeting rooms for rent in Budapest — workin.space (booking platform): Regus BUDAPEST First Site, Kossuth Lajos utca 7-9, 1053; Frankfurt room listed in the 11-20 people training category at HUF 10,900/hour, HUF 60,894/day (excl. VAT) with Wi-Fi, Screen, Reception](https://book.workin.space/en/hungary/budapest/meeting-room) — accessed 2026-08-10
+6. [AI Tinkerers Budapest chapter page](https://budapest.aitinkerers.org/) — accessed 2026-08-11
+7. [Book your Event Space — Impact Hub Budapest (official): Community & Event space 20-50 people with weekend exclusive hire; free flip charts, projectors, speaker/microphone; address 1131 Budapest, Babér utca 1-5](https://budapest.impacthub.net/book-your-event-space/) — accessed 2026-08-10
+8. [Várkert Bazaar — Event Venues (Budapest Party Service, official venue page): Multifunctional Event Hall 900 m2 (500-800 guests), Screening Room 130 m2 (80-120 guests), Event Hall Foyer 880 m2, Foundry Courtyard outdoor 200-500; conferences, receptions, corporate events](https://budapestpartyservice.hu/en/rendezvenyhelyszinek/varkert-bazaar/) — accessed 2026-08-10
+9. [Comets of Web3 official site](https://cometsweb3.space/) — accessed 2026-08-11
+10. [Event space — Create.26 Budapest (official): capacity 10-150 people; Full House 90 theatre, South 50 theatre, North 25 theatre; 1 multimedia projector, modern sound system, streaming/live/video-recording support, catering and meeting rooms on request; Nagymező utca 26, 1065 Budapest](https://create26.hu/en/event-space/) — accessed 2026-08-10
+11. [Meeting Room & Office Rental Budapest — Eco Office (official): Large Meeting Room 2-14 people, 6,000-8,000 HUF/hour, projector + projection screen, flipchart, Gigabit Wi-Fi, unlimited coffee/tea/water, open 24/7, no maximum booking time](https://eco-office.hu/en/meeting-rooms/) — accessed 2026-08-10
+12. [Global AI Budapest chapter page (Global AI Community)](https://globalai.community/chapters/budapest/) — accessed 2026-08-11
+13. [Meeting rooms — KAPTÁR Coworking Budapest (official): Event space 25-50 ppl, available after 6pm weekdays or weekends; weekend full day (8h) 360 EUR +VAT, half day 210 EUR +VAT; enterprise-level WiFi; Révay köz 4, 1065 Budapest](https://kaptarbudapest.hu/en/meeting-rooms/) — accessed 2026-08-10
+14. [KUBIK Coworking Budapest (official): coworking, meeting rooms bookable by hour or whole day, high-speed WiFi, reception weekdays 9-18, 24/7 member access; Jászai Mari tér 5-6, 1137 Budapest](https://kubik.hu/en/) — accessed 2026-08-10
+15. [Event Spaces — Loffice Budapest (official): Maxi Event Room 18,000 HUF/hour (+VAT), up to 50-60 people, street-front bright event space, secure WiFi, Full AV equipment at bespoke price; Paulay Ede st. 55, 1061 Budapest](https://loffice.hu/budapest/en/event-spaces/index.php) — accessed 2026-08-10
+16. [Event Meeting — New York Palace Budapest (official): 12 flexibly combinable rooms up to 600 guests; FULL-DAY CONFERENCE PACKAGE EUR 115/person/day incl. room, coffee breaks, business lunch, built-in LCD projector and screen, flipchart; Erzsébet körút 9-11](https://newyorkcafe.hu/en/event-meeting/) — accessed 2026-08-10
+17. [ScaleupFest 2026 — Budapest tech/startup festival, Sep 16](https://scaleupfest.com/) — accessed 2026-08-12
+18. [Ceremonial Hall — Pesti Vigadó (official venue page): second-floor historic hall for concerts, cultural events, conferences, standing/seated receptions and gala dinners; Vigadó tér 2, 1051 Budapest](https://vir.vigado.hu/web/en/135) — accessed 2026-08-10
+19. [Venue rental — Winehub (official): Budapest's newest special event venue in the former Goldberger textile factory, total capacity 200-250 people, in-house kitchen/bistro/fine dining catering, quote on request](https://winehub.hu/venue-rental/) — accessed 2026-08-10
+20. [Event management and renting — A38 Ship (official): Bistro standing 110/seated 90, Schweppes Terrace standing 80/seated 50, Concert Hall standing 400/seated 180-200, banquet and mixed layouts; hot/cold catering, built-in sound and lighting; open Mon-Sun 8-22](https://www.a38.hu/en/event-organizing) — accessed 2026-08-10
+21. [Meeting room rental — bee@work ANKER (official): Conference Room up to 50 people (lower ground floor) HUF 12,000/hour gross, HUF 72,000/day gross; meeting rooms for 2-60 people; 100/100 fiber internet; Anker köz 2-4, 1061 Budapest](https://www.bee-at-work.hu/en/meeting-room-rental) — accessed 2026-08-10
+22. [Events — Brody House Budapest (official): private events & space rental (events@brody.house), galleries/rooms across the house; Bródy Sándor utca 10, 1088 Budapest](https://www.brody.house/events) — accessed 2026-08-10
+23. [Danubius Hotel Hungaria City Center — Meetings (official): 12 event rooms, 500 largest room capacity, 455 m2 largest room size; rooms from 60 to 500 max capacity; Rákóczi út 90, 1074 Budapest](https://www.danubiushotels.com/en/our-hotels-budapest/hotel-hungaria-city-center/events-and-meetings) — accessed 2026-08-10
+24. [Budapest dataSTREAM Meetup Series group page (Meetup)](https://www.meetup.com/Budapest-dataSTREAM-Meetup-Series/) — accessed 2026-08-11
+25. [AI CEE (Budapest) Meetup Group page (Meetup)](https://www.meetup.com/ai-cee-budapest-meetup-group/) — accessed 2026-08-11
+26. [Data Natives, Budapest group page (Meetup)](https://www.meetup.com/big-data-budapest/) — accessed 2026-08-11
+27. [Budapest Data & Analytics Meetup group page (Meetup)](https://www.meetup.com/big-data-meetup-budapest/) — accessed 2026-08-11
+28. [ShareTech | AI & DeepTech group page (Meetup)](https://www.meetup.com/budapest-ai-hub/) — accessed 2026-08-11
+29. [Budapest Artificial Intelligence Meetup group page (Meetup)](https://www.meetup.com/budapest-artificial-intelligence-meetup/) — accessed 2026-08-11
+30. [Budapest Databricks Meetup Group page (Meetup)](https://www.meetup.com/budapest-databricks-meetup-group/) — accessed 2026-08-11
+31. [Budapest Quant Group group page (Meetup)](https://www.meetup.com/budapest-quant-group/) — accessed 2026-08-11
+32. [Budapest Users of R Network group page (Meetup)](https://www.meetup.com/budapest-users-of-r-network/) — accessed 2026-08-11
+33. [Budapest Data Science Meetup group page (Meetup)](https://www.meetup.com/budapest_data_science/) — accessed 2026-08-11
+34. [Budapest Artificial Intelligence Meetup Group page (Meetup)](https://www.meetup.com/meetup-group-wgkpuftl/) — accessed 2026-08-11
+35. [PyData Budapest group page (Meetup)](https://www.meetup.com/pydata-budapest/) — accessed 2026-08-11
+36. [R-Ladies Budapest group page (Meetup)](https://www.meetup.com/rladies-budapest/) — accessed 2026-08-11
+37. [Turbine AI Meetups - Budapest group page (Meetup)](https://www.meetup.com/turbine-ai-meetups/) — accessed 2026-08-11
