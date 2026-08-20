@@ -1,0 +1,33 @@
+{
+  "scanner_version": "1.0.0",
+  "rules_version": "v1",
+  "invocation": {
+    "project_root": ".",
+    "quarter": "2026-q4",
+    "city": "budapest",
+    "generated_at": "2026-08-20",
+    "report": "/home/joe/repo_dev/coe-events/research/budapest/2026-q4/release_gate_reports/.bundle-8/scan_event_output.json",
+    "surface": "both"
+  },
+  "concrete_bundle": "research/budapest/2026-q4/.bundle-8",
+  "event_plan_hash": "2a3245fec5c7ed66d48c3eed4986c92c5f65b7482524f461d26abf818292bb79",
+  "temporary_render_hash": "49430c1f59de73eacce193e4ee5a2788975f1b7f9e64394448529954dba07990",
+  "canonical_summary": {
+    "path": "/home/joe/repo_dev/coe-events/summary/2026-q4-budapest-summary.html",
+    "before": {
+      "state": "present",
+      "sha256": "48f4b934bf0cc93591e747e0e4451c7f232bc537d81b2f4c09df9ed720926d4f"
+    },
+    "after": {
+      "state": "present",
+      "sha256": "48f4b934bf0cc93591e747e0e4451c7f232bc537d81b2f4c09df9ed720926d4f"
+    },
+    "unchanged": true
+  },
+  "surfaces_requested": [
+    "html",
+    "source"
+  ],
+  "finding_count": 0,
+  "findings": []
+}

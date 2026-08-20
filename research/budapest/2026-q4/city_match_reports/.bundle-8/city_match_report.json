@@ -1,8 +1,8 @@
 {
-  "bundle_version": 2,
+  "bundle_version": 8,
   "clarification_log": null,
-  "event_plan_sha256": "sha256:e3aa685c2da87491ea54a1e5313426c914f16718b37de04aca7a2f46932f79fa",
-  "input_fingerprint": "sha256:549363dc1591533849d5ffe1577d604f64eb46a1026d68c4a874472327990ff5",
+  "event_plan_sha256": "sha256:2a3245fec5c7ed66d48c3eed4986c92c5f65b7482524f461d26abf818292bb79",
+  "input_fingerprint": "sha256:139327b3dc7f31eee3250ef1b2c62cd352e4d7840095380a7a00aa855554ed80",
   "match_mode": "tiered",
   "new_city_proposals": [],
   "records": [
@@ -472,23 +472,30 @@
       "venue_name": "Impact Hub Bucharest"
     },
     {
-      "candidates": [],
+      "candidates": [
+        {
+          "country_code": "HU",
+          "name": "Budapest",
+          "region": "Europe",
+          "slug": "budapest-hu"
+        }
+      ],
       "clarification_reference": null,
-      "confidence": null,
+      "confidence": 1.0,
       "geography": {
         "country_code": "HU",
         "region": "Europe"
       },
-      "include": false,
+      "include": true,
       "labels": [
         "Budapest"
       ],
-      "outcome": "no_match",
+      "outcome": "matched",
       "record_id": "ih-024",
       "source": "impact_hub_locations",
-      "tier": null,
-      "triggering_alias": null,
-      "triggering_normalized": null,
+      "tier": 1,
+      "triggering_alias": "Budapest",
+      "triggering_normalized": "budapest",
       "venue_name": "Impact Hub Budapest"
     },
     {
@@ -1132,28 +1139,21 @@
       "venue_name": "Impact Hub Liepaja"
     },
     {
-      "candidates": [
-        {
-          "country_code": "PT",
-          "name": "Lisbon",
-          "region": "Europe",
-          "slug": "lisbon-pt"
-        }
-      ],
+      "candidates": [],
       "clarification_reference": null,
-      "confidence": 1.0,
+      "confidence": null,
       "geography": {
         "country_code": "PT",
         "region": "Europe"
       },
-      "include": true,
+      "include": false,
       "labels": [
         "Lisbon"
       ],
-      "outcome": "matched",
+      "outcome": "no_match",
       "record_id": "ih-057",
       "source": "impact_hub_locations",
-      "tier": 1,
+      "tier": null,
       "triggering_alias": "Lisbon",
       "triggering_normalized": "lisbon",
       "venue_name": "Impact Hub Lisbon"
@@ -3019,13 +3019,13 @@
       "venue_name": "Impact Hub Saigon | Coming Soon"
     }
   ],
-  "registry_hash": "sha256:3c5c6eb008ead467badbe92e5f491b6f1427eb62d65156d970537f8be26545e3",
+  "registry_hash": "sha256:3ba1d74f37e7f685d41a348ca68128167087a8e8bd3a5426f08aa79d94d49d09",
   "report_version": 1,
   "target_city": {
-    "country_code": "PT",
-    "name": "Lisbon",
+    "country_code": "HU",
+    "name": "Budapest",
     "region": "Europe",
-    "slug": "lisbon-pt"
+    "slug": "budapest-hu"
   },
   "transaction_format_version": 1,
   "unmatched_labels": [
@@ -3230,13 +3230,6 @@
         "ih-023"
       ],
       "label": "bucharest",
-      "venue_count": 1
-    },
-    {
-      "distinct_venue_ids": [
-        "ih-024"
-      ],
-      "label": "budapest",
       "venue_count": 1
     },
     {
@@ -3566,6 +3559,13 @@
         "ih-056"
       ],
       "label": "liepaja",
+      "venue_count": 1
+    },
+    {
+      "distinct_venue_ids": [
+        "ih-057"
+      ],
+      "label": "lisbon",
       "venue_count": 1
     },
     {

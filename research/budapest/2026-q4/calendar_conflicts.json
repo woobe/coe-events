@@ -15,7 +15,100 @@
       "Confirm ScaleupFest 2026 date is Sep 16 and event is still happening."
     ],
     "evidence": {
-      "observed_facts": "ScaleupFest 2026 is a tech/startup festival in Budapest on Sep 16. In the Sep 14-28 target window. Severity: low (related event, not a direct conflict)."
+      "observed_facts": "ScaleupFest 2026 is a tech/startup festival in Budapest on Sep 16."
+    }
+  },
+  {
+    "event_name": "SPAR Budapest Marathon 2026 (41st)",
+    "city_slug": "budapest-hu",
+    "start_date": "2026-10-10",
+    "end_date": "2026-10-10",
+    "kind": "major_other",
+    "relevance": "other",
+    "conflict_severity": "none",
+    "source_url": "https://www.budapestmarathon.hu/",
+    "source_title": "SPAR Budapest Marathon 2026 — 41st edition, Oct 10",
+    "accessed_on": "2026-08-12",
+    "needs_human_verify": false,
+    "verification_questions": [],
+    "evidence": {
+      "observed_facts": "SPAR Budapest Marathon is an annual marathon event. Road closures may affect city logistics on Oct 10."
+    }
+  },
+  {
+    "event_name": "IEEE Tech Summit: Ethical AI 2026 (Budapest)",
+    "city_slug": "budapest-hu",
+    "start_date": "2026-10-01",
+    "end_date": "2026-10-01",
+    "kind": "related",
+    "relevance": "ai",
+    "conflict_severity": "medium",
+    "source_url": "https://www.ieee.org/events/tech-summit-ethical-ai-2026",
+    "source_title": "IEEE Tech Summit: Ethical AI 2026 — Budapest, Oct 1",
+    "accessed_on": "2026-08-12",
+    "needs_human_verify": true,
+    "verification_questions": [
+      "Confirm IEEE Tech Summit: Ethical AI 2026 date and venue in Budapest. Assess audience overlap with DeAI Day."
+    ],
+    "evidence": {
+      "observed_facts": "IEEE Tech Summit: Ethical AI 2026 is an AI ethics conference in Budapest on Oct 1. Directly relevant to AI audience. Medium conflict."
+    }
+  },
+  {
+    "event_name": "AI Forward '26 (Nokia)",
+    "city_slug": "budapest-hu",
+    "start_date": "2026-10-21",
+    "end_date": "2026-10-21",
+    "kind": "related",
+    "relevance": "ai",
+    "conflict_severity": "low",
+    "source_url": "https://www.nokia.com/about-us/events/ai-forward-26/",
+    "source_title": "AI Forward '26 (Nokia) — Budapest, Oct 21",
+    "accessed_on": "2026-08-12",
+    "needs_human_verify": true,
+    "verification_questions": [
+      "Confirm AI Forward '26 date and venue. Is it a public event or Nokia-internal?"
+    ],
+    "evidence": {
+      "observed_facts": "AI Forward '26 is a Nokia AI event in Budapest on Oct 21. May be internal/invite-only."
+    }
+  },
+  {
+    "event_name": "EMNLP 2026 (Budapest)",
+    "city_slug": "budapest-hu",
+    "start_date": "2026-10-24",
+    "end_date": "2026-10-29",
+    "kind": "related",
+    "relevance": "ml",
+    "conflict_severity": "high",
+    "source_url": "https://2026.emnlp.org/",
+    "source_title": "EMNLP 2026 — Empirical Methods in NLP, Oct 24-29, Budapest",
+    "accessed_on": "2026-08-12",
+    "needs_human_verify": true,
+    "verification_questions": [
+      "Confirm EMNLP 2026 dates and Budapest venue. Assess: NLP/ML researchers in town = potential speaker/attendee pool for DeAI Day. High conflict due to same-city same-week overlap with academic ML audience."
+    ],
+    "evidence": {
+      "observed_facts": "EMNLP 2026 is a top-tier NLP/ML conference in Budapest, Oct 24-29. Major academic ML event. High conflict: same city, overlapping week, ML researchers in town."
+    }
+  },
+  {
+    "event_name": "MeOut Summit 2026",
+    "city_slug": "budapest-hu",
+    "start_date": "2026-11-25",
+    "end_date": "2026-11-25",
+    "kind": "major_other",
+    "relevance": "other",
+    "conflict_severity": "none",
+    "source_url": "https://meout.com/summit-2026",
+    "source_title": "MeOut Summit 2026 — Budapest, Nov 25",
+    "accessed_on": "2026-08-12",
+    "needs_human_verify": false,
+    "verification_questions": [
+      "Confirm MeOut Summit 2026 date and venue. Assess logistics impact on Budapest city center on Nov 25."
+    ],
+    "evidence": {
+      "observed_facts": "MeOut Summit is a startup/tech event in Budapest on Nov 25. Not directly related to AI/Web3."
     }
   }
 ]

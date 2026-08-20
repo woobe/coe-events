@@ -17,15 +17,15 @@
 - Eligible venues: 0; shortlist-ready: 5; leads: 3
 - Speaker candidates: deferred to Run B after venue selection
 - Calendar awareness: 2 record(s) — 0 related-event opportunity/relevance, 2 major-city logistics — informational, never eliminations
-- Open questions: 56
+- Open questions: 54
 - Recommendation: none selected yet
 
 ## Calendar flags for Joe — informational, not eliminations
 
 Calendar awareness has two categories in schema 2.4: related-event opportunity/relevance and major-city logistics. Neither category scores, tiers, selects, or rejects a venue; these flags are awareness only.
 
-- Portugal Tech Week 2026 — 2026-11-06 to 2026-11-15 (major-city logistics) — [Portugal Tech Week 2026 — Official: November 6-15, 2026; largest decentralized tech event in Portugal, +300 events in +20 cities](https://portugaltechweek.com/). This is a logistics awareness flag for Joe's decision; it never removes the date automatically.
-- Web Summit 2026 — 2026-11-09 to 2026-11-12 (major-city logistics) — [Web Summit 2026 — Official: November 9-12, 2026, MEO Arena, Lisbon; 70,000+ attendees from 160+ countries](https://websummit.com/web-summit-2026/). This is a logistics awareness flag for Joe's decision; it never removes the date automatically.
+- Portugal Tech Week 2026 — 2026-11-06 to 2026-11-15 (major-city logistics) — [Portugal Tech Week 2026 — Nationwide tech week, Nov 6-15](https://portugaltechweek.com/). This is a logistics awareness flag for Joe's decision; it never removes the date automatically.
+- Web Summit 2026 — 2026-11-09 to 2026-11-12 (major-city logistics) — [Web Summit 2026 — November 9-12, MEO Arena, Lisbon; 70,000+ attendees from 160+ countries](https://websummit.com/web-summit-2026/). This is a logistics awareness flag for Joe's decision; it never removes the date automatically.
 
 ## Venue Shortlist (eligible, ranked)
 
@@ -220,7 +220,6 @@ Calendar awareness has two categories in schema 2.4: related-event opportunity/r
 ## Open Questions
 
 - Assess logistics impact on Lisbon city center during Nov 9-12 (transport, hotel demand, road access, venue availability).
-- Assess logistics impact on Lisbon during Nov 6-15 (300+ events across 20+ cities, potential venue demand).
 - Assess whether Web Summit week (Nov 9-12) creates a side-event opportunity for a DeAI Day audience synergy.
 - Assess whether Web Summit week creates a side-event opportunity for a DeAI Day audience synergy.
 - Confirm availability on the chosen 2026 Saturday for each shortlisted venue (Impact Hub Lisbon, Second Home, Village Underground, Avila Spaces, Heden).
@@ -248,10 +247,9 @@ Calendar awareness has two categories in schema 2.4: related-event opportunity/r
 - Confirm member count and whether they are open to co-hosting.
 - Confirm Mindstone Lisbon's current event cadence and venues for late 2026.
 - Confirm Neural Networkers Lisbon's current event cadence and venues for late 2026.
-- Confirm Portugal Tech Week 2026 dates remain November 6-15.
+- Confirm Portugal Tech Week 2026 dates and assess logistics impact on Lisbon city center (transport, hotel demand, road access) during Nov 6-15.
 - Confirm Portugal Tech Week 2026 logistics impact on Lisbon during Nov 6-15 (300+ events across 20+ cities, potential venue demand).
 - Confirm pricing for a full-day Saturday event rental.
-- Confirm PTW Palace programming in Lisbon during Nov 9-13 (talks, coworking, networking, music sessions, Future Tech Cinema Festival).
 - Confirm PyData Lisbon's current event cadence and venues for late 2026.
 - Confirm screen/projector availability in Impact Hall.
 - Confirm screen/projector availability in the event space.

@@ -62,8 +62,8 @@ Generated from the event plan for 2026-11-14
 
 ## Calendar Note (informational — never a date removal)
 
-- Related-event opportunity/relevance to review before confirming the date: Web3 Warsaw 2026, FINTECH Poland Expo 2026.
-- Major-city logistics to verify before confirming the date: Warsaw Home Build 2026, Warsaw Industry Week 2026.
+- Related-event opportunity/relevance to review before confirming the date: Agent Conf 2026, FINTECH Poland Expo 2026.
+- Major-city logistics to verify before confirming the date: Warsaw Tech Week 2026, Warsaw Home Build 2026.
 - Joe decides all date conflicts himself; calendar flags never remove the date automatically.
 
 ## Community Verification (manual review)

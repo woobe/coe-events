@@ -5,15 +5,15 @@
 1. [Meeting rooms for rent in Varsovie - 70+ rooms from 481 PLN/day | workin.space](https://book.workin.space/en/poland/warsaw/meeting-room) — accessed 2026-08-18
 2. [Event Space Warsaw | Business & Networking Events | CIC](https://cic.com/warsaw/event-spaces/) — accessed 2026-08-18
 3. [ETHWarsaw - Disruptive tech community](https://ethwarsaw.dev/) — accessed 2026-08-18
-4. [The Largest Industrial Trade Fair in Poland - Warsaw Industry Week 2026](https://industryweek.pl/en/) — accessed 2026-08-18
+4. [FINTECH Poland Expo 2026 — Fintech trade fair, Nov 17-19](https://fintechpoland.pl/) — accessed 2026-08-18
 5. [AI Events in Poland | AI Tinkerers Meetups 2026](https://poland.aitinkerers.org/) — accessed 2026-08-18
 6. [ETHWarsaw Telegram Group](https://t.me/joinethwarsaw) — accessed 2026-08-18
 7. [Varso Place - A unique place in the center of Warsaw - Event space for rent](https://varso.com/en/leasing/event-space-for-rent) — accessed 2026-08-18
 8. [Warsaw.AI – Warsaw.AI community](https://warsaw.ai/) — accessed 2026-08-18
 9. [Impact Hub Warsaw](https://warsaw.impacthub.net/) — accessed 2026-08-18
-10. [International Trade Fair for Building and Finishing Materials](https://warsawbuild.eu/en/) — accessed 2026-08-18
-11. [FINTECH Poland Expo - Ptak Warsaw Expo](https://warsawexpo.eu/en/fair-calendar/fintech-poland-expo/) — accessed 2026-08-18
-12. [Web3 Warsaw – Conference & Event](https://web3warsaw.com/) — accessed 2026-08-18
+10. [Agent Conf 2026 — Europe's first major conference for engineers building agentic systems, Sep 17-18, Crowne Plaza Warsaw](https://www.eventbrite.com/e/agent-conf-2026-tickets-1989991661629) — accessed 2026-08-20
+11. [Warsaw Tech Week 2026 — International Trade Fair of Technologies and Innovations, Sep 22-24, PTAK Warsaw Expo](https://www.eventbrite.com/e/warsaw-tech-week-tickets-1986300787124) — accessed 2026-08-20
+12. [Warsaw Home Build 2026 — Construction and interior trade fair, Oct 21-24](https://www.homebuild.pl/en/) — accessed 2026-08-18
 13. [Mindstone Warsaw AI Community | Meetup](https://www.meetup.com/mindstone-warsaw-ai-community/) — accessed 2026-08-18
 14. [Warsaw AI Meetup Group | Meetup](https://www.meetup.com/warsaw-ai-meetup-group/) — accessed 2026-08-18
 15. [Web3 Devs Poland | Meetup](https://www.meetup.com/web3-devs-poland/) — accessed 2026-08-18

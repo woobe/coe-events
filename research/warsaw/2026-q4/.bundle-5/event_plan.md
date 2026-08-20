@@ -17,17 +17,17 @@
 - Eligible venues: 0; shortlist-ready: 0; leads: 7
 - Speaker candidates: deferred to Run B after venue selection
 - Calendar awareness: 4 record(s) — 2 related-event opportunity/relevance, 2 major-city logistics — informational, never eliminations
-- Open questions: 56
+- Open questions: 53
 - Recommendation: none selected yet
 
 ## Calendar flags for Joe — informational, not eliminations
 
 Calendar awareness has two categories in schema 2.4: related-event opportunity/relevance and major-city logistics. Neither category scores, tiers, selects, or rejects a venue; these flags are awareness only.
 
-- Web3 Warsaw 2026 — 2026-09-09 to 2026-09-10 (related-event opportunity, relevance: web3) — [Web3 Warsaw – Conference & Event](https://web3warsaw.com/). This is an awareness flag for Joe's decision; it never removes the date automatically.
-- Warsaw Home Build 2026 — 2026-10-21 to 2026-10-24 (major-city logistics) — [International Trade Fair for Building and Finishing Materials](https://warsawbuild.eu/en/). This is a logistics awareness flag for Joe's decision; it never removes the date automatically.
-- Warsaw Industry Week 2026 — 2026-11-03 to 2026-11-05 (major-city logistics) — [The Largest Industrial Trade Fair in Poland - Warsaw Industry Week 2026](https://industryweek.pl/en/). This is a logistics awareness flag for Joe's decision; it never removes the date automatically.
-- FINTECH Poland Expo 2026 — 2026-11-17 to 2026-11-19 (related-event opportunity, relevance: fintech) — [FINTECH Poland Expo - Ptak Warsaw Expo](https://warsawexpo.eu/en/fair-calendar/fintech-poland-expo/). This is an awareness flag for Joe's decision; it never removes the date automatically.
+- Agent Conf 2026 — 2026-09-17 to 2026-09-18 (related-event opportunity, relevance: ai) — [Agent Conf 2026 — Europe's first major conference for engineers building agentic systems, Sep 17-18, Crowne Plaza Warsaw](https://www.eventbrite.com/e/agent-conf-2026-tickets-1989991661629). This is an awareness flag for Joe's decision; it never removes the date automatically.
+- Warsaw Tech Week 2026 — 2026-09-22 to 2026-09-24 (major-city logistics) — [Warsaw Tech Week 2026 — International Trade Fair of Technologies and Innovations, Sep 22-24, PTAK Warsaw Expo](https://www.eventbrite.com/e/warsaw-tech-week-tickets-1986300787124). This is a logistics awareness flag for Joe's decision; it never removes the date automatically.
+- Warsaw Home Build 2026 — 2026-10-21 to 2026-10-24 (major-city logistics) — [Warsaw Home Build 2026 — Construction and interior trade fair, Oct 21-24](https://www.homebuild.pl/en/). This is a logistics awareness flag for Joe's decision; it never removes the date automatically.
+- FINTECH Poland Expo 2026 — 2026-11-17 to 2026-11-19 (related-event opportunity, relevance: fintech) — [FINTECH Poland Expo 2026 — Fintech trade fair, Nov 17-19](https://fintechpoland.pl/). This is an awareness flag for Joe's decision; it never removes the date automatically.
 
 ## Venue Shortlist (eligible, ranked)
 
@@ -210,7 +210,6 @@ Calendar awareness has two categories in schema 2.4: related-event opportunity/r
 
 ## Open Questions
 
-- 5000+ expected attendees — the largest blockchain conference in Eastern Europe; adjacency to Q4 candidate Saturdays should be assessed.
 - Calendar-awareness research coverage is 2026-10-01 through 2026-12-31 and is informational only; no calendar record is an elimination, tier input, or date recommendation.
 - Candidate Saturdays are operational input only (all 13, from the locked date_window): 2026-10-03, 2026-10-10, 2026-10-17, 2026-10-24, 2026-10-31, 2026-11-07, 2026-11-14, 2026-11-21, 2026-11-28, 2026-12-05, 2026-12-12, 2026-12-19, 2026-12-26. They are not a recommendation, an elimination set, or a date selection; Joe alone decides the date.
 - Check if AI Tinkerers Poland is open to co-hosting or partnership.
@@ -220,6 +219,7 @@ Calendar awareness has two categories in schema 2.4: related-event opportunity/r
 - Check if the Telegram group is used for event announcements and community coordination.
 - Check if Warsaw.ai is open to co-hosting or partnership for community events.
 - Check if Web3 Devs Poland is open to co-hosting or partnership.
+- Confirm Agent Conf 2026 dates and venue. Assess audience overlap with DeAI Day.
 - Confirm AV equipment (screen, projector, Wi-Fi) availability.
 - Confirm AV equipment availability in listed rooms.
 - Confirm availability on candidate Saturdays in Q4 2026.
@@ -249,21 +249,18 @@ Calendar awareness has two categories in schema 2.4: related-event opportunity/r
 - Confirm screen/projector and Wi-Fi availability.
 - Confirm the 79-129 PLN/hr rate applies to the largest available room.
 - Confirm the exact all-in price for an 8-hour Saturday event.
+- Confirm Warsaw Tech Week 2026 dates, venue, and expected attendance to assess logistics impact on Warsaw city center during Sep 22-24.
 - Confirm whether AI Tinkerers Poland has regular Warsaw-specific meetups.
 - Confirm whether Kolektyw3 offers event space rental for external groups.
 - Confirm whether the 481 PLN/day rate applies to rooms large enough for 50+ people.
 - Confirm whether the community is Warsaw-specific or national.
 - Confirm whether Warsaw.ai has a dedicated event space or uses external venues.
 - Confirm whether Warsaw.ai has a dedicated venue or uses external spaces.
-- Crowd/hotel/transport impact on Warsaw city center during Nov 3-5 trade fair week.
-- Crowd/hotel/transport impact on Warsaw city center during Oct 21-24 trade fair week.
 - Event window: 09:00-17:00 (8 hours), per the locked plan.
-- Fintech audience overlap with AI/web3/quant communities — verify attendee profile and relevance to Decentralized AI Day crowd.
 - FX conversion basis gap: the ECB 2026-08-18 reference rate is used for all USD equivalents in this package; it is a dated published basis but is not a live market rate and does not predict the 2026 Q4 rate. Re-confirm the conversion basis at booking time.
 - Hub evidence: ETHWarsaw 1000+ builders (ethwarsaw.dev), Web3 Warsaw largest blockchain conference in Eastern Europe (web3warsaw.com, Sep 9-10 2026 — will flag as calendar conflict), Impact Hub Warsaw exists externally (Nowogrodzka 47a) but is NOT in the installed 150-record Impact Hub snapshot — no hub seed, no fabricated match; AppGala/Zircuit meetups, strong general tech ecosystem.
 - If dedicated space: confirm capacity, pricing, and availability.
 - No active platform coverage in registry; standard web discovery used. Warsaw is not covered by any of the 3 verified venues platforms (Giggster=NYC, Space Cloud=Seoul, Tagvenue=NYC+Boston).
-- Official venue and final schedule not yet confirmed on the event page; check closer to the date.
 - target_date 2026-11-14 is a neutral technical placeholder required by score/bundle/summary integrity; it is never a recommendation and no output may present it as one.
 - Venue research: Warsaw event spaces are primarily inquiry-only with published PLN rates on own pages limited to a few coworking/event spaces; written quotes are required before any cost claim above published-rate or estimated-from-rate status.
 

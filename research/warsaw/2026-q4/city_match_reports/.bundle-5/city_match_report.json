@@ -1,8 +1,8 @@
 {
-  "bundle_version": 2,
+  "bundle_version": 5,
   "clarification_log": null,
-  "event_plan_sha256": "sha256:fb9ef279ef846d0d82ca10e4a67d494fe3613a32b78a3f06e043e70351e01d6c",
-  "input_fingerprint": "sha256:1bff244634fe2ee8508f0e3adf1df629c03e1a397216b12a342ac4b653aaeb9d",
+  "event_plan_sha256": "sha256:d4f804a50f18b8f09131b7a65e260f918bbe7dad6f4bf5abff4732527282d738",
+  "input_fingerprint": "sha256:2c7c0df84b108577b1eb04f726a4721d5cae02bea38a2f829c11bfdb9eed7584",
   "match_mode": "tiered",
   "new_city_proposals": [],
   "records": [
@@ -487,8 +487,8 @@
       "record_id": "ih-024",
       "source": "impact_hub_locations",
       "tier": null,
-      "triggering_alias": null,
-      "triggering_normalized": null,
+      "triggering_alias": "Budapest",
+      "triggering_normalized": "budapest",
       "venue_name": "Impact Hub Budapest"
     },
     {
@@ -1147,8 +1147,8 @@
       "record_id": "ih-057",
       "source": "impact_hub_locations",
       "tier": null,
-      "triggering_alias": null,
-      "triggering_normalized": null,
+      "triggering_alias": "Lisbon",
+      "triggering_normalized": "lisbon",
       "venue_name": "Impact Hub Lisbon"
     },
     {
@@ -3012,7 +3012,7 @@
       "venue_name": "Impact Hub Saigon | Coming Soon"
     }
   ],
-  "registry_hash": "sha256:79d04e9db039cb0839d898e31ecc81541fc86fa3ff3b630d4d730f9e068923a1",
+  "registry_hash": "sha256:3ba1d74f37e7f685d41a348ca68128167087a8e8bd3a5426f08aa79d94d49d09",
   "report_version": 1,
   "target_city": {
     "country_code": "PL",

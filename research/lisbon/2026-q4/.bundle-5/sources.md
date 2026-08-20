@@ -6,9 +6,9 @@
 2. [Product Event Spaces — Heden (official): auditoriums up to 75 seated, AV system, catering solutions](https://heden.co/event-spaces/) — accessed 2026-08-18
 3. [IDEA SPACES — Saldanha (official): 10-floor coworking campus with event space for rent](https://ideaspaces.pt/saldanha.html) — accessed 2026-08-18
 4. [Event Venue — Impact Hub Lisbon (official): Baixa location at Travessa das Pedras Negras, historic city centre](https://lisbon.impacthub.net/event-venue/) — accessed 2026-08-18
-5. [Portugal Tech Week 2026 — Official: November 6-15, 2026; largest decentralized tech event in Portugal, +300 events in +20 cities](https://portugaltechweek.com/) — accessed 2026-08-18
+5. [Portugal Tech Week 2026 — Nationwide tech week, Nov 6-15](https://portugaltechweek.com/) — accessed 2026-08-18
 6. [Venue Hire Lisbon — Second Home (official): design-led event spaces at Mercado da Ribeira](https://secondhome.io/venue-hire-lisbon/) — accessed 2026-08-18
-7. [Web Summit 2026 — Official: November 9-12, 2026, MEO Arena, Lisbon; 70,000+ attendees from 160+ countries](https://websummit.com/web-summit-2026/) — accessed 2026-08-18
+7. [Web Summit 2026 — November 9-12, MEO Arena, Lisbon; 70,000+ attendees from 160+ countries](https://websummit.com/web-summit-2026/) — accessed 2026-08-18
 8. [Coworking Space at Village Underground, Lisbon — Coworker: Forbes chosen as one of the 4 most disruptive coworking spaces in the world](https://www.coworker.com/portugal/lisbon/village-underground) — accessed 2026-08-18
 9. [Data, Cloud and AI in Lisbon — Meetup: IBM sponsored group for developers, data scientists, data engineers](https://www.meetup.com/big-data-developers-in-lisbon/) — accessed 2026-08-18
 10. [CryptoMondays Lisbon — Meetup: 803 members, 4.5 stars, weekly Monday crypto meetups](https://www.meetup.com/cryptomondays-lisboa/) — accessed 2026-08-18

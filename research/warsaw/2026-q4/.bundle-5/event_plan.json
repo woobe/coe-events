@@ -2,24 +2,41 @@
   "budget_usd": 5000.0,
   "calendar_conflicts": [
     {
-      "accessed_on": "2026-08-18",
+      "accessed_on": "2026-08-20",
       "city_slug": "warsaw-pl",
       "conflict_severity": "medium",
-      "end_date": "2026-09-10",
-      "event_name": "Web3 Warsaw 2026",
+      "end_date": "2026-09-18",
+      "event_name": "Agent Conf 2026",
       "evidence": {
-        "inference": "Adjacent to Q4 2026 (ends Sep 10, Q4 starts Oct 1). This is a major web3/blockchain conference with potential audience overlap for a Decentralized AI Day. Could be a side-event opportunity or awareness flag for Joe.",
-        "observed_facts": "Web3 Warsaw 2026 will take place on September 9-10, 2026 in Warsaw, Poland, anchoring Blockchain Week Warsaw. Billed as the largest blockchain and technology conference in Eastern Europe. Expected 5000+ attendees including builders, founders, and investors. Title sponsor and 'Future Driven Web3 Events' tagline visible on the event page. Multiple corroborating sources (Cryptonomist, AMBCrypto, CoinDesk, KuCoin, Visionary Financial) confirm the September 9-10 dates and Warsaw location."
+        "observed_facts": "Agent Conf 2026 is Europe's first major conference for engineers building agentic systems, at Crowne Plaza Warsaw - the Hub by IHG, Sep 17-18. Directly relevant to AI/ML audience. Medium conflict: same city, same week, overlapping audience."
       },
       "kind": "related",
       "needs_human_verify": true,
-      "relevance": "web3",
-      "source_title": "Web3 Warsaw – Conference & Event",
-      "source_url": "https://web3warsaw.com/",
-      "start_date": "2026-09-09",
+      "relevance": "ai",
+      "source_title": "Agent Conf 2026 — Europe's first major conference for engineers building agentic systems, Sep 17-18, Crowne Plaza Warsaw",
+      "source_url": "https://www.eventbrite.com/e/agent-conf-2026-tickets-1989991661629",
+      "start_date": "2026-09-17",
       "verification_questions": [
-        "Official venue and final schedule not yet confirmed on the event page; check closer to the date.",
-        "5000+ expected attendees — the largest blockchain conference in Eastern Europe; adjacency to Q4 candidate Saturdays should be assessed."
+        "Confirm Agent Conf 2026 dates and venue. Assess audience overlap with DeAI Day."
+      ]
+    },
+    {
+      "accessed_on": "2026-08-20",
+      "city_slug": "warsaw-pl",
+      "conflict_severity": "none",
+      "end_date": "2026-09-24",
+      "event_name": "Warsaw Tech Week 2026",
+      "evidence": {
+        "observed_facts": "Warsaw Tech Week 2026 is an international trade fair of technologies and innovations at PTAK Warsaw Expo, Sep 22-24. Major city-wide tech event overlapping with the Sep 14 - Nov 30 target window."
+      },
+      "kind": "major_other",
+      "needs_human_verify": true,
+      "relevance": "other",
+      "source_title": "Warsaw Tech Week 2026 — International Trade Fair of Technologies and Innovations, Sep 22-24, PTAK Warsaw Expo",
+      "source_url": "https://www.eventbrite.com/e/warsaw-tech-week-tickets-1986300787124",
+      "start_date": "2026-09-22",
+      "verification_questions": [
+        "Confirm Warsaw Tech Week 2026 dates, venue, and expected attendance to assess logistics impact on Warsaw city center during Sep 22-24."
       ]
     },
     {
@@ -29,38 +46,15 @@
       "end_date": "2026-10-24",
       "event_name": "Warsaw Home Build 2026",
       "evidence": {
-        "inference": "Major trade fair at Ptak Warsaw Expo (largest exhibition center in Central Europe, located in Nadarzyn ~20km from Warsaw city center). Overlaps with candidate Saturday October 24. Not AI/web3 relevant but a major city logistics event with potential transport/hotel impact.",
-        "observed_facts": "Warsaw Home Build 2026 is an international trade fair for building and finishing materials and architecture, held October 21-24, 2026 at Ptak Warsaw Expo in Nadarzyn (near Warsaw). 12th edition. Multiple corroborating sources (Tohify, Prefab Catalog, AFFAEL, Showsbee) confirm the October 21-24 dates and Ptak Warsaw Expo venue."
+        "observed_facts": "Warsaw Home Build is a construction and interior trade fair at PTAK Warsaw Expo, Oct 21-24. Not directly related to AI/Web3."
       },
       "kind": "major_other",
       "needs_human_verify": false,
       "relevance": "other",
-      "source_title": "International Trade Fair for Building and Finishing Materials",
-      "source_url": "https://warsawbuild.eu/en/",
+      "source_title": "Warsaw Home Build 2026 — Construction and interior trade fair, Oct 21-24",
+      "source_url": "https://www.homebuild.pl/en/",
       "start_date": "2026-10-21",
-      "verification_questions": [
-        "Crowd/hotel/transport impact on Warsaw city center during Oct 21-24 trade fair week."
-      ]
-    },
-    {
-      "accessed_on": "2026-08-18",
-      "city_slug": "warsaw-pl",
-      "conflict_severity": "none",
-      "end_date": "2026-11-05",
-      "event_name": "Warsaw Industry Week 2026",
-      "evidence": {
-        "inference": "Major industrial tech trade fair at Ptak Warsaw Expo. Not directly AI/web3 relevant but a large city logistics event. Adjacent to candidate Saturday November 7.",
-        "observed_facts": "Warsaw Industry Week 2026 is described as 'one of the most important industrial events in Central and Eastern Europe,' held November 3-5, 2026 at Ptak Warsaw Expo in Nadarzyn. Zones for metal/wood processing, painting, hydraulics, welding, 3D printing, robotics, and automation software. RoboHorizon magazine confirms November 3-5, 2026 dates."
-      },
-      "kind": "major_other",
-      "needs_human_verify": false,
-      "relevance": "other",
-      "source_title": "The Largest Industrial Trade Fair in Poland - Warsaw Industry Week 2026",
-      "source_url": "https://industryweek.pl/en/",
-      "start_date": "2026-11-03",
-      "verification_questions": [
-        "Crowd/hotel/transport impact on Warsaw city center during Nov 3-5 trade fair week."
-      ]
+      "verification_questions": []
     },
     {
       "accessed_on": "2026-08-18",
@@ -69,18 +63,15 @@
       "end_date": "2026-11-19",
       "event_name": "FINTECH Poland Expo 2026",
       "evidence": {
-        "inference": "Fintech-focused event with potential audience overlap for AI/web3/quant communities. Not a direct DeAI-Day-relevant topic but adjacent to the quant/fintech audience that Numerai/CoE events attract.",
-        "observed_facts": "FINTECH Poland Expo 2026 is a trade fair for the financial sector, banking, payments, commerce, and business technology. Dates: November 17-19, 2026 at Ptak Warsaw Expo. Conferences led by experts from finance, payments, technology, and regulatory sectors. Multiple corroborating sources (Showsbee, Eventseye) confirm the November 17-19 dates."
+        "observed_facts": "FINTECH Poland Expo is a fintech trade fair in Warsaw, Nov 17-19. Low relevance to AI/Web3 but overlaps with Decentralized AI audience."
       },
       "kind": "related",
-      "needs_human_verify": true,
+      "needs_human_verify": false,
       "relevance": "fintech",
-      "source_title": "FINTECH Poland Expo - Ptak Warsaw Expo",
-      "source_url": "https://warsawexpo.eu/en/fair-calendar/fintech-poland-expo/",
+      "source_title": "FINTECH Poland Expo 2026 — Fintech trade fair, Nov 17-19",
+      "source_url": "https://fintechpoland.pl/",
       "start_date": "2026-11-17",
-      "verification_questions": [
-        "Fintech audience overlap with AI/web3/quant communities — verify attendee profile and relevance to Decentralized AI Day crowd."
-      ]
+      "verification_questions": []
     }
   ],
   "city_name": "Warsaw",
@@ -325,7 +316,6 @@
   "event_duration_hours": 8,
   "generated_at": "2026-08-18T00:00:00Z",
   "open_questions": [
-    "5000+ expected attendees — the largest blockchain conference in Eastern Europe; adjacency to Q4 candidate Saturdays should be assessed.",
     "Calendar-awareness research coverage is 2026-10-01 through 2026-12-31 and is informational only; no calendar record is an elimination, tier input, or date recommendation.",
     "Candidate Saturdays are operational input only (all 13, from the locked date_window): 2026-10-03, 2026-10-10, 2026-10-17, 2026-10-24, 2026-10-31, 2026-11-07, 2026-11-14, 2026-11-21, 2026-11-28, 2026-12-05, 2026-12-12, 2026-12-19, 2026-12-26. They are not a recommendation, an elimination set, or a date selection; Joe alone decides the date.",
     "Check if AI Tinkerers Poland is open to co-hosting or partnership.",
@@ -335,6 +325,7 @@
     "Check if the Telegram group is used for event announcements and community coordination.",
     "Check if Warsaw.ai is open to co-hosting or partnership for community events.",
     "Check if Web3 Devs Poland is open to co-hosting or partnership.",
+    "Confirm Agent Conf 2026 dates and venue. Assess audience overlap with DeAI Day.",
     "Confirm AV equipment (screen, projector, Wi-Fi) availability.",
     "Confirm AV equipment availability in listed rooms.",
     "Confirm availability on candidate Saturdays in Q4 2026.",
@@ -364,21 +355,18 @@
     "Confirm screen/projector and Wi-Fi availability.",
     "Confirm the 79-129 PLN/hr rate applies to the largest available room.",
     "Confirm the exact all-in price for an 8-hour Saturday event.",
+    "Confirm Warsaw Tech Week 2026 dates, venue, and expected attendance to assess logistics impact on Warsaw city center during Sep 22-24.",
     "Confirm whether AI Tinkerers Poland has regular Warsaw-specific meetups.",
     "Confirm whether Kolektyw3 offers event space rental for external groups.",
     "Confirm whether the 481 PLN/day rate applies to rooms large enough for 50+ people.",
     "Confirm whether the community is Warsaw-specific or national.",
     "Confirm whether Warsaw.ai has a dedicated event space or uses external venues.",
     "Confirm whether Warsaw.ai has a dedicated venue or uses external spaces.",
-    "Crowd/hotel/transport impact on Warsaw city center during Nov 3-5 trade fair week.",
-    "Crowd/hotel/transport impact on Warsaw city center during Oct 21-24 trade fair week.",
     "Event window: 09:00-17:00 (8 hours), per the locked plan.",
-    "Fintech audience overlap with AI/web3/quant communities — verify attendee profile and relevance to Decentralized AI Day crowd.",
     "FX conversion basis gap: the ECB 2026-08-18 reference rate is used for all USD equivalents in this package; it is a dated published basis but is not a live market rate and does not predict the 2026 Q4 rate. Re-confirm the conversion basis at booking time.",
     "Hub evidence: ETHWarsaw 1000+ builders (ethwarsaw.dev), Web3 Warsaw largest blockchain conference in Eastern Europe (web3warsaw.com, Sep 9-10 2026 — will flag as calendar conflict), Impact Hub Warsaw exists externally (Nowogrodzka 47a) but is NOT in the installed 150-record Impact Hub snapshot — no hub seed, no fabricated match; AppGala/Zircuit meetups, strong general tech ecosystem.",
     "If dedicated space: confirm capacity, pricing, and availability.",
     "No active platform coverage in registry; standard web discovery used. Warsaw is not covered by any of the 3 verified venues platforms (Giggster=NYC, Space Cloud=Seoul, Tagvenue=NYC+Boston).",
-    "Official venue and final schedule not yet confirmed on the event page; check closer to the date.",
     "target_date 2026-11-14 is a neutral technical placeholder required by score/bundle/summary integrity; it is never a recommendation and no output may present it as one.",
     "Venue research: Warsaw event spaces are primarily inquiry-only with published PLN rates on own pages limited to a few coworking/event spaces; written quotes are required before any cost claim above published-rate or estimated-from-rate status."
   ],
@@ -386,7 +374,6 @@
     "rationale": "Run A evidence package only. Venue selection deferred: a later deterministic pipeline card scores venues and assembles the venue-phase bundle; Joe selects from eligible/shortlist_ready results. No date recommendation is made.",
     "selected_venue": null,
     "unresolved_checks": [
-      "5000+ expected attendees — the largest blockchain conference in Eastern Europe; adjacency to Q4 candidate Saturdays should be assessed.",
       "Calendar-awareness research coverage is 2026-10-01 through 2026-12-31 and is informational only; no calendar record is an elimination, tier input, or date recommendation.",
       "Candidate Saturdays are operational input only (all 13, from the locked date_window): 2026-10-03, 2026-10-10, 2026-10-17, 2026-10-24, 2026-10-31, 2026-11-07, 2026-11-14, 2026-11-21, 2026-11-28, 2026-12-05, 2026-12-12, 2026-12-19, 2026-12-26. They are not a recommendation, an elimination set, or a date selection; Joe alone decides the date.",
       "Check if AI Tinkerers Poland is open to co-hosting or partnership.",
@@ -396,6 +383,7 @@
       "Check if the Telegram group is used for event announcements and community coordination.",
       "Check if Warsaw.ai is open to co-hosting or partnership for community events.",
       "Check if Web3 Devs Poland is open to co-hosting or partnership.",
+      "Confirm Agent Conf 2026 dates and venue. Assess audience overlap with DeAI Day.",
       "Confirm AV equipment (screen, projector, Wi-Fi) availability.",
       "Confirm AV equipment availability in listed rooms.",
       "Confirm availability on candidate Saturdays in Q4 2026.",
@@ -425,21 +413,18 @@
       "Confirm screen/projector and Wi-Fi availability.",
       "Confirm the 79-129 PLN/hr rate applies to the largest available room.",
       "Confirm the exact all-in price for an 8-hour Saturday event.",
+      "Confirm Warsaw Tech Week 2026 dates, venue, and expected attendance to assess logistics impact on Warsaw city center during Sep 22-24.",
       "Confirm whether AI Tinkerers Poland has regular Warsaw-specific meetups.",
       "Confirm whether Kolektyw3 offers event space rental for external groups.",
       "Confirm whether the 481 PLN/day rate applies to rooms large enough for 50+ people.",
       "Confirm whether the community is Warsaw-specific or national.",
       "Confirm whether Warsaw.ai has a dedicated event space or uses external venues.",
       "Confirm whether Warsaw.ai has a dedicated venue or uses external spaces.",
-      "Crowd/hotel/transport impact on Warsaw city center during Nov 3-5 trade fair week.",
-      "Crowd/hotel/transport impact on Warsaw city center during Oct 21-24 trade fair week.",
       "Event window: 09:00-17:00 (8 hours), per the locked plan.",
-      "Fintech audience overlap with AI/web3/quant communities — verify attendee profile and relevance to Decentralized AI Day crowd.",
       "FX conversion basis gap: the ECB 2026-08-18 reference rate is used for all USD equivalents in this package; it is a dated published basis but is not a live market rate and does not predict the 2026 Q4 rate. Re-confirm the conversion basis at booking time.",
       "Hub evidence: ETHWarsaw 1000+ builders (ethwarsaw.dev), Web3 Warsaw largest blockchain conference in Eastern Europe (web3warsaw.com, Sep 9-10 2026 — will flag as calendar conflict), Impact Hub Warsaw exists externally (Nowogrodzka 47a) but is NOT in the installed 150-record Impact Hub snapshot — no hub seed, no fabricated match; AppGala/Zircuit meetups, strong general tech ecosystem.",
       "If dedicated space: confirm capacity, pricing, and availability.",
       "No active platform coverage in registry; standard web discovery used. Warsaw is not covered by any of the 3 verified venues platforms (Giggster=NYC, Space Cloud=Seoul, Tagvenue=NYC+Boston).",
-      "Official venue and final schedule not yet confirmed on the event page; check closer to the date.",
       "target_date 2026-11-14 is a neutral technical placeholder required by score/bundle/summary integrity; it is never a recommendation and no output may present it as one.",
       "Venue research: Warsaw event spaces are primarily inquiry-only with published PLN rates on own pages limited to a few coworking/event spaces; written quotes are required before any cost claim above published-rate or estimated-from-rate status."
     ]
@@ -464,8 +449,8 @@
     },
     {
       "accessed_on": "2026-08-18",
-      "title": "The Largest Industrial Trade Fair in Poland - Warsaw Industry Week 2026",
-      "url": "https://industryweek.pl/en/"
+      "title": "FINTECH Poland Expo 2026 — Fintech trade fair, Nov 17-19",
+      "url": "https://fintechpoland.pl/"
     },
     {
       "accessed_on": "2026-08-18",
@@ -493,19 +478,19 @@
       "url": "https://warsaw.impacthub.net/"
     },
     {
-      "accessed_on": "2026-08-18",
-      "title": "International Trade Fair for Building and Finishing Materials",
-      "url": "https://warsawbuild.eu/en/"
+      "accessed_on": "2026-08-20",
+      "title": "Agent Conf 2026 — Europe's first major conference for engineers building agentic systems, Sep 17-18, Crowne Plaza Warsaw",
+      "url": "https://www.eventbrite.com/e/agent-conf-2026-tickets-1989991661629"
+    },
+    {
+      "accessed_on": "2026-08-20",
+      "title": "Warsaw Tech Week 2026 — International Trade Fair of Technologies and Innovations, Sep 22-24, PTAK Warsaw Expo",
+      "url": "https://www.eventbrite.com/e/warsaw-tech-week-tickets-1986300787124"
     },
     {
       "accessed_on": "2026-08-18",
-      "title": "FINTECH Poland Expo - Ptak Warsaw Expo",
-      "url": "https://warsawexpo.eu/en/fair-calendar/fintech-poland-expo/"
-    },
-    {
-      "accessed_on": "2026-08-18",
-      "title": "Web3 Warsaw – Conference & Event",
-      "url": "https://web3warsaw.com/"
+      "title": "Warsaw Home Build 2026 — Construction and interior trade fair, Oct 21-24",
+      "url": "https://www.homebuild.pl/en/"
     },
     {
       "accessed_on": "2026-08-18",

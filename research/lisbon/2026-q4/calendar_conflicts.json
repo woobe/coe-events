@@ -1,36 +1,42 @@
 [
   {
-    "event_name": "ETHGlobal Lisbon 2026",
+    "event_name": "Web Summit 2026",
     "city_slug": "lisbon-pt",
-    "start_date": "2026-07-24",
-    "end_date": "2026-07-26",
-    "kind": "related",
-    "relevance": "web3",
-    "conflict_severity": "low",
-    "source_url": "https://ethglobal.com/lisbon",
-    "source_title": "ETHGlobal Lisbon 2026 — Ethereum & Web3 Hackathon, Jul 24-26",
+    "start_date": "2026-11-09",
+    "end_date": "2026-11-12",
+    "kind": "major_other",
+    "relevance": "other",
+    "conflict_severity": "none",
+    "source_url": "https://websummit.com/web-summit-2026/",
+    "source_title": "Web Summit 2026 — November 9-12, MEO Arena, Lisbon; 70,000+ attendees from 160+ countries",
     "accessed_on": "2026-08-18",
-    "needs_human_verify": false,
-    "verification_questions": [],
+    "needs_human_verify": true,
+    "verification_questions": [
+      "Confirm Web Summit 2026 dates and venue remain November 9-12 at MEO Arena.",
+      "Assess logistics impact on Lisbon city center during Nov 9-12 (transport, hotel demand, road access, venue availability).",
+      "Assess whether Web Summit week creates a side-event opportunity for a DeAI Day audience synergy."
+    ],
     "evidence": {
-      "observed_facts": "ETHGlobal Lisbon 2026 was a major Ethereum/Web3 hackathon at Pavilhão Carlos Lopes, Jul 24-26. Outside Sep 14-28 window but notable for Lisbon web3 scene awareness."
+      "observed_facts": "Web Summit official site (accessed 2026-08-18) confirms: 'Web Summit returns to Lisbon's MEO Arena this November 9-12, 2026.' 70,000+ attendees from 160+ countries, 1,000+ speakers, 2,000+ startups, 1,200+ investors."
     }
   },
   {
-    "event_name": "Blockchain Lisbon 2026",
+    "event_name": "Portugal Tech Week 2026",
     "city_slug": "lisbon-pt",
-    "start_date": "2026-05-21",
-    "end_date": "2026-05-22",
-    "kind": "related",
-    "relevance": "web3",
-    "conflict_severity": "low",
-    "source_url": "https://www.blockchainlisbon.com/",
-    "source_title": "Blockchain Lisbon 2026 — Web3/crypto community event, May 21-22",
+    "start_date": "2026-11-06",
+    "end_date": "2026-11-15",
+    "kind": "major_other",
+    "relevance": "other",
+    "conflict_severity": "none",
+    "source_url": "https://portugaltechweek.com/",
+    "source_title": "Portugal Tech Week 2026 — Nationwide tech week, Nov 6-15",
     "accessed_on": "2026-08-18",
-    "needs_human_verify": false,
-    "verification_questions": [],
+    "needs_human_verify": true,
+    "verification_questions": [
+      "Confirm Portugal Tech Week 2026 dates and assess logistics impact on Lisbon city center (transport, hotel demand, road access) during Nov 6-15."
+    ],
     "evidence": {
-      "observed_facts": "Blockchain Lisbon 2026 was a web3/crypto community event on May 21-22. Outside Sep 14-28 window but confirms active Lisbon web3 community."
+      "observed_facts": "Portugal Tech Week is a nationwide tech week spanning Nov 6-15, coinciding with Web Summit."
     }
   }
 ]
