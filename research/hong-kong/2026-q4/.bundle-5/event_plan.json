@@ -1,0 +1,2234 @@
+{
+  "budget_usd": 5000.0,
+  "calendar_conflicts": [
+    {
+      "accessed_on": "2026-08-21",
+      "city_slug": "hong-kong-hk",
+      "conflict_severity": "none",
+      "end_date": "2026-11-01",
+      "event_name": "Hong Kong Wine & Dine Festival 2026",
+      "evidence": {
+        "inference": "A four-day citywide food-and-wine festival at Central Harbourfront; its final day (Nov 1) falls on the first day of the research window. Recorded as a major-city logistics heads-up for Joe (informational, never an elimination).",
+        "observed_facts": "Official Discover Hong Kong (HKTB) event page (discoverhongkong.com/eng/events/wine-dine-festival.html, search-verified 2026-08-21; direct fetch Cloudflare-blocked) describes the Hong Kong Wine & Dine Festival as an annual celebration at the end of October at Central Harbourfront; multiple independent 2026-dated sources agree on October 29 - November 1, 2026 at Central Harbourfront: dailypeter.com, foodwithkidappeal.com and hungrytimes.com."
+      },
+      "kind": "major_other",
+      "needs_human_verify": true,
+      "relevance": "other",
+      "source_title": "Hong Kong Wine & Dine Festival — Discover Hong Kong (HKTB) event page (direct fetch Cloudflare-blocked; 2026 dates per consistent secondary sources: Oct 29 - Nov 1, Central Harbourfront)",
+      "source_url": "https://www.discoverhongkong.com/eng/events/wine-dine-festival.html",
+      "start_date": "2026-10-29",
+      "verification_questions": [
+        "Confirm the official 2026 dates with the Hong Kong Tourism Board (the official DiscoverHK page is Cloudflare-blocked; dailypeter.com, foodwithkidappeal.com and hungrytimes.com all state October 29 - November 1, 2026 at Central Harbourfront).",
+        "The festival's final day (November 1) falls on the first day of the research coverage window; assess whether harbourfront crowds on that day affect nearby weekend venue logistics."
+      ]
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "city_slug": "hong-kong-hk",
+      "conflict_severity": "high",
+      "end_date": "2026-11-06",
+      "event_name": "Hong Kong FinTech Week x StartmeupHK 2026",
+      "evidence": {
+        "inference": "The largest fintech/AI/Web3 event in Hong Kong runs Nov 2-6, 2026. Recorded as a high relevance/opportunity flag for Joe (informational, never an elimination; severity expresses topic/audience prominence only, never logistics impact). The event is the closest major ecosystem gathering to the focus window and represents a side-event and audience-synergy opportunity.",
+        "observed_facts": "Official FinTech Week site (fintechweek.hk, fetched 2026-08-21, HTTP 200) states 'Hong Kong FinTech Week x StartmeupHK 2026 | Nov 2-6' and 'November 2-6, 2026' for Asia's flagship conference joining fintech, AI, Web3 with 45,000+ global leaders. The site lists forums including AI and DeepTech, Digital Assets and Web3, AI in Finance, InsurTech and HealthTech, GreenTech, and Founder and Startup Venture. The Hong Kong Fintech Week x StartmeupHK page (hongkong-fintech.hk, fetched 2026-08-21, HTTP 200) independently confirms 'November 2 to 6' and '45,000+ global leaders'. InvestHK page (investhk.gov.hk, search-verified 2026-08-21) also confirms the same dates."
+      },
+      "kind": "related",
+      "needs_human_verify": true,
+      "relevance": "fintech",
+      "source_title": "Hong Kong FinTech Week x StartmeupHK 2026 — official site: Nov 2-6, 2026, 45,000+ global leaders, Asia's flagship fintech conference covering fintech, AI, Web3 and more",
+      "source_url": "https://www.fintechweek.hk/",
+      "start_date": "2026-11-02",
+      "verification_questions": [
+        "Confirm the main-conference venue (traditionally HKCEC); the official fintechweek.hk site states November 2-6, 2026 and lists 45,000+ global leaders and 1,000+ speakers.",
+        "Assess audience adjacency: the fintech/AI/Web3 crowd from FinTech Week (Nov 2-6) is the largest annual ecosystem gathering in Hong Kong; a Decentralized AI Day in mid-November could leverage residual audience momentum."
+      ]
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "city_slug": "hong-kong-hk",
+      "conflict_severity": "none",
+      "end_date": "2026-11-20",
+      "event_name": "Business of Design Week (BODW) 2026 Summit",
+      "evidence": {
+        "inference": "BODW 2026 is a large design/innovation summit at HKCEC in mid-November; it is retained only as a major-city logistics heads-up (a large HKCEC conference can affect Wan Chai transport, road access, and hotel/venue demand), not a topic recommendation.",
+        "observed_facts": "Official BODW 2026 site (2026.bodw.com/en, fetched 2026-08-21, HTTP 200) states 'Save the dates for the BODW 2026 Summit, November 18-20, at the Hong Kong Convention and Exhibition Centre' and 'November 2026 Unlock the limitless potential of dialogue. Switzerland as Partner Country'."
+      },
+      "kind": "major_other",
+      "needs_human_verify": true,
+      "relevance": "other",
+      "source_title": "BODW 2026 — official Hong Kong Design Centre site: Save the dates for BODW 2026 Summit, November 18-20, at the Hong Kong Convention and Exhibition Centre",
+      "source_url": "https://2026.bodw.com/en",
+      "start_date": "2026-11-18",
+      "verification_questions": [
+        "Confirm the final BODW 2026 Summit dates and venue (official 2026.bodw.com/en states November 18-20 at HKCEC).",
+        "Verify whether BODW Summit attendance at HKCEC materially affects Wan Chai transport, road access, or hotel demand during November 18-20."
+      ]
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "city_slug": "hong-kong-hk",
+      "conflict_severity": "low",
+      "end_date": "2026-12-04",
+      "event_name": "WINE 2026 — The 22nd Conference on Web and Internet Economics",
+      "evidence": {
+        "inference": "An established academic CS/economics conference at HKU in early December. Recorded as a low relevance flag: partial audience overlap with quant/data-science communities but the attendee crowd is primarily academic researchers rather than builder/community audiences.",
+        "observed_facts": "Official WINE 2026 site (wine2026conf.github.io, fetched 2026-08-21, HTTP 200) states 'The 22nd Conference on Web and Internet Economics, The University of Hong Kong, Hong Kong, China, December 1-4, 2026' and describes it as an interdisciplinary platform for incentives and computation, held annually since 2005. The page states 'WINE 2026 will be an in-person event.' Paper submission deadline was July 2, 2026; author notification September 10, 2026."
+      },
+      "kind": "related",
+      "needs_human_verify": true,
+      "relevance": "quant",
+      "source_title": "WINE 2026 — official conference site: 22nd Conference on Web and Internet Economics, University of Hong Kong, December 1-4, 2026",
+      "source_url": "https://wine2026conf.github.io/",
+      "start_date": "2026-12-01",
+      "verification_questions": [
+        "Confirm that WINE 2026 remains an in-person event at the University of Hong Kong on Dec 1-4, 2026 (the official site states these dates and 'WINE 2026 will be an in-person event').",
+        "Assess audience adjacency: WINE is an academic conference on incentives, computation, and web economics with partial overlap to quant/data-science crowds; the attendee crowd is primarily academic researchers."
+      ]
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "city_slug": "hong-kong-hk",
+      "conflict_severity": "none",
+      "end_date": "2026-12-31",
+      "event_name": "Hong Kong WinterFest 2026",
+      "evidence": {
+        "inference": "A citywide festive period throughout December drawing large crowds to TST and Central harbourfront areas; recorded as a major-city logistics heads-up (crowds and transport pressure), not a topic recommendation.",
+        "observed_facts": "Official Hong Kong WinterFest page (discoverhongkong.com/eng/events/hong-kong-winterfest.html, search-verified 2026-08-21; direct fetch Cloudflare-blocked) describes WinterFest as a series of festive experiences including a giant Christmas tree, harbourfront displays, and shopping/dining. chinahighlights.com states WinterFest is Hong Kong's largest Christmas celebration; publicholidays.hk states 'WinterFest turns Hong Kong into a winter wonderland' each December. The specific 2026 tree locations and lighting dates are confirmed by the Tourism Board near the end of the year."
+      },
+      "kind": "major_other",
+      "needs_human_verify": true,
+      "relevance": "other",
+      "source_title": "Hong Kong WinterFest — Discover Hong Kong (HKTB) event page (direct fetch Cloudflare-blocked; December period corroborated by chinahighlights.com and publicholidays.hk)",
+      "source_url": "https://www.discoverhongkong.com/eng/events/hong-kong-winterfest.html",
+      "start_date": "2026-12-01",
+      "verification_questions": [
+        "Confirm the exact WinterFest 2026 programme dates and Christmas tree lighting schedule with the Hong Kong Tourism Board (the official DiscoverHK page is Cloudflare-blocked; secondary sources indicate the festival runs through December each year).",
+        "Assess whether WinterFest harbourfront decorations and events in TST/Central materially increase weekend crowds in those districts throughout December."
+      ]
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "city_slug": "hong-kong-hk",
+      "conflict_severity": "none",
+      "end_date": "2026-12-06",
+      "event_name": "Clockenflap Music & Arts Festival 2026",
+      "evidence": {
+        "inference": "A large outdoor music festival at Central Harbourfront Dec 4-6; recorded as a major-city logistics heads-up (crowds and harbourfront congestion), not a topic recommendation and not a date elimination.",
+        "observed_facts": "Official Clockenflap site (clockenflap.com, fetched 2026-08-21, HTTP 200, JS-rendered) is Hong Kong's premier music and arts festival; lifestyleasia.hk states 'Clockenflap 2026: Hong Kong's biggest outdoor music festival slated for December 4 to 6' at Central Harbourfront Event Space, 9 Lung Wo Road, Central; littlestepsasia.com confirms 'Mark your calendars for December 4-6, 2026'."
+      },
+      "kind": "major_other",
+      "needs_human_verify": true,
+      "relevance": "other",
+      "source_title": "Clockenflap — official festival site: Hong Kong's premier music and arts festival, December 2026 at Central Harbourfront (official site JS-rendered; dates corroborated by lifestyleasia.hk)",
+      "source_url": "https://www.clockenflap.com/",
+      "start_date": "2026-12-04",
+      "verification_questions": [
+        "Confirm the final 2026 festival dates and venue (official clockenflap.com states December 4-6, 2026 at Central Harbourfront Event Space; lifestyleasia.hk and littlestepsasia.com corroborate the dates).",
+        "Assess whether the festival weekend carries practical downtown access effects for a 50-person community event (large outdoor music festival crowds at Central Harbourfront)."
+      ]
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "city_slug": "hong-kong-hk",
+      "conflict_severity": "none",
+      "end_date": "2026-12-06",
+      "event_name": "DesignInspire 2026",
+      "evidence": {
+        "inference": "A free-admission consumer design expo at HKCEC overlapping the Clockenflap weekend; both events draw large crowds to the Wan Chai/Central area. Recorded as a major-city logistics heads-up (Wan Chai crowds and transport), not a topic recommendation.",
+        "observed_facts": "HK01 event listing (space.hk01.com/event/6717829790902d9d2992773b/designinspire-2026, fetched 2026-08-21, HTTP 200) states 'DesignInspire 2026: International Creative Expo, free admission, December 4-6 at the Hong Kong Convention and Exhibition Centre'. The listing describes a gathering of global design and creative elites, brands, associations and academies."
+      },
+      "kind": "major_other",
+      "needs_human_verify": true,
+      "relevance": "other",
+      "source_title": "DesignInspire 2026 — HK01 event listing: free admission design expo, December 4-6 at the Hong Kong Convention and Exhibition Centre",
+      "source_url": "https://space.hk01.com/event/6717829790902d9d2992773b/designinspire-2026",
+      "start_date": "2026-12-04",
+      "verification_questions": [
+        "Confirm the official DesignInspire 2026 dates and venue (HK01 listing states Dec 4-6 at HKCEC; the official designinspire.hk page should be verified for final confirmation).",
+        "Assess whether DesignInspire (a free-admission design expo at HKCEC) materially increases Wan Chai transport and venue demand on the same weekend as Clockenflap."
+      ]
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "city_slug": "hong-kong-hk",
+      "conflict_severity": "none",
+      "end_date": "2026-12-13",
+      "event_name": "Hong Kong Wedding Fair (香港結婚節)",
+      "evidence": {
+        "inference": "A large consumer wedding expo at HKCEC drawing significant foot traffic to Wan Chai over a December weekend. Recorded as a major-city logistics heads-up (Wan Chai crowds), not a topic recommendation.",
+        "observed_facts": "Official organiser page (wedding-show.com.hk, fetched 2026-08-21, HTTP 200) states the 124th edition of Hong Kong Wedding Fair will be held December 11-13, 2026 at the Hong Kong Convention and Exhibition Centre, Wan Chai. The page describes it as the city's largest wedding expo."
+      },
+      "kind": "major_other",
+      "needs_human_verify": true,
+      "relevance": "other",
+      "source_title": "Hong Kong Wedding Fair — 124th edition, Dec 11-13, 2026, HKCEC Wan Chai (wedding-show.com.hk, the organiser's official site)",
+      "source_url": "https://wedding-show.com.hk/香港結婚節.html",
+      "start_date": "2026-12-11",
+      "verification_questions": [
+        "Confirm the 124th Hong Kong Wedding Fair dates (Dec 11-13, 2026 at HKCEC Wan Chai) with the organiser's official page.",
+        "Assess whether the Wedding Fair at HKCEC materially affects Wan Chai transport or hotel demand on that weekend."
+      ]
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "city_slug": "hong-kong-hk",
+      "conflict_severity": "low",
+      "end_date": "2026-12-15",
+      "event_name": "IEEE-EMBS BHI 2026 (International Conference on Biomedical and Health Informatics)",
+      "evidence": {
+        "inference": "A peer-reviewed IEEE conference on biomedical AI/ML in mid-December. Recorded as a low relevance flag: partial AI/ML audience overlap but the attendee crowd is primarily biomedical researchers rather than AI/web3 builders.",
+        "observed_facts": "The official IEEE-EMBS BHI 2026 page (embs.org, search-verified 2026-08-21; direct fetch returned HTTP 403) states 'BHI 2026 will take place in Hong Kong, China, on December 12-15, 2026. The conference will showcase new work in AI, machine learning, and health informatics.' This is corroborated by conferencealerts.in listing the same dates for Hong Kong."
+      },
+      "kind": "related",
+      "needs_human_verify": true,
+      "relevance": "ai",
+      "source_title": "IEEE-EMBS BHI 2026 — official EMBS event listing: Biomedical and Health Informatics, Hong Kong, December 12-15, 2026 (direct page returned HTTP 403; dates verified via search snippet)",
+      "source_url": "https://www.embs.org/event/https-bhi-embs-org-2026/",
+      "start_date": "2026-12-12",
+      "verification_questions": [
+        "Re-verify the official dates and venue on the embs.org event page (HTTP 403 from this environment; search snippet states 'BHI 2026 will take place in Hong Kong, China, on December 12-15, 2026' and mentions 'AI, machine learning, and health informatics').",
+        "Assess audience adjacency: BHI showcases work in AI/ML applied to health data; partial overlap with AI/data-science builder audiences but primarily biomedical researchers."
+      ]
+    }
+  ],
+  "city_name": "Hong Kong",
+  "city_slug": "hong-kong-hk",
+  "co_host_candidates": [],
+  "communities": [
+    {
+      "accessed_on": "2026-08-21",
+      "activity_status": "active",
+      "cadence": "In-person events when scheduled (most recent Tue Aug 18 hackathon at HKPC InnoSpace; 11 attendees)",
+      "city_slug": "hong-kong-hk",
+      "cohost_evidence_phrase": null,
+      "cohost_open": false,
+      "contact_info": null,
+      "evidence": {
+        "inference": "A small but currently-meeting builder group with a fresh August 2026 in-person hackathon; upgraded from the old package's 'intermittent' on the strength of today's dated event, though its tiny membership limits reach.",
+        "observed_facts": "Group page (fetched 2026-08-21, HTTP 200) shows 24 members and one recent event: 'Agent Creativity Hackathon for Autism Charity' Tue, Aug 18, 9:00 AM CST at HKPC 1/F, InnoSpace, Kowloon Tong, HK, 11 attendees. Group links point to theaibuilders.dev and social channels."
+      },
+      "focus_tags": [
+        "ai",
+        "machine_learning"
+      ],
+      "group_name": "AI Builders Hong Kong",
+      "member_size_public": 24,
+      "needs_human_verify": true,
+      "network": "AI Builders",
+      "source_title": "AI Builders Hong Kong (Meetup group page, 24 members)",
+      "source_url": "https://www.meetup.com/ai-builders-hong-kong/",
+      "typical_venue": "HKPC 1/F, InnoSpace, Kowloon Tong",
+      "uncertainty_notes": "Tiny member base (24); treat as niche reach channel.",
+      "verification_questions": [
+        "Confirm whether AI Builders Hong Kong schedules further 2026 in-person events."
+      ]
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "activity_status": "active",
+      "cadence": "Chapter page reports 'Local cadence 32 events in the last 12 months'; in-person meetups roughly monthly or more (2026-07-29 @ Wyndham Social, 2026-06-24 @ Dialogue in the Dark, 2026-05-31 East Tsim Sha Tsui networking night, 2026-05-07 @ Google AI Demo Night); next event Monday 2026-08-31",
+      "city_slug": "hong-kong-hk",
+      "cohost_evidence_phrase": null,
+      "cohost_open": false,
+      "contact_info": null,
+      "evidence": {
+        "inference": "A highly active local AI-builder community with strong in-person cadence, directly on-topic for a Decentralized AI Day audience map; member count is not published so member_size_public stays null. Cadence count changed from 33 (old package, 2026-08-11 fetch) to 32 events in the last 12 months on this fetch.",
+        "observed_facts": "Official chapter page (fetched 2026-08-21, HTTP 200) states 'Next event: Monday, August 31, 2026' — 'AI Tinkerers Hong Kong: August Meetup with OAX Foundation and GMAsia' 6PM to 9PM HKT, 76 attending — and 'Local cadence 32 events in the last 12 months'. Lists recent in-person meetups: July Meetup @ Wyndham Social (Wednesday, July 29th, +41 attendees); 'AI for Inclusion' at Dialogue in the Dark (June 24th, +54); Networking Night in East Tsim Sha Tsui (May 31); AI Demo Night @ Google (Thursday, May 7th, +149); a meetup at AWS ('Age...' April, +158 per event page history). Audience described as screened AI builders, founders, researchers and engineers; format live demos, technical Q&A, no sales pitches."
+      },
+      "focus_tags": [
+        "ai",
+        "machine_learning"
+      ],
+      "group_name": "AI Tinkerers Hong Kong",
+      "member_size_public": null,
+      "needs_human_verify": true,
+      "network": "AI Tinkerers",
+      "source_title": "AI Tinkerers Hong Kong - AI Meetups, Events, and Builder Demos 2026 (official chapter page)",
+      "source_url": "https://hong-kong.aitinkerers.org/",
+      "typical_venue": "Venues vary by event (Wyndham Social, Google Hong Kong, AWS Hong Kong, Dialogue in the Dark, East Tsim Sha Tsui)",
+      "uncertainty_notes": "No chapter-level member count or public contact URL on the chapter page (newsletter signup only).",
+      "verification_questions": [
+        "Confirm the typical venue rotation and whether the August 31, 2026 meetup is open to external builders who are not yet screened members."
+      ]
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "activity_status": "active",
+      "cadence": "In-person talks roughly monthly at AWS Hong Kong offices (Discovery Night Fri Aug 21; IT 圍爐夜 Fri Jul 24; Kubernetes Night Fri May 29; AgentCon collaboration Sat Apr 11)",
+      "city_slug": "hong-kong-hk",
+      "cohost_evidence_phrase": null,
+      "cohost_open": false,
+      "contact_info": null,
+      "evidence": {
+        "inference": "A very active cloud/AI-adjacent group meeting monthly in a corporate office tower; strong overlap for infrastructure/MLOps-flavored audiences and a proven host of agent-themed events (AgentCon collaboration in April).",
+        "observed_facts": "Group page (fetched 2026-08-21, HTTP 200) shows 1,321 members, 4.7 rating (126 reviews). Upcoming: 'AWS Discovery Night: Kiro Crew, Agent Toolkit and More' Fri, Aug 21, 7:00 PM CST at AWS Hong Kong, 20/F, Tower 535, 535 Jaffe Road (40 attendees showing). Recent past: 'AWS UG HK IT 圍爐夜: 軟件工程幾時會畀 AI 取代？(Cantonese)' Fri, Jul 24 same venue (45); 'Kubernetes Night — AWS UG x K...' Fri, May 29 (42); 'AWS UG Hong Kong x AgentCon H...' Sat, Apr 11."
+      },
+      "focus_tags": [
+        "ai",
+        "machine_learning",
+        "other"
+      ],
+      "group_name": "AWS User Group Hong Kong (AWS UGHK)",
+      "member_size_public": 1321,
+      "needs_human_verify": true,
+      "network": "AWS User Group Community",
+      "source_title": "AWS User Group Hong Kong (Meetup group page, 1,321 members)",
+      "source_url": "https://www.meetup.com/hong-kong-amazon-aws-user-group/",
+      "typical_venue": "AWS Hong Kong office, 20/F, Tower 535, 535 Jaffe Road, Wan Chai/Causeway Bay",
+      "uncertainty_notes": "Member count moved from 1,299 (old) to 1,321 (today).",
+      "verification_questions": [
+        "Confirm whether AWS UGHK has events planned around November-December 2026 and interest in cross-promotion."
+      ]
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "activity_status": "active",
+      "cadence": "Irregular in-person meetups through 2026 (Bitcoin BAHK Meet UP celebrating Frank's Records adoption on 2026-07-09; Pre-Conference Bitcoin Happy Hour Wed 2026-08-26, 6:00-9:00 PM, Central)",
+      "city_slug": "hong-kong-hk",
+      "cohost_evidence_phrase": "Event description states: 'Thank you to Tangem Wallet for the support. Sponsors welcome, contact us.'",
+      "cohost_open": true,
+      "contact_info": null,
+      "evidence": {
+        "inference": "An actively-meeting Bitcoin community with explicit sponsor-invitation language on its own event page — a genuine co-host/collaboration candidate for a web3-adjacent evening audience; included as a new record because the task named Bitcoin Association HK explicitly.",
+        "observed_facts": "Luma event pages fetched 2026-08-21 (HTTP 200). Upcoming: 'Bitcoin Asia PRE CONFERENCE Event / Bitcoin Association' — BAHK MEETUPS, Frank's Records, Hong Kong Island; 217 going; description 'Happy Hour! Bitcoin meetup in Hong Kong. Bitcoin Association of Hong Kong takes over Frank's Records the night before Bitcoin Asia opens. A record lounge on the 7th floor of 79 Wyndham Street, Central'; house rules and 'Thank you to Tangem Wallet for the support. Sponsors welcome, contact us.' Past: 'Bitcoin BAHK Meet UP - Celebrating Frank's Record Bitcoin payment Adoption' — 'This July 9th, we celebrate Frank's Records Bitcoin payment adoption' (Past Event badge), referencing 'HK Bitcoin City' launched in June by BAHK and The Whale Lounge. Search results additionally show bitcoin.org.hk advertising the same Wed 26 Aug 2026 6:00–9:00 PM Pre-Conference Happy Hour (bitcoin.org.hk itself timed out to direct fetches this run)."
+      },
+      "focus_tags": [
+        "web3",
+        "quant"
+      ],
+      "group_name": "Bitcoin Association of Hong Kong (BAHK)",
+      "member_size_public": null,
+      "needs_human_verify": true,
+      "network": "BAHK MEETUPS",
+      "source_title": "Bitcoin Asia PRE CONFERENCE Event / Bitcoin Association (BAHK MEETUPS on Luma)",
+      "source_url": "https://luma.com/4wvwlqbf",
+      "typical_venue": "Central bars/venues (Frank's Records, 7/F 79 Wyndham Street for the August happy hour)",
+      "uncertainty_notes": "bitcoin.org.hk did not respond to direct fetches this run (connection timeout x3); evidence here rests on its official Luma event pages plus search-result corroboration of the August date.",
+      "verification_questions": [
+        "Confirm whether BAHK runs open technical/community meetups in November-December 2026 and would welcome a co-branded community evening."
+      ]
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "activity_status": "active",
+      "cadence": "In-person events roughly monthly including weekends (Sat Aug 8 workshop, Sat Jul 18 networking; next Sat Aug 29 two-day weekend workshop)",
+      "city_slug": "hong-kong-hk",
+      "cohost_evidence_phrase": null,
+      "cohost_open": false,
+      "contact_info": null,
+      "evidence": {
+        "inference": "A large, currently-active general data-science/GenAI group with regular paid weekend workshops; audience overlap with a builder-focused DeAI Day is partial but real.",
+        "observed_facts": "Group page (fetched 2026-08-21, HTTP 200) shows 2,589 members, 'Hong Kong, HK', 4.7 rating (98 reviews). Upcoming: 'AI Agents workshops for Professionals - Hong Kong: 2 day weekend workshop' Sat, Aug 29, 10:00 AM CST (paid event via build-with-ai landing; 22 attendees noted). Recent past: Sat, Aug 8, 10:00 AM at 300 Hennessy Rd, Wan Chai (18 attendees) 'Generative AI: networking'; Sat, Jul 18 same venue (21 attendees)."
+      },
+      "focus_tags": [
+        "data_science",
+        "machine_learning",
+        "ai"
+      ],
+      "group_name": "Data Science & Generative AI Hong Kong",
+      "member_size_public": 2589,
+      "needs_human_verify": true,
+      "network": "independent",
+      "source_title": "Data Science & Generative AI Hong Kong (Meetup group page, 2,589 members)",
+      "source_url": "https://www.meetup.com/data-science-hk/",
+      "typical_venue": "300 Hennessy Rd, Wan Chai (recent workshops)",
+      "uncertainty_notes": "Workshops are ticketed ('paid for event'); free networking formats appear intermittently.",
+      "verification_questions": [
+        "Confirm whether the group runs its own events in November-December 2026 and any interest in cross-promotion."
+      ]
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "activity_status": "active",
+      "cadence": null,
+      "city_slug": "hong-kong-hk",
+      "cohost_evidence_phrase": null,
+      "cohost_open": false,
+      "contact_info": null,
+      "evidence": {
+        "inference": "An active, on-topic developer community with fresh August 2026 events (including an AI session); the empty upcoming-events slate is normal between announcements rather than a dormancy signal, but late-2026 scheduling needs confirmation.",
+        "observed_facts": "Chapter page (fetched 2026-08-21, HTTP 200) shows 2,586 group members. 'Upcoming events: There are currently no upcoming events.' Past events list: 2026-08-19 'GDGHK AI Session: On-Device Intelligence & Agentic Web' (free registration); 2026-08-07 'Flutter Basics for Web Developers'; 2026-07-29 '2026 AI Paper Reading Club #1'. Bilingual description: 'Hong Kong based non-profit community for developers to learn and share knowledge about Google technologies.'"
+      },
+      "focus_tags": [
+        "ai",
+        "machine_learning"
+      ],
+      "group_name": "GDG Hong Kong",
+      "member_size_public": 2586,
+      "needs_human_verify": true,
+      "network": "Google Developer Groups",
+      "source_title": "GDG Hong Kong (official Google Developer Groups chapter page, 2,586 group members)",
+      "source_url": "https://gdg.community.dev/gdg-hong-kong/",
+      "typical_venue": null,
+      "uncertainty_notes": "Old package member figure 2,578; today's page shows 2,586.",
+      "verification_questions": [
+        "Confirm the chapter's late-2026 event schedule and interest in cross-promoting a community event."
+      ]
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "activity_status": "active",
+      "cadence": "In-person meetups roughly monthly-to-bimonthly when running: S8E3 @ Maven Securities on Thursday 2026-07-09; prior in-person editions 2025-12-18 @ Bullish, 2025-10-15 (per page listing)",
+      "city_slug": "hong-kong-hk",
+      "cohost_evidence_phrase": "Group's own Meetup About text states: 'We are always on the lookout for high-quality speakers and sponsors: Contact us!'",
+      "cohost_open": true,
+      "contact_info": {
+        "label": "HKML Meetup group page (organizer messaging via meetup.com)",
+        "url": "https://www.meetup.com/hong-kong-machine-learning-meetup/"
+      },
+      "evidence": {
+        "inference": "An established AI/ML practitioner group whose own About text invites speaker/sponsor approaches — the strongest evidenced co-host candidate in the old package and re-confirmed verbatim on today's fetch. The quant-firm venues (Maven Securities, Bullish) also bridge the local quant crowd.",
+        "observed_facts": "Group page (fetched 2026-08-21, HTTP 200) shows 2,241 members, 'Hong Kong, HK', 4.7 rating (369 reviews). About text: 'Welcome to Hong Kong's hub for AI, machine learning, and data science enthusiasts!' with Main Talks (25-minute presentations), Lightning Pitches ('5-minute presentations from sponsors, startups, or individuals'), and networking sessions; it states 'We are always on the lookout for high-quality speakers and sponsors: Contact us!'. Most recent listed event: 'HKML S8E3 - Meetup @ Maven Securities' Thu, Jul 9, 6:15 PM CST, Maven Securities, 20/F Tai Tung Building, 8 Fleming Road, Wanchai, 18 attendees (Google Form registration required). Prior in-person editions: S7E5 @ Bullish, Thu Dec 18, 2025, The Centrium, 60 Wyndham St, Central (26 attendees); Oct 15, 2025 listing also present."
+      },
+      "focus_tags": [
+        "machine_learning",
+        "ai",
+        "quant"
+      ],
+      "group_name": "Hong Kong Machine Learning Meetup (HKML)",
+      "member_size_public": 2241,
+      "needs_human_verify": true,
+      "network": "independent",
+      "source_title": "Hong Kong Machine Learning Meetup (Meetup group page, 2,241 members)",
+      "source_url": "https://www.meetup.com/hong-kong-machine-learning-meetup/",
+      "typical_venue": "Varies by sponsor offices (Maven Securities Wanchai, Bullish Central)",
+      "uncertainty_notes": "The most recent event shown is 2026-07-09; no late-2026 events were published yet at fetch time, so cadence for Nov-Dec needs confirmation.",
+      "verification_questions": [
+        "Confirm the current meetup cadence for late 2026 and whether organizers would consider a joint session or cross-promotion with a local AI community event."
+      ]
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "activity_status": "active",
+      "cadence": "In-person meetups roughly monthly (HKPUG #100 on 2026-07-11 @ CityU, HKPUG #99 on 2026-06-27 @ PolyU; Summer Social announced for 2026-08-29)",
+      "city_slug": "hong-kong-hk",
+      "cohost_evidence_phrase": null,
+      "cohost_open": false,
+      "contact_info": null,
+      "evidence": {
+        "inference": "A consistently active Python community meeting in university classrooms — an honest audience channel and a possible venue-introduction route (its organizers run university-room meetups), though the group itself is Python-general rather than AI-specific.",
+        "observed_facts": "Group page (fetched 2026-08-21, HTTP 200) shows 1,770 members, 4.7 rating (82 reviews). Upcoming: 'HKPUG Summer Social 2026 — Good Food, Bad Bugs, Great Company' Sat Aug 29, 7:00 PM CST, Tsim Sha Tsui (provisional venue ASOK Thai Garden; details state Saturday, 29 August 2026, 19:00-21:00 HKT; 8 seats left at fetch time). Past events: 'HKPUG #100 - Trace the Clue, Find What's True: An Opik LLM Debugging Night' Sat, Jul 11 at Classroom P4701, 4/F Yeung Kin Man Acad Building (AC1), City University of Hong Kong, Kowloon Tong (32 attendees); '#99 - Lie to me, Python' Sat, Jun 27 at PolyU BC404 (19 attendees). Organizer Sammy Fung; linktr.ee/pyconhk in profile."
+      },
+      "focus_tags": [
+        "data_science",
+        "machine_learning"
+      ],
+      "group_name": "Hong Kong Python User Group (HKPUG)",
+      "member_size_public": 1770,
+      "needs_human_verify": true,
+      "network": "independent",
+      "source_title": "Hong Kong Python User Group (Meetup group page, 1,770 members)",
+      "source_url": "https://www.meetup.com/pythonhk/",
+      "typical_venue": "University classrooms (CityU AC1, PolyU) and social venues; linked to PyCon HK organizing (linktr.ee/pyconhk)",
+      "uncertainty_notes": "Member count moved from 1,769 (old) to 1,770 (today).",
+      "verification_questions": [
+        "Confirm whether HKPUG plans events in November-December 2026 (e.g. a PyCon HK season) and any interest in cross-promotion."
+      ]
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "activity_status": "active",
+      "cadence": "Regular meetups through 2026 per its own news/meetup listings (July 2026 PostgreSQL meetup; June 2026 MCP Server workshop with HKPUG; HKOSCon 2026 on June 6); latest dated meetup entries on the archive page are 2025-12-09 (#91 Ansible) and 2025-12-04 (#89 Rust for EDA)",
+      "city_slug": "hong-kong-hk",
+      "cohost_evidence_phrase": null,
+      "cohost_open": false,
+      "contact_info": null,
+      "evidence": {
+        "inference": "Still operating through 2026 (July 2026 newsletter/meetup reference, HKOSCon 2026 in June), though the structured meetup archive's newest dated entries are December 2025 — recorded as active based on the 2026 signals with a cadence question.",
+        "observed_facts": "Official site (fetched 2026-08-21, HTTP 200): the Meetups page describes 'regular meetups' and archives numbered meetups including '2025/12/09 (Tue) Open Source Hong Kong Meetup #91 Ansible', '2025/12/04 (Thu) OSHK meetup #89 – Rust for EDA', '2025/11/13 (Thu) OSHK meetup #90 – Queues for Kafka', '2025/06/28 (Sat) OSHK x HK Python User Group Workshop #89 A Taste of MCP Server'. The site's Latest Newsletter section references 'OSHK July Meetup: Don't Panic—Start Your PostgreSQL Journey' and 'Join HKOSCon 2026: Hong Kong's Premier Open Source Conference – June 6', and the archive sidebar lists months through July 2026."
+      },
+      "focus_tags": [
+        "mixed",
+        "other"
+      ],
+      "group_name": "Open Source Hong Kong (OSHK)",
+      "member_size_public": null,
+      "needs_human_verify": true,
+      "network": "Open Source Hong Kong",
+      "source_title": "Meetups - Open Source Hong Kong (official site)",
+      "source_url": "https://opensource.hk/meetups/",
+      "typical_venue": "Varies (office/university spaces); also runs PyCon HK and Hong Kong Open Source Conference",
+      "uncertainty_notes": "Member count not published on the site.",
+      "verification_questions": [
+        "Confirm the OSHK meetup schedule for November-December 2026."
+      ]
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "activity_status": "intermittent",
+      "cadence": null,
+      "city_slug": "hong-kong-hk",
+      "cohost_evidence_phrase": null,
+      "cohost_open": false,
+      "contact_info": null,
+      "evidence": {
+        "inference": "Effectively a discussion micro-group consuming global online content; retained only as an intermittent digital-first record with an in-person verification question.",
+        "observed_facts": "Group page (fetched 2026-08-21, HTTP 200) shows 4 members, 5.0 rating (1 review). Recent events are global/online items (e.g. 'Personal Harness Mon, Aug 17 · 7:00 AM CST · Online, 1 attendee'; 'Intro to Building With Pi...' with 2 attendees on another listing); 22 past events total. No Hong Kong in-person event is visible in the fetched text."
+      },
+      "focus_tags": [
+        "ai",
+        "machine_learning"
+      ],
+      "group_name": "Advanced AI Concepts-Hong Kong",
+      "member_size_public": 4,
+      "needs_human_verify": true,
+      "network": "independent",
+      "source_title": "Advanced AI Concepts-Hong Kong (Meetup group page, 4 members)",
+      "source_url": "https://www.meetup.com/advanced-ai-concepts-hong-kong/",
+      "typical_venue": null,
+      "uncertainty_notes": "Digital-first evidence keeps this out of active status per the anti-fabrication rules.",
+      "verification_questions": [
+        "Confirm whether this small group still convenes any in-person sessions (recent listed events are online/global watch parties with 1-2 attendees)."
+      ]
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "activity_status": "intermittent",
+      "cadence": null,
+      "city_slug": "hong-kong-hk",
+      "cohost_evidence_phrase": null,
+      "cohost_open": false,
+      "contact_info": null,
+      "evidence": {
+        "inference": "A student-run developer community at a vocational institute (IVE heritage) — a potential audience/venue-introduction channel into campus rooms, but without dated activity evidence it stays intermittent.",
+        "observed_facts": "Chapter page (fetched 2026-08-21, HTTP 200) shows 436 group members. About: 'The Google Developer Group on Campus (GDGC) at the Hong Kong Institute of Information Technology (HKIIT) (Formerly GDSC-IVE), a vibrant community dedicated to fostering technological growth and innovation... we facilitate both physical and virtual meetups'. No upcoming events and no dated past events rendered in the static fetch."
+      },
+      "focus_tags": [
+        "ai",
+        "mixed"
+      ],
+      "group_name": "GDG on Campus Hong Kong Institute of Information Technology (GDGC HKIIT)",
+      "member_size_public": 436,
+      "needs_human_verify": true,
+      "network": "Google Developer Groups on Campus",
+      "source_title": "GDG on Campus Hong Kong Institute of Information Technology - Hong Kong (official GDG chapter page, 436 group members)",
+      "source_url": "https://gdg.community.dev/gdg-on-campus-hong-kong-institute-of-information-technology-hong-kong-hong-kong/",
+      "typical_venue": null,
+      "uncertainty_notes": "Included as a new record from the task's university-society angle; no dated in-person fact was observable on the static page.",
+      "verification_questions": [
+        "Confirm whether GDGC HKIIT holds public (non-student) events or accepts external collaborators for late 2026."
+      ]
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "activity_status": "intermittent",
+      "cadence": null,
+      "city_slug": "hong-kong-hk",
+      "cohost_evidence_phrase": null,
+      "cohost_open": false,
+      "contact_info": null,
+      "evidence": {
+        "inference": "An on-topic AI community chapter that ran two in-person-ish flagships earlier in 2026 (AgentCon April, AgentCamp February) but currently shows zero upcoming events — intermittent until a late-2026 schedule appears.",
+        "observed_facts": "Chapter page (fetched 2026-08-21, HTTP 200) shows 'Global AI Hong Kong 532 Members 14 Events 5 Organizers 4.3 ★ Avg. rating' and 'Events by Global AI Hong Kong — Upcoming 0, Past 14'. Most recent listed events: 'AgentCon - Hong Kong' Saturday April 11, 2026, 09:00-17:00 Asia/Shanghai, In person; 'AgentCamp - Hong Kong' Saturday February 7, 2026 (Online/External items also listed)."
+      },
+      "focus_tags": [
+        "ai",
+        "machine_learning"
+      ],
+      "group_name": "Global AI Hong Kong",
+      "member_size_public": 532,
+      "needs_human_verify": true,
+      "network": "Global AI Community",
+      "source_title": "Global AI Hong Kong (official Global AI Community chapter page, 532 members, 14 events, 5 organizers)",
+      "source_url": "https://globalai.community/chapters/hong-kong/",
+      "typical_venue": null,
+      "uncertainty_notes": "Downgraded from the old package's 'active' after re-verification: the old basis was not reproducible on today's fetch.",
+      "verification_questions": [
+        "Confirm whether Global AI Hong Kong plans in-person events in late 2026 (the chapter page shows 'Upcoming 0 / Past 14')."
+      ]
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "activity_status": "intermittent",
+      "cadence": null,
+      "city_slug": "hong-kong-hk",
+      "cohost_evidence_phrase": null,
+      "cohost_open": false,
+      "contact_info": null,
+      "evidence": {
+        "inference": "A real chapter-launch event at a major tech conference, but the static page carries no year token or follow-on activity, so cadence is unverifiable from this fetch — intermittent.",
+        "observed_facts": "Luma event page (fetched 2026-08-21, HTTP 200): 'Global Women in AI Hong Kong Chapter Launch @ LEAP East', LEAP East Hall 3C, Level 3, Hong Kong Convention and Exhibition Centre; Hosted By Vaishnav S Kumar, Global Women In AI; 80 Went. Description: 'Join us for the official launch of the Global Women in AI (GWAI) Hong Kong Chapter, hosted as part of LEAP East at the Hong Kong Convention and Exhibition Centre.' No year token renders in the static text and no follow-up events appear on the page."
+      },
+      "focus_tags": [
+        "ai",
+        "other"
+      ],
+      "group_name": "Global Women in AI Hong Kong Chapter (GWAI HK)",
+      "member_size_public": null,
+      "needs_human_verify": true,
+      "network": "Global Women in AI",
+      "source_title": "Global Women in AI Hong Kong Chapter Launch @ LEAP East (Luma event page)",
+      "source_url": "https://luma.com/k9tr14sl",
+      "typical_venue": null,
+      "uncertainty_notes": "Old package also carried this group as intermittent; unchanged conclusion, refreshed wording.",
+      "verification_questions": [
+        "Confirm whether GWAI HK has run further events since its chapter launch and plans any for late 2026."
+      ]
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "activity_status": "intermittent",
+      "cadence": null,
+      "city_slug": "hong-kong-hk",
+      "cohost_evidence_phrase": null,
+      "cohost_open": false,
+      "contact_info": null,
+      "evidence": {
+        "inference": "A notable web3 institution (EF-backed physical hub) relevant to the audience map, but its public Luma surface shows one featured past event and no recurring cadence — intermittent pending evidence of an ongoing open events programme.",
+        "observed_facts": "Luma event page (fetched 2026-08-21, HTTP 200): 'HK Ethereum Community Hub: Grand Opening & Meetup (Welcome Ethereum Founder and EF President)', Presented by Hong Kong Ethereum Community Hub, Hosted By Hong Kong Ethereum Community Hub, ETHTAO, SNZ Holding; location 'Kowloon, Hong Kong'; Registration Past Event / Request to Join. Description: 'Asia's first physical Ethereum Community Hub — supported by the Ethereum Foundation's Ethereum Everywhere'; 'a platform for collaboration — bringing together co-working, curated events, and ecosystem initiatives'. Only one other date string appears on the page (Apr 21, 2026)."
+      },
+      "focus_tags": [
+        "web3"
+      ],
+      "group_name": "Hong Kong Ethereum Community Hub",
+      "member_size_public": null,
+      "needs_human_verify": true,
+      "network": "Hong Kong Ethereum Community Hub",
+      "source_title": "HK Ethereum Community Hub: Grand Opening & Meetup (Luma event page)",
+      "source_url": "https://luma.com/uf5v6joa",
+      "typical_venue": null,
+      "uncertainty_notes": "Old package carried this group as active; today's fetch supports only the single grand-opening anchor.",
+      "verification_questions": [
+        "Confirm the Hub's ongoing public event schedule beyond the grand opening (its Luma page shows a single featured past event) and whether the physical hub hosts open community events."
+      ]
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "activity_status": "intermittent",
+      "cadence": null,
+      "city_slug": "hong-kong-hk",
+      "cohost_evidence_phrase": null,
+      "cohost_open": false,
+      "contact_info": null,
+      "evidence": {
+        "inference": "The local chapter exists and ran in-person events as recently as December 2025, but 2026 activity on its own page is network-wide/virtual only — recorded honestly as intermittent pending confirmation of current local in-person cadence. Downgraded from the old package's 'active' classification after re-verification.",
+        "observed_facts": "Group page (fetched 2026-08-21, HTTP 200) shows 288 members, 'Hong Kong, HK', 4.6 rating (32 reviews), sponsored by NumFOCUS. Events list shows only network-wide items for 2026: 'PyData & PyCon Yerevan 2026' (Fri Jul 24, online/network) and 'PyData London 2026' (Fri Jun 5) — each with just 1 attendee from this group. Latest self-run in-person event visible: 'PyData Hong Kong In-Person Meetup: \"From Chaos to Causality\"' Tue Dec 16, 2025 at Hong Thai E... (venue truncated), plus Dec 9, 2025 item."
+      },
+      "focus_tags": [
+        "data_science",
+        "machine_learning"
+      ],
+      "group_name": "PyData Hong Kong",
+      "member_size_public": 288,
+      "needs_human_verify": true,
+      "network": "PyData",
+      "source_title": "PyData Hong Kong (Meetup group page, 288 members)",
+      "source_url": "https://www.meetup.com/pydata-hong-kong/",
+      "typical_venue": null,
+      "uncertainty_notes": "Member count unchanged from old package (288); the old record cited an active status that today's page does not support.",
+      "verification_questions": [
+        "Confirm whether PyData Hong Kong still runs its own local in-person meetups in 2026 (the group's own page lists only network-wide virtual/network events in 2026; its latest self-run in-person meetup shown is December 16, 2025)."
+      ]
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "activity_status": "intermittent",
+      "cadence": null,
+      "city_slug": "hong-kong-hk",
+      "cohost_evidence_phrase": null,
+      "cohost_open": false,
+      "contact_info": null,
+      "evidence": {
+        "inference": "A micro-group with a single low-turnout event; kept only for completeness of the R/data-science slice, clearly not a reach channel.",
+        "observed_facts": "Group page (fetched 2026-08-21, HTTP 200) shows 10 members, Cantonese-primary ('While we will be primarily using Cantonese, English speakers are also welcome'), and exactly 1 past event: '$100.00 Variance debunked tutorial Sun, May 31 · 11:00 PM CST, hong kong, Hong Kong, HK, 1 attendee' (an online-style listing)."
+      },
+      "focus_tags": [
+        "data_science"
+      ],
+      "group_name": "R programming hub (R 程式交流組)",
+      "member_size_public": 10,
+      "needs_human_verify": true,
+      "network": "independent",
+      "source_title": "R 程式交流組 R programming hub (Meetup group page, 10 members)",
+      "source_url": "https://www.meetup.com/r-programming/",
+      "typical_venue": null,
+      "uncertainty_notes": "Unchanged from old package classification.",
+      "verification_questions": [
+        "Confirm whether the R hub plans further in-person sessions (only one past event is listed, an online tutorial with 1 attendee)."
+      ]
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "activity_status": "intermittent",
+      "cadence": "Runs a standing events calendar with third-party conferences posted almost daily in August 2026 (e.g. Global Unicorn Summit Aug 24-26 @ HKCEC, GIS Aug 25-27 @ AsiaWorld-Expo, MedTech World Asia Aug 26-28 @ HKCEC) plus SME ReachOut webinar series (Aug 26, Oct 29, Nov 26, 2026); flagship festival history includes 'Hong Kong FinTech Week x StartmeupHK Festival 2025'",
+      "city_slug": "hong-kong-hk",
+      "cohost_evidence_phrase": null,
+      "cohost_open": false,
+      "contact_info": null,
+      "evidence": {
+        "inference": "Not a single meetup group but the government-side umbrella for Hong Kong's startup events: its live calendar is the discovery layer for ecosystem events around the target window, and its FinTech Week partnership anchors the November 2-6 cluster already recorded in the calendar research. Recorded as intermittent because it publishes third-party/webinar programming rather than its own recurring in-person meetups.",
+        "observed_facts": "Official StartmeupHK pages fetched 2026-08-21 (HTTP 200). Upcoming-events page lists dated entries: '24 Mon Aug 2026 – 26 Wed Aug 2026 | Hong Kong Convention and Exhibition Centre — Global Unicorn Summit ... frontier sectors such as artificial intelligence, biomedicine, new energy, new materials, fintech, robotics, smart vehicles, and integrated circuits'; '25 Tue Aug 2026 – 27 Thu Aug 2026 | The AsiaWorld-Expo — 2026 2nd Global Innovation Show (GIS)'; '26 Wed Aug 2026 – 28 Fri Aug 2026 | HKCEC — MedTech World Asia'; pagination shows pages 1..5 of listings. Homepage lists 'SME ReachOut' Webinar Series dates including 26th November 2026 and 29th October 2026, and links 'Hong Kong FinTech Week x StartmeupHK 2026'. Past Festivals page lists 'Hong Kong FinTech Week x StartmeupHK Festival 2025', 'StartmeupHK Festival 2024', '...2023', '...2022'."
+      },
+      "focus_tags": [
+        "mixed",
+        "ai",
+        "other"
+      ],
+      "group_name": "StartmeupHK (InvestHK startup community)",
+      "member_size_public": null,
+      "needs_human_verify": true,
+      "network": "StartmeupHK / InvestHK",
+      "source_title": "Upcoming events - StartmeupHK (official InvestHK initiative site)",
+      "source_url": "https://www.startmeup.hk/upcoming-events/",
+      "typical_venue": "n/a (government initiative; events citywide, often HKCEC/AsiaWorld-Expo)",
+      "uncertainty_notes": "Included as a new record because the task named the StartmeupHK ecosystem explicitly; no member-count concept applies.",
+      "verification_questions": [
+        "Confirm which StartmeupHK-curated community events land in November-December 2026 and whether a community-partnership route exists for independent events."
+      ]
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "activity_status": "intermittent",
+      "cadence": null,
+      "city_slug": "hong-kong-hk",
+      "cohost_evidence_phrase": null,
+      "cohost_open": false,
+      "contact_info": null,
+      "evidence": {
+        "inference": "A real, sponsored web3-community organizer whose Luma presence is confirmed, but the static page exposes no year token, so the last observable activity cannot be pinned to a year — recorded as intermittent with a dating question rather than assuming freshness.",
+        "observed_facts": "Luma organizer page (fetched 2026-08-21, HTTP 200): 'Women in Web3 Hong Kong Events — Stay up to date with the events the WiW3 HK community is organising', Hosted By WiW3 HK Team. Featured event card 'Women in Web3 HK - Stress Management Workshop' at Tune In Wellness Studio, 137/139 Johnston Rd, marked Past Event with waitlist; the description states the complimentary 60-minute session is 'on June 14th at 7 PM' and 'Sponsored by Animoca Brands'. No explicit year token renders on the static page."
+      },
+      "focus_tags": [
+        "web3",
+        "other"
+      ],
+      "group_name": "Women in Web3 Hong Kong (WiW3 HK)",
+      "member_size_public": null,
+      "needs_human_verify": true,
+      "network": "Women in Web3",
+      "source_title": "Women in Web3 Hong Kong events calendar (Luma)",
+      "source_url": "https://luma.com/5aw5ip6h",
+      "typical_venue": null,
+      "uncertainty_notes": "Old package classified this group active; the re-fetch could not substantiate a dated recent in-person fact, hence the downgrade.",
+      "verification_questions": [
+        "Confirm WiW3 HK's current event cadence for late 2026 (the Luma page shows a past-event card without a machine-readable year string)."
+      ]
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "activity_status": "dormant",
+      "cadence": null,
+      "city_slug": "hong-kong-hk",
+      "cohost_evidence_phrase": null,
+      "cohost_open": false,
+      "contact_info": null,
+      "evidence": {
+        "inference": "Historically significant web3 community brand, silent ~3 years on its own events page; dormant.",
+        "observed_facts": "Official site (fetched live via HTTP 200 during this research pass) describes 'a tight-knitted community in Hong Kong and the leading Web3 marketing agency in Asia' and an events archive ending in 2023: 'FROM (DEC 2022) OUR EVENTS WERE WELL-ATTENDED WITH 4000+ PEOPLE — 852 IRL x Pixelmon (July 28, 2023); 852 IRL Event #6 (June 23, 2023); 852 Bitcoin Pizza Day (May 22, 2023)...'. No event newer than July 2023 appears."
+      },
+      "focus_tags": [
+        "web3"
+      ],
+      "group_name": "852Web3",
+      "member_size_public": null,
+      "needs_human_verify": true,
+      "network": "852Web3",
+      "source_title": "852Web3 | Together, We Build. (official site)",
+      "source_url": "https://www.852web3.io/",
+      "typical_venue": null,
+      "uncertainty_notes": "Unchanged from old package classification.",
+      "verification_questions": [
+        "None required for planning purposes."
+      ]
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "activity_status": "dormant",
+      "cadence": null,
+      "city_slug": "hong-kong-hk",
+      "cohost_evidence_phrase": null,
+      "cohost_open": false,
+      "contact_info": null,
+      "evidence": {
+        "inference": "Large legacy membership but no observable activity within ~16 months of the access date; dormant per the 12-month rule.",
+        "observed_facts": "Group page (fetched live via HTTP 200 during this research pass) shows 3,561 members, 4.2 rating (226 reviews). Visible past events end years ago (e.g. 'Fri, Apr 19, 2024 · HKAI LAB Accelerator Program' 6 attendees; 'DevFest 2023 GDG Hong Kong' Dec 1, 2023; Tseung Kwan O education-venue events with 5 attendees). No events after April 2024 render in the fetched text."
+      },
+      "focus_tags": [
+        "ai"
+      ],
+      "group_name": "Artificial Intelligence Society of Hong Kong (AISHK)",
+      "member_size_public": 3561,
+      "needs_human_verify": true,
+      "network": "independent",
+      "source_title": "Artificial Intelligence Society of Hong Kong (AISHK) (Meetup group page, 3,561 members)",
+      "source_url": "https://www.meetup.com/chatbot-ai-hong-kong/",
+      "typical_venue": null,
+      "uncertainty_notes": "Unchanged from old package classification; member figure refreshed 3,563 -> 3,561.",
+      "verification_questions": [
+        "None required for planning purposes; if revived, confirm current organizers."
+      ]
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "activity_status": "dormant",
+      "cadence": null,
+      "city_slug": "hong-kong-hk",
+      "cohost_evidence_phrase": null,
+      "cohost_open": false,
+      "contact_info": null,
+      "evidence": {
+        "inference": "Legacy society with no observable recent activity; dormant.",
+        "observed_facts": "Group page (fetched live via HTTP 200 during this research pass) shows 633 members, 4.5 rating (4 reviews). Visible past events are from 2018 (e.g. 'A.S. Watson Hackathon 2018' at INFINITI LAB, Hopewell Centre, Wan Chai, Jan 2018-era listings with 17-18 attendees)."
+      },
+      "focus_tags": [
+        "data_science"
+      ],
+      "group_name": "Hong Kong Data Science Society (HKDSS)",
+      "member_size_public": 633,
+      "needs_human_verify": true,
+      "network": "Hong Kong Data Science Society",
+      "source_title": "Hong Kong Data Science Society (Meetup group page, 633 members)",
+      "source_url": "https://www.meetup.com/hong-kong-data-science-society/",
+      "typical_venue": null,
+      "uncertainty_notes": "Unchanged from old package classification.",
+      "verification_questions": [
+        "None required for planning purposes."
+      ]
+    }
+  ],
+  "country": "Hong Kong SAR",
+  "currency": "HKD",
+  "currency_assumptions": [
+    "Costs retain their published local amount and ISO code: HKD where the venue publishes HKD (Banyan Workspace HK$888/hr, Garage Society HKD 3,000/hr, the Hive Wan Chai HK$2,500/hr and HK$1,250/hr).",
+    "HKD-to-USD conversion: European Central Bank euro foreign exchange reference rates, retrieved 2026-08-21 (ECB daily feed, https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml): EUR 1 = USD 1.1555 and EUR 1 = HKD 9.0653, therefore USD 1 = HKD 7.845348 (computed 9.0653 / 1.1555) and 1 HKD = USD 0.1274640663. This is a documented, date-stamped source rate; it is a planning conversion, not a bank/venue quote.",
+    "All USD estimates are derived 8-hour calculations labeled in evidence.inference and rate_estimate_note; +taxes/fees and any AV add-ons are preserved as verification questions where the page does not show them included.",
+    "Good Lab's published '$900-$1,200' hourly figures carry no HKD marker and the page's Webflow currency setting declares USD; per the Run A currency rule the HKD amount is not page-visible, so its cost stays null with a confirm-currency question instead of an assumed conversion.",
+    "The Wave advertises no published price on its current event-space page; quote-based pricing confirmed via enquiry form."
+  ],
+  "date_window": "2026-11-01 through 2026-12-31",
+  "event_duration_hours": 8,
+  "generated_at": "2026-08-21T00:00:00Z",
+  "open_questions": [
+    "Assess audience adjacency: BHI showcases work in AI/ML applied to health data; partial overlap with AI/data-science builder audiences but primarily biomedical researchers.",
+    "Assess audience adjacency: the fintech/AI/Web3 crowd from FinTech Week (Nov 2-6) is the largest annual ecosystem gathering in Hong Kong; a Decentralized AI Day in mid-November could leverage residual audience momentum.",
+    "Assess audience adjacency: WINE is an academic conference on incentives, computation, and web economics with partial overlap to quant/data-science crowds; the attendee crowd is primarily academic researchers.",
+    "Assess whether DesignInspire (a free-admission design expo at HKCEC) materially increases Wan Chai transport and venue demand on the same weekend as Clockenflap.",
+    "Assess whether the festival weekend carries practical downtown access effects for a 50-person community event (large outdoor music festival crowds at Central Harbourfront).",
+    "Assess whether the Wedding Fair at HKCEC materially affects Wan Chai transport or hotel demand on that weekend.",
+    "Assess whether WinterFest harbourfront decorations and events in TST/Central materially increase weekend crowds in those districts throughout December.",
+    "Confirm Auditorium availability on a weekend date in the focus window.",
+    "Confirm availability of the event space on a weekend date in the focus window (24/7 access is advertised).",
+    "Confirm availability of the event space on a weekend date in the focus window.",
+    "Confirm availability on a weekend date in the focus window.",
+    "Confirm CEC availability on a weekend date in the focus window.",
+    "Confirm that the 40-seated capacity can be augmented with standing overflow to accommodate 50 attendees in a talk-style format.",
+    "Confirm that WINE 2026 remains an in-person event at the University of Hong Kong on Dec 1-4, 2026 (the official site states these dates and 'WINE 2026 will be an in-person event').",
+    "Confirm the 124th Hong Kong Wedding Fair dates (Dec 11-13, 2026 at HKCEC Wan Chai) with the organiser's official page.",
+    "Confirm the 2,500 sq ft space (20 seated / 60 standing per the official page) comfortably seats 50 in a talk configuration.",
+    "Confirm the all-in hire rate for the Auditorium for a 50-person event (the official Blueprint page publishes venue descriptions but no numeric price; the team issues proposals on enquiry).",
+    "Confirm the applicable hourly rate for a Saturday 8-hour, 50-person booking (the venue's own guide publishes a wide range '約 HKD $270–$3,800 / 小時' across spaces and time slots without mapping rates to specific rooms; NGO/social-enterprise discounts mentioned).",
+    "Confirm the Auditorium's 50-person tiered seating fits a talk-style DeAI Day (published capacity 50 persons with 2 ceiling-mounted projectors, drop-down screens, 2 handheld + 2 clip microphones, built-in speakers).",
+    "Confirm the bookable window and any weekend staffed-hours limits despite advertised 24/7 access.",
+    "Confirm the bookable window and any weekend staffed-hours limits.",
+    "Confirm the bookable window on weekends (the page publishes no opening hours).",
+    "Confirm the bookable window on weekends and any operational hours limits.",
+    "Confirm the bookable window on weekends and any staffed-hours limits for external hirers.",
+    "Confirm the bookable window on weekends and any staffed-hours limits.",
+    "Confirm the bookable window on weekends and any venue hire terms.",
+    "Confirm the bookable window on weekends and whether the 2-hour minimum applies.",
+    "Confirm the CEC rental rate for a roughly 50-person Saturday event (cyberport.hk event-venue pages returned HTTP 403 to this research environment on 2026-08-21; enquiry required via the official site).",
+    "Confirm the chapter's late-2026 event schedule and interest in cross-promoting a community event.",
+    "Confirm the currency of the published rate table ($900-$1,200/hr by rate tier and time slot): are these HKD or USD? The page is bilingual (EN/zh) and uses the $ symbol without an explicit ISO currency marker.",
+    "Confirm the current meetup cadence for late 2026 and whether organizers would consider a joint session or cross-promotion with a local AI community event.",
+    "Confirm the current rental rate for the event space (the official event-space page is quote-based with no published price; 'Call or email us with the details of your enquiry and we will quickly reply with a quote').",
+    "Confirm the current theatre-style capacity of the CEC auditorium (a MICE venue guide fetched 2026-08-21 states 'up to 330 attendees for theatre-style seating or 132 guests for a classroom layout'; the official page could not be fetched directly).",
+    "Confirm the current theatre-style capacity of the Charles K. Kao Auditorium (the official HKSTP MICE page publishes no per-room numbers; the TTGmice directory table lists 'Charles K. Kao Auditorium & Pre-Function Hall' at 284 theatre / 284 sq m).",
+    "Confirm the exact all-in rate for the 21F Indoor Space (published HK$2,500/hr; 8-hour estimate 2,549.28 USD at ECB 2026-08-21 rate).",
+    "Confirm the exact all-in rate for the 21F Rooftop Terrace (published HK$1,250/hr; 8-hour estimate 1,274.64 USD at ECB 2026-08-21 rate).",
+    "Confirm the exact all-in Saturday rate for the event space (published 'from HKD 3,000/hour'; 8-hour estimate 3,059.14 USD at the ECB 2026-08-21 rate).",
+    "Confirm the exact all-in weekend total including taxes/fees (published from HK$888/hour; 8-hour estimate 905.50 USD at the ECB 2026-08-21 rate).",
+    "Confirm the exact WinterFest 2026 programme dates and Christmas tree lighting schedule with the Hong Kong Tourism Board (the official DiscoverHK page is Cloudflare-blocked; secondary sources indicate the festival runs through December each year).",
+    "Confirm the final 2026 festival dates and venue (official clockenflap.com states December 4-6, 2026 at Central Harbourfront Event Space; lifestyleasia.hk and littlestepsasia.com corroborate the dates).",
+    "Confirm the final BODW 2026 Summit dates and venue (official 2026.bodw.com/en states November 18-20 at HKCEC).",
+    "Confirm the Hub's ongoing public event schedule beyond the grand opening (its Luma page shows a single featured past event) and whether the physical hub hosts open community events.",
+    "Confirm the main-conference venue (traditionally HKCEC); the official fintechweek.hk site states November 2-6, 2026 and lists 45,000+ global leaders and 1,000+ speakers.",
+    "Confirm the MICE hire rate for the Charles K. Kao Auditorium for a roughly 50-person Saturday event (the official HKSTP MICE page links a PRICE LIST and Online Booking Form; no numeric rate is visible in the fetched page; contact mice@hkstp.org / +852 2639 8301).",
+    "Confirm the official 2026 dates with the Hong Kong Tourism Board (the official DiscoverHK page is Cloudflare-blocked; dailypeter.com, foodwithkidappeal.com and hungrytimes.com all state October 29 - November 1, 2026 at Central Harbourfront).",
+    "Confirm the official DesignInspire 2026 dates and venue (HK01 listing states Dec 4-6 at HKCEC; the official designinspire.hk page should be verified for final confirmation).",
+    "Confirm the OSHK meetup schedule for November-December 2026.",
+    "Confirm the rental rate for QUBE for a 50-person event (the official PMQ event-venue page states 'Expression of Interest' with an enquiry form; no published price).",
+    "Confirm the seating configuration for 50 attendees on the outdoor terrace (published 40 seated / 80 standing).",
+    "Confirm the typical venue rotation and whether the August 31, 2026 meetup is open to external builders who are not yet screened members.",
+    "Confirm whether AI Builders Hong Kong schedules further 2026 in-person events.",
+    "Confirm whether an outdoor rooftop terrace provides adequate projection/screen facilities for a talk-style event in December.",
+    "Confirm whether AWS UGHK has events planned around November-December 2026 and interest in cross-promotion.",
+    "Confirm whether BAHK runs open technical/community meetups in November-December 2026 and would welcome a co-branded community evening.",
+    "Confirm whether GDGC HKIIT holds public (non-student) events or accepts external collaborators for late 2026.",
+    "Confirm whether Global AI Hong Kong plans in-person events in late 2026 (the chapter page shows 'Upcoming 0 / Past 14').",
+    "Confirm whether GWAI HK has run further events since its chapter launch and plans any for late 2026.",
+    "Confirm whether HKPUG plans events in November-December 2026 (e.g. a PyCon HK season) and any interest in cross-promotion.",
+    "Confirm whether PyData Hong Kong still runs its own local in-person meetups in 2026 (the group's own page lists only network-wide virtual/network events in 2026; its latest self-run in-person meetup shown is December 16, 2025).",
+    "Confirm whether QUBE is equipped with projection/screen facilities for a talk-style event.",
+    "Confirm whether the 'AV System' includes a projector and screen for presentations (the page lists 'AV System / Table x 12 / Whiteboard and flipchart board').",
+    "Confirm whether the 'AV systems' include a projector and projection screen for presentations (the page lists 'AV systems, high-speed WiFi' without itemizing the equipment).",
+    "Confirm whether the CEC provides projector/screen facilities for presentations.",
+    "Confirm whether the group runs its own events in November-December 2026 and any interest in cross-promotion.",
+    "Confirm whether the R hub plans further in-person sessions (only one past event is listed, an online tutorial with 1 attendee).",
+    "Confirm whether this small group still convenes any in-person sessions (recent listed events are online/global watch parties with 1-2 attendees).",
+    "Confirm which configuration suits a 50-person talk-style event best (Auditorium vs smaller Meeting Rooms such as INNO2 Studio or Meeting Room 1) and whether a smaller room gives better fit and value.",
+    "Confirm which location (Tower 535 Causeway Bay or Beverly House Wan Chai) would host a 50-person event and its specific room assignment.",
+    "Confirm which space configuration seats 50 for a talk-style event (self-published figures: 2,200 sq ft, up to 300 persons across workshop/theatre/classroom/board layouts).",
+    "Confirm which StartmeupHK-curated community events land in November-December 2026 and whether a community-partnership route exists for independent events.",
+    "Confirm WiFi availability in QUBE.",
+    "Confirm WiFi availability in the event space (the page lists screen/projector/microphones/sound and catering but does not publish a WiFi statement).",
+    "Confirm WiFi availability in the Training Space (the venue-hiring page does not publish a WiFi statement).",
+    "Confirm WiFi coverage (the guide lists a full AV system and hybrid-meeting technology but no explicit WiFi statement in the fetched text).",
+    "Confirm WiFi coverage in the Auditorium (the event-venue page does not publish a WiFi statement).",
+    "Confirm WiFi coverage in the booked space.",
+    "Confirm WiW3 HK's current event cadence for late 2026 (the Luma page shows a past-event card without a machine-readable year string).",
+    "Cyberport event-venue-space pages returned HTTP 403 (Cloudflare-blocked). The official event-space offering should be re-verified.",
+    "Good Lab (The Future Workshop) has relocated to Lai Chi Kok. The published rate table ($900-$1,200/hr) carries no explicit currency marker; confirm whether these are HKD or USD.",
+    "Hong Kong venue booking platforms are not covered by the evidence-verified venue-platform registry; no active platform coverage exists for hong-kong-hk. Standard web discovery was used exclusively.",
+    "None required for planning purposes.",
+    "None required for planning purposes; if revived, confirm current organizers.",
+    "Re-verify the official dates and venue on the embs.org event page (HTTP 403 from this environment; search snippet states 'BHI 2026 will take place in Hong Kong, China, on December 12-15, 2026' and mentions 'AI, machine learning, and health informatics').",
+    "The festival's final day (November 1) falls on the first day of the research coverage window; assess whether harbourfront crowds on that day affect nearby weekend venue logistics.",
+    "The Wave event-space page is quote-based with no published rate. Confirm the current all-in rate and currency.",
+    "Trusted-venue matching for hong-kong-hk is expected to be ZERO: references/trusted_venues.json contains no hong-kong-hk seed. This is a provenance result, not a suitability conclusion.",
+    "Verify whether BODW Summit attendance at HKCEC materially affects Wan Chai transport, road access, or hotel demand during November 18-20."
+  ],
+  "recommendation": {
+    "rationale": "Run A evidence package only. Venue selection deferred: Joe selects from eligible/shortlist_ready results after scoring. Recommended target_date 2026-11-14 (Saturday) is carried in city_input for summary rendering.",
+    "selected_venue": null,
+    "unresolved_checks": [
+      "Assess audience adjacency: BHI showcases work in AI/ML applied to health data; partial overlap with AI/data-science builder audiences but primarily biomedical researchers.",
+      "Assess audience adjacency: the fintech/AI/Web3 crowd from FinTech Week (Nov 2-6) is the largest annual ecosystem gathering in Hong Kong; a Decentralized AI Day in mid-November could leverage residual audience momentum.",
+      "Assess audience adjacency: WINE is an academic conference on incentives, computation, and web economics with partial overlap to quant/data-science crowds; the attendee crowd is primarily academic researchers.",
+      "Assess whether DesignInspire (a free-admission design expo at HKCEC) materially increases Wan Chai transport and venue demand on the same weekend as Clockenflap.",
+      "Assess whether the festival weekend carries practical downtown access effects for a 50-person community event (large outdoor music festival crowds at Central Harbourfront).",
+      "Assess whether the Wedding Fair at HKCEC materially affects Wan Chai transport or hotel demand on that weekend.",
+      "Assess whether WinterFest harbourfront decorations and events in TST/Central materially increase weekend crowds in those districts throughout December.",
+      "Confirm Auditorium availability on a weekend date in the focus window.",
+      "Confirm availability of the event space on a weekend date in the focus window (24/7 access is advertised).",
+      "Confirm availability of the event space on a weekend date in the focus window.",
+      "Confirm availability on a weekend date in the focus window.",
+      "Confirm CEC availability on a weekend date in the focus window.",
+      "Confirm that the 40-seated capacity can be augmented with standing overflow to accommodate 50 attendees in a talk-style format.",
+      "Confirm that WINE 2026 remains an in-person event at the University of Hong Kong on Dec 1-4, 2026 (the official site states these dates and 'WINE 2026 will be an in-person event').",
+      "Confirm the 124th Hong Kong Wedding Fair dates (Dec 11-13, 2026 at HKCEC Wan Chai) with the organiser's official page.",
+      "Confirm the 2,500 sq ft space (20 seated / 60 standing per the official page) comfortably seats 50 in a talk configuration.",
+      "Confirm the all-in hire rate for the Auditorium for a 50-person event (the official Blueprint page publishes venue descriptions but no numeric price; the team issues proposals on enquiry).",
+      "Confirm the applicable hourly rate for a Saturday 8-hour, 50-person booking (the venue's own guide publishes a wide range '約 HKD $270–$3,800 / 小時' across spaces and time slots without mapping rates to specific rooms; NGO/social-enterprise discounts mentioned).",
+      "Confirm the Auditorium's 50-person tiered seating fits a talk-style DeAI Day (published capacity 50 persons with 2 ceiling-mounted projectors, drop-down screens, 2 handheld + 2 clip microphones, built-in speakers).",
+      "Confirm the bookable window and any weekend staffed-hours limits despite advertised 24/7 access.",
+      "Confirm the bookable window and any weekend staffed-hours limits.",
+      "Confirm the bookable window on weekends (the page publishes no opening hours).",
+      "Confirm the bookable window on weekends and any operational hours limits.",
+      "Confirm the bookable window on weekends and any staffed-hours limits for external hirers.",
+      "Confirm the bookable window on weekends and any staffed-hours limits.",
+      "Confirm the bookable window on weekends and any venue hire terms.",
+      "Confirm the bookable window on weekends and whether the 2-hour minimum applies.",
+      "Confirm the CEC rental rate for a roughly 50-person Saturday event (cyberport.hk event-venue pages returned HTTP 403 to this research environment on 2026-08-21; enquiry required via the official site).",
+      "Confirm the chapter's late-2026 event schedule and interest in cross-promoting a community event.",
+      "Confirm the currency of the published rate table ($900-$1,200/hr by rate tier and time slot): are these HKD or USD? The page is bilingual (EN/zh) and uses the $ symbol without an explicit ISO currency marker.",
+      "Confirm the current meetup cadence for late 2026 and whether organizers would consider a joint session or cross-promotion with a local AI community event.",
+      "Confirm the current rental rate for the event space (the official event-space page is quote-based with no published price; 'Call or email us with the details of your enquiry and we will quickly reply with a quote').",
+      "Confirm the current theatre-style capacity of the CEC auditorium (a MICE venue guide fetched 2026-08-21 states 'up to 330 attendees for theatre-style seating or 132 guests for a classroom layout'; the official page could not be fetched directly).",
+      "Confirm the current theatre-style capacity of the Charles K. Kao Auditorium (the official HKSTP MICE page publishes no per-room numbers; the TTGmice directory table lists 'Charles K. Kao Auditorium & Pre-Function Hall' at 284 theatre / 284 sq m).",
+      "Confirm the exact all-in rate for the 21F Indoor Space (published HK$2,500/hr; 8-hour estimate 2,549.28 USD at ECB 2026-08-21 rate).",
+      "Confirm the exact all-in rate for the 21F Rooftop Terrace (published HK$1,250/hr; 8-hour estimate 1,274.64 USD at ECB 2026-08-21 rate).",
+      "Confirm the exact all-in Saturday rate for the event space (published 'from HKD 3,000/hour'; 8-hour estimate 3,059.14 USD at the ECB 2026-08-21 rate).",
+      "Confirm the exact all-in weekend total including taxes/fees (published from HK$888/hour; 8-hour estimate 905.50 USD at the ECB 2026-08-21 rate).",
+      "Confirm the exact WinterFest 2026 programme dates and Christmas tree lighting schedule with the Hong Kong Tourism Board (the official DiscoverHK page is Cloudflare-blocked; secondary sources indicate the festival runs through December each year).",
+      "Confirm the final 2026 festival dates and venue (official clockenflap.com states December 4-6, 2026 at Central Harbourfront Event Space; lifestyleasia.hk and littlestepsasia.com corroborate the dates).",
+      "Confirm the final BODW 2026 Summit dates and venue (official 2026.bodw.com/en states November 18-20 at HKCEC).",
+      "Confirm the Hub's ongoing public event schedule beyond the grand opening (its Luma page shows a single featured past event) and whether the physical hub hosts open community events.",
+      "Confirm the main-conference venue (traditionally HKCEC); the official fintechweek.hk site states November 2-6, 2026 and lists 45,000+ global leaders and 1,000+ speakers.",
+      "Confirm the MICE hire rate for the Charles K. Kao Auditorium for a roughly 50-person Saturday event (the official HKSTP MICE page links a PRICE LIST and Online Booking Form; no numeric rate is visible in the fetched page; contact mice@hkstp.org / +852 2639 8301).",
+      "Confirm the official 2026 dates with the Hong Kong Tourism Board (the official DiscoverHK page is Cloudflare-blocked; dailypeter.com, foodwithkidappeal.com and hungrytimes.com all state October 29 - November 1, 2026 at Central Harbourfront).",
+      "Confirm the official DesignInspire 2026 dates and venue (HK01 listing states Dec 4-6 at HKCEC; the official designinspire.hk page should be verified for final confirmation).",
+      "Confirm the OSHK meetup schedule for November-December 2026.",
+      "Confirm the rental rate for QUBE for a 50-person event (the official PMQ event-venue page states 'Expression of Interest' with an enquiry form; no published price).",
+      "Confirm the seating configuration for 50 attendees on the outdoor terrace (published 40 seated / 80 standing).",
+      "Confirm the typical venue rotation and whether the August 31, 2026 meetup is open to external builders who are not yet screened members.",
+      "Confirm whether AI Builders Hong Kong schedules further 2026 in-person events.",
+      "Confirm whether an outdoor rooftop terrace provides adequate projection/screen facilities for a talk-style event in December.",
+      "Confirm whether AWS UGHK has events planned around November-December 2026 and interest in cross-promotion.",
+      "Confirm whether BAHK runs open technical/community meetups in November-December 2026 and would welcome a co-branded community evening.",
+      "Confirm whether GDGC HKIIT holds public (non-student) events or accepts external collaborators for late 2026.",
+      "Confirm whether Global AI Hong Kong plans in-person events in late 2026 (the chapter page shows 'Upcoming 0 / Past 14').",
+      "Confirm whether GWAI HK has run further events since its chapter launch and plans any for late 2026.",
+      "Confirm whether HKPUG plans events in November-December 2026 (e.g. a PyCon HK season) and any interest in cross-promotion.",
+      "Confirm whether PyData Hong Kong still runs its own local in-person meetups in 2026 (the group's own page lists only network-wide virtual/network events in 2026; its latest self-run in-person meetup shown is December 16, 2025).",
+      "Confirm whether QUBE is equipped with projection/screen facilities for a talk-style event.",
+      "Confirm whether the 'AV System' includes a projector and screen for presentations (the page lists 'AV System / Table x 12 / Whiteboard and flipchart board').",
+      "Confirm whether the 'AV systems' include a projector and projection screen for presentations (the page lists 'AV systems, high-speed WiFi' without itemizing the equipment).",
+      "Confirm whether the CEC provides projector/screen facilities for presentations.",
+      "Confirm whether the group runs its own events in November-December 2026 and any interest in cross-promotion.",
+      "Confirm whether the R hub plans further in-person sessions (only one past event is listed, an online tutorial with 1 attendee).",
+      "Confirm whether this small group still convenes any in-person sessions (recent listed events are online/global watch parties with 1-2 attendees).",
+      "Confirm which configuration suits a 50-person talk-style event best (Auditorium vs smaller Meeting Rooms such as INNO2 Studio or Meeting Room 1) and whether a smaller room gives better fit and value.",
+      "Confirm which location (Tower 535 Causeway Bay or Beverly House Wan Chai) would host a 50-person event and its specific room assignment.",
+      "Confirm which space configuration seats 50 for a talk-style event (self-published figures: 2,200 sq ft, up to 300 persons across workshop/theatre/classroom/board layouts).",
+      "Confirm which StartmeupHK-curated community events land in November-December 2026 and whether a community-partnership route exists for independent events.",
+      "Confirm WiFi availability in QUBE.",
+      "Confirm WiFi availability in the event space (the page lists screen/projector/microphones/sound and catering but does not publish a WiFi statement).",
+      "Confirm WiFi availability in the Training Space (the venue-hiring page does not publish a WiFi statement).",
+      "Confirm WiFi coverage (the guide lists a full AV system and hybrid-meeting technology but no explicit WiFi statement in the fetched text).",
+      "Confirm WiFi coverage in the Auditorium (the event-venue page does not publish a WiFi statement).",
+      "Confirm WiFi coverage in the booked space.",
+      "Confirm WiW3 HK's current event cadence for late 2026 (the Luma page shows a past-event card without a machine-readable year string).",
+      "Cyberport event-venue-space pages returned HTTP 403 (Cloudflare-blocked). The official event-space offering should be re-verified.",
+      "Good Lab (The Future Workshop) has relocated to Lai Chi Kok. The published rate table ($900-$1,200/hr) carries no explicit currency marker; confirm whether these are HKD or USD.",
+      "Hong Kong venue booking platforms are not covered by the evidence-verified venue-platform registry; no active platform coverage exists for hong-kong-hk. Standard web discovery was used exclusively.",
+      "None required for planning purposes.",
+      "None required for planning purposes; if revived, confirm current organizers.",
+      "Re-verify the official dates and venue on the embs.org event page (HTTP 403 from this environment; search snippet states 'BHI 2026 will take place in Hong Kong, China, on December 12-15, 2026' and mentions 'AI, machine learning, and health informatics').",
+      "The festival's final day (November 1) falls on the first day of the research coverage window; assess whether harbourfront crowds on that day affect nearby weekend venue logistics.",
+      "The Wave event-space page is quote-based with no published rate. Confirm the current all-in rate and currency.",
+      "Trusted-venue matching for hong-kong-hk is expected to be ZERO: references/trusted_venues.json contains no hong-kong-hk seed. This is a provenance result, not a suitability conclusion.",
+      "Verify whether BODW Summit attendance at HKCEC materially affects Wan Chai transport, road access, or hotel demand during November 18-20."
+    ]
+  },
+  "schema_version": "2.4",
+  "shortlist_ready_venues": [
+    {
+      "accessed_on": "2026-08-21",
+      "address": "Suite 1204, Eastern Harbour Centre, 28 Hoi Chak Street, Quarry Bay, Hong Kong",
+      "booking_url": "https://banyanworkspace.com/corporate-events/",
+      "capacity_basis": "standing",
+      "capacity_comfortable": 60,
+      "catering_policy": "in_house_available",
+      "city_slug": "hong-kong-hk",
+      "closing_time": null,
+      "cost_basis": "estimated_from_rate",
+      "cost_local_amount": 7104,
+      "cost_local_currency": "HKD",
+      "cost_rate_unit": "hour",
+      "estimated_cost_usd": 905.5,
+      "estimated_hours": 8,
+      "event_window_evidence": null,
+      "event_window_status": "unknown",
+      "evidence": {
+        "geo": "https://banyanworkspace.com/corporate-events/",
+        "inference": "8-hour estimate at the documented ECB 2026-08-21 planning rate is HK$7,104 = 905.50 USD, well within the USD 5,000 soft budget; capacity 60 standing comfortably covers 50 standing but seated capacity is listed as 20, so a room_assignment question is required; screen confirmed, WiFi unstated (question).",
+        "observed_facts": "Official Banyan Workspace corporate-events page (fetched 2026-08-21, HTTP 200) states Event Spaces 'up to 20 people (depending on layout) from HK$888 per hour', describes the versatile space spanning 2,500 square feet with high ceiling and Victoria Harbour views, 20 seated / 60 standing, tech equipment (screen, projector, microphones and sound systems), flexible layouts with whiteboards, catering services (coffee, tea, snacks), 24/7 access, and dedicated support; address Suite 1204, Eastern Harbour Centre, 28 Hoi Chak Street, Quarry Bay, MTR Quarry Bay Exit C."
+      },
+      "hourly_rate_local": 888,
+      "hourly_rate_usd": 113.18809087,
+      "latitude": 22.29,
+      "longitude": 114.211,
+      "max_booking_hours": null,
+      "name": "Banyan Workspace — Event Space",
+      "needs_human_verify": true,
+      "opening_hours": "24/7 (advertised)",
+      "rate_currency": "HKD",
+      "rate_estimate_note": "Official Banyan Workspace corporate-events page (fetched 2026-08-21, HTTP 200) publishes Event Spaces from HK$888 per hour for a 2,500 sq ft space with 20 seated / 60 standing (depending on layout); 8-hour estimate = 888 x 8 = HK$7,104 converted at the ECB 2026-08-21 reference rate USD 1 = HKD 7.845348 (EUR 1 = USD 1.1555, EUR 1 = HKD 9.0653) = 905.50 USD. Taxes/fees and catering extras not included; not a written quote.",
+      "recording_suitability": "likely_good",
+      "score": 0.7096,
+      "score_breakdown": {
+        "booking_path": {
+          "contribution": 0.1,
+          "factor": 1.0,
+          "weight": 0.1
+        },
+        "budget_efficiency": {
+          "contribution": 0.1638,
+          "factor": 0.8189,
+          "weight": 0.2
+        },
+        "capacity_fit": {
+          "contribution": 0.2,
+          "factor": 1.0,
+          "weight": 0.2
+        },
+        "catering_flexibility": {
+          "contribution": 0.105,
+          "factor": 0.7,
+          "weight": 0.15
+        },
+        "event_window_fit": {
+          "contribution": 0.025,
+          "factor": 0.5,
+          "weight": 0.05
+        },
+        "evidence_freshness": {
+          "contribution": 0.0083,
+          "factor": 0.0833,
+          "weight": 0.1
+        },
+        "recording_suitability": {
+          "contribution": 0.0825,
+          "factor": 0.55,
+          "weight": 0.15
+        },
+        "technical_readiness": {
+          "contribution": 0.025,
+          "factor": 0.5,
+          "weight": 0.05
+        },
+        "total": 0.7096
+      },
+      "screen_status": "confirmed",
+      "source_title": "Event & Meeting Venues — Banyan Workspace (official): Event Spaces from HK$888 per hour, 2,500 sq ft with Victoria Harbour views, 20 seated / 60 standing, screen, projector, microphones and sound systems, 24/7 access; Suite 1204, Eastern Harbour Centre, 28 Hoi Chak Street, Quarry Bay",
+      "source_url": "https://banyanworkspace.com/corporate-events/",
+      "tier_reasons": [],
+      "venue_flags": [
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "venue_tier": "shortlist_ready",
+      "verification_question_kinds": [
+        "final_quote",
+        "wifi",
+        "availability",
+        "event_window",
+        "room_assignment"
+      ],
+      "verification_questions": [
+        "Confirm the exact all-in weekend total including taxes/fees (published from HK$888/hour; 8-hour estimate 905.50 USD at the ECB 2026-08-21 rate).",
+        "Confirm WiFi availability in the event space (the page lists screen/projector/microphones/sound and catering but does not publish a WiFi statement).",
+        "Confirm availability of the event space on a weekend date in the focus window (24/7 access is advertised).",
+        "Confirm the bookable window and any weekend staffed-hours limits despite advertised 24/7 access.",
+        "Confirm the 2,500 sq ft space (20 seated / 60 standing per the official page) comfortably seats 50 in a talk configuration."
+      ],
+      "wifi_status": "unknown"
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "address": "3/F Two Taikoo Place, 979 King's Road, Quarry Bay, Hong Kong",
+      "booking_url": "https://blueprint.swireproperties.com/en/event-venues/venues-up-to-50-persons/",
+      "capacity_basis": "seated",
+      "capacity_comfortable": 50,
+      "catering_policy": "in_house_available",
+      "city_slug": "hong-kong-hk",
+      "closing_time": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "cost_rate_unit": "unknown",
+      "estimated_cost_usd": null,
+      "estimated_hours": null,
+      "event_window_evidence": null,
+      "event_window_status": "unknown",
+      "evidence": {
+        "geo": "https://blueprint.swireproperties.com/en/event-venues/venues-up-to-50-persons/",
+        "inference": "Capacity 50 exactly matches the target event; screen is confirmed from the published projector/screen list; WiFi is not stated on this page, so it stays a verification question; no numeric price is published (the event team provides proposals), so cost stays unknown with a confirm-cost question.",
+        "observed_facts": "Official Blueprint event-venue page (fetched 2026-08-21, HTTP 200) describes the Auditorium for up to 50 persons with tiered cushioned seating, 2 sets of ceiling-mounted projectors and drop-down projection screens, 2 handheld microphones plus 2 ear-set/clip microphones, and built-in speakers; theatre-style setup ideal for presentations, fireside chats, seminars, screenings and panel discussions. Blueprint is owned and operated by Swire Properties at 3/F Two Taikoo Place, Quarry Bay. The site also lists B Suite (up to 25, or 50 as double) and Training Rooms."
+      },
+      "hourly_rate_local": null,
+      "hourly_rate_usd": null,
+      "latitude": 22.2871,
+      "longitude": 114.215,
+      "max_booking_hours": null,
+      "name": "Blueprint — Auditorium",
+      "needs_human_verify": true,
+      "opening_hours": null,
+      "rate_currency": null,
+      "rate_estimate_note": null,
+      "recording_suitability": "likely_good",
+      "score": 0.6458,
+      "score_breakdown": {
+        "booking_path": {
+          "contribution": 0.1,
+          "factor": 1.0,
+          "weight": 0.1
+        },
+        "budget_efficiency": {
+          "contribution": 0.1,
+          "factor": 0.5,
+          "weight": 0.2
+        },
+        "capacity_fit": {
+          "contribution": 0.2,
+          "factor": 1.0,
+          "weight": 0.2
+        },
+        "catering_flexibility": {
+          "contribution": 0.105,
+          "factor": 0.7,
+          "weight": 0.15
+        },
+        "event_window_fit": {
+          "contribution": 0.025,
+          "factor": 0.5,
+          "weight": 0.05
+        },
+        "evidence_freshness": {
+          "contribution": 0.0083,
+          "factor": 0.0833,
+          "weight": 0.1
+        },
+        "recording_suitability": {
+          "contribution": 0.0825,
+          "factor": 0.55,
+          "weight": 0.15
+        },
+        "technical_readiness": {
+          "contribution": 0.025,
+          "factor": 0.5,
+          "weight": 0.05
+        },
+        "total": 0.6458
+      },
+      "screen_status": "confirmed",
+      "source_title": "Flexible Event Venues for up to 50 Persons — Blueprint Hong Kong (official, Swire Properties): Auditorium with tiered seating for 50, 2 ceiling-mounted projectors and drop-down projection screens, 2 handheld + 2 clip microphones, built-in speakers; at 3/F Two Taikoo Place, Quarry Bay",
+      "source_url": "https://blueprint.swireproperties.com/en/event-venues/venues-up-to-50-persons/",
+      "tier_reasons": [],
+      "venue_flags": [
+        "cost_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "venue_tier": "shortlist_ready",
+      "verification_question_kinds": [
+        "cost_unknown",
+        "wifi",
+        "availability",
+        "event_window",
+        "room_assignment"
+      ],
+      "verification_questions": [
+        "Confirm the all-in hire rate for the Auditorium for a 50-person event (the official Blueprint page publishes venue descriptions but no numeric price; the team issues proposals on enquiry).",
+        "Confirm WiFi coverage in the Auditorium (the event-venue page does not publish a WiFi statement).",
+        "Confirm Auditorium availability on a weekend date in the focus window.",
+        "Confirm the bookable window on weekends (the page publishes no opening hours).",
+        "Confirm the Auditorium's 50-person tiered seating fits a talk-style DeAI Day (published capacity 50 persons with 2 ceiling-mounted projectors, drop-down screens, 2 handheld + 2 clip microphones, built-in speakers)."
+      ],
+      "wifi_status": "unknown"
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "address": "21/F The Phoenix, 23 Luard Road, Wan Chai, Hong Kong",
+      "booking_url": "https://thehive.com.hk/events-venue-hire/",
+      "capacity_basis": "standing",
+      "capacity_comfortable": 80,
+      "catering_policy": "in_house_available",
+      "city_slug": "hong-kong-hk",
+      "closing_time": null,
+      "cost_basis": "estimated_from_rate",
+      "cost_local_amount": 10000,
+      "cost_local_currency": "HKD",
+      "cost_rate_unit": "hour",
+      "estimated_cost_usd": 1274.64,
+      "estimated_hours": 8,
+      "event_window_evidence": null,
+      "event_window_status": "unknown",
+      "evidence": {
+        "geo": "https://thehive.com.hk/events-venue-hire/",
+        "inference": "8-hour estimate at the documented ECB 2026-08-21 planning rate is HK$10,000 = 1,274.64 USD, well within the USD 5,000 soft budget; capacity 80 standing exceeds 50 target; screen not stated for outdoor terrace (question); WiFi confirmed; outdoor recording suitability is poor (weather, wind, ambient noise); complimentary coffee and tea included.",
+        "observed_facts": "Official the Hive Wan Chai events-venue-hire page (fetched 2026-08-21, HTTP 200) states the 21F Rooftop Terrace is 'suitable for hosting Networking Events, Screenings and Social Functions' with 'High Speed WiFi, Max Capacity 40 seated or 80 standing, Sound System (Microphone & Speaker), Comfortable Outdoor Furniture, Complimentary Coffee & Tea'. Rate: HK$1,250 per hour. This is an outdoor rooftop venue."
+      },
+      "hourly_rate_local": 1250,
+      "hourly_rate_usd": 159.32968071,
+      "latitude": 22.279,
+      "longitude": 114.1748,
+      "max_booking_hours": null,
+      "name": "the Hive Wan Chai — 21F Rooftop Terrace",
+      "needs_human_verify": true,
+      "opening_hours": null,
+      "rate_currency": "HKD",
+      "rate_estimate_note": "Official the Hive Wan Chai events-venue-hire page (fetched 2026-08-21, HTTP 200) publishes 'Rate: HK$1250 per hour' for the 21F Rooftop Terrace; 8-hour estimate = 1250 x 8 = HK$10,000 converted at ECB 2026-08-21 rate USD 1 = HKD 7.845348 = 1,274.64 USD. Complimentary coffee and tea included.",
+      "recording_suitability": "poor",
+      "score": 0.6123,
+      "score_breakdown": {
+        "booking_path": {
+          "contribution": 0.1,
+          "factor": 1.0,
+          "weight": 0.1
+        },
+        "budget_efficiency": {
+          "contribution": 0.149,
+          "factor": 0.7451,
+          "weight": 0.2
+        },
+        "capacity_fit": {
+          "contribution": 0.2,
+          "factor": 1.0,
+          "weight": 0.2
+        },
+        "catering_flexibility": {
+          "contribution": 0.105,
+          "factor": 0.7,
+          "weight": 0.15
+        },
+        "event_window_fit": {
+          "contribution": 0.025,
+          "factor": 0.5,
+          "weight": 0.05
+        },
+        "evidence_freshness": {
+          "contribution": 0.0083,
+          "factor": 0.0833,
+          "weight": 0.1
+        },
+        "recording_suitability": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.15
+        },
+        "technical_readiness": {
+          "contribution": 0.025,
+          "factor": 0.5,
+          "weight": 0.05
+        },
+        "total": 0.6123
+      },
+      "screen_status": "unknown",
+      "source_title": "Events Venue Hire — the Hive Wan Chai (official): 21F Rooftop Terrace, max 40 seated or 80 standing, HK$1,250/hr, high-speed WiFi, sound system, complimentary coffee and tea; outdoor venue",
+      "source_url": "https://thehive.com.hk/events-venue-hire/",
+      "tier_reasons": [],
+      "venue_flags": [
+        "screen_unknown",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "venue_tier": "shortlist_ready",
+      "verification_question_kinds": [
+        "final_quote",
+        "availability",
+        "screen",
+        "event_window",
+        "room_assignment"
+      ],
+      "verification_questions": [
+        "Confirm the exact all-in rate for the 21F Rooftop Terrace (published HK$1,250/hr; 8-hour estimate 1,274.64 USD at ECB 2026-08-21 rate).",
+        "Confirm availability on a weekend date in the focus window.",
+        "Confirm whether an outdoor rooftop terrace provides adequate projection/screen facilities for a talk-style event in December.",
+        "Confirm the bookable window and any weekend staffed-hours limits.",
+        "Confirm the seating configuration for 50 attendees on the outdoor terrace (published 40 seated / 80 standing)."
+      ],
+      "wifi_status": "confirmed"
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "address": "Tower 535, 535 Jaffe Road, Causeway Bay / Beverly House, Lockhart Road, Wan Chai",
+      "booking_url": "https://www.thegaragesociety.com/service/event-space",
+      "capacity_basis": "venue_claim",
+      "capacity_comfortable": 100,
+      "catering_policy": "unknown",
+      "city_slug": "hong-kong-hk",
+      "closing_time": null,
+      "cost_basis": "estimated_from_rate",
+      "cost_local_amount": 24000,
+      "cost_local_currency": "HKD",
+      "cost_rate_unit": "hour",
+      "estimated_cost_usd": 3059.14,
+      "estimated_hours": 8,
+      "event_window_evidence": null,
+      "event_window_status": "unknown",
+      "evidence": {
+        "geo": "https://www.thegaragesociety.com/service/event-space",
+        "inference": "8-hour estimate at the documented 'from' rate and ECB 2026-08-21 planning rate is HKD 24,000 = 3,059.14 USD, within the USD 5,000 soft budget; capacity 100 comfortably covers 50; WiFi confirmed; screen status unclear from 'AV systems' phrasing (question).",
+        "observed_facts": "Official Garage Society event-space page (fetched 2026-08-21, HTTP 200) states 'from HKD 3,000 per hour' for professional event venues at Tower 535 in Causeway Bay and Beverly House in Wan Chai, suitable for workshops, networking and team-building for up to 100 people. Facilities include 'AV systems, high-speed WiFi, and flexible seating arrangements'; 'hundreds of successful events hosted annually'."
+      },
+      "hourly_rate_local": 3000,
+      "hourly_rate_usd": 382.39242857,
+      "latitude": 22.2815,
+      "longitude": 114.178,
+      "max_booking_hours": null,
+      "name": "Garage Society — Event Space",
+      "needs_human_verify": true,
+      "opening_hours": null,
+      "rate_currency": "HKD",
+      "rate_estimate_note": "Official Garage Society event-space page (fetched 2026-08-21, HTTP 200) publishes 'from HKD 3,000 per hour' for event spaces at Tower 535 Causeway Bay and Beverly House Wan Chai, up to 100 people; 8-hour estimate = 3000 x 8 = HKD 24,000 converted at ECB 2026-08-21 rate USD 1 = HKD 7.845348 = 3,059.14 USD. Taxes/fees not included; 'from' rate may not apply to all configurations.",
+      "recording_suitability": "unknown",
+      "score": 0.436,
+      "score_breakdown": {
+        "booking_path": {
+          "contribution": 0.1,
+          "factor": 1.0,
+          "weight": 0.1
+        },
+        "budget_efficiency": {
+          "contribution": 0.0776,
+          "factor": 0.3882,
+          "weight": 0.2
+        },
+        "capacity_fit": {
+          "contribution": 0.2,
+          "factor": 1.0,
+          "weight": 0.2
+        },
+        "catering_flexibility": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.15
+        },
+        "event_window_fit": {
+          "contribution": 0.025,
+          "factor": 0.5,
+          "weight": 0.05
+        },
+        "evidence_freshness": {
+          "contribution": 0.0083,
+          "factor": 0.0833,
+          "weight": 0.1
+        },
+        "recording_suitability": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.15
+        },
+        "technical_readiness": {
+          "contribution": 0.025,
+          "factor": 0.5,
+          "weight": 0.05
+        },
+        "total": 0.436
+      },
+      "screen_status": "unknown",
+      "source_title": "Event Space Hire in Wan Chai and Causeway Bay — Garage Society (official): from HKD 3,000 per hour, up to 100 people, AV systems and high-speed WiFi, Tower 535 Causeway Bay and Beverly House Wan Chai",
+      "source_url": "https://www.thegaragesociety.com/service/event-space",
+      "tier_reasons": [],
+      "venue_flags": [
+        "screen_unknown",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "venue_tier": "shortlist_ready",
+      "verification_question_kinds": [
+        "final_quote",
+        "availability",
+        "event_window",
+        "room_assignment",
+        "screen"
+      ],
+      "verification_questions": [
+        "Confirm the exact all-in Saturday rate for the event space (published 'from HKD 3,000/hour'; 8-hour estimate 3,059.14 USD at the ECB 2026-08-21 rate).",
+        "Confirm availability of the event space on a weekend date in the focus window.",
+        "Confirm the bookable window on weekends and any staffed-hours limits.",
+        "Confirm which location (Tower 535 Causeway Bay or Beverly House Wan Chai) would host a 50-person event and its specific room assignment.",
+        "Confirm whether the 'AV systems' include a projector and projection screen for presentations (the page lists 'AV systems, high-speed WiFi' without itemizing the equipment)."
+      ],
+      "wifi_status": "confirmed"
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "address": "1303 Charm Centre, 700 Castle Peak Road, Kowloon (Lai Chi Kok, approx. 2-min walk from MTR)",
+      "booking_url": "https://www.goodlab.hk/service/venue-hiring",
+      "capacity_basis": "venue_claim",
+      "capacity_comfortable": 50,
+      "catering_policy": "unknown",
+      "city_slug": "hong-kong-hk",
+      "closing_time": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "cost_rate_unit": "unknown",
+      "estimated_cost_usd": null,
+      "estimated_hours": null,
+      "event_window_evidence": null,
+      "event_window_status": "unknown",
+      "evidence": {
+        "geo": "https://www.goodlab.hk/service/venue-hiring",
+        "inference": "The rate table uses $ without explicit HKD/USD marker; the page is a Hong Kong social-enterprise organisation so HKD is likely but unconfirmed — cost stays null with a confirm-currency question per the Run A currency rule. Max 50 persons matches the target attendance; screen and WiFi are not explicitly stated (questions). Good Lab has relocated to Lai Chi Kok from a prior address.",
+        "observed_facts": "Official Good Lab venue-hiring page (fetched 2026-08-21, HTTP 200) describes The Future Workshop at Lai Chi Kok (荔枝角), 2-min walk from MTR station. Training Space: approx. 720 sq ft, max 50 persons, AV System, Table x 12, Whiteboard and flipchart board. Rate table (no explicit currency marker): NGO/SE Rate office hour $900, non-office-hour $1,000; Standard Rate office hour $1,000, non-office-hour $1,200. Training Space + Cafe Area: approx. 1,170 sq ft, max 80 persons, $1,500-$1,800 by tier. 2-hour minimum; booking hours include setup/tidy; overrun fees apply. Contact info@goodlab.hk, +852 2151 0747."
+      },
+      "hourly_rate_local": null,
+      "hourly_rate_usd": null,
+      "latitude": 22.3373,
+      "longitude": 114.1517,
+      "max_booking_hours": null,
+      "name": "Good Lab — The Future Workshop Training Space",
+      "needs_human_verify": true,
+      "opening_hours": null,
+      "rate_currency": null,
+      "rate_estimate_note": null,
+      "recording_suitability": "unknown",
+      "score": 0.4333,
+      "score_breakdown": {
+        "booking_path": {
+          "contribution": 0.1,
+          "factor": 1.0,
+          "weight": 0.1
+        },
+        "budget_efficiency": {
+          "contribution": 0.1,
+          "factor": 0.5,
+          "weight": 0.2
+        },
+        "capacity_fit": {
+          "contribution": 0.2,
+          "factor": 1.0,
+          "weight": 0.2
+        },
+        "catering_flexibility": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.15
+        },
+        "event_window_fit": {
+          "contribution": 0.025,
+          "factor": 0.5,
+          "weight": 0.05
+        },
+        "evidence_freshness": {
+          "contribution": 0.0083,
+          "factor": 0.0833,
+          "weight": 0.1
+        },
+        "recording_suitability": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.15
+        },
+        "technical_readiness": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.05
+        },
+        "total": 0.4333
+      },
+      "screen_status": "unknown",
+      "source_title": "Venue Hiring at Lai Chi Kok — Good Lab (official): The Future Workshop Training Space, approx. 720 sq ft, max 50 persons, AV system, tables, whiteboard; rate table $900-$1,200/hr by tier",
+      "source_url": "https://www.goodlab.hk/service/venue-hiring",
+      "tier_reasons": [],
+      "venue_flags": [
+        "cost_unknown",
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "venue_tier": "shortlist_ready",
+      "verification_question_kinds": [
+        "cost_unknown",
+        "availability",
+        "wifi",
+        "screen",
+        "event_window"
+      ],
+      "verification_questions": [
+        "Confirm the currency of the published rate table ($900-$1,200/hr by rate tier and time slot): are these HKD or USD? The page is bilingual (EN/zh) and uses the $ symbol without an explicit ISO currency marker.",
+        "Confirm availability on a weekend date in the focus window.",
+        "Confirm WiFi availability in the Training Space (the venue-hiring page does not publish a WiFi statement).",
+        "Confirm whether the 'AV System' includes a projector and screen for presentations (the page lists 'AV System / Table x 12 / Whiteboard and flipchart board').",
+        "Confirm the bookable window on weekends and whether the 2-hour minimum applies."
+      ],
+      "wifi_status": "unknown"
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "address": "4/F, The Wave, 4 Hing Yip Street, Kwun Tong, Kowloon, Hong Kong",
+      "booking_url": "https://thewave.com.hk/services/event-space/",
+      "capacity_basis": "venue_claim",
+      "capacity_comfortable": 500,
+      "catering_policy": "unknown",
+      "city_slug": "hong-kong-hk",
+      "closing_time": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "cost_rate_unit": "unknown",
+      "estimated_cost_usd": null,
+      "estimated_hours": null,
+      "event_window_evidence": null,
+      "event_window_status": "unknown",
+      "evidence": {
+        "geo": "https://thewave.com.hk/services/event-space/",
+        "inference": "A large flexible venue in Kwun Tong with confirmed screen (projectors and LED display) and WiFi; no published price — quote-based only; capacity far exceeds 50 target; cost stays null with a confirm-cost question. The space can be partitioned into smaller rooms for a 50-person event.",
+        "observed_facts": "Official The Wave event-space page (thewave.com.hk/services/event-space/, fetched 2026-08-21, HTTP 200) states the event space is 'in Kwun Tong' with 'over 6,000 sq. ft of Inspiration', capacity '40-500 seats', high-speed Wi-Fi, projectors, printers, audio equipment, and a P1.86 LED Display Screen. 'Simply call or email us with the details of your enquiry and we will quickly reply with a quote.' The space is described as suitable for business meetings, seminars, training, product launches, exhibitions. Floor space 520-6,000 sq ft; can be partitioned into smaller function rooms. 24-hour access and on-site parking mentioned."
+      },
+      "hourly_rate_local": null,
+      "hourly_rate_usd": null,
+      "latitude": 22.3115,
+      "longitude": 114.2263,
+      "max_booking_hours": null,
+      "name": "The Wave — Event Space",
+      "needs_human_verify": true,
+      "opening_hours": "24-hour access advertised",
+      "rate_currency": null,
+      "rate_estimate_note": null,
+      "recording_suitability": "likely_good",
+      "score": 0.3658,
+      "score_breakdown": {
+        "booking_path": {
+          "contribution": 0.1,
+          "factor": 1.0,
+          "weight": 0.1
+        },
+        "budget_efficiency": {
+          "contribution": 0.1,
+          "factor": 0.5,
+          "weight": 0.2
+        },
+        "capacity_fit": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.2
+        },
+        "catering_flexibility": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.15
+        },
+        "event_window_fit": {
+          "contribution": 0.025,
+          "factor": 0.5,
+          "weight": 0.05
+        },
+        "evidence_freshness": {
+          "contribution": 0.0083,
+          "factor": 0.0833,
+          "weight": 0.1
+        },
+        "recording_suitability": {
+          "contribution": 0.0825,
+          "factor": 0.55,
+          "weight": 0.15
+        },
+        "technical_readiness": {
+          "contribution": 0.05,
+          "factor": 1.0,
+          "weight": 0.05
+        },
+        "total": 0.3658
+      },
+      "screen_status": "confirmed",
+      "source_title": "Event Space — The Wave (official): over 6,000 sq ft in Kwun Tong, capacity 40-500 seats, high-speed Wi-Fi, projectors, LED display screen, audio equipment, quote-based pricing",
+      "source_url": "https://thewave.com.hk/services/event-space/",
+      "tier_reasons": [],
+      "venue_flags": [
+        "oversized_capacity",
+        "cost_unknown",
+        "availability_unconfirmed",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "venue_tier": "shortlist_ready",
+      "verification_question_kinds": [
+        "cost_unknown",
+        "availability",
+        "event_window"
+      ],
+      "verification_questions": [
+        "Confirm the current rental rate for the event space (the official event-space page is quote-based with no published price; 'Call or email us with the details of your enquiry and we will quickly reply with a quote').",
+        "Confirm availability on a weekend date in the focus window.",
+        "Confirm the bookable window on weekends and any operational hours limits."
+      ],
+      "wifi_status": "confirmed"
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "address": "Unit 4C, 7/F, 760 Cheung Sha Wan Road, Lai Chi Kok, Kowloon, Hong Kong (3-5 min walk from Lai Chi Kok MTR)",
+      "booking_url": "https://www.dreamimpacthk.com/%E9%A6%99%E6%B8%AF%E5%A4%A7%E5%9E%8B%E6%B4%BB%E5%8B%95%E5%A0%B4%E5%9C%B0%E7%A7%9F%E5%80%9F%E6%8E%A8%E8%96%A6/?lang=zh-hant",
+      "capacity_basis": "venue_claim",
+      "capacity_comfortable": 300,
+      "catering_policy": "unknown",
+      "city_slug": "hong-kong-hk",
+      "closing_time": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "cost_rate_unit": "unknown",
+      "estimated_cost_usd": null,
+      "estimated_hours": null,
+      "event_window_evidence": null,
+      "event_window_status": "unknown",
+      "evidence": {
+        "geo": "https://www.dreamimpacthk.com/%E9%A6%99%E6%B8%AF%E5%A4%A7%E5%9E%8B%E6%B4%BB%E5%8B%95%E5%A0%B4%E5%9C%B0%E7%A7%9F%E5%80%9F%E6%8E%A8%E8%96%A6/?lang=zh-hant",
+        "inference": "A mission-driven social-enterprise venue whose own published hourly range spans HKD 270-3,800 without mapping rates to rooms or time slots, so no single honest cost number exists yet: cost stays null with a confirm-rate question (same pattern as the Good Lab record). Screen is confirmed from the self-published full-AV list; WiFi is not explicitly stated. Max capacity 300 is far above target (oversized flag expected); the wide layout menu suggests a 50-seat talk setup exists but the specific room assignment needs confirmation.",
+        "observed_facts": "Dream Impact's own website guide (dreamimpacthk.com, fetched 2026-08-21, HTTP 200, page dated 2026-03-27) describes the Lai Chi Kok venue: '位於荔枝角...場地可容納20至300人，適合工作坊、研討會、健康活動及大型聚會'; location details '九龍荔枝角｜長沙灣道760號4樓C室, MTR 荔枝角站（步行3–5分鐘）'; '面積：2,200平方呎'; '容納人數：最多300人'; '價錢：約 HKD $270–$3,800 / 小時'; equipment '全套視聽系統（投影機、麥克風、講台、音響）｜混合會議技術'; policies include pet-friendly and a catering-permission policy; the page carries a venue-booking enquiry form."
+      },
+      "hourly_rate_local": null,
+      "hourly_rate_usd": null,
+      "latitude": 22.336,
+      "longitude": 114.1485,
+      "max_booking_hours": null,
+      "name": "Dream Impact — Event Space (Lai Chi Kok)",
+      "needs_human_verify": true,
+      "opening_hours": null,
+      "rate_currency": null,
+      "rate_estimate_note": null,
+      "recording_suitability": "likely_good",
+      "score": 0.3408,
+      "score_breakdown": {
+        "booking_path": {
+          "contribution": 0.1,
+          "factor": 1.0,
+          "weight": 0.1
+        },
+        "budget_efficiency": {
+          "contribution": 0.1,
+          "factor": 0.5,
+          "weight": 0.2
+        },
+        "capacity_fit": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.2
+        },
+        "catering_flexibility": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.15
+        },
+        "event_window_fit": {
+          "contribution": 0.025,
+          "factor": 0.5,
+          "weight": 0.05
+        },
+        "evidence_freshness": {
+          "contribution": 0.0083,
+          "factor": 0.0833,
+          "weight": 0.1
+        },
+        "recording_suitability": {
+          "contribution": 0.0825,
+          "factor": 0.55,
+          "weight": 0.15
+        },
+        "technical_readiness": {
+          "contribution": 0.025,
+          "factor": 0.5,
+          "weight": 0.05
+        },
+        "total": 0.3408
+      },
+      "screen_status": "confirmed",
+      "source_title": "香港大型活動場地租借推薦｜8個可容納100–500人的活動空間 — Dream Impact 夢創成真 (official, self-published guide, page dated 2026-03-27): Lai Chi Kok impact-event venue, 2,200 sq ft, up to 300 persons, full AV system, 約 HKD $270–$3,800/hr",
+      "source_url": "https://www.dreamimpacthk.com/%E9%A6%99%E6%B8%AF%E5%A4%A7%E5%9E%8B%E6%B4%BB%E5%8B%95%E5%A0%B4%E5%9C%B0%E7%A7%9F%E5%80%9F%E6%8E%A8%E8%96%A6/?lang=zh-hant",
+      "tier_reasons": [],
+      "venue_flags": [
+        "oversized_capacity",
+        "cost_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "venue_tier": "shortlist_ready",
+      "verification_question_kinds": [
+        "cost_unknown",
+        "availability",
+        "wifi",
+        "event_window",
+        "room_assignment"
+      ],
+      "verification_questions": [
+        "Confirm the applicable hourly rate for a Saturday 8-hour, 50-person booking (the venue's own guide publishes a wide range '約 HKD $270–$3,800 / 小時' across spaces and time slots without mapping rates to specific rooms; NGO/social-enterprise discounts mentioned).",
+        "Confirm availability on a weekend date in the focus window.",
+        "Confirm WiFi coverage (the guide lists a full AV system and hybrid-meeting technology but no explicit WiFi statement in the fetched text).",
+        "Confirm the bookable window on weekends and any staffed-hours limits.",
+        "Confirm which space configuration seats 50 for a talk-style event (self-published figures: 2,200 sq ft, up to 300 persons across workshop/theatre/classroom/board layouts)."
+      ],
+      "wifi_status": "unknown"
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "address": "35 Aberdeen Street, Central, Hong Kong",
+      "booking_url": "https://www.pmq.org.hk/the-site/event-venue-rental/",
+      "capacity_basis": "venue_claim",
+      "capacity_comfortable": 450,
+      "catering_policy": "unknown",
+      "city_slug": "hong-kong-hk",
+      "closing_time": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "cost_rate_unit": "unknown",
+      "estimated_cost_usd": null,
+      "estimated_hours": null,
+      "event_window_evidence": null,
+      "event_window_status": "unknown",
+      "evidence": {
+        "geo": "https://www.pmq.org.hk/the-site/event-venue-rental/",
+        "inference": "QUBE is a large heritage venue in Central with 450-person capacity — significantly oversized for a 50-person event; the 5m headroom and open floor plan could work but may feel cavernous. No published price (enquiry-based); screen, WiFi, and catering are not stated on this page (questions).",
+        "observed_facts": "Official PMQ event-venue page (pmq.org.hk/the-site/event-venue-rental/, fetched 2026-08-21, HTTP 200) lists QUBE as a 'multi-purpose hall' with 'Gross Area: approx. 500m², Headroom: 5m, Capacity: 450 participants'. The venue is at 35 Aberdeen Street, Central (SoHo). Enquiry via events@pmq.org.hk or the on-page form. Also lists Courtyard & Marketplace (approx. 1,000m², 450 participants) and Taste Library (approx. 200m², 30 participants per unit)."
+      },
+      "hourly_rate_local": null,
+      "hourly_rate_usd": null,
+      "latitude": 22.2821,
+      "longitude": 114.1502,
+      "max_booking_hours": null,
+      "name": "PMQ — QUBE (Multi-Purpose Hall)",
+      "needs_human_verify": true,
+      "opening_hours": null,
+      "rate_currency": null,
+      "rate_estimate_note": null,
+      "recording_suitability": "unknown",
+      "score": 0.2333,
+      "score_breakdown": {
+        "booking_path": {
+          "contribution": 0.1,
+          "factor": 1.0,
+          "weight": 0.1
+        },
+        "budget_efficiency": {
+          "contribution": 0.1,
+          "factor": 0.5,
+          "weight": 0.2
+        },
+        "capacity_fit": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.2
+        },
+        "catering_flexibility": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.15
+        },
+        "event_window_fit": {
+          "contribution": 0.025,
+          "factor": 0.5,
+          "weight": 0.05
+        },
+        "evidence_freshness": {
+          "contribution": 0.0083,
+          "factor": 0.0833,
+          "weight": 0.1
+        },
+        "recording_suitability": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.15
+        },
+        "technical_readiness": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.05
+        },
+        "total": 0.2333
+      },
+      "screen_status": "unknown",
+      "source_title": "Event Venue Rental — PMQ (official): QUBE multi-purpose hall, gross area approx. 500 sq m, headroom 5 m, capacity 450 participants, at 35 Aberdeen Street, Central",
+      "source_url": "https://www.pmq.org.hk/the-site/event-venue-rental/",
+      "tier_reasons": [],
+      "venue_flags": [
+        "oversized_capacity",
+        "cost_unknown",
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "venue_tier": "shortlist_ready",
+      "verification_question_kinds": [
+        "cost_unknown",
+        "availability",
+        "wifi",
+        "screen",
+        "event_window"
+      ],
+      "verification_questions": [
+        "Confirm the rental rate for QUBE for a 50-person event (the official PMQ event-venue page states 'Expression of Interest' with an enquiry form; no published price).",
+        "Confirm availability on a weekend date in the focus window.",
+        "Confirm WiFi availability in QUBE.",
+        "Confirm whether QUBE is equipped with projection/screen facilities for a talk-style event.",
+        "Confirm the bookable window on weekends and any venue hire terms."
+      ],
+      "wifi_status": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "accessed_on": "2026-08-21",
+      "title": "BODW 2026 — official Hong Kong Design Centre site: Save the dates for BODW 2026 Summit, November 18-20, at the Hong Kong Convention and Exhibition Centre",
+      "url": "https://2026.bodw.com/en"
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "title": "Event & Meeting Venues — Banyan Workspace (official): Event Spaces from HK$888 per hour, 2,500 sq ft with Victoria Harbour views, 20 seated / 60 standing, screen, projector, microphones and sound systems, 24/7 access; Suite 1204, Eastern Harbour Centre, 28 Hoi Chak Street, Quarry Bay",
+      "url": "https://banyanworkspace.com/corporate-events/"
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "title": "Flexible Event Venues for up to 50 Persons — Blueprint Hong Kong (official, Swire Properties): Auditorium with tiered seating for 50, 2 ceiling-mounted projectors and drop-down projection screens, 2 handheld + 2 clip microphones, built-in speakers; at 3/F Two Taikoo Place, Quarry Bay",
+      "url": "https://blueprint.swireproperties.com/en/event-venues/venues-up-to-50-persons/"
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "title": "GDG Hong Kong (official Google Developer Groups chapter page, 2,586 group members)",
+      "url": "https://gdg.community.dev/gdg-hong-kong/"
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "title": "GDG on Campus Hong Kong Institute of Information Technology - Hong Kong (official GDG chapter page, 436 group members)",
+      "url": "https://gdg.community.dev/gdg-on-campus-hong-kong-institute-of-information-technology-hong-kong-hong-kong/"
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "title": "Global AI Hong Kong (official Global AI Community chapter page, 532 members, 14 events, 5 organizers)",
+      "url": "https://globalai.community/chapters/hong-kong/"
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "title": "Le Meridien Cyberport / Cyberport Convention & Exhibition Centre — Hong Kong MICE Event Venue Guide (third-party directory): CEC up to 330 theatre-style or 132 classroom; Address: 100 Cyberport Road, Pok Fu Lam, Hong Kong Island",
+      "url": "https://hkmice-venue.weebly.com/le-meridien-cyberport.html"
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "title": "AI Tinkerers Hong Kong - AI Meetups, Events, and Builder Demos 2026 (official chapter page)",
+      "url": "https://hong-kong.aitinkerers.org/"
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "title": "Bitcoin Asia PRE CONFERENCE Event / Bitcoin Association (BAHK MEETUPS on Luma)",
+      "url": "https://luma.com/4wvwlqbf"
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "title": "Women in Web3 Hong Kong events calendar (Luma)",
+      "url": "https://luma.com/5aw5ip6h"
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "title": "Global Women in AI Hong Kong Chapter Launch @ LEAP East (Luma event page)",
+      "url": "https://luma.com/k9tr14sl"
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "title": "HK Ethereum Community Hub: Grand Opening & Meetup (Luma event page)",
+      "url": "https://luma.com/uf5v6joa"
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "title": "Meetups - Open Source Hong Kong (official site)",
+      "url": "https://opensource.hk/meetups/"
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "title": "DesignInspire 2026 — HK01 event listing: free admission design expo, December 4-6 at the Hong Kong Convention and Exhibition Centre",
+      "url": "https://space.hk01.com/event/6717829790902d9d2992773b/designinspire-2026"
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "title": "Events Venue Hire — the Hive Wan Chai (official): 21F Rooftop Terrace, max 40 seated or 80 standing, HK$1,250/hr, high-speed WiFi, sound system, complimentary coffee and tea; outdoor venue",
+      "url": "https://thehive.com.hk/events-venue-hire/"
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "title": "Event Space — The Wave (official): over 6,000 sq ft in Kwun Tong, capacity 40-500 seats, high-speed Wi-Fi, projectors, LED display screen, audio equipment, quote-based pricing",
+      "url": "https://thewave.com.hk/services/event-space/"
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "title": "Hong Kong Wedding Fair — 124th edition, Dec 11-13, 2026, HKCEC Wan Chai (wedding-show.com.hk, the organiser's official site)",
+      "url": "https://wedding-show.com.hk/香港結婚節.html"
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "title": "WINE 2026 — official conference site: 22nd Conference on Web and Internet Economics, University of Hong Kong, December 1-4, 2026",
+      "url": "https://wine2026conf.github.io/"
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "title": "852Web3 | Together, We Build. (official site)",
+      "url": "https://www.852web3.io/"
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "title": "Clockenflap — official festival site: Hong Kong's premier music and arts festival, December 2026 at Central Harbourfront (official site JS-rendered; dates corroborated by lifestyleasia.hk)",
+      "url": "https://www.clockenflap.com/"
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "title": "Hong Kong WinterFest — Discover Hong Kong (HKTB) event page (direct fetch Cloudflare-blocked; December period corroborated by chinahighlights.com and publicholidays.hk)",
+      "url": "https://www.discoverhongkong.com/eng/events/hong-kong-winterfest.html"
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "title": "Hong Kong Wine & Dine Festival — Discover Hong Kong (HKTB) event page (direct fetch Cloudflare-blocked; 2026 dates per consistent secondary sources: Oct 29 - Nov 1, Central Harbourfront)",
+      "url": "https://www.discoverhongkong.com/eng/events/wine-dine-festival.html"
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "title": "香港大型活動場地租借推薦｜8個可容納100–500人的活動空間 — Dream Impact 夢創成真 (official, self-published guide, page dated 2026-03-27): Lai Chi Kok impact-event venue, 2,200 sq ft, up to 300 persons, full AV system, 約 HKD $270–$3,800/hr",
+      "url": "https://www.dreamimpacthk.com/%E9%A6%99%E6%B8%AF%E5%A4%A7%E5%9E%8B%E6%B4%BB%E5%8B%95%E5%A0%B4%E5%9C%B0%E7%A7%9F%E5%80%9F%E6%8E%A8%E8%96%A6/?lang=zh-hant"
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "title": "IEEE-EMBS BHI 2026 — official EMBS event listing: Biomedical and Health Informatics, Hong Kong, December 12-15, 2026 (direct page returned HTTP 403; dates verified via search snippet)",
+      "url": "https://www.embs.org/event/https-bhi-embs-org-2026/"
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "title": "Hong Kong FinTech Week x StartmeupHK 2026 — official site: Nov 2-6, 2026, 45,000+ global leaders, Asia's flagship fintech conference covering fintech, AI, Web3 and more",
+      "url": "https://www.fintechweek.hk/"
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "title": "Venue Hiring at Lai Chi Kok — Good Lab (official): The Future Workshop Training Space, approx. 720 sq ft, max 50 persons, AV system, tables, whiteboard; rate table $900-$1,200/hr by tier",
+      "url": "https://www.goodlab.hk/service/venue-hiring"
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "title": "Hong Kong Science Park MICE Venues — HKSTP (official): Charles K. Kao Auditorium ('Golden Egg'), fibre-optic and WiFi connectivity, high-resolution screens and projectors; PRICE LIST and Online Booking Form linked; contact +852 2639 8301 / mice@hkstp.org",
+      "url": "https://www.hkstp.org/en/rental/space/mice-venue/hong-kong-science-park-mice-venues"
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "title": "Advanced AI Concepts-Hong Kong (Meetup group page, 4 members)",
+      "url": "https://www.meetup.com/advanced-ai-concepts-hong-kong/"
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "title": "AI Builders Hong Kong (Meetup group page, 24 members)",
+      "url": "https://www.meetup.com/ai-builders-hong-kong/"
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "title": "Artificial Intelligence Society of Hong Kong (AISHK) (Meetup group page, 3,561 members)",
+      "url": "https://www.meetup.com/chatbot-ai-hong-kong/"
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "title": "Data Science & Generative AI Hong Kong (Meetup group page, 2,589 members)",
+      "url": "https://www.meetup.com/data-science-hk/"
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "title": "AWS User Group Hong Kong (Meetup group page, 1,321 members)",
+      "url": "https://www.meetup.com/hong-kong-amazon-aws-user-group/"
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "title": "Hong Kong Data Science Society (Meetup group page, 633 members)",
+      "url": "https://www.meetup.com/hong-kong-data-science-society/"
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "title": "Hong Kong Machine Learning Meetup (Meetup group page, 2,241 members)",
+      "url": "https://www.meetup.com/hong-kong-machine-learning-meetup/"
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "title": "PyData Hong Kong (Meetup group page, 288 members)",
+      "url": "https://www.meetup.com/pydata-hong-kong/"
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "title": "Hong Kong Python User Group (Meetup group page, 1,770 members)",
+      "url": "https://www.meetup.com/pythonhk/"
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "title": "R 程式交流組 R programming hub (Meetup group page, 10 members)",
+      "url": "https://www.meetup.com/r-programming/"
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "title": "Event Venue Rental — PMQ (official): QUBE multi-purpose hall, gross area approx. 500 sq m, headroom 5 m, capacity 450 participants, at 35 Aberdeen Street, Central",
+      "url": "https://www.pmq.org.hk/the-site/event-venue-rental/"
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "title": "Upcoming events - StartmeupHK (official InvestHK initiative site)",
+      "url": "https://www.startmeup.hk/upcoming-events/"
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "title": "Event Space Hire in Wan Chai and Causeway Bay — Garage Society (official): from HKD 3,000 per hour, up to 100 people, AV systems and high-speed WiFi, Tower 535 Causeway Bay and Beverly House Wan Chai",
+      "url": "https://www.thegaragesociety.com/service/event-space"
+    }
+  ],
+  "speakers": [],
+  "target_attendance": 50,
+  "target_date": "2026-11-14",
+  "trusted_contacts": [],
+  "trusted_venue_matches": [],
+  "venue_leads_needing_verification": [
+    {
+      "accessed_on": "2026-08-21",
+      "address": "100 Cyberport Road, Pok Fu Lam, Hong Kong Island, Hong Kong",
+      "booking_url": "https://www.cyberport.hk/en/event-venue-space/",
+      "capacity_basis": "venue_claim",
+      "capacity_comfortable": 330,
+      "catering_policy": "unknown",
+      "city_slug": "hong-kong-hk",
+      "closing_time": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "cost_rate_unit": "unknown",
+      "estimated_cost_usd": null,
+      "estimated_hours": null,
+      "event_window_evidence": null,
+      "event_window_status": "unknown",
+      "evidence": {
+        "geo": "https://hkmice-venue.weebly.com/le-meridien-cyberport.html",
+        "inference": "Cyberport was an explicitly requested candidate class (and appears in Joe's fresh hub evidence as Web3 Hub@Cyberport host), so the CEC is recorded despite the official-page block; all load-bearing numbers come from a third-party directory and the official pages were unreachable, so capacity, equipment, cost, and window all stay verification questions and the record is expected to score as a lead until Joe-side re-verification.",
+        "observed_facts": "Third-party MICE venue guide (hkmice-venue.weebly.com/le-meridien-cyberport.html, fetched 2026-08-21, HTTP 200) states 'The meeting facilities at Cyberport Convention & Exhibition Centre can accommodate up to 330 attendees for theatre-style seating or 132 guests for a classroom layout' and lists the address as '100 Cyberport Road, Pok Fu Lam, Hong Kong Island'. The official Cyberport pages (cyberport.hk/en/event-venue-space/ and /en/facilities/conference_exhibition_centre/) surfaced in search results describing indoor/outdoor event venues but returned HTTP 403 (Cloudflare-blocked) to direct fetches on 2026-08-21, matching the 403 already recorded for Cyberport pages in city_input open_questions."
+      },
+      "hourly_rate_local": null,
+      "hourly_rate_usd": null,
+      "latitude": 22.2611,
+      "longitude": 114.13,
+      "max_booking_hours": null,
+      "name": "Cyberport — Conference & Exhibition Centre (CEC)",
+      "needs_human_verify": true,
+      "opening_hours": null,
+      "rate_currency": null,
+      "rate_estimate_note": null,
+      "recording_suitability": "unknown",
+      "score": null,
+      "score_breakdown": null,
+      "screen_status": "unknown",
+      "source_title": "Le Meridien Cyberport / Cyberport Convention & Exhibition Centre — Hong Kong MICE Event Venue Guide (third-party directory): CEC up to 330 theatre-style or 132 classroom; Address: 100 Cyberport Road, Pok Fu Lam, Hong Kong Island",
+      "source_url": "https://hkmice-venue.weebly.com/le-meridien-cyberport.html",
+      "tier_reasons": [
+        "material verification question(s): capacity"
+      ],
+      "venue_flags": [
+        "oversized_capacity",
+        "cost_unknown",
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "venue_tier": "lead",
+      "verification_question_kinds": [
+        "cost_unknown",
+        "availability",
+        "event_window",
+        "capacity",
+        "screen",
+        "wifi"
+      ],
+      "verification_questions": [
+        "Confirm the CEC rental rate for a roughly 50-person Saturday event (cyberport.hk event-venue pages returned HTTP 403 to this research environment on 2026-08-21; enquiry required via the official site).",
+        "Confirm CEC availability on a weekend date in the focus window.",
+        "Confirm the bookable window on weekends and any staffed-hours limits.",
+        "Confirm the current theatre-style capacity of the CEC auditorium (a MICE venue guide fetched 2026-08-21 states 'up to 330 attendees for theatre-style seating or 132 guests for a classroom layout'; the official page could not be fetched directly).",
+        "Confirm whether the CEC provides projector/screen facilities for presentations.",
+        "Confirm WiFi coverage in the booked space."
+      ],
+      "wifi_status": "unknown"
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "address": "Hong Kong Science Park, Pak Shek Kok, Sha Tin, New Territories, Hong Kong",
+      "booking_url": "https://www.hkstp.org/en/rental/hkstp-mice-venues",
+      "capacity_basis": "venue_claim",
+      "capacity_comfortable": 284,
+      "catering_policy": "unknown",
+      "city_slug": "hong-kong-hk",
+      "closing_time": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "cost_rate_unit": "unknown",
+      "estimated_cost_usd": null,
+      "estimated_hours": null,
+      "event_window_evidence": null,
+      "event_window_status": "unknown",
+      "evidence": {
+        "geo": "https://planner.ttgmice.com/venue/hong-kong-science-park/",
+        "inference": "The auditorium is far larger than the 50-person target, so its value here is as a flagship anchor option rather than a size match; the only published capacity figure (284 theatre) comes from a third-party MICE directory, not HKSTP itself, so capacity stays a material verification question and the record is expected to score as a lead. Included because HKSTP was an explicitly requested candidate class in this re-research.",
+        "observed_facts": "Official HKSTP MICE page (hkstp.org/en/rental/space/mice-venue/hong-kong-science-park-mice-venues, fetched 2026-08-21, HTTP 200) states 'Charles K. Kao Auditorium, also known as the Golden Egg, is the iconic MICE venue of Hong Kong Science Park. Featuring fibre-optic and WiFi connectivity, high-resolution screens and projectors and other multimedia equipment...' and lists bookable rooms including GRAND HALL, CONFERENCE HALL 4-7, AMPHITHEATRE, INNO2 STUDIO and MEETING ROOM 1, with contact +852 2639 8301, mice@hkstp.org, a PRICE LIST link and an Online Booking Form. The page publishes no numeric prices and no per-room capacities. The TTGmice venue directory (planner.ttgmice.com/venue/hong-kong-science-park/, fetched 2026-08-21, HTTP 200) lists the address as 'Hong Kong Science Park, Sha Tin, New Territories', tel +852 2639 8301, and a capacity table: Grand Hall & Pre-Function Area 800 theatre, Charles K. Kao Auditorium & Pre-Function Hall 284 theatre (284 sq m), Conference Hall 4-7 240 theatre."
+      },
+      "hourly_rate_local": null,
+      "hourly_rate_usd": null,
+      "latitude": 22.2836,
+      "longitude": 114.2118,
+      "max_booking_hours": null,
+      "name": "HKSTP — Charles K. Kao Auditorium (Golden Egg)",
+      "needs_human_verify": true,
+      "opening_hours": null,
+      "rate_currency": null,
+      "rate_estimate_note": null,
+      "recording_suitability": "likely_good",
+      "score": null,
+      "score_breakdown": null,
+      "screen_status": "confirmed",
+      "source_title": "Hong Kong Science Park MICE Venues — HKSTP (official): Charles K. Kao Auditorium ('Golden Egg'), fibre-optic and WiFi connectivity, high-resolution screens and projectors; PRICE LIST and Online Booking Form linked; contact +852 2639 8301 / mice@hkstp.org",
+      "source_url": "https://www.hkstp.org/en/rental/space/mice-venue/hong-kong-science-park-mice-venues",
+      "tier_reasons": [
+        "material verification question(s): capacity"
+      ],
+      "venue_flags": [
+        "oversized_capacity",
+        "cost_unknown",
+        "availability_unconfirmed",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "venue_tier": "lead",
+      "verification_question_kinds": [
+        "cost_unknown",
+        "availability",
+        "event_window",
+        "capacity",
+        "room_assignment"
+      ],
+      "verification_questions": [
+        "Confirm the MICE hire rate for the Charles K. Kao Auditorium for a roughly 50-person Saturday event (the official HKSTP MICE page links a PRICE LIST and Online Booking Form; no numeric rate is visible in the fetched page; contact mice@hkstp.org / +852 2639 8301).",
+        "Confirm Auditorium availability on a weekend date in the focus window.",
+        "Confirm the bookable window on weekends and any staffed-hours limits for external hirers.",
+        "Confirm the current theatre-style capacity of the Charles K. Kao Auditorium (the official HKSTP MICE page publishes no per-room numbers; the TTGmice directory table lists 'Charles K. Kao Auditorium & Pre-Function Hall' at 284 theatre / 284 sq m).",
+        "Confirm which configuration suits a 50-person talk-style event best (Auditorium vs smaller Meeting Rooms such as INNO2 Studio or Meeting Room 1) and whether a smaller room gives better fit and value."
+      ],
+      "wifi_status": "confirmed"
+    },
+    {
+      "accessed_on": "2026-08-21",
+      "address": "21/F The Phoenix, 23 Luard Road, Wan Chai, Hong Kong",
+      "booking_url": "https://thehive.com.hk/events-venue-hire/",
+      "capacity_basis": "seated",
+      "capacity_comfortable": 40,
+      "catering_policy": "in_house_available",
+      "city_slug": "hong-kong-hk",
+      "closing_time": null,
+      "cost_basis": "estimated_from_rate",
+      "cost_local_amount": 20000,
+      "cost_local_currency": "HKD",
+      "cost_rate_unit": "hour",
+      "estimated_cost_usd": 2549.28,
+      "estimated_hours": 8,
+      "event_window_evidence": null,
+      "event_window_status": "unknown",
+      "evidence": {
+        "geo": "https://thehive.com.hk/events-venue-hire/",
+        "inference": "8-hour estimate at the documented ECB 2026-08-21 planning rate is HK$20,000 = 2,549.28 USD, within the USD 5,000 soft budget; seated capacity 40 is below the 50 target but standing capacity 60 exceeds it; screen confirmed (projector and flip chart); WiFi confirmed (high speed); complimentary coffee and tea adds catering value.",
+        "observed_facts": "Official the Hive Wan Chai events-venue-hire page (fetched 2026-08-21, HTTP 200) states the 21F Indoor Space is 'suitable for Large Group Meetings, Workshops, Presentations, Screenings, Events, Conferences' with 'High Speed WiFi, Max Capacity 40 seated or 60 standing, Sound System (Microphone & Speaker), Complimentary Coffee & Tea, Projector & Flip Chart'. Rate: HK$2,500 per hour. The Hive Wan Chai is at 21/F The Phoenix, 23 Luard Road, Wan Chai. 'Summer-Exclusive Packages Available' per the page."
+      },
+      "hourly_rate_local": 2500,
+      "hourly_rate_usd": 318.65936143,
+      "latitude": 22.279,
+      "longitude": 114.1748,
+      "max_booking_hours": null,
+      "name": "the Hive Wan Chai — 21F Indoor Space",
+      "needs_human_verify": true,
+      "opening_hours": null,
+      "rate_currency": "HKD",
+      "rate_estimate_note": "Official the Hive Wan Chai events-venue-hire page (fetched 2026-08-21, HTTP 200) publishes 'Rate: HK$2500 per hour' for the 21F Indoor Space; 8-hour estimate = 2500 x 8 = HK$20,000 converted at ECB 2026-08-21 rate USD 1 = HKD 7.845348 = 2,549.28 USD. Complimentary coffee and tea included; 'Summer-Exclusive Packages Available' (enquire for current offers).",
+      "recording_suitability": "likely_good",
+      "score": null,
+      "score_breakdown": null,
+      "screen_status": "confirmed",
+      "source_title": "Events Venue Hire — the Hive Wan Chai (official): 21F Indoor Space, max 40 seated or 60 standing, HK$2,500/hr, high-speed WiFi, projector and flip chart, sound system, complimentary coffee and tea; 21/F The Phoenix, 23 Luard Road, Wan Chai",
+      "source_url": "https://thehive.com.hk/events-venue-hire/",
+      "tier_reasons": [
+        "material verification question(s): capacity"
+      ],
+      "venue_flags": [
+        "capacity_40_49",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "venue_tier": "lead",
+      "verification_question_kinds": [
+        "final_quote",
+        "availability",
+        "event_window",
+        "capacity"
+      ],
+      "verification_questions": [
+        "Confirm the exact all-in rate for the 21F Indoor Space (published HK$2,500/hr; 8-hour estimate 2,549.28 USD at ECB 2026-08-21 rate).",
+        "Confirm availability on a weekend date in the focus window.",
+        "Confirm the bookable window and any weekend staffed-hours limits.",
+        "Confirm that the 40-seated capacity can be augmented with standing overflow to accommodate 50 attendees in a talk-style format."
+      ],
+      "wifi_status": "confirmed"
+    }
+  ],
+  "venues": [],
+  "workflow_phase": "venue"
+}

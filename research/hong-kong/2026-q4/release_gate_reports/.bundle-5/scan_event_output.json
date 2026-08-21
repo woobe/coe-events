@@ -1,0 +1,33 @@
+{
+  "scanner_version": "1.0.0",
+  "rules_version": "v1",
+  "invocation": {
+    "project_root": ".",
+    "quarter": "2026-q4",
+    "city": "hong-kong",
+    "generated_at": "2026-08-21",
+    "report": "/home/joe/repo_dev/coe-events/research/hong-kong/2026-q4/release_gate_reports/.bundle-5/scan_event_output.json",
+    "surface": "both"
+  },
+  "concrete_bundle": "research/hong-kong/2026-q4/.bundle-5",
+  "event_plan_hash": "8fcf9fe0c3772a5723992d26ca75f34925d39df3b330bd627adb25d5dcf006a7",
+  "temporary_render_hash": "c317c38b4b24cf93db755e6bc738c91a74f15faf44be5ca728f8572f3f3e46ad",
+  "canonical_summary": {
+    "path": "/home/joe/repo_dev/coe-events/summary/2026-q4-hong-kong-summary.html",
+    "before": {
+      "state": "present",
+      "sha256": "0d92c6cd19f80be9b34bdb82b8a8af8c48355afbe786ad96e50f4b3024f5a20d"
+    },
+    "after": {
+      "state": "present",
+      "sha256": "0d92c6cd19f80be9b34bdb82b8a8af8c48355afbe786ad96e50f4b3024f5a20d"
+    },
+    "unchanged": true
+  },
+  "surfaces_requested": [
+    "html",
+    "source"
+  ],
+  "finding_count": 0,
+  "findings": []
+}

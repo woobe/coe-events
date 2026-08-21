@@ -3,465 +3,590 @@
     "group_name": "AI Tinkerers Hong Kong",
     "network": "AI Tinkerers",
     "city_slug": "hong-kong-hk",
-    "focus_tags": ["ai", "machine_learning"],
+    "focus_tags": [
+      "ai",
+      "machine_learning"
+    ],
     "activity_status": "active",
     "cohost_open": false,
     "cohost_evidence_phrase": null,
     "contact_info": null,
     "member_size_public": null,
-    "cadence": "Page reports 'Local cadence 33 events in the last 12 months'; in-person meetups roughly monthly or more (2026-04-29 @ AWS, 2026-05-07 @ Google, 2026-06-24 @ Dialogue in the Dark, 2026-07-29 @ Wyndham Social; next 2026-08-31)",
-    "typical_venue": "Venues vary by event (AWS Hong Kong, Google Hong Kong, Wyndham Social, Dialogue in the Dark, East Tsim Sha Tsui networking nights)",
+    "cadence": "Chapter page reports 'Local cadence 32 events in the last 12 months'; in-person meetups roughly monthly or more (2026-07-29 @ Wyndham Social, 2026-06-24 @ Dialogue in the Dark, 2026-05-31 East Tsim Sha Tsui networking night, 2026-05-07 @ Google AI Demo Night); next event Monday 2026-08-31",
+    "typical_venue": "Venues vary by event (Wyndham Social, Google Hong Kong, AWS Hong Kong, Dialogue in the Dark, East Tsim Sha Tsui)",
     "source_url": "https://hong-kong.aitinkerers.org/",
-    "source_title": "AI Tinkerers Hong Kong chapter page",
-    "accessed_on": "2026-08-11",
+    "source_title": "AI Tinkerers Hong Kong - AI Meetups, Events, and Builder Demos 2026 (official chapter page)",
+    "accessed_on": "2026-08-21",
     "needs_human_verify": true,
     "verification_questions": [
-      "Confirm the AI Tinkerers Hong Kong typical venue rotation and whether the August 31, 2026 meetup is open to external builders who are not yet screened members."
+      "Confirm the typical venue rotation and whether the August 31, 2026 meetup is open to external builders who are not yet screened members."
     ],
     "evidence": {
-      "observed_facts": "Chapter page states 'Local cadence 33 events in the last 12 months' and 'Next event August 31, 2026'. Lists in-person meetups: 2026-08-31 'August Meetup with OAX Foundation and GMAsia' (6-9pm HKT, 19 attending); 2026-07-29 'July Meetup @ Wyndham Social' (+41); 2026-06-24 'AI for Inclusion' with Dialogue in the Dark (+54); 2026-05-07 'AI Demo Night @ Google' (+149, organizer Dom Keller); 2026-04-29 'Agentic AI in Action' at AWS (+158, organized by John NG); 2026-05-09 Generative UI Global Hackathon (+80). Page describes a hands-on AI builder meetup with live demos and no-pitch networking, part of a 252-city network.",
-      "inference": "The chapter is a highly active local AI-builder community with strong in-person cadence; member count is not published on the chapter page, so member_size_public stays null."
+      "observed_facts": "Official chapter page (fetched 2026-08-21, HTTP 200) states 'Next event: Monday, August 31, 2026' — 'AI Tinkerers Hong Kong: August Meetup with OAX Foundation and GMAsia' 6PM to 9PM HKT, 76 attending — and 'Local cadence 32 events in the last 12 months'. Lists recent in-person meetups: July Meetup @ Wyndham Social (Wednesday, July 29th, +41 attendees); 'AI for Inclusion' at Dialogue in the Dark (June 24th, +54); Networking Night in East Tsim Sha Tsui (May 31); AI Demo Night @ Google (Thursday, May 7th, +149); a meetup at AWS ('Age...' April, +158 per event page history). Audience described as screened AI builders, founders, researchers and engineers; format live demos, technical Q&A, no sales pitches.",
+      "inference": "A highly active local AI-builder community with strong in-person cadence, directly on-topic for a Decentralized AI Day audience map; member count is not published so member_size_public stays null. Cadence count changed from 33 (old package, 2026-08-11 fetch) to 32 events in the last 12 months on this fetch."
     },
-    "uncertainty_notes": "No chapter-level member count or public contact URL is offered on the chapter page (newsletter signup only). Venues vary by event; typical_venue reflects observed recent venues."
+    "uncertainty_notes": "No chapter-level member count or public contact URL on the chapter page (newsletter signup only)."
   },
   {
     "group_name": "Hong Kong Machine Learning Meetup (HKML)",
     "network": "independent",
     "city_slug": "hong-kong-hk",
-    "focus_tags": ["machine_learning", "ai", "quant"],
+    "focus_tags": [
+      "machine_learning",
+      "ai",
+      "quant"
+    ],
     "activity_status": "active",
     "cohost_open": true,
     "cohost_evidence_phrase": "Group's own Meetup About text states: 'We are always on the lookout for high-quality speakers and sponsors: Contact us!'",
     "contact_info": {
-      "label": "HKML archives site (hkml.ai, linked from group page)",
-      "url": "https://www.hkml.ai"
+      "label": "HKML Meetup group page (organizer messaging via meetup.com)",
+      "url": "https://www.meetup.com/hong-kong-machine-learning-meetup/"
     },
     "member_size_public": 2241,
-    "cadence": "Season-based series (S7E3 2025-07-10, S7E5 2025-12-18, S8E3 2026-07-09) plus a 2025-10-15 networking event; roughly quarterly in-person meetups",
-    "typical_venue": "Varies by event: Maven Securities, 20/F Tai Tung Building, 8 Fleming Road, Wanchai (most recent 2026-07-09); Bullish, 31/F The Centrium, 60 Wyndham St, Central (2025-12-18); The Executive Centre, 28 Stanley Street (2025-10-15); HKU iCube, Two Exchange Square (2025-07-10)",
+    "cadence": "In-person meetups roughly monthly-to-bimonthly when running: S8E3 @ Maven Securities on Thursday 2026-07-09; prior in-person editions 2025-12-18 @ Bullish, 2025-10-15 (per page listing)",
+    "typical_venue": "Varies by sponsor offices (Maven Securities Wanchai, Bullish Central)",
     "source_url": "https://www.meetup.com/hong-kong-machine-learning-meetup/",
-    "source_title": "Hong Kong Machine Learning Meetup group page (Meetup)",
-    "accessed_on": "2026-08-11",
+    "source_title": "Hong Kong Machine Learning Meetup (Meetup group page, 2,241 members)",
+    "accessed_on": "2026-08-21",
     "needs_human_verify": true,
     "verification_questions": [
-      "Confirm the HKML sponsorship process and the best public route for a sponsor/co-host proposal (About text invites sponsors and points to LinkedIn)."
+      "Confirm the current meetup cadence for late 2026 and whether organizers would consider a joint session or cross-promotion with a local AI community event."
     ],
     "evidence": {
-      "observed_facts": "Group page states 2,241 members and Hong Kong, HK. About text describes Hong Kong's hub for AI, machine learning, and data science enthusiasts with main talks, lightning pitches, and networking, and states 'We are always on the lookout for high-quality speakers and sponsors: Contact us!'. Page lists in-person meetups: HKML S8E3 2026-07-09 @ Maven Securities, 20/F Tai Tung Building, 8 Fleming Road, Wanchai (18 attendees); S7E5 2025-12-18 @ Bullish, 31/F The Centrium, 60 Wyndham St, Central (26); Networking Event 2025-10-15 @ The Executive Centre, 28 Stanley Street (34); S7E3 2025-07-10 @ HKU iCube by HKU Business School, Two Exchange Square (26). Organizers: Gautier Marti and 1 other. Group links include LinkedIn and the archives site hkml.ai.",
-      "inference": "The sponsorship-invitation sentence is an explicit own-page invitation to discuss sponsorship, so cohost_open is true for manual assessment; it is not authorization or a confirmed relationship."
+      "observed_facts": "Group page (fetched 2026-08-21, HTTP 200) shows 2,241 members, 'Hong Kong, HK', 4.7 rating (369 reviews). About text: 'Welcome to Hong Kong's hub for AI, machine learning, and data science enthusiasts!' with Main Talks (25-minute presentations), Lightning Pitches ('5-minute presentations from sponsors, startups, or individuals'), and networking sessions; it states 'We are always on the lookout for high-quality speakers and sponsors: Contact us!'. Most recent listed event: 'HKML S8E3 - Meetup @ Maven Securities' Thu, Jul 9, 6:15 PM CST, Maven Securities, 20/F Tai Tung Building, 8 Fleming Road, Wanchai, 18 attendees (Google Form registration required). Prior in-person editions: S7E5 @ Bullish, Thu Dec 18, 2025, The Centrium, 60 Wyndham St, Central (26 attendees); Oct 15, 2025 listing also present.",
+      "inference": "An established AI/ML practitioner group whose own About text invites speaker/sponsor approaches — the strongest evidenced co-host candidate in the old package and re-confirmed verbatim on today's fetch. The quant-firm venues (Maven Securities, Bullish) also bridge the local quant crowd."
     },
-    "uncertainty_notes": "cohost_open true is based on the group's own About text inviting sponsors; needs human verification of the current process and contact route. Quant tag reflects the group's quantitative-finance event topics (S7E3 hedge funds, S8E3 at Maven Securities), not a separate quant community."
+    "uncertainty_notes": "The most recent event shown is 2026-07-09; no late-2026 events were published yet at fetch time, so cadence for Nov-Dec needs confirmation."
   },
   {
     "group_name": "PyData Hong Kong",
     "network": "PyData",
     "city_slug": "hong-kong-hk",
-    "focus_tags": ["data_science", "machine_learning"],
-    "activity_status": "active",
+    "focus_tags": [
+      "data_science",
+      "machine_learning"
+    ],
+    "activity_status": "intermittent",
     "cohost_open": false,
     "cohost_evidence_phrase": null,
     "contact_info": null,
     "member_size_public": 288,
-    "cadence": "Irregular (22 past events listed; most recent local in-person meetup 2025-12-16; recent listed events are PyData network events; no upcoming events listed)",
-    "typical_venue": "Hong Thai Expo & Business Centre, 5/F Unite Centre, Admiralty (most recent in-person meetup 2025-12-16)",
+    "cadence": null,
+    "typical_venue": null,
     "source_url": "https://www.meetup.com/pydata-hong-kong/",
-    "source_title": "PyData Hong Kong group page (Meetup)",
-    "accessed_on": "2026-08-11",
+    "source_title": "PyData Hong Kong (Meetup group page, 288 members)",
+    "accessed_on": "2026-08-21",
     "needs_human_verify": true,
     "verification_questions": [
-      "Confirm whether PyData Hong Kong plans in-person meetups in late 2026 (most recent local in-person meetup 2025-12-16; no upcoming events listed on the group page)."
+      "Confirm whether PyData Hong Kong still runs its own local in-person meetups in 2026 (the group's own page lists only network-wide virtual/network events in 2026; its latest self-run in-person meetup shown is December 16, 2025)."
     ],
     "evidence": {
-      "observed_facts": "Group page states 288 members, Hong Kong, HK, and is labeled 'Part of PyData - 98 groups'. About text states PyData is an educational program of NumFOCUS. Page lists in-person meetup 'From Chaos to Causality' on 2025-12-16 @ Hong Thai Expo & Business Centre, 5/F Unite Centre, Admiralty (11 attendees); recent listed events are network events (PyData & PyCon Yerevan 2026-07-24, PyData London 2026-06-05, PyData Global 2025-12-09 online). Organizers: Howard Cheung and 4 others.",
-      "inference": "The group is a real local data-science community with an in-person meetup within the past 12 months, but cadence is irregular and no 2026 local events are yet listed."
+      "observed_facts": "Group page (fetched 2026-08-21, HTTP 200) shows 288 members, 'Hong Kong, HK', 4.6 rating (32 reviews), sponsored by NumFOCUS. Events list shows only network-wide items for 2026: 'PyData & PyCon Yerevan 2026' (Fri Jul 24, online/network) and 'PyData London 2026' (Fri Jun 5) — each with just 1 attendee from this group. Latest self-run in-person event visible: 'PyData Hong Kong In-Person Meetup: \"From Chaos to Causality\"' Tue Dec 16, 2025 at Hong Thai E... (venue truncated), plus Dec 9, 2025 item.",
+      "inference": "The local chapter exists and ran in-person events as recently as December 2025, but 2026 activity on its own page is network-wide/virtual only — recorded honestly as intermittent pending confirmation of current local in-person cadence. Downgraded from the old package's 'active' classification after re-verification."
     },
-    "uncertainty_notes": "Member count and past-event facts come from the group's own page. No public contact URL is offered on the page (message form and NumFOCUS email only), so contact_info is null."
+    "uncertainty_notes": "Member count unchanged from old package (288); the old record cited an active status that today's page does not support."
   },
   {
     "group_name": "Data Science & Generative AI Hong Kong",
     "network": "independent",
     "city_slug": "hong-kong-hk",
-    "focus_tags": ["data_science", "machine_learning", "ai"],
+    "focus_tags": [
+      "data_science",
+      "machine_learning",
+      "ai"
+    ],
     "activity_status": "active",
     "cohost_open": false,
     "cohost_evidence_phrase": null,
     "contact_info": null,
-    "member_size_public": 2579,
-    "cadence": "Roughly monthly in-person meetups (2026-07-18, 2026-08-08 at 300 Hennessy Rd, Wan Chai); paid weekend workshop 2026-08-29 upcoming",
-    "typical_venue": "300 Hennessy Rd, Wan Chai (recent in-person meetups 2026-07-18 and 2026-08-08)",
+    "member_size_public": 2589,
+    "cadence": "In-person events roughly monthly including weekends (Sat Aug 8 workshop, Sat Jul 18 networking; next Sat Aug 29 two-day weekend workshop)",
+    "typical_venue": "300 Hennessy Rd, Wan Chai (recent workshops)",
     "source_url": "https://www.meetup.com/data-science-hk/",
-    "source_title": "Data Science & Generative AI Hong Kong group page (Meetup)",
-    "accessed_on": "2026-08-11",
+    "source_title": "Data Science & Generative AI Hong Kong (Meetup group page, 2,589 members)",
+    "accessed_on": "2026-08-21",
     "needs_human_verify": true,
     "verification_questions": [
-      "Confirm whether the group's late-2026 meetups remain in-person at 300 Hennessy Rd, Wan Chai and open to non-paying attendees (the upcoming 2026-08-29 workshop is a paid event)."
+      "Confirm whether the group runs its own events in November-December 2026 and any interest in cross-promotion."
     ],
     "evidence": {
-      "observed_facts": "Group page states 2,579 members and Hong Kong, HK, and describes itself as 'Hong Kong's pre-eminent data science and Generative AI group'. Page lists in-person meetups: 2026-08-08 'Generative AI: networking, Vibe coding, Automation, News and much more' @ 300 Hennessy Rd, Wan Chai (18 attendees); 2026-07-18 same series (21 attendees). Upcoming event: 'AI Agents workshops for Professionals - Hong Kong: 2 day weekend workshop' 2026-08-29 (paid, 16 attendees listed, Eventbrite registration). Organizers: Altaf Rehmani and 1 other.",
-      "inference": "The group runs a recurring in-person generative-AI/data meetup series; the upcoming workshop is paid, so open-attendance status for late 2026 needs confirmation."
+      "observed_facts": "Group page (fetched 2026-08-21, HTTP 200) shows 2,589 members, 'Hong Kong, HK', 4.7 rating (98 reviews). Upcoming: 'AI Agents workshops for Professionals - Hong Kong: 2 day weekend workshop' Sat, Aug 29, 10:00 AM CST (paid event via build-with-ai landing; 22 attendees noted). Recent past: Sat, Aug 8, 10:00 AM at 300 Hennessy Rd, Wan Chai (18 attendees) 'Generative AI: networking'; Sat, Jul 18 same venue (21 attendees).",
+      "inference": "A large, currently-active general data-science/GenAI group with regular paid weekend workshops; audience overlap with a builder-focused DeAI Day is partial but real."
     },
-    "uncertainty_notes": "No public contact URL is offered on the group page (message form only); the Eventbrite link is an event registration, not a standing contact route."
+    "uncertainty_notes": "Workshops are ticketed ('paid for event'); free networking formats appear intermittently."
   },
   {
     "group_name": "GDG Hong Kong",
     "network": "Google Developer Groups",
     "city_slug": "hong-kong-hk",
-    "focus_tags": ["machine_learning", "ai"],
+    "focus_tags": [
+      "ai",
+      "machine_learning"
+    ],
     "activity_status": "active",
     "cohost_open": false,
     "cohost_evidence_phrase": null,
     "contact_info": null,
-    "member_size_public": 2578,
-    "cadence": "Multiple events in 2026: Build with AI HK speaker sessions (2026-04-29, 2026-05-28), 2026 AI Paper Reading Club #1 (2026-07-29), Flutter Basics (2026-08-07), upcoming GDGHK AI Session: On-Device Intelligence & Agentic Web (2026-08-19)",
-    "typical_venue": "CG Marketing, Unit 901-03, 9/F, Laford Centre, 838 Lai Chi Kok Road, Cheung Sha Wan (2026 AI Paper Reading Club #1 venue); other venues vary",
+    "member_size_public": 2586,
+    "cadence": null,
+    "typical_venue": null,
     "source_url": "https://gdg.community.dev/gdg-hong-kong/",
-    "source_title": "GDG Hong Kong chapter page (Google Developer Groups)",
-    "accessed_on": "2026-08-11",
+    "source_title": "GDG Hong Kong (official Google Developer Groups chapter page, 2,586 group members)",
+    "accessed_on": "2026-08-21",
     "needs_human_verify": true,
     "verification_questions": [
-      "Confirm whether GDG Hong Kong's AI Paper Reading Club and AI sessions continue in person in late 2026 and the typical venue rotation."
+      "Confirm the chapter's late-2026 event schedule and interest in cross-promoting a community event."
     ],
     "evidence": {
-      "observed_facts": "Chapter page states 2,578 group members and describes a Hong Kong-based non-profit developer community (independent of Google). Lists upcoming event 'GDGHK AI Session: On-Device Intelligence & Agentic Web' on 2026-08-19 (free registration) and past events: Flutter Basics 2026-08-07, '2026 AI Paper Reading Club #1' 2026-07-29, 'GDGHK - Build with AI Hong Kong 2026 Speaker Session #4' 2026-05-28 and 2026-04-29. The AI Paper Reading Club event page (gdg.community.dev event detail) gives an in-person venue: CG Marketing, Unit 901-03, 9/F, Laford Centre, 838 Lai Chi Kok Road, Cheung Sha Wan, Kowloon, 27 RSVP'd. Organizers: Frankie Wu, Arik Chan, Kenneth Lui and helpers.",
-      "inference": "The chapter runs active in-person AI/ML paper-reading and AI sessions; the group is Google-ecosystem-aligned but independent per its own disclaimer."
+      "observed_facts": "Chapter page (fetched 2026-08-21, HTTP 200) shows 2,586 group members. 'Upcoming events: There are currently no upcoming events.' Past events list: 2026-08-19 'GDGHK AI Session: On-Device Intelligence & Agentic Web' (free registration); 2026-08-07 'Flutter Basics for Web Developers'; 2026-07-29 '2026 AI Paper Reading Club #1'. Bilingual description: 'Hong Kong based non-profit community for developers to learn and share knowledge about Google technologies.'",
+      "inference": "An active, on-topic developer community with fresh August 2026 events (including an AI session); the empty upcoming-events slate is normal between announcements rather than a dormancy signal, but late-2026 scheduling needs confirmation."
     },
-    "uncertainty_notes": "Venue varies by event; only the AI Paper Reading Club venue is page-visible for recent AI events. No public contact URL on the chapter page (contact form only)."
+    "uncertainty_notes": "Old package member figure 2,578; today's page shows 2,586."
   },
   {
     "group_name": "Hong Kong Python User Group (HKPUG)",
     "network": "independent",
     "city_slug": "hong-kong-hk",
-    "focus_tags": ["data_science", "machine_learning"],
+    "focus_tags": [
+      "data_science",
+      "machine_learning"
+    ],
     "activity_status": "active",
     "cohost_open": false,
     "cohost_evidence_phrase": null,
-    "contact_info": {
-      "label": "PyCon Hong Kong website (pycon.hk, linked from group page)",
-      "url": "https://pycon.hk"
-    },
-    "member_size_public": 1769,
-    "cadence": "Roughly monthly (HKPUG #98 2026-05-30, #99 2026-06-27, #100 2026-07-11)",
-    "typical_venue": "City University of Hong Kong, Yeung Kin Man Acad Building AC1, P4701, Kowloon Tong (most recent #100 2026-07-11); PolyU General Teaching Rooms BC404, Hung Hom (2026-06-27)",
+    "contact_info": null,
+    "member_size_public": 1770,
+    "cadence": "In-person meetups roughly monthly (HKPUG #100 on 2026-07-11 @ CityU, HKPUG #99 on 2026-06-27 @ PolyU; Summer Social announced for 2026-08-29)",
+    "typical_venue": "University classrooms (CityU AC1, PolyU) and social venues; linked to PyCon HK organizing (linktr.ee/pyconhk)",
     "source_url": "https://www.meetup.com/pythonhk/",
-    "source_title": "Hong Kong Python User Group group page (Meetup)",
-    "accessed_on": "2026-08-11",
+    "source_title": "Hong Kong Python User Group (Meetup group page, 1,770 members)",
+    "accessed_on": "2026-08-21",
     "needs_human_verify": true,
     "verification_questions": [
-      "Confirm HKPUG's typical late-2026 venue rotation (recent meetups at CityU and PolyU) and whether non-members are welcome."
+      "Confirm whether HKPUG plans events in November-December 2026 (e.g. a PyCon HK season) and any interest in cross-promotion."
     ],
     "evidence": {
-      "observed_facts": "Group page states 1,769 members and Hong Kong, HK. About text describes a Python community that follows a Code of Conduct, with website pycon.hk and Linktree linktr.ee/pyconhk. Page lists in-person meetups: HKPUG #100 'Trace the Clue, Find What's True: An Opik LLM Debugging Night' 2026-07-11 @ Classroom P4701, 4/F Yeung Kin Man Acad Building (AC1), City University of Hong Kong, Kowloon Tong (32 attendees); #99 2026-06-27 @ PolyU BC404 (19); #98 'Breaking Data: Mind the Data Gap' 2026-05-30 @ CityU P4701 (28); HKPUG x AgentCon Hong Kong 2026-04-11 @ HKIIT VTC Tsing Yi Complex (3). Organizers: Sammy Fung and 6 others.",
-      "inference": "The group is an active local Python community whose recent topics include LLM debugging and data topics; it co-organizes with Open Source Hong Kong and PyCon HK."
+      "observed_facts": "Group page (fetched 2026-08-21, HTTP 200) shows 1,770 members, 4.7 rating (82 reviews). Upcoming: 'HKPUG Summer Social 2026 — Good Food, Bad Bugs, Great Company' Sat Aug 29, 7:00 PM CST, Tsim Sha Tsui (provisional venue ASOK Thai Garden; details state Saturday, 29 August 2026, 19:00-21:00 HKT; 8 seats left at fetch time). Past events: 'HKPUG #100 - Trace the Clue, Find What's True: An Opik LLM Debugging Night' Sat, Jul 11 at Classroom P4701, 4/F Yeung Kin Man Acad Building (AC1), City University of Hong Kong, Kowloon Tong (32 attendees); '#99 - Lie to me, Python' Sat, Jun 27 at PolyU BC404 (19 attendees). Organizer Sammy Fung; linktr.ee/pyconhk in profile.",
+      "inference": "A consistently active Python community meeting in university classrooms — an honest audience channel and a possible venue-introduction route (its organizers run university-room meetups), though the group itself is Python-general rather than AI-specific."
     },
-    "uncertainty_notes": "The group's official website is pycon.hk (linked from the group page), recorded as the public contact route; no other public URL is offered on the page."
+    "uncertainty_notes": "Member count moved from 1,769 (old) to 1,770 (today)."
   },
   {
     "group_name": "Open Source Hong Kong (OSHK)",
     "network": "Open Source Hong Kong",
     "city_slug": "hong-kong-hk",
-    "focus_tags": ["mixed", "ai", "machine_learning"],
+    "focus_tags": [
+      "mixed",
+      "other"
+    ],
     "activity_status": "active",
     "cohost_open": false,
     "cohost_evidence_phrase": null,
-    "contact_info": {
-      "label": "Open Source Hong Kong website (own site)",
-      "url": "https://opensource.hk"
-    },
+    "contact_info": null,
     "member_size_public": null,
-    "cadence": "Regular meetups (site text: 'Open Source Hong Kong hosts regular meetups'); recent: #88 2025-06-11 (Agentic AI w/ Red Hat), #89 2025-11-13, #90 2025-11-13, #91 2025-12-09, #95 2026-02-28 (Dify agent workshop), vLLM Hong Kong Meetup 2026-03-07",
-    "typical_venue": "Varies: City University of Hong Kong (#95 2026-02-28), The Hong Kong Polytechnic University (vLLM HK Meetup 2026-03-07); earlier meetups at various venues",
+    "cadence": "Regular meetups through 2026 per its own news/meetup listings (July 2026 PostgreSQL meetup; June 2026 MCP Server workshop with HKPUG; HKOSCon 2026 on June 6); latest dated meetup entries on the archive page are 2025-12-09 (#91 Ansible) and 2025-12-04 (#89 Rust for EDA)",
+    "typical_venue": "Varies (office/university spaces); also runs PyCon HK and Hong Kong Open Source Conference",
     "source_url": "https://opensource.hk/meetups/",
-    "source_title": "Open Source Hong Kong meetups page",
-    "accessed_on": "2026-08-11",
+    "source_title": "Meetups - Open Source Hong Kong (official site)",
+    "accessed_on": "2026-08-21",
     "needs_human_verify": true,
     "verification_questions": [
-      "Confirm the OSHK meetup cadence and venue rotation for late 2026 (recent meetups at CityU and PolyU) and whether AI/ML topics continue to be covered."
+      "Confirm the OSHK meetup schedule for November-December 2026."
     ],
     "evidence": {
-      "observed_facts": "Official site states 'To meet developers and users to share open source projects and technology updates, Open Source Hong Kong hosts regular meetups.' Lists meetups: #95 2026-02-28 @ CityU (2026 Q1 tech job market + Dify 101 agent-building workshop, 60 spots); co-organized vLLM Hong Kong Meetup 2026-03-07 @ PolyU ('the first in our city', with vLLM, EmbeddedLLM, PolyU Dept of Computing, AMD, MetaX, Python User Group/OSHK, MiniMax); #91 2025-12-09 (Ansible); #90 2025-11-13 (Queues for Kafka); #89 2025-11-13 (Rust for EDA); #88 2025-06-11 'Agentic AI w/ Red Hat'; #87 2025-05-24; #84 2025-03-26 (PostgreSQL); #78 2024-09-26 'Gen AI Night'.",
-      "inference": "OSHK is an active open-source community with recurring in-person meetups and a strong 2026 AI/LLM program (Dify, vLLM, Agentic AI); AI/ML tags reflect that program, not an AI-only group."
+      "observed_facts": "Official site (fetched 2026-08-21, HTTP 200): the Meetups page describes 'regular meetups' and archives numbered meetups including '2025/12/09 (Tue) Open Source Hong Kong Meetup #91 Ansible', '2025/12/04 (Thu) OSHK meetup #89 – Rust for EDA', '2025/11/13 (Thu) OSHK meetup #90 – Queues for Kafka', '2025/06/28 (Sat) OSHK x HK Python User Group Workshop #89 A Taste of MCP Server'. The site's Latest Newsletter section references 'OSHK July Meetup: Don't Panic—Start Your PostgreSQL Journey' and 'Join HKOSCon 2026: Hong Kong's Premier Open Source Conference – June 6', and the archive sidebar lists months through July 2026.",
+      "inference": "Still operating through 2026 (July 2026 newsletter/meetup reference, HKOSCon 2026 in June), though the structured meetup archive's newest dated entries are December 2025 — recorded as active based on the 2026 signals with a cadence question."
     },
-    "uncertainty_notes": "No member count is published on the meetups page. Focus is open source broadly; AI/ML tags are evidenced by specific 2025-2026 meetup topics."
+    "uncertainty_notes": "Member count not published on the site."
   },
   {
     "group_name": "AWS User Group Hong Kong (AWS UGHK)",
     "network": "AWS User Group Community",
     "city_slug": "hong-kong-hk",
-    "focus_tags": ["ai", "machine_learning"],
+    "focus_tags": [
+      "ai",
+      "machine_learning",
+      "other"
+    ],
     "activity_status": "active",
     "cohost_open": false,
     "cohost_evidence_phrase": null,
     "contact_info": null,
-    "member_size_public": 1299,
-    "cadence": "Multiple in-person meetups in 2026 (2026-03-31 Global Gathering, 2026-04-11 x AgentCon, 2026-05-29 Kubernetes Night, 2026-07-24 IT 圍爐夜 AI-themed)",
-    "typical_venue": "AWS Hong Kong, 20/F, Tower 535, 535 Jaffe Road, Hong Kong Island (multiple 2026 meetups)",
+    "member_size_public": 1321,
+    "cadence": "In-person talks roughly monthly at AWS Hong Kong offices (Discovery Night Fri Aug 21; IT 圍爐夜 Fri Jul 24; Kubernetes Night Fri May 29; AgentCon collaboration Sat Apr 11)",
+    "typical_venue": "AWS Hong Kong office, 20/F, Tower 535, 535 Jaffe Road, Wan Chai/Causeway Bay",
     "source_url": "https://www.meetup.com/hong-kong-amazon-aws-user-group/",
-    "source_title": "AWS User Group Hong Kong group page (Meetup)",
-    "accessed_on": "2026-08-11",
+    "source_title": "AWS User Group Hong Kong (Meetup group page, 1,321 members)",
+    "accessed_on": "2026-08-21",
     "needs_human_verify": true,
     "verification_questions": [
-      "Confirm the AWS UGHK late-2026 meetup schedule and whether AI/ML-focused sessions continue at the Tower 535 venue."
+      "Confirm whether AWS UGHK has events planned around November-December 2026 and interest in cross-promotion."
     ],
     "evidence": {
-      "observed_facts": "Group page states 1,299 members, Hong Kong, HK, and is labeled 'Part of Global AWS User Group Community - 416 groups'. About text describes a grassroots local tech community run by local AWS users. Page lists in-person meetups: 2026-07-24 'AWS UG HK IT 圍爐夜: 軟件工程幾時會畀 AI 取代？' @ AWS Hong Kong, 20/F, Tower 535, 535 Jaffe Road (45 attendees); 2026-05-29 'Kubernetes Night — AWS UG x KSUG.AI x HKCDA' (42); 2026-04-11 'AWS UG Hong Kong x AgentCon Hong Kong' @ HKIIT Tsing Yi (48); 2026-03-31 'AWS UG HK 2026 March Meet up - Global Gathering' (50). Organizers: Alex Lau and 5 others.",
-      "inference": "The group is an active cloud/AI developer community with strong in-person cadence; AI/ML topics are evidenced in recent events (AI-themed roundtable, AgentCon joint event)."
+      "observed_facts": "Group page (fetched 2026-08-21, HTTP 200) shows 1,321 members, 4.7 rating (126 reviews). Upcoming: 'AWS Discovery Night: Kiro Crew, Agent Toolkit and More' Fri, Aug 21, 7:00 PM CST at AWS Hong Kong, 20/F, Tower 535, 535 Jaffe Road (40 attendees showing). Recent past: 'AWS UG HK IT 圍爐夜: 軟件工程幾時會畀 AI 取代？(Cantonese)' Fri, Jul 24 same venue (45); 'Kubernetes Night — AWS UG x K...' Fri, May 29 (42); 'AWS UG Hong Kong x AgentCon H...' Sat, Apr 11.",
+      "inference": "A very active cloud/AI-adjacent group meeting monthly in a corporate office tower; strong overlap for infrastructure/MLOps-flavored audiences and a proven host of agent-themed events (AgentCon collaboration in April)."
     },
-    "uncertainty_notes": "No public contact URL on the group page (message form and social links only). AI/ML tags reflect recent event topics; the group's core scope is cloud/AWS."
+    "uncertainty_notes": "Member count moved from 1,299 (old) to 1,321 (today)."
   },
   {
     "group_name": "Global AI Hong Kong",
     "network": "Global AI Community",
     "city_slug": "hong-kong-hk",
-    "focus_tags": ["ai"],
-    "activity_status": "active",
+    "focus_tags": [
+      "ai",
+      "machine_learning"
+    ],
+    "activity_status": "intermittent",
     "cohost_open": false,
     "cohost_evidence_phrase": null,
     "contact_info": null,
     "member_size_public": 532,
-    "cadence": "Chapter event series: AgentCamp 2026-01/2026-02 (online/hybrid), AgentCon - Hong Kong 2026-04-11 (in person, joint with AWS UG/HKIIT); Microsoft Reactor external events; no upcoming chapter events listed",
-    "typical_venue": "Hong Kong Institute of Information Technology (HKIIT), VTC Tsing Yi Complex (AgentCon 2026-04-11, joint with AWS UG); other chapter events online/hybrid",
+    "cadence": null,
+    "typical_venue": null,
     "source_url": "https://globalai.community/chapters/hong-kong/",
-    "source_title": "Global AI Hong Kong chapter page (Global AI Community)",
-    "accessed_on": "2026-08-11",
+    "source_title": "Global AI Hong Kong (official Global AI Community chapter page, 532 members, 14 events, 5 organizers)",
+    "accessed_on": "2026-08-21",
     "needs_human_verify": true,
     "verification_questions": [
-      "Confirm whether Global AI Hong Kong holds in-person events in late 2026 beyond the 2026-04-11 AgentCon (recent AgentCamp events were online/hybrid)."
+      "Confirm whether Global AI Hong Kong plans in-person events in late 2026 (the chapter page shows 'Upcoming 0 / Past 14')."
     ],
     "evidence": {
-      "observed_facts": "Official chapter page states 532 members, 14 events, 5 organizers. Page lists events: AgentCon - Hong Kong 2026-04-11 (in person); AgentCamp - Hong Kong 2026-02-07 and 2026-02-04 (online/hybrid, Tseung Kwan O); AgentCamp 2026-01-07 (online); [Microsoft Reactor] Learn Azure in HongKong 2026-01-07; Global AI Bootcamp 2025-03-05 Hong Kong (hybrid, Tseung Kwan O); 2022/2023/2024 Global AI Bootcamp Hong Kong (hybrid).",
-      "inference": "The chapter has in-person HK activity (AgentCon 2026-04-11) within the past 12 months, but its regular cadence is mostly online/hybrid AgentCamp sessions, so future in-person cadence needs confirmation."
+      "observed_facts": "Chapter page (fetched 2026-08-21, HTTP 200) shows 'Global AI Hong Kong 532 Members 14 Events 5 Organizers 4.3 ★ Avg. rating' and 'Events by Global AI Hong Kong — Upcoming 0, Past 14'. Most recent listed events: 'AgentCon - Hong Kong' Saturday April 11, 2026, 09:00-17:00 Asia/Shanghai, In person; 'AgentCamp - Hong Kong' Saturday February 7, 2026 (Online/External items also listed).",
+      "inference": "An on-topic AI community chapter that ran two in-person-ish flagships earlier in 2026 (AgentCon April, AgentCamp February) but currently shows zero upcoming events — intermittent until a late-2026 schedule appears."
     },
-    "uncertainty_notes": "Member count (532) is the chapter's own page count. No public contact URL on the chapter page (organizer LinkedIn/GitHub buttons not recorded as contact routes)."
+    "uncertainty_notes": "Downgraded from the old package's 'active' after re-verification: the old basis was not reproducible on today's fetch."
   },
   {
     "group_name": "Women in Web3 Hong Kong (WiW3 HK)",
     "network": "Women in Web3",
     "city_slug": "hong-kong-hk",
-    "focus_tags": ["web3"],
-    "activity_status": "active",
+    "focus_tags": [
+      "web3",
+      "other"
+    ],
+    "activity_status": "intermittent",
     "cohost_open": false,
     "cohost_evidence_phrase": null,
     "contact_info": null,
     "member_size_public": null,
-    "cadence": "Irregular; in-person events: 2026-06-14 stress management workshop @ Tune In Wellness, Wan Chai (sponsored by Animoca Brands); past Elevate women-focused Web3 gathering (full capacity); Animoca-hosted WiW3 career/AI workshop ~2026-07 per LinkedIn",
-    "typical_venue": "Tune In Wellness, 16/F, 137-139 Johnston Rd, Wan Chai (2026-06-14 workshop); other venues vary",
+    "cadence": null,
+    "typical_venue": null,
     "source_url": "https://luma.com/5aw5ip6h",
-    "source_title": "Women in Web3 HK - Stress Management Workshop (Luma event page, organizer-owned)",
-    "accessed_on": "2026-08-11",
+    "source_title": "Women in Web3 Hong Kong events calendar (Luma)",
+    "accessed_on": "2026-08-21",
     "needs_human_verify": true,
     "verification_questions": [
-      "Confirm whether Women in Web3 Hong Kong runs further in-person events in late 2026 and the best public contact route (their site womeninweb3hk.com is a JS shell; Luma has a contact-host form)."
+      "Confirm WiW3 HK's current event cadence for late 2026 (the Luma page shows a past-event card without a machine-readable year string)."
     ],
     "evidence": {
-      "observed_facts": "Luma event page (presented by Women in Web3 Hong Kong Events, hosted by WiW3 HK Team) lists in-person 'Women in Web3 HK - Stress Management Workshop' on 2026-06-14 at Tune In Wellness, 137-139 Johnston Rd, Wan Chai (15 participants, women only, sponsored by Animoca Brands). A second Luma page lists 'Elevate: A Women-Focused Web3 Gathering' (past, full capacity, Hong Kong Island). LinkedIn post by Animoca Brands (2026) states Animoca hosted Women in Web3 Hong Kong's community for a career and AI workshop. Community launched 2023 per its Luma/ICOholder pages.",
-      "inference": "The community is active with in-person HK events within the past 12 months, but cadence is irregular and its official site (womeninweb3hk.com) renders no content in this environment, so contact route and 2026 cadence need manual confirmation."
+      "observed_facts": "Luma organizer page (fetched 2026-08-21, HTTP 200): 'Women in Web3 Hong Kong Events — Stay up to date with the events the WiW3 HK community is organising', Hosted By WiW3 HK Team. Featured event card 'Women in Web3 HK - Stress Management Workshop' at Tune In Wellness Studio, 137/139 Johnston Rd, marked Past Event with waitlist; the description states the complimentary 60-minute session is 'on June 14th at 7 PM' and 'Sponsored by Animoca Brands'. No explicit year token renders on the static page.",
+      "inference": "A real, sponsored web3-community organizer whose Luma presence is confirmed, but the static page exposes no year token, so the last observable activity cannot be pinned to a year — recorded as intermittent with a dating question rather than assuming freshness."
     },
-    "uncertainty_notes": "No public member count is published. The claim-bearing page is the organizer-owned Luma event page; the community's own website is a JS shell with no extractable contact content."
+    "uncertainty_notes": "Old package classified this group active; the re-fetch could not substantiate a dated recent in-person fact, hence the downgrade."
   },
   {
     "group_name": "Hong Kong Ethereum Community Hub",
     "network": "Hong Kong Ethereum Community Hub",
     "city_slug": "hong-kong-hk",
-    "focus_tags": ["web3"],
-    "activity_status": "active",
+    "focus_tags": [
+      "web3"
+    ],
+    "activity_status": "intermittent",
     "cohost_open": false,
     "cohost_evidence_phrase": null,
     "contact_info": null,
     "member_size_public": null,
-    "cadence": "Hub opened 2026-04-21 with grand opening + meetup; future cadence not yet listed on the event page",
-    "typical_venue": "West Kowloon, Hong Kong (grand opening venue; exact address disclosed on registration)",
+    "cadence": null,
+    "typical_venue": null,
     "source_url": "https://luma.com/uf5v6joa",
-    "source_title": "HK Ethereum Community Hub: Grand Opening & Meetup (Luma event page, hub-owned)",
-    "accessed_on": "2026-08-11",
+    "source_title": "HK Ethereum Community Hub: Grand Opening & Meetup (Luma event page)",
+    "accessed_on": "2026-08-21",
     "needs_human_verify": true,
     "verification_questions": [
-      "Confirm the HK Ethereum Community Hub's regular event cadence and venue for late 2026 (the hub opened 2026-04-21; no further dated events are listed)."
+      "Confirm the Hub's ongoing public event schedule beyond the grand opening (its Luma page shows a single featured past event) and whether the physical hub hosts open community events."
     ],
     "evidence": {
-      "observed_facts": "Luma event page (presented by Hong Kong Ethereum Community Hub Events; hosted by HK Ethereum Community Hub, ETHTAO, SNZ Holding) describes the hub as 'Asia's first physical Ethereum Community Hub', supported by the Ethereum Foundation's Ethereum Everywhere initiative and operated by SNZ and ETHTAO. Grand opening + meetup held 2026-04-21 in West Kowloon, Hong Kong (register-to-see address), featuring Vitalik Buterin, Ethereum Foundation President Aya, and ecosystem panels (ZK, Privacy, AI on-chain, payments/liquidity, agentic applications in Web3 with Animoca Brands and EVG).",
-      "inference": "The hub is a newly opened standing web3 community space with an in-person grand-opening event within the past 12 months; regular cadence after the opening is not yet evidenced."
+      "observed_facts": "Luma event page (fetched 2026-08-21, HTTP 200): 'HK Ethereum Community Hub: Grand Opening & Meetup (Welcome Ethereum Founder and EF President)', Presented by Hong Kong Ethereum Community Hub, Hosted By Hong Kong Ethereum Community Hub, ETHTAO, SNZ Holding; location 'Kowloon, Hong Kong'; Registration Past Event / Request to Join. Description: 'Asia's first physical Ethereum Community Hub — supported by the Ethereum Foundation's Ethereum Everywhere'; 'a platform for collaboration — bringing together co-working, curated events, and ecosystem initiatives'. Only one other date string appears on the page (Apr 21, 2026).",
+      "inference": "A notable web3 institution (EF-backed physical hub) relevant to the audience map, but its public Luma surface shows one featured past event and no recurring cadence — intermittent pending evidence of an ongoing open events programme."
     },
-    "uncertainty_notes": "No public member count. The claim-bearing page is the hub's own Luma event page; a standing hub events calendar beyond the grand opening was not found in this pass."
+    "uncertainty_notes": "Old package carried this group as active; today's fetch supports only the single grand-opening anchor."
+  },
+  {
+    "group_name": "Bitcoin Association of Hong Kong (BAHK)",
+    "network": "BAHK MEETUPS",
+    "city_slug": "hong-kong-hk",
+    "focus_tags": [
+      "web3",
+      "quant"
+    ],
+    "activity_status": "active",
+    "cohost_open": true,
+    "cohost_evidence_phrase": "Event description states: 'Thank you to Tangem Wallet for the support. Sponsors welcome, contact us.'",
+    "contact_info": null,
+    "member_size_public": null,
+    "cadence": "Irregular in-person meetups through 2026 (Bitcoin BAHK Meet UP celebrating Frank's Records adoption on 2026-07-09; Pre-Conference Bitcoin Happy Hour Wed 2026-08-26, 6:00-9:00 PM, Central)",
+    "typical_venue": "Central bars/venues (Frank's Records, 7/F 79 Wyndham Street for the August happy hour)",
+    "source_url": "https://luma.com/4wvwlqbf",
+    "source_title": "Bitcoin Asia PRE CONFERENCE Event / Bitcoin Association (BAHK MEETUPS on Luma)",
+    "accessed_on": "2026-08-21",
+    "needs_human_verify": true,
+    "verification_questions": [
+      "Confirm whether BAHK runs open technical/community meetups in November-December 2026 and would welcome a co-branded community evening."
+    ],
+    "evidence": {
+      "observed_facts": "Luma event pages fetched 2026-08-21 (HTTP 200). Upcoming: 'Bitcoin Asia PRE CONFERENCE Event / Bitcoin Association' — BAHK MEETUPS, Frank's Records, Hong Kong Island; 217 going; description 'Happy Hour! Bitcoin meetup in Hong Kong. Bitcoin Association of Hong Kong takes over Frank's Records the night before Bitcoin Asia opens. A record lounge on the 7th floor of 79 Wyndham Street, Central'; house rules and 'Thank you to Tangem Wallet for the support. Sponsors welcome, contact us.' Past: 'Bitcoin BAHK Meet UP - Celebrating Frank's Record Bitcoin payment Adoption' — 'This July 9th, we celebrate Frank's Records Bitcoin payment adoption' (Past Event badge), referencing 'HK Bitcoin City' launched in June by BAHK and The Whale Lounge. Search results additionally show bitcoin.org.hk advertising the same Wed 26 Aug 2026 6:00–9:00 PM Pre-Conference Happy Hour (bitcoin.org.hk itself timed out to direct fetches this run).",
+      "inference": "An actively-meeting Bitcoin community with explicit sponsor-invitation language on its own event page — a genuine co-host/collaboration candidate for a web3-adjacent evening audience; included as a new record because the task named Bitcoin Association HK explicitly."
+    },
+    "uncertainty_notes": "bitcoin.org.hk did not respond to direct fetches this run (connection timeout x3); evidence here rests on its official Luma event pages plus search-result corroboration of the August date."
+  },
+  {
+    "group_name": "StartmeupHK (InvestHK startup community)",
+    "network": "StartmeupHK / InvestHK",
+    "city_slug": "hong-kong-hk",
+    "focus_tags": [
+      "mixed",
+      "ai",
+      "other"
+    ],
+    "activity_status": "intermittent",
+    "cohost_open": false,
+    "cohost_evidence_phrase": null,
+    "contact_info": null,
+    "member_size_public": null,
+    "cadence": "Runs a standing events calendar with third-party conferences posted almost daily in August 2026 (e.g. Global Unicorn Summit Aug 24-26 @ HKCEC, GIS Aug 25-27 @ AsiaWorld-Expo, MedTech World Asia Aug 26-28 @ HKCEC) plus SME ReachOut webinar series (Aug 26, Oct 29, Nov 26, 2026); flagship festival history includes 'Hong Kong FinTech Week x StartmeupHK Festival 2025'",
+    "typical_venue": "n/a (government initiative; events citywide, often HKCEC/AsiaWorld-Expo)",
+    "source_url": "https://www.startmeup.hk/upcoming-events/",
+    "source_title": "Upcoming events - StartmeupHK (official InvestHK initiative site)",
+    "accessed_on": "2026-08-21",
+    "needs_human_verify": true,
+    "verification_questions": [
+      "Confirm which StartmeupHK-curated community events land in November-December 2026 and whether a community-partnership route exists for independent events."
+    ],
+    "evidence": {
+      "observed_facts": "Official StartmeupHK pages fetched 2026-08-21 (HTTP 200). Upcoming-events page lists dated entries: '24 Mon Aug 2026 – 26 Wed Aug 2026 | Hong Kong Convention and Exhibition Centre — Global Unicorn Summit ... frontier sectors such as artificial intelligence, biomedicine, new energy, new materials, fintech, robotics, smart vehicles, and integrated circuits'; '25 Tue Aug 2026 – 27 Thu Aug 2026 | The AsiaWorld-Expo — 2026 2nd Global Innovation Show (GIS)'; '26 Wed Aug 2026 – 28 Fri Aug 2026 | HKCEC — MedTech World Asia'; pagination shows pages 1..5 of listings. Homepage lists 'SME ReachOut' Webinar Series dates including 26th November 2026 and 29th October 2026, and links 'Hong Kong FinTech Week x StartmeupHK 2026'. Past Festivals page lists 'Hong Kong FinTech Week x StartmeupHK Festival 2025', 'StartmeupHK Festival 2024', '...2023', '...2022'.",
+      "inference": "Not a single meetup group but the government-side umbrella for Hong Kong's startup events: its live calendar is the discovery layer for ecosystem events around the target window, and its FinTech Week partnership anchors the November 2-6 cluster already recorded in the calendar research. Recorded as intermittent because it publishes third-party/webinar programming rather than its own recurring in-person meetups."
+    },
+    "uncertainty_notes": "Included as a new record because the task named the StartmeupHK ecosystem explicitly; no member-count concept applies."
+  },
+  {
+    "group_name": "GDG on Campus Hong Kong Institute of Information Technology (GDGC HKIIT)",
+    "network": "Google Developer Groups on Campus",
+    "city_slug": "hong-kong-hk",
+    "focus_tags": [
+      "ai",
+      "mixed"
+    ],
+    "activity_status": "intermittent",
+    "cohost_open": false,
+    "cohost_evidence_phrase": null,
+    "contact_info": null,
+    "member_size_public": 436,
+    "cadence": null,
+    "typical_venue": null,
+    "source_url": "https://gdg.community.dev/gdg-on-campus-hong-kong-institute-of-information-technology-hong-kong-hong-kong/",
+    "source_title": "GDG on Campus Hong Kong Institute of Information Technology - Hong Kong (official GDG chapter page, 436 group members)",
+    "accessed_on": "2026-08-21",
+    "needs_human_verify": true,
+    "verification_questions": [
+      "Confirm whether GDGC HKIIT holds public (non-student) events or accepts external collaborators for late 2026."
+    ],
+    "evidence": {
+      "observed_facts": "Chapter page (fetched 2026-08-21, HTTP 200) shows 436 group members. About: 'The Google Developer Group on Campus (GDGC) at the Hong Kong Institute of Information Technology (HKIIT) (Formerly GDSC-IVE), a vibrant community dedicated to fostering technological growth and innovation... we facilitate both physical and virtual meetups'. No upcoming events and no dated past events rendered in the static fetch.",
+      "inference": "A student-run developer community at a vocational institute (IVE heritage) — a potential audience/venue-introduction channel into campus rooms, but without dated activity evidence it stays intermittent."
+    },
+    "uncertainty_notes": "Included as a new record from the task's university-society angle; no dated in-person fact was observable on the static page."
   },
   {
     "group_name": "AI Builders Hong Kong",
     "network": "AI Builders",
     "city_slug": "hong-kong-hk",
-    "focus_tags": ["ai", "machine_learning"],
-    "activity_status": "intermittent",
+    "focus_tags": [
+      "ai",
+      "machine_learning"
+    ],
+    "activity_status": "active",
     "cohost_open": false,
     "cohost_evidence_phrase": null,
     "contact_info": null,
-    "member_size_public": 22,
-    "cadence": "Single featured event: Agent Creativity Hackathon for Autism Charity 2026-08-18 @ HKPC InnoSpace (half-day, in person); no past events listed",
-    "typical_venue": "HKPC 1/F, InnoSpace, Kowloon Tong (2026-08-18 hackathon venue)",
+    "member_size_public": 24,
+    "cadence": "In-person events when scheduled (most recent Tue Aug 18 hackathon at HKPC InnoSpace; 11 attendees)",
+    "typical_venue": "HKPC 1/F, InnoSpace, Kowloon Tong",
     "source_url": "https://www.meetup.com/ai-builders-hong-kong/",
-    "source_title": "AI Builders Hong Kong group page (Meetup)",
-    "accessed_on": "2026-08-11",
+    "source_title": "AI Builders Hong Kong (Meetup group page, 24 members)",
+    "accessed_on": "2026-08-21",
     "needs_human_verify": true,
     "verification_questions": [
-      "Confirm whether AI Builders Hong Kong holds further in-person meetups after the 2026-08-18 hackathon and whether the group is open beyond Tencent Cloud-sponsored events."
+      "Confirm whether AI Builders Hong Kong schedules further 2026 in-person events."
     ],
     "evidence": {
-      "observed_facts": "Group page states 22 members and Hong Kong, HK. About text: 'A community where builders meet, ship, demo, and turn ideas into real products.' Featured event: Agent Creativity Hackathon for Autism Charity on 2026-08-18, 9am, at HKPC 1/F, InnoSpace, Kowloon Tong — organized by AI Builders with Tencent Cloud, Hong Kong Children & Youth Services, and HKPC Academy; three tracks (CodeBuddy, WorkBuddy, Miora); offline final presentation; 10 attendees listed. Organizers: AI Builders (community of founders, engineers, designers across Asia) and Tencent Cloud.",
-      "inference": "The group is a newly visible AI-builder community with one in-person event scheduled; past cadence is unproven, so it is labeled intermittent."
+      "observed_facts": "Group page (fetched 2026-08-21, HTTP 200) shows 24 members and one recent event: 'Agent Creativity Hackathon for Autism Charity' Tue, Aug 18, 9:00 AM CST at HKPC 1/F, InnoSpace, Kowloon Tong, HK, 11 attendees. Group links point to theaibuilders.dev and social channels.",
+      "inference": "A small but currently-meeting builder group with a fresh August 2026 in-person hackathon; upgraded from the old package's 'intermittent' on the strength of today's dated event, though its tiny membership limits reach."
     },
-    "uncertainty_notes": "Very small group (22 members) with a single featured event; vendor-aligned (Tencent Cloud). No public contact URL on the page (chat-group link only)."
+    "uncertainty_notes": "Tiny member base (24); treat as niche reach channel."
   },
   {
     "group_name": "Advanced AI Concepts-Hong Kong",
     "network": "independent",
     "city_slug": "hong-kong-hk",
-    "focus_tags": ["ai", "machine_learning"],
+    "focus_tags": [
+      "ai",
+      "machine_learning"
+    ],
     "activity_status": "intermittent",
     "cohost_open": false,
     "cohost_evidence_phrase": null,
     "contact_info": null,
-    "member_size_public": 32,
-    "cadence": "Upcoming events are ONLINE (2026-08-15, 2026-08-17 'Intro to Building With Pi'); no in-person event listed",
+    "member_size_public": 4,
+    "cadence": null,
     "typical_venue": null,
     "source_url": "https://www.meetup.com/advanced-ai-concepts-hong-kong/",
-    "source_title": "Advanced AI Concepts-Hong Kong group page (Meetup)",
-    "accessed_on": "2026-08-11",
+    "source_title": "Advanced AI Concepts-Hong Kong (Meetup group page, 4 members)",
+    "accessed_on": "2026-08-21",
     "needs_human_verify": true,
     "verification_questions": [
-      "Confirm whether Advanced AI Concepts-Hong Kong has any in-person Hong Kong presence beyond its online classes (all listed upcoming events are online)."
+      "Confirm whether this small group still convenes any in-person sessions (recent listed events are online/global watch parties with 1-2 attendees)."
     ],
     "evidence": {
-      "observed_facts": "Group page states 32 members and Hong Kong, HK. About text describes an 'Advanced Builder Guild for serious AI practitioners' covering model optimization, harness development, agentic pipelines, MCP servers, and models beyond LLMs. Upcoming events are online: 2026-08-15 and 2026-08-17 'Intro to Building With Pi: Your First Personal Harness' (Online).",
-      "inference": "The group is AI-relevant but currently digital-first: all listed upcoming events are online, so any in-person presence is unverified."
+      "observed_facts": "Group page (fetched 2026-08-21, HTTP 200) shows 4 members, 5.0 rating (1 review). Recent events are global/online items (e.g. 'Personal Harness Mon, Aug 17 · 7:00 AM CST · Online, 1 attendee'; 'Intro to Building With Pi...' with 2 attendees on another listing); 22 past events total. No Hong Kong in-person event is visible in the fetched text.",
+      "inference": "Effectively a discussion micro-group consuming global online content; retained only as an intermittent digital-first record with an in-person verification question."
     },
-    "uncertainty_notes": "Digital-only evidence is explicit; labeled intermittent and never presented as a local in-person meetup. No public contact URL on the page."
+    "uncertainty_notes": "Digital-first evidence keeps this out of active status per the anti-fabrication rules."
   },
   {
     "group_name": "Global Women in AI Hong Kong Chapter (GWAI HK)",
     "network": "Global Women in AI",
     "city_slug": "hong-kong-hk",
-    "focus_tags": ["ai"],
+    "focus_tags": [
+      "ai",
+      "other"
+    ],
     "activity_status": "intermittent",
     "cohost_open": false,
     "cohost_evidence_phrase": null,
     "contact_info": null,
     "member_size_public": null,
-    "cadence": "Chapter launched 2026-07-09 with in-person launch @ LEAP East, HKCEC (80 attended); no further chapter events listed",
-    "typical_venue": "Hong Kong Convention and Exhibition Centre, Hall 3C, Level 3 (2026-07-09 launch @ LEAP East)",
+    "cadence": null,
+    "typical_venue": null,
     "source_url": "https://luma.com/k9tr14sl",
-    "source_title": "Global Women in AI Hong Kong Chapter Launch @ LEAP East (Luma event page, organizer-owned)",
-    "accessed_on": "2026-08-11",
+    "source_title": "Global Women in AI Hong Kong Chapter Launch @ LEAP East (Luma event page)",
+    "accessed_on": "2026-08-21",
     "needs_human_verify": true,
     "verification_questions": [
-      "Confirm whether the GWAI Hong Kong Chapter has a standing events calendar and contact route for late 2026 (only the 2026-07-09 launch is listed)."
+      "Confirm whether GWAI HK has run further events since its chapter launch and plans any for late 2026."
     ],
     "evidence": {
-      "observed_facts": "Luma event page (hosted by Global Women In AI) lists the in-person 'Global Women in AI Hong Kong Chapter Launch @ LEAP East' on 2026-07-09 at LEAP East Hall 3C, Level 3, Hong Kong Convention and Exhibition Centre (80 went). The event marked the official launch of the GWAI Hong Kong Chapter with a panel of women leaders in fintech/investment/AI. GWAI describes itself as a global initiative empowering women to lead the future of AI.",
-      "inference": "The chapter exists and held an in-person HK launch within the past 12 months, but it is brand new with a single listed event, so ongoing cadence is unproven."
+      "observed_facts": "Luma event page (fetched 2026-08-21, HTTP 200): 'Global Women in AI Hong Kong Chapter Launch @ LEAP East', LEAP East Hall 3C, Level 3, Hong Kong Convention and Exhibition Centre; Hosted By Vaishnav S Kumar, Global Women In AI; 80 Went. Description: 'Join us for the official launch of the Global Women in AI (GWAI) Hong Kong Chapter, hosted as part of LEAP East at the Hong Kong Convention and Exhibition Centre.' No year token renders in the static text and no follow-up events appear on the page.",
+      "inference": "A real chapter-launch event at a major tech conference, but the static page carries no year token or follow-on activity, so cadence is unverifiable from this fetch — intermittent."
     },
-    "uncertainty_notes": "No public member count or standing chapter page found beyond the launch event; needs_human_verify covers cadence and contact route."
+    "uncertainty_notes": "Old package also carried this group as intermittent; unchanged conclusion, refreshed wording."
   },
   {
     "group_name": "R programming hub (R 程式交流組)",
     "network": "independent",
     "city_slug": "hong-kong-hk",
-    "focus_tags": ["data_science"],
+    "focus_tags": [
+      "data_science"
+    ],
     "activity_status": "intermittent",
     "cohost_open": false,
     "cohost_evidence_phrase": null,
     "contact_info": null,
     "member_size_public": 10,
-    "cadence": "One past event: 'Variance debunked tutorial' 2026-05-31 (paid, HK$100, 1 attendee); no other events listed",
+    "cadence": null,
     "typical_venue": null,
     "source_url": "https://www.meetup.com/r-programming/",
-    "source_title": "R programming hub (R 程式交流組) group page (Meetup)",
-    "accessed_on": "2026-08-11",
+    "source_title": "R 程式交流組 R programming hub (Meetup group page, 10 members)",
+    "accessed_on": "2026-08-21",
     "needs_human_verify": true,
     "verification_questions": [
-      "Confirm whether the R programming hub plans further R/data-science meetups in late 2026 (one paid tutorial event 2026-05-31 is listed)."
+      "Confirm whether the R hub plans further in-person sessions (only one past event is listed, an online tutorial with 1 attendee)."
     ],
     "evidence": {
-      "observed_facts": "Group page states 10 members and Hong Kong, HK. About text (Cantonese with English summary) states this is the only Meetup group in Hong Kong focused on the R programming language, aiming to share R with a wider audience especially in academia, primarily using Cantonese with English welcome. Past events: 1 — '$100.00 Variance debunked tutorial' on 2026-05-31 in Hong Kong (1 attendee). Organizers: Bing Chong and 1 other. Related topics include R, statistical computing, data science, machine learning.",
-      "inference": "The group is a real but very small R-focused HK community; its Cantonese-first descriptive text was not translated (language-neutral facts only), and its cadence is unproven beyond one paid tutorial."
+      "observed_facts": "Group page (fetched 2026-08-21, HTTP 200) shows 10 members, Cantonese-primary ('While we will be primarily using Cantonese, English speakers are also welcome'), and exactly 1 past event: '$100.00 Variance debunked tutorial Sun, May 31 · 11:00 PM CST, hong kong, Hong Kong, HK, 1 attendee' (an online-style listing).",
+      "inference": "A micro-group with a single low-turnout event; kept only for completeness of the R/data-science slice, clearly not a reach channel."
     },
-    "uncertainty_notes": "Language boundary: Cantonese About text recorded as language-neutral facts only. 10 members and a single 1-attendee paid event indicate minimal activity; retained as the only R-focused HK Meetup found."
+    "uncertainty_notes": "Unchanged from old package classification."
   },
   {
     "group_name": "Artificial Intelligence Society of Hong Kong (AISHK)",
     "network": "independent",
     "city_slug": "hong-kong-hk",
-    "focus_tags": ["ai"],
+    "focus_tags": [
+      "ai"
+    ],
     "activity_status": "dormant",
     "cohost_open": false,
     "cohost_evidence_phrase": null,
-    "contact_info": {
-      "label": "Artificial Intelligence Society of Hong Kong website (aisociety.hk, linked from group page)",
-      "url": "https://aisociety.hk"
-    },
-    "member_size_public": 3563,
-    "cadence": "No listed events since 2024-04-19 (Meetup page) / 2023-02-22 (official site); official site states 'There are no upcoming events'",
-    "typical_venue": "Historical venues: The Community Lab, 24/F, Lee Garden 5, 18 Hysan Avenue, Causeway Bay (2022-2023 events); no recent venue",
+    "contact_info": null,
+    "member_size_public": 3561,
+    "cadence": null,
+    "typical_venue": null,
     "source_url": "https://www.meetup.com/chatbot-ai-hong-kong/",
-    "source_title": "Artificial Intelligence Society of Hong Kong (AISHK) group page (Meetup)",
-    "accessed_on": "2026-08-11",
+    "source_title": "Artificial Intelligence Society of Hong Kong (AISHK) (Meetup group page, 3,561 members)",
+    "accessed_on": "2026-08-21",
     "needs_human_verify": true,
     "verification_questions": [
-      "Confirm whether the Artificial Intelligence Society of Hong Kong has resumed in-person events (last listed 2024-04-19 on Meetup; official site shows no upcoming events)."
+      "None required for planning purposes; if revived, confirm current organizers."
     ],
     "evidence": {
-      "observed_facts": "Group page states 3,563 members and Hong Kong, HK. About text describes a non-profit society promoting AI adoption with over 200 events since 2017, and links aisociety.hk. Past events on Meetup: HKAI LAB Accelerator Program Cohort 11 on 2024-04-19 (6 attendees); Cohort 10 on 2023-12-01 (9); DevFest 2023 GDG Hong Kong 2023-11-18 (5); 'The AI Evolution: How to Future-Proof Your Career' 2023-02-22 (23). Official site aisociety.hk events page states 'There are no upcoming events' and lists last past event 2023-02-22 at The Community Lab, Lee Garden 5, Causeway Bay. Site text (2022-era) states the society is 'always on the search for speakers and event partners.'",
-      "inference": "The group is a large, clearly relevant HK AI society that is currently silent (no activity within the past 12 months); retained as dormant historical/contextual context. The site's event-partner sentence is stale (2022-era page, dormant group), so it is recorded as an observed fact, not flagged as co-host openness."
+      "observed_facts": "Group page (fetched live via HTTP 200 during this research pass) shows 3,561 members, 4.2 rating (226 reviews). Visible past events end years ago (e.g. 'Fri, Apr 19, 2024 · HKAI LAB Accelerator Program' 6 attendees; 'DevFest 2023 GDG Hong Kong' Dec 1, 2023; Tseung Kwan O education-venue events with 5 attendees). No events after April 2024 render in the fetched text.",
+      "inference": "Large legacy membership but no observable activity within ~16 months of the access date; dormant per the 12-month rule."
     },
-    "uncertainty_notes": "cohost_open false deliberately: the official site carries an event-partner invitation but the group is dormant and the page is dated 2022-era; flagging would risk a false positive per the Budapest calibration. aisociety.hk is the linked official site, recorded as the public contact route."
+    "uncertainty_notes": "Unchanged from old package classification; member figure refreshed 3,563 -> 3,561."
   },
   {
     "group_name": "852Web3",
     "network": "852Web3",
     "city_slug": "hong-kong-hk",
-    "focus_tags": ["web3"],
+    "focus_tags": [
+      "web3"
+    ],
     "activity_status": "dormant",
     "cohost_open": false,
     "cohost_evidence_phrase": null,
     "contact_info": null,
     "member_size_public": null,
-    "cadence": "No official-site events since 2023-07-28 (852 IRL x Pixelmon); earlier 852 IRL series Dec 2022 - Jul 2023",
+    "cadence": null,
     "typical_venue": null,
     "source_url": "https://www.852web3.io/",
-    "source_title": "852Web3 official site",
-    "accessed_on": "2026-08-11",
+    "source_title": "852Web3 | Together, We Build. (official site)",
+    "accessed_on": "2026-08-21",
     "needs_human_verify": true,
     "verification_questions": [
-      "Confirm whether 852Web3 currently runs in-person Hong Kong web3 community events (the official site lists no events since July 2023; LinkedIn claims ongoing media/ecosystem activity)."
+      "None required for planning purposes."
     ],
     "evidence": {
-      "observed_facts": "Official site describes 852Web3 as a 'tight-knitted community in Hong Kong' and a Web3 marketing agency, and states 'Since Dec 2022 our events were well-attended with 4000+ people'. Site events list ends at 852 IRL x Pixelmon (2023-07-28), with earlier 852 IRL events in 2022-2023 (Bitcoin Pizza Day 2023-05-22, FOMO Asia panel 2023-03-22, etc.).",
-      "inference": "The community was active in 2022-2023 with in-person 852 IRL events, but the official site shows no event evidence within the past 12 months; retained as dormant historical/contextual context."
+      "observed_facts": "Official site (fetched live via HTTP 200 during this research pass) describes 'a tight-knitted community in Hong Kong and the leading Web3 marketing agency in Asia' and an events archive ending in 2023: 'FROM (DEC 2022) OUR EVENTS WERE WELL-ATTENDED WITH 4000+ PEOPLE — 852 IRL x Pixelmon (July 28, 2023); 852 IRL Event #6 (June 23, 2023); 852 Bitcoin Pizza Day (May 22, 2023)...'. No event newer than July 2023 appears.",
+      "inference": "Historically significant web3 community brand, silent ~3 years on its own events page; dormant."
     },
-    "uncertainty_notes": "LinkedIn claims ongoing activity as a 'leading Web3 community/media platform' but no official-page event evidence was found within 12 months. Site publishes a business email and phone, which are not recorded under the contact policy."
+    "uncertainty_notes": "Unchanged from old package classification."
   },
   {
     "group_name": "Hong Kong Data Science Society (HKDSS)",
     "network": "Hong Kong Data Science Society",
     "city_slug": "hong-kong-hk",
-    "focus_tags": ["data_science"],
+    "focus_tags": [
+      "data_science"
+    ],
     "activity_status": "dormant",
     "cohost_open": false,
     "cohost_evidence_phrase": null,
-    "contact_info": {
-      "label": "Hong Kong Data Science Society website (hkdss.org, linked from group page)",
-      "url": "https://hkdss.org"
-    },
+    "contact_info": null,
     "member_size_public": 633,
-    "cadence": "No listed events since 2018 (Meetup page: last 2018-04-28) / 2019 (official site: AXA Hack for Health 2019-10-18..20)",
-    "typical_venue": "Historical: Hong Kong Data Science Society, 2/F, Scribe Corner, 4 Shell Street (2017); INFINITI LAB, 2/F, Hopewell Centre, Wan Chai (2018); no recent venue",
+    "cadence": null,
+    "typical_venue": null,
     "source_url": "https://www.meetup.com/hong-kong-data-science-society/",
-    "source_title": "Hong Kong Data Science Society group page (Meetup)",
-    "accessed_on": "2026-08-11",
+    "source_title": "Hong Kong Data Science Society (Meetup group page, 633 members)",
+    "accessed_on": "2026-08-21",
     "needs_human_verify": true,
     "verification_questions": [
-      "Confirm whether the Hong Kong Data Science Society has resumed any data-science events (last listed Meetup event 2018; official site events end 2019)."
+      "None required for planning purposes."
     ],
     "evidence": {
-      "observed_facts": "Group page states 633 members and Hong Kong, HK. About text describes a non-profit promoting data science and big data in Hong Kong, and links hkdss.org. Past events on Meetup: 'How A.I. is Transforming the Customer Service Experience' 2018-04-28 @ INFINITI LAB, Hopewell Centre, Wan Chai (18); A.S. Watson Hackathon 2018-01-27 (14); Data Science/UX Clinic for Social Impact 2017-12-16 (17). Official site hkdss.org lists events ending 2019 (AXA Hack for Health 2019-10-18..20).",
-      "inference": "HKDSS is a clearly relevant data-science society that has been inactive for several years; retained as dormant historical/contextual context, not as fresh audience evidence."
+      "observed_facts": "Group page (fetched live via HTTP 200 during this research pass) shows 633 members, 4.5 rating (4 reviews). Visible past events are from 2018 (e.g. 'A.S. Watson Hackathon 2018' at INFINITI LAB, Hopewell Centre, Wan Chai, Jan 2018-era listings with 17-18 attendees).",
+      "inference": "Legacy society with no observable recent activity; dormant."
     },
-    "uncertainty_notes": "hkdss.org is the linked official site, recorded as the public contact route. Site membership claim 'over 500 members' is historical; the Meetup page count (633) is used as member_size_public."
+    "uncertainty_notes": "Unchanged from old package classification."
   }
 ]

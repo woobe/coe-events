@@ -1,65 +1,65 @@
 [
   {
-    "event_name": "Hong Kong FinTech Week x StartmeupHK Festival 2026",
+    "event_name": "Hong Kong FinTech Week x StartmeupHK 2026",
     "city_slug": "hong-kong-hk",
     "start_date": "2026-11-02",
     "end_date": "2026-11-06",
     "kind": "related",
     "relevance": "fintech",
-    "conflict_severity": "medium",
+    "conflict_severity": "high",
     "source_url": "https://www.fintechweek.hk/",
-    "source_title": "Hong Kong FinTech Week x StartmeupHK 2026 — official: Nov 2-6, 2026, HKCEC, Asia's flagship fintech conference covering fintech, AI and Web3 (45,000+ attendees)",
-    "accessed_on": "2026-08-10",
+    "source_title": "Hong Kong FinTech Week x StartmeupHK 2026 — official site: Nov 2-6, 2026, 45,000+ global leaders, Asia's flagship fintech conference covering fintech, AI, Web3 and more",
+    "accessed_on": "2026-08-21",
     "needs_human_verify": true,
     "verification_questions": [
-      "Confirm the main-conference dates and venue (official fintechweek.hk states November 2-6, 2026; Hong Kong FinTech Week is traditionally at HKCEC, and the InvestHK-adjacent hkengage.gov.hk page confirms the festival runs Nov 2-6 at HKCEC).",
-      "Assess audience adjacency: the fintech/AI/Web3 crowd from FinTech Week (Nov 2-6) is the closest large ecosystem event after the final fall weekend, so a DeAI Day in late October could ride the same audience momentum."
+      "Confirm the main-conference venue (traditionally HKCEC); the official fintechweek.hk site states November 2-6, 2026 and lists 45,000+ global leaders and 1,000+ speakers.",
+      "Assess audience adjacency: the fintech/AI/Web3 crowd from FinTech Week (Nov 2-6) is the largest annual ecosystem gathering in Hong Kong; a Decentralized AI Day in mid-November could leverage residual audience momentum."
     ],
     "evidence": {
-      "observed_facts": "Official FinTech Week site (fintechweek.hk, fetched 2026-08-10, HTTP 200) states 'Hong Kong FinTech Week x StartmeupHK 2026 | Nov 2-6' and 'November 2-6, 2026' for Asia's flagship conference joining fintech, AI, Web3 and more with 45,000+ global leaders; the official Hong Kong Engage page (hkengage.gov.hk/en/essentials/living/hongkong-is-your-networking-goldmine) independently confirms the Hong Kong FinTech Week x StartmeupHK Festival runs 2-6 November 2026 at HKCEC.",
-      "inference": "The largest fintech/AI/Web3 event in Hong Kong runs Nov 2-6, 2026, after the final fall weekend; it is recorded as a medium relevance/opportunity flag for Joe (informational, never an elimination; severity expresses topic/audience relevance prominence only, never logistics impact) and as evidence that the Hong Kong ecosystem is most active in early November."
+      "observed_facts": "Official FinTech Week site (fintechweek.hk, fetched 2026-08-21, HTTP 200) states 'Hong Kong FinTech Week x StartmeupHK 2026 | Nov 2-6' and 'November 2-6, 2026' for Asia's flagship conference joining fintech, AI, Web3 with 45,000+ global leaders. The site lists forums including AI and DeepTech, Digital Assets and Web3, AI in Finance, InsurTech and HealthTech, GreenTech, and Founder and Startup Venture. The Hong Kong Fintech Week x StartmeupHK page (hongkong-fintech.hk, fetched 2026-08-21, HTTP 200) independently confirms 'November 2 to 6' and '45,000+ global leaders'. InvestHK page (investhk.gov.hk, search-verified 2026-08-21) also confirms the same dates.",
+      "inference": "The largest fintech/AI/Web3 event in Hong Kong runs Nov 2-6, 2026. Recorded as a high relevance/opportunity flag for Joe (informational, never an elimination; severity expresses topic/audience prominence only, never logistics impact). The event is the closest major ecosystem gathering to the focus window and represents a side-event and audience-synergy opportunity."
     }
   },
   {
-    "event_name": "Sun Hung Kai Properties Hong Kong Cyclothon 2026",
+    "event_name": "WINE 2026 — The 22nd Conference on Web and Internet Economics",
     "city_slug": "hong-kong-hk",
-    "start_date": "2026-10-11",
-    "end_date": "2026-10-11",
-    "kind": "major_other",
-    "relevance": "other",
-    "conflict_severity": "none",
-    "source_url": "https://www.uci.org/competition-details/2026/ROA/78464",
-    "source_title": "Sun Hung Kai Properties Hong Kong Cyclothon — UCI official competition listing: Hong Kong SAR, 11 Oct 2026, Class 1.1; Discover Hong Kong (HKTB) event page: returns on 11 October",
-    "accessed_on": "2026-08-10",
+    "start_date": "2026-12-01",
+    "end_date": "2026-12-04",
+    "kind": "related",
+    "relevance": "quant",
+    "conflict_severity": "low",
+    "source_url": "https://wine2026conf.github.io/",
+    "source_title": "WINE 2026 — official conference site: 22nd Conference on Web and Internet Economics, University of Hong Kong, December 1-4, 2026",
+    "accessed_on": "2026-08-21",
     "needs_human_verify": true,
     "verification_questions": [
-      "Confirm the final 2026 race-day road-closure schedule with the organizers and Transport Department before planning any event activity on a nearby fall weekend (the race is Sunday Oct 11; the 2025 edition closed major highways and affected 155 bus routes and 15 green minibus routes per The Standard).",
-      "Assess whether the cyclothon weekend carries practical downtown access effects for a 50-person community event (major-city logistics heads-up for Joe; not a topic recommendation and not an elimination)."
+      "Confirm that WINE 2026 remains an in-person event at the University of Hong Kong on Dec 1-4, 2026 (the official site states these dates and 'WINE 2026 will be an in-person event').",
+      "Assess audience adjacency: WINE is an academic conference on incentives, computation, and web economics with partial overlap to quant/data-science crowds; the attendee crowd is primarily academic researchers."
     ],
     "evidence": {
-      "observed_facts": "UCI official competition listing (uci.org/competition-details/2026/ROA/78464, fetched 2026-08-10) states 'Sun Hung Kai Properties Hong Kong Cyclothon Hong Kong SAR 11 Oct 2026 Class 1.1 - 1 day'; the official Discover Hong Kong (HKTB) event page (discoverhongkong.com/eng/events/cyclothon.html, search-verified 2026-08-10; direct fetch Cloudflare-blocked) states the 2026 Cyclothon returns on 11 October with new start/finish at West Kowloon Cultural District; GlobeNewswire press release (Aug 5, 2026) confirms registration opens 20 August for the Sunday 11 October event; The Standard reports the 2025 road closures affected 155 bus routes.",
-      "inference": "The race is on Sunday Oct 11, the day after a nearby fall weekend; the race weekend historically brings citywide highway closures and public-transport diversions. This is a major-city logistics heads-up (road access and transport impact) for the cyclothon weekend, not a venue-score input and not a date elimination."
+      "observed_facts": "Official WINE 2026 site (wine2026conf.github.io, fetched 2026-08-21, HTTP 200) states 'The 22nd Conference on Web and Internet Economics, The University of Hong Kong, Hong Kong, China, December 1-4, 2026' and describes it as an interdisciplinary platform for incentives and computation, held annually since 2005. The page states 'WINE 2026 will be an in-person event.' Paper submission deadline was July 2, 2026; author notification September 10, 2026.",
+      "inference": "An established academic CS/economics conference at HKU in early December. Recorded as a low relevance flag: partial audience overlap with quant/data-science communities but the attendee crowd is primarily academic researchers rather than builder/community audiences."
     }
   },
   {
-    "event_name": "Hong Kong Wine & Dine Festival 2026",
+    "event_name": "IEEE-EMBS BHI 2026 (International Conference on Biomedical and Health Informatics)",
     "city_slug": "hong-kong-hk",
-    "start_date": "2026-10-29",
-    "end_date": "2026-11-01",
-    "kind": "major_other",
-    "relevance": "other",
-    "conflict_severity": "none",
-    "source_url": "https://www.discoverhongkong.com/eng/events/wine-dine-festival.html",
-    "source_title": "Hong Kong Wine & Dine Festival — Discover Hong Kong (HKTB) official event page (direct fetch Cloudflare-blocked; 2026 dates per consistent secondary sources: Oct 29 - Nov 1, Central Harbourfront)",
-    "accessed_on": "2026-08-10",
+    "start_date": "2026-12-12",
+    "end_date": "2026-12-15",
+    "kind": "related",
+    "relevance": "ai",
+    "conflict_severity": "low",
+    "source_url": "https://www.embs.org/event/https-bhi-embs-org-2026/",
+    "source_title": "IEEE-EMBS BHI 2026 — official EMBS event listing: Biomedical and Health Informatics, Hong Kong, December 12-15, 2026 (direct page returned HTTP 403; dates verified via search snippet)",
+    "accessed_on": "2026-08-21",
     "needs_human_verify": true,
     "verification_questions": [
-      "Confirm the official 2026 dates with the Hong Kong Tourism Board (the official DiscoverHK page is Cloudflare-blocked from this research environment; dailypeter.com, foodwithkidappeal.com and hungrytimes.com all state October 29 - November 1, 2026 at Central Harbourfront).",
-      "Assess a nearby fall weekend as a logistics heads-up: the festival runs Oct 29 - Nov 1 at Central Harbourfront, so large tourist crowds and harbourfront congestion are likely on that weekend (major-city logistics context for Joe; not a topic recommendation and not an elimination)."
+      "Re-verify the official dates and venue on the embs.org event page (HTTP 403 from this environment; search snippet states 'BHI 2026 will take place in Hong Kong, China, on December 12-15, 2026' and mentions 'AI, machine learning, and health informatics').",
+      "Assess audience adjacency: BHI showcases work in AI/ML applied to health data; partial overlap with AI/data-science builder audiences but primarily biomedical researchers."
     ],
     "evidence": {
-      "observed_facts": "Official Discover Hong Kong (HKTB) event page (discoverhongkong.com/eng/events/wine-dine-festival.html, search-verified 2026-08-10; direct fetch Cloudflare-blocked) describes the Hong Kong Wine & Dine Festival as an annual celebration at the end of October at Central Harbourfront; multiple independent 2026-dated sources agree on October 29 - November 1, 2026 at Central Harbourfront: dailypeter.com (July 11, 2026), foodwithkidappeal.com (July 11, 2026), hungrytimes.com (August 2026) and gowheretoday.com.",
-      "inference": "A four-day citywide food-and-wine festival at Central Harbourfront containing a nearby fall weekend means heavy harbourfront crowds and likely transport pressure on that date; recorded as a major-city logistics heads-up for Joe (informational, never an elimination), with the official HKTB confirmation left as a verification question."
+      "observed_facts": "The official IEEE-EMBS BHI 2026 page (embs.org, search-verified 2026-08-21; direct fetch returned HTTP 403) states 'BHI 2026 will take place in Hong Kong, China, on December 12-15, 2026. The conference will showcase new work in AI, machine learning, and health informatics.' This is corroborated by conferencealerts.in listing the same dates for Hong Kong.",
+      "inference": "A peer-reviewed IEEE conference on biomedical AI/ML in mid-December. Recorded as a low relevance flag: partial AI/ML audience overlap but the attendee crowd is primarily biomedical researchers rather than AI/web3 builders."
     }
   },
   {
@@ -71,16 +71,16 @@
     "relevance": "other",
     "conflict_severity": "none",
     "source_url": "https://www.clockenflap.com/",
-    "source_title": "Clockenflap — official festival site: Hong Kong's premier music and arts festival, December 4-6, 2026 at Central Harbourfront (official site JS-rendered; dates corroborated by lifestyleasia.hk and littlestepsasia.com)",
-    "accessed_on": "2026-08-10",
+    "source_title": "Clockenflap — official festival site: Hong Kong's premier music and arts festival, December 2026 at Central Harbourfront (official site JS-rendered; dates corroborated by lifestyleasia.hk)",
+    "accessed_on": "2026-08-21",
     "needs_human_verify": true,
     "verification_questions": [
-      "Confirm the final 2026 festival dates with the official site (clockenflap.com states December 4-6, 2026 at Central Harbourfront Event Space, 9 Lung Wo Road; lifestyleasia.hk and littlestepsasia.com corroborate the dates).",
-      "This December record is a major-city logistics heads-up only (large outdoor music festival crowds at Central Harbourfront); no nearby fall weekend falls in December, so it is not a venue-date conflict."
+      "Confirm the final 2026 festival dates and venue (official clockenflap.com states December 4-6, 2026 at Central Harbourfront Event Space; lifestyleasia.hk and littlestepsasia.com corroborate the dates).",
+      "Assess whether the festival weekend carries practical downtown access effects for a 50-person community event (large outdoor music festival crowds at Central Harbourfront)."
     ],
     "evidence": {
-      "observed_facts": "Official Clockenflap site (clockenflap.com, fetched 2026-08-10, HTTP 200, JS-rendered) is Hong Kong's premier music and arts festival returning to Central Harbourfront; lifestyleasia.hk states 'Clockenflap 2026: Hong Kong's biggest outdoor music festival slated for December 4 to 6' at Central Harbourfront Event Space, 9 Lung Wo Road, Central; littlestepsasia.com confirms 'Mark your calendars for December 4-6, 2026'.",
-      "inference": "A large outdoor music festival at Central Harbourfront Dec 4-6 is outside the research coverage period and is recorded as a major-city logistics heads-up (crowds and harbourfront congestion), not a topic recommendation."
+      "observed_facts": "Official Clockenflap site (clockenflap.com, fetched 2026-08-21, HTTP 200, JS-rendered) is Hong Kong's premier music and arts festival; lifestyleasia.hk states 'Clockenflap 2026: Hong Kong's biggest outdoor music festival slated for December 4 to 6' at Central Harbourfront Event Space, 9 Lung Wo Road, Central; littlestepsasia.com confirms 'Mark your calendars for December 4-6, 2026'.",
+      "inference": "A large outdoor music festival at Central Harbourfront Dec 4-6; recorded as a major-city logistics heads-up (crowds and harbourfront congestion), not a topic recommendation and not a date elimination."
     }
   },
   {
@@ -92,17 +92,100 @@
     "relevance": "other",
     "conflict_severity": "none",
     "source_url": "https://2026.bodw.com/en",
-    "source_title": "BODW 2026 — official Hong Kong Design Centre site: Save the dates for the BODW 2026 Summit, November 18-20, at the Hong Kong Convention and Exhibition Centre, Switzerland as partner country",
-    "accessed_on": "2026-08-10",
+    "source_title": "BODW 2026 — official Hong Kong Design Centre site: Save the dates for BODW 2026 Summit, November 18-20, at the Hong Kong Convention and Exhibition Centre",
+    "accessed_on": "2026-08-21",
     "needs_human_verify": true,
     "verification_questions": [
       "Confirm the final BODW 2026 Summit dates and venue (official 2026.bodw.com/en states November 18-20 at HKCEC).",
-      "Verify whether BODW Summit attendance at HKCEC materially affects Wan Chai transport, road access, or hotel demand during November 18-20 (logistics heads-up only; no route, closure, or attendance effect is claimed without evidence).",
-      "This November record is a major-city logistics heads-up only; no nearby fall weekend falls in November, so it is not a venue-date conflict."
+      "Verify whether BODW Summit attendance at HKCEC materially affects Wan Chai transport, road access, or hotel demand during November 18-20."
     ],
     "evidence": {
-      "observed_facts": "Official BODW 2026 site (2026.bodw.com/en, fetched 2026-08-10, HTTP 200) states 'Save the dates for the BODW 2026 Summit, November 18-20, at the Hong Kong Convention and Exhibition Centre, where dialogue connects and transforms' and 'November 2026 Unlock the limitless potential of dialogue. Switzerland as Partner Country'; the Discover Hong Kong event page (event.id88502.business-of-design-week-2026.html) independently lists Business of Design Week 2026.",
-      "inference": "BODW 2026 is a large design/innovation summit at HKCEC in mid-November, outside the research coverage period; it is retained only as a major-city logistics heads-up (a large HKCEC conference can affect Wan Chai transport, road access, and hotel/venue demand), with the practical logistics effect left as a verification question; it is not a topic recommendation."
+      "observed_facts": "Official BODW 2026 site (2026.bodw.com/en, fetched 2026-08-21, HTTP 200) states 'Save the dates for the BODW 2026 Summit, November 18-20, at the Hong Kong Convention and Exhibition Centre' and 'November 2026 Unlock the limitless potential of dialogue. Switzerland as Partner Country'.",
+      "inference": "BODW 2026 is a large design/innovation summit at HKCEC in mid-November; it is retained only as a major-city logistics heads-up (a large HKCEC conference can affect Wan Chai transport, road access, and hotel/venue demand), not a topic recommendation."
+    }
+  },
+  {
+    "event_name": "Hong Kong Wine & Dine Festival 2026",
+    "city_slug": "hong-kong-hk",
+    "start_date": "2026-10-29",
+    "end_date": "2026-11-01",
+    "kind": "major_other",
+    "relevance": "other",
+    "conflict_severity": "none",
+    "source_url": "https://www.discoverhongkong.com/eng/events/wine-dine-festival.html",
+    "source_title": "Hong Kong Wine & Dine Festival — Discover Hong Kong (HKTB) event page (direct fetch Cloudflare-blocked; 2026 dates per consistent secondary sources: Oct 29 - Nov 1, Central Harbourfront)",
+    "accessed_on": "2026-08-21",
+    "needs_human_verify": true,
+    "verification_questions": [
+      "Confirm the official 2026 dates with the Hong Kong Tourism Board (the official DiscoverHK page is Cloudflare-blocked; dailypeter.com, foodwithkidappeal.com and hungrytimes.com all state October 29 - November 1, 2026 at Central Harbourfront).",
+      "The festival's final day (November 1) falls on the first day of the research coverage window; assess whether harbourfront crowds on that day affect nearby weekend venue logistics."
+    ],
+    "evidence": {
+      "observed_facts": "Official Discover Hong Kong (HKTB) event page (discoverhongkong.com/eng/events/wine-dine-festival.html, search-verified 2026-08-21; direct fetch Cloudflare-blocked) describes the Hong Kong Wine & Dine Festival as an annual celebration at the end of October at Central Harbourfront; multiple independent 2026-dated sources agree on October 29 - November 1, 2026 at Central Harbourfront: dailypeter.com, foodwithkidappeal.com and hungrytimes.com.",
+      "inference": "A four-day citywide food-and-wine festival at Central Harbourfront; its final day (Nov 1) falls on the first day of the research window. Recorded as a major-city logistics heads-up for Joe (informational, never an elimination)."
+    }
+  },
+  {
+    "event_name": "Hong Kong WinterFest 2026",
+    "city_slug": "hong-kong-hk",
+    "start_date": "2026-12-01",
+    "end_date": "2026-12-31",
+    "kind": "major_other",
+    "relevance": "other",
+    "conflict_severity": "none",
+    "source_url": "https://www.discoverhongkong.com/eng/events/hong-kong-winterfest.html",
+    "source_title": "Hong Kong WinterFest — Discover Hong Kong (HKTB) event page (direct fetch Cloudflare-blocked; December period corroborated by chinahighlights.com and publicholidays.hk)",
+    "accessed_on": "2026-08-21",
+    "needs_human_verify": true,
+    "verification_questions": [
+      "Confirm the exact WinterFest 2026 programme dates and Christmas tree lighting schedule with the Hong Kong Tourism Board (the official DiscoverHK page is Cloudflare-blocked; secondary sources indicate the festival runs through December each year).",
+      "Assess whether WinterFest harbourfront decorations and events in TST/Central materially increase weekend crowds in those districts throughout December."
+    ],
+    "evidence": {
+      "observed_facts": "Official Hong Kong WinterFest page (discoverhongkong.com/eng/events/hong-kong-winterfest.html, search-verified 2026-08-21; direct fetch Cloudflare-blocked) describes WinterFest as a series of festive experiences including a giant Christmas tree, harbourfront displays, and shopping/dining. chinahighlights.com states WinterFest is Hong Kong's largest Christmas celebration; publicholidays.hk states 'WinterFest turns Hong Kong into a winter wonderland' each December. The specific 2026 tree locations and lighting dates are confirmed by the Tourism Board near the end of the year.",
+      "inference": "A citywide festive period throughout December drawing large crowds to TST and Central harbourfront areas; recorded as a major-city logistics heads-up (crowds and transport pressure), not a topic recommendation."
+    }
+  },
+  {
+    "event_name": "DesignInspire 2026",
+    "city_slug": "hong-kong-hk",
+    "start_date": "2026-12-04",
+    "end_date": "2026-12-06",
+    "kind": "major_other",
+    "relevance": "other",
+    "conflict_severity": "none",
+    "source_url": "https://space.hk01.com/event/6717829790902d9d2992773b/designinspire-2026",
+    "source_title": "DesignInspire 2026 — HK01 event listing: free admission design expo, December 4-6 at the Hong Kong Convention and Exhibition Centre",
+    "accessed_on": "2026-08-21",
+    "needs_human_verify": true,
+    "verification_questions": [
+      "Confirm the official DesignInspire 2026 dates and venue (HK01 listing states Dec 4-6 at HKCEC; the official designinspire.hk page should be verified for final confirmation).",
+      "Assess whether DesignInspire (a free-admission design expo at HKCEC) materially increases Wan Chai transport and venue demand on the same weekend as Clockenflap."
+    ],
+    "evidence": {
+      "observed_facts": "HK01 event listing (space.hk01.com/event/6717829790902d9d2992773b/designinspire-2026, fetched 2026-08-21, HTTP 200) states 'DesignInspire 2026: International Creative Expo, free admission, December 4-6 at the Hong Kong Convention and Exhibition Centre'. The listing describes a gathering of global design and creative elites, brands, associations and academies.",
+      "inference": "A free-admission consumer design expo at HKCEC overlapping the Clockenflap weekend; both events draw large crowds to the Wan Chai/Central area. Recorded as a major-city logistics heads-up (Wan Chai crowds and transport), not a topic recommendation."
+    }
+  },
+  {
+    "event_name": "Hong Kong Wedding Fair (香港結婚節)",
+    "city_slug": "hong-kong-hk",
+    "start_date": "2026-12-11",
+    "end_date": "2026-12-13",
+    "kind": "major_other",
+    "relevance": "other",
+    "conflict_severity": "none",
+    "source_url": "https://wedding-show.com.hk/香港結婚節.html",
+    "source_title": "Hong Kong Wedding Fair — 124th edition, Dec 11-13, 2026, HKCEC Wan Chai (wedding-show.com.hk, the organiser's official site)",
+    "accessed_on": "2026-08-21",
+    "needs_human_verify": true,
+    "verification_questions": [
+      "Confirm the 124th Hong Kong Wedding Fair dates (Dec 11-13, 2026 at HKCEC Wan Chai) with the organiser's official page.",
+      "Assess whether the Wedding Fair at HKCEC materially affects Wan Chai transport or hotel demand on that weekend."
+    ],
+    "evidence": {
+      "observed_facts": "Official organiser page (wedding-show.com.hk, fetched 2026-08-21, HTTP 200) states the 124th edition of Hong Kong Wedding Fair will be held December 11-13, 2026 at the Hong Kong Convention and Exhibition Centre, Wan Chai. The page describes it as the city's largest wedding expo.",
+      "inference": "A large consumer wedding expo at HKCEC drawing significant foot traffic to Wan Chai over a December weekend. Recorded as a major-city logistics heads-up (Wan Chai crowds), not a topic recommendation."
     }
   }
 ]

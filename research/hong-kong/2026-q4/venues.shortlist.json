@@ -4,7 +4,7 @@
     "schema_version": "2.4",
     "budget_usd": 5000.0,
     "target_attendance": 50,
-    "event_date": "2026-09-26",
+    "event_date": "2026-11-14",
     "event_duration_hours": 8,
     "weights": {
       "budget_efficiency": 0.2,
@@ -36,11 +36,11 @@
       "recording_suitability": "likely_good",
       "estimated_cost_usd": 905.5,
       "cost_basis": "estimated_from_rate",
-      "cost_local_amount": 888,
+      "cost_local_amount": 7104,
       "cost_local_currency": "HKD",
       "hourly_rate_usd": 113.18809087,
       "estimated_hours": 8,
-      "rate_estimate_note": "Official Banyan Workspace corporate-events page (fetched 2026-08-10) publishes Event Spaces from HK$888 per hour for a 2,500 sq ft space with 20 seated / 60 standing (depending on layout); 8-hour estimate = 888 x 8 = HK$7,104 converted at the ECB 2026-08-10 reference rate USD 1 = HKD 7.845348 (EUR 1 = USD 1.1555, EUR 1 = HKD 9.0653) = 905.50 USD. Taxes/fees and catering extras not included; not a written quote.",
+      "rate_estimate_note": "Official Banyan Workspace corporate-events page (fetched 2026-08-21, HTTP 200) publishes Event Spaces from HK$888 per hour for a 2,500 sq ft space with 20 seated / 60 standing (depending on layout); 8-hour estimate = 888 x 8 = HK$7,104 converted at the ECB 2026-08-21 reference rate USD 1 = HKD 7.845348 (EUR 1 = USD 1.1555, EUR 1 = HKD 9.0653) = 905.50 USD. Taxes/fees and catering extras not included; not a written quote.",
       "hourly_rate_local": 888,
       "rate_currency": "HKD",
       "booking_url": "https://banyanworkspace.com/corporate-events/",
@@ -52,19 +52,19 @@
         "room_assignment"
       ],
       "verification_questions": [
-        "Confirm the exact all-in Saturday total including taxes/fees (published from HK$888/hour; 8-hour estimate 905.50 USD at the ECB 2026-08-10 rate).",
+        "Confirm the exact all-in weekend total including taxes/fees (published from HK$888/hour; 8-hour estimate 905.50 USD at the ECB 2026-08-21 rate).",
         "Confirm WiFi availability in the event space (the page lists screen/projector/microphones/sound and catering but does not publish a WiFi statement).",
-        "Confirm availability of the event space on the chosen 2026 Saturday (24/7 access is advertised).",
+        "Confirm availability of the event space on a weekend date in the focus window (24/7 access is advertised).",
         "Confirm the bookable window and any weekend staffed-hours limits despite advertised 24/7 access.",
         "Confirm the 2,500 sq ft space (20 seated / 60 standing per the official page) comfortably seats 50 in a talk configuration."
       ],
       "source_url": "https://banyanworkspace.com/corporate-events/",
       "source_title": "Event & Meeting Venues — Banyan Workspace (official): Event Spaces from HK$888 per hour, 2,500 sq ft with Victoria Harbour views, 20 seated / 60 standing, screen, projector, microphones and sound systems, 24/7 access; Suite 1204, Eastern Harbour Centre, 28 Hoi Chak Street, Quarry Bay",
-      "accessed_on": "2026-08-10",
+      "accessed_on": "2026-08-21",
       "needs_human_verify": true,
       "evidence": {
-        "observed_facts": "Official Banyan Workspace corporate-events page (fetched 2026-08-10, HTTP 200) states Event Spaces 'up to 20 people (depending on layout) from HK$888 per hour', describes the versatile space spanning 2,500 square feet with high ceiling and Victoria Harbour views, 20 seated / 60 standing, tech equipment (screen, projector, microphones and sound systems), flexible layouts with whiteboards, catering services (coffee, tea, snacks), 24/7 access, and dedicated support; address Suite 1204, Eastern Harbour Centre, 28 Hoi Chak Street, Quarry Bay, MTR Quarry Bay Exit C.",
-        "inference": "8-hour estimate at the documented ECB 2026-08-10 planning rate is HK$7,104 = 905.50 USD, well within the USD 5,000 soft budget; capacity 60 standing comfortably covers 50 standing but seated capacity is listed as 20, so a room_assignment question is required; screen confirmed, WiFi unstated (question).",
+        "observed_facts": "Official Banyan Workspace corporate-events page (fetched 2026-08-21, HTTP 200) states Event Spaces 'up to 20 people (depending on layout) from HK$888 per hour', describes the versatile space spanning 2,500 square feet with high ceiling and Victoria Harbour views, 20 seated / 60 standing, tech equipment (screen, projector, microphones and sound systems), flexible layouts with whiteboards, catering services (coffee, tea, snacks), 24/7 access, and dedicated support; address Suite 1204, Eastern Harbour Centre, 28 Hoi Chak Street, Quarry Bay, MTR Quarry Bay Exit C.",
+        "inference": "8-hour estimate at the documented ECB 2026-08-21 planning rate is HK$7,104 = 905.50 USD, well within the USD 5,000 soft budget; capacity 60 standing comfortably covers 50 standing but seated capacity is listed as 20, so a room_assignment question is required; screen confirmed, WiFi unstated (question).",
         "geo": "https://banyanworkspace.com/corporate-events/"
       },
       "latitude": 22.29,
@@ -84,7 +84,7 @@
         "duration_unconfirmed",
         "stale_evidence"
       ],
-      "score": 0.7729,
+      "score": 0.7096,
       "score_breakdown": {
         "budget_efficiency": {
           "factor": 0.8189,
@@ -112,9 +112,9 @@
           "contribution": 0.1
         },
         "evidence_freshness": {
-          "factor": 0.7167,
+          "factor": 0.0833,
           "weight": 0.1,
-          "contribution": 0.0717
+          "contribution": 0.0083
         },
         "technical_readiness": {
           "factor": 0.5,
@@ -126,319 +126,7 @@
           "weight": 0.05,
           "contribution": 0.025
         },
-        "total": 0.7729
-      }
-    },
-    {
-      "name": "Fringe Club — Fringe Dairy",
-      "city_slug": "hong-kong-hk",
-      "address": "2 Lower Albert Road, Central, Hong Kong",
-      "capacity_comfortable": 80,
-      "capacity_basis": "seated",
-      "screen_status": "unknown",
-      "wifi_status": "unknown",
-      "catering_policy": "in_house_available",
-      "recording_suitability": "confirmed_good",
-      "estimated_cost_usd": null,
-      "cost_basis": "unknown",
-      "cost_local_amount": null,
-      "cost_local_currency": null,
-      "hourly_rate_usd": null,
-      "estimated_hours": null,
-      "rate_estimate_note": null,
-      "hourly_rate_local": null,
-      "rate_currency": null,
-      "booking_url": "https://www.hkfringeclub.com/en/venues/2-Fringe+Dairy.html",
-      "verification_question_kinds": [
-        "cost_unknown",
-        "screen",
-        "wifi",
-        "availability",
-        "event_window",
-        "room_assignment"
-      ],
-      "verification_questions": [
-        "Confirm the hire rate for Fringe Dairy for a 50-person talk event (the official page publishes venue description and a booking-enquiry form but no numeric price).",
-        "Confirm whether a projector/screen can be added for talks (the page lists musical instruments and audio/lighting equipment but no screen).",
-        "Confirm WiFi availability (the page publishes no WiFi statement).",
-        "Confirm availability on the chosen 2026 Saturday (Fringe Club opens daily from noon except public holidays).",
-        "Confirm the bookable window and event terms on weekends.",
-        "Confirm the jazz/cabaret space (about 80 seated or up to 150 standing per the official page) suits a 50-person seated talk configuration."
-      ],
-      "source_url": "https://www.hkfringeclub.com/en/venues/2-Fringe+Dairy.html",
-      "source_title": "Fringe Dairy — The Fringe Club (official): 'The only jazz and cabaret space in Hong Kong', seats about 80 people or up to 150 standing, baby grand piano and drum kit in place, end bar, 1913 tiled floor; 2 Lower Albert Road, Central",
-      "accessed_on": "2026-08-10",
-      "needs_human_verify": true,
-      "evidence": {
-        "observed_facts": "Official Fringe Club Fringe Dairy venue page (fetched 2026-08-10, HTTP 200) describes the space as the only jazz and cabaret space in Hong Kong, designed for intimate shows, with musical instruments in place (baby grand piano and drum kit), seating about 80 people or up to 150 standing, an end bar, and retained 1913 original features; the club is at 2 Lower Albert Road, Central, open daily from noon except public holidays; booking via the venue enquiry form.",
-        "inference": "Fringe Dairy seats 80 (comfortable for 50) and is a heritage venue in Central; no price, screen, or WiFi is published on the venue page, so cost/screen/wifi stay questions; recording suitability is strong for a talk (sound/lighting equipment listed).",
-        "geo": "https://www.hkfringeclub.com/en/venues/2-Fringe+Dairy.html"
-      },
-      "latitude": 22.28,
-      "longitude": 114.155,
-      "cost_rate_unit": "unknown",
-      "opening_hours": null,
-      "closing_time": null,
-      "max_booking_hours": null,
-      "event_window_status": "unknown",
-      "event_window_evidence": null,
-      "venue_tier": "shortlist_ready",
-      "tier_reasons": [],
-      "venue_flags": [
-        "cost_unknown",
-        "screen_unknown",
-        "wifi_unknown",
-        "availability_unconfirmed",
-        "duration_unconfirmed",
-        "stale_evidence"
-      ],
-      "score": 0.7517,
-      "score_breakdown": {
-        "budget_efficiency": {
-          "factor": 0.5,
-          "weight": 0.2,
-          "contribution": 0.1
-        },
-        "capacity_fit": {
-          "factor": 1.0,
-          "weight": 0.2,
-          "contribution": 0.2
-        },
-        "catering_flexibility": {
-          "factor": 0.7,
-          "weight": 0.15,
-          "contribution": 0.105
-        },
-        "recording_suitability": {
-          "factor": 1.0,
-          "weight": 0.15,
-          "contribution": 0.15
-        },
-        "booking_path": {
-          "factor": 1.0,
-          "weight": 0.1,
-          "contribution": 0.1
-        },
-        "evidence_freshness": {
-          "factor": 0.7167,
-          "weight": 0.1,
-          "contribution": 0.0717
-        },
-        "technical_readiness": {
-          "factor": 0.0,
-          "weight": 0.05,
-          "contribution": 0.0
-        },
-        "event_window_fit": {
-          "factor": 0.5,
-          "weight": 0.05,
-          "contribution": 0.025
-        },
-        "total": 0.7517
-      }
-    },
-    {
-      "name": "HKSTP — Golden Egg MICE venue (Hong Kong Science Park)",
-      "city_slug": "hong-kong-hk",
-      "address": "Hong Kong Science Park, 2 Science Park East Avenue, Sha Tin, New Territories, Hong Kong",
-      "capacity_comfortable": 100,
-      "capacity_basis": "venue_claim",
-      "screen_status": "confirmed",
-      "wifi_status": "confirmed",
-      "catering_policy": "in_house_available",
-      "recording_suitability": "likely_good",
-      "estimated_cost_usd": null,
-      "cost_basis": "unknown",
-      "cost_local_amount": null,
-      "cost_local_currency": null,
-      "hourly_rate_usd": null,
-      "estimated_hours": null,
-      "rate_estimate_note": null,
-      "hourly_rate_local": null,
-      "rate_currency": null,
-      "booking_url": "https://www.hkstp.org/en/rental/space/mice-venue/hong-kong-science-park-mice-venues",
-      "verification_question_kinds": [
-        "cost_unknown",
-        "availability",
-        "event_window",
-        "room_assignment"
-      ],
-      "verification_questions": [
-        "Confirm the hire rate for the specific room (Meeting Room / Conference Hall / Grand Hall) for a 50-person event — the official page provides a price list (PDF) and booking form, but the numeric rates were not visible in the fetched page text.",
-        "Confirm availability on the chosen 2026 Saturday at the Science Park Golden Egg.",
-        "Confirm the bookable window on weekends.",
-        "Confirm the specific room configured for 50 people (Meeting Room 23, Conference Halls 4-7, Grand Hall, etc. per the official page)."
-      ],
-      "source_url": "https://www.hkstp.org/en/rental/space/mice-venue/hong-kong-science-park-mice-venues",
-      "source_title": "Hong Kong Science Park MICE Venues — HKSTP (official): 'Golden Egg' iconic MICE venue with fibre-optic and WiFi connectivity, high-resolution screens and projectors, flexible Meeting Rooms, Conference Halls, Grand Hall, open-air Amphitheatre and auditorium; price list and online booking form available; 2 Science Park East Avenue, Sha Tin",
-      "accessed_on": "2026-08-10",
-      "needs_human_verify": true,
-      "evidence": {
-        "observed_facts": "Official HKSTP MICE venue page (fetched 2026-08-10, HTTP 200) describes the Golden Egg as the iconic MICE venue of Hong Kong Science Park, featuring fibre-optic and WiFi connectivity, high-resolution screens and projectors and other multimedia equipment, contemporary flexible Meeting Rooms, Conference Halls, Grand Hall, an open-air Amphitheatre and stately auditorium; contact mice@hkstp.org / +852 2639 8301; a price list (PDF) and online booking form are linked.",
-        "inference": "HKSTP Golden Egg is a conference-capable venue with confirmed screen/WiFi from the official page; capacity is not published as a number in the fetched text (venue claim ~100+), so a room_assignment question is required; the price list exists but numeric rates were not readable in this pass, so cost stays unknown with a confirm-cost question.",
-        "geo": "https://www.hkstp.org/en/rental/space/mice-venue/hong-kong-science-park-mice-venues"
-      },
-      "latitude": 22.427,
-      "longitude": 114.211,
-      "cost_rate_unit": "unknown",
-      "opening_hours": null,
-      "closing_time": null,
-      "max_booking_hours": null,
-      "event_window_status": "unknown",
-      "event_window_evidence": null,
-      "venue_tier": "shortlist_ready",
-      "tier_reasons": [],
-      "venue_flags": [
-        "cost_unknown",
-        "availability_unconfirmed",
-        "duration_unconfirmed",
-        "stale_evidence"
-      ],
-      "score": 0.7342,
-      "score_breakdown": {
-        "budget_efficiency": {
-          "factor": 0.5,
-          "weight": 0.2,
-          "contribution": 0.1
-        },
-        "capacity_fit": {
-          "factor": 1.0,
-          "weight": 0.2,
-          "contribution": 0.2
-        },
-        "catering_flexibility": {
-          "factor": 0.7,
-          "weight": 0.15,
-          "contribution": 0.105
-        },
-        "recording_suitability": {
-          "factor": 0.55,
-          "weight": 0.15,
-          "contribution": 0.0825
-        },
-        "booking_path": {
-          "factor": 1.0,
-          "weight": 0.1,
-          "contribution": 0.1
-        },
-        "evidence_freshness": {
-          "factor": 0.7167,
-          "weight": 0.1,
-          "contribution": 0.0717
-        },
-        "technical_readiness": {
-          "factor": 1.0,
-          "weight": 0.05,
-          "contribution": 0.05
-        },
-        "event_window_fit": {
-          "factor": 0.5,
-          "weight": 0.05,
-          "contribution": 0.025
-        },
-        "total": 0.7342
-      }
-    },
-    {
-      "name": "the Hive Wan Chai — 21F Indoor Space",
-      "city_slug": "hong-kong-hk",
-      "address": "21st Floor, The Phoenix Building, 23 Luard Road, Wan Chai, Hong Kong",
-      "capacity_comfortable": 60,
-      "capacity_basis": "standing",
-      "screen_status": "confirmed",
-      "wifi_status": "confirmed",
-      "catering_policy": "in_house_available",
-      "recording_suitability": "likely_good",
-      "estimated_cost_usd": 2549.28,
-      "cost_basis": "estimated_from_rate",
-      "cost_local_amount": 2500,
-      "cost_local_currency": "HKD",
-      "hourly_rate_usd": 318.66016575,
-      "estimated_hours": 8,
-      "rate_estimate_note": "Official the Hive Wan Chai events-venue-hire page (fetched 2026-08-10) publishes the 21F Indoor Space at HK$2,500 per hour for large group meetings, workshops, presentations, screenings, events and conferences, max 40 seated or 60 standing, with sound system, projector and flip chart; 8-hour estimate = 2,500 x 8 = HK$20,000 converted at the ECB 2026-08-10 reference rate USD 1 = HKD 7.845348 = 2,549.28 USD. Taxes/fees not included; not a written quote.",
-      "hourly_rate_local": 2500,
-      "rate_currency": "HKD",
-      "booking_url": "https://thehive.com.hk/events-venue-hire/",
-      "verification_question_kinds": [
-        "final_quote",
-        "availability",
-        "event_window",
-        "room_assignment"
-      ],
-      "verification_questions": [
-        "Confirm the exact all-in Saturday total including taxes/fees (published HK$2,500 per hour; 8-hour estimate 2,549.28 USD at the ECB 2026-08-10 rate; summer-exclusive packages available).",
-        "Confirm availability of the 21F Indoor Space on the chosen 2026 Saturday.",
-        "Confirm the bookable window on weekends (the page publishes hourly rates but no opening hours).",
-        "Confirm the space (max 40 seated or 60 standing per the official page) comfortably seats 50 in a talk configuration."
-      ],
-      "source_url": "https://thehive.com.hk/events-venue-hire/",
-      "source_title": "Events Venue Hire — the Hive Wan Chai (official): 21F Indoor Space HK$2,500 per hour, max 40 seated or 60 standing, high-speed WiFi, sound system (microphone & speaker), projector & flip chart, complimentary coffee & tea; 21st Floor, The Phoenix Building, 23 Luard Road, Wan Chai",
-      "accessed_on": "2026-08-10",
-      "needs_human_verify": true,
-      "evidence": {
-        "observed_facts": "Official the Hive Wan Chai events-venue-hire page (fetched 2026-08-10, HTTP 200) states the 21F Indoor Space is suitable for large group meetings, workshops, presentations, screenings, events and conferences, lists high-speed WiFi, max capacity 40 seated or 60 standing, sound system (microphone & speaker), complimentary coffee & tea, projector & flip chart, at HK$2,500 per hour with summer-exclusive packages available.",
-        "inference": "8-hour estimate at the documented ECB 2026-08-10 rate is HK$20,000 = 2,549.28 USD, within the USD 5,000 soft budget; capacity 60 standing covers 50 standing but seated max is 40, so a room_assignment question is required; screen and WiFi confirmed from the published list.",
-        "geo": "https://thehive.com.hk/events-venue-hire/"
-      },
-      "latitude": 22.278,
-      "longitude": 114.174,
-      "cost_rate_unit": "hour",
-      "opening_hours": null,
-      "closing_time": null,
-      "max_booking_hours": null,
-      "event_window_status": "unknown",
-      "event_window_evidence": null,
-      "venue_tier": "shortlist_ready",
-      "tier_reasons": [],
-      "venue_flags": [
-        "availability_unconfirmed",
-        "final_quote_required",
-        "duration_unconfirmed",
-        "stale_evidence"
-      ],
-      "score": 0.7322,
-      "score_breakdown": {
-        "budget_efficiency": {
-          "factor": 0.4901,
-          "weight": 0.2,
-          "contribution": 0.098
-        },
-        "capacity_fit": {
-          "factor": 1.0,
-          "weight": 0.2,
-          "contribution": 0.2
-        },
-        "catering_flexibility": {
-          "factor": 0.7,
-          "weight": 0.15,
-          "contribution": 0.105
-        },
-        "recording_suitability": {
-          "factor": 0.55,
-          "weight": 0.15,
-          "contribution": 0.0825
-        },
-        "booking_path": {
-          "factor": 1.0,
-          "weight": 0.1,
-          "contribution": 0.1
-        },
-        "evidence_freshness": {
-          "factor": 0.7167,
-          "weight": 0.1,
-          "contribution": 0.0717
-        },
-        "technical_readiness": {
-          "factor": 1.0,
-          "weight": 0.05,
-          "contribution": 0.05
-        },
-        "event_window_fit": {
-          "factor": 0.5,
-          "weight": 0.05,
-          "contribution": 0.025
-        },
-        "total": 0.7322
+        "total": 0.7096
       }
     },
     {
@@ -446,7 +134,7 @@
       "city_slug": "hong-kong-hk",
       "address": "3/F Two Taikoo Place, 979 King's Road, Quarry Bay, Hong Kong",
       "capacity_comfortable": 50,
-      "capacity_basis": "venue_claim",
+      "capacity_basis": "seated",
       "screen_status": "confirmed",
       "wifi_status": "unknown",
       "catering_policy": "in_house_available",
@@ -471,16 +159,16 @@
       "verification_questions": [
         "Confirm the all-in hire rate for the Auditorium for a 50-person event (the official Blueprint page publishes venue descriptions but no numeric price; the team issues proposals on enquiry).",
         "Confirm WiFi coverage in the Auditorium (the event-venue page does not publish a WiFi statement).",
-        "Confirm Auditorium availability on the chosen 2026 Saturday.",
+        "Confirm Auditorium availability on a weekend date in the focus window.",
         "Confirm the bookable window on weekends (the page publishes no opening hours).",
         "Confirm the Auditorium's 50-person tiered seating fits a talk-style DeAI Day (published capacity 50 persons with 2 ceiling-mounted projectors, drop-down screens, 2 handheld + 2 clip microphones, built-in speakers)."
       ],
       "source_url": "https://blueprint.swireproperties.com/en/event-venues/venues-up-to-50-persons/",
       "source_title": "Flexible Event Venues for up to 50 Persons — Blueprint Hong Kong (official, Swire Properties): Auditorium with tiered seating for 50, 2 ceiling-mounted projectors and drop-down projection screens, 2 handheld + 2 clip microphones, built-in speakers; at 3/F Two Taikoo Place, Quarry Bay",
-      "accessed_on": "2026-08-10",
+      "accessed_on": "2026-08-21",
       "needs_human_verify": true,
       "evidence": {
-        "observed_facts": "Official Blueprint event-venue page (fetched 2026-08-10, HTTP 200) describes the Auditorium for up to 50 persons with tiered cushioned seating, 2 sets of ceiling-mounted projectors and drop-down projection screens, 2 handheld microphones plus 2 ear-set/clip microphones, and built-in speakers; theatre-style setup ideal for presentations, fireside chats, seminars, screenings and panel discussions. Blueprint is owned and operated by Swire Properties at 3/F Two Taikoo Place, Quarry Bay; the site also lists B Suite (up to 25, or 50 as double) and Training Rooms.",
+        "observed_facts": "Official Blueprint event-venue page (fetched 2026-08-21, HTTP 200) describes the Auditorium for up to 50 persons with tiered cushioned seating, 2 sets of ceiling-mounted projectors and drop-down projection screens, 2 handheld microphones plus 2 ear-set/clip microphones, and built-in speakers; theatre-style setup ideal for presentations, fireside chats, seminars, screenings and panel discussions. Blueprint is owned and operated by Swire Properties at 3/F Two Taikoo Place, Quarry Bay. The site also lists B Suite (up to 25, or 50 as double) and Training Rooms.",
         "inference": "Capacity 50 exactly matches the target event; screen is confirmed from the published projector/screen list; WiFi is not stated on this page, so it stays a verification question; no numeric price is published (the event team provides proposals), so cost stays unknown with a confirm-cost question.",
         "geo": "https://blueprint.swireproperties.com/en/event-venues/venues-up-to-50-persons/"
       },
@@ -501,7 +189,7 @@
         "duration_unconfirmed",
         "stale_evidence"
       ],
-      "score": 0.7092,
+      "score": 0.6458,
       "score_breakdown": {
         "budget_efficiency": {
           "factor": 0.5,
@@ -529,9 +217,9 @@
           "contribution": 0.1
         },
         "evidence_freshness": {
-          "factor": 0.7167,
+          "factor": 0.0833,
           "weight": 0.1,
-          "contribution": 0.0717
+          "contribution": 0.0083
         },
         "technical_readiness": {
           "factor": 0.5,
@@ -543,375 +231,54 @@
           "weight": 0.05,
           "contribution": 0.025
         },
-        "total": 0.7092
-      }
-    },
-    {
-      "name": "Garage Society — Event Space (Tower 535 / Beverly House)",
-      "city_slug": "hong-kong-hk",
-      "address": "11/F & 16/F Tower 535, 535 Jaffe Road, Causeway Bay; 1/F-4/F Beverly House, 93 Lockhart Road, Wan Chai, Hong Kong",
-      "capacity_comfortable": 100,
-      "capacity_basis": "venue_claim",
-      "screen_status": "unknown",
-      "wifi_status": "confirmed",
-      "catering_policy": "in_house_available",
-      "recording_suitability": "likely_good",
-      "estimated_cost_usd": 3059.14,
-      "cost_basis": "estimated_from_rate",
-      "cost_local_amount": 3000,
-      "cost_local_currency": "HKD",
-      "hourly_rate_usd": 382.3921989,
-      "estimated_hours": 8,
-      "rate_estimate_note": "Official Garage Society event-space page (fetched 2026-08-10) publishes 'Event Space from HKD 3,000 per hour' for venues at Tower 535 (Causeway Bay) and Beverly House (Wan Chai) suitable for workshops, networking and team-building for up to 100 people; 8-hour estimate = 3,000 x 8 = HKD 24,000 converted at the ECB 2026-08-10 reference rate USD 1 = HKD 7.845348 = 3,059.14 USD. Taxes/fees not included; not a written quote.",
-      "hourly_rate_local": 3000,
-      "rate_currency": "HKD",
-      "booking_url": "https://www.thegaragesociety.com/service/event-space",
-      "verification_question_kinds": [
-        "final_quote",
-        "screen",
-        "availability",
-        "event_window",
-        "room_assignment"
-      ],
-      "verification_questions": [
-        "Confirm the exact all-in Saturday total including taxes/fees (published from HKD 3,000 per hour; 8-hour estimate 3,059.14 USD at the ECB 2026-08-10 rate).",
-        "Confirm whether a projector/screen is included in the event-space hire (the page lists AV systems and WiFi generally; it does not name a projector or screen).",
-        "Confirm availability of the event space on the chosen 2026 Saturday at the preferred location (Tower 535 or Beverly House).",
-        "Confirm the bookable window on weekends (the page publishes no opening hours).",
-        "Confirm the event space (advertised for up to 100 people) comfortably seats 50 in a talk configuration at the chosen location."
-      ],
-      "source_url": "https://www.thegaragesociety.com/service/event-space",
-      "source_title": "Event Space Hire in Wan Chai and Causeway Bay — Garage Society (official): Event Space from HKD 3,000 per hour, versatile venues at Tower 535 (Causeway Bay) and Beverly House (Wan Chai) for workshops, networking and team-building for up to 100 people, equipped with AV systems, WiFi and flexible layouts",
-      "accessed_on": "2026-08-10",
-      "needs_human_verify": true,
-      "evidence": {
-        "observed_facts": "Official Garage Society event-space page (fetched 2026-08-10, HTTP 200) states 'Event Space from HKD 3,000 per hour', describes versatile event venues at Tower 535 in Causeway Bay and Beverly House in Wan Chai ideal for workshops, networking and team-building for up to 100 people, with prime locations, modern facilities (AV systems, WiFi, flexible layouts), and a track record of hundreds of successful events hosted annually.",
-        "inference": "8-hour estimate at the documented ECB 2026-08-10 rate is HKD 24,000 = 3,059.14 USD, within the USD 5,000 soft budget; capacity 100 covers 50; WiFi confirmed from the page; screen not named (AV systems listed), so it stays a verification question.",
-        "geo": "https://www.thegaragesociety.com/service/event-space"
-      },
-      "latitude": 22.28,
-      "longitude": 114.183,
-      "cost_rate_unit": "hour",
-      "opening_hours": null,
-      "closing_time": null,
-      "max_booking_hours": null,
-      "event_window_status": "unknown",
-      "event_window_evidence": null,
-      "venue_tier": "shortlist_ready",
-      "tier_reasons": [],
-      "venue_flags": [
-        "screen_unknown",
-        "availability_unconfirmed",
-        "final_quote_required",
-        "duration_unconfirmed",
-        "stale_evidence"
-      ],
-      "score": 0.6868,
-      "score_breakdown": {
-        "budget_efficiency": {
-          "factor": 0.3882,
-          "weight": 0.2,
-          "contribution": 0.0776
-        },
-        "capacity_fit": {
-          "factor": 1.0,
-          "weight": 0.2,
-          "contribution": 0.2
-        },
-        "catering_flexibility": {
-          "factor": 0.7,
-          "weight": 0.15,
-          "contribution": 0.105
-        },
-        "recording_suitability": {
-          "factor": 0.55,
-          "weight": 0.15,
-          "contribution": 0.0825
-        },
-        "booking_path": {
-          "factor": 1.0,
-          "weight": 0.1,
-          "contribution": 0.1
-        },
-        "evidence_freshness": {
-          "factor": 0.7167,
-          "weight": 0.1,
-          "contribution": 0.0717
-        },
-        "technical_readiness": {
-          "factor": 0.5,
-          "weight": 0.05,
-          "contribution": 0.025
-        },
-        "event_window_fit": {
-          "factor": 0.5,
-          "weight": 0.05,
-          "contribution": 0.025
-        },
-        "total": 0.6868
-      }
-    },
-    {
-      "name": "Eaton HK — Kino & Kino Lounge",
-      "city_slug": "hong-kong-hk",
-      "address": "Eaton HK, 380 Nathan Road, Jordan, Kowloon, Hong Kong",
-      "capacity_comfortable": 80,
-      "capacity_basis": "venue_claim",
-      "screen_status": "unknown",
-      "wifi_status": "unknown",
-      "catering_policy": "in_house_available",
-      "recording_suitability": "likely_good",
-      "estimated_cost_usd": null,
-      "cost_basis": "unknown",
-      "cost_local_amount": null,
-      "cost_local_currency": null,
-      "hourly_rate_usd": null,
-      "estimated_hours": null,
-      "rate_estimate_note": null,
-      "hourly_rate_local": null,
-      "rate_currency": null,
-      "booking_url": "https://www.eatonworkshop.com/en-us/hong-kong/meetings-events/",
-      "verification_question_kinds": [
-        "cost_unknown",
-        "screen",
-        "wifi",
-        "availability",
-        "event_window",
-        "room_assignment"
-      ],
-      "verification_questions": [
-        "Confirm the hire rate for Kino & Kino Lounge for a 50-person event (the official page publishes a capacity table and RFP form but no numeric price).",
-        "Confirm whether a projector/screen is included in the cinema/lounge (the page table does not publish AV details).",
-        "Confirm WiFi availability (no WiFi statement on the page).",
-        "Confirm availability on the chosen 2026 Saturday.",
-        "Confirm the bookable window on weekends.",
-        "Confirm the Kino configuration (theatre 80 / classroom 40 / reception 50 per the official table) comfortably seats 50 in a talk layout, or whether the adjacent lounge is needed."
-      ],
-      "source_url": "https://www.eatonworkshop.com/en-us/hong-kong/meetings-events/",
-      "source_title": "Meetings & Events — Eaton HK (official): Kino & Kino Lounge 2,040 sq ft, theatre 80 / classroom 40 / cocktail 50 / reception 50, cinema-style space in the hotel's cultural hub; Eaton HK, 380 Nathan Road, Jordan",
-      "accessed_on": "2026-08-10",
-      "needs_human_verify": true,
-      "evidence": {
-        "observed_facts": "Official Eaton HK meetings-events page (fetched 2026-08-10) lists Kino & Kino Lounge at 2,040 sq ft with theatre 80, classroom 40, cocktail 50 and reception 50 capacities; Eaton HK describes itself as a cultural hub with music room, private cinema and lounges; booking via RFP form.",
-        "inference": "Kino theatre-80 covers 50 comfortably; no price/screen/WiFi published (questions); the cinema-style room suits talks; recorded as a second Eaton HK option.",
-        "geo": "https://www.eatonworkshop.com/en-us/hong-kong/meetings-events/"
-      },
-      "latitude": 22.305,
-      "longitude": 114.172,
-      "cost_rate_unit": "unknown",
-      "opening_hours": null,
-      "closing_time": null,
-      "max_booking_hours": null,
-      "event_window_status": "unknown",
-      "event_window_evidence": null,
-      "venue_tier": "shortlist_ready",
-      "tier_reasons": [],
-      "venue_flags": [
-        "cost_unknown",
-        "screen_unknown",
-        "wifi_unknown",
-        "availability_unconfirmed",
-        "duration_unconfirmed",
-        "stale_evidence"
-      ],
-      "score": 0.6842,
-      "score_breakdown": {
-        "budget_efficiency": {
-          "factor": 0.5,
-          "weight": 0.2,
-          "contribution": 0.1
-        },
-        "capacity_fit": {
-          "factor": 1.0,
-          "weight": 0.2,
-          "contribution": 0.2
-        },
-        "catering_flexibility": {
-          "factor": 0.7,
-          "weight": 0.15,
-          "contribution": 0.105
-        },
-        "recording_suitability": {
-          "factor": 0.55,
-          "weight": 0.15,
-          "contribution": 0.0825
-        },
-        "booking_path": {
-          "factor": 1.0,
-          "weight": 0.1,
-          "contribution": 0.1
-        },
-        "evidence_freshness": {
-          "factor": 0.7167,
-          "weight": 0.1,
-          "contribution": 0.0717
-        },
-        "technical_readiness": {
-          "factor": 0.0,
-          "weight": 0.05,
-          "contribution": 0.0
-        },
-        "event_window_fit": {
-          "factor": 0.5,
-          "weight": 0.05,
-          "contribution": 0.025
-        },
-        "total": 0.6842
-      }
-    },
-    {
-      "name": "The Mills — Fabrica Atrium (conference-capable)",
-      "city_slug": "hong-kong-hk",
-      "address": "4/F, The Mills, 45 Pak Tin Par Street, Tsuen Wan, Hong Kong",
-      "capacity_comfortable": 100,
-      "capacity_basis": "venue_claim",
-      "screen_status": "unknown",
-      "wifi_status": "unknown",
-      "catering_policy": "in_house_available",
-      "recording_suitability": "likely_good",
-      "estimated_cost_usd": null,
-      "cost_basis": "unknown",
-      "cost_local_amount": null,
-      "cost_local_currency": null,
-      "hourly_rate_usd": null,
-      "estimated_hours": null,
-      "rate_estimate_note": null,
-      "hourly_rate_local": null,
-      "rate_currency": null,
-      "booking_url": "https://www.themills.com.hk/en/shopfloor/venue_rental/",
-      "verification_question_kinds": [
-        "cost_unknown",
-        "screen",
-        "wifi",
-        "availability",
-        "event_window",
-        "room_assignment"
-      ],
-      "verification_questions": [
-        "Confirm the hire rate for Fabrica Atrium (or The Hall / M4 Atrium) for a 50-person event (the official page publishes venue descriptions and contact events@themills.com.hk but no numeric price).",
-        "Confirm whether projection/AV is included (the page says Fabrica is 'fully equipped for conferences' but does not name a projector or screen).",
-        "Confirm WiFi availability in the rented space (the page publishes no WiFi statement).",
-        "Confirm availability on the chosen 2026 Saturday.",
-        "Confirm the bookable window on weekends.",
-        "Confirm the specific space and layout for 50 people (Fabrica Atrium is 2,404 sq ft; The Hall and M4 Atrium have different configurations)."
-      ],
-      "source_url": "https://www.themills.com.hk/en/shopfloor/venue_rental/",
-      "source_title": "Venue Rental — The Mills (official): Fabrica Atrium 2,404 sq ft 'fully equipped for conferences, cocktails, workshops, shootings', The Hall with large glass skylight available for hire, M4 Atrium exhibition space on 1/F; contact events@themills.com.hk / 3979 2475; 4/F, The Mills, 45 Pak Tin Par Street, Tsuen Wan",
-      "accessed_on": "2026-08-10",
-      "needs_human_verify": true,
-      "evidence": {
-        "observed_facts": "Official The Mills venue-rental page (fetched 2026-08-10, HTTP 200) lists several venues including Fabrica Atrium (2,404 sq ft, overlooking the park with mountain view and skylight, 'fully equipped for conferences, cocktails, workshops, shootings and all kinds of activities when combined with the multifunctional hot desk area'), The Hall (heart of The Mills with large glass skylight, available for hire by external parties with CHAT mission-aligned events), and M4 Atrium (1/F exhibition space); rental enquiries go to events@themills.com.hk / 3979 2475.",
-        "inference": "The Mills Fabrica is a techstyle/agrifood innovation platform whose Atrium is described as fully equipped for conferences; capacity is not published as a number (Fabrica Atrium 2,404 sq ft suggests a 100+ event), so capacity is recorded from the venue claim and the fit for 50 stays a room_assignment question; no price/AV/WiFi published (questions).",
-        "geo": "https://www.themills.com.hk/en/shopfloor/venue_rental/"
-      },
-      "latitude": 22.37,
-      "longitude": 114.117,
-      "cost_rate_unit": "unknown",
-      "opening_hours": null,
-      "closing_time": null,
-      "max_booking_hours": null,
-      "event_window_status": "unknown",
-      "event_window_evidence": null,
-      "venue_tier": "shortlist_ready",
-      "tier_reasons": [],
-      "venue_flags": [
-        "cost_unknown",
-        "screen_unknown",
-        "wifi_unknown",
-        "availability_unconfirmed",
-        "duration_unconfirmed",
-        "stale_evidence"
-      ],
-      "score": 0.6842,
-      "score_breakdown": {
-        "budget_efficiency": {
-          "factor": 0.5,
-          "weight": 0.2,
-          "contribution": 0.1
-        },
-        "capacity_fit": {
-          "factor": 1.0,
-          "weight": 0.2,
-          "contribution": 0.2
-        },
-        "catering_flexibility": {
-          "factor": 0.7,
-          "weight": 0.15,
-          "contribution": 0.105
-        },
-        "recording_suitability": {
-          "factor": 0.55,
-          "weight": 0.15,
-          "contribution": 0.0825
-        },
-        "booking_path": {
-          "factor": 1.0,
-          "weight": 0.1,
-          "contribution": 0.1
-        },
-        "evidence_freshness": {
-          "factor": 0.7167,
-          "weight": 0.1,
-          "contribution": 0.0717
-        },
-        "technical_readiness": {
-          "factor": 0.0,
-          "weight": 0.05,
-          "contribution": 0.0
-        },
-        "event_window_fit": {
-          "factor": 0.5,
-          "weight": 0.05,
-          "contribution": 0.025
-        },
-        "total": 0.6842
+        "total": 0.6458
       }
     },
     {
       "name": "the Hive Wan Chai — 21F Rooftop Terrace",
       "city_slug": "hong-kong-hk",
-      "address": "21st Floor, The Phoenix Building, 23 Luard Road, Wan Chai, Hong Kong",
+      "address": "21/F The Phoenix, 23 Luard Road, Wan Chai, Hong Kong",
       "capacity_comfortable": 80,
       "capacity_basis": "standing",
       "screen_status": "unknown",
       "wifi_status": "confirmed",
       "catering_policy": "in_house_available",
-      "recording_suitability": "unknown",
+      "recording_suitability": "poor",
       "estimated_cost_usd": 1274.64,
       "cost_basis": "estimated_from_rate",
-      "cost_local_amount": 1250,
+      "cost_local_amount": 10000,
       "cost_local_currency": "HKD",
-      "hourly_rate_usd": 159.33008288,
+      "hourly_rate_usd": 159.32968071,
       "estimated_hours": 8,
-      "rate_estimate_note": "Official the Hive Wan Chai events-venue-hire page (fetched 2026-08-10) publishes the 21F Rooftop Terrace at HK$1,250 per hour for networking events, screenings and social functions, max 40 seated or 80 standing, with sound system and comfortable outdoor furniture; 8-hour estimate = 1,250 x 8 = HK$10,000 converted at the ECB 2026-08-10 reference rate USD 1 = HKD 7.845348 = 1,274.64 USD. Taxes/fees not included; not a written quote.",
+      "rate_estimate_note": "Official the Hive Wan Chai events-venue-hire page (fetched 2026-08-21, HTTP 200) publishes 'Rate: HK$1250 per hour' for the 21F Rooftop Terrace; 8-hour estimate = 1250 x 8 = HK$10,000 converted at ECB 2026-08-21 rate USD 1 = HKD 7.845348 = 1,274.64 USD. Complimentary coffee and tea included.",
       "hourly_rate_local": 1250,
       "rate_currency": "HKD",
       "booking_url": "https://thehive.com.hk/events-venue-hire/",
       "verification_question_kinds": [
         "final_quote",
-        "screen",
         "availability",
+        "screen",
         "event_window",
         "room_assignment"
       ],
       "verification_questions": [
-        "Confirm the exact all-in Saturday total including taxes/fees (published HK$1,250 per hour; 8-hour estimate 1,274.64 USD at the ECB 2026-08-10 rate; summer-exclusive packages available).",
-        "Confirm whether a screen/projector is available or acceptable for an outdoor terrace event (the page lists a sound system and outdoor furniture but no projector/screen).",
-        "Confirm availability of the Rooftop Terrace on the chosen 2026 Saturday (outdoor, weather-dependent).",
-        "Confirm the bookable window on weekends and weather contingency terms.",
-        "Confirm the terrace (max 40 seated or 80 standing) comfortably accommodates 50 for an indoor-style conference, or confirm a hybrid plan with the 21F Indoor Space."
+        "Confirm the exact all-in rate for the 21F Rooftop Terrace (published HK$1,250/hr; 8-hour estimate 1,274.64 USD at ECB 2026-08-21 rate).",
+        "Confirm availability on a weekend date in the focus window.",
+        "Confirm whether an outdoor rooftop terrace provides adequate projection/screen facilities for a talk-style event in December.",
+        "Confirm the bookable window and any weekend staffed-hours limits.",
+        "Confirm the seating configuration for 50 attendees on the outdoor terrace (published 40 seated / 80 standing)."
       ],
       "source_url": "https://thehive.com.hk/events-venue-hire/",
-      "source_title": "Events Venue Hire — the Hive Wan Chai (official): 21F Rooftop Terrace HK$1,250 per hour, max 40 seated or 80 standing, high-speed WiFi, sound system (microphone & speaker), comfortable outdoor furniture, complimentary coffee & tea; 21st Floor, The Phoenix Building, 23 Luard Road, Wan Chai",
-      "accessed_on": "2026-08-10",
+      "source_title": "Events Venue Hire — the Hive Wan Chai (official): 21F Rooftop Terrace, max 40 seated or 80 standing, HK$1,250/hr, high-speed WiFi, sound system, complimentary coffee and tea; outdoor venue",
+      "accessed_on": "2026-08-21",
       "needs_human_verify": true,
       "evidence": {
-        "observed_facts": "Official the Hive Wan Chai events-venue-hire page (fetched 2026-08-10) states the 21F outdoor rooftop terrace is suitable for hosting networking events, screenings and social functions, with high-speed WiFi, max capacity 40 seated or 80 standing, sound system (microphone & speaker), comfortable outdoor furniture, and complimentary coffee & tea, at HK$1,250 per hour.",
-        "inference": "8-hour estimate at the documented ECB 2026-08-10 rate is HK$10,000 = 1,274.64 USD, within budget; outdoor terrace for 80 standing covers 50 standing but no screen is listed and weather/indoor-conference fit are verification questions.",
+        "observed_facts": "Official the Hive Wan Chai events-venue-hire page (fetched 2026-08-21, HTTP 200) states the 21F Rooftop Terrace is 'suitable for hosting Networking Events, Screenings and Social Functions' with 'High Speed WiFi, Max Capacity 40 seated or 80 standing, Sound System (Microphone & Speaker), Comfortable Outdoor Furniture, Complimentary Coffee & Tea'. Rate: HK$1,250 per hour. This is an outdoor rooftop venue.",
+        "inference": "8-hour estimate at the documented ECB 2026-08-21 planning rate is HK$10,000 = 1,274.64 USD, well within the USD 5,000 soft budget; capacity 80 standing exceeds 50 target; screen not stated for outdoor terrace (question); WiFi confirmed; outdoor recording suitability is poor (weather, wind, ambient noise); complimentary coffee and tea included.",
         "geo": "https://thehive.com.hk/events-venue-hire/"
       },
-      "latitude": 22.278,
-      "longitude": 114.174,
+      "latitude": 22.279,
+      "longitude": 114.1748,
       "cost_rate_unit": "hour",
       "opening_hours": null,
       "closing_time": null,
@@ -927,7 +294,7 @@
         "duration_unconfirmed",
         "stale_evidence"
       ],
-      "score": 0.6757,
+      "score": 0.6123,
       "score_breakdown": {
         "budget_efficiency": {
           "factor": 0.7451,
@@ -955,9 +322,9 @@
           "contribution": 0.1
         },
         "evidence_freshness": {
-          "factor": 0.7167,
+          "factor": 0.0833,
           "weight": 0.1,
-          "contribution": 0.0717
+          "contribution": 0.0083
         },
         "technical_readiness": {
           "factor": 0.5,
@@ -969,165 +336,55 @@
           "weight": 0.05,
           "contribution": 0.025
         },
-        "total": 0.6757
+        "total": 0.6123
       }
     },
     {
-      "name": "Hong Kong Arts Centre — Louis Koo Cinema",
+      "name": "Garage Society — Event Space",
       "city_slug": "hong-kong-hk",
-      "address": "Hong Kong Arts Centre, 2 Harbour Road, Wan Chai, Hong Kong",
-      "capacity_comfortable": 119,
-      "capacity_basis": "seated",
-      "screen_status": "unknown",
-      "wifi_status": "unknown",
-      "catering_policy": "unknown",
-      "recording_suitability": "confirmed_good",
-      "estimated_cost_usd": null,
-      "cost_basis": "unknown",
-      "cost_local_amount": null,
-      "cost_local_currency": null,
-      "hourly_rate_usd": null,
-      "estimated_hours": null,
-      "rate_estimate_note": null,
-      "hourly_rate_local": null,
-      "rate_currency": null,
-      "booking_url": "https://hkac.org.hk/en/venue/",
-      "verification_question_kinds": [
-        "cost_unknown",
-        "screen",
-        "wifi",
-        "availability",
-        "event_window",
-        "room_assignment"
-      ],
-      "verification_questions": [
-        "Confirm the hire rate for Louis Koo Cinema (the official page publishes capacity and enquiry form but no numeric price).",
-        "Confirm whether the cinema's projection is usable for talk slides (119-seat professional cinema; AV detail via venue-hire enquiry).",
-        "Confirm WiFi availability (no WiFi statement on the page).",
-        "Confirm availability on the chosen 2026 Saturday.",
-        "Confirm the bookable window on weekends.",
-        "Confirm the cinema (119 seats) is a suitable configuration for a 50-person seminar-style event."
-      ],
-      "source_url": "https://hkac.org.hk/en/venue/",
-      "source_title": "Venue Hire — Hong Kong Arts Centre (official): Louis Koo Cinema in the upper basement with 119 seats, professionally equipped for film screenings, seminars, recitals, ceremonies and press conferences; at 2 Harbour Road, Wan Chai",
-      "accessed_on": "2026-08-10",
-      "needs_human_verify": true,
-      "evidence": {
-        "observed_facts": "Official Hong Kong Arts Centre venue page (fetched 2026-08-10) describes Louis Koo Cinema in the upper basement with 119 seats, professionally equipped for film screenings and 'a perfect venue for seminars, recitals, ceremonies and press conferences'; venue hire via enquiry form.",
-        "inference": "Cinema 119 seats comfortably covers 50 and is explicitly suited to seminars; no price/WiFi published (questions); screen is effectively the cinema projection but its use for external slide decks stays a verification question.",
-        "geo": "https://hkac.org.hk/en/venue/"
-      },
-      "latitude": 22.28,
-      "longitude": 114.173,
-      "cost_rate_unit": "unknown",
-      "opening_hours": null,
-      "closing_time": null,
-      "max_booking_hours": null,
-      "event_window_status": "unknown",
-      "event_window_evidence": null,
-      "venue_tier": "shortlist_ready",
-      "tier_reasons": [],
-      "venue_flags": [
-        "cost_unknown",
-        "screen_unknown",
-        "wifi_unknown",
-        "availability_unconfirmed",
-        "duration_unconfirmed",
-        "stale_evidence"
-      ],
-      "score": 0.6467,
-      "score_breakdown": {
-        "budget_efficiency": {
-          "factor": 0.5,
-          "weight": 0.2,
-          "contribution": 0.1
-        },
-        "capacity_fit": {
-          "factor": 1.0,
-          "weight": 0.2,
-          "contribution": 0.2
-        },
-        "catering_flexibility": {
-          "factor": 0.0,
-          "weight": 0.15,
-          "contribution": 0.0
-        },
-        "recording_suitability": {
-          "factor": 1.0,
-          "weight": 0.15,
-          "contribution": 0.15
-        },
-        "booking_path": {
-          "factor": 1.0,
-          "weight": 0.1,
-          "contribution": 0.1
-        },
-        "evidence_freshness": {
-          "factor": 0.7167,
-          "weight": 0.1,
-          "contribution": 0.0717
-        },
-        "technical_readiness": {
-          "factor": 0.0,
-          "weight": 0.05,
-          "contribution": 0.0
-        },
-        "event_window_fit": {
-          "factor": 0.5,
-          "weight": 0.05,
-          "contribution": 0.025
-        },
-        "total": 0.6467
-      }
-    },
-    {
-      "name": "Eaton HK — Anita (meeting/event room)",
-      "city_slug": "hong-kong-hk",
-      "address": "Eaton HK, 380 Nathan Road, Jordan, Kowloon, Hong Kong",
-      "capacity_comfortable": 50,
+      "address": "Tower 535, 535 Jaffe Road, Causeway Bay / Beverly House, Lockhart Road, Wan Chai",
+      "capacity_comfortable": 100,
       "capacity_basis": "venue_claim",
       "screen_status": "unknown",
-      "wifi_status": "unknown",
-      "catering_policy": "in_house_available",
+      "wifi_status": "confirmed",
+      "catering_policy": "unknown",
       "recording_suitability": "unknown",
-      "estimated_cost_usd": null,
-      "cost_basis": "unknown",
-      "cost_local_amount": null,
-      "cost_local_currency": null,
-      "hourly_rate_usd": null,
-      "estimated_hours": null,
-      "rate_estimate_note": null,
-      "hourly_rate_local": null,
-      "rate_currency": null,
-      "booking_url": "https://www.eatonworkshop.com/en-us/hong-kong/meetings-events/",
+      "estimated_cost_usd": 3059.14,
+      "cost_basis": "estimated_from_rate",
+      "cost_local_amount": 24000,
+      "cost_local_currency": "HKD",
+      "hourly_rate_usd": 382.39242857,
+      "estimated_hours": 8,
+      "rate_estimate_note": "Official Garage Society event-space page (fetched 2026-08-21, HTTP 200) publishes 'from HKD 3,000 per hour' for event spaces at Tower 535 Causeway Bay and Beverly House Wan Chai, up to 100 people; 8-hour estimate = 3000 x 8 = HKD 24,000 converted at ECB 2026-08-21 rate USD 1 = HKD 7.845348 = 3,059.14 USD. Taxes/fees not included; 'from' rate may not apply to all configurations.",
+      "hourly_rate_local": 3000,
+      "rate_currency": "HKD",
+      "booking_url": "https://www.thegaragesociety.com/service/event-space",
       "verification_question_kinds": [
-        "cost_unknown",
-        "screen",
-        "wifi",
+        "final_quote",
         "availability",
         "event_window",
-        "room_assignment"
+        "room_assignment",
+        "screen"
       ],
       "verification_questions": [
-        "Confirm the hire rate for Anita for a 50-person event (the official meetings-events page publishes a venue capacity table and RFP form but no numeric price).",
-        "Confirm whether a projector/screen is included in the room package (the page table does not publish AV details).",
-        "Confirm WiFi availability in the room (no WiFi statement on the page).",
-        "Confirm availability on the chosen 2026 Saturday.",
-        "Confirm the bookable window on weekends.",
-        "Confirm Anita's classroom-50 configuration comfortably seats 50 in a talk layout (official table: 8'8\" ceiling, 690 sq ft, theatre 45 / classroom 50 / boardroom 4 / U-shape 30)."
+        "Confirm the exact all-in Saturday rate for the event space (published 'from HKD 3,000/hour'; 8-hour estimate 3,059.14 USD at the ECB 2026-08-21 rate).",
+        "Confirm availability of the event space on a weekend date in the focus window.",
+        "Confirm the bookable window on weekends and any staffed-hours limits.",
+        "Confirm which location (Tower 535 Causeway Bay or Beverly House Wan Chai) would host a 50-person event and its specific room assignment.",
+        "Confirm whether the 'AV systems' include a projector and projection screen for presentations (the page lists 'AV systems, high-speed WiFi' without itemizing the equipment)."
       ],
-      "source_url": "https://www.eatonworkshop.com/en-us/hong-kong/meetings-events/",
-      "source_title": "Meetings & Events — Eaton HK (official): venue capacity table lists Anita (8'8\" ceiling, 690 sq ft, theatre 45 / classroom 50 / boardroom 4 / horseshoe 22 / cocktail 45), Michelle (2,570 sq ft, theatre 250 / classroom 108), Maggie (2,100 sq ft, theatre 250 / classroom 99), Kino & Kino Lounge (2,040 sq ft, theatre 80 / classroom 40); Eaton HK, 380 Nathan Road, Jordan",
-      "accessed_on": "2026-08-10",
+      "source_url": "https://www.thegaragesociety.com/service/event-space",
+      "source_title": "Event Space Hire in Wan Chai and Causeway Bay — Garage Society (official): from HKD 3,000 per hour, up to 100 people, AV systems and high-speed WiFi, Tower 535 Causeway Bay and Beverly House Wan Chai",
+      "accessed_on": "2026-08-21",
       "needs_human_verify": true,
       "evidence": {
-        "observed_facts": "Official Eaton HK meetings-events page (fetched 2026-08-10, HTTP 200) publishes a venue dimensions/capacity table including Anita (ceiling 8'8\", 690 sq ft, boardroom 4, horseshoe 22, cocktail 45, theatre 45, classroom 50) and larger rooms Michelle/Maggie (theatre 250) and Kino & Kino Lounge (2,040 sq ft, theatre 80 / classroom 40, 50 reception); a generic RFP form is provided for booking; Eaton HK is at 380 Nathan Road, Jordan.",
-        "inference": "Anita's classroom-50 row exactly matches the 50-person target; no price, screen, or WiFi is published on the page, so cost/screen/wifi stay verification questions; the room is in a hotel cultural hub in Jordan (good central Kowloon access).",
-        "geo": "https://www.eatonworkshop.com/en-us/hong-kong/meetings-events/"
+        "observed_facts": "Official Garage Society event-space page (fetched 2026-08-21, HTTP 200) states 'from HKD 3,000 per hour' for professional event venues at Tower 535 in Causeway Bay and Beverly House in Wan Chai, suitable for workshops, networking and team-building for up to 100 people. Facilities include 'AV systems, high-speed WiFi, and flexible seating arrangements'; 'hundreds of successful events hosted annually'.",
+        "inference": "8-hour estimate at the documented 'from' rate and ECB 2026-08-21 planning rate is HKD 24,000 = 3,059.14 USD, within the USD 5,000 soft budget; capacity 100 comfortably covers 50; WiFi confirmed; screen status unclear from 'AV systems' phrasing (question).",
+        "geo": "https://www.thegaragesociety.com/service/event-space"
       },
-      "latitude": 22.305,
-      "longitude": 114.172,
-      "cost_rate_unit": "unknown",
+      "latitude": 22.2815,
+      "longitude": 114.178,
+      "cost_rate_unit": "hour",
       "opening_hours": null,
       "closing_time": null,
       "max_booking_hours": null,
@@ -1136,19 +393,18 @@
       "venue_tier": "shortlist_ready",
       "tier_reasons": [],
       "venue_flags": [
-        "cost_unknown",
         "screen_unknown",
-        "wifi_unknown",
         "availability_unconfirmed",
+        "final_quote_required",
         "duration_unconfirmed",
         "stale_evidence"
       ],
-      "score": 0.6017,
+      "score": 0.436,
       "score_breakdown": {
         "budget_efficiency": {
-          "factor": 0.5,
+          "factor": 0.3882,
           "weight": 0.2,
-          "contribution": 0.1
+          "contribution": 0.0776
         },
         "capacity_fit": {
           "factor": 1.0,
@@ -1156,9 +412,9 @@
           "contribution": 0.2
         },
         "catering_flexibility": {
-          "factor": 0.7,
+          "factor": 0.0,
           "weight": 0.15,
-          "contribution": 0.105
+          "contribution": 0.0
         },
         "recording_suitability": {
           "factor": 0.0,
@@ -1171,33 +427,33 @@
           "contribution": 0.1
         },
         "evidence_freshness": {
-          "factor": 0.7167,
+          "factor": 0.0833,
           "weight": 0.1,
-          "contribution": 0.0717
+          "contribution": 0.0083
         },
         "technical_readiness": {
-          "factor": 0.0,
+          "factor": 0.5,
           "weight": 0.05,
-          "contribution": 0.0
+          "contribution": 0.025
         },
         "event_window_fit": {
           "factor": 0.5,
           "weight": 0.05,
           "contribution": 0.025
         },
-        "total": 0.6017
+        "total": 0.436
       }
     },
     {
       "name": "Good Lab — The Future Workshop Training Space",
       "city_slug": "hong-kong-hk",
-      "address": "Good Lab, Lai Chi Kok (2-min walk from Lai Chi Kok MTR), Hong Kong",
+      "address": "1303 Charm Centre, 700 Castle Peak Road, Kowloon (Lai Chi Kok, approx. 2-min walk from MTR)",
       "capacity_comfortable": 50,
       "capacity_basis": "venue_claim",
       "screen_status": "unknown",
       "wifi_status": "unknown",
       "catering_policy": "unknown",
-      "recording_suitability": "likely_good",
+      "recording_suitability": "unknown",
       "estimated_cost_usd": null,
       "cost_basis": "unknown",
       "cost_local_amount": null,
@@ -1210,31 +466,29 @@
       "booking_url": "https://www.goodlab.hk/service/venue-hiring",
       "verification_question_kinds": [
         "cost_unknown",
-        "screen",
-        "wifi",
         "availability",
-        "event_window",
-        "room_assignment"
+        "wifi",
+        "screen",
+        "event_window"
       ],
       "verification_questions": [
-        "Confirm the exact HKD rate for an 8-hour Saturday hire of the Training Space (the page renders 'Office Hour $1,000 / Non Office Hour $1,200' for standard rate and '$900/$1,000' for NGO/SE rate, but the site's currency setting declares USD; confirm the actual HKD amount and what the 'non office hour' weekend rate is).",
-        "Confirm whether a projector/screen is included (the page lists an 'AV System' plus whiteboard and flipchart board but does not name a projector or screen).",
-        "Confirm WiFi availability (the venue-hiring page does not publish a WiFi statement).",
-        "Confirm availability of the Training Space on the chosen 2026 Saturday.",
-        "Confirm the bookable window on weekends (the page publishes office-hour vs non-office-hour pricing but no concrete opening hours).",
-        "Confirm the Training Space (approx. 720 sq ft, max 50 persons) comfortably seats 50 in a talk configuration."
+        "Confirm the currency of the published rate table ($900-$1,200/hr by rate tier and time slot): are these HKD or USD? The page is bilingual (EN/zh) and uses the $ symbol without an explicit ISO currency marker.",
+        "Confirm availability on a weekend date in the focus window.",
+        "Confirm WiFi availability in the Training Space (the venue-hiring page does not publish a WiFi statement).",
+        "Confirm whether the 'AV System' includes a projector and screen for presentations (the page lists 'AV System / Table x 12 / Whiteboard and flipchart board').",
+        "Confirm the bookable window on weekends and whether the 2-hour minimum applies."
       ],
       "source_url": "https://www.goodlab.hk/service/venue-hiring",
-      "source_title": "Venue Hiring @ Lai Chi Kok — Good Lab (official): The Future Workshop Training Space approx. 720 sq ft, max 50 persons, AV system / table x 12 / whiteboard and flipchart board; office-hour and non-office-hour rates published (site currency setting declares USD; HKD amount to confirm)",
-      "accessed_on": "2026-08-10",
+      "source_title": "Venue Hiring at Lai Chi Kok — Good Lab (official): The Future Workshop Training Space, approx. 720 sq ft, max 50 persons, AV system, tables, whiteboard; rate table $900-$1,200/hr by tier",
+      "accessed_on": "2026-08-21",
       "needs_human_verify": true,
       "evidence": {
-        "observed_facts": "Official Good Lab venue-hiring page (fetched 2026-08-10, HTTP 200) describes The Future Workshop in Lai Chi Kok (2-min walk from MTR) with a Training Space of approx. 720 sq ft, max 50 persons, AV system, table x 12, whiteboard and flipchart board; published rates: NGO/SE office hour $900, standard office hour $1,000, NGO/SE non-office hour $1,000, standard non-office hour $1,200; a Training Space + Cafe Area variant is 1,170 sq ft / max 80 persons at $1,500-$1,800.",
-        "inference": "Capacity 50 matches the target; the published '$' figures carry no HKD marker and the site's Webflow currency setting declares USD, so the local HKD amount is not page-visible — per the Run A currency rule the cost stays null with a confirm-currency question rather than an assumed conversion; AV/wifi unstated (questions).",
+        "observed_facts": "Official Good Lab venue-hiring page (fetched 2026-08-21, HTTP 200) describes The Future Workshop at Lai Chi Kok (荔枝角), 2-min walk from MTR station. Training Space: approx. 720 sq ft, max 50 persons, AV System, Table x 12, Whiteboard and flipchart board. Rate table (no explicit currency marker): NGO/SE Rate office hour $900, non-office-hour $1,000; Standard Rate office hour $1,000, non-office-hour $1,200. Training Space + Cafe Area: approx. 1,170 sq ft, max 80 persons, $1,500-$1,800 by tier. 2-hour minimum; booking hours include setup/tidy; overrun fees apply. Contact info@goodlab.hk, +852 2151 0747.",
+        "inference": "The rate table uses $ without explicit HKD/USD marker; the page is a Hong Kong social-enterprise organisation so HKD is likely but unconfirmed — cost stays null with a confirm-currency question per the Run A currency rule. Max 50 persons matches the target attendance; screen and WiFi are not explicitly stated (questions). Good Lab has relocated to Lai Chi Kok from a prior address.",
         "geo": "https://www.goodlab.hk/service/venue-hiring"
       },
-      "latitude": 22.337,
-      "longitude": 114.149,
+      "latitude": 22.3373,
+      "longitude": 114.1517,
       "cost_rate_unit": "unknown",
       "opening_hours": null,
       "closing_time": null,
@@ -1251,7 +505,7 @@
         "duration_unconfirmed",
         "stale_evidence"
       ],
-      "score": 0.5792,
+      "score": 0.4333,
       "score_breakdown": {
         "budget_efficiency": {
           "factor": 0.5,
@@ -1269,9 +523,9 @@
           "contribution": 0.0
         },
         "recording_suitability": {
-          "factor": 0.55,
+          "factor": 0.0,
           "weight": 0.15,
-          "contribution": 0.0825
+          "contribution": 0.0
         },
         "booking_path": {
           "factor": 1.0,
@@ -1279,9 +533,9 @@
           "contribution": 0.1
         },
         "evidence_freshness": {
-          "factor": 0.7167,
+          "factor": 0.0833,
           "weight": 0.1,
-          "contribution": 0.0717
+          "contribution": 0.0083
         },
         "technical_readiness": {
           "factor": 0.0,
@@ -1293,17 +547,17 @@
           "weight": 0.05,
           "contribution": 0.025
         },
-        "total": 0.5792
+        "total": 0.4333
       }
     },
     {
-      "name": "Hong Kong Arts Centre — McAulay Studio",
+      "name": "The Wave — Event Space",
       "city_slug": "hong-kong-hk",
-      "address": "Hong Kong Arts Centre, 2 Harbour Road, Wan Chai, Hong Kong",
-      "capacity_comfortable": 73,
-      "capacity_basis": "seated",
-      "screen_status": "unknown",
-      "wifi_status": "unknown",
+      "address": "4/F, The Wave, 4 Hing Yip Street, Kwun Tong, Kowloon, Hong Kong",
+      "capacity_comfortable": 500,
+      "capacity_basis": "venue_claim",
+      "screen_status": "confirmed",
+      "wifi_status": "confirmed",
       "catering_policy": "unknown",
       "recording_suitability": "likely_good",
       "estimated_cost_usd": null,
@@ -1315,140 +569,30 @@
       "rate_estimate_note": null,
       "hourly_rate_local": null,
       "rate_currency": null,
-      "booking_url": "https://hkac.org.hk/en/venue/",
-      "verification_question_kinds": [
-        "cost_unknown",
-        "screen",
-        "wifi",
-        "availability",
-        "event_window",
-        "room_assignment"
-      ],
-      "verification_questions": [
-        "Confirm the hire rate for McAulay Studio (the official page publishes capacity and enquiry form but no numeric price).",
-        "Confirm whether projection is available for talks (no AV statement on the page; 73 movable seats suit small-scale performances and workshops).",
-        "Confirm WiFi availability (no WiFi statement on the page).",
-        "Confirm availability on the chosen 2026 Saturday.",
-        "Confirm the bookable window on weekends.",
-        "Confirm the studio (73 movable seats) comfortably seats 50 in a talk configuration."
-      ],
-      "source_url": "https://hkac.org.hk/en/venue/",
-      "source_title": "Venue Hire — Hong Kong Arts Centre (official): McAulay Studio located in the lower basement with 73 movable seats, suitable for small-scale drama performances and workshops; at 2 Harbour Road, Wan Chai",
-      "accessed_on": "2026-08-10",
-      "needs_human_verify": true,
-      "evidence": {
-        "observed_facts": "Official Hong Kong Arts Centre venue page (fetched 2026-08-10) describes McAulay Studio in the lower basement with 73 movable seats, suitable for small-scale drama performances and workshops; venue hire via enquiry form.",
-        "inference": "Studio 73 seats covers 50; smaller than the Shouson Theatre and suited to workshop formats; no price/screen/WiFi published (questions).",
-        "geo": "https://hkac.org.hk/en/venue/"
-      },
-      "latitude": 22.28,
-      "longitude": 114.173,
-      "cost_rate_unit": "unknown",
-      "opening_hours": null,
-      "closing_time": null,
-      "max_booking_hours": null,
-      "event_window_status": "unknown",
-      "event_window_evidence": null,
-      "venue_tier": "shortlist_ready",
-      "tier_reasons": [],
-      "venue_flags": [
-        "cost_unknown",
-        "screen_unknown",
-        "wifi_unknown",
-        "availability_unconfirmed",
-        "duration_unconfirmed",
-        "stale_evidence"
-      ],
-      "score": 0.5792,
-      "score_breakdown": {
-        "budget_efficiency": {
-          "factor": 0.5,
-          "weight": 0.2,
-          "contribution": 0.1
-        },
-        "capacity_fit": {
-          "factor": 1.0,
-          "weight": 0.2,
-          "contribution": 0.2
-        },
-        "catering_flexibility": {
-          "factor": 0.0,
-          "weight": 0.15,
-          "contribution": 0.0
-        },
-        "recording_suitability": {
-          "factor": 0.55,
-          "weight": 0.15,
-          "contribution": 0.0825
-        },
-        "booking_path": {
-          "factor": 1.0,
-          "weight": 0.1,
-          "contribution": 0.1
-        },
-        "evidence_freshness": {
-          "factor": 0.7167,
-          "weight": 0.1,
-          "contribution": 0.0717
-        },
-        "technical_readiness": {
-          "factor": 0.0,
-          "weight": 0.05,
-          "contribution": 0.0
-        },
-        "event_window_fit": {
-          "factor": 0.5,
-          "weight": 0.05,
-          "contribution": 0.025
-        },
-        "total": 0.5792
-      }
-    },
-    {
-      "name": "The Wave — Event Space",
-      "city_slug": "hong-kong-hk",
-      "address": "4/F, The Wave, 4 Hing Yip Street, Kwun Tong, Kowloon, Hong Kong",
-      "capacity_comfortable": 250,
-      "capacity_basis": "venue_claim",
-      "screen_status": "confirmed",
-      "wifi_status": "confirmed",
-      "catering_policy": "in_house_available",
-      "recording_suitability": "likely_good",
-      "estimated_cost_usd": null,
-      "cost_basis": "unknown",
-      "cost_local_amount": null,
-      "cost_local_currency": null,
-      "hourly_rate_usd": null,
-      "estimated_hours": null,
-      "rate_estimate_note": null,
-      "hourly_rate_local": null,
-      "rate_currency": null,
-      "booking_url": "https://thewave.com.hk/event-space/",
+      "booking_url": "https://thewave.com.hk/services/event-space/",
       "verification_question_kinds": [
         "cost_unknown",
         "availability",
-        "event_window",
-        "room_assignment"
+        "event_window"
       ],
       "verification_questions": [
-        "Confirm the all-in quote for an 8-hour Saturday event (the official event-space page is quote-based: 'call or email us with the details of your enquiry and we will quickly reply with a quote'; the homepage advertises a Flash Sale 'From $1,200/Hour' for event space but without a stated currency marker).",
-        "Confirm availability of the event space on the chosen 2026 Saturday.",
-        "Confirm the bookable window and setup/teardown hours on weekends (the page lists 24-hour access as a facility).",
-        "Confirm the specific room/partition for 50 people (the event space spans 520-6,000 sq ft with capacity 40-500 seats and can be partitioned into smaller function rooms)."
+        "Confirm the current rental rate for the event space (the official event-space page is quote-based with no published price; 'Call or email us with the details of your enquiry and we will quickly reply with a quote').",
+        "Confirm availability on a weekend date in the focus window.",
+        "Confirm the bookable window on weekends and any operational hours limits."
       ],
-      "source_url": "https://thewave.com.hk/event-space/",
-      "source_title": "Event Space — The Wave (official, Kwun Tong): over 6,000 sq ft of versatile event space, capacity 40-500 seats, high-speed Wi-Fi, projectors, printers and audio equipment, LED display screen option, 24-hour access, partitionable into smaller function rooms; 4 Hing Yip Street, Kwun Tong",
-      "accessed_on": "2026-08-10",
+      "source_url": "https://thewave.com.hk/services/event-space/",
+      "source_title": "Event Space — The Wave (official): over 6,000 sq ft in Kwun Tong, capacity 40-500 seats, high-speed Wi-Fi, projectors, LED display screen, audio equipment, quote-based pricing",
+      "accessed_on": "2026-08-21",
       "needs_human_verify": true,
       "evidence": {
-        "observed_facts": "Official The Wave event-space page (fetched 2026-08-10, HTTP 200) states the space suits business meetings, multi-party seminars, training, product launches, exhibitions and open-day events, spans 520-6,000 sq ft with capacity 40-500 seats, includes high-speed Wi-Fi, projectors, printers and audio equipment, offers a P1.86 LED display screen option, 24-hour access, and can be partitioned into smaller function rooms; homepage (thewave.com.hk, same fetch) advertises 'Event Space Flash Sale | From $1,200/Hour' (currency marker not shown).",
-        "inference": "Capacity 250 (venue-published 40-500 range; homepage states 'Capacity up to 250 persons') comfortably covers 50; screen and Wi-Fi confirmed from the published projector/LED/Wi-Fi list; the event page is quote-based and the homepage flash-sale '$1,200/Hour' carries no currency marker, so cost stays unknown with a confirm-cost question.",
-        "geo": "https://thewave.com.hk/event-space/"
+        "observed_facts": "Official The Wave event-space page (thewave.com.hk/services/event-space/, fetched 2026-08-21, HTTP 200) states the event space is 'in Kwun Tong' with 'over 6,000 sq. ft of Inspiration', capacity '40-500 seats', high-speed Wi-Fi, projectors, printers, audio equipment, and a P1.86 LED Display Screen. 'Simply call or email us with the details of your enquiry and we will quickly reply with a quote.' The space is described as suitable for business meetings, seminars, training, product launches, exhibitions. Floor space 520-6,000 sq ft; can be partitioned into smaller function rooms. 24-hour access and on-site parking mentioned.",
+        "inference": "A large flexible venue in Kwun Tong with confirmed screen (projectors and LED display) and WiFi; no published price — quote-based only; capacity far exceeds 50 target; cost stays null with a confirm-cost question. The space can be partitioned into smaller rooms for a 50-person event.",
+        "geo": "https://thewave.com.hk/services/event-space/"
       },
-      "latitude": 22.311,
-      "longitude": 114.226,
+      "latitude": 22.3115,
+      "longitude": 114.2263,
       "cost_rate_unit": "unknown",
-      "opening_hours": "24-hour access",
+      "opening_hours": "24-hour access advertised",
       "closing_time": null,
       "max_booking_hours": null,
       "event_window_status": "unknown",
@@ -1462,7 +606,7 @@
         "duration_unconfirmed",
         "stale_evidence"
       ],
-      "score": 0.5342,
+      "score": 0.3658,
       "score_breakdown": {
         "budget_efficiency": {
           "factor": 0.5,
@@ -1475,9 +619,9 @@
           "contribution": 0.0
         },
         "catering_flexibility": {
-          "factor": 0.7,
+          "factor": 0.0,
           "weight": 0.15,
-          "contribution": 0.105
+          "contribution": 0.0
         },
         "recording_suitability": {
           "factor": 0.55,
@@ -1490,9 +634,9 @@
           "contribution": 0.1
         },
         "evidence_freshness": {
-          "factor": 0.7167,
+          "factor": 0.0833,
           "weight": 0.1,
-          "contribution": 0.0717
+          "contribution": 0.0083
         },
         "technical_readiness": {
           "factor": 1.0,
@@ -1504,18 +648,18 @@
           "weight": 0.05,
           "contribution": 0.025
         },
-        "total": 0.5342
+        "total": 0.3658
       }
     },
     {
-      "name": "The Executive Centre — Function Room (Hong Kong)",
+      "name": "Dream Impact — Event Space (Lai Chi Kok)",
       "city_slug": "hong-kong-hk",
-      "address": "Multiple CBD locations: 28 Stanley Street (Central), Three Garden Road (Central), Two Chinachem Central, Prosperity Tower, Two Pacific Place (Admiralty), One Island East (Quarry Bay), Hong Kong",
-      "capacity_comfortable": 220,
+      "address": "Unit 4C, 7/F, 760 Cheung Sha Wan Road, Lai Chi Kok, Kowloon, Hong Kong (3-5 min walk from Lai Chi Kok MTR)",
+      "capacity_comfortable": 300,
       "capacity_basis": "venue_claim",
-      "screen_status": "unknown",
-      "wifi_status": "confirmed",
-      "catering_policy": "in_house_available",
+      "screen_status": "confirmed",
+      "wifi_status": "unknown",
+      "catering_policy": "unknown",
       "recording_suitability": "likely_good",
       "estimated_cost_usd": null,
       "cost_basis": "unknown",
@@ -1526,32 +670,32 @@
       "rate_estimate_note": null,
       "hourly_rate_local": null,
       "rate_currency": null,
-      "booking_url": "https://www.executivecentre.com/locations/hong-kong/event-spaces-in-hong-kong/",
+      "booking_url": "https://www.dreamimpacthk.com/%E9%A6%99%E6%B8%AF%E5%A4%A7%E5%9E%8B%E6%B4%BB%E5%8B%95%E5%A0%B4%E5%9C%B0%E7%A7%9F%E5%80%9F%E6%8E%A8%E8%96%A6/?lang=zh-hant",
       "verification_question_kinds": [
         "cost_unknown",
-        "screen",
         "availability",
+        "wifi",
         "event_window",
         "room_assignment"
       ],
       "verification_questions": [
-        "Confirm the hire rate for the specific Function Room for a 50-person event (the official page lists event spaces at 28 Stanley Street, Three Garden Road, Two Chinachem Central, Prosperity Tower, Two Pacific Place and One Island East but no numeric price).",
-        "Confirm whether projection/screen is included in the Function Room package (the page says event spaces are supported with state-of-the-art technology and onsite IT technicians, without naming a screen).",
-        "Confirm availability on the chosen 2026 Saturday at the preferred location.",
-        "Confirm the bookable window on weekends.",
-        "Confirm the specific Function Room (seating 20-220 pax per the official page) configured for a 50-person talk event at the preferred location."
+        "Confirm the applicable hourly rate for a Saturday 8-hour, 50-person booking (the venue's own guide publishes a wide range '約 HKD $270–$3,800 / 小時' across spaces and time slots without mapping rates to specific rooms; NGO/social-enterprise discounts mentioned).",
+        "Confirm availability on a weekend date in the focus window.",
+        "Confirm WiFi coverage (the guide lists a full AV system and hybrid-meeting technology but no explicit WiFi statement in the fetched text).",
+        "Confirm the bookable window on weekends and any staffed-hours limits.",
+        "Confirm which space configuration seats 50 for a talk-style event (self-published figures: 2,200 sq ft, up to 300 persons across workshop/theatre/classroom/board layouts)."
       ],
-      "source_url": "https://www.executivecentre.com/locations/hong-kong/event-spaces-in-hong-kong/",
-      "source_title": "Event Spaces in Hong Kong — The Executive Centre (official): premium event venues in Central, Admiralty and Quarry Bay (28 Stanley Street, Three Garden Road, Two Chinachem Central, Prosperity Tower, Two Pacific Place, One Island East), Function Rooms seating up to 20-220 pax, high-quality audio systems, high-speed Wi-Fi, onsite IT technicians",
-      "accessed_on": "2026-08-10",
+      "source_url": "https://www.dreamimpacthk.com/%E9%A6%99%E6%B8%AF%E5%A4%A7%E5%9E%8B%E6%B4%BB%E5%8B%95%E5%A0%B4%E5%9C%B0%E7%A7%9F%E5%80%9F%E6%8E%A8%E8%96%A6/?lang=zh-hant",
+      "source_title": "香港大型活動場地租借推薦｜8個可容納100–500人的活動空間 — Dream Impact 夢創成真 (official, self-published guide, page dated 2026-03-27): Lai Chi Kok impact-event venue, 2,200 sq ft, up to 300 persons, full AV system, 約 HKD $270–$3,800/hr",
+      "accessed_on": "2026-08-21",
       "needs_human_verify": true,
       "evidence": {
-        "observed_facts": "Official The Executive Centre event-spaces page (fetched 2026-08-10, HTTP 200) describes Event Space (flexible lounge spaces), Function Room ('a multi-purpose room... seating up to 20-220 pax', customisable for cluster, classroom, u-shape and theatre styles, supported with state-of-the-art technology and onsite IT technicians) and Outdoor Area venue types across Hong Kong CBD locations (28 Stanley Street, Three Garden Road, Two Chinachem Central, Prosperity Tower, Two Pacific Place, One Island East).",
-        "inference": "TEC Function Rooms (20-220 pax) include sizes suitable for 50; WiFi confirmed from the page's high-speed Wi-Fi statement; no numeric price and no explicit screen name published (questions); multiple CBD locations give Joe flexibility.",
-        "geo": "https://www.executivecentre.com/locations/hong-kong/event-spaces-in-hong-kong/"
+        "observed_facts": "Dream Impact's own website guide (dreamimpacthk.com, fetched 2026-08-21, HTTP 200, page dated 2026-03-27) describes the Lai Chi Kok venue: '位於荔枝角...場地可容納20至300人，適合工作坊、研討會、健康活動及大型聚會'; location details '九龍荔枝角｜長沙灣道760號4樓C室, MTR 荔枝角站（步行3–5分鐘）'; '面積：2,200平方呎'; '容納人數：最多300人'; '價錢：約 HKD $270–$3,800 / 小時'; equipment '全套視聽系統（投影機、麥克風、講台、音響）｜混合會議技術'; policies include pet-friendly and a catering-permission policy; the page carries a venue-booking enquiry form.",
+        "inference": "A mission-driven social-enterprise venue whose own published hourly range spans HKD 270-3,800 without mapping rates to rooms or time slots, so no single honest cost number exists yet: cost stays null with a confirm-rate question (same pattern as the Good Lab record). Screen is confirmed from the self-published full-AV list; WiFi is not explicitly stated. Max capacity 300 is far above target (oversized flag expected); the wide layout menu suggests a 50-seat talk setup exists but the specific room assignment needs confirmation.",
+        "geo": "https://www.dreamimpacthk.com/%E9%A6%99%E6%B8%AF%E5%A4%A7%E5%9E%8B%E6%B4%BB%E5%8B%95%E5%A0%B4%E5%9C%B0%E7%A7%9F%E5%80%9F%E6%8E%A8%E8%96%A6/?lang=zh-hant"
       },
-      "latitude": 22.281,
-      "longitude": 114.158,
+      "latitude": 22.336,
+      "longitude": 114.1485,
       "cost_rate_unit": "unknown",
       "opening_hours": null,
       "closing_time": null,
@@ -1563,12 +707,12 @@
       "venue_flags": [
         "oversized_capacity",
         "cost_unknown",
-        "screen_unknown",
+        "wifi_unknown",
         "availability_unconfirmed",
         "duration_unconfirmed",
         "stale_evidence"
       ],
-      "score": 0.5092,
+      "score": 0.3408,
       "score_breakdown": {
         "budget_efficiency": {
           "factor": 0.5,
@@ -1581,9 +725,9 @@
           "contribution": 0.0
         },
         "catering_flexibility": {
-          "factor": 0.7,
+          "factor": 0.0,
           "weight": 0.15,
-          "contribution": 0.105
+          "contribution": 0.0
         },
         "recording_suitability": {
           "factor": 0.55,
@@ -1596,9 +740,9 @@
           "contribution": 0.1
         },
         "evidence_freshness": {
-          "factor": 0.7167,
+          "factor": 0.0833,
           "weight": 0.1,
-          "contribution": 0.0717
+          "contribution": 0.0083
         },
         "technical_readiness": {
           "factor": 0.5,
@@ -1610,127 +754,18 @@
           "weight": 0.05,
           "contribution": 0.025
         },
-        "total": 0.5092
+        "total": 0.3408
       }
     },
     {
-      "name": "Hong Kong Arts Centre — Shouson Theatre",
+      "name": "PMQ — QUBE (Multi-Purpose Hall)",
       "city_slug": "hong-kong-hk",
-      "address": "Hong Kong Arts Centre, 2 Harbour Road, Wan Chai, Hong Kong",
-      "capacity_comfortable": 394,
-      "capacity_basis": "seated",
-      "screen_status": "unknown",
-      "wifi_status": "unknown",
-      "catering_policy": "unknown",
-      "recording_suitability": "confirmed_good",
-      "estimated_cost_usd": null,
-      "cost_basis": "unknown",
-      "cost_local_amount": null,
-      "cost_local_currency": null,
-      "hourly_rate_usd": null,
-      "estimated_hours": null,
-      "rate_estimate_note": null,
-      "hourly_rate_local": null,
-      "rate_currency": null,
-      "booking_url": "https://hkac.org.hk/en/venue/",
-      "verification_question_kinds": [
-        "cost_unknown",
-        "screen",
-        "wifi",
-        "availability",
-        "event_window",
-        "room_assignment"
-      ],
-      "verification_questions": [
-        "Confirm the hire rate for Shouson Theatre for a 50-person event (the official venue page publishes capacity and enquiry form but no numeric price).",
-        "Confirm whether projection is included for seminars (the theatre supports performances, concerts, film screenings and seminars; AV detail is via the venue-hire enquiry).",
-        "Confirm WiFi availability (no WiFi statement on the page).",
-        "Confirm availability on the chosen 2026 Saturday.",
-        "Confirm the bookable window on weekends.",
-        "Confirm whether the 394-seat theatre is a suitable (if oversized) configuration for an intimate 50-person talk event, or whether a smaller HKAC space (e.g. McAulay Studio 73 seats) is preferred."
-      ],
-      "source_url": "https://hkac.org.hk/en/venue/",
-      "source_title": "Venue Hire — Hong Kong Arts Centre (official): Shouson Theatre 394 seats (1/F stall to 3/F circle), suitable for drama, dance, concerts, film screenings and seminars; Louis Koo Cinema 119 seats; McAulay Studio 73 movable seats; at 2 Harbour Road, Wan Chai",
-      "accessed_on": "2026-08-10",
-      "needs_human_verify": true,
-      "evidence": {
-        "observed_facts": "Official Hong Kong Arts Centre venue page (fetched 2026-08-10, HTTP 200) lists Shouson Theatre (394 seats, 'the biggest venue', suitable for drama and dance performances, concerts, film screenings and seminars), Louis Koo Cinema (119 seats, professional film screening + seminars/ceremonies/press conferences), and McAulay Studio (73 movable seats, small-scale drama and workshops); venue hire via the online enquiry form.",
-        "inference": "Shouson Theatre (394 seats) is an oversized-but-proven talk venue for 50 (oversized_capacity flag expected); no price/screen/WiFi published (questions); HKAC is a well-known Wan Chai cultural venue with strong recording suitability.",
-        "geo": "https://hkac.org.hk/en/venue/"
-      },
-      "latitude": 22.28,
-      "longitude": 114.173,
-      "cost_rate_unit": "unknown",
-      "opening_hours": null,
-      "closing_time": null,
-      "max_booking_hours": null,
-      "event_window_status": "unknown",
-      "event_window_evidence": null,
-      "venue_tier": "shortlist_ready",
-      "tier_reasons": [],
-      "venue_flags": [
-        "oversized_capacity",
-        "cost_unknown",
-        "screen_unknown",
-        "wifi_unknown",
-        "availability_unconfirmed",
-        "duration_unconfirmed",
-        "stale_evidence"
-      ],
-      "score": 0.4467,
-      "score_breakdown": {
-        "budget_efficiency": {
-          "factor": 0.5,
-          "weight": 0.2,
-          "contribution": 0.1
-        },
-        "capacity_fit": {
-          "factor": 0.0,
-          "weight": 0.2,
-          "contribution": 0.0
-        },
-        "catering_flexibility": {
-          "factor": 0.0,
-          "weight": 0.15,
-          "contribution": 0.0
-        },
-        "recording_suitability": {
-          "factor": 1.0,
-          "weight": 0.15,
-          "contribution": 0.15
-        },
-        "booking_path": {
-          "factor": 1.0,
-          "weight": 0.1,
-          "contribution": 0.1
-        },
-        "evidence_freshness": {
-          "factor": 0.7167,
-          "weight": 0.1,
-          "contribution": 0.0717
-        },
-        "technical_readiness": {
-          "factor": 0.0,
-          "weight": 0.05,
-          "contribution": 0.0
-        },
-        "event_window_fit": {
-          "factor": 0.5,
-          "weight": 0.05,
-          "contribution": 0.025
-        },
-        "total": 0.4467
-      }
-    },
-    {
-      "name": "PMQ — QUBE (multi-purpose hall)",
-      "city_slug": "hong-kong-hk",
-      "address": "PMQ, 35 Aberdeen Street, Central, Hong Kong",
+      "address": "35 Aberdeen Street, Central, Hong Kong",
       "capacity_comfortable": 450,
       "capacity_basis": "venue_claim",
       "screen_status": "unknown",
       "wifi_status": "unknown",
-      "catering_policy": "in_house_available",
+      "catering_policy": "unknown",
       "recording_suitability": "unknown",
       "estimated_cost_usd": null,
       "cost_basis": "unknown",
@@ -1744,31 +779,29 @@
       "booking_url": "https://www.pmq.org.hk/the-site/event-venue-rental/",
       "verification_question_kinds": [
         "cost_unknown",
-        "screen",
-        "wifi",
         "availability",
-        "event_window",
-        "room_assignment"
+        "wifi",
+        "screen",
+        "event_window"
       ],
       "verification_questions": [
-        "Confirm the hire rate for QUBE for a 50-person event (the official PMQ venue-rental page publishes capacities and floor plans but no numeric price; enquiry via the expression-of-interest form).",
-        "Confirm whether projection/AV is included for QUBE (the page publishes no AV statement).",
-        "Confirm WiFi availability in QUBE (the page publishes no WiFi statement).",
-        "Confirm availability on the chosen 2026 Saturday.",
-        "Confirm the bookable window on weekends.",
-        "Confirm whether the ~500 m² QUBE hall (450 participants) is a suitable configuration for an intimate 50-person talk event, or whether a smaller PMQ space (e.g. Taste Library, ~30) is preferred."
+        "Confirm the rental rate for QUBE for a 50-person event (the official PMQ event-venue page states 'Expression of Interest' with an enquiry form; no published price).",
+        "Confirm availability on a weekend date in the focus window.",
+        "Confirm WiFi availability in QUBE.",
+        "Confirm whether QUBE is equipped with projection/screen facilities for a talk-style event.",
+        "Confirm the bookable window on weekends and any venue hire terms."
       ],
       "source_url": "https://www.pmq.org.hk/the-site/event-venue-rental/",
-      "source_title": "Event Venue Rental — PMQ 元創方 (official): QUBE multi-purpose hall gross area approx. 500 m², headroom 5 m, capacity 450 participants; Courtyard & Marketplace approx. 1,000 m² (usable 600 m²), 450 participants; Taste Library & Picture Book Library approx. 200 m², ~30 participants per unit; at 35 Aberdeen Street, Central",
-      "accessed_on": "2026-08-10",
+      "source_title": "Event Venue Rental — PMQ (official): QUBE multi-purpose hall, gross area approx. 500 sq m, headroom 5 m, capacity 450 participants, at 35 Aberdeen Street, Central",
+      "accessed_on": "2026-08-21",
       "needs_human_verify": true,
       "evidence": {
-        "observed_facts": "Official PMQ event-venue-rental page (fetched 2026-08-10, HTTP 200) lists QUBE multi-purpose hall (gross area approx. 500 m², headroom 5 m, capacity 450 participants), Courtyard & Marketplace (approx. 1,000 m², usable 600 m², capacity 450 participants), and Taste Library & Picture Book Library (approx. 200 m², ~30 participants per unit), with floor-plan downloads and an expression-of-interest form for venue hire.",
-        "inference": "PMQ is a heritage creative venue in Central suitable for 'creative happenings & business events'; QUBE at 450 participants is oversized for 50 (oversized_capacity flag expected), and no price/AV/WiFi is published, so cost/screen/wifi stay questions; Taste Library (~30) is below the 50 target and noted for completeness.",
+        "observed_facts": "Official PMQ event-venue page (pmq.org.hk/the-site/event-venue-rental/, fetched 2026-08-21, HTTP 200) lists QUBE as a 'multi-purpose hall' with 'Gross Area: approx. 500m², Headroom: 5m, Capacity: 450 participants'. The venue is at 35 Aberdeen Street, Central (SoHo). Enquiry via events@pmq.org.hk or the on-page form. Also lists Courtyard & Marketplace (approx. 1,000m², 450 participants) and Taste Library (approx. 200m², 30 participants per unit).",
+        "inference": "QUBE is a large heritage venue in Central with 450-person capacity — significantly oversized for a 50-person event; the 5m headroom and open floor plan could work but may feel cavernous. No published price (enquiry-based); screen, WiFi, and catering are not stated on this page (questions).",
         "geo": "https://www.pmq.org.hk/the-site/event-venue-rental/"
       },
-      "latitude": 22.283,
-      "longitude": 114.153,
+      "latitude": 22.2821,
+      "longitude": 114.1502,
       "cost_rate_unit": "unknown",
       "opening_hours": null,
       "closing_time": null,
@@ -1786,7 +819,7 @@
         "duration_unconfirmed",
         "stale_evidence"
       ],
-      "score": 0.4017,
+      "score": 0.2333,
       "score_breakdown": {
         "budget_efficiency": {
           "factor": 0.5,
@@ -1799,9 +832,9 @@
           "contribution": 0.0
         },
         "catering_flexibility": {
-          "factor": 0.7,
+          "factor": 0.0,
           "weight": 0.15,
-          "contribution": 0.105
+          "contribution": 0.0
         },
         "recording_suitability": {
           "factor": 0.0,
@@ -1814,9 +847,9 @@
           "contribution": 0.1
         },
         "evidence_freshness": {
-          "factor": 0.7167,
+          "factor": 0.0833,
           "weight": 0.1,
-          "contribution": 0.0717
+          "contribution": 0.0083
         },
         "technical_readiness": {
           "factor": 0.0,
@@ -1828,263 +861,17 @@
           "weight": 0.05,
           "contribution": 0.025
         },
-        "total": 0.4017
-      }
-    },
-    {
-      "name": "The Langham Hong Kong — Grand Ballroom",
-      "city_slug": "hong-kong-hk",
-      "address": "The Langham, 8 Peking Road, Tsim Sha Tsui, Kowloon, Hong Kong",
-      "capacity_comfortable": 450,
-      "capacity_basis": "seated",
-      "screen_status": "unknown",
-      "wifi_status": "unknown",
-      "catering_policy": "in_house_only",
-      "recording_suitability": "unknown",
-      "estimated_cost_usd": null,
-      "cost_basis": "unknown",
-      "cost_local_amount": null,
-      "cost_local_currency": null,
-      "hourly_rate_usd": null,
-      "estimated_hours": null,
-      "rate_estimate_note": null,
-      "hourly_rate_local": null,
-      "rate_currency": null,
-      "booking_url": "https://www.langhamhotels.com/en/the-langham/hong-kong/events/meetings/venue-listing/grand-ballroom/",
-      "verification_question_kinds": [
-        "cost_unknown",
-        "screen",
-        "wifi",
-        "availability",
-        "event_window",
-        "room_assignment"
-      ],
-      "verification_questions": [
-        "Confirm the hire rate for the Grand Ballroom for a 50-person event (the official page publishes a capacity table and enquiry form but no numeric price; as a 5-star hotel ballroom it is likely well above the USD 5,000 soft budget).",
-        "Confirm whether projection/AV is included in the ballroom package.",
-        "Confirm WiFi availability (no WiFi statement on the venue-listing page).",
-        "Confirm availability on the chosen 2026 Saturday.",
-        "Confirm the bookable window on weekends.",
-        "Confirm whether the 490 m² Grand Ballroom (theatre 450 / classroom 180) is an appropriate (though oversized) configuration for an intimate 50-person talk event."
-      ],
-      "source_url": "https://www.langhamhotels.com/en/the-langham/hong-kong/events/meetings/venue-listing/grand-ballroom/",
-      "source_title": "The Grand Ballroom — The Langham, Hong Kong (official): 490 m² / 5,274 sq ft, ceiling 3.9 m, theatre 450 / classroom 180 / reception 500 / banquet 384 / U-shape 81; 8 Peking Road, Tsim Sha Tsui",
-      "accessed_on": "2026-08-10",
-      "needs_human_verify": true,
-      "evidence": {
-        "observed_facts": "Official Langham Hong Kong Grand Ballroom venue-listing page (fetched 2026-08-10, HTTP 200) publishes the Grand Ballroom dimensions (22 m x 23 m / 490 m²; 71 ft x 75 ft / 5,274 sq ft), ceiling height 3.9 m, and capacities theatre 450, classroom 180, reception 500, banquet 384, U-shape 81; the venue listing page also references The Boardroom and The Knightsbridge as smaller options; address 8 Peking Road, Tsim Sha Tsui.",
-        "inference": "The Grand Ballroom is a high-end hotel ballroom (450 theatre) — recorded as an oversized/over-budget awareness lead like the Budapest New York Palace precedent, not a budget fit; no numeric price published on the fetched page; smaller Langham rooms (The Boardroom, The Knightsbridge) exist but were not fully fetched in this pass.",
-        "geo": "https://www.langhamhotels.com/en/the-langham/hong-kong/events/meetings/venue-listing/grand-ballroom/"
-      },
-      "latitude": 22.295,
-      "longitude": 114.172,
-      "cost_rate_unit": "unknown",
-      "opening_hours": null,
-      "closing_time": null,
-      "max_booking_hours": null,
-      "event_window_status": "unknown",
-      "event_window_evidence": null,
-      "venue_tier": "shortlist_ready",
-      "tier_reasons": [],
-      "venue_flags": [
-        "oversized_capacity",
-        "cost_unknown",
-        "screen_unknown",
-        "wifi_unknown",
-        "availability_unconfirmed",
-        "duration_unconfirmed",
-        "stale_evidence"
-      ],
-      "score": 0.3342,
-      "score_breakdown": {
-        "budget_efficiency": {
-          "factor": 0.5,
-          "weight": 0.2,
-          "contribution": 0.1
-        },
-        "capacity_fit": {
-          "factor": 0.0,
-          "weight": 0.2,
-          "contribution": 0.0
-        },
-        "catering_flexibility": {
-          "factor": 0.25,
-          "weight": 0.15,
-          "contribution": 0.0375
-        },
-        "recording_suitability": {
-          "factor": 0.0,
-          "weight": 0.15,
-          "contribution": 0.0
-        },
-        "booking_path": {
-          "factor": 1.0,
-          "weight": 0.1,
-          "contribution": 0.1
-        },
-        "evidence_freshness": {
-          "factor": 0.7167,
-          "weight": 0.1,
-          "contribution": 0.0717
-        },
-        "technical_readiness": {
-          "factor": 0.0,
-          "weight": 0.05,
-          "contribution": 0.0
-        },
-        "event_window_fit": {
-          "factor": 0.5,
-          "weight": 0.05,
-          "contribution": 0.025
-        },
-        "total": 0.3342
+        "total": 0.2333
       }
     }
   ],
   "lead": [
     {
-      "name": "Fringe Club — The Vault",
+      "name": "Cyberport — Conference & Exhibition Centre (CEC)",
       "city_slug": "hong-kong-hk",
-      "address": "2 Lower Albert Road (Wyndham Street entrance), Central, Hong Kong",
-      "capacity_comfortable": 40,
+      "address": "100 Cyberport Road, Pok Fu Lam, Hong Kong Island, Hong Kong",
+      "capacity_comfortable": 330,
       "capacity_basis": "venue_claim",
-      "screen_status": "unknown",
-      "wifi_status": "unknown",
-      "catering_policy": "in_house_available",
-      "recording_suitability": "unknown",
-      "estimated_cost_usd": null,
-      "cost_basis": "unknown",
-      "cost_local_amount": null,
-      "cost_local_currency": null,
-      "hourly_rate_usd": null,
-      "estimated_hours": null,
-      "rate_estimate_note": null,
-      "hourly_rate_local": null,
-      "rate_currency": null,
-      "booking_url": "https://www.hkfringeclub.com/en/venues/6-The+Vault.html",
-      "verification_question_kinds": [
-        "cost_unknown",
-        "capacity",
-        "screen",
-        "wifi",
-        "availability",
-        "event_window"
-      ],
-      "verification_questions": [
-        "Confirm the hire rate for The Vault (the official page publishes a description and booking-enquiry form but no numeric price).",
-        "Confirm whether 50 people can be accommodated in any configuration (the official page states it accommodates up to around 40 guests, below the 50-person target).",
-        "Confirm whether a projector/screen can be added (no AV statement on the page).",
-        "Confirm WiFi availability (no WiFi statement on the page).",
-        "Confirm availability on the chosen 2026 Saturday.",
-        "Confirm the bookable window on weekends."
-      ],
-      "source_url": "https://www.hkfringeclub.com/en/venues/6-The+Vault.html",
-      "source_title": "The Vault — The Fringe Club (official): heritage space originally the Dairy Company cold store, retains white tiled walls and vintage industrial character, accommodates up to around 40 guests, ideal for exhibitions, salon talks, reading clubs, book launches or small creative gatherings; Wyndham Street entrance, 2 Lower Albert Road, Central",
-      "accessed_on": "2026-08-10",
-      "needs_human_verify": true,
-      "evidence": {
-        "observed_facts": "Official Fringe Club The Vault venue page (fetched 2026-08-10, HTTP 200) describes the heritage space originally built as the Dairy Company cold store, retaining its original white tiled walls and vintage industrial character, accessible via the Wyndham Street entrance, accommodating up to around 40 guests, ideal for exhibitions, salon talks, reading clubs, book launches or small creative gatherings.",
-        "inference": "Capacity ~40 is below the 50-person target, so this is a lead (capacity verification question required), kept as an evidence-bound alternative for smaller side formats; no price/AV/WiFi published (questions).",
-        "geo": "https://www.hkfringeclub.com/en/venues/6-The+Vault.html"
-      },
-      "latitude": 22.28,
-      "longitude": 114.155,
-      "cost_rate_unit": "unknown",
-      "opening_hours": null,
-      "closing_time": null,
-      "max_booking_hours": null,
-      "event_window_status": "unknown",
-      "event_window_evidence": null,
-      "venue_tier": "lead",
-      "tier_reasons": [
-        "material verification question(s): capacity"
-      ],
-      "venue_flags": [
-        "capacity_40_49",
-        "cost_unknown",
-        "screen_unknown",
-        "wifi_unknown",
-        "availability_unconfirmed",
-        "duration_unconfirmed",
-        "stale_evidence"
-      ],
-      "score": null,
-      "score_breakdown": null
-    },
-    {
-      "name": "Hong Kong Convention and Exhibition Centre — Meeting Rooms",
-      "city_slug": "hong-kong-hk",
-      "address": "1 Expo Drive, Wan Chai, Hong Kong",
-      "capacity_comfortable": 60,
-      "capacity_basis": "venue_claim",
-      "screen_status": "unknown",
-      "wifi_status": "unknown",
-      "catering_policy": "in_house_available",
-      "recording_suitability": "unknown",
-      "estimated_cost_usd": null,
-      "cost_basis": "unknown",
-      "cost_local_amount": null,
-      "cost_local_currency": null,
-      "hourly_rate_usd": null,
-      "estimated_hours": null,
-      "rate_estimate_note": null,
-      "hourly_rate_local": null,
-      "rate_currency": null,
-      "booking_url": "https://www.hkcec.com/en/venue-introduction",
-      "verification_question_kinds": [
-        "cost_unknown",
-        "capacity",
-        "screen",
-        "wifi",
-        "availability",
-        "event_window"
-      ],
-      "verification_questions": [
-        "Confirm the hire rate for a meeting room for a 50-person event (the official HKCEC page publishes room lists (S421-S430, S221-S230, N201-N212, N101-N112, Meeting Room 23 etc.) but no numeric prices in the fetched text).",
-        "Confirm the specific room capacity for 50 people (the fetched page lists room groups without per-room capacities).",
-        "Confirm whether projection/AV is included in the meeting-room hire.",
-        "Confirm WiFi availability in the meeting rooms.",
-        "Confirm availability on the chosen 2026 Saturday.",
-        "Confirm the bookable window on weekends (HKCEC is a convention centre; weekend availability is likely but unstated on the fetched page)."
-      ],
-      "source_url": "https://www.hkcec.com/en/venue-introduction",
-      "source_title": "Venue Introduction — HKCEC (official): meeting rooms S421-S430, S221-S230, N201-N212 and N101-N112 plus theatres, Convention Hall, Grand Hall, Bauhinia Room and Chancellor Room; catering, technical support and housekeeping services; 1 Expo Drive, Wan Chai",
-      "accessed_on": "2026-08-10",
-      "needs_human_verify": true,
-      "evidence": {
-        "observed_facts": "Official HKCEC venue-introduction page (fetched 2026-08-10, HTTP 200) lists meeting-room groups (S421-S430, S221-S230, N201-N212, N101-N112), Theatre 1 & 2, Convention Hall, Grand Hall, Bauhinia Room and Chancellor Room, and describes supporting services (catering, technical support, housekeeping, security) for exhibitions, conventions and entertainment.",
-        "inference": "HKCEC is Hong Kong's main convention centre in Wan Chai; the fetched page lists rooms but not per-room capacities or prices, so capacity/cost stay verification questions (lead); included for completeness as the flagship conference venue near FinTech Week.",
-        "geo": "https://www.hkcec.com/en/venue-introduction"
-      },
-      "latitude": 22.282,
-      "longitude": 114.173,
-      "cost_rate_unit": "unknown",
-      "opening_hours": null,
-      "closing_time": null,
-      "max_booking_hours": null,
-      "event_window_status": "unknown",
-      "event_window_evidence": null,
-      "venue_tier": "lead",
-      "tier_reasons": [
-        "material verification question(s): capacity"
-      ],
-      "venue_flags": [
-        "cost_unknown",
-        "screen_unknown",
-        "wifi_unknown",
-        "availability_unconfirmed",
-        "duration_unconfirmed",
-        "stale_evidence"
-      ],
-      "score": null,
-      "score_breakdown": null
-    },
-    {
-      "name": "theDesk — Event Space (Wan Chai / Sheung Wan / Kwun Tong / Hung Hom / Tsim Sha Tsui)",
-      "city_slug": "hong-kong-hk",
-      "address": "Registered address 29F, Dah Sing Financial Centre, 248 Queens Road East, Wan Chai; locations in Wan Chai, Sheung Wan, Kwun Tong, Hung Hom, Tsim Sha Tsui, Hong Kong",
-      "capacity_comfortable": 0,
-      "capacity_basis": "unknown",
       "screen_status": "unknown",
       "wifi_status": "unknown",
       "catering_policy": "unknown",
@@ -2098,36 +885,34 @@
       "rate_estimate_note": null,
       "hourly_rate_local": null,
       "rate_currency": null,
-      "booking_url": "https://www.thedesk.com.hk/",
+      "booking_url": "https://www.cyberport.hk/en/event-venue-space/",
       "verification_question_kinds": [
         "cost_unknown",
-        "capacity",
-        "screen",
-        "wifi",
         "availability",
         "event_window",
-        "location"
+        "capacity",
+        "screen",
+        "wifi"
       ],
       "verification_questions": [
-        "Confirm the hire rate for an event space for a 50-person event (the official theDesk homepage lists an 'Events Space' service across locations but publishes no capacity or price on the fetched pages).",
-        "Confirm which location and room size fits 50 people (locations include Wan Chai, Sheung Wan, Kwun Tong, Hung Hom, Tsim Sha Tsui).",
-        "Confirm whether a projector/screen is included (no AV statement on the fetched pages).",
-        "Confirm WiFi availability (no WiFi statement on the fetched pages).",
-        "Confirm availability on the chosen 2026 Saturday.",
-        "Confirm the bookable window on weekends.",
-        "Confirm the exact street address and entrance for the event-space location once selected (the registered address 29F, Dah Sing Financial Centre, 248 Queens Road East, Wan Chai is the corporate address, not necessarily the event space)."
+        "Confirm the CEC rental rate for a roughly 50-person Saturday event (cyberport.hk event-venue pages returned HTTP 403 to this research environment on 2026-08-21; enquiry required via the official site).",
+        "Confirm CEC availability on a weekend date in the focus window.",
+        "Confirm the bookable window on weekends and any staffed-hours limits.",
+        "Confirm the current theatre-style capacity of the CEC auditorium (a MICE venue guide fetched 2026-08-21 states 'up to 330 attendees for theatre-style seating or 132 guests for a classroom layout'; the official page could not be fetched directly).",
+        "Confirm whether the CEC provides projector/screen facilities for presentations.",
+        "Confirm WiFi coverage in the booked space."
       ],
-      "source_url": "https://www.thedesk.com.hk/",
-      "source_title": "theDesk | Join Our Community (official): Hong Kong coworking and events-space operator with locations in Wan Chai, Sheung Wan, Kwun Tong, Hung Hom and Tsim Sha Tsui; services include private offices, hot desks, meeting rooms and events space; registered address 29F, Dah Sing Financial Centre, 248 Queens Road East, Wan Chai",
-      "accessed_on": "2026-08-10",
+      "source_url": "https://hkmice-venue.weebly.com/le-meridien-cyberport.html",
+      "source_title": "Le Meridien Cyberport / Cyberport Convention & Exhibition Centre — Hong Kong MICE Event Venue Guide (third-party directory): CEC up to 330 theatre-style or 132 classroom; Address: 100 Cyberport Road, Pok Fu Lam, Hong Kong Island",
+      "accessed_on": "2026-08-21",
       "needs_human_verify": true,
       "evidence": {
-        "observed_facts": "Official theDesk homepage and services page (fetched 2026-08-10, HTTP 200) describe theDesk as a coworking community with locations in Wan Chai, Sheung Wan, Kwun Tong, Hung Hom and Tsim Sha Tsui, offering seating options, private office suites, meeting rooms and 'Events Space'; the pages publish no event-space capacity or numeric prices in the fetched text.",
-        "inference": "theDesk advertises events space but the fetched pages do not publish capacity or price, so this remains a lead with capacity/cost/screen/wifi questions; useful as a multi-location option for Joe to contact directly.",
-        "geo": "https://www.thedesk.com.hk/"
+        "observed_facts": "Third-party MICE venue guide (hkmice-venue.weebly.com/le-meridien-cyberport.html, fetched 2026-08-21, HTTP 200) states 'The meeting facilities at Cyberport Convention & Exhibition Centre can accommodate up to 330 attendees for theatre-style seating or 132 guests for a classroom layout' and lists the address as '100 Cyberport Road, Pok Fu Lam, Hong Kong Island'. The official Cyberport pages (cyberport.hk/en/event-venue-space/ and /en/facilities/conference_exhibition_centre/) surfaced in search results describing indoor/outdoor event venues but returned HTTP 403 (Cloudflare-blocked) to direct fetches on 2026-08-21, matching the 403 already recorded for Cyberport pages in city_input open_questions.",
+        "inference": "Cyberport was an explicitly requested candidate class (and appears in Joe's fresh hub evidence as Web3 Hub@Cyberport host), so the CEC is recorded despite the official-page block; all load-bearing numbers come from a third-party directory and the official pages were unreachable, so capacity, equipment, cost, and window all stay verification questions and the record is expected to score as a lead until Joe-side re-verification.",
+        "geo": "https://hkmice-venue.weebly.com/le-meridien-cyberport.html"
       },
-      "latitude": 22.277,
-      "longitude": 114.172,
+      "latitude": 22.2611,
+      "longitude": 114.13,
       "cost_rate_unit": "unknown",
       "opening_hours": null,
       "closing_time": null,
@@ -2136,14 +921,142 @@
       "event_window_evidence": null,
       "venue_tier": "lead",
       "tier_reasons": [
-        "material verification question(s): capacity, location",
-        "capacity_comfortable 0 below minimum 40"
+        "material verification question(s): capacity"
       ],
       "venue_flags": [
+        "oversized_capacity",
         "cost_unknown",
         "screen_unknown",
         "wifi_unknown",
         "availability_unconfirmed",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "score": null,
+      "score_breakdown": null
+    },
+    {
+      "name": "HKSTP — Charles K. Kao Auditorium (Golden Egg)",
+      "city_slug": "hong-kong-hk",
+      "address": "Hong Kong Science Park, Pak Shek Kok, Sha Tin, New Territories, Hong Kong",
+      "capacity_comfortable": 284,
+      "capacity_basis": "venue_claim",
+      "screen_status": "confirmed",
+      "wifi_status": "confirmed",
+      "catering_policy": "unknown",
+      "recording_suitability": "likely_good",
+      "estimated_cost_usd": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "booking_url": "https://www.hkstp.org/en/rental/hkstp-mice-venues",
+      "verification_question_kinds": [
+        "cost_unknown",
+        "availability",
+        "event_window",
+        "capacity",
+        "room_assignment"
+      ],
+      "verification_questions": [
+        "Confirm the MICE hire rate for the Charles K. Kao Auditorium for a roughly 50-person Saturday event (the official HKSTP MICE page links a PRICE LIST and Online Booking Form; no numeric rate is visible in the fetched page; contact mice@hkstp.org / +852 2639 8301).",
+        "Confirm Auditorium availability on a weekend date in the focus window.",
+        "Confirm the bookable window on weekends and any staffed-hours limits for external hirers.",
+        "Confirm the current theatre-style capacity of the Charles K. Kao Auditorium (the official HKSTP MICE page publishes no per-room numbers; the TTGmice directory table lists 'Charles K. Kao Auditorium & Pre-Function Hall' at 284 theatre / 284 sq m).",
+        "Confirm which configuration suits a 50-person talk-style event best (Auditorium vs smaller Meeting Rooms such as INNO2 Studio or Meeting Room 1) and whether a smaller room gives better fit and value."
+      ],
+      "source_url": "https://www.hkstp.org/en/rental/space/mice-venue/hong-kong-science-park-mice-venues",
+      "source_title": "Hong Kong Science Park MICE Venues — HKSTP (official): Charles K. Kao Auditorium ('Golden Egg'), fibre-optic and WiFi connectivity, high-resolution screens and projectors; PRICE LIST and Online Booking Form linked; contact +852 2639 8301 / mice@hkstp.org",
+      "accessed_on": "2026-08-21",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "Official HKSTP MICE page (hkstp.org/en/rental/space/mice-venue/hong-kong-science-park-mice-venues, fetched 2026-08-21, HTTP 200) states 'Charles K. Kao Auditorium, also known as the Golden Egg, is the iconic MICE venue of Hong Kong Science Park. Featuring fibre-optic and WiFi connectivity, high-resolution screens and projectors and other multimedia equipment...' and lists bookable rooms including GRAND HALL, CONFERENCE HALL 4-7, AMPHITHEATRE, INNO2 STUDIO and MEETING ROOM 1, with contact +852 2639 8301, mice@hkstp.org, a PRICE LIST link and an Online Booking Form. The page publishes no numeric prices and no per-room capacities. The TTGmice venue directory (planner.ttgmice.com/venue/hong-kong-science-park/, fetched 2026-08-21, HTTP 200) lists the address as 'Hong Kong Science Park, Sha Tin, New Territories', tel +852 2639 8301, and a capacity table: Grand Hall & Pre-Function Area 800 theatre, Charles K. Kao Auditorium & Pre-Function Hall 284 theatre (284 sq m), Conference Hall 4-7 240 theatre.",
+        "inference": "The auditorium is far larger than the 50-person target, so its value here is as a flagship anchor option rather than a size match; the only published capacity figure (284 theatre) comes from a third-party MICE directory, not HKSTP itself, so capacity stays a material verification question and the record is expected to score as a lead. Included because HKSTP was an explicitly requested candidate class in this re-research.",
+        "geo": "https://planner.ttgmice.com/venue/hong-kong-science-park/"
+      },
+      "latitude": 22.2836,
+      "longitude": 114.2118,
+      "cost_rate_unit": "unknown",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "venue_tier": "lead",
+      "tier_reasons": [
+        "material verification question(s): capacity"
+      ],
+      "venue_flags": [
+        "oversized_capacity",
+        "cost_unknown",
+        "availability_unconfirmed",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "score": null,
+      "score_breakdown": null
+    },
+    {
+      "name": "the Hive Wan Chai — 21F Indoor Space",
+      "city_slug": "hong-kong-hk",
+      "address": "21/F The Phoenix, 23 Luard Road, Wan Chai, Hong Kong",
+      "capacity_comfortable": 40,
+      "capacity_basis": "seated",
+      "screen_status": "confirmed",
+      "wifi_status": "confirmed",
+      "catering_policy": "in_house_available",
+      "recording_suitability": "likely_good",
+      "estimated_cost_usd": 2549.28,
+      "cost_basis": "estimated_from_rate",
+      "cost_local_amount": 20000,
+      "cost_local_currency": "HKD",
+      "hourly_rate_usd": 318.65936143,
+      "estimated_hours": 8,
+      "rate_estimate_note": "Official the Hive Wan Chai events-venue-hire page (fetched 2026-08-21, HTTP 200) publishes 'Rate: HK$2500 per hour' for the 21F Indoor Space; 8-hour estimate = 2500 x 8 = HK$20,000 converted at ECB 2026-08-21 rate USD 1 = HKD 7.845348 = 2,549.28 USD. Complimentary coffee and tea included; 'Summer-Exclusive Packages Available' (enquire for current offers).",
+      "hourly_rate_local": 2500,
+      "rate_currency": "HKD",
+      "booking_url": "https://thehive.com.hk/events-venue-hire/",
+      "verification_question_kinds": [
+        "final_quote",
+        "availability",
+        "event_window",
+        "capacity"
+      ],
+      "verification_questions": [
+        "Confirm the exact all-in rate for the 21F Indoor Space (published HK$2,500/hr; 8-hour estimate 2,549.28 USD at ECB 2026-08-21 rate).",
+        "Confirm availability on a weekend date in the focus window.",
+        "Confirm the bookable window and any weekend staffed-hours limits.",
+        "Confirm that the 40-seated capacity can be augmented with standing overflow to accommodate 50 attendees in a talk-style format."
+      ],
+      "source_url": "https://thehive.com.hk/events-venue-hire/",
+      "source_title": "Events Venue Hire — the Hive Wan Chai (official): 21F Indoor Space, max 40 seated or 60 standing, HK$2,500/hr, high-speed WiFi, projector and flip chart, sound system, complimentary coffee and tea; 21/F The Phoenix, 23 Luard Road, Wan Chai",
+      "accessed_on": "2026-08-21",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "Official the Hive Wan Chai events-venue-hire page (fetched 2026-08-21, HTTP 200) states the 21F Indoor Space is 'suitable for Large Group Meetings, Workshops, Presentations, Screenings, Events, Conferences' with 'High Speed WiFi, Max Capacity 40 seated or 60 standing, Sound System (Microphone & Speaker), Complimentary Coffee & Tea, Projector & Flip Chart'. Rate: HK$2,500 per hour. The Hive Wan Chai is at 21/F The Phoenix, 23 Luard Road, Wan Chai. 'Summer-Exclusive Packages Available' per the page.",
+        "inference": "8-hour estimate at the documented ECB 2026-08-21 planning rate is HK$20,000 = 2,549.28 USD, within the USD 5,000 soft budget; seated capacity 40 is below the 50 target but standing capacity 60 exceeds it; screen confirmed (projector and flip chart); WiFi confirmed (high speed); complimentary coffee and tea adds catering value.",
+        "geo": "https://thehive.com.hk/events-venue-hire/"
+      },
+      "latitude": 22.279,
+      "longitude": 114.1748,
+      "cost_rate_unit": "hour",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "venue_tier": "lead",
+      "tier_reasons": [
+        "material verification question(s): capacity"
+      ],
+      "venue_flags": [
+        "capacity_40_49",
+        "availability_unconfirmed",
+        "final_quote_required",
         "duration_unconfirmed",
         "stale_evidence"
       ],
