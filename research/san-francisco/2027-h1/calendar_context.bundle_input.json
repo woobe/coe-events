@@ -1,0 +1,51 @@
+{
+  "host_jurisdiction_id": "US-CA:sfusd",
+  "host_holidays": [],
+  "host_coverage": [],
+  "adjacent_events": [
+    {
+      "event_name": "Data + AI Summit 2027 (Databricks)",
+      "city_slug": "san-francisco",
+      "start_date": "2027-06-21",
+      "end_date": "2027-06-24",
+      "kind": "related",
+      "relevance": "ai",
+      "conflict_severity": "medium",
+      "opportunity_kind": "ai",
+      "status": "confirmed",
+      "source_url": "https://www.databricks.com/dataaisummit",
+      "source_title": "Data + AI Summit | Databricks | June 21-24, 2027 SAN FRANCISCO",
+      "accessed_on": "2026-11-20",
+      "needs_human_verify": true,
+      "verification_questions": [
+        "Confirm the 2027-06-21..24 dates and that Summit programming runs through Thursday 2027-06-24, leaving the following weekend as a possible side-event slot."
+      ],
+      "evidence": {
+        "observed_facts": "Official Databricks page (databricks.com/dataaisummit, rendered 2026-11-20) states 'June 21-24, 2027 / San Francisco + Virtual' and describes the event as 'The premier event for the global data, analytics and AI community'. No rail field is present because the event is in the same city as the host.",
+        "inference": "Confirmed same-city AI/data conference that finishes on a Thursday, leaving a weekend inside the same Mon-Sun week; a plausible side-event window."
+      }
+    },
+    {
+      "event_name": "Funding the Commons Forum 2027",
+      "city_slug": "san-francisco",
+      "start_date": "2027-03-13",
+      "end_date": "2027-03-14",
+      "kind": "related",
+      "relevance": "ai",
+      "conflict_severity": "medium",
+      "opportunity_kind": "ai",
+      "status": "confirmed",
+      "source_url": "https://fundingthecommons.io/events/forum-sf-2027/",
+      "source_title": "Forum San Francisco, 13–14 March 2027 · Funding the Commons",
+      "accessed_on": "2026-11-20",
+      "needs_human_verify": true,
+      "verification_questions": [
+        "Confirm the 2027-03-13..14 dates and the venue (not named on the organiser page), and whether the weekend programme still leaves room for a separate side event or cross-promotion."
+      ],
+      "evidence": {
+        "observed_facts": "Official Funding the Commons forum page (fundingthecommons.io/events/forum-sf-2027/, fetched 2026-11-20) has the title 'Forum San Francisco, 13–14 March 2027 · Funding the Commons', states '13–14 March 2027, San Francisco', describes two days of keynotes, debates and workshops with '200 founders, researchers, funders, and policymakers', and offers 'Get your tickets'. The venue is not named on the page. No rail field is present because the event is in the same city as the host.",
+        "inference": "Same-city forum occupying the second weekend of March, so it is simultaneously a same-weekend competitor and the closest audience match in the window; status is confirmed on the organiser page's live ticket call, while venue and final capacity remain unconfirmed."
+      }
+    }
+  ]
+}

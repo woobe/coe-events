@@ -1,0 +1,33 @@
+{
+  "scanner_version": "1.0.0",
+  "rules_version": "v1",
+  "invocation": {
+    "project_root": "/home/joe/repo_dev/coe-events",
+    "quarter": "2027-h1",
+    "city": "san-francisco",
+    "generated_at": "2026-11-20",
+    "report": "/home/joe/repo_dev/coe-events/research/san-francisco/2027-h1/release_gate_reports/.bundle-1/scan_event_output.json",
+    "surface": "both"
+  },
+  "concrete_bundle": "research/san-francisco/2027-h1/.bundle-1",
+  "event_plan_hash": "dd292f6b449e41bb76b986a48bf97950937c3b2c6a3c112be9bd07986d824cbd",
+  "temporary_render_hash": "805535edddca3610b87d375b7a709abfee935944e2d34bd7906fc28c9153f6ad",
+  "canonical_summary": {
+    "path": "/home/joe/repo_dev/coe-events/summary/2027-h1-san-francisco-summary.html",
+    "before": {
+      "state": "absent",
+      "sha256": null
+    },
+    "after": {
+      "state": "absent",
+      "sha256": null
+    },
+    "unchanged": true
+  },
+  "surfaces_requested": [
+    "html",
+    "source"
+  ],
+  "finding_count": 0,
+  "findings": []
+}

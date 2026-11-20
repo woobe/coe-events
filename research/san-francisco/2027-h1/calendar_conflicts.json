@@ -1,0 +1,105 @@
+[
+  {
+    "event_name": "Data + AI Summit 2027 (Databricks)",
+    "city_slug": "san-francisco",
+    "start_date": "2027-06-21",
+    "end_date": "2027-06-24",
+    "kind": "related",
+    "relevance": "ai",
+    "conflict_severity": "medium",
+    "source_url": "https://www.databricks.com/dataaisummit",
+    "source_title": "Data + AI Summit | Databricks | June 21-24, 2027 SAN FRANCISCO",
+    "accessed_on": "2026-11-20",
+    "needs_human_verify": true,
+    "verification_questions": [
+      "Confirm the 2027-06-21..24 dates and the Moscone venue allocation as the event approaches.",
+      "Assess audience overlap with a Decentralized AI Day, and whether a Saturday 2027-06-26 side event would reach Summit attendees still in the city."
+    ],
+    "evidence": {
+      "observed_facts": "Official Databricks page (databricks.com/dataaisummit, rendered 2026-11-20) states 'June 21-24, 2027 / San Francisco + Virtual' in the page title and repeatedly in the hero: 'JUNE 21-24, 2027 / SAN FRANCISCO + VIRTUAL'. The page describes it as 'The premier event for the global data, analytics and AI community. Summit brings together data practitioners, leaders and visionaries from more than 160 countries'. The page itself does not name the venue; third-party listings place the 2027 edition at Moscone North, West and South.",
+      "inference": "Same city, same week as candidate Saturday 2027-06-26, and a data/AI practitioner crowd that overlaps a Decentralized AI Day audience; a plausible side-event window and also a competitor for venue and hotel capacity that week."
+    }
+  },
+  {
+    "event_name": "AI Engineer World's Fair 2027",
+    "city_slug": "san-francisco",
+    "start_date": "2027-06-29",
+    "end_date": "2027-07-01",
+    "kind": "related",
+    "relevance": "ai",
+    "conflict_severity": "medium",
+    "source_url": "https://ai.engineer/worldsfair/2027",
+    "source_title": "AI Engineer World's Fair 2027: June 29 - July 1, San Francisco",
+    "accessed_on": "2026-11-20",
+    "needs_human_verify": true,
+    "verification_questions": [
+      "Confirm the 2027-06-29..07-01 dates and Moscone West booking as the programme is announced.",
+      "Note that the event starts inside the 2027 H1 window but ends on 2027-07-01, outside it; confirm whether any H1-side programming (workshops, side events) lands on or before 2027-06-30."
+    ],
+    "evidence": {
+      "observed_facts": "Official AI Engineer page (ai.engineer/worldsfair/2027, rendered 2026-11-20): 'JUNE 29 - JULY 1, 2027 - MOSCONE WEST, SAN FRANCISCO'; 'After welcoming 7,500 attendees in 2026, we're targeting 10,000 AI engineers, founders and technical leaders in 2027'; 'Join us at Moscone West June 29-July 1 for technical tracks, workshops, an AI tools expo'. The page also states 'The 2027 side-event calendar will follow.'",
+      "inference": "The single most audience-aligned large event of the period for a builder-focused AI day, but it starts three days after the last in-window Saturday (2027-06-26) and runs into July, so it is context rather than an adjacent-week opportunity."
+    }
+  },
+  {
+    "event_name": "GDC Festival of Gaming 2027 (Game Developers Conference)",
+    "city_slug": "san-francisco",
+    "start_date": "2027-03-01",
+    "end_date": "2027-03-04",
+    "kind": "major_other",
+    "relevance": "other",
+    "conflict_severity": "none",
+    "source_url": "https://moscone.com/events/gdc-festival-gaming-2027",
+    "source_title": "GDC Festival of Gaming 2027 - The Moscone Center",
+    "accessed_on": "2026-11-20",
+    "needs_human_verify": true,
+    "verification_questions": [
+      "Confirm the 2027-03-01..04 dates and Moscone hall allocation, and assess hotel, venue and traffic load on the city during the week that contains candidate Saturday 2027-03-06."
+    ],
+    "evidence": {
+      "observed_facts": "The Moscone Center's own event page (moscone.com/events/gdc-festival-gaming-2027, rendered 2026-11-20) states 'IN-PERSON | March 1-4, 2027 | Moscone Center | San Francisco, CA, USA' and describes it as 'the premier gathering for the global business of games ... Hosted at Moscone Center in San Francisco'. It is a large multi-hall convention, so it drives hotel and venue demand, downtown crowd pressure and traffic in the SoMa/Moscone district during that week. A separate listing (awn.com) gives March 1-4, 2027 while one aggregator gives March 1-5; the Moscone page is treated as authoritative.",
+      "inference": "Not the same audience as a Decentralized AI Day, but its Moscone footprint in the same week as candidate Saturday 2027-03-06 affects venue availability and accommodation prices."
+    }
+  },
+  {
+    "event_name": "RSA Conference 2027",
+    "city_slug": "san-francisco",
+    "start_date": "2027-04-05",
+    "end_date": "2027-04-08",
+    "kind": "major_other",
+    "relevance": "other",
+    "conflict_severity": "none",
+    "source_url": "https://www.moscone.com/events/rsa-conference-2027",
+    "source_title": "RSA Conference 2027 - The Moscone Center",
+    "accessed_on": "2026-11-20",
+    "needs_human_verify": true,
+    "verification_questions": [
+      "Confirm the 2027-04-05..08 dates and Moscone hall allocation, and assess hotel, venue and traffic load on the city during the week that contains candidate Saturday 2027-04-10."
+    ],
+    "evidence": {
+      "observed_facts": "The Moscone Center's own event page (moscone.com/events/rsa-conference-2027, rendered 2026-11-20) states 'IN-PERSON | April 5-8, 2027 | Moscone Center | San Francisco, CA, USA' and describes 'RSA 2027 Conference returns to San Francisco for four days ... Hosted at Moscone Center, this globally recognized conference brings together security professionals, technology leaders, researchers, and innovators from around the world'. A long-running, very large Moscone convention: hotel demand, downtown crowd pressure and traffic in SoMa rise sharply that week. Third-party listings give an attendance figure above 40,000, which is not stated on the Moscone page and is therefore not recorded here.",
+      "inference": "Cybersecurity rather than Decentralized AI, so it is a logistics record only; it nonetheless competes for hotel rooms and event space in the week of candidate Saturday 2027-04-10."
+    }
+  },
+  {
+    "event_name": "Funding the Commons Forum 2027",
+    "city_slug": "san-francisco",
+    "start_date": "2027-03-13",
+    "end_date": "2027-03-14",
+    "kind": "related",
+    "relevance": "ai",
+    "conflict_severity": "medium",
+    "source_url": "https://fundingthecommons.io/events/forum-sf-2027/",
+    "source_title": "Forum San Francisco, 13–14 March 2027 · Funding the Commons",
+    "accessed_on": "2026-11-20",
+    "needs_human_verify": true,
+    "verification_questions": [
+      "Confirm the 2027-03-13..14 dates and obtain the venue, which the organiser's forum page does not name; assess whether the Saturday programme leaves room for a separate Decentralized AI Day side event or cross-promotion.",
+      "Confirm ticket and registration status and the expected attendance: the page states 200 founders, researchers, funders and policymakers."
+    ],
+    "evidence": {
+      "observed_facts": "Official Funding the Commons forum page (fundingthecommons.io/events/forum-sf-2027/, fetched 2026-11-20) has the title 'Forum San Francisco, 13–14 March 2027 · Funding the Commons' and states in the hero '13–14 March 2027, San Francisco'. The page describes 'Two days of keynotes, debates, hands-on workshops, and live funding experiments with 200 founders, researchers, funders, and policymakers' and offers 'Get your tickets' and 'Partner with us' calls with a countdown. The page does not name the venue.",
+      "inference": "Same city, and it occupies candidate Saturday 2027-03-13 itself plus Sunday 2027-03-14, so it is both a same-day competitor for audience and venue capacity and the most directly audience-aligned co-location or cross-promotion opportunity in the H1 window. The forum's AI-and-public-goods framing also touches the DeAI and Web3 flank, but the page's primary subject is AI."
+    }
+  }
+]

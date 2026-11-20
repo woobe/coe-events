@@ -1,0 +1,35 @@
+{
+  "city_slug": "san-francisco",
+  "city_name": "San Francisco",
+  "country": "United States",
+  "target_date": "2027-03-06",
+  "date_window": "2027-01-01 through 2027-06-30",
+  "target_attendance": 50,
+  "currency": "USD",
+  "currency_assumptions": [
+    "All amounts are published in USD by the venues themselves; no currency conversion was required anywhere in this package, so the rate basis is 'no conversion applied (source currency USD)'.",
+    "Where a venue publishes an hourly rate and the package records an eight-hour figure, the figure is the published rate multiplied by the assessed 8-hour duration and is described as such in evidence.observed_facts; it is not a quoted package price.",
+    "San Francisco venue prices are commonly tiered (package bands, weekday vs weekend, member vs non-profit) or quote-only; each venue records the exact tier used and what that tier excludes (staffing, AV, cleaning, security, deposit, insurance).",
+    "Soft budget for scoring is USD 5,000 per the plan-event default; cost is never a tier gate."
+  ],
+  "workflow_phase": "venue",
+  "budget_usd": 5000.0,
+  "event_duration_hours": 8,
+  "decision_note": "Run A evidence package only. target_date 2027-03-06 is a neutral technical placeholder required by score/bundle integrity; it is not a recommendation.",
+  "research_completed_on": "2026-11-20",
+  "open_questions": [
+    "Region 'North America' and timezone 'America/Los_Angeles' are recorded in venue_discovery_log.md and the registry stub (plan-event/references/cities.json) rather than in this file, because validate_city_input uses a closed key set that rejects unknown keys; adding them here would fail assembly.",
+    "Research window is 2027-01-01 through 2027-06-30 (one combined Q1+Q2 period). target_date 2027-03-06 is a technical placeholder only, never a recommendation; Joe alone decides the date.",
+    "All 26 Saturdays of the window were enumerated as operational candidate dates. They are not a recommendation, an elimination set, or a date selection.",
+    "Holiday sweep against the installed plan-event registry (2027 US federal OPM schedule plus California Government Code 6700): three candidate Saturdays land on a public holiday. 2027-02-06 is California Lunar New Year (actual); 2027-04-24 is California Genocide Remembrance Day (actual); 2027-06-19 is California Juneteenth (actual) and the federal Juneteenth observance falls on Friday 2027-06-18. Long-weekend Saturdays: 2027-01-02 (New Year's Day Friday 2027-01-01), 2027-02-13 (Lincoln Day Friday 2027-02-12 and Third Monday in February on 2027-02-15), 2027-05-29 (Memorial Day Monday 2027-05-31).",
+    "SFUSD Spring Recess 2027-03-26 through 2027-04-02 (SFUSD 2026-27 SY District-Wide Calendar, final 2026-07-27) empties the city of school-age families: candidate Saturday 2027-03-27 sits inside the break and 2027-04-03 is the weekend immediately before school resumes on Monday 2027-04-05.",
+    "Calendar research on 2026-11-20 found five relevant 2027 H1 events inside San Francisco (GDC Festival of Gaming 2027-03-01..04, Funding the Commons Forum 2027-03-13..14, RSA Conference 2027-04-05..08, Data + AI Summit 2027-06-21..24, AI Engineer World's Fair 2027-06-29..07-01) recorded as calendar rows, and one major metro AI event outside the city (NVIDIA GTC 2027-03-15..18, San Jose) that could not be recorded because the calendar row schema keys every row to the host city and the adjacent-event `rail` field needs a published main-station itinerary; it is documented in evidence_summary.md instead.",
+    "Web3 coverage is uneven, not absent. No general-purpose San Francisco Ethereum or crypto social meetup with 2026 city activity was found: SF Ethereum's last listed event is 2022-12-13 and CryptoMondays SF's last listed date is 2025-09-22 (both dormant), and Blockchain Global Group's last listed date is 2025-12-16. The Web3 flank is instead carried by active records with past-dated 2026 San Francisco facts: SF Bitcoin Devs (2026-09-03 at Presidio Bitcoin, 38 Keyes Ave; 2026-10-01 Seminar 74 at DG717, 717 Market St), Funding the Commons (ai+web3; 2026-03-14/15 SF forum and hackathon at Frontier Tower) and the Decentralized AI Builders Meetup (2026-03-04 at AWS Builder Loft, 525 Market St). Solana Breakpoint 2027 (2027-09-08..10, Pier 48) is the confirmed Web3 anchor for the city but falls outside this H1 window.",
+    "Several strong venue pages could not be read on 2026-11-20: Mission Bay Conference Center at UCSF (Cloudflare challenge on campuslifeserviceshome.ucsf.edu), Tides Converge (Cloudflare challenge), The Midway (bot check), Noisebridge wiki (Anubis proof-of-work), Mission Cultural Center for Latino Arts (missionculturalcenter.org reports an expired website), Splacer (empty response), and Peerspace live listings (Cloudflare challenge). Peerspace facts were read through a Wayback Machine snapshot dated 2026-04-06.",
+    "No venue in this package has confirmed 2027 Saturday availability or a written quote; every venue carries needs_human_verify true."
+  ],
+  "recommendation": {
+    "selected_venue": null,
+    "rationale": null
+  }
+}
