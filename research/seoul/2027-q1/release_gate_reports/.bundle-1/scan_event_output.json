@@ -1,0 +1,33 @@
+{
+  "scanner_version": "1.0.0",
+  "rules_version": "v1",
+  "invocation": {
+    "project_root": "/home/joe/repo_dev/coe-events",
+    "quarter": "2027-q1",
+    "city": "seoul",
+    "generated_at": "2026-11-20",
+    "report": "/home/joe/repo_dev/coe-events/research/seoul/2027-q1/release_gate_reports/.bundle-1/scan_event_output.json",
+    "surface": "both"
+  },
+  "concrete_bundle": "research/seoul/2027-q1/.bundle-1",
+  "event_plan_hash": "59ca6e51e98c1f1abfe232c8db589d303a0be98c055a6aac14eb14a36ac5929d",
+  "temporary_render_hash": "7c0f8a1a55708a828e2a2f7060a46d4ce07861353d6d9f6527700aaa29cdf325",
+  "canonical_summary": {
+    "path": "/home/joe/repo_dev/coe-events/summary/2027-q1-seoul-summary.html",
+    "before": {
+      "state": "present",
+      "sha256": "96db85a1df6a031254966471a48d13554e33c0f914030f41105b8b8e9941f056"
+    },
+    "after": {
+      "state": "present",
+      "sha256": "96db85a1df6a031254966471a48d13554e33c0f914030f41105b8b8e9941f056"
+    },
+    "unchanged": true
+  },
+  "surfaces_requested": [
+    "html",
+    "source"
+  ],
+  "finding_count": 0,
+  "findings": []
+}

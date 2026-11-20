@@ -1,0 +1,2892 @@
+{
+  "budget_usd": 5000.0,
+  "calendar_conflicts": [
+    {
+      "accessed_on": "2026-11-20",
+      "city_slug": "seoul-kr",
+      "conflict_severity": "none",
+      "end_date": "2027-03-05",
+      "event_name": "AW 2027 (Automation World / 스마트공장·자동화 전시회)",
+      "evidence": {
+        "inference": "An industrial automation and manufacturing-AI trade show, not an AI-builder audience; material to logistics only because it fills every COEX hall and draws ~80,000 visitors in the same week as the following Saturday.",
+        "observed_facts": "Official AW 2027 page (automationworld.co.kr/overview-exhibition, fetched 2026-11-20): '행 사 명 AW 2027 ... 기 간 2027. 3. 3(수) – 3. 5(금), 3일간 ... 장 소 코엑스 전관(A,B,C,D홀), 로비, THE PLATZ, 그랜드볼룸 ... 예 상 규 모 500개 업체 / 2,300부스 / 80,000명 참관'. Programme includes 'AI 팩토리 특별관' and 'AI 자율제조 혁신 컨퍼런스'."
+      },
+      "kind": "major_other",
+      "needs_human_verify": true,
+      "relevance": "other",
+      "source_title": "전시회 개요 — AW 2027",
+      "source_url": "https://www.automationworld.co.kr/overview-exhibition?hl=ko",
+      "start_date": "2027-03-03",
+      "verification_questions": [
+        "Confirm the COEX hall footprint and expected 80,000 visitors for 2027-03-03..05, and assess hotel/transport demand and venue competition for a Seoul event on the following weekend."
+      ]
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "city_slug": "seoul-kr",
+      "conflict_severity": "none",
+      "end_date": null,
+      "event_name": "서울마라톤 2027 (제97회 동아마라톤 겸 서울마라톤)",
+      "evidence": {
+        "inference": "A city-centre logistics event on a March Sunday; it does not compete for the AI audience but affects transport, hotel availability and central-Seoul venue access on the surrounding days.",
+        "observed_facts": "동아일보 article (donga.com/news/article/all/20261120/135057511/2, published 2026-11-20, co-organiser 동아일보): '제97회 서울마라톤 겸 동아마라톤은 2027년 3월 21일 열린다.' The article also states the full course starts at 광화문광장 and the 10km at 잠실종합운동장, with 2025 economic impact estimated at USD 35 million. The race closes central Seoul roads on race morning and draws large crowds and hotel demand."
+      },
+      "kind": "major_other",
+      "needs_human_verify": true,
+      "relevance": "other",
+      "source_title": "서울마라톤, 8년째 세계 최고 '플래티넘' 인증 (동아일보, 2026-11-20)",
+      "source_url": "https://www.donga.com/news/article/all/20261120/135057511/2",
+      "start_date": "2027-03-21",
+      "verification_questions": [
+        "Confirm the race date on the organiser site (seoul-marathon.com) and assess logistics impact on the city centre: road closures, route access, hotel demand, transport disruption and crowding for a Seoul event on a nearby weekend."
+      ]
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "city_slug": "seoul-kr",
+      "conflict_severity": "medium",
+      "end_date": "2027-04-16",
+      "event_name": "AI EXPO KOREA 2027 (국제인공지능대전)",
+      "evidence": {
+        "inference": "Same AI topic and a Seoul AI-practitioner audience one week before WIS 2027; a Saturday between the two shows would sit inside a dense AI fortnight.",
+        "observed_facts": "Official AI EXPO KOREA site, page '전시회 개요' (aiexpo.co.kr/전시회-개요, rendered 2026-11-20): 'AI EXPO KOREA 2027 ... 기 간 | 2027년 4월 14일(수) ~ 16일(금), 3일간 ... 장 소 | 서울 COEX 1층 Hall A ... 참관규모 | 50,000명 (목표) ... 주최/주관 | (사)한국인공지능협회, ㈜서울메쎄, 인공지능신문'. 참관안내 page adds Business Day 4월 14일(수)~15일(목), Public Day 4월 16일(금). B2B trade show: Business Day 04-14..15, Public Day 04-16 (students)."
+      },
+      "kind": "related",
+      "needs_human_verify": true,
+      "relevance": "ai",
+      "source_title": "전시회 개요 — AI EXPO KOREA 2027",
+      "source_url": "https://aiexpo.co.kr/%EC%A0%84%EC%8B%9C%ED%9A%8C-%EA%B0%9C%EC%9A%94",
+      "start_date": "2027-04-14",
+      "verification_questions": [
+        "Confirm the dates and Public Day audience on the organiser site nearer the show, and assess whether a Saturday in the same week gains or loses from the exhibition crowd."
+      ]
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "city_slug": "seoul-kr",
+      "conflict_severity": "medium",
+      "end_date": "2027-04-23",
+      "event_name": "월드IT쇼 2027 (World IT Show 2027, WIS)",
+      "evidence": {
+        "inference": "Same topic (AI/ICT) and a large Seoul tech audience, in the same venue cluster as several candidate venues; a plausible side-event window rather than a conflict.",
+        "observed_facts": "COEX BUSINESS exhibition page '월드IT쇼 (WIS)' (business.coex.co.kr, fetched 2026-11-20) lists '2027.04.21 - 2027.04.23 Hall A, Hall B1, C', 주최 과학기술정보통신부, 주관 코엑스, 한국무역협회, 한국경제신문, 전자신문, 케이훼어스, 한국정보통신진흥협회. The same dates are reported by 한국경제 (2026-09-16): '2027 월드IT쇼(WIS)'가 내년 4월 21일부터 23일까지 사흘간 서울 코엑스에서 열립니다'. The event is held at COEX, which is also a venue candidate in this package."
+      },
+      "kind": "related",
+      "needs_human_verify": true,
+      "relevance": "ai",
+      "source_title": "월드IT쇼 (WIS) | 코엑스 BUSINESS",
+      "source_url": "https://business.coex.co.kr/post-exhibitions/%EC%9B%94%EB%93%9Cit%EC%87%BCwis/",
+      "start_date": "2027-04-21",
+      "verification_questions": [
+        "Confirm the published dates and hall allocation on the organiser's own site before the dates are used for any planning, and assess audience overlap with a Seoul Decentralized AI Day.",
+        "Assess whether a side event or co-located session during the show would reach the same AI/ICT builder audience, or whether the show mainly draws enterprise buyers."
+      ]
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "city_slug": "seoul-kr",
+      "conflict_severity": "low",
+      "end_date": "2027-04-30",
+      "event_name": "서울메타위크 2027 (Seoul Meta Week 2027)",
+      "evidence": {
+        "inference": "AI business conference in the same COEX cluster; relevant audience and competing venue/hotel demand on the last two working days of April 2027.",
+        "observed_facts": "Official Seoul Meta Week site (seoulmetaweek.com/ko, fetched 2026-11-20): '2027. 04. 29 - 30 Coex, Grand Ballroom'; '서울메타위크(Seoul Meta Week)는 AI 시대의 새로운 전략과 실행 방향을 함께 논의하는 AI · 테크 비즈니스 컨퍼런스 브랜드 입니다. 2021년 시작해 2027년 7회째를 맞는 서울메타위크는 AI를 메인 주제로 ...'. Host/co-organiser line: TV조선, 크리스앤파트너."
+      },
+      "kind": "related",
+      "needs_human_verify": true,
+      "relevance": "ai",
+      "source_title": "서울메타위크 2027 | 대한민국을 대표하는 AI 컨퍼런스",
+      "source_url": "http://seoulmetaweek.com/ko",
+      "start_date": "2027-04-29",
+      "verification_questions": [
+        "Confirm the 2027-04-29..30 dates and COEX Grand Ballroom booking, and whether the programme accepts community side sessions."
+      ]
+    }
+  ],
+  "calendar_context": {
+    "adjacent_events": [
+      {
+        "accessed_on": "2026-11-20",
+        "city_slug": "seoul-kr",
+        "conflict_severity": "medium",
+        "end_date": "2027-04-23",
+        "event_name": "월드IT쇼 2027 (World IT Show 2027, WIS)",
+        "evidence": {
+          "inference": "Korea's largest AI/ICT exhibition, in the same venue cluster as several venue candidates; a plausible side-event window.",
+          "observed_facts": "COEX BUSINESS exhibition page '월드IT쇼 (WIS)' (business.coex.co.kr, fetched 2026-11-20) lists '2027.04.21 - 2027.04.23 Hall A, Hall B1, C', 주최 과학기술정보통신부, 주관 코엑스, 한국무역협회, 한국경제신문, 전자신문, 케이훼어스, 한국정보통신진흥협회. The same dates are reported by 한국경제 (2026-09-16): '2027 월드IT쇼(WIS)'가 내년 4월 21일부터 23일까지 사흘간 서울 코엑스에서 열립니다'. No rail field is present because the event is in the same city (Seoul)."
+        },
+        "kind": "related",
+        "needs_human_verify": true,
+        "opportunity_kind": "ai",
+        "relevance": "ai",
+        "source_title": "월드IT쇼 (WIS) | 코엑스 BUSINESS",
+        "source_url": "https://business.coex.co.kr/post-exhibitions/%EC%9B%94%EB%93%9Cit%EC%87%BCwis/",
+        "start_date": "2027-04-21",
+        "status": "confirmed",
+        "verification_questions": [
+          "Confirm the dates remain firm on the organiser's own site as the show approaches."
+        ]
+      },
+      {
+        "accessed_on": "2026-11-20",
+        "city_slug": "seoul-kr",
+        "conflict_severity": "medium",
+        "end_date": "2027-04-16",
+        "event_name": "AI EXPO KOREA 2027 (국제인공지능대전)",
+        "evidence": {
+          "inference": "B2B AI exhibition targeting solution buyers and practitioners; same AI topic and a Seoul practitioner crowd, so a Saturday in the same week sits next to a large AI audience.",
+          "observed_facts": "Official AI EXPO KOREA site, page '전시회 개요' (aiexpo.co.kr/전시회-개요, rendered 2026-11-20): 'AI EXPO KOREA 2027 ... 기 간 | 2027년 4월 14일(수) ~ 16일(금), 3일간 ... 장 소 | 서울 COEX 1층 Hall A ... 참관규모 | 50,000명 (목표) ... 주최/주관 | (사)한국인공지능협회, ㈜서울메쎄, 인공지능신문'. 참관안내 page adds Business Day 4월 14일(수)~15일(목), Public Day 4월 16일(금). No rail field: same city."
+        },
+        "kind": "related",
+        "needs_human_verify": true,
+        "opportunity_kind": "ai",
+        "relevance": "ai",
+        "source_title": "전시회 개요 — AI EXPO KOREA 2027",
+        "source_url": "https://aiexpo.co.kr/%EC%A0%84%EC%8B%9C%ED%9A%8C-%EA%B0%9C%EC%9A%94",
+        "start_date": "2027-04-14",
+        "status": "confirmed",
+        "verification_questions": [
+          "Confirm the 2027-04-14..16 dates and Hall A allocation on the organiser site nearer the show, and confirm the Public Day (2027-04-16) audience profile."
+        ]
+      },
+      {
+        "accessed_on": "2026-11-20",
+        "city_slug": "seoul-kr",
+        "conflict_severity": "low",
+        "end_date": "2027-04-30",
+        "event_name": "서울메타위크 2027 (Seoul Meta Week 2027)",
+        "evidence": {
+          "inference": "An AI-focused business conference at COEX two days after WIS closes; same topic, partly overlapping practitioner audience, and it competes for COEX-area venue and hotel capacity.",
+          "observed_facts": "Official Seoul Meta Week site (seoulmetaweek.com/ko, fetched 2026-11-20): '2027. 04. 29 - 30 Coex, Grand Ballroom'; '서울메타위크(Seoul Meta Week)는 AI 시대의 새로운 전략과 실행 방향을 함께 논의하는 AI · 테크 비즈니스 컨퍼런스 브랜드 입니다. 2021년 시작해 2027년 7회째를 맞는 서울메타위크는 AI를 메인 주제로 ...'. Host/co-organiser line: TV조선, 크리스앤파트너. No rail field: same city."
+        },
+        "kind": "related",
+        "needs_human_verify": true,
+        "opportunity_kind": "ai",
+        "relevance": "ai",
+        "source_title": "서울메타위크 2027 | 대한민국을 대표하는 AI 컨퍼런스",
+        "source_url": "http://seoulmetaweek.com/ko",
+        "start_date": "2027-04-29",
+        "status": "confirmed",
+        "verification_questions": [
+          "Confirm the 2027-04-29..30 dates, the COEX Grand Ballroom booking and whether the 2027 programme is open to a community side session."
+        ]
+      }
+    ],
+    "coverage": [
+      {
+        "accessed_on": "2026-11-20",
+        "end_date": "2027-06-28",
+        "evidence": {
+          "observed_facts": "Checked every month of the 2026-2027 edition from January 2027 through the June 28 last day; the multi-day closures are Midwinter Recess and Spring Recess, recorded as holiday rows. Single-day closures (18 January, 9 March, 26 March, 17 May, 31 May) and Regents or clerical days do not qualify as breaks. The 2027-2028 edition is not published on the NYCPS calendar index, so nothing after 28 June 2027 is attested."
+        },
+        "jurisdiction_id": "US-NY:nycps",
+        "kind": "school_holiday_coverage",
+        "needs_human_verify": false,
+        "source_edition": "2026-2027 School Year Calendar (NYCPS)",
+        "source_locator": "Calendar table, complete January 2027 through June 2027 listing, ending 'June 28 Monday Last day of school for students'",
+        "source_title": "2026-2027 School Year Calendar",
+        "source_url": "https://www.schools.nyc.gov/calendar/2026-2027-school-year-calendar",
+        "start_date": "2027-01-04",
+        "verification_questions": []
+      },
+      {
+        "accessed_on": "2026-11-20",
+        "end_date": "2027-06-04",
+        "evidence": {
+          "observed_facts": "Checked the full key-dates list from January 2027 to the 4 June 2027 last day of instruction; the only multi-day closure after the retained winter recess is Spring Recess (22-26 March), recorded as a holiday row. Single legal/local holidays and pupil-free days do not qualify as breaks."
+        },
+        "jurisdiction_id": "US-CA:lausd",
+        "kind": "school_holiday_coverage",
+        "needs_human_verify": false,
+        "source_edition": "Instructional School Calendar 2026-2027, rev. 6.9.26",
+        "source_locator": "Key-dates column, all entries from January 2027 through '06/04/27 Last Day of Instruction'",
+        "source_title": "Instructional School Calendar 2026-2027 (rev. 6.9.26)",
+        "source_url": "https://media.edlio.net/135dff18/cc2a29d3/f0dbab90/03abacb9bbd44b1c8b86d1828e9ad968?_=2026-27+Instructional+Cal_Eng_Month_rev+6.9.26.pdf",
+        "start_date": "2027-01-04",
+        "verification_questions": []
+      },
+      {
+        "accessed_on": "2026-11-20",
+        "end_date": "2027-06-30",
+        "evidence": {
+          "observed_facts": "Checked the full 2026-27 holidays, PA-days and key-dates lists from 4 January 2027 through the last printed entry (30 June 2027 PA day); the only multi-day closure in the span is the 15-19 March 2027 Mid-Winter Break, recorded as a holiday row. Single days (15 January, 2 February, 12 February, 26 March, 29 March, 24 May, 4 June, 29 June, 30 June) do not qualify as breaks. The 2027-28 TDSB edition is not published, so nothing after 30 June 2027 is attested."
+        },
+        "jurisdiction_id": "CA-ON:tdsb",
+        "kind": "school_holiday_coverage",
+        "needs_human_verify": false,
+        "source_edition": "2026-27 School Year Calendar (TDSB)",
+        "source_locator": "Section 'School Year Holidays, PA Days and Key Dates for 2026-27', complete holidays, PA-days and key-dates lists, ending 'June 30, 2027: Elementary & Secondary'",
+        "source_title": "TDSB School Year Calendar",
+        "source_url": "http://web.archive.org/web/20261115110612/https://www.tdsb.on.ca/About-Us/School-Year-Calendar",
+        "start_date": "2027-01-04",
+        "verification_questions": []
+      },
+      {
+        "accessed_on": "2026-11-20",
+        "end_date": "2027-06-30",
+        "evidence": {
+          "observed_facts": "Checked the full 2026-2027 key-date list from 'January 04 - School Reopens' through 'June 30 - Administrative Day'; the only multi-day closure is 'March 15 - 25 - Spring Break', recorded as a holiday row. Single days (12 February, 15 February, 26 March, 29 March, 19 April, 21 May, 24 May) do not qualify as breaks."
+        },
+        "jurisdiction_id": "CA-BC:vsb",
+        "kind": "school_holiday_coverage",
+        "needs_human_verify": false,
+        "source_edition": "2026-2027 Calendar (compact, final)",
+        "source_locator": "Left-hand key-date list of the 2026-2027 calendar, 'January 04 - School Reopens' through 'June 30 - Administrative Day'",
+        "source_title": "VSB 2026-2027 Calendar (compact)",
+        "source_url": "https://media.vsb.bc.ca/media/Default/medialib/compact-vsb-calendar-2026-2027-final.20df0087560.pdf",
+        "start_date": "2027-01-04",
+        "verification_questions": []
+      },
+      {
+        "accessed_on": "2026-11-20",
+        "end_date": "2027-07-22",
+        "evidence": {
+          "observed_facts": "Checked the 2026 to 2027 listing from 'Spring term 2027 Monday 4 January to Thursday 25 March 2027' through 'Summer term 2027 Monday 12 April to Thursday 22 July 2027'; the multi-day closures in the span are the February half-term, the Easter/spring holiday and the May-June half-term, recorded as holiday rows. Single days (May Day bank holiday 3 May 2027) do not qualify as breaks. The page publishes no 2027 to 2028 section, so nothing after 22 July 2027 is attested."
+        },
+        "jurisdiction_id": "GB-ENG:camden",
+        "kind": "school_holiday_coverage",
+        "needs_human_verify": false,
+        "source_edition": "Term and holiday dates 2026 to 2027",
+        "source_locator": "Section 'Term and holiday dates 2026 to 2027', complete 'Spring term 2027' and 'Summer term 2027' listing",
+        "source_title": "School term dates - Camden Council",
+        "source_url": "http://web.archive.org/web/20260822050055/https://www.camden.gov.uk/term-dates",
+        "start_date": "2027-01-04",
+        "verification_questions": []
+      },
+      {
+        "accessed_on": "2026-11-20",
+        "end_date": "2027-06-29",
+        "evidence": {
+          "observed_facts": "Checked the 2026/27 listing from the end of the winter holidays through 'Term ends Tuesday 29 June 2027.'; the multi-day closures in the span are the February mid term break and the April spring holidays, recorded as holiday rows. Single days (Good Friday 26 March, Easter Monday 29 March, May Day 3 May, the staff-only day 4 May and Victoria Day 24 May) do not qualify as breaks."
+        },
+        "jurisdiction_id": "GB-SCT:edinburgh",
+        "kind": "school_holiday_coverage",
+        "needs_human_verify": false,
+        "source_edition": "School term dates 2026 / 27",
+        "source_locator": "Section 'School term dates 2026 / 27', complete Spring and Summer term listing ending 'Term ends Tuesday 29 June 2027.'",
+        "source_title": "School term dates - The City of Edinburgh Council",
+        "source_url": "https://www.edinburgh.gov.uk/schools/term-dates",
+        "start_date": "2027-01-04",
+        "verification_questions": []
+      },
+      {
+        "accessed_on": "2026-11-20",
+        "end_date": "2027-07-20",
+        "evidence": {
+          "observed_facts": "Checked the full Cardiff 2026/2027 table from 'Spring Term 2027 Monday 04 January' through 'Summer Term 2027 Monday 05 April Tuesday 20 July'; the multi-day closures in the span are the spring half term of 8 to 12 February, the Easter closure between the spring and summer terms and the summer half term of 31 May to 4 June, recorded as holiday rows. No other multi-day closure is listed."
+        },
+        "jurisdiction_id": "GB-WLS:cardiff",
+        "kind": "school_holiday_coverage",
+        "needs_human_verify": false,
+        "source_edition": "Approved school term dates 2026 to 2027",
+        "source_locator": "Cardiff table, complete 2027 term and half-term rows from 'Spring Term 2027' to 'Summer Term 2027 | Monday 05 April | Tuesday 20 July'",
+        "source_title": "Approved school term dates 2026 to 2027 [HTML] | GOV.WALES",
+        "source_url": "https://www.gov.wales/approved-school-term-dates-2026-2027-html",
+        "start_date": "2027-01-04",
+        "verification_questions": []
+      },
+      {
+        "accessed_on": "2026-11-20",
+        "end_date": "2027-06-30",
+        "evidence": {
+          "observed_facts": "Checked the full 2026/2027 table from 4 January 2027 to 'Summer holiday begins 1 July 2027'; the multi-day closures in the span are the February mid-term and the Easter holiday, recorded as holiday rows. Single days (17 March 2027, 3 May 2027, Spring Bank Holiday 31 May 2027 and the additional closure day of 4 May 2027) do not qualify as breaks. The department publishes no 2027/2028 table, so nothing from 1 July 2027 onward is attested."
+        },
+        "jurisdiction_id": "GB-NIR",
+        "kind": "school_holiday_coverage",
+        "needs_human_verify": false,
+        "source_edition": "School holidays 2026/2027",
+        "source_locator": "Section 'School holidays 2026/2027', complete table from 'Christmas and New Year' through 'Summer holiday begins | 1 July 2027'",
+        "source_title": "School holidays | Department of Education",
+        "source_url": "https://www.education-ni.gov.uk/articles/school-holidays",
+        "start_date": "2027-01-04",
+        "verification_questions": []
+      },
+      {
+        "accessed_on": "2026-11-20",
+        "end_date": "2028-01-07",
+        "evidence": {
+          "observed_facts": "Checked the complete 'Upcoming bank holidays in Northern Ireland 2027' table and the 2028 table for 2027-01-01 through 2028-01-07; the ten 2027 dates and the 3 January 2028 substitute are recorded as holiday rows and no other date in the span appears."
+        },
+        "jurisdiction_id": "GB-NIR",
+        "kind": "public_holiday_coverage",
+        "needs_human_verify": false,
+        "source_edition": "GOV.UK bank holidays, Northern Ireland division, 2027 and 2028 lists",
+        "source_locator": "Divisions page tables 'Upcoming bank holidays in Northern Ireland 2027' and 'Upcoming bank holidays in Northern Ireland 2028', read for 2027-01-01 through 2028-01-07",
+        "source_title": "UK bank holidays - GOV.UK",
+        "source_url": "https://www.gov.uk/bank-holidays",
+        "start_date": "2027-01-01",
+        "verification_questions": []
+      },
+      {
+        "accessed_on": "2026-11-20",
+        "end_date": "2027-08-14",
+        "evidence": {
+          "observed_facts": "Checked every cell of the 'Berlin' row of the KMK grid for 2026/2027. Between 2027-01-04 and 2027-08-14 the row records Winterferien '01.02. - 06.02.', Osterferien '22.03. - 02.04.', the single day '07.05.', Pfingstferien '18.05. - 19.05.' and Sommerferien '01.07. - 14.08.'; all are recorded as holiday rows. The span starts on 2027-01-04 so that it adjoins the retained 2026 coverage row that ends 2027-01-03, and ends on 14 August 2027 because that is the last day printed in the 'Sommer 2027' cell of this edition."
+        },
+        "jurisdiction_id": "DE-BE",
+        "kind": "school_holiday_coverage",
+        "needs_human_verify": false,
+        "source_edition": "Ferien im Schuljahr 2026/2027 (KMK-Ferienkalender, Stand 09.10.2025)",
+        "source_locator": "Tabelle 'Ferien im Schuljahr 2026/2027 in den Ländern der Bundesrepublik Deutschland', vollständige Zeile 'Berlin' über die Spalten 'Herbst 2026' bis 'Sommer 2027', gelesen für 2027-01-04 bis 2027-08-14",
+        "source_title": "Ferienkalender der Kultusministerkonferenz - Ferien im Schuljahr 2026/2027 in den Ländern der Bundesrepublik Deutschland",
+        "source_url": "https://www.kmk.org/service/ferienregelung/ferienkalender.html",
+        "start_date": "2027-01-04",
+        "verification_questions": []
+      },
+      {
+        "accessed_on": "2026-11-20",
+        "end_date": "2027-09-13",
+        "evidence": {
+          "observed_facts": "Checked every cell of the 'Bayern' row of the KMK grid for 2026/2027. Between 2027-01-04 and 2027-09-13 the row records Frühjahrsferien '08.02. - 12.02.', Osterferien '22.03. - 02.04.', Pfingstferien '18.05. - 28.05.' and Sommerferien '02.08. - 13.09.'; all are recorded as holiday rows. The span starts on 2027-01-04 so that it adjoins the retained 2026 coverage row that ends 2027-01-03, and ends on 13 September 2027 because that is the last day printed in the 'Sommer 2027' cell."
+        },
+        "jurisdiction_id": "DE-BY",
+        "kind": "school_holiday_coverage",
+        "needs_human_verify": false,
+        "source_edition": "Ferien im Schuljahr 2026/2027 (KMK-Ferienkalender, Stand 09.10.2025)",
+        "source_locator": "Tabelle 'Ferien im Schuljahr 2026/2027 in den Ländern der Bundesrepublik Deutschland', vollständige Zeile 'Bayern' über die Spalten 'Herbst 2026' bis 'Sommer 2027', gelesen für 2027-01-04 bis 2027-09-13",
+        "source_title": "Ferienkalender der Kultusministerkonferenz - Ferien im Schuljahr 2026/2027 in den Ländern der Bundesrepublik Deutschland",
+        "source_url": "https://www.kmk.org/service/ferienregelung/ferienkalender.html",
+        "start_date": "2027-01-04",
+        "verification_questions": []
+      },
+      {
+        "accessed_on": "2026-11-20",
+        "end_date": "2028-01-07",
+        "evidence": {
+          "observed_facts": "The Land page names exactly ten Berlin statutory holidays (Neujahrstag, Frauentag, Karfreitag, Ostermontag, 1. Mai, Himmelfahrtstag, Pfingstmontag, Tag der deutschen Einheit, erster und zweiter Weihnachtstag) and no municipal exception. Checked the whole span 2027-01-01 to 2028-01-07: the eleven occurrences (ten in 2027 plus New Year's Day 2028) are recorded as public holiday rows and no other date in the span is statutory in Berlin."
+        },
+        "jurisdiction_id": "DE-BE",
+        "kind": "public_holiday_coverage",
+        "needs_human_verify": false,
+        "source_edition": "Gesetz über die Sonn- und Feiertage (Feiertagsgesetz - FTG) vom 28. Oktober 1954, § 1 Abs. 1, Fassung gültig ab 09.05.2025; Senatsverwaltung für Inneres und Sport, Seite 'Sonn- und Feiertagsrecht'",
+        "source_locator": "Seite 'Sonn- und Feiertagsrecht', Absatz 1, für den gesamten Zeitraum 2027-01-01 bis 2028-01-07 gelesen",
+        "source_title": "Sonn- und Feiertagsrecht - Senatsverwaltung für Inneres und Sport, Berlin.de",
+        "source_url": "https://www.berlin.de/sen/inneres/buerger-und-staat/verfassungs-und-verwaltungsrecht/artikel.1435639.php",
+        "start_date": "2027-01-01",
+        "verification_questions": []
+      },
+      {
+        "accessed_on": "2026-11-20",
+        "end_date": "2028-01-07",
+        "evidence": {
+          "observed_facts": "Art. 1 Abs. 1 Nr. 1 FTG names twelve holidays 'im ganzen Staatsgebiet'. The two further entries of Art. 1 (Nr. 2 'Mariä Himmelfahrt' only 'in Gemeinden mit überwiegend katholischer Bevölkerung' and Abs. 2 the Augsburg Friedensfest on 8 August) are municipality-only and are not recorded. Checked the whole span 2027-01-01 to 2028-01-07: the fourteen occurrences (twelve in 2027 plus Neujahr and Heilige Drei Könige in January 2028) are recorded as public holiday rows and no other date in the span is a land-wide statutory holiday."
+        },
+        "jurisdiction_id": "DE-BY",
+        "kind": "public_holiday_coverage",
+        "needs_human_verify": false,
+        "source_edition": "Feiertagsgesetz (FTG) vom 21. Mai 1980 (BayRS 1131-3-I), Art. 1 Abs. 1, Text gilt ab 01.08.2013, zuletzt geändert durch § 1 Abs. 10 der Verordnung vom 26. März 2019 (GVBl. S. 98)",
+        "source_locator": "Art. 1 Abs. 1 FTG, gelesen für den gesamten Zeitraum 2027-01-01 bis 2028-01-07",
+        "source_title": "Gesetz über den Schutz der Sonn- und Feiertage (Feiertagsgesetz - FTG), Bürgerservice BAYERN.RECHT",
+        "source_url": "https://www.gesetze-bayern.de/Content/Document/BayFTG/true",
+        "start_date": "2027-01-01",
+        "verification_questions": []
+      },
+      {
+        "accessed_on": "2026-11-20",
+        "end_date": "2027-04-04",
+        "evidence": {
+          "observed_facts": "Checked Appendix A for the 2026/27 school year beyond the retained 2026-12-23 to 2027-01-05 Christmas row: the only standardised breaks intersecting 2027-01-04 to 2027-04-04 are the February 2027 mid-term and Easter 2027, recorded as holiday rows. The circular does not standardise the summer holidays, so this row stops at the Easter break end."
+        },
+        "jurisdiction_id": "IE",
+        "kind": "school_holiday_coverage",
+        "needs_human_verify": false,
+        "source_edition": "Circular 0018/2026, Appendix A (2026/27)",
+        "source_locator": "Appendix A, 'School Year 2026/27', complete break list",
+        "source_title": "Circular 0018/2026 - Standardisation of the school year 2026/27, 2027/28 and 2028/29",
+        "source_url": "https://assets.gov.ie/static/documents/2602a673/2026.01.30_FINAL_Circular_SSY_2026.29_30_Jan_2026_English.pdf",
+        "start_date": "2027-01-04",
+        "verification_questions": []
+      },
+      {
+        "accessed_on": "2026-11-20",
+        "end_date": "2028-01-07",
+        "evidence": {
+          "observed_facts": "The WRC page states there are ten public holidays each year and lists them by statutory rule; all ten 2027 occurrences and New Year's Day 2028 are recorded as public holiday rows and no other date in 2027-01-01 to 2028-01-07 qualifies. The page prints a dated table only for 2026, so the 2027 and 2028 dates are the rule-determined dates."
+        },
+        "jurisdiction_id": "IE",
+        "kind": "public_holiday_coverage",
+        "needs_human_verify": false,
+        "source_edition": "WRC statutory public holiday list (Organisation of Working Time Act 1997), page read on 2026-11-20",
+        "source_locator": "'Public holidays are:' list and the statement 'In Ireland there are ten public holidays each year', read for the whole span 2027-01-01 to 2028-01-07",
+        "source_title": "Public Holidays - Workplace Relations Commission",
+        "source_url": "https://www.workplacerelations.ie/en/what_you_should_know/public-holidays",
+        "start_date": "2027-01-01",
+        "verification_questions": []
+      },
+      {
+        "accessed_on": "2026-11-20",
+        "end_date": "2027-12-31",
+        "evidence": {
+          "observed_facts": "Checked the 공고's whole 공휴일 section against the span 2027-01-01 to 2027-12-31: the '관공서의 공휴일' block prints twenty rows covering twenty-four dates (1월 1일; 설날(연휴) 2월 6일~2월 8일; 대체공휴일(설날) 2월 9일; 3∙1절 3월 1일; 노동절 5월 1일; 대체공휴일(노동절) 5월 3일; 어린이날 5월 5일; 부처님 오신 날 5월 13일; 현충일 6월 6일; 제헌절 7월 17일; 대체공휴일(제헌절) 7월 19일; 광복절 8월 15일; 대체공휴일(광복절) 8월 16일; 추석(연휴) 9월 14일~9월 16일; 개천절 10월 3일; 대체공휴일(개천절) 10월 4일; 한글날 10월 9일; 대체공휴일(한글날) 10월 11일; 기독탄신일 12월 25일; 대체공휴일(기독탄신일) 12월 27일), and all twenty rows are stored as public_holiday rows. The three '지방공휴일' rows (4∙3희생자 추념일 4월 3일 제주특별자치도, 동학농민혁명 기념일 5월 11일 전북특별자치도 정읍시, 5∙18민주화운동 기념일 5월 18일 광주광역시) are local holidays of other jurisdictions, so they are excluded from the national KR layer. No other 2027 date appears in the section. The 2028 월력요항 is published in the following June, so 2028-01-01..2028-01-07 is not attested by this row and stays unknown."
+        },
+        "jurisdiction_id": "KR",
+        "kind": "public_holiday_coverage",
+        "needs_human_verify": false,
+        "source_edition": "2027년 월력요항 (우주항공청공고 제2026-0078호, 관보게재일 2026-06-29)",
+        "source_locator": "□ 공휴일 표 전체: '관공서의 공휴일' 영역 20행(1월 1일부터 대체공휴일(기독탄신일)까지)과 '지방공휴일' 영역 3행(4∙3희생자 추념일·동학농민혁명 기념일·5∙18민주화운동 기념일)",
+        "source_title": "2027년 월력요항 - 우주항공청",
+        "source_url": "https://www.kasa.go.kr/bbs/BBSMSTR_000000000018/view.do?nttId=B000000003234Li6nD2",
+        "start_date": "2027-01-01",
+        "verification_questions": []
+      }
+    ],
+    "holiday_reference_sha256": "9ab32af47b69a6295a8f80e0bcaf138de7d37b8e36feaa3aac68ad0c783c0c0e",
+    "holidays": [
+      {
+        "accessed_on": "2026-11-20",
+        "end_date": "2027-04-30",
+        "evidence": {
+          "observed_facts": "The official NYCPS 2026-2027 calendar lists 'April 22 - April 30 ... Spring Recess, schools closed'; the table labels 22 April Thursday and 30 April Friday."
+        },
+        "holiday_name": "Spring Recess",
+        "jurisdiction_id": "US-NY:nycps",
+        "kind": "school_holiday",
+        "needs_human_verify": false,
+        "source_edition": "2026-2027 School Year Calendar (NYCPS)",
+        "source_locator": "Calendar table, April 2027 row: 'April 22 - April 30 Thursday-Friday Spring Recess, schools closed'",
+        "source_title": "2026-2027 School Year Calendar",
+        "source_url": "https://www.schools.nyc.gov/calendar/2026-2027-school-year-calendar",
+        "start_date": "2027-04-22",
+        "verification_questions": []
+      },
+      {
+        "accessed_on": "2026-11-20",
+        "end_date": "2027-04-09",
+        "evidence": {
+          "observed_facts": "The council page lists 'Easter/spring holiday: Friday 26 March to Friday 9 April 2027 (Easter weekend 26 to 29 March)' and reopens with 'Summer term 2027 Monday 12 April to Thursday 22 July 2027'. The live page answered a bot challenge, so the Internet Archive snapshot of 22 August 2026 was read."
+        },
+        "holiday_name": "Easter/spring holiday",
+        "jurisdiction_id": "GB-ENG:camden",
+        "kind": "school_holiday",
+        "needs_human_verify": false,
+        "source_edition": "Term and holiday dates 2026 to 2027",
+        "source_locator": "Section 'Term and holiday dates 2026 to 2027', 'Spring term 2027': 'Easter/spring holiday: Friday 26 March to Friday 9 April 2027 (Easter weekend 26 to 29 March)'",
+        "source_title": "School term dates - Camden Council",
+        "source_url": "http://web.archive.org/web/20260822050055/https://www.camden.gov.uk/term-dates",
+        "start_date": "2027-03-26",
+        "verification_questions": []
+      },
+      {
+        "accessed_on": "2026-11-20",
+        "end_date": "2027-06-04",
+        "evidence": {
+          "observed_facts": "The council page gives 'Summer term 2027 Monday 12 April to Thursday 22 July 2027' with 'Half-term: Monday 31 May to Friday 4 June 2027 (Spring Bank Holiday on 31 May)'. The live page answered a bot challenge, so the Internet Archive snapshot of 22 August 2026 was read."
+        },
+        "holiday_name": "Half-term",
+        "jurisdiction_id": "GB-ENG:camden",
+        "kind": "school_holiday",
+        "needs_human_verify": false,
+        "source_edition": "Term and holiday dates 2026 to 2027",
+        "source_locator": "Section 'Term and holiday dates 2026 to 2027', 'Summer term 2027': 'Half-term: Monday 31 May to Friday 4 June 2027 (Spring Bank Holiday on 31 May)'",
+        "source_title": "School term dates - Camden Council",
+        "source_url": "http://web.archive.org/web/20260822050055/https://www.camden.gov.uk/term-dates",
+        "start_date": "2027-05-31",
+        "verification_questions": []
+      },
+      {
+        "accessed_on": "2026-11-20",
+        "end_date": "2027-04-19",
+        "evidence": {
+          "observed_facts": "The council page lists '2027 Spring holidays Monday 5 April to Monday 19 April 2027 inclusive' and 'Summer Term starts Tuesday 20 April 2027.'"
+        },
+        "holiday_name": "Spring holidays",
+        "jurisdiction_id": "GB-SCT:edinburgh",
+        "kind": "school_holiday",
+        "needs_human_verify": false,
+        "source_edition": "School term dates 2026 / 27",
+        "source_locator": "Section 'School term dates 2026 / 27', '2027 Spring holidays': 'Monday 5 April to Monday 19 April 2027 inclusive'",
+        "source_title": "School term dates - The City of Edinburgh Council",
+        "source_url": "https://www.edinburgh.gov.uk/schools/term-dates",
+        "start_date": "2027-04-05",
+        "verification_questions": []
+      },
+      {
+        "accessed_on": "2026-11-20",
+        "end_date": "2027-04-04",
+        "evidence": {
+          "inference": "The closure between those terms runs 20 March 2027 to 4 April 2027.",
+          "observed_facts": "The Cardiff table gives the spring term as Monday 04 January to Friday 19 March 2027 and the summer term as starting Monday 05 April 2027; no separate Easter row is published."
+        },
+        "holiday_name": "Easter holiday",
+        "jurisdiction_id": "GB-WLS:cardiff",
+        "kind": "school_holiday",
+        "needs_human_verify": true,
+        "source_edition": "Approved school term dates 2026 to 2027",
+        "source_locator": "Cardiff table: 'Spring Term 2027 | Monday 04 January | Friday 19 March' and 'Summer Term 2027 | Monday 05 April | Tuesday 20 July'",
+        "source_title": "Approved school term dates 2026 to 2027 [HTML] | GOV.WALES",
+        "source_url": "https://www.gov.wales/approved-school-term-dates-2026-2027-html",
+        "start_date": "2027-03-20",
+        "verification_questions": [
+          "Confirm Cardiff's Easter 2027 closure runs 20 March to 4 April (spring term ends 19 March, summer term starts 5 April) and is not interrupted by an INSET day."
+        ]
+      },
+      {
+        "accessed_on": "2026-11-20",
+        "end_date": "2027-06-04",
+        "evidence": {
+          "observed_facts": "The Welsh Government Cardiff table carries 'Summer Half Term 2027 Monday 31 May Friday 04 June'."
+        },
+        "holiday_name": "Summer half term",
+        "jurisdiction_id": "GB-WLS:cardiff",
+        "kind": "school_holiday",
+        "needs_human_verify": false,
+        "source_edition": "Approved school term dates 2026 to 2027",
+        "source_locator": "Cardiff table: 'Summer Half Term 2027 | Monday 31 May | Friday 04 June'",
+        "source_title": "Approved school term dates 2026 to 2027 [HTML] | GOV.WALES",
+        "source_url": "https://www.gov.wales/approved-school-term-dates-2026-2027-html",
+        "start_date": "2027-05-31",
+        "verification_questions": []
+      },
+      {
+        "accessed_on": "2026-11-20",
+        "end_date": "2027-04-02",
+        "evidence": {
+          "observed_facts": "The department's 2026/2027 table gives the Easter holiday as '25 March to 2 April 2027' and notes that schools can operate on these dates at their own discretion."
+        },
+        "holiday_name": "Easter",
+        "jurisdiction_id": "GB-NIR",
+        "kind": "school_holiday",
+        "needs_human_verify": false,
+        "source_edition": "School holidays 2026/2027",
+        "source_locator": "Section 'School holidays 2026/2027', table row: 'Easter | 25 March to 2 April 2027'",
+        "source_title": "School holidays | Department of Education",
+        "source_url": "https://www.education-ni.gov.uk/articles/school-holidays",
+        "start_date": "2027-03-25",
+        "verification_questions": []
+      },
+      {
+        "accessed_on": "2026-11-20",
+        "end_date": "2027-05-03",
+        "evidence": {
+          "observed_facts": "Read the complete 'Upcoming bank holidays in Northern Ireland 2027' table and the 2028 table up to 7 January 2028; every row in the span is recorded as a holiday row. The substitute rows GOV.UK prints are 27 and 28 December 2027 for Christmas Day and Boxing Day and 3 January 2028 for New Year's Day; 25 and 26 December 2027 are not listed and are not recorded. nidirect points to this GOV.UK division list for the dated schedule."
+        },
+        "holiday_name": "Early May bank holiday",
+        "jurisdiction_id": "GB-NIR",
+        "kind": "public_holiday",
+        "needs_human_verify": false,
+        "observance": "actual",
+        "source_edition": "GOV.UK bank holidays, Northern Ireland division, 2027 and 2028 lists",
+        "source_locator": "Upcoming bank holidays in Northern Ireland 2027: '3 May | Monday | Early May bank holiday'",
+        "source_title": "UK bank holidays - GOV.UK",
+        "source_url": "https://www.gov.uk/bank-holidays",
+        "start_date": "2027-05-03",
+        "verification_questions": []
+      },
+      {
+        "accessed_on": "2026-11-20",
+        "end_date": "2027-05-31",
+        "evidence": {
+          "observed_facts": "Read the complete 'Upcoming bank holidays in Northern Ireland 2027' table and the 2028 table up to 7 January 2028; every row in the span is recorded as a holiday row. The substitute rows GOV.UK prints are 27 and 28 December 2027 for Christmas Day and Boxing Day and 3 January 2028 for New Year's Day; 25 and 26 December 2027 are not listed and are not recorded. nidirect points to this GOV.UK division list for the dated schedule."
+        },
+        "holiday_name": "Spring bank holiday",
+        "jurisdiction_id": "GB-NIR",
+        "kind": "public_holiday",
+        "needs_human_verify": false,
+        "observance": "actual",
+        "source_edition": "GOV.UK bank holidays, Northern Ireland division, 2027 and 2028 lists",
+        "source_locator": "Upcoming bank holidays in Northern Ireland 2027: '31 May | Monday | Spring bank holiday'",
+        "source_title": "UK bank holidays - GOV.UK",
+        "source_url": "https://www.gov.uk/bank-holidays",
+        "start_date": "2027-05-31",
+        "verification_questions": []
+      },
+      {
+        "accessed_on": "2026-11-20",
+        "end_date": "2027-04-02",
+        "evidence": {
+          "observed_facts": "The KMK table 'Ferien im Schuljahr 2026/2027 in den Ländern der Bundesrepublik Deutschland' carries the cell '22.03. - 02.04.' in the row 'Berlin' under the column heading 'Ostern/Frühjahr 2027'; the table's footnote 1 reads 'Angegeben ist jeweils der erste und letzte Ferientag.', so the break runs from Monday 22 March 2027 to Friday 2 April 2027."
+        },
+        "holiday_name": "Osterferien",
+        "jurisdiction_id": "DE-BE",
+        "kind": "school_holiday",
+        "needs_human_verify": false,
+        "source_edition": "Ferien im Schuljahr 2026/2027 (KMK-Ferienkalender, Stand 09.10.2025)",
+        "source_locator": "Tabelle 'Ferien im Schuljahr 2026/2027 in den Ländern der Bundesrepublik Deutschland', Spaltenüberschrift 'Ostern/Frühjahr 2027', Zeile 'Berlin': '22.03. - 02.04.'",
+        "source_title": "Ferienkalender der Kultusministerkonferenz - Ferien im Schuljahr 2026/2027 in den Ländern der Bundesrepublik Deutschland",
+        "source_url": "https://www.kmk.org/service/ferienregelung/ferienkalender.html",
+        "start_date": "2027-03-22",
+        "verification_questions": []
+      },
+      {
+        "accessed_on": "2026-11-20",
+        "end_date": "2027-05-07",
+        "evidence": {
+          "observed_facts": "The KMK table 'Ferien im Schuljahr 2026/2027 in den Ländern der Bundesrepublik Deutschland' lists two entries for the row 'Berlin' in the column heading 'Himmelfahrt/Pfingsten 2027': '07.05.' and '18.05. - 19.05.'; the first entry is a single date, so Friday 7 May 2027 is one school-free day. Christi Himmelfahrt itself (6 May 2027) is a public holiday and is not counted as a break day here."
+        },
+        "holiday_name": "Unterrichtsfreier Tag nach Christi Himmelfahrt",
+        "jurisdiction_id": "DE-BE",
+        "kind": "school_holiday",
+        "needs_human_verify": false,
+        "source_edition": "Ferien im Schuljahr 2026/2027 (KMK-Ferienkalender, Stand 09.10.2025)",
+        "source_locator": "Tabelle 'Ferien im Schuljahr 2026/2027 in den Ländern der Bundesrepublik Deutschland', Spaltenüberschrift 'Himmelfahrt/Pfingsten 2027', Zeile 'Berlin': '07.05.'",
+        "source_title": "Ferienkalender der Kultusministerkonferenz - Ferien im Schuljahr 2026/2027 in den Ländern der Bundesrepublik Deutschland",
+        "source_url": "https://www.kmk.org/service/ferienregelung/ferienkalender.html",
+        "start_date": "2027-05-07",
+        "verification_questions": []
+      },
+      {
+        "accessed_on": "2026-11-20",
+        "end_date": "2027-05-19",
+        "evidence": {
+          "observed_facts": "The KMK table 'Ferien im Schuljahr 2026/2027 in den Ländern der Bundesrepublik Deutschland' carries the cell '18.05. - 19.05.' in the row 'Berlin' under the column heading 'Himmelfahrt/Pfingsten 2027'; the table's footnote 1 reads 'Angegeben ist jeweils der erste und letzte Ferientag.', so the break runs from Tuesday 18 May 2027 to Wednesday 19 May 2027."
+        },
+        "holiday_name": "Pfingstferien",
+        "jurisdiction_id": "DE-BE",
+        "kind": "school_holiday",
+        "needs_human_verify": false,
+        "source_edition": "Ferien im Schuljahr 2026/2027 (KMK-Ferienkalender, Stand 09.10.2025)",
+        "source_locator": "Tabelle 'Ferien im Schuljahr 2026/2027 in den Ländern der Bundesrepublik Deutschland', Spaltenüberschrift 'Himmelfahrt/Pfingsten 2027', Zeile 'Berlin': '18.05. - 19.05.'",
+        "source_title": "Ferienkalender der Kultusministerkonferenz - Ferien im Schuljahr 2026/2027 in den Ländern der Bundesrepublik Deutschland",
+        "source_url": "https://www.kmk.org/service/ferienregelung/ferienkalender.html",
+        "start_date": "2027-05-18",
+        "verification_questions": []
+      },
+      {
+        "accessed_on": "2026-11-20",
+        "end_date": "2027-04-02",
+        "evidence": {
+          "observed_facts": "The KMK table 'Ferien im Schuljahr 2026/2027 in den Ländern der Bundesrepublik Deutschland' lists two entries for the row 'Bayern' in the column heading 'Ostern/Frühjahr 2027': '08.02. - 12.02.' and '22.03. - 02.04.'; this row records the second entry, the Osterferien, running from Monday 22 March 2027 to Friday 2 April 2027 (footnote 1: 'Angegeben ist jeweils der erste und letzte Ferientag.'). The Bavarian ministry page lists 'Osterferien 2027: 22. März 2027 mit 2. April 2027'."
+        },
+        "holiday_name": "Osterferien",
+        "jurisdiction_id": "DE-BY",
+        "kind": "school_holiday",
+        "needs_human_verify": false,
+        "source_edition": "Ferien im Schuljahr 2026/2027 (KMK-Ferienkalender, Stand 09.10.2025)",
+        "source_locator": "Tabelle 'Ferien im Schuljahr 2026/2027 in den Ländern der Bundesrepublik Deutschland', Spaltenüberschrift 'Ostern/Frühjahr 2027', Zeile 'Bayern': '22.03. - 02.04.'",
+        "source_title": "Ferienkalender der Kultusministerkonferenz - Ferien im Schuljahr 2026/2027 in den Ländern der Bundesrepublik Deutschland",
+        "source_url": "https://www.kmk.org/service/ferienregelung/ferienkalender.html",
+        "start_date": "2027-03-22",
+        "verification_questions": []
+      },
+      {
+        "accessed_on": "2026-11-20",
+        "end_date": "2027-05-28",
+        "evidence": {
+          "observed_facts": "The KMK table 'Ferien im Schuljahr 2026/2027 in den Ländern der Bundesrepublik Deutschland' carries the cell '18.05. - 28.05.' in the row 'Bayern' under the column heading 'Himmelfahrt/Pfingsten 2027'; the table's footnote 1 reads 'Angegeben ist jeweils der erste und letzte Ferientag.', so the break runs from Tuesday 18 May 2027 to Friday 28 May 2027."
+        },
+        "holiday_name": "Pfingstferien",
+        "jurisdiction_id": "DE-BY",
+        "kind": "school_holiday",
+        "needs_human_verify": false,
+        "source_edition": "Ferien im Schuljahr 2026/2027 (KMK-Ferienkalender, Stand 09.10.2025)",
+        "source_locator": "Tabelle 'Ferien im Schuljahr 2026/2027 in den Ländern der Bundesrepublik Deutschland', Spaltenüberschrift 'Himmelfahrt/Pfingsten 2027', Zeile 'Bayern': '18.05. - 28.05.'",
+        "source_title": "Ferienkalender der Kultusministerkonferenz - Ferien im Schuljahr 2026/2027 in den Ländern der Bundesrepublik Deutschland",
+        "source_url": "https://www.kmk.org/service/ferienregelung/ferienkalender.html",
+        "start_date": "2027-05-18",
+        "verification_questions": []
+      },
+      {
+        "accessed_on": "2026-11-20",
+        "end_date": "2027-05-01",
+        "evidence": {
+          "observed_facts": "The Land page names 'der 1. Mai' as a Berlin statutory holiday, so the date is printed in the source: Saturday 1 May 2027."
+        },
+        "holiday_name": "1. Mai",
+        "jurisdiction_id": "DE-BE",
+        "kind": "public_holiday",
+        "needs_human_verify": false,
+        "observance": "actual",
+        "source_edition": "Gesetz über die Sonn- und Feiertage (Feiertagsgesetz - FTG) vom 28. Oktober 1954, § 1 Abs. 1, Fassung gültig ab 09.05.2025; Senatsverwaltung für Inneres und Sport, Seite 'Sonn- und Feiertagsrecht'",
+        "source_locator": "Seite 'Sonn- und Feiertagsrecht', Absatz 1: 'Gesetzliche Feiertage sind im Land Berlin - außer den Sonntagen - der Neujahrstag, der Frauentag (8. März), der Karfreitag, der Ostermontag, der 1. Mai, der Himmelfahrtstag, der Pfingstmontag, der Tag der deutschen Einheit sowie der erste und der zweite Weihnachtstag.'",
+        "source_title": "Sonn- und Feiertagsrecht - Senatsverwaltung für Inneres und Sport, Berlin.de",
+        "source_url": "https://www.berlin.de/sen/inneres/buerger-und-staat/verfassungs-und-verwaltungsrecht/artikel.1435639.php",
+        "start_date": "2027-05-01",
+        "verification_questions": []
+      },
+      {
+        "accessed_on": "2026-11-20",
+        "end_date": "2027-05-17",
+        "evidence": {
+          "observed_facts": "The Land page names 'der Pfingstmontag' as a Berlin statutory holiday. Pfingstmontag is the 50th day after Easter Sunday (28 March 2027): Monday 17 May 2027."
+        },
+        "holiday_name": "Pfingstmontag",
+        "jurisdiction_id": "DE-BE",
+        "kind": "public_holiday",
+        "needs_human_verify": false,
+        "observance": "actual",
+        "source_edition": "Gesetz über die Sonn- und Feiertage (Feiertagsgesetz - FTG) vom 28. Oktober 1954, § 1 Abs. 1, Fassung gültig ab 09.05.2025; Senatsverwaltung für Inneres und Sport, Seite 'Sonn- und Feiertagsrecht'",
+        "source_locator": "Seite 'Sonn- und Feiertagsrecht', Absatz 1: 'Gesetzliche Feiertage sind im Land Berlin - außer den Sonntagen - der Neujahrstag, der Frauentag (8. März), der Karfreitag, der Ostermontag, der 1. Mai, der Himmelfahrtstag, der Pfingstmontag, der Tag der deutschen Einheit sowie der erste und der zweite Weihnachtstag.'",
+        "source_title": "Sonn- und Feiertagsrecht - Senatsverwaltung für Inneres und Sport, Berlin.de",
+        "source_url": "https://www.berlin.de/sen/inneres/buerger-und-staat/verfassungs-und-verwaltungsrecht/artikel.1435639.php",
+        "start_date": "2027-05-17",
+        "verification_questions": []
+      },
+      {
+        "accessed_on": "2026-11-20",
+        "end_date": "2027-05-01",
+        "evidence": {
+          "observed_facts": "Art. 1 Abs. 1 Nr. 1 FTG lists 'der 1. Mai' among the holidays 'im ganzen Staatsgebiet', so the date is printed in the source: Saturday 1 May 2027."
+        },
+        "holiday_name": "1. Mai",
+        "jurisdiction_id": "DE-BY",
+        "kind": "public_holiday",
+        "needs_human_verify": false,
+        "observance": "actual",
+        "source_edition": "Feiertagsgesetz (FTG) vom 21. Mai 1980 (BayRS 1131-3-I), Art. 1 Abs. 1, Text gilt ab 01.08.2013, zuletzt geändert durch § 1 Abs. 10 der Verordnung vom 26. März 2019 (GVBl. S. 98)",
+        "source_locator": "Art. 1 Abs. 1 Nr. 1 'im ganzen Staatsgebiet': 'der 1. Mai'",
+        "source_title": "Gesetz über den Schutz der Sonn- und Feiertage (Feiertagsgesetz - FTG), Bürgerservice BAYERN.RECHT",
+        "source_url": "https://www.gesetze-bayern.de/Content/Document/BayFTG/true",
+        "start_date": "2027-05-01",
+        "verification_questions": []
+      },
+      {
+        "accessed_on": "2026-11-20",
+        "end_date": "2027-05-17",
+        "evidence": {
+          "observed_facts": "Art. 1 Abs. 1 Nr. 1 FTG lists 'Pfingstmontag' among the holidays 'im ganzen Staatsgebiet'. It is the 50th day after Easter Sunday (28 March 2027): Monday 17 May 2027."
+        },
+        "holiday_name": "Pfingstmontag",
+        "jurisdiction_id": "DE-BY",
+        "kind": "public_holiday",
+        "needs_human_verify": false,
+        "observance": "actual",
+        "source_edition": "Feiertagsgesetz (FTG) vom 21. Mai 1980 (BayRS 1131-3-I), Art. 1 Abs. 1, Text gilt ab 01.08.2013, zuletzt geändert durch § 1 Abs. 10 der Verordnung vom 26. März 2019 (GVBl. S. 98)",
+        "source_locator": "Art. 1 Abs. 1 Nr. 1 'im ganzen Staatsgebiet': 'Pfingstmontag'",
+        "source_title": "Gesetz über den Schutz der Sonn- und Feiertage (Feiertagsgesetz - FTG), Bürgerservice BAYERN.RECHT",
+        "source_url": "https://www.gesetze-bayern.de/Content/Document/BayFTG/true",
+        "start_date": "2027-05-17",
+        "verification_questions": []
+      },
+      {
+        "accessed_on": "2026-11-20",
+        "end_date": "2027-04-04",
+        "evidence": {
+          "inference": "The last school day is 19 March 2027 and schools re-open on 5 April 2027, so the break runs from 20 March to 4 April 2027 inclusive.",
+          "observed_facts": "Appendix A names Friday 19 March 2027 as the final day of the school term and Monday 5 April 2027 as the re-opening day for all schools."
+        },
+        "holiday_name": "Easter 2027",
+        "jurisdiction_id": "IE",
+        "kind": "school_holiday",
+        "needs_human_verify": true,
+        "source_edition": "Circular 0018/2026, Appendix A (2026/27)",
+        "source_locator": "Appendix A, 'School Year 2026/27', 'Easter 2027': 'All schools will close on Friday 19 March 2027, which will be the final day of the school term, unless changes are required as part of contingency arrangements to make up for time lost due to unforeseen school closures.' and 'All schools will re-open on Monday 5 April 2027.'",
+        "source_title": "Circular 0018/2026 - Standardisation of the school year 2026/27, 2027/28 and 2028/29",
+        "source_url": "https://assets.gov.ie/static/documents/2602a673/2026.01.30_FINAL_Circular_SSY_2026.29_30_Jan_2026_English.pdf",
+        "start_date": "2027-03-20",
+        "verification_questions": [
+          "Confirm the Irish Easter break 2027 runs from 20 March to 4 April 2027 for both primary and post-primary schools, i.e. that 19 March 2027 is a school day and 5 April 2027 the re-opening day, and that no school-level religious-observance closure changes either edge."
+        ]
+      },
+      {
+        "accessed_on": "2026-11-20",
+        "end_date": "2027-05-03",
+        "evidence": {
+          "observed_facts": "The WRC page states 'In Ireland there are ten public holidays each year' and lists the ten holidays by statutory rule; it prints a dated table only for 2026, so this occurrence is the rule-determined date (the first Monday of May 2027 is 3 May 2027). The page also states that where a public holiday falls on a day that is not a normal working day there is no legal entitlement to have the next working day off work, so the nominal date is recorded and no substitute date is added."
+        },
+        "holiday_name": "First Monday in May",
+        "jurisdiction_id": "IE",
+        "kind": "public_holiday",
+        "needs_human_verify": false,
+        "observance": "actual",
+        "source_edition": "WRC statutory public holiday list (Organisation of Working Time Act 1997), page read on 2026-11-20",
+        "source_locator": "'Public holidays are:' list, entry 'First Monday in May'; the first Monday of May 2027 is 3 May 2027.",
+        "source_title": "Public Holidays - Workplace Relations Commission",
+        "source_url": "https://www.workplacerelations.ie/en/what_you_should_know/public-holidays",
+        "start_date": "2027-05-03",
+        "verification_questions": []
+      },
+      {
+        "accessed_on": "2026-11-20",
+        "end_date": "2027-06-07",
+        "evidence": {
+          "observed_facts": "The WRC page states 'In Ireland there are ten public holidays each year' and lists the ten holidays by statutory rule; it prints a dated table only for 2026, so this occurrence is the rule-determined date (the first Monday of June 2027 is 7 June 2027). The page also states that where a public holiday falls on a day that is not a normal working day there is no legal entitlement to have the next working day off work, so the nominal date is recorded and no substitute date is added."
+        },
+        "holiday_name": "First Monday in June",
+        "jurisdiction_id": "IE",
+        "kind": "public_holiday",
+        "needs_human_verify": false,
+        "observance": "actual",
+        "source_edition": "WRC statutory public holiday list (Organisation of Working Time Act 1997), page read on 2026-11-20",
+        "source_locator": "'Public holidays are:' list, entry 'First Monday in June'; the first Monday of June 2027 is 7 June 2027.",
+        "source_title": "Public Holidays - Workplace Relations Commission",
+        "source_url": "https://www.workplacerelations.ie/en/what_you_should_know/public-holidays",
+        "start_date": "2027-06-07",
+        "verification_questions": []
+      },
+      {
+        "accessed_on": "2026-11-20",
+        "end_date": "2027-05-01",
+        "evidence": {
+          "observed_facts": "The table prints '노동절' on '5월 1일' (Saturday). The press release states 노동절 became a 관공서 공휴일 by the 2026-04 designation and is applied from 2026, so the 2027 date is a printed 공휴일 row and not an inference."
+        },
+        "holiday_name": "노동절 (Labour Day)",
+        "jurisdiction_id": "KR",
+        "kind": "public_holiday",
+        "needs_human_verify": false,
+        "observance": "actual",
+        "source_edition": "2027년 월력요항 (우주항공청공고 제2026-0078호, 관보게재일 2026-06-29)",
+        "source_locator": "□ 공휴일 표, '관공서의 공휴일' 영역 행: '노동절 | 5월 1일 | 토'",
+        "source_title": "2027년 월력요항 - 우주항공청",
+        "source_url": "https://www.kasa.go.kr/bbs/BBSMSTR_000000000018/view.do?nttId=B000000003234Li6nD2",
+        "start_date": "2027-05-01",
+        "verification_questions": []
+      },
+      {
+        "accessed_on": "2026-11-20",
+        "end_date": "2027-05-03",
+        "evidence": {
+          "observed_facts": "The table prints '대체공휴일(노동절)' on '5월 3일' (Monday) as its own row, because 노동절 falls on a Saturday. The date and the substitute designation are printed by the source."
+        },
+        "holiday_name": "대체공휴일(노동절) (Substitute holiday for Labour Day)",
+        "jurisdiction_id": "KR",
+        "kind": "public_holiday",
+        "needs_human_verify": false,
+        "observance": "substitute",
+        "source_edition": "2027년 월력요항 (우주항공청공고 제2026-0078호, 관보게재일 2026-06-29)",
+        "source_locator": "□ 공휴일 표, '관공서의 공휴일' 영역 행: '대체공휴일(노동절) | 5월 3일 | 월'",
+        "source_title": "2027년 월력요항 - 우주항공청",
+        "source_url": "https://www.kasa.go.kr/bbs/BBSMSTR_000000000018/view.do?nttId=B000000003234Li6nD2",
+        "start_date": "2027-05-03",
+        "verification_questions": []
+      }
+    ],
+    "host_jurisdiction_id": "KR:seoul",
+    "jurisdiction_ids": [
+      "AT",
+      "AT:vienna",
+      "CA",
+      "CA-BC",
+      "CA-BC:vsb",
+      "CA-ON",
+      "CA-ON:tdsb",
+      "CZ",
+      "CZ:prague",
+      "DE-BE",
+      "DE-BY",
+      "DE-HE",
+      "GB-ENG:camden",
+      "GB-NIR",
+      "GB-SCT",
+      "GB-SCT:edinburgh",
+      "GB-WLS:cardiff",
+      "GB:eng-wls",
+      "IE",
+      "JP",
+      "JP:tokyo",
+      "KR",
+      "KR:seoul",
+      "PL",
+      "PL:mazowieckie",
+      "TH",
+      "TH:bangkok",
+      "US",
+      "US-CA",
+      "US-CA:lausd",
+      "US-CA:sfusd",
+      "US-NY:nycps",
+      "US-WA",
+      "US-WA:sps"
+    ]
+  },
+  "city_name": "Seoul",
+  "city_slug": "seoul-kr",
+  "co_host_candidates": [],
+  "communities": [
+    {
+      "accessed_on": "2026-11-20",
+      "activity_status": "active",
+      "cadence": "Bi-weekly 'AI Adoption Talk - Learning & Talking on AI' with a 2026 series: 2026-06-06 (Robotics & Tech Stocks), 2026-06-20, 2026-07-04, 2026-07-18, 2026-09-05, 2026-09-19, 2026-10-03, 2026-10-17, 2026-10-31, 2026-11-14, 2026-11-28; next listed 2026-12-12",
+      "city_slug": "seoul-kr",
+      "cohost_evidence_phrase": null,
+      "cohost_open": false,
+      "contact_info": null,
+      "evidence": {
+        "inference": "A regular, reasonably sized Seoul AI audience with a predictable bi-weekly slot; good audience signal, co-host openness unknown.",
+        "observed_facts": "Rendered Meetup group and events pages (meetup.com/ai-seoul-public/, fetched 2026-11-20) return 'AI Seoul 4.9 • 18 ratings Seoul, KR 326 members'; the events list shows repeated '✨ AI Adoption Talk - Learning & Talking on AI' entries with dates 2026-06-06, 2026-06-20, 2026-07-04, 2026-07-18, 2026-09-05, 2026-09-19, 2026-10-03, 2026-10-17, 2026-10-31, 2026-11-14, 2026-11-28 and 2026-12-12 (one dated 2026-06-06 is titled '✨ AI Adoption Talk - Robotics & Tech Stocks'). The about text: 'Our group is focused on learning and networking within the realm of artificial intelligence and robotics.' The about section links a Kakao open chat ('Kakao Group: https://open.kakao.com/o/pV7r9rii'), recorded here because contact_info must be a structured object or null."
+      },
+      "focus_tags": [
+        "ai",
+        "machine_learning"
+      ],
+      "group_name": "AI Seoul (Meetup group)",
+      "member_size_public": 326,
+      "needs_human_verify": true,
+      "network": "independent (Meetup)",
+      "source_title": "AI Seoul | Meetup — events",
+      "source_url": "https://www.meetup.com/ai-seoul-public/events/",
+      "typical_venue": null,
+      "uncertainty_notes": "Member count (326) and rating (4.9, 18 ratings) are public on the group page. The event list shows dates and titles but not venues or headcounts. Sixteen dated 2026 entries appear on the rendered events page, counting both past and upcoming.",
+      "verification_questions": [
+        "Confirm the group's organiser team and whether they would co-host a DeAI Day or provide an audience channel (the page lists no collaboration language).",
+        "Confirm the typical venue and headcount of the bi-weekly AI Adoption Talk (not stated on the events list)."
+      ]
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "activity_status": "active",
+      "cadence": "Irregular builder demo nights; the chapter page shows 'Next event: Tuesday, November 24, 2026' with past events on July 2, 2026 and August 20, 2026",
+      "city_slug": "seoul-kr",
+      "cohost_evidence_phrase": null,
+      "cohost_open": false,
+      "contact_info": null,
+      "evidence": {
+        "inference": "The most credible Seoul AI-builder audience in this set (recent, dated, in-person demo nights).",
+        "observed_facts": "Official AI Tinkerers Seoul page (seoul.aitinkerers.org, fetched 2026-11-20): title 'AI Tinkerers Seoul - AI Meetups, Events, and Builder Demos 2026'; 'Next event: Tuesday, November 24, 2026'; past-event entries include 'The Prompt That Worked in Isolation and Died in Production ... (July 2, 2026)' and an August 20, 2026 talk; one past outing is described as 'a technical demo night for AI builders, featuring live demos and networking, sponsored by CROO'; the page lists organisers by first name only and was 'Last updated: November 2026'."
+      },
+      "focus_tags": [
+        "ai",
+        "machine_learning"
+      ],
+      "group_name": "AI Tinkerers Seoul",
+      "member_size_public": null,
+      "needs_human_verify": true,
+      "network": "AI Tinkerers",
+      "source_title": "AI Tinkerers Seoul - AI Meetups, Events, and Builder Demos 2026",
+      "source_url": "https://seoul.aitinkerers.org/",
+      "typical_venue": null,
+      "uncertainty_notes": "Own-page evidence is strong for activity (dated 2026 events), but the chapter posts no venue, no public member count and no collaboration or sponsorship invitation, so co-host openness is intentionally false rather than a negative claim.",
+      "verification_questions": [
+        "Confirm the chapter's current organizer roster and whether a co-hosted DeAI Day is something the Seoul organizers would consider (the page lists organizers and a past event 'sponsored by CROO', but carries no Seoul-specific open call).",
+        "Confirm the typical venue and headcount of the 2026 Seoul demo nights (not stated on the chapter page)."
+      ]
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "activity_status": "active",
+      "cadence": "Multiple sub-meetups per month: '2026년 11월 24일 19:00 KST' session, '2026년 11월 26일 19:00 KST' AWSKRUG Connect at 스파크플러스 강남 4호점 IR룸 11B, '2026년 11월 04일' Kiro 한국 사용자 모임",
+      "city_slug": "seoul-kr",
+      "cohost_evidence_phrase": null,
+      "cohost_open": false,
+      "contact_info": null,
+      "evidence": {
+        "inference": "Large, regularly meeting cloud/AI engineering audience in Seoul; a strong audience signal even without co-host language.",
+        "observed_facts": "Official AWSKRUG Meetup page (meetup.com/ko-kr/awskrug, fetched 2026-11-20) lists upcoming sessions dated '2026년 11월 24일 19:00 KST', '2026년 11월 26일 19:00 KST' ('AWSKRUG Connect' at 스파크플러스 강남 4호점 IR룸 11B) and '2026년 11월 04일', with registration deadlines such as '신청 마감 : 2026년 11월 20일 (금) 23:59'."
+      },
+      "focus_tags": [
+        "ai",
+        "mixed"
+      ],
+      "group_name": "AWSKRUG (AWS 한국사용자모임)",
+      "member_size_public": null,
+      "needs_human_verify": true,
+      "network": "AWS User Group Community",
+      "source_title": "AWSKRUG (AWS 한국사용자모임) | Meetup",
+      "source_url": "https://www.meetup.com/ko-kr/awskrug/",
+      "typical_venue": null,
+      "uncertainty_notes": "Meetup organiser page with dated 2026 sessions; member count was not captured on the fetched page, so it stays null rather than estimated.",
+      "verification_questions": [
+        "Confirm current membership size and whether the group co-hosts community events with non-AWS organisers (no co-hosting language appears on the Meetup page).",
+        "Confirm whether an AI/DeAI topic fits the group's 2027 programme and who approves topics."
+      ]
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "activity_status": "active",
+      "cadence": "Event-agency cadence: 2026 Seoul events listed on 2026-04-14 (Agentic by Eigen | Seoul Edition), 2026-05-07 (MEGA ARCADE - SEOUL), and a KBW2026 side-event run 2026-09-28 to 2026-10-02",
+      "city_slug": "seoul-kr",
+      "cohost_evidence_phrase": "'From intimate KOL dinners to summit-scale conferences, Bridge34 plans, hosts and runs off-line events for global Web3 projects in Korea.'",
+      "cohost_open": true,
+      "contact_info": null,
+      "evidence": {
+        "inference": "A production partner that could solve venue, AV and side-event logistics for a Seoul run, at commercial cost.",
+        "observed_facts": "Bridge34 events page (bridge34.com/events, fetched 2026-11-20): heading 'Where Web3 Meets Seoul'; 'From intimate KOL dinners to summit-scale conferences, Bridge34 plans, hosts and runs off-line events for global Web3 projects in Korea.'; listed Seoul events include 'Apr 14, 2026 · Seoul Agentic by Eigen | Seoul Edition', 'May 7, 2026 · Seoul MEGA ARCADE - SEOUL', and KBW2026 side events dated Sep 28 - Oct 2, 2026."
+      },
+      "focus_tags": [
+        "web3",
+        "mixed"
+      ],
+      "group_name": "Bridge34",
+      "member_size_public": null,
+      "needs_human_verify": true,
+      "network": "independent",
+      "source_title": "Bridge34 Off-Line Events — Where Web3 Meets Seoul",
+      "source_url": "https://bridge34.com/events",
+      "typical_venue": null,
+      "uncertainty_notes": "The own-page language proves they run events in Seoul, not that they will partner for free; cohost_open is recorded as an invitation to assess, per the schema rule.",
+      "verification_questions": [
+        "Confirm whether Bridge34 is open to co-organising a free community DeAI Day (their page states they plan/host/run events for global Web3 projects, which is a commercial engagement model, not a stated community partnership).",
+        "Confirm the commercial terms and lead time for a Seoul venue-plus-production engagement."
+      ]
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "activity_status": "active",
+      "cadence": "Hackathon series visiting Seoul: 'DIGITAL AF Seoul — Hackathon' 2026-10-01 14:00-18:00 KST (4-hour build session inside DIGITAL AF Seoul, Yeongdong-daero/Seoul)",
+      "city_slug": "seoul-kr",
+      "cohost_evidence_phrase": null,
+      "cohost_open": false,
+      "contact_info": null,
+      "evidence": {
+        "inference": "A working hackathon operator with a Seoul 2026 footprint; relevant if the run wants a build track, at commercial/partnership cost.",
+        "observed_facts": "builderbase.com/event/digital-af-seoul-hackathon (fetched 2026-11-20): 'DIGITAL AF Seoul — Hackathon', 'Oct 1, 2026 · Yeongdong-daero, KR', 'Hosted by Builderbase Hackathons', \"The Seoul Build Session drops builders into the middle of a five day art, gaming and tech festival during Korea Blockchain Week... judged the same night.\", tech partners lovable.dev and elevenlabs.io; embedded schema.org JSON-LD: \"startDate\":\"2026-10-01T05:00:00+00:00\", \"endDate\":\"2026-10-01T09:00:00+00:00\", \"price\":0. The DIGITAL AF calendar (luma.com/DigitalAF2026) lists 'Sep 30 ... DIGITAL AF Seoul: Hackathon - In person Builderbase Hackathons'."
+      },
+      "focus_tags": [
+        "web3",
+        "ai",
+        "mixed"
+      ],
+      "group_name": "Builderbase Hackathons (BuilderBase)",
+      "member_size_public": null,
+      "needs_human_verify": true,
+      "network": "Builderbase",
+      "source_title": "DIGITAL AF Seoul Hackathon | 4-Hour Build Session — Builderbase",
+      "source_url": "https://builderbase.com/event/digital-af-seoul-hackathon",
+      "typical_venue": "DIGITAL AF Seoul venue, 14-15 Yangjae-dong, Seocho-gu, Seoul (per the DIGITAL AF calendar listing)",
+      "uncertainty_notes": "The event is confirmed by BuilderBase's own event page (schema.org Event with startDate 2026-10-01T05:00Z, price 0) and by the DIGITAL AF Seoul calendar. BuilderBase is an international hackathon operator, not a Seoul membership community, so it is recorded as a hackathon-capability signal. focus_tags cannot carry a hackathon value in schema 2.4, so the hackathon role is recorded in cadence and this note.",
+      "verification_questions": [
+        "Confirm whether BuilderBase would co-run a Seoul DeAI hackathon or demo track in 2027 H1 (the page describes a single 2026 Seoul event and its tech partners, not a standing partnership offer).",
+        "Confirm typical participant numbers and the Seoul operating team."
+      ]
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "activity_status": "active",
+      "cadence": "Weekly Korean-language Ethereum research digests (ACDE #249 2026-11-19, ACDC #191 2026-11-12, ACDT #103 2026-11-16) plus co-hosted Seoul events such as 'Ethereum Korea One Genesis' (2026-09-28/29)",
+      "city_slug": "seoul-kr",
+      "cohost_evidence_phrase": null,
+      "cohost_open": false,
+      "contact_info": null,
+      "evidence": {
+        "inference": "An active Korean Ethereum research and builder community with recent Seoul event organisation; relevant as an audience signal for a Web3/DeAI track.",
+        "observed_facts": "ethcollective.xyz (fetched 2026-11-20): 'Ethereum Collective Korea (ECK) 한국 이더리움 생태계를 위한 공공재를 만드는 비영리 콜렉티브입니다. 리서치, 뉴스, 주간 리포트, 커뮤니티 이니셔티브를 한국어로 제공합니다.' Recent posts include 'ACDE #249 · 11월 19일', 'ACDT #103 · 11월 16일', 'ACDC #191 · 11월 12일', '월간 EIP - 2026년 10월'. A notice dated '2026.09.29' reads: '[공지] Ethereum Korea One Genesis · Day 2 Builder Day, 오늘 성수에서 열립니다 ... 800명이 넘는 분들이 등록해 주셨고, 그중 500명 정도를 승인했습니다.'"
+      },
+      "focus_tags": [
+        "web3"
+      ],
+      "group_name": "Ethereum Collective Korea (ECK)",
+      "member_size_public": null,
+      "needs_human_verify": true,
+      "network": "independent Korean Ethereum public-goods collective",
+      "source_title": "ECK — Ethereum Collective Korea",
+      "source_url": "https://ethcollective.xyz/",
+      "typical_venue": "성수 (Seongsu) multi-floor venue for Ethereum Korea One Genesis Day 2, per the collective's own notice",
+      "uncertainty_notes": "Activity evidence is the collective's own site: dated research posts through 2026-11-19 and a notice dated 2026.09.29 describing the Ethereum Korea One Genesis builder day. Attendance figures (800 registered, ~500 approved) are self-reported in that notice.",
+      "verification_questions": [
+        "Confirm the collective's current organisers and whether it would co-host or promote a DeAI Day (the site describes public-goods work, not event partnerships).",
+        "Confirm the exact attendance and venue for Ethereum Korea One Genesis (registered/approved figures are from the collective's own notice)."
+      ]
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "activity_status": "active",
+      "cadence": "Annual DevDay plus programme work: 'openKcloud DevDay 2026' held 2026-11-10 13:30-18:00 at ST Center (과학기술회관) 중회의실3, Seoul",
+      "city_slug": "seoul-kr",
+      "cohost_evidence_phrase": null,
+      "cohost_open": false,
+      "contact_info": null,
+      "evidence": {
+        "inference": "A live Seoul AI-infrastructure audience with public-sector and NPU-industry reach; a topic signal (AI infra/observability) rather than a consumer AI audience.",
+        "observed_facts": "전자신문 (etnews.com/20261030000252, published 2026-10-30): \"한국인공지능클라우드산업협회(KACI)는 오픈클라우드(openKcloud) 커뮤니티가 주관하는 'openKcloud DevDay 2026' 컨퍼런스가 오는 11월 10일 서울 ST센터 중회의실3에서 열린다\" and quotes '최현화 openKcloud 커뮤니티 리더'. 디지털데일리 (2026-11-02): \"오픈케이클라우드(openKcloud) 커뮤니티는 오는 11월10일 오후 1시30분 서울 ST센터 중회의실3에서 '오픈케이클라우드 데브데이 2026'을 개최한다\". Event registration page (event-us.kr/openkcloud/event/137324, fetched 2026-11-20): 'openKcloud DevDay 2026 ... 일시 11월 10일(화) 13:30 ~ 18:00 ... 장소 서울 강남구 테헤란로7길 22 ST Center(과학기술회관) 중회의실3 ... 비용 무료 ... 주최 OpenKcloud 커뮤니티'."
+      },
+      "focus_tags": [
+        "ai",
+        "machine_learning"
+      ],
+      "group_name": "openKcloud 커뮤니티 (OpenKcloud community, ETRI-operated)",
+      "member_size_public": null,
+      "needs_human_verify": true,
+      "network": "ETRI / K-cloud programme (KACI partners)",
+      "source_title": "openKcloud DevDay 2026 「모두를 위한 AI, 관측에서 서비스까지 AI로 연결되는 클라우드」 — 이벤터스 (hosted by openkcloud 커뮤니티)",
+      "source_url": "https://event-us.kr/openkcloud/event/137324",
+      "typical_venue": "ST Center (과학기술회관) 중회의실3, 서울 강남구 테헤란로7길 22",
+      "uncertainty_notes": "The event date and venue are corroborated by three independent outlets (전자신문 2026-10-30, 디지털데일리 2026-11-02, 아이티데일리 2026-10-30) and by the event registration page; the event-us page renders its schedule client-side, so the quoted date comes from the press notice plus the aggregator listing. Operated by ETRI under the K-cloud programme with KETI, Innogrid, Orchestro, Mobilint, Kyung Hee, Yonsei and KACI.",
+      "verification_questions": [
+        "Confirm the community's 2027 programme and whether it co-hosts with non-ETRI organisers (the event channel is a public-sector programme, not a membership community).",
+        "Confirm typical headcount; the event registration page did not show a capacity figure on the fetched HTML."
+      ]
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "activity_status": "active",
+      "cadence": "Monthly book club plus workshops and seminars: 2026-02-07 seminar, 2026-03-04 book club, 2026-03-21 Git workshop, 2026-04-01 book club, 2026-04-25 Django open-source workshop, 2026-05-06 book club, 2026-05-30 career seminar, 2026-06-03 book club, 2026-07-26 Git workshop (2nd), 2026-09-05 Upstage team-lead seminar; PyLadies Asia Conference 2026 announced for 2026-11-29 (upcoming at check time)",
+      "city_slug": "seoul-kr",
+      "cohost_evidence_phrase": null,
+      "cohost_open": false,
+      "contact_info": null,
+      "evidence": {
+        "inference": "Active Seoul Python/data community with a steady 2026 in-person cadence and women-in-tech reach; a plausible outreach partner for an inclusive audience.",
+        "observed_facts": "Rendered Meetup events page (meetup.com/seoul-pyladies-meetup/events/, fetched 2026-11-20) lists dated events '2026-02-07 AI 시대, 해외 취업 시장은 어떻게 다를까? ... 세미나', '2026-03-04 2026년 3월 PyLadies Seoul 월간 북클럽', '2026-03-21 Pyladies seoul: 깃 튜토리얼 워크샵', '2026-04-01 2026년 4월 PyLadies Seoul 월간 북클럽', '2026-04-25 [PyLadies Seoul] Django 오픈소스 기여 워크샵(Beginner Friendly)', '2026-05-06 2026년 5월 PyLadies Seoul 월간 북클럽', '2026-05-30 정답 대신 나만의 리듬으로 ... 세미나', '2026-06-03 2026년 6월 PyLadies Seoul 월간 북클럽', '2026-07-26 PyLadies Seoul Git 튜토리얼 워크샵 (2회차)', '2026-09-05 생물학도에서 개발팀 리더로 ... (Upstage Team Lead 문수영님 세미나)', and the upcoming '2026-11-29 PyLadies Asia Conference 2026'. Member count not shown on the fetched page."
+      },
+      "focus_tags": [
+        "data_science",
+        "ai"
+      ],
+      "group_name": "PyLadies Seoul",
+      "member_size_public": null,
+      "needs_human_verify": true,
+      "network": "PyLadies",
+      "source_title": "PyLadies Seoul | Meetup",
+      "source_url": "https://www.meetup.com/seoul-pyladies-meetup/",
+      "typical_venue": null,
+      "uncertainty_notes": "Past 2026 events are now cited alongside the announced 2026-11-29 conference, so activity no longer rests on a future date. Member count is still not published on the fetched pages.",
+      "verification_questions": [
+        "Confirm the group's 2027 calendar and whether it would co-host or partner on a DeAI Day audience track (the page states PyLadies Seoul hosts the Asia Conference but no collaboration call).",
+        "Confirm current public member count (not captured on the fetched page)."
+      ]
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "activity_status": "active",
+      "cadence": "Ran dated Seoul events during Korea Blockchain Week 2026: 'Solana Ecosystem Day' 2026-09-28 14:00-18:00 (Cafe en Travel, Gangnam, hosted by Metaplex x Superteam Korea), 'Solana Summit Korea' 2026-09-30 09:30-17:00 (Yeouido, hosted by Superteam Korea, Four Pillars, Solana Foundation) and 'SANC Nine' 2026-10-01 14:00-18:00 (localhost:web3, hosted by Sanctum x Superteam Korea)",
+      "city_slug": "seoul-kr",
+      "cohost_evidence_phrase": null,
+      "cohost_open": false,
+      "contact_info": null,
+      "evidence": {
+        "inference": "A Solana-ecosystem builder community that demonstrably organises or co-hosts in-person Seoul events during KBW; useful as an audience signal and a plausible co-host for a Web3/DeAI track.",
+        "observed_facts": "Official KBW events page (koreablockchainweek.com/events, fetched 2026-11-20) lists: 'NETWORKING Solana Ecosystem Day Sep 28 2:00 PM - 6:00 PM Cafe en Travel 45 Gangnam-daero 102-gil, Gangnam District, Seoul, South Korea Hosted by Metaplex x Superteam Korea'; 'conference Solana Summit Korea September 30 9:30 AM - 5:00 PM Yeouido, Seoul (Accepted guests only) Hosted by: Superteam Korea, Four Pillars, Solana Foundation'; 'NETWORKING SANC Nine October 1 2:00 PM - 6:00 PM localhost:web3 로컬호스트Web3 609-1 Yeoksam-dong, Gangnam District, Seoul Hosted by: Sanctum · Superteam Korea'. The Superteam Earn Korea page (superteam.fun/earn/regions/korea) remains a bounty/grant platform with no dates."
+      },
+      "focus_tags": [
+        "web3"
+      ],
+      "group_name": "Superteam Korea",
+      "member_size_public": null,
+      "needs_human_verify": true,
+      "network": "Superteam (Solana ecosystem)",
+      "source_title": "Welcome to Superteam Earn South Korea | Discover Bounties and Grants",
+      "source_url": "https://superteam.fun/earn/regions/korea",
+      "typical_venue": null,
+      "uncertainty_notes": "Upgraded from intermittent to active on 2026-11-20 review: three dated in-person Seoul events in Sept-Oct 2026 are listed on the official Korea Blockchain Week events page. The evidence is an organiser listing rather than Superteam Korea's own site, so co-host openness remains false and unverified.",
+      "verification_questions": [
+        "Confirm Superteam Korea's current Seoul leads and whether a DeAI Day could be co-hosted or promoted through the Korea channel (the KBW listing proves event organisation, not a partnership offer).",
+        "Confirm the community's own event calendar for 2027 H1 (the earn/bounty page and the KBW listing are the only sources observed)."
+      ]
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "activity_status": "active",
+      "cadence": "Recurring in-person seminars (e.g. '11월 10일(화) 10:00 - 12:00' with status 모집완료; '11월 26일(목)' and '11월 27일(금)' sessions 모집중) plus 모두모임 study groups and the annual 모두콘 conference ('모두콘 2026 - Deeper in AI')",
+      "city_slug": "seoul-kr",
+      "cohost_evidence_phrase": null,
+      "cohost_open": false,
+      "contact_info": null,
+      "evidence": {
+        "inference": "A large Seoul AI-education community with live in-person seminars at its 강남 campus and an annual conference; both an audience signal and a plausible co-host.",
+        "observed_facts": "Modulabs event listing (biz.modulabs.co.kr/event?page=1, rendered 2026-11-20) shows '변화근육, AI에게 대체되지 않는 나를 만드는 힘 — 11월 10일(화) 10:00 - 12:00 | 역삼디오슈페리움 2층 모두의연구소 강남캠퍼스' (모집완료), 'Notion 당신의 생각을 현실로만드는 공간 (입문편) — 11월 26일(목) 10:00 - 12:00 | 대전테크노파크 ... 모두의연구소' (모집중) and 'Notion ... (응용편) — 11월 27일(금) 05:00 - 09:00' (모집중). The main community page (modulabs.co.kr/community/momos) lists '모두모임 - 함께 성장하는 즐거움', '모두콘 2026 - Deeper in AI' and '모두팝 - AI/SW 세미나'."
+      },
+      "focus_tags": [
+        "ai",
+        "machine_learning",
+        "data_science"
+      ],
+      "group_name": "모두의연구소 (Modulabs)",
+      "member_size_public": null,
+      "needs_human_verify": true,
+      "network": "Modulabs",
+      "source_title": "행사/세미나 | 모두의연구소 (Modulabs event listing)",
+      "source_url": "https://biz.modulabs.co.kr/event?page=1",
+      "typical_venue": "역삼디오슈페리움 2층 모두의연구소 강남캠퍼스",
+      "uncertainty_notes": "The event listing prints day-month and weekday without a year; the weekday/day pairs match 2026 (2026-11-10 is a Tuesday, 2026-11-26 a Thursday, 2026-11-27 a Friday), so the sessions are read as 2026 dates.",
+      "verification_questions": [
+        "Confirm the date, venue and expected headcount of 모두콘 2026 (the conference is named on the site but no date was visible on the fetched pages).",
+        "Confirm whether Modulabs would co-host or lend its community channel for a Seoul DeAI Day."
+      ]
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "activity_status": "active",
+      "cadence": "Recurring education meetup; the 31st session was held 2026-11-14 (Sat) 10:00-18:00 at KISA 서울청사 10층 기업성장허브",
+      "city_slug": "seoul-kr",
+      "cohost_evidence_phrase": null,
+      "cohost_open": false,
+      "contact_info": null,
+      "evidence": {
+        "inference": "Shows a live Seoul Web3 education audience meeting on Saturdays, which is useful for week-day/time fit but not for scale.",
+        "observed_facts": "KISA notice (kisa.or.kr/401/form?lang_type=KO&postSeq=3787, fetched 2026-11-20), 등록일 2026-10-21: '「2026 블록체인 밋업데이(BCMD)」 31회차 교육생 모집'; '2026년 11월 14일(토), 2026 블록체인 밋업데이(BCMD)가 개최됩니다. -토큰증권 제도화와 스마트 컨트랙트-'; '■ 일시 : 2026.11.14.(토) 10:00~18:00'; '■ 장소 : 한국인터넷진흥원 서울청사 10층 기업성장허브 (서울시 송파구 중대로 135 (가락동) IT벤처타워)'; '선착순 35명'."
+      },
+      "focus_tags": [
+        "web3"
+      ],
+      "group_name": "블록체인 밋업데이 (Blockchain Meetup Day, BCMD) — 한국인터넷진흥원(KISA)",
+      "member_size_public": null,
+      "needs_human_verify": true,
+      "network": "KISA (Korea Internet & Security Agency)",
+      "source_title": "「2026 블록체인 밋업데이(BCMD)」 31회차 교육생 모집(~11.13)",
+      "source_url": "https://kisa.or.kr/401/form?lang_type=KO&postSeq=3787",
+      "typical_venue": "한국인터넷진흥원 서울청사 10층 기업성장허브 (서울시 송파구 중대로 135, 가락동 IT벤처타워)",
+      "uncertainty_notes": "A public-agency programme rather than a member community; recorded as an audience and topic signal, not as a co-host candidate.",
+      "verification_questions": [
+        "Confirm the 2027 BCMD schedule and whether KISA would co-promote a DeAI Day to its blockchain audience (the page is an education-recruitment notice, not a partnership channel).",
+        "Confirm typical headcount (the notice caps confirmed attendees at 35 per session)."
+      ]
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "activity_status": "intermittent",
+      "cadence": "Seasonal large events; the organizer page rendered on 2026-11-20 shows an 'Upcoming Events' section with no event listed, and a search index still carries 'Build with AI Seoul 2026 with Google DeepMind | May 2, 2026'",
+      "city_slug": "seoul-kr",
+      "cohost_evidence_phrase": null,
+      "cohost_open": false,
+      "contact_info": null,
+      "evidence": {
+        "inference": "Likely a seasonal Google-dev community between event cycles; the 2026 May flagship suggests real reach but no current cadence is observable.",
+        "observed_facts": "Headless-rendered fetch of https://gdg.community.dev/gdg-seoul/ on 2026-11-20 returned the GDG Seoul organizer shell with an 'Upcoming Events' section and no listed event, plus footer '© 2026'. A plain HTTP fetch of the same URL returned 404. A web search on the same date returned the organizer page title 'Google Developer Groups GDG Seoul' and the event 'Build with AI Seoul 2026 with Google DeepMind | May 2, 2026' at gdg.community.dev/events/details/google-gdg-seoul-presents-build-with-ai-seoul-2026-with-google-deepmind/."
+      },
+      "focus_tags": [
+        "ai",
+        "mixed"
+      ],
+      "group_name": "GDG Seoul (Google Developer Groups Seoul)",
+      "member_size_public": null,
+      "needs_human_verify": true,
+      "network": "Google Developer Groups (GDG)",
+      "source_title": "Google Developer Groups GDG Seoul",
+      "source_url": "https://gdg.community.dev/gdg-seoul/",
+      "typical_venue": null,
+      "uncertainty_notes": "The organizer page was reachable only through headless rendering (a direct HTTP fetch returned 404) and listed no upcoming events at fetch time; activity is therefore recorded as intermittent with an explicit question rather than as verified active.",
+      "verification_questions": [
+        "Confirm the current GDG Seoul event calendar: the organizer page rendered on 2026-11-20 shows 'Upcoming Events' with no upcoming event listed, while a search index still carries the May 2, 2026 'Build with AI Seoul 2026 with Google DeepMind' event.",
+        "Confirm whether GDG Seoul co-hosts with external community organisers."
+      ]
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "activity_status": "intermittent",
+      "cadence": "Digital-first: Korean tutorial/blog posts through 2026-10-28, plus a reported in-person 'KVCache Meetup Korea' on 2026-09-30 at 드림플러스 강남",
+      "city_slug": "seoul-kr",
+      "cohost_evidence_phrase": null,
+      "cohost_open": false,
+      "contact_info": null,
+      "evidence": {
+        "inference": "A translation/tutorial community with ML reach; in-person cadence unknown.",
+        "observed_facts": "pytorch.kr (fetched 2026-11-20) shows blog entries dated '2026-10-28', '2026-10-23' and '2026-10-20', and a post describing '지난 2026년 9월 30일 저녁, 서울 강남 드림플러스에서 KVCache Meetup Korea 행사가 진행되었습니다'."
+      },
+      "focus_tags": [
+        "machine_learning",
+        "ai"
+      ],
+      "group_name": "파이토치 한국 사용자 모임 (PyTorch Korea)",
+      "member_size_public": null,
+      "needs_human_verify": true,
+      "network": "PyTorch Korea",
+      "source_title": "파이토치 한국 사용자 모임 (pytorch.kr)",
+      "source_url": "https://pytorch.kr/",
+      "typical_venue": null,
+      "uncertainty_notes": "Evidence is digital-first plus a third-party meetup reported on the site; that is not the same as an own-organised in-person series, hence intermittent rather than active.",
+      "verification_questions": [
+        "Confirm whether the group still runs its own in-person Seoul meetups (the fetched site shows blog activity and a report of a September 2026 meetup, but no own events calendar).",
+        "Confirm who the current organisers are and whether they would co-host a DeAI Day session."
+      ]
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "activity_status": "intermittent",
+      "cadence": "The organisation runs the 서울 R Meetup and the annual 한국 R 컨퍼런스 per its site navigation; no 2026 meetup date was readable this pass",
+      "city_slug": "seoul-kr",
+      "cohost_evidence_phrase": null,
+      "cohost_open": false,
+      "contact_info": null,
+      "evidence": {
+        "inference": "An established Korean R/data-science non-profit with a Seoul meetup brand; current cadence unverified this pass.",
+        "observed_facts": "r2bit.com (fetched 2026-11-20): '공익법인 한국 R 사용자회는 2022년에 설립되어 ...' with navigation entries '한국 R 컨퍼런스', '서울 R Meetup', '서울 R Meetup Archive', '글로벌 R Meetup'; footer '© 2026 BitStat'. The direct subpage r2bit.com/seoul-r-meetup/ returned 'Page not found · GitHub Pages 404'."
+      },
+      "focus_tags": [
+        "data_science",
+        "machine_learning"
+      ],
+      "group_name": "한국 R 사용자회 (Korea R User Group) — 서울 R Meetup",
+      "member_size_public": null,
+      "needs_human_verify": true,
+      "network": "R User Groups (R Consortium)",
+      "source_title": "한국 R 사용자회 (r2bit.com)",
+      "source_url": "https://r2bit.com/",
+      "typical_venue": null,
+      "uncertainty_notes": "The 2026 Q4 run recorded a monthly Seoul R Meetup cadence from this site; this pass could not re-observe a dated 2026 meetup, so the status is downgraded to intermittent and the old cadence is not restated as fact.",
+      "verification_questions": [
+        "Confirm the 2026/2027 서울 R Meetup dates: the site's '서울 R Meetup' subpage returned HTTP 404 at fetch time and only the navigation label was observable.",
+        "Confirm whether the group would co-host a data-science track at a Seoul DeAI Day."
+      ]
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "activity_status": "dormant",
+      "cadence": "Site describes bi-weekly meetups plus Civic Hackers' Club, Open Research Club and Ethcon Korea, but the newest notices shown are 2024-era",
+      "city_slug": "seoul-kr",
+      "cohost_evidence_phrase": null,
+      "cohost_open": false,
+      "contact_info": null,
+      "evidence": {
+        "inference": "The Ethcon Korea-organising scene appears to have moved on; do not treat this site as a current 2027 partner without a fresh check.",
+        "observed_facts": "ethereum-seoul.community: 'A hub for Ethereum Punks in Seoul. Participate in bi-weekly meetups, Open Research Club, Civic Hack Club, and the annual Ethcon conference.'; '이더리움 서울 커뮤니티는 월 2회 소규모 밋업을 가지며...'; the listed notices are '6월 이더리움 서울 bi-weekly meetup 안내' and '5월 이더리움 서울 bi-weekly meetup 안내' with agendas referencing '이드콘한국 2024 운영위원회 회의'."
+      },
+      "focus_tags": [
+        "web3"
+      ],
+      "group_name": "Ethereum Seoul Community",
+      "member_size_public": null,
+      "needs_human_verify": true,
+      "network": "Ethereum Seoul Community",
+      "source_title": "Ethereum Seoul Community | A hub for Ethereum Punks in Seoul",
+      "source_url": "https://ethereum-seoul.community/",
+      "typical_venue": "Ethaewon Hacker House (EHH), 용산구 회나무로 60-1 — as printed in the 2024 meetup notices",
+      "uncertainty_notes": "Dormant on own-page evidence (2024-era notices last). The venue line is quoted from those 2024 notices and is historical, not current.",
+      "verification_questions": [
+        "Confirm whether the community is still running: the site's newest announcements are the '6월 이더리움 서울 bi-weekly meetup' and '이드콘한국 2024 운영위원회' notices, with no 2025 or 2026 schedule visible."
+      ]
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "activity_status": "dormant",
+      "cadence": "No event after December 2022 on the group's own Past events list",
+      "city_slug": "seoul-kr",
+      "cohost_evidence_phrase": null,
+      "cohost_open": false,
+      "contact_info": null,
+      "evidence": {
+        "inference": "A large but inactive membership pool; any Seoul Ethereum audience in 2027 would have to be re-activated through a different organiser.",
+        "observed_facts": "meetup.com/seoul-ethereum-meetup: '4.5 • 422 ratings', 'Seoul, KR', '3,983 members'; 'Past events 46 See all' with the most recent entry 'Thu, Dec 15, 2022 · 6:00 PM KST — <비탈릭 부테린-지분증명> 과 머지이후 이더리움 확장성 확보 전략'."
+      },
+      "focus_tags": [
+        "web3"
+      ],
+      "group_name": "Seoul Ethereum Meetup",
+      "member_size_public": 3983,
+      "needs_human_verify": true,
+      "network": "Seoul Ethereum Meetup",
+      "source_title": "Seoul Ethereum Meetup | Meetup",
+      "source_url": "https://www.meetup.com/seoul-ethereum-meetup/",
+      "typical_venue": null,
+      "uncertainty_notes": "Dormant on own-page evidence (no event since 2022-12-15) despite 3,983 members; retained only as historical context for the Seoul Ethereum audience.",
+      "verification_questions": [
+        "Confirm whether the group has any post-2022 activity: the own page's 'Past events' list begins with 'Thu, Dec 15, 2022' and shows 46 past events with no later date."
+      ]
+    }
+  ],
+  "country": "South Korea",
+  "currency": "KRW",
+  "currency_assumptions": [
+    "Budget/scoring currency is USD; venue-local costs are recorded in KRW (cost_local_amount/cost_local_currency KRW).",
+    "USD equivalent at the ECB euro foreign exchange reference rate dated 2026-11-20 (EUR 1 = USD 1.0990; EUR 1 = KRW 1472.04), fetched 2026-11-20 from https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml (Cube time='2026-11-20'); derived 1 KRW = USD 0.000746583 (1.0990 / 1472.04), i.e. 1 USD = 1339.44 KRW. Every converted KRW amount in venues.raw.json records this dated basis; where no dated conversion basis applies the USD equivalent stays null with a question. No FX rate is invented.",
+    "KRW amounts quoted from official rate tables that state '부가가치세 별도' (VAT excluded) are converted as published; VAT and any 부대비용 remain open verification questions, not assumptions."
+  ],
+  "date_window": "2027-04-01 through 2027-06-30",
+  "event_duration_hours": 8,
+  "generated_at": "2026-11-20T00:00:00Z",
+  "open_questions": [
+    "Assess whether a side event or co-located session during the show would reach the same AI/ICT builder audience, or whether the show mainly draws enterprise buyers.",
+    "Blocked/unusable sources this pass: aT Center (WAF challenge), 한국과학기술회관 stcenter.or.kr (connection timeout), wework.com (403), front1.co.kr (NXDOMAIN), sparkplus.co.kr (empty response), ddp.or.kr (curl 0 bytes; needed headless render), parks.seoul.go.kr deep links (404; content read through the search-indexed page text). aiexpo.co.kr rejects plain curl but renders correctly under headless Chromium, which is how the 2027 dates were read.",
+    "Calendar research on 2026-11-20 found three confirmed 2027 H1 Seoul AI events and one industrial trade show: WIS 2027 (2027-04-21..23, COEX), AI EXPO KOREA 2027 (2027-04-14..16, COEX Hall A) and 서울메타위크 2027 (2027-04-29..30, COEX Grand Ballroom) are recorded as related rows with opportunity_kind ai and status confirmed and live in calendar_context.raw.json adjacent_events; AW 2027 (2027-03-03..05, COEX 전체 홀) is recorded as major_other for logistics. AI Summit Seoul & Expo 2027 is 2027-08-11..13 (outside H1). NextRise 2027 and Korea Blockchain Week 2027 still publish no 2027 dates and stay as leads.",
+    "Candidate Saturdays are operational input only (all 13 Saturdays of the window); they are not a recommendation, an elimination set, or a date selection; Joe alone decides the date.",
+    "Confirm attendee Wi-Fi (not in the published equipment list).",
+    "Confirm attendee Wi-Fi (not stated on the facility page).",
+    "Confirm attendee Wi-Fi (not stated on the official rental page).",
+    "Confirm attendee Wi-Fi in 300호 (the page lists A/V, fixed projector, interpretation booth and stage for rooms ≥207㎡, but not Wi-Fi).",
+    "Confirm attendee Wi-Fi in T6 (not stated on the park page).",
+    "Confirm attendee Wi-Fi in the event hall (the equipment list covers displays, mics and furniture but not Wi-Fi).",
+    "Confirm attendee Wi-Fi in 그랜드볼룸 A (not stated on the official space page).",
+    "Confirm attendee Wi-Fi in 디자인홀 (the official page lists display, audio, power and furniture but no attendee Wi-Fi).",
+    "Confirm attendee Wi-Fi in 세미나실 1 (not stated on the official rental pages).",
+    "Confirm attendee Wi-Fi in 세미나실 2 (not stated on the official rental pages).",
+    "Confirm booking terms and the operator's acceptance of a free community tech event under the standard 컨벤션센터 대관 procedure.",
+    "Confirm booking terms and the room fit: 호스트 승인 후 예약확정; seating is 73석 with tables up to 100 with floor cushions, and 케이터링 이용 시 수용 인원 50명으로 제한.",
+    "Confirm booking terms and whether a free community event is accepted (COEX runs 대관 공고 notices and a separate business rental channel).",
+    "Confirm booking terms for a free community event (DDP requires 대관 신청 and committee review; approval lead time and deposit terms are not published).",
+    "Confirm booking terms: 사업자등록증 and 행사계획서 are required for the application, and payment must be settled within 3 days of 대관 허가.",
+    "Confirm booking terms: 신청서 submission to the CJ프레시웨이 reservations team (02-2123-8052, ys.thelounge@cj.net), deposit and cancellation terms, and the 교내/동문 discount eligibility for an outside community group.",
+    "Confirm booking terms: 예약문의 → 대관신청서 이메일 접수 (livehall@ssmadang.co.kr, 02-2014-2024) and whether a non-concert community event is accepted.",
+    "Confirm booking terms: 온라인 신청 at least 7 days before use, 내부 심사 and 승인 통보, then payment; 취소 refunds are 100% at 10+ days and 80% under 10 days.",
+    "Confirm booking terms: 호스트 승인 후 예약확정 (average wait 1분 at fetch), 취소/환불 rules (이용일 기준 8일 전부터 변경·취소 환불 불가 per the listing).",
+    "Confirm current membership size and whether the group co-hosts community events with non-AWS organisers (no co-hosting language appears on the Meetup page).",
+    "Confirm current public member count (not captured on the fetched page).",
+    "Confirm Saturday availability (the COEX exhibition calendar shows weekend exhibitions, which is not evidence of meeting-room availability).",
+    "Confirm Saturday availability and the 20% 토·일·공휴일 surcharge that the table applies to 문화센터/문화교실/연수객실 rows ('토, 일, 공휴일은 기존금액의 100분의 20을 가산함') — whether it applies to 다목적강당 as well.",
+    "Confirm Saturday availability and the approval route for T6 (T1~T6 문의 02-508-2205; 문화마당/산책로 02-2133-0425).",
+    "Confirm Saturday availability and whether external (non-Yonsei) organizations can book a weekend date.",
+    "Confirm Saturday availability for 09:00-17:00 on the specific date (DDP rentals run through an application + 대관심의 committee; the published window is a daily basis time, not an availability calendar).",
+    "Confirm Saturday availability for a 09:00-17:00 event in 세미나실 2 on the specific date (the official page publishes no weekday/weekend band).",
+    "Confirm Saturday availability for a 09:00-17:00 event on the specific date: the official rate table publishes time slots (08~12 / 13~17 / 18~21) but states no weekday/weekend band, and the online booking system (컨벤션센터 온라인 예약) is the only availability source.",
+    "Confirm Saturday availability for a 09:00-17:00 event.",
+    "Confirm Saturday availability for the specific date (the host answers by phone 0507-1443-1417, weekdays 10:00-18:00).",
+    "Confirm Saturday availability for the specific date on the platform calendar.",
+    "Confirm Saturday availability for the specific date within the 7-day/60-day application window.",
+    "Confirm Saturday availability for the specific date, and note the published booking window: '신청일 기준 최대 7일 이후 60일 이전 행사만 신청 가능합니다' — a 2027 date cannot be applied for more than ~60 days ahead.",
+    "Confirm Saturday availability for the specific date: the official rent calendar (nodeul.org/rent-calendar/?calendar_type=rent-livehouse) shows per-day availability and the hall runs an active concert schedule.",
+    "Confirm screen/projection in T6 (the park page lists the rooms and the café but no AV).",
+    "Confirm screen/projection in the live hall (a concert hall typically carries stage lighting and PA, not a conference screen — this must be verified, not assumed).",
+    "Confirm screen/projection in 세미나실 1: the official rate page lists 면적 and 사용료 only; the room equipment list is published per room elsewhere and a projector/screen is not confirmed for this room.",
+    "Confirm screen/projection in 세미나실 2 (the official rate page publishes only 면적 and 사용료; the room equipment list is published per room elsewhere).",
+    "Confirm screen/projection: the facility page lists sound, lighting and instrument equipment, a house manager and four ushers, but no presentation screen or projector.",
+    "Confirm screen/projection: the 시설별 대여가능장비 list for 다목적강당 is '음향, 조명, 거울' with no screen or projector (세미나실 rows do list 빔프로젝터).",
+    "Confirm Superteam Korea's current Seoul leads and whether a DeAI Day could be co-hosted or promoted through the Korea channel (the KBW listing proves event organisation, not a partnership offer).",
+    "Confirm that a non-concert community/tech event is accepted at the performance-rental rate and terms (대관 공고 → 신청 → 심의 → 계약).",
+    "Confirm the 2026/2027 서울 R Meetup dates: the site's '서울 R Meetup' subpage returned HTTP 404 at fetch time and only the navigation label was observable.",
+    "Confirm the 2027 BCMD schedule and whether KISA would co-promote a DeAI Day to its blockchain audience (the page is an education-recruitment notice, not a partnership channel).",
+    "Confirm the 2027-04-29..30 dates and COEX Grand Ballroom booking, and whether the programme accepts community side sessions.",
+    "Confirm the all-in cost: KRW 200,000/시간 for 주말 및 공휴일, VAT 별도, 최소 3시간; the listing also states 100명 초과 시 1인 1만원 추가 요금 (max 120) and a 30-minute grace before entry, so an 8-hour booking plus setup may exceed 8 paid hours.",
+    "Confirm the all-in cost: KRW 88,000/시간 with a 2-hour minimum and no published weekend differential; confirm whether VAT, cleaning and any 10-minute overrun charge (30분 단위 추가금) apply to an 8-hour booking.",
+    "Confirm the all-in price for an 8-hour Saturday event: KRW 890,000 is the published 8~17시 rate, 부가가치세 별도 (VAT excluded); confirm VAT, 시간외 (110,000/hour), and any 부대시설 or 장비 charges.",
+    "Confirm the all-in price for an 8-hour Saturday event: 토,일,공휴일 2회 rate KRW 6,000,000 applies because a single performance over 3 hours is billed as 2회 (VAT excluded); 준비·철수 대관 is a separate KRW 1,067,000 per slot on weekends.",
+    "Confirm the all-in price: KRW 760,000 for 8~17시, 부가가치세 별도; confirm VAT and any 장비/부대시설 charges.",
+    "Confirm the basic 대관료 for 그랜드볼룸 A: the official page publishes only the LED screen usage fee (KRW 1,320,000) and the rule '4만원 이상 메뉴 식사시 기본대관료 3시간 무료'; the base room rate sits in the 백양누리_요금표 attachment and must be quoted.",
+    "Confirm the chapter's current organizer roster and whether a co-hosted DeAI Day is something the Seoul organizers would consider (the page lists organizers and a past event 'sponsored by CROO', but carries no Seoul-specific open call).",
+    "Confirm the COEX hall footprint and expected 80,000 visitors for 2027-03-03..05, and assess hotel/transport demand and venue competition for a Seoul event on the following weekend.",
+    "Confirm the collective's current organisers and whether it would co-host or promote a DeAI Day (the site describes public-goods work, not event partnerships).",
+    "Confirm the commercial terms and lead time for a Seoul venue-plus-production engagement.",
+    "Confirm the community's 2027 programme and whether it co-hosts with non-ETRI organisers (the event channel is a public-sector programme, not a membership community).",
+    "Confirm the community's own event calendar for 2027 H1 (the earn/bounty page and the KBW listing are the only sources observed).",
+    "Confirm the current GDG Seoul event calendar: the organizer page rendered on 2026-11-20 shows 'Upcoming Events' with no upcoming event listed, while a search index still carries the May 2, 2026 'Build with AI Seoul 2026 with Google DeepMind' event.",
+    "Confirm the date, venue and expected headcount of 모두콘 2026 (the conference is named on the site but no date was visible on the fetched pages).",
+    "Confirm the dates and Public Day audience on the organiser site nearer the show, and assess whether a Saturday in the same week gains or loses from the exhibition crowd.",
+    "Confirm the exact attendance and venue for Ethereum Korea One Genesis (registered/approved figures are from the collective's own notice).",
+    "Confirm the exact street address and building access before shortlisting: Space Cloud masks it ('자세한 주소는 예약 확정 후 예약 내역에서 확인할 수 있습니다') and only states 서울 역삼동 / 강남역 도보 5분, so no coordinate can be recorded honestly yet.",
+    "Confirm the exact street address and building access: Space Cloud masks the address ('자세한 주소는 예약 확정 후 예약 내역에서 확인할 수 있습니다'; only 서울 역삼동 인근 is shown), so no coordinate can be recorded honestly yet.",
+    "Confirm the group's 2027 calendar and whether it would co-host or partner on a DeAI Day audience track (the page states PyLadies Seoul hosts the Asia Conference but no collaboration call).",
+    "Confirm the group's organiser team and whether they would co-host a DeAI Day or provide an audience channel (the page lists no collaboration language).",
+    "Confirm the published dates and hall allocation on the organiser's own site before the dates are used for any planning, and assess audience overlap with a Seoul Decentralized AI Day.",
+    "Confirm the race date on the organiser site (seoul-marathon.com) and assess logistics impact on the city centre: road closures, route access, hotel demand, transport disruption and crowding for a Seoul event on a nearby weekend.",
+    "Confirm the rental fee for 300호: COEX publishes room specs and an 임대관련자료 board, but no rate for this room is exposed on the public pages, so a written quote is required.",
+    "Confirm the rental fee for 박병원홀 (no price is published; TaapSPACE application + 대관 심사, then quote).",
+    "Confirm the rental fee: no price is published. Applications run through TaapSPACE (taapspace.kr) after 대관 심사, so a written quote is needed before any cost claim.",
+    "Confirm the rental fee: the official page publishes only 문화마당 rates (T0 141,613원/시간, 나무데크 18,324원/시간); T1~T6 rates are set by the operator and are not published.",
+    "Confirm the rental fee: the official 대관안내 and 다회대관 할인 프로모션 pages describe discounts (e.g. 6회 이상 대관 시 평일 30%/주말 20% 할인 in the 2025 promotion) but no base rate is published; a written quote is required.",
+    "Confirm the seated capacity of the T6 원형회의실 and 강의실 for a 50-125 person event: the official park page describes the rooms (원형회의실 164㎡) but publishes no capacity, and the space is now operated under a 사용수익허가 by ㈜더문엔터테인먼트 (02-508-2205) rather than by the park office.",
+    "Confirm the seating fit: the venue holds round tables for banquet-style seating only, and the platform FAQ states a theatre/lecture layout requires an outside setup vendor — confirm whether a lecture-style 50-125 person layout is permitted and who supplies it.",
+    "Confirm the typical venue and headcount of the 2026 Seoul demo nights (not stated on the chapter page).",
+    "Confirm the typical venue and headcount of the bi-weekly AI Adoption Talk (not stated on the events list).",
+    "Confirm the usable daily window and whether a 09:00-17:00 eight-hour Saturday block is bookable (COEX publishes no meeting-room hours on this page).",
+    "Confirm the usable daily window for a 09:00-17:00 Saturday event (no hours are published on the space page).",
+    "Confirm the usable daily window: the published slot table is written for 공연장 (10:00-14:00 / 14:00-18:00 / 18:00-22:00); confirm that a 다목적강당 event can run 09:00-17:00 or 10:00-18:00 for eight hours.",
+    "Confirm the usable event window for an eight-hour 09:00-17:00 Saturday event.",
+    "Confirm the usable window for an eight-hour daytime event (the hall is a working concert venue).",
+    "Confirm the 다목적강당 rental fee and its unit: the official '어울림플라자 시설 대관료' table lists 다목적강당 350,000 ~ 540,000원 but the per-row 내용 column (which states '1회(4시간) 단가' for 공연장 and '시간당 단가' for 문화센터 1,2) is not repeated for 다목적강당, so the unit for this row is not published.",
+    "Confirm the 라이브홀 capacity and layout (standing vs seated) for a 50-125 person event: the official 대관안내 page describes the procedure but publishes no capacity for the Hongdae live hall.",
+    "Confirm the 심사 criteria applied to a free community AI event: the FAQ excludes '단순 친목 중심 모임' and '영리 목적' events, and one 기업(단체) may apply at most 5 times per month.",
+    "Confirm the 심사 criteria for a free community AI event and whether marketing/sponsor content is treated as '영리 목적'.",
+    "Confirm typical headcount (the notice caps confirmed attendees at 35 per session).",
+    "Confirm typical headcount; the event registration page did not show a capacity figure on the fetched HTML.",
+    "Confirm typical participant numbers and the Seoul operating team.",
+    "Confirm whether a 200-seat hall can be scaled down to a 50-125 person community event comfortably (published furniture: 98인치 TV 2대, 강연대 1개, 무선마이크 3대, 유선마이크 1대, 빔프로젝트, 2인 테이블 2개, 의자 190개).",
+    "Confirm whether an 09:00 start is possible: the official performance window is 10:00-23:00, so an 09:00-17:00 window is not covered by published hours (a 10:00-18:00 window is).",
+    "Confirm whether an AI/DeAI topic fits the group's 2027 programme and who approves topics.",
+    "Confirm whether Bridge34 is open to co-organising a free community DeAI Day (their page states they plan/host/run events for global Web3 projects, which is a commercial engagement model, not a stated community partnership).",
+    "Confirm whether BuilderBase would co-run a Seoul DeAI hackathon or demo track in 2027 H1 (the page describes a single 2026 Seoul event and its tech partners, not a standing partnership offer).",
+    "Confirm whether GDG Seoul co-hosts with external community organisers.",
+    "Confirm whether Modulabs would co-host or lend its community channel for a Seoul DeAI Day.",
+    "Confirm whether the 201.48㎡ hall can be laid out theatre-style for 50-125 people with the published furniture (2인 테이블 5개, 의자 130개).",
+    "Confirm whether the community is still running: the site's newest announcements are the '6월 이더리움 서울 bi-weekly meetup' and '이드콘한국 2024 운영위원회' notices, with no 2025 or 2026 schedule visible.",
+    "Confirm whether the group has any post-2022 activity: the own page's 'Past events' list begins with 'Thu, Dec 15, 2022' and shows 46 past events with no later date.",
+    "Confirm whether the group still runs its own in-person Seoul meetups (the fetched site shows blog activity and a report of a September 2026 meetup, but no own events calendar).",
+    "Confirm whether the group would co-host a data-science track at a Seoul DeAI Day.",
+    "Confirm whether the published 1일 기준 KRW 3,256,000 includes VAT and whether the 8-hour 09:00-17:00 use is billed as 1일 기준 (the table gives 시간당 296,000 / 3시간 888,000 / 1일 3,256,000 with no VAT statement on the rendered page).",
+    "Confirm who the current organisers are and whether they would co-host a DeAI Day session.",
+    "Coordinate provenance: every non-null coordinate pair in venues.raw.json comes from an OpenStreetMap Nominatim lookup performed 2026-11-20 and is recorded with its openstreetmap.org object URL in evidence.geo. Two platform-listed venues (Space Cloud) mask the street address until booking and therefore carry null coordinates plus a location question.",
+    "Event window assessed as 09:00-17:00 (8 hours) per the locked plan; venue windows that only start at 10:00 (Nodeul Island) or gate on a Saturday closing time carry a specific question.",
+    "Impact Hub has no Seoul location (no Seoul/Korea record in the installed impact_hub_locations.json and none on impacthub.net/locations); Seoul venue discovery proceeded without a hub seed, consistent with the 2026 Q4 pass.",
+    "KR public-holiday rows for 2027 come from the plan-event registry (references/school_holidays.json, jurisdiction KR and KR:seoul, edition '2027년 월력요항 (우주항공청공고 제2026-0078호)'); this package does not duplicate them. All 13 Saturdays of the Q2 window were swept against those rows on 2026-11-20. Direct Saturday collisions: 2027-05-01 (노동절, with substitute 2027-05-03). Long-weekend Saturdays (a Sunday or Monday neighbour is a holiday): 2027-05-01 (substitute holiday on Monday 2027-05-03) and 2027-06-05 (현충일 on Sunday 2027-06-06). Same-week mid-week holidays: 2027-05-08 (어린이날 Wednesday 2027-05-05) and 2027-05-15 (부처님 오신 날 Thursday 2027-05-13).",
+    "Research window is 2027-04-01 through 2027-06-30. target_date 2027-04-17 is a neutral technical placeholder required by score/bundle/summary integrity; it is never a recommendation and no output may present it as one.",
+    "Venue open question: most Seoul venues are inquiry-only. This pass found published rate tables at four venues: SETEC (시간대별 사용료 table), DDP 디자인홀 (디자인랩 대관료 table), Nodeul Island Livehouse (2026 대관료 table) and 서울시 어울림플라자 (시설 대관료 table, row unit not stated so no number is claimed). Two Space Cloud listings publish hourly weekend rates (그라운드옥탑 200,000원/h, 앙트레블 88,000원/h) from which an 8-hour estimate is derived and labelled estimated_from_rate. D.CAMP, COEX, 백양누리, 문화비축기지 and KT&G 상상마당 are inquiry/quote-only."
+  ],
+  "recommendation": {
+    "rationale": "Run A evidence package only. Venue selection deferred: a later deterministic pipeline card scores venues and assembles the venue-phase bundle; Joe selects from eligible/shortlist_ready results. No date recommendation is made.",
+    "selected_venue": null,
+    "unresolved_checks": [
+      "Assess whether a side event or co-located session during the show would reach the same AI/ICT builder audience, or whether the show mainly draws enterprise buyers.",
+      "Blocked/unusable sources this pass: aT Center (WAF challenge), 한국과학기술회관 stcenter.or.kr (connection timeout), wework.com (403), front1.co.kr (NXDOMAIN), sparkplus.co.kr (empty response), ddp.or.kr (curl 0 bytes; needed headless render), parks.seoul.go.kr deep links (404; content read through the search-indexed page text). aiexpo.co.kr rejects plain curl but renders correctly under headless Chromium, which is how the 2027 dates were read.",
+      "Calendar research on 2026-11-20 found three confirmed 2027 H1 Seoul AI events and one industrial trade show: WIS 2027 (2027-04-21..23, COEX), AI EXPO KOREA 2027 (2027-04-14..16, COEX Hall A) and 서울메타위크 2027 (2027-04-29..30, COEX Grand Ballroom) are recorded as related rows with opportunity_kind ai and status confirmed and live in calendar_context.raw.json adjacent_events; AW 2027 (2027-03-03..05, COEX 전체 홀) is recorded as major_other for logistics. AI Summit Seoul & Expo 2027 is 2027-08-11..13 (outside H1). NextRise 2027 and Korea Blockchain Week 2027 still publish no 2027 dates and stay as leads.",
+      "Candidate Saturdays are operational input only (all 13 Saturdays of the window); they are not a recommendation, an elimination set, or a date selection; Joe alone decides the date.",
+      "Confirm attendee Wi-Fi (not in the published equipment list).",
+      "Confirm attendee Wi-Fi (not stated on the facility page).",
+      "Confirm attendee Wi-Fi (not stated on the official rental page).",
+      "Confirm attendee Wi-Fi in 300호 (the page lists A/V, fixed projector, interpretation booth and stage for rooms ≥207㎡, but not Wi-Fi).",
+      "Confirm attendee Wi-Fi in T6 (not stated on the park page).",
+      "Confirm attendee Wi-Fi in the event hall (the equipment list covers displays, mics and furniture but not Wi-Fi).",
+      "Confirm attendee Wi-Fi in 그랜드볼룸 A (not stated on the official space page).",
+      "Confirm attendee Wi-Fi in 디자인홀 (the official page lists display, audio, power and furniture but no attendee Wi-Fi).",
+      "Confirm attendee Wi-Fi in 세미나실 1 (not stated on the official rental pages).",
+      "Confirm attendee Wi-Fi in 세미나실 2 (not stated on the official rental pages).",
+      "Confirm booking terms and the operator's acceptance of a free community tech event under the standard 컨벤션센터 대관 procedure.",
+      "Confirm booking terms and the room fit: 호스트 승인 후 예약확정; seating is 73석 with tables up to 100 with floor cushions, and 케이터링 이용 시 수용 인원 50명으로 제한.",
+      "Confirm booking terms and whether a free community event is accepted (COEX runs 대관 공고 notices and a separate business rental channel).",
+      "Confirm booking terms for a free community event (DDP requires 대관 신청 and committee review; approval lead time and deposit terms are not published).",
+      "Confirm booking terms: 사업자등록증 and 행사계획서 are required for the application, and payment must be settled within 3 days of 대관 허가.",
+      "Confirm booking terms: 신청서 submission to the CJ프레시웨이 reservations team (02-2123-8052, ys.thelounge@cj.net), deposit and cancellation terms, and the 교내/동문 discount eligibility for an outside community group.",
+      "Confirm booking terms: 예약문의 → 대관신청서 이메일 접수 (livehall@ssmadang.co.kr, 02-2014-2024) and whether a non-concert community event is accepted.",
+      "Confirm booking terms: 온라인 신청 at least 7 days before use, 내부 심사 and 승인 통보, then payment; 취소 refunds are 100% at 10+ days and 80% under 10 days.",
+      "Confirm booking terms: 호스트 승인 후 예약확정 (average wait 1분 at fetch), 취소/환불 rules (이용일 기준 8일 전부터 변경·취소 환불 불가 per the listing).",
+      "Confirm current membership size and whether the group co-hosts community events with non-AWS organisers (no co-hosting language appears on the Meetup page).",
+      "Confirm current public member count (not captured on the fetched page).",
+      "Confirm Saturday availability (the COEX exhibition calendar shows weekend exhibitions, which is not evidence of meeting-room availability).",
+      "Confirm Saturday availability and the 20% 토·일·공휴일 surcharge that the table applies to 문화센터/문화교실/연수객실 rows ('토, 일, 공휴일은 기존금액의 100분의 20을 가산함') — whether it applies to 다목적강당 as well.",
+      "Confirm Saturday availability and the approval route for T6 (T1~T6 문의 02-508-2205; 문화마당/산책로 02-2133-0425).",
+      "Confirm Saturday availability and whether external (non-Yonsei) organizations can book a weekend date.",
+      "Confirm Saturday availability for 09:00-17:00 on the specific date (DDP rentals run through an application + 대관심의 committee; the published window is a daily basis time, not an availability calendar).",
+      "Confirm Saturday availability for a 09:00-17:00 event in 세미나실 2 on the specific date (the official page publishes no weekday/weekend band).",
+      "Confirm Saturday availability for a 09:00-17:00 event on the specific date: the official rate table publishes time slots (08~12 / 13~17 / 18~21) but states no weekday/weekend band, and the online booking system (컨벤션센터 온라인 예약) is the only availability source.",
+      "Confirm Saturday availability for a 09:00-17:00 event.",
+      "Confirm Saturday availability for the specific date (the host answers by phone 0507-1443-1417, weekdays 10:00-18:00).",
+      "Confirm Saturday availability for the specific date on the platform calendar.",
+      "Confirm Saturday availability for the specific date within the 7-day/60-day application window.",
+      "Confirm Saturday availability for the specific date, and note the published booking window: '신청일 기준 최대 7일 이후 60일 이전 행사만 신청 가능합니다' — a 2027 date cannot be applied for more than ~60 days ahead.",
+      "Confirm Saturday availability for the specific date: the official rent calendar (nodeul.org/rent-calendar/?calendar_type=rent-livehouse) shows per-day availability and the hall runs an active concert schedule.",
+      "Confirm screen/projection in T6 (the park page lists the rooms and the café but no AV).",
+      "Confirm screen/projection in the live hall (a concert hall typically carries stage lighting and PA, not a conference screen — this must be verified, not assumed).",
+      "Confirm screen/projection in 세미나실 1: the official rate page lists 면적 and 사용료 only; the room equipment list is published per room elsewhere and a projector/screen is not confirmed for this room.",
+      "Confirm screen/projection in 세미나실 2 (the official rate page publishes only 면적 and 사용료; the room equipment list is published per room elsewhere).",
+      "Confirm screen/projection: the facility page lists sound, lighting and instrument equipment, a house manager and four ushers, but no presentation screen or projector.",
+      "Confirm screen/projection: the 시설별 대여가능장비 list for 다목적강당 is '음향, 조명, 거울' with no screen or projector (세미나실 rows do list 빔프로젝터).",
+      "Confirm Superteam Korea's current Seoul leads and whether a DeAI Day could be co-hosted or promoted through the Korea channel (the KBW listing proves event organisation, not a partnership offer).",
+      "Confirm that a non-concert community/tech event is accepted at the performance-rental rate and terms (대관 공고 → 신청 → 심의 → 계약).",
+      "Confirm the 2026/2027 서울 R Meetup dates: the site's '서울 R Meetup' subpage returned HTTP 404 at fetch time and only the navigation label was observable.",
+      "Confirm the 2027 BCMD schedule and whether KISA would co-promote a DeAI Day to its blockchain audience (the page is an education-recruitment notice, not a partnership channel).",
+      "Confirm the 2027-04-29..30 dates and COEX Grand Ballroom booking, and whether the programme accepts community side sessions.",
+      "Confirm the all-in cost: KRW 200,000/시간 for 주말 및 공휴일, VAT 별도, 최소 3시간; the listing also states 100명 초과 시 1인 1만원 추가 요금 (max 120) and a 30-minute grace before entry, so an 8-hour booking plus setup may exceed 8 paid hours.",
+      "Confirm the all-in cost: KRW 88,000/시간 with a 2-hour minimum and no published weekend differential; confirm whether VAT, cleaning and any 10-minute overrun charge (30분 단위 추가금) apply to an 8-hour booking.",
+      "Confirm the all-in price for an 8-hour Saturday event: KRW 890,000 is the published 8~17시 rate, 부가가치세 별도 (VAT excluded); confirm VAT, 시간외 (110,000/hour), and any 부대시설 or 장비 charges.",
+      "Confirm the all-in price for an 8-hour Saturday event: 토,일,공휴일 2회 rate KRW 6,000,000 applies because a single performance over 3 hours is billed as 2회 (VAT excluded); 준비·철수 대관 is a separate KRW 1,067,000 per slot on weekends.",
+      "Confirm the all-in price: KRW 760,000 for 8~17시, 부가가치세 별도; confirm VAT and any 장비/부대시설 charges.",
+      "Confirm the basic 대관료 for 그랜드볼룸 A: the official page publishes only the LED screen usage fee (KRW 1,320,000) and the rule '4만원 이상 메뉴 식사시 기본대관료 3시간 무료'; the base room rate sits in the 백양누리_요금표 attachment and must be quoted.",
+      "Confirm the chapter's current organizer roster and whether a co-hosted DeAI Day is something the Seoul organizers would consider (the page lists organizers and a past event 'sponsored by CROO', but carries no Seoul-specific open call).",
+      "Confirm the COEX hall footprint and expected 80,000 visitors for 2027-03-03..05, and assess hotel/transport demand and venue competition for a Seoul event on the following weekend.",
+      "Confirm the collective's current organisers and whether it would co-host or promote a DeAI Day (the site describes public-goods work, not event partnerships).",
+      "Confirm the commercial terms and lead time for a Seoul venue-plus-production engagement.",
+      "Confirm the community's 2027 programme and whether it co-hosts with non-ETRI organisers (the event channel is a public-sector programme, not a membership community).",
+      "Confirm the community's own event calendar for 2027 H1 (the earn/bounty page and the KBW listing are the only sources observed).",
+      "Confirm the current GDG Seoul event calendar: the organizer page rendered on 2026-11-20 shows 'Upcoming Events' with no upcoming event listed, while a search index still carries the May 2, 2026 'Build with AI Seoul 2026 with Google DeepMind' event.",
+      "Confirm the date, venue and expected headcount of 모두콘 2026 (the conference is named on the site but no date was visible on the fetched pages).",
+      "Confirm the dates and Public Day audience on the organiser site nearer the show, and assess whether a Saturday in the same week gains or loses from the exhibition crowd.",
+      "Confirm the exact attendance and venue for Ethereum Korea One Genesis (registered/approved figures are from the collective's own notice).",
+      "Confirm the exact street address and building access before shortlisting: Space Cloud masks it ('자세한 주소는 예약 확정 후 예약 내역에서 확인할 수 있습니다') and only states 서울 역삼동 / 강남역 도보 5분, so no coordinate can be recorded honestly yet.",
+      "Confirm the exact street address and building access: Space Cloud masks the address ('자세한 주소는 예약 확정 후 예약 내역에서 확인할 수 있습니다'; only 서울 역삼동 인근 is shown), so no coordinate can be recorded honestly yet.",
+      "Confirm the group's 2027 calendar and whether it would co-host or partner on a DeAI Day audience track (the page states PyLadies Seoul hosts the Asia Conference but no collaboration call).",
+      "Confirm the group's organiser team and whether they would co-host a DeAI Day or provide an audience channel (the page lists no collaboration language).",
+      "Confirm the published dates and hall allocation on the organiser's own site before the dates are used for any planning, and assess audience overlap with a Seoul Decentralized AI Day.",
+      "Confirm the race date on the organiser site (seoul-marathon.com) and assess logistics impact on the city centre: road closures, route access, hotel demand, transport disruption and crowding for a Seoul event on a nearby weekend.",
+      "Confirm the rental fee for 300호: COEX publishes room specs and an 임대관련자료 board, but no rate for this room is exposed on the public pages, so a written quote is required.",
+      "Confirm the rental fee for 박병원홀 (no price is published; TaapSPACE application + 대관 심사, then quote).",
+      "Confirm the rental fee: no price is published. Applications run through TaapSPACE (taapspace.kr) after 대관 심사, so a written quote is needed before any cost claim.",
+      "Confirm the rental fee: the official page publishes only 문화마당 rates (T0 141,613원/시간, 나무데크 18,324원/시간); T1~T6 rates are set by the operator and are not published.",
+      "Confirm the rental fee: the official 대관안내 and 다회대관 할인 프로모션 pages describe discounts (e.g. 6회 이상 대관 시 평일 30%/주말 20% 할인 in the 2025 promotion) but no base rate is published; a written quote is required.",
+      "Confirm the seated capacity of the T6 원형회의실 and 강의실 for a 50-125 person event: the official park page describes the rooms (원형회의실 164㎡) but publishes no capacity, and the space is now operated under a 사용수익허가 by ㈜더문엔터테인먼트 (02-508-2205) rather than by the park office.",
+      "Confirm the seating fit: the venue holds round tables for banquet-style seating only, and the platform FAQ states a theatre/lecture layout requires an outside setup vendor — confirm whether a lecture-style 50-125 person layout is permitted and who supplies it.",
+      "Confirm the typical venue and headcount of the 2026 Seoul demo nights (not stated on the chapter page).",
+      "Confirm the typical venue and headcount of the bi-weekly AI Adoption Talk (not stated on the events list).",
+      "Confirm the usable daily window and whether a 09:00-17:00 eight-hour Saturday block is bookable (COEX publishes no meeting-room hours on this page).",
+      "Confirm the usable daily window for a 09:00-17:00 Saturday event (no hours are published on the space page).",
+      "Confirm the usable daily window: the published slot table is written for 공연장 (10:00-14:00 / 14:00-18:00 / 18:00-22:00); confirm that a 다목적강당 event can run 09:00-17:00 or 10:00-18:00 for eight hours.",
+      "Confirm the usable event window for an eight-hour 09:00-17:00 Saturday event.",
+      "Confirm the usable window for an eight-hour daytime event (the hall is a working concert venue).",
+      "Confirm the 다목적강당 rental fee and its unit: the official '어울림플라자 시설 대관료' table lists 다목적강당 350,000 ~ 540,000원 but the per-row 내용 column (which states '1회(4시간) 단가' for 공연장 and '시간당 단가' for 문화센터 1,2) is not repeated for 다목적강당, so the unit for this row is not published.",
+      "Confirm the 라이브홀 capacity and layout (standing vs seated) for a 50-125 person event: the official 대관안내 page describes the procedure but publishes no capacity for the Hongdae live hall.",
+      "Confirm the 심사 criteria applied to a free community AI event: the FAQ excludes '단순 친목 중심 모임' and '영리 목적' events, and one 기업(단체) may apply at most 5 times per month.",
+      "Confirm the 심사 criteria for a free community AI event and whether marketing/sponsor content is treated as '영리 목적'.",
+      "Confirm typical headcount (the notice caps confirmed attendees at 35 per session).",
+      "Confirm typical headcount; the event registration page did not show a capacity figure on the fetched HTML.",
+      "Confirm typical participant numbers and the Seoul operating team.",
+      "Confirm whether a 200-seat hall can be scaled down to a 50-125 person community event comfortably (published furniture: 98인치 TV 2대, 강연대 1개, 무선마이크 3대, 유선마이크 1대, 빔프로젝트, 2인 테이블 2개, 의자 190개).",
+      "Confirm whether an 09:00 start is possible: the official performance window is 10:00-23:00, so an 09:00-17:00 window is not covered by published hours (a 10:00-18:00 window is).",
+      "Confirm whether an AI/DeAI topic fits the group's 2027 programme and who approves topics.",
+      "Confirm whether Bridge34 is open to co-organising a free community DeAI Day (their page states they plan/host/run events for global Web3 projects, which is a commercial engagement model, not a stated community partnership).",
+      "Confirm whether BuilderBase would co-run a Seoul DeAI hackathon or demo track in 2027 H1 (the page describes a single 2026 Seoul event and its tech partners, not a standing partnership offer).",
+      "Confirm whether GDG Seoul co-hosts with external community organisers.",
+      "Confirm whether Modulabs would co-host or lend its community channel for a Seoul DeAI Day.",
+      "Confirm whether the 201.48㎡ hall can be laid out theatre-style for 50-125 people with the published furniture (2인 테이블 5개, 의자 130개).",
+      "Confirm whether the community is still running: the site's newest announcements are the '6월 이더리움 서울 bi-weekly meetup' and '이드콘한국 2024 운영위원회' notices, with no 2025 or 2026 schedule visible.",
+      "Confirm whether the group has any post-2022 activity: the own page's 'Past events' list begins with 'Thu, Dec 15, 2022' and shows 46 past events with no later date.",
+      "Confirm whether the group still runs its own in-person Seoul meetups (the fetched site shows blog activity and a report of a September 2026 meetup, but no own events calendar).",
+      "Confirm whether the group would co-host a data-science track at a Seoul DeAI Day.",
+      "Confirm whether the published 1일 기준 KRW 3,256,000 includes VAT and whether the 8-hour 09:00-17:00 use is billed as 1일 기준 (the table gives 시간당 296,000 / 3시간 888,000 / 1일 3,256,000 with no VAT statement on the rendered page).",
+      "Confirm who the current organisers are and whether they would co-host a DeAI Day session.",
+      "Coordinate provenance: every non-null coordinate pair in venues.raw.json comes from an OpenStreetMap Nominatim lookup performed 2026-11-20 and is recorded with its openstreetmap.org object URL in evidence.geo. Two platform-listed venues (Space Cloud) mask the street address until booking and therefore carry null coordinates plus a location question.",
+      "Event window assessed as 09:00-17:00 (8 hours) per the locked plan; venue windows that only start at 10:00 (Nodeul Island) or gate on a Saturday closing time carry a specific question.",
+      "Impact Hub has no Seoul location (no Seoul/Korea record in the installed impact_hub_locations.json and none on impacthub.net/locations); Seoul venue discovery proceeded without a hub seed, consistent with the 2026 Q4 pass.",
+      "KR public-holiday rows for 2027 come from the plan-event registry (references/school_holidays.json, jurisdiction KR and KR:seoul, edition '2027년 월력요항 (우주항공청공고 제2026-0078호)'); this package does not duplicate them. All 13 Saturdays of the Q2 window were swept against those rows on 2026-11-20. Direct Saturday collisions: 2027-05-01 (노동절, with substitute 2027-05-03). Long-weekend Saturdays (a Sunday or Monday neighbour is a holiday): 2027-05-01 (substitute holiday on Monday 2027-05-03) and 2027-06-05 (현충일 on Sunday 2027-06-06). Same-week mid-week holidays: 2027-05-08 (어린이날 Wednesday 2027-05-05) and 2027-05-15 (부처님 오신 날 Thursday 2027-05-13).",
+      "Research window is 2027-04-01 through 2027-06-30. target_date 2027-04-17 is a neutral technical placeholder required by score/bundle/summary integrity; it is never a recommendation and no output may present it as one.",
+      "Venue open question: most Seoul venues are inquiry-only. This pass found published rate tables at four venues: SETEC (시간대별 사용료 table), DDP 디자인홀 (디자인랩 대관료 table), Nodeul Island Livehouse (2026 대관료 table) and 서울시 어울림플라자 (시설 대관료 table, row unit not stated so no number is claimed). Two Space Cloud listings publish hourly weekend rates (그라운드옥탑 200,000원/h, 앙트레블 88,000원/h) from which an 8-hour estimate is derived and labelled estimated_from_rate. D.CAMP, COEX, 백양누리, 문화비축기지 and KT&G 상상마당 are inquiry/quote-only."
+    ]
+  },
+  "schema_version": "2.4",
+  "shortlist_ready_venues": [
+    {
+      "accessed_on": "2026-11-20",
+      "address": "서울특별시 강남구 남부순환로 3104 (대치동), SETEC 컨벤션센터 1층",
+      "booking_url": "https://www.setec.or.kr/front/rent/rent01.do",
+      "capacity_basis": "venue_claim",
+      "capacity_comfortable": 80,
+      "catering_policy": "unknown",
+      "city_slug": "seoul-kr",
+      "closing_time": "21:00",
+      "cost_basis": "published_rate",
+      "cost_local_amount": 760000.0,
+      "cost_local_currency": "KRW",
+      "cost_rate_unit": "day",
+      "estimated_cost_usd": 567.4,
+      "estimated_hours": null,
+      "event_window_evidence": {
+        "accessed_on": "2026-11-20",
+        "claim": "'시간대별 사용료' table: 세미나실2 166㎡ — 8~12시 420,000 / 13~17시 550,000 / 8~17시(전일 8H) 760,000 / 18~21시 380,000 / 시간외(1H) 100,000, 부가가치세 별도.",
+        "title": "컨벤션센터 대관 — 사용료 (official SETEC rental page)",
+        "url": "https://www.setec.or.kr/front/rent/rent05.do"
+      },
+      "event_window_status": "allows_to_5",
+      "evidence": {
+        "geo": "https://www.openstreetmap.org/node/3720964309",
+        "inference": "An 80-seat room at the same address and rate structure as 세미나실 1, suitable when the confirmed headcount sits below ~80. Same soft gaps (Saturday availability, AV, Wi-Fi, VAT total).",
+        "observed_facts": "Same official SETEC rental page as 세미나실 1 (fetched 2026-11-20): 세미나실2 166㎡ is priced 420,000 (8~12시) / 550,000 (13~17시) / 760,000 (8~17시, 전일 8H) / 380,000 (18~21시) / 100,000 (시간외 1H), 부가가치세 별도. The Space Cloud listing (spacecloud.kr/space/64929) states '세미나2: 규모 : 166㎡ 수용능력 : 80석 용도 : 각종세미나, 중소규모 회의등' and '영업시간 8 ~ 21 시'. USD equivalent at the ECB euro foreign exchange reference rate dated 2026-11-20 (EUR 1 = USD 1.0990; EUR 1 = KRW 1472.04), fetched 2026-11-20 from https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml (Cube time='2026-11-20'); derived 1 KRW = USD 0.000746583, 1 USD = 1339.44 KRW."
+      },
+      "hourly_rate_local": null,
+      "hourly_rate_usd": null,
+      "latitude": 37.4954477,
+      "longitude": 127.0720963,
+      "max_booking_hours": null,
+      "name": "SETEC 컨벤션센터 — 세미나실 2 (166㎡, 80석)",
+      "needs_human_verify": true,
+      "opening_hours": "08:00-21:00 (대관 시간대 08~12 / 13~17 / 18~21)",
+      "rate_currency": null,
+      "rate_estimate_note": null,
+      "recording_suitability": "unknown",
+      "score": 0.5273,
+      "score_breakdown": {
+        "booking_path": {
+          "contribution": 0.1,
+          "factor": 1.0,
+          "weight": 0.1
+        },
+        "budget_efficiency": {
+          "contribution": 0.1773,
+          "factor": 0.8865,
+          "weight": 0.2
+        },
+        "capacity_fit": {
+          "contribution": 0.2,
+          "factor": 1.0,
+          "weight": 0.2
+        },
+        "catering_flexibility": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.15
+        },
+        "event_window_fit": {
+          "contribution": 0.05,
+          "factor": 1.0,
+          "weight": 0.05
+        },
+        "evidence_freshness": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.1
+        },
+        "recording_suitability": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.15
+        },
+        "technical_readiness": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.05
+        },
+        "total": 0.5273
+      },
+      "screen_status": "unknown",
+      "source_title": "컨벤션센터 대관 — 사용료 (official SETEC page): 세미나실2 166㎡, 8~17시(전일 8H) 760,000원, 부가가치세 별도",
+      "source_url": "https://www.setec.or.kr/front/rent/rent05.do",
+      "tier_reasons": [],
+      "venue_flags": [
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "stale_evidence"
+      ],
+      "venue_tier": "shortlist_ready",
+      "verification_question_kinds": [
+        "availability",
+        "screen",
+        "wifi",
+        "final_quote",
+        "booking_terms"
+      ],
+      "verification_questions": [
+        "Confirm Saturday availability for a 09:00-17:00 event in 세미나실 2 on the specific date (the official page publishes no weekday/weekend band).",
+        "Confirm screen/projection in 세미나실 2 (the official rate page publishes only 면적 and 사용료; the room equipment list is published per room elsewhere).",
+        "Confirm attendee Wi-Fi in 세미나실 2 (not stated on the official rental pages).",
+        "Confirm the all-in price: KRW 760,000 for 8~17시, 부가가치세 별도; confirm VAT and any 장비/부대시설 charges.",
+        "Confirm booking terms and the operator's acceptance of a free community tech event under the standard 컨벤션센터 대관 procedure."
+      ],
+      "wifi_status": "unknown"
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "address": "서울특별시 강남구 남부순환로 3104 (대치동), SETEC 컨벤션센터 1층",
+      "booking_url": "https://www.setec.or.kr/front/rent/rent01.do",
+      "capacity_basis": "venue_claim",
+      "capacity_comfortable": 100,
+      "catering_policy": "unknown",
+      "city_slug": "seoul-kr",
+      "closing_time": "21:00",
+      "cost_basis": "published_rate",
+      "cost_local_amount": 890000.0,
+      "cost_local_currency": "KRW",
+      "cost_rate_unit": "day",
+      "estimated_cost_usd": 664.46,
+      "estimated_hours": null,
+      "event_window_evidence": {
+        "accessed_on": "2026-11-20",
+        "claim": "'시간대별 사용료 (부가가치세 별도, 단위 : 원)' table: 세미나실1 189㎡ — 8~12시(오전 4H) 550,000 / 13~17시(오후 4H) 670,000 / 8~17시(전일 8H) 890,000 / 18~21시(야간 3H) 410,000 / 시간외(1H) 110,000. The published 8~17시 (전일 8H) slot covers an 09:00-17:00 eight-hour event.",
+        "title": "컨벤션센터 대관 — 사용료 (official SETEC rental page)",
+        "url": "https://www.setec.or.kr/front/rent/rent05.do"
+      },
+      "event_window_status": "allows_to_5",
+      "evidence": {
+        "geo": "https://www.openstreetmap.org/node/3720964309",
+        "inference": "SETEC is the strongest published-rate candidate: a 100-seat room with an official 8-hour slot price that exactly matches the assessed 09:00-17:00 window, and 2027 rental recruitment already open. It stays shortlist_ready rather than eligible because Saturday availability, room AV/Wi-Fi and the VAT-inclusive total are unconfirmed.",
+        "observed_facts": "Official SETEC rental page (setec.or.kr/front/rent/rent05.do, fetched 2026-11-20) heading '사용료 / 시간대별 사용료 (부가가치세 별도, 단위 : 원)' lists: 컨벤션홀(로비포함) 422㎡ 1,330,000 / 1,560,000 / 2,240,000 / 1,000,000 / 282,500; 세미나실1 189㎡ 550,000 / 670,000 / 890,000 / 410,000 / 110,000; 세미나실2 166㎡ 420,000 / 550,000 / 760,000 / 380,000 / 100,000 for 8~12시, 13~17시, 8~17시(전일 8H), 18~21시, 시간외(1H). 임대절차 lists 대관신청 → 서류 업로드 → 계약체결(대관 허가 후 3일 이내 온라인 결제) → 행사 개최. The Space Cloud listing for SETEC 컨벤션센터 (spacecloud.kr/space/64929, fetched 2026-11-20) states '영업시간 8 ~ 21 시', '세미나1: 규모 : 189㎡ 수용능력 : 100석', '세미나실1(100석)_전일8H ₩ 979,000 / 패키지' (the VAT-inclusive equivalent of the official 890,000 + 10%). SETEC's own notice list shows '2027년 SETEC 컨벤션센터 대관 모집 (26.10.01, 오전 10시 ~)', i.e. 2027 convention-space rental applications were opened on 2026-10-01. USD equivalent at the ECB euro foreign exchange reference rate dated 2026-11-20 (EUR 1 = USD 1.0990; EUR 1 = KRW 1472.04), fetched 2026-11-20 from https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml (Cube time='2026-11-20'); derived 1 KRW = USD 0.000746583, 1 USD = 1339.44 KRW."
+      },
+      "hourly_rate_local": null,
+      "hourly_rate_usd": null,
+      "latitude": 37.4954477,
+      "longitude": 127.0720963,
+      "max_booking_hours": null,
+      "name": "SETEC 컨벤션센터 — 세미나실 1 (189㎡, 100석)",
+      "needs_human_verify": true,
+      "opening_hours": "08:00-21:00 (대관 시간대 08~12 / 13~17 / 18~21)",
+      "rate_currency": null,
+      "rate_estimate_note": null,
+      "recording_suitability": "unknown",
+      "score": 0.5234,
+      "score_breakdown": {
+        "booking_path": {
+          "contribution": 0.1,
+          "factor": 1.0,
+          "weight": 0.1
+        },
+        "budget_efficiency": {
+          "contribution": 0.1734,
+          "factor": 0.8671,
+          "weight": 0.2
+        },
+        "capacity_fit": {
+          "contribution": 0.2,
+          "factor": 1.0,
+          "weight": 0.2
+        },
+        "catering_flexibility": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.15
+        },
+        "event_window_fit": {
+          "contribution": 0.05,
+          "factor": 1.0,
+          "weight": 0.05
+        },
+        "evidence_freshness": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.1
+        },
+        "recording_suitability": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.15
+        },
+        "technical_readiness": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.05
+        },
+        "total": 0.5234
+      },
+      "screen_status": "unknown",
+      "source_title": "컨벤션센터 대관 — 사용료 (official SETEC page, setec.or.kr): 시간대별 사용료, 세미나실1 189㎡, 8~17시(전일 8H) 890,000원, 부가가치세 별도",
+      "source_url": "https://www.setec.or.kr/front/rent/rent05.do",
+      "tier_reasons": [],
+      "venue_flags": [
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "stale_evidence"
+      ],
+      "venue_tier": "shortlist_ready",
+      "verification_question_kinds": [
+        "availability",
+        "screen",
+        "wifi",
+        "final_quote",
+        "booking_terms"
+      ],
+      "verification_questions": [
+        "Confirm Saturday availability for a 09:00-17:00 event on the specific date: the official rate table publishes time slots (08~12 / 13~17 / 18~21) but states no weekday/weekend band, and the online booking system (컨벤션센터 온라인 예약) is the only availability source.",
+        "Confirm screen/projection in 세미나실 1: the official rate page lists 면적 and 사용료 only; the room equipment list is published per room elsewhere and a projector/screen is not confirmed for this room.",
+        "Confirm attendee Wi-Fi in 세미나실 1 (not stated on the official rental pages).",
+        "Confirm the all-in price for an 8-hour Saturday event: KRW 890,000 is the published 8~17시 rate, 부가가치세 별도 (VAT excluded); confirm VAT, 시간외 (110,000/hour), and any 부대시설 or 장비 charges.",
+        "Confirm booking terms: 사업자등록증 and 행사계획서 are required for the application, and payment must be settled within 3 days of 대관 허가."
+      ],
+      "wifi_status": "unknown"
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "address": "서울특별시 중구 을지로 281, 동대문디자인플라자 디자인랩 3층",
+      "booking_url": "https://www.ddp.or.kr/?menuno=714",
+      "capacity_basis": "venue_claim",
+      "capacity_comfortable": 110,
+      "catering_policy": "unknown",
+      "city_slug": "seoul-kr",
+      "closing_time": "20:00",
+      "cost_basis": "published_rate",
+      "cost_local_amount": 3256000.0,
+      "cost_local_currency": "KRW",
+      "cost_rate_unit": "day",
+      "estimated_cost_usd": 2430.87,
+      "estimated_hours": null,
+      "event_window_evidence": {
+        "accessed_on": "2026-11-20",
+        "claim": "'대관 가능 시간' table: 시설명 컨벤션 — 기준시간 08:00 ~ 20:00 (12시간); '※ 기준시간을 초과하여 대관하는 경우 초과 시간당 기준액의 150% 적용'. The 08:00-20:00 convention window covers an 09:00-17:00 eight-hour event.",
+        "title": "디자인홀 — 공간안내 (official DDP space page, headless-rendered)",
+        "url": "https://www.ddp.or.kr/?menuno=714"
+      },
+      "event_window_status": "allows_to_5",
+      "evidence": {
+        "geo": "https://www.openstreetmap.org/relation/10647068",
+        "inference": "DDP 디자인홀 is the best-evidenced screen-equipped mid-size room: published 1일 rate, in-house LED wall and audio console, ~110 capacity and an 08:00-20:00 window that brackets the 8-hour event. Remaining soft gaps are Saturday availability, attendee Wi-Fi and VAT treatment.",
+        "observed_facts": "Official DDP space page (ddp.or.kr/?menuno=714, headless-rendered 2026-11-20) states for 디자인홀: 위치 디자인랩 지상 3층; 수용인원 약 110명; 용도 강연, 발표회, 포럼 등; 부대시설 일반대기실, VIP대기실, 라커룸, 통역실, 조정실, 라운지 제공; 면적 627.6㎡. The '디자인랩 대관료' table lists 디자인홀 627.6㎡ with 시간당 단가 296,000 / 3시간 기준 888,000 / 1일 기준 3,256,000. Equipment: LED 디스플레이 1920X1080 (2.5mm pitch) 6.4m X 4m, LS9 console, d&b 12S speakers, Sennheiser wireless mics (6), wall power 380/220V, HDMI video and 3.5mm audio inputs, 계단식의자 약 30석 + 의자 약 80대. 대관 대표전화 1833-4321. USD equivalent at the ECB euro foreign exchange reference rate dated 2026-11-20 (EUR 1 = USD 1.0990; EUR 1 = KRW 1472.04), fetched 2026-11-20 from https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml (Cube time='2026-11-20'); derived 1 KRW = USD 0.000746583, 1 USD = 1339.44 KRW."
+      },
+      "hourly_rate_local": null,
+      "hourly_rate_usd": null,
+      "latitude": 37.5670686,
+      "longitude": 127.009899,
+      "max_booking_hours": null,
+      "name": "DDP — 디자인홀 (Design Lab 3F, 627.6㎡, 약 110명)",
+      "needs_human_verify": true,
+      "opening_hours": "08:00-20:00 (컨벤션 기준시간 12시간)",
+      "rate_currency": null,
+      "rate_estimate_note": null,
+      "recording_suitability": "unknown",
+      "score": 0.4778,
+      "score_breakdown": {
+        "booking_path": {
+          "contribution": 0.1,
+          "factor": 1.0,
+          "weight": 0.1
+        },
+        "budget_efficiency": {
+          "contribution": 0.1028,
+          "factor": 0.5138,
+          "weight": 0.2
+        },
+        "capacity_fit": {
+          "contribution": 0.2,
+          "factor": 1.0,
+          "weight": 0.2
+        },
+        "catering_flexibility": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.15
+        },
+        "event_window_fit": {
+          "contribution": 0.05,
+          "factor": 1.0,
+          "weight": 0.05
+        },
+        "evidence_freshness": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.1
+        },
+        "recording_suitability": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.15
+        },
+        "technical_readiness": {
+          "contribution": 0.025,
+          "factor": 0.5,
+          "weight": 0.05
+        },
+        "total": 0.4778
+      },
+      "screen_status": "confirmed",
+      "source_title": "디자인홀 — 공간안내 (official DDP page): 디자인랩 지상 3층, 수용인원 약 110명, 627.6㎡, 디자인랩 대관료 디자인홀 시간당 296,000 / 3시간 888,000 / 1일 3,256,000, LED 디스플레이 6.4m X 4m",
+      "source_url": "https://www.ddp.or.kr/?menuno=714",
+      "tier_reasons": [],
+      "venue_flags": [
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "stale_evidence"
+      ],
+      "venue_tier": "shortlist_ready",
+      "verification_question_kinds": [
+        "availability",
+        "wifi",
+        "final_quote",
+        "booking_terms"
+      ],
+      "verification_questions": [
+        "Confirm Saturday availability for 09:00-17:00 on the specific date (DDP rentals run through an application + 대관심의 committee; the published window is a daily basis time, not an availability calendar).",
+        "Confirm attendee Wi-Fi in 디자인홀 (the official page lists display, audio, power and furniture but no attendee Wi-Fi).",
+        "Confirm whether the published 1일 기준 KRW 3,256,000 includes VAT and whether the 8-hour 09:00-17:00 use is billed as 1일 기준 (the table gives 시간당 296,000 / 3시간 888,000 / 1일 3,256,000 with no VAT statement on the rendered page).",
+        "Confirm booking terms for a free community event (DDP requires 대관 신청 and committee review; approval lead time and deposit terms are not published)."
+      ],
+      "wifi_status": "unknown"
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "address": "서울특별시 강남구 영동대로 513, 코엑스 컨퍼런스룸 3층",
+      "booking_url": "https://business.coex.co.kr/meeting-room/conference-room-3f/",
+      "capacity_basis": "seated",
+      "capacity_comfortable": 114,
+      "catering_policy": "unknown",
+      "city_slug": "seoul-kr",
+      "closing_time": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "cost_rate_unit": "unknown",
+      "estimated_cost_usd": null,
+      "estimated_hours": null,
+      "event_window_evidence": null,
+      "event_window_status": "unknown",
+      "evidence": {
+        "geo": "https://www.openstreetmap.org/node/12192172874",
+        "inference": "COEX 300호 is the most credible 'conference-grade' option at 114 lecture seats with a fixed LED wall and interpretation booth, but COEX pricing is quote-only and no rental window is published, so it is a lead-quality cost picture inside a shortlist-ready shape; the material gap is the quote.",
+        "observed_facts": "Official COEX BUSINESS page (business.coex.co.kr/meeting-room/conference-room-3f/, fetched 2026-11-20): '규모 — 40m² (11), 54m² (10), 96m² (1), 207m² (1), 264m² (1), 311m² (5) 29개 회의실, 50개실 분할 사용 가능'; '수용능력 — 20명~300명까지 수용 가능'; '주요시설 — A/V 시스템 (207m² 이상), 고정식 프로젝터 (207m² 이상, 6,200ANSI), 동시 통역부스 (207m² 이상) *308호 제외, 고정식무대 8mx3mx0.2m, 현수막 바텐'; '300호 LED 사양: 6.5mx2.5m(P2.6mm), 2,496(L)x960(H)px'. The room table gives 300호 실사용규모 14*18*3.5m, 면적 264㎡, 수용인원 강의식 114 / 극장식 225 / 연회식 90. COEX's visitor site lists the weekly exhibition calendar but no 2027 meeting-room rates."
+      },
+      "hourly_rate_local": null,
+      "hourly_rate_usd": null,
+      "latitude": 37.5125275,
+      "longitude": 127.0588489,
+      "max_booking_hours": null,
+      "name": "COEX — 컨퍼런스룸 300호 (264㎡, 강의식 114석)",
+      "needs_human_verify": true,
+      "opening_hours": null,
+      "rate_currency": null,
+      "rate_estimate_note": null,
+      "recording_suitability": "unknown",
+      "score": 0.45,
+      "score_breakdown": {
+        "booking_path": {
+          "contribution": 0.1,
+          "factor": 1.0,
+          "weight": 0.1
+        },
+        "budget_efficiency": {
+          "contribution": 0.1,
+          "factor": 0.5,
+          "weight": 0.2
+        },
+        "capacity_fit": {
+          "contribution": 0.2,
+          "factor": 1.0,
+          "weight": 0.2
+        },
+        "catering_flexibility": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.15
+        },
+        "event_window_fit": {
+          "contribution": 0.025,
+          "factor": 0.5,
+          "weight": 0.05
+        },
+        "evidence_freshness": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.1
+        },
+        "recording_suitability": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.15
+        },
+        "technical_readiness": {
+          "contribution": 0.025,
+          "factor": 0.5,
+          "weight": 0.05
+        },
+        "total": 0.45
+      },
+      "screen_status": "confirmed",
+      "source_title": "컨퍼런스룸 (남) 3F — 회의실 안내 (official COEX BUSINESS page): 300호 264㎡, 강의식 114석 / 극장식 225석 / 연회식 90석, LED 6.5m x 2.5m",
+      "source_url": "https://business.coex.co.kr/meeting-room/conference-room-3f/",
+      "tier_reasons": [],
+      "venue_flags": [
+        "cost_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "venue_tier": "shortlist_ready",
+      "verification_question_kinds": [
+        "cost_unknown",
+        "event_window",
+        "availability",
+        "wifi",
+        "booking_terms"
+      ],
+      "verification_questions": [
+        "Confirm the rental fee for 300호: COEX publishes room specs and an 임대관련자료 board, but no rate for this room is exposed on the public pages, so a written quote is required.",
+        "Confirm the usable daily window and whether a 09:00-17:00 eight-hour Saturday block is bookable (COEX publishes no meeting-room hours on this page).",
+        "Confirm Saturday availability (the COEX exhibition calendar shows weekend exhibitions, which is not evidence of meeting-room availability).",
+        "Confirm attendee Wi-Fi in 300호 (the page lists A/V, fixed projector, interpretation booth and stage for rooms ≥207㎡, but not Wi-Fi).",
+        "Confirm booking terms and whether a free community event is accepted (COEX runs 대관 공고 notices and a separate business rental channel)."
+      ],
+      "wifi_status": "unknown"
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "address": "서울특별시 강서구 공항대로 489 (등촌동 645-11), 지하 2층",
+      "booking_url": null,
+      "capacity_basis": "venue_claim",
+      "capacity_comfortable": 100,
+      "catering_policy": "unknown",
+      "city_slug": "seoul-kr",
+      "closing_time": "22:00",
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "cost_rate_unit": "unknown",
+      "estimated_cost_usd": null,
+      "estimated_hours": null,
+      "event_window_evidence": null,
+      "event_window_status": "unknown",
+      "evidence": {
+        "inference": "A Seoul-city-run civic hall with a published rate band and an explicit Saturday surcharge rule, i.e. weekend use is anticipated. The published band cannot be turned into a single cost without knowing the row's unit, so the record keeps cost unknown with a precise unit question instead of inventing a figure.",
+        "observed_facts": "Official 서울시 어울림플라자 rental page (seouleoullim.or.kr/site/reserve/info, fetched 2026-11-20): '다목적강당 수용인원 : 70~100명 — 강연, 워크숍, 커뮤니티 행사 등 여러 형태의 모임과 행사를 유연하게 운영할 수 있는 다기능 공간입니다'; 위치 지하 2층, 면적 402.21㎡ (121평), 대여가능장비 '음향, 조명, 거울'. '어울림플라자 시설 대관료' table: 공연장 400,000~720,000원 ('1회(4시간) 단가로서 오전(10:00~14:00), 오후(14:00~18:00), 야간(18:00~22:00) 중 선택 가능'); 다목적강당 350,000~540,000원; 문화센터 1,2 50,000~60,000원 ('시간당 단가'); 대회의실 120,000~144,000원; 세미나실 1,2 50,000~60,000원. Surcharge clauses: '토요일 오후와 야간 및 일요일·공휴일의 공연 및 행사에 대하여는 기존금액의 100분의 20을 가산함' and '토, 일, 공휴일은 기존금액의 100분의 20을 가산함'. 대관 절차: 온라인 신청(이용일 최소 7일 전) → 심사 및 승인 통보 → 대관료 납부. 주소 (07564) 서울 강서구 공항대로 489."
+      },
+      "hourly_rate_local": null,
+      "hourly_rate_usd": null,
+      "latitude": null,
+      "longitude": null,
+      "max_booking_hours": null,
+      "name": "서울시 어울림플라자 — 다목적강당 (70~100명)",
+      "needs_human_verify": true,
+      "opening_hours": "대관 시간대 10:00-14:00 / 14:00-18:00 / 18:00-22:00 (공연장 기준 표기)",
+      "rate_currency": null,
+      "rate_estimate_note": null,
+      "recording_suitability": "unknown",
+      "score": 0.325,
+      "score_breakdown": {
+        "booking_path": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.1
+        },
+        "budget_efficiency": {
+          "contribution": 0.1,
+          "factor": 0.5,
+          "weight": 0.2
+        },
+        "capacity_fit": {
+          "contribution": 0.2,
+          "factor": 1.0,
+          "weight": 0.2
+        },
+        "catering_flexibility": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.15
+        },
+        "event_window_fit": {
+          "contribution": 0.025,
+          "factor": 0.5,
+          "weight": 0.05
+        },
+        "evidence_freshness": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.1
+        },
+        "recording_suitability": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.15
+        },
+        "technical_readiness": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.05
+        },
+        "total": 0.325
+      },
+      "screen_status": "unknown",
+      "source_title": "대관 안내 (official 서울시 어울림플라자 page): 다목적강당 수용인원 70~100명, 시설 대관료 다목적강당 350,000~540,000원, 토·일·공휴일 20% 가산 조항",
+      "source_url": "https://seouleoullim.or.kr/site/reserve/info",
+      "tier_reasons": [],
+      "venue_flags": [
+        "cost_unknown",
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "duration_unconfirmed",
+        "map_location_unknown",
+        "stale_evidence"
+      ],
+      "venue_tier": "shortlist_ready",
+      "verification_question_kinds": [
+        "cost_unknown",
+        "availability",
+        "screen",
+        "wifi",
+        "event_window",
+        "booking_terms"
+      ],
+      "verification_questions": [
+        "Confirm the 다목적강당 rental fee and its unit: the official '어울림플라자 시설 대관료' table lists 다목적강당 350,000 ~ 540,000원 but the per-row 내용 column (which states '1회(4시간) 단가' for 공연장 and '시간당 단가' for 문화센터 1,2) is not repeated for 다목적강당, so the unit for this row is not published.",
+        "Confirm Saturday availability and the 20% 토·일·공휴일 surcharge that the table applies to 문화센터/문화교실/연수객실 rows ('토, 일, 공휴일은 기존금액의 100분의 20을 가산함') — whether it applies to 다목적강당 as well.",
+        "Confirm screen/projection: the 시설별 대여가능장비 list for 다목적강당 is '음향, 조명, 거울' with no screen or projector (세미나실 rows do list 빔프로젝터).",
+        "Confirm attendee Wi-Fi (not stated on the official rental page).",
+        "Confirm the usable daily window: the published slot table is written for 공연장 (10:00-14:00 / 14:00-18:00 / 18:00-22:00); confirm that a 다목적강당 event can run 09:00-17:00 or 10:00-18:00 for eight hours.",
+        "Confirm booking terms: 온라인 신청 at least 7 days before use, 내부 심사 and 승인 통보, then payment; 취소 refunds are 100% at 10+ days and 80% under 10 days."
+      ],
+      "wifi_status": "unknown"
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "address": "서울특별시 용산구 양녕로 445, 노들섬 라이브하우스 1층",
+      "booking_url": "https://nodeul.org/rent/rent-livehouse/",
+      "capacity_basis": "venue_claim",
+      "capacity_comfortable": 456,
+      "catering_policy": "unknown",
+      "city_slug": "seoul-kr",
+      "closing_time": "23:00",
+      "cost_basis": "published_rate",
+      "cost_local_amount": 6000000.0,
+      "cost_local_currency": "KRW",
+      "cost_rate_unit": "event",
+      "estimated_cost_usd": 4479.5,
+      "estimated_hours": null,
+      "event_window_evidence": {
+        "accessed_on": "2026-11-20",
+        "claim": "'대관 기준시간 — 준비대관 10~22시, 공연대관 10~23시'. An eight-hour event starting at 10:00 and ending at 18:00 sits inside the published performance window, but the published start is 10:00, not 09:00.",
+        "title": "라이브하우스 — 대관시설 (official Nodeul Island facility page)",
+        "url": "https://nodeul.org/facility/livehouse/"
+      },
+      "event_window_status": "allows_to_5",
+      "evidence": {
+        "geo": "https://www.openstreetmap.org/way/813097034",
+        "inference": "Nodeul Island is the only Seoul venue in this pass with a published, Saturday-specific event rate, which makes its cost claim strong; it is oversized for a 50-125 person event and its published start time is 10:00, so both the size fit and the 09:00 start are open questions.",
+        "observed_facts": "Official Nodeul Island pages (nodeul.org/facility/livehouse/ and nodeul.org/rent/rent-livehouse/, fetched 2026-11-20): 수용인원 '지정좌석 456석 / 스탠딩 708석' with a note that 1층은 가변형으로 객석의자 미설치; 면적 1,320㎡; 대관 기준시간 '준비대관 10~22시, 공연대관 10~23시'. '라이브하우스 행사 대관료 (VAT 별도)' table: 평일 3,200,000 (1회) / 4,800,000 (2회); 토,일,공휴일 4,000,000 (1회) / 6,000,000 (2회); '공연 1회당 러닝타임이 3시간을 초과할 경우 공연 2회로 대관료 책정'. 준비·철수 대관 토,일,공휴일 1,067,000 per 4-hour slot. 대관료 포함: 음향·조명·악기 장비 일체, 하우스 매니저 1인, 어셔 4인, 분장실, 로비, 티켓부스. USD equivalent at the ECB euro foreign exchange reference rate dated 2026-11-20 (EUR 1 = USD 1.0990; EUR 1 = KRW 1472.04), fetched 2026-11-20 from https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml (Cube time='2026-11-20'); derived 1 KRW = USD 0.000746583, 1 USD = 1339.44 KRW."
+      },
+      "hourly_rate_local": null,
+      "hourly_rate_usd": null,
+      "latitude": 37.5181487,
+      "longitude": 126.9582184,
+      "max_booking_hours": null,
+      "name": "노들섬 라이브하우스 (Nodeul Island Livehouse, 1F, 1,320㎡)",
+      "needs_human_verify": true,
+      "opening_hours": "공연대관 10:00-23:00; 준비·철수대관 10:00-22:00",
+      "rate_currency": null,
+      "rate_estimate_note": null,
+      "recording_suitability": "unknown",
+      "score": 0.1708,
+      "score_breakdown": {
+        "booking_path": {
+          "contribution": 0.1,
+          "factor": 1.0,
+          "weight": 0.1
+        },
+        "budget_efficiency": {
+          "contribution": 0.0208,
+          "factor": 0.1041,
+          "weight": 0.2
+        },
+        "capacity_fit": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.2
+        },
+        "catering_flexibility": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.15
+        },
+        "event_window_fit": {
+          "contribution": 0.05,
+          "factor": 1.0,
+          "weight": 0.05
+        },
+        "evidence_freshness": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.1
+        },
+        "recording_suitability": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.15
+        },
+        "technical_readiness": {
+          "contribution": 0.0,
+          "factor": 0.0,
+          "weight": 0.05
+        },
+        "total": 0.1708
+      },
+      "screen_status": "unknown",
+      "source_title": "라이브하우스 대관 — 대관료 안내 (official Nodeul Island page): 토,일,공휴일 공연 1회 4,000,000원 / 2회 6,000,000원 (VAT 별도), 공연 대관 시간 10시~23시",
+      "source_url": "https://nodeul.org/rent/rent-livehouse/",
+      "tier_reasons": [],
+      "venue_flags": [
+        "oversized_capacity",
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "stale_evidence"
+      ],
+      "venue_tier": "shortlist_ready",
+      "verification_question_kinds": [
+        "availability",
+        "event_window",
+        "screen",
+        "wifi",
+        "final_quote",
+        "booking_terms"
+      ],
+      "verification_questions": [
+        "Confirm Saturday availability for the specific date: the official rent calendar (nodeul.org/rent-calendar/?calendar_type=rent-livehouse) shows per-day availability and the hall runs an active concert schedule.",
+        "Confirm whether an 09:00 start is possible: the official performance window is 10:00-23:00, so an 09:00-17:00 window is not covered by published hours (a 10:00-18:00 window is).",
+        "Confirm screen/projection: the facility page lists sound, lighting and instrument equipment, a house manager and four ushers, but no presentation screen or projector.",
+        "Confirm attendee Wi-Fi (not stated on the facility page).",
+        "Confirm the all-in price for an 8-hour Saturday event: 토,일,공휴일 2회 rate KRW 6,000,000 applies because a single performance over 3 hours is billed as 2회 (VAT excluded); 준비·철수 대관 is a separate KRW 1,067,000 per slot on weekends.",
+        "Confirm that a non-concert community/tech event is accepted at the performance-rental rate and terms (대관 공고 → 신청 → 심의 → 계약)."
+      ],
+      "wifi_status": "unknown"
+    }
+  ],
+  "sources": [
+    {
+      "accessed_on": "2026-11-20",
+      "title": "서울메타위크 2027 | 대한민국을 대표하는 AI 컨퍼런스",
+      "url": "http://seoulmetaweek.com/ko"
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "title": "전시회 개요 — AI EXPO KOREA 2027",
+      "url": "https://aiexpo.co.kr/%EC%A0%84%EC%8B%9C%ED%9A%8C-%EA%B0%9C%EC%9A%94"
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "title": "행사/세미나 | 모두의연구소 (Modulabs event listing)",
+      "url": "https://biz.modulabs.co.kr/event?page=1"
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "title": "Bridge34 Off-Line Events — Where Web3 Meets Seoul",
+      "url": "https://bridge34.com/events"
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "title": "DIGITAL AF Seoul Hackathon | 4-Hour Build Session — Builderbase",
+      "url": "https://builderbase.com/event/digital-af-seoul-hackathon"
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "title": "컨퍼런스룸 (남) 3F — 회의실 안내 (official COEX BUSINESS page): 300호 264㎡, 강의식 114석 / 극장식 225석 / 연회식 90석, LED 6.5m x 2.5m",
+      "url": "https://business.coex.co.kr/meeting-room/conference-room-3f/"
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "title": "월드IT쇼 (WIS) | 코엑스 BUSINESS",
+      "url": "https://business.coex.co.kr/post-exhibitions/%EC%9B%94%EB%93%9Cit%EC%87%BCwis/"
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "title": "space — 대관 가능 공간 (official D.CAMP page): 마포 5층 박병원홀 322㎡, 정원 200인, 장비 98인치 TV 2대·빔프로젝터·무선마이크 3대, 의자 190개",
+      "url": "https://dcamp.kr/program/space"
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "title": "ECK — Ethereum Collective Korea",
+      "url": "https://ethcollective.xyz/"
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "title": "Ethereum Seoul Community | A hub for Ethereum Punks in Seoul",
+      "url": "https://ethereum-seoul.community/"
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "title": "openKcloud DevDay 2026 「모두를 위한 AI, 관측에서 서비스까지 AI로 연결되는 클라우드」 — 이벤터스 (hosted by openkcloud 커뮤니티)",
+      "url": "https://event-us.kr/openkcloud/event/137324"
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "title": "Google Developer Groups GDG Seoul",
+      "url": "https://gdg.community.dev/gdg-seoul/"
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "title": "연세대학교 백양누리 | 대관서비스 | 그랜드볼룸A,B | 공간안내: 그랜드볼룸 A 또는 B 60석~120석, LED스크린 사용료 1,320,000원, 4만원 이상 메뉴 식사시 기본대관료 3시간 무료",
+      "url": "https://gsis.yonsei.ac.kr/commons/space/grandBallroom.do"
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "title": "「2026 블록체인 밋업데이(BCMD)」 31회차 교육생 모집(~11.13)",
+      "url": "https://kisa.or.kr/401/form?lang_type=KO&postSeq=3787"
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "title": "라이브하우스 대관 — 대관료 안내 (official Nodeul Island page): 토,일,공휴일 공연 1회 4,000,000원 / 2회 6,000,000원 (VAT 별도), 공연 대관 시간 10시~23시",
+      "url": "https://nodeul.org/rent/rent-livehouse/"
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "title": "문화비축기지 — 장소사용 안내 (official 서울의 공원 page): T6 커뮤니티센터, T1~T6 대관문의 02-508-2205 ㈜더문엔터테인먼트, 탱크 내부 사용수익허가 전환",
+      "url": "https://parks.seoul.go.kr/template/sub/culturetank.do"
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "title": "파이토치 한국 사용자 모임 (pytorch.kr)",
+      "url": "https://pytorch.kr/"
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "title": "한국 R 사용자회 (r2bit.com)",
+      "url": "https://r2bit.com/"
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "title": "AI Tinkerers Seoul - AI Meetups, Events, and Builder Demos 2026",
+      "url": "https://seoul.aitinkerers.org/"
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "title": "대관 안내 (official 서울시 어울림플라자 page): 다목적강당 수용인원 70~100명, 시설 대관료 다목적강당 350,000~540,000원, 토·일·공휴일 20% 가산 조항",
+      "url": "https://seouleoullim.or.kr/site/reserve/info"
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "title": "Welcome to Superteam Earn South Korea | Discover Bounties and Grants",
+      "url": "https://superteam.fun/earn/regions/korea"
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "title": "전시회 개요 — AW 2027",
+      "url": "https://www.automationworld.co.kr/overview-exhibition?hl=ko"
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "title": "디자인홀 — 공간안내 (official DDP page): 디자인랩 지상 3층, 수용인원 약 110명, 627.6㎡, 디자인랩 대관료 디자인홀 시간당 296,000 / 3시간 888,000 / 1일 3,256,000, LED 디스플레이 6.4m X 4m",
+      "url": "https://www.ddp.or.kr/?menuno=714"
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "title": "서울마라톤, 8년째 세계 최고 '플래티넘' 인증 (동아일보, 2026-11-20)",
+      "url": "https://www.donga.com/news/article/all/20261120/135057511/2"
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "title": "AI Seoul | Meetup — events",
+      "url": "https://www.meetup.com/ai-seoul-public/events/"
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "title": "AWSKRUG (AWS 한국사용자모임) | Meetup",
+      "url": "https://www.meetup.com/ko-kr/awskrug/"
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "title": "Seoul Ethereum Meetup | Meetup",
+      "url": "https://www.meetup.com/seoul-ethereum-meetup/"
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "title": "PyLadies Seoul | Meetup",
+      "url": "https://www.meetup.com/seoul-pyladies-meetup/"
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "title": "대관안내 (official KT&G 상상마당 page): 예약문의 → 신청 → 계약 절차, 홍대 주소 서울시 마포구 어울마당로 65, 라이브홀 대관 문의 livehall@ssmadang.co.kr",
+      "url": "https://www.sangsangmadang.com/rental/list"
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "title": "컨벤션센터 대관 — 사용료 (official SETEC page): 세미나실2 166㎡, 8~17시(전일 8H) 760,000원, 부가가치세 별도",
+      "url": "https://www.setec.or.kr/front/rent/rent05.do"
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "title": "앙트레블(신논현역, 강남역) 대관 — 스페이스클라우드: 수용인원 최대 100명, 시간당 88,000원, 4K LED 스크린 5m x 3m, 무료 wifi",
+      "url": "https://www.spacecloud.kr/space/29372"
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "title": "[그라운드옥탑] 강남역 100인 — 스페이스클라우드: 수용인원 최대 110명(100명 기준), 주말 및 공휴일 시간당 200,000원, 150인치 빔스크린, 와이파이",
+      "url": "https://www.spacecloud.kr/space/68421"
+    }
+  ],
+  "speakers": [],
+  "target_attendance": 50,
+  "target_date": "2027-04-17",
+  "trusted_contacts": [],
+  "trusted_venue_matches": [],
+  "venue_leads_needing_verification": [
+    {
+      "accessed_on": "2026-11-20",
+      "address": "서울 강남구 역삼동 (강남역 도보 5분) — Space Cloud masks the exact street address until booking",
+      "booking_url": "https://www.spacecloud.kr/space/68421",
+      "capacity_basis": "venue_claim",
+      "capacity_comfortable": 100,
+      "catering_policy": "unknown",
+      "city_slug": "seoul-kr",
+      "closing_time": "22:00",
+      "cost_basis": "estimated_from_rate",
+      "cost_local_amount": 1600000.0,
+      "cost_local_currency": "KRW",
+      "cost_rate_unit": "hour",
+      "estimated_cost_usd": 1194.53,
+      "estimated_hours": 8,
+      "event_window_evidence": {
+        "accessed_on": "2026-11-20",
+        "claim": "'이용시간은 평일/주말/공휴일 09~22시까지 입니다' and '입실은 이용시간 30분 전부터 가능합니다' — the 09:00-22:00 window covers a 09:00-17:00 eight-hour event.",
+        "title": "[그라운드옥탑] 강남역 100인 — 스페이스클라우드 listing",
+        "url": "https://www.spacecloud.kr/space/68421"
+      },
+      "event_window_status": "allows_to_5",
+      "evidence": {
+        "inference": "A screen- and Wi-Fi-equipped 100-seat room at a published weekend hourly rate — the cheapest credible published cost in this set (KRW 1.6M for 8h vs KRW 3.26M at DDP) — but the masked address is a material location gap, so it is a lead until the address and a quote are confirmed.",
+        "observed_facts": "Space Cloud listing 68421 (spacecloud.kr/space/68421, fetched 2026-11-20): '[그라운드옥탑] 강남역 100인 세미나 및 강의실'; 공간면적 165㎡; 수용인원 최소 1명 ~ 최대 110명; '시간 당 대여료 (VAT별도/최소 3시간 이상부터 가능) * 평일 : 평일 낮(09시~18시) 160,000원 / 평일 야간(18시~22시) 200,000원 * 주말 및 공휴일 : 200,000원'; '수용 인원 : 100명 (최대 120명까지 가능, 100명 초과 시 1인 1만원 추가 요금 발생)'; 시설 '150인치 대형 빔 스크린, 65인치 대형 모니터 4대, 고급 음향 장비, 화이트보드 등 시설 완비'; '와이파이 무선인터넷, 발표자 전용 유선인터넷 설치'; '영업시간 9~22시'; '주차 불가'. The platform masks the street address. Space Cloud is a registered active platform for seoul-kr in references/venue_platforms.json. USD equivalent at the ECB euro foreign exchange reference rate dated 2026-11-20 (EUR 1 = USD 1.0990; EUR 1 = KRW 1472.04), fetched 2026-11-20 from https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml (Cube time='2026-11-20'); derived 1 KRW = USD 0.000746583, 1 USD = 1339.44 KRW. USD totals are computed from the KRW total at 0.000746583 USD per KRW (ECB 2026-11-20: EUR/USD 1.0990, EUR/KRW 1472.04; hence 1 USD = 1,339.44 KRW). The hourly USD figure is rounded separately, so hourly x 8 can differ from the total by one cent; the KRW-derived total is the recorded basis."
+      },
+      "hourly_rate_local": 200000.0,
+      "hourly_rate_usd": 149.3166,
+      "latitude": null,
+      "longitude": null,
+      "max_booking_hours": null,
+      "name": "[그라운드옥탑] 강남역 100인 세미나·강의장 (Space Cloud listing 68421)",
+      "needs_human_verify": true,
+      "opening_hours": "09:00-22:00 (이용시간 평일/주말/공휴일 09~22시)",
+      "rate_currency": "KRW",
+      "rate_estimate_note": "Weekend/holiday hourly rate KRW 200,000 (VAT excluded per the listing) x 8 hours = KRW 1,600,000. USD equivalent at the ECB euro foreign exchange reference rate dated 2026-11-20 (EUR 1 = USD 1.0990; EUR 1 = KRW 1472.04), fetched 2026-11-20 from https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml (Cube time='2026-11-20'); derived 1 KRW = USD 0.000746583, 1 USD = 1339.44 KRW.",
+      "recording_suitability": "unknown",
+      "score": null,
+      "score_breakdown": null,
+      "screen_status": "confirmed",
+      "source_title": "[그라운드옥탑] 강남역 100인 — 스페이스클라우드: 수용인원 최대 110명(100명 기준), 주말 및 공휴일 시간당 200,000원, 150인치 빔스크린, 와이파이",
+      "source_url": "https://www.spacecloud.kr/space/68421",
+      "tier_reasons": [
+        "material verification question(s): location"
+      ],
+      "venue_flags": [
+        "availability_unconfirmed",
+        "final_quote_required",
+        "map_location_unknown",
+        "stale_evidence"
+      ],
+      "venue_tier": "lead",
+      "verification_question_kinds": [
+        "location",
+        "availability",
+        "final_quote",
+        "booking_terms"
+      ],
+      "verification_questions": [
+        "Confirm the exact street address and building access before shortlisting: Space Cloud masks it ('자세한 주소는 예약 확정 후 예약 내역에서 확인할 수 있습니다') and only states 서울 역삼동 / 강남역 도보 5분, so no coordinate can be recorded honestly yet.",
+        "Confirm Saturday availability for the specific date on the platform calendar.",
+        "Confirm the all-in cost: KRW 200,000/시간 for 주말 및 공휴일, VAT 별도, 최소 3시간; the listing also states 100명 초과 시 1인 1만원 추가 요금 (max 120) and a 30-minute grace before entry, so an 8-hour booking plus setup may exceed 8 paid hours.",
+        "Confirm booking terms: 호스트 승인 후 예약확정 (average wait 1분 at fetch), 취소/환불 rules (이용일 기준 8일 전부터 변경·취소 환불 불가 per the listing)."
+      ],
+      "wifi_status": "confirmed"
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "address": "서울특별시 마포구 마포대로 122, 디캠프 마포 5층",
+      "booking_url": "https://dcamp.kr/program/space",
+      "capacity_basis": "venue_claim",
+      "capacity_comfortable": 200,
+      "catering_policy": "unknown",
+      "city_slug": "seoul-kr",
+      "closing_time": "18:00",
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "cost_rate_unit": "unknown",
+      "estimated_cost_usd": null,
+      "estimated_hours": null,
+      "event_window_evidence": {
+        "accessed_on": "2026-11-20",
+        "claim": "'대관 공간 운영 시간 — 평일 09:00 ~ 21:00 / 토요일 09:00 ~ 18:00' (선릉/마포 공통 고지). Covers a 09:00-17:00 eight-hour Saturday event.",
+        "title": "디캠프 대관 공간 운영시간 및 휴무일 안내 (2026.06.02, official D.CAMP notice)",
+        "url": "https://dcamp.kr/news/notice/7339"
+      },
+      "event_window_status": "allows_to_5",
+      "evidence": {
+        "geo": "https://www.openstreetmap.org/way/879299975",
+        "inference": "The largest D.CAMP room (200 seats) at the 공덕 startup hub; oversized for this event but a plausible overflow/partnership option with the same published Saturday window. Cost and scale-fit are open.",
+        "observed_facts": "Official D.CAMP space page (dcamp.kr/program/space, rendered 2026-11-20): '5층 박병원홀 — 위치 5층 / 주요용도 대형 행사·컨퍼런스·데모데이 등 / 규모 322㎡ (약 98평) / 정원 200인 / 장비 98인치 TV 2대, 강연대 1개, 무선마이크 3대, 유선마이크 1대, 빔프로젝트, 2인 테이블 2개, 의자 190개'. The same page states D.CAMP operates 선릉 and 마포 hubs; the site footer gives '마포 : 서울특별시 마포구 마포대로 122'. Saturday hours 09:00-18:00 come from notice 7339 (2026.06.02)."
+      },
+      "hourly_rate_local": null,
+      "hourly_rate_usd": null,
+      "latitude": 37.5453974,
+      "longitude": 126.9525905,
+      "max_booking_hours": null,
+      "name": "D.CAMP 마포 — 5층 박병원홀 (322㎡, 200인)",
+      "needs_human_verify": true,
+      "opening_hours": "평일 09:00-21:00; 토요일 09:00-18:00 (법정 공휴일 휴무)",
+      "rate_currency": null,
+      "rate_estimate_note": null,
+      "recording_suitability": "unknown",
+      "score": null,
+      "score_breakdown": null,
+      "screen_status": "confirmed",
+      "source_title": "space — 대관 가능 공간 (official D.CAMP page): 마포 5층 박병원홀 322㎡, 정원 200인, 장비 98인치 TV 2대·빔프로젝터·무선마이크 3대, 의자 190개",
+      "source_url": "https://dcamp.kr/program/space",
+      "tier_reasons": [
+        "material verification question(s): other_material"
+      ],
+      "venue_flags": [
+        "oversized_capacity",
+        "cost_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "stale_evidence"
+      ],
+      "venue_tier": "lead",
+      "verification_question_kinds": [
+        "cost_unknown",
+        "availability",
+        "wifi",
+        "booking_terms",
+        "other_material"
+      ],
+      "verification_questions": [
+        "Confirm the rental fee for 박병원홀 (no price is published; TaapSPACE application + 대관 심사, then quote).",
+        "Confirm Saturday availability for the specific date within the 7-day/60-day application window.",
+        "Confirm attendee Wi-Fi (not in the published equipment list).",
+        "Confirm whether a 200-seat hall can be scaled down to a 50-125 person community event comfortably (published furniture: 98인치 TV 2대, 강연대 1개, 무선마이크 3대, 유선마이크 1대, 빔프로젝트, 2인 테이블 2개, 의자 190개).",
+        "Confirm the 심사 criteria for a free community AI event and whether marketing/sponsor content is treated as '영리 목적'."
+      ],
+      "wifi_status": "unknown"
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "address": "서울특별시 강남구 선릉로 551, 디캠프 선릉 6층",
+      "booking_url": "https://dcamp.kr/program/space",
+      "capacity_basis": "venue_claim",
+      "capacity_comfortable": 130,
+      "catering_policy": "unknown",
+      "city_slug": "seoul-kr",
+      "closing_time": "18:00",
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "cost_rate_unit": "unknown",
+      "estimated_cost_usd": null,
+      "estimated_hours": null,
+      "event_window_evidence": {
+        "accessed_on": "2026-11-20",
+        "claim": "'대관 공간 운영 시간 — 평일 09:00 ~ 21:00 / 토요일 09:00 ~ 18:00'. Saturday operation 09:00-18:00 covers a 09:00-17:00 eight-hour event; 법정 공휴일 are closed.",
+        "title": "디캠프 대관 공간 운영시간 및 휴무일 안내 (2026.06.02, official D.CAMP notice)",
+        "url": "https://dcamp.kr/news/notice/7339"
+      },
+      "event_window_status": "allows_to_5",
+      "evidence": {
+        "geo": "https://www.openstreetmap.org/node/13946798758",
+        "inference": "D.CAMP is the best Saturday-hours evidence in the set (09:00-18:00 published) with an in-house LED display and 130 seats, but no price and a 60-day booking ceiling keep it shortlist_ready with concrete questions rather than a cost claim.",
+        "observed_facts": "Official D.CAMP space page (dcamp.kr/program/space, rendered 2026-11-20) lists '6층 이벤트홀 — 위치 6층 / 주요용도 대형 행사·컨퍼런스·데모데이 등 / 규모 201.48㎡ (약 60평) / 정원 130인 / 장비 60인치 TV 2대, LED 디스플레이, 외부 디스플레이, 무선마이크 4대, 2인 테이블 5개, 의자 130개'. 대관 진행 절차: 01 신청(TaapSPACE) → 02 대관 심사(매주 월요일 오후) → 03 심사 결과 안내 → 04 행사 진행 관련 조율 → 05 행사 진행; 문의 venue@dcamp.kr. Restrictions: '신청일 기준 최대 7일 이후 60일 이전 행사만 신청 가능합니다', '이용 시간에는 준비/철수 및 원상복구 시간이 포함됩니다', '한 기업(단체)당 월 최대 5번 신청 가능합니다'. Official notice 7339 (2026.06.02) sets Saturday hours 09:00-18:00 and lists 법정 공휴일 closures."
+      },
+      "hourly_rate_local": null,
+      "hourly_rate_usd": null,
+      "latitude": 37.507863,
+      "longitude": 127.0452171,
+      "max_booking_hours": null,
+      "name": "D.CAMP 선릉 — 6층 이벤트홀 (201.48㎡, 130인)",
+      "needs_human_verify": true,
+      "opening_hours": "평일 09:00-21:00; 토요일 09:00-18:00 (법정 공휴일 휴무)",
+      "rate_currency": null,
+      "rate_estimate_note": null,
+      "recording_suitability": "unknown",
+      "score": null,
+      "score_breakdown": null,
+      "screen_status": "confirmed",
+      "source_title": "space — 대관 가능 공간 (official D.CAMP page): 선릉 6층 이벤트홀 201.48㎡, 정원 130인, 장비 60인치 TV 2대·LED 디스플레이·외부 디스플레이·무선마이크 4대, 의자 130개",
+      "source_url": "https://dcamp.kr/program/space",
+      "tier_reasons": [
+        "material verification question(s): other_material"
+      ],
+      "venue_flags": [
+        "cost_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "stale_evidence"
+      ],
+      "venue_tier": "lead",
+      "verification_question_kinds": [
+        "cost_unknown",
+        "availability",
+        "wifi",
+        "booking_terms",
+        "other_material"
+      ],
+      "verification_questions": [
+        "Confirm the rental fee: no price is published. Applications run through TaapSPACE (taapspace.kr) after 대관 심사, so a written quote is needed before any cost claim.",
+        "Confirm Saturday availability for the specific date, and note the published booking window: '신청일 기준 최대 7일 이후 60일 이전 행사만 신청 가능합니다' — a 2027 date cannot be applied for more than ~60 days ahead.",
+        "Confirm attendee Wi-Fi in the event hall (the equipment list covers displays, mics and furniture but not Wi-Fi).",
+        "Confirm the 심사 criteria applied to a free community AI event: the FAQ excludes '단순 친목 중심 모임' and '영리 목적' events, and one 기업(단체) may apply at most 5 times per month.",
+        "Confirm whether the 201.48㎡ hall can be laid out theatre-style for 50-125 people with the published furniture (2인 테이블 5개, 의자 130개)."
+      ],
+      "wifi_status": "unknown"
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "address": "서울특별시 마포구 어울마당로 65, KT&G 상상마당 홍대",
+      "booking_url": "https://www.sangsangmadang.com/rental/list",
+      "capacity_basis": "unknown",
+      "capacity_comfortable": 0,
+      "catering_policy": "unknown",
+      "city_slug": "seoul-kr",
+      "closing_time": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "cost_rate_unit": "unknown",
+      "estimated_cost_usd": null,
+      "estimated_hours": null,
+      "event_window_evidence": null,
+      "event_window_status": "unknown",
+      "evidence": {
+        "geo": "https://www.openstreetmap.org/way/299797614",
+        "inference": "A well-known Hongdae cultural venue with a clear application route and a discount scheme aimed at repeat renters, but no published capacity or price for the live hall; capacity is a material gap, so it is a lead.",
+        "observed_facts": "Official KT&G 상상마당 대관안내 page (sangsangmadang.com/rental/list, fetched 2026-11-20) states the procedure: 'STEP 1. 예약문의 — 공간 대관이용을 위해 해당 부서로 행사일정에 대하여 사전 가능여부를 문의', 'STEP 2. 신청 — 대관신청서를 작성하여 담당자에게 이메일로 접수', and the footer address '서울시 마포구 어울마당로 65'. The 홍대 라이브홀 notice (sangsangmadang.com/display/detail/2044) gives the application route '홍대 라이브홀 대관신청서, 개인정보동의서 다운로드 및 작성 - livehall@ssmadang.co.kr 로 접수 *문의처: 02-2014-2024'. The 다회대관 할인 프로모션 notice (2026) states discounts for partners renting 8+ times a year, i.e. no base rate is published."
+      },
+      "hourly_rate_local": null,
+      "hourly_rate_usd": null,
+      "latitude": 37.5509886,
+      "longitude": 126.9210678,
+      "max_booking_hours": null,
+      "name": "KT&G 상상마당 홍대 — 라이브홀",
+      "needs_human_verify": true,
+      "opening_hours": null,
+      "rate_currency": null,
+      "rate_estimate_note": null,
+      "recording_suitability": "unknown",
+      "score": null,
+      "score_breakdown": null,
+      "screen_status": "unknown",
+      "source_title": "대관안내 (official KT&G 상상마당 page): 예약문의 → 신청 → 계약 절차, 홍대 주소 서울시 마포구 어울마당로 65, 라이브홀 대관 문의 livehall@ssmadang.co.kr",
+      "source_url": "https://www.sangsangmadang.com/rental/list",
+      "tier_reasons": [
+        "material verification question(s): capacity",
+        "capacity_comfortable 0 below minimum 40"
+      ],
+      "venue_flags": [
+        "cost_unknown",
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "venue_tier": "lead",
+      "verification_question_kinds": [
+        "capacity",
+        "cost_unknown",
+        "availability",
+        "event_window",
+        "screen",
+        "wifi",
+        "booking_terms"
+      ],
+      "verification_questions": [
+        "Confirm the 라이브홀 capacity and layout (standing vs seated) for a 50-125 person event: the official 대관안내 page describes the procedure but publishes no capacity for the Hongdae live hall.",
+        "Confirm the rental fee: the official 대관안내 and 다회대관 할인 프로모션 pages describe discounts (e.g. 6회 이상 대관 시 평일 30%/주말 20% 할인 in the 2025 promotion) but no base rate is published; a written quote is required.",
+        "Confirm Saturday availability for a 09:00-17:00 event.",
+        "Confirm the usable window for an eight-hour daytime event (the hall is a working concert venue).",
+        "Confirm screen/projection in the live hall (a concert hall typically carries stage lighting and PA, not a conference screen — this must be verified, not assumed).",
+        "Confirm attendee Wi-Fi (not stated on the official rental page).",
+        "Confirm booking terms: 예약문의 → 대관신청서 이메일 접수 (livehall@ssmadang.co.kr, 02-2014-2024) and whether a non-concert community event is accepted."
+      ],
+      "wifi_status": "unknown"
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "address": "서울특별시 마포구 증산로 87, 문화비축기지 T6",
+      "booking_url": "https://parks.seoul.go.kr/template/sub/culturetank.do",
+      "capacity_basis": "unknown",
+      "capacity_comfortable": 0,
+      "catering_policy": "unknown",
+      "city_slug": "seoul-kr",
+      "closing_time": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "cost_rate_unit": "unknown",
+      "estimated_cost_usd": null,
+      "estimated_hours": null,
+      "event_window_evidence": null,
+      "event_window_status": "unknown",
+      "evidence": {
+        "geo": "https://www.openstreetmap.org/node/13805210084",
+        "inference": "문화비축기지 T6 is an atmospheric civic space with a published public rate only for the outdoor 문화마당; the indoor tanks moved to an operator-run 사용수익허가 model, so both capacity and price are unpublished for this run. Retained as a lead with specific questions because the venue is a strong thematic fit for a community tech day.",
+        "observed_facts": "Official 서울의 공원 문화비축기지 page (parks.seoul.go.kr/template/sub/culturetank.do, read 2026-11-20 through the search-indexed page text because the deep links returned 404): 주소 서울특별시 마포구 증산로 87; 'T6. 커뮤니티센터 — 운영사무실과 창의랩, 강의실, 회의실, 카페테리아 등 커뮤니티 활동을 위한 공간'; '탱크 T1~T6 — 2025년 4월부터 사용수익허가시설로 변경됨에 따라 탱크 내부 상시 관람이 불가합니다 ※ 이용문의 : 02-508-2205 ㈜더문엔터테인먼트'; '문화비축기지 일시적 장소사용(대관) ▶ 탱크(T1~T6) : 02-508-2205'; '문화마당 사용료' table T0 문화마당 7,620㎡ 141,613원(1시간), 나무데크 987㎡ 18,324원(1시간). The Space Cloud listing (spacecloud.kr/space/80974) prices T1/T6 at KRW 500,000/시간 and states T6 수용인원 최대 300명 (platform data, address masked)."
+      },
+      "hourly_rate_local": null,
+      "hourly_rate_usd": null,
+      "latitude": 37.5715903,
+      "longitude": 126.8937769,
+      "max_booking_hours": null,
+      "name": "문화비축기지 — T6 커뮤니티센터 (원형회의실/강의실)",
+      "needs_human_verify": true,
+      "opening_hours": null,
+      "rate_currency": null,
+      "rate_estimate_note": null,
+      "recording_suitability": "unknown",
+      "score": null,
+      "score_breakdown": null,
+      "screen_status": "unknown",
+      "source_title": "문화비축기지 — 장소사용 안내 (official 서울의 공원 page): T6 커뮤니티센터, T1~T6 대관문의 02-508-2205 ㈜더문엔터테인먼트, 탱크 내부 사용수익허가 전환",
+      "source_url": "https://parks.seoul.go.kr/template/sub/culturetank.do",
+      "tier_reasons": [
+        "material verification question(s): capacity",
+        "capacity_comfortable 0 below minimum 40"
+      ],
+      "venue_flags": [
+        "cost_unknown",
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "venue_tier": "lead",
+      "verification_question_kinds": [
+        "capacity",
+        "cost_unknown",
+        "availability",
+        "event_window",
+        "screen",
+        "wifi"
+      ],
+      "verification_questions": [
+        "Confirm the seated capacity of the T6 원형회의실 and 강의실 for a 50-125 person event: the official park page describes the rooms (원형회의실 164㎡) but publishes no capacity, and the space is now operated under a 사용수익허가 by ㈜더문엔터테인먼트 (02-508-2205) rather than by the park office.",
+        "Confirm the rental fee: the official page publishes only 문화마당 rates (T0 141,613원/시간, 나무데크 18,324원/시간); T1~T6 rates are set by the operator and are not published.",
+        "Confirm Saturday availability and the approval route for T6 (T1~T6 문의 02-508-2205; 문화마당/산책로 02-2133-0425).",
+        "Confirm the usable event window for an eight-hour 09:00-17:00 Saturday event.",
+        "Confirm screen/projection in T6 (the park page lists the rooms and the café but no AV).",
+        "Confirm attendee Wi-Fi in T6 (not stated on the park page)."
+      ],
+      "wifi_status": "unknown"
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "address": "서울 강남구 역삼동 (신논현역·강남역 도보 5분) — Space Cloud masks the exact street address until booking",
+      "booking_url": "https://www.spacecloud.kr/space/29372",
+      "capacity_basis": "venue_claim",
+      "capacity_comfortable": 100,
+      "catering_policy": "unknown",
+      "city_slug": "seoul-kr",
+      "closing_time": "23:59",
+      "cost_basis": "estimated_from_rate",
+      "cost_local_amount": 704000.0,
+      "cost_local_currency": "KRW",
+      "cost_rate_unit": "hour",
+      "estimated_cost_usd": 525.59,
+      "estimated_hours": 8,
+      "event_window_evidence": {
+        "accessed_on": "2026-11-20",
+        "claim": "'영업시간 0~24시 / 휴무일 없음' — a 09:00-17:00 eight-hour window is inside the published operating hours.",
+        "title": "앙트레블(신논현역, 강남역) 대관 — 스페이스클라우드 listing",
+        "url": "https://www.spacecloud.kr/space/29372"
+      },
+      "event_window_status": "allows_to_5",
+      "evidence": {
+        "inference": "The lowest published hourly rate found in Seoul (KRW 88,000/h) for a 100-person room with a 4K LED wall, but the masked address and the 73-seat table capacity keep it a lead; if the address and a Saturday quote check out it is the budget option.",
+        "observed_facts": "Space Cloud listing 29372 (spacecloud.kr/space/29372, fetched 2026-11-20): '앙트레블, 100인 수용가능 대형 공간 대여'; 공간면적 264㎡; 수용인원 최소 1명 ~ 최대 100명; '100인수용가능 대형 공간 대여 ₩ 88,000 / 시간'; '기본 대관 시간은 2시간 입니다'; 시설 '초대형 대형 세미나 Full HD LED 4K스크린(5mx3m)', '무료 wifi', '음향시설완비/음향콘트롤러/마이크 최대 4개 가능', '방석을 놓고 앉을 수 있는 좌석 포함 73~100석'; '영업시간 0~24시 / 휴무일 없음'; '외부음식 반입가능 (케이터링 이용 시 수용 인원 50명으로 제한)'. The platform masks the street address. Space Cloud is a registered active platform for seoul-kr in references/venue_platforms.json. USD equivalent at the ECB euro foreign exchange reference rate dated 2026-11-20 (EUR 1 = USD 1.0990; EUR 1 = KRW 1472.04), fetched 2026-11-20 from https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml (Cube time='2026-11-20'); derived 1 KRW = USD 0.000746583, 1 USD = 1339.44 KRW. USD totals are computed from the KRW total at 0.000746583 USD per KRW (ECB 2026-11-20: EUR/USD 1.0990, EUR/KRW 1472.04; hence 1 USD = 1,339.44 KRW). The hourly USD figure is rounded separately, so hourly x 8 can differ from the total by one cent; the KRW-derived total is the recorded basis."
+      },
+      "hourly_rate_local": 88000.0,
+      "hourly_rate_usd": 65.6993,
+      "latitude": null,
+      "longitude": null,
+      "max_booking_hours": null,
+      "name": "앙트레블 (신논현역·강남역) — 100인 컨퍼런스 공간 (Space Cloud listing 29372)",
+      "needs_human_verify": true,
+      "opening_hours": "0~24시 (영업시간 0~24시, 휴무일 없음)",
+      "rate_currency": "KRW",
+      "rate_estimate_note": "Published hourly rate KRW 88,000 x 8 hours = KRW 704,000. The listing states a minimum 2-hour booking and a 2-hour base rental; no weekend differential is published. USD equivalent at the ECB euro foreign exchange reference rate dated 2026-11-20 (EUR 1 = USD 1.0990; EUR 1 = KRW 1472.04), fetched 2026-11-20 from https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml (Cube time='2026-11-20'); derived 1 KRW = USD 0.000746583, 1 USD = 1339.44 KRW.",
+      "recording_suitability": "unknown",
+      "score": null,
+      "score_breakdown": null,
+      "screen_status": "confirmed",
+      "source_title": "앙트레블(신논현역, 강남역) 대관 — 스페이스클라우드: 수용인원 최대 100명, 시간당 88,000원, 4K LED 스크린 5m x 3m, 무료 wifi",
+      "source_url": "https://www.spacecloud.kr/space/29372",
+      "tier_reasons": [
+        "material verification question(s): location"
+      ],
+      "venue_flags": [
+        "availability_unconfirmed",
+        "final_quote_required",
+        "map_location_unknown",
+        "stale_evidence"
+      ],
+      "venue_tier": "lead",
+      "verification_question_kinds": [
+        "location",
+        "availability",
+        "final_quote",
+        "booking_terms"
+      ],
+      "verification_questions": [
+        "Confirm the exact street address and building access: Space Cloud masks the address ('자세한 주소는 예약 확정 후 예약 내역에서 확인할 수 있습니다'; only 서울 역삼동 인근 is shown), so no coordinate can be recorded honestly yet.",
+        "Confirm Saturday availability for the specific date (the host answers by phone 0507-1443-1417, weekdays 10:00-18:00).",
+        "Confirm the all-in cost: KRW 88,000/시간 with a 2-hour minimum and no published weekend differential; confirm whether VAT, cleaning and any 10-minute overrun charge (30분 단위 추가금) apply to an 8-hour booking.",
+        "Confirm booking terms and the room fit: 호스트 승인 후 예약확정; seating is 73석 with tables up to 100 with floor cushions, and 케이터링 이용 시 수용 인원 50명으로 제한."
+      ],
+      "wifi_status": "confirmed"
+    },
+    {
+      "accessed_on": "2026-11-20",
+      "address": "서울특별시 서대문구 연세로 50, 연세대학교 백양누리",
+      "booking_url": "https://gsis.yonsei.ac.kr/commons/space/grandBallroom.do",
+      "capacity_basis": "venue_claim",
+      "capacity_comfortable": 120,
+      "catering_policy": "in_house_only",
+      "city_slug": "seoul-kr",
+      "closing_time": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "cost_rate_unit": "unknown",
+      "estimated_cost_usd": null,
+      "estimated_hours": null,
+      "event_window_evidence": null,
+      "event_window_status": "unknown",
+      "evidence": {
+        "geo": "https://www.openstreetmap.org/node/13202367571",
+        "inference": "Published LED-screen pricing and a 60-120 seat band make 백양누리 a real option for a university-adjacent audience, but the base room rate is attachment-only and the banquet-only table stock conflicts with an all-day talk format; both are material, so this record is a lead rather than shortlist_ready.",
+        "observed_facts": "Official Yonsei 백양누리 space page (gsis.yonsei.ac.kr/commons/space/grandBallroom.do, fetched 2026-11-20): '그랜드볼룸 A또는 B · 인원수 : 60석 ~ 120석 · LED스크린 사용료 : 1,320,000원 ※ 4만원 이상 메뉴 식사시 기본대관료 3시간 무료 ※ 교내행사 (대관료 50%할인), 학생및 동문행사 (대관료 20%할인)'; 주소 서울시 서대문구 연세로50 연세대학교 백양누리; 문의 CJ프레시웨이 예약팀 02-2123-8052 / ys.thelounge@cj.net. The Yonsei 대관 및 예약안내 page lists 백양누리 그랜드볼룸 380석 (building-level) and 백양누리 최영 홀 88석. The 백양누리 자료(서식) board carries a '백양누리_요금표' attachment (posted 2026.09.08) that was not machine-readable in this pass. A third-party venue-platform FAQ for the same room states 원형테이블만 보유 (banquet-only seating) and that 외부 음식/케이터링 반입 is not allowed — platform-sourced, not official."
+      },
+      "hourly_rate_local": null,
+      "hourly_rate_usd": null,
+      "latitude": 37.5639034,
+      "longitude": 126.9376219,
+      "max_booking_hours": null,
+      "name": "연세대 백양누리 — 그랜드볼룸 A (60~120석)",
+      "needs_human_verify": true,
+      "opening_hours": null,
+      "rate_currency": null,
+      "rate_estimate_note": null,
+      "recording_suitability": "unknown",
+      "score": null,
+      "score_breakdown": null,
+      "screen_status": "confirmed",
+      "source_title": "연세대학교 백양누리 | 대관서비스 | 그랜드볼룸A,B | 공간안내: 그랜드볼룸 A 또는 B 60석~120석, LED스크린 사용료 1,320,000원, 4만원 이상 메뉴 식사시 기본대관료 3시간 무료",
+      "source_url": "https://gsis.yonsei.ac.kr/commons/space/grandBallroom.do",
+      "tier_reasons": [
+        "material verification question(s): other_material"
+      ],
+      "venue_flags": [
+        "cost_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "duration_unconfirmed",
+        "stale_evidence"
+      ],
+      "venue_tier": "lead",
+      "verification_question_kinds": [
+        "cost_unknown",
+        "event_window",
+        "availability",
+        "booking_terms",
+        "wifi",
+        "other_material"
+      ],
+      "verification_questions": [
+        "Confirm the basic 대관료 for 그랜드볼룸 A: the official page publishes only the LED screen usage fee (KRW 1,320,000) and the rule '4만원 이상 메뉴 식사시 기본대관료 3시간 무료'; the base room rate sits in the 백양누리_요금표 attachment and must be quoted.",
+        "Confirm the usable daily window for a 09:00-17:00 Saturday event (no hours are published on the space page).",
+        "Confirm Saturday availability and whether external (non-Yonsei) organizations can book a weekend date.",
+        "Confirm booking terms: 신청서 submission to the CJ프레시웨이 reservations team (02-2123-8052, ys.thelounge@cj.net), deposit and cancellation terms, and the 교내/동문 discount eligibility for an outside community group.",
+        "Confirm attendee Wi-Fi in 그랜드볼룸 A (not stated on the official space page).",
+        "Confirm the seating fit: the venue holds round tables for banquet-style seating only, and the platform FAQ states a theatre/lecture layout requires an outside setup vendor — confirm whether a lecture-style 50-125 person layout is permitted and who supplies it."
+      ],
+      "wifi_status": "unknown"
+    }
+  ],
+  "venues": [],
+  "workflow_phase": "venue"
+}

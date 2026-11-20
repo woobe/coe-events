@@ -1,0 +1,461 @@
+[
+  {
+    "group_name": "AI Tinkerers Seoul",
+    "network": "AI Tinkerers",
+    "city_slug": "seoul-kr",
+    "focus_tags": [
+      "ai",
+      "machine_learning"
+    ],
+    "activity_status": "active",
+    "cohost_open": false,
+    "cohost_evidence_phrase": null,
+    "contact_info": null,
+    "member_size_public": null,
+    "cadence": "Irregular builder demo nights; the chapter page shows 'Next event: Tuesday, November 24, 2026' with past events on July 2, 2026 and August 20, 2026",
+    "typical_venue": null,
+    "source_url": "https://seoul.aitinkerers.org/",
+    "source_title": "AI Tinkerers Seoul - AI Meetups, Events, and Builder Demos 2026",
+    "accessed_on": "2026-11-20",
+    "needs_human_verify": true,
+    "verification_questions": [
+      "Confirm the chapter's current organizer roster and whether a co-hosted DeAI Day is something the Seoul organizers would consider (the page lists organizers and a past event 'sponsored by CROO', but carries no Seoul-specific open call).",
+      "Confirm the typical venue and headcount of the 2026 Seoul demo nights (not stated on the chapter page)."
+    ],
+    "uncertainty_notes": "Own-page evidence is strong for activity (dated 2026 events), but the chapter posts no venue, no public member count and no collaboration or sponsorship invitation, so co-host openness is intentionally false rather than a negative claim.",
+    "evidence": {
+      "observed_facts": "Official AI Tinkerers Seoul page (seoul.aitinkerers.org, fetched 2026-11-20): title 'AI Tinkerers Seoul - AI Meetups, Events, and Builder Demos 2026'; 'Next event: Tuesday, November 24, 2026'; past-event entries include 'The Prompt That Worked in Isolation and Died in Production ... (July 2, 2026)' and an August 20, 2026 talk; one past outing is described as 'a technical demo night for AI builders, featuring live demos and networking, sponsored by CROO'; the page lists organisers by first name only and was 'Last updated: November 2026'.",
+      "inference": "The most credible Seoul AI-builder audience in this set (recent, dated, in-person demo nights)."
+    }
+  },
+  {
+    "group_name": "AWSKRUG (AWS 한국사용자모임)",
+    "network": "AWS User Group Community",
+    "city_slug": "seoul-kr",
+    "focus_tags": [
+      "ai",
+      "mixed"
+    ],
+    "activity_status": "active",
+    "cohost_open": false,
+    "cohost_evidence_phrase": null,
+    "contact_info": null,
+    "member_size_public": null,
+    "cadence": "Multiple sub-meetups per month: '2026년 11월 24일 19:00 KST' session, '2026년 11월 26일 19:00 KST' AWSKRUG Connect at 스파크플러스 강남 4호점 IR룸 11B, '2026년 11월 04일' Kiro 한국 사용자 모임",
+    "typical_venue": null,
+    "source_url": "https://www.meetup.com/ko-kr/awskrug/",
+    "source_title": "AWSKRUG (AWS 한국사용자모임) | Meetup",
+    "accessed_on": "2026-11-20",
+    "needs_human_verify": true,
+    "verification_questions": [
+      "Confirm current membership size and whether the group co-hosts community events with non-AWS organisers (no co-hosting language appears on the Meetup page).",
+      "Confirm whether an AI/DeAI topic fits the group's 2027 programme and who approves topics."
+    ],
+    "uncertainty_notes": "Meetup organiser page with dated 2026 sessions; member count was not captured on the fetched page, so it stays null rather than estimated.",
+    "evidence": {
+      "observed_facts": "Official AWSKRUG Meetup page (meetup.com/ko-kr/awskrug, fetched 2026-11-20) lists upcoming sessions dated '2026년 11월 24일 19:00 KST', '2026년 11월 26일 19:00 KST' ('AWSKRUG Connect' at 스파크플러스 강남 4호점 IR룸 11B) and '2026년 11월 04일', with registration deadlines such as '신청 마감 : 2026년 11월 20일 (금) 23:59'.",
+      "inference": "Large, regularly meeting cloud/AI engineering audience in Seoul; a strong audience signal even without co-host language."
+    }
+  },
+  {
+    "group_name": "PyLadies Seoul",
+    "network": "PyLadies",
+    "city_slug": "seoul-kr",
+    "focus_tags": [
+      "data_science",
+      "ai"
+    ],
+    "activity_status": "active",
+    "cohost_open": false,
+    "cohost_evidence_phrase": null,
+    "contact_info": null,
+    "member_size_public": null,
+    "cadence": "Monthly book club plus workshops and seminars: 2026-02-07 seminar, 2026-03-04 book club, 2026-03-21 Git workshop, 2026-04-01 book club, 2026-04-25 Django open-source workshop, 2026-05-06 book club, 2026-05-30 career seminar, 2026-06-03 book club, 2026-07-26 Git workshop (2nd), 2026-09-05 Upstage team-lead seminar; PyLadies Asia Conference 2026 announced for 2026-11-29 (upcoming at check time)",
+    "typical_venue": null,
+    "source_url": "https://www.meetup.com/seoul-pyladies-meetup/",
+    "source_title": "PyLadies Seoul | Meetup",
+    "accessed_on": "2026-11-20",
+    "needs_human_verify": true,
+    "verification_questions": [
+      "Confirm the group's 2027 calendar and whether it would co-host or partner on a DeAI Day audience track (the page states PyLadies Seoul hosts the Asia Conference but no collaboration call).",
+      "Confirm current public member count (not captured on the fetched page)."
+    ],
+    "uncertainty_notes": "Past 2026 events are now cited alongside the announced 2026-11-29 conference, so activity no longer rests on a future date. Member count is still not published on the fetched pages.",
+    "evidence": {
+      "observed_facts": "Rendered Meetup events page (meetup.com/seoul-pyladies-meetup/events/, fetched 2026-11-20) lists dated events '2026-02-07 AI 시대, 해외 취업 시장은 어떻게 다를까? ... 세미나', '2026-03-04 2026년 3월 PyLadies Seoul 월간 북클럽', '2026-03-21 Pyladies seoul: 깃 튜토리얼 워크샵', '2026-04-01 2026년 4월 PyLadies Seoul 월간 북클럽', '2026-04-25 [PyLadies Seoul] Django 오픈소스 기여 워크샵(Beginner Friendly)', '2026-05-06 2026년 5월 PyLadies Seoul 월간 북클럽', '2026-05-30 정답 대신 나만의 리듬으로 ... 세미나', '2026-06-03 2026년 6월 PyLadies Seoul 월간 북클럽', '2026-07-26 PyLadies Seoul Git 튜토리얼 워크샵 (2회차)', '2026-09-05 생물학도에서 개발팀 리더로 ... (Upstage Team Lead 문수영님 세미나)', and the upcoming '2026-11-29 PyLadies Asia Conference 2026'. Member count not shown on the fetched page.",
+      "inference": "Active Seoul Python/data community with a steady 2026 in-person cadence and women-in-tech reach; a plausible outreach partner for an inclusive audience."
+    }
+  },
+  {
+    "group_name": "Bridge34",
+    "network": "independent",
+    "city_slug": "seoul-kr",
+    "focus_tags": [
+      "web3",
+      "mixed"
+    ],
+    "activity_status": "active",
+    "cohost_open": true,
+    "cohost_evidence_phrase": "'From intimate KOL dinners to summit-scale conferences, Bridge34 plans, hosts and runs off-line events for global Web3 projects in Korea.'",
+    "contact_info": null,
+    "member_size_public": null,
+    "cadence": "Event-agency cadence: 2026 Seoul events listed on 2026-04-14 (Agentic by Eigen | Seoul Edition), 2026-05-07 (MEGA ARCADE - SEOUL), and a KBW2026 side-event run 2026-09-28 to 2026-10-02",
+    "typical_venue": null,
+    "source_url": "https://bridge34.com/events",
+    "source_title": "Bridge34 Off-Line Events — Where Web3 Meets Seoul",
+    "accessed_on": "2026-11-20",
+    "needs_human_verify": true,
+    "verification_questions": [
+      "Confirm whether Bridge34 is open to co-organising a free community DeAI Day (their page states they plan/host/run events for global Web3 projects, which is a commercial engagement model, not a stated community partnership).",
+      "Confirm the commercial terms and lead time for a Seoul venue-plus-production engagement."
+    ],
+    "uncertainty_notes": "The own-page language proves they run events in Seoul, not that they will partner for free; cohost_open is recorded as an invitation to assess, per the schema rule.",
+    "evidence": {
+      "observed_facts": "Bridge34 events page (bridge34.com/events, fetched 2026-11-20): heading 'Where Web3 Meets Seoul'; 'From intimate KOL dinners to summit-scale conferences, Bridge34 plans, hosts and runs off-line events for global Web3 projects in Korea.'; listed Seoul events include 'Apr 14, 2026 · Seoul Agentic by Eigen | Seoul Edition', 'May 7, 2026 · Seoul MEGA ARCADE - SEOUL', and KBW2026 side events dated Sep 28 - Oct 2, 2026.",
+      "inference": "A production partner that could solve venue, AV and side-event logistics for a Seoul run, at commercial cost."
+    }
+  },
+  {
+    "group_name": "블록체인 밋업데이 (Blockchain Meetup Day, BCMD) — 한국인터넷진흥원(KISA)",
+    "network": "KISA (Korea Internet & Security Agency)",
+    "city_slug": "seoul-kr",
+    "focus_tags": [
+      "web3"
+    ],
+    "activity_status": "active",
+    "cohost_open": false,
+    "cohost_evidence_phrase": null,
+    "contact_info": null,
+    "member_size_public": null,
+    "cadence": "Recurring education meetup; the 31st session was held 2026-11-14 (Sat) 10:00-18:00 at KISA 서울청사 10층 기업성장허브",
+    "typical_venue": "한국인터넷진흥원 서울청사 10층 기업성장허브 (서울시 송파구 중대로 135, 가락동 IT벤처타워)",
+    "source_url": "https://kisa.or.kr/401/form?lang_type=KO&postSeq=3787",
+    "source_title": "「2026 블록체인 밋업데이(BCMD)」 31회차 교육생 모집(~11.13)",
+    "accessed_on": "2026-11-20",
+    "needs_human_verify": true,
+    "verification_questions": [
+      "Confirm the 2027 BCMD schedule and whether KISA would co-promote a DeAI Day to its blockchain audience (the page is an education-recruitment notice, not a partnership channel).",
+      "Confirm typical headcount (the notice caps confirmed attendees at 35 per session)."
+    ],
+    "uncertainty_notes": "A public-agency programme rather than a member community; recorded as an audience and topic signal, not as a co-host candidate.",
+    "evidence": {
+      "observed_facts": "KISA notice (kisa.or.kr/401/form?lang_type=KO&postSeq=3787, fetched 2026-11-20), 등록일 2026-10-21: '「2026 블록체인 밋업데이(BCMD)」 31회차 교육생 모집'; '2026년 11월 14일(토), 2026 블록체인 밋업데이(BCMD)가 개최됩니다. -토큰증권 제도화와 스마트 컨트랙트-'; '■ 일시 : 2026.11.14.(토) 10:00~18:00'; '■ 장소 : 한국인터넷진흥원 서울청사 10층 기업성장허브 (서울시 송파구 중대로 135 (가락동) IT벤처타워)'; '선착순 35명'.",
+      "inference": "Shows a live Seoul Web3 education audience meeting on Saturdays, which is useful for week-day/time fit but not for scale."
+    }
+  },
+  {
+    "group_name": "파이토치 한국 사용자 모임 (PyTorch Korea)",
+    "network": "PyTorch Korea",
+    "city_slug": "seoul-kr",
+    "focus_tags": [
+      "machine_learning",
+      "ai"
+    ],
+    "activity_status": "intermittent",
+    "cohost_open": false,
+    "cohost_evidence_phrase": null,
+    "contact_info": null,
+    "member_size_public": null,
+    "cadence": "Digital-first: Korean tutorial/blog posts through 2026-10-28, plus a reported in-person 'KVCache Meetup Korea' on 2026-09-30 at 드림플러스 강남",
+    "typical_venue": null,
+    "source_url": "https://pytorch.kr/",
+    "source_title": "파이토치 한국 사용자 모임 (pytorch.kr)",
+    "accessed_on": "2026-11-20",
+    "needs_human_verify": true,
+    "verification_questions": [
+      "Confirm whether the group still runs its own in-person Seoul meetups (the fetched site shows blog activity and a report of a September 2026 meetup, but no own events calendar).",
+      "Confirm who the current organisers are and whether they would co-host a DeAI Day session."
+    ],
+    "uncertainty_notes": "Evidence is digital-first plus a third-party meetup reported on the site; that is not the same as an own-organised in-person series, hence intermittent rather than active.",
+    "evidence": {
+      "observed_facts": "pytorch.kr (fetched 2026-11-20) shows blog entries dated '2026-10-28', '2026-10-23' and '2026-10-20', and a post describing '지난 2026년 9월 30일 저녁, 서울 강남 드림플러스에서 KVCache Meetup Korea 행사가 진행되었습니다'.",
+      "inference": "A translation/tutorial community with ML reach; in-person cadence unknown."
+    }
+  },
+  {
+    "group_name": "모두의연구소 (Modulabs)",
+    "network": "Modulabs",
+    "city_slug": "seoul-kr",
+    "focus_tags": [
+      "ai",
+      "machine_learning",
+      "data_science"
+    ],
+    "activity_status": "active",
+    "cohost_open": false,
+    "cohost_evidence_phrase": null,
+    "contact_info": null,
+    "member_size_public": null,
+    "cadence": "Recurring in-person seminars (e.g. '11월 10일(화) 10:00 - 12:00' with status 모집완료; '11월 26일(목)' and '11월 27일(금)' sessions 모집중) plus 모두모임 study groups and the annual 모두콘 conference ('모두콘 2026 - Deeper in AI')",
+    "typical_venue": "역삼디오슈페리움 2층 모두의연구소 강남캠퍼스",
+    "source_url": "https://biz.modulabs.co.kr/event?page=1",
+    "source_title": "행사/세미나 | 모두의연구소 (Modulabs event listing)",
+    "accessed_on": "2026-11-20",
+    "needs_human_verify": true,
+    "verification_questions": [
+      "Confirm the date, venue and expected headcount of 모두콘 2026 (the conference is named on the site but no date was visible on the fetched pages).",
+      "Confirm whether Modulabs would co-host or lend its community channel for a Seoul DeAI Day."
+    ],
+    "uncertainty_notes": "The event listing prints day-month and weekday without a year; the weekday/day pairs match 2026 (2026-11-10 is a Tuesday, 2026-11-26 a Thursday, 2026-11-27 a Friday), so the sessions are read as 2026 dates.",
+    "evidence": {
+      "observed_facts": "Modulabs event listing (biz.modulabs.co.kr/event?page=1, rendered 2026-11-20) shows '변화근육, AI에게 대체되지 않는 나를 만드는 힘 — 11월 10일(화) 10:00 - 12:00 | 역삼디오슈페리움 2층 모두의연구소 강남캠퍼스' (모집완료), 'Notion 당신의 생각을 현실로만드는 공간 (입문편) — 11월 26일(목) 10:00 - 12:00 | 대전테크노파크 ... 모두의연구소' (모집중) and 'Notion ... (응용편) — 11월 27일(금) 05:00 - 09:00' (모집중). The main community page (modulabs.co.kr/community/momos) lists '모두모임 - 함께 성장하는 즐거움', '모두콘 2026 - Deeper in AI' and '모두팝 - AI/SW 세미나'.",
+      "inference": "A large Seoul AI-education community with live in-person seminars at its 강남 campus and an annual conference; both an audience signal and a plausible co-host."
+    }
+  },
+  {
+    "group_name": "Superteam Korea",
+    "network": "Superteam (Solana ecosystem)",
+    "city_slug": "seoul-kr",
+    "focus_tags": [
+      "web3"
+    ],
+    "activity_status": "active",
+    "cohost_open": false,
+    "cohost_evidence_phrase": null,
+    "contact_info": null,
+    "member_size_public": null,
+    "cadence": "Ran dated Seoul events during Korea Blockchain Week 2026: 'Solana Ecosystem Day' 2026-09-28 14:00-18:00 (Cafe en Travel, Gangnam, hosted by Metaplex x Superteam Korea), 'Solana Summit Korea' 2026-09-30 09:30-17:00 (Yeouido, hosted by Superteam Korea, Four Pillars, Solana Foundation) and 'SANC Nine' 2026-10-01 14:00-18:00 (localhost:web3, hosted by Sanctum x Superteam Korea)",
+    "typical_venue": null,
+    "source_url": "https://superteam.fun/earn/regions/korea",
+    "source_title": "Welcome to Superteam Earn South Korea | Discover Bounties and Grants",
+    "accessed_on": "2026-11-20",
+    "needs_human_verify": true,
+    "verification_questions": [
+      "Confirm Superteam Korea's current Seoul leads and whether a DeAI Day could be co-hosted or promoted through the Korea channel (the KBW listing proves event organisation, not a partnership offer).",
+      "Confirm the community's own event calendar for 2027 H1 (the earn/bounty page and the KBW listing are the only sources observed)."
+    ],
+    "uncertainty_notes": "Upgraded from intermittent to active on 2026-11-20 review: three dated in-person Seoul events in Sept-Oct 2026 are listed on the official Korea Blockchain Week events page. The evidence is an organiser listing rather than Superteam Korea's own site, so co-host openness remains false and unverified.",
+    "evidence": {
+      "observed_facts": "Official KBW events page (koreablockchainweek.com/events, fetched 2026-11-20) lists: 'NETWORKING Solana Ecosystem Day Sep 28 2:00 PM - 6:00 PM Cafe en Travel 45 Gangnam-daero 102-gil, Gangnam District, Seoul, South Korea Hosted by Metaplex x Superteam Korea'; 'conference Solana Summit Korea September 30 9:30 AM - 5:00 PM Yeouido, Seoul (Accepted guests only) Hosted by: Superteam Korea, Four Pillars, Solana Foundation'; 'NETWORKING SANC Nine October 1 2:00 PM - 6:00 PM localhost:web3 로컬호스트Web3 609-1 Yeoksam-dong, Gangnam District, Seoul Hosted by: Sanctum · Superteam Korea'. The Superteam Earn Korea page (superteam.fun/earn/regions/korea) remains a bounty/grant platform with no dates.",
+      "inference": "A Solana-ecosystem builder community that demonstrably organises or co-hosts in-person Seoul events during KBW; useful as an audience signal and a plausible co-host for a Web3/DeAI track."
+    }
+  },
+  {
+    "group_name": "한국 R 사용자회 (Korea R User Group) — 서울 R Meetup",
+    "network": "R User Groups (R Consortium)",
+    "city_slug": "seoul-kr",
+    "focus_tags": [
+      "data_science",
+      "machine_learning"
+    ],
+    "activity_status": "intermittent",
+    "cohost_open": false,
+    "cohost_evidence_phrase": null,
+    "contact_info": null,
+    "member_size_public": null,
+    "cadence": "The organisation runs the 서울 R Meetup and the annual 한국 R 컨퍼런스 per its site navigation; no 2026 meetup date was readable this pass",
+    "typical_venue": null,
+    "source_url": "https://r2bit.com/",
+    "source_title": "한국 R 사용자회 (r2bit.com)",
+    "accessed_on": "2026-11-20",
+    "needs_human_verify": true,
+    "verification_questions": [
+      "Confirm the 2026/2027 서울 R Meetup dates: the site's '서울 R Meetup' subpage returned HTTP 404 at fetch time and only the navigation label was observable.",
+      "Confirm whether the group would co-host a data-science track at a Seoul DeAI Day."
+    ],
+    "uncertainty_notes": "The 2026 Q4 run recorded a monthly Seoul R Meetup cadence from this site; this pass could not re-observe a dated 2026 meetup, so the status is downgraded to intermittent and the old cadence is not restated as fact.",
+    "evidence": {
+      "observed_facts": "r2bit.com (fetched 2026-11-20): '공익법인 한국 R 사용자회는 2022년에 설립되어 ...' with navigation entries '한국 R 컨퍼런스', '서울 R Meetup', '서울 R Meetup Archive', '글로벌 R Meetup'; footer '© 2026 BitStat'. The direct subpage r2bit.com/seoul-r-meetup/ returned 'Page not found · GitHub Pages 404'.",
+      "inference": "An established Korean R/data-science non-profit with a Seoul meetup brand; current cadence unverified this pass."
+    }
+  },
+  {
+    "group_name": "GDG Seoul (Google Developer Groups Seoul)",
+    "network": "Google Developer Groups (GDG)",
+    "city_slug": "seoul-kr",
+    "focus_tags": [
+      "ai",
+      "mixed"
+    ],
+    "activity_status": "intermittent",
+    "cohost_open": false,
+    "cohost_evidence_phrase": null,
+    "contact_info": null,
+    "member_size_public": null,
+    "cadence": "Seasonal large events; the organizer page rendered on 2026-11-20 shows an 'Upcoming Events' section with no event listed, and a search index still carries 'Build with AI Seoul 2026 with Google DeepMind | May 2, 2026'",
+    "typical_venue": null,
+    "source_url": "https://gdg.community.dev/gdg-seoul/",
+    "source_title": "Google Developer Groups GDG Seoul",
+    "accessed_on": "2026-11-20",
+    "needs_human_verify": true,
+    "verification_questions": [
+      "Confirm the current GDG Seoul event calendar: the organizer page rendered on 2026-11-20 shows 'Upcoming Events' with no upcoming event listed, while a search index still carries the May 2, 2026 'Build with AI Seoul 2026 with Google DeepMind' event.",
+      "Confirm whether GDG Seoul co-hosts with external community organisers."
+    ],
+    "uncertainty_notes": "The organizer page was reachable only through headless rendering (a direct HTTP fetch returned 404) and listed no upcoming events at fetch time; activity is therefore recorded as intermittent with an explicit question rather than as verified active.",
+    "evidence": {
+      "observed_facts": "Headless-rendered fetch of https://gdg.community.dev/gdg-seoul/ on 2026-11-20 returned the GDG Seoul organizer shell with an 'Upcoming Events' section and no listed event, plus footer '© 2026'. A plain HTTP fetch of the same URL returned 404. A web search on the same date returned the organizer page title 'Google Developer Groups GDG Seoul' and the event 'Build with AI Seoul 2026 with Google DeepMind | May 2, 2026' at gdg.community.dev/events/details/google-gdg-seoul-presents-build-with-ai-seoul-2026-with-google-deepmind/.",
+      "inference": "Likely a seasonal Google-dev community between event cycles; the 2026 May flagship suggests real reach but no current cadence is observable."
+    }
+  },
+  {
+    "group_name": "Seoul Ethereum Meetup",
+    "network": "Seoul Ethereum Meetup",
+    "city_slug": "seoul-kr",
+    "focus_tags": [
+      "web3"
+    ],
+    "activity_status": "dormant",
+    "cohost_open": false,
+    "cohost_evidence_phrase": null,
+    "contact_info": null,
+    "member_size_public": 3983,
+    "cadence": "No event after December 2022 on the group's own Past events list",
+    "typical_venue": null,
+    "source_url": "https://www.meetup.com/seoul-ethereum-meetup/",
+    "source_title": "Seoul Ethereum Meetup | Meetup",
+    "accessed_on": "2026-11-20",
+    "needs_human_verify": true,
+    "verification_questions": [
+      "Confirm whether the group has any post-2022 activity: the own page's 'Past events' list begins with 'Thu, Dec 15, 2022' and shows 46 past events with no later date."
+    ],
+    "uncertainty_notes": "Dormant on own-page evidence (no event since 2022-12-15) despite 3,983 members; retained only as historical context for the Seoul Ethereum audience.",
+    "evidence": {
+      "observed_facts": "meetup.com/seoul-ethereum-meetup: '4.5 • 422 ratings', 'Seoul, KR', '3,983 members'; 'Past events 46 See all' with the most recent entry 'Thu, Dec 15, 2022 · 6:00 PM KST — <비탈릭 부테린-지분증명> 과 머지이후 이더리움 확장성 확보 전략'.",
+      "inference": "A large but inactive membership pool; any Seoul Ethereum audience in 2027 would have to be re-activated through a different organiser."
+    }
+  },
+  {
+    "group_name": "Ethereum Seoul Community",
+    "network": "Ethereum Seoul Community",
+    "city_slug": "seoul-kr",
+    "focus_tags": [
+      "web3"
+    ],
+    "activity_status": "dormant",
+    "cohost_open": false,
+    "cohost_evidence_phrase": null,
+    "contact_info": null,
+    "member_size_public": null,
+    "cadence": "Site describes bi-weekly meetups plus Civic Hackers' Club, Open Research Club and Ethcon Korea, but the newest notices shown are 2024-era",
+    "typical_venue": "Ethaewon Hacker House (EHH), 용산구 회나무로 60-1 — as printed in the 2024 meetup notices",
+    "source_url": "https://ethereum-seoul.community/",
+    "source_title": "Ethereum Seoul Community | A hub for Ethereum Punks in Seoul",
+    "accessed_on": "2026-11-20",
+    "needs_human_verify": true,
+    "verification_questions": [
+      "Confirm whether the community is still running: the site's newest announcements are the '6월 이더리움 서울 bi-weekly meetup' and '이드콘한국 2024 운영위원회' notices, with no 2025 or 2026 schedule visible."
+    ],
+    "uncertainty_notes": "Dormant on own-page evidence (2024-era notices last). The venue line is quoted from those 2024 notices and is historical, not current.",
+    "evidence": {
+      "observed_facts": "ethereum-seoul.community: 'A hub for Ethereum Punks in Seoul. Participate in bi-weekly meetups, Open Research Club, Civic Hack Club, and the annual Ethcon conference.'; '이더리움 서울 커뮤니티는 월 2회 소규모 밋업을 가지며...'; the listed notices are '6월 이더리움 서울 bi-weekly meetup 안내' and '5월 이더리움 서울 bi-weekly meetup 안내' with agendas referencing '이드콘한국 2024 운영위원회 회의'.",
+      "inference": "The Ethcon Korea-organising scene appears to have moved on; do not treat this site as a current 2027 partner without a fresh check."
+    }
+  },
+  {
+    "group_name": "AI Seoul (Meetup group)",
+    "network": "independent (Meetup)",
+    "city_slug": "seoul-kr",
+    "focus_tags": [
+      "ai",
+      "machine_learning"
+    ],
+    "activity_status": "active",
+    "cohost_open": false,
+    "cohost_evidence_phrase": null,
+    "contact_info": null,
+    "member_size_public": 326,
+    "cadence": "Bi-weekly 'AI Adoption Talk - Learning & Talking on AI' with a 2026 series: 2026-06-06 (Robotics & Tech Stocks), 2026-06-20, 2026-07-04, 2026-07-18, 2026-09-05, 2026-09-19, 2026-10-03, 2026-10-17, 2026-10-31, 2026-11-14, 2026-11-28; next listed 2026-12-12",
+    "typical_venue": null,
+    "source_url": "https://www.meetup.com/ai-seoul-public/events/",
+    "source_title": "AI Seoul | Meetup — events",
+    "accessed_on": "2026-11-20",
+    "needs_human_verify": true,
+    "verification_questions": [
+      "Confirm the group's organiser team and whether they would co-host a DeAI Day or provide an audience channel (the page lists no collaboration language).",
+      "Confirm the typical venue and headcount of the bi-weekly AI Adoption Talk (not stated on the events list)."
+    ],
+    "uncertainty_notes": "Member count (326) and rating (4.9, 18 ratings) are public on the group page. The event list shows dates and titles but not venues or headcounts. Sixteen dated 2026 entries appear on the rendered events page, counting both past and upcoming.",
+    "evidence": {
+      "observed_facts": "Rendered Meetup group and events pages (meetup.com/ai-seoul-public/, fetched 2026-11-20) return 'AI Seoul 4.9 • 18 ratings Seoul, KR 326 members'; the events list shows repeated '✨ AI Adoption Talk - Learning & Talking on AI' entries with dates 2026-06-06, 2026-06-20, 2026-07-04, 2026-07-18, 2026-09-05, 2026-09-19, 2026-10-03, 2026-10-17, 2026-10-31, 2026-11-14, 2026-11-28 and 2026-12-12 (one dated 2026-06-06 is titled '✨ AI Adoption Talk - Robotics & Tech Stocks'). The about text: 'Our group is focused on learning and networking within the realm of artificial intelligence and robotics.' The about section links a Kakao open chat ('Kakao Group: https://open.kakao.com/o/pV7r9rii'), recorded here because contact_info must be a structured object or null.",
+      "inference": "A regular, reasonably sized Seoul AI audience with a predictable bi-weekly slot; good audience signal, co-host openness unknown."
+    }
+  },
+  {
+    "group_name": "openKcloud 커뮤니티 (OpenKcloud community, ETRI-operated)",
+    "network": "ETRI / K-cloud programme (KACI partners)",
+    "city_slug": "seoul-kr",
+    "focus_tags": [
+      "ai",
+      "machine_learning"
+    ],
+    "activity_status": "active",
+    "cohost_open": false,
+    "cohost_evidence_phrase": null,
+    "contact_info": null,
+    "member_size_public": null,
+    "cadence": "Annual DevDay plus programme work: 'openKcloud DevDay 2026' held 2026-11-10 13:30-18:00 at ST Center (과학기술회관) 중회의실3, Seoul",
+    "typical_venue": "ST Center (과학기술회관) 중회의실3, 서울 강남구 테헤란로7길 22",
+    "source_url": "https://event-us.kr/openkcloud/event/137324",
+    "source_title": "openKcloud DevDay 2026 「모두를 위한 AI, 관측에서 서비스까지 AI로 연결되는 클라우드」 — 이벤터스 (hosted by openkcloud 커뮤니티)",
+    "accessed_on": "2026-11-20",
+    "needs_human_verify": true,
+    "verification_questions": [
+      "Confirm the community's 2027 programme and whether it co-hosts with non-ETRI organisers (the event channel is a public-sector programme, not a membership community).",
+      "Confirm typical headcount; the event registration page did not show a capacity figure on the fetched HTML."
+    ],
+    "uncertainty_notes": "The event date and venue are corroborated by three independent outlets (전자신문 2026-10-30, 디지털데일리 2026-11-02, 아이티데일리 2026-10-30) and by the event registration page; the event-us page renders its schedule client-side, so the quoted date comes from the press notice plus the aggregator listing. Operated by ETRI under the K-cloud programme with KETI, Innogrid, Orchestro, Mobilint, Kyung Hee, Yonsei and KACI.",
+    "evidence": {
+      "observed_facts": "전자신문 (etnews.com/20261030000252, published 2026-10-30): \"한국인공지능클라우드산업협회(KACI)는 오픈클라우드(openKcloud) 커뮤니티가 주관하는 'openKcloud DevDay 2026' 컨퍼런스가 오는 11월 10일 서울 ST센터 중회의실3에서 열린다\" and quotes '최현화 openKcloud 커뮤니티 리더'. 디지털데일리 (2026-11-02): \"오픈케이클라우드(openKcloud) 커뮤니티는 오는 11월10일 오후 1시30분 서울 ST센터 중회의실3에서 '오픈케이클라우드 데브데이 2026'을 개최한다\". Event registration page (event-us.kr/openkcloud/event/137324, fetched 2026-11-20): 'openKcloud DevDay 2026 ... 일시 11월 10일(화) 13:30 ~ 18:00 ... 장소 서울 강남구 테헤란로7길 22 ST Center(과학기술회관) 중회의실3 ... 비용 무료 ... 주최 OpenKcloud 커뮤니티'.",
+      "inference": "A live Seoul AI-infrastructure audience with public-sector and NPU-industry reach; a topic signal (AI infra/observability) rather than a consumer AI audience."
+    }
+  },
+  {
+    "group_name": "Ethereum Collective Korea (ECK)",
+    "network": "independent Korean Ethereum public-goods collective",
+    "city_slug": "seoul-kr",
+    "focus_tags": [
+      "web3"
+    ],
+    "activity_status": "active",
+    "cohost_open": false,
+    "cohost_evidence_phrase": null,
+    "contact_info": null,
+    "member_size_public": null,
+    "cadence": "Weekly Korean-language Ethereum research digests (ACDE #249 2026-11-19, ACDC #191 2026-11-12, ACDT #103 2026-11-16) plus co-hosted Seoul events such as 'Ethereum Korea One Genesis' (2026-09-28/29)",
+    "typical_venue": "성수 (Seongsu) multi-floor venue for Ethereum Korea One Genesis Day 2, per the collective's own notice",
+    "source_url": "https://ethcollective.xyz/",
+    "source_title": "ECK — Ethereum Collective Korea",
+    "accessed_on": "2026-11-20",
+    "needs_human_verify": true,
+    "verification_questions": [
+      "Confirm the collective's current organisers and whether it would co-host or promote a DeAI Day (the site describes public-goods work, not event partnerships).",
+      "Confirm the exact attendance and venue for Ethereum Korea One Genesis (registered/approved figures are from the collective's own notice)."
+    ],
+    "uncertainty_notes": "Activity evidence is the collective's own site: dated research posts through 2026-11-19 and a notice dated 2026.09.29 describing the Ethereum Korea One Genesis builder day. Attendance figures (800 registered, ~500 approved) are self-reported in that notice.",
+    "evidence": {
+      "observed_facts": "ethcollective.xyz (fetched 2026-11-20): 'Ethereum Collective Korea (ECK) 한국 이더리움 생태계를 위한 공공재를 만드는 비영리 콜렉티브입니다. 리서치, 뉴스, 주간 리포트, 커뮤니티 이니셔티브를 한국어로 제공합니다.' Recent posts include 'ACDE #249 · 11월 19일', 'ACDT #103 · 11월 16일', 'ACDC #191 · 11월 12일', '월간 EIP - 2026년 10월'. A notice dated '2026.09.29' reads: '[공지] Ethereum Korea One Genesis · Day 2 Builder Day, 오늘 성수에서 열립니다 ... 800명이 넘는 분들이 등록해 주셨고, 그중 500명 정도를 승인했습니다.'",
+      "inference": "An active Korean Ethereum research and builder community with recent Seoul event organisation; relevant as an audience signal for a Web3/DeAI track."
+    }
+  },
+  {
+    "group_name": "Builderbase Hackathons (BuilderBase)",
+    "network": "Builderbase",
+    "city_slug": "seoul-kr",
+    "focus_tags": [
+      "web3",
+      "ai",
+      "mixed"
+    ],
+    "activity_status": "active",
+    "cohost_open": false,
+    "cohost_evidence_phrase": null,
+    "contact_info": null,
+    "member_size_public": null,
+    "cadence": "Hackathon series visiting Seoul: 'DIGITAL AF Seoul — Hackathon' 2026-10-01 14:00-18:00 KST (4-hour build session inside DIGITAL AF Seoul, Yeongdong-daero/Seoul)",
+    "typical_venue": "DIGITAL AF Seoul venue, 14-15 Yangjae-dong, Seocho-gu, Seoul (per the DIGITAL AF calendar listing)",
+    "source_url": "https://builderbase.com/event/digital-af-seoul-hackathon",
+    "source_title": "DIGITAL AF Seoul Hackathon | 4-Hour Build Session — Builderbase",
+    "accessed_on": "2026-11-20",
+    "needs_human_verify": true,
+    "verification_questions": [
+      "Confirm whether BuilderBase would co-run a Seoul DeAI hackathon or demo track in 2027 H1 (the page describes a single 2026 Seoul event and its tech partners, not a standing partnership offer).",
+      "Confirm typical participant numbers and the Seoul operating team."
+    ],
+    "uncertainty_notes": "The event is confirmed by BuilderBase's own event page (schema.org Event with startDate 2026-10-01T05:00Z, price 0) and by the DIGITAL AF Seoul calendar. BuilderBase is an international hackathon operator, not a Seoul membership community, so it is recorded as a hackathon-capability signal. focus_tags cannot carry a hackathon value in schema 2.4, so the hackathon role is recorded in cadence and this note.",
+    "evidence": {
+      "observed_facts": "builderbase.com/event/digital-af-seoul-hackathon (fetched 2026-11-20): 'DIGITAL AF Seoul — Hackathon', 'Oct 1, 2026 · Yeongdong-daero, KR', 'Hosted by Builderbase Hackathons', \"The Seoul Build Session drops builders into the middle of a five day art, gaming and tech festival during Korea Blockchain Week... judged the same night.\", tech partners lovable.dev and elevenlabs.io; embedded schema.org JSON-LD: \"startDate\":\"2026-10-01T05:00:00+00:00\", \"endDate\":\"2026-10-01T09:00:00+00:00\", \"price\":0. The DIGITAL AF calendar (luma.com/DigitalAF2026) lists 'Sep 30 ... DIGITAL AF Seoul: Hackathon - In person Builderbase Hackathons'.",
+      "inference": "A working hackathon operator with a Seoul 2026 footprint; relevant if the run wants a build track, at commercial/partnership cost."
+    }
+  }
+]

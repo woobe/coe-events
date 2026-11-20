@@ -1,0 +1,73 @@
+{
+  "host_jurisdiction_id": "KR:seoul",
+  "host_holidays": [],
+  "host_coverage": [],
+  "adjacent_events": [
+    {
+      "event_name": "월드IT쇼 2027 (World IT Show 2027, WIS)",
+      "city_slug": "seoul-kr",
+      "start_date": "2027-04-21",
+      "end_date": "2027-04-23",
+      "kind": "related",
+      "relevance": "ai",
+      "conflict_severity": "medium",
+      "opportunity_kind": "ai",
+      "status": "confirmed",
+      "source_url": "https://business.coex.co.kr/post-exhibitions/%EC%9B%94%EB%93%9Cit%EC%87%BCwis/",
+      "source_title": "월드IT쇼 (WIS) | 코엑스 BUSINESS",
+      "accessed_on": "2026-11-20",
+      "needs_human_verify": true,
+      "verification_questions": [
+        "Confirm the dates remain firm on the organiser's own site as the show approaches."
+      ],
+      "evidence": {
+        "observed_facts": "COEX BUSINESS exhibition page '월드IT쇼 (WIS)' (business.coex.co.kr, fetched 2026-11-20) lists '2027.04.21 - 2027.04.23 Hall A, Hall B1, C', 주최 과학기술정보통신부, 주관 코엑스, 한국무역협회, 한국경제신문, 전자신문, 케이훼어스, 한국정보통신진흥협회. The same dates are reported by 한국경제 (2026-09-16): '2027 월드IT쇼(WIS)'가 내년 4월 21일부터 23일까지 사흘간 서울 코엑스에서 열립니다'. No rail field is present because the event is in the same city (Seoul).",
+        "inference": "Korea's largest AI/ICT exhibition, in the same venue cluster as several venue candidates; a plausible side-event window."
+      }
+    },
+    {
+      "event_name": "AI EXPO KOREA 2027 (국제인공지능대전)",
+      "city_slug": "seoul-kr",
+      "start_date": "2027-04-14",
+      "end_date": "2027-04-16",
+      "kind": "related",
+      "relevance": "ai",
+      "conflict_severity": "medium",
+      "opportunity_kind": "ai",
+      "status": "confirmed",
+      "source_url": "https://aiexpo.co.kr/%EC%A0%84%EC%8B%9C%ED%9A%8C-%EA%B0%9C%EC%9A%94",
+      "source_title": "전시회 개요 — AI EXPO KOREA 2027",
+      "accessed_on": "2026-11-20",
+      "needs_human_verify": true,
+      "verification_questions": [
+        "Confirm the 2027-04-14..16 dates and Hall A allocation on the organiser site nearer the show, and confirm the Public Day (2027-04-16) audience profile."
+      ],
+      "evidence": {
+        "observed_facts": "Official AI EXPO KOREA site, page '전시회 개요' (aiexpo.co.kr/전시회-개요, rendered 2026-11-20): 'AI EXPO KOREA 2027 ... 기 간 | 2027년 4월 14일(수) ~ 16일(금), 3일간 ... 장 소 | 서울 COEX 1층 Hall A ... 참관규모 | 50,000명 (목표) ... 주최/주관 | (사)한국인공지능협회, ㈜서울메쎄, 인공지능신문'. 참관안내 page adds Business Day 4월 14일(수)~15일(목), Public Day 4월 16일(금). No rail field: same city.",
+        "inference": "B2B AI exhibition targeting solution buyers and practitioners; same AI topic and a Seoul practitioner crowd, so a Saturday in the same week sits next to a large AI audience."
+      }
+    },
+    {
+      "event_name": "서울메타위크 2027 (Seoul Meta Week 2027)",
+      "city_slug": "seoul-kr",
+      "start_date": "2027-04-29",
+      "end_date": "2027-04-30",
+      "kind": "related",
+      "relevance": "ai",
+      "conflict_severity": "low",
+      "opportunity_kind": "ai",
+      "status": "confirmed",
+      "source_url": "http://seoulmetaweek.com/ko",
+      "source_title": "서울메타위크 2027 | 대한민국을 대표하는 AI 컨퍼런스",
+      "accessed_on": "2026-11-20",
+      "needs_human_verify": true,
+      "verification_questions": [
+        "Confirm the 2027-04-29..30 dates, the COEX Grand Ballroom booking and whether the 2027 programme is open to a community side session."
+      ],
+      "evidence": {
+        "observed_facts": "Official Seoul Meta Week site (seoulmetaweek.com/ko, fetched 2026-11-20): '2027. 04. 29 - 30 Coex, Grand Ballroom'; '서울메타위크(Seoul Meta Week)는 AI 시대의 새로운 전략과 실행 방향을 함께 논의하는 AI · 테크 비즈니스 컨퍼런스 브랜드 입니다. 2021년 시작해 2027년 7회째를 맞는 서울메타위크는 AI를 메인 주제로 ...'. Host/co-organiser line: TV조선, 크리스앤파트너. No rail field: same city.",
+        "inference": "An AI-focused business conference at COEX two days after WIS closes; same topic, partly overlapping practitioner audience, and it competes for COEX-area venue and hotel capacity."
+      }
+    }
+  ]
+}
