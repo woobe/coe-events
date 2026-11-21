@@ -16,9 +16,12 @@
   --muted: #656d76;
   --line: #d0d7de;
   --bg: #ffffff;
-  --gold: #b8860b;
+  /* White 12.5px badge text needs AA 4.5:1: gold #8f6a08 = 4.96:1, silver
+     #6e7781 = 4.55:1, bronze #96602f = 5.24:1 (old gold 3.25:1, old bronze
+     4.10:1 failed). */
+  --gold: #8f6a08;
   --silver: #6e7781;
-  --bronze: #a97142;
+  --bronze: #96602f;
 }
 * { box-sizing: border-box; }
 body {
@@ -31,7 +34,21 @@ body {
   line-height: 1.45;
 }
 main { max-width: 72rem; margin: 0 auto; }
-h1 { font-size: 1.35rem; margin: 0 0 0.25rem; }
+/* Read-mode measure: prose ran ~180 characters per line at 1103px; 32rem caps
+   it at ~71 chars at 0.95rem. One reading axis: prose and section headings
+   share the document left edge; only the matrix and the map go full width. */
+:root { --measure: 32rem; }
+section.leads, section.related-events,
+section.local-communities, section.other-major-events, section.provenance,
+footer.matrix-footer { max-width: var(--measure); }
+section.venue-map-section h2,
+section.venue-map-section > p { max-width: var(--measure); }
+h1, h2, h3 { text-wrap: balance; }
+p, li, dd { text-wrap: pretty; }
+/* >= 87.5rem: the 12-column matrix (1272px) fits without the internal scroll
+   that used to clip Flags and hide Booking link at 1440. */
+@media (min-width: 87.5rem) { main { max-width: 84rem; } }
+h1 { font-size: 1.6rem; margin: 0 0 0.3rem; }
 .matrix-meta { color: var(--muted); font-size: 0.9rem; margin: 0 0 1rem; }
 .matrix-meta dl { display: flex; flex-wrap: wrap; gap: 0.5rem 1.5rem; margin: 0.5rem 0 0; }
 .matrix-meta dt { font-weight: 600; }
@@ -40,6 +57,28 @@ table { border-collapse: collapse; width: 100%; font-size: 0.9rem; }
 caption {
   text-align: left; font-weight: 600; padding: 0.5rem 0;
   color: var(--muted); caption-side: top;
+}
+/* The visible caption sits OUTSIDE .venue-matrix-scroll: inside the table it
+   inherits the 1272px table width and was cut mid-word at every narrower
+   viewport (120px at 1440, 1000px at 320). The <caption> stays for the
+   accessible name, visually hidden. */
+.matrix-caption {
+  margin: 0 0 0.4rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--muted);
+  max-width: var(--measure);
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
 }
 th, td {
   border: 1px solid var(--line);
@@ -58,6 +97,15 @@ thead th {
 thead th[aria-sort]::after { content: ""; }
 thead th[aria-sort="ascending"]::after { content: " \2191"; }
 thead th[aria-sort="descending"]::after { content: " \2193"; }
+/* Numbers compare down the page, not along the row: right align + tabular
+   figures (renderer column order: 3=Score, 4=Cost, 5=Capacity). */
+thead th[data-sort="score"], thead th[data-sort="cost"],
+thead th[data-sort="capacity"],
+tbody tr.venue-row td:nth-child(3), tbody tr.venue-row td:nth-child(4),
+tbody tr.venue-row td:nth-child(5) {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
 tbody tr.venue-row { cursor: pointer; }
 tbody tr.venue-row:focus-visible { outline: 2px solid var(--ink); outline-offset: -2px; }
 tbody tr.venue-row:hover { background: #f6f8fa; }
@@ -83,14 +131,15 @@ tbody tr.venue-details dd { margin: 0; overflow-wrap: anywhere; }
 .cost-over { color: var(--bad); font-weight: 600; }
 .flags { list-style: none; margin: 0; padding: 0; }
 .flags li::before { content: "\2022 "; color: var(--muted); }
+/* Sections are bands, not cards: only the repeated disclosure items are
+   rounded boxes, so the section-inside-section card is gone. */
 section.leads {
-  margin-top: 1rem;
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  padding: 0.6rem 0.8rem;
-  font-size: 0.9rem;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.95rem;
 }
-section.leads h2 { font-size: 0.95rem; margin: 0 0 0.3rem; }
+section.leads h2 { font-size: 1.2rem; margin: 0 0 0.4rem; }
 section.leads p { margin: 0.25rem 0; color: var(--muted); }
 section.leads ul { margin: 0.5rem 0 0; padding-left: 1.2rem; }
 section.leads li { margin: 0.3rem 0; }
@@ -109,13 +158,12 @@ section.leads li.map-highlight {
   outline-offset: 1px;
 }
 section.venue-map-section {
-  margin-top: 1.25rem;
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  padding: 0.6rem 0.8rem;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
 }
-section.venue-map-section h2 { font-size: 0.95rem; margin: 0 0 0.3rem; }
-section.venue-map-section > p { margin: 0.25rem 0; color: var(--muted); font-size: 0.85rem; }
+section.venue-map-section h2 { font-size: 1.2rem; margin: 0 0 0.4rem; }
+section.venue-map-section > p { margin: 0.25rem 0; color: var(--muted); font-size: 0.95rem; }
 .venue-map-container {
   height: 26rem;
   border: 1px solid var(--line);
@@ -168,22 +216,44 @@ section.venue-map-section > p { margin: 0.25rem 0; color: var(--muted); font-siz
   position: absolute;
   bottom: 100%;
   left: 50%;
-  transform: translateX(-50%);
-  margin-bottom: 4px;
+  transform: translateX(calc(-50% + var(--venue-label-shift, 0px)));
+  margin-bottom: 0;
   padding: 2px 6px;
   border-radius: 4px;
   background: var(--ink);
   color: #ffffff;
   font-size: 0.75rem;
-  white-space: nowrap;
-  pointer-events: none;
+  width: max-content;
+  max-width: 12rem;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  text-align: center;
+  pointer-events: auto;
   opacity: 0;
   visibility: hidden;
 }
+/* The label is a child of the marker, so hovering it keeps :hover on the
+   marker; pointer-events must stay auto and the label must sit flush against
+   the hit box (margin-bottom: 0) or the reveal dies in the gap. */
 .venue-map-marker:hover .venue-map-marker-label,
-.venue-map-marker:focus-visible .venue-map-marker-label {
+.venue-map-marker:focus-visible .venue-map-marker-label,
+.venue-map-marker-label:hover {
   opacity: 1;
   visibility: visible;
+}
+/* WCAG 2.2 SC 1.4.13: Escape dismisses the label without moving focus or
+   pointer; the marker's own :hover/:focus-visible reveal is suppressed until
+   the pointer or focus leaves. */
+.venue-map-marker[data-label-dismissed="true"] .venue-map-marker-label {
+  opacity: 0;
+  visibility: hidden;
+}
+/* Edge dots (a marker inside the fitBounds inset) flip their label below the
+   dot, and the label is clamped horizontally inside the map instead of
+   running past the container edge. */
+.venue-map-marker-label-flip {
+  top: 100%;
+  bottom: auto;
 }
 .venue-map-marker:focus-visible .venue-map-marker-dot {
   outline: 2px solid var(--ink);
@@ -194,17 +264,16 @@ section.venue-map-section > p { margin: 0.25rem 0; color: var(--muted); font-siz
    resources. Chips carry high-contrast text; long tokens wrap anywhere;
    summaries wrap safely on narrow screens. */
 section.related-events {
-  margin-top: 1.25rem;
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  padding: 0.6rem 0.8rem;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
 }
-section.related-events h2 { font-size: 0.95rem; margin: 0 0 0.3rem; }
-section.related-events > p { margin: 0.25rem 0; color: var(--muted); font-size: 0.85rem; }
+section.related-events h2 { font-size: 1.2rem; margin: 0 0 0.4rem; }
+section.related-events > p { margin: 0.25rem 0; color: var(--muted); font-size: 0.95rem; }
 .related-events-empty { font-style: italic; }
 .related-month { margin-top: 0.9rem; }
 .related-month h3 {
-  font-size: 0.9rem;
+  font-size: 1rem;
   margin: 0 0 0.35rem;
   padding-bottom: 0.2rem;
   border-bottom: 1px solid var(--line);
@@ -232,7 +301,7 @@ section.related-events > p { margin: 0.25rem 0; color: var(--muted); font-size: 
   outline-offset: -2px;
 }
 .related-event-name { font-weight: 600; }
-.related-event-dates { color: var(--muted); font-size: 0.85rem; }
+.related-event-dates { color: var(--muted); font-size: 0.95rem; }
 .chip {
   display: inline-block;
   padding: 0.05rem 0.45rem;
@@ -257,7 +326,7 @@ section.related-events > p { margin: 0.25rem 0; color: var(--muted); font-size: 
   color: #ffffff;
   background: var(--ok);
 }
-.related-event-body { padding: 0 0.6rem 0.6rem; font-size: 0.85rem; color: var(--muted); }
+.related-event-body { padding: 0 0.6rem 0.6rem; font-size: 0.95rem; color: var(--muted); }
 .related-event-body p { margin: 0.35rem 0; overflow-wrap: anywhere; }
 .related-event-questions { margin: 0.25rem 0 0; padding-left: 1.2rem; }
 .related-event-questions li { margin: 0.2rem 0; overflow-wrap: anywhere; }
@@ -268,13 +337,12 @@ section.related-events > p { margin: 0.25rem 0; color: var(--muted); font-size: 
    resources. Chips wrap safely on narrow screens; long tokens wrap
    anywhere; the disclosure summary has a visible focus ring. */
 section.local-communities {
-  margin-top: 1.25rem;
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  padding: 0.6rem 0.8rem;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
 }
-section.local-communities h2 { font-size: 0.95rem; margin: 0 0 0.3rem; }
-section.local-communities > p { margin: 0.25rem 0; color: var(--muted); font-size: 0.85rem; }
+section.local-communities h2 { font-size: 1.2rem; margin: 0 0 0.4rem; }
+section.local-communities > p { margin: 0.25rem 0; color: var(--muted); font-size: 0.95rem; }
 .local-communities-empty { font-style: italic; }
 details.local-community {
   margin-top: 0.6rem;
@@ -318,7 +386,7 @@ details.local-community summary:focus-visible {
   color: #ffffff;
   background: var(--ok);
 }
-.local-community-body { padding: 0 0.6rem 0.6rem; font-size: 0.85rem; color: var(--muted); }
+.local-community-body { padding: 0 0.6rem 0.6rem; font-size: 0.95rem; color: var(--muted); }
 .local-community-body p { margin: 0.35rem 0; overflow-wrap: anywhere; }
 .local-community-questions { margin: 0.25rem 0 0; padding-left: 1.2rem; }
 .local-community-questions li { margin: 0.2rem 0; overflow-wrap: anywhere; }
@@ -331,13 +399,12 @@ details.local-community summary:focus-visible {
    anywhere; the tag wraps safely on narrow screens. No JavaScript, no
    external resources. */
 section.other-major-events {
-  margin-top: 1.25rem;
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  padding: 0.6rem 0.8rem;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
 }
-section.other-major-events h2 { font-size: 0.95rem; margin: 0 0 0.3rem; }
-section.other-major-events > p { margin: 0.25rem 0; color: var(--muted); font-size: 0.85rem; }
+section.other-major-events h2 { font-size: 1.2rem; margin: 0 0 0.4rem; }
+section.other-major-events > p { margin: 0.25rem 0; color: var(--muted); font-size: 0.95rem; }
 .other-major-events-empty { font-style: italic; }
 .other-major-events-list { list-style: none; margin: 0; padding: 0; }
 .other-major-events-list > li { margin: 0.45rem 0; }
@@ -348,7 +415,7 @@ article.major-other-event {
   padding: 0.5rem 0.6rem;
 }
 article.major-other-event h3 {
-  font-size: 0.9rem;
+  font-size: 1rem;
   margin: 0 0 0.25rem;
   overflow-wrap: anywhere;
 }
@@ -375,16 +442,14 @@ section.compat-notice {
 }
 section.compat-notice p { margin: 0; }
 section.provenance {
-  margin-top: 1.25rem;
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  padding: 0.6rem 0.8rem;
-  font-size: 0.8rem;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.85rem;
   color: var(--muted);
-  background: #f6f8fa;
   overflow-wrap: anywhere;
 }
-section.provenance h2 { font-size: 0.85rem; margin: 0 0 0.35rem; color: var(--ink); }
+section.provenance h2 { font-size: 1.05rem; margin: 0 0 0.35rem; color: var(--ink); }
 section.provenance ul { margin: 0.25rem 0 0; padding-left: 1.2rem; }
 section.provenance li { margin: 0.2rem 0; }
 section.provenance code {
@@ -414,9 +479,10 @@ a { color: #0969da; }
 </dl>
 </div>
   </header>
+  <p class="matrix-caption" aria-hidden="true">Venue matrix — eligible (Gold) and shortlist-ready (Silver) venues; leads appear only in the always-visible non-selectable list below. Event-duration costs are shown for the selected duration.</p>
   <div class="venue-matrix-scroll">
   <table id="venue-matrix">
-    <caption>Venue matrix — eligible (Gold) and shortlist-ready (Silver) venues; leads appear only in the always-visible non-selectable list below. Event-duration costs are shown for the selected duration.</caption>
+    <caption class="visually-hidden">Venue matrix — eligible (Gold) and shortlist-ready (Silver) venues; leads appear only in the always-visible non-selectable list below. Event-duration costs are shown for the selected duration.</caption>
     <thead>
       <tr>
         <th data-sort="venue" aria-sort="none" scope="col">Venue</th>
@@ -525,7 +591,7 @@ return maplibregl$1;
 
 }));
 //# sourceMappingURL=maplibre-gl.js.map
-</script><script>(function(){"use strict";var payload={"venues": [{"cost_text": "USD 800", "key": "venue-map-1-0", "lat": 37.7886802, "lead_list_id": null, "lon": -122.4194456, "main_row_id": "venue-row-0", "name": "Alliance Francaise de San Francisco - Theater", "tier": "shortlist_ready", "url": "https://www.afsf.com/about-afsf/space-rental/theater-rental/"}, {"cost_text": "cost unknown — confirm with venue", "key": "venue-map-1-1", "lat": 37.7526676, "lead_list_id": null, "lon": -122.4077585, "main_row_id": "venue-row-7", "name": "Brava Theater Center - Lobby", "tier": "shortlist_ready", "url": "https://www.brava.org/rentals"}, {"cost_text": "cost unknown — confirm with venue", "key": "venue-map-1-2", "lat": 37.7526676, "lead_list_id": null, "lon": -122.4077585, "main_row_id": "venue-row-8", "name": "Brava Theater Center - Studio", "tier": "shortlist_ready", "url": "https://www.brava.org/studio"}, {"cost_text": "est. USD 5200 (8 h × USD 650/h)", "key": "venue-map-1-3", "lat": 37.7713554, "lead_list_id": null, "lon": -122.410852, "main_row_id": "venue-row-10", "name": "Four One Nine - Middle Gallery Extended (SoMa)", "tier": "shortlist_ready", "url": "https://fouronenine.com/inquire"}, {"cost_text": "cost unknown — confirm with venue", "key": "venue-map-1-4", "lat": 37.7544372, "lead_list_id": null, "lon": -122.4182629, "main_row_id": "venue-row-6", "name": "Gray Area - Lobby (Grand Theater)", "tier": "shortlist_ready", "url": "https://grayarea.org/venue-rental/"}, {"cost_text": "USD 1800", "key": "venue-map-1-5", "lat": 37.7784352, "lead_list_id": null, "lon": -122.4114542, "main_row_id": "venue-row-1", "name": "Root Division - Front \u0026 Rear Galleries", "tier": "shortlist_ready", "url": "https://rootdivision.org/about/the-space/venue-rental"}, {"cost_text": "USD 900", "key": "venue-map-1-6", "lat": 37.7351468, "lead_list_id": null, "lon": -122.3901672, "main_row_id": "venue-row-12", "name": "Ruth Williams Opera House (Bayview Opera House) - Main Theater", "tier": "shortlist_ready", "url": "https://rwoh.org/rentals/"}, {"cost_text": "USD 4549", "key": "venue-map-1-7", "lat": 37.7708144, "lead_list_id": null, "lon": -122.4062846, "main_row_id": "venue-row-13", "name": "SOMArts Cultural Center - Main Event Space (Essentials Package)", "tier": "shortlist_ready", "url": "https://somarts.org/rentals/"}, {"cost_text": "cost unknown — confirm with venue", "key": "venue-map-1-8", "lat": 37.7653404, "lead_list_id": null, "lon": -122.4184379, "main_row_id": "venue-row-5", "name": "The Lab - Main Auditorium (Redstone Building)", "tier": "shortlist_ready", "url": "https://www.thelab.org/rental"}, {"cost_text": "USD 2500", "key": "venue-map-1-9", "lat": 37.7557894, "lead_list_id": null, "lon": -122.421322, "main_row_id": "venue-row-3", "name": "The Marsh San Francisco - Mainstage", "tier": "shortlist_ready", "url": "https://themarsh.org/rental-pricing/"}, {"cost_text": "USD 2000", "key": "venue-map-1-10", "lat": 37.7557894, "lead_list_id": null, "lon": -122.421322, "main_row_id": "venue-row-2", "name": "The Marsh San Francisco - Studio", "tier": "shortlist_ready", "url": "https://themarsh.org/rental-pricing/"}, {"cost_text": "est. USD 1320 (8 h × USD 165/h)", "key": "venue-map-1-11", "lat": 37.7614267, "lead_list_id": null, "lon": -122.4226102, "main_row_id": "venue-row-4", "name": "The Women's Building - Audre Lorde Room", "tier": "shortlist_ready", "url": "https://www.womensbuilding.org/our-building/rent-a-space"}, {"cost_text": "cost unknown — confirm with venue", "key": "venue-map-1-12", "lat": 37.7632739, "lead_list_id": null, "lon": -122.4114717, "main_row_id": "venue-row-11", "name": "Z Space - Steindler Stage", "tier": "shortlist_ready", "url": "https://zspace.org/rent"}, {"cost_text": "cost unknown — confirm with venue", "key": "venue-map-1-13", "lat": 37.7632739, "lead_list_id": null, "lon": -122.4114717, "main_row_id": "venue-row-9", "name": "Z Space - Z Lobby", "tier": "shortlist_ready", "url": "https://zspace.org/rent"}, {"cost_text": "est. USD 1320 (8 h × USD 165/h)", "key": "venue-map-2-0", "lat": null, "lead_list_id": "lead-item-0", "lon": null, "main_row_id": null, "name": "Common Space - Large Loft in the Marina (Peerspace listing 647656b424653c000e5dacf6)", "tier": "lead", "url": "https://www.peerspace.com/pages/listings/647656b424653c000e5dacf6"}, {"cost_text": "est. USD 400 (8 h × USD 50/h)", "key": "venue-map-2-1", "lat": 37.7833739, "lead_list_id": "lead-item-1", "lon": -122.4104095, "main_row_id": null, "name": "CounterPulse - Main Stage", "tier": "lead", "url": "https://counterpulse.org/rentals/"}]};var container=document.getElementById("venue-map");if(!container){return;}var note=container.querySelector(".venue-map-note");var M_ok=(typeof maplibregl!=="undefined"&&typeof maplibregl.Map==="function"&&typeof maplibregl.Marker==="function"&&typeof maplibregl.Popup==="function");if(!M_ok){if(note){note.textContent="Interactive map unavailable — the venue lists above remain authoritative.";}return;}var valid=payload.venues.filter(function(v){return typeof v.lat==="number"&&isFinite(v.lat)&&v.lat>=-90&&v.lat<=90&&typeof v.lon==="number"&&isFinite(v.lon)&&v.lon>=-180&&v.lon<=180;});if(valid.length===0){if(note){note.textContent="No listed venues have verified coordinates; see the venue lists above.";}return;}container.setAttribute("data-map-state","loading");var map;var mapErrors=0;try{map=new maplibregl.Map({container:container,style:"https://tiles.openfreemap.org/styles/liberty",attributionControl:false,scrollWheelZoom:false});}catch(err){if(note){note.textContent="Interactive map unavailable — the venue lists above remain authoritative.";}return;}map.on("error",function(){mapErrors++;container.setAttribute("data-map-errors",String(mapErrors));});map.on("load",function(){container.setAttribute("data-map-state","loaded");if(valid.length===1){map.jumpTo({center:[valid[0].lon,valid[0].lat],zoom:15});}else{frameAll({padding:20,duration:0});}});var markers={};var popups={};var bbox=null;function extendBox(lon,lat){if(!bbox){bbox=[lon,lat,lon,lat];return;}if(lon<bbox[0]){bbox[0]=lon;}if(lat<bbox[1]){bbox[1]=lat;}if(lon>bbox[2]){bbox[2]=lon;}if(lat>bbox[3]){bbox[3]=lat;}}function frameAll(opts){if(!bbox){return;}map.fitBounds([[bbox[0],bbox[1]],[bbox[2],bbox[3]]],opts);}var tierColors={"eligible": "#b8860b", "lead": "#a97142", "shortlist_ready": "#6e7781"};function closeOtherPopups(key){for(var k in popups){if(k!==key&&popups[k].isOpen()){popups[k].remove();}}}function safeUrl(u){if(typeof u!=="string"){return null;}if(u.indexOf("https://")===0||u.indexOf("http://")===0){return u;}return null;}function makePopup(v){var el=document.createElement("div");el.className="venue-map-popup";var name=document.createElement("strong");name.textContent=v.name;el.appendChild(name);var cost=document.createElement("span");cost.className="venue-map-popup-cost";cost.textContent=v.cost_text;el.appendChild(cost);var url=safeUrl(v.url);if(url){var a=document.createElement("a");a.href=url;a.target="_blank";a.rel="noopener noreferrer";a.textContent="book / source";el.appendChild(a);}return el;}valid.forEach(function(v){var el=document.createElement("div");el.className="venue-map-marker venue-map-marker-"+v.tier;el.tabIndex=0;el.setAttribute("role","button");el.setAttribute("aria-label",v.name);var dot=document.createElement("span");dot.className="venue-map-marker-dot";dot.style.background=tierColors[v.tier]||tierColors.lead;el.appendChild(dot);var label=document.createElement("span");label.className="venue-map-marker-label";label.textContent=v.name;el.appendChild(label);var marker=new maplibregl.Marker({element:el}).setLngLat([v.lon,v.lat]);var popup=new maplibregl.Popup({closeButton:true,offset:12}).setDOMContent(makePopup(v));popups[v.key]=popup;marker.setPopup(popup);marker.addTo(map);markers[v.key]=marker;extendBox(v.lon,v.lat);el.addEventListener("click",function(){closeOtherPopups(v.key);highlightTarget(v);});el.addEventListener("keydown",function(ev){if(ev.key==="Enter"||ev.key===" "){ev.preventDefault();closeOtherPopups(v.key);marker.togglePopup();highlightTarget(v);}});});function markerFromTarget(target){while(target&&target.nodeType===1){if(target.classList&&target.classList.contains("venue-map-marker")){return target;}target=target.parentNode;}return null;}/*NEAREST_PICK_START*/function nearestVenue(entries,point,project,maxPx){var limit=maxPx*maxPx;var best=null;var bestD=0;for(var i=0;i<entries.length;i++){var v=entries[i];if(typeof v.lat!=="number"||typeof v.lon!=="number"){continue;}var p=project([v.lon,v.lat]);if(!p){continue;}var dx=p.x-point.x;var dy=p.y-point.y;var d=dx*dx+dy*dy;if(best===null||d<bestD){best=v;bestD=d;}}return best!==null&&bestD<=limit?best:null;}/*NEAREST_PICK_END*/map.on("click",function(ev){var orig=ev&&ev.originalEvent;if(orig&&markerFromTarget(orig.target)){return;}if(!ev||!ev.point){return;}var v=nearestVenue(valid,ev.point,function(ll){return map.project(ll);},28);if(!v){return;}closeOtherPopups(v.key);var p=popups[v.key];if(p&&!p.isOpen()&&markers[v.key]){markers[v.key].togglePopup();}highlightTarget(v);});function highlightTarget(v){var target=null;if(v.main_row_id){target=document.getElementById(v.main_row_id);}if(!target&&v.lead_list_id){target=document.getElementById(v.lead_list_id);}if(!target){return;}var prev=document.querySelector(".map-highlight");if(prev&&prev!==target){prev.classList.remove("map-highlight");}target.classList.add("map-highlight");var reduce=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;if(reduce){target.scrollIntoView({block:"nearest"});}else{target.scrollIntoView({behavior:"smooth",block:"nearest"});}}function focusEntry(v){var m=markers[v.key];if(!m){return;}var z=map.getZoom();if(!(z>=14)){z=14;}map.jumpTo({center:[v.lon,v.lat],zoom:z});closeOtherPopups(v.key);var p=m.getPopup();if(p&&!p.isOpen()){m.togglePopup();}highlightTarget(v);}function wireRow(row){var key=row.getAttribute("data-map-key");if(!key){return;}var v=payload.venues.filter(function(x){return x.key===key;})[0];if(!v){return;}row.addEventListener("click",function(ev){if(ev.target&&(ev.target.tagName==="A"||ev.target.tagName==="BUTTON")){return;}focusEntry(v);});row.addEventListener("keydown",function(ev){if(ev.key==="Enter"||ev.key===" "){focusEntry(v);}});}var rows=document.querySelectorAll("tr.venue-row[data-map-key]");for(var ri=0;ri<rows.length;ri++){wireRow(rows[ri]);}var focusButtons=document.querySelectorAll("button.map-focus[data-map-key]");for(var bi=0;bi<focusButtons.length;bi++){(function(btn){btn.addEventListener("click",function(){var v=payload.venues.filter(function(x){return x.key===btn.getAttribute("data-map-key");})[0];if(v){focusEntry(v);}});})(focusButtons[bi]);}if(note){note.parentNode.removeChild(note);}})();</script></section>
+</script><script>(function(){"use strict";var payload={"venues": [{"cost_text": "USD 800", "key": "venue-map-1-0", "lat": 37.7886802, "lead_list_id": null, "lon": -122.4194456, "main_row_id": "venue-row-0", "name": "Alliance Francaise de San Francisco - Theater", "tier": "shortlist_ready", "url": "https://www.afsf.com/about-afsf/space-rental/theater-rental/"}, {"cost_text": "cost unknown — confirm with venue", "key": "venue-map-1-1", "lat": 37.7526676, "lead_list_id": null, "lon": -122.4077585, "main_row_id": "venue-row-7", "name": "Brava Theater Center - Lobby", "tier": "shortlist_ready", "url": "https://www.brava.org/rentals"}, {"cost_text": "cost unknown — confirm with venue", "key": "venue-map-1-2", "lat": 37.7526676, "lead_list_id": null, "lon": -122.4077585, "main_row_id": "venue-row-8", "name": "Brava Theater Center - Studio", "tier": "shortlist_ready", "url": "https://www.brava.org/studio"}, {"cost_text": "est. USD 5200 (8 h × USD 650/h)", "key": "venue-map-1-3", "lat": 37.7713554, "lead_list_id": null, "lon": -122.410852, "main_row_id": "venue-row-10", "name": "Four One Nine - Middle Gallery Extended (SoMa)", "tier": "shortlist_ready", "url": "https://fouronenine.com/inquire"}, {"cost_text": "cost unknown — confirm with venue", "key": "venue-map-1-4", "lat": 37.7544372, "lead_list_id": null, "lon": -122.4182629, "main_row_id": "venue-row-6", "name": "Gray Area - Lobby (Grand Theater)", "tier": "shortlist_ready", "url": "https://grayarea.org/venue-rental/"}, {"cost_text": "USD 1800", "key": "venue-map-1-5", "lat": 37.7784352, "lead_list_id": null, "lon": -122.4114542, "main_row_id": "venue-row-1", "name": "Root Division - Front \u0026 Rear Galleries", "tier": "shortlist_ready", "url": "https://rootdivision.org/about/the-space/venue-rental"}, {"cost_text": "USD 900", "key": "venue-map-1-6", "lat": 37.7351468, "lead_list_id": null, "lon": -122.3901672, "main_row_id": "venue-row-12", "name": "Ruth Williams Opera House (Bayview Opera House) - Main Theater", "tier": "shortlist_ready", "url": "https://rwoh.org/rentals/"}, {"cost_text": "USD 4549", "key": "venue-map-1-7", "lat": 37.7708144, "lead_list_id": null, "lon": -122.4062846, "main_row_id": "venue-row-13", "name": "SOMArts Cultural Center - Main Event Space (Essentials Package)", "tier": "shortlist_ready", "url": "https://somarts.org/rentals/"}, {"cost_text": "cost unknown — confirm with venue", "key": "venue-map-1-8", "lat": 37.7653404, "lead_list_id": null, "lon": -122.4184379, "main_row_id": "venue-row-5", "name": "The Lab - Main Auditorium (Redstone Building)", "tier": "shortlist_ready", "url": "https://www.thelab.org/rental"}, {"cost_text": "USD 2500", "key": "venue-map-1-9", "lat": 37.7557894, "lead_list_id": null, "lon": -122.421322, "main_row_id": "venue-row-3", "name": "The Marsh San Francisco - Mainstage", "tier": "shortlist_ready", "url": "https://themarsh.org/rental-pricing/"}, {"cost_text": "USD 2000", "key": "venue-map-1-10", "lat": 37.7557894, "lead_list_id": null, "lon": -122.421322, "main_row_id": "venue-row-2", "name": "The Marsh San Francisco - Studio", "tier": "shortlist_ready", "url": "https://themarsh.org/rental-pricing/"}, {"cost_text": "est. USD 1320 (8 h × USD 165/h)", "key": "venue-map-1-11", "lat": 37.7614267, "lead_list_id": null, "lon": -122.4226102, "main_row_id": "venue-row-4", "name": "The Women's Building - Audre Lorde Room", "tier": "shortlist_ready", "url": "https://www.womensbuilding.org/our-building/rent-a-space"}, {"cost_text": "cost unknown — confirm with venue", "key": "venue-map-1-12", "lat": 37.7632739, "lead_list_id": null, "lon": -122.4114717, "main_row_id": "venue-row-11", "name": "Z Space - Steindler Stage", "tier": "shortlist_ready", "url": "https://zspace.org/rent"}, {"cost_text": "cost unknown — confirm with venue", "key": "venue-map-1-13", "lat": 37.7632739, "lead_list_id": null, "lon": -122.4114717, "main_row_id": "venue-row-9", "name": "Z Space - Z Lobby", "tier": "shortlist_ready", "url": "https://zspace.org/rent"}, {"cost_text": "est. USD 1320 (8 h × USD 165/h)", "key": "venue-map-2-0", "lat": null, "lead_list_id": "lead-item-0", "lon": null, "main_row_id": null, "name": "Common Space - Large Loft in the Marina (Peerspace listing 647656b424653c000e5dacf6)", "tier": "lead", "url": "https://www.peerspace.com/pages/listings/647656b424653c000e5dacf6"}, {"cost_text": "est. USD 400 (8 h × USD 50/h)", "key": "venue-map-2-1", "lat": 37.7833739, "lead_list_id": "lead-item-1", "lon": -122.4104095, "main_row_id": null, "name": "CounterPulse - Main Stage", "tier": "lead", "url": "https://counterpulse.org/rentals/"}]};var container=document.getElementById("venue-map");if(!container){return;}var note=container.querySelector(".venue-map-note");var M_ok=(typeof maplibregl!=="undefined"&&typeof maplibregl.Map==="function"&&typeof maplibregl.Marker==="function"&&typeof maplibregl.Popup==="function");if(!M_ok){if(note){note.textContent="Interactive map unavailable — the venue lists above remain authoritative.";}return;}var valid=payload.venues.filter(function(v){return typeof v.lat==="number"&&isFinite(v.lat)&&v.lat>=-90&&v.lat<=90&&typeof v.lon==="number"&&isFinite(v.lon)&&v.lon>=-180&&v.lon<=180;});if(valid.length===0){if(note){note.textContent="No listed venues have verified coordinates; see the venue lists above.";}return;}container.setAttribute("data-map-state","loading");var map;var mapErrors=0;try{map=new maplibregl.Map({container:container,style:"https://tiles.openfreemap.org/styles/liberty",attributionControl:false,scrollWheelZoom:false});}catch(err){if(note){note.textContent="Interactive map unavailable — the venue lists above remain authoritative.";}return;}map.on("error",function(){mapErrors++;container.setAttribute("data-map-errors",String(mapErrors));});map.on("load",function(){container.setAttribute("data-map-state","loaded");if(valid.length===1){map.jumpTo({center:[valid[0].lon,valid[0].lat],zoom:15});}else{frameAll({padding:20,duration:0});}});var markers={};var popups={};var bbox=null;var hoveredMarker=null;function extendBox(lon,lat){if(!bbox){bbox=[lon,lat,lon,lat];return;}if(lon<bbox[0]){bbox[0]=lon;}if(lat<bbox[1]){bbox[1]=lat;}if(lon>bbox[2]){bbox[2]=lon;}if(lat>bbox[3]){bbox[3]=lat;}}function frameAll(opts){if(!bbox){return;}map.fitBounds([[bbox[0],bbox[1]],[bbox[2],bbox[3]]],opts);}var tierColors={"eligible": "#8f6a08", "lead": "#96602f", "shortlist_ready": "#6e7781"};function closeOtherPopups(key){for(var k in popups){if(k!==key&&popups[k].isOpen()){popups[k].remove();}}}function closeAllPopups(){for(var k in popups){if(popups[k].isOpen()){popups[k].remove();}}}function safeUrl(u){if(typeof u!=="string"){return null;}if(u.indexOf("https://")===0||u.indexOf("http://")===0){return u;}return null;}function makePopup(v){var el=document.createElement("div");el.className="venue-map-popup";var name=document.createElement("strong");name.textContent=v.name;el.appendChild(name);var cost=document.createElement("span");cost.className="venue-map-popup-cost";cost.textContent=v.cost_text;el.appendChild(cost);var url=safeUrl(v.url);if(url){var a=document.createElement("a");a.href=url;a.target="_blank";a.rel="noopener noreferrer";a.textContent="book / source";el.appendChild(a);}return el;}function eventClient(ev){if(!ev||typeof ev.clientX!=="number"||typeof ev.clientY!=="number"){return null;}return {x:ev.clientX,y:ev.clientY};}function containerPoint(client){if(!client||!container||typeof container.getBoundingClientRect!=="function"){return null;}var r=container.getBoundingClientRect();if(!r){return null;}return {x:client.x-r.left,y:client.y-r.top};}function placeLabel(el,label){if(!container||typeof container.getBoundingClientRect!=="function"){return;}if(!el||typeof el.getBoundingClientRect!=="function"){return;}var got=placeMarkerLabel(container.getBoundingClientRect(),el.getBoundingClientRect(),{width:label.offsetWidth||0,height:label.offsetHeight||0});if(got.flip){label.classList.add("venue-map-marker-label-flip");}else{label.classList.remove("venue-map-marker-label-flip");}label.style.transform="translateX(calc(-50% + "+got.shift+"px))";}valid.forEach(function(v){var el=document.createElement("div");el.className="venue-map-marker venue-map-marker-"+v.tier;el.tabIndex=0;el.setAttribute("role","button");el.setAttribute("aria-label",v.name);var dot=document.createElement("span");dot.className="venue-map-marker-dot";dot.style.background=tierColors[v.tier]||tierColors.lead;el.appendChild(dot);var label=document.createElement("span");label.className="venue-map-marker-label";label.textContent=v.name;el.appendChild(label);var marker=new maplibregl.Marker({element:el}).setLngLat([v.lon,v.lat]);var popup=new maplibregl.Popup({closeButton:true,closeOnClick:false,offset:12}).setDOMContent(makePopup(v));popups[v.key]=popup;marker.setPopup(popup);marker.addTo(map);markers[v.key]=marker;extendBox(v.lon,v.lat);el.addEventListener("click",function(ev){var client=eventClient(ev);var pick=null;if(client){var cp=containerPoint(client);if(cp){pick=resolvePointerVenue(valid,markers,client,cp,function(ll){return map.project(ll);},28);}}if(pick&&pick.key!==v.key){if(typeof ev.stopPropagation==="function"){ev.stopPropagation();}closeOtherPopups(pick.key);if(popups[v.key]&&popups[v.key].isOpen()){popups[v.key].remove();}var tp=popups[pick.key];if(tp&&!tp.isOpen()&&markers[pick.key]){markers[pick.key].togglePopup();}highlightTarget(pick);return;}closeOtherPopups(v.key);highlightTarget(v);});el.addEventListener("keydown",function(ev){if(ev.key==="Escape"){ev.preventDefault();el.setAttribute("data-label-dismissed","true");return;}if(ev.key==="Enter"||ev.key===" "){ev.preventDefault();closeOtherPopups(v.key);marker.togglePopup();highlightTarget(v);}});el.addEventListener("pointerenter",function(){hoveredMarker=el;placeLabel(el,label);});el.addEventListener("focus",function(){placeLabel(el,label);});el.addEventListener("pointerleave",function(){if(hoveredMarker===el){hoveredMarker=null;}el.removeAttribute("data-label-dismissed");});el.addEventListener("blur",function(){el.removeAttribute("data-label-dismissed");});});/*LABEL_DISMISS_START*//* WCAG 2.2 SC 1.4.13: Escape must also dismiss a label revealed by   :hover, when focus is elsewhere. The marker's own keydown handler   only runs while the marker holds focus, so a document-level listener   suppresses whichever marker is under the pointer, without moving   focus or pointer. */function dismissLabelOnEscape(ev,box){if(!ev||ev.key!=="Escape"||!box||typeof box.setAttribute!=="function"){return null;}box.setAttribute("data-label-dismissed","true");return box;}if(typeof document!=="undefined"&&document&&typeof document.addEventListener==="function"){document.addEventListener("keydown",function(ev){dismissLabelOnEscape(ev,hoveredMarker);});}/*LABEL_DISMISS_END*//*NEAREST_PICK_START*/function nearestVenue(entries,point,project,maxPx){var limit=maxPx*maxPx;var best=null;var bestD=0;for(var i=0;i<entries.length;i++){var v=entries[i];if(typeof v.lat!=="number"||typeof v.lon!=="number"){continue;}var p=project([v.lon,v.lat]);if(!p){continue;}var dx=p.x-point.x;var dy=p.y-point.y;var d=dx*dx+dy*dy;if(best===null||d<bestD){best=v;bestD=d;}}return best!==null&&bestD<=limit?best:null;}/*NEAREST_PICK_END*//*POINTER_PICK_START*/function markerFromTarget(target){while(target&&target.nodeType===1){if(target.classList&&target.classList.contains("venue-map-marker")){return target;}target=target.parentNode;}return null;}function venueKeyForMarker(entries,markers,el){if(!el){return null;}for(var i=0;i<entries.length;i++){var key=entries[i].key;var m=markers[key];if(m&&m.element===el){return key;}}return null;}/* A visible dot under the pointer wins over DOM paint order: the 40x40   hit boxes overlap at ~19px, so the topmost box is not the dot the   user aimed at. */function dotVenueKey(entries,markers,client){if(!client||typeof document==="undefined"||!document||typeof document.elementsFromPoint!=="function"){return null;}var stack=document.elementsFromPoint(client.x,client.y);if(!stack||!stack.length){return null;}for(var i=0;i<stack.length;i++){var el=stack[i];if(!el||!el.classList||!el.classList.contains("venue-map-marker-dot")){continue;}var key=venueKeyForMarker(entries,markers,markerFromTarget(el));if(key!==null){return key;}}return null;}function resolvePointerVenue(entries,markers,client,point,project,maxPx){var key=dotVenueKey(entries,markers,client);if(key!==null){for(var i=0;i<entries.length;i++){if(entries[i].key===key){return entries[i];}}}return nearestVenue(entries,point,project,maxPx);}/*POINTER_PICK_END*//*LABEL_PLACE_START*/function placeMarkerLabel(hostRect,markerRect,labelSize){var out={flip:false,shift:0};if(!hostRect||!markerRect||!labelSize){return out;}var inset=4;var gap=8;out.flip=(markerRect.top-hostRect.top)<(labelSize.height+gap);var centre=markerRect.left+markerRect.width/2;var half=labelSize.width/2;var min=hostRect.left+inset+half;var max=hostRect.left+hostRect.width-inset-half;if(max>=min){if(centre<min){out.shift=Math.round(min-centre);}else if(centre>max){out.shift=Math.round(centre-max);}}return out;}/*LABEL_PLACE_END*/map.on("click",function(ev){var orig=ev&&ev.originalEvent;if(orig&&markerFromTarget(orig.target)){return;}if(!ev||!ev.point){return;}var v=resolvePointerVenue(valid,markers,eventClient(orig),ev.point,function(ll){return map.project(ll);},28);if(!v){closeAllPopups();return;}closeOtherPopups(v.key);var p=popups[v.key];if(p&&!p.isOpen()&&markers[v.key]){markers[v.key].togglePopup();}highlightTarget(v);});function highlightTarget(v){var target=null;if(v.main_row_id){target=document.getElementById(v.main_row_id);}if(!target&&v.lead_list_id){target=document.getElementById(v.lead_list_id);}if(!target){return;}var prev=document.querySelector(".map-highlight");if(prev&&prev!==target){prev.classList.remove("map-highlight");}target.classList.add("map-highlight");var reduce=window.matchMedia&&window.matchMedia("(prefers-reduced-motion: reduce)").matches;if(reduce){target.scrollIntoView({block:"nearest"});}else{target.scrollIntoView({behavior:"smooth",block:"nearest"});}}function focusEntry(v){var m=markers[v.key];if(!m){return;}var z=map.getZoom();if(!(z>=14)){z=14;}map.jumpTo({center:[v.lon,v.lat],zoom:z});closeOtherPopups(v.key);var p=m.getPopup();if(p&&!p.isOpen()){m.togglePopup();}highlightTarget(v);}function wireRow(row){var key=row.getAttribute("data-map-key");if(!key){return;}var v=payload.venues.filter(function(x){return x.key===key;})[0];if(!v){return;}row.addEventListener("click",function(ev){if(ev.target&&(ev.target.tagName==="A"||ev.target.tagName==="BUTTON")){return;}focusEntry(v);});row.addEventListener("keydown",function(ev){if(ev.key==="Enter"||ev.key===" "){focusEntry(v);}});}var rows=document.querySelectorAll("tr.venue-row[data-map-key]");for(var ri=0;ri<rows.length;ri++){wireRow(rows[ri]);}var focusButtons=document.querySelectorAll("button.map-focus[data-map-key]");for(var bi=0;bi<focusButtons.length;bi++){(function(btn){btn.addEventListener("click",function(){var v=payload.venues.filter(function(x){return x.key===btn.getAttribute("data-map-key");})[0];if(v){focusEntry(v);}});})(focusButtons[bi]);}if(note){note.parentNode.removeChild(note);}})();</script></section>
   <section class="local-communities" aria-labelledby="local-communities-heading">
 <h2 id="local-communities-heading">Local communities</h2>
 <p class="local-communities-intro">The records below are evidence-backed local audience and collaboration context for Joe — informational, not an outreach authorization and never a confirmed co-host commitment.</p>
