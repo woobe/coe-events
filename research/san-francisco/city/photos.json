@@ -1,0 +1,1072 @@
+{
+  "alt_note": "Alt text reproduces the publisher's own caption or alt attribute where one exists; otherwise it is derived from the page section or filename the image is published under (see alt_basis). Images were not visually inspected, so no description goes beyond what the venue itself publishes.",
+  "blocked_hosts": [
+    {
+      "detail": "Cloudflare 403 on the listing page, the /ca/ locale variant and the API path, for the whole run. No photos listed.",
+      "host": "peerspace.com",
+      "impacted_venue": "Common Space - Large Loft in the Marina (Peerspace listing)",
+      "status": 403
+    },
+    {
+      "detail": "Rate-limited (nginx 1168-byte 429 page) on page and image requests for the first part of the run; answered 200 on a later retry. 4 photos listed. On the round-1 re-check one stale Chrome/124 user agent got 403 while no user agent, curl's default and Chrome/131 all returned 200 image/jpeg, so that 403 was user-agent filtering, not a hotlink restriction.",
+      "host": "somarts.org",
+      "impacted_venue": "SOMArts Cultural Center - Main Event Space (Essentials Package)",
+      "status": 429
+    },
+    {
+      "detail": "Rentals page fetched once (200); images then returned 429 for a stretch; answered 200 on a later retry. 1 photo listed. Same user-agent-specific 403 as somarts.org on the round-1 re-check: 200 image/jpeg with no user agent, curl's default and Chrome/131.",
+      "host": "counterpulse.org",
+      "impacted_venue": "CounterPulse - Main Stage",
+      "status": 429
+    }
+  ],
+  "city_slug": "san-francisco",
+  "coverage": {
+    "hotlinks_verified": 49,
+    "photos_listed_total": 49,
+    "venues_total": 16,
+    "venues_with_1_or_2_names": [
+      "CounterPulse - Main Stage",
+      "The Marsh San Francisco - Mainstage"
+    ],
+    "venues_with_3_or_more_names": [
+      "SOMArts Cultural Center - Main Event Space (Essentials Package)",
+      "Root Division - Front & Rear Galleries",
+      "Four One Nine - Middle Gallery Extended (SoMa)",
+      "The Women's Building - Audre Lorde Room",
+      "Ruth Williams Opera House (Bayview Opera House) - Main Theater",
+      "Brava Theater Center - Lobby",
+      "Brava Theater Center - Studio",
+      "The Lab - Main Auditorium (Redstone Building)",
+      "Z Space - Z Lobby",
+      "Z Space - Steindler Stage",
+      "Gray Area - Lobby (Grand Theater)"
+    ],
+    "venues_with_none_names": [
+      "The Marsh San Francisco - Studio",
+      "Alliance Francaise de San Francisco - Theater",
+      "Common Space - Large Loft in the Marina (Peerspace listing 647656b424653c000e5dacf6)"
+    ],
+    "with_1_or_2": 2,
+    "with_3_or_more": 11,
+    "with_none": 3
+  },
+  "discovery_log": {
+    "path": "research/san-francisco/2027-h1/photo_discovery_log.md",
+    "sha256": "fdcb1968dc34072315cbe79e537cdf9846195064a7e5e7a8f6e82f4bf7486755"
+  },
+  "generated_on": "2026-11-21",
+  "generator": "R2-P venue photo collection (card t_47a27ecd)",
+  "join_note": "venues.raw.json carries no id field. venue_id here is a deterministic kebab-case slug of the exact venue_name string, and venue_index is the 0-based position in venues.raw.json for an unambiguous join.",
+  "schema_version": "city-photos/1",
+  "scope": "Hotlinked image URLs only. No image bytes were downloaded or copied into the repository.",
+  "source": {
+    "path": "research/san-francisco/2027-h1/photos.raw.json",
+    "sha256": "7abe1f9a762282a647b0bbda4bbc57ff6fcc98ba9c77be9ca0ba9cacf427b918"
+  },
+  "unmatched": [],
+  "venues": {
+    "sf-03266107e45f": [
+      {
+        "alt": "CounterPulse Main Stage",
+        "alt_basis": "page section + image title attribute (\"main stage 1\")",
+        "hotlink_ok": true,
+        "pages_checked": [
+          "https://counterpulse.org/rentals/"
+        ],
+        "sidecar_venue_id": "counterpulse-main-stage",
+        "source_page": "https://counterpulse.org/rentals/",
+        "thumb_note": "1024x768 (of a 2560x1920 original); HEAD 200 image/jpeg 176 KB",
+        "url": "https://counterpulse.org/wp-content/uploads/2024/07/main-stage-1-1024x768.jpg",
+        "venue_index": 3,
+        "venue_note": "The host rate-limited this run (HTTP 429 on the images after the rentals page was fetched); it answered normally on a later retry and the photo is verified. The rentals page also publishes studio and project-space photos, which belong to other spaces.",
+        "verified": {
+          "bytes": 180651,
+          "content_type": "image/jpeg",
+          "status": 200
+        }
+      }
+    ],
+    "sf-277ae6031e3f": [
+      {
+        "alt": "Brava Lobby - outer lobby",
+        "alt_basis": "venue caption",
+        "hotlink_ok": true,
+        "pages_checked": [
+          "https://www.brava.org/main-theater",
+          "https://www.brava.org/lobby"
+        ],
+        "sidecar_venue_id": "brava-theater-center-lobby",
+        "source_page": "https://www.brava.org/main-theater",
+        "thumb_note": "2500x1667 original; 1500 px wide as listed; HEAD 200 image/jpeg 236 KB",
+        "url": "https://images.squarespace-cdn.com/content/v1/57e2ef6fc534a50452d4afa0/1524768781510-6DRKYGWNTUX3X35HRL8A/27.jpg?format=1500w",
+        "venue_index": 8,
+        "venue_note": "There is no separate lobby page (brava.org/lobby returns 404). The lobby photos are published in the lobby gallery of the Main Theater rental page, captioned \"Outer Lobby\", \"Lobby Boxes\", \"Inner Lobby Bar\", \"Inner Lobby\".",
+        "verified": {
+          "bytes": 242619,
+          "content_type": "image/jpeg",
+          "status": 200
+        }
+      },
+      {
+        "alt": "Brava Lobby - outer lobby",
+        "alt_basis": "venue caption",
+        "hotlink_ok": true,
+        "pages_checked": [
+          "https://www.brava.org/main-theater",
+          "https://www.brava.org/lobby"
+        ],
+        "sidecar_venue_id": "brava-theater-center-lobby",
+        "source_page": "https://www.brava.org/main-theater",
+        "thumb_note": "2500x1667 original; 1500 px wide as listed; HEAD 200 image/jpeg 281 KB",
+        "url": "https://images.squarespace-cdn.com/content/v1/57e2ef6fc534a50452d4afa0/1524768798259-0SGYKFJNRBOXRRG1KH6D/30.jpg?format=1500w",
+        "venue_index": 8,
+        "venue_note": "There is no separate lobby page (brava.org/lobby returns 404). The lobby photos are published in the lobby gallery of the Main Theater rental page, captioned \"Outer Lobby\", \"Lobby Boxes\", \"Inner Lobby Bar\", \"Inner Lobby\".",
+        "verified": {
+          "bytes": 288237,
+          "content_type": "image/jpeg",
+          "status": 200
+        }
+      },
+      {
+        "alt": "Brava Lobby - lobby boxes",
+        "alt_basis": "venue caption",
+        "hotlink_ok": true,
+        "pages_checked": [
+          "https://www.brava.org/main-theater",
+          "https://www.brava.org/lobby"
+        ],
+        "sidecar_venue_id": "brava-theater-center-lobby",
+        "source_page": "https://www.brava.org/main-theater",
+        "thumb_note": "2500x1667 original; 1500 px wide as listed; HEAD 200 image/jpeg 204 KB",
+        "url": "https://images.squarespace-cdn.com/content/v1/57e2ef6fc534a50452d4afa0/1524768789541-QW3I67WPB09208PRL9ZV/26.jpg?format=1500w",
+        "venue_index": 8,
+        "venue_note": "There is no separate lobby page (brava.org/lobby returns 404). The lobby photos are published in the lobby gallery of the Main Theater rental page, captioned \"Outer Lobby\", \"Lobby Boxes\", \"Inner Lobby Bar\", \"Inner Lobby\".",
+        "verified": {
+          "bytes": 209091,
+          "content_type": "image/jpeg",
+          "status": 200
+        }
+      },
+      {
+        "alt": "Brava Lobby - inner lobby bar",
+        "alt_basis": "venue caption",
+        "hotlink_ok": true,
+        "pages_checked": [
+          "https://www.brava.org/main-theater",
+          "https://www.brava.org/lobby"
+        ],
+        "sidecar_venue_id": "brava-theater-center-lobby",
+        "source_page": "https://www.brava.org/main-theater",
+        "thumb_note": "2500x1667 original; 1500 px wide as listed; HEAD 200 image/jpeg 282 KB",
+        "url": "https://images.squarespace-cdn.com/content/v1/57e2ef6fc534a50452d4afa0/1524768810115-9L7SXB3Y6EECQ7672829/19.jpg?format=1500w",
+        "venue_index": 8,
+        "venue_note": "There is no separate lobby page (brava.org/lobby returns 404). The lobby photos are published in the lobby gallery of the Main Theater rental page, captioned \"Outer Lobby\", \"Lobby Boxes\", \"Inner Lobby Bar\", \"Inner Lobby\".",
+        "verified": {
+          "bytes": 288927,
+          "content_type": "image/jpeg",
+          "status": 200
+        }
+      },
+      {
+        "alt": "Brava Lobby - inner lobby",
+        "alt_basis": "venue caption",
+        "hotlink_ok": true,
+        "pages_checked": [
+          "https://www.brava.org/main-theater",
+          "https://www.brava.org/lobby"
+        ],
+        "sidecar_venue_id": "brava-theater-center-lobby",
+        "source_page": "https://www.brava.org/main-theater",
+        "thumb_note": "2500x1667 original; 1500 px wide as listed; HEAD 200 image/jpeg 280 KB",
+        "url": "https://images.squarespace-cdn.com/content/v1/57e2ef6fc534a50452d4afa0/1524768818235-M26TFUQ3ZR5YKYS5AL0Y/20.jpg?format=1500w",
+        "venue_index": 8,
+        "venue_note": "There is no separate lobby page (brava.org/lobby returns 404). The lobby photos are published in the lobby gallery of the Main Theater rental page, captioned \"Outer Lobby\", \"Lobby Boxes\", \"Inner Lobby Bar\", \"Inner Lobby\".",
+        "verified": {
+          "bytes": 287631,
+          "content_type": "image/jpeg",
+          "status": 200
+        }
+      }
+    ],
+    "sf-2a8505a53998": [
+      {
+        "alt": "Brava Studio - studio event",
+        "alt_basis": "venue caption",
+        "hotlink_ok": true,
+        "pages_checked": [
+          "https://www.brava.org/studio"
+        ],
+        "sidecar_venue_id": "brava-theater-center-studio",
+        "source_page": "https://www.brava.org/studio",
+        "thumb_note": "2500x1663 original; 1500 px wide as listed; HEAD 200 image/jpeg 260 KB",
+        "url": "https://images.squarespace-cdn.com/content/v1/57e2ef6fc534a50452d4afa0/1524769275274-8KUPTNY7RNJ18KEEU2NQ/17.jpg?format=1500w",
+        "venue_index": 9,
+        "venue_note": null,
+        "verified": {
+          "bytes": 266520,
+          "content_type": "image/jpeg",
+          "status": 200
+        }
+      },
+      {
+        "alt": "Brava Studio - studio event",
+        "alt_basis": "venue caption",
+        "hotlink_ok": true,
+        "pages_checked": [
+          "https://www.brava.org/studio"
+        ],
+        "sidecar_venue_id": "brava-theater-center-studio",
+        "source_page": "https://www.brava.org/studio",
+        "thumb_note": "2500x1663 original; 1500 px wide as listed; HEAD 200 image/jpeg 252 KB",
+        "url": "https://images.squarespace-cdn.com/content/v1/57e2ef6fc534a50452d4afa0/1524769282879-LW96LMWDJEIYJNJ10E0L/16.jpg?format=1500w",
+        "venue_index": 9,
+        "venue_note": null,
+        "verified": {
+          "bytes": 258437,
+          "content_type": "image/jpeg",
+          "status": 200
+        }
+      },
+      {
+        "alt": "Brava Studio - studio bar",
+        "alt_basis": "venue caption",
+        "hotlink_ok": true,
+        "pages_checked": [
+          "https://www.brava.org/studio"
+        ],
+        "sidecar_venue_id": "brava-theater-center-studio",
+        "source_page": "https://www.brava.org/studio",
+        "thumb_note": "2500x1667 original; 1500 px wide as listed; HEAD 200 image/jpeg 229 KB",
+        "url": "https://images.squarespace-cdn.com/content/v1/57e2ef6fc534a50452d4afa0/1524769292885-1VGVN17HZIN9TKRXC33W/15.jpg?format=1500w",
+        "venue_index": 9,
+        "venue_note": null,
+        "verified": {
+          "bytes": 235442,
+          "content_type": "image/jpeg",
+          "status": 200
+        }
+      },
+      {
+        "alt": "Brava Studio - studio chairs",
+        "alt_basis": "venue caption",
+        "hotlink_ok": true,
+        "pages_checked": [
+          "https://www.brava.org/studio"
+        ],
+        "sidecar_venue_id": "brava-theater-center-studio",
+        "source_page": "https://www.brava.org/studio",
+        "thumb_note": "2400x3600 original; 1500 px wide as listed; HEAD 200 image/jpeg 446 KB",
+        "url": "https://images.squarespace-cdn.com/content/v1/57e2ef6fc534a50452d4afa0/1524769363965-O3QE7P5DBQAD84OV72KN/7.jpg?format=1500w",
+        "venue_index": 9,
+        "venue_note": null,
+        "verified": {
+          "bytes": 457625,
+          "content_type": "image/jpeg",
+          "status": 200
+        }
+      }
+    ],
+    "sf-307c9dd57430": [],
+    "sf-67623ac7c2a8": [
+      {
+        "alt": "Historic building used as an indoor/outdoor event space",
+        "alt_basis": "venue alt text",
+        "hotlink_ok": true,
+        "pages_checked": [
+          "https://rwoh.org/rentals/"
+        ],
+        "sidecar_venue_id": "ruth-williams-opera-house-bayview-opera-house-main-theater",
+        "source_page": "https://rwoh.org/rentals/",
+        "thumb_note": "1024x683; HEAD 200 image/webp 212 KB",
+        "url": "https://rwoh.org/wp-content/uploads/2025/07/rental.webp",
+        "venue_index": 7,
+        "venue_note": "All three images carry the same generic alt text (\"Our historic building is a beautiful and versatile indoor/outdoor event space\").",
+        "verified": {
+          "bytes": 217440,
+          "content_type": "image/webp",
+          "status": 200
+        }
+      },
+      {
+        "alt": "Historic building used as an indoor/outdoor event space",
+        "alt_basis": "venue alt text",
+        "hotlink_ok": true,
+        "pages_checked": [
+          "https://rwoh.org/rentals/"
+        ],
+        "sidecar_venue_id": "ruth-williams-opera-house-bayview-opera-house-main-theater",
+        "source_page": "https://rwoh.org/rentals/",
+        "thumb_note": "1024x683; HEAD 200 image/webp 345 KB",
+        "url": "https://rwoh.org/wp-content/uploads/2025/07/rental2.webp",
+        "venue_index": 7,
+        "venue_note": "All three images carry the same generic alt text (\"Our historic building is a beautiful and versatile indoor/outdoor event space\").",
+        "verified": {
+          "bytes": 354122,
+          "content_type": "image/webp",
+          "status": 200
+        }
+      },
+      {
+        "alt": "Historic building used as an indoor/outdoor event space",
+        "alt_basis": "venue alt text",
+        "hotlink_ok": true,
+        "pages_checked": [
+          "https://rwoh.org/rentals/"
+        ],
+        "sidecar_venue_id": "ruth-williams-opera-house-bayview-opera-house-main-theater",
+        "source_page": "https://rwoh.org/rentals/",
+        "thumb_note": "1024x683; HEAD 200 image/webp 190 KB",
+        "url": "https://rwoh.org/wp-content/uploads/2025/07/rental3.webp",
+        "venue_index": 7,
+        "venue_note": "All three images carry the same generic alt text (\"Our historic building is a beautiful and versatile indoor/outdoor event space\").",
+        "verified": {
+          "bytes": 194742,
+          "content_type": "image/webp",
+          "status": 200
+        }
+      }
+    ],
+    "sf-70dcce8a309f": [
+      {
+        "alt": "Gray Area lobby",
+        "alt_basis": "page section label",
+        "hotlink_ok": true,
+        "pages_checked": [
+          "https://grayarea.org/services/venue-rental/",
+          "https://grayarea.org/venue-rental/"
+        ],
+        "sidecar_venue_id": "gray-area-lobby-grand-theater",
+        "source_page": "https://grayarea.org/services/venue-rental/",
+        "thumb_note": "2560x1707 original; HEAD 200 image/jpeg 716 KB",
+        "url": "https://grayarea.org/wp-content/uploads/2024/06/%C2%A9Barak-Shrama-12-scaled.jpg",
+        "venue_index": 15,
+        "venue_note": "First photo is the venue's own image under the 'Lobby' heading (800 square feet, 80 capacity). The other two are the adjoining Grand Theater main room (6,000 square feet, 800 capacity) and are labelled as such in alt; they are kept only as context for the building. The page's Grand Theater, Half Theater and Classroom images were otherwise left out so the set does not present the large theater as the booked lobby.",
+        "verified": {
+          "bytes": 732617,
+          "content_type": "image/jpeg",
+          "status": 200
+        }
+      },
+      {
+        "alt": "Adjoining Grand Theater main room set for conference and corporate productions - not the 800 sq ft lobby",
+        "alt_basis": "page section label; room identity from the venue page",
+        "hotlink_ok": true,
+        "pages_checked": [
+          "https://grayarea.org/services/venue-rental/",
+          "https://grayarea.org/venue-rental/"
+        ],
+        "sidecar_venue_id": "gray-area-lobby-grand-theater",
+        "source_page": "https://grayarea.org/services/venue-rental/",
+        "thumb_note": "768x457; HEAD 200 image/png 385 KB",
+        "url": "https://grayarea.org/wp-content/uploads/2019/09/grandtheater-768x457.png",
+        "venue_index": 15,
+        "venue_note": "First photo is the venue's own image under the 'Lobby' heading (800 square feet, 80 capacity). The other two are the adjoining Grand Theater main room (6,000 square feet, 800 capacity) and are labelled as such in alt; they are kept only as context for the building. The page's Grand Theater, Half Theater and Classroom images were otherwise left out so the set does not present the large theater as the booked lobby.",
+        "verified": {
+          "bytes": 394901,
+          "content_type": "image/png",
+          "status": 200
+        }
+      },
+      {
+        "alt": "Adjoining Grand Theater main room during a community or private event - not the 800 sq ft lobby",
+        "alt_basis": "page section label; room identity from the venue page",
+        "hotlink_ok": true,
+        "pages_checked": [
+          "https://grayarea.org/services/venue-rental/",
+          "https://grayarea.org/venue-rental/"
+        ],
+        "sidecar_venue_id": "gray-area-lobby-grand-theater",
+        "source_page": "https://grayarea.org/services/venue-rental/",
+        "thumb_note": "768x512; HEAD 200 image/png 481 KB",
+        "url": "https://grayarea.org/wp-content/uploads/2024/07/Group-223-768x512.png",
+        "venue_index": 15,
+        "venue_note": "First photo is the venue's own image under the 'Lobby' heading (800 square feet, 80 capacity). The other two are the adjoining Grand Theater main room (6,000 square feet, 800 capacity) and are labelled as such in alt; they are kept only as context for the building. The page's Grand Theater, Half Theater and Classroom images were otherwise left out so the set does not present the large theater as the booked lobby.",
+        "verified": {
+          "bytes": 492867,
+          "content_type": "image/png",
+          "status": 200
+        }
+      }
+    ],
+    "sf-7196ba5d7e75": [
+      {
+        "alt": "The Marsh San Francisco Mainstage",
+        "alt_basis": "page section label",
+        "hotlink_ok": true,
+        "pages_checked": [
+          "https://themarsh.org/our-venues/",
+          "https://themarsh.org/rental-pricing/"
+        ],
+        "sidecar_venue_id": "the-marsh-san-francisco-mainstage",
+        "source_page": "https://themarsh.org/our-venues/",
+        "thumb_note": "1280x720; HEAD 200 image/jpeg 110 KB",
+        "url": "https://themarsh.org/wp-content/uploads/2024/05/IMG-5134-1280x720.jpg",
+        "venue_index": 5,
+        "venue_note": "Only two venue photos are published. The rental-pricing page (the venue source_url) carries no venue photography; both photos are on themarsh.org/our-venues/, under the \"Mainstage\" and \"The Marsh San Francisco\" headings.",
+        "verified": {
+          "bytes": 112927,
+          "content_type": "image/jpeg",
+          "status": 200
+        }
+      },
+      {
+        "alt": "The Marsh San Francisco venue",
+        "alt_basis": "page section label",
+        "hotlink_ok": true,
+        "pages_checked": [
+          "https://themarsh.org/our-venues/",
+          "https://themarsh.org/rental-pricing/"
+        ],
+        "sidecar_venue_id": "the-marsh-san-francisco-mainstage",
+        "source_page": "https://themarsh.org/our-venues/",
+        "thumb_note": "1280x720; HEAD 200 image/jpeg 94 KB",
+        "url": "https://themarsh.org/wp-content/uploads/2024/05/IMG-5145-1280x720.jpg",
+        "venue_index": 5,
+        "venue_note": "Only two venue photos are published. The rental-pricing page (the venue source_url) carries no venue photography; both photos are on themarsh.org/our-venues/, under the \"Mainstage\" and \"The Marsh San Francisco\" headings.",
+        "verified": {
+          "bytes": 96934,
+          "content_type": "image/jpeg",
+          "status": 200
+        }
+      }
+    ],
+    "sf-791be009d2a8": [
+      {
+        "alt": "Z Space Steindler Stage",
+        "alt_basis": "venue filename",
+        "hotlink_ok": true,
+        "pages_checked": [
+          "https://zspace.org/rent",
+          "https://zspace.org/mainstage"
+        ],
+        "sidecar_venue_id": "z-space-steindler-stage",
+        "source_page": "https://zspace.org/mainstage",
+        "thumb_note": "2500x1331 original; 1500 px wide as listed; HEAD 200 image/jpeg 85 KB",
+        "url": "https://images.squarespace-cdn.com/content/v1/5679d2ec1115e097de2c8bcb/1466115781906-PXMA1MNTK2HB5GD4ZT2Q/ZSPACE_STAGE_FINAL.jpg?format=1500w",
+        "venue_index": 12,
+        "venue_note": "Photos are in the \"THE SPACE\" gallery on zspace.org/mainstage. Originals are 3.5k-5.6k px wide, so the listing uses Squarespace's own ?format=1500w resize parameter, the same form the site serves.",
+        "verified": {
+          "bytes": 88031,
+          "content_type": "image/jpeg",
+          "status": 200
+        }
+      },
+      {
+        "alt": "Steindler Stage - venue photo Zspace-21",
+        "alt_basis": "venue filename",
+        "hotlink_ok": true,
+        "pages_checked": [
+          "https://zspace.org/rent",
+          "https://zspace.org/mainstage"
+        ],
+        "sidecar_venue_id": "z-space-steindler-stage",
+        "source_page": "https://zspace.org/mainstage",
+        "thumb_note": "5616x3744 original; 1500 px wide as listed; HEAD 200 image/webp 81 KB",
+        "url": "https://images.squarespace-cdn.com/content/v1/5679d2ec1115e097de2c8bcb/1466208551640-XFG20ID99NFTY28E5JAA/Zspace-21.jpg?format=1500w",
+        "venue_index": 12,
+        "venue_note": "Photos are in the \"THE SPACE\" gallery on zspace.org/mainstage. Originals are 3.5k-5.6k px wide, so the listing uses Squarespace's own ?format=1500w resize parameter, the same form the site serves.",
+        "verified": {
+          "bytes": 83782,
+          "content_type": "image/webp",
+          "status": 200
+        }
+      },
+      {
+        "alt": "Steindler Stage - venue photo Zspace-14",
+        "alt_basis": "venue filename",
+        "hotlink_ok": true,
+        "pages_checked": [
+          "https://zspace.org/rent",
+          "https://zspace.org/mainstage"
+        ],
+        "sidecar_venue_id": "z-space-steindler-stage",
+        "source_page": "https://zspace.org/mainstage",
+        "thumb_note": "5514x3349 original; 1500 px wide as listed; HEAD 200 image/webp 71 KB",
+        "url": "https://images.squarespace-cdn.com/content/v1/5679d2ec1115e097de2c8bcb/1466208546729-CVPD76OBI0MSXK465FGF/Zspace-14+copy.jpg?format=1500w",
+        "venue_index": 12,
+        "venue_note": "Photos are in the \"THE SPACE\" gallery on zspace.org/mainstage. Originals are 3.5k-5.6k px wide, so the listing uses Squarespace's own ?format=1500w resize parameter, the same form the site serves.",
+        "verified": {
+          "bytes": 73432,
+          "content_type": "image/webp",
+          "status": 200
+        }
+      },
+      {
+        "alt": "Steindler Stage - venue photo Zspace-26",
+        "alt_basis": "venue filename",
+        "hotlink_ok": true,
+        "pages_checked": [
+          "https://zspace.org/rent",
+          "https://zspace.org/mainstage"
+        ],
+        "sidecar_venue_id": "z-space-steindler-stage",
+        "source_page": "https://zspace.org/mainstage",
+        "thumb_note": "3547x2088 original; 1500 px wide as listed; HEAD 200 image/webp 137 KB",
+        "url": "https://images.squarespace-cdn.com/content/v1/5679d2ec1115e097de2c8bcb/1466208549263-ADBUUJJEV6ERXY858H3U/Zspace-26+copy.jpg?format=1500w",
+        "venue_index": 12,
+        "venue_note": "Photos are in the \"THE SPACE\" gallery on zspace.org/mainstage. Originals are 3.5k-5.6k px wide, so the listing uses Squarespace's own ?format=1500w resize parameter, the same form the site serves.",
+        "verified": {
+          "bytes": 140336,
+          "content_type": "image/webp",
+          "status": 200
+        }
+      }
+    ],
+    "sf-861f3552141b": [
+      {
+        "alt": "The Lab Main Auditorium during the venue's reopening event",
+        "alt_basis": "filename",
+        "hotlink_ok": true,
+        "pages_checked": [
+          "https://www.thelab.org/rental"
+        ],
+        "sidecar_venue_id": "the-lab-main-auditorium-redstone-building",
+        "source_page": "https://www.thelab.org/rental",
+        "thumb_note": "2500x1573 original; 1500 px wide as listed; HEAD 200 image/jpeg 233 KB",
+        "url": "https://images.squarespace-cdn.com/content/v1/556101b3e4b0c18afa3f0a0f/1776733873505-39QS2Q3FS3A9TH6CZX89/260327_TheLab_Reopening_RDH_007.jpg?format=1500w",
+        "venue_index": 10,
+        "venue_note": "The rental page publishes a seven-photo gallery of the Main Auditorium with no captions and no alt text; five are listed. Filenames read 260327_TheLab_Reopening_RDH_0xx.jpg.",
+        "verified": {
+          "bytes": 238798,
+          "content_type": "image/jpeg",
+          "status": 200
+        }
+      },
+      {
+        "alt": "The Lab Main Auditorium during the venue's reopening event",
+        "alt_basis": "filename",
+        "hotlink_ok": true,
+        "pages_checked": [
+          "https://www.thelab.org/rental"
+        ],
+        "sidecar_venue_id": "the-lab-main-auditorium-redstone-building",
+        "source_page": "https://www.thelab.org/rental",
+        "thumb_note": "2500x1406 original; 1500 px wide as listed; HEAD 200 image/jpeg 202 KB",
+        "url": "https://images.squarespace-cdn.com/content/v1/556101b3e4b0c18afa3f0a0f/1776733872970-UTLDZBKZLIXVACB0VK56/260327_TheLab_Reopening_RDH_028.jpg?format=1500w",
+        "venue_index": 10,
+        "venue_note": "The rental page publishes a seven-photo gallery of the Main Auditorium with no captions and no alt text; five are listed. Filenames read 260327_TheLab_Reopening_RDH_0xx.jpg.",
+        "verified": {
+          "bytes": 206948,
+          "content_type": "image/jpeg",
+          "status": 200
+        }
+      },
+      {
+        "alt": "The Lab Main Auditorium during the venue's reopening event",
+        "alt_basis": "filename",
+        "hotlink_ok": true,
+        "pages_checked": [
+          "https://www.thelab.org/rental"
+        ],
+        "sidecar_venue_id": "the-lab-main-auditorium-redstone-building",
+        "source_page": "https://www.thelab.org/rental",
+        "thumb_note": "2500x1406 original; 1500 px wide as listed; HEAD 200 image/jpeg 177 KB",
+        "url": "https://images.squarespace-cdn.com/content/v1/556101b3e4b0c18afa3f0a0f/1776733878513-DZ3TXEG4A9OXFC2GX83Z/260327_TheLab_Reopening_RDH_056.jpg?format=1500w",
+        "venue_index": 10,
+        "venue_note": "The rental page publishes a seven-photo gallery of the Main Auditorium with no captions and no alt text; five are listed. Filenames read 260327_TheLab_Reopening_RDH_0xx.jpg.",
+        "verified": {
+          "bytes": 181778,
+          "content_type": "image/jpeg",
+          "status": 200
+        }
+      },
+      {
+        "alt": "The Lab Main Auditorium during the venue's reopening event",
+        "alt_basis": "filename",
+        "hotlink_ok": true,
+        "pages_checked": [
+          "https://www.thelab.org/rental"
+        ],
+        "sidecar_venue_id": "the-lab-main-auditorium-redstone-building",
+        "source_page": "https://www.thelab.org/rental",
+        "thumb_note": "2500x1406 original; 1500 px wide as listed; HEAD 200 image/jpeg 190 KB",
+        "url": "https://images.squarespace-cdn.com/content/v1/556101b3e4b0c18afa3f0a0f/1776733879391-GTUNP23B6IGSBIZXKYCQ/260327_TheLab_Reopening_RDH_075.jpg?format=1500w",
+        "venue_index": 10,
+        "venue_note": "The rental page publishes a seven-photo gallery of the Main Auditorium with no captions and no alt text; five are listed. Filenames read 260327_TheLab_Reopening_RDH_0xx.jpg.",
+        "verified": {
+          "bytes": 195512,
+          "content_type": "image/jpeg",
+          "status": 200
+        }
+      },
+      {
+        "alt": "The Lab Main Auditorium during the venue's reopening event",
+        "alt_basis": "filename",
+        "hotlink_ok": true,
+        "pages_checked": [
+          "https://www.thelab.org/rental"
+        ],
+        "sidecar_venue_id": "the-lab-main-auditorium-redstone-building",
+        "source_page": "https://www.thelab.org/rental",
+        "thumb_note": "2500x1875 original; 1500 px wide as listed; HEAD 200 image/jpeg 192 KB",
+        "url": "https://images.squarespace-cdn.com/content/v1/556101b3e4b0c18afa3f0a0f/1776733884495-IWKBJNKSBKNNAT4Q5PZL/260327_TheLab_Reopening_RDH_087.jpg?format=1500w",
+        "venue_index": 10,
+        "venue_note": "The rental page publishes a seven-photo gallery of the Main Auditorium with no captions and no alt text; five are listed. Filenames read 260327_TheLab_Reopening_RDH_0xx.jpg.",
+        "verified": {
+          "bytes": 197595,
+          "content_type": "image/jpeg",
+          "status": 200
+        }
+      }
+    ],
+    "sf-9ca5a5071dd1": [
+      {
+        "alt": "Z Lobby during the CoPro 2011 opening night (Joe Goode Performance Group)",
+        "alt_basis": "venue filename caption",
+        "hotlink_ok": true,
+        "pages_checked": [
+          "https://zspace.org/rent",
+          "https://zspace.org/z-lobby"
+        ],
+        "sidecar_venue_id": "z-space-z-lobby",
+        "source_page": "https://zspace.org/z-lobby",
+        "thumb_note": "2500x1661 original; 1500 px wide as listed; HEAD 200 image/jpeg 329 KB",
+        "url": "https://images.squarespace-cdn.com/content/v1/5679d2ec1115e097de2c8bcb/1504827476142-XX5DFPXA3ZP35N6STXLE/Opening+Night+Joe+Goode+Performance+Group+CoPro+2011.JPG?format=1500w",
+        "venue_index": 11,
+        "venue_note": "Gallery on zspace.org/z-lobby. The page publishes no captions or alt text beyond the filenames, and the images were not visually inspected, so descriptions stay at the level the venue itself provides.",
+        "verified": {
+          "bytes": 337053,
+          "content_type": "image/jpeg",
+          "status": 200
+        }
+      },
+      {
+        "alt": "Z Lobby - venue photo decoded-zspace-082317-021",
+        "alt_basis": "venue filename",
+        "hotlink_ok": true,
+        "pages_checked": [
+          "https://zspace.org/rent",
+          "https://zspace.org/z-lobby"
+        ],
+        "sidecar_venue_id": "z-space-z-lobby",
+        "source_page": "https://zspace.org/z-lobby",
+        "thumb_note": "2500x1667 original; 1500 px wide as listed; HEAD 200 image/jpeg 202 KB",
+        "url": "https://images.squarespace-cdn.com/content/v1/5679d2ec1115e097de2c8bcb/1504827988583-E93C83TICZXPRJ2P1WHU/decoded-zspace-082317-021.JPG?format=1500w",
+        "venue_index": 11,
+        "venue_note": "Gallery on zspace.org/z-lobby. The page publishes no captions or alt text beyond the filenames, and the images were not visually inspected, so descriptions stay at the level the venue itself provides.",
+        "verified": {
+          "bytes": 207437,
+          "content_type": "image/jpeg",
+          "status": 200
+        }
+      },
+      {
+        "alt": "Z Lobby set for a wedding (venue photo bay-area-wedding-photography-501)",
+        "alt_basis": "venue filename",
+        "hotlink_ok": true,
+        "pages_checked": [
+          "https://zspace.org/rent",
+          "https://zspace.org/z-lobby"
+        ],
+        "sidecar_venue_id": "z-space-z-lobby",
+        "source_page": "https://zspace.org/z-lobby",
+        "thumb_note": "900x600; HEAD 200 image/webp 65 KB",
+        "url": "https://images.squarespace-cdn.com/content/v1/5679d2ec1115e097de2c8bcb/1504827763761-6OVWPRRJ6OE5IH89RXBI/bay-area-wedding-photography-501.jpg",
+        "venue_index": 11,
+        "venue_note": "Gallery on zspace.org/z-lobby. The page publishes no captions or alt text beyond the filenames, and the images were not visually inspected, so descriptions stay at the level the venue itself provides.",
+        "verified": {
+          "bytes": 67204,
+          "content_type": "image/webp",
+          "status": 200
+        }
+      },
+      {
+        "alt": "Z Lobby - venue photo 10451330 from the lobby gallery",
+        "alt_basis": "venue filename",
+        "hotlink_ok": true,
+        "pages_checked": [
+          "https://zspace.org/rent",
+          "https://zspace.org/z-lobby"
+        ],
+        "sidecar_venue_id": "z-space-z-lobby",
+        "source_page": "https://zspace.org/z-lobby",
+        "thumb_note": "960x639; HEAD 200 image/webp 41 KB",
+        "url": "https://images.squarespace-cdn.com/content/v1/5679d2ec1115e097de2c8bcb/1504827643456-UAB80N85IFP7FAMU9F8W/10451330_10152524263626688_3037766472330354633_n.jpg",
+        "venue_index": 11,
+        "venue_note": "Gallery on zspace.org/z-lobby. The page publishes no captions or alt text beyond the filenames, and the images were not visually inspected, so descriptions stay at the level the venue itself provides.",
+        "verified": {
+          "bytes": 42542,
+          "content_type": "image/webp",
+          "status": 200
+        }
+      },
+      {
+        "alt": "Z Lobby - venue photo dated 2017-08-26",
+        "alt_basis": "venue filename",
+        "hotlink_ok": true,
+        "pages_checked": [
+          "https://zspace.org/rent",
+          "https://zspace.org/z-lobby"
+        ],
+        "sidecar_venue_id": "z-space-z-lobby",
+        "source_page": "https://zspace.org/z-lobby",
+        "thumb_note": "800x533; HEAD 200 image/webp 115 KB",
+        "url": "https://images.squarespace-cdn.com/content/v1/5679d2ec1115e097de2c8bcb/1504827268451-1FV0G7MPYJTFHY4ZUIVQ/2017-08-26+06.59.44.jpg",
+        "venue_index": 11,
+        "venue_note": "Gallery on zspace.org/z-lobby. The page publishes no captions or alt text beyond the filenames, and the images were not visually inspected, so descriptions stay at the level the venue itself provides.",
+        "verified": {
+          "bytes": 118392,
+          "content_type": "image/webp",
+          "status": 200
+        }
+      }
+    ],
+    "sf-a9e2573503df": [],
+    "sf-aa633c4fb565": [
+      {
+        "alt": "Empty gallery room, Front & Rear Galleries rental option",
+        "alt_basis": "page rental-option label",
+        "hotlink_ok": true,
+        "pages_checked": [
+          "https://rootdivision.org/about/the-space/venue-rental"
+        ],
+        "sidecar_venue_id": "root-division-front-rear-galleries",
+        "source_page": "https://rootdivision.org/about/the-space/venue-rental",
+        "thumb_note": "1024x505; HEAD 200 image/jpeg 56 KB",
+        "url": "https://rootdivision.org/wp-content/uploads/2025/09/RD_EmptyGallery-8-1024x505.jpg",
+        "venue_index": 1,
+        "venue_note": "Page publishes no alt text; descriptions use the rental-option headings the images sit under.",
+        "verified": {
+          "bytes": 57489,
+          "content_type": "image/jpeg",
+          "status": 200
+        }
+      },
+      {
+        "alt": "Empty gallery room, Front & Rear Galleries rental option",
+        "alt_basis": "page rental-option label",
+        "hotlink_ok": true,
+        "pages_checked": [
+          "https://rootdivision.org/about/the-space/venue-rental"
+        ],
+        "sidecar_venue_id": "root-division-front-rear-galleries",
+        "source_page": "https://rootdivision.org/about/the-space/venue-rental",
+        "thumb_note": "1024x572; HEAD 200 image/jpeg 65 KB",
+        "url": "https://rootdivision.org/wp-content/uploads/2025/09/RD_EmptyGallery-7-1024x572.jpg",
+        "venue_index": 1,
+        "venue_note": "Page publishes no alt text; descriptions use the rental-option headings the images sit under.",
+        "verified": {
+          "bytes": 67349,
+          "content_type": "image/jpeg",
+          "status": 200
+        }
+      },
+      {
+        "alt": "Empty gallery room, Front & Rear Galleries rental option",
+        "alt_basis": "page rental-option label",
+        "hotlink_ok": true,
+        "pages_checked": [
+          "https://rootdivision.org/about/the-space/venue-rental"
+        ],
+        "sidecar_venue_id": "root-division-front-rear-galleries",
+        "source_page": "https://rootdivision.org/about/the-space/venue-rental",
+        "thumb_note": "1024x507; HEAD 200 image/jpeg 61 KB",
+        "url": "https://rootdivision.org/wp-content/uploads/2025/09/RD_EmptyGallery-6-1024x507.jpg",
+        "venue_index": 1,
+        "venue_note": "Page publishes no alt text; descriptions use the rental-option headings the images sit under.",
+        "verified": {
+          "bytes": 62745,
+          "content_type": "image/jpeg",
+          "status": 200
+        }
+      },
+      {
+        "alt": "Gallery set up for a private birthday event (photo: Nohea Photography)",
+        "alt_basis": "filename + venue credit",
+        "hotlink_ok": true,
+        "pages_checked": [
+          "https://rootdivision.org/about/the-space/venue-rental"
+        ],
+        "sidecar_venue_id": "root-division-front-rear-galleries",
+        "source_page": "https://rootdivision.org/about/the-space/venue-rental",
+        "thumb_note": "1024x683; HEAD 200 image/jpeg 221 KB",
+        "url": "https://rootdivision.org/wp-content/uploads/2026/04/Markys50thBday-79_websize-1024x683.jpg",
+        "venue_index": 1,
+        "venue_note": "Page publishes no alt text; descriptions use the rental-option headings the images sit under.",
+        "verified": {
+          "bytes": 226500,
+          "content_type": "image/jpeg",
+          "status": 200
+        }
+      },
+      {
+        "alt": "Empty front gallery room, Front Gallery rental option",
+        "alt_basis": "page rental-option label",
+        "hotlink_ok": true,
+        "pages_checked": [
+          "https://rootdivision.org/about/the-space/venue-rental"
+        ],
+        "sidecar_venue_id": "root-division-front-rear-galleries",
+        "source_page": "https://rootdivision.org/about/the-space/venue-rental",
+        "thumb_note": "1024x596; HEAD 200 image/jpeg 51 KB",
+        "url": "https://rootdivision.org/wp-content/uploads/2025/09/RD_EmptyGallery-3-1024x596.jpg",
+        "venue_index": 1,
+        "venue_note": "Page publishes no alt text; descriptions use the rental-option headings the images sit under.",
+        "verified": {
+          "bytes": 52946,
+          "content_type": "image/jpeg",
+          "status": 200
+        }
+      }
+    ],
+    "sf-b3b27dca9c85": [
+      {
+        "alt": "Audre Lorde Room arranged with rectangular tables and chairs for an event or workshop.",
+        "alt_basis": "venue alt text",
+        "hotlink_ok": true,
+        "pages_checked": [
+          "https://www.womensbuilding.org/our-building/rent-a-space"
+        ],
+        "sidecar_venue_id": "the-women-s-building-audre-lorde-room",
+        "source_page": "https://www.womensbuilding.org/our-building/rent-a-space",
+        "thumb_note": "not declared by the page; Webflow full-size original; HEAD 200 image/jpeg 183 KB",
+        "url": "https://cdn.prod.website-files.com/6736312b16f98ac1069dc2a6/67f69b1026bf8fc905af3396_Audre-Lorde-01.jpg",
+        "venue_index": 4,
+        "venue_note": "Alt text is the venue's own, verbatim. Room-layout diagrams on the same page were excluded.",
+        "verified": {
+          "bytes": 187501,
+          "content_type": "image/jpeg",
+          "status": 200
+        }
+      },
+      {
+        "alt": "Audre Lorde Room set up in a lecture-style format with rows of chairs and a presentation table.",
+        "alt_basis": "venue alt text",
+        "hotlink_ok": true,
+        "pages_checked": [
+          "https://www.womensbuilding.org/our-building/rent-a-space"
+        ],
+        "sidecar_venue_id": "the-women-s-building-audre-lorde-room",
+        "source_page": "https://www.womensbuilding.org/our-building/rent-a-space",
+        "thumb_note": "not declared by the page; Webflow full-size original; HEAD 200 image/jpeg 184 KB",
+        "url": "https://cdn.prod.website-files.com/6736312b16f98ac1069dc2a6/67f69b104cbe2eb818393650_Audre-Lorde-02.jpg",
+        "venue_index": 4,
+        "venue_note": "Alt text is the venue's own, verbatim. Room-layout diagrams on the same page were excluded.",
+        "verified": {
+          "bytes": 189275,
+          "content_type": "image/jpeg",
+          "status": 200
+        }
+      },
+      {
+        "alt": "Side view of Audre Lorde Room arranged in lecture-style with chairs facing a presentation table.",
+        "alt_basis": "venue alt text",
+        "hotlink_ok": true,
+        "pages_checked": [
+          "https://www.womensbuilding.org/our-building/rent-a-space"
+        ],
+        "sidecar_venue_id": "the-women-s-building-audre-lorde-room",
+        "source_page": "https://www.womensbuilding.org/our-building/rent-a-space",
+        "thumb_note": "not declared by the page; Webflow full-size original; HEAD 200 image/jpeg 185 KB",
+        "url": "https://cdn.prod.website-files.com/6736312b16f98ac1069dc2a6/67f69b10e8e6fce565bca55b_Audre-Lorde-03.jpg",
+        "venue_index": 4,
+        "venue_note": "Alt text is the venue's own, verbatim. Room-layout diagrams on the same page were excluded.",
+        "verified": {
+          "bytes": 189641,
+          "content_type": "image/jpeg",
+          "status": 200
+        }
+      }
+    ],
+    "sf-b3be38e30978": [
+      {
+        "alt": "SOMArts event rental space",
+        "alt_basis": "venue filename + \"Event Rentals\" section",
+        "hotlink_ok": true,
+        "pages_checked": [
+          "https://somarts.org/rentals/",
+          "https://somarts.org/",
+          "http://web.archive.org/web/20260301000331/https://somarts.org/rentals/"
+        ],
+        "sidecar_venue_id": "somarts-cultural-center-main-event-space-essentials-package",
+        "source_page": "https://somarts.org/rentals/",
+        "thumb_note": "2560x1707; HEAD 200 image/jpeg 251 KB",
+        "url": "https://somarts.org/wp-content/uploads/2025/09/Event-Rental-Space-scaled.jpg",
+        "venue_index": 0,
+        "venue_note": "The host rate-limited the first attempts (HTTP 429 for page and every image) and answered normally later in the run. Photos are the event space, stage, dance studio and outdoor space published on the rentals page; interior shots rank first. The floorplan diagram was excluded.",
+        "verified": {
+          "bytes": 257894,
+          "content_type": "image/jpeg",
+          "status": 200
+        }
+      },
+      {
+        "alt": "Stage view in the SOMArts event space",
+        "alt_basis": "venue filename + \"EVENT SPACE\" section",
+        "hotlink_ok": true,
+        "pages_checked": [
+          "https://somarts.org/rentals/",
+          "https://somarts.org/",
+          "http://web.archive.org/web/20260301000331/https://somarts.org/rentals/"
+        ],
+        "sidecar_venue_id": "somarts-cultural-center-main-event-space-essentials-package",
+        "source_page": "https://somarts.org/rentals/",
+        "thumb_note": "WordPress -scaled original (page renders a 1024x848 copy); HEAD 200 image/jpeg 428 KB",
+        "url": "https://somarts.org/wp-content/uploads/2025/09/Stage-View-scaled-e1758577526641.jpg",
+        "venue_index": 0,
+        "venue_note": "The host rate-limited the first attempts (HTTP 429 for page and every image) and answered normally later in the run. Photos are the event space, stage, dance studio and outdoor space published on the rentals page; interior shots rank first. The floorplan diagram was excluded.",
+        "verified": {
+          "bytes": 438839,
+          "content_type": "image/jpeg",
+          "status": 200
+        }
+      },
+      {
+        "alt": "Event rental dance studio empty with murals by artist Carlos Loarca",
+        "alt_basis": "venue alt text",
+        "hotlink_ok": true,
+        "pages_checked": [
+          "https://somarts.org/rentals/",
+          "https://somarts.org/",
+          "http://web.archive.org/web/20260301000331/https://somarts.org/rentals/"
+        ],
+        "sidecar_venue_id": "somarts-cultural-center-main-event-space-essentials-package",
+        "source_page": "https://somarts.org/rentals/",
+        "thumb_note": "1200x800; HEAD 200 image/jpeg 94 KB",
+        "url": "https://somarts.org/wp-content/uploads/2024/03/Dance_Studio_1-1200x800-1.jpeg",
+        "venue_index": 0,
+        "venue_note": "The host rate-limited the first attempts (HTTP 429 for page and every image) and answered normally later in the run. Photos are the event space, stage, dance studio and outdoor space published on the rentals page; interior shots rank first. The floorplan diagram was excluded.",
+        "verified": {
+          "bytes": 96389,
+          "content_type": "image/jpeg",
+          "status": 200
+        }
+      },
+      {
+        "alt": "Rene Yanez Legacy Fund Happy Hour in the SOMArts outdoor space",
+        "alt_basis": "venue caption + \"OUTDOOR SPACE\" section",
+        "hotlink_ok": true,
+        "pages_checked": [
+          "https://somarts.org/rentals/",
+          "https://somarts.org/",
+          "http://web.archive.org/web/20260301000331/https://somarts.org/rentals/"
+        ],
+        "sidecar_venue_id": "somarts-cultural-center-main-event-space-essentials-package",
+        "source_page": "https://somarts.org/rentals/",
+        "thumb_note": "1024x683; HEAD 200 image/jpeg 134 KB",
+        "url": "https://somarts.org/wp-content/uploads/2025/12/Rene-Yanez-Legacy-Fund-Happy-Hour_photo-by-Claire-S-Burke-1024x683.jpg",
+        "venue_index": 0,
+        "venue_note": "The host rate-limited the first attempts (HTTP 429 for page and every image) and answered normally later in the run. Photos are the event space, stage, dance studio and outdoor space published on the rentals page; interior shots rank first. The floorplan diagram was excluded.",
+        "verified": {
+          "bytes": 137427,
+          "content_type": "image/jpeg",
+          "status": 200
+        }
+      }
+    ],
+    "sf-eb6f1d5fd648": [],
+    "sf-f76ff9ceb2eb": [
+      {
+        "alt": "Four One Nine - Middle Gallery",
+        "alt_basis": "venue caption",
+        "hotlink_ok": true,
+        "pages_checked": [
+          "https://www.fouronenine.com/",
+          "https://www.fouronenine.com/inquire",
+          "https://fouronenine.com/s/FON_Pricing_2026.pdf"
+        ],
+        "sidecar_venue_id": "four-one-nine-middle-gallery-extended-soma",
+        "source_page": "https://www.fouronenine.com/",
+        "thumb_note": "2000x1500; HEAD 200 image/webp 117 KB",
+        "url": "https://images.squarespace-cdn.com/content/v1/5efcbea420f1047defdbef1d/20e919df-4a9f-4479-967e-d36a3f9ecd9a/fouronenine_2024_01.jpg",
+        "venue_index": 2,
+        "venue_note": "Photo set is limited to the rooms the venue's own 2026 pricing sheet includes in the Middle Gallery Extended package: Middle Gallery, Library, Rooftop. Main Gallery, Open Kitchen and Roll-up Garage photos are published on the same page but were left out because that sheet states 'Restrictions: No main studio or kitchen access' for this package. Captions are the venue's own gallery item titles from the page data. HEAD requests on these four Squarespace URLs return image/jpeg with a Content-Length of 1; a ranged GET returned 206 image/jpeg with real bytes, so reachability was confirmed by range GET.",
+        "verified": {
+          "bytes": 119840,
+          "content_type": "image/webp",
+          "status": 200
+        }
+      },
+      {
+        "alt": "Four One Nine - Library & Wet Bar",
+        "alt_basis": "venue caption",
+        "hotlink_ok": true,
+        "pages_checked": [
+          "https://www.fouronenine.com/",
+          "https://www.fouronenine.com/inquire",
+          "https://fouronenine.com/s/FON_Pricing_2026.pdf"
+        ],
+        "sidecar_venue_id": "four-one-nine-middle-gallery-extended-soma",
+        "source_page": "https://www.fouronenine.com/",
+        "thumb_note": "2000x1500; HEAD 200 image/jpeg; range GET 206 image/jpeg",
+        "url": "https://images.squarespace-cdn.com/content/v1/5efcbea420f1047defdbef1d/b9538da1-31a9-4848-b7d9-458e67a3645d/fouronenine_2024_14.jpg",
+        "venue_index": 2,
+        "venue_note": "Photo set is limited to the rooms the venue's own 2026 pricing sheet includes in the Middle Gallery Extended package: Middle Gallery, Library, Rooftop. Main Gallery, Open Kitchen and Roll-up Garage photos are published on the same page but were left out because that sheet states 'Restrictions: No main studio or kitchen access' for this package. Captions are the venue's own gallery item titles from the page data. HEAD requests on these four Squarespace URLs return image/jpeg with a Content-Length of 1; a ranged GET returned 206 image/jpeg with real bytes, so reachability was confirmed by range GET.",
+        "verified": {
+          "bytes": 2048,
+          "content_type": "image/jpeg",
+          "note": "bytes from a 2048-byte range GET; HEAD reports Content-Length 1",
+          "status": 200
+        }
+      },
+      {
+        "alt": "Four One Nine - Library",
+        "alt_basis": "venue caption",
+        "hotlink_ok": true,
+        "pages_checked": [
+          "https://www.fouronenine.com/",
+          "https://www.fouronenine.com/inquire",
+          "https://fouronenine.com/s/FON_Pricing_2026.pdf"
+        ],
+        "sidecar_venue_id": "four-one-nine-middle-gallery-extended-soma",
+        "source_page": "https://www.fouronenine.com/",
+        "thumb_note": "2000x1532; HEAD 200 image/jpeg; range GET 206 image/jpeg",
+        "url": "https://images.squarespace-cdn.com/content/v1/5efcbea420f1047defdbef1d/e5886d2e-2164-4208-bc43-042291fc38e7/fouronenine_2024_13.jpg",
+        "venue_index": 2,
+        "venue_note": "Photo set is limited to the rooms the venue's own 2026 pricing sheet includes in the Middle Gallery Extended package: Middle Gallery, Library, Rooftop. Main Gallery, Open Kitchen and Roll-up Garage photos are published on the same page but were left out because that sheet states 'Restrictions: No main studio or kitchen access' for this package. Captions are the venue's own gallery item titles from the page data. HEAD requests on these four Squarespace URLs return image/jpeg with a Content-Length of 1; a ranged GET returned 206 image/jpeg with real bytes, so reachability was confirmed by range GET.",
+        "verified": {
+          "bytes": 2048,
+          "content_type": "image/jpeg",
+          "note": "bytes from a 2048-byte range GET; HEAD reports Content-Length 1",
+          "status": 200
+        }
+      },
+      {
+        "alt": "Four One Nine - Rooftop Garden",
+        "alt_basis": "venue caption",
+        "hotlink_ok": true,
+        "pages_checked": [
+          "https://www.fouronenine.com/",
+          "https://www.fouronenine.com/inquire",
+          "https://fouronenine.com/s/FON_Pricing_2026.pdf"
+        ],
+        "sidecar_venue_id": "four-one-nine-middle-gallery-extended-soma",
+        "source_page": "https://www.fouronenine.com/",
+        "thumb_note": "2000x1476; HEAD 200 image/jpeg; range GET 206 image/jpeg",
+        "url": "https://images.squarespace-cdn.com/content/v1/5efcbea420f1047defdbef1d/93aba8fc-3062-44f1-b338-d5aaffc20886/fouronenine_2024_10.jpg",
+        "venue_index": 2,
+        "venue_note": "Photo set is limited to the rooms the venue's own 2026 pricing sheet includes in the Middle Gallery Extended package: Middle Gallery, Library, Rooftop. Main Gallery, Open Kitchen and Roll-up Garage photos are published on the same page but were left out because that sheet states 'Restrictions: No main studio or kitchen access' for this package. Captions are the venue's own gallery item titles from the page data. HEAD requests on these four Squarespace URLs return image/jpeg with a Content-Length of 1; a ranged GET returned 206 image/jpeg with real bytes, so reachability was confirmed by range GET.",
+        "verified": {
+          "bytes": 2048,
+          "content_type": "image/jpeg",
+          "note": "bytes from a 2048-byte range GET; HEAD reports Content-Length 1",
+          "status": 200
+        }
+      },
+      {
+        "alt": "Four One Nine - Roof Deck (with covering)",
+        "alt_basis": "venue caption",
+        "hotlink_ok": true,
+        "pages_checked": [
+          "https://www.fouronenine.com/",
+          "https://www.fouronenine.com/inquire",
+          "https://fouronenine.com/s/FON_Pricing_2026.pdf"
+        ],
+        "sidecar_venue_id": "four-one-nine-middle-gallery-extended-soma",
+        "source_page": "https://www.fouronenine.com/",
+        "thumb_note": "2000x1507; HEAD 200 image/jpeg; range GET 206 image/jpeg",
+        "url": "https://images.squarespace-cdn.com/content/v1/5efcbea420f1047defdbef1d/ddd88065-02dd-48d6-85a3-e3ab597ca019/fouronenine_2024_09.jpg",
+        "venue_index": 2,
+        "venue_note": "Photo set is limited to the rooms the venue's own 2026 pricing sheet includes in the Middle Gallery Extended package: Middle Gallery, Library, Rooftop. Main Gallery, Open Kitchen and Roll-up Garage photos are published on the same page but were left out because that sheet states 'Restrictions: No main studio or kitchen access' for this package. Captions are the venue's own gallery item titles from the page data. HEAD requests on these four Squarespace URLs return image/jpeg with a Content-Length of 1; a ranged GET returned 206 image/jpeg with real bytes, so reachability was confirmed by range GET.",
+        "verified": {
+          "bytes": 2048,
+          "content_type": "image/jpeg",
+          "note": "bytes from a 2048-byte range GET; HEAD reports Content-Length 1",
+          "status": 200
+        }
+      }
+    ]
+  },
+  "verification_method": "Every listed URL was checked with a plain request: no cookies, no referer, browser user agent only. hotlink_ok is true only for a 2xx status with an image/* content type. Where a HEAD response was unusable (Squarespace CDN reports Content-Length 1), a 2048-byte range GET was used instead. Nothing that failed was listed as usable."
+}

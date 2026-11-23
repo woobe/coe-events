@@ -1,0 +1,607 @@
+{
+  "kind": "food_drink",
+  "city_slug": "san-francisco",
+  "generated_at": "2026-11-22T12:45:00Z",
+  "verified_at": "2026-11-22",
+  "source_store": "/home/joe/repo_dev/coe-events/research/san-francisco/city/city.json",
+  "source_store_sha256": "aaba5b38ea5962834d47a1b42aa315848592c8363125b0df51010daef1c36605",
+  "semantics": {
+    "catering_provided": "Does the venue provide catering (in-house catering available). yes = the venue states it provides catering in-house; no = the venue's own published text states that food is renter-supplied or must come from an outside caterer, with the arrangement quoted in conditions; unknown = the checked pages do not state who supplies the food. Silence is never no.",
+    "delivery_allowed": "Does the venue allow food delivery (Uber Eats, DoorDash, outside food). yes = outside food is permitted or contemplated on site; no = outside food is explicitly prohibited; unknown = the page does not address it.",
+    "beer_allowed": "Does the venue allow beer / alcohol. yes = alcohol may be served (with any stated conditions); no = alcohol is prohibited; unknown = the page does not address it."
+  },
+  "notes": [
+    "A page that is silent on a fact is recorded unknown with a verification_question, never no.",
+    "source_locator markers: plain text is a verbatim quote from source_url; [silent] means the cited pages were read and say nothing; [not stated] means the page discusses the topic but never states the answer.",
+    "conditions carry every caveat (surcharges, certifications, room restrictions) and name the page when a quoted sentence lives somewhere other than source_url.",
+    "Each quote was matched against the page text fetched on 2026-11-22 (whitespace-normalised); the Four One Nine quotes come from the PDF text layer.",
+    "Per-field confidence: high = the page directly supports the recorded value (including a documented silence); medium = a related rule or a third-party/archived source.",
+    "Third-party listing only for Common Space (Peerspace, read from the 2026-04-06 archive snapshot because the live page was Cloudflare-blocked).",
+    "Fact keys are catering_provided / delivery_allowed / beer_allowed, matching MARK_FIELDS in plan-event/scripts/city_rank.py. The store's pre-existing scored field fields.catering (the catering_policy enum) is never written by this bundle.",
+    "Revision 2: Brava Lobby, Brava Studio, RWOH and Four One Nine moved from catering no to unknown because their pages never state who supplies the food; the quoted sentences stay in conditions.",
+    "The card's verify_command line 1 reads v['catering']; that key was renamed to catering_provided under review, so the equivalent assertion is sorted({v['catering_provided']['value'] ...})."
+  ],
+  "schema_version": "city-updates/1",
+  "revision": 2,
+  "venues": {
+    "sf-03266107e45f": {
+      "name": "CounterPulse - Main Stage",
+      "checked_pages": [
+        "https://counterpulse.org/rentals/",
+        "https://counterpulse.org/produce-at-counterpulse/",
+        "https://counterpulse.org/communityguidelines/",
+        "https://counterpulse.org/technical-specifications/"
+      ],
+      "catering_provided": {
+        "value": "unknown",
+        "verified_at": "2026-11-22",
+        "source_url": "https://counterpulse.org/rentals/",
+        "source_locator": "[silent] No catering statement on the rentals page, the \"How to Produce at CounterPulse\" page, the Community Guidelines page or the Technical Specifications page (all fetched 2026-11-22).",
+        "conditions": null,
+        "verification_question": "Does CounterPulse provide in-house catering for private events, or must the renter arrange it?",
+        "confidence": "high"
+      },
+      "delivery_allowed": {
+        "value": "unknown",
+        "verified_at": "2026-11-22",
+        "source_url": "https://counterpulse.org/rentals/",
+        "source_locator": "[silent] No statement about outside food, drop-off or courier delivery (Uber Eats / DoorDash) on any of the four CounterPulse pages checked.",
+        "conditions": null,
+        "verification_question": "May we bring in outside food or have food delivered (Uber Eats / DoorDash) for a private event?",
+        "confidence": "high"
+      },
+      "beer_allowed": {
+        "value": "unknown",
+        "verified_at": "2026-11-22",
+        "source_url": "https://counterpulse.org/rentals/",
+        "source_locator": "[silent] No statement about alcohol, bar service or liquor licensing on any of the four CounterPulse pages checked.",
+        "conditions": null,
+        "verification_question": "Is alcohol permitted at private events, and do you require a certified server or a permit?",
+        "confidence": "high"
+      },
+      "confidence": "high",
+      "note": "All four own-site pages silent on food and drink; recorded unknown, not no."
+    },
+    "sf-277ae6031e3f": {
+      "name": "Brava Theater Center - Lobby",
+      "checked_pages": [
+        "https://www.brava.org/rentals",
+        "https://www.brava.org/policies"
+      ],
+      "catering_provided": {
+        "value": "unknown",
+        "verified_at": "2026-11-22",
+        "source_url": "https://www.brava.org/policies",
+        "source_locator": "[not stated] The Catering and Alcohol section governs where renter catering may take place and who clears the refuse; it never says whether Brava itself provides in-house catering.",
+        "conditions": "Policy text: \"Catering will take place only in approved locations in the theater.\" and \"Catering personnel will clean-up after the event and remove all refuse, generated by the event, from Brava premises.\" The same page adds \"No food will be allowed in the main stage area, however drinks are allowed.\"",
+        "verification_question": "Does Brava provide in-house catering for Lobby rentals, or is all catering arranged and staffed by the renter?",
+        "confidence": "high"
+      },
+      "delivery_allowed": {
+        "value": "yes",
+        "verified_at": "2026-11-22",
+        "source_url": "https://www.brava.org/policies",
+        "source_locator": "Catering will take place only in approved locations in the theater.",
+        "conditions": "Outside catering permitted in approved locations only; the policy adds \"No food will be allowed in the main stage area, however drinks are allowed.\"",
+        "verification_question": null,
+        "confidence": "medium"
+      },
+      "beer_allowed": {
+        "value": "yes",
+        "verified_at": "2026-11-22",
+        "source_url": "https://www.brava.org/policies",
+        "source_locator": "Permission to serve or sell alcohol is granted at the discretion of Brava.",
+        "conditions": "Permission is at Brava's discretion; the licensee is responsible for preventing under-age drinking.",
+        "verification_question": null,
+        "confidence": "high"
+      },
+      "confidence": "medium",
+      "note": "Brava has one site-wide rentals policy for all three rooms; the main-stage no-food rule is quoted verbatim and left in conditions rather than applied to the Lobby."
+    },
+    "sf-2a8505a53998": {
+      "name": "Brava Theater Center - Studio",
+      "checked_pages": [
+        "https://www.brava.org/studio",
+        "https://www.brava.org/policies"
+      ],
+      "catering_provided": {
+        "value": "unknown",
+        "verified_at": "2026-11-22",
+        "source_url": "https://www.brava.org/policies",
+        "source_locator": "[not stated] The Catering and Alcohol section governs where renter catering may take place and who clears the refuse; it never says whether Brava itself provides in-house catering.",
+        "conditions": "Policy text: \"Catering will take place only in approved locations in the theater.\" and \"Catering personnel will clean-up after the event and remove all refuse, generated by the event, from Brava premises.\" The same page adds \"No food will be allowed in the main stage area, however drinks are allowed.\"",
+        "verification_question": "Does Brava provide in-house catering for Studio rentals, or is all catering arranged and staffed by the renter?",
+        "confidence": "high"
+      },
+      "delivery_allowed": {
+        "value": "yes",
+        "verified_at": "2026-11-22",
+        "source_url": "https://www.brava.org/policies",
+        "source_locator": "Catering will take place only in approved locations in the theater.",
+        "conditions": "Catering only in approved locations; No food will be allowed in the main stage area, however drinks are allowed.",
+        "verification_question": null,
+        "confidence": "medium"
+      },
+      "beer_allowed": {
+        "value": "yes",
+        "verified_at": "2026-11-22",
+        "source_url": "https://www.brava.org/policies",
+        "source_locator": "Permission to serve or sell alcohol is granted at the discretion of Brava.",
+        "conditions": "Permission is at Brava's discretion; the licensee is responsible for preventing under-age drinking.",
+        "verification_question": null,
+        "confidence": "high"
+      },
+      "confidence": "medium",
+      "note": "Same site-wide Brava policy page as the Lobby record."
+    },
+    "sf-307c9dd57430": {
+      "name": "Alliance Francaise de San Francisco - Theater",
+      "checked_pages": [
+        "https://www.afsf.com/about-afsf/space-rental/theater-rental/",
+        "https://www.afsf.com/about-afsf/policies/",
+        "https://www.afsf.com/about-afsf/faq-general/"
+      ],
+      "catering_provided": {
+        "value": "no",
+        "verified_at": "2026-11-22",
+        "source_url": "https://www.afsf.com/about-afsf/space-rental/theater-rental/",
+        "source_locator": "Catering & Beverages surcharge (renter-provided): a flat surcharge applies when the renter plans to serve food and/or beverages on the premises, to cover additional cleaning and post-event reset.",
+        "conditions": "Food and drink are explicitly renter-provided; surcharge +$150 (Independent Artists / Nonprofits) or +$200 (Private Events); \"Please note that the event host will act solely as the designated alcohol server and is not available to provide general catering or food service.\"",
+        "verification_question": null,
+        "confidence": "high"
+      },
+      "delivery_allowed": {
+        "value": "yes",
+        "verified_at": "2026-11-22",
+        "source_url": "https://www.afsf.com/about-afsf/space-rental/theater-rental/",
+        "source_locator": "Catering & Beverages surcharge (renter-provided): a flat surcharge applies when the renter plans to serve food and/or beverages on the premises, to cover additional cleaning and post-event reset.",
+        "conditions": "Renter brings food and beverages; the flat surcharge covers extra cleaning and reset; AFSF provides no catering staff.",
+        "verification_question": null,
+        "confidence": "high"
+      },
+      "beer_allowed": {
+        "value": "yes",
+        "verified_at": "2026-11-22",
+        "source_url": "https://www.afsf.com/about-afsf/space-rental/theater-rental/",
+        "source_locator": "Renters who do not have a certified server may engage the AFSF event host to serve alcohol for a flat additional fee of $125.",
+        "conditions": "Every server must hold California Responsible Beverage Service certification, with proof submitted before the event; \"No alcohol may be served at the venue without prior verification of certification\"; the event host can act as designated server for +$125; \"Alcohol service and AFSF event host are not available\" for the Saturday 1-5pm / Sunday / holiday schedule.",
+        "verification_question": null,
+        "confidence": "high"
+      },
+      "confidence": "high",
+      "note": "The most explicit food-and-drink policy in the set."
+    },
+    "sf-67623ac7c2a8": {
+      "name": "Ruth Williams Opera House (Bayview Opera House) - Main Theater",
+      "checked_pages": [
+        "https://rwoh.org/rentals/",
+        "https://rwoh.org/faq/"
+      ],
+      "catering_provided": {
+        "value": "unknown",
+        "verified_at": "2026-11-22",
+        "source_url": "https://rwoh.org/rentals/",
+        "source_locator": "[silent] The rentals page never mentions catering or a caterer; the only food-related lines are the kitchen rate and the food-preparation-area note.",
+        "conditions": "Rate card: \"Kitchen: $450.00\" with the line \"Full Prep Kitchen, no cooking allowed\"; terms add \"The use of the food preparation area is subject to RWOH's discretion.\" and \"All staffing occurs in-house. We do not staff outside vendors.\"",
+        "verification_question": "Does RWOH provide in-house catering for Main Theater rentals, or is all food brought in by the renter for the prep kitchen?",
+        "confidence": "high"
+      },
+      "delivery_allowed": {
+        "value": "yes",
+        "verified_at": "2026-11-22",
+        "source_url": "https://rwoh.org/rentals/",
+        "source_locator": "Full Prep Kitchen, no cooking allowed",
+        "conditions": "Prep kitchen rented at $450.00; no cooking allowed; food-prep area use at RWOH's discretion; open flames prohibited; renters handle waste disposal; \"All staffing occurs in-house. We do not staff outside vendors.\"",
+        "verification_question": null,
+        "confidence": "medium"
+      },
+      "beer_allowed": {
+        "value": "yes",
+        "verified_at": "2026-11-22",
+        "source_url": "https://rwoh.org/rentals/",
+        "source_locator": "Alcohol Service Fee (Beer, Wine, Cocktails)",
+        "conditions": "Fee varies by package; in-house bar; bartender $40.00/hr; the fee line names beer, wine and cocktails.",
+        "verification_question": null,
+        "confidence": "high"
+      },
+      "confidence": "medium",
+      "note": "Policy read from the published rate card; the card rents a prep kitchen but never says who supplies the food, so catering is unknown."
+    },
+    "sf-70dcce8a309f": {
+      "name": "Gray Area - Lobby (Grand Theater)",
+      "checked_pages": [
+        "https://grayarea.org/venue-rental/",
+        "https://grayarea.org/faq/"
+      ],
+      "catering_provided": {
+        "value": "unknown",
+        "verified_at": "2026-11-22",
+        "source_url": "https://grayarea.org/venue-rental/",
+        "source_locator": "[silent] No catering statement on the venue rental page (space descriptions and add-ons) or in the FAQ.",
+        "conditions": "The FAQ (https://grayarea.org/faq/) lists \"Outside food and drinks\" among prohibited items, while the rental page markets \"Benefit Events & Seated Dinners\"; nothing states who supplies the food.",
+        "verification_question": "Outside food and drinks are prohibited in the venue - does Gray Area provide in-house catering, or must food be arranged through an approved caterer?",
+        "confidence": "high"
+      },
+      "delivery_allowed": {
+        "value": "no",
+        "verified_at": "2026-11-22",
+        "source_url": "https://grayarea.org/faq/",
+        "source_locator": "Outside food and drinks -",
+        "conditions": "Listed in the answer to \"What items are prohibited in the venue?\" alongside weapons, professional recording equipment, pets and permanent markers.",
+        "verification_question": null,
+        "confidence": "high"
+      },
+      "beer_allowed": {
+        "value": "yes",
+        "verified_at": "2026-11-22",
+        "source_url": "https://grayarea.org/venue-rental/",
+        "source_locator": "We offer modern sound, light, and visual capabilities, fiber internet, and full bar packages.",
+        "conditions": "\"Full bar packages\" offered; the Half Theater Rental is described as \"Including the main stage, lobby, and bar\".",
+        "verification_question": null,
+        "confidence": "high"
+      },
+      "confidence": "high",
+      "note": "Outside food is explicitly prohibited; who supplies food is not stated."
+    },
+    "sf-7196ba5d7e75": {
+      "name": "The Marsh San Francisco - Mainstage",
+      "checked_pages": [
+        "https://themarsh.org/rental-pricing/",
+        "https://themarsh.org/faq/"
+      ],
+      "catering_provided": {
+        "value": "unknown",
+        "verified_at": "2026-11-22",
+        "source_url": "https://themarsh.org/rental-pricing/",
+        "source_locator": "[silent] The San Francisco rental-pricing page lists spaces, staffing, A/V, insurance and deposit but no food, catering or bar terms; the \"Facility Information\" page describes the Berkeley venue, not 1062 Valencia Street.",
+        "conditions": null,
+        "verification_question": "Does The Marsh provide catering for San Francisco Mainstage rentals, or may we bring in an outside caterer?",
+        "confidence": "high"
+      },
+      "delivery_allowed": {
+        "value": "unknown",
+        "verified_at": "2026-11-22",
+        "source_url": "https://themarsh.org/rental-pricing/",
+        "source_locator": "[silent] No statement about outside food, drop-off or courier delivery (Uber Eats / DoorDash) on the San Francisco rental-pricing or FAQ page.",
+        "conditions": null,
+        "verification_question": "May we bring in outside food or have food delivered (Uber Eats / DoorDash) to the San Francisco Mainstage?",
+        "confidence": "high"
+      },
+      "beer_allowed": {
+        "value": "yes",
+        "verified_at": "2026-11-22",
+        "source_url": "https://themarsh.org/rental-pricing/",
+        "source_locator": "Security Personnel is REQUIRED for events where either over 100 people are present OR alcohol is served.",
+        "conditions": "Security personnel at $40/hr is mandatory whenever alcohol is served (or over 100 people are present).",
+        "verification_question": null,
+        "confidence": "medium"
+      },
+      "confidence": "high",
+      "note": "Catering and delivery unstated for the SF venue; alcohol permission is implied by the mandatory-security rule."
+    },
+    "sf-a9e2573503df": {
+      "name": "The Marsh San Francisco - Studio",
+      "checked_pages": [
+        "https://themarsh.org/rental-pricing/",
+        "https://themarsh.org/faq/"
+      ],
+      "catering_provided": {
+        "value": "unknown",
+        "verified_at": "2026-11-22",
+        "source_url": "https://themarsh.org/rental-pricing/",
+        "source_locator": "[silent] The San Francisco rental-pricing page lists spaces, staffing, A/V, insurance and deposit but no food, catering or bar terms; the \"Facility Information\" page describes the Berkeley venue, not 1062 Valencia Street.",
+        "conditions": null,
+        "verification_question": "Does The Marsh provide catering for San Francisco Studio rentals, or may we bring in an outside caterer?",
+        "confidence": "high"
+      },
+      "delivery_allowed": {
+        "value": "unknown",
+        "verified_at": "2026-11-22",
+        "source_url": "https://themarsh.org/rental-pricing/",
+        "source_locator": "[silent] No statement about outside food, drop-off or courier delivery (Uber Eats / DoorDash) on the San Francisco rental-pricing or FAQ page.",
+        "conditions": null,
+        "verification_question": "May we bring in outside food or have food delivered (Uber Eats / DoorDash) to the San Francisco Studio?",
+        "confidence": "high"
+      },
+      "beer_allowed": {
+        "value": "yes",
+        "verified_at": "2026-11-22",
+        "source_url": "https://themarsh.org/rental-pricing/",
+        "source_locator": "Security Personnel is REQUIRED for events where either over 100 people are present OR alcohol is served.",
+        "conditions": "Security personnel at $40/hr is mandatory whenever alcohol is served (or over 100 people are present).",
+        "verification_question": null,
+        "confidence": "medium"
+      },
+      "confidence": "high",
+      "note": "Studio shares the SF rental-pricing page with the Mainstage."
+    },
+    "sf-791be009d2a8": {
+      "name": "Z Space - Steindler Stage",
+      "checked_pages": [
+        "https://zspace.org/rent",
+        "https://zspace.org/mainstage",
+        "https://zspace.org/z-lobby"
+      ],
+      "catering_provided": {
+        "value": "no",
+        "verified_at": "2026-11-22",
+        "source_url": "https://zspace.org/z-lobby",
+        "source_locator": "Use of adjacent conference room and/or kitchenette for staging catering (kitchenette has sink and fridge only, no cooking facilities)",
+        "conditions": "Catering is renter-sourced and staged in the lobby kitchenette; the Steindler Stage page itself states no catering terms, and the Rentals Overview (https://zspace.org/rent) says \"The Z Lobby space (see right) is included in a rental of the Steindler Stage\"; \"Sourcing Catering\" is listed as a premium add-on.",
+        "verification_question": null,
+        "confidence": "medium"
+      },
+      "delivery_allowed": {
+        "value": "yes",
+        "verified_at": "2026-11-22",
+        "source_url": "https://zspace.org/z-lobby",
+        "source_locator": "Use of adjacent conference room and/or kitchenette for staging catering (kitchenette has sink and fridge only, no cooking facilities)",
+        "conditions": "Food is brought in and staged; the kitchenette has a sink and fridge only, with no cooking facilities; the lobby is included with the Steindler Stage rental.",
+        "verification_question": null,
+        "confidence": "medium"
+      },
+      "beer_allowed": {
+        "value": "yes",
+        "verified_at": "2026-11-22",
+        "source_url": "https://zspace.org/z-lobby",
+        "source_locator": "It has a full bar available for all events",
+        "conditions": "The bar is in the Z Lobby, which is included with the Steindler Stage; full bar tiers \"Cash Bar, Running a Tab, and Buyout options available\".",
+        "verification_question": null,
+        "confidence": "medium"
+      },
+      "confidence": "medium",
+      "note": "Stage page is silent on food; the lobby page (included with the stage rental) carries the catering and bar terms."
+    },
+    "sf-9ca5a5071dd1": {
+      "name": "Z Space - Z Lobby",
+      "checked_pages": [
+        "https://zspace.org/rent",
+        "https://zspace.org/z-lobby"
+      ],
+      "catering_provided": {
+        "value": "no",
+        "verified_at": "2026-11-22",
+        "source_url": "https://zspace.org/z-lobby",
+        "source_locator": "Use of adjacent conference room and/or kitchenette for staging catering (kitchenette has sink and fridge only, no cooking facilities)",
+        "conditions": "Catering is renter-sourced and staged in the kitchenette (sink and fridge only, no cooking facilities); \"Sourcing Catering\" is offered as a premium add-on, which is a sourcing service, not in-house food.",
+        "verification_question": null,
+        "confidence": "high"
+      },
+      "delivery_allowed": {
+        "value": "yes",
+        "verified_at": "2026-11-22",
+        "source_url": "https://zspace.org/z-lobby",
+        "source_locator": "Use of adjacent conference room and/or kitchenette for staging catering (kitchenette has sink and fridge only, no cooking facilities)",
+        "conditions": "\"Catered affairs\" is listed among the lobby's uses; catering is staged in the kitchenette; no cooking facilities on site.",
+        "verification_question": null,
+        "confidence": "high"
+      },
+      "beer_allowed": {
+        "value": "yes",
+        "verified_at": "2026-11-22",
+        "source_url": "https://zspace.org/z-lobby",
+        "source_locator": "It has a full bar available for all events",
+        "conditions": "\"Full Bar (Cash Bar, Running a Tab, and Buyout options available)\" is listed as a premium; the lobby description states it \"has a full bar available for all events\".",
+        "verification_question": null,
+        "confidence": "high"
+      },
+      "confidence": "high",
+      "note": "Z Lobby page is explicit about catered affairs, the staging kitchenette and the bar."
+    },
+    "sf-861f3552141b": {
+      "name": "The Lab - Main Auditorium (Redstone Building)",
+      "checked_pages": [
+        "https://www.thelab.org/rental",
+        "https://www.thelab.org/faq",
+        "https://www.thelab.org/info"
+      ],
+      "catering_provided": {
+        "value": "unknown",
+        "verified_at": "2026-11-22",
+        "source_url": "https://www.thelab.org/rental",
+        "source_locator": "[silent] The rental page, FAQ and Info page list capacity, facilities and technical specs but no catering terms.",
+        "conditions": null,
+        "verification_question": "Does The Lab provide catering for private events, or may we bring in an outside caterer?",
+        "confidence": "high"
+      },
+      "delivery_allowed": {
+        "value": "unknown",
+        "verified_at": "2026-11-22",
+        "source_url": "https://www.thelab.org/rental",
+        "source_locator": "[silent] No statement about outside food, drop-off or courier delivery (Uber Eats / DoorDash) on the rental, FAQ or Info page.",
+        "conditions": null,
+        "verification_question": "May we bring in outside food or have food delivered (Uber Eats / DoorDash) for a private event?",
+        "confidence": "high"
+      },
+      "beer_allowed": {
+        "value": "yes",
+        "verified_at": "2026-11-22",
+        "source_url": "https://www.thelab.org/rental",
+        "source_locator": "Bar, dressing room, WiFi, common area restrooms",
+        "conditions": "\"Bar\" appears under Facilities / Venue Specs; no published terms on service, licensing or renter-supplied alcohol.",
+        "verification_question": null,
+        "confidence": "medium"
+      },
+      "confidence": "medium",
+      "note": "Bar is listed as a facility only; service terms unpublished."
+    },
+    "sf-aa633c4fb565": {
+      "name": "Root Division - Front & Rear Galleries",
+      "checked_pages": [
+        "https://rootdivision.org/about/the-space/venue-rental"
+      ],
+      "catering_provided": {
+        "value": "no",
+        "verified_at": "2026-11-22",
+        "source_url": "https://rootdivision.org/about/the-space/venue-rental",
+        "source_locator": "Absolutely! We have an open vendor policy, allowing you to bring in the caterer of your choice.",
+        "conditions": "Open vendor policy; a preferred-vendor list is offered; \"Events with alcohol sales must have a licensed caterer.\"",
+        "verification_question": null,
+        "confidence": "high"
+      },
+      "delivery_allowed": {
+        "value": "yes",
+        "verified_at": "2026-11-22",
+        "source_url": "https://rootdivision.org/about/the-space/venue-rental",
+        "source_locator": "For events bringing in food and beverage, a flat $250 cleaning fee applies.",
+        "conditions": "$250 cleaning fee for events bringing food and beverage; loading out by 11:59 PM; a kitchenette appears only in the Front & Rear Galleries plus Classroom option.",
+        "verification_question": null,
+        "confidence": "high"
+      },
+      "beer_allowed": {
+        "value": "yes",
+        "verified_at": "2026-11-22",
+        "source_url": "https://rootdivision.org/about/the-space/venue-rental",
+        "source_locator": "Yes. Hosted alcohol (free to guests) is permitted for private events.",
+        "conditions": "Hosted (free) alcohol permitted for private events; selling alcohol or a ticketed event with alcohol requires a licensed caterer with an ABC permit or a temporary daily permit.",
+        "verification_question": null,
+        "confidence": "high"
+      },
+      "confidence": "high",
+      "note": "Explicit FAQ answers for both catering and alcohol."
+    },
+    "sf-b3b27dca9c85": {
+      "name": "The Women's Building - Audre Lorde Room",
+      "checked_pages": [
+        "https://www.womensbuilding.org/our-building/rent-a-space",
+        "https://www.womensbuilding.org/frequently-asked-questions"
+      ],
+      "catering_provided": {
+        "value": "unknown",
+        "verified_at": "2026-11-22",
+        "source_url": "https://www.womensbuilding.org/our-building/rent-a-space",
+        "source_locator": "[silent] The rental page and site FAQ list equipment, services and insurance requirements but no catering terms.",
+        "conditions": null,
+        "verification_question": "Does The Women's Building provide catering for the Audre Lorde Room, or may we bring in an outside caterer?",
+        "confidence": "high"
+      },
+      "delivery_allowed": {
+        "value": "unknown",
+        "verified_at": "2026-11-22",
+        "source_url": "https://www.womensbuilding.org/our-building/rent-a-space",
+        "source_locator": "[silent] No statement about outside food, drop-off or courier delivery (Uber Eats / DoorDash) on the rental page or site FAQ.",
+        "conditions": null,
+        "verification_question": "May we bring in outside food or have food delivered (Uber Eats / DoorDash) for an Audre Lorde Room booking?",
+        "confidence": "high"
+      },
+      "beer_allowed": {
+        "value": "yes",
+        "verified_at": "2026-11-22",
+        "source_url": "https://www.womensbuilding.org/our-building/rent-a-space",
+        "source_locator": "You may serve wine and beer. NO hard alcohol is allowed. An ABC License may be required.",
+        "conditions": "Beer and wine only, no hard alcohol; an ABC licence may be required; renters must show general liability insurance naming The Women's Building as additional insured.",
+        "verification_question": null,
+        "confidence": "high"
+      },
+      "confidence": "high",
+      "note": "Alcohol rule is explicit; food is unaddressed."
+    },
+    "sf-b3be38e30978": {
+      "name": "SOMArts Cultural Center - Main Event Space (Essentials Package)",
+      "checked_pages": [
+        "https://somarts.org/rentals/"
+      ],
+      "catering_provided": {
+        "value": "unknown",
+        "verified_at": "2026-11-22",
+        "source_url": "https://somarts.org/rentals/",
+        "source_locator": "[silent] The rentals page and FAQ list staffing, AV, lighting, janitorial and bar management but no catering service.",
+        "conditions": "FAQ: \"no cooking is permitted inside the building\"; kitchenette = sink, refrigerator and freezer for light prep; outdoor cooking needs fire permits.",
+        "verification_question": "Does SOMArts provide in-house catering, or is all food client-supplied?",
+        "confidence": "high"
+      },
+      "delivery_allowed": {
+        "value": "yes",
+        "verified_at": "2026-11-22",
+        "source_url": "https://somarts.org/rentals/",
+        "source_locator": "We will do our best to accommodate pre-event drop-off needs.",
+        "conditions": "Best-effort only (\"We will do our best\"), arranged with the technical director; food drop-off is named in the FAQ; no cooking inside; kitchenette for light prep; outdoor cooking requires fire permits.",
+        "verification_question": null,
+        "confidence": "medium"
+      },
+      "beer_allowed": {
+        "value": "yes",
+        "verified_at": "2026-11-22",
+        "source_url": "https://somarts.org/rentals/",
+        "source_locator": "Bar management (typically doable for events under 200 people)",
+        "conditions": "Bar management is an add-on, typically for events under 200 people; the floor plan shows a \"kitchenette/ bar area\".",
+        "verification_question": null,
+        "confidence": "high"
+      },
+      "confidence": "medium",
+      "note": "Page returned 403 to curl; text taken from a headless-Chromium render of the same URL on 2026-11-22."
+    },
+    "sf-eb6f1d5fd648": {
+      "name": "Common Space - Large Loft in the Marina (Peerspace listing 647656b424653c000e5dacf6)",
+      "checked_pages": [
+        "https://www.peerspace.com/pages/listings/647656b424653c000e5dacf6",
+        "https://web.archive.org/web/20260406005213/https://www.peerspace.com/pages/listings/647656b424653c000e5dacf6"
+      ],
+      "catering_provided": {
+        "value": "no",
+        "verified_at": "2026-11-22",
+        "source_url": "https://web.archive.org/web/20260406005213/https://www.peerspace.com/pages/listings/647656b424653c000e5dacf6",
+        "source_locator": "✅ BYO alcohol and food (including catering) is allowed.",
+        "conditions": "Peerspace listing only - the venue has no separate site. BYO including catering; \"🚫 No cooking allowed\"; kitchenette = water tap, mini fridge, hot water kettle. The live listing returned a Cloudflare challenge on 2026-11-22; quote is from the 2026-04-06 archive snapshot.",
+        "verification_question": null,
+        "confidence": "medium"
+      },
+      "delivery_allowed": {
+        "value": "yes",
+        "verified_at": "2026-11-22",
+        "source_url": "https://web.archive.org/web/20260406005213/https://www.peerspace.com/pages/listings/647656b424653c000e5dacf6",
+        "source_locator": "✅ BYO alcohol and food (including catering) is allowed.",
+        "conditions": "Peerspace listing only (2026-04-06 archive; live page Cloudflare-blocked). BYO food allowed; no cooking; tablecloths required on the conference tables for food/drink events; $250 security deposit.",
+        "verification_question": null,
+        "confidence": "medium"
+      },
+      "beer_allowed": {
+        "value": "yes",
+        "verified_at": "2026-11-22",
+        "source_url": "https://web.archive.org/web/20260406005213/https://www.peerspace.com/pages/listings/647656b424653c000e5dacf6",
+        "source_locator": "✅ BYO alcohol and food (including catering) is allowed.",
+        "conditions": "Peerspace listing only (2026-04-06 archive). BYO alcohol allowed; no smoking or pets; parties approved case-by-case.",
+        "verification_question": null,
+        "confidence": "medium"
+      },
+      "confidence": "medium",
+      "note": "Single source is the venue host's Peerspace listing on a third-party platform. The live page was Cloudflare-blocked on 2026-11-22 and its \"Food and Beverage\" / \"Alcoholic Beverages\" accordions are app-rendered (empty in the archive), so the owner-written \"General Rules\" text is the evidence."
+    },
+    "sf-f76ff9ceb2eb": {
+      "name": "Four One Nine - Middle Gallery Extended (SoMa)",
+      "checked_pages": [
+        "https://fouronenine.com/s/FON_Pricing_2026.pdf",
+        "https://fouronenine.com/inquire"
+      ],
+      "catering_provided": {
+        "value": "unknown",
+        "verified_at": "2026-11-22",
+        "source_url": "https://fouronenine.com/s/FON_Pricing_2026.pdf",
+        "source_locator": "[not stated] The 2026 pricing PDF lists outside caterers and bar services and a waste rule for them, but never says whether Four One Nine provides in-house catering.",
+        "conditions": "\"All caterers and bar service must dispose of their own waste.\" The vendor list names outside caterers and bar services under \"food & Beverage\"; the package table also offers a \"Chef's Kitchen\" and restricts the Middle Gallery Extended package to no main studio or kitchen access.",
+        "verification_question": "Does Four One Nine provide in-house catering (for example through the Chef's Kitchen), or must all food come from an outside caterer?",
+        "confidence": "high"
+      },
+      "delivery_allowed": {
+        "value": "yes",
+        "verified_at": "2026-11-22",
+        "source_url": "https://fouronenine.com/s/FON_Pricing_2026.pdf",
+        "source_locator": "All caterers and bar service must dispose of their own waste.",
+        "conditions": "Outside caterers and bar service operate on site; courier delivery (Uber Eats / DoorDash) is not addressed; waste disposal is the vendor's responsibility.",
+        "verification_question": null,
+        "confidence": "medium"
+      },
+      "beer_allowed": {
+        "value": "yes",
+        "verified_at": "2026-11-22",
+        "source_url": "https://fouronenine.com/s/FON_Pricing_2026.pdf",
+        "source_locator": "All caterers and bar service must dispose of their own waste.",
+        "conditions": "Bar service is contemplated on site (bar vendors listed: Bar Car, Model Grove Bar and Service Staff, On the Rocks, SF Cocktail Club) and \"(2) movable bars/check-in tables\" are included in the rental.",
+        "verification_question": null,
+        "confidence": "medium"
+      },
+      "confidence": "medium",
+      "note": "Pricing PDF only; the venue publishes no house-rules page. The PDF names outside caterers and bar services but never states whether the venue itself caters."
+    }
+  }
+}

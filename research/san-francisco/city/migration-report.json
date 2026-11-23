@@ -1,0 +1,4669 @@
+{
+  "campaign_fields_not_carried": [
+    "date_window",
+    "target_date",
+    "recommendation",
+    "meta.event_date",
+    "workflow_phase",
+    "open_questions"
+  ],
+  "city_slug": "san-francisco",
+  "dispositions": {
+    "copied_verbatim": "whole input row copied unchanged into the store",
+    "dropped": "deliberately not carried, with the plan reason in `plan_reason`",
+    "duplicate_conflict": "the duplicate claim's compared leaves differ from the primary source; both claims are kept and visible",
+    "duplicate_dedup": "identical duplicate claim from a second source; one claim kept (plan §4 dedupe)",
+    "mapped": "input field copied to the named store field",
+    "unmapped": "no rule matched; the migration refuses to write city.json"
+  },
+  "entries": [
+    {
+      "disposition": "mapped",
+      "input": "event_plan",
+      "observed": 1,
+      "path": "budget_usd",
+      "plan_reason": "",
+      "target": "event_context.soft_budget_usd"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 4
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "observed": 4,
+      "path": "calendar_conflicts[].accessed_on",
+      "plan_reason": "",
+      "target": "field verified_at"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 4
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "observed": 4,
+      "path": "calendar_conflicts[].city_slug",
+      "plan_reason": "",
+      "target": "event.city_slug"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 4
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "observed": 4,
+      "path": "calendar_conflicts[].conflict_severity",
+      "plan_reason": "",
+      "target": "fields.conflict_severity"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 4
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "observed": 4,
+      "path": "calendar_conflicts[].end_date",
+      "plan_reason": "",
+      "target": "fields.date_range.value.end"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 4
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "observed": 4,
+      "path": "calendar_conflicts[].event_name",
+      "plan_reason": "",
+      "target": "event.name"
+    },
+    {
+      "claims": {
+        "different": 4,
+        "identical": 0
+      },
+      "disposition": "duplicate_conflict",
+      "input": "event_plan",
+      "observed": 4,
+      "path": "calendar_conflicts[].evidence.inference",
+      "plan_reason": "",
+      "target": "event.evidence[]"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 4
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "observed": 4,
+      "path": "calendar_conflicts[].evidence.observed_facts",
+      "plan_reason": "",
+      "target": "event.evidence[]"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 4
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "observed": 4,
+      "path": "calendar_conflicts[].kind",
+      "plan_reason": "",
+      "target": "fields.kind"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 4
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "observed": 4,
+      "path": "calendar_conflicts[].needs_human_verify",
+      "plan_reason": "",
+      "target": "event.needs_human_verify"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 4
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "observed": 4,
+      "path": "calendar_conflicts[].relevance",
+      "plan_reason": "",
+      "target": "fields.relevance"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 4
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "observed": 4,
+      "path": "calendar_conflicts[].source_title",
+      "plan_reason": "",
+      "target": "field source_title"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 4
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "observed": 4,
+      "path": "calendar_conflicts[].source_url",
+      "plan_reason": "",
+      "target": "field source_url"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 4
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "observed": 4,
+      "path": "calendar_conflicts[].start_date",
+      "plan_reason": "",
+      "target": "fields.date_range.value.start"
+    },
+    {
+      "claims": {
+        "different": 3,
+        "identical": 1
+      },
+      "disposition": "duplicate_conflict",
+      "input": "event_plan",
+      "observed": 6,
+      "path": "calendar_conflicts[].verification_questions[]",
+      "plan_reason": "",
+      "target": "event.verification_questions[]"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 2
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Same event as calendar_conflicts.json, joined before minting.",
+      "observed": 2,
+      "path": "calendar_context.adjacent_events[].accessed_on",
+      "plan_reason": "",
+      "target": "events[]"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 2
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Same event as calendar_conflicts.json, joined before minting.",
+      "observed": 2,
+      "path": "calendar_context.adjacent_events[].city_slug",
+      "plan_reason": "",
+      "target": "events[]"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 2
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Same event as calendar_conflicts.json, joined before minting.",
+      "observed": 2,
+      "path": "calendar_context.adjacent_events[].conflict_severity",
+      "plan_reason": "",
+      "target": "events[]"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 2
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Same event as calendar_conflicts.json, joined before minting.",
+      "observed": 2,
+      "path": "calendar_context.adjacent_events[].end_date",
+      "plan_reason": "",
+      "target": "events[]"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 2
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Same event as calendar_conflicts.json, joined before minting.",
+      "observed": 2,
+      "path": "calendar_context.adjacent_events[].event_name",
+      "plan_reason": "",
+      "target": "events[]"
+    },
+    {
+      "claims": {
+        "different": 2,
+        "identical": 0
+      },
+      "disposition": "duplicate_conflict",
+      "input": "event_plan",
+      "note": "Same event as calendar_conflicts.json, joined before minting.",
+      "observed": 2,
+      "path": "calendar_context.adjacent_events[].evidence.inference",
+      "plan_reason": "",
+      "target": "events[]"
+    },
+    {
+      "claims": {
+        "different": 2,
+        "identical": 0
+      },
+      "disposition": "duplicate_conflict",
+      "input": "event_plan",
+      "note": "Same event as calendar_conflicts.json, joined before minting.",
+      "observed": 2,
+      "path": "calendar_context.adjacent_events[].evidence.observed_facts",
+      "plan_reason": "",
+      "target": "events[]"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 2
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Same event as calendar_conflicts.json, joined before minting.",
+      "observed": 2,
+      "path": "calendar_context.adjacent_events[].kind",
+      "plan_reason": "",
+      "target": "events[]"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 2
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Same event as calendar_conflicts.json, joined before minting.",
+      "observed": 2,
+      "path": "calendar_context.adjacent_events[].needs_human_verify",
+      "plan_reason": "",
+      "target": "events[]"
+    },
+    {
+      "disposition": "mapped",
+      "input": "event_plan",
+      "observed": 2,
+      "path": "calendar_context.adjacent_events[].opportunity_kind",
+      "plan_reason": "",
+      "target": "fields.opportunity_kind"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 2
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Same event as calendar_conflicts.json, joined before minting.",
+      "observed": 2,
+      "path": "calendar_context.adjacent_events[].relevance",
+      "plan_reason": "",
+      "target": "events[]"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 2
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Same event as calendar_conflicts.json, joined before minting.",
+      "observed": 2,
+      "path": "calendar_context.adjacent_events[].source_title",
+      "plan_reason": "",
+      "target": "events[]"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 2
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Same event as calendar_conflicts.json, joined before minting.",
+      "observed": 2,
+      "path": "calendar_context.adjacent_events[].source_url",
+      "plan_reason": "",
+      "target": "events[]"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 2
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Same event as calendar_conflicts.json, joined before minting.",
+      "observed": 2,
+      "path": "calendar_context.adjacent_events[].start_date",
+      "plan_reason": "",
+      "target": "events[]"
+    },
+    {
+      "disposition": "mapped",
+      "input": "event_plan",
+      "observed": 2,
+      "path": "calendar_context.adjacent_events[].status",
+      "plan_reason": "",
+      "target": "fields.status"
+    },
+    {
+      "claims": {
+        "different": 2,
+        "identical": 0
+      },
+      "disposition": "duplicate_conflict",
+      "input": "event_plan",
+      "note": "Same event as calendar_conflicts.json, joined before minting.",
+      "observed": 2,
+      "path": "calendar_context.adjacent_events[].verification_questions[]",
+      "plan_reason": "",
+      "target": "events[]"
+    },
+    {
+      "disposition": "dropped",
+      "input": "event_plan",
+      "observed": 29,
+      "path": "calendar_context.coverage[].accessed_on",
+      "plan_reason": "H1 period extract. Plan §10: the ledger is seeded only from the registry and this extract must not truncate, overwrite or double-import it; the rows are counted in migration-report.h1_extract and stay in the untouched bundle.",
+      "target": ""
+    },
+    {
+      "disposition": "dropped",
+      "input": "event_plan",
+      "observed": 29,
+      "path": "calendar_context.coverage[].end_date",
+      "plan_reason": "H1 period extract. Plan §10: the ledger is seeded only from the registry and this extract must not truncate, overwrite or double-import it; the rows are counted in migration-report.h1_extract and stay in the untouched bundle.",
+      "target": ""
+    },
+    {
+      "disposition": "dropped",
+      "input": "event_plan",
+      "observed": 29,
+      "path": "calendar_context.coverage[].evidence.observed_facts",
+      "plan_reason": "H1 period extract. Plan §10: the ledger is seeded only from the registry and this extract must not truncate, overwrite or double-import it; the rows are counted in migration-report.h1_extract and stay in the untouched bundle.",
+      "target": ""
+    },
+    {
+      "disposition": "dropped",
+      "input": "event_plan",
+      "observed": 29,
+      "path": "calendar_context.coverage[].jurisdiction_id",
+      "plan_reason": "H1 period extract. Plan §10: the ledger is seeded only from the registry and this extract must not truncate, overwrite or double-import it; the rows are counted in migration-report.h1_extract and stay in the untouched bundle.",
+      "target": ""
+    },
+    {
+      "disposition": "dropped",
+      "input": "event_plan",
+      "observed": 29,
+      "path": "calendar_context.coverage[].kind",
+      "plan_reason": "H1 period extract. Plan §10: the ledger is seeded only from the registry and this extract must not truncate, overwrite or double-import it; the rows are counted in migration-report.h1_extract and stay in the untouched bundle.",
+      "target": ""
+    },
+    {
+      "disposition": "dropped",
+      "input": "event_plan",
+      "observed": 29,
+      "path": "calendar_context.coverage[].needs_human_verify",
+      "plan_reason": "H1 period extract. Plan §10: the ledger is seeded only from the registry and this extract must not truncate, overwrite or double-import it; the rows are counted in migration-report.h1_extract and stay in the untouched bundle.",
+      "target": ""
+    },
+    {
+      "disposition": "dropped",
+      "input": "event_plan",
+      "observed": 29,
+      "path": "calendar_context.coverage[].source_edition",
+      "plan_reason": "H1 period extract. Plan §10: the ledger is seeded only from the registry and this extract must not truncate, overwrite or double-import it; the rows are counted in migration-report.h1_extract and stay in the untouched bundle.",
+      "target": ""
+    },
+    {
+      "disposition": "dropped",
+      "input": "event_plan",
+      "observed": 29,
+      "path": "calendar_context.coverage[].source_locator",
+      "plan_reason": "H1 period extract. Plan §10: the ledger is seeded only from the registry and this extract must not truncate, overwrite or double-import it; the rows are counted in migration-report.h1_extract and stay in the untouched bundle.",
+      "target": ""
+    },
+    {
+      "disposition": "dropped",
+      "input": "event_plan",
+      "observed": 29,
+      "path": "calendar_context.coverage[].source_title",
+      "plan_reason": "H1 period extract. Plan §10: the ledger is seeded only from the registry and this extract must not truncate, overwrite or double-import it; the rows are counted in migration-report.h1_extract and stay in the untouched bundle.",
+      "target": ""
+    },
+    {
+      "disposition": "dropped",
+      "input": "event_plan",
+      "observed": 29,
+      "path": "calendar_context.coverage[].source_url",
+      "plan_reason": "H1 period extract. Plan §10: the ledger is seeded only from the registry and this extract must not truncate, overwrite or double-import it; the rows are counted in migration-report.h1_extract and stay in the untouched bundle.",
+      "target": ""
+    },
+    {
+      "disposition": "dropped",
+      "input": "event_plan",
+      "observed": 29,
+      "path": "calendar_context.coverage[].start_date",
+      "plan_reason": "H1 period extract. Plan §10: the ledger is seeded only from the registry and this extract must not truncate, overwrite or double-import it; the rows are counted in migration-report.h1_extract and stay in the untouched bundle.",
+      "target": ""
+    },
+    {
+      "disposition": "dropped",
+      "input": "event_plan",
+      "observed": 29,
+      "path": "calendar_context.coverage[].verification_questions[]",
+      "plan_reason": "H1 period extract. Plan §10: the ledger is seeded only from the registry and this extract must not truncate, overwrite or double-import it; the rows are counted in migration-report.h1_extract and stay in the untouched bundle.",
+      "target": ""
+    },
+    {
+      "disposition": "mapped",
+      "input": "event_plan",
+      "observed": 1,
+      "path": "calendar_context.holiday_reference_sha256",
+      "plan_reason": "",
+      "target": "holiday_registry.bundle_declared_sha256"
+    },
+    {
+      "disposition": "dropped",
+      "input": "event_plan",
+      "observed": 70,
+      "path": "calendar_context.holidays[].accessed_on",
+      "plan_reason": "H1 period extract. Plan §10: the ledger is seeded only from the registry and this extract must not truncate, overwrite or double-import it; the rows are counted in migration-report.h1_extract and stay in the untouched bundle.",
+      "target": ""
+    },
+    {
+      "disposition": "dropped",
+      "input": "event_plan",
+      "observed": 70,
+      "path": "calendar_context.holidays[].end_date",
+      "plan_reason": "H1 period extract. Plan §10: the ledger is seeded only from the registry and this extract must not truncate, overwrite or double-import it; the rows are counted in migration-report.h1_extract and stay in the untouched bundle.",
+      "target": ""
+    },
+    {
+      "disposition": "dropped",
+      "input": "event_plan",
+      "observed": 7,
+      "path": "calendar_context.holidays[].evidence.inference",
+      "plan_reason": "H1 period extract. Plan §10: the ledger is seeded only from the registry and this extract must not truncate, overwrite or double-import it; the rows are counted in migration-report.h1_extract and stay in the untouched bundle.",
+      "target": ""
+    },
+    {
+      "disposition": "dropped",
+      "input": "event_plan",
+      "observed": 70,
+      "path": "calendar_context.holidays[].evidence.observed_facts",
+      "plan_reason": "H1 period extract. Plan §10: the ledger is seeded only from the registry and this extract must not truncate, overwrite or double-import it; the rows are counted in migration-report.h1_extract and stay in the untouched bundle.",
+      "target": ""
+    },
+    {
+      "disposition": "dropped",
+      "input": "event_plan",
+      "observed": 70,
+      "path": "calendar_context.holidays[].holiday_name",
+      "plan_reason": "H1 period extract. Plan §10: the ledger is seeded only from the registry and this extract must not truncate, overwrite or double-import it; the rows are counted in migration-report.h1_extract and stay in the untouched bundle.",
+      "target": ""
+    },
+    {
+      "disposition": "dropped",
+      "input": "event_plan",
+      "observed": 70,
+      "path": "calendar_context.holidays[].jurisdiction_id",
+      "plan_reason": "H1 period extract. Plan §10: the ledger is seeded only from the registry and this extract must not truncate, overwrite or double-import it; the rows are counted in migration-report.h1_extract and stay in the untouched bundle.",
+      "target": ""
+    },
+    {
+      "disposition": "dropped",
+      "input": "event_plan",
+      "observed": 70,
+      "path": "calendar_context.holidays[].kind",
+      "plan_reason": "H1 period extract. Plan §10: the ledger is seeded only from the registry and this extract must not truncate, overwrite or double-import it; the rows are counted in migration-report.h1_extract and stay in the untouched bundle.",
+      "target": ""
+    },
+    {
+      "disposition": "dropped",
+      "input": "event_plan",
+      "observed": 70,
+      "path": "calendar_context.holidays[].needs_human_verify",
+      "plan_reason": "H1 period extract. Plan §10: the ledger is seeded only from the registry and this extract must not truncate, overwrite or double-import it; the rows are counted in migration-report.h1_extract and stay in the untouched bundle.",
+      "target": ""
+    },
+    {
+      "disposition": "dropped",
+      "input": "event_plan",
+      "observed": 34,
+      "path": "calendar_context.holidays[].observance",
+      "plan_reason": "H1 period extract. Plan §10: the ledger is seeded only from the registry and this extract must not truncate, overwrite or double-import it; the rows are counted in migration-report.h1_extract and stay in the untouched bundle.",
+      "target": ""
+    },
+    {
+      "disposition": "dropped",
+      "input": "event_plan",
+      "observed": 70,
+      "path": "calendar_context.holidays[].source_edition",
+      "plan_reason": "H1 period extract. Plan §10: the ledger is seeded only from the registry and this extract must not truncate, overwrite or double-import it; the rows are counted in migration-report.h1_extract and stay in the untouched bundle.",
+      "target": ""
+    },
+    {
+      "disposition": "dropped",
+      "input": "event_plan",
+      "observed": 70,
+      "path": "calendar_context.holidays[].source_locator",
+      "plan_reason": "H1 period extract. Plan §10: the ledger is seeded only from the registry and this extract must not truncate, overwrite or double-import it; the rows are counted in migration-report.h1_extract and stay in the untouched bundle.",
+      "target": ""
+    },
+    {
+      "disposition": "dropped",
+      "input": "event_plan",
+      "observed": 70,
+      "path": "calendar_context.holidays[].source_title",
+      "plan_reason": "H1 period extract. Plan §10: the ledger is seeded only from the registry and this extract must not truncate, overwrite or double-import it; the rows are counted in migration-report.h1_extract and stay in the untouched bundle.",
+      "target": ""
+    },
+    {
+      "disposition": "dropped",
+      "input": "event_plan",
+      "observed": 70,
+      "path": "calendar_context.holidays[].source_url",
+      "plan_reason": "H1 period extract. Plan §10: the ledger is seeded only from the registry and this extract must not truncate, overwrite or double-import it; the rows are counted in migration-report.h1_extract and stay in the untouched bundle.",
+      "target": ""
+    },
+    {
+      "disposition": "dropped",
+      "input": "event_plan",
+      "observed": 70,
+      "path": "calendar_context.holidays[].start_date",
+      "plan_reason": "H1 period extract. Plan §10: the ledger is seeded only from the registry and this extract must not truncate, overwrite or double-import it; the rows are counted in migration-report.h1_extract and stay in the untouched bundle.",
+      "target": ""
+    },
+    {
+      "disposition": "dropped",
+      "input": "event_plan",
+      "observed": 70,
+      "path": "calendar_context.holidays[].verification_questions[]",
+      "plan_reason": "H1 period extract. Plan §10: the ledger is seeded only from the registry and this extract must not truncate, overwrite or double-import it; the rows are counted in migration-report.h1_extract and stay in the untouched bundle.",
+      "target": ""
+    },
+    {
+      "disposition": "mapped",
+      "input": "event_plan",
+      "observed": 1,
+      "path": "calendar_context.host_jurisdiction_id",
+      "plan_reason": "",
+      "target": "holiday_registry.host_jurisdiction_id"
+    },
+    {
+      "disposition": "mapped",
+      "input": "event_plan",
+      "observed": 34,
+      "path": "calendar_context.jurisdiction_ids[]",
+      "plan_reason": "",
+      "target": "holiday_registry.jurisdiction_ids[]"
+    },
+    {
+      "disposition": "mapped",
+      "input": "event_plan",
+      "observed": 1,
+      "path": "city_name",
+      "plan_reason": "",
+      "target": "city_name"
+    },
+    {
+      "disposition": "mapped",
+      "input": "event_plan",
+      "observed": 1,
+      "path": "city_slug",
+      "plan_reason": "",
+      "target": "city_slug"
+    },
+    {
+      "disposition": "dropped",
+      "input": "event_plan",
+      "observed": 1,
+      "path": "co_host_candidates[]",
+      "plan_reason": "Empty collection in this bundle; nothing to copy.",
+      "target": ""
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 17
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in communities.raw.json; equality checked at build.",
+      "observed": 17,
+      "path": "communities[].accessed_on",
+      "plan_reason": "",
+      "target": "community.verified_at"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 17
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in communities.raw.json; equality checked at build.",
+      "observed": 17,
+      "path": "communities[].activity_status",
+      "plan_reason": "",
+      "target": "community.activity_status"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 17
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in communities.raw.json; equality checked at build.",
+      "observed": 17,
+      "path": "communities[].cadence",
+      "plan_reason": "",
+      "target": "community.cadence"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 17
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in communities.raw.json; equality checked at build.",
+      "observed": 17,
+      "path": "communities[].city_slug",
+      "plan_reason": "",
+      "target": "community.city_slug"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 17
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in communities.raw.json; equality checked at build.",
+      "observed": 17,
+      "path": "communities[].cohost_evidence_phrase",
+      "plan_reason": "",
+      "target": "community.cohost_evidence_phrase"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 17
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in communities.raw.json; equality checked at build.",
+      "observed": 17,
+      "path": "communities[].cohost_open",
+      "plan_reason": "",
+      "target": "community.cohost_open"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 17
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in communities.raw.json; equality checked at build.",
+      "observed": 17,
+      "path": "communities[].contact_info",
+      "plan_reason": "",
+      "target": "community.contact_info"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 17
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in communities.raw.json; equality checked at build.",
+      "observed": 17,
+      "path": "communities[].evidence.inference",
+      "plan_reason": "",
+      "target": "community.evidence[]"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 17
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in communities.raw.json; equality checked at build.",
+      "observed": 17,
+      "path": "communities[].evidence.observed_facts",
+      "plan_reason": "",
+      "target": "community.evidence[]"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 17
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in communities.raw.json; equality checked at build.",
+      "observed": 30,
+      "path": "communities[].focus_tags[]",
+      "plan_reason": "",
+      "target": "community.focus_tags[]"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 17
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in communities.raw.json; equality checked at build.",
+      "observed": 17,
+      "path": "communities[].group_name",
+      "plan_reason": "",
+      "target": "community.name"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 17
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in communities.raw.json; equality checked at build.",
+      "observed": 17,
+      "path": "communities[].member_size_public",
+      "plan_reason": "",
+      "target": "community.member_size_public"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 17
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in communities.raw.json; equality checked at build.",
+      "observed": 17,
+      "path": "communities[].needs_human_verify",
+      "plan_reason": "",
+      "target": "community.needs_human_verify"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 17
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in communities.raw.json; equality checked at build.",
+      "observed": 17,
+      "path": "communities[].network",
+      "plan_reason": "",
+      "target": "community.network"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 17
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in communities.raw.json; equality checked at build.",
+      "observed": 17,
+      "path": "communities[].source_title",
+      "plan_reason": "",
+      "target": "community.source_title"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 17
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in communities.raw.json; equality checked at build.",
+      "observed": 17,
+      "path": "communities[].source_url",
+      "plan_reason": "",
+      "target": "community.source_url"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 17
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in communities.raw.json; equality checked at build.",
+      "observed": 17,
+      "path": "communities[].typical_venue",
+      "plan_reason": "",
+      "target": "community.typical_venue"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 17
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in communities.raw.json; equality checked at build.",
+      "observed": 17,
+      "path": "communities[].uncertainty_notes",
+      "plan_reason": "",
+      "target": "community.uncertainty_notes"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 17
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in communities.raw.json; equality checked at build.",
+      "observed": 20,
+      "path": "communities[].verification_questions[]",
+      "plan_reason": "",
+      "target": "community.verification_questions[]"
+    },
+    {
+      "disposition": "mapped",
+      "input": "event_plan",
+      "observed": 1,
+      "path": "country",
+      "plan_reason": "",
+      "target": "country"
+    },
+    {
+      "disposition": "mapped",
+      "input": "event_plan",
+      "observed": 1,
+      "path": "currency",
+      "plan_reason": "",
+      "target": "currency"
+    },
+    {
+      "disposition": "mapped",
+      "input": "event_plan",
+      "observed": 4,
+      "path": "currency_assumptions[]",
+      "plan_reason": "",
+      "target": "currency_assumptions[]"
+    },
+    {
+      "disposition": "dropped",
+      "input": "event_plan",
+      "observed": 1,
+      "path": "date_window",
+      "plan_reason": "Campaign field: plan §2.3 and §10 forbid the page to recommend a date or carry candidate-date reasoning. The value stays in the untouched bundle directory.",
+      "target": ""
+    },
+    {
+      "disposition": "mapped",
+      "input": "event_plan",
+      "observed": 1,
+      "path": "event_duration_hours",
+      "plan_reason": "",
+      "target": "event_context.duration_hours"
+    },
+    {
+      "disposition": "mapped",
+      "input": "event_plan",
+      "observed": 1,
+      "path": "generated_at",
+      "plan_reason": "",
+      "target": "runs[0].source_generated_at"
+    },
+    {
+      "disposition": "dropped",
+      "input": "event_plan",
+      "observed": 118,
+      "path": "open_questions[]",
+      "plan_reason": "Campaign field: plan §2.3 and §10 forbid the page to recommend a date or carry candidate-date reasoning. The value stays in the untouched bundle directory. Identical to recommendation.unresolved_checks.",
+      "target": ""
+    },
+    {
+      "disposition": "dropped",
+      "input": "event_plan",
+      "observed": 1,
+      "path": "recommendation.rationale",
+      "plan_reason": "Campaign field: plan §2.3 and §10 forbid the page to recommend a date or carry candidate-date reasoning. The value stays in the untouched bundle directory.",
+      "target": ""
+    },
+    {
+      "disposition": "dropped",
+      "input": "event_plan",
+      "observed": 1,
+      "path": "recommendation.selected_venue",
+      "plan_reason": "Campaign field: plan §2.3 and §10 forbid the page to recommend a date or carry candidate-date reasoning. The value stays in the untouched bundle directory.",
+      "target": ""
+    },
+    {
+      "disposition": "dropped",
+      "input": "event_plan",
+      "observed": 118,
+      "path": "recommendation.unresolved_checks[]",
+      "plan_reason": "Campaign field: plan §2.3 and §10 forbid the page to recommend a date or carry candidate-date reasoning. The value stays in the untouched bundle directory. Identical to open_questions.",
+      "target": ""
+    },
+    {
+      "disposition": "mapped",
+      "input": "event_plan",
+      "observed": 1,
+      "path": "schema_version",
+      "plan_reason": "",
+      "target": "runs[0].source_schema_version"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].accessed_on",
+      "plan_reason": "",
+      "target": "every field verified_at"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].address",
+      "plan_reason": "",
+      "target": "fields.address"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].booking_url",
+      "plan_reason": "",
+      "target": "fields.booking_url"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].capacity_basis",
+      "plan_reason": "",
+      "target": "fields.capacity_basis"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].capacity_comfortable",
+      "plan_reason": "",
+      "target": "fields.capacity"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].catering_policy",
+      "plan_reason": "",
+      "target": "fields.catering"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].city_slug",
+      "plan_reason": "",
+      "target": "venue.city_slug"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].closing_time",
+      "plan_reason": "",
+      "target": "fields.closing_time"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].cost_basis",
+      "plan_reason": "",
+      "target": "fields.price_basis"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].cost_local_amount",
+      "plan_reason": "",
+      "target": "fields.price_detail.cost_local_amount"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].cost_local_currency",
+      "plan_reason": "",
+      "target": "fields.price_detail.cost_local_currency"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].cost_rate_unit",
+      "plan_reason": "",
+      "target": "fields.price_detail.cost_rate_unit"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].estimated_cost_usd",
+      "plan_reason": "",
+      "target": "fields.price"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].estimated_hours",
+      "plan_reason": "",
+      "target": "fields.price_detail.estimated_hours"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 12
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 12,
+      "path": "shortlist_ready_venues[].event_window_evidence",
+      "plan_reason": "",
+      "target": "venue.evidence[]"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 2
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 2,
+      "path": "shortlist_ready_venues[].event_window_evidence.accessed_on",
+      "plan_reason": "",
+      "target": "field verified_at"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 2
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 2,
+      "path": "shortlist_ready_venues[].event_window_evidence.claim",
+      "plan_reason": "",
+      "target": "venue.evidence[]"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 2
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 2,
+      "path": "shortlist_ready_venues[].event_window_evidence.title",
+      "plan_reason": "",
+      "target": "field source_title"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 2
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 2,
+      "path": "shortlist_ready_venues[].event_window_evidence.url",
+      "plan_reason": "",
+      "target": "fields.access_window.source_url"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].event_window_status",
+      "plan_reason": "",
+      "target": "fields.event_window_status"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].evidence.geo",
+      "plan_reason": "",
+      "target": "venue.evidence[]"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].evidence.inference",
+      "plan_reason": "",
+      "target": "venue.evidence[]"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].evidence.observed_facts",
+      "plan_reason": "",
+      "target": "venue.evidence[]"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].hourly_rate_local",
+      "plan_reason": "",
+      "target": "fields.price_detail.hourly_rate_local"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].hourly_rate_usd",
+      "plan_reason": "",
+      "target": "fields.price_detail.hourly_rate_usd"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].latitude",
+      "plan_reason": "",
+      "target": "fields.coordinates.latitude"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].longitude",
+      "plan_reason": "",
+      "target": "fields.coordinates.longitude"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].max_booking_hours",
+      "plan_reason": "",
+      "target": "fields.booking_hour_cap"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].name",
+      "plan_reason": "",
+      "target": "venue.name"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].needs_human_verify",
+      "plan_reason": "",
+      "target": "venue.needs_human_verify"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].opening_hours",
+      "plan_reason": "",
+      "target": "fields.access_window"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].rate_currency",
+      "plan_reason": "",
+      "target": "fields.price_detail.rate_currency"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].rate_estimate_note",
+      "plan_reason": "",
+      "target": "fields.price_detail.rate_estimate_note"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].recording_suitability",
+      "plan_reason": "",
+      "target": "fields.recording"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].score",
+      "plan_reason": "",
+      "target": "venue.legacy_score.value"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].score_breakdown.booking_path.contribution",
+      "plan_reason": "",
+      "target": "venue.legacy_score.breakdown"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].score_breakdown.booking_path.factor",
+      "plan_reason": "",
+      "target": "venue.legacy_score.breakdown"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].score_breakdown.booking_path.weight",
+      "plan_reason": "",
+      "target": "venue.legacy_score.breakdown"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].score_breakdown.budget_efficiency.contribution",
+      "plan_reason": "",
+      "target": "venue.legacy_score.breakdown"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].score_breakdown.budget_efficiency.factor",
+      "plan_reason": "",
+      "target": "venue.legacy_score.breakdown"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].score_breakdown.budget_efficiency.weight",
+      "plan_reason": "",
+      "target": "venue.legacy_score.breakdown"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].score_breakdown.capacity_fit.contribution",
+      "plan_reason": "",
+      "target": "venue.legacy_score.breakdown"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].score_breakdown.capacity_fit.factor",
+      "plan_reason": "",
+      "target": "venue.legacy_score.breakdown"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].score_breakdown.capacity_fit.weight",
+      "plan_reason": "",
+      "target": "venue.legacy_score.breakdown"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].score_breakdown.catering_flexibility.contribution",
+      "plan_reason": "",
+      "target": "venue.legacy_score.breakdown"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].score_breakdown.catering_flexibility.factor",
+      "plan_reason": "",
+      "target": "venue.legacy_score.breakdown"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].score_breakdown.catering_flexibility.weight",
+      "plan_reason": "",
+      "target": "venue.legacy_score.breakdown"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].score_breakdown.event_window_fit.contribution",
+      "plan_reason": "",
+      "target": "venue.legacy_score.breakdown"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].score_breakdown.event_window_fit.factor",
+      "plan_reason": "",
+      "target": "venue.legacy_score.breakdown"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].score_breakdown.event_window_fit.weight",
+      "plan_reason": "",
+      "target": "venue.legacy_score.breakdown"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].score_breakdown.evidence_freshness.contribution",
+      "plan_reason": "",
+      "target": "venue.legacy_score.breakdown"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].score_breakdown.evidence_freshness.factor",
+      "plan_reason": "",
+      "target": "venue.legacy_score.breakdown"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].score_breakdown.evidence_freshness.weight",
+      "plan_reason": "",
+      "target": "venue.legacy_score.breakdown"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].score_breakdown.recording_suitability.contribution",
+      "plan_reason": "",
+      "target": "venue.legacy_score.breakdown"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].score_breakdown.recording_suitability.factor",
+      "plan_reason": "",
+      "target": "venue.legacy_score.breakdown"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].score_breakdown.recording_suitability.weight",
+      "plan_reason": "",
+      "target": "venue.legacy_score.breakdown"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].score_breakdown.technical_readiness.contribution",
+      "plan_reason": "",
+      "target": "venue.legacy_score.breakdown"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].score_breakdown.technical_readiness.factor",
+      "plan_reason": "",
+      "target": "venue.legacy_score.breakdown"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].score_breakdown.technical_readiness.weight",
+      "plan_reason": "",
+      "target": "venue.legacy_score.breakdown"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].score_breakdown.total",
+      "plan_reason": "",
+      "target": "venue.legacy_score.breakdown.total"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].screen_status",
+      "plan_reason": "",
+      "target": "fields.screen"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].source_title",
+      "plan_reason": "",
+      "target": "field source_title"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].source_url",
+      "plan_reason": "",
+      "target": "fields.source_url"
+    },
+    {
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].tier_reasons[]",
+      "plan_reason": "",
+      "target": "venue.tier_reasons[]"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 81,
+      "path": "shortlist_ready_venues[].venue_flags[]",
+      "plan_reason": "",
+      "target": "venue.legacy_flags[]"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].venue_tier",
+      "plan_reason": "",
+      "target": "venue.lifecycle"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 77,
+      "path": "shortlist_ready_venues[].verification_question_kinds[]",
+      "plan_reason": "",
+      "target": "venue.verification_question_kinds[]"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 77,
+      "path": "shortlist_ready_venues[].verification_questions[]",
+      "plan_reason": "",
+      "target": "venue.verification_questions[]"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 14
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 14,
+      "path": "shortlist_ready_venues[].wifi_status",
+      "plan_reason": "",
+      "target": "fields.wifi"
+    },
+    {
+      "disposition": "mapped",
+      "input": "event_plan",
+      "observed": 35,
+      "path": "sources[].accessed_on",
+      "plan_reason": "",
+      "target": "sources_consulted[]"
+    },
+    {
+      "disposition": "mapped",
+      "input": "event_plan",
+      "observed": 35,
+      "path": "sources[].title",
+      "plan_reason": "",
+      "target": "sources_consulted[]"
+    },
+    {
+      "disposition": "mapped",
+      "input": "event_plan",
+      "observed": 35,
+      "path": "sources[].url",
+      "plan_reason": "",
+      "target": "sources_consulted[]"
+    },
+    {
+      "disposition": "dropped",
+      "input": "event_plan",
+      "observed": 1,
+      "path": "speakers[]",
+      "plan_reason": "Empty collection in this bundle; nothing to copy.",
+      "target": ""
+    },
+    {
+      "disposition": "mapped",
+      "input": "event_plan",
+      "observed": 1,
+      "path": "target_attendance",
+      "plan_reason": "",
+      "target": "event_context.attendance"
+    },
+    {
+      "disposition": "dropped",
+      "input": "event_plan",
+      "observed": 1,
+      "path": "target_date",
+      "plan_reason": "Campaign field: plan §2.3 and §10 forbid the page to recommend a date or carry candidate-date reasoning. The value stays in the untouched bundle directory.",
+      "target": ""
+    },
+    {
+      "disposition": "dropped",
+      "input": "event_plan",
+      "observed": 1,
+      "path": "trusted_contacts[]",
+      "plan_reason": "Empty collection in this bundle; nothing to copy.",
+      "target": ""
+    },
+    {
+      "disposition": "dropped",
+      "input": "event_plan",
+      "observed": 1,
+      "path": "trusted_venue_matches[]",
+      "plan_reason": "Empty collection in this bundle; nothing to copy.",
+      "target": ""
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 2
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 2,
+      "path": "venue_leads_needing_verification[].accessed_on",
+      "plan_reason": "",
+      "target": "every field verified_at"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 2
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 2,
+      "path": "venue_leads_needing_verification[].address",
+      "plan_reason": "",
+      "target": "fields.address"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 2
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 2,
+      "path": "venue_leads_needing_verification[].booking_url",
+      "plan_reason": "",
+      "target": "fields.booking_url"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 2
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 2,
+      "path": "venue_leads_needing_verification[].capacity_basis",
+      "plan_reason": "",
+      "target": "fields.capacity_basis"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 2
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 2,
+      "path": "venue_leads_needing_verification[].capacity_comfortable",
+      "plan_reason": "",
+      "target": "fields.capacity"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 2
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 2,
+      "path": "venue_leads_needing_verification[].catering_policy",
+      "plan_reason": "",
+      "target": "fields.catering"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 2
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 2,
+      "path": "venue_leads_needing_verification[].city_slug",
+      "plan_reason": "",
+      "target": "venue.city_slug"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 2
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 2,
+      "path": "venue_leads_needing_verification[].closing_time",
+      "plan_reason": "",
+      "target": "fields.closing_time"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 2
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 2,
+      "path": "venue_leads_needing_verification[].cost_basis",
+      "plan_reason": "",
+      "target": "fields.price_basis"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 2
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 2,
+      "path": "venue_leads_needing_verification[].cost_local_amount",
+      "plan_reason": "",
+      "target": "fields.price_detail.cost_local_amount"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 2
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 2,
+      "path": "venue_leads_needing_verification[].cost_local_currency",
+      "plan_reason": "",
+      "target": "fields.price_detail.cost_local_currency"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 2
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 2,
+      "path": "venue_leads_needing_verification[].cost_rate_unit",
+      "plan_reason": "",
+      "target": "fields.price_detail.cost_rate_unit"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 2
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 2,
+      "path": "venue_leads_needing_verification[].estimated_cost_usd",
+      "plan_reason": "",
+      "target": "fields.price"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 2
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 2,
+      "path": "venue_leads_needing_verification[].estimated_hours",
+      "plan_reason": "",
+      "target": "fields.price_detail.estimated_hours"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 1
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 1,
+      "path": "venue_leads_needing_verification[].event_window_evidence",
+      "plan_reason": "",
+      "target": "venue.evidence[]"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 1
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 1,
+      "path": "venue_leads_needing_verification[].event_window_evidence.accessed_on",
+      "plan_reason": "",
+      "target": "field verified_at"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 1
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 1,
+      "path": "venue_leads_needing_verification[].event_window_evidence.claim",
+      "plan_reason": "",
+      "target": "venue.evidence[]"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 1
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 1,
+      "path": "venue_leads_needing_verification[].event_window_evidence.title",
+      "plan_reason": "",
+      "target": "field source_title"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 1
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 1,
+      "path": "venue_leads_needing_verification[].event_window_evidence.url",
+      "plan_reason": "",
+      "target": "fields.access_window.source_url"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 2
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 2,
+      "path": "venue_leads_needing_verification[].event_window_status",
+      "plan_reason": "",
+      "target": "fields.event_window_status"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 2
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 2,
+      "path": "venue_leads_needing_verification[].evidence.geo",
+      "plan_reason": "",
+      "target": "venue.evidence[]"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 2
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 2,
+      "path": "venue_leads_needing_verification[].evidence.inference",
+      "plan_reason": "",
+      "target": "venue.evidence[]"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 2
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 2,
+      "path": "venue_leads_needing_verification[].evidence.observed_facts",
+      "plan_reason": "",
+      "target": "venue.evidence[]"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 2
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 2,
+      "path": "venue_leads_needing_verification[].hourly_rate_local",
+      "plan_reason": "",
+      "target": "fields.price_detail.hourly_rate_local"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 2
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 2,
+      "path": "venue_leads_needing_verification[].hourly_rate_usd",
+      "plan_reason": "",
+      "target": "fields.price_detail.hourly_rate_usd"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 2
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 2,
+      "path": "venue_leads_needing_verification[].latitude",
+      "plan_reason": "",
+      "target": "fields.coordinates.latitude"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 2
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 2,
+      "path": "venue_leads_needing_verification[].longitude",
+      "plan_reason": "",
+      "target": "fields.coordinates.longitude"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 2
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 2,
+      "path": "venue_leads_needing_verification[].max_booking_hours",
+      "plan_reason": "",
+      "target": "fields.booking_hour_cap"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 2
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 2,
+      "path": "venue_leads_needing_verification[].name",
+      "plan_reason": "",
+      "target": "venue.name"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 2
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 2,
+      "path": "venue_leads_needing_verification[].needs_human_verify",
+      "plan_reason": "",
+      "target": "venue.needs_human_verify"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 2
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 2,
+      "path": "venue_leads_needing_verification[].opening_hours",
+      "plan_reason": "",
+      "target": "fields.access_window"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 2
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 2,
+      "path": "venue_leads_needing_verification[].rate_currency",
+      "plan_reason": "",
+      "target": "fields.price_detail.rate_currency"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 2
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 2,
+      "path": "venue_leads_needing_verification[].rate_estimate_note",
+      "plan_reason": "",
+      "target": "fields.price_detail.rate_estimate_note"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 2
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 2,
+      "path": "venue_leads_needing_verification[].recording_suitability",
+      "plan_reason": "",
+      "target": "fields.recording"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 2
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 2,
+      "path": "venue_leads_needing_verification[].score",
+      "plan_reason": "",
+      "target": "venue.legacy_score.value"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 2
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 2,
+      "path": "venue_leads_needing_verification[].score_breakdown",
+      "plan_reason": "",
+      "target": "venue.legacy_score.breakdown"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 2
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 2,
+      "path": "venue_leads_needing_verification[].screen_status",
+      "plan_reason": "",
+      "target": "fields.screen"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 2
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 2,
+      "path": "venue_leads_needing_verification[].source_title",
+      "plan_reason": "",
+      "target": "field source_title"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 2
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 2,
+      "path": "venue_leads_needing_verification[].source_url",
+      "plan_reason": "",
+      "target": "fields.source_url"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 2
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 2,
+      "path": "venue_leads_needing_verification[].tier_reasons[]",
+      "plan_reason": "",
+      "target": "venue.tier_reasons[]"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 2
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 9,
+      "path": "venue_leads_needing_verification[].venue_flags[]",
+      "plan_reason": "",
+      "target": "venue.legacy_flags[]"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 2
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 2,
+      "path": "venue_leads_needing_verification[].venue_tier",
+      "plan_reason": "",
+      "target": "venue.lifecycle"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 2
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 10,
+      "path": "venue_leads_needing_verification[].verification_question_kinds[]",
+      "plan_reason": "",
+      "target": "venue.verification_question_kinds[]"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 2
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 10,
+      "path": "venue_leads_needing_verification[].verification_questions[]",
+      "plan_reason": "",
+      "target": "venue.verification_questions[]"
+    },
+    {
+      "claims": {
+        "different": 0,
+        "identical": 2
+      },
+      "disposition": "duplicate_dedup",
+      "input": "event_plan",
+      "note": "Identical claim in venues.shortlist.json; equality checked at build.",
+      "observed": 2,
+      "path": "venue_leads_needing_verification[].wifi_status",
+      "plan_reason": "",
+      "target": "fields.wifi"
+    },
+    {
+      "disposition": "dropped",
+      "input": "event_plan",
+      "observed": 1,
+      "path": "venues[]",
+      "plan_reason": "Empty legacy array; the tiered arrays carry every record.",
+      "target": ""
+    },
+    {
+      "disposition": "dropped",
+      "input": "event_plan",
+      "observed": 1,
+      "path": "workflow_phase",
+      "plan_reason": "Campaign field: plan §2.3 and §10 forbid the page to recommend a date or carry candidate-date reasoning. The value stays in the untouched bundle directory.",
+      "target": ""
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "note": "Empty: no venue reached `eligible` in this bundle.",
+      "observed": 1,
+      "path": "eligible[]",
+      "plan_reason": "",
+      "target": "venues[]"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 2,
+      "path": "lead[].accessed_on",
+      "plan_reason": "",
+      "target": "every field verified_at"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 2,
+      "path": "lead[].address",
+      "plan_reason": "",
+      "target": "fields.address"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 2,
+      "path": "lead[].booking_url",
+      "plan_reason": "",
+      "target": "fields.booking_url"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 2,
+      "path": "lead[].capacity_basis",
+      "plan_reason": "",
+      "target": "fields.capacity_basis"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 2,
+      "path": "lead[].capacity_comfortable",
+      "plan_reason": "",
+      "target": "fields.capacity"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 2,
+      "path": "lead[].catering_policy",
+      "plan_reason": "",
+      "target": "fields.catering"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 2,
+      "path": "lead[].city_slug",
+      "plan_reason": "",
+      "target": "venue.city_slug"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 2,
+      "path": "lead[].closing_time",
+      "plan_reason": "",
+      "target": "fields.closing_time"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 2,
+      "path": "lead[].cost_basis",
+      "plan_reason": "",
+      "target": "fields.price_basis"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 2,
+      "path": "lead[].cost_local_amount",
+      "plan_reason": "",
+      "target": "fields.price_detail.cost_local_amount"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 2,
+      "path": "lead[].cost_local_currency",
+      "plan_reason": "",
+      "target": "fields.price_detail.cost_local_currency"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 2,
+      "path": "lead[].cost_rate_unit",
+      "plan_reason": "",
+      "target": "fields.price_detail.cost_rate_unit"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 2,
+      "path": "lead[].estimated_cost_usd",
+      "plan_reason": "",
+      "target": "fields.price"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 2,
+      "path": "lead[].estimated_hours",
+      "plan_reason": "",
+      "target": "fields.price_detail.estimated_hours"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 1,
+      "path": "lead[].event_window_evidence",
+      "plan_reason": "",
+      "target": "venue.evidence[]"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 1,
+      "path": "lead[].event_window_evidence.accessed_on",
+      "plan_reason": "",
+      "target": "field verified_at"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 1,
+      "path": "lead[].event_window_evidence.claim",
+      "plan_reason": "",
+      "target": "venue.evidence[]"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 1,
+      "path": "lead[].event_window_evidence.title",
+      "plan_reason": "",
+      "target": "field source_title"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 1,
+      "path": "lead[].event_window_evidence.url",
+      "plan_reason": "",
+      "target": "fields.access_window.source_url"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 2,
+      "path": "lead[].event_window_status",
+      "plan_reason": "",
+      "target": "fields.event_window_status"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 2,
+      "path": "lead[].evidence.geo",
+      "plan_reason": "",
+      "target": "venue.evidence[]"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 2,
+      "path": "lead[].evidence.inference",
+      "plan_reason": "",
+      "target": "venue.evidence[]"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 2,
+      "path": "lead[].evidence.observed_facts",
+      "plan_reason": "",
+      "target": "venue.evidence[]"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 2,
+      "path": "lead[].hourly_rate_local",
+      "plan_reason": "",
+      "target": "fields.price_detail.hourly_rate_local"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 2,
+      "path": "lead[].hourly_rate_usd",
+      "plan_reason": "",
+      "target": "fields.price_detail.hourly_rate_usd"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 2,
+      "path": "lead[].latitude",
+      "plan_reason": "",
+      "target": "fields.coordinates.latitude"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 2,
+      "path": "lead[].longitude",
+      "plan_reason": "",
+      "target": "fields.coordinates.longitude"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 2,
+      "path": "lead[].max_booking_hours",
+      "plan_reason": "",
+      "target": "fields.booking_hour_cap"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 2,
+      "path": "lead[].name",
+      "plan_reason": "",
+      "target": "venue.name"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 2,
+      "path": "lead[].needs_human_verify",
+      "plan_reason": "",
+      "target": "venue.needs_human_verify"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 2,
+      "path": "lead[].opening_hours",
+      "plan_reason": "",
+      "target": "fields.access_window"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 2,
+      "path": "lead[].rate_currency",
+      "plan_reason": "",
+      "target": "fields.price_detail.rate_currency"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 2,
+      "path": "lead[].rate_estimate_note",
+      "plan_reason": "",
+      "target": "fields.price_detail.rate_estimate_note"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 2,
+      "path": "lead[].recording_suitability",
+      "plan_reason": "",
+      "target": "fields.recording"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 2,
+      "path": "lead[].score",
+      "plan_reason": "",
+      "target": "venue.legacy_score.value"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 2,
+      "path": "lead[].score_breakdown",
+      "plan_reason": "",
+      "target": "venue.legacy_score.breakdown"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 2,
+      "path": "lead[].screen_status",
+      "plan_reason": "",
+      "target": "fields.screen"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 2,
+      "path": "lead[].source_title",
+      "plan_reason": "",
+      "target": "field source_title"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 2,
+      "path": "lead[].source_url",
+      "plan_reason": "",
+      "target": "fields.source_url"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 2,
+      "path": "lead[].tier_reasons[]",
+      "plan_reason": "",
+      "target": "venue.tier_reasons[]"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 9,
+      "path": "lead[].venue_flags[]",
+      "plan_reason": "",
+      "target": "venue.legacy_flags[]"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 2,
+      "path": "lead[].venue_tier",
+      "plan_reason": "",
+      "target": "venue.lifecycle"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 10,
+      "path": "lead[].verification_question_kinds[]",
+      "plan_reason": "",
+      "target": "venue.verification_question_kinds[]"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 10,
+      "path": "lead[].verification_questions[]",
+      "plan_reason": "",
+      "target": "venue.verification_questions[]"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 2,
+      "path": "lead[].wifi_status",
+      "plan_reason": "",
+      "target": "fields.wifi"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 1,
+      "path": "meta.budget_usd",
+      "plan_reason": "",
+      "target": "event_context.soft_budget_usd"
+    },
+    {
+      "disposition": "dropped",
+      "input": "shortlist",
+      "observed": 1,
+      "path": "meta.event_date",
+      "plan_reason": "Campaign field: plan §2.3 and §10 forbid the page to recommend a date or carry candidate-date reasoning. The value stays in the untouched bundle directory.",
+      "target": ""
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 1,
+      "path": "meta.event_duration_hours",
+      "plan_reason": "",
+      "target": "event_context.duration_hours"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 1,
+      "path": "meta.generator",
+      "plan_reason": "",
+      "target": "runs[0].legacy_generator"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 1,
+      "path": "meta.schema_version",
+      "plan_reason": "",
+      "target": "runs[0].source_schema_version"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 1,
+      "path": "meta.target_attendance",
+      "plan_reason": "",
+      "target": "event_context.attendance"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 3,
+      "path": "meta.tier_order[]",
+      "plan_reason": "",
+      "target": "runs[0].legacy_tier_order[]"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 1,
+      "path": "meta.weights.booking_path",
+      "plan_reason": "",
+      "target": "runs[0].legacy_scorer_weights.*"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 1,
+      "path": "meta.weights.budget_efficiency",
+      "plan_reason": "",
+      "target": "runs[0].legacy_scorer_weights.*"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 1,
+      "path": "meta.weights.capacity_fit",
+      "plan_reason": "",
+      "target": "runs[0].legacy_scorer_weights.*"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 1,
+      "path": "meta.weights.catering_flexibility",
+      "plan_reason": "",
+      "target": "runs[0].legacy_scorer_weights.*"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 1,
+      "path": "meta.weights.event_window_fit",
+      "plan_reason": "",
+      "target": "runs[0].legacy_scorer_weights.*"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 1,
+      "path": "meta.weights.evidence_freshness",
+      "plan_reason": "",
+      "target": "runs[0].legacy_scorer_weights.*"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 1,
+      "path": "meta.weights.recording_suitability",
+      "plan_reason": "",
+      "target": "runs[0].legacy_scorer_weights.*"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 1,
+      "path": "meta.weights.technical_readiness",
+      "plan_reason": "",
+      "target": "runs[0].legacy_scorer_weights.*"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].accessed_on",
+      "plan_reason": "",
+      "target": "every field verified_at"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].address",
+      "plan_reason": "",
+      "target": "fields.address"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].booking_url",
+      "plan_reason": "",
+      "target": "fields.booking_url"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].capacity_basis",
+      "plan_reason": "",
+      "target": "fields.capacity_basis"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].capacity_comfortable",
+      "plan_reason": "",
+      "target": "fields.capacity"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].catering_policy",
+      "plan_reason": "",
+      "target": "fields.catering"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].city_slug",
+      "plan_reason": "",
+      "target": "venue.city_slug"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].closing_time",
+      "plan_reason": "",
+      "target": "fields.closing_time"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].cost_basis",
+      "plan_reason": "",
+      "target": "fields.price_basis"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].cost_local_amount",
+      "plan_reason": "",
+      "target": "fields.price_detail.cost_local_amount"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].cost_local_currency",
+      "plan_reason": "",
+      "target": "fields.price_detail.cost_local_currency"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].cost_rate_unit",
+      "plan_reason": "",
+      "target": "fields.price_detail.cost_rate_unit"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].estimated_cost_usd",
+      "plan_reason": "",
+      "target": "fields.price"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].estimated_hours",
+      "plan_reason": "",
+      "target": "fields.price_detail.estimated_hours"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 12,
+      "path": "shortlist_ready[].event_window_evidence",
+      "plan_reason": "",
+      "target": "venue.evidence[]"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 2,
+      "path": "shortlist_ready[].event_window_evidence.accessed_on",
+      "plan_reason": "",
+      "target": "field verified_at"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 2,
+      "path": "shortlist_ready[].event_window_evidence.claim",
+      "plan_reason": "",
+      "target": "venue.evidence[]"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 2,
+      "path": "shortlist_ready[].event_window_evidence.title",
+      "plan_reason": "",
+      "target": "field source_title"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 2,
+      "path": "shortlist_ready[].event_window_evidence.url",
+      "plan_reason": "",
+      "target": "fields.access_window.source_url"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].event_window_status",
+      "plan_reason": "",
+      "target": "fields.event_window_status"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].evidence.geo",
+      "plan_reason": "",
+      "target": "venue.evidence[]"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].evidence.inference",
+      "plan_reason": "",
+      "target": "venue.evidence[]"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].evidence.observed_facts",
+      "plan_reason": "",
+      "target": "venue.evidence[]"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].hourly_rate_local",
+      "plan_reason": "",
+      "target": "fields.price_detail.hourly_rate_local"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].hourly_rate_usd",
+      "plan_reason": "",
+      "target": "fields.price_detail.hourly_rate_usd"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].latitude",
+      "plan_reason": "",
+      "target": "fields.coordinates.latitude"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].longitude",
+      "plan_reason": "",
+      "target": "fields.coordinates.longitude"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].max_booking_hours",
+      "plan_reason": "",
+      "target": "fields.booking_hour_cap"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].name",
+      "plan_reason": "",
+      "target": "venue.name"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].needs_human_verify",
+      "plan_reason": "",
+      "target": "venue.needs_human_verify"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].opening_hours",
+      "plan_reason": "",
+      "target": "fields.access_window"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].rate_currency",
+      "plan_reason": "",
+      "target": "fields.price_detail.rate_currency"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].rate_estimate_note",
+      "plan_reason": "",
+      "target": "fields.price_detail.rate_estimate_note"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].recording_suitability",
+      "plan_reason": "",
+      "target": "fields.recording"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].score",
+      "plan_reason": "",
+      "target": "venue.legacy_score.value"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].score_breakdown.booking_path.contribution",
+      "plan_reason": "",
+      "target": "venue.legacy_score.breakdown"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].score_breakdown.booking_path.factor",
+      "plan_reason": "",
+      "target": "venue.legacy_score.breakdown"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].score_breakdown.booking_path.weight",
+      "plan_reason": "",
+      "target": "venue.legacy_score.breakdown"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].score_breakdown.budget_efficiency.contribution",
+      "plan_reason": "",
+      "target": "venue.legacy_score.breakdown"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].score_breakdown.budget_efficiency.factor",
+      "plan_reason": "",
+      "target": "venue.legacy_score.breakdown"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].score_breakdown.budget_efficiency.weight",
+      "plan_reason": "",
+      "target": "venue.legacy_score.breakdown"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].score_breakdown.capacity_fit.contribution",
+      "plan_reason": "",
+      "target": "venue.legacy_score.breakdown"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].score_breakdown.capacity_fit.factor",
+      "plan_reason": "",
+      "target": "venue.legacy_score.breakdown"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].score_breakdown.capacity_fit.weight",
+      "plan_reason": "",
+      "target": "venue.legacy_score.breakdown"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].score_breakdown.catering_flexibility.contribution",
+      "plan_reason": "",
+      "target": "venue.legacy_score.breakdown"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].score_breakdown.catering_flexibility.factor",
+      "plan_reason": "",
+      "target": "venue.legacy_score.breakdown"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].score_breakdown.catering_flexibility.weight",
+      "plan_reason": "",
+      "target": "venue.legacy_score.breakdown"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].score_breakdown.event_window_fit.contribution",
+      "plan_reason": "",
+      "target": "venue.legacy_score.breakdown"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].score_breakdown.event_window_fit.factor",
+      "plan_reason": "",
+      "target": "venue.legacy_score.breakdown"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].score_breakdown.event_window_fit.weight",
+      "plan_reason": "",
+      "target": "venue.legacy_score.breakdown"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].score_breakdown.evidence_freshness.contribution",
+      "plan_reason": "",
+      "target": "venue.legacy_score.breakdown"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].score_breakdown.evidence_freshness.factor",
+      "plan_reason": "",
+      "target": "venue.legacy_score.breakdown"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].score_breakdown.evidence_freshness.weight",
+      "plan_reason": "",
+      "target": "venue.legacy_score.breakdown"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].score_breakdown.recording_suitability.contribution",
+      "plan_reason": "",
+      "target": "venue.legacy_score.breakdown"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].score_breakdown.recording_suitability.factor",
+      "plan_reason": "",
+      "target": "venue.legacy_score.breakdown"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].score_breakdown.recording_suitability.weight",
+      "plan_reason": "",
+      "target": "venue.legacy_score.breakdown"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].score_breakdown.technical_readiness.contribution",
+      "plan_reason": "",
+      "target": "venue.legacy_score.breakdown"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].score_breakdown.technical_readiness.factor",
+      "plan_reason": "",
+      "target": "venue.legacy_score.breakdown"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].score_breakdown.technical_readiness.weight",
+      "plan_reason": "",
+      "target": "venue.legacy_score.breakdown"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].score_breakdown.total",
+      "plan_reason": "",
+      "target": "venue.legacy_score.breakdown.total"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].screen_status",
+      "plan_reason": "",
+      "target": "fields.screen"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].source_title",
+      "plan_reason": "",
+      "target": "field source_title"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].source_url",
+      "plan_reason": "",
+      "target": "fields.source_url"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].tier_reasons[]",
+      "plan_reason": "",
+      "target": "venue.tier_reasons[]"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 81,
+      "path": "shortlist_ready[].venue_flags[]",
+      "plan_reason": "",
+      "target": "venue.legacy_flags[]"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].venue_tier",
+      "plan_reason": "",
+      "target": "venue.lifecycle"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 77,
+      "path": "shortlist_ready[].verification_question_kinds[]",
+      "plan_reason": "",
+      "target": "venue.verification_question_kinds[]"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 77,
+      "path": "shortlist_ready[].verification_questions[]",
+      "plan_reason": "",
+      "target": "venue.verification_questions[]"
+    },
+    {
+      "disposition": "mapped",
+      "input": "shortlist",
+      "observed": 14,
+      "path": "shortlist_ready[].wifi_status",
+      "plan_reason": "",
+      "target": "fields.wifi"
+    },
+    {
+      "disposition": "mapped",
+      "input": "communities",
+      "observed": 17,
+      "path": "[].accessed_on",
+      "plan_reason": "",
+      "target": "community.verified_at"
+    },
+    {
+      "disposition": "mapped",
+      "input": "communities",
+      "observed": 17,
+      "path": "[].activity_status",
+      "plan_reason": "",
+      "target": "community.activity_status"
+    },
+    {
+      "disposition": "mapped",
+      "input": "communities",
+      "observed": 17,
+      "path": "[].cadence",
+      "plan_reason": "",
+      "target": "community.cadence"
+    },
+    {
+      "disposition": "mapped",
+      "input": "communities",
+      "observed": 17,
+      "path": "[].city_slug",
+      "plan_reason": "",
+      "target": "community.city_slug"
+    },
+    {
+      "disposition": "mapped",
+      "input": "communities",
+      "observed": 17,
+      "path": "[].cohost_evidence_phrase",
+      "plan_reason": "",
+      "target": "community.cohost_evidence_phrase"
+    },
+    {
+      "disposition": "mapped",
+      "input": "communities",
+      "observed": 17,
+      "path": "[].cohost_open",
+      "plan_reason": "",
+      "target": "community.cohost_open"
+    },
+    {
+      "disposition": "mapped",
+      "input": "communities",
+      "observed": 17,
+      "path": "[].contact_info",
+      "plan_reason": "",
+      "target": "community.contact_info"
+    },
+    {
+      "disposition": "mapped",
+      "input": "communities",
+      "observed": 17,
+      "path": "[].evidence.inference",
+      "plan_reason": "",
+      "target": "community.evidence[]"
+    },
+    {
+      "disposition": "mapped",
+      "input": "communities",
+      "observed": 17,
+      "path": "[].evidence.observed_facts",
+      "plan_reason": "",
+      "target": "community.evidence[]"
+    },
+    {
+      "disposition": "mapped",
+      "input": "communities",
+      "observed": 30,
+      "path": "[].focus_tags[]",
+      "plan_reason": "",
+      "target": "community.focus_tags[]"
+    },
+    {
+      "disposition": "mapped",
+      "input": "communities",
+      "observed": 17,
+      "path": "[].group_name",
+      "plan_reason": "",
+      "target": "community.name"
+    },
+    {
+      "disposition": "mapped",
+      "input": "communities",
+      "observed": 17,
+      "path": "[].member_size_public",
+      "plan_reason": "",
+      "target": "community.member_size_public"
+    },
+    {
+      "disposition": "mapped",
+      "input": "communities",
+      "observed": 17,
+      "path": "[].needs_human_verify",
+      "plan_reason": "",
+      "target": "community.needs_human_verify"
+    },
+    {
+      "disposition": "mapped",
+      "input": "communities",
+      "observed": 17,
+      "path": "[].network",
+      "plan_reason": "",
+      "target": "community.network"
+    },
+    {
+      "disposition": "mapped",
+      "input": "communities",
+      "observed": 17,
+      "path": "[].source_title",
+      "plan_reason": "",
+      "target": "community.source_title"
+    },
+    {
+      "disposition": "mapped",
+      "input": "communities",
+      "observed": 17,
+      "path": "[].source_url",
+      "plan_reason": "",
+      "target": "community.source_url"
+    },
+    {
+      "disposition": "mapped",
+      "input": "communities",
+      "observed": 17,
+      "path": "[].typical_venue",
+      "plan_reason": "",
+      "target": "community.typical_venue"
+    },
+    {
+      "disposition": "mapped",
+      "input": "communities",
+      "observed": 17,
+      "path": "[].uncertainty_notes",
+      "plan_reason": "",
+      "target": "community.uncertainty_notes"
+    },
+    {
+      "disposition": "mapped",
+      "input": "communities",
+      "observed": 20,
+      "path": "[].verification_questions[]",
+      "plan_reason": "",
+      "target": "community.verification_questions[]"
+    },
+    {
+      "disposition": "mapped",
+      "input": "conflicts",
+      "observed": 5,
+      "path": "[].accessed_on",
+      "plan_reason": "",
+      "target": "field verified_at"
+    },
+    {
+      "disposition": "mapped",
+      "input": "conflicts",
+      "observed": 5,
+      "path": "[].city_slug",
+      "plan_reason": "",
+      "target": "event.city_slug"
+    },
+    {
+      "disposition": "mapped",
+      "input": "conflicts",
+      "observed": 5,
+      "path": "[].conflict_severity",
+      "plan_reason": "",
+      "target": "fields.conflict_severity"
+    },
+    {
+      "disposition": "mapped",
+      "input": "conflicts",
+      "observed": 5,
+      "path": "[].end_date",
+      "plan_reason": "",
+      "target": "fields.date_range.value.end"
+    },
+    {
+      "disposition": "mapped",
+      "input": "conflicts",
+      "observed": 5,
+      "path": "[].event_name",
+      "plan_reason": "",
+      "target": "event.name"
+    },
+    {
+      "disposition": "mapped",
+      "input": "conflicts",
+      "observed": 5,
+      "path": "[].evidence.inference",
+      "plan_reason": "",
+      "target": "event.evidence[]"
+    },
+    {
+      "disposition": "mapped",
+      "input": "conflicts",
+      "observed": 5,
+      "path": "[].evidence.observed_facts",
+      "plan_reason": "",
+      "target": "event.evidence[]"
+    },
+    {
+      "disposition": "mapped",
+      "input": "conflicts",
+      "observed": 5,
+      "path": "[].kind",
+      "plan_reason": "",
+      "target": "fields.kind"
+    },
+    {
+      "disposition": "mapped",
+      "input": "conflicts",
+      "observed": 5,
+      "path": "[].needs_human_verify",
+      "plan_reason": "",
+      "target": "event.needs_human_verify"
+    },
+    {
+      "disposition": "mapped",
+      "input": "conflicts",
+      "observed": 5,
+      "path": "[].relevance",
+      "plan_reason": "",
+      "target": "fields.relevance"
+    },
+    {
+      "disposition": "mapped",
+      "input": "conflicts",
+      "observed": 5,
+      "path": "[].source_title",
+      "plan_reason": "",
+      "target": "field source_title"
+    },
+    {
+      "disposition": "mapped",
+      "input": "conflicts",
+      "observed": 5,
+      "path": "[].source_url",
+      "plan_reason": "",
+      "target": "field source_url"
+    },
+    {
+      "disposition": "mapped",
+      "input": "conflicts",
+      "observed": 5,
+      "path": "[].start_date",
+      "plan_reason": "",
+      "target": "fields.date_range.value.start"
+    },
+    {
+      "disposition": "mapped",
+      "input": "conflicts",
+      "observed": 8,
+      "path": "[].verification_questions[]",
+      "plan_reason": "",
+      "target": "event.verification_questions[]"
+    },
+    {
+      "disposition": "mapped",
+      "input": "photos",
+      "observed": 1,
+      "path": "alt_note",
+      "plan_reason": "",
+      "target": "photos.json.alt_note"
+    },
+    {
+      "disposition": "mapped",
+      "input": "photos",
+      "observed": 3,
+      "path": "blocked_hosts[].detail",
+      "plan_reason": "",
+      "target": "photos.json.blocked_hosts[]"
+    },
+    {
+      "disposition": "mapped",
+      "input": "photos",
+      "observed": 3,
+      "path": "blocked_hosts[].host",
+      "plan_reason": "",
+      "target": "photos.json.blocked_hosts[]"
+    },
+    {
+      "disposition": "mapped",
+      "input": "photos",
+      "observed": 3,
+      "path": "blocked_hosts[].impacted_venue",
+      "plan_reason": "",
+      "target": "photos.json.blocked_hosts[]"
+    },
+    {
+      "disposition": "mapped",
+      "input": "photos",
+      "observed": 3,
+      "path": "blocked_hosts[].status",
+      "plan_reason": "",
+      "target": "photos.json.blocked_hosts[]"
+    },
+    {
+      "disposition": "mapped",
+      "input": "photos",
+      "observed": 1,
+      "path": "city_slug",
+      "plan_reason": "",
+      "target": "photos.json.city_slug"
+    },
+    {
+      "disposition": "mapped",
+      "input": "photos",
+      "observed": 1,
+      "path": "coverage.hotlinks_verified",
+      "plan_reason": "",
+      "target": "photos.json.coverage"
+    },
+    {
+      "disposition": "mapped",
+      "input": "photos",
+      "observed": 1,
+      "path": "coverage.photos_listed_total",
+      "plan_reason": "",
+      "target": "photos.json.coverage"
+    },
+    {
+      "disposition": "mapped",
+      "input": "photos",
+      "observed": 1,
+      "path": "coverage.venues_total",
+      "plan_reason": "",
+      "target": "photos.json.coverage"
+    },
+    {
+      "disposition": "mapped",
+      "input": "photos",
+      "observed": 2,
+      "path": "coverage.venues_with_1_or_2_names[]",
+      "plan_reason": "",
+      "target": "photos.json.coverage"
+    },
+    {
+      "disposition": "mapped",
+      "input": "photos",
+      "observed": 11,
+      "path": "coverage.venues_with_3_or_more_names[]",
+      "plan_reason": "",
+      "target": "photos.json.coverage"
+    },
+    {
+      "disposition": "mapped",
+      "input": "photos",
+      "observed": 3,
+      "path": "coverage.venues_with_none_names[]",
+      "plan_reason": "",
+      "target": "photos.json.coverage"
+    },
+    {
+      "disposition": "mapped",
+      "input": "photos",
+      "observed": 1,
+      "path": "coverage.with_1_or_2",
+      "plan_reason": "",
+      "target": "photos.json.coverage"
+    },
+    {
+      "disposition": "mapped",
+      "input": "photos",
+      "observed": 1,
+      "path": "coverage.with_3_or_more",
+      "plan_reason": "",
+      "target": "photos.json.coverage"
+    },
+    {
+      "disposition": "mapped",
+      "input": "photos",
+      "observed": 1,
+      "path": "coverage.with_none",
+      "plan_reason": "",
+      "target": "photos.json.coverage"
+    },
+    {
+      "disposition": "mapped",
+      "input": "photos",
+      "observed": 1,
+      "path": "generated_on",
+      "plan_reason": "",
+      "target": "photos.json.generated_on"
+    },
+    {
+      "disposition": "mapped",
+      "input": "photos",
+      "observed": 1,
+      "path": "generator",
+      "plan_reason": "",
+      "target": "photos.json.generator"
+    },
+    {
+      "disposition": "mapped",
+      "input": "photos",
+      "observed": 1,
+      "path": "join_note",
+      "plan_reason": "",
+      "target": "photos.json.join_note"
+    },
+    {
+      "disposition": "mapped",
+      "input": "photos",
+      "observed": 1,
+      "path": "scope",
+      "plan_reason": "",
+      "target": "photos.json.scope"
+    },
+    {
+      "disposition": "mapped",
+      "input": "photos",
+      "note": "Joined to the store venue by exact name; the sidecar slug is kept.",
+      "observed": 16,
+      "path": "venues[].notes",
+      "plan_reason": "",
+      "target": "photos.json.venues[].photos[] / city.json photos"
+    },
+    {
+      "disposition": "mapped",
+      "input": "photos",
+      "note": "Joined to the store venue by exact name; the sidecar slug is kept.",
+      "observed": 31,
+      "path": "venues[].pages_checked[]",
+      "plan_reason": "",
+      "target": "photos.json.venues[].photos[] / city.json photos"
+    },
+    {
+      "disposition": "mapped",
+      "input": "photos",
+      "note": "Joined to the store venue by exact name; the sidecar slug is kept.",
+      "observed": 3,
+      "path": "venues[].photos[]",
+      "plan_reason": "",
+      "target": "photos.json.venues[].photos[] / city.json photos"
+    },
+    {
+      "disposition": "mapped",
+      "input": "photos",
+      "note": "Joined to the store venue by exact name; the sidecar slug is kept.",
+      "observed": 49,
+      "path": "venues[].photos[].alt",
+      "plan_reason": "",
+      "target": "photos.json.venues[].photos[] / city.json photos"
+    },
+    {
+      "disposition": "mapped",
+      "input": "photos",
+      "note": "Joined to the store venue by exact name; the sidecar slug is kept.",
+      "observed": 49,
+      "path": "venues[].photos[].alt_basis",
+      "plan_reason": "",
+      "target": "photos.json.venues[].photos[] / city.json photos"
+    },
+    {
+      "disposition": "mapped",
+      "input": "photos",
+      "note": "Joined to the store venue by exact name; the sidecar slug is kept.",
+      "observed": 49,
+      "path": "venues[].photos[].hotlink_ok",
+      "plan_reason": "",
+      "target": "photos.json.venues[].photos[] / city.json photos"
+    },
+    {
+      "disposition": "mapped",
+      "input": "photos",
+      "note": "Joined to the store venue by exact name; the sidecar slug is kept.",
+      "observed": 49,
+      "path": "venues[].photos[].source_page",
+      "plan_reason": "",
+      "target": "photos.json.venues[].photos[] / city.json photos"
+    },
+    {
+      "disposition": "mapped",
+      "input": "photos",
+      "note": "Joined to the store venue by exact name; the sidecar slug is kept.",
+      "observed": 49,
+      "path": "venues[].photos[].thumb_note",
+      "plan_reason": "",
+      "target": "photos.json.venues[].photos[] / city.json photos"
+    },
+    {
+      "disposition": "mapped",
+      "input": "photos",
+      "note": "Joined to the store venue by exact name; the sidecar slug is kept.",
+      "observed": 49,
+      "path": "venues[].photos[].url",
+      "plan_reason": "",
+      "target": "photos.json.venues[].photos[] / city.json photos"
+    },
+    {
+      "disposition": "mapped",
+      "input": "photos",
+      "note": "Joined to the store venue by exact name; the sidecar slug is kept.",
+      "observed": 49,
+      "path": "venues[].photos[].verified.bytes",
+      "plan_reason": "",
+      "target": "photos.json.venues[].photos[] / city.json photos"
+    },
+    {
+      "disposition": "mapped",
+      "input": "photos",
+      "note": "Joined to the store venue by exact name; the sidecar slug is kept.",
+      "observed": 49,
+      "path": "venues[].photos[].verified.content_type",
+      "plan_reason": "",
+      "target": "photos.json.venues[].photos[] / city.json photos"
+    },
+    {
+      "disposition": "mapped",
+      "input": "photos",
+      "note": "Joined to the store venue by exact name; the sidecar slug is kept.",
+      "observed": 4,
+      "path": "venues[].photos[].verified.note",
+      "plan_reason": "",
+      "target": "photos.json.venues[].photos[] / city.json photos"
+    },
+    {
+      "disposition": "mapped",
+      "input": "photos",
+      "note": "Joined to the store venue by exact name; the sidecar slug is kept.",
+      "observed": 49,
+      "path": "venues[].photos[].verified.status",
+      "plan_reason": "",
+      "target": "photos.json.venues[].photos[] / city.json photos"
+    },
+    {
+      "disposition": "mapped",
+      "input": "photos",
+      "note": "Joined to the store venue by exact name; the sidecar slug is kept.",
+      "observed": 16,
+      "path": "venues[].venue_id",
+      "plan_reason": "",
+      "target": "photos.json.venues[].photos[] / city.json photos"
+    },
+    {
+      "disposition": "mapped",
+      "input": "photos",
+      "note": "Joined to the store venue by exact name; the sidecar slug is kept.",
+      "observed": 16,
+      "path": "venues[].venue_index",
+      "plan_reason": "",
+      "target": "photos.json.venues[].photos[] / city.json photos"
+    },
+    {
+      "disposition": "mapped",
+      "input": "photos",
+      "note": "Joined to the store venue by exact name; the sidecar slug is kept.",
+      "observed": 16,
+      "path": "venues[].venue_name",
+      "plan_reason": "",
+      "target": "photos.json.venues[].photos[] / city.json photos"
+    },
+    {
+      "disposition": "mapped",
+      "input": "photos",
+      "observed": 1,
+      "path": "verification_method",
+      "plan_reason": "",
+      "target": "photos.json.verification_method"
+    },
+    {
+      "disposition": "mapped",
+      "input": "usage",
+      "observed": 1,
+      "path": "city_slug",
+      "plan_reason": "",
+      "target": "city_slug (equality checked at build)"
+    },
+    {
+      "disposition": "mapped",
+      "input": "usage",
+      "observed": 1,
+      "path": "note",
+      "plan_reason": "",
+      "target": "usage.json#note (owner-authored provenance)"
+    },
+    {
+      "disposition": "mapped",
+      "input": "usage",
+      "observed": 1,
+      "path": "schema_version",
+      "plan_reason": "",
+      "target": "usage sidecar schema (validated at build)"
+    },
+    {
+      "disposition": "mapped",
+      "input": "usage",
+      "observed": 1,
+      "path": "visits[].address",
+      "plan_reason": "",
+      "target": "visits[]"
+    },
+    {
+      "disposition": "mapped",
+      "input": "usage",
+      "observed": 1,
+      "path": "visits[].address_source",
+      "plan_reason": "",
+      "target": "visits[]"
+    },
+    {
+      "disposition": "mapped",
+      "input": "usage",
+      "observed": 1,
+      "path": "visits[].attendance",
+      "plan_reason": "",
+      "target": "visits[]"
+    },
+    {
+      "disposition": "mapped",
+      "input": "usage",
+      "observed": 1,
+      "path": "visits[].date",
+      "plan_reason": "",
+      "target": "visits[]"
+    },
+    {
+      "disposition": "mapped",
+      "input": "usage",
+      "observed": 1,
+      "path": "visits[].date_precision",
+      "plan_reason": "",
+      "target": "visits[]"
+    },
+    {
+      "disposition": "mapped",
+      "input": "usage",
+      "observed": 1,
+      "path": "visits[].duration",
+      "plan_reason": "",
+      "target": "visits[]"
+    },
+    {
+      "disposition": "mapped",
+      "input": "usage",
+      "observed": 1,
+      "path": "visits[].event_name",
+      "plan_reason": "",
+      "target": "visits[]"
+    },
+    {
+      "disposition": "mapped",
+      "input": "usage",
+      "observed": 1,
+      "path": "visits[].notes",
+      "plan_reason": "",
+      "target": "visits[]"
+    },
+    {
+      "disposition": "mapped",
+      "input": "usage",
+      "observed": 1,
+      "path": "visits[].outcome",
+      "plan_reason": "",
+      "target": "visits[]"
+    },
+    {
+      "disposition": "mapped",
+      "input": "usage",
+      "observed": 1,
+      "path": "visits[].platform_listing_id",
+      "plan_reason": "",
+      "target": "visits[]"
+    },
+    {
+      "disposition": "mapped",
+      "input": "usage",
+      "observed": 1,
+      "path": "visits[].source",
+      "plan_reason": "",
+      "target": "visits[]"
+    },
+    {
+      "disposition": "mapped",
+      "input": "usage",
+      "observed": 1,
+      "path": "visits[].venue_name",
+      "plan_reason": "",
+      "target": "visits[]"
+    },
+    {
+      "disposition": "copied_verbatim",
+      "input": "registry",
+      "observed": 69,
+      "path": "coverage[].accessed_on",
+      "plan_reason": "",
+      "target": "coverage[]"
+    },
+    {
+      "disposition": "copied_verbatim",
+      "input": "registry",
+      "observed": 69,
+      "path": "coverage[].end_date",
+      "plan_reason": "",
+      "target": "coverage[]"
+    },
+    {
+      "disposition": "copied_verbatim",
+      "input": "registry",
+      "observed": 3,
+      "path": "coverage[].evidence.inference",
+      "plan_reason": "",
+      "target": "coverage[]"
+    },
+    {
+      "disposition": "copied_verbatim",
+      "input": "registry",
+      "observed": 69,
+      "path": "coverage[].evidence.observed_facts",
+      "plan_reason": "",
+      "target": "coverage[]"
+    },
+    {
+      "disposition": "copied_verbatim",
+      "input": "registry",
+      "observed": 69,
+      "path": "coverage[].jurisdiction_id",
+      "plan_reason": "",
+      "target": "coverage[]"
+    },
+    {
+      "disposition": "copied_verbatim",
+      "input": "registry",
+      "observed": 69,
+      "path": "coverage[].kind",
+      "plan_reason": "",
+      "target": "coverage[]"
+    },
+    {
+      "disposition": "copied_verbatim",
+      "input": "registry",
+      "observed": 69,
+      "path": "coverage[].needs_human_verify",
+      "plan_reason": "",
+      "target": "coverage[]"
+    },
+    {
+      "disposition": "copied_verbatim",
+      "input": "registry",
+      "observed": 69,
+      "path": "coverage[].source_edition",
+      "plan_reason": "",
+      "target": "coverage[]"
+    },
+    {
+      "disposition": "copied_verbatim",
+      "input": "registry",
+      "observed": 69,
+      "path": "coverage[].source_locator",
+      "plan_reason": "",
+      "target": "coverage[]"
+    },
+    {
+      "disposition": "copied_verbatim",
+      "input": "registry",
+      "observed": 69,
+      "path": "coverage[].source_title",
+      "plan_reason": "",
+      "target": "coverage[]"
+    },
+    {
+      "disposition": "copied_verbatim",
+      "input": "registry",
+      "observed": 69,
+      "path": "coverage[].source_url",
+      "plan_reason": "",
+      "target": "coverage[]"
+    },
+    {
+      "disposition": "copied_verbatim",
+      "input": "registry",
+      "observed": 69,
+      "path": "coverage[].start_date",
+      "plan_reason": "",
+      "target": "coverage[]"
+    },
+    {
+      "disposition": "copied_verbatim",
+      "input": "registry",
+      "observed": 69,
+      "path": "coverage[].verification_questions[]",
+      "plan_reason": "",
+      "target": "coverage[]"
+    },
+    {
+      "disposition": "copied_verbatim",
+      "input": "registry",
+      "observed": 354,
+      "path": "holidays[].accessed_on",
+      "plan_reason": "",
+      "target": "holidays[]"
+    },
+    {
+      "disposition": "copied_verbatim",
+      "input": "registry",
+      "observed": 4,
+      "path": "holidays[].end_boundary_source.accessed_on",
+      "plan_reason": "",
+      "target": "holidays[]"
+    },
+    {
+      "disposition": "copied_verbatim",
+      "input": "registry",
+      "observed": 4,
+      "path": "holidays[].end_boundary_source.source_edition",
+      "plan_reason": "",
+      "target": "holidays[]"
+    },
+    {
+      "disposition": "copied_verbatim",
+      "input": "registry",
+      "observed": 4,
+      "path": "holidays[].end_boundary_source.source_locator",
+      "plan_reason": "",
+      "target": "holidays[]"
+    },
+    {
+      "disposition": "copied_verbatim",
+      "input": "registry",
+      "observed": 4,
+      "path": "holidays[].end_boundary_source.source_title",
+      "plan_reason": "",
+      "target": "holidays[]"
+    },
+    {
+      "disposition": "copied_verbatim",
+      "input": "registry",
+      "observed": 4,
+      "path": "holidays[].end_boundary_source.source_url",
+      "plan_reason": "",
+      "target": "holidays[]"
+    },
+    {
+      "disposition": "copied_verbatim",
+      "input": "registry",
+      "observed": 354,
+      "path": "holidays[].end_date",
+      "plan_reason": "",
+      "target": "holidays[]"
+    },
+    {
+      "disposition": "copied_verbatim",
+      "input": "registry",
+      "observed": 17,
+      "path": "holidays[].evidence.inference",
+      "plan_reason": "",
+      "target": "holidays[]"
+    },
+    {
+      "disposition": "copied_verbatim",
+      "input": "registry",
+      "observed": 354,
+      "path": "holidays[].evidence.observed_facts",
+      "plan_reason": "",
+      "target": "holidays[]"
+    },
+    {
+      "disposition": "copied_verbatim",
+      "input": "registry",
+      "observed": 354,
+      "path": "holidays[].holiday_name",
+      "plan_reason": "",
+      "target": "holidays[]"
+    },
+    {
+      "disposition": "copied_verbatim",
+      "input": "registry",
+      "observed": 354,
+      "path": "holidays[].jurisdiction_id",
+      "plan_reason": "",
+      "target": "holidays[]"
+    },
+    {
+      "disposition": "copied_verbatim",
+      "input": "registry",
+      "observed": 354,
+      "path": "holidays[].kind",
+      "plan_reason": "",
+      "target": "holidays[]"
+    },
+    {
+      "disposition": "copied_verbatim",
+      "input": "registry",
+      "observed": 354,
+      "path": "holidays[].needs_human_verify",
+      "plan_reason": "",
+      "target": "holidays[]"
+    },
+    {
+      "disposition": "copied_verbatim",
+      "input": "registry",
+      "observed": 251,
+      "path": "holidays[].observance",
+      "plan_reason": "",
+      "target": "holidays[]"
+    },
+    {
+      "disposition": "copied_verbatim",
+      "input": "registry",
+      "observed": 354,
+      "path": "holidays[].source_edition",
+      "plan_reason": "",
+      "target": "holidays[]"
+    },
+    {
+      "disposition": "copied_verbatim",
+      "input": "registry",
+      "observed": 354,
+      "path": "holidays[].source_locator",
+      "plan_reason": "",
+      "target": "holidays[]"
+    },
+    {
+      "disposition": "copied_verbatim",
+      "input": "registry",
+      "observed": 354,
+      "path": "holidays[].source_title",
+      "plan_reason": "",
+      "target": "holidays[]"
+    },
+    {
+      "disposition": "copied_verbatim",
+      "input": "registry",
+      "observed": 354,
+      "path": "holidays[].source_url",
+      "plan_reason": "",
+      "target": "holidays[]"
+    },
+    {
+      "disposition": "copied_verbatim",
+      "input": "registry",
+      "observed": 354,
+      "path": "holidays[].start_date",
+      "plan_reason": "",
+      "target": "holidays[]"
+    },
+    {
+      "disposition": "copied_verbatim",
+      "input": "registry",
+      "observed": 354,
+      "path": "holidays[].verification_questions[]",
+      "plan_reason": "",
+      "target": "holidays[]"
+    },
+    {
+      "disposition": "mapped",
+      "input": "registry",
+      "observed": 34,
+      "path": "jurisdiction_ids[]",
+      "plan_reason": "",
+      "target": "holiday_registry.jurisdiction_ids[]"
+    }
+  ],
+  "h1_extract": {
+    "coverage_rows": 29,
+    "coverage_rows_represented_in_registry": 29,
+    "holiday_rows": 70,
+    "holiday_rows_represented_in_registry": 70,
+    "source": "research/san-francisco/2027-h1/current/event_plan.json#calendar_context",
+    "unrepresented": []
+  },
+  "inputs": [
+    {
+      "input": "event_plan",
+      "path": "research/san-francisco/2027-h1/current/event_plan.json",
+      "sha256": "dd292f6b449e41bb76b986a48bf97950937c3b2c6a3c112be9bd07986d824cbd"
+    },
+    {
+      "input": "shortlist",
+      "path": "research/san-francisco/2027-h1/venues.shortlist.json",
+      "sha256": "c2cb4b243c29082db78201bbc8643e013f1e9f73e64edc3ab2612acb494359f2"
+    },
+    {
+      "input": "communities",
+      "path": "research/san-francisco/2027-h1/communities.raw.json",
+      "sha256": "3245b52052652d8a14713c59c660412d3a0b2424af59c636e7c0f99c4735f578"
+    },
+    {
+      "input": "conflicts",
+      "path": "research/san-francisco/2027-h1/calendar_conflicts.json",
+      "sha256": "7c2e20b08bb4dec735a3e2fb135ce00f26ed6d8ed2d86bbad8382ba51498ef6e"
+    },
+    {
+      "input": "photos",
+      "path": "research/san-francisco/2027-h1/photos.raw.json",
+      "sha256": "7abe1f9a762282a647b0bbda4bbc57ff6fcc98ba9c77be9ca0ba9cacf427b918"
+    },
+    {
+      "input": "usage",
+      "path": "research/san-francisco/city/usage.json",
+      "sha256": "52fa11b4b4a2d9192d0ea7df5ec0c1edf214ac87dcfd19fa741695c56456d330"
+    },
+    {
+      "input": "registry",
+      "path": "/home/joe/repo_dev/hermes-skills/plan-event/references/school_holidays.json",
+      "sha256": "b823b0e20ea437adc260c905ec6f0ab82da20a95b3f22bd0ccb007011d175840"
+    }
+  ],
+  "lookups": [
+    {
+      "disposition": "mapped",
+      "fields_used": [
+        "timezone"
+      ],
+      "input": "/home/joe/repo_dev/hermes-skills/plan-event/references/cities.json",
+      "record": "san-francisco",
+      "sha256": "9b6b5713064ca61b84f4baf38127b0f9e7529a36bfa838e28ef30cdc90c8c7e8",
+      "target": "timezone (currency cross-checked against event_plan)"
+    }
+  ],
+  "photos": {
+    "discovery_log": {
+      "path": "research/san-francisco/2027-h1/photo_discovery_log.md",
+      "sha256": "fdcb1968dc34072315cbe79e537cdf9846195064a7e5e7a8f6e82f4bf7486755"
+    },
+    "hand_check": {
+      "empty_venue_buckets": [
+        "Alliance Francaise de San Francisco - Theater",
+        "Common Space - Large Loft in the Marina (Peerspace listing 647656b424653c000e5dacf6)",
+        "The Marsh San Francisco - Studio"
+      ],
+      "matched": 16,
+      "method": "exact sidecar venue_name == store venue name; no similarity matching",
+      "photos": 49,
+      "records": 16,
+      "statement": "Name join checked by hand against every sidecar record: each venue_name matches exactly one store venue, and the empty buckets are venues the sidecar genuinely has no photos for.",
+      "unmatched_records": 0
+    },
+    "sidecar": {
+      "path": "research/san-francisco/2027-h1/photos.raw.json",
+      "sha256": "7abe1f9a762282a647b0bbda4bbc57ff6fcc98ba9c77be9ca0ba9cacf427b918"
+    }
+  },
+  "registry": {
+    "bundle_declared_sha256": "9ab32af47b69a6295a8f80e0bcaf138de7d37b8e36feaa3aac68ad0c783c0c0e",
+    "coverage_rows": 69,
+    "holiday_rows": 354,
+    "matches_bundle_declaration": false,
+    "note": "The registry is a live cross-repo input. The store pins the digest of the rows it read; a later change is reported by --check --registry instead of silently re-seeding.",
+    "path": "/home/joe/repo_dev/hermes-skills/plan-event/references/school_holidays.json",
+    "sha256": "b823b0e20ea437adc260c905ec6f0ab82da20a95b3f22bd0ccb007011d175840"
+  },
+  "run_id": "run-20261120-sf-h1-migration",
+  "schema_version": "city-migration-report/1",
+  "sources": {
+    "bundle_sources": 35,
+    "mandatory_checked": 0,
+    "mandatory_recorded": 5,
+    "mandatory_required": [
+      "https://miragather.com/",
+      "https://miragather.com/?tab=side",
+      "https://miragather.com/ai",
+      "https://aitinkerers.org/all_cities",
+      "https://luma.com/decentralized_ai_events?period=past"
+    ],
+    "note": "Plan §4 lists five mandatory sources per run. The H1 bundle records none of them, so they are stored with checked_on null and check_status=not_checked_in_this_migration rather than with an invented date. This seed is a one-time migration, not a refresh run: the mandatory-source merge gate applies to C3."
+  },
+  "summary": {
+    "copied_verbatim": 33,
+    "dropped": 40,
+    "duplicate_conflict": 5,
+    "duplicate_dedup": 156,
+    "fields_observed": 11346,
+    "mapped": 232,
+    "paths": 466,
+    "unexplained": 0,
+    "unmapped": 0
+  },
+  "updated_at": "2026-11-22T03:15:00Z"
+}

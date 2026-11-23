@@ -1,0 +1,305 @@
+{
+  "kind": "venue_copy",
+  "schema_version": "city-updates/1",
+  "city_slug": "san-francisco",
+  "generated_at": "2026-11-22T00:00:00Z",
+  "verified_at": "2026-11-22",
+  "revision": 1,
+  "notes": [
+    "G3 content bundle: 16 display_name and about claims, one per stored venue.",
+    "Every about clause restates an observed_fact or a fields.* claim already in city.json; nothing new is asserted here.",
+    "display_name labels follow the measured labels in g1-plan-v1.md (Chrome line-count gate at 1440/1280).",
+    "Words that the source pages use promotionally (beautiful, unparalleled, wonderful) are not repeated; the measured facts replace them.",
+    "No rates are stated where the store records price as null or unknown; the text says unpublished instead."
+  ],
+  "venues": {
+    "sf-03266107e45f": {
+      "name": "CounterPulse - Main Stage",
+      "source_title": "Rentals - CounterPulse (80 Turk Street) - Main Stage Private Event $50/hr",
+      "display_name": {
+        "value": "CounterPulse - Main Stage",
+        "verified_at": "2026-11-22",
+        "source_url": "https://counterpulse.org/rentals/",
+        "source_locator": "Rentals page lists 'Main Stage Private Event - $50/hr'; no capacity, hours, screen or Wi-Fi appear on it.",
+        "confidence": "high"
+      },
+      "about": {
+        "value": "Main Stage in CounterPulse's arts building, with a published $50/hour private-event rate. Its 108 seated capacity comes from third-party listings, and no opening hours, projection or Wi-Fi are published.",
+        "verified_at": "2026-11-22",
+        "source_url": "https://counterpulse.org/rentals/",
+        "source_locator": "Rentals page: 'Main Stage Private Event - $50/hr'. Store claim capacity 108 has basis 'venue_claim' but the evidence text attributes 108 seated / 149 standing to Cvent and The Vendry, not to counterpulse.org.",
+        "confidence": "medium"
+      }
+    },
+    "sf-277ae6031e3f": {
+      "name": "Brava Theater Center - Lobby",
+      "source_title": "Rentals at Brava - Brava Theater Center (2781 24th Street) - Lobby capacity 80, rates by email",
+      "display_name": {
+        "value": "Brava Theater Center - Lobby",
+        "verified_at": "2026-11-22",
+        "source_url": "https://www.brava.org/rentals",
+        "source_locator": "Rentals page: 'BRAVA LOBBY Capacity: 80'.",
+        "confidence": "high"
+      },
+      "about": {
+        "value": "The 80-capacity lobby of Brava Theater Center, bookable alone or with the Main Stage. Rates are unpublished, and the theater normally opens to clients after 2:00 pm, so earlier move-in may carry staff fees.",
+        "verified_at": "2026-11-22",
+        "source_url": "https://www.brava.org/rentals",
+        "source_locator": "'BRAVA LOBBY Capacity: 80 ... can be booked as a stand alone venue or in conjunction with an event on our Main Stage'; policy: 'normally opens for clients and public after 2:00 pm' with hourly staff fees for earlier move-in; rates by email only.",
+        "confidence": "high"
+      }
+    },
+    "sf-2a8505a53998": {
+      "name": "Brava Theater Center - Studio",
+      "source_title": "Studio - Brava Theater Center (2781 24th Street) - seating capacity 60",
+      "display_name": {
+        "value": "Brava Theater Center - Studio",
+        "verified_at": "2026-11-22",
+        "source_url": "https://www.brava.org/studio",
+        "source_locator": "Studio page: 'Seating Capacity: 60 ... Room layout: 25'x45' with one wall full-length mirrors'.",
+        "confidence": "high"
+      },
+      "about": {
+        "value": "A 60-seat studio at Brava Theater Center with a 25-by-45-foot sprung floor, a mirrored wall and a floor-to-ceiling curtain. Rates are unpublished, and every rental requires a Brava house manager.",
+        "verified_at": "2026-11-22",
+        "source_url": "https://www.brava.org/studio",
+        "source_locator": "Studio page: 'Seating Capacity: 60 ... 25'x45' with one wall full-length mirrors ... sprung, hard wood floor ... floor to ceiling black curtain'. Rentals page: 'All clients hire a Brava house manager', rates by email.",
+        "confidence": "high"
+      }
+    },
+    "sf-307c9dd57430": {
+      "name": "Alliance Francaise de San Francisco - Theater",
+      "source_title": "Theater Rental Policy & Fee Schedule - Alliance Francaise de San Francisco (1345 Bush Street)",
+      "display_name": {
+        "value": "Alliance Francaise – Theater",
+        "verified_at": "2026-11-22",
+        "source_url": "https://www.afsf.com/about-afsf/space-rental/theater-rental/",
+        "source_locator": "Fee schedule: 'The ... performing arts venue seats 74 guests'.",
+        "confidence": "high"
+      },
+      "about": {
+        "value": "A 74-seat theater for seated presentations and screenings, with a published $800 daytime rate and mandatory front-desk staffing at $60/hour. The weekday window is 10:00 to 17:00, and Saturday closes at 14:00, short of an eight-hour day.",
+        "verified_at": "2026-11-22",
+        "source_url": "https://www.afsf.com/about-afsf/space-rental/theater-rental/",
+        "source_locator": "'seats 74 guests'; daytime Private Events $800; 'Monday to Friday 10:00 am - 5:00 pm; Saturday 10:00 am - 2:00 pm'; 'Front desk staffing is mandatory and charged at $60 per hour.'",
+        "confidence": "high"
+      }
+    },
+    "sf-67623ac7c2a8": {
+      "name": "Ruth Williams Opera House (Bayview Opera House) - Main Theater",
+      "source_title": "Rentals - Ruth Williams Opera House (4705 3rd Street) - Main Theater base rate $900",
+      "display_name": {
+        "value": "Ruth Williams – Main Theater",
+        "verified_at": "2026-11-22",
+        "source_url": "https://rwoh.org/rentals/",
+        "source_locator": "Rentals page: 'an open auditorium with a capacity of up to 300 guests, featuring a proscenium stage'.",
+        "confidence": "high"
+      },
+      "about": {
+        "value": "A 300-capacity auditorium with a proscenium stage, quoted at a $900 base rate for events that run at least five hours. Projection is an extra starting at $950, and a 3% service fee plus a 25% admin fee apply to all transactions.",
+        "verified_at": "2026-11-22",
+        "source_url": "https://rwoh.org/rentals/",
+        "source_locator": "'capacity of up to 300 guests, featuring a proscenium stage'; 'All events must last a minimum of 5 hours'; 'Base Rate Main Theater: $900.00'; 'Projection System: $950+'; '*3% service fee and 25% admin fee applied to all transactions'.",
+        "confidence": "high"
+      }
+    },
+    "sf-70dcce8a309f": {
+      "name": "Gray Area - Lobby (Grand Theater)",
+      "source_title": "Venue Rental - Gray Area / Grand Theater (2665 Mission Street) - Lobby 80 capacity",
+      "display_name": {
+        "value": "Gray Area - Lobby (Grand Theater)",
+        "verified_at": "2026-11-22",
+        "source_url": "https://grayarea.org/venue-rental/",
+        "source_locator": "Venue page: 'Lobby ... 800 square feet, 80 capacity, 50 seated'.",
+        "confidence": "high"
+      },
+      "about": {
+        "value": "An 800-square-foot lobby in the Grand Theater building, rated for 80 people or 50 seated, with confirmed Wi-Fi and a full bar. Rates are unpublished, and outside food delivery is not allowed.",
+        "verified_at": "2026-11-22",
+        "source_url": "https://grayarea.org/venue-rental/",
+        "source_locator": "'Lobby ... 800 square feet, 80 capacity, 50 seated'; 'fiber internet, and full bar packages'; no prices on the page. Delivery refusal recorded from grayarea.org/faq/.",
+        "confidence": "high"
+      }
+    },
+    "sf-7196ba5d7e75": {
+      "name": "The Marsh San Francisco - Mainstage",
+      "source_title": "Rental Pricing - The Marsh (1062 Valencia Street) - Mainstage and Studio rate table",
+      "display_name": {
+        "value": "The Marsh SF – Mainstage",
+        "verified_at": "2026-11-22",
+        "source_url": "https://themarsh.org/rental-pricing/",
+        "source_locator": "Rate table: 'Mainstage - Capacity: Up to 105 theater seats'.",
+        "confidence": "high"
+      },
+      "about": {
+        "value": "A 105-seat theater with a full-day rate of $2,000 on Monday to Thursday and $2,500 Friday to Sunday. A Marsh Arts Representative is required at $40/hour, and event liability insurance of $1,000,000 is required.",
+        "verified_at": "2026-11-22",
+        "source_url": "https://themarsh.org/rental-pricing/",
+        "source_locator": "'Mainstage - Capacity: Up to 105 theater seats - Mon-Thurs: ... $2,000 Full-Day (>4 Hours) - Fri-Sun: ... $2,500 Full-Day'; 'A Marsh Arts Representative is REQUIRED $40 per hour'; '$1,000,000 coverage'.",
+        "confidence": "high"
+      }
+    },
+    "sf-791be009d2a8": {
+      "name": "Z Space - Steindler Stage",
+      "source_title": "Rentals Overview - Z Space (450 Florida Street) - Steindler Stage 229-236 seats",
+      "display_name": {
+        "value": "Z Space - Steindler Stage",
+        "verified_at": "2026-11-22",
+        "source_url": "https://zspace.org/rent",
+        "source_locator": "Rentals page: 'Capacity: Performance seating: 229-236'.",
+        "confidence": "high"
+      },
+      "about": {
+        "value": "A flexible stage seating 229 to 236, with a 40-by-80-foot sprung floor, front and rear projection, and the Z Lobby included in the rental. No rates are published, and most rentals need four to six months of notice.",
+        "verified_at": "2026-11-22",
+        "source_url": "https://zspace.org/rent",
+        "source_locator": "'Stage is 40' wide by 80' deep, sprung floor - Capacity: Performance seating: 229-236 ... Front and rear projection screens - The Z Lobby space is included'; 'most rentals need 4-6 months advance notice'; no prices.",
+        "confidence": "high"
+      }
+    },
+    "sf-861f3552141b": {
+      "name": "The Lab - Main Auditorium (Redstone Building)",
+      "source_title": "Rent The Lab for Private Events - The Lab (2948 16th Street) - 150 seated, 450 standing",
+      "display_name": {
+        "value": "The Lab – Main Auditorium",
+        "verified_at": "2026-11-22",
+        "source_url": "https://www.thelab.org/rental",
+        "source_locator": "Rental page: 'Capacity 150 seated, 450 standing'; 'primary 3,500 sq. ft. performance space'.",
+        "confidence": "high"
+      },
+      "about": {
+        "value": "A 3,500-square-foot performance space seating 150, with sound, projection, lighting and a green room included in the rental. Rates are unpublished, and inquiries go to rentals@thelab.org.",
+        "verified_at": "2026-11-22",
+        "source_url": "https://www.thelab.org/rental",
+        "source_locator": "'Rentals include the use of the sound system, projection, lighting, and green room, as well as the primary 3,500 sq. ft. performance space'; 'Capacity 150 seated'; 'email rentals@thelab.org'; no prices.",
+        "confidence": "high"
+      }
+    },
+    "sf-9ca5a5071dd1": {
+      "name": "Z Space - Z Lobby",
+      "source_title": "Rentals Overview - Z Space (450 Florida Street) - Z Lobby approx 125 standing",
+      "display_name": {
+        "value": "Z Space - Z Lobby",
+        "verified_at": "2026-11-22",
+        "source_url": "https://zspace.org/rent",
+        "source_locator": "Rentals page: 'Capacity: approx 125 people standing'.",
+        "confidence": "high"
+      },
+      "about": {
+        "value": "A lobby with 40-foot ceilings, a small prep kitchen and a full bar, listed at about 125 people standing. A sound system, PA and 12-by-8-foot movable stage cost extra, and no rates are published.",
+        "verified_at": "2026-11-22",
+        "source_url": "https://zspace.org/rent",
+        "source_locator": "'Z LOBBY - 40' high ceilings ... Small prep kitchen available - Full bar ... Sound system & PA system and 12' x 8' movable stage available (extra charges apply) - Capacity: approx 125 people standing'.",
+        "confidence": "high"
+      }
+    },
+    "sf-a9e2573503df": {
+      "name": "The Marsh San Francisco - Studio",
+      "source_title": "Rental Pricing - The Marsh (1062 Valencia Street) - Studio $2,000 Fri-Sun full day",
+      "display_name": {
+        "value": "The Marsh SF – Studio",
+        "verified_at": "2026-11-22",
+        "source_url": "https://themarsh.org/rental-pricing/",
+        "source_locator": "Rate table: 'Studio - Capacity: 60-90 seats, flexible configuration'.",
+        "confidence": "high"
+      },
+      "about": {
+        "value": "A flexible studio seating 60 to 90, with a full-day rate of $1,500 on Monday to Thursday and $2,000 Friday to Sunday. A Marsh Arts Representative is required at $40/hour.",
+        "verified_at": "2026-11-22",
+        "source_url": "https://themarsh.org/rental-pricing/",
+        "source_locator": "'Studio - Capacity: 60-90 seats, flexible configuration - Mon-Thurs: ... $1,500 Full-Day (>4 Hours) - Fri-Sun: ... $2,000 Full-Day'; 'A Marsh Arts Representative is REQUIRED $40 per hour'.",
+        "confidence": "high"
+      }
+    },
+    "sf-aa633c4fb565": {
+      "name": "Root Division - Front & Rear Galleries",
+      "source_title": "Venue Rentals - Root Division (1131 Mission Street) - Front & Rear Galleries $1800, 5.5 hour rental",
+      "display_name": {
+        "value": "Root Division – Front & Rear",
+        "verified_at": "2026-11-22",
+        "source_url": "https://rootdivision.org/about/the-space/venue-rental",
+        "source_locator": "Rental page: 'Front & Rear Galleries (1750 sq ft) $1800 ... Capacity 100-120 (70 seated)'.",
+        "confidence": "high"
+      },
+      "about": {
+        "value": "The Front and Rear Galleries together, 1,750 square feet, rated for 100 to 120 people or 70 seated, rented for $1,800 across a 5.5-hour block that includes set-up and clean-up. Extra event hours are $150.",
+        "verified_at": "2026-11-22",
+        "source_url": "https://rootdivision.org/about/the-space/venue-rental",
+        "source_locator": "'All of our rates below reflect a 5.5 hour rental fee (4 hour event with 1.5 hour set/ clean up)'; 'Front & Rear Galleries (1750 sq ft) $1800 ... Capacity 100-120 (70 seated)'; extra event hours $150.",
+        "confidence": "high"
+      }
+    },
+    "sf-b3b27dca9c85": {
+      "name": "The Women's Building - Audre Lorde Room",
+      "source_title": "Rent a Space - The Women's Building (3543 18th Street) - Audre Lorde Room $165/hour",
+      "display_name": {
+        "value": "Women's Building – Audre Lorde Room",
+        "verified_at": "2026-11-22",
+        "source_url": "https://www.womensbuilding.org/our-building/rent-a-space",
+        "source_locator": "Rental page: 'Audre Lorde - This 1,500 sq. ft. room ... Capacity ... Conference (ONLY chairs) 70 capacity'.",
+        "confidence": "high"
+      },
+      "about": {
+        "value": "A 1,500-square-foot room rated for 70 conference seats or 60 at tables, with 65 chairs and eight tables included. The published $165/hour rate is stated for weekday bookings between 9:00 and 17:00 only.",
+        "verified_at": "2026-11-22",
+        "source_url": "https://www.womensbuilding.org/our-building/rent-a-space",
+        "source_locator": "'This 1,500 sq. ft. room ... Rental includes 8 rectangular (2.5ft x 6ft) tables and 65 chairs'; 'Conference (ONLY chairs) 70 capacity - Banquet (Tables and chairs) 60 capacity'; 'Monday to Friday reservations only between 9 am and 5 pm. $165 per hour.'",
+        "confidence": "high"
+      }
+    },
+    "sf-b3be38e30978": {
+      "name": "SOMArts Cultural Center - Main Event Space (Essentials Package)",
+      "source_title": "Event Rentals - SOMArts (934 Brannan Street) - Essentials / Signature / Deluxe package pricing",
+      "display_name": {
+        "value": "SOMArts – Main Event Space",
+        "verified_at": "2026-11-22",
+        "source_url": "https://somarts.org/rentals/",
+        "source_locator": "Rentals page: 'EVENT SPACE 5810 SQ Ft (incl 1470 sq ft stage)'.",
+        "confidence": "high"
+      },
+      "about": {
+        "value": "The 5,810-square-foot event space, with a 1,470-square-foot stage, is sold as an Essentials package from $4,549 for 100 to 150 guests. The package lists a 2-3 hour event length with eight hours of access.",
+        "verified_at": "2026-11-22",
+        "source_url": "https://somarts.org/rentals/",
+        "source_locator": "'EVENT SPACE 5810 SQ Ft (incl 1470 sq ft stage)'; Essentials 'Attendance: 100-150 guests ... Pricing starts at $4,549 ... Day-long access to the event space (8 hours)'; packages exclude 'security ... nor the refundable damage deposit'.",
+        "confidence": "high"
+      }
+    },
+    "sf-eb6f1d5fd648": {
+      "name": "Common Space - Large Loft in the Marina (Peerspace listing 647656b424653c000e5dacf6)",
+      "source_title": "Large Loft in the Marina for your next Event (Common Space) - Peerspace listing, archived 2026-04-06",
+      "display_name": {
+        "value": "Common Space – Large Loft",
+        "verified_at": "2026-11-22",
+        "source_url": "https://www.peerspace.com/pages/listings/647656b424653c000e5dacf6",
+        "source_locator": "Listing: '70 people - 4 hrs min - 900 sqft'; 'About Common Space'.",
+        "confidence": "medium"
+      },
+      "about": {
+        "value": "A 900-square-foot Marina loft for 70 people, with a four-hour minimum and a $250 deposit. The $165/hour rate comes from an archived copy of the listing, which lists a 65-inch smart TV, Wi-Fi and an address masked until booking.",
+        "verified_at": "2026-11-22",
+        "source_url": "https://www.peerspace.com/pages/listings/647656b424653c000e5dacf6",
+        "source_locator": "Archived (2026-04-06) listing: '70 people - 4 hrs min - 900 sqft'; '$165 /hr'; 'A $250 Security deposit is required'; '65\" Smart TV & WiFi'; address shown only as 'Union Street, San Francisco Marina District'.",
+        "confidence": "medium"
+      }
+    },
+    "sf-f76ff9ceb2eb": {
+      "name": "Four One Nine - Middle Gallery Extended (SoMa)",
+      "source_title": "Four One Nine - Studio Pricing Jan 1-Dec 31, 2026 (PDF)",
+      "display_name": {
+        "value": "Four One Nine – Middle Gallery",
+        "verified_at": "2026-11-22",
+        "source_url": "https://fouronenine.com/s/FON_Pricing_2026.pdf",
+        "source_locator": "Pricing PDF: 'Middle Gallery Extended 40-100 attendees* $650/hour**'.",
+        "confidence": "high"
+      },
+      "about": {
+        "value": "A Middle Gallery Extended package rated for 40 to 100 attendees at a published $650/hour, with a four-hour minimum; a seasonal rate may apply. It includes the Middle Gallery, library and rooftop, but not the main studio or kitchen.",
+        "verified_at": "2026-11-22",
+        "source_url": "https://fouronenine.com/s/FON_Pricing_2026.pdf",
+        "source_locator": "'Middle Gallery Extended 40-100 attendees* $650/hour** ... Includes Middle Gallery, Library, Rooftop ... Restrictions No main studio or kitchen access'; '**4-hour minimum; seasonal rate may apply'.",
+        "confidence": "high"
+      }
+    }
+  }
+}

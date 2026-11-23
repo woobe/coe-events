@@ -1,0 +1,21 @@
+{
+  "schema_version": "city-usage/1",
+  "city_slug": "san-francisco",
+  "note": "Joe-authored visits. A scraper cannot create one. The city store materialises these rows as `visits`; the venue is joined by exact name at build time, so this file never invents a venue_id.",
+  "visits": [
+    {
+      "venue_name": "Common Space - Large Loft in the Marina (Peerspace listing 647656b424653c000e5dacf6)",
+      "platform_listing_id": "647656b424653c000e5dacf6",
+      "event_name": "Decentralized AI Day",
+      "date": "2026-01",
+      "date_precision": "month",
+      "attendance": 50,
+      "duration": "full_day",
+      "outcome": "successful",
+      "address": "3108B Fillmore St",
+      "address_source": "owner",
+      "source": "owner",
+      "notes": "Full day, about 50 people, successful. The Peerspace listing masks the street, so the researched venue record keeps a null address and stays a lead; this address is the owner's own record and is not a geocode."
+    }
+  ]
+}
