@@ -27,6 +27,12 @@ Dated snapshots, newest last. Never edit a snapshot in place; add a new file.
 - Size: 1,833,377 bytes
 - G5 intake, the approved G4 build. The `.pre-v3` suffix preserves both earlier snapshots from the same date.
 
+## san-francisco-summary.2026-11-23.html
+
+- SHA-256: `382e883d6d74f05e0b233c37f99fdc1b3694d48c55f7d76c6e20b21a81a909a5`
+- Size: 1,825,262 bytes
+- H5 intake: approved H4 build before integration checks or fixes.
+
 These copies are byte-identical to their source files at copy time. Check with:
 
 ```
