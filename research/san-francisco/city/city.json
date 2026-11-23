@@ -18018,13 +18018,6 @@
     "sf-eb6f1d5fd648": {
       "blockers": [
         {
-          "claim_id": "cl-847133948bda",
-          "field": "address",
-          "source_url": "https://www.peerspace.com/pages/listings/647656b424653c000e5dacf6",
-          "text": "Street address masked by the listing platform; no coordinates recorded.",
-          "verified_at": "2026-11-20"
-        },
-        {
           "claim_id": "cl-15af0b7f3c14",
           "field": "price",
           "source_url": "https://www.peerspace.com/pages/listings/647656b424653c000e5dacf6",
@@ -18073,12 +18066,13 @@
           "verified_at": "2026-11-20"
         },
         "address": {
-          "claim_id": "cl-07ecb1a469e4",
-          "run_id": "run-20261120-sf-h1-migration",
-          "source_title": "Large Loft in the Marina for your next Event (Common Space) - Peerspace listing, archived 2026-04-06",
-          "source_url": "https://www.peerspace.com/pages/listings/647656b424653c000e5dacf6",
-          "value": null,
-          "verified_at": "2026-11-20"
+          "claim_id": "cl-23fc28b4d2cd",
+          "note": "The owner's own record of the venue address; the Peerspace listing masks the street.",
+          "run_id": "run-20261123-sf-address-geocode",
+          "source_title": "Owner-supplied address (owner's visit record, Decentralized AI Day 2026-01)",
+          "source_url": null,
+          "value": "3108B Fillmore St, San Francisco, CA 94123, United States",
+          "verified_at": "2026-11-23"
         },
         "beer_allowed": {
           "claim_id": "cl-81c7204a2c40",
@@ -18151,15 +18145,18 @@
           "verified_at": "2026-11-20"
         },
         "coordinates": {
-          "claim_id": "cl-63d0a1250221",
-          "run_id": "run-20261120-sf-h1-migration",
-          "source_title": "Large Loft in the Marina for your next Event (Common Space) - Peerspace listing, archived 2026-04-06",
-          "source_url": "https://www.peerspace.com/pages/listings/647656b424653c000e5dacf6",
+          "claim_id": "cl-0834a7e121a3",
+          "derived_from": "cl-23fc28b4d2cd",
+          "note": "Derived from the owner-supplied address, not surveyed; Nominatim matched 'Lilikoi, 3108, Fillmore Street, Cow Hollow, Marina District, San Francisco, California, 94123, United States' (importance 8.251392385743523e-05).",
+          "provider": "OpenStreetMap Nominatim",
+          "run_id": "run-20261123-sf-address-geocode",
+          "source_title": "Geocoded from the owner-supplied address via OpenStreetMap Nominatim",
+          "source_url": "https://nominatim.openstreetmap.org/search?q=3108+Fillmore+Street%2C+San+Francisco%2C+CA+94123%2C+United+States&format=json&limit=1",
           "value": {
-            "latitude": null,
-            "longitude": null
+            "latitude": 37.7983279,
+            "longitude": -122.4356209
           },
-          "verified_at": "2026-11-20"
+          "verified_at": "2026-11-23"
         },
         "delivery_allowed": {
           "claim_id": "cl-31a1f629c985",
@@ -18295,6 +18292,15 @@
             "source_url": "https://www.peerspace.com/pages/listings/647656b424653c000e5dacf6",
             "value": null,
             "verified_at": "2026-11-20"
+          },
+          {
+            "claim_id": "cl-23fc28b4d2cd",
+            "note": "The owner's own record of the venue address; the Peerspace listing masks the street.",
+            "run_id": "run-20261123-sf-address-geocode",
+            "source_title": "Owner-supplied address (owner's visit record, Decentralized AI Day 2026-01)",
+            "source_url": null,
+            "value": "3108B Fillmore St, San Francisco, CA 94123, United States",
+            "verified_at": "2026-11-23"
           }
         ],
         "beer_allowed": [
@@ -18394,6 +18400,20 @@
               "longitude": null
             },
             "verified_at": "2026-11-20"
+          },
+          {
+            "claim_id": "cl-0834a7e121a3",
+            "derived_from": "cl-23fc28b4d2cd",
+            "note": "Derived from the owner-supplied address, not surveyed; Nominatim matched 'Lilikoi, 3108, Fillmore Street, Cow Hollow, Marina District, San Francisco, California, 94123, United States' (importance 8.251392385743523e-05).",
+            "provider": "OpenStreetMap Nominatim",
+            "run_id": "run-20261123-sf-address-geocode",
+            "source_title": "Geocoded from the owner-supplied address via OpenStreetMap Nominatim",
+            "source_url": "https://nominatim.openstreetmap.org/search?q=3108+Fillmore+Street%2C+San+Francisco%2C+CA+94123%2C+United+States&format=json&limit=1",
+            "value": {
+              "latitude": 37.7983279,
+              "longitude": -122.4356209
+            },
+            "verified_at": "2026-11-23"
           }
         ],
         "delivery_allowed": [
@@ -18544,13 +18564,11 @@
       ],
       "venue_id": "sf-eb6f1d5fd648",
       "verification_question_kinds": [
-        "location",
         "availability",
         "final_quote",
         "booking_terms"
       ],
       "verification_questions": [
-        "Confirm the street address: the Peerspace listing masks the exact address until booking and only publishes 'Union Street, San Francisco Marina District, 900 sqft', so no coordinates are recorded.",
         "Confirm Saturday availability for a 09:00-17:00 event and the four-hour minimum.",
         "Confirm the current rate: $165/hour was read from a Wayback Machine snapshot dated 2026-04-06 because the live Peerspace page returned a Cloudflare challenge, and the listing publishes $165/hour with a 4 hour minimum plus a $250 security deposit.",
         "Confirm the all-in quote and cancellation terms directly with the host (the archived listing shows a free cancellation window inside 24 hours of booking and up to 7 days before the event)."
