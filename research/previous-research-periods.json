@@ -1,0 +1,52 @@
+{
+  "schema_version": "previous-research/1",
+  "note": "Explicit archive inventory. Literal hrefs and period IDs are preserved; start/end are research-period boundaries, not event dates. Files are never moved, rewritten or discovered.",
+  "periods": [
+    {
+      "id": "2026-q4",
+      "label": "2026 Q4",
+      "start": "2026-10-01",
+      "end": "2026-12-31",
+      "entries": [
+        {"city_name": "Boston", "href": "summary/2026-q4-boston-summary.html"},
+        {"city_name": "Budapest", "href": "summary/2026-q4-budapest-summary.html"},
+        {"city_name": "Geneva", "href": "summary/2026-q4-geneva-summary.html"},
+        {"city_name": "Hong Kong", "href": "summary/2026-q4-hong-kong-summary.html"},
+        {"city_name": "Lisbon", "href": "summary/2026-q4-lisbon-summary.html"},
+        {"city_name": "Montreal", "href": "summary/2026-q4-montreal-summary.html"},
+        {"city_name": "New York", "href": "summary/2026-q4-nyc-summary.html"},
+        {"city_name": "Seoul", "href": "summary/2026-q4-seoul-summary.html"},
+        {"city_name": "Singapore", "href": "summary/2026-q4-singapore-summary.html"},
+        {"city_name": "Warsaw", "href": "summary/2026-q4-warsaw-summary.html"}
+      ]
+    },
+    {
+      "id": "2027-h1",
+      "label": "2027 H1",
+      "start": "2027-01-01",
+      "end": "2027-06-30",
+      "entries": [
+        {"city_name": "San Francisco", "href": "summary/2027-h1-san-francisco-summary.html"}
+      ]
+    },
+    {
+      "id": "2027-q1",
+      "label": "2027 Q1",
+      "start": "2027-01-01",
+      "end": "2027-03-31",
+      "entries": [
+        {"city_name": "Seoul", "href": "summary/2027-q1-seoul-summary.html"}
+      ]
+    },
+    {
+      "id": "2027-q2",
+      "label": "2027 Q2",
+      "start": "2027-04-01",
+      "end": "2027-06-30",
+      "entries": [
+        {"city_name": "Kyoto", "href": "summary/2027-q2-kyoto-summary.html"},
+        {"city_name": "Seoul", "href": "summary/2027-q2-seoul-summary.html"}
+      ]
+    }
+  ]
+}

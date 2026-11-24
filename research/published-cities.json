@@ -1,0 +1,98 @@
+{
+  "schema_version": "city-index/1",
+  "note": "Explicit city list for the home page. status=published records must carry a store, its generated page and both digests; status=planned records render the thin state and carry no store, page or digest. Nothing is discovered from the filesystem.",
+  "cities": [
+    {
+      "key": "boston",
+      "name": "Boston",
+      "country_code": "us",
+      "region": "north-america",
+      "status": "planned"
+    },
+    {
+      "key": "montreal",
+      "name": "Montreal",
+      "country_code": "ca",
+      "region": "north-america",
+      "status": "published",
+      "store_path": "research/montreal/city/city.json",
+      "summary_href": "summary/montreal-summary.html",
+      "store_sha256": "dba932382060bb18bda4850d4d260acadd69211038817e1b17580c515202fda8",
+      "page_sha256": "ea13919e218b02ebe63101a02aeab97cdb433c916b09aedf1fd869704f55b75d"
+    },
+    {
+      "key": "new-york",
+      "name": "New York",
+      "country_code": "us",
+      "region": "north-america",
+      "status": "planned"
+    },
+    {
+      "key": "san-francisco",
+      "name": "San Francisco",
+      "country_code": "us",
+      "region": "north-america",
+      "status": "published",
+      "store_path": "research/san-francisco/city/city.json",
+      "summary_href": "summary/san-francisco-summary.html",
+      "store_sha256": "37010acc8d000864faf1409a9cd34cee0892756c09f666f2f545ed5c1f7f1e61",
+      "page_sha256": "64d2ba1a3c5e37fb930c5730b437b5c77ae86cd880a2bce3f46d7af2009f2338"
+    },
+    {
+      "key": "budapest",
+      "name": "Budapest",
+      "country_code": "hu",
+      "region": "europe",
+      "status": "planned"
+    },
+    {
+      "key": "geneva",
+      "name": "Geneva",
+      "country_code": "ch",
+      "region": "europe",
+      "status": "planned"
+    },
+    {
+      "key": "lisbon",
+      "name": "Lisbon",
+      "country_code": "pt",
+      "region": "europe",
+      "status": "planned"
+    },
+    {
+      "key": "warsaw",
+      "name": "Warsaw",
+      "country_code": "pl",
+      "region": "europe",
+      "status": "planned"
+    },
+    {
+      "key": "hong-kong",
+      "name": "Hong Kong",
+      "country_code": "hk",
+      "region": "asia",
+      "status": "planned"
+    },
+    {
+      "key": "kyoto",
+      "name": "Kyoto",
+      "country_code": "jp",
+      "region": "asia",
+      "status": "planned"
+    },
+    {
+      "key": "seoul",
+      "name": "Seoul",
+      "country_code": "kr",
+      "region": "asia",
+      "status": "planned"
+    },
+    {
+      "key": "singapore",
+      "name": "Singapore",
+      "country_code": "sg",
+      "region": "asia",
+      "status": "planned"
+    }
+  ]
+}

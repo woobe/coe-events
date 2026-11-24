@@ -3,145 +3,87 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Decentralized AI Day — city summaries</title>
-<style>
-:root {
-  --ok: #1a7f37; --warn: #9a6700; --bad: #cf222e;
-  --ink: #1f2328; --muted: #656d76; --line: #d0d7de; --bg: #ffffff;
-}
-* { box-sizing: border-box; }
-body {
-  margin: 0; padding: 1.5rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
-    Arial, sans-serif;
-  color: var(--ink); background: var(--bg); line-height: 1.45;
-}
-main { max-width: 72rem; margin: 0 auto; }
-h1 { font-size: 1.35rem; margin: 0 0 0.25rem; }
-h2 { font-size: 1.05rem; margin: 1.4rem 0 0.6rem; }
-.hub-note { color: var(--muted); font-size: 0.9rem; margin: 0 0 1rem; }
-.cards { display: flex; flex-wrap: wrap; gap: 0.8rem; }
-.card {
-  flex: 1 1 18rem; border: 1px solid var(--line); border-radius: 6px;
-  padding: 0.7rem 0.9rem; font-size: 0.9rem;
-}
-.card h3 { font-size: 1rem; margin: 0 0 0.15rem; }
-.card h3 a, .card-link a { color: var(--ink); }
-.card-country { color: var(--muted); margin: 0 0 0.4rem; }
-.card-facts { margin: 0; padding-left: 1.1rem; }
-.card-facts li { margin: 0.2rem 0; }
-.card-link { margin: 0.5rem 0 0; }
+<title>Decentralized AI Day — Event research</title>
+<style>:root{--ink:#172D44;--secondary:#465B70;--action:#114E91;--rule:#C9D8E6;--gutter:24px;--top:40px;--card:320px;color-scheme:light}
+*{box-sizing:border-box}html{scroll-padding-block-start:24px}
+body{margin:0;background:#fff;color:var(--ink);font:1rem/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+h1,h2,h3{font-weight:700;line-height:1.25;margin:0}p{margin:0}img{display:block}
+a{color:var(--action);text-decoration:underline;text-underline-offset:2px}a:hover{text-decoration-thickness:2px}
+:focus-visible{outline:2px solid var(--action);outline-offset:2px}
+main{max-width:1400px;margin-inline:auto;padding:var(--top) var(--gutter) 56px}
+.masthead h1{font-size:2rem}.intro{max-width:60ch;color:var(--secondary);margin-top:8px}
+.jumps{margin-top:24px;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 20px}
+.jumps p{font-size:.8125rem;line-height:1.4;font-weight:600;color:var(--secondary)}
+.jumps ul{display:flex;flex-wrap:wrap;gap:4px 20px;margin:0;padding:0;list-style:none}
+.jumps a{display:inline-flex;align-items:center;min-height:24px}
+h2.region{font-size:1.5rem;margin-top:56px;scroll-margin-top:24px}
+.region-count{font-size:1rem;font-weight:400;color:var(--secondary);margin-left:8px;font-variant-numeric:tabular-nums}
+.count{font-size:.9375rem;line-height:1.4;font-variant-numeric:tabular-nums}
+.stamp{font-size:.8125rem;line-height:1.4;color:var(--secondary);font-variant-numeric:tabular-nums}
+.thin .count{color:var(--secondary)}
+.vh{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+.skip{position:absolute;left:-9999px}.skip:focus{left:8px;top:8px;z-index:9;background:#fff;padding:8px 12px;border:1px solid var(--ink)}
+.back,.archive{margin-top:40px;padding-top:16px;border-top:1px solid var(--rule)}
+.back a,.archive a,.return a{display:inline-flex;align-items:center;min-height:44px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,var(--card));gap:24px;margin-top:20px;justify-content:start;align-items:stretch}
+.card{position:relative;display:flex;flex-direction:column;gap:20px;min-height:132px;padding:20px;background:#fff;border:1px solid var(--rule);border-radius:6px}
+.card .head{display:flex;align-items:flex-start;gap:12px}.card h3{font-size:1.125rem}
+.flag{width:24px;height:18px;margin-top:3px;border-radius:2px;object-fit:cover;box-shadow:0 0 0 1px rgba(23,45,68,.12)}
+.facts{margin-top:auto}.facts .stamp{margin-top:2px}.card.thin{border-color:#E4EDF5}.card.thin h3{color:var(--secondary)}
+.stretch::after{content:"";position:absolute;inset:0;border-radius:6px}
+.card:focus-within{outline:2px solid var(--action);outline-offset:2px}.stretch:focus-visible{outline:none}
+.empty{margin-top:24px;color:var(--secondary)}
+section.city{margin-top:40px;scroll-margin-top:24px}section.city h2{font-size:1.375rem}
+.superseded{margin-top:6px;font-size:.875rem;line-height:1.4;color:var(--secondary)}
+.periods{margin:12px 0 0;padding:0;list-style:none}
+.periods li{padding:10px 0;border-top:1px solid var(--rule);font-size:.9375rem;line-height:1.4}
+.periods a{display:inline-flex;align-items:center;min-height:44px}
+@media (max-width:480px){:root{--gutter:16px;--top:24px}.masthead h1{font-size:1.75rem}h2.region{font-size:1.375rem;margin-top:40px}}
+@media (max-width:352px){:root{--card:100%}}
 </style>
 </head>
-<body>
+<body id="top">
+<a class="skip" href="#region-north-america">Skip to city list</a>
 <main>
-<h1>Decentralized AI Day — city summaries</h1>
-<p class="hub-note">Open a city summary to review its evidence and make the scheduling decision yourself.</p>
-<section class="quarter">
-<h2 id="2026-q4">2026 Q4</h2>
-<div class="cards">
-<article class="card">
-<h3><a href="summary/2026-q4-boston-summary.html" target="_blank" rel="noopener noreferrer">Boston</a></h3>
-<p class="card-country">United States</p>
-<ul class="card-facts"><li>Shortlist-ready venues: 4</li><li>Venue leads to verify: 7</li><li>Top venue: MIT Samberg Conference Center — Conference I (7th Floor) (score 0.7010)</li></ul>
-<p class="card-link"><a href="summary/2026-q4-boston-summary.html" target="_blank" rel="noopener noreferrer">Open summary</a></p>
-</article>
-<article class="card">
-<h3><a href="summary/2026-q4-budapest-summary.html" target="_blank" rel="noopener noreferrer">Budapest</a></h3>
-<p class="card-country">Hungary</p>
-<ul class="card-facts"><li>Shortlist-ready venues: 15</li><li>Venue leads to verify: 6</li><li>Top venue: Loffice Budapest — Maxi Event Room (score 0.7909)</li></ul>
-<p class="card-link"><a href="summary/2026-q4-budapest-summary.html" target="_blank" rel="noopener noreferrer">Open summary</a></p>
-</article>
-<article class="card">
-<h3><a href="summary/2026-q4-geneva-summary.html" target="_blank" rel="noopener noreferrer">Geneva</a></h3>
-<p class="card-country">Switzerland</p>
-<ul class="card-facts"><li>Shortlist-ready venues: 5</li><li>Venue leads to verify: 4</li><li>Top venue: Impact Hub Geneva — Grand Salon (Rue Fendt 1) (score 0.6631)</li></ul>
-<p class="card-link"><a href="summary/2026-q4-geneva-summary.html" target="_blank" rel="noopener noreferrer">Open summary</a></p>
-</article>
-<article class="card">
-<h3><a href="summary/2026-q4-hong-kong-summary.html" target="_blank" rel="noopener noreferrer">Hong Kong</a></h3>
-<p class="card-country">Hong Kong SAR</p>
-<ul class="card-facts"><li>Shortlist-ready venues: 8</li><li>Venue leads to verify: 3</li><li>Top venue: Banyan Workspace — Event Space (score 0.7096)</li></ul>
-<p class="card-link"><a href="summary/2026-q4-hong-kong-summary.html" target="_blank" rel="noopener noreferrer">Open summary</a></p>
-</article>
-<article class="card">
-<h3><a href="summary/2026-q4-lisbon-summary.html" target="_blank" rel="noopener noreferrer">Lisbon</a></h3>
-<p class="card-country">Portugal</p>
-<ul class="card-facts"><li>Shortlist-ready venues: 5</li><li>Venue leads to verify: 3</li><li>Top venue: Avila Spaces — Saldanha (score 0.5483)</li></ul>
-<p class="card-link"><a href="summary/2026-q4-lisbon-summary.html" target="_blank" rel="noopener noreferrer">Open summary</a></p>
-</article>
-<article class="card">
-<h3><a href="summary/2026-q4-montreal-summary.html" target="_blank" rel="noopener noreferrer">Montreal</a></h3>
-<p class="card-country">Canada</p>
-<ul class="card-facts"><li>Shortlist-ready venues: 20</li><li>Venue leads to verify: 7</li><li>Top venue: JUNIPER — COLLECTIF MTL (score 0.8710)</li></ul>
-<p class="card-link"><a href="summary/2026-q4-montreal-summary.html" target="_blank" rel="noopener noreferrer">Open summary</a></p>
-</article>
-<article class="card">
-<h3><a href="summary/2026-q4-nyc-summary.html" target="_blank" rel="noopener noreferrer">New York</a></h3>
-<p class="card-country">United States</p>
-<ul class="card-facts"><li>Shortlist-ready venues: 17</li><li>Venue leads to verify: 3</li><li>Top venue: Large Flex Event Loft Studio — Entire Space (score 0.7640)</li></ul>
-<p class="card-link"><a href="summary/2026-q4-nyc-summary.html" target="_blank" rel="noopener noreferrer">Open summary</a></p>
-</article>
-<article class="card">
-<h3><a href="summary/2026-q4-seoul-summary.html" target="_blank" rel="noopener noreferrer">Seoul</a></h3>
-<p class="card-country">South Korea</p>
-<ul class="card-facts"><li>Shortlist-ready venues: 4</li><li>Venue leads to verify: 2</li><li>Top venue: Mongsang Space (Mullae) — Main Hall (score 0.6876)</li></ul>
-<p class="card-link"><a href="summary/2026-q4-seoul-summary.html" target="_blank" rel="noopener noreferrer">Open summary</a></p>
-</article>
-<article class="card">
-<h3><a href="summary/2026-q4-singapore-summary.html" target="_blank" rel="noopener noreferrer">Singapore</a></h3>
-<p class="card-country">Singapore</p>
-<ul class="card-facts"><li>Shortlist-ready venues: 11</li><li>Venue leads to verify: 7</li><li>Top venue: CALI at Ascott Raffles Place — Raffles Place Function Room (score 0.6767)</li></ul>
-<p class="card-link"><a href="summary/2026-q4-singapore-summary.html" target="_blank" rel="noopener noreferrer">Open summary</a></p>
-</article>
-<article class="card">
-<h3><a href="summary/2026-q4-warsaw-summary.html" target="_blank" rel="noopener noreferrer">Warsaw</a></h3>
-<p class="card-country">Poland</p>
-<ul class="card-facts"><li>Shortlist-ready venues: 7</li><li>Venue leads to verify: 4</li><li>Top venue: ADN Centrum Konferencyjne (score 0.5867)</li></ul>
-<p class="card-link"><a href="summary/2026-q4-warsaw-summary.html" target="_blank" rel="noopener noreferrer">Open summary</a></p>
-</article>
-</div>
-</section>
-<section class="quarter">
-<h2 id="2027-h1">2027 H1</h2>
-<div class="cards">
-<article class="card">
-<h3><a href="summary/2027-h1-san-francisco-summary.html" target="_blank" rel="noopener noreferrer">San Francisco</a></h3>
-<p class="card-country">United States</p>
-<ul class="card-facts"><li>Shortlist-ready venues: 14</li><li>Venue leads to verify: 2</li><li>Top venue: Alliance Francaise de San Francisco - Theater (score 0.7255)</li></ul>
-<p class="card-link"><a href="summary/2027-h1-san-francisco-summary.html" target="_blank" rel="noopener noreferrer">Open summary</a></p>
-</article>
-</div>
-</section>
-<section class="quarter">
-<h2 id="2027-q1">2027 Q1</h2>
-<div class="cards">
-<article class="card">
-<h3><a href="summary/2027-q1-seoul-summary.html" target="_blank" rel="noopener noreferrer">Seoul</a></h3>
-<p class="card-country">South Korea</p>
-<ul class="card-facts"><li>Shortlist-ready venues: 6</li><li>Venue leads to verify: 7</li><li>Top venue: SETEC 컨벤션센터 — 세미나실 2 (166㎡, 80석) (score 0.5273)</li></ul>
-<p class="card-link"><a href="summary/2027-q1-seoul-summary.html" target="_blank" rel="noopener noreferrer">Open summary</a></p>
-</article>
-</div>
-</section>
-<section class="quarter">
-<h2 id="2027-q2">2027 Q2</h2>
-<div class="cards">
-<article class="card">
-<h3><a href="summary/2027-q2-kyoto-summary.html" target="_blank" rel="noopener noreferrer">Kyoto</a></h3>
-<p class="card-country">Japan</p>
-<ul class="card-facts"><li>Shortlist-ready venues: 10</li><li>Venue leads to verify: 4</li><li>Top venue: Impact Hub Kyoto — 2F 会所 Event Space (西陣産業創造會舘) (score 0.7069)</li></ul>
-<p class="card-link"><a href="summary/2027-q2-kyoto-summary.html" target="_blank" rel="noopener noreferrer">Open summary</a></p>
-</article>
-<article class="card">
-<h3><a href="summary/2027-q2-seoul-summary.html" target="_blank" rel="noopener noreferrer">Seoul</a></h3>
-<p class="card-country">South Korea</p>
-<ul class="card-facts"><li>Shortlist-ready venues: 6</li><li>Venue leads to verify: 7</li><li>Top venue: SETEC 컨벤션센터 — 세미나실 2 (166㎡, 80석) (score 0.5273)</li></ul>
-<p class="card-link"><a href="summary/2027-q2-seoul-summary.html" target="_blank" rel="noopener noreferrer">Open summary</a></p>
-</article>
-</div>
-</section>
-<p class="hub-note">Generated by scripts/generate_index.py from the summaries in this project.</p>
+<header class="masthead"><h1>Decentralized AI Day</h1><p class="intro">Open a city’s event research to review venues, calendar context and local communities.</p></header>
+<nav class="jumps" aria-label="Jump to a region"><p>Jump to</p><ul><li><a href="#region-north-america">North America<span class="vh">, 4 cities</span></a></li>
+<li><a href="#region-europe">Europe<span class="vh">, 4 cities</span></a></li>
+<li><a href="#region-asia">Asia<span class="vh">, 4 cities</span></a></li></ul></nav>
+<section aria-labelledby="region-north-america"><h2 class="region" id="region-north-america" tabindex="-1">North America<span class="region-count">4 cities</span></h2>
+<div class="grid">
+<article class="card thin"><div class="head"><img class="flag" src="assets/flags/us.svg" alt="" width="24" height="18"><h3>Boston</h3></div>
+<div class="facts"><p class="count">Not yet built</p></div></article>
+<article class="card"><div class="head"><img class="flag" src="assets/flags/ca.svg" alt="" width="24" height="18"><h3><a class="stretch" href="summary/montreal-summary.html">Montreal<span class="vh"> event research</span></a></h3></div>
+<div class="facts"><p class="count">25 venues</p><p class="stamp">Last updated <time datetime="2026-11-24T02:00:00Z">24 Nov 2026 UTC</time></p></div></article>
+<article class="card thin"><div class="head"><img class="flag" src="assets/flags/us.svg" alt="" width="24" height="18"><h3>New York</h3></div>
+<div class="facts"><p class="count">Not yet built</p></div></article>
+<article class="card"><div class="head"><img class="flag" src="assets/flags/us.svg" alt="" width="24" height="18"><h3><a class="stretch" href="summary/san-francisco-summary.html">San Francisco<span class="vh"> event research</span></a></h3></div>
+<div class="facts"><p class="count">14 venues</p><p class="stamp">Last updated <time datetime="2026-11-22T03:15:00Z">22 Nov 2026 UTC</time></p></div></article>
+</div></section>
+<section aria-labelledby="region-europe"><h2 class="region" id="region-europe" tabindex="-1">Europe<span class="region-count">4 cities</span></h2>
+<div class="grid">
+<article class="card thin"><div class="head"><img class="flag" src="assets/flags/hu.svg" alt="" width="24" height="18"><h3>Budapest</h3></div>
+<div class="facts"><p class="count">Not yet built</p></div></article>
+<article class="card thin"><div class="head"><img class="flag" src="assets/flags/ch.svg" alt="" width="24" height="18"><h3>Geneva</h3></div>
+<div class="facts"><p class="count">Not yet built</p></div></article>
+<article class="card thin"><div class="head"><img class="flag" src="assets/flags/pt.svg" alt="" width="24" height="18"><h3>Lisbon</h3></div>
+<div class="facts"><p class="count">Not yet built</p></div></article>
+<article class="card thin"><div class="head"><img class="flag" src="assets/flags/pl.svg" alt="" width="24" height="18"><h3>Warsaw</h3></div>
+<div class="facts"><p class="count">Not yet built</p></div></article>
+</div></section>
+<section aria-labelledby="region-asia"><h2 class="region" id="region-asia" tabindex="-1">Asia<span class="region-count">4 cities</span></h2>
+<div class="grid">
+<article class="card thin"><div class="head"><img class="flag" src="assets/flags/hk.svg" alt="" width="24" height="18"><h3>Hong Kong</h3></div>
+<div class="facts"><p class="count">Not yet built</p></div></article>
+<article class="card thin"><div class="head"><img class="flag" src="assets/flags/jp.svg" alt="" width="24" height="18"><h3>Kyoto</h3></div>
+<div class="facts"><p class="count">Not yet built</p></div></article>
+<article class="card thin"><div class="head"><img class="flag" src="assets/flags/kr.svg" alt="" width="24" height="18"><h3>Seoul</h3></div>
+<div class="facts"><p class="count">Not yet built</p></div></article>
+<article class="card thin"><div class="head"><img class="flag" src="assets/flags/sg.svg" alt="" width="24" height="18"><h3>Singapore</h3></div>
+<div class="facts"><p class="count">Not yet built</p></div></article>
+</div></section>
+<p class="archive"><a href="previous-research.html">Previous research</a></p>
+<p class="back"><a href="#top">Back to top</a></p>
 </main>
 </body>
 </html>
