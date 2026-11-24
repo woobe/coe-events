@@ -1,0 +1,180 @@
+{
+  "assessed_final": 25,
+  "cap": 30,
+  "caveat": "This ledger reconstructs the pass order from the dated notes in sources_consulted and the run bundle; it is not a timestamped replay of the browsing session.",
+  "city_slug": "montreal-qc-ca",
+  "closed_final": 0,
+  "floor": 20,
+  "generated_on": "2026-11-24",
+  "leads_final": 7,
+  "passes": [
+    {
+      "date": "2026-11-24",
+      "lane": "mandatory",
+      "note": "238-event payload filtered to Montreal/Quebec: ALL IN 2027 and Montreal Family Office & HNW 2027; no room lead.",
+      "outcome": "dry_for_rooms",
+      "pass": "MiraGather main",
+      "seq": 1,
+      "yield": {
+        "events": 2,
+        "new_distinct_rooms": 0
+      }
+    },
+    {
+      "date": "2026-11-24",
+      "lane": "mandatory",
+      "note": "Client-rendered tab; the AI side-event payload (576 rows) held zero Montreal rows. Logged partial, not a completed check.",
+      "outcome": "partial",
+      "pass": "MiraGather side events",
+      "seq": 2,
+      "yield": {
+        "events": 0,
+        "new_distinct_rooms": 0
+      }
+    },
+    {
+      "date": "2026-11-24",
+      "lane": "mandatory",
+      "note": "61 AI main events filtered to one Montreal event (ALL IN); 576 side events, zero Montreal rows.",
+      "outcome": "dry_for_rooms",
+      "pass": "MiraGather AI",
+      "seq": 3,
+      "yield": {
+        "events": 1,
+        "new_distinct_rooms": 0
+      }
+    },
+    {
+      "date": "2026-11-24",
+      "lane": "mandatory",
+      "note": "Directory HTTP 403; the documented Montreal chapter page was read instead (16 posts). No room terms.",
+      "outcome": "blocked",
+      "pass": "AI Tinkerers directory",
+      "seq": 4,
+      "yield": {
+        "events": 16,
+        "new_distinct_rooms": 0
+      }
+    },
+    {
+      "date": "2026-11-24",
+      "lane": "mandatory",
+      "note": "Eight past entries, none Montreal; zero Montreal aliases.",
+      "outcome": "dry_for_rooms",
+      "pass": "Luma DeAI past events",
+      "seq": 5,
+      "yield": {
+        "events": 8,
+        "new_distinct_rooms": 0
+      }
+    },
+    {
+      "date": "2026-11-24",
+      "lane": "marketplace",
+      "note": "59 rows parsed with capacity and price; 8 new rooms discovered and assessed.",
+      "outcome": "yielded_rooms",
+      "pass": "Eventective Montreal index",
+      "seq": 6,
+      "yield": {
+        "legacy_refreshed": 14,
+        "new_distinct_rooms": 8
+      }
+    },
+    {
+      "date": "2026-11-24",
+      "lane": "marketplace",
+      "note": "Index path HTTP 404; the three stored COLLECTIF room URLs were read individually.",
+      "outcome": "blocked",
+      "pass": "Tagvenue Montreal index",
+      "seq": 7,
+      "yield": {
+        "legacy_refreshed": 3,
+        "new_distinct_rooms": 0
+      }
+    },
+    {
+      "date": "2026-11-24",
+      "lane": "marketplace",
+      "note": "HTTP 403 to a scripted request; no listing claimed.",
+      "outcome": "blocked",
+      "pass": "Peerspace Montreal search",
+      "seq": 8,
+      "yield": {
+        "new_distinct_rooms": 0
+      }
+    },
+    {
+      "date": "2026-11-24",
+      "lane": "institutional",
+      "note": "Official event pages only: no 2027 Montreal room with public rental terms; an institute is not treated as a community or venue.",
+      "outcome": "dry_for_rooms",
+      "pass": "Mila / IVADO / Scale AI / MTL connecte",
+      "seq": 9,
+      "yield": {
+        "events": 1,
+        "new_distinct_rooms": 0
+      }
+    },
+    {
+      "date": "2026-11-24",
+      "lane": "institutional",
+      "note": "ETS zero externally bookable rooms; UdeM no rental page surfaced; District 3 remains a lead with no capacity, rate or weekend terms.",
+      "outcome": "dry_for_rooms",
+      "pass": "ETS / Concordia-District 3 / UdeM",
+      "seq": 10,
+      "yield": {
+        "leads": 1,
+        "new_distinct_rooms": 0
+      }
+    },
+    {
+      "date": "2026-11-24",
+      "lane": "operator",
+      "note": "Crew Collective Main Venue and Cafe SAT admitted; Notman rentals on hold (suspended offer, not a closure).",
+      "outcome": "yielded_rooms",
+      "pass": "Notman / Crew / SAT operator pages",
+      "seq": 11,
+      "yield": {
+        "leads": 1,
+        "new_distinct_rooms": 2
+      }
+    },
+    {
+      "date": "2026-11-24",
+      "lane": "organizer_platform_led",
+      "note": "Eventbrite city pass not completed (partial); Meetup yielded four group pages with member counts; no new bookable room.",
+      "outcome": "dry_for_rooms",
+      "pass": "Eventbrite / Meetup / Luma organizer pages",
+      "seq": 12,
+      "yield": {
+        "communities": 4,
+        "new_distinct_rooms": 0
+      }
+    },
+    {
+      "date": "2026-11-24",
+      "lane": "french_operator_led",
+      "note": "Queries 'location salle Montreal 50 personnes conference', 'salle evenement corporatif Montreal traiteur externe', 'location salle samedi jusqu'a 21 h': aggregator and caterer pages only (sallesdereception.quebec lists 191 conference rooms), no operator terms that changed a stored claim. No new room admitted.",
+      "outcome": "dry_for_rooms",
+      "pass": "French-language operator pass",
+      "seq": 13,
+      "yield": {
+        "new_distinct_rooms": 0
+      }
+    }
+  ],
+  "run_id": "run-20261124-mtl-m2a",
+  "schema_version": "city-saturation-ledger/1",
+  "stop_decision": {
+    "assessed_at_stop": 25,
+    "below_cap": true,
+    "consecutive_dry_passes": [
+      12,
+      13
+    ],
+    "floor_reached": true,
+    "further_passes_run": false,
+    "note": "The final two documented targeted passes (organizer/platform-led and French/operator-led) produced no new distinct plausible room and closed no material gap, so assessment stopped at 25, below the 30 cap. The Eventbrite lane was also incomplete, so its dry result is not evidence of absence."
+  },
+  "stop_rule": "After 20, stop when two consecutive targeted passes (one French/operator-led and one organizer/platform-led) neither produce new distinct plausible rooms nor close material gaps (plan section 2)."
+}
