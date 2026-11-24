@@ -1,0 +1,48 @@
+{
+ "run_id": "run-20261124b-nyc-n1",
+ "checked_on": "2026-11-24",
+ "working_directory": "coe-events repository root (hermes-skills is a sibling checkout)",
+ "inputs": {
+  "run-bundle.json": {
+   "path": "research/new-york/city/run-bundle.json",
+   "sha256": "e199c1792538ea2edab7e3d8856a61db2ecc8d70b11fd4eae2d3af0cbdc4c6cf"
+  },
+  "seed.json": {
+   "path": "research/new-york/city/seed.json",
+   "sha256": "0ffcdffa029d6bc33b53bb4be8ecf8ab5de48737401ddb20217ea90a265ca6f8"
+  },
+  "holiday-supplement.json": {
+   "path": "research/new-york/city/holiday-supplement.json",
+   "sha256": "c0232079710cf5b669aaae5f53627ff491e8886ac9735b99d0bde76647357fe6"
+  },
+  "legacy-dispositions.json": {
+   "path": "research/new-york/city/legacy-dispositions.json",
+   "sha256": "522f41299663e85aba4e1a045febcb52466a851c1065c42e03f7911e61ff1445"
+  },
+  "saturation-ledger.json": {
+   "path": "research/new-york/city/saturation-ledger.json",
+   "sha256": "cfc5e695bd3a7c433f99db5a31a2136a556dd959f027c3115dc1c21c3f77414b"
+  },
+  "school_holidays_registry": {
+   "path": "../hermes-skills/plan-event/references/school_holidays.json",
+   "sha256": "b823b0e20ea437adc260c905ec6f0ab82da20a95b3f22bd0ccb007011d175840"
+  }
+ },
+ "output": {
+  "path": "research/new-york/city/city.json",
+  "sha256": "a20732caf328acef87a3db302030a9be6b72686338204e05e1ad57cc9ae267e8"
+ },
+ "commands": {
+  "build": "../hermes-skills/.venv/bin/python ../hermes-skills/plan-event/scripts/city_store.py --merge-run research/new-york/city/run-bundle.json --store research/new-york/city/seed.json --out research/new-york/city/city.json --updated-at 2026-11-24T17:00:35Z --registry ../hermes-skills/plan-event/references/school_holidays.json",
+  "check": "../hermes-skills/.venv/bin/python ../hermes-skills/plan-event/scripts/city_store.py --check research/new-york/city/city.json --registry ../hermes-skills/plan-event/references/school_holidays.json",
+  "rebuild": "../hermes-skills/.venv/bin/python ../hermes-skills/plan-event/scripts/city_store.py --merge-run research/new-york/city/run-bundle.json --store research/new-york/city/seed.json --out \"$TMPDIR/nyc-n1-rebuild.json\" --updated-at 2026-11-24T17:00:35Z --registry ../hermes-skills/plan-event/references/school_holidays.json",
+  "replay": "../hermes-skills/.venv/bin/python ../hermes-skills/plan-event/scripts/city_store.py --merge-run research/new-york/city/run-bundle.json --store research/new-york/city/city.json --out \"$TMPDIR/nyc-n1-replay.json\" --updated-at 2026-11-24T17:00:35Z --registry ../hermes-skills/plan-event/references/school_holidays.json"
+ },
+ "proof": {
+  "build": "run run-20261124b-nyc-n1 kind=refresh noop=False loss_check=clean wrote research/new-york/city/city.json",
+  "check": "OK: research/new-york/city/city.json (schema city-store/1, 33 venues)",
+  "rebuild": "run run-20261124b-nyc-n1 kind=refresh noop=False loss_check=clean wrote /home/joe/.hermes/profiles/snr-research/cache/scratch/nyc-n1-rebuild.json; byte-identical to city.json",
+  "replay": "run run-20261124b-nyc-n1 kind=refresh noop=True loss_check=n/a wrote /home/joe/.hermes/profiles/snr-research/cache/scratch/nyc-n1-replay.json; byte-identical to city.json"
+ },
+ "note": "city.json = merge(seed.json, run-bundle.json); run inputs are relative to coe-events. Rebuild/replay use the worker scratch directory in $TMPDIR. Compare with cmp; the proof above is from byte comparison."
+}

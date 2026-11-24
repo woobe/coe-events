@@ -1,0 +1,585 @@
+{
+ "base_registry": {
+  "has_us_ny": false,
+  "note": "The pinned registry carries US federal and US-NY:nycps rows only; it has no New York State or New York City public-holiday scope. This supplement adds those two scopes without altering the shared registry.",
+  "path": "/home/joe/repo_dev/hermes-skills/plan-event/references/school_holidays.json",
+  "sha256": "b823b0e20ea437adc260c905ec6f0ab82da20a95b3f22bd0ccb007011d175840"
+ },
+ "checked_on": "2026-11-24",
+ "city_slug": "new-york-ny-us",
+ "coverage": [
+  {
+   "accessed_on": "2026-11-24",
+   "end_date": "2027-12-31",
+   "evidence": {
+    "observed_facts": "State scope: the 2027 table for classified service in the Executive Branch was read in full, including the floating-holiday and pass-day footnotes. This is the state-employee observance list, not a statement that every employer closes."
+   },
+   "jurisdiction_id": "US-NY",
+   "kind": "public_holiday_coverage",
+   "needs_human_verify": true,
+   "source_edition": "2027 Calendar of Legal Holidays for State Employees",
+   "source_locator": "Full-year 2027 span for this scope",
+   "source_title": "NYS Department of Civil Service — 2027 Legal Holidays",
+   "source_url": "https://cs.ny.gov/attendance_leave/2027_legal_holidays.cfm",
+   "start_date": "2027-01-01",
+   "verified": false
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "end_date": "2027-12-31",
+   "evidence": {
+    "observed_facts": "City scope: 13 published 2027 closing dates, read through the search provider after the direct request returned HTTP 403. Derived and unverified; it is one city agency's closing list, not a mayoral proclamation."
+   },
+   "jurisdiction_id": "US-NY:nyc",
+   "kind": "public_holiday_coverage",
+   "needs_human_verify": true,
+   "source_edition": "Published 2027 closing list",
+   "source_locator": "Full-year 2027 span for this scope",
+   "source_title": "NYC Department of Consumer and Worker Protection — Holidays/Closings",
+   "source_url": "https://www.nyc.gov/site/dca/about/holidays-closings.page",
+   "start_date": "2027-01-01",
+   "verified": false
+  }
+ ],
+ "holidays": [
+  {
+   "accessed_on": "2026-11-24",
+   "end_date": "2027-01-01",
+   "evidence": {
+    "observed_facts": "State table row: January 1, Friday. The page states that the legal holidays listed are those in New York State's General Construction Law and that, except for Flag Day, all legal holidays are observed by eligible State employees."
+   },
+   "holiday_name": "New Year's Day",
+   "jurisdiction_id": "US-NY",
+   "kind": "public_holiday",
+   "needs_human_verify": false,
+   "observance": "actual",
+   "source_edition": "2027 Calendar of Legal Holidays for State Employees in the Classified Service of the Executive Branch",
+   "source_locator": "2027 table, row: January 1, Friday",
+   "source_title": "NYS Department of Civil Service — 2027 Legal Holidays",
+   "source_url": "https://cs.ny.gov/attendance_leave/2027_legal_holidays.cfm",
+   "start_date": "2027-01-01",
+   "verified": true
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "end_date": "2027-01-18",
+   "evidence": {
+    "observed_facts": "State table row: January 18, Monday. The page states that the legal holidays listed are those in New York State's General Construction Law and that, except for Flag Day, all legal holidays are observed by eligible State employees."
+   },
+   "holiday_name": "Dr. Martin Luther King, Jr. Day",
+   "jurisdiction_id": "US-NY",
+   "kind": "public_holiday",
+   "needs_human_verify": false,
+   "observance": "actual",
+   "source_edition": "2027 Calendar of Legal Holidays for State Employees in the Classified Service of the Executive Branch",
+   "source_locator": "2027 table, row: January 18, Monday",
+   "source_title": "NYS Department of Civil Service — 2027 Legal Holidays",
+   "source_url": "https://cs.ny.gov/attendance_leave/2027_legal_holidays.cfm",
+   "start_date": "2027-01-18",
+   "verified": true
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "end_date": "2027-02-12",
+   "evidence": {
+    "observed_facts": "State table row: February 12, Friday (footnote a: designated a floating holiday in 2027 for State employees in certain bargaining units). The page states that the legal holidays listed are those in New York State's General Construction Law and that, except for Flag Day, all legal holidays are observed by eligible State employees."
+   },
+   "holiday_name": "Lincoln's Birthday",
+   "jurisdiction_id": "US-NY",
+   "kind": "public_holiday",
+   "needs_human_verify": false,
+   "observance": "actual",
+   "source_edition": "2027 Calendar of Legal Holidays for State Employees in the Classified Service of the Executive Branch",
+   "source_locator": "2027 table, row: February 12, Friday (footnote a: designated a floating holiday in 2027 for State employees in certain bargaining units)",
+   "source_title": "NYS Department of Civil Service — 2027 Legal Holidays",
+   "source_url": "https://cs.ny.gov/attendance_leave/2027_legal_holidays.cfm",
+   "start_date": "2027-02-12",
+   "verified": true
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "end_date": "2027-02-15",
+   "evidence": {
+    "observed_facts": "State table row: February 15, Monday. The page states that the legal holidays listed are those in New York State's General Construction Law and that, except for Flag Day, all legal holidays are observed by eligible State employees."
+   },
+   "holiday_name": "Washington's Birthday (Observed)",
+   "jurisdiction_id": "US-NY",
+   "kind": "public_holiday",
+   "needs_human_verify": false,
+   "observance": "substitute",
+   "source_edition": "2027 Calendar of Legal Holidays for State Employees in the Classified Service of the Executive Branch",
+   "source_locator": "2027 table, row: February 15, Monday",
+   "source_title": "NYS Department of Civil Service — 2027 Legal Holidays",
+   "source_url": "https://cs.ny.gov/attendance_leave/2027_legal_holidays.cfm",
+   "start_date": "2027-02-15",
+   "verified": true
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "end_date": "2027-05-31",
+   "evidence": {
+    "observed_facts": "State table row: May 31, Monday. The page states that the legal holidays listed are those in New York State's General Construction Law and that, except for Flag Day, all legal holidays are observed by eligible State employees."
+   },
+   "holiday_name": "Memorial Day",
+   "jurisdiction_id": "US-NY",
+   "kind": "public_holiday",
+   "needs_human_verify": false,
+   "observance": "actual",
+   "source_edition": "2027 Calendar of Legal Holidays for State Employees in the Classified Service of the Executive Branch",
+   "source_locator": "2027 table, row: May 31, Monday",
+   "source_title": "NYS Department of Civil Service — 2027 Legal Holidays",
+   "source_url": "https://cs.ny.gov/attendance_leave/2027_legal_holidays.cfm",
+   "start_date": "2027-05-31",
+   "verified": true
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "end_date": "2027-06-19",
+   "evidence": {
+    "observed_facts": "State table row: June 19, Saturday (footnote b: no alternate observance designated; pass-day holiday). The page states that the legal holidays listed are those in New York State's General Construction Law and that, except for Flag Day, all legal holidays are observed by eligible State employees."
+   },
+   "holiday_name": "Juneteenth",
+   "jurisdiction_id": "US-NY",
+   "kind": "public_holiday",
+   "needs_human_verify": false,
+   "observance": "actual",
+   "source_edition": "2027 Calendar of Legal Holidays for State Employees in the Classified Service of the Executive Branch",
+   "source_locator": "2027 table, row: June 19, Saturday (footnote b: no alternate observance designated; pass-day holiday)",
+   "source_title": "NYS Department of Civil Service — 2027 Legal Holidays",
+   "source_url": "https://cs.ny.gov/attendance_leave/2027_legal_holidays.cfm",
+   "start_date": "2027-06-19",
+   "verified": true
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "end_date": "2027-07-04",
+   "evidence": {
+    "observed_facts": "State table row: July 4, Sunday. The page states that the legal holidays listed are those in New York State's General Construction Law and that, except for Flag Day, all legal holidays are observed by eligible State employees."
+   },
+   "holiday_name": "Independence Day",
+   "jurisdiction_id": "US-NY",
+   "kind": "public_holiday",
+   "needs_human_verify": false,
+   "observance": "actual",
+   "source_edition": "2027 Calendar of Legal Holidays for State Employees in the Classified Service of the Executive Branch",
+   "source_locator": "2027 table, row: July 4, Sunday",
+   "source_title": "NYS Department of Civil Service — 2027 Legal Holidays",
+   "source_url": "https://cs.ny.gov/attendance_leave/2027_legal_holidays.cfm",
+   "start_date": "2027-07-04",
+   "verified": true
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "end_date": "2027-07-05",
+   "evidence": {
+    "observed_facts": "State table row: July 5, Monday (footnote c: a Sunday holiday is observed the following Monday). The page states that the legal holidays listed are those in New York State's General Construction Law and that, except for Flag Day, all legal holidays are observed by eligible State employees."
+   },
+   "holiday_name": "Independence Day (Observed)",
+   "jurisdiction_id": "US-NY",
+   "kind": "public_holiday",
+   "needs_human_verify": false,
+   "observance": "substitute",
+   "source_edition": "2027 Calendar of Legal Holidays for State Employees in the Classified Service of the Executive Branch",
+   "source_locator": "2027 table, row: July 5, Monday (footnote c: a Sunday holiday is observed the following Monday)",
+   "source_title": "NYS Department of Civil Service — 2027 Legal Holidays",
+   "source_url": "https://cs.ny.gov/attendance_leave/2027_legal_holidays.cfm",
+   "start_date": "2027-07-05",
+   "verified": true
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "end_date": "2027-09-06",
+   "evidence": {
+    "observed_facts": "State table row: September 6, Monday. The page states that the legal holidays listed are those in New York State's General Construction Law and that, except for Flag Day, all legal holidays are observed by eligible State employees."
+   },
+   "holiday_name": "Labor Day",
+   "jurisdiction_id": "US-NY",
+   "kind": "public_holiday",
+   "needs_human_verify": false,
+   "observance": "actual",
+   "source_edition": "2027 Calendar of Legal Holidays for State Employees in the Classified Service of the Executive Branch",
+   "source_locator": "2027 table, row: September 6, Monday",
+   "source_title": "NYS Department of Civil Service — 2027 Legal Holidays",
+   "source_url": "https://cs.ny.gov/attendance_leave/2027_legal_holidays.cfm",
+   "start_date": "2027-09-06",
+   "verified": true
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "end_date": "2027-10-11",
+   "evidence": {
+    "observed_facts": "State table row: October 11, Monday. The page states that the legal holidays listed are those in New York State's General Construction Law and that, except for Flag Day, all legal holidays are observed by eligible State employees."
+   },
+   "holiday_name": "Columbus Day",
+   "jurisdiction_id": "US-NY",
+   "kind": "public_holiday",
+   "needs_human_verify": false,
+   "observance": "actual",
+   "source_edition": "2027 Calendar of Legal Holidays for State Employees in the Classified Service of the Executive Branch",
+   "source_locator": "2027 table, row: October 11, Monday",
+   "source_title": "NYS Department of Civil Service — 2027 Legal Holidays",
+   "source_url": "https://cs.ny.gov/attendance_leave/2027_legal_holidays.cfm",
+   "start_date": "2027-10-11",
+   "verified": true
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "end_date": "2027-11-02",
+   "evidence": {
+    "observed_facts": "State table row: November 2, Tuesday (footnote d: not yet designated a floating holiday for 2027). The page states that the legal holidays listed are those in New York State's General Construction Law and that, except for Flag Day, all legal holidays are observed by eligible State employees."
+   },
+   "holiday_name": "Election Day",
+   "jurisdiction_id": "US-NY",
+   "kind": "public_holiday",
+   "needs_human_verify": false,
+   "observance": "actual",
+   "source_edition": "2027 Calendar of Legal Holidays for State Employees in the Classified Service of the Executive Branch",
+   "source_locator": "2027 table, row: November 2, Tuesday (footnote d: not yet designated a floating holiday for 2027)",
+   "source_title": "NYS Department of Civil Service — 2027 Legal Holidays",
+   "source_url": "https://cs.ny.gov/attendance_leave/2027_legal_holidays.cfm",
+   "start_date": "2027-11-02",
+   "verified": true
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "end_date": "2027-11-11",
+   "evidence": {
+    "observed_facts": "State table row: November 11, Thursday. The page states that the legal holidays listed are those in New York State's General Construction Law and that, except for Flag Day, all legal holidays are observed by eligible State employees."
+   },
+   "holiday_name": "Veterans' Day",
+   "jurisdiction_id": "US-NY",
+   "kind": "public_holiday",
+   "needs_human_verify": false,
+   "observance": "actual",
+   "source_edition": "2027 Calendar of Legal Holidays for State Employees in the Classified Service of the Executive Branch",
+   "source_locator": "2027 table, row: November 11, Thursday",
+   "source_title": "NYS Department of Civil Service — 2027 Legal Holidays",
+   "source_url": "https://cs.ny.gov/attendance_leave/2027_legal_holidays.cfm",
+   "start_date": "2027-11-11",
+   "verified": true
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "end_date": "2027-11-25",
+   "evidence": {
+    "observed_facts": "State table row: November 25, Thursday. The page states that the legal holidays listed are those in New York State's General Construction Law and that, except for Flag Day, all legal holidays are observed by eligible State employees."
+   },
+   "holiday_name": "Thanksgiving Day",
+   "jurisdiction_id": "US-NY",
+   "kind": "public_holiday",
+   "needs_human_verify": false,
+   "observance": "actual",
+   "source_edition": "2027 Calendar of Legal Holidays for State Employees in the Classified Service of the Executive Branch",
+   "source_locator": "2027 table, row: November 25, Thursday",
+   "source_title": "NYS Department of Civil Service — 2027 Legal Holidays",
+   "source_url": "https://cs.ny.gov/attendance_leave/2027_legal_holidays.cfm",
+   "start_date": "2027-11-25",
+   "verified": true
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "end_date": "2027-12-25",
+   "evidence": {
+    "observed_facts": "State table row: December 25, Saturday (footnote b: no alternate observance designated; pass-day holiday). The page states that the legal holidays listed are those in New York State's General Construction Law and that, except for Flag Day, all legal holidays are observed by eligible State employees."
+   },
+   "holiday_name": "Christmas Day",
+   "jurisdiction_id": "US-NY",
+   "kind": "public_holiday",
+   "needs_human_verify": false,
+   "observance": "actual",
+   "source_edition": "2027 Calendar of Legal Holidays for State Employees in the Classified Service of the Executive Branch",
+   "source_locator": "2027 table, row: December 25, Saturday (footnote b: no alternate observance designated; pass-day holiday)",
+   "source_title": "NYS Department of Civil Service — 2027 Legal Holidays",
+   "source_url": "https://cs.ny.gov/attendance_leave/2027_legal_holidays.cfm",
+   "start_date": "2027-12-25",
+   "verified": true
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "derived": true,
+   "end_date": "2027-01-01",
+   "evidence": {
+    "observed_facts": "The agency closes on New Year's Day, Friday, January 1, 2027. The direct request returned HTTP 403 on 2026-11-24; the list was read through the search provider's extraction of the same URL, so the row is stored as derived and unverified."
+   },
+   "holiday_name": "New Year's Day",
+   "jurisdiction_id": "US-NY:nyc",
+   "kind": "public_holiday",
+   "needs_human_verify": true,
+   "observance": "actual",
+   "source_edition": "Published 2027 closing list",
+   "source_locator": "Holidays/Closings list, 2027 entries: New Year's Day, Friday, January 1, 2027",
+   "source_title": "NYC Department of Consumer and Worker Protection — Holidays/Closings",
+   "source_url": "https://www.nyc.gov/site/dca/about/holidays-closings.page",
+   "start_date": "2027-01-01",
+   "verification_questions": [
+    "Confirm the 2027 city holiday list on the agency page from an unblocked network."
+   ],
+   "verified": false
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "derived": true,
+   "end_date": "2027-01-18",
+   "evidence": {
+    "observed_facts": "The agency closes on Martin Luther King Jr. Day, Monday, January 18, 2027. The direct request returned HTTP 403 on 2026-11-24; the list was read through the search provider's extraction of the same URL, so the row is stored as derived and unverified."
+   },
+   "holiday_name": "Martin Luther King Jr. Day",
+   "jurisdiction_id": "US-NY:nyc",
+   "kind": "public_holiday",
+   "needs_human_verify": true,
+   "observance": "actual",
+   "source_edition": "Published 2027 closing list",
+   "source_locator": "Holidays/Closings list, 2027 entries: Martin Luther King Jr. Day, Monday, January 18, 2027",
+   "source_title": "NYC Department of Consumer and Worker Protection — Holidays/Closings",
+   "source_url": "https://www.nyc.gov/site/dca/about/holidays-closings.page",
+   "start_date": "2027-01-18",
+   "verification_questions": [
+    "Confirm the 2027 city holiday list on the agency page from an unblocked network."
+   ],
+   "verified": false
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "derived": true,
+   "end_date": "2027-02-15",
+   "evidence": {
+    "observed_facts": "The agency closes on Presidents Day, Monday, February 15, 2027. The direct request returned HTTP 403 on 2026-11-24; the list was read through the search provider's extraction of the same URL, so the row is stored as derived and unverified."
+   },
+   "holiday_name": "Presidents Day",
+   "jurisdiction_id": "US-NY:nyc",
+   "kind": "public_holiday",
+   "needs_human_verify": true,
+   "observance": "actual",
+   "source_edition": "Published 2027 closing list",
+   "source_locator": "Holidays/Closings list, 2027 entries: Presidents Day, Monday, February 15, 2027",
+   "source_title": "NYC Department of Consumer and Worker Protection — Holidays/Closings",
+   "source_url": "https://www.nyc.gov/site/dca/about/holidays-closings.page",
+   "start_date": "2027-02-15",
+   "verification_questions": [
+    "Confirm the 2027 city holiday list on the agency page from an unblocked network."
+   ],
+   "verified": false
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "derived": true,
+   "end_date": "2027-05-31",
+   "evidence": {
+    "observed_facts": "The agency closes on Memorial Day, Monday, May 31, 2027. The direct request returned HTTP 403 on 2026-11-24; the list was read through the search provider's extraction of the same URL, so the row is stored as derived and unverified."
+   },
+   "holiday_name": "Memorial Day",
+   "jurisdiction_id": "US-NY:nyc",
+   "kind": "public_holiday",
+   "needs_human_verify": true,
+   "observance": "actual",
+   "source_edition": "Published 2027 closing list",
+   "source_locator": "Holidays/Closings list, 2027 entries: Memorial Day, Monday, May 31, 2027",
+   "source_title": "NYC Department of Consumer and Worker Protection — Holidays/Closings",
+   "source_url": "https://www.nyc.gov/site/dca/about/holidays-closings.page",
+   "start_date": "2027-05-31",
+   "verification_questions": [
+    "Confirm the 2027 city holiday list on the agency page from an unblocked network."
+   ],
+   "verified": false
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "derived": true,
+   "end_date": "2027-06-18",
+   "evidence": {
+    "observed_facts": "The agency closes on Juneteenth Day, Friday, June 18, 2027. The direct request returned HTTP 403 on 2026-11-24; the list was read through the search provider's extraction of the same URL, so the row is stored as derived and unverified."
+   },
+   "holiday_name": "Juneteenth Day",
+   "jurisdiction_id": "US-NY:nyc",
+   "kind": "public_holiday",
+   "needs_human_verify": true,
+   "observance": "substitute",
+   "source_edition": "Published 2027 closing list",
+   "source_locator": "Holidays/Closings list, 2027 entries: Juneteenth Day, Friday, June 18, 2027",
+   "source_title": "NYC Department of Consumer and Worker Protection — Holidays/Closings",
+   "source_url": "https://www.nyc.gov/site/dca/about/holidays-closings.page",
+   "start_date": "2027-06-18",
+   "verification_questions": [
+    "Confirm the 2027 city holiday list on the agency page from an unblocked network."
+   ],
+   "verified": false
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "derived": true,
+   "end_date": "2027-07-05",
+   "evidence": {
+    "observed_facts": "The agency closes on Independence Day, Monday, July 5, 2027. The direct request returned HTTP 403 on 2026-11-24; the list was read through the search provider's extraction of the same URL, so the row is stored as derived and unverified."
+   },
+   "holiday_name": "Independence Day",
+   "jurisdiction_id": "US-NY:nyc",
+   "kind": "public_holiday",
+   "needs_human_verify": true,
+   "observance": "substitute",
+   "source_edition": "Published 2027 closing list",
+   "source_locator": "Holidays/Closings list, 2027 entries: Independence Day, Monday, July 5, 2027",
+   "source_title": "NYC Department of Consumer and Worker Protection — Holidays/Closings",
+   "source_url": "https://www.nyc.gov/site/dca/about/holidays-closings.page",
+   "start_date": "2027-07-05",
+   "verification_questions": [
+    "Confirm the 2027 city holiday list on the agency page from an unblocked network."
+   ],
+   "verified": false
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "derived": true,
+   "end_date": "2027-09-06",
+   "evidence": {
+    "observed_facts": "The agency closes on Labor Day, Monday, September 6, 2027. The direct request returned HTTP 403 on 2026-11-24; the list was read through the search provider's extraction of the same URL, so the row is stored as derived and unverified."
+   },
+   "holiday_name": "Labor Day",
+   "jurisdiction_id": "US-NY:nyc",
+   "kind": "public_holiday",
+   "needs_human_verify": true,
+   "observance": "actual",
+   "source_edition": "Published 2027 closing list",
+   "source_locator": "Holidays/Closings list, 2027 entries: Labor Day, Monday, September 6, 2027",
+   "source_title": "NYC Department of Consumer and Worker Protection — Holidays/Closings",
+   "source_url": "https://www.nyc.gov/site/dca/about/holidays-closings.page",
+   "start_date": "2027-09-06",
+   "verification_questions": [
+    "Confirm the 2027 city holiday list on the agency page from an unblocked network."
+   ],
+   "verified": false
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "derived": true,
+   "end_date": "2027-10-11",
+   "evidence": {
+    "observed_facts": "The agency closes on Indigenous Peoples Day, Monday, October 11, 2027. The direct request returned HTTP 403 on 2026-11-24; the list was read through the search provider's extraction of the same URL, so the row is stored as derived and unverified."
+   },
+   "holiday_name": "Indigenous Peoples Day",
+   "jurisdiction_id": "US-NY:nyc",
+   "kind": "public_holiday",
+   "needs_human_verify": true,
+   "observance": "actual",
+   "source_edition": "Published 2027 closing list",
+   "source_locator": "Holidays/Closings list, 2027 entries: Indigenous Peoples Day, Monday, October 11, 2027",
+   "source_title": "NYC Department of Consumer and Worker Protection — Holidays/Closings",
+   "source_url": "https://www.nyc.gov/site/dca/about/holidays-closings.page",
+   "start_date": "2027-10-11",
+   "verification_questions": [
+    "Confirm the 2027 city holiday list on the agency page from an unblocked network."
+   ],
+   "verified": false
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "derived": true,
+   "end_date": "2027-11-02",
+   "evidence": {
+    "observed_facts": "The agency closes on Election Day, Tuesday, November 2, 2027. The direct request returned HTTP 403 on 2026-11-24; the list was read through the search provider's extraction of the same URL, so the row is stored as derived and unverified."
+   },
+   "holiday_name": "Election Day",
+   "jurisdiction_id": "US-NY:nyc",
+   "kind": "public_holiday",
+   "needs_human_verify": true,
+   "observance": "actual",
+   "source_edition": "Published 2027 closing list",
+   "source_locator": "Holidays/Closings list, 2027 entries: Election Day, Tuesday, November 2, 2027",
+   "source_title": "NYC Department of Consumer and Worker Protection — Holidays/Closings",
+   "source_url": "https://www.nyc.gov/site/dca/about/holidays-closings.page",
+   "start_date": "2027-11-02",
+   "verification_questions": [
+    "Confirm the 2027 city holiday list on the agency page from an unblocked network."
+   ],
+   "verified": false
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "derived": true,
+   "end_date": "2027-11-11",
+   "evidence": {
+    "observed_facts": "The agency closes on Veterans Day, Thursday, November 11, 2027. The direct request returned HTTP 403 on 2026-11-24; the list was read through the search provider's extraction of the same URL, so the row is stored as derived and unverified."
+   },
+   "holiday_name": "Veterans Day",
+   "jurisdiction_id": "US-NY:nyc",
+   "kind": "public_holiday",
+   "needs_human_verify": true,
+   "observance": "actual",
+   "source_edition": "Published 2027 closing list",
+   "source_locator": "Holidays/Closings list, 2027 entries: Veterans Day, Thursday, November 11, 2027",
+   "source_title": "NYC Department of Consumer and Worker Protection — Holidays/Closings",
+   "source_url": "https://www.nyc.gov/site/dca/about/holidays-closings.page",
+   "start_date": "2027-11-11",
+   "verification_questions": [
+    "Confirm the 2027 city holiday list on the agency page from an unblocked network."
+   ],
+   "verified": false
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "derived": true,
+   "end_date": "2027-11-25",
+   "evidence": {
+    "observed_facts": "The agency closes on Thanksgiving Day, Thursday, November 25, 2027. The direct request returned HTTP 403 on 2026-11-24; the list was read through the search provider's extraction of the same URL, so the row is stored as derived and unverified."
+   },
+   "holiday_name": "Thanksgiving Day",
+   "jurisdiction_id": "US-NY:nyc",
+   "kind": "public_holiday",
+   "needs_human_verify": true,
+   "observance": "actual",
+   "source_edition": "Published 2027 closing list",
+   "source_locator": "Holidays/Closings list, 2027 entries: Thanksgiving Day, Thursday, November 25, 2027",
+   "source_title": "NYC Department of Consumer and Worker Protection — Holidays/Closings",
+   "source_url": "https://www.nyc.gov/site/dca/about/holidays-closings.page",
+   "start_date": "2027-11-25",
+   "verification_questions": [
+    "Confirm the 2027 city holiday list on the agency page from an unblocked network."
+   ],
+   "verified": false
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "derived": true,
+   "end_date": "2027-12-24",
+   "evidence": {
+    "observed_facts": "The agency closes on Christmas Day, Friday, December 24, 2027. The direct request returned HTTP 403 on 2026-11-24; the list was read through the search provider's extraction of the same URL, so the row is stored as derived and unverified."
+   },
+   "holiday_name": "Christmas Day",
+   "jurisdiction_id": "US-NY:nyc",
+   "kind": "public_holiday",
+   "needs_human_verify": true,
+   "observance": "substitute",
+   "source_edition": "Published 2027 closing list",
+   "source_locator": "Holidays/Closings list, 2027 entries: Christmas Day, Friday, December 24, 2027",
+   "source_title": "NYC Department of Consumer and Worker Protection — Holidays/Closings",
+   "source_url": "https://www.nyc.gov/site/dca/about/holidays-closings.page",
+   "start_date": "2027-12-24",
+   "verification_questions": [
+    "Confirm the 2027 city holiday list on the agency page from an unblocked network."
+   ],
+   "verified": false
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "derived": true,
+   "end_date": "2027-12-31",
+   "evidence": {
+    "observed_facts": "The agency closes on New Year's Day, Friday, December 31, 2027 (observance of 1 January 2028). The direct request returned HTTP 403 on 2026-11-24; the list was read through the search provider's extraction of the same URL, so the row is stored as derived and unverified."
+   },
+   "holiday_name": "New Year's Day",
+   "jurisdiction_id": "US-NY:nyc",
+   "kind": "public_holiday",
+   "needs_human_verify": true,
+   "observance": "substitute",
+   "source_edition": "Published 2027 closing list",
+   "source_locator": "Holidays/Closings list, 2027 entries: New Year's Day, Friday, December 31, 2027 (observance of 1 January 2028)",
+   "source_title": "NYC Department of Consumer and Worker Protection — Holidays/Closings",
+   "source_url": "https://www.nyc.gov/site/dca/about/holidays-closings.page",
+   "start_date": "2027-12-31",
+   "verification_questions": [
+    "Confirm the 2027 city holiday list on the agency page from an unblocked network."
+   ],
+   "verified": false
+  }
+ ],
+ "run_id": "run-20261124-nyc-n1"
+}

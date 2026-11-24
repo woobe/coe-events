@@ -1,0 +1,2119 @@
+{
+ "city_name": "New York",
+ "city_registry": {
+  "path": "/home/joe/repo_dev/hermes-skills/plan-event/references/cities.json",
+  "registry_id": "new-york-ny-us",
+  "sha256": "9b6b5713064ca61b84f4baf38127b0f9e7529a36bfa838e28ef30cdc90c8c7e8",
+  "slug": "new-york-ny-us"
+ },
+ "city_slug": "new-york-ny-us",
+ "country": "United States",
+ "timezone": "America/New_York",
+ "currency": "USD",
+ "currency_assumptions": [
+  "All venue prices are published in US dollars; local and comparison currency are the same, so no FX conversion is applied and no rate is stored.",
+  "A published hourly rate is multiplied by 8 or 12 hours only where the listing leaves the room bookable for that whole interval; the result is labelled estimated_from_rate, not a quote.",
+  "A published day or session rate is recorded as published_rate and is not converted into a different window it does not cover.",
+  "The soft budget for scoring is USD 5,000; exactly USD 5,000 is not over budget, and cost is never a gate."
+ ],
+ "event_context": {
+  "attendance": 50,
+  "budget_currency": "USD",
+  "currency": "USD",
+  "duration_hours": 8,
+  "fallback_end_local": "17:00",
+  "local_currency": "USD",
+  "preferred_duration_hours": 12,
+  "preferred_end_local": "21:00",
+  "soft_budget_usd": 5000.0,
+  "start_local": "09:00"
+ },
+ "holiday_registry": {
+  "base_coverage_rows": 69,
+  "base_holiday_rows": 354,
+  "base_jurisdiction_ids": [
+   "US",
+   "US-NY:nycps"
+  ],
+  "coverage_rows": 4,
+  "holiday_rows": 43,
+  "host_jurisdiction_id": "US-NY:nyc",
+  "jurisdiction_ids": [
+   "US",
+   "US-NY",
+   "US-NY:nyc",
+   "US-NY:nycps"
+  ],
+  "path": "/home/joe/repo_dev/hermes-skills/plan-event/references/school_holidays.json",
+  "projection_year": 2027,
+  "sha256": "b823b0e20ea437adc260c905ec6f0ab82da20a95b3f22bd0ccb007011d175840",
+  "supplement": {
+   "coverage_rows": 2,
+   "holiday_rows": 27,
+   "jurisdiction_ids": [
+    "US-NY",
+    "US-NY:nyc"
+   ],
+   "note": "New York State and New York City public-holiday scopes, both dated 2026-11-24. The state rows are read from the Civil Service table; the city rows are derived from a blocked agency page and carry needs_human_verify.",
+   "path": "/home/joe/repo_dev/coe-events/research/new-york/city/holiday-supplement.json",
+   "sha256": "c0232079710cf5b669aaae5f53627ff491e8886ac9735b99d0bde76647357fe6"
+  }
+ },
+ "holidays": [
+  {
+   "accessed_on": "2026-11-20",
+   "end_date": "2027-01-01",
+   "evidence": {
+    "observed_facts": "The OPM 2027 schedule lists 'Friday, January 01' as New Year's Day."
+   },
+   "holiday_name": "New Year's Day",
+   "jurisdiction_id": "US",
+   "kind": "public_holiday",
+   "needs_human_verify": false,
+   "observance": "actual",
+   "source_edition": "OPM 2027 Holiday Schedule",
+   "source_locator": "Section '2027', table '2027 Holiday Schedule', row 'Friday, January 01 | New Year's Day'",
+   "source_title": "Federal Holidays - U.S. Office of Personnel Management",
+   "source_url": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+   "start_date": "2027-01-01",
+   "verification_questions": [],
+   "verified": true
+  },
+  {
+   "accessed_on": "2026-11-20",
+   "end_date": "2027-01-18",
+   "evidence": {
+    "observed_facts": "The OPM 2027 schedule lists 'Monday, January 18' as the Birthday of Martin Luther King, Jr."
+   },
+   "holiday_name": "Birthday of Martin Luther King, Jr.",
+   "jurisdiction_id": "US",
+   "kind": "public_holiday",
+   "needs_human_verify": false,
+   "observance": "actual",
+   "source_edition": "OPM 2027 Holiday Schedule",
+   "source_locator": "Section '2027', table '2027 Holiday Schedule', row 'Monday, January 18 | Birthday of Martin Luther King, Jr.'",
+   "source_title": "Federal Holidays - U.S. Office of Personnel Management",
+   "source_url": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+   "start_date": "2027-01-18",
+   "verification_questions": [],
+   "verified": true
+  },
+  {
+   "accessed_on": "2026-11-20",
+   "end_date": "2027-02-15",
+   "evidence": {
+    "observed_facts": "The OPM 2027 schedule lists 'Monday, February 15' as Washington's Birthday, with the footnote that this is the statutory name in 5 U.S.C. 6103(a)."
+   },
+   "holiday_name": "Washington's Birthday",
+   "jurisdiction_id": "US",
+   "kind": "public_holiday",
+   "needs_human_verify": false,
+   "observance": "actual",
+   "source_edition": "OPM 2027 Holiday Schedule",
+   "source_locator": "Section '2027', table '2027 Holiday Schedule', row 'Monday, February 15 (asterisk) | Washington's Birthday'",
+   "source_title": "Federal Holidays - U.S. Office of Personnel Management",
+   "source_url": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+   "start_date": "2027-02-15",
+   "verification_questions": [],
+   "verified": true
+  },
+  {
+   "accessed_on": "2026-11-20",
+   "end_date": "2027-05-31",
+   "evidence": {
+    "observed_facts": "The OPM 2027 schedule lists 'Monday, May 31' as Memorial Day."
+   },
+   "holiday_name": "Memorial Day",
+   "jurisdiction_id": "US",
+   "kind": "public_holiday",
+   "needs_human_verify": false,
+   "observance": "actual",
+   "source_edition": "OPM 2027 Holiday Schedule",
+   "source_locator": "Section '2027', table '2027 Holiday Schedule', row 'Monday, May 31 | Memorial Day'",
+   "source_title": "Federal Holidays - U.S. Office of Personnel Management",
+   "source_url": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+   "start_date": "2027-05-31",
+   "verification_questions": [],
+   "verified": true
+  },
+  {
+   "accessed_on": "2026-11-20",
+   "end_date": "2027-06-18",
+   "evidence": {
+    "inference": "The observed date is the Friday named in the official schedule, not a synthesized shift.",
+    "observed_facts": "The OPM 2027 schedule lists 'Friday, June 18' for Juneteenth National Independence Day; the two-asterisk footnote states that when a holiday falls on a Saturday the preceding Friday is treated as the holiday (5 U.S.C. 6103(b)), and 19 June 2027 is a Saturday."
+   },
+   "holiday_name": "Juneteenth National Independence Day",
+   "jurisdiction_id": "US",
+   "kind": "public_holiday",
+   "needs_human_verify": false,
+   "observance": "substitute",
+   "source_edition": "OPM 2027 Holiday Schedule",
+   "source_locator": "Section '2027', table '2027 Holiday Schedule', row 'Friday, June 18 (two asterisks) | Juneteenth National Independence Day'",
+   "source_title": "Federal Holidays - U.S. Office of Personnel Management",
+   "source_url": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+   "start_date": "2027-06-18",
+   "verification_questions": [],
+   "verified": true
+  },
+  {
+   "accessed_on": "2026-11-20",
+   "end_date": "2027-07-05",
+   "evidence": {
+    "inference": "The observed date is the Monday named in the official schedule.",
+    "observed_facts": "The OPM 2027 schedule lists 'Monday, July 05' for Independence Day; the two-asterisk footnote applies the in-lieu-of rule to a Sunday holiday (4 July 2027)."
+   },
+   "holiday_name": "Independence Day",
+   "jurisdiction_id": "US",
+   "kind": "public_holiday",
+   "needs_human_verify": false,
+   "observance": "substitute",
+   "source_edition": "OPM 2027 Holiday Schedule",
+   "source_locator": "Section '2027', table '2027 Holiday Schedule', row 'Monday, July 05 (two asterisks) | Independence Day'",
+   "source_title": "Federal Holidays - U.S. Office of Personnel Management",
+   "source_url": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+   "start_date": "2027-07-05",
+   "verification_questions": [],
+   "verified": true
+  },
+  {
+   "accessed_on": "2026-11-20",
+   "end_date": "2027-09-06",
+   "evidence": {
+    "observed_facts": "The OPM 2027 schedule lists 'Monday, September 06' as Labor Day."
+   },
+   "holiday_name": "Labor Day",
+   "jurisdiction_id": "US",
+   "kind": "public_holiday",
+   "needs_human_verify": false,
+   "observance": "actual",
+   "source_edition": "OPM 2027 Holiday Schedule",
+   "source_locator": "Section '2027', table '2027 Holiday Schedule', row 'Monday, September 06 | Labor Day'",
+   "source_title": "Federal Holidays - U.S. Office of Personnel Management",
+   "source_url": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+   "start_date": "2027-09-06",
+   "verification_questions": [],
+   "verified": true
+  },
+  {
+   "accessed_on": "2026-11-20",
+   "end_date": "2027-10-11",
+   "evidence": {
+    "observed_facts": "The OPM 2027 schedule lists 'Monday, October 11' as Columbus Day."
+   },
+   "holiday_name": "Columbus Day",
+   "jurisdiction_id": "US",
+   "kind": "public_holiday",
+   "needs_human_verify": false,
+   "observance": "actual",
+   "source_edition": "OPM 2027 Holiday Schedule",
+   "source_locator": "Section '2027', table '2027 Holiday Schedule', row 'Monday, October 11 | Columbus Day'",
+   "source_title": "Federal Holidays - U.S. Office of Personnel Management",
+   "source_url": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+   "start_date": "2027-10-11",
+   "verification_questions": [],
+   "verified": true
+  },
+  {
+   "accessed_on": "2026-11-20",
+   "end_date": "2027-11-11",
+   "evidence": {
+    "observed_facts": "The OPM 2027 schedule lists 'Thursday, November 11' as Veterans Day."
+   },
+   "holiday_name": "Veterans Day",
+   "jurisdiction_id": "US",
+   "kind": "public_holiday",
+   "needs_human_verify": false,
+   "observance": "actual",
+   "source_edition": "OPM 2027 Holiday Schedule",
+   "source_locator": "Section '2027', table '2027 Holiday Schedule', row 'Thursday, November 11 | Veterans Day'",
+   "source_title": "Federal Holidays - U.S. Office of Personnel Management",
+   "source_url": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+   "start_date": "2027-11-11",
+   "verification_questions": [],
+   "verified": true
+  },
+  {
+   "accessed_on": "2026-11-20",
+   "end_date": "2027-11-25",
+   "evidence": {
+    "observed_facts": "The OPM 2027 schedule lists 'Thursday, November 25' as Thanksgiving Day."
+   },
+   "holiday_name": "Thanksgiving Day",
+   "jurisdiction_id": "US",
+   "kind": "public_holiday",
+   "needs_human_verify": false,
+   "observance": "actual",
+   "source_edition": "OPM 2027 Holiday Schedule",
+   "source_locator": "Section '2027', table '2027 Holiday Schedule', row 'Thursday, November 25 | Thanksgiving Day'",
+   "source_title": "Federal Holidays - U.S. Office of Personnel Management",
+   "source_url": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+   "start_date": "2027-11-25",
+   "verification_questions": [],
+   "verified": true
+  },
+  {
+   "accessed_on": "2026-11-20",
+   "end_date": "2027-12-24",
+   "evidence": {
+    "inference": "The observed date is the Friday named in the official schedule.",
+    "observed_facts": "The OPM 2027 schedule lists 'Friday, December 24' for Christmas Day; the two-asterisk footnote applies the in-lieu-of rule to a Saturday holiday (25 December 2027)."
+   },
+   "holiday_name": "Christmas Day",
+   "jurisdiction_id": "US",
+   "kind": "public_holiday",
+   "needs_human_verify": false,
+   "observance": "substitute",
+   "source_edition": "OPM 2027 Holiday Schedule",
+   "source_locator": "Section '2027', table '2027 Holiday Schedule', row 'Friday, December 24 (two asterisks) | Christmas Day'",
+   "source_title": "Federal Holidays - U.S. Office of Personnel Management",
+   "source_url": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+   "start_date": "2027-12-24",
+   "verification_questions": [],
+   "verified": true
+  },
+  {
+   "accessed_on": "2026-11-20",
+   "end_date": "2027-12-31",
+   "evidence": {
+    "inference": "The nominal 1 January 2028 date is not recorded separately, to avoid double counting the same holiday.",
+    "observed_facts": "The OPM 2028 schedule lists 'Friday, December 31' as New Year's Day for 2028; the asterisk footnote applies the in-lieu-of rule, and 1 January 2028 is a Saturday."
+   },
+   "holiday_name": "New Year's Day",
+   "jurisdiction_id": "US",
+   "kind": "public_holiday",
+   "needs_human_verify": false,
+   "observance": "substitute",
+   "source_edition": "OPM 2028 Holiday Schedule",
+   "source_locator": "Section '2028', table '2028 Holiday Schedule', row 'Friday, December 31 (asterisk) | New Year's Day'",
+   "source_title": "Federal Holidays - U.S. Office of Personnel Management",
+   "source_url": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+   "start_date": "2027-12-31",
+   "verification_questions": [],
+   "verified": true
+  },
+  {
+   "accessed_on": "2026-11-19",
+   "end_date": "2026-11-27",
+   "evidence": {
+    "observed_facts": "The official NYCPS 2026-2027 calendar lists 'November 26 - November 27 ... Thanksgiving Recess, schools closed'; the page's Thursday-Friday day labels match 26 and 27 November 2026."
+   },
+   "holiday_name": "Thanksgiving Recess",
+   "jurisdiction_id": "US-NY:nycps",
+   "kind": "school_holiday",
+   "needs_human_verify": false,
+   "source_edition": "2026-2027 School Year Calendar (NYCPS)",
+   "source_locator": "2026-2027 School Year Calendar, November row: 'November 26 - November 27 Thursday-Friday Thanksgiving Recess, schools closed'",
+   "source_title": "2026-2027 School Year Calendar",
+   "source_url": "https://www.schools.nyc.gov/calendar/2026-2027-school-year-calendar",
+   "start_date": "2026-11-26",
+   "verification_questions": [],
+   "verified": true
+  },
+  {
+   "accessed_on": "2026-11-19",
+   "end_date": "2027-01-01",
+   "evidence": {
+    "observed_facts": "The official NYCPS 2026-2027 calendar lists 'December 24 - January 1 Thursday-Friday Winter Recess, schools closed'; Thursday is 24 December 2026 and Friday is 1 January 2027, which fixes the year rollover."
+   },
+   "holiday_name": "Winter Recess",
+   "jurisdiction_id": "US-NY:nycps",
+   "kind": "school_holiday",
+   "needs_human_verify": false,
+   "source_edition": "2026-2027 School Year Calendar (NYCPS)",
+   "source_locator": "2026-2027 School Year Calendar, December row: 'December 24 - January 1 Thursday-Friday Winter Recess, schools closed'",
+   "source_title": "2026-2027 School Year Calendar",
+   "source_url": "https://www.schools.nyc.gov/calendar/2026-2027-school-year-calendar",
+   "start_date": "2026-12-24",
+   "verification_questions": [],
+   "verified": true
+  },
+  {
+   "accessed_on": "2026-11-20",
+   "end_date": "2027-02-19",
+   "evidence": {
+    "observed_facts": "The official NYCPS 2026-2027 calendar lists 'February 15 - February 19 ... Midwinter Recess, schools closed'; the same table gives Monday-Friday day labels for those dates in February 2027."
+   },
+   "holiday_name": "Midwinter Recess",
+   "jurisdiction_id": "US-NY:nycps",
+   "kind": "school_holiday",
+   "needs_human_verify": false,
+   "source_edition": "2026-2027 School Year Calendar (NYCPS)",
+   "source_locator": "Calendar table, February 2027 row: 'February 15 - February 19 Monday-Friday Midwinter Recess, schools closed'",
+   "source_title": "2026-2027 School Year Calendar",
+   "source_url": "https://www.schools.nyc.gov/calendar/2026-2027-school-year-calendar",
+   "start_date": "2027-02-15",
+   "verification_questions": [],
+   "verified": true
+  },
+  {
+   "accessed_on": "2026-11-20",
+   "end_date": "2027-04-30",
+   "evidence": {
+    "observed_facts": "The official NYCPS 2026-2027 calendar lists 'April 22 - April 30 ... Spring Recess, schools closed'; the table labels 22 April Thursday and 30 April Friday."
+   },
+   "holiday_name": "Spring Recess",
+   "jurisdiction_id": "US-NY:nycps",
+   "kind": "school_holiday",
+   "needs_human_verify": false,
+   "source_edition": "2026-2027 School Year Calendar (NYCPS)",
+   "source_locator": "Calendar table, April 2027 row: 'April 22 - April 30 Thursday-Friday Spring Recess, schools closed'",
+   "source_title": "2026-2027 School Year Calendar",
+   "source_url": "https://www.schools.nyc.gov/calendar/2026-2027-school-year-calendar",
+   "start_date": "2027-04-22",
+   "verification_questions": [],
+   "verified": true
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "end_date": "2027-01-01",
+   "evidence": {
+    "observed_facts": "State table row: January 1, Friday. The page states that the legal holidays listed are those in New York State's General Construction Law and that, except for Flag Day, all legal holidays are observed by eligible State employees."
+   },
+   "holiday_name": "New Year's Day",
+   "jurisdiction_id": "US-NY",
+   "kind": "public_holiday",
+   "needs_human_verify": false,
+   "observance": "actual",
+   "source_edition": "2027 Calendar of Legal Holidays for State Employees in the Classified Service of the Executive Branch",
+   "source_locator": "2027 table, row: January 1, Friday",
+   "source_title": "NYS Department of Civil Service \u2014 2027 Legal Holidays",
+   "source_url": "https://cs.ny.gov/attendance_leave/2027_legal_holidays.cfm",
+   "start_date": "2027-01-01",
+   "verified": true
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "end_date": "2027-01-18",
+   "evidence": {
+    "observed_facts": "State table row: January 18, Monday. The page states that the legal holidays listed are those in New York State's General Construction Law and that, except for Flag Day, all legal holidays are observed by eligible State employees."
+   },
+   "holiday_name": "Dr. Martin Luther King, Jr. Day",
+   "jurisdiction_id": "US-NY",
+   "kind": "public_holiday",
+   "needs_human_verify": false,
+   "observance": "actual",
+   "source_edition": "2027 Calendar of Legal Holidays for State Employees in the Classified Service of the Executive Branch",
+   "source_locator": "2027 table, row: January 18, Monday",
+   "source_title": "NYS Department of Civil Service \u2014 2027 Legal Holidays",
+   "source_url": "https://cs.ny.gov/attendance_leave/2027_legal_holidays.cfm",
+   "start_date": "2027-01-18",
+   "verified": true
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "end_date": "2027-02-12",
+   "evidence": {
+    "observed_facts": "State table row: February 12, Friday (footnote a: designated a floating holiday in 2027 for State employees in certain bargaining units). The page states that the legal holidays listed are those in New York State's General Construction Law and that, except for Flag Day, all legal holidays are observed by eligible State employees."
+   },
+   "holiday_name": "Lincoln's Birthday",
+   "jurisdiction_id": "US-NY",
+   "kind": "public_holiday",
+   "needs_human_verify": false,
+   "observance": "actual",
+   "source_edition": "2027 Calendar of Legal Holidays for State Employees in the Classified Service of the Executive Branch",
+   "source_locator": "2027 table, row: February 12, Friday (footnote a: designated a floating holiday in 2027 for State employees in certain bargaining units)",
+   "source_title": "NYS Department of Civil Service \u2014 2027 Legal Holidays",
+   "source_url": "https://cs.ny.gov/attendance_leave/2027_legal_holidays.cfm",
+   "start_date": "2027-02-12",
+   "verified": true
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "end_date": "2027-02-15",
+   "evidence": {
+    "observed_facts": "State table row: February 15, Monday. The page states that the legal holidays listed are those in New York State's General Construction Law and that, except for Flag Day, all legal holidays are observed by eligible State employees."
+   },
+   "holiday_name": "Washington's Birthday (Observed)",
+   "jurisdiction_id": "US-NY",
+   "kind": "public_holiday",
+   "needs_human_verify": false,
+   "observance": "substitute",
+   "source_edition": "2027 Calendar of Legal Holidays for State Employees in the Classified Service of the Executive Branch",
+   "source_locator": "2027 table, row: February 15, Monday",
+   "source_title": "NYS Department of Civil Service \u2014 2027 Legal Holidays",
+   "source_url": "https://cs.ny.gov/attendance_leave/2027_legal_holidays.cfm",
+   "start_date": "2027-02-15",
+   "verified": true
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "end_date": "2027-05-31",
+   "evidence": {
+    "observed_facts": "State table row: May 31, Monday. The page states that the legal holidays listed are those in New York State's General Construction Law and that, except for Flag Day, all legal holidays are observed by eligible State employees."
+   },
+   "holiday_name": "Memorial Day",
+   "jurisdiction_id": "US-NY",
+   "kind": "public_holiday",
+   "needs_human_verify": false,
+   "observance": "actual",
+   "source_edition": "2027 Calendar of Legal Holidays for State Employees in the Classified Service of the Executive Branch",
+   "source_locator": "2027 table, row: May 31, Monday",
+   "source_title": "NYS Department of Civil Service \u2014 2027 Legal Holidays",
+   "source_url": "https://cs.ny.gov/attendance_leave/2027_legal_holidays.cfm",
+   "start_date": "2027-05-31",
+   "verified": true
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "end_date": "2027-06-19",
+   "evidence": {
+    "observed_facts": "State table row: June 19, Saturday (footnote b: no alternate observance designated; pass-day holiday). The page states that the legal holidays listed are those in New York State's General Construction Law and that, except for Flag Day, all legal holidays are observed by eligible State employees."
+   },
+   "holiday_name": "Juneteenth",
+   "jurisdiction_id": "US-NY",
+   "kind": "public_holiday",
+   "needs_human_verify": false,
+   "observance": "actual",
+   "source_edition": "2027 Calendar of Legal Holidays for State Employees in the Classified Service of the Executive Branch",
+   "source_locator": "2027 table, row: June 19, Saturday (footnote b: no alternate observance designated; pass-day holiday)",
+   "source_title": "NYS Department of Civil Service \u2014 2027 Legal Holidays",
+   "source_url": "https://cs.ny.gov/attendance_leave/2027_legal_holidays.cfm",
+   "start_date": "2027-06-19",
+   "verified": true
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "end_date": "2027-07-04",
+   "evidence": {
+    "observed_facts": "State table row: July 4, Sunday. The page states that the legal holidays listed are those in New York State's General Construction Law and that, except for Flag Day, all legal holidays are observed by eligible State employees."
+   },
+   "holiday_name": "Independence Day",
+   "jurisdiction_id": "US-NY",
+   "kind": "public_holiday",
+   "needs_human_verify": false,
+   "observance": "actual",
+   "source_edition": "2027 Calendar of Legal Holidays for State Employees in the Classified Service of the Executive Branch",
+   "source_locator": "2027 table, row: July 4, Sunday",
+   "source_title": "NYS Department of Civil Service \u2014 2027 Legal Holidays",
+   "source_url": "https://cs.ny.gov/attendance_leave/2027_legal_holidays.cfm",
+   "start_date": "2027-07-04",
+   "verified": true
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "end_date": "2027-07-05",
+   "evidence": {
+    "observed_facts": "State table row: July 5, Monday (footnote c: a Sunday holiday is observed the following Monday). The page states that the legal holidays listed are those in New York State's General Construction Law and that, except for Flag Day, all legal holidays are observed by eligible State employees."
+   },
+   "holiday_name": "Independence Day (Observed)",
+   "jurisdiction_id": "US-NY",
+   "kind": "public_holiday",
+   "needs_human_verify": false,
+   "observance": "substitute",
+   "source_edition": "2027 Calendar of Legal Holidays for State Employees in the Classified Service of the Executive Branch",
+   "source_locator": "2027 table, row: July 5, Monday (footnote c: a Sunday holiday is observed the following Monday)",
+   "source_title": "NYS Department of Civil Service \u2014 2027 Legal Holidays",
+   "source_url": "https://cs.ny.gov/attendance_leave/2027_legal_holidays.cfm",
+   "start_date": "2027-07-05",
+   "verified": true
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "end_date": "2027-09-06",
+   "evidence": {
+    "observed_facts": "State table row: September 6, Monday. The page states that the legal holidays listed are those in New York State's General Construction Law and that, except for Flag Day, all legal holidays are observed by eligible State employees."
+   },
+   "holiday_name": "Labor Day",
+   "jurisdiction_id": "US-NY",
+   "kind": "public_holiday",
+   "needs_human_verify": false,
+   "observance": "actual",
+   "source_edition": "2027 Calendar of Legal Holidays for State Employees in the Classified Service of the Executive Branch",
+   "source_locator": "2027 table, row: September 6, Monday",
+   "source_title": "NYS Department of Civil Service \u2014 2027 Legal Holidays",
+   "source_url": "https://cs.ny.gov/attendance_leave/2027_legal_holidays.cfm",
+   "start_date": "2027-09-06",
+   "verified": true
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "end_date": "2027-10-11",
+   "evidence": {
+    "observed_facts": "State table row: October 11, Monday. The page states that the legal holidays listed are those in New York State's General Construction Law and that, except for Flag Day, all legal holidays are observed by eligible State employees."
+   },
+   "holiday_name": "Columbus Day",
+   "jurisdiction_id": "US-NY",
+   "kind": "public_holiday",
+   "needs_human_verify": false,
+   "observance": "actual",
+   "source_edition": "2027 Calendar of Legal Holidays for State Employees in the Classified Service of the Executive Branch",
+   "source_locator": "2027 table, row: October 11, Monday",
+   "source_title": "NYS Department of Civil Service \u2014 2027 Legal Holidays",
+   "source_url": "https://cs.ny.gov/attendance_leave/2027_legal_holidays.cfm",
+   "start_date": "2027-10-11",
+   "verified": true
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "end_date": "2027-11-02",
+   "evidence": {
+    "observed_facts": "State table row: November 2, Tuesday (footnote d: not yet designated a floating holiday for 2027). The page states that the legal holidays listed are those in New York State's General Construction Law and that, except for Flag Day, all legal holidays are observed by eligible State employees."
+   },
+   "holiday_name": "Election Day",
+   "jurisdiction_id": "US-NY",
+   "kind": "public_holiday",
+   "needs_human_verify": false,
+   "observance": "actual",
+   "source_edition": "2027 Calendar of Legal Holidays for State Employees in the Classified Service of the Executive Branch",
+   "source_locator": "2027 table, row: November 2, Tuesday (footnote d: not yet designated a floating holiday for 2027)",
+   "source_title": "NYS Department of Civil Service \u2014 2027 Legal Holidays",
+   "source_url": "https://cs.ny.gov/attendance_leave/2027_legal_holidays.cfm",
+   "start_date": "2027-11-02",
+   "verified": true
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "end_date": "2027-11-11",
+   "evidence": {
+    "observed_facts": "State table row: November 11, Thursday. The page states that the legal holidays listed are those in New York State's General Construction Law and that, except for Flag Day, all legal holidays are observed by eligible State employees."
+   },
+   "holiday_name": "Veterans' Day",
+   "jurisdiction_id": "US-NY",
+   "kind": "public_holiday",
+   "needs_human_verify": false,
+   "observance": "actual",
+   "source_edition": "2027 Calendar of Legal Holidays for State Employees in the Classified Service of the Executive Branch",
+   "source_locator": "2027 table, row: November 11, Thursday",
+   "source_title": "NYS Department of Civil Service \u2014 2027 Legal Holidays",
+   "source_url": "https://cs.ny.gov/attendance_leave/2027_legal_holidays.cfm",
+   "start_date": "2027-11-11",
+   "verified": true
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "end_date": "2027-11-25",
+   "evidence": {
+    "observed_facts": "State table row: November 25, Thursday. The page states that the legal holidays listed are those in New York State's General Construction Law and that, except for Flag Day, all legal holidays are observed by eligible State employees."
+   },
+   "holiday_name": "Thanksgiving Day",
+   "jurisdiction_id": "US-NY",
+   "kind": "public_holiday",
+   "needs_human_verify": false,
+   "observance": "actual",
+   "source_edition": "2027 Calendar of Legal Holidays for State Employees in the Classified Service of the Executive Branch",
+   "source_locator": "2027 table, row: November 25, Thursday",
+   "source_title": "NYS Department of Civil Service \u2014 2027 Legal Holidays",
+   "source_url": "https://cs.ny.gov/attendance_leave/2027_legal_holidays.cfm",
+   "start_date": "2027-11-25",
+   "verified": true
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "end_date": "2027-12-25",
+   "evidence": {
+    "observed_facts": "State table row: December 25, Saturday (footnote b: no alternate observance designated; pass-day holiday). The page states that the legal holidays listed are those in New York State's General Construction Law and that, except for Flag Day, all legal holidays are observed by eligible State employees."
+   },
+   "holiday_name": "Christmas Day",
+   "jurisdiction_id": "US-NY",
+   "kind": "public_holiday",
+   "needs_human_verify": false,
+   "observance": "actual",
+   "source_edition": "2027 Calendar of Legal Holidays for State Employees in the Classified Service of the Executive Branch",
+   "source_locator": "2027 table, row: December 25, Saturday (footnote b: no alternate observance designated; pass-day holiday)",
+   "source_title": "NYS Department of Civil Service \u2014 2027 Legal Holidays",
+   "source_url": "https://cs.ny.gov/attendance_leave/2027_legal_holidays.cfm",
+   "start_date": "2027-12-25",
+   "verified": true
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "derived": true,
+   "end_date": "2027-01-01",
+   "evidence": {
+    "observed_facts": "The agency closes on New Year's Day, Friday, January 1, 2027. The direct request returned HTTP 403 on 2026-11-24; the list was read through the search provider's extraction of the same URL, so the row is stored as derived and unverified."
+   },
+   "holiday_name": "New Year's Day",
+   "jurisdiction_id": "US-NY:nyc",
+   "kind": "public_holiday",
+   "needs_human_verify": true,
+   "observance": "actual",
+   "source_edition": "Published 2027 closing list",
+   "source_locator": "Holidays/Closings list, 2027 entries: New Year's Day, Friday, January 1, 2027",
+   "source_title": "NYC Department of Consumer and Worker Protection \u2014 Holidays/Closings",
+   "source_url": "https://www.nyc.gov/site/dca/about/holidays-closings.page",
+   "start_date": "2027-01-01",
+   "verification_questions": [
+    "Confirm the 2027 city holiday list on the agency page from an unblocked network."
+   ],
+   "verified": false
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "derived": true,
+   "end_date": "2027-01-18",
+   "evidence": {
+    "observed_facts": "The agency closes on Martin Luther King Jr. Day, Monday, January 18, 2027. The direct request returned HTTP 403 on 2026-11-24; the list was read through the search provider's extraction of the same URL, so the row is stored as derived and unverified."
+   },
+   "holiday_name": "Martin Luther King Jr. Day",
+   "jurisdiction_id": "US-NY:nyc",
+   "kind": "public_holiday",
+   "needs_human_verify": true,
+   "observance": "actual",
+   "source_edition": "Published 2027 closing list",
+   "source_locator": "Holidays/Closings list, 2027 entries: Martin Luther King Jr. Day, Monday, January 18, 2027",
+   "source_title": "NYC Department of Consumer and Worker Protection \u2014 Holidays/Closings",
+   "source_url": "https://www.nyc.gov/site/dca/about/holidays-closings.page",
+   "start_date": "2027-01-18",
+   "verification_questions": [
+    "Confirm the 2027 city holiday list on the agency page from an unblocked network."
+   ],
+   "verified": false
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "derived": true,
+   "end_date": "2027-02-15",
+   "evidence": {
+    "observed_facts": "The agency closes on Presidents Day, Monday, February 15, 2027. The direct request returned HTTP 403 on 2026-11-24; the list was read through the search provider's extraction of the same URL, so the row is stored as derived and unverified."
+   },
+   "holiday_name": "Presidents Day",
+   "jurisdiction_id": "US-NY:nyc",
+   "kind": "public_holiday",
+   "needs_human_verify": true,
+   "observance": "actual",
+   "source_edition": "Published 2027 closing list",
+   "source_locator": "Holidays/Closings list, 2027 entries: Presidents Day, Monday, February 15, 2027",
+   "source_title": "NYC Department of Consumer and Worker Protection \u2014 Holidays/Closings",
+   "source_url": "https://www.nyc.gov/site/dca/about/holidays-closings.page",
+   "start_date": "2027-02-15",
+   "verification_questions": [
+    "Confirm the 2027 city holiday list on the agency page from an unblocked network."
+   ],
+   "verified": false
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "derived": true,
+   "end_date": "2027-05-31",
+   "evidence": {
+    "observed_facts": "The agency closes on Memorial Day, Monday, May 31, 2027. The direct request returned HTTP 403 on 2026-11-24; the list was read through the search provider's extraction of the same URL, so the row is stored as derived and unverified."
+   },
+   "holiday_name": "Memorial Day",
+   "jurisdiction_id": "US-NY:nyc",
+   "kind": "public_holiday",
+   "needs_human_verify": true,
+   "observance": "actual",
+   "source_edition": "Published 2027 closing list",
+   "source_locator": "Holidays/Closings list, 2027 entries: Memorial Day, Monday, May 31, 2027",
+   "source_title": "NYC Department of Consumer and Worker Protection \u2014 Holidays/Closings",
+   "source_url": "https://www.nyc.gov/site/dca/about/holidays-closings.page",
+   "start_date": "2027-05-31",
+   "verification_questions": [
+    "Confirm the 2027 city holiday list on the agency page from an unblocked network."
+   ],
+   "verified": false
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "derived": true,
+   "end_date": "2027-06-18",
+   "evidence": {
+    "observed_facts": "The agency closes on Juneteenth Day, Friday, June 18, 2027. The direct request returned HTTP 403 on 2026-11-24; the list was read through the search provider's extraction of the same URL, so the row is stored as derived and unverified."
+   },
+   "holiday_name": "Juneteenth Day",
+   "jurisdiction_id": "US-NY:nyc",
+   "kind": "public_holiday",
+   "needs_human_verify": true,
+   "observance": "substitute",
+   "source_edition": "Published 2027 closing list",
+   "source_locator": "Holidays/Closings list, 2027 entries: Juneteenth Day, Friday, June 18, 2027",
+   "source_title": "NYC Department of Consumer and Worker Protection \u2014 Holidays/Closings",
+   "source_url": "https://www.nyc.gov/site/dca/about/holidays-closings.page",
+   "start_date": "2027-06-18",
+   "verification_questions": [
+    "Confirm the 2027 city holiday list on the agency page from an unblocked network."
+   ],
+   "verified": false
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "derived": true,
+   "end_date": "2027-07-05",
+   "evidence": {
+    "observed_facts": "The agency closes on Independence Day, Monday, July 5, 2027. The direct request returned HTTP 403 on 2026-11-24; the list was read through the search provider's extraction of the same URL, so the row is stored as derived and unverified."
+   },
+   "holiday_name": "Independence Day",
+   "jurisdiction_id": "US-NY:nyc",
+   "kind": "public_holiday",
+   "needs_human_verify": true,
+   "observance": "substitute",
+   "source_edition": "Published 2027 closing list",
+   "source_locator": "Holidays/Closings list, 2027 entries: Independence Day, Monday, July 5, 2027",
+   "source_title": "NYC Department of Consumer and Worker Protection \u2014 Holidays/Closings",
+   "source_url": "https://www.nyc.gov/site/dca/about/holidays-closings.page",
+   "start_date": "2027-07-05",
+   "verification_questions": [
+    "Confirm the 2027 city holiday list on the agency page from an unblocked network."
+   ],
+   "verified": false
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "derived": true,
+   "end_date": "2027-09-06",
+   "evidence": {
+    "observed_facts": "The agency closes on Labor Day, Monday, September 6, 2027. The direct request returned HTTP 403 on 2026-11-24; the list was read through the search provider's extraction of the same URL, so the row is stored as derived and unverified."
+   },
+   "holiday_name": "Labor Day",
+   "jurisdiction_id": "US-NY:nyc",
+   "kind": "public_holiday",
+   "needs_human_verify": true,
+   "observance": "actual",
+   "source_edition": "Published 2027 closing list",
+   "source_locator": "Holidays/Closings list, 2027 entries: Labor Day, Monday, September 6, 2027",
+   "source_title": "NYC Department of Consumer and Worker Protection \u2014 Holidays/Closings",
+   "source_url": "https://www.nyc.gov/site/dca/about/holidays-closings.page",
+   "start_date": "2027-09-06",
+   "verification_questions": [
+    "Confirm the 2027 city holiday list on the agency page from an unblocked network."
+   ],
+   "verified": false
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "derived": true,
+   "end_date": "2027-10-11",
+   "evidence": {
+    "observed_facts": "The agency closes on Indigenous Peoples Day, Monday, October 11, 2027. The direct request returned HTTP 403 on 2026-11-24; the list was read through the search provider's extraction of the same URL, so the row is stored as derived and unverified."
+   },
+   "holiday_name": "Indigenous Peoples Day",
+   "jurisdiction_id": "US-NY:nyc",
+   "kind": "public_holiday",
+   "needs_human_verify": true,
+   "observance": "actual",
+   "source_edition": "Published 2027 closing list",
+   "source_locator": "Holidays/Closings list, 2027 entries: Indigenous Peoples Day, Monday, October 11, 2027",
+   "source_title": "NYC Department of Consumer and Worker Protection \u2014 Holidays/Closings",
+   "source_url": "https://www.nyc.gov/site/dca/about/holidays-closings.page",
+   "start_date": "2027-10-11",
+   "verification_questions": [
+    "Confirm the 2027 city holiday list on the agency page from an unblocked network."
+   ],
+   "verified": false
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "derived": true,
+   "end_date": "2027-11-02",
+   "evidence": {
+    "observed_facts": "The agency closes on Election Day, Tuesday, November 2, 2027. The direct request returned HTTP 403 on 2026-11-24; the list was read through the search provider's extraction of the same URL, so the row is stored as derived and unverified."
+   },
+   "holiday_name": "Election Day",
+   "jurisdiction_id": "US-NY:nyc",
+   "kind": "public_holiday",
+   "needs_human_verify": true,
+   "observance": "actual",
+   "source_edition": "Published 2027 closing list",
+   "source_locator": "Holidays/Closings list, 2027 entries: Election Day, Tuesday, November 2, 2027",
+   "source_title": "NYC Department of Consumer and Worker Protection \u2014 Holidays/Closings",
+   "source_url": "https://www.nyc.gov/site/dca/about/holidays-closings.page",
+   "start_date": "2027-11-02",
+   "verification_questions": [
+    "Confirm the 2027 city holiday list on the agency page from an unblocked network."
+   ],
+   "verified": false
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "derived": true,
+   "end_date": "2027-11-11",
+   "evidence": {
+    "observed_facts": "The agency closes on Veterans Day, Thursday, November 11, 2027. The direct request returned HTTP 403 on 2026-11-24; the list was read through the search provider's extraction of the same URL, so the row is stored as derived and unverified."
+   },
+   "holiday_name": "Veterans Day",
+   "jurisdiction_id": "US-NY:nyc",
+   "kind": "public_holiday",
+   "needs_human_verify": true,
+   "observance": "actual",
+   "source_edition": "Published 2027 closing list",
+   "source_locator": "Holidays/Closings list, 2027 entries: Veterans Day, Thursday, November 11, 2027",
+   "source_title": "NYC Department of Consumer and Worker Protection \u2014 Holidays/Closings",
+   "source_url": "https://www.nyc.gov/site/dca/about/holidays-closings.page",
+   "start_date": "2027-11-11",
+   "verification_questions": [
+    "Confirm the 2027 city holiday list on the agency page from an unblocked network."
+   ],
+   "verified": false
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "derived": true,
+   "end_date": "2027-11-25",
+   "evidence": {
+    "observed_facts": "The agency closes on Thanksgiving Day, Thursday, November 25, 2027. The direct request returned HTTP 403 on 2026-11-24; the list was read through the search provider's extraction of the same URL, so the row is stored as derived and unverified."
+   },
+   "holiday_name": "Thanksgiving Day",
+   "jurisdiction_id": "US-NY:nyc",
+   "kind": "public_holiday",
+   "needs_human_verify": true,
+   "observance": "actual",
+   "source_edition": "Published 2027 closing list",
+   "source_locator": "Holidays/Closings list, 2027 entries: Thanksgiving Day, Thursday, November 25, 2027",
+   "source_title": "NYC Department of Consumer and Worker Protection \u2014 Holidays/Closings",
+   "source_url": "https://www.nyc.gov/site/dca/about/holidays-closings.page",
+   "start_date": "2027-11-25",
+   "verification_questions": [
+    "Confirm the 2027 city holiday list on the agency page from an unblocked network."
+   ],
+   "verified": false
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "derived": true,
+   "end_date": "2027-12-24",
+   "evidence": {
+    "observed_facts": "The agency closes on Christmas Day, Friday, December 24, 2027. The direct request returned HTTP 403 on 2026-11-24; the list was read through the search provider's extraction of the same URL, so the row is stored as derived and unverified."
+   },
+   "holiday_name": "Christmas Day",
+   "jurisdiction_id": "US-NY:nyc",
+   "kind": "public_holiday",
+   "needs_human_verify": true,
+   "observance": "substitute",
+   "source_edition": "Published 2027 closing list",
+   "source_locator": "Holidays/Closings list, 2027 entries: Christmas Day, Friday, December 24, 2027",
+   "source_title": "NYC Department of Consumer and Worker Protection \u2014 Holidays/Closings",
+   "source_url": "https://www.nyc.gov/site/dca/about/holidays-closings.page",
+   "start_date": "2027-12-24",
+   "verification_questions": [
+    "Confirm the 2027 city holiday list on the agency page from an unblocked network."
+   ],
+   "verified": false
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "derived": true,
+   "end_date": "2027-12-31",
+   "evidence": {
+    "observed_facts": "The agency closes on New Year's Day, Friday, December 31, 2027 (observance of 1 January 2028). The direct request returned HTTP 403 on 2026-11-24; the list was read through the search provider's extraction of the same URL, so the row is stored as derived and unverified."
+   },
+   "holiday_name": "New Year's Day",
+   "jurisdiction_id": "US-NY:nyc",
+   "kind": "public_holiday",
+   "needs_human_verify": true,
+   "observance": "substitute",
+   "source_edition": "Published 2027 closing list",
+   "source_locator": "Holidays/Closings list, 2027 entries: New Year's Day, Friday, December 31, 2027 (observance of 1 January 2028)",
+   "source_title": "NYC Department of Consumer and Worker Protection \u2014 Holidays/Closings",
+   "source_url": "https://www.nyc.gov/site/dca/about/holidays-closings.page",
+   "start_date": "2027-12-31",
+   "verification_questions": [
+    "Confirm the 2027 city holiday list on the agency page from an unblocked network."
+   ],
+   "verified": false
+  }
+ ],
+ "coverage": [
+  {
+   "accessed_on": "2026-11-24",
+   "end_date": "2027-12-31",
+   "evidence": {
+    "observed_facts": "Federal scope kept separate from the state and city layers; the 2027 table and the 31 December 2027 observance of New Year's Day 2028 were read in full."
+   },
+   "jurisdiction_id": "US",
+   "kind": "public_holiday_coverage",
+   "needs_human_verify": false,
+   "source_edition": "OPM 2027 and 2028 Holiday Schedules",
+   "source_locator": "Full-year 2027 span for this scope",
+   "source_title": "OPM \u2014 Federal Holidays",
+   "source_url": "https://www.opm.gov/policy-data-oversight/pay-leave/federal-holidays/",
+   "start_date": "2027-01-01",
+   "verified": true
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "end_date": "2027-12-31",
+   "evidence": {
+    "observed_facts": "State scope: the 2027 table for classified service in the Executive Branch was read in full, including the floating-holiday and pass-day footnotes. This is the state-employee observance list, not a statement that every employer closes."
+   },
+   "jurisdiction_id": "US-NY",
+   "kind": "public_holiday_coverage",
+   "needs_human_verify": true,
+   "source_edition": "2027 Calendar of Legal Holidays for State Employees",
+   "source_locator": "Full-year 2027 span for this scope",
+   "source_title": "NYS Department of Civil Service \u2014 2027 Legal Holidays",
+   "source_url": "https://cs.ny.gov/attendance_leave/2027_legal_holidays.cfm",
+   "start_date": "2027-01-01",
+   "verified": false
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "end_date": "2027-12-31",
+   "evidence": {
+    "observed_facts": "City scope: 13 published 2027 closing dates, read through the search provider after the direct request returned HTTP 403. Derived and unverified; it is one city agency's closing list, not a mayoral proclamation."
+   },
+   "jurisdiction_id": "US-NY:nyc",
+   "kind": "public_holiday_coverage",
+   "needs_human_verify": true,
+   "source_edition": "Published 2027 closing list",
+   "source_locator": "Full-year 2027 span for this scope",
+   "source_title": "NYC Department of Consumer and Worker Protection \u2014 Holidays/Closings",
+   "source_url": "https://www.nyc.gov/site/dca/about/holidays-closings.page",
+   "start_date": "2027-01-01",
+   "verified": false
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "end_date": "2027-06-28",
+   "evidence": {
+    "observed_facts": "School scope carried from the pinned registry: attested to 2027-06-28; the 2027-2028 edition is not published, so 2027-06-29 onward is unknown."
+   },
+   "jurisdiction_id": "US-NY:nycps",
+   "kind": "school_holiday_coverage",
+   "needs_human_verify": false,
+   "source_edition": "2026-2027 School Year Calendar",
+   "source_locator": "Full-year 2027 span for this scope",
+   "source_title": "NYC Public Schools \u2014 2026-2027 School Year Calendar",
+   "source_url": "https://www.schools.nyc.gov/calendar/2026-2027-school-year-calendar",
+   "start_date": "2027-01-01",
+   "verified": true
+  }
+ ],
+ "local_requirements": {
+  "alcohol": {
+   "check_status": "blocked",
+   "checked_on": "2026-11-24",
+   "claim_id": "cl-148d84bf06da",
+   "language": "en-US",
+   "needs_human_verify": true,
+   "quote": "net::ERR_SSL_VERSION_OR_CIPHER_MISMATCH",
+   "source_locator": "HTTPS request to the permits index, 2026-11-24",
+   "source_title": "New York State Liquor Authority \u2014 permits",
+   "source_url": "https://sla.ny.gov/permits",
+   "value": {
+    "observed_rule": "No permit rule could be read: the State Liquor Authority host refused a TLS handshake from this research host.",
+    "state": "open_question",
+    "unknown": "Which licence or permit covers free beer at an organized event, whether the venue's own licence can be extended to the room, and who applies.",
+    "venue_level": "Per-venue listings that print an alcohol licence are recorded in each venue's alcohol_service claim; that is a listing statement, not a permit confirmation."
+   },
+   "verification_questions": [
+    "Read the SLA permit pages from an unblocked network and confirm which permit applies."
+   ],
+   "verified_at": "2026-11-24"
+  },
+  "food": {
+   "check_status": "blocked",
+   "checked_on": "2026-11-24",
+   "claim_id": "cl-0ca5439206b7",
+   "language": "en-US",
+   "needs_human_verify": true,
+   "quote": "Access Denied (HTTP 403)",
+   "source_locator": "HTTPS request to the NYC Health food-operator page, 2026-11-24",
+   "source_title": "NYC Health \u2014 temporary food service establishment",
+   "source_url": "https://www.nyc.gov/site/doh/business/food-operators/temporary-food-service-establishment.page",
+   "value": {
+    "observed_rule": "No New York City food-permit rule could be read: nyc.gov returned HTTP 403 from this research host.",
+    "state": "open_question",
+    "unknown": "Whether a caterer needs a temporary food-service permit for a one-day event, who holds it, and how drop-off food is treated.",
+    "venue_level": "Each venue's catering and food_service claims record what the listing says about in-house versus external catering."
+   },
+   "verification_questions": [
+    "Confirm the temporary food-service permit rule and the caterer's own permit class."
+   ],
+   "verified_at": "2026-11-24"
+  },
+  "language": {
+   "check_status": "blocked",
+   "checked_on": "2026-11-24",
+   "claim_id": "cl-c65429e80e0e",
+   "language": "en-US",
+   "needs_human_verify": true,
+   "quote": "Access Denied (HTTP 403)",
+   "source_locator": "HTTPS request to the Commission page, 2026-11-24",
+   "source_title": "NYC Commission on Human Rights \u2014 language access",
+   "source_url": "https://www.nyc.gov/site/cchr/law/language-access.page",
+   "value": {
+    "observed_rule": "No city language-access rule could be read: nyc.gov returned HTTP 403 from this research host.",
+    "state": "open_question",
+    "unknown": "Whether any city rule applies to a private, English-language event's materials, signage or attendee service.",
+    "venue_level": "Every venue's language_support claim records only what the listing publishes, which is English-only for all assessed rows."
+   },
+   "verification_questions": [
+    "Read the NYC language-access guidance and confirm whether it reaches a private event."
+   ],
+   "verified_at": "2026-11-24"
+  }
+ },
+ "schema_version": "city-store/1",
+ "claim_provenance": "per-fact/1",
+ "updated_at": "2026-11-24T17:30:00Z",
+ "venues": {},
+ "events": {},
+ "pending_event_matches": {},
+ "communities": {
+  "nyc-com-0cb32649757b": {
+   "activity_status": "active",
+   "cadence": "Irregular; held events 2025-12-10 and 2026-06-02",
+   "city_slug": "new-york-ny-us",
+   "cohost_evidence_phrase": "Group About text states: 'Have a message to share with the AI community? Partner with us to lead an event or workshop.' and 'Interested in Sponsoring an AI event? Apply here.'",
+   "cohost_open": true,
+   "community_id": "nyc-com-0cb32649757b",
+   "contact_info": null,
+   "evidence": [
+    {
+     "observed_facts": "Group page re-read 2026-11-24: 4,174 members; dated past events run to 2026-08-28.",
+     "inference": null,
+     "run_id": "run-20261124b-nyc-n1",
+     "verified_at": "2026-11-24",
+     "source_url": "https://www.meetup.com/nyaimeetup/",
+     "source_title": "(NYAI) New York Artificial Intelligence group page (Meetup)"
+    }
+   ],
+   "focus_tags": [
+    "ai",
+    "machine_learning"
+   ],
+   "member_size_public": 4174,
+   "name": "(NYAI) New York Artificial Intelligence",
+   "needs_human_verify": true,
+   "network": "AI Community Collective",
+   "source_title": "(NYAI) New York Artificial Intelligence group page (Meetup)",
+   "source_url": "https://www.meetup.com/nyaimeetup/",
+   "typical_venue": "Jacob Javits Center (2025-12-10); varies",
+   "uncertainty_notes": "Group-owned Meetup page re-read: 4,174 members and a Past events section. The group\u2019s 2027 schedule is not confirmed by that evidence.",
+   "verification_questions": [
+    "Confirm the group's 2027 schedule and venue directly with its organisers."
+   ],
+   "verified_at": "2026-11-24"
+  },
+  "nyc-com-158d4d65022b": {
+   "activity_status": "active",
+   "cadence": "34 events in the last 12 months; next event 2026-12-17",
+   "city_slug": "new-york-ny-us",
+   "cohost_evidence_phrase": null,
+   "cohost_open": false,
+   "community_id": "nyc-com-158d4d65022b",
+   "contact_info": null,
+   "evidence": [
+    {
+     "observed_facts": "Chapter page read 2026-11-24: '34 events in the last 12 months', next event Thursday 17 December 2026, and past 2026 editions including October 21 and August 19 talks.",
+     "inference": null,
+     "run_id": "run-20261124-nyc-n1",
+     "verified_at": "2026-11-24",
+     "source_url": "https://nyc.aitinkerers.org/",
+     "source_title": "AI Tinkerers New York City chapter page"
+    }
+   ],
+   "focus_tags": [
+    "ai",
+    "machine_learning"
+   ],
+   "member_size_public": null,
+   "name": "AI Tinkerers New York City",
+   "needs_human_verify": true,
+   "network": "AI Tinkerers",
+   "source_title": "AI Tinkerers New York City chapter page",
+   "source_url": "https://nyc.aitinkerers.org/",
+   "typical_venue": "Sponsor-provided venues; varies",
+   "uncertainty_notes": "Chapter-level member count is not published, so membership is null.",
+   "verification_questions": [
+    "Confirm the group's 2027 schedule and venue directly with its organisers."
+   ],
+   "verified_at": "2026-11-24"
+  },
+  "nyc-com-4c25cb49b1ff": {
+   "activity_status": "intermittent",
+   "cadence": "Recurring reading meetups",
+   "city_slug": "new-york-ny-us",
+   "cohost_evidence_phrase": null,
+   "cohost_open": false,
+   "community_id": "nyc-com-4c25cb49b1ff",
+   "contact_info": null,
+   "evidence": [
+    {
+     "observed_facts": "Group page re-read 2026-11-24: last listed held event 'Rylan Talerico on Zep: A Temporal Knowledge Graph Architecture for Agent Memory' on 2025-10-15 with 76 going; no 2026 edition on the page.",
+     "inference": null,
+     "run_id": "run-20261124b-nyc-n1",
+     "verified_at": "2026-11-24",
+     "source_url": "https://www.meetup.com/papers-we-love/",
+     "source_title": "Papers We Love NYC group page (Meetup)"
+    }
+   ],
+   "focus_tags": [
+    "computer_science"
+   ],
+   "member_size_public": 4241,
+   "name": "Papers We Love NYC",
+   "needs_human_verify": true,
+   "network": "Papers We Love",
+   "source_title": "Papers We Love NYC group page (Meetup)",
+   "source_url": "https://www.meetup.com/papers-we-love/",
+   "typical_venue": "Varies",
+   "uncertainty_notes": "Last evidenced edition is 2025-10-15; no 2026 event is listed.",
+   "verification_questions": [
+    "Confirm the group's 2027 schedule and venue directly with its organisers."
+   ],
+   "verified_at": "2026-11-24"
+  },
+  "nyc-com-4e7cd0412aef": {
+   "activity_status": "active",
+   "cadence": "Conference plus meetups",
+   "city_slug": "new-york-ny-us",
+   "cohost_evidence_phrase": null,
+   "cohost_open": false,
+   "community_id": "nyc-com-4e7cd0412aef",
+   "contact_info": null,
+   "evidence": [
+    {
+     "observed_facts": "Site re-read 2026-11-24: the served HTML carries no dated event, so the 2026-08-11 held-activity evidence is retained unchanged.",
+     "inference": null,
+     "run_id": "run-20261124b-nyc-n1",
+     "verified_at": "2026-11-24",
+     "source_url": "https://nyc.pydata.org/",
+     "source_title": "PyData NYC site"
+    }
+   ],
+   "focus_tags": [
+    "data_science",
+    "python"
+   ],
+   "member_size_public": 8006,
+   "name": "PyData NYC",
+   "needs_human_verify": true,
+   "network": "PyData",
+   "source_title": "PyData NYC site",
+   "source_url": "https://nyc.pydata.org/",
+   "typical_venue": "Varies",
+   "uncertainty_notes": "Site re-read returned no dated event; held-event evidence is from 2026-08-11.",
+   "verification_questions": [
+    "Confirm the group's 2027 schedule and venue directly with its organisers."
+   ],
+   "verified_at": "2026-11-24"
+  },
+  "nyc-com-57c127177771": {
+   "activity_status": "active",
+   "cadence": "Monthly-ish; held event 2026-09",
+   "city_slug": "new-york-ny-us",
+   "cohost_evidence_phrase": null,
+   "cohost_open": false,
+   "community_id": "nyc-com-57c127177771",
+   "contact_info": null,
+   "evidence": [
+    {
+     "observed_facts": "Group page read 2026-11-24: 9,698 members; recent held event 'NY AI Engineers: w/ AWS, Fonzi, & Parable Presenting' in September 2026, with an earlier edition in March 2026.",
+     "inference": null,
+     "run_id": "run-20261124-nyc-n1",
+     "verified_at": "2026-11-24",
+     "source_url": "https://www.meetup.com/new-york-ai-engineers/",
+     "source_title": "New York AI Engineers group page (Meetup)"
+    }
+   ],
+   "focus_tags": [
+    "ai",
+    "machine_learning"
+   ],
+   "member_size_public": 9698,
+   "name": "New York AI Engineers",
+   "needs_human_verify": true,
+   "network": null,
+   "source_title": "New York AI Engineers group page (Meetup)",
+   "source_url": "https://www.meetup.com/new-york-ai-engineers/",
+   "typical_venue": "Varies (sponsor venues)",
+   "uncertainty_notes": null,
+   "verification_questions": [
+    "Confirm the group's 2027 schedule and venue directly with its organisers."
+   ],
+   "verified_at": "2026-11-24"
+  },
+  "nyc-com-5c72a1d4f225": {
+   "activity_status": "active",
+   "cadence": "Monthly; held events Sep-Oct 2026",
+   "city_slug": "new-york-ny-us",
+   "cohost_evidence_phrase": null,
+   "cohost_open": false,
+   "community_id": "nyc-com-5c72a1d4f225",
+   "contact_info": null,
+   "evidence": [
+    {
+     "observed_facts": "Group page read 2026-11-24: 12,295 members; held events 'AI Dev Night with Microsoft and Elastic' (Oct 2026), 'Google Agentic AI Builder Lab - NYC' (Oct 2026) and 'Enterprise AI Meetup with Snowflake' (Sep 2026).",
+     "inference": null,
+     "run_id": "run-20261124-nyc-n1",
+     "verified_at": "2026-11-24",
+     "source_url": "https://www.meetup.com/aittg-nyc/",
+     "source_title": "NYC AI Developers Group group page (Meetup)"
+    }
+   ],
+   "focus_tags": [
+    "ai"
+   ],
+   "member_size_public": 12295,
+   "name": "NYC AI Developers Group (AICamp)",
+   "needs_human_verify": true,
+   "network": "AICamp",
+   "source_title": "NYC AI Developers Group group page (Meetup)",
+   "source_url": "https://www.meetup.com/aittg-nyc/",
+   "typical_venue": "Varies (sponsor venues)",
+   "uncertainty_notes": null,
+   "verification_questions": [
+    "Confirm the group's 2027 schedule and venue directly with its organisers."
+   ],
+   "verified_at": "2026-11-24"
+  },
+  "nyc-com-6f67b2cff693": {
+   "activity_status": "active",
+   "cadence": "Event-based",
+   "city_slug": "new-york-ny-us",
+   "cohost_evidence_phrase": null,
+   "cohost_open": false,
+   "community_id": "nyc-com-6f67b2cff693",
+   "contact_info": null,
+   "evidence": [
+    {
+     "observed_facts": "Group page re-read 2026-11-24: 2,579 members; dated events run to 2026-02-26.",
+     "inference": null,
+     "run_id": "run-20261124b-nyc-n1",
+     "verified_at": "2026-11-24",
+     "source_url": "https://www.meetup.com/mindstone-ny-ai-meetup/",
+     "source_title": "Mindstone NY AI Meetup group page (Meetup)"
+    }
+   ],
+   "focus_tags": [
+    "ai"
+   ],
+   "member_size_public": 2579,
+   "name": "Mindstone NY AI Meetup",
+   "needs_human_verify": true,
+   "network": "Mindstone",
+   "source_title": "Mindstone NY AI Meetup group page (Meetup)",
+   "source_url": "https://www.meetup.com/mindstone-ny-ai-meetup/",
+   "typical_venue": "Varies",
+   "uncertainty_notes": "Not re-read in the 2026-11-24 pass.",
+   "verification_questions": [
+    "Confirm the group's 2027 schedule and venue directly with its organisers."
+   ],
+   "verified_at": "2026-11-24"
+  },
+  "nyc-com-7bc0b7319f9d": {
+   "activity_status": "active",
+   "cadence": "Event-based; held event June 2026",
+   "city_slug": "new-york-ny-us",
+   "cohost_evidence_phrase": null,
+   "cohost_open": false,
+   "community_id": "nyc-com-7bc0b7319f9d",
+   "contact_info": null,
+   "evidence": [
+    {
+     "observed_facts": "Group page read 2026-11-24: 4,755 members; held event 'Vibe Code Live! WiMLDS at #NYTechWeek' in June 2026.",
+     "inference": null,
+     "run_id": "run-20261124-nyc-n1",
+     "verified_at": "2026-11-24",
+     "source_url": "https://www.meetup.com/nyc-wimlds/",
+     "source_title": "NYC Women in Machine Learning & Data Science group page (Meetup)"
+    }
+   ],
+   "focus_tags": [
+    "machine_learning",
+    "data_science"
+   ],
+   "member_size_public": 4755,
+   "name": "NYC Women in Machine Learning & Data Science",
+   "needs_human_verify": true,
+   "network": "WiMLDS",
+   "source_title": "NYC Women in Machine Learning & Data Science group page (Meetup)",
+   "source_url": "https://www.meetup.com/nyc-wimlds/",
+   "typical_venue": "Varies",
+   "uncertainty_notes": null,
+   "verification_questions": [
+    "Confirm the group's 2027 schedule and venue directly with its organisers."
+   ],
+   "verified_at": "2026-11-24"
+  },
+  "nyc-com-9361427aa354": {
+   "activity_status": "active",
+   "cadence": "Weekly Monday meetups at Pubkey (April 2026 shown)",
+   "city_slug": "new-york-ny-us",
+   "cohost_evidence_phrase": null,
+   "cohost_open": false,
+   "community_id": "nyc-com-9361427aa354",
+   "contact_info": null,
+   "evidence": [
+    {
+     "observed_facts": "Group page read 2026-11-24: 11,635 members; past in-person events 'CryptoMondays (Bitcoin)' 2026-04-20 and 'CryptoMondays Wall St, April 6' 2026-04-06 at Pubkey, 85 Washington Pl.",
+     "inference": null,
+     "run_id": "run-20261124-nyc-n1",
+     "verified_at": "2026-11-24",
+     "source_url": "https://www.meetup.com/cryptomondaysnyc/",
+     "source_title": "CryptoMondays NYC group page (Meetup)"
+    }
+   ],
+   "focus_tags": [
+    "web3"
+   ],
+   "member_size_public": 11635,
+   "name": "CryptoMondays NYC",
+   "needs_human_verify": true,
+   "network": "CryptoMondays",
+   "source_title": "CryptoMondays NYC group page (Meetup)",
+   "source_url": "https://www.meetup.com/cryptomondaysnyc/",
+   "typical_venue": "Pubkey, 85 Washington Pl",
+   "uncertainty_notes": null,
+   "verification_questions": [
+    "Confirm the group's 2027 schedule and venue directly with its organisers."
+   ],
+   "verified_at": "2026-11-24"
+  },
+  "nyc-com-9981de6dc498": {
+   "activity_status": "active",
+   "cadence": "Event-based; held events 2025-11-13, 2026-03-09 and 2026-09-21",
+   "city_slug": "new-york-ny-us",
+   "cohost_evidence_phrase": null,
+   "cohost_open": false,
+   "community_id": "nyc-com-9981de6dc498",
+   "contact_info": null,
+   "evidence": [
+    {
+     "observed_facts": "Chapter page read 2026-11-24: 370 members, 3 events, 3 organisers; listed 'Global AI Night' 2026-09-21, 'AgentCon - New York' 2026-03-09 and 'Agentic AI: Implementation and Org Transformation' 2025-11-13.",
+     "inference": null,
+     "run_id": "run-20261124-nyc-n1",
+     "verified_at": "2026-11-24",
+     "source_url": "https://globalai.community/chapters/new-york/",
+     "source_title": "Global AI New York chapter page"
+    }
+   ],
+   "focus_tags": [
+    "ai"
+   ],
+   "member_size_public": 370,
+   "name": "Global AI New York",
+   "needs_human_verify": true,
+   "network": "Global AI Community",
+   "source_title": "Global AI New York chapter page",
+   "source_url": "https://globalai.community/chapters/new-york/",
+   "typical_venue": "Not published on the chapter page",
+   "uncertainty_notes": "Venues are not named on the chapter page.",
+   "verification_questions": [
+    "Confirm the group's 2027 schedule and venue directly with its organisers."
+   ],
+   "verified_at": "2026-11-24"
+  },
+  "nyc-com-99b91ff585f0": {
+   "activity_status": "active",
+   "cadence": "Irregular; held event 2026-03-26/27",
+   "city_slug": "new-york-ny-us",
+   "cohost_evidence_phrase": "Event page ticket section states: 'Apply to be a Sponsor - Sponsor AI Salon New York and connect with the city's leading voices in artificial intelligence.'",
+   "cohost_open": true,
+   "community_id": "nyc-com-99b91ff585f0",
+   "contact_info": null,
+   "evidence": [
+    {
+     "observed_facts": "Organiser page re-read 2026-11-24: AI Salon New York held 2026-03-26/27 at Casa 51, 625 W 51st St.",
+     "inference": null,
+     "run_id": "run-20261124b-nyc-n1",
+     "verified_at": "2026-11-24",
+     "source_url": "https://luma.com/AI-Salon-NewYork-March-2026",
+     "source_title": "AI Salon New York event page (Luma, organiser-owned)"
+    }
+   ],
+   "focus_tags": [
+    "ai"
+   ],
+   "member_size_public": null,
+   "name": "AI Salon New York",
+   "needs_human_verify": true,
+   "network": "AI Salon",
+   "source_title": "AI Salon New York event page (Luma, organiser-owned)",
+   "source_url": "https://luma.com/AI-Salon-NewYork-March-2026",
+   "typical_venue": "Casa 51, 625 W 51st St",
+   "uncertainty_notes": "The calendar URL used in the 2026-11-24 pass (luma.com/AI-Salon-NewYork) returned 404, so the chapter calendar was not re-read.",
+   "verification_questions": [
+    "Confirm the group's 2027 schedule and venue directly with its organisers."
+   ],
+   "verified_at": "2026-11-24"
+  },
+  "nyc-com-a7d6820d3026": {
+   "activity_status": "active",
+   "cadence": "Event-based; held events April-June 2026",
+   "city_slug": "new-york-ny-us",
+   "cohost_evidence_phrase": "Chapter page states: 'Looking to showcase your brand or hire top tech talent? Explore sponsorship opportunities with North America's largest Google Developer Group'",
+   "cohost_open": true,
+   "community_id": "nyc-com-a7d6820d3026",
+   "contact_info": null,
+   "evidence": [
+    {
+     "observed_facts": "Chapter page read 2026-11-24: 5,183 members; held events 2026-04-23, 2026-05-22, 2026-06-05 and 2026-06-10, including 'Google Maps Platform Developer Community Day at the New York City Google Office'.",
+     "inference": null,
+     "run_id": "run-20261124-nyc-n1",
+     "verified_at": "2026-11-24",
+     "source_url": "https://gdg.community.dev/gdg-nyc/",
+     "source_title": "Google Developer Groups GDG NYC chapter page"
+    }
+   ],
+   "focus_tags": [
+    "ai",
+    "cloud"
+   ],
+   "member_size_public": 5183,
+   "name": "GDG NYC",
+   "needs_human_verify": true,
+   "network": "Google Developer Groups",
+   "source_title": "Google Developer Groups GDG NYC chapter page",
+   "source_url": "https://gdg.community.dev/gdg-nyc/",
+   "typical_venue": "New York City Google Office (2026-06-10); varies",
+   "uncertainty_notes": null,
+   "verification_questions": [
+    "Confirm the group's 2027 schedule and venue directly with its organisers."
+   ],
+   "verified_at": "2026-11-24"
+  },
+  "nyc-com-a803fdd221c3": {
+   "activity_status": "active",
+   "cadence": "Annual summit plus event-based programming; summit 2026-04-26",
+   "city_slug": "new-york-ny-us",
+   "cohost_evidence_phrase": null,
+   "cohost_open": false,
+   "community_id": "nyc-com-a803fdd221c3",
+   "contact_info": null,
+   "evidence": [
+    {
+     "observed_facts": "Organiser page re-read 2026-11-24: Columbia CUB AI Summit 2026 held 2026-04-26 at the International Affairs Building.",
+     "inference": null,
+     "run_id": "run-20261124b-nyc-n1",
+     "verified_at": "2026-11-24",
+     "source_url": "https://luma.com/t4kmbswi",
+     "source_title": "Columbia CUB AI Summit 2026 event page (Luma, organiser-owned)"
+    }
+   ],
+   "focus_tags": [
+    "ai"
+   ],
+   "member_size_public": null,
+   "name": "Columbia AI Club CUB",
+   "needs_human_verify": true,
+   "network": "Columbia University",
+   "source_title": "Columbia CUB AI Summit 2026 event page (Luma, organiser-owned)",
+   "source_url": "https://luma.com/t4kmbswi",
+   "typical_venue": "International Affairs Building, Room 1501, Columbia University",
+   "uncertainty_notes": "Organizer-owned 2026 summit page re-read: April 26 at Columbia\u2019s International Affairs Building, Room 1501. No 2027 edition is established by this source.",
+   "verification_questions": [
+    "Confirm the group's 2027 schedule and venue directly with its organisers."
+   ],
+   "verified_at": "2026-11-24"
+  },
+  "nyc-com-b50fa2ff64d2": {
+   "activity_status": "intermittent",
+   "cadence": "Irregular; held event 2025-08-21",
+   "city_slug": "new-york-ny-us",
+   "cohost_evidence_phrase": null,
+   "cohost_open": false,
+   "community_id": "nyc-com-b50fa2ff64d2",
+   "contact_info": null,
+   "evidence": [
+    {
+     "observed_facts": "Organiser page re-read 2026-11-24: NYC LangChain Meetup held 2025-08-21 at Grammarly NYC; no later edition on the page.",
+     "inference": null,
+     "run_id": "run-20261124b-nyc-n1",
+     "verified_at": "2026-11-24",
+     "source_url": "https://luma.com/mimsk691",
+     "source_title": "NYC LangChain Meetup event page (Luma, organiser-owned)"
+    }
+   ],
+   "focus_tags": [
+    "ai"
+   ],
+   "member_size_public": null,
+   "name": "LangChain NYC",
+   "needs_human_verify": true,
+   "network": "LangChain",
+   "source_title": "NYC LangChain Meetup event page (Luma, organiser-owned)",
+   "source_url": "https://luma.com/mimsk691",
+   "typical_venue": "Grammarly NYC (registration-only address)",
+   "uncertainty_notes": "Only one held edition is published (2025-08-21).",
+   "verification_questions": [
+    "Confirm the group's 2027 schedule and venue directly with its organisers."
+   ],
+   "verified_at": "2026-11-24"
+  },
+  "nyc-com-b7fe90d289d3": {
+   "activity_status": "active",
+   "cadence": "Monthly talks",
+   "city_slug": "new-york-ny-us",
+   "cohost_evidence_phrase": null,
+   "cohost_open": false,
+   "community_id": "nyc-com-b7fe90d289d3",
+   "contact_info": null,
+   "evidence": [
+    {
+     "observed_facts": "Group page re-read 2026-11-24: 13,608 members; past talk 2026-11-10 and a next meeting on 2026-12-15.",
+     "inference": null,
+     "run_id": "run-20261124b-nyc-n1",
+     "verified_at": "2026-11-24",
+     "source_url": "https://www.meetup.com/nyhackr/",
+     "source_title": "New York Open Statistical Programming Meetup (Meetup)"
+    }
+   ],
+   "focus_tags": [
+    "data_science",
+    "r"
+   ],
+   "member_size_public": 13608,
+   "name": "New York Open Statistical Programming Meetup (nyhackr)",
+   "needs_human_verify": true,
+   "network": null,
+   "source_title": "New York Open Statistical Programming Meetup (Meetup)",
+   "source_url": "https://www.meetup.com/nyhackr/",
+   "typical_venue": "Varies",
+   "uncertainty_notes": "Not re-read in the 2026-11-24 pass.",
+   "verification_questions": [
+    "Confirm the group's 2027 schedule and venue directly with its organisers."
+   ],
+   "verified_at": "2026-11-24"
+  },
+  "nyc-com-c41ad4db4360": {
+   "activity_status": "active",
+   "cadence": "Event-based around the ODSC conference",
+   "city_slug": "new-york-ny-us",
+   "cohost_evidence_phrase": null,
+   "cohost_open": false,
+   "community_id": "nyc-com-c41ad4db4360",
+   "contact_info": null,
+   "evidence": [
+    {
+     "observed_facts": "Group page re-read 2026-11-24: 6,983 members; held events through November 2026 and a December 2026 listing.",
+     "inference": null,
+     "run_id": "run-20261124b-nyc-n1",
+     "verified_at": "2026-11-24",
+     "source_url": "https://www.meetup.com/open-data-science-ny-odsc/",
+     "source_title": "ODSC AI New York group page (Meetup)"
+    }
+   ],
+   "focus_tags": [
+    "ai",
+    "data_science"
+   ],
+   "member_size_public": 6983,
+   "name": "ODSC AI New York",
+   "needs_human_verify": true,
+   "network": "ODSC",
+   "source_title": "ODSC AI New York group page (Meetup)",
+   "source_url": "https://www.meetup.com/open-data-science-ny-odsc/",
+   "typical_venue": "Varies",
+   "uncertainty_notes": "Not re-read in the 2026-11-24 pass.",
+   "verification_questions": [
+    "Confirm the group's 2027 schedule and venue directly with its organisers."
+   ],
+   "verified_at": "2026-11-24"
+  },
+  "nyc-com-c8d622880fbc": {
+   "activity_status": "active",
+   "cadence": "Irregular meetups",
+   "city_slug": "new-york-ny-us",
+   "cohost_evidence_phrase": null,
+   "cohost_open": false,
+   "community_id": "nyc-com-c8d622880fbc",
+   "contact_info": null,
+   "evidence": [
+    {
+     "observed_facts": "Organiser page re-read 2026-11-24: NYC Creative AI July Forum held 2026-07-10 at ZeroSpace.",
+     "inference": null,
+     "run_id": "run-20261124b-nyc-n1",
+     "verified_at": "2026-11-24",
+     "source_url": "https://luma.com/nyc-creative-ai-july-2026",
+     "source_title": "NYC Creative AI July 2026 event page (Luma, organiser-owned)"
+    }
+   ],
+   "focus_tags": [
+    "ai",
+    "creative"
+   ],
+   "member_size_public": null,
+   "name": "NYC Creative AI (formerly ComfyUI NYC)",
+   "needs_human_verify": true,
+   "network": null,
+   "source_title": "NYC Creative AI July 2026 event page (Luma, organiser-owned)",
+   "source_url": "https://luma.com/nyc-creative-ai-july-2026",
+   "typical_venue": "Varies",
+   "uncertainty_notes": "The calendar URL tried on 2026-11-24 (luma.com/nyc-creative-ai) returned 404.",
+   "verification_questions": [
+    "Confirm the group's 2027 schedule and venue directly with its organisers."
+   ],
+   "verified_at": "2026-11-24"
+  },
+  "nyc-com-e1abb40d4149": {
+   "activity_status": "intermittent",
+   "cadence": "Regular meetups; event history on the group page",
+   "city_slug": "new-york-ny-us",
+   "cohost_evidence_phrase": null,
+   "cohost_open": false,
+   "community_id": "nyc-com-e1abb40d4149",
+   "contact_info": null,
+   "evidence": [
+    {
+     "observed_facts": "Group page re-read 2026-11-24: 17,373 members; last listed held event 'Git for Data: How Table Formats Unify Software and Data Development' on 2025-10-15 with 17 going.",
+     "inference": null,
+     "run_id": "run-20261124b-nyc-n1",
+     "verified_at": "2026-11-24",
+     "source_url": "https://www.meetup.com/nycpython/",
+     "source_title": "The New York Python Meetup Group (Meetup)"
+    }
+   ],
+   "focus_tags": [
+    "python"
+   ],
+   "member_size_public": 17373,
+   "name": "The New York Python Meetup Group",
+   "needs_human_verify": true,
+   "network": null,
+   "source_title": "The New York Python Meetup Group (Meetup)",
+   "source_url": "https://www.meetup.com/nycpython/",
+   "typical_venue": "Varies",
+   "uncertainty_notes": "No 2026 edition is listed on the group page.",
+   "verification_questions": [
+    "Confirm the group's 2027 schedule and venue directly with its organisers."
+   ],
+   "verified_at": "2026-11-24"
+  },
+  "nyc-com-e228f6221b40": {
+   "activity_status": "active",
+   "cadence": "Monthly fireside events",
+   "city_slug": "new-york-ny-us",
+   "cohost_evidence_phrase": null,
+   "cohost_open": false,
+   "community_id": "nyc-com-e228f6221b40",
+   "contact_info": null,
+   "evidence": [
+    {
+     "observed_facts": "Group page re-read 2026-11-24: 13,459 members; December 2026 events listed at 535 5th Avenue.",
+     "inference": null,
+     "run_id": "run-20261124b-nyc-n1",
+     "verified_at": "2026-11-24",
+     "source_url": "https://www.meetup.com/startup-grind-nyc/",
+     "source_title": "Startup Grind NYC group page (Meetup)"
+    }
+   ],
+   "focus_tags": [
+    "startups"
+   ],
+   "member_size_public": 13459,
+   "name": "Startup Grind NYC",
+   "needs_human_verify": true,
+   "network": "Startup Grind",
+   "source_title": "Startup Grind NYC group page (Meetup)",
+   "source_url": "https://www.meetup.com/startup-grind-nyc/",
+   "typical_venue": "Varies",
+   "uncertainty_notes": "Not re-read in the 2026-11-24 pass.",
+   "verification_questions": [
+    "Confirm the group's 2027 schedule and venue directly with its organisers."
+   ],
+   "verified_at": "2026-11-24"
+  }
+ },
+ "visits": [],
+ "photos": {
+  "nyc-041ec8557e6d": [
+   {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/66/La_Barrique_%284641231538%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "source_page": "https://commons.wikimedia.org/wiki/File:La_Barrique_(4641231538).jpg",
+    "source_page_checked": "https://commons.wikimedia.org/",
+    "alt": "Street-level view of the building at 38 West 39th Street (ground-floor restaurant frontage)",
+    "view": "Street-level view of the building at 38 West 39th Street (ground-floor restaurant frontage)",
+    "width": 2592,
+    "height": 3456,
+    "rights_basis": "CC BY 2.0",
+    "attribution": "Eden, Janine and Jim from New York City",
+    "licence": "CC BY 2.0",
+    "checked_on": "2026-11-24",
+    "verified": {
+     "status": 200,
+     "content_type": "image/jpeg",
+     "checked_on": "2026-11-24"
+    },
+    "hosting": "hotlink"
+   }
+  ],
+  "nyc-12c98ff34e33": [
+   {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/7/75/Kimmel_towards_Empire_State.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Kimmel_towards_Empire_State.jpg",
+    "source_page_checked": "https://commons.wikimedia.org/",
+    "alt": "Interior view from the tenth floor of the NYU Kimmel Center",
+    "view": "Interior view from the tenth floor of the NYU Kimmel Center",
+    "width": 1024,
+    "height": 768,
+    "rights_basis": "CC BY-SA 3.0",
+    "attribution": "Markus Poessel (Mapos)",
+    "licence": "CC BY-SA 3.0",
+    "checked_on": "2026-11-24",
+    "verified": {
+     "status": 200,
+     "content_type": "image/jpeg",
+     "checked_on": "2026-11-24"
+    },
+    "hosting": "hotlink"
+   }
+  ],
+  "nyc-3ba4751ef6e7": [
+   {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/5/58/Hoyt_Building_873_Broadway.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Hoyt_Building_873_Broadway.jpg",
+    "source_page_checked": "https://commons.wikimedia.org/",
+    "alt": "Exterior of the Hoyt Building at 873-879 Broadway",
+    "view": "Exterior of the Hoyt Building at 873-879 Broadway",
+    "width": 1767,
+    "height": 1728,
+    "rights_basis": "CC BY-SA 4.0",
+    "attribution": "Beyond My Ken",
+    "licence": "CC BY-SA 4.0",
+    "checked_on": "2026-11-24",
+    "verified": {
+     "status": 200,
+     "content_type": "image/jpeg",
+     "checked_on": "2026-11-24"
+    },
+    "hosting": "hotlink"
+   }
+  ],
+  "nyc-2703d407680f": [
+   {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/66/55_Broadway_Manhattan_street_level.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "source_page": "https://commons.wikimedia.org/wiki/File:55_Broadway_Manhattan_street_level.jpg",
+    "source_page_checked": "https://commons.wikimedia.org/",
+    "alt": "Street-level front of 55 Broadway",
+    "view": "Street-level front of 55 Broadway",
+    "width": 3024,
+    "height": 4032,
+    "rights_basis": "CC BY-SA 4.0",
+    "attribution": "CyprianLatewood",
+    "licence": "CC BY-SA 4.0",
+    "checked_on": "2026-11-24",
+    "verified": {
+     "status": 200,
+     "content_type": "image/jpeg",
+     "checked_on": "2026-11-24"
+    },
+    "hosting": "hotlink"
+   },
+   {
+    "url": "https://upload.wikimedia.org/wikipedia/commons/9/99/55_Broadway_NYC.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+    "source_page": "https://commons.wikimedia.org/wiki/File:55_Broadway_NYC.jpg",
+    "source_page_checked": "https://commons.wikimedia.org/",
+    "alt": "Upward view of 55 Broadway",
+    "view": "Upward view of 55 Broadway",
+    "width": 3024,
+    "height": 4032,
+    "rights_basis": "CC BY-SA 4.0",
+    "attribution": "CyprianLatewood",
+    "licence": "CC BY-SA 4.0",
+    "checked_on": "2026-11-24",
+    "verified": {
+     "status": 200,
+     "content_type": "image/jpeg",
+     "checked_on": "2026-11-24"
+    },
+    "hosting": "hotlink"
+   }
+  ],
+  "nyc-12462819aebd": [
+   {
+    "exception": true,
+    "checked_on": "2026-11-24",
+    "rights_basis": "unestablished",
+    "reason": "Operator listing gallery present (21 photos) but states no licence or display permission, so nothing is cleared for republication.",
+    "operator_gallery_checked": "https://www.tagvenue.com/us/rooms/new-york/90457/jay-conference-bryant-park/the-toronto-room",
+    "commons_searched": "geosearch 150 m + address/name search on 2026-11-24",
+    "withheld": true
+   }
+  ],
+  "nyc-16d4e38fd069": [
+   {
+    "exception": true,
+    "checked_on": "2026-11-24",
+    "rights_basis": "unestablished",
+    "reason": "Operator listing gallery present (19 photos) but states no licence or display permission, so nothing is cleared for republication.",
+    "operator_gallery_checked": "https://www.tagvenue.com/us/rooms/new-york/67097/orsay-restaurant/second-floor-banquet-room",
+    "commons_searched": "geosearch 150 m + address/name search on 2026-11-24",
+    "withheld": true
+   }
+  ],
+  "nyc-4c6638c43df6": [
+   {
+    "exception": true,
+    "checked_on": "2026-11-24",
+    "rights_basis": "unestablished",
+    "reason": "Operator page served no usable gallery on re-read (blocked or no photos), and no Commons file depicts this address.",
+    "operator_gallery_checked": "https://civichall.org/our-spaces/",
+    "commons_searched": "geosearch 150 m + address/name search on 2026-11-24",
+    "withheld": true
+   }
+  ],
+  "nyc-4f482327c22f": [
+   {
+    "exception": true,
+    "checked_on": "2026-11-24",
+    "rights_basis": "unestablished",
+    "reason": "Operator listing gallery present (7 photos) but states no licence or display permission, so nothing is cleared for republication.",
+    "operator_gallery_checked": "https://www.tagvenue.com/us/rooms/new-york/60489/nomadworks-times-square/conference-center",
+    "commons_searched": "geosearch 150 m + address/name search on 2026-11-24",
+    "withheld": true
+   }
+  ],
+  "nyc-5e5134d4deff": [
+   {
+    "exception": true,
+    "checked_on": "2026-11-24",
+    "rights_basis": "unestablished",
+    "reason": "Operator listing gallery present (11 photos) but states no licence or display permission, so nothing is cleared for republication.",
+    "operator_gallery_checked": "https://www.tagvenue.com/us/rooms/new-york/79593/jay-suites-chelsea-location/babe-ruth-room",
+    "commons_searched": "geosearch 150 m + address/name search on 2026-11-24",
+    "withheld": true
+   }
+  ],
+  "nyc-6205aa000e1b": [
+   {
+    "exception": true,
+    "checked_on": "2026-11-24",
+    "rights_basis": "unestablished",
+    "reason": "Operator listing gallery present (23 photos) but states no licence or display permission, so nothing is cleared for republication.",
+    "operator_gallery_checked": "https://www.tagvenue.com/us/rooms/new-york/90456/jay-conference-bryant-park/the-sydney-room",
+    "commons_searched": "geosearch 150 m + address/name search on 2026-11-24",
+    "withheld": true
+   }
+  ],
+  "nyc-646e1e5393b6": [
+   {
+    "exception": true,
+    "checked_on": "2026-11-24",
+    "rights_basis": "unestablished",
+    "reason": "Operator listing gallery present (11 photos) but states no licence or display permission, so nothing is cleared for republication.",
+    "operator_gallery_checked": "https://www.tagvenue.com/us/rooms/new-york/61038/downtown-community-television-center/event-space",
+    "commons_searched": "geosearch 150 m + address/name search on 2026-11-24",
+    "withheld": true
+   }
+  ],
+  "nyc-6d04b6ce2634": [
+   {
+    "exception": true,
+    "checked_on": "2026-11-24",
+    "rights_basis": "unestablished",
+    "reason": "Operator listing gallery present (14 photos) but states no licence or display permission, so nothing is cleared for republication.",
+    "operator_gallery_checked": "https://www.tagvenue.com/us/rooms/ridgewood-hall/121859/ridgewood-hall/hall",
+    "commons_searched": "geosearch 150 m + address/name search on 2026-11-24",
+    "withheld": true
+   }
+  ],
+  "nyc-75c0f7334372": [
+   {
+    "exception": true,
+    "checked_on": "2026-11-24",
+    "rights_basis": "unestablished",
+    "reason": "Operator page served no usable gallery on re-read (blocked or no photos), and no Commons file depicts this address.",
+    "operator_gallery_checked": "https://www.peerspace.com/pages/listings/5c5377f8961209000e6834b0",
+    "commons_searched": "geosearch 150 m + address/name search on 2026-11-24",
+    "withheld": true
+   }
+  ],
+  "nyc-7abec7622696": [
+   {
+    "exception": true,
+    "checked_on": "2026-11-24",
+    "rights_basis": "unestablished",
+    "reason": "Operator listing gallery present (22 photos) but states no licence or display permission, so nothing is cleared for republication.",
+    "operator_gallery_checked": "https://www.tagvenue.com/us/rooms/new-york/90458/jay-conference-bryant-park/the-paris-room",
+    "commons_searched": "geosearch 150 m + address/name search on 2026-11-24",
+    "withheld": true
+   }
+  ],
+  "nyc-862e759a55a6": [
+   {
+    "exception": true,
+    "checked_on": "2026-11-24",
+    "rights_basis": "unestablished",
+    "reason": "Operator listing gallery present (22 photos) but states no licence or display permission, so nothing is cleared for republication.",
+    "operator_gallery_checked": "https://www.tagvenue.com/us/rooms/new-york/90454/jay-conference-bryant-park/the-dubai-room",
+    "commons_searched": "geosearch 150 m + address/name search on 2026-11-24",
+    "withheld": true
+   }
+  ],
+  "nyc-93bc87ce76a0": [
+   {
+    "exception": true,
+    "checked_on": "2026-11-24",
+    "rights_basis": "unestablished",
+    "reason": "Operator listing gallery present (8 photos) but states no licence or display permission, so nothing is cleared for republication.",
+    "operator_gallery_checked": "https://www.tagvenue.com/us/rooms/new-york/59991/bogart-house/bogart-house-main-floor",
+    "commons_searched": "geosearch 150 m + address/name search on 2026-11-24",
+    "withheld": true
+   }
+  ],
+  "nyc-a2a23c94407e": [
+   {
+    "exception": true,
+    "checked_on": "2026-11-24",
+    "rights_basis": "unestablished",
+    "reason": "Operator listing gallery present (20 photos) but states no licence or display permission, so nothing is cleared for republication.",
+    "operator_gallery_checked": "https://www.tagvenue.com/us/rooms/new-york/71059/saint/secret-garden",
+    "commons_searched": "geosearch 150 m + address/name search on 2026-11-24",
+    "withheld": true
+   }
+  ],
+  "nyc-aa32c5682549": [
+   {
+    "exception": true,
+    "checked_on": "2026-11-24",
+    "rights_basis": "unestablished",
+    "reason": "Operator listing gallery present (32 photos) but states no licence or display permission, so nothing is cleared for republication.",
+    "operator_gallery_checked": "https://www.tagvenue.com/us/rooms/new-york/86690/blender-space/the-auditorium",
+    "commons_searched": "geosearch 150 m + address/name search on 2026-11-24",
+    "withheld": true
+   }
+  ],
+  "nyc-b07f42f9c9bc": [
+   {
+    "exception": true,
+    "checked_on": "2026-11-24",
+    "rights_basis": "unestablished",
+    "reason": "Operator page served no usable gallery on re-read (blocked or no photos), and no Commons file depicts this address.",
+    "operator_gallery_checked": "https://www.peerspace.com/pages/listings/6420fda9464ca6000e043452",
+    "commons_searched": "geosearch 150 m + address/name search on 2026-11-24",
+    "withheld": true
+   }
+  ],
+  "nyc-b9a5252396f3": [
+   {
+    "exception": true,
+    "checked_on": "2026-11-24",
+    "rights_basis": "unestablished",
+    "reason": "Operator listing gallery present (23 photos) but states no licence or display permission, so nothing is cleared for republication.",
+    "operator_gallery_checked": "https://www.tagvenue.com/us/rooms/new-york/77196/event-loft-1505/studio-1505",
+    "commons_searched": "geosearch 150 m + address/name search on 2026-11-24",
+    "withheld": true
+   }
+  ],
+  "nyc-bb0e8d8d6dc2": [
+   {
+    "exception": true,
+    "checked_on": "2026-11-24",
+    "rights_basis": "unestablished",
+    "reason": "Operator listing gallery present (18 photos) but states no licence or display permission, so nothing is cleared for republication.",
+    "operator_gallery_checked": "https://www.tagvenue.com/us/rooms/new-york/53058/producers-club-theaters/the-sonnet",
+    "commons_searched": "geosearch 150 m + address/name search on 2026-11-24",
+    "withheld": true
+   }
+  ],
+  "nyc-bb4d0d62028d": [
+   {
+    "exception": true,
+    "checked_on": "2026-11-24",
+    "rights_basis": "unestablished",
+    "reason": "Operator listing gallery present (16 photos) but states no licence or display permission, so nothing is cleared for republication.",
+    "operator_gallery_checked": "https://www.tagvenue.com/us/rooms/new-york/69406/large-flex-event-loft-studio/entire-space",
+    "commons_searched": "geosearch 150 m + address/name search on 2026-11-24",
+    "withheld": true
+   }
+  ],
+  "nyc-bcb5bfbbb45a": [
+   {
+    "exception": true,
+    "checked_on": "2026-11-24",
+    "rights_basis": "unestablished",
+    "reason": "Operator listing gallery present (10 photos) but states no licence or display permission, so nothing is cleared for republication.",
+    "operator_gallery_checked": "https://www.tagvenue.com/us/rooms/new-york/52174/la-victoria/1st-floor",
+    "commons_searched": "geosearch 150 m + address/name search on 2026-11-24",
+    "withheld": true
+   }
+  ],
+  "nyc-ca43f10af68d": [
+   {
+    "exception": true,
+    "checked_on": "2026-11-24",
+    "rights_basis": "unestablished",
+    "reason": "Operator page served no usable gallery on re-read (blocked or no photos), and no Commons file depicts this address.",
+    "operator_gallery_checked": "https://nycseminarcenter.com/pricing",
+    "commons_searched": "geosearch 150 m + address/name search on 2026-11-24",
+    "withheld": true
+   }
+  ],
+  "nyc-ccb3bfa2e5d7": [
+   {
+    "exception": true,
+    "checked_on": "2026-11-24",
+    "rights_basis": "unestablished",
+    "reason": "Operator listing gallery present (15 photos) but states no licence or display permission, so nothing is cleared for republication.",
+    "operator_gallery_checked": "https://www.tagvenue.com/us/rooms/new-york/29800/times-square-jay-suites/meeting-room-i",
+    "commons_searched": "geosearch 150 m + address/name search on 2026-11-24",
+    "withheld": true
+   }
+  ],
+  "nyc-cf2d116c0745": [
+   {
+    "exception": true,
+    "checked_on": "2026-11-24",
+    "rights_basis": "unestablished",
+    "reason": "Operator listing gallery present (26 photos) but states no licence or display permission, so nothing is cleared for republication.",
+    "operator_gallery_checked": "https://www.tagvenue.com/us/rooms/new-york/63027/exposed-brick-multi-use-event-space/entire-venue",
+    "commons_searched": "geosearch 150 m + address/name search on 2026-11-24",
+    "withheld": true
+   }
+  ],
+  "nyc-d6ff494b9504": [
+   {
+    "exception": true,
+    "checked_on": "2026-11-24",
+    "rights_basis": "unestablished",
+    "reason": "Operator listing gallery present (37 photos) but states no licence or display permission, so nothing is cleared for republication.",
+    "operator_gallery_checked": "https://www.tagvenue.com/us/rooms/new-york/33056/the-farm-soho/designer-soho-loft-space",
+    "commons_searched": "geosearch 150 m + address/name search on 2026-11-24",
+    "withheld": true
+   }
+  ],
+  "nyc-dcd959417eb2": [
+   {
+    "exception": true,
+    "checked_on": "2026-11-24",
+    "rights_basis": "unestablished",
+    "reason": "Operator listing gallery present (20 photos) but states no licence or display permission, so nothing is cleared for republication.",
+    "operator_gallery_checked": "https://www.tagvenue.com/us/rooms/new-york/51455/ideal-glass-studios/atrium",
+    "commons_searched": "geosearch 150 m + address/name search on 2026-11-24",
+    "withheld": true
+   }
+  ],
+  "nyc-fbae6569ad6a": [
+   {
+    "exception": true,
+    "checked_on": "2026-11-24",
+    "rights_basis": "unestablished",
+    "reason": "Operator listing gallery present (26 photos) but states no licence or display permission, so nothing is cleared for republication.",
+    "operator_gallery_checked": "https://www.tagvenue.com/us/rooms/new-york/51662/volume/volume-the-mirage-room",
+    "commons_searched": "geosearch 150 m + address/name search on 2026-11-24",
+    "withheld": true
+   }
+  ],
+  "nyc-ffb2d5d73020": [
+   {
+    "exception": true,
+    "checked_on": "2026-11-24",
+    "rights_basis": "unestablished",
+    "reason": "Operator listing gallery present (24 photos) but states no licence or display permission, so nothing is cleared for republication.",
+    "operator_gallery_checked": "https://www.tagvenue.com/us/rooms/new-york/90455/jay-conference-bryant-park/the-london-room",
+    "commons_searched": "geosearch 150 m + address/name search on 2026-11-24",
+    "withheld": true
+   }
+  ]
+ },
+ "sources_consulted": [],
+ "runs": [
+  {
+   "run_id": "run-20261124b-nyc-n1",
+   "kind": "refresh",
+   "updated_at": "2026-11-24T17:00:35Z",
+   "inputs": {
+    "run_bundle": {
+     "path": "research/new-york/city/run-bundle.json",
+     "sha256": "e199c1792538ea2edab7e3d8856a61db2ecc8d70b11fd4eae2d3af0cbdc4c6cf"
+    },
+    "holiday_supplement": {
+     "path": "research/new-york/city/holiday-supplement.json",
+     "sha256": "c0232079710cf5b669aaae5f53627ff491e8886ac9735b99d0bde76647357fe6"
+    },
+    "school_holidays_registry": {
+     "path": "../hermes-skills/plan-event/references/school_holidays.json",
+     "sha256": "b823b0e20ea437adc260c905ec6f0ab82da20a95b3f22bd0ccb007011d175840"
+    },
+    "seed": {
+     "path": "research/new-york/city/seed.json",
+     "note": "the sections the city-run merge path does not carry; its hash is in build-log.json to avoid a self-reference"
+    }
+   }
+  }
+ ],
+ "blocker_projection": "resolved/1"
+}

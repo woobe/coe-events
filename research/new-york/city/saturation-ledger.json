@@ -1,0 +1,135 @@
+{
+ "assessed": 30,
+ "checked_on": "2026-11-24",
+ "city_slug": "new-york-ny-us",
+ "run_id": "run-20261124b-nyc-n1",
+ "gaps": [
+  "Peerspace (2 listings) and the NYU Kimmel page returned 403/202 on the 2026-11-24 re-read; their facts are retained from the 2026-11-23 read and marked as prior reads.",
+  "Chainalysis Links 2027 returned HTTP 403 from the organiser domain; the date is recorded from the indexed title and description and flagged needs_human_verify.",
+  "No operator gallery image carries a stated licence or display permission, so only Wikimedia Commons files whose description names the address are cleared (4 venues).",
+  "Alcohol, food and language law scopes remain blocked for this host (sla.ny.gov TLS refusal, nyc.gov 403); local_requirements carries the checked-unknown note.",
+  "The NYC public-holiday layer is derived from a 403-blocked agency page and carries derived:true / needs_human_verify.",
+  "No venue visit was made; visits stays empty."
+ ],
+ "lanes": [
+  {
+   "lane": "platform/tagvenue",
+   "pages_read": 35,
+   "yield": "26 assessed venues; 24 room pages re-read on 2026-11-24 plus three category hubs; Saturday rate steps, hours, capacity, facilities, catering and alcohol lines re-extracted."
+  },
+  {
+   "lane": "platform/peerspace",
+   "pages_read": 10,
+   "yield": "Two assessed venues (Monroe Room, Jay Conference Tel Aviv Room). Both listing pages returned 403 on the 2026-11-24 re-read; facts retained from the prior read."
+  },
+  {
+   "lane": "platform/eventective",
+   "pages_read": 2,
+   "yield": "Zero; listing text carried no room capacity or price."
+  },
+  {
+   "lane": "platform/venue-report",
+   "pages_read": 2,
+   "yield": "Zero; 404 and empty shell."
+  },
+  {
+   "lane": "platform/splacer",
+   "pages_read": 2,
+   "yield": "Zero; TLS handshake failed on both URLs."
+  },
+  {
+   "lane": "platform/breather",
+   "pages_read": 1,
+   "yield": "Zero; no New York room inventory or rate."
+  },
+  {
+   "lane": "ny-specific/church-of-the-advent",
+   "pages_read": 1,
+   "yield": "Zero assessed; form-only rentals page, building not ADA-accessible. Kept as a lead."
+  },
+  {
+   "lane": "ny-specific/universities",
+   "pages_read": 6,
+   "yield": "One assessed (NYU Kimmel KC 914, external programming only in January and summer; page blocked on re-read). CUNY Graduate Center rental hub retained as a lead, not a room assessment."
+  },
+  {
+   "lane": "ny-specific/museums",
+   "pages_read": 1,
+   "yield": "Zero; rooms named without capacity or rate."
+  },
+  {
+   "lane": "events/miragather",
+   "pages_read": 3,
+   "yield": "10 New York 2027 records surfaced; each organiser page opened before an event was stored."
+  },
+  {
+   "lane": "events/luma",
+   "pages_read": 10,
+   "yield": "Zero 2027 events. Read lu.ma/nyc, luma.com/nyc, lu.ma/new-york, luma.com/new-york-city, lu.ma/decentralized_ai_events?period=past and four organiser pages (AI Salon, Columbia CUB, LangChain NYC, NYC Creative AI). All listed editions are 2025-2026; the 2027 date-picker months render empty."
+  },
+  {
+   "lane": "events/aitinkerers",
+   "pages_read": 2,
+   "yield": "Zero 2027 events; New York chapter shows 34 events in the last 12 months and a 2026-12-17 next event."
+  },
+  {
+   "lane": "events/eventbrite",
+   "pages_read": 1,
+   "yield": "Zero 2027 events on the New York AI browse page; every served card is a 2026 date."
+  },
+  {
+   "lane": "events/meetup",
+   "pages_read": 4,
+   "yield": "Three 2027 events: the search payload listed three future occurrences of 'Wall Street Meets AI' (AI, Quant & Finance NYC) and each event page confirmed 18:30-20:30 on 2027-01-06, 2027-01-20 and 2027-04-14."
+  },
+  {
+   "lane": "events/organiser",
+   "pages_read": 4,
+   "yield": "Four 2027 events confirmed or recorded: AI Context New York (2027-03-16, organiser schema.org block), #ProductCon New York (2027-05-18, Metropolitan Pavilion), AGNTSummit (2027-11-01/02, Linux Foundation prospectus PDF), Chainalysis Links (2027-03-30/31, indexed organiser page, 403 on fetch)."
+  },
+  {
+   "lane": "photos/commons",
+   "pages_read": 60,
+   "yield": "Five cleared images for four venues (2 for 55 Broadway), all from Wikimedia Commons with named licences; the other 26 venues carry an explicit photo exception."
+  },
+  {
+   "lane": "transit/mta-gtfs",
+   "pages_read": 1,
+   "yield": "Static NYCT subway GTFS downloaded and parsed; nearest station and line set computed for 30 of 30 venues from the Census-geocoded address."
+  },
+  {
+   "lane": "geocode/census",
+   "pages_read": 30,
+   "yield": "30 of 30 addresses matched by the US Census Public_AR_Current geocoder with a house-number match recorded."
+  }
+ ],
+ "leads": 3,
+ "stop_rule": "Assessments stopped at 30 as the brief directs. After the corrections, a further pass targeted the five reviewer-flagged rooms, the four missing events and the photo/transit lanes; no new distinct room surfaced, so the stop condition holds.",
+ "lead_scope_note": "Only three defensible unassessed leads ship as venue records. The earlier count of eight had no supporting rows for the other five and is withdrawn.",
+ "round_3_checks": [
+  {
+   "url": "https://www.meetup.com/nyaimeetup/",
+   "result": "HTTP 200; 4,174 members and Past events section."
+  },
+  {
+   "url": "https://luma.com/t4kmbswi",
+   "result": "HTTP 200; April 26, 2026 summit and International Affairs Building, Room 1501."
+  },
+  {
+   "url": "https://spacerentals.gc.cuny.edu/",
+   "result": "Operator\u2019s rental hub offers spaces for \u201c10 to 400 guests\u201d and directs readers to individual rooms for capacity."
+  },
+  {
+   "url": "https://www.bklynlibrary.org/use-the-library/meeting-rooms",
+   "result": "The earlier read redirected without room data; the recheck returned HTTP 403. No current rental offer or room capacity was verified."
+  },
+  {
+   "url": "https://www.adventhope.org/rent",
+   "result": "\u201cPlease Complete the Form for Rental Requests\u201d and \u201cOur building is not yet ADA-accessible.\u201d"
+  },
+  {
+   "url": "https://www.tagvenue.com/us/rooms/new-york/39296/loft39/3rd-floor-speakeasy-at-loft39",
+   "result": "HTTP 200; Saturday evening rate corrected in raw summary to $700 per hour."
+  }
+ ]
+}
