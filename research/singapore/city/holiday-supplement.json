@@ -1,0 +1,26 @@
+{
+ "jurisdiction_ids": ["SG"],
+ "note": "Singapore public-holiday layer for the 2027 projection. Read from the Ministry of Manpower public-holidays page on 2026-11-24 (page last updated 19 June 2026). No school calendar is included, and no row here is rule-derived: every date is the date the authority prints.",
+ "source": {
+  "url": "https://www.mom.gov.sg/employment-practices/public-holidays",
+  "title": "Ministry of Manpower — Public holidays",
+  "edition": "2027 table (page last updated 19 June 2026)",
+  "accessed_on": "2026-11-24"
+ },
+ "holidays": [
+  {"holiday_name": "New Year's Day", "start_date": "2027-01-01", "end_date": "2027-01-01", "day": "Friday"},
+  {"holiday_name": "Chinese New Year", "start_date": "2027-02-06", "end_date": "2027-02-06", "day": "Saturday", "note": "Second day Sunday 7 February 2027; Monday 8 February 2027 will be a public holiday if your rest day falls on 7 February 2027."},
+  {"holiday_name": "Chinese New Year", "start_date": "2027-02-07", "end_date": "2027-02-07", "day": "Sunday", "note": "Second day of Chinese New Year; the rest-day note applies."},
+  {"holiday_name": "Hari Raya Puasa", "start_date": "2027-03-10", "end_date": "2027-03-10", "day": "Wednesday"},
+  {"holiday_name": "Good Friday", "start_date": "2027-03-26", "end_date": "2027-03-26", "day": "Friday"},
+  {"holiday_name": "Labour Day", "start_date": "2027-05-01", "end_date": "2027-05-01", "day": "Saturday"},
+  {"holiday_name": "Hari Raya Haji", "start_date": "2027-05-17", "end_date": "2027-05-17", "day": "Monday"},
+  {"holiday_name": "Vesak Day", "start_date": "2027-05-20", "end_date": "2027-05-20", "day": "Thursday"},
+  {"holiday_name": "National Day", "start_date": "2027-08-09", "end_date": "2027-08-09", "day": "Monday"},
+  {"holiday_name": "Deepavali", "start_date": "2027-10-28", "end_date": "2027-10-28", "day": "Thursday"},
+  {"holiday_name": "Christmas Day", "start_date": "2027-12-25", "end_date": "2027-12-25", "day": "Saturday"}
+ ],
+ "coverage": [
+  {"kind": "public_holiday_coverage", "jurisdiction_id": "SG", "start_date": "2027-01-01", "end_date": "2027-12-31", "verified": true, "note": "Full-year 2027 span; the ten holidays above are the dates the authority prints."}
+ ]
+}

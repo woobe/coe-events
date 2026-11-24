@@ -1,0 +1,340 @@
+{
+ "counts": {
+  "assessed_refresh": 6,
+  "carried_as_lead": 3,
+  "deferred_lead": 4,
+  "excluded_capacity": 5
+ },
+ "generated_on": "2026-11-24",
+ "legacy_source": "research/singapore/2026-q4/venues.shortlist.json",
+ "legacy_source_sha256": "805157e247027f0bb9b2ab2baf1d9798c5e7bf052909fcd8c1c05c5e1c963b53",
+ "note": "Every 2026-q4 Singapore row ends in new evidence or an explicit reason it was not promoted. A capacity below the 50-person brief is a fact about the prior evidence, not a claim that the venue closed.",
+ "rows": [
+  {
+   "disposition": "deferred_lead",
+   "evidence_status": "prior_only",
+   "legacy_accessed_on": "2026-08-10",
+   "legacy_address": "2 Finlayson Green, Raffles Place, Singapore 049247",
+   "legacy_id": "S/0",
+   "legacy_name": "CALI at Ascott Raffles Place \u2014 Raffles Place Function Room",
+   "legacy_score": 0.6767,
+   "legacy_source_url": "https://www.tagvenue.com/sg/rooms/singapore/58971/cali-ascott-raffles-place/function-room",
+   "legacy_tier": "shortlist_ready",
+   "new_evidence": {
+    "checked_on": "2026-11-24",
+    "kind": "none_new",
+    "note": "No 2026-11-24 page read for this room."
+   },
+   "reason": "Not re-read this run: the 30-room assessment cap was filled by rooms read in full on 2026-11-24. The Tagvenue listing is still enumerated in the 50-guest Singapore pass, so it stays a live lead rather than a closed one.",
+   "successor_venue_id": null
+  },
+  {
+   "disposition": "assessed_refresh",
+   "evidence_status": "prior_only",
+   "legacy_accessed_on": "2026-08-10",
+   "legacy_address": "11 Eunos Road 8, Singapore 408601",
+   "legacy_id": "S/1",
+   "legacy_name": "Lifelong Learning Institute (LLSG) \u2014 Training Room 1-1",
+   "legacy_score": 0.6272,
+   "legacy_source_url": "https://www.lli.sg/docs/lifelonglearninginstitutelibraries/facility-documents/ppuf-sor_wef_1_september_2025_2.pdf",
+   "legacy_tier": "shortlist_ready",
+   "new_evidence": {
+    "checked_on": "2026-11-24",
+    "kind": "none_new",
+    "note": "No 2026-11-24 page read for this room."
+   },
+   "reason": "Re-read from the operator's rate card and carried into the permanent store as an assessed room with the full-day 08:00-22:00 block.",
+   "successor_venue_id": null
+  },
+  {
+   "disposition": "deferred_lead",
+   "evidence_status": "prior_only",
+   "legacy_accessed_on": "2026-08-10",
+   "legacy_address": "50 Raffles Place, Level 4, Singapore 048623",
+   "legacy_id": "S/2",
+   "legacy_name": "The Executive Centre \u2014 The Lounge at Singapore Land Tower (The Exchange)",
+   "legacy_score": 0.6217,
+   "legacy_source_url": "https://www.tagvenue.com/sg/rooms/singapore/100995/singapore-land-tower/the-lounge",
+   "legacy_tier": "shortlist_ready",
+   "new_evidence": {
+    "checked_on": "2026-11-24",
+    "kind": "none_new",
+    "note": "No 2026-11-24 page read for this room."
+   },
+   "reason": "Not re-read this run: the cap was reached. Still enumerated in the 50-guest pass; the prior Saturday hourly rate put an 8 h estimate over the soft budget.",
+   "successor_venue_id": null
+  },
+  {
+   "disposition": "assessed_refresh",
+   "evidence_status": "prior_only",
+   "legacy_accessed_on": "2026-08-10",
+   "legacy_address": "11 Eunos Road 8, Singapore 408601",
+   "legacy_id": "S/3",
+   "legacy_name": "Lifelong Learning Institute (LLSG) \u2014 Event Hall 2-1",
+   "legacy_score": 0.6071,
+   "legacy_source_url": "https://www.lli.sg/docs/lifelonglearninginstitutelibraries/facility-documents/ppuf-sor_wef_1_september_2025_2.pdf",
+   "legacy_tier": "shortlist_ready",
+   "new_evidence": {
+    "checked_on": "2026-11-24",
+    "kind": "none_new",
+    "note": "No 2026-11-24 page read for this room."
+   },
+   "reason": "Re-read from the operator's rate card and carried into the permanent store as an assessed room.",
+   "successor_venue_id": null
+  },
+  {
+   "disposition": "assessed_refresh",
+   "evidence_status": "prior_only",
+   "legacy_accessed_on": "2026-08-10",
+   "legacy_address": "21 Collyer Quay, Singapore 049320",
+   "legacy_id": "S/4",
+   "legacy_name": "WeWork 21 Collyer Quay \u2014 Level 1 Auditorium",
+   "legacy_score": 0.5767,
+   "legacy_source_url": "https://www.tagvenue.com/sg/rooms/singapore/85884/wework-21-collyer-quay/level-1-auditorium",
+   "legacy_tier": "shortlist_ready",
+   "new_evidence": {
+    "checked_on": "2026-11-24",
+    "kind": "none_new",
+    "note": "No 2026-11-24 page read for this room."
+   },
+   "reason": "Re-read from the Tagvenue listing and carried into the permanent store as an assessed room; the published rate puts both windows over the soft budget.",
+   "successor_venue_id": null
+  },
+  {
+   "disposition": "deferred_lead",
+   "evidence_status": "prior_only",
+   "legacy_accessed_on": "2026-08-10",
+   "legacy_address": "21 Collyer Quay, Singapore 049320",
+   "legacy_id": "S/5",
+   "legacy_name": "WeWork 21 Collyer Quay \u2014 Level 2 Business Centre",
+   "legacy_score": 0.5767,
+   "legacy_source_url": "https://www.tagvenue.com/sg/rooms/singapore/85991/wework-21-collyer-quay/level-2-business-centre",
+   "legacy_tier": "shortlist_ready",
+   "new_evidence": {
+    "checked_on": "2026-11-24",
+    "kind": "none_new",
+    "note": "No 2026-11-24 page read for this room."
+   },
+   "reason": "Not re-read this run: the cap was reached and the same building's Level 1 auditorium already carries the location. Still enumerated in the 50-guest pass.",
+   "successor_venue_id": null
+  },
+  {
+   "disposition": "assessed_refresh",
+   "evidence_status": "prior_only",
+   "legacy_accessed_on": "2026-08-10",
+   "legacy_address": "5 Temasek Boulevard, Level 17 Community Floor, Singapore 038985",
+   "legacy_id": "S/6",
+   "legacy_name": "WeWork Suntec Tower 5 \u2014 Level 17 Common Area",
+   "legacy_score": 0.5767,
+   "legacy_source_url": "https://www.tagvenue.com/sg/rooms/singapore/85994/wework-suntec-tower-5/level-17-common-area",
+   "legacy_tier": "shortlist_ready",
+   "new_evidence": {
+    "checked_on": "2026-11-24",
+    "kind": "none_new",
+    "note": "No 2026-11-24 page read for this room."
+   },
+   "reason": "Re-read from the Tagvenue listing and carried into the permanent store; the published rate is far over the soft budget.",
+   "successor_venue_id": null
+  },
+  {
+   "disposition": "carried_as_lead",
+   "evidence_status": "prior_only",
+   "legacy_accessed_on": "2026-08-10",
+   "legacy_address": "28 Aliwal Street, Singapore 199918",
+   "legacy_id": "S/7",
+   "legacy_name": "Aliwal Arts Centre \u2014 Multi-Purpose Hall",
+   "legacy_score": 0.4967,
+   "legacy_source_url": "https://www.aliwalartscentre.sg/venue-hire/",
+   "legacy_tier": "shortlist_ready",
+   "new_evidence": {
+    "checked_on": "2026-11-24",
+    "kind": "none_new",
+    "note": "No 2026-11-24 page read for this room."
+   },
+   "reason": "Carried as a lead: the venue-hire pages are client-rendered and no room capacity, hours or rate could be read on 2026-11-24.",
+   "successor_venue_id": "sg-c5e0795f1042"
+  },
+  {
+   "disposition": "carried_as_lead",
+   "evidence_status": "prior_only",
+   "legacy_accessed_on": "2026-08-10",
+   "legacy_address": "1 Old Parliament Lane, Singapore 179429",
+   "legacy_id": "S/8",
+   "legacy_name": "The Arts House at the Old Parliament \u2014 Screening Room",
+   "legacy_score": 0.4967,
+   "legacy_source_url": "https://web.archive.org/web/2024/https://www.theartshouse.sg/venue-hire/",
+   "legacy_tier": "shortlist_ready",
+   "new_evidence": {
+    "checked_on": "2026-11-24",
+    "kind": "none_new",
+    "note": "No 2026-11-24 page read for this room."
+   },
+   "reason": "Carried as a lead: only an archived page supports the 75-seat capacity and the live room pages are client-rendered.",
+   "successor_venue_id": null
+  },
+  {
+   "disposition": "assessed_refresh",
+   "evidence_status": "prior_only",
+   "legacy_accessed_on": "2026-08-10",
+   "legacy_address": "1 St Andrew's Road, Singapore 178957",
+   "legacy_id": "S/9",
+   "legacy_name": "National Gallery Singapore \u2014 Glass Room",
+   "legacy_score": 0.4167,
+   "legacy_source_url": "https://www.nationalgallery.sg/venue-rental",
+   "legacy_tier": "shortlist_ready",
+   "new_evidence": {
+    "checked_on": "2026-11-24",
+    "kind": "none_new",
+    "note": "No 2026-11-24 page read for this room."
+   },
+   "reason": "Re-read from the Gallery's own room page and carried into the permanent store; only a standing capacity and no rate or hours are published.",
+   "successor_venue_id": null
+  },
+  {
+   "disposition": "assessed_refresh",
+   "evidence_status": "prior_only",
+   "legacy_accessed_on": "2026-08-10",
+   "legacy_address": "1 St Andrew's Road, Singapore 178957",
+   "legacy_id": "S/10",
+   "legacy_name": "National Gallery Singapore \u2014 The Ngee Ann Kongsi Auditorium & Foyer",
+   "legacy_score": 0.2967,
+   "legacy_source_url": "https://www.nationalgallery.sg/venue-rental",
+   "legacy_tier": "shortlist_ready",
+   "new_evidence": {
+    "checked_on": "2026-11-24",
+    "kind": "none_new",
+    "note": "No 2026-11-24 page read for this room."
+   },
+   "reason": "Re-read from the Gallery's own room page and carried into the permanent store; no rate or hours are published.",
+   "successor_venue_id": null
+  },
+  {
+   "disposition": "excluded_capacity",
+   "evidence_status": "prior_only",
+   "legacy_accessed_on": "2026-08-10",
+   "legacy_address": "1 George Street, Level 10, Singapore 049145",
+   "legacy_id": "L/0",
+   "legacy_name": "Industrious at One George Street \u2014 Studio (formerly The Great Room)",
+   "legacy_score": null,
+   "legacy_source_url": "https://www.tagvenue.com/sg/rooms/singapore/27844/industrious-at-one-george-street/studio",
+   "legacy_tier": "lead",
+   "new_evidence": {
+    "checked_on": "2026-11-24",
+    "kind": "none_new",
+    "note": "No 2026-11-24 page read for this room."
+   },
+   "reason": "Prior evidence (2026-08-10) gives 30 seated, below the 50-person brief; the 2026-11 pass did not re-read the page and nothing found raises the capacity.",
+   "successor_venue_id": null
+  },
+  {
+   "disposition": "carried_as_lead",
+   "evidence_status": "prior_only",
+   "legacy_accessed_on": "2026-08-10",
+   "legacy_address": "6 Raffles Boulevard, Marina Square, #03-308, Singapore 039594",
+   "legacy_id": "L/1",
+   "legacy_name": "JustCo Marina Square \u2014 Coworking & Meeting Rooms",
+   "legacy_score": null,
+   "legacy_source_url": "https://www.justcoglobal.com/en-sg/centre/justco-marina-square/",
+   "legacy_tier": "lead",
+   "new_evidence": {
+    "checked_on": "2026-11-24",
+    "kind": "none_new",
+    "note": "No 2026-11-24 page read for this room."
+   },
+   "reason": "Carried as a lead: JustCo publishes an event-space band ('20 - 80+') but no room-level capacity, hours or rate.",
+   "successor_venue_id": null
+  },
+  {
+   "disposition": "excluded_capacity",
+   "evidence_status": "prior_only",
+   "legacy_accessed_on": "2026-08-10",
+   "legacy_address": "601 MacPherson Road, Grantral Complex, #07-08, Singapore 368242",
+   "legacy_id": "L/2",
+   "legacy_name": "Meeting Room Rental Singapore (Zion Global Marketing) \u2014 Seminar Room 1",
+   "legacy_score": null,
+   "legacy_source_url": "https://www.tagvenue.com/sg/venues/singapore/39832/meeting-room-rental-singapore",
+   "legacy_tier": "lead",
+   "new_evidence": {
+    "checked_on": "2026-11-24",
+    "kind": "none_new",
+    "note": "No 2026-11-24 page read for this room."
+   },
+   "reason": "Prior evidence (2026-08-10) gives 36 seats, below the 50-person brief; not re-read in the 2026-11 pass.",
+   "successor_venue_id": null
+  },
+  {
+   "disposition": "excluded_capacity",
+   "evidence_status": "prior_only",
+   "legacy_accessed_on": "2026-08-10",
+   "legacy_address": "1 St Andrew's Road, Singapore 178957",
+   "legacy_id": "L/3",
+   "legacy_name": "National Gallery Singapore \u2014 Rooftop Studios",
+   "legacy_score": null,
+   "legacy_source_url": "https://www.nationalgallery.sg/venue-rental",
+   "legacy_tier": "lead",
+   "new_evidence": {
+    "checked_on": "2026-11-24",
+    "kind": "none_new",
+    "note": "No 2026-11-24 page read for this room."
+   },
+   "reason": "Prior evidence (2026-08-10) gives 23-28 seats, below the 50-person brief; not re-read in the 2026-11 pass.",
+   "successor_venue_id": null
+  },
+  {
+   "disposition": "excluded_capacity",
+   "evidence_status": "prior_only",
+   "legacy_accessed_on": "2026-08-10",
+   "legacy_address": "1 St Andrew's Road, Singapore 178957",
+   "legacy_id": "L/4",
+   "legacy_name": "National Gallery Singapore \u2014 Seminar Rooms",
+   "legacy_score": null,
+   "legacy_source_url": "https://www.nationalgallery.sg/venue-rental",
+   "legacy_tier": "lead",
+   "new_evidence": {
+    "checked_on": "2026-11-24",
+    "kind": "none_new",
+    "note": "No 2026-11-24 page read for this room."
+   },
+   "reason": "Prior evidence (2026-08-10) gives 15-28 seats, below the 50-person brief; not re-read in the 2026-11 pass.",
+   "successor_venue_id": null
+  },
+  {
+   "disposition": "deferred_lead",
+   "evidence_status": "prior_only",
+   "legacy_accessed_on": "2026-08-10",
+   "legacy_address": "Singapore Land Tower, 50 Raffles Place, Level 4-5, Singapore 048623",
+   "legacy_id": "L/5",
+   "legacy_name": "The Executive Centre \u2014 The Exchange (Singapore Land Tower) Event Space",
+   "legacy_score": null,
+   "legacy_source_url": "https://www.executivecentre.com/en-sg/event-space-venue/?city=singapore-city",
+   "legacy_tier": "lead",
+   "new_evidence": {
+    "checked_on": "2026-11-24",
+    "kind": "none_new",
+    "note": "No 2026-11-24 page read for this room."
+   },
+   "reason": "Not assessed: the published band ('24 to 250 pax') does not name a room, so no single space could be measured or priced; kept as a discovery lead.",
+   "successor_venue_id": null
+  },
+  {
+   "disposition": "excluded_capacity",
+   "evidence_status": "prior_only",
+   "legacy_accessed_on": "2026-08-10",
+   "legacy_address": "12 Marina View, Asia Square Tower 2, Singapore 018961",
+   "legacy_id": "L/6",
+   "legacy_name": "The Work Project Asia Square Tower 2 \u2014 Boardroom",
+   "legacy_score": null,
+   "legacy_source_url": "https://www.tagvenue.com/sg/rooms/singapore/42425/the-work-project-asia-square/boardroom",
+   "legacy_tier": "lead",
+   "new_evidence": {
+    "checked_on": "2026-11-24",
+    "kind": "none_new",
+    "note": "No 2026-11-24 page read for this room."
+   },
+   "reason": "Prior evidence (2026-08-10) gives 14 seats and a weekend closure, so it fails both the 50-person brief and any Saturday window; not re-read in 2026-11.",
+   "successor_venue_id": null
+  }
+ ],
+ "rows_total": 18,
+ "schema_version": "sg-legacy-dispositions/1"
+}

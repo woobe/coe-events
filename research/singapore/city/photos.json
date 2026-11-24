@@ -1,0 +1,972 @@
+{
+ "checked_on": "2026-11-24",
+ "commons_api": "https://commons.wikimedia.org/w/api.php",
+ "coverage": {
+  "assets": 30,
+  "total_records": 36,
+  "venues_with_1_3": 17,
+  "venues_with_4plus": 0,
+  "venues_with_asset": 17,
+  "withdrawn_assets": 2,
+  "withheld": 19
+ },
+ "gallery_notes": {
+  "sg-0285e3753fc2": "1 verified photo, fewer than the four-photo target. Two Commons files of the Resorts World Sentosa complex on Sentosa were withdrawn from this record on 2026-11-24: they show a different building about 12.4 km from the Genting Hotel Jurong at 2 Town Hall Link, and a brand's other property is not this venue. The cleared asset, File:Genting Hotel 10-11-2023.jpg, is titled as a Genting Hotel and described as a photograph taken in Jurong East, matching the building at 2 Town Hall Link.",
+  "sg-09795cef4b0f": "2 verified photos, fewer than the four-photo target: the operator gallery states no licence and no further Commons file depicts this room or building.",
+  "sg-123024e521a4": "2 verified photos, fewer than the four-photo target: the operator gallery states no licence and no further Commons file depicts this room or building.",
+  "sg-31b594bd4607": "2 verified photos, fewer than the four-photo target: the operator gallery states no licence and no further Commons file depicts this room or building.",
+  "sg-34d6bf1ba39c": "2 verified photos, fewer than the four-photo target: the operator gallery states no licence and no further Commons file depicts this room or building.",
+  "sg-42a16aa5a0df": "1 verified photo, fewer than the four-photo target: the operator gallery states no licence and no further Commons file depicts this room or building.",
+  "sg-5be91e319a02": "2 verified photos, fewer than the four-photo target: the operator gallery states no licence and no further Commons file depicts this room or building.",
+  "sg-5d3fcedef47c": "2 verified photos, fewer than the four-photo target: the operator gallery states no licence and no further Commons file depicts this room or building.",
+  "sg-61c5043af885": "2 verified photos, fewer than the four-photo target: the operator gallery states no licence and no further Commons file depicts this room or building.",
+  "sg-83af406debab": "2 verified photos, fewer than the four-photo target: the operator gallery states no licence and no further Commons file depicts this room or building.",
+  "sg-afe29d71b4e8": "1 verified photo, fewer than the four-photo target: the operator gallery states no licence and no further Commons file depicts this room or building.",
+  "sg-b988c8bb26eb": "2 verified photos, fewer than the four-photo target: the operator gallery states no licence and no further Commons file depicts this room or building.",
+  "sg-c5e0795f1042": "2 verified photos, fewer than the four-photo target: the operator gallery states no licence and no further Commons file depicts this room or building.",
+  "sg-d9552dd03dd7": "2 verified photos, fewer than the four-photo target: the operator gallery states no licence and no further Commons file depicts this room or building.",
+  "sg-dca78c5c3a05": "1 verified photo, fewer than the four-photo target: the operator gallery states no licence and no further Commons file depicts this room or building.",
+  "sg-ed2e35df4121": "2 verified photos, fewer than the four-photo target: the operator gallery states no licence and no further Commons file depicts this room or building.",
+  "sg-f1b65d2b83d9": "2 verified photos, fewer than the four-photo target: the operator gallery states no licence and no further Commons file depicts this room or building."
+ },
+ "licence_mix": {
+  "CC BY 2.5": 1,
+  "CC BY 3.0": 1,
+  "CC BY 4.0": 3,
+  "CC BY-SA 2.0": 1,
+  "CC BY-SA 3.0": 3,
+  "CC BY-SA 4.0": 14,
+  "Copyrighted free use": 6,
+  "Public domain": 1
+ },
+ "method": "Per room: the operator or marketplace gallery was checked first and is never republished without a stated licence; where no licence exists, a Wikimedia Commons file is used only when its title and description identify the room's building. A brand's other properties are not substitutes: an image is cleared only for the building at the venue's own address. Every room without a cleared asset keeps a withheld record, and any asset withdrawn after a check is kept under `withdrawn` with its reason.",
+ "queries": [
+  {
+   "note": "Candidates reviewed file by file; only building/room matches were cleared.",
+   "query": "Commons geosearch, 150 m radius, at each venue point",
+   "rooms": 30
+  },
+  {
+   "note": "Zero-hit terms are recorded in the withheld rows.",
+   "query": "Commons file search by building name (National Gallery, Funan, Bras Basah Complex, High Street Centre, Raffles City, Waterloo Centre, Suntec Tower 5, NTUC Centre, Freemasons Hall, Peninsula Plaza, HSBC Building, Marina Square, Genting Hotel Jurong, Aliwal Arts Centre, Arts House, Lifelong Learning Institute, ISCA House, CES Centre, Mosque Street)",
+   "rooms": 36
+  },
+  {
+   "note": "Round-3 correction: the earlier building-name list carried 'Resorts World Sentosa' as if it named the Genting Hotel Jurong building. The brand operates the hotel but the two buildings are about 12.4 km apart (OSM 1.2557459/103.8212344 for the Sentosa resort versus 1.3314839/103.7393574 for 2 Town Hall Link), so the brand term was replaced by the building name and the two Sentosa files it produced are withdrawn. The allpages prefix search on namespace 6 ('Genting Hotel') returned one file, File:Genting Hotel 10-11-2023.jpg, which is the cleared asset; 'Genting Hotel Jurong' as an exact file search returns zero hits.",
+   "query": "Commons search correction — brand term replaced by the building name and checked by file-title prefix",
+   "rooms": 1
+  }
+ ],
+ "schema_version": "city-photos/1",
+ "venues": {
+  "sg-0285e3753fc2": [
+   {
+    "alt": "Exterior of the Genting Hotel in Jurong East, the hotel that contains Ballroom 1 at 2 Town Hall Link",
+    "attribution": "LN9267",
+    "checked_on": "2026-11-24",
+    "dimensions_note": "width and height are the Commons original; served_px is the hotlinked thumbnail width",
+    "height": 3024,
+    "hosting": "hotlink",
+    "licence": "CC BY-SA 4.0",
+    "rights_basis": "CC BY-SA 4.0",
+    "served_px": 1280,
+    "source_page": "https://commons.wikimedia.org/wiki/File%3AGenting_Hotel_10-11-2023.jpg",
+    "source_page_checked": "https://commons.wikimedia.org/",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Genting_Hotel_10-11-2023.jpg/1280px-Genting_Hotel_10-11-2023.jpg",
+    "verified": {
+     "checked_on": "2026-11-24",
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "view": "Exterior of the Genting Hotel in Jurong East, photographed on 2023-11-10",
+    "width": 4032
+   }
+  ],
+  "sg-09795cef4b0f": [
+   {
+    "alt": "Exterior of Marina Square, the mall that contains the JustCo event space",
+    "attribution": "CEphoto, Uwe Aranas",
+    "checked_on": "2026-11-24",
+    "dimensions_note": "width and height are the Commons original; served_px is the hotlinked thumbnail width",
+    "height": 2835,
+    "hosting": "hotlink",
+    "licence": "CC BY-SA 3.0",
+    "rights_basis": "CC BY-SA 3.0",
+    "served_px": 1280,
+    "source_page": "https://commons.wikimedia.org/wiki/File%3ASingapore_Marina-Square-01.jpg",
+    "source_page_checked": "https://commons.wikimedia.org/",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Singapore_Marina-Square-01.jpg/1280px-Singapore_Marina-Square-01.jpg",
+    "verified": {
+     "checked_on": "2026-11-24",
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "view": "Exterior of Marina Square, the mall that contains the JustCo event space",
+    "width": 4252
+   },
+   {
+    "alt": "Second exterior view of Marina Square, the mall that contains the JustCo event space",
+    "attribution": "Irwan Shah Bin Abdullah / https://id.ehalal.io/",
+    "checked_on": "2026-11-24",
+    "dimensions_note": "width and height are the Commons original; served_px is the hotlinked thumbnail width",
+    "height": 2848,
+    "hosting": "hotlink",
+    "licence": "CC BY 3.0",
+    "rights_basis": "CC BY 3.0",
+    "served_px": 1280,
+    "source_page": "https://commons.wikimedia.org/wiki/File%3AMarina_square_singapore.jpg",
+    "source_page_checked": "https://commons.wikimedia.org/",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/Marina_square_singapore.jpg/1280px-Marina_square_singapore.jpg",
+    "verified": {
+     "checked_on": "2026-11-24",
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "view": "Second exterior view of Marina Square, the mall that contains the JustCo event space",
+    "width": 4272
+   }
+  ],
+  "sg-123024e521a4": [
+   {
+    "alt": "Exterior of Funan at 109 North Bridge Road, the building that houses the Trehaus event hall",
+    "attribution": "Leongyy02",
+    "checked_on": "2026-11-24",
+    "dimensions_note": "width and height are the Commons original; served_px is the hotlinked thumbnail width",
+    "height": 3072,
+    "hosting": "hotlink",
+    "licence": "CC BY-SA 4.0",
+    "rights_basis": "CC BY-SA 4.0",
+    "served_px": 1280,
+    "source_page": "https://commons.wikimedia.org/wiki/File%3AExterior_of_Funan_Singapore%2C_January_2026.jpg",
+    "source_page_checked": "https://commons.wikimedia.org/",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Exterior_of_Funan_Singapore%2C_January_2026.jpg/1280px-Exterior_of_Funan_Singapore%2C_January_2026.jpg",
+    "verified": {
+     "checked_on": "2026-11-24",
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "view": "Exterior of Funan at 109 North Bridge Road, the building that houses the Trehaus event hall",
+    "width": 4096
+   },
+   {
+    "alt": "Interior of Funan, the building that houses the Trehaus event hall",
+    "attribution": "Leongyy02",
+    "checked_on": "2026-11-24",
+    "dimensions_note": "width and height are the Commons original; served_px is the hotlinked thumbnail width",
+    "height": 3453,
+    "hosting": "hotlink",
+    "licence": "CC BY-SA 4.0",
+    "rights_basis": "CC BY-SA 4.0",
+    "served_px": 1280,
+    "source_page": "https://commons.wikimedia.org/wiki/File%3AInterior_of_Funan_Mall%2C_Singapore%2C_16_November_2025.jpg",
+    "source_page_checked": "https://commons.wikimedia.org/",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Interior_of_Funan_Mall%2C_Singapore%2C_16_November_2025.jpg/1280px-Interior_of_Funan_Mall%2C_Singapore%2C_16_November_2025.jpg",
+    "verified": {
+     "checked_on": "2026-11-24",
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "view": "Interior of Funan, the building that houses the Trehaus event hall",
+    "width": 5120
+   }
+  ],
+  "sg-13d49f8566fb": [
+   {
+    "checked_on": "2026-11-24",
+    "commons_searched": "Commons geosearch within 150 m and a file-title/description search on 2026-11-24",
+    "exception": true,
+    "operator_gallery_checked": "https://www.theworkingcapitol.com/",
+    "reason": "Lead withheld: the operator page shows the building but states no licence, and the Keong Saik Road Commons photographs do not identify No. 1.",
+    "rights_basis": "unestablished",
+    "withheld": true
+   }
+  ],
+  "sg-1f9af9e53c6a": [
+   {
+    "checked_on": "2026-11-24",
+    "commons_searched": "Commons geosearch within 150 m and a file-title/description search on 2026-11-24",
+    "exception": true,
+    "operator_gallery_checked": "https://www.tagvenue.com/sg/rooms/singapore/67604/the-offline-room/ground-floor-event-space",
+    "reason": "The Tagvenue listing gallery shows the room but states no licence or display permission, and a 150 m Commons geosearch around 111C King George's Avenue returned no image of the building.",
+    "rights_basis": "unestablished",
+    "withheld": true
+   }
+  ],
+  "sg-31b594bd4607": [
+   {
+    "alt": "Exterior of Bras Basah Complex, the building that houses room2f",
+    "attribution": "*angys*",
+    "checked_on": "2026-11-24",
+    "dimensions_note": "width and height are the Commons original; served_px is the hotlinked thumbnail width",
+    "height": 12000,
+    "hosting": "hotlink",
+    "licence": "CC BY-SA 4.0",
+    "rights_basis": "CC BY-SA 4.0",
+    "served_px": 1280,
+    "source_page": "https://commons.wikimedia.org/wiki/File%3ABras_Basah_Complex_%28230819%29.jpg",
+    "source_page_checked": "https://commons.wikimedia.org/",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Bras_Basah_Complex_%28230819%29.jpg/1280px-Bras_Basah_Complex_%28230819%29.jpg",
+    "verified": {
+     "checked_on": "2026-11-24",
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "view": "Exterior of Bras Basah Complex, the building that houses room2f",
+    "width": 9000
+   },
+   {
+    "alt": "Exterior of Bras Basah Complex beside the National Library, the building that houses room2f",
+    "attribution": "ProjectManhattan.",
+    "checked_on": "2026-11-24",
+    "dimensions_note": "width and height are the Commons original; served_px is the hotlinked thumbnail width",
+    "height": 3920,
+    "hosting": "hotlink",
+    "licence": "CC BY-SA 3.0",
+    "rights_basis": "CC BY-SA 3.0",
+    "served_px": 1280,
+    "source_page": "https://commons.wikimedia.org/wiki/File%3ABras_Basah_Complex_and_National_Library_at_Singapore.jpg",
+    "source_page_checked": "https://commons.wikimedia.org/",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Bras_Basah_Complex_and_National_Library_at_Singapore.jpg/1280px-Bras_Basah_Complex_and_National_Library_at_Singapore.jpg",
+    "verified": {
+     "checked_on": "2026-11-24",
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "view": "Exterior of Bras Basah Complex beside the National Library, the building that houses room2f",
+    "width": 2204
+   }
+  ],
+  "sg-34d6bf1ba39c": [
+   {
+    "alt": "Exterior of The Arts House, the former Old Parliament House, on Old Parliament Lane",
+    "attribution": "Frank Schulenburg",
+    "checked_on": "2026-11-24",
+    "dimensions_note": "width and height are the Commons original; served_px is the hotlinked thumbnail width",
+    "height": 6049,
+    "hosting": "hotlink",
+    "licence": "CC BY-SA 4.0",
+    "rights_basis": "CC BY-SA 4.0",
+    "served_px": 1280,
+    "source_page": "https://commons.wikimedia.org/wiki/File%3AThe_Arts_House%2C_Singapore_%282023%29-L1003662.jpg",
+    "source_page_checked": "https://commons.wikimedia.org/",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/The_Arts_House%2C_Singapore_%282023%29-L1003662.jpg/1280px-The_Arts_House%2C_Singapore_%282023%29-L1003662.jpg",
+    "verified": {
+     "checked_on": "2026-11-24",
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "view": "Exterior of The Arts House, the former Old Parliament House, on Old Parliament Lane",
+    "width": 8468
+   },
+   {
+    "alt": "Evening exterior of The Arts House on Old Parliament Lane",
+    "attribution": "Frank Schulenburg",
+    "checked_on": "2026-11-24",
+    "dimensions_note": "width and height are the Commons original; served_px is the hotlinked thumbnail width",
+    "height": 6276,
+    "hosting": "hotlink",
+    "licence": "CC BY-SA 4.0",
+    "rights_basis": "CC BY-SA 4.0",
+    "served_px": 1280,
+    "source_page": "https://commons.wikimedia.org/wiki/File%3AThe_Arts_House_during_blue_hour_%282023%29-L1003783.jpg",
+    "source_page_checked": "https://commons.wikimedia.org/",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/The_Arts_House_during_blue_hour_%282023%29-L1003783.jpg/1280px-The_Arts_House_during_blue_hour_%282023%29-L1003783.jpg",
+    "verified": {
+     "checked_on": "2026-11-24",
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "view": "Evening exterior of The Arts House on Old Parliament Lane",
+    "width": 8122
+   }
+  ],
+  "sg-42a07044079a": [
+   {
+    "checked_on": "2026-11-24",
+    "commons_searched": "Commons geosearch within 150 m and a file-title/description search on 2026-11-24",
+    "exception": true,
+    "operator_gallery_checked": "https://www.tagvenue.com/sg/rooms/singapore/102243/ju-space/ju-space",
+    "reason": "The Tagvenue listing gallery shows the room but states no licence, and a 150 m Commons geosearch around 116 Lavender Street returned no image of the building.",
+    "rights_basis": "unestablished",
+    "withheld": true
+   }
+  ],
+  "sg-42a16aa5a0df": [
+   {
+    "alt": "Exterior of Waterloo Centre at 261 Waterloo Street, the building that houses studio2f",
+    "attribution": "Thefishermancarti",
+    "checked_on": "2026-11-24",
+    "dimensions_note": "width and height are the Commons original; served_px is the hotlinked thumbnail width",
+    "height": 4072,
+    "hosting": "hotlink",
+    "licence": "CC BY-SA 4.0",
+    "rights_basis": "CC BY-SA 4.0",
+    "served_px": 1280,
+    "source_page": "https://commons.wikimedia.org/wiki/File%3ABlk_261-264_Waterloo_St_Waterloo_Centre_HDB_Mixed-Use.jpg",
+    "source_page_checked": "https://commons.wikimedia.org/",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Blk_261-264_Waterloo_St_Waterloo_Centre_HDB_Mixed-Use.jpg/1280px-Blk_261-264_Waterloo_St_Waterloo_Centre_HDB_Mixed-Use.jpg",
+    "verified": {
+     "checked_on": "2026-11-24",
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "view": "Exterior of Waterloo Centre at 261 Waterloo Street, the building that houses studio2f",
+    "width": 2924
+   }
+  ],
+  "sg-47e22cc263a7": [
+   {
+    "checked_on": "2026-11-24",
+    "commons_searched": "Commons geosearch within 150 m and a file-title/description search on 2026-11-24",
+    "exception": true,
+    "operator_gallery_checked": "https://www.tagvenue.com/sg/rooms/singapore/14385/metro-y-hotel-singapore/cypress",
+    "reason": "The Tagvenue listing gallery shows the room but states no licence, and no Commons image of Metro Y Hotel at 60 Stevens Road was found (the Stevens Road photographs show the road, not the hotel).",
+    "rights_basis": "unestablished",
+    "withheld": true
+   }
+  ],
+  "sg-5bab95b878e0": [
+   {
+    "checked_on": "2026-11-24",
+    "commons_searched": "Commons geosearch within 150 m and a file-title/description search on 2026-11-24",
+    "exception": true,
+    "operator_gallery_checked": "https://www.tagvenue.com/sg/rooms/singapore/103793/lovorth/chrysalis",
+    "reason": "The Tagvenue listing gallery shows the room but states no licence, and no Commons image of the Luzerne Building at 72 Bendemeer Road was found.",
+    "rights_basis": "unestablished",
+    "withheld": true
+   }
+  ],
+  "sg-5be91e319a02": [
+   {
+    "alt": "Exterior of High Street Centre at 1 North Bridge Road, the building that houses The Hive",
+    "attribution": null,
+    "attribution_note": "The file page credits no author; the recorded licence states attribution is not required.",
+    "checked_on": "2026-11-24",
+    "dimensions_note": "width and height are the Commons original; served_px is the hotlinked thumbnail width",
+    "height": 1600,
+    "hosting": "hotlink",
+    "licence": "Copyrighted free use",
+    "rights_basis": "Copyrighted free use",
+    "served_px": 960,
+    "source_page": "https://commons.wikimedia.org/wiki/File%3AHigh_Street_Centre%2C_Dec_05.JPG",
+    "source_page_checked": "https://commons.wikimedia.org/",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/High_Street_Centre%2C_Dec_05.JPG/960px-High_Street_Centre%2C_Dec_05.JPG",
+    "verified": {
+     "checked_on": "2026-11-24",
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "view": "Exterior of High Street Centre at 1 North Bridge Road, the building that houses The Hive",
+    "width": 1200
+   },
+   {
+    "alt": "Second exterior view of High Street Centre, the building that houses The Hive",
+    "attribution": null,
+    "attribution_note": "The file page credits no author; the recorded licence states attribution is not required.",
+    "checked_on": "2026-11-24",
+    "dimensions_note": "width and height are the Commons original; served_px is the hotlinked thumbnail width",
+    "height": 1600,
+    "hosting": "hotlink",
+    "licence": "Copyrighted free use",
+    "rights_basis": "Copyrighted free use",
+    "served_px": 960,
+    "source_page": "https://commons.wikimedia.org/wiki/File%3AHigh_Street_Centre_2%2C_Dec_05.JPG",
+    "source_page_checked": "https://commons.wikimedia.org/",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/High_Street_Centre_2%2C_Dec_05.JPG/960px-High_Street_Centre_2%2C_Dec_05.JPG",
+    "verified": {
+     "checked_on": "2026-11-24",
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "view": "Second exterior view of High Street Centre, the building that houses The Hive",
+    "width": 1200
+   }
+  ],
+  "sg-5d3fcedef47c": [
+   {
+    "alt": "Exterior of the Supreme Court Wing of the National Gallery Singapore, the wing that contains the Glass Room",
+    "attribution": "ScribblingGeek",
+    "checked_on": "2026-11-24",
+    "dimensions_note": "width and height are the Commons original; served_px is the hotlinked thumbnail width",
+    "height": 3573,
+    "hosting": "hotlink",
+    "licence": "CC BY-SA 4.0",
+    "rights_basis": "CC BY-SA 4.0",
+    "served_px": 1280,
+    "source_page": "https://commons.wikimedia.org/wiki/File%3ANational_Gallery_Singapore_Supreme_Court_Wing.jpg",
+    "source_page_checked": "https://commons.wikimedia.org/",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/National_Gallery_Singapore_Supreme_Court_Wing.jpg/1280px-National_Gallery_Singapore_Supreme_Court_Wing.jpg",
+    "verified": {
+     "checked_on": "2026-11-24",
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "view": "Exterior of the Supreme Court Wing of the National Gallery Singapore, the wing that contains the Glass Room",
+    "width": 5360
+   },
+   {
+    "alt": "Exterior of the National Gallery Singapore, the building that contains the Glass Room",
+    "attribution": "GoAheadFan95",
+    "checked_on": "2026-11-24",
+    "dimensions_note": "width and height are the Commons original; served_px is the hotlinked thumbnail width",
+    "height": 3000,
+    "hosting": "hotlink",
+    "licence": "CC BY-SA 4.0",
+    "rights_basis": "CC BY-SA 4.0",
+    "served_px": 1280,
+    "source_page": "https://commons.wikimedia.org/wiki/File%3ANational_Gallery_Singapore%2C_January_2024.jpg",
+    "source_page_checked": "https://commons.wikimedia.org/",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/National_Gallery_Singapore%2C_January_2024.jpg/1280px-National_Gallery_Singapore%2C_January_2024.jpg",
+    "verified": {
+     "checked_on": "2026-11-24",
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "view": "Exterior of the National Gallery Singapore, the building that contains the Glass Room",
+    "width": 4000
+   }
+  ],
+  "sg-5d80f59cd550": [
+   {
+    "checked_on": "2026-11-24",
+    "commons_searched": "Commons geosearch within 150 m and a file-title/description search on 2026-11-24",
+    "exception": true,
+    "operator_gallery_checked": "https://www.tagvenue.com/sg/rooms/singapore/107296/pico/pico-auditorium",
+    "reason": "The Tagvenue listing gallery shows the room but states no licence, and a 150 m Commons geosearch around 20 Kallang Avenue returned no image of Pico Creative Centre.",
+    "rights_basis": "unestablished",
+    "withheld": true
+   }
+  ],
+  "sg-61c5043af885": [
+   {
+    "alt": "Exterior of the Raffles City complex, the building that contains the Fairmont Singapore convention centre",
+    "attribution": "Diego Delso",
+    "checked_on": "2026-11-24",
+    "dimensions_note": "width and height are the Commons original; served_px is the hotlinked thumbnail width",
+    "height": 7528,
+    "hosting": "hotlink",
+    "licence": "CC BY-SA 4.0",
+    "rights_basis": "CC BY-SA 4.0",
+    "served_px": 1280,
+    "source_page": "https://commons.wikimedia.org/wiki/File%3ARaffles_City%2C_Singapur%2C_2023-08-17%2C_DD_18.jpg",
+    "source_page_checked": "https://commons.wikimedia.org/",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Raffles_City%2C_Singapur%2C_2023-08-17%2C_DD_18.jpg/1280px-Raffles_City%2C_Singapur%2C_2023-08-17%2C_DD_18.jpg",
+    "verified": {
+     "checked_on": "2026-11-24",
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "view": "Exterior of the Raffles City complex, the building that contains the Fairmont Singapore convention centre",
+    "width": 4050
+   },
+   {
+    "alt": "Second exterior view of the Raffles City complex, the building that contains the Fairmont Singapore convention centre",
+    "attribution": "CEphoto, Uwe Aranas",
+    "checked_on": "2026-11-24",
+    "dimensions_note": "width and height are the Commons original; served_px is the hotlinked thumbnail width",
+    "height": 5665,
+    "hosting": "hotlink",
+    "licence": "CC BY-SA 3.0",
+    "rights_basis": "CC BY-SA 3.0",
+    "served_px": 1280,
+    "source_page": "https://commons.wikimedia.org/wiki/File%3ASingapore_Raffles-City-01.jpg",
+    "source_page_checked": "https://commons.wikimedia.org/",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Singapore_Raffles-City-01.jpg/1280px-Singapore_Raffles-City-01.jpg",
+    "verified": {
+     "checked_on": "2026-11-24",
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "view": "Second exterior view of the Raffles City complex, the building that contains the Fairmont Singapore convention centre",
+    "width": 3777
+   }
+  ],
+  "sg-6aaa43c58493": [
+   {
+    "checked_on": "2026-11-24",
+    "commons_searched": "Commons geosearch within 150 m and a file-title/description search on 2026-11-24",
+    "exception": true,
+    "operator_gallery_checked": "https://www.tagvenue.com/sg/rooms/singapore/111557/visual-arts-centre-chinatown-gallery-studio/chinatown-gallery-studio",
+    "reason": "The listing gallery shows the room but states no licence. Commons holds a Mosque Street shophouse street view, but it does not identify No. 20B, so the building cannot be matched to the file and it is withheld.",
+    "rights_basis": "unestablished",
+    "withheld": true
+   }
+  ],
+  "sg-83af406debab": [
+   {
+    "alt": "Exterior of High Street Centre at 1 North Bridge Road, the building that houses the Dedao Club Space",
+    "attribution": null,
+    "attribution_note": "The file page credits no author; the recorded licence states attribution is not required.",
+    "checked_on": "2026-11-24",
+    "dimensions_note": "width and height are the Commons original; served_px is the hotlinked thumbnail width",
+    "height": 1600,
+    "hosting": "hotlink",
+    "licence": "Copyrighted free use",
+    "rights_basis": "Copyrighted free use",
+    "served_px": 960,
+    "source_page": "https://commons.wikimedia.org/wiki/File%3AHigh_Street_Centre_2%2C_Dec_05.JPG",
+    "source_page_checked": "https://commons.wikimedia.org/",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/High_Street_Centre_2%2C_Dec_05.JPG/960px-High_Street_Centre_2%2C_Dec_05.JPG",
+    "verified": {
+     "checked_on": "2026-11-24",
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "view": "Exterior of High Street Centre at 1 North Bridge Road, the building that houses the Dedao Club Space",
+    "width": 1200
+   },
+   {
+    "alt": "Second exterior view of High Street Centre, the building that houses the Dedao Club Space",
+    "attribution": null,
+    "attribution_note": "The file page credits no author; the recorded licence states attribution is not required.",
+    "checked_on": "2026-11-24",
+    "dimensions_note": "width and height are the Commons original; served_px is the hotlinked thumbnail width",
+    "height": 1600,
+    "hosting": "hotlink",
+    "licence": "Copyrighted free use",
+    "rights_basis": "Copyrighted free use",
+    "served_px": 960,
+    "source_page": "https://commons.wikimedia.org/wiki/File%3AHigh_Street_Centre%2C_Dec_05.JPG",
+    "source_page_checked": "https://commons.wikimedia.org/",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/High_Street_Centre%2C_Dec_05.JPG/960px-High_Street_Centre%2C_Dec_05.JPG",
+    "verified": {
+     "checked_on": "2026-11-24",
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "view": "Second exterior view of High Street Centre, the building that houses the Dedao Club Space",
+    "width": 1200
+   }
+  ],
+  "sg-86d82fc69fcf": [
+   {
+    "checked_on": "2026-11-24",
+    "commons_searched": "Commons geosearch within 150 m and a file-title/description search on 2026-11-24",
+    "exception": true,
+    "operator_gallery_checked": "https://www.lifelonglearningsg.org/docs/lifelonglearninginstitutelibraries/facility-documents/ppuf-sor_wef_1_september_2025_2.pdf",
+    "reason": "The operator PDF shows the room but carries no photo licence. Commons 'Eunos Road 8' is a road photograph, not the Lifelong Learning Institute building, and the FOSSASIA 2018 photographs show people at an event rather than the building, so nothing is cleared.",
+    "rights_basis": "unestablished",
+    "withheld": true
+   }
+  ],
+  "sg-8b90835a276b": [
+   {
+    "checked_on": "2026-11-24",
+    "commons_searched": "Commons geosearch within 150 m and a file-title/description search on 2026-11-24",
+    "exception": true,
+    "operator_gallery_checked": "https://www.tagvenue.com/sg/rooms/singapore/107624/common-ground-civic-centre/auditorium",
+    "reason": "The listing gallery shows the room but states no licence, and no Commons image of 21 Bedok North Street 1 was found; the Heartbeat@Bedok photograph is a different building.",
+    "rights_basis": "unestablished",
+    "withheld": true
+   }
+  ],
+  "sg-8cb81459951c": [
+   {
+    "checked_on": "2026-11-24",
+    "commons_searched": "Commons geosearch within 150 m and a file-title/description search on 2026-11-24",
+    "exception": true,
+    "operator_gallery_checked": "https://www.tagvenue.com/sg/rooms/singapore/15171/the-hive-carpenter/hive-rooftop-lounge",
+    "reason": "The listing gallery shows the rooftop but states no licence, and no Commons image of 36 Carpenter Street was found.",
+    "rights_basis": "unestablished",
+    "withheld": true
+   }
+  ],
+  "sg-9787a5fba342": [
+   {
+    "checked_on": "2026-11-24",
+    "commons_searched": "Commons geosearch within 150 m and a file-title/description search on 2026-11-24",
+    "exception": true,
+    "operator_gallery_checked": "https://www.tagvenue.com/sg/rooms/singapore/109061/enclosed-singapore/enclosed-event-space",
+    "reason": "The listing gallery shows the room but states no licence, and no Commons image of 41 Beach Road was found (Beach Road photographs show the road, not No. 41).",
+    "rights_basis": "unestablished",
+    "withheld": true
+   }
+  ],
+  "sg-9d1a91764baf": [
+   {
+    "checked_on": "2026-11-24",
+    "commons_searched": "Commons geosearch within 150 m and a file-title/description search on 2026-11-24",
+    "exception": true,
+    "operator_gallery_checked": "https://www.tagvenue.com/sg/rooms/singapore/48520/synergy-room-singapore-shopping-centre/first-class-room-05-20",
+    "reason": "The listing gallery shows the room but states no licence, and no Commons image of Singapore Shopping Centre at 190 Clemenceau Avenue was found.",
+    "rights_basis": "unestablished",
+    "withheld": true
+   }
+  ],
+  "sg-a5d5d094bf2e": [
+   {
+    "checked_on": "2026-11-24",
+    "commons_searched": "Commons geosearch within 150 m and a file-title/description search on 2026-11-24",
+    "exception": true,
+    "operator_gallery_checked": "https://www.tagvenue.com/sg/rooms/singapore/73843/isca-house/function-room-4-5",
+    "reason": "The listing gallery shows the room but states no licence, and no Commons image of ISCA House at 60 Cecil Street was found.",
+    "rights_basis": "unestablished",
+    "withheld": true
+   }
+  ],
+  "sg-afe29d71b4e8": [
+   {
+    "alt": "Exterior of Freemasons Hall on Coleman Street, the building at the Masons Table published address",
+    "attribution": "Bjoertvedt",
+    "checked_on": "2026-11-24",
+    "dimensions_note": "width and height are the Commons original; served_px is the hotlinked thumbnail width",
+    "height": 3024,
+    "hosting": "hotlink",
+    "licence": "CC BY-SA 4.0",
+    "rights_basis": "CC BY-SA 4.0",
+    "served_px": 1280,
+    "source_page": "https://commons.wikimedia.org/wiki/File%3ASingapore_-_Coleman_Street_23_-_Freemasons_Hall_IMG_9719.jpg",
+    "source_page_checked": "https://commons.wikimedia.org/",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Singapore_-_Coleman_Street_23_-_Freemasons_Hall_IMG_9719.jpg/1280px-Singapore_-_Coleman_Street_23_-_Freemasons_Hall_IMG_9719.jpg",
+    "verified": {
+     "checked_on": "2026-11-24",
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "view": "Exterior of Freemasons Hall on Coleman Street, the building at the Masons Table published address",
+    "width": 4032
+   }
+  ],
+  "sg-b57c010c7380": [
+   {
+    "checked_on": "2026-11-24",
+    "commons_searched": "Commons geosearch within 150 m and a file-title/description search on 2026-11-24",
+    "exception": true,
+    "operator_gallery_checked": "https://www.lifelonglearningsg.org/docs/lifelonglearninginstitutelibraries/facility-documents/ppuf-sor_wef_1_september_2025_2.pdf",
+    "reason": "The operator PDF shows the hall but carries no photo licence. Commons 'Eunos Road 8' is a road photograph, not the Lifelong Learning Institute building, and the FOSSASIA 2018 photographs show people at an event rather than the building, so nothing is cleared.",
+    "rights_basis": "unestablished",
+    "withheld": true
+   }
+  ],
+  "sg-b5dffa99af1f": [
+   {
+    "checked_on": "2026-11-24",
+    "commons_searched": "Commons geosearch within 150 m and a file-title/description search on 2026-11-24",
+    "exception": true,
+    "operator_gallery_checked": "https://www.tagvenue.com/sg/rooms/singapore/73842/isca-house/function-room-4-3",
+    "reason": "The listing gallery shows the room but states no licence, and no Commons image of ISCA House at 60 Cecil Street was found.",
+    "rights_basis": "unestablished",
+    "withheld": true
+   }
+  ],
+  "sg-b988c8bb26eb": [
+   {
+    "alt": "Exterior of NTUC Centre at One Marina Boulevard",
+    "attribution": "Terence Ong",
+    "checked_on": "2026-11-24",
+    "dimensions_note": "width and height are the Commons original; served_px is the hotlinked thumbnail width",
+    "height": 1600,
+    "hosting": "hotlink",
+    "licence": "CC BY 2.5",
+    "rights_basis": "CC BY 2.5",
+    "served_px": 960,
+    "source_page": "https://commons.wikimedia.org/wiki/File%3ANTUC_Centre_2.JPG",
+    "source_page_checked": "https://commons.wikimedia.org/",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/NTUC_Centre_2.JPG/960px-NTUC_Centre_2.JPG",
+    "verified": {
+     "checked_on": "2026-11-24",
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "view": "Exterior of NTUC Centre at One Marina Boulevard",
+    "width": 1200
+   },
+   {
+    "alt": "Exterior of One Marina Boulevard, the building that houses the NTUC Centre training rooms",
+    "attribution": "Nicolas Lannuzel.",
+    "checked_on": "2026-11-24",
+    "dimensions_note": "width and height are the Commons original; served_px is the hotlinked thumbnail width",
+    "height": 1600,
+    "hosting": "hotlink",
+    "licence": "CC BY-SA 2.0",
+    "rights_basis": "CC BY-SA 2.0",
+    "served_px": 960,
+    "source_page": "https://commons.wikimedia.org/wiki/File%3AOne_Marina_Boulevard%2C_Singapore_-_20121031.jpg",
+    "source_page_checked": "https://commons.wikimedia.org/",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/One_Marina_Boulevard%2C_Singapore_-_20121031.jpg/960px-One_Marina_Boulevard%2C_Singapore_-_20121031.jpg",
+    "verified": {
+     "checked_on": "2026-11-24",
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "view": "Exterior of One Marina Boulevard, the building that houses the NTUC Centre training rooms",
+    "width": 1066
+   }
+  ],
+  "sg-bea2d52eb16e": [
+   {
+    "checked_on": "2026-11-24",
+    "commons_searched": "Commons geosearch within 150 m and a file-title/description search on 2026-11-24",
+    "exception": true,
+    "operator_gallery_checked": "https://www.tagvenue.com/sg/rooms/singapore/65343/highfive-double-storey/entire-venue",
+    "reason": "The listing gallery shows the room but states no licence, and no Commons image of 40 Sam Leong Road was found.",
+    "rights_basis": "unestablished",
+    "withheld": true
+   }
+  ],
+  "sg-bff0f516d53e": [
+   {
+    "checked_on": "2026-11-24",
+    "commons_searched": "Commons geosearch within 150 m and a file-title/description search on 2026-11-24",
+    "exception": true,
+    "operator_gallery_checked": "https://lu.ma/lorongai",
+    "reason": "Lead withheld: no licence is published on the operator page and no Commons image of the Vidacity Building at 69 Ayer Rajah Crescent was found.",
+    "rights_basis": "unestablished",
+    "withheld": true
+   }
+  ],
+  "sg-c5e0795f1042": [
+   {
+    "alt": "Exterior of the Aliwal Arts Centre on Aliwal Street",
+    "attribution": "Chainwit.",
+    "checked_on": "2026-11-24",
+    "dimensions_note": "width and height are the Commons original; served_px is the hotlinked thumbnail width",
+    "height": 4032,
+    "hosting": "hotlink",
+    "licence": "CC BY 4.0",
+    "rights_basis": "CC BY 4.0",
+    "served_px": 1280,
+    "source_page": "https://commons.wikimedia.org/wiki/File%3AAliwal_Arts_Centre_%282023%29_-_img_01.jpg",
+    "source_page_checked": "https://commons.wikimedia.org/",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Aliwal_Arts_Centre_%282023%29_-_img_01.jpg/1280px-Aliwal_Arts_Centre_%282023%29_-_img_01.jpg",
+    "verified": {
+     "checked_on": "2026-11-24",
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "view": "Exterior of the Aliwal Arts Centre on Aliwal Street",
+    "width": 3024
+   },
+   {
+    "alt": "Second exterior view of the Aliwal Arts Centre on Aliwal Street",
+    "attribution": "Chainwit.",
+    "checked_on": "2026-11-24",
+    "dimensions_note": "width and height are the Commons original; served_px is the hotlinked thumbnail width",
+    "height": 3024,
+    "hosting": "hotlink",
+    "licence": "CC BY 4.0",
+    "rights_basis": "CC BY 4.0",
+    "served_px": 1280,
+    "source_page": "https://commons.wikimedia.org/wiki/File%3AAliwal_Arts_Centre_%282023%29_-_img_02.jpg",
+    "source_page_checked": "https://commons.wikimedia.org/",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Aliwal_Arts_Centre_%282023%29_-_img_02.jpg/1280px-Aliwal_Arts_Centre_%282023%29_-_img_02.jpg",
+    "verified": {
+     "checked_on": "2026-11-24",
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "view": "Second exterior view of the Aliwal Arts Centre on Aliwal Street",
+    "width": 4032
+   }
+  ],
+  "sg-c6889650a7db": [
+   {
+    "checked_on": "2026-11-24",
+    "commons_searched": "Commons geosearch within 150 m and a file-title/description search on 2026-11-24",
+    "exception": true,
+    "operator_gallery_checked": "https://www.lifelonglearningsg.org/docs/lifelonglearninginstitutelibraries/facility-documents/ppuf-sor_wef_1_september_2025_2.pdf",
+    "reason": "The operator PDF shows the hall but carries no photo licence. Commons 'Eunos Road 8' is a road photograph, not the Lifelong Learning Institute building, and the FOSSASIA 2018 photographs show people at an event rather than the building, so nothing is cleared.",
+    "rights_basis": "unestablished",
+    "withheld": true
+   }
+  ],
+  "sg-d9552dd03dd7": [
+   {
+    "alt": "Interior corridors of the National Gallery Singapore, the building that houses the Ngee Ann Kongsi Auditorium",
+    "attribution": "Basile Morin",
+    "checked_on": "2026-11-24",
+    "dimensions_note": "width and height are the Commons original; served_px is the hotlinked thumbnail width",
+    "height": 3614,
+    "hosting": "hotlink",
+    "licence": "CC BY-SA 4.0",
+    "rights_basis": "CC BY-SA 4.0",
+    "served_px": 1280,
+    "source_page": "https://commons.wikimedia.org/wiki/File%3AInterior_of_the_National_Gallery_Singapore.jpg",
+    "source_page_checked": "https://commons.wikimedia.org/",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Interior_of_the_National_Gallery_Singapore.jpg/1280px-Interior_of_the_National_Gallery_Singapore.jpg",
+    "verified": {
+     "checked_on": "2026-11-24",
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "view": "Interior corridors of the National Gallery Singapore, the building that houses the Ngee Ann Kongsi Auditorium",
+    "width": 4813
+   },
+   {
+    "alt": "Exterior of the Supreme Court Wing of the National Gallery Singapore, the building that houses the Ngee Ann Kongsi Auditorium",
+    "attribution": "ScribblingGeek",
+    "checked_on": "2026-11-24",
+    "dimensions_note": "width and height are the Commons original; served_px is the hotlinked thumbnail width",
+    "height": 3573,
+    "hosting": "hotlink",
+    "licence": "CC BY-SA 4.0",
+    "rights_basis": "CC BY-SA 4.0",
+    "served_px": 1280,
+    "source_page": "https://commons.wikimedia.org/wiki/File%3ANational_Gallery_Singapore_Supreme_Court_Wing.jpg",
+    "source_page_checked": "https://commons.wikimedia.org/",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/National_Gallery_Singapore_Supreme_Court_Wing.jpg/1280px-National_Gallery_Singapore_Supreme_Court_Wing.jpg",
+    "verified": {
+     "checked_on": "2026-11-24",
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "view": "Exterior of the Supreme Court Wing of the National Gallery Singapore, the building that houses the Ngee Ann Kongsi Auditorium",
+    "width": 5360
+   }
+  ],
+  "sg-dca78c5c3a05": [
+   {
+    "alt": "Exterior of Peninsula Plaza at 111 North Bridge Road, the building that houses the MIT Space room",
+    "attribution": "Chainwit.",
+    "checked_on": "2026-11-24",
+    "dimensions_note": "width and height are the Commons original; served_px is the hotlinked thumbnail width",
+    "height": 4032,
+    "hosting": "hotlink",
+    "licence": "CC BY 4.0",
+    "rights_basis": "CC BY 4.0",
+    "served_px": 1280,
+    "source_page": "https://commons.wikimedia.org/wiki/File%3APeninsula_Plaza_Singapore_%282025%29_-_img_01.jpg",
+    "source_page_checked": "https://commons.wikimedia.org/",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Peninsula_Plaza_Singapore_%282025%29_-_img_01.jpg/1280px-Peninsula_Plaza_Singapore_%282025%29_-_img_01.jpg",
+    "verified": {
+     "checked_on": "2026-11-24",
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "view": "Exterior of Peninsula Plaza at 111 North Bridge Road, the building that houses the MIT Space room",
+    "width": 3024
+   }
+  ],
+  "sg-ed2e35df4121": [
+   {
+    "alt": "Exterior of the HSBC Building at 21 Collyer Quay, the building that houses WeWork",
+    "attribution": "Bjoertvedt",
+    "checked_on": "2026-11-24",
+    "dimensions_note": "width and height are the Commons original; served_px is the hotlinked thumbnail width",
+    "height": 4032,
+    "hosting": "hotlink",
+    "licence": "CC BY-SA 4.0",
+    "rights_basis": "CC BY-SA 4.0",
+    "served_px": 1280,
+    "source_page": "https://commons.wikimedia.org/wiki/File%3ASingapore_-_Collyer_Quay_-_HSBC_Building_IMG_9255.jpg",
+    "source_page_checked": "https://commons.wikimedia.org/",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/Singapore_-_Collyer_Quay_-_HSBC_Building_IMG_9255.jpg/1280px-Singapore_-_Collyer_Quay_-_HSBC_Building_IMG_9255.jpg",
+    "verified": {
+     "checked_on": "2026-11-24",
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "view": "Exterior of the HSBC Building at 21 Collyer Quay, the building that houses WeWork",
+    "width": 3024
+   },
+   {
+    "alt": "Second exterior view of the HSBC Building at 21 Collyer Quay, the building that houses WeWork",
+    "attribution": null,
+    "attribution_note": "The file page credits no author; the recorded licence states attribution is not required.",
+    "checked_on": "2026-11-24",
+    "dimensions_note": "width and height are the Commons original; served_px is the hotlinked thumbnail width",
+    "height": 1600,
+    "hosting": "hotlink",
+    "licence": "Copyrighted free use",
+    "rights_basis": "Copyrighted free use",
+    "served_px": 960,
+    "source_page": "https://commons.wikimedia.org/wiki/File%3AHSBC_Building%2C_Dec_05.JPG",
+    "source_page_checked": "https://commons.wikimedia.org/",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/HSBC_Building%2C_Dec_05.JPG/960px-HSBC_Building%2C_Dec_05.JPG",
+    "verified": {
+     "checked_on": "2026-11-24",
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "view": "Second exterior view of the HSBC Building at 21 Collyer Quay, the building that houses WeWork",
+    "width": 1200
+   }
+  ],
+  "sg-f1b65d2b83d9": [
+   {
+    "alt": "Exterior of Suntec City Tower Five, the tower that houses the WeWork common area",
+    "attribution": "Merlion444",
+    "checked_on": "2026-11-24",
+    "dimensions_note": "width and height are the Commons original; served_px is the hotlinked thumbnail width",
+    "height": 2591,
+    "hosting": "hotlink",
+    "licence": "Public domain",
+    "rights_basis": "Public domain",
+    "served_px": 1280,
+    "source_page": "https://commons.wikimedia.org/wiki/File%3ASuntec_Tower_Five.JPG",
+    "source_page_checked": "https://commons.wikimedia.org/",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Suntec_Tower_Five.JPG/1280px-Suntec_Tower_Five.JPG",
+    "verified": {
+     "checked_on": "2026-11-24",
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "view": "Exterior of Suntec City Tower Five, the tower that houses the WeWork common area",
+    "width": 2073
+   },
+   {
+    "alt": "Second exterior view of Suntec City Tower 5, the tower that houses the WeWork common area",
+    "attribution": null,
+    "attribution_note": "The file page credits no author; the recorded licence states attribution is not required.",
+    "checked_on": "2026-11-24",
+    "dimensions_note": "width and height are the Commons original; served_px is the hotlinked thumbnail width",
+    "height": 1600,
+    "hosting": "hotlink",
+    "licence": "Copyrighted free use",
+    "rights_basis": "Copyrighted free use",
+    "served_px": 960,
+    "source_page": "https://commons.wikimedia.org/wiki/File%3ASuntec_City%2C_Tower_5%2C_Dec_05.JPG",
+    "source_page_checked": "https://commons.wikimedia.org/",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Suntec_City%2C_Tower_5%2C_Dec_05.JPG/960px-Suntec_City%2C_Tower_5%2C_Dec_05.JPG",
+    "verified": {
+     "checked_on": "2026-11-24",
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "view": "Second exterior view of Suntec City Tower 5, the tower that houses the WeWork common area",
+    "width": 1200
+   }
+  ],
+  "sg-f6e791a82485": [
+   {
+    "checked_on": "2026-11-24",
+    "commons_searched": "Commons geosearch within 150 m and a file-title/description search on 2026-11-24",
+    "exception": true,
+    "operator_gallery_checked": "https://www.tagvenue.com/sg/rooms/singapore/103888/rnn-conference-centre-at-ces-centre/standard-plus",
+    "reason": "The listing gallery shows the room but states no licence, and no Commons image of CES Centre at 171 Chin Swee Road was found.",
+    "rights_basis": "unestablished",
+    "withheld": true
+   }
+  ]
+ },
+ "withdrawn": [
+  {
+   "checked_on": "2026-11-24",
+   "distance_km": 12.4,
+   "distance_method": "Haversine on the two OSM points; the reviewer's round-3 note said 9.5 km, which is not reproducible from these coordinates, and either figure is a different building.",
+   "licence": "CC BY 2.0",
+   "reason": "Withdrawn 2026-11-24: this file shows the Resorts World Sentosa complex on Sentosa, about 12.4 km from the Genting Hotel Jurong at 2 Town Hall Link — a brand's other property, not the venue building.",
+   "record": "sg-0285e3753fc2",
+   "rights_basis": "CC BY 2.0 (licence cleared; withdrawn on subject, not rights)",
+   "source_page": "https://commons.wikimedia.org/wiki/File%3AResorts_World_Sentosa.jpg",
+   "subject_point": "Resorts World Sentosa, 1.2557459/103.8212344 (OSM relation 9574726)",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Resorts_World_Sentosa.jpg/960px-Resorts_World_Sentosa.jpg",
+   "venue_point": "Genting Hotel Jurong, 2 Town Hall Link, 1.3314839/103.7393574 (OSM way 350351315)",
+   "withheld": true
+  },
+  {
+   "checked_on": "2026-11-24",
+   "distance_km": 12.4,
+   "distance_method": "Haversine on the two OSM points; the reviewer's round-3 note said 9.5 km, which is not reproducible from these coordinates, and either figure is a different building.",
+   "licence": "CC BY-SA 2.0",
+   "reason": "Withdrawn 2026-11-24: a 2011 photograph of the Resorts World Sentosa complex on Sentosa, about 12.4 km from the Genting Hotel Jurong at 2 Town Hall Link — a brand's other property, not the venue building.",
+   "record": "sg-0285e3753fc2",
+   "rights_basis": "CC BY-SA 2.0 (licence cleared; withdrawn on subject, not rights)",
+   "source_page": "https://commons.wikimedia.org/wiki/File%3AResorts_World_Sentosa%2C_Singapore_-_20110306.jpg",
+   "subject_point": "Resorts World Sentosa, 1.2557459/103.8212344 (OSM relation 9574726)",
+   "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Resorts_World_Sentosa%2C_Singapore_-_20110306.jpg/960px-Resorts_World_Sentosa%2C_Singapore_-_20110306.jpg",
+   "venue_point": "Genting Hotel Jurong, 2 Town Hall Link, 1.3314839/103.7393574 (OSM way 350351315)",
+   "withheld": true
+  }
+ ]
+}

@@ -1,0 +1,56 @@
+{
+ "checked_on": "2026-11-24",
+ "endpoint": "https://nominatim.openstreetmap.org/search",
+ "lookups": [
+  {
+   "address": "1 St Andrew's Road, Singapore 178957",
+   "asked_venue": "National Gallery Singapore",
+   "checked_on": "2026-11-24",
+   "provider": "OpenStreetMap Nominatim",
+   "query": "1 St Andrew's Road, Singapore 178957",
+   "result": {
+    "display_name": "National Gallery Singapore, 1, Saint Andrew's Road, City Hall, Civic District, Downtown Core, Central Region, Singapore, 178957, Singapore",
+    "importance": 0.3980280368594564,
+    "latitude": 1.2902557,
+    "longitude": 103.8514709,
+    "osm_id": 4759240362,
+    "osm_type": "node"
+   },
+   "status": "matched"
+  },
+  {
+   "address": "80 Bras Basah Road, Singapore 189560",
+   "asked_venue": "Raffles City Convention Centre / Fairmont Singapore",
+   "checked_on": "2026-11-24",
+   "provider": "OpenStreetMap Nominatim",
+   "query": "80 Bras Basah Road, Singapore 189560",
+   "result": {
+    "display_name": "80, Bras Basah Road, City Hall, Civic District, Downtown Core, Central Region, Singapore, 189560, Singapore",
+    "importance": 0.24782860043147328,
+    "latitude": 1.2941133,
+    "longitude": 103.8539484,
+    "osm_id": 172364973,
+    "osm_type": "way"
+   },
+   "status": "matched"
+  },
+  {
+   "address": "11 Eunos Road 8, Singapore 408601",
+   "asked_venue": "Lifelong Learning Institute",
+   "checked_on": "2026-11-24",
+   "provider": "OpenStreetMap Nominatim",
+   "query": "11 Eunos Road 8, Singapore 408601",
+   "result": {
+    "display_name": "The LLibrary, 11, Eunos Road 8, Geylang East, Eunos, Geylang, Central Region, Singapore, 408601, Singapore",
+    "importance": 8.432822156095243e-05,
+    "latitude": 1.3196003,
+    "longitude": 103.8923741,
+    "osm_id": 6347066485,
+    "osm_type": "node"
+   },
+   "status": "matched"
+  }
+ ],
+ "note": "One request per published address, no centroid fallback. The point is derived from the address and is not a surveyed entrance; the raw body for each lookup is kept beside this file in geocode-responses/.",
+ "schema_version": "sg-geocode-log/1"
+}
