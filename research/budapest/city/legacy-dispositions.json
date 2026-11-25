@@ -1,0 +1,282 @@
+{
+ "city_slug": "budapest-hu",
+ "generated_on": "2026-11-24",
+ "note": "Every one of the 21 prior records is dispositioned. The join key is the legacy name; venue_id is the current store id (budapest-<hash>) and legacy_slug is the build-local spec id, so the mapping is machine-usable. A merged row points at the surviving room.",
+ "records": {
+  "A38 Ship — Event spaces (Bistro / Schweppes Terrace / Concert Hall)": {
+   "disposition": "assessed",
+   "legacy_accessed_on": "2026-08-10",
+   "legacy_address": "Petőfi bridge, Buda side, lower quay, 1117 Budapest",
+   "legacy_capacity": 50,
+   "legacy_score": 0.6267,
+   "legacy_slug": "a38",
+   "legacy_source_url": "https://www.a38.hu/en/event-organizing",
+   "legacy_tier_reasons": [],
+   "reason": null,
+   "venue_id": "budapest-5bfa23f179a9"
+  },
+  "Akvárium Klub — Aranyhall Conference Center": {
+   "disposition": "assessed",
+   "legacy_accessed_on": "2026-08-10",
+   "legacy_address": "1051 Budapest, Erzsébet tér 12 (Deák Ferenc tér)",
+   "legacy_capacity": 100,
+   "legacy_score": 0.6017,
+   "legacy_slug": "akvarium-aranyhall",
+   "legacy_source_url": "https://akvariumklub.hu/en/event-venue/",
+   "legacy_tier_reasons": [],
+   "reason": null,
+   "venue_id": "budapest-44cf319bcf45"
+  },
+  "Brody House — Private events & space rental": {
+   "disposition": "dropped_lead",
+   "legacy_accessed_on": "2026-08-10",
+   "legacy_address": "Bródy Sándor utca 10, 1088 Budapest",
+   "legacy_capacity": 0,
+   "legacy_score": null,
+   "legacy_slug": null,
+   "legacy_source_url": "https://www.brody.house/events",
+   "legacy_tier_reasons": [
+    "material verification question(s): capacity",
+    "capacity_comfortable 0 below minimum 40"
+   ],
+   "reason": "Not carried into the store: this 2026-q4 lead was not turned into a record with a 50-seat layout and a rental path in this run; its legacy score and source stay here for the next pass.",
+   "venue_id": null
+  },
+  "Budapest Music Center (BMC) — Corner Hall": {
+   "disposition": "assessed",
+   "legacy_accessed_on": "2026-08-10",
+   "legacy_address": "1093 Budapest, Mátyás utca 8 (BMC House)",
+   "legacy_capacity": 40,
+   "legacy_score": 0.6492,
+   "legacy_slug": "bmc-library",
+   "legacy_source_url": "https://bmc.hu/en/about-us",
+   "legacy_tier_reasons": [],
+   "reason": null,
+   "venue_id": "budapest-e7d4f366198b"
+  },
+  "Create.26 — Event space (South hall)": {
+   "disposition": "assessed",
+   "legacy_accessed_on": "2026-08-10",
+   "legacy_address": "1065 Budapest, Nagymező utca 26",
+   "legacy_capacity": 50,
+   "legacy_score": 0.7767,
+   "legacy_slug": "create26-south",
+   "legacy_source_url": "https://create26.hu/en/event-space/",
+   "legacy_tier_reasons": [],
+   "reason": null,
+   "venue_id": "budapest-6928952c9fb8"
+  },
+  "Danubius Hotel Hungaria City Center — Conference & event rooms": {
+   "disposition": "assessed",
+   "legacy_accessed_on": "2026-08-10",
+   "legacy_address": "Rákóczi út 90, 1074 Budapest",
+   "legacy_capacity": 60,
+   "legacy_score": 0.5342,
+   "legacy_slug": "hungaria-imperial",
+   "legacy_source_url": "https://www.danubiushotels.com/en/our-hotels-budapest/hotel-hungaria-city-center/events-and-meetings",
+   "legacy_tier_reasons": [],
+   "reason": null,
+   "venue_id": "budapest-c52de512f4be"
+  },
+  "Eco Office Budapest — Large Meeting Room": {
+   "disposition": "dropped_lead",
+   "legacy_accessed_on": "2026-08-10",
+   "legacy_address": "Izabella utca 68/b, Terézváros, Budapest (Eco-Office complex)",
+   "legacy_capacity": 14,
+   "legacy_score": null,
+   "legacy_slug": null,
+   "legacy_source_url": "https://eco-office.hu/en/meeting-rooms/",
+   "legacy_tier_reasons": [
+    "material verification question(s): capacity, cost",
+    "capacity_comfortable 14 below minimum 40"
+   ],
+   "reason": "Not carried into the store: this 2026-q4 lead was not turned into a record with a 50-seat layout and a rental path in this run; its legacy score and source stay here for the next pass.",
+   "venue_id": null
+  },
+  "Impact Hub Budapest — Community & Event space": {
+   "disposition": "assessed",
+   "legacy_accessed_on": "2026-08-10",
+   "legacy_address": "1131 Budapest, Babér utca 1-5 (\"Danubius Ház\")",
+   "legacy_capacity": 50,
+   "legacy_score": 0.6267,
+   "legacy_slug": "impact-hub",
+   "legacy_source_url": "https://budapest.impacthub.net/book-your-event-space/",
+   "legacy_tier_reasons": [],
+   "reason": null,
+   "venue_id": "budapest-c36a48c22e15"
+  },
+  "Impact Hub Budapest — Great Hall": {
+   "disposition": "merged",
+   "legacy_accessed_on": "2026-08-10",
+   "legacy_address": "1131 Budapest, Babér utca 1-5 (\"Danubius Ház\")",
+   "legacy_capacity": 100,
+   "legacy_score": 0.6267,
+   "legacy_slug": "impact-hub",
+   "legacy_source_url": "https://budapest.impacthub.net/book-your-event-space/",
+   "legacy_tier_reasons": [],
+   "reason": null,
+   "venue_id": "budapest-c36a48c22e15"
+  },
+  "KAPTÁR Coworking — Event space": {
+   "disposition": "assessed",
+   "legacy_accessed_on": "2026-08-10",
+   "legacy_address": "4. Révay köz, 1065 Budapest",
+   "legacy_capacity": 50,
+   "legacy_score": 0.735,
+   "legacy_slug": "kaptar",
+   "legacy_source_url": "https://kaptarbudapest.hu/en/meeting-rooms/",
+   "legacy_tier_reasons": [],
+   "reason": null,
+   "venue_id": "budapest-9ee6b0223da6"
+  },
+  "KUBIK Coworking — Meeting rooms": {
+   "disposition": "dropped_lead",
+   "legacy_accessed_on": "2026-08-10",
+   "legacy_address": "1137 Budapest, Jászai Mari tér 5-6",
+   "legacy_capacity": 0,
+   "legacy_score": null,
+   "legacy_slug": null,
+   "legacy_source_url": "https://kubik.hu/en/",
+   "legacy_tier_reasons": [
+    "material verification question(s): capacity",
+    "capacity_comfortable 0 below minimum 40"
+   ],
+   "reason": "Not carried into the store: this 2026-q4 lead was not turned into a record with a 50-seat layout and a rental path in this run; its legacy score and source stay here for the next pass.",
+   "venue_id": null
+  },
+  "Loffice Budapest — 'A' event space (lower ground)": {
+   "disposition": "assessed",
+   "legacy_accessed_on": "2026-08-10",
+   "legacy_address": "Paulay Ede st. 55, 1061 Budapest",
+   "legacy_capacity": 50,
+   "legacy_score": 0.7873,
+   "legacy_slug": "loffice-a",
+   "legacy_source_url": "https://loffice.hu/budapest/en/event-spaces/index.php",
+   "legacy_tier_reasons": [],
+   "reason": null,
+   "venue_id": "budapest-cd55edc18c9f"
+  },
+  "Loffice Budapest — Maxi Event Room": {
+   "disposition": "assessed",
+   "legacy_accessed_on": "2026-08-10",
+   "legacy_address": "Paulay Ede st. 55, 1061 Budapest",
+   "legacy_capacity": 55,
+   "legacy_score": 0.7909,
+   "legacy_slug": "loffice-maxi",
+   "legacy_source_url": "https://loffice.hu/budapest/en/event-spaces/index.php",
+   "legacy_tier_reasons": [],
+   "reason": null,
+   "venue_id": "budapest-44a48c1be946"
+  },
+  "Millenáris — Glass Hall (Building D)": {
+   "disposition": "assessed",
+   "legacy_accessed_on": "2026-08-10",
+   "legacy_address": "1024 Budapest, Kis Rókus utca 16-20",
+   "legacy_capacity": 660,
+   "legacy_score": 0.3217,
+   "legacy_slug": "millenaris-glass",
+   "legacy_source_url": "https://2023.millenaris.hu/en/venue-rental/",
+   "legacy_tier_reasons": [],
+   "reason": null,
+   "venue_id": "budapest-975815ad1f30"
+  },
+  "New York Palace Budapest — Meeting & Event Rooms": {
+   "disposition": "lead",
+   "legacy_accessed_on": "2026-08-10",
+   "legacy_address": "1073 Budapest, Erzsébet körút 9-11",
+   "legacy_capacity": 100,
+   "legacy_score": 0.4592,
+   "legacy_slug": "newyork-cafe",
+   "legacy_source_url": "https://newyorkcafe.hu/en/event-meeting/",
+   "legacy_tier_reasons": [],
+   "reason": null,
+   "venue_id": "budapest-4d2466b9a442"
+  },
+  "Pesti Vigadó — Ceremonial Hall (conference)": {
+   "disposition": "assessed",
+   "legacy_accessed_on": "2026-08-10",
+   "legacy_address": "1051 Budapest, Vigadó tér 2",
+   "legacy_capacity": 0,
+   "legacy_score": null,
+   "legacy_slug": "pesti-vigado-ceremonial",
+   "legacy_source_url": "https://vir.vigado.hu/web/en/135",
+   "legacy_tier_reasons": [
+    "material verification question(s): capacity",
+    "capacity_comfortable 0 below minimum 40"
+   ],
+   "reason": null,
+   "venue_id": "budapest-a272a35c62e9"
+  },
+  "Regus Budapest First Site — Frankfurt room": {
+   "disposition": "dropped_lead",
+   "legacy_accessed_on": "2026-08-10",
+   "legacy_address": "Kossuth Lajos utca 7-9, 1053 Budapest",
+   "legacy_capacity": 0,
+   "legacy_score": null,
+   "legacy_slug": null,
+   "legacy_source_url": "https://book.workin.space/en/hungary/budapest/meeting-room",
+   "legacy_tier_reasons": [
+    "material verification question(s): capacity, cost",
+    "capacity_comfortable 0 below minimum 40"
+   ],
+   "reason": "Not carried into the store: this 2026-q4 lead was not turned into a record with a 50-seat layout and a rental path in this run; its legacy score and source stay here for the next pass.",
+   "venue_id": null
+  },
+  "Signature Budapest — MR 01 (Szervita Square)": {
+   "disposition": "dropped_lead",
+   "legacy_accessed_on": "2026-08-10",
+   "legacy_address": "Szervita square 8, 1052 Budapest",
+   "legacy_capacity": 0,
+   "legacy_score": null,
+   "legacy_slug": null,
+   "legacy_source_url": "https://book.workin.space/en/hungary/budapest/meeting-room",
+   "legacy_tier_reasons": [
+    "material verification question(s): capacity, cost",
+    "capacity_comfortable 0 below minimum 40"
+   ],
+   "reason": "Not carried into the store: this 2026-q4 lead was not turned into a record with a 50-seat layout and a rental path in this run; its legacy score and source stay here for the next pass.",
+   "venue_id": null
+  },
+  "Várkert Bazaar — Screening Room": {
+   "disposition": "assessed",
+   "legacy_accessed_on": "2026-08-10",
+   "legacy_address": "1013 Budapest, Ybl Miklós tér 2-6 (Buda Castle foot)",
+   "legacy_capacity": 80,
+   "legacy_score": 0.5342,
+   "legacy_slug": "varkert-screening",
+   "legacy_source_url": "https://budapestpartyservice.hu/en/rendezvenyhelyszinek/varkert-bazaar/",
+   "legacy_tier_reasons": [],
+   "reason": null,
+   "venue_id": "budapest-e6f758e8cdf3"
+  },
+  "Winehub Budapest — venue (Goldberger factory)": {
+   "disposition": "lead",
+   "legacy_accessed_on": "2026-08-10",
+   "legacy_address": "Óbuda, Budapest (former Goldberger textile factory, Szőlő utca area)",
+   "legacy_capacity": 200,
+   "legacy_score": 0.3342,
+   "legacy_slug": "winehub",
+   "legacy_source_url": "https://winehub.hu/venue-rental/",
+   "legacy_tier_reasons": [],
+   "reason": null,
+   "venue_id": "budapest-4a4c0cb1df8f"
+  },
+  "bee@work ANKER — Conference Room (lower ground, up to 50 people)": {
+   "disposition": "assessed",
+   "legacy_accessed_on": "2026-08-10",
+   "legacy_address": "1061 Budapest, Anker köz 2-4",
+   "legacy_capacity": 50,
+   "legacy_score": 0.6125,
+   "legacy_slug": "beework-anko",
+   "legacy_source_url": "https://www.bee-at-work.hu/en/meeting-room-rental",
+   "legacy_tier_reasons": [],
+   "reason": null,
+   "venue_id": "budapest-c6da2594661f"
+  }
+ },
+ "run_id": "run-20261124-bp-b1",
+ "source": {
+  "path": "/home/joe/repo_dev/coe-events/research/budapest/2026-q4/venues.shortlist.json",
+  "sha256": "4c91db5876f3c8250defc70656dfa3c9f47497444eb13266cb565b711399a63a"
+ }
+}

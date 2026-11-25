@@ -1,0 +1,2863 @@
+{
+ "city_name": "Budapest",
+ "city_registry": {
+  "path": "/home/joe/repo_dev/hermes-skills/plan-event/references/cities.json",
+  "registry_id": "budapest-hu",
+  "sha256": "9b6b5713064ca61b84f4baf38127b0f9e7529a36bfa838e28ef30cdc90c8c7e8",
+  "slug": "budapest-hu"
+ },
+ "city_slug": "budapest-hu",
+ "communities": {},
+ "country": "Hungary",
+ "coverage": [
+  {
+   "accessed_on": "2026-11-24",
+   "end_date": "2027-12-31",
+   "evidence": {
+    "observed_facts": "The full 2027 calendar year is covered by the statutory list. Substitute workdays (áthelyezett munkanapok) are set by ministerial decree under 102. § (5) by 31 October of the preceding year; no 2027 decree was found in the Magyar Közlöny as of 2026-11-24, so no substitute day is claimed. A secondary Hungarian calendar page read on 2026-11-24 states that the 2027 work-order decree had not appeared by 2026-11-12, and that no 2027 public holiday falls on a Tuesday or Thursday, so past practice would leave nothing to relocate; it counts 253 working days. That is a secondary reading, not the decree, so the substitute-day answer stays unknown."
+   },
+   "jurisdiction_id": "HU",
+   "kind": "public_holiday_coverage",
+   "needs_human_verify": true,
+   "source_edition": "Hatályos szöveg, 2026-11-24",
+   "source_locator": "102. § (1) and (5)",
+   "source_title": "Mt. 102. § (2012. évi I. törvény a munka törvénykönyvéről)",
+   "source_url": "https://net.jogtar.hu/jogszabaly?docid=a1200001.tv",
+   "start_date": "2027-01-01",
+   "verification_questions": [
+    "Read the 2027 work-order decree when it is published and add any substitute workday; until then no substitute day is claimed."
+   ],
+   "verified": true
+  }
+ ],
+ "currency": "HUF",
+ "currency_assumptions": [
+  "Native prices are HUF, or EUR where the operator publishes in euros. The USD comparison uses the MNB official mid-rate of 2026-11-24: USD 1 = HUF 337.97; EUR 1 = HUF 369.57.",
+  "A published net price has 27% VAT added for comparability unless the page states that the price is gross; the gross and net figures are kept in price_detail.",
+  "Hourly base USD figures model eight billed hours without implying availability. An hourly estimate is included in programme_costs only for a verified 09:00–17:00 or 09:00–21:00 window. These are budget estimates, never quotes.",
+  "The soft budget is USD 5,000; exactly 5,000 is not over budget and cost is never a gate."
+ ],
+ "event_context": {
+  "attendance": 50,
+  "budget_currency": "USD",
+  "currency": "USD",
+  "duration_hours": 8,
+  "fallback_end_local": "17:00",
+  "local_currency": "HUF",
+  "preferred_duration_hours": 12,
+  "preferred_end_local": "21:00",
+  "soft_budget_usd": 5000.0,
+  "start_local": "09:00"
+ },
+ "events": {},
+ "holiday_registry": {
+  "base_coverage_rows": 69,
+  "base_holiday_rows": 354,
+  "base_jurisdiction_ids": [],
+  "coverage_rows": 1,
+  "holiday_rows": 12,
+  "host_jurisdiction_id": "HU",
+  "jurisdiction_ids": [
+   "HU"
+  ],
+  "path": "/home/joe/repo_dev/hermes-skills/plan-event/references/school_holidays.json",
+  "projection_year": 2027,
+  "sha256": "b823b0e20ea437adc260c905ec6f0ab82da20a95b3f22bd0ccb007011d175840",
+  "supplement": {
+   "coverage_rows": 1,
+   "holiday_rows": 12,
+   "jurisdiction_ids": [
+    "HU"
+   ],
+   "note": "Hungarian public-holiday scope, dated 2026-11-24. The dates are derived from the statutory list in Mt. 102. § (1); Easter-dependent dates use the Gregorian computus. No 2027 substitute-workday decree was found.",
+   "path": "/home/joe/repo_dev/coe-events/research/budapest/city/holiday-supplement.json",
+   "sha256": "c73c16af46a8cef5b2e61bf6e1c125951715476646c2fc0c998a0222ae042a45"
+  }
+ },
+ "holidays": [
+  {
+   "accessed_on": "2026-11-24",
+   "derived": true,
+   "end_date": "2027-01-01",
+   "evidence": {
+    "observed_facts": "The statutory list was read on the day. The 2027 calendar date is derived from that fixed list; Easter-dependent dates use the Gregorian computus (Easter Sunday 2027-03-28). No 2027 work-order decree (áthelyezett munkanap) was published as of 2026-11-24, so substitute days are unknown."
+   },
+   "holiday_name": "Újév",
+   "jurisdiction_id": "HU",
+   "kind": "public_holiday",
+   "name_en": "New Year’s Day",
+   "needs_human_verify": true,
+   "observance": "statutory",
+   "source_edition": "Hatályos szöveg, 2026-11-24",
+   "source_locator": "102. § (1): „Munkaszüneti nap: január 1., március 15., nagypéntek, húsvéthétfő, május 1., pünkösdhétfő, augusztus 20., október 23., november 1. és december 24–26.”",
+   "source_title": "Mt. 102. § (2012. évi I. törvény a munka törvénykönyvéről)",
+   "source_url": "https://net.jogtar.hu/jogszabaly?docid=a1200001.tv",
+   "start_date": "2027-01-01",
+   "verification_questions": [
+    "Confirm the 2027 date and any substitute workday in the annual work-order decree."
+   ],
+   "verified": true
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "derived": true,
+   "end_date": "2027-03-15",
+   "evidence": {
+    "observed_facts": "The statutory list was read on the day. The 2027 calendar date is derived from that fixed list; Easter-dependent dates use the Gregorian computus (Easter Sunday 2027-03-28). No 2027 work-order decree (áthelyezett munkanap) was published as of 2026-11-24, so substitute days are unknown."
+   },
+   "holiday_name": "Nemzeti ünnep",
+   "jurisdiction_id": "HU",
+   "kind": "public_holiday",
+   "name_en": "National Day",
+   "needs_human_verify": true,
+   "observance": "statutory",
+   "source_edition": "Hatályos szöveg, 2026-11-24",
+   "source_locator": "102. § (1): „Munkaszüneti nap: január 1., március 15., nagypéntek, húsvéthétfő, május 1., pünkösdhétfő, augusztus 20., október 23., november 1. és december 24–26.”",
+   "source_title": "Mt. 102. § (2012. évi I. törvény a munka törvénykönyvéről)",
+   "source_url": "https://net.jogtar.hu/jogszabaly?docid=a1200001.tv",
+   "start_date": "2027-03-15",
+   "verification_questions": [
+    "Confirm the 2027 date and any substitute workday in the annual work-order decree."
+   ],
+   "verified": true
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "derived": true,
+   "end_date": "2027-03-26",
+   "evidence": {
+    "observed_facts": "The statutory list was read on the day. The 2027 calendar date is derived from that fixed list; Easter-dependent dates use the Gregorian computus (Easter Sunday 2027-03-28). No 2027 work-order decree (áthelyezett munkanap) was published as of 2026-11-24, so substitute days are unknown."
+   },
+   "holiday_name": "Nagypéntek",
+   "jurisdiction_id": "HU",
+   "kind": "public_holiday",
+   "name_en": "Good Friday",
+   "needs_human_verify": true,
+   "observance": "statutory",
+   "source_edition": "Hatályos szöveg, 2026-11-24",
+   "source_locator": "102. § (1): „Munkaszüneti nap: január 1., március 15., nagypéntek, húsvéthétfő, május 1., pünkösdhétfő, augusztus 20., október 23., november 1. és december 24–26.”",
+   "source_title": "Mt. 102. § (2012. évi I. törvény a munka törvénykönyvéről)",
+   "source_url": "https://net.jogtar.hu/jogszabaly?docid=a1200001.tv",
+   "start_date": "2027-03-26",
+   "verification_questions": [
+    "Confirm the 2027 date and any substitute workday in the annual work-order decree."
+   ],
+   "verified": true
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "derived": true,
+   "end_date": "2027-03-29",
+   "evidence": {
+    "observed_facts": "The statutory list was read on the day. The 2027 calendar date is derived from that fixed list; Easter-dependent dates use the Gregorian computus (Easter Sunday 2027-03-28). No 2027 work-order decree (áthelyezett munkanap) was published as of 2026-11-24, so substitute days are unknown."
+   },
+   "holiday_name": "Húsvéthétfő",
+   "jurisdiction_id": "HU",
+   "kind": "public_holiday",
+   "name_en": "Easter Monday",
+   "needs_human_verify": true,
+   "observance": "statutory",
+   "source_edition": "Hatályos szöveg, 2026-11-24",
+   "source_locator": "102. § (1): „Munkaszüneti nap: január 1., március 15., nagypéntek, húsvéthétfő, május 1., pünkösdhétfő, augusztus 20., október 23., november 1. és december 24–26.”",
+   "source_title": "Mt. 102. § (2012. évi I. törvény a munka törvénykönyvéről)",
+   "source_url": "https://net.jogtar.hu/jogszabaly?docid=a1200001.tv",
+   "start_date": "2027-03-29",
+   "verification_questions": [
+    "Confirm the 2027 date and any substitute workday in the annual work-order decree."
+   ],
+   "verified": true
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "derived": true,
+   "end_date": "2027-05-01",
+   "evidence": {
+    "observed_facts": "The statutory list was read on the day. The 2027 calendar date is derived from that fixed list; Easter-dependent dates use the Gregorian computus (Easter Sunday 2027-03-28). No 2027 work-order decree (áthelyezett munkanap) was published as of 2026-11-24, so substitute days are unknown."
+   },
+   "holiday_name": "A munka ünnepe",
+   "jurisdiction_id": "HU",
+   "kind": "public_holiday",
+   "name_en": "Labour Day",
+   "needs_human_verify": true,
+   "observance": "statutory",
+   "source_edition": "Hatályos szöveg, 2026-11-24",
+   "source_locator": "102. § (1): „Munkaszüneti nap: január 1., március 15., nagypéntek, húsvéthétfő, május 1., pünkösdhétfő, augusztus 20., október 23., november 1. és december 24–26.”",
+   "source_title": "Mt. 102. § (2012. évi I. törvény a munka törvénykönyvéről)",
+   "source_url": "https://net.jogtar.hu/jogszabaly?docid=a1200001.tv",
+   "start_date": "2027-05-01",
+   "verification_questions": [
+    "Confirm the 2027 date and any substitute workday in the annual work-order decree."
+   ],
+   "verified": true
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "derived": true,
+   "end_date": "2027-05-17",
+   "evidence": {
+    "observed_facts": "The statutory list was read on the day. The 2027 calendar date is derived from that fixed list; Easter-dependent dates use the Gregorian computus (Easter Sunday 2027-03-28). No 2027 work-order decree (áthelyezett munkanap) was published as of 2026-11-24, so substitute days are unknown."
+   },
+   "holiday_name": "Pünkösdhétfő",
+   "jurisdiction_id": "HU",
+   "kind": "public_holiday",
+   "name_en": "Whit Monday",
+   "needs_human_verify": true,
+   "observance": "statutory",
+   "source_edition": "Hatályos szöveg, 2026-11-24",
+   "source_locator": "102. § (1): „Munkaszüneti nap: január 1., március 15., nagypéntek, húsvéthétfő, május 1., pünkösdhétfő, augusztus 20., október 23., november 1. és december 24–26.”",
+   "source_title": "Mt. 102. § (2012. évi I. törvény a munka törvénykönyvéről)",
+   "source_url": "https://net.jogtar.hu/jogszabaly?docid=a1200001.tv",
+   "start_date": "2027-05-17",
+   "verification_questions": [
+    "Confirm the 2027 date and any substitute workday in the annual work-order decree."
+   ],
+   "verified": true
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "derived": true,
+   "end_date": "2027-08-20",
+   "evidence": {
+    "observed_facts": "The statutory list was read on the day. The 2027 calendar date is derived from that fixed list; Easter-dependent dates use the Gregorian computus (Easter Sunday 2027-03-28). No 2027 work-order decree (áthelyezett munkanap) was published as of 2026-11-24, so substitute days are unknown."
+   },
+   "holiday_name": "Az államalapítás ünnepe",
+   "jurisdiction_id": "HU",
+   "kind": "public_holiday",
+   "name_en": "State Foundation Day",
+   "needs_human_verify": true,
+   "observance": "statutory",
+   "source_edition": "Hatályos szöveg, 2026-11-24",
+   "source_locator": "102. § (1): „Munkaszüneti nap: január 1., március 15., nagypéntek, húsvéthétfő, május 1., pünkösdhétfő, augusztus 20., október 23., november 1. és december 24–26.”",
+   "source_title": "Mt. 102. § (2012. évi I. törvény a munka törvénykönyvéről)",
+   "source_url": "https://net.jogtar.hu/jogszabaly?docid=a1200001.tv",
+   "start_date": "2027-08-20",
+   "verification_questions": [
+    "Confirm the 2027 date and any substitute workday in the annual work-order decree."
+   ],
+   "verified": true
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "derived": true,
+   "end_date": "2027-10-23",
+   "evidence": {
+    "observed_facts": "The statutory list was read on the day. The 2027 calendar date is derived from that fixed list; Easter-dependent dates use the Gregorian computus (Easter Sunday 2027-03-28). No 2027 work-order decree (áthelyezett munkanap) was published as of 2026-11-24, so substitute days are unknown."
+   },
+   "holiday_name": "Nemzeti ünnep",
+   "jurisdiction_id": "HU",
+   "kind": "public_holiday",
+   "name_en": "National Day",
+   "needs_human_verify": true,
+   "observance": "statutory",
+   "source_edition": "Hatályos szöveg, 2026-11-24",
+   "source_locator": "102. § (1): „Munkaszüneti nap: január 1., március 15., nagypéntek, húsvéthétfő, május 1., pünkösdhétfő, augusztus 20., október 23., november 1. és december 24–26.”",
+   "source_title": "Mt. 102. § (2012. évi I. törvény a munka törvénykönyvéről)",
+   "source_url": "https://net.jogtar.hu/jogszabaly?docid=a1200001.tv",
+   "start_date": "2027-10-23",
+   "verification_questions": [
+    "Confirm the 2027 date and any substitute workday in the annual work-order decree."
+   ],
+   "verified": true
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "derived": true,
+   "end_date": "2027-11-01",
+   "evidence": {
+    "observed_facts": "The statutory list was read on the day. The 2027 calendar date is derived from that fixed list; Easter-dependent dates use the Gregorian computus (Easter Sunday 2027-03-28). No 2027 work-order decree (áthelyezett munkanap) was published as of 2026-11-24, so substitute days are unknown."
+   },
+   "holiday_name": "Mindenszentek",
+   "jurisdiction_id": "HU",
+   "kind": "public_holiday",
+   "name_en": "All Saints’ Day",
+   "needs_human_verify": true,
+   "observance": "statutory",
+   "source_edition": "Hatályos szöveg, 2026-11-24",
+   "source_locator": "102. § (1): „Munkaszüneti nap: január 1., március 15., nagypéntek, húsvéthétfő, május 1., pünkösdhétfő, augusztus 20., október 23., november 1. és december 24–26.”",
+   "source_title": "Mt. 102. § (2012. évi I. törvény a munka törvénykönyvéről)",
+   "source_url": "https://net.jogtar.hu/jogszabaly?docid=a1200001.tv",
+   "start_date": "2027-11-01",
+   "verification_questions": [
+    "Confirm the 2027 date and any substitute workday in the annual work-order decree."
+   ],
+   "verified": true
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "derived": true,
+   "end_date": "2027-12-24",
+   "evidence": {
+    "observed_facts": "The statutory list was read on the day. The 2027 calendar date is derived from that fixed list; Easter-dependent dates use the Gregorian computus (Easter Sunday 2027-03-28). No 2027 work-order decree (áthelyezett munkanap) was published as of 2026-11-24, so substitute days are unknown."
+   },
+   "holiday_name": "Szenteste",
+   "jurisdiction_id": "HU",
+   "kind": "public_holiday",
+   "name_en": "Christmas Eve",
+   "needs_human_verify": true,
+   "observance": "statutory",
+   "source_edition": "Hatályos szöveg, 2026-11-24",
+   "source_locator": "102. § (1): „Munkaszüneti nap: január 1., március 15., nagypéntek, húsvéthétfő, május 1., pünkösdhétfő, augusztus 20., október 23., november 1. és december 24–26.”",
+   "source_title": "Mt. 102. § (2012. évi I. törvény a munka törvénykönyvéről)",
+   "source_url": "https://net.jogtar.hu/jogszabaly?docid=a1200001.tv",
+   "start_date": "2027-12-24",
+   "verification_questions": [
+    "Confirm the 2027 date and any substitute workday in the annual work-order decree."
+   ],
+   "verified": true
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "derived": true,
+   "end_date": "2027-12-25",
+   "evidence": {
+    "observed_facts": "The statutory list was read on the day. The 2027 calendar date is derived from that fixed list; Easter-dependent dates use the Gregorian computus (Easter Sunday 2027-03-28). No 2027 work-order decree (áthelyezett munkanap) was published as of 2026-11-24, so substitute days are unknown."
+   },
+   "holiday_name": "Karácsony",
+   "jurisdiction_id": "HU",
+   "kind": "public_holiday",
+   "name_en": "Christmas Day",
+   "needs_human_verify": true,
+   "observance": "statutory",
+   "source_edition": "Hatályos szöveg, 2026-11-24",
+   "source_locator": "102. § (1): „Munkaszüneti nap: január 1., március 15., nagypéntek, húsvéthétfő, május 1., pünkösdhétfő, augusztus 20., október 23., november 1. és december 24–26.”",
+   "source_title": "Mt. 102. § (2012. évi I. törvény a munka törvénykönyvéről)",
+   "source_url": "https://net.jogtar.hu/jogszabaly?docid=a1200001.tv",
+   "start_date": "2027-12-25",
+   "verification_questions": [
+    "Confirm the 2027 date and any substitute workday in the annual work-order decree."
+   ],
+   "verified": true
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "derived": true,
+   "end_date": "2027-12-26",
+   "evidence": {
+    "observed_facts": "The statutory list was read on the day. The 2027 calendar date is derived from that fixed list; Easter-dependent dates use the Gregorian computus (Easter Sunday 2027-03-28). No 2027 work-order decree (áthelyezett munkanap) was published as of 2026-11-24, so substitute days are unknown."
+   },
+   "holiday_name": "Karácsony",
+   "jurisdiction_id": "HU",
+   "kind": "public_holiday",
+   "name_en": "Second Day of Christmas",
+   "needs_human_verify": true,
+   "observance": "statutory",
+   "source_edition": "Hatályos szöveg, 2026-11-24",
+   "source_locator": "102. § (1): „Munkaszüneti nap: január 1., március 15., nagypéntek, húsvéthétfő, május 1., pünkösdhétfő, augusztus 20., október 23., november 1. és december 24–26.”",
+   "source_title": "Mt. 102. § (2012. évi I. törvény a munka törvénykönyvéről)",
+   "source_url": "https://net.jogtar.hu/jogszabaly?docid=a1200001.tv",
+   "start_date": "2027-12-26",
+   "verification_questions": [
+    "Confirm the 2027 date and any substitute workday in the annual work-order decree."
+   ],
+   "verified": true
+  }
+ ],
+ "local_requirements": {
+  "alcohol": {
+   "check_status": "provider_read",
+   "checked_on": "2026-11-24",
+   "language": "hu",
+   "needs_human_verify": true,
+   "quote": "szeszesital alkalmi árusítása esetén az illetékes vámhatósághoz, rendörkapitánysághoz szükséges bejelenteni az árusítás helyét, idejét",
+   "source_locator": "Bejelentési kötelezettség, szeszesital kitétel",
+   "source_title": "Alkalmi árusítás bejelentése — helyi önkormányzati nyomtatvány (Tura)",
+   "source_url": "https://tura.asp.lgov.hu/sites/tura/files/imce/2023-10/alkalmi-arusitas-bejelentese.pdf",
+   "translation_review": {
+    "gloss": "For occasional sale of spirits, the place and time of sale must be notified to the competent customs authority and police department.",
+    "review": "Decision-bearing words (alkalmi árusítás, bejelenteni, vámhatóság, rendőrkapitányság) were read against the Hungarian; the form is a municipal template, so it evidences the notification path rather than a national statute.",
+    "reviewed_on": "2026-11-24"
+   },
+   "value": {
+    "observed_rule": "Occasional sale of alcohol requires a notification to the customs authority and the police, on top of the event organizer's other permits.",
+    "state": "open_question",
+    "unknown": "Whether a private event with free drinks and no sale needs any permit beyond the venue's own licence, and who applies if the venue does not hold one.",
+    "venue_level": "Per-venue alcohol_service claims record only what the venue publishes (in-house bar, exclusive caterer, or unknown)."
+   },
+   "verification_questions": [
+    "Confirm with the venue and the district notary whether free beer at a private 50-person event needs a separate permit."
+   ],
+   "verified_at": "2026-11-24"
+  },
+  "food": {
+   "check_status": "provider_read",
+   "checked_on": "2026-11-24",
+   "language": "hu",
+   "needs_human_verify": true,
+   "quote": "A vendéglátás regisztrációja minden olyan természetes személyt vagy gazdálkodót érint, aki Magyarország területén vendéglátással foglalkozik. A Nébih-hez be kell jelenteni az ügyfélre és a tevékenységre vonatkozó adatokat nyilvántartásba vétel céljából.",
+   "source_locator": "Ügyleírás, regisztrációs kötelezettség",
+   "source_title": "NÉBIH — A vendéglátás regisztrációja (Ügyleírás F0011-S0071-U0004)",
+   "source_url": "https://upr.nebih.gov.hu/ng/ugyintezes/ugykatalogus/ugyleiras/F0011-S0071-U0004",
+   "translation_review": {
+    "gloss": "Registration of catering affects every natural person or business that carries on catering in Hungary; the client and activity data must be reported to NÉBIH for registration.",
+    "review": "Read through the provider's extraction because the NÉBIH portal is a JavaScript app; the sentence is a registration duty, not a permit for a specific event.",
+    "reviewed_on": "2026-11-24"
+   },
+   "value": {
+    "observed_rule": "Catering is a registered food-business activity in Hungary; the operator or caterer must hold the NÉBIH registration.",
+    "state": "open_question",
+    "unknown": "Whether a one-day external caterer needs its own registration at the venue, and how drop-off food is treated.",
+    "venue_level": "Per-venue food_service claims distinguish in-house, exclusive caterer and external catering."
+   },
+   "verification_questions": [
+    "Confirm the caterer's NÉBIH registration and whether the venue accepts external catering for this room."
+   ],
+   "verified_at": "2026-11-24"
+  },
+  "language": {
+   "check_status": "read",
+   "checked_on": "2026-11-24",
+   "language": "hu",
+   "needs_human_verify": false,
+   "quote": "Magyarországon a hivatalos nyelv a magyar.",
+   "source_locator": "H) cikk (1)",
+   "source_title": "Magyarország Alaptörvénye",
+   "source_url": "https://net.jogtar.hu/jogszabaly?docid=A1100425.ATV",
+   "translation_review": {
+    "gloss": "The official language in Hungary is Hungarian.",
+    "review": "Short statutory sentence; the gloss was checked word by word on 2026-11-24.",
+    "reviewed_on": "2026-11-24"
+   },
+   "value": {
+    "observed_rule": "Hungarian is the official language of the state; the law does not require a private, English-language conference to be conducted in Hungarian.",
+    "state": "informational",
+    "venue_level": "Every assessed operator publishes English event pages; staff and AV language capability remains a per-venue question."
+   },
+   "verification_questions": [],
+   "verified_at": "2026-11-24"
+  }
+ },
+ "pending_event_matches": {},
+ "photos": {
+  "budapest-01eb7acf5e9c": [
+   {
+    "alt": "Building photograph of Marriott — Liz 2 from Wikimedia Commons",
+    "alt_basis": "Commons file title and description place it at the venue",
+    "attribution": "Fred Romero from Paris, France",
+    "checked_on": "2026-11-24",
+    "index": 0,
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0",
+    "player_page": "https://commons.wikimedia.org/wiki/File:Budapest_-_Marriott_Hotel_(24564834208).jpg",
+    "rights_basis": "wikimedia-license",
+    "rights_note": "CC BY 2.0 — Fred Romero from Paris, France",
+    "room": "building",
+    "source_page": "https://www.marriott.com/en-us/hotels/budhu-budapest-marriott-hotel/events/",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Budapest_-_Marriott_Hotel_%2824564834208%29.jpg/1920px-Budapest_-_Marriott_Hotel_%2824564834208%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "verified": {
+     "bytes": 540379,
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "withheld": false
+   },
+   {
+    "alt": "Building photograph of Marriott — Liz 2 from Wikimedia Commons",
+    "alt_basis": "Commons file title and description place it at the venue",
+    "attribution": "Fred Romero from Paris, France",
+    "checked_on": "2026-11-24",
+    "index": 1,
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0",
+    "player_page": "https://commons.wikimedia.org/wiki/File:Budapest_-_Marriott_Hotel_(26659561739).jpg",
+    "rights_basis": "wikimedia-license",
+    "rights_note": "CC BY 2.0 — Fred Romero from Paris, France",
+    "room": "building",
+    "source_page": "https://www.marriott.com/en-us/hotels/budhu-budapest-marriott-hotel/events/",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Budapest_-_Marriott_Hotel_%2826659561739%29.jpg/1920px-Budapest_-_Marriott_Hotel_%2826659561739%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "verified": {
+     "bytes": 852823,
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "withheld": false
+   },
+   {
+    "alt": "Building photograph of Marriott — Liz 2 from Wikimedia Commons",
+    "alt_basis": "Commons file title and description place it at the venue",
+    "attribution": "Globetrotter19",
+    "checked_on": "2026-11-24",
+    "index": 2,
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "player_page": "https://commons.wikimedia.org/wiki/File:Budapest_Marriott_Hotel_(S).JPG",
+    "rights_basis": "wikimedia-license",
+    "rights_note": "CC BY-SA 3.0 — Globetrotter19",
+    "room": "building",
+    "source_page": "https://www.marriott.com/en-us/hotels/budhu-budapest-marriott-hotel/events/",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Budapest_Marriott_Hotel_%28S%29.JPG/1920px-Budapest_Marriott_Hotel_%28S%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "verified": {
+     "bytes": 680697,
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "withheld": false
+   },
+   {
+    "alt": "Building photograph of Marriott — Liz 2 from Wikimedia Commons",
+    "alt_basis": "Commons file title and description place it at the venue",
+    "attribution": "VargaA",
+    "checked_on": "2026-11-24",
+    "index": 3,
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "player_page": "https://commons.wikimedia.org/wiki/File:Budapest_Marriott_Hotel_2014_1.jpg",
+    "rights_basis": "wikimedia-license",
+    "rights_note": "CC BY-SA 4.0 — VargaA",
+    "room": "building",
+    "source_page": "https://www.marriott.com/en-us/hotels/budhu-budapest-marriott-hotel/events/",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/Budapest_Marriott_Hotel_2014_1.jpg/1920px-Budapest_Marriott_Hotel_2014_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "verified": {
+     "bytes": 574440,
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "withheld": false
+   },
+   {
+    "alt": "No verifiable operator room photo",
+    "alt_basis": "none",
+    "checked_on": "2026-11-24",
+    "index": 4,
+    "player_page": null,
+    "rights_basis": "none",
+    "rights_note": "No operator gallery image could be matched to this room, so no photo is recorded.",
+    "room": "room",
+    "source_page": "https://www.marriott.com/en-us/hotels/budhu-budapest-marriott-hotel/events/",
+    "url": null,
+    "verified": null,
+    "withheld": true
+   }
+  ],
+  "budapest-1b6df23d8ede": [
+   {
+    "alt": "Building photograph of ELTE Library — Aula from Wikimedia Commons",
+    "alt_basis": "Commons file title and description place it at the venue",
+    "attribution": "Dimitris Kamaras from Athens, Greece",
+    "checked_on": "2026-11-24",
+    "index": 0,
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0",
+    "player_page": "https://commons.wikimedia.org/wiki/File:ELTE_University_Library,_Ferenciek_tere,_Budapest_(33166223483).jpg",
+    "rights_basis": "wikimedia-license",
+    "rights_note": "CC BY 2.0 — Dimitris Kamaras from Athens, Greece",
+    "room": "building",
+    "source_page": "https://library.elte.hu/hu/egyetemi-konyvtar/teremberles",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/ELTE_University_Library%2C_Ferenciek_tere%2C_Budapest_%2833166223483%29.jpg/1920px-ELTE_University_Library%2C_Ferenciek_tere%2C_Budapest_%2833166223483%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "verified": {
+     "bytes": 996249,
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "withheld": false
+   },
+   {
+    "alt": "Building photograph of ELTE Library — Aula from Wikimedia Commons",
+    "alt_basis": "Commons file title and description place it at the venue",
+    "attribution": "Globetrotter19",
+    "checked_on": "2026-11-24",
+    "index": 1,
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "player_page": "https://commons.wikimedia.org/wiki/File:ELTE_University_Library,_Realtanoda_Street_corner,_2016_Budapest.jpg",
+    "rights_basis": "wikimedia-license",
+    "rights_note": "CC BY-SA 3.0 — Globetrotter19",
+    "room": "building",
+    "source_page": "https://library.elte.hu/hu/egyetemi-konyvtar/teremberles",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/b/bc/ELTE_University_Library%2C_Realtanoda_Street_corner%2C_2016_Budapest.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "verified": {
+     "bytes": 1007169,
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "withheld": false
+   },
+   {
+    "alt": "Building photograph of ELTE Library — Aula from Wikimedia Commons",
+    "alt_basis": "Commons file title and description place it at the venue",
+    "attribution": "Globetrotter19",
+    "checked_on": "2026-11-24",
+    "index": 2,
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "player_page": "https://commons.wikimedia.org/wiki/File:ELTE_University_Library,_elements,_2016_Budapest.jpg",
+    "rights_basis": "wikimedia-license",
+    "rights_note": "CC BY-SA 3.0 — Globetrotter19",
+    "room": "building",
+    "source_page": "https://library.elte.hu/hu/egyetemi-konyvtar/teremberles",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/ELTE_University_Library%2C_elements%2C_2016_Budapest.jpg/1920px-ELTE_University_Library%2C_elements%2C_2016_Budapest.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "verified": {
+     "bytes": 851849,
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "withheld": false
+   },
+   {
+    "alt": "Building photograph of ELTE Library — Aula from Wikimedia Commons",
+    "alt_basis": "Commons file title and description place it at the venue",
+    "attribution": "Globetrotter19",
+    "checked_on": "2026-11-24",
+    "index": 3,
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "player_page": "https://commons.wikimedia.org/wiki/File:ELTE_University_Library,_tympanum,_2016_Budapest.jpg",
+    "rights_basis": "wikimedia-license",
+    "rights_note": "CC BY-SA 3.0 — Globetrotter19",
+    "room": "building",
+    "source_page": "https://library.elte.hu/hu/egyetemi-konyvtar/teremberles",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/ELTE_University_Library%2C_tympanum%2C_2016_Budapest.jpg/1920px-ELTE_University_Library%2C_tympanum%2C_2016_Budapest.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "verified": {
+     "bytes": 420515,
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "withheld": false
+   },
+   {
+    "alt": "Operator gallery image",
+    "alt_basis": "operator gallery image; the page does not caption the room",
+    "checked_on": "2026-11-24",
+    "index": 4,
+    "player_page": null,
+    "rights_basis": "unestablished",
+    "rights_note": "Published on the operator page checked; no licence or display permission is stated, so the tile is withheld until the owner confirms.",
+    "room": "room",
+    "source_page": "https://library.elte.hu/hu/egyetemi-konyvtar/teremberles",
+    "url": "https://library.elte.hu/sites/default/files/2024-05/DSC_0318.JPG",
+    "verified": {
+     "bytes": 7220417,
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "withheld": true
+   }
+  ],
+  "budapest-30c5d7a8bda3": [
+   {
+    "alt": "Building photograph of Kempinski — Room Six from Wikimedia Commons",
+    "alt_basis": "Commons file title and description place it at the venue",
+    "attribution": "Random photos 1989",
+    "checked_on": "2026-11-24",
+    "index": 0,
+    "licence": "CC0",
+    "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "player_page": "https://commons.wikimedia.org/wiki/File:Budapest,_Erzs%C3%A9bet_t%C3%A9r_7-8,_Kempinski_Hotel_Corvinus,_kar%C3%A1csonyfa,_2.jpg",
+    "rights_basis": "wikimedia-license",
+    "rights_note": "CC0 — Random photos 1989",
+    "room": "building",
+    "source_page": "https://www.kempinski.com/en/hotel-corvinus-budapest/meetings-events",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Budapest%2C_Erzs%C3%A9bet_t%C3%A9r_7-8%2C_Kempinski_Hotel_Corvinus%2C_kar%C3%A1csonyfa%2C_2.jpg/1920px-Budapest%2C_Erzs%C3%A9bet_t%C3%A9r_7-8%2C_Kempinski_Hotel_Corvinus%2C_kar%C3%A1csonyfa%2C_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "verified": {
+     "bytes": 1403454,
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "withheld": false
+   },
+   {
+    "alt": "Building photograph of Kempinski — Room Six from Wikimedia Commons",
+    "alt_basis": "Commons file title and description place it at the venue",
+    "attribution": "Artemco",
+    "checked_on": "2026-11-24",
+    "index": 1,
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "player_page": "https://commons.wikimedia.org/wiki/File:Kempinski_Hotel_Corvinus.jpg",
+    "rights_basis": "wikimedia-license",
+    "rights_note": "CC BY-SA 4.0 — Artemco",
+    "room": "building",
+    "source_page": "https://www.kempinski.com/en/hotel-corvinus-budapest/meetings-events",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Kempinski_Hotel_Corvinus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "verified": {
+     "bytes": 926418,
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "withheld": false
+   },
+   {
+    "alt": "Building photograph of Kempinski — Room Six from Wikimedia Commons",
+    "alt_basis": "Commons file title and description place it at the venue",
+    "attribution": "Polgár Attila",
+    "checked_on": "2026-11-24",
+    "index": 2,
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "player_page": "https://commons.wikimedia.org/wiki/File:Kempinski_Hotel_Corvinus_-_Budapest.jpg",
+    "rights_basis": "wikimedia-license",
+    "rights_note": "CC BY-SA 3.0 — Polgár Attila",
+    "room": "building",
+    "source_page": "https://www.kempinski.com/en/hotel-corvinus-budapest/meetings-events",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Kempinski_Hotel_Corvinus_-_Budapest.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "verified": {
+     "bytes": 282267,
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "withheld": false
+   },
+   {
+    "alt": "No verifiable operator room photo",
+    "alt_basis": "none",
+    "checked_on": "2026-11-24",
+    "index": 3,
+    "player_page": null,
+    "rights_basis": "none",
+    "rights_note": "No operator gallery image could be matched to this room, so no photo is recorded.",
+    "room": "room",
+    "source_page": "https://www.kempinski.com/en/hotel-corvinus-budapest/meetings-events",
+    "url": null,
+    "verified": null,
+    "withheld": true
+   }
+  ],
+  "budapest-314a719a0879": [
+   {
+    "alt": "No verifiable operator room photo",
+    "alt_basis": "none",
+    "checked_on": "2026-11-24",
+    "index": 0,
+    "player_page": null,
+    "rights_basis": "none",
+    "rights_note": "No operator gallery image could be matched to this room, so no photo is recorded.",
+    "room": "room",
+    "source_page": "https://www.lumen.hu/en/rendezvenyhelyszin",
+    "url": null,
+    "verified": null,
+    "withheld": true
+   }
+  ],
+  "budapest-41fa73cf8959": [
+   {
+    "alt": "No verifiable operator room photo",
+    "alt_basis": "none",
+    "checked_on": "2026-11-24",
+    "index": 0,
+    "player_page": null,
+    "rights_basis": "none",
+    "rights_note": "No operator gallery image could be matched to this room, so no photo is recorded.",
+    "room": "room",
+    "source_page": "https://meety.hu/targyalo/wanatka-terem",
+    "url": null,
+    "verified": null,
+    "withheld": true
+   }
+  ],
+  "budapest-43bbfb9b077d": [
+   {
+    "alt": "No verifiable operator room photo",
+    "alt_basis": "none",
+    "checked_on": "2026-11-24",
+    "index": 0,
+    "player_page": null,
+    "rights_basis": "none",
+    "rights_note": "No operator gallery image could be matched to this room, so no photo is recorded.",
+    "room": "room",
+    "source_page": "https://www.d50.hu/rendezveny",
+    "url": null,
+    "verified": null,
+    "withheld": true
+   }
+  ],
+  "budapest-4490efc855e0": [
+   {
+    "alt": "Building photograph of CEU — Quantum Room from Wikimedia Commons",
+    "alt_basis": "Commons file title and description place it at the venue",
+    "attribution": "Illustratedjc",
+    "checked_on": "2026-11-24",
+    "index": 0,
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "player_page": "https://commons.wikimedia.org/wiki/File:CEU-Atrium.JPG",
+    "rights_basis": "wikimedia-license",
+    "rights_note": "CC BY-SA 3.0 — Illustratedjc",
+    "room": "building",
+    "source_page": "https://spacerental.ceu.edu/",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/CEU-Atrium.JPG/1920px-CEU-Atrium.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "verified": {
+     "bytes": 830360,
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "withheld": false
+   },
+   {
+    "alt": "Building photograph of CEU — Quantum Room from Wikimedia Commons",
+    "alt_basis": "Commons file title and description place it at the venue",
+    "attribution": "Misibacsi at Hungarian Wikipedia",
+    "checked_on": "2026-11-24",
+    "index": 1,
+    "licence": "CC BY-SA 2.5",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/2.5",
+    "player_page": "https://commons.wikimedia.org/wiki/File:CEU_Nador-utca_0337-2009.jpg",
+    "rights_basis": "wikimedia-license",
+    "rights_note": "CC BY-SA 2.5 — Misibacsi at Hungarian Wikipedia",
+    "room": "building",
+    "source_page": "https://spacerental.ceu.edu/",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/6/65/CEU_Nador-utca_0337-2009.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "verified": {
+     "bytes": 89753,
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "withheld": false
+   },
+   {
+    "alt": "Building photograph of CEU — Quantum Room from Wikimedia Commons",
+    "alt_basis": "Commons file title and description place it at the venue",
+    "attribution": "Dezidor",
+    "checked_on": "2026-11-24",
+    "index": 2,
+    "licence": "CC BY 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0",
+    "player_page": "https://commons.wikimedia.org/wiki/File:N%C3%A1dor_Street_9,_CEU_building.jpg",
+    "rights_basis": "wikimedia-license",
+    "rights_note": "CC BY 3.0 — Dezidor",
+    "room": "building",
+    "source_page": "https://spacerental.ceu.edu/",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/N%C3%A1dor_Street_9%2C_CEU_building.jpg/1920px-N%C3%A1dor_Street_9%2C_CEU_building.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "verified": {
+     "bytes": 673087,
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "withheld": false
+   },
+   {
+    "alt": "No verifiable operator room photo",
+    "alt_basis": "none",
+    "checked_on": "2026-11-24",
+    "index": 3,
+    "player_page": null,
+    "rights_basis": "none",
+    "rights_note": "No operator gallery image could be matched to this room, so no photo is recorded.",
+    "room": "room",
+    "source_page": "https://spacerental.ceu.edu/sites/default/files/2025-10/ceu_webmagazin_hun_v2_20251013_compressed.pdf",
+    "url": null,
+    "verified": null,
+    "withheld": true
+   }
+  ],
+  "budapest-44a48c1be946": [
+   {
+    "alt": "No verifiable operator room photo",
+    "alt_basis": "none",
+    "checked_on": "2026-11-24",
+    "index": 0,
+    "player_page": null,
+    "rights_basis": "none",
+    "rights_note": "No operator gallery image could be matched to this room, so no photo is recorded.",
+    "room": "room",
+    "source_page": "https://loffice.hu/budapest/en/event-spaces/index.php",
+    "url": null,
+    "verified": null,
+    "withheld": true
+   }
+  ],
+  "budapest-44cf319bcf45": [
+   {
+    "alt": "Building photograph of Akvárium — Aranyhall from Wikimedia Commons",
+    "alt_basis": "Commons file title and description place it at the venue",
+    "attribution": "Random photos 1989",
+    "checked_on": "2026-11-24",
+    "index": 0,
+    "licence": "CC0",
+    "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "player_page": "https://commons.wikimedia.org/wiki/File:Budapest,_Akv%C3%A1rium_Klub,_Wannabe_Party,_2022.10.30,_11.jpg",
+    "rights_basis": "wikimedia-license",
+    "rights_note": "CC0 — Random photos 1989",
+    "room": "building",
+    "source_page": "https://akvariumklub.hu/en/event-venue/",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Budapest%2C_Akv%C3%A1rium_Klub%2C_Wannabe_Party%2C_2022.10.30%2C_11.jpg/1920px-Budapest%2C_Akv%C3%A1rium_Klub%2C_Wannabe_Party%2C_2022.10.30%2C_11.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "verified": {
+     "bytes": 496725,
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "withheld": false
+   },
+   {
+    "alt": "Building photograph of Akvárium — Aranyhall from Wikimedia Commons",
+    "alt_basis": "Commons file title and description place it at the venue",
+    "attribution": "Random photos 1989",
+    "checked_on": "2026-11-24",
+    "index": 1,
+    "licence": "CC0",
+    "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "player_page": "https://commons.wikimedia.org/wiki/File:Budapest,_Akv%C3%A1rium_Klub,_Wannabe_Party,_2022.10.30,_21.jpg",
+    "rights_basis": "wikimedia-license",
+    "rights_note": "CC0 — Random photos 1989",
+    "room": "building",
+    "source_page": "https://akvariumklub.hu/en/event-venue/",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Budapest%2C_Akv%C3%A1rium_Klub%2C_Wannabe_Party%2C_2022.10.30%2C_21.jpg/1920px-Budapest%2C_Akv%C3%A1rium_Klub%2C_Wannabe_Party%2C_2022.10.30%2C_21.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "verified": {
+     "bytes": 611831,
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "withheld": false
+   },
+   {
+    "alt": "Building photograph of Akvárium — Aranyhall from Wikimedia Commons",
+    "alt_basis": "Commons file title and description place it at the venue",
+    "attribution": "Random photos 1989",
+    "checked_on": "2026-11-24",
+    "index": 2,
+    "licence": "CC0",
+    "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "player_page": "https://commons.wikimedia.org/wiki/File:Budapest,_Akv%C3%A1rium_Klub,_Wannabe_Party,_2022.10.30,_4.jpg",
+    "rights_basis": "wikimedia-license",
+    "rights_note": "CC0 — Random photos 1989",
+    "room": "building",
+    "source_page": "https://akvariumklub.hu/en/event-venue/",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6d/Budapest%2C_Akv%C3%A1rium_Klub%2C_Wannabe_Party%2C_2022.10.30%2C_4.jpg/1920px-Budapest%2C_Akv%C3%A1rium_Klub%2C_Wannabe_Party%2C_2022.10.30%2C_4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "verified": {
+     "bytes": 1266525,
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "withheld": false
+   },
+   {
+    "alt": "Building photograph of Akvárium — Aranyhall from Wikimedia Commons",
+    "alt_basis": "Commons file title and description place it at the venue",
+    "attribution": "Christo",
+    "checked_on": "2026-11-24",
+    "index": 3,
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "player_page": "https://commons.wikimedia.org/wiki/File:Budapest,_De%C3%A1k_Ferenc_t%C3%A9r,_Akv%C3%A1rium_Klub,_2.jpg",
+    "rights_basis": "wikimedia-license",
+    "rights_note": "CC BY-SA 4.0 — Christo",
+    "room": "building",
+    "source_page": "https://akvariumklub.hu/en/event-venue/",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/Budapest%2C_De%C3%A1k_Ferenc_t%C3%A9r%2C_Akv%C3%A1rium_Klub%2C_2.jpg/1920px-Budapest%2C_De%C3%A1k_Ferenc_t%C3%A9r%2C_Akv%C3%A1rium_Klub%2C_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "verified": {
+     "bytes": 522636,
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "withheld": false
+   },
+   {
+    "alt": "Operator gallery image",
+    "alt_basis": "operator gallery image; the page does not caption the room",
+    "checked_on": "2026-11-24",
+    "index": 4,
+    "player_page": null,
+    "rights_basis": "unestablished",
+    "rights_note": "Published on the operator page checked; no licence or display permission is stated, so the tile is withheld until the owner confirms.",
+    "room": "room",
+    "source_page": "https://akvariumklub.hu/en/event-venue/",
+    "url": "https://akvariumklub.hu/wp-content/uploads/2018/07/IMG_0385_web-1024x347.jpg",
+    "verified": {
+     "bytes": 82490,
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "withheld": true
+   }
+  ],
+  "budapest-4a4c0cb1df8f": [
+   {
+    "alt": "Operator gallery image",
+    "alt_basis": "operator gallery image; the page does not caption the room",
+    "checked_on": "2026-11-24",
+    "index": 0,
+    "player_page": null,
+    "rights_basis": "unestablished",
+    "rights_note": "Published on the operator page checked; no licence or display permission is stated, so the tile is withheld until the owner confirms.",
+    "room": "room",
+    "source_page": "https://winehub.hu/en/venue-rental/",
+    "url": "https://winehub.hu/app/themes/winehub/resources/images/ures-palack.png",
+    "verified": {
+     "bytes": 13573,
+     "content_type": "image/png",
+     "status": 200
+    },
+    "withheld": true
+   }
+  ],
+  "budapest-4d2466b9a442": [
+   {
+    "alt": "Building photograph of New York Palace — New York Café from Wikimedia Commons",
+    "alt_basis": "Commons file title and description place it at the venue",
+    "attribution": "Fred Romero from Paris, France",
+    "checked_on": "2026-11-24",
+    "index": 0,
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0",
+    "player_page": "https://commons.wikimedia.org/wiki/File:Budapest_-_New_York-palota_(24609968838).jpg",
+    "rights_basis": "wikimedia-license",
+    "rights_note": "CC BY 2.0 — Fred Romero from Paris, France",
+    "room": "building",
+    "source_page": "https://newyorkpalota.hu/en/event-venues/",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/Budapest_-_New_York-palota_%2824609968838%29.jpg/1920px-Budapest_-_New_York-palota_%2824609968838%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "verified": {
+     "bytes": 578035,
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "withheld": false
+   },
+   {
+    "alt": "Building photograph of New York Palace — New York Café from Wikimedia Commons",
+    "alt_basis": "Commons file title and description place it at the venue",
+    "attribution": "Yelkrokoyade",
+    "checked_on": "2026-11-24",
+    "index": 1,
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "player_page": "https://commons.wikimedia.org/wiki/File:D%C3%A9tail_fa%C3%A7ade_New_York_Palace_Budapest.jpg",
+    "rights_basis": "wikimedia-license",
+    "rights_note": "CC BY-SA 3.0 — Yelkrokoyade",
+    "room": "building",
+    "source_page": "https://newyorkpalota.hu/en/event-venues/",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/D%C3%A9tail_fa%C3%A7ade_New_York_Palace_Budapest.jpg/1920px-D%C3%A9tail_fa%C3%A7ade_New_York_Palace_Budapest.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "verified": {
+     "bytes": 1189274,
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "withheld": false
+   },
+   {
+    "alt": "Building photograph of New York Palace — New York Café from Wikimedia Commons",
+    "alt_basis": "Commons file title and description place it at the venue",
+    "attribution": "Yelkrokoyade",
+    "checked_on": "2026-11-24",
+    "index": 2,
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "player_page": "https://commons.wikimedia.org/wiki/File:New_York_Palace_Budapest._Historical_emblem_of_New_York_Life_Insurance_Company.jpg",
+    "rights_basis": "wikimedia-license",
+    "rights_note": "CC BY-SA 3.0 — Yelkrokoyade",
+    "room": "building",
+    "source_page": "https://newyorkpalota.hu/en/event-venues/",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/New_York_Palace_Budapest._Historical_emblem_of_New_York_Life_Insurance_Company.jpg/1920px-New_York_Palace_Budapest._Historical_emblem_of_New_York_Life_Insurance_Company.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "verified": {
+     "bytes": 343250,
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "withheld": false
+   },
+   {
+    "alt": "Operator gallery image",
+    "alt_basis": "operator gallery image; the page does not caption the room",
+    "checked_on": "2026-11-24",
+    "index": 3,
+    "player_page": null,
+    "rights_basis": "unestablished",
+    "rights_note": "Published on the operator page checked; no licence or display permission is stated, so the tile is withheld until the owner confirms.",
+    "room": "room",
+    "source_page": "https://newyorkpalota.hu/en/event-venues/",
+    "url": "https://newyorkpalota.hu/wp-content/uploads/2026/08/new-york-palota-rendezvenytermek-inspiralo-premium-kornyezet-1.webp",
+    "verified": {
+     "bytes": 281904,
+     "content_type": "image/webp",
+     "status": 200
+    },
+    "withheld": true
+   }
+  ],
+  "budapest-5bfa23f179a9": [
+   {
+    "alt": "Building photograph of A38 Ship from Wikimedia Commons",
+    "alt_basis": "Commons file title and description place it at the venue",
+    "attribution": "Rakás",
+    "checked_on": "2026-11-24",
+    "index": 0,
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "player_page": "https://commons.wikimedia.org/wiki/File:A38_(ship,_Budapest).JPG",
+    "rights_basis": "wikimedia-license",
+    "rights_note": "CC BY-SA 4.0 — Rakás",
+    "room": "building",
+    "source_page": "https://www.a38.hu/en/event-organizing",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ae/A38_%28ship%2C_Budapest%29.JPG/1920px-A38_%28ship%2C_Budapest%29.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "verified": {
+     "bytes": 514942,
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "withheld": false
+   },
+   {
+    "alt": "Building photograph of A38 Ship from Wikimedia Commons",
+    "alt_basis": "Commons file title and description place it at the venue",
+    "attribution": "Texaner",
+    "checked_on": "2026-11-24",
+    "index": 1,
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "player_page": "https://commons.wikimedia.org/wiki/File:A38_1.jpg",
+    "rights_basis": "wikimedia-license",
+    "rights_note": "CC BY-SA 3.0 — Texaner",
+    "room": "building",
+    "source_page": "https://www.a38.hu/en/event-organizing",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/A38_1.jpg/1920px-A38_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "verified": {
+     "bytes": 688350,
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "withheld": false
+   },
+   {
+    "alt": "Building photograph of A38 Ship from Wikimedia Commons",
+    "alt_basis": "Commons file title and description place it at the venue",
+    "attribution": "Texaner",
+    "checked_on": "2026-11-24",
+    "index": 2,
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "player_page": "https://commons.wikimedia.org/wiki/File:A38_3.jpg",
+    "rights_basis": "wikimedia-license",
+    "rights_note": "CC BY-SA 3.0 — Texaner",
+    "room": "building",
+    "source_page": "https://www.a38.hu/en/event-organizing",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/A38_3.jpg/1920px-A38_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "verified": {
+     "bytes": 630649,
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "withheld": false
+   },
+   {
+    "alt": "Building photograph of A38 Ship from Wikimedia Commons",
+    "alt_basis": "Commons file title and description place it at the venue",
+    "attribution": "Kulturharc",
+    "checked_on": "2026-11-24",
+    "index": 3,
+    "licence": "CC BY 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by/3.0",
+    "player_page": "https://commons.wikimedia.org/wiki/File:A38_total01.JPG",
+    "rights_basis": "wikimedia-license",
+    "rights_note": "CC BY 3.0 — Kulturharc",
+    "room": "building",
+    "source_page": "https://www.a38.hu/en/event-organizing",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/A38_total01.JPG/1920px-A38_total01.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "verified": {
+     "bytes": 727232,
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "withheld": false
+   },
+   {
+    "alt": "Operator gallery image",
+    "alt_basis": "operator gallery image; the page does not caption the room",
+    "checked_on": "2026-11-24",
+    "index": 4,
+    "player_page": null,
+    "rights_basis": "unestablished",
+    "rights_note": "Published on the operator page checked; no licence or display permission is stated, so the tile is withheld until the owner confirms.",
+    "room": "room",
+    "source_page": "https://www.a38.hu/en/event-organizing",
+    "url": "https://www.a38.hu/storage/app/uploads/public/6a7/31c/d5e/6a731cd5e8e12831463696.png",
+    "verified": {
+     "bytes": 14787,
+     "content_type": "image/png",
+     "status": 200
+    },
+    "withheld": true
+   }
+  ],
+  "budapest-6928952c9fb8": [
+   {
+    "alt": "Operator gallery image",
+    "alt_basis": "operator gallery image; the page does not caption the room",
+    "checked_on": "2026-11-24",
+    "index": 0,
+    "player_page": null,
+    "rights_basis": "unestablished",
+    "rights_note": "Published on the operator page checked; no licence or display permission is stated, so the tile is withheld until the owner confirms.",
+    "room": "room",
+    "source_page": "https://create26.hu/en/event-space/",
+    "url": "https://create26.hu/wp-content/uploads/2026/11/create26_rendezvenyterem_2_hd-scaled.jpg",
+    "verified": {
+     "bytes": 632497,
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "withheld": true
+   }
+  ],
+  "budapest-700c267f388f": [
+   {
+    "alt": "No verifiable operator room photo",
+    "alt_basis": "none",
+    "checked_on": "2026-11-24",
+    "index": 0,
+    "player_page": null,
+    "rights_basis": "none",
+    "rights_note": "No operator gallery image could be matched to this room, so no photo is recorded.",
+    "room": "room",
+    "source_page": "https://en.corvinapartyservice.hu/event-venues",
+    "url": null,
+    "verified": null,
+    "withheld": true
+   }
+  ],
+  "budapest-8b35c81e31cd": [
+   {
+    "alt": "Building photograph of Bálna — Báthory Room from Wikimedia Commons",
+    "alt_basis": "Commons file title and description place it at the venue",
+    "attribution": "VargaA",
+    "checked_on": "2026-11-24",
+    "index": 0,
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "player_page": "https://commons.wikimedia.org/wiki/File:Balna_Budapest_2014_2.jpg",
+    "rights_basis": "wikimedia-license",
+    "rights_note": "CC BY-SA 4.0 — VargaA",
+    "room": "building",
+    "source_page": "https://balnabudapest.hu/rendezvenyhelyszin/",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Balna_Budapest_2014_2.jpg/1920px-Balna_Budapest_2014_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "verified": {
+     "bytes": 617165,
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "withheld": false
+   },
+   {
+    "alt": "Building photograph of Bálna — Báthory Room from Wikimedia Commons",
+    "alt_basis": "Commons file title and description place it at the venue",
+    "attribution": "Fred Romero from Paris, France",
+    "checked_on": "2026-11-24",
+    "index": 1,
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0",
+    "player_page": "https://commons.wikimedia.org/wiki/File:Budapest_-_B%C3%A1lna_Budapest_(1).jpg",
+    "rights_basis": "wikimedia-license",
+    "rights_note": "CC BY 2.0 — Fred Romero from Paris, France",
+    "room": "building",
+    "source_page": "https://balnabudapest.hu/rendezvenyhelyszin/",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Budapest_-_B%C3%A1lna_Budapest_%281%29.jpg/1920px-Budapest_-_B%C3%A1lna_Budapest_%281%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "verified": {
+     "bytes": 744296,
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "withheld": false
+   },
+   {
+    "alt": "Building photograph of Bálna — Báthory Room from Wikimedia Commons",
+    "alt_basis": "Commons file title and description place it at the venue",
+    "attribution": "Fred Romero from Paris, France",
+    "checked_on": "2026-11-24",
+    "index": 2,
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0",
+    "player_page": "https://commons.wikimedia.org/wiki/File:Budapest_-_B%C3%A1lna_Budapest_(2).jpg",
+    "rights_basis": "wikimedia-license",
+    "rights_note": "CC BY 2.0 — Fred Romero from Paris, France",
+    "room": "building",
+    "source_page": "https://balnabudapest.hu/rendezvenyhelyszin/",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Budapest_-_B%C3%A1lna_Budapest_%282%29.jpg/1920px-Budapest_-_B%C3%A1lna_Budapest_%282%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "verified": {
+     "bytes": 841064,
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "withheld": false
+   },
+   {
+    "alt": "Building photograph of Bálna — Báthory Room from Wikimedia Commons",
+    "alt_basis": "Commons file title and description place it at the venue",
+    "attribution": "VillageHero from Ulm, Germany",
+    "checked_on": "2026-11-24",
+    "index": 3,
+    "licence": "CC BY-SA 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "player_page": "https://commons.wikimedia.org/wiki/File:B%C3%A1lna_Budapest_(17731078942).jpg",
+    "rights_basis": "wikimedia-license",
+    "rights_note": "CC BY-SA 2.0 — VillageHero from Ulm, Germany",
+    "room": "building",
+    "source_page": "https://balnabudapest.hu/rendezvenyhelyszin/",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/B%C3%A1lna_Budapest_%2817731078942%29.jpg/1920px-B%C3%A1lna_Budapest_%2817731078942%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "verified": {
+     "bytes": 722800,
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "withheld": false
+   },
+   {
+    "alt": "No verifiable operator room photo",
+    "alt_basis": "none",
+    "checked_on": "2026-11-24",
+    "index": 4,
+    "player_page": null,
+    "rights_basis": "none",
+    "rights_note": "No operator gallery image could be matched to this room, so no photo is recorded.",
+    "room": "room",
+    "source_page": "https://balnabudapest.hu/rendezvenyhelyszin/",
+    "url": null,
+    "verified": null,
+    "withheld": true
+   }
+  ],
+  "budapest-9334070f070e": [
+   {
+    "alt": "No verifiable operator room photo",
+    "alt_basis": "none",
+    "checked_on": "2026-11-24",
+    "index": 0,
+    "player_page": null,
+    "rights_basis": "none",
+    "rights_note": "No operator gallery image could be matched to this room, so no photo is recorded.",
+    "room": "room",
+    "source_page": "https://continentalhotelbudapest.com/en/events",
+    "url": null,
+    "verified": null,
+    "withheld": true
+   }
+  ],
+  "budapest-975815ad1f30": [
+   {
+    "alt": "Building photograph of Millenáris — Glass Hall from Wikimedia Commons",
+    "alt_basis": "Commons file title and description place it at the venue",
+    "attribution": "Christo",
+    "checked_on": "2026-11-24",
+    "index": 0,
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "player_page": "https://commons.wikimedia.org/wiki/File:Budapest,_Millen%C3%A1ris_park.jpg",
+    "rights_basis": "wikimedia-license",
+    "rights_note": "CC BY-SA 4.0 — Christo",
+    "room": "building",
+    "source_page": "https://2023.millenaris.hu/en/venue-rental/",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Budapest%2C_Millen%C3%A1ris_park.jpg/1920px-Budapest%2C_Millen%C3%A1ris_park.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "verified": {
+     "bytes": 587146,
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "withheld": false
+   },
+   {
+    "alt": "Building photograph of Millenáris — Glass Hall from Wikimedia Commons",
+    "alt_basis": "Commons file title and description place it at the venue",
+    "attribution": "Elekes Andor",
+    "checked_on": "2026-11-24",
+    "index": 1,
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0",
+    "player_page": "https://commons.wikimedia.org/wiki/File:Millen%C3%A1ris_(14).jpg",
+    "rights_basis": "wikimedia-license",
+    "rights_note": "CC BY 4.0 — Elekes Andor",
+    "room": "building",
+    "source_page": "https://2023.millenaris.hu/en/venue-rental/",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Millen%C3%A1ris_%2814%29.jpg/1920px-Millen%C3%A1ris_%2814%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "verified": {
+     "bytes": 666881,
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "withheld": false
+   },
+   {
+    "alt": "Building photograph of Millenáris — Glass Hall from Wikimedia Commons",
+    "alt_basis": "Commons file title and description place it at the venue",
+    "attribution": "Elekes Andor",
+    "checked_on": "2026-11-24",
+    "index": 2,
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0",
+    "player_page": "https://commons.wikimedia.org/wiki/File:Millen%C3%A1ris_(60).jpg",
+    "rights_basis": "wikimedia-license",
+    "rights_note": "CC BY 4.0 — Elekes Andor",
+    "room": "building",
+    "source_page": "https://2023.millenaris.hu/en/venue-rental/",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Millen%C3%A1ris_%2860%29.jpg/1920px-Millen%C3%A1ris_%2860%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "verified": {
+     "bytes": 879981,
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "withheld": false
+   },
+   {
+    "alt": "Building photograph of Millenáris — Glass Hall from Wikimedia Commons",
+    "alt_basis": "Commons file title and description place it at the venue",
+    "attribution": "Elekes Andor",
+    "checked_on": "2026-11-24",
+    "index": 3,
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0",
+    "player_page": "https://commons.wikimedia.org/wiki/File:Millen%C3%A1ris_F%C3%BCgg%C5%91kert,_Budapest_2024_(86).jpg",
+    "rights_basis": "wikimedia-license",
+    "rights_note": "CC BY 4.0 — Elekes Andor",
+    "room": "building",
+    "source_page": "https://2023.millenaris.hu/en/venue-rental/",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/ca/Millen%C3%A1ris_F%C3%BCgg%C5%91kert%2C_Budapest_2024_%2886%29.jpg/1920px-Millen%C3%A1ris_F%C3%BCgg%C5%91kert%2C_Budapest_2024_%2886%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "verified": {
+     "bytes": 646030,
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "withheld": false
+   },
+   {
+    "alt": "No verifiable operator room photo",
+    "alt_basis": "none",
+    "checked_on": "2026-11-24",
+    "index": 4,
+    "player_page": null,
+    "rights_basis": "none",
+    "rights_note": "No operator gallery image could be matched to this room, so no photo is recorded.",
+    "room": "room",
+    "source_page": "https://2023.millenaris.hu/en/venue-rental/",
+    "url": null,
+    "verified": null,
+    "withheld": true
+   }
+  ],
+  "budapest-993fb1d758f9": [
+   {
+    "alt": "Operator gallery image",
+    "alt_basis": "operator gallery image; the page does not caption the room",
+    "checked_on": "2026-11-24",
+    "index": 0,
+    "player_page": null,
+    "rights_basis": "unestablished",
+    "rights_note": "Published on the operator page checked; no licence or display permission is stated, so the tile is withheld until the owner confirms.",
+    "room": "room",
+    "source_page": "https://teremberlesbudapest.hu/konferenciaterem/",
+    "url": "https://teremberlesbudapest.hu/wp-content/uploads/2026/04/konferencia.jpeg",
+    "verified": {
+     "bytes": 839147,
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "withheld": true
+   }
+  ],
+  "budapest-9ee6b0223da6": [
+   {
+    "alt": "Operator gallery image",
+    "alt_basis": "operator gallery image; the page does not caption the room",
+    "checked_on": "2026-11-24",
+    "index": 0,
+    "player_page": null,
+    "rights_basis": "unestablished",
+    "rights_note": "Published on the operator page checked; no licence or display permission is stated, so the tile is withheld until the owner confirms.",
+    "room": "room",
+    "source_page": "https://kaptarbudapest.hu/en/meeting-rooms/",
+    "url": "https://kaptarbudapest.hu/wp-content/uploads/2019/05/targyalo_a.jpg",
+    "verified": {
+     "bytes": 124412,
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "withheld": true
+   }
+  ],
+  "budapest-a272a35c62e9": [
+   {
+    "alt": "Building photograph of Pesti Vigadó — Ceremonial Hall from Wikimedia Commons",
+    "alt_basis": "Commons file title and description place it at the venue",
+    "attribution": "Fred Romero from Paris, France",
+    "checked_on": "2026-11-24",
+    "index": 0,
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0",
+    "player_page": "https://commons.wikimedia.org/wiki/File:Budapest_-_Pesti_Vigad%C3%B3_(26659556689).jpg",
+    "rights_basis": "wikimedia-license",
+    "rights_note": "CC BY 2.0 — Fred Romero from Paris, France",
+    "room": "building",
+    "source_page": "https://www.vigado.hu/en/teremberles",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Budapest_-_Pesti_Vigad%C3%B3_%2826659556689%29.jpg/1920px-Budapest_-_Pesti_Vigad%C3%B3_%2826659556689%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "verified": {
+     "bytes": 918474,
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "withheld": false
+   },
+   {
+    "alt": "Building photograph of Pesti Vigadó — Ceremonial Hall from Wikimedia Commons",
+    "alt_basis": "Commons file title and description place it at the venue",
+    "attribution": "Fred Romero from Paris, France",
+    "checked_on": "2026-11-24",
+    "index": 1,
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0",
+    "player_page": "https://commons.wikimedia.org/wiki/File:Budapest_-_Pesti_Vigad%C3%B3_(37721184814).jpg",
+    "rights_basis": "wikimedia-license",
+    "rights_note": "CC BY 2.0 — Fred Romero from Paris, France",
+    "room": "building",
+    "source_page": "https://www.vigado.hu/en/teremberles",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Budapest_-_Pesti_Vigad%C3%B3_%2837721184814%29.jpg/1920px-Budapest_-_Pesti_Vigad%C3%B3_%2837721184814%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "verified": {
+     "bytes": 629100,
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "withheld": false
+   },
+   {
+    "alt": "Building photograph of Pesti Vigadó — Ceremonial Hall from Wikimedia Commons",
+    "alt_basis": "Commons file title and description place it at the venue",
+    "attribution": "Fred Romero from Paris, France",
+    "checked_on": "2026-11-24",
+    "index": 2,
+    "licence": "CC BY 2.0",
+    "licence_url": "https://creativecommons.org/licenses/by/2.0",
+    "player_page": "https://commons.wikimedia.org/wiki/File:Budapest_-_Pesti_Vigad%C3%B3_(38436101821).jpg",
+    "rights_basis": "wikimedia-license",
+    "rights_note": "CC BY 2.0 — Fred Romero from Paris, France",
+    "room": "building",
+    "source_page": "https://www.vigado.hu/en/teremberles",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Budapest_-_Pesti_Vigad%C3%B3_%2838436101821%29.jpg/1920px-Budapest_-_Pesti_Vigad%C3%B3_%2838436101821%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "verified": {
+     "bytes": 814233,
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "withheld": false
+   },
+   {
+    "alt": "Building photograph of Pesti Vigadó — Ceremonial Hall from Wikimedia Commons",
+    "alt_basis": "Commons file title and description place it at the venue",
+    "attribution": "Original uploader was Misibacsi at hu.wikipedia",
+    "checked_on": "2026-11-24",
+    "index": 3,
+    "licence": "Public domain",
+    "licence_url": null,
+    "player_page": "https://commons.wikimedia.org/wiki/File:Pesti_Vigado_P8130129.jpg",
+    "rights_basis": "wikimedia-license",
+    "rights_note": "Public domain — Original uploader was Misibacsi at hu.wikipedia",
+    "room": "building",
+    "source_page": "https://www.vigado.hu/en/teremberles",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Pesti_Vigado_P8130129.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "verified": {
+     "bytes": 361385,
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "withheld": false
+   },
+   {
+    "alt": "No verifiable operator room photo",
+    "alt_basis": "none",
+    "checked_on": "2026-11-24",
+    "index": 4,
+    "player_page": null,
+    "rights_basis": "none",
+    "rights_note": "No operator gallery image could be matched to this room, so no photo is recorded.",
+    "room": "room",
+    "source_page": "https://www.vigado.hu/en/teremberles",
+    "url": null,
+    "verified": null,
+    "withheld": true
+   }
+  ],
+  "budapest-b28855d5e6bc": [
+   {
+    "alt": "Operator gallery image",
+    "alt_basis": "operator gallery image; the page does not caption the room",
+    "checked_on": "2026-11-24",
+    "index": 0,
+    "player_page": null,
+    "rights_basis": "unestablished",
+    "rights_note": "Published on the operator page checked; no licence or display permission is stated, so the tile is withheld until the owner confirms.",
+    "room": "room",
+    "source_page": "https://lexingtonloft.hu/rendezvenyalexingtonban/",
+    "url": "https://lexingtonloft.hu/wp-content/uploads/2022/11/7lexingtonloftrendezvenyhelyszin.jpg",
+    "verified": {
+     "bytes": 78010,
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "withheld": true
+   }
+  ],
+  "budapest-c36a48c22e15": [
+   {
+    "alt": "Operator gallery image",
+    "alt_basis": "operator gallery image; the page does not caption the room",
+    "checked_on": "2026-11-24",
+    "index": 0,
+    "player_page": null,
+    "rights_basis": "unestablished",
+    "rights_note": "Published on the operator page checked; no licence or display permission is stated, so the tile is withheld until the owner confirms.",
+    "room": "room",
+    "source_page": "https://budapest.impacthub.net/book-your-event-space/",
+    "url": "https://budapest.impacthub.net/wp-content/uploads/2024/01/Book-our-space-impacthub-cut.jpg",
+    "verified": {
+     "bytes": 151666,
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "withheld": true
+   }
+  ],
+  "budapest-c52de512f4be": [
+   {
+    "alt": "Operator gallery image",
+    "alt_basis": "operator gallery image; the page does not caption the room",
+    "checked_on": "2026-11-24",
+    "index": 0,
+    "player_page": null,
+    "rights_basis": "unestablished",
+    "rights_note": "Published on the operator page checked; no licence or display permission is stated, so the tile is withheld until the owner confirms.",
+    "room": "room",
+    "source_page": "https://www.danubiushotels.com/en/our-hotels-budapest/hotel-hungaria-city-center/events-and-meetings",
+    "url": "https://www.danubiushotels.com/w/accomms/confplans/17/thumbs/thumb_Hungaria-1.png",
+    "verified": {
+     "bytes": 3324,
+     "content_type": "image/png",
+     "status": 200
+    },
+    "withheld": true
+   }
+  ],
+  "budapest-c6da2594661f": [
+   {
+    "alt": "No verifiable operator room photo",
+    "alt_basis": "none",
+    "checked_on": "2026-11-24",
+    "index": 0,
+    "player_page": null,
+    "rights_basis": "none",
+    "rights_note": "No operator gallery image could be matched to this room, so no photo is recorded.",
+    "room": "room",
+    "source_page": "https://www.bee-at-work.hu/en/meeting-room-rental",
+    "url": null,
+    "verified": null,
+    "withheld": true
+   }
+  ],
+  "budapest-cd55edc18c9f": [
+   {
+    "alt": "No verifiable operator room photo",
+    "alt_basis": "none",
+    "checked_on": "2026-11-24",
+    "index": 0,
+    "player_page": null,
+    "rights_basis": "none",
+    "rights_note": "No operator gallery image could be matched to this room, so no photo is recorded.",
+    "room": "room",
+    "source_page": "https://loffice.hu/budapest/en/event-spaces/index.php",
+    "url": null,
+    "verified": null,
+    "withheld": true
+   }
+  ],
+  "budapest-e6f758e8cdf3": [
+   {
+    "alt": "Building photograph of Várkert Bazaar — Screening Room from Wikimedia Commons",
+    "alt_basis": "Commons file title and description place it at the venue",
+    "attribution": "FOTO:Fortepan — ID 3286: Adományozó/Donor: Unknown.",
+    "checked_on": "2026-11-24",
+    "index": 0,
+    "licence": "Public domain",
+    "licence_url": null,
+    "player_page": "https://commons.wikimedia.org/wiki/File:Budapest_I.,_V%C3%A1rkert_Baz%C3%A1r_(Ybl_Mikl%C3%B3s,_1883.)._Fortepan_3286.jpg",
+    "rights_basis": "wikimedia-license",
+    "rights_note": "Public domain — FOTO:Fortepan — ID 3286: Adományozó/Donor: Unknown.",
+    "room": "building",
+    "source_page": "https://budapestpartyservice.hu/en/rendezvenyhelyszinek/varkert-bazaar/",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/35/Budapest_I.%2C_V%C3%A1rkert_Baz%C3%A1r_%28Ybl_Mikl%C3%B3s%2C_1883.%29._Fortepan_3286.jpg/1920px-Budapest_I.%2C_V%C3%A1rkert_Baz%C3%A1r_%28Ybl_Mikl%C3%B3s%2C_1883.%29._Fortepan_3286.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "verified": {
+     "bytes": 664228,
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "withheld": false
+   },
+   {
+    "alt": "Building photograph of Várkert Bazaar — Screening Room from Wikimedia Commons",
+    "alt_basis": "Commons file title and description place it at the venue",
+    "attribution": "Fuhluf",
+    "checked_on": "2026-11-24",
+    "index": 1,
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "player_page": "https://commons.wikimedia.org/wiki/File:V%C3%A1rkert_Baz%C3%A1r_2022.jpg",
+    "rights_basis": "wikimedia-license",
+    "rights_note": "CC BY-SA 4.0 — Fuhluf",
+    "room": "building",
+    "source_page": "https://budapestpartyservice.hu/en/rendezvenyhelyszinek/varkert-bazaar/",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/V%C3%A1rkert_Baz%C3%A1r_2022.jpg/1920px-V%C3%A1rkert_Baz%C3%A1r_2022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "verified": {
+     "bytes": 605025,
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "withheld": false
+   },
+   {
+    "alt": "Building photograph of Várkert Bazaar — Screening Room from Wikimedia Commons",
+    "alt_basis": "Commons file title and description place it at the venue",
+    "attribution": "Építész 1997",
+    "checked_on": "2026-11-24",
+    "index": 2,
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "player_page": "https://commons.wikimedia.org/wiki/File:V%C3%A1rkert_Baz%C3%A1r_WHB.jpg",
+    "rights_basis": "wikimedia-license",
+    "rights_note": "CC BY-SA 4.0 — Építész 1997",
+    "room": "building",
+    "source_page": "https://budapestpartyservice.hu/en/rendezvenyhelyszinek/varkert-bazaar/",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/V%C3%A1rkert_Baz%C3%A1r_WHB.jpg/1920px-V%C3%A1rkert_Baz%C3%A1r_WHB.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "verified": {
+     "bytes": 563526,
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "withheld": false
+   },
+   {
+    "alt": "Building photograph of Várkert Bazaar — Screening Room from Wikimedia Commons",
+    "alt_basis": "Commons file title and description place it at the venue",
+    "attribution": "Vauia Rex",
+    "checked_on": "2026-11-24",
+    "index": 3,
+    "licence": "CC0",
+    "licence_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "player_page": "https://commons.wikimedia.org/wiki/File:V%C3%A1rkert_baz%C3%A1r_20180211_151328.jpg",
+    "rights_basis": "wikimedia-license",
+    "rights_note": "CC0 — Vauia Rex",
+    "room": "building",
+    "source_page": "https://budapestpartyservice.hu/en/rendezvenyhelyszinek/varkert-bazaar/",
+    "url": "https://upload.wikimedia.org/wikipedia/commons/3/3b/V%C3%A1rkert_baz%C3%A1r_20180211_151328.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+    "verified": {
+     "bytes": 379689,
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "withheld": false
+   },
+   {
+    "alt": "Operator gallery image",
+    "alt_basis": "operator gallery image; the page does not caption the room",
+    "checked_on": "2026-11-24",
+    "index": 4,
+    "player_page": null,
+    "rights_basis": "unestablished",
+    "rights_note": "Published on the operator page checked; no licence or display permission is stated, so the tile is withheld until the owner confirms.",
+    "room": "room",
+    "source_page": "https://budapestpartyservice.hu/en/rendezvenyhelyszinek/varkert-bazaar/",
+    "url": "https://budapestpartyservice.hu/wp-content/uploads/2025/11/varkert-2-1024x683.png",
+    "verified": {
+     "bytes": 1028560,
+     "content_type": "image/png",
+     "status": 200
+    },
+    "withheld": true
+   }
+  ],
+  "budapest-e72b69d22b18": [
+   {
+    "alt": "Building photograph of InterContinental — Panorama II–IV from Wikimedia Commons",
+    "alt_basis": "Commons file title and description place it at the venue",
+    "attribution": "VargaA",
+    "checked_on": "2026-11-24",
+    "index": 0,
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "player_page": "https://commons.wikimedia.org/wiki/File:Hotel_InterContinental_Budapest_2014_1.jpg",
+    "rights_basis": "wikimedia-license",
+    "rights_note": "CC BY-SA 4.0 — VargaA",
+    "room": "building",
+    "source_page": "https://budapest.intercontinental.com/en/meetings-and-events/meeting-planner",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Hotel_InterContinental_Budapest_2014_1.jpg/1920px-Hotel_InterContinental_Budapest_2014_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "verified": {
+     "bytes": 511461,
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "withheld": false
+   },
+   {
+    "alt": "Building photograph of InterContinental — Panorama II–IV from Wikimedia Commons",
+    "alt_basis": "Commons file title and description place it at the venue",
+    "attribution": "VargaA",
+    "checked_on": "2026-11-24",
+    "index": 1,
+    "licence": "CC BY-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "player_page": "https://commons.wikimedia.org/wiki/File:Hotel_InterContinental_Budapest_2014_2.jpg",
+    "rights_basis": "wikimedia-license",
+    "rights_note": "CC BY-SA 4.0 — VargaA",
+    "room": "building",
+    "source_page": "https://budapest.intercontinental.com/en/meetings-and-events/meeting-planner",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/Hotel_InterContinental_Budapest_2014_2.jpg/1920px-Hotel_InterContinental_Budapest_2014_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "verified": {
+     "bytes": 511096,
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "withheld": false
+   },
+   {
+    "alt": "No verifiable operator room photo",
+    "alt_basis": "none",
+    "checked_on": "2026-11-24",
+    "index": 2,
+    "player_page": null,
+    "rights_basis": "none",
+    "rights_note": "No operator gallery image could be matched to this room, so no photo is recorded.",
+    "room": "room",
+    "source_page": "https://budapest.intercontinental.com/en/meetings-and-events/meeting-planner",
+    "url": null,
+    "verified": null,
+    "withheld": true
+   }
+  ],
+  "budapest-e7d4f366198b": [
+   {
+    "alt": "No verifiable operator room photo",
+    "alt_basis": "none",
+    "checked_on": "2026-11-24",
+    "index": 0,
+    "player_page": null,
+    "rights_basis": "none",
+    "rights_note": "No operator gallery image could be matched to this room, so no photo is recorded.",
+    "room": "room",
+    "source_page": "https://bmc.hu/en/about-us",
+    "url": null,
+    "verified": null,
+    "withheld": true
+   }
+  ],
+  "budapest-e8001f10908e": [
+   {
+    "alt": "Building photograph of Hungexpo — Gallery A II/201 from Wikimedia Commons",
+    "alt_basis": "Commons file title and description place it at the venue",
+    "attribution": "Globetrotter19",
+    "checked_on": "2026-11-24",
+    "index": 0,
+    "licence": "CC BY-SA 3.0",
+    "licence_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "player_page": "https://commons.wikimedia.org/wiki/File:Hungexpo,_Hall_25,_2017_Ligettelek.jpg",
+    "rights_basis": "wikimedia-license",
+    "rights_note": "CC BY-SA 3.0 — Globetrotter19",
+    "room": "building",
+    "source_page": "https://hungexpo.hu/en/locations/new-congress-centre-in-hall-c/",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Hungexpo%2C_Hall_25%2C_2017_Ligettelek.jpg/1920px-Hungexpo%2C_Hall_25%2C_2017_Ligettelek.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "verified": {
+     "bytes": 599461,
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "withheld": false
+   },
+   {
+    "alt": "Operator gallery image",
+    "alt_basis": "operator gallery image; the page does not caption the room",
+    "checked_on": "2026-11-24",
+    "index": 1,
+    "player_page": null,
+    "rights_basis": "unestablished",
+    "rights_note": "Published on the operator page checked; no licence or display permission is stated, so the tile is withheld until the owner confirms.",
+    "room": "room",
+    "source_page": "https://hungexpo.hu/en/locations/new-congress-centre-in-hall-c/",
+    "url": "https://hungexpo.hu/wp-content/uploads/Ese_1_day_137-1024x683.jpg",
+    "verified": {
+     "bytes": 204683,
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "withheld": true
+   }
+  ],
+  "budapest-f1084ce9ea42": [
+   {
+    "alt": "Operator gallery image",
+    "alt_basis": "operator gallery image; the page does not caption the room",
+    "checked_on": "2026-11-24",
+    "index": 0,
+    "player_page": null,
+    "rights_basis": "unestablished",
+    "rights_note": "Published on the operator page checked; no licence or display permission is stated, so the tile is withheld until the owner confirms.",
+    "room": "room",
+    "source_page": "https://stiflerbars.hu/en/event-venue/",
+    "url": "https://stiflerbars.hu/wp-content/uploads/2023/07/Stifler-rendezveny-bg-graph-bal.png",
+    "verified": {
+     "bytes": 62899,
+     "content_type": "image/png",
+     "status": 200
+    },
+    "withheld": true
+   }
+  ],
+  "budapest-f3b7c498995a": [
+   {
+    "alt": "Building photograph of Corinthia — Petőfi Room from Wikimedia Commons",
+    "alt_basis": "Commons file title and description place it at the venue",
+    "attribution": "Elekes Andor",
+    "checked_on": "2026-11-24",
+    "index": 0,
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0",
+    "player_page": "https://commons.wikimedia.org/wiki/File:Corinthia_Budapest_(14).jpg",
+    "rights_basis": "wikimedia-license",
+    "rights_note": "CC BY 4.0 — Elekes Andor",
+    "room": "building",
+    "source_page": "https://www.corinthia.com/en-gb/budapest/meetings-and-events/",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Corinthia_Budapest_%2814%29.jpg/1920px-Corinthia_Budapest_%2814%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "verified": {
+     "bytes": 581478,
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "withheld": false
+   },
+   {
+    "alt": "Building photograph of Corinthia — Petőfi Room from Wikimedia Commons",
+    "alt_basis": "Commons file title and description place it at the venue",
+    "attribution": "Elekes Andor",
+    "checked_on": "2026-11-24",
+    "index": 1,
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0",
+    "player_page": "https://commons.wikimedia.org/wiki/File:Corinthia_Budapest_(15).jpg",
+    "rights_basis": "wikimedia-license",
+    "rights_note": "CC BY 4.0 — Elekes Andor",
+    "room": "building",
+    "source_page": "https://www.corinthia.com/en-gb/budapest/meetings-and-events/",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/Corinthia_Budapest_%2815%29.jpg/1920px-Corinthia_Budapest_%2815%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "verified": {
+     "bytes": 527933,
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "withheld": false
+   },
+   {
+    "alt": "Building photograph of Corinthia — Petőfi Room from Wikimedia Commons",
+    "alt_basis": "Commons file title and description place it at the venue",
+    "attribution": "Elekes Andor",
+    "checked_on": "2026-11-24",
+    "index": 2,
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0",
+    "player_page": "https://commons.wikimedia.org/wiki/File:Corinthia_Budapest_(3).jpg",
+    "rights_basis": "wikimedia-license",
+    "rights_note": "CC BY 4.0 — Elekes Andor",
+    "room": "building",
+    "source_page": "https://www.corinthia.com/en-gb/budapest/meetings-and-events/",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4a/Corinthia_Budapest_%283%29.jpg/1920px-Corinthia_Budapest_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "verified": {
+     "bytes": 692789,
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "withheld": false
+   },
+   {
+    "alt": "Building photograph of Corinthia — Petőfi Room from Wikimedia Commons",
+    "alt_basis": "Commons file title and description place it at the venue",
+    "attribution": "Elekes Andor",
+    "checked_on": "2026-11-24",
+    "index": 3,
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0",
+    "player_page": "https://commons.wikimedia.org/wiki/File:Corinthia_Budapest_(6).jpg",
+    "rights_basis": "wikimedia-license",
+    "rights_note": "CC BY 4.0 — Elekes Andor",
+    "room": "building",
+    "source_page": "https://www.corinthia.com/en-gb/budapest/meetings-and-events/",
+    "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Corinthia_Budapest_%286%29.jpg/1920px-Corinthia_Budapest_%286%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "verified": {
+     "bytes": 567381,
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "withheld": false
+   },
+   {
+    "alt": "Operator gallery image",
+    "alt_basis": "operator gallery image; the page does not caption the room",
+    "checked_on": "2026-11-24",
+    "index": 4,
+    "player_page": null,
+    "rights_basis": "unestablished",
+    "rights_note": "Published on the operator page checked; no licence or display permission is stated, so the tile is withheld until the owner confirms.",
+    "room": "room",
+    "source_page": "https://www.corinthia.com/en-gb/budapest/meetings-and-events/",
+    "url": "https://www.corinthia.com/globalassets/hotel-budapest/images/meetings--events/2024/dsc06424.jpg",
+    "verified": {
+     "bytes": 8504411,
+     "content_type": "image/jpeg",
+     "status": 200
+    },
+    "withheld": true
+   }
+  ]
+ },
+ "runs": [
+  {
+   "checked_on": "2026-11-24",
+   "cities_registry": {
+    "path": "/home/joe/repo_dev/hermes-skills/plan-event/references/cities.json",
+    "sha256": "9b6b5713064ca61b84f4baf38127b0f9e7529a36bfa838e28ef30cdc90c8c7e8"
+   },
+   "fx": {
+    "effective_date": "2026-11-24",
+    "pair": "USD/HUF",
+    "rate_huf_per_usd": 337.97,
+    "source": "https://www.mnb.hu/arfolyamok"
+   },
+   "inputs": {
+    "evidence_table": {
+     "path": "/home/joe/repo_dev/coe-events/research/budapest/city/run-bundle.json",
+     "sha256": "6973ad49d735d23c475d039f5f4c78dead12581785f8f7a9db26d171d5a290f1"
+    }
+   },
+   "kind": "research",
+   "legacy_audit": {
+    "assessed": 27,
+    "dispositions": "legacy-dispositions.json",
+    "records": 21
+   },
+   "registry": {
+    "path": "/home/joe/repo_dev/hermes-skills/plan-event/references/school_holidays.json",
+    "sha256": "b823b0e20ea437adc260c905ec6f0ab82da20a95b3f22bd0ccb007011d175840"
+   },
+   "run_id": "run-20261124-bp-b1",
+   "source_schema": "city-run/1",
+   "updated_at": "2026-11-24T21:30:00Z"
+  }
+ ],
+ "schema_version": "city-store/1",
+ "sources_consulted": [
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "provider_read",
+   "checked_on": "2026-11-24",
+   "event_yield": 0,
+   "kind": "mandatory",
+   "lane": "mandatory",
+   "mandatory": true,
+   "note": "Server-rendered payload is JavaScript-only; the index was read through the search provider on 2026-11-24. No Budapest 2027 record surfaced.",
+   "pages_read": 1,
+   "title": "MiraGather main — Budapest alias pass",
+   "url": "https://miragather.com/",
+   "venue_yield": 0
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "provider_read",
+   "checked_on": "2026-11-24",
+   "event_yield": 0,
+   "kind": "mandatory",
+   "lane": "mandatory",
+   "mandatory": true,
+   "note": "JavaScript-only payload; no Budapest side-event record for 2027 through the provider.",
+   "pages_read": 1,
+   "title": "MiraGather side events — Budapest filter",
+   "url": "https://miragather.com/?tab=side",
+   "venue_yield": 0
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "provider_read",
+   "checked_on": "2026-11-24",
+   "event_yield": 0,
+   "kind": "mandatory",
+   "lane": "mandatory",
+   "mandatory": true,
+   "note": "JavaScript-only payload; no Budapest AI record for 2027 through the provider.",
+   "pages_read": 1,
+   "title": "MiraGather AI — Budapest filter",
+   "url": "https://miragather.com/ai",
+   "venue_yield": 0
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "provider_read",
+   "checked_on": "2026-11-24",
+   "event_yield": 0,
+   "kind": "mandatory",
+   "lane": "mandatory",
+   "mandatory": true,
+   "note": "Direct request refused (Cloudflare HTTP 403). The Budapest chapter was read through the search provider's extraction, so this is a provider read and the direct check stays incomplete; no 2027 edition was published.",
+   "pages_read": 1,
+   "title": "AI Tinkerers city directory",
+   "url": "https://aitinkerers.org/all_cities",
+   "venue_yield": 0
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "checked",
+   "checked_on": "2026-11-24",
+   "event_yield": 0,
+   "kind": "mandatory",
+   "lane": "mandatory",
+   "mandatory": true,
+   "note": "Page read 2026-11-24: no upcoming events and no Budapest past entry.",
+   "pages_read": 1,
+   "title": "Luma — Decentralized AI Days past events",
+   "url": "https://luma.com/decentralized_ai_events?period=past",
+   "venue_yield": 0
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "checked",
+   "checked_on": "2026-11-24",
+   "event_yield": 0,
+   "kind": "supplementary",
+   "lane": "events",
+   "mandatory": false,
+   "note": "Eight visible Budapest listings, all November 2026; no 2027 event.",
+   "pages_read": 1,
+   "title": "Luma — Budapest city calendar",
+   "url": "https://luma.com/budapest",
+   "venue_yield": 0
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "checked",
+   "checked_on": "2026-11-24",
+   "event_yield": 0,
+   "kind": "supplementary",
+   "lane": "events",
+   "mandatory": false,
+   "note": "Redirected to eventbrite.com and served the generic discovery page; no Budapest 2027 listing.",
+   "pages_read": 1,
+   "title": "Eventbrite Hungary",
+   "url": "https://www.eventbrite.hu/",
+   "venue_yield": 0
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "checked",
+   "checked_on": "2026-11-24",
+   "event_yield": 0,
+   "kind": "supplementary",
+   "lane": "events",
+   "mandatory": false,
+   "note": "Group events include Budapest ML Meetup and AWS Serverless Budapest; no 2027 conference.",
+   "pages_read": 1,
+   "title": "Meetup — events near Budapest",
+   "url": "https://www.meetup.com/find/?location=hu--Budapest&source=EVENTS",
+   "venue_yield": 0
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "checked",
+   "checked_on": "2026-11-24",
+   "event_yield": 0,
+   "kind": "supplementary",
+   "lane": "platform",
+   "mandatory": false,
+   "note": "Opened 2026-11-24. Home page and the full locations page were read: the market list is AU, CA, IE, SG and US country pages (7 AU, 8 CA, 1 IE, 46 US city pages) plus 70 UK city pages, with no Hungarian city. https://www.tagvenue.com/city/budapest returns the site's own 404 page. Zero Budapest rooms in the pages checked.",
+   "pages_read": 2,
+   "title": "Tagvenue — Budapest market check",
+   "url": "https://www.tagvenue.com/",
+   "venue_yield": 0
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "provider_read",
+   "checked_on": "2026-11-24",
+   "event_yield": 0,
+   "kind": "supplementary",
+   "lane": "platform",
+   "mandatory": false,
+   "note": "Opened 2026-11-24. Direct request refused (HTTP 403 from this host); the reader returned the platform's own page, titled 'Not found | Peerspace', with 'Page not found' and a city nav of US metros only. No Budapest city page or listing exists. Zero rooms; a provider read, not a direct check.",
+   "pages_read": 1,
+   "title": "Peerspace — Budapest city page",
+   "url": "https://www.peerspace.com/venues/budapest",
+   "venue_yield": 0
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "checked",
+   "checked_on": "2026-11-24",
+   "event_yield": 0,
+   "kind": "supplementary",
+   "lane": "platform",
+   "mandatory": false,
+   "note": "Opened 2026-11-24. Home page and a state listing page were read ('Event Venues and Vendors in California | Compare 5,313 Venues'). https://www.eventective.com/hungary/budapest/ returns the site 404, as do /budapest/, /europe/ and /search/?q=Budapest: every path tried for Hungary is a 404 and the listings read are US state pages. Zero rooms.",
+   "pages_read": 2,
+   "title": "Eventective — Budapest market check",
+   "url": "https://www.eventective.com/",
+   "venue_yield": 0
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "blocked",
+   "checked_on": "2026-11-24",
+   "event_yield": 0,
+   "kind": "supplementary",
+   "lane": "platform",
+   "mandatory": false,
+   "note": "Opened 2026-11-24. The collection exists — the provider index returns it as 'Top Venues in Budapest, Hungary' — but every request from this host got HTTP 403 (WAF), directly and through the reader, with Googlebot and Bingbot agents too. Zero pages read; blocked with the status code, not a zero inventory.",
+   "pages_read": 0,
+   "title": "Venue Report — Budapest collection",
+   "url": "https://venuereport.com/find-venues/hungary/budapest",
+   "venue_yield": 0
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "blocked",
+   "checked_on": "2026-11-24",
+   "event_yield": 0,
+   "kind": "supplementary",
+   "lane": "platform",
+   "mandatory": false,
+   "note": "Direct request returned HTTP 403 on 2026-11-24; only the refusal body was captured, so no inventory page counts as read. Blocked, not a zero inventory.",
+   "pages_read": 0,
+   "title": "Szallas.hu — event venue listings",
+   "url": "https://szallas.hu/",
+   "venue_yield": 0
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "blocked",
+   "checked_on": "2026-11-24",
+   "event_yield": 0,
+   "kind": "supplementary",
+   "lane": "platform",
+   "mandatory": false,
+   "note": "The host did not resolve from this research host on 2026-11-24 (DNS failure); blocked, not a zero inventory.",
+   "pages_read": 0,
+   "title": "Berta.hu — event venue listings",
+   "url": "https://berta.hu/",
+   "venue_yield": 0
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "failed",
+   "checked_on": "2026-11-24",
+   "event_yield": 0,
+   "kind": "supplementary",
+   "lane": "platform",
+   "mandatory": false,
+   "note": "Connection timed out (curl status 000 after 60 s) on 2026-11-24; no directory page was captured, so no room is credited to it.",
+   "pages_read": 0,
+   "title": "Rendezvényhelyszín listings",
+   "url": "https://www.rendezvenyhelyszin.hu/",
+   "venue_yield": 0
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "checked",
+   "checked_on": "2026-11-24",
+   "event_yield": 0,
+   "kind": "supplementary",
+   "lane": "hotel",
+   "mandatory": false,
+   "note": "Operator page read for room inventory, the conference entrance and catering; it publishes no price.",
+   "pages_read": 1,
+   "title": "Meetings and Events | Corinthia Budapest",
+   "url": "https://www.corinthia.com/en-gb/budapest/meetings-and-events/",
+   "venue_yield": 1
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "checked",
+   "checked_on": "2026-11-24",
+   "event_yield": 0,
+   "kind": "supplementary",
+   "lane": "hotel",
+   "mandatory": false,
+   "note": "The page that actually publishes the full-day meeting package band: Minimum EUR 98, Maximum EUR 120 per person. A third-party listing, so the derived 50-person total is low confidence.",
+   "pages_read": 1,
+   "title": "Corinthia Budapest — ConferenceHotelGroup hotel-sales listing",
+   "url": "https://conferencehotelgroup.com/hotels/83/Corinthia-Budapest",
+   "venue_yield": 0
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "checked",
+   "checked_on": "2026-11-24",
+   "event_yield": 0,
+   "kind": "supplementary",
+   "lane": "hotel",
+   "mandatory": false,
+   "note": "Capacity chart read; Liz 2 at 70 theatre-style.",
+   "pages_read": 1,
+   "title": "Event & Meeting Spaces | Budapest Marriott Hotel",
+   "url": "https://www.marriott.com/en-us/hotels/budhu-budapest-marriott-hotel/events/",
+   "venue_yield": 1
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "provider_read",
+   "checked_on": "2026-11-24",
+   "event_yield": 0,
+   "kind": "supplementary",
+   "lane": "hotel",
+   "mandatory": false,
+   "note": "Direct fetch returned HTTP 403 on 2026-11-24; the capacity table ('Panorama Room II-IV | 0 | 30 | 24 | 48 | 75 | 48 | 0') was read through the search provider, so this is a provider read and the claim is provider-mediated, not a direct check.",
+   "pages_read": 1,
+   "title": "Meeting planner | InterContinental Budapest",
+   "url": "https://budapest.intercontinental.com/en/meetings-and-events/meeting-planner",
+   "venue_yield": 1
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "checked",
+   "checked_on": "2026-11-24",
+   "event_yield": 0,
+   "kind": "supplementary",
+   "lane": "hotel",
+   "mandatory": false,
+   "note": "Room Six at 130 m² and 54 guests read from the operator page.",
+   "pages_read": 1,
+   "title": "Meetings & Events | Kempinski Hotel Corvinus",
+   "url": "https://www.kempinski.com/en/hotel-corvinus-budapest/meetings-events",
+   "venue_yield": 1
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "checked",
+   "checked_on": "2026-11-24",
+   "event_yield": 0,
+   "kind": "supplementary",
+   "lane": "university",
+   "mandatory": false,
+   "note": "Official rental site plus the saved search-provider excerpt from the Hungarian catalogue: Quantum Room 90 m², 60 seated in rows. No Quantum Room rental hours located.",
+   "pages_read": 2,
+   "title": "CEU Nádor Event Center — space rental",
+   "url": "https://spacerental.ceu.edu/",
+   "venue_yield": 1
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "checked",
+   "checked_on": "2026-11-24",
+   "event_yield": 0,
+   "kind": "supplementary",
+   "lane": "university",
+   "mandatory": false,
+   "note": "Hungarian rental page; the Aula is offered for 50–80 standing receptions, so the seated layout is a question.",
+   "pages_read": 1,
+   "title": "Terembérlés | ELTE University Library",
+   "url": "https://library.elte.hu/hu/egyetemi-konyvtar/teremberles",
+   "venue_yield": 1
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "checked",
+   "checked_on": "2026-11-24",
+   "event_yield": 0,
+   "kind": "supplementary",
+   "lane": "conference_stock",
+   "mandatory": false,
+   "note": "Congress-centre HTML, hosted-events page and the room PDF; gallery rooms of 50 pax.",
+   "pages_read": 3,
+   "title": "Congress Centre — HUNGEXPO",
+   "url": "https://hungexpo.hu/en/locations/new-congress-centre-in-hall-c/",
+   "venue_yield": 1
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "checked",
+   "checked_on": "2026-11-24",
+   "event_yield": 0,
+   "kind": "supplementary",
+   "lane": "conference_stock",
+   "mandatory": false,
+   "note": "Glass Hall 1,600 m² and 660 capacity with 1–7 separable rooms.",
+   "pages_read": 1,
+   "title": "Venue rental — Millenáris",
+   "url": "https://2023.millenaris.hu/en/venue-rental/",
+   "venue_yield": 1
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "checked",
+   "checked_on": "2026-11-24",
+   "event_yield": 0,
+   "kind": "supplementary",
+   "lane": "conference_stock",
+   "mandatory": false,
+   "note": "Agency page with the room table; the operator's own rental page was not found, which is carried as a question.",
+   "pages_read": 1,
+   "title": "Várkert Bazaar — Event Venues",
+   "url": "https://budapestpartyservice.hu/en/rendezvenyhelyszinek/varkert-bazaar/",
+   "venue_yield": 1
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "checked",
+   "checked_on": "2026-11-24",
+   "event_yield": 0,
+   "kind": "supplementary",
+   "lane": "conference_stock",
+   "mandatory": false,
+   "note": "Rental pages read; the Ceremonial Hall is listed for ceremonies and concerts, and the 50-seat layout is a question.",
+   "pages_read": 3,
+   "title": "Pesti Vigadó — venue rental",
+   "url": "https://www.vigado.hu/en/teremberles",
+   "venue_yield": 1
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "checked",
+   "checked_on": "2026-11-24",
+   "event_yield": 0,
+   "kind": "supplementary",
+   "lane": "conference_stock",
+   "mandatory": false,
+   "note": "Báthory terem 103 m², 50 guests; building hours 09:00–20:00 and an exclusive caterer.",
+   "pages_read": 1,
+   "title": "Rendezvényhelyszín — Bálna Honvédelmi Központ",
+   "url": "https://balnabudapest.hu/rendezvenyhelyszin/",
+   "venue_yield": 1
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "not_checked",
+   "checked_on": "2026-11-24",
+   "event_yield": 0,
+   "kind": "supplementary",
+   "lane": "university",
+   "mandatory": false,
+   "note": "Not checked: no BME rental page was captured and no BME hall is assessed. This is a coverage gap, not zero inventory.",
+   "pages_read": 0,
+   "title": "BME — Budapest University of Technology (hall rental)",
+   "url": "https://www.bme.hu/",
+   "venue_yield": 0
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "failed",
+   "checked_on": "2026-11-24",
+   "event_yield": 0,
+   "kind": "supplementary",
+   "lane": "events",
+   "mandatory": false,
+   "note": "The domain returned no response (curl status 000) on 2026-11-24; no 2027 edition could be confirmed.",
+   "pages_read": 1,
+   "title": "Budapest Blockchain Conference",
+   "url": "https://budapestblockchainconference.com/",
+   "venue_yield": 0
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "failed",
+   "checked_on": "2026-11-24",
+   "event_yield": 0,
+   "kind": "supplementary",
+   "lane": "events",
+   "mandatory": false,
+   "note": "HTTP 200 but no readable text in the saved extract; no 2027 edition verified.",
+   "pages_read": 0,
+   "title": "Amuse Conference",
+   "url": "https://amuseconf.com/",
+   "venue_yield": 0
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "failed",
+   "checked_on": "2026-11-24",
+   "event_yield": 0,
+   "kind": "supplementary",
+   "lane": "events",
+   "mandatory": false,
+   "note": "No response (curl status 000) on 2026-11-24; no 2027 edition could be confirmed.",
+   "pages_read": 1,
+   "title": "Smart City Expo Budapest",
+   "url": "https://smartcityexpo.hu/",
+   "venue_yield": 0
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "failed",
+   "checked_on": "2026-11-24",
+   "event_yield": 0,
+   "kind": "supplementary",
+   "lane": "events",
+   "mandatory": false,
+   "note": "No response (curl status 000) on 2026-11-24; no 2027 edition could be confirmed.",
+   "pages_read": 1,
+   "title": "Devconf Budapest",
+   "url": "https://devconf.hu/",
+   "venue_yield": 0
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "checked",
+   "checked_on": "2026-11-24",
+   "event_yield": 1,
+   "kind": "supplementary",
+   "lane": "events",
+   "mandatory": false,
+   "note": "Organiser page: 3–4 June 2027, Hungarian Railway Museum.",
+   "pages_read": 1,
+   "title": "Craft Conference 2027",
+   "url": "https://craft-conf.com/2027/",
+   "venue_yield": 0
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "checked",
+   "checked_on": "2026-11-24",
+   "event_yield": 1,
+   "kind": "supplementary",
+   "lane": "events",
+   "mandatory": false,
+   "note": "Organiser FAQ dates the 2027 edition in Budapest; venue not yet announced. Capture pages-round6.tar.gz, ev-budapest-exchange.txt:3 (raw HTML line 155).",
+   "pages_read": 1,
+   "title": "The Budapest Exchange · 13–14 October 2027",
+   "url": "https://www.thebudapestexchange.com/",
+   "venue_yield": 0
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "checked",
+   "checked_on": "2026-11-24",
+   "event_yield": 1,
+   "kind": "supplementary",
+   "lane": "events",
+   "mandatory": false,
+   "note": "Organiser agenda: 9–10 September 2027, Magyar Zene Háza and Néprajzi Múzeum.",
+   "pages_read": 1,
+   "title": "AI Summit Budapest 2027",
+   "url": "https://aisummitbudapest.hu/agenda",
+   "venue_yield": 0
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "checked",
+   "checked_on": "2026-11-24",
+   "event_yield": 1,
+   "kind": "supplementary",
+   "lane": "events",
+   "mandatory": false,
+   "note": "Organiser-published call: 10–12 May 2027, two in-person days and one online day; a venue listing names the Danubius Hotel Helia.",
+   "pages_read": 2,
+   "title": "Budapest Data+AI Forum 2027 — call for speakers",
+   "url": "https://sessionize.com/budapestdai27/",
+   "venue_yield": 0
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "checked",
+   "checked_on": "2026-11-24",
+   "event_yield": 0,
+   "kind": "supplementary",
+   "lane": "law_holiday_currency",
+   "mandatory": false,
+   "note": "Tax and cash-register duties for event sellers; no separate alcohol-licence sentence was rendered.",
+   "pages_read": 1,
+   "title": "NAV — Árusítás vásárokon, rendezvényeken",
+   "url": "https://nav.gov.hu/Elethelyzetek-adozasa/vallalkozas/Arusitas-vasarokon-rendezvenyeken",
+   "venue_yield": 0
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "provider_read",
+   "checked_on": "2026-11-24",
+   "event_yield": 0,
+   "kind": "supplementary",
+   "lane": "law_holiday_currency",
+   "mandatory": false,
+   "note": "Read through the provider: occasional spirits sale must be notified to the customs authority and the police with place and time.",
+   "pages_read": 1,
+   "title": "Alkalmi árusítás bejelentése — municipal form (Tura)",
+   "url": "https://tura.asp.lgov.hu/sites/tura/files/imce/2023-10/alkalmi-arusitas-bejelentese.pdf",
+   "venue_yield": 0
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "provider_read",
+   "checked_on": "2026-11-24",
+   "event_yield": 0,
+   "kind": "supplementary",
+   "lane": "law_holiday_currency",
+   "mandatory": false,
+   "note": "NÉBIH portal is a JavaScript app; the registration-duty sentence was read through the provider on 2026-11-24.",
+   "pages_read": 1,
+   "title": "NÉBIH — A vendéglátás regisztrációja",
+   "url": "https://upr.nebih.gov.hu/ng/ugyintezes/ugykatalogus/ugyleiras/F0011-S0071-U0004",
+   "venue_yield": 0
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "checked",
+   "checked_on": "2026-11-24",
+   "event_yield": 0,
+   "kind": "supplementary",
+   "lane": "law_holiday_currency",
+   "mandatory": false,
+   "note": "Official mid-rate read 2026-11-24: USD 1 = HUF 337.97; EUR 1 = HUF 369.57.",
+   "pages_read": 1,
+   "title": "MNB — official exchange rates",
+   "url": "https://www.mnb.hu/arfolyamok",
+   "venue_yield": 0
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "checked",
+   "checked_on": "2026-11-24",
+   "event_yield": 0,
+   "kind": "supplementary",
+   "lane": "law_holiday_currency",
+   "mandatory": false,
+   "note": "Secondary Hungarian calendar page read 2026-11-24. Quote: „A 2027-es munkarendről szóló rendelet 2026. november 12-ig nem jelent meg a Magyar Közlönyben.” — the 2027 work-order decree had not appeared in the official gazette by 2026-11-12; it also notes no 2027 holiday falls on a Tuesday or Thursday, so past practice relocates nothing. Secondary, so substitute workdays stay unknown.",
+   "pages_read": 1,
+   "title": "Munkaszüneti napok 2027 — Munkanaptár",
+   "url": "https://munkanaptar.hu/munkaszuneti-napok-2027",
+   "venue_yield": 0
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "blocked",
+   "checked_on": "2026-11-24",
+   "event_yield": 0,
+   "kind": "supplementary",
+   "lane": "law_holiday_currency",
+   "mandatory": false,
+   "note": "Cloudflare challenge (HTTP 403); only the search-result summary was seen, so no claim rests on this page.",
+   "pages_read": 1,
+   "title": "Munkaidő naptár 2027 — HR Portal",
+   "url": "https://www.hrportal.hu/hr/munkaido-naptar-2027-elorelathatolag-nem-lesz-ledolgozos-szombat-es-athelyezett-munkanap-20260923.html",
+   "venue_yield": 0
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "checked",
+   "checked_on": "2026-11-24",
+   "event_yield": 0,
+   "kind": "supplementary",
+   "lane": "law_holiday_currency",
+   "mandatory": false,
+   "note": "§ 102 (1) read for the statutory public-holiday list; the 2027 dates are derived from it.",
+   "pages_read": 1,
+   "title": "2012. évi I. törvény a munka törvénykönyvéről (Mt.)",
+   "url": "https://net.jogtar.hu/jogszabaly?docid=a1200001.tv",
+   "venue_yield": 0
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "checked",
+   "checked_on": "2026-11-24",
+   "event_yield": 1,
+   "kind": "supplementary",
+   "lane": "events",
+   "mandatory": false,
+   "note": "Organiser-linked ticket platform: 'Budapest Startup Safari 2027. March 18. Create 26', 'On 18 March 2027, the Safari returns for its 12th edition'. The page also prints a stray 'March 18., 2026' in the English ticket note while the Hungarian note says 2027; the dated 2027 price ladder is the stronger reading.",
+   "pages_read": 1,
+   "title": "Tixa — Startup Safari Budapest 2027",
+   "url": "https://www.tixa.hu/startupsafari-2027",
+   "venue_yield": 0
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "checked",
+   "checked_on": "2026-11-24",
+   "event_yield": 0,
+   "kind": "supplementary",
+   "lane": "events",
+   "mandatory": false,
+   "note": "Organiser home page read 2026-11-24: the text still serves the 2026 edition (nav 'PROGRAMS'26', speakers 2026), but it prints the venue 'Create26 — Budapest, Király utca 26.' and loads a Safari2027.png banner. No dated 2027 sentence, so the date is not credited to this page.",
+   "pages_read": 1,
+   "title": "Home - Startup Safari 2026",
+   "url": "https://startupsafaribudapest.eu/",
+   "venue_yield": 0
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "checked",
+   "checked_on": "2026-11-24",
+   "event_yield": 1,
+   "kind": "supplementary",
+   "lane": "events",
+   "mandatory": false,
+   "note": "Organiser-published call: 'event date 27 Feb 2027', 'location Budapest, Hungary', website devfest.hu, 'The conference is going to take place in 2027, in Budapest.' Venue not named.",
+   "pages_read": 1,
+   "title": "DevFest Budapest Conference: Call for Speakers @ Sessionize.com",
+   "url": "https://sessionize.com/devfest-budapest-2026-on-campus/",
+   "venue_yield": 0
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "checked",
+   "checked_on": "2026-11-24",
+   "event_yield": 0,
+   "kind": "supplementary",
+   "lane": "events",
+   "mandatory": false,
+   "note": "Returned a 878-byte placeholder page with no event text; no 2027 detail could be read from it.",
+   "pages_read": 1,
+   "title": "devfest.hu",
+   "url": "https://devfest.hu/",
+   "venue_yield": 0
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "checked",
+   "checked_on": "2026-11-24",
+   "event_yield": 4,
+   "kind": "supplementary",
+   "lane": "events",
+   "mandatory": false,
+   "note": "Organiser events page read 2026-11-24: Property Warm Up 2027 (23 Feb, Crowne Plaza), Portfolio Insurance 2027 (18 Mar, InterContinental), Construction Industry 2027 (23 Mar), Corporate Energy Management 2027 (27 Apr, Radisson Blu Béke).",
+   "pages_read": 1,
+   "title": "Portfolio — Conference (English)",
+   "url": "https://www.portfolio.hu/en/events",
+   "venue_yield": 0
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "checked",
+   "checked_on": "2026-11-24",
+   "event_yield": 5,
+   "kind": "supplementary",
+   "lane": "events",
+   "mandatory": false,
+   "note": "Organiser events list read 2026-11-24: the four English rows plus Portfolio Investment Day 2027 (3 Mar, CEU Nádor Event Center). Its Construction Industry row prints 'Marriott Hotel, Budapest', which disagrees with the English page's InterContinental — recorded as a venue conflict.",
+   "pages_read": 1,
+   "title": "Portfolio — Összes konferencia (Hungarian)",
+   "url": "https://www.portfolio.hu/rendezvenyek/osszes",
+   "venue_yield": 0
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "checked",
+   "checked_on": "2026-11-24",
+   "event_yield": 1,
+   "kind": "supplementary",
+   "lane": "events",
+   "mandatory": false,
+   "note": "Organiser conference page: 2027. február 23., Crowne Plaza Budapest.",
+   "pages_read": 1,
+   "title": "Property Warm Up 2027 — Portfolio",
+   "url": "https://www.portfolio.hu/rendezvenyek/konferencia-gazdasag/property-warm-up-2027/2140/attekintes",
+   "venue_yield": 0
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "checked",
+   "checked_on": "2026-11-24",
+   "event_yield": 0,
+   "kind": "supplementary",
+   "lane": "events",
+   "mandatory": false,
+   "note": "HVG seminar index read 2026-11-24: 'Adóváltozások 2027' is dated 2026-12-10 (a 2026 seminar about the 2027 tax rules) and 'Vagyonadó 2026–2027' likewise; no 2027-dated event. Zero 2027 rows.",
+   "pages_read": 1,
+   "title": "HVG Szemináriumok & Konferenciák",
+   "url": "https://konferencia.hvg.hu/",
+   "venue_yield": 0
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "checked",
+   "checked_on": "2026-11-24",
+   "event_yield": 0,
+   "kind": "supplementary",
+   "lane": "events",
+   "mandatory": false,
+   "note": "Advertiser-facing seminar category page; no 2027-dated conference. Zero rows.",
+   "pages_read": 1,
+   "title": "HVG Konferenciák és Szemináriumok — Portfolio",
+   "url": "https://portfolio.hvg.hu/termek-kategoria/szeminarium/",
+   "venue_yield": 0
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "checked",
+   "checked_on": "2026-11-24",
+   "event_yield": 0,
+   "kind": "supplementary",
+   "lane": "events",
+   "mandatory": false,
+   "note": "Organiser calendar read 2026-11-24: 3 upcoming events, all Nov–Dec 2026. No 2027 date.",
+   "pages_read": 1,
+   "title": "Luma — BME Science Campus calendar",
+   "url": "https://luma.com/bme_sc",
+   "venue_yield": 0
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "checked",
+   "checked_on": "2026-11-24",
+   "event_yield": 0,
+   "kind": "supplementary",
+   "lane": "events",
+   "mandatory": false,
+   "note": "Organiser calendar read 2026-11-24: one event, 2026-11-29. No 2027 date.",
+   "pages_read": 1,
+   "title": "Luma — reNode calendar",
+   "url": "https://luma.com/renode",
+   "venue_yield": 0
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "checked",
+   "checked_on": "2026-11-24",
+   "event_yield": 0,
+   "kind": "supplementary",
+   "lane": "events",
+   "mandatory": false,
+   "note": "Organiser calendar read 2026-11-24: 15 events, latest 2027-01-14. The organiser runs social connection events ('F*ck the Small Talk'), outside the professional conference scope, so the 2027 date is logged here and not added to the event list.",
+   "pages_read": 1,
+   "title": "Luma — Epic Llama calendar",
+   "url": "https://luma.com/epicllama",
+   "venue_yield": 0
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "checked",
+   "checked_on": "2026-11-24",
+   "event_yield": 0,
+   "kind": "supplementary",
+   "lane": "events",
+   "mandatory": false,
+   "note": "Organiser calendar read 2026-11-24: one event, 2026-12-04. No 2027 date.",
+   "pages_read": 1,
+   "title": "Luma — PSYNEMA calendar",
+   "url": "https://luma.com/psynema",
+   "venue_yield": 0
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "checked",
+   "checked_on": "2026-11-24",
+   "event_yield": 0,
+   "kind": "supplementary",
+   "lane": "events",
+   "mandatory": false,
+   "note": "Organiser calendar read 2026-11-24: two events, latest 2027-09-17. A Budapest social run club, outside scope; the 2027 date is logged here and not added to the event list.",
+   "pages_read": 1,
+   "title": "Luma — Running Latte Club calendar",
+   "url": "https://luma.com/runninglatteclub",
+   "venue_yield": 0
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "checked",
+   "checked_on": "2026-11-24",
+   "event_yield": 0,
+   "kind": "supplementary",
+   "lane": "hotel",
+   "mandatory": false,
+   "note": "Operator page read 2026-11-24: six rooms 60–350 m², capacity table gives the 85 m² Pest room 50 at round tables and 60 in rows; free Wi-Fi, air conditioning and a lobby bar. Address '1071 Budapest, Damjanich u. 50.' The page prints Óbuda at 60 m² in the room list and 90 m² in the table.",
+   "pages_read": 1,
+   "title": "D50 | Rendezvény",
+   "url": "https://www.d50.hu/rendezveny",
+   "venue_yield": 1
+  },
+  {
+   "accessed_on": "2026-11-24",
+   "check_status": "checked",
+   "checked_on": "2026-11-24",
+   "event_yield": 0,
+   "kind": "supplementary",
+   "lane": "hotel",
+   "mandatory": false,
+   "note": "Agency venue list read 2026-11-24: 'MOM Event Center — Location: 1123 Budapest, Csörsz u. 14-16. Capacity: 2800 people. Rooms: 2'. The list carries no D50 row, and no room-level table.",
+   "pages_read": 1,
+   "title": "Our venues – Corvina Party Service",
+   "url": "https://en.corvinapartyservice.hu/event-venues",
+   "venue_yield": 1
+  }
+ ],
+ "timezone": "Europe/Budapest",
+ "updated_at": "2026-11-24T21:30:00Z",
+ "venues": {},
+ "visits": []
+}

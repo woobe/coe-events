@@ -1,0 +1,609 @@
+[IMG alt='' src=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAABpUlEQVRIS8WWgVGDQBBFuQqiHdCBsQK1gsQOYgemAqEDOwhWYFKBSQeWQAexA/IfszCAdxhIGG9m58Jlb//u/8sdriiKJIqiN9lUI3UCKRT91jn3c20Uhb5RzGMJIgB3bYAqXhn/X0AE+q0s7iwTKOSZeSvbDaXVW4kWYwXKATFO5/oZy5ayR9mnLK18/qJ5FF3Wja8KvhHQehKQRoXvRutTH4WjKmlmblWVNIaALgaxqhLNC4Hc+6gLCY/QDzJeJLrqoAB0WHAoUIav/NCqNUIgtGpuAADRUTNZoiAfgWzxY8+823Vn0yVHgKDlKHvx8W/60P6rZiJng1SbjJaZAj0HKoJegOpzcDAIgbVprylTIHTo8g/V2+Z/Y0GgDpDYAwJVS/1HW5cjJDwibnAmK58Gdr6tul1Xaad1EukFgY69HBMTk46pM7PseNtzrTPXw8461km0F6R1v/iuAgOPSMRD2e/93SAm7JcCpEMrqTVoXIJ9mmTasJDtZHDfupq1Ea14OVsnAdcEOmqdUyNMV7f8S59HtfBQ0BpEGyf/WqFDJv3uOgHQQHbHucdY5wAAAABJRU5ErkJggg==]
+[IMG alt='' src=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAABuUlEQVRIS72VjVHCQBCFSQVCB1gBWIHYASUkFRg7iBWIFRgr0A6ECpAKtAOxAn3fsccckBBCQm5mJ3N/+/btvttEvQ5G1AFGL/rTuCRQxACE7yWAvG/PJBFO3iaQAFL5e9oy0WQlW2ohaQNIAAQ8lo1CkIEW2KA+sFqfAybnfd17k/3KYtnPQU0sgpE27+oC6e7QAFa6C0BvpyZh4bXBgZlsovXPUxjpDqn5kD2EtS0FsQimBpRVCcKCynQ+1dn3MKijIAZEdEu7/FzEyCtIezdFrKuYUMAX2bU5P1BeoCCOFCrzWE1gAIAroCkm1/zKUohT3oBXEHPSNdP57710rbXW33nxclhaC8t9bE7yvQJz7142sf25vo86w3fTu6y9oCgOT09VFQ4sbTiHnVcj2cAfwWS+rYDo6Nd5HwHzMfc0d0xgYGkGNPYgUCOvtYYcERy1cNLV3PnwviyItFEXtt/EwLMvABkK8+vs/4nVkV4XgsTGJDdmG5Ba+dk7XJCubU0MBCHFTUG85MsKT8dIGoEExSZNvBP+Sww6ORJ+dRJuki5/16SLsm5tbaEvzXXuatQGSJWPTkD+AVbWLgUSX8r6AAAAAElFTkSuQmCC]
+Rólunk
+Kapcsolat
+[IMG alt='' src=data:image/png;base64,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]
+[IMG alt='' src=data:image/png;base64,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]
+Belépés
+[IMG alt='' src=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAACrUlEQVR4Xu3c323TUBiG8e9YuYfeIVWlHSEbwAKFjFAmgQ1YASZAsACMgrqAJ0BGhkREIXWOncTnUc7Ta9f9/P78+l+cpvAHlUBCTeMwIQhsJxBEEFgCsHFsiCCwBGDj2BBBYAnAxrEhgsASgI1jQwSBJQAbx4YIAksANo4NEQSWAGwcGyIILAHYODZEEFgCsHFsiCCwBGDj2BBBYAnAxrEhgsASgI1jQwSBJQAbx4ZERHt/8xBNenX19fFdaZ/qQdr7m1U0zZe/EN2n0ihVg7Sr62V0i+8R8fxfM8qiVAuyH2PDUg6lXpC3tz8j4vbpc0YZlHpBVtfLrlv8SBHPSCjVgvQI/WGLhlI1CBGlehAaiiDrEwjl8CXI1hmdgCLIziVWaRRB9lzzlkQR5ImbkFIoggw83i2BIsiB5+1zowiS8QHInCiCZIDMefM4GqR98/JDpPQ+czsqXOy4p8SCnGWXmY4iyFlApn8cLMi5QLru89W3x4exqxdkbGI5y0/E6FctSE7AY5Y5AmMayOrFXcTibsyMF7Hsr2YZTfo4uC1HYkwCuYhwR27E8Bsq65WdAEOQDJg5MQTJeI71/4t0O790omZs1jr6pJ6xU13EInM3Q5CB3aYUhoesPSglMQTZASmNIcgWCAFDkDUIBUOQ9fu9c1/aDl2GVn3ZS2pG9Ze9RIyqD1ntoS/snPgOPPduudpD1uCbJIUwqm5Iv/F7UQpiVA/yB2X7a9GFMQTZ3If0/zggpddTPgPPPTfkLlftOSQ3oLmXE2TuxA/8PUEEgSUAG8eGCAJLADaODREElgBsHBsiCCwB2Dg2RBBYArBxbIggsARg49gQQWAJwMaxIYLAEoCNY0MEgSUAG8eGCAJLADaODREElgBsHBsiCCwB2Dg2RBBYArBxbAgM5DdRSjl0AZ96nQAAAABJRU5ErkJggg==]
+Jelentkezés
+[IMG alt='HVG Szemináriumok & Konferenciák' src=https://konferencia.hvg.hu/image/catalog/konferenciak-logo.png]
+[IMG alt='' src=data:image/png;base64,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]
+Főoldal
+Aktuális eseményeink
+Adóváltozások 2027
+Összes Aktuális eseményeink
+Korábbi eseményeink
+PPWR a gyakorlatban: egy csomagolt termék útja
+Vagyonadó 2026–2027: a szabályozástól a vagyontervezésig
+HVG Címlapsztori 2026/4.
+HVG Címlapsztori 2026/3.
+Bizalmi vagyonkezelés: NAV-ellenőrzés és adóváltozások
+Feldmár András - Tóth László
+Stabil munkavédelem: így kerülhető el a veszteség
+Tb-kifizetőhelyek 2026: e-tb-kiskönyv és teendők
+Adóügyi illetőség: csapdák, tévhitek, megoldások
+Munkaidő, pihenőidő és „túlóra” a gyakorlatban
+Összes Korábbi eseményeink
+Keresés
+[IMG alt='' src=https://konferencia.hvg.hu/image/cache/catalog/Adózóna/12.10._Key visual_1920x1080-900x506.png]
+[IMG alt='' src=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAFNklEQVR4Xu2d4XnTMBCGpS5AJQ9AOgFlgzIBZQLaCWgnoExAOwFlAtoJKBNQJiAZwFJZIOK5oBRVdaJzYkvn+PzXinX3vbmzdLJlKTo8rLUT59xnIcShEGISXXoqhLiXUp4qpR467La3S5XwR3bljbV23zn3Wwixn7jmg5TygDqUUv50BsQYcyOEeIsEfKu1Pka2LdKslD9dArGI6FiKO9VaHxRRGtmpMaaIP10CcaGvWusn1zbGrD2P1Clbs5S9qfObGspAViiXEjx1noFsqgAD+adAnNI61nPry6UiIHV+UwMWKSsx3t7o2ql7yEYXLfijHv15Mj+TLcbbreTo0YFWdnTVOIM/i/mZbDneRvuXwQG0LV00zOTPLQBpM95G+5bJAbQ92zbM5M8UgHQyP0hdJ3V+W8G6/n3K3tR5rD3xdRhI4WEvA0H+dVMRkDqP7EYwEKRSKcFT55Hd9AoExtMvkYbMtNbxegnyp3maGWOy+NNnhKDL7865r1VVneSRdrNe2kwHtvGnNyB+ggn/qhcJCf5IKScDWaDq3Z/egPgSDKwaXvsl3Dh9zZxzd3t7e2fUYSz/UP5P1qs/vQLZLDmM+1cMhBh/BsJAiClAzByOEAZCTAFi5nCEMBBiChAzJxkhxOwdnTnP1kNGpwAxhxkIAyGmADFzOlvCJebXYMxJ3tSpP1E4GKWRhjIQpFC5mjGQXEoj+2EgSKFyNWMguZRG9sNAkELlasZAcimN7IeBIIXK1YyB5FIa2Q8DQQqVqxkDyaU0sh8GghQqVzMG0qC0tfajEOKqxBOVDCQCYq098zsYwUuXF0qpq1zRAf0wkEBt/zr4z3CPFufcp6qqLnJBYSCB0saYb0KIcFei7E/mMxAPxFp77JwDII+HlPJcKXWZKzo4Zf2H0bTZ2g+t9VFOGAzEq13X9bWU8n0gPqSqQ6UUvKCT9Rh9yrLWHjnnvoeq576Rh32PGoh/IwpGVeELp7+01rBpZ5Fj1EDqur6UUn6IbuSvlVL3RWiMeR5irT10zkF0PB4lU9XSiNFGiDEGYISpaeZv5EX3EB4lkLquL6SUUK8K5xxvlFJ3pVLVaCPEl0dgg+cwVV1VVXVWGsYo5yHGGBjihhO+7OWRdeBHlbKCSm6Yqt4ppWAbEBIHaSDWWtj/ZNpFbm+q5AohyG1xThYIwHDOfYG/rf+CAmxpsfFBoZKLMZ4kkKZyxjZQVlRy4TMZW0HGCNy2DVUgj9ERjYYuq6o6b+Pkim1vi1RyMXaTBAKGhykrgnJdVdUpxjk/jGxadCpSycXYTBaIhwKVWBgBxXtu3WC+zLMi9WVfdMKAGMzE0NecYAYdQ4HPJcHsurHUQbGSiwFDOkKWDngoECnxJmgABeYRzxaSKFZydwaIT1+wzAqR8ipyDB7XgUh5LJlTW3TCgBhMygqd8WkoCaWpkkt919NBAllGynw+h4WlcA184Q/c6Ofz+YRqJRcTKYO4hzQ50vBgQqO/zjkyldydBgLONd24I6dJLDphQAw2ZcXOrZpA+hRGYtFpVEDWzOrJVXIxYAZ7D2mIlHBWT2rRCQNiZ1JWNCyGJ0nupJQnlBadRgvEpy/YRz77I6BtRF/XdmdSVleClL4OAylNIOqfgTAQYgoQM4cjhIEQU4CYORwhDISYAsTM4QhhIMQUIGYORwgDIaYAMXM4QhgIMQWImcMRwkCIKUDMHI6QAQBp891wYu7snDkz+KAL+jvoO+c+MYfgu+yyxXfQiZm/c+YsnpyR4Fbiu+E75zkxh558Z/4vqW02kqyRB8cAAAAASUVORK5CYII=]
+2026. 12. 10.
+[IMG alt='' src=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAADOUlEQVR4Xu2c7VEcMQyGzx3EWwHpgFSQSSVAByklHQCVZFJB6CCpYE0HzhwDk2OHO49O8kp7fvhtS7vvo4+1dUPaKf5KKTe11u+73e5aYeaStj6llH7knB/Pfal0zsZSyqda609AHFVvD+ZbzvlZqu9ZQOZ5/g2MptRP0zR9aa5aLBADKaXc1lrvpY5GXJ9Suss5P0jeXQzkg+z4lVK6zTn/lTi+tLWllKta6178rwfvJs6Sc4DUQzFTSp9Hh/GmxyuUP4f6TNMk0li0eO9onud3QKQOLy0zlu+j1QcgxhECEGNBteYAolXQeD9AjAXVmgOIVkHj/eGBLB/Q6v1bX3dR/Laec6lH96+sKMJ4BQJAXpWPEggAAcjpqwFtk3srNVI70vXHSprUjnS9ew+RpjBAGt1PGgHS9VEi1SsQVv/KIkNORzxAglUEgABENrDxquVefsmQ0TPE6wrDy6/0I2b1DPESxssvQLg6kV2deEWql99wGWIlxFbsaG8muveQrQhp9ZwAsVLSyA5AjIS0MhMeSJTJnZXgrSYNkCNKRwmEFkD3AZVXpHr5BQgHQ9nBUBoxXreuXn67n0O0Tc5LGC+/ABn9+p2SxUz9RYGtBAIli5LFTP1UDJAho2eI14nZy6+0d62eIV7CePkFCFcnsqsTr0j18hsuQ6yE2Iod7VVR9x6yFSGtnhMgVkoa2QGIkZBWZsIDiTJKtRK81aQBwkxd9v+yyBDZ3V33ryyABAfSqsHHar20NkvXR/G7eoYAhIkhE8PDGNhq6eBXJ8EGRQAByIsCNPVggQCQ0YF43Sl5+ZV+5q+eIV7CePkFCDN1ZuqW567uJcuqVGzFjvYgDBBj0gAxFlRrDiBaBY33hwfCgCr4gMoqIFvf91ECofWcSz26N/UowngFAkA4GMoOhtKI8ZpLePldvWQBhJk6M3XLux2v0uHll5I1+oCKHkIPoYfQQ/4rIK0Iq/eQrZyYh2nqAAnWQwACEJq6VRZo7GgHRRfbQzSiavYCRKNeh70A6SCqxiRANOp12AuQDqJqTAJEo16HvQDpIKrG5LBANKKNsHf1y8URRNW8I0A06nXYC5AOompMSoH8A9CFab+B7bVRAAAAAElFTkSuQmCC]
+Webex
+Adóváltozások 2027
+Bővebben
+[IMG alt='' src=https://i.imgur.com/NvC2wgH.png]
+Feliratkozom
+Elfogadom az Adatkezelési Tájékoztatót.
+Korábbi eseményeink
+2026
+2025
+2024
+2023
+2022
+2021
+2020
+2019
+2018
+2017
+2016
+2015
+2014
+PPWR a gyakorlatban: egy csomagolt termék útja
+Bővebben
+Vagyonadó 2026–2027: a szabályozástól a vagyontervezésig
+Bővebben
+HVG Címlapsztori 2026/4.
+Újságírás élőben: Fél évvel a választások után mi maradt meg a táncból?
+Bővebben
+HVG Címlapsztori 2026/3.
+Újságírás élőben: A vagyonvisszaszerzés esélyei és buktatói
+Bővebben
+Bizalmi vagyonkezelés: NAV-ellenőrzés és adóváltozások
+Bővebben
+Feldmár András - Tóth László
+Végtelen beszélgetés könyvbemutató és dedikálás | TELTHÁZ
+Bővebben
+Stabil munkavédelem: így kerülhető el a veszteség
+Bővebben
+Tb-kifizetőhelyek 2026: e-tb-kiskönyv és teendők
+Bővebben
+Adóügyi illetőség: csapdák, tévhitek, megoldások
+Bővebben
+Munkaidő, pihenőidő és „túlóra” a gyakorlatban
+Bővebben
+Külföldi munkavállaló foglalkoztatása
+Bővebben
+Szendőfi Balázs
+Az egymillió horgász országa : könyvbemutató és dedikálás
+Bővebben
+L.Stipkovits Erika : Ketten együtt
+Párkapcsolati kártyák bemutató előadás
+Bővebben
+Házipénztár-ellenőrzések és NAV-fókusz 2026-ban
+Bővebben
+HVG Címlapsztori - EXTRA
+Választások után, avagy akkor ezt így hogy?
+Bővebben
+Felkészülés a bértranszparencia-szabályok gyakorlati alkalmazására
+Bővebben
+HVG Címlapsztori 2026/2.
+Magyar választások, globális kockázatok
+Bővebben
+HVG Címlapsztori 2026/1.
+Évértékelő HVG-módra
+Bővebben
+HVG Címlapsztori - 2026 Bérlet
+Bővebben
+Kapcsolt vállalkozások, transzferár-szabályozás
+Bővebben
+A Magyar Péter-jelenség
+könyvbemutató és dedikálás - Egy politikai felemelkedés anatómiája
+Bővebben
+HVG CÍMLAPSZTORI 2025/8.
+2026 tétje és frontvonalai - Magyar Péterrel kampányról, hatalomról, választásról
+Bővebben
+HVG Címlapsztori 2025/7.
+Mi lehet Magyar Péterből, kivé lett Orbán Viktor?
+Bővebben
+HVG Címlapsztori 2025/6.
+Klikkelés vagy kézfogás – Hol dől el a választás: a neten vagy az utcán?
+Bővebben
+Cégeladás lépésről lépésre
+Bővebben
+HVG Címlapsztori 2025/5.
+Amikor a politika a sláger - mit üzennek a színpadról a zenészek, valóban dühöng az ifjúság?
+Bővebben
+HVG Címlapsztori - Őszi Bérlet
+Bővebben
+Feldmár András - Dr. Kröber Edith
+Diagnózisok homokozója könyvbemutató és dedikálás
+Bővebben
+Foglalkoztatás, vállalkozás nyugdíj előtt, mellett 2025-ben
+Bővebben
+Hogyan indíts el változást egy rajzzal?
+A COACHING BY DRAWING™ kártyák használata a gyakorlatban
+Bővebben
+Munkajog konferencia 2025
+Bővebben
+HVG Címlapsztori 2025/4.
+Pénzünk a Trump tornádóban – befektetések, munkahelyek, gazdaság a vámháború idején
+Bővebben
+NAV-ellenőrzések 2025
+Bővebben
+HVG Extra Pszichológia Szalon
+Közelebb önmagunkhoz – avagy hogyan lehetek önmagam "terapeutája"?
+Bővebben
+HVG Címlapsztori 2025/3.
+Böjt és trakta – Hogyan együk magunkat egészségesre?
+Bővebben
+HVG Címlapsztori 2025/2.
+Kiszállás a gyűlöletvonatból – verseny a figyelemért
+Bővebben
+HVG-Címlapsztori 2025/1.
+Egy hónap Trump világában
+Bővebben
+eÁfa 2025: a digitális adózás jelene
+Bővebben
+A lejáratás szentesíti az eszközt?
+Bővebben
+AI TRAINING & WORKSHOP
+Kérdezz, tanulj, alkalmazd!
+Bővebben
+HVG Health Excellence 2024
+Innováció / egészségmegőrzés / magánegészségügy
+Bővebben
+IFRS-változások: új standardok és módosítások
+Bővebben
+A függetlenség ereje és ára: színházépítés, kabaré és közéleti szerepvállalás széllel szemben
+Bővebben
+An evening with David Allen
+GTD egy életen át
+Bővebben
+Egyházak válsága: ki áll a hívek oldalára, ha a klérust bedarálja a politika?
+Bővebben
+PszichoFeszt
+Egy nap a lelked egészségéért
+Bővebben
+Adóellenőrzésről érthetően
+Bővebben
+Politikai Szezonnyitó: Mit ér a hétköznapokban a választási siker? - online
+Bővebben
+Vogue filmbemutató
+Olyan, mint egy nagy család
+Bővebben
+Budapest-álom: Működő közösségek, zöld megoldások
+Bővebben
+HVG Munkajog konferencia 2024
+Bővebben
+A holnap határán
+A szülők 21. századi kihívásai
+Bővebben
+Trendek és tradíciók: A kultúra újrafogalmazása
+Bővebben
+Mesterségesintelligencia-szabályozás az EU-ban (AI Act)
+Bővebben
+Green Leaders ESG Award & Forum
+Bővebben
+Karaktergyilkosság a digitális korban: Stratégiák és megoldások
+Bővebben
+Budapest-álom: élhető terek, maradandó épületek
+Bővebben
+HR Backstage
+Digitalisation / Leadership / Generation
+Bővebben
+Mekkorát fordul a világ 2024-ben?
+Hol köt ki Magyarország?
+Bővebben
+HVG-Címlapsztori: Tudjuk-e uralni a jövőt?
+Bővebben
+HVG-Címlapsztori
+Mit kívánunk a magyar nemzetnek?
+Bővebben
+eÁfa 2024: a digitális adózás új korszaka
+Bővebben
+Foglalkoztatás 2024-ben: munkajogi, munkavédelmi változások
+Bővebben
+Spindiktátorok
+A zsarnokság változó arca a 21. században
+Bővebben
+Visszaélés-bejelentési szabályok, teendők
+Bővebben
+HVG Future of Recruitment konferencia 2023
+Hogyan támogatja az AI a HR-t?
+Bővebben
+EPR-kötelezettség: közeledik az első bevallás
+Bővebben
+Innovation Leaders Academy
+FutureProof Leader Masterclass
+Bővebben
+Visszaélés-bejelentési szabályok és gyakorlati teendők
+Bővebben
+AI és marketing
+Az AI ereje a marketingben: Új dimenziók és lehetőségek a digitális világban
+Bővebben
+EPR-kötelezettség – új előírások gyártókra, forgalmazókra és logisztikai szolgáltatókra
+Bővebben
+HVG Munkajog konferencia 2023
+Az Mt. módosítás tapasztalatai
+Bővebben
+Nemzetközi adózás és munkajog – fókuszban a külföldi kiküldetések
+Bővebben
+Az Mt. új szabályai
+Változások a munkajogban 2023. január 1-jétől
+Bővebben
+Átalányadózás vs. vállalkozói személyi jövedelemadó
+Bővebben
+HVG MUNKAJOG konferencia
+Aktuális munkajogi kérdések - hogyan módosulhat a munka törvénykönyve?
+Bővebben
+Élet a kata után – alternatívák kisadózás helyett
+Bővebben
+Sürgős munkáltatói feladatok!
+2022 augusztusától hatályos EU irányelvek és az Mt. várható módosításai
+Bővebben
+Kapcsolt vállalkozások és a transzferárazás automatizálása
+Bővebben
+A VIZUALIZÁCIÓ EREJE A FEJLŐDÉSBEN ÉS A FEJLESZTÉSBEN
+A COACHING BY DRAWING™ MÓDSZER A GYAKORLATBAN
+Bővebben
+HVG MUNKAJOG KONFERENCIA 2022
+Gyakorlati munkajogi kérdések
+Bővebben
+Csináljuk jól az agilitást!
+Bővebben
+Kijavítási kérelem
+Bővebben
+Kata vagy új átalányadó?
+Kinek melyik kedvezőbb 2022-ben?
+Bővebben
+Csapataink agilisak, de hogyan tovább?
+Agilitás skálázása biztonságosan és eredményesen közepes- és nagyvállalatoknál
+Bővebben
+A digitalizált fizetés és a készpénzmentesség hatása a vállalkozásokra
+Bővebben
+Mérd, ami számít!
+Hogyan befolyásolják a célok a sikert?
+Bővebben
+E-kereskedelem áfaszabályozása 2.0
+Bővebben
+E-kereskedelem áfaszabályozása 2021. július 1-jétől
+Bővebben
+Munkajog konferencia 2021
+A digitalizáció hatása a munkajogviszonyokra
+Bővebben
+Kata kihívások és lehetőségek 2021
+Bővebben
+CÉGEK ÉS INTÉZMÉNYEK MINT FELNŐTTKÉPZŐK
+ENGEDÉLYEZÉS ÉS PÁLYÁZÁS
+Bővebben
+Online adatszolgáltatás, befogadói adatszolgáltatás változásai 2021-től #2
+Webinárium és konzultáció
+Bővebben
+Cégek mint felnőttképzők:
+A felnőttképzési törvény és belső képzések bejelentése szakértői szemmel
+Bővebben
+Online adatszolgáltatás, befogadói adatszolgáltatás változásai 2021-től
+Webinárium és konzultáció
+Bővebben
+Itt tudja megvásárolni az online események felvételeit
+Bővebben
+Green Revolution 2020
+A jó példák cselekvést szülnek - gyere velünk!
+Bővebben
+HVG Future of Recruitment 2020
+STOP | THINK | GO
+Bővebben
+Online adatszolgáltatás részletkérdései
+Webinárium és konzultáció
+Bővebben
+VUCA Leadership
+Agilis vezetési praktikák
+Bővebben
+Online adatszolgáltatás szabályai
+Webinárium és konzultáció
+Bővebben
+Mit üzennek az álmaink?
+Virtuális HVG Extra Pszichológia Szalon
+Bővebben
+Hatékonyságnövelési technikák
+Vitalitás és időmenedzsment
+Bővebben
+HVG MUNKAJOG KONFERENCIA 2020
+Munkajogi változások
+Bővebben
+Virtuális tréningek
+Működnek?
+Bővebben
+Élethelyzetek, buktatók, kapaszkodók
+Hogyan küzdjünk meg a hullámvölgyekkel, a változásokkal és a félelmeinkkel? Online beszélgetés
+Bővebben
+Stresszkezelés és Home Office
+Kihívások a koronavírus idején
+Bővebben
+#HRCHALLENGES - HR kihívások a pandémia idején
+Ingyenes online előadás
+Bővebben
+RENDKÍVÜLI MUNKAJOGI VÁLTOZÁSOK 2020.
+Munkajog – veszélyhelyzetben
+Bővebben
+A Home Office kihívásai
+Home office-ban dolgozó munkatársak vezetése
+Bővebben
+HR Challenges - #motiváció
+Bővebben
+HOME OFFICE - #rendszerszemlélet életünkben és munkánkban
+Bővebben
+Ingyenes online előadás - #koronavirus
+Minden amit tudni érdemes a Koronavírusról!
+Bővebben
+A Startup módszer
+Tanuljunk a startupoktól, csináljuk meg nagyban!
+Bővebben
+RESTART KONFERENCIA 2019
+Gondoljuk újra önmagunkat!
+Bővebben
+Győztes Stratégiák
+Mit tanulhatsz egy sportvezetőtől, katonai stratégától és menedzsment gurutól?
+Bővebben
+HVG Cégautó Konferencia 2019
+Fókuszban a legújabb beszerzési, biztonsági és üzemeltetési trendek
+Bővebben
+Az értékesítés titkos kódja
+Mi különbözteti meg a győzteseket?
+Bővebben
+HVG Future of Recruitment 2019
+Klasszikus és diszruptív módszerek a toborzásban
+Bővebben
+HVG MUNKAJOG KONFERENCIA 2019
+Újabb fontos módosítások a Munka törvénykönyvében
+Bővebben
+Egészségtudatos munkahely
+Szemléletváltás a munkavállalói és egyéni egészségfejlesztésben
+Bővebben
+Hogyan tartsuk meg munkatársainkat? ráadás nap
+Hiteles vezetői és szervezeti minták az elköteleződés szolgálatában
+Bővebben
+Csapatok Csapata szeminárium
+Új szervezeti működés és vezetés csapatban
+Bővebben
+Extrém Hatékonyság Szeminárium
+Fókusz, Időzítés, Eredményesség
+Bővebben
+Hogyan tartsuk meg munkatársainkat?
+Hiteles vezetői és szervezeti minták az elköteleződés szolgálatában
+Bővebben
+Restart konferencia
+A nagy újratervezés-nap!
+Bővebben
+Találd meg a miérted Szeminárium
+A céltudatos cselekvés kulcsa
+Bővebben
+Összetett projektek - átlátható menedzsment
+Hogyan kezeljük projektjeink összetettségét?
+Bővebben
+HVG Cégautó konferencia 2018.
+Váltások és változások a vállalati járműparkok körül
+Bővebben
+A kiemelkedő értékesítő
+Hogyan legyek még jobb a szakmámban?
+Bővebben
+HVG Future of Recruitment konferencia 2018 & Recruiters' Night
+A HR AGILISRA VÁLT
+Bővebben
+HVG Munkajog konferencia 2018
+Fókuszban a GDPR! - Gyakorlati kérdések - szakértői válaszok
+Bővebben
+Hatékony motiváció
+A hosszútávon sikeres csapatok titka
+Bővebben
+HVG Mindfulness konferencia 2018
+Mentális rugalmasság és üzleti eredményesség
+Bővebben
+Sprint a termékfejlesztésben - ötlettől a döntésig
+Ötnapos módszer a problémák megoldására és az ötletek értékelésére
+Bővebben
+HVG Future of Marketing konferencia
+A jó marketing ott kezdődik, ahol a tartalom és az adat összeér
+Bővebben
+HVG Adóváltozások konferencia 2018
+Tudjon meg mindent az aktuális adóváltozásokról
+Bővebben
+Szemléletváltás
+A siker új pszichológiája
+Bővebben
+A meggyőzés forradalma
+Új értékesítési és vezetői stratégiák személyesen és online
+Bővebben
+HVG Future of Business konferencia 2017
+Digitális transzformáció az üzleti életben
+Bővebben
+Cégautó konferencia 2017.
+A jövő flottaautója - a legújabb technológiák, kényelmi és biztonsági trendek
+Bővebben
+HVG Growth Hacking konferencia
+Kreatív üzletszerzés adatvezérelt marketinggel
+Bővebben
+TED prezentációs szeminárium & workshopok
+Az átütő nyilvános beszéd titka
+Bővebben
+Online Toborzási Konferencia 2017
+The Big Picture - üzleti fókusz a HR-ben
+Bővebben
+TED prezentációs technikák - DESIGN workshop
+Hogyan készítsünk lenyűgöző prezentációkat?
+Bővebben
+TED prezentációs technikák - ELŐADÓI workshop
+Beszédépítési technikák és az előadói készségek fejlesztése
+Bővebben
+TED prezentációs technikák - TARTALOM workshop
+Állíts össze meggyőző tartalmat és fókuszálj a lényegre
+Bővebben
+Stresszmenedzsment
+A munkahelyi burnout megelőzése
+Bővebben
+Munkajog konferencia 2017
+Munkajog a gyakorlatban
+Bővebben
+Mindfulness@work - WORKSHOP-2017
+A produktivitás növelése a tudatos jelenlét eszközeivel
+Bővebben
+I. HVG Mindfulness konferencia
+Tudatosság és jelenlét a személyes és üzleti életben
+Bővebben
+Az agilis szervezet és vezető
+Hogyan használjuk ki a változásokban rejlő üzleti lehetőségeket?
+Bővebben
+Értékesítés a 21. században 2017
+Új módszerek, hatékony eszközök, digitális megoldások
+Bővebben
+Tartalommarketing 2017
+Olvasóból vásárló - történetmesélés és közösségépítés a márkák mögött
+Bővebben
+Az eredményes projektmenedzser
+Hogyan alapozzuk meg projektjeink sikerét?
+Bővebben
+Motiváció 3.0
+Hogyan ösztönözzünk másként?
+Bővebben
+TED prezentációs technikák - 2016
+Az átütő nyilvános beszéd titkai - szeminárium és workshopok
+Bővebben
+HVG Adóváltozások 2017
+Tudjon meg mindent az aktuális adóváltozásokról
+Bővebben
+Storytelling az üzleti életben
+Hogyan győzzük meg partnereinket és értékesítsük ötleteinket?
+Bővebben
+A tökéletes megbeszélés
+Hogyan szervezzünk és vezessünk eredményes meetingeket?
+Bővebben
+Marketing és technológia
+Hogyan lesz a metaadatokból üzleti haszon
+Bővebben
+Új vezetők eszköztára
+Hogyan változnak kapcsolataink, feladataink és céljaink?
+Bővebben
+Online Toborzási Konferencia 2016.
+Technológia és kreativitás a munkaerő-piacon
+Bővebben
+A kreatív vezető
+Építsünk innovatív szervezeteket
+Bővebben
+Smart data konferencia
+Adatok az ügyfélszerzés és ügyfélmegtartás szolgálatában
+Bővebben
+Cégautó 2015
+Flottamenedzsment, gazdaságos üzemeltetés és technikai innovációk
+Bővebben
+Toyota-kata
+Vezessük, irányítsuk és fejlesszük munkatársainkat a Toyota módszerével!
+Bővebben
+TED prezentációs technikák - 2015
+Az átütő nyilvános beszéd titkai
+Bővebben
+HVG Adóváltozások 2016
+Tudjon meg mindent az adóváltozásokról
+Bővebben
+Eredményes motiváció
+Fejlődés, hatékonyság, elköteleződés
+Bővebben
+A meggyőzés tudománya
+Hogyan vegyünk rá másokat, hogy azt tegyék, amit szeretnénk?
+Bővebben
+Csak egyszerűen!
+Hatékony stratégiák az üzleti sikerhez
+Bővebben
+Online toborzási konferencia
+Azonosítani, felkutatni, elkötelezni
+Bővebben
+Hatásgyakorlás mesterfokon
+Kis változtatásokkal a nagy eredményekért
+Bővebben
+Stresszmentes hatékonyság a gyakorlatban
+GTD – az időmenedzsment új módszertana
+Bővebben
+Munkajog konferencia 2015.
+Munkajog a gyakorlatban
+Bővebben
+Szemléletváltás 2016
+A siker új pszichológiája
+Bővebben
+Tartalommarketing konferencia
+Az ötlettől a megtérülésig
+Bővebben
+Boldogság mint versenyelőny
+Hogyan növeljük csapatunk hatékonyságát a pozitív pszichológia eszközeivel?
+Bővebben
+Hatásgyakorlás mesterfokon
+Kis változtatásokkal a nagy eredményekért
+Bővebben
+HVG-Erste Bank Exportkonferencia
+Keleti és nyugati piacok, forrásgazdálkodás és best practice
+Bővebben
+HVG-Kyocera Adóváltozások 2015
+Tudjon meg mindent az adóváltozásokról
+Bővebben
+TED prezentációs technikák - 2014
+Az átütő nyilvános beszéd titkai
+Bővebben
+Toyota KATA
+Vezessük, irányítsuk és fejlesszük munkatársainkat a Toyota módszerével!
+Bővebben
+Big Data a marketingben
+Adathalmazból hatékony kommunikációs eszköz
+Bővebben
+Eladni emberi dolog
+Meglepő tények és gyakorlatok az értékesítésről
+Bővebben
+Online toborzási konferencia
+Innovatív és hatékony HR megoldások
+Bővebben
+Helyzetfüggő vezetés
+A hatékony emberközpontú vezetés módszerei
+Bővebben
+Cégautó konferencia
+Cégvezetők, flottamenedzserek és autómárkák szakmai találkozója
+Bővebben
+Munkajog Konferencia
+A munkajog gyakorlati tapasztalatai, hasznos tudnivalói
+Bővebben
+Hatékony döntéshozás
+Kreatív módszerek megalapozott döntésekhez
+Bővebben
+Vállalkozásfejlesztési konferencia
+Kis- és középvállalkozások részére a sikeres fejlődéshez és növekedéshez
+Bővebben
+Online marketing trendek
+Fókuszban a mobil
+Bővebben
+A meggyőzés művészete
+Tegyük érthetővé ötleteinket, termékeinket és szolgáltatásainkat!
+Bővebben
+Vezetni emberi dolog
+A vezetés és hatásgyakorlás 21. századi művészete
+Bővebben
+TB konferencia
+Kérdések és válaszok a tb-változásokról
+Bővebben
+Ajánlott kiadványok
+[IMG alt='' src=https://i.imgur.com/dcpyYp3.png]
+Cím: 1037 Budapest, Montevideo u. 14.
+Postacím: 1300 Budapest 3. Pf. 20
+Telefon: +36 1 436 2442 E-mail:
+konferencia@hvg.hu
+Aktuális konferenciáink
+Adóváltozások 2027
+Kedvezmények
+Webex információ
+Kapcsolat
+ÁSZF
+Adatkezelési Tájékoztató
+Partnereink / Előadók
+© 2015 Copyright HVG Kiadó Zrt. | hvg.hu | HVG-Klubkártya | hvgkonyvek.hu
+made in cantinart
+[IMG alt='' src=https://ad.adverticum.net/banners/7114147/avmero.gif]
+[IMG alt='' src=https://konferencia.hvg.hu/image/bankcards_simplepay.png]
+[IMG alt='' src=https://dc.ads.linkedin.com/collect/?pid=208396&fmt=gif]
+[IMG alt='' src=https://px.ads.linkedin.com/collect/?pid=1417545&fmt=gif]

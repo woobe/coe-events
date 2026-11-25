@@ -1,0 +1,650 @@
+{
+ "assessed_by_lane": {
+  "conference_stock": 5,
+  "coworking_loft": 13,
+  "hotel": 6,
+  "ruin_bar": 1,
+  "university": 2
+ },
+ "assessed_final": 27,
+ "cap": 30,
+ "captures": {
+  "archives": [
+   "research/budapest/city/captures/pages-round1.tar.gz",
+   "research/budapest/city/captures/pages-round2.tar.gz",
+   "research/budapest/city/captures/pages-round3.tar.gz",
+   "research/budapest/city/captures/pages-round4.tar.gz",
+   "research/budapest/city/captures/pages-round6.tar.gz"
+  ],
+  "manifest": "research/budapest/city/capture-manifest.json",
+  "pages_listed": 137
+ },
+ "caveat": "This ledger records the pass order and the yield of each lane from the pages actually captured on 2026-11-24. It is not a timestamped replay of the browsing session; a failed or refused fetch is logged as failed and is never counted as a completed check. A lane with no captured page is recorded with pages_read 0 and a zero yield.",
+ "city_slug": "budapest-hu",
+ "derive": "research/budapest/city/geocode-log.json and metro-stations.json",
+ "floor": 20,
+ "generated_on": "2026-11-24",
+ "leads_final": 4,
+ "passes": [
+  {
+   "date": "2026-11-24",
+   "failed_captures": [],
+   "lane": "mandatory",
+   "note": "Server-rendered payload was JavaScript-only; the page was read through the search provider on 2026-11-24. No Budapest 2027 record surfaced.",
+   "outcome": "checked",
+   "pages_captured": 1,
+   "pages_read": 1,
+   "pass": "MiraGather main",
+   "seq": 1,
+   "yield": {
+    "communities": 0,
+    "events": 0,
+    "venues_assessed": 0,
+    "venues_lead": 0
+   }
+  },
+  {
+   "date": "2026-11-24",
+   "failed_captures": [],
+   "lane": "mandatory",
+   "note": "Same JavaScript-only payload; no Budapest side event for 2027 surfaced. Zero rows.",
+   "outcome": "checked",
+   "pages_captured": 1,
+   "pages_read": 1,
+   "pass": "MiraGather side events",
+   "seq": 2,
+   "yield": {
+    "communities": 0,
+    "events": 0,
+    "venues_assessed": 0,
+    "venues_lead": 0
+   }
+  },
+  {
+   "date": "2026-11-24",
+   "failed_captures": [],
+   "lane": "mandatory",
+   "note": "Same payload filtered to AI; no Budapest AI record for 2027. Zero rows.",
+   "outcome": "checked",
+   "pages_captured": 1,
+   "pages_read": 1,
+   "pass": "MiraGather AI",
+   "seq": 3,
+   "yield": {
+    "communities": 0,
+    "events": 0,
+    "venues_assessed": 0,
+    "venues_lead": 0
+   }
+  },
+  {
+   "date": "2026-11-24",
+   "failed_captures": [
+    "mg-ait"
+   ],
+   "lane": "mandatory",
+   "note": "The directory refused a direct read (Cloudflare HTTP 403). The Budapest chapter was read through the search provider, so this is logged as a provider read, not a completed direct check; no 2027 edition was published.",
+   "outcome": "provider_read",
+   "pages_captured": 1,
+   "pages_read": 1,
+   "pass": "AI Tinkerers city directory",
+   "seq": 4,
+   "yield": {
+    "communities": 0,
+    "events": 0,
+    "venues_assessed": 0,
+    "venues_lead": 0
+   }
+  },
+  {
+   "date": "2026-11-24",
+   "failed_captures": [],
+   "lane": "mandatory",
+   "note": "Calendar read on 2026-11-24: no upcoming entries and no Budapest past entry. Zero rows.",
+   "outcome": "checked",
+   "pages_captured": 1,
+   "pages_read": 1,
+   "pass": "Luma DeAI past events",
+   "seq": 5,
+   "yield": {
+    "communities": 0,
+    "events": 0,
+    "venues_assessed": 0,
+    "venues_lead": 0
+   }
+  },
+  {
+   "date": "2026-11-24",
+   "failed_captures": [],
+   "lane": "platform",
+   "note": "Opened 2026-11-24. The Budapest city URL answers with the platform's own \"Not found | Peerspace\" page (\"Page not found\") and a city nav of US metros only; the direct request was refused with HTTP 403 from this host, so the page was read through the reader (HTTP 200) and this is logged as a provider read. Result count 0; 0 rooms assessed; 0 deduped against the store; disposition: no Budapest inventory.",
+   "outcome": "provider_read",
+   "pages_captured": 1,
+   "pages_read": 1,
+   "pass": "Peerspace Budapest",
+   "platform_detail": {
+    "disposition": "no_budapest_inventory",
+    "existing_matches": [],
+    "result_count": 0,
+    "rooms_assessed": 0,
+    "rooms_deduped_against_store": 0,
+    "urls_read": [
+     "https://www.peerspace.com/venues/budapest"
+    ]
+   },
+   "seq": 6,
+   "yield": {
+    "communities": 0,
+    "events": 0,
+    "venues_assessed": 0,
+    "venues_lead": 0
+   }
+  },
+  {
+   "date": "2026-11-24",
+   "failed_captures": [
+    "plat-tagvenue-404"
+   ],
+   "lane": "platform",
+   "note": "Opened 2026-11-24. The home page and the full locations page were read: AU, CA, IE, SG and US country pages (7 AU, 8 CA, 1 IE, 46 US city pages) plus 70 UK city pages, with no Hungarian city. The Budapest city URL returns the site's own 404 page (\"404 - https://www.tagvenue.com/city/budapest | Tagvenue\"). Result count 0; 0 rooms assessed; 0 deduped; disposition: no Budapest market in the locations checked.",
+   "outcome": "checked_with_zero",
+   "pages_captured": 3,
+   "pages_read": 2,
+   "pass": "Tagvenue Budapest",
+   "platform_detail": {
+    "disposition": "no_budapest_market",
+    "existing_matches": [],
+    "result_count": 0,
+    "rooms_assessed": 0,
+    "rooms_deduped_against_store": 0,
+    "urls_read": [
+     "https://www.tagvenue.com/",
+     "https://www.tagvenue.com/locations",
+     "https://www.tagvenue.com/city/budapest"
+    ]
+   },
+   "seq": 7,
+   "yield": {
+    "communities": 0,
+    "events": 0,
+    "venues_assessed": 0,
+    "venues_lead": 0
+   }
+  },
+  {
+   "date": "2026-11-24",
+   "failed_captures": [
+    "plat-eventective-404"
+   ],
+   "lane": "platform",
+   "note": "Opened 2026-11-24. Home page and a state listing page were read (\"Event Venues and Vendors in California | Compare 5,313 Venues\"). The Hungary/Budapest URL returns the site 404, as do /budapest/, /europe/ and /search/?q=Budapest. Result count 0; 0 rooms; disposition: every Hungary path tried 404s and the listings read are US state pages.",
+   "outcome": "checked_with_zero",
+   "pages_captured": 3,
+   "pages_read": 2,
+   "pass": "Eventective Budapest",
+   "platform_detail": {
+    "disposition": "no_hungary_inventory",
+    "existing_matches": [],
+    "result_count": 0,
+    "rooms_assessed": 0,
+    "rooms_deduped_against_store": 0,
+    "urls_read": [
+     "https://www.eventective.com/",
+     "https://www.eventective.com/california/",
+     "https://www.eventective.com/hungary/budapest/"
+    ]
+   },
+   "seq": 8,
+   "yield": {
+    "communities": 0,
+    "events": 0,
+    "venues_assessed": 0,
+    "venues_lead": 0
+   }
+  },
+  {
+   "date": "2026-11-24",
+   "failed_captures": [
+    "plat-venuereport"
+   ],
+   "lane": "platform",
+   "note": "Opened 2026-11-24. The Budapest collection exists — the provider index returns it as \"Top Venues in Budapest, Hungary\" — but every request got HTTP 403 (WAF), direct and through the reader, with Googlebot and Bingbot agents too. Result count unread; 0 rooms assessed; disposition: blocked with the status code, not a zero inventory. The provider snippets name Budapest venues (Boutique Hotel Victoria, Onyx Luxury, Kiosk Budapest, Hotel Gin, Dorothea Hotel, Verno House) but print no capacity or rate, so none is credited.",
+   "outcome": "blocked",
+   "pages_captured": 1,
+   "pages_read": 0,
+   "pass": "Venue Report Budapest",
+   "platform_detail": {
+    "disposition": "blocked_http_403",
+    "existing_matches": [],
+    "result_count": null,
+    "rooms_assessed": 0,
+    "rooms_deduped_against_store": 0,
+    "urls_read": [
+     "https://venuereport.com/find-venues/hungary/budapest"
+    ]
+   },
+   "seq": 9,
+   "yield": {
+    "communities": 0,
+    "events": 0,
+    "venues_assessed": 0,
+    "venues_lead": 0
+   }
+  },
+  {
+   "date": "2026-11-24",
+   "failed_captures": [
+    "plat-szallas"
+   ],
+   "lane": "platform",
+   "note": "Direct request to szallas.hu returned HTTP 403 on 2026-11-24; only the refusal body was captured, so no inventory page counts as read. Blocked, not a zero inventory.",
+   "outcome": "blocked",
+   "pages_captured": 1,
+   "pages_read": 0,
+   "pass": "Szallas.hu event venues",
+   "platform_detail": {
+    "disposition": "blocked_http_403",
+    "existing_matches": [],
+    "result_count": null,
+    "rooms_assessed": 0,
+    "rooms_deduped_against_store": 0,
+    "urls_read": [
+     "https://szallas.hu/"
+    ]
+   },
+   "seq": 10,
+   "yield": {
+    "communities": 0,
+    "events": 0,
+    "venues_assessed": 0,
+    "venues_lead": 0
+   }
+  },
+  {
+   "date": "2026-11-24",
+   "failed_captures": [],
+   "lane": "platform",
+   "note": "The host did not resolve from this research host on 2026-11-24 (DNS failure); nothing was fetched. Logged as blocked, not as a zero inventory.",
+   "outcome": "blocked",
+   "pages_captured": 0,
+   "pages_read": 0,
+   "pass": "Berta.hu event venues",
+   "platform_detail": {
+    "disposition": "blocked_dns",
+    "existing_matches": [],
+    "result_count": null,
+    "rooms_assessed": 0,
+    "rooms_deduped_against_store": 0,
+    "urls_read": [
+     "https://berta.hu/"
+    ]
+   },
+   "seq": 11,
+   "yield": {
+    "communities": 0,
+    "events": 0,
+    "venues_assessed": 0,
+    "venues_lead": 0
+   }
+  },
+  {
+   "date": "2026-11-24",
+   "failed_captures": [
+    "plat-rendezvenyhelyszin"
+   ],
+   "lane": "platform",
+   "note": "rendezvenyhelyszin.hu timed out (curl status 000 after 60 s) on 2026-11-24, so no directory page was captured. Logged failed; no room is attributed to the directory.",
+   "outcome": "failed",
+   "pages_captured": 1,
+   "pages_read": 0,
+   "pass": "Rendezvényhelyszín listings",
+   "platform_detail": {
+    "disposition": "failed_timeout",
+    "existing_matches": [],
+    "result_count": null,
+    "rooms_assessed": 0,
+    "rooms_deduped_against_store": 0,
+    "urls_read": [
+     "https://www.rendezvenyhelyszin.hu/"
+    ]
+   },
+   "seq": 12,
+   "yield": {
+    "communities": 0,
+    "events": 0,
+    "venues_assessed": 0,
+    "venues_lead": 0
+   }
+  },
+  {
+   "date": "2026-11-24",
+   "failed_captures": [
+    "hot-ihg"
+   ],
+   "lane": "hotel",
+   "note": "Four hotel groups read (Corinthia, Marriott, InterContinental, Kempinski) plus one third-party hotel-sales listing used only for the Corinthia package band, the Corvina agency list that carries MOM, and the D50 operator page. The IHG page returned HTTP 403 and was read through the provider.",
+   "outcome": "checked",
+   "pages_captured": 12,
+   "pages_read": 11,
+   "pass": "Hotel function space",
+   "seq": 13,
+   "yield": {
+    "communities": 0,
+    "events": 0,
+    "venues_assessed": 6,
+    "venues_lead": 3
+   }
+  },
+  {
+   "date": "2026-11-24",
+   "failed_captures": [],
+   "lane": "university",
+   "note": "CEU rental HTML and archived provider excerpt of the Quantum table, plus the ELTE rental page. BME not checked to room level; no BME rental page or viable room was captured.",
+   "outcome": "checked_with_zero",
+   "pages_captured": 5,
+   "pages_read": 5,
+   "pass": "University halls (CEU, ELTE, BME)",
+   "seq": 14,
+   "yield": {
+    "communities": 0,
+    "events": 0,
+    "venues_assessed": 2,
+    "venues_lead": 0
+   }
+  },
+  {
+   "date": "2026-11-24",
+   "failed_captures": [
+    "conf-hungexpo",
+    "lo-vigado"
+   ],
+   "lane": "conference_stock",
+   "note": "Congress-centre HTML and PDF, the Millenáris rental page, the Várkert agency page and the Vigadó rental pages were read; two captures returned 404/000 and are logged as failed fetches.",
+   "outcome": "checked",
+   "pages_captured": 10,
+   "pages_read": 8,
+   "pass": "Hungexpo / Millenáris / Várkert Bazaar / Pesti Vigadó",
+   "seq": 15,
+   "yield": {
+    "communities": 0,
+    "events": 0,
+    "venues_assessed": 5,
+    "venues_lead": 0
+   }
+  },
+  {
+   "date": "2026-11-24",
+   "failed_captures": [
+    "ruin-szimpla"
+   ],
+   "lane": "ruin_bar",
+   "note": "Dürer Kert, Stifler and Szimpla were checked; only Stifler publishes a private-room page. Szimpla returned 404, so it is a failed fetch, not a closure finding.",
+   "outcome": "checked_with_zero",
+   "pages_captured": 4,
+   "pages_read": 3,
+   "pass": "Ruin bars",
+   "seq": 16,
+   "yield": {
+    "communities": 0,
+    "events": 0,
+    "venues_assessed": 1,
+    "venues_lead": 0
+   }
+  },
+  {
+   "date": "2026-11-24",
+   "failed_captures": [
+    "gal-szepmuveszeti"
+   ],
+   "lane": "gallery_museum",
+   "note": "Museum of Fine Arts rental page returned HTTP 520 and the Buda Castle venues page was read with no room of 50 that publishes terms. Zero assessed rooms from this lane.",
+   "outcome": "checked_with_zero",
+   "pages_captured": 2,
+   "pages_read": 1,
+   "pass": "Galleries and museums",
+   "seq": 17,
+   "yield": {
+    "communities": 0,
+    "events": 0,
+    "venues_assessed": 0,
+    "venues_lead": 0
+   }
+  },
+  {
+   "date": "2026-11-24",
+   "failed_captures": [
+    "lo-workin",
+    "cw-hubhub"
+   ],
+   "lane": "coworking_loft",
+   "note": "The productive lane. Two Loffice rooms share one page; Workin, HubHub and one agency page returned 403/404 and are logged as failed fetches.",
+   "outcome": "checked",
+   "pages_captured": 20,
+   "pages_read": 18,
+   "pass": "Coworking, lofts and independent event rooms",
+   "seq": 18,
+   "yield": {
+    "communities": 0,
+    "events": 0,
+    "venues_assessed": 13,
+    "venues_lead": 1
+   }
+  },
+  {
+   "date": "2026-11-24",
+   "failed_captures": [
+    "theatre-trafo",
+    "tr-trafo"
+   ],
+   "lane": "theatre",
+   "note": "TRAFÓ returned 404 on the English rental page and 403 on the Polish-domain mirror; no room terms were read, so no row is assessed from this lane.",
+   "outcome": "failed",
+   "pages_captured": 2,
+   "pages_read": 0,
+   "pass": "Theatre and performing-arts spaces",
+   "seq": 19,
+   "yield": {
+    "communities": 0,
+    "events": 0,
+    "venues_assessed": 0,
+    "venues_lead": 0
+   }
+  },
+  {
+   "date": "2026-11-24",
+   "failed_captures": [
+    "ev-dataai-hu",
+    "ev-dataai-official",
+    "ev-amuse",
+    "ev-bbc",
+    "ev-devconf-hu",
+    "ev-smartcity-hu"
+   ],
+   "lane": "events",
+   "note": "Five editions: AI Summit, Craft, Data+AI, Applied AI (its group page also supports the community lane), and The Budapest Exchange (direct organiser FAQ). The Amuse capture has no readable text; Blockchain Conference, Smart City Expo Budapest and Devconf returned no response. No 2027 edition was established for these four series.",
+   "outcome": "checked",
+   "pages_captured": 15,
+   "pages_read": 9,
+   "pass": "2027 event circuit and event platforms",
+   "seq": 20,
+   "yield": {
+    "communities": 0,
+    "events": 5,
+    "venues_assessed": 0,
+    "venues_lead": 0
+   }
+  },
+  {
+   "date": "2026-11-24",
+   "failed_captures": [],
+   "lane": "events",
+   "note": "Round 3 lane. Read the organiser ticket page and home page for Startup Safari, the Sessionize call and devfest.hu for DevFest Budapest, Portfolio’s English events page and Hungarian events list plus the Property Warm Up page, HVG’s seminar index and portfolio.hvg.hu seminars, and five Luma organiser calendars reached from the Budapest city page (bme_sc, renode, epicllama, psynema, runninglatteclub). Yield: five dated Portfolio 2027 conferences, Startup Safari 2027, DevFest 2027. HVG published no 2027-dated event (its “Adóváltozások 2027” seminar is dated 2026-12-10). Two Luma organisers publish 2027 dates (epicllama 2027-01-14, runninglatteclub 2027-09-17) but both are lifestyle events outside the professional conference scope, so they are recorded here and not added to the event list.",
+   "outcome": "checked",
+   "pages_captured": 14,
+   "pages_read": 14,
+   "pass": "2027 organiser sweep (Startup Safari, DevFest, Portfolio, HVG, Luma organisers)",
+   "seq": 24,
+   "yield": {
+    "communities": 0,
+    "events": 7,
+    "venues_assessed": 0,
+    "venues_lead": 0
+   }
+  },
+  {
+   "date": "2026-11-24",
+   "failed_captures": [],
+   "lane": "communities",
+   "note": "Sixteen Meetup group pages were read directly in round 1 and eight of them were re-read in round 3 (PyData, R, Quant, Ethereum, Databricks, R-Ladies, Global AI, Comets). 13 of 18 groups have dated held-event evidence in the reviewed reckoning; review/check dates and upcoming editions are not held-event dates. Comets is carried from the old ledger; the 2026-08-11 date is a check date.",
+   "outcome": "checked",
+   "pages_captured": 24,
+   "pages_read": 24,
+   "pass": "Budapest AI/ML/data/Web3 groups",
+   "seq": 21,
+   "yield": {
+    "communities": 18,
+    "events": 0,
+    "venues_assessed": 0,
+    "venues_lead": 0
+   }
+  },
+  {
+   "date": "2026-11-24",
+   "failed_captures": [
+    "law-mt",
+    "law-alap-jogtar",
+    "law-alap",
+    "food-nebih",
+    "hu-hrportal-2027"
+   ],
+   "lane": "law_holiday_currency",
+   "note": "The Labour Code, the Fundamental Law, NAV guidance, the NÉBIH registration page and the MNB rate page were read, plus two Hungarian calendar pages for the 2027 work-order decree. njt.hu returned no response, one NÉBIH page returned 404 and the HR Portal article returned a Cloudflare 403.",
+   "outcome": "checked_with_zero",
+   "pages_captured": 12,
+   "pages_read": 7,
+   "pass": "Holidays, language, alcohol, food and FX",
+   "seq": 22,
+   "yield": {
+    "communities": 0,
+    "events": 0,
+    "venues_assessed": 0,
+    "venues_lead": 0
+   }
+  },
+  {
+   "date": "2026-11-24",
+   "failed_captures": [
+    "metrostations"
+   ],
+   "lane": "derived_data",
+   "note": "31 addresses were sent to Nominatim (28 house-number matches, 2 street-only results recorded as failed lookups, 1 no result). The Overpass station query returned HTTP 406, so station points came from four Wikipedia geosearch queries instead.",
+   "outcome": "checked",
+   "pages_captured": 3,
+   "pages_read": 2,
+   "pass": "Address geocoding and nearest-station derivation",
+   "seq": 23,
+   "yield": {
+    "communities": 0,
+    "events": 0,
+    "venues_assessed": 0,
+    "venues_lead": 0
+   }
+  }
+ ],
+ "platform_lanes": {
+  "Berta.hu event venues": {
+   "disposition": "blocked_dns",
+   "outcome": "blocked",
+   "pages_read": 0,
+   "result_count": null,
+   "rooms_assessed": 0
+  },
+  "Eventective Budapest": {
+   "disposition": "no_hungary_inventory",
+   "outcome": "checked_with_zero",
+   "pages_read": 2,
+   "result_count": 0,
+   "rooms_assessed": 0
+  },
+  "Peerspace Budapest": {
+   "disposition": "no_budapest_inventory",
+   "outcome": "provider_read",
+   "pages_read": 1,
+   "result_count": 0,
+   "rooms_assessed": 0
+  },
+  "Rendezvényhelyszín listings": {
+   "disposition": "failed_timeout",
+   "outcome": "failed",
+   "pages_read": 0,
+   "result_count": null,
+   "rooms_assessed": 0
+  },
+  "Szallas.hu event venues": {
+   "disposition": "blocked_http_403",
+   "outcome": "blocked",
+   "pages_read": 0,
+   "result_count": null,
+   "rooms_assessed": 0
+  },
+  "Tagvenue Budapest": {
+   "disposition": "no_budapest_market",
+   "outcome": "checked_with_zero",
+   "pages_read": 2,
+   "result_count": 0,
+   "rooms_assessed": 0
+  },
+  "Venue Report Budapest": {
+   "disposition": "blocked_http_403",
+   "outcome": "blocked",
+   "pages_read": 0,
+   "result_count": null,
+   "rooms_assessed": 0
+  }
+ },
+ "reconciliation": {
+  "failed_captures": [
+   "conf-hungexpo",
+   "cw-hubhub",
+   "ev-amuse",
+   "ev-bbc",
+   "ev-dataai-hu",
+   "ev-dataai-official",
+   "ev-devconf-hu",
+   "ev-smartcity-hu",
+   "food-nebih",
+   "gal-szepmuveszeti",
+   "hot-ihg",
+   "hu-hrportal-2027",
+   "law-alap",
+   "law-alap-jogtar",
+   "law-mt",
+   "lo-vigado",
+   "lo-workin",
+   "metrostations",
+   "mg-ait",
+   "plat-eventective-404",
+   "plat-rendezvenyhelyszin",
+   "plat-szallas",
+   "plat-tagvenue-404",
+   "plat-venuereport",
+   "ruin-szimpla",
+   "theatre-trafo",
+   "tr-trafo"
+  ],
+  "note": "pages_read counts a lane’s text captures that came back 200 plus any provider read logged for a URL with no capture; the two events passes split their yield (5 + 7) so the event count is not double-counted.",
+  "pages_captured_distinct": 135,
+  "pages_listed_in_manifest": 137,
+  "pages_read_total": 112,
+  "sources_pages_total": 61,
+  "sources_rows": 59
+ },
+ "run_id": "run-20261124-bp-b1",
+ "stop_rule": "The evidence audit reclassified three rooms as leads; current assessed count 27. See per-lane outcomes for blocked sources and coverage gaps.",
+ "unmapped_venues": [],
+ "zeros": [
+  "platform",
+  "gallery_museum",
+  "theatre"
+ ]
+}

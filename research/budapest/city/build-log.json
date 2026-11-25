@@ -1,0 +1,458 @@
+{
+ "captures": {
+  "archives": [
+   {
+    "bytes": 9524535,
+    "name": "round1/pages-round1.tar.gz",
+    "sha256": "9c3e507831ee1220a0395e51262ed5a0a62b006b71a5e0b5ea81e62cca4fa08e"
+   },
+   {
+    "bytes": 37413,
+    "name": "round2/pages-round2.tar.gz",
+    "sha256": "c9cc3f948d847f865a1995747ced0354d7cef5a74553d19268b354def7811e33"
+   },
+   {
+    "bytes": 1300246,
+    "name": "round3/pages-round3.tar.gz",
+    "sha256": "84b9ce50c5efcfcfb20c8056205ca5f9bb8230d729b9d9558a912c124c876087"
+   },
+   {
+    "bytes": 315849,
+    "name": "round4/pages-round4.tar.gz",
+    "sha256": "235229fd64bdf39f385b1c2c2de06fc1336f3761bc33ea79f67f77bdc0b4a6aa"
+   },
+   {
+    "bytes": 10605,
+    "name": "round6/pages-round6.tar.gz",
+    "sha256": "ff6f49cdf07507ecd5985189a66526dcecaf797fde41262a494d5c04b74754cf"
+   }
+  ],
+  "pages_listed": 137
+ },
+ "checked_on": "2026-11-24",
+ "claim_locators": {
+  "fields_checked": [
+   "address",
+   "capacity",
+   "capacity_basis",
+   "price",
+   "programme_windows",
+   "access_window",
+   "closing_time"
+  ],
+  "located": {
+   "access_window": 5,
+   "address": 21,
+   "capacity": 28,
+   "capacity_basis": 28,
+   "closing_time": 3,
+   "price": 8,
+   "programme_windows": 4
+  },
+  "lost_since_round4": {
+   "a38": [
+    "address",
+    "programme_windows"
+   ],
+   "akvarium-aranyhall": [
+    "programme_windows"
+   ],
+   "balna-bathory": [
+    "programme_windows"
+   ],
+   "beework-anko": [
+    "programme_windows"
+   ],
+   "bmc-library": [
+    "programme_windows"
+   ],
+   "continental-buda-pest": [
+    "programme_windows"
+   ],
+   "corinthia-petofi": [
+    "programme_windows"
+   ],
+   "d50": [
+    "programme_windows"
+   ],
+   "elte-library-aula": [
+    "address"
+   ],
+   "hungaria-imperial": [
+    "address"
+   ],
+   "impact-hub": [
+    "programme_windows"
+   ],
+   "loffice-a": [
+    "programme_windows"
+   ],
+   "loffice-maxi": [
+    "programme_windows"
+   ],
+   "lumen": [
+    "address",
+    "programme_windows"
+   ],
+   "millenaris-glass": [
+    "programme_windows"
+   ],
+   "pesti-vigado-ceremonial": [
+    "address",
+    "programme_windows"
+   ],
+   "stifler-beerhouse": [
+    "programme_windows"
+   ],
+   "winehub": [
+    "address"
+   ]
+  },
+  "method": "Only exact, reviewed source values and their room/table context qualify; quote, URL and line numbers are checked against the hash-pinned archived text (or the separately pinned CEU provider excerpt). Withdrawals since round 4 are listed in build/claim-locators.json. A missing locator is null in the locator ledger; the store omits the null key per its normalizer and records the reason as conditions.",
+  "no_located_line": {
+   "access_window": 26,
+   "address": 10,
+   "capacity": 3,
+   "capacity_basis": 3,
+   "closing_time": 28,
+   "price": 23,
+   "programme_windows": 27
+  },
+  "provider_extract": {
+   "path": "captures/ceu-quantum-provider.txt",
+   "provider": "Exa search rescue of DuckDuckGo, result 1",
+   "query": "CEU Nador Event Center Quantum room seating 60 spacerental conference Budapest Quantum terem kapacitás 60",
+   "scope": "Verbatim contiguous excerpt of Quantum capacity table from the provider description of the CEU PDF; it is not a full PDF extract and prints no hours. Direct PDF retrieval returned HTTP 403.",
+   "sha256": "263adf1342fdf9d6bf409de5d02a611bcc87ab5bc5f1520ca12706e388f9bcfd",
+   "slug": "ceu-quantum-provider",
+   "source_url": "https://spacerental.ceu.edu/sites/default/files/2025-10/ceu_webmagazin_hun_v2_20251013_compressed.pdf"
+  }
+ },
+ "commands": {
+  "build": "../hermes-skills/.venv/bin/python research/budapest/city/build/bp_build.py",
+  "check": "../hermes-skills/.venv/bin/python ../hermes-skills/plan-event/scripts/city_store.py --check research/budapest/city/city.json --registry ../hermes-skills/plan-event/references/school_holidays.json",
+  "rebuild": "../hermes-skills/.venv/bin/python ../hermes-skills/plan-event/scripts/city_store.py --merge-run research/budapest/city/run-bundle.json --store research/budapest/city/seed.json --out \"$TMPDIR/bp-rebuild.json\" --updated-at 2026-11-24T21:30:00Z --registry ../hermes-skills/plan-event/references/school_holidays.json",
+  "replay": "../hermes-skills/.venv/bin/python ../hermes-skills/plan-event/scripts/city_store.py --merge-run research/budapest/city/run-bundle.json --store research/budapest/city/city.json --out \"$TMPDIR/bp-replay.json\" --updated-at 2026-11-24T21:30:00Z --registry ../hermes-skills/plan-event/references/school_holidays.json",
+  "tests": "cd ../hermes-skills/plan-event && ../.venv/bin/python -m pytest tests -q"
+ },
+ "counts": {
+  "assessed_open": 27,
+  "communities": 18,
+  "community_activity": {
+   "active": 9,
+   "dormant": 3,
+   "intermittent": 6
+  },
+  "coordinates_derived": 26,
+  "coordinates_without_pin": [
+   "A38 Ship — Event Spaces",
+   "Impact Hub Budapest — Community & Event Space",
+   "Lumen Kávéház — Big Room",
+   "Winehub Budapest — event venue",
+   "meety.hu — Wanatka terem"
+  ],
+  "coverage_rows": 1,
+  "events_2027": 12,
+  "geocode_failed": 5,
+  "geocode_matched": 26,
+  "holiday_rows": 12,
+  "lane_passes": 24,
+  "lane_zeros": 3,
+  "leads": 4,
+  "mandatory_sources": 5,
+  "photo_venues_with_1_3": 5,
+  "photo_venues_with_4plus": 9,
+  "photo_venues_with_none": 17,
+  "photos_usable": 48,
+  "photos_withheld": 31,
+  "seated_capacity_basis": 15,
+  "sources_rows": 59,
+  "transit_derived": 26,
+  "venue_claim_capacity_basis": 12,
+  "venue_records": 31
+ },
+ "event_source_disposition": {
+  "applied": [
+   {
+    "kept": [
+     "date_range",
+     "city",
+     "relevance"
+    ],
+    "name": "Budapest Data+AI Forum 2027",
+    "not_kept": [
+     "venue",
+     "capacity",
+     "attendance"
+    ]
+   },
+   {
+    "kept": [
+     "date_range",
+     "city",
+     "relevance"
+    ],
+    "name": "DevFest Budapest Conference 2027",
+    "not_kept": [
+     "venue",
+     "capacity",
+     "attendance"
+    ]
+   }
+  ],
+  "events": [
+   {
+    "date": {
+     "end": "2027-05-12",
+     "start": "2027-05-10"
+    },
+    "event_id": "budapest-ev-45e2817688ca",
+    "name": "Budapest Data+AI Forum 2027",
+    "source": "https://sessionize.com/budapestdai27/"
+   },
+   {
+    "date": {
+     "end": "2027-02-27",
+     "start": "2027-02-27"
+    },
+    "event_id": "budapest-ev-9fa88f36e914",
+    "name": "DevFest Budapest Conference 2027",
+    "source": "https://sessionize.com/devfest-budapest-2026-on-campus/"
+   }
+  ],
+  "rule": "An aggregator page counts as an organiser edition only where the listing itself is organiser-authored and dated (a call for speakers posted by the organiser on a CFP platform). Such a row keeps the date and city it prints and never borrows a venue or a capacity; both stay unknown with a confirmation question. A pure directory card with no organiser edition would be logged as a lead, not as an event."
+ },
+ "honest_gaps": [
+  "Corinthia is the only over-budget row and its band is third-party, low confidence; its price_detail cites conferencehotelgroup.com, not corinthia.com.",
+  "Transit is a derived nearest metro station only: no BKK timetable, tram stop or last departure was read, so a 21:00 finish is unproven for every room.",
+  "Winter access is not assessed for any room: no operator statement and no site visit.",
+  "No 2027 substitute-workday decree was found; the substitute-day answer is unknown.",
+  "AI Tinkerers and the InterContinental page were read through the search provider after HTTP 403; the mandatory AI Tinkerers check is a provider read, not a direct one.",
+  "Photos: all 48 usable images are building photographs taken from Wikimedia Commons — not one shows the rentable room, so the page cannot show a room interior for any venue.",
+  "Operator photo rights are unestablished for all 15 operator galleries, so those tiles are withheld; 17 of the 31 rooms have no usable image and every one of them carries an explicit withheld record (15 operator galleries, 16 rooms with no candidate image at all, some rooms both).",
+  "Capacity quotes for hotel and room-table rows are transcribed cell by cell from the operator table and joined in page order; they are not contiguous sentences from the page.",
+  "Lumen and Wanatka carry no coordinate: Lumen's page prints two premises without tying the rooms to one, and Wanatka's page prints no house number, so no point was pinned.",
+  "Two Luma organisers publish 2027 dates (epicllama 2027-01-14, runninglatteclub 2027-09-17); both are lifestyle events and are logged in the lane rather than added to the event list.",
+  "Venue Report's Budapest collection could not be read at all (HTTP 403 from this host); its venue names are known only from provider snippets and none is assessed.",
+  "Page handoff: 12 of 18 community rows print a dated held event (7 within 12 months). The legacy Comets ledger adds a 13th group, but its held-event dates are not printed in the current store. Do not count a check date or a future listing as a held event.",
+  "Page handoff: source-row yields are not additive or a reconciliation of unique store records. Use the deduped store and lane-pass totals; InterContinental is a lead, not an assessment, notwithstanding its source-row discovery credit.",
+  "Page handoff: hourly base estimates are not comparable programme quotes on unverified windows; Lumen 8h and Loffice Maxi 12h programme costs are unknown. Keep the nearest-metro method and unverified 21:00 service visible on the affected venue rows.",
+  "BME was not checked to room level: no rental page or viable room was captured; no zero inventory assertion.",
+  "event_window_status is legacy and unknown on all 31; the Budapest paired profile uses the two separate programme_windows values. Published package rates are not time guarantees.",
+  "New York Café, InterContinental Panorama and Winehub moved to leads: no saved room-specific capacity line. Of the 27 assessments, 15 have a seated basis and 12 have only a venue capacity claim. The strict 20-venue seated threshold is not met.",
+  "No 12-hour yes. No CEU rental interval was verified; saved provider text is capacity-only. Bálna public hours are not rental hours."
+ ],
+ "inputs": {
+  "capture-manifest.json": {
+   "note": "URL to capture manifest",
+   "path": "/home/joe/repo_dev/coe-events/research/budapest/city/capture-manifest.json",
+   "sha256": "71343780ca51beb324c1606d02ebaf74a6243d8e59037bbdae4b3abbd5f564f9"
+  },
+  "claim-locators.json": {
+   "note": "Line locators derived from the saved page text for the printed facts",
+   "path": "/home/joe/repo_dev/coe-events/research/budapest/city/build/claim-locators.json",
+   "sha256": "b095536b7fc61a08c7c2c25678ededd3ba167c0a1a7892740dc11529e9c369c5"
+  },
+  "commons_bp/": {
+   "files": 16,
+   "note": "Commons file metadata used to build the photo rows",
+   "path": "/home/joe/repo_dev/coe-events/research/budapest/city/build/commons_bp"
+  },
+  "geocode-log.json": {
+   "note": "Nominatim lookups, one per venue",
+   "path": "/home/joe/repo_dev/coe-events/research/budapest/city/geocode-log.json",
+   "sha256": "ede7ca55c8070e2616d74ad68f53270aadad220dceb43f1d6363f341c582d4ec"
+  },
+  "holiday-supplement.json": {
+   "path": "/home/joe/repo_dev/coe-events/research/budapest/city/holiday-supplement.json",
+   "sha256": "c73c16af46a8cef5b2e61bf6e1c125951715476646c2fc0c998a0222ae042a45"
+  },
+  "legacy shortlist": {
+   "note": "2026-q4 source of the legacy name/score lineage",
+   "path": "/home/joe/repo_dev/coe-events/research/budapest/2026-q4/venues.shortlist.json",
+   "sha256": "4c91db5876f3c8250defc70656dfa3c9f47497444eb13266cb565b711399a63a"
+  },
+  "metro-stations.json": {
+   "note": "Wikipedia station coordinates",
+   "path": "/home/joe/repo_dev/coe-events/research/budapest/city/metro-stations.json",
+   "sha256": "4adb133aa713b2663a5fd28f717d2e1361c8b2af5a71c2d2f94ab3f3d6cb7384"
+  },
+  "operator-galleries.json": {
+   "path": "/home/joe/repo_dev/coe-events/research/budapest/city/build/operator-galleries.json",
+   "sha256": "861d6cb274b5aaf54f32ae5c0ed22371a2fdbd581e4b484b5273b45f85f18f23"
+  },
+  "photo-verify.json": {
+   "path": "/home/joe/repo_dev/coe-events/research/budapest/city/build/photo-verify.json",
+   "sha256": "0b7f2281a49d3151a472401b44bd8016a782c2cef9127a344f5f27a614a9821e"
+  },
+  "run-bundle.json": {
+   "path": "/home/joe/repo_dev/coe-events/research/budapest/city/run-bundle.json",
+   "sha256": "6973ad49d735d23c475d039f5f4c78dead12581785f8f7a9db26d171d5a290f1"
+  },
+  "seed.json": {
+   "path": "/home/joe/repo_dev/coe-events/research/budapest/city/seed.json",
+   "sha256": "9b4bec07b21b86edefa23a9e3bf2fe67bed3a3cc60ceab4c6e08380bb9d6853f"
+  }
+ },
+ "lane_reconciliation": {
+  "captures_outside_a_lane": [
+   "cor-venues",
+   "gal-bálna"
+  ],
+  "failed_captures": [
+   "conf-hungexpo",
+   "cw-hubhub",
+   "ev-amuse",
+   "ev-bbc",
+   "ev-dataai-hu",
+   "ev-dataai-official",
+   "ev-devconf-hu",
+   "ev-smartcity-hu",
+   "food-nebih",
+   "gal-szepmuveszeti",
+   "hot-ihg",
+   "hu-hrportal-2027",
+   "law-alap",
+   "law-alap-jogtar",
+   "law-mt",
+   "lo-vigado",
+   "lo-workin",
+   "metrostations",
+   "mg-ait",
+   "plat-eventective-404",
+   "plat-rendezvenyhelyszin",
+   "plat-szallas",
+   "plat-tagvenue-404",
+   "plat-venuereport",
+   "ruin-szimpla",
+   "theatre-trafo",
+   "tr-trafo"
+  ],
+  "note": "pages_read counts a lane’s text captures that came back 200 plus any provider read logged for a URL with no capture; the two events passes split their yield (5 + 7) so the event count is not double-counted.",
+  "pages_captured_distinct": 135,
+  "pages_listed_in_manifest": 137,
+  "pages_read_total": 112,
+  "round1": 95,
+  "round2": 5,
+  "round3": 28,
+  "round4": 8,
+  "round6": 1,
+  "sources_pages_total": 61,
+  "sources_rows": 59
+ },
+ "legacy_lineage": {
+  "dropped_leads": 5,
+  "joined_to_a_store_id": 16,
+  "legacy_records": 21,
+  "note": "score_present counts surviving rooms whose 2026-q4 record carried a numeric score; score_missing lists the survivors whose source score was null (Pesti Vigadó). tier_reasons_present counts survivors whose source tier_reasons list was non-empty; the field is carried as-is, never invented.",
+  "score_missing": [
+   "Pesti Vigadó — Ceremonial Hall"
+  ],
+  "score_present": 14,
+  "tier_reasons_present": 1
+ },
+ "note": "city.json = merge(seed.json, run-bundle.json). Photos, holidays, coverage, local_requirements, the source ledger and the derived checks live in the seed; venues, events and communities come from the run bundle. The build reads only files in this repository and makes no network request. No page, index.html or other city was touched.",
+ "output": {
+  "bytes": 1180940,
+  "path": "/home/joe/repo_dev/coe-events/research/budapest/city/city.json",
+  "sha256": "e8e8fa2665a18a163d4a416d75982a4190881909089396c90b6d5f7edaead607"
+ },
+ "photo_scope": {
+  "statement": "All usable images are building photographs: Wikimedia Commons files chosen because the file title or description places the building at the venue address. None shows the rentable room, so no room interior is illustrated for any venue.",
+  "usable": 48,
+  "usable_showing_building_exterior": 48,
+  "usable_showing_the_rentable_room": 0,
+  "withheld": 31,
+  "withheld_reasons": {
+   "no_candidate_image": 16,
+   "operator_gallery_rights_unestablished": 15
+  }
+ },
+ "pinned": {
+  "cities.json": {
+   "path": "/home/joe/repo_dev/hermes-skills/plan-event/references/cities.json",
+   "sha256": "9b6b5713064ca61b84f4baf38127b0f9e7529a36bfa838e28ef30cdc90c8c7e8"
+  },
+  "school_holidays.json": {
+   "path": "/home/joe/repo_dev/hermes-skills/plan-event/references/school_holidays.json",
+   "sha256": "b823b0e20ea437adc260c905ec6f0ab82da20a95b3f22bd0ccb007011d175840"
+  }
+ },
+ "platform_lanes": {
+  "Eventective Budapest": {
+   "disposition": "no_hungary_inventory",
+   "outcome": "checked_with_zero",
+   "pages_read": 2,
+   "result_count": 0,
+   "rooms_assessed": 0
+  },
+  "Peerspace Budapest": {
+   "disposition": "no_budapest_inventory",
+   "outcome": "provider_read",
+   "pages_read": 1,
+   "result_count": 0,
+   "rooms_assessed": 0
+  },
+  "Tagvenue Budapest": {
+   "disposition": "no_budapest_market",
+   "outcome": "checked_with_zero",
+   "pages_read": 2,
+   "result_count": 0,
+   "rooms_assessed": 0
+  },
+  "Venue Report Budapest": {
+   "disposition": "blocked_http_403",
+   "outcome": "blocked",
+   "pages_read": 0,
+   "result_count": null,
+   "rooms_assessed": 0
+  }
+ },
+ "programme_windows": {
+  "denominator": "assessed rooms only (27)",
+  "w12": {
+   "no": 4,
+   "unknown": 23,
+   "yes": 0
+  },
+  "w8": {
+   "no": 0,
+   "unknown": 25,
+   "yes": 2
+  },
+  "whole_store_denominator": 31
+ },
+ "proof": {
+  "build": "wrote research/budapest/city/city.json sha256 e8e8fa2665a18a163d4a416d75982a4190881909089396c90b6d5f7edaead607",
+  "captures": "text extracts and fetch index archived under research/budapest/city/captures; raw HTML hashes are in capture-manifest.json",
+  "check": "OK: research/budapest/city/city.json (schema city-store/1, 31 venues)",
+  "rebuild": "seed + run-bundle merge byte-identical to city.json (cmp silent)",
+  "replay": "replay onto city.json reported noop=True and was byte-identical (cmp silent)",
+  "tests": "1,521 passed / 9 pre-existing failures in 81.87s",
+  "tests_caveat": "Full suite on 2026-11-24: 1,521 passed / 9 failed. All nine are in tests/test_city_index.py and tests/test_summary_r2_entry.py and none reads a Budapest file — moving research/budapest/city/city.json aside reproduces the same 9 failures, and restoring it changes nothing. They pre-exist this card: they fail on the Singapore city page another session published and committed as 34fc3e2 (the pinned index baseline expects 3 city cards and now sees 4, and the index fixture expects research/singapore/city/city.json). Excluding those two files the suite is 1,501 passed. No other city, index.html or summary HTML was edited by this card."
+ },
+ "revision": "Round 6: archived The Budapest Exchange organiser page and cited the FAQ; attached reviewed English glosses to Hungarian venue quotes; limited hourly programme costs to verified time windows. Round 5 exact venue locators and CEU window downgrade are retained.",
+ "run_id": "run-20261124-bp-b1",
+ "size_ceiling": {
+  "amended_by": "manager round 3: \"ceiling amended to 1,000 and recorded. Do not compress code to hit a number I guessed; state the metric you are measuring and keep the build readable.\"",
+  "files": {
+   "bp_build.py": {
+    "non_blank_lines": 765,
+    "total_lines": 828
+   },
+   "bp_commons.py": {
+    "non_blank_lines": 69,
+    "total_lines": 77
+   },
+   "bp_log.py": {
+    "non_blank_lines": 165,
+    "total_lines": 177
+   }
+  },
+  "limit": 1000,
+  "measured": 999,
+  "metric": "non-blank lines in the hand-written build tooling (build/bp_build.py, build/bp_log.py, build/bp_commons.py). bp_specs.py and build/claim-locators.json are excluded as sourced data, matching the Singapore precedent that excluded sg_data.py. Blank lines do not count; comments do. This note lives in build/log-notes.json so the metric measures code, not prose.",
+  "previous_limit": 600
+ },
+ "working_directory": "coe-events repository root (hermes-skills is a sibling checkout)"
+}
