@@ -1,0 +1,341 @@
+{
+  "base_registry": {
+    "note": "The shared registry has no Portuguese scope, so this supplement adds PT and PT:lisbon without altering it.",
+    "path": "/home/joe/repo_dev/hermes-skills/plan-event/references/school_holidays.json",
+    "sha256": "b823b0e20ea437adc260c905ec6f0ab82da20a95b3f22bd0ccb007011d175840"
+  },
+  "checked_on": "2026-11-24",
+  "city_slug": "lisbon-pt",
+  "coverage": [
+    {
+      "accessed_on": "2026-11-24",
+      "end_date": "2027-12-31",
+      "evidence": {
+        "observed_facts": "The statutory list covers the full 2027 year. Two rules can move a day: art. 234.º n.º 2 allows Good Friday to be observed on another Easter-period day with local meaning, and n.º 3 allows specific legislation to move a holiday to the following Monday. No 2027 instrument applying either rule to Lisbon was found, so the dates are stored as the statutory calendar with those conditions open."
+      },
+      "jurisdiction_id": "PT",
+      "kind": "public_holiday_coverage",
+      "needs_human_verify": true,
+      "quote": "Perguntar sobre este artigoVer planosGrátis para começar · sem cartão de créditoComo citar este artigoArtigo 234.º do Código do Trabalho (Lei n.º 7/2009, de 12 de Fevereiro). TogaAI — Legislação. Texto consolidado à data de 13 de outubro de 2026. Disponível em: https://togai.pt/legislacao/codigo-trabalho/artigo-234",
+      "source_edition": "Texto consolidado, última atualização 2026-10-13",
+      "source_locator": "Art. 234.º n.º 1",
+      "source_title": "Artigo 234.º (Feriados obrigatórios) — Código do Trabalho",
+      "source_url": "https://www.togai.pt/legislacao/codigo-trabalho/artigo-234",
+      "start_date": "2027-01-01",
+      "verified": true
+    },
+    {
+      "accessed_on": "2026-11-24",
+      "end_date": "2027-12-31",
+      "evidence": {
+        "observed_facts": "Only one municipal day (13 June) is claimed. The page fixes it every year and cites the Assembleia Municipal de Lisboa and Lei 75/2013 art. 25.º n.º 2 m). It is facultative for private employers under art. 235.º."
+      },
+      "jurisdiction_id": "PT:lisbon",
+      "kind": "municipal_holiday_coverage",
+      "needs_human_verify": true,
+      "quote": "O feriado municipal de Lisboa é a 13 de junho, dia de Santo António. Em 2027 calha a um domingo, 13 de junho, e não tem efeito nas aulas.\n202713 jun 2027, domingo",
+      "source_edition": "Read 2026-11-24",
+      "source_locator": "Date table and sources section",
+      "source_title": "Feriado Municipal de Lisboa 2027: 13 de junho, domingo",
+      "source_url": "https://calendarioescolar.pt/feriado-municipal-lisboa/",
+      "start_date": "2027-01-01",
+      "verified": true
+    }
+  ],
+  "holidays": [
+    {
+      "accessed_on": "2026-11-24",
+      "derived": true,
+      "end_date": "2027-01-01",
+      "evidence": {
+        "observed_facts": "Art. 234.º n.º 1 lists the 13 statutory days. The 2027 calendar date is derived from that fixed list; Easter-dependent days use the Gregorian computus (Easter Sunday 2027-03-28). Cross-checked against a Portuguese calendar page read on 2026-11-24: Seis feriados de 2027 calham em dias de aulas nas escolas públicas do continente\nOs feriados de janeiro a junho de 2027 pertencem ao ano letivo 2026/2027. Os de outubro a dezembro pertencem ao ano letivo 2027/2028.\nFeriadoO que acontece nas escolas\n1 de janeiro de 2027Sem efeito. As aulas do 2.º per"
+      },
+      "holiday_name": "Ano Novo",
+      "jurisdiction_id": "PT",
+      "kind": "public_holiday",
+      "name_en": "New Year's Day",
+      "needs_human_verify": true,
+      "observance": "statutory",
+      "quote": "Perguntar sobre este artigoVer planosGrátis para começar · sem cartão de créditoComo citar este artigoArtigo 234.º do Código do Trabalho (Lei n.º 7/2009, de 12 de Fevereiro). TogaAI — Legislação. Texto consolidado à data de 13 de outubro de 2026. Disponível em: https://togai.pt/legislacao/codigo-trabalho/artigo-234",
+      "source_edition": "Texto consolidado, última atualização 2026-10-13",
+      "source_locator": "Art. 234.º n.º 1 (statutory list); 2027 date cross-checked against calendarioescolar.pt",
+      "source_title": "Artigo 234.º (Feriados obrigatórios) — Código do Trabalho",
+      "source_url": "https://www.togai.pt/legislacao/codigo-trabalho/artigo-234",
+      "start_date": "2027-01-01",
+      "verified": true
+    },
+    {
+      "accessed_on": "2026-11-24",
+      "derived": true,
+      "end_date": "2027-03-26",
+      "evidence": {
+        "observed_facts": "Art. 234.º n.º 1 lists the 13 statutory days. The 2027 calendar date is derived from that fixed list; Easter-dependent days use the Gregorian computus (Easter Sunday 2027-03-28). Cross-checked against a Portuguese calendar page read on 2026-11-24: Seis feriados de 2027 calham em dias de aulas nas escolas públicas do continente\nOs feriados de janeiro a junho de 2027 pertencem ao ano letivo 2026/2027. Os de outubro a dezembro pertencem ao ano letivo 2027/2028.\nFeriadoO que acontece nas escolas\n1 de janeiro de 2027Sem efeito. As aulas do 2.º per"
+      },
+      "holiday_name": "Sexta-Feira Santa",
+      "jurisdiction_id": "PT",
+      "kind": "public_holiday",
+      "name_en": "Good Friday",
+      "needs_human_verify": true,
+      "observance": "statutory",
+      "quote": "Perguntar sobre este artigoVer planosGrátis para começar · sem cartão de créditoComo citar este artigoArtigo 234.º do Código do Trabalho (Lei n.º 7/2009, de 12 de Fevereiro). TogaAI — Legislação. Texto consolidado à data de 13 de outubro de 2026. Disponível em: https://togai.pt/legislacao/codigo-trabalho/artigo-234",
+      "source_edition": "Texto consolidado, última atualização 2026-10-13",
+      "source_locator": "Art. 234.º n.º 1 (statutory list); 2027 date cross-checked against calendarioescolar.pt",
+      "source_title": "Artigo 234.º (Feriados obrigatórios) — Código do Trabalho",
+      "source_url": "https://www.togai.pt/legislacao/codigo-trabalho/artigo-234",
+      "start_date": "2027-03-26",
+      "verified": true
+    },
+    {
+      "accessed_on": "2026-11-24",
+      "derived": true,
+      "end_date": "2027-03-28",
+      "evidence": {
+        "observed_facts": "Art. 234.º n.º 1 lists the 13 statutory days. The 2027 calendar date is derived from that fixed list; Easter-dependent days use the Gregorian computus (Easter Sunday 2027-03-28). Cross-checked against a Portuguese calendar page read on 2026-11-24: Seis feriados de 2027 calham em dias de aulas nas escolas públicas do continente\nOs feriados de janeiro a junho de 2027 pertencem ao ano letivo 2026/2027. Os de outubro a dezembro pertencem ao ano letivo 2027/2028.\nFeriadoO que acontece nas escolas\n1 de janeiro de 2027Sem efeito. As aulas do 2.º per"
+      },
+      "holiday_name": "Domingo de Páscoa",
+      "jurisdiction_id": "PT",
+      "kind": "public_holiday",
+      "name_en": "Easter Sunday",
+      "needs_human_verify": true,
+      "observance": "statutory",
+      "quote": "Perguntar sobre este artigoVer planosGrátis para começar · sem cartão de créditoComo citar este artigoArtigo 234.º do Código do Trabalho (Lei n.º 7/2009, de 12 de Fevereiro). TogaAI — Legislação. Texto consolidado à data de 13 de outubro de 2026. Disponível em: https://togai.pt/legislacao/codigo-trabalho/artigo-234",
+      "source_edition": "Texto consolidado, última atualização 2026-10-13",
+      "source_locator": "Art. 234.º n.º 1 (statutory list); 2027 date cross-checked against calendarioescolar.pt",
+      "source_title": "Artigo 234.º (Feriados obrigatórios) — Código do Trabalho",
+      "source_url": "https://www.togai.pt/legislacao/codigo-trabalho/artigo-234",
+      "start_date": "2027-03-28",
+      "verified": true
+    },
+    {
+      "accessed_on": "2026-11-24",
+      "derived": true,
+      "end_date": "2027-04-25",
+      "evidence": {
+        "observed_facts": "Art. 234.º n.º 1 lists the 13 statutory days. The 2027 calendar date is derived from that fixed list; Easter-dependent days use the Gregorian computus (Easter Sunday 2027-03-28). Cross-checked against a Portuguese calendar page read on 2026-11-24: Seis feriados de 2027 calham em dias de aulas nas escolas públicas do continente\nOs feriados de janeiro a junho de 2027 pertencem ao ano letivo 2026/2027. Os de outubro a dezembro pertencem ao ano letivo 2027/2028.\nFeriadoO que acontece nas escolas\n1 de janeiro de 2027Sem efeito. As aulas do 2.º per"
+      },
+      "holiday_name": "Dia da Liberdade",
+      "jurisdiction_id": "PT",
+      "kind": "public_holiday",
+      "name_en": "Freedom Day",
+      "needs_human_verify": true,
+      "observance": "statutory",
+      "quote": "Perguntar sobre este artigoVer planosGrátis para começar · sem cartão de créditoComo citar este artigoArtigo 234.º do Código do Trabalho (Lei n.º 7/2009, de 12 de Fevereiro). TogaAI — Legislação. Texto consolidado à data de 13 de outubro de 2026. Disponível em: https://togai.pt/legislacao/codigo-trabalho/artigo-234",
+      "source_edition": "Texto consolidado, última atualização 2026-10-13",
+      "source_locator": "Art. 234.º n.º 1 (statutory list); 2027 date cross-checked against calendarioescolar.pt",
+      "source_title": "Artigo 234.º (Feriados obrigatórios) — Código do Trabalho",
+      "source_url": "https://www.togai.pt/legislacao/codigo-trabalho/artigo-234",
+      "start_date": "2027-04-25",
+      "verified": true
+    },
+    {
+      "accessed_on": "2026-11-24",
+      "derived": true,
+      "end_date": "2027-05-01",
+      "evidence": {
+        "observed_facts": "Art. 234.º n.º 1 lists the 13 statutory days. The 2027 calendar date is derived from that fixed list; Easter-dependent days use the Gregorian computus (Easter Sunday 2027-03-28). Cross-checked against a Portuguese calendar page read on 2026-11-24: Seis feriados de 2027 calham em dias de aulas nas escolas públicas do continente\nOs feriados de janeiro a junho de 2027 pertencem ao ano letivo 2026/2027. Os de outubro a dezembro pertencem ao ano letivo 2027/2028.\nFeriadoO que acontece nas escolas\n1 de janeiro de 2027Sem efeito. As aulas do 2.º per"
+      },
+      "holiday_name": "Dia do Trabalhador",
+      "jurisdiction_id": "PT",
+      "kind": "public_holiday",
+      "name_en": "Labour Day",
+      "needs_human_verify": true,
+      "observance": "statutory",
+      "quote": "Perguntar sobre este artigoVer planosGrátis para começar · sem cartão de créditoComo citar este artigoArtigo 234.º do Código do Trabalho (Lei n.º 7/2009, de 12 de Fevereiro). TogaAI — Legislação. Texto consolidado à data de 13 de outubro de 2026. Disponível em: https://togai.pt/legislacao/codigo-trabalho/artigo-234",
+      "source_edition": "Texto consolidado, última atualização 2026-10-13",
+      "source_locator": "Art. 234.º n.º 1 (statutory list); 2027 date cross-checked against calendarioescolar.pt",
+      "source_title": "Artigo 234.º (Feriados obrigatórios) — Código do Trabalho",
+      "source_url": "https://www.togai.pt/legislacao/codigo-trabalho/artigo-234",
+      "start_date": "2027-05-01",
+      "verified": true
+    },
+    {
+      "accessed_on": "2026-11-24",
+      "derived": true,
+      "end_date": "2027-05-27",
+      "evidence": {
+        "observed_facts": "Art. 234.º n.º 1 lists the 13 statutory days. The 2027 calendar date is derived from that fixed list; Easter-dependent days use the Gregorian computus (Easter Sunday 2027-03-28). Cross-checked against a Portuguese calendar page read on 2026-11-24: Seis feriados de 2027 calham em dias de aulas nas escolas públicas do continente\nOs feriados de janeiro a junho de 2027 pertencem ao ano letivo 2026/2027. Os de outubro a dezembro pertencem ao ano letivo 2027/2028.\nFeriadoO que acontece nas escolas\n1 de janeiro de 2027Sem efeito. As aulas do 2.º per"
+      },
+      "holiday_name": "Corpo de Deus",
+      "jurisdiction_id": "PT",
+      "kind": "public_holiday",
+      "name_en": "Corpus Christi",
+      "needs_human_verify": true,
+      "observance": "statutory",
+      "quote": "Perguntar sobre este artigoVer planosGrátis para começar · sem cartão de créditoComo citar este artigoArtigo 234.º do Código do Trabalho (Lei n.º 7/2009, de 12 de Fevereiro). TogaAI — Legislação. Texto consolidado à data de 13 de outubro de 2026. Disponível em: https://togai.pt/legislacao/codigo-trabalho/artigo-234",
+      "source_edition": "Texto consolidado, última atualização 2026-10-13",
+      "source_locator": "Art. 234.º n.º 1 (statutory list); 2027 date cross-checked against calendarioescolar.pt",
+      "source_title": "Artigo 234.º (Feriados obrigatórios) — Código do Trabalho",
+      "source_url": "https://www.togai.pt/legislacao/codigo-trabalho/artigo-234",
+      "start_date": "2027-05-27",
+      "verified": true
+    },
+    {
+      "accessed_on": "2026-11-24",
+      "derived": true,
+      "end_date": "2027-06-10",
+      "evidence": {
+        "observed_facts": "Art. 234.º n.º 1 lists the 13 statutory days. The 2027 calendar date is derived from that fixed list; Easter-dependent days use the Gregorian computus (Easter Sunday 2027-03-28). Cross-checked against a Portuguese calendar page read on 2026-11-24: Seis feriados de 2027 calham em dias de aulas nas escolas públicas do continente\nOs feriados de janeiro a junho de 2027 pertencem ao ano letivo 2026/2027. Os de outubro a dezembro pertencem ao ano letivo 2027/2028.\nFeriadoO que acontece nas escolas\n1 de janeiro de 2027Sem efeito. As aulas do 2.º per"
+      },
+      "holiday_name": "Dia de Portugal",
+      "jurisdiction_id": "PT",
+      "kind": "public_holiday",
+      "name_en": "Portugal Day",
+      "needs_human_verify": true,
+      "observance": "statutory",
+      "quote": "Perguntar sobre este artigoVer planosGrátis para começar · sem cartão de créditoComo citar este artigoArtigo 234.º do Código do Trabalho (Lei n.º 7/2009, de 12 de Fevereiro). TogaAI — Legislação. Texto consolidado à data de 13 de outubro de 2026. Disponível em: https://togai.pt/legislacao/codigo-trabalho/artigo-234",
+      "source_edition": "Texto consolidado, última atualização 2026-10-13",
+      "source_locator": "Art. 234.º n.º 1 (statutory list); 2027 date cross-checked against calendarioescolar.pt",
+      "source_title": "Artigo 234.º (Feriados obrigatórios) — Código do Trabalho",
+      "source_url": "https://www.togai.pt/legislacao/codigo-trabalho/artigo-234",
+      "start_date": "2027-06-10",
+      "verified": true
+    },
+    {
+      "accessed_on": "2026-11-24",
+      "derived": true,
+      "end_date": "2027-08-15",
+      "evidence": {
+        "observed_facts": "Art. 234.º n.º 1 lists the 13 statutory days. The 2027 calendar date is derived from that fixed list; Easter-dependent days use the Gregorian computus (Easter Sunday 2027-03-28). Cross-checked against a Portuguese calendar page read on 2026-11-24: Seis feriados de 2027 calham em dias de aulas nas escolas públicas do continente\nOs feriados de janeiro a junho de 2027 pertencem ao ano letivo 2026/2027. Os de outubro a dezembro pertencem ao ano letivo 2027/2028.\nFeriadoO que acontece nas escolas\n1 de janeiro de 2027Sem efeito. As aulas do 2.º per"
+      },
+      "holiday_name": "Assunção de Nossa Senhora",
+      "jurisdiction_id": "PT",
+      "kind": "public_holiday",
+      "name_en": "Assumption",
+      "needs_human_verify": true,
+      "observance": "statutory",
+      "quote": "Perguntar sobre este artigoVer planosGrátis para começar · sem cartão de créditoComo citar este artigoArtigo 234.º do Código do Trabalho (Lei n.º 7/2009, de 12 de Fevereiro). TogaAI — Legislação. Texto consolidado à data de 13 de outubro de 2026. Disponível em: https://togai.pt/legislacao/codigo-trabalho/artigo-234",
+      "source_edition": "Texto consolidado, última atualização 2026-10-13",
+      "source_locator": "Art. 234.º n.º 1 (statutory list); 2027 date cross-checked against calendarioescolar.pt",
+      "source_title": "Artigo 234.º (Feriados obrigatórios) — Código do Trabalho",
+      "source_url": "https://www.togai.pt/legislacao/codigo-trabalho/artigo-234",
+      "start_date": "2027-08-15",
+      "verified": true
+    },
+    {
+      "accessed_on": "2026-11-24",
+      "derived": true,
+      "end_date": "2027-10-05",
+      "evidence": {
+        "observed_facts": "Art. 234.º n.º 1 lists the 13 statutory days. The 2027 calendar date is derived from that fixed list; Easter-dependent days use the Gregorian computus (Easter Sunday 2027-03-28). Cross-checked against a Portuguese calendar page read on 2026-11-24: Seis feriados de 2027 calham em dias de aulas nas escolas públicas do continente\nOs feriados de janeiro a junho de 2027 pertencem ao ano letivo 2026/2027. Os de outubro a dezembro pertencem ao ano letivo 2027/2028.\nFeriadoO que acontece nas escolas\n1 de janeiro de 2027Sem efeito. As aulas do 2.º per"
+      },
+      "holiday_name": "Implantação da República",
+      "jurisdiction_id": "PT",
+      "kind": "public_holiday",
+      "name_en": "Republic Day",
+      "needs_human_verify": true,
+      "observance": "statutory",
+      "quote": "Perguntar sobre este artigoVer planosGrátis para começar · sem cartão de créditoComo citar este artigoArtigo 234.º do Código do Trabalho (Lei n.º 7/2009, de 12 de Fevereiro). TogaAI — Legislação. Texto consolidado à data de 13 de outubro de 2026. Disponível em: https://togai.pt/legislacao/codigo-trabalho/artigo-234",
+      "source_edition": "Texto consolidado, última atualização 2026-10-13",
+      "source_locator": "Art. 234.º n.º 1 (statutory list); 2027 date cross-checked against calendarioescolar.pt",
+      "source_title": "Artigo 234.º (Feriados obrigatórios) — Código do Trabalho",
+      "source_url": "https://www.togai.pt/legislacao/codigo-trabalho/artigo-234",
+      "start_date": "2027-10-05",
+      "verified": true
+    },
+    {
+      "accessed_on": "2026-11-24",
+      "derived": true,
+      "end_date": "2027-11-01",
+      "evidence": {
+        "observed_facts": "Art. 234.º n.º 1 lists the 13 statutory days. The 2027 calendar date is derived from that fixed list; Easter-dependent days use the Gregorian computus (Easter Sunday 2027-03-28). Cross-checked against a Portuguese calendar page read on 2026-11-24: Seis feriados de 2027 calham em dias de aulas nas escolas públicas do continente\nOs feriados de janeiro a junho de 2027 pertencem ao ano letivo 2026/2027. Os de outubro a dezembro pertencem ao ano letivo 2027/2028.\nFeriadoO que acontece nas escolas\n1 de janeiro de 2027Sem efeito. As aulas do 2.º per"
+      },
+      "holiday_name": "Todos os Santos",
+      "jurisdiction_id": "PT",
+      "kind": "public_holiday",
+      "name_en": "All Saints' Day",
+      "needs_human_verify": true,
+      "observance": "statutory",
+      "quote": "Perguntar sobre este artigoVer planosGrátis para começar · sem cartão de créditoComo citar este artigoArtigo 234.º do Código do Trabalho (Lei n.º 7/2009, de 12 de Fevereiro). TogaAI — Legislação. Texto consolidado à data de 13 de outubro de 2026. Disponível em: https://togai.pt/legislacao/codigo-trabalho/artigo-234",
+      "source_edition": "Texto consolidado, última atualização 2026-10-13",
+      "source_locator": "Art. 234.º n.º 1 (statutory list); 2027 date cross-checked against calendarioescolar.pt",
+      "source_title": "Artigo 234.º (Feriados obrigatórios) — Código do Trabalho",
+      "source_url": "https://www.togai.pt/legislacao/codigo-trabalho/artigo-234",
+      "start_date": "2027-11-01",
+      "verified": true
+    },
+    {
+      "accessed_on": "2026-11-24",
+      "derived": true,
+      "end_date": "2027-12-01",
+      "evidence": {
+        "observed_facts": "Art. 234.º n.º 1 lists the 13 statutory days. The 2027 calendar date is derived from that fixed list; Easter-dependent days use the Gregorian computus (Easter Sunday 2027-03-28). Cross-checked against a Portuguese calendar page read on 2026-11-24: Seis feriados de 2027 calham em dias de aulas nas escolas públicas do continente\nOs feriados de janeiro a junho de 2027 pertencem ao ano letivo 2026/2027. Os de outubro a dezembro pertencem ao ano letivo 2027/2028.\nFeriadoO que acontece nas escolas\n1 de janeiro de 2027Sem efeito. As aulas do 2.º per"
+      },
+      "holiday_name": "Restauração da Independência",
+      "jurisdiction_id": "PT",
+      "kind": "public_holiday",
+      "name_en": "Restoration of Independence",
+      "needs_human_verify": true,
+      "observance": "statutory",
+      "quote": "Perguntar sobre este artigoVer planosGrátis para começar · sem cartão de créditoComo citar este artigoArtigo 234.º do Código do Trabalho (Lei n.º 7/2009, de 12 de Fevereiro). TogaAI — Legislação. Texto consolidado à data de 13 de outubro de 2026. Disponível em: https://togai.pt/legislacao/codigo-trabalho/artigo-234",
+      "source_edition": "Texto consolidado, última atualização 2026-10-13",
+      "source_locator": "Art. 234.º n.º 1 (statutory list); 2027 date cross-checked against calendarioescolar.pt",
+      "source_title": "Artigo 234.º (Feriados obrigatórios) — Código do Trabalho",
+      "source_url": "https://www.togai.pt/legislacao/codigo-trabalho/artigo-234",
+      "start_date": "2027-12-01",
+      "verified": true
+    },
+    {
+      "accessed_on": "2026-11-24",
+      "derived": true,
+      "end_date": "2027-12-08",
+      "evidence": {
+        "observed_facts": "Art. 234.º n.º 1 lists the 13 statutory days. The 2027 calendar date is derived from that fixed list; Easter-dependent days use the Gregorian computus (Easter Sunday 2027-03-28). Cross-checked against a Portuguese calendar page read on 2026-11-24: Seis feriados de 2027 calham em dias de aulas nas escolas públicas do continente\nOs feriados de janeiro a junho de 2027 pertencem ao ano letivo 2026/2027. Os de outubro a dezembro pertencem ao ano letivo 2027/2028.\nFeriadoO que acontece nas escolas\n1 de janeiro de 2027Sem efeito. As aulas do 2.º per"
+      },
+      "holiday_name": "Imaculada Conceição",
+      "jurisdiction_id": "PT",
+      "kind": "public_holiday",
+      "name_en": "Immaculate Conception",
+      "needs_human_verify": true,
+      "observance": "statutory",
+      "quote": "Perguntar sobre este artigoVer planosGrátis para começar · sem cartão de créditoComo citar este artigoArtigo 234.º do Código do Trabalho (Lei n.º 7/2009, de 12 de Fevereiro). TogaAI — Legislação. Texto consolidado à data de 13 de outubro de 2026. Disponível em: https://togai.pt/legislacao/codigo-trabalho/artigo-234",
+      "source_edition": "Texto consolidado, última atualização 2026-10-13",
+      "source_locator": "Art. 234.º n.º 1 (statutory list); 2027 date cross-checked against calendarioescolar.pt",
+      "source_title": "Artigo 234.º (Feriados obrigatórios) — Código do Trabalho",
+      "source_url": "https://www.togai.pt/legislacao/codigo-trabalho/artigo-234",
+      "start_date": "2027-12-08",
+      "verified": true
+    },
+    {
+      "accessed_on": "2026-11-24",
+      "derived": true,
+      "end_date": "2027-12-25",
+      "evidence": {
+        "observed_facts": "Art. 234.º n.º 1 lists the 13 statutory days. The 2027 calendar date is derived from that fixed list; Easter-dependent days use the Gregorian computus (Easter Sunday 2027-03-28). Cross-checked against a Portuguese calendar page read on 2026-11-24: Seis feriados de 2027 calham em dias de aulas nas escolas públicas do continente\nOs feriados de janeiro a junho de 2027 pertencem ao ano letivo 2026/2027. Os de outubro a dezembro pertencem ao ano letivo 2027/2028.\nFeriadoO que acontece nas escolas\n1 de janeiro de 2027Sem efeito. As aulas do 2.º per"
+      },
+      "holiday_name": "Natal",
+      "jurisdiction_id": "PT",
+      "kind": "public_holiday",
+      "name_en": "Christmas Day",
+      "needs_human_verify": true,
+      "observance": "statutory",
+      "quote": "Perguntar sobre este artigoVer planosGrátis para começar · sem cartão de créditoComo citar este artigoArtigo 234.º do Código do Trabalho (Lei n.º 7/2009, de 12 de Fevereiro). TogaAI — Legislação. Texto consolidado à data de 13 de outubro de 2026. Disponível em: https://togai.pt/legislacao/codigo-trabalho/artigo-234",
+      "source_edition": "Texto consolidado, última atualização 2026-10-13",
+      "source_locator": "Art. 234.º n.º 1 (statutory list); 2027 date cross-checked against calendarioescolar.pt",
+      "source_title": "Artigo 234.º (Feriados obrigatórios) — Código do Trabalho",
+      "source_url": "https://www.togai.pt/legislacao/codigo-trabalho/artigo-234",
+      "start_date": "2027-12-25",
+      "verified": true
+    },
+    {
+      "accessed_on": "2026-11-24",
+      "derived": true,
+      "end_date": "2027-06-13",
+      "evidence": {
+        "observed_facts": "The calendar page states the municipal holiday is 13 June and falls on a Sunday in 2027. Art. 235.º makes the municipal day facultative, observed by collective agreement or contract. The Assembleia Municipal de Lisboa is the fixing authority; its own page returned 403 on 2026-11-24, so the date rests on the secondary calendar plus the statutory rule."
+      },
+      "holiday_name": "Santo António (feriado municipal de Lisboa)",
+      "jurisdiction_id": "PT:lisbon",
+      "kind": "municipal_holiday",
+      "name_en": "Lisbon municipal holiday",
+      "needs_human_verify": true,
+      "observance": "facultative",
+      "quote": "O feriado municipal de Lisboa é a 13 de junho, dia de Santo António. Em 2027 calha a um domingo, 13 de junho, e não tem efeito nas aulas.\n202713 jun 2027, domingo",
+      "source_edition": "Read 2026-11-24",
+      "source_locator": "Date table; art. 235.º n.º 1 of the Labour Code for the facultative rule",
+      "source_title": "Feriado Municipal de Lisboa 2027: 13 de junho, domingo",
+      "source_url": "https://calendarioescolar.pt/feriado-municipal-lisboa/",
+      "start_date": "2027-06-13",
+      "verified": true
+    }
+  ]
+}
