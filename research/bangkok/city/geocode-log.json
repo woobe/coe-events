@@ -1,0 +1,421 @@
+{
+ "checked_on": "2026-11-25",
+ "lookups": [
+  {
+   "attempts": [
+    {
+     "display_name": null,
+     "kind": "address",
+     "query": "199 Sukhumvit Soi 22, Klong Toey, Bangkok 10110, Thailand",
+     "status": "none",
+     "url": "https://nominatim.openstreetmap.org/search?q=199+Sukhumvit+Soi+22%2C+Klong+Toey%2C+Bangkok+10110%2C+Thailand&format=json&limit=1&addressdetails=1"
+    },
+    {
+     "class": "tourism",
+     "display_name": "Bangkok Marriott Marquis Queen’s Park, 199, ซอยสุขุมวิท 22, สุขุมวิท, แขวงคลองเตย, เขตคลองเตย, กรุงเทพมหานคร, 10110, ประเทศไทย",
+     "kind": "poi",
+     "latitude": 13.7302641,
+     "longitude": 100.5657084,
+     "osm_id": 1230362491,
+     "osm_type": "way",
+     "postal_present": true,
+     "precision": "address",
+     "query": "Bangkok Marriott Marquis Queen's Park",
+     "status": "ok",
+     "token_matched": "สุขุมวิท",
+     "type": "hotel",
+     "url": "https://nominatim.openstreetmap.org/search?q=Bangkok+Marriott+Marquis+Queen%27s+Park&format=json&limit=1&addressdetails=1"
+    }
+   ],
+   "checked_on": "2026-11-25",
+   "display_name": "Bangkok Marriott Marquis Queen’s Park, 199, ซอยสุขุมวิท 22, สุขุมวิท, แขวงคลองเตย, เขตคลองเตย, กรุงเทพมหานคร, 10110, ประเทศไทย",
+   "latitude": 13.7302641,
+   "longitude": 100.5657084,
+   "match": "postal code 10110 present and token 'สุขุมวิท' matched the returned display name",
+   "precision": "address",
+   "provider": "OpenStreetMap Nominatim",
+   "source_url": "https://nominatim.openstreetmap.org/search?q=Bangkok+Marriott+Marquis+Queen%27s+Park&format=json&limit=1&addressdetails=1",
+   "status": "ok",
+   "venue_slug": "marriott-marquis"
+  },
+  {
+   "attempts": [
+    {
+     "display_name": null,
+     "kind": "address",
+     "query": "155 Rajadamri Road, Bangkok 10330, Thailand",
+     "status": "none",
+     "url": "https://nominatim.openstreetmap.org/search?q=155+Rajadamri+Road%2C+Bangkok+10330%2C+Thailand&format=json&limit=1&addressdetails=1"
+    },
+    {
+     "class": "tourism",
+     "display_name": "Anantara Siam Bangkok Hotel, 155, ถนนราชดำริ, แขวงลุมพินี, เขตปทุมวัน, กรุงเทพมหานคร, 10330, ประเทศไทย",
+     "kind": "poi",
+     "latitude": 13.7409187,
+     "longitude": 100.5403109,
+     "osm_id": 183158650,
+     "osm_type": "way",
+     "postal_present": true,
+     "precision": "address",
+     "query": "Anantara Siam Bangkok Hotel",
+     "status": "ok",
+     "token_matched": "ราชดำริ",
+     "type": "hotel",
+     "url": "https://nominatim.openstreetmap.org/search?q=Anantara+Siam+Bangkok+Hotel&format=json&limit=1&addressdetails=1"
+    }
+   ],
+   "checked_on": "2026-11-25",
+   "display_name": "Anantara Siam Bangkok Hotel, 155, ถนนราชดำริ, แขวงลุมพินี, เขตปทุมวัน, กรุงเทพมหานคร, 10330, ประเทศไทย",
+   "latitude": 13.7409187,
+   "longitude": 100.5403109,
+   "match": "postal code 10330 present and token 'ราชดำริ' matched the returned display name",
+   "precision": "address",
+   "provider": "OpenStreetMap Nominatim",
+   "source_url": "https://nominatim.openstreetmap.org/search?q=Anantara+Siam+Bangkok+Hotel&format=json&limit=1&addressdetails=1",
+   "status": "ok",
+   "venue_slug": "anantara-siam"
+  },
+  {
+   "attempts": [
+    {
+     "display_name": null,
+     "kind": "address",
+     "query": "48 Oriental Avenue, Bangkok 10500, Thailand",
+     "status": "none",
+     "url": "https://nominatim.openstreetmap.org/search?q=48+Oriental+Avenue%2C+Bangkok+10500%2C+Thailand&format=json&limit=1&addressdetails=1"
+    },
+    {
+     "class": "leisure",
+     "display_name": "Mandarin Oriental Hotel, 48, แขวงบางรัก, เขตบางรัก, กรุงเทพมหานคร, 10500, ประเทศไทย",
+     "kind": "poi",
+     "latitude": 13.7238854,
+     "longitude": 100.5141549,
+     "osm_id": 134464577,
+     "osm_type": "way",
+     "postal_present": true,
+     "precision": "site",
+     "query": "Mandarin Oriental Bangkok",
+     "status": "ok",
+     "token_matched": "oriental",
+     "type": "resort",
+     "url": "https://nominatim.openstreetmap.org/search?q=Mandarin+Oriental+Bangkok&format=json&limit=1&addressdetails=1"
+    }
+   ],
+   "checked_on": "2026-11-25",
+   "display_name": "Mandarin Oriental Hotel, 48, แขวงบางรัก, เขตบางรัก, กรุงเทพมหานคร, 10500, ประเทศไทย",
+   "latitude": 13.7238854,
+   "longitude": 100.5141549,
+   "match": "postal code 10500 present and token 'oriental' matched the returned display name",
+   "precision": "site",
+   "provider": "OpenStreetMap Nominatim",
+   "source_url": "https://nominatim.openstreetmap.org/search?q=Mandarin+Oriental+Bangkok&format=json&limit=1&addressdetails=1",
+   "status": "ok",
+   "venue_slug": "mandarin-oriental"
+  },
+  {
+   "attempts": [
+    {
+     "class": "amenity",
+     "display_name": "ศูนย์การประชุมแห่งชาติสิริกิติ์, 60, ถนนรัชดาภิเษก, ชุมชนเจริญสุข, แขวงคลองเตย, เขตคลองเตย, กรุงเทพมหานคร, 10110, ประเทศไทย",
+     "kind": "address",
+     "latitude": 13.7242403,
+     "longitude": 100.558736,
+     "osm_id": 1085353819,
+     "osm_type": "way",
+     "postal_present": true,
+     "precision": "address",
+     "query": "60 Ratchadaphisek Road, Khlong Toei, Bangkok 10110, Thailand",
+     "status": "ok",
+     "token_matched": "รัชดาภิเษก",
+     "type": "conference_centre",
+     "url": "https://nominatim.openstreetmap.org/search?q=60+Ratchadaphisek+Road%2C+Khlong+Toei%2C+Bangkok+10110%2C+Thailand&format=json&limit=1&addressdetails=1"
+    },
+    {
+     "class": "amenity",
+     "display_name": "ศูนย์การประชุมแห่งชาติสิริกิติ์, 60, ถนนรัชดาภิเษก, ชุมชนเจริญสุข, แขวงคลองเตย, เขตคลองเตย, กรุงเทพมหานคร, 10110, ประเทศไทย",
+     "kind": "poi",
+     "latitude": 13.7242403,
+     "longitude": 100.558736,
+     "osm_id": 1085353819,
+     "osm_type": "way",
+     "postal_present": true,
+     "precision": "address",
+     "query": "Queen Sirikit National Convention Center",
+     "status": "ok",
+     "token_matched": "รัชดาภิเษก",
+     "type": "conference_centre",
+     "url": "https://nominatim.openstreetmap.org/search?q=Queen+Sirikit+National+Convention+Center&format=json&limit=1&addressdetails=1"
+    }
+   ],
+   "checked_on": "2026-11-25",
+   "display_name": "ศูนย์การประชุมแห่งชาติสิริกิติ์, 60, ถนนรัชดาภิเษก, ชุมชนเจริญสุข, แขวงคลองเตย, เขตคลองเตย, กรุงเทพมหานคร, 10110, ประเทศไทย",
+   "latitude": 13.7242403,
+   "longitude": 100.558736,
+   "match": "postal code 10110 present and token 'รัชดาภิเษก' matched the returned display name",
+   "precision": "address",
+   "provider": "OpenStreetMap Nominatim",
+   "source_url": "https://nominatim.openstreetmap.org/search?q=60+Ratchadaphisek+Road%2C+Khlong+Toei%2C+Bangkok+10110%2C+Thailand&format=json&limit=1&addressdetails=1",
+   "status": "ok",
+   "venue_slug": "qsncc"
+  },
+  {
+   "attempts": [
+    {
+     "display_name": null,
+     "kind": "address",
+     "query": "101 Sukhumvit Road, Bang Chak, Phra Khanong, Bangkok 10260, Thailand",
+     "status": "none",
+     "url": "https://nominatim.openstreetmap.org/search?q=101+Sukhumvit+Road%2C+Bang+Chak%2C+Phra+Khanong%2C+Bangkok+10260%2C+Thailand&format=json&limit=1&addressdetails=1"
+    },
+    {
+     "class": "landuse",
+     "display_name": "True Digital Park, แขวงบางจาก, เขตพระโขนง, กรุงเทพมหานคร, 10260, ประเทศไทย",
+     "kind": "poi",
+     "latitude": 13.685581,
+     "longitude": 100.6113077,
+     "osm_id": 637524947,
+     "osm_type": "way",
+     "postal_present": true,
+     "precision": "site",
+     "query": "True Digital Park",
+     "status": "ok",
+     "token_matched": "true digital",
+     "type": "commercial",
+     "url": "https://nominatim.openstreetmap.org/search?q=True+Digital+Park&format=json&limit=1&addressdetails=1"
+    }
+   ],
+   "checked_on": "2026-11-25",
+   "display_name": "True Digital Park, แขวงบางจาก, เขตพระโขนง, กรุงเทพมหานคร, 10260, ประเทศไทย",
+   "latitude": 13.685581,
+   "longitude": 100.6113077,
+   "match": "postal code 10260 present and token 'true digital' matched the returned display name",
+   "precision": "site",
+   "provider": "OpenStreetMap Nominatim",
+   "source_url": "https://nominatim.openstreetmap.org/search?q=True+Digital+Park&format=json&limit=1&addressdetails=1",
+   "status": "ok",
+   "venue_slug": "true-digital-park"
+  },
+  {
+   "attempts": [
+    {
+     "class": "highway",
+     "display_name": "ถนนเทพรัตน, แขวงบางนาใต้, เขตบางนา, กรุงเทพมหานคร, 10260, ประเทศไทย",
+     "kind": "address",
+     "latitude": 13.6721761,
+     "longitude": 100.6103353,
+     "osm_id": 183769820,
+     "osm_type": "way",
+     "postal_present": true,
+     "precision": null,
+     "query": "88 Debaratna Road, Bang Na Tai, Bang Na, Bangkok 10260, Thailand",
+     "status": "street_only",
+     "token_matched": "เทพรัตน",
+     "type": "secondary",
+     "url": "https://nominatim.openstreetmap.org/search?q=88+Debaratna+Road%2C+Bang+Na+Tai%2C+Bang+Na%2C+Bangkok+10260%2C+Thailand&format=json&limit=1&addressdetails=1"
+    },
+    {
+     "class": "amenity",
+     "display_name": "BITEC, ถนนสุขุมวิท, แขวงบางนาใต้, เขตบางนา, กรุงเทพมหานคร, 10260, ประเทศไทย",
+     "kind": "poi",
+     "latitude": 13.669801,
+     "longitude": 100.6085436,
+     "osm_id": 25621160,
+     "osm_type": "way",
+     "postal_present": true,
+     "precision": "address",
+     "query": "BITEC Bang Na",
+     "status": "ok",
+     "token_matched": "บางนา",
+     "type": "exhibition_centre",
+     "url": "https://nominatim.openstreetmap.org/search?q=BITEC+Bang+Na&format=json&limit=1&addressdetails=1"
+    }
+   ],
+   "checked_on": "2026-11-25",
+   "display_name": "BITEC, ถนนสุขุมวิท, แขวงบางนาใต้, เขตบางนา, กรุงเทพมหานคร, 10260, ประเทศไทย",
+   "latitude": 13.669801,
+   "longitude": 100.6085436,
+   "match": "postal code 10260 present and token 'บางนา' matched the returned display name",
+   "precision": "address",
+   "provider": "OpenStreetMap Nominatim",
+   "source_url": "https://nominatim.openstreetmap.org/search?q=BITEC+Bang+Na&format=json&limit=1&addressdetails=1",
+   "status": "ok",
+   "venue_slug": "bitec"
+  },
+  {
+   "attempts": [
+    {
+     "display_name": null,
+     "kind": "address",
+     "query": "23 Charoen Krung Soi 24, Talat Noi, Sampanthawong, Bangkok 10100, Thailand",
+     "status": "none",
+     "url": "https://nominatim.openstreetmap.org/search?q=23+Charoen+Krung+Soi+24%2C+Talat+Noi%2C+Sampanthawong%2C+Bangkok+10100%2C+Thailand&format=json&limit=1&addressdetails=1"
+    },
+    {
+     "class": "shop",
+     "display_name": "ริเวอร์ซิตี, 23, ซอยเจริญกรุง 24, โรงน้ำแข็ง, แขวงตลาดน้อย, เขตสัมพันธวงศ์, กรุงเทพมหานคร, 10100, ประเทศไทย",
+     "kind": "poi",
+     "latitude": 13.7304469,
+     "longitude": 100.5133237,
+     "osm_id": 342182317,
+     "osm_type": "way",
+     "postal_present": true,
+     "precision": "address",
+     "query": "River City Bangkok",
+     "status": "ok",
+     "token_matched": "เจริญกรุง",
+     "type": "mall",
+     "url": "https://nominatim.openstreetmap.org/search?q=River+City+Bangkok&format=json&limit=1&addressdetails=1"
+    }
+   ],
+   "checked_on": "2026-11-25",
+   "display_name": "ริเวอร์ซิตี, 23, ซอยเจริญกรุง 24, โรงน้ำแข็ง, แขวงตลาดน้อย, เขตสัมพันธวงศ์, กรุงเทพมหานคร, 10100, ประเทศไทย",
+   "latitude": 13.7304469,
+   "longitude": 100.5133237,
+   "match": "postal code 10100 present and token 'เจริญกรุง' matched the returned display name",
+   "precision": "address",
+   "provider": "OpenStreetMap Nominatim",
+   "source_url": "https://nominatim.openstreetmap.org/search?q=River+City+Bangkok&format=json&limit=1&addressdetails=1",
+   "status": "ok",
+   "venue_slug": "river-city"
+  },
+  {
+   "attempts": [
+    {
+     "class": "tourism",
+     "display_name": "โรงแรม ไฮแอท รีเจนซี่ กรุงเทพฯ สุขุมวิท, 1, ซอยสุขุมวิท 13, Asok, แขวงคลองเตยเหนือ, เขตวัฒนา, กรุงเทพมหานคร, 10110, ประเทศไทย",
+     "kind": "address",
+     "latitude": 13.7399072,
+     "longitude": 100.5571624,
+     "osm_id": 11219584566,
+     "osm_type": "node",
+     "postal_present": true,
+     "precision": "address",
+     "query": "1 Sukhumvit Soi 13, Khlong Toei Nuea, Watthana, Bangkok 10110, Thailand",
+     "status": "ok",
+     "token_matched": "สุขุมวิท",
+     "type": "hotel",
+     "url": "https://nominatim.openstreetmap.org/search?q=1+Sukhumvit+Soi+13%2C+Khlong+Toei+Nuea%2C+Watthana%2C+Bangkok+10110%2C+Thailand&format=json&limit=1&addressdetails=1"
+    },
+    {
+     "class": "tourism",
+     "display_name": "โรงแรม ไฮแอท รีเจนซี่ กรุงเทพฯ สุขุมวิท, 1, ซอยสุขุมวิท 13, Asok, แขวงคลองเตยเหนือ, เขตวัฒนา, กรุงเทพมหานคร, 10110, ประเทศไทย",
+     "kind": "poi",
+     "latitude": 13.7399072,
+     "longitude": 100.5571624,
+     "osm_id": 11219584566,
+     "osm_type": "node",
+     "postal_present": true,
+     "precision": "address",
+     "query": "Hyatt Regency Bangkok Sukhumvit",
+     "status": "ok",
+     "token_matched": "สุขุมวิท",
+     "type": "hotel",
+     "url": "https://nominatim.openstreetmap.org/search?q=Hyatt+Regency+Bangkok+Sukhumvit&format=json&limit=1&addressdetails=1"
+    }
+   ],
+   "checked_on": "2026-11-25",
+   "display_name": "โรงแรม ไฮแอท รีเจนซี่ กรุงเทพฯ สุขุมวิท, 1, ซอยสุขุมวิท 13, Asok, แขวงคลองเตยเหนือ, เขตวัฒนา, กรุงเทพมหานคร, 10110, ประเทศไทย",
+   "latitude": 13.7399072,
+   "longitude": 100.5571624,
+   "match": "postal code 10110 present and token 'สุขุมวิท' matched the returned display name",
+   "precision": "address",
+   "provider": "OpenStreetMap Nominatim",
+   "source_url": "https://nominatim.openstreetmap.org/search?q=1+Sukhumvit+Soi+13%2C+Khlong+Toei+Nuea%2C+Watthana%2C+Bangkok+10110%2C+Thailand&format=json&limit=1&addressdetails=1",
+   "status": "ok",
+   "venue_slug": "hyatt-regency-sukhumvit"
+  },
+  {
+   "attempts": [
+    {
+     "class": "highway",
+     "display_name": "ถนนป๊อปปูล่า, เมืองทองธานี, ตำบลบ้านใหม่, เทศบาลนครปากเกร็ด, อำเภอปากเกร็ด, จังหวัดนนทบุรี, 11120, ประเทศไทย",
+     "kind": "address",
+     "latitude": 13.9098582,
+     "longitude": 100.5505684,
+     "osm_id": 230328213,
+     "osm_type": "way",
+     "postal_present": true,
+     "precision": null,
+     "query": "Popular Road, Ban Mai, Pak Kret, Nonthaburi 11120, Thailand",
+     "status": "street_only",
+     "token_matched": "ป๊อปปูล่า",
+     "type": "unclassified",
+     "url": "https://nominatim.openstreetmap.org/search?q=Popular+Road%2C+Ban+Mai%2C+Pak+Kret%2C+Nonthaburi+11120%2C+Thailand&format=json&limit=1&addressdetails=1"
+    },
+    {
+     "class": "amenity",
+     "display_name": "อิมแพ็ค เมืองทองธานี, ถนนป๊อปปูล่า1, เมืองทองธานี, ตำบลบ้านใหม่, เทศบาลนครปากเกร็ด, อำเภอปากเกร็ด, จังหวัดนนทบุรี, 11120, ประเทศไทย",
+     "kind": "poi",
+     "latitude": 13.9134256,
+     "longitude": 100.5476259,
+     "osm_id": 32017900,
+     "osm_type": "way",
+     "postal_present": true,
+     "precision": "address",
+     "query": "IMPACT Muang Thong Thani",
+     "status": "ok",
+     "token_matched": "ป๊อปปูล่า",
+     "type": "exhibition_centre",
+     "url": "https://nominatim.openstreetmap.org/search?q=IMPACT+Muang+Thong+Thani&format=json&limit=1&addressdetails=1"
+    }
+   ],
+   "checked_on": "2026-11-25",
+   "display_name": "อิมแพ็ค เมืองทองธานี, ถนนป๊อปปูล่า1, เมืองทองธานี, ตำบลบ้านใหม่, เทศบาลนครปากเกร็ด, อำเภอปากเกร็ด, จังหวัดนนทบุรี, 11120, ประเทศไทย",
+   "latitude": 13.9134256,
+   "longitude": 100.5476259,
+   "match": "postal code 11120 present and token 'ป๊อปปูล่า' matched the returned display name",
+   "precision": "address",
+   "provider": "OpenStreetMap Nominatim",
+   "source_url": "https://nominatim.openstreetmap.org/search?q=IMPACT+Muang+Thong+Thani&format=json&limit=1&addressdetails=1",
+   "status": "ok",
+   "venue_slug": "impact-muang-thong-thani"
+  },
+  {
+   "attempts": [
+    {
+     "class": "highway",
+     "display_name": "ถนนพระรามที่ 1, เจริญผล, แขวงรองเมือง, เขตปทุมวัน, กรุงเทพมหานคร, 10330, ประเทศไทย",
+     "kind": "address",
+     "latitude": 13.7476811,
+     "longitude": 100.5224285,
+     "osm_id": 464065117,
+     "osm_type": "way",
+     "postal_present": true,
+     "precision": null,
+     "query": "3 Rama I Road, Pathum Wan, Bangkok 10330, Thailand",
+     "status": "street_only",
+     "token_matched": "พระราม",
+     "type": "primary",
+     "url": "https://nominatim.openstreetmap.org/search?q=3+Rama+I+Road%2C+Pathum+Wan%2C+Bangkok+10330%2C+Thailand&format=json&limit=1&addressdetails=1"
+    },
+    {
+     "class": "highway",
+     "display_name": "Lido Connect, สยามสแควร์, แขวงปทุมวัน, เขตปทุมวัน, กรุงเทพมหานคร, 10330, ประเทศไทย",
+     "kind": "poi",
+     "latitude": 13.7453389,
+     "longitude": 100.5326589,
+     "osm_id": 163950601,
+     "osm_type": "way",
+     "postal_present": true,
+     "precision": null,
+     "query": "Lido Connect Bangkok",
+     "status": "street_only",
+     "token_matched": "lido",
+     "type": "footway",
+     "url": "https://nominatim.openstreetmap.org/search?q=Lido+Connect+Bangkok&format=json&limit=1&addressdetails=1"
+    }
+   ],
+   "checked_on": "2026-11-25",
+   "display_name": null,
+   "latitude": null,
+   "longitude": null,
+   "match": "No Nominatim result carried both the verified postal code and a named street or landmark token; no pin is derived.",
+   "precision": null,
+   "provider": "OpenStreetMap Nominatim",
+   "source_url": null,
+   "status": "none",
+   "venue_slug": "lido-connect"
+  }
+ ],
+ "provider": "OpenStreetMap Nominatim"
+}

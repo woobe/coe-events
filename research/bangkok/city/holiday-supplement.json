@@ -1,0 +1,118 @@
+{
+  "base_registry": {
+    "note": "The shared registry already carries the Thai 2027 scope from the Bank of Thailand notice (financial-institution closures), so this supplement only adds the two actual lunar observance rows and the Bangkok host coverage row; the Cabinet public-holiday calendar is recorded as pending.",
+    "path": "/home/joe/repo_dev/hermes-skills/plan-event/references/school_holidays.json",
+    "sha256": "b823b0e20ea437adc260c905ec6f0ab82da20a95b3f22bd0ccb007011d175840"
+  },
+  "checked_on": "2026-11-25",
+  "city_slug": "bangkok-th",
+  "coverage": [
+    {
+      "accessed_on": "2026-11-25",
+      "authority_label": "The host rows carry the Bank of Thailand financial-institution closure list, the only gazetted 2027 closure calendar retrieved; the Cabinet public-holiday calendar was not retrieved on 2026-11-25 and remains subject to announcement.",
+      "authority_scope": "financial_institution_closure",
+      "end_date": "2027-12-31",
+      "evidence": {
+        "derived": true,
+        "note": "Islamic dates are marked subject to the Chularatchamontri announcement. The Cabinet Secretariat public-holiday page returned 403 to the research user agent and its indexed page is the 2569 list, so no 2027 Cabinet date is stored.",
+        "observed_facts": "The 2027 list covers the whole year with 18 closures including the Songkran span of 13-15 April. This is the financial-institution closure list under the Financial Institution Business Act; the Cabinet's official public-holiday calendar for 2027 was not retrieved on 2026-11-25, so the layer is labelled financial-institution closures and the public-holiday calendar remains subject to announcement. Islamic observance closures are limited to the Islamic Bank of Thailand and branches in Narathiwat, Pattani, Yala, Satun and Songkhla and follow the Chularatchamontri announcement, so they are not Bangkok-wide rows."
+      },
+      "jurisdiction_id": "TH:bangkok",
+      "kind": "public_holiday_coverage",
+      "needs_human_verify": true,
+      "quote": "4. วันหยุดตามประเพณีของสถาบันการเงินและสถาบันการเงินเฉพาะกิจ ประจําป พ.ศ. 2570\n1. วันศุกรที่ 1 มกราคม วันขึ้นปใหม\n2. วันจันทรที่ 22 กุมภาพันธ ชดเชยวันมาฆบูชา\n(วันอาทิตยที่ 21 กุมภาพันธ 2570)\n3. วันอังคารที่ 6 เมษายน วันพระบาทสมเด็จพระพุทธยอดฟาจุฬาโลก\n18. วันศุกรที่ 31 ธันวาคม วันสิ้นป\nสําหรับธนาคารอิสลามแหงประเทศไทย ใหหยุดในวันอีฎิ้ลฟตริ (วันรายอปอซอ)\nวันอีฎิ้ลอัดฮา (วันรายอฮัจยี) ตามประกาศสํานักจุฬาราชมนตรี เปนการเพิ่มเติม หากวันดังกลาวไมตรง\nกับวันหยุดตามที่กลาวขางตนหรือวันหยุดประจําสัปดาห\nสําหรับสาขาของสถาบันการเงินและสถาบันการเงินเฉพาะกิจทุกแหงในพื้นที่จังหวัด\nนราธิวาส จังหวัดปตตานี จังหวัดยะลา จังหวัดสตูล และจังหวัดสงขลา ใหหยุดในวันอีฎิ้ลฟตริ\n(วันรายอปอซอ) วันอีฎิ้ลอัดฮา (วันรายอฮัจยี) ตามประกาศสํานักจุฬาราชมนตรี และวันตรุษจีน",
+      "source_edition": "Royal Gazette vol. 143, special part 202 Ngor, 25 August 2026",
+      "source_locator": "ข้อ 4 รายการที่ 1 ถึง 18",
+      "source_title": "ประกาศธนาคารแห่งประเทศไทย ที่ 37/2569 วันหยุดตามประเพณีของสถาบันการเงิน ประจำปี พ.ศ. 2570",
+      "source_url": "https://www.bot.or.th/content/dam/bot/fipcs/documents/FPG/2569/ThaiPDF/25690175.pdf",
+      "start_date": "2027-01-01",
+      "translation_review": {
+        "gloss": "The notice sets the traditional closure days for financial institutions and specialised financial institutions for 2027, and adds Eid closures for the Islamic Bank of Thailand and for branches in five southern provinces.",
+        "review": "Thailand publishes one national public-holiday list; Bangkok has no separate public holiday of its own, so this host row carries the national list rather than inventing a city-specific one. The Royal Ploughing Ceremony is not in the Bank of Thailand list because banks stay open for it, so its 2027 date remains subject to announcement.",
+        "reviewed_on": "2026-11-25"
+      },
+      "verified": true
+    }
+  ],
+  "holidays": [
+    {
+      "accessed_on": "2026-11-25",
+      "authority_label": "Date derived from the parenthetical in Bank of Thailand notice 37/2569; the Buddhist lunar observance date is subject to the official announcement.",
+      "authority_scope": "financial_institution_closure_derived",
+      "derived": true,
+      "end_date": "2027-02-21",
+      "evidence": {
+        "note": "Buddhist lunar observance: the day is fixed by the official announcement and the reported date is subject to confirmation against it. The PDF text layer encodes the Thai vowel mark U+0E4C as U+F70E in this word, so the stored quote carries that byte; the gloss gives the intended reading.",
+        "observed_facts": "The notice prints the substitute closure next to the parenthetical '21 กุมภาพันธ', which names the actual observance day."
+      },
+      "holiday_name": "วันมาฆบูชา",
+      "jurisdiction_id": "TH",
+      "kind": "public_holiday",
+      "name_en": "Makha Bucha (actual observance)",
+      "needs_human_verify": true,
+      "observance": "actual_subject_to_announcement",
+      "quote": "2. วันจันทรที่ 22 กุมภาพันธ ชดเชยวันมาฆบูชา\n(วันอาทิตยที่ 21 กุมภาพันธ 2570)",
+      "source_edition": "Royal Gazette vol. 143, special part 202 Ngor, 25 August 2026",
+      "source_locator": "capture bot-holidays-2570 lines 43-44",
+      "source_title": "ประกาศธนาคารแห่งประเทศไทย ที่ 37/2569 วันหยุดตามประเพณีของสถาบันการเงิน ประจำปี พ.ศ. 2570",
+      "source_url": "https://www.bot.or.th/content/dam/bot/fipcs/documents/FPG/2569/ThaiPDF/25690175.pdf",
+      "start_date": "2027-02-21",
+      "subject_to_announcement": true,
+      "translation_review": {
+        "gloss": "Makha Bucha (actual observance)",
+        "review": "The actual observance date appears only inside the parenthetical that explains the substitute day; it is stored as its own derived row so the calendar shows both the observance and the closure.",
+        "reviewed_on": "2026-11-25"
+      },
+      "verified": true
+    },
+    {
+      "accessed_on": "2026-11-25",
+      "authority_label": "Date derived from the parenthetical in Bank of Thailand notice 37/2569; the Buddhist lunar observance date is subject to the official announcement.",
+      "authority_scope": "financial_institution_closure_derived",
+      "derived": true,
+      "end_date": "2027-07-18",
+      "evidence": {
+        "note": "Buddhist lunar observance: the day is fixed by the official announcement and the reported date is subject to confirmation against it. The PDF text layer encodes the Thai vowel mark U+0E4C as U+F70E in this word, so the stored quote carries that byte; the gloss gives the intended reading.",
+        "observed_facts": "The notice prints the substitute closure next to the parenthetical '18 กรกฎาคม', which names the actual observance day."
+      },
+      "holiday_name": "วันอาสาฬหบูชา",
+      "jurisdiction_id": "TH",
+      "kind": "public_holiday",
+      "name_en": "Asalha Puja (actual observance)",
+      "needs_human_verify": true,
+      "observance": "actual_subject_to_announcement",
+      "quote": "11. วันจันทรที่ 19 กรกฎาคม ชดเชยวันอาสาฬหบูชา\n(วันอาทิตยที่ 18 กรกฎาคม 2570)",
+      "source_edition": "Royal Gazette vol. 143, special part 202 Ngor, 25 August 2026",
+      "source_locator": "capture bot-holidays-2570 lines 60-61",
+      "source_title": "ประกาศธนาคารแห่งประเทศไทย ที่ 37/2569 วันหยุดตามประเพณีของสถาบันการเงิน ประจำปี พ.ศ. 2570",
+      "source_url": "https://www.bot.or.th/content/dam/bot/fipcs/documents/FPG/2569/ThaiPDF/25690175.pdf",
+      "start_date": "2027-07-18",
+      "subject_to_announcement": true,
+      "translation_review": {
+        "gloss": "Asalha Puja (actual observance)",
+        "review": "The actual observance date appears only inside the parenthetical that explains the substitute day; it is stored as its own derived row so the calendar shows both the observance and the closure.",
+        "reviewed_on": "2026-11-25"
+      },
+      "verified": true
+    }
+  ],
+  "pending": [
+    {
+      "name_en": "Cabinet public-holiday calendar 2027",
+      "name_th": "วันหยุดราชการประจำปี พ.ศ. 2570",
+      "note": "The 18 dated rows are the Bank of Thailand financial-institution closure list. The Cabinet Secretariat's official public-holiday calendar for 2027 was not retrieved on 2026-11-25 (its page returned 403 and its indexed holiday page is the 2569 list), so no Cabinet public-holiday date is stored as settled.",
+      "state": "subject_to_announcement"
+    },
+    {
+      "name_en": "Royal Ploughing Ceremony",
+      "name_th": "วันพืชมงคล",
+      "note": "The date is set by the Royal Ploughing Ceremony announcement and is not in the Bank of Thailand list, which omits it because financial institutions stay open. No 2027 date is stored.",
+      "state": "subject_to_announcement"
+    },
+    {
+      "name_en": "Eid al-Fitr and Eid al-Adha (Islamic Bank of Thailand and five southern provinces only)",
+      "note": "The Bank of Thailand notice defers these to the Chularatchamontri announcement and applies them only to the Islamic Bank of Thailand and to branches in Narathiwat, Pattani, Yala, Satun and Songkhla, so no Bangkok-wide row is stored.",
+      "state": "subject_to_announcement"
+    }
+  ]
+}
