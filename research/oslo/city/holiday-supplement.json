@@ -1,0 +1,296 @@
+{
+  "base_registry": {
+    "note": "The shared registry has no Norwegian scope, so this supplement adds NO without altering it.",
+    "path": "/home/joe/repo_dev/hermes-skills/plan-event/references/school_holidays.json",
+    "sha256": "b823b0e20ea437adc260c905ec6f0ab82da20a95b3f22bd0ccb007011d175840"
+  },
+  "checked_on": "2026-11-25",
+  "city_slug": "oslo-no",
+  "coverage": [
+    {
+      "accessed_on": "2026-11-25",
+      "end_date": "2027-12-31",
+      "evidence": {
+        "derived": true,
+        "note": "Oslo municipality fixes no separate public holiday; the national scope is the host scope. Easter week 2027 runs 25-29 March with five section 2 holidays (Maundy Thursday to Easter Monday), and 17 May 2027 is also Whit Monday, so the 06:00-13:00 event ban does apply that day through the Whit Monday rule, not the Constitution Day rule.",
+        "observed_facts": "Section 2 makes every ordinary Sunday a holiday and lists the named days. Section 3 sets holiday peace from 00:00 to 24:00. Section 4 bans public events or performances between 06:00 and 13:00 on a holiday, which affects any 09:00 start that falls on one of them. The 1 and 17 May act makes those two dates equal to Sundays but expressly excludes them from the holiday-peace rules."
+      },
+      "jurisdiction_id": "NO",
+      "kind": "public_holiday_coverage",
+      "needs_human_verify": true,
+      "quote": "§ 2.Helligdager\nFølgende dager er helligdag:\na.\nvanlige søndager,\nb.\nnyttårsdag (1. januar),\nc.\nskjærtorsdag (siste torsdag før første påskedag),\nd.\nlangfredag (siste fredag før første påskedag),\ne.\nførste påskedag (første søndag etter første fullmåne som inntreffer på eller etter 21. mars),\nf.\nannen påskedag (første mandag etter første påskedag),\ng.\nKristi Himmelfartsdag (sjette torsdag etter første påskedag),\nh.\nførste pinsedag (sjuende søndag etter første påskedag),\ni.\nannen pinsedag (første mandag etter første pinsedag),\nj.\nførste juledag (25. desember),\nk.\nannen juledag (26. desember).\n§ 4.Offentlige arrangementer\nPå helligdag mellom kl 06 og kl 13 er det ikke tillatt å arrangere eller holde offentlige tilstelninger eller forestillinger, sportskonkurranser og sportsstevner.",
+      "source_edition": "Consolidated text read 2026-11-25",
+      "source_locator": "Sections 2, 3 and 4",
+      "source_title": "Lov om helligdager og helligdagsfred",
+      "source_url": "https://lovdata.no/dokument/NL/lov/1995-02-24-12",
+      "start_date": "2027-01-01",
+      "verified": true
+    }
+  ],
+  "holidays": [
+    {
+      "accessed_on": "2026-11-25",
+      "derived": true,
+      "end_date": "2027-01-01",
+      "evidence": {
+        "note": "17 May 2027 is also Whit Monday, so the same Monday is a holiday under both acts; Easter week runs 25-29 March with five holiday days.",
+        "observed_facts": "The 2027 date is derived from the statutory rule: Easter Sunday 2027 is 28 March, so the Easter-dependent days follow; 1 May and 17 May are fixed dates."
+      },
+      "holiday_name": "Nyttårsdag",
+      "jurisdiction_id": "NO",
+      "kind": "public_holiday",
+      "name_en": "New Year's Day",
+      "needs_human_verify": true,
+      "observance": "statutory",
+      "quote": "§ 2.Helligdager\nFølgende dager er helligdag:\na.\nvanlige søndager,\nb.\nnyttårsdag (1. januar),\nc.\nskjærtorsdag (siste torsdag før første påskedag),\nd.\nlangfredag (siste fredag før første påskedag),\ne.\nførste påskedag (første søndag etter første fullmåne som inntreffer på eller etter 21. mars),\nf.\nannen påskedag (første mandag etter første påskedag),\ng.\nKristi Himmelfartsdag (sjette torsdag etter første påskedag),\nh.\nførste pinsedag (sjuende søndag etter første påskedag),\ni.\nannen pinsedag (første mandag etter første pinsedag),\nj.\nførste juledag (25. desember),\nk.\nannen juledag (26. desember).",
+      "source_edition": "Consolidated text read 2026-11-25",
+      "source_locator": "Section 2 of the holiday-peace act (lovdata-helligdager lines 94-117)",
+      "source_title": "Lov om helligdager og helligdagsfred",
+      "source_url": "https://lovdata.no/dokument/NL/lov/1995-02-24-12",
+      "start_date": "2027-01-01",
+      "verified": true
+    },
+    {
+      "accessed_on": "2026-11-25",
+      "derived": true,
+      "end_date": "2027-03-25",
+      "evidence": {
+        "note": "17 May 2027 is also Whit Monday, so the same Monday is a holiday under both acts; Easter week runs 25-29 March with five holiday days.",
+        "observed_facts": "The 2027 date is derived from the statutory rule: Easter Sunday 2027 is 28 March, so the Easter-dependent days follow; 1 May and 17 May are fixed dates."
+      },
+      "holiday_name": "Skjærtorsdag",
+      "jurisdiction_id": "NO",
+      "kind": "public_holiday",
+      "name_en": "Maundy Thursday",
+      "needs_human_verify": true,
+      "observance": "statutory",
+      "quote": "§ 2.Helligdager\nFølgende dager er helligdag:\na.\nvanlige søndager,\nb.\nnyttårsdag (1. januar),\nc.\nskjærtorsdag (siste torsdag før første påskedag),\nd.\nlangfredag (siste fredag før første påskedag),\ne.\nførste påskedag (første søndag etter første fullmåne som inntreffer på eller etter 21. mars),\nf.\nannen påskedag (første mandag etter første påskedag),\ng.\nKristi Himmelfartsdag (sjette torsdag etter første påskedag),\nh.\nførste pinsedag (sjuende søndag etter første påskedag),\ni.\nannen pinsedag (første mandag etter første pinsedag),\nj.\nførste juledag (25. desember),\nk.\nannen juledag (26. desember).",
+      "source_edition": "Consolidated text read 2026-11-25",
+      "source_locator": "Section 2 of the holiday-peace act (lovdata-helligdager lines 94-117)",
+      "source_title": "Lov om helligdager og helligdagsfred",
+      "source_url": "https://lovdata.no/dokument/NL/lov/1995-02-24-12",
+      "start_date": "2027-03-25",
+      "verified": true
+    },
+    {
+      "accessed_on": "2026-11-25",
+      "derived": true,
+      "end_date": "2027-03-26",
+      "evidence": {
+        "note": "17 May 2027 is also Whit Monday, so the same Monday is a holiday under both acts; Easter week runs 25-29 March with five holiday days.",
+        "observed_facts": "The 2027 date is derived from the statutory rule: Easter Sunday 2027 is 28 March, so the Easter-dependent days follow; 1 May and 17 May are fixed dates."
+      },
+      "holiday_name": "Langfredag",
+      "jurisdiction_id": "NO",
+      "kind": "public_holiday",
+      "name_en": "Good Friday",
+      "needs_human_verify": true,
+      "observance": "statutory",
+      "quote": "§ 2.Helligdager\nFølgende dager er helligdag:\na.\nvanlige søndager,\nb.\nnyttårsdag (1. januar),\nc.\nskjærtorsdag (siste torsdag før første påskedag),\nd.\nlangfredag (siste fredag før første påskedag),\ne.\nførste påskedag (første søndag etter første fullmåne som inntreffer på eller etter 21. mars),\nf.\nannen påskedag (første mandag etter første påskedag),\ng.\nKristi Himmelfartsdag (sjette torsdag etter første påskedag),\nh.\nførste pinsedag (sjuende søndag etter første påskedag),\ni.\nannen pinsedag (første mandag etter første pinsedag),\nj.\nførste juledag (25. desember),\nk.\nannen juledag (26. desember).",
+      "source_edition": "Consolidated text read 2026-11-25",
+      "source_locator": "Section 2 of the holiday-peace act (lovdata-helligdager lines 94-117)",
+      "source_title": "Lov om helligdager og helligdagsfred",
+      "source_url": "https://lovdata.no/dokument/NL/lov/1995-02-24-12",
+      "start_date": "2027-03-26",
+      "verified": true
+    },
+    {
+      "accessed_on": "2026-11-25",
+      "derived": true,
+      "end_date": "2027-03-28",
+      "evidence": {
+        "note": "17 May 2027 is also Whit Monday, so the same Monday is a holiday under both acts; Easter week runs 25-29 March with five holiday days.",
+        "observed_facts": "The 2027 date is derived from the statutory rule: Easter Sunday 2027 is 28 March, so the Easter-dependent days follow; 1 May and 17 May are fixed dates."
+      },
+      "holiday_name": "Første påskedag",
+      "jurisdiction_id": "NO",
+      "kind": "public_holiday",
+      "name_en": "Easter Sunday",
+      "needs_human_verify": true,
+      "observance": "statutory",
+      "quote": "§ 2.Helligdager\nFølgende dager er helligdag:\na.\nvanlige søndager,\nb.\nnyttårsdag (1. januar),\nc.\nskjærtorsdag (siste torsdag før første påskedag),\nd.\nlangfredag (siste fredag før første påskedag),\ne.\nførste påskedag (første søndag etter første fullmåne som inntreffer på eller etter 21. mars),\nf.\nannen påskedag (første mandag etter første påskedag),\ng.\nKristi Himmelfartsdag (sjette torsdag etter første påskedag),\nh.\nførste pinsedag (sjuende søndag etter første påskedag),\ni.\nannen pinsedag (første mandag etter første pinsedag),\nj.\nførste juledag (25. desember),\nk.\nannen juledag (26. desember).",
+      "source_edition": "Consolidated text read 2026-11-25",
+      "source_locator": "Section 2 of the holiday-peace act (lovdata-helligdager lines 94-117)",
+      "source_title": "Lov om helligdager og helligdagsfred",
+      "source_url": "https://lovdata.no/dokument/NL/lov/1995-02-24-12",
+      "start_date": "2027-03-28",
+      "verified": true
+    },
+    {
+      "accessed_on": "2026-11-25",
+      "derived": true,
+      "end_date": "2027-03-29",
+      "evidence": {
+        "note": "17 May 2027 is also Whit Monday, so the same Monday is a holiday under both acts; Easter week runs 25-29 March with five holiday days.",
+        "observed_facts": "The 2027 date is derived from the statutory rule: Easter Sunday 2027 is 28 March, so the Easter-dependent days follow; 1 May and 17 May are fixed dates."
+      },
+      "holiday_name": "Annen påskedag",
+      "jurisdiction_id": "NO",
+      "kind": "public_holiday",
+      "name_en": "Easter Monday",
+      "needs_human_verify": true,
+      "observance": "statutory",
+      "quote": "§ 2.Helligdager\nFølgende dager er helligdag:\na.\nvanlige søndager,\nb.\nnyttårsdag (1. januar),\nc.\nskjærtorsdag (siste torsdag før første påskedag),\nd.\nlangfredag (siste fredag før første påskedag),\ne.\nførste påskedag (første søndag etter første fullmåne som inntreffer på eller etter 21. mars),\nf.\nannen påskedag (første mandag etter første påskedag),\ng.\nKristi Himmelfartsdag (sjette torsdag etter første påskedag),\nh.\nførste pinsedag (sjuende søndag etter første påskedag),\ni.\nannen pinsedag (første mandag etter første pinsedag),\nj.\nførste juledag (25. desember),\nk.\nannen juledag (26. desember).",
+      "source_edition": "Consolidated text read 2026-11-25",
+      "source_locator": "Section 2 of the holiday-peace act (lovdata-helligdager lines 94-117)",
+      "source_title": "Lov om helligdager og helligdagsfred",
+      "source_url": "https://lovdata.no/dokument/NL/lov/1995-02-24-12",
+      "start_date": "2027-03-29",
+      "verified": true
+    },
+    {
+      "accessed_on": "2026-11-25",
+      "derived": true,
+      "end_date": "2027-05-01",
+      "evidence": {
+        "note": "17 May 2027 is also Whit Monday, so the same Monday is a holiday under both acts; Easter week runs 25-29 March with five holiday days.",
+        "observed_facts": "The 2027 date is derived from the statutory rule: Easter Sunday 2027 is 28 March, so the Easter-dependent days follow; 1 May and 17 May are fixed dates."
+      },
+      "holiday_name": "Arbeidernes dag",
+      "jurisdiction_id": "NO",
+      "kind": "public_holiday",
+      "name_en": "Labour Day",
+      "needs_human_verify": true,
+      "observance": "statutory",
+      "quote": "§ 2.Helligdager\nFølgende dager er helligdag:\na.\nvanlige søndager,\nb.\nnyttårsdag (1. januar),\nc.\nskjærtorsdag (siste torsdag før første påskedag),\nd.\nlangfredag (siste fredag før første påskedag),\ne.\nførste påskedag (første søndag etter første fullmåne som inntreffer på eller etter 21. mars),\nf.\nannen påskedag (første mandag etter første påskedag),\ng.\nKristi Himmelfartsdag (sjette torsdag etter første påskedag),\nh.\nførste pinsedag (sjuende søndag etter første påskedag),\ni.\nannen pinsedag (første mandag etter første pinsedag),\nj.\nførste juledag (25. desember),\nk.\nannen juledag (26. desember).",
+      "source_edition": "Consolidated text read 2026-11-25",
+      "source_locator": "Section 2 of the holiday-peace act (lovdata-helligdager lines 94-117)",
+      "source_title": "Lov om helligdager og helligdagsfred",
+      "source_url": "https://lovdata.no/dokument/NL/lov/1995-02-24-12",
+      "start_date": "2027-05-01",
+      "verified": true
+    },
+    {
+      "accessed_on": "2026-11-25",
+      "derived": true,
+      "end_date": "2027-05-06",
+      "evidence": {
+        "note": "17 May 2027 is also Whit Monday, so the same Monday is a holiday under both acts; Easter week runs 25-29 March with five holiday days.",
+        "observed_facts": "The 2027 date is derived from the statutory rule: Easter Sunday 2027 is 28 March, so the Easter-dependent days follow; 1 May and 17 May are fixed dates."
+      },
+      "holiday_name": "Kristi himmelfartsdag",
+      "jurisdiction_id": "NO",
+      "kind": "public_holiday",
+      "name_en": "Ascension Day",
+      "needs_human_verify": true,
+      "observance": "statutory",
+      "quote": "§ 2.Helligdager\nFølgende dager er helligdag:\na.\nvanlige søndager,\nb.\nnyttårsdag (1. januar),\nc.\nskjærtorsdag (siste torsdag før første påskedag),\nd.\nlangfredag (siste fredag før første påskedag),\ne.\nførste påskedag (første søndag etter første fullmåne som inntreffer på eller etter 21. mars),\nf.\nannen påskedag (første mandag etter første påskedag),\ng.\nKristi Himmelfartsdag (sjette torsdag etter første påskedag),\nh.\nførste pinsedag (sjuende søndag etter første påskedag),\ni.\nannen pinsedag (første mandag etter første pinsedag),\nj.\nførste juledag (25. desember),\nk.\nannen juledag (26. desember).",
+      "source_edition": "Consolidated text read 2026-11-25",
+      "source_locator": "Section 2 of the holiday-peace act (lovdata-helligdager lines 94-117)",
+      "source_title": "Lov om helligdager og helligdagsfred",
+      "source_url": "https://lovdata.no/dokument/NL/lov/1995-02-24-12",
+      "start_date": "2027-05-06",
+      "verified": true
+    },
+    {
+      "accessed_on": "2026-11-25",
+      "derived": true,
+      "end_date": "2027-05-16",
+      "evidence": {
+        "note": "17 May 2027 is also Whit Monday, so the same Monday is a holiday under both acts; Easter week runs 25-29 March with five holiday days.",
+        "observed_facts": "The 2027 date is derived from the statutory rule: Easter Sunday 2027 is 28 March, so the Easter-dependent days follow; 1 May and 17 May are fixed dates."
+      },
+      "holiday_name": "Første pinsedag",
+      "jurisdiction_id": "NO",
+      "kind": "public_holiday",
+      "name_en": "Whit Sunday",
+      "needs_human_verify": true,
+      "observance": "statutory",
+      "quote": "§ 2.Helligdager\nFølgende dager er helligdag:\na.\nvanlige søndager,\nb.\nnyttårsdag (1. januar),\nc.\nskjærtorsdag (siste torsdag før første påskedag),\nd.\nlangfredag (siste fredag før første påskedag),\ne.\nførste påskedag (første søndag etter første fullmåne som inntreffer på eller etter 21. mars),\nf.\nannen påskedag (første mandag etter første påskedag),\ng.\nKristi Himmelfartsdag (sjette torsdag etter første påskedag),\nh.\nførste pinsedag (sjuende søndag etter første påskedag),\ni.\nannen pinsedag (første mandag etter første pinsedag),\nj.\nførste juledag (25. desember),\nk.\nannen juledag (26. desember).",
+      "source_edition": "Consolidated text read 2026-11-25",
+      "source_locator": "Section 2 of the holiday-peace act (lovdata-helligdager lines 94-117)",
+      "source_title": "Lov om helligdager og helligdagsfred",
+      "source_url": "https://lovdata.no/dokument/NL/lov/1995-02-24-12",
+      "start_date": "2027-05-16",
+      "verified": true
+    },
+    {
+      "accessed_on": "2026-11-25",
+      "derived": true,
+      "end_date": "2027-05-17",
+      "evidence": {
+        "note": "17 May 2027 is also Whit Monday, so the same Monday is a holiday under both acts; Easter week runs 25-29 March with five holiday days.",
+        "observed_facts": "The 2027 date is derived from the statutory rule: Easter Sunday 2027 is 28 March, so the Easter-dependent days follow; 1 May and 17 May are fixed dates."
+      },
+      "holiday_name": "Annen pinsedag",
+      "jurisdiction_id": "NO",
+      "kind": "public_holiday",
+      "name_en": "Whit Monday",
+      "needs_human_verify": true,
+      "observance": "statutory",
+      "quote": "§ 2.Helligdager\nFølgende dager er helligdag:\na.\nvanlige søndager,\nb.\nnyttårsdag (1. januar),\nc.\nskjærtorsdag (siste torsdag før første påskedag),\nd.\nlangfredag (siste fredag før første påskedag),\ne.\nførste påskedag (første søndag etter første fullmåne som inntreffer på eller etter 21. mars),\nf.\nannen påskedag (første mandag etter første påskedag),\ng.\nKristi Himmelfartsdag (sjette torsdag etter første påskedag),\nh.\nførste pinsedag (sjuende søndag etter første påskedag),\ni.\nannen pinsedag (første mandag etter første pinsedag),\nj.\nførste juledag (25. desember),\nk.\nannen juledag (26. desember).",
+      "source_edition": "Consolidated text read 2026-11-25",
+      "source_locator": "Section 2 of the holiday-peace act (lovdata-helligdager lines 94-117)",
+      "source_title": "Lov om helligdager og helligdagsfred",
+      "source_url": "https://lovdata.no/dokument/NL/lov/1995-02-24-12",
+      "start_date": "2027-05-17",
+      "verified": true
+    },
+    {
+      "accessed_on": "2026-11-25",
+      "derived": true,
+      "end_date": "2027-05-17",
+      "evidence": {
+        "note": "17 May 2027 is also Whit Monday, so the same Monday is a holiday under both acts; Easter week runs 25-29 March with five holiday days.",
+        "observed_facts": "The 2027 date is derived from the statutory rule: Easter Sunday 2027 is 28 March, so the Easter-dependent days follow; 1 May and 17 May are fixed dates."
+      },
+      "holiday_name": "Grunnlovsdagen",
+      "jurisdiction_id": "NO",
+      "kind": "public_holiday",
+      "name_en": "Constitution Day",
+      "needs_human_verify": true,
+      "observance": "statutory",
+      "quote": "§ 2.Helligdager\nFølgende dager er helligdag:\na.\nvanlige søndager,\nb.\nnyttårsdag (1. januar),\nc.\nskjærtorsdag (siste torsdag før første påskedag),\nd.\nlangfredag (siste fredag før første påskedag),\ne.\nførste påskedag (første søndag etter første fullmåne som inntreffer på eller etter 21. mars),\nf.\nannen påskedag (første mandag etter første påskedag),\ng.\nKristi Himmelfartsdag (sjette torsdag etter første påskedag),\nh.\nførste pinsedag (sjuende søndag etter første påskedag),\ni.\nannen pinsedag (første mandag etter første pinsedag),\nj.\nførste juledag (25. desember),\nk.\nannen juledag (26. desember).",
+      "source_edition": "Consolidated text read 2026-11-25",
+      "source_locator": "Section 2 of the holiday-peace act (lovdata-helligdager lines 94-117)",
+      "source_title": "Lov om helligdager og helligdagsfred",
+      "source_url": "https://lovdata.no/dokument/NL/lov/1995-02-24-12",
+      "start_date": "2027-05-17",
+      "verified": true
+    },
+    {
+      "accessed_on": "2026-11-25",
+      "derived": true,
+      "end_date": "2027-12-25",
+      "evidence": {
+        "note": "17 May 2027 is also Whit Monday, so the same Monday is a holiday under both acts; Easter week runs 25-29 March with five holiday days.",
+        "observed_facts": "The 2027 date is derived from the statutory rule: Easter Sunday 2027 is 28 March, so the Easter-dependent days follow; 1 May and 17 May are fixed dates."
+      },
+      "holiday_name": "Første juledag",
+      "jurisdiction_id": "NO",
+      "kind": "public_holiday",
+      "name_en": "Christmas Day",
+      "needs_human_verify": true,
+      "observance": "statutory",
+      "quote": "§ 2.Helligdager\nFølgende dager er helligdag:\na.\nvanlige søndager,\nb.\nnyttårsdag (1. januar),\nc.\nskjærtorsdag (siste torsdag før første påskedag),\nd.\nlangfredag (siste fredag før første påskedag),\ne.\nførste påskedag (første søndag etter første fullmåne som inntreffer på eller etter 21. mars),\nf.\nannen påskedag (første mandag etter første påskedag),\ng.\nKristi Himmelfartsdag (sjette torsdag etter første påskedag),\nh.\nførste pinsedag (sjuende søndag etter første påskedag),\ni.\nannen pinsedag (første mandag etter første pinsedag),\nj.\nførste juledag (25. desember),\nk.\nannen juledag (26. desember).",
+      "source_edition": "Consolidated text read 2026-11-25",
+      "source_locator": "Section 2 of the holiday-peace act (lovdata-helligdager lines 94-117)",
+      "source_title": "Lov om helligdager og helligdagsfred",
+      "source_url": "https://lovdata.no/dokument/NL/lov/1995-02-24-12",
+      "start_date": "2027-12-25",
+      "verified": true
+    },
+    {
+      "accessed_on": "2026-11-25",
+      "derived": true,
+      "end_date": "2027-12-26",
+      "evidence": {
+        "note": "17 May 2027 is also Whit Monday, so the same Monday is a holiday under both acts; Easter week runs 25-29 March with five holiday days.",
+        "observed_facts": "The 2027 date is derived from the statutory rule: Easter Sunday 2027 is 28 March, so the Easter-dependent days follow; 1 May and 17 May are fixed dates."
+      },
+      "holiday_name": "Annen juledag",
+      "jurisdiction_id": "NO",
+      "kind": "public_holiday",
+      "name_en": "Boxing Day",
+      "needs_human_verify": true,
+      "observance": "statutory",
+      "quote": "§ 2.Helligdager\nFølgende dager er helligdag:\na.\nvanlige søndager,\nb.\nnyttårsdag (1. januar),\nc.\nskjærtorsdag (siste torsdag før første påskedag),\nd.\nlangfredag (siste fredag før første påskedag),\ne.\nførste påskedag (første søndag etter første fullmåne som inntreffer på eller etter 21. mars),\nf.\nannen påskedag (første mandag etter første påskedag),\ng.\nKristi Himmelfartsdag (sjette torsdag etter første påskedag),\nh.\nførste pinsedag (sjuende søndag etter første påskedag),\ni.\nannen pinsedag (første mandag etter første pinsedag),\nj.\nførste juledag (25. desember),\nk.\nannen juledag (26. desember).",
+      "source_edition": "Consolidated text read 2026-11-25",
+      "source_locator": "Section 2 of the holiday-peace act (lovdata-helligdager lines 94-117)",
+      "source_title": "Lov om helligdager og helligdagsfred",
+      "source_url": "https://lovdata.no/dokument/NL/lov/1995-02-24-12",
+      "start_date": "2027-12-26",
+      "verified": true
+    }
+  ]
+}
