@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KI-dagene 2026 · 25.–26. november · Oslo Kongressenter</title>
+<meta property="og:title" content="KI-dagene 2026 · 25.–26. november · Oslo Kongressenter">
+<meta property="og:description" content="25.–26. november 2026, Oslo Kongressenter. Møt blant andre Eirik Norman Hansen, Elisabet Haugsbø og Sven-Olav Svendsen – og et program fra industri, helse og offentlig sektor.">
+<meta property="og:image" content="https://kidagene.no/bilder/og-bilde.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://kidagene.no/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="description" content="To dager om hvordan kunstig intelligens brukes i norske virksomheter. 25.–26. november 2026, Oslo Kongressenter.">
+<link rel="canonical" href="https://kidagene.no/">
+<link rel="icon" type="image/png" sizes="192x192" href="/favicon.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/icon-512.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<!-- Privacy-friendly analytics by Plausible -->
+<script async src="https://plausible.io/js/pa-Ax5ChH2I3nBU9ahfMTfYw.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Instrument+Sans:wght@400..700&family=JetBrains+Mono:wght@400..700&family=Shantell+Sans:wght@400..700&display=swap" rel="stylesheet">
+<style>
+body { margin: 0; background: #0A1730; font-family: 'Instrument Sans', sans-serif; color: #0A1730; }
+a { color: #14335E; } a:hover { color: #0A1730; }
+@keyframes blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+.blink { animation: blink 1.1s step-end infinite; }
+.hl:hover { background: #F4F7FB !important; color: #0A1730 !important; }
+.hg:hover { background: #0A1730 !important; color: #4FA3E8 !important; }
+.hp:hover { background: #14335E !important; color: #F4F7FB !important; }
+.bilde { width: 100%; height: 100%; object-fit: cover; display: block; }
+@keyframes talermarquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+.taler-marquee { animation: talermarquee 60s linear infinite; -webkit-animation: talermarquee 60s linear infinite; will-change: transform; }
+@media (prefers-reduced-motion: reduce) { .taler-marquee, .blink { animation: none !important; -webkit-animation: none !important; } }
+#virksomheter-liste img { width: auto; max-width: 170px; object-fit: contain; filter: brightness(0) invert(1); opacity: 0.85; }
+/* Tiltak 3: ett ledende innlegg (første i kuratert rekkefølge) får bredere flate og større tittel på brede skjermer */
+@media (min-width: 1100px) {
+  /* Fem kort (2026-11-13): to brede øverst (ledende først), tre under – ingen enslig/strukket kort */
+  #utvalgte-innlegg-liste { grid-template-columns: repeat(6, minmax(0,1fr)) !important; }
+  #utvalgte-innlegg-liste > a { grid-column: span 2; }
+  #utvalgte-innlegg-liste > a:nth-child(-n+2) { grid-column: span 3; }
+  #utvalgte-innlegg-liste > a:first-child > div:nth-child(2) { font-size: 24px !important; max-width: 24ch; }
+}
+#utbytte h2 + p { margin-top: 18px; }
+@media (max-width: 700px) { #utbytte { padding: 40px 0 0 !important; } #utbytte > div { padding-left: 20px !important; padding-right: 20px !important; } #utbytte h2 { font-size: 1.6rem !important; } }
+
+
+.meny-v { display: none; position: absolute; top: 100%; right: 0; z-index: 1001; width: max-content; flex-direction: column; align-items: flex-end; text-align: right; gap: 18px; background: rgba(10,23,48,0.94); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); padding: 18px 26px 24px; box-shadow: 0 14px 32px rgba(0,0,0,0.45); border-top: 1px solid #1E2F4F; }
+.meny-v.open { display: flex; }
+.meny-knapp { display: inline-block !important; }
+@media (max-width: 1280px) {
+  .meny { display: none !important; }
+}
+
+@media (max-width: 700px) {
+  #virksomheter-liste:not(.alle) > [data-item]:nth-child(n+11) { display: none !important; }
+  .logo-knapp { display: inline-block !important; }
+}
+@media (max-width: 700px) {
+  .kontaktgrid { grid-template-columns: 1fr !important; gap: 3px 0 !important; }
+  .kontaktgrid > span { margin-top: 14px; }
+  .kontaktgrid > span:first-child { margin-top: 0; }
+}
+/* Fase 17: lavere hero, kompakt mobil */
+@media (max-width: 700px) {
+  .hero-tekst { padding: 92px 20px 30px !important; }
+  .hero-tekst h1 { font-size: clamp(2.3rem, 11vw, 3rem) !important; }
+  .hero-tekst .hero-dato { margin-top: 16px !important; font-size: 12px !important; }
+  .hero-tekst .hero-cta { margin-top: 22px !important; gap: 10px !important; }
+  .hero-tekst .hero-cta a { padding: 13px 22px !important; font-size: 16px !important; }
+  #virksomheter { padding: 28px 0 30px !important; }
+  #virksomheter > div, #utvalgte-innlegg > div, #foredragsholdere > div { padding-left: 20px !important; padding-right: 20px !important; }
+  #virksomheter-liste { gap: 6px 22px !important; }
+  #virksomheter-liste > * { min-height: 46px !important; }
+  #utvalgte-innlegg { padding: 40px 0 !important; }
+  #utvalgte-innlegg h2, #foredragsholdere h2 { font-size: 1.6rem !important; }
+  #foredragsholdere { padding: 40px 0 !important; }
+  #foredragsholdere > div:first-child { margin-bottom: 22px !important; }
+  .swipe { display: flex !important; overflow-x: auto; overscroll-behavior-x: contain; scroll-snap-type: x mandatory; scroll-padding-left: 20px; -webkit-overflow-scrolling: touch; gap: 12px !important; margin: 0 -20px; padding: 2px 20px 10px !important; scrollbar-width: none; max-width: none !important; }
+  .swipe::-webkit-scrollbar { display: none; }
+  .swipe > * { flex: 0 0 80%; scroll-snap-align: start; box-sizing: border-box; min-width: 0; }
+  #taler-fremhevet { margin: 0 !important; scroll-padding-left: 20px; }
+  #taler-fremhevet > * { flex-basis: 40%; gap: 10px !important; }
+  #taler-fremhevet > * > div:first-child { width: 100% !important; }
+  #taler-fremhevet::after { content: ""; flex: 0 0 8px; }
+  #billett, #partner { padding: 40px 20px !important; }
+}
+.kontakt-utvid summary::-webkit-details-marker{display:none}.kontakt-utvid[open] summary span{display:inline-block;transform:rotate(180deg)}
+@media (max-width:720px){#hovedpartner-stripe .skjul-mobil{display:none}}
+@media (max-width:760px){.nav-cta{white-space:normal!important;text-align:center;max-width:132px;padding:8px 12px!important;line-height:1.3}}
+</style>
+<script>window.KID_HERO_VARIANTER={"standard":"To dager om hvordan KI endrer norsk arbeidsliv, industri og virksomheter.","industry_ot":"To dager om hvordan KI skaper nye muligheter i industri, teknologi og arbeidsliv.","technology_ai":"To dager om KI-teknologi, infrastruktur, sikkerhet og praktisk anvendelse.","leadership_value":"To dager om hvordan KI påvirker ledelse, verdiskaping og norsk arbeidsliv.","finance_investment":"To dager om hvordan KI endrer verdiskaping, ledelse og norsk arbeidsliv.","public_sector":"To dager om KI i offentlige tjenester, organisasjoner og norsk arbeidsliv.","governance_security":"To dager om hvordan KI endrer sikkerhet, regelverk og norsk arbeidsliv.","health":"To dager om hvordan KI endrer helse, offentlige tjenester og arbeidsliv."};</script>
+<script>window.KID_KONTEKST={"segment":null,"kilde":"standard","styrke":null};</script>
+<script src="personalisering-konfig.js?v=20261015a"></script>
+<script src="segmenter.js?v=20261120a"></script>
+<script src="talere-data.js?v=20261120a"></script>
+<script src="program-data.js?v=20261124a"></script>
+<script defer src="middag.js?v=20261110b"></script>
+<script src="innhold-data.js?v=20261124a"></script>
+<script src="variant.js?v=20261015a"></script>
+<script src="talere-rotasjon.js?v=20261015a"></script>
+<script src="bilder-oppsett.js?v=20261003w"></script>
+<script src="bilder.js?v=20261003i"></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "KI-dagene 2026",
+  "description": "To dager om hvordan kunstig intelligens brukes i norske virksomheter, i offentlig og privat sektor.",
+  "startDate": "2026-11-25T08:00+01:00",
+  "endDate": "2026-11-26T16:05:00+01:00",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+  "inLanguage": "nb",
+  "url": "https://kidagene.no/",
+  "image": [
+    "https://kidagene.no/bilder/og-bilde.png"
+  ],
+  "location": {
+    "@type": "Place",
+    "name": "Oslo Kongressenter Folkets Hus",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Youngs gate 21",
+      "postalCode": "0181",
+      "addressLocality": "Oslo",
+      "addressCountry": "NO"
+    }
+  },
+  "organizer": {
+    "@type": "Organization",
+    "name": "Phenix Events AS",
+    "url": "https://www.phenixevents.no/"
+  },
+  "offers": [
+
+    {
+        "@type": "Offer",
+        "name": "Dagspass – onsdag 25. november",
+        "price": "5490",
+        "priceCurrency": "NOK",
+        "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "5490",
+            "priceCurrency": "NOK",
+            "valueAddedTaxIncluded": false
+        },
+        "availability": "https://schema.org/LimitedAvailability",
+        "url": "https://kidagene.no/billetter/"
+    },
+    {
+        "@type": "Offer",
+        "name": "Dagspass – torsdag 26. november",
+        "price": "5490",
+        "priceCurrency": "NOK",
+        "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "5490",
+            "priceCurrency": "NOK",
+            "valueAddedTaxIncluded": false
+        },
+        "availability": "https://schema.org/LimitedAvailability",
+        "url": "https://kidagene.no/billetter/"
+    },
+    {
+        "@type": "Offer",
+        "name": "Todagerspass",
+        "price": "7990",
+        "priceCurrency": "NOK",
+        "priceSpecification": {
+            "@type": "UnitPriceSpecification",
+            "price": "7990",
+            "priceCurrency": "NOK",
+            "valueAddedTaxIncluded": false
+        },
+        "availability": "https://schema.org/LimitedAvailability",
+        "url": "https://kidagene.no/billetter/"
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<div style="min-height:100vh;background:#0A1730;overflow-x:clip">
+
+  <nav style="display:flex;align-items:center;justify-content:space-between;gap:12px 20px;flex-wrap:nowrap;padding:14px clamp(16px,4vw,40px);background:#0A1730;position:sticky;top:0;z-index:1000;border-bottom:1px solid #1E2F4F">
+    <div style="display:flex;flex-direction:column;gap:8px;flex:1 1 auto;min-width:0">
+    <a href="#" style="display:flex;align-items:center;gap:12px;text-decoration:none">
+        <span style="width:34px;height:34px;background:#0A1730;display:inline-flex;align-items:center;justify-content:center;outline:1px solid #1E2F4F"><span style="display:inline-block;width:8px;height:21.5px;background:#4FA3E8"></span></span>
+        <span style="display:flex;flex-direction:column;gap:2px"><span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:19px;color:#F4F7FB;letter-spacing:0.02em;line-height:1">KI-DAGENE</span><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.12em;color:#C3CCDA;line-height:1.3">25.–26. NOVEMBER 2026 · OSLO KONGRESSENTER</span></span>
+      </a>
+      <div class="snarveier" style="display:flex;align-items:center;flex-wrap:wrap;gap:10px 22px;padding-left:46px">
+        <a href="program/" data-item-id="header" style="text-decoration:none;color:#4FA3E8;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.12em;font-weight:700;text-transform:uppercase">Program</a>
+        <a href="billetter/" style="text-decoration:none;color:#4FA3E8;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.12em;font-weight:700;text-transform:uppercase">Billetter</a>
+        <div class="meny" style="display:flex;align-items:center;gap:14px 22px;flex-wrap:wrap;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.06em">
+          <a href="foredragsholdere/" style="text-decoration:none;color:#F4F7FB;text-transform:uppercase">Talere</a>
+          <a href="partner/" style="text-decoration:none;color:#F4F7FB;text-transform:uppercase">Partner / utstiller</a>
+          <a href="sporsmal-og-svar/" style="text-decoration:none;color:#A7B2C2;text-transform:uppercase">Spørsmål</a>
+          <a href="fagstoff/" style="text-decoration:none;color:#A7B2C2;text-transform:uppercase">Fagstoff</a>
+        </div>
+      </div>
+    </div>
+    <div style="flex:0 0 auto;margin-left:auto;display:flex;flex-direction:column;align-items:flex-end;gap:8px">
+      <a href="billetter/#billetter" class="hl nav-cta" style="text-decoration:none;background:#4FA3E8;color:#0A1730;padding:10px 20px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.06em;font-weight:700;white-space:nowrap;text-transform:uppercase">Se billetter</a>
+      <button class="meny-knapp" aria-label="Meny" aria-expanded="false" onclick="var m=this.closest('nav').querySelector('.meny-v');var o=m.classList.toggle('open');this.setAttribute('aria-expanded',o)" style="display:none;background:none;border:1px solid #1E2F4F;color:#F4F7FB;padding:5px 12px;cursor:pointer;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.06em;text-transform:uppercase">Meny ▾</button>
+    </div>
+    <div class="meny-v" style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.06em">
+      <a href="program/" style="text-decoration:none;color:#4FA3E8;font-weight:700;text-transform:uppercase">Program</a>
+      <a href="billetter/" style="text-decoration:none;color:#4FA3E8;font-weight:700;text-transform:uppercase">Billetter</a>
+      <a href="foredragsholdere/" style="text-decoration:none;color:#F4F7FB;text-transform:uppercase">Talere</a>
+      <a href="partner/" style="text-decoration:none;color:#F4F7FB;text-transform:uppercase">Partner / utstiller</a>
+      <a href="sporsmal-og-svar/" style="text-decoration:none;color:#A7B2C2;text-transform:uppercase">Spørsmål</a>
+      <a href="fagstoff/" style="text-decoration:none;color:#A7B2C2;text-transform:uppercase">Fagstoff</a>
+    </div>
+  </nav>
+
+  <header id="topp" data-bilde-ramme="hero" style="position:relative;min-height:56vh;display:flex;flex-direction:column;justify-content:flex-end">
+    <div style="position:absolute;inset:0;overflow:hidden"><img src="bilder/hero.webp" data-bilde="hero" alt="Konferansesal med scenelys" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div>
+    <div data-bilde-dim="hero" style="position:absolute;inset:0;background:linear-gradient(100deg,rgba(10,23,48,0.85) 0%,rgba(10,23,48,0.55) 50%,rgba(10,23,48,0.15) 100%);pointer-events:none"></div>
+    <div data-bilde-tekst="hero" class="hero-tekst" style="position:relative;max-width:1280px;width:100%;margin:0 auto;padding:clamp(100px,14vh,150px) 40px clamp(36px,5vh,56px);pointer-events:none;box-sizing:border-box">
+      <h1 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:clamp(2.4rem,9vw,8rem);line-height:0.92;letter-spacing:-0.02em;color:#F4F7FB;margin:0">KI-DAGENE 2026<span class="blink" style="display:inline-block;width:0.12em;height:0.9em;vertical-align:-0.12em;background:#4FA3E8;margin-left:0.03em"></span></h1>
+      <p class="hero-dato" style="font-family:'JetBrains Mono',monospace;font-size:clamp(0.85rem,1.4vw,1rem);letter-spacing:0.14em;color:#C3CCDA;margin:22px 0 0">25.–26. NOVEMBER 2026 · OSLO KONGRESSENTER</p>
+      <p id="hero-undertekst" style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:clamp(1.15rem,2vw,1.5rem);color:#F4F7FB;max-width:36ch;line-height:1.35;margin:12px 0 0">To dager om hvordan KI endrer norsk arbeidsliv, industri og virksomheter.</p>
+      <div class="hero-cta" style="display:flex;gap:14px;margin-top:28px;flex-wrap:wrap">
+        <a href="program/" data-item-id="hero" style="pointer-events:auto;text-decoration:none;background:transparent;color:#F4F7FB;border:1px solid #F4F7FB;padding:15px 33px;font-weight:700;font-size:17px;white-space:nowrap">Se programmet</a>
+        <a href="billetter/#billetter" class="hl" style="pointer-events:auto;text-decoration:none;background:#4FA3E8;color:#0A1730;padding:16px 34px;font-weight:700;font-size:17px;white-space:nowrap">Se billetter</a>
+      </div>
+    </div>
+  </header>
+
+  <section id="hovedpartner-stripe" aria-label="Partner og utstillere" style="background:#14335E;border-top:1px solid #1E2F4F">
+    <div style="max-width:1280px;margin:0 auto;padding:10px clamp(16px,4vw,40px);box-sizing:border-box;display:flex;flex-direction:column;gap:2px">
+      <div style="display:flex;align-items:center;gap:clamp(10px,2.5vw,28px);flex-wrap:nowrap;min-width:0">
+        <span style="font-family:'JetBrains Mono',monospace;font-size:clamp(9px,2.4vw,12px);letter-spacing:0.12em;color:#A7B2C2;text-transform:uppercase;white-space:nowrap;flex:0 0 clamp(96px,28vw,160px)">Hovedpartner</span>
+        <a href="partner/#hovedpartner" style="display:inline-flex;align-items:center;padding:5px 0;flex-shrink:0"><img src="bilder/fortytwo-logotype-dust.png" alt="Fortytwo.io" width="626" height="112" style="width:clamp(110px,28vw,200px);height:auto;max-width:100%;object-fit:contain;display:block"></a>
+        <span class="skjul-mobil" style="font-size:14px;color:#D6DEE9;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0">KI, identitet, sikkerhet og skyteknologi</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:clamp(10px,2.5vw,28px);flex-wrap:nowrap;min-width:0;border-top:1px solid #2A4A7A;padding-top:2px">
+        <span style="font-family:'JetBrains Mono',monospace;font-size:clamp(9px,2.4vw,12px);letter-spacing:0.12em;color:#A7B2C2;text-transform:uppercase;white-space:nowrap;flex:0 0 clamp(96px,28vw,160px)">Strategisk partner</span>
+        <a href="partner/#strategisk-partner" style="display:inline-flex;align-items:center;padding:5px 0;flex-shrink:0"><img src="bilder/logo-paloalto-farge-hvit.png" alt="Palo Alto Networks" width="1000" height="183" style="width:clamp(96px,24vw,165px);height:auto;max-width:100%;object-fit:contain;display:block"></a>
+      </div>
+      <div style="display:flex;align-items:center;gap:clamp(10px,2.5vw,28px);flex-wrap:nowrap;min-width:0;border-top:1px solid #2A4A7A;padding-top:2px">
+        <span style="font-family:'JetBrains Mono',monospace;font-size:clamp(9px,2.4vw,12px);letter-spacing:0.12em;color:#A7B2C2;text-transform:uppercase;white-space:nowrap;flex:0 0 clamp(96px,28vw,160px)">Partnere</span>
+                <a href="partner/#partnere" style="display:inline-flex;align-items:center;padding:5px 0;flex-shrink:0"><img src="bilder/partner-forte-hvit.svg" alt="Forte" style="height:clamp(16px,4vw,24px);width:auto;object-fit:contain;display:block"></a>
+      </div>
+      <div style="display:flex;align-items:center;gap:clamp(10px,2.5vw,28px);flex-wrap:nowrap;min-width:0;border-top:1px solid #2A4A7A;padding-top:2px">
+        <span style="font-family:'JetBrains Mono',monospace;font-size:clamp(9px,2.4vw,12px);letter-spacing:0.12em;color:#A7B2C2;text-transform:uppercase;white-space:nowrap;flex:0 0 clamp(96px,28vw,160px)">Utstillere</span>
+        <div style="display:flex;align-items:center;flex-wrap:wrap;gap:2px clamp(10px,2.5vw,28px);min-width:0;flex:1 1 auto">
+          <a href="partner/#utstillere" style="display:inline-flex;align-items:center;padding:5px 0;flex-shrink:0"><img src="bilder/logo-antire-hvit.png" alt="Antire" style="height:clamp(11px,2.6vw,15px);width:auto;object-fit:contain;display:block"></a>
+          <span aria-hidden="true" style="width:1px;height:24px;background:#2A4A7A;flex-shrink:0"></span>
+          <a href="partner/#utstillere" style="display:inline-flex;align-items:center;padding:5px 0;flex-shrink:0"><img src="bilder/logo-aidevo.png" alt="Aidevo" width="1000" height="296" style="height:clamp(17px,4vw,24px);width:auto;object-fit:contain;display:block"></a>
+          <span aria-hidden="true" style="width:1px;height:24px;background:#2A4A7A;flex-shrink:0"></span>
+          <a href="partner/#utstillere" style="display:inline-flex;align-items:center;padding:5px 0;flex-shrink:0"><img src="bilder/logo-overhuset-hvit.png" alt="Overhuset" width="1000" height="258" style="height:clamp(11px,2.6vw,15px);width:auto;object-fit:contain;display:block"></a>
+          <span aria-hidden="true" style="width:1px;height:24px;background:#2A4A7A;flex-shrink:0"></span>
+          <a href="partner/#utstillere" style="display:inline-flex;align-items:center;padding:5px 0;flex-shrink:0"><img src="bilder/logo-embla-hvit.png" alt="Embla" width="1200" height="342" loading="lazy" style="height:clamp(15px,3.6vw,21px);width:auto;object-fit:contain;display:block"></a>
+          <span aria-hidden="true" style="width:1px;height:24px;background:#2A4A7A;flex-shrink:0"></span>
+          <a href="partner/#utstillere" aria-label="IEC Telecom Norway – utstiller på KI-dagene 2026" style="display:inline-flex;align-items:center;padding:5px 0;flex-shrink:0"><img src="bilder/logo-iec-telecom-hvit.png" alt="IEC Telecom Norway" width="1593" height="465" loading="lazy" style="height:clamp(14px,3.1vw,23px);width:auto;max-width:152px;object-fit:contain;display:block"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="virksomheter" style="padding:44px 0 48px;background:#0A1730;border-top:1px solid #1E2F4F">
+    <div style="max-width:1280px;margin:0 auto;padding:0 40px;box-sizing:border-box">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.14em;color:#8A94A6;margin-bottom:22px;text-transform:uppercase">Noen av de påmeldte virksomhetene</div>
+      <div id="virksomheter-liste" style="display:flex;flex-wrap:wrap;align-items:center;gap:14px 36px">
+          <a href="taler-jan-munkejord/" data-item="equinor" data-posisjon="1" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-equinor.svg" alt="Equinor" loading="lazy" style="height:64px"></a>
+          <a href="taler-stian-kirkeberg/" data-item="nbim" data-posisjon="2" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-nbim.svg" alt="Norges Bank Investment Management" loading="lazy" style="height:36px"></a>
+          <a href="taler-thomas-bordvik/" data-item="akersolutions" data-posisjon="3" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-akersolutions.png" alt="Aker Solutions" loading="lazy" style="height:22px"></a>
+          <span data-item="banenor" data-posisjon="4" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-banenor.png" alt="Bane NOR" loading="lazy" style="height:22px"></span>
+          <a href="taler-bjorn-villa/" data-item="helsemidt" data-posisjon="5" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-helsemidt.png" alt="Helse Midt-Norge" loading="lazy" style="height:27px"></a>
+          <span data-item="gassco" data-posisjon="6" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-gassco.png" alt="Gassco AS" loading="lazy" style="height:22px"></span>
+          <span data-item="sykehuspartner" data-posisjon="7" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-sykehuspartner.png" alt="Sykehuspartner HF" loading="lazy" style="height:29px"></span>
+          <span data-item="ruter" data-posisjon="8" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-ruter.png" alt="Ruter" loading="lazy" style="height:17px"></span>
+          <span data-item="helse-bergen" data-posisjon="9" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-helse-bergen.png" alt="Helse Bergen HF" loading="lazy" style="height:31px"></span>
+          <span data-item="vestreviken" data-posisjon="10" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-vestreviken.png" alt="Vestre Viken HF" loading="lazy" style="height:30px"></span>
+          <a href="taler-thor-myklebust/" data-item="sintef" data-posisjon="11" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-sintef.png" alt="SINTEF" loading="lazy" style="height:25px"></a>
+          <a href="taler-kaaren-hilsen/" data-item="telenor" data-posisjon="12" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-telenor-ai-factory.png" alt="Telenor AI Factory" loading="lazy" style="height:28px"></a>
+          <span data-item="tine" data-posisjon="13" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-tine.png" alt="TINE SA" loading="lazy" style="height:34px"></span>
+          <span data-item="dio" data-posisjon="14" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-dio.png" alt="Departementenes digitaliseringsorganisasjon (DIO)" loading="lazy" style="height:28px"></span>
+          <span data-item="eviny" data-posisjon="15" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-eviny.png" alt="Eviny AS" loading="lazy" style="height:30px"></span>
+          <a href="taler-christoffer-frenning/" data-item="microsoft" data-posisjon="16" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-microsoft.webp" alt="Microsoft" loading="lazy" style="height:22px"></a>
+          <span data-item="norsktipping" data-posisjon="17" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-norsktipping.svg" alt="Norsk Tipping" loading="lazy" style="height:46px"></span>
+          <span data-item="dnv" data-posisjon="18" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-dnv.png" alt="DNV" loading="lazy" style="height:28px"></span>
+          <span data-item="mattilsynet" data-posisjon="19" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-mattilsynet.png" alt="Mattilsynet" loading="lazy" style="height:24px"></span>
+          <span data-item="forskningsradet" data-posisjon="20" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-forskningsradet.png" alt="Forskningsrådet" loading="lazy" style="height:26px"></span>
+          <span data-item="klp" data-posisjon="21" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-klp.png" alt="KLP" loading="lazy" style="height:32px"></span>
+          <span data-item="akershus-energi" data-posisjon="22" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-akershus-energi.png" alt="Akershus Energi" loading="lazy" style="height:30px"></span>
+          <span data-item="tieto-tech-consulting" data-posisjon="23" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-tieto-tech-consulting.png" alt="Tieto Tech Consulting" loading="lazy" style="height:22px"></span>
+          <span data-item="color-line" data-posisjon="24" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-color-line.svg" alt="Color Line" loading="lazy" style="height:30px"></span>
+          <span data-item="industrikran" data-posisjon="25" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-industrikran.png" alt="Industrikran Norge AS" loading="lazy" style="height:48px"></span>
+          <span data-item="norled" data-posisjon="26" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-norled.svg" alt="Norled" loading="lazy" style="height:18px"></span>
+          <span data-item="sfe" data-posisjon="27" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-sfe.png" alt="SFE" loading="lazy" style="height:30px"></span>
+          <span data-item="statnett" data-posisjon="28" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-statnett.png" alt="Statnett" loading="lazy" style="height:20px"></span>
+          <span data-item="sporveien" data-posisjon="29" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-sporveien.png" alt="Sporveien" loading="lazy" style="height:34px"></span>
+          <span data-item="sparebank1-sogn-fjordane" data-posisjon="30" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-sparebank1-sogn-fjordane.png" alt="SpareBank 1 Sogn og Fjordane" loading="lazy" style="height:24px"></span>
+          <span data-item="lottstift" data-posisjon="31" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-lottstift.png" alt="Lotteri- og stiftelsestilsynet" loading="lazy" style="height:24px"></span>
+          <span data-item="coop" data-posisjon="32" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-coop.png" alt="Coop Norge" loading="lazy" style="height:22px"></span>
+          <span data-item="nrk" data-posisjon="33" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-nrk.png" alt="NRK" loading="lazy" style="height:20px"></span>
+          <span data-item="telenor-asa" data-posisjon="34" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-telenor.svg" alt="Telenor" loading="lazy" style="height:36px"></span>
+          <span data-item="udi" data-posisjon="35" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-udi.png" alt="Utlendingsdirektoratet (UDI)" loading="lazy" style="height:24px"></span>
+          <span data-item="odfjell" data-posisjon="36" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-odfjell-mono.png" alt="Odfjell Technology" loading="lazy" style="height:34px"></span>
+          <span data-item="subseadesign" data-posisjon="37" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-subseadesign.png" alt="SubseaDesign AS" loading="lazy" style="height:48px"></span>
+          <span data-item="bdo" data-posisjon="38" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-bdo.png" alt="BDO" loading="lazy" style="height:22px"></span>
+          <span data-item="oslobygg" data-posisjon="39" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-oslobygg.png" alt="Oslobygg" loading="lazy" style="height:52px"></span>
+          <span data-item="sandnes" data-posisjon="40" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-sandnes.png" alt="Sandnes kommune" loading="lazy" style="height:44px"></span>
+          <span data-item="hapro" data-posisjon="41" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-hapro.png" alt="Hapro" loading="lazy" style="height:30px"></span>
+          <span data-item="landbruksdirektoratet" data-posisjon="42" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-landbruksdirektoratet.png" alt="Landbruksdirektoratet" loading="lazy" style="height:40px"></span>
+          <span data-item="hmh" data-posisjon="43" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-hmh.png" alt="HMH" loading="lazy" style="height:22px"></span>
+          <a href="taler-guro-vassend/" data-item="forte" data-posisjon="44" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-forte.svg" alt="Forte" loading="lazy" style="height:24px"></a>
+          <a href="taler-sten-solseth/" data-item="nesodden" data-posisjon="45" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-nesodden-mono.png" alt="Nesodden kommune" loading="lazy" style="height:32px"></a>
+          <a href="taler-sven-olav-svendsen/" data-item="kf" data-posisjon="46" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-kf.png" alt="KF" loading="lazy" style="height:28px"></a>
+          <span data-item="offb" data-posisjon="47" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-offb.svg" alt="Operatørenes forening for beredskap (OFFB)" loading="lazy" style="height:34px"></span>
+          <span data-item="nova-consulting" data-posisjon="48" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-nova-consulting.png" alt="NOVA Consulting Group" loading="lazy" style="height:36px"></span>
+          <span data-item="midt-gudbrandsdal-renovasjon" data-posisjon="49" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-midt-gudbrandsdal-renovasjon.png" alt="Midt-Gudbrandsdal Renovasjon IKS" loading="lazy" style="height:32px"></span>
+          <span data-item="frontkom" data-posisjon="50" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-frontkom.png" alt="Frontkom AS" loading="lazy" style="height:20px"></span>
+          <span data-item="ats-norway" data-posisjon="51" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-ats-norway.png" alt="ATS Norway AS" loading="lazy" style="height:22px"></span>
+          <span data-item="devoteam" data-posisjon="52" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-devoteam.png" alt="Devoteam" loading="lazy" style="height:24px"></span>
+          <span data-item="bekk" data-posisjon="53" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-bekk-mono.png" alt="Bekk" loading="lazy" style="height:20px"></span>
+          <span data-item="afry" data-posisjon="54" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-afry-mono.png" alt="AFRY" loading="lazy" style="height:42px"></span>
+          <span data-item="origo" data-posisjon="55" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-origo-mono.png" alt="Origo Solutions" loading="lazy" style="height:34px"></span>
+          <span data-item="canterra" data-posisjon="56" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-canterra-mono.png" alt="Canterra" loading="lazy" style="height:20px"></span>
+          <span data-item="diagen" data-posisjon="57" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-diagen-mono.png" alt="Diagen" loading="lazy" style="height:32px"></span>
+          <span data-item="nek" data-posisjon="58" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-nek.png" alt="NEK – Norsk Elektroteknisk Komite" loading="lazy" style="height:22px"></span>
+          <a href="taler-lone-bekkeheien/" data-item="marselia" data-posisjon="59" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-marselia-mono.png" alt="Marselia Robotics" loading="lazy" style="height:18px"></a>
+          <a href="taler-elisabet-haugsbo/" data-item="tekna" data-posisjon="60" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-tekna.png" alt="Tekna" loading="lazy" style="height:32px"></a>
+          <a href="taler-ingvild-von-krogh-strand/" data-item="abelia" data-posisjon="61" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-abelia.png" alt="Abelia" loading="lazy" style="height:21px"></a>
+          <a href="partner/#partnere" data-item="styrke" data-posisjon="62" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-styrke.png" alt="Styrke" loading="lazy" style="height:40px"></a>
+          <a href="partner/#utstillere" data-item="antire" data-posisjon="63" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-antire.png" alt="Antire" loading="lazy" style="height:20px"></a>
+          <a href="partner/#utstillere" data-item="aidevo" data-posisjon="64" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-aidevo-mono.png" alt="Aidevo" loading="lazy" style="height:22px"></a>
+          <a href="partner/#utstillere" data-item="overhuset" data-posisjon="65" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-overhuset-sort.png" alt="Overhuset" loading="lazy" style="height:20px"></a>
+          <a href="partner/#utstillere" data-item="embla" data-posisjon="66" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-embla.png" alt="Embla Software Innovation" loading="lazy" style="height:24px"></a>
+          <span data-item="skykontoret" data-posisjon="67" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-skykontoret.png" alt="Skykontoret" loading="lazy" style="height:18px"></span>
+          <span data-item="houmb" data-posisjon="68" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-houmb.png" alt="Houmb AS" loading="lazy" style="height:16px"></span>
+          <span data-item="amnesty" data-posisjon="69" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-amnesty-mono.png" alt="Amnesty International" loading="lazy" style="height:34px"></span>
+          <a href="taler-marius-sandbu/" data-item="soprasteria" data-posisjon="70" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-soprasteria.png" alt="Sopra Steria" loading="lazy" style="height:26px"></a>
+          <a href="taler-tom-einar-nyberg/" data-item="kpmg" data-posisjon="71" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-kpmg.png" alt="KPMG" loading="lazy" style="height:28px"></a>
+          <span data-item="haavind" data-posisjon="72" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-haavind.png" alt="Haavind" loading="lazy" style="height:26px"></span>
+          <a href="taler-christian-bendiksen/" data-item="bull" data-posisjon="73" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-bull.png" alt="Advokatfirmaet Bull" loading="lazy" style="height:40px"></a>
+          <a href="taler-nina-pettersen/" data-item="gritera" data-posisjon="74" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-gritera.png?v=20261122" alt="Gritera Security" loading="lazy" style="height:32px"></a>
+          <a href="partner/#partnere" data-item="lumiar" data-posisjon="75" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-lumiar.png" alt="Lumiar" loading="lazy" style="height:27px"></a>
+          <a href="partner/#partnere" data-item="validea" data-posisjon="76" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:19px;letter-spacing:0.01em;color:#F4F7FB;opacity:0.85;white-space:nowrap">Validea</span></a>
+          <span data-item="house-of-agile" data-posisjon="77" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-house-of-agile-mono.png" alt="House of Agile" loading="lazy" style="height:53px;width:auto;max-width:160px;object-fit:contain;opacity:0.85"></span>
+          <span data-item="mobit" data-posisjon="78" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-mobit-mono.png" alt="Mobit" loading="lazy" style="height:30px;width:auto;max-width:170px;object-fit:contain;opacity:0.85"></span>
+          <span data-item="elkraft" data-posisjon="79" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-elkraft-mono.png" alt="Elkraft" loading="lazy" style="height:32px;width:auto;max-width:170px;object-fit:contain;opacity:0.85"></span>
+          <span data-item="ocean-installer" data-posisjon="80" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-ocean-installer-mono.png" alt="Ocean Installer" loading="lazy" style="height:26px;width:auto;max-width:170px;object-fit:contain;opacity:0.85"></span>
+          <span data-item="e24" data-posisjon="81" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-e24-mono.png" alt="E24" loading="lazy" style="height:52px;width:auto;max-width:80px;object-fit:contain;opacity:0.85"></span>
+          <a href="partner/#utstillere" data-item="iec-telecom-norway" data-posisjon="82" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-iec-telecom-hvit.png" alt="IEC Telecom Norway" loading="lazy" style="height:23px;width:auto;max-width:170px;object-fit:contain;opacity:0.85"></a>
+          <span data-item="enivest" data-posisjon="83" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-enivest.png" alt="Enivest AS" loading="lazy" style="height:34px;width:auto;max-width:90px;object-fit:contain;opacity:1"></span>
+          <span data-item="norsk-helsenett" data-posisjon="84" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-norsk-helsenett-hvit.png" alt="Norsk helsenett SF" loading="lazy" style="height:11px;width:auto;max-width:120px;object-fit:contain;opacity:0.85"></span>
+          <span data-item="advania" data-posisjon="85" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-advania-hvit.png" alt="Advania Norge" loading="lazy" style="height:30px;width:auto;max-width:100px;object-fit:contain;opacity:0.85"></span>
+          <span data-item="cermaq" data-posisjon="86" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-cermaq-hvit.png" alt="Cermaq Group" loading="lazy" style="height:16px;width:auto;max-width:130px;object-fit:contain;opacity:0.85"></span>
+          <span data-item="habberstad" data-posisjon="87" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-habberstad-hvit.png" alt="Habberstad AS" loading="lazy" style="height:19px;width:auto;max-width:130px;object-fit:contain;opacity:0.85"></span>
+          <span data-item="nordland-fylkeskommune" data-posisjon="88" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-nordland-fylkeskommune-hvit.png" alt="Nordland fylkeskommune" loading="lazy" style="height:30px;width:auto;max-width:130px;object-fit:contain;opacity:0.85"></span>
+          <span data-item="novanet" data-posisjon="89" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-novanet-hvit.png" alt="Novanet AS" loading="lazy" style="height:30px;width:auto;max-width:70px;object-fit:contain;opacity:0.85"></span>
+          <span data-item="northern-beat" data-posisjon="90" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-northern-beat-hvit.png" alt="Northern Beat AS" loading="lazy" style="height:30px;width:auto;max-width:100px;object-fit:contain;opacity:0.85"></span>
+          <span data-item="harbour-energy" data-posisjon="91" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-harbour-energy-hvit.png" alt="Harbour Energy Norge" loading="lazy" style="height:26px;width:auto;max-width:100px;object-fit:contain;opacity:0.85"></span>
+          <span data-item="edisys" data-posisjon="92" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-edisys-hvit.png" alt="Edisys Consulting" loading="lazy" style="height:19px;width:auto;max-width:150px;object-fit:contain;opacity:0.85"></span>
+          <span data-item="scoville" data-posisjon="93" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-scoville-hvit.png" alt="Scoville" loading="lazy" style="height:24px;width:auto;max-width:130px;object-fit:contain;opacity:0.85"></span>
+          <span data-item="aker-security" data-posisjon="94" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><span style="display:inline-flex;align-items:flex-end;gap:8px"><img src="bilder/logo-aker-security.png" alt="Aker Security" loading="lazy" style="height:36px;width:auto;max-width:40px;object-fit:contain;opacity:0.85"><span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:11px;line-height:1;margin-bottom:1px;letter-spacing:0.04em;color:#F4F7FB;opacity:0.85;white-space:nowrap">Aker Security</span></span></span>
+          <span data-item="caverion" data-posisjon="95" style="display:inline-flex;align-items:center;min-height:56px;text-decoration:none"><img src="bilder/logo-caverion.svg" alt="Caverion" loading="lazy" style="height:34px;width:auto;max-width:110px;object-fit:contain;opacity:0.85"></span>
+      </div>
+      <button type="button" id="vis-alle-virksomheter" class="logo-knapp" aria-expanded="false" aria-controls="virksomheter-liste" style="display:none;margin-top:20px;background:none;border:1px solid #F4F7FB;color:#F4F7FB;font-family:'Bricolage Grotesque',sans-serif;font-weight:600;font-size:14px;padding:10px 18px;cursor:pointer;min-height:44px">Vis alle virksomheter</button>
+    </div>
+  </section>
+
+  <section id="utbytte" style="padding:64px 0 0;background:#F4F7FB">
+    <div style="max-width:1280px;margin:0 auto;padding:0 40px;box-sizing:border-box">
+      <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:2rem;margin:0;color:#0A1730"><span style="display:inline-block;width:10px;height:26px;background:#4FA3E8;margin-right:14px;vertical-align:-2px"></span>Hva får du ut av KI-dagene?</h2>
+      <p style="font-size:17px;line-height:1.65;color:#3A4656;margin:18px 0 0;max-width:62ch;text-wrap:pretty">To dager med perspektiver og erfaringer fra virksomheter som arbeider med kunstig intelligens. Møt menneskene bak prosjektene, hør hva de har lært, og få nye ideer til hvordan KI kan brukes i egen organisasjon.</p>
+      <p style="font-size:17px;line-height:1.65;color:#3A4656;margin:12px 0 0;max-width:62ch;text-wrap:pretty">Programmet spenner fra strategiske beslutninger til erfaringer med KI i praksis. Utforsk innleggene og finn perspektivene som er relevante for ditt arbeid.</p>
+      <p style="margin:16px 0 0"><a href="program/" data-item-id="utbytte" style="font-weight:700;color:#14335E;font-size:16px">Se programmet →</a></p>
+    </div>
+  </section>
+  <section id="utvalgte-innlegg" style="padding:56px 0 64px;background:#F4F7FB">
+    <div style="max-width:1280px;margin:0 auto;padding:0 40px;box-sizing:border-box">
+      <div style="display:flex;align-items:center;justify-content:space-between;gap:16px 24px;flex-wrap:wrap;margin-bottom:28px">
+        <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:2rem;margin:0;color:#0A1730"><span style="display:inline-block;width:10px;height:26px;background:#4FA3E8;margin-right:14px;vertical-align:-2px"></span>Utvalgte innlegg</h2>
+      </div>
+      <div id="utvalgte-innlegg-liste" class="swipe" data-innlegg-faste="d1-fortytwo" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:18px">
+          <a href="taler-jan-munkejord/" data-item="d1-tvillinger" data-posisjon="51" style="text-decoration:none;background:#fff;border:1px solid #0A1730;padding:22px 24px;display:flex;flex-direction:column;gap:10px;color:#0A1730"><div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.14em;color:#14335E;font-weight:700">DAG 1 · INDUSTRI</div><div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:18px;line-height:1.3;text-wrap:pretty">Bruk KI til å prate med digitale tvillinger av safety-systemer</div><div style="margin-top:auto;padding-top:8px;display:flex;align-items:center;gap:12px"><span style="display:flex;flex:none"><span style="width:68px;height:68px;border-radius:50%;overflow:hidden;flex:none;display:block;border:2px solid #fff;margin-left:0"><img src="bilder/taler-munkejord.jpg" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:82% 9%;transform:scale(1.5);transform-origin:82% 9%;display:block"></span></span><span style="font-size:14px;line-height:1.4;color:#3A4656;min-width:0"><span style="font-weight:600;color:#0A1730">Jan Munkejord</span><br><span style="font-size:13px;color:#5A6B80">Automasjons- og digitaliseringsekspert</span></span></div><div style="border-top:1px solid #D5DDE8;padding-top:14px;min-height:44px;display:flex;align-items:center"><img src="bilder/logo-equinor.svg" alt="Equinor" loading="lazy" style="height:60px;width:auto;max-width:160px;object-fit:contain;display:block;filter:brightness(0);opacity:0.72"></div></a>
+          <a href="taler-lone-bekkeheien/" data-item="d1-roboter" data-posisjon="52" style="text-decoration:none;background:#fff;border:1px solid #0A1730;padding:22px 24px;display:flex;flex-direction:column;gap:10px;color:#0A1730"><div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.14em;color:#14335E;font-weight:700">DAG 1 · INDUSTRI</div><div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:18px;line-height:1.3;text-wrap:pretty">KI og roboter i industri</div><div style="margin-top:auto;padding-top:8px;display:flex;align-items:center;gap:12px"><span style="display:flex;flex:none"><span style="width:68px;height:68px;border-radius:50%;overflow:hidden;flex:none;display:block;border:2px solid #fff;margin-left:0"><img src="bilder/taler-bekkeheien.webp" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:48% 25%;transform:scale(1.3);transform-origin:48% 25%;display:block"></span></span><span style="font-size:14px;line-height:1.4;color:#3A4656;min-width:0"><span style="font-weight:600;color:#0A1730">Lone Werness Bekkeheien</span><br><span style="font-size:13px;color:#5A6B80">Gründer og CEO</span></span></div><div style="border-top:1px solid #D5DDE8;padding-top:14px;min-height:44px;display:flex;align-items:center"><img src="bilder/logo-marselia-mono.png" alt="Marselia Robotics" loading="lazy" style="height:17px;width:auto;max-width:160px;object-fit:contain;display:block;filter:brightness(0);opacity:0.72"></div></a>
+          <a href="taler-stian-kirkeberg/" data-item="d1-nbim" data-posisjon="53" style="text-decoration:none;background:#fff;border:1px solid #0A1730;padding:22px 24px;display:flex;flex-direction:column;gap:10px;color:#0A1730"><div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.14em;color:#14335E;font-weight:700">DAG 1 · INVESTERING</div><div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:18px;line-height:1.3;text-wrap:pretty">KI i verdens største statlige investeringsfond</div><div style="margin-top:auto;padding-top:8px;display:flex;align-items:center;gap:12px"><span style="display:flex;flex:none"><span style="width:68px;height:68px;border-radius:50%;overflow:hidden;flex:none;display:block;border:2px solid #fff;margin-left:0"><img src="bilder/taler-kirkeberg.webp" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:55% 19%;transform:scale(1.85);transform-origin:55% 19%;display:block"></span></span><span style="font-size:14px;line-height:1.4;color:#3A4656;min-width:0"><span style="font-weight:600;color:#0A1730">Stian Kirkeberg</span><br><span style="font-size:13px;color:#5A6B80">Head of AI & machine learning</span></span></div><div style="border-top:1px solid #D5DDE8;padding-top:14px;min-height:44px;display:flex;align-items:center"><img src="bilder/logo-nbim.svg" alt="Norges Bank Investment Management" loading="lazy" style="height:34px;width:auto;max-width:160px;object-fit:contain;display:block;filter:brightness(0);opacity:0.72"></div></a>
+          <a href="taler-marius-sandbu/" data-item="d2-sprakmodeller" data-posisjon="54" style="text-decoration:none;background:#fff;border:1px solid #0A1730;padding:22px 24px;display:flex;flex-direction:column;gap:10px;color:#0A1730"><div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.14em;color:#14335E;font-weight:700">DAG 2 · TEKNOLOGI</div><div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:18px;line-height:1.3;text-wrap:pretty">Språkmodeller, agenter og KI-sikkerhet – uten hype</div><div style="margin-top:auto;padding-top:8px;display:flex;align-items:center;gap:12px"><span style="display:flex;flex:none"><span style="width:68px;height:68px;border-radius:50%;overflow:hidden;flex:none;display:block;border:2px solid #fff;margin-left:0"><img src="bilder/taler-sandbu.webp" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:36% 12%;transform:scale(1.55);transform-origin:36% 12%;display:block"></span></span><span style="font-size:14px;line-height:1.4;color:#3A4656;min-width:0"><span style="font-weight:600;color:#0A1730">Marius Sandbu</span><br><span style="font-size:13px;color:#5A6B80">Cloud evangelist</span></span></div><div style="border-top:1px solid #D5DDE8;padding-top:14px;min-height:44px;display:flex;align-items:center"><img src="bilder/logo-soprasteria.png" alt="Sopra Steria" loading="lazy" style="height:25px;width:auto;max-width:160px;object-fit:contain;display:block;filter:brightness(0);opacity:0.72"></div></a>
+          <a href="taler-kim-remvik-larsen/" data-item="d1-fortytwo" data-posisjon="55" style="text-decoration:none;background:#fff;border:1px solid #0A1730;padding:22px 24px;display:flex;flex-direction:column;gap:10px;color:#0A1730"><div style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.14em;color:#14335E;font-weight:700">DAG 1 · KI I PRAKSIS</div><div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:18px;line-height:1.3;text-wrap:pretty">Pisk og gulrot for KI: hvordan navigere oppsider og risiko</div><div style="margin-top:auto;padding-top:8px;display:flex;align-items:center;gap:12px"><span style="display:flex;flex:none"><span style="width:68px;height:68px;border-radius:50%;overflow:hidden;flex:none;display:block;border:2px solid #fff;margin-left:0"><img src="bilder/taler-kim-remvik-larsen.jpg?v=20261110a" alt="" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:50% 29%;transform:scale(1.4);transform-origin:50% 29%;display:block"></span></span><span style="font-size:14px;line-height:1.4;color:#3A4656;min-width:0"><span style="font-weight:600;color:#0A1730">Kim Remvik-Larsen</span><br><span style="font-size:13px;color:#5A6B80">CRO og partner</span></span></div><div style="border-top:1px solid #D5DDE8;padding-top:14px;min-height:44px;display:flex;align-items:center"><img src="bilder/fortytwo-logotype-black.png" alt="Fortytwo" loading="lazy" style="height:17px;width:auto;max-width:160px;object-fit:contain;display:block;opacity:0.72"></div></a>
+      </div>
+      <div style="margin-top:28px"><a href="program/" data-item-id="se-programmet" style="display:inline-block;text-decoration:none;background:#0A1730;color:#F4F7FB;padding:14px 28px;font-weight:700;font-size:16px">Se hele programmet</a></div>
+    </div>
+  </section>
+
+  <section id="kveldsprogram" style="padding:56px 0;background:#fff;border-top:1px solid #D5DDE8">
+    <div style="max-width:1280px;margin:0 auto;padding:0 40px;box-sizing:border-box">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:32px 48px;align-items:center;max-width:1040px">
+        <figure style="margin:0;max-width:360px;width:100%;justify-self:center">
+          <img src="bilder/ingrid-lovise-800.webp?v=20261111a" srcset="bilder/ingrid-lovise-480.webp?v=20261111a 480w, bilder/ingrid-lovise-800.webp?v=20261111a 800w" sizes="(max-width: 700px) 80vw, 360px" width="800" height="1000" loading="lazy" alt="Ingrid Lovise, artist og låtskriver" style="width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;display:block;border:1px solid #0A1730">
+          <figcaption style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.08em;color:#5A6B80;margin-top:8px">Foto: Alexander Sylte</figcaption>
+        </figure>
+        <div style="max-width:52ch">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.14em;color:#14335E;font-weight:700">ONSDAG KVELD · 25. NOVEMBER</div>
+          <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:clamp(1.6rem,3vw,2rem);line-height:1.15;margin:12px 0 0;color:#0A1730;text-wrap:pretty">Når fagprogrammet er over, fortsetter samtalene</h2>
+          <p style="font-size:17px;line-height:1.65;color:#3A4656;margin:16px 0 0;text-wrap:pretty">Vi samles til konferansemiddag kl. 18.00 i Oslo Kongressenter. Rundt kl. 19.30 tar artist og låtskriver Ingrid Lovise frem gitaren og byr på et akustisk musikalsk innslag.</p>
+          <p style="font-size:15px;line-height:1.6;color:#3A4656;margin:12px 0 0">Middagen bestilles separat og koster 990 kr eks. mva. per person.</p>
+          <div style="display:flex;align-items:center;gap:14px 24px;flex-wrap:wrap;margin-top:22px">
+            <a href="program/#konferansemiddag" style="display:inline-block;text-decoration:none;background:#0A1730;color:#F4F7FB;padding:13px 24px;font-weight:700;font-size:15px">Se kveldsprogrammet</a>
+            <a href="https://ingridlovise.com/musikk" target="_blank" rel="noopener noreferrer" style="font-weight:700;color:#14335E;font-size:15px">Hør Ingrid Lovise</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="foredragsholdere" style="padding:56px 0;background:#0A1730;border-top:1px solid #1E2F4F;overflow:hidden">
+    <div style="max-width:1280px;margin:0 auto;padding:0 40px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:40px;box-sizing:border-box">
+      <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:2rem;margin:0;color:#F4F7FB"><span style="display:inline-block;width:10px;height:26px;background:#4FA3E8;margin-right:14px;vertical-align:-2px"></span>Talere</h2>
+      <a href="foredragsholdere/" style="font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:0.08em;color:#4FA3E8;text-decoration:none">Se alle talerne →</a>
+    </div>
+    <div id="taler-fremhevet" class="swipe" style="max-width:1280px;margin:0 auto;padding:0 40px;box-sizing:border-box;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr));gap:36px 28px">
+      <a href="taler-eirik-norman-hansen/" style="text-decoration:none;display:flex;flex-direction:column;gap:16px">
+        <div style="width:min(100%,240px);aspect-ratio:1;border-radius:50%;overflow:hidden"><img src="bilder/taler-hansen.webp" alt="Portrett: Eirik Norman Hansen" style="width:100%;height:100%;object-fit:cover;object-position:39% 3%;transform:scale(1.75);transform-origin:39% 3%;display:block"></div>
+        <div><div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:19px;color:#F4F7FB">Eirik Norman Hansen</div><div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#8A94A6;margin-top:5px;line-height:1.5">Futurist og medgründer</div><div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#8A94A6;margin-top:2px;line-height:1.5">Future Sense Institute</div></div>
+      </a>
+      <a href="taler-sven-olav-svendsen/" style="text-decoration:none;display:flex;flex-direction:column;gap:16px">
+        <div style="width:min(100%,240px);aspect-ratio:1;border-radius:50%;overflow:hidden"><img src="bilder/taler-svendsen.webp" alt="Portrett: Sven-Olav Svendsen" style="width:100%;height:100%;object-fit:cover;object-position:53% 7%;transform:scale(2.25);transform-origin:53% 7%;display:block"></div>
+        <div><div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:19px;color:#F4F7FB">Sven-Olav Svendsen</div><div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#8A94A6;margin-top:5px;line-height:1.5">Administrerende direktør</div><div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#8A94A6;margin-top:2px;line-height:1.5">KF</div></div>
+      </a>
+      <a href="taler-jan-munkejord/" style="text-decoration:none;display:flex;flex-direction:column;gap:16px">
+        <div style="width:min(100%,240px);aspect-ratio:1;border-radius:50%;overflow:hidden"><img src="bilder/taler-munkejord.jpg" alt="Portrett: Jan Munkejord" style="width:100%;height:100%;object-fit:cover;object-position:82% 9%;transform:scale(1.5);transform-origin:82% 9%;display:block"></div>
+        <div><div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:19px;color:#F4F7FB">Jan Munkejord</div><div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#8A94A6;margin-top:5px;line-height:1.5">Automasjons- og digitaliseringsekspert</div><div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#8A94A6;margin-top:2px;line-height:1.5">Equinor</div></div>
+      </a>
+      <a href="taler-thor-myklebust/" style="text-decoration:none;display:flex;flex-direction:column;gap:16px">
+        <div style="width:min(100%,240px);aspect-ratio:1;border-radius:50%;overflow:hidden"><img src="bilder/taler-myklebust.webp" alt="Portrett: Thor Myklebust" style="width:100%;height:100%;object-fit:cover;object-position:51% 42%;transform:scale(1.1);transform-origin:51% 42%;display:block"></div>
+        <div><div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:19px;color:#F4F7FB">Thor Myklebust</div><div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#8A94A6;margin-top:5px;line-height:1.5">Seniorforsker</div><div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#8A94A6;margin-top:2px;line-height:1.5">SINTEF Digital</div></div>
+      </a>
+      <a href="taler-ingvild-von-krogh-strand/" style="text-decoration:none;display:flex;flex-direction:column;gap:16px">
+        <div style="width:min(100%,240px);aspect-ratio:1;border-radius:50%;overflow:hidden"><img src="bilder/taler-krogh.jpg" alt="Portrett: Ingvild von Krogh Strand" style="width:100%;height:100%;object-fit:cover;object-position:50% 25%;transform:scale(1);transform-origin:50% 25%;display:block"></div>
+        <div><div style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:19px;color:#F4F7FB">Ingvild von Krogh Strand</div><div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#8A94A6;margin-top:5px;line-height:1.5">Leder for teknologipolitikk</div><div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#8A94A6;margin-top:2px;line-height:1.5">Abelia</div></div>
+      </a>
+    </div>
+    <div id="taler-karusell" hidden style="display:none"></div>
+    <script>window.KIDRotasjon && KIDRotasjon.vis();</script>
+  </section>
+
+  <section id="billett" style="padding:56px 40px;background:#14335E">
+    <div style="max-width:1280px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:24px 40px;flex-wrap:wrap">
+      <div style="max-width:62ch">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.14em;color:#4FA3E8;font-weight:700">FÅ BILLETTER IGJEN</div>
+        <p style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:1.5rem;color:#F4F7FB;margin:8px 0 0;line-height:1.3">Det nærmer seg fullt på KI-dagene!</p>
+        <ul style="list-style:none;margin:14px 0 0;padding:0;display:flex;flex-direction:column;gap:6px;font-size:15px;line-height:1.5;color:#F4F7FB">
+          <li style="display:flex;gap:12px;flex-wrap:wrap;align-items:baseline"><span style="min-width:12ch">Onsdag 25. november</span><span style="color:#C3CCDA;font-variant-numeric:tabular-nums">5 490 kr + mva</span><span style="font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;padding:2px 7px;background:#4FA3E8;color:#0A1730">Få billetter igjen</span></li>
+          <li style="display:flex;gap:12px;flex-wrap:wrap;align-items:baseline"><span style="min-width:12ch">Torsdag 26. november</span><span style="color:#C3CCDA;font-variant-numeric:tabular-nums">5 490 kr + mva</span><span style="font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;padding:2px 7px;background:#4FA3E8;color:#0A1730">Få billetter igjen</span></li>
+          <li style="display:flex;gap:12px;flex-wrap:wrap;align-items:baseline"><span style="min-width:12ch">Begge dagene</span><span style="color:#C3CCDA;font-variant-numeric:tabular-nums">7 990 kr + mva</span><span style="font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.12em;text-transform:uppercase;padding:2px 7px;background:#4FA3E8;color:#0A1730">Få billetter igjen</span></li>
+        </ul>
+        <p style="font-size:15px;color:#DCE4EF;margin:12px 0 0;line-height:1.6;max-width:60ch;text-wrap:pretty">Erfaringsmessig kan det åpne seg plasser ved forfall de siste dagene før konferansen.</p>
+      </div>
+      <a href="billetter/#billetter" class="hl" style="text-decoration:none;background:#4FA3E8;color:#0A1730;padding:14px 30px;font-weight:700;font-size:18px;white-space:nowrap;flex:none">Se billetter</a>
+    </div>
+  </section>
+
+  <section id="partner" style="padding:56px 40px;background:#E9EDE9">
+    <div style="max-width:1280px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:24px 40px;flex-wrap:wrap">
+      <div style="max-width:68ch">
+        <h2 style="font-family:'Bricolage Grotesque',sans-serif;font-weight:800;font-size:2rem;margin:0;color:#0A1730"><span style="display:inline-block;width:10px;height:26px;background:#4FA3E8;margin-right:14px;vertical-align:-2px"></span>Møt partnerne og utstillerne</h2>
+        <p style="font-size:16px;color:#3A4656;margin:14px 0 0;line-height:1.6;text-wrap:pretty">Bli kjent med virksomhetene som bidrar til KI-dagene 2026. I utstillingsområdet møter du fagfolk og teknologimiljøer med erfaring fra KI, sikkerhet og digitalisering.</p>
+      </div>
+      <a href="partner/" class="hp" style="text-decoration:none;background:#0A1730;color:#4FA3E8;padding:14px 30px;font-weight:600;white-space:nowrap;flex:none">Se partner og utstillere</a>
+    </div>
+  </section>
+
+  <footer style="padding:48px 40px;background:#0A1730;color:#A7B2C2;font-size:14px">
+    <div style="width:fit-content;max-width:100%;margin:0 auto;display:flex;flex-direction:column">
+      <div style="display:flex;flex-direction:column;gap:10px">
+        <div style="display:flex;align-items:center;gap:10px">
+          <svg width="27" height="21" role="img" aria-label="Phenix Events"><g transform="scale(0.283)"><polygon points="6,60 38,10 38,36 24,60" fill="#F4F7FB"></polygon><polygon points="86,60 54,10 54,36 68,60" fill="#F4F7FB"></polygon><circle cx="46" cy="47" r="9.5" fill="#C4622D"></circle></g></svg>
+          <span style="color:#F4F7FB">Arrangert av Phenix Events AS, i samarbeid med</span>
+        </div>
+        <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap"><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.12em;color:#8A94A6">HOVEDPARTNER</span><a href="partner/#hovedpartner" style="display:inline-flex;align-items:center;padding:4px 0"><img src="bilder/fortytwo-logotype-dust.png" alt="Fortytwo.io" width="626" height="112" style="width:120px;height:auto;max-width:100%;object-fit:contain;display:block"></a><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.12em;color:#8A94A6;margin-left:8px;white-space:nowrap">STRATEGISK PARTNER</span><a href="partner/#strategisk-partner" style="display:inline-flex;align-items:center;padding:4px 0"><img src="bilder/logo-paloalto-hvit.png" alt="Palo Alto Networks" width="1000" height="183" style="width:104px;height:auto;max-width:100%;object-fit:contain;display:block"></a></div>
+        <div style="display:flex;align-items:center;gap:20px 28px;flex-wrap:wrap"><a href="partner/#partnere" style="display:inline-flex;align-items:center"><img src="bilder/partner-forte-hvit.svg" alt="Forte" style="height:22px;width:auto;max-width:110px;object-fit:contain;opacity:0.9"></a><a href="partner/#partnere" style="display:inline-flex;align-items:center"><img src="bilder/logo-styrke.png" alt="Styrke" style="height:40px;width:auto;max-width:130px;object-fit:contain;filter:brightness(0) invert(1);opacity:0.9"></a><a href="partner/#partnere" style="text-decoration:none"><span style="font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:1.15rem;color:#F4F7FB">Validea</span></a><a href="partner/#partnere" style="display:inline-flex;align-items:center"><img src="bilder/partner-lumiar-hvit.png" alt="Lumiar" style="height:24px;width:auto;max-width:120px;object-fit:contain;opacity:1;position:relative;top:-4px"></a></div>
+        <span style="margin-top:14px">Org. 917 992 851 MVA · Stavanger</span>
+        <details class="kontakt-utvid" style="margin-top:4px"><summary style="cursor:pointer;color:#F4F7FB;font-weight:600;list-style:none;display:inline-flex;align-items:center;gap:8px;padding:6px 0">Kontaktpersoner <span aria-hidden="true" style="color:#4FA3E8;font-size:12px">▾</span></summary><div class="kontaktgrid" style="display:grid;grid-template-columns:minmax(150px,max-content) minmax(0,max-content) max-content;gap:10px 28px;align-items:start;margin-top:8px">
+          <span style="min-width:0"><strong style="color:#F4F7FB;font-weight:600">Erling Holmefjord</strong><br>Konferansesjef</span>
+          <a href="mailto:erling.holmefjord@phenixevents.no" style="color:#A7B2C2;min-width:0;overflow-wrap:break-word">erling.holmefjord@phenixevents.no</a>
+          <a href="tel:+4791356012" style="color:#A7B2C2;white-space:nowrap">913 56 012</a>
+          <span style="min-width:0"><strong style="color:#F4F7FB;font-weight:600">Kenneth Titlestad</strong><br>Daglig leder</span>
+          <a href="mailto:kenneth.titlestad@phenixevents.no" style="color:#A7B2C2;min-width:0;overflow-wrap:break-word">kenneth.titlestad@phenixevents.no</a>
+          <a href="tel:+4794151589" style="color:#A7B2C2;white-space:nowrap">94 15 15 89</a>
+          <span style="min-width:0"><strong style="color:#F4F7FB;font-weight:600">Arve M. Aasbak</strong><br>Salgssjef – partnere og utstillere</span>
+          <a href="mailto:arve.aasbak@phenixevents.no" style="color:#A7B2C2;min-width:0;overflow-wrap:break-word">arve.aasbak@phenixevents.no</a>
+          <a href="tel:+4797265686" style="color:#A7B2C2;white-space:nowrap">97 26 56 86</a>
+        </div></details>
+        <details class="kontakt-utvid" open style="margin-top:2px"><summary style="cursor:pointer;color:#F4F7FB;font-weight:600;list-style:none;display:inline-flex;align-items:center;gap:8px;padding:6px 0">Kontakt oss og få nyheter <span aria-hidden="true" style="color:#4FA3E8;font-size:12px">▾</span></summary>
+        <form method="post" action="php/skjema.php" style="display:flex;flex-direction:column;gap:6px;max-width:420px;margin-top:8px">
+          <input type="hidden" name="form_type" value="interesse">
+          <input type="hidden" name="tok" value="ki2026">
+          <input type="text" name="firma_url" value="" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div style="display:flex;gap:6px;flex-wrap:wrap"><label for="ft-navn" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap">NAVN</label><input id="ft-navn" name="navn" type="text" required autocomplete="name" placeholder="Ditt navn" style="flex:1 1 150px;padding:5px 9px;font-size:14px;border:none;background:#F4F7FB;color:#0A1730;font-family:'Instrument Sans',sans-serif"><label for="ft-epost" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap">E-POST</label><input id="ft-epost" name="epost" type="email" required placeholder="navn@virksomhet.no" style="flex:1 1 150px;padding:5px 9px;font-size:14px;border:none;background:#F4F7FB;color:#0A1730;font-family:'Instrument Sans',sans-serif"></div>
+          <label for="ft-melding" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap">MELDING (VALGFRITT)</label><textarea id="ft-melding" name="melding" rows="1" placeholder="Spørsmål eller melding (valgfritt)" style="padding:5px 9px;font-size:14px;border:none;background:#F4F7FB;color:#0A1730;font-family:'Instrument Sans',sans-serif;resize:vertical"></textarea>
+          <label style="display:flex;gap:6px;align-items:flex-start;font-size:12px;line-height:1.4;cursor:pointer;color:#A7B2C2"><input type="checkbox" name="samtykke_markedsforing" value="ja" style="width:15px;height:15px;margin-top:1px;flex:0 0 auto;accent-color:#4FA3E8"><span>Ja, jeg vil motta nyheter om KI-dagene og andre konferanser fra Phenix Events</span></label>
+          <button type="submit" style="align-self:flex-start;padding:7px 16px;font-size:13.5px;font-weight:600;background:#4FA3E8;color:#0A1730;border:none;cursor:pointer;font-family:'Instrument Sans',sans-serif;margin-top:2px">Send</button>
+        </form></details>
+      </div>
+
+    <div style="display:flex;gap:14px 28px;flex-wrap:wrap;border-top:1px solid #1E2F4F;padding-top:20px;margin-top:24px">
+        <a href="personvern/" style="color:#A7B2C2">Personvern</a>
+        <a href="personvern/#informasjonskapsler" style="color:#A7B2C2">Informasjonskapsler</a>
+        <a href="https://www.phenixevents.no/" style="color:#A7B2C2">Om Phenix Events</a>
+      </div>
+    </div>
+  </footer>
+</div>
+<script>
+(function(){
+  var el = null;
+  if (!el) return;
+  function anim(target){
+    var start = el.scrollLeft, diff = target - start, t0 = performance.now(), dur = 1400;
+    function step(now){
+      var p = Math.min(1, (now - t0) / dur);
+      var e = p < 0.5 ? 4*p*p*p : 1 - Math.pow(-2*p+2, 3)/2;
+      el.scrollLeft = start + diff * e;
+      if (p < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  setInterval(function(){
+    if (el.matches(':hover')) return;
+    var w = el.clientWidth;
+    if (el.scrollLeft >= el.scrollWidth - w - 10) { el.scrollLeft = 0; }
+    anim((Math.round(el.scrollLeft / w) + 1) * w);
+  }, 6000);
+})();
+</script>
+<script defer src="utvalg.js?v=20261113a"></script>
+<script defer src="sporing.js?v=20261120a"></script>
+<script defer src="samtykke.js?v=20261007a"></script>
+<script defer src="popup.js?v=20261120a"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  var KB = {
+  "hero.webp": {grad:1.14, dur:16, fx:81, fy:32, inn:true},
+  "galleri-scene.webp": {grad:1.12, dur:16, fx:47, fy:47, inn:false},
+  "galleri-mingling.webp": {grad:1.12, dur:16, fx:5, fy:19, inn:false},
+  "deltakere.webp": {grad:1.12, dur:16, fx:77, fy:17, inn:false},
+  "strip-foaje.webp": {grad:1.12, dur:16, fx:17, fy:44, inn:false},
+  "strip-bord.webp": {grad:1.12, dur:16, fx:82, fy:50, inn:false},
+  "strip-mingling.webp": {grad:1.12, dur:16, fx:13, fy:52, inn:false},
+  "praktisk.webp": {grad:1.12, dur:16, fx:86, fy:27, inn:false}
+  };
+  if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  Object.keys(KB).forEach(function (fil) {
+    var o = KB[fil];
+    var img = document.querySelector('img[src$="' + fil + '"]');
+    if (!img || img.hasAttribute("data-bilde")) return;
+    img.parentElement.style.overflow = "hidden";
+    img.style.transformOrigin = o.fx + "% " + o.fy + "%";
+    img.animate(
+      [{ transform: "scale(" + (o.inn ? 1 : o.grad) + ")" }, { transform: "scale(" + (o.inn ? o.grad : 1) + ")" }],
+      { duration: o.dur * 1000, direction: "alternate", iterations: Infinity, easing: "ease-in-out" }
+    );
+  });
+});
+</script>
+<script>
+document.getElementById("vis-alle-virksomheter").addEventListener("click", function () {
+  var l = document.getElementById("virksomheter-liste"), apen = l.classList.toggle("alle");
+  this.setAttribute("aria-expanded", apen ? "true" : "false");
+  this.textContent = apen ? "Vis færre" : "Vis alle virksomheter";
+});
+</script>
+<script>
+document.addEventListener("click", function (e) {
+  var a = e.target.closest("a, button[type=submit]");
+  if (!a || !window.plausible) return;
+  var tekst = (a.textContent || "").trim().replace(/\s+/g, " ").slice(0, 60) || a.getAttribute("aria-label") || "ukjent";
+  plausible("Klikk", { props: { element: tekst, side: location.pathname } });
+});
+</script>
+<script>
+document.addEventListener('click', function (e) {
+  var a = e.target.closest ? e.target.closest('a[data-partner]') : null;
+  if (a && window.plausible) plausible('Partnerlogo klikk', { props: { partner: a.dataset.partner } });
+});
+</script>
+</body>
+</html>

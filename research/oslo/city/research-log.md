@@ -224,3 +224,141 @@ source ledger, plus every capture, manifest, geocode and photo record.
 The manager amended the card ceiling from 600 to 900 on 2026-11-25 and asked
 for the acquisition utilities to be kept, so 875 sits under the amended limit;
 nothing was deleted or refactored for the number.
+
+## R6 — revision 1 refresh (2026-11-26)
+
+Store: `research/oslo/city/city.json`, `refresh_revision: 1`, 45 venues (30 open
++ 15 leads), 10 events, 19 holiday rows (11 public + 8 school), 2 coverage rows,
+72 sources. SHA-256 `c2a4aae67bfde22ec146a684fb60d53e5e9df89636aa887d139f25d44b61daa3`,
+1,908,982 bytes. `city_store.py --check` **OK**; `loss_check(r0, r1)` **{}**;
+`build_ranking(store, 2026-11-26)` returns 30 ranked rows + 15 leads = 45
+unique ids, none missing; `city_page.render_page` (revision-1 path) rendered
+1,673,133 bytes to a scratch file which was then deleted; the render carries the
+declared-gaps section and the merged 17 May row. Run
+`run-20261126-osl-r6`; pipeline in `build/r6_build.py`, `r6_build2.py`,
+`r6_build3.py`, gate in `r6_gate.py`; revision-0 pre-image kept at
+`build/city-r0-backup.json` (`30e2fc25…`).
+
+### Coordinates — all 45 re-geocoded, 4/37/4/0
+
+Provider **Kartverket adresser (Matrikkelen)**, one live lookup per venue on
+2026-11-26 at EPSG:4258, cross-checked against an independent Nominatim read
+(`geocode-log-r6.json`). Every row carries provider, query, request URL, check
+date, returned address and postcode, match evidence, refused lookups and the
+tier in `fields.coordinates`; the point is derived from the address, never
+surveyed.
+
+- `exact_venue` 4, where the hired space is the whole address and the operator
+  hires that space: Ingensteds, Vippa, Oslo Spektrum, DOGA.
+- `building` 37: every room inside a larger venue or shared building — MUNCH ×3,
+  Oslo Kongressenter ×5, Sentralen ×3, Deichman ×3, NOVA Spektrum ×5, Clarion,
+  Thon Opera, Mesh ×5, Epicenter ×3, OsloMet ×5, Radisson, BI, Røde Kors.
+- `street` 4: Blå ×2 (operator prints 9c, the register has 9 only) and UiO
+  Gamle festsal / Informatikksalen (the room is not published; Karl Johans gate
+  47 is the building number, the room's own entrance is not proved).
+- `area` 0, unresolved 0.
+
+A room whose own door is not published takes a building pin, not an
+`exact_venue` one — the plan's distinction, applied strictly. Address bases:
+34 operator-printed street and number, 9 where the operator prints the street or
+square without a number and the register supplies it (Clarion, Epicenter ×3,
+Deichman ×3, UiO ×2), 2 register-only where the operator page blocked or printed
+no numbered campus (Radisson 403, BI). Every stored address quote carries the
+number it claims.
+
+All 20 pinless records gained a tier: MUNCH Amfi, NOVA Green Room, the three
+Deichman rooms, Blå ×2, Sentralen Forstanderskapssalen, Epicenter ×3, Mesh
+Corner Bar, Røde Kors, Vippa, Radisson, BI, Oslo Spektrum, DOGA, UiO ×2.
+Two conflicts are recorded rather than smoothed: Brenneriveien 9c vs 9, and the
+DOGA photograph address (Hausmanns gate 16) against the operator's 2026 visit
+address (Nedre Vollgate 4). Radisson's meeting page returned 403 and BI's
+captured pages print no numbered campus address, so both take the register
+address and say so.
+
+### Photos — 33/20/12 → 29/14/16, room-first labels
+
+Every live row now carries `view_kind`, `view_kind_basis`, `view_confidence`,
+`room_match`, `depicts`, `placement` (distance to the pin) and
+`placement_proof`. Room views are real room interiors: 4 rows (`room_match`
+true, UiO Gamle festsal ×3, Sentralen Forstanderskapssalen ×1). Everything else
+is a labelled fallback: exteriors, one lobby (Deichman ground floor), and
+other-interior spaces in the same building (Clarion interior, Radisson
+interiors, BI interiors, Deichman library floors, Sentralen Vinterhagen/stage,
+Oslo Spektrum seated arena).
+
+Withheld URL-bearing rows rose 0 → 23: DOGA ×4 (address moved), OsloMet
+Pilestredet 52 ×8 and the mismatched campus buildings (3 + 2 + 3), plus rows
+whose description names no view. The counts fall because placeability beats
+volume: a hotel exterior at the right street is kept and labelled Exterior, a
+photograph of another building is not shown. Rights mix after: CC BY-SA 4.0 58,
+CC BY-SA 3.0 17, CC BY-SA 3.0 no 5, CC BY 4.0 5, CC BY-SA 2.0 3, CC BY 3.0 1,
+Public domain 2 — all Wikimedia Commons; no operator gallery with a stated
+licence was found. A vision pass was not possible; the label comes from the
+file's own description and the operator page, and every row says so.
+
+### Holidays — Lovdata public layer, Utdanningsetaten school layer
+
+Public (11 rows): re-read from Lovdata *Lov om helligdager og helligdagsfred*
+§2 (`r6-lovdata-helligdager` lines 158-170) and *Lov om 1 og 17 mai som
+høgtidsdager* §1 (`r6-lovdata-1-17mai` lines 156-158). Dates stay `derived:
+true` from the statutory rule with the computus date printed. **17 May 2027 is
+both Constitution Day and Whit Monday and is stored once**
+(`Grunnlovsdagen og annen pinsedag`, one row, one closure); the merge is
+recorded in the row's evidence. 1 May 2027 is a Saturday.
+
+School (8 rows): Oslo kommune **Utdanningsetaten**, *Skoleruta – ferie og
+fridager*, both editions — 2026/2027 and 2027/2028 — read 2026-11-26. Rows:
+juleferie 21 Dec 2026-1 Jan 2027, vinterferie 22-26 Feb, påskeferie 22-30 Mar,
+fridag 7 May, sommerferie 19 Jun-15 Aug (derived from the last school day and
+the 2027/28 start), valgdag 13 Sep (grunnskole only; videregående has an
+ordinary day), høstferie 4-8 Oct, juleferie 20 Dec 2027-3 Jan 2028. 6 May and
+17 May are school-free because they are public holidays and are counted once in
+the public layer. Every row carries authority, edition, locator and computed
+weekdays; coverage states 2027 is complete for both editions and that 2028
+dates are out of projection. Comparison countries are untouched.
+
+### Events — 54 cells attempted, 10 stored
+
+Six themes × nine lanes in `event-matrix-r6.json` (54/54 attempted). Luma
+Oslo and its tag views: 12 cards, all 2026. Luma discover alias and the
+decentralized-AI organiser calendar: no dated event. Meetup (kunstig
+intelligens / maskinlæring / data science / web3 / crypto / blokkjede): 13-15
+listings per query, all Nov-Dec 2026. Eventbrite (six theme paths): 18-22 cards
+each; the only 2027 cards are off-theme (Gabor Maté talk, sauna, Hindi class,
+gospel concert) and are dropped. MiraGather main/side/ai: 0 Oslo events.
+AI Tinkerers all-cities and the Oslo chapter: held events only, no 2027.
+`kidagene.no`, `nordicblockchain.com/events` and `dev.events/EU/NO/blockchain`:
+no dated 2027 Oslo event.
+
+Six organisers re-read today still print 2027 dates (OIW 25-28 Oct,
+Nor-Shipping 7-11 Jun, NDC Oslo 31 May-4 Jun, Oslo Tech Show 12-13 May, Data
+Centre Expo 12-13 May, IEEE QAI 7-9 Sep). Three new events were added from
+organiser pages: **NDC Security 2027** (15-18 Feb, Radisson Blu Scandinavia),
+**HR, AI & Work 2027** (28 Jan, Oslo Event Hub), **Kristiania "AI as
+Environment"** (13-14 Apr, venue not printed). SECTECH stays on its 2026-11-25
+capture (403 today) and is declared. Stored events 7 → 10; kept-source yield
+sums to 10.
+
+### Access — 2 full, 1 floor only, 27 unknown (+15 leads)
+
+Re-derived from captured intervals: Deichmansalen full (room bands 08-12 /
+12-17 / 17-21 with "heldagsleie" beyond a band, `deichman-pris` 82-83);
+Ingensteds full ("Heldagsleie kl.09:00-01:00", `ingensteds` 34). Kinosalen keeps
+8 h yes / 12 h unknown (the room line says mainly 08-17). No new full window
+was found in any other operator page; alkoholloven §4-4 service hours (08:00-01:00
+for groups 1-2) sit inside a 09:00-21:00 event but are not a hire interval, so
+they are context only.
+
+### Declared gaps (11, dated 2026-11-26)
+
+Access, pricing, seated capacity, photo rights, the absent vision pass, the
+SECTECH 403, aggregator-only 2027 listings, the two address conflicts, holiday
+projection scope, UiO Informatikksalen's unresolved room, and no visits. See
+`declared_gaps` in the store; each carries `checked_on` and evidence refs.
+
+### Not changed
+
+No page rendered or written, no summary, no index/manifest, no other city store
+and no memory file. Other cities were already dirty in the working tree on
+entry (bangkok 08:33, SF 07:44, SF summary 08:17, and so on) — this run wrote
+only under `research/oslo/city/`.
