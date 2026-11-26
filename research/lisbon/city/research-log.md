@@ -84,7 +84,7 @@ Every platform lane has a `sources_consulted` row with `pages_read`, `hits`,
 ## Event lanes
 
 Eleven event-lane rows are stored. Their `event_yield` sums to **7**, the number
-of stored events: websummit.com 1, portugaltechweek.com 1, eventsindex 1,
+of stored events: websummit.com 1, portugaltechweek.com 1, lisbonaisummit.com 1,
 luma.com/devcon 1, buildingthefuture.pt 1, luma.com/lisbondelegation 1,
 and eventbrite 1 (38 event cards read, of which one distinct 2027 event —
 Tech Hiring, 4 March). The zero-yield rows and why:
@@ -192,3 +192,160 @@ Excluded as sourced data, not tooling: `lx_venues.py` (243) and `lx_other.py`
 1,046 ≤ 1,100. The six one-off capture/geocode/photo utilities are deliberately
 kept as separate scripts rather than folded into one: the amendment said not to
 refactor for a number, and each utility documents one evidence pass.
+
+## Revision 1 — R4 refresh (2026-11-26, `run-20261126-lx-rev1`)
+
+Store: `research/lisbon/city/city.json` — `refresh_revision: 1`,
+`updated_at 2026-11-26T12:00:00Z`, 2,000,360 bytes, SHA-256
+`8a464a78e0771f93b47f90752caf98b97622c298e42ecb39075db3a75b310e21`.
+`city_store.py --check` passes (51 venues). `build_ranking(store,
+"2026-11-26")` returns 30 open rows (29 can host, 1 cannot), 20 leads and 1
+closed row — 51 venues, no duplicate or missing id. `loss_check` against
+`HEAD:research/lisbon/city/city.json` (`090a2a60…`) returns **none**. The
+revision-1 strict render was written to a profile scratch path and deleted;
+its SHA-256 was `eac869aaa1197752c316ac606bd74ef94d723647ad4f0969ab06f63e5cb7c3ba`
+(1,685,892 bytes), 50 displayed rows (closed Musicbox not displayed), every
+external anchor `target="_blank" rel="noopener noreferrer"`.
+
+### Addresses and pins
+
+All 51 records were re-read and geocoded afresh in 31 address groups. Provider:
+Photon (OpenStreetMap data, komoot), one live query per group on 2026-11-26;
+every failed query is retained in `geocode-log-rev1.json`. Coordinates are
+JSON numbers; each claim carries provider, query, request URL, returned place,
+match evidence, refused lookups and the address claim's capture/line.
+
+Tier counts over 51: **exact_venue 9, building 32, street 10, area 0,
+unresolved 0**. The 26 records that had no pair now resolve as:
+**6 exact_venue** (MEO Arena, FIL, CCL, Coliseu, Museu do Oriente, Titanic),
+**10 building** (Engineers Hub, The Block, Corinthia, IDEA, Village
+Underground, Impact Hub, Musicbox, LX Factory, Heden King's Room, Heden Classic
+Auditorium) and **10 street** (Nova SBE, Heden Full Floor and Theatre Staircase,
+Lisbon Stage, Second Home, ULisboa, ISCTE, Católica, São Luiz, Heden Open
+Auditorium).
+No venue is pinned at a city centroid; street-tier `map_target` omits the
+venue name.
+
+Brand/branch decisions are recorded in `declared_gaps`: Heden's five rooms map
+to Rossio, Santa Apolónia and Alvalade addresses from the operator FAQ; Impact
+Hub is the Penha de França space, not Baixa Chiado; IDEA is the Saldanha space.
+Postal conflicts are kept: CCL 1300-307 (OSM 1300-037), Impact Hub 1170-070
+(OSM 1170-079), Musicbox three variants.
+
+### Photos
+
+Before: 9 venues with 1+ photos (9 with 4+), 42 with none; 36 live records,
+all Commons building exteriors, no room view. After: **11 venues with 1+, 11
+with 4+, 40 with none; 19 room-specific records across 7 venues** (MAAT ×3
+rooms, Gulbenkian Sala 1 and Sala 2, Avila Blue Ocean and Avila Café) and 44
+labelled fallback records (36 Commons exteriors, 8 shared venue images).
+Twenty-seven records are operator gallery assets hotlinked with attribution;
+the rest are the prior Commons licences (CC BY-SA 2.0 25, CC BY-SA 4.0 6,
+CC BY 4.0 3, CC BY 2.0 2). Every live record has `view_kind`, dimensions,
+rights, attribution, check date and placement proof; 27 operator images were
+fetched and their dimensions re-checked on 2026-11-26. Commons records gained
+distance where the file page publishes coordinates (144–249 m), and an explicit
+“no camera coordinate, distance not asserted” note otherwise.
+
+### Holidays
+
+Public: 13 statutory rows (Código do Trabalho art. 234.º; dates derived with the
+2027 computus, Easter 28 March 2027, cross-checked against the secondary 2027
+table) and 1 municipal row (13 June 2027, Sunday; art. 235.º facultative).
+CML's own page was blocked by a Cloudflare verification loop and DGERT's 2027
+list returned a database error; both failures are dated gaps.
+
+School: **3 rows from Despacho n.º 8368/2024 Anexo II only** — Carnival 8–10
+February 2027 (Mon–Wed), Easter 22 March–2 April 2027 (Mon–Fri), Christmas
+20–31 December 2027 (Mon–Fri). The Anexo II heading is quoted with each row.
+Amendments checked: Despacho n.º 10430/2026 amended Anexo I only (21 September
+2026 start for scientific-humanistic secondary). The earlier reference to
+Despacho n.º 9989/2025 was dropped in round 2 because that text was not
+captured; no uncaptured amendment is asserted. **Anexo IV** (private special education)
+differs — Easter 25 March–2 April 2027, Christmas 20–24 December 2027 — and is
+deliberately not applied to the public layer. Summer is not an Anexo II
+interruption and is not invented. 2027 coverage is 1 January–31 December;
+comparison-country rows: 0.
+
+### Events
+
+11 stored events, each with a capture printing 2027 dates and one ledger row
+(`event_yield` sums to 11). New this revision: NFC Summit 27–29 May (Unicorn
+Factory), DATA'27 23–24 March (Meliá Oriente), IDCC27 9–12 February (ISCTE),
+SBC Summit 21–23 September (FIL, outside the six themes but retained as a major
+dated venue event). **Devcon corrected**: the community Luma calendar printed
+11–13 October; the organiser page `devcon.org/lisbon/` prints **12–14 October
+2027 at CCL**, which now supersedes it. Yorkseed and PTW date quotes were
+re-pinned to single capture lines.
+
+The six-theme × nine-lane matrix is stored as 54 `event_matrix_cell` rows
+(theme, lane, URL, pages read, hits, disposition). Luma city/alias pages were
+JavaScript shells; Eventbrite theme pages produced NFC and IDCC27; Meetup showed
+2026-dated events only; MiraGather and AI Tinkerers had no Lisbon 2027 entry.
+Drops are recorded: AI-Lisbon-27 directory (HTTP 429), Mafra dinner (out of
+locality), dōTERRA convention (out of theme), HiTech 2027 information session
+(held December 2026), the online “AI Engineer in 2027” course (not a Lisbon
+venue event).
+
+### Access
+
+Zero full 09:00–21:00 windows. 50 rows unknown after reading the operator
+venue-hire page, FAQ and any bookable sub-page; 1 explicit **no** (MAAT Boiler
+Room: after 19:00 only, closed Tuesdays); 1 closed row. No venue published a
+noise curfew on the pages read, so no curfew is recorded as a cap. Office hours
+and public museum hours were not treated as hire windows.
+
+### Evidence and limits
+
+`capture-manifest.json` now pins 244 captures (rev-1 pages included; DR pages
+rendered with a 40 s virtual-time budget). `geocode-log-rev1.json`,
+`photo-candidates-rev1.json`, `photo-enrichment-rev1.json` and
+`holiday-supplement.json` are the sidecars; the supplement is city-relative and
+re-hashed. Every address, event and school claim was re-checked to resolve to a
+line carrying its value (`lx_verify2` pass, 0 numeric/locator errors). The 12
+dated `declared_gaps` entries list the remaining limits, including the two
+blocked holiday authorities, the ten street-tier groups, the photo shortfall,
+and the parked Musicbox / DNS-failing Titanic operator sites.
+
+## Round-2 corrections (2026-11-26)
+
+Review round 1 accepted the store's structure, coordinates, ranker and render but
+required six evidence fixes. All six are applied; the store digest moved from
+`8a464a78…10e21` to `d9ab635a…dbae` (2,003,106 bytes).
+
+1. **Public-holiday citation.** The 13 statutory rows and the public coverage row
+   now cite the PGDL consolidated *Código do Trabalho* (Lei n.º 7/2009), art.
+   234.º n.º 1, captured at `captures/rev1-pgdl-art234.txt` line 1371. The quote
+   is the statute sentence itself, not the TogaAI footer; `derived: true` stays
+   because the 2027 dates are computus-derived. Each row also carries `weekday`
+   and `weekday_source`; the municipal row uses `captures/rev1-hol-municipal.txt`
+   line 14 and adds art. 235.º n.º 1 (`rev1-pgdl-art235.txt` line 1366).
+2. **Events re-sourced to organiser pages.** Lisbon AI Summit 2027 now cites
+   `lisbonaisummit.com` (lines 2–3, 7, 11), where the organiser is AI Summits LTD
+   UAB; Tech Hiring Community Conference 2027 now cites
+   `landing.jobs/business-tech-hiring-community-conference-2027` (lines 45–47,
+   footer line 249). The eventsindex and Eventbrite-directory ledger rows remain
+   as history with `event_yield: 0`; two new organiser rows carry the credit, so
+   the `kind: event` yield still sums to 11 for 11 events.
+3. **Locators name their capture.** All 90 bare `line N` claims (180 field and
+   history occurrences; 26 of them on URLs with more than one capture) now read
+   `capture <slug> lines N`. Every rewritten locator was checked against the
+   named capture: the quote sits on the named line. Zero bare locators remain.
+4. **`source_edition` collapsed.** The 14 repeated `re-read 2026-11-26` strings
+   are replaced by one dated statement per source.
+5. **Statutory authority.** PGDL is cited in the rows and in the new
+   `holiday-derivation` declared gap; no row cites TogaAI as the holiday
+   authority. The two TogaAI law rows stay in `sources_consulted` only as the
+   pages actually read on 2026-11-24, alongside the new PGDL rows.
+6. **Despacho 9989/2025 dropped.** The uncaptured assertion was removed from
+   the school rows and coverage; only the captured Despacho 10430/2026
+   (Anexo I only) is asserted.
+
+Access split reported correctly: 0 full / 0 floor-only / 0 shorter, 50 unknown
+(including the 1 closed venue) and 1 explicit no (MAAT Boiler). `--check`
+passes; `loss_check(pre, post)` is `{}`; `build_ranking(store, 2027-01-15)`
+returns 30 open (29 can-host, 1 cannot-host) + 20 leads + 1 closed = 51 unique
+IDs. Rendered once to a scratch path in revision-1 strict mode (1,688,147 bytes,
+sha256 `7ffda028…44e8`, 50 venue rows, 371 external anchors all
+`target="_blank"`), then deleted. No summary, home page, manifest or other city
+store was written.

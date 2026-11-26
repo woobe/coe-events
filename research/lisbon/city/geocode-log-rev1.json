@@ -1,0 +1,1418 @@
+{
+ "checked_on": "2026-11-26",
+ "failures": [
+  {
+   "query": "Heden Rossio, Largo do Duque de Cadaval 17, 1200-160 Lisboa, Portugal",
+   "reason": "Photon returned 0 features"
+  },
+  {
+   "query": "Terminal de Cruzeiros de Lisboa, Rua Jardim do Tabaco, 1100-651 Lisboa, Portugal",
+   "reason": "Photon returned 0 features"
+  },
+  {
+   "query": "Heden Santa Apolónia, Rua Jardim do Tabaco, 1100-651 Lisboa, Portugal",
+   "reason": "Photon returned 0 features"
+  },
+  {
+   "query": "Heden Alvalade, Rua do Centro Cultural 45, 1700-111 Lisboa, Portugal",
+   "reason": "Photon returned 0 features"
+  },
+  {
+   "query": "Engineers Hub, Avenida Fontes Pereira de Melo 17, 1050-115 Lisboa, Portugal",
+   "reason": "Photon returned 0 features"
+  },
+  {
+   "query": "Nova School of Business and Economics, Rua da Holanda 1, 2775-405 Carcavelos, Portugal",
+   "reason": "Photon returned 0 features"
+  },
+  {
+   "query": "Teatro São Luiz, Rua António Maria Cardoso 38, 1200-027 Lisboa, Portugal",
+   "reason": "Photon returned 0 features"
+  }
+ ],
+ "lookups": [
+  {
+   "address": "Avenida dos Combatentes 45, 1600-042 Lisboa",
+   "address_claim_source": {
+    "capture": "captures/rev1-marriott-events.txt",
+    "line_text": "Avenida dos Combatentes 45,",
+    "quote": "Avenida dos Combatentes 45,",
+    "source_locator": "line 1455"
+   },
+   "attempts": [
+    {
+     "chosen": "Lisbon Marriott Hotel, 45, Avenida dos Combatentes, São Domingos de Benfica, Lisbon, 1600-042",
+     "outcome": "exact_venue",
+     "query": "Avenida dos Combatentes 45, 1600-042 Lisboa, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=Avenida%20dos%20Combatentes%2045%2C%201600-042%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": [
+      "Sem título, 45, Avenida dos Combatentes, Campo Grande, Lisbon, 1600-042",
+      "Lisbon Marriott Hotel, 45, Avenida dos Combatentes, São Domingos de Benfica, Lisbon, 1600-042"
+     ]
+    }
+   ],
+   "checked_on": "2026-11-26",
+   "chosen_query": "Avenida dos Combatentes 45, 1600-042 Lisboa, Portugal",
+   "latitude": 38.7471197,
+   "longitude": -9.1644267,
+   "match": "building",
+   "osm": "W/502179764",
+   "osm_value": "hotel",
+   "record_ids": [
+    "lisbon-0391573b1a5d",
+    "lisbon-181ccaff35dc",
+    "lisbon-4ddd8ab523cb",
+    "lisbon-54d2e25cd337",
+    "lisbon-7d1649bf95c1",
+    "lisbon-867b92080e5e",
+    "lisbon-8a776ec2417a",
+    "lisbon-b3b41d6cd6ed",
+    "lisbon-c7ef2f9de6e0"
+   ],
+   "returned_place": "Lisbon Marriott Hotel, 45, Avenida dos Combatentes, São Domingos de Benfica, Lisbon, 1600-042",
+   "type": "house",
+   "venue_name": "Lisbon Marriott Hotel"
+  },
+  {
+   "address": "Largo do Duque de Cadaval 17, 1200-160 Lisboa",
+   "address_claim_source": {
+    "capture": "captures/rev1-heden-faq.txt",
+    "line_text": "What is coworking?Coworking means flexible, membership-based workspaces where freelancers, remote workers, start-ups and companies work side by side in a shared setting, with the services and community to help them grow.Where are you located?Here are our addresses:Largo do Duque de Cadaval 17, Fração I, 1200-160 LisboaHeden Santa Apolónia – Terminal de Cruzeiros de Lisboa – Edifício NE, Doca, R. J",
+    "quote": "Largo do Duque de Cadaval 17, Fração I, 1200-160 Lisboa",
+    "source_locator": "line 63"
+   },
+   "attempts": [
+    {
+     "outcome": "no_result",
+     "query": "Heden Rossio, Largo do Duque de Cadaval 17, 1200-160 Lisboa, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=Heden%20Rossio%2C%20Largo%20do%20Duque%20de%20Cadaval%2017%2C%201200-160%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": []
+    },
+    {
+     "chosen": "The Beer Station, 17, Largo do Duque do Cadaval, Santa Maria Maior, Lisbon, 1200-160",
+     "outcome": "building",
+     "query": "Largo do Duque de Cadaval 17, 1200-160 Lisboa, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=Largo%20do%20Duque%20de%20Cadaval%2017%2C%201200-160%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": [
+      "The Beer Station, 17, Largo do Duque do Cadaval, Santa Maria Maior, Lisbon, 1200-160",
+      "Largo do Duque do Cadaval, Santa Maria Maior, Lisbon, 1200-160",
+      "Largo do Duque do Cadaval, Santa Maria Maior, Lisbon, 1200-160",
+      "Lisboa - Rossio, Largo do Duque do Cadaval, Santa Maria Maior, Lisbon, 1200-160",
+      "Lisboa - Rossio, Largo do Duque do Cadaval, Santa Maria Maior, Lisbon, 1200-160"
+     ]
+    }
+   ],
+   "checked_on": "2026-11-26",
+   "chosen_query": "Largo do Duque de Cadaval 17, 1200-160 Lisboa, Portugal",
+   "latitude": 38.7140387,
+   "longitude": -9.1409276,
+   "match": "building",
+   "osm": "N/4334224690",
+   "osm_value": "bar",
+   "record_ids": [
+    "lisbon-125ebd809ada",
+    "lisbon-cdd778fbaf84"
+   ],
+   "returned_place": "The Beer Station, 17, Largo do Duque do Cadaval, Santa Maria Maior, Lisbon, 1200-160",
+   "type": "house",
+   "venue_name": "Heden Rossio"
+  },
+  {
+   "address": "R. Jardim do Tabaco 1, 1100-651 Lisboa",
+   "address_claim_source": {
+    "capture": "captures/rev1-heden-faq.txt",
+    "line_text": "What is coworking?Coworking means flexible, membership-based workspaces where freelancers, remote workers, start-ups and companies work side by side in a shared setting, with the services and community to help them grow.Where are you located?Here are our addresses:Largo do Duque de Cadaval 17, Fração I, 1200-160 LisboaHeden Santa Apolónia – Terminal de Cruzeiros de Lisboa – Edifício NE, Doca, R. J",
+    "quote": "Santa Apolónia – Terminal de Cruzeiros de Lisboa – Edifício NE, Doca, R. Jardim do Tabaco 1st floor, 1100-651 Lisboa",
+    "source_locator": "line 63"
+   },
+   "attempts": [
+    {
+     "outcome": "no_result",
+     "query": "Terminal de Cruzeiros de Lisboa, Rua Jardim do Tabaco, 1100-651 Lisboa, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=Terminal%20de%20Cruzeiros%20de%20Lisboa%2C%20Rua%20Jardim%20do%20Tabaco%2C%201100-651%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": []
+    },
+    {
+     "outcome": "no_result",
+     "query": "Heden Santa Apolónia, Rua Jardim do Tabaco, 1100-651 Lisboa, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=Heden%20Santa%20Apol%C3%B3nia%2C%20Rua%20Jardim%20do%20Tabaco%2C%201100-651%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": []
+    },
+    {
+     "chosen": "Quiosque do Jardim do Tabaco, Cais da Lingueta, Santa Maria Maior, Lisbon, 1100-288",
+     "outcome": "street",
+     "query": "Rua Jardim do Tabaco 1, 1100-651 Lisboa, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=Rua%20Jardim%20do%20Tabaco%201%2C%201100-651%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": [
+      "Quiosque do Jardim do Tabaco, Cais da Lingueta, Santa Maria Maior, Lisbon, 1100-288",
+      "Quiosque do Jardim do Tabaco, Cais da Lingueta, Santa Maria Maior, Lisbon, 1100-288",
+      "Rua do Jardim do Tabaco, Santa Maria Maior, Lisbon, 1149-041",
+      "Tabacaria Jardim, Rua do Jardim do Tabaco, Santa Maria Maior, Lisbon, 1149-041",
+      "Parque Infantil do Jardim da Cerca da Graça 2, Rua dos Lagares, Graça, Lisbon, 1100-376"
+     ]
+    }
+   ],
+   "checked_on": "2026-11-26",
+   "chosen_query": "Rua Jardim do Tabaco 1, 1100-651 Lisboa, Portugal",
+   "latitude": 38.7109255,
+   "longitude": -9.1272157,
+   "match": "street",
+   "osm": "W/383232814",
+   "osm_value": "fast_food",
+   "record_ids": [
+    "lisbon-8e6ed37462cc"
+   ],
+   "returned_place": "Quiosque do Jardim do Tabaco, Cais da Lingueta, Santa Maria Maior, Lisbon, 1100-288",
+   "type": "house",
+   "venue_name": "Heden Santa Apolónia"
+  },
+  {
+   "address": "R. do Centro Cultural 45, 1700-111 Lisboa",
+   "address_claim_source": {
+    "capture": "captures/rev1-heden-faq.txt",
+    "line_text": "What is coworking?Coworking means flexible, membership-based workspaces where freelancers, remote workers, start-ups and companies work side by side in a shared setting, with the services and community to help them grow.Where are you located?Here are our addresses:Largo do Duque de Cadaval 17, Fração I, 1200-160 LisboaHeden Santa Apolónia – Terminal de Cruzeiros de Lisboa – Edifício NE, Doca, R. J",
+    "quote": "Heden Alvalade – R. do Centro Cultural 45, 1700-111 Lisboa",
+    "source_locator": "line 63"
+   },
+   "attempts": [
+    {
+     "outcome": "no_result",
+     "query": "Heden Alvalade, Rua do Centro Cultural 45, 1700-111 Lisboa, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=Heden%20Alvalade%2C%20Rua%20do%20Centro%20Cultural%2045%2C%201700-111%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": []
+    },
+    {
+     "chosen": "Rua do Centro Cultural, Campo Grande, Lisbon, 1700-106",
+     "outcome": "street",
+     "query": "Rua do Centro Cultural 45, 1700-111 Lisboa, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=Rua%20do%20Centro%20Cultural%2045%2C%201700-111%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": [
+      "Rua do Centro Cultural, Campo Grande, Lisbon, 1700-106",
+      "Kube Coworking | Lisboa, 27, Rua do Centro Cultural, Campo Grande, Lisbon, 1700-106",
+      "Serviço de Finanças de Lisboa 8, 12, Rua do Centro Cultural, Campo Grande, Lisbon, 1700-106"
+     ]
+    }
+   ],
+   "checked_on": "2026-11-26",
+   "chosen_query": "Rua do Centro Cultural 45, 1700-111 Lisboa, Portugal",
+   "latitude": 38.7562928,
+   "longitude": -9.1419905,
+   "match": "street",
+   "osm": "W/172215137",
+   "osm_value": "residential",
+   "record_ids": [
+    "lisbon-c6fad126c7f6",
+    "lisbon-0c60a027ae4c"
+   ],
+   "returned_place": "Rua do Centro Cultural, Campo Grande, Lisbon, 1700-106",
+   "type": "street",
+   "venue_name": "Heden Alvalade"
+  },
+  {
+   "address": "Av. Brasília, Belém, 1300-598 Lisboa",
+   "address_claim_source": {
+    "capture": "captures/rev1-maat-home.txt",
+    "line_text": "Av. Brasília, Belém",
+    "quote": "Av. Brasília, Belém",
+    "source_locator": "line 245"
+   },
+   "attempts": [
+    {
+     "chosen": "Museum of Art, Architecture and Technology, Avenida de Brasília, São Francisco Xavier, Lisbon, 1300-598",
+     "outcome": "exact_venue",
+     "query": "MAAT - Museu de Arte, Arquitetura e Tecnologia, Avenida de Brasília, Belém, Lisboa, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=MAAT%20-%20Museu%20de%20Arte%2C%20Arquitetura%20e%20Tecnologia%2C%20Avenida%20de%20Bras%C3%ADlia%2C%20Bel%C3%A9m%2C%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": [
+      "Museum of Art, Architecture and Technology, Avenida de Brasília, São Francisco Xavier, Lisbon, 1300-598",
+      "Jardim Central Tejo, Avenida de Brasília, São Francisco Xavier, Lisbon"
+     ]
+    },
+    {
+     "chosen": "Tower of Belém, Avenida de Brasília, São Francisco Xavier, Lisbon, 1400-038",
+     "outcome": "street",
+     "query": "Avenida de Brasília, Belém, Lisboa, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=Avenida%20de%20Bras%C3%ADlia%2C%20Bel%C3%A9m%2C%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": [
+      "Tower of Belém, Avenida de Brasília, São Francisco Xavier, Lisbon, 1400-038",
+      "Belém, Avenida de Brasília, São Francisco Xavier, Lisbon, 1300-338",
+      "Belém, Avenida de Brasília, São Francisco Xavier, Lisbon, 1300-338",
+      "Belém, Avenida de Brasília, São Francisco Xavier, Lisbon, 1300-598",
+      "Avenida de Brasília, Belém, Lisbon, 1300-999"
+     ]
+    }
+   ],
+   "checked_on": "2026-11-26",
+   "chosen_query": "MAAT - Museu de Arte, Arquitetura e Tecnologia, Avenida de Brasília, Belém, Lisboa, Portugal",
+   "latitude": 38.695934,
+   "longitude": -9.1936238,
+   "match": "exact_venue",
+   "osm": "R/11381632",
+   "osm_value": "museum",
+   "record_ids": [
+    "lisbon-1aad82a62feb",
+    "lisbon-8e199aff71c0",
+    "lisbon-f4d699ad1901"
+   ],
+   "returned_place": "Museum of Art, Architecture and Technology, Avenida de Brasília, São Francisco Xavier, Lisbon, 1300-598",
+   "type": "house",
+   "venue_name": "MAAT"
+  },
+  {
+   "address": "Alameda do Beato, 1950-042 Lisboa",
+   "address_claim_source": {
+    "capture": "captures/rev1-convento-onde.txt",
+    "line_text": "Alameda do Beato",
+    "quote": "Alameda do Beato",
+    "source_locator": "line 42"
+   },
+   "attempts": [
+    {
+     "chosen": "Convento do Beato, Alameda do Beato, Convento, Beato, Lisbon, 1950-042",
+     "outcome": "exact_venue",
+     "query": "Convento do Beato, Alameda do Beato, 1950-042 Lisboa, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=Convento%20do%20Beato%2C%20Alameda%20do%20Beato%2C%201950-042%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": [
+      "Convento do Beato, Alameda do Beato, Convento, Beato, Lisbon, 1950-042"
+     ]
+    },
+    {
+     "chosen": "Alameda do Beato, Beato, Lisbon, 1950-042",
+     "outcome": "street",
+     "query": "Alameda do Beato, 1950-042 Lisboa, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=Alameda%20do%20Beato%2C%201950-042%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": [
+      "Alameda do Beato, Beato, Lisbon, 1950-042",
+      "Alameda do Beato, Beato, Lisbon, 1950-042",
+      "Travessa da Alameda do Beato, Beato, Lisbon, 1950-042",
+      "PneuBeato - ContiService, 18, Alameda do Beato, Beato, Lisbon, 1950-042",
+      "Mini Bar do Beato, Alameda do Beato, Beato, Lisbon, 1950-042"
+     ]
+    }
+   ],
+   "checked_on": "2026-11-26",
+   "chosen_query": "Convento do Beato, Alameda do Beato, 1950-042 Lisboa, Portugal",
+   "latitude": 38.7349951,
+   "longitude": -9.1059398,
+   "match": "building",
+   "osm": "R/20308167",
+   "osm_value": "place_of_worship",
+   "record_ids": [
+    "lisbon-801478bc18a8",
+    "lisbon-8b04c6daa59b",
+    "lisbon-950ac774833a",
+    "lisbon-c9355ae4e562",
+    "lisbon-e245fcf7981e"
+   ],
+   "returned_place": "Convento do Beato, Alameda do Beato, Convento, Beato, Lisbon, 1950-042",
+   "type": "house",
+   "venue_name": "Convento do Beato"
+  },
+  {
+   "address": "Rua Jau 54, 1300-314 Lisboa",
+   "address_claim_source": {
+    "capture": "captures/rev1-pestana-location.txt",
+    "line_text": "Rua Jau, 54, 1300-314 Lisboa",
+    "quote": "Rua Jau, 54, 1300-314 Lisboa",
+    "source_locator": "line 48"
+   },
+   "attempts": [
+    {
+     "chosen": "Palácio Vale-Flor, 54, Rua Jau, Alcântara, Lisbon, 1300-245",
+     "outcome": "building",
+     "query": "Rua Jau 54, 1300-314 Lisboa, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=Rua%20Jau%2054%2C%201300-314%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": [
+      "Palácio Vale-Flor, 54, Rua Jau, Alcântara, Lisbon, 1300-245",
+      "Rua Jau, Alcântara, Lisbon, 1300-314",
+      "Rua Jau, Alcântara, Lisbon, 1300-312",
+      "Rua Jau, Alcântara, Lisbon, 1300-245",
+      "Rua Jau, Alcântara, Lisbon, 1300-362"
+     ]
+    }
+   ],
+   "checked_on": "2026-11-26",
+   "chosen_query": "Rua Jau 54, 1300-314 Lisboa, Portugal",
+   "latitude": 38.7037251,
+   "longitude": -9.1867227,
+   "match": "building",
+   "osm": "W/494432857",
+   "osm_value": "hotel",
+   "record_ids": [
+    "lisbon-63b9e0603640",
+    "lisbon-96e7594375a3",
+    "lisbon-b49ef627e85b",
+    "lisbon-b67850dfb84d"
+   ],
+   "returned_place": "Palácio Vale-Flor, 54, Rua Jau, Alcântara, Lisbon, 1300-245",
+   "type": "house",
+   "venue_name": "Pestana Palace Lisboa"
+  },
+  {
+   "address": "Av. de Berna 45A, 1067-001 Lisboa",
+   "address_claim_source": {
+    "capture": "captures/rev1-gulbenkian-salas.txt",
+    "line_text": "Av. de Berna, 45A, 1067-001 Lisboa",
+    "quote": "Av. de Berna, 45A, 1067-001 Lisboa",
+    "source_locator": "line 154"
+   },
+   "attempts": [
+    {
+     "chosen": "Fundação Calouste Gulbenkian, 45A, Avenida de Berna, Campo Pequeno, Lisbon, 1067-001",
+     "outcome": "exact_venue",
+     "query": "Fundação Calouste Gulbenkian, Avenida de Berna 45A, 1067-001 Lisboa, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=Funda%C3%A7%C3%A3o%20Calouste%20Gulbenkian%2C%20Avenida%20de%20Berna%2045A%2C%201067-001%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": [
+      "Fundação Calouste Gulbenkian, 45A, Avenida de Berna, Campo Pequeno, Lisbon, 1067-001"
+     ]
+    },
+    {
+     "chosen": "Fundação Calouste Gulbenkian, 45A, Avenida de Berna, Campo Pequeno, Lisbon, 1067-001",
+     "outcome": "exact_venue",
+     "query": "Avenida de Berna 45A, 1067-001 Lisboa, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=Avenida%20de%20Berna%2045A%2C%201067-001%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": [
+      "Fundação Calouste Gulbenkian, 45A, Avenida de Berna, Campo Pequeno, Lisbon, 1067-001",
+      "Auditório 3, 45A, Avenida de Berna, Campo Pequeno, Lisbon, 1067-001"
+     ]
+    }
+   ],
+   "checked_on": "2026-11-26",
+   "chosen_query": "Fundação Calouste Gulbenkian, Avenida de Berna 45A, 1067-001 Lisboa, Portugal",
+   "latitude": 38.7372895,
+   "longitude": -9.1548013,
+   "match": "building",
+   "osm": "W/39784735",
+   "osm_value": "community_centre",
+   "record_ids": [
+    "lisbon-62d641b6435d",
+    "lisbon-8701730a8a46"
+   ],
+   "returned_place": "Fundação Calouste Gulbenkian, 45A, Avenida de Berna, Campo Pequeno, Lisbon, 1067-001",
+   "type": "house",
+   "venue_name": "Fundação Calouste Gulbenkian"
+  },
+  {
+   "address": "Av. da República 6, 1050-191 Lisboa",
+   "address_claim_source": {
+    "capture": "captures/rev1-avila-events.txt",
+    "line_text": "AV. REPÚBLICAAv. da República, nº6, 1º Esq.1050-191 LisbonSee Location",
+    "quote": "Av. da República, nº6, 1º Esq.1050-191 Lisbon",
+    "source_locator": "line 83"
+   },
+   "attempts": [
+    {
+     "chosen": "Avila Spaces, 6, Avenida da República, Arroios, Lisbon, 1050-191",
+     "outcome": "exact_venue",
+     "query": "Avila Spaces, Avenida da República 6, 1050-191 Lisboa, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=Avila%20Spaces%2C%20Avenida%20da%20Rep%C3%BAblica%206%2C%201050-191%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": [
+      "Avila Spaces, 6, Avenida da República, Arroios, Lisbon, 1050-191"
+     ]
+    },
+    {
+     "chosen": "Avila Spaces, 6, Avenida da República, Arroios, Lisbon, 1050-191",
+     "outcome": "exact_venue",
+     "query": "Avenida da República 6, 1050-191 Lisboa, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=Avenida%20da%20Rep%C3%BAblica%206%2C%201050-191%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": [
+      "Avila Spaces, 6, Avenida da República, Arroios, Lisbon, 1050-191"
+     ]
+    }
+   ],
+   "checked_on": "2026-11-26",
+   "chosen_query": "Avila Spaces, Avenida da República 6, 1050-191 Lisboa, Portugal",
+   "latitude": 38.7348821,
+   "longitude": -9.1447434,
+   "match": "building",
+   "osm": "N/13282831857",
+   "osm_value": "coworking",
+   "record_ids": [
+    "lisbon-89b3aea752fe"
+   ],
+   "returned_place": "Avila Spaces, 6, Avenida da República, Arroios, Lisbon, 1050-191",
+   "type": "house",
+   "venue_name": "Avila Spaces"
+  },
+  {
+   "address": "Av. Dom João II 52, 1990-096 Lisboa",
+   "address_claim_source": {
+    "capture": "captures/rev1-avila-events.txt",
+    "line_text": "PARQUE DAS NAÇÕESAv. Dom João II 52 Piso 0 1990-096 LisboaSee LocationMessageConsentimento* I agree with the Term of Uses and Privacy Policy.*",
+    "quote": "Av. Dom João II 52 Piso 0 1990-096 Lisboa",
+    "source_locator": "line 86"
+   },
+   "attempts": [
+    {
+     "chosen": "Avila Spaces, 52, Avenida Dom João II, Parque das Nações, Lisbon, 1990-096",
+     "outcome": "exact_venue",
+     "query": "Avila Spaces, Avenida Dom João II 52, 1990-096 Lisboa, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=Avila%20Spaces%2C%20Avenida%20Dom%20Jo%C3%A3o%20II%2052%2C%201990-096%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": [
+      "Avila Spaces, 52, Avenida Dom João II, Parque das Nações, Lisbon, 1990-096"
+     ]
+    },
+    {
+     "chosen": "Avila Spaces, 52, Avenida Dom João II, Parque das Nações, Lisbon, 1990-096",
+     "outcome": "exact_venue",
+     "query": "Avenida Dom João II 52, 1990-096 Lisboa, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=Avenida%20Dom%20Jo%C3%A3o%20II%2052%2C%201990-096%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": [
+      "Avila Spaces, 52, Avenida Dom João II, Parque das Nações, Lisbon, 1990-096"
+     ]
+    }
+   ],
+   "checked_on": "2026-11-26",
+   "chosen_query": "Avila Spaces, Avenida Dom João II 52, 1990-096 Lisboa, Portugal",
+   "latitude": 38.7714021,
+   "longitude": -9.0971082,
+   "match": "building",
+   "osm": "N/11882321570",
+   "osm_value": "coworking",
+   "record_ids": [
+    "lisbon-d1561c0cc161"
+   ],
+   "returned_place": "Avila Spaces, 52, Avenida Dom João II, Parque das Nações, Lisbon, 1990-096",
+   "type": "house",
+   "venue_name": "Avila Spaces"
+  },
+  {
+   "address": "Av. Fontes Pereira de Melo 17, 1050-115 Lisboa",
+   "address_claim_source": {
+    "capture": "captures/rev1-unicorn-hubs.txt",
+    "line_text": "Av. Fontes Pereira de Melo 17, 1st floor, 1050-115 LisboaVisit Website",
+    "quote": "Av. Fontes Pereira de Melo 17, 1st floor, 1050-115 Lisboa",
+    "source_locator": "line 46"
+   },
+   "attempts": [
+    {
+     "outcome": "no_result",
+     "query": "Engineers Hub, Avenida Fontes Pereira de Melo 17, 1050-115 Lisboa, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=Engineers%20Hub%2C%20Avenida%20Fontes%20Pereira%20de%20Melo%2017%2C%201050-115%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": []
+    },
+    {
+     "chosen": "17, Avenida Fontes Pereira de Melo, Campo Pequeno, Lisbon, 1050-116",
+     "outcome": "building",
+     "query": "Avenida Fontes Pereira de Melo 17, 1050-115 Lisboa, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=Avenida%20Fontes%20Pereira%20de%20Melo%2017%2C%201050-115%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": [
+      "17, Avenida Fontes Pereira de Melo, Campo Pequeno, Lisbon, 1050-116",
+      "Caetano Power, 17-A, Avenida Fontes Pereira de Melo, Campo Pequeno, Lisbon, 1050-116",
+      "Farmácia Fontes Pereira de Melo, 15-A, Avenida Fontes Pereira de Melo, Campo Pequeno, Lisbon, 1050-115",
+      "Farmácia Fontes Pereira de Melo, 15-B, Avenida Fontes Pereira de Melo, Campo Pequeno, Lisbon, 1050-115",
+      "Avenida Fontes Pereira de Melo, Campo Pequeno, Lisbon, 1050-119"
+     ]
+    }
+   ],
+   "checked_on": "2026-11-26",
+   "chosen_query": "Avenida Fontes Pereira de Melo 17, 1050-115 Lisboa, Portugal",
+   "latitude": 38.7293697,
+   "longitude": -9.1477198,
+   "match": "building",
+   "osm": "N/4829695769",
+   "osm_value": "house",
+   "record_ids": [
+    "lisbon-00f4ac208194"
+   ],
+   "returned_place": "17, Avenida Fontes Pereira de Melo, Campo Pequeno, Lisbon, 1050-116",
+   "type": "house",
+   "venue_name": "Engineers Hub"
+  },
+  {
+   "address": "Rua da Holanda 1, 2775-405 Carcavelos",
+   "address_claim_source": {
+    "capture": "captures/rev1-novasbe-contacts.txt",
+    "line_text": "Rua da Holanda, no. 1,",
+    "quote": "Rua da Holanda, no. 1,",
+    "source_locator": "line 457"
+   },
+   "attempts": [
+    {
+     "outcome": "no_result",
+     "query": "Nova School of Business and Economics, Rua da Holanda 1, 2775-405 Carcavelos, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=Nova%20School%20of%20Business%20and%20Economics%2C%20Rua%20da%20Holanda%201%2C%202775-405%20Carcavelos%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": []
+    },
+    {
+     "chosen": "Rua da Holanda, Carcavelos e Parede, Cascais, 2775-629",
+     "outcome": "street",
+     "query": "Rua da Holanda 1, 2775-405 Carcavelos, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=Rua%20da%20Holanda%201%2C%202775-405%20Carcavelos%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": [
+      "Rua da Holanda, Carcavelos e Parede, Cascais, 2775-629",
+      "Farmácia de Carcavelos, 1 A, Rua Frei Hermano da Câmara, Carcavelos e Parede, Carcavelos, 2775-702",
+      "Pingo Doce Carcavelos (R. Marques da Mata), Rua Doutor Marques da Mata, Carcavelos, Cascais, 2775-602",
+      "Boutique de beleza e estética de carcavelos, 3a, Rua José da Costa Mamede, Carcavelos, Cascais, 2775-624",
+      "54ª Esquadra - Carcavelos, 2, Rua João da Silva, Carcavelos, Carcavelos, 2775-058"
+     ]
+    }
+   ],
+   "checked_on": "2026-11-26",
+   "chosen_query": "Rua da Holanda 1, 2775-405 Carcavelos, Portugal",
+   "latitude": 38.6804392,
+   "longitude": -9.3254736,
+   "match": "street",
+   "osm": "W/29919242",
+   "osm_value": "residential",
+   "record_ids": [
+    "lisbon-0957bf1b9b9a"
+   ],
+   "returned_place": "Rua da Holanda, Carcavelos e Parede, Cascais, 2775-629",
+   "type": "street",
+   "venue_name": "Nova SBE Carcavelos"
+  },
+  {
+   "address": "R. Latino Coelho 63, Lisboa",
+   "address_claim_source": {
+    "capture": "captures/rev1-theblock.txt",
+    "line_text": "Our spaces will fit your needs!Your event here!EVERY FRIDAY NIGHTCrypto FridaysEVERY OTHER WEEKMeetup EventsOur biggest sponsors and partnersGet in touchTALK TO UShello@theblocklisboa.comTelegramFIND USR. Latino Coelho 63",
+    "quote": "R. Latino Coelho 63",
+    "source_locator": "line 7"
+   },
+   "attempts": [
+    {
+     "chosen": "The Block Lisboa, 63, Rua Latino Coelho, Campo Pequeno, Lisbon, 1050-111",
+     "outcome": "exact_venue",
+     "query": "The Block Lisboa, Rua Latino Coelho 63, Lisboa, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=The%20Block%20Lisboa%2C%20Rua%20Latino%20Coelho%2063%2C%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": [
+      "The Block Lisboa, 63, Rua Latino Coelho, Campo Pequeno, Lisbon, 1050-111"
+     ]
+    },
+    {
+     "chosen": "The Block Lisboa, 63, Rua Latino Coelho, Campo Pequeno, Lisbon, 1050-111",
+     "outcome": "exact_venue",
+     "query": "Rua Latino Coelho 63, Lisboa, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=Rua%20Latino%20Coelho%2063%2C%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": [
+      "The Block Lisboa, 63, Rua Latino Coelho, Campo Pequeno, Lisbon, 1050-111",
+      "Guest Inn - Latino Coelho, 63, Rua Latino Coelho, Campo Pequeno, Lisbon, 1050-111",
+      "Degust'AR - Expressões da Nossa Terra, 63A, Rua Latino Coelho, Campo Pequeno, Lisbon, 1050-111"
+     ]
+    }
+   ],
+   "checked_on": "2026-11-26",
+   "chosen_query": "The Block Lisboa, Rua Latino Coelho 63, Lisboa, Portugal",
+   "latitude": 38.7328739,
+   "longitude": -9.1497772,
+   "match": "building",
+   "osm": "N/11665827947",
+   "osm_value": "coworking",
+   "record_ids": [
+    "lisbon-144ca93ccd10"
+   ],
+   "returned_place": "The Block Lisboa, 63, Rua Latino Coelho, Campo Pequeno, Lisbon, 1050-111",
+   "type": "house",
+   "venue_name": "The Block Lisboa"
+  },
+  {
+   "address": "Avenida Aquilino Ribeiro Machado 74, Lisboa",
+   "address_claim_source": {
+    "capture": "captures/rev1-lisbonstage.txt",
+    "line_text": "Avenida Aquilino Ribeiro Machado 74",
+    "quote": "Avenida Aquilino Ribeiro Machado 74",
+    "source_locator": "line 8"
+   },
+   "attempts": [
+    {
+     "chosen": "Avenida Aquilino Ribeiro Machado, Parque das Nações, Lisbon, 1990-223",
+     "outcome": "street",
+     "query": "Lisbon Stage, Avenida Aquilino Ribeiro Machado 74, Lisboa, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=Lisbon%20Stage%2C%20Avenida%20Aquilino%20Ribeiro%20Machado%2074%2C%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": [
+      "Avenida Aquilino Ribeiro Machado, Parque das Nações, Lisbon, 1990-223",
+      "Avenida Aquilino Ribeiro Machado, Parque das Nações, Lisbon, 1990-095",
+      "Avenida Aquilino Ribeiro Machado, Parque das Nações, Lisbon, 1800-142",
+      "Avenida Aquilino Ribeiro Machado, Parque das Nações, Lisbon, 1800-379"
+     ]
+    },
+    {
+     "chosen": "Avenida Aquilino Ribeiro Machado, Parque das Nações, Lisbon, 1990-223",
+     "outcome": "street",
+     "query": "Avenida Aquilino Ribeiro Machado 74, Lisboa, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=Avenida%20Aquilino%20Ribeiro%20Machado%2074%2C%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": [
+      "Avenida Aquilino Ribeiro Machado, Parque das Nações, Lisbon, 1990-223",
+      "Avenida Aquilino Ribeiro Machado, Parque das Nações, Lisbon, 1990-095",
+      "Avenida Aquilino Ribeiro Machado, Parque das Nações, Lisbon, 1800-142",
+      "Avenida Aquilino Ribeiro Machado, Parque das Nações, Lisbon, 1800-379"
+     ]
+    }
+   ],
+   "checked_on": "2026-11-26",
+   "chosen_query": "Lisbon Stage, Avenida Aquilino Ribeiro Machado 74, Lisboa, Portugal",
+   "latitude": 38.7685424,
+   "longitude": -9.0985771,
+   "match": "street",
+   "osm": "W/684686072",
+   "osm_value": "secondary",
+   "record_ids": [
+    "lisbon-2522504f1a8e"
+   ],
+   "returned_place": "Avenida Aquilino Ribeiro Machado, Parque das Nações, Lisbon, 1990-223",
+   "type": "street",
+   "venue_name": "Lisbon Stage Events Hall"
+  },
+  {
+   "address": "Avenida 24 de Julho, Mercado da Ribeira, 1200-479 Lisboa",
+   "address_claim_source": {
+    "capture": "captures/rev1-secondhome-contact.txt",
+    "line_text": "Avenida 24 de Julho 1200-479 Lisboa",
+    "quote": "Avenida 24 de Julho 1200-479 Lisboa",
+    "source_locator": "line 115"
+   },
+   "attempts": [
+    {
+     "chosen": "Mercado da Ribeira, 49, Avenida 24 de Julho, Misericórdia, Lisbon, 1200-479",
+     "outcome": "street",
+     "query": "Second Home Mercado, Avenida 24 de Julho, 1200-479 Lisboa, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=Second%20Home%20Mercado%2C%20Avenida%2024%20de%20Julho%2C%201200-479%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": [
+      "Mercado da Ribeira, 49, Avenida 24 de Julho, Misericórdia, Lisbon, 1200-479"
+     ]
+    },
+    {
+     "chosen": "Mercado da Ribeira, 49, Avenida 24 de Julho, Misericórdia, Lisbon, 1200-479",
+     "outcome": "street",
+     "query": "Mercado da Ribeira, Avenida 24 de Julho, 1200-479 Lisboa, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=Mercado%20da%20Ribeira%2C%20Avenida%2024%20de%20Julho%2C%201200-479%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": [
+      "Mercado da Ribeira, 49, Avenida 24 de Julho, Misericórdia, Lisbon, 1200-479"
+     ]
+    }
+   ],
+   "checked_on": "2026-11-26",
+   "chosen_query": "Second Home Mercado, Avenida 24 de Julho, 1200-479 Lisboa, Portugal",
+   "latitude": 38.706994,
+   "longitude": -9.1456931,
+   "match": "street",
+   "osm": "W/39729235",
+   "osm_value": "marketplace",
+   "record_ids": [
+    "lisbon-3f7eeb32161d"
+   ],
+   "returned_place": "Mercado da Ribeira, 49, Avenida 24 de Julho, Misericórdia, Lisbon, 1200-479",
+   "type": "house",
+   "venue_name": "Second Home Mercado"
+  },
+  {
+   "address": "Rossio dos Olivais, Lote 2.13.01A, 1990-231 Lisboa",
+   "address_claim_source": {
+    "capture": "captures/rev1-meoarena.txt",
+    "line_text": "Rossio dos Olivais, Lote 2.13.01A",
+    "quote": "Rossio dos Olivais, Lote 2.13.01A",
+    "source_locator": "line 46"
+   },
+   "attempts": [
+    {
+     "chosen": "MEO Arena, Rossio dos Olivais, Parque das Nações, Lisbon, 1990-193",
+     "outcome": "exact_venue",
+     "query": "MEO Arena, Rossio dos Olivais, 1990-231 Lisboa, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=MEO%20Arena%2C%20Rossio%20dos%20Olivais%2C%201990-231%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": [
+      "MEO Arena, Rossio dos Olivais, Parque das Nações, Lisbon, 1990-193"
+     ]
+    },
+    {
+     "chosen": "Rossio dos Olivais, Parque das Nações, Lisbon, 1990-193",
+     "outcome": "street",
+     "query": "Rossio dos Olivais, 1990-231 Lisboa, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=Rossio%20dos%20Olivais%2C%201990-231%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": [
+      "Rossio dos Olivais, Parque das Nações, Lisbon, 1990-193",
+      "Rossio dos Olivais, Parque das Nações, Lisbon, 1990-207",
+      "Chafariz do Rossio dos Olivais, Praça da Viscondessa dos Olivais, Olivais, Lisbon, 1800-379",
+      "Praça da Viscondessa dos Olivais, Olivais, Lisbon, 1800-379",
+      "Praça da Viscondessa dos Olivais, Olivais, Lisbon, 1800-032"
+     ]
+    }
+   ],
+   "checked_on": "2026-11-26",
+   "chosen_query": "MEO Arena, Rossio dos Olivais, 1990-231 Lisboa, Portugal",
+   "latitude": 38.7684689,
+   "longitude": -9.0939002,
+   "match": "exact_venue",
+   "osm": "W/821784762",
+   "osm_value": "stadium",
+   "record_ids": [
+    "lisbon-6480f1816ef7"
+   ],
+   "returned_place": "MEO Arena, Rossio dos Olivais, Parque das Nações, Lisbon, 1990-193",
+   "type": "house",
+   "venue_name": "MEO Arena"
+  },
+  {
+   "address": "Av. Columbano Bordalo Pinheiro 105, 1099-031 Lisboa",
+   "address_claim_source": {
+    "capture": "captures/rev1-corinthia.txt",
+    "line_text": "Av. Columbano Bordalo Pinheiro, 105 1099-031 Lisbon, Portugal",
+    "quote": "Av. Columbano Bordalo Pinheiro, 105 1099-031 Lisbon, Portugal",
+    "source_locator": "line 100"
+   },
+   "attempts": [
+    {
+     "chosen": "Corinthia Hotel Lisbon, 105, Avenida Columbano Bordalo Pinheiro, Campolide, Lisbon, 1099-031",
+     "outcome": "building",
+     "query": "Corinthia Lisbon, Avenida Columbano Bordalo Pinheiro 105, 1099-031 Lisboa, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=Corinthia%20Lisbon%2C%20Avenida%20Columbano%20Bordalo%20Pinheiro%20105%2C%201099-031%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": [
+      "Corinthia Hotel Lisbon, 105, Avenida Columbano Bordalo Pinheiro, Campolide, Lisbon, 1099-031"
+     ]
+    },
+    {
+     "chosen": "Corinthia Hotel Lisbon, 105, Avenida Columbano Bordalo Pinheiro, Campolide, Lisbon, 1099-031",
+     "outcome": "building",
+     "query": "Avenida Columbano Bordalo Pinheiro 105, 1099-031 Lisboa, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=Avenida%20Columbano%20Bordalo%20Pinheiro%20105%2C%201099-031%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": [
+      "Corinthia Hotel Lisbon, 105, Avenida Columbano Bordalo Pinheiro, Campolide, Lisbon, 1099-031"
+     ]
+    }
+   ],
+   "checked_on": "2026-11-26",
+   "chosen_query": "Corinthia Lisbon, Avenida Columbano Bordalo Pinheiro 105, 1099-031 Lisboa, Portugal",
+   "latitude": 38.7387646,
+   "longitude": -9.1664896,
+   "match": "building",
+   "osm": "W/101941942",
+   "osm_value": "hotel",
+   "record_ids": [
+    "lisbon-657c0e8559bb"
+   ],
+   "returned_place": "Corinthia Hotel Lisbon, 105, Avenida Columbano Bordalo Pinheiro, Campolide, Lisbon, 1099-031",
+   "type": "house",
+   "venue_name": "Corinthia Lisbon"
+  },
+  {
+   "address": "Av. Defensores de Chaves 4, 1000-117 Lisboa",
+   "address_claim_source": {
+    "capture": "captures/rev1-idea-contacts.txt",
+    "line_text": "Av. Defensores de Chaves, 4",
+    "quote": "Av. Defensores de Chaves, 4",
+    "source_locator": "line 80"
+   },
+   "attempts": [
+    {
+     "chosen": "IDEA Spaces Saldanha, 4, Avenida Defensores de Chaves, Arroios, Lisbon, 1000-154",
+     "outcome": "exact_venue",
+     "query": "IDEA Spaces Saldanha, Avenida Defensores de Chaves 4, 1000-117 Lisboa, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=IDEA%20Spaces%20Saldanha%2C%20Avenida%20Defensores%20de%20Chaves%204%2C%201000-117%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": [
+      "IDEA Spaces Saldanha, 4, Avenida Defensores de Chaves, Arroios, Lisbon, 1000-154"
+     ]
+    },
+    {
+     "chosen": "IDEA Spaces Saldanha, 4, Avenida Defensores de Chaves, Arroios, Lisbon, 1000-154",
+     "outcome": "exact_venue",
+     "query": "Avenida Defensores de Chaves 4, 1000-117 Lisboa, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=Avenida%20Defensores%20de%20Chaves%204%2C%201000-117%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": [
+      "SingleStore, 4, Avenida Defensores de Chaves, Arroios, Lisbon, 1000-154",
+      "IDEA Spaces Saldanha, 4, Avenida Defensores de Chaves, Arroios, Lisbon, 1000-154",
+      "ProductDock AG, 4, Avenida Defensores de Chaves, Arroios, Lisbon, 1000-154",
+      "Avenida Defensores de Chaves, Campo Pequeno, Lisbon, 1000-290",
+      "Avenida Defensores de Chaves, Campo Pequeno, Lisbon, 1000-147"
+     ]
+    }
+   ],
+   "checked_on": "2026-11-26",
+   "chosen_query": "IDEA Spaces Saldanha, Avenida Defensores de Chaves 4, 1000-117 Lisboa, Portugal",
+   "latitude": 38.7328416,
+   "longitude": -9.1425791,
+   "match": "building",
+   "osm": "W/99628864",
+   "osm_value": "coworking_space",
+   "record_ids": [
+    "lisbon-6e4b0e1fca51"
+   ],
+   "returned_place": "IDEA Spaces Saldanha, 4, Avenida Defensores de Chaves, Arroios, Lisbon, 1000-154",
+   "type": "house",
+   "venue_name": "IDEA Spaces Saldanha"
+  },
+  {
+   "address": "Rua do Bojador, Parque das Nações, 1998-010 Lisboa",
+   "address_claim_source": {
+    "capture": "captures/rev1-fil-contacto.txt",
+    "line_text": "Rua do Bojador, 1998-010 Lisboa, Portugal – Tel. (+351) 218 921 500",
+    "quote": "Rua do Bojador, 1998-010 Lisboa, Portugal",
+    "source_locator": "line 35"
+   },
+   "attempts": [
+    {
+     "chosen": "Feira Internacional de Lisboa, Rua do Bojador, Parque das Nações, Lisbon, 1998-010",
+     "outcome": "exact_venue",
+     "query": "Feira Internacional de Lisboa, Rua do Bojador, 1998-010 Lisboa, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=Feira%20Internacional%20de%20Lisboa%2C%20Rua%20do%20Bojador%2C%201998-010%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": [
+      "Feira Internacional de Lisboa, Rua do Bojador, Parque das Nações, Lisbon, 1998-010"
+     ]
+    },
+    {
+     "chosen": "Feira Internacional de Lisboa, Rua do Bojador, Parque das Nações, Lisbon, 1998-010",
+     "outcome": "exact_venue",
+     "query": "Rua do Bojador, 1998-010 Lisboa, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=Rua%20do%20Bojador%2C%201998-010%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": [
+      "Feira Internacional de Lisboa, Rua do Bojador, Parque das Nações, Lisbon, 1998-010"
+     ]
+    }
+   ],
+   "checked_on": "2026-11-26",
+   "chosen_query": "Feira Internacional de Lisboa, Rua do Bojador, 1998-010 Lisboa, Portugal",
+   "latitude": 38.7717656,
+   "longitude": -9.094957,
+   "match": "exact_venue",
+   "osm": "W/1236716386",
+   "osm_value": "parking",
+   "record_ids": [
+    "lisbon-6f686aff28f1"
+   ],
+   "returned_place": "Feira Internacional de Lisboa, Rua do Bojador, Parque das Nações, Lisbon, 1998-010",
+   "type": "house",
+   "venue_name": "FIL"
+  },
+  {
+   "address": "Alameda da Universidade, 1649-004 Lisboa",
+   "address_claim_source": {
+    "capture": "captures/rev1-ulisboa-contactos.txt",
+    "line_text": "Alameda da Universidade",
+    "quote": "Alameda da Universidade",
+    "source_locator": "line 141"
+   },
+   "attempts": [
+    {
+     "chosen": "Faculdade de Letras da Universidade de Lisboa, Alameda da Universidade, Campo Grande, Lisbon, 1649-004",
+     "outcome": "exact_venue",
+     "query": "Universidade de Lisboa, Alameda da Universidade, 1649-004 Lisboa, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=Universidade%20de%20Lisboa%2C%20Alameda%20da%20Universidade%2C%201649-004%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": [
+      "Faculdade de Letras da Universidade de Lisboa, Alameda da Universidade, Campo Grande, Lisbon, 1649-004",
+      "Faculdade de Letras da Universidade de Lisboa, Alameda da Universidade, Campo Grande, Lisbon, 1649-004",
+      "Caixa Geral de Depósitos, Alameda da Universidade, Campo Grande, Lisbon, 1649-004"
+     ]
+    },
+    {
+     "chosen": "Faculdade de Letras da Universidade de Lisboa, Alameda da Universidade, Campo Grande, Lisbon, 1649-004",
+     "outcome": "exact_venue",
+     "query": "Alameda da Universidade, 1649-004 Lisboa, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=Alameda%20da%20Universidade%2C%201649-004%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": [
+      "Faculdade de Letras da Universidade de Lisboa, Alameda da Universidade, Campo Grande, Lisbon, 1649-004",
+      "Alameda da Universidade, Campo Grande, Lisbon, 1649-004",
+      "Alameda da Universidade, Campo Grande, Lisbon, 1649-004",
+      "Rua Interior à Alameda da Universidade, Campo Grande, Lisbon, 1649-004",
+      "Praça Pedonal da Alameda da Universidade, Campo Grande, Lisbon, 1649-004"
+     ]
+    }
+   ],
+   "checked_on": "2026-11-26",
+   "chosen_query": "Universidade de Lisboa, Alameda da Universidade, 1649-004 Lisboa, Portugal",
+   "latitude": 38.7538465,
+   "longitude": -9.1582616,
+   "match": "street",
+   "osm": "R/3177187",
+   "osm_value": "university",
+   "record_ids": [
+    "lisbon-75dedbc222cc"
+   ],
+   "returned_place": "Faculdade de Letras da Universidade de Lisboa, Alameda da Universidade, Campo Grande, Lisbon, 1649-004",
+   "type": "house",
+   "venue_name": "Universidade de Lisboa"
+  },
+  {
+   "address": "Avenida da Índia 52, 1300-299 Lisboa",
+   "address_claim_source": {
+    "capture": "captures/rev1-vu-home.txt",
+    "line_text": "Avenida da Índia 52, 1300-299 LisboaChamada para rede fixa nacional:+351 215 832 469CONTACT@VULISBOA.COM",
+    "quote": "Avenida da Índia 52, 1300-299 Lisboa",
+    "source_locator": "line 102"
+   },
+   "attempts": [
+    {
+     "chosen": "Village Underground, 1, Maio, Alcântara, Lisbon, 1300-472",
+     "outcome": "area",
+     "query": "Village Underground Lisboa, Avenida da Índia 52, 1300-299 Lisboa, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=Village%20Underground%20Lisboa%2C%20Avenida%20da%20%C3%8Dndia%2052%2C%201300-299%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": [
+      "Village Underground, 1, Maio, Alcântara, Lisbon, 1300-472"
+     ]
+    },
+    {
+     "chosen": "Escala25, 52, Avenida da Índia, Alcântara, Lisbon, 1300-141",
+     "outcome": "building",
+     "query": "Avenida da Índia 52, 1300-299 Lisboa, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=Avenida%20da%20%C3%8Dndia%2052%2C%201300-299%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": [
+      "Escala25, 52, Avenida da Índia, Alcântara, Lisbon, 1300-141",
+      "Pilar 7 Experience, 52, Avenida da Índia, Alcântara, Lisbon, 1300-141",
+      "Avenida da Índia, São Francisco Xavier, Lisbon, 1300-999",
+      "Avenida da Índia, São Francisco Xavier, Lisbon, 1300-598",
+      "Avenida da Índia, Alcântara, Lisbon, 1300-344"
+     ]
+    }
+   ],
+   "checked_on": "2026-11-26",
+   "chosen_query": "Avenida da Índia 52, 1300-299 Lisboa, Portugal",
+   "latitude": 38.7003518,
+   "longitude": -9.178815,
+   "match": "building",
+   "osm": "N/13230741433",
+   "osm_value": "sports_centre",
+   "record_ids": [
+    "lisbon-7a5b8ab4a560"
+   ],
+   "returned_place": "Escala25, 52, Avenida da Índia, Alcântara, Lisbon, 1300-141",
+   "type": "house",
+   "venue_name": "Village Underground Lisboa"
+  },
+  {
+   "address": "Avenida das Forças Armadas, 1649-026 Lisboa",
+   "address_claim_source": {
+    "capture": "captures/rev1-iscte-site.txt",
+    "line_text": "Avenida das Forças Armadas, 1649-026 Lisboa | +351 217 903 000 | geral@iscte.pt",
+    "quote": "Avenida das Forças Armadas, 1649-026 Lisboa",
+    "source_locator": "line 263"
+   },
+   "attempts": [
+    {
+     "chosen": "University Institute of Lisbon, Avenida das Forças Armadas, Campo Grande, Lisbon, 1649-026",
+     "outcome": "exact_venue",
+     "query": "ISCTE - Instituto Universitário de Lisboa, Avenida das Forças Armadas, 1649-026 Lisboa, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=ISCTE%20-%20Instituto%20Universit%C3%A1rio%20de%20Lisboa%2C%20Avenida%20das%20For%C3%A7as%20Armadas%2C%201649-026%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": [
+      "University Institute of Lisbon, Avenida das Forças Armadas, Campo Grande, Lisbon, 1649-026",
+      "Agrupamento 541 - Pio XII, Colégio Universitário Pio XII, Campo Grande, Lisbon, 1649-026"
+     ]
+    },
+    {
+     "chosen": "University Institute of Lisbon, Avenida das Forças Armadas, Campo Grande, Lisbon, 1649-026",
+     "outcome": "exact_venue",
+     "query": "Avenida das Forças Armadas, 1649-026 Lisboa, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=Avenida%20das%20For%C3%A7as%20Armadas%2C%201649-026%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": [
+      "University Institute of Lisbon, Avenida das Forças Armadas, Campo Grande, Lisbon, 1649-026",
+      "Avenida das Forças Armadas / Rua Sanches Coelho, Avenida das Forças Armadas, Campo Pequeno, Lisbon, 1649-026"
+     ]
+    }
+   ],
+   "checked_on": "2026-11-26",
+   "chosen_query": "ISCTE - Instituto Universitário de Lisboa, Avenida das Forças Armadas, 1649-026 Lisboa, Portugal",
+   "latitude": 38.7486143,
+   "longitude": -9.1540202,
+   "match": "street",
+   "osm": "W/238848355",
+   "osm_value": "university",
+   "record_ids": [
+    "lisbon-7bd101ffacfe"
+   ],
+   "returned_place": "University Institute of Lisbon, Avenida das Forças Armadas, Campo Grande, Lisbon, 1649-026",
+   "type": "house",
+   "venue_name": "ISCTE"
+  },
+  {
+   "address": "Palma de Cima, 1649-023 Lisboa",
+   "address_claim_source": {
+    "capture": "captures/rev1-ucp-lisbon-campus.txt",
+    "line_text": "Palma de Cima,",
+    "quote": "Palma de Cima,",
+    "source_locator": "line 682"
+   },
+   "attempts": [
+    {
+     "chosen": "Faculdade de Direito da Universidade Católica Portuguesa Escola de Lisboa, Palma de Cima, São Domingos de Benfica, Lisbon, 1600-028",
+     "outcome": "exact_venue",
+     "query": "Universidade Católica Portuguesa, Palma de Cima, 1649-023 Lisboa, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=Universidade%20Cat%C3%B3lica%20Portuguesa%2C%20Palma%20de%20Cima%2C%201649-023%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": [
+      "Faculdade de Direito da Universidade Católica Portuguesa Escola de Lisboa, Palma de Cima, São Domingos de Benfica, Lisbon, 1600-028"
+     ]
+    },
+    {
+     "chosen": "Faculdade de Direito da Universidade Católica Portuguesa Escola de Lisboa, Palma de Cima, São Domingos de Benfica, Lisbon, 1600-028",
+     "outcome": "exact_venue",
+     "query": "Palma de Cima, 1649-023 Lisboa, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=Palma%20de%20Cima%2C%201649-023%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": [
+      "Caminho de Palma de Cima, São Domingos de Benfica, Lisbon, 1600-028",
+      "University Institute of Lisbon, Avenida das Forças Armadas, Campo Grande, Lisbon, 1649-026",
+      "Faculdade de Direito da Universidade Católica Portuguesa Escola de Lisboa, Palma de Cima, São Domingos de Benfica, Lisbon, 1600-028",
+      "Faculdade de Medicina da Universidade de Lisboa, Avenida Professor Egas Moniz, Campo Grande, Lisbon, 1649-028",
+      "Ecoilha Subterrânea, Rua Palmeiras, São Domingos de Benfica, Lisbon, 1600-028"
+     ]
+    }
+   ],
+   "checked_on": "2026-11-26",
+   "chosen_query": "Universidade Católica Portuguesa, Palma de Cima, 1649-023 Lisboa, Portugal",
+   "latitude": 38.7495525,
+   "longitude": -9.1669671,
+   "match": "street",
+   "osm": "W/239939621",
+   "osm_value": "university",
+   "record_ids": [
+    "lisbon-974153302987"
+   ],
+   "returned_place": "Faculdade de Direito da Universidade Católica Portuguesa Escola de Lisboa, Palma de Cima, São Domingos de Benfica, Lisbon, 1600-028",
+   "type": "house",
+   "venue_name": "Universidade Católica Portuguesa"
+  },
+  {
+   "address": "Rua Neves Ferreira 13, 1170-070 Lisboa",
+   "address_claim_source": {
+    "capture": "captures/rev1-impacthub.txt",
+    "line_text": "Penha de FrançaRua Neves Ferreira, 13, 3º Andar1170-070 — Lisboa+351 965 132 876",
+    "quote": "Rua Neves Ferreira, 13, 3º Andar1170-070 — Lisboa",
+    "source_locator": "line 70"
+   },
+   "attempts": [
+    {
+     "chosen": "Impact hub, Rua Neves Ferreira, Penha de França, Lisbon, 1170-079",
+     "outcome": "exact_venue",
+     "query": "Impact Hub Lisbon, Rua Neves Ferreira 13, 1170-070 Lisboa, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=Impact%20Hub%20Lisbon%2C%20Rua%20Neves%20Ferreira%2013%2C%201170-070%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": [
+      "Impact hub, Rua Neves Ferreira, Penha de França, Lisbon, 1170-079"
+     ]
+    },
+    {
+     "chosen": "Rua Neves Ferreira, Penha de França, Lisbon, 1170-070",
+     "outcome": "street",
+     "query": "Rua Neves Ferreira 13, 1170-070 Lisboa, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=Rua%20Neves%20Ferreira%2013%2C%201170-070%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": [
+      "Rua Neves Ferreira, Penha de França, Lisbon, 1170-070",
+      "Rua Neves Ferreira, Penha de França, Lisbon, 1170-079",
+      "Rua Neves Ferreira, Penha de França, Lisbon, 1170-008",
+      "13, Rua Artur Ferreira da Silva, Moscavide e Portela, Loures, 1885-070",
+      "Rua Tenente Ferreira Durão, Santa Isabel, Lisbon, 1350-075"
+     ]
+    }
+   ],
+   "checked_on": "2026-11-26",
+   "chosen_query": "Impact Hub Lisbon, Rua Neves Ferreira 13, 1170-070 Lisboa, Portugal",
+   "latitude": 38.730656,
+   "longitude": -9.1298133,
+   "match": "building",
+   "osm": "N/12307074437",
+   "osm_value": "architect",
+   "record_ids": [
+    "lisbon-97ec5eebe7ce"
+   ],
+   "returned_place": "Impact hub, Rua Neves Ferreira, Penha de França, Lisbon, 1170-079",
+   "type": "house",
+   "venue_name": "Impact Hub Lisbon"
+  },
+  {
+   "address": "R. Rodrigues de Faria 103, 1300-501 Lisboa",
+   "address_claim_source": {
+    "capture": "captures/rev1-lx-findglocal.txt",
+    "line_text": "R. Rodrigues Faria, 103, Lisbon",
+    "quote": "R. Rodrigues Faria, 103",
+    "source_locator": "line 14"
+   },
+   "attempts": [
+    {
+     "chosen": "LX Factory, 103, Rua Rodrigues Faria, Alcântara, Lisbon, 1300-501",
+     "outcome": "exact_venue",
+     "query": "LX Factory, Rua Rodrigues de Faria 103, 1300-501 Lisboa, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=LX%20Factory%2C%20Rua%20Rodrigues%20de%20Faria%20103%2C%201300-501%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": [
+      "LX Factory, 103, Rua Rodrigues Faria, Alcântara, Lisbon, 1300-501",
+      "Beers LxFactory, 103, Rua Rodrigues Faria, Alcântara, Lisbon, 1300-501",
+      "Rua Rodrigues de Faria, Alcântara, Lisbon, 1300-501",
+      "LX Hostel, 103, Rua Rodrigues Faria, Alcântara, Lisbon, 1300-501",
+      "MEZ CAIS LX, Rua Rodrigues de Faria, Alcântara, Lisbon, 1300-501"
+     ]
+    },
+    {
+     "chosen": "Ler Devagar, 103, Rua Rodrigues Faria, Alcântara, Lisbon, 1300-501",
+     "outcome": "building",
+     "query": "Rua Rodrigues de Faria 103, 1300-501 Lisboa, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=Rua%20Rodrigues%20de%20Faria%20103%2C%201300-501%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": [
+      "Ler Devagar, 103, Rua Rodrigues Faria, Alcântara, Lisbon, 1300-501",
+      "Ler Devagar, 103, Rua Rodrigues Faria, Alcântara, Lisbon, 1300-501"
+     ]
+    }
+   ],
+   "checked_on": "2026-11-26",
+   "chosen_query": "LX Factory, Rua Rodrigues de Faria 103, 1300-501 Lisboa, Portugal",
+   "latitude": 38.7026001,
+   "longitude": -9.1786619,
+   "match": "building",
+   "match_evidence": "Photon returns the named LX Factory POI at 103 Rua Rodrigues de Faria; the operator page is an obfuscated anti-bot shell, so only the complex building is proved, not an entrance.",
+   "osm": "W/221960606",
+   "osm_value": "retail",
+   "precision_note": "downgraded from exact_venue to building because the address source is a directory listing",
+   "record_ids": [
+    "lisbon-997699f24b97"
+   ],
+   "returned_place": "LX Factory, 103, Rua Rodrigues Faria, Alcântara, Lisbon, 1300-501",
+   "type": "locality",
+   "venue_name": "LX Factory"
+  },
+  {
+   "address": "Praça das Indústrias 1, 1300-307 Lisboa",
+   "address_claim_source": {
+    "capture": "captures/rev1-ccl-localizacao.txt",
+    "line_text": "MoradaPraça das Industrias, 1",
+    "quote": "Praça das Industrias, 1",
+    "source_locator": "line 22"
+   },
+   "attempts": [
+    {
+     "chosen": "Lisbon Congress Centre, 1, Praça das Indústrias, Alcântara, Lisbon, 1300-037",
+     "outcome": "exact_venue",
+     "query": "Centro de Congressos de Lisboa, Praça das Indústrias 1, 1300-307 Lisboa, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=Centro%20de%20Congressos%20de%20Lisboa%2C%20Pra%C3%A7a%20das%20Ind%C3%BAstrias%201%2C%201300-307%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": [
+      "Lisbon Congress Centre, 1, Praça das Indústrias, Alcântara, Lisbon, 1300-037"
+     ]
+    },
+    {
+     "chosen": "Lisbon Congress Centre, 1, Praça das Indústrias, Alcântara, Lisbon, 1300-037",
+     "outcome": "exact_venue",
+     "query": "Praça das Indústrias 1, 1300-307 Lisboa, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=Pra%C3%A7a%20das%20Ind%C3%BAstrias%201%2C%201300-307%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": [
+      "Lisbon Congress Centre, 1, Praça das Indústrias, Alcântara, Lisbon, 1300-037",
+      "Praça das Indústrias, Alcântara, Lisbon, 1300-037",
+      "Associação Industrial Portuguesa, Praça das Indústrias, Alcântara, Lisbon, 1300-037",
+      "Praça das Indústrias, Alcântara, Lisbon, 1349-028"
+     ]
+    }
+   ],
+   "checked_on": "2026-11-26",
+   "chosen_query": "Centro de Congressos de Lisboa, Praça das Indústrias 1, 1300-307 Lisboa, Portugal",
+   "latitude": 38.6989388,
+   "longitude": -9.1842504,
+   "match": "exact_venue",
+   "osm": "R/17352961",
+   "osm_value": "conference_centre",
+   "record_ids": [
+    "lisbon-b2d67c3ce7bd"
+   ],
+   "returned_place": "Lisbon Congress Centre, 1, Praça das Indústrias, Alcântara, Lisbon, 1300-037",
+   "type": "house",
+   "venue_name": "Lisbon Congress Centre"
+  },
+  {
+   "address": "Rua Nova do Carvalho 24, 1200-292 Lisboa",
+   "address_claim_source": {
+    "capture": "captures/rev1-musicbox-timeout.txt",
+    "line_text": "Poucas salas do Cais do Sodré (para não dizer nenhuma) tiveram uma programação tão consistente, mesmo durante a semana, como esta. Mais do que um sítio da moda, o Musicbox era um porto seguro para os discípulos do clubbing. Pelo meio, havia concertos de artistas emergentes – portugueses e estrangeiros –, num cartaz mensal que facilitava a vida a muito bom noctívago. Em 2025, após quase duas década",
+    "quote": "Rua Nova do Carvalho, 24",
+    "source_locator": "line 26"
+   },
+   "attempts": [
+    {
+     "chosen": "Loucura, 24, Rua Nova do Carvalho, Misericórdia, Lisbon, 1249-002",
+     "outcome": "building",
+     "query": "Musicbox Lisboa, Rua Nova do Carvalho 24, 1200-292 Lisboa, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=Musicbox%20Lisboa%2C%20Rua%20Nova%20do%20Carvalho%2024%2C%201200-292%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": [
+      "Loucura, 24, Rua Nova do Carvalho, Misericórdia, Lisbon, 1249-002",
+      "Cantinho do Prazer, Rua Nova do Carvalho, Misericórdia, Lisbon, 1200-292",
+      "Bar do Cais, Rua Nova do Carvalho, Misericórdia, Lisbon, 1200-292",
+      "Espumantaria do Cais, 39, Rua Nova do Carvalho, Misericórdia, Lisbon, 1200-291"
+     ]
+    },
+    {
+     "chosen": "Rua Nova do Carvalho, Misericórdia, Lisbon, 1200-372",
+     "outcome": "street",
+     "query": "Rua Nova do Carvalho 24, 1200-292 Lisboa, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=Rua%20Nova%20do%20Carvalho%2024%2C%201200-292%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": [
+      "Rua Nova do Carvalho, Misericórdia, Lisbon, 1200-372",
+      "Rua Nova do Carvalho, Misericórdia, Lisbon, 1200-017",
+      "Rua Nova do Carvalho, Misericórdia, Lisbon, 1200-372",
+      "Cantinho do Prazer, Rua Nova do Carvalho, Misericórdia, Lisbon, 1200-292",
+      "Bar do Cais, Rua Nova do Carvalho, Misericórdia, Lisbon, 1200-292"
+     ]
+    }
+   ],
+   "checked_on": "2026-11-26",
+   "chosen_query": "Musicbox Lisboa, Rua Nova do Carvalho 24, 1200-292 Lisboa, Portugal",
+   "latitude": 38.7071669,
+   "longitude": -9.1434342,
+   "match": "building",
+   "osm": "N/2607963678",
+   "osm_value": "nightclub",
+   "record_ids": [
+    "lisbon-b7d2f9eea16f"
+   ],
+   "returned_place": "Loucura, 24, Rua Nova do Carvalho, Misericórdia, Lisbon, 1249-002",
+   "type": "house",
+   "venue_name": "Musicbox Lisboa"
+  },
+  {
+   "address": "Rua das Portas de Santo Antão 96, 1150-269 Lisboa",
+   "address_claim_source": {
+    "capture": "captures/rev1-coliseu-contactos.txt",
+    "line_text": "Rua das Portas de Santo Antão 961150-269 Lisboa",
+    "quote": "Rua das Portas de Santo Antão 96",
+    "source_locator": "line 49"
+   },
+   "attempts": [
+    {
+     "chosen": "Coliseu dos Recreios, Rua das Portas de Santo Antão, Santa Maria Maior, Lisbon, 1150-268",
+     "outcome": "exact_venue",
+     "query": "Coliseu dos Recreios, Rua das Portas de Santo Antão 96, 1150-269 Lisboa, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=Coliseu%20dos%20Recreios%2C%20Rua%20das%20Portas%20de%20Santo%20Ant%C3%A3o%2096%2C%201150-269%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": [
+      "Coliseu dos Recreios, Rua das Portas de Santo Antão, Santa Maria Maior, Lisbon, 1150-268"
+     ]
+    },
+    {
+     "chosen": "Lisbon Geographical Society Museum, 100, Rua das Portas de Santo Antão, Santa Maria Maior, Lisbon, 1150-269",
+     "outcome": "street",
+     "query": "Rua das Portas de Santo Antão 96, 1150-269 Lisboa, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=Rua%20das%20Portas%20de%20Santo%20Ant%C3%A3o%2096%2C%201150-269%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": [
+      "Lisbon Geographical Society Museum, 100, Rua das Portas de Santo Antão, Santa Maria Maior, Lisbon, 1150-269",
+      "Rua das Portas de Santo Antão, Santa Maria Maior, Lisbon, 1150-268",
+      "Rua das Portas de Santo Antão, Arroios, Lisbon, 1150-267",
+      "Lisbon Wine Hotel, 88, Rua das Portas de Santo Antão, Santa Maria Maior, Lisbon, 1150-268",
+      "Ateneu Comercial de Lisboa, 108, Rua das Portas de Santo Antão, Santa Maria Maior, Lisbon, 1150-268"
+     ]
+    }
+   ],
+   "checked_on": "2026-11-26",
+   "chosen_query": "Coliseu dos Recreios, Rua das Portas de Santo Antão 96, 1150-269 Lisboa, Portugal",
+   "latitude": 38.7166454,
+   "longitude": -9.1403489,
+   "match": "exact_venue",
+   "osm": "W/96390844",
+   "osm_value": "theatre",
+   "record_ids": [
+    "lisbon-cbf0e53e0636"
+   ],
+   "returned_place": "Coliseu dos Recreios, Rua das Portas de Santo Antão, Santa Maria Maior, Lisbon, 1150-268",
+   "type": "house",
+   "venue_name": "Coliseu dos Recreios"
+  },
+  {
+   "address": "Avenida Brasília, Doca de Alcântara (Norte), 1350-352 Lisboa",
+   "address_claim_source": {
+    "capture": "captures/rev1-museudooriente-home.txt",
+    "line_text": "Avenida Brasília, Doca de Alcântara (Norte) | 1350-352 Lisboa |",
+    "quote": "Avenida Brasília, Doca de Alcântara (Norte) | 1350-352 Lisboa",
+    "source_locator": "line 266"
+   },
+   "attempts": [
+    {
+     "chosen": "Museu do Oriente, Avenida de Brasília, Prazeres, Lisbon, 1350-155",
+     "outcome": "exact_venue",
+     "query": "Museu do Oriente, Doca de Alcântara, Lisboa, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=Museu%20do%20Oriente%2C%20Doca%20de%20Alc%C3%A2ntara%2C%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": [
+      "Museu do Oriente, Avenida de Brasília, Prazeres, Lisbon, 1350-155",
+      "Scientific and Cultural Macao Museum, 30, Rua da Junqueira, Alcântara, Lisbon, 1300-343",
+      "Alcântara Dock, Rua da Cintura do Porto de Lisboa, Prazeres, Lisbon, 1399-049",
+      "Doca de Alcântara, Prazeres, Lisbon, 1399-049",
+      "Doca de Alcântara, Prazeres, Lisbon, 1300-353"
+     ]
+    },
+    {
+     "chosen": "Museu do Oriente, Avenida de Brasília, Prazeres, Lisbon, 1350-155",
+     "outcome": "exact_venue",
+     "query": "Museu do Oriente, Avenida Brasília, 1350-352 Lisboa, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=Museu%20do%20Oriente%2C%20Avenida%20Bras%C3%ADlia%2C%201350-352%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": [
+      "Museu do Oriente, Avenida de Brasília, Prazeres, Lisbon, 1350-155"
+     ]
+    },
+    {
+     "chosen": "Santo Amaro Dock, Avenida de Brasília, Alcântara, Lisbon, 1349-028",
+     "outcome": "street",
+     "query": "Avenida Brasília, Doca de Alcântara, 1350-352 Lisboa, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=Avenida%20Bras%C3%ADlia%2C%20Doca%20de%20Alc%C3%A2ntara%2C%201350-352%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": [
+      "Doca de Santo, Armazém CP, Alcântara, Lisbon, 1350-353",
+      "Capricciosa, Armazém 8, Alcântara, Lisbon, 1350-353",
+      "Santo Amaro Dock, Avenida de Brasília, Alcântara, Lisbon, 1349-028",
+      "Avenida de Brasília, Prazeres, Lisbon, 1350-352",
+      "Restaurante Doca 6, Avenida de Brasília, Alcântara, Lisbon, 1349-028"
+     ]
+    }
+   ],
+   "checked_on": "2026-11-26",
+   "chosen_query": "Museu do Oriente, Doca de Alcântara, Lisboa, Portugal",
+   "latitude": 38.702901,
+   "longitude": -9.1705708,
+   "match": "exact_venue",
+   "osm": "W/98709799",
+   "osm_value": "museum",
+   "record_ids": [
+    "lisbon-e3d38054c92e"
+   ],
+   "returned_place": "Museu do Oriente, Avenida de Brasília, Prazeres, Lisbon, 1350-155",
+   "type": "house",
+   "venue_name": "Museu do Oriente"
+  },
+  {
+   "address": "Rua António Maria Cardoso 38, 1200-027 Lisboa",
+   "address_claim_source": {
+    "capture": "captures/rev1-saoluiz-contactos.txt",
+    "line_text": "Rua António Maria Cardoso, 38",
+    "quote": "Rua António Maria Cardoso, 38",
+    "source_locator": "line 24"
+   },
+   "attempts": [
+    {
+     "outcome": "no_result",
+     "query": "Teatro São Luiz, Rua António Maria Cardoso 38, 1200-027 Lisboa, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=Teatro%20S%C3%A3o%20Luiz%2C%20Rua%20Ant%C3%B3nio%20Maria%20Cardoso%2038%2C%201200-027%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": []
+    },
+    {
+     "chosen": "Rua António Maria Cardoso, Misericórdia, Lisbon, 1200-310",
+     "outcome": "street",
+     "query": "Rua António Maria Cardoso 38, 1200-027 Lisboa, Portugal",
+     "request_url": "https://photon.komoot.io/api/?q=Rua%20Ant%C3%B3nio%20Maria%20Cardoso%2038%2C%201200-027%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+     "returned": [
+      "Rua António Maria Cardoso, Misericórdia, Lisbon, 1200-310"
+     ]
+    }
+   ],
+   "checked_on": "2026-11-26",
+   "chosen_query": "Rua António Maria Cardoso 38, 1200-027 Lisboa, Portugal",
+   "latitude": 38.710466,
+   "longitude": -9.1423669,
+   "match": "street",
+   "osm": "W/460577806",
+   "osm_value": "tertiary",
+   "record_ids": [
+    "lisbon-ecc15c974d4c"
+   ],
+   "returned_place": "Rua António Maria Cardoso, Misericórdia, Lisbon, 1200-310",
+   "type": "street",
+   "venue_name": "São Luiz Teatro Municipal"
+  },
+  {
+   "address": "Cais do Gás, R. da Cintura do Porto de Lisboa, 1200-109 Lisboa",
+   "address_claim_source": {
+    "capture": "captures/rev1-titanic-dice.html",
+    "quote": "Cais do Gás, R. da Cintura do Porto de Lisboa, 1200-109 Lisboa",
+    "source_locator": "JSON-LD Place.address / dd[data-test-id=address]"
+   },
+   "checked_on": "2026-11-26",
+   "corroborating_features": [
+    "Cais do Gás, Misericórdia, Lisbon, 1249-249",
+    "Cais do Gás, Misericórdia, Lisbon, 1249-249",
+    "Cais do Gás, Misericórdia, Lisbon, 1200-149"
+   ],
+   "corroborating_query": "https://photon.komoot.io/api/?q=Cais%20do%20G%C3%A1s%2C%20Lisboa%2C%20Portugal&limit=5&lang=en&lat=38.72&lon=-9.14",
+   "latitude": 38.70538,
+   "longitude": -9.1471,
+   "match": "exact_venue",
+   "match_evidence": "The venue page publishes a schema.org Place with address and geo 38.70538,-9.1471; older listings print Cais da Ribeira Nova, Armazém B in the same Cais do Sodré riverside complex.",
+   "provider": "DICE venue page structured data (schema.org Place)",
+   "record_ids": [
+    "lisbon-91f6b37de74c"
+   ],
+   "returned_place": "Titanic Sur Mer, Cais do Gás, R. da Cintura do Porto de Lisboa, 1200-109 Lisboa",
+   "venue_name": "Titanic Sur Mer"
+  }
+ ],
+ "provider": "Photon (OpenStreetMap data, komoot)"
+}
