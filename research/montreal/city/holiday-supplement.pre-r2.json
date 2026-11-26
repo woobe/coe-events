@@ -1,0 +1,216 @@
+{
+  "base_registry": {
+    "has_ca_qc": false,
+    "note": "The pinned base registry has no CA-QC, Montreal or Quebec school-board rows. This supplement adds the Montreal scopes without altering the shared registry (plan section 3).",
+    "path": "/home/joe/repo_dev/hermes-skills/plan-event/references/school_holidays.json",
+    "sha256": "b823b0e20ea437adc260c905ec6f0ab82da20a95b3f22bd0ccb007011d175840"
+  },
+  "city_slug": "montreal-qc-ca",
+  "coverage": [
+    {
+      "accessed_on": "2026-11-24",
+      "end_date": "2027-12-31",
+      "evidence": {
+        "observed_facts": "No Centre de services scolaire de Montréal 2026-27 or 2027-28 calendar was read in this run. This row marks the whole 2027 projection year unverified; it is not an attestation of coverage, and no break, closure, summer bound or late-year break is claimed."
+      },
+      "jurisdiction_id": "CA-QC:cssdm",
+      "kind": "school_holiday_coverage",
+      "needs_human_verify": true,
+      "source_edition": "2026-27 and 2027-28 (not read)",
+      "source_locator": "Projection year 2027; no edition read",
+      "source_title": "CSSDM — official calendars",
+      "source_url": "https://www.cssdm.gouv.qc.ca/",
+      "start_date": "2027-01-01",
+      "verification_questions": [
+        "Read the official 2026-27 and 2027-28 CSSDM calendars, then replace this unverified row with attested spans and the exact unknown complement."
+      ],
+      "verified": false
+    },
+    {
+      "accessed_on": "2026-11-24",
+      "end_date": "2027-12-31",
+      "evidence": {
+        "observed_facts": "No Centre de services scolaire Marguerite-Bourgeoys 2026-27 or 2027-28 calendar was read in this run. This row marks the whole 2027 projection year unverified; it is not an attestation of coverage, and no break, closure, summer bound or late-year break is claimed."
+      },
+      "jurisdiction_id": "CA-QC:cssmb",
+      "kind": "school_holiday_coverage",
+      "needs_human_verify": true,
+      "source_edition": "2026-27 and 2027-28 (not read)",
+      "source_locator": "Projection year 2027; no edition read",
+      "source_title": "CSS Marguerite-Bourgeoys — official calendars",
+      "source_url": "https://www.cssmb.gouv.qc.ca/",
+      "start_date": "2027-01-01",
+      "verification_questions": [
+        "Read the official 2026-27 and 2027-28 CSS Marguerite-Bourgeoys calendars, then replace this unverified row with attested spans and the exact unknown complement."
+      ],
+      "verified": false
+    },
+    {
+      "accessed_on": "2026-11-24",
+      "end_date": "2027-12-31",
+      "evidence": {
+        "observed_facts": "No Centre de services scolaire de la Pointe-de-l'Île 2026-27 or 2027-28 calendar was read in this run. This row marks the whole 2027 projection year unverified; it is not an attestation of coverage, and no break, closure, summer bound or late-year break is claimed."
+      },
+      "jurisdiction_id": "CA-QC:csspi",
+      "kind": "school_holiday_coverage",
+      "needs_human_verify": true,
+      "source_edition": "2026-27 and 2027-28 (not read)",
+      "source_locator": "Projection year 2027; no edition read",
+      "source_title": "CSS de la Pointe-de-l'Île — official calendars",
+      "source_url": "https://www.csspi.gouv.qc.ca/",
+      "start_date": "2027-01-01",
+      "verification_questions": [
+        "Read the official 2026-27 and 2027-28 CSS de la Pointe-de-l'Île calendars, then replace this unverified row with attested spans and the exact unknown complement."
+      ],
+      "verified": false
+    },
+    {
+      "accessed_on": "2026-11-24",
+      "end_date": "2027-12-31",
+      "evidence": {
+        "observed_facts": "No English Montreal School Board 2026-27 or 2027-28 calendar was read in this run. This row marks the whole 2027 projection year unverified; it is not an attestation of coverage, and no break, closure, summer bound or late-year break is claimed."
+      },
+      "jurisdiction_id": "CA-QC:emsb",
+      "kind": "school_holiday_coverage",
+      "needs_human_verify": true,
+      "source_edition": "2026-27 and 2027-28 (not read)",
+      "source_locator": "Projection year 2027; no edition read",
+      "source_title": "EMSB — official calendars",
+      "source_url": "https://www.emsb.qc.ca/",
+      "start_date": "2027-01-01",
+      "verification_questions": [
+        "Read the official 2026-27 and 2027-28 EMSB calendars, then replace this unverified row with attested spans and the exact unknown complement."
+      ],
+      "verified": false
+    },
+    {
+      "accessed_on": "2026-11-24",
+      "end_date": "2027-12-31",
+      "evidence": {
+        "observed_facts": "No Lester B. Pearson School Board 2026-27 or 2027-28 calendar was read in this run. This row marks the whole 2027 projection year unverified; it is not an attestation of coverage, and no break, closure, summer bound or late-year break is claimed."
+      },
+      "jurisdiction_id": "CA-QC:lbpsb",
+      "kind": "school_holiday_coverage",
+      "needs_human_verify": true,
+      "source_edition": "2026-27 and 2027-28 (not read)",
+      "source_locator": "Projection year 2027; no edition read",
+      "source_title": "Lester B. Pearson SB — official calendars",
+      "source_url": "https://www.lbpsb.qc.ca/",
+      "start_date": "2027-01-01",
+      "verification_questions": [
+        "Read the official 2026-27 and 2027-28 Lester B. Pearson SB calendars, then replace this unverified row with attested spans and the exact unknown complement."
+      ],
+      "verified": false
+    }
+  ],
+  "coverage_rows": 5,
+  "generated_on": "2026-11-24",
+  "holiday_rows": 0,
+  "jurisdiction_ids": [
+    "CA-QC",
+    "CA-QC:cssdm",
+    "CA-QC:cssmb",
+    "CA-QC:csspi",
+    "CA-QC:emsb",
+    "CA-QC:lbpsb"
+  ],
+  "jurisdictions": [
+    {
+      "attested": [],
+      "authority": "CNESST — jours fériés au Québec",
+      "checked_on": "2026-11-24",
+      "jurisdiction_id": "CA-QC",
+      "layer": "public",
+      "needs_human_verify": true,
+      "source_url": "https://www.cnesst.gouv.qc.ca/fr/conditions-travail/jours-feries",
+      "unknown": [
+        {
+          "end": "2027-12-31",
+          "reason": "The authority page could not be read by a scripted request on 2026-11-24 (empty body); the eight 2027 dates in the store are rule-derived and flagged needs_human_verify.",
+          "start": "2027-01-01"
+        }
+      ]
+    },
+    {
+      "attested": [],
+      "authority": "Centre de services scolaire de Montréal (CSSDM)",
+      "checked_on": "2026-11-24",
+      "jurisdiction_id": "CA-QC:cssdm",
+      "layer": "school",
+      "needs_human_verify": true,
+      "source_url": "https://www.cssdm.gouv.qc.ca/",
+      "unknown": [
+        {
+          "end": "2027-12-31",
+          "reason": "No 2026-27 or 2027-28 calendar was read in this run.",
+          "start": "2027-01-01"
+        }
+      ]
+    },
+    {
+      "attested": [],
+      "authority": "Centre de services scolaire Marguerite-Bourgeoys",
+      "checked_on": "2026-11-24",
+      "jurisdiction_id": "CA-QC:cssmb",
+      "layer": "school",
+      "needs_human_verify": true,
+      "source_url": "https://www.cssmb.gouv.qc.ca/",
+      "unknown": [
+        {
+          "end": "2027-12-31",
+          "reason": "No 2026-27 or 2027-28 calendar was read in this run.",
+          "start": "2027-01-01"
+        }
+      ]
+    },
+    {
+      "attested": [],
+      "authority": "Centre de services scolaire de la Pointe-de-l'Île",
+      "checked_on": "2026-11-24",
+      "jurisdiction_id": "CA-QC:csspi",
+      "layer": "school",
+      "needs_human_verify": true,
+      "source_url": "https://www.csspi.gouv.qc.ca/",
+      "unknown": [
+        {
+          "end": "2027-12-31",
+          "reason": "No 2026-27 or 2027-28 calendar was read in this run.",
+          "start": "2027-01-01"
+        }
+      ]
+    },
+    {
+      "attested": [],
+      "authority": "English Montreal School Board",
+      "checked_on": "2026-11-24",
+      "jurisdiction_id": "CA-QC:emsb",
+      "layer": "school",
+      "needs_human_verify": true,
+      "source_url": "https://www.emsb.qc.ca/",
+      "unknown": [
+        {
+          "end": "2027-12-31",
+          "reason": "No 2026-27 or 2027-28 calendar was read in this run.",
+          "start": "2027-01-01"
+        }
+      ]
+    },
+    {
+      "attested": [],
+      "authority": "Lester B. Pearson School Board",
+      "checked_on": "2026-11-24",
+      "jurisdiction_id": "CA-QC:lbpsb",
+      "layer": "school",
+      "needs_human_verify": true,
+      "source_url": "https://www.lbpsb.qc.ca/",
+      "unknown": [
+        {
+          "end": "2027-12-31",
+          "reason": "No 2026-27 or 2027-28 calendar was read in this run.",
+          "start": "2027-01-01"
+        }
+      ]
+    }
+  ],
+  "schema_version": "city-holiday-supplement/1"
+}

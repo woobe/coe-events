@@ -1,0 +1,1867 @@
+{
+ "schema_version": "city-loss-report/1",
+ "run_id": "run-20261126-mtl-r2",
+ "city_slug": "montreal-qc-ca",
+ "checked_on": "2026-11-26",
+ "pre_store": "research/montreal/city/city.pre-r2.json",
+ "post_store": "research/montreal/city/city.json",
+ "venue_field_changes": [
+  {
+   "field": "coordinates",
+   "pre": {
+    "checked_on": "2026-11-24",
+    "derived": true,
+    "derived_from": "address",
+    "latitude": 45.538564,
+    "longitude": -73.658317,
+    "match": "house_number",
+    "precision": "rooftop/interpolated house number match, not a surveyed entrance",
+    "provider": "OpenStreetMap Nominatim",
+    "query": "9475 Rue Meilleur",
+    "returned_house_number": "9475"
+   },
+   "post": {
+    "latitude": 45.5385393,
+    "longitude": -73.6581298,
+    "map_target": "9475, Rue Meilleur, Ahuntsic, Ahuntsic-Cartierville, Montréal, Agglomération de Montréal, Montréal (région administrative), Québec, H2N 2C5",
+    "precision": "building"
+   },
+   "venue_id": "mtl-1125d1fcdf46"
+  },
+  {
+   "field": "about",
+   "pre": "A 200-standing hall in COLLECTIF MTL with theatre seating for 150 and a fitted prep kitchen. Published Saturday hours run 08:00–22:00 with external catering allowed.",
+   "post": "A 200-standing hall in COLLECTIF MTL with theatre seating for 150 and a fitted prep kitchen. The operator publishes only an appointment window, not a hire interval, and external catering is allowed.",
+   "venue_id": "mtl-13ee7228e4b2"
+  },
+  {
+   "field": "access_window",
+   "pre": "Saturday 08:00-22:00",
+   "post": null,
+   "venue_id": "mtl-13ee7228e4b2"
+  },
+  {
+   "field": "address",
+   "pre": "397A Rue Sainte-Catherine Ouest, Montréal, QC H3B 1A4",
+   "post": "397A Rue Sainte-Catherine O, Suite 202, Montréal, QC H3A 2G3",
+   "venue_id": "mtl-13ee7228e4b2"
+  },
+  {
+   "field": "booking_hour_cap",
+   "pre": 14,
+   "post": null,
+   "venue_id": "mtl-13ee7228e4b2"
+  },
+  {
+   "field": "closing_time",
+   "pre": "22:00",
+   "post": null,
+   "venue_id": "mtl-13ee7228e4b2"
+  },
+  {
+   "field": "coordinates",
+   "pre": {
+    "checked_on": "2026-11-24",
+    "derived": true,
+    "derived_from": "address",
+    "latitude": 45.505848,
+    "longitude": -73.567338,
+    "match": "base_house_number",
+    "precision": "rooftop/interpolated house number match, not a surveyed entrance",
+    "provider": "OpenStreetMap Nominatim",
+    "query": "397 Rue Sainte-Catherine Ouest",
+    "returned_house_number": ""
+   },
+   "post": {
+    "latitude": 45.5045675,
+    "longitude": -73.5684628,
+    "map_target": "397A Rue Sainte-Catherine Ouest, Montréal, QC H3A 2G3",
+    "precision": "street"
+   },
+   "venue_id": "mtl-13ee7228e4b2"
+  },
+  {
+   "field": "event_window_status",
+   "pre": "allows_to_6",
+   "post": "unknown",
+   "venue_id": "mtl-13ee7228e4b2"
+  },
+  {
+   "field": "programme_windows",
+   "pre": {
+    "12": {
+     "basis": "clock_hours",
+     "state": "yes"
+    },
+    "8": {
+     "basis": "clock_hours",
+     "state": "yes"
+    }
+   },
+   "post": {
+    "12": {
+     "basis": "The operator's own room page publishes only 'By appointment from 10 a.m. to 5 p.m. weekdays; By appointment weekends', an appointment block with no hire interval; the Tagvenue 08:00-22:00 openingHoursSpecification is a marketplace opening-hours widget (refused, rule 3).",
+     "state": "unknown"
+    },
+    "8": {
+     "basis": "The operator's own room page publishes only 'By appointment from 10 a.m. to 5 p.m. weekdays; By appointment weekends', an appointment block with no hire interval; the Tagvenue 08:00-22:00 openingHoursSpecification is a marketplace opening-hours widget (refused, rule 3).",
+     "state": "unknown"
+    }
+   },
+   "venue_id": "mtl-13ee7228e4b2"
+  },
+  {
+   "field": "catering",
+   "pre": "in_house_only",
+   "post": "unknown",
+   "venue_id": "mtl-184b7a111981"
+  },
+  {
+   "field": "coordinates",
+   "pre": {
+    "checked_on": "2026-11-24",
+    "derived": true,
+    "derived_from": "address",
+    "latitude": 45.504911,
+    "longitude": -73.560162,
+    "match": "house_number",
+    "precision": "rooftop/interpolated house number match, not a surveyed entrance",
+    "provider": "OpenStreetMap Nominatim",
+    "query": "275 Rue Saint-Antoine Ouest",
+    "returned_house_number": "275"
+   },
+   "post": {
+    "latitude": 45.5049106,
+    "longitude": -73.5601621,
+    "map_target": "275, Rue Saint-Antoine Ouest, H2Y, Ville-Marie, Montréal, Agglomération de Montréal, Montréal (région administrative), Québec, H2Y 2X6",
+    "precision": "building"
+   },
+   "venue_id": "mtl-184b7a111981"
+  },
+  {
+   "field": "coordinates",
+   "pre": {
+    "latitude": null,
+    "longitude": null
+   },
+   "post": {
+    "latitude": 45.5156845,
+    "longitude": -73.5591132,
+    "map_target": "Hyatt Place Montreal Downtown — Hyatt Place Montréal – Downtown, 1415, Rue Saint-Hubert, TOD quartier Berri UQAM, Ville-Marie, Montréal, Agglomération de Montréal, Montréal (région administrative), Québec, H2L 3Y9",
+    "precision": "exact_venue"
+   },
+   "venue_id": "mtl-1c9b9b2b165a"
+  },
+  {
+   "field": "coordinates",
+   "pre": {
+    "checked_on": "2026-11-24",
+    "derived": true,
+    "derived_from": "address",
+    "latitude": 45.502262,
+    "longitude": -73.559095,
+    "match": "house_number",
+    "precision": "rooftop/interpolated house number match, not a surveyed entrance",
+    "provider": "OpenStreetMap Nominatim",
+    "query": "360 Rue Saint-Jacques",
+    "returned_house_number": "360"
+   },
+   "post": {
+    "latitude": 45.5022617,
+    "longitude": -73.5590947,
+    "map_target": "Crew Collective & Café — Crew Collective & Café, 360, Rue Saint-Jacques, H2Y, Ville-Marie, Montréal, Agglomération de Montréal, Montréal (région administrative), Québec, H2Y 2N1",
+    "precision": "exact_venue"
+   },
+   "venue_id": "mtl-1e4360518a06"
+  },
+  {
+   "field": "address",
+   "pre": "9850 Tolhurst, Montréal, QC",
+   "post": "9850 Rue Tolhurst, Montréal, QC H3L 2Z8",
+   "venue_id": "mtl-2729e116a7ed"
+  },
+  {
+   "field": "coordinates",
+   "pre": {
+    "checked_on": "2026-11-24",
+    "derived": true,
+    "derived_from": "address",
+    "latitude": 45.542446,
+    "longitude": -73.662333,
+    "match": "house_number",
+    "precision": "rooftop/interpolated house number match, not a surveyed entrance",
+    "provider": "OpenStreetMap Nominatim",
+    "query": "9850 Rue Tolhurst",
+    "returned_house_number": "9850"
+   },
+   "post": {
+    "latitude": 45.5424464,
+    "longitude": -73.6623332,
+    "map_target": "9850, Rue Tolhurst, Ahuntsic, Ahuntsic-Cartierville, Montréal, Agglomération de Montréal, Montréal (région administrative), Québec, H3L 2V7",
+    "precision": "building"
+   },
+   "venue_id": "mtl-2729e116a7ed"
+  },
+  {
+   "field": "access_window",
+   "pre": null,
+   "post": "09:00-17:00",
+   "venue_id": "mtl-281cff0a7a6d"
+  },
+  {
+   "field": "booking_hour_cap",
+   "pre": null,
+   "post": 8,
+   "venue_id": "mtl-281cff0a7a6d"
+  },
+  {
+   "field": "closing_time",
+   "pre": null,
+   "post": "17:00",
+   "venue_id": "mtl-281cff0a7a6d"
+  },
+  {
+   "field": "coordinates",
+   "pre": {
+    "checked_on": "2026-11-24",
+    "derived": true,
+    "derived_from": "address",
+    "latitude": 45.500892,
+    "longitude": -73.556767,
+    "match": "house_number",
+    "precision": "rooftop/interpolated house number match, not a surveyed entrance",
+    "provider": "OpenStreetMap Nominatim",
+    "query": "377 Rue Saint-Paul Ouest",
+    "returned_house_number": "377"
+   },
+   "post": {
+    "latitude": 45.5008921,
+    "longitude": -73.5567667,
+    "map_target": "377, Rue Saint-Paul Ouest, H2Y, Ville-Marie, Montréal, Agglomération de Montréal, Montréal (région administrative), Québec, H2Y 2E8",
+    "precision": "building"
+   },
+   "venue_id": "mtl-281cff0a7a6d"
+  },
+  {
+   "field": "event_window_status",
+   "pre": "unknown",
+   "post": "no",
+   "venue_id": "mtl-281cff0a7a6d"
+  },
+  {
+   "field": "programme_windows",
+   "pre": {
+    "12": {
+     "basis": "none",
+     "state": "unknown"
+    },
+    "8": {
+     "basis": "none",
+     "state": "unknown"
+    }
+   },
+   "post": {
+    "12": {
+     "basis": "published_booking_intervals",
+     "state": "no"
+    },
+    "8": {
+     "basis": "published_booking_intervals",
+     "state": "yes"
+    }
+   },
+   "venue_id": "mtl-281cff0a7a6d"
+  },
+  {
+   "field": "access_window",
+   "pre": "Sundays and Mondays daytime; after 17:00 Monday to Sunday",
+   "post": null,
+   "venue_id": "mtl-2fc617abde76"
+  },
+  {
+   "field": "coordinates",
+   "pre": {
+    "checked_on": "2026-11-24",
+    "derived": true,
+    "derived_from": "address",
+    "latitude": 45.475245,
+    "longitude": -73.582026,
+    "match": "house_number",
+    "precision": "rooftop/interpolated house number match, not a surveyed entrance",
+    "provider": "OpenStreetMap Nominatim",
+    "query": "137 Rue Saint-Ferdinand",
+    "returned_house_number": "137"
+   },
+   "post": {
+    "latitude": 45.4752446,
+    "longitude": -73.5820264,
+    "map_target": "137, Rue Saint-Ferdinand, Saint-Henri, Le Sud-Ouest, Montréal, Agglomération de Montréal, Montréal (région administrative), Québec, H4C 2S8",
+    "precision": "building"
+   },
+   "venue_id": "mtl-2fc617abde76"
+  },
+  {
+   "field": "programme_windows",
+   "pre": {
+    "12": {
+     "basis": "day_of_week_shared_terms",
+     "state": "unknown"
+    },
+    "8": {
+     "basis": "day_of_week_shared_terms",
+     "state": "unknown"
+    }
+   },
+   "post": {
+    "12": {
+     "basis": "none",
+     "state": "unknown"
+    },
+    "8": {
+     "basis": "none",
+     "state": "unknown"
+    }
+   },
+   "venue_id": "mtl-2fc617abde76"
+  },
+  {
+   "field": "address",
+   "pre": "9475 Rue Meilleur, Room 605, Montréal, QC",
+   "post": "9475 Rue Meilleur, Room 605, Montréal, QC H2N 2C5",
+   "venue_id": "mtl-32894124b903"
+  },
+  {
+   "field": "coordinates",
+   "pre": {
+    "checked_on": "2026-11-24",
+    "derived": true,
+    "derived_from": "address",
+    "latitude": 45.538564,
+    "longitude": -73.658317,
+    "match": "house_number",
+    "precision": "rooftop/interpolated house number match, not a surveyed entrance",
+    "provider": "OpenStreetMap Nominatim",
+    "query": "9475 Rue Meilleur",
+    "returned_house_number": "9475"
+   },
+   "post": {
+    "latitude": 45.5385393,
+    "longitude": -73.6581298,
+    "map_target": "9475, Rue Meilleur, Ahuntsic, Ahuntsic-Cartierville, Montréal, Agglomération de Montréal, Montréal (région administrative), Québec, H2N 2C5",
+    "precision": "building"
+   },
+   "venue_id": "mtl-32894124b903"
+  },
+  {
+   "field": "coordinates",
+   "pre": {
+    "checked_on": "2026-11-24",
+    "derived": true,
+    "derived_from": "address",
+    "latitude": 45.478982,
+    "longitude": -73.573153,
+    "match": "house_number",
+    "precision": "rooftop/interpolated house number match, not a surveyed entrance",
+    "provider": "OpenStreetMap Nominatim",
+    "query": "2727 Rue Saint-Patrick",
+    "returned_house_number": "2727"
+   },
+   "post": {
+    "latitude": 45.4789823,
+    "longitude": -73.5731531,
+    "map_target": "Walter sur Atwater, 2727, Rue Saint-Patrick, Le Sud-Ouest, Montréal, Agglomération de Montréal, Montréal (région administrative), Québec, H3K 1B8",
+    "precision": "building"
+   },
+   "venue_id": "mtl-3c2599f5b2b4"
+  },
+  {
+   "field": "coordinates",
+   "pre": {
+    "checked_on": "2026-11-24",
+    "derived": true,
+    "derived_from": "address",
+    "latitude": 45.505569,
+    "longitude": -73.567163,
+    "match": "house_number",
+    "precision": "rooftop/interpolated house number match, not a surveyed entrance",
+    "provider": "OpenStreetMap Nominatim",
+    "query": "372 Rue Sainte-Catherine Ouest",
+    "returned_house_number": "372"
+   },
+   "post": {
+    "latitude": 45.5055686,
+    "longitude": -73.567163,
+    "map_target": "Belgo, 372, Rue Sainte-Catherine Ouest, Quartier des Spectacles, Ville-Marie, Montréal, Agglomération de Montréal, Montréal (région administrative), Québec, H3B 1A2",
+    "precision": "building"
+   },
+   "venue_id": "mtl-583f8727f3f3"
+  },
+  {
+   "field": "address",
+   "pre": "4526 Park Ave, Montréal, QC",
+   "post": "4526 Avenue du Parc, Montréal, QC",
+   "venue_id": "mtl-5aff2a80fdee"
+  },
+  {
+   "field": "coordinates",
+   "pre": {
+    "checked_on": "2026-11-24",
+    "derived": true,
+    "derived_from": "address",
+    "latitude": 45.516942,
+    "longitude": -73.590233,
+    "match": "house_number",
+    "precision": "rooftop/interpolated house number match, not a surveyed entrance",
+    "provider": "OpenStreetMap Nominatim",
+    "query": "4526 Avenue du Parc",
+    "returned_house_number": "4526"
+   },
+   "post": {
+    "latitude": 45.516942,
+    "longitude": -73.5902332,
+    "map_target": "4526, Avenue du Parc, Le Plateau-Mont-Royal, Montréal, Agglomération de Montréal, Montréal (région administrative), Québec, H2V 4E4",
+    "precision": "building"
+   },
+   "venue_id": "mtl-5aff2a80fdee"
+  },
+  {
+   "field": "coordinates",
+   "pre": {
+    "checked_on": "2026-11-24",
+    "derived": true,
+    "derived_from": "address",
+    "latitude": 45.520257,
+    "longitude": -73.55452,
+    "match": "base_house_number",
+    "precision": "rooftop/interpolated house number match, not a surveyed entrance",
+    "provider": "OpenStreetMap Nominatim",
+    "query": "9 Rue Sainte-Catherine Est",
+    "returned_house_number": ""
+   },
+   "post": {
+    "latitude": 45.5101045,
+    "longitude": -73.5636063,
+    "map_target": "9 Rue Sainte-Catherine Est, Montréal, Québec, H2X 1K3 (structured street/city/postcode query)",
+    "precision": "street"
+   },
+   "venue_id": "mtl-6f6753b2d241"
+  },
+  {
+   "field": "coordinates",
+   "pre": {
+    "checked_on": "2026-11-24",
+    "derived": true,
+    "derived_from": "address",
+    "latitude": 45.506662,
+    "longitude": -73.566806,
+    "match": "house_number",
+    "precision": "rooftop/interpolated house number match, not a surveyed entrance",
+    "provider": "OpenStreetMap Nominatim",
+    "query": "305 Rue Sainte-Catherine Ouest",
+    "returned_house_number": "305"
+   },
+   "post": {
+    "latitude": 45.5066619,
+    "longitude": -73.5668057,
+    "map_target": "Le Studio TD — Le Studio TD, 305, Rue Sainte-Catherine Ouest, Quartier des Spectacles, Ville-Marie, Montréal, Agglomération de Montréal, Montréal (région administrative), Québec, H2X 2A3",
+    "precision": "exact_venue"
+   },
+   "venue_id": "mtl-8aee03975c77"
+  },
+  {
+   "field": "coordinates",
+   "pre": {
+    "checked_on": "2026-11-24",
+    "derived": true,
+    "derived_from": "address",
+    "latitude": 45.540059,
+    "longitude": -73.572655,
+    "match": "house_number",
+    "precision": "rooftop/interpolated house number match, not a surveyed entrance",
+    "provider": "OpenStreetMap Nominatim",
+    "query": "5000 Rue d'Iberville",
+    "returned_house_number": "5000"
+   },
+   "post": {
+    "latitude": 45.5400589,
+    "longitude": -73.5726553,
+    "map_target": "5000, Rue D'Iberville, Le Plateau-Mont-Royal, Montréal, Agglomération de Montréal, Montréal (région administrative), Québec, H2H 2R9",
+    "precision": "building"
+   },
+   "venue_id": "mtl-8ef00c25a80d"
+  },
+  {
+   "field": "catering",
+   "pre": "in_house_only",
+   "post": "unknown",
+   "venue_id": "mtl-9b1cfe2df6f0"
+  },
+  {
+   "field": "coordinates",
+   "pre": {
+    "checked_on": "2026-11-24",
+    "derived": true,
+    "derived_from": "address",
+    "latitude": 45.505148,
+    "longitude": -73.568368,
+    "match": "house_number",
+    "precision": "rooftop/interpolated house number match, not a surveyed entrance",
+    "provider": "OpenStreetMap Nominatim",
+    "query": "463 Rue Sainte-Catherine Ouest",
+    "returned_house_number": "463"
+   },
+   "post": {
+    "latitude": 45.5051478,
+    "longitude": -73.5683676,
+    "map_target": "Le Balcon — Le Balcon, 463, Rue Sainte-Catherine Ouest, Quartier des Spectacles, Ville-Marie, Montréal, Agglomération de Montréal, Montréal (région administrative), Québec, H3B 1B1",
+    "precision": "exact_venue"
+   },
+   "venue_id": "mtl-9b1cfe2df6f0"
+  },
+  {
+   "field": "address",
+   "pre": "51 Rue Sherbrooke Ouest, Montréal, QC",
+   "post": "51 Rue Sherbrooke Ouest, Montréal, QC H2X 1X2",
+   "venue_id": "mtl-9e195a901d0f"
+  },
+  {
+   "field": "coordinates",
+   "pre": {
+    "latitude": null,
+    "longitude": null
+   },
+   "post": {
+    "latitude": 45.5118974,
+    "longitude": -73.5700817,
+    "map_target": "Notman House — Maison Notman, 51, Rue Sherbrooke Ouest, Le Plateau-Mont-Royal, Montréal, Agglomération de Montréal, Montréal (région administrative), Québec, H2X 1X2",
+    "precision": "exact_venue"
+   },
+   "venue_id": "mtl-9e195a901d0f"
+  },
+  {
+   "field": "address",
+   "pre": "3737 Boul Crémazie E, Suite 200, Montréal, QC",
+   "post": "3737 Boulevard Crémazie Est, Suite 200, Montréal, QC H1Z 2K4",
+   "venue_id": "mtl-9e988109561c"
+  },
+  {
+   "field": "coordinates",
+   "pre": {
+    "checked_on": "2026-11-24",
+    "derived": true,
+    "derived_from": "address",
+    "latitude": 45.567113,
+    "longitude": -73.603361,
+    "match": "house_number",
+    "precision": "rooftop/interpolated house number match, not a surveyed entrance",
+    "provider": "OpenStreetMap Nominatim",
+    "query": "3737 Boulevard Crémazie Est",
+    "returned_house_number": "3737"
+   },
+   "post": {
+    "latitude": 45.5671126,
+    "longitude": -73.6033608,
+    "map_target": "3737, Boulevard Crémazie Est, Saint-Michel, Villeray–Saint-Michel–Parc-Extension, Montréal, Agglomération de Montréal, Montréal (région administrative), Québec, H2A 2K9",
+    "precision": "building"
+   },
+   "venue_id": "mtl-9e988109561c"
+  },
+  {
+   "field": "access_window",
+   "pre": "Monday to Friday 08:30-16:30; Saturday and Sunday closed",
+   "post": null,
+   "venue_id": "mtl-a200486a6df1"
+  },
+  {
+   "field": "closing_time",
+   "pre": "16:30",
+   "post": null,
+   "venue_id": "mtl-a200486a6df1"
+  },
+  {
+   "field": "coordinates",
+   "pre": {
+    "checked_on": "2026-11-24",
+    "derived": true,
+    "derived_from": "address",
+    "latitude": 45.500774,
+    "longitude": -73.561587,
+    "match": "house_number",
+    "precision": "rooftop/interpolated house number match, not a surveyed entrance",
+    "provider": "OpenStreetMap Nominatim",
+    "query": "800 Rue du Square-Victoria",
+    "returned_house_number": "800"
+   },
+   "post": {
+    "latitude": 45.5008547,
+    "longitude": -73.5616257,
+    "map_target": "800, Rue du Square Victoria, Quartier international, Ville-Marie, Montréal, Agglomération de Montréal, Montréal (région administrative), Québec, H4Z 1A1",
+    "precision": "building"
+   },
+   "venue_id": "mtl-a200486a6df1"
+  },
+  {
+   "field": "event_window_status",
+   "pre": "cannot_to_5",
+   "post": "unknown",
+   "venue_id": "mtl-a200486a6df1"
+  },
+  {
+   "field": "programme_windows",
+   "pre": {
+    "12": {
+     "basis": "clock_hours",
+     "state": "no"
+    },
+    "8": {
+     "basis": "clock_hours",
+     "state": "no"
+    }
+   },
+   "post": {
+    "12": {
+     "basis": "none",
+     "state": "unknown"
+    },
+    "8": {
+     "basis": "none",
+     "state": "unknown"
+    }
+   },
+   "venue_id": "mtl-a200486a6df1"
+  },
+  {
+   "field": "access_window",
+   "pre": null,
+   "post": "08:00-17:00",
+   "venue_id": "mtl-a2488d6b9f36"
+  },
+  {
+   "field": "booking_hour_cap",
+   "pre": null,
+   "post": 10,
+   "venue_id": "mtl-a2488d6b9f36"
+  },
+  {
+   "field": "coordinates",
+   "pre": {
+    "checked_on": "2026-11-24",
+    "derived": true,
+    "derived_from": "address",
+    "latitude": 45.489341,
+    "longitude": -73.566246,
+    "match": "house_number",
+    "precision": "rooftop/interpolated house number match, not a surveyed entrance",
+    "provider": "OpenStreetMap Nominatim",
+    "query": "370 Rue Guy",
+    "returned_house_number": "370"
+   },
+   "post": {
+    "latitude": 45.4893407,
+    "longitude": -73.5662464,
+    "map_target": "370, Rue Guy, Le Sud-Ouest, Montréal, Agglomération de Montréal, Montréal (région administrative), Québec, H3J 1R1",
+    "precision": "building"
+   },
+   "venue_id": "mtl-a2488d6b9f36"
+  },
+  {
+   "field": "event_window_status",
+   "pre": "unknown",
+   "post": "yes",
+   "venue_id": "mtl-a2488d6b9f36"
+  },
+  {
+   "field": "programme_windows",
+   "pre": {
+    "12": {
+     "basis": "none",
+     "state": "unknown"
+    },
+    "8": {
+     "basis": "none",
+     "state": "unknown"
+    }
+   },
+   "post": {
+    "12": {
+     "basis": "The page sells day rentals (8am-5pm, nine hours) and evening rentals (5pm-3am, ten hours) as separate blocks; neither is twelve hours and their union is not continuous hire (plan 4.5), so twelve hours is refused.",
+     "state": "no"
+    },
+    "8": {
+     "basis": "'Day Rentals (8am - 5pm)' is a nine-hour operator-published block that covers 09:00-17:00.",
+     "state": "yes"
+    }
+   },
+   "venue_id": "mtl-a2488d6b9f36"
+  },
+  {
+   "field": "about",
+   "pre": "A private meeting room in COLLECTIF MTL with theatre seating for 50 and a kitchenette. Saturday hire runs 08:00–18:00, so a 09:00–21:00 programme does not fit.",
+   "post": "A private meeting room in COLLECTIF MTL with theatre seating for 50 and a kitchenette. The operator publishes only an appointment window, so no hire interval is published.",
+   "venue_id": "mtl-a69fecaefa03"
+  },
+  {
+   "field": "access_window",
+   "pre": "Saturday 08:00-18:00",
+   "post": null,
+   "venue_id": "mtl-a69fecaefa03"
+  },
+  {
+   "field": "address",
+   "pre": "397A Rue Sainte-Catherine Ouest, Montréal, QC H3B 1A4",
+   "post": "397A Rue Sainte-Catherine O, Suite 202, Montréal, QC H3A 2G3",
+   "venue_id": "mtl-a69fecaefa03"
+  },
+  {
+   "field": "booking_hour_cap",
+   "pre": 10,
+   "post": null,
+   "venue_id": "mtl-a69fecaefa03"
+  },
+  {
+   "field": "closing_time",
+   "pre": "18:00",
+   "post": null,
+   "venue_id": "mtl-a69fecaefa03"
+  },
+  {
+   "field": "coordinates",
+   "pre": {
+    "checked_on": "2026-11-24",
+    "derived": true,
+    "derived_from": "address",
+    "latitude": 45.505848,
+    "longitude": -73.567338,
+    "match": "base_house_number",
+    "precision": "rooftop/interpolated house number match, not a surveyed entrance",
+    "provider": "OpenStreetMap Nominatim",
+    "query": "397 Rue Sainte-Catherine Ouest",
+    "returned_house_number": ""
+   },
+   "post": {
+    "latitude": 45.5045675,
+    "longitude": -73.5684628,
+    "map_target": "397A Rue Sainte-Catherine Ouest, Montréal, QC H3A 2G3",
+    "precision": "street"
+   },
+   "venue_id": "mtl-a69fecaefa03"
+  },
+  {
+   "field": "event_window_status",
+   "pre": "allows_to_6",
+   "post": "unknown",
+   "venue_id": "mtl-a69fecaefa03"
+  },
+  {
+   "field": "programme_windows",
+   "pre": {
+    "12": {
+     "basis": "clock_hours",
+     "state": "no"
+    },
+    "8": {
+     "basis": "clock_hours",
+     "state": "yes"
+    }
+   },
+   "post": {
+    "12": {
+     "basis": "The operator's own room page publishes only 'By appointment from 10 a.m. to 5 p.m. weekdays; By appointment weekends', an appointment block with no hire interval; the Tagvenue 08:00-22:00 openingHoursSpecification is a marketplace opening-hours widget (refused, rule 3).",
+     "state": "unknown"
+    },
+    "8": {
+     "basis": "The operator's own room page publishes only 'By appointment from 10 a.m. to 5 p.m. weekdays; By appointment weekends', an appointment block with no hire interval; the Tagvenue 08:00-22:00 openingHoursSpecification is a marketplace opening-hours widget (refused, rule 3).",
+     "state": "unknown"
+    }
+   },
+   "venue_id": "mtl-a69fecaefa03"
+  },
+  {
+   "field": "access_window",
+   "pre": null,
+   "post": "12:00-24:00",
+   "venue_id": "mtl-b1e93c63b00b"
+  },
+  {
+   "field": "address",
+   "pre": "5175A Avenue du Parc, Montréal, QC",
+   "post": "5175A Avenue du Parc, Montréal, QC H2V 4G3",
+   "venue_id": "mtl-b1e93c63b00b"
+  },
+  {
+   "field": "booking_hour_cap",
+   "pre": null,
+   "post": 12,
+   "venue_id": "mtl-b1e93c63b00b"
+  },
+  {
+   "field": "closing_time",
+   "pre": null,
+   "post": "24:00",
+   "venue_id": "mtl-b1e93c63b00b"
+  },
+  {
+   "field": "coordinates",
+   "pre": {
+    "checked_on": "2026-11-24",
+    "derived": true,
+    "derived_from": "address",
+    "latitude": 45.520406,
+    "longitude": -73.597191,
+    "match": "base_house_number",
+    "precision": "rooftop/interpolated house number match, not a surveyed entrance",
+    "provider": "OpenStreetMap Nominatim",
+    "query": "5175 Avenue du Parc",
+    "returned_house_number": "5175"
+   },
+   "post": {
+    "latitude": 45.5204176,
+    "longitude": -73.5972156,
+    "map_target": "Espace Culturel Kawalees — Kawalees, 5175, Avenue du Parc, Le Plateau-Mont-Royal, Montréal, Agglomération de Montréal, Montréal (région administrative), Québec, H2V 4G3",
+    "precision": "exact_venue"
+   },
+   "venue_id": "mtl-b1e93c63b00b"
+  },
+  {
+   "field": "programme_windows",
+   "pre": {
+    "12": {
+     "basis": "none",
+     "state": "unknown"
+    },
+    "8": {
+     "basis": "none",
+     "state": "unknown"
+    }
+   },
+   "post": {
+    "12": {
+     "basis": "The blocks total 12:00-24:00, contiguous but starting at 12:00; the published schedule does not contain the 09:00-21:00 window, so twelve hours inside it is not published.",
+     "state": "unknown"
+    },
+    "8": {
+     "basis": "The rental page sells three consecutive four-hour blocks from 12:00, so the earliest hire starts at 12:00; no interval covering 09:00-17:00 is published.",
+     "state": "unknown"
+    }
+   },
+   "venue_id": "mtl-b1e93c63b00b"
+  },
+  {
+   "field": "address",
+   "pre": "5080 St Ambroise Street, Montréal, QC",
+   "post": "5080 Rue St-Ambroise, Montréal, QC H4C 2G1",
+   "venue_id": "mtl-b6318fa3d1f6"
+  },
+  {
+   "field": "coordinates",
+   "pre": {
+    "checked_on": "2026-11-24",
+    "derived": true,
+    "derived_from": "address",
+    "latitude": 45.468558,
+    "longitude": -73.59069,
+    "match": "house_number",
+    "precision": "rooftop/interpolated house number match, not a surveyed entrance",
+    "provider": "OpenStreetMap Nominatim",
+    "query": "5080 Rue Saint-Ambroise",
+    "returned_house_number": "5080"
+   },
+   "post": {
+    "latitude": 45.4685784,
+    "longitude": -73.5907112,
+    "map_target": "Pub L'Annexe St-Ambroise — L'Annexe Saint-Ambroise, 5080, Rue Saint-Ambroise, Le Sud-Ouest, Montréal, Agglomération de Montréal, Montréal (région administrative), Québec, H4E 4H9",
+    "precision": "exact_venue"
+   },
+   "venue_id": "mtl-b6318fa3d1f6"
+  },
+  {
+   "field": "address",
+   "pre": "5570 Avenue Casgrain, Suite 101, Montréal, QC",
+   "post": "5570 Avenue Casgrain, Suite 101, Montréal, QC H2T 1X9",
+   "venue_id": "mtl-b911cdc04475"
+  },
+  {
+   "field": "coordinates",
+   "pre": {
+    "latitude": null,
+    "longitude": null
+   },
+   "post": {
+    "latitude": 45.5272615,
+    "longitude": -73.598535,
+    "map_target": "5570, Avenue Casgrain, Mile-End, Le Plateau-Mont-Royal, Montréal, Agglomération de Montréal, Montréal (région administrative), Québec, H2T 1X9",
+    "precision": "building"
+   },
+   "venue_id": "mtl-b911cdc04475"
+  },
+  {
+   "field": "catering",
+   "pre": "in_house_only",
+   "post": "unknown",
+   "venue_id": "mtl-be24c9002459"
+  },
+  {
+   "field": "coordinates",
+   "pre": {
+    "checked_on": "2026-11-24",
+    "derived": true,
+    "derived_from": "address",
+    "latitude": 45.499366,
+    "longitude": -73.555248,
+    "match": "house_number",
+    "precision": "rooftop/interpolated house number match, not a surveyed entrance",
+    "provider": "OpenStreetMap Nominatim",
+    "query": "100 Rue McGill",
+    "returned_house_number": "100"
+   },
+   "post": {
+    "latitude": 45.499366,
+    "longitude": -73.5552482,
+    "map_target": "Van Houtte (100 McGill) — Café Van Houtte, 100, Rue McGill, H2Y, Ville-Marie, Montréal, Agglomération de Montréal, Montréal (région administrative), Québec, H3C 1W7",
+    "precision": "exact_venue"
+   },
+   "venue_id": "mtl-be24c9002459"
+  },
+  {
+   "field": "access_window",
+   "pre": "Blocks of 4, 8 or 12 hours; hours by appointment",
+   "post": null,
+   "venue_id": "mtl-bfeec3cc37f4"
+  },
+  {
+   "field": "address",
+   "pre": "1225 Boul Saint-Joseph Est, Montréal, QC",
+   "post": "1225 Boul Saint-Joseph Est, Montréal, QC H2J 1L7",
+   "venue_id": "mtl-bfeec3cc37f4"
+  },
+  {
+   "field": "catering",
+   "pre": "outside_allowed",
+   "post": "unknown",
+   "venue_id": "mtl-bfeec3cc37f4"
+  },
+  {
+   "field": "coordinates",
+   "pre": {
+    "checked_on": "2026-11-24",
+    "derived": true,
+    "derived_from": "address",
+    "latitude": 45.531399,
+    "longitude": -73.583593,
+    "match": "house_number",
+    "precision": "rooftop/interpolated house number match, not a surveyed entrance",
+    "provider": "OpenStreetMap Nominatim",
+    "query": "1225 Boulevard Saint-Joseph Est",
+    "returned_house_number": "1225"
+   },
+   "post": {
+    "latitude": 45.531399,
+    "longitude": -73.5835928,
+    "map_target": "1225, Boulevard Saint-Joseph Est, Le Plateau-Mont-Royal, Montréal, Agglomération de Montréal, Montréal (région administrative), Québec, H2J 1L5",
+    "precision": "building"
+   },
+   "venue_id": "mtl-bfeec3cc37f4"
+  },
+  {
+   "field": "event_window_status",
+   "pre": "allows_to_6",
+   "post": "unknown",
+   "venue_id": "mtl-bfeec3cc37f4"
+  },
+  {
+   "field": "programme_windows",
+   "pre": {
+    "12": {
+     "basis": "appointment_block",
+     "state": "yes"
+    },
+    "8": {
+     "basis": "appointment_block",
+     "state": "yes"
+    }
+   },
+   "post": {
+    "12": {
+     "basis": "appointment_block",
+     "state": "unknown"
+    },
+    "8": {
+     "basis": "appointment_block",
+     "state": "unknown"
+    }
+   },
+   "venue_id": "mtl-bfeec3cc37f4"
+  },
+  {
+   "field": "coordinates",
+   "pre": {
+    "latitude": null,
+    "longitude": null
+   },
+   "post": {
+    "latitude": 45.5096562,
+    "longitude": -73.562583,
+    "map_target": "Société des Arts Technologiques — Société des arts technologiques (SAT), 1201, Boulevard Saint-Laurent, Quartier Chinois, Ville-Marie, Montréal, Agglomération de Montréal, Montréal (région administrative), Québec, H2X 2S6",
+    "precision": "exact_venue"
+   },
+   "venue_id": "mtl-d0e27aa38d40"
+  },
+  {
+   "field": "about",
+   "pre": "An open-floor studio in COLLECTIF MTL seating up to 70 in theatre layout, with BYO alcohol and external catering allowed. Published Saturday hours run 08:00–22:00.",
+   "post": "An open-floor studio in COLLECTIF MTL seating up to 70 in theatre layout, with BYO alcohol and external catering allowed. The operator publishes only an appointment window, not a hire interval.",
+   "venue_id": "mtl-dd69fc532018"
+  },
+  {
+   "field": "access_window",
+   "pre": "Saturday 08:00-22:00",
+   "post": null,
+   "venue_id": "mtl-dd69fc532018"
+  },
+  {
+   "field": "address",
+   "pre": "397A Rue Sainte-Catherine Ouest, Montréal, QC H3B 1A4",
+   "post": "397A Rue Sainte-Catherine O, Suite 202, Montréal, QC H3A 2G3",
+   "venue_id": "mtl-dd69fc532018"
+  },
+  {
+   "field": "booking_hour_cap",
+   "pre": 14,
+   "post": null,
+   "venue_id": "mtl-dd69fc532018"
+  },
+  {
+   "field": "closing_time",
+   "pre": "22:00",
+   "post": null,
+   "venue_id": "mtl-dd69fc532018"
+  },
+  {
+   "field": "coordinates",
+   "pre": {
+    "checked_on": "2026-11-24",
+    "derived": true,
+    "derived_from": "address",
+    "latitude": 45.505848,
+    "longitude": -73.567338,
+    "match": "base_house_number",
+    "precision": "rooftop/interpolated house number match, not a surveyed entrance",
+    "provider": "OpenStreetMap Nominatim",
+    "query": "397 Rue Sainte-Catherine Ouest",
+    "returned_house_number": ""
+   },
+   "post": {
+    "latitude": 45.5045675,
+    "longitude": -73.5684628,
+    "map_target": "397A Rue Sainte-Catherine Ouest, Montréal, QC H3A 2G3",
+    "precision": "street"
+   },
+   "venue_id": "mtl-dd69fc532018"
+  },
+  {
+   "field": "event_window_status",
+   "pre": "allows_to_6",
+   "post": "unknown",
+   "venue_id": "mtl-dd69fc532018"
+  },
+  {
+   "field": "programme_windows",
+   "pre": {
+    "12": {
+     "basis": "clock_hours",
+     "state": "yes"
+    },
+    "8": {
+     "basis": "clock_hours",
+     "state": "yes"
+    }
+   },
+   "post": {
+    "12": {
+     "basis": "The operator's own room page publishes only 'By appointment from 10 a.m. to 5 p.m. weekdays; By appointment weekends', an appointment block with no hire interval; the Tagvenue 08:00-22:00 openingHoursSpecification is a marketplace opening-hours widget (refused, rule 3).",
+     "state": "unknown"
+    },
+    "8": {
+     "basis": "The operator's own room page publishes only 'By appointment from 10 a.m. to 5 p.m. weekdays; By appointment weekends', an appointment block with no hire interval; the Tagvenue 08:00-22:00 openingHoursSpecification is a marketplace opening-hours widget (refused, rule 3).",
+     "state": "unknown"
+    }
+   },
+   "venue_id": "mtl-dd69fc532018"
+  },
+  {
+   "field": "address",
+   "pre": "4475 Boul St-Laurent, Suite 200, Montréal, QC",
+   "post": "4475 Boul. Saint-Laurent, Suite 200, Montréal, QC H2W 1Z8",
+   "venue_id": "mtl-eb0452047e00"
+  },
+  {
+   "field": "coordinates",
+   "pre": {
+    "checked_on": "2026-11-24",
+    "derived": true,
+    "derived_from": "address",
+    "latitude": 45.520134,
+    "longitude": -73.586027,
+    "match": "house_number",
+    "precision": "rooftop/interpolated house number match, not a surveyed entrance",
+    "provider": "OpenStreetMap Nominatim",
+    "query": "4475 Boulevard Saint-Laurent",
+    "returned_house_number": "4475"
+   },
+   "post": {
+    "latitude": 45.5201342,
+    "longitude": -73.5860273,
+    "map_target": "4475, Boulevard Saint-Laurent, Le Plateau-Mont-Royal, Montréal, Agglomération de Montréal, Montréal (région administrative), Québec, H2W 1Z5",
+    "precision": "building"
+   },
+   "venue_id": "mtl-eb0452047e00"
+  },
+  {
+   "field": "address",
+   "pre": "4281 St-Laurent Blvd, Montréal, QC",
+   "post": "4281 Boul. Saint-Laurent, Montréal, QC H2W 1Z4",
+   "venue_id": "mtl-edf77b252f04"
+  },
+  {
+   "field": "catering",
+   "pre": "in_house_available",
+   "post": "unknown",
+   "venue_id": "mtl-edf77b252f04"
+  },
+  {
+   "field": "coordinates",
+   "pre": {
+    "checked_on": "2026-11-24",
+    "derived": true,
+    "derived_from": "address",
+    "latitude": 45.518768,
+    "longitude": -73.58303,
+    "match": "house_number",
+    "precision": "rooftop/interpolated house number match, not a surveyed entrance",
+    "provider": "OpenStreetMap Nominatim",
+    "query": "4281 Boulevard Saint-Laurent",
+    "returned_house_number": "4281"
+   },
+   "post": {
+    "latitude": 45.5187681,
+    "longitude": -73.5830296,
+    "map_target": "Le café RALIA, 4281, Boulevard Saint-Laurent, Le Plateau-Mont-Royal, Montréal, Agglomération de Montréal, Montréal (région administrative), Québec, H2W 1Z5",
+    "precision": "building"
+   },
+   "venue_id": "mtl-edf77b252f04"
+  },
+  {
+   "field": "coordinates",
+   "pre": {
+    "checked_on": "2026-11-24",
+    "derived": true,
+    "derived_from": "address",
+    "latitude": 45.475314,
+    "longitude": -73.579913,
+    "match": "house_number",
+    "precision": "rooftop/interpolated house number match, not a surveyed entrance",
+    "provider": "OpenStreetMap Nominatim",
+    "query": "4030 Rue Saint-Ambroise",
+    "returned_house_number": "4030"
+   },
+   "post": {
+    "latitude": 45.4753143,
+    "longitude": -73.5799127,
+    "map_target": "4030, Rue Saint-Ambroise, Saint-Henri, Le Sud-Ouest, Montréal, Agglomération de Montréal, Montréal (région administrative), Québec, H4C 2E1",
+    "precision": "building"
+   },
+   "venue_id": "mtl-eeca8449dbec"
+  },
+  {
+   "field": "programme_windows",
+   "pre": {
+    "12": {
+     "basis": "none",
+     "state": "unknown"
+    },
+    "8": {
+     "basis": "none",
+     "state": "unknown"
+    }
+   },
+   "post": {
+    "12": {
+     "basis": "The only clock text is 'Studio hours 7:00am - 10:00pm', which is opening hours rather than a hire interval; 'After hours - booking available' publishes no fixed interval, so neither window is confirmed (rule 3).",
+     "state": "unknown"
+    },
+    "8": {
+     "basis": "The only clock text is 'Studio hours 7:00am - 10:00pm', which is opening hours rather than a hire interval; 'After hours - booking available' publishes no fixed interval, so neither window is confirmed (rule 3).",
+     "state": "unknown"
+    }
+   },
+   "venue_id": "mtl-eeca8449dbec"
+  },
+  {
+   "field": "coordinates",
+   "pre": {
+    "checked_on": "2026-11-24",
+    "derived": true,
+    "derived_from": "address",
+    "latitude": 45.494683,
+    "longitude": -73.577659,
+    "match": "house_number",
+    "precision": "rooftop/interpolated house number match, not a surveyed entrance",
+    "provider": "OpenStreetMap Nominatim",
+    "query": "1250 Rue Guy",
+    "returned_house_number": "1250"
+   },
+   "post": {
+    "latitude": 45.4946827,
+    "longitude": -73.5776589,
+    "map_target": "District 3 Innovation Centre (Concordia) — District 3 Innovation Center, 1250, Rue Guy, Ville-Marie, Montréal, Agglomération de Montréal, Montréal (région administrative), Québec, H3H 2L3",
+    "precision": "exact_venue"
+   },
+   "venue_id": "mtl-fc4d581ec532"
+  }
+ ],
+ "venues": [
+  {
+   "venue_id": "mtl-1125d1fcdf46",
+   "legacy_slug": "mtl-1125d1fcdf46",
+   "disposition": "retained",
+   "fields_changed": 1,
+   "fields_added": [],
+   "fields_lost": []
+  },
+  {
+   "venue_id": "mtl-13ee7228e4b2",
+   "legacy_slug": "mtl-13ee7228e4b2",
+   "disposition": "retained",
+   "fields_changed": 8,
+   "fields_added": [],
+   "fields_lost": []
+  },
+  {
+   "venue_id": "mtl-184b7a111981",
+   "legacy_slug": "mtl-184b7a111981",
+   "disposition": "retained",
+   "fields_changed": 2,
+   "fields_added": [],
+   "fields_lost": []
+  },
+  {
+   "venue_id": "mtl-1c9b9b2b165a",
+   "legacy_slug": "mtl-1c9b9b2b165a",
+   "disposition": "retained",
+   "fields_changed": 1,
+   "fields_added": [],
+   "fields_lost": []
+  },
+  {
+   "venue_id": "mtl-1e4360518a06",
+   "legacy_slug": "mtl-1e4360518a06",
+   "disposition": "retained",
+   "fields_changed": 1,
+   "fields_added": [],
+   "fields_lost": []
+  },
+  {
+   "venue_id": "mtl-2729e116a7ed",
+   "legacy_slug": "mtl-2729e116a7ed",
+   "disposition": "retained",
+   "fields_changed": 2,
+   "fields_added": [],
+   "fields_lost": []
+  },
+  {
+   "venue_id": "mtl-281cff0a7a6d",
+   "legacy_slug": "mtl-281cff0a7a6d",
+   "disposition": "retained",
+   "fields_changed": 6,
+   "fields_added": [],
+   "fields_lost": []
+  },
+  {
+   "venue_id": "mtl-2fc617abde76",
+   "legacy_slug": "mtl-2fc617abde76",
+   "disposition": "retained",
+   "fields_changed": 3,
+   "fields_added": [],
+   "fields_lost": []
+  },
+  {
+   "venue_id": "mtl-32894124b903",
+   "legacy_slug": "mtl-32894124b903",
+   "disposition": "retained",
+   "fields_changed": 2,
+   "fields_added": [],
+   "fields_lost": []
+  },
+  {
+   "venue_id": "mtl-3c2599f5b2b4",
+   "legacy_slug": "mtl-3c2599f5b2b4",
+   "disposition": "retained",
+   "fields_changed": 1,
+   "fields_added": [],
+   "fields_lost": []
+  },
+  {
+   "venue_id": "mtl-583f8727f3f3",
+   "legacy_slug": "mtl-583f8727f3f3",
+   "disposition": "retained",
+   "fields_changed": 1,
+   "fields_added": [],
+   "fields_lost": []
+  },
+  {
+   "venue_id": "mtl-5aff2a80fdee",
+   "legacy_slug": "mtl-5aff2a80fdee",
+   "disposition": "retained",
+   "fields_changed": 2,
+   "fields_added": [],
+   "fields_lost": []
+  },
+  {
+   "venue_id": "mtl-6f6753b2d241",
+   "legacy_slug": "mtl-6f6753b2d241",
+   "disposition": "retained",
+   "fields_changed": 1,
+   "fields_added": [],
+   "fields_lost": []
+  },
+  {
+   "venue_id": "mtl-8aee03975c77",
+   "legacy_slug": "mtl-8aee03975c77",
+   "disposition": "retained",
+   "fields_changed": 1,
+   "fields_added": [],
+   "fields_lost": []
+  },
+  {
+   "venue_id": "mtl-8ef00c25a80d",
+   "legacy_slug": "mtl-8ef00c25a80d",
+   "disposition": "retained",
+   "fields_changed": 1,
+   "fields_added": [],
+   "fields_lost": []
+  },
+  {
+   "venue_id": "mtl-9b1cfe2df6f0",
+   "legacy_slug": "mtl-9b1cfe2df6f0",
+   "disposition": "retained",
+   "fields_changed": 2,
+   "fields_added": [],
+   "fields_lost": []
+  },
+  {
+   "venue_id": "mtl-9e195a901d0f",
+   "legacy_slug": "mtl-9e195a901d0f",
+   "disposition": "retained",
+   "fields_changed": 2,
+   "fields_added": [],
+   "fields_lost": []
+  },
+  {
+   "venue_id": "mtl-9e988109561c",
+   "legacy_slug": "mtl-9e988109561c",
+   "disposition": "retained",
+   "fields_changed": 2,
+   "fields_added": [],
+   "fields_lost": []
+  },
+  {
+   "venue_id": "mtl-a200486a6df1",
+   "legacy_slug": "mtl-a200486a6df1",
+   "disposition": "retained",
+   "fields_changed": 5,
+   "fields_added": [],
+   "fields_lost": []
+  },
+  {
+   "venue_id": "mtl-a2488d6b9f36",
+   "legacy_slug": "mtl-a2488d6b9f36",
+   "disposition": "retained",
+   "fields_changed": 5,
+   "fields_added": [],
+   "fields_lost": []
+  },
+  {
+   "venue_id": "mtl-a69fecaefa03",
+   "legacy_slug": "mtl-a69fecaefa03",
+   "disposition": "retained",
+   "fields_changed": 8,
+   "fields_added": [],
+   "fields_lost": []
+  },
+  {
+   "venue_id": "mtl-b1e93c63b00b",
+   "legacy_slug": "mtl-b1e93c63b00b",
+   "disposition": "retained",
+   "fields_changed": 6,
+   "fields_added": [],
+   "fields_lost": []
+  },
+  {
+   "venue_id": "mtl-b6318fa3d1f6",
+   "legacy_slug": "mtl-b6318fa3d1f6",
+   "disposition": "retained",
+   "fields_changed": 2,
+   "fields_added": [],
+   "fields_lost": []
+  },
+  {
+   "venue_id": "mtl-b911cdc04475",
+   "legacy_slug": "mtl-b911cdc04475",
+   "disposition": "retained",
+   "fields_changed": 2,
+   "fields_added": [],
+   "fields_lost": []
+  },
+  {
+   "venue_id": "mtl-be24c9002459",
+   "legacy_slug": "mtl-be24c9002459",
+   "disposition": "retained",
+   "fields_changed": 2,
+   "fields_added": [],
+   "fields_lost": []
+  },
+  {
+   "venue_id": "mtl-bfeec3cc37f4",
+   "legacy_slug": "mtl-bfeec3cc37f4",
+   "disposition": "retained",
+   "fields_changed": 6,
+   "fields_added": [],
+   "fields_lost": []
+  },
+  {
+   "venue_id": "mtl-d0e27aa38d40",
+   "legacy_slug": "mtl-d0e27aa38d40",
+   "disposition": "retained",
+   "fields_changed": 1,
+   "fields_added": [],
+   "fields_lost": []
+  },
+  {
+   "venue_id": "mtl-dd69fc532018",
+   "legacy_slug": "mtl-dd69fc532018",
+   "disposition": "retained",
+   "fields_changed": 8,
+   "fields_added": [],
+   "fields_lost": []
+  },
+  {
+   "venue_id": "mtl-eb0452047e00",
+   "legacy_slug": "mtl-eb0452047e00",
+   "disposition": "retained",
+   "fields_changed": 2,
+   "fields_added": [],
+   "fields_lost": []
+  },
+  {
+   "venue_id": "mtl-edf77b252f04",
+   "legacy_slug": "mtl-edf77b252f04",
+   "disposition": "retained",
+   "fields_changed": 3,
+   "fields_added": [],
+   "fields_lost": []
+  },
+  {
+   "venue_id": "mtl-eeca8449dbec",
+   "legacy_slug": "mtl-eeca8449dbec",
+   "disposition": "retained",
+   "fields_changed": 2,
+   "fields_added": [],
+   "fields_lost": []
+  },
+  {
+   "venue_id": "mtl-fc4d581ec532",
+   "legacy_slug": "mtl-fc4d581ec532",
+   "disposition": "retained",
+   "fields_changed": 1,
+   "fields_added": [],
+   "fields_lost": []
+  }
+ ],
+ "venue_counts": {
+  "pre": 32,
+  "post": 32,
+  "retained": 32,
+  "dropped": 0,
+  "added": 0
+ },
+ "inherited_withheld_photos": [
+  {
+   "venue_id": "mtl-1125d1fcdf46",
+   "url": "https://versaloft.ca/wp-content/uploads/2025/06/cropped-images.webp",
+   "disposition": "cleared",
+   "reason": null
+  },
+  {
+   "venue_id": "mtl-1125d1fcdf46",
+   "url": "https://versaloft.ca/wp-content/uploads/2025/07/CU8A6168-1.webp",
+   "disposition": "cleared",
+   "reason": null
+  },
+  {
+   "venue_id": "mtl-13ee7228e4b2",
+   "url": "https://www.tagvenue.com/resize/202605/70/19/widen-1680-noupsize;114371-carnegie-room-NRyQmvV4.jpg",
+   "disposition": "still_withheld",
+   "reason": "Hosted by a third-party listing platform (Tagvenue); the operator's own site publishes no matching gallery image and no licence for this file, so it stays withheld."
+  },
+  {
+   "venue_id": "mtl-13ee7228e4b2",
+   "url": "https://www.tagvenue.com/resize/202605/34/7e/fit-900-600;114371-carnegie-room-ZOGNIEVw.jpg",
+   "disposition": "still_withheld",
+   "reason": "Hosted by a third-party listing platform (Tagvenue); the operator's own site publishes no matching gallery image and no licence for this file, so it stays withheld."
+  },
+  {
+   "venue_id": "mtl-184b7a111981",
+   "url": "https://media.eventective.com/4711124_lg.jpg",
+   "disposition": "still_withheld",
+   "reason": "Hosted by a third-party listing platform (Eventective); the operator's own site publishes no matching gallery image and no licence for this file, so it stays withheld."
+  },
+  {
+   "venue_id": "mtl-184b7a111981",
+   "url": "https://media.eventective.com/4711130_lg.jpg",
+   "disposition": "still_withheld",
+   "reason": "Hosted by a third-party listing platform (Eventective); the operator's own site publishes no matching gallery image and no licence for this file, so it stays withheld."
+  },
+  {
+   "venue_id": "mtl-281cff0a7a6d",
+   "url": "https://media.eventective.com/4073515_lg.jpg",
+   "disposition": "still_withheld",
+   "reason": "Hosted by a third-party listing platform (Eventective); the operator's own site publishes no matching gallery image and no licence for this file, so it stays withheld."
+  },
+  {
+   "venue_id": "mtl-281cff0a7a6d",
+   "url": "https://media.eventective.com/4775247_lg.jpg",
+   "disposition": "still_withheld",
+   "reason": "Hosted by a third-party listing platform (Eventective); the operator's own site publishes no matching gallery image and no licence for this file, so it stays withheld."
+  },
+  {
+   "venue_id": "mtl-2fc617abde76",
+   "url": "https://media.eventective.com/4082526_lg.jpg",
+   "disposition": "still_withheld",
+   "reason": "Hosted by a third-party listing platform (Eventective); the operator's own site publishes no matching gallery image and no licence for this file, so it stays withheld."
+  },
+  {
+   "venue_id": "mtl-2fc617abde76",
+   "url": "https://media.eventective.com/4082527_lg.jpg",
+   "disposition": "still_withheld",
+   "reason": "Hosted by a third-party listing platform (Eventective); the operator's own site publishes no matching gallery image and no licence for this file, so it stays withheld."
+  },
+  {
+   "venue_id": "mtl-32894124b903",
+   "url": "https://media.eventective.com/4125190_lg.jpg",
+   "disposition": "still_withheld",
+   "reason": "Hosted by a third-party listing platform (Eventective); the operator's own site publishes no matching gallery image and no licence for this file, so it stays withheld."
+  },
+  {
+   "venue_id": "mtl-32894124b903",
+   "url": "https://media.eventective.com/default_space.jpg",
+   "disposition": "dropped",
+   "reason": "platform placeholder default_space.jpg shows no venue; removed rather than carried"
+  },
+  {
+   "venue_id": "mtl-583f8727f3f3",
+   "url": "https://media.eventective.com/4573018_lg.jpg",
+   "disposition": "still_withheld",
+   "reason": "Hosted by a third-party listing platform (Eventective); the operator's own site publishes no matching gallery image and no licence for this file, so it stays withheld."
+  },
+  {
+   "venue_id": "mtl-583f8727f3f3",
+   "url": "https://media.eventective.com/4573013_lg.jpg",
+   "disposition": "still_withheld",
+   "reason": "Hosted by a third-party listing platform (Eventective); the operator's own site publishes no matching gallery image and no licence for this file, so it stays withheld."
+  },
+  {
+   "venue_id": "mtl-5aff2a80fdee",
+   "url": "https://media.eventective.com/4473617_lg.jpg",
+   "disposition": "still_withheld",
+   "reason": "Hosted by a third-party listing platform (Eventective); the operator's own site publishes no matching gallery image and no licence for this file, so it stays withheld."
+  },
+  {
+   "venue_id": "mtl-5aff2a80fdee",
+   "url": "https://media.eventective.com/default_space.jpg",
+   "disposition": "dropped",
+   "reason": "platform placeholder default_space.jpg shows no venue; removed rather than carried"
+  },
+  {
+   "venue_id": "mtl-6f6753b2d241",
+   "url": "https://media.eventective.com/3964602_lg.jpg",
+   "disposition": "still_withheld",
+   "reason": "Hosted by a third-party listing platform (Eventective); the operator's own site publishes no matching gallery image and no licence for this file, so it stays withheld."
+  },
+  {
+   "venue_id": "mtl-6f6753b2d241",
+   "url": "https://media.eventective.com/3964604_lg.jpg",
+   "disposition": "still_withheld",
+   "reason": "Hosted by a third-party listing platform (Eventective); the operator's own site publishes no matching gallery image and no licence for this file, so it stays withheld."
+  },
+  {
+   "venue_id": "mtl-8aee03975c77",
+   "url": "https://media.eventective.com/4711058_lg.jpg",
+   "disposition": "still_withheld",
+   "reason": "Hosted by a third-party listing platform (Eventective); the operator's own site publishes no matching gallery image and no licence for this file, so it stays withheld."
+  },
+  {
+   "venue_id": "mtl-8aee03975c77",
+   "url": "https://media.eventective.com/4711061_lg.jpg",
+   "disposition": "still_withheld",
+   "reason": "Hosted by a third-party listing platform (Eventective); the operator's own site publishes no matching gallery image and no licence for this file, so it stays withheld."
+  },
+  {
+   "venue_id": "mtl-8ef00c25a80d",
+   "url": "https://media.eventective.com/4294485_lg.jpg",
+   "disposition": "still_withheld",
+   "reason": "Hosted by a third-party listing platform (Eventective); the operator's own site publishes no matching gallery image and no licence for this file, so it stays withheld."
+  },
+  {
+   "venue_id": "mtl-8ef00c25a80d",
+   "url": "https://media.eventective.com/4294504_lg.jpg",
+   "disposition": "still_withheld",
+   "reason": "Hosted by a third-party listing platform (Eventective); the operator's own site publishes no matching gallery image and no licence for this file, so it stays withheld."
+  },
+  {
+   "venue_id": "mtl-9b1cfe2df6f0",
+   "url": "https://media.eventective.com/3656609_lg.jpg",
+   "disposition": "still_withheld",
+   "reason": "Hosted by a third-party listing platform (Eventective); the operator's own site publishes no matching gallery image and no licence for this file, so it stays withheld."
+  },
+  {
+   "venue_id": "mtl-9b1cfe2df6f0",
+   "url": "https://media.eventective.com/3656608_lg.jpg",
+   "disposition": "still_withheld",
+   "reason": "Hosted by a third-party listing platform (Eventective); the operator's own site publishes no matching gallery image and no licence for this file, so it stays withheld."
+  },
+  {
+   "venue_id": "mtl-9e988109561c",
+   "url": "https://media.eventective.com/4612546_lg.jpg",
+   "disposition": "still_withheld",
+   "reason": "Hosted by a third-party listing platform (Eventective); the operator's own site publishes no matching gallery image and no licence for this file, so it stays withheld."
+  },
+  {
+   "venue_id": "mtl-9e988109561c",
+   "url": "https://media.eventective.com/4612555_lg.jpg",
+   "disposition": "still_withheld",
+   "reason": "Hosted by a third-party listing platform (Eventective); the operator's own site publishes no matching gallery image and no licence for this file, so it stays withheld."
+  },
+  {
+   "venue_id": "mtl-a2488d6b9f36",
+   "url": "https://media.eventective.com/3759798_lg.jpg",
+   "disposition": "still_withheld",
+   "reason": "Hosted by a third-party listing platform (Eventective); the operator's own site publishes no matching gallery image and no licence for this file, so it stays withheld."
+  },
+  {
+   "venue_id": "mtl-a2488d6b9f36",
+   "url": "https://media.eventective.com/3312109_lg.jpg",
+   "disposition": "still_withheld",
+   "reason": "Hosted by a third-party listing platform (Eventective); the operator's own site publishes no matching gallery image and no licence for this file, so it stays withheld."
+  },
+  {
+   "venue_id": "mtl-a69fecaefa03",
+   "url": "https://www.tagvenue.com/resize/202606/a2/98/widen-1680-noupsize;115206-juniper-room-upqUyYHE.jpg",
+   "disposition": "still_withheld",
+   "reason": "Hosted by a third-party listing platform (Tagvenue); the operator's own site publishes no matching gallery image and no licence for this file, so it stays withheld."
+  },
+  {
+   "venue_id": "mtl-a69fecaefa03",
+   "url": "https://www.tagvenue.com/resize/202606/a2/6b/fit-900-600;115206-juniper-room-E7Fdsfzn.jpg",
+   "disposition": "still_withheld",
+   "reason": "Hosted by a third-party listing platform (Tagvenue); the operator's own site publishes no matching gallery image and no licence for this file, so it stays withheld."
+  },
+  {
+   "venue_id": "mtl-b1e93c63b00b",
+   "url": "https://media.eventective.com/4127145_lg.jpg",
+   "disposition": "still_withheld",
+   "reason": "Hosted by a third-party listing platform (Eventective); the operator's own site publishes no matching gallery image and no licence for this file, so it stays withheld."
+  },
+  {
+   "venue_id": "mtl-b1e93c63b00b",
+   "url": "https://media.eventective.com/4127146_lg.jpg",
+   "disposition": "still_withheld",
+   "reason": "Hosted by a third-party listing platform (Eventective); the operator's own site publishes no matching gallery image and no licence for this file, so it stays withheld."
+  },
+  {
+   "venue_id": "mtl-b6318fa3d1f6",
+   "url": "https://media.eventective.com/3392949_lg.jpg",
+   "disposition": "still_withheld",
+   "reason": "Hosted by a third-party listing platform (Eventective); the operator's own site publishes no matching gallery image and no licence for this file, so it stays withheld."
+  },
+  {
+   "venue_id": "mtl-b6318fa3d1f6",
+   "url": "https://media.eventective.com/3392951_lg.jpg",
+   "disposition": "still_withheld",
+   "reason": "Hosted by a third-party listing platform (Eventective); the operator's own site publishes no matching gallery image and no licence for this file, so it stays withheld."
+  },
+  {
+   "venue_id": "mtl-be24c9002459",
+   "url": "https://media.eventective.com/4422861_lg.jpg",
+   "disposition": "still_withheld",
+   "reason": "Hosted by a third-party listing platform (Eventective); the operator's own site publishes no matching gallery image and no licence for this file, so it stays withheld."
+  },
+  {
+   "venue_id": "mtl-be24c9002459",
+   "url": "https://media.eventective.com/4422865_lg.jpg",
+   "disposition": "still_withheld",
+   "reason": "Hosted by a third-party listing platform (Eventective); the operator's own site publishes no matching gallery image and no licence for this file, so it stays withheld."
+  },
+  {
+   "venue_id": "mtl-bfeec3cc37f4",
+   "url": "https://media.eventective.com/4758938_lg.jpg",
+   "disposition": "still_withheld",
+   "reason": "Hosted by a third-party listing platform (Eventective); the operator's own site publishes no matching gallery image and no licence for this file, so it stays withheld."
+  },
+  {
+   "venue_id": "mtl-bfeec3cc37f4",
+   "url": "https://media.eventective.com/4764108_lg.jpg",
+   "disposition": "still_withheld",
+   "reason": "Hosted by a third-party listing platform (Eventective); the operator's own site publishes no matching gallery image and no licence for this file, so it stays withheld."
+  },
+  {
+   "venue_id": "mtl-d0e27aa38d40",
+   "url": "https://ressources.sat.qc.ca/uploads/2024/11/mutek2024_web_credmaryseboyce_5814-1920x1280.jpg",
+   "disposition": "cleared",
+   "reason": null
+  },
+  {
+   "venue_id": "mtl-d0e27aa38d40",
+   "url": "https://ressources.sat.qc.ca/uploads/2024/11/espace-sat_05230_rthibodeau-1024x683.jpg",
+   "disposition": "cleared",
+   "reason": null
+  },
+  {
+   "venue_id": "mtl-dd69fc532018",
+   "url": "https://www.tagvenue.com/resize/202606/d4/fa/widen-1680-noupsize;115207-the-hook-room-I6khpSCz.jpg",
+   "disposition": "still_withheld",
+   "reason": "Hosted by a third-party listing platform (Tagvenue); the operator's own site publishes no matching gallery image and no licence for this file, so it stays withheld."
+  },
+  {
+   "venue_id": "mtl-dd69fc532018",
+   "url": "https://www.tagvenue.com/resize/202606/0b/6d/fit-900-600;115207-the-hook-room-9wxOMrqN.jpg",
+   "disposition": "still_withheld",
+   "reason": "Hosted by a third-party listing platform (Tagvenue); the operator's own site publishes no matching gallery image and no licence for this file, so it stays withheld."
+  },
+  {
+   "venue_id": "mtl-eb0452047e00",
+   "url": "https://media.eventective.com/4294651_lg.jpg",
+   "disposition": "still_withheld",
+   "reason": "Hosted by a third-party listing platform (Eventective); the operator's own site publishes no matching gallery image and no licence for this file, so it stays withheld."
+  },
+  {
+   "venue_id": "mtl-eb0452047e00",
+   "url": "https://media.eventective.com/4294650_lg.jpg",
+   "disposition": "still_withheld",
+   "reason": "Hosted by a third-party listing platform (Eventective); the operator's own site publishes no matching gallery image and no licence for this file, so it stays withheld."
+  },
+  {
+   "venue_id": "mtl-edf77b252f04",
+   "url": "https://media.eventective.com/4278758_lg.jpg",
+   "disposition": "still_withheld",
+   "reason": "Hosted by a third-party listing platform (Eventective); the operator's own site publishes no matching gallery image and no licence for this file, so it stays withheld."
+  },
+  {
+   "venue_id": "mtl-edf77b252f04",
+   "url": "https://media.eventective.com/4278753_lg.jpg",
+   "disposition": "still_withheld",
+   "reason": "Hosted by a third-party listing platform (Eventective); the operator's own site publishes no matching gallery image and no licence for this file, so it stays withheld."
+  },
+  {
+   "venue_id": "mtl-eeca8449dbec",
+   "url": "https://media.eventective.com/4769175_lg.jpg",
+   "disposition": "still_withheld",
+   "reason": "Hosted by a third-party listing platform (Eventective); the operator's own site publishes no matching gallery image and no licence for this file, so it stays withheld."
+  },
+  {
+   "venue_id": "mtl-eeca8449dbec",
+   "url": "https://media.eventective.com/4769169_lg.jpg",
+   "disposition": "still_withheld",
+   "reason": "Hosted by a third-party listing platform (Eventective); the operator's own site publishes no matching gallery image and no licence for this file, so it stays withheld."
+  }
+ ],
+ "inherited_withheld_photo_counts": {
+  "cleared": 4,
+  "still_withheld": 42,
+  "dropped": 2
+ },
+ "photo_counts": {
+  "pre_withheld_url_records": 48,
+  "pre_venues_with_withheld": 24,
+  "post_records": 87,
+  "post_withheld": 42,
+  "post_cleared": 45
+ },
+ "events": {
+  "pre": [
+   "mtl-ev-79cca7bc8e03",
+   "mtl-ev-fbf3a925b2e0"
+  ],
+  "post": [
+   "mtl-ev-00c7888ab163",
+   "mtl-ev-79cca7bc8e03",
+   "mtl-ev-fbf3a925b2e0"
+  ],
+  "retained": [
+   "mtl-ev-79cca7bc8e03",
+   "mtl-ev-fbf3a925b2e0"
+  ],
+  "dropped": [],
+  "added": [
+   "mtl-ev-00c7888ab163"
+  ]
+ },
+ "holidays": {
+  "pre": 18,
+  "post": 22,
+  "retained": 18,
+  "removed": [],
+  "added": [
+   [
+    "CA-QC:cssdm",
+    "school_holiday",
+    "2027-04-23",
+    "2027-04-23",
+    "Journée pédagogique (institutionnelle)"
+   ],
+   [
+    "CA-QC:cssdm",
+    "school_holiday",
+    "2027-06-04",
+    "2027-06-04",
+    "Fermeture du Centre de services scolaire de Montréal"
+   ],
+   [
+    "CA-QC:emsb",
+    "school_holiday",
+    "2026-12-21",
+    "2027-01-01",
+    "Winter Break / Vacances d'hiver"
+   ],
+   [
+    "CA-QC:emsb",
+    "school_holiday",
+    "2027-03-01",
+    "2027-03-05",
+    "March Break / Relâche scolaire"
+   ]
+  ]
+ },
+ "top_level": {
+  "declared_gaps": {
+   "pre": 0,
+   "post": 13
+  },
+  "sources_consulted": {
+   "pre": 34,
+   "post": 92
+  },
+  "coverage": {
+   "pre": 7,
+   "post": 7
+  },
+  "communities": {
+   "pre": 18,
+   "post": 18
+  },
+  "refresh_revision": {
+   "pre": null,
+   "post": 1
+  }
+ },
+ "unexplained": []
+}
