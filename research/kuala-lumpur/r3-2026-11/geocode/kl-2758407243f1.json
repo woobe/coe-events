@@ -1,0 +1,77 @@
+{
+ "venue_id": "kl-2758407243f1",
+ "name": "Sunway Pyramid Convention Centre",
+ "checked_on": "2026-11-26",
+ "address": "3, Jalan PJS 11/15, Bandar Sunway, 47500 Petaling Jaya, Selangor",
+ "note": "The mall's own printed address on the operator page; the convention centre sits inside Sunway Pyramid. Bandar Sunway is in Selangor, outside the Federal Territory.",
+ "attempts": [
+  {
+   "query": "Sunway Pyramid Convention Centre, Bandar Sunway, Selangor",
+   "url": "https://nominatim.openstreetmap.org/search?q=Sunway+Pyramid+Convention+Centre%2C+Bandar+Sunway%2C+Selangor&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+   "returned": 1,
+   "candidates": [
+    {
+     "place_id": 253440262,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "node",
+     "osm_id": 9223854461,
+     "lat": "3.0723108",
+     "lon": "101.6067125",
+     "category": "amenity",
+     "type": "conference_centre",
+     "place_rank": 30,
+     "importance": 7.505989166089902e-05,
+     "addresstype": "amenity",
+     "name": "Sunway Pyramid Convention Centre",
+     "display_name": "Sunway Pyramid Convention Centre, CP3, To Roof Sunway Pyramid, Sunway City, PJS 11, Sunway City, Subang Jaya City Council, Petaling, Selangor, 46150, Malaysia",
+     "address": {
+      "amenity": "Sunway Pyramid Convention Centre",
+      "house_number": "CP3",
+      "road": "To Roof Sunway Pyramid",
+      "retail": "Sunway City",
+      "quarter": "PJS 11",
+      "suburb": "Sunway City",
+      "city": "Subang Jaya City Council",
+      "district": "Petaling",
+      "state": "Selangor",
+      "ISO3166-2-lvl4": "MY-10",
+      "postcode": "46150",
+      "country": "Malaysia",
+      "country_code": "my"
+     },
+     "boundingbox": [
+      "3.0722608",
+      "3.0723608",
+      "101.6066625",
+      "101.6067625"
+     ],
+     "_score": {
+      "hits": 2,
+      "all_tokens": true,
+      "named_filter": false,
+      "tokens": [
+       "sunway",
+       "pjs 11"
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "chosen": {
+  "query": "Sunway Pyramid Convention Centre, Bandar Sunway, Selangor",
+  "latitude": 3.0723108,
+  "longitude": 101.6067125,
+  "display_name": "Sunway Pyramid Convention Centre, CP3, To Roof Sunway Pyramid, Sunway City, PJS 11, Sunway City, Subang Jaya City Council, Petaling, Selangor, 46150, Malaysia",
+  "name": "Sunway Pyramid Convention Centre",
+  "category": "amenity",
+  "type": "conference_centre",
+  "osm": "node/9223854461",
+  "tokens_matched": [
+   "sunway",
+   "pjs 11"
+  ],
+  "all_tokens": true,
+  "named_match": false
+ }
+}

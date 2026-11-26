@@ -1,0 +1,72 @@
+{
+ "venue_id": "kl-9026a709cac0",
+ "name": "World Trade Centre Kuala Lumpur — Dewan Merdeka",
+ "checked_on": "2026-11-26",
+ "address": "No. 41, Jalan Tun Ismail, 50480 Kuala Lumpur",
+ "note": null,
+ "attempts": [
+  {
+   "query": "World Trade Centre Kuala Lumpur, 41 Jalan Tun Ismail",
+   "url": "https://nominatim.openstreetmap.org/search?q=World+Trade+Centre+Kuala+Lumpur%2C+41+Jalan+Tun+Ismail&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+   "returned": 1,
+   "candidates": [
+    {
+     "place_id": 254946208,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 347132581,
+     "lat": "3.1687535",
+     "lon": "101.6915588",
+     "category": "building",
+     "type": "commercial",
+     "place_rank": 30,
+     "importance": 0.29396319343666205,
+     "addresstype": "building",
+     "name": "World Trade Centre Kuala Lumpur",
+     "display_name": "World Trade Centre Kuala Lumpur, 41, Jalan Tun Ismail, Chow Kit, Sentul, Kuala Lumpur, 50480, Malaysia",
+     "address": {
+      "building": "World Trade Centre Kuala Lumpur",
+      "house_number": "41",
+      "road": "Jalan Tun Ismail",
+      "quarter": "Chow Kit",
+      "suburb": "Sentul",
+      "city": "Kuala Lumpur",
+      "ISO3166-2-lvl4": "MY-14",
+      "postcode": "50480",
+      "country": "Malaysia",
+      "country_code": "my"
+     },
+     "boundingbox": [
+      "3.1682282",
+      "3.1692867",
+      "101.6911645",
+      "101.6922124"
+     ],
+     "_score": {
+      "hits": 1,
+      "all_tokens": true,
+      "named_filter": false,
+      "tokens": [
+       "tun ismail"
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "chosen": {
+  "query": "World Trade Centre Kuala Lumpur, 41 Jalan Tun Ismail",
+  "latitude": 3.1687535,
+  "longitude": 101.6915588,
+  "display_name": "World Trade Centre Kuala Lumpur, 41, Jalan Tun Ismail, Chow Kit, Sentul, Kuala Lumpur, 50480, Malaysia",
+  "name": "World Trade Centre Kuala Lumpur",
+  "category": "building",
+  "type": "commercial",
+  "osm": "way/347132581",
+  "tokens_matched": [
+   "tun ismail"
+  ],
+  "all_tokens": true,
+  "named_match": false
+ }
+}

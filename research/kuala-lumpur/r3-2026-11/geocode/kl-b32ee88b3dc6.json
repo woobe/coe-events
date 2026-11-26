@@ -1,0 +1,156 @@
+{
+ "venue_id": "kl-b32ee88b3dc6",
+ "name": "Common Ground KLCC — Event Space",
+ "checked_on": "2026-11-26",
+ "address": "Level 6, Menara Darussalam, 12, Jalan Pinang, 50450 Kuala Lumpur",
+ "note": null,
+ "attempts": [
+  {
+   "query": "Menara Darussalam, 12 Jalan Pinang, 50450 Kuala Lumpur",
+   "url": "https://nominatim.openstreetmap.org/search?q=Menara+Darussalam%2C+12+Jalan+Pinang%2C+50450+Kuala+Lumpur&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+   "returned": 0,
+   "candidates": []
+  },
+  {
+   "query": "12 Jalan Pinang, Kuala Lumpur",
+   "url": "https://nominatim.openstreetmap.org/search?q=12+Jalan+Pinang%2C+Kuala+Lumpur&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+   "returned": 3,
+   "candidates": [
+    {
+     "place_id": 255191200,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "node",
+     "osm_id": 13099974432,
+     "lat": "3.1536113",
+     "lon": "101.7121373",
+     "category": "tourism",
+     "type": "hotel",
+     "place_rank": 30,
+     "importance": 0.244781979759108,
+     "addresstype": "tourism",
+     "name": "Grand Hyatt",
+     "display_name": "Grand Hyatt, 12, Jalan Pinang, Kampung Paya, Kampung Cendana, Kuala Lumpur, 50450, Malaysia",
+     "address": {
+      "tourism": "Grand Hyatt",
+      "house_number": "12",
+      "road": "Jalan Pinang",
+      "hamlet": "Kampung Paya",
+      "city": "Kuala Lumpur",
+      "ISO3166-2-lvl4": "MY-14",
+      "postcode": "50450",
+      "country": "Malaysia",
+      "country_code": "my"
+     },
+     "boundingbox": [
+      "3.1535613",
+      "3.1536613",
+      "101.7120873",
+      "101.7121873"
+     ],
+     "_score": {
+      "hits": 1,
+      "all_tokens": true,
+      "named_filter": false,
+      "tokens": [
+       "pinang"
+      ]
+     }
+    },
+    {
+     "place_id": 254946997,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "relation",
+     "osm_id": 4502647,
+     "lat": "3.1541093",
+     "lon": "101.7121490",
+     "category": "building",
+     "type": "yes",
+     "place_rank": 30,
+     "importance": 7.505989166089902e-05,
+     "addresstype": "building",
+     "name": "",
+     "display_name": "12, Jalan Pinang, Kampung Paya, Kampung Cendana, Kuala Lumpur, 50450, Malaysia",
+     "address": {
+      "house_number": "12",
+      "road": "Jalan Pinang",
+      "hamlet": "Kampung Paya",
+      "city": "Kuala Lumpur",
+      "ISO3166-2-lvl4": "MY-14",
+      "postcode": "50450",
+      "country": "Malaysia",
+      "country_code": "my"
+     },
+     "boundingbox": [
+      "3.1538012",
+      "3.1543998",
+      "101.7116520",
+      "101.7124949"
+     ],
+     "_score": {
+      "hits": 1,
+      "all_tokens": true,
+      "named_filter": false,
+      "tokens": [
+       "pinang"
+      ]
+     }
+    },
+    {
+     "place_id": 254953380,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "node",
+     "osm_id": 13099975828,
+     "lat": "3.1541145",
+     "lon": "101.7119840",
+     "category": "amenity",
+     "type": "restaurant",
+     "place_rank": 30,
+     "importance": 7.505989166089902e-05,
+     "addresstype": "amenity",
+     "name": "Pool House",
+     "display_name": "Pool House, 12, Jalan Pinang, Kampung Paya, Kampung Cendana, Kuala Lumpur, 50450, Malaysia",
+     "address": {
+      "amenity": "Pool House",
+      "house_number": "12",
+      "road": "Jalan Pinang",
+      "hamlet": "Kampung Paya",
+      "city": "Kuala Lumpur",
+      "ISO3166-2-lvl4": "MY-14",
+      "postcode": "50450",
+      "country": "Malaysia",
+      "country_code": "my"
+     },
+     "boundingbox": [
+      "3.1540645",
+      "3.1541645",
+      "101.7119340",
+      "101.7120340"
+     ],
+     "_score": {
+      "hits": 1,
+      "all_tokens": true,
+      "named_filter": false,
+      "tokens": [
+       "pinang"
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "chosen": {
+  "query": "12 Jalan Pinang, Kuala Lumpur",
+  "latitude": 3.1536113,
+  "longitude": 101.7121373,
+  "display_name": "Grand Hyatt, 12, Jalan Pinang, Kampung Paya, Kampung Cendana, Kuala Lumpur, 50450, Malaysia",
+  "name": "Grand Hyatt",
+  "category": "tourism",
+  "type": "hotel",
+  "osm": "node/13099974432",
+  "tokens_matched": [
+   "pinang"
+  ],
+  "all_tokens": true,
+  "named_match": false
+ }
+}

@@ -1,0 +1,71 @@
+{
+ "venue_id": "kl-7dcb2f4ad570",
+ "name": "GMBB — Event Space",
+ "checked_on": "2026-11-26",
+ "address": "No. 2, Jalan Robertson, 50150 Kuala Lumpur",
+ "note": null,
+ "attempts": [
+  {
+   "query": "GMBB, 2 Jalan Robertson, 50150 Kuala Lumpur",
+   "url": "https://nominatim.openstreetmap.org/search?q=GMBB%2C+2+Jalan+Robertson%2C+50150+Kuala+Lumpur&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+   "returned": 1,
+   "candidates": [
+    {
+     "place_id": 254905945,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 1060208509,
+     "lat": "3.1447455",
+     "lon": "101.7045274",
+     "category": "shop",
+     "type": "mall",
+     "place_rank": 30,
+     "importance": 7.505989166089902e-05,
+     "addresstype": "shop",
+     "name": "GMBB",
+     "display_name": "GMBB, 2, Jalan Robertson, Bukit Bintang, Kuala Lumpur, 50150, Malaysia",
+     "address": {
+      "shop": "GMBB",
+      "house_number": "2",
+      "road": "Jalan Robertson",
+      "suburb": "Bukit Bintang",
+      "city": "Kuala Lumpur",
+      "ISO3166-2-lvl4": "MY-14",
+      "postcode": "50150",
+      "country": "Malaysia",
+      "country_code": "my"
+     },
+     "boundingbox": [
+      "3.1445138",
+      "3.1450058",
+      "101.7042561",
+      "101.7048141"
+     ],
+     "_score": {
+      "hits": 1,
+      "all_tokens": true,
+      "named_filter": false,
+      "tokens": [
+       "robertson"
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "chosen": {
+  "query": "GMBB, 2 Jalan Robertson, 50150 Kuala Lumpur",
+  "latitude": 3.1447455,
+  "longitude": 101.7045274,
+  "display_name": "GMBB, 2, Jalan Robertson, Bukit Bintang, Kuala Lumpur, 50150, Malaysia",
+  "name": "GMBB",
+  "category": "shop",
+  "type": "mall",
+  "osm": "way/1060208509",
+  "tokens_matched": [
+   "robertson"
+  ],
+  "all_tokens": true,
+  "named_match": false
+ }
+}

@@ -321,3 +321,89 @@ overage. The gate is the round-3 addition (+75) and the citation stamping added
 25 lines to the build; nothing was deleted or refactored for the number. The
 manager's amendment should therefore be ~1,100 rather than ~1,000 (the Lisbon
 precedent was 1,100; Oslo was amended 600 → 900 on the same pattern).
+
+## R3 revision-1 refresh (2026-11-26)
+
+Store: `research/kuala-lumpur/city/city.json`, `refresh_revision: 1`,
+`updated_at 2026-11-26T09:00:00Z`, run `run-20261126-kl-r3`. SHA-256
+`a5d37975953b279b7edc1947045ee72a68baafb0eb7e918fa55d5c0bfa85b4b5`
+(1,845,993 bytes). `city_store.py --check` passes (55 venues); `loss_check`
+returns `{}` against `city.pre-r3.json`; the ranker returns 30 open rows plus 25
+leads (55, one per venue); the page renders to scratch with
+`--no-map-assets` at 609,307 bytes and 55 rows. City-scoped evidence is in
+`research/kuala-lumpur/r3-2026-11/` (captures + manifest, geocode/, pdf/,
+photo-records.json, event-matrix.json, coordinate-tiers.json, build and verify
+scripts).
+
+**Coordinates.** All 55 records geocoded afresh with one live Nominatim search
+each (90 queries; every attempt kept in `geocode/<venue_id>.json`). The 39
+pinless records each gained a tier: 30 building, 3 exact_venue, 3 street, 3
+area, 0 unresolved. Store-wide: 3 exact_venue (APW Bangsar, MATRADE MECC,
+Sunway Pyramid CC — the geocoder returns the venue itself), 46 building, 3
+street (The Hive Bukit KL, The Co., Common Ground Ampang), 3 area (two KL Eco
+City records, WSPACE Mid Valley). Branch conflicts checked one by one: Colony's
+three KL sites, Common Ground's four, WSPACE's two and W vs St Regis all resolve
+to different addresses. The Co.'s site now serves a lottery page, so its street
+comes from a 2016 listing at The Row and is labelled as such.
+
+**Photos.** 43 → 55 live rows. Venues with 1+ photo 16 → 23, with 4+ 9 → 9,
+with none 39 → 32. Rights: 36 CC BY-SA 4.0, 4 CC0, 3 CC BY-SA 3.0 (Wikimedia,
+unchanged) plus 12 operator assets hotlinked with attribution (MITEC 3, Marriott
+2, Common Ground 2, klpac 2, Publika 1, The Hive 1, Connexion 1). Room-versus-
+fallback: 12 venues carry a room-kind view (interior/layout/floor_plan), 11 only
+a labelled fallback (exterior or lobby), 32 none. The WSPACE asset the page
+serves returns 404 and is recorded as a failed lookup, not a photo.
+
+**Holidays.** Local public unchanged at 21 rows in the Federal Territory
+(column) shape, each re-weekdayed from code (0 mismatches); eight Islamic-date
+rows keep `derived`/`subject_to_announcement`. New local school layer: 14
+Kumpulan B rows (four term breaks plus ten KPM additional festival days) read
+from the KPM *Kalendar Akademik Tahun 2027* PDF — which is image-only, so its
+text came from OCR of all seven pages. The BKPP primary schedule PDF was
+unreachable (three URL forms, all timed out), so the KL column rests on three
+independent reproductions and is declared as such. Comparison countries: none
+stored for this city.
+
+**Events.** 11 → 13, with the 66-cell six-theme matrix in
+`event-matrix.json` (11 lanes × 6 themes). Luma's Kuala Lumpur page has 150 KL
+mentions and zero 2027 dates; the two alias pages and the Malaysia page carry
+none; MiraGather's payloads (1.8–2.1 MB) name no Kuala Lumpur event; AI
+Tinkerers' all-cities page returns 403 and its KL chapter ends in November 2026;
+Meetup returns November–December 2026 editions. Two 2027 Kuala Lumpur events
+were added from Eventbrite (GAICC 24 January at The Majestic; Business Growth AI
+15 July, venue unnamed) and XR ASIA SUMMIT 2027 was excluded as Petaling Jaya.
+Source yields sum to 13.
+
+**Access.** 1 full window (WORQ, 8 am–10 pm daily, covers 09:00–21:00), 54
+unknown, 0 no. Every unknown names the pages read and, where a clock exists, the
+office- or mall-hours line that is not a hire interval (WTC 9.00 am–6.00 pm
+Mon–Fri; WSPACE 9:00am–6:00pm weekdays; Publika 10:00am–10:00pm).
+
+
+## R3 review round 2 (2026-11-26)
+
+The review asked for three corrections; nothing else was rebuilt. Store now
+`sha256 11972bfd3d5b3e746e7f0735e15f07d971eaab9719e6a337155f0edee4ef04cb`,
+1,846,168 bytes, same run id and `refresh_revision: 1`; `--check` passes,
+`loss_check` returns `{}`, the ranker returns 55 rows, 869 stored locators
+resolve, and the scratch render is 598,103 bytes (the drop from 609,307 is the
+20 building photographs removed from five galleries, see below).
+
+1. **Photo labels.** `build_r3.py` applied `setdefault(view_kind, interior)`
+   before the room rule, so 20 legacy Wikimedia records on MITEC Level 1A/2/3
+   and klpac indicine/Pentas 2 were labelled `interior` while their own `room`
+   is `building`. The rule now runs first and `interior` is never a default:
+   `room == building` gives `exterior`, a named room gives `interior`, and a row
+   with neither keeps no view. Those five panels now carry only the operator
+   floor plan or room asset; the 11 venues whose only photographs are exteriors
+   keep their `Exterior`/`Lobby` labels. Room-kind venues stay 12, fallback-only
+   11, none 32.
+2. **Per-fact event evidence.** GAICC and Business Growth no longer cite one
+   date line for seven claims. Each page-printed fact carries its own line and
+   quote (GAICC: date 134, kind 104, relevance 100, organiser 104, venue 96;
+   Business Growth: date 95, kind 97, relevance 93, venue 121-122). Business
+   Growth has no printed organiser and neither page prints a status word, so
+   both values are null with an absence locator instead of a guessed value.
+3. **Derived gap text.** The photos declared gap is now generated from the
+   store: 43 of 55 records carry no room-kind view (32 none, 11 fallback-only),
+   7 records gained a first photograph, 12 operator assets.

@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>
+	KLCC 2024
+</title><base href="https://www.klccconventioncentre.com/" />
+    <script src="/js/jquery-latest.min.js"></script>
+	 <script>
+        var nonce = "dummy",
+            xVar = {
+                id: {}
+            };
+    </script>
+    <script type="text/javascript">	
+        $(document).ready(function () {
+            var path = window.location.href.replace("/404.htm", "").replace("http://", "").replace("https://", "");
+            if (path.indexOf("?") > 0) {
+                path = path.substring(0, path.indexOf("?"));
+            }
+            switch (extractDomain(window.location.href)) {
+                default:
+				
+					var sub = window.location.pathname.split("/")[1];
+					
+					if (sub !== "404.aspx") {
+						
+						 $("div").load("/clients/404/" + extractDomain(window.location.href) + ".htm", function () {
+
+						});
+					
+					}
+					else{
+					
+						$("div").load("clients/404/" + extractDomain(window.location.href) + ".htm", function () {
+						});
+
+					}
+					
+            }
+
+            function extractDomain(url) {
+                var domain;
+                if (url.indexOf("://") > -1) {
+                    domain = url.split('/')[2];
+                }
+                else {
+                    domain = url.split('/')[0];
+                }
+                domain = domain.split(':')[0];
+                return domain;
+            }
+        });
+    </script>
+</head>
+<body><div>404</div></body></html>

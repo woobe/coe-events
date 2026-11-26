@@ -1,0 +1,113 @@
+{
+ "venue_id": "kl-8cd52f2406dc",
+ "name": "APW Bangsar",
+ "checked_on": "2026-11-26",
+ "address": null,
+ "note": "apwbangsar.com did not resolve on 2026-11-26 (curl exit 000); the venue is located by name in OSM.",
+ "attempts": [
+  {
+   "query": "APW Bangsar",
+   "url": "https://nominatim.openstreetmap.org/search?q=APW+Bangsar&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+   "returned": 2,
+   "candidates": [
+    {
+     "place_id": 254861047,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "node",
+     "osm_id": 6139746500,
+     "lat": "3.1242885",
+     "lon": "101.6740792",
+     "category": "amenity",
+     "type": "arts_centre",
+     "place_rank": 30,
+     "importance": 7.505989166089902e-05,
+     "addresstype": "amenity",
+     "name": "A Place Where - APW",
+     "display_name": "A Place Where - APW, Jalan Riong, Bangsar, Kuala Lumpur, 59100, Malaysia",
+     "address": {
+      "amenity": "A Place Where - APW",
+      "road": "Jalan Riong",
+      "suburb": "Bangsar",
+      "city": "Kuala Lumpur",
+      "ISO3166-2-lvl4": "MY-14",
+      "postcode": "59100",
+      "country": "Malaysia",
+      "country_code": "my"
+     },
+     "boundingbox": [
+      "3.1242385",
+      "3.1243385",
+      "101.6740292",
+      "101.6741292"
+     ],
+     "_score": {
+      "hits": 2,
+      "all_tokens": true,
+      "named_filter": false,
+      "tokens": [
+       "bangsar",
+       "riong"
+      ]
+     }
+    },
+    {
+     "place_id": 255102840,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 564678825,
+     "lat": "3.1233391",
+     "lon": "101.6744098",
+     "category": "building",
+     "type": "commercial",
+     "place_rank": 30,
+     "importance": 7.505989166089902e-05,
+     "addresstype": "building",
+     "name": "A Place Where - APW",
+     "display_name": "A Place Where - APW, 31, Jalan Riong, Bangsar, Kuala Lumpur, 59100, Malaysia",
+     "address": {
+      "building": "A Place Where - APW",
+      "house_number": "31",
+      "road": "Jalan Riong",
+      "suburb": "Bangsar",
+      "city": "Kuala Lumpur",
+      "ISO3166-2-lvl4": "MY-14",
+      "postcode": "59100",
+      "country": "Malaysia",
+      "country_code": "my"
+     },
+     "boundingbox": [
+      "3.1228693",
+      "3.1240018",
+      "101.6733870",
+      "101.6751325"
+     ],
+     "_score": {
+      "hits": 2,
+      "all_tokens": true,
+      "named_filter": false,
+      "tokens": [
+       "bangsar",
+       "riong"
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "chosen": {
+  "query": "APW Bangsar",
+  "latitude": 3.1242885,
+  "longitude": 101.6740792,
+  "display_name": "A Place Where - APW, Jalan Riong, Bangsar, Kuala Lumpur, 59100, Malaysia",
+  "name": "A Place Where - APW",
+  "category": "amenity",
+  "type": "arts_centre",
+  "osm": "node/6139746500",
+  "tokens_matched": [
+   "bangsar",
+   "riong"
+  ],
+  "all_tokens": true,
+  "named_match": false
+ }
+}

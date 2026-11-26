@@ -1,0 +1,70 @@
+{
+ "venue_id": "kl-de410ec2db9b",
+ "name": "WeWork Malaysia — Event Space",
+ "checked_on": "2026-11-26",
+ "address": null,
+ "note": "WeWork's Malaysia event-space page is behind a Cloudflare challenge (403); the single Kuala Lumpur location OSM returns is recorded with that caveat.",
+ "attempts": [
+  {
+   "query": "WeWork Kuala Lumpur",
+   "url": "https://nominatim.openstreetmap.org/search?q=WeWork+Kuala+Lumpur&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+   "returned": 1,
+   "candidates": [
+    {
+     "place_id": 253424736,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "node",
+     "osm_id": 10701993371,
+     "lat": "3.1186464",
+     "lon": "101.6740140",
+     "category": "office",
+     "type": "coworking",
+     "place_rank": 30,
+     "importance": 7.505989166089902e-05,
+     "addresstype": "office",
+     "name": "WeWork",
+     "display_name": "WeWork, Medan Syed Putra Selatan, Seputeh, Kuala Lumpur, 50614, Malaysia",
+     "address": {
+      "office": "WeWork",
+      "road": "Medan Syed Putra Selatan",
+      "suburb": "Seputeh",
+      "city": "Kuala Lumpur",
+      "ISO3166-2-lvl4": "MY-14",
+      "postcode": "50614",
+      "country": "Malaysia",
+      "country_code": "my"
+     },
+     "boundingbox": [
+      "3.1185964",
+      "3.1186964",
+      "101.6739640",
+      "101.6740640"
+     ],
+     "_score": {
+      "hits": 1,
+      "all_tokens": true,
+      "named_filter": true,
+      "tokens": [
+       "wework"
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "chosen": {
+  "query": "WeWork Kuala Lumpur",
+  "latitude": 3.1186464,
+  "longitude": 101.674014,
+  "display_name": "WeWork, Medan Syed Putra Selatan, Seputeh, Kuala Lumpur, 50614, Malaysia",
+  "name": "WeWork",
+  "category": "office",
+  "type": "coworking",
+  "osm": "node/10701993371",
+  "tokens_matched": [
+   "wework"
+  ],
+  "all_tokens": true,
+  "named_match": true
+ }
+}

@@ -1,0 +1,151 @@
+{
+ "venue_id": "kl-ade0334f2820",
+ "name": "klpac — Pentas 2",
+ "checked_on": "2026-11-26",
+ "address": "Sentul Park, Jalan Strachan, off Jalan Sultan Azlan Shah, 51100 Kuala Lumpur",
+ "note": null,
+ "attempts": [
+  {
+   "query": "Jalan Strachan, Sentul, Kuala Lumpur",
+   "url": "https://nominatim.openstreetmap.org/search?q=Jalan+Strachan%2C+Sentul%2C+Kuala+Lumpur&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+   "returned": 3,
+   "candidates": [
+    {
+     "place_id": 255349447,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 170294926,
+     "lat": "3.1799542",
+     "lon": "101.6868150",
+     "category": "highway",
+     "type": "unclassified",
+     "place_rank": 26,
+     "importance": 0.053408393224994244,
+     "addresstype": "unclassified",
+     "name": "Jalan Strachan",
+     "display_name": "Jalan Strachan, Million Garden, Sentul, Kuala Lumpur, 51000, Malaysia",
+     "address": {
+      "road": "Jalan Strachan",
+      "neighbourhood": "Million Garden",
+      "suburb": "Sentul",
+      "city": "Kuala Lumpur",
+      "ISO3166-2-lvl4": "MY-14",
+      "postcode": "51000",
+      "country": "Malaysia",
+      "country_code": "my"
+     },
+     "boundingbox": [
+      "3.1785866",
+      "3.1813334",
+      "101.6861384",
+      "101.6874634"
+     ],
+     "_score": {
+      "hits": 2,
+      "all_tokens": true,
+      "named_filter": false,
+      "tokens": [
+       "strachan",
+       "sentul"
+      ]
+     }
+    },
+    {
+     "place_id": 252172345,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 992619802,
+     "lat": "3.1784424",
+     "lon": "101.6860688",
+     "category": "highway",
+     "type": "unclassified",
+     "place_rank": 26,
+     "importance": 0.053408393224994244,
+     "addresstype": "unclassified",
+     "name": "Jalan Strachan",
+     "display_name": "Jalan Strachan, Million Garden, Kampung Kasipillay, Kuala Lumpur, 51000, Malaysia",
+     "address": {
+      "road": "Jalan Strachan",
+      "neighbourhood": "Million Garden",
+      "hamlet": "Kampung Kasipillay",
+      "city": "Kuala Lumpur",
+      "ISO3166-2-lvl4": "MY-14",
+      "postcode": "51000",
+      "country": "Malaysia",
+      "country_code": "my"
+     },
+     "boundingbox": [
+      "3.1782994",
+      "3.1785866",
+      "101.6859965",
+      "101.6861384"
+     ],
+     "_score": {
+      "hits": 1,
+      "all_tokens": false,
+      "named_filter": false,
+      "tokens": [
+       "strachan"
+      ]
+     }
+    },
+    {
+     "place_id": 254848808,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 170294925,
+     "lat": "3.1821670",
+     "lon": "101.6853280",
+     "category": "highway",
+     "type": "service",
+     "place_rank": 27,
+     "importance": 0.040075059891660936,
+     "addresstype": "road",
+     "name": "Jalan Strachan",
+     "display_name": "Jalan Strachan, Million Garden, Sentul, Kuala Lumpur, 51000, Malaysia",
+     "address": {
+      "road": "Jalan Strachan",
+      "neighbourhood": "Million Garden",
+      "suburb": "Sentul",
+      "city": "Kuala Lumpur",
+      "ISO3166-2-lvl4": "MY-14",
+      "postcode": "51000",
+      "country": "Malaysia",
+      "country_code": "my"
+     },
+     "boundingbox": [
+      "3.1818477",
+      "3.1836694",
+      "101.6852246",
+      "101.6868127"
+     ],
+     "_score": {
+      "hits": 2,
+      "all_tokens": true,
+      "named_filter": false,
+      "tokens": [
+       "strachan",
+       "sentul"
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "chosen": {
+  "query": "Jalan Strachan, Sentul, Kuala Lumpur",
+  "latitude": 3.1799542,
+  "longitude": 101.686815,
+  "display_name": "Jalan Strachan, Million Garden, Sentul, Kuala Lumpur, 51000, Malaysia",
+  "name": "Jalan Strachan",
+  "category": "highway",
+  "type": "unclassified",
+  "osm": "way/170294926",
+  "tokens_matched": [
+   "strachan",
+   "sentul"
+  ],
+  "all_tokens": true,
+  "named_match": false
+ }
+}

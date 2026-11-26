@@ -1,0 +1,71 @@
+{
+ "venue_id": "kl-ce3f20a09b7e",
+ "name": "Kuala Lumpur Convention Centre — Plenary Hall",
+ "checked_on": "2026-11-26",
+ "address": null,
+ "note": "Same building as the Plenary Theatre; no street number printed by the operator page.",
+ "attempts": [
+  {
+   "query": "Kuala Lumpur Convention Centre",
+   "url": "https://nominatim.openstreetmap.org/search?q=Kuala+Lumpur+Convention+Centre&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+   "returned": 1,
+   "candidates": [
+    {
+     "place_id": 261431007,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 1124091368,
+     "lat": "3.1198508",
+     "lon": "101.6700656",
+     "category": "building",
+     "type": "yes",
+     "place_rank": 30,
+     "importance": 7.505989166089902e-05,
+     "addresstype": "building",
+     "name": "Convention Centre",
+     "display_name": "Convention Centre, Jalan Panah, Tenaga Nasional Berhad, Bangsar, Kuala Lumpur, 59100, Malaysia",
+     "address": {
+      "building": "Convention Centre",
+      "road": "Jalan Panah",
+      "industrial": "Tenaga Nasional Berhad",
+      "suburb": "Bangsar",
+      "city": "Kuala Lumpur",
+      "ISO3166-2-lvl4": "MY-14",
+      "postcode": "59100",
+      "country": "Malaysia",
+      "country_code": "my"
+     },
+     "boundingbox": [
+      "3.1195789",
+      "3.1200642",
+      "101.6696388",
+      "101.6704556"
+     ],
+     "_score": {
+      "hits": 1,
+      "all_tokens": true,
+      "named_filter": true,
+      "tokens": [
+       "convention centre"
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "chosen": {
+  "query": "Kuala Lumpur Convention Centre",
+  "latitude": 3.1198508,
+  "longitude": 101.6700656,
+  "display_name": "Convention Centre, Jalan Panah, Tenaga Nasional Berhad, Bangsar, Kuala Lumpur, 59100, Malaysia",
+  "name": "Convention Centre",
+  "category": "building",
+  "type": "yes",
+  "osm": "way/1124091368",
+  "tokens_matched": [
+   "convention centre"
+  ],
+  "all_tokens": true,
+  "named_match": true
+ }
+}

@@ -1,0 +1,110 @@
+{
+ "sha256_before": "c03f3aa08be5a0d140d4c903d8b8f2183f818138bbe23ab20d2d5e4d335251d3",
+ "sha256_after": "a93df91c19e52317da1f30315ed4bfe740f1eaa6d0b8ec501418d0dc958e7a64",
+ "bytes_before": 1873272,
+ "bytes_after": 1874381,
+ "top_level_changed_vs_pre_round2": [
+  "photos"
+ ],
+ "top_level_changed_vs_pre_r3b": [
+  "photos"
+ ],
+ "refresh_revision": 1,
+ "row_changes": [
+  {
+   "venue_id": "kl-5206ba734e80",
+   "venue": "W Kuala Lumpur — Studio 3",
+   "index": 0,
+   "url": "https://cache.marriott.com/content/dam/marriott-renditions/KULWH/kulwh-meeting-facilities-3802-hor-clsc.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=1920px:*",
+   "changed": {
+    "verified": {
+     "before": {
+      "bytes": 723984,
+      "content_type": "image/jpeg",
+      "status": 200
+     },
+     "after": {
+      "bytes": 733689,
+      "content_type": "image/jpeg",
+      "status": 200,
+      "note": "Dynamic Marriott resize transform (output-quality/downsize parameters): the endpoint re-encodes, so the byte count is a per-fetch snapshot and dimensions are the stable invariant. Dimensions re-checked and bytes re-measured 2026-11-26 (was 723984)."
+     }
+    }
+   }
+  },
+  {
+   "venue_id": "kl-977b423768cd",
+   "venue": "DOJO Coworking — Event Halls",
+   "index": 0,
+   "url": "https://workspacedojo.com/wp-content/uploads/2024/05/event-hall-dojo-1-1024x576.jpg",
+   "changed": {
+    "hotlink_ok": {
+     "before": true,
+     "after": false
+    },
+    "rights": {
+     "before": "Operator gallery asset, © DOJO Coworking Space; hotlinked from workspacedojo.com with attribution; the page publishes no separate licence.",
+     "after": "Operator gallery asset, © DOJO Coworking Space. The operator's host workspacedojo.com presents a TLS certificate that expired 2026-08-10, so the asset was only retrievable with certificate validation disabled (HTTP 200, 127,365 B under `curl -k`; validating curl exits 60, Python urllib raises CERTIFICATE_VERIFY_FAILED). Not hotlinkable: a browser blocks the image with a certificate error, so this record is evidence only and the venue's page shows no room photo from it. The page publishes no separate licence."
+    },
+    "verified": {
+     "before": {
+      "bytes": 127365,
+      "content_type": "image/jpeg",
+      "status": 200
+     },
+     "after": {
+      "bytes": 127365,
+      "content_type": "image/jpeg",
+      "status": 200,
+      "note": "Status and bytes measured with TLS certificate validation disabled (`curl -k`) because the host chain expired 2026-08-10; a validating client cannot load this URL. Re-checked 2026-11-26."
+     }
+    }
+   }
+  },
+  {
+   "venue_id": "kl-d05389364eb2",
+   "venue": "The St. Regis Kuala Lumpur — The Astor Rooms",
+   "index": 1,
+   "url": "https://cache.marriott.com/content/dam/marriott-renditions/KULXR/kulxr-astor-room-5291-hor-wide.jpg?output-quality=70&interpolation=progressive-bilinear&downsize=2880px:*",
+   "changed": {
+    "verified": {
+     "before": {
+      "bytes": 906235,
+      "content_type": "image/jpeg",
+      "status": 200
+     },
+     "after": {
+      "bytes": 833161,
+      "content_type": "image/jpeg",
+      "status": 200,
+      "note": "Dynamic Marriott resize transform (output-quality/downsize parameters): the endpoint re-encodes, so the byte count is a per-fetch snapshot and dimensions are the stable invariant. Dimensions re-checked and bytes re-measured 2026-11-26 (was 906235)."
+     }
+    }
+   }
+  }
+ ],
+ "distribution": {
+  "live_by_view_kind": {
+   "interior": 28,
+   "exterior": 43,
+   "floor_plan": 4,
+   "lobby": 1,
+   "layout": 3
+  },
+  "renderable_by_view_kind": {
+   "interior": 27,
+   "exterior": 43,
+   "floor_plan": 4,
+   "lobby": 1,
+   "layout": 3
+  },
+  "withheld": 26,
+  "photo_groups": 55
+ },
+ "outcomes": {
+  "no_image": 17,
+  "exterior_only": 9,
+  "room_level": 29,
+  "venues": 55
+ }
+}

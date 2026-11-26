@@ -1,0 +1,70 @@
+{
+ "venue_id": "kl-977b423768cd",
+ "name": "DOJO Coworking — Event Halls",
+ "checked_on": "2026-11-26",
+ "address": null,
+ "note": "workspacedojo.com TLS handshake failed on 2026-11-26 (curl exit 000); the venue is located by name in OSM.",
+ "attempts": [
+  {
+   "query": "DOJO Coworking Kuala Lumpur",
+   "url": "https://nominatim.openstreetmap.org/search?q=DOJO+Coworking+Kuala+Lumpur&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+   "returned": 1,
+   "candidates": [
+    {
+     "place_id": 256057592,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "node",
+     "osm_id": 10861901305,
+     "lat": "3.1520515",
+     "lon": "101.7062312",
+     "category": "office",
+     "type": "company",
+     "place_rank": 30,
+     "importance": 7.505989166089902e-05,
+     "addresstype": "office",
+     "name": "DOJO Coworking space",
+     "display_name": "DOJO Coworking space, Jalan Puncak, Bukit Bintang, Kuala Lumpur, 50250, Malaysia",
+     "address": {
+      "office": "DOJO Coworking space",
+      "road": "Jalan Puncak",
+      "suburb": "Bukit Bintang",
+      "city": "Kuala Lumpur",
+      "ISO3166-2-lvl4": "MY-14",
+      "postcode": "50250",
+      "country": "Malaysia",
+      "country_code": "my"
+     },
+     "boundingbox": [
+      "3.1520015",
+      "3.1521015",
+      "101.7061812",
+      "101.7062812"
+     ],
+     "_score": {
+      "hits": 1,
+      "all_tokens": true,
+      "named_filter": true,
+      "tokens": [
+       "dojo"
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "chosen": {
+  "query": "DOJO Coworking Kuala Lumpur",
+  "latitude": 3.1520515,
+  "longitude": 101.7062312,
+  "display_name": "DOJO Coworking space, Jalan Puncak, Bukit Bintang, Kuala Lumpur, 50250, Malaysia",
+  "name": "DOJO Coworking space",
+  "category": "office",
+  "type": "company",
+  "osm": "node/10861901305",
+  "tokens_matched": [
+   "dojo"
+  ],
+  "all_tokens": true,
+  "named_match": true
+ }
+}

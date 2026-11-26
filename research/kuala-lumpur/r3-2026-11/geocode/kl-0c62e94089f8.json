@@ -1,0 +1,22 @@
+{
+ "venue_id": "kl-0c62e94089f8",
+ "name": "MATRADE Exhibition and Convention Centre",
+ "checked_on": "2026-11-26",
+ "address": "Level 3, East Wing, Menara MATRADE, Jalan Sultan Haji Ahmad Shah, 50480 Kuala Lumpur",
+ "note": "Secondary venue directory printing the MECC address; mecc.matrade.gov.my did not resolve and the matrade.gov.my MECC path returns 404.",
+ "attempts": [
+  {
+   "query": "Menara MATRADE, Jalan Sultan Haji Ahmad Shah, 50480 Kuala Lumpur",
+   "url": "https://nominatim.openstreetmap.org/search?q=Menara+MATRADE%2C+Jalan+Sultan+Haji+Ahmad+Shah%2C+50480+Kuala+Lumpur&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+   "returned": 0,
+   "candidates": []
+  },
+  {
+   "query": "Menara MATRADE Kuala Lumpur",
+   "url": "https://nominatim.openstreetmap.org/search?q=Menara+MATRADE+Kuala+Lumpur&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+   "returned": 0,
+   "candidates": []
+  }
+ ],
+ "chosen": null
+}

@@ -1,0 +1,111 @@
+{
+ "venue_id": "kl-7dd2a97334c6",
+ "name": "The Hive — Kuala Lumpur event spaces",
+ "checked_on": "2026-11-26",
+ "address": null,
+ "note": "The operator event-space directory lists its Kuala Lumpur-branded location as The Hive Bukit KL at Bukit Kuala Lumpur Retail Park; no street number is printed, so the pin is the area the operator names.",
+ "attempts": [
+  {
+   "query": "Bukit Kuala Lumpur Retail Park, Kuala Lumpur",
+   "url": "https://nominatim.openstreetmap.org/search?q=Bukit+Kuala+Lumpur+Retail+Park%2C+Kuala+Lumpur&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+   "returned": 0,
+   "candidates": []
+  },
+  {
+   "query": "The Hive Bukit KL, Kuala Lumpur",
+   "url": "https://nominatim.openstreetmap.org/search?q=The+Hive+Bukit+KL%2C+Kuala+Lumpur&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+   "returned": 2,
+   "candidates": [
+    {
+     "place_id": 253744300,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "node",
+     "osm_id": 6281878542,
+     "lat": "3.1400822",
+     "lon": "101.7211620",
+     "category": "amenity",
+     "type": "pub",
+     "place_rank": 30,
+     "importance": 7.505989166089902e-05,
+     "addresstype": "amenity",
+     "name": "The Iron Fairies KL",
+     "display_name": "The Iron Fairies KL, Hive, TREC KL, Maluri, Pudu, Kuala Lumpur, 55188, Malaysia",
+     "address": {
+      "amenity": "The Iron Fairies KL",
+      "road": "Hive",
+      "retail": "TREC KL",
+      "suburb": "Maluri",
+      "city": "Kuala Lumpur",
+      "ISO3166-2-lvl4": "MY-14",
+      "postcode": "55188",
+      "country": "Malaysia",
+      "country_code": "my"
+     },
+     "boundingbox": [
+      "3.1400322",
+      "3.1401322",
+      "101.7211120",
+      "101.7212120"
+     ],
+     "_score": {
+      "hits": 0,
+      "all_tokens": false,
+      "named_filter": false,
+      "tokens": []
+     }
+    },
+    {
+     "place_id": 255465974,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "node",
+     "osm_id": 12702279182,
+     "lat": "3.1403047",
+     "lon": "101.7211119",
+     "category": "amenity",
+     "type": "bar",
+     "place_rank": 30,
+     "importance": 7.505989166089902e-05,
+     "addresstype": "amenity",
+     "name": "The China Bar",
+     "display_name": "The China Bar, Hive, TREC KL, Maluri, Pudu, Kuala Lumpur, 55188, Malaysia",
+     "address": {
+      "amenity": "The China Bar",
+      "road": "Hive",
+      "retail": "TREC KL",
+      "suburb": "Maluri",
+      "city": "Kuala Lumpur",
+      "ISO3166-2-lvl4": "MY-14",
+      "postcode": "55188",
+      "country": "Malaysia",
+      "country_code": "my"
+     },
+     "boundingbox": [
+      "3.1402547",
+      "3.1403547",
+      "101.7210619",
+      "101.7211619"
+     ],
+     "_score": {
+      "hits": 0,
+      "all_tokens": false,
+      "named_filter": false,
+      "tokens": []
+     }
+    }
+   ]
+  }
+ ],
+ "chosen": {
+  "query": "The Hive Bukit KL, Kuala Lumpur",
+  "latitude": 3.1400822,
+  "longitude": 101.721162,
+  "display_name": "The Iron Fairies KL, Hive, TREC KL, Maluri, Pudu, Kuala Lumpur, 55188, Malaysia",
+  "name": "The Iron Fairies KL",
+  "category": "amenity",
+  "type": "pub",
+  "osm": "node/6281878542",
+  "tokens_matched": [],
+  "all_tokens": false,
+  "named_match": false
+ }
+}

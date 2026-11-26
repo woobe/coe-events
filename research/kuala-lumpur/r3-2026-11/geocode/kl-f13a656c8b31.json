@@ -1,0 +1,111 @@
+{
+ "venue_id": "kl-f13a656c8b31",
+ "name": "Mandarin Oriental Kuala Lumpur — Function Space",
+ "checked_on": "2026-11-26",
+ "address": "Kuala Lumpur City Centre, 50088 Kuala Lumpur",
+ "note": null,
+ "attempts": [
+  {
+   "query": "Mandarin Oriental Kuala Lumpur",
+   "url": "https://nominatim.openstreetmap.org/search?q=Mandarin+Oriental+Kuala+Lumpur&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+   "returned": 2,
+   "candidates": [
+    {
+     "place_id": 252384834,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "relation",
+     "osm_id": 18940844,
+     "lat": "3.1557412",
+     "lon": "101.7118967",
+     "category": "building",
+     "type": "hotel",
+     "place_rank": 30,
+     "importance": 7.505989166089902e-05,
+     "addresstype": "building",
+     "name": "Mandarin Oriental, Kuala Lumpur",
+     "display_name": "Mandarin Oriental, Kuala Lumpur, Persiaran Petronas, Kuala Lumpur City Centre (KLCC), Kampung Cendana, Kuala Lumpur, 50088, Malaysia",
+     "address": {
+      "building": "Mandarin Oriental, Kuala Lumpur",
+      "road": "Persiaran Petronas",
+      "quarter": "Kuala Lumpur City Centre (KLCC)",
+      "hamlet": "Kampung Cendana",
+      "city": "Kuala Lumpur",
+      "ISO3166-2-lvl4": "MY-14",
+      "postcode": "50088",
+      "country": "Malaysia",
+      "country_code": "my"
+     },
+     "boundingbox": [
+      "3.1552710",
+      "3.1562118",
+      "101.7115788",
+      "101.7122063"
+     ],
+     "_score": {
+      "hits": 1,
+      "all_tokens": true,
+      "named_filter": true,
+      "tokens": [
+       "mandarin"
+      ]
+     }
+    },
+    {
+     "place_id": 255212202,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "node",
+     "osm_id": 5792437253,
+     "lat": "3.1559992",
+     "lon": "101.7116181",
+     "category": "tourism",
+     "type": "hotel",
+     "place_rank": 30,
+     "importance": 7.505989166089902e-05,
+     "addresstype": "tourism",
+     "name": "Mandarin Oriental Kuala Lumpur",
+     "display_name": "Mandarin Oriental Kuala Lumpur, Persiaran Petronas, Kuala Lumpur City Centre (KLCC), Kampung Cendana, Kuala Lumpur, 50088, Malaysia",
+     "address": {
+      "tourism": "Mandarin Oriental Kuala Lumpur",
+      "road": "Persiaran Petronas",
+      "quarter": "Kuala Lumpur City Centre (KLCC)",
+      "hamlet": "Kampung Cendana",
+      "city": "Kuala Lumpur",
+      "ISO3166-2-lvl4": "MY-14",
+      "postcode": "50088",
+      "country": "Malaysia",
+      "country_code": "my"
+     },
+     "boundingbox": [
+      "3.1559492",
+      "3.1560492",
+      "101.7115681",
+      "101.7116681"
+     ],
+     "_score": {
+      "hits": 1,
+      "all_tokens": true,
+      "named_filter": true,
+      "tokens": [
+       "mandarin"
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "chosen": {
+  "query": "Mandarin Oriental Kuala Lumpur",
+  "latitude": 3.1557412,
+  "longitude": 101.7118967,
+  "display_name": "Mandarin Oriental, Kuala Lumpur, Persiaran Petronas, Kuala Lumpur City Centre (KLCC), Kampung Cendana, Kuala Lumpur, 50088, Malaysia",
+  "name": "Mandarin Oriental, Kuala Lumpur",
+  "category": "building",
+  "type": "hotel",
+  "osm": "relation/18940844",
+  "tokens_matched": [
+   "mandarin"
+  ],
+  "all_tokens": true,
+  "named_match": true
+ }
+}

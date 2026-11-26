@@ -1,0 +1,190 @@
+{
+ "venue_id": "kl-a72a6c5f539d",
+ "name": "Colony — Event Lounge at KLCC",
+ "checked_on": "2026-11-26",
+ "address": "6 Jalan Kia Peng, 50450 Kuala Lumpur",
+ "note": null,
+ "attempts": [
+  {
+   "query": "6 Jalan Kia Peng, 50450 Kuala Lumpur, Malaysia",
+   "url": "https://nominatim.openstreetmap.org/search?q=6+Jalan+Kia+Peng%2C+50450+Kuala+Lumpur%2C+Malaysia&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+   "returned": 4,
+   "candidates": [
+    {
+     "place_id": 256321879,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "relation",
+     "osm_id": 9226591,
+     "lat": "3.1521760",
+     "lon": "101.7129298",
+     "category": "building",
+     "type": "apartments",
+     "place_rank": 30,
+     "importance": 7.505989166089902e-05,
+     "addresstype": "building",
+     "name": "",
+     "display_name": "6, Jalan Kia Peng, Bukit Bintang, Kuala Lumpur, 50450, Malaysia",
+     "address": {
+      "house_number": "6",
+      "road": "Jalan Kia Peng",
+      "suburb": "Bukit Bintang",
+      "city": "Kuala Lumpur",
+      "ISO3166-2-lvl4": "MY-14",
+      "postcode": "50450",
+      "country": "Malaysia",
+      "country_code": "my"
+     },
+     "boundingbox": [
+      "3.1519645",
+      "3.1524255",
+      "101.7124316",
+      "101.7131324"
+     ],
+     "_score": {
+      "hits": 1,
+      "all_tokens": true,
+      "named_filter": false,
+      "tokens": [
+       "kia peng"
+      ]
+     }
+    },
+    {
+     "place_id": 255863568,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "node",
+     "osm_id": 6138428907,
+     "lat": "3.1520107",
+     "lon": "101.7130582",
+     "category": "office",
+     "type": "coworking",
+     "place_rank": 30,
+     "importance": 7.505989166089902e-05,
+     "addresstype": "office",
+     "name": "Colony @ KLCC",
+     "display_name": "Colony @ KLCC, 6, Jalan Kia Peng, Bukit Bintang, Kuala Lumpur, 50450, Malaysia",
+     "address": {
+      "office": "Colony @ KLCC",
+      "house_number": "6",
+      "road": "Jalan Kia Peng",
+      "suburb": "Bukit Bintang",
+      "city": "Kuala Lumpur",
+      "ISO3166-2-lvl4": "MY-14",
+      "postcode": "50450",
+      "country": "Malaysia",
+      "country_code": "my"
+     },
+     "boundingbox": [
+      "3.1519607",
+      "3.1520607",
+      "101.7130082",
+      "101.7131082"
+     ],
+     "_score": {
+      "hits": 1,
+      "all_tokens": true,
+      "named_filter": false,
+      "tokens": [
+       "kia peng"
+      ]
+     }
+    },
+    {
+     "place_id": 256074303,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "node",
+     "osm_id": 6158517672,
+     "lat": "3.1520806",
+     "lon": "101.7130911",
+     "category": "amenity",
+     "type": "restaurant",
+     "place_rank": 30,
+     "importance": 7.505989166089902e-05,
+     "addresstype": "amenity",
+     "name": "Sushi Oribe",
+     "display_name": "Sushi Oribe, 6, Jalan Kia Peng, Bukit Bintang, Kuala Lumpur, 50450, Malaysia",
+     "address": {
+      "amenity": "Sushi Oribe",
+      "house_number": "6",
+      "road": "Jalan Kia Peng",
+      "suburb": "Bukit Bintang",
+      "city": "Kuala Lumpur",
+      "ISO3166-2-lvl4": "MY-14",
+      "postcode": "50450",
+      "country": "Malaysia",
+      "country_code": "my"
+     },
+     "boundingbox": [
+      "3.1520306",
+      "3.1521306",
+      "101.7130411",
+      "101.7131411"
+     ],
+     "_score": {
+      "hits": 1,
+      "all_tokens": true,
+      "named_filter": false,
+      "tokens": [
+       "kia peng"
+      ]
+     }
+    },
+    {
+     "place_id": 256211926,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "node",
+     "osm_id": 12651675975,
+     "lat": "3.1521152",
+     "lon": "101.7129055",
+     "category": "leisure",
+     "type": "fitness_centre",
+     "place_rank": 30,
+     "importance": 7.505989166089902e-05,
+     "addresstype": "leisure",
+     "name": "Harvest Fitness",
+     "display_name": "Harvest Fitness, 6, Jalan Kia Peng, Bukit Bintang, Kuala Lumpur, 50450, Malaysia",
+     "address": {
+      "leisure": "Harvest Fitness",
+      "house_number": "6",
+      "road": "Jalan Kia Peng",
+      "suburb": "Bukit Bintang",
+      "city": "Kuala Lumpur",
+      "ISO3166-2-lvl4": "MY-14",
+      "postcode": "50450",
+      "country": "Malaysia",
+      "country_code": "my"
+     },
+     "boundingbox": [
+      "3.1520652",
+      "3.1521652",
+      "101.7128555",
+      "101.7129555"
+     ],
+     "_score": {
+      "hits": 1,
+      "all_tokens": true,
+      "named_filter": false,
+      "tokens": [
+       "kia peng"
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "chosen": {
+  "query": "6 Jalan Kia Peng, 50450 Kuala Lumpur, Malaysia",
+  "latitude": 3.152176,
+  "longitude": 101.7129298,
+  "display_name": "6, Jalan Kia Peng, Bukit Bintang, Kuala Lumpur, 50450, Malaysia",
+  "name": "",
+  "category": "building",
+  "type": "apartments",
+  "osm": "relation/9226591",
+  "tokens_matched": [
+   "kia peng"
+  ],
+  "all_tokens": true,
+  "named_match": false
+ }
+}

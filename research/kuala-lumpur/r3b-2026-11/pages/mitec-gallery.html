@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E77VBWJFEX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-E77VBWJFEX');
+    </script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index,follow" />
+    <title>Photo Gallery</title>
+    <link rel="shortcut icon" href="/static/img/favicon/favicon.png" />
+    <link rel="apple-touch-icon" href="/static/img/favicon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/static/img/favicon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/static/img/favicon/apple-touch-icon-114x114.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/static/plugins/magnific_popup/magnific-popup.css" />
+    <link rel="stylesheet" href="/static/plugins/slick/slick.css" />
+    <link rel="stylesheet" href="/static/plugins/slick/slick-theme.css" />
+    <link rel="stylesheet" href="/static/css/animate.min.css" />
+    <link rel="stylesheet" href="/static/css/fancybox/core.css" />
+    <link rel="stylesheet" href="/static/css/fancybox/fullscreen.css" />
+    <link rel="stylesheet" href="/static/css/fancybox/slideshow.css" />
+    <link rel="stylesheet" href="/static/css/fancybox/thumbs.css" />
+    <link rel="stylesheet" href="/static/css/all.min.css" />
+    <link rel="stylesheet" href="/static/css/daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" href="/static/css/my_style.css" />
+        <script src="https://www.google.com/recaptcha/api.js?render=6LepS10tAAAAANsslNiwwmS4y7dVh_kPT4BRMQSc"></script>
+    
+</head>
+<body>
+        <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+
+    <div class="wrapper">
+        
+
+<header>
+    <div class="navbar-default">
+        <nav class="nav-mitec navbar navbar-expand-lg fixed-top mitec-background-white d-block">
+            <div class="top-search bg-search">
+                <div class="container px-lg-1-6 px-xl-2-5 px-xxl-2-9">
+                    <form class="search-form" action="/results" method="get" role="search">
+                        <label class="visually-hidden" for="site-search">Search MITEC</label>
+                        <div class="input-group">
+                            <span class="input-group-addon cursor-pointer">
+                                <button class="search-form_submit fa-solid fa-magnifying-glass text-white" type="submit"></button>
+                            </span>
+                            <input id="site-search" type="text" class="search-form_input form-control" name="s" autocomplete="off" placeholder="Search" />
+                            <span class="input-group-addon close-search mt-2"><i class="fas fa-times fa-lg text-white"></i></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <a class="navbar-brand align-self-center py-0" href="/">
+                    <img src="/static/img/logos/mitec-new-logo.png" alt="MITEC" class="logo-image" />
+                </a>
+                <div class="d-flex order-lg-last">
+                    <form id="set_language_en" action="/i18n/set-language" method="post" style="display:inline;">
+                        <input name="__RequestVerificationToken" type="hidden" value="CfDJ8HX21oHul11BmCHTRgQ_bNU5S16338ET7-VQVnSzbcZu2qKWJltvb6mQzBE1N9MSmlFpSaH9Fbe5nATQ8EnzXPxptKbSZQv5NAqIT2ufKfykKZbGT8kRGn3Oj5IcPg4ULRBMENbRztj8-PGp62FGDHc" />
+                        <input name="next" type="hidden" value="/medias/photo-gallery" />
+                        <input name="language" type="hidden" value="en" />
+                        <a href="javascript:void(0);" onclick="document.getElementById('set_language_en').submit();" class="translationButton d-none d-lg-inline-block">
+                                <u><strong>EN</strong></u>
+                        </a>
+                    </form>
+                    <span class="d-none d-lg-inline-block">/</span>
+                    <form id="set_language_zh" action="/i18n/set-language" method="post" style="display:inline;">
+                        <input name="__RequestVerificationToken" type="hidden" value="CfDJ8HX21oHul11BmCHTRgQ_bNU5S16338ET7-VQVnSzbcZu2qKWJltvb6mQzBE1N9MSmlFpSaH9Fbe5nATQ8EnzXPxptKbSZQv5NAqIT2ufKfykKZbGT8kRGn3Oj5IcPg4ULRBMENbRztj8-PGp62FGDHc" />
+                        <input name="next" type="hidden" value="/medias/photo-gallery" />
+                        <input name="language" type="hidden" value="zh-hans" />
+                        <a href="javascript:void(0);" onclick="document.getElementById('set_language_zh').submit();" class="translationButton d-none d-lg-inline-block">
+&#21326;&#25991;                        </a>
+                    </form>
+                </div>
+                <div class="d-flex order-lg-last">
+                    <div class="attr-nav nav-search align-self-center px-2">
+                        <button class="btn-search d-block" type="button" aria-label="Open search">
+                            <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+                        </button>
+                    </div>
+                    <button class="navbar-toggler align-self-center px-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                <div class="navbar-mitec navbar-collapse collapse" id="navbarCollapse">
+                    <ul class="nav-mitec navbar-nav mx-auto mb-2 mb-md-0">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="/">Home</a>
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Organise</a>
+                            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-right" data-bs-popper="static">
+                                <li><a href="/organise/venues" class="dropdown-item">Venues</a></li>
+                                <li><a href="/organise/package-promotions" class="dropdown-item">Packages and Promotions</a></li>
+                                <li><a href="/organise/fnb-experience" class="dropdown-item">F&amp;B Experience</a></li>
+                                <li><a href="/organise/services" class="dropdown-item">Services</a></li>
+                                <li><a href="/organise/facilites" class="dropdown-item">Facilities</a></li>
+                                <li><a href="/policy/guidelines" class="dropdown-item">Policies &amp; Guidelines</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Visit</a>
+                            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-right" data-bs-popper="static">
+                                <li><a href="/visit/event-calendar" class="dropdown-item">Event Calendar</a></li>
+                                <li><a href="/visit/getting-to-mitec" class="dropdown-item">Getting to MITEC</a></li>
+                                <li><a href="/visit/fnb-options" class="dropdown-item">F&amp;B Options</a></li>
+                                <li><a href="/visit/experience-kuala-lumpur" class="dropdown-item">Experience Kuala Lumpur</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown ">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">About</a>
+                            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-right" data-bs-popper="static">
+                                <li><a href="/about/who-we-are" class="dropdown-item">Who We Are</a></li>
+                                <li class="dropdown-submenu dropdown">
+                                    <a href="#" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown">Leadership</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="/about/leadership/bod" class="dropdown-item">BOD</a></li>
+                                        <li><a href="/about/leadership/management" class="dropdown-item">MANAGEMENT</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="/about/award" class="dropdown-item">Awards</a></li>
+                                <li><a href="/about/sustainability" class="dropdown-item">Sustainability</a></li>
+                                <li><a href="/about/industry-partners" class="dropdown-item">Industry Partners</a></li>
+                                <li><a href="/about/testimonials" class="dropdown-item">Testimonials</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown active">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Media</a>
+                            <ul class="dropdown-menu dropdown-menu-end dropdown-menu-right" data-bs-popper="static">
+                                <li><a href="/media/press-release" class="dropdown-item">Press Releases</a></li>
+                                <li><a href="/medias/photo-gallery" class="dropdown-item">Photo Gallery</a></li>
+                                <li><a href="/media/newsletter" class="dropdown-item">Myscoop NewsLetter</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://mitec-orders.com.my/" target="_blank" rel="noreferrer">Exhibitor Order Portal</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+
+    <div class="banner-container">
+        <div class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="img-overlay">
+                        <div class="overlay"></div>
+                        <img src="/media/media/sub-banner/b5ab7c08-f463-4b88-b8bc-c9d658a284801ad43e9991.jpg" class="w-100" alt="Photo Gallery" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="mitec-side-navigation-bar">
+    <nav class="mitec-side-nav">
+        <ul class="mitec-side-nav-menu list-unstyled">
+            <li class="border-bottom">
+                <a href="#" class="mitec-sidenav-dropdown">
+                    <img src="/static/img/side_nav/clock2.png" class="img-fluid" alt="Time" />
+                </a>
+                <div class="mitec-sidenav-dropdown-content">
+                    <div class="container py-3 px-3">
+                        <div id="utc" class="pb-3">GMT <span id="gmt">+08:00</span></div>
+                        <div class="time-frame">
+                            <div id="date-part"></div>
+                            <div id="time-part" class="fs-5 fw-medium"></div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="border-bottom">
+                <a href="#" class="mitec-sidenav-dropdown">
+                    <img src="/static/img/side_nav/weather2.png" class="img-fluid" alt="KUALA LUMPUR WEATHER" />
+                </a>
+                <div class="mitec-sidenav-dropdown-content">
+                    <a class="weatherwidget-io" href="https://forecast7.com/en/3d14101d69/kuala-lumpur/" data-label_1="KUALA LUMPUR" data-label_2="WEATHER" data-days="3" data-theme="sky" data-basecolor="#234280">KUALA LUMPUR WEATHER</a>
+                    <script>
+                        !function (d, s, id) {
+                            var js, fjs = d.getElementsByTagName(s)[0];
+                            if (!d.getElementById(id)) {
+                                js = d.createElement(s);
+                                js.id = id;
+                                js.src = 'https://weatherwidget.io/js/widget.min.js';
+                                fjs.parentNode.insertBefore(js, fjs);
+                            }
+                        }(document, 'script', 'weatherwidget-io-js');
+                    </script>
+                </div>
+            </li>
+            <li class="border-bottom">
+                <a href="#" class="mitec-sidenav-dropdown">
+                    <img src="/static/img/side_nav/currency2.png" class="img-fluid" alt="Currency Converter" />
+                </a>
+                <div class="mitec-sidenav-dropdown-content">
+                    <div style="width:248px; height:auto; border:1px solid #234280; text-align:center; font-size:14px; font-family:sans-serif,Arial,Helvetica; border-top-right-radius:5px; border-top-left-radius:5px; background-color:#F8F8F8;">
+                        <div style="width:100%; height:2.2rem; padding:5px 0 0; background-color:#234280; font-weight:bold;">
+                            <a rel="nofollow" style="color:#FFFFFF; text-decoration:none;" href="https://www.fxexchangerate.com/" target="_blank" rel="noreferrer">
+                                Currency Converter
+                            </a>
+                        </div>
+                        <script type="text/javascript"
+                                src="https://w.fxexchangerate.com/converter.php?fm=USD&ft=MYR&lg=en&am=1&ty=1">
+                        </script>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <a href="/request-proposal" class="mitec-sidenav-dropdown">
+                    <img src="/static/img/side_nav/request_proposal2.png" class="img-fluid" alt="Request For Proposal" />
+                </a>
+                <div class="mitec-sidenav-dropdown-content">
+                    <div class="container py-3 px-3">
+                        <div class="fs-6 mitec-bold"><a href="/request-proposal">Request For Proposal</a></div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+
+        
+<section class="photo-gallery-page">
+    <div class="container-fluid">
+        <div class="mitec-full mt-4 pt-4">
+            <div class="mitec-photo_gallery-content">
+                <div class="row mb-3 text-start text-color1">
+                    <h1 class="page-title">Photo Gallery</h1>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="event-container">
+                            <div id="event-floating-container">
+                                <div class="event-list-con">
+                                    <div class="event-list rounded-4">
+                                        <ul>
+                                            <li class="p-0"><h2>Category</h2></li>
+                                                    <li><a href="/medias/photo-gallery/exhibitions" class="active">Exhibitions</a></li>
+                                                    <li class="event-list-dropdown ">
+                                                        <a class="event-list-dropbtn" data-bs-toggle="collapse" data-bs-target="#collapseDropdown36cdafa2-5289-4a9e-8ce7-6f903d177c7e"> <span>Conferences</span> </a>
+                                                        <div class="collapse " id="collapseDropdown36cdafa2-5289-4a9e-8ce7-6f903d177c7e">
+                                                            <ul class="event-list-dropdown-content">
+                                                                    <li><a href="/medias/photo-gallery/ballroom" class="">Ballroom</a></li>
+                                                                    <li><a href="/medias/photo-gallery/hall-9-11" class="">Hall 9-11</a></li>
+                                                                    <li><a href="/medias/photo-gallery/level-1a" class="">Level 1A</a></li>
+                                                                    <li><a href="/medias/photo-gallery/meeting-rooms" class="">Meeting Rooms</a></li>
+                                                                    <li><a href="/medias/photo-gallery/novel" class="">Novel</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li class="event-list-dropdown ">
+                                                        <a class="event-list-dropbtn" data-bs-toggle="collapse" data-bs-target="#collapseDropdownd367740c-aa76-4d16-b7aa-6b7cd29e9164"> <span>Banquet/ Culinary</span> </a>
+                                                        <div class="collapse " id="collapseDropdownd367740c-aa76-4d16-b7aa-6b7cd29e9164">
+                                                            <ul class="event-list-dropdown-content">
+                                                                    <li><a href="/medias/photo-gallery/chinese" class="">Chinese</a></li>
+                                                                    <li><a href="/medias/photo-gallery/indian" class="">Indian</a></li>
+                                                                    <li><a href="/medias/photo-gallery/malay" class="">Malay</a></li>
+                                                                    <li><a href="/medias/photo-gallery/others" class="">Others</a></li>
+                                                                    <li><a href="/medias/photo-gallery/western" class="">Western</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </li>
+                                                    <li><a href="/medias/photo-gallery/lifestyle" class="">Lifestyle</a></li>
+                                                    <li><a href="/medias/photo-gallery/interior-of-mitec" class="">Interior of MITEC</a></li>
+                                                    <li><a href="/medias/photo-gallery/exterior-of-mitec" class="">Exterior of MITEC</a></li>
+                                        </ul>
+                                    </div>
+                                    <div id="event-list-button">
+                                        <div class="icon"><i class="fa-solid fa-bars-staggered"></i></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="gallery-album mb-5">
+                                <div class="row">
+                                        <div class="col-sm-4">
+                                            <figure class="gallery-effect gallery-effect-figure">
+                                                <div class="gallery-image-container">
+                                                        <img src="/media/media/photo-gallery/d896971d-0898-4f5f-99a4-1ed059744aa87a725a937c.jpg" class="img-responsive lazy" alt="Gallery image" />
+                                                </div>
+                                                <figcaption>
+                                                        <a href="/media/media/photo-gallery/d896971d-0898-4f5f-99a4-1ed059744aa87a725a937c.jpg" data-fancybox="album-exhibitions">
+                                                            <div class="gallery-tab-text"></div>
+                                                        </a>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <figure class="gallery-effect gallery-effect-figure">
+                                                <div class="gallery-image-container">
+                                                        <img src="/media/media/photo-gallery/4597bf22-6aa7-4779-81db-4279d7e0da3d899b2e6768.jpg" class="img-responsive lazy" alt="Gallery image" />
+                                                </div>
+                                                <figcaption>
+                                                        <a href="/media/media/photo-gallery/4597bf22-6aa7-4779-81db-4279d7e0da3d899b2e6768.jpg" data-fancybox="album-exhibitions">
+                                                            <div class="gallery-tab-text"></div>
+                                                        </a>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <figure class="gallery-effect gallery-effect-figure">
+                                                <div class="gallery-image-container">
+                                                        <img src="/media/media/photo-gallery/9817ff4c-1dde-44a4-99ce-360768e48e142dba030897.jpg" class="img-responsive lazy" alt="Gallery image" />
+                                                </div>
+                                                <figcaption>
+                                                        <a href="/media/media/photo-gallery/9817ff4c-1dde-44a4-99ce-360768e48e142dba030897.jpg" data-fancybox="album-exhibitions">
+                                                            <div class="gallery-tab-text"></div>
+                                                        </a>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <figure class="gallery-effect gallery-effect-figure">
+                                                <div class="gallery-image-container">
+                                                        <img src="/media/media/photo-gallery/a2a42255-b611-4d47-99ba-44f95eb708bc8eb35b54cc.jpg" class="img-responsive lazy" alt="Gallery image" />
+                                                </div>
+                                                <figcaption>
+                                                        <a href="/media/media/photo-gallery/a2a42255-b611-4d47-99ba-44f95eb708bc8eb35b54cc.jpg" data-fancybox="album-exhibitions">
+                                                            <div class="gallery-tab-text"></div>
+                                                        </a>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <figure class="gallery-effect gallery-effect-figure">
+                                                <div class="gallery-image-container">
+                                                        <img src="/media/media/photo-gallery/396ce42e-b13b-4a4c-a003-d40b57a30944a30f1c3a8b.jpg" class="img-responsive lazy" alt="Gallery image" />
+                                                </div>
+                                                <figcaption>
+                                                        <a href="/media/media/photo-gallery/396ce42e-b13b-4a4c-a003-d40b57a30944a30f1c3a8b.jpg" data-fancybox="album-exhibitions">
+                                                            <div class="gallery-tab-text"></div>
+                                                        </a>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <figure class="gallery-effect gallery-effect-figure">
+                                                <div class="gallery-image-container">
+                                                        <img src="/media/media/photo-gallery/8c9e757e-7fcf-4c44-a5a7-0416d5eef24a6322025673.jpg" class="img-responsive lazy" alt="Gallery image" />
+                                                </div>
+                                                <figcaption>
+                                                        <a href="/media/media/photo-gallery/8c9e757e-7fcf-4c44-a5a7-0416d5eef24a6322025673.jpg" data-fancybox="album-exhibitions">
+                                                            <div class="gallery-tab-text"></div>
+                                                        </a>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <figure class="gallery-effect gallery-effect-figure">
+                                                <div class="gallery-image-container">
+                                                        <img src="/media/media/photo-gallery/93944f12-0623-4378-8711-b025863e2e26515013269e.jpg" class="img-responsive lazy" alt="Gallery image" />
+                                                </div>
+                                                <figcaption>
+                                                        <a href="/media/media/photo-gallery/93944f12-0623-4378-8711-b025863e2e26515013269e.jpg" data-fancybox="album-exhibitions">
+                                                            <div class="gallery-tab-text"></div>
+                                                        </a>
+                                                </figcaption>
+                                            </figure>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<footer class="footerinfo">
+    <div class="mitec-medium py-5">
+        <div class="container-fluid">
+            <div class="mitec-full">
+                <div class="row justify-content-between">
+                    <div class="col-12 col-sm-6 col-xl order-first my-4">
+                        <div class="footer-logo">
+                            <img class="img-fluid lazy" src="/static/img/logos/logo-footer.png" data-src="~/static/img/logos/logo-footer.png" alt="" />
+                        </div>
+                        <p class="footertitle">Stay up to date with MITEC</p>
+                        <div class="footerform">
+                            <form class="mitec-pulse-mail ajax-subscription-form" action="/signup/" method="post" data-success-alert="Thank you! Your message has been successfully sent. We will contact you very soon!">
+                                <p>
+                                    <label class="form-label" for="id_email">Email:</label>
+                                    <input id="id_email" name="email" type="email" maxlength="100" class="form-control" placeholder="Your email address" required />
+                                </p>
+                                <input type="hidden" id="g-recaptcha-response" name="recaptcha" />
+                                <button type="submit" class="border border-0 rounded-pill btn-signup btn-colorfull wow animate-flipInX" data-wow-duration="1s" id="submit-btn-mail-pulse">Sign Me Up</button>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-xl-2 order-last order-xl-third order-xl-0 my-4">
+                        <h4 class="footertitle h4">Quick Links</h4>
+                        <ul class="footerinfomenu list-unstyled ">
+                            <li><a href="/policy/privacy">Privacy Policy</a></li>
+                            <li><a href="/policy/safety">Safety Policy</a></li>
+                            <li><a href="/static/document/policy_guidelines/SOP-Event_Exhibition_Rules_and_Regulations_2025-With_Declaration_R2_10July2025.pdf" target="_blank">Operational Rules &amp; Regulations</a></li>
+                            <li><a href="/static/document/tenders_procurement/REQUEST_FOR_PROPOSAL-MITEC_BASEMENT_PARKING_OPERATOR.pdf" target="_blank">Tenders &amp; Procurement</a></li>
+                            <li><a href="/careers">Careers</a></li>
+                            <li><a href="/faqs">FAQs</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-sm-8 col-xl-4 order-last order-xl-third order-xl-0 my-4">
+                        <h4 class="footertitle h4">Featured Links</h4>
+                        <ul class="footerinfomenu list-unstyled multi-column">
+                            <li><a href="/organise/venues">Venues</a></li>
+                            <li><a href="/organise/package-promotions">Packages and Promotions</a></li>
+                            <li><a href="/organise/fnb-experience">F&amp;B Experience</a></li>
+                            <li><a href="/organise/services">Services</a></li>
+                            <li><a href="/organise/facilites">Facilities</a></li>
+                            <li><a href="/visit/event-calendar">Event Calendar</a></li>
+                            <li><a href="/visit/getting-to-mitec">Getting to MITEC</a></li>
+                            <li><a href="/visit/fnb-options">F&amp;B Options</a></li>
+                            <li><a href="/visit/experience-kuala-lumpur">Experience Kuala Lumpur</a></li>
+                            <li class="start-new-column"><a href="/about/who-we-are">Who We Are</a></li>
+                            <li><a href="/about/leadership">Leadership</a></li>
+                            <li><a href="/about/award">Awards</a></li>
+                            <li><a href="/about/sustainability">Sustainability</a></li>
+                            <li><a href="/about/industry-partners">Industry Partners</a></li>
+                            <li><a href="/media/press-release">Press Release</a></li>
+                            <li><a href="/medias/photo-gallery">Event Gallery</a></li>
+                            <li><a href="/media/newsletter">Myscoop NewsLetter</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-xl-3 order-xl-last order-second my-4">
+                        <div class="row">
+                            <div class="col d-flex flex-column">
+                                <div class="">
+                                    <h4 class="footertitle h4">Contact Us</h4>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-1 footer-contact-info">
+                                            <p><i class="fa-solid fa-location-dot"></i></p>
+                                            <p>
+                                                <a href="https://www.google.com/maps?ll=3.179051,101.668247&z=15&t=m&hl=en&gl=MY&mapclient=embed&cid=2662651031749767188" target="_blank">
+                                                    Kompleks MITEC No.8,<br />Jalan Dutamas 2<br />50480 Kuala Lumpur,<br />Malaysia
+                                                </a>
+                                            </p>
+                                        </li>
+                                        <li class="mb-1 footer-contact-info">
+                                            <p><i class="fa-solid fa-phone"></i></p>
+                                            <p><a href="tel:+603 6206 0100">+603 6206 0100</a></p>
+                                        </li>
+                                        <li class="mb-1 footer-contact-info">
+                                            <p><i class="fa-regular fa-envelope"></i></p>
+                                            <p><a href="mailto:info@mitec.com.my">info@mitec.com.my</a></p>
+                                        </li>
+                                    </ul>
+
+                                    <div class="mitec-footer-socialmedia">
+                                        <ul class="list-unstyled social-network social-network-white">
+                                            <li>
+                                                <a target="_blank" rel="nofollow" title="linkedin" class="social-network-linkedin" href="https://www.linkedin.com/company/mitec-my/">
+                                                    <i class="fa-brands fa-linkedin"></i>
+                                                    <span class="sr-only">linkedin</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a target="_blank" rel="nofollow" title="facebook" class="social-network-facebook" href="https://www.facebook.com/MITEC.MY/">
+                                                    <i class="fa-brands fa-square-facebook"></i>
+                                                    <span class="sr-only">facebook</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a target="_blank" rel="nofollow" title="twitter" class="social-network-twitter" href="https://twitter.com/MITEC_MY">
+                                                    <i class="fa-brands fa-square-x-twitter"></i>
+                                                    <span class="sr-only">twitter</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a target="_blank" rel="nofollow" title="instagram" class="social-network-instagram" href="https://www.instagram.com/mitec_my/">
+                                                    <i class="fa-brands fa-square-instagram"></i>
+                                                    <span class="sr-only">instagram</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a target="_blank" rel="nofollow" title="youtube" class="social-network-youtube" href="https://www.youtube.com/channel/UCJpigo6tuAtcA41X0Gwnt0Q">
+                                                    <i class="fa-brands fa-youtube"></i>
+                                                    <span class="sr-only">youtube</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+
+                                        <div class="footer-support d-flex justify-content-between mt-3">
+                                            <a href="https://www.iccaworld.org/" target="_blank"><img src="/static/img/logos/icca-logo.png" class="img-fluid" alt="" /></a>
+                                            <a href="https://www.ufi.org/" target="_blank"><img src="/static/img/logos/ufi-logo.png" class="img-fluid" alt="" /></a>
+                                            <a href="https://aipc.org/" target="_blank"><img src="/static/img/logos/aipc-logo.png" class="img-fluid" alt="" /></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="my-0" />
+
+    <div class="footercopy text-center py-3">
+        <div class="row justify-content-center align-items-center mx-2" style="height: 100%;">
+            <div class="col-12 col-xl-auto">
+                <div class="copyright-fs">
+                    Copyright &#xA9; MITEC 2024 All Rights Reserved<br />
+                    This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer">Privacy Policy</a> and <a href="https://policies.google.com/terms" target="_blank" rel="noreferrer">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var form = document.querySelector('.ajax-subscription-form');
+        if (!form) {
+            return;
+        }
+
+        var button = form.querySelector("button[type='submit']");
+        if (!button) {
+            return;
+        }
+
+        var buttonLoading = "<span class='spinner-border spinner-border-sm' role='status' aria-hidden='true'></span>";
+        var successAlertHtml = "<div id='form-msg' class='alert alert-success' role='alert'>Thank you! Your message has been successfully sent. We will contact you very soon!</div>";
+        var dangerAlertHtml = "<div id='form-msg' class='alert alert-danger' role='alert'>An Error! an error has occur while sending this message!</div>";
+        var originalButtonHtml = button.innerHTML;
+
+        function removeExistingMessage() {
+            var existing = form.querySelector('#form-msg');
+            if (existing) {
+                existing.remove();
+            }
+        }
+
+        function showMessage(html) {
+            removeExistingMessage();
+            form.insertAdjacentHTML('afterbegin', html);
+
+            window.scrollTo({
+                top: Math.max(form.getBoundingClientRect().top + window.scrollY - 100, 0),
+                behavior: 'smooth'
+            });
+
+            window.setTimeout(function () {
+                var message = form.querySelector('#form-msg');
+                if (message) {
+                    message.remove();
+                }
+            }, 10000);
+        }
+
+        async function submitMailingForm() {
+            var formData = new FormData(form);
+            var body = new URLSearchParams();
+            formData.forEach(function (value, key) {
+                body.append(key, value);
+            });
+
+            removeExistingMessage();
+            button.innerHTML = buttonLoading;
+            button.disabled = true;
+
+            try {
+                var response = await fetch(form.action, {
+                    method: form.method || 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+                        'X-Requested-With': 'XMLHttpRequest'
+                    },
+                    body: body.toString()
+                });
+
+                var payload = await response.json();
+                if (response.ok && payload && payload.success === true) {
+                    form.reset();
+                    showMessage(successAlertHtml);
+                } else {
+                    showMessage(dangerAlertHtml);
+                }
+            } catch (error) {
+                showMessage(dangerAlertHtml);
+            } finally {
+                button.innerHTML = originalButtonHtml;
+                button.disabled = false;
+            }
+        }
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            if (window.grecaptcha) {
+                grecaptcha.ready(function () {
+                    grecaptcha.execute('6LepS10tAAAAANsslNiwwmS4y7dVh_kPT4BRMQSc', { action: 'Subscription_Form' }).then(function (token) {
+                        var recaptchaInput = document.getElementById('g-recaptcha-response');
+                        if (recaptchaInput) {
+                            recaptchaInput.value = token;
+                        }
+                        submitMailingForm();
+                    });
+                });
+            } else {
+                submitMailingForm();
+            }
+        });
+    });
+</script>
+    </div>
+
+    <script src="/static/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/js/jquery-3.7.1.min.js"></script>
+    <script src="/static/plugins/magnific_popup/jquery.magnific-popup.min.js"></script>
+    <script src="/static/plugins/slick/slick.min.js"></script>
+    <script src="/static/js/wow.min.js"></script>
+    <script src="/static/js/dropdown_setting.js"></script>
+    <script src="/static/js/fancybox/core.js"></script>
+    <script src="/static/js/fancybox/fullscreen.js"></script>
+    <script src="/static/js/fancybox/guestures.js"></script>
+    <script src="/static/js/fancybox/hash.js"></script>
+    <script src="/static/js/fancybox/media.js"></script>
+    <script src="/static/js/fancybox/slideshow.js"></script>
+    <script src="/static/js/fancybox/thumbs.js"></script>
+    <script src="/static/js/moment.js"></script>
+    <script src="/static/js/local_time.js"></script>
+    <script src="/static/js/daterangepicker/daterangepicker.js"></script>
+    <script src="/static/js/daterangepicker/moment.min.js"></script>
+    <script src="/static/js/nav-menu.js"></script>
+    <script src="/static/js/my_script.js"></script>
+    
+    <script>
+        new WOW().init();
+        $(document).ready(function () {
+            $(".event-list-dropbtn").click(function () {
+                $(".event-list-dropdown-content").toggleClass("event-list-dropdown-content-show");
+            });
+
+            $(document).click(function (event) {
+                if (!$(event.target).hasClass('event-list-dropbtn')) {
+                    $(".event-list-dropdown-content.show").removeClass("event-list-dropdown-content-show");
+                }
+            });
+
+            $('#event-list-button').click(function () {
+                $("#event-floating-container").toggleClass("open");
+                $('#event-list-button i').toggleClass('fa-bars-staggered fa-times');
+            });
+        });
+    </script>
+
+</body>
+</html>
