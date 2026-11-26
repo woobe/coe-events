@@ -1,0 +1,1516 @@
+
+<!doctype html>
+<!--[if IE 9]>    <html class="no-js ie9 oldie" lang="en"> <![endif]-->
+<!--[if (gt IE 9)]><!-->
+<html lang="en" class="not-rich-text-editor">
+    <!--<![endif]-->
+    <head>
+        
+
+
+
+
+    <meta charset="utf-8">
+
+    <title>GJ Calendar</title>
+
+
+
+
+
+
+
+    <!-- General purpose 16x16 .ico shortcut icon -->
+    <link rel="icon" href="/assets/img/icon/favicon.ico">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Use highest compatibility mode -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<!-- for Blackberry, AvantGo -->
+<meta name="MobileOptimized" content="320">
+
+
+
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Fira+Sans:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i" rel="stylesheet">
+
+<!-- jQueryUI Stylesheet -->
+<link rel="stylesheet" href="/assets/libs/jquery-ui/1.13.2/jquery-ui.min.css?v=2" type="text/css">
+
+<!-- Do not include the extension with cssPath -->
+<link href="/assets/css/app.min.css?v=1" rel="stylesheet">
+<link rel="stylesheet" href="/css/AuthoringUIExperience/sitecore-extra.css" type="text/css">
+
+    <!-- modernizr.com, feature detection -->
+    <script src="/assets/js/modernizr-custom.js" type="text/javascript"></script>
+
+<link rel="stylesheet" href="/assets/css/custom.css" type="text/css">
+
+
+
+
+
+<script>
+  function loadGoogleTranslate() {
+    if (window.google && window.google.translate) return;
+
+    var s = document.createElement('script');
+    s.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+    s.async = true;
+    s.onerror = function () {
+      console.warn('Google Translate script blocked by browser tracking prevention.');
+    };
+    document.head.appendChild(s);
+  }
+
+  // Call this only after consent/click:
+  // loadGoogleTranslate();
+</script>
+        
+    </head>
+    <body>
+
+        <div id="skip-to-content"><a href="#main-content">Skip to Main Content</a></div>
+        
+
+
+<nav class="utility-header "
+     aria-label="Utility Links">
+    <ul class="utility-header__menu">
+                    <li>
+
+
+
+
+    <div class="branding ">
+<a href ='http://www.ca.gov'>
+
+
+
+
+
+        <img style="height:28px;" class="icon" src="/assets/img/icons/cagov-logo-white.png" alt="CA.gov"/>
+
+<span class="sr-only">CA.gov</span>
+</a>    </div>
+
+</li>
+                    <li>
+        <div class="social-share">
+                <a href="#" class="social-share-facebook icon-facebook"><span class="social-share-label">Share via Facebook</span></a>
+                <a href="#" class="social-share-twitter-x icon-twitter-x"><span class="social-share-label">Share via X</span></a>
+                <a href="#" class="social-share-google-plus icon-google-plus"><span class="social-share-label">Share via Google+</span></a>
+                <a href="#" class="social-share-email icon-email"><span class="social-share-label">Share via Email</span></a>
+        </div>
+
+
+
+</li>
+                    <li>
+                        <button type="button" class="utility-header__drawer-toggle "
+                                aria-controls='translate' aria-haspopup = 'true' aria-expanded='false'>
+                            <span class='utlility-header_toggle-text'>Translate</span>
+                        </button>
+                    </li>
+    </ul>
+
+                <div id="translate" class="utility-header__drawer"><div>Translate this website to your preferred language:<br><div id="google_translate_element"></div></div></div>
+</nav>
+
+        <!-- Begin Content -->
+        
+
+
+<!-- Global header -->
+
+
+
+
+
+    <nav class="navigation navigation--global " aria-label="Global Menu">
+
+        
+        <button id="navigation-global-toggle"
+                class="navigation__toggle "
+                type="button"
+                tabindex="0"
+                aria-controls="navigation__list-global"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >
+                <span class="navigation__toggle-text"><span class="navigation__toggle-open">View All</span><span class="navigation__toggle-close">Close</span></span>
+                            <span class="navigation__toggle-hamburger"><span class="navigation__toggle-hamburger-inner"></span></span>
+                    </button>
+        <ul id="navigation__list-global" class="navigation__list" aria-labelledby="navigation-global-toggle" role="menubar" aria-orientation="horizontal" >
+                        <li class="navigation__item" role="menuitem">
+                            <a class="navigation__item-link"
+                               href="/"
+                               tabindex="0"
+                               >
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li class="navigation__item" role="menuitem">
+                            <a class="navigation__item-link"
+                               href="/Services"
+                               tabindex="0"
+                               >
+                                <span>Services</span>
+                            </a>
+                        </li>
+                        <li class="navigation__item" role="menuitem">
+                            <button class="navigation__item-link"
+                                    type="button"
+                                    role="menuitem"
+                                    tabindex="0"
+                                    aria-controls="E6ED6841C803456E8383CF3FC4CC49C7-sub-nav"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                    aria-label="Divisions &amp; Offices">
+                                Divisions &amp; Offices
+                                <span class="navigation__sub-nav-toggle"></span>
+                                <span class="icon-plus"></span><span class="icon-minus"></span>
+                                <span class="sr-only">Sub Menu Toggle</span>
+                            </button>
+
+                            <ul id="E6ED6841C803456E8383CF3FC4CC49C7-sub-nav" class="navigation__sub-nav" role="menu" aria-label="Divisions &amp; Offices">
+                                    <li class="navigation__sub-nav-item" role="menuitem">
+                                        <a class="navigation__sub-nav-item-link"
+                                           href="/BSC"
+                                           tabindex="-1"
+                                           >
+                                            Building Standards Commission
+                                        </a>
+                                    </li>
+                                    <li class="navigation__sub-nav-item" role="menuitem">
+                                        <a class="navigation__sub-nav-item-link"
+                                           href="/CCDA"
+                                           tabindex="-1"
+                                           >
+                                            California Commission on Disability Access
+                                        </a>
+                                    </li>
+                                    <li class="navigation__sub-nav-item" role="menuitem">
+                                        <a class="navigation__sub-nav-item-link"
+                                           href="/DSA"
+                                           tabindex="-1"
+                                           >
+                                            Division of the State Architect
+                                        </a>
+                                    </li>
+                                    <li class="navigation__sub-nav-item" role="menuitem">
+                                        <a class="navigation__sub-nav-item-link"
+                                           href="/FMD"
+                                           tabindex="-1"
+                                           >
+                                            Facilities Management Division
+                                        </a>
+                                    </li>
+                                    <li class="navigation__sub-nav-item" role="menuitem">
+                                        <a class="navigation__sub-nav-item-link"
+                                           href="/OAH"
+                                           tabindex="-1"
+                                           >
+                                            Office of Administrative Hearings
+                                        </a>
+                                    </li>
+                                    <li class="navigation__sub-nav-item" role="menuitem">
+                                        <a class="navigation__sub-nav-item-link"
+                                           href="/OAS"
+                                           tabindex="-1"
+                                           >
+                                            Office of Audit Services
+                                        </a>
+                                    </li>
+                                    <li class="navigation__sub-nav-item" role="menuitem">
+                                        <a class="navigation__sub-nav-item-link"
+                                           href="/OBAS"
+                                           tabindex="-1"
+                                           >
+                                            Office of Business and Acquisition Services
+                                        </a>
+                                    </li>
+                                    <li class="navigation__sub-nav-item" role="menuitem">
+                                        <a class="navigation__sub-nav-item-link"
+                                           href="/OFS"
+                                           tabindex="-1"
+                                           >
+                                            Office of Fiscal Services
+                                        </a>
+                                    </li>
+                                    <li class="navigation__sub-nav-item" role="menuitem">
+                                        <a class="navigation__sub-nav-item-link"
+                                           href="/OFAM"
+                                           tabindex="-1"
+                                           >
+                                            Office of Fleet and Asset Management
+                                        </a>
+                                    </li>
+                                    <li class="navigation__sub-nav-item" role="menuitem">
+                                        <a class="navigation__sub-nav-item-link"
+                                           href="/OHR"
+                                           tabindex="-1"
+                                           >
+                                            Office of Human Resources
+                                        </a>
+                                    </li>
+                                    <li class="navigation__sub-nav-item" role="menuitem">
+                                        <a class="navigation__sub-nav-item-link"
+                                           href="/OLS"
+                                           tabindex="-1"
+                                           >
+                                            Office of Legal Services
+                                        </a>
+                                    </li>
+                                    <li class="navigation__sub-nav-item" role="menuitem">
+                                        <a class="navigation__sub-nav-item-link"
+                                           href="/OPSC"
+                                           tabindex="-1"
+                                           >
+                                            Office of Public School Construction
+                                        </a>
+                                    </li>
+                                    <li class="navigation__sub-nav-item" role="menuitem">
+                                        <a class="navigation__sub-nav-item-link"
+                                           href="/ORIM"
+                                           tabindex="-1"
+                                           >
+                                            Office of Risk and Insurance Management
+                                        </a>
+                                    </li>
+                                    <li class="navigation__sub-nav-item" role="menuitem">
+                                        <a class="navigation__sub-nav-item-link"
+                                           href="/OSP"
+                                           tabindex="-1"
+                                           >
+                                            Office of State Publishing
+                                        </a>
+                                    </li>
+                                    <li class="navigation__sub-nav-item" role="menuitem">
+                                        <a class="navigation__sub-nav-item-link"
+                                           href="/OoS"
+                                           tabindex="-1"
+                                           >
+                                            Office of Sustainability
+                                        </a>
+                                    </li>
+                                    <li class="navigation__sub-nav-item" role="menuitem">
+                                        <a class="navigation__sub-nav-item-link"
+                                           href="/OTAS"
+                                           tabindex="-1"
+                                           >
+                                            Office of Training and Administrative Standards
+                                        </a>
+                                    </li>
+                                    <li class="navigation__sub-nav-item" role="menuitem">
+                                        <a class="navigation__sub-nav-item-link"
+                                           href="/PD"
+                                           tabindex="-1"
+                                           >
+                                            Procurement Division
+                                        </a>
+                                    </li>
+                                    <li class="navigation__sub-nav-item" role="menuitem">
+                                        <a class="navigation__sub-nav-item-link"
+                                           href="/RESD"
+                                           tabindex="-1"
+                                           >
+                                            Real Estate Services Division
+                                        </a>
+                                    </li>
+                            </ul>
+                        </li>
+                        <li class="navigation__item" role="menuitem">
+                            <button class="navigation__item-link"
+                                    type="button"
+                                    role="menuitem"
+                                    tabindex="0"
+                                    aria-controls="033543813F6B4CCBAD196EA91F5FCE30-sub-nav"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                    aria-label="Resources">
+                                Resources
+                                <span class="navigation__sub-nav-toggle"></span>
+                                <span class="icon-plus"></span><span class="icon-minus"></span>
+                                <span class="sr-only">Sub Menu Toggle</span>
+                            </button>
+
+                            <ul id="033543813F6B4CCBAD196EA91F5FCE30-sub-nav" class="navigation__sub-nav" role="menu" aria-label="Resources">
+                                    <li class="navigation__sub-nav-item" role="menuitem">
+                                        <a class="navigation__sub-nav-item-link"
+                                           href="/Resources/E-Signature-Toolkit"
+                                           tabindex="-1"
+                                           >
+                                            E-Signature Toolkit
+                                        </a>
+                                    </li>
+                                    <li class="navigation__sub-nav-item" role="menuitem">
+                                        <a class="navigation__sub-nav-item-link"
+                                           href="/RESD/Projects/Page-Content/Projects-List-Folder/Executive-Order-N-06-19-Affordable-Housing-Development"
+                                           tabindex="-1"
+                                           >
+                                            Affordable Housing Development
+                                        </a>
+                                    </li>
+                                    <li class="navigation__sub-nav-item" role="menuitem">
+                                        <a class="navigation__sub-nav-item-link"
+                                           href="/Resources/Legislative-Reports"
+                                           tabindex="-1"
+                                           >
+                                            Legislative Reports
+                                        </a>
+                                    </li>
+                                    <li class="navigation__sub-nav-item" role="menuitem">
+                                        <a class="navigation__sub-nav-item-link"
+                                           href="/Resources/ManagementMemos"
+                                           tabindex="-1"
+                                           >
+                                            Management Memos
+                                        </a>
+                                    </li>
+                                    <li class="navigation__sub-nav-item" role="menuitem">
+                                        <a class="navigation__sub-nav-item-link"
+                                           href="/Resources/SAM"
+                                           tabindex="-1"
+                                           >
+                                            State Administrative Manual (SAM)
+                                        </a>
+                                    </li>
+                                    <li class="navigation__sub-nav-item" role="menuitem">
+                                        <a class="navigation__sub-nav-item-link"
+                                           href="/PD/Resources/Page-Content/Procurement-Division-Resources-List-Folder/State-Contracting-Manual"
+                                           tabindex="-1"
+                                           >
+                                            State Contracting Manual
+                                        </a>
+                                    </li>
+                                    <li class="navigation__sub-nav-item" role="menuitem">
+                                        <a class="navigation__sub-nav-item-link"
+                                           href="/Resources/Statewide-Forms"
+                                           tabindex="-1"
+                                           >
+                                            Statewide Forms Program
+                                        </a>
+                                    </li>
+                                    <li class="navigation__sub-nav-item" role="menuitem">
+                                        <a class="navigation__sub-nav-item-link"
+                                           href="/About/Strategic-Plan"
+                                           tabindex="-1"
+                                           >
+                                            Strategic Plan
+                                        </a>
+                                    </li>
+                            </ul>
+                        </li>
+                        <li class="navigation__item" role="menuitem">
+                            <a class="navigation__item-link"
+                               href="/Press-Releases"
+                               tabindex="0"
+                               >
+                                <span>Press Releases</span>
+                            </a>
+                        </li>
+                        <li class="navigation__item" role="menuitem">
+                            <a class="navigation__item-link"
+                               href="/OHR/Careers"
+                               tabindex="0"
+                               >
+                                <span>Careers</span>
+                            </a>
+                        </li>
+                        <li class="navigation__item" role="menuitem">
+                            <a class="navigation__item-link"
+                               href="/About"
+                               tabindex="0"
+                               >
+                                <span>About</span>
+                            </a>
+                        </li>
+                        <li class="navigation__item" role="menuitem">
+                            <a class="navigation__item-link"
+                               href="/Contact"
+                               tabindex="0"
+                               >
+                                <span>Contact</span>
+                            </a>
+                        </li>
+        </ul>
+    </nav>
+
+
+
+
+
+    <header class="global-header global-header--division">
+        
+            <div style="float: left; margin-top: 4px; margin-left: -6px;">
+                <a href="/">
+                    <img src="/assets/img/logo/DGS_Division_Logo.png?v=2" style="vertical-align: middle;" alt="California Department of General Services" />
+                </a>
+            </div>
+
+            <div class="global-header__division">
+<a href="https://www.dgs.ca.gov/OAH/Case-Types/General-Jurisdiction">                                                        <span class="global-header__division-name">General Jurisdiction</span>
+                </a>            </div>
+        
+
+
+
+
+<div class="site-search" >
+
+        <button id="site-search__toggle"
+                class="site-search__toggle button  "
+                type="button"
+                aria-controls="site-search__forme17ce37e3dc949b6ba7494f142b89d4e"
+                aria-haspopup="true"
+                
+                >
+            <span class="site-search__text sr-only">Site Search</span>
+                <span class="site-search__hamburger"><span class="site-search__hamburger-inner"></span></span>
+                            <span class="site-search__icon" aria-hidden="true"></span>
+                    </button>
+
+        <form class="site-search__form" id="site-search__forme17ce37e3dc949b6ba7494f142b89d4e"  aria-labelledby="site-search__toggle" method="get" action="">
+            <span>
+                <label for="e17ce37e3dc949b6ba7494f142b89d4e">Search this site:</label>
+            </span>
+            <span>
+                <input name="q" type="text"  id="e17ce37e3dc949b6ba7494f142b89d4e" placeholder="For example, how to sell to the state?">
+            </span>
+
+            <input type="hidden" name="sitesearch" value="" />
+            <span class="site-search__submit">
+                
+
+
+
+
+    <button class="button "
+            type="submit"
+            name='Search'
+            value='Search'
+            
+            
+            
+            
+>
+        <span class="button__text ">Search</span>
+                    </button>
+
+            </span>
+            <button class="site-search__reset-search" aria-describedby="e17ce37e3dc949b6ba7494f142b89d4e" type="reset" style="display: none">Clear Search</button>
+        </form>
+
+</div>    </header>
+
+
+
+<!-- Navigation Main Navigation -->
+
+
+
+
+
+    <nav class="navigation navigation--main navigation--inverse" aria-label="Main Menu">
+
+        
+        <button id="navigation-main-toggle"
+                class="navigation__toggle "
+                type="button"
+                tabindex="0"
+                aria-controls="navigation__list-main"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >
+                <span class="navigation__toggle-text"><span class="navigation__toggle-open">View All</span><span class="navigation__toggle-close">Close</span></span>
+                            <span class="navigation__toggle-hamburger"><span class="navigation__toggle-hamburger-inner"></span></span>
+                    </button>
+        <ul id="navigation__list-main" class="navigation__list" aria-labelledby="navigation-main-toggle" role="menubar" aria-orientation="horizontal" >
+                        <li class="navigation__item" role="menuitem">
+                            <a class="navigation__item-link"
+                               href="/"
+                               tabindex="0"
+                               >
+                                <span>DGS Home</span>
+                            </a>
+                        </li>
+                        <li class="navigation__item" role="menuitem">
+                            <a class="navigation__item-link"
+                               href="/OAH"
+                               tabindex="0"
+                               >
+                                <span>OAH Home</span>
+                            </a>
+                        </li>
+                        <li class="navigation__item" role="menuitem">
+                            <a class="navigation__item-link"
+                               href="/OAH/Case-Types/General-Jurisdiction"
+                               tabindex="0"
+                               >
+                                <span>GJ Home</span>
+                            </a>
+                        </li>
+                        <li class="navigation__item" role="menuitem">
+                            <a class="navigation__item-link"
+                               href="/OAH/Case-Types/General-Jurisdiction/Services"
+                               tabindex="0"
+                               >
+                                <span>Services</span>
+                            </a>
+                        </li>
+                        <li class="navigation__item" role="menuitem">
+                            <a class="navigation__item-link"
+                               href="/OAH/Case-Types/General-Jurisdiction/Forms"
+                               tabindex="0"
+                               >
+                                <span>Forms</span>
+                            </a>
+                        </li>
+                        <li class="navigation__item" role="menuitem">
+                            <button class="navigation__item-link"
+                                    type="button"
+                                    role="menuitem"
+                                    tabindex="0"
+                                    aria-controls="F6658A8C814D4E2BAE5A3105EB7527B3-sub-nav"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                    aria-label="Resources">
+                                Resources
+                                <span class="navigation__sub-nav-toggle"></span>
+                                <span class="icon-plus"></span><span class="icon-minus"></span>
+                                <span class="sr-only">Sub Menu Toggle</span>
+                            </button>
+
+                            <ul id="F6658A8C814D4E2BAE5A3105EB7527B3-sub-nav" class="navigation__sub-nav" role="menu" aria-label="Resources">
+                                    <li class="navigation__sub-nav-item" role="menuitem">
+                                        <a class="navigation__sub-nav-item-link"
+                                           href="/OAH/Case-Types/General-Jurisdiction/Resources"
+                                           tabindex="-1"
+                                           >
+                                            All Resources
+                                        </a>
+                                    </li>
+                                    <li class="navigation__sub-nav-item" role="menuitem">
+                                        <a class="navigation__sub-nav-item-link"
+                                           href="/OAH/Case-Types/General-Jurisdiction/Resources/DDS-Decisions"
+                                           tabindex="-1"
+                                           >
+                                            DDS Decisions
+                                        </a>
+                                    </li>
+                            </ul>
+                        </li>
+                        <li class="navigation__item" role="menuitem">
+                            <a class="navigation__item-link"
+                               href="/OAH/Case-Types/General-Jurisdiction/GJ-Calendar"
+                               tabindex="0"
+                               aria-current="page">
+                                <span>Calendar</span>
+                            </a>
+                        </li>
+                        <li class="navigation__item" role="menuitem">
+                            <a class="navigation__item-link"
+                               href="/OAH/Case-Types/General-Jurisdiction/About"
+                               tabindex="0"
+                               >
+                                <span>About</span>
+                            </a>
+                        </li>
+                        <li class="navigation__item" role="menuitem">
+                            <a class="navigation__item-link"
+                               href="/OAH/Case-Types/General-Jurisdiction/Contact"
+                               tabindex="0"
+                               >
+                                <span>Contact</span>
+                            </a>
+                        </li>
+        </ul>
+    </nav>
+
+
+<div id="main-content" class="main-content">
+
+
+
+
+    <div class="page-header " >
+        <div class="page-header-overlay"></div>
+            <div class="page-header-links">
+                
+
+
+        <nav name="bread-crumbhtml" class="breadcrumbs " aria-label="Breadcrumb">
+            <ol>
+                <li><a href="/">Home</a></li>
+                        <li><a href="https://www.dgs.ca.gov/OAH">Office of Administrative Hearings</a></li>
+                        <li><a href="https://www.dgs.ca.gov/OAH/Case-Types">Case Types</a></li>
+                        <li><a href="https://www.dgs.ca.gov/OAH/Case-Types/General-Jurisdiction">General Jurisdiction</a></li>
+                <li><a href="https://www.dgs.ca.gov/OAH/Case-Types/General-Jurisdiction/GJ-Calendar" aria-current="page">GJ Calendar</a></li>
+            </ol>
+        </nav>
+
+
+            </div>
+
+<h1 class="page-header-title">General Jurisdiction Hearing Calendar</h1>
+            <div class="page-header-lead">
+                <div class="lead"><p><span>Look up hearing dates or other event dates by date, case number, case name, or agency name for the General Jurisdiction Division.</span>&nbsp;</p></div>
+
+            </div>
+
+    </div>
+
+
+
+
+
+
+
+    <main class="main-primary">
+        
+
+        <div class="rich-text">
+            <h2><span>How to Observe a Hearing</span></h2>
+<p><span>Members of the public may observe General Jurisdiction Division virtual, telephonic, or in-person proceedings except where the proceeding is not open to the public pursuant to statute, regulation or order. Any observers may not participate in, record, or disrupt the proceedings.<strong> </strong>To obtain information on how to observe a particular proceeding, please contact the regional OAH office where the proceeding is scheduled. Contact information is available here: <a href="https://www.dgs.ca.gov/OAH/Case-Types/General-Jurisdiction/Contact">https://www.dgs.ca.gov/OAH/Case-Types/General-Jurisdiction/Contact</a></span></p>
+<h2>Hearing Date Availability for Future Hearings:</h2>
+<p>Notice: Hearing date availability calendars are provided as a courtesy to assist counsel and parties with conferring about future hearing dates. Dates are subject to availability at the time a Request to Set or other calendar request is processed by OAH. Dates shown as available are not guaranteed to be available. The calendars provided are not a reservation of hearing dates. These calendars are updated regularly.</p>
+        </div>
+
+        
+        <div class="accordions">
+<h2 class='accordion-title'>OAH GENERAL JURISDICTION OFFICE CALENDARS</h2>
+            <div class="row">
+                <div class="col-sm-12">
+                    <a href="javascript:void(0)" class="toggle-accordion pull-right" style="margin-bottom:5px">Expand All</a>
+                </div>
+            </div>
+
+            <div class="section-body">
+
+
+                <div class="panel-group accordion" id="eb484a94-c900-4f2f-a008-5e9b3f89a2ac" >
+                        <div id="IMPORTANT-DATES-AND-INFORMATION" class="panel panel-primary">
+                                <div class="panel-heading" id="eb484a94-c900-4f2f-a008-5e9b3f89a2ac-824d3a92-8f1d-487f-a30d-5489bfe24847">
+                                    <h3 class='panel-title'>
+                                    <a class="link-IMPORTANT-DATES-AND-INFORMATION" role="button" data-toggle="collapse" data-parent="#eb484a94-c900-4f2f-a008-5e9b3f89a2ac" href="#accordion-824d3a92-8f1d-487f-a30d-5489bfe24847" aria-expanded="false" aria-controls="accordion-824d3a92-8f1d-487f-a30d-5489bfe24847">IMPORTANT DATES AND INFORMATION</a>
+                                    </h3>
+                                </div>
+                                <div id="accordion-824d3a92-8f1d-487f-a30d-5489bfe24847" class="panel-collapse collapse" aria-labelledby="eb484a94-c900-4f2f-a008-5e9b3f89a2ac-824d3a92-8f1d-487f-a30d-5489bfe24847">
+                                    <div class="panel-body">
+                                        <div class="rich-text"><div>
+</div>
+<p>
+</p>
+<p><strong>2026 STATE HOLIDAYS</strong></p>
+<div>
+<div>JANUARY 1- NEW YEAR'S DAY</div>
+<div>JANUARY 19- MARTIN LUTHER KING, JR. DAY</div>
+<div>FEBRUARY 16- PRESIDENTS DAY</div>
+<div>MARCH 31- CESAR CHAVEZ DAY</div>
+<div>MAY 25- MEMORIAL DAY</div>
+<div>JULY 4- INDEPENDENCE DAY</div>
+<div>SEPTEMBER 7- LABOR DAY</div>
+<div>NOVEMBER 11- VETERANS DAY</div>
+<div>NOVEMBER 26- THANKSGIVING DAY</div>
+<div>NOVEMBER 27- DAY AFTER THANKSGIVING</div>
+<div>DECEMBER 25- CHRISTMAS DAY </div>
+<p><strong> </strong></p>
+<p><strong>2027 STATE HOLIDAYS (TENTATIVE)</strong></p>
+<p>
+</p><div>
+<div>JANUARY 1- NEW YEAR'S DAY</div>
+<div>JANUARY 18- MARTIN LUTHER KING, JR. DAY</div>
+<div>FEBRUARY 15- PRESIDENTS DAY</div>
+<div>MARCH 31- CESAR CHAVEZ DAY</div>
+<div>MAY 31- MEMORIAL DAY</div>
+<div>JULY 4- INDEPENDENCE DAY (OBSERVED JULY 5)</div>
+<div>SEPTEMBER  6- LABOR DAY</div>
+<div>NOVEMBER 11- VETERANS DAY</div>
+<div>NOVEMBER 25- THANKSGIVING DAY</div>
+<div>NOVEMBER 26- DAY AFTER THANKSGIVING</div>
+<div>DECEMBER 25- CHRISTMAS DAY </div>
+</div>
+<p />
+</div>
+<p> </p>
+<div><strong>NO FRIDAY SETTINGS </strong></div>
+<div>OAH at this time is not setting 1-day hearings on Fridays.  Setting consecutive hearing dates may include a Friday as necessary.  If you require a 1-day Friday hearing date, please contact your local OAH office to confirm availability.  </div>
+<div> </div>
+<p><strong>NOTICE</strong> </p>
+<div>This calendar is provided to assist agencies and parties with conferring about hearing dates.  Dates are subject to availability at the time a Request to Set or other calendar request is processed by OAH. Dates shown as available are not guaranteed to be available.  This is not a reservation of dates.  </div>
+<div> </div>
+<p><strong>SPECIAL SETTING REQUIREMENTS</strong> </p>
+<div>Parties with statutory time limits or other special needs for calendar preference should contact the OAH office to which the case is assigned.</div></div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div id="OAH-LOS-ANGELES-HEARING-DATE-AVAILABILITY-2026" class="panel panel-primary">
+                                <div class="panel-heading" id="eb484a94-c900-4f2f-a008-5e9b3f89a2ac-4fdd8cfa-90eb-42ec-a406-9bdbdbf908bf">
+                                    <h3 class='panel-title'>
+                                    <a class="link-OAH-LOS-ANGELES-HEARING-DATE-AVAILABILITY-2026" role="button" data-toggle="collapse" data-parent="#eb484a94-c900-4f2f-a008-5e9b3f89a2ac" href="#accordion-4fdd8cfa-90eb-42ec-a406-9bdbdbf908bf" aria-expanded="false" aria-controls="accordion-4fdd8cfa-90eb-42ec-a406-9bdbdbf908bf">OAH LOS ANGELES HEARING DATE AVAILABILITY 2026</a>
+                                    </h3>
+                                </div>
+                                <div id="accordion-4fdd8cfa-90eb-42ec-a406-9bdbdbf908bf" class="panel-collapse collapse" aria-labelledby="eb484a94-c900-4f2f-a008-5e9b3f89a2ac-4fdd8cfa-90eb-42ec-a406-9bdbdbf908bf">
+                                    <div class="panel-body">
+                                        <div class="rich-text"><h2 style="color: #000000;">January</h2>
+<p>No dates available</p>
+<h2 style="color: #000000;">February</h2>
+<p>No dates available</p>
+<h2 style="color: #000000;">March</h2>
+<p>No dates available</p>
+<h2 style="color: #000000;">April</h2>
+<p>No dates available</p>
+<h2>May</h2>
+<p>No dates available</p>
+<h2 style="color: #000000;">June</h2>
+<p>No dates available</p>
+<h2 style="color: #000000;">July</h2>
+<p>No dates available</p>
+<h2 style="color: #000000;">August</h2>
+<p>No dates available</p>
+<h2 style="color: #000000;">September</h2>
+<p>No dates available</p>
+<h2 style="color: #000000;">October</h2>
+<p>No dates available</p>
+<h2 style="color: #000000;">November</h2>
+<p>Short Cause (1 to 3 days) - All dates available</p>
+<p>Long Cause - All dates available</p>
+<p>Master Calendar (less than 1 day) - All dates available</p>
+<h2 style="color: #000000;">December</h2>
+<p>Short Cause (1 to 3 days) - All dates available</p>
+<p>Long Cause - All dates available</p>
+<p>Master Calendar (less than 1 day) - All dates available</p></div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div id="OAH-LOS-ANGELES-HEARING-DATE-AVAILABILITY-2027" class="panel panel-primary">
+                                <div class="panel-heading" id="eb484a94-c900-4f2f-a008-5e9b3f89a2ac-239ddc5a-c254-4ded-9396-94cc5839453c">
+                                    <h3 class='panel-title'>
+                                    <a class="link-OAH-LOS-ANGELES-HEARING-DATE-AVAILABILITY-2027" role="button" data-toggle="collapse" data-parent="#eb484a94-c900-4f2f-a008-5e9b3f89a2ac" href="#accordion-239ddc5a-c254-4ded-9396-94cc5839453c" aria-expanded="false" aria-controls="accordion-239ddc5a-c254-4ded-9396-94cc5839453c">OAH LOS ANGELES HEARING DATE AVAILABILITY 2027</a>
+                                    </h3>
+                                </div>
+                                <div id="accordion-239ddc5a-c254-4ded-9396-94cc5839453c" class="panel-collapse collapse" aria-labelledby="eb484a94-c900-4f2f-a008-5e9b3f89a2ac-239ddc5a-c254-4ded-9396-94cc5839453c">
+                                    <div class="panel-body">
+                                        <div class="rich-text"><h2 style="color: #000000;">January</h2>
+<p>
+</p>
+<p>Short Cause (1 to 3 days) - All dates available</p>
+<p>Long Cause - All dates available</p>
+<p style="margin: 0px 0px 12px;">Master Calendar (less than 1 day) - All dates available</p>
+<p>
+</p>
+<h2 style="color: #000000;">February</h2>
+<p>
+</p>
+<p>Short Cause (1 to 3 days) - All dates available</p>
+<p>Long Cause - All dates available</p>
+<p style="margin: 0px 0px 12px;">Master Calendar (less than 1 day) - All dates available</p>
+<p>
+</p>
+<h2 style="color: #000000;">March</h2>
+<p>
+</p>
+<p>Short Cause (1 to 3 days) - 1, 2, 3, 4, 15, 16, 17, 18, 22, 23, 24, 25, 29, 30</p>
+<p>Long Cause - 1, 2, 3, 4, 15, 16, 17, 18, 22, 23, 24, 25, 29, 30</p>
+<p style="margin: 0px 0px 12px;">Master Calendar (less than 1 day) - 1, 2, 3, 4, 15, 16, 17, 18, 22, 23, 24, 25, 29, 30</p>
+<p>
+</p>
+<h2 style="color: #000000;">April</h2>
+<p>
+</p>
+<p>Short Cause (1 to 3 days) - All dates available</p>
+<p>Long Cause - All dates available</p>
+<p style="margin: 0px 0px 12px;">Master Calendar (less than 1 day) - All dates available</p>
+<p>
+</p>
+<h2 style="color: #000000;">May</h2>
+<p>
+</p>
+<p>Short Cause (1 to 3 days) - All dates available</p>
+<p>Long Cause - All dates available</p>
+<p style="margin: 0px 0px 12px;">Master Calendar (less than 1 day) - All dates available</p>
+<p>
+</p>
+<h2 style="color: #000000;">June</h2>
+<p>
+</p>
+<p>Short Cause (1 to 3 days) - All dates available</p>
+<p>Long Cause - All dates available</p>
+<p style="margin: 0px 0px 12px;">Master Calendar (less than 1 day) - All dates available</p>
+<p>
+</p>
+<h2 style="color: #000000;">July</h2>
+<p>Short Cause (1 to 3 days) - All dates available</p>
+<p>Long Cause - All dates available</p>
+<p>Master Calendar (less than 1 day) - All dates available</p>
+<h2 style="color: #000000;">August</h2>
+<p>Short Cause (1 to 3 days) - All dates available</p>
+<p>Long Cause - All dates available</p>
+<p>Master Calendar (less than 1 day) - All dates available</p>
+<h2 style="color: #000000;">September</h2>
+<p>Short Cause (1 to 3 days) - All dates available</p>
+<p>Long Cause - All dates available</p>
+<p>Master Calendar (less than 1 day) - All dates available</p>
+<h2 style="color: #000000;">October</h2>
+<p>Short Cause (1 to 3 days) - All dates available</p>
+<p>Long Cause - All dates available</p>
+<p>Master Calendar (less than 1 day) - All dates available</p>
+<h2 style="color: #000000;">November</h2>
+<p>Short Cause (1 to 3 days) - All dates available</p>
+<p>Long Cause - All dates available</p>
+<p>Master Calendar (less than 1 day) - All dates available</p>
+<h2 style="color: #000000;">December</h2>
+<p>Short Cause (1 to 3 days) - All dates available</p>
+<p>Long Cause - All dates available</p>
+<p>Master Calendar (less than 1 day) - All dates available</p></div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div id="OAH-OAKLAND-HEARING-DATE-AVAILABILITY-2026" class="panel panel-primary">
+                                <div class="panel-heading" id="eb484a94-c900-4f2f-a008-5e9b3f89a2ac-422cca9e-8e50-4e7e-9413-1aae236ad68a">
+                                    <h3 class='panel-title'>
+                                    <a class="link-OAH-OAKLAND-HEARING-DATE-AVAILABILITY-2026" role="button" data-toggle="collapse" data-parent="#eb484a94-c900-4f2f-a008-5e9b3f89a2ac" href="#accordion-422cca9e-8e50-4e7e-9413-1aae236ad68a" aria-expanded="false" aria-controls="accordion-422cca9e-8e50-4e7e-9413-1aae236ad68a">OAH OAKLAND HEARING DATE AVAILABILITY 2026</a>
+                                    </h3>
+                                </div>
+                                <div id="accordion-422cca9e-8e50-4e7e-9413-1aae236ad68a" class="panel-collapse collapse" aria-labelledby="eb484a94-c900-4f2f-a008-5e9b3f89a2ac-422cca9e-8e50-4e7e-9413-1aae236ad68a">
+                                    <div class="panel-body">
+                                        <div class="rich-text"><h2 style="color: #000000;">January</h2>
+<p> No dates available</p>
+<h2 style="color: #000000;">February</h2>
+<p>No dates available</p>
+<h2>March</h2>
+<p>No dates available</p>
+<h2>April</h2>
+<p>No dates available</p>
+<h2 style="color: #000000;">May</h2>
+<p><span style="font-size: 1rem; background-color: transparent;">No dates available</span></p>
+<h2>June</h2>
+<p> No dates available</p>
+  <span style="font-size: 34px; font-weight: bold; font-family: inherit; color: inherit;">July</span>
+<p>No dates available</p>
+<h2 style="color: #000000;">August</h2>
+<p>No dates available</p>
+<h2>September</h2>
+<p>No dates available</p>
+<h2>October</h2>
+<p>
+</p>
+<p> No dates available</p>
+<h2 style="color: #000000;">November</h2>
+<p>Short Cause (1 day or less) -No dates available</p>
+<p>Full Day (2-3 days only) - No dates available</p>
+<p style="margin-bottom: 12px;">Long Cause (4 days or more) - No dates available</p>
+<h2>December</h2>
+<p>Short Cause (1 day or less) - No dates available</p>
+<p>Full Day (2-3 days only) - No dates available</p>
+<p style="margin-bottom: 12px;">Long Cause (4 days or more) - No dates available</p></div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div id="OAH-OAKLAND-HEARING-DATE-AVAILABILITY-2027" class="panel panel-primary">
+                                <div class="panel-heading" id="eb484a94-c900-4f2f-a008-5e9b3f89a2ac-840f9bda-9608-468b-9465-92a7f3660052">
+                                    <h3 class='panel-title'>
+                                    <a class="link-OAH-OAKLAND-HEARING-DATE-AVAILABILITY-2027" role="button" data-toggle="collapse" data-parent="#eb484a94-c900-4f2f-a008-5e9b3f89a2ac" href="#accordion-840f9bda-9608-468b-9465-92a7f3660052" aria-expanded="false" aria-controls="accordion-840f9bda-9608-468b-9465-92a7f3660052">OAH OAKLAND HEARING DATE AVAILABILITY 2027</a>
+                                    </h3>
+                                </div>
+                                <div id="accordion-840f9bda-9608-468b-9465-92a7f3660052" class="panel-collapse collapse" aria-labelledby="eb484a94-c900-4f2f-a008-5e9b3f89a2ac-840f9bda-9608-468b-9465-92a7f3660052">
+                                    <div class="panel-body">
+                                        <div class="rich-text"><h2 style="color: #000000;">January</h2>
+<p>
+</p>
+<p>Short Cause (1 day or less) - No dates available</p>
+<p>Full Day (2-3 days only) - No dates available</p>
+<p style="margin: 0px 0px 12px;">Long Cause (4 days or more) - No dates available</p>
+<p><span style="font-size: 34px; font-weight: bold; font-family: inherit;">February</span></p>
+<p>
+</p>
+<p>Short Cause (1 day or less) - All dates available</p>
+<p>Full Day (2-3 days only) - All dates available</p>
+<p style="margin: 0px 0px 12px;">Long Cause (4 days or more) - 1, 2, 3, 4, 8, 9, 10, 11</p>
+<p><span style="font-size: 34px; font-weight: bold; font-family: inherit;">March</span></p>
+<p>
+</p>
+<p>Short Cause (1 day or less) - 1, 2, 3, 4, 15, 16, 17, 18, 22, 23, 24, 25, 29, 30</p>
+<p>Full Day (2-3 days only) - 1, 2, 3, 4, 15, 16, 17, 18, 22, 23, 24, 25, 29, 30</p>
+<p style="margin: 0px 0px 12px;">Long Cause (4 days or more) - 15, 16, 17, 18, 22, 23, 24, 25</p>
+<p><span style="font-size: 34px; font-weight: bold; font-family: inherit;">April</span></p>
+<p>
+</p>
+<p>Short Cause (1 day or less) - All dates available</p>
+<p>Full Day (2-3 days only) - All dates available</p>
+<p style="margin: 0px 0px 12px;">Long Cause (4 days or more) - No dates available</p>
+<p><span style="font-size: 34px; font-weight: bold; font-family: inherit;">May</span></p>
+<p>
+</p>
+<p>Short Cause (1 day or less) - All dates available</p>
+<p>Full Day (2-3 days only) - All dates available</p>
+<p style="margin: 0px 0px 12px;">Long Cause (4 days or more) - 10, 11, 12, 13, 17, 18, 19, 20, 24, 25, 26, 27</p>
+<p><span style="font-size: 34px; font-weight: bold; font-family: inherit;">June</span></p>
+<p>
+</p>
+<p>Short Cause (1 day or less) - All dates available</p>
+<p>Full Day (2-3 days only) - All dates available</p>
+<p style="margin: 0px 0px 12px;">Long Cause (4 days or more) - All dates available</p>
+<p><span style="font-size: 34px; font-weight: bold; font-family: inherit; color: inherit;">July</span></p>
+<p>
+</p>
+<p>Short Cause (1 day or less) - All dates available</p>
+<p>Full Day (2-3 days only) - All dates available</p>
+<p style="margin: 0px 0px 12px;">Long Cause (4 days or more) - All dates available</p>
+<h2>August</h2>
+<p>Short Cause (1 day or less) - All dates available</p>
+<p>Full Day (2-3 days only) - All dates available</p>
+<p style="margin: 0px 0px 12px;">Long Cause (4 days or more) - All dates available</p>
+<h2>September</h2>
+<p>Short Cause (1 day or less) - All dates available</p>
+<p>Full Day (2-3 days only) - All dates available</p>
+<p style="margin: 0px 0px 12px;">Long Cause (4 days or more) - All dates available</p>
+<h2>October</h2>
+<p>Short Cause (1 day or less) - All dates available</p>
+<p>Full Day (2-3 days only) - All dates available</p>
+<p>Long Cause (4 days or more) - All dates available</p>
+<h2 style="color: #000000;">November</h2>
+<p>Short Cause (1 day or less) - All dates available</p>
+<p>Full Day (2-3 days only) - All dates available</p>
+<p>Long Cause (4 days or more) - All dates available</p>
+<h2 style="color: #000000;">December</h2>
+<p>Short Cause (1 day or less) - All dates available</p>
+<p>Full Day (2-3 days only) - All dates available</p>
+<p style="margin: 0px 0px 12px;">Long Cause (4 days or more) - All dates available</p></div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div id="OAH-SACRAMENTO-HEARING-DATE-AVAILABILITY-2026" class="panel panel-primary">
+                                <div class="panel-heading" id="eb484a94-c900-4f2f-a008-5e9b3f89a2ac-30157a72-d37d-4e2a-a0e8-e59ae3adfab9">
+                                    <h3 class='panel-title'>
+                                    <a class="link-OAH-SACRAMENTO-HEARING-DATE-AVAILABILITY-2026" role="button" data-toggle="collapse" data-parent="#eb484a94-c900-4f2f-a008-5e9b3f89a2ac" href="#accordion-30157a72-d37d-4e2a-a0e8-e59ae3adfab9" aria-expanded="false" aria-controls="accordion-30157a72-d37d-4e2a-a0e8-e59ae3adfab9">OAH SACRAMENTO HEARING DATE AVAILABILITY 2026</a>
+                                    </h3>
+                                </div>
+                                <div id="accordion-30157a72-d37d-4e2a-a0e8-e59ae3adfab9" class="panel-collapse collapse" aria-labelledby="eb484a94-c900-4f2f-a008-5e9b3f89a2ac-30157a72-d37d-4e2a-a0e8-e59ae3adfab9">
+                                    <div class="panel-body">
+                                        <div class="rich-text"><h2 style="color: #000000;">January</h2>
+<p> No dates available</p>
+<h2 style="color: #000000;">February</h2>
+<p>No dates available</p>
+<h2 style="color: #000000;">March</h2>
+<p>No dates available</p>
+<h2 style="color: #000000;">April</h2>
+<p>No dates available</p>
+<h2 style="color: #000000;">May</h2>
+<p>No dates available</p>
+<h2 style="color: #000000;">June</h2>
+<p> No dates available</p>
+<h2 style="color: #000000;">July</h2>
+<p>No dates available</p>
+<h2 style="color: #000000;">August</h2>
+<p> No dates available</p>
+<h2 style="color: #000000;">September</h2>
+<p> No dates available</p>
+<h2 style="color: #000000;">October</h2>
+<p>No dates available</p>
+<h2 style="color: #000000;">November</h2>
+<p>Short Cause (1 day or less) - 25</p>
+<p style="margin-bottom: 12px;">Full Day - No dates available</p>
+<h2 style="color: #000000;">December</h2>
+<p>Short Cause (1 day or less) - 23</p>
+<p style="margin-bottom: 12px;">Full Day - No dates available</p></div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div id="OAH-SACRAMENTO-HEARING-DATE-AVAILABILITY-2027" class="panel panel-primary">
+                                <div class="panel-heading" id="eb484a94-c900-4f2f-a008-5e9b3f89a2ac-f1f6f80d-2f55-4a66-935f-08cf3d876ff5">
+                                    <h3 class='panel-title'>
+                                    <a class="link-OAH-SACRAMENTO-HEARING-DATE-AVAILABILITY-2027" role="button" data-toggle="collapse" data-parent="#eb484a94-c900-4f2f-a008-5e9b3f89a2ac" href="#accordion-f1f6f80d-2f55-4a66-935f-08cf3d876ff5" aria-expanded="false" aria-controls="accordion-f1f6f80d-2f55-4a66-935f-08cf3d876ff5">OAH SACRAMENTO HEARING DATE AVAILABILITY 2027</a>
+                                    </h3>
+                                </div>
+                                <div id="accordion-f1f6f80d-2f55-4a66-935f-08cf3d876ff5" class="panel-collapse collapse" aria-labelledby="eb484a94-c900-4f2f-a008-5e9b3f89a2ac-f1f6f80d-2f55-4a66-935f-08cf3d876ff5">
+                                    <div class="panel-body">
+                                        <div class="rich-text"><h2></h2>
+<h2 style="color: #000000;">January</h2>
+<p>
+</p>
+<p>Short Cause (1 day or less) - No dates available</p>
+<p style="margin: 0px 0px 12px;">Full Day - No dates available</p>
+<p><span style="font-size: 34px; font-weight: bold; font-family: inherit;">February</span></p>
+<p>
+</p>
+<p>Short Cause (1 day or less) - No dates available</p>
+<p style="margin: 0px 0px 12px;">Full Day - No dates available</p>
+<p><span style="font-size: 34px; font-weight: bold; font-family: inherit;">March</span></p>
+<p>
+</p>
+<p>Short Cause (1 day or less) - No dates available</p>
+<p style="margin: 0px 0px 12px;">Full Day - No dates available</p>
+<p><span style="font-size: 34px; font-weight: bold; font-family: inherit;">April</span></p>
+<p>
+</p>
+<p>Short Cause (1 day or less) - No dates available</p>
+<p style="margin: 0px 0px 12px;">Full Day - No dates available</p>
+<p><span style="font-size: 34px; font-weight: bold; font-family: inherit;">May</span></p>
+<p>
+</p>
+<p>Short Cause (1 day or less) - No dates available</p>
+<p style="margin: 0px 0px 12px;">Full Day - No dates available</p>
+<p><span style="font-size: 34px; font-weight: bold; font-family: inherit;">June</span></p>
+<p>
+</p>
+<p>Short Cause (1 day or less) - 17, 21, 22, 23, 24, 28, 29, 30</p>
+<p style="margin: 0px 0px 12px;">Full Day - 17, 21, 22, 23, 24, 28, 29, 30</p>
+<p><span style="font-size: 34px; font-weight: bold; font-family: inherit;">July</span></p>
+<p>Short Cause (1 day or less) - All dates available</p>
+<p>Full Day - All dates available</p>
+<h2 style="color: #000000;">August</h2>
+<p>
+</p>
+<p>Short Cause (1 day or less) - All dates available</p>
+<p style="margin: 0px 0px 12px;">Full Day - All dates available</p>
+<p><span style="font-size: 34px; font-weight: bold; font-family: inherit;">September</span></p>
+<p>
+</p>
+<p>Short Cause (1 day or less) - All dates available</p>
+<p style="margin: 0px 0px 12px;">Full Day - All dates available</p>
+<p><span style="font-size: 34px; font-weight: bold; font-family: inherit;">October</span></p>
+<p>
+</p>
+<p>Short Cause (1 day or less) - All dates available</p>
+<p style="margin: 0px 0px 12px;">Full Day - All dates available</p>
+<p><span style="font-size: 34px; font-weight: bold; font-family: inherit;">November</span></p>
+<p>
+</p>
+<p>Short Cause (1 day or less) - All dates available</p>
+<p style="margin: 0px 0px 12px;">Full Day - All dates available</p>
+<p><span style="font-size: 34px; font-weight: bold; font-family: inherit;">December</span></p>
+<p>
+</p>
+<p>Short Cause (1 day or less) - All dates available</p>
+<p style="margin: 0px 0px 12px;">Full Day - All dates available</p></div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div id="OAH-SAN-DIEGO-HEARING-DATE-AVAILABILITY-2026" class="panel panel-primary">
+                                <div class="panel-heading" id="eb484a94-c900-4f2f-a008-5e9b3f89a2ac-6bff124a-d85b-4892-b82e-44077fd4399d">
+                                    <h3 class='panel-title'>
+                                    <a class="link-OAH-SAN-DIEGO-HEARING-DATE-AVAILABILITY-2026" role="button" data-toggle="collapse" data-parent="#eb484a94-c900-4f2f-a008-5e9b3f89a2ac" href="#accordion-6bff124a-d85b-4892-b82e-44077fd4399d" aria-expanded="false" aria-controls="accordion-6bff124a-d85b-4892-b82e-44077fd4399d">OAH SAN DIEGO HEARING DATE AVAILABILITY 2026</a>
+                                    </h3>
+                                </div>
+                                <div id="accordion-6bff124a-d85b-4892-b82e-44077fd4399d" class="panel-collapse collapse" aria-labelledby="eb484a94-c900-4f2f-a008-5e9b3f89a2ac-6bff124a-d85b-4892-b82e-44077fd4399d">
+                                    <div class="panel-body">
+                                        <div class="rich-text"><p style="color: #000000;">* Indicates Limited Availability</p>
+<h2 style="color: #000000;">January</h2>
+<p>No dates available</p>
+<h2 style="color: #000000;">February</h2>
+<p>No dates available</p>
+<h2 style="color: #000000;">March</h2>
+<p>No dates available</p>
+<h2 style="color: #000000;">April</h2>
+<p> No dates available</p>
+<h2 style="color: #000000;">May</h2>
+<p>No dates available</p>
+<h2 style="color: #000000;">June</h2>
+<p> No dates available</p>
+<h2 style="color: #000000;">July</h2>
+<p>No dates available</p>
+<h2 style="color: #000000;">August</h2>
+<p>No dates available</p>
+<h2 style="color: #000000;">September</h2>
+<p> No dates available</p>
+<h2 style="color: #000000;">October</h2>
+<p> No dates available</p>
+<h2 style="color: #000000;">November</h2>
+<p>Short Cause (1 day or less) - No dates available</p>
+<p>Full Day - No dates available</p>
+<h2 style="color: #000000;">December</h2>
+<p>Short Cause (1 day or less) - 21, 22, 23, 24, 28, 29, 30, 31</p>
+<p style="margin-bottom: 12px;">Full Day - 21, 22, 23, 24, 28, 29, 30, 31</p></div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div id="OAH-SAN-DIEGO-HEARING-DATE-AVAILABILITY-2027" class="panel panel-primary">
+                                <div class="panel-heading" id="eb484a94-c900-4f2f-a008-5e9b3f89a2ac-bd0a7406-53d2-45a5-ac2e-ed014093e66a">
+                                    <h3 class='panel-title'>
+                                    <a class="link-OAH-SAN-DIEGO-HEARING-DATE-AVAILABILITY-2027" role="button" data-toggle="collapse" data-parent="#eb484a94-c900-4f2f-a008-5e9b3f89a2ac" href="#accordion-bd0a7406-53d2-45a5-ac2e-ed014093e66a" aria-expanded="false" aria-controls="accordion-bd0a7406-53d2-45a5-ac2e-ed014093e66a">OAH SAN DIEGO HEARING DATE AVAILABILITY 2027</a>
+                                    </h3>
+                                </div>
+                                <div id="accordion-bd0a7406-53d2-45a5-ac2e-ed014093e66a" class="panel-collapse collapse" aria-labelledby="eb484a94-c900-4f2f-a008-5e9b3f89a2ac-bd0a7406-53d2-45a5-ac2e-ed014093e66a">
+                                    <div class="panel-body">
+                                        <div class="rich-text"><p>
+</p>
+<p>* Indicates Limited Availability</p>
+<h2 style="color: #000000;">January</h2>
+<p>
+</p>
+<p>Short Cause (1 day or less) - 4, 5, 6</p>
+<p style="margin: 0px 0px 12px;">Full Day -  4, 5, 6</p>
+<p><span style="font-size: 34px; font-weight: bold; font-family: inherit;">February</span></p>
+<p>
+</p>
+<p>Short Cause (1 day or less) - No dates available</p>
+<p style="margin: 0px 0px 12px;">Full Day - No dates available</p>
+<p><span style="font-size: 34px; font-weight: bold; font-family: inherit;">March</span></p>
+<p>
+</p>
+<p>Short Cause (1 day or less) - No dates available</p>
+<p style="margin: 0px 0px 12px;">Full Day - No dates available</p>
+<p><span style="font-size: 34px; font-weight: bold; font-family: inherit;">April</span></p>
+<p>
+</p>
+<p>Short Cause (1 day or less) - No dates available</p>
+<p style="margin: 0px 0px 12px;">Full Day - No dates available</p>
+<p><span style="font-size: 34px; font-weight: bold; font-family: inherit;">May</span></p>
+<p>
+</p>
+<p>Short Cause (1 day or less) - 10, 24, 25, 26, 27</p>
+<p style="margin: 0px 0px 12px;">Full Day - 10, 24, 25, 26, 27</p>
+<p><span style="font-size: 34px; font-weight: bold; font-family: inherit;">June</span></p>
+<p>
+</p>
+<p>Short Cause (1 day or less) - All dates available</p>
+<p style="margin: 0px 0px 12px;">Full Day - All dates available</p>
+<p><span style="font-size: 34px; font-weight: bold; font-family: inherit;">July</span></p>
+<p>Short Cause (1 day or less) - All dates available</p>
+<p>Full Day - All dates available</p>
+<h2 style="color: #000000;">August</h2>
+<p>
+</p>
+<p>Short Cause (1 day or less) - All dates available</p>
+<p style="margin: 0px 0px 12px;">Full Day - All dates available</p>
+<p><span style="font-size: 34px; font-weight: bold; font-family: inherit;">September</span></p>
+<p>
+</p>
+<p>Short Cause (1 day or less) - All dates available</p>
+<p style="margin: 0px 0px 12px;">Full Day - All dates available</p>
+<p><span style="font-size: 34px; font-weight: bold; font-family: inherit;">October</span></p>
+<p>
+</p>
+<p>Short Cause (1 day or less) - All dates available</p>
+<p style="margin: 0px 0px 12px;">Full Day - All dates available</p>
+<p><span style="font-size: 34px; font-weight: bold; font-family: inherit;">November</span></p>
+<p>
+</p>
+<p>Short Cause (1 day or less) - All dates available</p>
+<p style="margin: 0px 0px 12px;">Full Day - All dates available</p>
+<p><span style="font-size: 34px; font-weight: bold; font-family: inherit;">December</span></p>
+<p>
+</p>
+<p>Short Cause (1 day or less) - All dates available</p>
+<p style="margin: 0px 0px 12px;">Full Day - All dates available</p>
+<p> </p></div>
+                                    </div>
+                                </div>
+                        </div>
+                </div>
+
+            </div>
+        </div>
+
+<script name="accordionclick" type="text/javascript">
+
+    function accordianClick(accordianItem) {
+        if (accordianItem != '') {
+            $(accordianItem).click();
+        }
+    }
+
+    window.onload = function () {
+        var hashTag = window.location.hash
+        if (hashTag != null) {
+            ////console.log('in hash length', hashTag.slice(1, hashTag.length))
+            //$('.link-' + hashTag.slice(1,hashTag.length)).click();
+            accordianClick('.link-' + hashTag.slice(1, hashTag.length));
+        }
+    }
+
+</script>
+
+        <div class="accordions">
+<h2 class='accordion-title'>Notice Regarding...</h2>
+            <div class="row">
+                <div class="col-sm-12">
+                    <a href="javascript:void(0)" class="toggle-accordion pull-right" style="margin-bottom:5px">Expand All</a>
+                </div>
+            </div>
+
+            <div class="section-body">
+
+
+                <div class="panel-group accordion" id="c7880a70-61ea-4cfa-8bc2-145bc8cf5dba" >
+                        <div id="Accordion" class="panel panel-primary">
+                                <div class="panel-heading" id="c7880a70-61ea-4cfa-8bc2-145bc8cf5dba-172ada10-ee1a-4220-93e5-543be46c5d52">
+                                    <h3 class='panel-title'>
+                                    <a class="link-Accordion" role="button" data-toggle="collapse" data-parent="#c7880a70-61ea-4cfa-8bc2-145bc8cf5dba" href="#accordion-172ada10-ee1a-4220-93e5-543be46c5d52" aria-expanded="false" aria-controls="accordion-172ada10-ee1a-4220-93e5-543be46c5d52">Department of Developmental Services cases</a>
+                                    </h3>
+                                </div>
+                                <div id="accordion-172ada10-ee1a-4220-93e5-543be46c5d52" class="panel-collapse collapse" aria-labelledby="c7880a70-61ea-4cfa-8bc2-145bc8cf5dba-172ada10-ee1a-4220-93e5-543be46c5d52">
+                                    <div class="panel-body">
+                                        <div class="rich-text">To maintain the confidentiality of the parties, the hearing locations are not published on this website. The location of the hearing is available in the Notice of Hearing sent by OAH to the parties. If you have any questions, please contact the DDS Case Manager at your local OAH office.&nbsp;</div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div id="Department-of-Child-Support-Services-Cases" class="panel panel-primary">
+                                <div class="panel-heading" id="c7880a70-61ea-4cfa-8bc2-145bc8cf5dba-ea9f22c7-d94e-427b-82ff-964ff2ff94a3">
+                                    <h3 class='panel-title'>
+                                    <a class="link-Department-of-Child-Support-Services-Cases" role="button" data-toggle="collapse" data-parent="#c7880a70-61ea-4cfa-8bc2-145bc8cf5dba" href="#accordion-ea9f22c7-d94e-427b-82ff-964ff2ff94a3" aria-expanded="false" aria-controls="accordion-ea9f22c7-d94e-427b-82ff-964ff2ff94a3">Department of Child Support Services Cases</a>
+                                    </h3>
+                                </div>
+                                <div id="accordion-ea9f22c7-d94e-427b-82ff-964ff2ff94a3" class="panel-collapse collapse" aria-labelledby="c7880a70-61ea-4cfa-8bc2-145bc8cf5dba-ea9f22c7-d94e-427b-82ff-964ff2ff94a3">
+                                    <div class="panel-body">
+                                        <div class="rich-text">To maintain the confidentiality of the parties, the hearing locations are not published on this website. The location of the hearing is available in the Notice of Hearing sent to the parties. If you have any questions, please contact OAH at (916) 263-0550.</div>
+                                    </div>
+                                </div>
+                        </div>
+                </div>
+
+            </div>
+        </div>
+
+<script name="accordionclick" type="text/javascript">
+
+    function accordianClick(accordianItem) {
+        if (accordianItem != '') {
+            $(accordianItem).click();
+        }
+    }
+
+    window.onload = function () {
+        var hashTag = window.location.hash
+        if (hashTag != null) {
+            ////console.log('in hash length', hashTag.slice(1, hashTag.length))
+            //$('.link-' + hashTag.slice(1,hashTag.length)).click();
+            accordianClick('.link-' + hashTag.slice(1, hashTag.length));
+        }
+    }
+
+</script>
+
+    </main>
+
+        <div class="main-secondary">
+            
+        <div class="cta-panel">
+
+
+        <div class="panel " >
+                <div class="panel-heading">
+                    <h2 class="panel-title">General Jurisdiction Calendar</h2>
+                </div>
+
+            <div class="panel-body">
+                                
+
+
+        <div class="call-to-action">
+            
+            <div class="call-to-action-body">
+                    <div class="call-to-action-description">
+                        <div class="rich-text">Access the General Jurisdiction Calendar</div>
+                    </div>
+                                    <div class="call-to-action-button">
+                        <a href="https://www.applications.dgs.ca.gov/OAH/OAHCalendarWeb/GeneralJurisdiction" class="button">Access Calendar</a>
+                    </div>
+            </div>
+        </div>
+            </div>
+
+        </div>
+        </div>
+
+
+        <div class="cta-panel">
+
+
+        <div class="panel " >
+                <div class="panel-heading">
+                    <h2 class="panel-title">For questions about your specific case, contact your local OAH office at:</h2>
+                </div>
+
+            <div class="panel-body">
+                                
+
+
+        <div class="call-to-action">
+            
+            <div class="call-to-action-body">
+                    <div class="call-to-action-description">
+                        <div class="rich-text"><p><strong>Sacramento</strong>&nbsp;(916) 263-0550</p>
+<p><strong>Los Angeles </strong>(213) 576-7200</p>
+<p><strong>Oakland </strong>(510) 622-2722</p>
+<p><strong>San Diego</strong> (619) 525-4475</p>
+<p>&nbsp;</p></div>
+                    </div>
+                                    <div class="call-to-action-button">
+                        <a href="/OAH/Case-Types/General-Jurisdiction/Contact" class="button">Access Detailed Office Contact Information</a>
+                    </div>
+            </div>
+        </div>
+            </div>
+
+        </div>
+        </div>
+
+
+        </div>
+</div>
+
+
+
+        
+        
+
+<script async src="https://siteimproveanalytics.com/js/siteanalyze_6339819.js"></script>
+<footer class="footer" role="contentinfo">
+    <div class="footer-links">
+        <ul class="footer-links-list">
+            <li><a href="#skip-to-content">Back to Top</a></li>
+                <li><a href="/Configuration/Footer-Utility-Links/Accessibility/Accessibility">Accessibility</a></li>
+                <li><a href="/Certification">Certification</a></li>
+                <li><a href="/Employee-Corner">Employee Corner</a></li>
+                <li><a href="/Privacy">Privacy Policy Statement</a></li>
+        </ul>
+    </div>
+    <div class="footer-social">
+        
+
+
+        <div class="social-connect social-connect--standout">
+            
+                <ul class="social-connect-body">
+                        <li><a href="https://www.facebook.com/CalDGS/?ref=settings"><span class="social-connect-icon icon-facebook" aria-hidden="true"></span><span class="social-connect-label">Facebook</span></a></li>
+                        <li><a href="https://x.com/califdgs?lang=en"><span class="social-connect-icon icon-twitter-x" aria-hidden="true"></span><span class="social-connect-label">X</span></a></li>
+                        <li><a href="https://www.youtube.com/user/CalifDGS"><span class="social-connect-icon icon-youtube" aria-hidden="true"></span><span class="social-connect-label">YouTube</span></a></li>
+                        <li><a href="https://www.instagram.com/dgscalif/?hl=en"><span class="social-connect-icon icon-instagram" aria-hidden="true"></span><span class="social-connect-label">Instagram</span></a></li>
+                        <li><a href="https://www.linkedin.com/company/cadgs"><span class="social-connect-icon icon-linkedin" aria-hidden="true"></span><span class="social-connect-label">LinkedIn</span></a></li>
+                </ul>
+        </div>
+
+    </div>
+    <div class="footer-copyright">Copyright &#169; 2018 State of California</div>
+</footer>
+
+
+        <!-- CDT emergency alerts : Start -->
+        <script defer src="https://alert.cdt.ca.gov"></script>
+        <!-- CDT emergency alerts : End -->
+        <!-- Google Tag Manager -->
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || []; w[l].push(
+                    { 'gtm.start': new Date().getTime(), event: 'gtm.js' }
+                ); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-5D4N99T');
+        </script>
+        <!-- End Google Tag Manager -->
+        <!-- Google Tag Manager (noscript) -->
+        <noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5D4N99T"
+                    height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+        <script src="/assets/js/jquery/jquery-3.6.3.min.js"></script>
+        <script src="/assets/libs/handlebars/4.7.9/handlebars.min.js"></script>
+        <script src="/assets/js/app.js?v=21"></script>
+        <script src="/assets/js/search.js"></script>
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+
+        <script src="/assets/libs/jquery-ui/1.13.2/jquery-ui.min.js"></script>
+        <!-- Your Script -->
+        <script type='text/javascript'>
+            $(function () {
+                // This will apply the datepicker to all input elements of the date type and then it will remove the date attribute to avoid jQuery / browser conflicts
+                $("input[type='date']").datepicker().attr('type', 'text');
+            });
+        </script>
+
+            <script type="text/javascript">
+                function googleTranslateElementInit() {
+                    new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
+                }
+            </script>
+            <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+        <script src="/assets/js/custom.js"></script>
+
+        <!-- Google Analytics -->
+        <!-- Uncomment out the following portion when it's in production -->
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-19802602-2"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'UA-19802602-2', {
+                cookie_flags: 'max-age=7200;secure'
+            });
+        </script>
+
+        <script id="accordionclick" type="text/javascript"></script>
+        <script id="bread-crumbhtml" type="text/javascript"></script>
+        <script id="local-navhtml" type="text/javascript"></script>
+
+        <script type="text/javascript">
+
+            $(document).ready(function () {
+
+                var accordionContents = "";
+                var breadCrumbContents = "";
+                var navContents = "";
+
+                $('.accordionclick').each(function () {
+                    accordionContents += $(this).html();
+                });
+
+                $('.bread-crumbhtml').each(function () {
+                    breadCrumbContents += $(this).html();
+                });
+
+                $('.local-navhtml').each(function () {
+                    navContents += $(this).html();
+                });
+
+                $('#accordionclick').html(accordionContents);
+                $('#bread-crumbhtml').html(breadCrumbContents);
+                $('#local-navhtml').html(navContents);
+
+            });
+
+        </script>
+
+        <!-- Hiddenfield holding department id-->
+        <input id="divisionId" type="hidden" class="divisionId" value="c29034b4c90e4754a39efb05c8fd1068" />
+            <input id="searchPageItemPath" type="hidden" class="searchPageitem" value="/OAH/Case-Types/General-Jurisdiction/Search-Results" />
+        <input id="isGlobalSearchPage" type="hidden" class="searchPageitem" value="false" />
+
+    </body>
+</html>

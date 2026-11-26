@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <style>
+        body {
+            font-family: "Arial";
+        }
+    </style>
+    <script type="text/javascript">
+    window.awsWafCookieDomainList = [];
+    window.gokuProps = {
+"key":"AQIDAHjcYu/GjX+QlghicBgQ/7bFaQZ+m5FKCMDnO+vTbNg96AETqJQVvUu3XHG3rbRQIZPsAAAAfjB8BgkqhkiG9w0BBwagbzBtAgEAMGgGCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMixASEILIVErAVOp1AgEQgDtdokp54tSfw8ZWzZ4vXfQ8AKZW7KqEcHN0xqrvEZh+n3euc+zrl9GDvqzwzxLbWiy6/Uj9b4ppADKKfw==",
+          "iv":"D574QgAM8gAASNBa",
+          "context":"YTDIJwWk0VBg+b7FKIZlT/MCs1mOCN2SwYGMRNAGyEzPgXHpQ1Eg4yLUurg3N8v7UGRD/HN80zBNbKQpo0MMRBexkfXR36idlntnRvleXxiws5w2i4z36nlcXM77g3C1MhCbmIMt0Qx6w5wDe2cOsQoU5FZPgN7o+AUgEqAnzOdKPhU+xhSqb73SjFPV+Y2YvZSLQfurmUSJroTxLwP8PxGsrGRYt5KRTYWUoBx4wZl306oe/VKMpW4q5aVi2WAHz5VsJhsH5WOH6liFdC+GrpjLFtwILi5/PhDVJRPb0vLYxDAEvpzk1xismJSPvvzI7N2BiHpMlIMxykAUf8R1O0h9LkALlF/2zgWNNRI8plSVKz6Ej9a9H0YqOCaSlYlpBkEv"
+};
+    </script>
+    <script src="https://2ef0668df1ec.a3b6bfe5.eu-west-2.token.awswaf.com/2ef0668df1ec/0ffc2f058e99/9460be2bab9e/challenge.js"></script>
+</head>
+<body>
+    <div id="challenge-container"></div>
+    <script type="text/javascript">
+        AwsWafIntegration.saveReferrer();
+        AwsWafIntegration.checkForceRefresh().then((forceRefresh) => {
+            if (forceRefresh) {
+                AwsWafIntegration.forceRefreshToken().then(() => {
+                    window.location.reload(true);
+                });
+            } else {
+                AwsWafIntegration.getToken().then(() => {
+                    window.location.reload(true);
+                });
+            }
+        });
+    </script>
+    <noscript>
+        <h1>JavaScript is disabled</h1>
+        In order to continue, we need to verify that you're not a robot.
+        This requires JavaScript. Enable JavaScript and then reload the page.
+    </noscript>
+</body>
+</html>

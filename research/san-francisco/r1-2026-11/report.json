@@ -1,0 +1,625 @@
+{
+  "access": {
+    "detail": {
+      "sf-03266107e45f": {
+        "12": "unknown",
+        "8": "unknown",
+        "access_window": null,
+        "state": "unknown"
+      },
+      "sf-277ae6031e3f": {
+        "12": "unknown",
+        "8": "unknown",
+        "access_window": "Move-in normally after 14:00; no closing clock published",
+        "state": "unknown"
+      },
+      "sf-2a8505a53998": {
+        "12": "unknown",
+        "8": "unknown",
+        "access_window": "Move-in normally after 14:00; no closing clock published",
+        "state": "unknown"
+      },
+      "sf-307c9dd57430": {
+        "12": "no",
+        "8": "yes",
+        "access_window": "Daytime Mon-Fri 10:00-17:00, Sat 10:00-14:00; Sunday 09:00-17:00; evening block 17:00-21:00",
+        "state": "shorter"
+      },
+      "sf-67623ac7c2a8": {
+        "12": "unknown",
+        "8": "unknown",
+        "access_window": null,
+        "state": "unknown"
+      },
+      "sf-70dcce8a309f": {
+        "12": "unknown",
+        "8": "unknown",
+        "access_window": null,
+        "state": "unknown"
+      },
+      "sf-7196ba5d7e75": {
+        "12": "unknown",
+        "8": "unknown",
+        "access_window": null,
+        "state": "unknown"
+      },
+      "sf-791be009d2a8": {
+        "12": "unknown",
+        "8": "unknown",
+        "access_window": null,
+        "state": "unknown"
+      },
+      "sf-861f3552141b": {
+        "12": "unknown",
+        "8": "unknown",
+        "access_window": null,
+        "state": "unknown"
+      },
+      "sf-9ca5a5071dd1": {
+        "12": "unknown",
+        "8": "unknown",
+        "access_window": null,
+        "state": "unknown"
+      },
+      "sf-a9e2573503df": {
+        "12": "unknown",
+        "8": "unknown",
+        "access_window": null,
+        "state": "unknown"
+      },
+      "sf-aa633c4fb565": {
+        "12": "unknown",
+        "8": "unknown",
+        "access_window": null,
+        "state": "unknown"
+      },
+      "sf-b3b27dca9c85": {
+        "12": "no",
+        "8": "yes",
+        "access_window": "Mon-Fri reservations only between 09:00 and 17:00; latest event end 22:00 Fri-Sun and 21:00 Mon-Thu",
+        "state": "shorter"
+      },
+      "sf-b3be38e30978": {
+        "12": "unknown",
+        "8": "yes",
+        "access_window": null,
+        "state": "floor_only"
+      },
+      "sf-eb6f1d5fd648": {
+        "12": "unknown",
+        "8": "unknown",
+        "access_window": null,
+        "state": "unknown"
+      },
+      "sf-f76ff9ceb2eb": {
+        "12": "unknown",
+        "8": "unknown",
+        "access_window": null,
+        "state": "unknown"
+      }
+    },
+    "full_window_with_clock": 0,
+    "split": {
+      "floor_only": 1,
+      "full": 0,
+      "shorter": 2,
+      "unknown": 13
+    }
+  },
+  "checks": [
+    {
+      "detail": "schema city-store/1, 16 venues",
+      "name": "city_store.py --check",
+      "result": "OK"
+    },
+    {
+      "detail": {
+        "counts": {
+          "can_host": 14,
+          "cannot_host": 0,
+          "closed": 0,
+          "leads": 2,
+          "open": 14,
+          "scored": 14,
+          "unscored": 0,
+          "visited": 1
+        },
+        "extra": [],
+        "identical_to_store": true,
+        "leads": 2,
+        "missing": [],
+        "rows": 14,
+        "total": 16,
+        "unique": 16
+      },
+      "name": "build_ranking(store, 2026-11-26)",
+      "result": "14 rows + 2 leads = 16 ids, identical to the store: True"
+    },
+    {
+      "detail": {
+        "clean": true,
+        "explained_by_retired_ledger": 7,
+        "head_claim_ids": 416,
+        "head_ids_absent_from_refreshed_store": 7,
+        "refreshed_claim_ids": 480,
+        "retired": [
+          {
+            "claim_id": "cl-3022529f3341",
+            "disposition": "event dropped from the store on 2026-11-26: rsaConference.com returned HTTP 403 and the 2027 dates were only on Moscone's venue page, which fails the organiser-page rule",
+            "paths": [
+              "events.sf-ev-20e697a0a9e7.fields.conflict_severity",
+              "events.sf-ev-20e697a0a9e7.history.conflict_severity[0]"
+            ],
+            "replacement": null
+          },
+          {
+            "claim_id": "cl-4ba3bbbb516f",
+            "disposition": "event dropped from the store on 2026-11-26: rsaConference.com returned HTTP 403 and the 2027 dates were only on Moscone's venue page, which fails the organiser-page rule",
+            "paths": [
+              "events.sf-ev-20e697a0a9e7.fields.date_range",
+              "events.sf-ev-20e697a0a9e7.history.date_range[0]"
+            ],
+            "replacement": null
+          },
+          {
+            "claim_id": "cl-5f36fb90b034",
+            "disposition": "event dropped from the store on 2026-11-26: rsaConference.com returned HTTP 403 and the 2027 dates were only on Moscone's venue page, which fails the organiser-page rule",
+            "paths": [
+              "events.sf-ev-20e697a0a9e7.fields.kind",
+              "events.sf-ev-20e697a0a9e7.history.kind[0]"
+            ],
+            "replacement": null
+          },
+          {
+            "claim_id": "cl-99ef0ae02856",
+            "disposition": "event dropped from the store on 2026-11-26: rsaConference.com returned HTTP 403 and the 2027 dates were only on Moscone's venue page, which fails the organiser-page rule",
+            "paths": [
+              "events.sf-ev-20e697a0a9e7.fields.relevance",
+              "events.sf-ev-20e697a0a9e7.history.relevance[0]"
+            ],
+            "replacement": null
+          },
+          {
+            "claim_id": "cl-a3f0b7215cf1",
+            "disposition": "access blocker withdrawn by the derived-blocker pass: the resolved programme_windows.8 state is 'yes' (Sunday 09:00-17:00), so the stale '4 hour cap' sentence does not survive the resolved field",
+            "paths": [
+              "venues.sf-307c9dd57430.blockers[0]"
+            ],
+            "replacement": null
+          },
+          {
+            "claim_id": "cl-cd9ad100b4b2",
+            "disposition": "event dropped from the store on 2026-11-26: rsaConference.com returned HTTP 403 and the 2027 dates were only on Moscone's venue page, which fails the organiser-page rule",
+            "paths": [
+              "events.sf-ev-20e697a0a9e7.evidence[1]"
+            ],
+            "replacement": null
+          },
+          {
+            "claim_id": "cl-f2011a2e359b",
+            "disposition": "event dropped from the store on 2026-11-26: rsaConference.com returned HTTP 403 and the 2027 dates were only on Moscone's venue page, which fails the organiser-page rule",
+            "paths": [
+              "events.sf-ev-20e697a0a9e7.evidence[0]"
+            ],
+            "replacement": null
+          }
+        ],
+        "scope": "whole store (HEAD pre-image -> refreshed store), not venue-only",
+        "unexplained": []
+      },
+      "name": "whole-store claim-id loss check",
+      "result": "clean"
+    }
+  ],
+  "coordinates": {
+    "attempted": 16,
+    "tier_ids": {
+      "building": [
+        "sf-277ae6031e3f",
+        "sf-2a8505a53998",
+        "sf-307c9dd57430",
+        "sf-70dcce8a309f",
+        "sf-7196ba5d7e75",
+        "sf-791be009d2a8",
+        "sf-9ca5a5071dd1",
+        "sf-a9e2573503df",
+        "sf-aa633c4fb565",
+        "sf-b3be38e30978",
+        "sf-eb6f1d5fd648",
+        "sf-f76ff9ceb2eb"
+      ],
+      "exact_venue": [
+        "sf-03266107e45f",
+        "sf-67623ac7c2a8",
+        "sf-861f3552141b",
+        "sf-b3b27dca9c85"
+      ]
+    },
+    "tiers": {
+      "building": 12,
+      "exact_venue": 4
+    },
+    "unresolved": []
+  },
+  "declared_gaps": {
+    "count": 15,
+    "kinds": {
+      "access": 4,
+      "coordinates": 2,
+      "events": 3,
+      "holidays": 3,
+      "photos": 3
+    }
+  },
+  "events": {
+    "blocked_cells": 6,
+    "cell_retained_sum": 0,
+    "count": 4,
+    "dropped": [
+      "RSA Conference 2027 (organiser page HTTP 403)"
+    ],
+    "matrix": {
+      "attempted": 48,
+      "blocked": 6,
+      "cells": 54,
+      "dropped_events": 1,
+      "pages_read": 82,
+      "retained_events": 4
+    },
+    "organiser_confirmations": 4,
+    "pages_read": 82,
+    "sources_yield_sum": 4,
+    "stored": {
+      "sf-ev-0f6513895b68": {
+        "dates": {
+          "end": "2027-07-01",
+          "start": "2027-06-29"
+        },
+        "evidence_claim_ids": [
+          "cl-fb2ba4245d2d"
+        ],
+        "name": "AI Engineer World's Fair 2027",
+        "organiser_url": "https://ai.engineer/worldsfair/2027"
+      },
+      "sf-ev-71da9138b80f": {
+        "dates": {
+          "end": "2027-03-14",
+          "start": "2027-03-13"
+        },
+        "evidence_claim_ids": [
+          "cl-f81f62597321"
+        ],
+        "name": "Funding the Commons Forum 2027",
+        "organiser_url": "https://fundingthecommons.io/events/forum-sf-2027/"
+      },
+      "sf-ev-b25e341c4ee1": {
+        "dates": {
+          "end": "2027-06-24",
+          "start": "2027-06-21"
+        },
+        "evidence_claim_ids": [
+          "cl-6f5677ea41a8"
+        ],
+        "name": "Data + AI Summit 2027 (Databricks)",
+        "organiser_url": "https://www.databricks.com/dataaisummit"
+      },
+      "sf-ev-b49c5038bcde": {
+        "dates": {
+          "end": "2027-03-04",
+          "start": "2027-03-01"
+        },
+        "evidence_claim_ids": [
+          "cl-b2f4bbb54f3c"
+        ],
+        "name": "GDC Festival of Gaming 2027 (Game Developers Conference)",
+        "organiser_url": "https://gdconf.com/"
+      }
+    },
+    "yield_note": "Cells carry retained=0 because the four retained events were confirmed by the flagship direct checks listed in event-matrix.json.organiser_confirmations, not by a Luma/Meetup/Eventbrite lane."
+  },
+  "evidence_root": "/home/joe/repo_dev/coe-events/research/san-francisco/r1-2026-11",
+  "holidays": {
+    "all_coverage_rows": 70,
+    "all_holiday_rows": 362,
+    "authority_dates": {
+      "US (OPM 2027/2028)": [
+        "2026-11-26"
+      ],
+      "US-CA (registry + court)": [
+        "2026-11-26"
+      ],
+      "US-CA:sfusd": [
+        "2026-11-26"
+      ]
+    },
+    "court_reconciliation": [
+      {
+        "court_date": "2027-01-01",
+        "court_line": "Friday, January 1 / New Year’s Day",
+        "disposition": "exact statutory row",
+        "stored_as": "holiday row dated 2027-01-01"
+      },
+      {
+        "court_date": "2027-01-18",
+        "court_line": "Monday, January 18 / Martin Luther King, Jr.’s Birthday",
+        "disposition": "exact statutory row",
+        "stored_as": "holiday row dated 2027-01-18"
+      },
+      {
+        "court_date": "2027-02-12",
+        "court_line": "Friday, February 12 / Lincoln's Birthday",
+        "disposition": "exact statutory row",
+        "stored_as": "holiday row dated 2027-02-12"
+      },
+      {
+        "court_date": "2027-02-15",
+        "court_line": "Monday, February 15 / Presidents' Day",
+        "disposition": "exact statutory row",
+        "stored_as": "holiday row dated 2027-02-15"
+      },
+      {
+        "court_date": "2027-04-09",
+        "court_line": "Friday, April 9 / Farmworkers Day",
+        "disposition": "court-observance row",
+        "stored_as": "holiday row dated 2027-04-09"
+      },
+      {
+        "court_date": "2027-05-31",
+        "court_line": "Monday, May 31 / Memorial Day",
+        "disposition": "exact statutory row",
+        "stored_as": "holiday row dated 2027-05-31"
+      },
+      {
+        "court_date": "2027-06-18",
+        "court_line": "Friday, June 18 / Juneteenth",
+        "disposition": "court-observance row",
+        "stored_as": "holiday row dated 2027-06-18"
+      },
+      {
+        "court_date": "2027-07-05",
+        "court_line": "Monday, July 5 / Independence Day",
+        "disposition": "exact statutory row",
+        "stored_as": "holiday row dated 2027-07-05"
+      },
+      {
+        "court_date": "2027-09-06",
+        "court_line": "Monday, September 6 / Labor Day",
+        "disposition": "exact statutory row",
+        "stored_as": "holiday row dated 2027-09-06"
+      },
+      {
+        "court_date": "2027-09-24",
+        "court_line": "Friday, September 24 / Native American Day",
+        "disposition": "exact statutory row",
+        "stored_as": "holiday row dated 2027-09-24"
+      },
+      {
+        "court_date": "2027-11-11",
+        "court_line": "Thursday, November 11 / Veterans' Day",
+        "disposition": "exact statutory row",
+        "stored_as": "holiday row dated 2027-11-11"
+      },
+      {
+        "court_date": "2027-11-25",
+        "court_line": "Thursday, November 25 / Thanksgiving Day",
+        "disposition": "court-observance row",
+        "stored_as": "holiday row dated 2027-11-25"
+      },
+      {
+        "court_date": "2027-11-26",
+        "court_line": "Friday, November 26 / Day After Thanksgiving",
+        "disposition": "court-observance row",
+        "stored_as": "holiday row dated 2027-11-26"
+      },
+      {
+        "court_date": "2027-12-24",
+        "court_line": "Friday, December 24 / Christmas Day",
+        "disposition": "court-observance row",
+        "stored_as": "holiday row dated 2027-12-24"
+      },
+      {
+        "court_date": "2027-12-31",
+        "court_line": "Friday, December 31 / New Year’s Day (2028)",
+        "disposition": "court-observance row",
+        "stored_as": "holiday row dated 2027-12-31"
+      }
+    ],
+    "coverage_reconciled_on": [
+      "2026-11-26"
+    ],
+    "foreign_country_rows": 294,
+    "foreign_rows_still_separate": 319,
+    "local_public_rows": 36,
+    "local_rows_2027": 42,
+    "local_rows_total": 43,
+    "local_school_rows": 7,
+    "municipal_2027_rows": 0,
+    "row_partition": "local 43 + other US scopes 25 + foreign countries 294 = 362",
+    "us_ca_public_rows": 24,
+    "us_ca_public_rows_2027": 23,
+    "us_comparison_rows": 25,
+    "weekday_mismatch": [],
+    "weekday_recomputed_rows": 43
+  },
+  "loss_check": {
+    "clean": true,
+    "explained_by_retired_ledger": 7,
+    "head_claim_ids": 416,
+    "head_ids_absent_from_refreshed_store": 7,
+    "refreshed_claim_ids": 480,
+    "retired": [
+      {
+        "claim_id": "cl-3022529f3341",
+        "disposition": "event dropped from the store on 2026-11-26: rsaConference.com returned HTTP 403 and the 2027 dates were only on Moscone's venue page, which fails the organiser-page rule",
+        "paths": [
+          "events.sf-ev-20e697a0a9e7.fields.conflict_severity",
+          "events.sf-ev-20e697a0a9e7.history.conflict_severity[0]"
+        ],
+        "replacement": null
+      },
+      {
+        "claim_id": "cl-4ba3bbbb516f",
+        "disposition": "event dropped from the store on 2026-11-26: rsaConference.com returned HTTP 403 and the 2027 dates were only on Moscone's venue page, which fails the organiser-page rule",
+        "paths": [
+          "events.sf-ev-20e697a0a9e7.fields.date_range",
+          "events.sf-ev-20e697a0a9e7.history.date_range[0]"
+        ],
+        "replacement": null
+      },
+      {
+        "claim_id": "cl-5f36fb90b034",
+        "disposition": "event dropped from the store on 2026-11-26: rsaConference.com returned HTTP 403 and the 2027 dates were only on Moscone's venue page, which fails the organiser-page rule",
+        "paths": [
+          "events.sf-ev-20e697a0a9e7.fields.kind",
+          "events.sf-ev-20e697a0a9e7.history.kind[0]"
+        ],
+        "replacement": null
+      },
+      {
+        "claim_id": "cl-99ef0ae02856",
+        "disposition": "event dropped from the store on 2026-11-26: rsaConference.com returned HTTP 403 and the 2027 dates were only on Moscone's venue page, which fails the organiser-page rule",
+        "paths": [
+          "events.sf-ev-20e697a0a9e7.fields.relevance",
+          "events.sf-ev-20e697a0a9e7.history.relevance[0]"
+        ],
+        "replacement": null
+      },
+      {
+        "claim_id": "cl-a3f0b7215cf1",
+        "disposition": "access blocker withdrawn by the derived-blocker pass: the resolved programme_windows.8 state is 'yes' (Sunday 09:00-17:00), so the stale '4 hour cap' sentence does not survive the resolved field",
+        "paths": [
+          "venues.sf-307c9dd57430.blockers[0]"
+        ],
+        "replacement": null
+      },
+      {
+        "claim_id": "cl-cd9ad100b4b2",
+        "disposition": "event dropped from the store on 2026-11-26: rsaConference.com returned HTTP 403 and the 2027 dates were only on Moscone's venue page, which fails the organiser-page rule",
+        "paths": [
+          "events.sf-ev-20e697a0a9e7.evidence[1]"
+        ],
+        "replacement": null
+      },
+      {
+        "claim_id": "cl-f2011a2e359b",
+        "disposition": "event dropped from the store on 2026-11-26: rsaConference.com returned HTTP 403 and the 2027 dates were only on Moscone's venue page, which fails the organiser-page rule",
+        "paths": [
+          "events.sf-ev-20e697a0a9e7.evidence[0]"
+        ],
+        "replacement": null
+      }
+    ],
+    "scope": "whole store (HEAD pre-image -> refreshed store), not venue-only",
+    "unexplained": []
+  },
+  "not_touched": [
+    "summary/san-francisco-summary.html",
+    "index.html",
+    "published-cities.json",
+    "the eight other city stores",
+    "memory_bank.md",
+    "memory_archive.md"
+  ],
+  "photos": {
+    "assets_with_url": 49,
+    "cleared_urls_unique": 45,
+    "fallback_views": 2,
+    "note": "45 cleared assets after excluding the 4 wrong-room assets that carry a URL and withheld: true; 49 URLs are verified HTTP 206 in photo-verify.json, of which 4 are withheld as different rooms.",
+    "per_venue": {
+      "sf-03266107e45f": {
+        "cleared": 1,
+        "withheld": 0
+      },
+      "sf-277ae6031e3f": {
+        "cleared": 5,
+        "withheld": 0
+      },
+      "sf-2a8505a53998": {
+        "cleared": 4,
+        "withheld": 0
+      },
+      "sf-307c9dd57430": {
+        "cleared": 0,
+        "withheld": 1
+      },
+      "sf-67623ac7c2a8": {
+        "cleared": 3,
+        "withheld": 0
+      },
+      "sf-70dcce8a309f": {
+        "cleared": 1,
+        "withheld": 2
+      },
+      "sf-7196ba5d7e75": {
+        "cleared": 2,
+        "withheld": 0
+      },
+      "sf-791be009d2a8": {
+        "cleared": 4,
+        "withheld": 0
+      },
+      "sf-861f3552141b": {
+        "cleared": 5,
+        "withheld": 0
+      },
+      "sf-9ca5a5071dd1": {
+        "cleared": 5,
+        "withheld": 0
+      },
+      "sf-a9e2573503df": {
+        "cleared": 0,
+        "withheld": 1
+      },
+      "sf-aa633c4fb565": {
+        "cleared": 5,
+        "withheld": 0
+      },
+      "sf-b3b27dca9c85": {
+        "cleared": 3,
+        "withheld": 0
+      },
+      "sf-b3be38e30978": {
+        "cleared": 2,
+        "withheld": 2
+      },
+      "sf-eb6f1d5fd648": {
+        "cleared": 0,
+        "withheld": 1
+      },
+      "sf-f76ff9ceb2eb": {
+        "cleared": 5,
+        "withheld": 0
+      }
+    },
+    "room_views": 43,
+    "total_cleared": 45,
+    "total_withheld_records": 7,
+    "venues_with_1plus": 13,
+    "venues_with_4plus": 7,
+    "venues_with_none": [
+      "sf-307c9dd57430",
+      "sf-a9e2573503df",
+      "sf-eb6f1d5fd648"
+    ],
+    "view_mix": {
+      "exterior": 2,
+      "interior": 23,
+      "layout": 4,
+      "lobby": 9,
+      "past_event": 7
+    }
+  },
+  "ranking": {
+    "identical_to_store": true,
+    "leads": 2,
+    "refresh_date": "2026-11-26",
+    "rows": 14
+  },
+  "store": {
+    "bytes": 1259462,
+    "path": "/home/joe/repo_dev/coe-events/research/san-francisco/city/city.json",
+    "refresh_revision": 1,
+    "sha256": "57f757cc674e258e32910db94a91bdb9af078db8b06c6ca802429d6739edc523",
+    "updated_at": "2026-11-26T00:00:00Z"
+  }
+}

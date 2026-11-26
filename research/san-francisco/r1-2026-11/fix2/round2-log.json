@@ -1,0 +1,499 @@
+{
+ "blocker_derivation": [
+  {
+   "before": [
+    {
+     "claim_id": "cl-584063e2b7ca",
+     "field": "price",
+     "text": "Cost is an estimate from a published rate, not a quote."
+    }
+   ],
+   "inputs": {
+    "access_window": null,
+    "booking_hour_cap": null,
+    "programme_8h_state": "unknown",
+    "programme_window_basis": "The rentals page publishes hourly rates and an availability calendar but no daily hire interval, and the calendar itself returned HTTP 429 to this capture on 2026-11-26, so no clock band was read."
+   },
+   "name": "CounterPulse - Main Stage",
+   "produced": null,
+   "venue_id": "sf-03266107e45f",
+   "withdrawn": []
+  },
+  {
+   "before": [
+    {
+     "claim_id": "cl-d208d6944c8c",
+     "field": "price",
+     "text": "No quote or published rate; cost unknown."
+    }
+   ],
+   "inputs": {
+    "access_window": "Move-in normally after 14:00; no closing clock published",
+    "booking_hour_cap": null,
+    "programme_8h_state": "unknown",
+    "programme_window_basis": "The policy prints a 14:00 move-in norm with earlier access by paid arrangement, but no closing clock, so neither an eight-hour nor a twelve-hour band is published."
+   },
+   "name": "Brava Theater Center - Lobby",
+   "produced": null,
+   "venue_id": "sf-277ae6031e3f",
+   "withdrawn": []
+  },
+  {
+   "before": [
+    {
+     "claim_id": "cl-ea87f70cc138",
+     "field": "price",
+     "text": "No quote or published rate; cost unknown."
+    }
+   ],
+   "inputs": {
+    "access_window": "Move-in normally after 14:00; no closing clock published",
+    "booking_hour_cap": null,
+    "programme_8h_state": "unknown",
+    "programme_window_basis": "The house policy prints a 14:00 move-in norm with earlier access by paid arrangement, but no closing clock for the Studio either."
+   },
+   "name": "Brava Theater Center - Studio",
+   "produced": null,
+   "venue_id": "sf-2a8505a53998",
+   "withdrawn": []
+  },
+  {
+   "before": [
+    {
+     "claim_id": "cl-a3f0b7215cf1",
+     "field": "access_window",
+     "text": "Access window does not fit: published window ends at 14:00; 4 hour cap for a 8-hour programme."
+    }
+   ],
+   "inputs": {
+    "access_window": "Daytime Mon-Fri 10:00-17:00, Sat 10:00-14:00; Sunday 09:00-17:00; evening block 17:00-21:00",
+    "booking_hour_cap": 8,
+    "programme_8h_state": "yes",
+    "programme_window_basis": "The Sunday weekend block is printed as 'Sunday 9-5', an interval that covers 09:00-17:00 exactly."
+   },
+   "name": "Alliance Francaise de San Francisco - Theater",
+   "produced": null,
+   "venue_id": "sf-307c9dd57430",
+   "withdrawn": [
+    {
+     "claim_id": "cl-a3f0b7215cf1",
+     "field": "access_window",
+     "reason": "Derived-blocker pass: resolved programme_windows.8 is 'yes', so the legacy access blocker does not survive the resolved field.",
+     "text": "Access window does not fit: published window ends at 14:00; 4 hour cap for a 8-hour programme."
+    }
+   ]
+  },
+  {
+   "before": [
+    {
+     "claim_id": "cl-8218fa43167c",
+     "field": "price",
+     "text": "No quote or published rate; cost unknown."
+    }
+   ],
+   "inputs": {
+    "access_window": null,
+    "booking_hour_cap": null,
+    "programme_8h_state": "unknown",
+    "programme_window_basis": "No daily hire interval is published on the venue-rental page; the rental form is the only booking route recorded."
+   },
+   "name": "Gray Area - Lobby (Grand Theater)",
+   "produced": null,
+   "venue_id": "sf-70dcce8a309f",
+   "withdrawn": []
+  },
+  {
+   "before": [
+    {
+     "claim_id": "cl-02955e4dff50",
+     "field": "price",
+     "text": "No quote or published rate; cost unknown."
+    }
+   ],
+   "inputs": {
+    "access_window": null,
+    "booking_hour_cap": null,
+    "programme_8h_state": "unknown",
+    "programme_window_basis": "Bookings are inquiry-led with a 4-6 month notice period and no published daily clock band."
+   },
+   "name": "Z Space - Steindler Stage",
+   "produced": null,
+   "venue_id": "sf-791be009d2a8",
+   "withdrawn": []
+  },
+  {
+   "before": [
+    {
+     "claim_id": "cl-2df984a7be43",
+     "field": "price",
+     "text": "No quote or published rate; cost unknown."
+    }
+   ],
+   "inputs": {
+    "access_window": null,
+    "booking_hour_cap": null,
+    "programme_8h_state": "unknown",
+    "programme_window_basis": "Availability is handled by email and the page prints no hire interval."
+   },
+   "name": "The Lab - Main Auditorium (Redstone Building)",
+   "produced": null,
+   "venue_id": "sf-861f3552141b",
+   "withdrawn": []
+  },
+  {
+   "before": [
+    {
+     "claim_id": "cl-ae67481809ba",
+     "field": "price",
+     "text": "No quote or published rate; cost unknown."
+    }
+   ],
+   "inputs": {
+    "access_window": null,
+    "booking_hour_cap": null,
+    "programme_8h_state": "unknown",
+    "programme_window_basis": "The Lobby is included in a Steindler Stage rental or booked by inquiry; no separate clock band is published."
+   },
+   "name": "Z Space - Z Lobby",
+   "produced": null,
+   "venue_id": "sf-9ca5a5071dd1",
+   "withdrawn": []
+  },
+  {
+   "before": [
+    {
+     "claim_id": "cl-068073ab189d",
+     "field": "price",
+     "text": "Cost is an estimate from a published rate, not a quote."
+    }
+   ],
+   "inputs": {
+    "access_window": "Mon-Fri reservations only between 09:00 and 17:00; latest event end 22:00 Fri-Sun and 21:00 Mon-Thu",
+    "booking_hour_cap": null,
+    "programme_8h_state": "yes",
+    "programme_window_basis": "The room's own rate block prints 'Monday to Friday reservations only between 9 am and 5 pm', an eight-hour band that covers 09:00-17:00 exactly."
+   },
+   "name": "The Women's Building - Audre Lorde Room",
+   "produced": null,
+   "venue_id": "sf-b3b27dca9c85",
+   "withdrawn": []
+  },
+  {
+   "before": [
+    {
+     "claim_id": "cl-15af0b7f3c14",
+     "field": "price",
+     "text": "Cost is an estimate from a published rate, not a quote."
+    }
+   ],
+   "inputs": {
+    "access_window": null,
+    "booking_hour_cap": null,
+    "programme_8h_state": "unknown",
+    "programme_window_basis": "The only clock on the page is the Peerspace bookable-hours widget (07:00-24:00 daily); the host publishes no hire terms in their own words, and a marketplace widget is not accepted as an operator-published interval."
+   },
+   "name": "Common Space - Large Loft in the Marina (Peerspace listing 647656b424653c000e5dacf6)",
+   "produced": null,
+   "venue_id": "sf-eb6f1d5fd648",
+   "withdrawn": []
+  },
+  {
+   "before": [
+    {
+     "claim_id": "cl-1f1bd665d092",
+     "field": "price",
+     "text": "Cost is an estimate from a published rate, not a quote."
+    }
+   ],
+   "inputs": {
+    "access_window": null,
+    "booking_hour_cap": null,
+    "programme_8h_state": "unknown",
+    "programme_window_basis": "The rate sheet sells hours with a four-hour minimum and no daily band, so neither window is confirmed."
+   },
+   "name": "Four One Nine - Middle Gallery Extended (SoMa)",
+   "produced": null,
+   "venue_id": "sf-f76ff9ceb2eb",
+   "withdrawn": []
+  }
+ ],
+ "events": [
+  {
+   "event_id": "sf-ev-0f6513895b68",
+   "name": "AI Engineer World's Fair 2027",
+   "new_evidence_claim_ids": [
+    "cl-fb2ba4245d2d"
+   ],
+   "retained_history_evidence": [
+    "cl-024b5cbe303c",
+    "cl-726771a58add"
+   ]
+  },
+  {
+   "event_id": "sf-ev-71da9138b80f",
+   "name": "Funding the Commons Forum 2027",
+   "new_evidence_claim_ids": [
+    "cl-f81f62597321"
+   ],
+   "retained_history_evidence": [
+    "cl-79f8aa20e314",
+    "cl-f35fb3f54a7b"
+   ]
+  },
+  {
+   "event_id": "sf-ev-b25e341c4ee1",
+   "name": "Data + AI Summit 2027 (Databricks)",
+   "new_evidence_claim_ids": [
+    "cl-6f5677ea41a8"
+   ],
+   "retained_history_evidence": [
+    "cl-342963add27a",
+    "cl-410e08658b9f",
+    "cl-c89d3760b120"
+   ]
+  },
+  {
+   "event_id": "sf-ev-b49c5038bcde",
+   "name": "GDC Festival of Gaming 2027 (Game Developers Conference)",
+   "new_evidence_claim_ids": [
+    "cl-b2f4bbb54f3c"
+   ],
+   "retained_history_evidence": [
+    "cl-470034b1c888",
+    "cl-97ca94d9d0d0"
+   ]
+  }
+ ],
+ "holidays": {
+  "court_rows_added": [
+   "2027-04-09",
+   "2027-06-18",
+   "2027-11-25",
+   "2027-11-26",
+   "2027-12-24",
+   "2027-12-31"
+  ],
+  "coverage_edits": [
+   {
+    "accessed_on_after": "2026-11-26",
+    "accessed_on_before": "2026-11-20",
+    "end": "2027-10-28",
+    "start": "2027-01-01"
+   },
+   {
+    "accessed_on_after": "2026-11-26",
+    "accessed_on_before": "2026-11-20",
+    "end": "2027-11-24",
+    "start": "2027-10-30"
+   },
+   {
+    "accessed_on_after": "2026-11-26",
+    "accessed_on_before": "2026-11-20",
+    "end": "2028-01-07",
+    "start": "2027-11-26"
+   },
+   {
+    "action": "new court reconciliation coverage row",
+    "end": "2027-12-31",
+    "start": "2027-01-01"
+   }
+  ],
+  "row_edits": [
+   {
+    "action": "locator+crosscheck",
+    "name": "New Year's Day",
+    "start": "2027-01-01"
+   },
+   {
+    "action": "locator+crosscheck",
+    "name": "Dr. Martin Luther King, Jr. Day",
+    "start": "2027-01-18"
+   },
+   {
+    "action": "locator+crosscheck",
+    "name": "Lunar New Year",
+    "start": "2027-02-06"
+   },
+   {
+    "action": "locator+crosscheck",
+    "name": "Lincoln Day",
+    "start": "2027-02-12"
+   },
+   {
+    "action": "locator+crosscheck",
+    "name": "Third Monday in February",
+    "start": "2027-02-15"
+   },
+   {
+    "action": "locator+crosscheck",
+    "name": "Farmworkers Day",
+    "start": "2027-03-31"
+   },
+   {
+    "action": "locator+crosscheck",
+    "name": "Genocide Remembrance Day",
+    "start": "2027-04-24"
+   },
+   {
+    "action": "locator+crosscheck",
+    "name": "Memorial Day",
+    "start": "2027-05-31"
+   },
+   {
+    "action": "locator+crosscheck",
+    "name": "Juneteenth",
+    "start": "2027-06-19"
+   },
+   {
+    "action": "locator+crosscheck",
+    "name": "Independence Day",
+    "start": "2027-07-04"
+   },
+   {
+    "action": "locator+crosscheck",
+    "name": "Independence Day",
+    "start": "2027-07-05"
+   },
+   {
+    "action": "locator+crosscheck",
+    "name": "Labor Day",
+    "start": "2027-09-06"
+   },
+   {
+    "action": "locator+crosscheck",
+    "name": "Admission Day",
+    "start": "2027-09-09"
+   },
+   {
+    "action": "locator+crosscheck",
+    "name": "Native American Day",
+    "start": "2027-09-24"
+   },
+   {
+    "action": "locator+crosscheck",
+    "name": "Columbus Day",
+    "start": "2027-10-11"
+   },
+   {
+    "action": "locator+crosscheck",
+    "name": "Veterans Day",
+    "start": "2027-11-11"
+   },
+   {
+    "action": "locator+crosscheck",
+    "name": "Christmas Day",
+    "start": "2027-12-25"
+   },
+   {
+    "action": "locator+crosscheck",
+    "name": "New Year's Day",
+    "start": "2028-01-01"
+   },
+   {
+    "action": "new court row",
+    "name": "Farmworkers Day",
+    "start": "2027-04-09"
+   },
+   {
+    "action": "new court row",
+    "name": "Juneteenth",
+    "start": "2027-06-18"
+   },
+   {
+    "action": "new court row",
+    "name": "Thanksgiving Day",
+    "start": "2027-11-25"
+   },
+   {
+    "action": "new court row",
+    "name": "Day After Thanksgiving",
+    "start": "2027-11-26"
+   },
+   {
+    "action": "new court row",
+    "name": "Christmas Day",
+    "start": "2027-12-24"
+   },
+   {
+    "action": "new court row",
+    "name": "New Year's Day",
+    "start": "2027-12-31"
+   }
+  ]
+ },
+ "retired_claims": [
+  {
+   "claim_id": "cl-f2011a2e359b",
+   "disposition": "event dropped from the store on 2026-11-26: rsaConference.com returned HTTP 403 and the 2027 dates were only on Moscone's venue page, which fails the organiser-page rule",
+   "paths": [
+    ".events.sf-ev-20e697a0a9e7.evidence[0]"
+   ],
+   "prior_run": "run-20261120-sf-h1-migration",
+   "replacement": null,
+   "retired_from_event": "sf-ev-20e697a0a9e7"
+  },
+  {
+   "claim_id": "cl-cd9ad100b4b2",
+   "disposition": "event dropped from the store on 2026-11-26: rsaConference.com returned HTTP 403 and the 2027 dates were only on Moscone's venue page, which fails the organiser-page rule",
+   "paths": [
+    ".events.sf-ev-20e697a0a9e7.evidence[1]"
+   ],
+   "prior_run": "run-20261120-sf-h1-migration",
+   "replacement": null,
+   "retired_from_event": "sf-ev-20e697a0a9e7"
+  },
+  {
+   "claim_id": "cl-3022529f3341",
+   "disposition": "event dropped from the store on 2026-11-26: rsaConference.com returned HTTP 403 and the 2027 dates were only on Moscone's venue page, which fails the organiser-page rule",
+   "paths": [
+    ".events.sf-ev-20e697a0a9e7.fields.conflict_severity",
+    ".events.sf-ev-20e697a0a9e7.history.conflict_severity[0]"
+   ],
+   "prior_run": "run-20261120-sf-h1-migration",
+   "replacement": null,
+   "retired_from_event": "sf-ev-20e697a0a9e7"
+  },
+  {
+   "claim_id": "cl-4ba3bbbb516f",
+   "disposition": "event dropped from the store on 2026-11-26: rsaConference.com returned HTTP 403 and the 2027 dates were only on Moscone's venue page, which fails the organiser-page rule",
+   "paths": [
+    ".events.sf-ev-20e697a0a9e7.fields.date_range",
+    ".events.sf-ev-20e697a0a9e7.history.date_range[0]"
+   ],
+   "prior_run": "run-20261120-sf-h1-migration",
+   "replacement": null,
+   "retired_from_event": "sf-ev-20e697a0a9e7"
+  },
+  {
+   "claim_id": "cl-5f36fb90b034",
+   "disposition": "event dropped from the store on 2026-11-26: rsaConference.com returned HTTP 403 and the 2027 dates were only on Moscone's venue page, which fails the organiser-page rule",
+   "paths": [
+    ".events.sf-ev-20e697a0a9e7.fields.kind",
+    ".events.sf-ev-20e697a0a9e7.history.kind[0]"
+   ],
+   "prior_run": "run-20261120-sf-h1-migration",
+   "replacement": null,
+   "retired_from_event": "sf-ev-20e697a0a9e7"
+  },
+  {
+   "claim_id": "cl-99ef0ae02856",
+   "disposition": "event dropped from the store on 2026-11-26: rsaConference.com returned HTTP 403 and the 2027 dates were only on Moscone's venue page, which fails the organiser-page rule",
+   "paths": [
+    ".events.sf-ev-20e697a0a9e7.fields.relevance",
+    ".events.sf-ev-20e697a0a9e7.history.relevance[0]"
+   ],
+   "prior_run": "run-20261120-sf-h1-migration",
+   "replacement": null,
+   "retired_from_event": "sf-ev-20e697a0a9e7"
+  },
+  {
+   "claim_id": "cl-a3f0b7215cf1",
+   "disposition": "access blocker withdrawn by the derived-blocker pass: the resolved programme_windows.8 state is 'yes' (Sunday 09:00-17:00), so the stale '4 hour cap' sentence does not survive the resolved field",
+   "paths": [
+    ".venues.sf-307c9dd57430.blockers[0]"
+   ],
+   "prior_run": null,
+   "replacement": null
+  }
+ ]
+}
