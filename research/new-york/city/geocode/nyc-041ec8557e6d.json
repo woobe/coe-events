@@ -1,0 +1,182 @@
+{
+ "name": "LOFT39 — 3rd Floor Speakeasy",
+ "address": "38 West 39th Street, New York, NY 10018",
+ "lookups": {
+  "address": {
+   "query": "38 West 39th Street, New York, NY 10018",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=38%20West%2039th%20Street%2C%20New%20York%2C%20NY%2010018",
+   "response": [
+    {
+     "place_id": 359962071,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 265301916,
+     "lat": "40.7521572",
+     "lon": "-73.9842194",
+     "category": "building",
+     "type": "yes",
+     "place_rank": 30,
+     "importance": 9.175936522464359e-05,
+     "addresstype": "building",
+     "name": "",
+     "display_name": "38, West 39th Street, Midtown, Manhattan Community Board 5, Manhattan, New York County, New York, 10018, United States",
+     "address": {
+      "house_number": "38",
+      "road": "West 39th Street",
+      "quarter": "Midtown",
+      "neighbourhood": "Manhattan Community Board 5",
+      "suburb": "Manhattan",
+      "county": "New York County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "10018",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": {
+      "height": "17.2",
+      "nycdoitt:bin": "1016012"
+     },
+     "boundingbox": [
+      "40.7520198",
+      "40.7522841",
+      "-73.9843457",
+      "-73.9841010"
+     ]
+    },
+    {
+     "place_id": 360304104,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "node",
+     "osm_id": 11965813827,
+     "lat": "40.7522108",
+     "lon": "-73.9841887",
+     "category": "amenity",
+     "type": "events_venue",
+     "place_rank": 30,
+     "importance": 9.175936522464359e-05,
+     "addresstype": "amenity",
+     "name": "LOFT39",
+     "display_name": "LOFT39, 38, West 39th Street, Midtown, Manhattan Community Board 5, Manhattan, New York County, New York, 10018, United States",
+     "address": {
+      "amenity": "LOFT39",
+      "house_number": "38",
+      "road": "West 39th Street",
+      "quarter": "Midtown",
+      "neighbourhood": "Manhattan Community Board 5",
+      "suburb": "Manhattan",
+      "county": "New York County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "10018",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": null,
+     "boundingbox": [
+      "40.7521608",
+      "40.7522608",
+      "-73.9842387",
+      "-73.9841387"
+     ]
+    },
+    {
+     "place_id": 360741555,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "node",
+     "osm_id": 5142544476,
+     "lat": "40.7522319",
+     "lon": "-73.9841646",
+     "category": "amenity",
+     "type": "restaurant",
+     "place_rank": 30,
+     "importance": 9.175936522464359e-05,
+     "addresstype": "amenity",
+     "name": "Calle Dao",
+     "display_name": "Calle Dao, 38, West 39th Street, Midtown, Manhattan Community Board 5, Manhattan, New York County, New York, 10018, United States",
+     "address": {
+      "amenity": "Calle Dao",
+      "house_number": "38",
+      "road": "West 39th Street",
+      "quarter": "Midtown",
+      "neighbourhood": "Manhattan Community Board 5",
+      "suburb": "Manhattan",
+      "county": "New York County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "10018",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": {
+      "bar": "yes",
+      "phone": "+1-212-221-9002",
+      "cuisine": "cuban;chinese",
+      "toilets": "yes",
+      "website": "https://www.calledao.com/bryant-park/",
+      "cocktails": "yes",
+      "drink:beer": "yes",
+      "drink:wine": "yes",
+      "wheelchair": "yes",
+      "happy_hours": "Mo-Su 16:00-19:00",
+      "drink:liquor": "yes",
+      "opening_hours": "Mo-We 11:00-23:00; Th-Sa 11:00-24:00; Su 11:00-22:00",
+      "toilets:unisex": "yes"
+     },
+     "boundingbox": [
+      "40.7521819",
+      "40.7522819",
+      "-73.9842146",
+      "-73.9841146"
+     ]
+    }
+   ]
+  },
+  "name": {
+   "query": "LOFT39, 38 West 39th Street, New York, NY 10018",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=LOFT39%2C%2038%20West%2039th%20Street%2C%20New%20York%2C%20NY%2010018",
+   "response": [
+    {
+     "place_id": 359516935,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "node",
+     "osm_id": 11965813827,
+     "lat": "40.7522108",
+     "lon": "-73.9841887",
+     "category": "amenity",
+     "type": "events_venue",
+     "place_rank": 30,
+     "importance": 9.175936522464359e-05,
+     "addresstype": "amenity",
+     "name": "LOFT39",
+     "display_name": "LOFT39, 38, West 39th Street, Midtown, Manhattan Community Board 5, Manhattan, New York County, New York, 10018, United States",
+     "address": {
+      "amenity": "LOFT39",
+      "house_number": "38",
+      "road": "West 39th Street",
+      "quarter": "Midtown",
+      "neighbourhood": "Manhattan Community Board 5",
+      "suburb": "Manhattan",
+      "county": "New York County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "10018",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": null,
+     "boundingbox": [
+      "40.7521608",
+      "40.7522608",
+      "-73.9842387",
+      "-73.9841387"
+     ]
+    }
+   ]
+  }
+ }
+}

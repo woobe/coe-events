@@ -1,0 +1,111 @@
+{
+ "name": "NYU Kimmel Center — KC 914",
+ "address": "60 Washington Square South, New York, NY 10012",
+ "lookups": {
+  "address": {
+   "query": "60 Washington Square South, New York, NY 10012",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=60%20Washington%20Square%20South%2C%20New%20York%2C%20NY%2010012",
+   "response": [
+    {
+     "place_id": 358926229,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 155075464,
+     "lat": "40.7297941",
+     "lon": "-73.9978718",
+     "category": "building",
+     "type": "university",
+     "place_rank": 30,
+     "importance": 9.175936522464359e-05,
+     "addresstype": "building",
+     "name": "Helen and Martin Kimmel Center for University Life",
+     "display_name": "Helen and Martin Kimmel Center for University Life, 60, Washington Square South, Greenwich Village, Manhattan Community Board 2, Manhattan, New York County, New York, 10012, United States",
+     "address": {
+      "building": "Helen and Martin Kimmel Center for University Life",
+      "house_number": "60",
+      "road": "Washington Square South",
+      "neighbourhood": "Greenwich Village",
+      "suburb": "Manhattan",
+      "county": "New York County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "10012",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": {
+      "ele": "8",
+      "height": "50.0",
+      "smoking": "no",
+      "website": "https://www.nyu.edu/life/campus-resources/kimmel-center.html",
+      "building": "university",
+      "roof:shape": "flat",
+      "nycdoitt:bin": "1008662",
+      "building:levels": "10",
+      "wikimedia_commons": "File:Kimmel Center for University Life NYU.JPG"
+     },
+     "boundingbox": [
+      "40.7294520",
+      "40.7300991",
+      "-73.9982456",
+      "-73.9975567"
+     ]
+    },
+    {
+     "place_id": 359090391,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "node",
+     "osm_id": 5514228220,
+     "lat": "40.7296364",
+     "lon": "-73.9981099",
+     "category": "amenity",
+     "type": "fast_food",
+     "place_rank": 30,
+     "importance": 9.175936522464359e-05,
+     "addresstype": "amenity",
+     "name": "The Market Place at Kimmel",
+     "display_name": "The Market Place at Kimmel, 60, Washington Square South, Greenwich Village, Manhattan Community Board 2, Manhattan, New York County, New York, 10012, United States",
+     "address": {
+      "amenity": "The Market Place at Kimmel",
+      "house_number": "60",
+      "road": "Washington Square South",
+      "neighbourhood": "Greenwich Village",
+      "suburb": "Manhattan",
+      "county": "New York County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "10012",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": {
+      "phone": "+1-212-998-4573",
+      "cuisine": "italian;mexican;sandwich",
+      "website": "https://nyu.campusdish.com/Locations/MarketPlaceatKimmel.aspx",
+      "diet:halal": "yes",
+      "payment:cash": "yes",
+      "opening_hours": "Mo-Th 10:30-20:00; Fr 10:30-15:00",
+      "payment:token": "yes",
+      "diet:vegetarian": "yes",
+      "outdoor_seating": "yes",
+      "payment:credit_cards": "yes",
+      "payment:meal_voucher": "yes"
+     },
+     "boundingbox": [
+      "40.7295864",
+      "40.7296864",
+      "-73.9981599",
+      "-73.9980599"
+     ]
+    }
+   ]
+  },
+  "name": {
+   "query": "NYU Kimmel Center, 60 Washington Square South, New York, NY 10012",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=NYU%20Kimmel%20Center%2C%2060%20Washington%20Square%20South%2C%20New%20York%2C%20NY%2010012",
+   "response": []
+  }
+ }
+}

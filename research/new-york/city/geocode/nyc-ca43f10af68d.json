@@ -1,0 +1,109 @@
+{
+ "name": "NYC Seminar & Conference Center — Seminar Room A",
+ "address": "114 West 26th Street, 3rd Floor, New York, NY 10001",
+ "lookups": {
+  "address": {
+   "query": "114 West 26th Street, 3rd Floor, New York, NY 10001",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=114%20West%2026th%20Street%2C%203rd%20Floor%2C%20New%20York%2C%20NY%2010001",
+   "response": []
+  },
+  "address-short": {
+   "query": "114 West 26th Street, 3rd Floor, NY",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=114%20West%2026th%20Street%2C%203rd%20Floor%2C%20NY",
+   "response": []
+  },
+  "name": {
+   "query": "NYC Seminar & Conference Center, 114 West 26th Street, 3rd Floor, New York, NY 10001",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=NYC%20Seminar%20%26%20Conference%20Center%2C%20114%20West%2026th%20Street%2C%203rd%20Floor%2C%20New%20York%2C%20NY%2010001",
+   "response": []
+  },
+  "clean": {
+   "query": "114 West 26th Street, New York, NY 10001",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=114%20West%2026th%20Street%2C%20New%20York%2C%20NY%2010001",
+   "response": [
+    {
+     "place_id": 361782599,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 248144029,
+     "lat": "40.7449805",
+     "lon": "-73.9923808",
+     "category": "building",
+     "type": "yes",
+     "place_rank": 30,
+     "importance": 9.175936522464359e-05,
+     "addresstype": "building",
+     "name": "",
+     "display_name": "114, West 26th Street, Chelsea District, Manhattan Community Board 4, Manhattan, New York County, New York, 10001, United States",
+     "address": {
+      "house_number": "114",
+      "road": "West 26th Street",
+      "neighbourhood": "Chelsea District",
+      "suburb": "Manhattan",
+      "county": "New York County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "10001",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": {
+      "height": "44.0",
+      "nycdoitt:bin": "1015020"
+     },
+     "boundingbox": [
+      "40.7448225",
+      "40.7451384",
+      "-73.9925902",
+      "-73.9921715"
+     ]
+    },
+    {
+     "place_id": 355720566,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "node",
+     "osm_id": 5764225165,
+     "lat": "40.7450562",
+     "lon": "-73.9923336",
+     "category": "shop",
+     "type": "clothes",
+     "place_rank": 30,
+     "importance": 9.175936522464359e-05,
+     "addresstype": "shop",
+     "name": "Buffalo Exchange",
+     "display_name": "Buffalo Exchange, 114, West 26th Street, Chelsea District, Manhattan Community Board 4, Manhattan, New York County, New York, 10001, United States",
+     "address": {
+      "shop": "Buffalo Exchange",
+      "house_number": "114",
+      "road": "West 26th Street",
+      "neighbourhood": "Chelsea District",
+      "suburb": "Manhattan",
+      "county": "New York County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "10001",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": {
+      "phone": "+1 212-675-3535",
+      "branch": "Chelsea",
+      "clothes": "women;men",
+      "website": "https://www.buffaloexchange.com/locations/new-york-city/manhattan-chelsea/",
+      "second_hand": "only",
+      "opening_hours": "Mo-Sa 11:00-20:00; Su 12:00-19:00",
+      "brand:wikidata": "Q4985721"
+     },
+     "boundingbox": [
+      "40.7450062",
+      "40.7451062",
+      "-73.9923836",
+      "-73.9922836"
+     ]
+    }
+   ]
+  }
+ }
+}

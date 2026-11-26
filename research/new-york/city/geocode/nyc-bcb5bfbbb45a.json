@@ -1,0 +1,52 @@
+{
+ "name": "La Victoria — 1st Floor",
+ "address": "357 West 16th Street, New York, NY 10011",
+ "lookups": {
+  "address": {
+   "query": "357 West 16th Street, New York, NY 10011",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=357%20West%2016th%20Street%2C%20New%20York%2C%20NY%2010011",
+   "response": [
+    {
+     "place_id": 400783934,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 348477348,
+     "lat": "40.7418314",
+     "lon": "-74.0031170",
+     "category": "place",
+     "type": "house",
+     "place_rank": 30,
+     "importance": 9.99999999995449e-06,
+     "addresstype": "place",
+     "name": "",
+     "display_name": "357, West 16th Street, Chelsea District, Manhattan Community Board 4, Manhattan, New York County, New York, 10011, United States",
+     "address": {
+      "house_number": "357",
+      "road": "West 16th Street",
+      "neighbourhood": "Chelsea District",
+      "suburb": "Manhattan",
+      "county": "New York County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "10011",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": null,
+     "boundingbox": [
+      "40.7417814",
+      "40.7418814",
+      "-74.0031670",
+      "-74.0030670"
+     ]
+    }
+   ]
+  },
+  "name": {
+   "query": "La Victoria, 357 West 16th Street, New York, NY 10011",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=La%20Victoria%2C%20357%20West%2016th%20Street%2C%20New%20York%2C%20NY%2010011",
+   "response": []
+  }
+ }
+}

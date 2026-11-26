@@ -1,0 +1,190 @@
+{
+ "name": "CUNY Graduate Center — Event and Space Rentals",
+ "address": "365 Fifth Avenue, New York, NY 10016",
+ "lookups": {
+  "address": {
+   "query": "365 Fifth Avenue, New York, NY 10016",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=365%20Fifth%20Avenue%2C%20New%20York%2C%20NY%2010016",
+   "response": [
+    {
+     "place_id": 403158181,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 1471605347,
+     "lat": "40.9163902",
+     "lon": "-73.8072680",
+     "category": "place",
+     "type": "house",
+     "place_rank": 30,
+     "importance": 9.99999999995449e-06,
+     "addresstype": "place",
+     "name": "",
+     "display_name": "365, 5th Avenue, North Pelham, Village of Pelham, Town of Pelham, Westchester County, New York, 10803, United States",
+     "address": {
+      "house_number": "365",
+      "road": "5th Avenue",
+      "neighbourhood": "North Pelham",
+      "town": "Village of Pelham",
+      "county": "Westchester County",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "10803",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": null,
+     "boundingbox": [
+      "40.9163402",
+      "40.9164402",
+      "-73.8073180",
+      "-73.8072180"
+     ]
+    },
+    {
+     "place_id": 360618583,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 1271518873,
+     "lat": "40.8021613",
+     "lon": "-73.9453686",
+     "category": "highway",
+     "type": "secondary",
+     "place_rank": 26,
+     "importance": 0.5753696764124501,
+     "addresstype": "secondary",
+     "name": "5th Avenue",
+     "display_name": "5th Avenue, Manhattan Community Board 11, Manhattan, New York County, New York, 10026, United States",
+     "address": {
+      "road": "5th Avenue",
+      "neighbourhood": "Manhattan Community Board 11",
+      "suburb": "Manhattan",
+      "county": "New York County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "10026",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": {
+      "hgv": "destination;no",
+      "lanes": "3",
+      "oneway": "yes",
+      "wikidata": "Q109858",
+      "wikipedia": "en:Fifth Avenue",
+      "turn:lanes": "left||",
+      "cycleway:left": "lane",
+      "oneway:bicycle": "no",
+      "cycleway:left:buffer": "yes",
+      "cycleway:left:oneway": "no"
+     },
+     "boundingbox": [
+      "40.8019710",
+      "40.8023524",
+      "-73.9455080",
+      "-73.9452302"
+     ]
+    }
+   ]
+  },
+  "name": {
+   "query": "CUNY Graduate Center, 365 Fifth Avenue, New York, NY 10016",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=CUNY%20Graduate%20Center%2C%20365%20Fifth%20Avenue%2C%20New%20York%2C%20NY%2010016",
+   "response": []
+  },
+  "name-city": {
+   "query": "CUNY Graduate Center, New York",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=CUNY%20Graduate%20Center%2C%20New%20York",
+   "response": [
+    {
+     "place_id": 359143216,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 265301695,
+     "lat": "40.7485188",
+     "lon": "-73.9836393",
+     "category": "amenity",
+     "type": "university",
+     "place_rank": 30,
+     "importance": 0.45133626112582076,
+     "addresstype": "amenity",
+     "name": "CUNY Graduate School and University Center",
+     "display_name": "CUNY Graduate School and University Center, 365, 5th Avenue, Midtown South, Manhattan Community Board 5, Manhattan, New York County, New York, 10016, United States",
+     "address": {
+      "amenity": "CUNY Graduate School and University Center",
+      "house_number": "365",
+      "road": "5th Avenue",
+      "neighbourhood": "Midtown South",
+      "suburb": "Manhattan",
+      "county": "New York County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "10016",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": {
+      "ele": "16",
+      "height": "44.3",
+      "website": "https://www.gc.cuny.edu/",
+      "building": "yes",
+      "operator": "City University of New York",
+      "wikidata": "Q1024543",
+      "wikipedia": "en:CUNY Graduate Center",
+      "roof:shape": "flat",
+      "roof:colour": "#989380",
+      "nycdoitt:bin": "1017097",
+      "building:part": "yes",
+      "roof:material": "concrete",
+      "building:colour": "#D5CCAB"
+     },
+     "boundingbox": [
+      "40.7480727",
+      "40.7489648",
+      "-73.9843119",
+      "-73.9829666"
+     ]
+    },
+    {
+     "place_id": 359247052,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 271589862,
+     "lat": "40.7996852",
+     "lon": "-73.9396373",
+     "category": "building",
+     "type": "dormitory",
+     "place_rank": 30,
+     "importance": 9.175936522464359e-05,
+     "addresstype": "building",
+     "name": "CUNY Graduate Center Housing",
+     "display_name": "CUNY Graduate Center Housing, 171, East 118th Street, East Harlem, Manhattan Community Board 11, Manhattan, New York County, New York, 10035, United States",
+     "address": {
+      "building": "CUNY Graduate Center Housing",
+      "house_number": "171",
+      "road": "East 118th Street",
+      "neighbourhood": "East Harlem",
+      "suburb": "Manhattan",
+      "county": "New York County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "10035",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": {
+      "nycdoitt:bin": "1088293"
+     },
+     "boundingbox": [
+      "40.7995187",
+      "40.7998516",
+      "-73.9399120",
+      "-73.9393627"
+     ]
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,257 @@
+{
+ "name": "Orsay Restaurant — Second Floor Banquet Room",
+ "address": "1057 Lexington Avenue, New York, NY 10021",
+ "lookups": {
+  "address": {
+   "query": "1057 Lexington Avenue, New York, NY 10021",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=1057%20Lexington%20Avenue%2C%20New%20York%2C%20NY%2010021",
+   "response": [
+    {
+     "place_id": 358202719,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "node",
+     "osm_id": 2723824915,
+     "lat": "40.7724145",
+     "lon": "-73.9605847",
+     "category": "place",
+     "type": "house",
+     "place_rank": 30,
+     "importance": 9.175936522464359e-05,
+     "addresstype": "place",
+     "name": "",
+     "display_name": "1057, Lexington Avenue, Upper East Side, Manhattan Community Board 8, Manhattan, New York County, New York, 10021, United States",
+     "address": {
+      "house_number": "1057",
+      "road": "Lexington Avenue",
+      "quarter": "Upper East Side",
+      "neighbourhood": "Manhattan Community Board 8",
+      "suburb": "Manhattan",
+      "county": "New York County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "10021",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": null,
+     "boundingbox": [
+      "40.7723645",
+      "40.7724645",
+      "-73.9606347",
+      "-73.9605347"
+     ]
+    },
+    {
+     "place_id": 360765034,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "node",
+     "osm_id": 7098987894,
+     "lat": "40.7724091",
+     "lon": "-73.9605564",
+     "category": "amenity",
+     "type": "restaurant",
+     "place_rank": 30,
+     "importance": 9.175936522464359e-05,
+     "addresstype": "amenity",
+     "name": "Orsay",
+     "display_name": "Orsay, 1057, Lexington Avenue, Upper East Side, Manhattan Community Board 8, Manhattan, New York County, New York, 10021, United States",
+     "address": {
+      "amenity": "Orsay",
+      "house_number": "1057",
+      "road": "Lexington Avenue",
+      "quarter": "Upper East Side",
+      "neighbourhood": "Manhattan Community Board 8",
+      "suburb": "Manhattan",
+      "county": "New York County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "10021",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": {
+      "cuisine": "french",
+      "delivery": "yes",
+      "takeaway": "yes",
+      "cocktails": "yes",
+      "check_date": "2024-03-13",
+      "drink:wine": "served",
+      "wheelchair": "yes",
+      "reservation": "yes",
+      "contact:phone": "+1 212 517 6400",
+      "opening_hours": "Mo-Fr 12:00-22:30; Sa 11:00-22:30; Su 11:00-21:30",
+      "contact:twitter": "https://twitter.com/orsayrestaurant",
+      "contact:website": "https://www.orsayrestaurant.com/",
+      "contact:facebook": "https://www.facebook.com/Orsayrestaurant",
+      "contact:instagram": "https://www.instagram.com/orsayrestaurant/"
+     },
+     "boundingbox": [
+      "40.7723591",
+      "40.7724591",
+      "-73.9606064",
+      "-73.9605064"
+     ]
+    },
+    {
+     "place_id": 359940717,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 387128267,
+     "lat": "40.7728978",
+     "lon": "-73.9604044",
+     "category": "highway",
+     "type": "secondary",
+     "place_rank": 26,
+     "importance": 0.5111580097664257,
+     "addresstype": "secondary",
+     "name": "Lexington Avenue",
+     "display_name": "Lexington Avenue, Upper East Side, Manhattan Community Board 8, Manhattan, New York County, New York, 10021, United States",
+     "address": {
+      "road": "Lexington Avenue",
+      "quarter": "Upper East Side",
+      "neighbourhood": "Manhattan Community Board 8",
+      "suburb": "Manhattan",
+      "county": "New York County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "10021",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": {
+      "hgv": "local",
+      "lit": "yes",
+      "lanes": "3",
+      "oneway": "yes",
+      "surface": "asphalt",
+      "maxspeed": "25 mph",
+      "wikidata": "Q109739",
+      "wikipedia": "en:Lexington Avenue",
+      "smoothness": "good",
+      "sidewalk:both": "separate",
+      "cycleway:right": "no",
+      "lanes:bus:forward": "1",
+      "parking:lane:left": "parallel"
+     },
+     "boundingbox": [
+      "40.7708305",
+      "40.7749669",
+      "-73.9619153",
+      "-73.9588958"
+     ]
+    },
+    {
+     "place_id": 359862399,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 1106469542,
+     "lat": "40.7693171",
+     "lon": "-73.9630205",
+     "category": "highway",
+     "type": "secondary",
+     "place_rank": 26,
+     "importance": 0.5111580097664257,
+     "addresstype": "secondary",
+     "name": "Lexington Avenue",
+     "display_name": "Lexington Avenue, Lenox Hill, Manhattan Community Board 8, Manhattan, New York County, New York, 10021, United States",
+     "address": {
+      "road": "Lexington Avenue",
+      "neighbourhood": "Lenox Hill",
+      "suburb": "Manhattan",
+      "county": "New York County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "10021",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": {
+      "hgv": "local",
+      "lit": "yes",
+      "lanes": "3",
+      "oneway": "yes",
+      "surface": "asphalt",
+      "maxspeed": "25 mph",
+      "wikidata": "Q109739",
+      "wikipedia": "en:Lexington Avenue",
+      "smoothness": "good",
+      "parking:both": "lane",
+      "sidewalk:both": "separate",
+      "cycleway:right": "no",
+      "lanes:bus:forward": "1",
+      "name:etymology:wikidata": "Q778010",
+      "parking:both:orientation": "parallel"
+     },
+     "boundingbox": [
+      "40.7682073",
+      "40.7704253",
+      "-73.9638262",
+      "-73.9622127"
+     ]
+    }
+   ]
+  },
+  "name": {
+   "query": "Orsay Restaurant, 1057 Lexington Avenue, New York, NY 10021",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=Orsay%20Restaurant%2C%201057%20Lexington%20Avenue%2C%20New%20York%2C%20NY%2010021",
+   "response": [
+    {
+     "place_id": 360563507,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "node",
+     "osm_id": 7098987894,
+     "lat": "40.7724091",
+     "lon": "-73.9605564",
+     "category": "amenity",
+     "type": "restaurant",
+     "place_rank": 30,
+     "importance": 9.175936522464359e-05,
+     "addresstype": "amenity",
+     "name": "Orsay",
+     "display_name": "Orsay, 1057, Lexington Avenue, Upper East Side, Manhattan Community Board 8, Manhattan, New York County, New York, 10021, United States",
+     "address": {
+      "amenity": "Orsay",
+      "house_number": "1057",
+      "road": "Lexington Avenue",
+      "quarter": "Upper East Side",
+      "neighbourhood": "Manhattan Community Board 8",
+      "suburb": "Manhattan",
+      "county": "New York County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "10021",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": {
+      "cuisine": "french",
+      "delivery": "yes",
+      "takeaway": "yes",
+      "cocktails": "yes",
+      "check_date": "2024-03-13",
+      "drink:wine": "served",
+      "wheelchair": "yes",
+      "reservation": "yes",
+      "contact:phone": "+1 212 517 6400",
+      "opening_hours": "Mo-Fr 12:00-22:30; Sa 11:00-22:30; Su 11:00-21:30",
+      "contact:twitter": "https://twitter.com/orsayrestaurant",
+      "contact:website": "https://www.orsayrestaurant.com/",
+      "contact:facebook": "https://www.facebook.com/Orsayrestaurant",
+      "contact:instagram": "https://www.instagram.com/orsayrestaurant/"
+     },
+     "boundingbox": [
+      "40.7723591",
+      "40.7724591",
+      "-73.9606064",
+      "-73.9605064"
+     ]
+    }
+   ]
+  }
+ }
+}

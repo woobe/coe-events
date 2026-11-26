@@ -1,0 +1,183 @@
+{
+ "name": "Nomadworks — Times Square: Conference Center",
+ "address": "240 West 40th Street, New York, NY 10018",
+ "lookups": {
+  "address": {
+   "query": "240 West 40th Street, New York, NY 10018",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=240%20West%2040th%20Street%2C%20New%20York%2C%20NY%2010018",
+   "response": [
+    {
+     "place_id": 359227807,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 266143313,
+     "lat": "40.7551968",
+     "lon": "-73.9895783",
+     "category": "building",
+     "type": "yes",
+     "place_rank": 30,
+     "importance": 9.175936522464359e-05,
+     "addresstype": "building",
+     "name": "",
+     "display_name": "240, West 40th Street, Garment District, Manhattan Community Board 5, Manhattan, New York County, New York, 10018, United States",
+     "address": {
+      "house_number": "240",
+      "road": "West 40th Street",
+      "neighbourhood": "Garment District",
+      "suburb": "Manhattan",
+      "county": "New York County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "10018",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": {
+      "height": "56.2",
+      "nycdoitt:bin": "1014508"
+     },
+     "boundingbox": [
+      "40.7549887",
+      "40.7554048",
+      "-73.9898614",
+      "-73.9892951"
+     ]
+    },
+    {
+     "place_id": 357521537,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "node",
+     "osm_id": 13346761048,
+     "lat": "40.7553207",
+     "lon": "-73.9895185",
+     "category": "amenity",
+     "type": "fast_food",
+     "place_rank": 30,
+     "importance": 9.175936522464359e-05,
+     "addresstype": "amenity",
+     "name": "Dunkin'",
+     "display_name": "Dunkin', 240, West 40th Street, Garment District, Manhattan Community Board 5, Manhattan, New York County, New York, 10018, United States",
+     "address": {
+      "amenity": "Dunkin'",
+      "house_number": "240",
+      "road": "West 40th Street",
+      "neighbourhood": "Garment District",
+      "suburb": "Manhattan",
+      "county": "New York County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "10018",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": {
+      "phone": "+1-212-395-9280",
+      "cuisine": "donut;coffee_shop",
+      "website": "https://locations.dunkindonuts.com/en/ny/new-york/240-w-40th-st/343107",
+      "takeaway": "yes",
+      "drive_through": "no",
+      "opening_hours": "Mo-Fr 05:30-23:00, Sa-Su 06:00-23:00",
+      "brand:wikidata": "Q847743"
+     },
+     "boundingbox": [
+      "40.7552707",
+      "40.7553707",
+      "-73.9895685",
+      "-73.9894685"
+     ]
+    },
+    {
+     "place_id": 359200253,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "node",
+     "osm_id": 13346761054,
+     "lat": "40.7553674",
+     "lon": "-73.9896313",
+     "category": "amenity",
+     "type": "restaurant",
+     "place_rank": 30,
+     "importance": 9.175936522464359e-05,
+     "addresstype": "amenity",
+     "name": "Dim Sum Sam",
+     "display_name": "Dim Sum Sam, 240, West 40th Street, Garment District, Manhattan Community Board 5, Manhattan, New York County, New York, 10018, United States",
+     "address": {
+      "amenity": "Dim Sum Sam",
+      "house_number": "240",
+      "road": "West 40th Street",
+      "neighbourhood": "Garment District",
+      "suburb": "Manhattan",
+      "county": "New York County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "10018",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": {
+      "phone": "+1-917-472-7688",
+      "branch": "Times Square",
+      "cuisine": "dim_sum;chinese",
+      "website": "https://dimsumsam.us",
+      "opening_hours": "Mo-Su 08:00-00:30"
+     },
+     "boundingbox": [
+      "40.7553174",
+      "40.7554174",
+      "-73.9896813",
+      "-73.9895813"
+     ]
+    },
+    {
+     "place_id": 359363259,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "node",
+     "osm_id": 13346761050,
+     "lat": "40.7553437",
+     "lon": "-73.9895743",
+     "category": "amenity",
+     "type": "fast_food",
+     "place_rank": 30,
+     "importance": 9.175936522464359e-05,
+     "addresstype": "amenity",
+     "name": "Popeyes",
+     "display_name": "Popeyes, 240, West 40th Street, Garment District, Manhattan Community Board 5, Manhattan, New York County, New York, 10018, United States",
+     "address": {
+      "amenity": "Popeyes",
+      "house_number": "240",
+      "road": "West 40th Street",
+      "neighbourhood": "Garment District",
+      "suburb": "Manhattan",
+      "county": "New York County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "10018",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": {
+      "cuisine": "chicken",
+      "website": "https://www.popeyes.com/restaurants/restaurant_83984",
+      "takeaway": "yes",
+      "opening_hours": "Mo-We 09:00-04:00, Th-Sa 09:00-06:00, Su 09:00-04:00",
+      "brand:wikidata": "Q1330910"
+     },
+     "boundingbox": [
+      "40.7552937",
+      "40.7553937",
+      "-73.9896243",
+      "-73.9895243"
+     ]
+    }
+   ]
+  },
+  "name": {
+   "query": "Nomadworks, 240 West 40th Street, New York, NY 10018",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=Nomadworks%2C%20240%20West%2040th%20Street%2C%20New%20York%2C%20NY%2010018",
+   "response": []
+  }
+ }
+}

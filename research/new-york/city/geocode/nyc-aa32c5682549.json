@@ -1,0 +1,136 @@
+{
+ "name": "Blender Space — The Auditorium",
+ "address": "135 Madison Avenue, New York, NY 10016",
+ "lookups": {
+  "address": {
+   "query": "135 Madison Avenue, New York, NY 10016",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=135%20Madison%20Avenue%2C%20New%20York%2C%20NY%2010016",
+   "response": [
+    {
+     "place_id": 358246482,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "node",
+     "osm_id": 13680208007,
+     "lat": "40.7459513",
+     "lon": "-73.9840860",
+     "category": "shop",
+     "type": "furniture",
+     "place_rank": 30,
+     "importance": 9.175936522464359e-05,
+     "addresstype": "shop",
+     "name": "B&B Italia",
+     "display_name": "B&B Italia, 135, Madison Avenue, Rose Hill, Manhattan Community Board 5, Manhattan, New York County, New York, 10016, United States",
+     "address": {
+      "shop": "B&B Italia",
+      "house_number": "135",
+      "road": "Madison Avenue",
+      "neighbourhood": "Rose Hill",
+      "suburb": "Manhattan",
+      "county": "New York County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "10016",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": {
+      "phone": "+1-212-889-9606",
+      "website": "https://www.bebitalia.com/en-us/new-opening-135-madison-avenue-in-new-york-city"
+     },
+     "boundingbox": [
+      "40.7459013",
+      "40.7460013",
+      "-73.9841360",
+      "-73.9840360"
+     ]
+    },
+    {
+     "place_id": 359317139,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "node",
+     "osm_id": 2709335811,
+     "lat": "40.7460832",
+     "lon": "-73.9839897",
+     "category": "place",
+     "type": "house",
+     "place_rank": 30,
+     "importance": 9.175936522464359e-05,
+     "addresstype": "place",
+     "name": "",
+     "display_name": "135, Madison Avenue, Rose Hill, Manhattan Community Board 5, Manhattan, New York County, New York, 10016, United States",
+     "address": {
+      "house_number": "135",
+      "road": "Madison Avenue",
+      "neighbourhood": "Rose Hill",
+      "suburb": "Manhattan",
+      "county": "New York County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "10016",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": null,
+     "boundingbox": [
+      "40.7460332",
+      "40.7461332",
+      "-73.9840397",
+      "-73.9839397"
+     ]
+    },
+    {
+     "place_id": 359605399,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 447001272,
+     "lat": "40.7455562",
+     "lon": "-73.9845663",
+     "category": "highway",
+     "type": "secondary",
+     "place_rank": 26,
+     "importance": 0.5325768021718754,
+     "addresstype": "secondary",
+     "name": "Madison Avenue",
+     "display_name": "Madison Avenue, Rose Hill, Manhattan Community Board 5, Manhattan, New York County, New York, 10118, United States",
+     "address": {
+      "road": "Madison Avenue",
+      "neighbourhood": "Rose Hill",
+      "suburb": "Manhattan",
+      "county": "New York County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "10118",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": {
+      "hgv": "destination",
+      "lit": "yes",
+      "lanes": "3",
+      "oneway": "yes",
+      "maxspeed": "25 mph",
+      "wikidata": "Q109849",
+      "wikipedia": "en:Madison Avenue",
+      "cycleway:both": "no",
+      "sidewalk:both": "separate",
+      "name:etymology:wikidata": "Q11813"
+     },
+     "boundingbox": [
+      "40.7446313",
+      "40.7464825",
+      "-73.9852432",
+      "-73.9838914"
+     ]
+    }
+   ]
+  },
+  "name": {
+   "query": "Blender Space, 135 Madison Avenue, New York, NY 10016",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=Blender%20Space%2C%20135%20Madison%20Avenue%2C%20New%20York%2C%20NY%2010016",
+   "response": []
+  }
+ }
+}

@@ -1,0 +1,174 @@
+{
+ "name": "VOLUME — The Mirage Room",
+ "address": "265 West 37th Street, New York, NY 10018",
+ "lookups": {
+  "address": {
+   "query": "265 West 37th Street, New York, NY 10018",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=265%20West%2037th%20Street%2C%20New%20York%2C%20NY%2010018",
+   "response": [
+    {
+     "place_id": 358302996,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "node",
+     "osm_id": 5816447410,
+     "lat": "40.7540751",
+     "lon": "-73.9916562",
+     "category": "amenity",
+     "type": "restaurant",
+     "place_rank": 30,
+     "importance": 9.175936522464359e-05,
+     "addresstype": "amenity",
+     "name": "El Sabroso",
+     "display_name": "El Sabroso, 265, West 37th Street, Garment District, Manhattan Community Board 5, Manhattan, New York County, New York, 10018, United States",
+     "address": {
+      "amenity": "El Sabroso",
+      "house_number": "265",
+      "road": "West 37th Street",
+      "neighbourhood": "Garment District",
+      "suburb": "Manhattan",
+      "county": "New York County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "10018",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": {
+      "phone": "+1-212-284-1118",
+      "cuisine": "latin_american;ecuadorian",
+      "takeaway": "yes",
+      "wheelchair": "yes",
+      "payment:cash": "only",
+      "opening_hours": "Mo-Sa 07:00-17:00"
+     },
+     "boundingbox": [
+      "40.7540251",
+      "40.7541251",
+      "-73.9917062",
+      "-73.9916062"
+     ]
+    },
+    {
+     "place_id": 359597510,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "node",
+     "osm_id": 2709629930,
+     "lat": "40.7540455",
+     "lon": "-73.9916950",
+     "category": "place",
+     "type": "house",
+     "place_rank": 30,
+     "importance": 9.175936522464359e-05,
+     "addresstype": "place",
+     "name": "",
+     "display_name": "265, West 37th Street, Garment District, Manhattan Community Board 5, Manhattan, New York County, New York, 10018, United States",
+     "address": {
+      "house_number": "265",
+      "road": "West 37th Street",
+      "neighbourhood": "Garment District",
+      "suburb": "Manhattan",
+      "county": "New York County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "10018",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": null,
+     "boundingbox": [
+      "40.7539955",
+      "40.7540955",
+      "-73.9917450",
+      "-73.9916450"
+     ]
+    },
+    {
+     "place_id": 359823693,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "node",
+     "osm_id": 4011732598,
+     "lat": "40.7541018",
+     "lon": "-73.9917722",
+     "category": "amenity",
+     "type": "fast_food",
+     "place_rank": 30,
+     "importance": 9.175936522464359e-05,
+     "addresstype": "amenity",
+     "name": "Dunkin'",
+     "display_name": "Dunkin', 265, West 37th Street, Garment District, Manhattan Community Board 5, Manhattan, New York County, New York, 10018, United States",
+     "address": {
+      "amenity": "Dunkin'",
+      "house_number": "265",
+      "road": "West 37th Street",
+      "neighbourhood": "Garment District",
+      "suburb": "Manhattan",
+      "county": "New York County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "10018",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": {
+      "phone": "+1 212-302-8080",
+      "cuisine": "donut;coffee_shop",
+      "website": "https://locations.dunkindonuts.com/en/ny/new-york/265-w-37th-st/344936",
+      "takeaway": "yes",
+      "drive_through": "no",
+      "opening_hours": "Mo-Fr 05:30-24:00; Sa-Su 06:00-23:00",
+      "brand:wikidata": "Q847743"
+     },
+     "boundingbox": [
+      "40.7540518",
+      "40.7541518",
+      "-73.9918222",
+      "-73.9917222"
+     ]
+    },
+    {
+     "place_id": 402251980,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 464543614,
+     "lat": "40.7537297",
+     "lon": "-73.9909986",
+     "category": "place",
+     "type": "house",
+     "place_rank": 30,
+     "importance": 9.99999999995449e-06,
+     "addresstype": "place",
+     "name": "",
+     "display_name": "265, West 37th Street, Garment District, Manhattan Community Board 5, Manhattan, New York County, New York, 10018, United States",
+     "address": {
+      "house_number": "265",
+      "road": "West 37th Street",
+      "neighbourhood": "Garment District",
+      "suburb": "Manhattan",
+      "county": "New York County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "10018",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": null,
+     "boundingbox": [
+      "40.7536797",
+      "40.7537797",
+      "-73.9910486",
+      "-73.9909486"
+     ]
+    }
+   ]
+  },
+  "name": {
+   "query": "VOLUME, 265 West 37th Street, New York, NY 10018",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=VOLUME%2C%20265%20West%2037th%20Street%2C%20New%20York%2C%20NY%2010018",
+   "response": []
+  }
+ }
+}

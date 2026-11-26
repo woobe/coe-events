@@ -1,0 +1,167 @@
+{
+ "name": "Exposed Brick Multi-Use Event Space — Entire Venue",
+ "address": "91 East 3rd Street, New York, NY 10003",
+ "lookups": {
+  "address": {
+   "query": "91 East 3rd Street, New York, NY 10003",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=91%20East%203rd%20Street%2C%20New%20York%2C%20NY%2010003",
+   "response": [
+    {
+     "place_id": 358945623,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "relation",
+     "osm_id": 3340397,
+     "lat": "40.7248435",
+     "lon": "-73.9878081",
+     "category": "building",
+     "type": "apartments",
+     "place_rank": 30,
+     "importance": 9.175936522464359e-05,
+     "addresstype": "building",
+     "name": "",
+     "display_name": "91, East 3rd Street, East Village, Manhattan Community Board 3, Manhattan, New York County, New York, 10003, United States",
+     "address": {
+      "house_number": "91",
+      "road": "East 3rd Street",
+      "neighbourhood": "East Village",
+      "suburb": "Manhattan",
+      "county": "New York County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "10003",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": {
+      "height": "23.8",
+      "nycdoitt:bin": "1006184"
+     },
+     "boundingbox": [
+      "40.7247479",
+      "40.7249398",
+      "-73.9879186",
+      "-73.9876118"
+     ]
+    },
+    {
+     "place_id": 358924827,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "node",
+     "osm_id": 6207941709,
+     "lat": "40.7248440",
+     "lon": "-73.9878407",
+     "category": "amenity",
+     "type": "community_centre",
+     "place_rank": 30,
+     "importance": 9.175936522464359e-05,
+     "addresstype": "amenity",
+     "name": "Resobox",
+     "display_name": "Resobox, 91, East 3rd Street, East Village, Manhattan Community Board 3, Manhattan, New York County, New York, 10003, United States",
+     "address": {
+      "amenity": "Resobox",
+      "house_number": "91",
+      "road": "East 3rd Street",
+      "neighbourhood": "East Village",
+      "suburb": "Manhattan",
+      "county": "New York County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "10003",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": {
+      "phone": "+1-212-598-5993",
+      "website": "https://resobox.com",
+      "description": "Japanese cultural center.",
+      "opening_hours": "\"Temporarily closed\""
+     },
+     "boundingbox": [
+      "40.7247940",
+      "40.7248940",
+      "-73.9878907",
+      "-73.9877907"
+     ]
+    },
+    {
+     "place_id": 358918378,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 249618598,
+     "lat": "40.6500289",
+     "lon": "-73.9784652",
+     "category": "building",
+     "type": "yes",
+     "place_rank": 30,
+     "importance": 9.175936522464359e-05,
+     "addresstype": "building",
+     "name": "",
+     "display_name": "91, East 3rd Street, Windsor Terrace, Brooklyn, Kings County, New York, 11218, United States",
+     "address": {
+      "house_number": "91",
+      "road": "East 3rd Street",
+      "neighbourhood": "Windsor Terrace",
+      "suburb": "Brooklyn",
+      "county": "Kings County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "11218",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": {
+      "height": "7.5",
+      "nycdoitt:bin": "3122755"
+     },
+     "boundingbox": [
+      "40.6499879",
+      "40.6500722",
+      "-73.9785522",
+      "-73.9783735"
+     ]
+    },
+    {
+     "place_id": 392975609,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 667481201,
+     "lat": "40.9076235",
+     "lon": "-73.8320293",
+     "category": "place",
+     "type": "house",
+     "place_rank": 30,
+     "importance": 9.99999999995449e-06,
+     "addresstype": "place",
+     "name": "",
+     "display_name": "91, East 3rd Street, City of Mount Vernon, Westchester County, New York, 10550, United States",
+     "address": {
+      "house_number": "91",
+      "road": "East 3rd Street",
+      "city": "City of Mount Vernon",
+      "county": "Westchester County",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "10550",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": null,
+     "boundingbox": [
+      "40.9075735",
+      "40.9076735",
+      "-73.8320793",
+      "-73.8319793"
+     ]
+    }
+   ]
+  },
+  "name": {
+   "query": "Exposed Brick Multi-Use Event Space, 91 East 3rd Street, New York, NY 10003",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=Exposed%20Brick%20Multi-Use%20Event%20Space%2C%2091%20East%203rd%20Street%2C%20New%20York%2C%20NY%2010003",
+   "response": []
+  }
+ }
+}

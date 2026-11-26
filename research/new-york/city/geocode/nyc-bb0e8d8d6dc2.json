@@ -1,0 +1,96 @@
+{
+ "name": "Producers Club Theaters — The Sonnet",
+ "address": "358 West 44th Street, New York, NY 10036",
+ "lookups": {
+  "address": {
+   "query": "358 West 44th Street, New York, NY 10036",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=358%20West%2044th%20Street%2C%20New%20York%2C%20NY%2010036",
+   "response": [
+    {
+     "place_id": 359844827,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "node",
+     "osm_id": 2716231205,
+     "lat": "40.7595017",
+     "lon": "-73.9914437",
+     "category": "amenity",
+     "type": "cinema",
+     "place_rank": 30,
+     "importance": 9.175936522464359e-05,
+     "addresstype": "amenity",
+     "name": "Producers Club Theaters and Bar",
+     "display_name": "Producers Club Theaters and Bar, 358, West 44th Street, Manhattan Community Board 4, Manhattan, New York County, New York, 10036, United States",
+     "address": {
+      "amenity": "Producers Club Theaters and Bar",
+      "house_number": "358",
+      "road": "West 44th Street",
+      "neighbourhood": "Manhattan Community Board 4",
+      "suburb": "Manhattan",
+      "county": "New York County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "10036",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": {
+      "website": "https://producersclub.com/",
+      "wikidata": "Q45101703"
+     },
+     "boundingbox": [
+      "40.7594517",
+      "40.7595517",
+      "-73.9914937",
+      "-73.9913937"
+     ]
+    }
+   ]
+  },
+  "name": {
+   "query": "Producers Club Theaters, 358 West 44th Street, New York, NY 10036",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=Producers%20Club%20Theaters%2C%20358%20West%2044th%20Street%2C%20New%20York%2C%20NY%2010036",
+   "response": [
+    {
+     "place_id": 359234793,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "node",
+     "osm_id": 2716231205,
+     "lat": "40.7595017",
+     "lon": "-73.9914437",
+     "category": "amenity",
+     "type": "cinema",
+     "place_rank": 30,
+     "importance": 9.175936522464359e-05,
+     "addresstype": "amenity",
+     "name": "Producers Club Theaters and Bar",
+     "display_name": "Producers Club Theaters and Bar, 358, West 44th Street, Manhattan Community Board 4, Manhattan, New York County, New York, 10036, United States",
+     "address": {
+      "amenity": "Producers Club Theaters and Bar",
+      "house_number": "358",
+      "road": "West 44th Street",
+      "neighbourhood": "Manhattan Community Board 4",
+      "suburb": "Manhattan",
+      "county": "New York County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "10036",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": {
+      "website": "https://producersclub.com/",
+      "wikidata": "Q45101703"
+     },
+     "boundingbox": [
+      "40.7594517",
+      "40.7595517",
+      "-73.9914937",
+      "-73.9913937"
+     ]
+    }
+   ]
+  }
+ }
+}

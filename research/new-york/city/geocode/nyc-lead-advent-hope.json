@@ -1,0 +1,90 @@
+{
+ "name": "Church of the Advent Hope — Space Rentals",
+ "address": "111 East 87th Street, New York, NY 10128",
+ "lookups": {
+  "address": {
+   "query": "111 East 87th Street, New York, NY 10128",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=111%20East%2087th%20Street%2C%20New%20York%2C%20NY%2010128",
+   "response": [
+    {
+     "place_id": 359220190,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 266933294,
+     "lat": "40.7808192",
+     "lon": "-73.9560065",
+     "category": "building",
+     "type": "yes",
+     "place_rank": 30,
+     "importance": 9.175936522464359e-05,
+     "addresstype": "building",
+     "name": "",
+     "display_name": "111, East 87th Street, Yorkville, Manhattan Community Board 8, Manhattan, New York County, New York, 10128, United States",
+     "address": {
+      "house_number": "111",
+      "road": "East 87th Street",
+      "neighbourhood": "Yorkville",
+      "suburb": "Manhattan",
+      "county": "New York County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "10128",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": {
+      "height": "11.3",
+      "nycdoitt:bin": "1048042"
+     },
+     "boundingbox": [
+      "40.7806632",
+      "40.7809393",
+      "-73.9561677",
+      "-73.9558713"
+     ]
+    },
+    {
+     "place_id": 402054373,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 349601423,
+     "lat": "40.6496738",
+     "lon": "-73.9200936",
+     "category": "place",
+     "type": "house",
+     "place_rank": 30,
+     "importance": 9.99999999995449e-06,
+     "addresstype": "place",
+     "name": "",
+     "display_name": "111, East 87th Street, Brooklyn Community District 17, Brooklyn, Kings County, New York, 11236, United States",
+     "address": {
+      "house_number": "111",
+      "road": "East 87th Street",
+      "neighbourhood": "Brooklyn Community District 17",
+      "suburb": "Brooklyn",
+      "county": "Kings County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "11236",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": null,
+     "boundingbox": [
+      "40.6496238",
+      "40.6497238",
+      "-73.9201436",
+      "-73.9200436"
+     ]
+    }
+   ]
+  },
+  "name": {
+   "query": "Church of the Advent Hope, 111 East 87th Street, New York, NY 10128",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=Church%20of%20the%20Advent%20Hope%2C%20111%20East%2087th%20Street%2C%20New%20York%2C%20NY%2010128",
+   "response": []
+  }
+ }
+}

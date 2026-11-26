@@ -1,0 +1,68 @@
+{
+ "name": "Jay Conference Bryant Park — The Tel Aviv Room",
+ "address": "109 West 39th Street, 2nd Floor & Concourse Level, New York, NY 10018",
+ "lookups": {
+  "address": {
+   "query": "109 West 39th Street, 2nd Floor & Concourse Level, New York, NY 10018",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=109%20West%2039th%20Street%2C%202nd%20Floor%20%26%20Concourse%20Level%2C%20New%20York%2C%20NY%2010018",
+   "response": []
+  },
+  "address-short": {
+   "query": "109 West 39th Street, 2nd Floor & Concourse Level, NY",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=109%20West%2039th%20Street%2C%202nd%20Floor%20%26%20Concourse%20Level%2C%20NY",
+   "response": []
+  },
+  "name": {
+   "query": "Jay Conference Bryant Park, 109 West 39th Street, 2nd Floor & Concourse Level, New York, NY 10018",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=Jay%20Conference%20Bryant%20Park%2C%20109%20West%2039th%20Street%2C%202nd%20Floor%20%26%20Concourse%20Level%2C%20New%20York%2C%20NY%2010018",
+   "response": []
+  },
+  "clean": {
+   "query": "109 West 39th Street, & Concourse Level, New York, NY 10018",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=109%20West%2039th%20Street%2C%20%26%20Concourse%20Level%2C%20New%20York%2C%20NY%2010018",
+   "response": []
+  },
+  "street": {
+   "query": "109 West 39th Street, New York",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=109%20West%2039th%20Street%2C%20New%20York",
+   "response": [
+    {
+     "place_id": 400784801,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 36806906,
+     "lat": "40.7531121",
+     "lon": "-73.9856854",
+     "category": "place",
+     "type": "house",
+     "place_rank": 30,
+     "importance": 9.99999999995449e-06,
+     "addresstype": "place",
+     "name": "",
+     "display_name": "109, West 39th Street, Midtown, Manhattan Community Board 5, Manhattan, New York County, New York, 10018, United States",
+     "address": {
+      "house_number": "109",
+      "road": "West 39th Street",
+      "quarter": "Midtown",
+      "neighbourhood": "Manhattan Community Board 5",
+      "suburb": "Manhattan",
+      "county": "New York County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "10018",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": null,
+     "boundingbox": [
+      "40.7530621",
+      "40.7531621",
+      "-73.9857354",
+      "-73.9856354"
+     ]
+    }
+   ]
+  }
+ }
+}

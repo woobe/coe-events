@@ -1,0 +1,70 @@
+{
+ "name": "Jay Suites Chelsea — Babe Ruth Room",
+ "address": "159 West 25th Street, Floors 4, 5, 7 & 8, New York, NY 10001",
+ "lookups": {
+  "address": {
+   "query": "159 West 25th Street, Floors 4, 5, 7 & 8, New York, NY 10001",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=159%20West%2025th%20Street%2C%20Floors%204%2C%205%2C%207%20%26%208%2C%20New%20York%2C%20NY%2010001",
+   "response": []
+  },
+  "address-short": {
+   "query": "159 West 25th Street, Floors 4, NY",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=159%20West%2025th%20Street%2C%20Floors%204%2C%20NY",
+   "response": []
+  },
+  "name": {
+   "query": "Jay Suites Chelsea, 159 West 25th Street, Floors 4, 5, 7 & 8, New York, NY 10001",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=Jay%20Suites%20Chelsea%2C%20159%20West%2025th%20Street%2C%20Floors%204%2C%205%2C%207%20%26%208%2C%20New%20York%2C%20NY%2010001",
+   "response": []
+  },
+  "clean": {
+   "query": "159 West 25th Street, ew York, NY 10001",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=159%20West%2025th%20Street%2C%20ew%20York%2C%20NY%2010001",
+   "response": []
+  },
+  "street": {
+   "query": "159 West 25th Street, New York",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=159%20West%2025th%20Street%2C%20New%20York",
+   "response": [
+    {
+     "place_id": 363070185,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 248144108,
+     "lat": "40.7452842",
+     "lon": "-73.9939557",
+     "category": "building",
+     "type": "yes",
+     "place_rank": 30,
+     "importance": 9.175936522464359e-05,
+     "addresstype": "building",
+     "name": "",
+     "display_name": "159, West 25th Street, Chelsea District, Manhattan Community Board 4, Manhattan, New York County, New York, 10001, United States",
+     "address": {
+      "house_number": "159",
+      "road": "West 25th Street",
+      "neighbourhood": "Chelsea District",
+      "suburb": "Manhattan",
+      "county": "New York County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "10001",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": {
+      "height": "63.9",
+      "nycdoitt:bin": "1015001"
+     },
+     "boundingbox": [
+      "40.7451374",
+      "40.7454463",
+      "-73.9941492",
+      "-73.9937522"
+     ]
+    }
+   ]
+  }
+ }
+}

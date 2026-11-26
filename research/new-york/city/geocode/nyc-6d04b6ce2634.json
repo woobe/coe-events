@@ -1,0 +1,55 @@
+{
+ "name": "Ridgewood Hall — Hall",
+ "address": "60-47 Metropolitan Avenue, Ridgewood, NY 11385",
+ "lookups": {
+  "address": {
+   "query": "60-47 Metropolitan Avenue, Ridgewood, NY 11385",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=60-47%20Metropolitan%20Avenue%2C%20Ridgewood%2C%20NY%2011385",
+   "response": [
+    {
+     "place_id": 360499016,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 280158313,
+     "lat": "40.7130393",
+     "lon": "-73.9035504",
+     "category": "building",
+     "type": "yes",
+     "place_rank": 30,
+     "importance": 9.175936522464359e-05,
+     "addresstype": "building",
+     "name": "",
+     "display_name": "60-47, Metropolitan Avenue, Middle Village, Queens, Queens County, New York, 11378, United States",
+     "address": {
+      "house_number": "60-47",
+      "road": "Metropolitan Avenue",
+      "neighbourhood": "Middle Village",
+      "suburb": "Queens",
+      "county": "Queens County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "11378",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": {
+      "height": "6.2",
+      "nycdoitt:bin": "4061114"
+     },
+     "boundingbox": [
+      "40.7128980",
+      "40.7131805",
+      "-73.9037370",
+      "-73.9033638"
+     ]
+    }
+   ]
+  },
+  "name": {
+   "query": "Ridgewood Hall, 60-47 Metropolitan Avenue, Ridgewood, NY 11385",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=Ridgewood%20Hall%2C%2060-47%20Metropolitan%20Avenue%2C%20Ridgewood%2C%20NY%2011385",
+   "response": []
+  }
+ }
+}

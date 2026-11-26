@@ -1,0 +1,181 @@
+{
+ "name": "The Farm SoHo — Designer Soho Loft Space",
+ "address": "447 Broadway, 4th Floor, New York, NY 10013",
+ "lookups": {
+  "address": {
+   "query": "447 Broadway, 4th Floor, New York, NY 10013",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=447%20Broadway%2C%204th%20Floor%2C%20New%20York%2C%20NY%2010013",
+   "response": []
+  },
+  "address-short": {
+   "query": "447 Broadway, 4th Floor, NY",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=447%20Broadway%2C%204th%20Floor%2C%20NY",
+   "response": []
+  },
+  "name": {
+   "query": "The Farm SoHo, 447 Broadway, 4th Floor, New York, NY 10013",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=The%20Farm%20SoHo%2C%20447%20Broadway%2C%204th%20Floor%2C%20New%20York%2C%20NY%2010013",
+   "response": []
+  },
+  "clean": {
+   "query": "447 Broadway, New York, NY 10013",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=447%20Broadway%2C%20New%20York%2C%20NY%2010013",
+   "response": [
+    {
+     "place_id": 356933759,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "node",
+     "osm_id": 2555120393,
+     "lat": "40.7204400",
+     "lon": "-74.0011797",
+     "category": "place",
+     "type": "house",
+     "place_rank": 30,
+     "importance": 9.175936522464359e-05,
+     "addresstype": "place",
+     "name": "",
+     "display_name": "447, Broadway, SoHo, Manhattan Community Board 2, Manhattan, New York County, New York, 10013, United States",
+     "address": {
+      "house_number": "447",
+      "road": "Broadway",
+      "neighbourhood": "SoHo",
+      "suburb": "Manhattan",
+      "county": "New York County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "10013",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": null,
+     "boundingbox": [
+      "40.7203900",
+      "40.7204900",
+      "-74.0012297",
+      "-74.0011297"
+     ]
+    },
+    {
+     "place_id": 356958914,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "node",
+     "osm_id": 12590625417,
+     "lat": "40.7204494",
+     "lon": "-74.0012185",
+     "category": "amenity",
+     "type": "food_court",
+     "place_rank": 30,
+     "importance": 9.175936522464359e-05,
+     "addresstype": "amenity",
+     "name": "Broadway Food Court",
+     "display_name": "Broadway Food Court, 447, Broadway, SoHo, Manhattan Community Board 2, Manhattan, New York County, New York, 10013, United States",
+     "address": {
+      "amenity": "Broadway Food Court",
+      "house_number": "447",
+      "road": "Broadway",
+      "neighbourhood": "SoHo",
+      "suburb": "Manhattan",
+      "county": "New York County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "10013",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": {
+      "cuisine": "asian",
+      "toilets": "yes",
+      "opening_hours": "Mo-Su 10:00-21:00"
+     },
+     "boundingbox": [
+      "40.7203994",
+      "40.7204994",
+      "-74.0012685",
+      "-74.0011685"
+     ]
+    },
+    {
+     "place_id": 357116055,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "node",
+     "osm_id": 13019169928,
+     "lat": "40.7206410",
+     "lon": "-74.0011862",
+     "category": "shop",
+     "type": "travel_agency",
+     "place_rank": 30,
+     "importance": 9.175936522464359e-05,
+     "addresstype": "shop",
+     "name": "Zesty NYC",
+     "display_name": "Zesty NYC, 447, Broadway, SoHo, Manhattan Community Board 2, Manhattan, New York County, New York, 10013, United States",
+     "address": {
+      "shop": "Zesty NYC",
+      "house_number": "447",
+      "road": "Broadway",
+      "neighbourhood": "SoHo",
+      "suburb": "Manhattan",
+      "county": "New York County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "10013",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": {
+      "email": "info@zestynyc.com",
+      "level": "2",
+      "phone": "+1-718-404-9870",
+      "website": "https://www.zestynyc.com/",
+      "description": "Tour operator",
+      "opening_hours": "Mo-Su 09:00-17:00",
+      "contact:facebook": "https://www.facebook.com/profile.php?id=61565772940876"
+     },
+     "boundingbox": [
+      "40.7205910",
+      "40.7206910",
+      "-74.0012362",
+      "-74.0011362"
+     ]
+    },
+    {
+     "place_id": 413595481,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 220464723,
+     "lat": "40.7066104",
+     "lon": "-73.9523959",
+     "category": "place",
+     "type": "house",
+     "place_rank": 30,
+     "importance": 9.99999999995449e-06,
+     "addresstype": "place",
+     "name": "",
+     "display_name": "447, Broadway, Williamsburg, Brooklyn, Kings County, New York, 11211, United States",
+     "address": {
+      "house_number": "447",
+      "road": "Broadway",
+      "quarter": "Williamsburg",
+      "suburb": "Brooklyn",
+      "county": "Kings County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "11211",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": null,
+     "boundingbox": [
+      "40.7065604",
+      "40.7066604",
+      "-73.9524459",
+      "-73.9523459"
+     ]
+    }
+   ]
+  }
+ }
+}

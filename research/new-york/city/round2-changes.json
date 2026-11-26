@@ -1,0 +1,1023 @@
+[
+ {
+  "venue": "nyc-ca43f10af68d",
+  "field": "access_window",
+  "change": "fabricated quote replaced with captured daily-rate heading",
+  "before": {
+   "quote": "Seminar Room A is booked only for full-day (9AM to 5PM) and evening (6PM to 10 PM) rates",
+   "source_locator": "Prices - Saturday",
+   "value": "Full-day 09:00-17:00; evening 18:00-22:00",
+   "conditions": "None",
+   "confidence": "high",
+   "verified_at": "2026-11-24",
+   "run_id": "run-20261124b-nyc-n1"
+  },
+  "after": {
+   "quote": "Daily Rates (Monday through Sunday, 8:00am – 5:00pm)",
+   "source_locator": "Pricing & Specs — 'Daily Rates (Monday through Sunday, 8:00am – 5:00pm)'",
+   "value": "08:00-17:00 daily block (Monday-Sunday); 18:30-22:00 evening block (Monday-Friday)",
+   "conditions": "The daily-rate block and the evening-rate block are published separately; neither is a 09:00-21:00 hire interval.",
+   "confidence": "high",
+   "verified_at": "2026-11-26",
+   "run_id": "run-20261126-nyc-r9-r2"
+  }
+ },
+ {
+  "venue": "nyc-ca43f10af68d",
+  "field": "about",
+  "change": "fabricated second sentence removed; price line re-cited",
+  "before": {
+   "quote": "$1,400/day for Seminar Room A (700sf). Seminar Room A: 700 sq ft, classroom 40, boardroom 28, U-shape 24, workgroup 24, theatre 70.",
+   "source_locator": "About this space",
+   "value": "A 700 sq ft seminar room with theatre seating for 70 and classroom seating for 40, sold as a full-day 09:00-17:00 block or an evening block. The operator allows",
+   "confidence": "medium",
+   "verified_at": "2026-11-24",
+   "run_id": "run-20261124b-nyc-n1"
+  },
+  "after": {
+   "quote": "$1,400/day for Seminar Room A (700sf)",
+   "source_locator": "Prices — Seminar Room A daily rate line",
+   "value": "A 700 sq ft seminar room sold at $1,400/day for the daily block (08:00-17:00, Monday-Sunday) or $550/evening for the evening block (18:30-22:00, Monday-Friday).",
+   "confidence": "high",
+   "verified_at": "2026-11-26",
+   "run_id": "run-20261126-nyc-r9-r2"
+  }
+ },
+ {
+  "venue": "nyc-ca43f10af68d",
+  "field": "programme_windows",
+  "change": "8h yes re-derived from the captured daily-rate heading; 12h unknown retained"
+ },
+ {
+  "venue": "nyc-ca43f10af68d",
+  "field": "catering",
+  "change": "quote unsupported by capture; locator nulled with note",
+  "before": {
+   "quote": "All catering on our premises must be done through NYCSCC unless you get specific permission from NYCSCC to bring in your own catering beforehand",
+   "source_locator": "Catering and drinks",
+   "note": "None",
+   "confidence": "high"
+  },
+  "after": {
+   "quote": "None",
+   "source_locator": "None",
+   "note": "Catering terms are not present in the captured pricing page; the 2026-11-24 quote could not be reproduced and the facilities/room page returned HTTP 429.",
+   "confidence": "low"
+  }
+ },
+ {
+  "venue": "nyc-ca43f10af68d",
+  "field": "food_service",
+  "change": "quote unsupported by capture; locator nulled with note",
+  "before": {
+   "quote": "All catering on our premises must be done through NYCSCC unless you get specific permission from NYCSCC to bring in your own catering beforehand",
+   "source_locator": "Catering and drinks",
+   "note": "None",
+   "confidence": "high"
+  },
+  "after": {
+   "quote": "None",
+   "source_locator": "None",
+   "note": "Food-service terms are not present in the captured pricing page; the 2026-11-24 quote could not be reproduced and the facilities/room page returned HTTP 429.",
+   "confidence": "low"
+  }
+ },
+ {
+  "venue": "nyc-ca43f10af68d",
+  "field": "screen",
+  "change": "quote unsupported by capture; locator nulled with note",
+  "before": {
+   "quote": "Each room includes a large screen TV, whiteboard, and has the option for addons such as flip charts and projectors",
+   "source_locator": "Space facilities",
+   "note": "None",
+   "confidence": "high"
+  },
+  "after": {
+   "quote": "None",
+   "source_locator": "None",
+   "note": "Screen claim is not present in the captured pricing page; the 2026-11-24 quote could not be reproduced and the facilities/room page returned HTTP 429.",
+   "confidence": "low"
+  }
+ },
+ {
+  "venue": "nyc-ca43f10af68d",
+  "field": "wifi",
+  "change": "quote unsupported by capture; locator nulled with note",
+  "before": {
+   "quote": "Wired and wireless network connectivity coupled with high speed fiber network",
+   "source_locator": "Space facilities",
+   "note": "None",
+   "confidence": "high"
+  },
+  "after": {
+   "quote": "None",
+   "source_locator": "None",
+   "note": "Wifi claim is not present in the captured pricing page; the 2026-11-24 quote could not be reproduced and the facilities/room page returned HTTP 429.",
+   "confidence": "low"
+  }
+ },
+ {
+  "venue": "nyc-4c6638c43df6",
+  "field": "address",
+  "change": "quote replaced with verbatim Visit Us line (was a prefix-joined string)",
+  "before": {
+   "quote": "Civic Hall, 124 East 14th Street, New York, NY 10003",
+   "source_locator": "Contact page, Visit Us block",
+   "verified_at": "2026-11-26",
+   "run_id": "run-20261126-nyc-r9",
+   "confidence": "high"
+  },
+  "after": {
+   "quote": "124 East 14th Street, New York, NY 10003",
+   "source_locator": "Contact page, Visit Us block",
+   "verified_at": "2026-11-26",
+   "run_id": "run-20261126-nyc-r9-r2",
+   "confidence": "high"
+  }
+ },
+ {
+  "venue": "nyc-4c6638c43df6",
+  "field": "access_window",
+  "change": "opening-hours note added; value stays null",
+  "before": {
+   "note": "None",
+   "source_locator": "Prices - Saturday",
+   "verified_at": "2026-11-24",
+   "run_id": "run-20261124b-nyc-n1"
+  },
+  "after": {
+   "note": "Contact page prints 'Monday to Friday 7:00 a.m. to 10:00 p.m.' and 'Saturday to Sunday open for special events' — opening hours, not a bookable hire interval.",
+   "source_locator": "Contact page, Visit Us block",
+   "verified_at": "2026-11-26",
+   "run_id": "run-20261126-nyc-r9-r2"
+  }
+ },
+ {
+  "venue": "nyc-4c6638c43df6",
+  "field": "transit_access",
+  "change": "re-derived from the corrected 124 East 14th Street point",
+  "before": {
+   "value": "{'alternates': [{'routes': ['N', 'Q', 'R', 'W'], 'station': '28 St', 'straight_m': 316}, {'routes': ['4', '6', '6X'], 'station': '33 St', 'straight_m': 383}], '",
+   "derivation": "Nearest station and lines computed from the MTA GTFS static feed against the Census-geocoded address",
+   "note": "None",
+   "verified_at": "2026-11-24",
+   "run_id": "run-20261124b-nyc-n1"
+  },
+  "after": {
+   "value": "{'nearest_station': '14 St-Union Square', 'lines': ['4', '5', '6', 'L', 'N', 'Q', 'R', 'W'], 'straight_m': 165, 'walk_m_est': 214, 'walk_minutes_est': 3, 'alter",
+   "derivation": "Nearest subway station and route list recomputed after the address correction; OSM station nodes checked 2026-11-26",
+   "note": "The old 28 St / N-Q-R-W entry belonged to the superseded 28 East 28th Street address.",
+   "verified_at": "2026-11-26",
+   "run_id": "run-20261126-nyc-r9-r2"
+  }
+ },
+ {
+  "venue": "nyc-4c6638c43df6",
+  "photo": 0,
+  "change": "placement proof and distance updated for 124 East 14th Street",
+  "before": "Gallery image on the operator/Tagvenue listing for Civic Hall — Event Rooms at 28 East 28th Street (Zero Irving), New York, NY 10016; the listing page names the room and prints the address, and the gallery caption is ''."
+ },
+ {
+  "venue": "nyc-4c6638c43df6",
+  "photo": 1,
+  "change": "placement proof and distance updated for 124 East 14th Street",
+  "before": "Gallery image on the operator/Tagvenue listing for Civic Hall — Event Rooms at 28 East 28th Street (Zero Irving), New York, NY 10016; the listing page names the room and prints the address, and the gallery caption is ''."
+ },
+ {
+  "venue": "nyc-4c6638c43df6",
+  "photo": 2,
+  "change": "placement proof and distance updated for 124 East 14th Street",
+  "before": "Gallery image on the operator/Tagvenue listing for Civic Hall — Event Rooms at 28 East 28th Street (Zero Irving), New York, NY 10016; the listing page names the room and prints the address, and the gallery caption is ''."
+ },
+ {
+  "venue": "nyc-4c6638c43df6",
+  "photo": 3,
+  "change": "placement proof and distance updated for 124 East 14th Street",
+  "before": "Gallery image on the operator/Tagvenue listing for Civic Hall — Event Rooms at 28 East 28th Street (Zero Irving), New York, NY 10016; the listing page names the room and prints the address, and the gallery caption is ''."
+ },
+ {
+  "venue": "nyc-lead-bpl-meeting-rooms",
+  "field": "address",
+  "change": "unsupported quote nulled (blocked page)",
+  "before": "10 Grand Army Plaza, Brooklyn, NY 11238"
+ },
+ {
+  "venue": "nyc-lead-bpl-meeting-rooms",
+  "field": "display_name",
+  "change": "unsupported quote nulled (blocked page)",
+  "before": "Brooklyn Public Library — Rooms"
+ },
+ {
+  "venue": "nyc-12c98ff34e33",
+  "field": "address",
+  "change": "unsupported quote nulled (blocked page)",
+  "before": "60 Washington Square South, New York, NY 10012"
+ },
+ {
+  "venue": "nyc-12c98ff34e33",
+  "field": "about",
+  "change": "unsupported quote nulled (blocked page)",
+  "before": "KC 914 | 150 row seating | 48 conference capacity | 1,984 sq ft."
+ },
+ {
+  "venue": "nyc-12c98ff34e33",
+  "field": "capacity",
+  "change": "unsupported quote nulled (blocked page)",
+  "before": "KC 914 | 150 row seating | 48 conference capacity | 1,984 sq ft."
+ },
+ {
+  "venue": "nyc-12c98ff34e33",
+  "field": "capacity_basis",
+  "change": "unsupported quote nulled (blocked page)",
+  "before": "KC 914 | 150 row seating | 48 conference capacity | 1,984 sq ft."
+ },
+ {
+  "venue": "nyc-75c0f7334372",
+  "field": "address",
+  "change": "unsupported quote nulled (blocked page)",
+  "before": "15 West 38th Street, 1st Floor, New York, NY"
+ },
+ {
+  "venue": "nyc-75c0f7334372",
+  "field": "about",
+  "change": "unsupported quote nulled (blocked page)",
+  "before": "The \"Monroe\" Room is a brand new conference space is the perfect venue for a large meeting for up to 54 people. The location also features indoor or rooftop spa"
+ },
+ {
+  "venue": "nyc-75c0f7334372",
+  "field": "capacity",
+  "change": "unsupported quote nulled (blocked page)",
+  "before": "The \"Monroe\" Room is a brand new conference space is the perfect venue for a large meeting for up to 54 people. The location also features indoor or rooftop spa"
+ },
+ {
+  "venue": "nyc-75c0f7334372",
+  "field": "capacity_basis",
+  "change": "unsupported quote nulled (blocked page)",
+  "before": "The \"Monroe\" Room is a brand new conference space is the perfect venue for a large meeting for up to 54 people. The location also features indoor or rooftop spa"
+ },
+ {
+  "venue": "nyc-b07f42f9c9bc",
+  "field": "address",
+  "change": "unsupported quote nulled (blocked page)",
+  "before": "109 West 39th Street, 2nd Floor & Concourse Level, New York, NY 10018"
+ },
+ {
+  "venue": "nyc-b07f42f9c9bc",
+  "field": "about",
+  "change": "unsupported quote nulled (blocked page)",
+  "before": "Custom Tailored to your Event, Tel Aviv can seat 94 in Theater Setting, 56 Classroom Style, 56 in Pods, 28 in a Boardroom Layout and 110 people for a Reception."
+ },
+ {
+  "venue": "nyc-b07f42f9c9bc",
+  "field": "capacity",
+  "change": "unsupported quote nulled (blocked page)",
+  "before": "Custom Tailored to your Event, Tel Aviv can seat 94 in Theater Setting, 56 Classroom Style, 56 in Pods, 28 in a Boardroom Layout and 110 people for a Reception."
+ },
+ {
+  "venue": "nyc-b07f42f9c9bc",
+  "field": "capacity_basis",
+  "change": "unsupported quote nulled (blocked page)",
+  "before": "Custom Tailored to your Event, Tel Aviv can seat 94 in Theater Setting, 56 Classroom Style, 56 in Pods, 28 in a Boardroom Layout and 110 people for a Reception."
+ },
+ {
+  "venue": "nyc-lead-cuny-gc",
+  "field": "display_name",
+  "change": "derived label no longer carries a page-title quote"
+ },
+ {
+  "venue": "nyc-041ec8557e6d",
+  "field": "catering",
+  "change": "concatenated quote replaced with a contiguous verbatim block",
+  "after": "External catering allowed"
+ },
+ {
+  "venue": "nyc-041ec8557e6d",
+  "field": "food_service",
+  "change": "concatenated quote replaced with a contiguous verbatim block",
+  "after": "External catering allowed"
+ },
+ {
+  "venue": "nyc-12462819aebd",
+  "field": "catering",
+  "change": "concatenated quote replaced with a contiguous verbatim block",
+  "after": "External catering allowed"
+ },
+ {
+  "venue": "nyc-12462819aebd",
+  "field": "food_service",
+  "change": "concatenated quote replaced with a contiguous verbatim block",
+  "after": "External catering allowed"
+ },
+ {
+  "venue": "nyc-16d4e38fd069",
+  "field": "catering",
+  "change": "concatenated quote replaced with a contiguous verbatim block",
+  "after": "External catering not allowed"
+ },
+ {
+  "venue": "nyc-16d4e38fd069",
+  "field": "food_service",
+  "change": "concatenated quote replaced with a contiguous verbatim block",
+  "after": "In-house catering"
+ },
+ {
+  "venue": "nyc-2703d407680f",
+  "field": "catering",
+  "change": "concatenated quote replaced with a contiguous verbatim block",
+  "after": "External catering allowed"
+ },
+ {
+  "venue": "nyc-2703d407680f",
+  "field": "food_service",
+  "change": "concatenated quote replaced with a contiguous verbatim block",
+  "after": "External catering allowed"
+ },
+ {
+  "venue": "nyc-3ba4751ef6e7",
+  "field": "catering",
+  "change": "concatenated quote replaced with a contiguous verbatim block",
+  "after": "External catering allowed"
+ },
+ {
+  "venue": "nyc-3ba4751ef6e7",
+  "field": "food_service",
+  "change": "concatenated quote replaced with a contiguous verbatim block",
+  "after": "External catering allowed"
+ },
+ {
+  "venue": "nyc-4f482327c22f",
+  "field": "catering",
+  "change": "concatenated quote replaced with a contiguous verbatim block",
+  "after": "External catering allowed"
+ },
+ {
+  "venue": "nyc-4f482327c22f",
+  "field": "food_service",
+  "change": "concatenated quote replaced with a contiguous verbatim block",
+  "after": "External catering allowed"
+ },
+ {
+  "venue": "nyc-5e5134d4deff",
+  "field": "catering",
+  "change": "concatenated quote replaced with a contiguous verbatim block",
+  "after": "External catering not allowed"
+ },
+ {
+  "venue": "nyc-5e5134d4deff",
+  "field": "food_service",
+  "change": "concatenated quote replaced with a contiguous verbatim block",
+  "after": "In-house catering"
+ },
+ {
+  "venue": "nyc-6205aa000e1b",
+  "field": "catering",
+  "change": "concatenated quote replaced with a contiguous verbatim block",
+  "after": "External catering allowed"
+ },
+ {
+  "venue": "nyc-6205aa000e1b",
+  "field": "food_service",
+  "change": "concatenated quote replaced with a contiguous verbatim block",
+  "after": "External catering allowed"
+ },
+ {
+  "venue": "nyc-646e1e5393b6",
+  "field": "catering",
+  "change": "concatenated quote replaced with a contiguous verbatim block",
+  "after": "External catering allowed"
+ },
+ {
+  "venue": "nyc-646e1e5393b6",
+  "field": "food_service",
+  "change": "concatenated quote replaced with a contiguous verbatim block",
+  "after": "External catering allowed"
+ },
+ {
+  "venue": "nyc-6d04b6ce2634",
+  "field": "catering",
+  "change": "concatenated quote replaced with a contiguous verbatim block",
+  "after": "External catering allowed"
+ },
+ {
+  "venue": "nyc-6d04b6ce2634",
+  "field": "food_service",
+  "change": "concatenated quote replaced with a contiguous verbatim block",
+  "after": "External catering allowed"
+ },
+ {
+  "venue": "nyc-7abec7622696",
+  "field": "catering",
+  "change": "concatenated quote replaced with a contiguous verbatim block",
+  "after": "External catering allowed"
+ },
+ {
+  "venue": "nyc-7abec7622696",
+  "field": "food_service",
+  "change": "concatenated quote replaced with a contiguous verbatim block",
+  "after": "External catering allowed"
+ },
+ {
+  "venue": "nyc-862e759a55a6",
+  "field": "catering",
+  "change": "concatenated quote replaced with a contiguous verbatim block",
+  "after": "External catering allowed"
+ },
+ {
+  "venue": "nyc-862e759a55a6",
+  "field": "food_service",
+  "change": "concatenated quote replaced with a contiguous verbatim block",
+  "after": "External catering allowed"
+ },
+ {
+  "venue": "nyc-93bc87ce76a0",
+  "field": "catering",
+  "change": "concatenated quote replaced with a contiguous verbatim block",
+  "after": "External catering allowed"
+ },
+ {
+  "venue": "nyc-93bc87ce76a0",
+  "field": "food_service",
+  "change": "concatenated quote replaced with a contiguous verbatim block",
+  "after": "External catering allowed"
+ },
+ {
+  "venue": "nyc-a2a23c94407e",
+  "field": "catering",
+  "change": "concatenated quote replaced with a contiguous verbatim block",
+  "after": "External catering not allowed"
+ },
+ {
+  "venue": "nyc-a2a23c94407e",
+  "field": "food_service",
+  "change": "concatenated quote replaced with a contiguous verbatim block",
+  "after": "In-house catering"
+ },
+ {
+  "venue": "nyc-aa32c5682549",
+  "field": "catering",
+  "change": "concatenated quote replaced with a contiguous verbatim block",
+  "after": "External catering not allowed"
+ },
+ {
+  "venue": "nyc-aa32c5682549",
+  "field": "food_service",
+  "change": "concatenated quote replaced with a contiguous verbatim block",
+  "after": "In-house catering"
+ },
+ {
+  "venue": "nyc-b9a5252396f3",
+  "field": "catering",
+  "change": "concatenated quote replaced with a contiguous verbatim block",
+  "after": "External catering allowed"
+ },
+ {
+  "venue": "nyc-b9a5252396f3",
+  "field": "food_service",
+  "change": "concatenated quote replaced with a contiguous verbatim block",
+  "after": "External catering allowed"
+ },
+ {
+  "venue": "nyc-bb0e8d8d6dc2",
+  "field": "catering",
+  "change": "concatenated quote replaced with a contiguous verbatim block",
+  "after": "External catering allowed"
+ },
+ {
+  "venue": "nyc-bb0e8d8d6dc2",
+  "field": "food_service",
+  "change": "concatenated quote replaced with a contiguous verbatim block",
+  "after": "External catering allowed"
+ },
+ {
+  "venue": "nyc-bb4d0d62028d",
+  "field": "catering",
+  "change": "concatenated quote replaced with a contiguous verbatim block",
+  "after": "External catering allowed"
+ },
+ {
+  "venue": "nyc-bb4d0d62028d",
+  "field": "food_service",
+  "change": "concatenated quote replaced with a contiguous verbatim block",
+  "after": "External catering allowed"
+ },
+ {
+  "venue": "nyc-bcb5bfbbb45a",
+  "field": "catering",
+  "change": "concatenated quote replaced with a contiguous verbatim block",
+  "after": "In-house catering / • / External catering allowed"
+ },
+ {
+  "venue": "nyc-bcb5bfbbb45a",
+  "field": "food_service",
+  "change": "concatenated quote replaced with a contiguous verbatim block",
+  "after": "In-house catering / • / External catering allowed"
+ },
+ {
+  "venue": "nyc-ccb3bfa2e5d7",
+  "field": "catering",
+  "change": "concatenated quote replaced with a contiguous verbatim block",
+  "after": "In-house catering / • / External catering allowed"
+ },
+ {
+  "venue": "nyc-ccb3bfa2e5d7",
+  "field": "food_service",
+  "change": "concatenated quote replaced with a contiguous verbatim block",
+  "after": "In-house catering / • / External catering allowed"
+ },
+ {
+  "venue": "nyc-cf2d116c0745",
+  "field": "catering",
+  "change": "concatenated quote replaced with a contiguous verbatim block",
+  "after": "In-house catering / • / External catering allowed"
+ },
+ {
+  "venue": "nyc-cf2d116c0745",
+  "field": "food_service",
+  "change": "concatenated quote replaced with a contiguous verbatim block",
+  "after": "In-house catering / • / External catering allowed"
+ },
+ {
+  "venue": "nyc-d6ff494b9504",
+  "field": "catering",
+  "change": "concatenated quote replaced with a contiguous verbatim block",
+  "after": "External catering allowed"
+ },
+ {
+  "venue": "nyc-d6ff494b9504",
+  "field": "food_service",
+  "change": "concatenated quote replaced with a contiguous verbatim block",
+  "after": "External catering allowed"
+ },
+ {
+  "venue": "nyc-dcd959417eb2",
+  "field": "catering",
+  "change": "concatenated quote replaced with a contiguous verbatim block",
+  "after": "In-house catering / • / External catering allowed"
+ },
+ {
+  "venue": "nyc-dcd959417eb2",
+  "field": "food_service",
+  "change": "concatenated quote replaced with a contiguous verbatim block",
+  "after": "In-house catering / • / External catering allowed"
+ },
+ {
+  "venue": "nyc-fbae6569ad6a",
+  "field": "catering",
+  "change": "concatenated quote replaced with a contiguous verbatim block",
+  "after": "External catering allowed"
+ },
+ {
+  "venue": "nyc-fbae6569ad6a",
+  "field": "food_service",
+  "change": "concatenated quote replaced with a contiguous verbatim block",
+  "after": "External catering allowed"
+ },
+ {
+  "venue": "nyc-ffb2d5d73020",
+  "field": "catering",
+  "change": "concatenated quote replaced with a contiguous verbatim block",
+  "after": "External catering allowed"
+ },
+ {
+  "venue": "nyc-ffb2d5d73020",
+  "field": "food_service",
+  "change": "concatenated quote replaced with a contiguous verbatim block",
+  "after": "External catering allowed"
+ },
+ {
+  "venue": "nyc-12462819aebd",
+  "field": "capacity",
+  "change": "token-joined capacity quote replaced with verbatim line",
+  "after": "Up to 78 seats"
+ },
+ {
+  "venue": "nyc-12462819aebd",
+  "field": "capacity_basis",
+  "change": "token-joined capacity quote replaced with verbatim line",
+  "after": "Up to 78 seats"
+ },
+ {
+  "venue": "nyc-16d4e38fd069",
+  "field": "capacity",
+  "change": "token-joined capacity quote replaced with verbatim line",
+  "after": "Up to 70 seats"
+ },
+ {
+  "venue": "nyc-16d4e38fd069",
+  "field": "capacity_basis",
+  "change": "token-joined capacity quote replaced with verbatim line",
+  "after": "Up to 70 seats"
+ },
+ {
+  "venue": "nyc-2703d407680f",
+  "field": "capacity",
+  "change": "token-joined capacity quote replaced with verbatim line",
+  "after": "Up to 150 seats"
+ },
+ {
+  "venue": "nyc-2703d407680f",
+  "field": "capacity_basis",
+  "change": "token-joined capacity quote replaced with verbatim line",
+  "after": "Up to 150 seats"
+ },
+ {
+  "venue": "nyc-3ba4751ef6e7",
+  "field": "capacity",
+  "change": "token-joined capacity quote replaced with verbatim line",
+  "after": "Up to 190 seats"
+ },
+ {
+  "venue": "nyc-3ba4751ef6e7",
+  "field": "capacity_basis",
+  "change": "token-joined capacity quote replaced with verbatim line",
+  "after": "Up to 190 seats"
+ },
+ {
+  "venue": "nyc-4f482327c22f",
+  "field": "capacity",
+  "change": "token-joined capacity quote replaced with verbatim line",
+  "after": "Up to 100 seats"
+ },
+ {
+  "venue": "nyc-4f482327c22f",
+  "field": "capacity_basis",
+  "change": "token-joined capacity quote replaced with verbatim line",
+  "after": "Up to 100 seats"
+ },
+ {
+  "venue": "nyc-5e5134d4deff",
+  "field": "capacity",
+  "change": "token-joined capacity quote replaced with verbatim line",
+  "after": "Up to 268 seats"
+ },
+ {
+  "venue": "nyc-5e5134d4deff",
+  "field": "capacity_basis",
+  "change": "token-joined capacity quote replaced with verbatim line",
+  "after": "Up to 268 seats"
+ },
+ {
+  "venue": "nyc-6205aa000e1b",
+  "field": "capacity",
+  "change": "token-joined capacity quote replaced with verbatim line",
+  "after": "Up to 100 seats"
+ },
+ {
+  "venue": "nyc-6205aa000e1b",
+  "field": "capacity_basis",
+  "change": "token-joined capacity quote replaced with verbatim line",
+  "after": "Up to 100 seats"
+ },
+ {
+  "venue": "nyc-646e1e5393b6",
+  "field": "capacity",
+  "change": "token-joined capacity quote replaced with verbatim line",
+  "after": "Up to 250 seats"
+ },
+ {
+  "venue": "nyc-646e1e5393b6",
+  "field": "capacity_basis",
+  "change": "token-joined capacity quote replaced with verbatim line",
+  "after": "Up to 250 seats"
+ },
+ {
+  "venue": "nyc-6d04b6ce2634",
+  "field": "capacity",
+  "change": "token-joined capacity quote replaced with verbatim line",
+  "after": "Up to 120 seats"
+ },
+ {
+  "venue": "nyc-6d04b6ce2634",
+  "field": "capacity_basis",
+  "change": "token-joined capacity quote replaced with verbatim line",
+  "after": "Up to 120 seats"
+ },
+ {
+  "venue": "nyc-7abec7622696",
+  "field": "capacity",
+  "change": "token-joined capacity quote replaced with verbatim line",
+  "after": "Up to 400 seats"
+ },
+ {
+  "venue": "nyc-7abec7622696",
+  "field": "capacity_basis",
+  "change": "token-joined capacity quote replaced with verbatim line",
+  "after": "Up to 400 seats"
+ },
+ {
+  "venue": "nyc-862e759a55a6",
+  "field": "capacity",
+  "change": "token-joined capacity quote replaced with verbatim line",
+  "after": "Up to 150 seats"
+ },
+ {
+  "venue": "nyc-862e759a55a6",
+  "field": "capacity_basis",
+  "change": "token-joined capacity quote replaced with verbatim line",
+  "after": "Up to 150 seats"
+ },
+ {
+  "venue": "nyc-93bc87ce76a0",
+  "field": "capacity",
+  "change": "token-joined capacity quote replaced with verbatim line",
+  "after": "Up to 200 seats"
+ },
+ {
+  "venue": "nyc-93bc87ce76a0",
+  "field": "capacity_basis",
+  "change": "token-joined capacity quote replaced with verbatim line",
+  "after": "Up to 200 seats"
+ },
+ {
+  "venue": "nyc-a2a23c94407e",
+  "field": "capacity",
+  "change": "token-joined capacity quote replaced with verbatim line",
+  "after": "Up to 52 seats"
+ },
+ {
+  "venue": "nyc-a2a23c94407e",
+  "field": "capacity_basis",
+  "change": "token-joined capacity quote replaced with verbatim line",
+  "after": "Up to 52 seats"
+ },
+ {
+  "venue": "nyc-aa32c5682549",
+  "field": "capacity",
+  "change": "token-joined capacity quote replaced with verbatim line",
+  "after": "Up to 250 seats"
+ },
+ {
+  "venue": "nyc-aa32c5682549",
+  "field": "capacity_basis",
+  "change": "token-joined capacity quote replaced with verbatim line",
+  "after": "Up to 250 seats"
+ },
+ {
+  "venue": "nyc-b9a5252396f3",
+  "field": "capacity",
+  "change": "token-joined capacity quote replaced with verbatim line",
+  "after": "Up to 175 seats"
+ },
+ {
+  "venue": "nyc-b9a5252396f3",
+  "field": "capacity_basis",
+  "change": "token-joined capacity quote replaced with verbatim line",
+  "after": "Up to 175 seats"
+ },
+ {
+  "venue": "nyc-bb0e8d8d6dc2",
+  "field": "capacity",
+  "change": "token-joined capacity quote replaced with verbatim line",
+  "after": "Up to 51 seats"
+ },
+ {
+  "venue": "nyc-bb0e8d8d6dc2",
+  "field": "capacity_basis",
+  "change": "token-joined capacity quote replaced with verbatim line",
+  "after": "Up to 51 seats"
+ },
+ {
+  "venue": "nyc-bb4d0d62028d",
+  "field": "capacity",
+  "change": "token-joined capacity quote replaced with verbatim line",
+  "after": "Up to 60 seats"
+ },
+ {
+  "venue": "nyc-bb4d0d62028d",
+  "field": "capacity_basis",
+  "change": "token-joined capacity quote replaced with verbatim line",
+  "after": "Up to 60 seats"
+ },
+ {
+  "venue": "nyc-bcb5bfbbb45a",
+  "field": "capacity",
+  "change": "token-joined capacity quote replaced with verbatim line",
+  "after": "Up to 200 seats"
+ },
+ {
+  "venue": "nyc-bcb5bfbbb45a",
+  "field": "capacity_basis",
+  "change": "token-joined capacity quote replaced with verbatim line",
+  "after": "Up to 200 seats"
+ },
+ {
+  "venue": "nyc-ccb3bfa2e5d7",
+  "field": "capacity",
+  "change": "token-joined capacity quote replaced with verbatim line",
+  "after": "Up to 52 seats"
+ },
+ {
+  "venue": "nyc-ccb3bfa2e5d7",
+  "field": "capacity_basis",
+  "change": "token-joined capacity quote replaced with verbatim line",
+  "after": "Up to 52 seats"
+ },
+ {
+  "venue": "nyc-cf2d116c0745",
+  "field": "capacity",
+  "change": "token-joined capacity quote replaced with verbatim line",
+  "after": "Up to 50 seats"
+ },
+ {
+  "venue": "nyc-cf2d116c0745",
+  "field": "capacity_basis",
+  "change": "token-joined capacity quote replaced with verbatim line",
+  "after": "Up to 50 seats"
+ },
+ {
+  "venue": "nyc-d6ff494b9504",
+  "field": "capacity",
+  "change": "token-joined capacity quote replaced with verbatim line",
+  "after": "Up to 50 seats"
+ },
+ {
+  "venue": "nyc-d6ff494b9504",
+  "field": "capacity_basis",
+  "change": "token-joined capacity quote replaced with verbatim line",
+  "after": "Up to 50 seats"
+ },
+ {
+  "venue": "nyc-dcd959417eb2",
+  "field": "capacity",
+  "change": "token-joined capacity quote replaced with verbatim line",
+  "after": "Up to 250 seats"
+ },
+ {
+  "venue": "nyc-dcd959417eb2",
+  "field": "capacity_basis",
+  "change": "token-joined capacity quote replaced with verbatim line",
+  "after": "Up to 250 seats"
+ },
+ {
+  "venue": "nyc-fbae6569ad6a",
+  "field": "capacity",
+  "change": "token-joined capacity quote replaced with verbatim line",
+  "after": "Up to 150 seats"
+ },
+ {
+  "venue": "nyc-fbae6569ad6a",
+  "field": "capacity_basis",
+  "change": "token-joined capacity quote replaced with verbatim line",
+  "after": "Up to 150 seats"
+ },
+ {
+  "venue": "nyc-ffb2d5d73020",
+  "field": "capacity",
+  "change": "token-joined capacity quote replaced with verbatim line",
+  "after": "Up to 64 seats"
+ },
+ {
+  "venue": "nyc-ffb2d5d73020",
+  "field": "capacity_basis",
+  "change": "token-joined capacity quote replaced with verbatim line",
+  "after": "Up to 64 seats"
+ },
+ {
+  "venue": "nyc-4f482327c22f",
+  "field": "access_window",
+  "change": "token-joined cell quote replaced with the verbatim 'Open 24 hours' cell",
+  "before": {
+   "quote": "Saturday Open 24 hours from hire fee per hour Per hour",
+   "source_locator": "Pricing details -> Saturday (published hire rate row)",
+   "quote_basis": "None",
+   "verified_at": "2026-11-26",
+   "run_id": "run-20261126-nyc-r9"
+  },
+  "after": {
+   "quote": "Open 24 hours",
+   "source_locator": "Rate table, Saturday row: opening cell 'Open 24 hours' (cells recorded in access-blocks.json)",
+   "quote_basis": "Two adjacent cells of the listing's rate table read 'Saturday' + 'Open 24 hours'; the value is the opening-hours cell, not a hire interval.",
+   "verified_at": "2026-11-26",
+   "run_id": "run-20261126-nyc-r9-r2"
+  }
+ },
+ {
+  "venue": "nyc-b9a5252396f3",
+  "field": "access_window",
+  "change": "token-joined cell quote replaced with the verbatim 'Open 24 hours' cell",
+  "before": {
+   "quote": "Saturday Open 24 hours from hire fee per hour Per hour",
+   "source_locator": "Pricing details -> Saturday (published hire rate row)",
+   "quote_basis": "None",
+   "verified_at": "2026-11-26",
+   "run_id": "run-20261126-nyc-r9"
+  },
+  "after": {
+   "quote": "Open 24 hours",
+   "source_locator": "Rate table, Saturday row: opening cell 'Open 24 hours' (cells recorded in access-blocks.json)",
+   "quote_basis": "Two adjacent cells of the listing's rate table read 'Saturday' + 'Open 24 hours'; the value is the opening-hours cell, not a hire interval.",
+   "verified_at": "2026-11-26",
+   "run_id": "run-20261126-nyc-r9-r2"
+  }
+ },
+ {
+  "venue": "nyc-bb4d0d62028d",
+  "field": "access_window",
+  "change": "token-joined cell quote replaced with the verbatim 'Open 24 hours' cell",
+  "before": {
+   "quote": "Saturday Open 24 hours from hire fee per hour Per hour",
+   "source_locator": "Pricing details -> Saturday (published hire rate row)",
+   "quote_basis": "None",
+   "verified_at": "2026-11-26",
+   "run_id": "run-20261126-nyc-r9"
+  },
+  "after": {
+   "quote": "Open 24 hours",
+   "source_locator": "Rate table, Saturday row: opening cell 'Open 24 hours' (cells recorded in access-blocks.json)",
+   "quote_basis": "Two adjacent cells of the listing's rate table read 'Saturday' + 'Open 24 hours'; the value is the opening-hours cell, not a hire interval.",
+   "verified_at": "2026-11-26",
+   "run_id": "run-20261126-nyc-r9-r2"
+  }
+ },
+ {
+  "venue": "nyc-bcb5bfbbb45a",
+  "field": "access_window",
+  "change": "token-joined cell quote replaced with the verbatim 'Open 24 hours' cell",
+  "before": {
+   "quote": "Saturday Open 24 hours from min. spend Per session",
+   "source_locator": "Pricing details -> Saturday (published hire rate row)",
+   "quote_basis": "None",
+   "verified_at": "2026-11-26",
+   "run_id": "run-20261126-nyc-r9"
+  },
+  "after": {
+   "quote": "Open 24 hours",
+   "source_locator": "Rate table, Saturday row: opening cell 'Open 24 hours' (cells recorded in access-blocks.json)",
+   "quote_basis": "Two adjacent cells of the listing's rate table read 'Saturday' + 'Open 24 hours'; the value is the opening-hours cell, not a hire interval.",
+   "verified_at": "2026-11-26",
+   "run_id": "run-20261126-nyc-r9-r2"
+  }
+ },
+ {
+  "venue": "nyc-dcd959417eb2",
+  "field": "access_window",
+  "change": "token-joined cell quote replaced with the verbatim 'Open 24 hours' cell",
+  "before": {
+   "quote": "Saturday Open 24 hours from hire fee per hour Per hour",
+   "source_locator": "Pricing details -> Saturday (published hire rate row)",
+   "quote_basis": "None",
+   "verified_at": "2026-11-26",
+   "run_id": "run-20261126-nyc-r9"
+  },
+  "after": {
+   "quote": "Open 24 hours",
+   "source_locator": "Rate table, Saturday row: opening cell 'Open 24 hours' (cells recorded in access-blocks.json)",
+   "quote_basis": "Two adjacent cells of the listing's rate table read 'Saturday' + 'Open 24 hours'; the value is the opening-hours cell, not a hire interval.",
+   "verified_at": "2026-11-26",
+   "run_id": "run-20261126-nyc-r9-r2"
+  }
+ },
+ {
+  "venue": "nyc-b07f42f9c9bc",
+  "field": "access_window",
+  "change": "joined rate row re-cited as the two captured cells",
+  "before": {
+   "quote": "Saturday 9:00 am – 6:00 pm from $175 hire fee per hour",
+   "source_locator": "Pricing details -> Saturday (published hire rate row)",
+   "quote_basis": "None",
+   "verified_at": "2026-11-26",
+   "run_id": "run-20261126-nyc-r9"
+  },
+  "after": {
+   "quote": "9:00 am – 6:00 pm",
+   "source_locator": "Rate table, Saturday row cells '9:00 am –' and '6:00 pm' (access-blocks.json)",
+   "quote_basis": "Two adjacent cells of the Tagvenue rate table; the full-page capture for this listing was not saved, the cell block is in access-blocks.json.",
+   "verified_at": "2026-11-26",
+   "run_id": "run-20261126-nyc-r9-r2"
+  }
+ },
+ {
+  "venue": "nyc-bb0e8d8d6dc2",
+  "field": "price",
+  "change": "multi-line joined quote replaced with the verbatim two-line rate row",
+  "before": {
+   "quote": "10:00 am –\n12:00 am\nfrom\n$1050\nhire fee per day\nAll prices include sales tax.",
+   "source_locator": "Prices - Saturday",
+   "verified_at": "2026-11-24",
+   "run_id": "run-20261124b-nyc-n1"
+  },
+  "after": {
+   "quote": "$1050\nhire fee per day",
+   "source_locator": "Prices - Saturday: '$1050' / 'hire fee per day'",
+   "verified_at": "2026-11-26",
+   "run_id": "run-20261126-nyc-r9-r2"
+  }
+ },
+ {
+  "venue": "nyc-bb0e8d8d6dc2",
+  "field": "price_basis",
+  "change": "multi-line joined quote replaced with the verbatim two-line rate row",
+  "before": {
+   "quote": "10:00 am –\n12:00 am\nfrom\n$1050\nhire fee per day\nAll prices include sales tax.",
+   "source_locator": "Prices - Saturday",
+   "verified_at": "2026-11-24",
+   "run_id": "run-20261124b-nyc-n1"
+  },
+  "after": {
+   "quote": "$1050\nhire fee per day",
+   "source_locator": "Prices - Saturday: '$1050' / 'hire fee per day'",
+   "verified_at": "2026-11-26",
+   "run_id": "run-20261126-nyc-r9-r2"
+  }
+ }
+]

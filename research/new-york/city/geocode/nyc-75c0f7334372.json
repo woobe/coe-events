@@ -1,0 +1,165 @@
+{
+ "name": "The Monroe Room",
+ "address": "15 West 38th Street, 1st Floor, New York, NY",
+ "lookups": {
+  "address": {
+   "query": "15 West 38th Street, 1st Floor, New York, NY",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=15%20West%2038th%20Street%2C%201st%20Floor%2C%20New%20York%2C%20NY",
+   "response": []
+  },
+  "address-short": {
+   "query": "15 West 38th Street, 1st Floor, NY",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=15%20West%2038th%20Street%2C%201st%20Floor%2C%20NY",
+   "response": []
+  },
+  "name": {
+   "query": "The Monroe Room, 15 West 38th Street, 1st Floor, New York, NY",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=The%20Monroe%20Room%2C%2015%20West%2038th%20Street%2C%201st%20Floor%2C%20New%20York%2C%20NY",
+   "response": []
+  },
+  "clean": {
+   "query": "15 West 38th Street, New York, NY",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=15%20West%2038th%20Street%2C%20New%20York%2C%20NY",
+   "response": [
+    {
+     "place_id": 359182523,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 265301808,
+     "lat": "40.7516359",
+     "lon": "-73.9837008",
+     "category": "office",
+     "type": "diplomatic",
+     "place_rank": 30,
+     "importance": 9.175936522464359e-05,
+     "addresstype": "office",
+     "name": "Permanent Mission of Cyprus to the United Nations",
+     "display_name": "Permanent Mission of Cyprus to the United Nations, 15, West 38th Street, Midtown South, Manhattan Community Board 5, Manhattan, New York County, New York, 10018, United States",
+     "address": {
+      "office": "Permanent Mission of Cyprus to the United Nations",
+      "house_number": "15",
+      "road": "West 38th Street",
+      "neighbourhood": "Midtown South",
+      "suburb": "Manhattan",
+      "county": "New York County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "10018",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": {
+      "email": "unmission@mfa.gov.cy",
+      "phone": "+1-212-481-6023",
+      "height": "48.5",
+      "target": "UN",
+      "country": "CY",
+      "embassy": "mission",
+      "website": "https://www.cyprusun.org/",
+      "building": "yes",
+      "diplomatic": "embassy",
+      "nycdoitt:bin": "1016002"
+     },
+     "boundingbox": [
+      "40.7514688",
+      "40.7517573",
+      "-73.9838849",
+      "-73.9835499"
+     ]
+    },
+    {
+     "place_id": 359104882,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 265424281,
+     "lat": "40.7519997",
+     "lon": "-73.9806779",
+     "category": "building",
+     "type": "yes",
+     "place_rank": 30,
+     "importance": 9.175936522464359e-05,
+     "addresstype": "building",
+     "name": "",
+     "display_name": "15, West 38th Street, Midtown South, Manhattan Community Board 5, Manhattan, New York County, New York, 10018, United States",
+     "address": {
+      "house_number": "15",
+      "road": "West 38th Street",
+      "neighbourhood": "Midtown South",
+      "suburb": "Manhattan",
+      "county": "New York County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "10018",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": {
+      "height": "21.5",
+      "roof:shape": "flat",
+      "nycdoitt:bin": "1035314",
+      "roof:material": "concrete",
+      "building:colour": "#94928D",
+      "building:levels": "11"
+     },
+     "boundingbox": [
+      "40.7518376",
+      "40.7520950",
+      "-73.9808222",
+      "-73.9805813"
+     ]
+    },
+    {
+     "place_id": 433573804,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "node",
+     "osm_id": 14403958830,
+     "lat": "40.7516134",
+     "lon": "-73.9836586",
+     "category": "amenity",
+     "type": "car_rental",
+     "place_rank": 30,
+     "importance": 9.175936522464359e-05,
+     "addresstype": "amenity",
+     "name": "Fifth Ave Auto Group",
+     "display_name": "Fifth Ave Auto Group, 15, West 38th Street, Midtown South, Manhattan Community Board 5, Manhattan, New York County, New York, 10018, United States",
+     "address": {
+      "amenity": "Fifth Ave Auto Group",
+      "house_number": "15",
+      "road": "West 38th Street",
+      "neighbourhood": "Midtown South",
+      "suburb": "Manhattan",
+      "county": "New York County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "10018",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": {
+      "language:en": "yes",
+      "language:alb": "yes",
+      "payment:cash": "yes",
+      "contact:email": "info@fifthaveauto.nyc",
+      "opening_hours": "Mo-Su 12:00-00:00",
+      "payment:zelle": "yes",
+      "payment:cash_app": "yes",
+      "contact:instagram": "https://www.instagram.com/fifthaveautogroup/",
+      "payment:apple_pay": "yes",
+      "payment:debit_cards": "yes",
+      "payment:credit_cards": "yes",
+      "year_of_construction": "2026"
+     },
+     "boundingbox": [
+      "40.7515634",
+      "40.7516634",
+      "-73.9837086",
+      "-73.9836086"
+     ]
+    }
+   ]
+  }
+ }
+}

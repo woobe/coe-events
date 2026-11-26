@@ -1,0 +1,98 @@
+{
+ "name": "Bogart House — Main Floor",
+ "address": "230 Bogart Street, Brooklyn, NY 11206",
+ "lookups": {
+  "address": {
+   "query": "230 Bogart Street, Brooklyn, NY 11206",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=230%20Bogart%20Street%2C%20Brooklyn%2C%20NY%2011206",
+   "response": [
+    {
+     "place_id": 360211092,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "node",
+     "osm_id": 6707529621,
+     "lat": "40.7116190",
+     "lon": "-73.9356008",
+     "category": "amenity",
+     "type": "events_venue",
+     "place_rank": 30,
+     "importance": 9.175936522464359e-05,
+     "addresstype": "amenity",
+     "name": "Bogart House",
+     "display_name": "Bogart House, 230, Bogart Street, Brooklyn, Kings County, New York, 11206, United States",
+     "address": {
+      "amenity": "Bogart House",
+      "house_number": "230",
+      "road": "Bogart Street",
+      "suburb": "Brooklyn",
+      "county": "Kings County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "11206",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": {
+      "phone": "+1-718-497-1918",
+      "website": "https://bogarthouse.com",
+      "description": "Multi-functional rental event space.",
+      "opening_hours": "Mo-Su 13:00-17:00"
+     },
+     "boundingbox": [
+      "40.7115690",
+      "40.7116690",
+      "-73.9356508",
+      "-73.9355508"
+     ]
+    }
+   ]
+  },
+  "name": {
+   "query": "Bogart House, 230 Bogart Street, Brooklyn, NY 11206",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=Bogart%20House%2C%20230%20Bogart%20Street%2C%20Brooklyn%2C%20NY%2011206",
+   "response": [
+    {
+     "place_id": 360471368,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "node",
+     "osm_id": 6707529621,
+     "lat": "40.7116190",
+     "lon": "-73.9356008",
+     "category": "amenity",
+     "type": "events_venue",
+     "place_rank": 30,
+     "importance": 9.175936522464359e-05,
+     "addresstype": "amenity",
+     "name": "Bogart House",
+     "display_name": "Bogart House, 230, Bogart Street, Brooklyn, Kings County, New York, 11206, United States",
+     "address": {
+      "amenity": "Bogart House",
+      "house_number": "230",
+      "road": "Bogart Street",
+      "suburb": "Brooklyn",
+      "county": "Kings County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "11206",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": {
+      "phone": "+1-718-497-1918",
+      "website": "https://bogarthouse.com",
+      "description": "Multi-functional rental event space.",
+      "opening_hours": "Mo-Su 13:00-17:00"
+     },
+     "boundingbox": [
+      "40.7115690",
+      "40.7116690",
+      "-73.9356508",
+      "-73.9355508"
+     ]
+    }
+   ]
+  }
+ }
+}

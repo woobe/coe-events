@@ -1,0 +1,170 @@
+{
+ "name": "Ideal Glass Studios — Atrium",
+ "address": "9 West 8th Street, New York, NY 10011",
+ "lookups": {
+  "address": {
+   "query": "9 West 8th Street, New York, NY 10011",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=9%20West%208th%20Street%2C%20New%20York%2C%20NY%2010011",
+   "response": [
+    {
+     "place_id": 358931628,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 248754538,
+     "lat": "40.7327499",
+     "lon": "-73.9969954",
+     "category": "building",
+     "type": "yes",
+     "place_rank": 30,
+     "importance": 9.175936522464359e-05,
+     "addresstype": "building",
+     "name": "",
+     "display_name": "9, West 8th Street, Greenwich Village, Manhattan Community Board 2, Manhattan, New York County, New York, 10011, United States",
+     "address": {
+      "house_number": "9",
+      "road": "West 8th Street",
+      "neighbourhood": "Greenwich Village",
+      "suburb": "Manhattan",
+      "county": "New York County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "10011",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": {
+      "height": "18.6",
+      "nycdoitt:bin": "1009435"
+     },
+     "boundingbox": [
+      "40.7326332",
+      "40.7328664",
+      "-73.9971082",
+      "-73.9968827"
+     ]
+    },
+    {
+     "place_id": 359220181,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "node",
+     "osm_id": 10717839776,
+     "lat": "40.7326509",
+     "lon": "-73.9970297",
+     "category": "amenity",
+     "type": "studio",
+     "place_rank": 30,
+     "importance": 9.175936522464359e-05,
+     "addresstype": "amenity",
+     "name": "Ideal Glass Studios",
+     "display_name": "Ideal Glass Studios, 9, West 8th Street, Greenwich Village, Manhattan Community Board 2, Manhattan, New York County, New York, 10011, United States",
+     "address": {
+      "amenity": "Ideal Glass Studios",
+      "house_number": "9",
+      "road": "West 8th Street",
+      "neighbourhood": "Greenwich Village",
+      "suburb": "Manhattan",
+      "county": "New York County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "10011",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": {
+      "phone": "+1-323-353-6090",
+      "website": "https://idealglass.org",
+      "check_date": "2026-05-21"
+     },
+     "boundingbox": [
+      "40.7326009",
+      "40.7327009",
+      "-73.9970797",
+      "-73.9969797"
+     ]
+    },
+    {
+     "place_id": 392947179,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 23529914,
+     "lat": "40.8955536",
+     "lon": "-73.8311886",
+     "category": "place",
+     "type": "house",
+     "place_rank": 30,
+     "importance": 9.99999999995449e-06,
+     "addresstype": "place",
+     "name": "",
+     "display_name": "9, West 8th Street, Parkside, City of Mount Vernon, Westchester County, New York, 10550, United States",
+     "address": {
+      "house_number": "9",
+      "road": "West 8th Street",
+      "neighbourhood": "Parkside",
+      "city": "City of Mount Vernon",
+      "county": "Westchester County",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "10550",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": null,
+     "boundingbox": [
+      "40.8955036",
+      "40.8956036",
+      "-73.8312386",
+      "-73.8311386"
+     ]
+    }
+   ]
+  },
+  "name": {
+   "query": "Ideal Glass Studios, 9 West 8th Street, New York, NY 10011",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=Ideal%20Glass%20Studios%2C%209%20West%208th%20Street%2C%20New%20York%2C%20NY%2010011",
+   "response": [
+    {
+     "place_id": 359220181,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "node",
+     "osm_id": 10717839776,
+     "lat": "40.7326509",
+     "lon": "-73.9970297",
+     "category": "amenity",
+     "type": "studio",
+     "place_rank": 30,
+     "importance": 9.175936522464359e-05,
+     "addresstype": "amenity",
+     "name": "Ideal Glass Studios",
+     "display_name": "Ideal Glass Studios, 9, West 8th Street, Greenwich Village, Manhattan Community Board 2, Manhattan, New York County, New York, 10011, United States",
+     "address": {
+      "amenity": "Ideal Glass Studios",
+      "house_number": "9",
+      "road": "West 8th Street",
+      "neighbourhood": "Greenwich Village",
+      "suburb": "Manhattan",
+      "county": "New York County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "10011",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": {
+      "phone": "+1-323-353-6090",
+      "website": "https://idealglass.org",
+      "check_date": "2026-05-21"
+     },
+     "boundingbox": [
+      "40.7326009",
+      "40.7327009",
+      "-73.9970797",
+      "-73.9969797"
+     ]
+    }
+   ]
+  }
+ }
+}

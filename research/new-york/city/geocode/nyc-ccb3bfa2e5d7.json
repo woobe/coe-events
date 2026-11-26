@@ -1,0 +1,59 @@
+{
+ "name": "Times Square Jay Suites — Meeting Room I",
+ "address": "11 Times Square, New York, NY 10036",
+ "lookups": {
+  "address": {
+   "query": "11 Times Square, New York, NY 10036",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=11%20Times%20Square%2C%20New%20York%2C%20NY%2010036",
+   "response": [
+    {
+     "place_id": 359132134,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 266143341,
+     "lat": "40.7566036",
+     "lon": "-73.9896570",
+     "category": "building",
+     "type": "commercial",
+     "place_rank": 30,
+     "importance": 0.42498149712919636,
+     "addresstype": "building",
+     "name": "11 Times Square",
+     "display_name": "11 Times Square, 11, 8th Avenue, Garment District, Manhattan Community Board 5, Manhattan, New York County, New York, 10036, United States",
+     "address": {
+      "building": "11 Times Square",
+      "house_number": "11",
+      "road": "8th Avenue",
+      "neighbourhood": "Garment District",
+      "suburb": "Manhattan",
+      "county": "New York County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "10036",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": {
+      "building": "commercial",
+      "wikidata": "Q4547779",
+      "wikipedia": "en:Eleven Times Square",
+      "start_date": "2011",
+      "nycdoitt:bin": "1087978"
+     },
+     "boundingbox": [
+      "40.7562416",
+      "40.7570057",
+      "-73.9899775",
+      "-73.9890917"
+     ]
+    }
+   ]
+  },
+  "name": {
+   "query": "Times Square Jay Suites, 11 Times Square, New York, NY 10036",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=Times%20Square%20Jay%20Suites%2C%2011%20Times%20Square%2C%20New%20York%2C%20NY%2010036",
+   "response": []
+  }
+ }
+}

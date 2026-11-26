@@ -1,0 +1,132 @@
+{
+ "name": "Civic Hall — Event Rooms",
+ "address": "28 East 28th Street (Zero Irving), New York, NY 10016",
+ "lookups": {
+  "address": {
+   "query": "28 East 28th Street (Zero Irving), New York, NY 10016",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=28%20East%2028th%20Street%20%28Zero%20Irving%29%2C%20New%20York%2C%20NY%2010016",
+   "response": []
+  },
+  "address-short": {
+   "query": "28 East 28th Street (Zero Irving), New York, NY",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=28%20East%2028th%20Street%20%28Zero%20Irving%29%2C%20New%20York%2C%20NY",
+   "response": []
+  },
+  "name": {
+   "query": "Civic Hall, 28 East 28th Street (Zero Irving), New York, NY 10016",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=Civic%20Hall%2C%2028%20East%2028th%20Street%20%28Zero%20Irving%29%2C%20New%20York%2C%20NY%2010016",
+   "response": []
+  },
+  "clean": {
+   "query": "28 East 28th Street, New York, NY 10016",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=28%20East%2028th%20Street%2C%20New%20York%2C%20NY%2010016",
+   "response": [
+    {
+     "place_id": 403106714,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 847994493,
+     "lat": "40.7438456",
+     "lon": "-73.9855339",
+     "category": "place",
+     "type": "house",
+     "place_rank": 30,
+     "importance": 9.99999999995449e-06,
+     "addresstype": "place",
+     "name": "",
+     "display_name": "28, East 28th Street, Rose Hill, Manhattan Community Board 5, Manhattan, New York County, New York, 10016, United States",
+     "address": {
+      "house_number": "28",
+      "road": "East 28th Street",
+      "neighbourhood": "Rose Hill",
+      "suburb": "Manhattan",
+      "county": "New York County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "10016",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": null,
+     "boundingbox": [
+      "40.7437956",
+      "40.7438956",
+      "-73.9855839",
+      "-73.9854839"
+     ]
+    },
+    {
+     "place_id": 360516139,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "node",
+     "osm_id": 5844591392,
+     "lat": "40.7435468",
+     "lon": "-73.9849740",
+     "category": "place",
+     "type": "house",
+     "place_rank": 30,
+     "importance": 9.175936522464359e-05,
+     "addresstype": "place",
+     "name": "",
+     "display_name": "28, East 28th Street, Rose Hill, Manhattan Community Board 5, Manhattan, New York County, New York, 10016, United States",
+     "address": {
+      "house_number": "28",
+      "road": "East 28th Street",
+      "neighbourhood": "Rose Hill",
+      "suburb": "Manhattan",
+      "county": "New York County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "10016",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": null,
+     "boundingbox": [
+      "40.7434968",
+      "40.7435968",
+      "-73.9850240",
+      "-73.9849240"
+     ]
+    },
+    {
+     "place_id": 415938181,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 5678770,
+     "lat": "40.6476652",
+     "lon": "-73.9512568",
+     "category": "place",
+     "type": "house",
+     "place_rank": 30,
+     "importance": 9.99999999995449e-06,
+     "addresstype": "place",
+     "name": "",
+     "display_name": "28, East 28th Street, Brooklyn Community District 17, Brooklyn, Kings County, New York, 11226, United States",
+     "address": {
+      "house_number": "28",
+      "road": "East 28th Street",
+      "neighbourhood": "Brooklyn Community District 17",
+      "suburb": "Brooklyn",
+      "county": "Kings County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "11226",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": null,
+     "boundingbox": [
+      "40.6476152",
+      "40.6477152",
+      "-73.9513068",
+      "-73.9512068"
+     ]
+    }
+   ]
+  }
+ }
+}

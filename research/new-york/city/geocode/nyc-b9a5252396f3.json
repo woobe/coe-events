@@ -1,0 +1,196 @@
+{
+ "name": "Event Loft 1505 — Studio 1505",
+ "address": "307 West 38th Street, Suite 1505, New York, NY 10018",
+ "lookups": {
+  "address": {
+   "query": "307 West 38th Street, Suite 1505, New York, NY 10018",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=307%20West%2038th%20Street%2C%20Suite%201505%2C%20New%20York%2C%20NY%2010018",
+   "response": []
+  },
+  "address-short": {
+   "query": "307 West 38th Street, Suite 1505, NY",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=307%20West%2038th%20Street%2C%20Suite%201505%2C%20NY",
+   "response": []
+  },
+  "name": {
+   "query": "Event Loft 1505, 307 West 38th Street, Suite 1505, New York, NY 10018",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=Event%20Loft%201505%2C%20307%20West%2038th%20Street%2C%20Suite%201505%2C%20New%20York%2C%20NY%2010018",
+   "response": []
+  },
+  "clean": {
+   "query": "307 West 38th Street, New York, NY 10018",
+   "url": "https://nominatim.openstreetmap.org/search?format=jsonv2&addressdetails=1&extratags=1&limit=4&accept-language=en&q=307%20West%2038th%20Street%2C%20New%20York%2C%20NY%2010018",
+   "response": [
+    {
+     "place_id": 359186107,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "node",
+     "osm_id": 5720999459,
+     "lat": "40.7550594",
+     "lon": "-73.9921483",
+     "category": "shop",
+     "type": "bicycle",
+     "place_rank": 30,
+     "importance": 9.175936522464359e-05,
+     "addresstype": "shop",
+     "name": "City Bicycles NYC",
+     "display_name": "City Bicycles NYC, 307, West 38th Street, Manhattan Community Board 4, Manhattan, New York County, New York, 10018, United States",
+     "address": {
+      "shop": "City Bicycles NYC",
+      "house_number": "307",
+      "road": "West 38th Street",
+      "neighbourhood": "Manhattan Community Board 4",
+      "suburb": "Manhattan",
+      "county": "New York County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "10018",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": {
+      "email": "citybicycles@gmail.com",
+      "phone": "+1 212-563-3373",
+      "website": "https://citybicyclesnyc.com/",
+      "opening_hours": "Mo-Fr 09:00-18:30; Sa 10:00-17:00",
+      "service:bicycle:rental": "yes",
+      "service:bicycle:retail": "yes"
+     },
+     "boundingbox": [
+      "40.7550094",
+      "40.7551094",
+      "-73.9921983",
+      "-73.9920983"
+     ]
+    },
+    {
+     "place_id": 359212632,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "node",
+     "osm_id": 2709629943,
+     "lat": "40.7550430",
+     "lon": "-73.9921577",
+     "category": "place",
+     "type": "house",
+     "place_rank": 30,
+     "importance": 9.175936522464359e-05,
+     "addresstype": "place",
+     "name": "",
+     "display_name": "307, West 38th Street, Manhattan Community Board 4, Manhattan, New York County, New York, 10018, United States",
+     "address": {
+      "house_number": "307",
+      "road": "West 38th Street",
+      "neighbourhood": "Manhattan Community Board 4",
+      "suburb": "Manhattan",
+      "county": "New York County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "10018",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": null,
+     "boundingbox": [
+      "40.7549930",
+      "40.7550930",
+      "-73.9922077",
+      "-73.9921077"
+     ]
+    },
+    {
+     "place_id": 364118250,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "node",
+     "osm_id": 5146338606,
+     "lat": "40.7551842",
+     "lon": "-73.9921496",
+     "category": "shop",
+     "type": "clothes",
+     "place_rank": 30,
+     "importance": 9.175936522464359e-05,
+     "addresstype": "shop",
+     "name": "Anthony Urso",
+     "display_name": "Anthony Urso, 307, West 38th Street, Manhattan Community Board 4, Manhattan, New York County, New York, 10018, United States",
+     "address": {
+      "shop": "Anthony Urso",
+      "house_number": "307",
+      "road": "West 38th Street",
+      "neighbourhood": "Manhattan Community Board 4",
+      "suburb": "Manhattan",
+      "county": "New York County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "10018",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": {
+      "email": "anthonyursoclothing@gmail.com",
+      "website": "http://AnthonyUrso.com",
+      "description": "Culture is our cornerstone, it's where family and heritage meet. Our elevated classics are a celebration of our Italian roots and American craftsmanship.",
+      "opening_hours": "Mo-Fr 08:00-18:00"
+     },
+     "boundingbox": [
+      "40.7551342",
+      "40.7552342",
+      "-73.9921996",
+      "-73.9920996"
+     ]
+    },
+    {
+     "place_id": 430514353,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "node",
+     "osm_id": 14285553017,
+     "lat": "40.7550987",
+     "lon": "-73.9922879",
+     "category": "amenity",
+     "type": "restaurant",
+     "place_rank": 30,
+     "importance": 9.175936522464359e-05,
+     "addresstype": "amenity",
+     "name": "Red Bamboo Kitchen",
+     "display_name": "Red Bamboo Kitchen, 307, West 38th Street, Manhattan Community Board 4, Manhattan, New York County, New York, 10018, United States",
+     "address": {
+      "amenity": "Red Bamboo Kitchen",
+      "house_number": "307",
+      "road": "West 38th Street",
+      "neighbourhood": "Manhattan Community Board 4",
+      "suburb": "Manhattan",
+      "county": "New York County",
+      "city": "New York",
+      "state": "New York",
+      "ISO3166-2-lvl4": "US-NY",
+      "postcode": "10018",
+      "country": "United States",
+      "country_code": "us"
+     },
+     "extratags": {
+      "email": "redbamboonyc@gmail.com",
+      "phone": "+1 212-260-1212",
+      "toilets": "yes",
+      "website": "https://www.redbamboo-nyc.com/",
+      "delivery": "yes",
+      "takeaway": "yes",
+      "diet:vegan": "yes",
+      "website:menu": "https://www.redbamboo-nyc.com/our-menu",
+      "opening_hours": "Mo-Su 12:00-20:00",
+      "indoor_seating": "yes",
+      "outdoor_seating": "no",
+      "contact:facebook": "https://www.facebook.com/Redbamboonyc/",
+      "contact:instagram": "https://www.instagram.com/redbamboonyc/"
+     },
+     "boundingbox": [
+      "40.7550487",
+      "40.7551487",
+      "-73.9923379",
+      "-73.9922379"
+     ]
+    }
+   ]
+  }
+ }
+}
