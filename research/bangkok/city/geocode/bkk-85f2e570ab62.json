@@ -1,0 +1,157 @@
+{
+ "venue_id": "bkk-85f2e570ab62",
+ "checked_on": "2026-11-26",
+ "provider": "OpenStreetMap Nominatim",
+ "attempts": [
+  {
+   "kind": "address",
+   "query": "199 Sukhumvit Soi 22, Khlong Tan, Khlong Toei, Bangkok 10110, Thailand",
+   "url": "https://nominatim.openstreetmap.org/search?q=199+Sukhumvit+Soi+22%2C+Khlong+Tan%2C+Khlong+Toei%2C+Bangkok+10110%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+   "status": "ok",
+   "results": [
+    {
+     "place_id": 258452659,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 1230362491,
+     "lat": "13.7302641",
+     "lon": "100.5657084",
+     "category": "tourism",
+     "type": "hotel",
+     "place_rank": 30,
+     "importance": 0.1507975276546128,
+     "addresstype": "tourism",
+     "name": "Bangkok Marriott Marquis Queen’s Park",
+     "display_name": "Bangkok Marriott Marquis Queen’s Park, 199, Soi Sukhumvit 22, Sukhumvit, Khlong Toei Subdistrict, Khlong Toei District, Bangkok, 10110, Thailand",
+     "address": {
+      "tourism": "Bangkok Marriott Marquis Queen’s Park",
+      "house_number": "199",
+      "road": "Soi Sukhumvit 22",
+      "neighbourhood": "Sukhumvit",
+      "quarter": "Khlong Toei Subdistrict",
+      "suburb": "Khlong Toei District",
+      "city": "Bangkok",
+      "ISO3166-2-lvl4": "TH-10",
+      "postcode": "10110",
+      "country": "Thailand",
+      "country_code": "th"
+     },
+     "boundingbox": [
+      "13.7299275",
+      "13.7307417",
+      "100.5652500",
+      "100.5661638"
+     ]
+    },
+    {
+     "place_id": 258301580,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "node",
+     "osm_id": 7949899389,
+     "lat": "13.7301777",
+     "lon": "100.5654394",
+     "category": "leisure",
+     "type": "pitch",
+     "place_rank": 30,
+     "importance": 7.662546730750007e-05,
+     "addresstype": "leisure",
+     "name": "",
+     "display_name": "199, Soi Sukhumvit 22, Sukhumvit, Khlong Toei Subdistrict, Khlong Toei District, Bangkok, 10110, Thailand",
+     "address": {
+      "house_number": "199",
+      "road": "Soi Sukhumvit 22",
+      "neighbourhood": "Sukhumvit",
+      "quarter": "Khlong Toei Subdistrict",
+      "suburb": "Khlong Toei District",
+      "city": "Bangkok",
+      "ISO3166-2-lvl4": "TH-10",
+      "postcode": "10110",
+      "country": "Thailand",
+      "country_code": "th"
+     },
+     "boundingbox": [
+      "13.7301277",
+      "13.7302277",
+      "100.5653894",
+      "100.5654894"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "name",
+   "query": "Bangkok Marriott Marquis Bangkok",
+   "url": "https://nominatim.openstreetmap.org/search?q=Bangkok+Marriott+Marquis+Bangkok&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+   "status": "ok",
+   "results": [
+    {
+     "place_id": 257134388,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 1230362491,
+     "lat": "13.7302641",
+     "lon": "100.5657084",
+     "category": "tourism",
+     "type": "hotel",
+     "place_rank": 30,
+     "importance": 0.1507975276546128,
+     "addresstype": "tourism",
+     "name": "Bangkok Marriott Marquis Queen’s Park",
+     "display_name": "Bangkok Marriott Marquis Queen’s Park, 199, Soi Sukhumvit 22, Sukhumvit, Khlong Toei Subdistrict, Khlong Toei District, Bangkok, 10110, Thailand",
+     "address": {
+      "tourism": "Bangkok Marriott Marquis Queen’s Park",
+      "house_number": "199",
+      "road": "Soi Sukhumvit 22",
+      "neighbourhood": "Sukhumvit",
+      "quarter": "Khlong Toei Subdistrict",
+      "suburb": "Khlong Toei District",
+      "city": "Bangkok",
+      "ISO3166-2-lvl4": "TH-10",
+      "postcode": "10110",
+      "country": "Thailand",
+      "country_code": "th"
+     },
+     "boundingbox": [
+      "13.7299275",
+      "13.7307417",
+      "100.5652500",
+      "100.5661638"
+     ]
+    },
+    {
+     "place_id": 257927568,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "node",
+     "osm_id": 11736549980,
+     "lat": "13.7300332",
+     "lon": "100.5657734",
+     "category": "amenity",
+     "type": "restaurant",
+     "place_rank": 30,
+     "importance": 7.662546730750007e-05,
+     "addresstype": "amenity",
+     "name": "Goji Kitchen",
+     "display_name": "Goji Kitchen, Soi Sukhumvit 22, Sukhumvit, Khlong Toei Subdistrict, Khlong Toei District, Bangkok, 10110, Thailand",
+     "address": {
+      "amenity": "Goji Kitchen",
+      "road": "Soi Sukhumvit 22",
+      "neighbourhood": "Sukhumvit",
+      "quarter": "Khlong Toei Subdistrict",
+      "suburb": "Khlong Toei District",
+      "city": "Bangkok",
+      "ISO3166-2-lvl4": "TH-10",
+      "postcode": "10110",
+      "country": "Thailand",
+      "country_code": "th"
+     },
+     "boundingbox": [
+      "13.7299832",
+      "13.7300832",
+      "100.5657234",
+      "100.5658234"
+     ]
+    }
+   ]
+  }
+ ]
+}

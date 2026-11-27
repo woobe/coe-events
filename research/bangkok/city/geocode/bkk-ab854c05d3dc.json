@@ -1,0 +1,117 @@
+{
+ "venue_id": "bkk-ab854c05d3dc",
+ "checked_on": "2026-11-26",
+ "provider": "OpenStreetMap Nominatim",
+ "attempts": [
+  {
+   "kind": "address",
+   "query": "4 Naradhiwas Rajanagarindra Road, Yan Nawa, Sathon, Bangkok 10120, Thailand",
+   "url": "https://nominatim.openstreetmap.org/search?q=4+Naradhiwas+Rajanagarindra+Road%2C+Yan+Nawa%2C+Sathon%2C+Bangkok+10120%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+   "status": "ok",
+   "results": [
+    {
+     "place_id": 381128915,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 39727796,
+     "lat": "13.7165641",
+     "lon": "100.5327225",
+     "category": "highway",
+     "type": "primary",
+     "place_rank": 26,
+     "importance": 0.2636224323479305,
+     "addresstype": "primary",
+     "name": "Naradhiwas Rajanagarindra Road",
+     "display_name": "Naradhiwas Rajanagarindra Road, Saint Louis 3 Community, Yan Nawa Subdistrict, Sathon District, Bangkok, 10120, Thailand",
+     "address": {
+      "road": "Naradhiwas Rajanagarindra Road",
+      "neighbourhood": "Saint Louis 3 Community",
+      "quarter": "Yan Nawa Subdistrict",
+      "suburb": "Sathon District",
+      "city": "Bangkok",
+      "ISO3166-2-lvl4": "TH-10",
+      "postcode": "10120",
+      "country": "Thailand",
+      "country_code": "th"
+     },
+     "boundingbox": [
+      "13.7117440",
+      "13.7213874",
+      "100.5303049",
+      "100.5351458"
+     ]
+    },
+    {
+     "place_id": 381130378,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 859521011,
+     "lat": "13.7038619",
+     "lon": "100.5391945",
+     "category": "highway",
+     "type": "primary",
+     "place_rank": 26,
+     "importance": 0.2636224323479305,
+     "addresstype": "primary",
+     "name": "Naradhiwas Rajanagarindra Road",
+     "display_name": "Naradhiwas Rajanagarindra Road, Chong Nonsi Subdistrict, Yan Nawa District, Bangkok, 10120, Thailand",
+     "address": {
+      "road": "Naradhiwas Rajanagarindra Road",
+      "quarter": "Chong Nonsi Subdistrict",
+      "suburb": "Yan Nawa District",
+      "city": "Bangkok",
+      "ISO3166-2-lvl4": "TH-10",
+      "postcode": "10120",
+      "country": "Thailand",
+      "country_code": "th"
+     },
+     "boundingbox": [
+      "13.7007933",
+      "13.7071059",
+      "100.5374695",
+      "100.5412077"
+     ]
+    },
+    {
+     "place_id": 255769724,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 462071024,
+     "lat": "13.7218174",
+     "lon": "100.5300801",
+     "category": "highway",
+     "type": "secondary",
+     "place_rank": 26,
+     "importance": 0.2636224323479305,
+     "addresstype": "secondary",
+     "name": "Naradhiwas Rajanagarindra Road",
+     "display_name": "Naradhiwas Rajanagarindra Road, Lalai Sap, Si Lom Subdistrict, Bang Rak District, Bangkok, 10500, Thailand",
+     "address": {
+      "road": "Naradhiwas Rajanagarindra Road",
+      "neighbourhood": "Lalai Sap",
+      "quarter": "Si Lom Subdistrict",
+      "suburb": "Bang Rak District",
+      "city": "Bangkok",
+      "ISO3166-2-lvl4": "TH-10",
+      "postcode": "10500",
+      "country": "Thailand",
+      "country_code": "th"
+     },
+     "boundingbox": [
+      "13.7217191",
+      "13.7219157",
+      "100.5300309",
+      "100.5301293"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "name",
+   "query": "Sathorn Hub Bangkok",
+   "url": "https://nominatim.openstreetmap.org/search?q=Sathorn+Hub+Bangkok&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+   "status": "none",
+   "results": []
+  }
+ ]
+}

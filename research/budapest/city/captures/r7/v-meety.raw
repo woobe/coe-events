@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <title></title>
+	<meta charset="utf-8">
+	<base href="https://meety.hu">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--    <link rel="icon" type="image/png" href="/public/img/favicon/favicon.ico" />-->
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+    <!-- <link rel="manifest" href="/img/favicon/manifest.json"> -->
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+                        <meta name="robots" content="index, follow">
+    	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PJ62PWF');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XT2537JSC2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-XT2537JSC2');
+</script> <script> var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || {widgetcode:"3c7d3a4e901042ce521795e6fd978c6603a8f2214e45c81da0ab85e1b3d90450", values:{},ready:function(){}}; var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true; s.src="https://salesiq.zoho.eu/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);d.write("<div id='zsiqwidget'></div>"); </script> <!--<script src="https://cdn-eu.pagesense.io/js/meetyhu/77104f7262cc49a0998bd45ea7c86f4a.js" type="text/plain" data-cookiecategory="analytics"></script>-->
+
+<script src="https://cdn-eu.pagesense.io/js/meetyhu/77104f7262cc49a0998bd45ea7c86f4a.js"></script>
+
+<!--<script type="text/plain" data-cookiecategory="analytics">var w=window;var p = w.location.protocol;if(p.indexOf("http") < 0){p = "http"+":";}var d = document;var f = d.getElementsByTagName('script')[0],s = d.createElement('script');s.type = 'text/javascript'; s.async = false; if (s.readyState){s.onreadystatechange = function(){if (s.readyState=="loaded"||s.readyState == "complete"){s.onreadystatechange = null;try{loadwaprops('3zfee29a3dedbc10bcc8026d731ce41e26','3z20fedf163f6ca8b0cfe2be7286235aff','3zbd3709e15f635776c67c85e5f6cf0f3c422908a31f2217bbd983189267631b4c','3zc365a55a9f8286cd3426eeb63a849658',0.0);}catch(e){}}};}else {s.onload = function(){try{loadwaprops('3zfee29a3dedbc10bcc8026d731ce41e26','3z20fedf163f6ca8b0cfe2be7286235aff','3zbd3709e15f635776c67c85e5f6cf0f3c422908a31f2217bbd983189267631b4c','3zc365a55a9f8286cd3426eeb63a849658',0.0);}catch(e){}};};s.src =p+'//mh.zoho.eu/hub/js/WebsiteAutomation.js'; f.parentNode.insertBefore(s, f);</script>-->
+
+<script type="text/javascript">(function(w,s){var e=document.createElement("script");e.type="text/javascript";e.async=true;e.src="https://cdn-eu.pagesense.io/js/meetyhu/77104f7262cc49a0998bd45ea7c86f4a.js";var x=document.getElementsByTagName("script")[0];x.parentNode.insertBefore(e,x);})(window,"script");</script>
+
+<script>var
+ w=window;var p = w.location.protocol;if(p.indexOf("http") < 0){p = 
+"http"+":";}var d = document;var f = 
+d.getElementsByTagName('script')[0],s = d.createElement('script');s.type
+ = 'text/javascript'; s.async = false; if 
+(s.readyState){s.onreadystatechange = function(){if 
+(s.readyState=="loaded"||s.readyState == 
+"complete"){s.onreadystatechange = 
+null;try{loadwaprops("3zfee29a3dedbc10bcc8026d731ce41e26","3z20fedf163f6ca8b0cfe2be7286235aff","3zbd3709e15f635776c67c85e5f6cf0f3c422908a31f2217bbd983189267631b4c","3zc365a55a9f8286cd3426eeb63a849658","0.0");}catch(e){}}};}else
+ {s.onload = 
+function(){try{loadwaprops("3zfee29a3dedbc10bcc8026d731ce41e26","3z20fedf163f6ca8b0cfe2be7286235aff","3zbd3709e15f635776c67c85e5f6cf0f3c422908a31f2217bbd983189267631b4c","3zc365a55a9f8286cd3426eeb63a849658","0.0");}catch(e){}};};s.src
+ 
+=p+"//ma.zoho.eu/hub/js/WebsiteAutomation.js";f.parentNode.insertBefore(s,
+ f);</script> <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '535359572096682');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=535359572096682&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->	    	<link media="all" type="text/css" rel="stylesheet" href="css/jquery-ui.min.css?1712231123">
+<link media="all" type="text/css" rel="stylesheet" href="css/common.min.css?1712231123">
+<link media="all" type="text/css" rel="stylesheet" href="plugins/font-awesome-4.7.0/css/font-awesome.min.css">
+<link media="all" type="text/css" rel="stylesheet" href="plugins/line-awesome/css/line-awesome.min.css">
+<link media="all" type="text/css" rel="stylesheet" href="css/bootstrap.min.css?1712231123">
+<link media="all" type="text/css" rel="stylesheet" href="css/project-default.css?1712231123">
+<link media="all" type="text/css" rel="stylesheet" href="css/nova-engine.css?1712231123">
+<link media="all" type="text/css" rel="stylesheet" href="css/lightbox.css?1712231123">
+<link media="all" type="text/css" rel="stylesheet" href="plugins/datetimepicker/jquery.datetimepicker.css">
+<link media="all" type="text/css" rel="stylesheet" href="/css/calendar.css">
+<link media="all" type="text/css" rel="stylesheet" href="css/admin/select2.min.css?1712231122">
+<script src="js/jquery-1.9.1.min.js?1712231129"></script>
+<script defer="defer" src="js/jquery-ui.min.js?1712231132"></script>
+<script defer="defer" src="js/common.js?1712231140"></script>
+<script defer="defer" src="js/bootstrap.min.js?1712231126"></script>
+<script defer="defer" src="js/shop/shop.js?1712231126"></script>
+<script defer="defer" src="js/nova-engine.js?1712231129"></script>
+<script src="plugins/datetimepicker/jquery.datetimepicker.js"></script>
+<script src="/js/calendar.js"></script>
+<script src="/js/moment.js"></script>
+<script src="/js/common.js"></script>
+<script src="js/select2.min.js?1712231134"></script>
+	        <!--
+    link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#317EFB"/>
+    <script async  src="https://cdn.rawgit.com/GoogleChrome/pwacompat/v2.0.1/pwacompat.min.js"></script>
+    -->
+</head>
+
+
+<script>
+    /*
+    self.addEventListener('fetch', function(event) {
+        onsole.log('[Service Worker] Fetched resource '+e.request.url);
+    });
+
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js', {
+            scope: '/'
+        }).then(function (registration) {
+            console.log('Service worker registration succeeded:', registration);
+        }, function (error) {
+            console.log('Service worker registration failed:', error);
+        });
+
+        window.addEventListener('beforeinstallprompt', (e) => {
+
+        });
+    }
+    */
+</script>
+
+<body>
+<div id="nova-container">
+    <script>
+        var calendar = "";
+    </script>
+    <div class="header-placeholder"></div>
+
+<header role="banner">
+    <section id="top-header">
+        <div class="container" style="position:relative;">
+            <section class="header--left">
+                <a href="/" class="logo"></a>
+            </section>
+            <section class="header-right">
+                <section class="header--mobile-right">
+                                        <button type="button" class="navbar-toggle"
+                            onClick="{new $.NovaMenu({ actionButton: $(this), actionMenu: '.mobile-menu' }).Open()}"
+                            aria-expanded="false"
+                            data-status="close"
+                    >
+                        <div class="hamburger hamburger--elastic">
+                            <div class="hamburger-box">
+                                <div class="hamburger-inner"></div>
+                            </div>
+                        </div>
+                    </button>
+                    <div class="header--mobile-dropdown">
+                        <!--                    -->                    </div>
+                </section>
+                <section class="header--right">
+                    <div class="search-block">
+                        <div class="search-block">
+    <div id="desktop-view">
+        <div class="top-kerdese-van">
+            <a href="/kapcsolat">Kapcsolat</a>
+        </div>
+    </div>
+</div>
+
+<!--<input type="search" name="search" placeholder="Keresés" />
+<button type="button" name="search"><i class="fa fa-search" aria-hidden="true"></i>
+</button>-->                    </div>
+                        <div class="loginblock">
+        <a href="/login" class="headerbutton"><i class="la la-user"></i>Belépés</a>
+    </div>
+
+
+
+
+                    <div class="langblock">
+    <select name="currency" id="currency">
+        <option selected="selected">HUF (Ft)</option>
+<!--        <option>EUR ()</option>-->
+<!--        <option>USD ()</option>-->
+<!--        <option>GBP ()</option>-->
+    </select>
+
+    <select name="language" id="language">
+        <option selected="selected">HU</option>
+<!--        <option>EN</option>-->
+    </select>
+</div>
+
+<script>
+    $( function() {
+        $( "#currency" ).selectmenu({
+            width: 85
+        });
+
+        $( "#language" ).selectmenu({
+            width: 38
+        });
+    } );
+</script>                </section>
+
+            </section>
+        </div>
+    </section>
+    <section id="top-menu">
+        <div class="container" style="position:relative;">
+            <nav class="navigation">
+<ul class="navigation-menu">
+    <li>
+            <a href="foglalas">Foglalás</a></li><li>
+            <a href="miert-bereljen-targyalot">Miért béreljen tárgyalót?</a></li><li>
+            <a href="targyalo-kiadas-elonyei">Tárgyaló kiadás előnyei</a></li><li>
+            <a href="szolgaltatasaink-2">Szolgáltatásaink</a></li><li>
+            <a href="cikkek-interjuk-2">Cikkek, interjúk</a></li></ul>
+</nav>
+        </div>
+    </section>
+</header>
+
+<script>
+    var wto;
+    var wto2;
+    var oldValue = "";
+    $(".search-input").keyup(function () {
+        var val = $(this).val();
+        clearTimeout(wto);
+
+        if(val.length > 2) {
+            if (val != oldValue) {
+                var $input = $(this);
+                wto = setTimeout(function () {
+                    oldValue = val;
+                    search.doSearch($input.val());
+                    $(".search-block-result").show();
+                }, 500);
+            }
+        } else {
+            $(".search-block-result").hide();
+        }
+
+
+    });
+    $(".search-block-result").mouseleave(function () {
+        clearTimeout(wto2);
+        var $sr = $(this);
+        wto2 = setTimeout(function () {
+            $sr.hide();
+        }, 500);
+    }).mouseenter(function () {
+        clearTimeout(wto2);
+    });
+
+    $(function () {
+        $('.headerbutton').popover({
+            html: true,
+            placement: 'bottom'
+        })
+    })
+
+    $(function() {
+        $("[data-toggle='true']").on('click', function() {
+            $(".collapse-table").slideToggle();
+        });
+    })
+</script>    <main role="main" class="content">
+        <section class="mobile-menu nova-menu" data-status="close">
+    <div class="top">
+        <ul>
+                            <li><a href="/login"><i class="la la-user"></i> Belépés</a></li>
+                    </ul>
+    </div>
+
+    <div class="mobile-menu-productcategory">
+        
+
+        <div class="mobile-menu-navigation">
+            <ul>
+                <li class=""><a href="foglalas">Foglalás</a></li><li class=""><a href="miert-bereljen-targyalot">Miért béreljen tárgyalót?</a></li><li class=""><a href="targyalo-kiadas-elonyei">Tárgyaló kiadás előnyei</a></li><li class=""><a href="szolgaltatasaink-2">Szolgáltatásaink</a></li><li class=""><a href="cikkek-interjuk-2">Cikkek, interjúk</a></li><li class=""><a href="kapcsolat">Kapcsolat</a></li>            </ul>
+        </div>
+    </div>
+    <div class="bottom">
+        <section id="currency">
+            <header>
+                <i class="fa fa-money" aria-hidden="true"></i> Pénznem            </header>
+            <ul>
+                <li class="active">HUF (Ft)</li>
+                <li>EUR (Eur)</li>
+            </ul>
+        </section>
+
+        <section id="language">
+            <header>
+                <i class="fa fa-globe" aria-hidden="true"></i> Nyelv választás            </header>
+            <ul>
+                <li class="active">HU</li>
+                <li>EN</li>
+            </ul>
+        </section>
+    </div>
+</section>            <div class="single-page container">
+                <section id="breadcrumb">
+	<ol class="breadcrumb">
+		<li><a href="/">Főoldal</a></li>
+		<li class="active"><a href="/targyalo/wanatka-terem">Wanatka terem</a></li>	</ol>
+</section>                <div class="mymeety-front-claander"> <!--Itt volt egy container osztály-->
+    <form autocomplete="off" class="form-horizontal meeting-room-view" action="javascript:;" id="reserveForm" role="form">
+        <input type="hidden" id="id" name="id" value="238">
+        <div class="meety-meeting-firstbox" id="meety-foglalo">
+            <div class="meeting-img">
+                <div class="image-container">
+                                            <a href="../public/uploads/images/meetingrooms/238/img20231130112857-0.jpg" data-lightbox="roadtrip" data-title="" alt="">
+                            <img src="../public/uploads/images/meetingrooms/238/img20231130112857-0.jpg" class="img-responsive">
+
+                            <div class="zoom">
+                                további képek                                <i class="la la-search-plus"></i>
+                            </div>
+                        </a>
+                    
+                </div>
+
+                                    <div style="display: none;">
+                                                    <a href="../public/uploads/images/meetingrooms/238/lionsclubnagyterem2-1.jpg" data-lightbox="roadtrip" data-title="" alt=""></a>
+                                                    <a href="../public/uploads/images/meetingrooms/238/lionclubnagyterem3-2.jpg" data-lightbox="roadtrip" data-title="" alt=""></a>
+                                                    <a href="../public/uploads/images/meetingrooms/238/lionsclubnagyterem4-3.jpg" data-lightbox="roadtrip" data-title="" alt=""></a>
+                                                    <a href="../public/uploads/images/meetingrooms/238/img20231130113242-4.jpg" data-lightbox="roadtrip" data-title="" alt=""></a>
+                                            </div>
+                            </div>
+            <div class="meeting-cart">
+                <div class="booking-box">
+                    <h1>Wanatka terem</h1>
+                    <p class="address">1065 Budapest, Podmaniczky utca </p>
+                    <div class="price">
+                        <span>15 000 </span>Ft/óra                        <span>90 000 </span>Ft/nap                    </div>
+                    <div class="price" style="margin-top: 0px!important; background-color: #BC2CDB;">
+                        <strong>Nettó árak.</strong>
+                        
+                                                                                            Minimális foglalási idő: 2 óra                                <br>
+                                                                                                                        <strong>6 óra időtartamtól a napidíj lép érvénybe</strong>
+                                <!--                        <strong>--><!-- órás foglalás felett a napidíj lép érvénybe</strong>-->
+                                                                        </div>
+                    <div class="booking-box-container">
+                        <h2>Foglalás indítása:</h2>
+                        <div class="form-group" id="from">
+                            <label for="usr">Kezdés:</label>
+                            <input readonly type="text" class="form-control datetimepicker calendar" id="startTime" name="startTime" value="">
+                        </div>
+                        <div class="form-group" id="until">
+                            <label for="usr">Befejezés:</label>
+                            <input readonly type="text" class="form-control datetimepicker calendar" id="endTime" name="endTime" value="">
+                        </div>
+                        <div class="form-group">
+                            <label for="sel1">Résztvevők:</label>
+                            <select class="form-control" id="slot" name="slot">
+                                                                    <option value="1" >1fő</option>
+                                                                        <option value="2" >2fő</option>
+                                                                        <option value="3" >3fő</option>
+                                                                        <option value="4" >4fő</option>
+                                                                        <option value="5" >5fő</option>
+                                                                        <option value="6" >6fő</option>
+                                                                        <option value="7" >7fő</option>
+                                                                        <option value="8" >8fő</option>
+                                                                        <option value="9" >9fő</option>
+                                                                        <option value="10" >10fő</option>
+                                                                        <option value="11" >11fő</option>
+                                                                        <option value="12" >12fő</option>
+                                                                        <option value="13" >13fő</option>
+                                                                        <option value="14" >14fő</option>
+                                                                        <option value="15" >15fő</option>
+                                                                        <option value="16" >16fő</option>
+                                                                        <option value="17" >17fő</option>
+                                                                        <option value="18" >18fő</option>
+                                                                        <option value="19" >19fő</option>
+                                                                        <option value="20" >20fő</option>
+                                                                        <option value="21" >21fő</option>
+                                                                        <option value="22" >22fő</option>
+                                                                        <option value="23" >23fő</option>
+                                                                        <option value="24" >24fő</option>
+                                                                        <option value="25" >25fő</option>
+                                                                        <option value="26" >26fő</option>
+                                                                        <option value="27" >27fő</option>
+                                                                        <option value="28" >28fő</option>
+                                                                        <option value="29" >29fő</option>
+                                                                        <option value="30" >30fő</option>
+                                                                        <option value="31" >31fő</option>
+                                                                        <option value="32" >32fő</option>
+                                                                        <option value="33" >33fő</option>
+                                                                        <option value="34" >34fő</option>
+                                                                        <option value="35" >35fő</option>
+                                                                        <option value="36" >36fő</option>
+                                                                        <option value="37" >37fő</option>
+                                                                        <option value="38" >38fő</option>
+                                                                        <option value="39" >39fő</option>
+                                                                        <option value="40" >40fő</option>
+                                                                        <option value="41" >41fő</option>
+                                                                        <option value="42" >42fő</option>
+                                                                        <option value="43" >43fő</option>
+                                                                        <option value="44" >44fő</option>
+                                                                        <option value="45" >45fő</option>
+                                                                        <option value="46" >46fő</option>
+                                                                        <option value="47" >47fő</option>
+                                                                        <option value="48" >48fő</option>
+                                                                        <option value="49" >49fő</option>
+                                                                        <option value="50" >50fő</option>
+                                                                </select>
+                        </div>
+                        <div class="total-container">
+                                                            <div id="response" class="error" style="display: none;"></div>
+                                                        <div class="total-row" id="total-row" style="display: none">
+                                <p>
+                                    <span id="price-per-hour" class="price-per-hour">0</span> Ft/                                    <span id="time" class="time">óra</span>
+                                    x <span id="hour" class="hour">0</span>
+                                </p>
+                                <p><span id="total-price-per-hour" class="total-price-per-hour">0</span> Ft</p>
+                            </div>
+
+                            <div class="total-row total" id="total-row" style="display: none">
+                                <p>Összesen: <span class="net_text">(nettó)</span></p>
+                                <p><span id="total-price" class="total-price">0</span> Ft</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="booking-box-footer">
+                        <button id="reserve-button" class="button" onclick="meetingroom.reserve('wanatka-terem')">
+                            Foglalom                        </button>
+                    </div>
+
+                </div>
+                <section class="helpbox">
+                    <div>
+                        <div class="helpbox-header">SEGÍTHETÜNK?</div>
+                        <div class="helpbox-content">
+                            Kérdése van a tárgyalóval kapcsolatban, esetleg más, hasonló tárgyalót keres?                        </div>
+                    </div>
+                    <div>
+                        <div class="helpbox-footer">
+                            <p><a href="tel:06 1 800-1727">
+                                    <i class="fa fa-phone"
+                                       aria-hidden="true"></i> 06 1 800-1727</a></p>
+                            <p><a href="mailto:ugyfelszolgalat@meety.hu" style="text-transform: lowercase;">
+                                    <i class="fa fa-envelope"
+                                       aria-hidden="true"></i> ugyfelszolgalat@meety.hu</a>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </div>
+        <div class="meety-meeting-secondbox">
+            <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item active"><a class="nav-link" data-toggle="tab" href="#home">Bővebb információ</a></li>
+                <li class="nav-item"><a id="tab-calendar" class="nav-link" data-toggle="tab" href="#timedate">Foglalási naptár</a></li>
+            </ul>
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div id="home" class="container tab-pane active">
+                    <div class="meeting-room-properties-inline">
+                        <i class="la la-user"></i> Férőhely: 1-50                        <i class="la la-arrows"></i> Alapterület: 55 m<sup>2</sup>
+                    </div>
+
+                    <div class="desc-container">
+                        <div class="openings">
+                            <h2>Foglalható: </h2>
+                            <p>H-V: 08:00-20:00</p>
+                        </div>
+                        <p class="desc">40-50 fős tárgyaló, oktató és rendezvény terem a belvárosban, a Nyugati pályaudvar és az Oktogon között.</p>
+                    </div>
+
+                    <div class="row meeting-room-properties">
+                        <div class="row">                            <div class="col-xs-12 col-lg-6">
+                                <h2>Szolgáltatások</h2>
+                                <ul>
+                                                                            <li>
+                                            Projektor vagy TV:alapárban                                        </li>
+                                                                            <li>
+                                            Wifi/Internet:alapárban                                        </li>
+                                                                    </ul>
+                            </div>
+                                                        <div class="col-xs-12 col-lg-6">
+                                <h2>Étel, ital</h2>
+                                <ul>
+                                                                            <li>
+                                            Ivóvíz díjmentesen                                        </li>
+                                                                            <li>
+                                            Ásványvíz:fizetős                                        </li>
+                                                                            <li>
+                                            Kávé:fizetős                                        </li>
+                                                                            <li>
+                                            Tea:fizetős                                        </li>
+                                                                            <li>
+                                            Üdítőitalok:fizetős                                        </li>
+                                                                            <li>
+                                            Aprósütemény, harapnivaló:fizetős                                        </li>
+                                                                            <li>
+                                            Kávészünet csomagok rendelhetők                                        </li>
+                                                                            <li>
+                                            Ebéd/vacsora előre rendelhető                                        </li>
+                                                                            <li>
+                                            Saját étel/ital bevihető:alapárban                                        </li>
+                                                                            <li>
+                                            Külső catering szolgáltatás bevihető:alapárban                                        </li>
+                                                                    </ul>
+                            </div>
+                            </div><div class="row">                            <div class="col-xs-12 col-lg-6">
+                                <h2>Környezet, épület, kialakítás</h2>
+                                <ul>
+                                                                            <li>
+                                            Lift                                        </li>
+                                                                            <li>
+                                            Természetes fény/ablak                                        </li>
+                                                                            <li>
+                                            Akadálymentes                                        </li>
+                                                                    </ul>
+                            </div>
+                                                        <div class="col-xs-12 col-lg-6">
+                                <h2>Közlekedés, parkolás</h2>
+                                <ul>
+                                                                            <li>
+                                            Fizetős parkolás az utcán                                        </li>
+                                                                            <li>
+                                            Metró közelében (400m-en belül)                                        </li>
+                                                                    </ul>
+                            </div>
+                            </div><div class="row">                            <div class="col-xs-12 col-lg-6">
+                                <h2>Foglalási mód</h2>
+                                <ul>
+                                                                            <li>
+                                            Időpont egyeztetés szükséges                                        </li>
+                                                                    </ul>
+                            </div>
+                            </div>                    </div>
+
+                    <h2>Megközelíthetőség</h2>
+                    <p class="desc">Autóval: Nyugati tér, Oktogon, parkolási lehetőség a közeli Westendben.<br />
+Tömegközlekedéssel: M3, M1, 4-6-os villamos</p>
+
+                    <h2>Bővebb leírás</h2>
+                    <p class="desc">Tágas terem a Podmaniczky utcában. A terem kapacitása: széksorosan 50 fő, U alakban 40 fő, tárgyalóasztalos elrendezésben 25 fő. A nagy teremhez egy hall/váró is tartozik. Catering szolgáltatások egyeztetés alapján, emellett étkezési lehetőség nívós éttermekben 50 méteren belül.</p>
+
+                    <h2>Foglalási feltételek</h2>
+                    <p class="desc">Időpontegyeztetés a FOGLALÁS gombon keresztül, vagy e-mailben az ugyfelszolgalat@meety.hu címen. Ha segítségre van szüksége, hívja a+36 (1) 800-1727-os számot! <br />
+<br />
+A terem társasházban található, dohányzási lehetőség csak az utcán. A helyiség berendezése egyeztetés alapján.</p>
+                                            <h2>Lemondási feltételek</h2>
+                        <p class="desc">72 órával az esemény előttig díjmentesen lemondható. 72 órán belüli lemondás esetén a teljes bérleti díjat felszámoljuk.</p>
+                                    </div>
+                <div id="timedate" class="container tab-pane fade">
+                    <div class="timedatefirst">
+                        <p>
+                                                                                                                                    Minimális foglalási idő: 2 óra                                    <br>
+                                                                                        Az alábbi naptáron kiválaszthatja a kívánt időpontot, a még szabad időpontok közül.                        </p>
+                        <div class="calandhelp">
+                            <div class="calendar-step1">
+                                <span class="helpcolor"></span><span>Szabad</span>
+                            </div>
+                            <div class="calendar-step2">
+                                <span class="helpcolor"></span><span>Foglalt</span>
+                            </div>
+                            <div class="calendar-step3">
+                                <span class="helpcolor"></span><span>Zárva</span>
+                            </div>
+                            <div class="calendar-step4">
+                                <span class="helpcolor"></span><span>Aktuálisan kiválasztott időintervallum</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="calendarBorder">
+                        <!-- Modal -->
+<div class="modal fade" id="basketPopup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="modal-body-header">
+                    <strong id="meeting_room_successful">
+                        Sikeres időpont választás<br>
+                        <label id="meeting_room_successful_text">Ellenőrizze a megadott adatokat, véglegesítse a létszámot és a "Foglalom" gombra kattintva adja le foglalását.</label>
+                    </strong>
+                    <strong id="meeting_room_error">
+                        Sikertelen időpont választás! Minimum idő:<br>
+                        <label id="meeting_room_error_text"></label>
+                    </strong>
+                    <strong id="meeting_room_popup">
+                        Kérjük az alábbi naptárból válassza ki a kívánt szabad időpontot.                        <span class="text_desktop_popup">
+                            Kérjük, egérrel húzással jelölje ki a kívánt időtartamot.                        </span>
+                        <span class="text_mobil_popup">
+                            Kérjük tartsa a kezdeti időpont celláját 1 másodpercig lenyomva és húzással jelölje ki a kívánt időpontot!                        </span>
+                    </strong>
+                    <i onClick="$('#basketPopup').modal('hide');" class="fa fa-times-circle" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="modal-footer" id="calsusbutton">
+                <button type="button" class="button" onclick="calsusbutton()">Foglalás véglegesítése</button>
+            </div>
+            <div class="modal-footer" id="calerbutton">
+                <button type="button" class="button" onclick="calerbutton()">Foglalás javítása</button>
+            </div>
+            <div class="modal-footer" id="calpopbutton">
+                <button type="button" class="button" onclick="caltovabbbutton()">Tovább</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function calerbutton(){
+        $('#basketPopup').modal('hide');
+        if ($(window).width() < 800) {
+            $('html,body').animate({scrollTop: $('.calendarBorder').offset().top-150}, 'slow');
+        }
+    }
+    function calsusbutton() {
+        $('#basketPopup').modal('hide');
+        $('html,body').animate({ scrollTop: $("#meety-foglalo").offset().top}, 'slow');
+    }
+    function caltovabbbutton() {
+        $('#basketPopup').modal('hide');
+        $('html,body').animate({ scrollTop: $(".calendarBorder").offset().top-150}, 'slow');
+    }
+</script>                        <div id='calendar'></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+</form>
+</div>
+<div class="container">
+            <h2>Hasonló tárgyalók</h2>
+            <div class="meeting-room-conatiner">
+                    <div class="meeting-room-block">
+                <a href="targyalo/nagy-targyalo">
+                    <img src="../public/uploads/images/meetingrooms/275/389a8424nagy-targyalo-3.jpg" class="img-responsive">
+                    <div class="meeting-room-desc">
+                        <h3>Nagy tárgyaló</h3>
+                        <p class="cim">1066 Budapest, Weiner Leó  utca </p>
+                        <p class="ferohely">
+                            <i class="la la-user"></i>
+                            Férőhely: 1-8                        </p>
+
+                        <p class="dijazas">
+                            <span class="number">5 000 </span>Ft/óra <br/>
+                            <span class="number">30 000 </span>Ft/nap                        </p>
+                    </div>
+                </a>
+            </div>
+                    <div class="meeting-room-block">
+                <a href="targyalo/kis-targyalo">
+                    <img src="../public/uploads/images/meetingrooms/276/img5270-kis-targyalo-0.jpg" class="img-responsive">
+                    <div class="meeting-room-desc">
+                        <h3>Kis tárgyaló</h3>
+                        <p class="cim">1066 Budapest, Weiner Leó utca </p>
+                        <p class="ferohely">
+                            <i class="la la-user"></i>
+                            Férőhely: 1-4                        </p>
+
+                        <p class="dijazas">
+                            <span class="number">4 000 </span>Ft/óra <br/>
+                            <span class="number">24 000 </span>Ft/nap                        </p>
+                    </div>
+                </a>
+            </div>
+                <div class="meeting-room-block">
+            <a href="/#home-search">
+                <img src="../img/kereses.png" class="img-responsive">
+                <div class="meeting-room-desc">
+                    <h3>További helyszíneink</h3>
+                    <p class="cim">Használja keresőnket!<br><br><br>
+                        <br>
+                </div>
+            </a>
+        </div>
+    </div>
+    </div>
+
+
+<!--Naptárhoz tartozó js-->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        calendarRender();
+    });
+
+    function calendarRender() {
+        var calendarEl = document.getElementById('calendar');
+
+        calendar = new FullCalendar.Calendar(calendarEl, {
+
+            //MEGJELENÉS
+            //themeSystem: 'bootstrap', //bootstrap-es témához kell alapból nem volt benne
+            locale: 'hu', //magyar nyelv
+            headerToolbar: {
+                right: 'prev,prevMonth,today,nextMonth,next',
+                left: 'title',
+                center: 'timeGridWeek,timeGridDay', //csak heti nézet legyen, ezért az összes gombot kivettem: 'dayGridMonth,timeGridWeek,timeGridDay,listMonth'
+            },
+            navLinks: false, // can click day/week names to navigate views
+            allDaySlot: false, //ne legyen egésznapos eseményeknek hely az órára bontott lista felett
+            initialView: 'timeGridWeek', //a heti nézet legyen az alapértelmezett,desktopra:timeGridWeek mobilra: timeGridDay
+            dayHeaderFormat: { weekday: 'short', month: '2-digit', day: '2-digit', omitCommas: true },
+            slotDuration: '00:30:00', //harminc perces osztás legyen
+            slotLabelInterval: '00:30:00', //harminc perces osztás legyen és mindegyik megjelenjen ne csak minden második
+            slotLabelFormat: { hour: '2-digit', minute: '2-digit', omitZeroMinute: false, meridiem: 'short'},
+            firstDay: 1, //hétfővel indul a hét
+            contentHeight: 'auto',
+            selectLongPressDelay:500, //mobile
+
+            initialDate: '2026-11-26', //az aktuális naplegyen kijelölve '2020-09-12' BACKEND
+            validRange: { //ne engedjen elmúlt időpoontra visszamenni, nem kezeli az aznapi elmúlt órákat sajnos
+                start: '2026-11-26', //az aktuális hét hétfőjétől látható a naptár BACKEND
+                end: '2027-11-26' //előrefelé 1 évig, ezt majd le kell velük egyeztetni mennyi legyen !!!!!!!!!!!
+            },
+            slotMinTime: '08:00', //ide a legkorábbi nyitási időpontot kell rakni az összes nap közül BACKEND
+            slotMaxTime: '20:00', //ide a legkésőbbi zárási időpontot kell rakni az összes nap közül BACKEND
+            businessHours: [{"daysOfWeek":[1],"startTime":"08:00","endTime":"20:00"},{"daysOfWeek":[2],"startTime":"08:00","endTime":"20:00"},{"daysOfWeek":[3],"startTime":"08:00","endTime":"20:00"},{"daysOfWeek":[4],"startTime":"08:00","endTime":"20:00"},{"daysOfWeek":[5],"startTime":"08:00","endTime":"20:00"},{"daysOfWeek":[6],"startTime":"08:00","endTime":"20:00"},{"daysOfWeek":[0],"startTime":"08:00","endTime":"20:00"}],
+            events: "/getReservationEvents/238",
+
+            //IDŐPONT KIVÁLASZTÁS
+            editable: false,
+            selectable: true,
+            selectConstraint: 'businessHours', //csak nyitvatartási időből választhat időpontot,a többi alapból le van tiltva
+            selectOverlap: false, //nem választhat időpontot, ahol már van foglalás
+            selectMirror: true, //a kiválasztáskor mutasson rögtön egy esemény dobozt
+            unselectAuto: false,
+            eventColor: '#BC2CDB',
+
+            select: function(info) {
+                calendar.refetchEvents();
+                $("#startTime").val("");
+                $("#endTime").val("");
+                //$('html,body').animate({scrollTop: $("html").offset().top}, 'slow');
+                var myDate = new Date(info.start);
+                var myDate2 = new Date(info.endStr);
+                var kulonbozett = diff_hours(myDate, myDate2);
+
+                if(kulonbozett < 2) {
+                    $('#basketPopup').modal('show');
+                    if ($(window).width() < 800) {
+                        $('#basketPopup').css({
+                            position: 'absolute'
+                        });
+                        $('html,body').animate({scrollTop: $('.calendarBorder').offset().top-150}, 'slow');
+                    }
+                    $('#meeting_room_error').show();
+                    $('#meeting_room_error_text').html("MINIMUM IDŐ: 2 óra").show();
+                    $('#calerbutton').show();
+                    $('#meeting_room_successful').hide();
+                    $('#meeting_room_successful_text').hide();
+                    $('#calsusbutton').hide();
+                } else {
+                    $("#startTime").val(moment(myDate).format('YYYY.MM.DD HH:mm'));
+                    $("#endTime").val(moment(myDate2).format('YYYY.MM.DD HH:mm'));
+
+                    $('#basketPopup').modal('show');
+                    if ($(window).width() < 800) {
+                        $('#basketPopup').css({
+                            position: 'absolute'
+                        });
+                        $('html,body').animate({scrollTop: $('.calendarBorder').offset().top-150}, 'slow');
+                    }
+                    $('#meeting_room_error').hide();
+                    $('#meeting_room_error_text').hide();
+                    $('#calerbutton').hide();
+                    $('#meeting_room_successful').show();
+                    $('#meeting_room_successful_text').show();
+                    $('#calsusbutton').show();
+                }
+                $('.total-container').show();
+                $('#response').hide();
+                $('#meeting_room_popup').hide();
+                $('#calpopbutton').hide();
+                meetingroom.updatePrice();
+            },
+            eventClick: function () {
+                calendar.refetchEvents();
+            }
+        });
+        calendar.render();
+
+        $(document).on('click', '.fc-button', function(e) {
+            $('.fc-theme-bootstrap').addClass('row');
+            $('.fc-toolbar').addClass('col-lg-12');
+        });
+        if ($(window).width() < 769) {
+            $(".fc-timeGridDay-button").click();
+        } else {
+            $(".fc-timeGridWeek-button").click();
+        }
+
+        calendar.updateSize();
+    }
+
+    setInterval(function(){
+        calendar.refetchEvents();
+    }, 30000);
+
+    function diff_hours(dt2, dt1) {
+        var diff =(dt2.getTime() - dt1.getTime()) / 1000;
+        diff /= (60 * 60);
+        return Math.abs(diff);
+    }
+
+    $('#startTime, #endTime').click(function() {
+        $('#tab-calendar').click();
+        if ($(window).width() < 800) {
+            $('#basketPopup').css({
+                position: 'absolute'
+            });
+            setTimeout(function () {
+                $('html,body').animate({ scrollTop: $(".calendarBorder").offset().top-150}, 'slow');
+                $('#basketPopup').modal('show');
+            }, 200);
+        }else{
+            $('html,body').animate({ scrollTop: $(".calendarBorder").offset().top-150}, 'slow');
+            $('#basketPopup').modal('show');
+        }
+
+        $('#meeting_room_popup').show();
+        $('#calpopbutton').show();
+        $('#meeting_room_successful').hide();
+        $('#calsusbutton').hide();
+        $('#meeting_room_error').hide();
+        $('#calerbutton').hide();
+        /*setTimeout(function () {
+            $('html,body').animate({scrollTop: $('.calendarBorder').offset().top-200}, 'slow');
+        }, 500);*/
+        // var naptarm=$('.fc-timeGridWeek-view').height();
+        // $('.fc-view-harness').height(naptarm);
+    });
+    $('#tab-calendar').click(function () {
+        $('#basketPopup').css({
+            position: 'absolute'
+        });
+        setTimeout(function () {
+            $('html,body').animate({ scrollTop: $(".calendarBorder").offset().top-150}, 'slow');
+            $('#basketPopup').modal('show');
+        }, 200);
+        setTimeout(function () {
+            calendar.refetchEvents();
+        }, 500);
+    });
+</script>            </div>
+
+        
+    </main>
+    <footer role="contentinfo">
+    <a class="oldalteteje" href="javascript:;" onClick="$('html, body').animate({scrollTop:0});"></a>
+
+    <div class="footer-menu-container">
+        <ul class="footer-menu">
+            <li><a href="fooldal-2" class="">Főoldal</a></li><li><a href="kapcsolat" class="">Kapcsolat</a></li><li><a href="szolgaltatasaink" class="">Szolgáltatásaink</a></li><li><a href="faq" class="">FAQ</a></li>        </ul>
+
+        <ul class="footer-menu">
+            <li><a href="weboldal-bemutato-videok" class="">Weboldal bemutató videók</a></li><li><a href="blog" class="">Blog</a></li><li><a href="cikkek-interjuk" class="">Cikkek, interjúk</a></li><li><a href="sajtomegjelenesek" class="">Sajtómegjelenések</a></li><li><a href="rendezvenyterem" class="">Rendezvényterem</a></li><li><a href="oktatoterem-eloadoterem" class="">Oktatóterem - előadóterem</a></li><li><a href="oradijas-iroda-berles" class="">Óradíjas iroda - alkalmi iroda</a></li><li><a href="konferenciaterem-berles" class="">Konferenciaterem bérlés</a></li><li><a href="teremberles" class="">Terembérlés</a></li><li><a href="bszf" class="">BSZF</a></li><li><a href="adatkezelesi-tajekoztato" class="">Adatkezelési tájékoztató</a></li>            <li><a onclick="cc.showSettings()">Adatkezelési beállítások</a></li>
+        </ul>
+    </div>
+
+    <div class="footerlogo-container">
+        <a class="footerlogo" href="/"></a>
+        <div class="copyright">
+               Copyright © 2026               <a href="/">www.meety.hu</a>
+        </div>
+    </div>
+
+</footer></div>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PJ62PWF"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --> <script>
+if (window.location.href.includes("https://meety.hu/targyalo/")){
+let h1 = document.querySelector("h1").innerHTML;
+let address = document.querySelector(".address").innerHTML;
+let title = document.querySelector("title");
+title.innerHTML=h1+" | "+address;
+}
+
+</script></body>
+</html>

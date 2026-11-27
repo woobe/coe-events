@@ -1,0 +1,151 @@
+{
+ "venue_id": "bkk-5ea563e55c66",
+ "checked_on": "2026-11-26",
+ "provider": "OpenStreetMap Nominatim",
+ "attempts": [
+  {
+   "kind": "address",
+   "query": "256 Rama 1 Road, Pathum Wan, Bangkok 10330, Thailand",
+   "url": "https://nominatim.openstreetmap.org/search?q=256+Rama+1+Road%2C+Pathum+Wan%2C+Bangkok+10330%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+   "status": "ok",
+   "results": [
+    {
+     "place_id": 257617338,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 25292913,
+     "lat": "13.7449782",
+     "lon": "100.5381895",
+     "category": "highway",
+     "type": "primary",
+     "place_rank": 26,
+     "importance": 0.28187552194901133,
+     "addresstype": "primary",
+     "name": "Rama I Road",
+     "display_name": "Rama I Road, Siam, Pathum Wan Subdistrict, Pathum Wan District, Bangkok, 10330, Thailand",
+     "address": {
+      "road": "Rama I Road",
+      "neighbourhood": "Siam",
+      "quarter": "Pathum Wan Subdistrict",
+      "suburb": "Pathum Wan District",
+      "city": "Bangkok",
+      "ISO3166-2-lvl4": "TH-10",
+      "postcode": "10330",
+      "country": "Thailand",
+      "country_code": "th"
+     },
+     "boundingbox": [
+      "13.7446402",
+      "13.7453305",
+      "100.5361878",
+      "100.5401936"
+     ]
+    },
+    {
+     "place_id": 426587681,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 677212477,
+     "lat": "13.7469179",
+     "lon": "100.5264527",
+     "category": "highway",
+     "type": "primary",
+     "place_rank": 26,
+     "importance": 0.28187552194901133,
+     "addresstype": "primary",
+     "name": "Rama I Road",
+     "display_name": "Rama I Road, Wang Mai Subdistrict, Pathum Wan District, Bangkok, 10330, Thailand",
+     "address": {
+      "road": "Rama I Road",
+      "quarter": "Wang Mai Subdistrict",
+      "suburb": "Pathum Wan District",
+      "city": "Bangkok",
+      "ISO3166-2-lvl4": "TH-10",
+      "postcode": "10330",
+      "country": "Thailand",
+      "country_code": "th"
+     },
+     "boundingbox": [
+      "13.7466083",
+      "13.7472872",
+      "100.5247096",
+      "100.5282137"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "name",
+   "query": "Lido Connect Bangkok",
+   "url": "https://nominatim.openstreetmap.org/search?q=Lido+Connect+Bangkok&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+   "status": "ok",
+   "results": [
+    {
+     "place_id": 257402682,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 163950601,
+     "lat": "13.7453389",
+     "lon": "100.5326589",
+     "category": "highway",
+     "type": "footway",
+     "place_rank": 27,
+     "importance": 0.04007662546730754,
+     "addresstype": "road",
+     "name": "Lido Connect",
+     "display_name": "Lido Connect, Siam Square, Pathum Wan Subdistrict, Pathum Wan District, Bangkok, 10330, Thailand",
+     "address": {
+      "road": "Lido Connect",
+      "retail": "Siam Square",
+      "quarter": "Pathum Wan Subdistrict",
+      "suburb": "Pathum Wan District",
+      "city": "Bangkok",
+      "ISO3166-2-lvl4": "TH-10",
+      "postcode": "10330",
+      "country": "Thailand",
+      "country_code": "th"
+     },
+     "boundingbox": [
+      "13.7448139",
+      "13.7458649",
+      "100.5325578",
+      "100.5327538"
+     ]
+    },
+    {
+     "place_id": 258043039,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "node",
+     "osm_id": 11139443935,
+     "lat": "13.7451699",
+     "lon": "100.5324766",
+     "category": "amenity",
+     "type": "music_venue",
+     "place_rank": 30,
+     "importance": 7.662546730750007e-05,
+     "addresstype": "amenity",
+     "name": "Lido Connect",
+     "display_name": "Lido Connect, Siam Square, Pathum Wan Subdistrict, Pathum Wan District, Bangkok, 10330, Thailand",
+     "address": {
+      "amenity": "Lido Connect",
+      "road": "Lido Connect",
+      "retail": "Siam Square",
+      "quarter": "Pathum Wan Subdistrict",
+      "suburb": "Pathum Wan District",
+      "city": "Bangkok",
+      "ISO3166-2-lvl4": "TH-10",
+      "postcode": "10330",
+      "country": "Thailand",
+      "country_code": "th"
+     },
+     "boundingbox": [
+      "13.7451199",
+      "13.7452199",
+      "100.5324266",
+      "100.5325266"
+     ]
+    }
+   ]
+  }
+ ]
+}

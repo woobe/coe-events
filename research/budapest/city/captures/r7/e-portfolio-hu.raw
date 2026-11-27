@@ -1,0 +1,1533 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+	<meta charset=utf-8 />
+	<meta name="view-transition" content="same-origin" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="google-site-verification" content="google1dc59ea318289106"/>
+	<meta name="_token" content="6wd1lRW369RV3tJWiJedVlAZXIWxjSbhLqpAtewi">
+	<link rel="apple-touch-icon" sizes="57x57" href="https://assets.portfolio.hu/images/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="https://assets.portfolio.hu/images/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="https://assets.portfolio.hu/images/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="https://assets.portfolio.hu/images/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="https://assets.portfolio.hu/images/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="https://assets.portfolio.hu/images/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="https://assets.portfolio.hu/images/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="https://assets.portfolio.hu/images/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="https://assets.portfolio.hu/images/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="https://assets.portfolio.hu/images/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="196x196" href="https://assets.portfolio.hu/images/favicon/favicon-196x196.png">
+	<link rel="icon" type="image/png" sizes="512x512" href="https://assets.portfolio.hu/images/favicon/favicon-512x512.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://assets.portfolio.hu/images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="https://assets.portfolio.hu/images/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://assets.portfolio.hu/images/favicon/favicon-16x16.png">
+	<script src="https://eventscdn.portfolio.hu/assets/js/jquery.min.js"></script>
+	<script src="https://eventscdn.portfolio.hu/assets/js/lc_lightbox.js"></script>
+	<script>
+		window.conferenceCdn = 'https://eventscdn.portfolio.hu/';
+		window.Rot13 = {
+			map: null,
+			convert: function(t) { Rot13.init(); var r = ""; for (var i = 0; i < t.length; i++) { var n = t.charAt(i); r += (n >= "A" && n <= "Z") || (n >= "a" && n <= "z") ? Rot13.map[n] : n; } return r; },
+			init: function() { if (null == Rot13.map) { var t = [], r = "abcdefghijklmnopqrstuvwxyz"; for (var i = 0; i < r.length; i++) t[r.charAt(i)] = r.charAt((i + 13) % 26); for (var i = 0; i < r.length; i++) t[r.charAt(i).toUpperCase()] = r.charAt((i + 13) % 26).toUpperCase(); Rot13.map = t; } },
+			write: function(t) { document.write(Rot13.convert(t)); }
+		};
+	</script>
+	<link rel="preload" as="style" href="https://eventscdn.portfolio.hu/build/assets/app--SX63V0H.css" /><link rel="modulepreload" as="script" href="https://eventscdn.portfolio.hu/build/assets/app-g6qvDS_T.js" /><link rel="stylesheet" href="https://eventscdn.portfolio.hu/build/assets/app--SX63V0H.css" data-navigate-track="reload" /><script type="module" src="https://eventscdn.portfolio.hu/build/assets/app-g6qvDS_T.js" data-navigate-track="reload"></script>	<link rel="canonical" href="https://www.portfolio.hu/rendezvenyek/osszes">
+		
+		
+	<!-- InMobi Choice. Consent Manager Tag v3.0 (for TCF 2.3) -->
+<script type="text/javascript" async=true>
+(function() {
+var host = 'portfolio.hu';
+var element = document.createElement('script');
+var firstScript = document.getElementsByTagName('script')[0];
+var url = 'https://cmp.inmobi.com'
+.concat('/choice/', 'XgSMD-LqxuxFC', '/', host, '/choice.js?tag_version=V3');
+var uspTries = 0;
+var uspTriesLimit = 3;
+element.async = true;
+element.type = 'text/javascript';
+element.src = url;
+
+firstScript.parentNode.insertBefore(element, firstScript);
+
+function makeStub() {
+var TCF_LOCATOR_NAME = '__tcfapiLocator';
+var queue = [];
+var win = window;
+var cmpFrame;
+
+function addFrame() {
+var doc = win.document;
+var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
+
+if (!otherCMP) {
+if (doc.body) {
+var iframe = doc.createElement('iframe');
+
+iframe.style.cssText = 'display:none';
+iframe.name = TCF_LOCATOR_NAME;
+doc.body.appendChild(iframe);
+} else {
+setTimeout(addFrame, 5);
+}
+}
+return !otherCMP;
+}
+
+function tcfAPIHandler() {
+var gdprApplies;
+var args = arguments;
+
+if (!args.length) {
+return queue;
+} else if (args[0] === 'setGdprApplies') {
+if (
+args.length > 3 &&
+args[2] === 2 &&
+typeof args[3] === 'boolean'
+) {
+gdprApplies = args[3];
+if (typeof args[2] === 'function') {
+args[2]('set', true);
+}
+}
+} else if (args[0] === 'ping') {
+var retr = {
+gdprApplies: gdprApplies,
+cmpLoaded: false,
+cmpStatus: 'stub'
+};
+
+if (typeof args[2] === 'function') {
+args[2](retr);
+}
+} else {
+if(args[0] === 'init' && typeof args[3] === 'object') {
+args[3] = Object.assign(args[3], { tag_version: 'V3' });
+}
+queue.push(args);
+}
+}
+
+var ALLOWED_POSTMESSAGE_COMMANDS = {
+ping: true,
+getTCData: true,
+addEventListener: true,
+removeEventListener: true
+};
+
+function postMessageEventHandler(event) {
+var msgIsString = typeof event.data === 'string';
+var json = {};
+
+try {
+if (msgIsString) {
+json = JSON.parse(event.data);
+} else {
+json = event.data;
+}
+} catch (ignore) {}
+
+var payload = json && json.__tcfapiCall;
+if (!payload) return;
+if (!ALLOWED_POSTMESSAGE_COMMANDS[payload.command]) return;
+if (window.opener && event.source === window.opener) return;
+
+window.__tcfapi(
+payload.command,
+payload.version,
+function(retValue, success) {
+var returnMsg = {
+  __tcfapiReturn: {
+    returnValue: retValue,
+    success: success,
+    callId: payload.callId
+  }
+};
+if (msgIsString) {
+  returnMsg = JSON.stringify(returnMsg);
+}
+if (event && event.source && event.source.postMessage) {
+  event.source.postMessage(returnMsg, '*');
+}
+},
+payload.parameter
+);
+}
+
+while (win) {
+try {
+if (win.frames[TCF_LOCATOR_NAME]) {
+cmpFrame = win;
+break;
+}
+} catch (ignore) {}
+
+if (win === window.top) {
+break;
+}
+win = win.parent;
+}
+if (!cmpFrame) {
+addFrame();
+win.__tcfapi = tcfAPIHandler;
+win.addEventListener('message', postMessageEventHandler, false);
+}
+};
+
+makeStub();
+
+function makeGppStub() {
+const CMP_ID = 10;
+const SUPPORTED_APIS = [
+'2:tcfeuv2',
+'6:uspv1',
+'7:usnatv1',
+'8:usca',
+'9:usvav1',
+'10:uscov1',
+'11:usutv1',
+'12:usctv1'
+];
+
+window.__gpp_addFrame = function (n) {
+if (!window.frames[n]) {
+if (document.body) {
+var i = document.createElement("iframe");
+i.style.cssText = "display:none";
+i.name = n;
+document.body.appendChild(i);
+} else {
+window.setTimeout(window.__gpp_addFrame, 10, n);
+}
+}
+};
+window.__gpp_stub = function () {
+var b = arguments;
+__gpp.queue = __gpp.queue || [];
+__gpp.events = __gpp.events || [];
+
+if (!b.length || (b.length == 1 && b[0] == "queue")) {
+return __gpp.queue;
+}
+
+if (b.length == 1 && b[0] == "events") {
+return __gpp.events;
+}
+
+var cmd = b[0];
+var clb = b.length > 1 ? b[1] : null;
+var par = b.length > 2 ? b[2] : null;
+if (cmd === "ping") {
+clb(
+{
+gppVersion: "1.1", // must be â€śVersion.Subversionâ€ť, current: â€ś1.1â€ť
+cmpStatus: "stub", // possible values: stub, loading, loaded, error
+cmpDisplayStatus: "hidden", // possible values: hidden, visible, disabled
+signalStatus: "not ready", // possible values: not ready, ready
+supportedAPIs: SUPPORTED_APIS, // list of supported APIs
+cmpId: CMP_ID, // IAB assigned CMP ID, may be 0 during stub/loading
+sectionList: [],
+applicableSections: [-1],
+gppString: "",
+parsedSections: {},
+},
+true
+);
+} else if (cmd === "addEventListener") {
+if (!("lastId" in __gpp)) {
+__gpp.lastId = 0;
+}
+__gpp.lastId++;
+var lnr = __gpp.lastId;
+__gpp.events.push({
+id: lnr,
+callback: clb,
+parameter: par,
+});
+clb(
+{
+eventName: "listenerRegistered",
+listenerId: lnr, // Registered ID of the listener
+data: true, // positive signal
+pingData: {
+  gppVersion: "1.1", // must be â€śVersion.Subversionâ€ť, current: â€ś1.1â€ť
+  cmpStatus: "stub", // possible values: stub, loading, loaded, error
+  cmpDisplayStatus: "hidden", // possible values: hidden, visible, disabled
+  signalStatus: "not ready", // possible values: not ready, ready
+  supportedAPIs: SUPPORTED_APIS, // list of supported APIs
+  cmpId: CMP_ID, // list of supported APIs
+  sectionList: [],
+  applicableSections: [-1],
+  gppString: "",
+  parsedSections: {},
+},
+},
+true
+);
+} else if (cmd === "removeEventListener") {
+var success = false;
+for (var i = 0; i < __gpp.events.length; i++) {
+if (__gpp.events[i].id == par) {
+__gpp.events.splice(i, 1);
+success = true;
+break;
+}
+}
+clb(
+{
+eventName: "listenerRemoved",
+listenerId: par, // Registered ID of the listener
+data: success, // status info
+pingData: {
+  gppVersion: "1.1", // must be â€śVersion.Subversionâ€ť, current: â€ś1.1â€ť
+  cmpStatus: "stub", // possible values: stub, loading, loaded, error
+  cmpDisplayStatus: "hidden", // possible values: hidden, visible, disabled
+  signalStatus: "not ready", // possible values: not ready, ready
+  supportedAPIs: SUPPORTED_APIS, // list of supported APIs
+  cmpId: CMP_ID, // CMP ID
+  sectionList: [],
+  applicableSections: [-1],
+  gppString: "",
+  parsedSections: {},
+},
+},
+true
+);
+} else if (cmd === "hasSection") {
+clb(false, true);
+} else if (cmd === "getSection" || cmd === "getField") {
+clb(null, true);
+}
+//queue all other commands
+else {
+__gpp.queue.push([].slice.apply(b));
+}
+};
+var ALLOWED_GPP_POSTMESSAGE_COMMANDS = {
+ping: true,
+addEventListener: true,
+removeEventListener: true,
+hasSection: true,
+getSection: true,
+getField: true
+};
+
+window.__gpp_msghandler = function (event) {
+var msgIsString = typeof event.data === "string";
+try {
+var json = msgIsString ? JSON.parse(event.data) : event.data;
+} catch (e) {
+var json = null;
+}
+if (typeof json !== "object" || json === null || !("__gppCall" in json)) return;
+var i = json.__gppCall;
+if (!i || !ALLOWED_GPP_POSTMESSAGE_COMMANDS[i.command]) return;
+if (window.opener && event.source === window.opener) return;
+
+window.__gpp(
+i.command,
+function (retValue, success) {
+var returnMsg = {
+  __gppReturn: {
+    returnValue: retValue,
+    success: success,
+    callId: i.callId,
+  },
+};
+if (event && event.source && event.source.postMessage) {
+  event.source.postMessage(msgIsString ? JSON.stringify(returnMsg) : returnMsg, "*");
+}
+},
+"parameter" in i ? i.parameter : null,
+"version" in i ? i.version : "1.1"
+);
+};
+if (!("__gpp" in window) || typeof window.__gpp !== "function") {
+window.__gpp = window.__gpp_stub;
+window.addEventListener("message", window.__gpp_msghandler, false);
+window.__gpp_addFrame("__gppLocator");
+}
+};
+
+makeGppStub();
+
+var uspStubFunction = function() {
+var arg = arguments;
+if (typeof window.__uspapi !== uspStubFunction) {
+setTimeout(function() {
+if (typeof window.__uspapi !== 'undefined') {
+window.__uspapi.apply(window.__uspapi, arg);
+}
+}, 500);
+}
+};
+
+var checkIfUspIsReady = function() {
+uspTries++;
+if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
+console.warn('USP is not accessible');
+} else {
+clearInterval(uspInterval);
+}
+};
+
+if (typeof window.__uspapi === 'undefined') {
+window.__uspapi = uspStubFunction;
+var uspInterval = setInterval(checkIfUspIsReady, 6000);
+}
+})();
+</script>
+<!-- End InMobi Choice. Consent Manager Tag v3.0 (for TCF 2.3) -->
+
+	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KZDJLQW');</script>
+<!-- End Google Tag Manager -->
+
+		
+	<script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-messaging.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-analytics.js"></script>
+<script>
+    const URL_PUSH = 'https://p.portfolio.hu';
+</script>
+
+<script>
+const MESSAGING_CONFIG = {
+    firebase_config: {
+        apiKey: "AIzaSyC2GT5ArZanDsH7sCxAiVCUxrejw-oRctE",
+        authDomain: "konferencia-175711.firebaseapp.com",
+        databaseURL: "https://konferencia-175711.firebaseio.com",
+        projectId: "konferencia-175711",
+        storageBucket: "konferencia-175711.appspot.com",
+        messagingSenderId: "99995443172",
+        appId: "1:99995443172:web:88fb9de054dbf2425631f1",
+        measurementId: "G-R801SZ8TH3"
+    },
+    vapidKey: 'BGpCIR9a3uo__XzWbMSVw6E5tiTaFzWdJBgE7cHdZkwg-iuOlPfbwYPWrp5wyLNmUvRiPAKtmFub9tRQmBu07gg',
+    //pushURL : 'https://p.portfolio.hu',
+    tokenKey: 'b7091c569b4b36da6cc74a27de71916a',
+    popup   : {
+        cookie : 'cnf6171234e2b72f9.35109354',
+        icon   : 'https://assets.portfolio.hu/images/favicon/apple-icon-60x60.png',
+        body   : "Új konferenciák, friss hírek és kedvezmények egy helyen. Engedélyezze az értesítéseket, hogy naprakész maradjon!",
+        allow  : "Engedélyezem",
+        dismiss: "Legközelebb"
+    },
+    project : 'Konfi',
+    topic   : 'konferencia-egyeb'
+};
+</script>
+
+
+	<title>Összes konferencia | Portfolio - Konferencia</title>
+<meta name="description" content="Gazdasági, pénzügyi, ingatlan és agrár konferenciák Magyarország vezető gazdasági portáljának szervezésében | Portfolio.hu Rendezvények">
+	<meta property="og:title" content="Összes konferencia | Portfolio - Konferencia">
+<meta property="og:description" content="Gazdasági, pénzügyi, ingatlan és agrár konferenciák Magyarország vezető gazdasági portáljának szervezésében | Portfolio.hu Rendezvények">
+<meta property="og:url" content="https://www.portfolio.hu/rendezvenyek/osszes">
+<meta property="og:type" content="event">
+
+	<meta name="twitter:site" content="@portfolio_hu">
+<meta name="twitter:title" content="Összes konferencia | Portfolio - Konferencia">
+
+	
+			<script type="application/ld+json">
+			{
+				"@context": "http://schema.org",
+				"@type": "WebPage",
+				"name": "Összes konferencia | Portfolio - Konferencia",
+				"description": "Gazdasági, pénzügyi, ingatlan és agrár konferenciák Magyarország vezető gazdasági portáljának szervezésében | Portfolio.hu Rendezvények",
+				"url": "https://www.portfolio.hu/rendezvenyek",
+				"publisher": {
+					"@type": "Organization",
+					"name": "NET Média Zrt.",
+					"logo": {
+						"@type": "ImageObject",
+						"url": "https://assets.portfolio.hu/images/portfolio_black.svg",
+						"width": 700,
+						"height": 177
+					}
+				},
+				"sameAs": [
+					"https://www.facebook.com/portfolio.hu/",
+					"https://www.youtube.com/user/portfoliohuvideo"
+				]
+			}
+		</script>
+		
+</head>
+<body>
+	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KZDJLQW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+	<a class="visually-hidden-focusable position-absolute top-0 start-0 p-2 m-2 bg-white border z-3" href="#main-content">Ugrás a tartalomhoz</a>
+
+	
+	<!-- Header -->
+	<div class="page-overlay">
+	<div
+		class="mainmenu"
+		id="site-sidemenu"
+		role="dialog"
+		aria-modal="true"
+		aria-label="Menü"
+	>
+		<div class="mainmenu-wrapper">
+			<button
+				type="button"
+				class="menu-close-icon menu-handler"
+				id="close-menu-icon"
+				aria-label="Bezárás"
+			>
+				<span class="pxl-19 icon-close" aria-hidden="true"></span>
+			</button>
+			<div class="lang-selector pxl-12 d-flex align-items-center column-gap-2">
+				<li class="d-inline d-md-none poppins text-uppercase weight-700">
+                <a rel="alternate" hreflang="hu" href="https://www.portfolio.hu/hu/rendezvenyek/osszes">
+            magyar
+        </a>
+    </li>
+            <li class="d-inline d-md-none weight-700">|</li>
+        <li class="d-inline d-md-none poppins text-uppercase ">
+                <a rel="alternate" hreflang="en" href="https://www.portfolio.hu/en/events/all">
+            English
+        </a>
+    </li>
+    			</div>
+			<div class="menu-links pt-5 mt-2">
+				<template>
+					<ul><li class="menu-conf-display mt-3">
+					<h2 class="poppins pxl-22 weight-700 text-uppercase mb-3 lheight-14"></h2><span></span>
+					</li></ul>
+				</template>
+				<ul class="poppins pxl-16">
+					<li><a href="https://www.portfolio.hu/rendezvenyek">Portfolio Konferencia</a></li>
+					<li><a href="https://www.portfolio.hu/rendezvenyek/osszes">Összes rendezvény</a></li>
+					<li><a href="https://www.portfolio.hu/rendezvenyek/eloadok">Előadók</a></li>
+					<li><a href="https://www.portfolio.hu/rendezvenyek/galeria">Galériák</a></li>
+					<li><a href="https://www.portfolio.hu/rendezvenyek/videok">Videók</a></li>
+					<li><a href="https://www.portfolio.hu/rendezvenyek/cikkek">Hírek</a></li>
+					<li><a href="https://www.portfolio.hu/rendezvenyek/kapcsolat">Kapcsolat</a></li>
+					<li><a href="https://www.portfolio.hu/rendezvenyek/esemenyajanlo">Hírlevél feliratkozás</a></li>
+				</ul>
+				<div class="mt-4 pt-2">
+	<form action="https://www.portfolio.hu/rendezvenyek/kereses" class="menu-search" id="menu-search" method="POST" autocomplete="off" accept-charset="utf-8">
+		<input type="hidden" name="_token" value="6wd1lRW369RV3tJWiJedVlAZXIWxjSbhLqpAtewi" autocomplete="off">		<input type="search" name="q" class="" id="menu-search-input" value="" required maxlength="255" autocomplete="off" placeholder="Keresés">
+	</form>
+</div>
+				
+			</div>
+
+			<div class="mode-switcher pxl-13" role="group" aria-label="Téma">
+	<button type="button" class="pointer" id="autoSwitch" aria-pressed="true">
+		<span class="d-flex flex-column align-items-center row-gap-2">
+			<span aria-hidden="true"><i class="pxl-18 icon-automatic"></i></span>
+			<span>Automatikus</span>
+		</span>
+	</button>
+	<button type="button" class="pointer" id="lightSwitch" aria-pressed="false">
+		<span class="d-flex flex-column align-items-center row-gap-2">
+			<span aria-hidden="true"><i class="pxl-18 icon-light_mode"></i></span>
+			<span>Világos téma</span>
+		</span>
+	</button>
+	<button type="button" class="pointer" id="darkSwitch" aria-pressed="false">
+		<span class="d-flex flex-column align-items-center row-gap-2">
+			<span aria-hidden="true"><i class="pxl-18 icon-dark_mode"></i></span>
+			<span>Sötét téma</span>
+		</span>
+	</button>
+</div>
+		</div>
+	</div>
+</div>
+	<header class="sticky">
+		<div class="text-start">
+			<button
+				type="button"
+				class="menu-icon menu-handler"
+				id="menu-icon"
+				aria-label="Menü"
+				aria-expanded="false"
+				aria-controls="site-sidemenu"
+			>
+				<span aria-hidden="true"><svg class="site-icons" data-icon="hambi" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 21"><path fill="currentColor" d="M23.5 3h-22a1.5 1.5 0 0 1 0-3h22a1.5 1.5 0 0 1 0 3M23.5 12h-22a1.5 1.5 0 0 1 0-3h22a1.5 1.5 0 0 1 0 3M23.5 21h-22a1.5 1.5 0 0 1 0-3h22a1.5 1.5 0 0 1 0 3"/></svg></span>
+			</button>
+		</div>
+		<div>
+			<a href="https://www.portfolio.hu/rendezvenyek" aria-label="Portfolio">
+								<span class="mobil-logo d-block d-md-none" aria-hidden="true">
+					<svg xmlns="http://www.w3.org/2000/svg" id="mobil-logo" viewBox="0 0 251 34" focusable="false"><path d="M33.5 16.8C33.5 7.5 26 0 16.8 0S0 7.5 0 16.8C0 26 7.5 33.5 16.8 33.5S33.5 26 33.5 16.8" fill="#fd5401"/><path d="M27.7 16.8c0 6.1-4.9 11-11 11s-11-4.9-11-11 4.9-11 11-11 11 4.9 11 11" fill="#f9c349"/><path class="pathstroke" fill="none" stroke="currentColor" stroke-miterlimit="10" d="M54 0v33.5"/><g class="pathfill" fill="currentColor"><path d="M86.7 24.9L80.4 17l-4 4.3v3.6h-1.9V8.6h1.9v10.3l9.5-10.3h2.2l-6.5 7 7.4 9.3h-2.3zM106.2 16.8c0 4.7-3.7 8.5-8.4 8.5-4.8 0-8.5-3.7-8.5-8.5 0-4.7 3.7-8.5 8.5-8.5 4.7 0 8.4 3.7 8.4 8.5zm-1.9 0c0-3.8-2.9-6.7-6.5-6.7-3.7 0-6.5 2.9-6.5 6.7 0 3.8 2.9 6.6 6.5 6.6s6.5-2.9 6.5-6.6zM123.7 24.9H122l-10.7-13v13h-1.9V8.6h1.7l10.7 13.1V8.6h1.9v16.3zM129.8 16h8.9v1.7h-8.9v7.2h-1.9V8.6h11.7v1.7h-9.8V16zM153.8 24.9h-11.9V8.6h11.9v1.7h-10v5.5h9.3v1.7h-9.3v5.6h10v1.8zM168 24.9l-6.2-7h-3v7h-1.9V8.6h7.6c3.2 0 5.3 1.9 5.3 4.7 0 2.8-2.1 4.7-5.3 4.7h-.3l6.3 7H168zm-3.6-8.7c2 0 3.4-1.2 3.4-2.9s-1.4-2.9-3.4-2.9h-5.6v5.8h5.6zM184.8 24.9h-11.9V8.6h11.9v1.7h-10v5.5h9.3v1.7h-9.3v5.6h10v1.8zM202.1 24.9h-1.7l-10.7-13v13h-1.9V8.6h1.7l10.7 13.1V8.6h1.9v16.3zM219.6 19.3l1.9.4c-1 3.4-4 5.5-7.8 5.5-4.8 0-8.5-3.7-8.5-8.5s3.7-8.5 8.5-8.5c3.8 0 6.8 2.1 7.8 5.4l-1.9.5c-.8-2.6-3.1-4.1-5.9-4.1-3.7 0-6.5 2.9-6.5 6.7 0 3.8 2.9 6.7 6.5 6.7 2.8 0 5.1-1.5 5.9-4.1zM228.5 23.2h3.8V25h-9.5v-1.8h3.8V10.3h-3.8V8.6h9.5v1.7h-3.8v12.9zM248.1 24.9l-1.8-4.1h-8.6l-1.8 4.1h-2.1L241 8.6h1.8l7.3 16.3h-2zM241.9 11l-3.6 8.1h7.1l-3.5-8.1z"/></g></svg>
+				</span>
+				<span class="desktop-logo d-none d-md-block" aria-hidden="true">
+					<svg xmlns="http://www.w3.org/2000/svg" id="desktop-logo" width="345" height="34" viewBox="0 0 360 34" focusable="false"><path class="pathfill" fill="currentColor" d="M7.8 17.3c2.6 0 4.1-1.3 4.1-3.3v-.1c0-2.3-1.6-3.3-4.2-3.3H5.2v6.8h2.6zM0 5.9h8.2c5.6 0 9 3.1 9 7.9v.1c0 5.5-4.3 8.1-9.6 8.1H5.2v5.9H0v-22z"/><path fill="#fd5401" d="M53.1 16.9C53.1 7.6 45.6.1 36.3.1S19.6 7.6 19.6 16.9s7.5 16.8 16.8 16.8 16.7-7.6 16.7-16.8"/><path fill="#f9c349" d="M47.3 16.9c0 6.1-4.9 11-11 11s-11-4.9-11-11 4.9-11 11-11 11 4.9 11 11"/><path class="pathfill" fill="currentColor" d="M111.3 4h5.1v23.8h-5.1zm8.4 7h5.1v16.9h-5.1zM99.7 23.6c-2.5 0-4.4-2-4.4-4.4 0-2.5 2-4.4 4.4-4.4 2.5 0 4.4 2 4.4 4.4.1 2.4-1.9 4.4-4.4 4.4m0-13.6c-5.1 0-9.2 4.1-9.2 9.2s4.1 9.2 9.2 9.2 9.2-4.1 9.2-9.2-4.1-9.2-9.2-9.2m36.7 13.6c-2.5 0-4.4-2-4.4-4.4 0-2.5 2-4.4 4.4-4.4s4.4 2 4.4 4.4c0 2.4-2 4.4-4.4 4.4m0-13.6c-5.1 0-9.2 4.1-9.2 9.2s4.1 9.2 9.2 9.2 9.2-4.1 9.2-9.2-4.1-9.2-9.2-9.2m-17.1-3.5c0-1.6 1.3-2.9 2.9-2.9 1.6 0 2.9 1.3 2.9 2.9s-1.3 2.9-2.9 2.9c-1.6.1-2.9-1.2-2.9-2.9m-29.6 4h-4.2v-.6c0-1.4.7-2 1.9-2 .9 0 1.6.2 2.3.4V4.1c-.9-.3-2-.5-3.6-.5-1.8 0-3.2.5-4.2 1.4-.9 1-1.4 2.4-1.4 4.4v18.4h5.1V15h4.1v-4.5zm-12 0H74V7.2l-5.1 1.4v14.1c0 4.2 2.1 5.4 5.3 5.4 1.5 0 2.7-.3 3.6-.8v-4.2c-.6.3-1.3.5-2.1.5-1.1 0-1.7-.6-1.7-1.8V15h3.8v-4.5zm-11.1 0c-2.8 0-4.5.4-5.4 2.7v-2.7H56v17.3h5.1V19c0-2.6 1.1-3.8 3.9-3.8h1.5v-4.7z"/><path class="pathstroke" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="1.007" d="M165.8 0v34"/><path class="pathfill" fill="currentColor" d="m198.2 27.6-6.2-7.9-4 4.3v3.6h-1.9V11.4h1.9v10.2l9.4-10.2h2.2l-6.4 6.9 7.4 9.2h-2.4zm19.3-8.1c0 4.7-3.7 8.4-8.3 8.4-4.7 0-8.4-3.7-8.4-8.4s3.7-8.4 8.4-8.4 8.3 3.7 8.3 8.4zm-1.9 0c0-3.7-2.8-6.6-6.4-6.6-3.6 0-6.4 2.9-6.4 6.6 0 3.7 2.8 6.6 6.4 6.6 3.6 0 6.4-2.9 6.4-6.6zm19.2 8.1h-1.6l-10.6-12.8v12.8h-1.9V11.4h1.6l10.6 13v-13h1.9v16.2zm6-8.8h8.8v1.7h-8.8v7.1h-1.9V11.4h11.6v1.7h-9.7v5.7zm23.8 8.8h-11.8V11.4h11.8v1.7h-9.9v5.5h9.2v1.7h-9.2v5.5h9.9v1.8zm14.1 0-6.2-6.9h-3v6.9h-1.9V11.4h7.5c3.2 0 5.3 1.8 5.3 4.6s-2.1 4.6-5.3 4.6h-.3l6.2 6.9h-2.3zm-3.6-8.7c2 0 3.4-1.2 3.4-2.9s-1.4-2.9-3.4-2.9h-5.6v5.8h5.6zm20.2 8.7h-11.8V11.4h11.8v1.7h-9.9v5.5h9.2v1.7h-9.2v5.5h9.9v1.8zm17.2 0h-1.6l-10.6-12.8v12.8h-1.9V11.4h1.6l10.6 13v-13h1.9v16.2zm17.3-5.6 1.8.4c-1 3.4-4 5.5-7.7 5.5-4.7 0-8.4-3.7-8.4-8.4s3.7-8.4 8.4-8.4c3.7 0 6.7 2.1 7.7 5.4l-1.8.5c-.8-2.6-3.1-4.1-5.9-4.1-3.6 0-6.5 2.9-6.5 6.6 0 3.7 2.8 6.6 6.5 6.6 2.8 0 5.1-1.5 5.9-4.1zm8.8 3.9h3.7v1.7H333v-1.7h3.7V13.1H333v-1.7h9.4v1.7h-3.7v12.8zm19.3 1.7-1.8-4.1h-8.5l-1.8 4.1h-2.1l7.2-16.2h1.8l7.2 16.2h-2zm-6-13.8-3.5 8h7l-3.5-8z"/></svg>
+				</span>
+							</a>
+		</div>
+		<div class="pxl-12">
+			<ul class="list-unstyled d-flex align-items-center justify-content-end column-gap-2 mb-0">
+				<li class="d-none d-md-inline poppins text-uppercase weight-700">
+                <a rel="alternate" hreflang="hu" href="https://www.portfolio.hu/hu/rendezvenyek/osszes">
+            magyar
+        </a>
+    </li>
+            <li class="d-none d-md-inline weight-700">|</li>
+        <li class="d-none d-md-inline poppins text-uppercase ">
+                <a rel="alternate" hreflang="en" href="https://www.portfolio.hu/en/events/all">
+            English
+        </a>
+    </li>
+    				<li class="ms-3">
+					<div class="dropdown" id="profile-dropdown">
+						<button
+							type="button"
+							data-bs-toggle="dropdown"
+							aria-haspopup="true"
+							aria-expanded="false"
+							data-bs-auto-close="outside"
+							data-bs-offset="29,35"
+							id="login-figure"
+							class="login-figure"
+							aria-label="Bejelentkezés"
+						>
+															<i class="pxl-23 icon-profil" aria-hidden="true"></i>
+													</button>
+													<div class="dropdown-menu dropdown-menu-end ajax-form" id="login-dropdown" data-popper-placement="bottom-end">
+								<h3 class="poppins pxl-16 text-uppercase weight-800 pb-2">Bejelentkezés</h3>
+								<form id="header-login-form" action="https://www.portfolio.hu/rendezvenyek/login-proxy" method="POST" role="form" class="form-horizontal">
+									<input type="hidden" name="_token" value="6wd1lRW369RV3tJWiJedVlAZXIWxjSbhLqpAtewi" autocomplete="off">									<div id="login-header-error" class="roboto pxl-14 text-orange mb-2" style="display:none"></div>
+
+									<div class="d-flex flex-column pb-0 mb-3 gap-2">
+    
+                        <label  for="username"  class="input-label" style=font-weight:bold>E-mail cím <span style="font-weight:normal"></span> </label>
+             
+        <input type="email" id="username" name="username" class="form-control" value="" maxlength="255" placeholder="">
+    </div>
+
+									<div class="d-flex flex-column mb-3 pb-1  gap-2">
+    
+                        <label  for="eye-icon"  class="input-label" style=font-weight:700>Jelszó <span style="font-weight:normal"></span> </label>
+             
+        <div class="position-relative" data-name="login-popup">
+											<input type="password" name="password" class="form-control" value="" maxlength="255" placeholder="" autocomplete="true">
+											<div data-id="eye-icon" data-type="1"><svg class="site-icons" data-icon="eye" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M.75 11S4.48 3.55 11 3.55 21.25 11 21.25 11 17.52 18.45 11 18.45.75 11 .75 11"/><circle cx="11" cy="11" r="2.8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/></svg></div>
+											<div data-id="eye-icon" data-type="2" hidden><svg class="site-icons" data-icon="eye-cross" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16.54 16.54A9.4 9.4 0 0 1 11 18.46C4.48 18.45.75 11 .75 11c1.16-2.16 2.77-4.05 4.71-5.54m3.58-1.69c.64-.15 1.3-.23 1.96-.22 6.52 0 10.25 7.45 10.25 7.45q-.855 1.59-2.01 2.97m-6.26-.99c-1.05 1.13-2.82 1.19-3.95.14s-1.19-2.82-.14-3.95c.04-.05.09-.09.14-.14M.75.75l20.5 20.5"/></svg></div>
+										</div>
+    </div>
+
+									<div class="d-flex justify-content-between align-items-center mb-3">
+										<div class="d-flex justify-content-start align-items-center">
+											<label class="checkbox-wrapper">
+												<input type="checkbox" name="remember" class="checkbox" value="1">
+												<span class="ms-2 roboto pxl-14">Belépve maradok</span>
+											</label>
+										</div>
+										<div>
+											<a class="text-orange roboto pxl-14" href="https://www.portfolio.hu/rendezvenyek/jelszo/visszaallitas?noconf=true">Elfelejtett jelszó</a>
+										</div>
+									</div>
+									<button type="submit"  class="site-btn site-btn-orange wide">
+		<div class="d-flex justify-content-start aling-items-between">
+			<span class="poppins">Bejelentkezés</span>
+			<span><svg class="site-icons" data-icon="btn-arrow" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13.468 13.468"><g fill="currentColor" stroke="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6.73 12.33a.5.5 0 0 0 .354-.147l5.1-5.1a.5.5 0 0 0 0-.706l-5.1-5.1a.5.5 0 0 0-.707 0 .5.5 0 0 0 0 .707l4.746 4.746-4.746 4.746a.5.5 0 0 0 0 .707.5.5 0 0 0 .353.147"/><path d="M11.785 7.234a.5.5 0 0 0 .5-.5.5.5 0 0 0-.5-.5H1.683a.5.5 0 0 0-.5.5.5.5 0 0 0 .5.5z"/></g></svg></span>
+		</div>
+	</button>
+									<hr>
+									<div class="text-center pxl-14">Nincs felhasználói fiókja?</div>
+									<div class="text-center pxl-14"><a class="text-orange" href="https://www.portfolio.hu/rendezvenyek/regisztracio?noconf=true">Fiók létrehozása</a></div>
+								</form>
+							</div>
+							<script>
+								document.addEventListener('DOMContentLoaded', function() {
+									window.handleLoginDropdown();
+									window.handleLoginAjax();
+								});
+							</script>
+											</div>
+				</li>
+			</ul>
+		</div>
+</header>
+<script>document.addEventListener('DOMContentLoaded', function() { showHidePasswd('[data-name="login-popup"]'); });</script>
+<!-- End Header -->
+
+	
+	<main id="main-content">
+		
+		
+<div class="container">
+	<div class="row">
+		<div class="col-12">
+			<div class="cnf-breadcrumb poppins pt-3 py-0">
+		<div><a href="https://www.portfolio.hu/rendezvenyek">Főoldal</a></div>
+		<span>|</span>
+					<div>Összes rendezvény</div>
+						</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-12 py-3">
+			<h2 class="poppins pxl-28 weight-800 text-uppercase my-4 ">Összes rendezvény</h2>			<form id="filterForm" method="get" accept-charset="utf-8">
+								<div class="form-columns">
+					<div class="custom-select">
+	<div class="custom-select-container">
+		<div class="form-control custom-select-selected" tabindex="1">
+			<span class="selected-text">Összes iparág</span>
+		</div>
+		<ul class="custom-select-options " data-name="iparag">
+												<li class="custom-select-option selected" data-value="">Összes iparág</li>
+									<li class="custom-select-option" data-value="agrarium">Agrárium</li>
+									<li class="custom-select-option" data-value="energia">Energia</li>
+									<li class="custom-select-option" data-value="gazdasag">Gazdaság</li>
+									<li class="custom-select-option" data-value="ingatlan">Ingatlan</li>
+									<li class="custom-select-option" data-value="it">IT & Fintech</li>
+									<li class="custom-select-option" data-value="kkv">KKV</li>
+									<li class="custom-select-option" data-value="penzugy">Pénzügy</li>
+									</ul>
+		<select name="iparag" id="iparag" class="hidden-select ">
+												<option value="" selected>Összes iparág</option>
+									<option value="agrarium" >Agrárium</option>
+									<option value="energia" >Energia</option>
+									<option value="gazdasag" >Gazdaság</option>
+									<option value="ingatlan" >Ingatlan</option>
+									<option value="it" >IT & Fintech</option>
+									<option value="kkv" >KKV</option>
+									<option value="penzugy" >Pénzügy</option>
+									</select>
+	</div>
+</div>					<div class="custom-select">
+	<div class="custom-select-container">
+		<div class="form-control custom-select-selected" tabindex="1">
+			<span class="selected-text">Összes típus</span>
+		</div>
+		<ul class="custom-select-options " data-name="tipus">
+												<li class="custom-select-option selected" data-value="">Összes típus</li>
+									<li class="custom-select-option" data-value="konferencia">Konferencia</li>
+									<li class="custom-select-option" data-value="online">Online</li>
+									<li class="custom-select-option" data-value="klub">Klub</li>
+									<li class="custom-select-option" data-value="signature-klub">Signature Klub</li>
+									</ul>
+		<select name="tipus" id="tipus" class="hidden-select ">
+												<option value="" selected>Összes típus</option>
+									<option value="konferencia" >Konferencia</option>
+									<option value="online" >Online</option>
+									<option value="klub" >Klub</option>
+									<option value="signature-klub" >Signature Klub</option>
+									</select>
+	</div>
+</div>					<input type="search" id="q" name="q" class="form-control search-control" value="" maxlength="255" autocomplete="off" placeholder="Keresés...">
+				</div>
+			</form>
+			<script>
+				window.addEventListener('DOMContentLoaded', (event) => {
+
+					let myForm = document.getElementById('filterForm');
+
+					[document.querySelector('#iparag'), document.querySelector('#tipus'), document.querySelector('#q')].forEach(item => {
+					  item.addEventListener('change', event => {
+
+					  	var select = document.getElementById('tipus'),
+					  		value = select.value;
+					  	if (value == 'klub' || value == 'signature-klub') {
+					  		document.getElementById('iparag').selectedIndex = 0;
+					  	}
+
+						var ind = document.getElementById('iparag'),
+							indValue = ind.value;
+
+						if (indValue != '' && (value == 'klub' || value == 'signature-klub)')) {
+							document.getElementById('tipus').selectedIndex = 0;
+						}
+
+					    myForm.submit();
+					  })
+					});
+				});
+			</script>
+		</div>
+	</div>
+	</div>
+<div class="container">
+		<div class="row">
+		<div class="col-12 py-3">
+						<div class="cnf-list-all d-flex flex-column flex-md-row align-items-center mb-cnf column-gap-cnf row-gap-3">
+	<div>
+		<a href="https://www.portfolio.hu/rendezvenyek/konferencia-it/ai-digital-transformation-2026/2032">
+			<img class="d-none d-md-block" onerror="this.src='https://eventscdn.portfolio.hu/assets/images/missing.gif';" src="https://eventscdn.portfolio.hu/portfolio/conferences/p_ai_digital_transformation_2026_web_620x620-hu-2032-rz5r.jpg" loading="lazy" class="img-fluid">
+			<img class="d-block d-md-none" onerror="this.src='https://eventscdn.portfolio.hu/assets/images/missing.gif';" src="https://eventscdn.portfolio.hu/portfolio/conferences/p_ai_digital_transformation_2026_web_768x259-hu-2032-rnqq.jpg" loading="lazy" class="img-fluid">
+		</a>
+	</div>
+	<div class="w-100">
+		<div class="d-flex flex-column justify-content-between align-items-start gap-3">
+			<div class="date-badge">
+				<h2 class="poppins pxl-24 weight-800 text-uppercase">
+					<a href="https://www.portfolio.hu/rendezvenyek/konferencia-it/ai-digital-transformation-2026/2032">AI &amp; Digital Transformation 2026</a>
+				</h2>
+								<div class="date-badge-wrapper d-flex column-gap-3 mt-2">
+					<div class="pxl-17 text-nowrap">2026. november 26. Marriott Hotel</div>
+					<div class="cnf-block-badges text-nowrap">
+																								</div>
+				</div>
+							</div>
+			<div class="lines-3">Elképesztő ütemben&nbsp;digitalizálódik az életünk és ezzel együtt a vállalatok működése, a papír alapú folyamatok megszűnnek, a fiókokba, személyes ügyintézésre csak a legkomplexebb ügyekben járunk, digitális csatornákon 0-24 órában kommunikálunk, ügyeket intézünk. Ám most a digitális világot, a belső működést és az ügyfél front-endeket is feje tetejére állítja az&nbsp;AI-forradalom, és az agentic&nbsp;AI&nbsp;trend. Az önállóan cselekedni képes&nbsp;AI-ügynökök, illetve az egyes üzleti, compliance és adminisztratív folyamatokat támogató&nbsp;AI-eszközök és vállalti megoldások korábban elképzelhetetlen sebességet és rendkívüli hatékonyságbeli fejlődési lehetőséget adnak a cégeknek. MIt kezdünk a megnyert munkaórákkal és a megspórolt munkaerővel? A core bizniszt is felforgatja a mesterséges intelligencia? Mire jó a vibe coding? Nagyvállalatoknak és kkv-knak is szóló rendezvényünkön többek között ezekre a kérdésekre is válaszokat keresünk és adunk!
+
+&nbsp;</div>
+			<a href="https://www.portfolio.hu/rendezvenyek/konferencia-it/ai-digital-transformation-2026/2032" class="site-btn site-btn-dark" >
+			<span class="poppins">Részletek &amp; jegyek</span>
+			<span><svg class="site-icons" data-icon="btn-arrow" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13.468 13.468"><g fill="currentColor" stroke="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6.73 12.33a.5.5 0 0 0 .354-.147l5.1-5.1a.5.5 0 0 0 0-.706l-5.1-5.1a.5.5 0 0 0-.707 0 .5.5 0 0 0 0 .707l4.746 4.746-4.746 4.746a.5.5 0 0 0 0 .707.5.5 0 0 0 .353.147"/><path d="M11.785 7.234a.5.5 0 0 0 .5-.5.5.5 0 0 0-.5-.5H1.683a.5.5 0 0 0-.5.5.5.5 0 0 0 .5.5z"/></g></svg></span>
+		</a>
+			</div>
+	</div>
+</div>
+						<div class="cnf-list-all d-flex flex-column flex-md-row align-items-center mb-cnf column-gap-cnf row-gap-3">
+	<div>
+		<a href="https://www.portfolio.hu/rendezvenyek/konferencia-agrar/agrarszektor-konferencia-2026/1990">
+			<img class="d-none d-md-block" onerror="this.src='https://eventscdn.portfolio.hu/assets/images/missing.gif';" src="https://eventscdn.portfolio.hu/portfolio/conferences/asz_26_web_620x620-hu-1990-rlmr.jpg" loading="lazy" class="img-fluid">
+			<img class="d-block d-md-none" onerror="this.src='https://eventscdn.portfolio.hu/assets/images/missing.gif';" src="https://eventscdn.portfolio.hu/portfolio/conferences/asz26_web_768x259-hu-1990-rfam.jpg" loading="lazy" class="img-fluid">
+		</a>
+	</div>
+	<div class="w-100">
+		<div class="d-flex flex-column justify-content-between align-items-start gap-3">
+			<div class="date-badge">
+				<h2 class="poppins pxl-24 weight-800 text-uppercase">
+					<a href="https://www.portfolio.hu/rendezvenyek/konferencia-agrar/agrarszektor-konferencia-2026/1990">Agrárszektor Konferencia 2026</a>
+				</h2>
+								<div class="pxl-17">2026. december 2–3. Siófok, Hotel Azúr Wellness ****</div>
+							</div>
+			<div class="lines-3">A Portfolio Csoport Agrárszektor Konferenciája – tartalmi kínálatát tekintve – ma már a hazai agrárium legnagyobb agrárszakmai rendezvényének és csúcstalálkozójának számít. A konferencia célja, hogy összegezze és elemezze az év kiemelkedő hazai és nemzetközi agrárgazdasági eseményeit, illetve prognózist nyújtson a következő évekre az agrárpiaci szereplők sikeres üzleti és beruházási döntéseihez. A konferencia háromnapos szakmai programmal várja az érdeklődőket: az esemény ünnepélyes szakmai előesttel kezdődik, amelyet további két, rendkívül összetett és kimerítően részletes egész napos szakmai tartalmi kínálat követ.
+
+A konferencián&nbsp;a&nbsp;hazai államigazgatási, banki, vállalati és érdekképviseleti szféra csúcsvezetői&nbsp;nyújtanak első kézből származó,&nbsp;releváns információkat, amelyek&nbsp;az agrárgazdaság valamennyi szereplője&nbsp;– a termelők, az élelmiszergyártók és a kereskedők –&nbsp;számára&nbsp;egyaránt hasznos tájékoztatásul szolgálhatnak. Emellett a rendezvény&nbsp;széles körű&nbsp;bemutatkozási és piacépítési lehetőséget&nbsp;biztosít az agráriumot kiszolgáló vállalkozások –&nbsp;inputgyártók, integrátorok, gépforgalmazók, finanszírozási és egyéb szolgáltatók&nbsp;– számára.
+
+A konferencia a tartalmas programkínálaton túl alkalmat teremt a&nbsp;szakmai kapcsolatépítésre, a networkingre és az&nbsp;üzleti tárgyalásokra, a színvonalas szakmai előadások és kerekasztal-beszélgetések mellett pedig szórakoztató műsorral járul hozzá a résztvevők feltöltődéséhez és kikapcsolódásához.
+
+A Portfolio Csoport az Agrárszektor Konferencián adja át tizenegy kategóriában azokat az évente odaítélhető díjakat, amelyek az agrárium legkiemelkedőbb szakmai teljesítményeinek és eredményeinek elismeréséül szolgálnak. A díjakat az agrárium legmeghatározóbb személyeségeiből áll szakmai zsűri ítéli oda az ágazati szereplők benyújtott pályázatai alapján.</div>
+			<a href="https://www.portfolio.hu/rendezvenyek/konferencia-agrar/agrarszektor-konferencia-2026/1990" class="site-btn site-btn-dark" >
+			<span class="poppins">Részletek &amp; jegyek</span>
+			<span><svg class="site-icons" data-icon="btn-arrow" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13.468 13.468"><g fill="currentColor" stroke="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6.73 12.33a.5.5 0 0 0 .354-.147l5.1-5.1a.5.5 0 0 0 0-.706l-5.1-5.1a.5.5 0 0 0-.707 0 .5.5 0 0 0 0 .707l4.746 4.746-4.746 4.746a.5.5 0 0 0 0 .707.5.5 0 0 0 .353.147"/><path d="M11.785 7.234a.5.5 0 0 0 .5-.5.5.5 0 0 0-.5-.5H1.683a.5.5 0 0 0-.5.5.5.5 0 0 0 .5.5z"/></g></svg></span>
+		</a>
+			</div>
+	</div>
+</div>
+						<div class="cnf-list-all d-flex flex-column flex-md-row align-items-center mb-cnf column-gap-cnf row-gap-3">
+	<div>
+		<a href="https://www.portfolio.hu/rendezvenyek/konferencia-ingatlan/property-warm-up-2027/2140">
+			<img class="d-none d-md-block" onerror="this.src='https://eventscdn.portfolio.hu/assets/images/missing.gif';" src="https://eventscdn.portfolio.hu/portfolio/conferences/p_property_warm_up_27_web_620x620-hu-2140-rr4z.jpg" loading="lazy" class="img-fluid">
+			<img class="d-block d-md-none" onerror="this.src='https://eventscdn.portfolio.hu/assets/images/missing.gif';" src="https://eventscdn.portfolio.hu/portfolio/conferences/p_property_warm_up_27_web_768x259-hu-2140-rc28.jpg" loading="lazy" class="img-fluid">
+		</a>
+	</div>
+	<div class="w-100">
+		<div class="d-flex flex-column justify-content-between align-items-start gap-3">
+			<div class="date-badge">
+				<h2 class="poppins pxl-24 weight-800 text-uppercase">
+					<a href="https://www.portfolio.hu/rendezvenyek/konferencia-ingatlan/property-warm-up-2027/2140">Property Warm Up 2027</a>
+				</h2>
+								<div class="pxl-17">2027. február 23. Crowne Plaza Budapest</div>
+							</div>
+			<div class="lines-3">
+
+A hazai ingatlanpiac kiemelt évindító szakmai, üzleti és networking rendezvénye, hogy még tágabb perspektívából indítsuk az évet! Az ingatlanpiac szárnyaló vagy éppen nyomás alatt lévő folyamatait, jelenségeit, kihívásait, lehetőségeit napi szinten érezzük a bőrünkön, de kibeszélni, egyeztetni, személyes véleményeket cserélni és a valós üzleti lehetőségeket és kapcsolatokat ápolni mindig a leghasznosabb módja a közös fejlődésnek.
+
+Az év elején azonban szeretnénk, ha - az elmaradhatatlan találkozás, információcsere és üzleti/baráti kapcsolatépítés mellett - a piacunk szereplői tágabb, az ingatlanok világát közvetetten érintő, de nagyon is befolyásoló témákról beszélhetnének, azokról hallhatnának előadásokat és beszélgetéseket. Ilyen kiemelt területek a makrogazdasági és finanszírozási helyzet, a jövőkutatás, a klímaváltozás, a társadalmi változások, a jövő generációinak megértése, a globális pénzügyi és energiapiaci várakozások, vagy a világgazdaság és társadalom jövőjét, vagyis a mi jövőnket, a partnereink, bérlőink, munkavállalóink jövőjét befolyásoló legfontosabb kérdések.
+
+Pörgessük be a pozitív és optimista várakozásokkal telinek ígérkező évet egy különleges évindító ingatlanpiaci találkozóval!
+
+A világunkat és a közvetlen környezetünket átalakító témák és az esemény kiemelt támogatója a Devo Group.</div>
+			<a href="https://www.portfolio.hu/rendezvenyek/konferencia-ingatlan/property-warm-up-2027/2140" class="site-btn site-btn-dark" >
+			<span class="poppins">Részletek &amp; jegyek</span>
+			<span><svg class="site-icons" data-icon="btn-arrow" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13.468 13.468"><g fill="currentColor" stroke="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6.73 12.33a.5.5 0 0 0 .354-.147l5.1-5.1a.5.5 0 0 0 0-.706l-5.1-5.1a.5.5 0 0 0-.707 0 .5.5 0 0 0 0 .707l4.746 4.746-4.746 4.746a.5.5 0 0 0 0 .707.5.5 0 0 0 .353.147"/><path d="M11.785 7.234a.5.5 0 0 0 .5-.5.5.5 0 0 0-.5-.5H1.683a.5.5 0 0 0-.5.5.5.5 0 0 0 .5.5z"/></g></svg></span>
+		</a>
+			</div>
+	</div>
+</div>
+						<div class="cnf-list-all d-flex flex-column flex-md-row align-items-center mb-cnf column-gap-cnf row-gap-3">
+	<div>
+		<a href="https://www.portfolio.hu/rendezvenyek/konferencia-gazdasag/portfolio-investment-day-2027/2182">
+			<img class="d-none d-md-block" onerror="this.src='https://eventscdn.portfolio.hu/assets/images/missing.gif';" src="https://eventscdn.portfolio.hu/portfolio/conferences/pid_2027_marc_web_620x620_3-hu-2182-rsze.jpg" loading="lazy" class="img-fluid">
+			<img class="d-block d-md-none" onerror="this.src='https://eventscdn.portfolio.hu/assets/images/missing.gif';" src="https://eventscdn.portfolio.hu/portfolio/conferences/pid_2027_marc_web_768x259-hu-2182-rjh3.jpg" loading="lazy" class="img-fluid">
+		</a>
+	</div>
+	<div class="w-100">
+		<div class="d-flex flex-column justify-content-between align-items-start gap-3">
+			<div class="date-badge">
+				<h2 class="poppins pxl-24 weight-800 text-uppercase">
+					<a href="https://www.portfolio.hu/rendezvenyek/konferencia-gazdasag/portfolio-investment-day-2027/2182">Portfolio Investment Day 2027</a>
+				</h2>
+								<div class="pxl-17">2027. március 3. CEU Nádor Event Center</div>
+							</div>
+			<div class="lines-3">Mibe érdemes tenni a pénzt 2027-ben? Mekkora kockázatot vállaljunk a magasabb hozamért, és hol találunk még olyan befektetéseket, amikben a következő évek növekedése nincs teljesen beárazva? A Portfolio Investment Day februári konferenciáján ezekre a kérdésekre keressük a választ Magyarország ismert befektetési szakembereivel, alapkezelőivel, elemzőivel és vállalatvezetőivel. Végignézzük a hazai és nemzetközi piacok legfontosabb történeteit, összevetjük az egyes eszközosztályok lehetőségeit, és konkrét befektetési ötletekről beszélgetünk.
+
+A befektetőknek egyre több, egymásnak is ellentmondó folyamat között kell eligazodniuk. A technológiai fejlődés hatalmas beruházásokat indított el, közben egyre fontosabb kérdés, hogy ezek mikor és mekkora nyereséget termelnek. Az energiaellátás biztonsága, a védelmi kiadások növekedése és a termelés átszervezése egész iparágak kilátásait alakítja át. A vállalatoknak változó kereskedelmi feltételekhez, bizonytalan finanszírozási költségekhez és geopolitikai kockázatokhoz kell alkalmazkodniuk. Ebben a környezetben különösen sokat számít, milyen áron vásárolunk, mennyire megbízhatók a növekedési várakozások, és mekkora veszteséget tudunk elviselni, ha másként alakulnak az események.
+
+A részvénypiacokon az egyik legizgalmasabb kérdés, hogy kik vezethetik a következő emelkedést. Megőrzik előnyüket az amerikai technológiai óriások, vagy szélesebb körben is vonzó lehetőségek nyílnak? Mekkora üzlet lehet az adatközpontok, a villamosenergia-hálózatok és az energiatermelés fejlesztése? Mire lehetnek képesek az európai bankok, iparvállalatok és védelmi cégek, és hol találhatunk érdekes befektetéseket Ázsiában? Megvizsgáljuk a népszerű növekedési történeteket, az osztalékfizető vállalatokat és azokat a kevésbé követett részvényeket is, amikre még kevesebb figyelem jut.
+
+A kötvények és a devizák legalább ennyi kérdést tartogatnak. Az infláció, a jegybanki döntések és az államok finanszírozási igénye egyaránt befolyásolja, milyen hozam mellett és milyen futamidőre érdemes befektetni. Mikor célszerű hosszabb időre rögzíteni a kamatot? Milyen kockázatot jelent egy hosszú kötvény, és mekkora szerepe lehet a vállalati kötvényeknek egy magánbefektető portfóliójában? A forintban számoló megtakarítók számára azt is végigvesszük, hogyan módosíthatja egy befektetés eredményét az euró vagy a dollár mozgása, és mikor lehet indokolt a devizakockázat fedezése.
+
+Kiemelt figyelmet kapnak a magyar megtakarításokat érintő döntések. Összehasonlítjuk a lakossági állampapírokat a befektetési alapokkal, az ETF-ekkel és a közvetlen részvénybefektetésekkel, kitérve a hozzáférhetőségre, a költségekre és az adózásra is. Megnézzük, milyen kilátásokkal indulnak neki 2027-nek az OTP, a Mol, a Richter, a Magyar Telekom és a kisebb tőzsdei vállalatok. Körüljárjuk, hogyan hathat a magyar gazdaságpolitika, az uniós források alakulása és az euróbevezetés lehetősége a forintra, a kötvényhozamokra és a hazai részvények értékeltségére.
+
+Az arany, az ezüst, a réz, az energiahordozók és a kriptoeszközök szerepét is megvizsgáljuk. Melyik befektetés milyen környezetben teljesíthet jól, és mennyire számíthatunk rá akkor, amikor más piacokon romlik a hangulat? Az ingatlanoknál a várható áremelkedés mellett a bérleti bevételt, a fenntartási költségeket, az adózást és a befektetett pénz hozzáférhetőségét is mérlegre tesszük.
+
+A Portfolio Investment Day középpontjában a gyakorlatban is használható tudás áll. Szakértőinkkel arról beszélgetünk, hogyan lehet a különböző lehetőségekből a saját céljainkhoz, időtávunkhoz és kockázatvállalásunkhoz illő portfóliót összeállítani. Népszerű formátumainkban fundamentális és technikai szempontból is megvizsgáljuk a befektetők által követett eszközöket, megmutatjuk a fontosabb kockázatokat, és teret adunk az eltérő szakmai véleményeknek.</div>
+			<a href="https://www.portfolio.hu/rendezvenyek/konferencia-gazdasag/portfolio-investment-day-2027/2182" class="site-btn site-btn-dark" >
+			<span class="poppins">Részletek &amp; jegyek</span>
+			<span><svg class="site-icons" data-icon="btn-arrow" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13.468 13.468"><g fill="currentColor" stroke="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6.73 12.33a.5.5 0 0 0 .354-.147l5.1-5.1a.5.5 0 0 0 0-.706l-5.1-5.1a.5.5 0 0 0-.707 0 .5.5 0 0 0 0 .707l4.746 4.746-4.746 4.746a.5.5 0 0 0 0 .707.5.5 0 0 0 .353.147"/><path d="M11.785 7.234a.5.5 0 0 0 .5-.5.5.5 0 0 0-.5-.5H1.683a.5.5 0 0 0-.5.5.5.5 0 0 0 .5.5z"/></g></svg></span>
+		</a>
+			</div>
+	</div>
+</div>
+						<div class="cnf-list-all d-flex flex-column flex-md-row align-items-center mb-cnf column-gap-cnf row-gap-3">
+	<div>
+		<a href="https://www.portfolio.hu/rendezvenyek/konferencia-penzugy/biztositas-2027/2188">
+			<img class="d-none d-md-block" onerror="this.src='https://eventscdn.portfolio.hu/assets/images/missing.gif';" src="https://eventscdn.portfolio.hu/portfolio/conferences/biztositas_27_web_620x620-hu-2188-rliv.jpg" loading="lazy" class="img-fluid">
+			<img class="d-block d-md-none" onerror="this.src='https://eventscdn.portfolio.hu/assets/images/missing.gif';" src="https://eventscdn.portfolio.hu/portfolio/conferences/biztositas_27_web_768x259-hu-2188-rkwv.jpg" loading="lazy" class="img-fluid">
+		</a>
+	</div>
+	<div class="w-100">
+		<div class="d-flex flex-column justify-content-between align-items-start gap-3">
+			<div class="date-badge">
+				<h2 class="poppins pxl-24 weight-800 text-uppercase">
+					<a href="https://www.portfolio.hu/rendezvenyek/konferencia-penzugy/biztositas-2027/2188">Biztosítás 2027</a>
+				</h2>
+								<div class="pxl-17">2027. március 18. Hotel InterContinental Budapest</div>
+							</div>
+			<div class="lines-3">A magyar biztosítási piac szereplői 2027-ben egyszerre néznek szembe új kockázatokkal és új kitörési lehetőségekkel. A Portfolio Biztosítás 2027 konferencia kiemelten foglalkozik azzal, hogyan alakulnak a hazai egészségbiztosítási piac új növekedési pontjai, milyen irányokat jelölhet ki az új kormány és a jegybank a biztosítások és megtakarítások piacán, valamint milyen üzleti és stratégiai kilátásokkal számolnak a biztosítói szektor vezetői.
+
+A konferencia panelbeszélgetései átfogó helyzetértékelést adnak a piac előtt álló kihívásokról, a szabályozási és értékesítési aktualitásokról, valamint az élet-, vagyon- és felelősségbiztosításokat érintő legfontosabb kérdésekről.
+A konferencia nemcsak a hazai folyamatokra, hanem a nemzetközi kitekintésre is hangsúlyt helyez: szó lesz magyar szakemberek európai karrierútjairól és a tőlünk nyugatra tapasztalható piaci kihívásokról. Kiemelt téma lesz továbbá az AI biztosítási piaci szerepe is: mit ígér a technológia az értékesítésben, működésben és ügyfélkiszolgálásban, és milyen kockázatokat, fenyegetéseket hordoz magában.
+
+A Portfolio hagyományaihoz hűen az esemény a biztosítók, közvetítők, tanácsadók és technológiai szolgáltatók számára is fontos találkozási pont, ahol a szakmai tartalom mellett a networking is központi szerepet kap.
+Március 18-án lesz a Portfolio Biztosítás 2027 konferenciája, a magyar biztosítók és közvetítők nagy találkozója, érdemes eljönni!</div>
+			<a href="https://www.portfolio.hu/rendezvenyek/konferencia-penzugy/biztositas-2027/2188" class="site-btn site-btn-dark" >
+			<span class="poppins">Részletek &amp; jegyek</span>
+			<span><svg class="site-icons" data-icon="btn-arrow" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13.468 13.468"><g fill="currentColor" stroke="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6.73 12.33a.5.5 0 0 0 .354-.147l5.1-5.1a.5.5 0 0 0 0-.706l-5.1-5.1a.5.5 0 0 0-.707 0 .5.5 0 0 0 0 .707l4.746 4.746-4.746 4.746a.5.5 0 0 0 0 .707.5.5 0 0 0 .353.147"/><path d="M11.785 7.234a.5.5 0 0 0 .5-.5.5.5 0 0 0-.5-.5H1.683a.5.5 0 0 0-.5.5.5.5 0 0 0 .5.5z"/></g></svg></span>
+		</a>
+			</div>
+	</div>
+</div>
+						<div class="cnf-list-all d-flex flex-column flex-md-row align-items-center mb-cnf column-gap-cnf row-gap-3">
+	<div>
+		<a href="https://www.portfolio.hu/rendezvenyek/konferencia-ingatlan/epitoipar-2027/2172">
+			<img class="d-none d-md-block" onerror="this.src='https://eventscdn.portfolio.hu/assets/images/missing.gif';" src="https://eventscdn.portfolio.hu/portfolio/conferences/p_epitoipar_27_web_620x620-hu-2172-rst5.jpg" loading="lazy" class="img-fluid">
+			<img class="d-block d-md-none" onerror="this.src='https://eventscdn.portfolio.hu/assets/images/missing.gif';" src="https://eventscdn.portfolio.hu/portfolio/conferences/p_epitoipar_27_web_768x259-hu-2172-r5zb.jpg" loading="lazy" class="img-fluid">
+		</a>
+	</div>
+	<div class="w-100">
+		<div class="d-flex flex-column justify-content-between align-items-start gap-3">
+			<div class="date-badge">
+				<h2 class="poppins pxl-24 weight-800 text-uppercase">
+					<a href="https://www.portfolio.hu/rendezvenyek/konferencia-ingatlan/epitoipar-2027/2172">Építőipar 2027</a>
+				</h2>
+								<div class="pxl-17">2027. március 23. Marriott Hotel, Budapest</div>
+							</div>
+			<div class="lines-3">Újra együtt a szakma csúcsa! A hazai építőipar talán legfontosabb üzleti találkozójává nőtte ki magát a „Portfolio Építőipar” konferenciánk, amit 2027-ben immáron kilencedik alkalommal rendezünk meg a szakma kiemelt szereplőinek részvételével és támogatásával. Az eseményen az építőipar szereplőit érintő legégetőbb és legaktuálisabb pénzügyi, üzleti, szabályozási, hatékonysági kérdéseket járjuk körbe az iparág véleményvezéreivel. A „Portfolio Építőipar 2027” konferencia nem csupán egy egész napos szakmai és véleményvezér fórum, hanem az egyik leghatékonyabb üzleti networking találkozóhely a szektor szereplői számára, ahol a piac jövőjének bemutatása mellett egy egész napos prémium találkozási lehetőséget és egy kötetlen hangulatú esti állófogadást is kínálunk a résztvevők számára.
+
+A konferencia programjában való szakmai és tartalmi megjelenéseken túl lehetőséget nyújtunk partnereink számára, hogy a rendezvényen résztvevő, több mint 500 vezető építőipari szereplő számára, akár élményalapú és/vagy termék bemutatására alkalmas felülettel, standdal, szolgáltatással jelenjenek meg.
+
+Az új időkben is építsük közösen tovább a hazai építőipart!
+
+Legyen ott Ön is a díjátadón! Vegyen részt az állófogadással, networkinggel, bárokkal és kötetlen szakmai beszélgetésekkel színesített eseményen a konferenciát követően. Ünnepeljük együtt a hazai építőipart!</div>
+			<a href="https://www.portfolio.hu/rendezvenyek/konferencia-ingatlan/epitoipar-2027/2172" class="site-btn site-btn-dark" >
+			<span class="poppins">Részletek &amp; jegyek</span>
+			<span><svg class="site-icons" data-icon="btn-arrow" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13.468 13.468"><g fill="currentColor" stroke="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6.73 12.33a.5.5 0 0 0 .354-.147l5.1-5.1a.5.5 0 0 0 0-.706l-5.1-5.1a.5.5 0 0 0-.707 0 .5.5 0 0 0 0 .707l4.746 4.746-4.746 4.746a.5.5 0 0 0 0 .707.5.5 0 0 0 .353.147"/><path d="M11.785 7.234a.5.5 0 0 0 .5-.5.5.5 0 0 0-.5-.5H1.683a.5.5 0 0 0-.5.5.5.5 0 0 0 .5.5z"/></g></svg></span>
+		</a>
+			</div>
+	</div>
+</div>
+						<div class="cnf-list-all d-flex flex-column flex-md-row align-items-center mb-cnf column-gap-cnf row-gap-3">
+	<div>
+		<a href="https://www.portfolio.hu/rendezvenyek/konferencia-energia/vallalati-energiamenedzsment-2027/2184">
+			<img class="d-none d-md-block" onerror="this.src='https://eventscdn.portfolio.hu/assets/images/missing.gif';" src="https://eventscdn.portfolio.hu/portfolio/conferences/p_konfi_vallalati_energiamenedzs_2027_web_620x620-hu-2184-rbf1.jpg" loading="lazy" class="img-fluid">
+			<img class="d-block d-md-none" onerror="this.src='https://eventscdn.portfolio.hu/assets/images/missing.gif';" src="https://eventscdn.portfolio.hu/portfolio/conferences/p_konfi_vallalati_energiamenedzs_2027_web_768x259-hu-2184-rjml.jpg" loading="lazy" class="img-fluid">
+		</a>
+	</div>
+	<div class="w-100">
+		<div class="d-flex flex-column justify-content-between align-items-start gap-3">
+			<div class="date-badge">
+				<h2 class="poppins pxl-24 weight-800 text-uppercase">
+					<a href="https://www.portfolio.hu/rendezvenyek/konferencia-energia/vallalati-energiamenedzsment-2027/2184">Vállalati Energiamenedzsment 2027</a>
+				</h2>
+								<div class="pxl-17">2027. április 27. Radisson Blu Béke Hotel</div>
+							</div>
+			<div class="lines-3">Az energiaszámla végösszege sok döntés eredménye. Mikor vásárolunk, hogyan fogyasztunk, mibe ruházunk be, és mit kezdünk a rendelkezésre álló adatokkal? Konferenciánkon azt járjuk körül, hogyan válhat az energiamenedzsment a vállalati versenyképesség egyik eszközévé.</div>
+			<a href="https://www.portfolio.hu/rendezvenyek/konferencia-energia/vallalati-energiamenedzsment-2027/2184" class="site-btn site-btn-dark" >
+			<span class="poppins">Részletek &amp; jegyek</span>
+			<span><svg class="site-icons" data-icon="btn-arrow" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13.468 13.468"><g fill="currentColor" stroke="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6.73 12.33a.5.5 0 0 0 .354-.147l5.1-5.1a.5.5 0 0 0 0-.706l-5.1-5.1a.5.5 0 0 0-.707 0 .5.5 0 0 0 0 .707l4.746 4.746-4.746 4.746a.5.5 0 0 0 0 .707.5.5 0 0 0 .353.147"/><path d="M11.785 7.234a.5.5 0 0 0 .5-.5.5.5 0 0 0-.5-.5H1.683a.5.5 0 0 0-.5.5.5.5 0 0 0 .5.5z"/></g></svg></span>
+		</a>
+			</div>
+	</div>
+</div>
+					</div>
+	</div>
+		<div class="row mt-4">
+		<div class="col-12">
+			<h4 class="poppins pxl-18 weight-700 text-uppercase">Korábbi rendezvények</h4>
+<div class="dark-line mt-3"></div>		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-12 py-3">
+						<div class="cnf-list-all-sm d-flex flex-column flex-md-row align-items-center mb-cnf gap-3 gap-md-cnf">
+	<div>
+		<a href="https://www.portfolio.hu/rendezvenyek/konferencia-gazdasag/deep-tech-2026/2134">
+			
+			<img class="d-none d-md-block" onerror="this.src='https://eventscdn.portfolio.hu/assets/images/missing.gif';" src="https://eventscdn.portfolio.hu/portfolio/conferences/p_deeptech_26_web_620x620-hu-2134-rpcc.jpg" loading="lazy" class="img-fluid">
+			<img class="d-block d-md-none" onerror="this.src='https://eventscdn.portfolio.hu/assets/images/missing.gif';" src="https://eventscdn.portfolio.hu/portfolio/conferences/p_deeptech_26_web_768x259-hu-2134-rnbp.jpg" loading="lazy" class="img-fluid">
+		</a>
+	</div>
+	<div>
+		<div class="d-flex flex-column justify-content-between align-items-start gap-3">
+			<div>
+				<h3 class="cnf-title poppins weight-800 text-uppercase">
+					<a href="https://www.portfolio.hu/rendezvenyek/konferencia-gazdasag/deep-tech-2026/2134">Deep Tech 2026</a>
+				</h3>
+				<div>2026. november 18. Radisson Blu Béke Hotel</div>
+			</div>
+			<div>
+				<div class="pxl-17 cnf-lead lines-3">A következő évtizedek technológiai versenye nem azon dől el, ki használja ügyesebben a kész megoldásokat. Hanem azon, ki képes létrehozni, legyártani és birtokolni azokat a technológiákat, amelyek nélkül mások sem tudnak majd működni.
+
+Egy új akkumulátor, amely tovább tárolja az energiát. Egy anyag, amely könnyebb, erősebb vagy olcsóbban előállítható a korábbiaknál. Egy gyógyszer vagy diagnosztikai eljárás, amely korábban kezelhetetlen betegségekre ad választ. Robotikai rendszer, védelmi technológia, új gyártási folyamat vagy űripari fejlesztés. Mindezek nem egyik napról a másikra születnek meg: mély kutatás, komplex szakértelem, jelentős tőke és kitartó fejlesztés kell hozzájuk. Ezt nevezzük deep technek.
+
+A deep tech nem pusztán új termékeket vagy szolgáltatásokat hoz létre. Egész iparágak erőviszonyait alakíthatja át, és olyan tudást, gyártási kapacitást, szellemi tulajdont épít, amelyet nehéz utólag lemásolni vagy kiváltani.
+
+A Portfolio első Deep Tech konferenciáján megvizsgáljuk, hogyan lesz egy tudományos vagy mérnöki felismerésből piacképes vállalat, majd exportképes ipari teljesítmény. Hol áll Európa és Magyarország az Egyesült Államok és Kína közötti technológiai versenyben? Mely területeken van valódi tudásunk és mozgásterünk, hol függünk másoktól, és hogyan léphetünk túl a felhasználói vagy összeszerelőüzemi szerepen?
+
+Szó lesz arról is, hogyan születnek valójában az áttörések. Milyen kutatási környezet, infrastruktúra, finanszírozás és intézményi együttműködés szükséges ahhoz, hogy egy ígéretes eredmény ne vesszen el a publikációk vagy prototípusok tengerében, hanem hasznosítható tudássá, vállalattá és ipari képességgé váljon.
+
+Kutatók, egyetemi és vállalati K+F-vezetők, alapítók, befektetők, bankok, döntéshozók és nemzetközi technológiai szereplők beszélnek az AI-ról, a robotikáról, a biotech- és medtech-megoldásokról, az energiatárolásról, az új anyagokról, valamint az űripari, védelmi és dual-use fejlesztésekről. Konkrét esettanulmányokon keresztül mutatjuk meg, hol körvonalazódnak a következő nagy technológiai lehetőségek, és milyen szerepet vállalhat bennük Magyarország és a régió.
+
+Deep Tech 2026. Döntéshozói fórum azoknak, akik időben akarnak bekapcsolódni, a következő évtizedek legfontosabb technológiai sztorijaiba.</div>
+				<a href="https://www.portfolio.hu/rendezvenyek/konferencia-gazdasag/deep-tech-2026/2134" class="pxl-17 text-orange">Megnézem</a>
+			</div>
+		</div>
+	</div>
+</div>
+						<div class="cnf-list-all-sm d-flex flex-column flex-md-row align-items-center mb-cnf gap-3 gap-md-cnf">
+	<div>
+		<a href="https://www.portfolio.hu/rendezvenyek/konferencia-gazdasag/vallalkozoi-klub-2026/2164">
+			
+			<img class="d-none d-md-block" onerror="this.src='https://eventscdn.portfolio.hu/assets/images/missing.gif';" src="https://eventscdn.portfolio.hu/portfolio/conferences/mhb_klub_november_web_620x620-hu-2164-rajl.jpg" loading="lazy" class="img-fluid">
+			<img class="d-block d-md-none" onerror="this.src='https://eventscdn.portfolio.hu/assets/images/missing.gif';" src="https://eventscdn.portfolio.hu/portfolio/conferences/mhb_klub_november_web_768x259-hu-2164-rxxh.jpg" loading="lazy" class="img-fluid">
+		</a>
+	</div>
+	<div>
+		<div class="d-flex flex-column justify-content-between align-items-start gap-3">
+			<div>
+				<h3 class="cnf-title poppins weight-800 text-uppercase">
+					<a href="https://www.portfolio.hu/rendezvenyek/konferencia-gazdasag/vallalkozoi-klub-2026/2164">Vállalkozói Klub 2026</a>
+				</h3>
+				<div>2026. november 18. Radisson Blu Béke Hotel</div>
+			</div>
+			<div>
+				<div class="pxl-17 cnf-lead lines-3">A hazai vállalkozások előtt új finanszírozási időszak nyílhat meg: az uniós források fokozatos felszabadulása, valamint a kedvezményes hitelek és kombinált konstrukciók egyszerre teremthetnek lehetőséget. &nbsp;A hazai szektor fejlődését tehát nem feltétlenül a forráshiány, sokkal inkább a strukturális problémák, az innovációs képesség hiánya, az alacsony termelékenység és a nemzetközi versenykerülés hátráltathatja.
+
+A sikerhez tudatos stratégia, rendezett vállalati háttér, valós piaci teljesítmény és jól előkészített beruházási terv kell - előre meg kell határozniuk a következő három év versenyképességi és fejlesztési stratégiáját, és ehhez kell megtalálniuk a megfelelő finanszírozási formát. A magyar bankrendszer készen áll a kkv-k finanszírozására, legyen szó saját erő kiegészítéséről, forgóeszköz-finanszírozásról vagy beruházási hitelekről, viszont kell hozzá a vállalkozói kereslet.
+
+Szakértőinkkel arra keressük a választ, hogy milyen tényezők és finanszírozási lehetőségek támogathatják a fenntartható növekedést a változó gazdasági környezetben, valamint feltérképezzük a kkv-hitelezés jelenlegi helyzetét és a legfrissebb finanszírozási forrásokat is.</div>
+				<a href="https://www.portfolio.hu/rendezvenyek/konferencia-gazdasag/vallalkozoi-klub-2026/2164" class="pxl-17 text-orange">Megnézem</a>
+			</div>
+		</div>
+	</div>
+</div>
+						<div class="cnf-list-all-sm d-flex flex-column flex-md-row align-items-center mb-cnf gap-3 gap-md-cnf">
+	<div>
+		<a href="https://www.portfolio.hu/rendezvenyek/konferencia-gazdasag/hr-revolution-2026/2043">
+			
+			<img class="d-none d-md-block" onerror="this.src='https://eventscdn.portfolio.hu/assets/images/missing.gif';" src="https://eventscdn.portfolio.hu/portfolio/conferences/p_hr_rev_2026_web_620x620-hu-2043-rckl.jpg" loading="lazy" class="img-fluid">
+			<img class="d-block d-md-none" onerror="this.src='https://eventscdn.portfolio.hu/assets/images/missing.gif';" src="https://eventscdn.portfolio.hu/portfolio/conferences/p_hr_rev_2026_web_768x259-hu-2043-rk4t.jpg" loading="lazy" class="img-fluid">
+		</a>
+	</div>
+	<div>
+		<div class="d-flex flex-column justify-content-between align-items-start gap-3">
+			<div>
+				<h3 class="cnf-title poppins weight-800 text-uppercase">
+					<a href="https://www.portfolio.hu/rendezvenyek/konferencia-gazdasag/hr-revolution-2026/2043">HR (R)EVOLUTION 2026</a>
+				</h3>
+				<div>2026. november 17. Radisson Blu Béke Hotel</div>
+			</div>
+			<div>
+				<div class="pxl-17 cnf-lead lines-3">A Portfolio és a Pénzcentrum közös szervezésében megvalósuló&nbsp;HR (R)EVOLUTION 2026&nbsp;Magyarország egyik legnívósabb munkaerőpiaci és HR-szakmai konferenciája; a legismertebb hazai vállalatok HR-specialistáinak, közép- és felsővezetőinek találkozóhelye.&nbsp;A rendezvényen megvitatjuk az év legfontosabb munkaerőpiaci és meghatározó HR-trendjeit,&nbsp;ezzel hasznos, gyakorlati tudást adva a legfrissebb HR-szakmai kérdésekről, másrészt megteremtve a személyes találkozó lehetőségét az iparág nagyágyúival.
+
+A konferencia célja, hogy támogatást nyújtson a vezetőknek és a különböző területekre szakosodott&nbsp;HR-specialistáknak a legfontosabb HR-folyamatok (újra)tervezéséhez. Legyen szó a toborzásról, az onboardingról, a munkaerő-megtartásról és a tehetséggondozásról, vagy épp a munkaszervezésről, az AI adta lehetőségekről vagy a munkáltatói márka fejlesztéséről, illetve a belső-és külső kommunikáció fontosságáról is. A rendezvényen kiemelt fókuszt kapnak a&nbsp;munkaerőpiac makrogazdasági aspektusai,&nbsp;valamint az is, hogy a velünk élő&nbsp;HR-forradalom egyre inkább összenő a HR egyre szélsebesebben száguldó evolúciójával. Így a konferencia tematikáját erőteljesen fémjelzi majd a szektor digitális átalakulása, amely tekintetében szintén naprakész tudást sajátíthatnak el azok, akik ellátogatnak a rendezvényre.
+
+A&nbsp;mai munkaerőpiac sajátosságai teljesen más hozzáállást, sokkal nagyobb rugalmasságot követelnek meg a cégektől, mint korábban. A&nbsp;HR (R)EVOLUTION 2026&nbsp;nem csupán egy szakmai fórum, hanem az egyik leghatékonyabb üzleti networking találkozóhely a szektor szereplői számára, ahol minden érintett valós képet kaphat az iparág előtt álló legfontosabb kihívásokról, illetve az ágazat jelenjéről és jövőjéről.</div>
+				<a href="https://www.portfolio.hu/rendezvenyek/konferencia-gazdasag/hr-revolution-2026/2043" class="pxl-17 text-orange">Megnézem</a>
+			</div>
+		</div>
+	</div>
+</div>
+						<div class="cnf-list-all-sm d-flex flex-column flex-md-row align-items-center mb-cnf gap-3 gap-md-cnf">
+	<div>
+		<a href="https://www.portfolio.hu/rendezvenyek/konferencia-ingatlan/future-of-construction-2026/2066">
+			
+			<img class="d-none d-md-block" onerror="this.src='https://eventscdn.portfolio.hu/assets/images/missing.gif';" src="https://eventscdn.portfolio.hu/portfolio/conferences/foc_2026_web_620x620-hu-2066-rb6b.jpg" loading="lazy" class="img-fluid">
+			<img class="d-block d-md-none" onerror="this.src='https://eventscdn.portfolio.hu/assets/images/missing.gif';" src="https://eventscdn.portfolio.hu/portfolio/conferences/foc_2026_web_768x259-hu-2066-r6vd.jpg" loading="lazy" class="img-fluid">
+		</a>
+	</div>
+	<div>
+		<div class="d-flex flex-column justify-content-between align-items-start gap-3">
+			<div>
+				<h3 class="cnf-title poppins weight-800 text-uppercase">
+					<a href="https://www.portfolio.hu/rendezvenyek/konferencia-ingatlan/future-of-construction-2026/2066">Future of Construction 2026</a>
+				</h3>
+				<div>2026. november 12. Marriott Hotel, Budapest</div>
+			</div>
+			<div>
+				<div class="pxl-17 cnf-lead lines-3">Folytatódik a Future of Construction konferencia, a hazai építőipar közösségének kiemelt őszi networking és üzleti csúcstalálkozója. A fókusz pedig az új irányok, a hatékonyság, a fenntarthatóság, a versenyképesség és a transzparencia a hazai építőiparban. Mit hoz a változó piaci környezet és a szabályozási keretrendszer?
+
+Az építőipar új korszakba lépett minden szempontból Magyarországon. A politikai változás, a&nbsp;fenntarthatósági elvárások szigorodása, a szabályozási környezet átalakulása, az ellátási láncok és a piac szereplőinek átrendeződése, valamint a digitalizáció és a mesterséges intelligencia térnyerése alapjaiban formálják át a tervezés, a gyártás és a kivitelezés folyamatait. A költséghatékonyság, a termelékenység növelése, a munkaerőhiány kezelése, a hibák minimalizálása és a projektek kiszámítható megvalósítása ma már elképzelhetetlen a legmodernebb technológiák alkalmazása nélkül.
+
+Azok a vállalatok lesznek sikeresek, amelyek képesek gyorsan alkalmazkodni, integrálni az új technológiákat és valódi üzleti előnnyé alakítani az innovációt. A Future of Construction konferencia célja, hogy ebben nyújtson iránymutatást és gyakorlati tudást. Évről évre bemutatjuk az építőipar legfontosabb technológiai trendjeit, innovációit és jó gyakorlatait, miközben platformot teremtünk a piac meghatározó szereplői, döntéshozói, tervezői, kivitelezői, gyártói és technológiai szolgáltatói számára a kapcsolatépítésre és az együttműködésre.
+
+A hazai építőipar az elmúlt évek kihívásai után új egyensúlyi pontot keres. Találjunk rá közösen erre a pontra! Tartson velünk ezen az innovációval, adatokkal, mesterséges intelligenciával és mérnöki kreativitással teli úton, és építsük együtt a jövő fenntarthatóbb, hatékonyabb és sikeresebb magyar építőiparát!</div>
+				<a href="https://www.portfolio.hu/rendezvenyek/konferencia-ingatlan/future-of-construction-2026/2066" class="pxl-17 text-orange">Megnézem</a>
+			</div>
+		</div>
+	</div>
+</div>
+						<div class="cnf-list-all-sm d-flex flex-column flex-md-row align-items-center mb-cnf gap-3 gap-md-cnf">
+	<div>
+		<a href="https://www.portfolio.hu/rendezvenyek/konferencia-ingatlan/property-awards-2026/2036">
+			
+			<img class="d-none d-md-block" onerror="this.src='https://eventscdn.portfolio.hu/assets/images/missing.gif';" src="https://eventscdn.portfolio.hu/portfolio/conferences/property_awards_2026_web_620x620-hu-2036-r5k2.jpg" loading="lazy" class="img-fluid">
+			<img class="d-block d-md-none" onerror="this.src='https://eventscdn.portfolio.hu/assets/images/missing.gif';" src="https://eventscdn.portfolio.hu/portfolio/conferences/property_awards_2026_web_768x259-hu-2036-rtr3.jpg" loading="lazy" class="img-fluid">
+		</a>
+	</div>
+	<div>
+		<div class="d-flex flex-column justify-content-between align-items-start gap-3">
+			<div>
+				<h3 class="cnf-title poppins weight-800 text-uppercase">
+					<a href="https://www.portfolio.hu/rendezvenyek/konferencia-ingatlan/property-awards-2026/2036">Property Awards 2026</a>
+				</h3>
+				<div>2026. november 12. Marriott Hotel, Budapest</div>
+			</div>
+			<div>
+				<div class="pxl-17 cnf-lead lines-3">A folyamatosan változó globális és gazdasági környezetben a kiemelkedő ingatlanpiaci teljesítmények oázisaként, a szakma ünnepeként és a jövőbe vetett bizalom szimbólumaként tekintünk a 17. alkalommal megrendezésre kerülő Property Awards díjátadóra. Legyen ott idén is ünnepélyes és inspiráló rendezvényünkön, ahol a hazai ingatlanszakma meghatározó szereplőivel együtt ünnepeljük azokat a kiváló teljesítményeket, amelyek az ágazat fejlődését és megújulását szolgálták.
+
+Van mit ünnepelnünk, van mire koccintanunk!
+
+2026-ban is egy exkluzív networking esemény keretében adjuk át az év legkiemelkedőbb projektjeinek, megoldásainak és szakmai szereplőinek járó elismeréseket. A díjak odaítélésében továbbra is a szakma elismert képviselőiből álló, kétlépcsős zsűrirendszer működik közre, amely az elmúlt években tovább fejlődött, biztosítva a magas szakmai színvonalat és az átlátható értékelési folyamatot.
+
+Az ingatlanszektor ismét bizonyította alkalmazkodóképességét, innovációs erejét és hosszú távú értékteremtő szerepét. A Property Awards 2026 ezért nem csupán díjátadó, hanem találkozási pont, ahol közösen tekintünk vissza az elért eredményekre, és előre a következő időszak lehetőségeire.
+
+Idén a következő&nbsp;kategóriákban ismerjük el a legkiemelkedőbb hazai teljesítményeket:
+
+Év PM Üzlete (megújult!)
+
+Év FM Üzlete (megújult!)
+
+Év Finanszírozási Tranzakciója (megújult!)
+
+Év Lakóparkja - 150 lakás felett&nbsp;
+
+Év Lakóparkja - 150 lakás alatt&nbsp;
+
+Év Irodabérleti Tranzakciója&nbsp;
+
+Év Raktárbérleti Tranzakciója&nbsp;
+
+Év Hotelprojektje&nbsp;
+
+Év Ipariingatlan-fejlesztése&nbsp;20.000 m2&nbsp;felett&nbsp;
+
+Év Ipariingatlan-fejlesztése&nbsp;20.000 m2 alatt&nbsp;
+
+Év Irodafejlesztése&nbsp;
+
+Év Digitális Épülete (powered by CETIN)&nbsp;
+
+Év Ingatlanbefektetési Tranzakciója - külföld&nbsp;
+
+Év Ingatlanbefektetési Tranzakciója - belföld&nbsp;
+
+Év Ingatlanpiaci M&amp;A üzlete&nbsp;
+
+Év Ingatlanpiaci Tehetsége
+
+Darida Pál-emlékdíj (founded by Futureal)&nbsp;&nbsp;
+
+Év koncepciója díj (powered by UniCredit)&nbsp;- Közönségszavazás
+
+valamint a&nbsp;Különdíj
+
+&nbsp;
+
+Találkozzunk és ünnepeljük meg együtt a hazai ingatlanpiac 2026-os sikereit!&nbsp;
+
+Dress Code: Business</div>
+				<a href="https://www.portfolio.hu/rendezvenyek/konferencia-ingatlan/property-awards-2026/2036" class="pxl-17 text-orange">Megnézem</a>
+			</div>
+		</div>
+	</div>
+</div>
+						<div class="cnf-list-all-sm d-flex flex-column flex-md-row align-items-center mb-cnf gap-3 gap-md-cnf">
+	<div>
+		<a href="https://www.portfolio.hu/rendezvenyek/konferencia-penzugy/financial-intermediation-conference-2026/2116">
+			
+			<img class="d-none d-md-block" onerror="this.src='https://eventscdn.portfolio.hu/assets/images/missing.gif';" src="https://eventscdn.portfolio.hu/portfolio/conferences/fin_con_26_web_620x620-hu-2116-rmxs.jpg" loading="lazy" class="img-fluid">
+			<img class="d-block d-md-none" onerror="this.src='https://eventscdn.portfolio.hu/assets/images/missing.gif';" src="https://eventscdn.portfolio.hu/portfolio/conferences/fin_con_26_web_768x259-hu-2116-rchg.jpg" loading="lazy" class="img-fluid">
+		</a>
+	</div>
+	<div>
+		<div class="d-flex flex-column justify-content-between align-items-start gap-3">
+			<div>
+				<h3 class="cnf-title poppins weight-800 text-uppercase">
+					<a href="https://www.portfolio.hu/rendezvenyek/konferencia-penzugy/financial-intermediation-conference-2026/2116">Financial Intermediation Conference 2026</a>
+				</h3>
+				<div>2026. november 11. Marriott Hotel, Budapest</div>
+			</div>
+			<div>
+				<div class="pxl-17 cnf-lead lines-3">A tavalyi konferenciánk óta eltelt időszakban számos tényező befolyásolta a hazai hitelközvetítői piac működését. A 2025 őszén elindított Otthon Start Program jelentős mértékben élénkítette a hazai ingatlanpiacot, és ezen keresztül a jelzáloghitel-piacot is.Ugyanakkor továbbra is nyitott kérdés a program hosszú távú fenntarthatósága, valamint annak hatása a lakásárak alakulására és a költségvetésre.
+A 2026 novemberében hatályba lépő, a CCD2 irányelv hazai implementációját szolgáló fogyasztóihitel-szabályok szintén jelentős változásokat hoznak a hitelközvetítői szektor működésében. Az új előírások a fogyasztóvédelem további erősítését és a hitelezési folyamatok átláthatóságának növelését szolgálják, ugyanakkor a piaci szereplőktől jelentős felkészülést és alkalmazkodást igényelnek.
+A piaci szereplők jelenleg megkülönböztetett figyelemmel kísérik az új kormány gazdaságpolitikai és &nbsp;lakáspolitikai irányvonalát. A támogatási rendszerek, a lakáspolitikai intézkedések és a pénzügyi szektort érintő döntések ugyanis hosszú távon meghatározhatják a hazai hitelpiac fejlődésének irányát.
+A FIN-CON 2026 konferencia célja, hogy szakmai fórumot biztosítson a hitelpiac aktuális kérdéseinek megvitatására, valamint lehetőséget teremtsen a párbeszédre a piac meghatározó szereplői között. Rendezvényünkön a kormányzati és felügyeleti oldal képviselői, a bankszektor vezető szakemberei, valamint a hitelközvetítői piac meghatározó szereplői osztják meg tapasztalataikat és jövőre vonatkozó elképzeléseiket</div>
+				<a href="https://www.portfolio.hu/rendezvenyek/konferencia-penzugy/financial-intermediation-conference-2026/2116" class="pxl-17 text-orange">Megnézem</a>
+			</div>
+		</div>
+	</div>
+</div>
+						<div class="cnf-list-all-sm d-flex flex-column flex-md-row align-items-center mb-cnf gap-3 gap-md-cnf">
+	<div>
+		<a href="https://www.portfolio.hu/rendezvenyek/konferencia-gazdasag/professional-investment-day-2026/1982">
+			
+			<img class="d-none d-md-block" onerror="this.src='https://eventscdn.portfolio.hu/assets/images/missing.gif';" src="https://eventscdn.portfolio.hu/portfolio/conferences/proid_26_web_620x620-en-1982-rwgi.jpg" loading="lazy" class="img-fluid">
+			<img class="d-block d-md-none" onerror="this.src='https://eventscdn.portfolio.hu/assets/images/missing.gif';" src="https://eventscdn.portfolio.hu/portfolio/conferences/proid_26_web_768x259-en-1982-rjzs.jpg" loading="lazy" class="img-fluid">
+		</a>
+	</div>
+	<div>
+		<div class="d-flex flex-column justify-content-between align-items-start gap-3">
+			<div>
+				<h3 class="cnf-title poppins weight-800 text-uppercase">
+					<a href="https://www.portfolio.hu/rendezvenyek/konferencia-gazdasag/professional-investment-day-2026/1982">Professional Investment Day 2026</a>
+				</h3>
+				<div>2026. november 11. Marriott Hotel, Budapest</div>
+			</div>
+			<div>
+				<div class="pxl-17 cnf-lead lines-3">Magyarország vezető gazdasági lapja, valamint gazdasági- és pénzügyi tematikájú konferencia szervezője, a Portfolio novemberben ismét megrendezi az exkluzív meetupot a magyar vagyonkezelők, privátbankok, prémium bankok és befektetési szolgáltatók vezetői számára. A rendezvény célja, hogy neves külföldi/ hazai vagyonkezelők és piaci szakemberek segítségével adjon támpontot az év végi, valamint a 2027-es befektetési, vagyonkezelési és megtakarítási trendekről, és mindemellett lehetőséget teremtsen az exkluzív kapcsolatteremtésre és networkingre a szakmabelieknek.&nbsp;
+
+A Portfolio-nál nagy figyelmet fordítunk arra, hogy olvasóinknak és ügyfeleinknek mindig frissen, naprakészen adjuk át a befektetési és megtakarítási piac aktualitásait, a magánbefektetők edukálására hoztuk létre a Portfolio Investment Day rendezvényünket, amely mára 500 fő feletti konferenciává nőtte ki magát. Szükség van azonban egy olyan közegre, ahol teret engedünk a vagyonkezelői és befektetési szektor képviselőinek szakmai párbeszédére, ezt a célt szolgálja a Portfolio Professional Investment Day.&nbsp;
+
+Már javában épül a vagyonkezelés új operációs rendszere: egyszerre változik a technológia, a termékstruktúra, az ügyféligény, disztribúció és maga a befektetési infrastruktúra is. A rendezvényen a vagyonkezelési piac kihívásaival, az ügyfélkiszolgálás és a technológiai átalakulás új dimenziójával foglalkozunk, a legfontosabb trendek és várakozások egy helyen, kötetlenül, őszintén, leplezetlenül, szakmabeliek között. Ne maradj le erről az egyedülálló networking lehetőségről!
+
+Mi lesz még? A Portfolio idén is egyedülálló szakmai díjakkal ismeri el a hazai vagyonkezelési, alapkezelői és privátbanki piac kiemelkedő teljesítményeit. A díjak célja, hogy objektív adatok, iparági szavazatok, közönségvisszajelzések és független szakmai zsűri döntése alapján mutassák be, kik formálják ma a magyar befektetési szektor jövőjét.
+
+Az elismerések olyan kategóriákban születnek meg, mint az „Év Alapkezelője”, az „Év Private Banking Szolgáltatója”, „Év Portfóliómenedzsere” vagy az „Év Fenntartható Befektetési Megoldása”. A díjátadó célja, hogy a piac legjobbjait a transzparencia, a szakmai hitelesség és az innováció szellemében tegye láthatóvá.</div>
+				<a href="https://www.portfolio.hu/rendezvenyek/konferencia-gazdasag/professional-investment-day-2026/1982" class="pxl-17 text-orange">Megnézem</a>
+			</div>
+		</div>
+	</div>
+</div>
+						<div class="cnf-list-all-sm d-flex flex-column flex-md-row align-items-center mb-cnf gap-3 gap-md-cnf">
+	<div>
+		<a href="https://www.portfolio.hu/rendezvenyek/konferencia-it/banking-technology-2026/1998">
+			
+			<img class="d-none d-md-block" onerror="this.src='https://eventscdn.portfolio.hu/assets/images/missing.gif';" src="https://eventscdn.portfolio.hu/portfolio/conferences/banking_tech_2026_web_620x620-hu-1998-ry2b.jpg" loading="lazy" class="img-fluid">
+			<img class="d-block d-md-none" onerror="this.src='https://eventscdn.portfolio.hu/assets/images/missing.gif';" src="https://eventscdn.portfolio.hu/portfolio/conferences/banking_tech_2026_web_768x259-hu-1998-r4mn.jpg" loading="lazy" class="img-fluid">
+		</a>
+	</div>
+	<div>
+		<div class="d-flex flex-column justify-content-between align-items-start gap-3">
+			<div>
+				<h3 class="cnf-title poppins weight-800 text-uppercase">
+					<a href="https://www.portfolio.hu/rendezvenyek/konferencia-it/banking-technology-2026/1998">Banking Technology 2026</a>
+				</h3>
+				<div>2026. november 10. Marriott Hotel, Budapest</div>
+			</div>
+			<div>
+				<div class="pxl-17 cnf-lead lines-3">A&nbsp;bankszektor, az IT-szektor, a szabályozók és a fintech szektor egy helyen! Banking Technology&nbsp;konferenciánkon a bankok és a fintech támadók versenyéről,&nbsp;a&nbsp;pénzintézetek AI és digitális transzformációjáról, a szektor legfontosabb üzleti és technológiai kihívásait vitatják meg a téma legmagasabb szintű szakértői és a bankok topmenedzserei. &nbsp;
+
+A rendezvényen „technology deep dive” szekciónk keretében merülünk el mélyebben egy-egy technológiai megoldás gyakorlati alkalmazásában, esettanulmányokat is bemutatva, illetve workshop formátumban is végzünk technológiai mélyfúrásokat. Külföldi előadóink hoznak határon túli tapasztalatokat, új tudást és látásmódot a konferencia résztvevőinek fintech és AI területen.
+
+A bankszektor top vezetői, fintech-guruk, tanácsadók, a szabályozók és az IT-cégek&nbsp;szakértőinek krémje már tizenegyedik éve gyűlik össze konferenciánkon, hogy megosszák egymással gondolataikat&nbsp;a bankszektort érintő legfontosabb üzleti és informatikai&nbsp;kérdésekben.
+
+&nbsp;</div>
+				<a href="https://www.portfolio.hu/rendezvenyek/konferencia-it/banking-technology-2026/1998" class="pxl-17 text-orange">Megnézem</a>
+			</div>
+		</div>
+	</div>
+</div>
+						<div class="cnf-list-all-sm d-flex flex-column flex-md-row align-items-center mb-cnf gap-3 gap-md-cnf">
+	<div>
+		<a href="https://www.portfolio.hu/rendezvenyek/konferencia-gazdasag/keress-azon-hogy-masok-befektetnek/2174">
+			
+			<img class="d-none d-md-block" onerror="this.src='https://eventscdn.portfolio.hu/assets/images/missing.gif';" src="https://eventscdn.portfolio.hu/portfolio/conferences/o3_befektetoi_klub_2026_nov_web_620x620-hu-2174-rhds.jpg" loading="lazy" class="img-fluid">
+			<img class="d-block d-md-none" onerror="this.src='https://eventscdn.portfolio.hu/assets/images/missing.gif';" src="https://eventscdn.portfolio.hu/portfolio/conferences/o3_befektetoi_klub_2026_nov_web_768x259-hu-2174-rkxk.jpg" loading="lazy" class="img-fluid">
+		</a>
+	</div>
+	<div>
+		<div class="d-flex flex-column justify-content-between align-items-start gap-3">
+			<div>
+				<h3 class="cnf-title poppins weight-800 text-uppercase">
+					<a href="https://www.portfolio.hu/rendezvenyek/konferencia-gazdasag/keress-azon-hogy-masok-befektetnek/2174">Keress azon, hogy mások befektetnek</a>
+				</h3>
+				<div>2026. november 3. Bem Center</div>
+			</div>
+			<div>
+				<div class="pxl-17 cnf-lead lines-3">Vannak cégek, amelyek abból csinálnak üzletet, hogy mások pénzét befektetik. Az O3 Partners ilyen vállalkozásokban vásárol tulajdonrészt, és most új részvények kibocsátását tervezi. Hogyan működik ez az üzlet, és mire kellene az újabb pénz? A Portfolio és az O3 Investor Club november 3-i eseményén, a BEM Centerben Oszkó Péter vezérigazgató mutatja be a társaságot és annak terveit.
+
+Megismerheti, miért az alapkezelőkben lát lehetőséget az O3 Partners, mire fordítaná a befektetőktől érkező pénzt, és hogyan lépne tovább a magyar tőzsdén. Az előadás után Ön is felteheti kérdéseit, amelyekre a nyilvánosan elérhető információk alapján kaphat választ. Jöjjön el, és halljon a tervekről első kézből!
+
+&nbsp;</div>
+				<a href="https://www.portfolio.hu/rendezvenyek/konferencia-gazdasag/keress-azon-hogy-masok-befektetnek/2174" class="pxl-17 text-orange">Megnézem</a>
+			</div>
+		</div>
+	</div>
+</div>
+						<div class="cnf-list-all-sm d-flex flex-column flex-md-row align-items-center mb-cnf gap-3 gap-md-cnf">
+	<div>
+		<a href="https://www.portfolio.hu/rendezvenyek/konferencia-gazdasag/portfolio-investment-day-2026/1980">
+			
+			<img class="d-none d-md-block" onerror="this.src='https://eventscdn.portfolio.hu/assets/images/missing.gif';" src="https://eventscdn.portfolio.hu/portfolio/conferences/pid_2026_autumn_web_620x620-hu-1980-rzdv.jpg" loading="lazy" class="img-fluid">
+			<img class="d-block d-md-none" onerror="this.src='https://eventscdn.portfolio.hu/assets/images/missing.gif';" src="https://eventscdn.portfolio.hu/portfolio/conferences/pid_2026_autumn_web_768x259-hu-1980-refl.jpg" loading="lazy" class="img-fluid">
+		</a>
+	</div>
+	<div>
+		<div class="d-flex flex-column justify-content-between align-items-start gap-3">
+			<div>
+				<h3 class="cnf-title poppins weight-800 text-uppercase">
+					<a href="https://www.portfolio.hu/rendezvenyek/konferencia-gazdasag/portfolio-investment-day-2026/1980">Portfolio Investment Day 2026</a>
+				</h3>
+				<div>2026. október 21. RaM-ArT Színház</div>
+			</div>
+			<div>
+				<div class="pxl-17 cnf-lead lines-3">2026 sem hozott megnyugvást a befektetők számára. A geopolitikai konfliktusok továbbra is velünk vannak, a világkereskedelem átalakulása új nyerteseket és veszteseket teremt, miközben a mesterséges intelligencia körüli befektetési láz újabb rekordokra emelte a technológiai részvényeket. Közben egyre több kérdés merül fel azzal kapcsolatban, hogy mely trendek jelentenek valódi, hosszú távú értékteremtést, és melyek bizonyulhatnak átmeneti piaci eufóriának.
+
+Befektetési konferenciánkon profi befektetőkkel, alapkezelőkkel, elemzőkkel és iparági szakértőkkel többek között arra keressük a választ, hogy meddig tarthat még az AI-rali, hol vannak a következő nagy növekedési sztorik, milyen befektetési lehetőségeket teremt Európa fegyverkezése, mire számíthatsz a részvény-, kötvény- és devizapiacokon, valamint, hogy végre megérkezhet-e a kriptoeszközök új aranykora.
+
+Most is folytatjuk népszerű formátumunkat, amelyben a hazai befektetők körében legkeresettebb befektetési eszközöket fundamentális és technikai szemmel egyaránt megvizsgáljuk, bemutatva a legfontosabb kockázatokat és lehetőségeket.
+
+Természetesen az októberi eseményen is végigvesszük a legfontosabb tőkepiaci eszközosztályokat. Szó lesz hazai és nemzetközi részvényekről, kötvényekről, nyersanyagokról, devizákról, kriptoeszközökről, valamint azokról a hosszú távú trendekről, amelyek a következő évek befektetési döntéseit meghatározhatják.
+
+A Portfolio Investment Day 2026 őszén is a hazai befektetői közösség egyik legfontosabb találkozóhelye lesz. Az eseményen első kézből kaphatsz képet a világgazdaságot alakító folyamatokról, találkozhatsz a piac legismertebb szakértőivel, és olyan gyakorlati befektetési ötleteket ismerhetsz meg, amelyek segítséget nyújthatnak a következő időszak kihívásai között való eligazodásban.
+
+Itt a helyed, ha érdekel, merre tart a világgazdaság, kíváncsi vagy arra, hogy hol találhatók a következő évek legizgalmasabb befektetési lehetőségei, szeretnéd megérteni a részvény-, kötvény-, deviza-, nyersanyag- és kriptopiacokat mozgató folyamatokat, vagy egyszerűen szeretnéd tudni, hogyan hozhatsz jobb befektetési döntéseket egy gyorsan változó világban.</div>
+				<a href="https://www.portfolio.hu/rendezvenyek/konferencia-gazdasag/portfolio-investment-day-2026/1980" class="pxl-17 text-orange">Megnézem</a>
+			</div>
+		</div>
+	</div>
+</div>
+			
+						<div><nav class="d-flex justify-items-center justify-content-between pt-3">
+		<div class="d-flex justify-content-center flex-fill d-sm-none">
+			<ul class="pagination column-gap-2 text-uppercase poppins pxl-14">
+				
+									<li class="page-item disabled" aria-disabled="true">
+						<span class="page-link">< Előző</span>
+					</li>
+				
+				
+									<li class="page-item">
+						<a class="page-link" href="https://www.portfolio.hu/rendezvenyek/osszes?oldal=2" rel="next">Következő ></a>
+					</li>
+							</ul>
+		</div>
+
+		<div class="d-none flex-sm-fill d-sm-flex align-items-sm-center justify-content-sm-between">
+			
+			<div class="text-center w-100">
+				<ul class="pagination d-inline-flex column-gap-2">
+					
+											<li class="page-item disabled" aria-disabled="true" aria-label="< Előző">
+							<span class="page-link" aria-hidden="true"><i class="pxl-11 icon-arrow_left"></i></span>
+						</li>
+					
+					
+											
+						
+						
+																														<li class="page-item active" aria-current="page"><span class="page-link">1</span></li>
+																																<li class="page-item"><a class="page-link" href="https://www.portfolio.hu/rendezvenyek/osszes?oldal=2">2</a></li>
+																																<li class="page-item"><a class="page-link" href="https://www.portfolio.hu/rendezvenyek/osszes?oldal=3">3</a></li>
+																																<li class="page-item"><a class="page-link" href="https://www.portfolio.hu/rendezvenyek/osszes?oldal=4">4</a></li>
+																																<li class="page-item"><a class="page-link" href="https://www.portfolio.hu/rendezvenyek/osszes?oldal=5">5</a></li>
+																																<li class="page-item"><a class="page-link" href="https://www.portfolio.hu/rendezvenyek/osszes?oldal=6">6</a></li>
+																																
+													<li class="page-item page-item-dots" aria-disabled="true"><span class="page-link">...</span></li>
+						
+						
+																	
+						
+						
+																														<li class="page-item"><a class="page-link" href="https://www.portfolio.hu/rendezvenyek/osszes?oldal=96">96</a></li>
+																																<li class="page-item"><a class="page-link" href="https://www.portfolio.hu/rendezvenyek/osszes?oldal=97">97</a></li>
+																										
+					
+											<li class="page-item">
+							<a class="page-link" href="https://www.portfolio.hu/rendezvenyek/osszes?oldal=2" rel="next" aria-label="Következő >"><i class="pxl-11 icon-arrow_right"></i></a>
+						</li>
+									</ul>
+			</div>
+		</div>
+	</nav>
+</div>
+					</div>
+	</div>
+</div>
+
+<!-- Portfolio konferenciák 25 éve -->
+<section class="bg-cnf-grey pt-5 pb-2">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h2 class="year25-title poppins weight-800 text-uppercase">Portfolio Konferenciák 25 éve</h2>
+				<p class="pxl-17">
+					A Portfolio Csoport rendezvénydivíziója több mint két évtizede formálja a szakmai rendezvények piacát, folyamatosan piacvezető pozícióban. Országszerte évente átlagosan 70 üzleti konferenciát és közel 10 díjátadót szervezünk, 9 iparágban mutatjuk az irányt: gazdaság, agrár, ingatlan, egészségügy, pénzügy, járműipar, energia, IT, fenntarthatóság. Évente 40 ezer résztvevőt érünk el. A Portfolio Rendezvények név garancia a magas színvonalú szakmai tartalomra és a kiemelkedő B2B és B2C networkingre – prémium hotelekben, exkluzív környezetben, üzleti kapcsolatépítési és leadgenerálási lehetőségekkel. Eddig több mint 6 ezer előadó és több mint 30 ezer cég vett részt eseményeinken: szakértők, felsővezetők, döntéshozók, véleményvezérek, tulajdonosok. Csatlakozzon, és lépjen szintet - mi biztosítjuk a hazai üzleti szféra top közösségét!
+				</p>
+				<div class="row darkening-images mt-cnf row-gap-4">
+					<div class="col-md-4">
+						<a href="https://www.portfolio.hu/rendezvenyek/videok" class="d-block position-relative h-100 zoom-on-hover">
+							<div class="image-caption poppins top-0 start-0 end-0 bottom-0">
+								<span>Videók</span>
+							</div>
+							<img src="https://eventscdn.portfolio.hu/assets/images/videok.jpg" alt="">
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a href="https://www.portfolio.hu/rendezvenyek/galeria" class="d-block position-relative h-100 zoom-on-hover">
+							<div class="image-caption poppins top-0 start-0 end-0 bottom-0">
+								<span>Galéria</span>
+							</div>
+							<img src="https://eventscdn.portfolio.hu/assets/images/galeria.jpg" alt="Galéria">
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a href="https://www.portfolio.hu/rendezvenyek/eloadok" class="d-block position-relative h-100 zoom-on-hover">
+							<div class="image-caption poppins top-0 start-0 end-0 bottom-0">
+								<span>Előadók</span>
+							</div>
+							<img src="https://eventscdn.portfolio.hu/assets/images/eloadok.jpg" alt="Előadók">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!-- END Portfolio konferenciák 25 éve -->
+<section class="bg-cnf-grey pb-5">
+	<div class="container">
+	<div class="row">
+		<div class="col-lg-4 mt-cnf">
+			<div class="d-flex flex-column justify-content-between h-100">
+				<div>
+					<div class="poppins pxl-18 weight-700 pb-2 text-uppercase">Csatlakozzon</div>
+					<div class="dark-line mb-3"></div>
+					<div class="pxl-17">
+						Kövessen, lájkoljon, iratkozzon fel, hallgasson minket, írjon nekünk az alábbi csatornákon:
+					</div>
+				</div>
+				<div class="mt-4 mt-lg-0 mb-0 mb-lg-4">
+					<div class="social-wrapper d-flex gap-2">
+						<a href="https://www.youtube.com/playlist?list=PLtoH_NHG62hCkMGe6KfirKV5pVbMEJU1e" target="_blank" title="">
+							<svg class="site-icons" data-icon="youtube" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26"><path fill="currentColor" d="M11.073 15.873 16 13.072l-4.932-2.8.005 5.601Z"/><path fill="currentColor" d="M20.947 0H5.054A5.053 5.053 0 0 0 0 5.052v15.894a5.053 5.053 0 0 0 5.054 5.053h15.893A5.053 5.053 0 0 0 26 20.946V5.053A5.053 5.053 0 0 0 20.947 0m1.088 17.64a2.33 2.33 0 0 1-1.668 1.651c-2.444.296-4.905.43-7.367.4a56.658 56.658 0 0 1-7.366-.391 2.335 2.335 0 0 1-1.668-1.654 24.91 24.91 0 0 1-.393-4.569 24.91 24.91 0 0 1 .393-4.569 2.365 2.365 0 0 1 1.668-1.679A55.627 55.627 0 0 1 13 6.43c2.462-.03 4.923.104 7.367.4.816.221 1.452.86 1.668 1.677a24.91 24.91 0 0 1 .393 4.569 24.859 24.859 0 0 1-.393 4.565"/></svg>
+						</a>
+						<a href="https://www.facebook.com/portfoliorendezvenyek" target="_blank" title="">
+							<svg class="site-icons" data-icon="facebook" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26"><path fill="currentColor" d="M20.945 0H5.053A5.053 5.053 0 0 0 0 5.053v15.894A5.053 5.053 0 0 0 5.053 26h5.643v-9.43H7.27v-3.9h3.426V9.7c0-3.382 2.015-5.25 5.1-5.25 1.012.014 2.022.102 3.021.263v3.318h-1.7a1.95 1.95 0 0 0-2.2 2.107v2.531h3.743l-.6 3.9h-3.147V26h6.032a5.053 5.053 0 0 0 5.053-5.053V5.053A5.053 5.053 0 0 0 20.945 0"/></svg>
+						</a>
+						<a href="https://www.instagram.com/portfolio_konferenciak/" target="_blank" title="">
+							<svg class="site-icons" data-icon="insta" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="26" height="26" viewBox="0 0 26 26"><g fill="currentColor"><path d="M20.4 7.4c-.3-.8-1-1.5-1.8-1.8-1.2-.5-4.2-.4-5.6-.4-1.4 0-4.4-.1-5.6.4-.8.3-1.5 1-1.8 1.8-.5 1.2-.4 4.2-.4 5.6 0 1.4-.1 4.4.4 5.6.3.8 1 1.5 1.8 1.8 1.2.5 4.2.4 5.6.4s4.3.1 5.6-.4c.8-.3 1.5-1 1.8-1.8.5-1.2.4-4.2.4-5.6 0-1.4.1-4.4-.4-5.6zm-4 9c-.9.9-2.2 1.4-3.4 1.4-2 0-3.7-1.2-4.5-3-.8-1.8-.3-3.9 1.1-5.2s3.5-1.8 5.3-1.1c1.8.8 3 2.5 3 4.5 0 1.3-.5 2.5-1.5 3.4zm2.5-7.7c-.2.2-.5.3-.8.3-.5 0-.9-.3-1.1-.7-.2-.4-.1-.9.2-1.2.3-.3.8-.4 1.2-.2.4.2.7.6.7 1 .1.3 0 .6-.2.8z"></path><path d="M20.9 0H5.1C2.3 0 0 2.3 0 5.1V21c0 2.7 2.3 5 5.1 5H21c2.8 0 5.1-2.3 5.1-5.1V5.1C26 2.3 23.7 0 20.9 0zm1.5 16.9c-.1 1.5-.4 2.9-1.5 4s-2.5 1.5-4 1.5c-1.6.1-6.3.1-7.8 0s-2.9-.4-4-1.5-1.5-2.5-1.5-4c-.1-1.6-.1-6.3 0-7.8s.4-2.9 1.5-4 2.5-1.5 4-1.5c1.6-.1 6.3-.1 7.8 0s2.9.4 4 1.5 1.5 2.5 1.5 4c.1 1.5.1 6.2 0 7.8z"></path><path d="M13 9.8c-1.3 0-2.4.8-2.9 2s-.2 2.5.7 3.5c.9.9 2.3 1.2 3.5.7 1.2-.5 2-1.6 2-2.9 0-.8-.3-1.6-.9-2.2S13.8 9.8 13 9.8z"></path></g></svg>
+						</a>
+						<a href="https://www.linkedin.com/company/portfolio-conferences/" target="_blank" title="">
+							<svg class="site-icons" data-icon="linkedin2" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26"><path fill="currentColor" d="M20.947 0H5.053A5.053 5.053 0 0 0 0 5.053v15.894A5.053 5.053 0 0 0 5.053 26h15.894A5.053 5.053 0 0 0 26 20.947V5.053A5.053 5.053 0 0 0 20.947 0M7.97 21.808H4.189V9.655H7.97v12.153ZM6.077 7.995a2.188 2.188 0 1 1 .002-4.376 2.188 2.188 0 0 1-.002 4.376m16.035 13.813h-3.777V15.9c0-1.409-.028-3.223-1.961-3.223-1.968 0-2.269 1.534-2.269 3.121v6.014h-3.77V9.655h3.619v1.658h.052a3.98 3.98 0 0 1 3.576-1.961c3.818 0 4.529 2.52 4.529 5.793v6.663Z"/></svg>
+						</a>
+						<a href="javascript:window.location.href=atob('bWFpbHRvOnBvcnRmb2xpb0Bwb3J0Zm9saW8uaHU=')" title="">
+							<svg class="site-icons" data-icon="email" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26"><path fill="currentColor" d="M20.947 0H5.053A5.053 5.053 0 0 0 0 5.053v15.894A5.053 5.053 0 0 0 5.053 26h15.894A5.053 5.053 0 0 0 26 20.947V5.053A5.053 5.053 0 0 0 20.947 0m1.428 17.724a1.875 1.875 0 0 1-1.873 1.875H5.5a1.875 1.875 0 0 1-1.875-1.873v-6.453l8.115 4.059c.391.195.823.298 1.26.3a2.817 2.817 0 0 0 1.258-.3l8.117-4.058v6.45Zm0-8.549-8.95 4.477a.936.936 0 0 1-.838 0L3.625 9.175v-.826c0-1.035.838-1.874 1.873-1.875H20.5c1.035 0 1.874.838 1.875 1.873v.828Z"/></svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-4 mt-cnf">
+			<div class="d-flex flex-column justify-content-between h-100">
+				<div>
+					<div class="poppins pxl-18 weight-700 pb-2 text-uppercase">Hírlevél</div>
+					<div class="dark-line mb-3"></div>
+					<div class="pxl-17">
+						Iratkozzon fel exkluzív rendezvényértesítőnkre: hírek, események, ajánlatok első kézből.
+					</div>
+				</div>
+				<div class="mt-4">
+					<a href="https://www.portfolio.hu/rendezvenyek/esemenyajanlo" class="site-btn site-btn-dark" >
+			<span class="poppins">Feliratkozom</span>
+			<span><svg class="site-icons" data-icon="btn-arrow" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13.468 13.468"><g fill="currentColor" stroke="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6.73 12.33a.5.5 0 0 0 .354-.147l5.1-5.1a.5.5 0 0 0 0-.706l-5.1-5.1a.5.5 0 0 0-.707 0 .5.5 0 0 0 0 .707l4.746 4.746-4.746 4.746a.5.5 0 0 0 0 .707.5.5 0 0 0 .353.147"/><path d="M11.785 7.234a.5.5 0 0 0 .5-.5.5.5 0 0 0-.5-.5H1.683a.5.5 0 0 0-.5.5.5.5 0 0 0 .5.5z"/></g></svg></span>
+		</a>
+					</div>
+			</div>
+		</div>
+		<div class="col-lg-4 mt-cnf">
+			<div class="d-flex flex-column justify-content-between h-100">
+				<div>
+					<div class="poppins pxl-18 weight-700 pb-2 text-uppercase">Legyen Ön is támogatónk</div>
+					<div class="dark-line mb-3"></div>
+					<div class="pxl-17">
+						Nagyobb elérés, erősebb márkaépítés, szélesebb kapcsolati háló és új üzleti lehetőségek.
+					</div>
+				</div>
+
+				<div class="mt-4">
+					<a href="https://www.portfolio.hu/rendezvenyek/legyen-on-is-tamogatonk" class="site-btn site-btn-dark" >
+			<span class="poppins">További információ</span>
+			<span><svg class="site-icons" data-icon="btn-arrow" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13.468 13.468"><g fill="currentColor" stroke="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6.73 12.33a.5.5 0 0 0 .354-.147l5.1-5.1a.5.5 0 0 0 0-.706l-5.1-5.1a.5.5 0 0 0-.707 0 .5.5 0 0 0 0 .707l4.746 4.746-4.746 4.746a.5.5 0 0 0 0 .707.5.5 0 0 0 .353.147"/><path d="M11.785 7.234a.5.5 0 0 0 .5-.5.5.5 0 0 0-.5-.5H1.683a.5.5 0 0 0-.5.5.5.5 0 0 0 .5.5z"/></g></svg></span>
+		</a>
+					</div>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+
+		<!-- Footer -->
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				
+				<div class="d-flex flex-wrap gap-3 justify-content-center pxl-14 weight-600 m-auto px-4">
+					<div>
+						<span class="text-orange">© 2026 Portfolio</span>
+					</div>
+					<div class="d-flex flex-wrap justify-content-center gap-3">
+						<a class="text-nowrap" href="https://www.portfolio.hu/info/impresszum">Impresszum</a>
+						<a class="text-nowrap" href="https://www.portfolio.hu/info/jogi-nyilatkozat">Jogi nyilatkozat</a>
+						<a class="text-nowrap" href="javascript:window.__tcfapi('displayConsentUi', 2, function() {} );">Sütibeállítások</a>
+						<a class="text-nowrap" href="https://portfoliocsoport.hu/info/a-portfolio-konferenciak-adatkezelesi-tajekoztatoja">Adatvédelem</a>
+						<a class="text-nowrap" href="https://www.portfolio.hu/info/szerzoi-jogok">Szerzői jogok</a>
+						<a class="text-nowrap" href="https://portfoliocsoport.hu/mediaajanlat#portfolio">Médiaajánlat</a>
+						<a class="text-nowrap" href="https://portfoliocsoport.hu/karrier">Karrier</a>
+						<a class="text-nowrap" href="https://portfoliocsoport.hu/info/altalanos_szerzodesi_feltetelek_net_media_zrt">ÁSZF</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- End Footer -->
+	</main>
+
+	
+	<script src="https://p.portfolio.hu/push.js?t=27262"></script>
+
+	
+	<!-- (C)2000-2014 Gemius SA - gemiusAudience / portfolio.hu -->
+<script type="text/javascript">
+        <!--//--><![CDATA[//><!--
+        var pp_gemius_identifier = 'bQCadgdW.yLkEjRKxoa7K6Rtjw36o8LkiNSlttIEl0T.I7';
+        var pp_gemius_use_cmp = true;
+        var pp_gemius_cmp_timeout = Infinity;
+        
+        // lines below shouldn't be edited
+        function gemius_pending(i) { window[i] = window[i] || function() {var x = window[i+'_pdata'] = window[i+'_pdata'] || []; x[x.length]=arguments;};};
+        gemius_pending('gemius_hit'); gemius_pending('gemius_event'); gemius_pending('pp_gemius_hit'); gemius_pending('pp_gemius_event');
+        (function(d,t) {try {var gt=d.createElement(t),s=d.getElementsByTagName(t)[0],l='http'+((location.protocol=='https:')?'s':''); gt.setAttribute('async','async');
+        gt.setAttribute('defer','defer'); gt.src=l+'://gahu.hit.gemius.pl/xgemius.js'; s.parentNode.insertBefore(gt,s);} catch (e) {}})(document,'script');
+        //--><!]]>
+</script>
+</body>
+</html>

@@ -1,0 +1,4789 @@
+{
+ "checked_on": "2026-11-26",
+ "provider": "OpenStreetMap Nominatim",
+ "lookups": [
+  {
+   "venue_id": "bkk-03b4f82667cf",
+   "tier": "building",
+   "query": "1 Sukhumvit Soi 13, Khlong Toei Nuea, Watthana, Bangkok 10110, Thailand",
+   "checked_on": "2026-11-26",
+   "returned_place": "Hyatt Regency Bangkok Sukhumvit, 1, Soi Sukhumvit 13, Asok, Khlong Toei Nuea Subdistrict, Vadhana District, Bangkok, 10110, Thailand",
+   "latitude": 13.7399072,
+   "longitude": 100.5571624,
+   "attempts": [
+    {
+     "kind": "address",
+     "query": "1 Sukhumvit Soi 13, Khlong Toei Nuea, Watthana, Bangkok 10110, Thailand",
+     "url": "https://nominatim.openstreetmap.org/search?q=1+Sukhumvit+Soi+13%2C+Khlong+Toei+Nuea%2C+Watthana%2C+Bangkok+10110%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 257920832,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "node",
+       "osm_id": 11219584566,
+       "lat": "13.7399072",
+       "lon": "100.5571624",
+       "category": "tourism",
+       "type": "hotel",
+       "place_rank": 30,
+       "importance": 7.662546730750007e-05,
+       "addresstype": "tourism",
+       "name": "Hyatt Regency Bangkok Sukhumvit",
+       "display_name": "Hyatt Regency Bangkok Sukhumvit, 1, Soi Sukhumvit 13, Asok, Khlong Toei Nuea Subdistrict, Vadhana District, Bangkok, 10110, Thailand",
+       "address": {
+        "tourism": "Hyatt Regency Bangkok Sukhumvit",
+        "house_number": "1",
+        "road": "Soi Sukhumvit 13",
+        "neighbourhood": "Asok",
+        "quarter": "Khlong Toei Nuea Subdistrict",
+        "suburb": "Vadhana District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10110",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7398572",
+        "13.7399572",
+        "100.5571124",
+        "100.5572124"
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "name",
+     "query": "Hyatt Regency Bangkok Sukhumvit Bangkok",
+     "url": "https://nominatim.openstreetmap.org/search?q=Hyatt+Regency+Bangkok+Sukhumvit+Bangkok&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 257640721,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "node",
+       "osm_id": 11219584566,
+       "lat": "13.7399072",
+       "lon": "100.5571624",
+       "category": "tourism",
+       "type": "hotel",
+       "place_rank": 30,
+       "importance": 7.662546730750007e-05,
+       "addresstype": "tourism",
+       "name": "Hyatt Regency Bangkok Sukhumvit",
+       "display_name": "Hyatt Regency Bangkok Sukhumvit, 1, Soi Sukhumvit 13, Asok, Khlong Toei Nuea Subdistrict, Vadhana District, Bangkok, 10110, Thailand",
+       "address": {
+        "tourism": "Hyatt Regency Bangkok Sukhumvit",
+        "house_number": "1",
+        "road": "Soi Sukhumvit 13",
+        "neighbourhood": "Asok",
+        "quarter": "Khlong Toei Nuea Subdistrict",
+        "suburb": "Vadhana District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10110",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7398572",
+        "13.7399572",
+        "100.5571124",
+        "100.5572124"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "venue_id": "bkk-15f5088ad24f",
+   "tier": "area",
+   "query": "True Digital Park Bangkok",
+   "checked_on": "2026-11-26",
+   "returned_place": "True Digital Park, Bang Chak Subdistrict, Phra Khanong District, Bangkok, 10260, Thailand",
+   "latitude": 13.685581,
+   "longitude": 100.6113077,
+   "attempts": [
+    {
+     "kind": "address",
+     "query": "101 Sukhumvit Road, Bang Chak, Phra Khanong, Bangkok 10260, Thailand",
+     "url": "https://nominatim.openstreetmap.org/search?q=101+Sukhumvit+Road%2C+Bang+Chak%2C+Phra+Khanong%2C+Bangkok+10260%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "none",
+     "results": []
+    },
+    {
+     "kind": "name",
+     "query": "True Digital Park Bangkok",
+     "url": "https://nominatim.openstreetmap.org/search?q=True+Digital+Park+Bangkok&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 257618604,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 637524947,
+       "lat": "13.6855810",
+       "lon": "100.6113077",
+       "category": "landuse",
+       "type": "commercial",
+       "place_rank": 24,
+       "importance": 0.08007662546730751,
+       "addresstype": "commercial",
+       "name": "True Digital Park",
+       "display_name": "True Digital Park, Bang Chak Subdistrict, Phra Khanong District, Bangkok, 10260, Thailand",
+       "address": {
+        "commercial": "True Digital Park",
+        "quarter": "Bang Chak Subdistrict",
+        "suburb": "Phra Khanong District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10260",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.6844410",
+        "13.6874573",
+        "100.6104434",
+        "100.6122456"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "venue_id": "bkk-409c4524c88d",
+   "tier": "area",
+   "query": "True Digital Park Bangkok",
+   "checked_on": "2026-11-26",
+   "returned_place": "True Digital Park, Bang Chak Subdistrict, Phra Khanong District, Bangkok, 10260, Thailand",
+   "latitude": 13.685581,
+   "longitude": 100.6113077,
+   "attempts": [
+    {
+     "kind": "address",
+     "query": "101 Sukhumvit Road, Bang Chak, Phra Khanong, Bangkok 10260, Thailand",
+     "url": "https://nominatim.openstreetmap.org/search?q=101+Sukhumvit+Road%2C+Bang+Chak%2C+Phra+Khanong%2C+Bangkok+10260%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "none",
+     "results": []
+    },
+    {
+     "kind": "name",
+     "query": "True Digital Park Bangkok",
+     "url": "https://nominatim.openstreetmap.org/search?q=True+Digital+Park+Bangkok&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 257618604,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 637524947,
+       "lat": "13.6855810",
+       "lon": "100.6113077",
+       "category": "landuse",
+       "type": "commercial",
+       "place_rank": 24,
+       "importance": 0.08007662546730751,
+       "addresstype": "commercial",
+       "name": "True Digital Park",
+       "display_name": "True Digital Park, Bang Chak Subdistrict, Phra Khanong District, Bangkok, 10260, Thailand",
+       "address": {
+        "commercial": "True Digital Park",
+        "quarter": "Bang Chak Subdistrict",
+        "suburb": "Phra Khanong District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10260",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.6844410",
+        "13.6874573",
+        "100.6104434",
+        "100.6122456"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "venue_id": "bkk-4a1b870b3374",
+   "tier": "area",
+   "query": "True Digital Park Bangkok",
+   "checked_on": "2026-11-26",
+   "returned_place": "True Digital Park, Bang Chak Subdistrict, Phra Khanong District, Bangkok, 10260, Thailand",
+   "latitude": 13.685581,
+   "longitude": 100.6113077,
+   "attempts": [
+    {
+     "kind": "address",
+     "query": "101 Sukhumvit Road, Bang Chak, Phra Khanong, Bangkok 10260, Thailand",
+     "url": "https://nominatim.openstreetmap.org/search?q=101+Sukhumvit+Road%2C+Bang+Chak%2C+Phra+Khanong%2C+Bangkok+10260%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "none",
+     "results": []
+    },
+    {
+     "kind": "name",
+     "query": "True Digital Park Bangkok",
+     "url": "https://nominatim.openstreetmap.org/search?q=True+Digital+Park+Bangkok&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 257618604,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 637524947,
+       "lat": "13.6855810",
+       "lon": "100.6113077",
+       "category": "landuse",
+       "type": "commercial",
+       "place_rank": 24,
+       "importance": 0.08007662546730751,
+       "addresstype": "commercial",
+       "name": "True Digital Park",
+       "display_name": "True Digital Park, Bang Chak Subdistrict, Phra Khanong District, Bangkok, 10260, Thailand",
+       "address": {
+        "commercial": "True Digital Park",
+        "quarter": "Bang Chak Subdistrict",
+        "suburb": "Phra Khanong District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10260",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.6844410",
+        "13.6874573",
+        "100.6104434",
+        "100.6122456"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "venue_id": "bkk-7b05f861a546",
+   "tier": "area",
+   "query": "True Digital Park Bangkok",
+   "checked_on": "2026-11-26",
+   "returned_place": "True Digital Park, Bang Chak Subdistrict, Phra Khanong District, Bangkok, 10260, Thailand",
+   "latitude": 13.685581,
+   "longitude": 100.6113077,
+   "attempts": [
+    {
+     "kind": "address",
+     "query": "101 Sukhumvit Road, Bang Chak, Phra Khanong, Bangkok 10260, Thailand",
+     "url": "https://nominatim.openstreetmap.org/search?q=101+Sukhumvit+Road%2C+Bang+Chak%2C+Phra+Khanong%2C+Bangkok+10260%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "none",
+     "results": []
+    },
+    {
+     "kind": "name",
+     "query": "True Digital Park Bangkok",
+     "url": "https://nominatim.openstreetmap.org/search?q=True+Digital+Park+Bangkok&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 257618604,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 637524947,
+       "lat": "13.6855810",
+       "lon": "100.6113077",
+       "category": "landuse",
+       "type": "commercial",
+       "place_rank": 24,
+       "importance": 0.08007662546730751,
+       "addresstype": "commercial",
+       "name": "True Digital Park",
+       "display_name": "True Digital Park, Bang Chak Subdistrict, Phra Khanong District, Bangkok, 10260, Thailand",
+       "address": {
+        "commercial": "True Digital Park",
+        "quarter": "Bang Chak Subdistrict",
+        "suburb": "Phra Khanong District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10260",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.6844410",
+        "13.6874573",
+        "100.6104434",
+        "100.6122456"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "venue_id": "bkk-e1f77804db8e",
+   "tier": "area",
+   "query": "True Digital Park Bangkok",
+   "checked_on": "2026-11-26",
+   "returned_place": "True Digital Park, Bang Chak Subdistrict, Phra Khanong District, Bangkok, 10260, Thailand",
+   "latitude": 13.685581,
+   "longitude": 100.6113077,
+   "attempts": [
+    {
+     "kind": "address",
+     "query": "101 Sukhumvit Road, Bang Chak, Phra Khanong, Bangkok 10260, Thailand",
+     "url": "https://nominatim.openstreetmap.org/search?q=101+Sukhumvit+Road%2C+Bang+Chak%2C+Phra+Khanong%2C+Bangkok+10260%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "none",
+     "results": []
+    },
+    {
+     "kind": "name",
+     "query": "True Digital Park Bangkok",
+     "url": "https://nominatim.openstreetmap.org/search?q=True+Digital+Park+Bangkok&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 255942978,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 637524947,
+       "lat": "13.6855810",
+       "lon": "100.6113077",
+       "category": "landuse",
+       "type": "commercial",
+       "place_rank": 24,
+       "importance": 0.08007662546730751,
+       "addresstype": "commercial",
+       "name": "True Digital Park",
+       "display_name": "True Digital Park, Bang Chak Subdistrict, Phra Khanong District, Bangkok, 10260, Thailand",
+       "address": {
+        "commercial": "True Digital Park",
+        "quarter": "Bang Chak Subdistrict",
+        "suburb": "Phra Khanong District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10260",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.6844410",
+        "13.6874573",
+        "100.6104434",
+        "100.6122456"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "venue_id": "bkk-e7c68236c54a",
+   "tier": "area",
+   "query": "True Digital Park Bangkok",
+   "checked_on": "2026-11-26",
+   "returned_place": "True Digital Park, Bang Chak Subdistrict, Phra Khanong District, Bangkok, 10260, Thailand",
+   "latitude": 13.685581,
+   "longitude": 100.6113077,
+   "attempts": [
+    {
+     "kind": "address",
+     "query": "101 Sukhumvit Road, Bang Chak, Phra Khanong, Bangkok 10260, Thailand",
+     "url": "https://nominatim.openstreetmap.org/search?q=101+Sukhumvit+Road%2C+Bang+Chak%2C+Phra+Khanong%2C+Bangkok+10260%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "none",
+     "results": []
+    },
+    {
+     "kind": "name",
+     "query": "True Digital Park Bangkok",
+     "url": "https://nominatim.openstreetmap.org/search?q=True+Digital+Park+Bangkok&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 255942978,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 637524947,
+       "lat": "13.6855810",
+       "lon": "100.6113077",
+       "category": "landuse",
+       "type": "commercial",
+       "place_rank": 24,
+       "importance": 0.08007662546730751,
+       "addresstype": "commercial",
+       "name": "True Digital Park",
+       "display_name": "True Digital Park, Bang Chak Subdistrict, Phra Khanong District, Bangkok, 10260, Thailand",
+       "address": {
+        "commercial": "True Digital Park",
+        "quarter": "Bang Chak Subdistrict",
+        "suburb": "Phra Khanong District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10260",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.6844410",
+        "13.6874573",
+        "100.6104434",
+        "100.6122456"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "venue_id": "bkk-1d49f04f53b3",
+   "tier": "building",
+   "query": "IMPACT Forum Muang Thong Thani",
+   "checked_on": "2026-11-26",
+   "returned_place": "IMPACT Forum, Popular1 Road, Muang Thong Thani, Ban Mai Subdistrict, Pak Kret City Municipality, Pak Kret District, Nonthaburi Province, 11120, Thailand",
+   "latitude": 13.9159761,
+   "longitude": 100.5472642,
+   "attempts": [
+    {
+     "kind": "name",
+     "query": "IMPACT Forum Muang Thong Thani",
+     "url": "https://nominatim.openstreetmap.org/search?q=IMPACT+Forum+Muang+Thong+Thani&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 263699951,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 156639198,
+       "lat": "13.9159761",
+       "lon": "100.5472642",
+       "category": "amenity",
+       "type": "exhibition_centre",
+       "place_rank": 30,
+       "importance": 4.5001144426596745e-05,
+       "addresstype": "amenity",
+       "name": "IMPACT Forum",
+       "display_name": "IMPACT Forum, Popular1 Road, Muang Thong Thani, Ban Mai Subdistrict, Pak Kret City Municipality, Pak Kret District, Nonthaburi Province, 11120, Thailand",
+       "address": {
+        "amenity": "IMPACT Forum",
+        "road": "Popular1 Road",
+        "neighbourhood": "Muang Thong Thani",
+        "city_district": "Ban Mai Subdistrict",
+        "city": "Pak Kret City Municipality",
+        "county": "Pak Kret District",
+        "province": "Nonthaburi Province",
+        "ISO3166-2-lvl4": "TH-12",
+        "postcode": "11120",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.9151319",
+        "13.9168202",
+        "100.5461144",
+        "100.5484140"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "venue_id": "bkk-1d547be4996e",
+   "tier": "building",
+   "query": "199 Sukhumvit Soi 22, Khlong Tan, Khlong Toei, Bangkok 10110, Thailand",
+   "checked_on": "2026-11-26",
+   "returned_place": "Bangkok Marriott Marquis Queen’s Park, 199, Soi Sukhumvit 22, Sukhumvit, Khlong Toei Subdistrict, Khlong Toei District, Bangkok, 10110, Thailand",
+   "latitude": 13.7302641,
+   "longitude": 100.5657084,
+   "attempts": [
+    {
+     "kind": "address",
+     "query": "199 Sukhumvit Soi 22, Khlong Tan, Khlong Toei, Bangkok 10110, Thailand",
+     "url": "https://nominatim.openstreetmap.org/search?q=199+Sukhumvit+Soi+22%2C+Khlong+Tan%2C+Khlong+Toei%2C+Bangkok+10110%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 258452659,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 1230362491,
+       "lat": "13.7302641",
+       "lon": "100.5657084",
+       "category": "tourism",
+       "type": "hotel",
+       "place_rank": 30,
+       "importance": 0.1507975276546128,
+       "addresstype": "tourism",
+       "name": "Bangkok Marriott Marquis Queen’s Park",
+       "display_name": "Bangkok Marriott Marquis Queen’s Park, 199, Soi Sukhumvit 22, Sukhumvit, Khlong Toei Subdistrict, Khlong Toei District, Bangkok, 10110, Thailand",
+       "address": {
+        "tourism": "Bangkok Marriott Marquis Queen’s Park",
+        "house_number": "199",
+        "road": "Soi Sukhumvit 22",
+        "neighbourhood": "Sukhumvit",
+        "quarter": "Khlong Toei Subdistrict",
+        "suburb": "Khlong Toei District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10110",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7299275",
+        "13.7307417",
+        "100.5652500",
+        "100.5661638"
+       ]
+      },
+      {
+       "place_id": 258301580,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "node",
+       "osm_id": 7949899389,
+       "lat": "13.7301777",
+       "lon": "100.5654394",
+       "category": "leisure",
+       "type": "pitch",
+       "place_rank": 30,
+       "importance": 7.662546730750007e-05,
+       "addresstype": "leisure",
+       "name": "",
+       "display_name": "199, Soi Sukhumvit 22, Sukhumvit, Khlong Toei Subdistrict, Khlong Toei District, Bangkok, 10110, Thailand",
+       "address": {
+        "house_number": "199",
+        "road": "Soi Sukhumvit 22",
+        "neighbourhood": "Sukhumvit",
+        "quarter": "Khlong Toei Subdistrict",
+        "suburb": "Khlong Toei District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10110",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7301277",
+        "13.7302277",
+        "100.5653894",
+        "100.5654894"
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "name",
+     "query": "Bangkok Marriott Marquis Bangkok",
+     "url": "https://nominatim.openstreetmap.org/search?q=Bangkok+Marriott+Marquis+Bangkok&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 257134388,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 1230362491,
+       "lat": "13.7302641",
+       "lon": "100.5657084",
+       "category": "tourism",
+       "type": "hotel",
+       "place_rank": 30,
+       "importance": 0.1507975276546128,
+       "addresstype": "tourism",
+       "name": "Bangkok Marriott Marquis Queen’s Park",
+       "display_name": "Bangkok Marriott Marquis Queen’s Park, 199, Soi Sukhumvit 22, Sukhumvit, Khlong Toei Subdistrict, Khlong Toei District, Bangkok, 10110, Thailand",
+       "address": {
+        "tourism": "Bangkok Marriott Marquis Queen’s Park",
+        "house_number": "199",
+        "road": "Soi Sukhumvit 22",
+        "neighbourhood": "Sukhumvit",
+        "quarter": "Khlong Toei Subdistrict",
+        "suburb": "Khlong Toei District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10110",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7299275",
+        "13.7307417",
+        "100.5652500",
+        "100.5661638"
+       ]
+      },
+      {
+       "place_id": 257927568,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "node",
+       "osm_id": 11736549980,
+       "lat": "13.7300332",
+       "lon": "100.5657734",
+       "category": "amenity",
+       "type": "restaurant",
+       "place_rank": 30,
+       "importance": 7.662546730750007e-05,
+       "addresstype": "amenity",
+       "name": "Goji Kitchen",
+       "display_name": "Goji Kitchen, Soi Sukhumvit 22, Sukhumvit, Khlong Toei Subdistrict, Khlong Toei District, Bangkok, 10110, Thailand",
+       "address": {
+        "amenity": "Goji Kitchen",
+        "road": "Soi Sukhumvit 22",
+        "neighbourhood": "Sukhumvit",
+        "quarter": "Khlong Toei Subdistrict",
+        "suburb": "Khlong Toei District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10110",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7299832",
+        "13.7300832",
+        "100.5657234",
+        "100.5658234"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "venue_id": "bkk-57ac39dbaf80",
+   "tier": "building",
+   "query": "199 Sukhumvit Soi 22, Khlong Tan, Khlong Toei, Bangkok 10110, Thailand",
+   "checked_on": "2026-11-26",
+   "returned_place": "Bangkok Marriott Marquis Queen’s Park, 199, Soi Sukhumvit 22, Sukhumvit, Khlong Toei Subdistrict, Khlong Toei District, Bangkok, 10110, Thailand",
+   "latitude": 13.7302641,
+   "longitude": 100.5657084,
+   "attempts": [
+    {
+     "kind": "address",
+     "query": "199 Sukhumvit Soi 22, Khlong Tan, Khlong Toei, Bangkok 10110, Thailand",
+     "url": "https://nominatim.openstreetmap.org/search?q=199+Sukhumvit+Soi+22%2C+Khlong+Tan%2C+Khlong+Toei%2C+Bangkok+10110%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 258452659,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 1230362491,
+       "lat": "13.7302641",
+       "lon": "100.5657084",
+       "category": "tourism",
+       "type": "hotel",
+       "place_rank": 30,
+       "importance": 0.1507975276546128,
+       "addresstype": "tourism",
+       "name": "Bangkok Marriott Marquis Queen’s Park",
+       "display_name": "Bangkok Marriott Marquis Queen’s Park, 199, Soi Sukhumvit 22, Sukhumvit, Khlong Toei Subdistrict, Khlong Toei District, Bangkok, 10110, Thailand",
+       "address": {
+        "tourism": "Bangkok Marriott Marquis Queen’s Park",
+        "house_number": "199",
+        "road": "Soi Sukhumvit 22",
+        "neighbourhood": "Sukhumvit",
+        "quarter": "Khlong Toei Subdistrict",
+        "suburb": "Khlong Toei District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10110",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7299275",
+        "13.7307417",
+        "100.5652500",
+        "100.5661638"
+       ]
+      },
+      {
+       "place_id": 258301580,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "node",
+       "osm_id": 7949899389,
+       "lat": "13.7301777",
+       "lon": "100.5654394",
+       "category": "leisure",
+       "type": "pitch",
+       "place_rank": 30,
+       "importance": 7.662546730750007e-05,
+       "addresstype": "leisure",
+       "name": "",
+       "display_name": "199, Soi Sukhumvit 22, Sukhumvit, Khlong Toei Subdistrict, Khlong Toei District, Bangkok, 10110, Thailand",
+       "address": {
+        "house_number": "199",
+        "road": "Soi Sukhumvit 22",
+        "neighbourhood": "Sukhumvit",
+        "quarter": "Khlong Toei Subdistrict",
+        "suburb": "Khlong Toei District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10110",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7301277",
+        "13.7302277",
+        "100.5653894",
+        "100.5654894"
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "name",
+     "query": "Bangkok Marriott Marquis Bangkok",
+     "url": "https://nominatim.openstreetmap.org/search?q=Bangkok+Marriott+Marquis+Bangkok&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 257134388,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 1230362491,
+       "lat": "13.7302641",
+       "lon": "100.5657084",
+       "category": "tourism",
+       "type": "hotel",
+       "place_rank": 30,
+       "importance": 0.1507975276546128,
+       "addresstype": "tourism",
+       "name": "Bangkok Marriott Marquis Queen’s Park",
+       "display_name": "Bangkok Marriott Marquis Queen’s Park, 199, Soi Sukhumvit 22, Sukhumvit, Khlong Toei Subdistrict, Khlong Toei District, Bangkok, 10110, Thailand",
+       "address": {
+        "tourism": "Bangkok Marriott Marquis Queen’s Park",
+        "house_number": "199",
+        "road": "Soi Sukhumvit 22",
+        "neighbourhood": "Sukhumvit",
+        "quarter": "Khlong Toei Subdistrict",
+        "suburb": "Khlong Toei District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10110",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7299275",
+        "13.7307417",
+        "100.5652500",
+        "100.5661638"
+       ]
+      },
+      {
+       "place_id": 257927568,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "node",
+       "osm_id": 11736549980,
+       "lat": "13.7300332",
+       "lon": "100.5657734",
+       "category": "amenity",
+       "type": "restaurant",
+       "place_rank": 30,
+       "importance": 7.662546730750007e-05,
+       "addresstype": "amenity",
+       "name": "Goji Kitchen",
+       "display_name": "Goji Kitchen, Soi Sukhumvit 22, Sukhumvit, Khlong Toei Subdistrict, Khlong Toei District, Bangkok, 10110, Thailand",
+       "address": {
+        "amenity": "Goji Kitchen",
+        "road": "Soi Sukhumvit 22",
+        "neighbourhood": "Sukhumvit",
+        "quarter": "Khlong Toei Subdistrict",
+        "suburb": "Khlong Toei District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10110",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7299832",
+        "13.7300832",
+        "100.5657234",
+        "100.5658234"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "venue_id": "bkk-850610ff9333",
+   "tier": "building",
+   "query": "199 Sukhumvit Soi 22, Khlong Tan, Khlong Toei, Bangkok 10110, Thailand",
+   "checked_on": "2026-11-26",
+   "returned_place": "Bangkok Marriott Marquis Queen’s Park, 199, Soi Sukhumvit 22, Sukhumvit, Khlong Toei Subdistrict, Khlong Toei District, Bangkok, 10110, Thailand",
+   "latitude": 13.7302641,
+   "longitude": 100.5657084,
+   "attempts": [
+    {
+     "kind": "address",
+     "query": "199 Sukhumvit Soi 22, Khlong Tan, Khlong Toei, Bangkok 10110, Thailand",
+     "url": "https://nominatim.openstreetmap.org/search?q=199+Sukhumvit+Soi+22%2C+Khlong+Tan%2C+Khlong+Toei%2C+Bangkok+10110%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 258452659,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 1230362491,
+       "lat": "13.7302641",
+       "lon": "100.5657084",
+       "category": "tourism",
+       "type": "hotel",
+       "place_rank": 30,
+       "importance": 0.1507975276546128,
+       "addresstype": "tourism",
+       "name": "Bangkok Marriott Marquis Queen’s Park",
+       "display_name": "Bangkok Marriott Marquis Queen’s Park, 199, Soi Sukhumvit 22, Sukhumvit, Khlong Toei Subdistrict, Khlong Toei District, Bangkok, 10110, Thailand",
+       "address": {
+        "tourism": "Bangkok Marriott Marquis Queen’s Park",
+        "house_number": "199",
+        "road": "Soi Sukhumvit 22",
+        "neighbourhood": "Sukhumvit",
+        "quarter": "Khlong Toei Subdistrict",
+        "suburb": "Khlong Toei District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10110",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7299275",
+        "13.7307417",
+        "100.5652500",
+        "100.5661638"
+       ]
+      },
+      {
+       "place_id": 258301580,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "node",
+       "osm_id": 7949899389,
+       "lat": "13.7301777",
+       "lon": "100.5654394",
+       "category": "leisure",
+       "type": "pitch",
+       "place_rank": 30,
+       "importance": 7.662546730750007e-05,
+       "addresstype": "leisure",
+       "name": "",
+       "display_name": "199, Soi Sukhumvit 22, Sukhumvit, Khlong Toei Subdistrict, Khlong Toei District, Bangkok, 10110, Thailand",
+       "address": {
+        "house_number": "199",
+        "road": "Soi Sukhumvit 22",
+        "neighbourhood": "Sukhumvit",
+        "quarter": "Khlong Toei Subdistrict",
+        "suburb": "Khlong Toei District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10110",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7301277",
+        "13.7302277",
+        "100.5653894",
+        "100.5654894"
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "name",
+     "query": "Bangkok Marriott Marquis Bangkok",
+     "url": "https://nominatim.openstreetmap.org/search?q=Bangkok+Marriott+Marquis+Bangkok&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 257134388,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 1230362491,
+       "lat": "13.7302641",
+       "lon": "100.5657084",
+       "category": "tourism",
+       "type": "hotel",
+       "place_rank": 30,
+       "importance": 0.1507975276546128,
+       "addresstype": "tourism",
+       "name": "Bangkok Marriott Marquis Queen’s Park",
+       "display_name": "Bangkok Marriott Marquis Queen’s Park, 199, Soi Sukhumvit 22, Sukhumvit, Khlong Toei Subdistrict, Khlong Toei District, Bangkok, 10110, Thailand",
+       "address": {
+        "tourism": "Bangkok Marriott Marquis Queen’s Park",
+        "house_number": "199",
+        "road": "Soi Sukhumvit 22",
+        "neighbourhood": "Sukhumvit",
+        "quarter": "Khlong Toei Subdistrict",
+        "suburb": "Khlong Toei District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10110",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7299275",
+        "13.7307417",
+        "100.5652500",
+        "100.5661638"
+       ]
+      },
+      {
+       "place_id": 257927568,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "node",
+       "osm_id": 11736549980,
+       "lat": "13.7300332",
+       "lon": "100.5657734",
+       "category": "amenity",
+       "type": "restaurant",
+       "place_rank": 30,
+       "importance": 7.662546730750007e-05,
+       "addresstype": "amenity",
+       "name": "Goji Kitchen",
+       "display_name": "Goji Kitchen, Soi Sukhumvit 22, Sukhumvit, Khlong Toei Subdistrict, Khlong Toei District, Bangkok, 10110, Thailand",
+       "address": {
+        "amenity": "Goji Kitchen",
+        "road": "Soi Sukhumvit 22",
+        "neighbourhood": "Sukhumvit",
+        "quarter": "Khlong Toei Subdistrict",
+        "suburb": "Khlong Toei District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10110",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7299832",
+        "13.7300832",
+        "100.5657234",
+        "100.5658234"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "venue_id": "bkk-85f2e570ab62",
+   "tier": "building",
+   "query": "199 Sukhumvit Soi 22, Khlong Tan, Khlong Toei, Bangkok 10110, Thailand",
+   "checked_on": "2026-11-26",
+   "returned_place": "Bangkok Marriott Marquis Queen’s Park, 199, Soi Sukhumvit 22, Sukhumvit, Khlong Toei Subdistrict, Khlong Toei District, Bangkok, 10110, Thailand",
+   "latitude": 13.7302641,
+   "longitude": 100.5657084,
+   "attempts": [
+    {
+     "kind": "address",
+     "query": "199 Sukhumvit Soi 22, Khlong Tan, Khlong Toei, Bangkok 10110, Thailand",
+     "url": "https://nominatim.openstreetmap.org/search?q=199+Sukhumvit+Soi+22%2C+Khlong+Tan%2C+Khlong+Toei%2C+Bangkok+10110%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 258452659,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 1230362491,
+       "lat": "13.7302641",
+       "lon": "100.5657084",
+       "category": "tourism",
+       "type": "hotel",
+       "place_rank": 30,
+       "importance": 0.1507975276546128,
+       "addresstype": "tourism",
+       "name": "Bangkok Marriott Marquis Queen’s Park",
+       "display_name": "Bangkok Marriott Marquis Queen’s Park, 199, Soi Sukhumvit 22, Sukhumvit, Khlong Toei Subdistrict, Khlong Toei District, Bangkok, 10110, Thailand",
+       "address": {
+        "tourism": "Bangkok Marriott Marquis Queen’s Park",
+        "house_number": "199",
+        "road": "Soi Sukhumvit 22",
+        "neighbourhood": "Sukhumvit",
+        "quarter": "Khlong Toei Subdistrict",
+        "suburb": "Khlong Toei District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10110",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7299275",
+        "13.7307417",
+        "100.5652500",
+        "100.5661638"
+       ]
+      },
+      {
+       "place_id": 258301580,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "node",
+       "osm_id": 7949899389,
+       "lat": "13.7301777",
+       "lon": "100.5654394",
+       "category": "leisure",
+       "type": "pitch",
+       "place_rank": 30,
+       "importance": 7.662546730750007e-05,
+       "addresstype": "leisure",
+       "name": "",
+       "display_name": "199, Soi Sukhumvit 22, Sukhumvit, Khlong Toei Subdistrict, Khlong Toei District, Bangkok, 10110, Thailand",
+       "address": {
+        "house_number": "199",
+        "road": "Soi Sukhumvit 22",
+        "neighbourhood": "Sukhumvit",
+        "quarter": "Khlong Toei Subdistrict",
+        "suburb": "Khlong Toei District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10110",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7301277",
+        "13.7302277",
+        "100.5653894",
+        "100.5654894"
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "name",
+     "query": "Bangkok Marriott Marquis Bangkok",
+     "url": "https://nominatim.openstreetmap.org/search?q=Bangkok+Marriott+Marquis+Bangkok&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 257134388,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 1230362491,
+       "lat": "13.7302641",
+       "lon": "100.5657084",
+       "category": "tourism",
+       "type": "hotel",
+       "place_rank": 30,
+       "importance": 0.1507975276546128,
+       "addresstype": "tourism",
+       "name": "Bangkok Marriott Marquis Queen’s Park",
+       "display_name": "Bangkok Marriott Marquis Queen’s Park, 199, Soi Sukhumvit 22, Sukhumvit, Khlong Toei Subdistrict, Khlong Toei District, Bangkok, 10110, Thailand",
+       "address": {
+        "tourism": "Bangkok Marriott Marquis Queen’s Park",
+        "house_number": "199",
+        "road": "Soi Sukhumvit 22",
+        "neighbourhood": "Sukhumvit",
+        "quarter": "Khlong Toei Subdistrict",
+        "suburb": "Khlong Toei District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10110",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7299275",
+        "13.7307417",
+        "100.5652500",
+        "100.5661638"
+       ]
+      },
+      {
+       "place_id": 257927568,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "node",
+       "osm_id": 11736549980,
+       "lat": "13.7300332",
+       "lon": "100.5657734",
+       "category": "amenity",
+       "type": "restaurant",
+       "place_rank": 30,
+       "importance": 7.662546730750007e-05,
+       "addresstype": "amenity",
+       "name": "Goji Kitchen",
+       "display_name": "Goji Kitchen, Soi Sukhumvit 22, Sukhumvit, Khlong Toei Subdistrict, Khlong Toei District, Bangkok, 10110, Thailand",
+       "address": {
+        "amenity": "Goji Kitchen",
+        "road": "Soi Sukhumvit 22",
+        "neighbourhood": "Sukhumvit",
+        "quarter": "Khlong Toei Subdistrict",
+        "suburb": "Khlong Toei District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10110",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7299832",
+        "13.7300832",
+        "100.5657234",
+        "100.5658234"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "venue_id": "bkk-8dc08009315a",
+   "tier": "building",
+   "query": "199 Sukhumvit Soi 22, Khlong Tan, Khlong Toei, Bangkok 10110, Thailand",
+   "checked_on": "2026-11-26",
+   "returned_place": "Bangkok Marriott Marquis Queen’s Park, 199, Soi Sukhumvit 22, Sukhumvit, Khlong Toei Subdistrict, Khlong Toei District, Bangkok, 10110, Thailand",
+   "latitude": 13.7302641,
+   "longitude": 100.5657084,
+   "attempts": [
+    {
+     "kind": "address",
+     "query": "199 Sukhumvit Soi 22, Khlong Tan, Khlong Toei, Bangkok 10110, Thailand",
+     "url": "https://nominatim.openstreetmap.org/search?q=199+Sukhumvit+Soi+22%2C+Khlong+Tan%2C+Khlong+Toei%2C+Bangkok+10110%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 258452659,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 1230362491,
+       "lat": "13.7302641",
+       "lon": "100.5657084",
+       "category": "tourism",
+       "type": "hotel",
+       "place_rank": 30,
+       "importance": 0.1507975276546128,
+       "addresstype": "tourism",
+       "name": "Bangkok Marriott Marquis Queen’s Park",
+       "display_name": "Bangkok Marriott Marquis Queen’s Park, 199, Soi Sukhumvit 22, Sukhumvit, Khlong Toei Subdistrict, Khlong Toei District, Bangkok, 10110, Thailand",
+       "address": {
+        "tourism": "Bangkok Marriott Marquis Queen’s Park",
+        "house_number": "199",
+        "road": "Soi Sukhumvit 22",
+        "neighbourhood": "Sukhumvit",
+        "quarter": "Khlong Toei Subdistrict",
+        "suburb": "Khlong Toei District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10110",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7299275",
+        "13.7307417",
+        "100.5652500",
+        "100.5661638"
+       ]
+      },
+      {
+       "place_id": 258301580,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "node",
+       "osm_id": 7949899389,
+       "lat": "13.7301777",
+       "lon": "100.5654394",
+       "category": "leisure",
+       "type": "pitch",
+       "place_rank": 30,
+       "importance": 7.662546730750007e-05,
+       "addresstype": "leisure",
+       "name": "",
+       "display_name": "199, Soi Sukhumvit 22, Sukhumvit, Khlong Toei Subdistrict, Khlong Toei District, Bangkok, 10110, Thailand",
+       "address": {
+        "house_number": "199",
+        "road": "Soi Sukhumvit 22",
+        "neighbourhood": "Sukhumvit",
+        "quarter": "Khlong Toei Subdistrict",
+        "suburb": "Khlong Toei District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10110",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7301277",
+        "13.7302277",
+        "100.5653894",
+        "100.5654894"
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "name",
+     "query": "Bangkok Marriott Marquis Bangkok",
+     "url": "https://nominatim.openstreetmap.org/search?q=Bangkok+Marriott+Marquis+Bangkok&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 257134388,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 1230362491,
+       "lat": "13.7302641",
+       "lon": "100.5657084",
+       "category": "tourism",
+       "type": "hotel",
+       "place_rank": 30,
+       "importance": 0.1507975276546128,
+       "addresstype": "tourism",
+       "name": "Bangkok Marriott Marquis Queen’s Park",
+       "display_name": "Bangkok Marriott Marquis Queen’s Park, 199, Soi Sukhumvit 22, Sukhumvit, Khlong Toei Subdistrict, Khlong Toei District, Bangkok, 10110, Thailand",
+       "address": {
+        "tourism": "Bangkok Marriott Marquis Queen’s Park",
+        "house_number": "199",
+        "road": "Soi Sukhumvit 22",
+        "neighbourhood": "Sukhumvit",
+        "quarter": "Khlong Toei Subdistrict",
+        "suburb": "Khlong Toei District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10110",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7299275",
+        "13.7307417",
+        "100.5652500",
+        "100.5661638"
+       ]
+      },
+      {
+       "place_id": 257927568,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "node",
+       "osm_id": 11736549980,
+       "lat": "13.7300332",
+       "lon": "100.5657734",
+       "category": "amenity",
+       "type": "restaurant",
+       "place_rank": 30,
+       "importance": 7.662546730750007e-05,
+       "addresstype": "amenity",
+       "name": "Goji Kitchen",
+       "display_name": "Goji Kitchen, Soi Sukhumvit 22, Sukhumvit, Khlong Toei Subdistrict, Khlong Toei District, Bangkok, 10110, Thailand",
+       "address": {
+        "amenity": "Goji Kitchen",
+        "road": "Soi Sukhumvit 22",
+        "neighbourhood": "Sukhumvit",
+        "quarter": "Khlong Toei Subdistrict",
+        "suburb": "Khlong Toei District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10110",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7299832",
+        "13.7300832",
+        "100.5657234",
+        "100.5658234"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "venue_id": "bkk-cb70344f1722",
+   "tier": "building",
+   "query": "199 Sukhumvit Soi 22, Khlong Tan, Khlong Toei, Bangkok 10110, Thailand",
+   "checked_on": "2026-11-26",
+   "returned_place": "Bangkok Marriott Marquis Queen’s Park, 199, Soi Sukhumvit 22, Sukhumvit, Khlong Toei Subdistrict, Khlong Toei District, Bangkok, 10110, Thailand",
+   "latitude": 13.7302641,
+   "longitude": 100.5657084,
+   "attempts": [
+    {
+     "kind": "address",
+     "query": "199 Sukhumvit Soi 22, Khlong Tan, Khlong Toei, Bangkok 10110, Thailand",
+     "url": "https://nominatim.openstreetmap.org/search?q=199+Sukhumvit+Soi+22%2C+Khlong+Tan%2C+Khlong+Toei%2C+Bangkok+10110%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 257693343,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 1230362491,
+       "lat": "13.7302641",
+       "lon": "100.5657084",
+       "category": "tourism",
+       "type": "hotel",
+       "place_rank": 30,
+       "importance": 0.1507975276546128,
+       "addresstype": "tourism",
+       "name": "Bangkok Marriott Marquis Queen’s Park",
+       "display_name": "Bangkok Marriott Marquis Queen’s Park, 199, Soi Sukhumvit 22, Sukhumvit, Khlong Toei Subdistrict, Khlong Toei District, Bangkok, 10110, Thailand",
+       "address": {
+        "tourism": "Bangkok Marriott Marquis Queen’s Park",
+        "house_number": "199",
+        "road": "Soi Sukhumvit 22",
+        "neighbourhood": "Sukhumvit",
+        "quarter": "Khlong Toei Subdistrict",
+        "suburb": "Khlong Toei District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10110",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7299275",
+        "13.7307417",
+        "100.5652500",
+        "100.5661638"
+       ]
+      },
+      {
+       "place_id": 257333738,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "node",
+       "osm_id": 7949899389,
+       "lat": "13.7301777",
+       "lon": "100.5654394",
+       "category": "leisure",
+       "type": "pitch",
+       "place_rank": 30,
+       "importance": 7.662546730750007e-05,
+       "addresstype": "leisure",
+       "name": "",
+       "display_name": "199, Soi Sukhumvit 22, Sukhumvit, Khlong Toei Subdistrict, Khlong Toei District, Bangkok, 10110, Thailand",
+       "address": {
+        "house_number": "199",
+        "road": "Soi Sukhumvit 22",
+        "neighbourhood": "Sukhumvit",
+        "quarter": "Khlong Toei Subdistrict",
+        "suburb": "Khlong Toei District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10110",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7301277",
+        "13.7302277",
+        "100.5653894",
+        "100.5654894"
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "name",
+     "query": "Bangkok Marriott Marquis Bangkok",
+     "url": "https://nominatim.openstreetmap.org/search?q=Bangkok+Marriott+Marquis+Bangkok&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 258452659,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 1230362491,
+       "lat": "13.7302641",
+       "lon": "100.5657084",
+       "category": "tourism",
+       "type": "hotel",
+       "place_rank": 30,
+       "importance": 0.1507975276546128,
+       "addresstype": "tourism",
+       "name": "Bangkok Marriott Marquis Queen’s Park",
+       "display_name": "Bangkok Marriott Marquis Queen’s Park, 199, Soi Sukhumvit 22, Sukhumvit, Khlong Toei Subdistrict, Khlong Toei District, Bangkok, 10110, Thailand",
+       "address": {
+        "tourism": "Bangkok Marriott Marquis Queen’s Park",
+        "house_number": "199",
+        "road": "Soi Sukhumvit 22",
+        "neighbourhood": "Sukhumvit",
+        "quarter": "Khlong Toei Subdistrict",
+        "suburb": "Khlong Toei District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10110",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7299275",
+        "13.7307417",
+        "100.5652500",
+        "100.5661638"
+       ]
+      },
+      {
+       "place_id": 258314154,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "node",
+       "osm_id": 11736549980,
+       "lat": "13.7300332",
+       "lon": "100.5657734",
+       "category": "amenity",
+       "type": "restaurant",
+       "place_rank": 30,
+       "importance": 7.662546730750007e-05,
+       "addresstype": "amenity",
+       "name": "Goji Kitchen",
+       "display_name": "Goji Kitchen, Soi Sukhumvit 22, Sukhumvit, Khlong Toei Subdistrict, Khlong Toei District, Bangkok, 10110, Thailand",
+       "address": {
+        "amenity": "Goji Kitchen",
+        "road": "Soi Sukhumvit 22",
+        "neighbourhood": "Sukhumvit",
+        "quarter": "Khlong Toei Subdistrict",
+        "suburb": "Khlong Toei District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10110",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7299832",
+        "13.7300832",
+        "100.5657234",
+        "100.5658234"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "venue_id": "bkk-1e2255359785",
+   "tier": "exact_venue",
+   "query": "Samyan Mitrtown Hall",
+   "checked_on": "2026-11-26",
+   "returned_place": "Samyan Mitrtown Hall, Soi Chulalongkorn 15, Sam Yan, Wang Mai Subdistrict, Pathum Wan District, Bangkok, 10330, Thailand",
+   "latitude": 13.7343891,
+   "longitude": 100.5280788,
+   "attempts": [
+    {
+     "kind": "address",
+     "query": "944 Rama 4 Road, Wang Mai, Pathum Wan, Bangkok 10330, Thailand",
+     "url": "https://nominatim.openstreetmap.org/search?q=944+Rama+4+Road%2C+Wang+Mai%2C+Pathum+Wan%2C+Bangkok+10330%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 257887434,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "node",
+       "osm_id": 8613951664,
+       "lat": "13.7337922",
+       "lon": "100.5283290",
+       "category": "office",
+       "type": "educational_institution",
+       "place_rank": 30,
+       "importance": 7.662546730750007e-05,
+       "addresstype": "office",
+       "name": "Uni+",
+       "display_name": "Uni+, 944, Rama IV Road, Sam Yan, Wang Mai Subdistrict, Pathum Wan District, Bangkok, 10330, Thailand",
+       "address": {
+        "office": "Uni+",
+        "house_number": "944",
+        "road": "Rama IV Road",
+        "neighbourhood": "Sam Yan",
+        "quarter": "Wang Mai Subdistrict",
+        "suburb": "Pathum Wan District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10330",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7337422",
+        "13.7338422",
+        "100.5282790",
+        "100.5283790"
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "name",
+     "query": "Samyan Mitrtown Hall",
+     "url": "https://nominatim.openstreetmap.org/search?q=Samyan+Mitrtown+Hall&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 257331074,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "node",
+       "osm_id": 11323335134,
+       "lat": "13.7343891",
+       "lon": "100.5280788",
+       "category": "amenity",
+       "type": "conference_centre",
+       "place_rank": 30,
+       "importance": 7.662546730750007e-05,
+       "addresstype": "amenity",
+       "name": "Samyan Mitrtown Hall",
+       "display_name": "Samyan Mitrtown Hall, Soi Chulalongkorn 15, Sam Yan, Wang Mai Subdistrict, Pathum Wan District, Bangkok, 10330, Thailand",
+       "address": {
+        "amenity": "Samyan Mitrtown Hall",
+        "road": "Soi Chulalongkorn 15",
+        "neighbourhood": "Sam Yan",
+        "quarter": "Wang Mai Subdistrict",
+        "suburb": "Pathum Wan District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10330",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7343391",
+        "13.7344391",
+        "100.5280288",
+        "100.5281288"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "venue_id": "bkk-23cb6c5ac85e",
+   "tier": "building",
+   "query": "Mandarin Oriental Bangkok Bangkok",
+   "checked_on": "2026-11-26",
+   "returned_place": "Mandarin Oriental Hotel, 48, Bang Rak Subdistrict, Bang Rak District, Bangkok, 10500, Thailand",
+   "latitude": 13.7238854,
+   "longitude": 100.5141549,
+   "attempts": [
+    {
+     "kind": "address",
+     "query": "48 Oriental Avenue, Bang Rak, Bangkok 10500, Thailand",
+     "url": "https://nominatim.openstreetmap.org/search?q=48+Oriental+Avenue%2C+Bang+Rak%2C+Bangkok+10500%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "none",
+     "results": []
+    },
+    {
+     "kind": "name",
+     "query": "Mandarin Oriental Bangkok Bangkok",
+     "url": "https://nominatim.openstreetmap.org/search?q=Mandarin+Oriental+Bangkok+Bangkok&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 257870734,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 134464577,
+       "lat": "13.7238854",
+       "lon": "100.5141549",
+       "category": "leisure",
+       "type": "resort",
+       "place_rank": 30,
+       "importance": 0.35699141996923245,
+       "addresstype": "leisure",
+       "name": "Mandarin Oriental Hotel",
+       "display_name": "Mandarin Oriental Hotel, 48, Bang Rak Subdistrict, Bang Rak District, Bangkok, 10500, Thailand",
+       "address": {
+        "leisure": "Mandarin Oriental Hotel",
+        "house_number": "48",
+        "administrative": "Bang Rak Subdistrict",
+        "suburb": "Bang Rak District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10500",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7234271",
+        "13.7244257",
+        "100.5135611",
+        "100.5151386"
+       ]
+      },
+      {
+       "place_id": 254718578,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "node",
+       "osm_id": 2081842900,
+       "lat": "13.7235931",
+       "lon": "100.5142460",
+       "category": "amenity",
+       "type": "restaurant",
+       "place_rank": 30,
+       "importance": 7.662546730750007e-05,
+       "addresstype": "amenity",
+       "name": "Le Normandie",
+       "display_name": "Le Normandie, 48, Soi Charoen Krung 40, Bang Rak Subdistrict, Bang Rak District, Bangkok, 10500, Thailand",
+       "address": {
+        "amenity": "Le Normandie",
+        "house_number": "48",
+        "road": "Soi Charoen Krung 40",
+        "quarter": "Bang Rak Subdistrict",
+        "suburb": "Bang Rak District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10500",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7235431",
+        "13.7236431",
+        "100.5141960",
+        "100.5142960"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "venue_id": "bkk-278f58d0f7b2",
+   "tier": "building",
+   "query": "Mandarin Oriental Bangkok Bangkok",
+   "checked_on": "2026-11-26",
+   "returned_place": "Mandarin Oriental Hotel, 48, Bang Rak Subdistrict, Bang Rak District, Bangkok, 10500, Thailand",
+   "latitude": 13.7238854,
+   "longitude": 100.5141549,
+   "attempts": [
+    {
+     "kind": "address",
+     "query": "48 Oriental Avenue, Bang Rak, Bangkok 10500, Thailand",
+     "url": "https://nominatim.openstreetmap.org/search?q=48+Oriental+Avenue%2C+Bang+Rak%2C+Bangkok+10500%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "none",
+     "results": []
+    },
+    {
+     "kind": "name",
+     "query": "Mandarin Oriental Bangkok Bangkok",
+     "url": "https://nominatim.openstreetmap.org/search?q=Mandarin+Oriental+Bangkok+Bangkok&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 257870734,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 134464577,
+       "lat": "13.7238854",
+       "lon": "100.5141549",
+       "category": "leisure",
+       "type": "resort",
+       "place_rank": 30,
+       "importance": 0.35699141996923245,
+       "addresstype": "leisure",
+       "name": "Mandarin Oriental Hotel",
+       "display_name": "Mandarin Oriental Hotel, 48, Bang Rak Subdistrict, Bang Rak District, Bangkok, 10500, Thailand",
+       "address": {
+        "leisure": "Mandarin Oriental Hotel",
+        "house_number": "48",
+        "administrative": "Bang Rak Subdistrict",
+        "suburb": "Bang Rak District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10500",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7234271",
+        "13.7244257",
+        "100.5135611",
+        "100.5151386"
+       ]
+      },
+      {
+       "place_id": 254718578,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "node",
+       "osm_id": 2081842900,
+       "lat": "13.7235931",
+       "lon": "100.5142460",
+       "category": "amenity",
+       "type": "restaurant",
+       "place_rank": 30,
+       "importance": 7.662546730750007e-05,
+       "addresstype": "amenity",
+       "name": "Le Normandie",
+       "display_name": "Le Normandie, 48, Soi Charoen Krung 40, Bang Rak Subdistrict, Bang Rak District, Bangkok, 10500, Thailand",
+       "address": {
+        "amenity": "Le Normandie",
+        "house_number": "48",
+        "road": "Soi Charoen Krung 40",
+        "quarter": "Bang Rak Subdistrict",
+        "suburb": "Bang Rak District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10500",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7235431",
+        "13.7236431",
+        "100.5141960",
+        "100.5142960"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "venue_id": "bkk-44725169737a",
+   "tier": "building",
+   "query": "Mandarin Oriental Bangkok Bangkok",
+   "checked_on": "2026-11-26",
+   "returned_place": "Mandarin Oriental Hotel, 48, Bang Rak Subdistrict, Bang Rak District, Bangkok, 10500, Thailand",
+   "latitude": 13.7238854,
+   "longitude": 100.5141549,
+   "attempts": [
+    {
+     "kind": "address",
+     "query": "48 Oriental Avenue, Bang Rak, Bangkok 10500, Thailand",
+     "url": "https://nominatim.openstreetmap.org/search?q=48+Oriental+Avenue%2C+Bang+Rak%2C+Bangkok+10500%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "none",
+     "results": []
+    },
+    {
+     "kind": "name",
+     "query": "Mandarin Oriental Bangkok Bangkok",
+     "url": "https://nominatim.openstreetmap.org/search?q=Mandarin+Oriental+Bangkok+Bangkok&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 257870734,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 134464577,
+       "lat": "13.7238854",
+       "lon": "100.5141549",
+       "category": "leisure",
+       "type": "resort",
+       "place_rank": 30,
+       "importance": 0.35699141996923245,
+       "addresstype": "leisure",
+       "name": "Mandarin Oriental Hotel",
+       "display_name": "Mandarin Oriental Hotel, 48, Bang Rak Subdistrict, Bang Rak District, Bangkok, 10500, Thailand",
+       "address": {
+        "leisure": "Mandarin Oriental Hotel",
+        "house_number": "48",
+        "administrative": "Bang Rak Subdistrict",
+        "suburb": "Bang Rak District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10500",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7234271",
+        "13.7244257",
+        "100.5135611",
+        "100.5151386"
+       ]
+      },
+      {
+       "place_id": 254718578,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "node",
+       "osm_id": 2081842900,
+       "lat": "13.7235931",
+       "lon": "100.5142460",
+       "category": "amenity",
+       "type": "restaurant",
+       "place_rank": 30,
+       "importance": 7.662546730750007e-05,
+       "addresstype": "amenity",
+       "name": "Le Normandie",
+       "display_name": "Le Normandie, 48, Soi Charoen Krung 40, Bang Rak Subdistrict, Bang Rak District, Bangkok, 10500, Thailand",
+       "address": {
+        "amenity": "Le Normandie",
+        "house_number": "48",
+        "road": "Soi Charoen Krung 40",
+        "quarter": "Bang Rak Subdistrict",
+        "suburb": "Bang Rak District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10500",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7235431",
+        "13.7236431",
+        "100.5141960",
+        "100.5142960"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "venue_id": "bkk-7c5241f479cf",
+   "tier": "building",
+   "query": "Mandarin Oriental Bangkok Bangkok",
+   "checked_on": "2026-11-26",
+   "returned_place": "Mandarin Oriental Hotel, 48, Bang Rak Subdistrict, Bang Rak District, Bangkok, 10500, Thailand",
+   "latitude": 13.7238854,
+   "longitude": 100.5141549,
+   "attempts": [
+    {
+     "kind": "address",
+     "query": "48 Oriental Avenue, Bang Rak, Bangkok 10500, Thailand",
+     "url": "https://nominatim.openstreetmap.org/search?q=48+Oriental+Avenue%2C+Bang+Rak%2C+Bangkok+10500%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "none",
+     "results": []
+    },
+    {
+     "kind": "name",
+     "query": "Mandarin Oriental Bangkok Bangkok",
+     "url": "https://nominatim.openstreetmap.org/search?q=Mandarin+Oriental+Bangkok+Bangkok&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 257870734,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 134464577,
+       "lat": "13.7238854",
+       "lon": "100.5141549",
+       "category": "leisure",
+       "type": "resort",
+       "place_rank": 30,
+       "importance": 0.35699141996923245,
+       "addresstype": "leisure",
+       "name": "Mandarin Oriental Hotel",
+       "display_name": "Mandarin Oriental Hotel, 48, Bang Rak Subdistrict, Bang Rak District, Bangkok, 10500, Thailand",
+       "address": {
+        "leisure": "Mandarin Oriental Hotel",
+        "house_number": "48",
+        "administrative": "Bang Rak Subdistrict",
+        "suburb": "Bang Rak District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10500",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7234271",
+        "13.7244257",
+        "100.5135611",
+        "100.5151386"
+       ]
+      },
+      {
+       "place_id": 254718578,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "node",
+       "osm_id": 2081842900,
+       "lat": "13.7235931",
+       "lon": "100.5142460",
+       "category": "amenity",
+       "type": "restaurant",
+       "place_rank": 30,
+       "importance": 7.662546730750007e-05,
+       "addresstype": "amenity",
+       "name": "Le Normandie",
+       "display_name": "Le Normandie, 48, Soi Charoen Krung 40, Bang Rak Subdistrict, Bang Rak District, Bangkok, 10500, Thailand",
+       "address": {
+        "amenity": "Le Normandie",
+        "house_number": "48",
+        "road": "Soi Charoen Krung 40",
+        "quarter": "Bang Rak Subdistrict",
+        "suburb": "Bang Rak District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10500",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7235431",
+        "13.7236431",
+        "100.5141960",
+        "100.5142960"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "venue_id": "bkk-e8fbc8aedc21",
+   "tier": "building",
+   "query": "Mandarin Oriental Bangkok Bangkok",
+   "checked_on": "2026-11-26",
+   "returned_place": "Mandarin Oriental Hotel, 48, Bang Rak Subdistrict, Bang Rak District, Bangkok, 10500, Thailand",
+   "latitude": 13.7238854,
+   "longitude": 100.5141549,
+   "attempts": [
+    {
+     "kind": "address",
+     "query": "48 Oriental Avenue, Bang Rak, Bangkok 10500, Thailand",
+     "url": "https://nominatim.openstreetmap.org/search?q=48+Oriental+Avenue%2C+Bang+Rak%2C+Bangkok+10500%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "none",
+     "results": []
+    },
+    {
+     "kind": "name",
+     "query": "Mandarin Oriental Bangkok Bangkok",
+     "url": "https://nominatim.openstreetmap.org/search?q=Mandarin+Oriental+Bangkok+Bangkok&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 257870734,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 134464577,
+       "lat": "13.7238854",
+       "lon": "100.5141549",
+       "category": "leisure",
+       "type": "resort",
+       "place_rank": 30,
+       "importance": 0.35699141996923245,
+       "addresstype": "leisure",
+       "name": "Mandarin Oriental Hotel",
+       "display_name": "Mandarin Oriental Hotel, 48, Bang Rak Subdistrict, Bang Rak District, Bangkok, 10500, Thailand",
+       "address": {
+        "leisure": "Mandarin Oriental Hotel",
+        "house_number": "48",
+        "administrative": "Bang Rak Subdistrict",
+        "suburb": "Bang Rak District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10500",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7234271",
+        "13.7244257",
+        "100.5135611",
+        "100.5151386"
+       ]
+      },
+      {
+       "place_id": 254718578,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "node",
+       "osm_id": 2081842900,
+       "lat": "13.7235931",
+       "lon": "100.5142460",
+       "category": "amenity",
+       "type": "restaurant",
+       "place_rank": 30,
+       "importance": 7.662546730750007e-05,
+       "addresstype": "amenity",
+       "name": "Le Normandie",
+       "display_name": "Le Normandie, 48, Soi Charoen Krung 40, Bang Rak Subdistrict, Bang Rak District, Bangkok, 10500, Thailand",
+       "address": {
+        "amenity": "Le Normandie",
+        "house_number": "48",
+        "road": "Soi Charoen Krung 40",
+        "quarter": "Bang Rak Subdistrict",
+        "suburb": "Bang Rak District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10500",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7235431",
+        "13.7236431",
+        "100.5141960",
+        "100.5142960"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "venue_id": "bkk-2b00895fe6a1",
+   "tier": "building",
+   "query": "BITEC Bang Na",
+   "checked_on": "2026-11-26",
+   "returned_place": "BITEC, Sukhumvit Road, Bang Na Tai Subdistrict, Bang Na District, Bangkok, 10260, Thailand",
+   "latitude": 13.669801,
+   "longitude": 100.6085436,
+   "attempts": [
+    {
+     "kind": "address",
+     "query": "88 Debaratna Road, Bang Na Tai, Bang Na, Bangkok 10260, Thailand",
+     "url": "https://nominatim.openstreetmap.org/search?q=88+Debaratna+Road%2C+Bang+Na+Tai%2C+Bang+Na%2C+Bangkok+10260%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 257338722,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 1189598007,
+       "lat": "13.6698180",
+       "lon": "100.6221570",
+       "category": "highway",
+       "type": "secondary",
+       "place_rank": 26,
+       "importance": 0.053409958800640846,
+       "addresstype": "secondary",
+       "name": "Debaratna Road",
+       "display_name": "Debaratna Road, Bang Na Tai Subdistrict, Bang Na District, Bangkok, 10260, Thailand",
+       "address": {
+        "road": "Debaratna Road",
+        "quarter": "Bang Na Tai Subdistrict",
+        "suburb": "Bang Na District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10260",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.6686701",
+        "13.6710467",
+        "100.6160800",
+        "100.6282478"
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "name",
+     "query": "BITEC Bang Na",
+     "url": "https://nominatim.openstreetmap.org/search?q=BITEC+Bang+Na&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 257842438,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 25621160,
+       "lat": "13.6698010",
+       "lon": "100.6085436",
+       "category": "amenity",
+       "type": "exhibition_centre",
+       "place_rank": 30,
+       "importance": 0.28779482241276744,
+       "addresstype": "amenity",
+       "name": "BITEC",
+       "display_name": "BITEC, Sukhumvit Road, Bang Na Tai Subdistrict, Bang Na District, Bangkok, 10260, Thailand",
+       "address": {
+        "amenity": "BITEC",
+        "road": "Sukhumvit Road",
+        "quarter": "Bang Na Tai Subdistrict",
+        "suburb": "Bang Na District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10260",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.6685982",
+        "13.6708695",
+        "100.6057490",
+        "100.6113350"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "venue_id": "bkk-3151ca56ec77",
+   "tier": "building",
+   "query": "IMPACT Exhibition Center Muang Thong Thani",
+   "checked_on": "2026-11-26",
+   "returned_place": "IMPACT Exhibition Center, Hall 5-8, Popular1 Road, Muang Thong Thani, Ban Mai Subdistrict, Pak Kret City Municipality, Pak Kret District, Nonthaburi Province, 11120, Thailand",
+   "latitude": 13.9131439,
+   "longitude": 100.5487991,
+   "attempts": [
+    {
+     "kind": "address",
+     "query": "IMPACT Exhibition and Convention Center, Popular Road, Ban Mai, Pak Kret, Nonthaburi 11120, Thailand",
+     "url": "https://nominatim.openstreetmap.org/search?q=IMPACT+Exhibition+and+Convention+Center%2C+Popular+Road%2C+Ban+Mai%2C+Pak+Kret%2C+Nonthaburi+11120%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "none",
+     "results": []
+    },
+    {
+     "kind": "name",
+     "query": "IMPACT Exhibition Center Muang Thong Thani",
+     "url": "https://nominatim.openstreetmap.org/search?q=IMPACT+Exhibition+Center+Muang+Thong+Thani&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 257410062,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 175314196,
+       "lat": "13.9131439",
+       "lon": "100.5487991",
+       "category": "amenity",
+       "type": "exhibition_centre",
+       "place_rank": 30,
+       "importance": 4.5001144426596745e-05,
+       "addresstype": "amenity",
+       "name": "IMPACT Exhibition Center, Hall 5-8",
+       "display_name": "IMPACT Exhibition Center, Hall 5-8, Popular1 Road, Muang Thong Thani, Ban Mai Subdistrict, Pak Kret City Municipality, Pak Kret District, Nonthaburi Province, 11120, Thailand",
+       "address": {
+        "amenity": "IMPACT Exhibition Center, Hall 5-8",
+        "road": "Popular1 Road",
+        "neighbourhood": "Muang Thong Thani",
+        "city_district": "Ban Mai Subdistrict",
+        "city": "Pak Kret City Municipality",
+        "county": "Pak Kret District",
+        "province": "Nonthaburi Province",
+        "ISO3166-2-lvl4": "TH-12",
+        "postcode": "11120",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.9119425",
+        "13.9144093",
+        "100.5477026",
+        "100.5499757"
+       ]
+      },
+      {
+       "place_id": 257266053,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 175314197,
+       "lat": "13.9153573",
+       "lon": "100.5497679",
+       "category": "amenity",
+       "type": "exhibition_centre",
+       "place_rank": 30,
+       "importance": 4.5001144426596745e-05,
+       "addresstype": "amenity",
+       "name": "IMPACT Exhibition Center, Hall 9-12",
+       "display_name": "IMPACT Exhibition Center, Hall 9-12, Popular 2 Road, Muang Thong Thani, Ban Mai Subdistrict, Pak Kret City Municipality, Pak Kret District, Nonthaburi Province, 11120, Thailand",
+       "address": {
+        "amenity": "IMPACT Exhibition Center, Hall 9-12",
+        "road": "Popular 2 Road",
+        "neighbourhood": "Muang Thong Thani",
+        "city_district": "Ban Mai Subdistrict",
+        "city": "Pak Kret City Municipality",
+        "county": "Pak Kret District",
+        "province": "Nonthaburi Province",
+        "ISO3166-2-lvl4": "TH-12",
+        "postcode": "11120",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.9139292",
+        "13.9163159",
+        "100.5486253",
+        "100.5509105"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "venue_id": "bkk-7a880c8c3f64",
+   "tier": "building",
+   "query": "IMPACT Exhibition Center Muang Thong Thani",
+   "checked_on": "2026-11-26",
+   "returned_place": "IMPACT Exhibition Center, Hall 5-8, Popular1 Road, Muang Thong Thani, Ban Mai Subdistrict, Pak Kret City Municipality, Pak Kret District, Nonthaburi Province, 11120, Thailand",
+   "latitude": 13.9131439,
+   "longitude": 100.5487991,
+   "attempts": [
+    {
+     "kind": "address",
+     "query": "IMPACT Exhibition and Convention Center, Popular Road, Ban Mai, Pak Kret, Nonthaburi 11120, Thailand",
+     "url": "https://nominatim.openstreetmap.org/search?q=IMPACT+Exhibition+and+Convention+Center%2C+Popular+Road%2C+Ban+Mai%2C+Pak+Kret%2C+Nonthaburi+11120%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "none",
+     "results": []
+    },
+    {
+     "kind": "name",
+     "query": "IMPACT Exhibition Center Muang Thong Thani",
+     "url": "https://nominatim.openstreetmap.org/search?q=IMPACT+Exhibition+Center+Muang+Thong+Thani&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 257410062,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 175314196,
+       "lat": "13.9131439",
+       "lon": "100.5487991",
+       "category": "amenity",
+       "type": "exhibition_centre",
+       "place_rank": 30,
+       "importance": 4.5001144426596745e-05,
+       "addresstype": "amenity",
+       "name": "IMPACT Exhibition Center, Hall 5-8",
+       "display_name": "IMPACT Exhibition Center, Hall 5-8, Popular1 Road, Muang Thong Thani, Ban Mai Subdistrict, Pak Kret City Municipality, Pak Kret District, Nonthaburi Province, 11120, Thailand",
+       "address": {
+        "amenity": "IMPACT Exhibition Center, Hall 5-8",
+        "road": "Popular1 Road",
+        "neighbourhood": "Muang Thong Thani",
+        "city_district": "Ban Mai Subdistrict",
+        "city": "Pak Kret City Municipality",
+        "county": "Pak Kret District",
+        "province": "Nonthaburi Province",
+        "ISO3166-2-lvl4": "TH-12",
+        "postcode": "11120",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.9119425",
+        "13.9144093",
+        "100.5477026",
+        "100.5499757"
+       ]
+      },
+      {
+       "place_id": 257266053,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 175314197,
+       "lat": "13.9153573",
+       "lon": "100.5497679",
+       "category": "amenity",
+       "type": "exhibition_centre",
+       "place_rank": 30,
+       "importance": 4.5001144426596745e-05,
+       "addresstype": "amenity",
+       "name": "IMPACT Exhibition Center, Hall 9-12",
+       "display_name": "IMPACT Exhibition Center, Hall 9-12, Popular 2 Road, Muang Thong Thani, Ban Mai Subdistrict, Pak Kret City Municipality, Pak Kret District, Nonthaburi Province, 11120, Thailand",
+       "address": {
+        "amenity": "IMPACT Exhibition Center, Hall 9-12",
+        "road": "Popular 2 Road",
+        "neighbourhood": "Muang Thong Thani",
+        "city_district": "Ban Mai Subdistrict",
+        "city": "Pak Kret City Municipality",
+        "county": "Pak Kret District",
+        "province": "Nonthaburi Province",
+        "ISO3166-2-lvl4": "TH-12",
+        "postcode": "11120",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.9139292",
+        "13.9163159",
+        "100.5486253",
+        "100.5509105"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "venue_id": "bkk-b0a306264e7b",
+   "tier": "exact_venue",
+   "query": "IMPACT Arena, Popular Road, Ban Mai, Pak Kret, Nonthaburi 11120, Thailand",
+   "checked_on": "2026-11-26",
+   "returned_place": "IMPACT Arena, Popular Road, Muang Thong Thani, Ban Mai Subdistrict, Pak Kret City Municipality, Pak Kret District, Nonthaburi Province, 11120, Thailand",
+   "latitude": 13.9115621,
+   "longitude": 100.5483825,
+   "attempts": [
+    {
+     "kind": "address",
+     "query": "IMPACT Arena, Popular Road, Ban Mai, Pak Kret, Nonthaburi 11120, Thailand",
+     "url": "https://nominatim.openstreetmap.org/search?q=IMPACT+Arena%2C+Popular+Road%2C+Ban+Mai%2C+Pak+Kret%2C+Nonthaburi+11120%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 258556004,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 151982343,
+       "lat": "13.9115621",
+       "lon": "100.5483825",
+       "category": "leisure",
+       "type": "stadium",
+       "place_rank": 30,
+       "importance": 0.3331894015087746,
+       "addresstype": "leisure",
+       "name": "IMPACT Arena",
+       "display_name": "IMPACT Arena, Popular Road, Muang Thong Thani, Ban Mai Subdistrict, Pak Kret City Municipality, Pak Kret District, Nonthaburi Province, 11120, Thailand",
+       "address": {
+        "leisure": "IMPACT Arena",
+        "road": "Popular Road",
+        "neighbourhood": "Muang Thong Thani",
+        "city_district": "Ban Mai Subdistrict",
+        "city": "Pak Kret City Municipality",
+        "county": "Pak Kret District",
+        "province": "Nonthaburi Province",
+        "ISO3166-2-lvl4": "TH-12",
+        "postcode": "11120",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.9107897",
+        "13.9123078",
+        "100.5476259",
+        "100.5491287"
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "name",
+     "query": "IMPACT Arena Muang Thong Thani",
+     "url": "https://nominatim.openstreetmap.org/search?q=IMPACT+Arena+Muang+Thong+Thani&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 257321090,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 151982343,
+       "lat": "13.9115621",
+       "lon": "100.5483825",
+       "category": "leisure",
+       "type": "stadium",
+       "place_rank": 30,
+       "importance": 0.3331894015087746,
+       "addresstype": "leisure",
+       "name": "IMPACT Arena",
+       "display_name": "IMPACT Arena, Popular Road, Muang Thong Thani, Ban Mai Subdistrict, Pak Kret City Municipality, Pak Kret District, Nonthaburi Province, 11120, Thailand",
+       "address": {
+        "leisure": "IMPACT Arena",
+        "road": "Popular Road",
+        "neighbourhood": "Muang Thong Thani",
+        "city_district": "Ban Mai Subdistrict",
+        "city": "Pak Kret City Municipality",
+        "county": "Pak Kret District",
+        "province": "Nonthaburi Province",
+        "ISO3166-2-lvl4": "TH-12",
+        "postcode": "11120",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.9107897",
+        "13.9123078",
+        "100.5476259",
+        "100.5491287"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "venue_id": "bkk-3694bb865dd7",
+   "tier": "building",
+   "query": "Lido Connect Bangkok",
+   "checked_on": "2026-11-26",
+   "returned_place": "Lido Connect, Siam Square, Pathum Wan Subdistrict, Pathum Wan District, Bangkok, 10330, Thailand",
+   "latitude": 13.7451699,
+   "longitude": 100.5324766,
+   "attempts": [
+    {
+     "kind": "address",
+     "query": "256 Rama 1 Road, Pathum Wan, Bangkok 10330, Thailand",
+     "url": "https://nominatim.openstreetmap.org/search?q=256+Rama+1+Road%2C+Pathum+Wan%2C+Bangkok+10330%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 257617338,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 25292913,
+       "lat": "13.7449782",
+       "lon": "100.5381895",
+       "category": "highway",
+       "type": "primary",
+       "place_rank": 26,
+       "importance": 0.28187552194901133,
+       "addresstype": "primary",
+       "name": "Rama I Road",
+       "display_name": "Rama I Road, Siam, Pathum Wan Subdistrict, Pathum Wan District, Bangkok, 10330, Thailand",
+       "address": {
+        "road": "Rama I Road",
+        "neighbourhood": "Siam",
+        "quarter": "Pathum Wan Subdistrict",
+        "suburb": "Pathum Wan District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10330",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7446402",
+        "13.7453305",
+        "100.5361878",
+        "100.5401936"
+       ]
+      },
+      {
+       "place_id": 426587681,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 677212477,
+       "lat": "13.7469179",
+       "lon": "100.5264527",
+       "category": "highway",
+       "type": "primary",
+       "place_rank": 26,
+       "importance": 0.28187552194901133,
+       "addresstype": "primary",
+       "name": "Rama I Road",
+       "display_name": "Rama I Road, Wang Mai Subdistrict, Pathum Wan District, Bangkok, 10330, Thailand",
+       "address": {
+        "road": "Rama I Road",
+        "quarter": "Wang Mai Subdistrict",
+        "suburb": "Pathum Wan District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10330",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7466083",
+        "13.7472872",
+        "100.5247096",
+        "100.5282137"
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "name",
+     "query": "Lido Connect Bangkok",
+     "url": "https://nominatim.openstreetmap.org/search?q=Lido+Connect+Bangkok&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 257402682,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 163950601,
+       "lat": "13.7453389",
+       "lon": "100.5326589",
+       "category": "highway",
+       "type": "footway",
+       "place_rank": 27,
+       "importance": 0.04007662546730754,
+       "addresstype": "road",
+       "name": "Lido Connect",
+       "display_name": "Lido Connect, Siam Square, Pathum Wan Subdistrict, Pathum Wan District, Bangkok, 10330, Thailand",
+       "address": {
+        "road": "Lido Connect",
+        "retail": "Siam Square",
+        "quarter": "Pathum Wan Subdistrict",
+        "suburb": "Pathum Wan District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10330",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7448139",
+        "13.7458649",
+        "100.5325578",
+        "100.5327538"
+       ]
+      },
+      {
+       "place_id": 258043039,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "node",
+       "osm_id": 11139443935,
+       "lat": "13.7451699",
+       "lon": "100.5324766",
+       "category": "amenity",
+       "type": "music_venue",
+       "place_rank": 30,
+       "importance": 7.662546730750007e-05,
+       "addresstype": "amenity",
+       "name": "Lido Connect",
+       "display_name": "Lido Connect, Siam Square, Pathum Wan Subdistrict, Pathum Wan District, Bangkok, 10330, Thailand",
+       "address": {
+        "amenity": "Lido Connect",
+        "road": "Lido Connect",
+        "retail": "Siam Square",
+        "quarter": "Pathum Wan Subdistrict",
+        "suburb": "Pathum Wan District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10330",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7451199",
+        "13.7452199",
+        "100.5324266",
+        "100.5325266"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "venue_id": "bkk-5ea563e55c66",
+   "tier": "building",
+   "query": "Lido Connect Bangkok",
+   "checked_on": "2026-11-26",
+   "returned_place": "Lido Connect, Siam Square, Pathum Wan Subdistrict, Pathum Wan District, Bangkok, 10330, Thailand",
+   "latitude": 13.7451699,
+   "longitude": 100.5324766,
+   "attempts": [
+    {
+     "kind": "address",
+     "query": "256 Rama 1 Road, Pathum Wan, Bangkok 10330, Thailand",
+     "url": "https://nominatim.openstreetmap.org/search?q=256+Rama+1+Road%2C+Pathum+Wan%2C+Bangkok+10330%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 257617338,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 25292913,
+       "lat": "13.7449782",
+       "lon": "100.5381895",
+       "category": "highway",
+       "type": "primary",
+       "place_rank": 26,
+       "importance": 0.28187552194901133,
+       "addresstype": "primary",
+       "name": "Rama I Road",
+       "display_name": "Rama I Road, Siam, Pathum Wan Subdistrict, Pathum Wan District, Bangkok, 10330, Thailand",
+       "address": {
+        "road": "Rama I Road",
+        "neighbourhood": "Siam",
+        "quarter": "Pathum Wan Subdistrict",
+        "suburb": "Pathum Wan District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10330",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7446402",
+        "13.7453305",
+        "100.5361878",
+        "100.5401936"
+       ]
+      },
+      {
+       "place_id": 426587681,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 677212477,
+       "lat": "13.7469179",
+       "lon": "100.5264527",
+       "category": "highway",
+       "type": "primary",
+       "place_rank": 26,
+       "importance": 0.28187552194901133,
+       "addresstype": "primary",
+       "name": "Rama I Road",
+       "display_name": "Rama I Road, Wang Mai Subdistrict, Pathum Wan District, Bangkok, 10330, Thailand",
+       "address": {
+        "road": "Rama I Road",
+        "quarter": "Wang Mai Subdistrict",
+        "suburb": "Pathum Wan District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10330",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7466083",
+        "13.7472872",
+        "100.5247096",
+        "100.5282137"
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "name",
+     "query": "Lido Connect Bangkok",
+     "url": "https://nominatim.openstreetmap.org/search?q=Lido+Connect+Bangkok&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 257402682,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 163950601,
+       "lat": "13.7453389",
+       "lon": "100.5326589",
+       "category": "highway",
+       "type": "footway",
+       "place_rank": 27,
+       "importance": 0.04007662546730754,
+       "addresstype": "road",
+       "name": "Lido Connect",
+       "display_name": "Lido Connect, Siam Square, Pathum Wan Subdistrict, Pathum Wan District, Bangkok, 10330, Thailand",
+       "address": {
+        "road": "Lido Connect",
+        "retail": "Siam Square",
+        "quarter": "Pathum Wan Subdistrict",
+        "suburb": "Pathum Wan District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10330",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7448139",
+        "13.7458649",
+        "100.5325578",
+        "100.5327538"
+       ]
+      },
+      {
+       "place_id": 258043039,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "node",
+       "osm_id": 11139443935,
+       "lat": "13.7451699",
+       "lon": "100.5324766",
+       "category": "amenity",
+       "type": "music_venue",
+       "place_rank": 30,
+       "importance": 7.662546730750007e-05,
+       "addresstype": "amenity",
+       "name": "Lido Connect",
+       "display_name": "Lido Connect, Siam Square, Pathum Wan Subdistrict, Pathum Wan District, Bangkok, 10330, Thailand",
+       "address": {
+        "amenity": "Lido Connect",
+        "road": "Lido Connect",
+        "retail": "Siam Square",
+        "quarter": "Pathum Wan Subdistrict",
+        "suburb": "Pathum Wan District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10330",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7451199",
+        "13.7452199",
+        "100.5324266",
+        "100.5325266"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "venue_id": "bkk-a916a952309f",
+   "tier": "building",
+   "query": "Lido Connect Bangkok",
+   "checked_on": "2026-11-26",
+   "returned_place": "Lido Connect, Siam Square, Pathum Wan Subdistrict, Pathum Wan District, Bangkok, 10330, Thailand",
+   "latitude": 13.7451699,
+   "longitude": 100.5324766,
+   "attempts": [
+    {
+     "kind": "address",
+     "query": "256 Rama 1 Road, Pathum Wan, Bangkok 10330, Thailand",
+     "url": "https://nominatim.openstreetmap.org/search?q=256+Rama+1+Road%2C+Pathum+Wan%2C+Bangkok+10330%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 257617338,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 25292913,
+       "lat": "13.7449782",
+       "lon": "100.5381895",
+       "category": "highway",
+       "type": "primary",
+       "place_rank": 26,
+       "importance": 0.28187552194901133,
+       "addresstype": "primary",
+       "name": "Rama I Road",
+       "display_name": "Rama I Road, Siam, Pathum Wan Subdistrict, Pathum Wan District, Bangkok, 10330, Thailand",
+       "address": {
+        "road": "Rama I Road",
+        "neighbourhood": "Siam",
+        "quarter": "Pathum Wan Subdistrict",
+        "suburb": "Pathum Wan District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10330",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7446402",
+        "13.7453305",
+        "100.5361878",
+        "100.5401936"
+       ]
+      },
+      {
+       "place_id": 426587681,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 677212477,
+       "lat": "13.7469179",
+       "lon": "100.5264527",
+       "category": "highway",
+       "type": "primary",
+       "place_rank": 26,
+       "importance": 0.28187552194901133,
+       "addresstype": "primary",
+       "name": "Rama I Road",
+       "display_name": "Rama I Road, Wang Mai Subdistrict, Pathum Wan District, Bangkok, 10330, Thailand",
+       "address": {
+        "road": "Rama I Road",
+        "quarter": "Wang Mai Subdistrict",
+        "suburb": "Pathum Wan District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10330",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7466083",
+        "13.7472872",
+        "100.5247096",
+        "100.5282137"
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "name",
+     "query": "Lido Connect Bangkok",
+     "url": "https://nominatim.openstreetmap.org/search?q=Lido+Connect+Bangkok&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 258715479,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 163950601,
+       "lat": "13.7453389",
+       "lon": "100.5326589",
+       "category": "highway",
+       "type": "footway",
+       "place_rank": 27,
+       "importance": 0.04007662546730754,
+       "addresstype": "road",
+       "name": "Lido Connect",
+       "display_name": "Lido Connect, Siam Square, Pathum Wan Subdistrict, Pathum Wan District, Bangkok, 10330, Thailand",
+       "address": {
+        "road": "Lido Connect",
+        "retail": "Siam Square",
+        "quarter": "Pathum Wan Subdistrict",
+        "suburb": "Pathum Wan District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10330",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7448139",
+        "13.7458649",
+        "100.5325578",
+        "100.5327538"
+       ]
+      },
+      {
+       "place_id": 258718059,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "node",
+       "osm_id": 11139443935,
+       "lat": "13.7451699",
+       "lon": "100.5324766",
+       "category": "amenity",
+       "type": "music_venue",
+       "place_rank": 30,
+       "importance": 7.662546730750007e-05,
+       "addresstype": "amenity",
+       "name": "Lido Connect",
+       "display_name": "Lido Connect, Siam Square, Pathum Wan Subdistrict, Pathum Wan District, Bangkok, 10330, Thailand",
+       "address": {
+        "amenity": "Lido Connect",
+        "road": "Lido Connect",
+        "retail": "Siam Square",
+        "quarter": "Pathum Wan Subdistrict",
+        "suburb": "Pathum Wan District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10330",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7451199",
+        "13.7452199",
+        "100.5324266",
+        "100.5325266"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "venue_id": "bkk-a4ddebab6b05",
+   "tier": "building",
+   "query": "Lido Connect Bangkok",
+   "checked_on": "2026-11-26",
+   "returned_place": "Lido Connect, Siam Square, Pathum Wan Subdistrict, Pathum Wan District, Bangkok, 10330, Thailand",
+   "latitude": 13.7451699,
+   "longitude": 100.5324766,
+   "attempts": [
+    {
+     "kind": "address",
+     "query": "256 Rama 1 Road, Pathum Wan, Bangkok 10330, Thailand",
+     "url": "https://nominatim.openstreetmap.org/search?q=256+Rama+1+Road%2C+Pathum+Wan%2C+Bangkok+10330%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 257617338,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 25292913,
+       "lat": "13.7449782",
+       "lon": "100.5381895",
+       "category": "highway",
+       "type": "primary",
+       "place_rank": 26,
+       "importance": 0.28187552194901133,
+       "addresstype": "primary",
+       "name": "Rama I Road",
+       "display_name": "Rama I Road, Siam, Pathum Wan Subdistrict, Pathum Wan District, Bangkok, 10330, Thailand",
+       "address": {
+        "road": "Rama I Road",
+        "neighbourhood": "Siam",
+        "quarter": "Pathum Wan Subdistrict",
+        "suburb": "Pathum Wan District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10330",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7446402",
+        "13.7453305",
+        "100.5361878",
+        "100.5401936"
+       ]
+      },
+      {
+       "place_id": 426587681,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 677212477,
+       "lat": "13.7469179",
+       "lon": "100.5264527",
+       "category": "highway",
+       "type": "primary",
+       "place_rank": 26,
+       "importance": 0.28187552194901133,
+       "addresstype": "primary",
+       "name": "Rama I Road",
+       "display_name": "Rama I Road, Wang Mai Subdistrict, Pathum Wan District, Bangkok, 10330, Thailand",
+       "address": {
+        "road": "Rama I Road",
+        "quarter": "Wang Mai Subdistrict",
+        "suburb": "Pathum Wan District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10330",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7466083",
+        "13.7472872",
+        "100.5247096",
+        "100.5282137"
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "name",
+     "query": "Lido Connect Bangkok",
+     "url": "https://nominatim.openstreetmap.org/search?q=Lido+Connect+Bangkok&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 257402682,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 163950601,
+       "lat": "13.7453389",
+       "lon": "100.5326589",
+       "category": "highway",
+       "type": "footway",
+       "place_rank": 27,
+       "importance": 0.04007662546730754,
+       "addresstype": "road",
+       "name": "Lido Connect",
+       "display_name": "Lido Connect, Siam Square, Pathum Wan Subdistrict, Pathum Wan District, Bangkok, 10330, Thailand",
+       "address": {
+        "road": "Lido Connect",
+        "retail": "Siam Square",
+        "quarter": "Pathum Wan Subdistrict",
+        "suburb": "Pathum Wan District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10330",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7448139",
+        "13.7458649",
+        "100.5325578",
+        "100.5327538"
+       ]
+      },
+      {
+       "place_id": 258043039,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "node",
+       "osm_id": 11139443935,
+       "lat": "13.7451699",
+       "lon": "100.5324766",
+       "category": "amenity",
+       "type": "music_venue",
+       "place_rank": 30,
+       "importance": 7.662546730750007e-05,
+       "addresstype": "amenity",
+       "name": "Lido Connect",
+       "display_name": "Lido Connect, Siam Square, Pathum Wan Subdistrict, Pathum Wan District, Bangkok, 10330, Thailand",
+       "address": {
+        "amenity": "Lido Connect",
+        "road": "Lido Connect",
+        "retail": "Siam Square",
+        "quarter": "Pathum Wan Subdistrict",
+        "suburb": "Pathum Wan District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10330",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7451199",
+        "13.7452199",
+        "100.5324266",
+        "100.5325266"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "venue_id": "bkk-3d7d89eb4973",
+   "tier": "building",
+   "query": "River City Bangkok Bangkok",
+   "checked_on": "2026-11-26",
+   "returned_place": "River City, 23, Soi Charoen Krung 24, Rong Nam Khaeng, Talat Noi Subdistrict, Samphanthawong District, Bangkok, 10100, Thailand",
+   "latitude": 13.7304469,
+   "longitude": 100.5133237,
+   "attempts": [
+    {
+     "kind": "address",
+     "query": "23 Charoen Krung Soi 24, Bang Rak, Bangkok 10500, Thailand",
+     "url": "https://nominatim.openstreetmap.org/search?q=23+Charoen+Krung+Soi+24%2C+Bang+Rak%2C+Bangkok+10500%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "none",
+     "results": []
+    },
+    {
+     "kind": "name",
+     "query": "River City Bangkok Bangkok",
+     "url": "https://nominatim.openstreetmap.org/search?q=River+City+Bangkok+Bangkok&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 257586784,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 342182317,
+       "lat": "13.7304469",
+       "lon": "100.5133237",
+       "category": "shop",
+       "type": "mall",
+       "place_rank": 30,
+       "importance": 0.33278388606982795,
+       "addresstype": "shop",
+       "name": "River City",
+       "display_name": "River City, 23, Soi Charoen Krung 24, Rong Nam Khaeng, Talat Noi Subdistrict, Samphanthawong District, Bangkok, 10100, Thailand",
+       "address": {
+        "shop": "River City",
+        "house_number": "23",
+        "road": "Soi Charoen Krung 24",
+        "neighbourhood": "Rong Nam Khaeng",
+        "quarter": "Talat Noi Subdistrict",
+        "suburb": "Samphanthawong District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10100",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7297908",
+        "13.7309077",
+        "100.5127440",
+        "100.5137807"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "venue_id": "bkk-697e48b18e66",
+   "tier": "building",
+   "query": "River City Bangkok Bangkok",
+   "checked_on": "2026-11-26",
+   "returned_place": "River City, 23, Soi Charoen Krung 24, Rong Nam Khaeng, Talat Noi Subdistrict, Samphanthawong District, Bangkok, 10100, Thailand",
+   "latitude": 13.7304469,
+   "longitude": 100.5133237,
+   "attempts": [
+    {
+     "kind": "address",
+     "query": "23 Charoen Krung Soi 24, Bang Rak, Bangkok 10500, Thailand",
+     "url": "https://nominatim.openstreetmap.org/search?q=23+Charoen+Krung+Soi+24%2C+Bang+Rak%2C+Bangkok+10500%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "none",
+     "results": []
+    },
+    {
+     "kind": "name",
+     "query": "River City Bangkok Bangkok",
+     "url": "https://nominatim.openstreetmap.org/search?q=River+City+Bangkok+Bangkok&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 257586784,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 342182317,
+       "lat": "13.7304469",
+       "lon": "100.5133237",
+       "category": "shop",
+       "type": "mall",
+       "place_rank": 30,
+       "importance": 0.33278388606982795,
+       "addresstype": "shop",
+       "name": "River City",
+       "display_name": "River City, 23, Soi Charoen Krung 24, Rong Nam Khaeng, Talat Noi Subdistrict, Samphanthawong District, Bangkok, 10100, Thailand",
+       "address": {
+        "shop": "River City",
+        "house_number": "23",
+        "road": "Soi Charoen Krung 24",
+        "neighbourhood": "Rong Nam Khaeng",
+        "quarter": "Talat Noi Subdistrict",
+        "suburb": "Samphanthawong District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10100",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7297908",
+        "13.7309077",
+        "100.5127440",
+        "100.5137807"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "venue_id": "bkk-a93845ec1858",
+   "tier": "building",
+   "query": "River City Bangkok Bangkok",
+   "checked_on": "2026-11-26",
+   "returned_place": "River City, 23, Soi Charoen Krung 24, Rong Nam Khaeng, Talat Noi Subdistrict, Samphanthawong District, Bangkok, 10100, Thailand",
+   "latitude": 13.7304469,
+   "longitude": 100.5133237,
+   "attempts": [
+    {
+     "kind": "address",
+     "query": "23 Charoen Krung Soi 24, Bang Rak, Bangkok 10500, Thailand",
+     "url": "https://nominatim.openstreetmap.org/search?q=23+Charoen+Krung+Soi+24%2C+Bang+Rak%2C+Bangkok+10500%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "none",
+     "results": []
+    },
+    {
+     "kind": "name",
+     "query": "River City Bangkok Bangkok",
+     "url": "https://nominatim.openstreetmap.org/search?q=River+City+Bangkok+Bangkok&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 257586784,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 342182317,
+       "lat": "13.7304469",
+       "lon": "100.5133237",
+       "category": "shop",
+       "type": "mall",
+       "place_rank": 30,
+       "importance": 0.33278388606982795,
+       "addresstype": "shop",
+       "name": "River City",
+       "display_name": "River City, 23, Soi Charoen Krung 24, Rong Nam Khaeng, Talat Noi Subdistrict, Samphanthawong District, Bangkok, 10100, Thailand",
+       "address": {
+        "shop": "River City",
+        "house_number": "23",
+        "road": "Soi Charoen Krung 24",
+        "neighbourhood": "Rong Nam Khaeng",
+        "quarter": "Talat Noi Subdistrict",
+        "suburb": "Samphanthawong District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10100",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7297908",
+        "13.7309077",
+        "100.5127440",
+        "100.5137807"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "venue_id": "bkk-43f9d14b75e6",
+   "tier": "building",
+   "query": "60 Ratchadaphisek Road, Khlong Toei, Bangkok 10110, Thailand",
+   "checked_on": "2026-11-26",
+   "returned_place": "Queen Sirikit National Convention Center, 60, Ratchadaphisek Road, ชุมชนเจริญสุข, Khlong Toei Subdistrict, Khlong Toei District, Bangkok, 10110, Thailand",
+   "latitude": 13.7242403,
+   "longitude": 100.558736,
+   "attempts": [
+    {
+     "kind": "address",
+     "query": "60 Ratchadaphisek Road, Khlong Toei, Bangkok 10110, Thailand",
+     "url": "https://nominatim.openstreetmap.org/search?q=60+Ratchadaphisek+Road%2C+Khlong+Toei%2C+Bangkok+10110%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 255128110,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 1085353819,
+       "lat": "13.7242403",
+       "lon": "100.5587360",
+       "category": "amenity",
+       "type": "conference_centre",
+       "place_rank": 30,
+       "importance": 0.3047903492217065,
+       "addresstype": "amenity",
+       "name": "Queen Sirikit National Convention Center",
+       "display_name": "Queen Sirikit National Convention Center, 60, Ratchadaphisek Road, ชุมชนเจริญสุข, Khlong Toei Subdistrict, Khlong Toei District, Bangkok, 10110, Thailand",
+       "address": {
+        "amenity": "Queen Sirikit National Convention Center",
+        "house_number": "60",
+        "road": "Ratchadaphisek Road",
+        "neighbourhood": "ชุมชนเจริญสุข",
+        "quarter": "Khlong Toei Subdistrict",
+        "suburb": "Khlong Toei District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10110",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7232044",
+        "13.7254881",
+        "100.5575701",
+        "100.5598922"
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "name",
+     "query": "QSNCC Bangkok",
+     "url": "https://nominatim.openstreetmap.org/search?q=QSNCC+Bangkok&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 255128110,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 1085353819,
+       "lat": "13.7242403",
+       "lon": "100.5587360",
+       "category": "amenity",
+       "type": "conference_centre",
+       "place_rank": 30,
+       "importance": 0.3047903492217065,
+       "addresstype": "amenity",
+       "name": "Queen Sirikit National Convention Center",
+       "display_name": "Queen Sirikit National Convention Center, 60, Ratchadaphisek Road, ชุมชนเจริญสุข, Khlong Toei Subdistrict, Khlong Toei District, Bangkok, 10110, Thailand",
+       "address": {
+        "amenity": "Queen Sirikit National Convention Center",
+        "house_number": "60",
+        "road": "Ratchadaphisek Road",
+        "neighbourhood": "ชุมชนเจริญสุข",
+        "quarter": "Khlong Toei Subdistrict",
+        "suburb": "Khlong Toei District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10110",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7232044",
+        "13.7254881",
+        "100.5575701",
+        "100.5598922"
+       ]
+      },
+      {
+       "place_id": 254691991,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "node",
+       "osm_id": 9444510082,
+       "lat": "13.7264855",
+       "lon": "100.5601205",
+       "category": "highway",
+       "type": "bus_stop",
+       "place_rank": 30,
+       "importance": 7.662546730750007e-05,
+       "addresstype": "highway",
+       "name": "QSNCC",
+       "display_name": "QSNCC, Ratchadaphisek Road, ชุมชนเจริญสุข, Khlong Toei Subdistrict, Khlong Toei District, Bangkok, 10110, Thailand",
+       "address": {
+        "highway": "QSNCC",
+        "road": "Ratchadaphisek Road",
+        "neighbourhood": "ชุมชนเจริญสุข",
+        "quarter": "Khlong Toei Subdistrict",
+        "suburb": "Khlong Toei District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10110",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7264355",
+        "13.7265355",
+        "100.5600705",
+        "100.5601705"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "venue_id": "bkk-79d23e9896c6",
+   "tier": "building",
+   "query": "60 Ratchadaphisek Road, Khlong Toei, Bangkok 10110, Thailand",
+   "checked_on": "2026-11-26",
+   "returned_place": "Queen Sirikit National Convention Center, 60, Ratchadaphisek Road, ชุมชนเจริญสุข, Khlong Toei Subdistrict, Khlong Toei District, Bangkok, 10110, Thailand",
+   "latitude": 13.7242403,
+   "longitude": 100.558736,
+   "attempts": [
+    {
+     "kind": "address",
+     "query": "60 Ratchadaphisek Road, Khlong Toei, Bangkok 10110, Thailand",
+     "url": "https://nominatim.openstreetmap.org/search?q=60+Ratchadaphisek+Road%2C+Khlong+Toei%2C+Bangkok+10110%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 255128110,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 1085353819,
+       "lat": "13.7242403",
+       "lon": "100.5587360",
+       "category": "amenity",
+       "type": "conference_centre",
+       "place_rank": 30,
+       "importance": 0.3047903492217065,
+       "addresstype": "amenity",
+       "name": "Queen Sirikit National Convention Center",
+       "display_name": "Queen Sirikit National Convention Center, 60, Ratchadaphisek Road, ชุมชนเจริญสุข, Khlong Toei Subdistrict, Khlong Toei District, Bangkok, 10110, Thailand",
+       "address": {
+        "amenity": "Queen Sirikit National Convention Center",
+        "house_number": "60",
+        "road": "Ratchadaphisek Road",
+        "neighbourhood": "ชุมชนเจริญสุข",
+        "quarter": "Khlong Toei Subdistrict",
+        "suburb": "Khlong Toei District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10110",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7232044",
+        "13.7254881",
+        "100.5575701",
+        "100.5598922"
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "name",
+     "query": "QSNCC Bangkok",
+     "url": "https://nominatim.openstreetmap.org/search?q=QSNCC+Bangkok&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 255128110,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 1085353819,
+       "lat": "13.7242403",
+       "lon": "100.5587360",
+       "category": "amenity",
+       "type": "conference_centre",
+       "place_rank": 30,
+       "importance": 0.3047903492217065,
+       "addresstype": "amenity",
+       "name": "Queen Sirikit National Convention Center",
+       "display_name": "Queen Sirikit National Convention Center, 60, Ratchadaphisek Road, ชุมชนเจริญสุข, Khlong Toei Subdistrict, Khlong Toei District, Bangkok, 10110, Thailand",
+       "address": {
+        "amenity": "Queen Sirikit National Convention Center",
+        "house_number": "60",
+        "road": "Ratchadaphisek Road",
+        "neighbourhood": "ชุมชนเจริญสุข",
+        "quarter": "Khlong Toei Subdistrict",
+        "suburb": "Khlong Toei District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10110",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7232044",
+        "13.7254881",
+        "100.5575701",
+        "100.5598922"
+       ]
+      },
+      {
+       "place_id": 254691991,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "node",
+       "osm_id": 9444510082,
+       "lat": "13.7264855",
+       "lon": "100.5601205",
+       "category": "highway",
+       "type": "bus_stop",
+       "place_rank": 30,
+       "importance": 7.662546730750007e-05,
+       "addresstype": "highway",
+       "name": "QSNCC",
+       "display_name": "QSNCC, Ratchadaphisek Road, ชุมชนเจริญสุข, Khlong Toei Subdistrict, Khlong Toei District, Bangkok, 10110, Thailand",
+       "address": {
+        "highway": "QSNCC",
+        "road": "Ratchadaphisek Road",
+        "neighbourhood": "ชุมชนเจริญสุข",
+        "quarter": "Khlong Toei Subdistrict",
+        "suburb": "Khlong Toei District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10110",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7264355",
+        "13.7265355",
+        "100.5600705",
+        "100.5601705"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "venue_id": "bkk-df414d442906",
+   "tier": "building",
+   "query": "60 Ratchadaphisek Road, Khlong Toei, Bangkok 10110, Thailand",
+   "checked_on": "2026-11-26",
+   "returned_place": "Queen Sirikit National Convention Center, 60, Ratchadaphisek Road, ชุมชนเจริญสุข, Khlong Toei Subdistrict, Khlong Toei District, Bangkok, 10110, Thailand",
+   "latitude": 13.7242403,
+   "longitude": 100.558736,
+   "attempts": [
+    {
+     "kind": "address",
+     "query": "60 Ratchadaphisek Road, Khlong Toei, Bangkok 10110, Thailand",
+     "url": "https://nominatim.openstreetmap.org/search?q=60+Ratchadaphisek+Road%2C+Khlong+Toei%2C+Bangkok+10110%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 255128110,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 1085353819,
+       "lat": "13.7242403",
+       "lon": "100.5587360",
+       "category": "amenity",
+       "type": "conference_centre",
+       "place_rank": 30,
+       "importance": 0.3047903492217065,
+       "addresstype": "amenity",
+       "name": "Queen Sirikit National Convention Center",
+       "display_name": "Queen Sirikit National Convention Center, 60, Ratchadaphisek Road, ชุมชนเจริญสุข, Khlong Toei Subdistrict, Khlong Toei District, Bangkok, 10110, Thailand",
+       "address": {
+        "amenity": "Queen Sirikit National Convention Center",
+        "house_number": "60",
+        "road": "Ratchadaphisek Road",
+        "neighbourhood": "ชุมชนเจริญสุข",
+        "quarter": "Khlong Toei Subdistrict",
+        "suburb": "Khlong Toei District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10110",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7232044",
+        "13.7254881",
+        "100.5575701",
+        "100.5598922"
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "name",
+     "query": "QSNCC Bangkok",
+     "url": "https://nominatim.openstreetmap.org/search?q=QSNCC+Bangkok&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 255128110,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 1085353819,
+       "lat": "13.7242403",
+       "lon": "100.5587360",
+       "category": "amenity",
+       "type": "conference_centre",
+       "place_rank": 30,
+       "importance": 0.3047903492217065,
+       "addresstype": "amenity",
+       "name": "Queen Sirikit National Convention Center",
+       "display_name": "Queen Sirikit National Convention Center, 60, Ratchadaphisek Road, ชุมชนเจริญสุข, Khlong Toei Subdistrict, Khlong Toei District, Bangkok, 10110, Thailand",
+       "address": {
+        "amenity": "Queen Sirikit National Convention Center",
+        "house_number": "60",
+        "road": "Ratchadaphisek Road",
+        "neighbourhood": "ชุมชนเจริญสุข",
+        "quarter": "Khlong Toei Subdistrict",
+        "suburb": "Khlong Toei District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10110",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7232044",
+        "13.7254881",
+        "100.5575701",
+        "100.5598922"
+       ]
+      },
+      {
+       "place_id": 254691991,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "node",
+       "osm_id": 9444510082,
+       "lat": "13.7264855",
+       "lon": "100.5601205",
+       "category": "highway",
+       "type": "bus_stop",
+       "place_rank": 30,
+       "importance": 7.662546730750007e-05,
+       "addresstype": "highway",
+       "name": "QSNCC",
+       "display_name": "QSNCC, Ratchadaphisek Road, ชุมชนเจริญสุข, Khlong Toei Subdistrict, Khlong Toei District, Bangkok, 10110, Thailand",
+       "address": {
+        "highway": "QSNCC",
+        "road": "Ratchadaphisek Road",
+        "neighbourhood": "ชุมชนเจริญสุข",
+        "quarter": "Khlong Toei Subdistrict",
+        "suburb": "Khlong Toei District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10110",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7264355",
+        "13.7265355",
+        "100.5600705",
+        "100.5601705"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "venue_id": "bkk-e50efb24b4d2",
+   "tier": "building",
+   "query": "60 Ratchadaphisek Road, Khlong Toei, Bangkok 10110, Thailand",
+   "checked_on": "2026-11-26",
+   "returned_place": "Queen Sirikit National Convention Center, 60, Ratchadaphisek Road, ชุมชนเจริญสุข, Khlong Toei Subdistrict, Khlong Toei District, Bangkok, 10110, Thailand",
+   "latitude": 13.7242403,
+   "longitude": 100.558736,
+   "attempts": [
+    {
+     "kind": "address",
+     "query": "60 Ratchadaphisek Road, Khlong Toei, Bangkok 10110, Thailand",
+     "url": "https://nominatim.openstreetmap.org/search?q=60+Ratchadaphisek+Road%2C+Khlong+Toei%2C+Bangkok+10110%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 255128110,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 1085353819,
+       "lat": "13.7242403",
+       "lon": "100.5587360",
+       "category": "amenity",
+       "type": "conference_centre",
+       "place_rank": 30,
+       "importance": 0.3047903492217065,
+       "addresstype": "amenity",
+       "name": "Queen Sirikit National Convention Center",
+       "display_name": "Queen Sirikit National Convention Center, 60, Ratchadaphisek Road, ชุมชนเจริญสุข, Khlong Toei Subdistrict, Khlong Toei District, Bangkok, 10110, Thailand",
+       "address": {
+        "amenity": "Queen Sirikit National Convention Center",
+        "house_number": "60",
+        "road": "Ratchadaphisek Road",
+        "neighbourhood": "ชุมชนเจริญสุข",
+        "quarter": "Khlong Toei Subdistrict",
+        "suburb": "Khlong Toei District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10110",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7232044",
+        "13.7254881",
+        "100.5575701",
+        "100.5598922"
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "name",
+     "query": "QSNCC Bangkok",
+     "url": "https://nominatim.openstreetmap.org/search?q=QSNCC+Bangkok&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 255128110,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 1085353819,
+       "lat": "13.7242403",
+       "lon": "100.5587360",
+       "category": "amenity",
+       "type": "conference_centre",
+       "place_rank": 30,
+       "importance": 0.3047903492217065,
+       "addresstype": "amenity",
+       "name": "Queen Sirikit National Convention Center",
+       "display_name": "Queen Sirikit National Convention Center, 60, Ratchadaphisek Road, ชุมชนเจริญสุข, Khlong Toei Subdistrict, Khlong Toei District, Bangkok, 10110, Thailand",
+       "address": {
+        "amenity": "Queen Sirikit National Convention Center",
+        "house_number": "60",
+        "road": "Ratchadaphisek Road",
+        "neighbourhood": "ชุมชนเจริญสุข",
+        "quarter": "Khlong Toei Subdistrict",
+        "suburb": "Khlong Toei District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10110",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7232044",
+        "13.7254881",
+        "100.5575701",
+        "100.5598922"
+       ]
+      },
+      {
+       "place_id": 254691991,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "node",
+       "osm_id": 9444510082,
+       "lat": "13.7264855",
+       "lon": "100.5601205",
+       "category": "highway",
+       "type": "bus_stop",
+       "place_rank": 30,
+       "importance": 7.662546730750007e-05,
+       "addresstype": "highway",
+       "name": "QSNCC",
+       "display_name": "QSNCC, Ratchadaphisek Road, ชุมชนเจริญสุข, Khlong Toei Subdistrict, Khlong Toei District, Bangkok, 10110, Thailand",
+       "address": {
+        "highway": "QSNCC",
+        "road": "Ratchadaphisek Road",
+        "neighbourhood": "ชุมชนเจริญสุข",
+        "quarter": "Khlong Toei Subdistrict",
+        "suburb": "Khlong Toei District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10110",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7264355",
+        "13.7265355",
+        "100.5600705",
+        "100.5601705"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "venue_id": "bkk-65b5cf80433d",
+   "tier": "building",
+   "query": "155 Ratchadamri Road, Lumphini, Pathum Wan, Bangkok 10330, Thailand",
+   "checked_on": "2026-11-26",
+   "returned_place": "Anantara Siam Bangkok Hotel, 155, Ratchadamri Road, Lumphini Subdistrict, Pathum Wan District, Bangkok, 10330, Thailand",
+   "latitude": 13.7409187,
+   "longitude": 100.5403109,
+   "attempts": [
+    {
+     "kind": "address",
+     "query": "155 Ratchadamri Road, Lumphini, Pathum Wan, Bangkok 10330, Thailand",
+     "url": "https://nominatim.openstreetmap.org/search?q=155+Ratchadamri+Road%2C+Lumphini%2C+Pathum+Wan%2C+Bangkok+10330%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 258335460,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 183158650,
+       "lat": "13.7409187",
+       "lon": "100.5403109",
+       "category": "tourism",
+       "type": "hotel",
+       "place_rank": 30,
+       "importance": 0.11734328469919902,
+       "addresstype": "tourism",
+       "name": "Anantara Siam Bangkok Hotel",
+       "display_name": "Anantara Siam Bangkok Hotel, 155, Ratchadamri Road, Lumphini Subdistrict, Pathum Wan District, Bangkok, 10330, Thailand",
+       "address": {
+        "tourism": "Anantara Siam Bangkok Hotel",
+        "house_number": "155",
+        "road": "Ratchadamri Road",
+        "quarter": "Lumphini Subdistrict",
+        "suburb": "Pathum Wan District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10330",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7403391",
+        "13.7415013",
+        "100.5398884",
+        "100.5407732"
+       ]
+      },
+      {
+       "place_id": 258272864,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "node",
+       "osm_id": 4133335999,
+       "lat": "13.7411048",
+       "lon": "100.5399995",
+       "category": "amenity",
+       "type": "restaurant",
+       "place_rank": 30,
+       "importance": 7.662546730750007e-05,
+       "addresstype": "amenity",
+       "name": "",
+       "display_name": "155, Ratchadamri Road, Lumphini Subdistrict, Pathum Wan District, Bangkok, 10330, Thailand",
+       "address": {
+        "house_number": "155",
+        "road": "Ratchadamri Road",
+        "quarter": "Lumphini Subdistrict",
+        "suburb": "Pathum Wan District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10330",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7410548",
+        "13.7411548",
+        "100.5399495",
+        "100.5400495"
+       ]
+      },
+      {
+       "place_id": 423838432,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "node",
+       "osm_id": 14069656101,
+       "lat": "13.7411707",
+       "lon": "100.5404293",
+       "category": "amenity",
+       "type": "bar",
+       "place_rank": 30,
+       "importance": 7.662546730750007e-05,
+       "addresstype": "amenity",
+       "name": "AQUA Bar",
+       "display_name": "AQUA Bar, 155, Ratchadamri Road, Lumphini Subdistrict, Pathum Wan District, Bangkok, 10330, Thailand",
+       "address": {
+        "amenity": "AQUA Bar",
+        "house_number": "155",
+        "road": "Ratchadamri Road",
+        "quarter": "Lumphini Subdistrict",
+        "suburb": "Pathum Wan District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10330",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7411207",
+        "13.7412207",
+        "100.5403793",
+        "100.5404793"
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "name",
+     "query": "Anantara Siam Bangkok",
+     "url": "https://nominatim.openstreetmap.org/search?q=Anantara+Siam+Bangkok&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 257208585,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 183158650,
+       "lat": "13.7409187",
+       "lon": "100.5403109",
+       "category": "tourism",
+       "type": "hotel",
+       "place_rank": 30,
+       "importance": 0.11734328469919902,
+       "addresstype": "tourism",
+       "name": "Anantara Siam Bangkok Hotel",
+       "display_name": "Anantara Siam Bangkok Hotel, 155, Ratchadamri Road, Lumphini Subdistrict, Pathum Wan District, Bangkok, 10330, Thailand",
+       "address": {
+        "tourism": "Anantara Siam Bangkok Hotel",
+        "house_number": "155",
+        "road": "Ratchadamri Road",
+        "quarter": "Lumphini Subdistrict",
+        "suburb": "Pathum Wan District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10330",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7403391",
+        "13.7415013",
+        "100.5398884",
+        "100.5407732"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "venue_id": "bkk-8b08aed2f993",
+   "tier": "building",
+   "query": "155 Ratchadamri Road, Lumphini, Pathum Wan, Bangkok 10330, Thailand",
+   "checked_on": "2026-11-26",
+   "returned_place": "Anantara Siam Bangkok Hotel, 155, Ratchadamri Road, Lumphini Subdistrict, Pathum Wan District, Bangkok, 10330, Thailand",
+   "latitude": 13.7409187,
+   "longitude": 100.5403109,
+   "attempts": [
+    {
+     "kind": "address",
+     "query": "155 Ratchadamri Road, Lumphini, Pathum Wan, Bangkok 10330, Thailand",
+     "url": "https://nominatim.openstreetmap.org/search?q=155+Ratchadamri+Road%2C+Lumphini%2C+Pathum+Wan%2C+Bangkok+10330%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 258335460,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 183158650,
+       "lat": "13.7409187",
+       "lon": "100.5403109",
+       "category": "tourism",
+       "type": "hotel",
+       "place_rank": 30,
+       "importance": 0.11734328469919902,
+       "addresstype": "tourism",
+       "name": "Anantara Siam Bangkok Hotel",
+       "display_name": "Anantara Siam Bangkok Hotel, 155, Ratchadamri Road, Lumphini Subdistrict, Pathum Wan District, Bangkok, 10330, Thailand",
+       "address": {
+        "tourism": "Anantara Siam Bangkok Hotel",
+        "house_number": "155",
+        "road": "Ratchadamri Road",
+        "quarter": "Lumphini Subdistrict",
+        "suburb": "Pathum Wan District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10330",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7403391",
+        "13.7415013",
+        "100.5398884",
+        "100.5407732"
+       ]
+      },
+      {
+       "place_id": 258272864,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "node",
+       "osm_id": 4133335999,
+       "lat": "13.7411048",
+       "lon": "100.5399995",
+       "category": "amenity",
+       "type": "restaurant",
+       "place_rank": 30,
+       "importance": 7.662546730750007e-05,
+       "addresstype": "amenity",
+       "name": "",
+       "display_name": "155, Ratchadamri Road, Lumphini Subdistrict, Pathum Wan District, Bangkok, 10330, Thailand",
+       "address": {
+        "house_number": "155",
+        "road": "Ratchadamri Road",
+        "quarter": "Lumphini Subdistrict",
+        "suburb": "Pathum Wan District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10330",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7410548",
+        "13.7411548",
+        "100.5399495",
+        "100.5400495"
+       ]
+      },
+      {
+       "place_id": 423838432,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "node",
+       "osm_id": 14069656101,
+       "lat": "13.7411707",
+       "lon": "100.5404293",
+       "category": "amenity",
+       "type": "bar",
+       "place_rank": 30,
+       "importance": 7.662546730750007e-05,
+       "addresstype": "amenity",
+       "name": "AQUA Bar",
+       "display_name": "AQUA Bar, 155, Ratchadamri Road, Lumphini Subdistrict, Pathum Wan District, Bangkok, 10330, Thailand",
+       "address": {
+        "amenity": "AQUA Bar",
+        "house_number": "155",
+        "road": "Ratchadamri Road",
+        "quarter": "Lumphini Subdistrict",
+        "suburb": "Pathum Wan District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10330",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7411207",
+        "13.7412207",
+        "100.5403793",
+        "100.5404793"
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "name",
+     "query": "Anantara Siam Bangkok",
+     "url": "https://nominatim.openstreetmap.org/search?q=Anantara+Siam+Bangkok&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 257208585,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 183158650,
+       "lat": "13.7409187",
+       "lon": "100.5403109",
+       "category": "tourism",
+       "type": "hotel",
+       "place_rank": 30,
+       "importance": 0.11734328469919902,
+       "addresstype": "tourism",
+       "name": "Anantara Siam Bangkok Hotel",
+       "display_name": "Anantara Siam Bangkok Hotel, 155, Ratchadamri Road, Lumphini Subdistrict, Pathum Wan District, Bangkok, 10330, Thailand",
+       "address": {
+        "tourism": "Anantara Siam Bangkok Hotel",
+        "house_number": "155",
+        "road": "Ratchadamri Road",
+        "quarter": "Lumphini Subdistrict",
+        "suburb": "Pathum Wan District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10330",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7403391",
+        "13.7415013",
+        "100.5398884",
+        "100.5407732"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "venue_id": "bkk-f3deec86d9b4",
+   "tier": "building",
+   "query": "155 Ratchadamri Road, Lumphini, Pathum Wan, Bangkok 10330, Thailand",
+   "checked_on": "2026-11-26",
+   "returned_place": "Anantara Siam Bangkok Hotel, 155, Ratchadamri Road, Lumphini Subdistrict, Pathum Wan District, Bangkok, 10330, Thailand",
+   "latitude": 13.7409187,
+   "longitude": 100.5403109,
+   "attempts": [
+    {
+     "kind": "address",
+     "query": "155 Ratchadamri Road, Lumphini, Pathum Wan, Bangkok 10330, Thailand",
+     "url": "https://nominatim.openstreetmap.org/search?q=155+Ratchadamri+Road%2C+Lumphini%2C+Pathum+Wan%2C+Bangkok+10330%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 257208585,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 183158650,
+       "lat": "13.7409187",
+       "lon": "100.5403109",
+       "category": "tourism",
+       "type": "hotel",
+       "place_rank": 30,
+       "importance": 0.11734328469919902,
+       "addresstype": "tourism",
+       "name": "Anantara Siam Bangkok Hotel",
+       "display_name": "Anantara Siam Bangkok Hotel, 155, Ratchadamri Road, Lumphini Subdistrict, Pathum Wan District, Bangkok, 10330, Thailand",
+       "address": {
+        "tourism": "Anantara Siam Bangkok Hotel",
+        "house_number": "155",
+        "road": "Ratchadamri Road",
+        "quarter": "Lumphini Subdistrict",
+        "suburb": "Pathum Wan District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10330",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7403391",
+        "13.7415013",
+        "100.5398884",
+        "100.5407732"
+       ]
+      },
+      {
+       "place_id": 256450130,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "node",
+       "osm_id": 4133335999,
+       "lat": "13.7411048",
+       "lon": "100.5399995",
+       "category": "amenity",
+       "type": "restaurant",
+       "place_rank": 30,
+       "importance": 7.662546730750007e-05,
+       "addresstype": "amenity",
+       "name": "",
+       "display_name": "155, Ratchadamri Road, Lumphini Subdistrict, Pathum Wan District, Bangkok, 10330, Thailand",
+       "address": {
+        "house_number": "155",
+        "road": "Ratchadamri Road",
+        "quarter": "Lumphini Subdistrict",
+        "suburb": "Pathum Wan District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10330",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7410548",
+        "13.7411548",
+        "100.5399495",
+        "100.5400495"
+       ]
+      },
+      {
+       "place_id": 424806438,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "node",
+       "osm_id": 14069656101,
+       "lat": "13.7411707",
+       "lon": "100.5404293",
+       "category": "amenity",
+       "type": "bar",
+       "place_rank": 30,
+       "importance": 7.662546730750007e-05,
+       "addresstype": "amenity",
+       "name": "AQUA Bar",
+       "display_name": "AQUA Bar, 155, Ratchadamri Road, Lumphini Subdistrict, Pathum Wan District, Bangkok, 10330, Thailand",
+       "address": {
+        "amenity": "AQUA Bar",
+        "house_number": "155",
+        "road": "Ratchadamri Road",
+        "quarter": "Lumphini Subdistrict",
+        "suburb": "Pathum Wan District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10330",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7411207",
+        "13.7412207",
+        "100.5403793",
+        "100.5404793"
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "name",
+     "query": "Anantara Siam Bangkok",
+     "url": "https://nominatim.openstreetmap.org/search?q=Anantara+Siam+Bangkok&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 257556014,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 183158650,
+       "lat": "13.7409187",
+       "lon": "100.5403109",
+       "category": "tourism",
+       "type": "hotel",
+       "place_rank": 30,
+       "importance": 0.11734328469919902,
+       "addresstype": "tourism",
+       "name": "Anantara Siam Bangkok Hotel",
+       "display_name": "Anantara Siam Bangkok Hotel, 155, Ratchadamri Road, Lumphini Subdistrict, Pathum Wan District, Bangkok, 10330, Thailand",
+       "address": {
+        "tourism": "Anantara Siam Bangkok Hotel",
+        "house_number": "155",
+        "road": "Ratchadamri Road",
+        "quarter": "Lumphini Subdistrict",
+        "suburb": "Pathum Wan District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10330",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7403391",
+        "13.7415013",
+        "100.5398884",
+        "100.5407732"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "venue_id": "bkk-7fe6277aba49",
+   "tier": "exact_venue",
+   "query": "Warehouse 30 Bangkok",
+   "checked_on": "2026-11-26",
+   "returned_place": "Warehouse 30, Soi Charoen Krung 30, Hang Nai Loet, Bang Rak Subdistrict, Bang Rak District, Bangkok, 10500, Thailand",
+   "latitude": 13.7280919,
+   "longitude": 100.5147912,
+   "attempts": [
+    {
+     "kind": "address",
+     "query": "52-60 Captain Bush Lane, Bang Rak, Bangkok 10500, Thailand",
+     "url": "https://nominatim.openstreetmap.org/search?q=52-60+Captain+Bush+Lane%2C+Bang+Rak%2C+Bangkok+10500%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 254587052,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 1235099299,
+       "lat": "13.7288441",
+       "lon": "100.5151084",
+       "category": "highway",
+       "type": "tertiary",
+       "place_rank": 26,
+       "importance": 0.053409958800640846,
+       "addresstype": "tertiary",
+       "name": "Soi Charoen Krung 30",
+       "display_name": "Soi Charoen Krung 30, Hang Nai Loet, Bang Rak Subdistrict, Bang Rak District, Bangkok, 10500, Thailand",
+       "address": {
+        "road": "Soi Charoen Krung 30",
+        "neighbourhood": "Hang Nai Loet",
+        "quarter": "Bang Rak Subdistrict",
+        "suburb": "Bang Rak District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10500",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7284922",
+        "13.7291636",
+        "100.5144697",
+        "100.5157633"
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "name",
+     "query": "Warehouse 30 Bangkok",
+     "url": "https://nominatim.openstreetmap.org/search?q=Warehouse+30+Bangkok&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 257641060,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 491885323,
+       "lat": "13.7280919",
+       "lon": "100.5147912",
+       "category": "amenity",
+       "type": "arts_centre",
+       "place_rank": 30,
+       "importance": 7.662546730750007e-05,
+       "addresstype": "amenity",
+       "name": "Warehouse 30",
+       "display_name": "Warehouse 30, Soi Charoen Krung 30, Hang Nai Loet, Bang Rak Subdistrict, Bang Rak District, Bangkok, 10500, Thailand",
+       "address": {
+        "amenity": "Warehouse 30",
+        "road": "Soi Charoen Krung 30",
+        "neighbourhood": "Hang Nai Loet",
+        "quarter": "Bang Rak Subdistrict",
+        "suburb": "Bang Rak District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10500",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7276458",
+        "13.7284694",
+        "100.5145411",
+        "100.5150480"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "venue_id": "bkk-dc63fcf3782c",
+   "tier": "building",
+   "query": "The Work Loft Silom Bangkok",
+   "checked_on": "2026-11-26",
+   "returned_place": "The Work Loft, Soi Si Lom 1, Sala Daeng, Si Lom Subdistrict, Bang Rak District, Bangkok, 10500, Thailand",
+   "latitude": 13.728109,
+   "longitude": 100.533899,
+   "attempts": [
+    {
+     "kind": "address",
+     "query": "281/19-23 NST One Building, Soi Silom 1, Silom Road, Bang Rak, Bangkok 10500, Thailand",
+     "url": "https://nominatim.openstreetmap.org/search?q=281%2F19-23+NST+One+Building%2C+Soi+Silom+1%2C+Silom+Road%2C+Bang+Rak%2C+Bangkok+10500%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "none",
+     "results": []
+    },
+    {
+     "kind": "name",
+     "query": "The Work Loft Silom Bangkok",
+     "url": "https://nominatim.openstreetmap.org/search?q=The+Work+Loft+Silom+Bangkok&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 257312708,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "node",
+       "osm_id": 4841595724,
+       "lat": "13.7281090",
+       "lon": "100.5338990",
+       "category": "office",
+       "type": "coworking",
+       "place_rank": 30,
+       "importance": 7.662546730750007e-05,
+       "addresstype": "office",
+       "name": "The Work Loft",
+       "display_name": "The Work Loft, Soi Si Lom 1, Sala Daeng, Si Lom Subdistrict, Bang Rak District, Bangkok, 10500, Thailand",
+       "address": {
+        "office": "The Work Loft",
+        "road": "Soi Si Lom 1",
+        "neighbourhood": "Sala Daeng",
+        "quarter": "Si Lom Subdistrict",
+        "suburb": "Bang Rak District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10500",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7280590",
+        "13.7281590",
+        "100.5338490",
+        "100.5339490"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "venue_id": "bkk-dec1284c0249",
+   "tier": "building",
+   "query": "41 Charoen Nakhon Road, Khlong San, Bangkok, Thailand",
+   "checked_on": "2026-11-26",
+   "returned_place": "Candide Books, 41/1, Charoen Nakhon Road, Khlong San Subdistrict, Khlong San District, Bangkok, 10600, Thailand",
+   "latitude": 13.7292382,
+   "longitude": 100.5101451,
+   "attempts": [
+    {
+     "kind": "address",
+     "query": "41 Charoen Nakhon Road, Khlong San, Bangkok, Thailand",
+     "url": "https://nominatim.openstreetmap.org/search?q=41+Charoen+Nakhon+Road%2C+Khlong+San%2C+Bangkok%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 257355378,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "node",
+       "osm_id": 4809733227,
+       "lat": "13.7292382",
+       "lon": "100.5101451",
+       "category": "shop",
+       "type": "books",
+       "place_rank": 30,
+       "importance": 7.662546730750007e-05,
+       "addresstype": "shop",
+       "name": "Candide Books",
+       "display_name": "Candide Books, 41/1, Charoen Nakhon Road, Khlong San Subdistrict, Khlong San District, Bangkok, 10600, Thailand",
+       "address": {
+        "shop": "Candide Books",
+        "house_number": "41/1",
+        "road": "Charoen Nakhon Road",
+        "quarter": "Khlong San Subdistrict",
+        "suburb": "Khlong San District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10600",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7291882",
+        "13.7292882",
+        "100.5100951",
+        "100.5101951"
+       ]
+      },
+      {
+       "place_id": 257477938,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 630872837,
+       "lat": "13.7122131",
+       "lon": "100.5015097",
+       "category": "highway",
+       "type": "secondary",
+       "place_rank": 26,
+       "importance": 0.053409958800640846,
+       "addresstype": "secondary",
+       "name": "Charoen Nakhon Road",
+       "display_name": "Charoen Nakhon Road, ชุมชนคลองพระยาเกษม, Bang Lamphu Lang Subdistrict, Khlong San District, Bangkok, 10600, Thailand",
+       "address": {
+        "road": "Charoen Nakhon Road",
+        "neighbourhood": "ชุมชนคลองพระยาเกษม",
+        "quarter": "Bang Lamphu Lang Subdistrict",
+        "suburb": "Khlong San District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10600",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7119726",
+        "13.7124416",
+        "100.5009346",
+        "100.5020897"
+       ]
+      },
+      {
+       "place_id": 259648409,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 752117576,
+       "lat": "13.7290856",
+       "lon": "100.5088555",
+       "category": "highway",
+       "type": "secondary",
+       "place_rank": 26,
+       "importance": 0.053409958800640846,
+       "addresstype": "secondary",
+       "name": "Charoen Nakhon Road",
+       "display_name": "Charoen Nakhon Road, Khlong San Subdistrict, Khlong San District, Bangkok, 10600, Thailand",
+       "address": {
+        "road": "Charoen Nakhon Road",
+        "quarter": "Khlong San Subdistrict",
+        "suburb": "Khlong San District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10600",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7286494",
+        "13.7295217",
+        "100.5088165",
+        "100.5088945"
+       ]
+      },
+      {
+       "place_id": 257289850,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 752119254,
+       "lat": "13.7282710",
+       "lon": "100.5089351",
+       "category": "highway",
+       "type": "secondary",
+       "place_rank": 26,
+       "importance": 0.053409958800640846,
+       "addresstype": "secondary",
+       "name": "Charoen Nakhon Road",
+       "display_name": "Charoen Nakhon Road, Khlong Ton Sai Subdistrict, Khlong San District, Bangkok, 10600, Thailand",
+       "address": {
+        "road": "Charoen Nakhon Road",
+        "quarter": "Khlong Ton Sai Subdistrict",
+        "suburb": "Khlong San District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10600",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7278916",
+        "13.7286494",
+        "100.5088945",
+        "100.5089653"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "venue_id": "bkk-fac10699d94c",
+   "tier": "building",
+   "query": "BITEC Bangkok",
+   "checked_on": "2026-11-26",
+   "returned_place": "BITEC, Sukhumvit Road, Bang Na Tai Subdistrict, Bang Na District, Bangkok, 10260, Thailand",
+   "latitude": 13.669801,
+   "longitude": 100.6085436,
+   "attempts": [
+    {
+     "kind": "address",
+     "query": "88 Debaratna Road, Bang Na Tai, Bang Na, Bangkok 10260, Thailand",
+     "url": "https://nominatim.openstreetmap.org/search?q=88+Debaratna+Road%2C+Bang+Na+Tai%2C+Bang+Na%2C+Bangkok+10260%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 257338722,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 1189598007,
+       "lat": "13.6698180",
+       "lon": "100.6221570",
+       "category": "highway",
+       "type": "secondary",
+       "place_rank": 26,
+       "importance": 0.053409958800640846,
+       "addresstype": "secondary",
+       "name": "Debaratna Road",
+       "display_name": "Debaratna Road, Bang Na Tai Subdistrict, Bang Na District, Bangkok, 10260, Thailand",
+       "address": {
+        "road": "Debaratna Road",
+        "quarter": "Bang Na Tai Subdistrict",
+        "suburb": "Bang Na District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10260",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.6686701",
+        "13.6710467",
+        "100.6160800",
+        "100.6282478"
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "name",
+     "query": "BITEC Bangkok",
+     "url": "https://nominatim.openstreetmap.org/search?q=BITEC+Bangkok&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 257359457,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 25621160,
+       "lat": "13.6698010",
+       "lon": "100.6085436",
+       "category": "amenity",
+       "type": "exhibition_centre",
+       "place_rank": 30,
+       "importance": 0.28779482241276744,
+       "addresstype": "amenity",
+       "name": "BITEC",
+       "display_name": "BITEC, Sukhumvit Road, Bang Na Tai Subdistrict, Bang Na District, Bangkok, 10260, Thailand",
+       "address": {
+        "amenity": "BITEC",
+        "road": "Sukhumvit Road",
+        "quarter": "Bang Na Tai Subdistrict",
+        "suburb": "Bang Na District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10260",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.6685982",
+        "13.6708695",
+        "100.6057490",
+        "100.6113350"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "venue_id": "bkk-971b52de876f",
+   "tier": "street",
+   "query": "Soi Phraya Phiren, Thung Maha Mek, Sathon, Bangkok",
+   "checked_on": "2026-11-26",
+   "returned_place": "Soi Phraya Phiren, Thung Maha Mek Subdistrict, Sathon District, Bangkok, 10120, Thailand",
+   "latitude": 13.7216901,
+   "longitude": 100.5513486,
+   "attempts": [
+    {
+     "kind": "area",
+     "query": "Thung Maha Mek Subdistrict, Sathon, Bangkok, Thailand",
+     "url": "https://nominatim.openstreetmap.org/search?q=Thung+Maha+Mek+Subdistrict%2C+Sathon%2C+Bangkok%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 257553826,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "relation",
+       "osm_id": 11487365,
+       "lat": "13.7165683",
+       "lon": "100.5401899",
+       "category": "boundary",
+       "type": "administrative",
+       "place_rank": 16,
+       "importance": 0.18674329213397417,
+       "addresstype": "quarter",
+       "name": "Thung Maha Mek Subdistrict",
+       "display_name": "Thung Maha Mek Subdistrict, Sathon District, Bangkok, 10120, Thailand",
+       "address": {
+        "quarter": "Thung Maha Mek Subdistrict",
+        "suburb": "Sathon District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10120",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7043596",
+        "13.7260498",
+        "100.5303295",
+        "100.5536144"
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "address",
+     "query": "16 Phraya Phiren Alley, Thung Maha Mek, Sathon, Bangkok 10120, Thailand",
+     "url": "https://nominatim.openstreetmap.org/search?q=16+Phraya+Phiren+Alley%2C+Thung+Maha+Mek%2C+Sathon%2C+Bangkok+10120%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "none",
+     "http_status": 200,
+     "error": "no OSM match",
+     "note": "empty result list (HTTP 200)",
+     "results": []
+    },
+    {
+     "kind": "address",
+     "query": "Phraya Phiren Alley, Bangkok",
+     "url": "https://nominatim.openstreetmap.org/search?q=Phraya+Phiren+Alley%2C+Bangkok&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "none",
+     "http_status": 200,
+     "error": "no OSM match",
+     "note": "empty result list (HTTP 200)",
+     "results": []
+    },
+    {
+     "kind": "street",
+     "query": "Soi Phraya Phiren, Thung Maha Mek, Sathon, Bangkok",
+     "url": "https://nominatim.openstreetmap.org/search?q=Soi+Phraya+Phiren%2C+Thung+Maha+Mek%2C+Sathon%2C+Bangkok&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "http_status": 200,
+     "error": null,
+     "note": null,
+     "results": [
+      {
+       "place_id": 255785452,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 53271857,
+       "lat": "13.7216901",
+       "lon": "100.5513486",
+       "category": "highway",
+       "type": "residential",
+       "place_rank": 26,
+       "importance": 0.053409958800640846,
+       "addresstype": "residential",
+       "name": "Soi Phraya Phiren",
+       "display_name": "Soi Phraya Phiren, Thung Maha Mek Subdistrict, Sathon District, Bangkok, 10120, Thailand",
+       "address": {
+        "road": "Soi Phraya Phiren",
+        "quarter": "Thung Maha Mek Subdistrict",
+        "suburb": "Sathon District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10120",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7210356",
+        "13.7217825",
+        "100.5496119",
+        "100.5525056"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "venue_id": "bkk-ab854c05d3dc",
+   "tier": "street",
+   "query": "4 Naradhiwas Rajanagarindra Road, Yan Nawa, Sathon, Bangkok 10120, Thailand",
+   "checked_on": "2026-11-26",
+   "returned_place": "Naradhiwas Rajanagarindra Road, Saint Louis 3 Community, Yan Nawa Subdistrict, Sathon District, Bangkok, 10120, Thailand",
+   "latitude": 13.7165641,
+   "longitude": 100.5327225,
+   "attempts": [
+    {
+     "kind": "address",
+     "query": "4 Naradhiwas Rajanagarindra Road, Yan Nawa, Sathon, Bangkok 10120, Thailand",
+     "url": "https://nominatim.openstreetmap.org/search?q=4+Naradhiwas+Rajanagarindra+Road%2C+Yan+Nawa%2C+Sathon%2C+Bangkok+10120%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "ok",
+     "results": [
+      {
+       "place_id": 381128915,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 39727796,
+       "lat": "13.7165641",
+       "lon": "100.5327225",
+       "category": "highway",
+       "type": "primary",
+       "place_rank": 26,
+       "importance": 0.2636224323479305,
+       "addresstype": "primary",
+       "name": "Naradhiwas Rajanagarindra Road",
+       "display_name": "Naradhiwas Rajanagarindra Road, Saint Louis 3 Community, Yan Nawa Subdistrict, Sathon District, Bangkok, 10120, Thailand",
+       "address": {
+        "road": "Naradhiwas Rajanagarindra Road",
+        "neighbourhood": "Saint Louis 3 Community",
+        "quarter": "Yan Nawa Subdistrict",
+        "suburb": "Sathon District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10120",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7117440",
+        "13.7213874",
+        "100.5303049",
+        "100.5351458"
+       ]
+      },
+      {
+       "place_id": 381130378,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 859521011,
+       "lat": "13.7038619",
+       "lon": "100.5391945",
+       "category": "highway",
+       "type": "primary",
+       "place_rank": 26,
+       "importance": 0.2636224323479305,
+       "addresstype": "primary",
+       "name": "Naradhiwas Rajanagarindra Road",
+       "display_name": "Naradhiwas Rajanagarindra Road, Chong Nonsi Subdistrict, Yan Nawa District, Bangkok, 10120, Thailand",
+       "address": {
+        "road": "Naradhiwas Rajanagarindra Road",
+        "quarter": "Chong Nonsi Subdistrict",
+        "suburb": "Yan Nawa District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10120",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7007933",
+        "13.7071059",
+        "100.5374695",
+        "100.5412077"
+       ]
+      },
+      {
+       "place_id": 255769724,
+       "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+       "osm_type": "way",
+       "osm_id": 462071024,
+       "lat": "13.7218174",
+       "lon": "100.5300801",
+       "category": "highway",
+       "type": "secondary",
+       "place_rank": 26,
+       "importance": 0.2636224323479305,
+       "addresstype": "secondary",
+       "name": "Naradhiwas Rajanagarindra Road",
+       "display_name": "Naradhiwas Rajanagarindra Road, Lalai Sap, Si Lom Subdistrict, Bang Rak District, Bangkok, 10500, Thailand",
+       "address": {
+        "road": "Naradhiwas Rajanagarindra Road",
+        "neighbourhood": "Lalai Sap",
+        "quarter": "Si Lom Subdistrict",
+        "suburb": "Bang Rak District",
+        "city": "Bangkok",
+        "ISO3166-2-lvl4": "TH-10",
+        "postcode": "10500",
+        "country": "Thailand",
+        "country_code": "th"
+       },
+       "boundingbox": [
+        "13.7217191",
+        "13.7219157",
+        "100.5300309",
+        "100.5301293"
+       ]
+      }
+     ]
+    },
+    {
+     "kind": "name",
+     "query": "Sathorn Hub Bangkok",
+     "url": "https://nominatim.openstreetmap.org/search?q=Sathorn+Hub+Bangkok&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+     "status": "none",
+     "results": []
+    }
+   ]
+  }
+ ]
+}

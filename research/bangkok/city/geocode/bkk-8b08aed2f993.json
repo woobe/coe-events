@@ -1,0 +1,154 @@
+{
+ "venue_id": "bkk-8b08aed2f993",
+ "checked_on": "2026-11-26",
+ "provider": "OpenStreetMap Nominatim",
+ "attempts": [
+  {
+   "kind": "address",
+   "query": "155 Ratchadamri Road, Lumphini, Pathum Wan, Bangkok 10330, Thailand",
+   "url": "https://nominatim.openstreetmap.org/search?q=155+Ratchadamri+Road%2C+Lumphini%2C+Pathum+Wan%2C+Bangkok+10330%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+   "status": "ok",
+   "results": [
+    {
+     "place_id": 258335460,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 183158650,
+     "lat": "13.7409187",
+     "lon": "100.5403109",
+     "category": "tourism",
+     "type": "hotel",
+     "place_rank": 30,
+     "importance": 0.11734328469919902,
+     "addresstype": "tourism",
+     "name": "Anantara Siam Bangkok Hotel",
+     "display_name": "Anantara Siam Bangkok Hotel, 155, Ratchadamri Road, Lumphini Subdistrict, Pathum Wan District, Bangkok, 10330, Thailand",
+     "address": {
+      "tourism": "Anantara Siam Bangkok Hotel",
+      "house_number": "155",
+      "road": "Ratchadamri Road",
+      "quarter": "Lumphini Subdistrict",
+      "suburb": "Pathum Wan District",
+      "city": "Bangkok",
+      "ISO3166-2-lvl4": "TH-10",
+      "postcode": "10330",
+      "country": "Thailand",
+      "country_code": "th"
+     },
+     "boundingbox": [
+      "13.7403391",
+      "13.7415013",
+      "100.5398884",
+      "100.5407732"
+     ]
+    },
+    {
+     "place_id": 258272864,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "node",
+     "osm_id": 4133335999,
+     "lat": "13.7411048",
+     "lon": "100.5399995",
+     "category": "amenity",
+     "type": "restaurant",
+     "place_rank": 30,
+     "importance": 7.662546730750007e-05,
+     "addresstype": "amenity",
+     "name": "",
+     "display_name": "155, Ratchadamri Road, Lumphini Subdistrict, Pathum Wan District, Bangkok, 10330, Thailand",
+     "address": {
+      "house_number": "155",
+      "road": "Ratchadamri Road",
+      "quarter": "Lumphini Subdistrict",
+      "suburb": "Pathum Wan District",
+      "city": "Bangkok",
+      "ISO3166-2-lvl4": "TH-10",
+      "postcode": "10330",
+      "country": "Thailand",
+      "country_code": "th"
+     },
+     "boundingbox": [
+      "13.7410548",
+      "13.7411548",
+      "100.5399495",
+      "100.5400495"
+     ]
+    },
+    {
+     "place_id": 423838432,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "node",
+     "osm_id": 14069656101,
+     "lat": "13.7411707",
+     "lon": "100.5404293",
+     "category": "amenity",
+     "type": "bar",
+     "place_rank": 30,
+     "importance": 7.662546730750007e-05,
+     "addresstype": "amenity",
+     "name": "AQUA Bar",
+     "display_name": "AQUA Bar, 155, Ratchadamri Road, Lumphini Subdistrict, Pathum Wan District, Bangkok, 10330, Thailand",
+     "address": {
+      "amenity": "AQUA Bar",
+      "house_number": "155",
+      "road": "Ratchadamri Road",
+      "quarter": "Lumphini Subdistrict",
+      "suburb": "Pathum Wan District",
+      "city": "Bangkok",
+      "ISO3166-2-lvl4": "TH-10",
+      "postcode": "10330",
+      "country": "Thailand",
+      "country_code": "th"
+     },
+     "boundingbox": [
+      "13.7411207",
+      "13.7412207",
+      "100.5403793",
+      "100.5404793"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "name",
+   "query": "Anantara Siam Bangkok",
+   "url": "https://nominatim.openstreetmap.org/search?q=Anantara+Siam+Bangkok&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+   "status": "ok",
+   "results": [
+    {
+     "place_id": 257208585,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 183158650,
+     "lat": "13.7409187",
+     "lon": "100.5403109",
+     "category": "tourism",
+     "type": "hotel",
+     "place_rank": 30,
+     "importance": 0.11734328469919902,
+     "addresstype": "tourism",
+     "name": "Anantara Siam Bangkok Hotel",
+     "display_name": "Anantara Siam Bangkok Hotel, 155, Ratchadamri Road, Lumphini Subdistrict, Pathum Wan District, Bangkok, 10330, Thailand",
+     "address": {
+      "tourism": "Anantara Siam Bangkok Hotel",
+      "house_number": "155",
+      "road": "Ratchadamri Road",
+      "quarter": "Lumphini Subdistrict",
+      "suburb": "Pathum Wan District",
+      "city": "Bangkok",
+      "ISO3166-2-lvl4": "TH-10",
+      "postcode": "10330",
+      "country": "Thailand",
+      "country_code": "th"
+     },
+     "boundingbox": [
+      "13.7403391",
+      "13.7415013",
+      "100.5398884",
+      "100.5407732"
+     ]
+    }
+   ]
+  }
+ ]
+}

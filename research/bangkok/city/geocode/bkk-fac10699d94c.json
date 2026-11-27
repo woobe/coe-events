@@ -1,0 +1,86 @@
+{
+ "venue_id": "bkk-fac10699d94c",
+ "checked_on": "2026-11-26",
+ "provider": "OpenStreetMap Nominatim",
+ "attempts": [
+  {
+   "kind": "address",
+   "query": "88 Debaratna Road, Bang Na Tai, Bang Na, Bangkok 10260, Thailand",
+   "url": "https://nominatim.openstreetmap.org/search?q=88+Debaratna+Road%2C+Bang+Na+Tai%2C+Bang+Na%2C+Bangkok+10260%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+   "status": "ok",
+   "results": [
+    {
+     "place_id": 257338722,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 1189598007,
+     "lat": "13.6698180",
+     "lon": "100.6221570",
+     "category": "highway",
+     "type": "secondary",
+     "place_rank": 26,
+     "importance": 0.053409958800640846,
+     "addresstype": "secondary",
+     "name": "Debaratna Road",
+     "display_name": "Debaratna Road, Bang Na Tai Subdistrict, Bang Na District, Bangkok, 10260, Thailand",
+     "address": {
+      "road": "Debaratna Road",
+      "quarter": "Bang Na Tai Subdistrict",
+      "suburb": "Bang Na District",
+      "city": "Bangkok",
+      "ISO3166-2-lvl4": "TH-10",
+      "postcode": "10260",
+      "country": "Thailand",
+      "country_code": "th"
+     },
+     "boundingbox": [
+      "13.6686701",
+      "13.6710467",
+      "100.6160800",
+      "100.6282478"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "name",
+   "query": "BITEC Bangkok",
+   "url": "https://nominatim.openstreetmap.org/search?q=BITEC+Bangkok&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+   "status": "ok",
+   "results": [
+    {
+     "place_id": 257359457,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 25621160,
+     "lat": "13.6698010",
+     "lon": "100.6085436",
+     "category": "amenity",
+     "type": "exhibition_centre",
+     "place_rank": 30,
+     "importance": 0.28779482241276744,
+     "addresstype": "amenity",
+     "name": "BITEC",
+     "display_name": "BITEC, Sukhumvit Road, Bang Na Tai Subdistrict, Bang Na District, Bangkok, 10260, Thailand",
+     "address": {
+      "amenity": "BITEC",
+      "road": "Sukhumvit Road",
+      "quarter": "Bang Na Tai Subdistrict",
+      "suburb": "Bang Na District",
+      "city": "Bangkok",
+      "ISO3166-2-lvl4": "TH-10",
+      "postcode": "10260",
+      "country": "Thailand",
+      "country_code": "th"
+     },
+     "boundingbox": [
+      "13.6685982",
+      "13.6708695",
+      "100.6057490",
+      "100.6113350"
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,49 @@
+{
+ "venue_id": "bkk-1d49f04f53b3",
+ "checked_on": "2026-11-26",
+ "provider": "OpenStreetMap Nominatim",
+ "attempts": [
+  {
+   "kind": "name",
+   "query": "IMPACT Forum Muang Thong Thani",
+   "url": "https://nominatim.openstreetmap.org/search?q=IMPACT+Forum+Muang+Thong+Thani&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+   "status": "ok",
+   "results": [
+    {
+     "place_id": 263699951,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 156639198,
+     "lat": "13.9159761",
+     "lon": "100.5472642",
+     "category": "amenity",
+     "type": "exhibition_centre",
+     "place_rank": 30,
+     "importance": 4.5001144426596745e-05,
+     "addresstype": "amenity",
+     "name": "IMPACT Forum",
+     "display_name": "IMPACT Forum, Popular1 Road, Muang Thong Thani, Ban Mai Subdistrict, Pak Kret City Municipality, Pak Kret District, Nonthaburi Province, 11120, Thailand",
+     "address": {
+      "amenity": "IMPACT Forum",
+      "road": "Popular1 Road",
+      "neighbourhood": "Muang Thong Thani",
+      "city_district": "Ban Mai Subdistrict",
+      "city": "Pak Kret City Municipality",
+      "county": "Pak Kret District",
+      "province": "Nonthaburi Province",
+      "ISO3166-2-lvl4": "TH-12",
+      "postcode": "11120",
+      "country": "Thailand",
+      "country_code": "th"
+     },
+     "boundingbox": [
+      "13.9151319",
+      "13.9168202",
+      "100.5461144",
+      "100.5484140"
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,1728 @@
+<!doctype html>
+<html lang="hu" data-ng-app="njtAppX" id="html">
+<head data-ng-non-bindable="true">
+    <base href="/">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="title" id="meta_title" content="1/2026. (VII. 31.) OGYM rendelet - Nemzeti Jogszabálytár"/>
+    <meta name="description" id="meta_description" content="1/2026. (VII. 31.) OGYM rendelet a 2026/2027. tanév rendjéről"/>
+    <title>1/2026. (VII. 31.) OGYM rendelet - Nemzeti Jogszabálytár</title>
+    <link rel="icon" type="image/png" sizes="64x64" href="/favicon.png">
+
+        <link href="/css/njtfrontend-7106b941d9605d8cbe2cf85898ebbb4f4cce489d.css?v11c6e9fe8.14119.20261116143934.2.18.5" type="text/css" rel="stylesheet"/>
+    <script>
+    function iPM() {
+        let css = "";
+        const t = ['padding', 'margin'];
+        for (let e of t) {
+            for (let i = 0; i <= 64; i += 4) {
+                css += `
+                    .${e[0]}-${i}{${e}:${i}px}
+                    .${e[0]}b-${i}{${e}-bottom:${i}px}
+                    .${e[0]}t-${i}{${e}-top:${i}px}
+                    .${e[0]}l-${i}{${e}-left:${i}px}
+                    .${e[0]}r-${i}{${e}-right:${i}px}
+                    .${e[0]}x-${i}{${e}-left:${i}px;${e}-right:${i}px}
+                    .${e[0]}y-${i}{${e}-top:${i}px;${e}-bottom:${i}px}`;
+            }
+        }
+
+        const style = document.createElement('style');
+        style.type = 'text/css';
+        style.textContent = css;
+        document.head.appendChild(style);
+    }
+    iPM();
+
+</script>        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script>
+        window.njtLoadAnalytics = function () {
+            if (window.njtAnalyticsLoaded) {
+                return;
+            }
+            window.njtAnalyticsLoaded = true;
+
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = 'https://www.googletagmanager.com/gtag/js?id=UA-28015740-1';
+            document.head.appendChild(script);
+
+            window.dataLayer = window.dataLayer || [];
+            window.gtag = function () {
+                dataLayer.push(arguments);
+            };
+            gtag('js', new Date());
+            gtag('config', 'UA-28015740-1');
+        };
+
+        if (/(?:^|;\s*)acceptCookieLaw=true(?:;|$)/.test(document.cookie)) {
+            window.njtLoadAnalytics();
+        }
+    </script>
+        </head>
+<body class="resp-body">
+<div id="loading-bar-host" aria-hidden="true"></div>
+
+<div id="menu-overlay" class="relative" style="display: none">
+    <div class="fixed"></div>
+</div>
+
+<header id="header" data-ng-controller="accountCtrl" aria-label="Az oldal fejléce">
+    <div id="top_flag_line" class="top-flag-line-fixed">
+        <div id="top_header_line"
+                >
+
+            <div id="top-bar--desktop">
+                <div class="wrapper w-1200 flex justify-between items-center">
+                    
+
+<a class="accessiblehidden" id="jumpToSearch" href="#" onclick="return njtApp.scrollToSearchForm()" hidden>Ugrás a keresőre</a>
+<a class="accessiblehidden" id="jumpToContent" href="#" onclick="return njtApp.scrollToElement('main')">Ugrás a tartalomra</a>
+<nav aria-label="Portálok" class="top-links flex flex-nowrap items-center basis-full justify-between">
+    <div class="logo">
+        <a class="flex gap-10 text-medium no-underline" onclick="njtApp.njtService.resetSearchPaths()" href="/">
+            <img alt="Nemzeti Jogszabálytár logó" src="/bundles/njtfrontend/images/layout/logo/njt-logo-header.svg?v11c6e9fe8.14119.20261116143934.2.18.5"/>
+            Nemzeti Jogszabálytár
+        </a>
+                </div>    
+    <ul id="top-menu" class="text-medium flex gap-40 justify-center basis-full" aria-label="Fejléc hivatkozások">
+        <li>
+            <a href="https://jog.gov.hu/" class="no-underline" aria-label="Magyar Jogi Információs Portál - Külső hivatkozás" target="portal">Magyar Jogi Információs Portál</a><i class="ri-external-link-line"></i>
+        </li>
+        <li>
+            <a href="https://magyarkozlony.hu/" class="no-underline" aria-label="Magyar Közlöny Portál - Külső hivatkozás" target="_blank">Magyar Közlöny Portál</a><i class="ri-external-link-line"></i>
+        </li>
+        <li>
+            <a href="https://www.cegkozlony.hu/" class="no-underline" aria-label="Céginformációs Portál - Külső hivatkozás" target="_blank">Céginformációs Portál</a><i class="ri-external-link-line"></i>
+        </li>
+        <li>
+            <a href="https://eur-lex.europa.eu/homepage.html?locale=hu" class="no-underline" aria-label="EUR-LEX - Külső hivatkozás" target="_blank" >EUR-LEX</a><i class="ri-external-link-line"></i>   
+        </li>
+    </ul>
+   
+    <div><ul id="top-right" class="flex items-center justify-center gap-8"><li><a id="help" class="block no-underline" href="/kezikonyv" target="_blank" aria-label="Súgó - Új ablakban nyílik" data-njttip data-njttipposition="below" title="Súgó"><i class="ri-question-line text-24 color-white"></i></a></li><li><button onclick="njtApp.njtService.redirectToLogin()" class="login-button button outline inverted flex justify-center items-center" data-njttip data-njttipposition="below" title="Belépés" aria-label="Belépés"><i class="ri-user-line"></i></button></li></ul></div>
+</nav>
+                </div>
+            </div>
+
+            <div id="top-bar--mobile">
+                <div class="wrapper">
+                    <div class="top-bar">
+    <div class="logo">
+        <a class="flex gap-10 text-medium no-underline" onclick="njtApp.njtService.resetSearchPaths()" href="/">
+            <img alt="Nemzeti Jogszabálytár logó" src="/bundles/njtfrontend/images/layout/logo/njt-logo-header.svg?v11c6e9fe8.14119.20261116143934.2.18.5"/>
+            <span class="w-120">Nemzeti Jogszabálytár</span>
+        </a>
+ 
+    </div>
+
+    <div class="top-bar__button-container">
+        <ul class="flex items-center justify-center gap-8">
+            <li>
+                <a class="no-underline" href="/kezikonyv" target="_blank" aria-label="Súgó - Új ablakban nyílik" data-njttip data-njttipposition="below" title="Súgó">
+                    <i class="ri-question-line text-24 color-white"></i>
+                </a>
+            </li>
+
+                            
+                <li>
+                    <button onclick="njtApp.njtService.redirectToLogin()" class="login-button button outline inverted flex justify-center items-center" data-njttip data-njttipposition="below" title="Belépés" aria-label="Belépés">
+                        <i class="ri-user-line"></i>
+                    </button>
+                </li>
+
+                <li>
+                    <button data-ng-click="toggleMobileMenu()" class="button secondary flex justify-center items-center" data-njttip data-njttipposition="below" title="Menü" aria-label="Menü">
+                        <i class="ri-menu-line"></i>
+                    </button>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="top-bar__menu menu" id="mobile-menu" style="display: none" >
+
+        <div class="menu__row">
+            <div class="logo sidebar">
+                <a class="flex gap-10 text-medium no-underline"
+                   onclick="njtApp.njtService.resetSearchPaths()"
+                   href="/">
+                    <img alt="Nemzeti Jogszabálytár logó" src="/bundles/njtfrontend/images/layout/logo/njt-logo-header.svg?v11c6e9fe8.14119.20261116143934.2.18.5"/>
+                    <span class="w-120">Nemzeti Jogszabálytár</span>
+                </a>
+            </div>
+                        <button id="toggle-menu" data-ng-click="toggleMobileMenu(true)" data-njttip title="Bezárás" aria-label="Bezárás">
+                <i class="ri-close-line color-white text-24"></i>
+            </button>
+        </div>
+        <nav class="menu__links">
+                                        
+            <li class="cursor-pointer" onclick="njtApp.toggleMegnyitottak();">
+                <a href="#">Megnyitott jogszabályok</a>
+            </li>
+            <hr>
+
+                            <li><a href="/">Jogszabálytár</a></li>
+                        <li>
+                                                    <a aria-label="Önkormányzati rendeletek" href="/or"
+                            >
+                        Önkormányzati rendeletek
+                    </a>
+                            </li>
+            <li><a href="/justification_search">Indokolások Tára</a></li>
+            <li>
+                <a  href="/international_agreement/-/1/10">Nemzetközi szerződések</a>
+            </li>
+            <li>
+                <a href="/forditasok">Jogszabályfordítások</a>
+            </li>
+            <li>
+                <a href="/translations">Translated legislation</a>
+            </li>
+                                </nav>
+
+        <hr>
+        <nav class="menu__hyperlinks">
+            <li>
+                <a href="https://jog.gov.hu/" class="no-underline" aria-label="Magyar Jogi Információs Portál - Külső hivatkozás" target="_blank">Magyar Jogi Információs Portál</a>
+            </li>
+            <li>
+                <a href="https://magyarkozlony.hu/" class="no-underline" aria-label="Magyar Közlöny Portál - Külső hivatkozás" target="_blank">Magyar Közlöny Portál</a>
+            </li>
+            <li>
+                <a href="https://www.cegkozlony.hu/" class="no-underline" aria-label="Céginformációs Portál - Külső hivatkozás" target="_blank">Céginformációs Portál</a>
+            </li>
+            <li>
+                <a href="https://eur-lex.europa.eu/homepage.html?locale=hu" class="no-underline" aria-label="EUR-LEX - Külső hivatkozás" target="_blank" >EUR-LEX</a>
+            </li>
+        </nav>
+
+        
+    </div>
+
+</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="loggedin-menu-window" class="on-top-window">
+        <div class="section">
+    <div><a id="historyLink" href="/history/">Előzmények</a></div>
+    <div><a id="favouriteLink" href="/favourite/-/1">Kedvencek</a></div>
+    <div><a id="kerdoivLink" href="/elethelyzet/kerdoiv">Élethelyzet kérdőív</a></div>
+    <div><a id="elethelyzetLink" href="/elethelyzet/lista">Élethelyzet beállítás</a></div>
+        <div><a id="topicLink" href="/topic">Témakörök beállítása</a></div>
+    <div><a id="jogszabalyfigyelo" href="/jogszabalyfigyelo">Jogszabályfigyelő</a></div>
+    <div class="last"><a id="valtozasokLink" href="/valtozaskovetes/favourite/all">Változások követése</a></div>
+                <div><a id="accountLink" href="/account/modification">Beállítások</a></div>
+
+    
+    <div class="last mobile-fixed-logout"><a href="" data-ng-click="logout()">Kilépés</a></div>
+</div>
+
+
+
+
+
+
+
+    </div>
+</header><main id="main" tabindex="-1" aria-label="Az oldal tartalma">
+    <div id="orig" class="mainWrapper" data-ng-controller="origMainCtrl">
+            <div class="mainContent" id="jogszabaly-reader">
+        <div class="bigMargin">
+            <div class="action-menu-wrapper" id="operationMenu" data-ng-controller="mobileFooterCtrl"><div class="blur"><a class="accessiblehidden backToSearchLink text-small" data-ng-attr-href="{{ lastSearchPath }}">Vissza a Jogszabálykeresőre</a><div class="onlyMobile flex justify-between"><h2>Kifejezéskereső</h2><button data-ng-click="toggleOperationsMenu()" class="button subtle ri-close-line flex justify-center items-center p-0 w-32 h-32 color-link-neutral-enabled" data-njttip title="Bezárás" aria-label="Bezárás"></button></div><div class="action-menu"><div class="logo"><a class="flex gap-10 text-medium no-underline" onclick="njtApp.njtService.resetSearchPaths()" href="/"><img alt="Nemzeti Jogszabálytár logó" src="/bundles/njtfrontend/images/layout/logo/njt-logo-header.svg?v11c6e9fe8.14119.20261116143934.2.18.5"/>
+                    Nemzeti Jogszabálytár
+                </a></div><div class="tartalomjegyzekButtonContainer"><button class="tartalomjegyzekButton button outline inverted small">Oldalmenü</button></div><ul class="flex items-center h-full" role="group" aria-label="Dokumentum műveletei"><li role="none" class="searchLi soloLi input-container flex items-center gap-5 flex-1" data-ng-controller="searchController"><input type="text" class="searchInput form-field"
+                           placeholder="Keresés a szövegben"
+                           id="szokereso"
+                           data-njtinput
+                           data-ng-model="searchText"
+                           data-ng-focus="focused.searchText=true"
+                           data-ng-blur="focused.searchText=false"
+                           data-enterkeypress="searchJogszabaly()"
+                           data-ng-disabled="isSearching.left"
+                           aria-label="Szókereső"/><div class="searchButtonHolder left flex gap-6 hidden"><button role="button" aria-label="Előző találat" class="searchPrev left button outline inverted flex justify-center items-center ri-arrow-left-s-line color-icon-neutral-base w-32 h-32"></button><button role="button" aria-label="Következő találat" class="searchNext left button outline inverted flex justify-center items-center ri-arrow-right-s-line color-icon-neutral-base w-32 h-32"></button></div><button
+                            data-ng-click="searchJogszabaly()"
+                            class="onlyMobile searchWordButton button primary text search w-full justify-center"
+                            aria-label="Keresés">Keresés
+                    </button></li><li role="none"><select id="zoomCombo" class="text-16 bg-transparent border-0 mx-8 cursor-pointer color-white" data-njttip data-njttipposition="below" aria-label="Betűméret állítása" title="Betűméret állítása"><option value="50" class="color-link-neutral-enabled">50%</option><option value="75" class="color-link-neutral-enabled">75%</option><option value="90" class="color-link-neutral-enabled">90%</option><option value="100" class="color-link-neutral-enabled" selected>100%</option><option value="125" class="color-link-neutral-enabled">125%</option><option value="150" class="color-link-neutral-enabled">150%</option><option value="175" class="color-link-neutral-enabled">175%</option><option value="200" class="color-link-neutral-enabled">200%</option></select></li><li role="none" class="onlyDesktop"><a class="no-underline color-white" data-njttip data-njttipposition="below"
+                           tabindex="0" href="/wcag"
+                           aria-label="Akadálymentes nézet"
+                           title="Akadálymentes nézet"><i class="ri-accessibility-line"></i></a></li><li role="none"  class="onlyDesktop" ><a class="eliLinkBtn no-underline color-white" data-njttip data-njttipposition="below"
+                               tabindex="0" href="#"
+                               onclick="growl.modal('&lt;a href=&quot;https://njt.jog.gov.hu/eli/R/2026/OGYM/1&quot; target=&quot;_blank&quot; &gt;https://njt.jog.gov.hu/eli/R/2026/OGYM/1&lt;/a&gt;', 'ELI', 'info');"
+                               aria-label="ELI" title="ELI">ELI</a></li><li role="none"  class="onlyDesktop" ><a class="printBtn no-underline color-white" data-njttip data-njttipposition="below"
+                           tabindex="0" href="#"
+                            onclick="njtPrint.handlePrintClick();"                            aria-label="Nyomtatás" title="Nyomtatás"><i class="printBtn ri-printer-fill"></i></a></li><li role="none" class="onlyMobile navigator__button-container"><div class="navigator__item"><a class="eliLinkBtn color-white" data-njttip data-njttipposition="below"
+                                   tabindex="0" href="#"
+                                   onclick="growl.modal('&lt;a href=&quot;https://njt.jog.gov.hu/eli/R/2026/OGYM/1&quot; target=&quot;_blank&quot; &gt;https://njt.jog.gov.hu/eli/R/2026/OGYM/1&lt;/a&gt;', 'ELI', 'info');"
+                                   title="ELI">ELI</a><span>ELI</span></div><div class="navigator__item"><a class="printBtn cursor-pointer color-white"
+                           tabindex="0" href="#"
+                            onclick="njtPrint.handlePrintClick();"                            title="Nyomtatás"><i class="printBtn ri-printer-fill"></i></a></div></li></ul><div class="loginButtonContainer"><button onclick="njtApp.njtService.redirectToLogin()" class="login-button button outline inverted flex justify-center items-center" data-njttitle data-njttipposition="below" title="Belépés" aria-label="Belépés"><i class="ri-user-line"></i></button></div></div></div></div>                <div class="content wrapper jogszabaly-wrapper">
+                    <div class="jumpButtonsContainer">
+                        <button class="jumpToPreviousFutureChangedSlice button flex justify-center items-center p-0" data-njttip title="Előző megváltozó">
+                            <i class="ri-arrow-up-s-line"></i>
+                        </button>
+
+                        <button class="jumpToNextFutureChangedSlice button flex justify-center items-center p-0" data-njttip title="Következő megváltozó">
+                            <i class="ri-arrow-down-s-line"></i>
+                        </button>
+
+                                            </div>
+                                                                        <div id="sidemenu-window-left" class="sidemenu-window rounded-8" aria-label="Oldalmenü">
+    <div class="sidemenu-mobile-header flex justify-between items-center p-16">
+        <h3>Tartalomjegyzék</h3>
+        <button class="tartalomjegyzekButton button subtle ri-close-line flex justify-center items-center p-0 w-32 h-32 color-link-neutral-enabled" data-njttip title="Bezárás" aria-label="Bezárás"></button>
+    </div>
+    <ul class="tab-menu">
+        <li class="tartalom active accessible" role="link" tabindex="0">Szerkezet</li>
+            </ul>
+    <div class="tartalom-tab tab-content active">
+        <div class="tartalom-tab__holder">
+
+            <label class="tartalom-tab__label">
+            <input
+                    id="treeFilter-left"
+                    type="text"
+                    class="sidemenu-window__search"
+                    placeholder="Keresés"
+                    data-njtinput
+            />
+            </label>
+            <div id="treeContainer-left" class="tartalom-tree tree" data-tree-label="Szerkezet"></div>
+        </div>
+    </div>
+        <div class="accessiblehidden" aria-hidden="true"><span>Az oldalmenübe visszatéréshez használhatja az <strong id="accesskey_help">ALT + S</strong> billentyűket.</span></div>
+</div>                                            
+                    
+                                                            <div class="jogszabalyCtrl" data-ng-controller="documentCtrl"
+                         data-ng-init="openDocument('jogszabaly','2026-1-20-9M','1/2026. (VII. 31.) OGYM rendelet','1/2026. (VII. 31.) OGYM rendelet a 2026/2027. tanév rendjéről', '1')"></div>
+                    <div class="jogszabaly                              hide-past-slices"
+                         data-ng-non-bindable="true" id="jogszab">
+
+                        
+                        
+                                                                                    <div class="changeVersionParent flex items-center justify-center">
+                                    <button class="changeVersion flex items-center justify-center text-24" tabindex="0" href="#"
+                                            onclick="versionChooser.versionChooserClick(this)"
+                                            data-njttip title="Hatályosság választás" aria-expanded="false"
+                                            aria-controls="versionWindow">
+                                        <i class="ri-calendar-2-line"></i>
+                                    </button>
+                                </div>
+                                                        <!--i-->
+<span class="jhId" id="NR"></span><h1 id="sc2026-1-20-9M-2" class="pslice jogszabalyMainTitle mainTitle">1/2026. (VII. 31.) OGYM rendelet</h1><!--i-->
+<span class="jhId" id="CI"></span><h2 id="sc2026-1-20-9M-4" class="pslice jogszabalySubtitle">a 2026/2027. tanév rendjéről<sup class="fnSup" data-note-id="fnr_1179">1</sup></h2><div class="hataly">2026.09.01.</div><!--i-->
+<span class="jhId" id="PB1"></span><div id="sc2026-1-20-9M-6" class="preambulumbekezdes"><p><span class="jel"> [1]</span> E rendelet célja a 2026/2027. tanévre vonatkozóan, a köznevelésben a nevelési-oktatási, a szakképzésben a szakképzési feladatok ellátásában részt vevők számára pontos időbeli keretek és munkamegosztás kijelölése, ezáltal a következő tanév megfelelő előkészítéséhez történő segítségnyújtás.</p></div><!--i-->
+<span class="jhId" id="PB2"></span><div id="sc2026-1-20-9M-8" class="preambulumbekezdes"><p><span class="jel"> [2]</span> A nemzeti köznevelésről szóló <a class="link" href="jogszabaly/2011-190-00-00" data-jhid="SZ94@BE1@POA" data-type="kulso">2011. évi CXC. törvény 94. § (1) bekezdés a)</a>, <a class="link" href="jogszabaly/2011-190-00-00" data-jhid="SZ94@BE1@POB" data-type="kulso">b)</a>, <a class="link" href="jogszabaly/2011-190-00-00" data-jhid="SZ94@BE1@POF" data-type="kulso">f)</a>, <a class="link" href="jogszabaly/2011-190-00-00" data-jhid="SZ94@BE1@POP" data-type="kulso">p)</a> és <a class="link" href="jogszabaly/2011-190-00-00" data-jhid="SZ94@BE1@POR" data-type="kulso">r) pont</a>jában kapott felhatalmazás alapján, a Kormány tagjainak feladat- és hatásköréről szóló <a class="link" href="jogszabaly/2026-90-20-22" data-jhid="SZ124@BE1@POC" data-type="kulso">90/2026. (V. 13.) Korm. rendelet 124. § (1) bekezdés c) pont</a>jában meghatározott feladatkörömben eljárva,</p><p>a <a class="link" data-jhid="FEII" data-type="belso">II. Fejezet</a> tekintetében a szakképzésről szóló <a class="link" href="jogszabaly/2019-80-00-00" data-jhid="SZ123@BE3@POA" data-type="kulso">2019. évi LXXX. törvény 123. § (3) bekezdés a) pont</a>jában kapott felhatalmazás alapján, a Kormány tagjainak feladat- és hatásköréről szóló <a class="link" href="jogszabaly/2026-90-20-22" data-jhid="SZ124@BE1@POE" data-type="kulso">90/2026. (V. 13.) Korm. rendelet 124. § (1) bekezdés e) pont</a>jában meghatározott feladatkörömben eljárva</p><p>a következőket rendelem el:</p></div><!--i-->
+<span class="jhId" id="FEI"></span><div id="sc2026-1-20-9M-13" class="fejezet">I. Fejezet</div><!--i-->
+<div id="sc2026-1-20-9M-14" class="fejezetCim"><p>A 2026/2027. TANÉV KÖZNEVELÉSBEN ALKALMAZANDÓ RENDJE</p></div><!--i-->
+<!--as--><span class="jhId" id="AC1"></span><div id="sc2026-1-20-9M-17" class="alcim"><p><span class="jel"> 1.</span> A fejezetben foglaltak alkalmazási köre</p></div><!--ae--><!--i-->
+<span class="jhId" id="SZ1"></span><div id="sc2026-1-20-9M-19" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ1@BE0"></span><div id="sc2026-1-20-9M-20" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">1. §</span></span> E fejezetben foglaltak alkalmazási köre kiterjed</p></div><span class="jhId" id="SZ1@BE0@POA"></span><div id="sc2026-1-20-9M-23" class="betusPontNyito"><p><span class="jel"> a)</span> – fenntartóra tekintet nélkül –</p></div><span class="jhId" id="SZ1@BE0@POA@APAA"></span><div id="sc2026-1-20-9M-26" class="ketbetusAlPont"><p><span class="jel"> aa)</span> az iskolákra,</p></div><span class="jhId" id="SZ1@BE0@POA@APAB"></span><div id="sc2026-1-20-9M-28" class="ketbetusAlPont"><p><span class="jel"> ab)</span> a kollégiumokra,</p></div><span class="jhId" id="SZ1@BE0@POA@APAC"></span><div id="sc2026-1-20-9M-30" class="ketbetusAlPont"><p><span class="jel"> ac)</span> a gyógypedagógiai, konduktív pedagógiai nevelési-oktatási intézmények iskoláira és kollégiumaira, továbbá a fejlesztő nevelést-oktatást végző iskolaként működő gyógypedagógiai, konduktív pedagógiai nevelési-oktatási intézményekre,</p></div><span class="jhId" id="SZ1@BE0@POA@APAD"></span><div id="sc2026-1-20-9M-32" class="ketbetusAlPont"><p><span class="jel"> ad)</span> a többcélú köznevelési intézmények iskoláira és kollégiumaira</p></div><span class="jhId" id="RR34"></span><div id="sc2026-1-20-9M-34" class="szelet">[az <a class="link" data-jhid="SZ1@BE0@POA@APAA" data-type="belso">aa)–ad) alpont</a>ban foglaltak a továbbiakban együtt: nevelési-oktatási intézmény],</div><span class="jhId" id="SZ1@BE0@POA@APAE"></span><div id="sc2026-1-20-9M-35" class="szelet"><span class="jel">ae)</span> az egységes gyógypedagógiai, konduktív pedagógiai módszertani intézmények utazó gyógypedagógusi, utazó konduktori hálózataira;</div><span class="jhId" id="SZ1@BE0@POB"></span><div id="sc2026-1-20-9M-36" class="szelet"><span class="jel">b)</span> az Oktatási Hivatalra (a továbbiakban: Hivatal);</div><span class="jhId" id="SZ1@BE0@POC"></span><div id="sc2026-1-20-9M-39" class="szelet"><span class="jel">c)</span> a fővárosi és vármegyei kormányhivatalokra, a járási (fővárosi kerületi) hivatalokra;</div><span class="jhId" id="SZ1@BE0@POD"></span><div id="sc2026-1-20-9M-42" class="szelet"><span class="jel">d)</span> a tankerületi központokra és a Klebelsberg Központra;</div><span class="jhId" id="SZ1@BE0@POE"></span><div id="sc2026-1-20-9M-45" class="szelet"><span class="jel">e)</span> a tanulókra és az iskolákba jelentkezőkre;</div><span class="jhId" id="SZ1@BE0@POF"></span><div id="sc2026-1-20-9M-48" class="szelet"><span class="jel">f)</span> a pedagógusokra;</div><span class="jhId" id="SZ1@BE0@POG"></span><div id="sc2026-1-20-9M-51" class="szelet"><span class="jel">g)</span> a nevelő és oktató munkát közvetlenül segítőkre, a műszaki, a kisegítő és az egyéb munkakört betöltőkre;</div><span class="jhId" id="SZ1@BE0@POH"></span><div id="sc2026-1-20-9M-54" class="szelet"><span class="jel">h)</span> a tanulók és az iskolákba jelentkezők törvényes képviselőire.</div><!--i-->
+<!--as--><span class="jhId" id="AC2"></span><div id="sc2026-1-20-9M-58" class="alcim"><p><span class="jel"> 2.</span> A tanév, a tanítási év</p></div><!--ae--><!--i-->
+<span class="jhId" id="SZ2"></span><div id="sc2026-1-20-9M-60" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ2@BE1"></span><div id="sc2026-1-20-9M-61" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">2. §</span> (1)</span> A nevelési-oktatási intézményekben a munkát a tanév, ezen belül a tanítási év keretei között kell megszervezni.</p></div><!--n-->
+<span class="jhId" id="SZ2@BE2"></span><div id="sc2026-1-20-9M-64" class="bekezdesNyito"><p><span class="jel"> (2)</span> Ha e fejezet másként nem rendelkezik, a 2026/2027. tanévben a tanítási év első tanítási napja 2026. szeptember 1. (kedd) és utolsó tanítási napja 2027. június 18. (péntek). A tanítási napok száma száznyolcvan nap.</p></div><!--n-->
+<span class="jhId" id="SZ2@BE3"></span><div id="sc2026-1-20-9M-67" class="bekezdesNyito"><p><span class="jel"> (3)</span> Az iskola utolsó, befejező évfolyamán, valamint a szakgimnázium tizenkettedik évfolyamán az utolsó tanítási nap</p></div><span class="jhId" id="SZ2@BE3@POA"></span><div id="sc2026-1-20-9M-70" class="betusPontNyito"><p><span class="jel"> a)</span> középfokú iskolákban 2027. április 30. (péntek),</p></div><span class="jhId" id="SZ2@BE3@POB"></span><div id="sc2026-1-20-9M-73" class="betusPontNyito"><p><span class="jel"> b)</span> a két évfolyamos részszakmára való felkészítést folytató szakiskolákban 2027. május 28. (péntek).</p></div><!--n-->
+<span class="jhId" id="SZ2@BE4"></span><div id="sc2026-1-20-9M-76" class="bekezdesNyito"><p><span class="jel"> (4)</span> A többcélú köznevelési intézmény technikumi intézményegységében a tizenkettedik évfolyamon a tanítási év befejezésére a <a class="link" data-jhid="FEII" data-type="belso">II. Fejezet</a> rendelkezéseit kell alkalmazni.</p></div><!--n-->
+<span class="jhId" id="SZ2@BE5"></span><div id="sc2026-1-20-9M-79" class="bekezdesNyito"><p><span class="jel"> (5)</span> A tanítási év lezárásának, a tanuló minősítésének, a magasabb évfolyamra lépésnek nem akadálya, ha az iskola a rendkívüli tanítási szünet elrendelése miatt kieső tanítási napokat a nemzeti köznevelésről szóló <a class="link" href="jogszabaly/2011-190-00-00" data-jhid="SZ30@BE3" data-type="kulso">2011. évi CXC. törvény (a továbbiakban: Nkt.) 30. § (3) bekezdés</a>ében meghatározottak szerint nem tudja teljes egészében pótolni. Az iskola indokolt esetben gondoskodik az elmaradt tananyag 2027/2028. tanítási évben történő feldolgozásáról.</p></div><!--n-->
+<span class="jhId" id="SZ2@BE6"></span><div id="sc2026-1-20-9M-82" class="bekezdesNyito"><p><span class="jel"> (6)</span> A tanítási év lezárását követően az iskola – ha az iskola fenntartója azzal egyetért, és az ahhoz szükséges feltételek biztosítottak – a tanulói részére pedagógiai program végrehajtásához nem kapcsolódó foglalkozásokat szervezhet, amelyeken a részvételt a tanuló, kiskorú tanuló esetén a szülő az iskola igazgatójához benyújtott kérelemben kezdeményezheti.</p></div><!--n-->
+<span class="jhId" id="SZ2@BE7"></span><div id="sc2026-1-20-9M-85" class="bekezdesNyito"><p><span class="jel"> (7)</span> A 2026/2027. évi közfoglalkoztatási programokkal összefüggő képzési programban felnőttoktatás keretében részt vevő tanulók a 2026/2027. tanévre 2026. szeptember 1-jét követően, legkésőbb a tanítási év első félévének végéig is beiratkozhatnak.</p></div><!--n-->
+<span class="jhId" id="SZ2@BE8"></span><div id="sc2026-1-20-9M-88" class="bekezdesNyito"><p><span class="jel"> (8)</span> Az iskolai végzettséggel nem rendelkező, munkanélküli vagy inaktív személyek alapfokú végzettség megszerzését, funkcionális analfabetizmus csökkentését, képzési vagy foglalkoztatási programokba történő bekapcsolódását célzó projektben részt vevő, felnőttoktatás keretében tanulók a 2026/2027. tanévre 2026. szeptember 1-jét követően is beiratkozhatnak.</p></div><!--i-->
+<span class="jhId" id="SZ3"></span><div id="sc2026-1-20-9M-91" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ3@BE0"></span><div id="sc2026-1-20-9M-92" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">3. §</span></span> Az alapfokú művészeti iskolákban és a felnőttoktatásban a tanítási év első és utolsó napját – a tanítási év első és utolsó hetének keretében – az igazgató határozza meg.</p></div><!--i-->
+<span class="jhId" id="SZ4"></span><div id="sc2026-1-20-9M-95" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ4@BE1"></span><div id="sc2026-1-20-9M-96" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">4. §</span> (1)</span> A tanítási év első féléve 2027. január 22-ig tart. Az iskolák 2027. január 29-ig értesítik a tanulókat, kiskorú tanuló esetén a szülőket az első félévben elért tanulmányi eredményekről. A <a class="link" data-jhid="SZ3" data-type="belso">3. §</a>-ban meghatározott esetben az első félév utolsó napját az igazgató állapítja meg. Az értesítést ettől a naptól számított öt munkanapon belül kell megküldeni.</p></div><!--n-->
+<span class="jhId" id="SZ4@BE2"></span><div id="sc2026-1-20-9M-99" class="bekezdesNyito"><p><span class="jel"> (2)</span> Az első félév és a tanítási év utolsó napját − középiskolában a május–júniusi szóbeli érettségi vizsgaidőszak utolsó napját − követő tizenöt napon belül az iskolák a nevelőtestületi értekezleten elvégzik a pedagógiai munka elemzését, értékelését, hatékonyságának vizsgálatát. A nevelőtestületi értekezletről készített jegyzőkönyvet tájékoztatás céljából meg kell küldeni a fenntartónak.</p></div><!--i-->
+<span class="jhId" id="SZ5"></span><div id="sc2026-1-20-9M-102" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ5@BE0"></span><div id="sc2026-1-20-9M-103" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">5. §</span></span> A 2026/2027. tanévben a gimnázium, valamint a szakgimnázium 9–11. évfolyamán a nevelő-oktató munka 2027. május 3–7. között – az igazgató által meghatározott módon – tantermen kívüli, digitális munkarendben szervezhető meg.</p></div><!--i-->
+<!--as--><span class="jhId" id="AC3"></span><div id="sc2026-1-20-9M-107" class="alcim"><p><span class="jel"> 3.</span> Tanítási szünet a tanítási évben, a tanítás nélküli munkanapok</p></div><!--ae--><!--i-->
+<span class="jhId" id="SZ6"></span><div id="sc2026-1-20-9M-109" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ6@BE0"></span><div id="sc2026-1-20-9M-110" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">6. §</span></span> A tanítási évben – a tanítási napokon felül – a nevelőtestület a tanév helyi rendjében meghatározott pedagógiai célra öt munkanapot tanítás nélküli munkanapként használhat fel, amelyből – az utazó gyógypedagógusi, utazó konduktori hálózat kivételével – egy tanítás nélküli munkanap programjáról – a nevelőtestület véleményének kikérésével – az iskolai diákönkormányzat jogosult dönteni.</p></div><!--i-->
+<span class="jhId" id="SZ7"></span><div id="sc2026-1-20-9M-113" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ7@BE1"></span><div id="sc2026-1-20-9M-114" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">7. §</span> (1)</span> Az őszi szünet előtti utolsó tanítási nap 2026. október 22. (csütörtök), a szünet utáni első tanítási nap 2026. november 2. (hétfő).</p></div><!--n-->
+<span class="jhId" id="SZ7@BE2"></span><div id="sc2026-1-20-9M-117" class="bekezdesNyito"><p><span class="jel"> (2)</span> A téli szünet előtti utolsó tanítási nap 2026. december 18. (péntek), a szünet utáni első tanítási nap 2027. január 4. (hétfő).</p></div><!--n-->
+<span class="jhId" id="SZ7@BE3"></span><div id="sc2026-1-20-9M-120" class="bekezdesNyito"><p><span class="jel"> (3)</span> A tavaszi szünet előtti utolsó tanítási nap 2027. március 24. (szerda), a szünet utáni első tanítási nap 2027. április 5. (hétfő).</p></div><!--n-->
+<span class="jhId" id="SZ7@BE4"></span><div id="sc2026-1-20-9M-123" class="bekezdesNyito"><p><span class="jel"> (4)</span> Az iskola az <a class="link" data-jhid="SZ7@BE1" data-type="belso">(1)–(3) bekezdés</a>ben meghatározott szünetek mellett más időpontban is adhat a tanulóknak szünetet, valamint a szünetek kezdő és befejező napját módosíthatja, ha – az <a class="link" href="jogszabaly/2011-190-00-00" data-jhid="SZ30@BE2" data-type="kulso">Nkt. 30. § (2)</a> és <a class="link" href="jogszabaly/2011-190-00-00" data-jhid="SZ30@BE3" data-type="kulso">(3) bekezdés</a>ében meghatározottak megtartásával – heti pihenőnapon tartott tanítási nappal ehhez a szükséges feltételeket megteremti. A tanítási év első és utolsó napjára szünet vagy tanítás nélküli munkanap nem rendelhető el.</p></div><!--n-->
+<span class="jhId" id="SZ7@BE5"></span><div id="sc2026-1-20-9M-126" class="bekezdesNyito"><p><span class="jel"> (5)</span> A nemzetiségi oktatásban részt vevő iskolák az <a class="link" data-jhid="SZ7@BE1" data-type="belso">(1)–(3) bekezdés</a>ben meghatározott időpontoktól eltérhetnek, továbbá a <a class="link" data-jhid="SZ7@BE4" data-type="belso">(4) bekezdés</a>ben meghatározottak szerint a tanulók részére szünetet adhatnak, ha azt a nemzetiségi hagyományok vagy az anyanemzet hagyományai indokolják.</p></div><!--n-->
+<span class="jhId" id="SZ7@BE6"></span><div id="sc2026-1-20-9M-129" class="bekezdesNyito"><p><span class="jel"> (6)</span> Az <a class="link" data-jhid="SZ7@BE1" data-type="belso">(1)–(5) bekezdés</a>ben szabályozott szünetek napjain, ha azok munkanapra esnek, az iskolák – szükség esetén – gondoskodnak a tanulók felügyeletéről. A felügyelet megszervezéséről több iskola közösen is gondoskodhat.</p></div><!--n-->
+<span class="jhId" id="SZ7@BE7"></span><div id="sc2026-1-20-9M-132" class="bekezdesNyito"><p><span class="jel"> (7)</span> A jogszabály által országosan egységesen elrendelt munkanap-áthelyezést – az <a class="link" href="jogszabaly/2011-190-00-00" data-jhid="SZ30@BE1" data-type="kulso">Nkt. 30. § (1) bekezdés</a>e értelmében, továbbá a <a class="link" data-jhid="SZ2@BE2" data-type="belso">2. § (2) bekezdés</a>ében előírt tanítási napok számára figyelemmel – a nevelési-oktatási intézményekben is alkalmazni kell.</p></div><!--i-->
+<!--as--><span class="jhId" id="AC4"></span><div id="sc2026-1-20-9M-136" class="alcim"><p><span class="jel"> 4.</span> Az általános iskolai beiratkozás és a középfokú iskolai, a kollégiumi felvételi eljárás, valamint az Arany János Programokkal kapcsolatos feladatok lebonyolításának ütemezése</p></div><!--ae--><!--i-->
+<span class="jhId" id="SZ8"></span><div id="sc2026-1-20-9M-138" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ8@BE0"></span><div id="sc2026-1-20-9M-139" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">8. §</span></span> Az <a class="link" href="jogszabaly/2011-190-00-00" data-jhid="SZ50@BE7" data-type="kulso">Nkt. 50. § (7) bekezdés</a>e alapján az iskola első évfolyamára a tanköteles tanulókat 2027. április 22–23-án kell beíratni.</p></div><!--i-->
+<span class="jhId" id="SZ9"></span><div id="sc2026-1-20-9M-142" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ9@BE0"></span><div id="sc2026-1-20-9M-143" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">9. §</span></span> A középfokú iskolai, a kollégiumi felvételi eljárás, valamint az Arany János Programokkal kapcsolatos feladatok lebonyolításának ütemezését az <a class="link" data-jhid="ME1" data-type="belso">1. melléklet</a> tartalmazza.</p></div><!--i-->
+<!--as--><span class="jhId" id="AC5"></span><div id="sc2026-1-20-9M-148" class="alcim"><p><span class="jel"> 5.</span> A vizsgák rendje</p></div><!--ae--><!--i-->
+<span class="jhId" id="SZ10"></span><div id="sc2026-1-20-9M-150" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ10@BE1"></span><div id="sc2026-1-20-9M-151" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">10. §</span> (1)</span> Az érettségi vizsgákat a <a class="link" data-jhid="ME2" data-type="belso">2. melléklet</a>ben foglaltak szerint kell megtartani.</p></div><!--n-->
+<span class="jhId" id="SZ10@BE2"></span><div id="sc2026-1-20-9M-155" class="bekezdesNyito"><p><span class="jel"> (2)</span> Az alapfokú művészeti iskolákban a tanítási év utolsó három hetében lehet vizsgát szervezni. A vizsga időpontját az iskola igazgatója határozza meg.</p></div><!--n-->
+<span class="jhId" id="SZ10@BE3"></span><div id="sc2026-1-20-9M-158" class="bekezdesNyito"><p><span class="jel"> (3)</span> A szakgimnáziumban és a szakiskolában a képesítő vizsgák időpontját a köznevelésért felelős miniszter 2026. szeptember utolsó munkanapjáig teszi közzé a Hivatal honlapján.</p></div><!--i-->
+<!--as--><span class="jhId" id="AC6"></span><div id="sc2026-1-20-9M-162" class="alcim"><p><span class="jel"> 6.</span> A témahetek, témanapok megszervezése</p></div><!--ae--><!--i-->
+<span class="jhId" id="SZ11"></span><div id="sc2026-1-20-9M-164" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ11@BE1"></span><div id="sc2026-1-20-9M-165" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">11. §</span> (1)</span> A nevelési-oktatási intézmények működéséről és a köznevelési intézmények névhasználatáról szóló <a class="link" href="jogszabaly/2012-20-20-5H" data-jhid="SZ7@BE4" data-type="kulso">20/2012. (VIII. 31.) EMMI rendelet (a továbbiakban: EMMI rendelet) 7. § (4) bekezdés</a>e szerinti projektoktatást lehetővé tevő témanapok időpontjai:</p></div><span class="jhId" id="SZ11@BE1@POA"></span><div id="sc2026-1-20-9M-168" class="betusPontNyito"><p><span class="jel"> a)</span> „Diákok hangja” témanap 2026. szeptember 14-e és október 22-e között egy, az iskola által választott napon,</p></div><span class="jhId" id="SZ11@BE1@POB"></span><div id="sc2026-1-20-9M-171" class="betusPontNyito"><p><span class="jel"> b)</span> Magyar Diáksport Napja 2026. szeptember 25.,</p></div><span class="jhId" id="SZ11@BE1@POC"></span><div id="sc2026-1-20-9M-174" class="betusPontNyito"><p><span class="jel"> c)</span> Pályaorientációs témanap egy, az iskola által választott napon.</p></div><!--n-->
+<span class="jhId" id="SZ11@BE2"></span><div id="sc2026-1-20-9M-177" class="bekezdesNyito"><p><span class="jel"> (2)</span> Az <a class="link" href="jogszabaly/2012-20-20-5H" data-jhid="SZ7@BE4" data-type="kulso">EMMI rendelet 7. § (4) bekezdés</a>e szerinti projektoktatást lehetővé tevő témahetek időpontjai:</p></div><span class="jhId" id="SZ11@BE2@POA"></span><div id="sc2026-1-20-9M-180" class="betusPontNyito"><p><span class="jel"> a)</span> „PÉNZ7” pénzügyi és vállalkozói témahét 2027. március 1–5. között,</p></div><span class="jhId" id="SZ11@BE2@POB"></span><div id="sc2026-1-20-9M-183" class="betusPontNyito"><p><span class="jel"> b)</span> Digitális Témahét 2027. április 5–9. között,</p></div><span class="jhId" id="SZ11@BE2@POC"></span><div id="sc2026-1-20-9M-186" class="betusPontNyito"><p><span class="jel"> c)</span> Fenntarthatósági Témahét 2027. április 19–23. között.</p></div><!--n-->
+<span class="jhId" id="SZ11@BE3"></span><div id="sc2026-1-20-9M-189" class="bekezdesNyito"><p><span class="jel"> (3)</span> A nevelési-oktatási intézmény a munkatervében meghatározott módon részt vehet a témahetekhez, témanapokhoz kapcsolódó programokon, továbbá a tantervben előírt, az adott témával összefüggő tanítási órákat, valamint egyéb foglalkozásokat a témahét, témanap keretében megszervezheti, valamint a témanapokat, témaheteket az <a class="link" data-jhid="SZ11@BE1" data-type="belso">(1)</a> és <a class="link" data-jhid="SZ11@BE2" data-type="belso">(2) bekezdés</a>ben foglaltaktól eltérő időpontban is megtarthatja.</p></div><!--i-->
+<!--as--><span class="jhId" id="AC7"></span><div id="sc2026-1-20-9M-193" class="alcim"><p><span class="jel"> 7.</span> Országos mérés, értékelés, szakmai ellenőrzés elrendelése</p></div><!--ae--><!--i-->
+<span class="jhId" id="SZ12"></span><div id="sc2026-1-20-9M-195" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ12@BE1"></span><div id="sc2026-1-20-9M-196" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">12. §</span> (1)</span> A tanév során az országos mérést az alábbi évfolyamokon és mérési területeken kell lebonyolítani:</p></div><span class="jhId" id="SZ12@BE1@POA"></span><div id="sc2026-1-20-9M-199" class="betusPontNyito"><p><span class="jel"> a)</span> 4. évfolyamon szövegértés és matematika;</p></div><span class="jhId" id="SZ12@BE1@POB"></span><div id="sc2026-1-20-9M-202" class="betusPontNyito"><p><span class="jel"> b)</span> 6., 8. és 10. évfolyamon szövegértés, matematika, természettudomány, idegen nyelv, célnyelv.</p></div><!--n-->
+<span class="jhId" id="SZ12@BE2"></span><div id="sc2026-1-20-9M-205" class="bekezdesNyito"><p><span class="jel"> (2)</span> Szakgimnáziumban a 10. évfolyamon a természettudományos mérést csak akkor kell lefolytatni, ha a tanulók ezt a tantárgyat az adott évfolyamon tanulják.</p></div><!--n-->
+<span class="jhId" id="SZ12@BE3"></span><div id="sc2026-1-20-9M-208" class="bekezdesNyito"><p><span class="jel"> (3)</span> Az idegen nyelvi mérést az angol vagy német nyelvet első idegen nyelvként tanulók körében, a célnyelvi mérést angol és német nyelvből kell lebonyolítani.</p></div><!--n-->
+<span class="jhId" id="SZ12@BE4"></span><div id="sc2026-1-20-9M-211" class="bekezdesNyito"><p><span class="jel"> (4)</span> Az iskolák az <a class="link" data-jhid="SZ12@BE1" data-type="belso">(1) bekezdés</a>ben meghatározott mérések előkészítéséhez 2027. március 12-ig a Hivatal informatikai rendszerében rögzítik a szükséges tanulói adatokat és mérési csoportokat.</p></div><!--n-->
+<span class="jhId" id="SZ12@BE5"></span><div id="sc2026-1-20-9M-214" class="bekezdesNyito"><p><span class="jel"> (5)</span> Az <a class="link" data-jhid="SZ12@BE1" data-type="belso">(1) bekezdés</a>ben meghatározott méréseket az iskoláknak a Hivatal által meghatározott ütemezés szerint kell lebonyolítaniuk. A mérésekre 2027. március 22. és 2027. május 28. között kerül sor.</p></div><!--n-->
+<span class="jhId" id="SZ12@BE6"></span><div id="sc2026-1-20-9M-217" class="bekezdesNyito"><p><span class="jel"> (6)</span> A méréseket a Hivatal által elkészített – és informatikai rendszerének közvetítésével az iskolák, tanulók számára elérhetővé tett – digitális mérőeszközök alkalmazásával kell lebonyolítani.</p></div><!--n-->
+<span class="jhId" id="SZ12@BE7"></span><div id="sc2026-1-20-9M-220" class="bekezdesNyito"><p><span class="jel"> (7)</span> Az iskolák az <a class="link" data-jhid="SZ12@BE1" data-type="belso">(1) bekezdés</a>ben meghatározott mérések lezárásához kapcsolódó adatokat legkésőbb 2027. június 4-ig küldik meg.</p></div><!--n-->
+<span class="jhId" id="SZ12@BE8"></span><div id="sc2026-1-20-9M-223" class="bekezdesNyito"><p><span class="jel"> (8)</span> A Hivatal az <a class="link" data-jhid="SZ12@BE1" data-type="belso">(1) bekezdés</a>ben meghatározott mérések előzetes tanulói eredményeit 2027. június 11-ig küldi meg az iskoláknak.</p></div><!--n-->
+<span class="jhId" id="SZ12@BE9"></span><div id="sc2026-1-20-9M-226" class="bekezdesNyito"><p><span class="jel"> (9)</span> A Hivatal a mérési eredmények alapján az <a class="link" data-jhid="SZ12@BE1" data-type="belso">(1) bekezdés</a>ben meghatározott mérésekről</p></div><span class="jhId" id="SZ12@BE9@POA"></span><div id="sc2026-1-20-9M-229" class="betusPontNyito"><p><span class="jel"> a)</span> feladatellátási helyi és intézményi szintű elemzéseket készít, és azokat a honlapján nyilvánosságra hozza;</p></div><span class="jhId" id="SZ12@BE9@POB"></span><div id="sc2026-1-20-9M-232" class="betusPontNyito"><p><span class="jel"> b)</span> tanulói szintű elemzéseket készít, és azokat az <a class="link" href="jogszabaly/2011-190-00-00" data-jhid="SZ80@BE3" data-type="kulso">Nkt. 80. § (3) bekezdés</a>e szerinti mérési azonosító felhasználásával honlapján hozzáférhetővé teszi.</p></div><!--n-->
+<span class="jhId" id="SZ12@BE10"></span><div id="sc2026-1-20-9M-235" class="bekezdesNyito"><p><span class="jel"> (10)</span> A nemzetközi mérési feladatokban az iskolák és tanulóik a Hivatal felkérése alapján vesznek részt.</p></div><!--n-->
+<span class="jhId" id="SZ12@BE11"></span><div id="sc2026-1-20-9M-238" class="bekezdesNyito"><p><span class="jel"> (11)</span> A tanuló eltérő ütemű fejlődéséből, fejlesztési szükségleteiből fakadó egyéni hátrányok csökkentése, továbbá az alapkészségek sikeres megalapozása és kibontakoztatása érdekében az általános iskolák 2026. október 9-ig felmérik azon első és második évfolyamos tanulóik körét, akiknél az óvodai jelzések vagy a tanév kezdete óta szerzett tapasztalatok alapján az alapkészségek fejlesztését hangsúlyosabban kell a későbbiekben támogatni, és ezért a pedagógus indokoltnak látja az azt elősegítő pedagógiai tevékenység megalapozásához a Diagnosztikus fejlődésvizsgáló rendszer alkalmazását. Az általános iskolák 2026. október 22-ig jelentik a Hivatalnak az érintett tanulók létszámát. Az e bekezdésben meghatározott vizsgálatokat az általános iskolák a kiválasztott tanulókkal 2026. december 7-ig elvégzik.</p></div><!--n-->
+<span class="jhId" id="SZ12@BE12"></span><div id="sc2026-1-20-9M-241" class="bekezdesNyito"><p><span class="jel"> (12)</span> Az első évfolyamos tanulók országos mérés keretében a szövegértési képességeik felmérése érdekében 2027. május folyamán – a tanulmányi rendszer útján – az iskola döntése alapján diagnosztikus mérésben vehetnek részt.</p></div><!--n-->
+<span class="jhId" id="SZ12@BE13"></span><div id="sc2026-1-20-9M-244" class="bekezdesNyito"><p><span class="jel"> (13)</span> Az általános iskolai feladatellátásban részt vevő nevelési-oktatási intézmények a nyolcadik évfolyamos tanulóik számára – a felnőttoktatásban tanulók kivételével – 2026. szeptember 16. és 2026. október 9. között megszervezik az <a class="link" href="jogszabaly/2011-190-00-00" data-jhid="SZ80@BE1A" data-type="kulso">Nkt. 80. § (1a) bekezdés</a>e alapján a pályaválasztást megalapozó kompetenciák vizsgálatát a Hivatal által elkészített – és informatikai rendszerének közvetítésével az iskolák számára elérhetővé tett – digitális mérő- és támogató eszközökkel, a Hivatal által kiadott eljárásrend alkalmazásával. A vizsgálat lebonyolításához kapcsolódó adatokat az iskolák a Hivatal részére 2026. október 16-ig küldik meg.</p></div><!--n-->
+<span class="jhId" id="SZ12@BE14"></span><div id="sc2026-1-20-9M-247" class="bekezdesNyito"><p><span class="jel"> (14)</span> A 2026/2027. tanévben az <a class="link" href="jogszabaly/2011-190-00-00" data-jhid="SZ80@BE9" data-type="kulso">Nkt. 80. § (9) bekezdés</a>e alapján országos mérés, értékelés keretében a tanulók fizikai állapotának és edzettségének vizsgálatát az iskolák – az 1–4. évfolyamon, valamint a felnőttoktatásban tanulók kivételével – a nappali rendszerű iskolai oktatásban részt vevő tanulók esetében 2027. január 8. és 2027. május 5. között szervezik meg. A mérés eredményeit az érintett iskolák 2027. június 11-ig töltik fel a Nemzeti Egységes Tanulói Fittségi Teszt rendszerbe.</p></div><!--i-->
+<span class="jhId" id="SZ13"></span><div id="sc2026-1-20-9M-250" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ13@BE1"></span><div id="sc2026-1-20-9M-251" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">13. §</span> (1)</span> 2027. január 4. és 2027. április 30. között a Hivatal szakmai ellenőrzés keretében megvizsgálja az <a class="link" href="jogszabaly/2012-20-20-5H" data-jhid="SZ80@BE4" data-type="kulso">EMMI rendelet 80. § (4) bekezdés</a>e szerinti fenntartói intézkedési tervben foglaltak végrehajtását és dokumentálását.</p></div><!--n-->
+<span class="jhId" id="SZ13@BE2"></span><div id="sc2026-1-20-9M-254" class="bekezdesNyito"><p><span class="jel"> (2)</span> Az <a class="link" data-jhid="SZ13@BE1" data-type="belso">(1) bekezdés</a> szerinti ellenőrzésről készült jelentést a Hivatal 2027. augusztus 27-ig küldi meg a köznevelésért felelős miniszter részére.</p></div><!--i-->
+<span class="jhId" id="FEII"></span><div id="sc2026-1-20-9M-9" class="fejezet">II. Fejezet</div><!--i-->
+<div id="sc2026-1-20-9M-257" class="fejezetCim"><p>A 2026/2027. TANÉV SZAKKÉPZÉSBEN ALKALMAZANDÓ RENDJE</p></div><!--i-->
+<!--as--><span class="jhId" id="AC8"></span><div id="sc2026-1-20-9M-260" class="alcim"><p><span class="jel"> 8.</span> A fejezetben foglaltak alkalmazási köre</p></div><!--ae--><!--i-->
+<span class="jhId" id="SZ14"></span><div id="sc2026-1-20-9M-262" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ14@BE1"></span><div id="sc2026-1-20-9M-263" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">14. §</span> (1)</span> E fejezetet kell alkalmazni a szakképző intézményben a 2026/2027. tanévben szervezett szakképzés időbeli ütemezésének rendjére.</p></div><!--n-->
+<span class="jhId" id="SZ14@BE2"></span><div id="sc2026-1-20-9M-266" class="bekezdesNyito"><p><span class="jel"> (2)</span> Az <a class="link" data-jhid="FEI" data-type="belso">I. Fejezet</a> rendelkezéseit, valamint az <a class="link" data-jhid="ME1" data-type="belso">1.</a> és <a class="link" data-jhid="ME2" data-type="belso">2. melléklet</a>ben foglaltakat kell alkalmazni</p></div><span class="jhId" id="SZ14@BE2@POA"></span><div id="sc2026-1-20-9M-269" class="betusPontNyito"><p><span class="jel"> a)</span> a szakképző intézménybe általános vagy rendkívüli felvételi eljárás keretében történő felvétel és beiratkozás,</p></div><span class="jhId" id="SZ14@BE2@POB"></span><div id="sc2026-1-20-9M-272" class="betusPontNyito"><p><span class="jel"> b)</span> a szakképző intézmény tizedik évfolyamán a tanuló szövegértési és matematikai eszköztudás fejlődése mérésének,</p></div><span class="jhId" id="SZ14@BE2@POC"></span><div id="sc2026-1-20-9M-275" class="betusPontNyito"><p><span class="jel"> c)</span> az érettségi vizsga,</p></div><span class="jhId" id="SZ14@BE2@POD"></span><div id="sc2026-1-20-9M-278" class="betusPontNyito"><p><span class="jel"> d)</span> – a <a class="link" data-jhid="SZ11@BE1@POC" data-type="belso">11. § (1) bekezdés c) pont</a>jában foglaltak kivételével – a témahetek, témanapok, valamint</p></div><span class="jhId" id="SZ14@BE2@POE"></span><div id="sc2026-1-20-9M-281" class="betusPontNyito"><p><span class="jel"> e)</span> a tanulók fizikai állapotára és edzettségére vonatkozó vizsgálatok</p></div><div id="sc2026-1-20-9M-284" class="bekezdesZaro"><p>időbeli ütemezésének rendjére.</p></div><!--n-->
+<span class="jhId" id="SZ14@BE3"></span><div id="sc2026-1-20-9M-286" class="bekezdesNyito"><p><span class="jel"> (3)</span> A többcélú szakképző intézmény által ellátott köznevelési alapfeladat tekintetében az <a class="link" data-jhid="FEI" data-type="belso">I. Fejezet</a> rendelkezéseit, valamint az <a class="link" data-jhid="ME1" data-type="belso">1.</a> és <a class="link" data-jhid="ME2" data-type="belso">2. melléklet</a>ben foglaltakat az e fejezetben meghatározott eltérésekkel kell alkalmazni.</p></div><!--i-->
+<!--as--><span class="jhId" id="AC9"></span><div id="sc2026-1-20-9M-290" class="alcim"><p><span class="jel"> 9.</span> A tanév, a tanítási év</p></div><!--ae--><!--i-->
+<span class="jhId" id="SZ15"></span><div id="sc2026-1-20-9M-292" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ15@BE1"></span><div id="sc2026-1-20-9M-293" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">15. §</span> (1)</span> A szakképző intézményekben a munkát a tanév, ezen belül a tanítási év keretei között kell megszervezni.</p></div><!--n-->
+<span class="jhId" id="SZ15@BE2"></span><div id="sc2026-1-20-9M-296" class="bekezdesNyito"><p><span class="jel"> (2)</span> A tanítási év</p></div><span class="jhId" id="SZ15@BE2@POA"></span><div id="sc2026-1-20-9M-299" class="betusPontNyito"><p><span class="jel"> a)</span> első tanítási napja 2026. szeptember 1. (kedd),</p></div><span class="jhId" id="SZ15@BE2@POB"></span><div id="sc2026-1-20-9M-302" class="betusPontNyito"><p><span class="jel"> b)</span> utolsó tanítási napja 2027. június 15. (kedd), az utolsó évfolyamon 2027. április 30. (péntek).</p></div><!--n-->
+<span class="jhId" id="SZ15@BE3"></span><div id="sc2026-1-20-9M-305" class="bekezdesNyito"><p><span class="jel"> (3)</span> A tanítási évben a tanítási napok száma 177.</p></div><!--n-->
+<span class="jhId" id="SZ15@BE4"></span><div id="sc2026-1-20-9M-308" class="bekezdesNyito"><p><span class="jel"> (4)</span> A szakirányú oktatás utolsó évfolyamát teljesített tanulók számára az utolsó évfolyam elvégzését igazoló bizonyítványt 2027. május 3-ig (hétfő) kell kiállítani.</p></div><!--n-->
+<span class="jhId" id="SZ15@BE5"></span><div id="sc2026-1-20-9M-311" class="bekezdesNyito"><p><span class="jel"> (5)</span> A technikum tizenkettedik évfolyamán a közismereti tantárgyak oktatása 2027. április 30-ig tart. Ezt követően a tanítási év végéig a közismereti tantárgyak oktatásának időkeretét a tanulók érettségi vizsgára történő egyéni vagy csoportos felkészülésére kell fordítani a szakképző intézmény szakmai programjában rögzítettek szerint.</p></div><!--n-->
+<span class="jhId" id="SZ15@BE6"></span><div id="sc2026-1-20-9M-314" class="bekezdesNyito"><p><span class="jel"> (6)</span> A <a class="link" data-jhid="SZ15@BE4" data-type="belso">(4) bekezdés</a> szerinti tantárgyak év végi osztályzatát a tanuló törzslapjába 2027. április 30-ig be kell jegyezni.</p></div><!--i-->
+<span class="jhId" id="SZ16"></span><div id="sc2026-1-20-9M-317" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ16@BE0"></span><div id="sc2026-1-20-9M-318" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">16. §</span></span> A tanítási év első féléve 2027. január 22-ig tart. A tanuló félévi értesítőjét 2027. január 29-ig kell közölni.</p></div><!--i-->
+<!--as--><span class="jhId" id="AC10"></span><div id="sc2026-1-20-9M-322" class="alcim"><p><span class="jel"> 10.</span> Tanítási szünet a tanítási évben, a tanítás nélküli munkanapok</p></div><!--ae--><!--i-->
+<span class="jhId" id="SZ17"></span><div id="sc2026-1-20-9M-324" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ17@BE0"></span><div id="sc2026-1-20-9M-325" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">17. §</span></span> A tanítási évben – a tanítási napokon felül – az oktatói testület a tanév helyi rendjében meghatározott pedagógiai célra öt munkanapot tanítás nélküli munkanapként használhat fel, amelyből egy tanítás nélküli munkanap programjáról – az oktatói testület véleményének kikérésével – a diákönkormányzat jogosult dönteni, egy tanítás nélküli munkanap pedig kizárólag pályaorientációs célra használható fel.</p></div><!--i-->
+<span class="jhId" id="SZ18"></span><div id="sc2026-1-20-9M-328" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ18@BE1"></span><div id="sc2026-1-20-9M-329" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">18. §</span> (1)</span> Az őszi szünet előtti utolsó tanítási nap 2026. október 22. (csütörtök), a szünet utáni első tanítási nap 2026. november 2. (hétfő).</p></div><!--n-->
+<span class="jhId" id="SZ18@BE2"></span><div id="sc2026-1-20-9M-332" class="bekezdesNyito"><p><span class="jel"> (2)</span> A téli szünet előtti utolsó tanítási nap 2026. december 18. (péntek), a szünet utáni első tanítási nap 2027. január 4. (hétfő).</p></div><!--n-->
+<span class="jhId" id="SZ18@BE3"></span><div id="sc2026-1-20-9M-335" class="bekezdesNyito"><p><span class="jel"> (3)</span> A tavaszi szünet előtti utolsó tanítási nap 2027. március 24. (szerda), a szünet utáni első tanítási nap 2027. április 5. (hétfő).</p></div><!--n-->
+<span class="jhId" id="SZ18@BE4"></span><div id="sc2026-1-20-9M-338" class="bekezdesNyito"><p><span class="jel"> (4)</span> Az igazgató az <a class="link" data-jhid="SZ18@BE1" data-type="belso">(1)–(3) bekezdés</a>ben meghatározott szünetek mellett – a tanítási év kezdő és befejező napjának változatlanul hagyásával – más időpontban is elrendelhet szünetet, valamint a szünet kezdő és befejező napját módosíthatja, ha – <a class="link" href="jogszabaly/2019-80-00-00" data-type="kulso">a szakképzésről</a> szóló törvény végrehajtásáról szóló <a class="link" href="jogszabaly/2020-12-20-22" data-jhid="SZ110" data-type="kulso">12/2020. (II. 7.) Korm. rendelet 110. §</a>-ában foglaltak megtartásával – heti pihenőnapon tartott tanítási nappal ehhez a szükséges feltételeket megteremti. A tanítási év első és utolsó napjára szünet vagy tanítás nélküli munkanap nem rendelhető el.</p></div><!--n-->
+<span class="jhId" id="SZ18@BE5"></span><div id="sc2026-1-20-9M-341" class="bekezdesNyito"><p><span class="jel"> (5)</span> A nemzetiségi nevelés-oktatásban részt vevő, valamint az egyházi jogi személy vagy vallási egyesület által alapított, illetve fenntartott szakképző intézmény igazgatója az <a class="link" data-jhid="SZ18@BE1" data-type="belso">(1)–(3) bekezdés</a>ben meghatározott időponttól eltérhet, továbbá a <a class="link" data-jhid="SZ18@BE4" data-type="belso">(4) bekezdés</a>ben meghatározottak szerint szünetet rendelhet el, ha azt a nemzetiségi hagyományok, az anyanemzet hagyományai vagy az alapító, illetve fenntartó egyház ünnepei indokolják. Az így elrendelt szünetek – amennyiben azok nem munkaszüneti napra esnek – nem befolyásolják a szakirányú oktatás duális képzőhelyen való teljesítését.</p></div><!--n-->
+<span class="jhId" id="SZ18@BE6"></span><div id="sc2026-1-20-9M-344" class="bekezdesNyito"><p><span class="jel"> (6)</span> Az <a class="link" data-jhid="SZ18@BE1" data-type="belso">(1)–(5) bekezdés</a> szerinti szünet munkanapjain a szakképző intézmény – szükség esetén – gondoskodik a tanulók felügyeletéről. A felügyelet megszervezéséről több szakképző intézmény közösen is gondoskodhat.</p></div><!--n-->
+<span class="jhId" id="SZ18@BE7"></span><div id="sc2026-1-20-9M-347" class="bekezdesNyito"><p><span class="jel"> (7)</span> A munka törvénykönyvéről szóló <a class="link" href="jogszabaly/2012-1-00-00" data-jhid="SZ102@BE5" data-type="kulso">2012. évi I. törvény 102. § (5) bekezdés</a>ében kapott felhatalmazás alapján a foglalkoztatáspolitikáért felelős miniszter által munkanappá nyilvánított szombati napok tanítási napoknak minősülnek.</p></div><!--n-->
+<span class="jhId" id="SZ18@BE8"></span><div id="sc2026-1-20-9M-350" class="bekezdesNyito"><p><span class="jel"> (8)</span> A tanítási év lezárásának, a tanuló minősítésének, a magasabb évfolyamra lépésnek nem akadálya, ha a szakképző intézmény a rendkívüli tanítási szünet elrendelése miatt kieső tanítási napokat <a class="link" href="jogszabaly/2019-80-00-00" data-type="kulso">a szakképzésről</a> szóló törvény végrehajtásáról szóló <a class="link" href="jogszabaly/2020-12-20-22" data-jhid="SZ110" data-type="kulso">12/2020. (II. 7.) Korm. rendelet 110. §</a>-ában meghatározottak szerint nem tudja teljes egészében pótolni. A szakképző intézmény indokolt esetben gondoskodik az elmaradt tananyag 2027/2028. tanítási évben történő feldolgozásáról.</p></div><!--i-->
+<!--as--><span class="jhId" id="AC11"></span><div id="sc2026-1-20-9M-354" class="alcim"><p><span class="jel"> 11.</span> A szakmai vizsgák rendje</p></div><!--ae--><!--i-->
+<span class="jhId" id="SZ19"></span><div id="sc2026-1-20-9M-356" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ19@BE0"></span><div id="sc2026-1-20-9M-357" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">19. §</span></span> A szakmai vizsgaidőszak első napja:</p></div><span class="jhId" id="SZ19@BE0@POA"></span><div id="sc2026-1-20-9M-360" class="betusPontNyito"><p><span class="jel"> a)</span> az október–novemberi vizsgaidőszak esetén 2026. október 5. (hétfő),</p></div><span class="jhId" id="SZ19@BE0@POB"></span><div id="sc2026-1-20-9M-363" class="betusPontNyito"><p><span class="jel"> b)</span> a február–márciusi vizsgaidőszak esetén 2027. február 1. (hétfő),</p></div><span class="jhId" id="SZ19@BE0@POC"></span><div id="sc2026-1-20-9M-366" class="betusPontNyito"><p><span class="jel"> c)</span> a május–júniusi vizsgaidőszak esetén 2027. május 3. (hétfő).</p></div><!--i-->
+<span class="jhId" id="FEIII"></span><div id="sc2026-1-20-9M-369" class="fejezet">III. Fejezet</div><!--i-->
+<div id="sc2026-1-20-9M-370" class="fejezetCim"><p>ZÁRÓ RENDELKEZÉSEK</p></div><!--i-->
+<span class="jhId" id="SZ20"></span><div id="sc2026-1-20-9M-372" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ20@BE0"></span><div id="sc2026-1-20-9M-373" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">20. §</span></span> Ez a rendelet 2026. szeptember 1-jén lép hatályba.</p></div><!--i-->
+<span class="jhId" id="SZ21"></span><div id="sc2026-1-20-9M-376" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ21@BE0"></span><div id="sc2026-1-20-9M-377" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">21. §</span></span> Ez a rendelet 2028. június 1-jén hatályát veszti.</p></div><span class="jhId" id="ME1"></span><!--i-->
+<div id="sc2026-1-20-9M-384" class="mellekletCimke"><p><i>1. melléklet az 1/2026. (VII. 31.) OGYM rendelethez</i></p></div><!--i-->
+<span class="jhId" id="ME1@CI"></span><div id="sc2026-1-20-9M-387" class="mellekletTitle"><span>A középfokú iskolai, a kollégiumi felvételi eljárás, valamint az Arany János Programokkal kapcsolatos feladatok lebonyolításának ütemezése a 2026/2027. tanévben</span></div><span class="jhId" id="RR389"></span><div id="sc2026-1-20-9M-389" class="tablazat pslice"><div class="TABLE"><table style="width:100.00%;font-size:1.00em">
+ <colgroup>
+  <col style="width:5.00%">
+  <col style="width:25.00%">
+  <col style="width:70.00%">
+ </colgroup>
+ <thead>
+  <tr id="396">
+   <th colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"></p></th>
+   <th colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>A</b></p></th>
+   <th colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>B</b></p></th>
+  </tr>
+  <tr id="403">
+   <th colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>1.</b></p></th>
+   <th colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>Határidők</b></p></th>
+   <th colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>Feladatok</b></p></th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr id="410">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>2.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2026. szeptember 9.</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="LEFT" class="bot bor bol bob">
+    <p class="AJ">A köznevelésért felelős miniszter pályázatot hirdet az Arany János Tehetséggondozó Programba és az Arany János Kollégiumi Programba történő jelentkezésről.</p></td>
+  </tr>
+  <tr id="417">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>3.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2026. szeptember 30.</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="LEFT" class="bot bor bol bob">
+    <p class="AJ">A Hivatal a honlapján nyilvánosságra hozza a középfokú iskolák tanulmányi területeinek meghatározási formáját tartalmazó közleményt.</p></td>
+  </tr>
+  <tr id="424">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>4.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2026. október 20.</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="LEFT" class="bot bor bol bob">
+    <p class="AJ">A középfokú iskolák a középfokú intézmények felvételi információs rendszerében – a Hivatal által közzétett közleményben foglaltak szerint – meghatározzák tanulmányi területeiket, és rögzítik a felvételi eljárásuk rendjét tartalmazó felvételi tájékoztatójukat.</p></td>
+  </tr>
+  <tr id="431">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>5.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2026. október 20.</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="LEFT" class="bot bor bol bob">
+    <p class="AJ">A középfokú iskolák, kollégiumok nyilvánosságra hozzák a honlapjukon a felvételi tájékoztatójukat.</p></td>
+  </tr>
+  <tr id="438">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>6.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2026. október 30.</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="LEFT" class="bot bor bol bob">
+    <p class="AJ">Az általános iskola tájékoztatja a nyolcadik évfolyamos tanulókat a felvételi eljárás rendjéről.</p></td>
+  </tr>
+  <tr id="445">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>7.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2026. október 30.</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="LEFT" class="bot bor bol bob">
+    <p class="AJ">Az általános iskola tájékoztatja a hetedik évfolyamra járó tanulók szüleit arról, hogy gyermekük iskoláztatásával kapcsolatos kérdésben a szülők közösen döntenek, valamint arról, hogy ha az iskolaválasztással kapcsolatban a szülők vagy a szülő és a gyermek között vita van, annak eldöntése a gyámhatóság hatáskörébe tartozik, és gyermekük felvételi lapjait az általános iskola a gyámhatósági döntés szerint továbbítja.</p></td>
+  </tr>
+  <tr id="452">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>8.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2026. november 16.</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="LEFT" class="bot bor bol bob">
+    <p class="AJ">A Hivatal közzéteszi a 6 és 8 évfolyamos gimnáziumi központi írásbeli felvételi vizsgát szervező gimnáziumok, továbbá a kilencedik évfolyamra jelentkezők számára központi írásbeli felvételi vizsgát szervező intézmények jegyzékét.</p></td>
+  </tr>
+  <tr id="459">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>9.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2026. december 1.</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="LEFT" class="bot bor bol bob">
+    <p class="AJ">A tanulók jelentkezése a központi írásbeli felvételi vizsgára közvetlenül a központi írásbeli felvételi vizsgát szervező – az Arany János Tehetséggondozó Programra történő pályázat benyújtása esetén a pályázatban megjelölt – intézménybe.</p></td>
+  </tr>
+  <tr id="466">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>10.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2026. december 7.</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="LEFT" class="bot bor bol bob">
+    <p class="AJ">A központi írásbeli felvételi vizsgát szervező intézmények eddig az időpontig jelentik a Hivatalnak – a Hivatal által meghatározott módon – a hozzájuk a központi írásbeli felvételi vizsgákra jelentkezők száma alapján a feladatlapigényüket.</p></td>
+  </tr>
+  <tr id="473">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>11.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2026. december 9.</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="LEFT" class="bot bor bol bob">
+    <p class="AJ">Az Arany János Tehetséggondozó Programra történő pályázatok benyújtása.</p></td>
+  </tr>
+  <tr id="480">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>12.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2027. január 17.</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="LEFT" class="bot bor bol bob">
+    <p class="AJ">Az Arany János Kollégiumi Programba történő pályázatok benyújtása.</p></td>
+  </tr>
+  <tr id="487">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>13.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2027. január 22.</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="LEFT" class="bot bor bol bob">
+    <p class="AJ">Az Arany János Tehetséggondozó Programba tartozó intézmények megszervezik a találkozást a programba jelentkezőkkel.</p></td>
+  </tr>
+  <tr id="494">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>14.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2027. január 23.</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="LEFT" class="bot bor bol bob">
+    <p class="AJ">Az általános felvételi eljárás kezdete.</p></td>
+  </tr>
+  <tr id="501">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>15.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2027. január 23., 10.00</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="LEFT" class="bot bor bol bob">
+    <p class="AJ">Központi írásbeli felvételi vizsgák az érintett 6 és 8 évfolyamos gimnáziumokban. Központi írásbeli felvételi vizsgák a kilencedik évfolyamra és az Arany János Tehetséggondozó Programba jelentkezők számára az érintett intézményekben.</p></td>
+  </tr>
+  <tr id="508">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>16.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2027. február 2., 16.00</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="LEFT" class="bot bor bol bob">
+    <p class="AJ">Legkésőbb eddig a határidőig kell biztosítania az írásbeli vizsgaszervező intézményeknek a kijavított vizsgadolgozatok megtekintését.</p></td>
+  </tr>
+  <tr id="515">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>17.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2027. február 3., 14.00</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="LEFT" class="bot bor bol bob">
+    <p class="AJ">Pótló központi írásbeli felvételi vizsgák a 6 és 8 évfolyamos gimnáziumokba, továbbá a kilencedik évfolyamra, valamint az Arany János Tehetséggondozó Programba jelentkezők számára azoknak, akik az érvényes jelentkezés ellenére az előző írásbeli vizsgán önhibájukon kívül eső, alapos ok miatt nem tudtak részt venni.</p></td>
+  </tr>
+  <tr id="522">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>18.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2027. február 4.</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="LEFT" class="bot bor bol bob">
+    <p class="AJ">Az Arany János Tehetséggondozó Programba tartozó intézmények megszervezik a találkozást a programba jelentkező, a pótló írásbelin részt vett tanulókkal.</p></td>
+  </tr>
+  <tr id="529">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>19.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2027. február 11., 16.00</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="LEFT" class="bot bor bol bob">
+    <p class="AJ">Legkésőbb eddig a határidőig kell biztosítania az írásbeli vizsgaszervező intézményeknek a kijavított, pótló vizsganapon teljesített vizsgadolgozatok megtekintését.</p></td>
+  </tr>
+  <tr id="536">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>20.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2027. február 12.</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="LEFT" class="bot bor bol bob">
+    <p class="AJ">A központi írásbeli felvételi vizsgát szervező intézmények a Hivatal által meghatározott módon értesítik az írásbeli eredményéről a tanulókat.</p></td>
+  </tr>
+  <tr id="543">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>21.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2027. február 13.</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="LEFT" class="bot bor bol bob">
+    <p class="AJ">Az Arany János Tehetséggondozó Programban és az Arany János Kollégiumi Programban részt vevő intézmények a programra benyújtott pályázatok eredményéről – egymás egyidejű előzetes értesítésével és a köznevelésért felelős miniszter bevonásával – értesítik az érintett törvényes képviselőket, tanulókat és általános iskolákat.</p></td>
+  </tr>
+  <tr id="550">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>22.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2027. február 22.</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="LEFT" class="bot bor bol bob">
+    <p class="AJ">Az általános iskola továbbítja a tanulói jelentkezési lapokat a középfokú iskoláknak, a tanulói adatlapot a Hivatalnak. A 6 és 8 évfolyamos gimnáziumba történő jelentkezésről a tanuló közvetlenül is továbbíthatja a jelentkezési lapot a gimnáziumnak, a tanulói adatlapot a Hivatalnak.</p></td>
+  </tr>
+  <tr id="557">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>23.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2027. március 1. – március 19.</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="LEFT" class="bot bor bol bob">
+    <p class="AJ">A szóbeli vizsgák, valamint az <a class="link" href="jogszabaly/2012-20-20-5H" data-jhid="SZ27@BE5" data-type="kulso">EMMI rendelet 27. § (5) bekezdés</a>e és <a class="link" href="jogszabaly/2012-20-20-5H" data-jhid="SZ28@BE1" data-type="kulso">28. § (1) bekezdés</a>e szerinti vizsgálatok az általános felvételi eljárás keretében.</p></td>
+  </tr>
+  <tr id="564">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>24.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2027. március 22.</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="LEFT" class="bot bor bol bob">
+    <p class="AJ">A középfokú iskola eddig az időpontig nyilvánosságra hozza a jelentkezők felvételi jegyzékét.</p></td>
+  </tr>
+  <tr id="571">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>25.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2027. április 6. – április 8.</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="LEFT" class="bot bor bol bob">
+    <p class="AJ">A tanulói adatlapok módosításának lehetősége.</p></td>
+  </tr>
+  <tr id="578">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>26.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2027. április 8.</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="LEFT" class="bot bor bol bob">
+    <p class="AJ">A módosító tanulói adatlapok továbbításának határnapja. Az általános iskolai jelentkeztetés esetén az iskola eddig az időpontig elzárva őrzi az eredeti, korábban beküldött tanulói adatlap egyik példányát, és a módosító tanulói adatlapot továbbítja a Hivatalnak. A 6 és 8 évfolyamos gimnáziumba történő jelentkezés esetén a szülő egyénileg is továbbíthatja a módosító tanulói adatlapot a Hivatalnak.</p></td>
+  </tr>
+  <tr id="585">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>27.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2027. április 12.</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="LEFT" class="bot bor bol bob">
+    <p class="AJ">A Hivatal elektronikus formában megküldi a középfokú iskoláknak a hozzájuk jelentkezettek listáját ABC sorrendben.</p></td>
+  </tr>
+  <tr id="592">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>28.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2027. április 19.</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="LEFT" class="bot bor bol bob">
+    <p class="AJ">A Hivatal a módosító tanulói adatlapok alapján kiegészíti a jelentkezettek listáját.</p></td>
+  </tr>
+  <tr id="599">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>29.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2027. április 22.</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="LEFT" class="bot bor bol bob">
+    <p class="AJ">A középfokú iskola igazgatója az ideiglenes felvételi rangsort – a Hivatal által meghatározott módon – megküldi a Hivatalnak.</p></td>
+  </tr>
+  <tr id="606">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>30.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2027. április 29.</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="LEFT" class="bot bor bol bob">
+    <p class="AJ">A Hivatal kialakítja a végeredményt az igazgatói döntések és tanulói adatlapok egyeztetése alapján, és elküldi azt a középfokú iskoláknak (egyeztetett felvételi jegyzék).</p></td>
+  </tr>
+  <tr id="613">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>31.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2027. május 7.</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="LEFT" class="bot bor bol bob">
+    <p class="AJ">A felvételt hirdető középfokú iskolák megküldik a felvételről vagy az elutasításról szóló értesítést a jelentkezőknek és az általános iskoláknak.</p></td>
+  </tr>
+  <tr id="620">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>32.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2027. május 10. – május 21.</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="LEFT" class="bot bor bol bob">
+    <p class="AJ">Rendkívüli felvételi eljárást kell tartani, ha az általános felvételi eljárás keretében a felvehető létszám 90%-ánál kevesebb tanulót vettek fel.<br>
+     A felvételi kérelmekről az igazgató a határnapig dönt.</p></td>
+  </tr>
+  <tr id="627">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>33.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2027. május 10. – augusztus 31.</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="LEFT" class="bot bor bol bob">
+    <p class="AJ">A középfokú iskola igazgatója rendkívüli felvételi eljárást írhat ki.</p></td>
+  </tr>
+  <tr id="634">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>34.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2027. június 1.</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="LEFT" class="bot bor bol bob">
+    <p class="AJ">A benyújtott kérelmek alapján lefolytatott jogorvoslati eljárás befejezése a fenntartónál.</p></td>
+  </tr>
+  <tr id="641">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>35.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2027. június 24. – június 25.</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="LEFT" class="bot bor bol bob">
+    <p class="AJ">Beiratkozás a középfokú iskolákba.</p></td>
+  </tr>
+ </tbody>
+</table></div></div><span class="jhId" id="ME2"></span><!--i-->
+<div id="sc2026-1-20-9M-648" class="mellekletCimke"><p><i>2. melléklet az 1/2026. (VII. 31.) OGYM rendelethez</i></p></div><!--i-->
+<span class="jhId" id="ME2@CI"></span><div id="sc2026-1-20-9M-651" class="mellekletTitle"><span>Érettségi vizsgaidőszakok, vizsganapok</span></div><!--i-->
+<span class="jhId" id="ME2@MP1"></span><div id="sc2026-1-20-9M-653" class="mellekletPont pslice"><p><span class="jel"> 1.</span> A 2026. évi október–novemberi írásbeli érettségi vizsgák</p><div class="TABLE"><table style="width:100.00%;font-size:1.00em">
+ <colgroup>
+  <col style="width:4.00%">
+  <col style="width:34.00%">
+  <col style="width:34.00%">
+  <col style="width:28.00%">
+ </colgroup>
+ <thead>
+  <tr id="663">
+   <th colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"></p></th>
+   <th colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>A</b></p></th>
+   <th colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>B</b></p></th>
+   <th colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>C</b></p></th>
+  </tr>
+  <tr id="672">
+   <th colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>1.</b></p></th>
+   <th colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>Emelt szintű írásbeli érettségi vizsga</b></p></th>
+   <th colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>Középszintű írásbeli érettségi vizsga</b></p></th>
+   <th colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>Időpont</b></p></th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr id="681">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>2.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">magyar nyelv és irodalom</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">magyar nyelv és irodalom,<br>
+     magyar mint idegen nyelv</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2026. október 12., 8.00</p></td>
+  </tr>
+  <tr id="690">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>3.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">földrajz</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">földrajz</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2026. október 12., 14.00</p></td>
+  </tr>
+  <tr id="699">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>4.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">matematika</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">matematika</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2026. október 13., 8.00</p></td>
+  </tr>
+  <tr id="708">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>5.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">latin nyelv,<br>
+     héber nyelv</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">latin nyelv,<br>
+     héber nyelv</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2026. október 13., 14.00</p></td>
+  </tr>
+  <tr id="717">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>6.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">történelem</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">történelem</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2026. október 14., 8.00</p></td>
+  </tr>
+  <tr id="726">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>7.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">francia nyelv</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">francia nyelv</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2026. október 14., 14.00</p></td>
+  </tr>
+  <tr id="735">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>8.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">angol nyelv</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">angol nyelv</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2026. október 15., 8.00</p></td>
+  </tr>
+  <tr id="744">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>9.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">kémia,<br>
+     gazdasági ismeretek,<br>
+     honvédelmi alapismeretek</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">kémia,<br>
+     honvédelmi alapismeretek, természettudomány</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2026. október 15., 14.00</p></td>
+  </tr>
+  <tr id="753">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>10.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">nemzetiségi nyelv és irodalom</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">nemzetiségi nyelv és irodalom</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2026. október 16., 8.00</p></td>
+  </tr>
+  <tr id="762">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>11.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">vizuális kultúra,<br>
+     filozófia</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">vizuális kultúra,<br>
+     filozófia</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2026. október 16., 14.00</p></td>
+  </tr>
+  <tr id="771">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>12.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">német nyelv</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">német nyelv</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2026. október 19., 8.00</p></td>
+  </tr>
+  <tr id="780">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>13.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">belügyi rendészeti ismeretek,<br>
+     dráma,<br>
+     mozgóképkultúra és médiaismeret</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">belügyi rendészeti ismeretek,<br>
+     dráma,<br>
+     mozgóképkultúra és médiaismeret</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2026. október 19., 14.00</p></td>
+  </tr>
+  <tr id="789">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>14.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">digitális kultúra</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">digitális kultúra</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2026. október 20., 8.00</p></td>
+  </tr>
+  <tr id="798">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>15.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">orosz nyelv,<br>
+     egyéb, más vizsganapon nem szereplő nyelvek</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">orosz nyelv,<br>
+     egyéb, más vizsganapon nem szereplő nyelvek</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2026. október 20., 14.00</p></td>
+  </tr>
+  <tr id="807">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>16.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">olasz nyelv</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">olasz nyelv</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2026. október 21., 8.00</p></td>
+  </tr>
+  <tr id="816">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>17.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">biológia,<br>
+     közigazgatási ismeretek</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">biológia</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2026. október 21., 14.00</p></td>
+  </tr>
+  <tr id="825">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>18.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">spanyol nyelv</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">spanyol nyelv</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2026. október 22., 8.00</p></td>
+  </tr>
+  <tr id="834">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>19.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">fizika,<br>
+     ének-zene</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">fizika,<br>
+     ének-zene</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2026. október 22., 14.00</p></td>
+  </tr>
+ </tbody>
+</table></div></div><!--i-->
+<span class="jhId" id="ME2@MP2"></span><div id="sc2026-1-20-9M-843" class="mellekletPont pslice"><p><span class="jel"> 2.</span> A 2026. évi október–novemberi szóbeli érettségi vizsgák</p><div class="TABLE"><table style="width:100.00%;font-size:1.00em">
+ <colgroup>
+  <col style="width:4.00%">
+  <col style="width:34.00%">
+  <col style="width:34.00%">
+  <col style="width:28.00%">
+ </colgroup>
+ <thead>
+  <tr id="853">
+   <th colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AJ"></p></th>
+   <th colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>A</b></p></th>
+   <th colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>B</b></p></th>
+   <th colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>C</b></p></th>
+  </tr>
+  <tr id="862">
+   <th colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>1.</b></p></th>
+   <th colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>Emelt szintű szóbeli érettségi vizsga</b></p></th>
+   <th colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>Középszintű szóbeli érettségi vizsga</b></p></th>
+   <th colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>Időpont</b></p></th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr id="871">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>2.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">szóbeli vizsgák</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">–</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2026. november 5–9.</p></td>
+  </tr>
+  <tr id="880">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>3.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">–</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">szóbeli vizsgák</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2026. november 16–20.</p></td>
+  </tr>
+ </tbody>
+</table></div></div><!--i-->
+<span class="jhId" id="ME2@MP3"></span><div id="sc2026-1-20-9M-889" class="mellekletPont pslice"><p><span class="jel"> 3.</span> A 2027. évi május–júniusi írásbeli érettségi vizsgák</p><div class="TABLE"><table style="width:100.00%;font-size:1.00em">
+ <colgroup>
+  <col style="width:4.00%">
+  <col style="width:34.00%">
+  <col style="width:34.00%">
+  <col style="width:28.00%">
+ </colgroup>
+ <thead>
+  <tr id="899">
+   <th colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AJ"></p></th>
+   <th colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>A</b></p></th>
+   <th colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>B</b></p></th>
+   <th colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>C</b></p></th>
+  </tr>
+  <tr id="908">
+   <th colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>1.</b></p></th>
+   <th colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>Emelt szintű írásbeli érettségi vizsga</b></p></th>
+   <th colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>Középszintű érettségi írásbeli vizsga</b></p></th>
+   <th colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>Időpont</b></p></th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr id="917">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>2.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">magyar nyelv és irodalom</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">magyar nyelv és irodalom,<br>
+     magyar mint idegen nyelv</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2027. május 3., 9.00</p></td>
+  </tr>
+  <tr id="926">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>3.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">matematika</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">matematika</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2027. május 4., 9.00</p></td>
+  </tr>
+  <tr id="935">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>4.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">történelem</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">történelem</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2027. május 5., 9.00</p></td>
+  </tr>
+  <tr id="944">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>5.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">angol nyelv</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">angol nyelv</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2027. május 6., 9.00</p></td>
+  </tr>
+  <tr id="953">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>6.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">–</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">digitális kultúra</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2027. május 7., 9.00</p></td>
+  </tr>
+  <tr id="962">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>7.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">német nyelv</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">német nyelv</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2027. május 10., 8.00</p></td>
+  </tr>
+  <tr id="971">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>8.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">ének-zene,<br>
+     belügyi rendészeti ismeretek</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">ének-zene,<br>
+     belügyi rendészeti ismeretek</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2027. május 10., 14.00</p></td>
+  </tr>
+  <tr id="980">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>9.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">biológia</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">biológia</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2027. május 11., 8.00</p></td>
+  </tr>
+  <tr id="989">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>10.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">közigazgatási ismeretek</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">–</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2027. május 11., 14.00</p></td>
+  </tr>
+  <tr id="998">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>11.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">nemzetiségi nyelv és irodalom</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">nemzetiségi nyelv és irodalom</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2027. május 12., 8.00</p></td>
+  </tr>
+  <tr id="1007">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>12.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">vizuális kultúra</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">vizuális kultúra</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2027. május 12., 14.00</p></td>
+  </tr>
+  <tr id="1016">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>13.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">kémia</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">kémia</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2027. május 13., 8.00</p></td>
+  </tr>
+  <tr id="1025">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>14.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">földrajz</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">földrajz</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2027. május 13., 14.00</p></td>
+  </tr>
+  <tr id="1034">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>15.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">digitális kultúra</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">–</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2027. május 14., 8.00</p></td>
+  </tr>
+  <tr id="1043">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>16.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">gazdasági ismeretek, honvédelmi alapismeretek</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">honvédelmi alapismeretek, természettudomány</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2027. május 14., 14.00</p></td>
+  </tr>
+  <tr id="1052">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>17.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">orosz nyelv,<br>
+     egyéb, más vizsganapon nem szereplő nyelvek</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">orosz nyelv,<br>
+     egyéb, más vizsganapon<br>
+     nem szereplő nyelvek</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2027. május 18., 8.00</p></td>
+  </tr>
+  <tr id="1061">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>18.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">latin nyelv, héber nyelv</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">latin nyelv, héber nyelv</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2027. május 18., 14.00</p></td>
+  </tr>
+  <tr id="1070">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>19.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">fizika</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">fizika</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2027. május 19., 8.00</p></td>
+  </tr>
+  <tr id="1079">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>20.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">mozgóképkultúra és médiaismeret</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">mozgóképkultúra és médiaismeret</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2027. május 19., 14.00</p></td>
+  </tr>
+  <tr id="1088">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>21.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">francia nyelv</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">francia nyelv</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2027. május 20., 8.00</p></td>
+  </tr>
+  <tr id="1097">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>22.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">filozófia</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">filozófia</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2027. május 20., 14.00</p></td>
+  </tr>
+  <tr id="1106">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>23.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">spanyol nyelv</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">spanyol nyelv</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2027. május 21., 8.00</p></td>
+  </tr>
+  <tr id="1115">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>24.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">dráma</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">dráma</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2027. május 21., 14.00</p></td>
+  </tr>
+  <tr id="1124">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>25.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">olasz nyelv</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">olasz nyelv</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2027. május 24., 8.00</p></td>
+  </tr>
+ </tbody>
+</table></div></div><!--i-->
+<span class="jhId" id="ME2@MP4"></span><div id="sc2026-1-20-9M-1133" class="mellekletPont pslice"><p><span class="jel"> 4.</span> A 2027. évi május–júniusi szóbeli érettségi vizsgák</p><div class="TABLE"><table style="width:100.00%;font-size:1.00em">
+ <colgroup>
+  <col style="width:4.00%">
+  <col style="width:34.00%">
+  <col style="width:34.00%">
+  <col style="width:28.00%">
+ </colgroup>
+ <thead>
+  <tr id="1143">
+   <th colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AJ"></p></th>
+   <th colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>A</b></p></th>
+   <th colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>B</b></p></th>
+   <th colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>C</b></p></th>
+  </tr>
+  <tr id="1152">
+   <th colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>1.</b></p></th>
+   <th colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>Emelt szintű szóbeli érettségi vizsga</b></p></th>
+   <th colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>Középszintű szóbeli érettségi vizsga</b></p></th>
+   <th colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>Időpont</b></p></th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr id="1161">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>2.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">szóbeli vizsgák</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">–</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2027. június 2–9.</p></td>
+  </tr>
+  <tr id="1170">
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP"><b>3.</b></p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">–</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">szóbeli vizsgák</p></td>
+   <td colspan="1" rowspan="1" valign="BASELINE" align="CENTER" class="bot bor bol bob">
+    <p class="AC mhk-KOZEP">2027. június 14–30.</p></td>
+  </tr>
+ </tbody>
+</table></div></div>
+                                                        <div class="footnote" id="fnr_1179"><sup>1</sup><p>A rendelet a 21. §-a alapján hatályát vesztette 2028. június 1. napjával.</p></div>
+                        
+
+                    </div>
+                    <div class="clbo"></div>
+                </div>
+        </div>
+
+        <div class="versionWindow versionWindowDefault" id="versionWindow"></div>
+
+        <div class="footnoteDisplay footnote-fixed">
+    <div class="footnoteContent">
+        <div class="footnoteText" tabindex="0"></div>
+        <button class="footnoteClose absolute top-0 right-0 button outline flex justify-center items-center w-32 h-32 p-0" tabindex="0" data-njttip title="Lábjegyzet bezárása" aria-label="Lábjegyzet bezárása">
+            <i class="footnoteClose ri-close-line"></i>
+        </button>
+    </div>
+</div>
+<div id="fake_footnote_display"></div>
+        
+        <div id="navigation_panel" style="display: none" class="navigation-panel" data-ng-controller="mobileFooterCtrl">
+            <div class="navigation-panel__header flex justify-between items-center p-16">
+                <h3> Változott rendelkezések</h3>
+                <button data-ng-click="toggleNavigationPanel()" class="button subtle ri-close-line flex justify-center items-center p-0 w-32 h-32 color-link-neutral-enabled" data-njttip title="Bezárás" aria-label="Bezárás"></button>
+            </div>
+            <div class="navigation-panel__nav-content nav-content">
+                <div class="flex flex-col gap-8">
+                    <span class="text-16"> Megváltozott</span>
+                    <div class="flex justify-evenly">
+                        <button class="jumpToPreviousPastChangedSlice prevChange button outline negative flex justify-center items-center p-0 w-32 h-32" data-njttip title="Előző megváltozott">
+                            <i class="ri-arrow-up-s-line"></i>
+                        </button>
+                        <button class="jumpToNextPastChangedSlice prevChange button outline negative flex justify-center items-center p-0 w-32 h-32" data-njttip title="Következő megváltozott">
+                            <i class="ri-arrow-down-s-line"></i>
+                        </button>
+                        <span class="noPrevChange noChange">
+                            Nincs változás
+                        </span>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-8">
+                    <span class="text-16"> Változni fog </span>
+                    <div class="flex justify-evenly">
+                        <button class="jumpToPreviousFutureChangedSlice nextChange button outline flex justify-center items-center p-0 w-32 h-32" data-njttip title="Előző megváltozó">
+                            <i class="ri-arrow-up-s-line"></i>
+                        </button>
+                        <button class="jumpToNextFutureChangedSlice nextChange button outline flex justify-center items-center p-0 w-32 h-32" data-njttip title="Következő megváltozó">
+                            <i class="ri-arrow-down-s-line"></i>
+                        </button>
+                        <span class="noNextChange noChange">
+                            Nincs változás
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="eszkoztar_panel" style="display: none" class="eszkoztar_panel " data-ng-controller="mobileFooterCtrl">
+            <div class="navigation-panel__header flex justify-between items-center p-16">
+                <h3> Eszköztár</h3>
+                <button data-ng-click="toggleEszkoztarPanel()" class="button subtle ri-close-line flex justify-center items-center p-0 w-32 h-32 color-link-neutral-enabled" data-njttip title="Bezárás" aria-label="Bezárás"></button>
+            </div>
+            <div class="eszkoztar_panel__content">
+                                                                            <div class="flex flex-col items-center justify-center">
+                        <a class="no-underline text-small" href="#"
+                           onclick="growl.modal('&lt;a href=&quot;https://njt.jog.gov.hu/eli/R/2026/OGYM/1&quot; target=&quot;_blank&quot; &gt;https://njt.jog.gov.hu/eli/R/2026/OGYM/1&lt;/a&gt;', 'ELI', 'info eli-link-modal');"
+                           data-njttip title="ELI">ELI</a>
+                    </div>
+                                <div>
+                    <div onclick="njtPrint.handlePrintClick();"
+                         class="flex flex-col items-center">
+                        <i class="ri-printer-fill text-18"></i>
+                        <span class="text-small">Nyomtatás</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="context_menu">
+            <ul>
+                <li class="context_menu__selection" onclick="exportText.configureExport();">Másolás a vágólapra</li>
+                                    <li class="context_menu__selection" onclick="njtPrint.handlePrintClick();">Nyomtatás</li>
+                                            </ul>
+        </div>
+        </div>
+        <div id="scrollbarRuler"></div>
+
+        <footer id="mobileFooter">
+            <div data-ng-controller="mobileFooterCtrl">
+    <div id="mobile-footer" >
+        <div class="m-footer-item sideMenu color-white cursor-pointer"
+             aria-expanded="false"
+             aria-controls="sidemenu-window-left">
+            <i class="ri-list-check text-16 color-white"></i>
+            <span>
+                Szerkezet
+            </span>
+        </div>
+        <div data-ng-click="toggleOperationsMenu()"
+             class="m-footer-item color-white cursor-pointer">
+            <i class="ri-file-search-line text-16 color-white"></i>
+            <span>
+                Keresés
+            </span>
+        </div>
+        <div data-ng-click="toggleMegnyitottak()"
+             class="m-footer-item color-white cursor-pointer">
+            <i class="ri-archive-stack-line text-16 color-white"></i>
+            <span>
+                Megnyitottak
+            </span>
+        </div>
+                <div data-ng-click="toggleEszkoztarPanel()"
+             class="m-footer-item color-white cursor-pointer">
+            <i class="ri-settings-5-line text-16 color-white"></i>
+            <span>
+                Eszköztár
+            </span>
+        </div>
+        <div data-ng-click="toggleNavigationPanel()"
+             class="m-footer-item color-white cursor-pointer">
+            <i class="ri-expand-up-down-line text-16 color-white"></i>
+            <span>
+                Változások
+            </span>
+        </div>
+    </div>
+</div>        </footer>
+    </div>
+
+
+    <!-- p: 2026-08-03 09:47:01, i: 2026-08-03 11:05:17 -->
+    </div>
+    <div id="dynamic" class="mainWrapper empty" style="display: none">
+        <div data-ng-view></div>
+    </div>
+        <div id="bottom_flag_line" class="bg-white">
+            <div id="sztp_banner" style="position:absolute; bottom: 50px; right: 0; display: none;">
+                <img src="/bundles/njtfrontend/images/layout/sztp.svg?v11c6e9fe8.14119.20261116143934.2.18.5" alt="Széchenyi Terv Plusz logó" style="height: 100px;"/>
+            </div>
+            <div id="bottom_black_line">
+                <div class="wrapper">
+                    <div data-ng-controller="pageBarCtrl">
+                        <div class="pageBar ng-cloak" data-ng-init="initPageBar('jogszabaly','2026-1-20-9M')"><ul><li class="pager search" id="pageBarSearch"><div class="searchPopup"><div class="searchPopupBox"><a class="page or"
+                               data-ng-attr-href="{{ lastOrSearchPath }}">Önkormányzati rendeletek</a></div><div><a class="no-underline" data-ng-attr-href="{{ lastSearchPath }}"><i class="ri-search-line"></i><span class="hidden">Jogszabálykereső</span></a></div></div></li><li class="pager left items-center justify-center" id="pageBarBack" aria-label="Előző fül megjelenítése"
+                data-ng-click="changePager(-1)" data-ng-keydown="$event.keyCode === 13 && changePager(-1)"
+                data-ng-show="backForward"><i tabindex="0" class="ri-arrow-left-s-line text-24"></i></li><li class="flex items-center px-2" data-ng-repeat="page in pages" data-ng-class="[page.style, {'last':$last}]"
+                data-njttip title="<b>{{ page.title }}</b> {{ page.shortDescription }}"><div class="pagerWrapper flex-1 flex"><a class="page content-center pageTabLink" href="{{ page.url }}" data-ng-bind="page.title">{{ page.url }}</a><div><a class="no-underline text-16" tabindex="0" href="#"
+                       data-ng-click="deleteCookie(page.pageId, true, page.type, page.documentTypeForHistory)"
+                    ><i class="ri-close-line"></i></a></div></div></li><li class="pager right items-center justify-center" id="pageBarForward" aria-label="Következő fül megjelenítése"
+                data-ng-click="changePager(1)" data-ng-keydown="$event.keyCode === 13 && changePager(1)"
+                data-ng-show="backForward"><i tabindex="0" class="ri-arrow-right-s-line text-24"></i></li></ul></div>                        <div class="mobile-megnyitottak-tab">
+    <div class="megnyitottak-mobile-header flex justify-between items-center p-16">
+        <h3>Megnyitottak</h3>
+        <button class="megnyitottakCloseButton button subtle ri-close-line flex justify-center items-center p-0 w-32 h-32 color-link-neutral-enabled" data-njttip title="Bezárás" aria-label="Bezárás"></button>
+    </div>
+    <h2 class="p-16">Megnyitottak</h2>
+    <ul class="flex flex-col gap-16 px-16">
+        <li class="flex justify-between" data-ng-repeat="page in localData track by $index"
+            data-njttip title="{{ page.title }} {{ page.shortDescription }}">
+            <a class="no-underline text-16" href="{{ page.url }}"
+               data-ng-bind="page.title" onclick="njtApp.toggleMegnyitottak();">{{ page.url }}</a>
+
+            <button data-ng-click="deleteCookie($index,true)"
+                    class="button outline flex justify-center items-center w-32 h-32 p-0">
+                <i class="ri-close-line text-16"></i>
+            </button>
+        </li>
+    </ul>
+</div>
+                    </div>
+                    <div id="scrollToTop" class="absolute items-center gap-4 text-small">
+                        <button class="button secondary flex justify-center items-center p-0 ri-arrow-up-s-line h-32">
+                            <span>Lap tetejére</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div id="sticky-footer-wrapper"></div>
+</main>
+<div id="sztp_banner_mobile" style="position:fixed; right: 0; bottom: 0;z-index: 2; display: none;">
+    <img src="/bundles/njtfrontend/images/layout/sztp.svg?v11c6e9fe8.14119.20261116143934.2.18.5" alt="Széchenyi Terv Plusz logó" style="height: 100px; max-width: 100%"/></div>
+
+<footer id="mainFooter">
+    <div class="flag-separator"></div>
+    <div class="w-full flex justify-center text-small color-white">
+        <div class="text">
+            <img class="footer-logo" src="/bundles/njtfrontend/images/layout/logo/njt-logo-footer-white.svg?v11c6e9fe8.14119.20261116143934.2.18.5"
+                 alt=""/>
+            <div class="text-right">
+                <ul>
+                    <li>
+                        <a id="aboutLink"
+                           href="https://jog.gov.hu/kapcsolat"
+                           target="_blank"
+                           class="color-white">Kapcsolat</a>
+                    </li>
+                    <li>
+                        <a href="https://jog.gov.hu/felhasznalasi-feltetelek"
+                           target="_blank"
+                           class="color-white"
+                           aria-label="Felhasználási feltételek">
+                            Felhasználási feltételek
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/bundles/njtfrontend/docs/akadalymentesitesi.pdf?v11c6e9fe8.14119.20261116143934.2.18.5"
+                           target="_blank"
+                           class="color-white"
+                           aria-label="Akadálymentesítési nyilatkozat PDF dokumentum">
+                            Akadálymentesítési nyilatkozat
+                            <span class="pdf accessiblehidden">PDF</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://jog.gov.hu/adatkezelesi-tajekoztato"
+                           target="_blank"
+                           class="color-white"
+                           aria-label="Adatkezelési tájékoztató">
+                            Adatkezelési tájékoztató
+                        </a>
+                    </li>
+                    <li>
+                        <a href="static/cookie"
+                           onclick="njtOpenCookieSettings();"
+                           class="color-white"
+                           aria-label="Süti beállítások">
+                            Süti beállítások
+                        </a>
+                    </li>
+                                                        </ul>
+                <span class="text-right__text">
+                    <span data-njttip title="v11c6e9fe8.14119.20261116143934.2.18.5">©</span> A Nemzeti Jogszabálytárban elérhető szövegek tekintetében az MKIFK Magyar Közlönykiadó és Igazságügyi Fordítóközpont Zrt. minden jogot fenntart!
+                </span>
+            </div>
+        </div>
+    </div>
+    <div id="blank-clipboard-select-area">_</div>
+</footer>
+<div data-ng-controller="cookieLawCtrl" data-ng-init="init()"
+     class="cookie-law ng-cloak flex fixed w-full color-white" data-ng-show="!accepted">
+    <div class="cookie-law__holder flex flex-row justify-center items-center gap-40">
+        <div class="flex flex-row gap-8">
+            <i class="ri-information-2-fill text-24 color-white"></i>
+            <span class="text-medium color-white font-medium">
+                <span data-ng-non-bindable="true">A működéshez szükséges sütik mellett a Google Analytics statisztikai sütijeit, a munkamenet-azonosítót és a bejelentkezést csak az Ön hozzájárulásával használjuk. Döntését bármikor megváltoztathatja a lábléc „Süti beállítások” hivatkozásával.</span>
+                <span data-ng-hide="onCookiePage"><br/><span data-ng-non-bindable="true">A cookie-k kezeléséről részletesebb információt <a href="static/cookie">ide</a> kattintva olvashat.</span></span>
+            </span>
+        </div>
+        <div class="flex flex-row gap-8">
+            <button class="button primary" id="acceptButton" data-ng-if="!consentGiven"
+                    data-ng-click="acceptCookieLaw()">Elfogadom</button>
+            <button class="button primary" id="keepButton" data-ng-if="consentGiven"
+                    data-ng-click="keepCookieLaw()">Nem változtatok</button>
+            <button class="button outline inverted" id="rejectButton"
+                    data-ng-click="rejectCookieLaw()">Elutasítom</button>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    var njtConfig = {
+        cachedPageDataUrl: '/ajax/cachedPageData.json',
+        searchUrl: '/ajax/get_search_url.json',
+        onkormanyzatiSearchUrl: '/ajax/get_onkormanyzati_search_url.json',
+        justificationSearchUrl: '/ajax/get_justification_search_url.json',
+        documentTranslationSearchUrl: '/ajax/get_document_translation_search_url.json',
+        internationalAgreementSearchUrl: '/ajax/get_international_agreement_search_url.json',
+        loggerUrl: '/ajax/logger.json',
+        collectAllDocumentVersion: '/ajax/collectAllDocumentVersion.json',
+        collectDocumentVhrVersion: '/ajax/collectDocumentVhrVersion.json',
+        documentVersions: '/ajax/getDocumentVersions.json',
+        currentDocumentFromAbbr: '/ajax/getCurrentDocumentFromAbbr.json',
+        documentVersionsFromAbbr: '/ajax/getDocumentVersionsFromAbbr.json',
+        documentConfig: '/ajax/config.json',
+        tagSearch: '/ajax/tags.json',
+        getBlock: '/ajax/njtGetBlock.json',
+        searchInText: '/ajax/searchInText.json',
+        modifyAccount: '/account/registration/modify.json',
+        printWindowSkeleton: '/ajax/getPrintWindow',
+        organisationGetPrintableDatas: '/organisation/print_datas.json/',
+        simpleSearchPredict: '/ajax/simple_predict.json',
+        acceptCookieLaw: '/ajax/acl.json',
+        rejectCookieLaw: '/ajax/rcl.json',
+        analyticsId: 'UA-28015740-1',
+        getMessage: '/ajax/message.json',
+        acceptMessage: '/ajax/accept_message.json',
+        exportWindowSkeleton: '/ajax/getExportWindow',
+        acceptCookieLawName: 'acceptCookieLaw',
+        sidemenu: '/ajax/sidemenu/:id',
+        requirements: [],
+        isLoggedIn: false,
+        indokolasSearchPrefix: '𝒿',
+        onkormanyzatSearchPrefix: 'ℴ',
+        pagebarMarkArchivum: '𝒶',
+        pagebarMarkFogalomtar: '𝒻',
+        pagebarMarkElethelyzet: '𝓮',
+        pagebarMarkElethelyzetTerulet: '𝓽',
+        pagebarMarkTopic: '𝓴',
+        loadQuestion: '/elethelyzet/question',
+        getAllElethelyzet: '/elethelyzet/index',
+        lazyModeLoggedOut:  false,
+        valtozasJelzesekVersions: '/ajax/getValtozasJelzesekVersions.json',
+        getTelepulesKibocsatoByMegye: '/getTelepulesKibocsatoByMegye.json',
+        szakaszSliceType: 'SZAKASZ',
+        mellekletCimkeSliceType: 'SZAKASZ',
+        jogszabalyHighlight: '/ajax/jogszabaly_highlight',
+        getElethelyzetData: '/elethelyzet/getElethelyzetData.json',
+        getElethelyzetTeruletData: '/elethelyzet/getElethelyzetTeruletData.json',
+        getTopicSearchListForHater: '/getTopicSearchList.json',
+    };
+
+
+    
+    var njtTranslate = {
+        cancel: 'Mégsem',
+        ok: 'Rendben',
+        send: 'Küldés',
+        login: 'Belépés',
+        gazette_state: 'Közlönyállapot',
+        hatalyos: 'Hatályos',
+        meg_nem_hatalyos: 'Még nem hatályos',
+        nemIsmert: 'Nem ismert',
+        nemLepettHatalyba: 'Nem lépett hatályba',
+        closeWindowText: 'Biztosan elnavigál az oldalról?',
+        szervezetAdminCaption: 'Szervezeti adminisztrátor adatai:',
+        datepickerPlaceholder: 'éééé.hh.nn',
+        documentInfo: 'Jogszabályinfó',
+        documentSampleAddWindowTitle: 'Jogszabály adatai',
+        footnoteTitle: 'Lábjegyzetek',
+        figyelem: 'Figyelem!',
+        figyelemMessage: 'A szolgáltatások igénybevételéhez jelentkezzen be!',
+        jogszabalyLoginTitle: 'A jogszabály megtekintéséhez jelentkezzen be!',
+        jogszabalyLoginMessage: 'A hivatkozott jogszabály, jogszabályi időállapot a Nemzeti Jogszabálytár regisztrációval vagy ügyfélkapus bejelentkezéssel használható szolgáltatási szintjén érhető el [338/2011. (XII. 29.) Korm. rendelet 2. § (1) bekezdése alapján].',
+        jogszabalyMissingMessage: 'A hivatkozott jogi dokumentum nem áll rendelkezésre.',
+        sessionMessage: 'A munkamenet <span class="time"></span> múlva lejár és automatikusan ki lesz léptetve.<br>A meghosszabbításhoz kattintson a tovább gombra.',
+        csrfExpired: 'Lejárt a munkamenet, kérjük jelentkezzen be újra.',
+        orgRegistrationFileUploadError: 'Kérjük, töltse fel az aláírt regisztrációs lapot',
+        registrationHandleTitle: 'Elfogadja a regisztrációt?',
+        registrationHandleSubTitle: 'Elutasítás esetén, kérjük, adja meg a elutasítás okát. Erről a regisztráló felhasználót e-mailben értesítjük.',
+        registrationCreated: 'Sikeres regisztráció',
+        registrationModified: 'Sikeres módosítás',
+        registrationMergeError: 'Regisztrált felhasználók összefésülése sikertelen',
+        underProcessWarning: 'A jogszabály feldolgozás alatt van, a felület korlátozottan használható',
+        metaDescription: 'Magyarország hivatalos, hiteles, ingyenesen használható jogszabálygyűjteménye, az MKIFK Magyar Közlönykiadó és Igazságügyi Fordítóközpont Zrt. gondozásában',
+        metaTitle: 'Nemzeti Jogszabálytár – MKIFK Magyar Közlönykiadó és Igazságügyi Fordítóközpont Zrt.',
+        hiba: 'Hiba',
+        noResult: 'Nincs találat',
+        nemMegfelelo: 'Nem megfelelő',
+        evszam: 'évszám',
+        lekerdezesIdeje: 'Lekérdezés ideje',
+        kivonat: 'KIVONAT',
+        iratminta: 'iratminta',
+        errorNeedReload: 'HIBA! Újratöltés szükséges!',
+        beforeDeleteLawRequest: 'Biztosan törölni szeretné jogszabály igénylését?',
+        lawRequest: 'Jogszabály igénylés',
+        igen: 'Igen',
+        nem: 'Nem',
+        tablazatKinyitasa: 'Táblázat kinyitása',
+        emailCim: 'E-mail cím',
+        giveYourEmailAddress: 'Adja meg az e-mail címét',
+        informacio: 'Információ',
+        successfulModification: 'Sikeres módosítás!',
+        maganszemely: 'Magánszemély',
+        unsuccessfulExport: 'Sikertelen exportálás',
+        unsuccessfulCopy: 'Sikertelen másolás',
+        copiedToClipboard: 'Kimásolva a vágólapra',
+        documentTranslations: 'Jogszabályfordítások',
+        internationalAgreements: 'Nemzetközi szerződések',
+        kozismertJogszabalyok: 'Közismert jogszabályok',
+        registration: 'Regisztráció',
+        accountSettings: 'Fiók módosítás',
+        simpleSearch: 'Jogszabálykereső',
+        cif: 'Adott napon hatályba lépő jogszabályok',
+        expired: 'Adott napon hatályukat vesztő jogszabályok',
+        info: 'Információ',
+        justificationSearch: 'Indokolások Tára',
+        popupHeader: 'Karbantartás',
+        popupMessage: 'Tájékoztatjuk Tisztelt Felhasználóinkat, hogy technikai karbantartás miatt 2023. április 25-én 20:00-21:00 óra között a Nemzeti Jogszabálytár Ügyfélkapus bejelentkezéssel történő használatában fennakadások várhatók.',
+        clearField: 'Mező tartalmának törlése',
+        privacy: 'Adatkezelési tájékoztató',
+        loginNeedsCookieConsent: 'A bejelentkezéshez el kell fogadnia a sütik használatát.',
+        cookieConsentWithdrawLogout: 'A sütik elutasításával ki is jelentkezik. Folytatja?'
+    };
+</script>
+    <script src="/bundles/njtfrontend/datepicker/duet/duet.js?v11c6e9fe8.14119.20261116143934.2.18.5" type="text/javascript"></script>
+                            <script src="/js/m-04042633b7e29fc47a744cf0973e3db4eda5a4eb.js?v11c6e9fe8.14119.20261116143934.2.18.5" type="text/javascript"></script>
+        
+<div class="loadingFadeLayer"></div>
+</body>
+</html>

@@ -1,0 +1,107 @@
+{
+ "venue_id": "bkk-971b52de876f",
+ "checked_on": "2026-11-26",
+ "provider": "OpenStreetMap Nominatim",
+ "attempts": [
+  {
+   "kind": "area",
+   "query": "Thung Maha Mek Subdistrict, Sathon, Bangkok, Thailand",
+   "url": "https://nominatim.openstreetmap.org/search?q=Thung+Maha+Mek+Subdistrict%2C+Sathon%2C+Bangkok%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+   "status": "ok",
+   "results": [
+    {
+     "place_id": 257553826,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "relation",
+     "osm_id": 11487365,
+     "lat": "13.7165683",
+     "lon": "100.5401899",
+     "category": "boundary",
+     "type": "administrative",
+     "place_rank": 16,
+     "importance": 0.18674329213397417,
+     "addresstype": "quarter",
+     "name": "Thung Maha Mek Subdistrict",
+     "display_name": "Thung Maha Mek Subdistrict, Sathon District, Bangkok, 10120, Thailand",
+     "address": {
+      "quarter": "Thung Maha Mek Subdistrict",
+      "suburb": "Sathon District",
+      "city": "Bangkok",
+      "ISO3166-2-lvl4": "TH-10",
+      "postcode": "10120",
+      "country": "Thailand",
+      "country_code": "th"
+     },
+     "boundingbox": [
+      "13.7043596",
+      "13.7260498",
+      "100.5303295",
+      "100.5536144"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "address",
+   "query": "16 Phraya Phiren Alley, Thung Maha Mek, Sathon, Bangkok 10120, Thailand",
+   "url": "https://nominatim.openstreetmap.org/search?q=16+Phraya+Phiren+Alley%2C+Thung+Maha+Mek%2C+Sathon%2C+Bangkok+10120%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+   "status": "none",
+   "http_status": 200,
+   "error": "no OSM match",
+   "note": "empty result list (HTTP 200)",
+   "results": []
+  },
+  {
+   "kind": "address",
+   "query": "Phraya Phiren Alley, Bangkok",
+   "url": "https://nominatim.openstreetmap.org/search?q=Phraya+Phiren+Alley%2C+Bangkok&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+   "status": "none",
+   "http_status": 200,
+   "error": "no OSM match",
+   "note": "empty result list (HTTP 200)",
+   "results": []
+  },
+  {
+   "kind": "street",
+   "query": "Soi Phraya Phiren, Thung Maha Mek, Sathon, Bangkok",
+   "url": "https://nominatim.openstreetmap.org/search?q=Soi+Phraya+Phiren%2C+Thung+Maha+Mek%2C+Sathon%2C+Bangkok&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+   "status": "ok",
+   "http_status": 200,
+   "error": null,
+   "note": null,
+   "results": [
+    {
+     "place_id": 255785452,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 53271857,
+     "lat": "13.7216901",
+     "lon": "100.5513486",
+     "category": "highway",
+     "type": "residential",
+     "place_rank": 26,
+     "importance": 0.053409958800640846,
+     "addresstype": "residential",
+     "name": "Soi Phraya Phiren",
+     "display_name": "Soi Phraya Phiren, Thung Maha Mek Subdistrict, Sathon District, Bangkok, 10120, Thailand",
+     "address": {
+      "road": "Soi Phraya Phiren",
+      "quarter": "Thung Maha Mek Subdistrict",
+      "suburb": "Sathon District",
+      "city": "Bangkok",
+      "ISO3166-2-lvl4": "TH-10",
+      "postcode": "10120",
+      "country": "Thailand",
+      "country_code": "th"
+     },
+     "boundingbox": [
+      "13.7210356",
+      "13.7217825",
+      "100.5496119",
+      "100.5525056"
+     ]
+    }
+   ]
+  }
+ ]
+}

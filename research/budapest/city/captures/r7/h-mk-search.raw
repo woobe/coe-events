@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 user-scalable=no">
+
+    
+    <meta name="csrf-token" content="0lmaYi9DMcPylFajeiRt19seFN8izyhTKT6gMdcM">
+
+    
+    <link rel="shortcut icon" type="image/png" href="https://magyarkozlony.hu/images/favicon.png"/>
+
+    
+    <title>
+                Magyar Közlöny
+    </title>
+
+    
+    <meta http-equiv="cache-control" content="no-cache, must-revalidate"/>
+    <meta http-equiv="expires" content="0"/>
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT"/>
+    <meta http-equiv="pragma" content="no-cache"/>
+    <meta http-equiv="cache-control" content="max-age=86400"/>
+
+    
+    <link href="https://magyarkozlony.hu/css/app.css" rel="stylesheet">
+
+    
+    <script>
+        window.Laravel = {"csrfToken":"0lmaYi9DMcPylFajeiRt19seFN8izyhTKT6gMdcM","apiToken":"Bearer "}    </script>
+</head>
+<body class="gray">
+
+<div id="app">
+    
+    <header class="padding-bottom-5 padding-top-5 shadow-bottom white">
+        <div class="wrapper-960">
+            <a href="https://magyarkozlony.hu" class="logo text-danger" title="Magyar Közlöny">
+                <img src="https://magyarkozlony.hu/images/favicon.png" alt="Magyar Közlöny" class="">
+                <span class="text-uppercase">Magyar Közlöny</span>
+            </a>
+
+            
+            <button title="Navigáció"
+                    type="button"
+                    class="btn btn-link hidden pull-right visible-xs"
+                    data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
+                <i class="fa fa-bars fa-lg"></i>
+            </button>
+
+            
+            <form method="GET" action="https://magyarkozlony.hu" accept-charset="UTF-8" class="form-inline pull-right" id="journal-search-form" autocomplete="off" role="form">
+
+            <div class="input-group relative">
+                <input class="border-radius-4 form-control padding-right-30" placeholder="Keresés" v-on:keyup="checkSearchOption" autocomplete="off" name="content" type="text" value="">
+                <span class="absolute input-group-btn right w-auto">
+                            <button type="submit" class="btn text-primary transparent">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </span>
+            </div>
+            
+            <div class="absolute border border-radius-4 dropdown-filter hidden margin-top-5 padding-10 text-muted text-sm white z-index-100"
+                 style="width: 214px;"
+            >
+                <h6 class="center-block margin-0">Keresési lehetőségek</h6>
+                <ul class="list-filter list-unstyled margin-0 padding-0 word-break">
+                                            <li class="border-top hidden margin-top-5 padding-top-5"
+                            data-filter="year,content"
+                        >
+                            <a href="#"
+                               title=""
+                               class="center-block hover-success padding-5 text-normal"
+                            >
+                                <span class="center-block"></span>
+                                <small class="center-block">
+                                    (<b></b> találat)
+                                </small>
+                            </a>
+                        </li>
+                                            <li class="border-top hidden margin-top-5 padding-top-5"
+                            data-filter="year,month,content"
+                        >
+                            <a href="#"
+                               title=""
+                               class="center-block hover-success padding-5 text-normal"
+                            >
+                                <span class="center-block"></span>
+                                <small class="center-block">
+                                    (<b></b> találat)
+                                </small>
+                            </a>
+                        </li>
+                                            <li class="border-top hidden margin-top-5 padding-top-5"
+                            data-filter="year,serial"
+                        >
+                            <a href="#"
+                               title=""
+                               class="center-block hover-success padding-5 text-normal"
+                            >
+                                <span class="center-block"></span>
+                                <small class="center-block">
+                                    (<b></b> találat)
+                                </small>
+                            </a>
+                        </li>
+                                            <li class="border-top hidden margin-top-5 padding-top-5"
+                            data-filter="content"
+                        >
+                            <a href="#"
+                               title=""
+                               class="center-block hover-success padding-5 text-normal"
+                            >
+                                <span class="center-block"></span>
+                                <small class="center-block">
+                                    (<b></b> találat)
+                                </small>
+                            </a>
+                        </li>
+                                    </ul>
+            </div>
+            </form>
+        </div>
+    </header>
+
+    
+    <nav class="wrapper-960">
+        <div id="main-nav"
+             class="collapse margin-bottom-5 margin-top-15 navbar navbar-collapse navbar-default panel panel-default">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="https://magyarkozlony.hu" title="Közlönyök" class="">
+                        <i class="fa fa-book" aria-hidden="true"></i>
+                        Közlönyök
+                    </a>
+                </li>
+                <li>
+                    <a href="https://magyarkozlony.hu/tanusitvanyok" title="Tanúsítványok" class="">
+                        <i class="fa fa-file-text-o" aria-hidden="true"></i>
+                        Tanúsítványok
+                    </a>
+                </li>
+                <li>
+                    <a href="http://njt.hu/" target="_blank" title="Jogszabálykereső" class="">
+                        <i class="fa fa-search-plus" aria-hidden="true"></i>
+                        Jogszabálykereső
+                    </a>
+                </li>
+                <li>
+                    <a href="https://magyarkozlony.hu/segitseg" title="Segítség" class="">
+                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                        Segítség
+                    </a>
+                </li>
+                <li>
+                    <a href="https://magyarkozlony.hu/feed" target="_blank" title="RSS Feed" class="">
+                        <i class="fa fa-rss" aria-hidden="true"></i>
+                        RSS
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    
+    <main class="wrapper-960">
+        
+        <div class="row">
+            <div class="col-xs-12 col-md-8">
+                <div class="border border-radius-4 margin-bottom-15 margin-top-5 padding-bottom-5 padding-left-5 padding-right-5 shadow white">
+                    <form method="GET" action="https://magyarkozlony.hu" accept-charset="UTF-8" class="clearfix form-inline" id="journal-filter-form" role="form">
+
+                    <div class="form-group margin-top-5">
+                        <select class="form-control" name="year"><option selected="selected" value="">Év</option><option value="2026">2026</option><option value="2025">2025</option><option value="2024">2024</option><option value="2023">2023</option><option value="2022">2022</option><option value="2021">2021</option><option value="2020">2020</option><option value="2019">2019</option><option value="2018">2018</option><option value="2017">2017</option><option value="2016">2016</option><option value="2015">2015</option><option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option><option value="2008">2008</option><option value="2007">2007</option><option value="2006">2006</option><option value="2005">2005</option><option value="2004">2004</option><option value="2003">2003</option><option value="2002">2002</option><option value="2001">2001</option><option value="2000">2000</option><option value="1999">1999</option><option value="1998">1998</option></select>
+                    </div>
+                    <div class="form-group margin-top-5">
+                        <select class="form-control text-capitalize" name="month"><option selected="selected" value="">Hónap</option><option value="1">Január</option><option value="2">Február</option><option value="3">Március</option><option value="4">Április</option><option value="5">Május</option><option value="6">Június</option><option value="7">Július</option><option value="8">Augusztus</option><option value="9">Szeptember</option><option value="10">Október</option><option value="11">November</option><option value="12">December</option></select>
+                    </div>
+                    <div class="form-group margin-top-5">
+                        <input class="form-control" placeholder="Közlönyszám" name="serial" type="text">
+                    </div>
+
+                    <div class="margin-top-5 pull-right">
+                        <a href="https://magyarkozlony.hu" title="Feltételek törlése" class="btn btn-link">
+                            Mégse
+                        </a>
+                        <button type="submit" class="btn btn-success">
+                            <i class="fa fa-filter"></i>
+                            Szűrés
+                        </button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="row">
+            
+            <div class="col-xs-12 col-sm-8">
+                            </div>
+
+            
+            
+            
+            <section class="col-xs-12 col-sm-8">
+                    
+    
+
+    
+                        <h1>Legfrissebb közlöny</h1>
+                <div class="panel panel-default panel-fresh panel-transparent">
+            <div class="panel-body bottom-right-shadow ">
+
+                                    <div class="fresh-row">
+                        <div class="margin-bottom-5 row" itemscope itemtype="http://schema.org/Newspaper">
+                            <meta itemprop="fileFormat" content="application/pdf">
+                            <meta itemprop="url" content="https://magyarkozlony.hu/dokumentumok/87ff08c32ebb38d75ea11753573f102cddd58492/megtekintes">
+                            <div itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+                                <meta itemprop="name" content="Magyar Közlöny Lap- és Könyvkiadó Kft.">
+                            </div>
+                            <div class="col-xs-1 hidden-xs text-center">
+                                <i class="fa fa-3x fa-file-pdf-o fa-lg hidden-sm text-danger"></i>
+                                <i class="fa fa-2x fa-file-pdf-o fa-lg hidden-md hidden-lg text-danger"></i>
+                            </div>
+                            <div class="col-xs-5">
+
+                                <a href="https://magyarkozlony.hu/dokumentumok/87ff08c32ebb38d75ea11753573f102cddd58492/megtekintes" title="" class="text-success hidden-xs">
+                                    <b itemprop="name" >Magyar Közlöny 2026. évi 180. szám</b>
+                                </a>
+                                <a title=""
+                                   class="text-success hidden visible-xs"
+                                                                      
+                                   href="https://magyarkozlony.hu/hivatalos-lapok/LX9kN9IwrS7tBlYQcE4R6b00743053bcc/dokumentumok/87ff08c32ebb38d75ea11753573f102cddd58492/letoltes"
+                                                                   >
+                                    <b itemprop="name" >Magyar Közlöny 2026. évi 180. szám</b>
+                                </a>
+                                                                 
+                            </div>
+                            <div class="col-xs-3 text-lowercase text-sm">
+                                <meta itemprop="datePublished" content="2026-11-25">
+                                2026. november 25.
+                            </div>
+
+                            <div class="col-xs-3">
+                                <a title=""
+                                   class="btn btn-block btn-default btn-xs pull-right"
+                                                                           
+                                        href="https://magyarkozlony.hu/hivatalos-lapok/LX9kN9IwrS7tBlYQcE4R6b00743053bcc/dokumentumok/87ff08c32ebb38d75ea11753573f102cddd58492/letoltes"
+                                                                   >
+                                    <i class="fa fa-download fa-lg" aria-hidden="true"></i>
+                                    <span class="hidden-xs">PDF</span>
+                                    <span class="hidden-xs hidden-sm"> formátum</span>
+                                </a>
+                            </div>
+                                                    </div>
+                    </div>
+                            </div>
+        </div>
+    
+    
+    <div class="panel panel-default panel-transparent ">
+        <div class="panel-heading row">
+            <div class="col-sm-6 padding-0">
+                <h2 class="top-side-bordered">További közlönyök</h2>
+            </div>
+            <div class="col-sm-6 padding-0 text-right hidden-xs">
+                <div class="btn-group mini-pager">
+        
+                    <a href="#" class="btn btn-default btn-xs disabled">« Előző</a>
+                
+        
+            <a href="https://magyarkozlony.hu/kereses?page=2" class="btn btn-default btn-xs" rel="next">Következő »</a>
+            </div>
+
+
+            </div>
+        </div>
+        <div class="panel-body panel-striped">
+                            <div class="journal-row">
+                    <div class="row" itemscope itemtype="http://schema.org/Newspaper">
+                        <meta itemprop="fileFormat" content="application/pdf">
+                        <meta itemprop="url" content="https://magyarkozlony.hu/dokumentumok/9aea255461db8f664f571d9ae41317adbb172207/megtekintes">
+                        <div itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+                            <meta itemprop="name" content="Magyar Közlöny Lap- és Könyvkiadó Kft.">
+                        </div>
+                        <div class="col-xs-6">
+                            <i class="fa fa-eye hidden-xs"></i>
+                            <a href="https://magyarkozlony.hu/dokumentumok/9aea255461db8f664f571d9ae41317adbb172207/megtekintes" title="" class="text-success hidden-xs">
+                                <b itemprop="name">Magyar Közlöny 2026. évi 179. szám</b>
+                            </a>
+                            <a title=""
+                               class="text-success hidden visible-xs"
+                                                                   href="https://magyarkozlony.hu/hivatalos-lapok/cZbbXwBGZg72HdkJTHun6aff45cbcf18f/dokumentumok/9aea255461db8f664f571d9ae41317adbb172207/letoltes"
+                                                           >
+                                <b itemprop="name">Magyar Közlöny 2026. évi 179. szám</b>
+                            </a>
+                                                                                                            </div>
+                        <div class="col-xs-3 text-lowercase text-sm">
+                            <meta itemprop="datePublished" content="2026-11-24">
+                            
+                            2026. november 24.
+                        </div>
+
+                        <div class="col-xs-3 text-right">
+                            <div class="btn-block btn-group-vertical" role="group" aria-label="">
+                                <a title=""
+                                   class="btn btn-default btn-xs pull-right"
+                                                                           href="https://magyarkozlony.hu/hivatalos-lapok/cZbbXwBGZg72HdkJTHun6aff45cbcf18f/dokumentumok/9aea255461db8f664f571d9ae41317adbb172207/letoltes"
+                                                                   >
+                                    <i class="fa fa-download fa-lg" aria-hidden="true"></i>
+                                    <span class="hidden-xs">PDF</span>
+                                    <span class="hidden-xs hidden-sm"> formátum</span>
+                                </a>
+                                                                                            </div>
+                        </div>
+                    </div>
+                    <div class="row text-justify text-muted text-sm">
+                        <div class="col-xs-9">
+                                                    </div>
+                    </div>
+                </div>
+                            <div class="journal-row">
+                    <div class="row" itemscope itemtype="http://schema.org/Newspaper">
+                        <meta itemprop="fileFormat" content="application/pdf">
+                        <meta itemprop="url" content="https://magyarkozlony.hu/dokumentumok/8d12e3aac17e3a2d25c9b4996596f1ffd53475be/megtekintes">
+                        <div itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+                            <meta itemprop="name" content="Magyar Közlöny Lap- és Könyvkiadó Kft.">
+                        </div>
+                        <div class="col-xs-6">
+                            <i class="fa fa-eye hidden-xs"></i>
+                            <a href="https://magyarkozlony.hu/dokumentumok/8d12e3aac17e3a2d25c9b4996596f1ffd53475be/megtekintes" title="" class="text-success hidden-xs">
+                                <b itemprop="name">Magyar Közlöny 2026. évi 178. szám</b>
+                            </a>
+                            <a title=""
+                               class="text-success hidden visible-xs"
+                                                                   href="https://magyarkozlony.hu/hivatalos-lapok/QipCpmwj2Gu0utVoHdzj6afed8ff263ce/dokumentumok/8d12e3aac17e3a2d25c9b4996596f1ffd53475be/letoltes"
+                                                           >
+                                <b itemprop="name">Magyar Közlöny 2026. évi 178. szám</b>
+                            </a>
+                                                                                                            </div>
+                        <div class="col-xs-3 text-lowercase text-sm">
+                            <meta itemprop="datePublished" content="2026-11-24">
+                            
+                            2026. november 24.
+                        </div>
+
+                        <div class="col-xs-3 text-right">
+                            <div class="btn-block btn-group-vertical" role="group" aria-label="">
+                                <a title=""
+                                   class="btn btn-default btn-xs pull-right"
+                                                                           href="https://magyarkozlony.hu/hivatalos-lapok/QipCpmwj2Gu0utVoHdzj6afed8ff263ce/dokumentumok/8d12e3aac17e3a2d25c9b4996596f1ffd53475be/letoltes"
+                                                                   >
+                                    <i class="fa fa-download fa-lg" aria-hidden="true"></i>
+                                    <span class="hidden-xs">PDF</span>
+                                    <span class="hidden-xs hidden-sm"> formátum</span>
+                                </a>
+                                                                                            </div>
+                        </div>
+                    </div>
+                    <div class="row text-justify text-muted text-sm">
+                        <div class="col-xs-9">
+                                                    </div>
+                    </div>
+                </div>
+                            <div class="journal-row">
+                    <div class="row" itemscope itemtype="http://schema.org/Newspaper">
+                        <meta itemprop="fileFormat" content="application/pdf">
+                        <meta itemprop="url" content="https://magyarkozlony.hu/dokumentumok/ac4edcc9f7d47a1e1bf7c136a1eb523dab236b18/megtekintes">
+                        <div itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+                            <meta itemprop="name" content="Magyar Közlöny Lap- és Könyvkiadó Kft.">
+                        </div>
+                        <div class="col-xs-6">
+                            <i class="fa fa-eye hidden-xs"></i>
+                            <a href="https://magyarkozlony.hu/dokumentumok/ac4edcc9f7d47a1e1bf7c136a1eb523dab236b18/megtekintes" title="" class="text-success hidden-xs">
+                                <b itemprop="name">Magyar Közlöny 2026. évi 177. szám</b>
+                            </a>
+                            <a title=""
+                               class="text-success hidden visible-xs"
+                                                                   href="https://magyarkozlony.hu/hivatalos-lapok/8KMFSOZLTtjkbqiY07YO6afdd25276b4e/dokumentumok/ac4edcc9f7d47a1e1bf7c136a1eb523dab236b18/letoltes"
+                                                           >
+                                <b itemprop="name">Magyar Közlöny 2026. évi 177. szám</b>
+                            </a>
+                                                                                                            </div>
+                        <div class="col-xs-3 text-lowercase text-sm">
+                            <meta itemprop="datePublished" content="2026-11-23">
+                            
+                            2026. november 23.
+                        </div>
+
+                        <div class="col-xs-3 text-right">
+                            <div class="btn-block btn-group-vertical" role="group" aria-label="">
+                                <a title=""
+                                   class="btn btn-default btn-xs pull-right"
+                                                                           href="https://magyarkozlony.hu/hivatalos-lapok/8KMFSOZLTtjkbqiY07YO6afdd25276b4e/dokumentumok/ac4edcc9f7d47a1e1bf7c136a1eb523dab236b18/letoltes"
+                                                                   >
+                                    <i class="fa fa-download fa-lg" aria-hidden="true"></i>
+                                    <span class="hidden-xs">PDF</span>
+                                    <span class="hidden-xs hidden-sm"> formátum</span>
+                                </a>
+                                                                                            </div>
+                        </div>
+                    </div>
+                    <div class="row text-justify text-muted text-sm">
+                        <div class="col-xs-9">
+                                                    </div>
+                    </div>
+                </div>
+                            <div class="journal-row">
+                    <div class="row" itemscope itemtype="http://schema.org/Newspaper">
+                        <meta itemprop="fileFormat" content="application/pdf">
+                        <meta itemprop="url" content="https://magyarkozlony.hu/dokumentumok/82371dfdc57602cffb8fde1989c460bf685ac4b9/megtekintes">
+                        <div itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+                            <meta itemprop="name" content="Magyar Közlöny Lap- és Könyvkiadó Kft.">
+                        </div>
+                        <div class="col-xs-6">
+                            <i class="fa fa-eye hidden-xs"></i>
+                            <a href="https://magyarkozlony.hu/dokumentumok/82371dfdc57602cffb8fde1989c460bf685ac4b9/megtekintes" title="" class="text-success hidden-xs">
+                                <b itemprop="name">Magyar Közlöny 2026. évi 176. szám</b>
+                            </a>
+                            <a title=""
+                               class="text-success hidden visible-xs"
+                                                                   href="https://magyarkozlony.hu/hivatalos-lapok/YE4NUHZHuxSX7wIyPXjz6afb36c1e79c2/dokumentumok/82371dfdc57602cffb8fde1989c460bf685ac4b9/letoltes"
+                                                           >
+                                <b itemprop="name">Magyar Közlöny 2026. évi 176. szám</b>
+                            </a>
+                                                                                                                    <a style="margin-left: 10px;" class="text-success" href="https://magyarkozlony.hu/hivatalos-lapok/YE4NUHZHuxSX7wIyPXjz6afb36c1e79c2/indoklasok"> »Indokolás(ok)</a><br />
+                                                    </div>
+                        <div class="col-xs-3 text-lowercase text-sm">
+                            <meta itemprop="datePublished" content="2026-11-20">
+                            
+                            2026. november 20.
+                        </div>
+
+                        <div class="col-xs-3 text-right">
+                            <div class="btn-block btn-group-vertical" role="group" aria-label="">
+                                <a title=""
+                                   class="btn btn-default btn-xs pull-right"
+                                                                           href="https://magyarkozlony.hu/hivatalos-lapok/YE4NUHZHuxSX7wIyPXjz6afb36c1e79c2/dokumentumok/82371dfdc57602cffb8fde1989c460bf685ac4b9/letoltes"
+                                                                   >
+                                    <i class="fa fa-download fa-lg" aria-hidden="true"></i>
+                                    <span class="hidden-xs">PDF</span>
+                                    <span class="hidden-xs hidden-sm"> formátum</span>
+                                </a>
+                                                                                            </div>
+                        </div>
+                    </div>
+                    <div class="row text-justify text-muted text-sm">
+                        <div class="col-xs-9">
+                                                    </div>
+                    </div>
+                </div>
+                            <div class="journal-row">
+                    <div class="row" itemscope itemtype="http://schema.org/Newspaper">
+                        <meta itemprop="fileFormat" content="application/pdf">
+                        <meta itemprop="url" content="https://magyarkozlony.hu/dokumentumok/5454c04886b2503db01ef4ea212a5014fc5d739d/megtekintes">
+                        <div itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+                            <meta itemprop="name" content="Magyar Közlöny Lap- és Könyvkiadó Kft.">
+                        </div>
+                        <div class="col-xs-6">
+                            <i class="fa fa-eye hidden-xs"></i>
+                            <a href="https://magyarkozlony.hu/dokumentumok/5454c04886b2503db01ef4ea212a5014fc5d739d/megtekintes" title="" class="text-success hidden-xs">
+                                <b itemprop="name">Hivatalos Értesítő 2026. évi 57. szám</b>
+                            </a>
+                            <a title=""
+                               class="text-success hidden visible-xs"
+                                                                   href="https://magyarkozlony.hu/hivatalos-lapok/Xu6Po0S7FhLurUp5YVfY6ada32b13f366/dokumentumok/5454c04886b2503db01ef4ea212a5014fc5d739d/letoltes"
+                                                           >
+                                <b itemprop="name">Hivatalos Értesítő 2026. évi 57. szám</b>
+                            </a>
+                                                                                                            </div>
+                        <div class="col-xs-3 text-lowercase text-sm">
+                            <meta itemprop="datePublished" content="2026-11-20">
+                            
+                            2026. november 20.
+                        </div>
+
+                        <div class="col-xs-3 text-right">
+                            <div class="btn-block btn-group-vertical" role="group" aria-label="">
+                                <a title=""
+                                   class="btn btn-default btn-xs pull-right"
+                                                                           href="https://magyarkozlony.hu/hivatalos-lapok/Xu6Po0S7FhLurUp5YVfY6ada32b13f366/dokumentumok/5454c04886b2503db01ef4ea212a5014fc5d739d/letoltes"
+                                                                   >
+                                    <i class="fa fa-download fa-lg" aria-hidden="true"></i>
+                                    <span class="hidden-xs">PDF</span>
+                                    <span class="hidden-xs hidden-sm"> formátum</span>
+                                </a>
+                                                                                            </div>
+                        </div>
+                    </div>
+                    <div class="row text-justify text-muted text-sm">
+                        <div class="col-xs-9">
+                                                    </div>
+                    </div>
+                </div>
+                            <div class="journal-row">
+                    <div class="row" itemscope itemtype="http://schema.org/Newspaper">
+                        <meta itemprop="fileFormat" content="application/pdf">
+                        <meta itemprop="url" content="https://magyarkozlony.hu/dokumentumok/dc16135562701532d6c751f3d99dba62d8f1774e/megtekintes">
+                        <div itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+                            <meta itemprop="name" content="Magyar Közlöny Lap- és Könyvkiadó Kft.">
+                        </div>
+                        <div class="col-xs-6">
+                            <i class="fa fa-eye hidden-xs"></i>
+                            <a href="https://magyarkozlony.hu/dokumentumok/dc16135562701532d6c751f3d99dba62d8f1774e/megtekintes" title="" class="text-success hidden-xs">
+                                <b itemprop="name">Magyar Közlöny 2026. évi 175. szám</b>
+                            </a>
+                            <a title=""
+                               class="text-success hidden visible-xs"
+                                                                   href="https://magyarkozlony.hu/hivatalos-lapok/C05vUsHZfcmsm11TKHNN6af746f79f63c/dokumentumok/dc16135562701532d6c751f3d99dba62d8f1774e/letoltes"
+                                                           >
+                                <b itemprop="name">Magyar Közlöny 2026. évi 175. szám</b>
+                            </a>
+                                                                                                            </div>
+                        <div class="col-xs-3 text-lowercase text-sm">
+                            <meta itemprop="datePublished" content="2026-11-19">
+                            
+                            2026. november 19.
+                        </div>
+
+                        <div class="col-xs-3 text-right">
+                            <div class="btn-block btn-group-vertical" role="group" aria-label="">
+                                <a title=""
+                                   class="btn btn-default btn-xs pull-right"
+                                                                           href="https://magyarkozlony.hu/hivatalos-lapok/C05vUsHZfcmsm11TKHNN6af746f79f63c/dokumentumok/dc16135562701532d6c751f3d99dba62d8f1774e/letoltes"
+                                                                   >
+                                    <i class="fa fa-download fa-lg" aria-hidden="true"></i>
+                                    <span class="hidden-xs">PDF</span>
+                                    <span class="hidden-xs hidden-sm"> formátum</span>
+                                </a>
+                                                                                            </div>
+                        </div>
+                    </div>
+                    <div class="row text-justify text-muted text-sm">
+                        <div class="col-xs-9">
+                                                    </div>
+                    </div>
+                </div>
+                            <div class="journal-row">
+                    <div class="row" itemscope itemtype="http://schema.org/Newspaper">
+                        <meta itemprop="fileFormat" content="application/pdf">
+                        <meta itemprop="url" content="https://magyarkozlony.hu/dokumentumok/a3a4f6cb3b35a3f910d35b993710323dda408c17/megtekintes">
+                        <div itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+                            <meta itemprop="name" content="Magyar Közlöny Lap- és Könyvkiadó Kft.">
+                        </div>
+                        <div class="col-xs-6">
+                            <i class="fa fa-eye hidden-xs"></i>
+                            <a href="https://magyarkozlony.hu/dokumentumok/a3a4f6cb3b35a3f910d35b993710323dda408c17/megtekintes" title="" class="text-success hidden-xs">
+                                <b itemprop="name">Magyar Közlöny 2026. évi 174. szám</b>
+                            </a>
+                            <a title=""
+                               class="text-success hidden visible-xs"
+                                                                   href="https://magyarkozlony.hu/hivatalos-lapok/YxrcsS9bW52YmsdgB3re6af6095592bec/dokumentumok/a3a4f6cb3b35a3f910d35b993710323dda408c17/letoltes"
+                                                           >
+                                <b itemprop="name">Magyar Közlöny 2026. évi 174. szám</b>
+                            </a>
+                                                                                                            </div>
+                        <div class="col-xs-3 text-lowercase text-sm">
+                            <meta itemprop="datePublished" content="2026-11-19">
+                            
+                            2026. november 19.
+                        </div>
+
+                        <div class="col-xs-3 text-right">
+                            <div class="btn-block btn-group-vertical" role="group" aria-label="">
+                                <a title=""
+                                   class="btn btn-default btn-xs pull-right"
+                                                                           href="https://magyarkozlony.hu/hivatalos-lapok/YxrcsS9bW52YmsdgB3re6af6095592bec/dokumentumok/a3a4f6cb3b35a3f910d35b993710323dda408c17/letoltes"
+                                                                   >
+                                    <i class="fa fa-download fa-lg" aria-hidden="true"></i>
+                                    <span class="hidden-xs">PDF</span>
+                                    <span class="hidden-xs hidden-sm"> formátum</span>
+                                </a>
+                                                                                            </div>
+                        </div>
+                    </div>
+                    <div class="row text-justify text-muted text-sm">
+                        <div class="col-xs-9">
+                                                    </div>
+                    </div>
+                </div>
+                            <div class="journal-row">
+                    <div class="row" itemscope itemtype="http://schema.org/Newspaper">
+                        <meta itemprop="fileFormat" content="application/pdf">
+                        <meta itemprop="url" content="https://magyarkozlony.hu/dokumentumok/3cb0e1839bc857c0dceb8e400adaf8dafa6e097f/megtekintes">
+                        <div itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+                            <meta itemprop="name" content="Magyar Közlöny Lap- és Könyvkiadó Kft.">
+                        </div>
+                        <div class="col-xs-6">
+                            <i class="fa fa-eye hidden-xs"></i>
+                            <a href="https://magyarkozlony.hu/dokumentumok/3cb0e1839bc857c0dceb8e400adaf8dafa6e097f/megtekintes" title="" class="text-success hidden-xs">
+                                <b itemprop="name">Magyar Közlöny 2026. évi 173. szám</b>
+                            </a>
+                            <a title=""
+                               class="text-success hidden visible-xs"
+                                                                   href="https://magyarkozlony.hu/hivatalos-lapok/bfFk5dALSQzzn0TxOzKz6af4c07090df2/dokumentumok/3cb0e1839bc857c0dceb8e400adaf8dafa6e097f/letoltes"
+                                                           >
+                                <b itemprop="name">Magyar Közlöny 2026. évi 173. szám</b>
+                            </a>
+                                                                                                                    <a style="margin-left: 10px;" class="text-success" href="https://magyarkozlony.hu/hivatalos-lapok/bfFk5dALSQzzn0TxOzKz6af4c07090df2/indoklasok"> »Indokolás(ok)</a><br />
+                                                    </div>
+                        <div class="col-xs-3 text-lowercase text-sm">
+                            <meta itemprop="datePublished" content="2026-11-18">
+                            
+                            2026. november 18.
+                        </div>
+
+                        <div class="col-xs-3 text-right">
+                            <div class="btn-block btn-group-vertical" role="group" aria-label="">
+                                <a title=""
+                                   class="btn btn-default btn-xs pull-right"
+                                                                           href="https://magyarkozlony.hu/hivatalos-lapok/bfFk5dALSQzzn0TxOzKz6af4c07090df2/dokumentumok/3cb0e1839bc857c0dceb8e400adaf8dafa6e097f/letoltes"
+                                                                   >
+                                    <i class="fa fa-download fa-lg" aria-hidden="true"></i>
+                                    <span class="hidden-xs">PDF</span>
+                                    <span class="hidden-xs hidden-sm"> formátum</span>
+                                </a>
+                                                                                            </div>
+                        </div>
+                    </div>
+                    <div class="row text-justify text-muted text-sm">
+                        <div class="col-xs-9">
+                                                    </div>
+                    </div>
+                </div>
+                            <div class="journal-row">
+                    <div class="row" itemscope itemtype="http://schema.org/Newspaper">
+                        <meta itemprop="fileFormat" content="application/pdf">
+                        <meta itemprop="url" content="https://magyarkozlony.hu/dokumentumok/ffa8ab0f60789dfbad6ab9de833035519186d010/megtekintes">
+                        <div itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+                            <meta itemprop="name" content="Magyar Közlöny Lap- és Könyvkiadó Kft.">
+                        </div>
+                        <div class="col-xs-6">
+                            <i class="fa fa-eye hidden-xs"></i>
+                            <a href="https://magyarkozlony.hu/dokumentumok/ffa8ab0f60789dfbad6ab9de833035519186d010/megtekintes" title="" class="text-success hidden-xs">
+                                <b itemprop="name">Magyar Közlöny 2026. évi 172. szám</b>
+                            </a>
+                            <a title=""
+                               class="text-success hidden visible-xs"
+                                                                   href="https://magyarkozlony.hu/hivatalos-lapok/KXnmh8Uc10yudl7DfxTZ6af2204faa9a9/dokumentumok/ffa8ab0f60789dfbad6ab9de833035519186d010/letoltes"
+                                                           >
+                                <b itemprop="name">Magyar Közlöny 2026. évi 172. szám</b>
+                            </a>
+                                                                                                            </div>
+                        <div class="col-xs-3 text-lowercase text-sm">
+                            <meta itemprop="datePublished" content="2026-11-16">
+                            
+                            2026. november 16.
+                        </div>
+
+                        <div class="col-xs-3 text-right">
+                            <div class="btn-block btn-group-vertical" role="group" aria-label="">
+                                <a title=""
+                                   class="btn btn-default btn-xs pull-right"
+                                                                           href="https://magyarkozlony.hu/hivatalos-lapok/KXnmh8Uc10yudl7DfxTZ6af2204faa9a9/dokumentumok/ffa8ab0f60789dfbad6ab9de833035519186d010/letoltes"
+                                                                   >
+                                    <i class="fa fa-download fa-lg" aria-hidden="true"></i>
+                                    <span class="hidden-xs">PDF</span>
+                                    <span class="hidden-xs hidden-sm"> formátum</span>
+                                </a>
+                                                                                            </div>
+                        </div>
+                    </div>
+                    <div class="row text-justify text-muted text-sm">
+                        <div class="col-xs-9">
+                                                    </div>
+                    </div>
+                </div>
+                            <div class="journal-row">
+                    <div class="row" itemscope itemtype="http://schema.org/Newspaper">
+                        <meta itemprop="fileFormat" content="application/pdf">
+                        <meta itemprop="url" content="https://magyarkozlony.hu/dokumentumok/5f99848e5821a00d49f56fdd5709bfec0f4532b4/megtekintes">
+                        <div itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+                            <meta itemprop="name" content="Magyar Közlöny Lap- és Könyvkiadó Kft.">
+                        </div>
+                        <div class="col-xs-6">
+                            <i class="fa fa-eye hidden-xs"></i>
+                            <a href="https://magyarkozlony.hu/dokumentumok/5f99848e5821a00d49f56fdd5709bfec0f4532b4/megtekintes" title="" class="text-success hidden-xs">
+                                <b itemprop="name">Magyar Közlöny 2026. évi 171. szám</b>
+                            </a>
+                            <a title=""
+                               class="text-success hidden visible-xs"
+                                                                   href="https://magyarkozlony.hu/hivatalos-lapok/eVPwo1zo3oc7qzap5LKe6aee410272328/dokumentumok/5f99848e5821a00d49f56fdd5709bfec0f4532b4/letoltes"
+                                                           >
+                                <b itemprop="name">Magyar Közlöny 2026. évi 171. szám</b>
+                            </a>
+                                                                                                                    <a style="margin-left: 10px;" class="text-success" href="https://magyarkozlony.hu/hivatalos-lapok/eVPwo1zo3oc7qzap5LKe6aee410272328/indoklasok"> »Indokolás(ok)</a><br />
+                                                    </div>
+                        <div class="col-xs-3 text-lowercase text-sm">
+                            <meta itemprop="datePublished" content="2026-11-13">
+                            
+                            2026. november 13.
+                        </div>
+
+                        <div class="col-xs-3 text-right">
+                            <div class="btn-block btn-group-vertical" role="group" aria-label="">
+                                <a title=""
+                                   class="btn btn-default btn-xs pull-right"
+                                                                           href="https://magyarkozlony.hu/hivatalos-lapok/eVPwo1zo3oc7qzap5LKe6aee410272328/dokumentumok/5f99848e5821a00d49f56fdd5709bfec0f4532b4/letoltes"
+                                                                   >
+                                    <i class="fa fa-download fa-lg" aria-hidden="true"></i>
+                                    <span class="hidden-xs">PDF</span>
+                                    <span class="hidden-xs hidden-sm"> formátum</span>
+                                </a>
+                                                                                            </div>
+                        </div>
+                    </div>
+                    <div class="row text-justify text-muted text-sm">
+                        <div class="col-xs-9">
+                                                    </div>
+                    </div>
+                </div>
+                    </div>
+    </div>
+
+
+    
+    <div class="hidden-xs text-right">
+        <nav>
+        <ul class="pagination">
+            
+                            <li class="disabled" aria-disabled="true" aria-label="&laquo; Előző">
+                    <span aria-hidden="true">&lsaquo;</span>
+                </li>
+            
+            
+                            
+                
+                
+                                                                                        <li class="active" aria-current="page"><span>1</span></li>
+                                                                                                <li><a href="https://magyarkozlony.hu/kereses?page=2">2</a></li>
+                                                                                                <li><a href="https://magyarkozlony.hu/kereses?page=3">3</a></li>
+                                                                                                <li><a href="https://magyarkozlony.hu/kereses?page=4">4</a></li>
+                                                                                                <li><a href="https://magyarkozlony.hu/kereses?page=5">5</a></li>
+                                                                                                <li><a href="https://magyarkozlony.hu/kereses?page=6">6</a></li>
+                                                                                                <li><a href="https://magyarkozlony.hu/kereses?page=7">7</a></li>
+                                                                                                <li><a href="https://magyarkozlony.hu/kereses?page=8">8</a></li>
+                                                                                                <li><a href="https://magyarkozlony.hu/kereses?page=9">9</a></li>
+                                                                                                <li><a href="https://magyarkozlony.hu/kereses?page=10">10</a></li>
+                                                                                        
+                                    <li class="disabled" aria-disabled="true"><span>...</span></li>
+                
+                
+                                            
+                
+                
+                                                                                        <li><a href="https://magyarkozlony.hu/kereses?page=697">697</a></li>
+                                                                                                <li><a href="https://magyarkozlony.hu/kereses?page=698">698</a></li>
+                                                                        
+            
+                            <li>
+                    <a href="https://magyarkozlony.hu/kereses?page=2" rel="next" aria-label="Következő &raquo;">&rsaquo;</a>
+                </li>
+                    </ul>
+    </nav>
+
+    </div>
+
+    
+    <div class="hidden text-right visible-xs margin-bottom-20">
+        <div class="btn-group mini-pager">
+        
+                    <a href="#" class="btn btn-default btn-xs disabled">« Előző</a>
+                
+        
+            <a href="https://magyarkozlony.hu/kereses?page=2" class="btn btn-default btn-xs" rel="next">Következő »</a>
+            </div>
+
+    </div>
+
+    <script>
+        const startDate = new Date("2026-10-30T10:00:00");
+        const endDate = new Date("2026-10-31T16:00:00");
+        const storageKey = "popup_julius2026";
+
+        const now = new Date();
+
+        if (
+            now >= startDate &&
+            now <= endDate &&
+            localStorage.getItem(storageKey) !== "true"
+        ) {
+            alert(
+                `FIGYELEM!
+Karbantartás miatt a magyarkozlony.hu oldalon
+2026. október 31-én, szombaton, 7-16 óra között
+szolgáltatáskiesés fordulhat elő.`
+            );
+
+            localStorage.setItem(storageKey, "true");
+        }
+    </script>
+
+            </section>
+
+            
+            <aside class="col-xs-12 col-sm-4">
+                
+                
+                
+                                    <div class="alert alert-success relative text-gray text-sm" role="alert">
+            <i class="fa fa-info-circle absolute margin-top-2" aria-hidden="true"></i>
+        <div class="margin-left-15">
+       A PDF formátumú közlönyök megtekintéséhez <a href="https://get.adobe.com/hu/reader/otherversions/" target="_blank">Adobe Acrobat Reader</a> program szükséges. 
+    </div>
+</div>
+                                    <div class="alert alert-success relative text-gray text-sm" role="alert">
+            <i class="fa fa-info-circle absolute margin-top-2" aria-hidden="true"></i>
+        <div class="margin-left-15">
+       A 2013. május 3. után megjelent dokumentumok esetében a hitelességet bizonyító digitális aláírást a PDF dokumentum tartalmazza, így a hitelesség ellenőrzéséhez nincs szükség egyéb ellenőrző program letöltésére. A hitelesség ellenőrzéséhez szükséges beállításokról az alábbi linkről letölthető dokumentumban tájékozódhat. 
+    </div>
+</div>
+                                    <div class="alert alert-success relative text-gray text-sm" role="alert">
+            <i class="fa fa-info-circle absolute margin-top-2" aria-hidden="true"></i>
+        <div class="margin-left-15">
+       A 2013. május 3. előtt megjelent hivatalos lapok hitelességének ellenőrzéséhez töltse le és telepítse az SDX programot, az M2-es aláírásokhoz az újabb SDX Verify Free M2 ellenőrző programot és a tanúsítványokat! 
+    </div>
+</div>
+                                    <div class="alert alert-success relative text-gray text-sm" role="alert">
+            <i class="fa fa-info-circle absolute margin-top-2" aria-hidden="true"></i>
+        <div class="margin-left-15">
+       Megjelenítő nézet:
+                A hivatalos lap számára kattintva (pl. Magyar Közlöny 2013. évi 1. szám) a lap gyors áttekintését és az abban történő keresést lehetővé tévő megjelenítő nézetbe jut. A megjelenítő nézetben a „Közlönyök” gomb alatt található következő „:≡” ikonra kattintva tudja az előnézeti képeket ki és bekapcsolni. Amennyiben Ön nyomtatni szeretne, javasoljuk a PDF formátumú közlöny letöltését. 
+    </div>
+</div>
+                                    <div class="alert alert-success relative text-gray text-sm" role="alert">
+            <i class="fa fa-info-circle absolute margin-top-2" aria-hidden="true"></i>
+        <div class="margin-left-15">
+       Keresés:
+                - a tárgyszavas keresés pontos szóra vagy szótöredékre a * jellel ad eredményt (pl. körjegyz*)
+                - a dátum szerinti keresés utolsó rovatában a keresett hivatalos lap konkrét számát tudja megadni
+                - a megjelenítő nézeten belüli keresés csak a * jel alkalmazása nélkül ad eredményt a keresett szó ragozott alakjaira is 
+    </div>
+</div>
+                            </aside>
+        </div>
+    </main>
+
+    
+    <footer class="border-top clearfix margin-bottom-15 padding-top-5 text-sm wrapper-960">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 xs__text-center">
+                2026 &copy; Miniszterelnökség
+            </div>
+            <div class="col-xs-12 col-sm-6 text-right xs__text-center">
+                <a href="https://magyarkozlony.hu/impresszum" class="border-right margin-right-5 padding-right-5 text-gold"
+                   title="Impresszum">Impresszum</a>
+                <a href="https://magyarkozlony.hu/kapcsolat" class="border-right margin-right-5 padding-right-5 text-gold"
+                   title="Kapcsolat">Kapcsolat</a>
+                <a href="https://magyarkozlony.hu/jogszabalyi-hatter" class="text-gold" title="Jogszabályi háttér">Jogszabályi háttér</a>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+<script src="https://magyarkozlony.hu/js/app.js"></script>
+</body>
+</html>

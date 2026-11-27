@@ -1,0 +1,56 @@
+{
+ "venue_id": "bkk-7a880c8c3f64",
+ "checked_on": "2026-11-26",
+ "provider": "OpenStreetMap Nominatim",
+ "attempts": [
+  {
+   "kind": "name",
+   "query": "IMPACT Exhibition Center Hall 1-4",
+   "url": "https://nominatim.openstreetmap.org/search?q=IMPACT+Exhibition+Center+Hall+1-4&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+   "status": "none",
+   "results": []
+  },
+  {
+   "kind": "name",
+   "query": "IMPACT Challenger Muang Thong Thani",
+   "url": "https://nominatim.openstreetmap.org/search?q=IMPACT+Challenger+Muang+Thong+Thani&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+   "status": "ok",
+   "results": [
+    {
+     "place_id": 260128711,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 124882311,
+     "lat": "13.9129051",
+     "lon": "100.5466053",
+     "category": "amenity",
+     "type": "exhibition_centre",
+     "place_rank": 30,
+     "importance": 4.5001144426596745e-05,
+     "addresstype": "amenity",
+     "name": "IMPACT Challenger",
+     "display_name": "IMPACT Challenger, Udon Ratthaya Expressway, Muang Thong Thani, Ban Mai Subdistrict, Pak Kret City Municipality, Pak Kret District, Nonthaburi Province, 11120, Thailand",
+     "address": {
+      "amenity": "IMPACT Challenger",
+      "road": "Udon Ratthaya Expressway",
+      "neighbourhood": "Muang Thong Thani",
+      "city_district": "Ban Mai Subdistrict",
+      "city": "Pak Kret City Municipality",
+      "county": "Pak Kret District",
+      "province": "Nonthaburi Province",
+      "ISO3166-2-lvl4": "TH-12",
+      "postcode": "11120",
+      "country": "Thailand",
+      "country_code": "th"
+     },
+     "boundingbox": [
+      "13.9107033",
+      "13.9151475",
+      "100.5450005",
+      "100.5481496"
+     ]
+    }
+   ]
+  }
+ ]
+}

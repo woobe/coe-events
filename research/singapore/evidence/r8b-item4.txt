@@ -1,0 +1,98 @@
+BEFORE(round2 pre-image) all 2309 unlocated 750 {'venue': 598, 'event': 152}
+AFTER all 2319 unlocated 760 {'venue': 608, 'event': 152}
+delta 10
+blockers before 21 after 21
+
+LLI ids ['sg-86d82fc69fcf', 'sg-b57c010c7380', 'sg-c6889650a7db']
+-- sg-86d82fc69fcf Training Room 1-1 at Lifelong Learning Institute
+   about before cl-feada926f538 after cl-feada926f538 | id changed False | value same True
+   access_window before cl-5452575c6d1b after cl-5452575c6d1b | id changed False | value same True
+   address before cl-3802fa458e7f after cl-3802fa458e7f | id changed False | value same True
+   alcohol_service before cl-08c01d3b4f7c after cl-08c01d3b4f7c | id changed False | value same True
+   beer_allowed before cl-af4713d13b26 after cl-af4713d13b26 | id changed False | value same True
+   booking_hour_cap before cl-9dbc2a0be206 after cl-9dbc2a0be206 | id changed False | value same True
+   booking_url before cl-23e9328dad80 after cl-23e9328dad80 | id changed False | value same True
+   capacity before cl-5c782005eb58 after cl-5c782005eb58 | id changed False | value same True
+   capacity_basis before cl-c781ea899344 after cl-c781ea899344 | id changed False | value same True
+   catering before cl-81c097f01ffe after cl-81c097f01ffe | id changed False | value same True
+   climate_access before cl-d43c84de8387 after cl-d43c84de8387 | id changed False | value same True
+   closing_time before cl-2ec22c712527 after cl-2ec22c712527 | id changed False | value same True
+   coordinates before cl-68f8cc941bd0 after cl-68f8cc941bd0 | id changed False | value same True
+   delivery_allowed before cl-f76b8e1624d3 after cl-f76b8e1624d3 | id changed False | value same True
+   display_name before cl-6c82a71a4d9c after cl-6c82a71a4d9c | id changed False | value same True
+   event_window_status before cl-af2da7a7a888 after cl-af2da7a7a888 | id changed False | value same True
+   food_service before cl-86907f5452fb after cl-86907f5452fb | id changed False | value same True
+   language_support before cl-e6d3f4b23b75 after cl-e6d3f4b23b75 | id changed False | value same True
+   lifecycle before cl-c316638b0b83 after cl-c316638b0b83 | id changed False | value same True
+   price before cl-727754133b9b after cl-727754133b9b | id changed False | value same True
+   price_basis before cl-28a863bf893b after cl-28a863bf893b | id changed False | value same True
+   price_detail before cl-ff3f60712ab7 after cl-ff3f60712ab7 | id changed False | value same True
+   programme_costs before cl-e85429193aec after cl-e85429193aec | id changed False | value same True
+   programme_windows before cl-dd973e39cc25 after cl-dd973e39cc25 | id changed False | value same True
+   recording before cl-64593006c3e1 after cl-64593006c3e1 | id changed False | value same True
+   screen before cl-5fb3a8bdf8a5 after cl-5fb3a8bdf8a5 | id changed False | value same True
+   source_url before cl-a8fa85217280 after cl-a8fa85217280 | id changed False | value same True
+   transit_access before cl-4e458d954648 after cl-4e458d954648 | id changed False | value same True
+   wifi before cl-251539ce9415 after cl-251539ce9415 | id changed False | value same True
+-- sg-b57c010c7380 Lecture Theatre at Lifelong Learning Institute
+   about before cl-220e3c265c1c after cl-220e3c265c1c | id changed False | value same True
+   access_window before cl-5452575c6d1b after cl-e2c5d2c8db26 | id changed True | value same True
+   address before cl-3802fa458e7f after cl-7f5c30371785 | id changed True | value same True
+   alcohol_service before cl-757d07dedc53 after cl-757d07dedc53 | id changed False | value same True
+   beer_allowed before cl-8e180c224b16 after cl-8e180c224b16 | id changed False | value same True
+   booking_hour_cap before cl-0931534c51b8 after cl-0931534c51b8 | id changed False | value same True
+   booking_url before cl-ef366d3457bf after cl-ef366d3457bf | id changed False | value same True
+   capacity before cl-015df37a05f3 after cl-015df37a05f3 | id changed False | value same True
+   capacity_basis before cl-4bbc522009c6 after cl-4bbc522009c6 | id changed False | value same True
+   catering before cl-4ef14c5bc75d after cl-4ef14c5bc75d | id changed False | value same True
+   climate_access before cl-66192fc72065 after cl-66192fc72065 | id changed False | value same True
+   closing_time before cl-df7744fb4ac8 after cl-df7744fb4ac8 | id changed False | value same True
+   coordinates before cl-84e3652fc7f2 after cl-84e3652fc7f2 | id changed False | value same True
+   delivery_allowed before cl-74f661038258 after cl-74f661038258 | id changed False | value same True
+   display_name before cl-d011f7f7a1a4 after cl-d011f7f7a1a4 | id changed False | value same True
+   event_window_status before cl-010817d2255a after cl-010817d2255a | id changed False | value same True
+   food_service before cl-f42f35092df1 after cl-f42f35092df1 | id changed False | value same True
+   language_support before cl-67fd380c197d after cl-67fd380c197d | id changed False | value same True
+   lifecycle before cl-13bed9859695 after cl-13bed9859695 | id changed False | value same True
+   price before cl-728fd53b0e03 after cl-728fd53b0e03 | id changed False | value same True
+   price_basis before cl-3136f7cfd0a5 after cl-3136f7cfd0a5 | id changed False | value same True
+   price_detail before cl-7743f775ccac after cl-7743f775ccac | id changed False | value same True
+   programme_costs before cl-3bf02fbdae79 after cl-3bf02fbdae79 | id changed False | value same True
+   programme_windows before cl-dd973e39cc25 after cl-30710b793db9 | id changed True | value same True
+   recording before cl-d68a948134e1 after cl-d68a948134e1 | id changed False | value same True
+   screen before cl-5aca4fa90036 after cl-5aca4fa90036 | id changed False | value same True
+   source_url before cl-920850b06e38 after cl-920850b06e38 | id changed False | value same True
+   transit_access before cl-4bf0265b1b58 after cl-4bf0265b1b58 | id changed False | value same True
+   wifi before cl-ca346a018a40 after cl-ca346a018a40 | id changed False | value same True
+-- sg-c6889650a7db Event Hall 2-1 at Lifelong Learning Institute
+   about before cl-88c4aa77ca92 after cl-88c4aa77ca92 | id changed False | value same True
+   access_window before cl-5452575c6d1b after cl-87a240594325 | id changed True | value same True
+   address before cl-3802fa458e7f after cl-1b4628fe39b6 | id changed True | value same True
+   alcohol_service before cl-a5e11fef91de after cl-a5e11fef91de | id changed False | value same True
+   beer_allowed before cl-63090e7b90f5 after cl-63090e7b90f5 | id changed False | value same True
+   booking_hour_cap before cl-45172db17f3e after cl-45172db17f3e | id changed False | value same True
+   booking_url before cl-6f87d06ed181 after cl-6f87d06ed181 | id changed False | value same True
+   capacity before cl-854aef8b749e after cl-854aef8b749e | id changed False | value same True
+   capacity_basis before cl-fb5d72247ecd after cl-fb5d72247ecd | id changed False | value same True
+   catering before cl-77830fe82c0e after cl-77830fe82c0e | id changed False | value same True
+   climate_access before cl-426429c2a3a8 after cl-426429c2a3a8 | id changed False | value same True
+   closing_time before cl-9eb86064f057 after cl-9eb86064f057 | id changed False | value same True
+   coordinates before cl-84e3652fc7f2 after cl-b4a8c3ccc584 | id changed True | value same True
+   delivery_allowed before cl-0fa5f2b42948 after cl-0fa5f2b42948 | id changed False | value same True
+   display_name before cl-3cde118e33c8 after cl-3cde118e33c8 | id changed False | value same True
+   event_window_status before cl-9c0080941a9b after cl-9c0080941a9b | id changed False | value same True
+   food_service before cl-a0dc7eb33810 after cl-a0dc7eb33810 | id changed False | value same True
+   language_support before cl-b2f32bb69e7f after cl-b2f32bb69e7f | id changed False | value same True
+   lifecycle before cl-6994c0e4d6af after cl-6994c0e4d6af | id changed False | value same True
+   price before cl-b518a7739d0f after cl-b518a7739d0f | id changed False | value same True
+   price_basis before cl-dc25e668dbba after cl-dc25e668dbba | id changed False | value same True
+   price_detail before cl-57a9184de34c after cl-57a9184de34c | id changed False | value same True
+   programme_costs before cl-818c3243d3d2 after cl-818c3243d3d2 | id changed False | value same True
+   programme_windows before cl-dd973e39cc25 after cl-d0d67ad61d2f | id changed True | value same True
+   recording before cl-75cc26a62509 after cl-75cc26a62509 | id changed False | value same True
+   screen before cl-4ed2ef0fc93e after cl-4ed2ef0fc93e | id changed False | value same True
+   source_url before cl-ee82760509cd after cl-ee82760509cd | id changed False | value same True
+   transit_access before cl-fac3d9cff794 after cl-fac3d9cff794 | id changed False | value same True
+   wifi before cl-9c3a2f4e0897 after cl-9c3a2f4e0897 | id changed False | value same True
+before field-level dup ids {'cl-d4b68c5c2a9c': 2, 'cl-5452575c6d1b': 3, 'cl-3802fa458e7f': 3, 'cl-dd973e39cc25': 3, 'cl-3b139e2af7fc': 2, 'cl-84e3652fc7f2': 2}
+after field-level dup ids {}

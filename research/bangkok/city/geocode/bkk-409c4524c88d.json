@@ -1,0 +1,53 @@
+{
+ "venue_id": "bkk-409c4524c88d",
+ "checked_on": "2026-11-26",
+ "provider": "OpenStreetMap Nominatim",
+ "attempts": [
+  {
+   "kind": "address",
+   "query": "101 Sukhumvit Road, Bang Chak, Phra Khanong, Bangkok 10260, Thailand",
+   "url": "https://nominatim.openstreetmap.org/search?q=101+Sukhumvit+Road%2C+Bang+Chak%2C+Phra+Khanong%2C+Bangkok+10260%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+   "status": "none",
+   "results": []
+  },
+  {
+   "kind": "name",
+   "query": "True Digital Park Bangkok",
+   "url": "https://nominatim.openstreetmap.org/search?q=True+Digital+Park+Bangkok&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+   "status": "ok",
+   "results": [
+    {
+     "place_id": 257618604,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 637524947,
+     "lat": "13.6855810",
+     "lon": "100.6113077",
+     "category": "landuse",
+     "type": "commercial",
+     "place_rank": 24,
+     "importance": 0.08007662546730751,
+     "addresstype": "commercial",
+     "name": "True Digital Park",
+     "display_name": "True Digital Park, Bang Chak Subdistrict, Phra Khanong District, Bangkok, 10260, Thailand",
+     "address": {
+      "commercial": "True Digital Park",
+      "quarter": "Bang Chak Subdistrict",
+      "suburb": "Phra Khanong District",
+      "city": "Bangkok",
+      "ISO3166-2-lvl4": "TH-10",
+      "postcode": "10260",
+      "country": "Thailand",
+      "country_code": "th"
+     },
+     "boundingbox": [
+      "13.6844410",
+      "13.6874573",
+      "100.6104434",
+      "100.6122456"
+     ]
+    }
+   ]
+  }
+ ]
+}

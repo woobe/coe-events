@@ -1,0 +1,90 @@
+{
+ "venue_id": "bkk-3151ca56ec77",
+ "checked_on": "2026-11-26",
+ "provider": "OpenStreetMap Nominatim",
+ "attempts": [
+  {
+   "kind": "address",
+   "query": "IMPACT Exhibition and Convention Center, Popular Road, Ban Mai, Pak Kret, Nonthaburi 11120, Thailand",
+   "url": "https://nominatim.openstreetmap.org/search?q=IMPACT+Exhibition+and+Convention+Center%2C+Popular+Road%2C+Ban+Mai%2C+Pak+Kret%2C+Nonthaburi+11120%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+   "status": "none",
+   "results": []
+  },
+  {
+   "kind": "name",
+   "query": "IMPACT Exhibition Center Muang Thong Thani",
+   "url": "https://nominatim.openstreetmap.org/search?q=IMPACT+Exhibition+Center+Muang+Thong+Thani&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+   "status": "ok",
+   "results": [
+    {
+     "place_id": 257410062,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 175314196,
+     "lat": "13.9131439",
+     "lon": "100.5487991",
+     "category": "amenity",
+     "type": "exhibition_centre",
+     "place_rank": 30,
+     "importance": 4.5001144426596745e-05,
+     "addresstype": "amenity",
+     "name": "IMPACT Exhibition Center, Hall 5-8",
+     "display_name": "IMPACT Exhibition Center, Hall 5-8, Popular1 Road, Muang Thong Thani, Ban Mai Subdistrict, Pak Kret City Municipality, Pak Kret District, Nonthaburi Province, 11120, Thailand",
+     "address": {
+      "amenity": "IMPACT Exhibition Center, Hall 5-8",
+      "road": "Popular1 Road",
+      "neighbourhood": "Muang Thong Thani",
+      "city_district": "Ban Mai Subdistrict",
+      "city": "Pak Kret City Municipality",
+      "county": "Pak Kret District",
+      "province": "Nonthaburi Province",
+      "ISO3166-2-lvl4": "TH-12",
+      "postcode": "11120",
+      "country": "Thailand",
+      "country_code": "th"
+     },
+     "boundingbox": [
+      "13.9119425",
+      "13.9144093",
+      "100.5477026",
+      "100.5499757"
+     ]
+    },
+    {
+     "place_id": 257266053,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 175314197,
+     "lat": "13.9153573",
+     "lon": "100.5497679",
+     "category": "amenity",
+     "type": "exhibition_centre",
+     "place_rank": 30,
+     "importance": 4.5001144426596745e-05,
+     "addresstype": "amenity",
+     "name": "IMPACT Exhibition Center, Hall 9-12",
+     "display_name": "IMPACT Exhibition Center, Hall 9-12, Popular 2 Road, Muang Thong Thani, Ban Mai Subdistrict, Pak Kret City Municipality, Pak Kret District, Nonthaburi Province, 11120, Thailand",
+     "address": {
+      "amenity": "IMPACT Exhibition Center, Hall 9-12",
+      "road": "Popular 2 Road",
+      "neighbourhood": "Muang Thong Thani",
+      "city_district": "Ban Mai Subdistrict",
+      "city": "Pak Kret City Municipality",
+      "county": "Pak Kret District",
+      "province": "Nonthaburi Province",
+      "ISO3166-2-lvl4": "TH-12",
+      "postcode": "11120",
+      "country": "Thailand",
+      "country_code": "th"
+     },
+     "boundingbox": [
+      "13.9139292",
+      "13.9163159",
+      "100.5486253",
+      "100.5509105"
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+
+<html lang="hu"><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+<meta charset="utf-8" http-equiv="Content-Type"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title></title>
+<meta content="" name="description"/>
+<meta content="" property="og:title"/>
+<meta content="" property="og:description"/>
+<meta content="" property="og:image"/>
+<meta content="" property="og:url"/>
+<meta content="article" property="og:type"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="" name="twitter:title"/>
+<meta content="" name="twitter:description"/>
+<meta content="" name="twitter:url"/>
+<meta content="" name="twitter:image"/>
+<link href="../Public/images/favicon.ico" rel="icon" type="image/x-icon"/>
+<script src="../_external/ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script crossorigin="anonymous" integrity="sha512-57oZ/vW8ANMjR/KQ6Be9v/+/h6bq9/l3f0Oc7vn6qMqyhvPd1cvKBRWWpzu0QoneImqr2SkmO4MSqU+RpHom3Q==" referrerpolicy="no-referrer" src="../_external/cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+<link href="../Public/css/General.css" rel="stylesheet" type="text/css"/>
+<link href="../Public/css/SteveCss.css" rel="stylesheet" type="text/css"/>
+<link href="../Public/css/Features.css" rel="stylesheet" type="text/css"/>
+<link href="../Public/css/SteveCms.css" rel="stylesheet" type="text/css"/>
+<link href="../Public/customs/page.css" rel="stylesheet" type="text/css"/>
+<link href="../Public/css/site.css" rel="stylesheet" title="main" type="text/css"/>
+<link href="../Public/customs/page.css" rel="stylesheet" type="text/css"/>
+<link href="../Public/customs/flatpickr/flatpickr.min.css" rel="stylesheet" type="text/css"/>
+<script src="https://cdn.ckeditor.com/4.24.0/full/ckeditor.js"></script>
+<script src="../Public/customs/flatpickr/flatpickr.min.js"></script>
+<script src="../Public/customs/carousel.js"></script>
+<link href="https://fonts.googleapis.com/" rel="preconnect"/>
+<link href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link href="../_external/fonts.googleapis.com/css2.css" rel="stylesheet"/>
+<link href="../_external/fonts.googleapis.com/css2.css" rel="stylesheet"/>
+<link href="../_external/fonts.googleapis.com/css2.css" rel="stylesheet"/>
+<link href="../_external/fonts.googleapis.com/css2.css" rel="stylesheet"/>
+<link href="../_external/fonts.googleapis.com/css2.css" rel="stylesheet"/>
+<link href="../_external/fonts.googleapis.com/css2.css" rel="stylesheet"/>
+<script src="../Public/js/SteveJs.js"></script>
+<script src="../Public/js/Features.js"></script>
+<script src="../Public/js/Cms.js"></script>
+<script src="../Public/customs/customClasses.js"></script>
+<!-- Google Tag Manager -->
+<!-- End Google Tag Manager -->
+<!-- Meta Pixel Code -->
+<noscript>
+<img height="1" src="https://www.facebook.com/tr?id=3433145513529057&ev=PageView&noscript=1" style="display:none" width="1"/>
+</noscript>
+<!-- End Meta Pixel Code -->
+<script src="../Public/menuStyles/Menu06.js"></script><link href="../Public/menuStyles/Menu06.css" rel="stylesheet" type="text/css"/>
+
+
+<style id="hmz-archive-fix">
+.f-Floating, .f-FloatingLR, .f-FadeInViewport, .f-FadeIn {
+    opacity: 1 !important; visibility: visible !important; transform: none !important;
+}
+img[data-src] { min-height: 1px; }
+/* Kiállítások carousel: nested <a> után is legyen mérete a háttérképnek */
+.exhibition-halls-carousel .carousel-clickable-item {
+    display: flex !important; width: 33% !important; text-decoration: none !important;
+    cursor: pointer; min-height: 230px;
+}
+.exhibition-halls-carousel .Column354 { position: relative !important; height: 356px !important; width: 100% !important; }
+.exhibition-halls-carousel .Row313 { position: relative !important; height: 230px !important; max-height: 230px !important; width: 100% !important; }
+.exhibition-halls-carousel .Image1196 {
+    position: absolute !important; left: 0 !important; top: 0 !important;
+    width: 100% !important; height: 100% !important; max-height: 230px !important;
+    background-size: cover !important; background-position: center center !important;
+    z-index: 0 !important;
+}
+</style>
+
+<style id="hmz-offline-nav">
+.hm-menuGroup { position: relative !important; display: inline-block !important; }
+.hm-menuGroup > .hm-subMenu,
+.hm-menuGroup > .hm-subsubMenu,
+.hm-menuGroup > .hm-subsubsubMenu {
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+    min-width: 100% !important;
+}
+.hm-menuIcon { display: none !important; }
+.hm-container { display: flex !important; flex-wrap: wrap; justify-content: center; }
+.menu, .menuContainer, .menuSection, .header { overflow: visible !important; }
+.menu { position: relative; z-index: 50; }
+.hm-menuItem { position: relative; }
+.hm-subMenu, .hm-subsubMenu, .hm-subsubsubMenu { z-index: 100 !important; }
+.hm-menuItem:hover > .hm-subMenu,
+.hm-menuItem:focus-within > .hm-subMenu,
+.hm-menuItem.hm-open > .hm-subMenu,
+.hm-subMenuIcon:hover + .hm-subMenu,
+.hm-subMenuIcon.hm-open + .hm-subMenu,
+.hm-menuGroup:hover > .hm-subMenu,
+.hm-menuGroup.hm-open > .hm-subMenu,
+.hm-menuGroup .hm-subMenu:hover,
+.hm-subMenu:hover,
+.hm-showSubMenu {
+    visibility: visible !important; opacity: 1 !important;
+    transform: translateY(0) !important; display: flex !important;
+    pointer-events: auto !important;
+}
+.hm-menuGroup { z-index: 200 !important; }
+.hm-menuGroup > .hm-subMenu { pointer-events: auto !important; }
+.hm-subMenu .hm-menuItem:hover > .hm-subsubMenu,
+.hm-subMenu .hm-menuItem:focus-within > .hm-subsubMenu,
+.hm-subMenu .hm-menuItem.hm-open > .hm-subsubMenu,
+.hm-subMenu .hm-showSubMenu {
+    visibility: visible !important; opacity: 1 !important;
+    transform: translateY(0) !important; display: flex !important;
+}
+.hm-subMenuIcon.hm-open > .hm-subMenu,
+.hm-subMenuIcon:hover > .hm-subMenu {
+    visibility: visible !important; opacity: 1 !important;
+    transform: translateY(0) !important; display: block !important;
+}
+@media (max-width: 1200px) {
+    .hm-container { display: flex !important; flex-direction: column !important; width: 100% !important; }
+    .hm-menuGroup { display: block !important; width: 100% !important; }
+    .hm-menuGroup > .hm-subMenu,
+    .hm-menuGroup > .hm-subsubMenu,
+    .hm-menuGroup > .hm-subsubsubMenu {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        width: 100% !important;
+    }
+    .hm-subMenu, .hm-subsubMenu {
+        display: none !important; position: relative !important;
+        visibility: visible !important; opacity: 1 !important; transform: none !important;
+    }
+    .hm-menuItem.hm-open > .hm-subMenu,
+    .hm-menuItem.hm-open > .hm-subsubMenu,
+    .hm-subMenuIcon.hm-open + .hm-subMenu,
+    .hm-subMenuIcon:hover + .hm-subMenu,
+    .hm-showSubMenu { display: flex !important; }
+}
+</style>
+
+<script id="hmz-early-menu-patch">
+(function () {
+  function patch() {
+    if (!window.jQuery || !jQuery.fn || !jQuery.fn.horizontalMenu || jQuery.fn._hmzMenuPatched) return false;
+    var orig = jQuery.fn.horizontalMenu;
+    jQuery.fn.horizontalMenu = function (options) {
+      this.each(function () {
+        jQuery(this).children(".hm-container, .hm-menuIcon").remove();
+      });
+      return orig.apply(this, arguments);
+    };
+    jQuery.fn._hmzMenuPatched = true;
+    return true;
+  }
+  if (patch()) return;
+  var n = 0;
+  var t = setInterval(function () {
+    if (patch() || ++n > 80) clearInterval(t);
+  }, 50);
+})();
+</script>
+
+<script id="hmz-offline-api">
+(function () {
+  var API_ROOT = "../_api/";
+  var apiIndex = {"/admin/menu/getMenuItems?contentId=305": "5e0c941ab512", "/admin/menu/getMenuItems": "2f1508adffa0", "/admin/popup": "4c5ce3d5c25f", "/admin/alert": "c1de6abc8355", "/admin/menu/getMenuItems?contentId=1516": "214d7300b681", "/admin/menu/getMenuItems?contentId=642": "23af713497ca", "/admin/booking/getBlockedDates": "9e0f17a0415e", "/admin/menu/getMenuItems?contentId=810": "b118e9f77734", "/getDataGridPage?id=1187&page=1&path=https%3A%2F%2Fbalnabudapest.hu%2Fhirek-osszes": "56e5396e45d4", "/getDataGridPage": "56e5396e45d4", "/admin/menu/getMenuItems?contentId=1163": "01d8de1e03c3", "/admin/menu/getMenuItems?contentId=1064": "2f1508adffa0", "/getThumbnails?id=136": "59d52d07e53d", "/getThumbnails": "c82c494bfec7", "/getThumbnails?id=118": "82bac15d82a5", "/getThumbnails?id=139": "f55b0c038725", "/getThumbnails?id=133": "9ca16a15e03c", "/getThumbnails?id=129": "3accf3d3461f", "/getThumbnails?id=119": "790a75c7715a", "/getThumbnails?id=120": "948f2edfb854", "/getThumbnails?id=121": "56c2c076db31", "/getThumbnails?id=135": "c82c494bfec7", "/admin/menu/getMenuItems?contentId=431": "ac83abefb662", "/admin/menu/getMenuItems?contentId=738": "a11413cc42a8", "/admin/menu/getMenuItems?contentId=949": "03ce0da125fd", "/admin/menu/getMenuItems?contentId=855": "d00ddc7700c2"};
+
+  function lookupKey(pathname, body) {
+    if (!pathname) return null;
+    var isApi = pathname.indexOf("/admin/") !== -1
+      || pathname.indexOf("getDataGridPage") !== -1
+      || pathname.indexOf("getThumbnails") !== -1;
+    if (!isApi) return null;
+    var keys = [];
+    if (body) keys.push(pathname + "?" + body);
+    keys.push(pathname);
+    for (var i = 0; i < keys.length; i++) {
+      var hash = apiIndex[keys[i]];
+      if (hash) return API_ROOT + hash + ".json";
+    }
+    return null;
+  }
+
+  function bodyToString(body) {
+    if (!body) return "";
+    if (typeof body === "string") return body;
+    if (body instanceof FormData) {
+      var parts = [];
+      body.forEach(function (v, k) { parts.push(k + "=" + encodeURIComponent(v)); });
+      return parts.join("&");
+    }
+    if (typeof body === "object") {
+      return Object.keys(body).map(function (k) {
+        return encodeURIComponent(k) + "=" + encodeURIComponent(body[k]);
+      }).join("&");
+    }
+    return "";
+  }
+
+  function syncGet(url) {
+    var sync = new XMLHttpRequest();
+    sync.open("GET", url, false);
+    sync.send(null);
+    return sync.responseText;
+  }
+
+  function fulfillXhr(xhr, text) {
+    Object.defineProperty(xhr, "responseText", { value: text, configurable: true });
+    Object.defineProperty(xhr, "response", { value: text, configurable: true });
+    Object.defineProperty(xhr, "status", { value: 200, configurable: true });
+    Object.defineProperty(xhr, "readyState", { value: 4, configurable: true });
+    if (xhr.onload) xhr.onload();
+    if (xhr.onreadystatechange) xhr.onreadystatechange();
+  }
+
+  function interceptAjax(opts) {
+    var url = typeof opts === "object" ? opts.url : opts;
+    if (!url || (url.indexOf("/admin/") === -1 && url.indexOf("getDataGridPage") === -1)) return false;
+    try {
+      var u = new URL(url, window.location.href);
+      var body = typeof opts === "object" ? bodyToString(opts.data) : "";
+      var local = lookupKey(u.pathname, body);
+      if (!local) return false;
+      var text = syncGet(local);
+      if (typeof opts === "object" && opts.success) opts.success(text);
+      return true;
+    } catch (e) {}
+    return false;
+  }
+
+  var origOpen = XMLHttpRequest.prototype.open;
+  var origSend = XMLHttpRequest.prototype.send;
+  XMLHttpRequest.prototype.open = function (method, url, async) {
+    this._hmzMethod = (method || "GET").toUpperCase();
+    this._hmzUrl = url;
+    this._hmzAsync = async !== false;
+    return origOpen.apply(this, arguments);
+  };
+  XMLHttpRequest.prototype.send = function (body) {
+    try {
+      var u = new URL(this._hmzUrl, window.location.href);
+      var bodyStr = bodyToString(body);
+      var local = lookupKey(u.pathname, bodyStr);
+      if (local) {
+        var xhr = this;
+        var text = syncGet(local);
+        fulfillXhr(xhr, text);
+        return;
+      }
+    } catch (e) {}
+    return origSend.apply(this, arguments);
+  };
+
+  function patchJQuery() {
+    if (!window.jQuery || !jQuery.ajax) return;
+    var origAjax = jQuery.ajax;
+    jQuery.ajax = function (opts) {
+      if (typeof opts === "object" && interceptAjax(opts)) return;
+      return origAjax.apply(this, arguments);
+    };
+  }
+  patchJQuery();
+  setTimeout(patchJQuery, 100);
+  setTimeout(patchJQuery, 500);
+})();
+</script>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe height="0" src="https://www.googletagmanager.com/ns.html?id=" style="display:none;visibility:hidden" width="0"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="baseContainer" data-cms-type="baseContainer" data-id="0" id="baseContainer" style="z-index: 0;"><div class="header Header1" data-cms-type="Header" data-id="849" data-name="Header6" isglobal="1"><div class="row menuSection" data-cms-type="Row" data-id="850" data-name="menuSection5"><div class="row menu" data-cms-type="Row" data-id="851" data-name="menu10"><div class="column menuLogo" data-cms-type="Column" data-id="852" data-name="menuLogo5"><a class="logo-link" href="../index.html"><img alt="Bálna Honvédelmi központ" class="image logo" data-cms-type="Image" data-id="853" data-name="logo6" isglobal="1" src="../Public/images/bhklogo.png"/></a></div><div class="column menuContainer" data-cms-type="Column" data-id="854" data-name="menuContainer5"><div class="menu Menu1" data-cms-type="Menu" data-id="855" data-name="Menu11" data-style="Menu06" isglobal="1" style="display: flex; flex-direction: column; align-items: center; width: 100%;"><div class="hm-menuIcon"></div><div class="hm-container Menu06"><a class="hm-menuItem" href="../index.html" level="1" menuitem-id="261"><div class="hm-underline"></div><span>Főoldal</span></a><div class="hm-menuGroup"><a class="hm-menuItem hm-subMenuIcon" level="1" menuitem-id="250"><div class="hm-underline"></div><span>Látogatás</span></a><div class="hm-subMenu"><a class="hm-menuItem" href="../kiallitasok/index.html" level="2" menuitem-id="252"><span>Hadtörténeti és honvédelmi kiállítások</span></a><a class="hm-menuItem" href="../muzeumpedagogia/index.html" level="2" menuitem-id="257"><span>Interaktív történelemóra</span></a><a class="hm-menuItem" href="../ettermek/index.html" level="2" menuitem-id="258"><span>Éttermek</span></a><a class="hm-menuItem" href="https://iranyasereg.hu/" level="2" menuitem-id="260" target="_blank"><span>Toborzás</span></a></div></div><a class="hm-menuItem" href="../index.html" level="1" menuitem-id="253"><div class="hm-underline"></div><span>Rendezvényhelyszín</span></a><a class="hm-menuItem" href="../parkolas/index.html" level="1" menuitem-id="254"><div class="hm-underline"></div><span>Parkolás</span></a><a class="hm-menuItem" href="#kapcsolat" level="1" menuitem-id="255"><div class="hm-underline"></div><span>Kapcsolat</span></a></div><div class="usernameLabel"></div></div></div><div class="usernameLabel"></div></div></div></div><div class="column balna-article" data-cms-type="Column" data-id="848" data-name="balna-article"><div class="row balna-content-container" data-cms-type="Row" data-id="879" data-name="balna-content-container"><div class="column balna-top-section" data-cms-type="Column" data-id="880" data-name="balna-top-section1"><div class="row balna-top-banner" data-cms-type="Row" data-id="886" data-name="balna-top-banner1"><div class="image Image118" data-cms-type="Image" data-id="887" data-name="Image1195" style="background-image: url('../Public/images/rendezvenyhelyszin-banneer.jpg');"></div></div><div class="row balna-top-overlayer" data-cms-type="Row" data-id="885" data-name="balna-top-overlayer1"></div><div class="row balna-top-content" data-cms-type="Row" data-id="881" data-name="balna-top-content1"><div class="column balna-top-block" data-cms-type="Column" data-id="882" data-name="balna-top-block1"><span class="simplyText balna-top-title show" data-cms-type="SimplyText" data-id="883" data-name="balna-top-title1">Rendezvényhelyszín</span><div class="formattedText balna-top-desc show" data-cms-type="FormattedText" data-id="884" data-name="balna-top-desc1"><p style="text-align:center">Tágas, nyitott termek és csodálatos dunai panoráma várja a megrendelőinket. Rendezvényhelyszíneinket minden alkalommal a partnereink igényeire szabjuk.</p>
+</div></div></div></div><div class="column balnabudapest-section" data-cms-type="Column" data-id="888" data-name="balnabudapest-section"><div class="row balnabudapest-container" data-cms-type="Row" data-id="889" data-name="balnabudapest-container"><div class="column balnabudapest-content-container show" data-cms-type="Column" data-id="890" data-name="balnabudapest-content-container"><div class="row balnabudapest-content" data-cms-type="Row" data-id="891" data-name="balnabudapest-content"><div class="column balnabudapest-block" data-cms-type="Column" data-id="892" data-name="balnabudapest-block"><div class="formattedText balnabudapest-text-long" data-cms-type="FormattedText" data-id="894" data-name="balnabudapest-text-long"><p>A Bálna 10 éves fennállása óta Budapest egyik meghatározó kulturális, szórakoztató és vendéglátó központja. A tervezők arra törekedtek, hogy tágas, nagyterekkel rendelkező rendezvényhelyszíneket alakítsanak ki. Hatalmas, nyitott termek és csodálatos dunai panoráma várja a megrendelőket. Fontosnak tartjuk, hogy rendezvényhelyszíneinket minden alkalommal a partnereink igényeire tudjuk szabni, miközben az épület építészeti motívumai is előtérben maradnak.</p>
+</div></div><div class="column balnabudapest-block" data-cms-type="Column" data-id="893" data-name="balnabudapest-block"><div class="formattedText balnabudapest-text-long" data-cms-type="FormattedText" data-id="895" data-name="balnabudapest-text-long"><p>A Bálna életében új fejezett kezdődött 2022-ben, aminek eredményeként az épület a magyar hadtörténet bemutatásának központjává vált. Az új Bálna Honvédelmi Központ amellett, hogy kulturális, céges, művészeti kiállítások helyszínéül is szolgál, célja, hogy a magyartörténelem fontos eseményeivel és híres személyeivel ismertesse meg azidelátogatókat.</p>
+</div></div></div><div class="row balnabudapest-content" data-cms-type="Row" data-id="896" data-name="balnabudapest-content"><span class="simplyText balnabudapest-text-simpy center" data-cms-type="SimplyText" data-id="897" data-name="balnabudapest-text-simpy">Látogasson el hozzánk és hagyja, hogy önt is lenyűgözze a Bálna Honvédelmi Központ!</span></div></div></div></div><div class="column balnabudapest-section-light" data-cms-type="Column" data-id="898" data-name="balnabudapest-section-light"><div class="row balnabudapest-container" data-cms-type="Row" data-id="899" data-name="balnabudapest-container"><div class="column balnabudapest-content-container show" data-cms-type="Column" data-id="900" data-name="balnabudapest-content-container"><div class="row balnabudapest-content-title" data-cms-type="Row" data-id="1003" data-name="balnabudapest-content-title"><span class="simplyText balna-content-title" data-cms-type="SimplyText" data-id="1004" data-name="balna-content-title">Termeink</span></div><div class="row balnabudapest-content Rooms" data-cms-type="Rooms" data-id="1005" data-name="Rooms"><div id="roomsTable"><div class="roomTableRow headerRow"><div class="roomTableHeader">Név</div><div class="roomTableHeader">Méret (m<sup>2</sup>)</div><div class="roomTableHeader">Széksoros</div><div class="roomTableHeader">Körasztalos</div></div><div class="roomTableRow"><div class="roomTableHeader">1. emelet</div><div class="roomTableHeader"></div><div class="roomTableHeader"></div><div class="roomTableHeader"></div><div class="roomTableCell">Görgei terem</div><div class="roomTableCell">1176</div><div class="roomTableCell">400 fő</div><div class="roomTableCell">400 fő</div></div><div class="roomTableRow"><div class="roomTableCell">Vásártér</div><div class="roomTableCell">800</div><div class="roomTableCell">200 fő</div><div class="roomTableCell">200 fő</div></div><div class="roomTableRow"><div class="roomTableCell">Pálffy terem</div><div class="roomTableCell">160</div><div class="roomTableCell">70 fő</div><div class="roomTableCell">50 fő</div></div><div class="roomTableRow"><div class="roomTableCell">Hunyadi terem</div><div class="roomTableCell">216</div><div class="roomTableCell">80 fő</div><div class="roomTableCell">50 fő</div></div><div class="roomTableRow"><div class="roomTableCell">Kinizsi terem</div><div class="roomTableCell">216</div><div class="roomTableCell">80 fő</div><div class="roomTableCell">50 fő</div></div><div class="roomTableRow"><div class="roomTableCell">Hadik terem</div><div class="roomTableCell">286</div><div class="roomTableCell">220 fő</div><div class="roomTableCell">150 fő</div></div><div class="roomTableRow"><div class="roomTableCell">Alvinczy terem</div><div class="roomTableCell">140</div><div class="roomTableCell">100 fő</div><div class="roomTableCell">50 fő</div></div><div class="roomTableRow"><div class="roomTableCell">Báthory terem</div><div class="roomTableCell">103</div><div class="roomTableCell">50 fő</div><div class="roomTableCell">30 fő</div></div><div class="roomTableRow"><div class="roomTableCell">Nádasdy terem</div><div class="roomTableCell">61</div><div class="roomTableCell">10 fő</div><div class="roomTableCell">10 fő</div></div><div class="roomTableRow"><div class="roomTableCell">Aggházy terem</div><div class="roomTableCell">285</div><div class="roomTableCell">220 fő</div><div class="roomTableCell">150 fő</div></div><div class="roomTableRow"><div class="roomTableHeader">2. emelet</div><div class="roomTableHeader"></div><div class="roomTableHeader"></div><div class="roomTableHeader"></div><div class="roomTableCell">Zrínyi terem (nagyterem) </div><div class="roomTableCell">1075</div><div class="roomTableCell">800 fő</div><div class="roomTableCell">500 fő</div></div><div class="roomTableRow"><div class="roomTableCell">Zrínyi terem előtér</div><div class="roomTableCell">606</div><div class="roomTableCell">200 fő</div><div class="roomTableCell">100 fő</div></div><div class="roomTableRow"><div class="roomTableHeader">3. emelet</div><div class="roomTableHeader"></div><div class="roomTableHeader"></div><div class="roomTableHeader"></div><div class="roomTableCell">Szurmay rendezvénytér</div><div class="roomTableCell">439</div><div class="roomTableCell">130 fő</div><div class="roomTableCell">120 fő</div></div></div></div><div class="row balnabudapest-content" data-cms-type="BalnaCarousel" data-id="1008" data-interval="3" data-isalbum="1" data-name="BalnaCarousel1008" number-of-elems="3"><div class="carousel-wrapper"><div class="carousel-container"><div class="carousel-item" data-index="0" id="carousel-item0" style="height: 100%; min-width: 33.3333%;"><div class="column Column355" data-id="card-0" data-name="card-0"><div class="image Image1197" data-id="612" data-name="Image1197" style="background-image: url('../Public/images/rendezvényhelyszinek/rendezvenyhelyszinek05.jpg');"></div><a class="button Button114" data-id="616" data-name="Button114" href="../Public/images/rendezvényhelyszinek/rendezvenyhelyszinek05.jpg"></a></div></div><div class="carousel-item" data-index="1" id="carousel-item1" style="height: 100%; min-width: 33.3333%;"><div class="column Column355" data-id="card-1" data-name="card-1"><div class="image Image1197" data-id="612" data-name="Image1197" style="background-image: url('../Public/images/rendezvényhelyszinek/rendezvenyhelyszinek06.jpg');"></div><a class="button Button114" data-id="616" data-name="Button114" href="../Public/images/rendezvényhelyszinek/rendezvenyhelyszinek06.jpg"></a></div></div><div class="carousel-item" data-index="2" id="carousel-item2" style="height: 100%; min-width: 33.3333%;"><div class="column Column355" data-id="card-2" data-name="card-2"><div class="image Image1197" data-id="612" data-name="Image1197" style="background-image: url('../Public/images/rendezvényhelyszinek/rendezvenyhelyszinek03.jpg');"></div><a class="button Button114" data-id="616" data-name="Button114" href="../Public/images/rendezvényhelyszinek/rendezvenyhelyszinek03.jpg"></a></div></div><div class="carousel-item" data-index="3" id="carousel-item3" style="height: 100%; min-width: 33.3333%;"><div class="column Column355" data-id="card-3" data-name="card-3"><div class="image Image1197" data-id="612" data-name="Image1197" style="background-image: url('../Public/images/rendezvényhelyszinek/rendezvenyhelyszinek.jpg');"></div><a class="button Button114" data-id="616" data-name="Button114" href="../Public/images/rendezvényhelyszinek/rendezvenyhelyszinek.jpg"></a></div></div><div class="carousel-item" data-index="4" id="carousel-item4" style="height: 100%; min-width: 33.3333%;"><div class="column Column355" data-id="card-4" data-name="card-4"><div class="image Image1197" data-id="612" data-name="Image1197" style="background-image: url('../Public/images/rendezvényhelyszinek/rendezvenyhelyszinek02.jpg');"></div><a class="button Button114" data-id="616" data-name="Button114" href="../Public/images/rendezvényhelyszinek/rendezvenyhelyszinek02.jpg"></a></div></div><div class="carousel-item" data-index="5" id="carousel-item5" style="height: 100%; min-width: 33.3333%;"><div class="column Column355" data-id="card-5" data-name="card-5"><div class="image Image1197" data-id="612" data-name="Image1197" style="background-image: url('../Public/images/rendezvényhelyszinek/rendezvenyhelyszinek08.jpg');"></div><a class="button Button114" data-id="616" data-name="Button114" href="../Public/images/rendezvényhelyszinek/rendezvenyhelyszinek08.jpg"></a></div></div><div class="carousel-item" data-index="6" id="carousel-item6" style="height: 100%; min-width: 33.3333%;"><div class="column Column355" data-id="card-6" data-name="card-6"><div class="image Image1197" data-id="612" data-name="Image1197" style="background-image: url('../Public/images/rendezvényhelyszinek/rendezvenyhelyszinek04.jpg');"></div><a class="button Button114" data-id="616" data-name="Button114" href="../Public/images/rendezvényhelyszinek/rendezvenyhelyszinek04.jpg"></a></div></div><div class="carousel-item" data-index="7" id="carousel-item7" style="height: 100%; min-width: 33.3333%;"><div class="column Column355" data-id="card-7" data-name="card-7"><div class="image Image1197" data-id="612" data-name="Image1197" style="background-image: url('../Public/images/rendezvényhelyszinek/rendezvenyhelyszinek09.jpg');"></div><a class="button Button114" data-id="616" data-name="Button114" href="../Public/images/rendezvényhelyszinek/rendezvenyhelyszinek09.jpg"></a></div></div><div class="carousel-item" data-index="8" id="carousel-item8" style="height: 100%; min-width: 33.3333%;"><div class="column Column355" data-id="card-8" data-name="card-8"><div class="image Image1197" data-id="612" data-name="Image1197" style="background-image: url('../Public/images/rendezvényhelyszinek/rendezvenyhelyszinek07.jpg');"></div><a class="button Button114" data-id="616" data-name="Button114" href="../Public/images/rendezvényhelyszinek/rendezvenyhelyszinek07.jpg"></a></div></div></div></div><button class="prev carouselButton">
+<svg class="bi bi-caret-left-fill" fill="currentColor" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+<path d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204
+                  a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z"></path>
+</svg></button><button class="next carouselButton">
+<svg class="bi bi-caret-right-fill" fill="currentColor" height="16" viewbox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+<path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204
+                  a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"></path>
+</svg></button></div><div class="row balnabudapest-content" data-cms-type="Row" data-id="1006" data-name="balnabudapest-content"><div class="formattedText balnabudapest-text-long" data-cms-type="FormattedText" data-id="1007" data-name="balnabudapest-text-long"><p>A Bálna előtt található szabadtéri helyszín szintén használható akár kiállításra, látványelemek elhelyezésére is.<br/>
+A Bálna Honvédelmi Központban nyilvános parkolóház üzemel, de igény szerinti számú parkolóhely foglalható.<br/>
+A Bálna Honvédelmi Központban a kizárólagos catering szolgáltató a Dunapart Catering és Rendezvény Kft.</p>
+</div></div></div></div></div><div class="column balnabudapest-section" data-cms-type="Column" data-id="901" data-name="balnabudapest-section"><div class="row balnabudapest-container" data-cms-type="Row" data-id="902" data-name="balnabudapest-container"><div class="column balnabudapest-content-container" data-cms-type="Column" data-id="903" data-name="balnabudapest-content-container"><div class="row balnabudapest-content-title" data-cms-type="Row" data-id="904" data-name="balnabudapest-content-title"><span class="simplyText balna-content-title" data-cms-type="SimplyText" data-id="905" data-name="balna-content-title">Kérjen árajánlatot munkatársainktól a balna@hmzrinyi.hu e-mail címen vagy töltse ki az alábbi űrlapot!</span></div><div class="row balnabudapest-content ContactUsFormBookmark" data-cms-type="ContactUsFormBookmark" data-id="1002" data-name="ContactUsFormBookmark"><div class="formContainer contactUsRendezveny row"><div class="inputContainer"><label class="inputLabel inputRequired">Név</label><input class="inputName" name="name" placeholder="Név" type="text"/></div><div class="inputContainer"><label class="inputLabel inputRequired">Telefonszám</label><input class="inputPhone" name="phone" placeholder="Telefonszám" type="number"/></div><div class="inputContainer"><label class="inputLabel inputRequired">E-mail</label><input class="inputEmail" name="email" placeholder="E-mail" type="email"/></div><div class="inputContainer w-50"><label class="inputLabel inputRequired" for="datePicker">Rendezvény tervezett időpontja</label><input class="inputDate flatpickr-input" id="datePicker" name="datePicker" placeholder="Nap" readonly="readonly" type="text"/></div><div class="inputContainer w-25"><label class="inputLabel inputRequired" for="timePickFrom">Óra</label><input class="inputDate flatpickr-input" id="timePickFrom" name="timePickFrom" placeholder="Ettől" readonly="readonly" type="text"/></div><div class="inputContainer"><label class="inputLabel inputRequired">Üzenet</label><textarea class="inputMessage" name="message" placeholder="Üzenet"></textarea></div><div class="inputContainer"><span class="inputLabel checkbox">Az adatkezelési tájékoztató <a href="../Public/files/adatkezelesi-tajekoztato-mh175.pdf" target="_blank">(Elolvasom)</a> <span style="color: red;">*</span></span><label style="display: flex; align-self: center; line-height: 1.2;"><input class="gdprCheckbox" name="gdprAccepted" style="max-width: 16px;" type="checkbox" value="false"/><span style="padding-left: 5px;">Az adatkezelési tájékoztató tartalmát megismertem.</span></label></div><div class="inputContainer"><span class="inputLabel checkbox">Hírlevél feliratkozás <span style="color: red;">*</span></span><label style="display: flex; align-self: center; line-height: 1.2;"><input class="newsletterCheckbox" name="newsletterAccepted" style="max-width: 16px;" type="checkbox" value="false"/><span style="padding-left: 5px;">Hozzájárulok ahhoz, hogy az általam megadott e-mail címre az adatkezelő az általa szervezett nyilvános rendezvényekről, programokról hírlevél formájában rendszeresen tájékoztatást küldjön.</span></label></div><div class="inputContainer"><button class="btnSubmit" name="submit">Küldés</button></div></div></div></div></div></div></div></div><div class="footer Footer1" data-cms-type="Footer" data-id="856" data-name="Footer6" id="kapcsolat"><div class="row footer-section" data-cms-type="Column" data-id="857" data-name="footer-section1"><div class="row footer-container" data-cms-type="Row" data-id="858" data-name="footer-container1"><div class="column footer-block" data-cms-type="Column" data-id="859" data-name="footer-block1"><img alt="Bálna Honvédelmi központ" class="image footer-logo" data-cms-type="Image" data-id="860" data-name="footer-logo1" isglobal="1" src="../Public/images/bhklogo.png"/><a class="button aszf-pdf" data-cms-type="Button" data-id="861" data-name="aszf-pdf1" href="../index.html">Adatkezelési tájékoztaztó</a><a class="button Aszf-pdf2" data-cms-type="Button" data-id="862" data-name="Aszf-pdf1" href="../index.html">Általános Szerződési Feltételek</a></div><div class="column footer-block" data-cms-type="Column" data-id="863" data-name="footer-block1"><span class="simplyText footer-block-title" data-cms-type="SimplyText" data-id="864" data-name="footer-block-title1" isglobal="1">Nyitvatartás</span><div class="formattedText footer-block-content" data-cms-type="FormattedText" data-id="865" data-name="footer-block-content1" isglobal="1"><p style="color: #fff;"><strong>Bálna Honvédelmi Központ</strong><br/>
+Hétfő - Vasárnap: 09:00 - 20:00</p>
+<p style="color: #fff;"><strong>Kiállítások</strong><br/>
+Hétfő: Zárva<br/>
+Kedd–Péntek:<br/>
+09:00-15:00 iskolás csoportok<br/>
+15:00-17:00 egyéni látogatók<br/>
+Szombat–Vasárnap: 10:00-18:00</p>
+</div></div><div class="column footer-block" data-cms-type="Column" data-id="866" data-name="footer-block1"><span class="simplyText footer-block-title" data-cms-type="SimplyText" data-id="867" data-name="footer-block-title1" isglobal="1">Social</span><div class="row social-container" data-cms-type="Row" data-id="868" data-name="social-container1"><div class="column social-block" data-cms-type="Column" data-id="869" data-name="social-block1"><a class="button social-icon-instagram social-icon-facebook" data-cms-type="Button" data-id="870" data-name="social-icon-facebook1" href="https://www.facebook.com/balnabudapest" target="_blank"></a></div><div class="column social-block" data-cms-type="Column" data-id="871" data-name="social-block1"><a class="button social-icon-instagram" data-cms-type="Button" data-id="872" data-name="social-icon-instagram1" href="https://www.instagram.com/balnabudapest" target="_blank"></a></div></div></div><div class="column footer-block" data-cms-type="Column" data-id="873" data-name="footer-block1"><span class="simplyText footer-block-title" data-cms-type="SimplyText" data-id="874" data-name="footer-block-title1" isglobal="1">Kapcsolat</span><div class="formattedText footer-block-content" data-cms-type="FormattedText" data-id="875" data-name="footer-block-content1" isglobal="1"><p style="color: #fff;">balna@hmzrinyi.hu</p>
+<p style="color: #fff">1093 Budapest, Fővám tér 11-12.</p>
+</div></div></div><div class="row footer-copyright" data-cms-type="Row" data-id="876" data-name="footer-copyright1"><div class="column copyright-text" data-cms-type="Column" data-id="877" data-name="copyright-text1"><span class="simplyText CopyrightText" data-cms-type="SimplyText" data-id="878" data-name="CopyrightText5" isglobal="1">Copyright © 2023 Bálna Honvédelmi Központ. Minden jog fenntartva.</span></div></div></div></div></div>
+<script>
+        menuStyles = window.menuStyles || [];
+        let downloadFiles       = new DownloadFiles($(".iconButtonDownloads"));
+        let settings            = {"imageFileSize":2,"imageWidth":600,"imageHeight":480,"videoFileSize":1,"devices":{"monitor":2000,"tablet":1000,"mobile":500},"imageFileTypes":["jpg","bmp","gif","svg","png"],"videoFileTypes":["webm","mkv","avi","wmv","mp4"],"audioFileTypes":["mp3"],"uploadFileTypes":["xlsx","pdf","docx","png","jpg"],"uploadFileSize":10,"googleTagId":null,"isWebshop":false,"hasChatbox":false,"barionInfo":{"barionPixelId":"BP-Utpv9YEYNF-73"},"hasBarion":false};
+        let notify              = new Notify();
+        let modalController     = new ModalController("/getModal");
+        let messageBox          = new MessageBox();
+        let tooltripControl     = new ToolTripControl({
+            onlyLeftRight: false,
+        });
+
+        console.log(settings)
+        startEvents();
+        cookieAccept();
+
+            </script><div class="notifyContainer"></div><div class="cookieBar"><span><strong>Mik azok a sütik és hogyan kezeljük őket?</strong></span><span>Sütiket használunk a weboldal működtetése, használatának megkönnyítése, valamint a weboldalon végzett tevékenység nyomon követése érdekében.</span><div><button class="cookieBtn cookieBtnOK" type="button">Elfogadom</button><button class="cookieBtn cookieBtnInfo" type="button">Bővebben</button></div></div>
+<script>
+        console.log("TagId: " + "")
+        // Az egyedi elemek elind&iacute;t&aacute;sa
+        let baseContainer = $("#baseContainer");
+
+        // Datagrid
+        $("body").find("[data-cms-type=DataGrid]").map((index, datagrid) => {
+            $(datagrid).datagrid();
+        })
+
+        // Calendar
+        $("body").find("[data-cms-type=Calendar]").map((index, calendar) => {
+            $(calendar).calendar();
+        })
+
+        // Accordion
+        baseContainer.find("[data-cms-type=Accordion]").map((index, accordion) => {
+            $(accordion).cmsAccordion({
+                status: "closed",
+            });
+        })
+
+        // Counter
+        baseContainer.find("[data-cms-type=Counter]").counter();
+
+        // Calendar
+        $("body").find("[data-cms-type=Download]").map((index, calendar) => {
+            $(calendar).downloadController();
+        })
+
+        // Menu
+                    let menuElems = $("[data-cms-type=Menu]");
+
+            menuElems.map((index, menuElem) => {
+                let params = {
+                    contentId: $(menuElem).attr("data-id"),
+                }
+
+                dataService.request("post", "/admin/menu/getMenuItems", params, response => {
+                    $(menuElem).horizontalMenu({
+                        menuItems:  JSON.parse(response),
+                        align:      "right", //left, center, right
+                        style:      "Menu06",
+                    });
+                });
+            })
+
+            $(".header .menu").append("<div class='usernameLabel'>")
+        
+        
+        // Album
+        baseContainer.find(".album").map((index, album) => {
+            $(album).album();
+        })
+
+        // Carousel
+        baseContainer.find(".carousel").map((index, carousel) => {
+            $(carousel).carousel();
+        })
+        // FullCarousel
+        baseContainer.find(".fullCarousel").map((index, carousel) => {
+            $(carousel).cmsFullCarousel();
+        })
+        // Carousel
+        baseContainer.find(".cardCarousel").map((index, carousel) => {
+            $(carousel).cardCarousel();
+        })
+        // Form
+        baseContainer.find(".form").map((index, form) => {
+            $(form).form();
+        })
+        // Custom Classes
+        for (const[key, value] of Object.entries(customClasses)) {
+            let elems = $("[data-cms-type=" + key + "]");
+
+            if (elems.length) {
+                elems.map((index, elem) => {
+                    new customClasses[key]($(elem));
+                })
+            }
+        }
+
+            // Google Map
+            window.initMap = initMap;
+        </script><div class="flatpickr-calendar animate" tabindex="-1"><div class="flatpickr-months"><span class="flatpickr-prev-month"><svg version="1.1" viewbox="0 0 17 17" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g></g><path d="M5.207 8.471l7.146 7.147-0.707 0.707-7.853-7.854 7.854-7.853 0.707 0.707-7.147 7.146z"></path></svg></span><div class="flatpickr-month"><div class="flatpickr-current-month"><select aria-label="Month" class="flatpickr-monthDropdown-months" tabindex="-1"><option class="flatpickr-monthDropdown-month" tabindex="-1" value="0">January</option><option class="flatpickr-monthDropdown-month" tabindex="-1" value="1">February</option><option class="flatpickr-monthDropdown-month" tabindex="-1" value="2">March</option><option class="flatpickr-monthDropdown-month" tabindex="-1" value="3">April</option><option class="flatpickr-monthDropdown-month" tabindex="-1" value="4">May</option><option class="flatpickr-monthDropdown-month" tabindex="-1" value="5">June</option><option class="flatpickr-monthDropdown-month" tabindex="-1" value="6">July</option><option class="flatpickr-monthDropdown-month" tabindex="-1" value="7">August</option><option class="flatpickr-monthDropdown-month" tabindex="-1" value="8">September</option><option class="flatpickr-monthDropdown-month" tabindex="-1" value="9">October</option><option class="flatpickr-monthDropdown-month" tabindex="-1" value="10">November</option><option class="flatpickr-monthDropdown-month" tabindex="-1" value="11">December</option></select><div class="numInputWrapper"><input aria-label="Year" class="numInput cur-year" tabindex="-1" type="number"/><span class="arrowUp"></span><span class="arrowDown"></span></div></div></div><span class="flatpickr-next-month"><svg version="1.1" viewbox="0 0 17 17" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g></g><path d="M13.207 8.472l-7.854 7.854-0.707-0.707 7.146-7.146-7.146-7.148 0.707-0.707 7.854 7.854z"></path></svg></span></div><div class="flatpickr-innerContainer"><div class="flatpickr-rContainer"><div class="flatpickr-weekdays"><div class="flatpickr-weekdaycontainer">
+<span class="flatpickr-weekday">
+        Sun</span><span class="flatpickr-weekday">Mon</span><span class="flatpickr-weekday">Tue</span><span class="flatpickr-weekday">Wed</span><span class="flatpickr-weekday">Thu</span><span class="flatpickr-weekday">Fri</span><span class="flatpickr-weekday">Sat
+      </span>
+</div></div><div class="flatpickr-days" tabindex="-1"><div class="dayContainer"><span aria-label="June 28, 2026" class="flatpickr-day prevMonthDay" tabindex="-1">28</span><span aria-label="June 29, 2026" class="flatpickr-day prevMonthDay" tabindex="-1">29</span><span aria-label="June 30, 2026" class="flatpickr-day prevMonthDay" tabindex="-1">30</span><span aria-label="July 1, 2026" class="flatpickr-day" tabindex="-1">1</span><span aria-label="July 2, 2026" class="flatpickr-day" tabindex="-1">2</span><span aria-label="July 3, 2026" class="flatpickr-day" tabindex="-1">3</span><span aria-label="July 4, 2026" class="flatpickr-day" tabindex="-1">4</span><span aria-label="July 5, 2026" class="flatpickr-day" tabindex="-1">5</span><span aria-label="July 6, 2026" class="flatpickr-day" tabindex="-1">6</span><span aria-label="July 7, 2026" class="flatpickr-day" tabindex="-1">7</span><span aria-label="July 8, 2026" class="flatpickr-day" tabindex="-1">8</span><span aria-label="July 9, 2026" class="flatpickr-day" tabindex="-1">9</span><span aria-label="July 10, 2026" class="flatpickr-day" tabindex="-1">10</span><span aria-label="July 11, 2026" class="flatpickr-day" tabindex="-1">11</span><span aria-label="July 12, 2026" class="flatpickr-day" tabindex="-1">12</span><span aria-label="July 13, 2026" class="flatpickr-day" tabindex="-1">13</span><span aria-label="July 14, 2026" class="flatpickr-day" tabindex="-1">14</span><span aria-label="July 15, 2026" class="flatpickr-day" tabindex="-1">15</span><span aria-label="July 16, 2026" class="flatpickr-day" tabindex="-1">16</span><span aria-label="July 17, 2026" class="flatpickr-day" tabindex="-1">17</span><span aria-label="July 18, 2026" class="flatpickr-day" tabindex="-1">18</span><span aria-label="July 19, 2026" class="flatpickr-day" tabindex="-1">19</span><span aria-label="July 20, 2026" class="flatpickr-day" tabindex="-1">20</span><span aria-label="July 21, 2026" class="flatpickr-day" tabindex="-1">21</span><span aria-label="July 22, 2026" class="flatpickr-day" tabindex="-1">22</span><span aria-label="July 23, 2026" class="flatpickr-day" tabindex="-1">23</span><span aria-current="date" aria-label="July 24, 2026" class="flatpickr-day today" tabindex="-1">24</span><span aria-label="July 25, 2026" class="flatpickr-day" tabindex="-1">25</span><span aria-label="July 26, 2026" class="flatpickr-day" tabindex="-1">26</span><span aria-label="July 27, 2026" class="flatpickr-day" tabindex="-1">27</span><span aria-label="July 28, 2026" class="flatpickr-day" tabindex="-1">28</span><span aria-label="July 29, 2026" class="flatpickr-day" tabindex="-1">29</span><span aria-label="July 30, 2026" class="flatpickr-day" tabindex="-1">30</span><span aria-label="July 31, 2026" class="flatpickr-day" tabindex="-1">31</span><span aria-label="August 1, 2026" class="flatpickr-day nextMonthDay" tabindex="-1">1</span><span aria-label="August 2, 2026" class="flatpickr-day nextMonthDay" tabindex="-1">2</span><span aria-label="August 3, 2026" class="flatpickr-day nextMonthDay" tabindex="-1">3</span><span aria-label="August 4, 2026" class="flatpickr-day nextMonthDay" tabindex="-1">4</span><span aria-label="August 5, 2026" class="flatpickr-day nextMonthDay" tabindex="-1">5</span><span aria-label="August 6, 2026" class="flatpickr-day nextMonthDay" tabindex="-1">6</span><span aria-label="August 7, 2026" class="flatpickr-day nextMonthDay" tabindex="-1">7</span><span aria-label="August 8, 2026" class="flatpickr-day nextMonthDay" tabindex="-1">8</span></div></div></div></div></div><div class="flatpickr-calendar hasTime noCalendar animate" tabindex="-1"><div class="flatpickr-time time24hr" tabindex="-1"><div class="numInputWrapper"><input aria-label="Hour" class="numInput flatpickr-hour" max="23" maxlength="2" min="0" step="1" tabindex="-1" type="number"/><span class="arrowUp"></span><span class="arrowDown"></span></div><span class="flatpickr-time-separator">:</span><div class="numInputWrapper"><input aria-label="Minute" class="numInput flatpickr-minute" max="59" maxlength="2" min="0" step="5" tabindex="-1" type="number"/><span class="arrowUp"></span><span class="arrowDown"></span></div></div></div>
+<div id="custom-image-viewer" style="display:none; position:fixed; top:0; left:0; right:0; bottom:0; background:rgba(0,0,0,0.85); z-index:9999; justify-content:center; align-items:center;">
+<span class="viewer-close" style="position:absolute; top:20px; right:30px; font-size:60px; color:white; cursor:pointer;">×</span>
+<img alt="Bálna Honvédelmi központ" id="viewer-image" src="" style="max-width: 100vh;box-shadow: 0 0 20px black;transition: all 0.3s ease;margin: 0 auto;position: absolute;left: 0;top: 50%;left: 50%;transform: translate(-50%, -50%);"/>
+<span class="viewer-prev" style="position: absolute;left: 30px;font-size: 50px;color: white;cursor: pointer;top: 50%;left: 15%;text-shadow: 0 0 10px black; transform: translateY(-50%);">❮</span>
+<span class="viewer-next" style="position: absolute;right: 30px;font-size: 50px;color: white;cursor: pointer;top: 50%;right: 15%;text-shadow: 0 0 10px black; transform: translateY(-50%);">❯</span>
+</div>
+<div id="customLightbox" style="display: none; position: fixed; inset: 0px; background: rgba(0, 0, 0, 0.85); justify-content: center; align-items: center; z-index: 9999;"><button style="position: absolute; left: 30px; top: 50%; transform: translateY(-50%); font-size: 2rem; color: white; background: rgba(0, 0, 0, 0.4); border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; cursor: pointer; padding: 0.5em 0.8em;">‹</button><img alt="Bálna Honvédelmi központ" style="max-width: 90%; max-height: 90%; border-radius: 8px; box-shadow: rgba(0, 0, 0, 0.7) 0px 0px 20px;"/><button style="position: absolute; right: 30px; top: 50%; transform: translateY(-50%); font-size: 2rem; color: white; background: rgba(0, 0, 0, 0.4); border-width: medium; border-style: none; border-color: currentcolor; border-image: initial; cursor: pointer; padding: 0.5em 0.8em;">›</button></div><button class="scrollTopBtn show">↑</button><script src="../Public/customs/popup.js"></script>
+
+<script id="hmz-menu-shim">
+(function () {
+  var SUB = ".hm-subMenu, .hm-subsubMenu, .hm-subsubsubMenu";
+
+  function archiveRoot() {
+    var parts = location.pathname.split("/").filter(Boolean);
+    if (!parts.length) return "/";
+    return "/" + parts[0] + "/";
+  }
+  function fixRootLinks(root) {
+    document.querySelectorAll("a[href^='/']").forEach(function (a) {
+      var href = a.getAttribute("href");
+      if (!href || href.indexOf("//") === 0) return;
+      if (href.indexOf(root) === 0) return;
+      if (href === "/") {
+        a.setAttribute("href", root);
+        return;
+      }
+      a.setAttribute("href", root + href.replace(/^[/]+/, ""));
+    });
+  }
+  /* SteveJs horizontalMenu mindig új .hm-container-t appendel → dupla menü. */
+  function dedupeMenuContainers() {
+    document.querySelectorAll(".menu, [data-cms-type='Menu']").forEach(function (menu) {
+      var containers = Array.from(menu.querySelectorAll(":scope > .hm-container"));
+      if (containers.length < 2) return;
+      containers.slice(0, -1).forEach(function (c) { c.remove(); });
+      var icons = Array.from(menu.querySelectorAll(":scope > .hm-menuIcon"));
+      if (icons.length > 1) icons.slice(0, -1).forEach(function (i) { i.remove(); });
+    });
+  }
+  function patchHorizontalMenu() {
+    if (!window.jQuery || !jQuery.fn || !jQuery.fn.horizontalMenu || jQuery.fn._hmzMenuPatched) return;
+    var orig = jQuery.fn.horizontalMenu;
+    jQuery.fn.horizontalMenu = function (options) {
+      this.each(function () {
+        jQuery(this).children(".hm-container, .hm-menuIcon").remove();
+      });
+      return orig.apply(this, arguments);
+    };
+    jQuery.fn._hmzMenuPatched = true;
+  }
+  function isSubMenuEl(el) {
+    return el && el.classList && (
+      el.classList.contains("hm-subMenu")
+      || el.classList.contains("hm-subsubMenu")
+      || el.classList.contains("hm-subsubsubMenu")
+    );
+  }
+  function ensureGroup(parent) {
+    var group = parent.parentElement;
+    if (group && group.classList.contains("hm-menuGroup")) return group;
+    group = document.createElement("div");
+    group.className = "hm-menuGroup";
+    parent.parentNode.insertBefore(group, parent);
+    group.appendChild(parent);
+    return group;
+  }
+  function normalizeMenuDom() {
+    document.querySelectorAll("a.hm-subMenuIcon, a.hm-menuItem").forEach(function (parent) {
+      var nested = parent.querySelector(":scope > .hm-subMenu, :scope > .hm-subsubMenu, :scope > .hm-subsubsubMenu");
+      if (!nested && !parent.classList.contains("hm-subMenuIcon")) return;
+      if (!nested) {
+        var nxt = parent.nextElementSibling;
+        if (isSubMenuEl(nxt)) nested = nxt;
+      }
+      if (!nested) return;
+      parent.classList.add("hm-subMenuIcon");
+      var group = ensureGroup(parent);
+      if (nested.parentElement !== group) {
+        nested.parentNode.removeChild(nested);
+        group.appendChild(nested);
+      }
+      Array.from(group.children).forEach(function (child) {
+        if (child !== parent && child !== nested && isSubMenuEl(child)) child.remove();
+      });
+    });
+  }
+  function childMenus(item) {
+    return item.querySelectorAll(":scope > .hm-subMenu, :scope > .hm-subsubMenu, :scope > .hm-subsubsubMenu");
+  }
+  function siblingMenus(item) {
+    var found = [];
+    var next = item.nextElementSibling;
+    while (next) {
+      if (isSubMenuEl(next)) {
+        found.push(next);
+        next = next.nextElementSibling;
+        continue;
+      }
+      if (next.classList.contains("hm-menuItem") || next.classList.contains("hm-menuGroup")) break;
+      next = next.nextElementSibling;
+    }
+    return found;
+  }
+  function groupMenus(item) {
+    var group = item.closest && item.closest(".hm-menuGroup");
+    if (!group) return [];
+    return Array.from(group.querySelectorAll(":scope > .hm-subMenu, :scope > .hm-subsubMenu, :scope > .hm-subsubsubMenu"));
+  }
+  function findMenus(item) {
+    var direct = Array.from(childMenus(item));
+    if (direct.length) return direct;
+    var group = groupMenus(item);
+    if (group.length) return group;
+    return siblingMenus(item);
+  }
+  function hasSubMenu(item) {
+    return item.classList.contains("hm-subMenuIcon") || findMenus(item).length > 0;
+  }
+  function showSubMenus(item) {
+    findMenus(item).forEach(function (sm) { sm.classList.add("hm-showSubMenu"); });
+    item.classList.add("hm-open");
+    var group = item.closest && item.closest(".hm-menuGroup");
+    if (group) group.classList.add("hm-open");
+  }
+  function hideSubMenus(item) {
+    findMenus(item).forEach(function (sm) { sm.classList.remove("hm-showSubMenu"); });
+    item.classList.remove("hm-open");
+    var group = item.closest && item.closest(".hm-menuGroup");
+    if (group) group.classList.remove("hm-open");
+  }
+  function closeOthers(keep) {
+    document.querySelectorAll(".hm-menuItem.hm-open").forEach(function (el) {
+      if (el !== keep) hideSubMenus(el);
+    });
+  }
+  function isSubMenuLink(target) {
+    return target.closest && target.closest(
+      ".hm-subMenu .hm-menuItem, .hm-subsubMenu .hm-menuItem, .hm-subsubsubMenu .hm-menuItem"
+    );
+  }
+  function bindSubMenuPanel(item, panel) {
+    if (panel._hmzSubBound) return;
+    panel._hmzSubBound = true;
+    panel.addEventListener("mouseenter", function () { showSubMenus(item); });
+    panel.addEventListener("mouseleave", function (e) {
+      if (e.relatedTarget && (item.contains(e.relatedTarget) || panel.contains(e.relatedTarget))) return;
+      hideSubMenus(item);
+    });
+  }
+  function bindGroup(group) {
+    if (group._hmzGroupBound) return;
+    var item = group.querySelector(":scope > .hm-menuItem, :scope > a.hm-subMenuIcon");
+    if (!item || !hasSubMenu(item)) return;
+    group._hmzGroupBound = true;
+    group.addEventListener("mouseenter", function () { showSubMenus(item); });
+    group.addEventListener("mouseleave", function (e) {
+      if (e.relatedTarget && group.contains(e.relatedTarget)) return;
+      hideSubMenus(item);
+    });
+  }
+
+  function bindMenus() {
+    document.querySelectorAll(".hm-menuItem").forEach(function (item) {
+      item._hmzMenuBound = false;
+    });
+    document.querySelectorAll(".hm-menuGroup").forEach(function (g) {
+      g._hmzGroupBound = false;
+      Array.from(g.children).forEach(function (p) {
+        if (isSubMenuEl(p)) p._hmzSubBound = false;
+      });
+    });
+    document.querySelectorAll(".hm-menuGroup").forEach(bindGroup);
+    document.querySelectorAll(".hm-menuItem").forEach(function (item) {
+      if (!hasSubMenu(item) || item._hmzMenuBound) return;
+      item._hmzMenuBound = true;
+      var panels = findMenus(item);
+      panels.forEach(function (panel) { bindSubMenuPanel(item, panel); });
+
+      item.addEventListener("mouseenter", function () { showSubMenus(item); });
+      item.addEventListener("mouseleave", function (e) {
+        if (e.relatedTarget && (item.contains(e.relatedTarget)
+            || panels.some(function (p) { return p.contains(e.relatedTarget); }))) return;
+        var group = item.closest && item.closest(".hm-menuGroup");
+        if (group && e.relatedTarget && group.contains(e.relatedTarget)) return;
+        hideSubMenus(item);
+      });
+
+      item.addEventListener("click", function (e) {
+        if (isSubMenuLink(e.target)) return;
+        if (!hasSubMenu(item)) return;
+        e.preventDefault();
+        e.stopImmediatePropagation();
+        var open = item.classList.contains("hm-open");
+        closeOthers(null);
+        if (!open) showSubMenus(item);
+      }, true);
+    });
+  }
+
+  /* SteveJs .children('.hm-subMenu') nem látja a hm-menuGroup testvér panelt – patch. */
+  function patchJQueryMenuLookup() {
+    if (!window.jQuery || jQuery.fn._hmzChildrenPatched) return;
+    var origChildren = jQuery.fn.children;
+    jQuery.fn.children = function (selector) {
+      var result = origChildren.apply(this, arguments);
+      if (!selector || typeof selector !== "string") return result;
+      if (result.length) return result;
+      if (!/hm-sub/.test(selector)) return result;
+      var extra = [];
+      this.each(function () {
+        var el = this;
+        var next = el.nextElementSibling;
+        if (next && next.matches && next.matches(selector)) extra.push(next);
+        var group = el.parentElement;
+        if (group && group.classList && group.classList.contains("hm-menuGroup")) {
+          Array.prototype.forEach.call(group.children, function (child) {
+            if (child !== el && child.matches && child.matches(selector)) extra.push(child);
+          });
+        }
+      });
+      if (!extra.length) return result;
+      return jQuery(extra);
+    };
+    jQuery.fn._hmzChildrenPatched = true;
+  }
+
+  function boot() {
+    patchHorizontalMenu();
+    dedupeMenuContainers();
+    fixRootLinks(archiveRoot());
+    normalizeMenuDom();
+    patchJQueryMenuLookup();
+    bindMenus();
+  }
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", boot);
+  } else {
+    boot();
+  }
+  setTimeout(boot, 0);
+  setTimeout(boot, 300);
+  setTimeout(boot, 1000);
+  setTimeout(boot, 2500);
+  setTimeout(boot, 5000);
+})();
+</script>
+
+<script id="hmz-carousel-shim">
+(function () {
+  function convertAnchor(a) {
+    if (!a || a.tagName !== "A") return;
+    var href = a.getAttribute("href") || "";
+    var div = document.createElement("div");
+    div.className = a.className;
+    if (href) {
+      div.setAttribute("data-href", href);
+      div.setAttribute("role", "link");
+      div.tabIndex = 0;
+    }
+    Array.from(a.attributes).forEach(function (attr) {
+      if (attr.name === "href" || attr.name === "class") return;
+      div.setAttribute(attr.name, attr.value);
+    });
+    while (a.firstChild) div.appendChild(a.firstChild);
+    if (a.parentNode) a.parentNode.replaceChild(div, a);
+    return div;
+  }
+  function unwrapEmptyClickables(root) {
+    root.querySelectorAll("a.carousel-clickable-item, div.carousel-clickable-item").forEach(function (el) {
+      if (el.querySelector(".image, .carousel-item, .button, img")) return;
+      if ((el.textContent || "").trim()) return;
+      el.remove();
+    });
+  }
+  function fixExhibitionCarousel() {
+    var roots = document.querySelectorAll(
+      "[data-cms-type='BalnaCarousel'] .carousel-container, .exhibition-halls-carousel"
+    );
+    roots.forEach(function (root) {
+      Array.from(root.querySelectorAll("a.carousel-clickable-item")).forEach(convertAnchor);
+      unwrapEmptyClickables(root);
+      root.querySelectorAll(".carousel-item").forEach(function (item) {
+        item.setAttribute("data-hmz-carousel-fixed", "1");
+      });
+    });
+  }
+  function patchCarouselScript() {
+    document.addEventListener("click", function (e) {
+      var hit = e.target.closest && e.target.closest(".carousel-clickable-item[data-href]");
+      if (!hit) return;
+      if (e.target.closest("a.button, a[href]")) return;
+      var href = hit.getAttribute("data-href");
+      if (href) location.href = href;
+    });
+  }
+  function preventDoubleWrap() {
+    var container = document.querySelector("div[data-name='BalnaCarousel415'] .carousel-container");
+    if (!container || container._hmzCarouselPatched) return;
+    container._hmzCarouselPatched = true;
+    var mo = new MutationObserver(function () {
+      fixExhibitionCarousel();
+    });
+    mo.observe(container, { childList: true, subtree: true });
+    setTimeout(function () { mo.disconnect(); }, 4000);
+  }
+  function boot() {
+    fixExhibitionCarousel();
+    preventDoubleWrap();
+    patchCarouselScript();
+  }
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", boot);
+  } else {
+    boot();
+  }
+  setTimeout(boot, 0);
+  setTimeout(boot, 200);
+  setTimeout(boot, 800);
+  setTimeout(boot, 2000);
+})();
+</script>
+
+<script id="hmz-cookie-shim">
+(function () {
+  document.addEventListener("click", function (e) {
+    var ok = e.target.closest && e.target.closest(".cookieBtnOK");
+    if (ok) {
+      e.preventDefault();
+      e.stopImmediatePropagation();
+      try { localStorage.setItem("isCookieAccepted", "true"); } catch (err) {}
+      var bar = document.querySelector(".cookieBar");
+      if (bar) bar.remove();
+      return;
+    }
+    var info = e.target.closest && e.target.closest(".cookieBtnInfo");
+    if (info) {
+      e.preventDefault();
+      e.stopImmediatePropagation();
+      window.location.href = "cookie-iranyelvek/index.html";
+    }
+  }, true);
+})();
+</script>
+
+<script id="hmz-offline-nav">
+(function () {
+  function isMenuParentWithSub(a) {
+    if (a.classList.contains("hm-subMenuIcon")) return true;
+    if (a.querySelector(":scope > .hm-subMenu, :scope > .hm-subsubMenu, :scope > .hm-subsubsubMenu")) return true;
+    if (a.closest && a.closest(".hm-menuGroup")
+        && a.closest(".hm-menuGroup").querySelector(":scope > .hm-subMenu, :scope > .hm-subsubMenu, :scope > .hm-subsubsubMenu")) {
+      return true;
+    }
+    var next = a.nextElementSibling;
+    return next && (next.classList.contains("hm-subMenu")
+      || next.classList.contains("hm-subsubMenu")
+      || next.classList.contains("hm-subsubsubMenu"));
+  }
+  function forceNativeNav(e) {
+    var a = e.currentTarget;
+    var href = a.getAttribute("href");
+    if (!href || href.charAt(0) === "#" || href.indexOf("javascript:") === 0) return;
+    if (a.classList.contains("cookieBtnOK") || a.classList.contains("cookieBtnInfo")) return;
+    if (isMenuParentWithSub(a) && !e.target.closest(".hm-subMenu, .hm-subsubMenu, .hm-subsubsubMenu")) {
+      return;
+    }
+    e.preventDefault();
+    e.stopImmediatePropagation();
+    window.location.href = href;
+  }
+  function bindNav() {
+    document.querySelectorAll("a[href]").forEach(function (a) {
+      if (a._hmzNavBound) return;
+      a._hmzNavBound = true;
+      a.addEventListener("click", forceNativeNav, true);
+    });
+  }
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", bindNav);
+  } else {
+    bindNav();
+  }
+  setTimeout(bindNav, 500);
+})();
+</script>
+</body></html>

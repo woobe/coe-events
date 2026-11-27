@@ -1,26 +1,296 @@
 {
- "jurisdiction_ids": ["SG"],
- "note": "Singapore public-holiday layer for the 2027 projection. Read from the Ministry of Manpower public-holidays page on 2026-11-24 (page last updated 19 June 2026). No school calendar is included, and no row here is rule-derived: every date is the date the authority prints.",
+ "jurisdiction_ids": [
+  "SG"
+ ],
+ "note": "Singapore holiday layer for the 2027 projection. Public rows from the Ministry of Manpower 2027 table; school rows from the Ministry of Education School Terms and Holidays for 2027 release of 14 July 2026. Every row is dated by the authority; no row is rule-derived.",
  "source": {
   "url": "https://www.mom.gov.sg/employment-practices/public-holidays",
-  "title": "Ministry of Manpower — Public holidays",
-  "edition": "2027 table (page last updated 19 June 2026)",
-  "accessed_on": "2026-11-24"
+  "title": "Ministry of Manpower — Public holidays; Ministry of Education — School Terms and Holidays for 2027",
+  "edition": "MOM 2027 table (updated 19 June 2026); MOE release 14 July 2026",
+  "accessed_on": "2026-11-26"
  },
  "holidays": [
-  {"holiday_name": "New Year's Day", "start_date": "2027-01-01", "end_date": "2027-01-01", "day": "Friday"},
-  {"holiday_name": "Chinese New Year", "start_date": "2027-02-06", "end_date": "2027-02-06", "day": "Saturday", "note": "Second day Sunday 7 February 2027; Monday 8 February 2027 will be a public holiday if your rest day falls on 7 February 2027."},
-  {"holiday_name": "Chinese New Year", "start_date": "2027-02-07", "end_date": "2027-02-07", "day": "Sunday", "note": "Second day of Chinese New Year; the rest-day note applies."},
-  {"holiday_name": "Hari Raya Puasa", "start_date": "2027-03-10", "end_date": "2027-03-10", "day": "Wednesday"},
-  {"holiday_name": "Good Friday", "start_date": "2027-03-26", "end_date": "2027-03-26", "day": "Friday"},
-  {"holiday_name": "Labour Day", "start_date": "2027-05-01", "end_date": "2027-05-01", "day": "Saturday"},
-  {"holiday_name": "Hari Raya Haji", "start_date": "2027-05-17", "end_date": "2027-05-17", "day": "Monday"},
-  {"holiday_name": "Vesak Day", "start_date": "2027-05-20", "end_date": "2027-05-20", "day": "Thursday"},
-  {"holiday_name": "National Day", "start_date": "2027-08-09", "end_date": "2027-08-09", "day": "Monday"},
-  {"holiday_name": "Deepavali", "start_date": "2027-10-28", "end_date": "2027-10-28", "day": "Thursday"},
-  {"holiday_name": "Christmas Day", "start_date": "2027-12-25", "end_date": "2027-12-25", "day": "Saturday"}
+  {
+   "holiday_name": "New Year's Day",
+   "start_date": "2027-01-01",
+   "end_date": "2027-01-01",
+   "day": "Friday",
+   "kind": "public_holiday",
+   "jurisdiction_id": "SG",
+   "source_title": "Ministry of Manpower — Public holidays",
+   "source_url": "https://www.mom.gov.sg/employment-practices/public-holidays",
+   "source_locator": "line 122"
+  },
+  {
+   "holiday_name": "Chinese New Year",
+   "start_date": "2027-02-06",
+   "end_date": "2027-02-06",
+   "day": "Saturday",
+   "kind": "public_holiday",
+   "jurisdiction_id": "SG",
+   "source_title": "Ministry of Manpower — Public holidays",
+   "source_url": "https://www.mom.gov.sg/employment-practices/public-holidays",
+   "source_locator": "lines 126-127"
+  },
+  {
+   "holiday_name": "Chinese New Year",
+   "start_date": "2027-02-07",
+   "end_date": "2027-02-07",
+   "day": "Sunday",
+   "kind": "public_holiday",
+   "jurisdiction_id": "SG",
+   "source_title": "Ministry of Manpower — Public holidays",
+   "source_url": "https://www.mom.gov.sg/employment-practices/public-holidays",
+   "source_locator": "lines 126-127"
+  },
+  {
+   "holiday_name": "Chinese New Year (substitution day)",
+   "start_date": "2027-02-08",
+   "end_date": "2027-02-08",
+   "day": "Monday",
+   "kind": "public_holiday",
+   "jurisdiction_id": "SG",
+   "source_title": "Ministry of Manpower — Public holidays",
+   "source_url": "https://www.mom.gov.sg/employment-practices/public-holidays",
+   "source_locator": "line 127"
+  },
+  {
+   "holiday_name": "Hari Raya Puasa",
+   "start_date": "2027-03-10",
+   "end_date": "2027-03-10",
+   "day": "Wednesday",
+   "kind": "public_holiday",
+   "jurisdiction_id": "SG",
+   "source_title": "Ministry of Manpower — Public holidays",
+   "source_url": "https://www.mom.gov.sg/employment-practices/public-holidays",
+   "source_locator": "line 130"
+  },
+  {
+   "holiday_name": "Good Friday",
+   "start_date": "2027-03-26",
+   "end_date": "2027-03-26",
+   "day": "Friday",
+   "kind": "public_holiday",
+   "jurisdiction_id": "SG",
+   "source_title": "Ministry of Manpower — Public holidays",
+   "source_url": "https://www.mom.gov.sg/employment-practices/public-holidays",
+   "source_locator": "line 133"
+  },
+  {
+   "holiday_name": "Labour Day",
+   "start_date": "2027-05-01",
+   "end_date": "2027-05-01",
+   "day": "Saturday",
+   "kind": "public_holiday",
+   "jurisdiction_id": "SG",
+   "source_title": "Ministry of Manpower — Public holidays",
+   "source_url": "https://www.mom.gov.sg/employment-practices/public-holidays",
+   "source_locator": "line 136"
+  },
+  {
+   "holiday_name": "Hari Raya Haji",
+   "start_date": "2027-05-17",
+   "end_date": "2027-05-17",
+   "day": "Monday",
+   "kind": "public_holiday",
+   "jurisdiction_id": "SG",
+   "source_title": "Ministry of Manpower — Public holidays",
+   "source_url": "https://www.mom.gov.sg/employment-practices/public-holidays",
+   "source_locator": "line 139"
+  },
+  {
+   "holiday_name": "Vesak Day",
+   "start_date": "2027-05-20",
+   "end_date": "2027-05-20",
+   "day": "Thursday",
+   "kind": "public_holiday",
+   "jurisdiction_id": "SG",
+   "source_title": "Ministry of Manpower — Public holidays",
+   "source_url": "https://www.mom.gov.sg/employment-practices/public-holidays",
+   "source_locator": "line 142"
+  },
+  {
+   "holiday_name": "National Day",
+   "start_date": "2027-08-09",
+   "end_date": "2027-08-09",
+   "day": "Monday",
+   "kind": "public_holiday",
+   "jurisdiction_id": "SG",
+   "source_title": "Ministry of Manpower — Public holidays",
+   "source_url": "https://www.mom.gov.sg/employment-practices/public-holidays",
+   "source_locator": "line 145"
+  },
+  {
+   "holiday_name": "Deepavali",
+   "start_date": "2027-10-28",
+   "end_date": "2027-10-28",
+   "day": "Thursday",
+   "kind": "public_holiday",
+   "jurisdiction_id": "SG",
+   "source_title": "Ministry of Manpower — Public holidays",
+   "source_url": "https://www.mom.gov.sg/employment-practices/public-holidays",
+   "source_locator": "line 148"
+  },
+  {
+   "holiday_name": "Christmas Day",
+   "start_date": "2027-12-25",
+   "end_date": "2027-12-25",
+   "day": "Saturday",
+   "kind": "public_holiday",
+   "jurisdiction_id": "SG",
+   "source_title": "Ministry of Manpower — Public holidays",
+   "source_url": "https://www.mom.gov.sg/employment-practices/public-holidays",
+   "source_locator": "line 151"
+  },
+  {
+   "holiday_name": "School vacation between Terms I and II",
+   "start_date": "2027-03-13",
+   "end_date": "2027-03-21",
+   "day": "Saturday",
+   "kind": "school_holiday",
+   "jurisdiction_id": "SG",
+   "source_title": "Ministry of Education — School Terms and Holidays for 2027",
+   "source_url": "https://www.moe.gov.sg/news/press-releases/20260714-school-terms-and-holidays-for-2027",
+   "source_locator": "lines 120-121",
+   "note": "Scope: MOE Kindergarten, primary and secondary."
+  },
+  {
+   "holiday_name": "School vacation between Semesters I and II",
+   "start_date": "2027-05-29",
+   "end_date": "2027-06-27",
+   "day": "Saturday",
+   "kind": "school_holiday",
+   "jurisdiction_id": "SG",
+   "source_title": "Ministry of Education — School Terms and Holidays for 2027",
+   "source_url": "https://www.moe.gov.sg/news/press-releases/20260714-school-terms-and-holidays-for-2027",
+   "source_locator": "lines 122-123",
+   "note": "Scope: MOE Kindergarten, primary and secondary."
+  },
+  {
+   "holiday_name": "School vacation between Terms III and IV",
+   "start_date": "2027-09-04",
+   "end_date": "2027-09-12",
+   "day": "Saturday",
+   "kind": "school_holiday",
+   "jurisdiction_id": "SG",
+   "source_title": "Ministry of Education — School Terms and Holidays for 2027",
+   "source_url": "https://www.moe.gov.sg/news/press-releases/20260714-school-terms-and-holidays-for-2027",
+   "source_locator": "lines 124-125",
+   "note": "Scope: MOE Kindergarten, primary and secondary."
+  },
+  {
+   "holiday_name": "End-of-year school vacation",
+   "start_date": "2027-11-20",
+   "end_date": "2027-12-31",
+   "day": "Saturday",
+   "kind": "school_holiday",
+   "jurisdiction_id": "SG",
+   "source_title": "Ministry of Education — School Terms and Holidays for 2027",
+   "source_url": "https://www.moe.gov.sg/news/press-releases/20260714-school-terms-and-holidays-for-2027",
+   "source_locator": "lines 126-127",
+   "note": "Scope: MOE Kindergarten, primary and secondary; pre-university end-of-year vacation starts 27 November (JC Year 1, MI Year 1 and MI Year 2) per the same release."
+  },
+  {
+   "holiday_name": "Youth Day (observed school holiday)",
+   "start_date": "2027-07-05",
+   "end_date": "2027-07-05",
+   "day": "Monday",
+   "kind": "school_holiday",
+   "jurisdiction_id": "SG",
+   "source_title": "Ministry of Education — School Terms and Holidays for 2027",
+   "source_url": "https://www.moe.gov.sg/news/press-releases/20260714-school-terms-and-holidays-for-2027",
+   "source_locator": "lines 141-143",
+   "note": "Scope: MOE schools."
+  },
+  {
+   "holiday_name": "Day after National Day",
+   "start_date": "2027-08-10",
+   "end_date": "2027-08-10",
+   "day": "Tuesday",
+   "kind": "school_holiday",
+   "jurisdiction_id": "SG",
+   "source_title": "Ministry of Education — School Terms and Holidays for 2027",
+   "source_url": "https://www.moe.gov.sg/news/press-releases/20260714-school-terms-and-holidays-for-2027",
+   "source_locator": "lines 144-145",
+   "note": "Scope: MOE schools."
+  },
+  {
+   "holiday_name": "Teachers' Day",
+   "start_date": "2027-09-03",
+   "end_date": "2027-09-03",
+   "day": "Friday",
+   "kind": "school_holiday",
+   "jurisdiction_id": "SG",
+   "source_title": "Ministry of Education — School Terms and Holidays for 2027",
+   "source_url": "https://www.moe.gov.sg/news/press-releases/20260714-school-terms-and-holidays-for-2027",
+   "source_locator": "lines 146-147",
+   "note": "Scope: MOE schools."
+  },
+  {
+   "holiday_name": "Children's Day",
+   "start_date": "2027-10-08",
+   "end_date": "2027-10-08",
+   "day": "Friday",
+   "kind": "school_holiday",
+   "jurisdiction_id": "SG",
+   "source_title": "Ministry of Education — School Terms and Holidays for 2027",
+   "source_url": "https://www.moe.gov.sg/news/press-releases/20260714-school-terms-and-holidays-for-2027",
+   "source_locator": "lines 148-150",
+   "note": "Scope: Primary schools and primary sections of full schools only."
+  },
+  {
+   "holiday_name": "Designated day off-in-lieu for schools",
+   "start_date": "2027-02-09",
+   "end_date": "2027-02-09",
+   "day": "Tuesday",
+   "kind": "school_holiday",
+   "jurisdiction_id": "SG",
+   "source_title": "Ministry of Education — School Terms and Holidays for 2027",
+   "source_url": "https://www.moe.gov.sg/news/press-releases/20260714-school-terms-and-holidays-for-2027",
+   "source_locator": "line 177",
+   "note": "Scope: Schools, including the General Office, Student Care Centres and KCare Centres (closed)."
+  },
+  {
+   "holiday_name": "Designated day off-in-lieu for schools",
+   "start_date": "2027-05-03",
+   "end_date": "2027-05-03",
+   "day": "Monday",
+   "kind": "school_holiday",
+   "jurisdiction_id": "SG",
+   "source_title": "Ministry of Education — School Terms and Holidays for 2027",
+   "source_url": "https://www.moe.gov.sg/news/press-releases/20260714-school-terms-and-holidays-for-2027",
+   "source_locator": "line 178",
+   "note": "Scope: Schools, including the General Office, Student Care Centres and KCare Centres (closed)."
+  },
+  {
+   "holiday_name": "Designated day off-in-lieu for schools",
+   "start_date": "2027-12-27",
+   "end_date": "2027-12-27",
+   "day": "Monday",
+   "kind": "school_holiday",
+   "jurisdiction_id": "SG",
+   "source_title": "Ministry of Education — School Terms and Holidays for 2027",
+   "source_url": "https://www.moe.gov.sg/news/press-releases/20260714-school-terms-and-holidays-for-2027",
+   "source_locator": "line 179",
+   "note": "Scope: Schools, including the General Office, Student Care Centres and KCare Centres (closed)."
+  }
  ],
  "coverage": [
-  {"kind": "public_holiday_coverage", "jurisdiction_id": "SG", "start_date": "2027-01-01", "end_date": "2027-12-31", "verified": true, "note": "Full-year 2027 span; the ten holidays above are the dates the authority prints."}
+  {
+   "kind": "public_holiday_coverage",
+   "jurisdiction_id": "SG",
+   "start_date": "2027-01-01",
+   "end_date": "2027-12-31",
+   "verified": true,
+   "note": "Full-year 2027 span; the twelve public rows are the eleven MOM date rows including both Chinese New Year days, plus the 8 February substitution day printed in the MOM sentence and treated as a school public holiday in MOE footnote 3."
+  },
+  {
+   "kind": "school_holiday_coverage",
+   "jurisdiction_id": "SG",
+   "start_date": "2027-01-01",
+   "end_date": "2027-12-31",
+   "verified": true,
+   "note": "MOE Kindergarten, primary and secondary: four vacations, four scheduled school holidays and three designated days off-in-lieu for schools (9 February, 3 May, 27 December). The 27 December designation falls inside the end-of-year vacation. Pre-university end-of-year vacation differs and is noted on the end-of-year row."
+  }
  ]
 }

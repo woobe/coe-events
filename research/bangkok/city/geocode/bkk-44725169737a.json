@@ -1,0 +1,87 @@
+{
+ "venue_id": "bkk-44725169737a",
+ "checked_on": "2026-11-26",
+ "provider": "OpenStreetMap Nominatim",
+ "attempts": [
+  {
+   "kind": "address",
+   "query": "48 Oriental Avenue, Bang Rak, Bangkok 10500, Thailand",
+   "url": "https://nominatim.openstreetmap.org/search?q=48+Oriental+Avenue%2C+Bang+Rak%2C+Bangkok+10500%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+   "status": "none",
+   "results": []
+  },
+  {
+   "kind": "name",
+   "query": "Mandarin Oriental Bangkok Bangkok",
+   "url": "https://nominatim.openstreetmap.org/search?q=Mandarin+Oriental+Bangkok+Bangkok&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+   "status": "ok",
+   "results": [
+    {
+     "place_id": 257870734,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 134464577,
+     "lat": "13.7238854",
+     "lon": "100.5141549",
+     "category": "leisure",
+     "type": "resort",
+     "place_rank": 30,
+     "importance": 0.35699141996923245,
+     "addresstype": "leisure",
+     "name": "Mandarin Oriental Hotel",
+     "display_name": "Mandarin Oriental Hotel, 48, Bang Rak Subdistrict, Bang Rak District, Bangkok, 10500, Thailand",
+     "address": {
+      "leisure": "Mandarin Oriental Hotel",
+      "house_number": "48",
+      "administrative": "Bang Rak Subdistrict",
+      "suburb": "Bang Rak District",
+      "city": "Bangkok",
+      "ISO3166-2-lvl4": "TH-10",
+      "postcode": "10500",
+      "country": "Thailand",
+      "country_code": "th"
+     },
+     "boundingbox": [
+      "13.7234271",
+      "13.7244257",
+      "100.5135611",
+      "100.5151386"
+     ]
+    },
+    {
+     "place_id": 254718578,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "node",
+     "osm_id": 2081842900,
+     "lat": "13.7235931",
+     "lon": "100.5142460",
+     "category": "amenity",
+     "type": "restaurant",
+     "place_rank": 30,
+     "importance": 7.662546730750007e-05,
+     "addresstype": "amenity",
+     "name": "Le Normandie",
+     "display_name": "Le Normandie, 48, Soi Charoen Krung 40, Bang Rak Subdistrict, Bang Rak District, Bangkok, 10500, Thailand",
+     "address": {
+      "amenity": "Le Normandie",
+      "house_number": "48",
+      "road": "Soi Charoen Krung 40",
+      "quarter": "Bang Rak Subdistrict",
+      "suburb": "Bang Rak District",
+      "city": "Bangkok",
+      "ISO3166-2-lvl4": "TH-10",
+      "postcode": "10500",
+      "country": "Thailand",
+      "country_code": "th"
+     },
+     "boundingbox": [
+      "13.7235431",
+      "13.7236431",
+      "100.5141960",
+      "100.5142960"
+     ]
+    }
+   ]
+  }
+ ]
+}

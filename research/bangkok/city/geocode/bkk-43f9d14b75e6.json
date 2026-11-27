@@ -1,0 +1,124 @@
+{
+ "venue_id": "bkk-43f9d14b75e6",
+ "checked_on": "2026-11-26",
+ "provider": "OpenStreetMap Nominatim",
+ "attempts": [
+  {
+   "kind": "address",
+   "query": "60 Ratchadaphisek Road, Khlong Toei, Bangkok 10110, Thailand",
+   "url": "https://nominatim.openstreetmap.org/search?q=60+Ratchadaphisek+Road%2C+Khlong+Toei%2C+Bangkok+10110%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+   "status": "ok",
+   "results": [
+    {
+     "place_id": 255128110,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 1085353819,
+     "lat": "13.7242403",
+     "lon": "100.5587360",
+     "category": "amenity",
+     "type": "conference_centre",
+     "place_rank": 30,
+     "importance": 0.3047903492217065,
+     "addresstype": "amenity",
+     "name": "Queen Sirikit National Convention Center",
+     "display_name": "Queen Sirikit National Convention Center, 60, Ratchadaphisek Road, ชุมชนเจริญสุข, Khlong Toei Subdistrict, Khlong Toei District, Bangkok, 10110, Thailand",
+     "address": {
+      "amenity": "Queen Sirikit National Convention Center",
+      "house_number": "60",
+      "road": "Ratchadaphisek Road",
+      "neighbourhood": "ชุมชนเจริญสุข",
+      "quarter": "Khlong Toei Subdistrict",
+      "suburb": "Khlong Toei District",
+      "city": "Bangkok",
+      "ISO3166-2-lvl4": "TH-10",
+      "postcode": "10110",
+      "country": "Thailand",
+      "country_code": "th"
+     },
+     "boundingbox": [
+      "13.7232044",
+      "13.7254881",
+      "100.5575701",
+      "100.5598922"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "name",
+   "query": "QSNCC Bangkok",
+   "url": "https://nominatim.openstreetmap.org/search?q=QSNCC+Bangkok&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+   "status": "ok",
+   "results": [
+    {
+     "place_id": 255128110,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 1085353819,
+     "lat": "13.7242403",
+     "lon": "100.5587360",
+     "category": "amenity",
+     "type": "conference_centre",
+     "place_rank": 30,
+     "importance": 0.3047903492217065,
+     "addresstype": "amenity",
+     "name": "Queen Sirikit National Convention Center",
+     "display_name": "Queen Sirikit National Convention Center, 60, Ratchadaphisek Road, ชุมชนเจริญสุข, Khlong Toei Subdistrict, Khlong Toei District, Bangkok, 10110, Thailand",
+     "address": {
+      "amenity": "Queen Sirikit National Convention Center",
+      "house_number": "60",
+      "road": "Ratchadaphisek Road",
+      "neighbourhood": "ชุมชนเจริญสุข",
+      "quarter": "Khlong Toei Subdistrict",
+      "suburb": "Khlong Toei District",
+      "city": "Bangkok",
+      "ISO3166-2-lvl4": "TH-10",
+      "postcode": "10110",
+      "country": "Thailand",
+      "country_code": "th"
+     },
+     "boundingbox": [
+      "13.7232044",
+      "13.7254881",
+      "100.5575701",
+      "100.5598922"
+     ]
+    },
+    {
+     "place_id": 254691991,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "node",
+     "osm_id": 9444510082,
+     "lat": "13.7264855",
+     "lon": "100.5601205",
+     "category": "highway",
+     "type": "bus_stop",
+     "place_rank": 30,
+     "importance": 7.662546730750007e-05,
+     "addresstype": "highway",
+     "name": "QSNCC",
+     "display_name": "QSNCC, Ratchadaphisek Road, ชุมชนเจริญสุข, Khlong Toei Subdistrict, Khlong Toei District, Bangkok, 10110, Thailand",
+     "address": {
+      "highway": "QSNCC",
+      "road": "Ratchadaphisek Road",
+      "neighbourhood": "ชุมชนเจริญสุข",
+      "quarter": "Khlong Toei Subdistrict",
+      "suburb": "Khlong Toei District",
+      "city": "Bangkok",
+      "ISO3166-2-lvl4": "TH-10",
+      "postcode": "10110",
+      "country": "Thailand",
+      "country_code": "th"
+     },
+     "boundingbox": [
+      "13.7264355",
+      "13.7265355",
+      "100.5600705",
+      "100.5601705"
+     ]
+    }
+   ]
+  }
+ ]
+}

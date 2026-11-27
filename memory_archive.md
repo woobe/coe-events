@@ -132,3 +132,129 @@ Moved out of memory_bank.md when the SF city page replaced the period-keyed summ
 6. [ ] Pre-existing profile drift for `jnr-research` (SOUL.md installed-ahead; `skills/hermes-managed/` layout differs from the flat installed layout) — needs a decide-then-sync, not a blind sync.
 7. [ ] Joe annotate trusted venues used vs considered (older open item).
 8. [ ] NO COMMITS by the manager in this repo — Joe owns all commits (standing rule).
+
+
+---
+
+## Archived 2026-11-23 — SF city page build detail (v1, v3, v4)
+
+Kept verbatim from memory_bank.md when the page reached v5.
+
+## SF city page v1 — built, frozen, NOT published (2026-11-22)
+
+* Page: `summary/san-francisco-summary.html`, 2,012,788 bytes, sha256 `22ca3bc57de1725108403c06328b36fa25a0304bb9ad76b8abf6abdb7fc5d22c`; two renders from the store are byte-identical. Render: `.venv/bin/python scripts/city_page.py --store <city.json> --out <path>`.
+* Preview pack: `local/preview/sf-city-v1/` — 20 screenshots at five widths plus `audit.txt` (16/16 owner checks PASS) and `preview.md`.
+* Backups: `summary/previous/2027-h1-san-francisco-summary.2026-11-22.html` and `summary/previous/san-francisco-summary.2026-11-22.html`, both hashed in that folder's README. The old published page's bytes are unchanged.
+* Store: `research/san-francisco/city/city.json` — 16 venues (14 assessed: 12 can host the 8-hour day, 2 cannot; 2 leads incl. Common Space with the Visited 2026 record), 17 communities, 5 events, 49 photos, 1 visit.
+* Modules: `plan-event/scripts/{city_store,city_rank,city_calendar,city_page}.py`; ranking gates on hard window constraints; calendar is 2027-only with four country layers.
+* Cards closed: plan, calendar-gap research, store, merge, rank/table, calendar, food-and-drink research, shell, landscape pass, freeze. Suite 1,365 passing; browser gate 59/59; 16/16 baseline hashes.
+* Open at freeze: CounterPulse needs a phone call on catering/delivery/beer; no closed venue on record (section carries an empty-state sentence); MiraGather/AI Tinkerers events for 2027 not yet refreshed into the store.
+* Not done: publish, hub regeneration, other cities, 2026/2028 scope (excluded by owner).
+* **v3 (2026-11-22 later):** rebuilt to the G-series spec — percentage columns (19/7/8.8/8/9.2/6x7.1/5.4), word headers at 1440, emoji at 1280, stacked below 1024; `Cost (USD)` with `$800`/`$1,800`; 88x66 thumbnails in every row; row click tints, expands and highlights+centres the map pin (14->22px); gallery 176px tiles across the full table width; Details button gone; `display_name` + `about` written for all 16 venues and merged into the live store (run run-updates-e21df10b4f14, 32 facts, 0 conflicts). Page sha256 `121899c1...`; preview pack `local/preview/sf-city-v3/` (32 PNGs, audit 15/15 PASS).
+* **v4 (2026-11-23):** refinement round H applied — map rail 420px (panes 948/788/532/720/358), tracks re-measured (words from 914px pane, emoji from 726, stacks below), `Score / Tier`, selected pin `#8DCCFF` 22px with a venue-name popup that flips at edges; photos: no placeholder, max 3 thumbs per row, expanded gallery one non-wrapping row of up to 6 sized `(W-8(N-1))/N`; calendar full content width, two months from 1392px content / one stretched below, Related events moved directly under it; communities rebuilt as 8 plain columns with no disclosure; sources one line each; nav Home/Venues/Calendar/Local communities flush left, Map link removed. Page sha256 `c8e7bdea...`; preview pack `local/preview/sf-city-v4/` (29 PNGs + audit, one documented exception: first-viewport-column-overflow accepted for the short sticky map beside the long list). Committed `fafb221` and pushed 2026-11-23; live URL verified 200, sha256 c8e7bdea matches local.
+* **v5 (2026-11-23):** refinement round J — map panel plain (no border/bg/caption), top flush with the table, canvas 1362px at 2560 / 822 at 1440; no-column-takes-the-leftovers rule applied to all three tables (shortlist pane capped 1104, venue 324 at 2560; Evidence 1489 at 2560 / 689 at 1440; communities Community capped 208, Venue 829, Source 590); four-up gallery standard with fixed height; Common Space now carries the owner address + derived point 37.7983279/-122.4356209 (16/16 pins); standing test widths now include 2560x1440 first. Page sha256 `f0466c22...`; pack `local/preview/sf-city-v5/`. Committed `99b7c48`, pushed, live sha verified.
+
+
+
+---
+
+## Archived 2026-11-25 — per-city publish records (v1 pages)
+
+Kept verbatim from memory_bank.md when the nine-city queue completed.
+
+## Montreal city page v1 — live (2026-11-24)
+
+* **Published:** `summary/montreal-summary.html`, sha256 `ea13919e…`, commit `529611a`, pushed; live URL verified 200 with a matching hash. SF page untouched at `64d2ba1a…`. Preview pack `local/preview/mtl-v1/` (26 shots + audit + detect logs).
+* **Store:** `research/montreal/city/city.json` (`city-store/1`) — 32 records (25 assessed, 7 leads, 0 closed; 24 hold the 8h floor), 864 dated claims all language-tagged with 14 fr-CA reviews, 18 communities, 2 related 2027 events, 24 photos, 18 holiday rows. All 27 legacy records disposed; five mandatory sources checked with dates; `local_requirements` carries language, alcohol and food law scope; CAD prices converted at a dated Bank of Canada rate (0.6959).
+* **Paired brief implemented:** `templates/city_store_brief.json` + permanent-city validation; `event_window_fit = 0.6 × 8h + 0.4 × 12h`; hard gate at the 8h floor. Period contract (8 or 9) untouched.
+* **Page:** v6 layout reused through a city profile (no fork). Three window states in the access cell; Quebec employer-choice Easter shown on both 26 and 29 March; rule-derived holidays labelled unverified (CNESST/canada.ca blocked scripted reads); calendar key and sources wording computed from the store, so no California text leaks.
+* **Known gaps:** 24 photos for 25 rooms (mostly one or two each, no four-up for most), only 2 related 2027 events, 16 of 25 rooms have no published access window, Café SAT address still unverified with no pin.
+* **Next:** refresh Montreal when sources open, then the next city (NYC was second choice, has a confirmed venue and a speaker shortlist).
+
+
+## Home page and archive — live (2026-11-24)
+
+* **`index.html`** rebuilt: flag-chip card per city, only flag + city + venue count + last updated, grouped North America / Europe / Asia with jump links and back-to-top, no JS. Two built cities show real counts (Montreal 25, San Francisco 14); the other ten say "Not yet built". Commit `837dc68`, live 200, sha `7ff56598…`.
+* **`previous-research.html`** carries the 13 period summaries grouped by city, Montreal and SF marked superseded; old files untouched so shared links still work.
+* **Generated, not typed:** `plan-event/scripts/city_index.py` reads `research/published-cities.json` + the city stores and emits both pages, with a drift gate that fails when a page disagrees with its store (three attack cases reproduced by the reviewer). Suite 1,486.
+* Owner chose variant 1 of five card treatments (`local/mockups/home-v2/`); photographs were rejected, flags only.
+
+
+## New York city page — live (2026-11-24)
+
+* **Published:** `summary/new-york-summary.html`, sha256 `3394d08d…`, commit `157cdfc`; home page now lists it. Live verified 200 with matching hashes for page and home.
+* **Store:** `research/new-york/city/city.json` — 30 assessed + 3 leads, 822 per-fact claims each quoting its value, 22 organiser-verified 2027 events, 19 communities, 43 holiday rows (US / US-NY / US-NY:nyc / US-NY:nycps). Photos: 4 venues with Commons images, 26 recorded exceptions.
+* **First page with the layered calendar** Joe asked for: own country first with holidays + events, then UK/CA/DE/IE holidays only. SF and Montreal still on the old single-country calendar until the deep refresh.
+* **Gate bug found and fixed:** `city_index._compare()` built its expected rows without the city profile, so profile-specific badges looked like drift; now compares like with like and still fails on a genuinely stale row (card t_2a498bad).
+* **Known gaps:** 26 of 30 venues have no cleared photo, 9 of 30 have no coordinates (no pin), transit unknown per venue is recorded as unknown.
+
+
+## Singapore city page — live (2026-11-24)
+
+* **Published:** `summary/singapore-summary.html`, sha256 `fdd63ff3…`, commit `34fc3e2`; home lists it. Live 200, page and home hashes match.
+* **Store:** 30 assessed + 6 leads, 18 communities, 11 organiser-evidenced 2027 events (GITEX AI Asia, ATxSG, SuperAI, GovWare, SWITCH, SFF…), 11 MOM holiday rows, HUF with dated FX, 50 photo assets with licences and 19 withheld rooms.
+* **First page where the city's country is outside the five partner calendars**, so Singapore renders first and all five (UK, CA, DE, IE, US) follow as holidays-only.
+* **Two gate lessons now enforced in code:** coordinates must be JSON numbers (store check added), and a 12-hour window needs a published 09:00–21:00 interval, not a "runs into the evening" inference.
+
+
+## Budapest city page — live (2026-11-25)
+
+* **Published:** `summary/budapest-summary.html`, sha256 `f8b16862…`, commit `3880db4`; home lists it (five built). Live 200, hashes match.
+* **Store:** 27 assessed + 4 leads (15 seated-evidenced, 12 capacity-only), 12 organiser-evidenced 2027 events, 18 communities, 12 HU holiday rows, Hungarian quotes with reviewed English glosses.
+* **Page states its own limits:** only 2 of 27 rooms publish a 09:00–21:00 window, 25 publish no hours; nine declared gaps listed above the rows.
+* **Claim-locator rule now enforced:** the cited line must contain the claimed value — the repair removed several plausible claims pointing at the wrong line.
+* **Lesson:** evidence-pack prose caused three review rounds after the page itself passed; audits are now measurements only (command, value, file).
+
+
+## Lisbon city page — live (2026-11-25)
+
+* **Published:** `summary/lisbon-summary.html`, sha256 `1f81db45…`, commit `aab4756`; home lists it (six built). Live 200, hashes match.
+* **Store:** 30 assessed (23 seated basis, 6 venue-claim, 1 standing) + 21 leads, 12 communities, 7 organiser-evidenced 2027 events, 14 derived PT holiday rows, 78 photo assets.
+* **SBC Summit 2027 was dropped**, not guessed: no capture printed its dates and the organiser page 404s.
+* **Lesson applied:** writing the eight hard rules into the research card cut this city to two rounds instead of six.
+
+
+## Oslo city page — live (2026-11-25)
+
+* **Published:** `summary/oslo-summary.html`, sha256 `81f7a863…`, commit `dcebe28`; home lists it (seven built). Live 200, hashes match.
+* **Store:** 30 assessed + 15 leads (seated 5, theatre 2, operator-max 23), 7 events, 12 derived NO holiday rows, NOK with dated FX.
+* **Fixed during review:** Ingensteds runs to 01:00 not 21:00; Kinosalen's window dropped to unknown; helligdagsfredloven ban is §4 not §3.
+* **Flag asset gap:** `assets/flags/` was missing no.svg and my.svg — the index generator fails hard without a local flag, which is the right behaviour; both fetched from the public-domain set.
+
+
+## Bangkok city page — live (2026-11-25)
+
+* **Published:** `summary/bangkok-summary.html`, sha256 `5e455543…`, commit `02ea30e`; home lists it (eight built). Live 200, hashes match.
+* **Store:** 30 assessed + 14 leads (seated 4 / theatre 20 / venue-max 5 / standing 1), 3 organiser-evidenced 2027 events, Thai holiday rows with Buddhist dates flagged subject to announcement, alcohol unknown wherever no event licence is published, platform lanes logged with 403/404 outcomes.
+* **Rule reinforced:** a hotel bar line is not event alcohol permission — 12 KL rooms were corrected on that basis, and Bangkok never claimed it.
+
+
+## Kuala Lumpur city page — live (2026-11-25) — nine-city queue complete
+
+* **Published:** `summary/kuala-lumpur-summary.html`, sha256 `19f28c61…`, commit `06bedb0`; home now lists nine published, six planned. Live 200, hashes match.
+* **Store:** 30 assessed + 25 leads, 15 communities after a sweep that took it from 5, 11 events, 21 holiday rows (8 Islamic dates flagged subject to announcement), 82 photo assets.
+* **Two rules now enforced in code:** citations must name the page their capture came from (a check fails otherwise), and the sources sentence is computed from the store rather than asserted.
+* **Nine live cities:** San Francisco, Montreal, New York, Singapore, Budapest, Lisbon, Oslo, Bangkok, Kuala Lumpur. Planned: Boston, Geneva, Warsaw, Hong Kong, Kyoto, Seoul.
+* **`hermes-skills` remains uncommitted on purpose** — Joe commits the plan-event skill in his own session.
+
+
+
+---
+
+## Archived 2026-11-25 — older Core Context entries (moved, not deleted)
+
+Superseded or historical; kept because the diagnosis and the pitfalls may still be needed.
+
+* **Research-worker capability (2026-09-26/27):** `jnr-research`/`snr-research` toolset was `web,file,skills,todo,clarify` — NO shell — which made page-level research impossible (the whole reason the first Lisbon passes produced snippet-only evidence). Both profiles now also carry `terminal` + `code_execution` (repo + installed, UNCOMMITTED). Diagnosis chain that got there: `--skill <name>` resolves in the WORKER's Hermes home (not the manager's) and an unresolvable skill crashes the worker with exit 1; `web.backend: ddgs` is search-only, `web.extract_backend` is unset and no extract-provider key exists in `~/.hermes/.env`, so `web_extract` fails for every profile — page reads must go through the shell (`curl`, or headless Chromium at `~/.cache/ms-playwright/chromium-1234/chrome-linux64/chrome --headless=new --dump-dom`).
+* **Board/ops lessons (2026-09-26/27):** `reassign <id> none` does NOT park a card — `kanban.default_assignee: default` lets the dispatcher re-assign it to the MANAGER profile and run it as a worker; use `reclaim` + `archive`, or a manager `block`, to stop a re-dispatch loop. A card blocked with `needs_input` twice falls to `triage`, where it can neither be blocked, scheduled nor unblocked ("cannot unblock … not blocked/scheduled?") — dispatch a fresh card instead. Never `grep -F '[t]_id'` to find a worker to kill: the pattern matches the killing shell's own command line and SIGTERMs it.
+* **Monitoring (2026-09-27):** cron job `3d675bf335bd` (kanban-transition-watch-hermes-skills, every 5m, monitor-script change detector, deliver=origin) delivered transition pings correctly (21:21, 21:50, 22:14) and is now PAUSED at Joe's request. The monitor script is `~/.hermes/scripts/kanban_board_state.sh`. It is report-only by design — it never dispatches cards.
+
+* **Lisbon Q1 2027 school holidays (VERIFIED 2026-09-26, manager-read from Despacho n.º 8368/2024):** Despacho 8368/2024 has FOUR annexes — Anexo I períodos letivos (public), **Anexo II interrupções (public pre-school/basic/secondary)**, Anexo III calendário (private special education), Anexo IV interrupções (private special education). PUBLIC 2026-2027 interruptions: 1.ª 2026-12-16→2026-12-31, 2.ª 2027-02-08→2027-02-10 (Carnaval), 3.ª 2027-03-22→2027-04-02 (Easter). Private special education (Anexo IV) differs: 21-24 Dec, 25 Mar→2 Apr. Despacho 10430/2026 (2.ª alteração, DR n.º 162/2026 Série II, 2026-08-21) amends **Anexo I only** (start of 1st period, científico-humanísticos, 21 Sept 2026) — Anexo II untouched. PITFALL: quote the annex heading above each table; mixing Anexo II and IV rows produced a false date contradiction. Diário da República pages need Chromium `--virtual-time-budget=45000`; 15s leaves the body unloaded.
+* **Repo:** `woobe/coe-events` (private) — SSH alias `github.com-coe-events` uses key `~/.ssh/coe_events_deploy_ed25519` (write access)
+* **Event series:** Decentralized AI Days — free AI×Web3 community events, Numerai-funded, hosted by Joe Chow (ia_ai), in-person only
+* **Key Skill:** `plan-event` (events category) — full brief in `references/decai-days-context.md`; listening mode → venue/speaker research → decision-ready bundle
+* **NYC research facts:** 7 candidate Saturdays; UN Blockchain Week (Sep 10-19) ends on candidate Saturday Sep 19 — flagged as SIDE-EVENT OPPORTUNITY (audience synergy); recommended 2026-09-26 (cleanest calendar) with Sep 19 a legitimate flagged alternative. Venue: **Seminar Room A at NYC Seminar & Conference Center** (Joe's trusted past venue; Tagvenue: from $180/hr, Sat 8am-5pm, min 3h; est. 6h total USD 1,080; capacity 70 theatre, screen + Wi-Fi confirmed). Joe confirmed "perfectly fine for my event" → `needs_human_verify` false, score 0.7363, selected venue for 2026-09-26; four residual booking-time checks in `unresolved_checks`. Re-scored: eligible 1, rejected 18.
+* **Montreal research facts:** 7 candidate Saturdays; no high-severity same-day conflicts; every date flagged for Joe: recommended 2026-10-03 (zero medium). Eligible venues: JUNIPER (C$690/day, 50 seats), THE HOOK (C$1,500/day), CARNEGIE (C$2,600/day) — all COLLECTIF MTL. CAD→USD 0.72 applied.
+* **RESOLVED — research-side page access (2026-09-26/27):** was fleet-wide broken: `web.backend: ddgs` is search-only, `web.extract_backend` unset and no extract-provider key in `~/.hermes/.env`, so `web_extract` fails for every profile; `browser.backend: browser-use` refused with `chrome-not-running`; and the profile split (`*research/*content/*product` = web but NO shell; `*dev/*data/*ds/*mle/reviewer` = shell but NO web) meant no worker could both search and open a page. RESOLUTION: give the research profiles a shell — `platform_toolsets.cli` for `jnr-research` and `snr-research` is now `[web, terminal, file, skills, todo, code_execution, clarify]` (repo + installed, UNCOMMITTED) — and read pages from the shell: `curl` for static pages, or headless Chromium `~/.cache/ms-playwright/chromium-1234/chrome-linux64/chrome --headless=new --disable-gpu --no-sandbox --disable-dev-shm-usage --virtual-time-budget=45000 --dump-dom <URL>` for JS pages. No API key needed. Verified live: the Lisbon run then produced page-level evidence and the official school-calendar dates.
+* **Open (accepted/undeferred items from the Lisbon 2027 Q1 run, 2026-09-27):** (a) the published summary HTML lacks an explicit research-stage / no-date-selected statement (reviewer P2, ACCEPTED by Joe — needs a `generate_summary.py` or `venue_matrix.html.j2` change if ever revisited); (b) the plan-event page-fetch helper is still only documented in card bodies; (c) the fleet toolset edit remains uncommitted.
+* **Open Questions:** Most Seoul venues inquiry-only (written quotes needed); aT/ST Centers need browser fetch; COMEUP dates third-party; NYC Python TLS non-blocking operator-network check.

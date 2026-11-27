@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Analytics gate. Both the Google tag and the Meta Pixel below read this flag.
+
+         Why: neither vendor snippet checked where it was running, so this GA
+         property and this Pixel also collected `npm run dev` on localhost, every
+         Netlify deploy preview, and the staging branch deploy. Headless browsers
+         execute JS and so reached both as well. On 2026-09-15, 419 of 466 GA
+         "users" shared a single scripted viewport (1280x1200, 0s engagement)
+         out of a Singapore datacentre, dragging site-wide engagement rate down
+         to 4.84%. Netlify's server-side numbers put non-browser traffic at
+         96.3%, so unfiltered client analytics only drifts further from reality.
+
+         The hostname check is always on: nothing wants localhost or a preview
+         deploy reporting into the production property. The bot filter is
+         switchable, via VITE_ANALYTICS_BOT_FILTER in the Netlify build
+         environment. Set it to "false" and redeploy to count automated clients
+         again, for example to compare like for like against figures recorded
+         before this shipped.
+
+         Vite substitutes %VITE_*% in index.html at build time. When the
+         variable is unset the placeholder survives verbatim, so it cannot
+         equal "false" and the filter stays on. Unset fails safe. -->
+    <script>
+      (function () {
+        var host = location.hostname;
+        var isProduction = host === 'gmasia.ai' || host === 'www.gmasia.ai';
+
+        // Chrome sets `navigator.webdriver` when it is driven over the DevTools
+        // protocol (Puppeteer, Playwright, Selenium). The UA test catches
+        // headless builds that leave the flag unset.
+        var botFilterOff = "%VITE_ANALYTICS_BOT_FILTER%" === "false";
+
+        var isAutomated =
+          !botFilterOff &&
+          (navigator.webdriver === true || /Headless/i.test(navigator.userAgent));
+
+        window.__ANALYTICS_ENABLED__ = isProduction && !isAutomated;
+      })();
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script>
+      if (window.__ANALYTICS_ENABLED__) {
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = function () { window.dataLayer.push(arguments); };
+        window.gtag('js', new Date());
+        window.gtag('config', 'G-K0CJ7DP2BM');
+
+        var gaTag = document.createElement('script');
+        gaTag.async = true;
+        gaTag.src = 'https://www.googletagmanager.com/gtag/js?id=G-K0CJ7DP2BM';
+        document.head.appendChild(gaTag);
+      }
+    </script>
+
+    <!-- Meta Pixel Code -->
+    <script>
+    if (window.__ANALYTICS_ENABLED__) {
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1366708842276341');
+    fbq('track', 'PageView');
+    }
+    </script>
+    <!-- End Meta Pixel Code -->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- The Edge Function reads these build-time values so its route gating
+         always matches the SPA, even when a VITE_* variable is build-scoped. -->
+    <meta name="gmasia-feature-flags" content="CAMPUS=true;CAMPUS_LANDING_V2=true;CAMPUS_LIBRARY=true;EVENTS_V2=true;COUNTRY_LANDING_PAGES=true;NEWS_FEED=true;SUPPORT_FAQ=true">
+    <!-- robots meta is owned by MetaTags.tsx (react-helmet-async): a static tag
+         here can't be replaced by Helmet, so noindex pages ended up shipping
+         both "index, follow" and "noindex" simultaneously. -->
+    <!-- The remaining static metadata is a no-JS fallback. data-rh lets Helmet
+         replace it in place once React mounts instead of appending duplicates. -->
+    <title>Asia AI Conference - GMAsia Events</title>
+    <meta name="description" content="The Asia AI Conference focuses on the latest developments in artificial intelligence, including generative AI, business applications, and industry trends. It a…" data-rh="true">
+    <meta name="author" content="GMAsia" data-rh="true" />
+
+    
+    
+    <meta property="og:type" content="event" data-rh="true">
+    <meta property="og:url" content="https://gmasia.ai/events/asia-ai-conference" data-rh="true">
+    <meta property="og:image" content="https://bcywmurcsikhngmuxlaf.supabase.co/storage/v1/object/public/event-images/asia-ai-conference-vlmjts.jpg" data-rh="true">
+
+    <meta name="twitter:card" content="summary_large_image" data-rh="true" />
+    <meta name="twitter:site" content="@gmasiahq" data-rh="true" />
+    <meta name="twitter:image" content="https://bcywmurcsikhngmuxlaf.supabase.co/storage/v1/object/public/event-images/asia-ai-conference-vlmjts.jpg" data-rh="true">
+  <meta property="og:title" content="Asia AI Conference - GMAsia Events" data-rh="true">
+  <meta name="twitter:title" content="Asia AI Conference - GMAsia Events" data-rh="true">
+  <meta property="og:description" content="The Asia AI Conference focuses on the latest developments in artificial intelligence, including generative AI, business applications, and industry trends. It a…" data-rh="true">
+  <meta name="twitter:description" content="The Asia AI Conference focuses on the latest developments in artificial intelligence, including generative AI, business applications, and industry trends. It a…" data-rh="true">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <script type="module" crossorigin src="/assets/index-BmIwnK8s.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-EeTViT_t.css">
+  <link rel="canonical" href="https://gmasia.ai/events/asia-ai-conference" data-rh="true">
+</head>
+
+  <body>
+    <!-- Meta Pixel Code (noscript fallback) -->
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1366708842276341&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    <div id="root"></div>
+  </body>
+</html>

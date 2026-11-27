@@ -1,0 +1,56 @@
+{
+ "venue_id": "bkk-697e48b18e66",
+ "checked_on": "2026-11-26",
+ "provider": "OpenStreetMap Nominatim",
+ "attempts": [
+  {
+   "kind": "address",
+   "query": "23 Charoen Krung Soi 24, Bang Rak, Bangkok 10500, Thailand",
+   "url": "https://nominatim.openstreetmap.org/search?q=23+Charoen+Krung+Soi+24%2C+Bang+Rak%2C+Bangkok+10500%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+   "status": "none",
+   "results": []
+  },
+  {
+   "kind": "name",
+   "query": "River City Bangkok Bangkok",
+   "url": "https://nominatim.openstreetmap.org/search?q=River+City+Bangkok+Bangkok&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+   "status": "ok",
+   "results": [
+    {
+     "place_id": 257586784,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 342182317,
+     "lat": "13.7304469",
+     "lon": "100.5133237",
+     "category": "shop",
+     "type": "mall",
+     "place_rank": 30,
+     "importance": 0.33278388606982795,
+     "addresstype": "shop",
+     "name": "River City",
+     "display_name": "River City, 23, Soi Charoen Krung 24, Rong Nam Khaeng, Talat Noi Subdistrict, Samphanthawong District, Bangkok, 10100, Thailand",
+     "address": {
+      "shop": "River City",
+      "house_number": "23",
+      "road": "Soi Charoen Krung 24",
+      "neighbourhood": "Rong Nam Khaeng",
+      "quarter": "Talat Noi Subdistrict",
+      "suburb": "Samphanthawong District",
+      "city": "Bangkok",
+      "ISO3166-2-lvl4": "TH-10",
+      "postcode": "10100",
+      "country": "Thailand",
+      "country_code": "th"
+     },
+     "boundingbox": [
+      "13.7297908",
+      "13.7309077",
+      "100.5127440",
+      "100.5137807"
+     ]
+    }
+   ]
+  }
+ ]
+}

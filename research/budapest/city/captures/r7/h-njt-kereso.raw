@@ -1,0 +1,1357 @@
+<!doctype html>
+<html lang="hu" data-ng-app="njtAppX" id="html">
+<head data-ng-non-bindable="true">
+    <base href="/">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+            <meta name="title" id="meta_title" content="Nemzeti Jogszabálytár – MKIFK Magyar Közlönykiadó és Igazságügyi Fordítóközpont Zrt."/>
+        <meta name="description" id="meta_description" content="Magyarország hivatalos, hiteles, ingyenesen használható jogszabálygyűjteménye, az MKIFK Magyar Közlönykiadó és Igazságügyi Fordítóközpont Zrt. gondozásában"/>
+        <title>Nemzeti Jogszabálytár – MKIFK Magyar Közlönykiadó és Igazságügyi Fordítóközpont Zrt.</title>
+    <link rel="icon" type="image/png" sizes="64x64" href="/favicon.png">
+
+        <link href="/css/njtfrontend-7106b941d9605d8cbe2cf85898ebbb4f4cce489d.css?v11c6e9fe8.14119.20261116143934.2.18.5" type="text/css" rel="stylesheet"/>
+    <script>
+    function iPM() {
+        let css = "";
+        const t = ['padding', 'margin'];
+        for (let e of t) {
+            for (let i = 0; i <= 64; i += 4) {
+                css += `
+                    .${e[0]}-${i}{${e}:${i}px}
+                    .${e[0]}b-${i}{${e}-bottom:${i}px}
+                    .${e[0]}t-${i}{${e}-top:${i}px}
+                    .${e[0]}l-${i}{${e}-left:${i}px}
+                    .${e[0]}r-${i}{${e}-right:${i}px}
+                    .${e[0]}x-${i}{${e}-left:${i}px;${e}-right:${i}px}
+                    .${e[0]}y-${i}{${e}-top:${i}px;${e}-bottom:${i}px}`;
+            }
+        }
+
+        const style = document.createElement('style');
+        style.type = 'text/css';
+        style.textContent = css;
+        document.head.appendChild(style);
+    }
+    iPM();
+
+</script>        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script>
+        window.njtLoadAnalytics = function () {
+            if (window.njtAnalyticsLoaded) {
+                return;
+            }
+            window.njtAnalyticsLoaded = true;
+
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = 'https://www.googletagmanager.com/gtag/js?id=UA-28015740-1';
+            document.head.appendChild(script);
+
+            window.dataLayer = window.dataLayer || [];
+            window.gtag = function () {
+                dataLayer.push(arguments);
+            };
+            gtag('js', new Date());
+            gtag('config', 'UA-28015740-1');
+        };
+
+        if (/(?:^|;\s*)acceptCookieLaw=true(?:;|$)/.test(document.cookie)) {
+            window.njtLoadAnalytics();
+        }
+    </script>
+        </head>
+<body class="resp-body">
+<div id="loading-bar-host" aria-hidden="true"></div>
+
+<div id="menu-overlay" class="relative" style="display: none">
+    <div class="fixed"></div>
+</div>
+
+<header id="header" data-ng-controller="accountCtrl" aria-label="Az oldal fejléce">
+    <div id="top_flag_line" class="top-flag-line-fixed">
+        <div id="top_header_line"
+                >
+
+            <div id="top-bar--desktop">
+                <div class="wrapper w-1200 flex justify-between items-center">
+                    
+
+<a class="accessiblehidden" id="jumpToSearch" href="#" onclick="return njtApp.scrollToSearchForm()" hidden>Ugrás a keresőre</a>
+<a class="accessiblehidden" id="jumpToContent" href="#" onclick="return njtApp.scrollToElement('main')">Ugrás a tartalomra</a>
+<nav aria-label="Portálok" class="top-links flex flex-nowrap items-center basis-full justify-between">
+    <div class="logo">
+        <a class="flex gap-10 text-medium no-underline" onclick="njtApp.njtService.resetSearchPaths()" href="/">
+            <img alt="Nemzeti Jogszabálytár logó" src="/bundles/njtfrontend/images/layout/logo/njt-logo-header.svg?v11c6e9fe8.14119.20261116143934.2.18.5"/>
+            Nemzeti Jogszabálytár
+        </a>
+                </div>    
+    <ul id="top-menu" class="text-medium flex gap-40 justify-center basis-full" aria-label="Fejléc hivatkozások">
+        <li>
+            <a href="https://jog.gov.hu/" class="no-underline" aria-label="Magyar Jogi Információs Portál - Külső hivatkozás" target="portal">Magyar Jogi Információs Portál</a><i class="ri-external-link-line"></i>
+        </li>
+        <li>
+            <a href="https://magyarkozlony.hu/" class="no-underline" aria-label="Magyar Közlöny Portál - Külső hivatkozás" target="_blank">Magyar Közlöny Portál</a><i class="ri-external-link-line"></i>
+        </li>
+        <li>
+            <a href="https://www.cegkozlony.hu/" class="no-underline" aria-label="Céginformációs Portál - Külső hivatkozás" target="_blank">Céginformációs Portál</a><i class="ri-external-link-line"></i>
+        </li>
+        <li>
+            <a href="https://eur-lex.europa.eu/homepage.html?locale=hu" class="no-underline" aria-label="EUR-LEX - Külső hivatkozás" target="_blank" >EUR-LEX</a><i class="ri-external-link-line"></i>   
+        </li>
+    </ul>
+   
+    <div><ul id="top-right" class="flex items-center justify-center gap-8"><li><a id="help" class="block no-underline" href="/kezikonyv" target="_blank" aria-label="Súgó - Új ablakban nyílik" data-njttip data-njttipposition="below" title="Súgó"><i class="ri-question-line text-24 color-white"></i></a></li><li><button onclick="njtApp.njtService.redirectToLogin()" class="login-button button outline inverted flex justify-center items-center" data-njttip data-njttipposition="below" title="Belépés" aria-label="Belépés"><i class="ri-user-line"></i></button></li></ul></div>
+</nav>
+                </div>
+            </div>
+
+            <div id="top-bar--mobile">
+                <div class="wrapper">
+                    <div class="top-bar">
+    <div class="logo">
+        <a class="flex gap-10 text-medium no-underline" onclick="njtApp.njtService.resetSearchPaths()" href="/">
+            <img alt="Nemzeti Jogszabálytár logó" src="/bundles/njtfrontend/images/layout/logo/njt-logo-header.svg?v11c6e9fe8.14119.20261116143934.2.18.5"/>
+            <span class="w-120">Nemzeti Jogszabálytár</span>
+        </a>
+ 
+    </div>
+
+    <div class="top-bar__button-container">
+        <ul class="flex items-center justify-center gap-8">
+            <li>
+                <a class="no-underline" href="/kezikonyv" target="_blank" aria-label="Súgó - Új ablakban nyílik" data-njttip data-njttipposition="below" title="Súgó">
+                    <i class="ri-question-line text-24 color-white"></i>
+                </a>
+            </li>
+
+                            
+                <li>
+                    <button onclick="njtApp.njtService.redirectToLogin()" class="login-button button outline inverted flex justify-center items-center" data-njttip data-njttipposition="below" title="Belépés" aria-label="Belépés">
+                        <i class="ri-user-line"></i>
+                    </button>
+                </li>
+
+                <li>
+                    <button data-ng-click="toggleMobileMenu()" class="button secondary flex justify-center items-center" data-njttip data-njttipposition="below" title="Menü" aria-label="Menü">
+                        <i class="ri-menu-line"></i>
+                    </button>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="top-bar__menu menu" id="mobile-menu" style="display: none" >
+
+        <div class="menu__row">
+            <div class="logo sidebar">
+                <a class="flex gap-10 text-medium no-underline"
+                   onclick="njtApp.njtService.resetSearchPaths()"
+                   href="/">
+                    <img alt="Nemzeti Jogszabálytár logó" src="/bundles/njtfrontend/images/layout/logo/njt-logo-header.svg?v11c6e9fe8.14119.20261116143934.2.18.5"/>
+                    <span class="w-120">Nemzeti Jogszabálytár</span>
+                </a>
+            </div>
+                        <button id="toggle-menu" data-ng-click="toggleMobileMenu(true)" data-njttip title="Bezárás" aria-label="Bezárás">
+                <i class="ri-close-line color-white text-24"></i>
+            </button>
+        </div>
+        <nav class="menu__links">
+                                        
+            <li class="cursor-pointer" onclick="njtApp.toggleMegnyitottak();">
+                <a href="#">Megnyitott jogszabályok</a>
+            </li>
+            <hr>
+
+                            <li><a href="/">Jogszabálytár</a></li>
+                        <li>
+                                                    <a aria-label="Önkormányzati rendeletek" href="/or"
+                            >
+                        Önkormányzati rendeletek
+                    </a>
+                            </li>
+            <li><a href="/justification_search">Indokolások Tára</a></li>
+            <li>
+                <a  href="/international_agreement/-/1/10">Nemzetközi szerződések</a>
+            </li>
+            <li>
+                <a href="/forditasok">Jogszabályfordítások</a>
+            </li>
+            <li>
+                <a href="/translations">Translated legislation</a>
+            </li>
+                                </nav>
+
+        <hr>
+        <nav class="menu__hyperlinks">
+            <li>
+                <a href="https://jog.gov.hu/" class="no-underline" aria-label="Magyar Jogi Információs Portál - Külső hivatkozás" target="_blank">Magyar Jogi Információs Portál</a>
+            </li>
+            <li>
+                <a href="https://magyarkozlony.hu/" class="no-underline" aria-label="Magyar Közlöny Portál - Külső hivatkozás" target="_blank">Magyar Közlöny Portál</a>
+            </li>
+            <li>
+                <a href="https://www.cegkozlony.hu/" class="no-underline" aria-label="Céginformációs Portál - Külső hivatkozás" target="_blank">Céginformációs Portál</a>
+            </li>
+            <li>
+                <a href="https://eur-lex.europa.eu/homepage.html?locale=hu" class="no-underline" aria-label="EUR-LEX - Külső hivatkozás" target="_blank" >EUR-LEX</a>
+            </li>
+        </nav>
+
+        
+    </div>
+
+</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="loggedin-menu-window" class="on-top-window">
+        <div class="section">
+    <div><a id="historyLink" href="/history/">Előzmények</a></div>
+    <div><a id="favouriteLink" href="/favourite/-/1">Kedvencek</a></div>
+    <div><a id="kerdoivLink" href="/elethelyzet/kerdoiv">Élethelyzet kérdőív</a></div>
+    <div><a id="elethelyzetLink" href="/elethelyzet/lista">Élethelyzet beállítás</a></div>
+        <div><a id="topicLink" href="/topic">Témakörök beállítása</a></div>
+    <div><a id="jogszabalyfigyelo" href="/jogszabalyfigyelo">Jogszabályfigyelő</a></div>
+    <div class="last"><a id="valtozasokLink" href="/valtozaskovetes/favourite/all">Változások követése</a></div>
+                <div><a id="accountLink" href="/account/modification">Beállítások</a></div>
+
+    
+    <div class="last mobile-fixed-logout"><a href="" data-ng-click="logout()">Kilépés</a></div>
+</div>
+
+
+
+
+
+
+
+    </div>
+</header><main id="main" tabindex="-1" aria-label="Az oldal tartalma">
+    <div id="orig" class="mainWrapper" data-ng-controller="origMainCtrl">
+            <h1 class="visuallyhidden">Jogszabálytár</h1>
+            <nav class="main-menu"
+            aria-label="Főmenü"
+                >
+        <div class="flex justify-center h-full">
+            <ul class="flex items-center text-medium gap-25">
+                                    <li><a class="selected" aria-current="page" href="/">Jogszabálytár</a></li>
+<li>
+                <a aria-label="Önkormányzati rendeletek"  href="/or">Önkormányzati rendeletek</a>
+    </li>
+<li>
+    <a href="/justification_search">Indokolások Tára</a>
+</li>
+<li>
+    <a  href="/international_agreement/-/1/10">Nemzetközi szerződések</a>
+</li>
+<li class="flex flex-row gap-4 items-center justify-center">
+    <a href="/forditasok">Jogszabályfordítások</a>
+    <span>/</span>
+    <a href="/translations">Translated legislation</a>
+</li>
+
+            </ul>
+        </div>
+    </nav>
+    <section class="search bg-justitia z-2 relative" data-ng-controller="searchSimpleCtrl" data-ng-init="initSimpleSearch()">
+        <div class="content wrapper pb-8 flex flex-col gap-32">
+
+            <form aria-labelledby="simpleSearchHeading" class="simple_search" data-search-form>
+    <div class="form" id="simpleSearchForm">
+        <h2 id="simpleSearchHeading" class="heading-3 color-white header-title--tablet">Jogszabálykereső</h2>
+        <div class="flex justify-center justify-between gap-10 input-holder pt-16">
+            <div class="flex flex-col gap-8">
+                <label for="evszam" class="heading-6 color-white" aria-hidden="true">Évszám</label>
+                <input class="main form-field w-110"
+                       data-njtinput
+                       placeholder="pl. 2014"
+                       value=""
+                       id="evszam"
+                       data-placeholder=" "
+                       aria-label="Évszám"
+                       maxlength="4"
+                       name="evszam"
+                                        />
+            </div>
+            <div class="flex flex-col gap-8">
+                <label for="sorszam" class="heading-6 color-white" aria-hidden="true">Sorszám</label>
+                <input class="main form-field w-110" data-njtinput name="sorszam" id="sorszam"
+                       placeholder="pl. CLV"
+                       value=""
+                       maxlength="15"
+                                               aria-label="Sorszám"
+                                        />
+            </div>
+            <div class="flex flex-col gap-8">
+                <label for="author_type" class="heading-6 color-white">Típus</label>
+                <select class="main form-field accessible simple_search__tipus"
+                        data-chosen=""
+                        data-inherit-select-classes="true"
+                        id="author_type"
+                        aria-label="Típus"
+                        data-allow-single-deselect="true"
+                        data-search-contains="true"
+                        data-accessible="true"
+                        data-placeholder="Minden típus"
+                        data-no-results-text="'Nincs ilyen típus:'"
+                        name="author_type"
+                                        >
+                    <option></option>
+                                                                                    
+
+                                                                                                                                        <option value="0002" data-display_value="Alaptörvény">Alaptörvény</option>
+                                                                                                <option value="0003" data-display_value="Alaptörvény Átmeneti Rendelkezései">Alaptörvény Átmeneti Rendelkezései</option>
+                                                                                                <option value="0004" data-display_value="Alaptörvénymódosítás">Alaptörvénymódosítás</option>
+                                                                                                <option value="00AM" data-display_value="Alkotmánymódosítás">Alkotmánymódosítás</option>
+                                                                                                <option value="0000" data-display_value="törvény">törvény</option>
+                                                                                                <option value="0010" data-display_value="törvényerejű rendelet">törvényerejű rendelet</option>
+                                                                                                <option value="2220" data-display_value="Korm. rendelet">Korm. rendelet</option>
+                                                                                                <option value="6520" data-display_value="MT rendelet">MT rendelet</option>
+                                                                                                <option value="2C20" data-display_value="MNB rendelet">MNB rendelet</option>
+                                                                                                <option value="6320" data-display_value="ME rendelet">ME rendelet</option>
+                                                                                                <option value="6N20" data-display_value="MvM rendelet">MvM rendelet</option>
+                                                                                                <option value="3120" data-display_value="AÉM rendelet">AÉM rendelet</option>
+                                                                                                <option value="7R20" data-display_value="AM rendelet">AM rendelet</option>
+                                                                                                <option value="0A20" data-display_value="BM rendelet">BM rendelet</option>
+                                                                                                <option value="8H20" data-display_value="CSTNM rendelet">CSTNM rendelet</option>
+                                                                                                <option value="0B20" data-display_value="EÜM rendelet">EÜM rendelet</option>
+                                                                                                <option value="0M20" data-display_value="ESZCSM rendelet">ESZCSM rendelet</option>
+                                                                                                <option value="3220" data-display_value="ÉKFM rendelet">ÉKFM rendelet</option>
+                                                                                                <option value="5H20" data-display_value="EMMI rendelet">EMMI rendelet</option>
+                                                                                                <option value="8Y20" data-display_value="EM rendelet">EM rendelet</option>
+                                                                                                <option value="9820" data-display_value="EUM rendelet">EUM rendelet</option>
+                                                                                                <option value="8M20" data-display_value="ÉBM rendelet">ÉBM rendelet</option>
+                                                                                                <option value="8X20" data-display_value="ÉKM rendelet">ÉKM rendelet</option>
+                                                                                                <option value="1020" data-display_value="ÉVM rendelet">ÉVM rendelet</option>
+                                                                                                <option value="SY20" data-display_value="FMM rendelet">FMM rendelet</option>
+                                                                                                <option value="8220" data-display_value="FVM rendelet">FVM rendelet</option>
+                                                                                                <option value="1120" data-display_value="FM rendelet">FM rendelet</option>
+                                                                                                <option value="8P20" data-display_value="GFM rendelet">GFM rendelet</option>
+                                                                                                <option value="9K20" data-display_value="GEM rendelet">GEM rendelet</option>
+                                                                                                <option value="0L20" data-display_value="GKM rendelet">GKM rendelet</option>
+                                                                                                <option value="8320" data-display_value="GM rendelet">GM rendelet</option>
+                                                                                                <option value="PP20" data-display_value="GYISM rendelet">GYISM rendelet</option>
+                                                                                                <option value="1520" data-display_value="HM rendelet">HM rendelet</option>
+                                                                                                <option value="8C20" data-display_value="ISM rendelet">ISM rendelet</option>
+                                                                                                <option value="1I20" data-display_value="ICSSZEM rendelet">ICSSZEM rendelet</option>
+                                                                                                <option value="0620" data-display_value="IM rendelet">IM rendelet</option>
+                                                                                                <option value="1U20" data-display_value="IRM rendelet">IRM rendelet</option>
+                                                                                                <option value="0P20" data-display_value="IHM rendelet">IHM rendelet</option>
+                                                                                                <option value="7Q20" data-display_value="ITM rendelet">ITM rendelet</option>
+                                                                                                <option value="6A20" data-display_value="IKM rendelet">IKM rendelet</option>
+                                                                                                <option value="1920" data-display_value="IPM rendelet">IPM rendelet</option>
+                                                                                                <option value="8020" data-display_value="IKIM rendelet">IKIM rendelet</option>
+                                                                                                <option value="6D20" data-display_value="KTM_ rendelet">KTM_ rendelet (Környezetvédelmi és területfejlesztési miniszter) </option>
+                                                                                                <option value="5F20" data-display_value="KVM rendelet">KVM rendelet</option>
+                                                                                                <option value="0N20" data-display_value="KVVM rendelet">KVVM rendelet</option>
+                                                                                                <option value="6620" data-display_value="KÖM rendelet">KÖM rendelet</option>
+                                                                                                <option value="2T20" data-display_value="KIM_ rendelet">KIM_ rendelet (Közigazgatási és igazságügyi miniszter) </option>
+                                                                                                <option value="9D20" data-display_value="KTM rendelet">KTM rendelet (Közigazgatási és területfejlesztési miniszter) </option>
+                                                                                                <option value="2420" data-display_value="KPM rendelet">KPM rendelet</option>
+                                                                                                <option value="2M20" data-display_value="KHEM rendelet">KHEM rendelet</option>
+                                                                                                <option value="9J20" data-display_value="KBM rendelet">KBM rendelet</option>
+                                                                                                <option value="9320" data-display_value="KÖVIM rendelet">KÖVIM rendelet</option>
+                                                                                                <option value="5E20" data-display_value="KÖHÉM rendelet">KÖHÉM rendelet</option>
+                                                                                                <option value="6B20" data-display_value="KHVM rendelet">KHVM rendelet</option>
+                                                                                                <option value="2020" data-display_value="KM rendelet">KM rendelet</option>
+                                                                                                <option value="3J20" data-display_value="K M rendelet">K M rendelet</option>
+                                                                                                <option value="8O20" data-display_value="KIM rendelet">KIM rendelet (Kultúráért és innovációért felelős miniszter) </option>
+                                                                                                <option value="6Q20" data-display_value="KKM rendelet">KKM rendelet</option>
+                                                                                                <option value="1F20" data-display_value="KkM rendelet">KkM rendelet</option>
+                                                                                                <option value="2720" data-display_value="KÜM rendelet">KÜM rendelet</option>
+                                                                                                <option value="2A20" data-display_value="MÉM rendelet">MÉM rendelet</option>
+                                                                                                <option value="8420" data-display_value="MEHVM rendelet">MEHVM rendelet</option>
+                                                                                                <option value="7G20" data-display_value="MK rendelet">MK rendelet</option>
+                                                                                                <option value="3920" data-display_value="MÜM rendelet">MÜM rendelet</option>
+                                                                                                <option value="6720" data-display_value="MKM rendelet">MKM rendelet</option>
+                                                                                                <option value="2B20" data-display_value="MM rendelet">MM rendelet</option>
+                                                                                                <option value="2X20" data-display_value="NGM rendelet">NGM rendelet</option>
+                                                                                                <option value="2V20" data-display_value="NEFMI rendelet">NEFMI rendelet</option>
+                                                                                                <option value="2W20" data-display_value="NFM rendelet">NFM rendelet</option>
+                                                                                                <option value="2K20" data-display_value="NFGM rendelet">NFGM rendelet</option>
+                                                                                                <option value="8620" data-display_value="NKÖM rendelet">NKÖM rendelet</option>
+                                                                                                <option value="7P20" data-display_value="NVTNM rendelet">NVTNM rendelet</option>
+                                                                                                <option value="3D20" data-display_value="NM rendelet">NM rendelet</option>
+                                                                                                <option value="4520" data-display_value="OM rendelet">OM rendelet</option>
+                                                                                                <option value="9M20" data-display_value="OGYM rendelet">OGYM rendelet</option>
+                                                                                                <option value="1W20" data-display_value="OKM rendelet">OKM rendelet</option>
+                                                                                                <option value="2L20" data-display_value="ÖM rendelet">ÖM rendelet</option>
+                                                                                                <option value="1V20" data-display_value="ÖTM rendelet">ÖTM rendelet</option>
+                                                                                                <option value="5320" data-display_value="PM rendelet">PM rendelet</option>
+                                                                                                <option value="2R20" data-display_value="PTNM rendelet">PTNM rendelet (Paksi Atomerőmű két új blokkja megépítéséért felelős tárca nélküli miniszter) </option>
+                                                                                                <option value="7K20" data-display_value="PTNM_ rendelet">PTNM_ rendelet (Polgári nemzetbiztonsági szolgálatokat irányító tárca nélküli miniszter) </option>
+                                                                                                <option value="8520" data-display_value="SZCSM rendelet">SZCSM rendelet</option>
+                                                                                                <option value="1X20" data-display_value="SZMM rendelet">SZMM rendelet</option>
+                                                                                                <option value="6F20" data-display_value="TNM rendelet">TNM rendelet</option>
+                                                                                                <option value="9L20" data-display_value="TKKM rendelet">TKKM rendelet</option>
+                                                                                                <option value="2S20" data-display_value="TM rendelet">TM rendelet</option>
+                                                                                                <option value="8N20" data-display_value="TIM rendelet">TIM rendelet</option>
+                                                                                                <option value="8Q20" data-display_value="TFM rendelet">TFM rendelet</option>
+                                                                                                <option value="9N20" data-display_value="TTM rendelet">TTM rendelet</option>
+                                                                                                <option value="9O20" data-display_value="VTM rendelet">VTM rendelet</option>
+                                                                                                <option value="2Y20" data-display_value="VM rendelet">VM rendelet</option>
+                                                                                                <option value="5Z20" data-display_value="MEKH rendelet">MEKH rendelet</option>
+                                                                                                <option value="3H20" data-display_value="NMHH rendelet">NMHH rendelet</option>
+                                                                                                <option value="8L20" data-display_value="OAH rendelet">OAH rendelet</option>
+                                                                                                <option value="0G20" data-display_value="PSZÁF rendelet">PSZÁF rendelet</option>
+                                                                                                <option value="8K20" data-display_value="SZTFH rendelet">SZTFH rendelet</option>
+                                                                                                <option value="7530" data-display_value="AB határozat">AB határozat</option>
+                                                                                                <option value="2930" data-display_value="AB Tü. határozat">AB Tü. határozat</option>
+                                                                                                <option value="4130" data-display_value="OGY határozat">OGY határozat</option>
+                                                                                                <option value="41H1" data-display_value="OGY politikai nyilatkozat">OGY politikai nyilatkozat</option>
+                                                                                                <option value="7630" data-display_value="KE határozat">KE határozat</option>
+                                                                                                <option value="2230" data-display_value="Korm. határozat">Korm. határozat</option>
+                                                                                                <option value="6330" data-display_value="ME határozat">ME határozat</option>
+                                                                                                <option value="6N30" data-display_value="MvM határozat">MvM határozat</option>
+                                                                                                <option value="0A30" data-display_value="BM határozat">BM határozat</option>
+                                                                                                <option value="0B30" data-display_value="EÜM határozat">EÜM határozat</option>
+                                                                                                <option value="5H30" data-display_value="EMMI határozat">EMMI határozat</option>
+                                                                                                <option value="8Y30" data-display_value="EM határozat">EM határozat</option>
+                                                                                                <option value="8230" data-display_value="FVM határozat">FVM határozat</option>
+                                                                                                <option value="8P30" data-display_value="GFM határozat">GFM határozat</option>
+                                                                                                <option value="0L30" data-display_value="GKM határozat">GKM határozat</option>
+                                                                                                <option value="PP30" data-display_value="GYISM határozat">GYISM határozat</option>
+                                                                                                <option value="1530" data-display_value="HM határozat">HM határozat</option>
+                                                                                                <option value="0630" data-display_value="IM határozat">IM határozat</option>
+                                                                                                <option value="1U30" data-display_value="IRM határozat">IRM határozat</option>
+                                                                                                <option value="8C30" data-display_value="ISM határozat">ISM határozat</option>
+                                                                                                <option value="7Q30" data-display_value="ITM határozat">ITM határozat</option>
+                                                                                                <option value="2M30" data-display_value="KHEM határozat">KHEM határozat</option>
+                                                                                                <option value="0N30" data-display_value="KVVM határozat">KVVM határozat</option>
+                                                                                                <option value="2T30" data-display_value="KIM_ határozat">KIM_ határozat (Közigazgatási és igazságügyi miniszter) </option>
+                                                                                                <option value="8O30" data-display_value="KIM határozat">KIM határozat (Kultúráért és innovációért felelős miniszter) </option>
+                                                                                                <option value="6Q30" data-display_value="KKM határozat">KKM határozat</option>
+                                                                                                <option value="2730" data-display_value="KÜM határozat">KÜM határozat</option>
+                                                                                                <option value="8430" data-display_value="MEHVM határozat">MEHVM határozat</option>
+                                                                                                <option value="7G30" data-display_value="MK határozat">MK határozat</option>
+                                                                                                <option value="2B30" data-display_value="MM határozat">MM határozat</option>
+                                                                                                <option value="2V30" data-display_value="NEFMI határozat">NEFMI határozat</option>
+                                                                                                <option value="2W30" data-display_value="NFM határozat">NFM határozat</option>
+                                                                                                <option value="2K30" data-display_value="NFGM határozat">NFGM határozat</option>
+                                                                                                <option value="2X30" data-display_value="NGM határozat">NGM határozat</option>
+                                                                                                <option value="7P30" data-display_value="NVTNM határozat">NVTNM határozat</option>
+                                                                                                <option value="4530" data-display_value="OM határozat">OM határozat</option>
+                                                                                                <option value="2L30" data-display_value="ÖM határozat">ÖM határozat</option>
+                                                                                                <option value="1W30" data-display_value="OKM határozat">OKM határozat</option>
+                                                                                                <option value="5330" data-display_value="PM határozat">PM határozat</option>
+                                                                                                <option value="8530" data-display_value="SZCSM határozat">SZCSM határozat</option>
+                                                                                                <option value="9N30" data-display_value="TTM határozat">TTM határozat</option>
+                                                                                                <option value="2Y30" data-display_value="VM határozat">VM határozat</option>
+                                                                                                <option value="HK30" data-display_value="HM KÁT határozat">HM KÁT határozat</option>
+                                                                                                <option value="9130" data-display_value="KKB határozat">KKB határozat</option>
+                                                                                                <option value="6H30" data-display_value="NVB határozat">NVB határozat</option>
+                                                                                                <option value="76B0" data-display_value="KE utasítás">KE utasítás</option>
+                                                                                                <option value="4TB0" data-display_value="OBH utasítás">OBH utasítás</option>
+                                                                                                <option value="E9B0" data-display_value="LÜ utasítás">LÜ utasítás</option>
+                                                                                                <option value="4SB0" data-display_value="AJB utasítás">AJB utasítás</option>
+                                                                                                <option value="5PB0" data-display_value="AJBH utasítás">AJBH utasítás</option>
+                                                                                                <option value="2CB0" data-display_value="MNB utasítás">MNB utasítás</option>
+                                                                                                <option value="74B0" data-display_value="ÁSZ utasítás">ÁSZ utasítás</option>
+                                                                                                <option value="9QB0" data-display_value="NVVH utasítás">NVVH utasítás</option>
+                                                                                                <option value="63B0" data-display_value="ME utasítás">ME utasítás</option>
+                                                                                                <option value="6NB0" data-display_value="MvM utasítás">MvM utasítás</option>
+                                                                                                <option value="31B0" data-display_value="AÉM utasítás">AÉM utasítás</option>
+                                                                                                <option value="7RB0" data-display_value="AM utasítás">AM utasítás</option>
+                                                                                                <option value="0AB0" data-display_value="BM utasítás">BM utasítás</option>
+                                                                                                <option value="8HB0" data-display_value="CSTNM utasítás">CSTNM utasítás</option>
+                                                                                                <option value="0BB0" data-display_value="EÜM utasítás">EÜM utasítás</option>
+                                                                                                <option value="0MB0" data-display_value="ESZCSM utasítás">ESZCSM utasítás</option>
+                                                                                                <option value="32B0" data-display_value="ÉKFM utasítás">ÉKFM utasítás</option>
+                                                                                                <option value="5HB0" data-display_value="EMMI utasítás">EMMI utasítás</option>
+                                                                                                <option value="8YB0" data-display_value="EM utasítás">EM utasítás</option>
+                                                                                                <option value="98B0" data-display_value="EUM utasítás">EUM utasítás</option>
+                                                                                                <option value="8MB0" data-display_value="ÉBM utasítás">ÉBM utasítás</option>
+                                                                                                <option value="8XB0" data-display_value="ÉKM utasítás">ÉKM utasítás</option>
+                                                                                                <option value="SYB0" data-display_value="FMM utasítás">FMM utasítás</option>
+                                                                                                <option value="11B0" data-display_value="FM utasítás">FM utasítás</option>
+                                                                                                <option value="82B0" data-display_value="FVM utasítás">FVM utasítás</option>
+                                                                                                <option value="8PB0" data-display_value="GFM utasítás">GFM utasítás</option>
+                                                                                                <option value="9KB0" data-display_value="GEM utasítás">GEM utasítás</option>
+                                                                                                <option value="0LB0" data-display_value="GKM utasítás">GKM utasítás</option>
+                                                                                                <option value="83B0" data-display_value="GM utasítás">GM utasítás</option>
+                                                                                                <option value="PPB0" data-display_value="GYISM utasítás">GYISM utasítás</option>
+                                                                                                <option value="15B0" data-display_value="HM utasítás">HM utasítás</option>
+                                                                                                <option value="8CB0" data-display_value="ISM utasítás">ISM utasítás</option>
+                                                                                                <option value="06B0" data-display_value="IM utasítás">IM utasítás</option>
+                                                                                                <option value="1UB0" data-display_value="IRM utasítás">IRM utasítás</option>
+                                                                                                <option value="0PB0" data-display_value="IHM utasítás">IHM utasítás</option>
+                                                                                                <option value="7QB0" data-display_value="ITM utasítás">ITM utasítás</option>
+                                                                                                <option value="80B0" data-display_value="IKIM utasítás">IKIM utasítás</option>
+                                                                                                <option value="6DB0" data-display_value="KTM_utasítás">KTM_utasítás (Környezetvédelmi és területfejlesztési miniszter) </option>
+                                                                                                <option value="2NB0" data-display_value="KFTNM utasítás">KFTNM utasítás</option>
+                                                                                                <option value="0NB0" data-display_value="KVVM utasítás">KVVM utasítás</option>
+                                                                                                <option value="66B0" data-display_value="KÖM utasítás">KÖM utasítás</option>
+                                                                                                <option value="2TB0" data-display_value="KIM_ utasítás">KIM_ utasítás (Közigazgatási és igazságügyi miniszter) </option>
+                                                                                                <option value="9DB0" data-display_value="KTM utasítás">KTM utasítás (Közigazgatási és területfejlesztési miniszter) </option>
+                                                                                                <option value="2MB0" data-display_value="KHEM utasítás">KHEM utasítás</option>
+                                                                                                <option value="9JB0" data-display_value="KBM utasítás">KBM utasítás</option>
+                                                                                                <option value="6BB0" data-display_value="KHVM utasítás">KHVM utasítás</option>
+                                                                                                <option value="6QB0" data-display_value="KKM utasítás">KKM utasítás</option>
+                                                                                                <option value="8OB0" data-display_value="KIM utasítás">KIM utasítás (Kultúráért és innovációért felelős miniszter) </option>
+                                                                                                <option value="27B0" data-display_value="KÜM utasítás">KÜM utasítás</option>
+                                                                                                <option value="84B0" data-display_value="MEHVM utasítás">MEHVM utasítás</option>
+                                                                                                <option value="7GB0" data-display_value="MK utasítás">MK utasítás</option>
+                                                                                                <option value="67B0" data-display_value="MKM utasítás">MKM utasítás</option>
+                                                                                                <option value="2VB0" data-display_value="NEFMI utasítás">NEFMI utasítás</option>
+                                                                                                <option value="2WB0" data-display_value="NFM utasítás">NFM utasítás</option>
+                                                                                                <option value="2KB0" data-display_value="NFGM utasítás">NFGM utasítás</option>
+                                                                                                <option value="2XB0" data-display_value="NGM utasítás">NGM utasítás</option>
+                                                                                                <option value="86B0" data-display_value="NKÖM utasítás">NKÖM utasítás</option>
+                                                                                                <option value="7PB0" data-display_value="NVTNM utasítás">NVTNM utasítás</option>
+                                                                                                <option value="45B0" data-display_value="OM utasítás">OM utasítás</option>
+                                                                                                <option value="9MB0" data-display_value="OGYM utasítás">OGYM utasítás</option>
+                                                                                                <option value="1WB0" data-display_value="OKM utasítás">OKM utasítás</option>
+                                                                                                <option value="2LB0" data-display_value="ÖM utasítás">ÖM utasítás</option>
+                                                                                                <option value="1VB0" data-display_value="ÖTM utasítás">ÖTM utasítás</option>
+                                                                                                <option value="53B0" data-display_value="PM utasítás">PM utasítás</option>
+                                                                                                <option value="85B0" data-display_value="SZCSM utasítás">SZCSM utasítás</option>
+                                                                                                <option value="1XB0" data-display_value="SZMM utasítás">SZMM utasítás</option>
+                                                                                                <option value="9LB0" data-display_value="TKKM utasítás">TKKM utasítás</option>
+                                                                                                <option value="2SB0" data-display_value="TM utasítás">TM utasítás</option>
+                                                                                                <option value="6FB0" data-display_value="TNM utasítás">TNM utasítás</option>
+                                                                                                <option value="8NB0" data-display_value="TIM utasítás">TIM utasítás</option>
+                                                                                                <option value="8QB0" data-display_value="TFM utasítás">TFM utasítás</option>
+                                                                                                <option value="9NB0" data-display_value="TTM utasítás">TTM utasítás</option>
+                                                                                                <option value="9OB0" data-display_value="VTM utasítás">VTM utasítás</option>
+                                                                                                <option value="2YB0" data-display_value="VM utasítás">VM utasítás</option>
+                                                                                                <option value="2UB0" data-display_value="MeG utasítás">MeG utasítás</option>
+                                                                                                <option value="6RB0" data-display_value="ME KÁT utasítás">ME KÁT utasítás</option>
+                                                                                                <option value="7WB0" data-display_value="AM KÁT utasítás">AM KÁT utasítás</option>
+                                                                                                <option value="5TB0" data-display_value="BM KÁT utasítás">BM KÁT utasítás</option>
+                                                                                                <option value="5RB0" data-display_value="EMMI KÁT utasítás">EMMI KÁT utasítás</option>
+                                                                                                <option value="9CB0" data-display_value="EM KÁT utasítás">EM KÁT utasítás</option>
+                                                                                                <option value="9BB0" data-display_value="EUM KÁT utasítás">EUM KÁT utasítás</option>
+                                                                                                <option value="8UB0" data-display_value="ÉBM KÁT utasítás">ÉBM KÁT utasítás</option>
+                                                                                                <option value="9GB0" data-display_value="ÉKM KÁT utasítás">ÉKM KÁT utasítás</option>
+                                                                                                <option value="6PB0" data-display_value="FM KÁT utasítás">FM KÁT utasítás</option>
+                                                                                                <option value="95B0" data-display_value="GFM KÁT utasítás">GFM KÁT utasítás</option>
+                                                                                                <option value="HKB0" data-display_value="HM KÁT utasítás">HM KÁT utasítás</option>
+                                                                                                <option value="6SB0" data-display_value="IM KÁT utasítás">IM KÁT utasítás</option>
+                                                                                                <option value="7TB0" data-display_value="ITM KÁT utasítás">ITM KÁT utasítás</option>
+                                                                                                <option value="5MB0" data-display_value="KIM KÁT_ utasítás">KIM KÁT_ utasítás (Közigazgatási és Igazságügyi Minisztérium közigazgatási államtitkára) </option>
+                                                                                                <option value="9EB0" data-display_value="KTM KÁT utasítás">KTM KÁT utasítás</option>
+                                                                                                <option value="9AB0" data-display_value="KIM KÁT utasítás">KIM KÁT utasítás (Kulturális és Innovációs Minisztérium közigazgatási államtitkára) </option>
+                                                                                                <option value="5UB0" data-display_value="KÜM KÁT utasítás">KÜM KÁT utasítás</option>
+                                                                                                <option value="6OB0" data-display_value="KKM KÁT utasítás">KKM KÁT utasítás</option>
+                                                                                                <option value="7HB0" data-display_value="MK KÁT utasítás">MK KÁT utasítás</option>
+                                                                                                <option value="7VB0" data-display_value="MKI KÁT utasítás">MKI KÁT utasítás</option>
+                                                                                                <option value="4WB0" data-display_value="NEFMI KÁT utasítás">NEFMI KÁT utasítás</option>
+                                                                                                <option value="5VB0" data-display_value="NFM KÁT utasítás">NFM KÁT utasítás</option>
+                                                                                                <option value="4XB0" data-display_value="NGM KÁT utasítás">NGM KÁT utasítás</option>
+                                                                                                <option value="7UB0" data-display_value="PM KÁT utasítás">PM KÁT utasítás</option>
+                                                                                                <option value="9PB0" data-display_value="VTM KÁT utasítás">VTM KÁT utasítás</option>
+                                                                                                <option value="5JB0" data-display_value="VM KÁT utasítás">VM KÁT utasítás</option>
+                                                                                                <option value="9HB0" data-display_value="SP utasítás">SP utasítás</option>
+                                                                                                <option value="5ZB0" data-display_value="MEKH utasítás">MEKH utasítás</option>
+                                                                                                <option value="8LB0" data-display_value="OAH utasítás">OAH utasítás</option>
+                                                                                                <option value="8KB0" data-display_value="SZTFH utasítás">SZTFH utasítás</option>
+                                                                                                <option value="5QB0" data-display_value="EBH utasítás">EBH utasítás</option>
+                                                                                                <option value="8ZB0" data-display_value="EUTAF utasítás">EUTAF utasítás</option>
+                                                                                                <option value="77B0" data-display_value="GVH utasítás">GVH utasítás</option>
+                                                                                                <option value="7OB0" data-display_value="KH utasítás">KH utasítás</option>
+                                                                                                <option value="6JB0" data-display_value="NVI utasítás">NVI utasítás</option>
+                                                                                                <option value="3KB0" data-display_value="NAV utasítás">NAV utasítás</option>
+                                                                                                <option value="7NB0" data-display_value="NEAK utasítás">NEAK utasítás</option>
+                                                                                                <option value="7YB0" data-display_value="NFK utasítás">NFK utasítás</option>
+                                                                                                <option value="6YB0" data-display_value="NKFIH utasítás">NKFIH utasítás</option>
+                                                                                                <option value="3IB0" data-display_value="SZTNH utasítás">SZTNH utasítás</option>
+                                                                                                <option value="F6B0" data-display_value="SZF utasítás">SZF utasítás</option>
+                                                                                                <option value="6ZB0" data-display_value="SZGYF utasítás">SZGYF utasítás</option>
+                                                                                                <option value="9FB0" data-display_value="SZH utasítás">SZH utasítás</option>
+                                                                                                <option value="6MB0" data-display_value="KIFÜ utasítás">KIFÜ utasítás</option>
+                                                                                                <option value="JAB0" data-display_value="MÁK utasítás">MÁK utasítás</option>
+                                                                                                <option value="7MB0" data-display_value="MBFSZ utasítás">MBFSZ utasítás</option>
+                                                                                                <option value="7ZB0" data-display_value="OIF utasítás">OIF utasítás</option>
+                                                                                                <option value="8IB0" data-display_value="OKFŐ utasítás">OKFŐ utasítás</option>
+                                                                                                <option value="8EB0" data-display_value="ORFK utasítás">ORFK utasítás</option>
+                                                                                                <option value="4VB0" data-display_value="BM OKF utasítás">BM OKF utasítás</option>
+                                                                                                <option value="3MB0" data-display_value="BVOP utasítás">BVOP utasítás</option>
+                                                                                                <option value="STB0" data-display_value="HVKF utasítás">HVKF utasítás</option>
+                                                                                                <option value="7QC2" data-display_value="ITM _közlemény">ITM _közlemény</option>
+                                                                                                <option value="8EC2" data-display_value="ORFK _közlemény">ORFK _közlemény</option>
+                                                                                                <option value="94C2" data-display_value="OTFO _közlemény">OTFO _közlemény</option>
+                                                                                                <option value="2CC0" data-display_value="MNB közlemény">MNB közlemény</option>
+                                                                                                <option value="0AC0" data-display_value="BM közlemény">BM közlemény</option>
+                                                                                                <option value="32C0" data-display_value="ÉKFM közlemény">ÉKFM közlemény</option>
+                                                                                                <option value="6QC0" data-display_value="KKM közlemény">KKM közlemény</option>
+                                                                                                <option value="27C0" data-display_value="KÜM közlemény">KÜM közlemény</option>
+                                                                                                <option value="6NC0" data-display_value="MvM közlemény">MvM közlemény</option>
+                                                                                                <option value="2XC0" data-display_value="NGM közlemény">NGM közlemény</option>
+                                                                                                <option value="53C0" data-display_value="PM közlemény">PM közlemény</option>
+                                                                                                <option value="85C0" data-display_value="SZCSM közlemény">SZCSM közlemény</option>
+                                                                                                <option value="3KC0" data-display_value="NAV közlemény">NAV közlemény</option>
+                                                                                                <option value="25C0" data-display_value="KSH közlemény">KSH közlemény</option>
+                                                                                                <option value="3HC0" data-display_value="NMHH közlemény">NMHH közlemény</option>
+                                                                                                <option value="6HC0" data-display_value="NVB közlemény">NVB közlemény</option>
+                                                                                                <option value="5ZA0" data-display_value="MEKH hirdetmény">MEKH hirdetmény</option>
+                                                                                                <option value="0040" data-display_value="helyesbítés">helyesbítés</option>
+                                                            </select>
+            </div>
+            <div class="flex flex-col gap-8">
+                <label for="szokereso" class="heading-6 color-white" aria-hidden="true">Szó vagy kifejezés</label>
+                <input  maxlength="200" autocomplete="off" class="main form-field ng-cloak simple_search__szokereso" data-njtinput name="szokereso" id="szokereso" aria-label="Szó vagy kifejezés"
+                        placeholder="pl. munkaviszony"
+                        value=""/>
+            </div>
+            <div class="flex flex-col gap-8">
+                <label for="topics" class="heading-6 color-white">Témakör</label>
+                <select class="main form-field accessible w-full simple_search__topics"
+                        data-chosen=""
+                        data-inherit-select-classes="true"
+                        id="topics"
+                        aria-label="Témakör"
+                        data-allow-single-deselect="true"
+                        data-search-contains="true"
+                        data-accessible="true"
+                        data-placeholder="Minden témakör"
+                        data-no-results-text="'Nincs ilyen témakör:'"
+                        name="topics"
+                                        >
+                    <option></option>
+                                        
+                                                                        <option value="0136">Adatvédelem és adatkezelés, információbiztonság</option>
+                                                                                                <option value="0062">Adóigazgatás</option>
+                                                                                                <option value="0001">Adók és egyéb közterhek</option>
+                                                                                                <option value="0018">Agrárjog és vidékfejlesztés</option>
+                                                                                                <option value="0205">Agrárpiaci rendtartás</option>
+                                                                                                <option value="0251">Alapjogok</option>
+                                                                                                <option value="0182">Atomenergia</option>
+                                                                                                <option value="0076">Államháztartás</option>
+                                                                                                <option value="0151">Állami pénzalapok</option>
+                                                                                                <option value="0094">Állami Számvevőszék</option>
+                                                                                                <option value="0225">Állami vagyon</option>
+                                                                                                <option value="0075">Államigazgatás</option>
+                                                                                                <option value="0077">Állampolgárság</option>
+                                                                                                <option value="0071">Állategészségügy</option>
+                                                                                                <option value="0028">Állattenyésztés</option>
+                                                                                                <option value="0163">Állatvédelem</option>
+                                                                                                <option value="0235">Árvízvédelem, belvízvédelem</option>
+                                                                                                <option value="0242">Balaton</option>
+                                                                                                <option value="0141">Bányászat</option>
+                                                                                                <option value="0228">Befektetési vállalkozások</option>
+                                                                                                <option value="0154">Betegellátás</option>
+                                                                                                <option value="0050">Bíróság</option>
+                                                                                                <option value="0175">Biztonsági Szabályzatok</option>
+                                                                                                <option value="0002">Biztosítási jog</option>
+                                                                                                <option value="0027">Borászat</option>
+                                                                                                <option value="0066">Büntetésvégrehajtás és szervezete</option>
+                                                                                                <option value="0064">Büntetőeljárás</option>
+                                                                                                <option value="0011">Büntetőjog</option>
+                                                                                                <option value="0247">Büntetőügyekben történő együttműködés</option>
+                                                                                                <option value="0150">Cégeljárás és végelszámolás</option>
+                                                                                                <option value="0192">Civil szervezetek</option>
+                                                                                                <option value="0124">Családi gazdaságok</option>
+                                                                                                <option value="0110">Családjog</option>
+                                                                                                <option value="0117">Családtámogatás</option>
+                                                                                                <option value="0111">Csőd- és felszámolási eljárás</option>
+                                                                                                <option value="0258">CSOK (családi otthonteremtési kedvezmény)</option>
+                                                                                                <option value="0081">Diplomáciai, konzuli kapcsolatok</option>
+                                                                                                <option value="0137">Díjak, kitüntetések, elismerések</option>
+                                                                                                <option value="0160">Egészségbiztosítás felügyelete</option>
+                                                                                                <option value="0008">Egészségügy</option>
+                                                                                                <option value="0155">Egészségügyi szakmai szervezetek</option>
+                                                                                                <option value="0078">Egyházak</option>
+                                                                                                <option value="0069">Elektronikus dokumentumok, elektronikus aláírás</option>
+                                                                                                <option value="0194">Elektronikus ügyintézés</option>
+                                                                                                <option value="0252">Előadó-művészet</option>
+                                                                                                <option value="0120">Emberi jogok</option>
+                                                                                                <option value="0219">Emlékérmék</option>
+                                                                                                <option value="0231">Energiapolitika, energiatakarékosság</option>
+                                                                                                <option value="0140">Erdővédelem és erdőgazdálkodás</option>
+                                                                                                <option value="0118">Esélyegyenlőség</option>
+                                                                                                <option value="0214">Európai együttműködés</option>
+                                                                                                <option value="0034">Élelmiszerbiztonság</option>
+                                                                                                <option value="0003">Építésügy</option>
+                                                                                                <option value="0180">Fegyverek, robbanószerek</option>
+                                                                                                <option value="0108">Felnőttképzés</option>
+                                                                                                <option value="0105">Felsőoktatás</option>
+                                                                                                <option value="0254">Film</option>
+                                                                                                <option value="0060">Foglalkoztatás, munkaerőpiac</option>
+                                                                                                <option value="0019">Fogyasztóvédelem</option>
+                                                                                                <option value="0119">Fogyatékossággal élők</option>
+                                                                                                <option value="0203">Földgázellátás</option>
+                                                                                                <option value="0210">Földmérés és térképészet</option>
+                                                                                                <option value="0188">Frekvenciagazdálkodás</option>
+                                                                                                <option value="0256">Fuvarozás</option>
+                                                                                                <option value="0158">Géntechnológia</option>
+                                                                                                <option value="0031">Gépjármű-felelősségbiztosítás</option>
+                                                                                                <option value="0138">Gyermekvédelem</option>
+                                                                                                <option value="0162">Gyógyszerészet, gyógyszerek, gyógyászati segédeszközök</option>
+                                                                                                <option value="0143">Hadijog</option>
+                                                                                                <option value="0217">Haditechnika</option>
+                                                                                                <option value="0164">Halászat és horgászat</option>
+                                                                                                <option value="0215">Határforgalom, államhatár</option>
+                                                                                                <option value="0172">Határon túli magyarok támogatása</option>
+                                                                                                <option value="0161">Háziorvosok</option>
+                                                                                                <option value="0063">Helyi adók</option>
+                                                                                                <option value="0099">Hivatásos állomány</option>
+                                                                                                <option value="0046">Honvédelem, honvédség</option>
+                                                                                                <option value="0040">Hulladékgazdálkodás</option>
+                                                                                                <option value="0102">Idegenrendészet</option>
+                                                                                                <option value="0048">Igazságszolgáltatás</option>
+                                                                                                <option value="0037">Igazságszolgáltatás díjszabásai</option>
+                                                                                                <option value="0053">Igazságügyi alkalmazottak</option>
+                                                                                                <option value="0168">Igazságügyi szakértők</option>
+                                                                                                <option value="0020">Illetékek, igazgatási szolgáltatási díjak</option>
+                                                                                                <option value="0193">Információs társadalom</option>
+                                                                                                <option value="0004">Ingatlanjog</option>
+                                                                                                <option value="0224">Iratkezelés, irattározás, levéltár, archív okiratok</option>
+                                                                                                <option value="0201">Ivóvízellátás, szennyvízelvezetés</option>
+                                                                                                <option value="0153">Járványügy</option>
+                                                                                                <option value="0092">Jegybanki előírások és tevékenység</option>
+                                                                                                <option value="0079">Jogalkotás</option>
+                                                                                                <option value="0222">Jövedéki adó, jövedéki termékek</option>
+                                                                                                <option value="0236">Jövő nemzedéke, ifjúságpolitika</option>
+                                                                                                <option value="0091">Kamarák</option>
+                                                                                                <option value="0103">Katasztrófavédelem</option>
+                                                                                                <option value="0207">Kábítószerek, pszichotróp anyagok</option>
+                                                                                                <option value="0030">Kárpótlás</option>
+                                                                                                <option value="0114">Kereskedelem, szolgáltatás</option>
+                                                                                                <option value="0000">Kiberbiztonság</option>
+                                                                                                <option value="0253">Kiemelt hatósági ügyek</option>
+                                                                                                <option value="0130">Kisajátítás</option>
+                                                                                                <option value="0255">Könyvvizsgálók</option>
+                                                                                                <option value="0005">Környezetvédelem</option>
+                                                                                                <option value="0055">Közalkalmazottak</option>
+                                                                                                <option value="0012">Közbeszerzések</option>
+                                                                                                <option value="0033">Közigazgatási ügyintézés</option>
+                                                                                                <option value="0054">Közjegyzők</option>
+                                                                                                <option value="0013">Közjog</option>
+                                                                                                <option value="0132">Közlekedés</option>
+                                                                                                <option value="0146">Közlekedés, közúti</option>
+                                                                                                <option value="0147">Közlekedés, légi</option>
+                                                                                                <option value="0145">Közlekedés, vasúti</option>
+                                                                                                <option value="0148">Közlekedés, vízi</option>
+                                                                                                <option value="0232">Közművelődés, könyvtárak</option>
+                                                                                                <option value="0104">Köznevelés</option>
+                                                                                                <option value="0250">Köztestületek</option>
+                                                                                                <option value="0036">Közüzemi szolgáltatások</option>
+                                                                                                <option value="0056">Közszolgálati tisztviselők</option>
+                                                                                                <option value="0032">Kulturális örökség védelme</option>
+                                                                                                <option value="0212">Kutatás-fejlesztés</option>
+                                                                                                <option value="0044">Külföldi és hazai képesítések, diplomák elismerése</option>
+                                                                                                <option value="0084">Külföldiek jogállása</option>
+                                                                                                <option value="0041">Lakáscélú támogatás, lakáshitel</option>
+                                                                                                <option value="0042">Lakások és helyiségek bérlete, elidegenítése</option>
+                                                                                                <option value="0173">Levegővédelem</option>
+                                                                                                <option value="0241">Lobbitevékenység</option>
+                                                                                                <option value="0085">Menekültügy</option>
+                                                                                                <option value="0023">Mesterséges intelligencia</option>
+                                                                                                <option value="0187">Médiaszolgáltatás, tömegkommunikáció</option>
+                                                                                                <option value="0208">Mérésügy</option>
+                                                                                                <option value="0209">Minősített adat</option>
+                                                                                                <option value="0006">Munkajog</option>
+                                                                                                <option value="0057">Munkavédelem</option>
+                                                                                                <option value="0237">Műemlékvédelem</option>
+                                                                                                <option value="0226">NATO</option>
+                                                                                                <option value="0259">Nemdohányzók védelme, dohánytermékek szabályozása</option>
+                                                                                                <option value="0176">Nemzetbiztonság</option>
+                                                                                                <option value="0213">Nemzeti fejlesztési programok</option>
+                                                                                                <option value="0169">Nemzeti parkok</option>
+                                                                                                <option value="0080">Nemzetiségek</option>
+                                                                                                <option value="0134">Nemzetközi közjog</option>
+                                                                                                <option value="0135">Nemzetközi magánjog</option>
+                                                                                                <option value="0157">Népegészségügyi igazgatás</option>
+                                                                                                <option value="0227">Népességnyilvántartás</option>
+                                                                                                <option value="0014">Névviselés, anyakönyvezés</option>
+                                                                                                <option value="0179">Növényi szaporítóanyagok</option>
+                                                                                                <option value="0029">Növénytermesztés</option>
+                                                                                                <option value="0178">Növényvédelem</option>
+                                                                                                <option value="0206">Nyelvvizsga</option>
+                                                                                                <option value="0122">Nyugdíjak</option>
+                                                                                                <option value="0087">Országgyűlés</option>
+                                                                                                <option value="0015">Önkormányzati jog</option>
+                                                                                                <option value="0125">Önkormányzatok működése, gazdálkodása</option>
+                                                                                                <option value="0139">Önkormányzatok támogatása</option>
+                                                                                                <option value="0126">Önkormányzatok társulásai</option>
+                                                                                                <option value="0115">Öröklés</option>
+                                                                                                <option value="0107">Ösztöndíjak, tehetséggondozás</option>
+                                                                                                <option value="0245">Pálinka</option>
+                                                                                                <option value="0112">Pénz és értékpapírok</option>
+                                                                                                <option value="0144">Pénzmosás és terrorizmus elleni küzdelem</option>
+                                                                                                <option value="0093">Pénzügyi szervezetek állami felügyelete</option>
+                                                                                                <option value="0109">Pénzügyi vállalkozások és hitelintézetek</option>
+                                                                                                <option value="0123">Polgári eljárásjog</option>
+                                                                                                <option value="0007">Polgári jog</option>
+                                                                                                <option value="0101">Polgárőrség</option>
+                                                                                                <option value="0070">Postai szolgáltatás</option>
+                                                                                                <option value="0189">Rádiózás, televíziózás</option>
+                                                                                                <option value="0097">Reklámjog</option>
+                                                                                                <option value="0100">Rendőrség, rendvédelem</option>
+                                                                                                <option value="0238">Régészet</option>
+                                                                                                <option value="0190">Sajtójog</option>
+                                                                                                <option value="0131">Sport</option>
+                                                                                                <option value="0186">Statisztika</option>
+                                                                                                <option value="0230">Sugárzás elleni védelem</option>
+                                                                                                <option value="0199">Szabadalom, szabadalmi eljárás</option>
+                                                                                                <option value="0067">Szabálysértési jog</option>
+                                                                                                <option value="0198">Szabványok</option>
+                                                                                                <option value="0185">Szakértői tevékenység</option>
+                                                                                                <option value="0106">Szakképzés</option>
+                                                                                                <option value="0183">Szavatosság, jótállás</option>
+                                                                                                <option value="0061">Számvitel</option>
+                                                                                                <option value="0113">Szellemi alkotások</option>
+                                                                                                <option value="0142">Szerencsejátékok</option>
+                                                                                                <option value="0211">Szervezett bűnözés elleni küzdelem</option>
+                                                                                                <option value="0196">Szerzői jog</option>
+                                                                                                <option value="0016">Szociális jog, szociális ellátások</option>
+                                                                                                <option value="0249">Szomszédos államokkal való együttműködés</option>
+                                                                                                <option value="0234">Szőlészet</option>
+                                                                                                <option value="0025">Szövetkezetek</option>
+                                                                                                <option value="0059">Sztrájkjog</option>
+                                                                                                <option value="0171">Tájvédelmi körzetek</option>
+                                                                                                <option value="0166">Támogatások, agrártámogatás</option>
+                                                                                                <option value="0167">Támogatások, egyéb költségvetési</option>
+                                                                                                <option value="0017">Támogatások, Európai Uniós források</option>
+                                                                                                <option value="0229">Támogatások, oktatási</option>
+                                                                                                <option value="0045">Társadalombiztosítás</option>
+                                                                                                <option value="0009">Társasági jog</option>
+                                                                                                <option value="0043">Társasházak</option>
+                                                                                                <option value="0202">Távhőszolgáltatás</option>
+                                                                                                <option value="0244">Temetkezés</option>
+                                                                                                <option value="0035">Termékbiztonság</option>
+                                                                                                <option value="0257">Természetes személyek adósságrendezése</option>
+                                                                                                <option value="0156">Természetgyógyászat</option>
+                                                                                                <option value="0073">Természetvédelem</option>
+                                                                                                <option value="0170">Természetvédelmi területek</option>
+                                                                                                <option value="0246">Terrorizmus elleni küzdelem</option>
+                                                                                                <option value="0010">Területfejlesztés és területrendezés</option>
+                                                                                                <option value="0220">Területszervezés</option>
+                                                                                                <option value="0177">Turizmus</option>
+                                                                                                <option value="0218">Tűzvédelem, tűzoltóság</option>
+                                                                                                <option value="0223">Úti okmányok, külföldre utazás</option>
+                                                                                                <option value="0051">Ügyészség</option>
+                                                                                                <option value="0184">Ügyészségi alkalmazottak</option>
+                                                                                                <option value="0052">Ügyvédek</option>
+                                                                                                <option value="0026">Vadgazdálkodás és vadvédelem</option>
+                                                                                                <option value="0191">Választások, helyi és nemzetiségi; népszavazás</option>
+                                                                                                <option value="0089">Választások, országgyűlési és EP; népszavazás</option>
+                                                                                                <option value="0088">Választottbíráskodás</option>
+                                                                                                <option value="0022">Vállalkozás</option>
+                                                                                                <option value="0021">Vámok, vámigazgatás</option>
+                                                                                                <option value="0216">Vámszervezet</option>
+                                                                                                <option value="0240">Vendéglátás</option>
+                                                                                                <option value="0116">Versenyjog</option>
+                                                                                                <option value="0181">Veszélyes anyagok</option>
+                                                                                                <option value="0260">Veszélyhelyzet</option>
+                                                                                                <option value="0197">Védjegyek, árujelzők</option>
+                                                                                                <option value="0152">Végrehajtási jog</option>
+                                                                                                <option value="0159">Vérellátás</option>
+                                                                                                <option value="0204">Villamosenergia-szolgáltatás</option>
+                                                                                                <option value="0248">Visegrádi együttműködés</option>
+                                                                                                <option value="0149">Vízgazdálkodás</option>
+                                                                                                <option value="0221">Vízum, vízummentesség</option>
+                                                                                                <option value="0174">Vízvédelem</option>
+                                                                                                <option value="0165">Zaj- és rezgésvédelem</option>
+                                            
+                </select>
+            </div>
+        </div>
+        <div class="clbo space"></div>
+
+        <div class="flex basis-full">
+            <div class="flex flex-wrap gap-16 basis-full checkbox-holder">
+                <div>
+                    <input name="csak_hatalyos" id="csak_hatalyos" aria-label="Keresés csak hatályos jogszabályban" type="checkbox" /><label for="csak_hatalyos" class="checkbox text-medium color-white">csak hatályos</label>
+                </div>
+                <div>
+                    <input name="gazette_state" id="gazette_state" aria-label="csak a kihirdetett szövegben" type="checkbox" />
+                    <label for="gazette_state" class="checkbox text-medium color-white">
+                        a kihirdetett szövegben</label>
+                </div>
+                <div>
+                    <input id="modositok_kihagyasa" type="checkbox"
+                                                                   aria-label="Módosítók kihagyása"/>
+                    <label for="modositok_kihagyasa" class="checkbox text-medium color-white">módosítók kihagyása</label>
+                </div>
+                <div class="simple_search__pontos_szora">
+                    <input name="pontos_szora" id="pontos_szora" type="checkbox"  aria-label="pontos szóra szűrés"/>
+                    <label for="pontos_szora" class="checkbox text-medium color-white">pontos egyezés</label>
+                </div>
+                <div>
+                    <input id="csak_cimben" type="checkbox"  aria-label="Keresés csak a címben"/>
+                    <label for="csak_cimben" class="checkbox text-medium color-white">csak címben</label>
+                </div>
+            </div>
+        </div>
+
+
+                <div class="search-button-container">
+            <div class="w-full">
+                <div class="flex flex-wrap                     
+                        justify-between
+                         search-button-container__content">
+                                            <div class="flex gap-10 items-center py-16">
+                            <label class="switch">
+                                <input id="onkormanyzati_kor" type="checkbox" aria-label="Önkormányzati körben is keressen"
+                                                                       >
+                                <span class="slider"></span>
+                            </label>
+                            <label for="onkormanyzati_kor" class="checkbox text-medium color-white">Önkormányzati körben is keressen</label>
+                        </div>
+                                        <div class="button-bar flex items-end gap-16 justify-between">
+                                                    <div class="megye-container hidden flex-1">
+                                <label for="megyek" class="heading-6 color-white">Megye</label>
+                                <select class="main form-field accessible w-full"
+                                        data-chosen=""
+                                        data-inherit-select-classes="true"
+                                        id="megyek"
+                                        aria-label="Megye"
+                                        data-allow-single-deselect="true"
+                                        data-search-contains="true"
+                                        data-accessible="true"
+                                        data-placeholder="Minden megye"
+                                        data-no-results-text="'Nincs ilyen megye:'"
+                                        name="megyek">
+                                    <option></option>
+                                                                        
+                                                                                                                        <option value="1">Budapest</option>
+                                                                                                                                                                <option value="12">Baranya</option>
+                                                                                                                                                                <option value="11">Bács-Kiskun</option>
+                                                                                                                                                                <option value="9">Békés</option>
+                                                                                                                                                                <option value="5">Borsod-Abaúj-Zemplén</option>
+                                                                                                                                                                <option value="10">Csongrád-Csanád</option>
+                                                                                                                                                                <option value="19">Fejér</option>
+                                                                                                                                                                <option value="16">Győr-Moson-Sopron</option>
+                                                                                                                                                                <option value="7">Hajdú-Bihar</option>
+                                                                                                                                                                <option value="4">Heves</option>
+                                                                                                                                                                <option value="8">Jász-Nagykun-Szolnok</option>
+                                                                                                                                                                <option value="17">Komárom-Esztergom</option>
+                                                                                                                                                                <option value="3">Nógrád</option>
+                                                                                                                                                                <option value="2">Pest</option>
+                                                                                                                                                                <option value="13">Somogy</option>
+                                                                                                                                                                <option value="6">Szabolcs-Szatmár-Bereg</option>
+                                                                                                                                                                <option value="20">Tolna</option>
+                                                                                                                                                                <option value="15">Vas</option>
+                                                                                                                                                                <option value="18">Veszprém</option>
+                                                                                                                                                                <option value="14">Zala</option>
+                                                                                                            </select>
+                            </div>
+                            <div class="telepules_kibocsato-wrapper hidden flex-1">
+                                <label for="telepules_kibocsato" class="heading-6 color-white">Kibocsátó</label>
+                                <select class="main form-field accessible w-full"
+                                        data-chosen=""
+                                        data-inherit-select-classes="true"
+                                        id="telepules_kibocsato"
+                                        aria-label="Kibocsátó"
+                                        data-allow-single-deselect="true"
+                                        data-search-contains="true"
+                                        data-accessible="true"
+                                        data-placeholder="Minden kibocsátó"
+                                        data-no-results-text="'Nincs ilyen kibocsátó:'"
+                                        name="telepules_kibocsato"
+                                        data-njt-ajax="onFocus_njtOnkormanyzatiKibocsato"
+                                >
+                                    <option></option>
+                                                                        
+                                                                    </select>
+                            </div>
+                                                <div class="flex items-center gap-16 button-bar__buttons">
+                            <div id="delete-button-container">
+                                <a href="#"
+                                   onclick="njtApp.emptySearchOptions(); return false;" class="heading-6 underline delete color-white whitespace-nowrap ng-cloak"
+                                   data-clear-search="simple"
+                                   role="button">
+                                    Beállítások törlése</a>&nbsp;
+                            </div>
+                            
+                                <button type="submit" id="searchButton"
+                                        class="button primary text search"
+                                        role="button"
+                                        aria-label="Keresés"
+                                        data-ng-click="simpleSearch()">
+                                        <span class="onlyMobile"></span>
+                                        Keresés
+                                </button>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="clbo"></div>
+    </div>
+</form>
+                            <div class="quint quint-wrapper flex justify-center gap-16">
+    <div class="bg-white rounded-8 p-16 flex-1 flex flex-col items-start gap-16 justify-between item">
+        <div class="flex flex-col gap-8 item__content">
+            <span class="text-small font-bold">Közismert jogszabályok ABC-szerint</span>
+            <p class="text-small"
+               aria-hidden="true"> A rövid megnevezésű, fontosabb jogszabályok listája ABC rendben </p>
+        </div>
+        <a class="button outline text small no-underline"
+           aria-label="Tovább a Közismert jogszabályok ABC-szerint oldalra"
+           href="/search_kozismert/A">
+            Tovább
+        </a>
+    </div>
+    <div class="bg-white rounded-8 p-16 flex-1 flex flex-col items-start gap-16 justify-between item">
+        <div class="flex flex-col gap-8 item__content">
+            <span class="text-small font-bold">Élethelyzetek</span>
+            <p class="text-small"
+               aria-hidden="true"> Vállalkozás, esküvő, beiskolázás... A leggyakoribb élethelyzetek jogi tudnivalói egy helyen </p>
+        </div>
+        <a class="button outline text small no-underline"
+           aria-label="Tovább az Élethelyzetek oldalra"
+           href="/elethelyzet/lista">
+            Tovább
+        </a>
+    </div>
+    <div class="bg-white rounded-8 p-16 flex-1 flex flex-col items-start gap-16 justify-between item">
+        <div class="flex flex-col gap-8 item__content item__content--input">
+            <label class="text-small font-bold" for="cif">Adott napon hatályba lépő jogszabályok</label>
+            <span class="quint-date">
+                <duet-date-picker identifier="cif"
+                                  id="exact_day_cif"
+                                                                            min="2010-01-01"
+                                                          max="2051-11-26"></duet-date-picker>
+                <span class="quint-date__clear"></span>
+            </span>
+        </div>
+        <button id="exact_day_cif_search" class="button outline small text search" data-ng-click="adottNaponCIF()"
+                >
+            Keresés
+        </button>
+    </div>
+    <div class="bg-white rounded-8 p-16 flex-1 flex flex-col items-start gap-16 justify-between item">
+        <div class="flex flex-col gap-8 item__content item__content--input">
+            <label class="text-small font-bold" for="expired"> Adott napon hatályukat vesztő jogszabályok</label>
+            <span class="quint-date">
+                <duet-date-picker identifier="expired"
+                                  id="exact_day_expired"
+                                                                            min="2010-01-01"
+                                                          max="2051-11-26"></duet-date-picker>
+                <span class="quint-date__clear"></span>
+            </span>
+        </div>
+        <button id="exact_day_expired_search" class="button outline small text search"
+                data-ng-click="adottNaponExpired()"
+                >
+            Keresés
+        </button>
+    </div>
+</div>                    </div>
+    </section>
+
+        <section id="welcome-text" class="bg-green-soft pb-24 pt-8">
+        <div class="content wrapper welcome flex color-text-neutral-placeholder gap-16">
+            <div class="welcome-left flex flex-col gap-16 flex-1 color-text-neutral-base">
+                <div class="rounded-8 p-48 bg-gradient-1">
+                    <h2 class="color-white">Üdvözöljük a Nemzeti Jogszabálytár kereső oldalán!</h2>
+                    <div class="text-medium color-white font-semibold text-justify">
+                        <p>A Nemzeti Jogszabálytár egy web alapú szolgáltatás, amely jogszabályban meghatározott körben ingyenesen hozzáférhető jogszabálytár szolgáltatást biztosít számítógépen és mobiltelefonon.</p>
+                        <br/>
+                        <p>Gyors és könnyű keresés a Nemzeti Jogszabálytár felületén:</p>
+                        <p>A Nemzeti Jogszabálytár jogi adatbázisában a fenti űrlap kitöltésével kereshet. A keresőkérdést az adatmezők kitöltésével tudja összeállítani.</p>
+                    </div>
+                </div>
+                <div class="rounded-8 p-48 py-64 color-text-neutral-strong bg-green-highlight">
+                    <h2>Legyen naprakész a jogszabályok változásában!</h2>
+                    <p class="text-medium text-justify">Regisztráljon és próbálja ki a jogszabályfigyelőnket!</p>
+                                            <button onclick="njtApp.njtService.redirectToLogin(true)" class="button outline small mt-24">Regisztrálok</button>
+                                    </div>
+            </div>
+            <div class="welcome-right color-text-neutral-base bg-white flex flex-col gap-16 flex-1 rounded-8">
+                <div class="p-32">
+                    <h2>Keresési tippek</h2>
+                    <ul class="text-medium">
+                        <li class="list-disc"><strong>Nem szükséges minden adatmezőt kitölteni.</strong>
+                            Például az 1/1975. (II. 5.) KPM-BM rendelet lekérdezéséhez elégséges az Évszám (1975) és
+                            a Sorszám (1) mezők kitöltése.
+                        </li>
+                        <li class="list-disc">A Sorszám megadásához használhat római számokat.</li>
+                        <li class="list-disc">A
+                            <strong>csak hatályos</strong> opció választásával a keresőkérdésnek megfelelő, a
+                            lekérdezéskor hatályban lévő jogszabályok listája jelenik meg.
+                        </li>
+                        <li class="list-disc">
+                            <strong>A Szó vagy kifejezéskereső</strong> a keresett szó valamennyi toldalékolt alakját
+                            külön karakter
+                            beírása nélkül megjeleníti, kizárólag az adott szóra való szűkítéshez használja a
+                            <strong>pontos
+                                egyezés</strong> opciót. Kérjük, legyen figyelemmel arra, hogy a
+                            <strong>Szó vagy kifejezéskeresővel</strong>
+                            kizárólag a jogszabályok címében és szövegében megtalálható szavakat lehet keresni. A
+                            jogszabály címében való kereséshez a <strong>csak címben</strong> opció választásával van
+                            lehetőség.
+
+                        </li>
+                    </ul>
+                    <div class="pt-16">
+                        <h2>Extra funkciók</h2>
+                        <p class="text-medium">Regisztrált (felhasználónévvel és jelszóval rendelkező) vagy ügyfélkapun
+                            keresztül belépő felhasználóink számára személyre szabható tartalomkialakítást teszünk
+                            lehetővé és ahhoz kapcsolódó támogatást nyújtunk.</p>
+                        <br/>
+                        <p class="text-medium">Ennek kapcsán felhasználóinknak jogszabályváltozások automatikus
+                            figyelésének beállítására, élethelyzet alapú jogalkalmazási támogatás igénybevételére,
+                            továbbá olyan kényelmi funkciók használatára van lehetőségük, mint például a
+                            jogszabályszöveghez könyvjelző, jegyzetek, kereszthivatkozások illesztése.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    </div>
+    <div id="dynamic" class="mainWrapper empty" style="display: none">
+        <div data-ng-view></div>
+    </div>
+        <div id="bottom_flag_line" class="bg-white">
+            <div id="sztp_banner" style="position:absolute; bottom: 50px; right: 0;">
+                <img src="/bundles/njtfrontend/images/layout/sztp.svg?v11c6e9fe8.14119.20261116143934.2.18.5" alt="Széchenyi Terv Plusz logó" style="height: 100px;"/>
+            </div>
+            <div id="bottom_black_line">
+                <div class="wrapper">
+                    <div data-ng-controller="pageBarCtrl">
+                        <div class="pageBar ng-cloak" data-ng-init="initPageBar('other','0')"><ul><li class="pager search" id="pageBarSearch"><div class="searchPopup"><div class="searchPopupBox"><a class="page or"
+                               data-ng-attr-href="{{ lastOrSearchPath }}">Önkormányzati rendeletek</a></div><div><a class="no-underline" data-ng-attr-href="{{ lastSearchPath }}"><i class="ri-search-line"></i><span class="hidden">Jogszabálykereső</span></a></div></div></li><li class="pager left items-center justify-center" id="pageBarBack" aria-label="Előző fül megjelenítése"
+                data-ng-click="changePager(-1)" data-ng-keydown="$event.keyCode === 13 && changePager(-1)"
+                data-ng-show="backForward"><i tabindex="0" class="ri-arrow-left-s-line text-24"></i></li><li class="flex items-center px-2" data-ng-repeat="page in pages" data-ng-class="[page.style, {'last':$last}]"
+                data-njttip title="<b>{{ page.title }}</b> {{ page.shortDescription }}"><div class="pagerWrapper flex-1 flex"><a class="page content-center pageTabLink" href="{{ page.url }}" data-ng-bind="page.title">{{ page.url }}</a><div><a class="no-underline text-16" tabindex="0" href="#"
+                       data-ng-click="deleteCookie(page.pageId, true, page.type, page.documentTypeForHistory)"
+                    ><i class="ri-close-line"></i></a></div></div></li><li class="pager right items-center justify-center" id="pageBarForward" aria-label="Következő fül megjelenítése"
+                data-ng-click="changePager(1)" data-ng-keydown="$event.keyCode === 13 && changePager(1)"
+                data-ng-show="backForward"><i tabindex="0" class="ri-arrow-right-s-line text-24"></i></li></ul></div>                        <div class="mobile-megnyitottak-tab">
+    <div class="megnyitottak-mobile-header flex justify-between items-center p-16">
+        <h3>Megnyitottak</h3>
+        <button class="megnyitottakCloseButton button subtle ri-close-line flex justify-center items-center p-0 w-32 h-32 color-link-neutral-enabled" data-njttip title="Bezárás" aria-label="Bezárás"></button>
+    </div>
+    <h2 class="p-16">Megnyitottak</h2>
+    <ul class="flex flex-col gap-16 px-16">
+        <li class="flex justify-between" data-ng-repeat="page in localData track by $index"
+            data-njttip title="{{ page.title }} {{ page.shortDescription }}">
+            <a class="no-underline text-16" href="{{ page.url }}"
+               data-ng-bind="page.title" onclick="njtApp.toggleMegnyitottak();">{{ page.url }}</a>
+
+            <button data-ng-click="deleteCookie($index,true)"
+                    class="button outline flex justify-center items-center w-32 h-32 p-0">
+                <i class="ri-close-line text-16"></i>
+            </button>
+        </li>
+    </ul>
+</div>
+                    </div>
+                    <div id="scrollToTop" class="absolute items-center gap-4 text-small">
+                        <button class="button secondary flex justify-center items-center p-0 ri-arrow-up-s-line h-32">
+                            <span>Lap tetejére</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div id="sticky-footer-wrapper"></div>
+</main>
+<div id="sztp_banner_mobile" style="position:fixed; right: 0; bottom: 0;z-index: 2; display: none;">
+    <img src="/bundles/njtfrontend/images/layout/sztp.svg?v11c6e9fe8.14119.20261116143934.2.18.5" alt="Széchenyi Terv Plusz logó" style="height: 100px; max-width: 100%"/></div>
+
+<footer id="mainFooter">
+    <div class="flag-separator"></div>
+    <div class="w-full flex justify-center text-small color-white">
+        <div class="text">
+            <img class="footer-logo" src="/bundles/njtfrontend/images/layout/logo/njt-logo-footer-white.svg?v11c6e9fe8.14119.20261116143934.2.18.5"
+                 alt=""/>
+            <div class="text-right">
+                <ul>
+                    <li>
+                        <a id="aboutLink"
+                           href="https://jog.gov.hu/kapcsolat"
+                           target="_blank"
+                           class="color-white">Kapcsolat</a>
+                    </li>
+                    <li>
+                        <a href="https://jog.gov.hu/felhasznalasi-feltetelek"
+                           target="_blank"
+                           class="color-white"
+                           aria-label="Felhasználási feltételek">
+                            Felhasználási feltételek
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/bundles/njtfrontend/docs/akadalymentesitesi.pdf?v11c6e9fe8.14119.20261116143934.2.18.5"
+                           target="_blank"
+                           class="color-white"
+                           aria-label="Akadálymentesítési nyilatkozat PDF dokumentum">
+                            Akadálymentesítési nyilatkozat
+                            <span class="pdf accessiblehidden">PDF</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://jog.gov.hu/adatkezelesi-tajekoztato"
+                           target="_blank"
+                           class="color-white"
+                           aria-label="Adatkezelési tájékoztató">
+                            Adatkezelési tájékoztató
+                        </a>
+                    </li>
+                    <li>
+                        <a href="static/cookie"
+                           onclick="njtOpenCookieSettings();"
+                           class="color-white"
+                           aria-label="Süti beállítások">
+                            Süti beállítások
+                        </a>
+                    </li>
+                                                        </ul>
+                <span class="text-right__text">
+                    <span data-njttip title="v11c6e9fe8.14119.20261116143934.2.18.5">©</span> A Nemzeti Jogszabálytárban elérhető szövegek tekintetében az MKIFK Magyar Közlönykiadó és Igazságügyi Fordítóközpont Zrt. minden jogot fenntart!
+                </span>
+            </div>
+        </div>
+    </div>
+    <div id="blank-clipboard-select-area">_</div>
+</footer>
+<div data-ng-controller="cookieLawCtrl" data-ng-init="init()"
+     class="cookie-law ng-cloak flex fixed w-full color-white" data-ng-show="!accepted">
+    <div class="cookie-law__holder flex flex-row justify-center items-center gap-40">
+        <div class="flex flex-row gap-8">
+            <i class="ri-information-2-fill text-24 color-white"></i>
+            <span class="text-medium color-white font-medium">
+                <span data-ng-non-bindable="true">A működéshez szükséges sütik mellett a Google Analytics statisztikai sütijeit, a munkamenet-azonosítót és a bejelentkezést csak az Ön hozzájárulásával használjuk. Döntését bármikor megváltoztathatja a lábléc „Süti beállítások” hivatkozásával.</span>
+                <span data-ng-hide="onCookiePage"><br/><span data-ng-non-bindable="true">A cookie-k kezeléséről részletesebb információt <a href="static/cookie">ide</a> kattintva olvashat.</span></span>
+            </span>
+        </div>
+        <div class="flex flex-row gap-8">
+            <button class="button primary" id="acceptButton" data-ng-if="!consentGiven"
+                    data-ng-click="acceptCookieLaw()">Elfogadom</button>
+            <button class="button primary" id="keepButton" data-ng-if="consentGiven"
+                    data-ng-click="keepCookieLaw()">Nem változtatok</button>
+            <button class="button outline inverted" id="rejectButton"
+                    data-ng-click="rejectCookieLaw()">Elutasítom</button>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    var njtConfig = {
+        cachedPageDataUrl: '/ajax/cachedPageData.json',
+        searchUrl: '/ajax/get_search_url.json',
+        onkormanyzatiSearchUrl: '/ajax/get_onkormanyzati_search_url.json',
+        justificationSearchUrl: '/ajax/get_justification_search_url.json',
+        documentTranslationSearchUrl: '/ajax/get_document_translation_search_url.json',
+        internationalAgreementSearchUrl: '/ajax/get_international_agreement_search_url.json',
+        loggerUrl: '/ajax/logger.json',
+        collectAllDocumentVersion: '/ajax/collectAllDocumentVersion.json',
+        collectDocumentVhrVersion: '/ajax/collectDocumentVhrVersion.json',
+        documentVersions: '/ajax/getDocumentVersions.json',
+        currentDocumentFromAbbr: '/ajax/getCurrentDocumentFromAbbr.json',
+        documentVersionsFromAbbr: '/ajax/getDocumentVersionsFromAbbr.json',
+        documentConfig: '/ajax/config.json',
+        tagSearch: '/ajax/tags.json',
+        getBlock: '/ajax/njtGetBlock.json',
+        searchInText: '/ajax/searchInText.json',
+        modifyAccount: '/account/registration/modify.json',
+        printWindowSkeleton: '/ajax/getPrintWindow',
+        organisationGetPrintableDatas: '/organisation/print_datas.json/',
+        simpleSearchPredict: '/ajax/simple_predict.json',
+        acceptCookieLaw: '/ajax/acl.json',
+        rejectCookieLaw: '/ajax/rcl.json',
+        analyticsId: 'UA-28015740-1',
+        getMessage: '/ajax/message.json',
+        acceptMessage: '/ajax/accept_message.json',
+        exportWindowSkeleton: '/ajax/getExportWindow',
+        acceptCookieLawName: 'acceptCookieLaw',
+        sidemenu: '/ajax/sidemenu/:id',
+        requirements: [],
+        isLoggedIn: false,
+        indokolasSearchPrefix: '𝒿',
+        onkormanyzatSearchPrefix: 'ℴ',
+        pagebarMarkArchivum: '𝒶',
+        pagebarMarkFogalomtar: '𝒻',
+        pagebarMarkElethelyzet: '𝓮',
+        pagebarMarkElethelyzetTerulet: '𝓽',
+        pagebarMarkTopic: '𝓴',
+        loadQuestion: '/elethelyzet/question',
+        getAllElethelyzet: '/elethelyzet/index',
+        lazyModeLoggedOut:  false,
+        valtozasJelzesekVersions: '/ajax/getValtozasJelzesekVersions.json',
+        getTelepulesKibocsatoByMegye: '/getTelepulesKibocsatoByMegye.json',
+        szakaszSliceType: 'SZAKASZ',
+        mellekletCimkeSliceType: 'SZAKASZ',
+        jogszabalyHighlight: '/ajax/jogszabaly_highlight',
+        getElethelyzetData: '/elethelyzet/getElethelyzetData.json',
+        getElethelyzetTeruletData: '/elethelyzet/getElethelyzetTeruletData.json',
+        getTopicSearchListForHater: '/getTopicSearchList.json',
+    };
+
+
+    
+    var njtTranslate = {
+        cancel: 'Mégsem',
+        ok: 'Rendben',
+        send: 'Küldés',
+        login: 'Belépés',
+        gazette_state: 'Közlönyállapot',
+        hatalyos: 'Hatályos',
+        meg_nem_hatalyos: 'Még nem hatályos',
+        nemIsmert: 'Nem ismert',
+        nemLepettHatalyba: 'Nem lépett hatályba',
+        closeWindowText: 'Biztosan elnavigál az oldalról?',
+        szervezetAdminCaption: 'Szervezeti adminisztrátor adatai:',
+        datepickerPlaceholder: 'éééé.hh.nn',
+        documentInfo: 'Jogszabályinfó',
+        documentSampleAddWindowTitle: 'Jogszabály adatai',
+        footnoteTitle: 'Lábjegyzetek',
+        figyelem: 'Figyelem!',
+        figyelemMessage: 'A szolgáltatások igénybevételéhez jelentkezzen be!',
+        jogszabalyLoginTitle: 'A jogszabály megtekintéséhez jelentkezzen be!',
+        jogszabalyLoginMessage: 'A hivatkozott jogszabály, jogszabályi időállapot a Nemzeti Jogszabálytár regisztrációval vagy ügyfélkapus bejelentkezéssel használható szolgáltatási szintjén érhető el [338/2011. (XII. 29.) Korm. rendelet 2. § (1) bekezdése alapján].',
+        jogszabalyMissingMessage: 'A hivatkozott jogi dokumentum nem áll rendelkezésre.',
+        sessionMessage: 'A munkamenet <span class="time"></span> múlva lejár és automatikusan ki lesz léptetve.<br>A meghosszabbításhoz kattintson a tovább gombra.',
+        csrfExpired: 'Lejárt a munkamenet, kérjük jelentkezzen be újra.',
+        orgRegistrationFileUploadError: 'Kérjük, töltse fel az aláírt regisztrációs lapot',
+        registrationHandleTitle: 'Elfogadja a regisztrációt?',
+        registrationHandleSubTitle: 'Elutasítás esetén, kérjük, adja meg a elutasítás okát. Erről a regisztráló felhasználót e-mailben értesítjük.',
+        registrationCreated: 'Sikeres regisztráció',
+        registrationModified: 'Sikeres módosítás',
+        registrationMergeError: 'Regisztrált felhasználók összefésülése sikertelen',
+        underProcessWarning: 'A jogszabály feldolgozás alatt van, a felület korlátozottan használható',
+        metaDescription: 'Magyarország hivatalos, hiteles, ingyenesen használható jogszabálygyűjteménye, az MKIFK Magyar Közlönykiadó és Igazságügyi Fordítóközpont Zrt. gondozásában',
+        metaTitle: 'Nemzeti Jogszabálytár – MKIFK Magyar Közlönykiadó és Igazságügyi Fordítóközpont Zrt.',
+        hiba: 'Hiba',
+        noResult: 'Nincs találat',
+        nemMegfelelo: 'Nem megfelelő',
+        evszam: 'évszám',
+        lekerdezesIdeje: 'Lekérdezés ideje',
+        kivonat: 'KIVONAT',
+        iratminta: 'iratminta',
+        errorNeedReload: 'HIBA! Újratöltés szükséges!',
+        beforeDeleteLawRequest: 'Biztosan törölni szeretné jogszabály igénylését?',
+        lawRequest: 'Jogszabály igénylés',
+        igen: 'Igen',
+        nem: 'Nem',
+        tablazatKinyitasa: 'Táblázat kinyitása',
+        emailCim: 'E-mail cím',
+        giveYourEmailAddress: 'Adja meg az e-mail címét',
+        informacio: 'Információ',
+        successfulModification: 'Sikeres módosítás!',
+        maganszemely: 'Magánszemély',
+        unsuccessfulExport: 'Sikertelen exportálás',
+        unsuccessfulCopy: 'Sikertelen másolás',
+        copiedToClipboard: 'Kimásolva a vágólapra',
+        documentTranslations: 'Jogszabályfordítások',
+        internationalAgreements: 'Nemzetközi szerződések',
+        kozismertJogszabalyok: 'Közismert jogszabályok',
+        registration: 'Regisztráció',
+        accountSettings: 'Fiók módosítás',
+        simpleSearch: 'Jogszabálykereső',
+        cif: 'Adott napon hatályba lépő jogszabályok',
+        expired: 'Adott napon hatályukat vesztő jogszabályok',
+        info: 'Információ',
+        justificationSearch: 'Indokolások Tára',
+        popupHeader: 'Karbantartás',
+        popupMessage: 'Tájékoztatjuk Tisztelt Felhasználóinkat, hogy technikai karbantartás miatt 2023. április 25-én 20:00-21:00 óra között a Nemzeti Jogszabálytár Ügyfélkapus bejelentkezéssel történő használatában fennakadások várhatók.',
+        clearField: 'Mező tartalmának törlése',
+        privacy: 'Adatkezelési tájékoztató',
+        loginNeedsCookieConsent: 'A bejelentkezéshez el kell fogadnia a sütik használatát.',
+        cookieConsentWithdrawLogout: 'A sütik elutasításával ki is jelentkezik. Folytatja?'
+    };
+</script>
+    <script src="/bundles/njtfrontend/datepicker/duet/duet.js?v11c6e9fe8.14119.20261116143934.2.18.5" type="text/javascript"></script>
+                            <script src="/js/m-04042633b7e29fc47a744cf0973e3db4eda5a4eb.js?v11c6e9fe8.14119.20261116143934.2.18.5" type="text/javascript"></script>
+        
+<div class="loadingFadeLayer"></div>
+</body>
+</html>

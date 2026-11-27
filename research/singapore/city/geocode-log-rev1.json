@@ -1,0 +1,3414 @@
+[
+ {
+  "venue_id": "sg-0285e3753fc2",
+  "query": "2 Town Hall Link, Singapore 608516",
+  "checked_on": "2026-11-26",
+  "provider": "Photon (OpenStreetMap data, komoot)",
+  "request_url": "https://photon.komoot.io/api/?q=2+Town+Hall+Link%2C+Singapore+608516&limit=5&lang=en&lat=1.3521&lon=103.8198",
+  "expected": {
+   "street": "Town Hall Link",
+   "housenumber": "2",
+   "postcode": "608516",
+   "building": "Genting Hotel Jurong"
+  },
+  "candidates": [
+   {
+    "name": "Four Points by Sheraton",
+    "hn": "2",
+    "street": "Town Hall Link",
+    "pc": "608516",
+    "city": "Singapore",
+    "district": "West Region",
+    "locality": "Lakeside (business)",
+    "lat": 1.3315616,
+    "lon": 103.7392596,
+    "score": 5,
+    "tier": "building",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   },
+   {
+    "name": "Genting Hotel Jurong",
+    "hn": "2",
+    "street": "Town Hall Link",
+    "pc": "608516",
+    "city": "Singapore",
+    "district": "West Region",
+    "locality": "Lakeside (business)",
+    "lat": 1.3314839,
+    "lon": 103.7393574,
+    "score": 7,
+    "tier": "exact_venue",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber",
+     "name"
+    ],
+    "name_ok": true,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   }
+  ],
+  "chosen": {
+   "name": "Genting Hotel Jurong",
+   "hn": "2",
+   "street": "Town Hall Link",
+   "pc": "608516",
+   "city": "Singapore",
+   "district": "West Region",
+   "locality": "Lakeside (business)",
+   "lat": 1.3314839,
+   "lon": 103.7393574,
+   "score": 7,
+   "tier": "exact_venue",
+   "matched_on": [
+    "street",
+    "postcode",
+    "housenumber",
+    "name"
+   ],
+   "name_ok": true,
+   "hn_ok": true,
+   "pc_ok": true,
+   "street_ok": true
+  }
+ },
+ {
+  "venue_id": "sg-09795cef4b0f",
+  "query": "6 Raffles Boulevard, Singapore 039594",
+  "checked_on": "2026-11-26",
+  "provider": "Photon (OpenStreetMap data, komoot)",
+  "request_url": "https://photon.komoot.io/api/?q=6+Raffles+Boulevard%2C+Singapore+039594&limit=5&lang=en&lat=1.3521&lon=103.8198",
+  "expected": {
+   "street": "Raffles Boulevard",
+   "housenumber": "6",
+   "postcode": "039594",
+   "building": "Marina Square"
+  },
+  "candidates": [
+   {
+    "name": "Sukiya すき家",
+    "hn": "6",
+    "street": "Raffles Boulevard",
+    "pc": "039594",
+    "city": "Singapore",
+    "district": "Downtown Core",
+    "locality": "Marina Centre",
+    "lat": 1.2918874,
+    "lon": 103.8563376,
+    "score": 5,
+    "tier": "building",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   },
+   {
+    "name": "Marina Square",
+    "hn": "6",
+    "street": "Raffles Boulevard",
+    "pc": "039594",
+    "city": "Singapore",
+    "district": "Downtown Core",
+    "locality": "Marina Centre",
+    "lat": 1.2912739,
+    "lon": 103.8571836,
+    "score": 7,
+    "tier": "exact_venue",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber",
+     "name"
+    ],
+    "name_ok": true,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   },
+   {
+    "name": "Parkroyal Collection Marina Bay",
+    "hn": "6",
+    "street": "Raffles Boulevard",
+    "pc": "039594",
+    "city": "Singapore",
+    "district": "Downtown Core",
+    "locality": "Marina Centre",
+    "lat": 1.29161,
+    "lon": 103.8568157,
+    "score": 5,
+    "tier": "building",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   },
+   {
+    "name": null,
+    "hn": "6",
+    "street": "Raffles Boulevard",
+    "pc": "039594",
+    "city": "Singapore",
+    "district": "Downtown Core",
+    "locality": "Marina Centre",
+    "lat": 1.2924588,
+    "lon": 103.8583556,
+    "score": 5,
+    "tier": "building",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   },
+   {
+    "name": "Daiso",
+    "hn": "6",
+    "street": "Raffles Boulevard",
+    "pc": "039594",
+    "city": "Singapore",
+    "district": "Downtown Core",
+    "locality": "Marina Centre",
+    "lat": 1.2914767,
+    "lon": 103.8570418,
+    "score": 5,
+    "tier": "building",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   }
+  ],
+  "chosen": {
+   "name": "Marina Square",
+   "hn": "6",
+   "street": "Raffles Boulevard",
+   "pc": "039594",
+   "city": "Singapore",
+   "district": "Downtown Core",
+   "locality": "Marina Centre",
+   "lat": 1.2912739,
+   "lon": 103.8571836,
+   "score": 7,
+   "tier": "exact_venue",
+   "matched_on": [
+    "street",
+    "postcode",
+    "housenumber",
+    "name"
+   ],
+   "name_ok": true,
+   "hn_ok": true,
+   "pc_ok": true,
+   "street_ok": true
+  }
+ },
+ {
+  "venue_id": "sg-123024e521a4",
+  "query": "109 North Bridge Road, Singapore 179097",
+  "checked_on": "2026-11-26",
+  "provider": "Photon (OpenStreetMap data, komoot)",
+  "request_url": "https://photon.komoot.io/api/?q=109+North+Bridge+Road%2C+Singapore+179097&limit=5&lang=en&lat=1.3521&lon=103.8198",
+  "expected": {
+   "street": "North Bridge Road",
+   "housenumber": "109",
+   "postcode": "179097",
+   "building": null
+  },
+  "candidates": [
+   {
+    "name": "Best Denki",
+    "hn": "109",
+    "street": "North Bridge Road",
+    "pc": "179097",
+    "city": "Singapore",
+    "district": "Downtown Core",
+    "locality": "City Hall",
+    "lat": 1.2914066,
+    "lon": 103.8494056,
+    "score": 5,
+    "tier": "building",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   }
+  ],
+  "chosen": {
+   "name": "Best Denki",
+   "hn": "109",
+   "street": "North Bridge Road",
+   "pc": "179097",
+   "city": "Singapore",
+   "district": "Downtown Core",
+   "locality": "City Hall",
+   "lat": 1.2914066,
+   "lon": 103.8494056,
+   "score": 5,
+   "tier": "building",
+   "matched_on": [
+    "street",
+    "postcode",
+    "housenumber"
+   ],
+   "name_ok": false,
+   "hn_ok": true,
+   "pc_ok": true,
+   "street_ok": true
+  }
+ },
+ {
+  "venue_id": "sg-13d49f8566fb",
+  "query": "1 Keong Saik Road, Singapore 089109",
+  "checked_on": "2026-11-26",
+  "provider": "Photon (OpenStreetMap data, komoot)",
+  "request_url": "https://photon.komoot.io/api/?q=1+Keong+Saik+Road%2C+Singapore+089109&limit=5&lang=en&lat=1.3521&lon=103.8198",
+  "expected": {
+   "street": "Keong Saik Road",
+   "housenumber": "1",
+   "postcode": "089109",
+   "building": null
+  },
+  "candidates": [
+   {
+    "name": "Baristart Coffee Singapore (Keong Saik)",
+    "hn": "1",
+    "street": "Keong Saik Road",
+    "pc": "089109",
+    "city": "Singapore",
+    "district": "Outram",
+    "locality": "Chinatown",
+    "lat": 1.2788195,
+    "lon": 103.8415262,
+    "score": 5,
+    "tier": "building",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   },
+   {
+    "name": "The Working Capitol",
+    "hn": "1",
+    "street": "Keong Saik Road",
+    "pc": "089109",
+    "city": "Singapore",
+    "district": "Outram",
+    "locality": "Chinatown",
+    "lat": 1.2788734,
+    "lon": 103.8414387,
+    "score": 7,
+    "tier": "exact_venue",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber",
+     "name"
+    ],
+    "name_ok": true,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   },
+   {
+    "name": "Workspace",
+    "hn": "1",
+    "street": "Keong Saik Road",
+    "pc": "089109",
+    "city": "Singapore",
+    "district": "Outram",
+    "locality": "Chinatown",
+    "lat": 1.278784,
+    "lon": 103.8415181,
+    "score": 5,
+    "tier": "building",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   },
+   {
+    "name": "COL",
+    "hn": "1",
+    "street": "Keong Saik Road",
+    "pc": "089109",
+    "city": "Singapore",
+    "district": "Outram",
+    "locality": "Chinatown",
+    "lat": 1.2791314,
+    "lon": 103.8414646,
+    "score": 5,
+    "tier": "building",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   },
+   {
+    "name": "The Working Capitol",
+    "hn": "1",
+    "street": "Keong Saik Road",
+    "pc": "089109",
+    "city": "Singapore",
+    "district": "Outram",
+    "locality": "Chinatown",
+    "lat": 1.2788092,
+    "lon": 103.8415076,
+    "score": 7,
+    "tier": "exact_venue",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber",
+     "name"
+    ],
+    "name_ok": true,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   }
+  ],
+  "chosen": {
+   "name": "The Working Capitol",
+   "hn": "1",
+   "street": "Keong Saik Road",
+   "pc": "089109",
+   "city": "Singapore",
+   "district": "Outram",
+   "locality": "Chinatown",
+   "lat": 1.2788734,
+   "lon": 103.8414387,
+   "score": 7,
+   "tier": "exact_venue",
+   "matched_on": [
+    "street",
+    "postcode",
+    "housenumber",
+    "name"
+   ],
+   "name_ok": true,
+   "hn_ok": true,
+   "pc_ok": true,
+   "street_ok": true
+  }
+ },
+ {
+  "venue_id": "sg-1f9af9e53c6a",
+  "query": "111C King George's Avenue, Singapore 208559",
+  "checked_on": "2026-11-26",
+  "provider": "Photon (OpenStreetMap data, komoot)",
+  "request_url": "https://photon.komoot.io/api/?q=111C+King+George%27s+Avenue%2C+Singapore+208559&limit=5&lang=en&lat=1.3521&lon=103.8198",
+  "expected": {
+   "street": "King George's Avenue",
+   "housenumber": "111C",
+   "postcode": "208559",
+   "building": null
+  },
+  "candidates": [
+   {
+    "name": null,
+    "hn": "111C",
+    "street": "King George's Avenue",
+    "pc": "208559",
+    "city": "Singapore",
+    "district": "Kallang",
+    "locality": "Lavender",
+    "lat": 1.3104992,
+    "lon": 103.8618369,
+    "score": 5,
+    "tier": "building",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   },
+   {
+    "name": null,
+    "hn": "111C",
+    "street": "King George's Avenue",
+    "pc": "208559",
+    "city": "Singapore",
+    "district": "Kallang",
+    "locality": "Lavender",
+    "lat": 1.3104558,
+    "lon": 103.8618997,
+    "score": 5,
+    "tier": "building",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   }
+  ],
+  "chosen": {
+   "name": null,
+   "hn": "111C",
+   "street": "King George's Avenue",
+   "pc": "208559",
+   "city": "Singapore",
+   "district": "Kallang",
+   "locality": "Lavender",
+   "lat": 1.3104992,
+   "lon": 103.8618369,
+   "score": 5,
+   "tier": "building",
+   "matched_on": [
+    "street",
+    "postcode",
+    "housenumber"
+   ],
+   "name_ok": false,
+   "hn_ok": true,
+   "pc_ok": true,
+   "street_ok": true
+  }
+ },
+ {
+  "venue_id": "sg-31b594bd4607",
+  "query": "231 Bain Street, Singapore 180231",
+  "checked_on": "2026-11-26",
+  "provider": "Photon (OpenStreetMap data, komoot)",
+  "request_url": "https://photon.komoot.io/api/?q=231+Bain+Street%2C+Singapore+180231&limit=5&lang=en&lat=1.3521&lon=103.8198",
+  "expected": {
+   "street": "Bain Street",
+   "housenumber": "231",
+   "postcode": "180231",
+   "building": "Bras Basah Complex"
+  },
+  "candidates": [
+   {
+    "name": "Ranking Sports & Music",
+    "hn": "231",
+    "street": "Bain Street",
+    "pc": "180231",
+    "city": "Singapore",
+    "district": "Downtown Core",
+    "locality": "Bugis",
+    "lat": 1.296975,
+    "lon": 103.8533649,
+    "score": 5,
+    "tier": "building",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   },
+   {
+    "name": null,
+    "hn": "231",
+    "street": "Bain Street",
+    "pc": "180231",
+    "city": "Singapore",
+    "district": "Downtown Core",
+    "locality": "Bugis",
+    "lat": 1.2969921,
+    "lon": 103.8536739,
+    "score": 5,
+    "tier": "building",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   },
+   {
+    "name": null,
+    "hn": "231",
+    "street": "Bain Street",
+    "pc": "180231",
+    "city": "Singapore",
+    "district": "Downtown Core",
+    "locality": "Bugis",
+    "lat": 1.2968669,
+    "lon": 103.8533389,
+    "score": 5,
+    "tier": "building",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   },
+   {
+    "name": null,
+    "hn": "231",
+    "street": "Bain Street",
+    "pc": "180231",
+    "city": "Singapore",
+    "district": "Downtown Core",
+    "locality": "Bugis",
+    "lat": 1.2968619,
+    "lon": 103.8533398,
+    "score": 5,
+    "tier": "building",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   },
+   {
+    "name": "Art Friend",
+    "hn": "231",
+    "street": "Bain Street",
+    "pc": "180231",
+    "city": "Singapore",
+    "district": "Downtown Core",
+    "locality": "Bugis",
+    "lat": 1.2969184,
+    "lon": 103.8534609,
+    "score": 5,
+    "tier": "building",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   }
+  ],
+  "chosen": {
+   "name": "Ranking Sports & Music",
+   "hn": "231",
+   "street": "Bain Street",
+   "pc": "180231",
+   "city": "Singapore",
+   "district": "Downtown Core",
+   "locality": "Bugis",
+   "lat": 1.296975,
+   "lon": 103.8533649,
+   "score": 5,
+   "tier": "building",
+   "matched_on": [
+    "street",
+    "postcode",
+    "housenumber"
+   ],
+   "name_ok": false,
+   "hn_ok": true,
+   "pc_ok": true,
+   "street_ok": true
+  }
+ },
+ {
+  "venue_id": "sg-34d6bf1ba39c",
+  "query": "1 Old Parliament Lane, Singapore 179429",
+  "checked_on": "2026-11-26",
+  "provider": "Photon (OpenStreetMap data, komoot)",
+  "request_url": "https://photon.komoot.io/api/?q=1+Old+Parliament+Lane%2C+Singapore+179429&limit=5&lang=en&lat=1.3521&lon=103.8198",
+  "expected": {
+   "street": "Old Parliament Lane",
+   "housenumber": "1",
+   "postcode": "179429",
+   "building": "The Arts House"
+  },
+  "candidates": [
+   {
+    "name": "The Arts House",
+    "hn": "1",
+    "street": "Old Parliament Lane",
+    "pc": "179429",
+    "city": "Singapore",
+    "district": "Downtown Core",
+    "locality": "City Hall",
+    "lat": 1.2886695,
+    "lon": 103.851099,
+    "score": 7,
+    "tier": "exact_venue",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber",
+     "name"
+    ],
+    "name_ok": true,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   },
+   {
+    "name": "The Arts House At The Old Parliament",
+    "hn": "1",
+    "street": "Old Parliament Lane",
+    "pc": "179429",
+    "city": "Singapore",
+    "district": "Downtown Core",
+    "locality": "City Hall",
+    "lat": 1.2886006,
+    "lon": 103.8510499,
+    "score": 7,
+    "tier": "exact_venue",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber",
+     "name"
+    ],
+    "name_ok": true,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   },
+   {
+    "name": "The Arts House",
+    "hn": "1",
+    "street": "Old Parliament Lane",
+    "pc": "179429",
+    "city": "Singapore",
+    "district": "Downtown Core",
+    "locality": "City Hall",
+    "lat": 1.2880126,
+    "lon": 103.8508437,
+    "score": 7,
+    "tier": "exact_venue",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber",
+     "name"
+    ],
+    "name_ok": true,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   }
+  ],
+  "chosen": {
+   "name": "The Arts House",
+   "hn": "1",
+   "street": "Old Parliament Lane",
+   "pc": "179429",
+   "city": "Singapore",
+   "district": "Downtown Core",
+   "locality": "City Hall",
+   "lat": 1.2886695,
+   "lon": 103.851099,
+   "score": 7,
+   "tier": "exact_venue",
+   "matched_on": [
+    "street",
+    "postcode",
+    "housenumber",
+    "name"
+   ],
+   "name_ok": true,
+   "hn_ok": true,
+   "pc_ok": true,
+   "street_ok": true
+  }
+ },
+ {
+  "venue_id": "sg-42a07044079a",
+  "query": "116 Lavender Street, Singapore 338730",
+  "checked_on": "2026-11-26",
+  "provider": "OpenStreetMap Nominatim (Photon had no tier-matching result)",
+  "request_url": "https://nominatim.openstreetmap.org/search?q=116+Lavender+Street%2C+Singapore+338730&format=json&limit=5&addressdetails=1&countrycodes=sg",
+  "expected": {
+   "street": "Lavender Street",
+   "housenumber": "116",
+   "postcode": "338730",
+   "building": null
+  },
+  "candidates": [
+   {
+    "name": "Pek Chuan Building",
+    "hn": "116",
+    "street": "Lavender Street",
+    "pc": "338730",
+    "city": "Singapore",
+    "district": "Kallang",
+    "locality": "Kallang Bahru",
+    "lat": 1.3118978,
+    "lon": 103.8623525,
+    "score": 5,
+    "tier": "building",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   }
+  ],
+  "chosen": {
+   "name": "Pek Chuan Building",
+   "hn": "116",
+   "street": "Lavender Street",
+   "pc": "338730",
+   "city": "Singapore",
+   "district": "Kallang",
+   "locality": "Kallang Bahru",
+   "lat": 1.3118978,
+   "lon": 103.8623525,
+   "score": 5,
+   "tier": "building",
+   "matched_on": [
+    "street",
+    "postcode",
+    "housenumber"
+   ],
+   "name_ok": false,
+   "hn_ok": true,
+   "pc_ok": true,
+   "street_ok": true
+  }
+ },
+ {
+  "venue_id": "sg-42a16aa5a0df",
+  "query": "261 Waterloo Street, Singapore 180261",
+  "checked_on": "2026-11-26",
+  "provider": "Photon (OpenStreetMap data, komoot)",
+  "request_url": "https://photon.komoot.io/api/?q=261+Waterloo+Street%2C+Singapore+180261&limit=5&lang=en&lat=1.3521&lon=103.8198",
+  "expected": {
+   "street": "Waterloo Street",
+   "housenumber": "261",
+   "postcode": "180261",
+   "building": "Waterloo Centre"
+  },
+  "candidates": [
+   {
+    "name": "Clap Cafe",
+    "hn": "261",
+    "street": "Waterloo Street",
+    "pc": "180261",
+    "city": "Singapore",
+    "district": "Rochor",
+    "locality": "Victoria",
+    "lat": 1.298511,
+    "lon": 103.8518484,
+    "score": 5,
+    "tier": "building",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   },
+   {
+    "name": "Bgain 261",
+    "hn": "261",
+    "street": "Waterloo Street",
+    "pc": "180261",
+    "city": "Singapore",
+    "district": "Rochor",
+    "locality": "Victoria",
+    "lat": 1.298613,
+    "lon": 103.8515987,
+    "score": 5,
+    "tier": "building",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   },
+   {
+    "name": "Kurasu",
+    "hn": "261",
+    "street": "Waterloo Street",
+    "pc": "180261",
+    "city": "Singapore",
+    "district": "Rochor",
+    "locality": "Victoria",
+    "lat": 1.2984367,
+    "lon": 103.8519374,
+    "score": 5,
+    "tier": "building",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   }
+  ],
+  "chosen": {
+   "name": "Clap Cafe",
+   "hn": "261",
+   "street": "Waterloo Street",
+   "pc": "180261",
+   "city": "Singapore",
+   "district": "Rochor",
+   "locality": "Victoria",
+   "lat": 1.298511,
+   "lon": 103.8518484,
+   "score": 5,
+   "tier": "building",
+   "matched_on": [
+    "street",
+    "postcode",
+    "housenumber"
+   ],
+   "name_ok": false,
+   "hn_ok": true,
+   "pc_ok": true,
+   "street_ok": true
+  }
+ },
+ {
+  "venue_id": "sg-47e22cc263a7",
+  "query": "60 Stevens Road, Singapore 257854",
+  "checked_on": "2026-11-26",
+  "provider": "OpenStreetMap Nominatim (Photon had no tier-matching result)",
+  "request_url": "https://nominatim.openstreetmap.org/search?q=60+Stevens+Road%2C+Singapore+257854&format=json&limit=5&addressdetails=1&countrycodes=sg",
+  "expected": {
+   "street": "Stevens Road",
+   "housenumber": "60",
+   "postcode": "257854",
+   "building": "Metro Y Hotel"
+  },
+  "candidates": [
+   {
+    "name": "New Ubin Seafood",
+    "hn": "60",
+    "street": "Stevens Road",
+    "pc": "257854",
+    "city": "Singapore",
+    "district": "Tanglin",
+    "locality": "Nassim",
+    "lat": 1.3164875,
+    "lon": 103.8265598,
+    "score": 5,
+    "tier": "building",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   }
+  ],
+  "chosen": {
+   "name": "New Ubin Seafood",
+   "hn": "60",
+   "street": "Stevens Road",
+   "pc": "257854",
+   "city": "Singapore",
+   "district": "Tanglin",
+   "locality": "Nassim",
+   "lat": 1.3164875,
+   "lon": 103.8265598,
+   "score": 5,
+   "tier": "building",
+   "matched_on": [
+    "street",
+    "postcode",
+    "housenumber"
+   ],
+   "name_ok": false,
+   "hn_ok": true,
+   "pc_ok": true,
+   "street_ok": true
+  }
+ },
+ {
+  "venue_id": "sg-5bab95b878e0",
+  "query": "72 Bendemeer Road, Singapore 339941",
+  "checked_on": "2026-11-26",
+  "provider": "Photon (OpenStreetMap data, komoot)",
+  "request_url": "https://photon.komoot.io/api/?q=72+Bendemeer+Road%2C+Singapore+339941&limit=5&lang=en&lat=1.3521&lon=103.8198",
+  "expected": {
+   "street": "Bendemeer Road",
+   "housenumber": "72",
+   "postcode": "339941",
+   "building": "Luzerne Building"
+  },
+  "candidates": [
+   {
+    "name": "Luzerne",
+    "hn": "72",
+    "street": "Bendemeer Road",
+    "pc": "339941",
+    "city": "Singapore",
+    "district": "Kallang",
+    "locality": "Kallang Bahru",
+    "lat": 1.3160155,
+    "lon": 103.8628794,
+    "score": 5,
+    "tier": "building",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   }
+  ],
+  "chosen": {
+   "name": "Luzerne",
+   "hn": "72",
+   "street": "Bendemeer Road",
+   "pc": "339941",
+   "city": "Singapore",
+   "district": "Kallang",
+   "locality": "Kallang Bahru",
+   "lat": 1.3160155,
+   "lon": 103.8628794,
+   "score": 5,
+   "tier": "building",
+   "matched_on": [
+    "street",
+    "postcode",
+    "housenumber"
+   ],
+   "name_ok": false,
+   "hn_ok": true,
+   "pc_ok": true,
+   "street_ok": true
+  }
+ },
+ {
+  "venue_id": "sg-5be91e319a02",
+  "query": "1 North Bridge Road, Singapore 179094",
+  "checked_on": "2026-11-26",
+  "provider": "Photon (OpenStreetMap data, komoot)",
+  "request_url": "https://photon.komoot.io/api/?q=1+North+Bridge+Road%2C+Singapore+179094&limit=5&lang=en&lat=1.3521&lon=103.8198",
+  "expected": {
+   "street": "North Bridge Road",
+   "housenumber": "1",
+   "postcode": "179094",
+   "building": "High Street Centre"
+  },
+  "candidates": [
+   {
+    "name": null,
+    "hn": "1",
+    "street": "North Bridge Road",
+    "pc": "179094",
+    "city": "Singapore",
+    "district": "Downtown Core",
+    "locality": "City Hall",
+    "lat": 1.2900606,
+    "lon": 103.849088,
+    "score": 5,
+    "tier": "building",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   },
+   {
+    "name": "High Street Centre",
+    "hn": "1",
+    "street": "North Bridge Road",
+    "pc": "179094",
+    "city": "Singapore",
+    "district": "Downtown Core",
+    "locality": "City Hall",
+    "lat": 1.2899732,
+    "lon": 103.8492506,
+    "score": 7,
+    "tier": "exact_venue",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber",
+     "name"
+    ],
+    "name_ok": true,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   },
+   {
+    "name": "BicycleHut",
+    "hn": "1",
+    "street": "North Bridge Road",
+    "pc": "179094",
+    "city": "Singapore",
+    "district": "Downtown Core",
+    "locality": "City Hall",
+    "lat": 1.289835,
+    "lon": 103.8491166,
+    "score": 5,
+    "tier": "building",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   },
+   {
+    "name": "Thye Hua Kwan Moral Charities",
+    "hn": "1",
+    "street": "North Bridge Road",
+    "pc": "179094",
+    "city": "Singapore",
+    "district": "Downtown Core",
+    "locality": "City Hall",
+    "lat": 1.2898753,
+    "lon": 103.8492993,
+    "score": 5,
+    "tier": "building",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   },
+   {
+    "name": "North Bridge Road",
+    "hn": null,
+    "street": null,
+    "pc": "179094",
+    "city": "Singapore",
+    "district": "Downtown Core",
+    "locality": "City Hall",
+    "lat": 1.2893603,
+    "lon": 103.8495376,
+    "score": 3,
+    "tier": "street",
+    "matched_on": [
+     "street",
+     "postcode"
+    ],
+    "name_ok": false,
+    "hn_ok": false,
+    "pc_ok": true,
+    "street_ok": true
+   }
+  ],
+  "chosen": {
+   "name": "High Street Centre",
+   "hn": "1",
+   "street": "North Bridge Road",
+   "pc": "179094",
+   "city": "Singapore",
+   "district": "Downtown Core",
+   "locality": "City Hall",
+   "lat": 1.2899732,
+   "lon": 103.8492506,
+   "score": 7,
+   "tier": "exact_venue",
+   "matched_on": [
+    "street",
+    "postcode",
+    "housenumber",
+    "name"
+   ],
+   "name_ok": true,
+   "hn_ok": true,
+   "pc_ok": true,
+   "street_ok": true
+  }
+ },
+ {
+  "venue_id": "sg-5d3fcedef47c",
+  "query": "1 St Andrew's Road, Singapore 178957",
+  "checked_on": "2026-11-26",
+  "provider": "OpenStreetMap Nominatim (Photon had no tier-matching result)",
+  "request_url": "https://nominatim.openstreetmap.org/search?q=1+St+Andrew%27s+Road%2C+Singapore+178957&format=json&limit=5&addressdetails=1&countrycodes=sg",
+  "expected": {
+   "street": "St Andrew's Road",
+   "housenumber": "1",
+   "postcode": "178957",
+   "building": "National Gallery Singapore"
+  },
+  "candidates": [
+   {
+    "name": "National Gallery Singapore",
+    "hn": "1",
+    "street": "Saint Andrew's Road",
+    "pc": "178957",
+    "city": "Singapore",
+    "district": "Civic District",
+    "locality": "City Hall",
+    "lat": 1.2902557,
+    "lon": 103.8514709,
+    "score": 6,
+    "tier": "exact_venue",
+    "matched_on": [
+     "postcode",
+     "housenumber",
+     "name"
+    ],
+    "name_ok": true,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": false
+   },
+   {
+    "name": "Old City Hall",
+    "hn": "1",
+    "street": "Saint Andrew's Road",
+    "pc": "178957",
+    "city": "Singapore",
+    "district": "Civic District",
+    "locality": "City Hall",
+    "lat": 1.2905481,
+    "lon": 103.8516444,
+    "score": 4,
+    "tier": "building",
+    "matched_on": [
+     "postcode",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": false
+   },
+   {
+    "name": "Odette",
+    "hn": "1",
+    "street": "Saint Andrew's Road",
+    "pc": "178957",
+    "city": "Singapore",
+    "district": "Civic District",
+    "locality": "City Hall",
+    "lat": 1.2899467,
+    "lon": 103.851523,
+    "score": 4,
+    "tier": "building",
+    "matched_on": [
+     "postcode",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": false
+   },
+   {
+    "name": "Old Supreme Court",
+    "hn": "1",
+    "street": "Saint Andrew's Road",
+    "pc": "178957",
+    "city": "Singapore",
+    "district": "Civic District",
+    "locality": "City Hall",
+    "lat": 1.2898118,
+    "lon": 103.8512365,
+    "score": 4,
+    "tier": "building",
+    "matched_on": [
+     "postcode",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": false
+   },
+   {
+    "name": "Hachi",
+    "hn": "1",
+    "street": "Saint Andrew's Road",
+    "pc": "178957",
+    "city": "Singapore",
+    "district": "Civic District",
+    "locality": "City Hall",
+    "lat": 1.289515,
+    "lon": 103.8512809,
+    "score": 4,
+    "tier": "building",
+    "matched_on": [
+     "postcode",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": false
+   }
+  ],
+  "chosen": {
+   "name": "National Gallery Singapore",
+   "hn": "1",
+   "street": "Saint Andrew's Road",
+   "pc": "178957",
+   "city": "Singapore",
+   "district": "Civic District",
+   "locality": "City Hall",
+   "lat": 1.2902557,
+   "lon": 103.8514709,
+   "score": 6,
+   "tier": "exact_venue",
+   "matched_on": [
+    "postcode",
+    "housenumber",
+    "name"
+   ],
+   "name_ok": true,
+   "hn_ok": true,
+   "pc_ok": true,
+   "street_ok": false
+  }
+ },
+ {
+  "venue_id": "sg-5d80f59cd550",
+  "query": "20 Kallang Avenue, Singapore 339411",
+  "checked_on": "2026-11-26",
+  "provider": "Photon (OpenStreetMap data, komoot)",
+  "request_url": "https://photon.komoot.io/api/?q=20+Kallang+Avenue%2C+Singapore+339411&limit=5&lang=en&lat=1.3521&lon=103.8198",
+  "expected": {
+   "street": "Kallang Avenue",
+   "housenumber": "20",
+   "postcode": "339411",
+   "building": "Pico Creative Centre"
+  },
+  "candidates": [
+   {
+    "name": "Kallang Avenue",
+    "hn": null,
+    "street": null,
+    "pc": "339413",
+    "city": "Singapore",
+    "district": "Kallang",
+    "locality": "Kallang Bahru",
+    "lat": 1.3101639,
+    "lon": 103.8653621,
+    "score": 1,
+    "tier": "street",
+    "matched_on": [
+     "street"
+    ],
+    "name_ok": false,
+    "hn_ok": false,
+    "pc_ok": false,
+    "street_ok": true
+   },
+   {
+    "name": "Kallang Avenue",
+    "hn": null,
+    "street": null,
+    "pc": "339416",
+    "city": "Singapore",
+    "district": "Kallang",
+    "locality": "Kallang Bahru",
+    "lat": 1.3105156,
+    "lon": 103.8671854,
+    "score": 1,
+    "tier": "street",
+    "matched_on": [
+     "street"
+    ],
+    "name_ok": false,
+    "hn_ok": false,
+    "pc_ok": false,
+    "street_ok": true
+   },
+   {
+    "name": "Kallang Avenue",
+    "hn": null,
+    "street": null,
+    "pc": "339412",
+    "city": "Singapore",
+    "district": "Kallang",
+    "locality": "Kallang Bahru",
+    "lat": 1.3117667,
+    "lon": 103.8680667,
+    "score": 1,
+    "tier": "street",
+    "matched_on": [
+     "street"
+    ],
+    "name_ok": false,
+    "hn_ok": false,
+    "pc_ok": false,
+    "street_ok": true
+   },
+   {
+    "name": "Kallang Basin Industrial Estate",
+    "hn": "25",
+    "street": "Kallang Avenue",
+    "pc": "339416",
+    "city": "Singapore",
+    "district": "Kallang",
+    "locality": "Kallang Bahru",
+    "lat": 1.3107398,
+    "lon": 103.8661191,
+    "score": 1,
+    "tier": "street",
+    "matched_on": [
+     "street"
+    ],
+    "name_ok": false,
+    "hn_ok": false,
+    "pc_ok": false,
+    "street_ok": true
+   }
+  ],
+  "chosen": {
+   "name": "Kallang Avenue",
+   "hn": null,
+   "street": null,
+   "pc": "339413",
+   "city": "Singapore",
+   "district": "Kallang",
+   "locality": "Kallang Bahru",
+   "lat": 1.3101639,
+   "lon": 103.8653621,
+   "score": 1,
+   "tier": "street",
+   "matched_on": [
+    "street"
+   ],
+   "name_ok": false,
+   "hn_ok": false,
+   "pc_ok": false,
+   "street_ok": true
+  }
+ },
+ {
+  "venue_id": "sg-61c5043af885",
+  "query": "80 Bras Basah Road, Singapore 189560",
+  "checked_on": "2026-11-26",
+  "provider": "Photon (OpenStreetMap data, komoot)",
+  "request_url": "https://photon.komoot.io/api/?q=80+Bras+Basah+Road%2C+Singapore+189560&limit=5&lang=en&lat=1.3521&lon=103.8198",
+  "expected": {
+   "street": "Bras Basah Road",
+   "housenumber": "80",
+   "postcode": "189560",
+   "building": "Fairmont Singapore"
+  },
+  "candidates": [
+   {
+    "name": null,
+    "hn": "80",
+    "street": "Bras Basah Road",
+    "pc": "189560",
+    "city": "Singapore",
+    "district": "Downtown Core",
+    "locality": "City Hall",
+    "lat": 1.2941133,
+    "lon": 103.8539484,
+    "score": 5,
+    "tier": "building",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   },
+   {
+    "name": "Fairmont",
+    "hn": "80",
+    "street": "Bras Basah Road",
+    "pc": "189560",
+    "city": "Singapore",
+    "district": "Downtown Core",
+    "locality": "City Hall",
+    "lat": 1.2940043,
+    "lon": 103.8539661,
+    "score": 7,
+    "tier": "exact_venue",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber",
+     "name"
+    ],
+    "name_ok": true,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   }
+  ],
+  "chosen": {
+   "name": "Fairmont",
+   "hn": "80",
+   "street": "Bras Basah Road",
+   "pc": "189560",
+   "city": "Singapore",
+   "district": "Downtown Core",
+   "locality": "City Hall",
+   "lat": 1.2940043,
+   "lon": 103.8539661,
+   "score": 7,
+   "tier": "exact_venue",
+   "matched_on": [
+    "street",
+    "postcode",
+    "housenumber",
+    "name"
+   ],
+   "name_ok": true,
+   "hn_ok": true,
+   "pc_ok": true,
+   "street_ok": true
+  }
+ },
+ {
+  "venue_id": "sg-6aaa43c58493",
+  "query": "20B Mosque Street, Singapore 059500",
+  "checked_on": "2026-11-26",
+  "provider": "OpenStreetMap Nominatim (Photon had no tier-matching result)",
+  "request_url": "https://nominatim.openstreetmap.org/search?q=20B+Mosque+Street%2C+Singapore+059500&format=json&limit=5&addressdetails=1&countrycodes=sg",
+  "expected": {
+   "street": "Mosque Street",
+   "housenumber": "20B",
+   "postcode": "059500",
+   "building": null
+  },
+  "candidates": [
+   {
+    "name": "Utterly Art",
+    "hn": "20B",
+    "street": "Mosque Street",
+    "pc": "059500",
+    "city": "Singapore",
+    "district": "Tanjong Pagar",
+    "locality": "Chinatown",
+    "lat": 1.2837721,
+    "lon": 103.8446514,
+    "score": 5,
+    "tier": "building",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   }
+  ],
+  "chosen": {
+   "name": "Utterly Art",
+   "hn": "20B",
+   "street": "Mosque Street",
+   "pc": "059500",
+   "city": "Singapore",
+   "district": "Tanjong Pagar",
+   "locality": "Chinatown",
+   "lat": 1.2837721,
+   "lon": 103.8446514,
+   "score": 5,
+   "tier": "building",
+   "matched_on": [
+    "street",
+    "postcode",
+    "housenumber"
+   ],
+   "name_ok": false,
+   "hn_ok": true,
+   "pc_ok": true,
+   "street_ok": true
+  }
+ },
+ {
+  "venue_id": "sg-83af406debab",
+  "query": "1 North Bridge Road, Singapore 179094",
+  "checked_on": "2026-11-26",
+  "provider": "Photon (OpenStreetMap data, komoot)",
+  "request_url": "https://photon.komoot.io/api/?q=1+North+Bridge+Road%2C+Singapore+179094&limit=5&lang=en&lat=1.3521&lon=103.8198",
+  "expected": {
+   "street": "North Bridge Road",
+   "housenumber": "1",
+   "postcode": "179094",
+   "building": "High Street Centre"
+  },
+  "candidates": [
+   {
+    "name": null,
+    "hn": "1",
+    "street": "North Bridge Road",
+    "pc": "179094",
+    "city": "Singapore",
+    "district": "Downtown Core",
+    "locality": "City Hall",
+    "lat": 1.2900606,
+    "lon": 103.849088,
+    "score": 5,
+    "tier": "building",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   },
+   {
+    "name": "High Street Centre",
+    "hn": "1",
+    "street": "North Bridge Road",
+    "pc": "179094",
+    "city": "Singapore",
+    "district": "Downtown Core",
+    "locality": "City Hall",
+    "lat": 1.2899732,
+    "lon": 103.8492506,
+    "score": 7,
+    "tier": "exact_venue",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber",
+     "name"
+    ],
+    "name_ok": true,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   },
+   {
+    "name": "BicycleHut",
+    "hn": "1",
+    "street": "North Bridge Road",
+    "pc": "179094",
+    "city": "Singapore",
+    "district": "Downtown Core",
+    "locality": "City Hall",
+    "lat": 1.289835,
+    "lon": 103.8491166,
+    "score": 5,
+    "tier": "building",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   },
+   {
+    "name": "Thye Hua Kwan Moral Charities",
+    "hn": "1",
+    "street": "North Bridge Road",
+    "pc": "179094",
+    "city": "Singapore",
+    "district": "Downtown Core",
+    "locality": "City Hall",
+    "lat": 1.2898753,
+    "lon": 103.8492993,
+    "score": 5,
+    "tier": "building",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   },
+   {
+    "name": "North Bridge Road",
+    "hn": null,
+    "street": null,
+    "pc": "179094",
+    "city": "Singapore",
+    "district": "Downtown Core",
+    "locality": "City Hall",
+    "lat": 1.2893603,
+    "lon": 103.8495376,
+    "score": 3,
+    "tier": "street",
+    "matched_on": [
+     "street",
+     "postcode"
+    ],
+    "name_ok": false,
+    "hn_ok": false,
+    "pc_ok": true,
+    "street_ok": true
+   }
+  ],
+  "chosen": {
+   "name": "High Street Centre",
+   "hn": "1",
+   "street": "North Bridge Road",
+   "pc": "179094",
+   "city": "Singapore",
+   "district": "Downtown Core",
+   "locality": "City Hall",
+   "lat": 1.2899732,
+   "lon": 103.8492506,
+   "score": 7,
+   "tier": "exact_venue",
+   "matched_on": [
+    "street",
+    "postcode",
+    "housenumber",
+    "name"
+   ],
+   "name_ok": true,
+   "hn_ok": true,
+   "pc_ok": true,
+   "street_ok": true
+  }
+ },
+ {
+  "venue_id": "sg-86d82fc69fcf",
+  "query": "11 Eunos Road 8, Singapore 408601",
+  "checked_on": "2026-11-26",
+  "provider": "Photon (OpenStreetMap data, komoot)",
+  "request_url": "https://photon.komoot.io/api/?q=11+Eunos+Road+8%2C+Singapore+408601&limit=5&lang=en&lat=1.3521&lon=103.8198",
+  "expected": {
+   "street": "Eunos Road 8",
+   "housenumber": "11",
+   "postcode": "408601",
+   "building": "Lifelong Learning Institute"
+  },
+  "candidates": [
+   {
+    "name": "The LLibrary",
+    "hn": "11",
+    "street": "Eunos Road 8",
+    "pc": "408601",
+    "city": "Singapore",
+    "district": "Geylang",
+    "locality": "Geylang East",
+    "lat": 1.3196003,
+    "lon": 103.8923741,
+    "score": 5,
+    "tier": "building",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   }
+  ],
+  "chosen": {
+   "name": "The LLibrary",
+   "hn": "11",
+   "street": "Eunos Road 8",
+   "pc": "408601",
+   "city": "Singapore",
+   "district": "Geylang",
+   "locality": "Geylang East",
+   "lat": 1.3196003,
+   "lon": 103.8923741,
+   "score": 5,
+   "tier": "building",
+   "matched_on": [
+    "street",
+    "postcode",
+    "housenumber"
+   ],
+   "name_ok": false,
+   "hn_ok": true,
+   "pc_ok": true,
+   "street_ok": true
+  }
+ },
+ {
+  "venue_id": "sg-8b90835a276b",
+  "query": "21 Bedok North Street 1, Singapore 469659",
+  "checked_on": "2026-11-26",
+  "provider": "OpenStreetMap Nominatim (Photon had no tier-matching result)",
+  "request_url": "https://nominatim.openstreetmap.org/search?q=21+Bedok+North+Street+1%2C+Singapore+469659&format=json&limit=5&addressdetails=1&countrycodes=sg",
+  "expected": {
+   "street": "Bedok North Street 1",
+   "housenumber": "21",
+   "postcode": "469659",
+   "building": "Common Ground Civic Centre"
+  },
+  "candidates": [
+   {
+    "name": "",
+    "hn": "21",
+    "street": "Bedok North Street 1",
+    "pc": "469659",
+    "city": "Singapore",
+    "district": "Bedok",
+    "locality": "Bedok North",
+    "lat": 1.3269697,
+    "lon": 103.9309216,
+    "score": 5,
+    "tier": "building",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   }
+  ],
+  "chosen": {
+   "name": "",
+   "hn": "21",
+   "street": "Bedok North Street 1",
+   "pc": "469659",
+   "city": "Singapore",
+   "district": "Bedok",
+   "locality": "Bedok North",
+   "lat": 1.3269697,
+   "lon": 103.9309216,
+   "score": 5,
+   "tier": "building",
+   "matched_on": [
+    "street",
+    "postcode",
+    "housenumber"
+   ],
+   "name_ok": false,
+   "hn_ok": true,
+   "pc_ok": true,
+   "street_ok": true
+  }
+ },
+ {
+  "venue_id": "sg-8cb81459951c",
+  "query": "36 Carpenter Street, Singapore 059915",
+  "checked_on": "2026-11-26",
+  "provider": "OpenStreetMap Nominatim (Photon had no tier-matching result)",
+  "request_url": "https://nominatim.openstreetmap.org/search?q=36+Carpenter+Street%2C+Singapore+059915&format=json&limit=5&addressdetails=1&countrycodes=sg",
+  "expected": {
+   "street": "Carpenter Street",
+   "housenumber": "36",
+   "postcode": "059915",
+   "building": null
+  },
+  "candidates": [
+   {
+    "name": "",
+    "hn": "36",
+    "street": "Carpenter Street",
+    "pc": "059915",
+    "city": "Singapore",
+    "district": "Singapore River",
+    "locality": "Boat Quay",
+    "lat": 1.2880008,
+    "lon": 103.847698,
+    "score": 5,
+    "tier": "building",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   },
+   {
+    "name": "Neon Pigeon",
+    "hn": "36",
+    "street": "Carpenter Street",
+    "pc": "059915",
+    "city": "Singapore",
+    "district": "Singapore River",
+    "locality": "Boat Quay",
+    "lat": 1.2880585,
+    "lon": 103.8478001,
+    "score": 5,
+    "tier": "building",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   },
+   {
+    "name": "The Hive Carpenter",
+    "hn": "36",
+    "street": "Carpenter Street",
+    "pc": "059915",
+    "city": "Singapore",
+    "district": "Singapore River",
+    "locality": "Boat Quay",
+    "lat": 1.2880461,
+    "lon": 103.8477342,
+    "score": 7,
+    "tier": "exact_venue",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber",
+     "name"
+    ],
+    "name_ok": true,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   },
+   {
+    "name": "iJooz",
+    "hn": "36",
+    "street": "Carpenter Street",
+    "pc": "059911",
+    "city": "Singapore",
+    "district": "Singapore River",
+    "locality": "Boat Quay",
+    "lat": 1.2881325,
+    "lon": 103.8477129,
+    "score": 3,
+    "tier": "building",
+    "matched_on": [
+     "street",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": false,
+    "street_ok": true
+   }
+  ],
+  "chosen": {
+   "name": "The Hive Carpenter",
+   "hn": "36",
+   "street": "Carpenter Street",
+   "pc": "059915",
+   "city": "Singapore",
+   "district": "Singapore River",
+   "locality": "Boat Quay",
+   "lat": 1.2880461,
+   "lon": 103.8477342,
+   "score": 7,
+   "tier": "exact_venue",
+   "matched_on": [
+    "street",
+    "postcode",
+    "housenumber",
+    "name"
+   ],
+   "name_ok": true,
+   "hn_ok": true,
+   "pc_ok": true,
+   "street_ok": true
+  }
+ },
+ {
+  "venue_id": "sg-9787a5fba342",
+  "query": "41 Beach Road, Singapore 189680",
+  "checked_on": "2026-11-26",
+  "provider": "OpenStreetMap Nominatim (Photon had no tier-matching result)",
+  "request_url": "https://nominatim.openstreetmap.org/search?q=41+Beach+Road%2C+Singapore+189680&format=json&limit=5&addressdetails=1&countrycodes=sg",
+  "expected": {
+   "street": "Beach Road",
+   "housenumber": "41",
+   "postcode": "189680",
+   "building": null
+  },
+  "candidates": [],
+  "chosen": null
+ },
+ {
+  "venue_id": "sg-9d1a91764baf",
+  "query": "190 Clemenceau Avenue, Singapore 239924",
+  "checked_on": "2026-11-26",
+  "provider": "OpenStreetMap Nominatim (Photon had no tier-matching result)",
+  "request_url": "https://nominatim.openstreetmap.org/search?q=190+Clemenceau+Avenue%2C+Singapore+239924&format=json&limit=5&addressdetails=1&countrycodes=sg",
+  "expected": {
+   "street": "Clemenceau Avenue",
+   "housenumber": "190",
+   "postcode": "239924",
+   "building": "Singapore Shopping Centre"
+  },
+  "candidates": [
+   {
+    "name": "Singapore Shopping Centre",
+    "hn": "190",
+    "street": "Clemenceau Avenue",
+    "pc": "239924",
+    "city": "Singapore",
+    "district": "Museum",
+    "locality": "Dhoby Ghaut",
+    "lat": 1.2981147,
+    "lon": 103.8441112,
+    "score": 7,
+    "tier": "exact_venue",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber",
+     "name"
+    ],
+    "name_ok": true,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   }
+  ],
+  "chosen": {
+   "name": "Singapore Shopping Centre",
+   "hn": "190",
+   "street": "Clemenceau Avenue",
+   "pc": "239924",
+   "city": "Singapore",
+   "district": "Museum",
+   "locality": "Dhoby Ghaut",
+   "lat": 1.2981147,
+   "lon": 103.8441112,
+   "score": 7,
+   "tier": "exact_venue",
+   "matched_on": [
+    "street",
+    "postcode",
+    "housenumber",
+    "name"
+   ],
+   "name_ok": true,
+   "hn_ok": true,
+   "pc_ok": true,
+   "street_ok": true
+  }
+ },
+ {
+  "venue_id": "sg-a5d5d094bf2e",
+  "query": "60 Cecil Street, Singapore 049709",
+  "checked_on": "2026-11-26",
+  "provider": "OpenStreetMap Nominatim (Photon had no tier-matching result)",
+  "request_url": "https://nominatim.openstreetmap.org/search?q=60+Cecil+Street%2C+Singapore+049709&format=json&limit=5&addressdetails=1&countrycodes=sg",
+  "expected": {
+   "street": "Cecil Street",
+   "housenumber": "60",
+   "postcode": "049709",
+   "building": "ISCA House"
+  },
+  "candidates": [
+   {
+    "name": "KPB Building",
+    "hn": "60",
+    "street": "Cecil Street",
+    "pc": "049711",
+    "city": "Singapore",
+    "district": "Civic District",
+    "locality": "Raffles Park",
+    "lat": 1.2822208,
+    "lon": 103.8495701,
+    "score": 3,
+    "tier": "building",
+    "matched_on": [
+     "street",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": false,
+    "street_ok": true
+   }
+  ],
+  "chosen": {
+   "name": "KPB Building",
+   "hn": "60",
+   "street": "Cecil Street",
+   "pc": "049711",
+   "city": "Singapore",
+   "district": "Civic District",
+   "locality": "Raffles Park",
+   "lat": 1.2822208,
+   "lon": 103.8495701,
+   "score": 3,
+   "tier": "building",
+   "matched_on": [
+    "street",
+    "housenumber"
+   ],
+   "name_ok": false,
+   "hn_ok": true,
+   "pc_ok": false,
+   "street_ok": true
+  }
+ },
+ {
+  "venue_id": "sg-afe29d71b4e8",
+  "query": "23A Coleman Street, Singapore 179806",
+  "checked_on": "2026-11-26",
+  "provider": "OpenStreetMap Nominatim (Photon had no tier-matching result)",
+  "request_url": "https://nominatim.openstreetmap.org/search?q=23A+Coleman+Street%2C+Singapore+179806&format=json&limit=5&addressdetails=1&countrycodes=sg",
+  "expected": {
+   "street": "Coleman Street",
+   "housenumber": "23A",
+   "postcode": "179806",
+   "building": null
+  },
+  "candidates": [
+   {
+    "name": "Masonic Hall",
+    "hn": "23A",
+    "street": "Coleman Street",
+    "pc": "179806",
+    "city": "Singapore",
+    "district": "Museum",
+    "locality": "Fort Canning",
+    "lat": 1.2925653,
+    "lon": 103.848949,
+    "score": 5,
+    "tier": "building",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   },
+   {
+    "name": "",
+    "hn": "23A",
+    "street": "Coleman Street",
+    "pc": "179806",
+    "city": "Singapore",
+    "district": "Museum",
+    "locality": "Fort Canning",
+    "lat": 1.2924766,
+    "lon": 103.8488035,
+    "score": 5,
+    "tier": "building",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   },
+   {
+    "name": "The Masons Table",
+    "hn": "23A",
+    "street": "Coleman Street",
+    "pc": "179806",
+    "city": "Singapore",
+    "district": "Museum",
+    "locality": "Fort Canning",
+    "lat": 1.2926107,
+    "lon": 103.8489845,
+    "score": 7,
+    "tier": "exact_venue",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber",
+     "name"
+    ],
+    "name_ok": true,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   }
+  ],
+  "chosen": {
+   "name": "The Masons Table",
+   "hn": "23A",
+   "street": "Coleman Street",
+   "pc": "179806",
+   "city": "Singapore",
+   "district": "Museum",
+   "locality": "Fort Canning",
+   "lat": 1.2926107,
+   "lon": 103.8489845,
+   "score": 7,
+   "tier": "exact_venue",
+   "matched_on": [
+    "street",
+    "postcode",
+    "housenumber",
+    "name"
+   ],
+   "name_ok": true,
+   "hn_ok": true,
+   "pc_ok": true,
+   "street_ok": true
+  }
+ },
+ {
+  "venue_id": "sg-b57c010c7380",
+  "query": "11 Eunos Road 8, Singapore 408601",
+  "checked_on": "2026-11-26",
+  "provider": "OpenStreetMap Nominatim (Photon had no tier-matching result)",
+  "request_url": "https://nominatim.openstreetmap.org/search?q=11+Eunos+Road+8%2C+Singapore+408601&format=json&limit=5&addressdetails=1&countrycodes=sg",
+  "expected": {
+   "street": "Eunos Road 8",
+   "housenumber": "11",
+   "postcode": "408601",
+   "building": "Lifelong Learning Institute"
+  },
+  "candidates": [
+   {
+    "name": "The LLibrary",
+    "hn": "11",
+    "street": "Eunos Road 8",
+    "pc": "408601",
+    "city": "Singapore",
+    "district": "Geylang",
+    "locality": "Geylang East",
+    "lat": 1.3196003,
+    "lon": 103.8923741,
+    "score": 5,
+    "tier": "building",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   }
+  ],
+  "chosen": {
+   "name": "The LLibrary",
+   "hn": "11",
+   "street": "Eunos Road 8",
+   "pc": "408601",
+   "city": "Singapore",
+   "district": "Geylang",
+   "locality": "Geylang East",
+   "lat": 1.3196003,
+   "lon": 103.8923741,
+   "score": 5,
+   "tier": "building",
+   "matched_on": [
+    "street",
+    "postcode",
+    "housenumber"
+   ],
+   "name_ok": false,
+   "hn_ok": true,
+   "pc_ok": true,
+   "street_ok": true
+  }
+ },
+ {
+  "venue_id": "sg-b5dffa99af1f",
+  "query": "60 Cecil Street, Singapore 049709",
+  "checked_on": "2026-11-26",
+  "provider": "OpenStreetMap Nominatim (Photon had no tier-matching result)",
+  "request_url": "https://nominatim.openstreetmap.org/search?q=60+Cecil+Street%2C+Singapore+049709&format=json&limit=5&addressdetails=1&countrycodes=sg",
+  "expected": {
+   "street": "Cecil Street",
+   "housenumber": "60",
+   "postcode": "049709",
+   "building": "ISCA House"
+  },
+  "candidates": [
+   {
+    "name": "KPB Building",
+    "hn": "60",
+    "street": "Cecil Street",
+    "pc": "049711",
+    "city": "Singapore",
+    "district": "Civic District",
+    "locality": "Raffles Park",
+    "lat": 1.2822208,
+    "lon": 103.8495701,
+    "score": 3,
+    "tier": "building",
+    "matched_on": [
+     "street",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": false,
+    "street_ok": true
+   }
+  ],
+  "chosen": {
+   "name": "KPB Building",
+   "hn": "60",
+   "street": "Cecil Street",
+   "pc": "049711",
+   "city": "Singapore",
+   "district": "Civic District",
+   "locality": "Raffles Park",
+   "lat": 1.2822208,
+   "lon": 103.8495701,
+   "score": 3,
+   "tier": "building",
+   "matched_on": [
+    "street",
+    "housenumber"
+   ],
+   "name_ok": false,
+   "hn_ok": true,
+   "pc_ok": false,
+   "street_ok": true
+  }
+ },
+ {
+  "venue_id": "sg-b988c8bb26eb",
+  "query": "1 Marina Boulevard, Singapore 018989",
+  "checked_on": "2026-11-26",
+  "provider": "OpenStreetMap Nominatim (Photon had no tier-matching result)",
+  "request_url": "https://nominatim.openstreetmap.org/search?q=1+Marina+Boulevard%2C+Singapore+018989&format=json&limit=5&addressdetails=1&countrycodes=sg",
+  "expected": {
+   "street": "Marina Boulevard",
+   "housenumber": "1",
+   "postcode": "018989",
+   "building": "NTUC Centre"
+  },
+  "candidates": [
+   {
+    "name": "NTUC Centre",
+    "hn": "1",
+    "street": "Marina Boulevard",
+    "pc": "018989",
+    "city": "Singapore",
+    "district": "Civic District",
+    "locality": "Downtown Central",
+    "lat": 1.2822887,
+    "lon": 103.8526812,
+    "score": 7,
+    "tier": "exact_venue",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber",
+     "name"
+    ],
+    "name_ok": true,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   },
+   {
+    "name": "Singapore Labour Foundation",
+    "hn": "1",
+    "street": "Marina Boulevard",
+    "pc": "018989",
+    "city": "Singapore",
+    "district": "Civic District",
+    "locality": "Downtown Central",
+    "lat": 1.2823322,
+    "lon": 103.8525085,
+    "score": 5,
+    "tier": "building",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   },
+   {
+    "name": "Workforce Singapore",
+    "hn": "1",
+    "street": "Marina Boulevard",
+    "pc": "018989",
+    "city": "Singapore",
+    "district": "Civic District",
+    "locality": "Downtown Central",
+    "lat": 1.2822759,
+    "lon": 103.8525957,
+    "score": 5,
+    "tier": "building",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   }
+  ],
+  "chosen": {
+   "name": "NTUC Centre",
+   "hn": "1",
+   "street": "Marina Boulevard",
+   "pc": "018989",
+   "city": "Singapore",
+   "district": "Civic District",
+   "locality": "Downtown Central",
+   "lat": 1.2822887,
+   "lon": 103.8526812,
+   "score": 7,
+   "tier": "exact_venue",
+   "matched_on": [
+    "street",
+    "postcode",
+    "housenumber",
+    "name"
+   ],
+   "name_ok": true,
+   "hn_ok": true,
+   "pc_ok": true,
+   "street_ok": true
+  }
+ },
+ {
+  "venue_id": "sg-bea2d52eb16e",
+  "query": "40 Sam Leong Road, Singapore 207930",
+  "checked_on": "2026-11-26",
+  "provider": "OpenStreetMap Nominatim (Photon had no tier-matching result)",
+  "request_url": "https://nominatim.openstreetmap.org/search?q=40+Sam+Leong+Road%2C+Singapore+207930&format=json&limit=5&addressdetails=1&countrycodes=sg",
+  "expected": {
+   "street": "Sam Leong Road",
+   "housenumber": "40",
+   "postcode": "207930",
+   "building": null
+  },
+  "candidates": [
+   {
+    "name": "Sam Leong Road",
+    "hn": null,
+    "street": "Sam Leong Road",
+    "pc": "207274",
+    "city": "Singapore",
+    "district": "Kallang",
+    "locality": "Lavender",
+    "lat": 1.3101042,
+    "lon": 103.856112,
+    "score": 1,
+    "tier": "street",
+    "matched_on": [
+     "street"
+    ],
+    "name_ok": false,
+    "hn_ok": false,
+    "pc_ok": false,
+    "street_ok": true
+   },
+   {
+    "name": "Sam Leong Road",
+    "hn": null,
+    "street": "Sam Leong Road",
+    "pc": "207903",
+    "city": "Singapore",
+    "district": "Kallang",
+    "locality": "Lavender",
+    "lat": 1.3091825,
+    "lon": 103.8570578,
+    "score": 1,
+    "tier": "street",
+    "matched_on": [
+     "street"
+    ],
+    "name_ok": false,
+    "hn_ok": false,
+    "pc_ok": false,
+    "street_ok": true
+   },
+   {
+    "name": "Sam Leong Road",
+    "hn": null,
+    "street": "Sam Leong Road",
+    "pc": "207900",
+    "city": "Singapore",
+    "district": "Kallang",
+    "locality": "Lavender",
+    "lat": 1.3088872,
+    "lon": 103.8573631,
+    "score": 1,
+    "tier": "street",
+    "matched_on": [
+     "street"
+    ],
+    "name_ok": false,
+    "hn_ok": false,
+    "pc_ok": false,
+    "street_ok": true
+   },
+   {
+    "name": "Sam Leong Road",
+    "hn": null,
+    "street": "Sam Leong Road",
+    "pc": "207907",
+    "city": "Singapore",
+    "district": "Kallang",
+    "locality": "Lavender",
+    "lat": 1.3097235,
+    "lon": 103.8564982,
+    "score": 1,
+    "tier": "street",
+    "matched_on": [
+     "street"
+    ],
+    "name_ok": false,
+    "hn_ok": false,
+    "pc_ok": false,
+    "street_ok": true
+   }
+  ],
+  "chosen": {
+   "name": "Sam Leong Road",
+   "hn": null,
+   "street": "Sam Leong Road",
+   "pc": "207274",
+   "city": "Singapore",
+   "district": "Kallang",
+   "locality": "Lavender",
+   "lat": 1.3101042,
+   "lon": 103.856112,
+   "score": 1,
+   "tier": "street",
+   "matched_on": [
+    "street"
+   ],
+   "name_ok": false,
+   "hn_ok": false,
+   "pc_ok": false,
+   "street_ok": true
+  }
+ },
+ {
+  "venue_id": "sg-bff0f516d53e",
+  "query": "69 Ayer Rajah Crescent, Singapore 139961",
+  "checked_on": "2026-11-26",
+  "provider": "OpenStreetMap Nominatim (Photon had no tier-matching result)",
+  "request_url": "https://nominatim.openstreetmap.org/search?q=69+Ayer+Rajah+Crescent%2C+Singapore+139961&format=json&limit=5&addressdetails=1&countrycodes=sg",
+  "expected": {
+   "street": "Ayer Rajah Crescent",
+   "housenumber": "69",
+   "postcode": "139961",
+   "building": "Vidacity"
+  },
+  "candidates": [
+   {
+    "name": "Train Pod @ one north",
+    "hn": "69",
+    "street": "Ayer Rajah Crescent",
+    "pc": "139961",
+    "city": "Singapore",
+    "district": "one-north",
+    "locality": "One North",
+    "lat": 1.2962231,
+    "lon": 103.786897,
+    "score": 7,
+    "tier": "exact_venue",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber",
+     "name"
+    ],
+    "name_ok": true,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   },
+   {
+    "name": "Dover Medical Centre",
+    "hn": "69",
+    "street": "Ayer Rajah Crescent",
+    "pc": "139961",
+    "city": "Singapore",
+    "district": "one-north",
+    "locality": "One North",
+    "lat": 1.2961959,
+    "lon": 103.7869593,
+    "score": 5,
+    "tier": "building",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   },
+   {
+    "name": "Stage One",
+    "hn": "69",
+    "street": "Ayer Rajah Crescent",
+    "pc": "139961",
+    "city": "Singapore",
+    "district": "one-north",
+    "locality": "One North",
+    "lat": 1.2962419,
+    "lon": 103.7869645,
+    "score": 5,
+    "tier": "building",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   }
+  ],
+  "chosen": {
+   "name": "Train Pod @ one north",
+   "hn": "69",
+   "street": "Ayer Rajah Crescent",
+   "pc": "139961",
+   "city": "Singapore",
+   "district": "one-north",
+   "locality": "One North",
+   "lat": 1.2962231,
+   "lon": 103.786897,
+   "score": 7,
+   "tier": "exact_venue",
+   "matched_on": [
+    "street",
+    "postcode",
+    "housenumber",
+    "name"
+   ],
+   "name_ok": true,
+   "hn_ok": true,
+   "pc_ok": true,
+   "street_ok": true
+  }
+ },
+ {
+  "venue_id": "sg-c5e0795f1042",
+  "query": "28 Aliwal Street, Singapore 199918",
+  "checked_on": "2026-11-26",
+  "provider": "OpenStreetMap Nominatim (Photon had no tier-matching result)",
+  "request_url": "https://nominatim.openstreetmap.org/search?q=28+Aliwal+Street%2C+Singapore+199918&format=json&limit=5&addressdetails=1&countrycodes=sg",
+  "expected": {
+   "street": "Aliwal Street",
+   "housenumber": "28",
+   "postcode": "199918",
+   "building": "Aliwal Arts Centre"
+  },
+  "candidates": [
+   {
+    "name": "Aliwal Arts Centre",
+    "hn": "30;28",
+    "street": "Aliwal Street",
+    "pc": "199918",
+    "city": "Singapore",
+    "district": "Rochor",
+    "locality": "Kampong Glam",
+    "lat": 1.302719,
+    "lon": 103.8610238,
+    "score": 5,
+    "tier": "street",
+    "matched_on": [
+     "street",
+     "postcode",
+     "name"
+    ],
+    "name_ok": true,
+    "hn_ok": false,
+    "pc_ok": true,
+    "street_ok": true
+   },
+   {
+    "name": "Tipo Pasta Bar — Aliwal",
+    "hn": "28",
+    "street": "Aliwal Street",
+    "pc": "199918",
+    "city": "Singapore",
+    "district": "Rochor",
+    "locality": "Kampong Glam",
+    "lat": 1.3026276,
+    "lon": 103.860963,
+    "score": 5,
+    "tier": "building",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   }
+  ],
+  "chosen": {
+   "name": "Aliwal Arts Centre",
+   "hn": "30;28",
+   "street": "Aliwal Street",
+   "pc": "199918",
+   "city": "Singapore",
+   "district": "Rochor",
+   "locality": "Kampong Glam",
+   "lat": 1.302719,
+   "lon": 103.8610238,
+   "score": 5,
+   "tier": "street",
+   "matched_on": [
+    "street",
+    "postcode",
+    "name"
+   ],
+   "name_ok": true,
+   "hn_ok": false,
+   "pc_ok": true,
+   "street_ok": true
+  }
+ },
+ {
+  "venue_id": "sg-c6889650a7db",
+  "query": "11 Eunos Road 8, Singapore 408601",
+  "checked_on": "2026-11-26",
+  "provider": "OpenStreetMap Nominatim (Photon had no tier-matching result)",
+  "request_url": "https://nominatim.openstreetmap.org/search?q=11+Eunos+Road+8%2C+Singapore+408601&format=json&limit=5&addressdetails=1&countrycodes=sg",
+  "expected": {
+   "street": "Eunos Road 8",
+   "housenumber": "11",
+   "postcode": "408601",
+   "building": "Lifelong Learning Institute"
+  },
+  "candidates": [
+   {
+    "name": "The LLibrary",
+    "hn": "11",
+    "street": "Eunos Road 8",
+    "pc": "408601",
+    "city": "Singapore",
+    "district": "Geylang",
+    "locality": "Geylang East",
+    "lat": 1.3196003,
+    "lon": 103.8923741,
+    "score": 5,
+    "tier": "building",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   }
+  ],
+  "chosen": {
+   "name": "The LLibrary",
+   "hn": "11",
+   "street": "Eunos Road 8",
+   "pc": "408601",
+   "city": "Singapore",
+   "district": "Geylang",
+   "locality": "Geylang East",
+   "lat": 1.3196003,
+   "lon": 103.8923741,
+   "score": 5,
+   "tier": "building",
+   "matched_on": [
+    "street",
+    "postcode",
+    "housenumber"
+   ],
+   "name_ok": false,
+   "hn_ok": true,
+   "pc_ok": true,
+   "street_ok": true
+  }
+ },
+ {
+  "venue_id": "sg-d9552dd03dd7",
+  "query": "1 St Andrew's Road, Singapore 178957",
+  "checked_on": "2026-11-26",
+  "provider": "OpenStreetMap Nominatim (Photon had no tier-matching result)",
+  "request_url": "https://nominatim.openstreetmap.org/search?q=1+St+Andrew%27s+Road%2C+Singapore+178957&format=json&limit=5&addressdetails=1&countrycodes=sg",
+  "expected": {
+   "street": "St Andrew's Road",
+   "housenumber": "1",
+   "postcode": "178957",
+   "building": "National Gallery Singapore"
+  },
+  "candidates": [
+   {
+    "name": "National Gallery Singapore",
+    "hn": "1",
+    "street": "Saint Andrew's Road",
+    "pc": "178957",
+    "city": "Singapore",
+    "district": "Civic District",
+    "locality": "City Hall",
+    "lat": 1.2902557,
+    "lon": 103.8514709,
+    "score": 6,
+    "tier": "exact_venue",
+    "matched_on": [
+     "postcode",
+     "housenumber",
+     "name"
+    ],
+    "name_ok": true,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": false
+   },
+   {
+    "name": "Old City Hall",
+    "hn": "1",
+    "street": "Saint Andrew's Road",
+    "pc": "178957",
+    "city": "Singapore",
+    "district": "Civic District",
+    "locality": "City Hall",
+    "lat": 1.2905481,
+    "lon": 103.8516444,
+    "score": 4,
+    "tier": "building",
+    "matched_on": [
+     "postcode",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": false
+   },
+   {
+    "name": "Odette",
+    "hn": "1",
+    "street": "Saint Andrew's Road",
+    "pc": "178957",
+    "city": "Singapore",
+    "district": "Civic District",
+    "locality": "City Hall",
+    "lat": 1.2899467,
+    "lon": 103.851523,
+    "score": 4,
+    "tier": "building",
+    "matched_on": [
+     "postcode",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": false
+   },
+   {
+    "name": "Old Supreme Court",
+    "hn": "1",
+    "street": "Saint Andrew's Road",
+    "pc": "178957",
+    "city": "Singapore",
+    "district": "Civic District",
+    "locality": "City Hall",
+    "lat": 1.2898118,
+    "lon": 103.8512365,
+    "score": 4,
+    "tier": "building",
+    "matched_on": [
+     "postcode",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": false
+   },
+   {
+    "name": "Hachi",
+    "hn": "1",
+    "street": "Saint Andrew's Road",
+    "pc": "178957",
+    "city": "Singapore",
+    "district": "Civic District",
+    "locality": "City Hall",
+    "lat": 1.289515,
+    "lon": 103.8512809,
+    "score": 4,
+    "tier": "building",
+    "matched_on": [
+     "postcode",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": false
+   }
+  ],
+  "chosen": {
+   "name": "National Gallery Singapore",
+   "hn": "1",
+   "street": "Saint Andrew's Road",
+   "pc": "178957",
+   "city": "Singapore",
+   "district": "Civic District",
+   "locality": "City Hall",
+   "lat": 1.2902557,
+   "lon": 103.8514709,
+   "score": 6,
+   "tier": "exact_venue",
+   "matched_on": [
+    "postcode",
+    "housenumber",
+    "name"
+   ],
+   "name_ok": true,
+   "hn_ok": true,
+   "pc_ok": true,
+   "street_ok": false
+  }
+ },
+ {
+  "venue_id": "sg-dca78c5c3a05",
+  "query": "111 North Bridge Road, Singapore 179098",
+  "checked_on": "2026-11-26",
+  "provider": "OpenStreetMap Nominatim (Photon had no tier-matching result)",
+  "request_url": "https://nominatim.openstreetmap.org/search?q=111+North+Bridge+Road%2C+Singapore+179098&format=json&limit=5&addressdetails=1&countrycodes=sg",
+  "expected": {
+   "street": "North Bridge Road",
+   "housenumber": "111",
+   "postcode": "179098",
+   "building": "Peninsular Plaza"
+  },
+  "candidates": [
+   {
+    "name": "Peninsula Plaza",
+    "hn": "111",
+    "street": "North Bridge Road",
+    "pc": "179098",
+    "city": "Singapore",
+    "district": "Civic District",
+    "locality": "City Hall",
+    "lat": 1.2923249,
+    "lon": 103.8508298,
+    "score": 5,
+    "tier": "building",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   },
+   {
+    "name": "Bata",
+    "hn": "111",
+    "street": "North Bridge Road",
+    "pc": "179098",
+    "city": "Singapore",
+    "district": "Civic District",
+    "locality": "City Hall",
+    "lat": 1.2924647,
+    "lon": 103.8511401,
+    "score": 5,
+    "tier": "building",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   },
+   {
+    "name": "NS Fashion",
+    "hn": "111",
+    "street": "North Bridge Road",
+    "pc": "179098",
+    "city": "Singapore",
+    "district": "Civic District",
+    "locality": "City Hall",
+    "lat": 1.2922677,
+    "lon": 103.8510172,
+    "score": 5,
+    "tier": "building",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   },
+   {
+    "name": "Valu$",
+    "hn": "111",
+    "street": "North Bridge Road",
+    "pc": "179098",
+    "city": "Singapore",
+    "district": "Civic District",
+    "locality": "City Hall",
+    "lat": 1.2921851,
+    "lon": 103.8509428,
+    "score": 5,
+    "tier": "building",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   },
+   {
+    "name": "Make A Copy",
+    "hn": "111",
+    "street": "North Bridge Road",
+    "pc": "179098",
+    "city": "Singapore",
+    "district": "Civic District",
+    "locality": "City Hall",
+    "lat": 1.2923247,
+    "lon": 103.8510571,
+    "score": 5,
+    "tier": "building",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   }
+  ],
+  "chosen": {
+   "name": "Peninsula Plaza",
+   "hn": "111",
+   "street": "North Bridge Road",
+   "pc": "179098",
+   "city": "Singapore",
+   "district": "Civic District",
+   "locality": "City Hall",
+   "lat": 1.2923249,
+   "lon": 103.8508298,
+   "score": 5,
+   "tier": "building",
+   "matched_on": [
+    "street",
+    "postcode",
+    "housenumber"
+   ],
+   "name_ok": false,
+   "hn_ok": true,
+   "pc_ok": true,
+   "street_ok": true
+  }
+ },
+ {
+  "venue_id": "sg-ed2e35df4121",
+  "query": "21 Collyer Quay, Singapore 049320",
+  "checked_on": "2026-11-26",
+  "provider": "OpenStreetMap Nominatim (Photon had no tier-matching result)",
+  "request_url": "https://nominatim.openstreetmap.org/search?q=21+Collyer+Quay%2C+Singapore+049320&format=json&limit=5&addressdetails=1&countrycodes=sg",
+  "expected": {
+   "street": "Collyer Quay",
+   "housenumber": "21",
+   "postcode": "049320",
+   "building": "21 Collyer Quay"
+  },
+  "candidates": [
+   {
+    "name": "Collyer Quay",
+    "hn": null,
+    "street": "Collyer Quay",
+    "pc": "049321",
+    "city": "Singapore",
+    "district": "Civic District",
+    "locality": "Clifford Pier",
+    "lat": 1.2831511,
+    "lon": 103.8526639,
+    "score": 3,
+    "tier": "street",
+    "matched_on": [
+     "street",
+     "name"
+    ],
+    "name_ok": true,
+    "hn_ok": false,
+    "pc_ok": false,
+    "street_ok": true
+   },
+   {
+    "name": "Collyer Quay",
+    "hn": null,
+    "street": "Collyer Quay",
+    "pc": "049325",
+    "city": "Singapore",
+    "district": "Civic District",
+    "locality": null,
+    "lat": 1.2834757,
+    "lon": 103.8525844,
+    "score": 3,
+    "tier": "street",
+    "matched_on": [
+     "street",
+     "name"
+    ],
+    "name_ok": true,
+    "hn_ok": false,
+    "pc_ok": false,
+    "street_ok": true
+   },
+   {
+    "name": "Collyer Quay",
+    "hn": null,
+    "street": "Collyer Quay",
+    "pc": "049246",
+    "city": "Singapore",
+    "district": "Civic District",
+    "locality": null,
+    "lat": 1.282671,
+    "lon": 103.8514855,
+    "score": 3,
+    "tier": "street",
+    "matched_on": [
+     "street",
+     "name"
+    ],
+    "name_ok": true,
+    "hn_ok": false,
+    "pc_ok": false,
+    "street_ok": true
+   },
+   {
+    "name": "Collyer Quay",
+    "hn": null,
+    "street": "Collyer Quay",
+    "pc": "049315",
+    "city": "Singapore",
+    "district": "Civic District",
+    "locality": null,
+    "lat": 1.2827927,
+    "lon": 103.8521181,
+    "score": 3,
+    "tier": "street",
+    "matched_on": [
+     "street",
+     "name"
+    ],
+    "name_ok": true,
+    "hn_ok": false,
+    "pc_ok": false,
+    "street_ok": true
+   },
+   {
+    "name": "Collyer Quay",
+    "hn": null,
+    "street": "Collyer Quay",
+    "pc": "018989",
+    "city": "Singapore",
+    "district": "Civic District",
+    "locality": "Clifford Pier",
+    "lat": 1.2827315,
+    "lon": 103.8523953,
+    "score": 3,
+    "tier": "street",
+    "matched_on": [
+     "street",
+     "name"
+    ],
+    "name_ok": true,
+    "hn_ok": false,
+    "pc_ok": false,
+    "street_ok": true
+   }
+  ],
+  "chosen": {
+   "name": "Collyer Quay",
+   "hn": null,
+   "street": "Collyer Quay",
+   "pc": "049321",
+   "city": "Singapore",
+   "district": "Civic District",
+   "locality": "Clifford Pier",
+   "lat": 1.2831511,
+   "lon": 103.8526639,
+   "score": 3,
+   "tier": "street",
+   "matched_on": [
+    "street",
+    "name"
+   ],
+   "name_ok": true,
+   "hn_ok": false,
+   "pc_ok": false,
+   "street_ok": true
+  }
+ },
+ {
+  "venue_id": "sg-f1b65d2b83d9",
+  "query": "5 Temasek Boulevard, Singapore 038985",
+  "checked_on": "2026-11-26",
+  "provider": "OpenStreetMap Nominatim (Photon had no tier-matching result)",
+  "request_url": "https://nominatim.openstreetmap.org/search?q=5+Temasek+Boulevard%2C+Singapore+038985&format=json&limit=5&addressdetails=1&countrycodes=sg",
+  "expected": {
+   "street": "Temasek Boulevard",
+   "housenumber": "5",
+   "postcode": "038985",
+   "building": "Suntec Tower 5"
+  },
+  "candidates": [
+   {
+    "name": "Suntec Tower 5",
+    "hn": "5",
+    "street": "Temasek Boulevard",
+    "pc": "038985",
+    "city": "Singapore",
+    "district": "Civic District",
+    "locality": "Marina Centre",
+    "lat": 1.2945258,
+    "lon": 103.8579722,
+    "score": 7,
+    "tier": "exact_venue",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber",
+     "name"
+    ],
+    "name_ok": true,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   },
+   {
+    "name": "",
+    "hn": "5",
+    "street": "Temasek Boulevard",
+    "pc": "038985",
+    "city": "Singapore",
+    "district": "Civic District",
+    "locality": "Marina Centre",
+    "lat": 1.2945851,
+    "lon": 103.8582111,
+    "score": 5,
+    "tier": "building",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   },
+   {
+    "name": "WeWork",
+    "hn": "5",
+    "street": "Temasek Boulevard",
+    "pc": "038985",
+    "city": "Singapore",
+    "district": "Civic District",
+    "locality": "Marina Centre",
+    "lat": 1.2946238,
+    "lon": 103.8578527,
+    "score": 5,
+    "tier": "building",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber"
+    ],
+    "name_ok": false,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   }
+  ],
+  "chosen": {
+   "name": "Suntec Tower 5",
+   "hn": "5",
+   "street": "Temasek Boulevard",
+   "pc": "038985",
+   "city": "Singapore",
+   "district": "Civic District",
+   "locality": "Marina Centre",
+   "lat": 1.2945258,
+   "lon": 103.8579722,
+   "score": 7,
+   "tier": "exact_venue",
+   "matched_on": [
+    "street",
+    "postcode",
+    "housenumber",
+    "name"
+   ],
+   "name_ok": true,
+   "hn_ok": true,
+   "pc_ok": true,
+   "street_ok": true
+  }
+ },
+ {
+  "venue_id": "sg-f6e791a82485",
+  "query": "171 Chin Swee Road, Singapore 169877",
+  "checked_on": "2026-11-26",
+  "provider": "OpenStreetMap Nominatim (Photon had no tier-matching result)",
+  "request_url": "https://nominatim.openstreetmap.org/search?q=171+Chin+Swee+Road%2C+Singapore+169877&format=json&limit=5&addressdetails=1&countrycodes=sg",
+  "expected": {
+   "street": "Chin Swee Road",
+   "housenumber": "171",
+   "postcode": "169877",
+   "building": "CES Centre"
+  },
+  "candidates": [
+   {
+    "name": "CES Centre",
+    "hn": "171",
+    "street": "Chin Swee Road",
+    "pc": "169877",
+    "city": "Singapore",
+    "district": "Tanjong Pagar",
+    "locality": "Singapore General Hospital",
+    "lat": 1.286713,
+    "lon": 103.8401569,
+    "score": 7,
+    "tier": "exact_venue",
+    "matched_on": [
+     "street",
+     "postcode",
+     "housenumber",
+     "name"
+    ],
+    "name_ok": true,
+    "hn_ok": true,
+    "pc_ok": true,
+    "street_ok": true
+   }
+  ],
+  "chosen": {
+   "name": "CES Centre",
+   "hn": "171",
+   "street": "Chin Swee Road",
+   "pc": "169877",
+   "city": "Singapore",
+   "district": "Tanjong Pagar",
+   "locality": "Singapore General Hospital",
+   "lat": 1.286713,
+   "lon": 103.8401569,
+   "score": 7,
+   "tier": "exact_venue",
+   "matched_on": [
+    "street",
+    "postcode",
+    "housenumber",
+    "name"
+   ],
+   "name_ok": true,
+   "hn_ok": true,
+   "pc_ok": true,
+   "street_ok": true
+  }
+ }
+]

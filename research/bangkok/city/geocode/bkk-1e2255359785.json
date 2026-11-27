@@ -1,0 +1,90 @@
+{
+ "venue_id": "bkk-1e2255359785",
+ "checked_on": "2026-11-26",
+ "provider": "OpenStreetMap Nominatim",
+ "attempts": [
+  {
+   "kind": "address",
+   "query": "944 Rama 4 Road, Wang Mai, Pathum Wan, Bangkok 10330, Thailand",
+   "url": "https://nominatim.openstreetmap.org/search?q=944+Rama+4+Road%2C+Wang+Mai%2C+Pathum+Wan%2C+Bangkok+10330%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+   "status": "ok",
+   "results": [
+    {
+     "place_id": 257887434,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "node",
+     "osm_id": 8613951664,
+     "lat": "13.7337922",
+     "lon": "100.5283290",
+     "category": "office",
+     "type": "educational_institution",
+     "place_rank": 30,
+     "importance": 7.662546730750007e-05,
+     "addresstype": "office",
+     "name": "Uni+",
+     "display_name": "Uni+, 944, Rama IV Road, Sam Yan, Wang Mai Subdistrict, Pathum Wan District, Bangkok, 10330, Thailand",
+     "address": {
+      "office": "Uni+",
+      "house_number": "944",
+      "road": "Rama IV Road",
+      "neighbourhood": "Sam Yan",
+      "quarter": "Wang Mai Subdistrict",
+      "suburb": "Pathum Wan District",
+      "city": "Bangkok",
+      "ISO3166-2-lvl4": "TH-10",
+      "postcode": "10330",
+      "country": "Thailand",
+      "country_code": "th"
+     },
+     "boundingbox": [
+      "13.7337422",
+      "13.7338422",
+      "100.5282790",
+      "100.5283790"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "name",
+   "query": "Samyan Mitrtown Hall",
+   "url": "https://nominatim.openstreetmap.org/search?q=Samyan+Mitrtown+Hall&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+   "status": "ok",
+   "results": [
+    {
+     "place_id": 257331074,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "node",
+     "osm_id": 11323335134,
+     "lat": "13.7343891",
+     "lon": "100.5280788",
+     "category": "amenity",
+     "type": "conference_centre",
+     "place_rank": 30,
+     "importance": 7.662546730750007e-05,
+     "addresstype": "amenity",
+     "name": "Samyan Mitrtown Hall",
+     "display_name": "Samyan Mitrtown Hall, Soi Chulalongkorn 15, Sam Yan, Wang Mai Subdistrict, Pathum Wan District, Bangkok, 10330, Thailand",
+     "address": {
+      "amenity": "Samyan Mitrtown Hall",
+      "road": "Soi Chulalongkorn 15",
+      "neighbourhood": "Sam Yan",
+      "quarter": "Wang Mai Subdistrict",
+      "suburb": "Pathum Wan District",
+      "city": "Bangkok",
+      "ISO3166-2-lvl4": "TH-10",
+      "postcode": "10330",
+      "country": "Thailand",
+      "country_code": "th"
+     },
+     "boundingbox": [
+      "13.7343391",
+      "13.7344391",
+      "100.5280288",
+      "100.5281288"
+     ]
+    }
+   ]
+  }
+ ]
+}

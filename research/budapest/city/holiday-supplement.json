@@ -4,306 +4,463 @@
   "path": "/home/joe/repo_dev/hermes-skills/plan-event/references/school_holidays.json",
   "sha256": "b823b0e20ea437adc260c905ec6f0ab82da20a95b3f22bd0ccb007011d175840"
  },
- "checked_on": "2026-11-24",
+ "checked_on": "2026-11-26",
  "city_slug": "budapest-hu",
  "coverage": [
   {
-   "accessed_on": "2026-11-24",
-   "end_date": "2027-12-31",
-   "evidence": {
-    "observed_facts": "The full 2027 calendar year is covered by the statutory list. Substitute workdays (áthelyezett munkanapok) are set by ministerial decree under 102. § (5) by 31 October of the preceding year; no 2027 decree was found in the Magyar Közlöny as of 2026-11-24, so no substitute day is claimed. A secondary Hungarian calendar page read on 2026-11-24 states that the 2027 work-order decree had not appeared by 2026-11-12, and that no 2027 public holiday falls on a Tuesday or Thursday, so past practice would leave nothing to relocate; it counts 253 working days. That is a secondary reading, not the decree, so the substitute-day answer stays unknown."
-   },
-   "jurisdiction_id": "HU",
    "kind": "public_holiday_coverage",
-   "needs_human_verify": true,
-   "source_edition": "Hatályos szöveg, 2026-11-24",
-   "source_locator": "102. § (1) and (5)",
-   "source_title": "Mt. 102. § (2012. évi I. törvény a munka törvénykönyvéről)",
-   "source_url": "https://net.jogtar.hu/jogszabaly?docid=a1200001.tv",
+   "jurisdiction_id": "HU",
    "start_date": "2027-01-01",
+   "end_date": "2027-12-31",
+   "accessed_on": "2026-11-26",
+   "verified": true,
+   "needs_human_verify": true,
+   "authority": "2012. évi I. törvény (Mt.) 102. § (1) and (5), Nemzeti Jogszabálytár",
+   "source_url": "https://njt.jog.gov.hu/jogszabaly/2012-1-00-00",
+   "source_locator": "capture h-mt-102 lines 788 and 792",
+   "quote": "Munkaszüneti nap: január 1., március 15., nagypéntek, húsvéthétfő, május 1., pünkösdhétfő, augusztus 20., október 23., november 1. és december 24–26.",
+   "evidence": {
+    "observed_facts": "Twelve dated observances cover 2027: nine fixed dates plus the three Easter/Pentecost relatives, with 24 December added by 2026. évi LXXII. törvény 3. § (adopted 2026-11-03, promulgated 2026-11-13, in force 2026-11-14). No 2027 workday-transfer decree is in force: Mt. 102. § (5) requires the regulation by 31 October of the preceding year, the 2026 decree (10/2025. (IV. 30.) NGM rendelet) expires 2027-01-01, and three dated secondary sources (2026-09-23, 2026-11-16, 2026-11-17) report that the 2027 decree had not appeared. The official Közlöny search interface is JavaScript-only and returned no readable result to this pass, so the absence is a dated gap, not a proved zero.",
+    "secondary_sources": [
+     "allaskisokos.hu/szabadsag-2027 read 2026-11-26",
+     "Grant Thornton Hungary, 2026-11-16",
+     "EasyHours 2027 calendar page, read 2026-11-26"
+    ]
+   },
    "verification_questions": [
-    "Read the 2027 work-order decree when it is published and add any substitute workday; until then no substitute day is claimed."
-   ],
-   "verified": true
+    "Re-check the Magyar Közlöny for a 2027 workday-transfer decree before release and add any substituted workday."
+   ]
+  },
+  {
+   "kind": "school_holiday_coverage",
+   "jurisdiction_id": "HU",
+   "start_date": "2027-01-01",
+   "end_date": "2027-08-31",
+   "accessed_on": "2026-11-26",
+   "verified": true,
+   "needs_human_verify": true,
+   "authority": "1/2026. (VII. 31.) OGYM rendelet a 2026/2027. tanév rendjéről",
+   "source_url": "https://njt.jog.gov.hu/jogszabaly/2026-1-20-9M",
+   "source_locator": "capture h-tanev-2026-27 lines 76, 92, 93",
+   "quote": "A tanítási év első tanítási napja 2026. szeptember 1. (kedd) és utolsó tanítási napja 2027. június 18. (péntek).",
+   "evidence": {
+    "observed_facts": "The 2026/27 school year covers January-August 2027 with the winter, spring and summer breaks stored; the decree also lets schools move the break boundaries under §7 (4) and lets minority schools differ under §7 (5)."
+   },
+   "verification_questions": [
+    "Confirm the 2027/28 first teaching day when its decree is issued and close the summer break end."
+   ]
+  },
+  {
+   "kind": "school_holiday_coverage",
+   "jurisdiction_id": "HU",
+   "start_date": "2027-09-01",
+   "end_date": "2027-12-31",
+   "accessed_on": "2026-11-26",
+   "verified": true,
+   "needs_human_verify": true,
+   "status": "not_published",
+   "authority": "1/2026. (VII. 31.) OGYM rendelet covers only the 2026/2027 tanév",
+   "source_url": "https://njt.jog.gov.hu/jogszabaly/2026-1-20-9M",
+   "source_locator": "capture h-tanev-2026-27 line 50 (title scope: 2026/2027)",
+   "quote": "a 2026/2027. tanév rendjéről",
+   "evidence": {
+    "observed_facts": "No 2027/2028 tanév rendje decree is issued as of 2026-11-26; the autumn break that falls in October 2027 is therefore uncovered rather than assumed, and no school closure is claimed for 1 September-31 December 2027."
+   },
+   "finding": "not_published",
+   "note": "Uncovered interval: the 2027/28 tanév rendje decree is normally issued in the summer before that school year."
   }
  ],
  "holidays": [
   {
-   "accessed_on": "2026-11-24",
-   "derived": true,
-   "end_date": "2027-01-01",
-   "evidence": {
-    "observed_facts": "The statutory list was read on the day. The 2027 calendar date is derived from that fixed list; Easter-dependent dates use the Gregorian computus (Easter Sunday 2027-03-28). No 2027 work-order decree (áthelyezett munkanap) was published as of 2026-11-24, so substitute days are unknown."
-   },
    "holiday_name": "Újév",
-   "jurisdiction_id": "HU",
+   "name_en": "New Year's Day",
    "kind": "public_holiday",
-   "name_en": "New Year’s Day",
-   "needs_human_verify": true,
-   "observance": "statutory",
-   "source_edition": "Hatályos szöveg, 2026-11-24",
-   "source_locator": "102. § (1): „Munkaszüneti nap: január 1., március 15., nagypéntek, húsvéthétfő, május 1., pünkösdhétfő, augusztus 20., október 23., november 1. és december 24–26.”",
-   "source_title": "Mt. 102. § (2012. évi I. törvény a munka törvénykönyvéről)",
-   "source_url": "https://net.jogtar.hu/jogszabaly?docid=a1200001.tv",
+   "jurisdiction_id": "HU",
    "start_date": "2027-01-01",
-   "verification_questions": [
-    "Confirm the 2027 date and any substitute workday in the annual work-order decree."
-   ],
-   "verified": true
+   "end_date": "2027-01-01",
+   "weekday_start": "Friday",
+   "weekday_end": "Friday",
+   "observance": "statutory",
+   "authority": "2012. évi I. törvény a munka törvénykönyvéről (Mt.) 102. § (1)",
+   "quote": "január 1.",
+   "source_locator": "capture h-mt-102 line 788",
+   "source_url": "https://njt.jog.gov.hu/jogszabaly/2012-1-00-00",
+   "source_title": "2012. évi I. törvény — a munka törvénykönyvéről (Nemzeti Jogszabálytár, consolidated)",
+   "source_edition": "NJT consolidated text read 2026-11-26; §102 (1) as established by 2026. évi LXXII. törvény 3. §",
+   "accessed_on": "2026-11-26",
+   "derived": false,
+   "derivation": null,
+   "verified": true,
+   "needs_human_verify": false,
+   "scope": "general work schedule (általános munkarend)",
+   "evidence": {
+    "observed_facts": "The consolidated statute lists the day; the weekday is computed from the date."
+   }
   },
   {
-   "accessed_on": "2026-11-24",
-   "derived": true,
-   "end_date": "2027-03-15",
-   "evidence": {
-    "observed_facts": "The statutory list was read on the day. The 2027 calendar date is derived from that fixed list; Easter-dependent dates use the Gregorian computus (Easter Sunday 2027-03-28). No 2027 work-order decree (áthelyezett munkanap) was published as of 2026-11-24, so substitute days are unknown."
-   },
    "holiday_name": "Nemzeti ünnep",
-   "jurisdiction_id": "HU",
+   "name_en": "1848 Revolution Day",
    "kind": "public_holiday",
-   "name_en": "National Day",
-   "needs_human_verify": true,
-   "observance": "statutory",
-   "source_edition": "Hatályos szöveg, 2026-11-24",
-   "source_locator": "102. § (1): „Munkaszüneti nap: január 1., március 15., nagypéntek, húsvéthétfő, május 1., pünkösdhétfő, augusztus 20., október 23., november 1. és december 24–26.”",
-   "source_title": "Mt. 102. § (2012. évi I. törvény a munka törvénykönyvéről)",
-   "source_url": "https://net.jogtar.hu/jogszabaly?docid=a1200001.tv",
+   "jurisdiction_id": "HU",
    "start_date": "2027-03-15",
-   "verification_questions": [
-    "Confirm the 2027 date and any substitute workday in the annual work-order decree."
-   ],
-   "verified": true
+   "end_date": "2027-03-15",
+   "weekday_start": "Monday",
+   "weekday_end": "Monday",
+   "observance": "statutory",
+   "authority": "2012. évi I. törvény a munka törvénykönyvéről (Mt.) 102. § (1)",
+   "quote": "március 15.",
+   "source_locator": "capture h-mt-102 line 788",
+   "source_url": "https://njt.jog.gov.hu/jogszabaly/2012-1-00-00",
+   "source_title": "2012. évi I. törvény — a munka törvénykönyvéről (Nemzeti Jogszabálytár, consolidated)",
+   "source_edition": "NJT consolidated text read 2026-11-26; §102 (1) as established by 2026. évi LXXII. törvény 3. §",
+   "accessed_on": "2026-11-26",
+   "derived": false,
+   "derivation": null,
+   "verified": true,
+   "needs_human_verify": false,
+   "scope": "general work schedule (általános munkarend)",
+   "evidence": {
+    "observed_facts": "The consolidated statute lists the day; the weekday is computed from the date."
+   }
   },
   {
-   "accessed_on": "2026-11-24",
-   "derived": true,
-   "end_date": "2027-03-26",
-   "evidence": {
-    "observed_facts": "The statutory list was read on the day. The 2027 calendar date is derived from that fixed list; Easter-dependent dates use the Gregorian computus (Easter Sunday 2027-03-28). No 2027 work-order decree (áthelyezett munkanap) was published as of 2026-11-24, so substitute days are unknown."
-   },
    "holiday_name": "Nagypéntek",
-   "jurisdiction_id": "HU",
-   "kind": "public_holiday",
    "name_en": "Good Friday",
-   "needs_human_verify": true,
-   "observance": "statutory",
-   "source_edition": "Hatályos szöveg, 2026-11-24",
-   "source_locator": "102. § (1): „Munkaszüneti nap: január 1., március 15., nagypéntek, húsvéthétfő, május 1., pünkösdhétfő, augusztus 20., október 23., november 1. és december 24–26.”",
-   "source_title": "Mt. 102. § (2012. évi I. törvény a munka törvénykönyvéről)",
-   "source_url": "https://net.jogtar.hu/jogszabaly?docid=a1200001.tv",
+   "kind": "public_holiday",
+   "jurisdiction_id": "HU",
    "start_date": "2027-03-26",
-   "verification_questions": [
-    "Confirm the 2027 date and any substitute workday in the annual work-order decree."
-   ],
-   "verified": true
+   "end_date": "2027-03-26",
+   "weekday_start": "Friday",
+   "weekday_end": "Friday",
+   "observance": "statutory",
+   "authority": "2012. évi I. törvény a munka törvénykönyvéről (Mt.) 102. § (1)",
+   "quote": "nagypéntek",
+   "source_locator": "capture h-mt-102 line 788",
+   "source_url": "https://njt.jog.gov.hu/jogszabaly/2012-1-00-00",
+   "source_title": "2012. évi I. törvény — a munka törvénykönyvéről (Nemzeti Jogszabálytár, consolidated)",
+   "source_edition": "NJT consolidated text read 2026-11-26; §102 (1) as established by 2026. évi LXXII. törvény 3. §",
+   "accessed_on": "2026-11-26",
+   "derived": true,
+   "derivation": "Easter Sunday 2027 is 28 March by the Gregorian computus; Good Friday is the Friday before it.",
+   "verified": true,
+   "needs_human_verify": false,
+   "scope": "general work schedule (általános munkarend)",
+   "evidence": {
+    "observed_facts": "The consolidated statute lists the day; the weekday is computed from the date."
+   }
   },
   {
-   "accessed_on": "2026-11-24",
-   "derived": true,
-   "end_date": "2027-03-29",
-   "evidence": {
-    "observed_facts": "The statutory list was read on the day. The 2027 calendar date is derived from that fixed list; Easter-dependent dates use the Gregorian computus (Easter Sunday 2027-03-28). No 2027 work-order decree (áthelyezett munkanap) was published as of 2026-11-24, so substitute days are unknown."
-   },
    "holiday_name": "Húsvéthétfő",
-   "jurisdiction_id": "HU",
-   "kind": "public_holiday",
    "name_en": "Easter Monday",
-   "needs_human_verify": true,
-   "observance": "statutory",
-   "source_edition": "Hatályos szöveg, 2026-11-24",
-   "source_locator": "102. § (1): „Munkaszüneti nap: január 1., március 15., nagypéntek, húsvéthétfő, május 1., pünkösdhétfő, augusztus 20., október 23., november 1. és december 24–26.”",
-   "source_title": "Mt. 102. § (2012. évi I. törvény a munka törvénykönyvéről)",
-   "source_url": "https://net.jogtar.hu/jogszabaly?docid=a1200001.tv",
+   "kind": "public_holiday",
+   "jurisdiction_id": "HU",
    "start_date": "2027-03-29",
-   "verification_questions": [
-    "Confirm the 2027 date and any substitute workday in the annual work-order decree."
-   ],
-   "verified": true
+   "end_date": "2027-03-29",
+   "weekday_start": "Monday",
+   "weekday_end": "Monday",
+   "observance": "statutory",
+   "authority": "2012. évi I. törvény a munka törvénykönyvéről (Mt.) 102. § (1)",
+   "quote": "húsvéthétfő",
+   "source_locator": "capture h-mt-102 line 788",
+   "source_url": "https://njt.jog.gov.hu/jogszabaly/2012-1-00-00",
+   "source_title": "2012. évi I. törvény — a munka törvénykönyvéről (Nemzeti Jogszabálytár, consolidated)",
+   "source_edition": "NJT consolidated text read 2026-11-26; §102 (1) as established by 2026. évi LXXII. törvény 3. §",
+   "accessed_on": "2026-11-26",
+   "derived": true,
+   "derivation": "Easter Sunday 2027 is 28 March by the Gregorian computus; Easter Monday is the day after.",
+   "verified": true,
+   "needs_human_verify": false,
+   "scope": "general work schedule (általános munkarend)",
+   "evidence": {
+    "observed_facts": "The consolidated statute lists the day; the weekday is computed from the date."
+   }
   },
   {
-   "accessed_on": "2026-11-24",
-   "derived": true,
-   "end_date": "2027-05-01",
-   "evidence": {
-    "observed_facts": "The statutory list was read on the day. The 2027 calendar date is derived from that fixed list; Easter-dependent dates use the Gregorian computus (Easter Sunday 2027-03-28). No 2027 work-order decree (áthelyezett munkanap) was published as of 2026-11-24, so substitute days are unknown."
-   },
    "holiday_name": "A munka ünnepe",
-   "jurisdiction_id": "HU",
-   "kind": "public_holiday",
    "name_en": "Labour Day",
-   "needs_human_verify": true,
-   "observance": "statutory",
-   "source_edition": "Hatályos szöveg, 2026-11-24",
-   "source_locator": "102. § (1): „Munkaszüneti nap: január 1., március 15., nagypéntek, húsvéthétfő, május 1., pünkösdhétfő, augusztus 20., október 23., november 1. és december 24–26.”",
-   "source_title": "Mt. 102. § (2012. évi I. törvény a munka törvénykönyvéről)",
-   "source_url": "https://net.jogtar.hu/jogszabaly?docid=a1200001.tv",
+   "kind": "public_holiday",
+   "jurisdiction_id": "HU",
    "start_date": "2027-05-01",
-   "verification_questions": [
-    "Confirm the 2027 date and any substitute workday in the annual work-order decree."
-   ],
-   "verified": true
+   "end_date": "2027-05-01",
+   "weekday_start": "Saturday",
+   "weekday_end": "Saturday",
+   "observance": "statutory",
+   "authority": "2012. évi I. törvény a munka törvénykönyvéről (Mt.) 102. § (1)",
+   "quote": "május 1.",
+   "source_locator": "capture h-mt-102 line 788",
+   "source_url": "https://njt.jog.gov.hu/jogszabaly/2012-1-00-00",
+   "source_title": "2012. évi I. törvény — a munka törvénykönyvéről (Nemzeti Jogszabálytár, consolidated)",
+   "source_edition": "NJT consolidated text read 2026-11-26; §102 (1) as established by 2026. évi LXXII. törvény 3. §",
+   "accessed_on": "2026-11-26",
+   "derived": false,
+   "derivation": null,
+   "verified": true,
+   "needs_human_verify": false,
+   "scope": "general work schedule (általános munkarend)",
+   "evidence": {
+    "observed_facts": "The consolidated statute lists the day; the weekday is computed from the date."
+   }
   },
   {
-   "accessed_on": "2026-11-24",
-   "derived": true,
-   "end_date": "2027-05-17",
-   "evidence": {
-    "observed_facts": "The statutory list was read on the day. The 2027 calendar date is derived from that fixed list; Easter-dependent dates use the Gregorian computus (Easter Sunday 2027-03-28). No 2027 work-order decree (áthelyezett munkanap) was published as of 2026-11-24, so substitute days are unknown."
-   },
    "holiday_name": "Pünkösdhétfő",
-   "jurisdiction_id": "HU",
-   "kind": "public_holiday",
    "name_en": "Whit Monday",
-   "needs_human_verify": true,
-   "observance": "statutory",
-   "source_edition": "Hatályos szöveg, 2026-11-24",
-   "source_locator": "102. § (1): „Munkaszüneti nap: január 1., március 15., nagypéntek, húsvéthétfő, május 1., pünkösdhétfő, augusztus 20., október 23., november 1. és december 24–26.”",
-   "source_title": "Mt. 102. § (2012. évi I. törvény a munka törvénykönyvéről)",
-   "source_url": "https://net.jogtar.hu/jogszabaly?docid=a1200001.tv",
+   "kind": "public_holiday",
+   "jurisdiction_id": "HU",
    "start_date": "2027-05-17",
-   "verification_questions": [
-    "Confirm the 2027 date and any substitute workday in the annual work-order decree."
-   ],
-   "verified": true
+   "end_date": "2027-05-17",
+   "weekday_start": "Monday",
+   "weekday_end": "Monday",
+   "observance": "statutory",
+   "authority": "2012. évi I. törvény a munka törvénykönyvéről (Mt.) 102. § (1)",
+   "quote": "pünkösdhétfő",
+   "source_locator": "capture h-mt-102 line 788",
+   "source_url": "https://njt.jog.gov.hu/jogszabaly/2012-1-00-00",
+   "source_title": "2012. évi I. törvény — a munka törvénykönyvéről (Nemzeti Jogszabálytár, consolidated)",
+   "source_edition": "NJT consolidated text read 2026-11-26; §102 (1) as established by 2026. évi LXXII. törvény 3. §",
+   "accessed_on": "2026-11-26",
+   "derived": true,
+   "derivation": "Pentecost 2027 is 16 May by the Gregorian computus; Whit Monday is the day after.",
+   "verified": true,
+   "needs_human_verify": false,
+   "scope": "general work schedule (általános munkarend)",
+   "evidence": {
+    "observed_facts": "The consolidated statute lists the day; the weekday is computed from the date."
+   }
   },
   {
-   "accessed_on": "2026-11-24",
-   "derived": true,
-   "end_date": "2027-08-20",
-   "evidence": {
-    "observed_facts": "The statutory list was read on the day. The 2027 calendar date is derived from that fixed list; Easter-dependent dates use the Gregorian computus (Easter Sunday 2027-03-28). No 2027 work-order decree (áthelyezett munkanap) was published as of 2026-11-24, so substitute days are unknown."
-   },
    "holiday_name": "Az államalapítás ünnepe",
-   "jurisdiction_id": "HU",
-   "kind": "public_holiday",
    "name_en": "State Foundation Day",
-   "needs_human_verify": true,
-   "observance": "statutory",
-   "source_edition": "Hatályos szöveg, 2026-11-24",
-   "source_locator": "102. § (1): „Munkaszüneti nap: január 1., március 15., nagypéntek, húsvéthétfő, május 1., pünkösdhétfő, augusztus 20., október 23., november 1. és december 24–26.”",
-   "source_title": "Mt. 102. § (2012. évi I. törvény a munka törvénykönyvéről)",
-   "source_url": "https://net.jogtar.hu/jogszabaly?docid=a1200001.tv",
+   "kind": "public_holiday",
+   "jurisdiction_id": "HU",
    "start_date": "2027-08-20",
-   "verification_questions": [
-    "Confirm the 2027 date and any substitute workday in the annual work-order decree."
-   ],
-   "verified": true
+   "end_date": "2027-08-20",
+   "weekday_start": "Friday",
+   "weekday_end": "Friday",
+   "observance": "statutory",
+   "authority": "2012. évi I. törvény a munka törvénykönyvéről (Mt.) 102. § (1)",
+   "quote": "augusztus 20.",
+   "source_locator": "capture h-mt-102 line 788",
+   "source_url": "https://njt.jog.gov.hu/jogszabaly/2012-1-00-00",
+   "source_title": "2012. évi I. törvény — a munka törvénykönyvéről (Nemzeti Jogszabálytár, consolidated)",
+   "source_edition": "NJT consolidated text read 2026-11-26; §102 (1) as established by 2026. évi LXXII. törvény 3. §",
+   "accessed_on": "2026-11-26",
+   "derived": false,
+   "derivation": null,
+   "verified": true,
+   "needs_human_verify": false,
+   "scope": "general work schedule (általános munkarend)",
+   "evidence": {
+    "observed_facts": "The consolidated statute lists the day; the weekday is computed from the date."
+   }
   },
   {
-   "accessed_on": "2026-11-24",
-   "derived": true,
-   "end_date": "2027-10-23",
-   "evidence": {
-    "observed_facts": "The statutory list was read on the day. The 2027 calendar date is derived from that fixed list; Easter-dependent dates use the Gregorian computus (Easter Sunday 2027-03-28). No 2027 work-order decree (áthelyezett munkanap) was published as of 2026-11-24, so substitute days are unknown."
-   },
    "holiday_name": "Nemzeti ünnep",
-   "jurisdiction_id": "HU",
+   "name_en": "1956 Revolution Day",
    "kind": "public_holiday",
-   "name_en": "National Day",
-   "needs_human_verify": true,
-   "observance": "statutory",
-   "source_edition": "Hatályos szöveg, 2026-11-24",
-   "source_locator": "102. § (1): „Munkaszüneti nap: január 1., március 15., nagypéntek, húsvéthétfő, május 1., pünkösdhétfő, augusztus 20., október 23., november 1. és december 24–26.”",
-   "source_title": "Mt. 102. § (2012. évi I. törvény a munka törvénykönyvéről)",
-   "source_url": "https://net.jogtar.hu/jogszabaly?docid=a1200001.tv",
+   "jurisdiction_id": "HU",
    "start_date": "2027-10-23",
-   "verification_questions": [
-    "Confirm the 2027 date and any substitute workday in the annual work-order decree."
-   ],
-   "verified": true
+   "end_date": "2027-10-23",
+   "weekday_start": "Saturday",
+   "weekday_end": "Saturday",
+   "observance": "statutory",
+   "authority": "2012. évi I. törvény a munka törvénykönyvéről (Mt.) 102. § (1)",
+   "quote": "október 23.",
+   "source_locator": "capture h-mt-102 line 788",
+   "source_url": "https://njt.jog.gov.hu/jogszabaly/2012-1-00-00",
+   "source_title": "2012. évi I. törvény — a munka törvénykönyvéről (Nemzeti Jogszabálytár, consolidated)",
+   "source_edition": "NJT consolidated text read 2026-11-26; §102 (1) as established by 2026. évi LXXII. törvény 3. §",
+   "accessed_on": "2026-11-26",
+   "derived": false,
+   "derivation": null,
+   "verified": true,
+   "needs_human_verify": false,
+   "scope": "general work schedule (általános munkarend)",
+   "evidence": {
+    "observed_facts": "The consolidated statute lists the day; the weekday is computed from the date."
+   }
   },
   {
-   "accessed_on": "2026-11-24",
-   "derived": true,
-   "end_date": "2027-11-01",
-   "evidence": {
-    "observed_facts": "The statutory list was read on the day. The 2027 calendar date is derived from that fixed list; Easter-dependent dates use the Gregorian computus (Easter Sunday 2027-03-28). No 2027 work-order decree (áthelyezett munkanap) was published as of 2026-11-24, so substitute days are unknown."
-   },
    "holiday_name": "Mindenszentek",
-   "jurisdiction_id": "HU",
+   "name_en": "All Saints' Day",
    "kind": "public_holiday",
-   "name_en": "All Saints’ Day",
-   "needs_human_verify": true,
-   "observance": "statutory",
-   "source_edition": "Hatályos szöveg, 2026-11-24",
-   "source_locator": "102. § (1): „Munkaszüneti nap: január 1., március 15., nagypéntek, húsvéthétfő, május 1., pünkösdhétfő, augusztus 20., október 23., november 1. és december 24–26.”",
-   "source_title": "Mt. 102. § (2012. évi I. törvény a munka törvénykönyvéről)",
-   "source_url": "https://net.jogtar.hu/jogszabaly?docid=a1200001.tv",
+   "jurisdiction_id": "HU",
    "start_date": "2027-11-01",
-   "verification_questions": [
-    "Confirm the 2027 date and any substitute workday in the annual work-order decree."
-   ],
-   "verified": true
+   "end_date": "2027-11-01",
+   "weekday_start": "Monday",
+   "weekday_end": "Monday",
+   "observance": "statutory",
+   "authority": "2012. évi I. törvény a munka törvénykönyvéről (Mt.) 102. § (1)",
+   "quote": "november 1.",
+   "source_locator": "capture h-mt-102 line 788",
+   "source_url": "https://njt.jog.gov.hu/jogszabaly/2012-1-00-00",
+   "source_title": "2012. évi I. törvény — a munka törvénykönyvéről (Nemzeti Jogszabálytár, consolidated)",
+   "source_edition": "NJT consolidated text read 2026-11-26; §102 (1) as established by 2026. évi LXXII. törvény 3. §",
+   "accessed_on": "2026-11-26",
+   "derived": false,
+   "derivation": null,
+   "verified": true,
+   "needs_human_verify": false,
+   "scope": "general work schedule (általános munkarend)",
+   "evidence": {
+    "observed_facts": "The consolidated statute lists the day; the weekday is computed from the date."
+   }
   },
   {
-   "accessed_on": "2026-11-24",
-   "derived": true,
-   "end_date": "2027-12-24",
-   "evidence": {
-    "observed_facts": "The statutory list was read on the day. The 2027 calendar date is derived from that fixed list; Easter-dependent dates use the Gregorian computus (Easter Sunday 2027-03-28). No 2027 work-order decree (áthelyezett munkanap) was published as of 2026-11-24, so substitute days are unknown."
-   },
    "holiday_name": "Szenteste",
-   "jurisdiction_id": "HU",
-   "kind": "public_holiday",
    "name_en": "Christmas Eve",
-   "needs_human_verify": true,
-   "observance": "statutory",
-   "source_edition": "Hatályos szöveg, 2026-11-24",
-   "source_locator": "102. § (1): „Munkaszüneti nap: január 1., március 15., nagypéntek, húsvéthétfő, május 1., pünkösdhétfő, augusztus 20., október 23., november 1. és december 24–26.”",
-   "source_title": "Mt. 102. § (2012. évi I. törvény a munka törvénykönyvéről)",
-   "source_url": "https://net.jogtar.hu/jogszabaly?docid=a1200001.tv",
+   "kind": "public_holiday",
+   "jurisdiction_id": "HU",
    "start_date": "2027-12-24",
-   "verification_questions": [
-    "Confirm the 2027 date and any substitute workday in the annual work-order decree."
-   ],
-   "verified": true
+   "end_date": "2027-12-24",
+   "weekday_start": "Friday",
+   "weekday_end": "Friday",
+   "observance": "statutory",
+   "authority": "2012. évi I. törvény a munka törvénykönyvéről (Mt.) 102. § (1)",
+   "quote": "december 24–26.",
+   "source_locator": "capture h-mt-102 line 788",
+   "source_url": "https://njt.jog.gov.hu/jogszabaly/2012-1-00-00",
+   "source_title": "2012. évi I. törvény — a munka törvénykönyvéről (Nemzeti Jogszabálytár, consolidated)",
+   "source_edition": "NJT consolidated text read 2026-11-26; §102 (1) as established by 2026. évi LXXII. törvény 3. §",
+   "accessed_on": "2026-11-26",
+   "derived": true,
+   "derivation": "The statutory list prints the range 24-26 December; this row is 24 December, added to Mt. 102. § (1) by 2026. évi LXXII. törvény 3. §.",
+   "verified": true,
+   "needs_human_verify": false,
+   "scope": "general work schedule (általános munkarend)",
+   "evidence": {
+    "observed_facts": "The consolidated statute lists the day; the weekday is computed from the date."
+   }
   },
   {
-   "accessed_on": "2026-11-24",
-   "derived": true,
-   "end_date": "2027-12-25",
-   "evidence": {
-    "observed_facts": "The statutory list was read on the day. The 2027 calendar date is derived from that fixed list; Easter-dependent dates use the Gregorian computus (Easter Sunday 2027-03-28). No 2027 work-order decree (áthelyezett munkanap) was published as of 2026-11-24, so substitute days are unknown."
-   },
    "holiday_name": "Karácsony",
-   "jurisdiction_id": "HU",
-   "kind": "public_holiday",
    "name_en": "Christmas Day",
-   "needs_human_verify": true,
-   "observance": "statutory",
-   "source_edition": "Hatályos szöveg, 2026-11-24",
-   "source_locator": "102. § (1): „Munkaszüneti nap: január 1., március 15., nagypéntek, húsvéthétfő, május 1., pünkösdhétfő, augusztus 20., október 23., november 1. és december 24–26.”",
-   "source_title": "Mt. 102. § (2012. évi I. törvény a munka törvénykönyvéről)",
-   "source_url": "https://net.jogtar.hu/jogszabaly?docid=a1200001.tv",
+   "kind": "public_holiday",
+   "jurisdiction_id": "HU",
    "start_date": "2027-12-25",
-   "verification_questions": [
-    "Confirm the 2027 date and any substitute workday in the annual work-order decree."
-   ],
-   "verified": true
+   "end_date": "2027-12-25",
+   "weekday_start": "Saturday",
+   "weekday_end": "Saturday",
+   "observance": "statutory",
+   "authority": "2012. évi I. törvény a munka törvénykönyvéről (Mt.) 102. § (1)",
+   "quote": "december 24–26.",
+   "source_locator": "capture h-mt-102 line 788",
+   "source_url": "https://njt.jog.gov.hu/jogszabaly/2012-1-00-00",
+   "source_title": "2012. évi I. törvény — a munka törvénykönyvéről (Nemzeti Jogszabálytár, consolidated)",
+   "source_edition": "NJT consolidated text read 2026-11-26; §102 (1) as established by 2026. évi LXXII. törvény 3. §",
+   "accessed_on": "2026-11-26",
+   "derived": true,
+   "derivation": "The statutory list prints the range 24-26 December; this row is 25 December.",
+   "verified": true,
+   "needs_human_verify": false,
+   "scope": "general work schedule (általános munkarend)",
+   "evidence": {
+    "observed_facts": "The consolidated statute lists the day; the weekday is computed from the date."
+   }
   },
   {
-   "accessed_on": "2026-11-24",
-   "derived": true,
-   "end_date": "2027-12-26",
-   "evidence": {
-    "observed_facts": "The statutory list was read on the day. The 2027 calendar date is derived from that fixed list; Easter-dependent dates use the Gregorian computus (Easter Sunday 2027-03-28). No 2027 work-order decree (áthelyezett munkanap) was published as of 2026-11-24, so substitute days are unknown."
-   },
-   "holiday_name": "Karácsony",
-   "jurisdiction_id": "HU",
+   "holiday_name": "Karácsony második napja",
+   "name_en": "Boxing Day",
    "kind": "public_holiday",
-   "name_en": "Second Day of Christmas",
-   "needs_human_verify": true,
-   "observance": "statutory",
-   "source_edition": "Hatályos szöveg, 2026-11-24",
-   "source_locator": "102. § (1): „Munkaszüneti nap: január 1., március 15., nagypéntek, húsvéthétfő, május 1., pünkösdhétfő, augusztus 20., október 23., november 1. és december 24–26.”",
-   "source_title": "Mt. 102. § (2012. évi I. törvény a munka törvénykönyvéről)",
-   "source_url": "https://net.jogtar.hu/jogszabaly?docid=a1200001.tv",
+   "jurisdiction_id": "HU",
    "start_date": "2027-12-26",
-   "verification_questions": [
-    "Confirm the 2027 date and any substitute workday in the annual work-order decree."
-   ],
-   "verified": true
+   "end_date": "2027-12-26",
+   "weekday_start": "Sunday",
+   "weekday_end": "Sunday",
+   "observance": "statutory",
+   "authority": "2012. évi I. törvény a munka törvénykönyvéről (Mt.) 102. § (1)",
+   "quote": "december 24–26.",
+   "source_locator": "capture h-mt-102 line 788",
+   "source_url": "https://njt.jog.gov.hu/jogszabaly/2012-1-00-00",
+   "source_title": "2012. évi I. törvény — a munka törvénykönyvéről (Nemzeti Jogszabálytár, consolidated)",
+   "source_edition": "NJT consolidated text read 2026-11-26; §102 (1) as established by 2026. évi LXXII. törvény 3. §",
+   "accessed_on": "2026-11-26",
+   "derived": true,
+   "derivation": "The statutory list prints the range 24-26 December; this row is 26 December.",
+   "verified": true,
+   "needs_human_verify": false,
+   "scope": "general work schedule (általános munkarend)",
+   "evidence": {
+    "observed_facts": "The consolidated statute lists the day; the weekday is computed from the date."
+   }
+  },
+  {
+   "holiday_name": "Téli szünet 2026/2027",
+   "name_en": "Winter break 2026/27",
+   "kind": "school_holiday",
+   "jurisdiction_id": "HU",
+   "start_date": "2026-12-19",
+   "end_date": "2027-01-03",
+   "weekday_start": "Saturday",
+   "weekday_end": "Sunday",
+   "observance": "school-calendar",
+   "scope": "köznevelés: általános iskola és középfokú iskola, nappali tagozat",
+   "authority": "1/2026. (VII. 31.) OGYM rendelet a 2026/2027. tanév rendjéről",
+   "quote": "(2) A téli szünet előtti utolsó tanítási nap 2026. december 18. (péntek), a szünet utáni első tanítási nap 2027. január 4. (hétfő).",
+   "source_locator": "capture h-tanev-2026-27 line 92",
+   "source_url": "https://njt.jog.gov.hu/jogszabaly/2026-1-20-9M",
+   "source_title": "1/2026. (VII. 31.) OGYM rendelet a 2026/2027. tanév rendjéről (Nemzeti Jogszabálytár)",
+   "source_edition": "NJT text read 2026-11-26",
+   "accessed_on": "2026-11-26",
+   "derived": true,
+   "derivation": "The decree prints the last teaching day (2026-12-18) and the first teaching day after the break (2027-01-04); the break is the interval between them.",
+   "verified": true,
+   "needs_human_verify": true,
+   "evidence": {
+    "observed_facts": "Schools may move the break boundaries under §7 (4); the decree dates are the national default."
+   }
+  },
+  {
+   "holiday_name": "Tavaszi szünet 2027",
+   "name_en": "Spring break 2027",
+   "kind": "school_holiday",
+   "jurisdiction_id": "HU",
+   "start_date": "2027-03-25",
+   "end_date": "2027-04-04",
+   "weekday_start": "Thursday",
+   "weekday_end": "Sunday",
+   "observance": "school-calendar",
+   "scope": "köznevelés: általános iskola és középfokú iskola, nappali tagozat",
+   "authority": "1/2026. (VII. 31.) OGYM rendelet a 2026/2027. tanév rendjéről",
+   "quote": "(3) A tavaszi szünet előtti utolsó tanítási nap 2027. március 24. (szerda), a szünet utáni első tanítási nap 2027. április 5. (hétfő).",
+   "source_locator": "capture h-tanev-2026-27 line 93",
+   "source_url": "https://njt.jog.gov.hu/jogszabaly/2026-1-20-9M",
+   "source_title": "1/2026. (VII. 31.) OGYM rendelet a 2026/2027. tanév rendjéről (Nemzeti Jogszabálytár)",
+   "source_edition": "NJT text read 2026-11-26",
+   "accessed_on": "2026-11-26",
+   "derived": true,
+   "derivation": "The decree prints the last teaching day (2027-03-24) and the first teaching day after the break (2027-04-05); the break is the interval between them.",
+   "verified": true,
+   "needs_human_verify": true,
+   "evidence": {
+    "observed_facts": "Schools may move the break boundaries under §7 (4); the decree dates are the national default."
+   }
+  },
+  {
+   "holiday_name": "Nyári szünet 2027",
+   "name_en": "Summer break 2027",
+   "kind": "school_holiday",
+   "jurisdiction_id": "HU",
+   "start_date": "2027-06-19",
+   "end_date": "2027-08-31",
+   "weekday_start": "Saturday",
+   "weekday_end": "Tuesday",
+   "observance": "school-calendar",
+   "scope": "köznevelés: általános iskola és középfokú iskola, nappali tagozat",
+   "authority": "1/2026. (VII. 31.) OGYM rendelet a 2026/2027. tanév rendjéről",
+   "quote": "(2) Ha e fejezet másként nem rendelkezik, a 2026/2027. tanévben a tanítási év első tanítási napja 2026. szeptember 1. (kedd) és utolsó tanítási napja 2027. június 18. (péntek). A tanítási napok száma száznyolcvan nap.",
+   "source_locator": "capture h-tanev-2026-27 line 76",
+   "source_url": "https://njt.jog.gov.hu/jogszabaly/2026-1-20-9M",
+   "source_title": "1/2026. (VII. 31.) OGYM rendelet a 2026/2027. tanév rendjéről (Nemzeti Jogszabálytár)",
+   "source_edition": "NJT text read 2026-11-26",
+   "accessed_on": "2026-11-26",
+   "derived": true,
+   "derivation": "The decree prints the last teaching day of 2026/27 as 2027-06-18. The 2027/28 decree that fixes the next first teaching day is not issued, so the end is shown as 31 August and the uncovered 1 September-31 December interval is declared in coverage.",
+   "verified": true,
+   "needs_human_verify": true,
+   "evidence": {
+    "observed_facts": "End date is nominal: the next tanév first day is not yet decreed."
+   }
   }
  ],
- "run_id": "run-20261124-bp-b1"
+ "run_id": "run-20261126-bud-r7"
 }

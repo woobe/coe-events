@@ -1,0 +1,142 @@
+{
+ "venue_id": "bkk-dec1284c0249",
+ "checked_on": "2026-11-26",
+ "provider": "OpenStreetMap Nominatim",
+ "attempts": [
+  {
+   "kind": "address",
+   "query": "41 Charoen Nakhon Road, Khlong San, Bangkok, Thailand",
+   "url": "https://nominatim.openstreetmap.org/search?q=41+Charoen+Nakhon+Road%2C+Khlong+San%2C+Bangkok%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+   "status": "ok",
+   "results": [
+    {
+     "place_id": 257355378,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "node",
+     "osm_id": 4809733227,
+     "lat": "13.7292382",
+     "lon": "100.5101451",
+     "category": "shop",
+     "type": "books",
+     "place_rank": 30,
+     "importance": 7.662546730750007e-05,
+     "addresstype": "shop",
+     "name": "Candide Books",
+     "display_name": "Candide Books, 41/1, Charoen Nakhon Road, Khlong San Subdistrict, Khlong San District, Bangkok, 10600, Thailand",
+     "address": {
+      "shop": "Candide Books",
+      "house_number": "41/1",
+      "road": "Charoen Nakhon Road",
+      "quarter": "Khlong San Subdistrict",
+      "suburb": "Khlong San District",
+      "city": "Bangkok",
+      "ISO3166-2-lvl4": "TH-10",
+      "postcode": "10600",
+      "country": "Thailand",
+      "country_code": "th"
+     },
+     "boundingbox": [
+      "13.7291882",
+      "13.7292882",
+      "100.5100951",
+      "100.5101951"
+     ]
+    },
+    {
+     "place_id": 257477938,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 630872837,
+     "lat": "13.7122131",
+     "lon": "100.5015097",
+     "category": "highway",
+     "type": "secondary",
+     "place_rank": 26,
+     "importance": 0.053409958800640846,
+     "addresstype": "secondary",
+     "name": "Charoen Nakhon Road",
+     "display_name": "Charoen Nakhon Road, ชุมชนคลองพระยาเกษม, Bang Lamphu Lang Subdistrict, Khlong San District, Bangkok, 10600, Thailand",
+     "address": {
+      "road": "Charoen Nakhon Road",
+      "neighbourhood": "ชุมชนคลองพระยาเกษม",
+      "quarter": "Bang Lamphu Lang Subdistrict",
+      "suburb": "Khlong San District",
+      "city": "Bangkok",
+      "ISO3166-2-lvl4": "TH-10",
+      "postcode": "10600",
+      "country": "Thailand",
+      "country_code": "th"
+     },
+     "boundingbox": [
+      "13.7119726",
+      "13.7124416",
+      "100.5009346",
+      "100.5020897"
+     ]
+    },
+    {
+     "place_id": 259648409,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 752117576,
+     "lat": "13.7290856",
+     "lon": "100.5088555",
+     "category": "highway",
+     "type": "secondary",
+     "place_rank": 26,
+     "importance": 0.053409958800640846,
+     "addresstype": "secondary",
+     "name": "Charoen Nakhon Road",
+     "display_name": "Charoen Nakhon Road, Khlong San Subdistrict, Khlong San District, Bangkok, 10600, Thailand",
+     "address": {
+      "road": "Charoen Nakhon Road",
+      "quarter": "Khlong San Subdistrict",
+      "suburb": "Khlong San District",
+      "city": "Bangkok",
+      "ISO3166-2-lvl4": "TH-10",
+      "postcode": "10600",
+      "country": "Thailand",
+      "country_code": "th"
+     },
+     "boundingbox": [
+      "13.7286494",
+      "13.7295217",
+      "100.5088165",
+      "100.5088945"
+     ]
+    },
+    {
+     "place_id": 257289850,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 752119254,
+     "lat": "13.7282710",
+     "lon": "100.5089351",
+     "category": "highway",
+     "type": "secondary",
+     "place_rank": 26,
+     "importance": 0.053409958800640846,
+     "addresstype": "secondary",
+     "name": "Charoen Nakhon Road",
+     "display_name": "Charoen Nakhon Road, Khlong Ton Sai Subdistrict, Khlong San District, Bangkok, 10600, Thailand",
+     "address": {
+      "road": "Charoen Nakhon Road",
+      "quarter": "Khlong Ton Sai Subdistrict",
+      "suburb": "Khlong San District",
+      "city": "Bangkok",
+      "ISO3166-2-lvl4": "TH-10",
+      "postcode": "10600",
+      "country": "Thailand",
+      "country_code": "th"
+     },
+     "boundingbox": [
+      "13.7278916",
+      "13.7286494",
+      "100.5088945",
+      "100.5089653"
+     ]
+    }
+   ]
+  }
+ ]
+}

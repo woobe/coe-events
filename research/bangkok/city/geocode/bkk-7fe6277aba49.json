@@ -1,0 +1,88 @@
+{
+ "venue_id": "bkk-7fe6277aba49",
+ "checked_on": "2026-11-26",
+ "provider": "OpenStreetMap Nominatim",
+ "attempts": [
+  {
+   "kind": "address",
+   "query": "52-60 Captain Bush Lane, Bang Rak, Bangkok 10500, Thailand",
+   "url": "https://nominatim.openstreetmap.org/search?q=52-60+Captain+Bush+Lane%2C+Bang+Rak%2C+Bangkok+10500%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+   "status": "ok",
+   "results": [
+    {
+     "place_id": 254587052,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 1235099299,
+     "lat": "13.7288441",
+     "lon": "100.5151084",
+     "category": "highway",
+     "type": "tertiary",
+     "place_rank": 26,
+     "importance": 0.053409958800640846,
+     "addresstype": "tertiary",
+     "name": "Soi Charoen Krung 30",
+     "display_name": "Soi Charoen Krung 30, Hang Nai Loet, Bang Rak Subdistrict, Bang Rak District, Bangkok, 10500, Thailand",
+     "address": {
+      "road": "Soi Charoen Krung 30",
+      "neighbourhood": "Hang Nai Loet",
+      "quarter": "Bang Rak Subdistrict",
+      "suburb": "Bang Rak District",
+      "city": "Bangkok",
+      "ISO3166-2-lvl4": "TH-10",
+      "postcode": "10500",
+      "country": "Thailand",
+      "country_code": "th"
+     },
+     "boundingbox": [
+      "13.7284922",
+      "13.7291636",
+      "100.5144697",
+      "100.5157633"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "name",
+   "query": "Warehouse 30 Bangkok",
+   "url": "https://nominatim.openstreetmap.org/search?q=Warehouse+30+Bangkok&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+   "status": "ok",
+   "results": [
+    {
+     "place_id": 257641060,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 491885323,
+     "lat": "13.7280919",
+     "lon": "100.5147912",
+     "category": "amenity",
+     "type": "arts_centre",
+     "place_rank": 30,
+     "importance": 7.662546730750007e-05,
+     "addresstype": "amenity",
+     "name": "Warehouse 30",
+     "display_name": "Warehouse 30, Soi Charoen Krung 30, Hang Nai Loet, Bang Rak Subdistrict, Bang Rak District, Bangkok, 10500, Thailand",
+     "address": {
+      "amenity": "Warehouse 30",
+      "road": "Soi Charoen Krung 30",
+      "neighbourhood": "Hang Nai Loet",
+      "quarter": "Bang Rak Subdistrict",
+      "suburb": "Bang Rak District",
+      "city": "Bangkok",
+      "ISO3166-2-lvl4": "TH-10",
+      "postcode": "10500",
+      "country": "Thailand",
+      "country_code": "th"
+     },
+     "boundingbox": [
+      "13.7276458",
+      "13.7284694",
+      "100.5145411",
+      "100.5150480"
+     ]
+    }
+   ]
+  }
+ ]
+}

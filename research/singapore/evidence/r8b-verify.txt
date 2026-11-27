@@ -1,0 +1,58 @@
+STORE research/singapore/city/city.json
+refresh_revision 1 updated_at 2026-11-26T12:30:00Z
+
+=== ITEM 4: claim objects ===
+total claim objects 2319
+by collection {'venue': 2080, 'event': 239}
+unlocated total 760 {'venue': 608, 'event': 152}
+unlocated by container {'0': 61, '1': 21, 'about': 12, 'booking_url': 72, 'capacity': 12, 'capacity_basis': 72, 'display_name': 72, 'lifecycle': 72, 'price': 12, 'source_url': 72, 'address': 12, 'programme_windows': 12, 'blockers': 10, 'language_support': 60, 'price_basis': 60, '2': 2, 'conflict_severity': 22, 'date_range': 22, 'kind': 22, 'relevance': 22, 'status': 22, 'venue': 16}
+unlocated fields-only 258 {'venue': 258}
+claim ids appearing more than once (any depth) 1006 [('cl-bd9a6b782acb', 2), ('cl-02b341dfc1bc', 3), ('cl-19888881d95b', 2), ('cl-e1311444c3c8', 2), ('cl-1fb0318d0f7b', 2), ('cl-003daed6a9b5', 2), ('cl-7018d9ad9573', 2), ('cl-64a9f81a4e13', 2), ('cl-b9d368c02f74', 2), ('cl-5cebbd3be1f2', 2)]
+field-level duplicate ids {}
+cl-5452575c6d1b occurrences in store text 1
+gap text claims 760: True | 608: True | 152: True
+gap text matches computed? True
+
+=== ITEM 1: holidays ===
+rows 23
+2027-02-08 public_holiday substitution | line 127 | captures/mom-public-holidays.txt | match True | quote_ok True
+2027-02-09 school_holiday school_off_in_lieu | line 177 | captures/moe-school-terms-2027.txt | match True | quote_ok True
+2027-05-03 school_holiday school_off_in_lieu | line 178 | captures/moe-school-terms-2027.txt | match True | quote_ok True
+2027-12-27 school_holiday school_off_in_lieu | line 179 | captures/moe-school-terms-2027.txt | match True | quote_ok True
+line check 2027-02-08 line carries quote: True
+line check 2027-02-09 line carries quote: True
+line check 2027-05-03 line carries quote: True
+line check 2027-12-27 line carries quote: True
+gap[6] mentions 9 Feb overlap: True
+gap[6] text: Public layer is MOM 2027: eleven date rows plus the 8 February substitution day, stored with the MOM condition (a public holiday where the rest day falls on 7 February 2027) and the MOE footnote that treats it as a school public holiday. School layer is MOE 2027: four vacations, four scheduled school holidays and three designated days off-in-lieu for schools (9 February, 3 May and 27 December). 9 February and 3 May fall inside school terms; 27 December falls inside the end-of-year vacation and is stored as the separately printed designation, not counted as an extra vacation day. Pre-university end-of-year vacation starts 27 November 2027 and is recorded in coverage evidence, not as an overlapping second layer.
+
+=== ITEM 2: coordinates ===
+providers {'Photon': 14, 'OpenStreetMap Nominatim': 22}
+geocode_response missing 0 []
+retry_response missing 0 []
+failed_lookups == none 13
+failed_lookups recorded 23 | both geocoders named 6
+Nominatim rows not naming Nominatim / still Photon boilerplate 0 []
+
+=== ITEM 3: photos ===
+usable 122 room_specific true 113 false 9
+venues 1+ 30 4+ 20 none 6
+null dimensions 0
+-- self-described fallbacks still true --
+-- all 9 fallbacks --
+fb sg-09795cef4b0f | Centre interior (not the listed event space) | Operator centre-page carousel image; depicts the centre, not the event room, so 
+fb sg-09795cef4b0f | Centre interior (not the listed event space) | Operator centre-page carousel image; depicts the centre, not the event room, so 
+fb sg-09795cef4b0f | Centre interior (not the listed event space) | Operator centre-page carousel image; depicts the centre, not the event room, so 
+fb sg-09795cef4b0f | Centre interior (not the listed event space) | Operator centre-page carousel image; depicts the centre, not the event room, so 
+fb sg-13d49f8566fb | Workspace (not a hire room) | Operator page image of the Keong Saik workspace; no room-level hire exists, so i
+fb sg-13d49f8566fb | The Commons (not a hire room) | Operator page image of the Commons; labelled fallback.
+fb sg-13d49f8566fb | Workspace (not a hire room) | Operator page image of the workspace; labelled fallback.
+fb sg-13d49f8566fb | Reception | Operator page image of the reception; labelled fallback.
+fb sg-9787a5fba342 | Enclosed Event Space | Operator listing image on the room-specific page; alt text names the venue and v
+gap[3] says 113/9: True | says 30/20/6: True
+
+=== GUARDS ===
+venue ids with sg- prefix 36 / 36
+event ids with sg- prefix 15 / 15
+venue_id field == key True
+event_id field == key True

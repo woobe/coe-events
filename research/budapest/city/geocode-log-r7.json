@@ -1,0 +1,849 @@
+{
+ "run_id": "run-20261126-bud-r7",
+ "checked_on": "2026-11-26",
+ "provider": "OpenStreetMap Nominatim",
+ "cross_check_provider": "Photon (komoot)",
+ "lookups": [
+  {
+   "venue_id": "bud-01eb7acf5e9c",
+   "address": "Apáczai Csere János utca 4, 1052 Budapest",
+   "provider": "OpenStreetMap Nominatim",
+   "query": "Apaczai Csere Janos utca 4, 1052 Budapest",
+   "checked_on": "2026-11-26",
+   "returned_place": "Marriott, 4, Apáczai Csere János utca, Pest, Belváros, V. kerület, Budapest, 1051, Magyarország",
+   "latitude": 47.4948713,
+   "longitude": 19.049427,
+   "precision": "exact_venue",
+   "map_target": "Budapest Marriott Hotel, Apáczai Csere János utca 4, 1052 Budapest",
+   "match_evidence": "The register returns the Marriott by name at house number 4, the number the operator prints",
+   "cross_check": {
+    "provider": "Photon (komoot)",
+    "match": "returned",
+    "note": "Photon returns the Marriott hotel feature at the same street and number"
+   },
+   "failed_lookups": [
+    {
+     "query": "Apaczai Csere Janos utca 4, 1052 Budapest",
+     "result": "none",
+     "reason": "Apaczai Csere Janos u. 4, Budapest returned no Nominatim row without the postcode"
+    },
+    {
+     "query": "Apaczai Csere Janos utca 4, 1052 Budapest",
+     "result": "provider refused the first user agent",
+     "reason": "Nominatim returned HTTP 403 for the contact-style user agent on 2026-11-26; the query was re-run with a browser-compatible agent"
+    }
+   ],
+   "response_file": "geocode-responses/r7-nom-929ef79f7e.json"
+  },
+  {
+   "venue_id": "bud-1b6df23d8ede",
+   "address": "Ferenciek tere 6, 1053 Budapest",
+   "provider": "OpenStreetMap Nominatim",
+   "query": "Ferenciek tere 6, 1053 Budapest",
+   "checked_on": "2026-11-26",
+   "returned_place": "ELTE Egyetemi Könyvtár, 6, Ferenciek tere, Pest, Belváros, V. kerület, Budapest, 1053, Magyarország",
+   "latitude": 47.4925547,
+   "longitude": 19.0568649,
+   "precision": "building",
+   "map_target": "ELTE University Library, Ferenciek tere 6, 1053 Budapest",
+   "match_evidence": "The register returns the library building by name at the operator-printed number; the Aula entrance inside the building is not published, so the tier stops at the building",
+   "cross_check": {
+    "provider": "Photon (komoot)",
+    "match": "returned",
+    "note": "Photon returns the same library feature"
+   },
+   "failed_lookups": [
+    {
+     "query": "Ferenciek tere 6, 1053 Budapest",
+     "result": "provider refused the first user agent",
+     "reason": "Nominatim returned HTTP 403 for the contact-style user agent on 2026-11-26; the query was re-run with a browser-compatible agent"
+    }
+   ],
+   "response_file": "geocode-responses/r7-nom-7dd394f6e4.json"
+  },
+  {
+   "venue_id": "bud-30c5d7a8bda3",
+   "address": "Erzsébet tér 7-8, 1051 Budapest",
+   "provider": "OpenStreetMap Nominatim",
+   "query": "Erzsebet ter 7-8, 1051 Budapest",
+   "checked_on": "2026-11-26",
+   "returned_place": "Kempinski Hotel Corvinus Budapest, 7-8, Erzsébet tér, Lipótváros, V. kerület, Budapest, 1051, Magyarország",
+   "latitude": 47.4970308,
+   "longitude": 19.0520833,
+   "precision": "exact_venue",
+   "map_target": "Kempinski Hotel Corvinus Budapest, Erzsébet tér 7-8, 1051 Budapest",
+   "match_evidence": "The register returns the hotel by name at the printed number range",
+   "cross_check": {
+    "provider": "Photon (komoot)",
+    "match": "returned",
+    "note": "Photon returns the Kempinski hotel feature"
+   },
+   "failed_lookups": [
+    {
+     "query": "Erzsebet ter 7-8, 1051 Budapest",
+     "result": "provider refused the first user agent",
+     "reason": "Nominatim returned HTTP 403 for the contact-style user agent on 2026-11-26; the query was re-run with a browser-compatible agent"
+    }
+   ],
+   "response_file": "geocode-responses/r7-nom-cea328804c.json"
+  },
+  {
+   "venue_id": "budapest-314a719a0879",
+   "address": "Horánszky utca 5, Budapest",
+   "provider": "OpenStreetMap Nominatim",
+   "query": "Horanszky utca 5, Budapest",
+   "checked_on": "2026-11-26",
+   "returned_place": "5, Horánszky utca, Palotanegyed, VIII. kerület, Budapest, 1085, Magyarország",
+   "latitude": 47.4924194,
+   "longitude": 19.0672632,
+   "precision": "building",
+   "map_target": "Horánszky utca 5, 1085 Budapest",
+   "match_evidence": "The operator names the room “NAGYLUMEN NAGYTEREM” (capture v-lumen-nagyterem line 11). Its NagyLumen branch page prints “1085 Budapest, Horánszky utca 5.” (capture v-lumen-nagylumen line 13). Nominatim and Photon match the building; the room entrance is not established.",
+   "cross_check": {
+    "provider": "Photon (komoot)",
+    "match": "returned",
+    "note": "Photon returns the same house number"
+   },
+   "failed_lookups": [
+    {
+     "query": "Horanszky utca 5, Budapest",
+     "result": "none",
+     "reason": "the query with the 1085 postcode added returned no row, so the postcode-free query was used"
+    },
+    {
+     "query": "Horanszky utca 5, Budapest",
+     "result": "provider refused the first user agent",
+     "reason": "Nominatim returned HTTP 403 for the contact-style user agent on 2026-11-26; the query was re-run with a browser-compatible agent"
+    }
+   ],
+   "response_file": "geocode-responses/r7-nom-736bfe4f55.json"
+  },
+  {
+   "venue_id": "bud-41fa73cf8959",
+   "address": "Podmaniczky utca, 1065 Budapest",
+   "provider": "OpenStreetMap Nominatim",
+   "query": "Podmaniczky utca, 1065 Budapest",
+   "checked_on": "2026-11-26",
+   "returned_place": "Podmaniczky utca, Terézváros, VI. kerület, Budapest, 1065, Magyarország",
+   "latitude": 47.5077725,
+   "longitude": 19.0563934,
+   "precision": "street",
+   "map_target": "Podmaniczky utca, 1065 Budapest",
+   "match_evidence": "The register matches the street and postcode; the operator prints no house number, so no number is claimed",
+   "cross_check": {
+    "provider": "Photon (komoot)",
+    "match": "returned",
+    "note": "Photon returns the street only"
+   },
+   "failed_lookups": [
+    {
+     "query": "Podmaniczky utca, 1065 Budapest",
+     "result": "none",
+     "reason": "Podmaniczky utca 41 is not returned by the register"
+    },
+    {
+     "query": "Podmaniczky utca, 1065 Budapest",
+     "result": "provider refused the first user agent",
+     "reason": "Nominatim returned HTTP 403 for the contact-style user agent on 2026-11-26; the query was re-run with a browser-compatible agent"
+    }
+   ],
+   "response_file": "geocode-responses/r7-nom-e2f71cce0c.json"
+  },
+  {
+   "venue_id": "bud-43bbfb9b077d",
+   "address": "Damjanich utca 50, 1071 Budapest",
+   "provider": "OpenStreetMap Nominatim",
+   "query": "Damjanich utca 50, 1071 Budapest",
+   "checked_on": "2026-11-26",
+   "returned_place": "D50 Kulturális Központ és Hotel, 50, Damjanich utca, Ligetváros, Erzsébetváros, VII. kerület, Budapest, 1071, Magyarország",
+   "latitude": 47.5091315,
+   "longitude": 19.0809528,
+   "precision": "exact_venue",
+   "map_target": "D50 Hotel és Rendezvényközpont, Damjanich utca 50, 1071 Budapest",
+   "match_evidence": "The register returns the D50 venue by name at the printed number",
+   "cross_check": {
+    "provider": "Photon (komoot)",
+    "match": "returned",
+    "note": "Photon returns the D50 feature"
+   },
+   "failed_lookups": [
+    {
+     "query": "Damjanich utca 50, 1071 Budapest",
+     "result": "provider refused the first user agent",
+     "reason": "Nominatim returned HTTP 403 for the contact-style user agent on 2026-11-26; the query was re-run with a browser-compatible agent"
+    }
+   ],
+   "response_file": "geocode-responses/r7-nom-66e721d046.json"
+  },
+  {
+   "venue_id": "bud-4490efc855e0",
+   "address": "Nádor utca 15, 1051 Budapest",
+   "provider": "OpenStreetMap Nominatim",
+   "query": "Nador utca 15, 1051 Budapest",
+   "checked_on": "2026-11-26",
+   "returned_place": "Nádor irodaház, 15, Nádor utca, Lipótváros, V. kerület, Budapest, 1051, Magyarország",
+   "latitude": 47.5012373,
+   "longitude": 19.04966,
+   "precision": "building",
+   "map_target": "Nádor utca 15, 1051 Budapest",
+   "match_evidence": "The register returns the Nádor office building at the printed number; the event floor entrance is not published",
+   "cross_check": {
+    "provider": "Photon (komoot)",
+    "match": "returned",
+    "note": "Photon returns the same office building"
+   },
+   "failed_lookups": [
+    {
+     "query": "Nador utca 15, 1051 Budapest",
+     "result": "provider refused the first user agent",
+     "reason": "Nominatim returned HTTP 403 for the contact-style user agent on 2026-11-26; the query was re-run with a browser-compatible agent"
+    }
+   ],
+   "response_file": "geocode-responses/r7-nom-27de4cd53f.json"
+  },
+  {
+   "venue_id": "bud-44a48c1be946",
+   "address": "Paulay Ede utca 55, 1061 Budapest",
+   "provider": "OpenStreetMap Nominatim",
+   "query": "Paulay Ede utca 55, 1061 Budapest",
+   "checked_on": "2026-11-26",
+   "returned_place": "55, Paulay Ede utca, Terézváros, VI. kerület, Budapest, 1061, Magyarország",
+   "latitude": 47.5029842,
+   "longitude": 19.0619481,
+   "precision": "building",
+   "map_target": "Paulay Ede utca 55, 1061 Budapest",
+   "match_evidence": "The register matches the printed number; the record names a ground-floor tenant rather than Loffice",
+   "cross_check": {
+    "provider": "Photon (komoot)",
+    "match": "returned",
+    "note": "Photon returns the same number"
+   },
+   "failed_lookups": [
+    {
+     "query": "Paulay Ede utca 55, 1061 Budapest",
+     "result": "provider refused the first user agent",
+     "reason": "Nominatim returned HTTP 403 for the contact-style user agent on 2026-11-26; the query was re-run with a browser-compatible agent"
+    }
+   ],
+   "response_file": "geocode-responses/r7-nom-09239278b9.json"
+  },
+  {
+   "venue_id": "bud-44cf319bcf45",
+   "address": "Erzsébet tér 12, 1051 Budapest",
+   "provider": "OpenStreetMap Nominatim",
+   "query": "Erzsebet ter 12, 1051 Budapest",
+   "checked_on": "2026-11-26",
+   "returned_place": "Akvárium Klub, 12, Erzsébet tér, Lipótváros, V. kerület, Budapest, 1051, Magyarország",
+   "latitude": 47.4986747,
+   "longitude": 19.0541621,
+   "precision": "exact_venue",
+   "map_target": "Akvárium Klub, Erzsébet tér 12, 1051 Budapest",
+   "match_evidence": "The register returns the club by name at the printed number",
+   "cross_check": {
+    "provider": "Photon (komoot)",
+    "match": "returned",
+    "note": "Photon returns the Akvárium feature"
+   },
+   "failed_lookups": [
+    {
+     "query": "Erzsebet ter 12, 1051 Budapest",
+     "result": "provider refused the first user agent",
+     "reason": "Nominatim returned HTTP 403 for the contact-style user agent on 2026-11-26; the query was re-run with a browser-compatible agent"
+    }
+   ],
+   "response_file": "geocode-responses/r7-nom-2085fe7d16.json"
+  },
+  {
+   "venue_id": "bud-4a4c0cb1df8f",
+   "address": "Pacsirtamező utca 41, 1036 Budapest",
+   "provider": "OpenStreetMap Nominatim",
+   "query": "Pacsirtamezo utca 41, 1036 Budapest",
+   "checked_on": "2026-11-26",
+   "returned_place": "Pacsirtamező utca, Lajos utcai lakótelep, Óbuda, III. kerület, Budapest, 1036, Magyarország",
+   "latitude": 47.5377418,
+   "longitude": 19.040065,
+   "precision": "street",
+   "map_target": "Pacsirtamező utca, 1036 Budapest",
+   "match_evidence": "The register matches the street and postcode but returns no house 41, so the pin is street-level",
+   "cross_check": {
+    "provider": "Photon (komoot)",
+    "match": "returned",
+    "note": "Photon returns the street only"
+   },
+   "failed_lookups": [
+    {
+     "query": "Pacsirtamezo utca 41, 1036 Budapest",
+     "result": "none",
+     "reason": "Pacsirtamező utca 41 returned no numbered row with or without the postcode"
+    },
+    {
+     "query": "Pacsirtamezo utca 41, 1036 Budapest",
+     "result": "provider refused the first user agent",
+     "reason": "Nominatim returned HTTP 403 for the contact-style user agent on 2026-11-26; the query was re-run with a browser-compatible agent"
+    }
+   ],
+   "response_file": "geocode-responses/r7-nom-3d720ebe7a.json"
+  },
+  {
+   "venue_id": "bud-4d2466b9a442",
+   "address": "Erzsébet körút 9-11, 1073 Budapest",
+   "provider": "OpenStreetMap Nominatim",
+   "query": "Erzsebet korut 9-11, 1073 Budapest",
+   "checked_on": "2026-11-26",
+   "returned_place": "New York-palota, 9-11, Erzsébet körút, Erzsébetváros, VII. kerület, Budapest, 1073, Magyarország",
+   "latitude": 47.4986066,
+   "longitude": 19.0706984,
+   "precision": "exact_venue",
+   "map_target": "New York Palace, Erzsébet körút 9-11, 1073 Budapest",
+   "match_evidence": "The register returns the New York Palace by name at the printed number range",
+   "cross_check": {
+    "provider": "Photon (komoot)",
+    "match": "returned",
+    "note": "Commons search for the palace also resolves to Erzsébet körút 9-11"
+   },
+   "failed_lookups": [
+    {
+     "query": "Erzsebet korut 9-11, 1073 Budapest",
+     "result": "provider refused the first user agent",
+     "reason": "Nominatim returned HTTP 403 for the contact-style user agent on 2026-11-26; the query was re-run with a browser-compatible agent"
+    }
+   ],
+   "response_file": "geocode-responses/r7-nom-79c1901d44.json"
+  },
+  {
+   "venue_id": "bud-5bfa23f179a9",
+   "address": "Petőfi híd, budai hídfő, 1117 Budapest",
+   "provider": "OpenStreetMap Nominatim",
+   "query": "Petofi hid budai hidfo, 1117 Budapest",
+   "checked_on": "2026-11-26",
+   "returned_place": "Petőfi híd, budai hídfő, Lágymányos, XI. kerület, Budapest, 1117, Magyarország",
+   "latitude": 47.476844,
+   "longitude": 19.0593271,
+   "precision": "area",
+   "map_target": "Petőfi híd, budai hídfő, 1117 Budapest",
+   "match_evidence": "The register returns the Buda bridgehead; a moored ship has no street number, so the smallest proved target is the quay area",
+   "cross_check": {
+    "provider": "Photon (komoot)",
+    "match": "returned",
+    "note": "Photon returns the bridge, not the berth"
+   },
+   "failed_lookups": [
+    {
+     "query": "Petofi hid budai hidfo, 1117 Budapest",
+     "result": "none",
+     "reason": "the ship name A38 returned no address row"
+    },
+    {
+     "query": "Petofi hid budai hidfo, 1117 Budapest",
+     "result": "provider refused the first user agent",
+     "reason": "Nominatim returned HTTP 403 for the contact-style user agent on 2026-11-26; the query was re-run with a browser-compatible agent"
+    }
+   ],
+   "response_file": "geocode-responses/r7-nom-fafed75429.json"
+  },
+  {
+   "venue_id": "bud-6928952c9fb8",
+   "address": "Király utca 26, 1061 Budapest",
+   "provider": "OpenStreetMap Nominatim",
+   "query": "Kiraly utca 26, 1061 Budapest",
+   "checked_on": "2026-11-26",
+   "returned_place": "Jálics-ház, 26, Király utca, Terézváros, VI. kerület, Budapest, 1061, Magyarország",
+   "latitude": 47.4998315,
+   "longitude": 19.0584632,
+   "precision": "building",
+   "map_target": "Király utca 26, 1061 Budapest",
+   "match_evidence": "The register returns the named building at the printed number; the event hall entrance inside the courtyard is not published",
+   "cross_check": {
+    "provider": "Photon (komoot)",
+    "match": "returned",
+    "note": "Photon returns the same house number"
+   },
+   "failed_lookups": [
+    {
+     "query": "Kiraly utca 26, 1061 Budapest",
+     "result": "provider refused the first user agent",
+     "reason": "Nominatim returned HTTP 403 for the contact-style user agent on 2026-11-26; the query was re-run with a browser-compatible agent"
+    }
+   ],
+   "response_file": "geocode-responses/r7-nom-a98acd8713.json"
+  },
+  {
+   "venue_id": "bud-700c267f388f",
+   "address": "Csörsz utca 14-16, 1123 Budapest",
+   "provider": "OpenStreetMap Nominatim",
+   "query": "Csorsz utca 14-16, 1123 Budapest",
+   "checked_on": "2026-11-26",
+   "returned_place": "MOM Sport, 14-16, Csörsz utca, Németvölgy, XII. kerület, Budapest, 1124, Magyarország",
+   "latitude": 47.4897027,
+   "longitude": 19.022414,
+   "precision": "building",
+   "map_target": "MOM Event Center, Csörsz utca 14-16, 1123 Budapest",
+   "match_evidence": "The register matches the printed street and number range but returns the MOM Sport campus and postcode 1124, while the operator prints 1123; the conflict is recorded and the operator address kept",
+   "cross_check": {
+    "provider": "Photon (komoot)",
+    "match": "returned",
+    "note": "Photon returns the same number range with postcode 1124"
+   },
+   "failed_lookups": [
+    {
+     "query": "Csorsz utca 14-16, 1123 Budapest",
+     "result": "provider refused the first user agent",
+     "reason": "Nominatim returned HTTP 403 for the contact-style user agent on 2026-11-26; the query was re-run with a browser-compatible agent"
+    }
+   ],
+   "response_file": "geocode-responses/r7-nom-955c480fca.json"
+  },
+  {
+   "venue_id": "bud-8b35c81e31cd",
+   "address": "Fővám tér 11-12, 1093 Budapest",
+   "provider": "OpenStreetMap Nominatim",
+   "query": "Fovam ter 11-12, 1093 Budapest",
+   "checked_on": "2026-11-26",
+   "returned_place": "Bálna Honvédelmi Központ, 11-12, Fővám tér, Belső-Ferencváros, IX. kerület, Budapest, 1093, Magyarország",
+   "latitude": 47.4836396,
+   "longitude": 19.0608408,
+   "precision": "exact_venue",
+   "map_target": "Bálna Honvédelmi Központ, Fővám tér 11-12, 1093 Budapest",
+   "match_evidence": "The register returns the Bálna building under the venue name at the printed number range",
+   "cross_check": {
+    "provider": "Photon (komoot)",
+    "match": "returned",
+    "note": "Photon returns the Bálna feature"
+   },
+   "failed_lookups": [
+    {
+     "query": "Fovam ter 11-12, 1093 Budapest",
+     "result": "provider refused the first user agent",
+     "reason": "Nominatim returned HTTP 403 for the contact-style user agent on 2026-11-26; the query was re-run with a browser-compatible agent"
+    }
+   ],
+   "response_file": "geocode-responses/r7-nom-1a1fd85a76.json"
+  },
+  {
+   "venue_id": "bud-9334070f070e",
+   "address": "Dohány utca 42-44, 1074 Budapest",
+   "provider": "OpenStreetMap Nominatim",
+   "query": "Dohany utca 42-44, 1074 Budapest",
+   "checked_on": "2026-11-26",
+   "returned_place": "Continental Hotel Budapest, 42-44, Dohány utca, Erzsébetváros, VII. kerület, Budapest, 1074, Magyarország",
+   "latitude": 47.4971158,
+   "longitude": 19.0669856,
+   "precision": "exact_venue",
+   "map_target": "Continental Hotel Budapest, Dohány utca 42-44, 1074 Budapest",
+   "match_evidence": "The register returns the hotel by name at the printed number range",
+   "cross_check": {
+    "provider": "Photon (komoot)",
+    "match": "returned",
+    "note": "Photon returns the Continental Hotel Budapest feature"
+   },
+   "failed_lookups": [
+    {
+     "query": "Dohany utca 42-44, 1074 Budapest",
+     "result": "provider refused the first user agent",
+     "reason": "Nominatim returned HTTP 403 for the contact-style user agent on 2026-11-26; the query was re-run with a browser-compatible agent"
+    }
+   ],
+   "response_file": "geocode-responses/r7-nom-00a2b42cc3.json"
+  },
+  {
+   "venue_id": "bud-975815ad1f30",
+   "address": "Kis Rókus utca 16-20, 1024 Budapest",
+   "provider": "OpenStreetMap Nominatim",
+   "query": "Millenaris, Budapest",
+   "checked_on": "2026-11-26",
+   "returned_place": "Millenáris park, Országút, II. kerület, Budapest, Magyarország",
+   "latitude": 47.5113886,
+   "longitude": 19.0249063,
+   "precision": "area",
+   "map_target": "Millenáris park, Kis Rókus utca, 1024 Budapest",
+   "match_evidence": "House 16-20 on Kis Rókus utca is not in the register index; the smallest proved named target is the Millenáris park campus",
+   "cross_check": {
+    "provider": "Photon (komoot)",
+    "match": "returned",
+    "note": "Photon returns Millenáris park as well"
+   },
+   "failed_lookups": [
+    {
+     "query": "Millenaris, Budapest",
+     "result": "none",
+     "reason": "Kis Rokusz utca 16 and Kis Rokusz utca 16-20 both returned no row"
+    },
+    {
+     "query": "Millenaris, Budapest",
+     "result": "provider refused the first user agent",
+     "reason": "Nominatim returned HTTP 403 for the contact-style user agent on 2026-11-26; the query was re-run with a browser-compatible agent"
+    }
+   ],
+   "response_file": "geocode-responses/r7-nom-9092861331.json"
+  },
+  {
+   "venue_id": "bud-993fb1d758f9",
+   "address": "Anker köz 1-3, 1061 Budapest",
+   "provider": "OpenStreetMap Nominatim",
+   "query": "Anker koz 1-3, 1061 Budapest",
+   "checked_on": "2026-11-26",
+   "returned_place": "Príma, 1-3, Anker köz, Terézváros, VI. kerület, Budapest, 1061, Magyarország",
+   "latitude": 47.497752,
+   "longitude": 19.0554569,
+   "precision": "building",
+   "map_target": "Anker köz 1-3, 1061 Budapest",
+   "match_evidence": "The register matches the printed number range; the named occupier is another tenant, so the tier stops at the building",
+   "cross_check": {
+    "provider": "Photon (komoot)",
+    "match": "returned",
+    "note": "Photon returns the same number range"
+   },
+   "failed_lookups": [
+    {
+     "query": "Anker koz 1-3, 1061 Budapest",
+     "result": "provider refused the first user agent",
+     "reason": "Nominatim returned HTTP 403 for the contact-style user agent on 2026-11-26; the query was re-run with a browser-compatible agent"
+    }
+   ],
+   "response_file": "geocode-responses/r7-nom-dee42dacaf.json"
+  },
+  {
+   "venue_id": "bud-9ee6b0223da6",
+   "address": "Révay köz 4, 1065 Budapest",
+   "provider": "OpenStreetMap Nominatim",
+   "query": "Revay koz 4, 1065 Budapest",
+   "checked_on": "2026-11-26",
+   "returned_place": "KAPTÁR, 4, Révay köz, Terézváros, VI. kerület, Budapest, 1065, Magyarország",
+   "latitude": 47.501063,
+   "longitude": 19.0556595,
+   "precision": "exact_venue",
+   "map_target": "KAPTÁR Coworking, Révay köz 4, 1065 Budapest",
+   "match_evidence": "The register returns the coworking space by name at the printed number",
+   "cross_check": {
+    "provider": "Photon (komoot)",
+    "match": "returned",
+    "note": "Photon returns the KAPTÁR feature"
+   },
+   "failed_lookups": [
+    {
+     "query": "Revay koz 4, 1065 Budapest",
+     "result": "provider refused the first user agent",
+     "reason": "Nominatim returned HTTP 403 for the contact-style user agent on 2026-11-26; the query was re-run with a browser-compatible agent"
+    }
+   ],
+   "response_file": "geocode-responses/r7-nom-677c483dd1.json"
+  },
+  {
+   "venue_id": "bud-a272a35c62e9",
+   "address": "Vigadó tér 2, 1051 Budapest",
+   "provider": "OpenStreetMap Nominatim",
+   "query": "Vigado ter 2, 1051 Budapest",
+   "checked_on": "2026-11-26",
+   "returned_place": "Vigadó Galéria, 2, Vigadó tér, Lipótváros, V. kerület, Budapest, 1051, Magyarország",
+   "latitude": 47.4957556,
+   "longitude": 19.0495312,
+   "precision": "building",
+   "map_target": "Pesti Vigadó, Vigadó tér 2, 1051 Budapest",
+   "match_evidence": "The register returns the Vigadó building under its gallery name at the printed number; the Ceremonial Hall entrance is not published",
+   "cross_check": {
+    "provider": "Photon (komoot)",
+    "match": "returned",
+    "note": "Photon returns the Vigadó feature"
+   },
+   "failed_lookups": [
+    {
+     "query": "Vigado ter 2, 1051 Budapest",
+     "result": "provider refused the first user agent",
+     "reason": "Nominatim returned HTTP 403 for the contact-style user agent on 2026-11-26; the query was re-run with a browser-compatible agent"
+    }
+   ],
+   "response_file": "geocode-responses/r7-nom-f7c02947bd.json"
+  },
+  {
+   "venue_id": "bud-b28855d5e6bc",
+   "address": "Bogdáni út 1, 1033 Budapest",
+   "provider": "OpenStreetMap Nominatim",
+   "query": "Bogdani ut 1, 1033 Budapest",
+   "checked_on": "2026-11-26",
+   "returned_place": "Flashback photo studio, 1, Bogdáni út, Waterfront City, Aquincum, III. kerület, Budapest, 1033, Magyarország",
+   "latitude": 47.5500464,
+   "longitude": 19.0462775,
+   "precision": "building",
+   "map_target": "Bogdáni út 1, 1033 Budapest",
+   "match_evidence": "The register matches the printed number; the named occupier is a different business, so the tier stops at the building",
+   "cross_check": {
+    "provider": "Photon (komoot)",
+    "match": "returned",
+    "note": "Photon returns the same number"
+   },
+   "failed_lookups": [
+    {
+     "query": "Bogdani ut 1, 1033 Budapest",
+     "result": "provider refused the first user agent",
+     "reason": "Nominatim returned HTTP 403 for the contact-style user agent on 2026-11-26; the query was re-run with a browser-compatible agent"
+    }
+   ],
+   "response_file": "geocode-responses/r7-nom-d0e5057f35.json"
+  },
+  {
+   "venue_id": "bud-c36a48c22e15",
+   "address": "Babér utca 1-5, 1131 Budapest",
+   "provider": "OpenStreetMap Nominatim",
+   "query": "Ba ber utca 1-5, 1131 Budapest",
+   "checked_on": "2026-11-26",
+   "returned_place": "Babér utca, Angyalföld-Kertváros, Angyalföld, XIII. kerület, Budapest, 1131, Magyarország",
+   "latitude": 47.5472853,
+   "longitude": 19.0791158,
+   "precision": "street",
+   "map_target": "Babér utca, 1131 Budapest",
+   "match_evidence": "The register matches the street and postcode; no house number on Babér utca is returned, so the pin is street-level",
+   "cross_check": {
+    "provider": "Photon (komoot)",
+    "match": "returned",
+    "note": "Photon returns the street only"
+   },
+   "failed_lookups": [
+    {
+     "query": "Ba ber utca 1-5, 1131 Budapest",
+     "result": "none",
+     "reason": "Baber utca 1 and Baber utca 1-5 returned only street rows; the OSM node \"Impact Hub Budapest\" sits at Ferenciek tere 2 and is rejected as an older premise"
+    },
+    {
+     "query": "Ba ber utca 1-5, 1131 Budapest",
+     "result": "provider refused the first user agent",
+     "reason": "Nominatim returned HTTP 403 for the contact-style user agent on 2026-11-26; the query was re-run with a browser-compatible agent"
+    }
+   ],
+   "response_file": "geocode-responses/r7-nom-a311b39449.json"
+  },
+  {
+   "venue_id": "bud-c52de512f4be",
+   "address": "Rákóczi út 88-90, 1074 Budapest",
+   "provider": "OpenStreetMap Nominatim",
+   "query": "Rakoczi ut 90, 1074 Budapest",
+   "checked_on": "2026-11-26",
+   "returned_place": "90, Rákóczi út, Erzsébetváros, VII. kerület, Budapest, 1074, Magyarország",
+   "latitude": 47.4997145,
+   "longitude": 19.0787701,
+   "precision": "exact_venue",
+   "map_target": "Danubius Hotel Hungaria, Rákóczi út 88-90, 1074 Budapest",
+   "match_evidence": "The register returns the hotel at 88-90 and the numbered building at 90, matching the operator print",
+   "cross_check": {
+    "provider": "Photon (komoot)",
+    "match": "returned",
+    "note": "Photon returns the hotel feature at 88-90"
+   },
+   "failed_lookups": [
+    {
+     "query": "Rakoczi ut 90, 1074 Budapest",
+     "result": "provider refused the first user agent",
+     "reason": "Nominatim returned HTTP 403 for the contact-style user agent on 2026-11-26; the query was re-run with a browser-compatible agent"
+    }
+   ],
+   "response_file": "geocode-responses/r7-nom-bb5ac3143f.json"
+  },
+  {
+   "venue_id": "bud-c6da2594661f",
+   "address": "Anker köz 2-4, 1061 Budapest",
+   "provider": "OpenStreetMap Nominatim",
+   "query": "Anker koz 2-4, 1061 Budapest",
+   "checked_on": "2026-11-26",
+   "returned_place": "Gringos Amigos, 2-4, Anker köz, Terézváros, VI. kerület, Budapest, 1061, Magyarország",
+   "latitude": 47.4982455,
+   "longitude": 19.0558771,
+   "precision": "building",
+   "map_target": "Anker köz 2-4, 1061 Budapest",
+   "match_evidence": "The register matches the printed number range; the named occupier is another tenant, so the tier stops at the building",
+   "cross_check": {
+    "provider": "Photon (komoot)",
+    "match": "returned",
+    "note": "Photon returns the same number range"
+   },
+   "failed_lookups": [
+    {
+     "query": "Anker koz 2-4, 1061 Budapest",
+     "result": "provider refused the first user agent",
+     "reason": "Nominatim returned HTTP 403 for the contact-style user agent on 2026-11-26; the query was re-run with a browser-compatible agent"
+    }
+   ],
+   "response_file": "geocode-responses/r7-nom-c8cea2629e.json"
+  },
+  {
+   "venue_id": "bud-cd55edc18c9f",
+   "address": "Paulay Ede utca 55, 1061 Budapest",
+   "provider": "OpenStreetMap Nominatim",
+   "query": "Paulay Ede utca 55, 1061 Budapest",
+   "checked_on": "2026-11-26",
+   "returned_place": "Café Zsivágó, 55, Paulay Ede utca, Terézváros, VI. kerület, Budapest, 1061, Magyarország",
+   "latitude": 47.5030936,
+   "longitude": 19.0617216,
+   "precision": "building",
+   "map_target": "Paulay Ede utca 55, 1061 Budapest",
+   "match_evidence": "The register matches the printed number; the named occupier is another tenant, so the tier stops at the building",
+   "cross_check": {
+    "provider": "Photon (komoot)",
+    "match": "returned",
+    "note": "Photon returns the same number"
+   },
+   "failed_lookups": [
+    {
+     "query": "Paulay Ede utca 55, 1061 Budapest",
+     "result": "provider refused the first user agent",
+     "reason": "Nominatim returned HTTP 403 for the contact-style user agent on 2026-11-26; the query was re-run with a browser-compatible agent"
+    }
+   ],
+   "response_file": "geocode-responses/r7-nom-09239278b9.json"
+  },
+  {
+   "venue_id": "bud-e6f758e8cdf3",
+   "address": "Ybl Miklós tér 2-6, 1013 Budapest",
+   "provider": "OpenStreetMap Nominatim",
+   "query": "Ybl Miklos ter 2-6, 1013 Budapest",
+   "checked_on": "2026-11-26",
+   "returned_place": "Lépcsőpavilon, 2-6, Ybl Miklós tér, Buda, Víziváros, I. kerület, Budapest, 1013, Magyarország",
+   "latitude": 47.4954459,
+   "longitude": 19.0423206,
+   "precision": "building",
+   "map_target": "Várkert Bazár, Ybl Miklós tér 2-6, 1013 Budapest",
+   "match_evidence": "The register matches the printed number range inside the Várkert; the room entrance is not published",
+   "cross_check": {
+    "provider": "Photon (komoot)",
+    "match": "returned",
+    "note": "Photon returns the Várkert feature"
+   },
+   "failed_lookups": [
+    {
+     "query": "Ybl Miklos ter 2-6, 1013 Budapest",
+     "result": "provider refused the first user agent",
+     "reason": "Nominatim returned HTTP 403 for the contact-style user agent on 2026-11-26; the query was re-run with a browser-compatible agent"
+    }
+   ],
+   "response_file": "geocode-responses/r7-nom-d32f49a336.json"
+  },
+  {
+   "venue_id": "bud-e72b69d22b18",
+   "address": "Apáczai Csere János utca 12-14, 1052 Budapest",
+   "provider": "OpenStreetMap Nominatim",
+   "query": "Apaczai Csere Janos utca 12-14, 1052 Budapest",
+   "checked_on": "2026-11-26",
+   "returned_place": "InterContinental, 12-14, Apáczai Csere János utca, Lipótváros, V. kerület, Budapest, 1051, Magyarország",
+   "latitude": 47.4973071,
+   "longitude": 19.0478506,
+   "precision": "exact_venue",
+   "map_target": "InterContinental Budapest, Apáczai Csere János utca 12-14, 1052 Budapest",
+   "match_evidence": "The register returns the hotel by name at the printed number range; the operator print is read from the 2023-10-03 archive because the live domain refuses the TLS handshake",
+   "cross_check": {
+    "provider": "Photon (komoot)",
+    "match": "returned",
+    "note": "Photon returns the InterContinental feature"
+   },
+   "failed_lookups": [
+    {
+     "query": "Apaczai Csere Janos utca 12-14, 1052 Budapest",
+     "result": "provider refused the first user agent",
+     "reason": "Nominatim returned HTTP 403 for the contact-style user agent on 2026-11-26; the query was re-run with a browser-compatible agent"
+    }
+   ],
+   "response_file": "geocode-responses/r7-nom-6e9a04c295.json"
+  },
+  {
+   "venue_id": "bud-e7d4f366198b",
+   "address": "Mátyás utca 8, 1093 Budapest",
+   "provider": "OpenStreetMap Nominatim",
+   "query": "Matyas utca 8, 1093 Budapest",
+   "checked_on": "2026-11-26",
+   "returned_place": "Budapest Music Center, 8, Mátyás utca, Belső-Ferencváros, IX. kerület, Budapest, 1093, Magyarország",
+   "latitude": 47.4856873,
+   "longitude": 19.0611139,
+   "precision": "exact_venue",
+   "map_target": "Budapest Music Center, Mátyás utca 8, 1093 Budapest",
+   "match_evidence": "The register returns the BMC by name at the printed number",
+   "cross_check": {
+    "provider": "Photon (komoot)",
+    "match": "returned",
+    "note": "Photon returns the BMC feature"
+   },
+   "failed_lookups": [
+    {
+     "query": "Matyas utca 8, 1093 Budapest",
+     "result": "provider refused the first user agent",
+     "reason": "Nominatim returned HTTP 403 for the contact-style user agent on 2026-11-26; the query was re-run with a browser-compatible agent"
+    }
+   ],
+   "response_file": "geocode-responses/r7-nom-7fa7844eea.json"
+  },
+  {
+   "venue_id": "bud-e8001f10908e",
+   "address": "Albertirsai út 10, 1101 Budapest",
+   "provider": "OpenStreetMap Nominatim",
+   "query": "Albertirsai ut 10, 1101 Budapest",
+   "checked_on": "2026-11-26",
+   "returned_place": "Rendezvényterem, 10, Albertirsai út, Ligettelek, X. kerület, Budapest, 1101, Magyarország",
+   "latitude": 47.4944649,
+   "longitude": 19.1218474,
+   "precision": "building",
+   "map_target": "HUNGEXPO Congress Centre, Albertirsai út 10, 1101 Budapest",
+   "match_evidence": "The register matches the printed number and returns an event hall at the exhibition ground; the hall entrance is not published",
+   "cross_check": {
+    "provider": "Photon (komoot)",
+    "match": "returned",
+    "note": "Photon returns the exhibition ground"
+   },
+   "failed_lookups": [
+    {
+     "query": "Albertirsai ut 10, 1101 Budapest",
+     "result": "provider refused the first user agent",
+     "reason": "Nominatim returned HTTP 403 for the contact-style user agent on 2026-11-26; the query was re-run with a browser-compatible agent"
+    }
+   ],
+   "response_file": "geocode-responses/r7-nom-92d135b842.json"
+  },
+  {
+   "venue_id": "bud-f1084ce9ea42",
+   "address": "Rákóczi út 29, 1088 Budapest",
+   "provider": "OpenStreetMap Nominatim",
+   "query": "Rakoczi ut 29, 1088 Budapest",
+   "checked_on": "2026-11-26",
+   "returned_place": "29, Rákóczi út, Palotanegyed, VIII. kerület, Budapest, 1088, Magyarország",
+   "latitude": 47.4953293,
+   "longitude": 19.0667818,
+   "precision": "building",
+   "map_target": "Stifler Bárok, Rákóczi út 29, 1088 Budapest",
+   "match_evidence": "The register matches the printed number; no venue name is returned, so the tier stops at the building",
+   "cross_check": {
+    "provider": "Photon (komoot)",
+    "match": "returned",
+    "note": "Photon returns the same number"
+   },
+   "failed_lookups": [
+    {
+     "query": "Rakoczi ut 29, 1088 Budapest",
+     "result": "provider refused the first user agent",
+     "reason": "Nominatim returned HTTP 403 for the contact-style user agent on 2026-11-26; the query was re-run with a browser-compatible agent"
+    }
+   ],
+   "response_file": "geocode-responses/r7-nom-defe4dc979.json"
+  },
+  {
+   "venue_id": "bud-f3b7c498995a",
+   "address": "Erzsébet körút 43-49, 1073 Budapest",
+   "provider": "OpenStreetMap Nominatim",
+   "query": "Erzsebet korut 43-49, 1073 Budapest",
+   "checked_on": "2026-11-26",
+   "returned_place": "43-49, Erzsébet körút, Erzsébetváros, VII. kerület, Budapest, 1073, Magyarország",
+   "latitude": 47.5027576,
+   "longitude": 19.0670888,
+   "precision": "building",
+   "map_target": "Corinthia Budapest, Erzsébet körút 43-49, 1073 Budapest",
+   "match_evidence": "The register matches the printed number range; the hotel name is not returned by the search, so the tier stops at the building",
+   "cross_check": {
+    "provider": "Photon (komoot)",
+    "match": "returned",
+    "note": "Photon returns the same number range"
+   },
+   "failed_lookups": [
+    {
+     "query": "Erzsebet korut 43-49, 1073 Budapest",
+     "result": "provider refused the first user agent",
+     "reason": "Nominatim returned HTTP 403 for the contact-style user agent on 2026-11-26; the query was re-run with a browser-compatible agent"
+    }
+   ],
+   "response_file": "geocode-responses/r7-nom-61623210a4.json"
+  }
+ ]
+}

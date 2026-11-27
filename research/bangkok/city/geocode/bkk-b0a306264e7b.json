@@ -1,0 +1,91 @@
+{
+ "venue_id": "bkk-b0a306264e7b",
+ "checked_on": "2026-11-26",
+ "provider": "OpenStreetMap Nominatim",
+ "attempts": [
+  {
+   "kind": "address",
+   "query": "IMPACT Arena, Popular Road, Ban Mai, Pak Kret, Nonthaburi 11120, Thailand",
+   "url": "https://nominatim.openstreetmap.org/search?q=IMPACT+Arena%2C+Popular+Road%2C+Ban+Mai%2C+Pak+Kret%2C+Nonthaburi+11120%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+   "status": "ok",
+   "results": [
+    {
+     "place_id": 258556004,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 151982343,
+     "lat": "13.9115621",
+     "lon": "100.5483825",
+     "category": "leisure",
+     "type": "stadium",
+     "place_rank": 30,
+     "importance": 0.3331894015087746,
+     "addresstype": "leisure",
+     "name": "IMPACT Arena",
+     "display_name": "IMPACT Arena, Popular Road, Muang Thong Thani, Ban Mai Subdistrict, Pak Kret City Municipality, Pak Kret District, Nonthaburi Province, 11120, Thailand",
+     "address": {
+      "leisure": "IMPACT Arena",
+      "road": "Popular Road",
+      "neighbourhood": "Muang Thong Thani",
+      "city_district": "Ban Mai Subdistrict",
+      "city": "Pak Kret City Municipality",
+      "county": "Pak Kret District",
+      "province": "Nonthaburi Province",
+      "ISO3166-2-lvl4": "TH-12",
+      "postcode": "11120",
+      "country": "Thailand",
+      "country_code": "th"
+     },
+     "boundingbox": [
+      "13.9107897",
+      "13.9123078",
+      "100.5476259",
+      "100.5491287"
+     ]
+    }
+   ]
+  },
+  {
+   "kind": "name",
+   "query": "IMPACT Arena Muang Thong Thani",
+   "url": "https://nominatim.openstreetmap.org/search?q=IMPACT+Arena+Muang+Thong+Thani&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+   "status": "ok",
+   "results": [
+    {
+     "place_id": 257321090,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "way",
+     "osm_id": 151982343,
+     "lat": "13.9115621",
+     "lon": "100.5483825",
+     "category": "leisure",
+     "type": "stadium",
+     "place_rank": 30,
+     "importance": 0.3331894015087746,
+     "addresstype": "leisure",
+     "name": "IMPACT Arena",
+     "display_name": "IMPACT Arena, Popular Road, Muang Thong Thani, Ban Mai Subdistrict, Pak Kret City Municipality, Pak Kret District, Nonthaburi Province, 11120, Thailand",
+     "address": {
+      "leisure": "IMPACT Arena",
+      "road": "Popular Road",
+      "neighbourhood": "Muang Thong Thani",
+      "city_district": "Ban Mai Subdistrict",
+      "city": "Pak Kret City Municipality",
+      "county": "Pak Kret District",
+      "province": "Nonthaburi Province",
+      "ISO3166-2-lvl4": "TH-12",
+      "postcode": "11120",
+      "country": "Thailand",
+      "country_code": "th"
+     },
+     "boundingbox": [
+      "13.9107897",
+      "13.9123078",
+      "100.5476259",
+      "100.5491287"
+     ]
+    }
+   ]
+  }
+ ]
+}

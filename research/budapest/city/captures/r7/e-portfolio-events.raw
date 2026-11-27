@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset=utf-8 />
+	<meta name="view-transition" content="same-origin" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="google-site-verification" content="google1dc59ea318289106"/>
+	<meta name="_token" content="ffuzsSHHHAhvdPqmhfaII2RkNf99emtcwvmP2Nwz">
+	<link rel="apple-touch-icon" sizes="57x57" href="https://assets.portfolio.hu/images/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="https://assets.portfolio.hu/images/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="https://assets.portfolio.hu/images/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="https://assets.portfolio.hu/images/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="https://assets.portfolio.hu/images/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="https://assets.portfolio.hu/images/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="https://assets.portfolio.hu/images/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="https://assets.portfolio.hu/images/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="https://assets.portfolio.hu/images/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="https://assets.portfolio.hu/images/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="196x196" href="https://assets.portfolio.hu/images/favicon/favicon-196x196.png">
+	<link rel="icon" type="image/png" sizes="512x512" href="https://assets.portfolio.hu/images/favicon/favicon-512x512.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://assets.portfolio.hu/images/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="https://assets.portfolio.hu/images/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://assets.portfolio.hu/images/favicon/favicon-16x16.png">
+	<script src="https://eventscdn.portfolio.hu/assets/js/jquery.min.js"></script>
+	<script src="https://eventscdn.portfolio.hu/assets/js/lc_lightbox.js"></script>
+	<script>
+		window.conferenceCdn = 'https://eventscdn.portfolio.hu/';
+		window.Rot13 = {
+			map: null,
+			convert: function(t) { Rot13.init(); var r = ""; for (var i = 0; i < t.length; i++) { var n = t.charAt(i); r += (n >= "A" && n <= "Z") || (n >= "a" && n <= "z") ? Rot13.map[n] : n; } return r; },
+			init: function() { if (null == Rot13.map) { var t = [], r = "abcdefghijklmnopqrstuvwxyz"; for (var i = 0; i < r.length; i++) t[r.charAt(i)] = r.charAt((i + 13) % 26); for (var i = 0; i < r.length; i++) t[r.charAt(i).toUpperCase()] = r.charAt((i + 13) % 26).toUpperCase(); Rot13.map = t; } },
+			write: function(t) { document.write(Rot13.convert(t)); }
+		};
+	</script>
+	<link rel="preload" as="style" href="https://eventscdn.portfolio.hu/build/assets/app--SX63V0H.css" /><link rel="modulepreload" as="script" href="https://eventscdn.portfolio.hu/build/assets/app-g6qvDS_T.js" /><link rel="stylesheet" href="https://eventscdn.portfolio.hu/build/assets/app--SX63V0H.css" data-navigate-track="reload" /><script type="module" src="https://eventscdn.portfolio.hu/build/assets/app-g6qvDS_T.js" data-navigate-track="reload"></script>	<link rel="canonical" href="https://www.portfolio.hu/en/events">
+		
+		
+	<!-- InMobi Choice. Consent Manager Tag v3.0 (for TCF 2.3) -->
+<script type="text/javascript" async=true>
+(function() {
+var host = 'portfolio.hu';
+var element = document.createElement('script');
+var firstScript = document.getElementsByTagName('script')[0];
+var url = 'https://cmp.inmobi.com'
+.concat('/choice/', 'XgSMD-LqxuxFC', '/', host, '/choice.js?tag_version=V3');
+var uspTries = 0;
+var uspTriesLimit = 3;
+element.async = true;
+element.type = 'text/javascript';
+element.src = url;
+
+firstScript.parentNode.insertBefore(element, firstScript);
+
+function makeStub() {
+var TCF_LOCATOR_NAME = '__tcfapiLocator';
+var queue = [];
+var win = window;
+var cmpFrame;
+
+function addFrame() {
+var doc = win.document;
+var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
+
+if (!otherCMP) {
+if (doc.body) {
+var iframe = doc.createElement('iframe');
+
+iframe.style.cssText = 'display:none';
+iframe.name = TCF_LOCATOR_NAME;
+doc.body.appendChild(iframe);
+} else {
+setTimeout(addFrame, 5);
+}
+}
+return !otherCMP;
+}
+
+function tcfAPIHandler() {
+var gdprApplies;
+var args = arguments;
+
+if (!args.length) {
+return queue;
+} else if (args[0] === 'setGdprApplies') {
+if (
+args.length > 3 &&
+args[2] === 2 &&
+typeof args[3] === 'boolean'
+) {
+gdprApplies = args[3];
+if (typeof args[2] === 'function') {
+args[2]('set', true);
+}
+}
+} else if (args[0] === 'ping') {
+var retr = {
+gdprApplies: gdprApplies,
+cmpLoaded: false,
+cmpStatus: 'stub'
+};
+
+if (typeof args[2] === 'function') {
+args[2](retr);
+}
+} else {
+if(args[0] === 'init' && typeof args[3] === 'object') {
+args[3] = Object.assign(args[3], { tag_version: 'V3' });
+}
+queue.push(args);
+}
+}
+
+var ALLOWED_POSTMESSAGE_COMMANDS = {
+ping: true,
+getTCData: true,
+addEventListener: true,
+removeEventListener: true
+};
+
+function postMessageEventHandler(event) {
+var msgIsString = typeof event.data === 'string';
+var json = {};
+
+try {
+if (msgIsString) {
+json = JSON.parse(event.data);
+} else {
+json = event.data;
+}
+} catch (ignore) {}
+
+var payload = json && json.__tcfapiCall;
+if (!payload) return;
+if (!ALLOWED_POSTMESSAGE_COMMANDS[payload.command]) return;
+if (window.opener && event.source === window.opener) return;
+
+window.__tcfapi(
+payload.command,
+payload.version,
+function(retValue, success) {
+var returnMsg = {
+  __tcfapiReturn: {
+    returnValue: retValue,
+    success: success,
+    callId: payload.callId
+  }
+};
+if (msgIsString) {
+  returnMsg = JSON.stringify(returnMsg);
+}
+if (event && event.source && event.source.postMessage) {
+  event.source.postMessage(returnMsg, '*');
+}
+},
+payload.parameter
+);
+}
+
+while (win) {
+try {
+if (win.frames[TCF_LOCATOR_NAME]) {
+cmpFrame = win;
+break;
+}
+} catch (ignore) {}
+
+if (win === window.top) {
+break;
+}
+win = win.parent;
+}
+if (!cmpFrame) {
+addFrame();
+win.__tcfapi = tcfAPIHandler;
+win.addEventListener('message', postMessageEventHandler, false);
+}
+};
+
+makeStub();
+
+function makeGppStub() {
+const CMP_ID = 10;
+const SUPPORTED_APIS = [
+'2:tcfeuv2',
+'6:uspv1',
+'7:usnatv1',
+'8:usca',
+'9:usvav1',
+'10:uscov1',
+'11:usutv1',
+'12:usctv1'
+];
+
+window.__gpp_addFrame = function (n) {
+if (!window.frames[n]) {
+if (document.body) {
+var i = document.createElement("iframe");
+i.style.cssText = "display:none";
+i.name = n;
+document.body.appendChild(i);
+} else {
+window.setTimeout(window.__gpp_addFrame, 10, n);
+}
+}
+};
+window.__gpp_stub = function () {
+var b = arguments;
+__gpp.queue = __gpp.queue || [];
+__gpp.events = __gpp.events || [];
+
+if (!b.length || (b.length == 1 && b[0] == "queue")) {
+return __gpp.queue;
+}
+
+if (b.length == 1 && b[0] == "events") {
+return __gpp.events;
+}
+
+var cmd = b[0];
+var clb = b.length > 1 ? b[1] : null;
+var par = b.length > 2 ? b[2] : null;
+if (cmd === "ping") {
+clb(
+{
+gppVersion: "1.1", // must be â€śVersion.Subversionâ€ť, current: â€ś1.1â€ť
+cmpStatus: "stub", // possible values: stub, loading, loaded, error
+cmpDisplayStatus: "hidden", // possible values: hidden, visible, disabled
+signalStatus: "not ready", // possible values: not ready, ready
+supportedAPIs: SUPPORTED_APIS, // list of supported APIs
+cmpId: CMP_ID, // IAB assigned CMP ID, may be 0 during stub/loading
+sectionList: [],
+applicableSections: [-1],
+gppString: "",
+parsedSections: {},
+},
+true
+);
+} else if (cmd === "addEventListener") {
+if (!("lastId" in __gpp)) {
+__gpp.lastId = 0;
+}
+__gpp.lastId++;
+var lnr = __gpp.lastId;
+__gpp.events.push({
+id: lnr,
+callback: clb,
+parameter: par,
+});
+clb(
+{
+eventName: "listenerRegistered",
+listenerId: lnr, // Registered ID of the listener
+data: true, // positive signal
+pingData: {
+  gppVersion: "1.1", // must be â€śVersion.Subversionâ€ť, current: â€ś1.1â€ť
+  cmpStatus: "stub", // possible values: stub, loading, loaded, error
+  cmpDisplayStatus: "hidden", // possible values: hidden, visible, disabled
+  signalStatus: "not ready", // possible values: not ready, ready
+  supportedAPIs: SUPPORTED_APIS, // list of supported APIs
+  cmpId: CMP_ID, // list of supported APIs
+  sectionList: [],
+  applicableSections: [-1],
+  gppString: "",
+  parsedSections: {},
+},
+},
+true
+);
+} else if (cmd === "removeEventListener") {
+var success = false;
+for (var i = 0; i < __gpp.events.length; i++) {
+if (__gpp.events[i].id == par) {
+__gpp.events.splice(i, 1);
+success = true;
+break;
+}
+}
+clb(
+{
+eventName: "listenerRemoved",
+listenerId: par, // Registered ID of the listener
+data: success, // status info
+pingData: {
+  gppVersion: "1.1", // must be â€śVersion.Subversionâ€ť, current: â€ś1.1â€ť
+  cmpStatus: "stub", // possible values: stub, loading, loaded, error
+  cmpDisplayStatus: "hidden", // possible values: hidden, visible, disabled
+  signalStatus: "not ready", // possible values: not ready, ready
+  supportedAPIs: SUPPORTED_APIS, // list of supported APIs
+  cmpId: CMP_ID, // CMP ID
+  sectionList: [],
+  applicableSections: [-1],
+  gppString: "",
+  parsedSections: {},
+},
+},
+true
+);
+} else if (cmd === "hasSection") {
+clb(false, true);
+} else if (cmd === "getSection" || cmd === "getField") {
+clb(null, true);
+}
+//queue all other commands
+else {
+__gpp.queue.push([].slice.apply(b));
+}
+};
+var ALLOWED_GPP_POSTMESSAGE_COMMANDS = {
+ping: true,
+addEventListener: true,
+removeEventListener: true,
+hasSection: true,
+getSection: true,
+getField: true
+};
+
+window.__gpp_msghandler = function (event) {
+var msgIsString = typeof event.data === "string";
+try {
+var json = msgIsString ? JSON.parse(event.data) : event.data;
+} catch (e) {
+var json = null;
+}
+if (typeof json !== "object" || json === null || !("__gppCall" in json)) return;
+var i = json.__gppCall;
+if (!i || !ALLOWED_GPP_POSTMESSAGE_COMMANDS[i.command]) return;
+if (window.opener && event.source === window.opener) return;
+
+window.__gpp(
+i.command,
+function (retValue, success) {
+var returnMsg = {
+  __gppReturn: {
+    returnValue: retValue,
+    success: success,
+    callId: i.callId,
+  },
+};
+if (event && event.source && event.source.postMessage) {
+  event.source.postMessage(msgIsString ? JSON.stringify(returnMsg) : returnMsg, "*");
+}
+},
+"parameter" in i ? i.parameter : null,
+"version" in i ? i.version : "1.1"
+);
+};
+if (!("__gpp" in window) || typeof window.__gpp !== "function") {
+window.__gpp = window.__gpp_stub;
+window.addEventListener("message", window.__gpp_msghandler, false);
+window.__gpp_addFrame("__gppLocator");
+}
+};
+
+makeGppStub();
+
+var uspStubFunction = function() {
+var arg = arguments;
+if (typeof window.__uspapi !== uspStubFunction) {
+setTimeout(function() {
+if (typeof window.__uspapi !== 'undefined') {
+window.__uspapi.apply(window.__uspapi, arg);
+}
+}, 500);
+}
+};
+
+var checkIfUspIsReady = function() {
+uspTries++;
+if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
+console.warn('USP is not accessible');
+} else {
+clearInterval(uspInterval);
+}
+};
+
+if (typeof window.__uspapi === 'undefined') {
+window.__uspapi = uspStubFunction;
+var uspInterval = setInterval(checkIfUspIsReady, 6000);
+}
+})();
+</script>
+<!-- End InMobi Choice. Consent Manager Tag v3.0 (for TCF 2.3) -->
+
+	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KZDJLQW');</script>
+<!-- End Google Tag Manager -->
+
+		
+	<script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-messaging.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.4.0/firebase-analytics.js"></script>
+<script>
+    const URL_PUSH = 'https://p.portfolio.hu';
+</script>
+
+<script>
+const MESSAGING_CONFIG = {
+    firebase_config: {
+        apiKey: "AIzaSyC2GT5ArZanDsH7sCxAiVCUxrejw-oRctE",
+        authDomain: "konferencia-175711.firebaseapp.com",
+        databaseURL: "https://konferencia-175711.firebaseio.com",
+        projectId: "konferencia-175711",
+        storageBucket: "konferencia-175711.appspot.com",
+        messagingSenderId: "99995443172",
+        appId: "1:99995443172:web:88fb9de054dbf2425631f1",
+        measurementId: "G-R801SZ8TH3"
+    },
+    vapidKey: 'BGpCIR9a3uo__XzWbMSVw6E5tiTaFzWdJBgE7cHdZkwg-iuOlPfbwYPWrp5wyLNmUvRiPAKtmFub9tRQmBu07gg',
+    //pushURL : 'https://p.portfolio.hu',
+    tokenKey: 'b7091c569b4b36da6cc74a27de71916a',
+    popup   : {
+        cookie : 'cnf6171234e2b72f9.35109354',
+        icon   : 'https://assets.portfolio.hu/images/favicon/apple-icon-60x60.png',
+        body   : "New conferences, the latest news and discounts in one place. Allow notifications to stay up to date!",
+        allow  : "Allow",
+        dismiss: "Next time"
+    },
+    project : 'Konfi',
+    topic   : 'konferencia-egyeb'
+};
+</script>
+
+
+	<title>Portfolio - Conference</title>
+<meta name="description" content="Gazdasági, pénzügyi, ingatlan és agrár konferenciák Magyarország vezető gazdasági portáljának szervezésében | Portfolio.hu Rendezvények">
+	<meta property="og:title" content="Portfolio - Conference">
+<meta property="og:description" content="Gazdasági, pénzügyi, ingatlan és agrár konferenciák Magyarország vezető gazdasági portáljának szervezésében | Portfolio.hu Rendezvények">
+<meta property="og:url" content="https://www.portfolio.hu/en/events">
+<meta property="og:type" content="event">
+
+	<meta name="twitter:site" content="@portfolio_hu">
+<meta name="twitter:title" content="Portfolio - Conference">
+
+	
+			<script type="application/ld+json">
+			{
+				"@context": "http://schema.org",
+				"@type": "WebPage",
+				"name": "Portfolio - Conference",
+				"description": "Economic, financial, real estate and agrarian conferences organized by Hungarys leading economic portal | Portfolio.hu Events",
+				"url": "https://portfolio.hu/en/events",
+				"publisher": {
+					"@type": "Organization",
+					"name": "NET Média Zrt.",
+					"logo": {
+						"@type": "ImageObject",
+						"url": "https://assets.portfolio.hu/images/portfolio_black.svg",
+						"width": 700,
+						"height": 177
+					}
+				},
+				"sameAs": [
+					"https://www.facebook.com/portfolio.hu/",
+					"https://www.youtube.com/user/portfoliohuvideo"
+				]
+			}
+		</script>
+				<script type="text/javascript" src="//indexhu.adocean.pl/files/js/ado.js"></script>
+<script type="text/javascript">
+/* (c)AdOcean 2003-2021 */
+	if(typeof ado!=="object"){ado={};ado.config=ado.preview=ado.placement=ado.master=ado.slave=function(){};}
+	ado.config({mode: "new", xml: false, consent: true, characterEncoding: true, attachReferrer: true, fpc: "auto" , defaultServer:"indexhu.adocean.pl" ,cookieDomain:"SLD"});
+	ado.preview({enabled: true});
+</script>
+<script type="text/javascript">
+/* (c)AdOcean 2003-2025, MASTER: portfolio.desktop.konferencia */
+ado.master({id: 'SSnwq.FE1xNClWyXb90Vfg5N7tyxGptopjioHaeU2Ev.v7', server: 'indexhu.adocean.pl' });
+</script>	
+</head>
+<body>
+	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KZDJLQW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+	<a class="visually-hidden-focusable position-absolute top-0 start-0 p-2 m-2 bg-white border z-3" href="#main-content">Ugrás a tartalomhoz</a>
+
+	
+	<!-- Header -->
+	<div class="page-overlay">
+	<div
+		class="mainmenu"
+		id="site-sidemenu"
+		role="dialog"
+		aria-modal="true"
+		aria-label="Menu"
+	>
+		<div class="mainmenu-wrapper">
+			<button
+				type="button"
+				class="menu-close-icon menu-handler"
+				id="close-menu-icon"
+				aria-label="Bezárás"
+			>
+				<span class="pxl-19 icon-close" aria-hidden="true"></span>
+			</button>
+			<div class="lang-selector pxl-12 d-flex align-items-center column-gap-2">
+				<li class="d-inline d-md-none poppins text-uppercase ">
+                <a rel="alternate" hreflang="hu" href="https://www.portfolio.hu/hu/rendezvenyek">
+            magyar
+        </a>
+    </li>
+            <li class="d-inline d-md-none weight-700">|</li>
+        <li class="d-inline d-md-none poppins text-uppercase weight-700">
+                <a rel="alternate" hreflang="en" href="https://www.portfolio.hu/en/events">
+            English
+        </a>
+    </li>
+    			</div>
+			<div class="menu-links pt-5 mt-2">
+				<template>
+					<ul><li class="menu-conf-display mt-3">
+					<h2 class="poppins pxl-22 weight-700 text-uppercase mb-3 lheight-14"></h2><span></span>
+					</li></ul>
+				</template>
+				<ul class="poppins pxl-16">
+					<li><a href="https://www.portfolio.hu/en/events">Portfolio Events</a></li>
+					<li><a href="https://www.portfolio.hu/en/events/all">All events</a></li>
+					<li><a href="https://www.portfolio.hu/en/events/speakers">Speakers</a></li>
+					<li><a href="https://www.portfolio.hu/en/events/gallery">Gallery</a></li>
+					<li><a href="https://www.portfolio.hu/en/events/video">Videos</a></li>
+					<li><a href="https://www.portfolio.hu/en/events/articles">News</a></li>
+					<li><a href="https://www.portfolio.hu/en/events/contact">Contact</a></li>
+					<li><a href="https://www.portfolio.hu/en/events/eventoffer">Newsletter subscription</a></li>
+				</ul>
+				<div class="mt-4 pt-2">
+	<form action="https://www.portfolio.hu/en/events/search" class="menu-search" id="menu-search" method="POST" autocomplete="off" accept-charset="utf-8">
+		<input type="hidden" name="_token" value="ffuzsSHHHAhvdPqmhfaII2RkNf99emtcwvmP2Nwz" autocomplete="off">		<input type="search" name="q" class="" id="menu-search-input" value="" required maxlength="255" autocomplete="off" placeholder="Search">
+	</form>
+</div>
+				
+			</div>
+
+			<div class="mode-switcher pxl-13" role="group" aria-label="Theme">
+	<button type="button" class="pointer" id="autoSwitch" aria-pressed="true">
+		<span class="d-flex flex-column align-items-center row-gap-2">
+			<span aria-hidden="true"><i class="pxl-18 icon-automatic"></i></span>
+			<span>Automatic</span>
+		</span>
+	</button>
+	<button type="button" class="pointer" id="lightSwitch" aria-pressed="false">
+		<span class="d-flex flex-column align-items-center row-gap-2">
+			<span aria-hidden="true"><i class="pxl-18 icon-light_mode"></i></span>
+			<span>Light theme</span>
+		</span>
+	</button>
+	<button type="button" class="pointer" id="darkSwitch" aria-pressed="false">
+		<span class="d-flex flex-column align-items-center row-gap-2">
+			<span aria-hidden="true"><i class="pxl-18 icon-dark_mode"></i></span>
+			<span>Dark theme</span>
+		</span>
+	</button>
+</div>
+		</div>
+	</div>
+</div>
+	<header class="sticky">
+		<div class="text-start">
+			<button
+				type="button"
+				class="menu-icon menu-handler"
+				id="menu-icon"
+				aria-label="Menu"
+				aria-expanded="false"
+				aria-controls="site-sidemenu"
+			>
+				<span aria-hidden="true"><svg class="site-icons" data-icon="hambi" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 21"><path fill="currentColor" d="M23.5 3h-22a1.5 1.5 0 0 1 0-3h22a1.5 1.5 0 0 1 0 3M23.5 12h-22a1.5 1.5 0 0 1 0-3h22a1.5 1.5 0 0 1 0 3M23.5 21h-22a1.5 1.5 0 0 1 0-3h22a1.5 1.5 0 0 1 0 3"/></svg></span>
+			</button>
+		</div>
+		<div>
+			<a href="https://www.portfolio.hu/en/events" aria-label="Portfolio">
+								<span class="mobil-logo d-block d-md-none img-fluid" aria-hidden="true">
+					<svg xmlns="http://www.w3.org/2000/svg" id="mobile-logo-en" viewBox="0 0 251 34" focusable="false"><path d="M33.5 16.8C33.5 7.5 26 0 16.8 0S0 7.5 0 16.8C0 26 7.5 33.5 16.8 33.5S33.5 26 33.5 16.8" fill="#fd5401"/><path d="M27.7 16.8c0 6.1-4.9 11-11 11s-11-4.9-11-11 4.9-11 11-11 11 4.9 11 11" fill="#f9c349"/><path class="pathstroke" fill="none" stroke="currentColor" stroke-miterlimit="10" d="M54 0v33.5"/><g><path class="pathfill" fill="currentColor" d="M87.8 19.2l1.8.4c-1 3.4-4 5.5-7.7 5.5-4.7 0-8.4-3.7-8.4-8.4s3.7-8.4 8.4-8.4c3.7 0 6.7 2.1 7.7 5.4l-1.8.5c-.8-2.6-3.1-4.1-5.9-4.1-3.6 0-6.5 2.9-6.5 6.7 0 3.7 2.9 6.6 6.5 6.6 2.8 0 5-1.5 5.9-4.2zM108.5 16.7c0 4.7-3.7 8.4-8.4 8.4s-8.4-3.7-8.4-8.4 3.7-8.4 8.4-8.4c4.8 0 8.4 3.7 8.4 8.4zm-1.9 0c0-3.7-2.8-6.7-6.5-6.7-3.6 0-6.5 2.9-6.5 6.7 0 3.8 2.8 6.6 6.5 6.6 3.7.1 6.5-2.8 6.5-6.6zM125.9 24.9h-1.7L113.6 12v12.9h-1.9V8.6h1.7L124 21.7V8.6h1.9v16.3zM131.9 16h8.9v1.7h-8.9v7.1H130V8.6h11.6v1.7h-9.7V16zM155.8 24.9h-11.9V8.6h11.8v1.7h-9.9v5.5h9.2v1.7h-9.2v5.6h9.9v1.8zM169.9 24.9l-6.2-7h-3v7h-1.9V8.6h7.5c3.2 0 5.3 1.8 5.3 4.6s-2.1 4.7-5.3 4.7h-.3l6.3 7h-2.4zm-3.6-8.7c2 0 3.4-1.2 3.4-2.9s-1.4-2.9-3.4-2.9h-5.6v5.8h5.6zM186.7 24.9h-11.9V8.6h11.8v1.7h-9.9v5.5h9.2v1.7h-9.2v5.6h9.9v1.8zM203.9 24.9h-1.7L191.6 12v12.9h-1.9V8.6h1.7L202 21.7V8.6h1.9v16.3zM221.4 19.2l1.8.4c-1 3.4-4 5.5-7.7 5.5-4.7 0-8.4-3.7-8.4-8.4s3.7-8.4 8.4-8.4c3.7 0 6.7 2.1 7.7 5.4l-1.8.5c-.8-2.6-3.1-4.1-5.9-4.1-3.6 0-6.5 2.9-6.5 6.7 0 3.7 2.9 6.6 6.5 6.6 2.8 0 5.1-1.5 5.9-4.2zM238.2 24.9h-11.9V8.6h11.8v1.7h-9.9v5.5h9.2v1.7h-9.2v5.6h9.9v1.8z"/></g></svg>
+				</span>
+				<span class="desktop-logo d-none d-md-block" aria-hidden="true">
+					<svg xmlns="http://www.w3.org/2000/svg" id="desktop-logo-en" width="345" height="34" viewBox="0 0 304 30" focusable="false"><path class="pathfill" fill="currentColor" d="M6.85 15.261c2.261 0 3.566-1.131 3.566-2.87v-.087c0-2-1.391-2.87-3.653-2.87H4.589v5.914l2.261-.087ZM.066 5.346h7.131c4.87 0 7.827 2.696 7.827 6.871v.087c0 4.783-3.74 7.044-8.349 7.044H4.588v5.131H.066V5.346Z"/><path fill="#FD5401" d="M46.246 14.913c0-8.088-6.522-14.611-14.61-14.611S17.112 6.825 17.112 14.913s6.523 14.611 14.611 14.611 14.524-6.61 14.524-14.611"/><path fill="#f9c349" d="M41.202 14.913c0 5.305-4.261 9.567-9.567 9.567s-9.567-4.261-9.567-9.567 4.261-9.567 9.567-9.567a9.54 9.54 0 0 1 9.567 9.567"/><path class="pathfill" fill="currentColor" d="M96.862 3.694h4.435v20.699h-4.435zM104.167 9.782h4.435V24.48h-4.435z"/><g class="pathfill" fill="currentColor"><path d="M86.774 20.74a3.805 3.805 0 0 1-3.827-3.827 3.805 3.805 0 0 1 3.827-3.827 3.805 3.805 0 0 1 3.827 3.827c.087 2.087-1.652 3.827-3.827 3.827m0-11.828c-4.435 0-8.001 3.566-8.001 8.001s3.566 8.001 8.001 8.001 8.001-3.566 8.001-8.001a7.98 7.98 0 0 0-8.001-8.001M118.691 20.74a3.805 3.805 0 0 1-3.827-3.827c0-2.174 1.739-3.827 3.827-3.827s3.827 1.739 3.827 3.827c0 2.087-1.739 3.827-3.827 3.827m0-11.828c-4.435 0-8.001 3.566-8.001 8.001s3.566 8.001 8.001 8.001 8.001-3.566 8.001-8.001a7.98 7.98 0 0 0-8.001-8.001M103.819 5.868c0-1.391 1.131-2.522 2.522-2.522s2.522 1.131 2.522 2.522-1.131 2.522-2.522 2.522c-1.392.087-2.522-1.044-2.522-2.522M78.077 9.347h-3.653v-.522c0-1.218.609-1.739 1.652-1.739.783 0 1.391.174 2 .348V3.781c-.783-.261-1.739-.435-3.131-.435-1.565 0-2.783.435-3.653 1.218-.783.87-1.218 2.087-1.218 3.827v16.002h4.435V13.261h3.566V9.347ZM67.641 9.347h-3.218v-2.87l-4.435 1.218v12.262c0 3.653 1.826 4.696 4.609 4.696 1.305 0 2.348-.261 3.131-.696v-3.653a4.043 4.043 0 0 1-1.826.435c-.957 0-1.478-.522-1.478-1.565V13.26h3.305V9.346h-.087ZM57.987 9.347c-2.435 0-3.914.348-4.696 2.348V9.347h-4.522v15.046h4.435V16.74c0-2.261.957-3.305 3.392-3.305h1.305l.087-4.088Z"/></g><path class="pathstroke" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width=".876" d="M144.26.215v29.57"/><g class="pathfill" fill="currentColor"><path d="m173.655 19.348 1.565.348c-.87 2.957-3.479 4.783-6.697 4.783-4.088 0-7.305-3.218-7.305-7.305s3.218-7.305 7.305-7.305c3.218 0 5.827 1.826 6.697 4.696l-1.565.435c-.696-2.261-2.696-3.566-5.131-3.566-3.131 0-5.653 2.522-5.653 5.74s2.522 5.74 5.653 5.74c2.435 0 4.348-1.305 5.131-3.566ZM191.658 17.174c0 4.088-3.218 7.305-7.305 7.305s-7.305-3.218-7.305-7.305 3.218-7.305 7.305-7.305 7.305 3.218 7.305 7.305Zm-1.653 0c0-3.218-2.435-5.74-5.566-5.74s-5.653 2.522-5.653 5.74 2.435 5.74 5.653 5.74c3.044 0 5.566-2.522 5.566-5.74ZM206.703 24.219h-1.392L196.092 13v11.219h-1.652V10.13h1.392l9.219 11.306V10.13h1.652v14.089ZM211.834 16.565h7.653v1.478h-7.653v6.175h-1.652V10.129h10.088v1.478h-8.436v4.957ZM232.62 24.219h-10.262V10.13h10.262v1.478h-8.61v4.783h8.001v1.478h-8.001v4.783h8.61v1.565ZM244.795 24.219l-5.392-6.001h-2.609v6.001h-1.652V10.13h6.523c2.783 0 4.609 1.565 4.609 4.001s-1.826 4.001-4.609 4.001h-.261l5.479 6.001h-2.087v.087Zm-3.043-7.567c1.739 0 2.957-1.044 2.957-2.522s-1.218-2.522-2.957-2.522h-4.87v5.044h4.87ZM259.319 24.219h-10.262V10.13h10.262v1.478h-8.61v4.783h8.001v1.478h-8.001v4.783h8.61v1.565ZM274.278 24.219h-1.392L263.58 13v11.219h-1.652V10.13h1.392l9.219 11.306V10.13h1.652v14.089h.087ZM289.41 19.348l1.565.348c-.87 2.957-3.479 4.783-6.697 4.783-4.088 0-7.305-3.218-7.305-7.305s3.218-7.305 7.305-7.305c3.218 0 5.827 1.826 6.697 4.696L289.41 15c-.696-2.261-2.696-3.566-5.131-3.566-3.131 0-5.653 2.522-5.653 5.74s2.522 5.74 5.653 5.74c2.435 0 4.435-1.305 5.131-3.566ZM303.934 24.219h-10.262V10.13h10.262v1.478h-8.61v4.783h8.001v1.478h-8.001v4.783h8.61v1.565Z"/></g></svg>
+				</span>
+							</a>
+		</div>
+		<div class="pxl-12">
+			<ul class="list-unstyled d-flex align-items-center justify-content-end column-gap-2 mb-0">
+				<li class="d-none d-md-inline poppins text-uppercase ">
+                <a rel="alternate" hreflang="hu" href="https://www.portfolio.hu/hu/rendezvenyek">
+            magyar
+        </a>
+    </li>
+            <li class="d-none d-md-inline weight-700">|</li>
+        <li class="d-none d-md-inline poppins text-uppercase weight-700">
+                <a rel="alternate" hreflang="en" href="https://www.portfolio.hu/en/events">
+            English
+        </a>
+    </li>
+    				<li class="ms-3">
+					<div class="dropdown" id="profile-dropdown">
+						<button
+							type="button"
+							data-bs-toggle="dropdown"
+							aria-haspopup="true"
+							aria-expanded="false"
+							data-bs-auto-close="outside"
+							data-bs-offset="29,35"
+							id="login-figure"
+							class="login-figure"
+							aria-label="Log In"
+						>
+															<i class="pxl-23 icon-profil" aria-hidden="true"></i>
+													</button>
+													<div class="dropdown-menu dropdown-menu-end ajax-form" id="login-dropdown" data-popper-placement="bottom-end">
+								<h3 class="poppins pxl-16 text-uppercase weight-800 pb-2">Log In</h3>
+								<form id="header-login-form" action="https://www.portfolio.hu/rendezvenyek/login-proxy" method="POST" role="form" class="form-horizontal">
+									<input type="hidden" name="_token" value="ffuzsSHHHAhvdPqmhfaII2RkNf99emtcwvmP2Nwz" autocomplete="off">									<div id="login-header-error" class="roboto pxl-14 text-orange mb-2" style="display:none"></div>
+
+									<div class="d-flex flex-column pb-0 mb-3 gap-2">
+    
+                        <label  for="username"  class="input-label" style=font-weight:bold>E-mail address <span style="font-weight:normal"></span> </label>
+             
+        <input type="email" id="username" name="username" class="form-control" value="" maxlength="255" placeholder="">
+    </div>
+
+									<div class="d-flex flex-column mb-3 pb-1  gap-2">
+    
+                        <label  for="eye-icon"  class="input-label" style=font-weight:700>Password <span style="font-weight:normal"></span> </label>
+             
+        <div class="position-relative" data-name="login-popup">
+											<input type="password" name="password" class="form-control" value="" maxlength="255" placeholder="" autocomplete="true">
+											<div data-id="eye-icon" data-type="1"><svg class="site-icons" data-icon="eye" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M.75 11S4.48 3.55 11 3.55 21.25 11 21.25 11 17.52 18.45 11 18.45.75 11 .75 11"/><circle cx="11" cy="11" r="2.8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/></svg></div>
+											<div data-id="eye-icon" data-type="2" hidden><svg class="site-icons" data-icon="eye-cross" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16.54 16.54A9.4 9.4 0 0 1 11 18.46C4.48 18.45.75 11 .75 11c1.16-2.16 2.77-4.05 4.71-5.54m3.58-1.69c.64-.15 1.3-.23 1.96-.22 6.52 0 10.25 7.45 10.25 7.45q-.855 1.59-2.01 2.97m-6.26-.99c-1.05 1.13-2.82 1.19-3.95.14s-1.19-2.82-.14-3.95c.04-.05.09-.09.14-.14M.75.75l20.5 20.5"/></svg></div>
+										</div>
+    </div>
+
+									<div class="d-flex justify-content-between align-items-center mb-3">
+										<div class="d-flex justify-content-start align-items-center">
+											<label class="checkbox-wrapper">
+												<input type="checkbox" name="remember" class="checkbox" value="1">
+												<span class="ms-2 roboto pxl-14">Remember Me</span>
+											</label>
+										</div>
+										<div>
+											<a class="text-orange roboto pxl-14" href="https://www.portfolio.hu/en/events/password/reset?noconf=true">Forgot Password</a>
+										</div>
+									</div>
+									<button type="submit"  class="site-btn site-btn-orange wide">
+		<div class="d-flex justify-content-start aling-items-between">
+			<span class="poppins">Log In</span>
+			<span><svg class="site-icons" data-icon="btn-arrow" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13.468 13.468"><g fill="currentColor" stroke="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6.73 12.33a.5.5 0 0 0 .354-.147l5.1-5.1a.5.5 0 0 0 0-.706l-5.1-5.1a.5.5 0 0 0-.707 0 .5.5 0 0 0 0 .707l4.746 4.746-4.746 4.746a.5.5 0 0 0 0 .707.5.5 0 0 0 .353.147"/><path d="M11.785 7.234a.5.5 0 0 0 .5-.5.5.5 0 0 0-.5-.5H1.683a.5.5 0 0 0-.5.5.5.5 0 0 0 .5.5z"/></g></svg></span>
+		</div>
+	</button>
+									<hr>
+									<div class="text-center pxl-14">No user account?</div>
+									<div class="text-center pxl-14"><a class="text-orange" href="https://www.portfolio.hu/en/events/register?noconf=true">Create Account</a></div>
+								</form>
+							</div>
+							<script>
+								document.addEventListener('DOMContentLoaded', function() {
+									window.handleLoginDropdown();
+									window.handleLoginAjax();
+								});
+							</script>
+											</div>
+				</li>
+			</ul>
+		</div>
+</header>
+<script>document.addEventListener('DOMContentLoaded', function() { showHidePasswd('[data-name="login-popup"]'); });</script>
+<!-- End Header -->
+
+	
+	<main id="main-content">
+		
+		
+<div class="container mt-4">
+	<div class="row row-gap-cnf">
+				<div class="col-lg-6">
+			<div class="row text-nowrap row-gap-cnf">
+									<div class="col-6 text-center">
+						<div class="py-4 px-2 px-sm-4 numbers-block">
+							<div class="numbers poppins weight-700 text-orange lheight-1" data-value="81">&nbsp;</div>
+							<div class="text-lowercase">conferences per year</div>
+						</div>
+					</div>
+									<div class="col-6 text-center">
+						<div class="py-4 px-2 px-sm-4 numbers-block">
+							<div class="numbers poppins weight-700 text-orange lheight-1" data-value="7052">&nbsp;</div>
+							<div class="text-lowercase">Speakers</div>
+						</div>
+					</div>
+							</div>
+		</div>
+				<div class="col-lg-6">
+			<div class="row text-nowrap row-gap-cnf">
+									<div class="col-6 text-center">
+						<div class="py-4 px-2 px-sm-4 numbers-block">
+							<div class="numbers poppins weight-700 text-orange lheight-1" data-value="32139">&nbsp;</div>
+							<div class="text-lowercase">Company</div>
+						</div>
+					</div>
+									<div class="col-6 text-center">
+						<div class="py-4 px-2 px-sm-4 numbers-block">
+							<div class="numbers poppins weight-700 text-orange lheight-1" data-value="113470">&nbsp;</div>
+							<div class="text-lowercase">participants in total</div>
+						</div>
+					</div>
+							</div>
+		</div>
+			</div>
+</div>
+
+<!-- desktop_zone: adoceanindexhuoakkqlorhg -->
+	<div id="y-adoceanindexhuoakkqlorhg">
+		<div id="adoceanindexhuoakkqlorhg"></div>
+		<script type="text/javascript">
+		/* (c)AdOcean 2003-2025, portfolio.desktop.konferencia.super_leaderboard_1 */
+			ado.slave('adoceanindexhuoakkqlorhg', {myMaster: 'SSnwq.FE1xNClWyXb90Vfg5N7tyxGptopjioHaeU2Ev.v7',
+			onServerEmission: function(){document.getElementById("y-adoceanindexhuoakkqlorhg").classList.add("zonewrapper");},
+			onServerEmissionEmpty: function(){}});
+		</script>
+	</div>
+<div class="container mt-cnf">
+	<div class="row">
+		<div class="col-12">
+			<div class="d-flex flex-wrap gap-cnf">
+			
+									<div class="card-wrapper size1-1-fixed">
+						<div class="cnf-block">
+	<div class="cnf-block-image">
+								<div class="cnf-block-badges">
+								<span class="cnf-badge cnf-badge-white">Featured event</span>
+							</div>
+							<a href="https://www.portfolio.hu/en/events/conference-it/ai-digital-transformation-2026/2032" alt="AI &amp; Digital Transformation 2026">
+			<img onerror="this.src='https://eventscdn.portfolio.hu/assets/images/missing.gif';" src="https://eventscdn.portfolio.hu/portfolio/conferences/p_ai_digital_transformation_2026_web_620x620-hu-2032-rz5r.jpg" alt="AI &amp; Digital Transformation 2026" loading="lazy">
+			<img onerror="this.src='https://eventscdn.portfolio.hu/assets/images/missing.gif';" src="https://eventscdn.portfolio.hu/portfolio/conferences/p_ai_digital_transformation_2026_web_768x259-hu-2032-rnqq.jpg" alt="AI &amp; Digital Transformation 2026" loading="lazy">
+		</a>
+	</div>
+	<div class="cnf-block-content" data-href="https://www.portfolio.hu/en/events/conference-it/ai-digital-transformation-2026/2032">
+		<div>
+								<div class="cnf-block-badges-wide mb-4">
+								<span class="cnf-badge cnf-badge-white">Featured event</span>
+							</div>
+								<h2>
+				<a href="https://www.portfolio.hu/en/events/conference-it/ai-digital-transformation-2026/2032">
+					<span class="poppins weight-800 text-uppercase">AI &amp; Digital Transformation 2026</span>
+					<div class="cnf-block-date mt-1">26th November 2026
+						<span class="cnf-block-location">Marriott Hotel</span>
+						<span class="cnf-block-city">Budapest</span>
+					</div>
+				</a>
+			</h2>
+			<p class="cnf-block-lead lines-3">Our lives—and with them, the way companies operate—are becoming digitized at an astonishing pace; paper-based processes are disappearing, and we only visit branch offices for in-person transactions when dealing with the most complex matters; and we communicate and handle matters via digital channels 24/7. But now, the &nbsp;AI revolution and the agentic AI trend are turning the digital world, internal operations, and customer-facing front-ends upside down. AI agents capable of acting autonomously, as well as AI tools and enterprise solutions that support specific business, compliance, and administrative processes, offer companies previously unimaginable speed and extraordinary potential for efficiency gains. What do we do with the hours of work we’ve gained and the labor we’ve saved? Is artificial intelligence disrupting core business as well? What is vibe coding good for? At our event for both large corporations and SMEs, we’ll be seeking and providing answers to these questions and more!
+
+&nbsp;</p>
+		</div>
+
+		<div class="button-wrapper">
+			<a href="https://www.portfolio.hu/en/events/conference-it/ai-digital-transformation-2026/2032" class="site-btn " >
+			<span class="poppins">Details and tickets</span>
+			<span><svg class="site-icons" data-icon="btn-arrow" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13.468 13.468"><g fill="currentColor" stroke="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6.73 12.33a.5.5 0 0 0 .354-.147l5.1-5.1a.5.5 0 0 0 0-.706l-5.1-5.1a.5.5 0 0 0-.707 0 .5.5 0 0 0 0 .707l4.746 4.746-4.746 4.746a.5.5 0 0 0 0 .707.5.5 0 0 0 .353.147"/><path d="M11.785 7.234a.5.5 0 0 0 .5-.5.5.5 0 0 0-.5-.5H1.683a.5.5 0 0 0-.5.5.5.5 0 0 0 .5.5z"/></g></svg></span>
+		</a>
+			</div>
+	</div>
+</div>
+					</div>
+																		<div class="card-wrapper size2-3-fixed">
+						<div class="cnf-block">
+	<div class="cnf-block-image">
+									<a href="https://www.portfolio.hu/en/events/conference-agricultural/agricultural-conference-2026/1990" alt="Agricultural Conference 2026">
+			<img onerror="this.src='https://eventscdn.portfolio.hu/assets/images/missing.gif';" src="https://eventscdn.portfolio.hu/portfolio/conferences/asz_26_web_620x620-hu-1990-rlmr.jpg" alt="Agricultural Conference 2026" loading="lazy">
+			<img onerror="this.src='https://eventscdn.portfolio.hu/assets/images/missing.gif';" src="https://eventscdn.portfolio.hu/portfolio/conferences/asz26_web_768x259-hu-1990-rfam.jpg" alt="Agricultural Conference 2026" loading="lazy">
+		</a>
+	</div>
+	<div class="cnf-block-content" data-href="https://www.portfolio.hu/en/events/conference-agricultural/agricultural-conference-2026/1990">
+		<div>
+										<h2>
+				<a href="https://www.portfolio.hu/en/events/conference-agricultural/agricultural-conference-2026/1990">
+					<span class="poppins weight-800 text-uppercase">Agricultural Conference 2026</span>
+					<div class="cnf-block-date mt-1">2nd–3rd December 2026
+						<span class="cnf-block-location">Siófok, Hotel Azúr Wellness ****</span>
+						<span class="cnf-block-city">Siófok</span>
+					</div>
+				</a>
+			</h2>
+			<p class="cnf-block-lead lines-3">The Portfolio Group's Agricultural Sector Conference is already the largest agribusiness event and summit in Hungary in terms of content. The aim of the conference is to summarize and analyze the year's outstanding domestic and international agribusiness events and to provide a forecast for the coming years to help agribusiness players make successful business and investment decisions. The conference offers a three-day professional programme: the event will start with a festive professional evening, followed by two further days of highly complex and exhaustively detailed professional content.
+
+The conference will feature top leaders from the national government, banking, corporate and advocacy sectors who will provide first-hand, relevant information that will be useful for all players in the agricultural economy - producers, food manufacturers and traders. It will also provide a wide range of showcasing and market-building opportunities for businesses serving the agricultural sector - input manufacturers, integrators, machinery distributors, finance and other service providers.
+
+In addition to a rich programme of events, the conference will provide an opportunity for professional networking, networking and business meetings, with high-quality technical presentations and round-table discussions, and an entertainment programme to keep participants energised and relaxed.
+
+The Portfolio Group will present the annual awards in eleven categories at the Agribusiness Conference, which recognize the most outstanding professional achievements and accomplishments in the agribusiness sector. The prizes are awarded by a jury of leading figures in the agricultural sector on the basis of applications submitted by the operators in the sector.</p>
+		</div>
+
+		<div class="button-wrapper">
+			<a href="https://www.portfolio.hu/en/events/conference-agricultural/agricultural-conference-2026/1990" class="site-btn " >
+			<span class="poppins">Details and tickets</span>
+			<span><svg class="site-icons" data-icon="btn-arrow" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13.468 13.468"><g fill="currentColor" stroke="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6.73 12.33a.5.5 0 0 0 .354-.147l5.1-5.1a.5.5 0 0 0 0-.706l-5.1-5.1a.5.5 0 0 0-.707 0 .5.5 0 0 0 0 .707l4.746 4.746-4.746 4.746a.5.5 0 0 0 0 .707.5.5 0 0 0 .353.147"/><path d="M11.785 7.234a.5.5 0 0 0 .5-.5.5.5 0 0 0-.5-.5H1.683a.5.5 0 0 0-.5.5.5.5 0 0 0 .5.5z"/></g></svg></span>
+		</a>
+			</div>
+	</div>
+</div>
+					</div>
+														<div class="card-wrapper size1-3">
+						<div class="cnf-block">
+	<div class="cnf-block-image">
+									<a href="https://www.portfolio.hu/en/events/conference-property/property-warm-up-2027/2140" alt="Property Warm Up 2027">
+			<img onerror="this.src='https://eventscdn.portfolio.hu/assets/images/missing.gif';" src="https://eventscdn.portfolio.hu/portfolio/conferences/p_property_warm_up_27_web_620x620-hu-2140-rr4z.jpg" alt="Property Warm Up 2027" loading="lazy">
+			<img onerror="this.src='https://eventscdn.portfolio.hu/assets/images/missing.gif';" src="https://eventscdn.portfolio.hu/portfolio/conferences/p_property_warm_up_27_web_768x259-hu-2140-rc28.jpg" alt="Property Warm Up 2027" loading="lazy">
+		</a>
+	</div>
+	<div class="cnf-block-content" data-href="https://www.portfolio.hu/en/events/conference-property/property-warm-up-2027/2140">
+		<div>
+										<h2>
+				<a href="https://www.portfolio.hu/en/events/conference-property/property-warm-up-2027/2140">
+					<span class="poppins weight-800 text-uppercase">Property Warm Up 2027</span>
+					<div class="cnf-block-date mt-1">23rd February 2027
+						<span class="cnf-block-location">Crowne Plaza Budapest</span>
+						<span class="cnf-block-city">Budapest</span>
+					</div>
+				</a>
+			</h2>
+			<p class="cnf-block-lead lines-3">The Hungarian real estate market's special start-of-year professional, business and networking event, to start the year from an even broader perspective!&nbsp;We feel the soaring or pressured processes, phenomena, challenges and opportunities of the real estate market on a daily basis, but to discuss, to discuss, to exchange personal opinions and to cultivate real business opportunities and relationships is always the most useful way of common development.
+
+At the beginning of the year, however, we would like - in addition to the&nbsp;inevitable meeting, exchange of information and business/friendship networking&nbsp;- to have the opportunity to discuss, hear presentations and hear talks on wider topics that indirectly affect the world of real estate, but which do have a strong impact. Such key areas include the macro-economic and financing situation, foresight, climate change, social change, understanding future generations, global financial and energy market expectations, or the most important issues affecting the future of the world economy and society, i.e. our future, the future of our partners, tenants and employees.
+
+Let's kick off what promises to be a difficult but positive and optimistic year with a special real estate kick-off meeting!
+
+The themes that are transforming our world and our immediate environment and the event's headline sponsor is Gránit Pólus.</p>
+		</div>
+
+		<div class="button-wrapper">
+			<a href="https://www.portfolio.hu/en/events/conference-property/property-warm-up-2027/2140" class="site-btn " >
+			<span class="poppins">Details and tickets</span>
+			<span><svg class="site-icons" data-icon="btn-arrow" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13.468 13.468"><g fill="currentColor" stroke="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6.73 12.33a.5.5 0 0 0 .354-.147l5.1-5.1a.5.5 0 0 0 0-.706l-5.1-5.1a.5.5 0 0 0-.707 0 .5.5 0 0 0 0 .707l4.746 4.746-4.746 4.746a.5.5 0 0 0 0 .707.5.5 0 0 0 .353.147"/><path d="M11.785 7.234a.5.5 0 0 0 .5-.5.5.5 0 0 0-.5-.5H1.683a.5.5 0 0 0-.5.5.5.5 0 0 0 .5.5z"/></g></svg></span>
+		</a>
+			</div>
+	</div>
+</div>
+					</div>
+														<div class="card-wrapper size1-3">
+						<div class="cnf-block">
+	<div class="cnf-block-image">
+									<a href="https://www.portfolio.hu/en/events/conference-finance/insurance-2026/2188" alt="Insurance 2026">
+			<img onerror="this.src='https://eventscdn.portfolio.hu/assets/images/missing.gif';" src="https://eventscdn.portfolio.hu/portfolio/conferences/biztositas_27_web_620x620-hu-2188-rliv.jpg" alt="Insurance 2026" loading="lazy">
+			<img onerror="this.src='https://eventscdn.portfolio.hu/assets/images/missing.gif';" src="https://eventscdn.portfolio.hu/portfolio/conferences/biztositas_27_web_768x259-hu-2188-rkwv.jpg" alt="Insurance 2026" loading="lazy">
+		</a>
+	</div>
+	<div class="cnf-block-content" data-href="https://www.portfolio.hu/en/events/conference-finance/insurance-2026/2188">
+		<div>
+										<h2>
+				<a href="https://www.portfolio.hu/en/events/conference-finance/insurance-2026/2188">
+					<span class="poppins weight-800 text-uppercase">Insurance 2026</span>
+					<div class="cnf-block-date mt-1">18th March 2027
+						<span class="cnf-block-location">Hotel InterContinental Budapest</span>
+						<span class="cnf-block-city">Budapest</span>
+					</div>
+				</a>
+			</h2>
+			<p class="cnf-block-lead lines-3">In 2027, players in the Hungarian insurance market will face both new risks and new opportunities for growth. The Portfolio Insurance 2027 conference will focus on how new growth areas in the domestic health insurance market are taking shape, what directions the new government and the central bank may set for the insurance and savings markets, and what business and strategic outlooksinsurance sector leaders anticipate.
+
+The conference’s panel discussions will provide a comprehensive assessment of the challenges facing the market, current regulatory and sales issues, and the most important questions concerning life, property, and liability insurance.
+The conference will focus not only on domestic developments but also on the international outlook: it will cover the career paths of Hungarian professionals in Europe and the market challenges observed in countries to the west of Hungary. Another key topic will be the role of AI in the insurance market: what the technology promises in terms of sales, operations, and customer service, and what risks and threats it entails.
+
+True to Portfolio’s traditions, the event is an important meeting place for insurers, brokers, consultants, and technology providers, where networking plays a central role alongside professional content.
+The Portfolio Insurance 2027 conference, a major gathering of Hungarian insurers and brokers, will take place on March 18—it’s definitely worth attending!
+
+&nbsp;</p>
+		</div>
+
+		<div class="button-wrapper">
+			<a href="https://www.portfolio.hu/en/events/conference-finance/insurance-2026/2188" class="site-btn " >
+			<span class="poppins">Details and tickets</span>
+			<span><svg class="site-icons" data-icon="btn-arrow" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13.468 13.468"><g fill="currentColor" stroke="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6.73 12.33a.5.5 0 0 0 .354-.147l5.1-5.1a.5.5 0 0 0 0-.706l-5.1-5.1a.5.5 0 0 0-.707 0 .5.5 0 0 0 0 .707l4.746 4.746-4.746 4.746a.5.5 0 0 0 0 .707.5.5 0 0 0 .353.147"/><path d="M11.785 7.234a.5.5 0 0 0 .5-.5.5.5 0 0 0-.5-.5H1.683a.5.5 0 0 0-.5.5.5.5 0 0 0 .5.5z"/></g></svg></span>
+		</a>
+			</div>
+	</div>
+</div>
+					</div>
+														<div class="card-wrapper size1-3">
+						<div class="cnf-block">
+	<div class="cnf-block-image">
+									<a href="https://www.portfolio.hu/en/events/conference-property/construction-industry-2027/2172" alt="Construction Industry 2027">
+			<img onerror="this.src='https://eventscdn.portfolio.hu/assets/images/missing.gif';" src="https://eventscdn.portfolio.hu/portfolio/conferences/p_epitoipar_27_web_620x620-hu-2172-rst5.jpg" alt="Construction Industry 2027" loading="lazy">
+			<img onerror="this.src='https://eventscdn.portfolio.hu/assets/images/missing.gif';" src="https://eventscdn.portfolio.hu/portfolio/conferences/p_epitoipar_27_web_768x259-hu-2172-r5zb.jpg" alt="Construction Industry 2027" loading="lazy">
+		</a>
+	</div>
+	<div class="cnf-block-content" data-href="https://www.portfolio.hu/en/events/conference-property/construction-industry-2027/2172">
+		<div>
+										<h2>
+				<a href="https://www.portfolio.hu/en/events/conference-property/construction-industry-2027/2172">
+					<span class="poppins weight-800 text-uppercase">Construction Industry 2027</span>
+					<div class="cnf-block-date mt-1">23rd March 2027
+						<span class="cnf-block-location">Hotel InterContinental Budapest</span>
+						<span class="cnf-block-city">Budapest</span>
+					</div>
+				</a>
+			</h2>
+			<p class="cnf-block-lead lines-3">The industry’s top professionals are coming together again! Our “Portfolio Construction Industry” conference has grown into perhaps the most important business gathering in the Hungarian construction industry, which we will be hosting for the ninth time in 2027 with the participation and support of the industry’s leading figures. At the event, we’ll explore the most pressing and current financial, business, regulatory, and efficiency issues affecting the construction industry alongside the industry’s thought leaders. The “Portfolio Construction Industry 2027” conference is not only a full-day professional and thought-leader forum, but also one of the most effective business networking venues for industry players, where, in addition to a presentation on the future of the market, we also offer a full day of premium networking opportunities and a casual evening reception for participants.
+
+In addition to professional and content-based appearances in the conference program, we offer our partners the opportunity to showcase themselves to the more than 500 leading construction industry professionals attending the event—whether through an experiential and/or product-presentation-oriented space, booths, or services.
+
+Let’s continue to build the domestic construction industry together in these new times!
+
+Be there at the awards ceremony! Join us for the event following the conference, featuring a reception, networking, bars, and informal professional discussions. Let’s celebrate the domestic construction industry together!</p>
+		</div>
+
+		<div class="button-wrapper">
+			<a href="https://www.portfolio.hu/en/events/conference-property/construction-industry-2027/2172" class="site-btn " >
+			<span class="poppins">Details and tickets</span>
+			<span><svg class="site-icons" data-icon="btn-arrow" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13.468 13.468"><g fill="currentColor" stroke="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6.73 12.33a.5.5 0 0 0 .354-.147l5.1-5.1a.5.5 0 0 0 0-.706l-5.1-5.1a.5.5 0 0 0-.707 0 .5.5 0 0 0 0 .707l4.746 4.746-4.746 4.746a.5.5 0 0 0 0 .707.5.5 0 0 0 .353.147"/><path d="M11.785 7.234a.5.5 0 0 0 .5-.5.5.5 0 0 0-.5-.5H1.683a.5.5 0 0 0-.5.5.5.5 0 0 0 .5.5z"/></g></svg></span>
+		</a>
+			</div>
+	</div>
+</div>
+					</div>
+														<div class="card-wrapper size1-3">
+						<div class="cnf-block">
+	<div class="cnf-block-image">
+									<a href="https://www.portfolio.hu/en/events/conference-energy/corporate-energy-management-2027/2184" alt="Corporate Energy Management 2027">
+			<img onerror="this.src='https://eventscdn.portfolio.hu/assets/images/missing.gif';" src="https://eventscdn.portfolio.hu/portfolio/conferences/p_konfi_vallalati_energiamenedzs_2027_web_620x620-hu-2184-rbf1.jpg" alt="Corporate Energy Management 2027" loading="lazy">
+			<img onerror="this.src='https://eventscdn.portfolio.hu/assets/images/missing.gif';" src="https://eventscdn.portfolio.hu/portfolio/conferences/p_konfi_vallalati_energiamenedzs_2027_web_768x259-hu-2184-rjml.jpg" alt="Corporate Energy Management 2027" loading="lazy">
+		</a>
+	</div>
+	<div class="cnf-block-content" data-href="https://www.portfolio.hu/en/events/conference-energy/corporate-energy-management-2027/2184">
+		<div>
+										<h2>
+				<a href="https://www.portfolio.hu/en/events/conference-energy/corporate-energy-management-2027/2184">
+					<span class="poppins weight-800 text-uppercase">Corporate Energy Management 2027</span>
+					<div class="cnf-block-date mt-1">27th April 2027
+						<span class="cnf-block-location">Radisson Blu Béke Hotel</span>
+						<span class="cnf-block-city">Budapest</span>
+					</div>
+				</a>
+			</h2>
+			<p class="cnf-block-lead lines-3">The total amount of an energy bill is the result of many decisions. When do we buy, how do we consume, what do we invest in, and what do we do with the data we have? At our conference, we’ll explore how energy management can become a tool for corporate competitiveness.</p>
+		</div>
+
+		<div class="button-wrapper">
+			<a href="https://www.portfolio.hu/en/events/conference-energy/corporate-energy-management-2027/2184" class="site-btn " >
+			<span class="poppins">Details and tickets</span>
+			<span><svg class="site-icons" data-icon="btn-arrow" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13.468 13.468"><g fill="currentColor" stroke="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6.73 12.33a.5.5 0 0 0 .354-.147l5.1-5.1a.5.5 0 0 0 0-.706l-5.1-5.1a.5.5 0 0 0-.707 0 .5.5 0 0 0 0 .707l4.746 4.746-4.746 4.746a.5.5 0 0 0 0 .707.5.5 0 0 0 .353.147"/><path d="M11.785 7.234a.5.5 0 0 0 .5-.5.5.5 0 0 0-.5-.5H1.683a.5.5 0 0 0-.5.5.5.5 0 0 0 .5.5z"/></g></svg></span>
+		</a>
+			</div>
+	</div>
+</div>
+					</div>
+							</div>
+		</div>
+	</div>
+</div>
+
+<div class="container my-cnf">
+	<div class="row">
+		<div class="col-12">
+			<div class="d-flex justify-content-between align-items-start column-gap-3 flex-column flex-lg-row row-gap-3">
+				<div class="order-2 order-lg-1">
+					<a href="https://www.portfolio.hu/en/events/all" class="site-btn site-btn-dark" >
+			<span class="poppins">All events</span>
+			<span><svg class="site-icons" data-icon="btn-arrow" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13.468 13.468"><g fill="currentColor" stroke="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6.73 12.33a.5.5 0 0 0 .354-.147l5.1-5.1a.5.5 0 0 0 0-.706l-5.1-5.1a.5.5 0 0 0-.707 0 .5.5 0 0 0 0 .707l4.746 4.746-4.746 4.746a.5.5 0 0 0 0 .707.5.5 0 0 0 .353.147"/><path d="M11.785 7.234a.5.5 0 0 0 .5-.5.5.5 0 0 0-.5-.5H1.683a.5.5 0 0 0-.5.5.5.5 0 0 0 .5.5z"/></g></svg></span>
+		</a>
+					</div>
+				<div class="d-flex gap-3 flex-wrap row-gap-3 order-1 order-lg-2">
+					<a class="cnf-rounded-btn" href="https://www.portfolio.hu/en/events/all?industry=property">Property</a>
+
+					<a class="cnf-rounded-btn" href="https://www.portfolio.hu/en/events/all?industry=agricultural">Agriculture</a>
+
+					<a class="cnf-rounded-btn" href="https://www.portfolio.hu/en/events/all?industry=finance">Finance</a>
+
+					<a class="cnf-rounded-btn" href="https://www.portfolio.hu/en/events/all?industry=economy">Economy</a>
+
+					<a class="cnf-rounded-btn" href="https://www.portfolio.hu/en/events/all?industry=energy">Energy</a>
+					
+					<a class="cnf-rounded-btn" href="https://www.portfolio.hu/en/events/all?industry=it">IT</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container mt-3 mb-cnf">
+	<div class="row">
+					<div class="col-12">
+				<div class="app-promo app-promo-newsletter app-promo-1 mt-4 mt-lg-0">
+	<div class="app-promo-inner">
+		<div class="app-promo-image">
+			<img src="https://eventscdn.portfolio.hu/assets/images/P_feliratkozoi-kedv_410x400_level.jpg" alt="News and event recommendations — straight from the source" />
+		</div>
+		<div class="app-promo-text">
+			<div class="app-promo-title poppins">
+				News and event recommendations — straight from the source 
+			</div>
+			<div class="pxl-16 mt-3 mb-4">
+						Subscribe to our newsletter and get <b>HUF 5000 off</b> your ticket purchase.
+						</div>
+			<a href="https://www.portfolio.hu/en/events/eventoffer" class="site-btn " style="color:var(--fixed-black);background-color:transparent;border-color:var(--fixed-black);" >
+			<span class="poppins">Subscribe</span>
+			<span><svg class="site-icons" data-icon="btn-arrow" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13.468 13.468"><g fill="currentColor" stroke="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6.73 12.33a.5.5 0 0 0 .354-.147l5.1-5.1a.5.5 0 0 0 0-.706l-5.1-5.1a.5.5 0 0 0-.707 0 .5.5 0 0 0 0 .707l4.746 4.746-4.746 4.746a.5.5 0 0 0 0 .707.5.5 0 0 0 .353.147"/><path d="M11.785 7.234a.5.5 0 0 0 .5-.5.5.5 0 0 0-.5-.5H1.683a.5.5 0 0 0-.5.5.5.5 0 0 0 .5.5z"/></g></svg></span>
+		</a>
+			</div>
+	</div>
+</div>
+			</div>
+			</div>
+</div>
+<!-- Portfolio konferenciák 25 éve -->
+<section class="bg-cnf-grey pt-5 pb-2">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h2 class="year25-title poppins weight-800 text-uppercase">25 years of Portfolio Conferences</h2>
+				<p class="pxl-17">
+					The Portfolio Group&#039;s events division has been shaping the professional events market for more than two decades, maintaining its position as market leader. We organize an average of 70 business conferences and nearly 10 award ceremonies annually throughout the country, setting the tone in nine industries: economy, agriculture, real estate, healthcare, finance, automotive, energy, IT, and sustainability. We reach 40,000 participants annually. The Portfolio Events name is a guarantee of high-quality professional content and outstanding B2B and B2C networking – in premium hotels, exclusive environments, with opportunities for business networking and lead generation. To date, more than 6,000 speakers and more than 30,000 companies have participated in our events: experts, senior executives, decision-makers, opinion leaders, and owners. Join us and take your business to the next level – we provide the top community in the domestic business sphere!
+				</p>
+				<div class="row darkening-images mt-cnf row-gap-4">
+					<div class="col-md-4">
+						<a href="https://www.portfolio.hu/en/events/video" class="d-block position-relative h-100 zoom-on-hover">
+							<div class="image-caption poppins top-0 start-0 end-0 bottom-0">
+								<span>Videos</span>
+							</div>
+							<img src="https://eventscdn.portfolio.hu/assets/images/videok.jpg" alt="">
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a href="https://www.portfolio.hu/en/events/gallery" class="d-block position-relative h-100 zoom-on-hover">
+							<div class="image-caption poppins top-0 start-0 end-0 bottom-0">
+								<span>Gallery</span>
+							</div>
+							<img src="https://eventscdn.portfolio.hu/assets/images/galeria.jpg" alt="Gallery">
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a href="https://www.portfolio.hu/en/events/speakers" class="d-block position-relative h-100 zoom-on-hover">
+							<div class="image-caption poppins top-0 start-0 end-0 bottom-0">
+								<span>Speakers</span>
+							</div>
+							<img src="https://eventscdn.portfolio.hu/assets/images/eloadok.jpg" alt="Speakers">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<!-- END Portfolio konferenciák 25 éve -->
+<section class="bg-cnf-grey pb-5">
+	<div class="container">
+	<div class="row">
+		<div class="col-lg-4 mt-cnf">
+			<div class="d-flex flex-column justify-content-between h-100">
+				<div>
+					<div class="poppins pxl-18 weight-700 pb-2 text-uppercase">Join us</div>
+					<div class="dark-line mb-3"></div>
+					<div class="pxl-17">
+						Follow, like, subscribe, listen to us, and write to us on the following channels:
+					</div>
+				</div>
+				<div class="mt-4 mt-lg-0 mb-0 mb-lg-4">
+					<div class="social-wrapper d-flex gap-2">
+						<a href="https://www.youtube.com/playlist?list=PLtoH_NHG62hCkMGe6KfirKV5pVbMEJU1e" target="_blank" title="">
+							<svg class="site-icons" data-icon="youtube" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26"><path fill="currentColor" d="M11.073 15.873 16 13.072l-4.932-2.8.005 5.601Z"/><path fill="currentColor" d="M20.947 0H5.054A5.053 5.053 0 0 0 0 5.052v15.894a5.053 5.053 0 0 0 5.054 5.053h15.893A5.053 5.053 0 0 0 26 20.946V5.053A5.053 5.053 0 0 0 20.947 0m1.088 17.64a2.33 2.33 0 0 1-1.668 1.651c-2.444.296-4.905.43-7.367.4a56.658 56.658 0 0 1-7.366-.391 2.335 2.335 0 0 1-1.668-1.654 24.91 24.91 0 0 1-.393-4.569 24.91 24.91 0 0 1 .393-4.569 2.365 2.365 0 0 1 1.668-1.679A55.627 55.627 0 0 1 13 6.43c2.462-.03 4.923.104 7.367.4.816.221 1.452.86 1.668 1.677a24.91 24.91 0 0 1 .393 4.569 24.859 24.859 0 0 1-.393 4.565"/></svg>
+						</a>
+						<a href="https://www.facebook.com/portfoliorendezvenyek" target="_blank" title="">
+							<svg class="site-icons" data-icon="facebook" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26"><path fill="currentColor" d="M20.945 0H5.053A5.053 5.053 0 0 0 0 5.053v15.894A5.053 5.053 0 0 0 5.053 26h5.643v-9.43H7.27v-3.9h3.426V9.7c0-3.382 2.015-5.25 5.1-5.25 1.012.014 2.022.102 3.021.263v3.318h-1.7a1.95 1.95 0 0 0-2.2 2.107v2.531h3.743l-.6 3.9h-3.147V26h6.032a5.053 5.053 0 0 0 5.053-5.053V5.053A5.053 5.053 0 0 0 20.945 0"/></svg>
+						</a>
+						<a href="https://www.instagram.com/portfolio_konferenciak/" target="_blank" title="">
+							<svg class="site-icons" data-icon="insta" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="26" height="26" viewBox="0 0 26 26"><g fill="currentColor"><path d="M20.4 7.4c-.3-.8-1-1.5-1.8-1.8-1.2-.5-4.2-.4-5.6-.4-1.4 0-4.4-.1-5.6.4-.8.3-1.5 1-1.8 1.8-.5 1.2-.4 4.2-.4 5.6 0 1.4-.1 4.4.4 5.6.3.8 1 1.5 1.8 1.8 1.2.5 4.2.4 5.6.4s4.3.1 5.6-.4c.8-.3 1.5-1 1.8-1.8.5-1.2.4-4.2.4-5.6 0-1.4.1-4.4-.4-5.6zm-4 9c-.9.9-2.2 1.4-3.4 1.4-2 0-3.7-1.2-4.5-3-.8-1.8-.3-3.9 1.1-5.2s3.5-1.8 5.3-1.1c1.8.8 3 2.5 3 4.5 0 1.3-.5 2.5-1.5 3.4zm2.5-7.7c-.2.2-.5.3-.8.3-.5 0-.9-.3-1.1-.7-.2-.4-.1-.9.2-1.2.3-.3.8-.4 1.2-.2.4.2.7.6.7 1 .1.3 0 .6-.2.8z"></path><path d="M20.9 0H5.1C2.3 0 0 2.3 0 5.1V21c0 2.7 2.3 5 5.1 5H21c2.8 0 5.1-2.3 5.1-5.1V5.1C26 2.3 23.7 0 20.9 0zm1.5 16.9c-.1 1.5-.4 2.9-1.5 4s-2.5 1.5-4 1.5c-1.6.1-6.3.1-7.8 0s-2.9-.4-4-1.5-1.5-2.5-1.5-4c-.1-1.6-.1-6.3 0-7.8s.4-2.9 1.5-4 2.5-1.5 4-1.5c1.6-.1 6.3-.1 7.8 0s2.9.4 4 1.5 1.5 2.5 1.5 4c.1 1.5.1 6.2 0 7.8z"></path><path d="M13 9.8c-1.3 0-2.4.8-2.9 2s-.2 2.5.7 3.5c.9.9 2.3 1.2 3.5.7 1.2-.5 2-1.6 2-2.9 0-.8-.3-1.6-.9-2.2S13.8 9.8 13 9.8z"></path></g></svg>
+						</a>
+						<a href="https://www.linkedin.com/company/portfolio-conferences/" target="_blank" title="">
+							<svg class="site-icons" data-icon="linkedin2" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26"><path fill="currentColor" d="M20.947 0H5.053A5.053 5.053 0 0 0 0 5.053v15.894A5.053 5.053 0 0 0 5.053 26h15.894A5.053 5.053 0 0 0 26 20.947V5.053A5.053 5.053 0 0 0 20.947 0M7.97 21.808H4.189V9.655H7.97v12.153ZM6.077 7.995a2.188 2.188 0 1 1 .002-4.376 2.188 2.188 0 0 1-.002 4.376m16.035 13.813h-3.777V15.9c0-1.409-.028-3.223-1.961-3.223-1.968 0-2.269 1.534-2.269 3.121v6.014h-3.77V9.655h3.619v1.658h.052a3.98 3.98 0 0 1 3.576-1.961c3.818 0 4.529 2.52 4.529 5.793v6.663Z"/></svg>
+						</a>
+						<a href="javascript:window.location.href=atob('bWFpbHRvOnBvcnRmb2xpb0Bwb3J0Zm9saW8uaHU=')" title="">
+							<svg class="site-icons" data-icon="email" xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26"><path fill="currentColor" d="M20.947 0H5.053A5.053 5.053 0 0 0 0 5.053v15.894A5.053 5.053 0 0 0 5.053 26h15.894A5.053 5.053 0 0 0 26 20.947V5.053A5.053 5.053 0 0 0 20.947 0m1.428 17.724a1.875 1.875 0 0 1-1.873 1.875H5.5a1.875 1.875 0 0 1-1.875-1.873v-6.453l8.115 4.059c.391.195.823.298 1.26.3a2.817 2.817 0 0 0 1.258-.3l8.117-4.058v6.45Zm0-8.549-8.95 4.477a.936.936 0 0 1-.838 0L3.625 9.175v-.826c0-1.035.838-1.874 1.873-1.875H20.5c1.035 0 1.874.838 1.875 1.873v.828Z"/></svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-4 mt-cnf">
+			<div class="d-flex flex-column justify-content-between h-100">
+				<div>
+					<div class="poppins pxl-18 weight-700 pb-2 text-uppercase">Newsletter</div>
+					<div class="dark-line mb-3"></div>
+					<div class="pxl-17">
+						Subscribe to our exclusive event newsletter: news, events, and offers firsthand.
+					</div>
+				</div>
+				<div class="mt-4">
+					<a href="https://www.portfolio.hu/en/events/eventoffer" class="site-btn site-btn-dark" >
+			<span class="poppins">Subscribe</span>
+			<span><svg class="site-icons" data-icon="btn-arrow" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13.468 13.468"><g fill="currentColor" stroke="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6.73 12.33a.5.5 0 0 0 .354-.147l5.1-5.1a.5.5 0 0 0 0-.706l-5.1-5.1a.5.5 0 0 0-.707 0 .5.5 0 0 0 0 .707l4.746 4.746-4.746 4.746a.5.5 0 0 0 0 .707.5.5 0 0 0 .353.147"/><path d="M11.785 7.234a.5.5 0 0 0 .5-.5.5.5 0 0 0-.5-.5H1.683a.5.5 0 0 0-.5.5.5.5 0 0 0 .5.5z"/></g></svg></span>
+		</a>
+					</div>
+			</div>
+		</div>
+		<div class="col-lg-4 mt-cnf">
+			<div class="d-flex flex-column justify-content-between h-100">
+				<div>
+					<div class="poppins pxl-18 weight-700 pb-2 text-uppercase">Become our sponsor</div>
+					<div class="dark-line mb-3"></div>
+					<div class="pxl-17">
+						Greater reach, stronger brand building, wider network, and new business opportunities.
+					</div>
+				</div>
+
+				<div class="mt-4">
+					<a href="https://www.portfolio.hu/en/events/become-our-supporter" class="site-btn site-btn-dark" >
+			<span class="poppins">More information</span>
+			<span><svg class="site-icons" data-icon="btn-arrow" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13.468 13.468"><g fill="currentColor" stroke="none" stroke-linecap="round" stroke-linejoin="round"><path d="M6.73 12.33a.5.5 0 0 0 .354-.147l5.1-5.1a.5.5 0 0 0 0-.706l-5.1-5.1a.5.5 0 0 0-.707 0 .5.5 0 0 0 0 .707l4.746 4.746-4.746 4.746a.5.5 0 0 0 0 .707.5.5 0 0 0 .353.147"/><path d="M11.785 7.234a.5.5 0 0 0 .5-.5.5.5 0 0 0-.5-.5H1.683a.5.5 0 0 0-.5.5.5.5 0 0 0 .5.5z"/></g></svg></span>
+		</a>
+					</div>
+			</div>
+		</div>
+	</div>
+</div>
+</section>
+
+		<!-- Footer -->
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				
+				<div class="d-flex flex-wrap gap-3 justify-content-center pxl-14 weight-600 m-auto px-4">
+					<div>
+						<span class="text-orange">© 2026 Portfolio</span>
+					</div>
+					<div class="d-flex flex-wrap justify-content-center gap-3">
+						<a class="text-nowrap" href="https://www.portfolio.hu/info/impresszum">About us</a>
+						<a class="text-nowrap" href="https://www.portfolio.hu/info/jogi-nyilatkozat">Disclaimer</a>
+						<a class="text-nowrap" href="javascript:window.__tcfapi('displayConsentUi', 2, function() {} );">Cookie settings</a>
+						<a class="text-nowrap" href="https://portfoliocsoport.hu/info/a-portfolio-konferenciak-adatkezelesi-tajekoztatoja">Privacy Policy</a>
+						<a class="text-nowrap" href="https://www.portfolio.hu/info/szerzoi-jogok">Copyright</a>
+						<a class="text-nowrap" href="https://portfoliocsoport.hu/mediaajanlat#portfolio">Media Offer</a>
+						<a class="text-nowrap" href="https://portfoliocsoport.hu/karrier">Careers</a>
+						<a class="text-nowrap" href="https://portfoliocsoport.hu/info/altalanos_szerzodesi_feltetelek_net_media_zrt">Terms &amp; Conditions</a>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- End Footer -->
+	</main>
+
+	
+	<script src="https://p.portfolio.hu/push.js?t=78322"></script>
+<script>
+	const t = document.querySelectorAll('.cnf-block-content h2 a span');if(t.length) {for(let i = 0; i < t.length; i++) {t[i].innerHTML = t[i].innerHTML.replace(/-([a-zA-ZáéíóöőúüűÁÉÍÓÖŐÚÜŰ])(?=[.,!?\s]|$)/g, '&#8209;$1');}}
+</script>
+
+	
+	<!-- (C)2000-2014 Gemius SA - gemiusAudience / portfolio.hu -->
+<script type="text/javascript">
+        <!--//--><![CDATA[//><!--
+        var pp_gemius_identifier = 'bQCadgdW.yLkEjRKxoa7K6Rtjw36o8LkiNSlttIEl0T.I7';
+        var pp_gemius_use_cmp = true;
+        var pp_gemius_cmp_timeout = Infinity;
+        
+        // lines below shouldn't be edited
+        function gemius_pending(i) { window[i] = window[i] || function() {var x = window[i+'_pdata'] = window[i+'_pdata'] || []; x[x.length]=arguments;};};
+        gemius_pending('gemius_hit'); gemius_pending('gemius_event'); gemius_pending('pp_gemius_hit'); gemius_pending('pp_gemius_event');
+        (function(d,t) {try {var gt=d.createElement(t),s=d.getElementsByTagName(t)[0],l='http'+((location.protocol=='https:')?'s':''); gt.setAttribute('async','async');
+        gt.setAttribute('defer','defer'); gt.src=l+'://gahu.hit.gemius.pl/xgemius.js'; s.parentNode.insertBefore(gt,s);} catch (e) {}})(document,'script');
+        //--><!]]>
+</script>
+</body>
+</html>

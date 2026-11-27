@@ -1,0 +1,38 @@
+rows 30 leads 6 sequence 36
+counts {'open': 30, 'scored': 30, 'unscored': 0, 'can_host': 28, 'cannot_host': 2, 'leads': 6, 'closed': 0, 'visited': 0}
+ids unique 36 of 36
+sequence unique 36 of 36
+id set == store venues True
+sequence set == store venues True
+tiers rows {'Silver': 30}
+tiers leads {'Lead': 6}
+
+-- coordinate provider x failed_lookups --
+1 | OpenStreetMap Nominatim | recorded: Photon: no result; Nominatim: no result (geocode-responses/retry-enclo
+1 | OpenStreetMap Nominatim | recorded: Photon: no result; Nominatim: street-level matches only (Collyer Quay 
+1 | OpenStreetMap Nominatim | recorded: Photon: no tier-matching result for '1 Marina Boulevard, Singapore 018
+2 | OpenStreetMap Nominatim | recorded: Photon: no tier-matching result for '1 St Andrew's Road, Singapore 178
+2 | OpenStreetMap Nominatim | recorded: Photon: no tier-matching result for '11 Eunos Road 8, Singapore 408601
+1 | OpenStreetMap Nominatim | recorded: Photon: no tier-matching result for '111 North Bridge Road, Singapore 
+1 | OpenStreetMap Nominatim | recorded: Photon: no tier-matching result for '116 Lavender Street, Singapore 33
+1 | OpenStreetMap Nominatim | recorded: Photon: no tier-matching result for '171 Chin Swee Road, Singapore 169
+1 | OpenStreetMap Nominatim | recorded: Photon: no tier-matching result for '190 Clemenceau Avenue, Singapore 
+1 | OpenStreetMap Nominatim | recorded: Photon: no tier-matching result for '20B Mosque Street, Singapore 0595
+1 | OpenStreetMap Nominatim | recorded: Photon: no tier-matching result for '21 Bedok North Street 1, Singapor
+1 | OpenStreetMap Nominatim | recorded: Photon: no tier-matching result for '23A Coleman Street, Singapore 179
+1 | OpenStreetMap Nominatim | recorded: Photon: no tier-matching result for '28 Aliwal Street, Singapore 19991
+1 | OpenStreetMap Nominatim | recorded: Photon: no tier-matching result for '36 Carpenter Street, Singapore 05
+1 | OpenStreetMap Nominatim | recorded: Photon: no tier-matching result for '5 Temasek Boulevard, Singapore 03
+1 | OpenStreetMap Nominatim | recorded: Photon: no tier-matching result for '60 Stevens Road, Singapore 257854
+1 | OpenStreetMap Nominatim | recorded: Photon: no tier-matching result for '69 Ayer Rajah Crescent, Singapore
+2 | OpenStreetMap Nominatim | recorded: Photon: no tier-matching result; Nominatim: KPB Building at 60 Cecil S
+1 | OpenStreetMap Nominatim | recorded: Photon: no tier-matching result; Nominatim: street-level matches only 
+13 | Photon | none
+1 | Photon | recorded: Photon: street-level matches only (Kallang Avenue 339412, 339413, 3394
+
+-- match_evidence prefixes --
+{'Photon returned the hotel POI at the operator-printed addres': 1, 'Independent Photon lookup on the operator-printed address; t': 11, 'Photon returned the venue POI "The Working Capitol" at house': 1, 'Photon returned no tier-matching result; the independent Nom': 15, 'Photon returned street-level Kallang Avenue rows only (postc': 1, 'Photon returned no result and the Nominatim retry (geocode-r': 1, 'Photon returned no tier match; Nominatim matched KPB Buildin': 2, 'Photon returned no tier match; Nominatim matched Sam Leong R': 1, 'Photon returned no tier match; Nominatim matched house numbe': 1, 'Photon returned no tier match; Nominatim returned the Aliwal': 1, 'Photon returned no result; Nominatim and its retry (geocode-': 1}
+
+-- loss check vs pre-r8 --
+keys {'sources_consulted': 39}
+non-sources keys []

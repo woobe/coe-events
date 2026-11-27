@@ -1,0 +1,1236 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="apple-touch-icon" sizes="57x57"
+		href="https://hungexpo.hu/wp-content/themes/frontend/assets/icons/favicons/apple-touch-icon-57x57.png?v=2">
+	<link rel="apple-touch-icon" sizes="114x114"
+		href="https://hungexpo.hu/wp-content/themes/frontend/assets/icons/favicons/apple-touch-icon-114x114.png?v=2">
+	<link rel="apple-touch-icon" sizes="72x72"
+		href="https://hungexpo.hu/wp-content/themes/frontend/assets/icons/favicons/apple-touch-icon-72x72.png?v=2">
+	<link rel="apple-touch-icon" sizes="144x144"
+		href="https://hungexpo.hu/wp-content/themes/frontend/assets/icons/favicons/apple-touch-icon-144x144.png?v=2">
+	<link rel="apple-touch-icon" sizes="60x60"
+		href="https://hungexpo.hu/wp-content/themes/frontend/assets/icons/favicons/apple-touch-icon-60x60.png?v=2">
+	<link rel="apple-touch-icon" sizes="120x120"
+		href="https://hungexpo.hu/wp-content/themes/frontend/assets/icons/favicons/apple-touch-icon-120x120.png?v=2">
+	<link rel="apple-touch-icon" sizes="76x76"
+		href="https://hungexpo.hu/wp-content/themes/frontend/assets/icons/favicons/apple-touch-icon-76x76.png?v=2">
+	<link rel="apple-touch-icon" sizes="152x152"
+		href="https://hungexpo.hu/wp-content/themes/frontend/assets/icons/favicons/apple-touch-icon-152x152.png?v=2">
+	<link rel="apple-touch-icon" sizes="180x180"
+		href="https://hungexpo.hu/wp-content/themes/frontend/assets/icons/favicons/apple-touch-icon-180x180.png?v=2">
+	<link rel="icon" type="image/png" href="https://hungexpo.hu/wp-content/themes/frontend/assets/icons/favicons/favicon-192x192.png?v=2"
+		sizes="192x192">
+	<link rel="icon" type="image/png" href="https://hungexpo.hu/wp-content/themes/frontend/assets/icons/favicons/favicon-160x160.png?v=2"
+		sizes="160x160">
+	<link rel="icon" type="image/png" href="https://hungexpo.hu/wp-content/themes/frontend/assets/icons/favicons/favicon-96x96.png?v=2"
+		sizes="96x96">
+	<link rel="icon" type="image/png" href="https://hungexpo.hu/wp-content/themes/frontend/assets/icons/favicons/favicon-16x16.png?v=2"
+		sizes="16x16">
+	<link rel="icon" type="image/png" href="https://hungexpo.hu/wp-content/themes/frontend/assets/icons/favicons/favicon-32x32.png?v=2"
+		sizes="32x32">
+	<meta name="msapplication-config" content="https://hungexpo.hu/wp-content/themes/frontend/assets/icons/favicons/browserconfig.xml" />
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="https://hungexpo.hu/wp-content/themes/frontend/assets/icons/favicons/mstile-144x144.png?v=2">
+
+
+	<script id="hungexpo-consent-bootstrap">/** Consent Mode v2 bridge. Render synchronously before any measurement tags. */
+(function (window, document) {
+	'use strict';
+	if (window.hungexpoConsent) return;
+	window.dataLayer = window.dataLayer || [];
+	window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
+	var denied = {
+		ad_storage: 'denied', analytics_storage: 'denied',
+		ad_user_data: 'denied', ad_personalization: 'denied',
+		functionality_storage: 'denied', personalization_storage: 'denied', security_storage: 'granted'
+	};
+	window.gtag('consent', 'default', Object.assign({ wait_for_update: 2000 }, denied));
+	window.gtag('set', 'ads_data_redaction', true);
+	// Cross-domain decoration is handled below with explicit consent checks.
+	window.gtag('set', 'url_passthrough', false);
+	var categories = {};
+	var ready = false;
+	var acted = false;
+	var previous = null;
+	var timer;
+	var pending = [];
+	var consentCookie = null;
+	function cookies() { try { return document.cookie || ''; } catch (error) { return ''; } }
+	function cookieValue() { return cookies().split(';').map(function (part) { return part.trim(); }).filter(function (part) { return part.indexOf('cookieyes-consent=') === 0; }).join(';'); }
+	function own(object, key) { return Object.prototype.hasOwnProperty.call(object, key); }
+	function yes(value) { return value === true || value === 'yes'; }
+	function read() {
+		try {
+			if (typeof window.getCkyConsent === 'function') {
+				var consent = window.getCkyConsent();
+				if (consent && consent.categories) return { categories: consent.categories, acted: consent.isUserActionCompleted === true };
+			}
+			var store = window.cookieyes && window.cookieyes._ckyConsentStore;
+			if (store && typeof store.forEach === 'function') {
+				var result = {};
+				store.forEach(function (value, key) { result[key] = value; });
+				return { categories: result, acted: store.get('action') === 'yes' };
+			}
+		} catch (error) { /* An unavailable CMP must never grant consent. */ }
+		return null;
+	}
+	// CookieYes category IDs are not Google consent types. Keep the translation
+	// explicit: the current banner groups analytics and advertising as marketing.
+	// First present category wins, including an explicit denial in a granular CMP.
+	var categoryAliases = {
+		analytics: ['analytics', 'marketing'],
+		advertisement: ['advertisement', 'marketing'],
+		functional: ['functional']
+	};
+	var googleConsentCategories = {
+		analytics_storage: 'analytics',
+		ad_storage: 'advertisement',
+		ad_user_data: 'advertisement',
+		ad_personalization: 'advertisement',
+		functionality_storage: 'functional',
+		personalization_storage: 'functional'
+	};
+	function hasConsent(type) {
+		if (!ready || !acted || (consentCookie !== null && consentCookie !== cookieValue())) return false;
+		if (type === 'marketing') {
+			// Legacy embeds may contain both analytics and advertising tags.
+			return hasConsent('analytics') && hasConsent('advertisement');
+		}
+		var aliases = own(categoryAliases, type) ? categoryAliases[type] : [type];
+		for (var i = 0; i < aliases.length; i += 1) {
+			if (own(categories, aliases[i])) return yes(categories[aliases[i]]);
+		}
+		return false;
+	}
+	function state() {
+		var result = {};
+		Object.keys(googleConsentCategories).forEach(function (type) {
+			result[type] = hasConsent(googleConsentCategories[type]) ? 'granted' : 'denied';
+		});
+		// Essential security storage is not permission for optional processing.
+		// Neither szukseges nor necessary grants functional/personalization storage.
+		result.security_storage = 'granted';
+		return result;
+	}
+	function clearTrackingCookies(next) {
+		var domains = [null];
+		var labels = window.location.hostname.split('.');
+		for (var i = 0; i < labels.length - 1; i += 1) domains.push(labels.slice(i).join('.'));
+		var paths = ['/'];
+		var parts = window.location.pathname.split('/');
+		for (var j = 1; j < parts.length; j += 1) {
+			var path = parts.slice(0, j + 1).join('/');
+			paths.push(path, path + '/');
+		}
+		cookies().split(';').forEach(function (entry) {
+			var name = entry.split('=')[0].trim();
+			var analytics = /^(_ga(?:_|$)|_gid$|_gat(?:_|$))/.test(name);
+			var advertising = /^(_gcl_|_gac_|_fbp$|_fbc$|_rdt_|_uetsid$|_uetvid$|_ttp$|_pin_unauth$)/.test(name);
+			if (!(analytics && next.analytics_storage === 'denied') && !(advertising && next.ad_storage === 'denied')) return;
+			paths.forEach(function (path) {
+				domains.forEach(function (domain) {
+					try { document.cookie = name + '=; Max-Age=0; Path=' + path + (domain ? '; Domain=' + domain : '') + '; SameSite=Lax'; } catch (error) { /* Browser may block cookie access. */ }
+				});
+			});
+		});
+	}
+	function refresh(snapshot) {
+		var current = snapshot || read();
+		if (!current) {
+			if (!ready) return;
+			current = { categories: {}, acted: false };
+		}
+		consentCookie = cookieValue();
+		categories = current.categories;
+		acted = current.acted;
+		ready = true;
+		var next = state();
+		if (JSON.stringify(next) === JSON.stringify(previous)) return;
+		var revoked = previous && Object.keys(next).some(function (key) { return previous[key] === 'granted' && next[key] === 'denied'; });
+		previous = next;
+		window.gtag('consent', 'update', next);
+		clearTrackingCookies(next);
+		// Synchronous cleanup listeners run before tags or a CMP-triggered reload.
+		document.dispatchEvent(new CustomEvent('hungexpo_consent_update', { detail: next }));
+		window.dataLayer.push({ event: 'hungexpo_consent_update', consent: next });
+		pending.forEach(function (load) { load(); });
+		// Removing script nodes cannot stop third-party code already executing.
+		if (revoked) window.setTimeout(function () { window.location.reload(); }, 0);
+	}
+	function onUpdate(event) {
+		var detail = event.detail;
+		if (detail && Array.isArray(detail.accepted) && Array.isArray(detail.rejected)) {
+			var next = {};
+			detail.accepted.forEach(function (key) { next[key] = true; });
+			detail.rejected.forEach(function (key) { next[key] = false; });
+			// Initial banner events are not a substitute for an explicit user action.
+			var current = read();
+			refresh({ categories: next, acted: current ? current.acted : true });
+		} else refresh();
+	}
+	function poll() {
+		// CookieYes keeps an in-memory snapshot; reload if another tab changes it.
+		if (consentCookie !== null && consentCookie !== cookieValue()) {
+			window.location.reload();
+			return;
+		}
+		refresh();
+		// Keep watching late CMP initialization and changes in another tab.
+		timer = window.setTimeout(poll, ready ? 1000 : 250);
+	}
+	document.addEventListener('cookieyes_consent_update', onUpdate);
+	document.addEventListener('cookieyes_banner_loaded', function () { refresh(); });
+	window.addEventListener('pageshow', function () { window.clearTimeout(timer); poll(); });
+	document.addEventListener('visibilitychange', function () {
+		window.clearTimeout(timer);
+		if (!document.hidden) poll();
+	});
+	window.hasConsent = hasConsent;
+	window.updateGoogleConsent = function () { refresh(); };
+	window.hungexpoConsent = { hasConsent: hasConsent, getState: state, isReady: function () { return ready; } };
+
+	// Consent-gated legacy ACF embeds: load once, in order, also after late acceptance.
+	window.checkAndLoadContent = function (type, id, attribute, targetLocation) {
+		var container = document.getElementById(id);
+		if (!container || container.getAttribute('data-consent-registered')) return;
+		container.setAttribute('data-consent-registered', 'true');
+		function load() {
+			if (!hasConsent(type) || container.getAttribute('data-consent-loaded')) return;
+			container.setAttribute('data-consent-loaded', 'true');
+			var content = container.getAttribute(attribute) || '';
+			// ACF stores HTML, not form-urlencoded text. Preserve literal + and % signs.
+			if (/^%3[cC]/.test(content.trim())) {
+				try { content = decodeURIComponent(content); } catch (error) { return; }
+			}
+			var template = document.createElement('template');
+			template.innerHTML = content;
+			var target = targetLocation === 'head' ? document.head : document.body;
+			Array.from(template.content.childNodes).reduce(function (chain, element) {
+				return chain.then(function () {
+					if (!hasConsent(type)) return;
+					if (element.nodeName !== 'SCRIPT') { target.appendChild(element.cloneNode(true)); return; }
+					return new Promise(function (resolve) {
+						var script = document.createElement('script');
+						Array.from(element.attributes).forEach(function (attr) { script.setAttribute(attr.name, attr.value); });
+						script.textContent = element.textContent;
+						if (script.src) { script.async = false; script.onload = resolve; script.onerror = resolve; }
+						target.appendChild(script);
+						if (!script.src) resolve();
+					});
+				});
+			}, Promise.resolve()).catch(function (error) { console.error('Consent-gated embed failed:', id, error); });
+		}
+		pending.push(load);
+		load();
+	};
+	poll();
+}(window, document));
+</script>
+
+	<!-- Check page template for embed code injection -->
+	<!-- Always load tracking codes regardless of cookie settings -->
+	
+	<!-- Marketing tracking codes - only load if cookies are accepted -->
+			<script type="application/json" id="eventHeadContainer"
+		data-script-content="			&lt;!-- Google Tag Manager --&gt;
+		&lt;script&gt;(function (w, d, s, l, i) {
+				w[l] = w[l] || []; w[l].push({
+					&#039;gtm.start&#039;:
+						new Date().getTime(), event: &#039;gtm.js&#039;
+				}); var f = d.getElementsByTagName(s)[0],
+					j = d.createElement(s), dl = l != &#039;dataLayer&#039; ? &#039;&amp;l=&#039; + l : &#039;&#039;; j.async = true; j.src =
+						&#039;https://www.googletagmanager.com/gtm.js?id=&#039; + i + dl; f.parentNode.insertBefore(j, f);
+			})(window, document, &#039;script&#039;, &#039;dataLayer&#039;, &#039;GTM-5RSLQ56P&#039;);&lt;/script&gt;
+		&lt;!-- End Google Tag Manager --&gt;
+
+		&lt;!-- Google Tag Manager --&gt;
+		&lt;script&gt;(function (w, d, s, l, i) {
+				w[l] = w[l] || []; w[l].push({
+					&#039;gtm.start&#039;:
+						new Date().getTime(), event: &#039;gtm.js&#039;
+				}); var f = d.getElementsByTagName(s)[0],
+					j = d.createElement(s), dl = l != &#039;dataLayer&#039; ? &#039;&amp;l=&#039; + l : &#039;&#039;; j.async = true; j.src =
+						&#039;https://www.googletagmanager.com/gtm.js?id=&#039; + i + dl; f.parentNode.insertBefore(j, f);
+			})(window, document, &#039;script&#039;, &#039;dataLayer&#039;, &#039;GTM-PBMFHZ2R&#039;);&lt;/script&gt;
+		&lt;!-- End Google Tag Manager --&gt;
+		"></script>
+
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			checkAndLoadContent('marketing', 'eventHeadContainer', 'data-script-content', 'head');
+		});
+	</script>
+
+
+	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+<link rel="alternate" hreflang="en" href="https://hungexpo.hu/en/locations/new-congress-centre-in-hall-c/" />
+<link rel="alternate" hreflang="hu" href="https://hungexpo.hu/locations/new-congress-centre-in-hall-c-2/" />
+<link rel="alternate" hreflang="x-default" href="https://hungexpo.hu/locations/new-congress-centre-in-hall-c-2/" />
+
+	<!-- This site is optimized with the Yoast SEO plugin v23.5 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>CONGRESS CENTRE - HUNGEXPO</title>
+	<meta name="description" content="Budapest&#039;s newest and the country&#039;s most modern large-capacity congress centre with a 2000-seat plenary hall, 26 section rooms and a roof terrace on three floors." />
+	<link rel="canonical" href="https://hungexpo.hu/en/locations/new-congress-centre-in-hall-c/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="CONGRESS CENTRE - HUNGEXPO" />
+	<meta property="og:description" content="Budapest&#039;s newest and the country&#039;s most modern large-capacity congress centre with a 2000-seat plenary hall, 26 section rooms and a roof terrace on three floors." />
+	<meta property="og:url" content="https://hungexpo.hu/en/locations/new-congress-centre-in-hall-c/" />
+	<meta property="og:site_name" content="HUNGEXPO" />
+	<meta property="article:modified_time" content="2024-10-02T11:43:38+00:00" />
+	<meta property="og:image" content="https://hungexpo.hu/wp-content/uploads/Ese_1_day_137-1024x683.jpg" />
+	<meta property="og:image:width" content="1024" />
+	<meta property="og:image:height" content="683" />
+	<meta property="og:image:type" content="image/jpeg" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:label1" content="Est. reading time" />
+	<meta name="twitter:data1" content="5 minutes" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://hungexpo.hu/en/locations/new-congress-centre-in-hall-c/","url":"https://hungexpo.hu/en/locations/new-congress-centre-in-hall-c/","name":"CONGRESS CENTRE - HUNGEXPO","isPartOf":{"@id":"https://hungexpo.hu/#website"},"primaryImageOfPage":{"@id":"https://hungexpo.hu/en/locations/new-congress-centre-in-hall-c/#primaryimage"},"image":{"@id":"https://hungexpo.hu/en/locations/new-congress-centre-in-hall-c/#primaryimage"},"thumbnailUrl":"https://hungexpo.hu/wp-content/uploads/Ese_1_day_137.jpg","datePublished":"2019-11-29T12:37:02+00:00","dateModified":"2024-10-02T11:43:38+00:00","description":"Budapest's newest and the country's most modern large-capacity congress centre with a 2000-seat plenary hall, 26 section rooms and a roof terrace on three floors.","breadcrumb":{"@id":"https://hungexpo.hu/en/locations/new-congress-centre-in-hall-c/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://hungexpo.hu/en/locations/new-congress-centre-in-hall-c/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://hungexpo.hu/en/locations/new-congress-centre-in-hall-c/#primaryimage","url":"https://hungexpo.hu/wp-content/uploads/Ese_1_day_137.jpg","contentUrl":"https://hungexpo.hu/wp-content/uploads/Ese_1_day_137.jpg","width":3543,"height":2362},{"@type":"BreadcrumbList","@id":"https://hungexpo.hu/en/locations/new-congress-centre-in-hall-c/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://preview.hungexpo.hu/en/"},{"@type":"ListItem","position":2,"name":"E. Locations","item":"https://hungexpo.hu/locations/"},{"@type":"ListItem","position":3,"name":"CONGRESS CENTRE"}]},{"@type":"WebSite","@id":"https://hungexpo.hu/#website","url":"https://hungexpo.hu/","name":"HUNGEXPO","description":"...egy újabb WordPress honlap...","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://hungexpo.hu/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-US"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//www.googletagmanager.com' />
+<link rel="alternate" type="application/rss+xml" title="HUNGEXPO &raquo; Feed" href="https://hungexpo.hu/en/feed/" />
+<link rel="alternate" type="application/rss+xml" title="HUNGEXPO &raquo; Comments Feed" href="https://hungexpo.hu/en/comments/feed/" />
+<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/hungexpo.hu\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.4.5"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://hungexpo.hu/wp-includes/css/dist/block-library/style.min.css?ver=6.4.5' type='text/css' media='all' />
+<style id='filebird-block-filebird-gallery-style-inline-css' type='text/css'>
+ul.filebird-block-filebird-gallery{margin:auto!important;padding:0!important;width:100%}ul.filebird-block-filebird-gallery.layout-grid{display:grid;grid-gap:20px;align-items:stretch;grid-template-columns:repeat(var(--columns),1fr);justify-items:stretch}ul.filebird-block-filebird-gallery.layout-grid li img{border:1px solid #ccc;box-shadow:2px 2px 6px 0 rgba(0,0,0,.3);height:100%;max-width:100%;-o-object-fit:cover;object-fit:cover;width:100%}ul.filebird-block-filebird-gallery.layout-masonry{-moz-column-count:var(--columns);-moz-column-gap:var(--space);column-gap:var(--space);-moz-column-width:var(--min-width);columns:var(--min-width) var(--columns);display:block;overflow:auto}ul.filebird-block-filebird-gallery.layout-masonry li{margin-bottom:var(--space)}ul.filebird-block-filebird-gallery li{list-style:none}ul.filebird-block-filebird-gallery li figure{height:100%;margin:0;padding:0;position:relative;width:100%}ul.filebird-block-filebird-gallery li figure figcaption{background:linear-gradient(0deg,rgba(0,0,0,.7),rgba(0,0,0,.3) 70%,transparent);bottom:0;box-sizing:border-box;color:#fff;font-size:.8em;margin:0;max-height:100%;overflow:auto;padding:3em .77em .7em;position:absolute;text-align:center;width:100%;z-index:2}ul.filebird-block-filebird-gallery li figure figcaption a{color:inherit}
+
+</style>
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='contact-form-7-css' href='https://hungexpo.hu/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.9.8' type='text/css' media='all' />
+<link rel='stylesheet' id='wpml-menu-item-0-css' href='https://hungexpo.hu/wp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/menu-item/style.min.css?ver=1' type='text/css' media='all' />
+<link rel='stylesheet' id='montserrat-css' href='https://fonts.googleapis.com/css?family=Montserrat%3A400%2C500%2C600%2C700%2C800%2C900&#038;display=swap&#038;subset=latin-ext&#038;ver=6.4.5' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css' href='https://hungexpo.hu/wp-content/themes/frontend/assets/css/font-awesome.min.css?ver=4.7.0' type='text/css' media='all' />
+<link rel='stylesheet' id='bootstrap-css' href='https://hungexpo.hu/wp-content/themes/frontend/assets/css/bootstrap.min.css?ver=6.4.5' type='text/css' media='all' />
+<link rel='stylesheet' id='royalslider-css' href='https://hungexpo.hu/wp-content/themes/frontend/royalslider/royalslider.css?ver=1725970328' type='text/css' media='all' />
+<link rel='stylesheet' id='royalslider-default-css' href='https://hungexpo.hu/wp-content/themes/frontend/royalslider/skins/default/rs-default.css?ver=1725970328' type='text/css' media='all' />
+<link rel='stylesheet' id='royalslider-universal-css' href='https://hungexpo.hu/wp-content/themes/frontend/royalslider/skins/universal/rs-universal.css?ver=1725970328' type='text/css' media='all' />
+<link rel='stylesheet' id='frontend-animate-css' href='https://hungexpo.hu/wp-content/themes/frontend/css/dist/animate.min.css?ver=1706017873' type='text/css' media='all' />
+<link rel='preload' as='style' onload="this.onload=null;this.rel='stylesheet'"
+id='frontend-style-non-critical' href='https://hungexpo.hu/wp-content/themes/frontend/css/dist/style-non-critical.min.css?ver=1706017873' async='async' type='text/css' media='all' /><link rel='stylesheet' id='blocks-style-css' href='https://hungexpo.hu/wp-content/themes/frontend/css/dist/blocks.min.css?ver=1706017873' type='text/css' media='all' />
+<link rel='stylesheet' id='frontend-style-css' href='https://hungexpo.hu/wp-content/themes/frontend/style.css?ver=1706017873' type='text/css' media='all' />
+<link rel='stylesheet' id='cf7cf-style-css' href='https://hungexpo.hu/wp-content/plugins/cf7-conditional-fields/style.css?ver=2.6' type='text/css' media='all' />
+<script type="text/javascript" id="cookie-law-info-js-extra">
+/* <![CDATA[ */
+var _ckyConfig = {"_ipData":[],"_assetsURL":"https:\/\/hungexpo.hu\/wp-content\/plugins\/cookie-law-info\/lite\/frontend\/images\/","_publicURL":"https:\/\/hungexpo.hu","_expiry":"365","_categories":[{"name":"Marketing cookies","slug":"marketing","isNecessary":false,"ccpaDoNotSell":true,"cookies":[{"cookieID":"_ga","domain":"hungexpo.hu","provider":"google-analytics.com"},{"cookieID":"_gtm","domain":"hungexpo.hu","provider":"googletagmanager.com"},{"cookieID":"teads","domain":"hungexpo.hu","provider":"p.teads.tv\/teads-fellow.js"},{"cookieID":"_gid","domain":"hungexpo.hu","provider":"google-analytics.com"},{"cookieID":"_gat","domain":"hungexpo.hu","provider":"google-analytics.com"},{"cookieID":"_gcl_au","domain":"hungexpo.hu","provider":"googletagmanager.com"}],"active":true,"defaultConsent":{"gdpr":false,"ccpa":false}},{"name":"Necessary","slug":"szukseges","isNecessary":false,"ccpaDoNotSell":true,"cookies":[{"cookieID":"Necessary","domain":"https:\/\/hungexpo.hu\/","provider":""}],"active":true,"defaultConsent":{"gdpr":false,"ccpa":false}}],"_activeLaw":"gdpr","_rootDomain":"","_block":"1","_showBanner":"1","_bannerConfig":{"settings":{"type":"banner","preferenceCenterType":"popup","position":"bottom","applicableLaw":"gdpr"},"behaviours":{"reloadBannerOnAccept":true,"loadAnalyticsByDefault":false,"animations":{"onLoad":"animate","onHide":"sticky"}},"config":{"revisitConsent":{"status":true,"tag":"revisit-consent","position":"bottom-left","meta":{"url":"#"},"styles":{"background-color":"#00aeef"},"elements":{"title":{"type":"text","tag":"revisit-consent-title","status":true,"styles":{"color":"#0056a7"}}}},"preferenceCenter":{"toggle":{"status":true,"tag":"detail-category-toggle","type":"toggle","states":{"active":{"styles":{"background-color":"#1863DC"}},"inactive":{"styles":{"background-color":"#D0D5D2"}}}}},"categoryPreview":{"status":false,"toggle":{"status":true,"tag":"detail-category-preview-toggle","type":"toggle","states":{"active":{"styles":{"background-color":"#1863DC"}},"inactive":{"styles":{"background-color":"#D0D5D2"}}}}},"videoPlaceholder":{"status":true,"styles":{"background-color":"#000000","border-color":"#000000","color":"#ffffff"}},"readMore":{"status":true,"tag":"readmore-button","type":"link","meta":{"noFollow":true,"newTab":true},"styles":{"color":"#121212","background-color":"transparent","border-color":"transparent"}},"auditTable":{"status":true},"optOption":{"status":true,"toggle":{"status":true,"tag":"optout-option-toggle","type":"toggle","states":{"active":{"styles":{"background-color":"#1863dc"}},"inactive":{"styles":{"background-color":"#FFFFFF"}}}}}}},"_version":"3.2.8","_logConsent":"1","_tags":[{"tag":"accept-button","styles":{"color":"#fff","background-color":"#000000","border-color":"#000000"}},{"tag":"reject-button","styles":{"color":"#fff","background-color":"#00aeef","border-color":"#00aeef"}},{"tag":"settings-button","styles":{"color":"#fff","background-color":"#00aeef","border-color":"#00aeef"}},{"tag":"readmore-button","styles":{"color":"#121212","background-color":"transparent","border-color":"transparent"}},{"tag":"donotsell-button","styles":{"color":"#333333","background-color":"","border-color":""}},{"tag":"accept-button","styles":{"color":"#fff","background-color":"#000000","border-color":"#000000"}},{"tag":"revisit-consent","styles":{"background-color":"#00aeef"}}],"_shortCodes":[{"key":"cky_readmore","content":"<a href=\"https:\/\/hungexpo.hu\/cookie-kezelesi-szabalyzat\/\" class=\"cky-policy\" aria-label=\"Read More\" target=\"_blank\" rel=\"noopener\" data-cky-tag=\"readmore-button\">Read More<\/a>","tag":"readmore-button","status":true,"attributes":{"rel":"nofollow","target":"_blank"}},{"key":"cky_show_desc","content":"<button class=\"cky-show-desc-btn\" data-cky-tag=\"show-desc-button\" aria-label=\"Show more\">Show more<\/button>","tag":"show-desc-button","status":true,"attributes":[]},{"key":"cky_hide_desc","content":"<button class=\"cky-show-desc-btn\" data-cky-tag=\"hide-desc-button\" aria-label=\"Show less\">Show less<\/button>","tag":"hide-desc-button","status":true,"attributes":[]},{"key":"cky_category_toggle_label","content":"[cky_{{status}}_category_label] [cky_preference_{{category_slug}}_title]","tag":"","status":true,"attributes":[]},{"key":"cky_enable_category_label","content":"Enable","tag":"","status":true,"attributes":[]},{"key":"cky_disable_category_label","content":"Disable","tag":"","status":true,"attributes":[]},{"key":"cky_video_placeholder","content":"<div class=\"video-placeholder-normal\" data-cky-tag=\"video-placeholder\" id=\"[UNIQUEID]\"><p class=\"video-placeholder-text-normal\" data-cky-tag=\"placeholder-title\">Please accept cookies to access this content<\/p><\/div>","tag":"","status":true,"attributes":[]},{"key":"cky_enable_optout_label","content":"Enable","tag":"","status":true,"attributes":[]},{"key":"cky_disable_optout_label","content":"Disable","tag":"","status":true,"attributes":[]},{"key":"cky_optout_toggle_label","content":"[cky_{{status}}_optout_label] [cky_optout_option_title]","tag":"","status":true,"attributes":[]},{"key":"cky_optout_option_title","content":"Do Not Sell or Share My Personal Information","tag":"","status":true,"attributes":[]},{"key":"cky_optout_close_label","content":"Close","tag":"","status":true,"attributes":[]}],"_rtl":"","_language":"en","_providersToBlock":[{"re":"google-analytics.com","categories":["marketing"]},{"re":"googletagmanager.com","categories":["marketing"]},{"re":"p.teads.tv\/teads-fellow.js","categories":["marketing"]}]};
+var _ckyStyles = {"css":".cky-overlay{background: #000000; opacity: 0.4; position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: 99999999;}.cky-hide{display: none;}.cky-btn-revisit-wrapper{display: flex; align-items: center; justify-content: center; background: #0056a7; width: 45px; height: 45px; border-radius: 50%; position: fixed; z-index: 999999; cursor: pointer;}.cky-revisit-bottom-left{bottom: 15px; left: 15px;}.cky-revisit-bottom-right{bottom: 15px; right: 15px;}.cky-btn-revisit-wrapper .cky-btn-revisit{display: flex; align-items: center; justify-content: center; background: none; border: none; cursor: pointer; position: relative; margin: 0; padding: 0;}.cky-btn-revisit-wrapper .cky-btn-revisit img{max-width: fit-content; margin: 0; height: 30px; width: 30px;}.cky-revisit-bottom-left:hover::before{content: attr(data-tooltip); position: absolute; background: #4e4b66; color: #ffffff; left: calc(100% + 7px); font-size: 12px; line-height: 16px; width: max-content; padding: 4px 8px; border-radius: 4px;}.cky-revisit-bottom-left:hover::after{position: absolute; content: \"\"; border: 5px solid transparent; left: calc(100% + 2px); border-left-width: 0; border-right-color: #4e4b66;}.cky-revisit-bottom-right:hover::before{content: attr(data-tooltip); position: absolute; background: #4e4b66; color: #ffffff; right: calc(100% + 7px); font-size: 12px; line-height: 16px; width: max-content; padding: 4px 8px; border-radius: 4px;}.cky-revisit-bottom-right:hover::after{position: absolute; content: \"\"; border: 5px solid transparent; right: calc(100% + 2px); border-right-width: 0; border-left-color: #4e4b66;}.cky-revisit-hide{display: none;}.cky-consent-container{position: fixed; width: 100%; box-sizing: border-box; z-index: 9999999;}.cky-consent-container .cky-consent-bar{background: #ffffff; border: 1px solid; padding: 16.5px 24px; box-shadow: 0 -1px 10px 0 #acabab4d;}.cky-banner-bottom{bottom: 0; left: 0;}.cky-banner-top{top: 0; left: 0;}.cky-custom-brand-logo-wrapper .cky-custom-brand-logo{width: 100px; height: auto; margin: 0 0 12px 0;}.cky-notice .cky-title{color: #212121; font-weight: 700; font-size: 18px; line-height: 24px; margin: 0 0 12px 0;}.cky-notice-group{display: flex; justify-content: space-between; align-items: center; font-size: 14px; line-height: 24px; font-weight: 400;}.cky-notice-des *,.cky-preference-content-wrapper *,.cky-accordion-header-des *,.cky-gpc-wrapper .cky-gpc-desc *{font-size: 14px;}.cky-notice-des{color: #212121; font-size: 14px; line-height: 24px; font-weight: 400;}.cky-notice-des img{height: 25px; width: 25px;}.cky-consent-bar .cky-notice-des p,.cky-gpc-wrapper .cky-gpc-desc p,.cky-preference-body-wrapper .cky-preference-content-wrapper p,.cky-accordion-header-wrapper .cky-accordion-header-des p,.cky-cookie-des-table li div:last-child p{color: inherit; margin-top: 0; overflow-wrap: break-word;}.cky-notice-des P:last-child,.cky-preference-content-wrapper p:last-child,.cky-cookie-des-table li div:last-child p:last-child,.cky-gpc-wrapper .cky-gpc-desc p:last-child{margin-bottom: 0;}.cky-notice-des a.cky-policy,.cky-notice-des button.cky-policy{font-size: 14px; color: #1863dc; white-space: nowrap; cursor: pointer; background: transparent; border: 1px solid; text-decoration: underline;}.cky-notice-des button.cky-policy{padding: 0;}.cky-notice-des a.cky-policy:focus-visible,.cky-notice-des button.cky-policy:focus-visible,.cky-preference-content-wrapper .cky-show-desc-btn:focus-visible,.cky-accordion-header .cky-accordion-btn:focus-visible,.cky-preference-header .cky-btn-close:focus-visible,.cky-switch input[type=\"checkbox\"]:focus-visible,.cky-footer-wrapper a:focus-visible,.cky-btn:focus-visible{outline: 2px solid #1863dc; outline-offset: 2px;}.cky-btn:focus:not(:focus-visible),.cky-accordion-header .cky-accordion-btn:focus:not(:focus-visible),.cky-preference-content-wrapper .cky-show-desc-btn:focus:not(:focus-visible),.cky-btn-revisit-wrapper .cky-btn-revisit:focus:not(:focus-visible),.cky-preference-header .cky-btn-close:focus:not(:focus-visible),.cky-consent-bar .cky-banner-btn-close:focus:not(:focus-visible){outline: 0;}button.cky-show-desc-btn:not(:hover):not(:active){color: #1863dc; background: transparent;}button.cky-accordion-btn:not(:hover):not(:active),button.cky-banner-btn-close:not(:hover):not(:active),button.cky-btn-close:not(:hover):not(:active),button.cky-btn-revisit:not(:hover):not(:active){background: transparent;}.cky-consent-bar button:hover,.cky-modal.cky-modal-open button:hover,.cky-consent-bar button:focus,.cky-modal.cky-modal-open button:focus{text-decoration: none;}.cky-notice-btn-wrapper{display: flex; justify-content: center; align-items: center; margin-left: 15px;}.cky-notice-btn-wrapper .cky-btn{text-shadow: none; box-shadow: none;}.cky-btn{font-size: 14px; font-family: inherit; line-height: 24px; padding: 8px 27px; font-weight: 500; margin: 0 8px 0 0; border-radius: 2px; white-space: nowrap; cursor: pointer; text-align: center; text-transform: none; min-height: 0;}.cky-btn:hover{opacity: 0.8;}.cky-btn-customize{color: #1863dc; background: transparent; border: 2px solid #1863dc;}.cky-btn-reject{color: #1863dc; background: transparent; border: 2px solid #1863dc;}.cky-btn-accept{background: #1863dc; color: #ffffff; border: 2px solid #1863dc;}.cky-btn:last-child{margin-right: 0;}@media (max-width: 768px){.cky-notice-group{display: block;}.cky-notice-btn-wrapper{margin-left: 0;}.cky-notice-btn-wrapper .cky-btn{flex: auto; max-width: 100%; margin-top: 10px; white-space: unset;}}@media (max-width: 576px){.cky-notice-btn-wrapper{flex-direction: column;}.cky-custom-brand-logo-wrapper, .cky-notice .cky-title, .cky-notice-des, .cky-notice-btn-wrapper{padding: 0 28px;}.cky-consent-container .cky-consent-bar{padding: 16.5px 0;}.cky-notice-des{max-height: 40vh; overflow-y: scroll;}.cky-notice-btn-wrapper .cky-btn{width: 100%; padding: 8px; margin-right: 0;}.cky-notice-btn-wrapper .cky-btn-accept{order: 1;}.cky-notice-btn-wrapper .cky-btn-reject{order: 3;}.cky-notice-btn-wrapper .cky-btn-customize{order: 2;}}@media (max-width: 425px){.cky-custom-brand-logo-wrapper, .cky-notice .cky-title, .cky-notice-des, .cky-notice-btn-wrapper{padding: 0 24px;}.cky-notice-btn-wrapper{flex-direction: column;}.cky-btn{width: 100%; margin: 10px 0 0 0;}.cky-notice-btn-wrapper .cky-btn-customize{order: 2;}.cky-notice-btn-wrapper .cky-btn-reject{order: 3;}.cky-notice-btn-wrapper .cky-btn-accept{order: 1; margin-top: 16px;}}@media (max-width: 352px){.cky-notice .cky-title{font-size: 16px;}.cky-notice-des *{font-size: 12px;}.cky-notice-des, .cky-btn{font-size: 12px;}}.cky-modal.cky-modal-open{display: flex; visibility: visible; -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -o-transform: translate(-50%, -50%); transform: translate(-50%, -50%); top: 50%; left: 50%; transition: all 1s ease;}.cky-modal{box-shadow: 0 32px 68px rgba(0, 0, 0, 0.3); margin: 0 auto; position: fixed; max-width: 100%; background: #ffffff; top: 50%; box-sizing: border-box; border-radius: 6px; z-index: 999999999; color: #212121; -webkit-transform: translate(-50%, 100%); -moz-transform: translate(-50%, 100%); -ms-transform: translate(-50%, 100%); -o-transform: translate(-50%, 100%); transform: translate(-50%, 100%); visibility: hidden; transition: all 0s ease;}.cky-preference-center{max-height: 79vh; overflow: hidden; width: 845px; overflow: hidden; flex: 1 1 0; display: flex; flex-direction: column; border-radius: 6px;}.cky-preference-header{display: flex; align-items: center; justify-content: space-between; padding: 22px 24px; border-bottom: 1px solid;}.cky-preference-header .cky-preference-title{font-size: 18px; font-weight: 700; line-height: 24px;}.cky-preference-header .cky-btn-close{margin: 0; cursor: pointer; vertical-align: middle; padding: 0; background: none; border: none; width: auto; height: auto; min-height: 0; line-height: 0; text-shadow: none; box-shadow: none;}.cky-preference-header .cky-btn-close img{margin: 0; height: 10px; width: 10px;}.cky-preference-body-wrapper{padding: 0 24px; flex: 1; overflow: auto; box-sizing: border-box;}.cky-preference-content-wrapper,.cky-gpc-wrapper .cky-gpc-desc{font-size: 14px; line-height: 24px; font-weight: 400; padding: 12px 0;}.cky-preference-content-wrapper{border-bottom: 1px solid;}.cky-preference-content-wrapper img{height: 25px; width: 25px;}.cky-preference-content-wrapper .cky-show-desc-btn{font-size: 14px; font-family: inherit; color: #1863dc; text-decoration: none; line-height: 24px; padding: 0; margin: 0; white-space: nowrap; cursor: pointer; background: transparent; border-color: transparent; text-transform: none; min-height: 0; text-shadow: none; box-shadow: none;}.cky-accordion-wrapper{margin-bottom: 10px;}.cky-accordion{border-bottom: 1px solid;}.cky-accordion:last-child{border-bottom: none;}.cky-accordion .cky-accordion-item{display: flex; margin-top: 10px;}.cky-accordion .cky-accordion-body{display: none;}.cky-accordion.cky-accordion-active .cky-accordion-body{display: block; padding: 0 22px; margin-bottom: 16px;}.cky-accordion-header-wrapper{cursor: pointer; width: 100%;}.cky-accordion-item .cky-accordion-header{display: flex; justify-content: space-between; align-items: center;}.cky-accordion-header .cky-accordion-btn{font-size: 16px; font-family: inherit; color: #212121; line-height: 24px; background: none; border: none; font-weight: 700; padding: 0; margin: 0; cursor: pointer; text-transform: none; min-height: 0; text-shadow: none; box-shadow: none;}.cky-accordion-header .cky-always-active{color: #008000; font-weight: 600; line-height: 24px; font-size: 14px;}.cky-accordion-header-des{font-size: 14px; line-height: 24px; margin: 10px 0 16px 0;}.cky-accordion-chevron{margin-right: 22px; position: relative; cursor: pointer;}.cky-accordion-chevron-hide{display: none;}.cky-accordion .cky-accordion-chevron i::before{content: \"\"; position: absolute; border-right: 1.4px solid; border-bottom: 1.4px solid; border-color: inherit; height: 6px; width: 6px; -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -ms-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg); transition: all 0.2s ease-in-out; top: 8px;}.cky-accordion.cky-accordion-active .cky-accordion-chevron i::before{-webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg);}.cky-audit-table{background: #f4f4f4; border-radius: 6px;}.cky-audit-table .cky-empty-cookies-text{color: inherit; font-size: 12px; line-height: 24px; margin: 0; padding: 10px;}.cky-audit-table .cky-cookie-des-table{font-size: 12px; line-height: 24px; font-weight: normal; padding: 15px 10px; border-bottom: 1px solid; border-bottom-color: inherit; margin: 0;}.cky-audit-table .cky-cookie-des-table:last-child{border-bottom: none;}.cky-audit-table .cky-cookie-des-table li{list-style-type: none; display: flex; padding: 3px 0;}.cky-audit-table .cky-cookie-des-table li:first-child{padding-top: 0;}.cky-cookie-des-table li div:first-child{width: 100px; font-weight: 600; word-break: break-word; word-wrap: break-word;}.cky-cookie-des-table li div:last-child{flex: 1; word-break: break-word; word-wrap: break-word; margin-left: 8px;}.cky-footer-shadow{display: block; width: 100%; height: 40px; background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%); position: absolute; bottom: calc(100% - 1px);}.cky-footer-wrapper{position: relative;}.cky-prefrence-btn-wrapper{display: flex; flex-wrap: wrap; align-items: center; justify-content: center; padding: 22px 24px; border-top: 1px solid;}.cky-prefrence-btn-wrapper .cky-btn{flex: auto; max-width: 100%; text-shadow: none; box-shadow: none;}.cky-btn-preferences{color: #1863dc; background: transparent; border: 2px solid #1863dc;}.cky-preference-header,.cky-preference-body-wrapper,.cky-preference-content-wrapper,.cky-accordion-wrapper,.cky-accordion,.cky-accordion-wrapper,.cky-footer-wrapper,.cky-prefrence-btn-wrapper{border-color: inherit;}@media (max-width: 845px){.cky-modal{max-width: calc(100% - 16px);}}@media (max-width: 576px){.cky-modal{max-width: 100%;}.cky-preference-center{max-height: 100vh;}.cky-prefrence-btn-wrapper{flex-direction: column;}.cky-accordion.cky-accordion-active .cky-accordion-body{padding-right: 0;}.cky-prefrence-btn-wrapper .cky-btn{width: 100%; margin: 10px 0 0 0;}.cky-prefrence-btn-wrapper .cky-btn-reject{order: 3;}.cky-prefrence-btn-wrapper .cky-btn-accept{order: 1; margin-top: 0;}.cky-prefrence-btn-wrapper .cky-btn-preferences{order: 2;}}@media (max-width: 425px){.cky-accordion-chevron{margin-right: 15px;}.cky-notice-btn-wrapper{margin-top: 0;}.cky-accordion.cky-accordion-active .cky-accordion-body{padding: 0 15px;}}@media (max-width: 352px){.cky-preference-header .cky-preference-title{font-size: 16px;}.cky-preference-header{padding: 16px 24px;}.cky-preference-content-wrapper *, .cky-accordion-header-des *{font-size: 12px;}.cky-preference-content-wrapper, .cky-preference-content-wrapper .cky-show-more, .cky-accordion-header .cky-always-active, .cky-accordion-header-des, .cky-preference-content-wrapper .cky-show-desc-btn, .cky-notice-des a.cky-policy{font-size: 12px;}.cky-accordion-header .cky-accordion-btn{font-size: 14px;}}.cky-switch{display: flex;}.cky-switch input[type=\"checkbox\"]{position: relative; width: 44px; height: 24px; margin: 0; background: #d0d5d2; -webkit-appearance: none; border-radius: 50px; cursor: pointer; outline: 0; border: none; top: 0;}.cky-switch input[type=\"checkbox\"]:checked{background: #1863dc;}.cky-switch input[type=\"checkbox\"]:before{position: absolute; content: \"\"; height: 20px; width: 20px; left: 2px; bottom: 2px; border-radius: 50%; background-color: white; -webkit-transition: 0.4s; transition: 0.4s; margin: 0;}.cky-switch input[type=\"checkbox\"]:after{display: none;}.cky-switch input[type=\"checkbox\"]:checked:before{-webkit-transform: translateX(20px); -ms-transform: translateX(20px); transform: translateX(20px);}@media (max-width: 425px){.cky-switch input[type=\"checkbox\"]{width: 38px; height: 21px;}.cky-switch input[type=\"checkbox\"]:before{height: 17px; width: 17px;}.cky-switch input[type=\"checkbox\"]:checked:before{-webkit-transform: translateX(17px); -ms-transform: translateX(17px); transform: translateX(17px);}}.cky-consent-bar .cky-banner-btn-close{position: absolute; right: 9px; top: 5px; background: none; border: none; cursor: pointer; padding: 0; margin: 0; min-height: 0; line-height: 0; height: auto; width: auto; text-shadow: none; box-shadow: none;}.cky-consent-bar .cky-banner-btn-close img{height: 9px; width: 9px; margin: 0;}.cky-notice-btn-wrapper .cky-btn-do-not-sell{font-size: 14px; line-height: 24px; padding: 6px 0; margin: 0; font-weight: 500; background: none; border-radius: 2px; border: none; cursor: pointer; text-align: left; color: #1863dc; background: transparent; border-color: transparent; box-shadow: none; text-shadow: none;}.cky-consent-bar .cky-banner-btn-close:focus-visible,.cky-notice-btn-wrapper .cky-btn-do-not-sell:focus-visible,.cky-opt-out-btn-wrapper .cky-btn:focus-visible,.cky-opt-out-checkbox-wrapper input[type=\"checkbox\"].cky-opt-out-checkbox:focus-visible{outline: 2px solid #1863dc; outline-offset: 2px;}@media (max-width: 768px){.cky-notice-btn-wrapper{margin-left: 0; margin-top: 10px; justify-content: left;}.cky-notice-btn-wrapper .cky-btn-do-not-sell{padding: 0;}}@media (max-width: 352px){.cky-notice-btn-wrapper .cky-btn-do-not-sell, .cky-notice-des a.cky-policy{font-size: 12px;}}.cky-opt-out-wrapper{padding: 12px 0;}.cky-opt-out-wrapper .cky-opt-out-checkbox-wrapper{display: flex; align-items: center;}.cky-opt-out-checkbox-wrapper .cky-opt-out-checkbox-label{font-size: 16px; font-weight: 700; line-height: 24px; margin: 0 0 0 12px; cursor: pointer;}.cky-opt-out-checkbox-wrapper input[type=\"checkbox\"].cky-opt-out-checkbox{background-color: #ffffff; border: 1px solid black; width: 20px; height: 18.5px; margin: 0; -webkit-appearance: none; position: relative; display: flex; align-items: center; justify-content: center; border-radius: 2px; cursor: pointer;}.cky-opt-out-checkbox-wrapper input[type=\"checkbox\"].cky-opt-out-checkbox:checked{background-color: #1863dc; border: none;}.cky-opt-out-checkbox-wrapper input[type=\"checkbox\"].cky-opt-out-checkbox:checked::after{left: 6px; bottom: 4px; width: 7px; height: 13px; border: solid #ffffff; border-width: 0 3px 3px 0; border-radius: 2px; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); content: \"\"; position: absolute; box-sizing: border-box;}.cky-opt-out-checkbox-wrapper.cky-disabled .cky-opt-out-checkbox-label,.cky-opt-out-checkbox-wrapper.cky-disabled input[type=\"checkbox\"].cky-opt-out-checkbox{cursor: no-drop;}.cky-gpc-wrapper{margin: 0 0 0 32px;}.cky-footer-wrapper .cky-opt-out-btn-wrapper{display: flex; flex-wrap: wrap; align-items: center; justify-content: center; padding: 22px 24px;}.cky-opt-out-btn-wrapper .cky-btn{flex: auto; max-width: 100%; text-shadow: none; box-shadow: none;}.cky-opt-out-btn-wrapper .cky-btn-cancel{border: 1px solid #dedfe0; background: transparent; color: #858585;}.cky-opt-out-btn-wrapper .cky-btn-confirm{background: #1863dc; color: #ffffff; border: 1px solid #1863dc;}@media (max-width: 352px){.cky-opt-out-checkbox-wrapper .cky-opt-out-checkbox-label{font-size: 14px;}.cky-gpc-wrapper .cky-gpc-desc, .cky-gpc-wrapper .cky-gpc-desc *{font-size: 12px;}.cky-opt-out-checkbox-wrapper input[type=\"checkbox\"].cky-opt-out-checkbox{width: 16px; height: 16px;}.cky-opt-out-checkbox-wrapper input[type=\"checkbox\"].cky-opt-out-checkbox:checked::after{left: 5px; bottom: 4px; width: 3px; height: 9px;}.cky-gpc-wrapper{margin: 0 0 0 28px;}}.video-placeholder-youtube{background-size: 100% 100%; background-position: center; background-repeat: no-repeat; background-color: #b2b0b059; position: relative; display: flex; align-items: center; justify-content: center; max-width: 100%;}.video-placeholder-text-youtube{text-align: center; align-items: center; padding: 10px 16px; background-color: #000000cc; color: #ffffff; border: 1px solid; border-radius: 2px; cursor: pointer;}.video-placeholder-normal{background-image: url(\"\/wp-content\/plugins\/cookie-law-info\/lite\/frontend\/images\/placeholder.svg\"); background-size: 80px; background-position: center; background-repeat: no-repeat; background-color: #b2b0b059; position: relative; display: flex; align-items: flex-end; justify-content: center; max-width: 100%;}.video-placeholder-text-normal{align-items: center; padding: 10px 16px; text-align: center; border: 1px solid; border-radius: 2px; cursor: pointer;}.cky-rtl{direction: rtl; text-align: right;}.cky-rtl .cky-banner-btn-close{left: 9px; right: auto;}.cky-rtl .cky-notice-btn-wrapper .cky-btn:last-child{margin-right: 8px;}.cky-rtl .cky-notice-btn-wrapper .cky-btn:first-child{margin-right: 0;}.cky-rtl .cky-notice-btn-wrapper{margin-left: 0; margin-right: 15px;}.cky-rtl .cky-prefrence-btn-wrapper .cky-btn{margin-right: 8px;}.cky-rtl .cky-prefrence-btn-wrapper .cky-btn:first-child{margin-right: 0;}.cky-rtl .cky-accordion .cky-accordion-chevron i::before{border: none; border-left: 1.4px solid; border-top: 1.4px solid; left: 12px;}.cky-rtl .cky-accordion.cky-accordion-active .cky-accordion-chevron i::before{-webkit-transform: rotate(-135deg); -moz-transform: rotate(-135deg); -ms-transform: rotate(-135deg); -o-transform: rotate(-135deg); transform: rotate(-135deg);}@media (max-width: 768px){.cky-rtl .cky-notice-btn-wrapper{margin-right: 0;}}@media (max-width: 576px){.cky-rtl .cky-notice-btn-wrapper .cky-btn:last-child{margin-right: 0;}.cky-rtl .cky-prefrence-btn-wrapper .cky-btn{margin-right: 0;}.cky-rtl .cky-accordion.cky-accordion-active .cky-accordion-body{padding: 0 22px 0 0;}}@media (max-width: 425px){.cky-rtl .cky-accordion.cky-accordion-active .cky-accordion-body{padding: 0 15px 0 0;}}.cky-rtl .cky-opt-out-btn-wrapper .cky-btn{margin-right: 12px;}.cky-rtl .cky-opt-out-btn-wrapper .cky-btn:first-child{margin-right: 0;}.cky-rtl .cky-opt-out-checkbox-wrapper .cky-opt-out-checkbox-label{margin: 0 12px 0 0;}"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://hungexpo.hu/wp-content/plugins/cookie-law-info/lite/frontend/js/script.min.js?ver=3.2.8" id="cookie-law-info-js"></script>
+<script type="text/javascript" src="https://hungexpo.hu/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://hungexpo.hu/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" id="jquery-migrate-js-after">
+/* <![CDATA[ */
+jQuery(document).ready(function(){
+	jQuery('.wp-block-button.blank > .wp-block-button__link').each(function(){
+		if ( jQuery(this).attr('target') != '_blank' ) {
+			jQuery(this).attr('target', '_blank');
+			jQuery(this).attr('rel', 'external noreferrer noopener');
+			jQuery(this).append('<span class="screen-reader-text" style="clip:rect(1px,1px,1px,1px);overflow:hidden;position:absolute !important;height:1px;width:1px;"> (opens in a new window)</span>');
+		}
+	});
+});
+		
+/* ]]> */
+</script>
+<script type="text/javascript" id="dlm-public-js-extra">
+/* <![CDATA[ */
+var dlmVars = {"logStatus":"enabled","jsErrorLogging":{"status":"","url":"https:\/\/hungexpo.hu\/wp-admin\/admin-ajax.php","nonce":"1bce9f2fe9","action":"log_js_errors"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://hungexpo.hu/wp-content/plugins/debug-log-manager/assets/js/public.js?ver=2.3.6" id="dlm-public-js"></script>
+<script type="text/javascript" src="https://hungexpo.hu/wp-content/themes/frontend/minified-js/popper.min.js?ver=6.4.5" id="popperjs-js"></script>
+<script type="text/javascript" src="https://hungexpo.hu/wp-content/themes/frontend/minified-js/custom.min.js?ver=1794951929" id="custom-js"></script>
+<script type="text/javascript" src="https://hungexpo.hu/wp-content/themes/frontend/minified-js/filter-script.min.js?ver=1794951923" id="filter-script-js"></script>
+<script type="text/javascript" src="https://hungexpo.hu/wp-content/themes/frontend/minified-js/mobile-menu-script.min.js?ver=1794951926" id="mobile-menu-script-js"></script>
+<script type="text/javascript" src="https://hungexpo.hu/wp-content/themes/frontend/minified-js/header-carousel-script.min.js?ver=1794951924" id="header-carousel-script-js"></script>
+<script type="text/javascript" src="https://hungexpo.hu/wp-content/themes/frontend/minified-js/embed-script.min.js?ver=1794951926" id="embed-script-js"></script>
+<script type="text/javascript" src="https://hungexpo.hu/wp-content/themes/frontend/minified-js/header-search-script.min.js?ver=1794951926" id="header-search-script-js"></script>
+<script type="text/javascript" src="https://hungexpo.hu/wp-content/themes/frontend/minified-js/mobile-select-script.min.js?ver=1794951925" id="mobile-select-script-js"></script>
+<script type="text/javascript" src="https://hungexpo.hu/wp-content/themes/frontend/minified-js/home-script.min.js?ver=1794951923" id="home-script-js"></script>
+<script type="text/javascript" src="https://hungexpo.hu/wp-content/themes/frontend/minified-js/dropdown-nav-script.min.js?ver=1794951925" id="dropdown-nav-script-js"></script>
+<script type="text/javascript" src="https://hungexpo.hu/wp-content/themes/frontend/minified-js/interactive-map.min.js?ver=1794951920" id="interactive-map-js"></script>
+<script type="text/javascript" src="https://hungexpo.hu/wp-content/themes/frontend/minified-js/map-hover.min.js?ver=1794951928" id="map-hover-js"></script>
+<script type="text/javascript" src="https://hungexpo.hu/wp-content/themes/frontend/minified-js/bootstrap.min.js?ver=6.4.5" id="bootstrap-js"></script>
+<script type="text/javascript" src="https://hungexpo.hu/wp-content/themes/frontend/royalslider/jquery.royalslider.min.js?ver=1725970328" id="royalslider-js"></script>
+<link rel="https://api.w.org/" href="https://hungexpo.hu/en/wp-json/" /><link rel="alternate" type="application/json" href="https://hungexpo.hu/en/wp-json/wp/v2/locations/17389" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://hungexpo.hu/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.4.5" />
+<link rel='shortlink' href='https://hungexpo.hu/en/?p=17389' />
+<link rel="alternate" type="application/json+oembed" href="https://hungexpo.hu/en/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fhungexpo.hu%2Fen%2Flocations%2Fnew-congress-centre-in-hall-c%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://hungexpo.hu/en/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fhungexpo.hu%2Fen%2Flocations%2Fnew-congress-centre-in-hall-c%2F&#038;format=xml" />
+<meta name="generator" content="WPML ver:4.7.6 stt:1,23;" />
+<style id="cky-style-inline">[data-cky-tag]{visibility:hidden;}</style><meta name="generator" content="Site Kit by Google 1.156.0" /><style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>		<style type="text/css" id="wp-custom-css">
+			 .grecaptcha-badge {
+  width: 70px !important;
+  overflow: hidden !important;
+  transition: all 0.3s ease !important;
+  left: 4px !important;
+	bottom: 80px !important;
+	z-index: 9999 !important;
+}
+.grecaptcha-badge:hover {
+  width: 256px !important;
+}		</style>
+		</head>
+
+<body class="locations-template-default single single-locations postid-17389">
+
+		<div id="eventBodyContainer" style="display: none;"
+		data-script-content=""></div>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			checkAndLoadContent('marketing', 'eventBodyContainer', 'data-script-content');
+		});
+	</script>
+
+	<!-- Always load tracking codes regardless of cookie settings -->
+	
+	<div id="page" class="page wrapper">
+		<div class="header">
+			<div class="header__top h-bg--white">
+				<div class="container container--wide">
+					<div class="header__top__inner">
+						<div class="header__top__inner__item">
+							<a href="https://hungexpo.hu/en/">
+    <img src="https://hungexpo.hu/wp-content/themes/frontend/assets/images/hungexpo-logo.png?v=2" class="logo" alt="Hungexpo logo">
+</a>
+
+							<nav class="header__top__inner__nav d-none d-lg-block">
+								<div class="menu-menu-1-angol-container"><ul id="top nav" class="menu"><li id="menu-item-14357" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14357"><a href="https://hungexpo.hu/en/hungexpo/">About us</a></li>
+<li id="menu-item-14358" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14358"><a href="https://hungexpo.hu/en/news/">Press</a></li>
+<li id="menu-item-14359" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14359"><a href="https://hungexpo.hu/en/contact/">Contact</a></li>
+<li id="menu-item-14360" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-14360"><a href="https://hungexpo.hu/en/exhibitors-zone/">Exhibitors’ zone</a></li>
+<li id="menu-item-96208" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-96208"><a href="https://hungexpo.hu/en/sustainability/">Sustainability</a></li>
+</ul></div>							</nav>
+						</div>
+
+						<div class="d-flex">
+							<div class="header__top__inner__item">
+								<div class="d-xl-flex">
+
+									<div class="header__top__controls d-xxl-flex">
+										<div class="search-form d-none d-lg-block">
+    <form id="searchform" class="search-form__form" method="get" action="https://hungexpo.hu/en/">
+        <div class="input">
+            <div class="form-group m-0">
+                <input type="text" class="form-control search-field" name="s" data-placeholder="Search" value="">
+            </div>
+        </div>
+    </form>
+
+    <div class="search-form__toggle">
+        <a href="#" class="search-form__toggle__button">
+            <i class="fa fa-search h-fw--700"></i>
+        </a>
+    </div>
+</div>
+
+										<a href="http://www.facebook.com/share.php?u=https://hungexpo.hu"
+											onclick="window.open(this.href)" target="_blank">
+											<i class="fa fa-share-alt"></i>
+										</a>
+									</div>
+								</div>
+
+								<div class="header__lang">
+    
+    <div class="dropdown">
+                    
+                                                <div class="dropdown-menu" aria-labelledby="langDropdownButton">
+                        <a class="dropdown-item" href="https://hungexpo.hu/locations/new-congress-centre-in-hall-c-2/">
+                            hu                        </a>
+                    </div>
+                                                                <button class="dropdown-toggle has-menu" id="langDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        en                    </button>
+                                        </div>
+</div>
+							</div>
+
+							<div class="header__top__inner__item d-lg-none">
+								<div class="header__menu-btn">
+									<i class="fa fa-bars"></i>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="header__bottom h-bg--black d-none d-lg-block">
+				<div class="container container--wide">
+					<div class="header__bottom__inner">
+						<div class="header__bottom__inner__nav">
+							<div class="menu-menu-2-angol-container"><ul id="services-menu" class="menu"><li id="menu-item-14361" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-14361"><a href="#">Exhibitions</a>
+<ul class="sub-menu">
+	<li id="menu-item-104065" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-104065"><a href="https://hungexpo.hu/en/events/">For visitors</a></li>
+	<li id="menu-item-101265" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-101265"><a href="https://hungexpo.hu/en/our-services/">For exhibitors</a></li>
+</ul>
+</li>
+<li id="menu-item-16305" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-ancestor current-menu-parent current_page_parent current_page_ancestor menu-item-has-children menu-item-16305"><a href="https://hungexpo.hu/en/hosted-events/">Event venue</a>
+<ul class="sub-menu">
+	<li id="menu-item-17504" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-17504"><a href="https://hungexpo.hu/en/hosted-events/venues/">HALLS</a></li>
+	<li id="menu-item-76737" class="menu-item menu-item-type-post_type menu-item-object-locations current-menu-item menu-item-76737"><a href="https://hungexpo.hu/en/locations/new-congress-centre-in-hall-c/" aria-current="page">Congress Centre</a></li>
+	<li id="menu-item-71788" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-71788"><a href="https://hungexpo.hu/en/hosted-events/references/">References</a></li>
+	<li id="menu-item-16359" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-16359"><a href="https://hungexpo.hu/en/hosted-events/budapest-info/">Budapest Info</a></li>
+	<li id="menu-item-70919" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70919"><a href="https://hungexpo.hu/en/accessiblity/">Accessiblity</a></li>
+	<li id="menu-item-70918" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70918"><a href="https://hungexpo.hu/en/sustainability-2/">Sustainability</a></li>
+	<li id="menu-item-18278" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-18278"><a href="https://hungexpo.hu/en/hosted-events/our-sales-team/">Hosted Events Team</a></li>
+	<li id="menu-item-83219" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-83219"><a href="https://hungexpo.hu/en/hosted-events/request-for-proposal/">Request for proposal</a></li>
+	<li id="menu-item-70922" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70922"><a href="https://hungexpo.hu/en/sustainability-2/">Sustainability</a></li>
+	<li id="menu-item-70923" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70923"><a href="https://hungexpo.hu/en/accessiblity/">Accessiblity</a></li>
+</ul>
+</li>
+<li id="menu-item-16292" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-16292"><a href="https://hungexpo.hu/en/services/">Services</a>
+<ul class="sub-menu">
+	<li id="menu-item-16301" class="menu-item menu-item-type-post_type menu-item-object-services menu-item-16301"><a href="https://hungexpo.hu/en/services/furniture-rental/">Furniture rental</a></li>
+	<li id="menu-item-16303" class="menu-item menu-item-type-post_type menu-item-object-services menu-item-16303"><a href="https://hungexpo.hu/en/services/catering/">Catering</a></li>
+	<li id="menu-item-16302" class="menu-item menu-item-type-post_type menu-item-object-services menu-item-16302"><a href="https://hungexpo.hu/en/services/rendezvenytechnika/">Event technology services</a></li>
+	<li id="menu-item-96196" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-96196"><a href="https://hungexpo.hu/en/services/decoration/">Decoration</a></li>
+	<li id="menu-item-16304" class="menu-item menu-item-type-post_type menu-item-object-services menu-item-16304"><a href="https://hungexpo.hu/en/services/exhibition-implementation/">Exhibition implementation</a></li>
+	<li id="menu-item-16300" class="menu-item menu-item-type-post_type menu-item-object-services menu-item-16300"><a href="https://hungexpo.hu/en/services/event-organization/">Event organization</a></li>
+</ul>
+</li>
+<li id="menu-item-96277" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-96277"><a href="https://hungexpo.hu/en/hosted-events/filminglocations/">Filming studios &#038; locations</a>
+<ul class="sub-menu">
+	<li id="menu-item-97130" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-97130"><a href="https://hungexpo.hu/en/hosted-events/filminglocations/studios/">STUDIOS</a></li>
+	<li id="menu-item-99508" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99508"><a href="https://hungexpo.hu/en/hosted-events/filminglocations/locations/">LOCATIONS</a></li>
+	<li id="menu-item-99758" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-99758"><a href="https://hungexpo.hu/en/hosted-events/filminglocations/services/">SERVICES</a></li>
+</ul>
+</li>
+</ul></div>						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		<div id="content" class="site-content">
+
+<section class="section p-0 location-navigation">
+    <div class="banner-with-text">
+
+                
+            <div class="banner-with-text__image">
+                <img src="https://hungexpo.hu/wp-content/uploads/Ese_1_day_137.jpg" alt="CONGRESS CENTRE">
+            </div>
+
+        
+    </div>
+
+</section>
+
+<div class="single-location">
+	
+	
+		<div class="title">
+			<div class="title__main-title">
+				<h1><span>CONGRESS CENTRE</span></h1>			</div>
+		</div>
+	
+	<section class="section section--margin-big--top h-bg--grey">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-4 col-lg-6 px-0 px-md-3">
+
+																
+				</div>
+				<div class="col-12 col-md-8 col-lg-6 pl-lg-5">
+					<div class="dynamic-content">
+						<p>In size, complexity and service level the Congress Centre is Hungary’s premier, high-capacity conference centre. The building offers a total of 15000 sqm event space on three levels. Escalators and elevators provide convenient guest flow between floors. Car-size freight elevators help event logistics. The Congress Centre is equipped with state-of-the-art audio-visual technology.</p>
+<div class="wp-block-image">
+<figure class="alignleft is-resized"><a href="https://myalbum.com/album/3A34wjzGqSJg/" target="_blank" rel="noreferrer noopener"><img decoding="async" class="wp-image-72346" src="https://hungexpo.hu/wp-content/uploads/Névtelens.png" alt="" width="209" height="67" /></a></figure>
+</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-12">
+					<div class="dynamic-content dynamic-content--justified">
+						
+<div style="height:50px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-layout-1 wp-block-buttons-is-layout-flex">
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://hungexpo.hu/en/hosted-events/request-for-proposal/" target="_blank" rel="noreferrer noopener">Request for our tailor-made proposal</a></div>
+</div>
+
+
+
+<div style="height:75px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+<iframe title="HUNGEXPO Congress Centre" width="640" height="360" src="https://www.youtube.com/embed/s1fRBtS54qo?list=PLbp9N6noZGnwOSyq5t3d47nLeDJAD2s4p" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div></figure>
+
+
+
+<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div class="wp-block-media-text alignwide"><figure class="wp-block-media-text__media"><img fetchpriority="high" decoding="async" width="900" height="675" src="https://preview.hungexpo.hu/wp-content/uploads/Hunexpo0916-61.jpg" alt="" class="wp-image-71307 size-full" srcset="https://hungexpo.hu/wp-content/uploads/Hunexpo0916-61.jpg 900w, https://hungexpo.hu/wp-content/uploads/Hunexpo0916-61-300x225.jpg 300w, https://hungexpo.hu/wp-content/uploads/Hunexpo0916-61-768x576.jpg 768w" sizes="(max-width: 900px) 100vw, 900px" /></figure><div class="wp-block-media-text__content">
+<h2 class="wp-block-heading"><strong>Ground floor</strong></h2>
+
+
+
+<p> On arrival guests are welcomed in the 1 000 sqm spacious reception hall surrounded by glass walls with visitor registration and a cloakroom. There is a 2 500 sqm exhibition area with 10 meters internal height on one side of the reception hall which can be divided into three section rooms, up to 6-700 pax theatre style, each. On the other side of the hall there are a total of six rooms for 200 people each and can be connected to 400 and 600 people rooms. In addition, four rooms for 100 people are located here, all section rooms with built-in AV technology. The space in front of the meeting rooms is 1 100 square meters and it is ideal for coffee breaks, popup exhibitions, e-poster sections. </p>
+</div></div>
+
+
+
+<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter is-resized"><img decoding="async" width="1024" height="461" src="https://hungexpo.hu/wp-content/uploads//C_foldszint_tablazat_EN-1024x461.png" alt="" class="wp-image-71642" style="width:880px" srcset="https://hungexpo.hu/wp-content/uploads/C_foldszint_tablazat_EN-1024x461.png 1024w, https://hungexpo.hu/wp-content/uploads/C_foldszint_tablazat_EN-300x135.png 300w, https://hungexpo.hu/wp-content/uploads/C_foldszint_tablazat_EN-768x346.png 768w, https://hungexpo.hu/wp-content/uploads/C_foldszint_tablazat_EN.png 1540w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure></div>
+
+
+<div class="wp-block-columns has-2-columns is-layout-flex wp-container-core-columns-layout-1 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<div class="wp-block-button aligncenter"><a class="wp-block-button__link" href="https://vr.hungexpo.hu/?lg=en&amp;detail=c_szekcio_nagy" target="_blank" rel="noopener noreferrer">Virtual tour</a></div>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<div class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-layout-2 wp-block-buttons-is-layout-flex">
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://hungexpo.hu/en/hosted-events/request-for-proposal/" target="_blank" rel="noreferrer noopener">Request for proposal</a></div>
+</div>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<div class="wp-block-button aligncenter"><a class="wp-block-button__link" href="https://hungexpo.hu/wp-content/uploads/C_foldszint.pdf" target="_blank" rel="noopener noreferrer">Floorplan</a></div>
+</div>
+</div>
+
+
+
+<div style="height:170px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div class="wp-block-media-text alignwide has-media-on-the-right"><div class="wp-block-media-text__content">
+<h2 class="wp-block-heading"><strong>Gallery Floor</strong></h2>
+
+
+
+<p>The gallery level has 16 rooms, 50pax each, located on 1 200 square meters. These rooms can be connected by mobile walls creating 100 to 150 pax rooms for different events. In front of the rooms, the 7 meter wide, 800 m2 large space offers excellent location for coffee breaks.</p>
+</div><figure class="wp-block-media-text__media"><img decoding="async" width="900" height="675" src="https://preview.hungexpo.hu/wp-content/uploads/C-galéria.jpg" alt="" class="wp-image-71309 size-full" srcset="https://hungexpo.hu/wp-content/uploads/C-galéria.jpg 900w, https://hungexpo.hu/wp-content/uploads/C-galéria-300x225.jpg 300w, https://hungexpo.hu/wp-content/uploads/C-galéria-768x576.jpg 768w" sizes="(max-width: 900px) 100vw, 900px" /></figure></div>
+
+
+
+<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter is-resized"><img decoding="async" width="1024" height="311" src="https://hungexpo.hu/wp-content/uploads//C_galeria_tablazat_EN-1024x311.png" alt="" class="wp-image-71647" style="width:880px" srcset="https://hungexpo.hu/wp-content/uploads/C_galeria_tablazat_EN-1024x311.png 1024w, https://hungexpo.hu/wp-content/uploads/C_galeria_tablazat_EN-300x91.png 300w, https://hungexpo.hu/wp-content/uploads/C_galeria_tablazat_EN-768x234.png 768w, https://hungexpo.hu/wp-content/uploads/C_galeria_tablazat_EN.png 1381w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure></div>
+
+
+<div class="wp-block-columns has-2-columns is-layout-flex wp-container-core-columns-layout-2 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<div class="wp-block-button aligncenter"><a class="wp-block-button__link" href="https://vr.hungexpo.hu/?lg=en&amp;detail=c_szekcio_kicsi" target="_blank" rel="noopener noreferrer">Virtual tour</a></div>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<div class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-layout-3 wp-block-buttons-is-layout-flex">
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://hungexpo.hu/en/hosted-events/request-for-proposal/" target="_blank" rel="noreferrer noopener">Request for proposal</a></div>
+</div>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<div class="wp-block-button aligncenter"><a class="wp-block-button__link" href="https://hungexpo.hu/wp-content/uploads/C_galeria-EN.pdf" target="_blank" rel="noopener noreferrer">Floorplan</a></div>
+</div>
+</div>
+
+
+
+<div style="height:70px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div id="new-royalslider-1" class="royalSlider new-royalslider-1 rsUni rs-image-gallery" style="width:100%;height:500px;;" data-rs-options='{&quot;template&quot;:&quot;default&quot;,&quot;image_generation&quot;:{&quot;lazyLoading&quot;:&quot;true&quot;,&quot;imageWidth&quot;:&quot;&quot;,&quot;imageHeight&quot;:&quot;&quot;,&quot;thumbImageWidth&quot;:96,&quot;thumbImageHeight&quot;:72},&quot;thumbs&quot;:{&quot;paddingBottom&quot;:4,&quot;thumbWidth&quot;:96,&quot;thumbHeight&quot;:72,&quot;appendSpan&quot;:&quot;true&quot;},&quot;fullscreen&quot;:{&quot;enabled&quot;:&quot;true&quot;,&quot;nativeFS&quot;:&quot;true&quot;},&quot;video&quot;:[],&quot;width&quot;:&quot;100%&quot;,&quot;height&quot;:500,&quot;autoScaleSlider&quot;:&quot;true&quot;,&quot;autoScaleSliderWidth&quot;:960,&quot;autoScaleSliderHeight&quot;:850,&quot;controlNavigation&quot;:&quot;thumbnails&quot;,&quot;arrowsNavHideOnTouch&quot;:&quot;true&quot;,&quot;globalCaptionInside&quot;:&quot;true&quot;,&quot;keyboardNavEnabled&quot;:&quot;true&quot;,&quot;fadeinLoadedSlide&quot;:&quot;false&quot;}'>
+<div class="rsContent">
+  <a class="rsImg" href="https://hungexpo.hu/wp-content/uploads/Hunexpo0916-5-1-1024x683.jpg" data-rsBigImg="https://hungexpo.hu/wp-content/uploads/Hunexpo0916-5-1.jpg">Hunexpo0916-5</a>
+  <div class="rsTmb"><img decoding="async" src="https://hungexpo.hu/wp-content/uploads/Hunexpo0916-5-1-96x72.jpg" alt="" /></div>
+  
+  
+</div>
+<div class="rsContent">
+  <a class="rsImg" href="https://hungexpo.hu/wp-content/uploads/C-regi-fentr┼Ĺl-1024x683.jpg" data-rsBigImg="https://hungexpo.hu/wp-content/uploads/C-regi-fentr┼Ĺl.jpg">C regi fentr┼Ĺl</a>
+  <div class="rsTmb"><img decoding="async" src="https://hungexpo.hu/wp-content/uploads/C-regi-fentr┼Ĺl-96x72.jpg" alt="" /></div>
+  
+  
+</div>
+<div class="rsContent">
+  <a class="rsImg" href="https://hungexpo.hu/wp-content/uploads/Hunexpo0916-6-1-1024x683.jpg" data-rsBigImg="https://hungexpo.hu/wp-content/uploads/Hunexpo0916-6-1.jpg">Hunexpo0916-6</a>
+  <div class="rsTmb"><img decoding="async" src="https://hungexpo.hu/wp-content/uploads/Hunexpo0916-6-1-96x72.jpg" alt="" /></div>
+  
+  
+</div>
+<div class="rsContent">
+  <a class="rsImg" href="https://hungexpo.hu/wp-content/uploads/C-pavilon-47-1024x768.jpg" data-rsBigImg="https://hungexpo.hu/wp-content/uploads/C-pavilon-47.jpg">C pavilon (47)</a>
+  <div class="rsTmb"><img decoding="async" src="https://hungexpo.hu/wp-content/uploads/C-pavilon-47-96x72.jpg" alt="" /></div>
+  
+  
+</div>
+<div class="rsContent">
+  <a class="rsImg" href="https://hungexpo.hu/wp-content/uploads/EventTouch22_059-1024x683.jpg" data-rsBigImg="https://hungexpo.hu/wp-content/uploads/EventTouch22_059.jpg">EventTouch22_059</a>
+  <div class="rsTmb"><img decoding="async" src="https://hungexpo.hu/wp-content/uploads/EventTouch22_059-96x72.jpg" alt="" /></div>
+  
+  
+</div>
+<div class="rsContent">
+  <a class="rsImg" href="https://hungexpo.hu/wp-content/uploads/ABP0050-1024x681.jpg" data-rsBigImg="https://hungexpo.hu/wp-content/uploads/ABP0050.jpg">_ABP0050</a>
+  <div class="rsTmb"><img decoding="async" src="https://hungexpo.hu/wp-content/uploads/ABP0050-96x72.jpg" alt="" /></div>
+  
+  
+</div>
+<div class="rsContent">
+  <a class="rsImg" href="https://hungexpo.hu/wp-content/uploads/ESE_017-1-1024x683.jpg" data-rsBigImg="https://hungexpo.hu/wp-content/uploads/ESE_017-1.jpg">ESE_017</a>
+  <div class="rsTmb"><img decoding="async" src="https://hungexpo.hu/wp-content/uploads/ESE_017-1-96x72.jpg" alt="" /></div>
+  
+  
+</div>
+<div class="rsContent">
+  <a class="rsImg" href="https://hungexpo.hu/wp-content/uploads/EventTouch22_0771-1024x683.jpg" data-rsBigImg="https://hungexpo.hu/wp-content/uploads/EventTouch22_0771.jpg">EventTouch22_077(1)</a>
+  <div class="rsTmb"><img decoding="async" src="https://hungexpo.hu/wp-content/uploads/EventTouch22_0771-96x72.jpg" alt="" /></div>
+  
+  
+</div>
+<div class="rsContent">
+  <a class="rsImg" href="https://hungexpo.hu/wp-content/uploads/IMG_6624-1024x515.jpg" data-rsBigImg="https://hungexpo.hu/wp-content/uploads/IMG_6624.jpg">IMG_6624</a>
+  <div class="rsTmb"><img decoding="async" src="https://hungexpo.hu/wp-content/uploads/IMG_6624-96x72.jpg" alt="" /></div>
+  
+  
+</div>
+<div class="rsContent">
+  <a class="rsImg" href="https://hungexpo.hu/wp-content/uploads/ESE_266-1-1024x683.jpg" data-rsBigImg="https://hungexpo.hu/wp-content/uploads/ESE_266-1.jpg">ESE_266</a>
+  <div class="rsTmb"><img decoding="async" src="https://hungexpo.hu/wp-content/uploads/ESE_266-1-96x72.jpg" alt="" /></div>
+  
+  
+</div>
+<div class="rsContent">
+  <a class="rsImg" href="https://hungexpo.hu/wp-content/uploads/ESE_109-1024x683.jpg" data-rsBigImg="https://hungexpo.hu/wp-content/uploads/ESE_109.jpg">ESE_109</a>
+  <div class="rsTmb"><img decoding="async" src="https://hungexpo.hu/wp-content/uploads/ESE_109-96x72.jpg" alt="" /></div>
+  
+  
+</div>
+<div class="rsContent">
+  <a class="rsImg" href="https://hungexpo.hu/wp-content/uploads/C-pavilon-10-1024x683.jpg" data-rsBigImg="https://hungexpo.hu/wp-content/uploads/C-pavilon-10.jpg">C pavilon (10)</a>
+  <div class="rsTmb"><img decoding="async" src="https://hungexpo.hu/wp-content/uploads/C-pavilon-10-96x72.jpg" alt="" /></div>
+  
+  
+</div>
+<div class="rsContent">
+  <a class="rsImg" href="https://hungexpo.hu/wp-content/uploads/ESE_057-1024x683.jpg" data-rsBigImg="https://hungexpo.hu/wp-content/uploads/ESE_057.jpg">ESE_057</a>
+  <div class="rsTmb"><img decoding="async" src="https://hungexpo.hu/wp-content/uploads/ESE_057-96x72.jpg" alt="" /></div>
+  
+  
+</div>
+<div class="rsContent">
+  <a class="rsImg" href="https://hungexpo.hu/wp-content/uploads/C-pavilon-43-1024x768.jpg" data-rsBigImg="https://hungexpo.hu/wp-content/uploads/C-pavilon-43.jpg">C pavilon (43)</a>
+  <div class="rsTmb"><img decoding="async" src="https://hungexpo.hu/wp-content/uploads/C-pavilon-43-96x72.jpg" alt="" /></div>
+  
+  
+</div>
+<div class="rsContent">
+  <a class="rsImg" href="https://hungexpo.hu/wp-content/uploads/ESE_056-1024x683.jpg" data-rsBigImg="https://hungexpo.hu/wp-content/uploads/ESE_056.jpg">ESE_056</a>
+  <div class="rsTmb"><img decoding="async" src="https://hungexpo.hu/wp-content/uploads/ESE_056-96x72.jpg" alt="" /></div>
+  
+  
+</div>
+
+</div>
+
+
+
+
+<div style="height:170px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div class="wp-block-media-text alignwide"><figure class="wp-block-media-text__media"><img decoding="async" width="900" height="675" src="https://preview.hungexpo.hu/wp-content/uploads/Ese_1_day_132.jpg" alt="" class="wp-image-71311 size-full" srcset="https://hungexpo.hu/wp-content/uploads/Ese_1_day_132.jpg 900w, https://hungexpo.hu/wp-content/uploads/Ese_1_day_132-300x225.jpg 300w, https://hungexpo.hu/wp-content/uploads/Ese_1_day_132-768x576.jpg 768w" sizes="(max-width: 900px) 100vw, 900px" /></figure><div class="wp-block-media-text__content">
+<h2 class="wp-block-heading"><strong>Plenary Floor</strong> <strong>and foyer</strong></h2>
+
+
+
+<p>Upstairs is the plenary hall for 2 000 people on 1 900 square meters, surrounded by a lobby area.  The 1 670 sqm foyer opening from the plenary hall is an excellent location for coffee breaks and standing receptions. The plenary hall can be divided into two to three parallel section rooms by mobile walls. The Gala seating system is the special feature of this hall: with the revolving seats, the hall can be easily and time-efficiently converted from theatre style to auditorium style or to a gala seating on a flat floor. Altogether there are 8 pre-programmed layout configurations with different settings and capacities.</p>
+</div></div>
+
+
+
+<div style="height:20px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter is-resized"><img decoding="async" width="1024" height="499" src="https://hungexpo.hu/wp-content/uploads//C_plenaris_tablazat_EN-1024x499.png" alt="" class="wp-image-71651" style="width:880px" srcset="https://hungexpo.hu/wp-content/uploads/C_plenaris_tablazat_EN-1024x499.png 1024w, https://hungexpo.hu/wp-content/uploads/C_plenaris_tablazat_EN-300x146.png 300w, https://hungexpo.hu/wp-content/uploads/C_plenaris_tablazat_EN-768x374.png 768w, https://hungexpo.hu/wp-content/uploads/C_plenaris_tablazat_EN.png 1274w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure></div>
+
+
+<div class="wp-block-columns has-3-columns is-layout-flex wp-container-core-columns-layout-3 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<div class="wp-block-button aligncenter"><a class="wp-block-button__link" href="https://vr.hungexpo.hu/?lg=en&amp;detail=c_plenaris_szint" target="_blank" rel="noopener noreferrer">Virtual tour</a></div>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<div class="wp-block-button aligncenter"><a class="wp-block-button__link" href="https://hungexpo.hu/wp-content/uploads/C_plenaris_EN.pdf" target="_blank" rel="noopener noreferrer">Floorplan</a></div>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<div class="wp-block-button aligncenter"><a class="wp-block-button__link" href="https://hungexpo.hu/wp-content/uploads/Congress-Plenary-configurations.pdf" target="_blank" rel="noopener noreferrer">Floor configurations</a></div>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<div class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-layout-4 wp-block-buttons-is-layout-flex">
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://hungexpo.hu/en/hosted-events/request-for-proposal/" target="_blank" rel="noreferrer noopener">Request for proposal</a></div>
+</div>
+</div>
+</div>
+
+
+
+<div style="height:170px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div class="wp-block-media-text alignwide"><figure class="wp-block-media-text__media"><img decoding="async" width="900" height="675" src="https://preview.hungexpo.hu/wp-content/uploads/Hunexpo0916-3-2.jpg" alt="" class="wp-image-71081 size-full" srcset="https://hungexpo.hu/wp-content/uploads/Hunexpo0916-3-2.jpg 900w, https://hungexpo.hu/wp-content/uploads/Hunexpo0916-3-2-300x225.jpg 300w, https://hungexpo.hu/wp-content/uploads/Hunexpo0916-3-2-768x576.jpg 768w" sizes="(max-width: 900px) 100vw, 900px" /></figure><div class="wp-block-media-text__content">
+<h2 class="wp-block-heading"><strong>Roof terrace</strong></h2>
+
+
+
+<p>A really nice and unique feature: the 2 350 sqm roof terrace above the exhibition space, which is a great outdoor space for receptions, coffee breaks when weather permits.</p>
+</div></div>
+
+
+
+<div class="wp-block-columns has-2-columns is-layout-flex wp-container-core-columns-layout-4 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<div class="wp-block-button aligncenter"><a class="wp-block-button__link" href="https://vr.hungexpo.hu/?lg=en&amp;detail=c_terasz" target="_blank" rel="noopener noreferrer">Virtual tour</a></div>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<div class="wp-block-button aligncenter"><a class="wp-block-button__link" href="https://hungexpo.hu/wp-content/uploads/C_terasz_EN.pdf" target="_blank" rel="noopener noreferrer">Floorplan</a></div>
+</div>
+</div>
+
+
+
+<div style="height:170px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div class="wp-block-media-text alignwide has-media-on-the-right"><div class="wp-block-media-text__content">
+<p class="has-large-font-size"><strong>Headbuilding</strong></p>
+
+
+
+<p>The headbuilding is connected to the exhibition area of the congress centre and has 4 levels. There are a total of 9 offices of 33-45 sqm on 2 floors above the 371 square meter ground floor foyer. The top floor of the headbuilding is connected to the roof terrace. The building is equipped with a car size freight elevator.</p>
+</div><figure class="wp-block-media-text__media"><img decoding="async" width="900" height="675" src="https://preview.hungexpo.hu/wp-content/uploads/ABP0139.jpg" alt="" class="wp-image-71478 size-full" srcset="https://hungexpo.hu/wp-content/uploads/ABP0139.jpg 900w, https://hungexpo.hu/wp-content/uploads/ABP0139-300x225.jpg 300w, https://hungexpo.hu/wp-content/uploads/ABP0139-768x576.jpg 768w" sizes="(max-width: 900px) 100vw, 900px" /></figure></div>
+
+
+
+<div class="wp-block-columns has-2-columns is-layout-flex wp-container-core-columns-layout-5 wp-block-columns-is-layout-flex">
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<div class="wp-block-button aligncenter"><a class="wp-block-button__link" href="https://vr.hungexpo.hu/?lg=en&amp;detail=c_fejepulet_fsz" target="_blank" rel="noopener noreferrer">Virtual tour</a></div>
+</div>
+
+
+
+<div class="wp-block-column is-layout-flow wp-block-column-is-layout-flow">
+<div class="wp-block-button aligncenter"><a class="wp-block-button__link" href="https://hungexpo.hu/wp-content/uploads/fejepulet_alaprajz_EN.pdf" target="_blank" rel="noopener noreferrer">Floorplan</a></div>
+</div>
+</div>
+
+
+
+<div style="height:70px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+<div id="new-royalslider-1" class="royalSlider new-royalslider-1 rsUni rs-image-gallery" style="width:100%;height:500px;;" data-rs-options='{&quot;template&quot;:&quot;default&quot;,&quot;image_generation&quot;:{&quot;lazyLoading&quot;:&quot;true&quot;,&quot;imageWidth&quot;:&quot;&quot;,&quot;imageHeight&quot;:&quot;&quot;,&quot;thumbImageWidth&quot;:96,&quot;thumbImageHeight&quot;:72},&quot;thumbs&quot;:{&quot;paddingBottom&quot;:4,&quot;thumbWidth&quot;:96,&quot;thumbHeight&quot;:72,&quot;appendSpan&quot;:&quot;true&quot;},&quot;fullscreen&quot;:{&quot;enabled&quot;:&quot;true&quot;,&quot;nativeFS&quot;:&quot;true&quot;},&quot;video&quot;:[],&quot;width&quot;:&quot;100%&quot;,&quot;height&quot;:500,&quot;autoScaleSlider&quot;:&quot;true&quot;,&quot;autoScaleSliderWidth&quot;:960,&quot;autoScaleSliderHeight&quot;:850,&quot;controlNavigation&quot;:&quot;thumbnails&quot;,&quot;arrowsNavHideOnTouch&quot;:&quot;true&quot;,&quot;globalCaptionInside&quot;:&quot;true&quot;,&quot;keyboardNavEnabled&quot;:&quot;true&quot;,&quot;fadeinLoadedSlide&quot;:&quot;false&quot;}'>
+<div class="rsContent">
+  <a class="rsImg" href="https://hungexpo.hu/wp-content/uploads/Ese_1_day_138-1024x683.jpg" data-rsBigImg="https://hungexpo.hu/wp-content/uploads/Ese_1_day_138.jpg">Ese_1_day_138</a>
+  <div class="rsTmb"><img decoding="async" src="https://hungexpo.hu/wp-content/uploads/Ese_1_day_138-96x72.jpg" alt="" /></div>
+  
+  
+</div>
+<div class="rsContent">
+  <a class="rsImg" href="https://hungexpo.hu/wp-content/uploads/BIE1302-1024x681.jpg" data-rsBigImg="https://hungexpo.hu/wp-content/uploads/BIE1302.jpg">_BIE1302</a>
+  <div class="rsTmb"><img decoding="async" src="https://hungexpo.hu/wp-content/uploads/BIE1302-96x72.jpg" alt="" /></div>
+  
+  
+</div>
+<div class="rsContent">
+  <a class="rsImg" href="https://hungexpo.hu/wp-content/uploads/PIXR0636-1024x683.jpg" data-rsBigImg="https://hungexpo.hu/wp-content/uploads/PIXR0636.jpg">PIXR0636</a>
+  <div class="rsTmb"><img decoding="async" src="https://hungexpo.hu/wp-content/uploads/PIXR0636-96x72.jpg" alt="" /></div>
+  
+  
+</div>
+<div class="rsContent">
+  <a class="rsImg" href="https://hungexpo.hu/wp-content/uploads/AB-HB-7-1024x681.jpg" data-rsBigImg="https://hungexpo.hu/wp-content/uploads/AB-HB-7.jpg">AB-HB-7</a>
+  <div class="rsTmb"><img decoding="async" src="https://hungexpo.hu/wp-content/uploads/AB-HB-7-96x72.jpg" alt="" /></div>
+  
+  
+</div>
+<div class="rsContent">
+  <a class="rsImg" href="https://hungexpo.hu/wp-content/uploads/52059762743_e484fed83a_5k-1024x682.jpg" data-rsBigImg="https://hungexpo.hu/wp-content/uploads/52059762743_e484fed83a_5k.jpg">52059762743_e484fed83a_5k</a>
+  <div class="rsTmb"><img decoding="async" src="https://hungexpo.hu/wp-content/uploads/52059762743_e484fed83a_5k-96x72.jpg" alt="" /></div>
+  
+  
+</div>
+<div class="rsContent">
+  <a class="rsImg" href="https://hungexpo.hu/wp-content/uploads/hungexpo_20211021_075655_DSC_4017-1024x684.jpg" data-rsBigImg="https://hungexpo.hu/wp-content/uploads/hungexpo_20211021_075655_DSC_4017.jpg">hungexpo_20211021_075655_DSC_4017</a>
+  <div class="rsTmb"><img decoding="async" src="https://hungexpo.hu/wp-content/uploads/hungexpo_20211021_075655_DSC_4017-96x72.jpg" alt="" /></div>
+  
+  
+</div>
+<div class="rsContent">
+  <a class="rsImg" href="https://hungexpo.hu/wp-content/uploads/C-pavilon-19-1024x642.jpg" data-rsBigImg="https://hungexpo.hu/wp-content/uploads/C-pavilon-19.jpg">C pavilon (19)</a>
+  <div class="rsTmb"><img decoding="async" src="https://hungexpo.hu/wp-content/uploads/C-pavilon-19-96x72.jpg" alt="" /></div>
+  
+  
+</div>
+<div class="rsContent">
+  <a class="rsImg" href="https://hungexpo.hu/wp-content/uploads/hungexpo_20211021_075955_DSC_4028-1024x684.jpg" data-rsBigImg="https://hungexpo.hu/wp-content/uploads/hungexpo_20211021_075955_DSC_4028.jpg">hungexpo_20211021_075955_DSC_4028</a>
+  <div class="rsTmb"><img decoding="async" src="https://hungexpo.hu/wp-content/uploads/hungexpo_20211021_075955_DSC_4028-96x72.jpg" alt="" /></div>
+  
+  
+</div>
+<div class="rsContent">
+  <a class="rsImg" href="https://hungexpo.hu/wp-content/uploads/party_20220628_151617_DSC_8594-1024x684.jpg" data-rsBigImg="https://hungexpo.hu/wp-content/uploads/party_20220628_151617_DSC_8594.jpg">party_20220628_151617_DSC_8594</a>
+  <div class="rsTmb"><img decoding="async" src="https://hungexpo.hu/wp-content/uploads/party_20220628_151617_DSC_8594-96x72.jpg" alt="" /></div>
+  
+  
+</div>
+<div class="rsContent">
+  <a class="rsImg" href="https://hungexpo.hu/wp-content/uploads/AIPC_20220704_210419_DSC_0817-1024x684.jpg" data-rsBigImg="https://hungexpo.hu/wp-content/uploads/AIPC_20220704_210419_DSC_0817.jpg">AIPC_20220704_210419_DSC_0817</a>
+  <div class="rsTmb"><img decoding="async" src="https://hungexpo.hu/wp-content/uploads/AIPC_20220704_210419_DSC_0817-96x72.jpg" alt="" /></div>
+  
+  
+</div>
+<div class="rsContent">
+  <a class="rsImg" href="https://hungexpo.hu/wp-content/uploads/hungexpo_summer_party_20220628_181254_DSC_9177-1024x684.jpg" data-rsBigImg="https://hungexpo.hu/wp-content/uploads/hungexpo_summer_party_20220628_181254_DSC_9177.jpg">hungexpo_summer_party_20220628_181254_DSC_9177</a>
+  <div class="rsTmb"><img decoding="async" src="https://hungexpo.hu/wp-content/uploads/hungexpo_summer_party_20220628_181254_DSC_9177-96x72.jpg" alt="" /></div>
+  
+  
+</div>
+
+</div>
+
+
+
+<div style="height:100px" aria-hidden="true" class="wp-block-spacer"></div>
+
+
+
+<div class="wp-block-button aligncenter"><a class="wp-block-button__link wp-element-button" href="https://hungexpo.hu/en/hosted-events/venues/">Back to all halls</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
+
+
+	</div><!-- #content -->
+
+	<!-- footer starts -->
+	<footer class="footer">
+		<div class="container">
+			<div class="row justify-content-md-between">
+				<div class="col-12 col-md-auto mb-4 mb-md-0">
+					<div class="row">
+						<div class="col-12 col-sm-auto text-center">
+							<img src="https://hungexpo.hu/wp-content/themes/frontend/assets/images/logo-gl-events.png"
+								width="80" height="80" alt="gl logo" class="d-inline-block mb-4">
+						</div>
+
+						<div class="col-12 col-sm-auto pl-sm-0">
+							<div class="footer__address">
+								<h4 class="h-color--blue h-fw--700 d-inline-flex text-uppercase">
+									Contact								</h4>
+
+																	<a class="h-fs--14 h-color--white h-color--hover--blue mb-2" href="mailto:info@hungexpo.hu">
+										info@hungexpo.hu									</a>
+								
+																	<a class="h-fs--14 h-color--white h-color--hover--blue mb-2" href="tel:(06 1) 263 6000">
+										(06 1) 263 6000									</a>
+								
+																	<p class="mb-2">1101 Budapest, Albertirsai út 10. </p>
+								
+																	<p class="mb-2">1441 Budapest, Pf. 44.</p>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-12 col-md-auto">
+					<h4 class="h-color--blue h-fw--700 d-inline-flex text-uppercase">
+						Follow					</h4>
+
+					<div class="footer__socials">
+						<ul class="d-flex align-items-center">
+							<li>
+																	<a href="https://www.facebook.com/hungexpo" target="_blank">
+										<i class="fab fa-facebook"></i>
+									</a>
+															</li>
+							<li>
+																	<a href="https://www.instagram.com/explore/locations/213654294/hungexpo-programod-van/" target="_blank">
+										<i class="fab fa-instagram"></i>
+									</a>
+															</li>
+							<li>
+																	<a href="https://www.youtube.com/user/Hungexpovideo" target="_blank">
+										<i class="fab fa-youtube"></i>
+									</a>
+															</li>
+							<li>
+																	<a href="#" target="_blank">
+										<i class="fab fa-twitter"></i>
+									</a>
+															</li>
+							<li>
+																	<a href="https://www.linkedin.com/company/1443863" target="_blank">
+										<i class="fab fa-linkedin"></i>
+									</a>
+															</li>
+						</ul>
+					</div>
+											<div class="footer__newsletter">
+							<a href="https://hungexpo.hu/en/newsletter-subscription/" target="_blank" class="footer__newsletter-link">
+																	<img src="https://hungexpo.hu/wp-content/uploads/hirlevel_felirakozas_ikon.png" alt="Hírlevél feliratkozás" class="footer__newsletter-icon">
+																									<span class="footer__newsletter-text">Newsletter Subscribe</span>
+															</a>
+						</div>
+									</div>
+			</div>
+
+							<div class="footer__partners footer__partners--decorated mb-4">
+					<ul class="d-flex align-items-center justify-content-center">
+													<li>
+								<a href="http://www.aipc.org/">
+									<img width="124" height="140" src="https://hungexpo.hu/wp-content/uploads/aipc.png" class="" alt="AIPC" loading="lazy" decoding="async" />																	</a>
+							</li>
+													<li>
+								<a href="http://www.cefa.biz/">
+									<img width="208" height="140" src="https://hungexpo.hu/wp-content/uploads/cefa.png" class="" alt="CEFA" loading="lazy" decoding="async" />																	</a>
+							</li>
+													<li>
+								<a href="http://www.centrexstat.org/">
+									<img width="239" height="140" src="https://hungexpo.hu/wp-content/uploads/centrex.png" class="" alt="Centrex" loading="lazy" decoding="async" />																	</a>
+							</li>
+													<li>
+								<a href="http://www.iccaworld.com/">
+									<img width="292" height="300" src="https://hungexpo.hu/wp-content/uploads/icca_2-292x300.png" class="" alt="ICCA" loading="lazy" decoding="async" srcset="https://hungexpo.hu/wp-content/uploads/icca_2-292x300.png 292w, https://hungexpo.hu/wp-content/uploads/icca_2.png 609w" sizes="(max-width: 292px) 100vw, 292px" />																	</a>
+							</li>
+													<li>
+								<a href="http://www.maresz.hu/">
+									<img width="300" height="235" src="https://hungexpo.hu/wp-content/uploads/maresz-300x235.jpg" class="" alt="Maresz" loading="lazy" decoding="async" srcset="https://hungexpo.hu/wp-content/uploads/maresz-300x235.jpg 300w, https://hungexpo.hu/wp-content/uploads/maresz-768x601.jpg 768w, https://hungexpo.hu/wp-content/uploads/maresz.jpg 842w" sizes="(max-width: 300px) 100vw, 300px" />																	</a>
+							</li>
+													<li>
+								<a href="http://www.ufi.org/">
+									<img width="70" height="140" src="https://hungexpo.hu/wp-content/uploads/ufi.png" class="" alt="UFI" loading="lazy" decoding="async" />																	</a>
+							</li>
+											</ul>
+				</div>
+			
+							<div class="row">
+					<div class="col-12">
+						<h5 class="h-color--blue h-fw--700 text-uppercase text-center mb-4">
+							Partners						</h5>
+					</div>
+				</div>
+
+				<div class="footer__partners">
+					<ul class="d-flex align-items-center justify-content-center">
+													<li>
+								<a href="https://www.dbschenker.com/hu-en">
+									<img width="253" height="121" src="https://hungexpo.hu/wp-content/uploads/db_schenker.jpg" class="" alt="Schenker" loading="lazy" decoding="async" />																	</a>
+							</li>
+													<li>
+								<a href="http://www.expodekor.hu/">
+									<img width="240" height="76" src="https://hungexpo.hu/wp-content/uploads/ExpoDekor_logo23_black.jpg" class="" alt="ExpoDekor" loading="lazy" decoding="async" />																	</a>
+							</li>
+													<li>
+								<a href="https://www.modulgp.hu/">
+									<img width="253" height="121" src="https://hungexpo.hu/wp-content/uploads/modul_gp.jpg" class="" alt="ModulGP" loading="lazy" decoding="async" />																	</a>
+							</li>
+													<li>
+								<a href="https://www.rentit.hu/">
+									<img width="253" height="121" src="https://hungexpo.hu/wp-content/uploads/rent_it.jpg" class="" alt="rentit" loading="lazy" decoding="async" />																	</a>
+							</li>
+											</ul>
+				</div>
+			
+							<div class="row">
+					<div class="col-12 text-center">
+						<a href="https://hungexpo.hu/en/data-processing-notice/"
+							class="h-color--blue h-color--hover--white text-underline d-inline">
+							Privacy Policy						</a>
+					</div>
+				</div>
+					</div>
+	</footer>
+
+</div><!-- #page -->
+
+<div class="mobile-menu">
+	<div class="mobile-menu__header">
+			</div>
+
+	<nav class="mobile-menu__nav">
+		<div class="menu-mobil-menu-angol-container"><ul id="mobile-menu" class="menu"><li id="menu-item-19206" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-has-children menu-item-19206"><a href="https://hungexpo.hu/en/">HUNGEXPO</a>
+<ul class="sub-menu">
+	<li id="menu-item-19207" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19207"><a href="https://hungexpo.hu/en/hungexpo/">About us</a></li>
+	<li id="menu-item-19208" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19208"><a href="https://hungexpo.hu/en/news/">Press</a></li>
+	<li id="menu-item-19215" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19215"><a href="https://hungexpo.hu/en/contact/">Contact</a></li>
+	<li id="menu-item-19209" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19209"><a href="https://hungexpo.hu/en/exhibitors-zone/">Exhibitors’ zone</a></li>
+</ul>
+</li>
+<li id="menu-item-19210" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-19210"><a href="https://hungexpo.hu/en/events/">Exhibitions</a>
+<ul class="sub-menu">
+	<li id="menu-item-19211" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19211"><a href="https://hungexpo.hu/en/events/">For visitors</a></li>
+	<li id="menu-item-19212" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19212"><a href="https://hungexpo.hu/en/exhibitors-zone/">For exhibitors</a></li>
+</ul>
+</li>
+<li id="menu-item-19213" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-19213"><a href="https://hungexpo.hu/en/hosted-events/">Event venue</a>
+<ul class="sub-menu">
+	<li id="menu-item-19294" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19294"><a href="https://hungexpo.hu/en/hosted-events/venues/">HALLS</a></li>
+	<li id="menu-item-19291" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19291"><a href="https://hungexpo.hu/en/hosted-events/budapest-info/">Budapest Info</a></li>
+	<li id="menu-item-19292" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-19292"><a href="https://hungexpo.hu/en/hosted-events/our-sales-team/">Our sales team</a></li>
+	<li id="menu-item-101300" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-101300"><a href="https://hungexpo.hu/en/hosted-events/references/">References</a></li>
+	<li id="menu-item-83394" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-83394"><a href="https://hungexpo.hu/en/hosted-events/request-for-proposal/">Request for proposal</a></li>
+</ul>
+</li>
+<li id="menu-item-19214" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-19214"><a href="https://hungexpo.hu/en/services/">Services</a>
+<ul class="sub-menu">
+	<li id="menu-item-19297" class="menu-item menu-item-type-post_type menu-item-object-services menu-item-19297"><a href="https://hungexpo.hu/en/services/event-organization/">Event organization</a></li>
+	<li id="menu-item-19299" class="menu-item menu-item-type-post_type menu-item-object-services menu-item-19299"><a href="https://hungexpo.hu/en/services/furniture-rental/">Furniture rental</a></li>
+	<li id="menu-item-19295" class="menu-item menu-item-type-post_type menu-item-object-services menu-item-19295"><a href="https://hungexpo.hu/en/services/rendezvenytechnika/">Event technology services</a></li>
+	<li id="menu-item-19296" class="menu-item menu-item-type-post_type menu-item-object-services menu-item-19296"><a href="https://hungexpo.hu/en/services/catering/">Catering</a></li>
+	<li id="menu-item-19298" class="menu-item menu-item-type-post_type menu-item-object-services menu-item-19298"><a href="https://hungexpo.hu/en/services/exhibition-implementation/">Exhibition implementation</a></li>
+</ul>
+</li>
+<li id="menu-item-98845" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-98845"><a href="https://hungexpo.hu/en/hosted-events/filminglocations/">Filming studios &#038; locations</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70922"><a href="https://hungexpo.hu/en/sustainability-2/">Sustainability</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-70923"><a href="https://hungexpo.hu/en/accessiblity/">Accessiblity</a></li>
+</ul></div>	</nav>
+
+	<div class="mobile-menu__footer"></div>
+</div>
+
+<script id="ckyBannerTemplate" type="text/template"><div class="cky-overlay cky-hide"></div><div class="cky-btn-revisit-wrapper cky-revisit-hide" data-cky-tag="revisit-consent" data-tooltip="Privacy Overview" style="background-color:#00aeef"> <button class="cky-btn-revisit" aria-label="Privacy Overview"> <img src="https://hungexpo.hu/wp-content/plugins/cookie-law-info/lite/frontend/images/revisit.svg" alt="Revisit consent button"> </button></div><div class="cky-consent-container cky-hide" tabindex="0"> <div class="cky-consent-bar" data-cky-tag="notice" style="background-color:#FFF;border-color:#F4F4F4"> <button class="cky-banner-btn-close" data-cky-tag="close-button" aria-label="Close"> <img src="https://hungexpo.hu/wp-content/plugins/cookie-law-info/lite/frontend/images/close.svg" alt="Close"> </button> <div class="cky-notice"> <p class="cky-title" role="heading" aria-level="1" data-cky-tag="title" style="color:#000"></p><div class="cky-notice-group"> <div class="cky-notice-des" data-cky-tag="description" style="color:#000"> Our website uses cookie files. Cookies are not suitable for identifying persons, they are necessary to provide our services (e.g. ticket purchase, online exhibitor system). By using this site, you agree to the use of cookies.. </div><div class="cky-notice-btn-wrapper" data-cky-tag="notice-buttons"> <button class="cky-btn cky-btn-customize" aria-label="Cookie Settings" data-cky-tag="settings-button" style="color:#fff;background-color:#00aeef;border-color:#00aeef">Cookie Settings</button> <button class="cky-btn cky-btn-reject" aria-label="Reject" data-cky-tag="reject-button" style="color:#fff;background-color:#00aeef;border-color:#00aeef">Reject</button> <button class="cky-btn cky-btn-accept" aria-label="Accept All" data-cky-tag="accept-button" style="color:#fff;background-color:#000000;border-color:#000000">Accept All</button>  </div></div></div></div></div><div class="cky-modal" tabindex="0"> <div class="cky-preference-center" data-cky-tag="detail" style="color:#000;background-color:#FFF;border-color:#F4F4F4"> <div class="cky-preference-header"> <span class="cky-preference-title" role="heading" aria-level="1" data-cky-tag="detail-title" style="color:#000">Privacy Overview</span> <button class="cky-btn-close" aria-label="[cky_preference_close_label]" data-cky-tag="detail-close"> <img src="https://hungexpo.hu/wp-content/plugins/cookie-law-info/lite/frontend/images/close.svg" alt="Close"> </button> </div><div class="cky-preference-body-wrapper"> <div class="cky-preference-content-wrapper" data-cky-tag="detail-description" style="color:#000"> <p style="font-weight: 400">Privacy overview</p>
+<p style="font-weight: 400">This website uses cookies to improve your browsing experience. Of these cookies, the cookies that fall into the required category are stored on your browser as they are essential for the basic functionality of the website.</p>
+<p style="font-weight: 400">We also use third-party cookies to help us analyse and understand how you use the website. These cookies are only stored on your browser with your consent.</p>
+<p style="font-weight: 400">You also have the option to reject these cookies. However, rejecting certain cookies may affect your browsing experience.<br><br><a style="color: black" href="https://hungexpo.hu/en/cookie-management/" target="_blank" rel="noopener" data-saferedirecturl="https://www.google.com/url?q=https://hungexpo.hu/cookie-kezelesi-szabalyzat/&amp;source=gmail&amp;ust=1740559073040000&amp;usg=AOvVaw2otD5i3MhNsC4gPCdSra5t">Our cookie management policy</a><br><br><a style="color: black" href="https://hungexpo.hu/en/data-processing-notice/" target="_blank" rel="noopener" data-saferedirecturl="https://www.google.com/url?q=https://hungexpo.hu/cookie-kezelesi-szabalyzat/&amp;source=gmail&amp;ust=1740559073040000&amp;usg=AOvVaw2otD5i3MhNsC4gPCdSra5t">Our privacy policy</a></p> </div><div class="cky-accordion-wrapper" data-cky-tag="detail-categories"> <div class="cky-accordion" id="ckyDetailCategorymarketing"> <div class="cky-accordion-item"> <div class="cky-accordion-chevron"><i class="cky-chevron-right"></i></div> <div class="cky-accordion-header-wrapper"> <div class="cky-accordion-header"><button class="cky-accordion-btn" aria-label="Marketing cookies" data-cky-tag="detail-category-title" style="color:#000">Marketing cookies</button><span class="cky-always-active">Always Active</span> <div class="cky-switch" data-cky-tag="detail-category-toggle"><input type="checkbox" id="ckySwitchmarketing"></div> </div> <div class="cky-accordion-header-des" data-cky-tag="detail-category-description" style="color:#000"> Through the collection of user-level behavior data, these cookies and similar technologies facilitate personalized, and therefore relevant, marketing content proposition. Marketing cookies are used to collect insights into user behavior, to create ad target groups, to display relevant web content and to measure the effectiveness of our campaigns
+</div> </div> </div> <div class="cky-accordion-body"> <div class="cky-audit-table" data-cky-tag="audit-table" style="color:#212121;background-color:#f4f4f4;border-color:#ebebeb"><ul class="cky-cookie-des-table"><li><div>Cookie</div><div>_ga</div></li><li><div>Duration</div><div>730 days</div></li><li><div>Description</div><div></div></li></ul><ul class="cky-cookie-des-table"><li><div>Cookie</div><div>_gtm</div></li><li><div>Duration</div><div>365 days</div></li><li><div>Description</div><div></div></li></ul><ul class="cky-cookie-des-table"><li><div>Cookie</div><div>teads</div></li><li><div>Duration</div><div>365</div></li><li><div>Description</div><div></div></li></ul><ul class="cky-cookie-des-table"><li><div>Cookie</div><div>_gid</div></li><li><div>Duration</div><div>1 day</div></li><li><div>Description</div><div></div></li></ul><ul class="cky-cookie-des-table"><li><div>Cookie</div><div>_gat</div></li><li><div>Duration</div><div>1 minute</div></li><li><div>Description</div><div></div></li></ul><ul class="cky-cookie-des-table"><li><div>Cookie</div><div>_gcl_au</div></li><li><div>Duration</div><div>90 days</div></li><li><div>Description</div><div></div></li></ul></div> </div> </div><div class="cky-accordion" id="ckyDetailCategoryszukseges"> <div class="cky-accordion-item"> <div class="cky-accordion-chevron"><i class="cky-chevron-right"></i></div> <div class="cky-accordion-header-wrapper"> <div class="cky-accordion-header"><button class="cky-accordion-btn" aria-label="Necessary" data-cky-tag="detail-category-title" style="color:#000">Necessary</button><span class="cky-always-active">Always Active</span> <div class="cky-switch" data-cky-tag="detail-category-toggle"><input type="checkbox" id="ckySwitchszukseges"></div> </div> <div class="cky-accordion-header-des" data-cky-tag="detail-category-description" style="color:#000"> These cookies are required for the expected and proper functioning of and are necessary for users to navigate on our website.</div> </div> </div> <div class="cky-accordion-body"> <div class="cky-audit-table" data-cky-tag="audit-table" style="color:#212121;background-color:#f4f4f4;border-color:#ebebeb"><ul class="cky-cookie-des-table"><li><div>Cookie</div><div>Necessary</div></li><li><div>Duration</div><div>360</div></li><li><div>Description</div><div></div></li></ul></div> </div> </div> </div></div><div class="cky-footer-wrapper"> <span class="cky-footer-shadow"></span> <div class="cky-prefrence-btn-wrapper" data-cky-tag="detail-buttons"> <button class="cky-btn cky-btn-reject" aria-label="Reject" data-cky-tag="detail-reject-button" style="color:#fff;background-color:#00aeef;border-color:#00aeef"> Reject </button> <button class="cky-btn cky-btn-preferences" aria-label="Save My Preferences" data-cky-tag="detail-save-button" style="color:#FFFFFF;background-color:#00aeef;border-color:#00aeef"> Save My Preferences </button> <button class="cky-btn cky-btn-accept" aria-label="Accept All" data-cky-tag="detail-accept-button" style="color:#fff;background-color:#000000;border-color:#000000"> Accept All </button> </div></div></div></div></script><style id='core-block-supports-inline-css' type='text/css'>
+.wp-container-core-buttons-layout-1.wp-container-core-buttons-layout-1{justify-content:center;}.wp-container-core-buttons-layout-2.wp-container-core-buttons-layout-2{justify-content:center;}.wp-container-core-columns-layout-1.wp-container-core-columns-layout-1{flex-wrap:nowrap;}.wp-container-core-buttons-layout-3.wp-container-core-buttons-layout-3{justify-content:center;}.wp-container-core-columns-layout-2.wp-container-core-columns-layout-2{flex-wrap:nowrap;}.wp-container-core-buttons-layout-4.wp-container-core-buttons-layout-4{justify-content:center;}.wp-container-core-columns-layout-3.wp-container-core-columns-layout-3{flex-wrap:nowrap;}.wp-container-core-columns-layout-4.wp-container-core-columns-layout-4{flex-wrap:nowrap;}.wp-container-core-columns-layout-5.wp-container-core-columns-layout-5{flex-wrap:nowrap;}
+</style>
+<script type="text/javascript" src="https://hungexpo.hu/wp-includes/js/dist/vendor/wp-polyfill-inert.min.js?ver=3.1.2" id="wp-polyfill-inert-js"></script>
+<script type="text/javascript" src="https://hungexpo.hu/wp-includes/js/dist/vendor/regenerator-runtime.min.js?ver=0.14.0" id="regenerator-runtime-js"></script>
+<script type="text/javascript" src="https://hungexpo.hu/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" id="wp-polyfill-js"></script>
+<script type="text/javascript" src="https://hungexpo.hu/wp-includes/js/dist/hooks.min.js?ver=c6aec9a8d4e5a5d543a1" id="wp-hooks-js"></script>
+<script type="text/javascript" src="https://hungexpo.hu/wp-includes/js/dist/i18n.min.js?ver=7701b0c3857f914212ef" id="wp-i18n-js"></script>
+<script type="text/javascript" id="wp-i18n-js-after">
+/* <![CDATA[ */
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://hungexpo.hu/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.9.8" id="swv-js"></script>
+<script type="text/javascript" id="contact-form-7-js-extra">
+/* <![CDATA[ */
+var wpcf7 = {"api":{"root":"https:\/\/hungexpo.hu\/en\/wp-json\/","namespace":"contact-form-7\/v1"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://hungexpo.hu/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.9.8" id="contact-form-7-js"></script>
+<script type="text/javascript" id="chatbase-domain-detector-js-extra">
+/* <![CDATA[ */
+var chatbaseDomains = {"environtec.hu\/en":"<script>\r\n(function(){if(!window.chatbase||window.chatbase(\"getState\")!==\"initialized\"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop===\"q\"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement(\"script\");script.src=\"https:\/\/www.chatbase.co\/embed.min.js\";script.id=\"7gC6FRDUEKZ5LRMtA6j_c\";script.domain=\"www.chatbase.co\";document.body.appendChild(script)};if(document.readyState===\"complete\"){onLoad()}else{window.addEventListener(\"load\",onLoad)}})();\r\n<\/script>","agromashexpo.hu\/en":"<script>\r\n(function(){if(!window.chatbase||window.chatbase(\"getState\")!==\"initialized\"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop===\"q\"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement(\"script\");script.src=\"https:\/\/www.chatbase.co\/embed.min.js\";script.id=\"HF2FL6MnwS4NAND1Jtwi0\";script.domain=\"www.chatbase.co\";document.body.appendChild(script)};if(document.readyState===\"complete\"){onLoad()}else{window.addEventListener(\"load\",onLoad)}})();\r\n<\/script>"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://hungexpo.hu/wp-content/themes/frontend/assets/js/chatbase-domain-detector.js?ver=1790683274" id="chatbase-domain-detector-js"></script>
+<script type="text/javascript" src="https://hungexpo.hu/wp-content/themes/frontend/assets/js/marketing-parameter-storage.js?ver=1790927467" id="marketing-parameter-storage-js"></script>
+<script type="text/javascript" src="https://hungexpo.hu/wp-content/themes/frontend/assets/js/title-check.js?ver=1744106108" id="title-check-js"></script>
+<script type="text/javascript" id="wpcf7cf-scripts-js-extra">
+/* <![CDATA[ */
+var wpcf7cf_global_settings = {"ajaxurl":"https:\/\/hungexpo.hu\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://hungexpo.hu/wp-content/plugins/cf7-conditional-fields/js/scripts.js?ver=2.6" id="wpcf7cf-scripts-js"></script>
+<script type="text/javascript" src="https://www.google.com/recaptcha/api.js?render=6Ldd2CQsAAAAAPL-qP1nsGnXeLHyGTcEXXJ2TCkG&amp;ver=3.0" id="google-recaptcha-js"></script>
+<script type="text/javascript" id="wpcf7-recaptcha-js-extra">
+/* <![CDATA[ */
+var wpcf7_recaptcha = {"sitekey":"6Ldd2CQsAAAAAPL-qP1nsGnXeLHyGTcEXXJ2TCkG","actions":{"homepage":"homepage","contactform":"contactform"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://hungexpo.hu/wp-content/plugins/contact-form-7/modules/recaptcha/index.js?ver=5.9.8" id="wpcf7-recaptcha-js"></script>
+<script id="new-royalslider-init-code" type="text/javascript">
+jQuery(document).ready(function($) {
+	$('.new-royalslider-1').royalSlider({template:'default',image_generation:{lazyLoading:!0,imageWidth:'',imageHeight:'',thumbImageWidth:96,thumbImageHeight:72},thumbs:{paddingBottom:4,thumbWidth:96,thumbHeight:72,appendSpan:!0},fullscreen:{enabled:!0,nativeFS:!0},video:[],width:'100%',height:500,autoScaleSlider:!0,autoScaleSliderWidth:960,autoScaleSliderHeight:850,controlNavigation:'thumbnails',arrowsNavHideOnTouch:!0,globalCaptionInside:!0,keyboardNavEnabled:!0,fadeinLoadedSlide:!1});
+});
+</script>
+
+</body>
+</html>

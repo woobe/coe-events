@@ -1,0 +1,55 @@
+{
+ "venue_id": "bkk-dc63fcf3782c",
+ "checked_on": "2026-11-26",
+ "provider": "OpenStreetMap Nominatim",
+ "attempts": [
+  {
+   "kind": "address",
+   "query": "281/19-23 NST One Building, Soi Silom 1, Silom Road, Bang Rak, Bangkok 10500, Thailand",
+   "url": "https://nominatim.openstreetmap.org/search?q=281%2F19-23+NST+One+Building%2C+Soi+Silom+1%2C+Silom+Road%2C+Bang+Rak%2C+Bangkok+10500%2C+Thailand&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+   "status": "none",
+   "results": []
+  },
+  {
+   "kind": "name",
+   "query": "The Work Loft Silom Bangkok",
+   "url": "https://nominatim.openstreetmap.org/search?q=The+Work+Loft+Silom+Bangkok&format=jsonv2&limit=4&addressdetails=1&accept-language=en",
+   "status": "ok",
+   "results": [
+    {
+     "place_id": 257312708,
+     "licence": "Data © OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+     "osm_type": "node",
+     "osm_id": 4841595724,
+     "lat": "13.7281090",
+     "lon": "100.5338990",
+     "category": "office",
+     "type": "coworking",
+     "place_rank": 30,
+     "importance": 7.662546730750007e-05,
+     "addresstype": "office",
+     "name": "The Work Loft",
+     "display_name": "The Work Loft, Soi Si Lom 1, Sala Daeng, Si Lom Subdistrict, Bang Rak District, Bangkok, 10500, Thailand",
+     "address": {
+      "office": "The Work Loft",
+      "road": "Soi Si Lom 1",
+      "neighbourhood": "Sala Daeng",
+      "quarter": "Si Lom Subdistrict",
+      "suburb": "Bang Rak District",
+      "city": "Bangkok",
+      "ISO3166-2-lvl4": "TH-10",
+      "postcode": "10500",
+      "country": "Thailand",
+      "country_code": "th"
+     },
+     "boundingbox": [
+      "13.7280590",
+      "13.7281590",
+      "100.5338490",
+      "100.5339490"
+     ]
+    }
+   ]
+  }
+ ]
+}

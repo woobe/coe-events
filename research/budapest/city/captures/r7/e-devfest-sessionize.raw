@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#1ab394">
+
+<title>DevFest Budapest Conference: Call for Speakers @ Sessionize.com</title>
+
+<link href="https://cdn.sessionize.com/bundles/App_Css/5aad2be15ffcbbd9.css" rel="stylesheet" />
+
+
+
+<script src="/Scripts/modernizr-2.8.3.js"></script>
+
+
+<script type="text/javascript">
+
+    function consoleLog(...parameters) {
+            
+    }
+
+
+</script>
+
+<link rel="icon" type="image/svg+xml" href="/favicon">
+<link rel="alternate icon" href="/landing/images/favicon/favicon.png">
+<link rel="mask-icon" href="/landing/images/favicon/favicon-safari.svg" color="#1AB394">
+<link rel="apple-touch-icon" href="/landing/images/favicon/apple-touch-icon.png">
+<link rel="manifest" href="/landing/manifest.webmanifest">
+
+
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9RSMQ9D5LK"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-9RSMQ9D5LK');
+        gtag('config', 'G-QVHDJC3V5H');
+</script>
+
+
+
+<script type="text/javascript">
+    !function (T, l, y) { var S = T.location, k = "script", D = "connectionString", C = "ingestionendpoint", I = "disableExceptionTracking", E = "ai.device.", b = "toLowerCase", w = "crossOrigin", N = "POST", e = "appInsightsSDK", t = y.name || "appInsights"; (y.name || T[e]) && (T[e] = t); var n = T[t] || function (d) { var g = !1, f = !1, m = { initialize: !0, queue: [], sv: "5", version: 2, config: d }; function v(e, t) { var n = {}, a = "Browser"; return n[E + "id"] = a[b](), n[E + "type"] = a, n["ai.operation.name"] = S && S.pathname || "_unknown_", n["ai.internal.sdkVersion"] = "javascript:snippet_" + (m.sv || m.version), { time: function () { var e = new Date; function t(e) { var t = "" + e; return 1 === t.length && (t = "0" + t), t } return e.getUTCFullYear() + "-" + t(1 + e.getUTCMonth()) + "-" + t(e.getUTCDate()) + "T" + t(e.getUTCHours()) + ":" + t(e.getUTCMinutes()) + ":" + t(e.getUTCSeconds()) + "." + ((e.getUTCMilliseconds() / 1e3).toFixed(3) + "").slice(2, 5) + "Z" }(), name: "Microsoft.ApplicationInsights." + e.replace(/-/g, "") + "." + t, sampleRate: 100, tags: n, data: { baseData: { ver: 2 } } } } var h = d.url || y.src; if (h) { function a(e) { var t, n, a, i, r, o, s, c, u, p, l; g = !0, m.queue = [], f || (f = !0, t = h, s = function () { var e = {}, t = d.connectionString; if (t) for (var n = t.split(";"), a = 0; a < n.length; a++) { var i = n[a].split("="); 2 === i.length && (e[i[0][b]()] = i[1]) } if (!e[C]) { var r = e.endpointsuffix, o = r ? e.location : null; e[C] = "https://" + (o ? o + "." : "") + "dc." + (r || "services.visualstudio.com") } return e }(), c = s[D] || d[D] || "", u = s[C], p = u ? u + "/v2/track" : d.endpointUrl, (l = []).push((n = "SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details)", a = t, i = p, (o = (r = v(c, "Exception")).data).baseType = "ExceptionData", o.baseData.exceptions = [{ typeName: "SDKLoadFailed", message: n.replace(/\./g, "-"), hasFullStack: !1, stack: n + "\nSnippet failed to load [" + a + "] -- Telemetry is disabled\nHelp Link: https://go.microsoft.com/fwlink/?linkid=2128109\nHost: " + (S && S.pathname || "_unknown_") + "\nEndpoint: " + i, parsedStack: [] }], r)), l.push(function (e, t, n, a) { var i = v(c, "Message"), r = i.data; r.baseType = "MessageData"; var o = r.baseData; return o.message = 'AI (Internal): 99 message:"' + ("SDK LOAD Failure: Failed to load Application Insights SDK script (See stack for details) (" + n + ")").replace(/\"/g, "") + '"', o.properties = { endpoint: a }, i }(0, 0, t, p)), function (e, t) { if (JSON) { var n = T.fetch; if (n && !y.useXhr) n(t, { method: N, body: JSON.stringify(e), mode: "cors" }); else if (XMLHttpRequest) { var a = new XMLHttpRequest; a.open(N, t), a.setRequestHeader("Content-type", "application/json"), a.send(JSON.stringify(e)) } } }(l, p)) } function i(e, t) { f || setTimeout(function () { !t && m.core || a() }, 500) } var e = function () { var n = l.createElement(k); n.src = h; var e = y[w]; return !e && "" !== e || "undefined" == n[w] || (n[w] = e), n.onload = i, n.onerror = a, n.onreadystatechange = function (e, t) { "loaded" !== n.readyState && "complete" !== n.readyState || i(0, t) }, n }(); y.ld < 0 ? l.getElementsByTagName("head")[0].appendChild(e) : setTimeout(function () { l.getElementsByTagName(k)[0].parentNode.appendChild(e) }, y.ld || 0) } try { m.cookie = l.cookie } catch (p) { } function t(e) { for (; e.length;)!function (t) { m[t] = function () { var e = arguments; g || m.queue.push(function () { m[t].apply(m, e) }) } }(e.pop()) } var n = "track", r = "TrackPage", o = "TrackEvent"; t([n + "Event", n + "PageView", n + "Exception", n + "Trace", n + "DependencyData", n + "Metric", n + "PageViewPerformance", "start" + r, "stop" + r, "start" + o, "stop" + o, "addTelemetryInitializer", "setAuthenticatedUserContext", "clearAuthenticatedUserContext", "flush"]), m.SeverityLevel = { Verbose: 0, Information: 1, Warning: 2, Error: 3, Critical: 4 }; var s = (d.extensionConfig || {}).ApplicationInsightsAnalytics || {}; if (!0 !== d[I] && !0 !== s[I]) { var c = "onerror"; t(["_" + c]); var u = T[c]; T[c] = function (e, t, n, a, i) { var r = u && u(e, t, n, a, i); return !0 !== r && m["_" + c]({ message: e, url: t, lineNumber: n, columnNumber: a, error: i }), r }, d.autoExceptionInstrumented = !0 } return m }(y.cfg); function a() { y.onInit && y.onInit(n) } (T[t] = n).queue && 0 === n.queue.length ? (n.queue.push(a), n.trackPageView({})) : a() }(window, document, {
+        src: "https://js.monitor.azure.com/scripts/b/ai.2.min.js", // The SDK URL Source
+        // name: "appInsights", // Global SDK Instance name defaults to "appInsights" when not supplied
+        // ld: 0, // Defines the load delay (in ms) before attempting to load the sdk. -1 = block page load and add to head. (default) = 0ms load after timeout,
+        // useXhr: 1, // Use XHR instead of fetch to report failures (if available),
+        crossOrigin: "anonymous", // When supplied this will add the provided value as the cross origin attribute on the script tag
+        // onInit: null, // Once the application insights instance has loaded and initialized this callback function will be called with 1 argument -- the sdk instance (DO NOT ADD anything to the sdk.queue -- As they won't get called)
+        cfg: { // Application Insights Configuration
+            connectionString: "InstrumentationKey=ba35a242-e5fe-43ee-8c84-4a7a79591411;IngestionEndpoint=https://westeurope-5.in.applicationinsights.azure.com/;LiveEndpoint=https://westeurope.livediagnostics.monitor.azure.com/",
+            disableCookiesUsage: true,
+            enableCorsCorrelation: true,
+            correlationHeaderExcludedDomains: [
+                "cdn.sessionize.com"
+            ]
+            /* disableAjaxTracking: true */
+            /* ...Other Configuration Options... */
+        }
+    });
+</script>
+
+
+
+
+    
+    
+    
+
+        <meta property="og:image" content="https://sessionize.com/landing/images/brand/social/image.png">
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@SessionizeCom" />
+    <meta property="og:url" content="https://sessionize.com/devfest-budapest-2026-on-campus/" />
+    <meta property="og:title" content="DevFest Budapest Conference: Call for Speakers" />
+    <meta property="og:description" content="DevFest Budapest is a globally recognized developer conference that is part of the broader DevFest conference series organized by Google Developer Gro..." />
+
+    <link rel="canonical" href="https://sessionize.com/devfest-budapest-2026-on-campus/" />
+
+    <meta name="description" content="DevFest Budapest is a globally recognized developer conference that is part of the broader DevFest conference series organized by Google Developer Gro..." />
+
+
+<style>
+        body {
+            --pretty-background-color: #15846e;
+            --pretty-foreground-color: white;
+            --pretty-border-color: #137A66;
+        }
+        .submission-form-badge {
+            color: var(--pretty-background-color);
+        }
+</style>
+
+    
+
+
+
+</head>
+<body class="top-navigation gray-bg white-bg-force">
+
+    <script type="text/javascript">
+        if (window.self !== window.top) {
+            
+
+            var style = document.createElement("style");
+            style.innerHTML = `
+                .no-height-body {
+                    height: auto !important;
+                }
+            `;
+            document.head.appendChild(style);
+
+            document.body.classList.add("no-height-body");
+        }
+    </script>
+
+    
+
+
+
+
+<div id="wrapper">
+    <div id="page-wrapper" class="gray-bg" style="min-height: 680px;">
+        <div class="row border-bottom">
+            <nav class="navbar navbar-static-top white-bg" role="navigation">
+                <div class="navbar-header">
+                    <a href="/" class="navbar-brand">Sessionize.com</a>
+                </div>
+                <div class="navbar-collapse collapse" id="navbar">
+
+                    <ul class="nav navbar-top-links navbar-right">
+                        <li>
+                                <a href="/login?returnUrl=%2Fdevfest-budapest-2026-on-campus%2F">
+                                    <i class="fal fa-user"></i> Log in
+                                </a>
+                        </li>
+                    </ul>
+
+                    
+
+                </div>
+            </nav>
+        </div>
+
+        <div class="wrapper wrapper-content">
+            <div class="container">
+                
+
+
+
+
+
+
+<div class="row text-center animated fadeInDown">
+    <div class="col-md-12">
+
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                    <svg class="submission-form-badge" viewBox="0 0 120 120"  width="120" height="120" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="M57.705 1.607a4 4 0 0 1 4.59 0l1.389.973a4 4 0 0 0 3.905.384l1.552-.683a4 4 0 0 1 4.501.896l1.173 1.225A4 4 0 0 0 78.57 5.54l1.655-.367a4 4 0 0 1 4.24 1.756l.91 1.43a4 4 0 0 0 3.462 1.85l1.696-.037a4 4 0 0 1 3.815 2.55l.615 1.58a4 4 0 0 0 3.034 2.49l1.67.294a4 4 0 0 1 3.245 3.245l.294 1.67a4.001 4.001 0 0 0 2.49 3.034l1.58.615a4 4 0 0 1 2.55 3.816l-.037 1.695a4 4 0 0 0 1.85 3.461l1.43.911a4 4 0 0 1 1.756 4.24l-.367 1.655a4 4 0 0 0 1.139 3.756l1.225 1.173a4.001 4.001 0 0 1 .896 4.5l-.683 1.553a3.998 3.998 0 0 0 .384 3.905l.973 1.39a4 4 0 0 1 0 4.589l-.973 1.389a3.998 3.998 0 0 0-.384 3.905l.683 1.552a4.001 4.001 0 0 1-.896 4.501l-1.225 1.173a4 4 0 0 0-1.139 3.756l.367 1.655a4 4 0 0 1-1.756 4.24l-1.43.91a4 4 0 0 0-1.85 3.462l.037 1.696a4 4 0 0 1-2.55 3.815l-1.58.615a4.001 4.001 0 0 0-2.49 3.034l-.294 1.67a4 4 0 0 1-3.245 3.245l-1.67.294a4.001 4.001 0 0 0-3.034 2.49l-.615 1.58a4 4 0 0 1-3.816 2.55l-1.695-.037a4 4 0 0 0-3.461 1.85l-.911 1.43a4 4 0 0 1-4.24 1.756l-1.655-.367a4 4 0 0 0-3.756 1.139l-1.173 1.225a4.001 4.001 0 0 1-4.5.896l-1.553-.683a3.998 3.998 0 0 0-3.905.384l-1.39.973a4 4 0 0 1-4.589 0l-1.389-.973a3.998 3.998 0 0 0-3.905-.384l-1.552.683a4.001 4.001 0 0 1-4.501-.896l-1.173-1.225a4 4 0 0 0-3.756-1.139l-1.655.367a4 4 0 0 1-4.24-1.756l-.91-1.43a4 4 0 0 0-3.462-1.85l-1.695.037a4 4 0 0 1-3.816-2.55l-.615-1.58a4.001 4.001 0 0 0-3.034-2.49l-1.67-.294a4 4 0 0 1-3.245-3.245l-.294-1.67a4 4 0 0 0-2.49-3.034l-1.58-.615a4 4 0 0 1-2.55-3.815l.037-1.696a4 4 0 0 0-1.85-3.461l-1.43-.911a4 4 0 0 1-1.756-4.24l.367-1.655a4 4 0 0 0-1.14-3.756l-1.224-1.173a4 4 0 0 1-.896-4.5l.683-1.553a4 4 0 0 0-.384-3.905l-.973-1.39a4 4 0 0 1 0-4.589l.973-1.389a4 4 0 0 0 .384-3.905l-.683-1.552a4 4 0 0 1 .896-4.501l1.225-1.173A4 4 0 0 0 5.54 41.43l-.367-1.655a4 4 0 0 1 1.756-4.24l1.43-.91a4 4 0 0 0 1.85-3.462l-.037-1.695a4 4 0 0 1 2.55-3.816l1.58-.615a4 4 0 0 0 2.49-3.034l.294-1.67a4 4 0 0 1 3.245-3.245l1.67-.294a4 4 0 0 0 3.034-2.49l.615-1.58a4 4 0 0 1 3.816-2.55l1.695.037a4 4 0 0 0 3.461-1.85l.911-1.43a4 4 0 0 1 4.24-1.756l1.655.367a4 4 0 0 0 3.756-1.14l1.173-1.224a4 4 0 0 1 4.5-.896l1.553.683a4 4 0 0 0 3.905-.384l1.39-.973Z" fill="currentColor" /><path d="M67.324 19.097c-.15 2.675-2.14 4.373-5.218 4.2-3.07-.173-4.881-2.084-4.73-4.76l.44-7.834 2.164.121-.43 7.659c-.095 1.677.867 2.834 2.662 2.935 1.795.1 2.871-.941 2.966-2.619l.43-7.658 2.156.121-.44 7.835ZM42.422 26.898l1.856-.62-2.73-8.176.055-.019 6.046 7.07 1.395-.466.584-9.283.064-.022 2.73 8.176 1.85-.617-3.84-11.499-2.376.793-.59 9.958-.055.018-6.455-7.605-2.375.793 3.84 11.5ZM32.1 35.406l-1.454 1.31-8.11-9.012 1.86-1.675 8.954 4.398.044-.04-3.433-9.366 1.86-1.675 8.11 9.012-1.448 1.304-5.766-6.407-.05.044 3.168 8.746-1.093.983-8.364-4.069-.044.04 5.767 6.407Z" fill="#fff" /><path fill-rule="evenodd" clip-rule="evenodd" d="M26.911 44.014c1.545-3.19.334-6.223-3.137-7.903l-.015-.007c-3.463-1.677-6.596-.74-8.137 2.444-1.538 3.176-.338 6.23 3.125 7.907l.015.008c3.471 1.68 6.604.742 8.15-2.449Zm-1.694-.82c-.944 1.951-3.064 2.456-5.492 1.28l-.015-.007c-2.427-1.175-3.335-3.155-2.395-5.099.945-1.95 3.065-2.455 5.485-1.283l.015.007c2.405 1.164 3.358 3.129 2.402 5.102Z" fill="#fff" /><path d="M19.77 50.606c2.444.553 3.956 2.77 3.683 5.547-.342 3.47-2.95 5.425-6.804 5.045h-.008c-3.855-.38-6.012-2.813-5.671-6.275.273-2.776 2.205-4.645 4.694-4.721h.084l-.208 2.115-.163.026c-1.414.216-2.38 1.193-2.535 2.765-.207 2.107 1.34 3.618 4.016 3.882h.009c2.684.265 4.506-.923 4.713-3.022.151-1.538-.57-2.698-2.02-3.238l-.081-.033.208-2.116.082.025ZM26.137 75.37l-2.468-7.448-1.731.574 1.787 5.39-3.278 1.087-1.689-5.096-1.667.552 1.689 5.096-3.102 1.028-1.787-5.39-1.73.573 2.468 7.448 11.508-3.813ZM27.264 77.64l4.428 6.48-10.01 6.84-4.427-6.48 1.505-1.028 3.204 4.69 2.699-1.844-3.03-4.433 1.45-.99 3.03 4.432 2.85-1.948-3.204-4.69 1.505-1.028Z" fill="#fff" /><path fill-rule="evenodd" clip-rule="evenodd" d="m40.22 91.628-1.676-1.375-2.878 3.507-1.812-1.487 1.034-5.02-1.91-1.568-1.04 5.44c-1.416-.5-2.928-.034-3.962 1.225l-.01.013c-1.488 1.812-1.178 3.925.822 5.567l3.74 3.07 7.692-9.372Zm-5.641 3.457-2.612 3.182-1.857-1.524c-1.052-.864-1.224-2.005-.42-2.985l.011-.013c.826-1.007 1.93-1.08 2.988-.211l1.89 1.55Z" fill="#fff" /><path d="m49.332 95.67-2-.837-1.91 4.565-4.688-1.962-.681 1.628 4.689 1.961-1.385 3.31-5.13-2.147-.704 1.682 7.13 2.983 4.68-11.184ZM69.815 23.982l1.989.84 3.322-7.853.038.016 2.134 10.161 1.78.753L83.8 16.733l-1.981-.838-3.309 7.823-.046-.02-2.131-10.123-1.795-.76-4.723 11.167ZM82.993 30.99l-1.738-1.296 7.247-9.718 1.738 1.295-7.247 9.72ZM87.178 34.864l1.422 1.625 7.753-6.781 2.384 2.725 1.372-1.2-6.195-7.083-1.373 1.2 2.39 2.732-7.753 6.782ZM94.354 46.13l-.87-1.976 4.373-1.929 5.004-6.852.956 2.168-3.645 4.812.024.053 6.01.555.956 2.168-8.434-.928-4.374 1.929ZM97.036 55.985l.019 7.846 1.823-.004-.014-5.68 3.453-.008.013 5.369 1.756-.005-.013-5.368 3.268-.008.014 5.68 1.823-.005-.019-7.847-12.123.03ZM95.089 71.989l.729-2.404 12.82-.502-.685 2.26-10.283.094-.012.04 8.496 5.799-.685 2.259-10.38-7.546ZM92.808 77.675l-4.436 6.473 1.504 1.03 3.211-4.684 2.848 1.952-3.035 4.428 1.449.993 3.035-4.429 2.696 1.848-3.211 4.685L98.373 91l4.436-6.473-10-6.853ZM85.057 87.437l1.702-1.329 7.46 9.556-1.536 1.2-9.883-3.061-.04.031 5.227 6.695-1.695 1.324-7.46-9.556 1.523-1.19 9.916 3.078.034-.026-5.248-6.722ZM73.494 94.523l-2.033.728 3.471 9.698-3.409 1.22.615 1.717 8.859-3.171-.615-1.717-3.417 1.223-3.471-9.698ZM59.895 101.976c-.017-.68.5-1.231 1.18-1.248a1.21 1.21 0 0 1 1.247 1.188 1.202 1.202 0 0 1-1.188 1.24c-.68.016-1.222-.5-1.239-1.18ZM60 39c-11.048 0-20 8.952-20 20s8.952 20 20 20 20-8.952 20-20-8.952-20-20-20Zm0 36.129c-8.895 0-16.129-7.234-16.129-16.129 0-8.895 7.234-16.129 16.129-16.129 8.895 0 16.129 7.234 16.129 16.129 0 8.895-7.234 16.129-16.129 16.129Zm-6.452-17.42a2.578 2.578 0 0 0 2.581-2.58 2.578 2.578 0 0 0-2.58-2.58 2.578 2.578 0 0 0-2.581 2.58 2.578 2.578 0 0 0 2.58 2.58Zm12.904 0a2.578 2.578 0 0 0 2.58-2.58 2.578 2.578 0 0 0-2.58-2.58 2.578 2.578 0 0 0-2.581 2.58 2.578 2.578 0 0 0 2.58 2.58Zm.322 5.855A8.801 8.801 0 0 1 60 66.743a8.775 8.775 0 0 1-6.774-3.178 1.941 1.941 0 0 0-2.726-.25 1.94 1.94 0 0 0-.25 2.726A12.66 12.66 0 0 0 60 70.605a12.66 12.66 0 0 0 9.75-4.565 1.933 1.933 0 0 0-.25-2.726 1.941 1.941 0 0 0-2.726.25Z" fill="#fff" /></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h120v120H0z" /></clipPath></defs></svg>
+                <h2 style="text-transform: uppercase; font-weight: bold; letter-spacing: 6px;" class="m-b-sm">Call for Speakers</h2>
+            </div>
+                <div class="ibox-content">
+                    <h1 class="font-bold">DevFest Budapest Conference</h1>
+                </div>
+        </div>
+
+
+
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-6 animated fadeInLeft" id="left-column" style="z-index: 1;">
+
+
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <div class="pull-right">
+                    
+    <span class="badge badge-success">in 3 months</span>
+  
+                </div>
+                <h4>DevFest Budapest Conference</h4>
+            </div>
+            <div class="ibox-content">
+
+
+                <div class="row"> 
+                        <div class="col-sm-6 m-b-md">
+                            <div class="font-bold text-navy">
+                                <i class="fal fa-calendar"></i>
+                                event date
+                            </div>
+                            <h2 class="no-margins">27 Feb 2027</h2>
+                        </div>
+                </div>
+                    <div class="row">
+                        <div class="col-sm-12 m-b-md">
+                            <div class="font-bold text-navy">
+                                <i class="fal fa-map-marker"></i>
+                                location
+                            </div>
+                            <h2 class="no-margins">
+                                <span class="block"></span>
+                                <span class="block">Budapest, Hungary</span>
+                            </h2>
+                        </div>
+                    </div>
+                                    <div class="row">
+                        <div class="col-sm-12 m-b-md">
+                            <div class="font-bold text-navy">
+                                <i class="fal fa-globe"></i>
+                                website
+                            </div>
+                            <h2 class="no-margins ellipsis">
+                                <a href="https://devfest.hu" class="navy-link" target="_blank">devfest.hu</a>
+                            </h2>
+                        </div>
+                    </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <hr class="m-t-none" />
+                        <p><b>DevFest Budapest</b> is a globally recognized developer conference that is part of the broader DevFest conference series organized by Google Developer Groups across the globe.</p><p>The conference is going to take place in 2027,&nbsp;in Budapest. (Participation: in-person)</p><p>This event aims to unite Developers from Hungary and diverse corners of the globe, fostering mutual learning and an enjoyable experience for all participants.</p><p>The event is coordinated by a globally diverse team of developers, comprising members from the Google Developer Groups Budapest community, the GDG On Campus communities at BME, ELTE, and Debrecen Universities, and the International Investment Club, and Nextgen Data Science Club at Corvinus University.&nbsp;</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+    </div>
+    <div class="col-md-6 animated fadeInRight" id="right-column">
+
+
+
+        <div class="ibox float-e-margins">
+            <div class="ibox-title">
+                <div class="pull-right">
+                        
+    <span class="badge badge-primary">open, 2 months left</span>
+ 
+                </div>
+                <h5>Call for Speakers</h5>
+            </div>
+            <div class="ibox-content">
+                <div class="row">
+                    <div class="col-sm-6 m-b-sm">
+                        <div>
+                            <span class="font-bold text-navy">Call opens at 11:00 PM</span>
+                        </div>
+                        <h2 class="no-margins">26 Oct 2026</h2>
+                        <small></small>
+                    </div>
+                    <div class="col-sm-6 m-b-sm">
+                        <div>
+                            <span class="font-bold text-navy">Call closes at 11:59 PM</span>
+                        </div>
+                        <h2 class="no-margins">31 Jan 2027</h2>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 m-b-md">
+                            <div class="dropdown pull-right m-l-xs" style="display: inline-block;">
+                                <a href="#" data-toggle="dropdown" class="dropdown-toggle btn btn-xs btn-default"><small><i class="fal fa-calendar"></i> Add to calendar</small></a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="/add-to-calendar/cfs/devfest-budapest-2026-on-campus">Download iCalendar file</a></li>
+                                        <li class="disabled"><a href="#" class="dropdown-item text-muted">Send to email <em>(please login first!)</em></a></li>
+                                </ul>
+                            </div>
+
+                        <small class="text-muted">
+                            Call closes in <strong>Central Europe Standard Time (UTC+01:00)</strong> timezone.
+                        </small>
+                        <div class="toLocalDateTime">
+                            <small class="text-muted">
+                                Closing time in your timezone (<span class="timezone"></span>) is <strong data-date="Sun, 31 Jan 2027 22:59:00 GMT|60"></strong>.
+                            </small>
+                        </div>
+                    </div>
+                </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <hr class="m-t-none" />
+                            <p>Our mission is to unite the brightest emerging talent from Hungary's top universities with seasoned industry professionals. </p><p>We invite software engineers, architects, Googlers, Google Developer Experts, and tech leaders to share their practical experiences, architectural deep dives, and cutting-edge implementations.</p><p><br></p><p>We are particularly looking for talks across seven key focus areas:</p><p><br></p><p><b>1. Software Development</b></p><p>Show us the foundations of great engineering. We are looking for sessions on modern software architecture, advanced design patterns, API design, and backend performance optimization. Share your insights on writing clean, maintainable code, managing technical debt, building robust enterprise applications, and adopting developer productivity tools.</p><p><br></p><p><b>2. Artificial Intelligence &amp; Machine Learning</b></p><p>Dive deep into the models and applied research shaping the future. We want practical, developer-focused sessions on building real-world AI applications. Topics include the Gemini ecosystem, open-weight models (like the Gemma family), designing autonomous AI agents, advanced Retrieval-Augmented Generation (RAG) pipelines, on-device AI, and the implementation of Responsible AI principles.</p><p><br></p><p><b>3. Cloud Computing</b></p><p>Share your expertise in building scalable, secure, and resilient cloud-native solutions. We are seeking talks on Google Cloud infrastructure, serverless computing, modern modernization strategies, and cloud security. Show us how you leverage managed cloud services to solve complex architectural challenges from the ground up.</p><p><br></p><p><b>4. Data Science &amp; Engineering</b></p><p>Turn raw data into actionable insights. This track focuses on big data processing, building robust data engineering pipelines, advanced analytics, MLOps, and statistical modeling. We highly welcome case studies that demonstrate how to bridge the gap between academic data theory and real-world business applications.</p><p><br></p><p><b>5. FinOps &amp; Cloud Economics</b></p><p>Where finance meets engineering. As cloud environments scale, managing costs becomes a core architectural requirement. Share your frameworks for cloud financial management, optimizing resource spend, cost allocation strategies, and fostering a culture of financial accountability and transparency within technical teams.</p><p><br></p><p><b>6. Mobile Application Development</b></p><p>Shape the future of mobile experiences. We are looking for technical deep-dives into modern mobile frameworks like Flutter and Kotlin Multiplatform, native Android development, cross-platform architecture, state management, and integrating on-device machine learning seamlessly into mobile applications.</p><p><br></p><p><b>7. DevOps, Microservices &amp; Kubernetes</b></p><p>Show us the engine of modern platform engineering. We want hands-on sessions covering container orchestration, the Kubernetes ecosystem, and managing distributed microservices. Dive into CI/CD automation, Site Reliability Engineering (SRE), observability stacks (Prometheus/Grafana), and implementing strict GitOps workflows (such as ArgoCD) for secure, reproducible deployments.</p><p><br></p><p><b>What we are looking for:</b></p><p>We're looking for experience-based talks—the information that cannot be found in the documentation or easily googled. We want your stories, your struggles, root-cause analyses, and experiences with frontier tools or complex enterprise migrations.</p><p><br></p><p>We are interested in anything that squarely fits into the spectrum of:</p><ul><li>Cutting-edge technological advances within the above topics</li><li>Wild ideas, open-source tooling, &amp; clever architectural hacks others can learn from</li><li>Improving developer life, operational autonomy, and productivity</li><li>Lessons learned from successful deployments and disastrous project launches</li><li>Whatever you consider highly useful for the engineering and student community</li></ul><p><br></p><p><b>Session formats:</b></p><p>You can submit as many talks as you want. This year we accept submissions in the following format:</p><ul><li><b>15-minute Lightning talks: </b>Quick, punchy insights or highly focused technical demos.</li><li><b>30-minute Sessions:</b> In-depth architectural breakdowns, case studies, or applied engineering deep-dives.</li><li><b>60-minute Workshops:</b> Hands-on workshops</li></ul><p><br></p><p><b>Talks that will not pass initial review:</b></p><ul><li>Talks whose primary focus is pitching a company or a commercial product. Mentioning your company is welcome, but it should not be the core focus of the presentation.</li><li>Proposals that are not in English.</li><li>Recruitment talks designed purely to attract talent.</li></ul><p><br></p><p>Any questions? Cannot find a matching topic for your proposed talk? No worries.</p><p>Email the organizers and let's discuss the details.</p>
+                        </div>
+                    </div>
+                                                
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <hr />
+                            <button class="btn btn-lg btn-block btn-primary submit-your-session-button">Submit a session</button>
+                            <div>
+
+                                    <p class="m-t">
+        
+    </p>
+<form action="/Account/ExternalLogin?ReturnUrl=%2Fdevfest-budapest-2026-on-campus%2F" method="post"><input name="__RequestVerificationToken" type="hidden" value="i6koRYdN4MHPZwbYpluvrNw8ew9Rdhfe51-CbmJC1N6FILwUd--gIoi2knTHRNK471LOwl76Oxr6lk3-pIrCbUUu8ZHhEkclSDzyUIfqsp01" />            <p class="m-t text-center">
+                Log in with your preferred account
+            </p>
+
+
+    <button type="submit" class="btn btn-primary btn-lg btn-block" id="google" name="provider" value="Google" title="Gmail, Google Workspace, YouTube, Android">
+        <i class="fa fa-google fa-fw"></i>
+        Google
+    </button>
+
+
+    <button type="submit" class="btn btn-primary btn-lg btn-block" id="linkedin" name="provider" value="LinkedIn" title="LinkedIn account">
+        <i class="fa fa-linkedin fa-fw"></i>
+        LinkedIn
+    </button>
+
+
+    <button type="submit" class="btn btn-primary btn-lg btn-block" id="microsoft" name="provider" value="Microsoft" title="Personal, company or school account (e.g. Outlook.com, Hotmail, Xbox, Microsoft 365)">
+        <i class="fab fa-microsoft fa-fw"></i>
+        Microsoft
+    </button>
+
+
+    <button type="button" class="btn btn-primary btn-lg btn-block btn-outline" data-toggle="modal" data-target="#classicLoginModal">
+        <i class="fa fa-envelope fa-fw"></i>
+        Classic Login
+    </button>
+            <p class="m-t-md text-center">
+                More login options
+            </p>
+            <div style="display: flex; gap: 8px;">
+
+
+    <button type="submit" class="btn btn-white" style="flex: 1; font-size: 17px;" id="facebook" name="provider" value="Facebook" title="Personal Facebook account" aria-label="Facebook">
+        <i class="fa fa-facebook fa-fw" aria-hidden="true"></i>
+    </button>
+
+
+    <button type="submit" class="btn btn-white" style="flex: 1; font-size: 17px;" id="twitter" name="provider" value="Twitter" title="X account" aria-label="X">
+        <i class="fab fa-x-twitter fa-fw" aria-hidden="true"></i>
+    </button>
+            </div>
+</form>    <hr />
+    <p class="m-t-xs hint">
+        Never logged in before? Pick any option above and you'll be able to create your account.
+    </p>
+    <p class="m-t-xs hint">
+        Logging in with an account you already have (work, school or social) is quickest. Prefer an email address and password? Use Classic Login.
+    </p>
+
+
+
+
+<div id="classicLoginModal" class="modal fade" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                <h1 class="modal-title text-center">Classic login</h1>
+            </div>
+            <div class="modal-body">
+
+<form ReturnUrl="/devfest-budapest-2026-on-campus/" action="/login/classic" method="post"><input name="__RequestVerificationToken" type="hidden" value="Y0ZyuQ5_rQrYnygFP8HlYFS6wpyTOD9jlThKXNU5zp_FyNJHbTQ2djdw42d3wiSy2-wP3ltAqM_SEC4QlRGg-mDw5rNLQM3z5ylelntPTDE1" /><input id="ReturnUrl" name="ReturnUrl" type="hidden" value="/devfest-budapest-2026-on-campus/" />                    <div class="form-group">
+                        <input class="form-control" data-val="true" data-val-required="The Username field is required." id="Username" name="Username" placeholder="your email address" type="text" value="" />
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" data-val="true" data-val-required="The Password field is required." id="Password" name="Password" placeholder="your password" type="password" />
+                    </div>
+                    <div class="form-group">
+                        <div class="pretty-m">
+                            <input data-val="true" data-val-required="The RememberMe field is required." id="RememberMe" name="RememberMe" type="checkbox" value="true" /><input name="RememberMe" type="hidden" value="false" />
+                            <label>
+                                Remember me on this computer
+                            </label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary block full-width m-b">Login</button>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <a href="/login/classic/forgot?returnUrl=%2Fdevfest-budapest-2026-on-campus%2F" target="_blank">
+                                <small>Forgot password?</small>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 text-right">
+                            <a href="/login/classic/register?returnUrl=%2Fdevfest-budapest-2026-on-campus%2F">
+                                <small>Create new classic account</small>
+                            </a>
+                        </div>
+                    </div>
+</form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+        </div>
+
+
+    </div>
+</div>
+
+
+
+
+            </div>
+        </div>
+
+        
+
+    </div>
+</div>
+
+
+    
+
+    
+<script type="text/javascript">
+    var SUMMERNOTE_SUPPORTED_TAGS = ["p","div","br","sup","i","b","u","a","sub","strike","ul","li","ol","strong","em","hr"];
+</script>
+
+<script type="text/javascript">
+    var sessionStatuses = {};
+        
+            sessionStatuses['i0'] = 'Accepted';
+        
+        
+            sessionStatuses['i2'] = 'Waitlisted';
+        
+        
+            sessionStatuses['i5'] = 'Accept Queue';
+        
+        
+            sessionStatuses['i10'] = 'Nominated';
+        
+        
+            sessionStatuses['i15'] = 'Decline Queue';
+        
+        
+            sessionStatuses['i20'] = 'Declined';
+        
+    function getSessionStatusText(s) {
+        return sessionStatuses['i' + s];
+    }
+
+    var reportReasons = {};
+        
+        reportReasons['i5'] = 'Spam Submission';
+        
+        
+        reportReasons['i10'] = 'Late Cancellation';
+        
+        
+        reportReasons['i20'] = 'No Show';
+        
+        
+        reportReasons['i30'] = 'Inappropriate Behavior';
+        
+        
+        reportReasons['i100'] = 'Detected Spam';
+        
+        
+        reportReasons['i101'] = 'Detected Spam High';
+        
+        
+        reportReasons['i250'] = 'Internal Note';
+        
+        
+        reportReasons['i251'] = 'Internal Note Auto';
+        
+    function getReportReasonText(s) {
+        return reportReasons['i' + s];
+    }
+
+    var szTimeFormat = 'h:mm a';
+    var szDateFormat = 'D MMM YYYY';
+    var szDateTimeFormat = 'D MMM YYYY h:mm a';
+    var timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+
+    var imageFormats = '.jpg,.jpeg,.jfif,.png,.gif,.svg,.webp';
+</script>
+
+
+<script src="https://cdn.sessionize.com/bundles/App_Js/50a5f9ae60546c3c.js"></script>
+
+
+
+<script type="text/javascript">
+    toastr.options = {
+        "closeButton": true,
+        "progressBar": true,
+        "positionClass": "toast-almost-top-right",
+    }
+</script>
+
+<script type="text/javascript">
+    $('body')
+        .tooltip({
+            selector: "[data-toggle=tooltip]",
+            container: "body",
+        });
+</script>
+
+<script type="text/javascript">
+$('input.daterange')
+    .daterangepicker({
+        locale: {
+            format: 'D MMM YYYY',
+        },
+
+    });
+$('input.datetimerange')
+    .daterangepicker({
+        timePicker: true,
+        timePickerIncrement: 1,
+        //timePicker24Hour: true,
+        locale: {
+            format: 'D MMM YYYY h:mm a',
+        },
+
+    });
+
+$('input.datepicker').each(function () {
+    var dp = $(this);
+    var value = $(this).val();
+    var required = dp.attr('required');
+    dp.daterangepicker({
+        singleDatePicker: true,
+        locale: {
+            format: 'D MMM YYYY',
+            cancelLabel: required ? 'Cancel' : 'Clear',
+        },
+
+    });
+    if (!required) {
+        dp.on('cancel.daterangepicker', function (ev, picker) {
+            //do something, like clearing an input
+            dp.val('');
+        });
+    }
+    if (value === '') dp.val('');
+});
+
+$('input.datetimepicker').each(function () {
+    var dp = $(this);
+    var value = dp.val();
+    var required = dp.attr('required');
+    dp.daterangepicker({
+        timePicker: true,
+        timePickerIncrement: 1,
+        singleDatePicker: true,
+        locale: {
+            format: 'D MMM YYYY h:mm a',
+            cancelLabel: required ? 'Cancel' : 'Clear',
+        },
+    });
+    if (!required) {
+        dp.on('cancel.daterangepicker', function (ev, picker) {
+            //do something, like clearing an input
+            dp.val('');
+        });
+    }
+    if (value === '') dp.val('');
+});
+
+</script>
+
+
+
+<script type="text/javascript">
+    function mailView(id) {
+        openInModalCode('Mail Preview', '/app/mail/' + id);
+        
+        return false;
+    }
+</script>
+
+<script type="text/javascript">
+    $('*[data-flag]').each(function () {
+        var $this = $(this);
+        $this
+            .addClass('pmholder')
+            .prepend('<span class="pmhint">' + $(this).data('flag').toUpperCase() + '</span>')
+        $pmhint = $this.find('.pmhint');
+        $pmhint.css('margin-top', 'calc(-1 * ' + $this.css('padding-top') + ' - 10px)');
+        $pmhint.css('margin-left', 'calc(-1 * ' + $this.css('padding-left') + ' - 10px)');
+    });
+</script>
+
+
+<script type="text/javascript" id="cookiebanner"
+        src="/Scripts/cookiebanner.min.js"
+        data-position="bottom"
+        data-bg="#F4F4F4"
+        data-fg="#333"
+        data-font-size="11px"
+        data-text-align="left"
+        data-moreinfo="/privacy-policy/"
+        data-linkmsg="Details"
+        data-close-style="float:left;padding-left:5px;padding-right:5px;color: #179D82;"
+        data-message="We use cookies to improve your browsing experience.">
+</script>
+
+
+
+
+    
+    
+    
+    <script type="text/javascript">function initFields(n){var t;t=n?$(n):$(".fields");selectizeInit(t.find("select"),!1,null,null,null,null,{onChange:function(){updateConditionals(t)},noSort:!0});t.find("select[data-maxchoices]").each(function(){var n=$(this).data("maxchoices");n&&(this.selectize.settings.maxItems=n,this.selectize.refreshState())});t.find('.field input[type="checkbox"]').on("change",function(){updateConditionals(t)});updateConditionals(t)}function updateConditionals(n){var t=n.find('.field[data-conditionid!=""]');t.each(function(){var t=$(this),r=!0,i=n.find('.field[data-id="'+t.data("conditionid")+'"]'),f,u;if(i.is(":visible"))if(i.data("type")=="Tag"){var e=i.find("select")[0].selectize.items,u=t.data("conditionvalues").toString().split(","),o=e.filter(n=>u.includes(n));r=o.length>0}else i.data("type")=="Checkbox"&&(f=i.find('input[type="checkbox"]').is(":checked")?"1":"0",u=t.data("conditionvalues").toString().split(","),r=u.includes(f));else r=!1;r?t.fadeIn().find("input"):t.hide().find("input")})}initFields()</script>
+    <script type="text/javascript">function updateSpeakerMode(n){var t,i;return n&&speakerMode!=n&&(speakerMode=n),canSubmitAsSomebodyElse||speakerMode!="ForSomeoneElseEdit"&&speakerMode!="ForSomeoneElseView"&&speakerMode!="ForSomeoneElseInvite"||(speakerMode="View"),wasInEditMode&&speakerMode=="View"&&(speakerMode="Edit"),(speakerMode=="ForSomeoneElseEdit"||speakerMode=="ForSomeoneElseView"||speakerMode=="ForSomeoneElseInvite")&&(t=$("#ImpersonatedUser_Id"),speakerMode=t.length&&t.val()=="*"?"ForSomeoneElseInvite":t.length==0||t.val()==""||t.val()[0]=="-"?"ForSomeoneElseEdit":"ForSomeoneElseView"),$("#SpeakerMode").val(speakerMode),speakerMode=="Edit"&&(wasInEditMode=!0),$("[data-sm]").each(function(){var n=$(this),t=n.data("sm").split(" ");n.data("sm")!=""&&t.indexOf(speakerMode)==-1?this.tagName==="LI"?n.hide():n.slideUp():this.tagName==="LI"?n.show():n.slideDown()}),$(".js-speaker-change ul").css("display","block"),i=$(".js-speaker-change ul li:visible:not(.divider)").length>0,i?$(".js-speaker-change").show():$(".js-speaker-change").hide(),$(".js-speaker-change ul li.divider").show(),$(".js-speaker-change ul li.divider").each(function(){var n=$(this).prev(":visible"),t=$(this).next(":visible"),i=n.not(".divider").length>0,r=t.not(".divider").length>0;i&&r||$(this).hide()}),$(".js-speaker-change ul").css("display",""),!1}$(document).ready(function(){$(".js-sendics").click(function(){$(".dropdown.open .dropdown-toggle").dropdown("toggle");var n=$(this).data("url");return $.getJSON(n,function(n){n.error?toastr.error(n.error):toastr.success(n.success)}),!1})});$(".submit-your-session-button").next().hide();$(".submit-your-session-button").click(function(){$(this).slideUp().next().slideDown()});$.post("/submission/helper/26287.js",{r:document.referrer},()=>{},"json");var speakerMode="View",wasInEditMode=!1,canSubmitAsSomebodyElse=!1;updateSpeakerMode();$("#ImpersonatedUser_Id").change(function(){updateSpeakerMode();var t=$(this).val().substr(1),i=$(this).val()[0]=="-",r=$(this).val()==""||$(this).val()=="*",n=$('.js-imp-speaker-view [data-speakerid="'+t+'"]');i?superpaste(n,$(".js-imp-speaker-edit")):r?($(".js-imp-speaker-edit [data-superpaste-to]:input").val(""),$(".js-imp-speaker-edit .dropzone img").attr("src","").hide(),$(".js-imp-speaker-edit .dropzone input").val("")):($(".js-imp-speaker-view [data-speakerid]").slideUp(),n.slideDown())})</script>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,1670 @@
+{
+  "cells": [
+    {
+      "captures": [
+        "x-luma-budapest"
+      ],
+      "disposition": "opened_empty",
+      "duplicates": 0,
+      "example_lines": [],
+      "lane": "luma_city",
+      "lane_label": "Luma city calendar",
+      "pages_read": 1,
+      "retained_yield": 0,
+      "theme": "ai",
+      "theme_label": "AI",
+      "theme_term_hits": 0,
+      "urls": [
+        "https://luma.com/budapest"
+      ]
+    },
+    {
+      "captures": [
+        "x-luma-bp",
+        "x-luma-budapest-ai",
+        "x-luma-budapest-tech"
+      ],
+      "disposition": "partial_aliases_404",
+      "duplicates": 0,
+      "example_lines": [],
+      "lane": "luma_aliases",
+      "lane_label": "Luma city aliases",
+      "pages_read": 3,
+      "retained_yield": 0,
+      "theme": "ai",
+      "theme_label": "AI",
+      "theme_term_hits": 0,
+      "urls": [
+        "https://luma.com/bp",
+        "https://luma.com/budapest-ai",
+        "https://luma.com/budapest-tech"
+      ]
+    },
+    {
+      "captures": [
+        "x-luma-deai"
+      ],
+      "disposition": "opened_empty",
+      "duplicates": 0,
+      "example_lines": [
+        "Decentralized AI Days · Eseménynaptár",
+        "Decentralized AI Days"
+      ],
+      "lane": "luma_organiser",
+      "lane_label": "Luma organiser calendars",
+      "pages_read": 2,
+      "retained_yield": 0,
+      "theme": "ai",
+      "theme_label": "AI",
+      "theme_term_hits": 3,
+      "urls": [
+        "https://luma.com/decentralized_ai_events",
+        "https://luma.com/decentralized_ai_events?period=past"
+      ]
+    },
+    {
+      "captures": [
+        "x-meetup-search-ai",
+        "x-meetup-search-blockchain",
+        "x-meetup-datascience",
+        "x-meetup-web3",
+        "e-meetup-appliedai",
+        "m-pydata",
+        "m-ethereum",
+        "m-datascience",
+        "m-ml",
+        "m-bigdata",
+        "m-szerdai",
+        "m-sharetech",
+        "m-aicee",
+        "m-databricks",
+        "m-turbine"
+      ],
+      "disposition": "opened_yield",
+      "duplicates": 0,
+      "example_lines": [
+        "Artificial intelligence events near Budapest, HU",
+        "Agents & Dragons: Once Upon Agentic AI"
+      ],
+      "lane": "meetup",
+      "lane_label": "Meetup groups with held-event history",
+      "pages_read": 15,
+      "retained_yield": 1,
+      "theme": "ai",
+      "theme_label": "AI",
+      "theme_term_hits": 89,
+      "urls": [
+        "https://www.meetup.com/find/?location=hu--Budapest&source=EVENTS&keywords=artificial%20intelligence",
+        "https://www.meetup.com/find/?location=hu--Budapest&source=EVENTS&keywords=blockchain",
+        "https://www.meetup.com/budapest-data-science-meetup/",
+        "https://www.meetup.com/budapest-web3-meetup/",
+        "https://www.meetup.com/pydata-budapest/",
+        "https://www.meetup.com/ethereum-hungary/",
+        "https://www.meetup.com/budapest_data_science/",
+        "https://www.meetup.com/budapest-ml-meetup/",
+        "https://www.meetup.com/big-data-meetup-budapest/",
+        "https://www.meetup.com/szerdai/",
+        "https://www.meetup.com/budapest-ai-hub/",
+        "https://www.meetup.com/ai-cee-budapest-meetup-group/",
+        "https://www.meetup.com/budapest-databricks-meetup-group/",
+        "https://www.meetup.com/turbine-ai-meetups/",
+        "https://www.meetup.com/budapest-artificial-intelligence-meetup/"
+      ]
+    },
+    {
+      "captures": [
+        "x-eventbrite-ai",
+        "x-eventbrite-blockchain",
+        "x-eventbrite-datascience",
+        "e2-econ-ai-2027",
+        "e2-beerup-2027"
+      ],
+      "disposition": "opened_yield",
+      "duplicates": 0,
+      "example_lines": [
+        "Discover Artificial Intelligence Events & Activities in Budapest, Hungary | Eventbrite",
+        "Artificial Intelligence Events"
+      ],
+      "lane": "eventbrite",
+      "lane_label": "Eventbrite",
+      "pages_read": 5,
+      "retained_yield": 1,
+      "theme": "ai",
+      "theme_label": "AI",
+      "theme_term_hits": 55,
+      "urls": [
+        "https://www.eventbrite.com/d/hungary--budapest/artificial-intelligence/",
+        "https://www.eventbrite.com/d/hungary--budapest/blockchain/",
+        "https://www.eventbrite.com/d/hungary--budapest/data-science/",
+        "https://www.eventbrite.com/e/2nd-annual-conference-on-business-economics-research-ai-2027-budapest-tickets-2003335625785",
+        "https://www.eventbrite.com/e/beerup-tech-fest-2027-tickets-2004284270206"
+      ]
+    },
+    {
+      "captures": [
+        "x-mira-main"
+      ],
+      "disposition": "payload_limited_js_shell",
+      "duplicates": 0,
+      "example_lines": [],
+      "lane": "miragather_main",
+      "lane_label": "MiraGather main",
+      "pages_read": 1,
+      "retained_yield": 0,
+      "theme": "ai",
+      "theme_label": "AI",
+      "theme_term_hits": 0,
+      "urls": [
+        "https://miragather.com/"
+      ]
+    },
+    {
+      "captures": [
+        "x-mira-side"
+      ],
+      "disposition": "payload_limited_js_shell",
+      "duplicates": 0,
+      "example_lines": [],
+      "lane": "miragather_side",
+      "lane_label": "MiraGather ?tab=side",
+      "pages_read": 1,
+      "retained_yield": 0,
+      "theme": "ai",
+      "theme_label": "AI",
+      "theme_term_hits": 0,
+      "urls": [
+        "https://miragather.com/?tab=side"
+      ]
+    },
+    {
+      "captures": [
+        "x-mira-ai"
+      ],
+      "disposition": "payload_limited_js_shell",
+      "duplicates": 0,
+      "example_lines": [
+        "Mira | AI Events"
+      ],
+      "lane": "miragather_ai",
+      "lane_label": "MiraGather /ai",
+      "pages_read": 1,
+      "retained_yield": 0,
+      "theme": "ai",
+      "theme_label": "AI",
+      "theme_term_hits": 1,
+      "urls": [
+        "https://miragather.com/ai"
+      ]
+    },
+    {
+      "captures": [
+        "x-aitinkerers",
+        "x-aitinkerers-budapest"
+      ],
+      "disposition": "opened_directory_no_2027_date",
+      "duplicates": 0,
+      "example_lines": [
+        "AI Tinkerers | Global AI Events & Meetups 2026",
+        "AI Experts & Training"
+      ],
+      "lane": "aitinkerers",
+      "lane_label": "AI Tinkerers",
+      "pages_read": 2,
+      "retained_yield": 0,
+      "theme": "ai",
+      "theme_label": "AI",
+      "theme_term_hits": 51,
+      "urls": [
+        "https://aitinkerers.org/all_cities",
+        "https://budapest.aitinkerers.org"
+      ]
+    },
+    {
+      "captures": [
+        "x-luma-budapest"
+      ],
+      "disposition": "opened_empty",
+      "duplicates": 0,
+      "example_lines": [],
+      "lane": "luma_city",
+      "lane_label": "Luma city calendar",
+      "pages_read": 1,
+      "retained_yield": 0,
+      "theme": "machine_learning",
+      "theme_label": "Machine learning",
+      "theme_term_hits": 0,
+      "urls": [
+        "https://luma.com/budapest"
+      ]
+    },
+    {
+      "captures": [
+        "x-luma-bp",
+        "x-luma-budapest-ai",
+        "x-luma-budapest-tech"
+      ],
+      "disposition": "partial_aliases_404",
+      "duplicates": 0,
+      "example_lines": [],
+      "lane": "luma_aliases",
+      "lane_label": "Luma city aliases",
+      "pages_read": 3,
+      "retained_yield": 0,
+      "theme": "machine_learning",
+      "theme_label": "Machine learning",
+      "theme_term_hits": 0,
+      "urls": [
+        "https://luma.com/bp",
+        "https://luma.com/budapest-ai",
+        "https://luma.com/budapest-tech"
+      ]
+    },
+    {
+      "captures": [
+        "x-luma-deai"
+      ],
+      "disposition": "opened_empty",
+      "duplicates": 0,
+      "example_lines": [],
+      "lane": "luma_organiser",
+      "lane_label": "Luma organiser calendars",
+      "pages_read": 2,
+      "retained_yield": 0,
+      "theme": "machine_learning",
+      "theme_label": "Machine learning",
+      "theme_term_hits": 0,
+      "urls": [
+        "https://luma.com/decentralized_ai_events",
+        "https://luma.com/decentralized_ai_events?period=past"
+      ]
+    },
+    {
+      "captures": [
+        "x-meetup-search-ai",
+        "x-meetup-search-blockchain",
+        "x-meetup-datascience",
+        "x-meetup-web3",
+        "e-meetup-appliedai",
+        "m-pydata",
+        "m-ethereum",
+        "m-datascience",
+        "m-ml",
+        "m-bigdata",
+        "m-szerdai",
+        "m-sharetech",
+        "m-aicee",
+        "m-databricks",
+        "m-turbine"
+      ],
+      "disposition": "opened_empty",
+      "duplicates": 0,
+      "example_lines": [
+        "Budapest ML Meetup #12",
+        "by Budapest ML Meetup"
+      ],
+      "lane": "meetup",
+      "lane_label": "Meetup groups with held-event history",
+      "pages_read": 15,
+      "retained_yield": 0,
+      "theme": "machine_learning",
+      "theme_label": "Machine learning",
+      "theme_term_hits": 28,
+      "urls": [
+        "https://www.meetup.com/find/?location=hu--Budapest&source=EVENTS&keywords=artificial%20intelligence",
+        "https://www.meetup.com/find/?location=hu--Budapest&source=EVENTS&keywords=blockchain",
+        "https://www.meetup.com/budapest-data-science-meetup/",
+        "https://www.meetup.com/budapest-web3-meetup/",
+        "https://www.meetup.com/pydata-budapest/",
+        "https://www.meetup.com/ethereum-hungary/",
+        "https://www.meetup.com/budapest_data_science/",
+        "https://www.meetup.com/budapest-ml-meetup/",
+        "https://www.meetup.com/big-data-meetup-budapest/",
+        "https://www.meetup.com/szerdai/",
+        "https://www.meetup.com/budapest-ai-hub/",
+        "https://www.meetup.com/ai-cee-budapest-meetup-group/",
+        "https://www.meetup.com/budapest-databricks-meetup-group/",
+        "https://www.meetup.com/turbine-ai-meetups/",
+        "https://www.meetup.com/budapest-artificial-intelligence-meetup/"
+      ]
+    },
+    {
+      "captures": [
+        "x-eventbrite-ai",
+        "x-eventbrite-blockchain",
+        "x-eventbrite-datascience",
+        "e2-econ-ai-2027",
+        "e2-beerup-2027"
+      ],
+      "disposition": "opened_empty",
+      "duplicates": 0,
+      "example_lines": [],
+      "lane": "eventbrite",
+      "lane_label": "Eventbrite",
+      "pages_read": 5,
+      "retained_yield": 0,
+      "theme": "machine_learning",
+      "theme_label": "Machine learning",
+      "theme_term_hits": 0,
+      "urls": [
+        "https://www.eventbrite.com/d/hungary--budapest/artificial-intelligence/",
+        "https://www.eventbrite.com/d/hungary--budapest/blockchain/",
+        "https://www.eventbrite.com/d/hungary--budapest/data-science/",
+        "https://www.eventbrite.com/e/2nd-annual-conference-on-business-economics-research-ai-2027-budapest-tickets-2003335625785",
+        "https://www.eventbrite.com/e/beerup-tech-fest-2027-tickets-2004284270206"
+      ]
+    },
+    {
+      "captures": [
+        "x-mira-main"
+      ],
+      "disposition": "payload_limited_js_shell",
+      "duplicates": 0,
+      "example_lines": [],
+      "lane": "miragather_main",
+      "lane_label": "MiraGather main",
+      "pages_read": 1,
+      "retained_yield": 0,
+      "theme": "machine_learning",
+      "theme_label": "Machine learning",
+      "theme_term_hits": 0,
+      "urls": [
+        "https://miragather.com/"
+      ]
+    },
+    {
+      "captures": [
+        "x-mira-side"
+      ],
+      "disposition": "payload_limited_js_shell",
+      "duplicates": 0,
+      "example_lines": [],
+      "lane": "miragather_side",
+      "lane_label": "MiraGather ?tab=side",
+      "pages_read": 1,
+      "retained_yield": 0,
+      "theme": "machine_learning",
+      "theme_label": "Machine learning",
+      "theme_term_hits": 0,
+      "urls": [
+        "https://miragather.com/?tab=side"
+      ]
+    },
+    {
+      "captures": [
+        "x-mira-ai"
+      ],
+      "disposition": "payload_limited_js_shell",
+      "duplicates": 0,
+      "example_lines": [],
+      "lane": "miragather_ai",
+      "lane_label": "MiraGather /ai",
+      "pages_read": 1,
+      "retained_yield": 0,
+      "theme": "machine_learning",
+      "theme_label": "Machine learning",
+      "theme_term_hits": 0,
+      "urls": [
+        "https://miragather.com/ai"
+      ]
+    },
+    {
+      "captures": [
+        "x-aitinkerers",
+        "x-aitinkerers-budapest"
+      ],
+      "disposition": "opened_directory_no_2027_date",
+      "duplicates": 0,
+      "example_lines": [
+        "Members include AI engineers, ML researchers, developers, founders, and builders from the local Budapest chapter."
+      ],
+      "lane": "aitinkerers",
+      "lane_label": "AI Tinkerers",
+      "pages_read": 2,
+      "retained_yield": 0,
+      "theme": "machine_learning",
+      "theme_label": "Machine learning",
+      "theme_term_hits": 1,
+      "urls": [
+        "https://aitinkerers.org/all_cities",
+        "https://budapest.aitinkerers.org"
+      ]
+    },
+    {
+      "captures": [
+        "x-luma-budapest"
+      ],
+      "disposition": "opened_empty",
+      "duplicates": 0,
+      "example_lines": [],
+      "lane": "luma_city",
+      "lane_label": "Luma city calendar",
+      "pages_read": 1,
+      "retained_yield": 0,
+      "theme": "data_science",
+      "theme_label": "Data science",
+      "theme_term_hits": 0,
+      "urls": [
+        "https://luma.com/budapest"
+      ]
+    },
+    {
+      "captures": [
+        "x-luma-bp",
+        "x-luma-budapest-ai",
+        "x-luma-budapest-tech"
+      ],
+      "disposition": "partial_aliases_404",
+      "duplicates": 0,
+      "example_lines": [],
+      "lane": "luma_aliases",
+      "lane_label": "Luma city aliases",
+      "pages_read": 3,
+      "retained_yield": 0,
+      "theme": "data_science",
+      "theme_label": "Data science",
+      "theme_term_hits": 0,
+      "urls": [
+        "https://luma.com/bp",
+        "https://luma.com/budapest-ai",
+        "https://luma.com/budapest-tech"
+      ]
+    },
+    {
+      "captures": [
+        "x-luma-deai"
+      ],
+      "disposition": "opened_empty",
+      "duplicates": 0,
+      "example_lines": [],
+      "lane": "luma_organiser",
+      "lane_label": "Luma organiser calendars",
+      "pages_read": 2,
+      "retained_yield": 0,
+      "theme": "data_science",
+      "theme_label": "Data science",
+      "theme_term_hits": 0,
+      "urls": [
+        "https://luma.com/decentralized_ai_events",
+        "https://luma.com/decentralized_ai_events?period=past"
+      ]
+    },
+    {
+      "captures": [
+        "x-meetup-search-ai",
+        "x-meetup-search-blockchain",
+        "x-meetup-datascience",
+        "x-meetup-web3",
+        "e-meetup-appliedai",
+        "m-pydata",
+        "m-ethereum",
+        "m-datascience",
+        "m-ml",
+        "m-bigdata",
+        "m-szerdai",
+        "m-sharetech",
+        "m-aicee",
+        "m-databricks",
+        "m-turbine"
+      ],
+      "disposition": "opened_empty",
+      "duplicates": 0,
+      "example_lines": [
+        "PyData is an educational program of NumFOCUS, a 501(c)3 non-profit organization in the United States. PyData provides a forum for the international community of",
+        "Data Science"
+      ],
+      "lane": "meetup",
+      "lane_label": "Meetup groups with held-event history",
+      "pages_read": 15,
+      "retained_yield": 0,
+      "theme": "data_science",
+      "theme_label": "Data science",
+      "theme_term_hits": 10,
+      "urls": [
+        "https://www.meetup.com/find/?location=hu--Budapest&source=EVENTS&keywords=artificial%20intelligence",
+        "https://www.meetup.com/find/?location=hu--Budapest&source=EVENTS&keywords=blockchain",
+        "https://www.meetup.com/budapest-data-science-meetup/",
+        "https://www.meetup.com/budapest-web3-meetup/",
+        "https://www.meetup.com/pydata-budapest/",
+        "https://www.meetup.com/ethereum-hungary/",
+        "https://www.meetup.com/budapest_data_science/",
+        "https://www.meetup.com/budapest-ml-meetup/",
+        "https://www.meetup.com/big-data-meetup-budapest/",
+        "https://www.meetup.com/szerdai/",
+        "https://www.meetup.com/budapest-ai-hub/",
+        "https://www.meetup.com/ai-cee-budapest-meetup-group/",
+        "https://www.meetup.com/budapest-databricks-meetup-group/",
+        "https://www.meetup.com/turbine-ai-meetups/",
+        "https://www.meetup.com/budapest-artificial-intelligence-meetup/"
+      ]
+    },
+    {
+      "captures": [
+        "x-eventbrite-ai",
+        "x-eventbrite-blockchain",
+        "x-eventbrite-datascience",
+        "e2-econ-ai-2027",
+        "e2-beerup-2027"
+      ],
+      "disposition": "opened_empty",
+      "duplicates": 0,
+      "example_lines": [
+        "Discover Data Science Events & Activities in Budapest, Hungary | Eventbrite",
+        "Data Science Events"
+      ],
+      "lane": "eventbrite",
+      "lane_label": "Eventbrite",
+      "pages_read": 5,
+      "retained_yield": 0,
+      "theme": "data_science",
+      "theme_label": "Data science",
+      "theme_term_hits": 3,
+      "urls": [
+        "https://www.eventbrite.com/d/hungary--budapest/artificial-intelligence/",
+        "https://www.eventbrite.com/d/hungary--budapest/blockchain/",
+        "https://www.eventbrite.com/d/hungary--budapest/data-science/",
+        "https://www.eventbrite.com/e/2nd-annual-conference-on-business-economics-research-ai-2027-budapest-tickets-2003335625785",
+        "https://www.eventbrite.com/e/beerup-tech-fest-2027-tickets-2004284270206"
+      ]
+    },
+    {
+      "captures": [
+        "x-mira-main"
+      ],
+      "disposition": "payload_limited_js_shell",
+      "duplicates": 0,
+      "example_lines": [],
+      "lane": "miragather_main",
+      "lane_label": "MiraGather main",
+      "pages_read": 1,
+      "retained_yield": 0,
+      "theme": "data_science",
+      "theme_label": "Data science",
+      "theme_term_hits": 0,
+      "urls": [
+        "https://miragather.com/"
+      ]
+    },
+    {
+      "captures": [
+        "x-mira-side"
+      ],
+      "disposition": "payload_limited_js_shell",
+      "duplicates": 0,
+      "example_lines": [],
+      "lane": "miragather_side",
+      "lane_label": "MiraGather ?tab=side",
+      "pages_read": 1,
+      "retained_yield": 0,
+      "theme": "data_science",
+      "theme_label": "Data science",
+      "theme_term_hits": 0,
+      "urls": [
+        "https://miragather.com/?tab=side"
+      ]
+    },
+    {
+      "captures": [
+        "x-mira-ai"
+      ],
+      "disposition": "payload_limited_js_shell",
+      "duplicates": 0,
+      "example_lines": [],
+      "lane": "miragather_ai",
+      "lane_label": "MiraGather /ai",
+      "pages_read": 1,
+      "retained_yield": 0,
+      "theme": "data_science",
+      "theme_label": "Data science",
+      "theme_term_hits": 0,
+      "urls": [
+        "https://miragather.com/ai"
+      ]
+    },
+    {
+      "captures": [
+        "x-aitinkerers",
+        "x-aitinkerers-budapest"
+      ],
+      "disposition": "opened_directory_no_2027_date",
+      "duplicates": 0,
+      "example_lines": [],
+      "lane": "aitinkerers",
+      "lane_label": "AI Tinkerers",
+      "pages_read": 2,
+      "retained_yield": 0,
+      "theme": "data_science",
+      "theme_label": "Data science",
+      "theme_term_hits": 0,
+      "urls": [
+        "https://aitinkerers.org/all_cities",
+        "https://budapest.aitinkerers.org"
+      ]
+    },
+    {
+      "captures": [
+        "x-luma-budapest"
+      ],
+      "disposition": "opened_empty",
+      "duplicates": 0,
+      "example_lines": [],
+      "lane": "luma_city",
+      "lane_label": "Luma city calendar",
+      "pages_read": 1,
+      "retained_yield": 0,
+      "theme": "web3",
+      "theme_label": "Web3",
+      "theme_term_hits": 0,
+      "urls": [
+        "https://luma.com/budapest"
+      ]
+    },
+    {
+      "captures": [
+        "x-luma-bp",
+        "x-luma-budapest-ai",
+        "x-luma-budapest-tech"
+      ],
+      "disposition": "partial_aliases_404",
+      "duplicates": 0,
+      "example_lines": [],
+      "lane": "luma_aliases",
+      "lane_label": "Luma city aliases",
+      "pages_read": 3,
+      "retained_yield": 0,
+      "theme": "web3",
+      "theme_label": "Web3",
+      "theme_term_hits": 0,
+      "urls": [
+        "https://luma.com/bp",
+        "https://luma.com/budapest-ai",
+        "https://luma.com/budapest-tech"
+      ]
+    },
+    {
+      "captures": [
+        "x-luma-deai"
+      ],
+      "disposition": "opened_empty",
+      "duplicates": 0,
+      "example_lines": [
+        "Decentralized AI Days · Eseménynaptár",
+        "Decentralized AI Days"
+      ],
+      "lane": "luma_organiser",
+      "lane_label": "Luma organiser calendars",
+      "pages_read": 2,
+      "retained_yield": 0,
+      "theme": "web3",
+      "theme_label": "Web3",
+      "theme_term_hits": 3,
+      "urls": [
+        "https://luma.com/decentralized_ai_events",
+        "https://luma.com/decentralized_ai_events?period=past"
+      ]
+    },
+    {
+      "captures": [
+        "x-meetup-search-ai",
+        "x-meetup-search-blockchain",
+        "x-meetup-datascience",
+        "x-meetup-web3",
+        "e-meetup-appliedai",
+        "m-pydata",
+        "m-ethereum",
+        "m-datascience",
+        "m-ml",
+        "m-bigdata",
+        "m-szerdai",
+        "m-sharetech",
+        "m-aicee",
+        "m-databricks",
+        "m-turbine"
+      ],
+      "disposition": "opened_empty",
+      "duplicates": 0,
+      "example_lines": [
+        "Learning and exchanging ideas about Ethereum and decentralized, open source technologies, as well as related economic and social topics.",
+        "Decentralized Systems & Applications"
+      ],
+      "lane": "meetup",
+      "lane_label": "Meetup groups with held-event history",
+      "pages_read": 15,
+      "retained_yield": 0,
+      "theme": "web3",
+      "theme_label": "Web3",
+      "theme_term_hits": 2,
+      "urls": [
+        "https://www.meetup.com/find/?location=hu--Budapest&source=EVENTS&keywords=artificial%20intelligence",
+        "https://www.meetup.com/find/?location=hu--Budapest&source=EVENTS&keywords=blockchain",
+        "https://www.meetup.com/budapest-data-science-meetup/",
+        "https://www.meetup.com/budapest-web3-meetup/",
+        "https://www.meetup.com/pydata-budapest/",
+        "https://www.meetup.com/ethereum-hungary/",
+        "https://www.meetup.com/budapest_data_science/",
+        "https://www.meetup.com/budapest-ml-meetup/",
+        "https://www.meetup.com/big-data-meetup-budapest/",
+        "https://www.meetup.com/szerdai/",
+        "https://www.meetup.com/budapest-ai-hub/",
+        "https://www.meetup.com/ai-cee-budapest-meetup-group/",
+        "https://www.meetup.com/budapest-databricks-meetup-group/",
+        "https://www.meetup.com/turbine-ai-meetups/",
+        "https://www.meetup.com/budapest-artificial-intelligence-meetup/"
+      ]
+    },
+    {
+      "captures": [
+        "x-eventbrite-ai",
+        "x-eventbrite-blockchain",
+        "x-eventbrite-datascience",
+        "e2-econ-ai-2027",
+        "e2-beerup-2027"
+      ],
+      "disposition": "opened_empty",
+      "duplicates": 0,
+      "example_lines": [],
+      "lane": "eventbrite",
+      "lane_label": "Eventbrite",
+      "pages_read": 5,
+      "retained_yield": 0,
+      "theme": "web3",
+      "theme_label": "Web3",
+      "theme_term_hits": 0,
+      "urls": [
+        "https://www.eventbrite.com/d/hungary--budapest/artificial-intelligence/",
+        "https://www.eventbrite.com/d/hungary--budapest/blockchain/",
+        "https://www.eventbrite.com/d/hungary--budapest/data-science/",
+        "https://www.eventbrite.com/e/2nd-annual-conference-on-business-economics-research-ai-2027-budapest-tickets-2003335625785",
+        "https://www.eventbrite.com/e/beerup-tech-fest-2027-tickets-2004284270206"
+      ]
+    },
+    {
+      "captures": [
+        "x-mira-main"
+      ],
+      "disposition": "payload_limited_js_shell",
+      "duplicates": 0,
+      "example_lines": [],
+      "lane": "miragather_main",
+      "lane_label": "MiraGather main",
+      "pages_read": 1,
+      "retained_yield": 0,
+      "theme": "web3",
+      "theme_label": "Web3",
+      "theme_term_hits": 0,
+      "urls": [
+        "https://miragather.com/"
+      ]
+    },
+    {
+      "captures": [
+        "x-mira-side"
+      ],
+      "disposition": "payload_limited_js_shell",
+      "duplicates": 0,
+      "example_lines": [],
+      "lane": "miragather_side",
+      "lane_label": "MiraGather ?tab=side",
+      "pages_read": 1,
+      "retained_yield": 0,
+      "theme": "web3",
+      "theme_label": "Web3",
+      "theme_term_hits": 0,
+      "urls": [
+        "https://miragather.com/?tab=side"
+      ]
+    },
+    {
+      "captures": [
+        "x-mira-ai"
+      ],
+      "disposition": "payload_limited_js_shell",
+      "duplicates": 0,
+      "example_lines": [],
+      "lane": "miragather_ai",
+      "lane_label": "MiraGather /ai",
+      "pages_read": 1,
+      "retained_yield": 0,
+      "theme": "web3",
+      "theme_label": "Web3",
+      "theme_term_hits": 0,
+      "urls": [
+        "https://miragather.com/ai"
+      ]
+    },
+    {
+      "captures": [
+        "x-aitinkerers",
+        "x-aitinkerers-budapest"
+      ],
+      "disposition": "opened_directory_no_2027_date",
+      "duplicates": 0,
+      "example_lines": [],
+      "lane": "aitinkerers",
+      "lane_label": "AI Tinkerers",
+      "pages_read": 2,
+      "retained_yield": 0,
+      "theme": "web3",
+      "theme_label": "Web3",
+      "theme_term_hits": 0,
+      "urls": [
+        "https://aitinkerers.org/all_cities",
+        "https://budapest.aitinkerers.org"
+      ]
+    },
+    {
+      "captures": [
+        "x-luma-budapest"
+      ],
+      "disposition": "opened_empty",
+      "duplicates": 0,
+      "example_lines": [],
+      "lane": "luma_city",
+      "lane_label": "Luma city calendar",
+      "pages_read": 1,
+      "retained_yield": 0,
+      "theme": "crypto",
+      "theme_label": "Crypto",
+      "theme_term_hits": 0,
+      "urls": [
+        "https://luma.com/budapest"
+      ]
+    },
+    {
+      "captures": [
+        "x-luma-bp",
+        "x-luma-budapest-ai",
+        "x-luma-budapest-tech"
+      ],
+      "disposition": "partial_aliases_404",
+      "duplicates": 0,
+      "example_lines": [],
+      "lane": "luma_aliases",
+      "lane_label": "Luma city aliases",
+      "pages_read": 3,
+      "retained_yield": 0,
+      "theme": "crypto",
+      "theme_label": "Crypto",
+      "theme_term_hits": 0,
+      "urls": [
+        "https://luma.com/bp",
+        "https://luma.com/budapest-ai",
+        "https://luma.com/budapest-tech"
+      ]
+    },
+    {
+      "captures": [
+        "x-luma-deai"
+      ],
+      "disposition": "opened_empty",
+      "duplicates": 0,
+      "example_lines": [],
+      "lane": "luma_organiser",
+      "lane_label": "Luma organiser calendars",
+      "pages_read": 2,
+      "retained_yield": 0,
+      "theme": "crypto",
+      "theme_label": "Crypto",
+      "theme_term_hits": 0,
+      "urls": [
+        "https://luma.com/decentralized_ai_events",
+        "https://luma.com/decentralized_ai_events?period=past"
+      ]
+    },
+    {
+      "captures": [
+        "x-meetup-search-ai",
+        "x-meetup-search-blockchain",
+        "x-meetup-datascience",
+        "x-meetup-web3",
+        "e-meetup-appliedai",
+        "m-pydata",
+        "m-ethereum",
+        "m-datascience",
+        "m-ml",
+        "m-bigdata",
+        "m-szerdai",
+        "m-sharetech",
+        "m-aicee",
+        "m-databricks",
+        "m-turbine"
+      ],
+      "disposition": "opened_empty",
+      "duplicates": 0,
+      "example_lines": [
+        "Cryptocurrency",
+        "Cryptography"
+      ],
+      "lane": "meetup",
+      "lane_label": "Meetup groups with held-event history",
+      "pages_read": 15,
+      "retained_yield": 0,
+      "theme": "crypto",
+      "theme_label": "Crypto",
+      "theme_term_hits": 2,
+      "urls": [
+        "https://www.meetup.com/find/?location=hu--Budapest&source=EVENTS&keywords=artificial%20intelligence",
+        "https://www.meetup.com/find/?location=hu--Budapest&source=EVENTS&keywords=blockchain",
+        "https://www.meetup.com/budapest-data-science-meetup/",
+        "https://www.meetup.com/budapest-web3-meetup/",
+        "https://www.meetup.com/pydata-budapest/",
+        "https://www.meetup.com/ethereum-hungary/",
+        "https://www.meetup.com/budapest_data_science/",
+        "https://www.meetup.com/budapest-ml-meetup/",
+        "https://www.meetup.com/big-data-meetup-budapest/",
+        "https://www.meetup.com/szerdai/",
+        "https://www.meetup.com/budapest-ai-hub/",
+        "https://www.meetup.com/ai-cee-budapest-meetup-group/",
+        "https://www.meetup.com/budapest-databricks-meetup-group/",
+        "https://www.meetup.com/turbine-ai-meetups/",
+        "https://www.meetup.com/budapest-artificial-intelligence-meetup/"
+      ]
+    },
+    {
+      "captures": [
+        "x-eventbrite-ai",
+        "x-eventbrite-blockchain",
+        "x-eventbrite-datascience",
+        "e2-econ-ai-2027",
+        "e2-beerup-2027"
+      ],
+      "disposition": "opened_empty",
+      "duplicates": 0,
+      "example_lines": [],
+      "lane": "eventbrite",
+      "lane_label": "Eventbrite",
+      "pages_read": 5,
+      "retained_yield": 0,
+      "theme": "crypto",
+      "theme_label": "Crypto",
+      "theme_term_hits": 0,
+      "urls": [
+        "https://www.eventbrite.com/d/hungary--budapest/artificial-intelligence/",
+        "https://www.eventbrite.com/d/hungary--budapest/blockchain/",
+        "https://www.eventbrite.com/d/hungary--budapest/data-science/",
+        "https://www.eventbrite.com/e/2nd-annual-conference-on-business-economics-research-ai-2027-budapest-tickets-2003335625785",
+        "https://www.eventbrite.com/e/beerup-tech-fest-2027-tickets-2004284270206"
+      ]
+    },
+    {
+      "captures": [
+        "x-mira-main"
+      ],
+      "disposition": "payload_limited_js_shell",
+      "duplicates": 0,
+      "example_lines": [],
+      "lane": "miragather_main",
+      "lane_label": "MiraGather main",
+      "pages_read": 1,
+      "retained_yield": 0,
+      "theme": "crypto",
+      "theme_label": "Crypto",
+      "theme_term_hits": 0,
+      "urls": [
+        "https://miragather.com/"
+      ]
+    },
+    {
+      "captures": [
+        "x-mira-side"
+      ],
+      "disposition": "payload_limited_js_shell",
+      "duplicates": 0,
+      "example_lines": [],
+      "lane": "miragather_side",
+      "lane_label": "MiraGather ?tab=side",
+      "pages_read": 1,
+      "retained_yield": 0,
+      "theme": "crypto",
+      "theme_label": "Crypto",
+      "theme_term_hits": 0,
+      "urls": [
+        "https://miragather.com/?tab=side"
+      ]
+    },
+    {
+      "captures": [
+        "x-mira-ai"
+      ],
+      "disposition": "payload_limited_js_shell",
+      "duplicates": 0,
+      "example_lines": [],
+      "lane": "miragather_ai",
+      "lane_label": "MiraGather /ai",
+      "pages_read": 1,
+      "retained_yield": 0,
+      "theme": "crypto",
+      "theme_label": "Crypto",
+      "theme_term_hits": 0,
+      "urls": [
+        "https://miragather.com/ai"
+      ]
+    },
+    {
+      "captures": [
+        "x-aitinkerers",
+        "x-aitinkerers-budapest"
+      ],
+      "disposition": "opened_directory_no_2027_date",
+      "duplicates": 0,
+      "example_lines": [],
+      "lane": "aitinkerers",
+      "lane_label": "AI Tinkerers",
+      "pages_read": 2,
+      "retained_yield": 0,
+      "theme": "crypto",
+      "theme_label": "Crypto",
+      "theme_term_hits": 0,
+      "urls": [
+        "https://aitinkerers.org/all_cities",
+        "https://budapest.aitinkerers.org"
+      ]
+    },
+    {
+      "captures": [
+        "x-luma-budapest"
+      ],
+      "disposition": "opened_empty",
+      "duplicates": 0,
+      "example_lines": [],
+      "lane": "luma_city",
+      "lane_label": "Luma city calendar",
+      "pages_read": 1,
+      "retained_yield": 0,
+      "theme": "blockchain",
+      "theme_label": "Blockchain",
+      "theme_term_hits": 0,
+      "urls": [
+        "https://luma.com/budapest"
+      ]
+    },
+    {
+      "captures": [
+        "x-luma-bp",
+        "x-luma-budapest-ai",
+        "x-luma-budapest-tech"
+      ],
+      "disposition": "partial_aliases_404",
+      "duplicates": 0,
+      "example_lines": [],
+      "lane": "luma_aliases",
+      "lane_label": "Luma city aliases",
+      "pages_read": 3,
+      "retained_yield": 0,
+      "theme": "blockchain",
+      "theme_label": "Blockchain",
+      "theme_term_hits": 0,
+      "urls": [
+        "https://luma.com/bp",
+        "https://luma.com/budapest-ai",
+        "https://luma.com/budapest-tech"
+      ]
+    },
+    {
+      "captures": [
+        "x-luma-deai"
+      ],
+      "disposition": "opened_empty",
+      "duplicates": 0,
+      "example_lines": [],
+      "lane": "luma_organiser",
+      "lane_label": "Luma organiser calendars",
+      "pages_read": 2,
+      "retained_yield": 0,
+      "theme": "blockchain",
+      "theme_label": "Blockchain",
+      "theme_term_hits": 0,
+      "urls": [
+        "https://luma.com/decentralized_ai_events",
+        "https://luma.com/decentralized_ai_events?period=past"
+      ]
+    },
+    {
+      "captures": [
+        "x-meetup-search-ai",
+        "x-meetup-search-blockchain",
+        "x-meetup-datascience",
+        "x-meetup-web3",
+        "e-meetup-appliedai",
+        "m-pydata",
+        "m-ethereum",
+        "m-datascience",
+        "m-ml",
+        "m-bigdata",
+        "m-szerdai",
+        "m-sharetech",
+        "m-aicee",
+        "m-databricks",
+        "m-turbine"
+      ],
+      "disposition": "opened_empty",
+      "duplicates": 0,
+      "example_lines": [
+        "Blockchain events near Budapest, HU",
+        "Blockchain"
+      ],
+      "lane": "meetup",
+      "lane_label": "Meetup groups with held-event history",
+      "pages_read": 15,
+      "retained_yield": 0,
+      "theme": "blockchain",
+      "theme_label": "Blockchain",
+      "theme_term_hits": 2,
+      "urls": [
+        "https://www.meetup.com/find/?location=hu--Budapest&source=EVENTS&keywords=artificial%20intelligence",
+        "https://www.meetup.com/find/?location=hu--Budapest&source=EVENTS&keywords=blockchain",
+        "https://www.meetup.com/budapest-data-science-meetup/",
+        "https://www.meetup.com/budapest-web3-meetup/",
+        "https://www.meetup.com/pydata-budapest/",
+        "https://www.meetup.com/ethereum-hungary/",
+        "https://www.meetup.com/budapest_data_science/",
+        "https://www.meetup.com/budapest-ml-meetup/",
+        "https://www.meetup.com/big-data-meetup-budapest/",
+        "https://www.meetup.com/szerdai/",
+        "https://www.meetup.com/budapest-ai-hub/",
+        "https://www.meetup.com/ai-cee-budapest-meetup-group/",
+        "https://www.meetup.com/budapest-databricks-meetup-group/",
+        "https://www.meetup.com/turbine-ai-meetups/",
+        "https://www.meetup.com/budapest-artificial-intelligence-meetup/"
+      ]
+    },
+    {
+      "captures": [
+        "x-eventbrite-ai",
+        "x-eventbrite-blockchain",
+        "x-eventbrite-datascience",
+        "e2-econ-ai-2027",
+        "e2-beerup-2027"
+      ],
+      "disposition": "opened_empty",
+      "duplicates": 0,
+      "example_lines": [
+        "Discover Blockchain Events & Activities in Budapest, Hungary | Eventbrite",
+        "Blockchain Events"
+      ],
+      "lane": "eventbrite",
+      "lane_label": "Eventbrite",
+      "pages_read": 5,
+      "retained_yield": 0,
+      "theme": "blockchain",
+      "theme_label": "Blockchain",
+      "theme_term_hits": 3,
+      "urls": [
+        "https://www.eventbrite.com/d/hungary--budapest/artificial-intelligence/",
+        "https://www.eventbrite.com/d/hungary--budapest/blockchain/",
+        "https://www.eventbrite.com/d/hungary--budapest/data-science/",
+        "https://www.eventbrite.com/e/2nd-annual-conference-on-business-economics-research-ai-2027-budapest-tickets-2003335625785",
+        "https://www.eventbrite.com/e/beerup-tech-fest-2027-tickets-2004284270206"
+      ]
+    },
+    {
+      "captures": [
+        "x-mira-main"
+      ],
+      "disposition": "payload_limited_js_shell",
+      "duplicates": 0,
+      "example_lines": [],
+      "lane": "miragather_main",
+      "lane_label": "MiraGather main",
+      "pages_read": 1,
+      "retained_yield": 0,
+      "theme": "blockchain",
+      "theme_label": "Blockchain",
+      "theme_term_hits": 0,
+      "urls": [
+        "https://miragather.com/"
+      ]
+    },
+    {
+      "captures": [
+        "x-mira-side"
+      ],
+      "disposition": "payload_limited_js_shell",
+      "duplicates": 0,
+      "example_lines": [],
+      "lane": "miragather_side",
+      "lane_label": "MiraGather ?tab=side",
+      "pages_read": 1,
+      "retained_yield": 0,
+      "theme": "blockchain",
+      "theme_label": "Blockchain",
+      "theme_term_hits": 0,
+      "urls": [
+        "https://miragather.com/?tab=side"
+      ]
+    },
+    {
+      "captures": [
+        "x-mira-ai"
+      ],
+      "disposition": "payload_limited_js_shell",
+      "duplicates": 0,
+      "example_lines": [],
+      "lane": "miragather_ai",
+      "lane_label": "MiraGather /ai",
+      "pages_read": 1,
+      "retained_yield": 0,
+      "theme": "blockchain",
+      "theme_label": "Blockchain",
+      "theme_term_hits": 0,
+      "urls": [
+        "https://miragather.com/ai"
+      ]
+    },
+    {
+      "captures": [
+        "x-aitinkerers",
+        "x-aitinkerers-budapest"
+      ],
+      "disposition": "opened_directory_no_2027_date",
+      "duplicates": 0,
+      "example_lines": [],
+      "lane": "aitinkerers",
+      "lane_label": "AI Tinkerers",
+      "pages_read": 2,
+      "retained_yield": 0,
+      "theme": "blockchain",
+      "theme_label": "Blockchain",
+      "theme_term_hits": 0,
+      "urls": [
+        "https://aitinkerers.org/all_cities",
+        "https://budapest.aitinkerers.org"
+      ]
+    }
+  ],
+  "city_slug": "budapest-hu",
+  "drops": [
+    {
+      "name": "BeerUP Tech Fest 2027",
+      "reason": "tech festival, outside the six themes",
+      "url": "https://www.eventbrite.com/e/beerup-tech-fest-2027-tickets-2004284270206"
+    },
+    {
+      "name": "Vision 2027 - Budapest, Hungary",
+      "reason": "dōTERRA wellness/MLM event, outside the six themes",
+      "url": "https://www.eventbrite.co.uk/e/vision-2027-budapest-hungary-tickets-2004756843686"
+    },
+    {
+      "name": "MoneroKon 2027",
+      "reason": "Krakow, Poland - out of city",
+      "url": "https://monerokon.com/"
+    },
+    {
+      "name": "ICBC 2027 (WASET)",
+      "reason": "organiser pages print conflicting dates (23-24 Aug vs 11-12 Oct 2027) and no Budapest venue",
+      "url": "https://waset.org/blockchain-and-cryptocurrencies-conference-in-august-2027-in-budapest"
+    },
+    {
+      "name": "MODELS 2027",
+      "reason": "model-driven engineering conference; AI is a topic, not the event theme",
+      "url": "https://conf.researchr.org/home/models-2027"
+    },
+    {
+      "name": "MANUF2027",
+      "reason": "manufacturing conference; AI-in-manufacturing is one track",
+      "url": "https://manuf27.bme.hu/"
+    },
+    {
+      "name": "ICAIDLML / ICAMLDE / ICAIMLCE / BAAT-27 / WCCBDIG",
+      "reason": "conference-alert listings only; no organiser page printing a Budapest venue",
+      "url": "https://www.freeconferencealerts.com/conference/iser-icaidlml-2027-2985505"
+    },
+    {
+      "name": "Leadership Club CEE Q1'27",
+      "reason": "prints Q1'27 but the dated line (Wed, Jan 27) carries no year; kept as a lead, not stored",
+      "url": "https://www.eventbrite.com/d/hungary--budapest/data-science/"
+    }
+  ],
+  "generated_on": "2026-11-26",
+  "lanes": [
+    {
+      "captures": [
+        "x-luma-budapest"
+      ],
+      "id": "luma_city",
+      "label": "Luma city calendar",
+      "language": "hu/en",
+      "pages_read": 1,
+      "urls": [
+        "https://luma.com/budapest"
+      ]
+    },
+    {
+      "captures": [
+        "x-luma-bp",
+        "x-luma-budapest-ai",
+        "x-luma-budapest-tech"
+      ],
+      "id": "luma_aliases",
+      "label": "Luma city aliases",
+      "language": "hu/en",
+      "pages_read": 3,
+      "urls": [
+        "https://luma.com/bp",
+        "https://luma.com/budapest-ai",
+        "https://luma.com/budapest-tech"
+      ]
+    },
+    {
+      "captures": [
+        "x-luma-deai"
+      ],
+      "id": "luma_organiser",
+      "label": "Luma organiser calendars",
+      "language": "en",
+      "pages_read": 2,
+      "urls": [
+        "https://luma.com/decentralized_ai_events",
+        "https://luma.com/decentralized_ai_events?period=past"
+      ]
+    },
+    {
+      "captures": [
+        "x-meetup-search-ai",
+        "x-meetup-search-blockchain",
+        "x-meetup-datascience",
+        "x-meetup-web3",
+        "e-meetup-appliedai",
+        "m-pydata",
+        "m-ethereum",
+        "m-datascience",
+        "m-ml",
+        "m-bigdata",
+        "m-szerdai",
+        "m-sharetech",
+        "m-aicee",
+        "m-databricks",
+        "m-turbine"
+      ],
+      "id": "meetup",
+      "label": "Meetup groups with held-event history",
+      "language": "hu/en",
+      "pages_read": 15,
+      "urls": [
+        "https://www.meetup.com/find/?location=hu--Budapest&source=EVENTS&keywords=artificial%20intelligence",
+        "https://www.meetup.com/find/?location=hu--Budapest&source=EVENTS&keywords=blockchain",
+        "https://www.meetup.com/budapest-data-science-meetup/",
+        "https://www.meetup.com/budapest-web3-meetup/",
+        "https://www.meetup.com/pydata-budapest/",
+        "https://www.meetup.com/ethereum-hungary/",
+        "https://www.meetup.com/budapest_data_science/",
+        "https://www.meetup.com/budapest-ml-meetup/",
+        "https://www.meetup.com/big-data-meetup-budapest/",
+        "https://www.meetup.com/szerdai/",
+        "https://www.meetup.com/budapest-ai-hub/",
+        "https://www.meetup.com/ai-cee-budapest-meetup-group/",
+        "https://www.meetup.com/budapest-databricks-meetup-group/",
+        "https://www.meetup.com/turbine-ai-meetups/",
+        "https://www.meetup.com/budapest-artificial-intelligence-meetup/"
+      ]
+    },
+    {
+      "captures": [
+        "x-eventbrite-ai",
+        "x-eventbrite-blockchain",
+        "x-eventbrite-datascience",
+        "e2-econ-ai-2027",
+        "e2-beerup-2027"
+      ],
+      "id": "eventbrite",
+      "label": "Eventbrite",
+      "language": "hu/en",
+      "pages_read": 5,
+      "urls": [
+        "https://www.eventbrite.com/d/hungary--budapest/artificial-intelligence/",
+        "https://www.eventbrite.com/d/hungary--budapest/blockchain/",
+        "https://www.eventbrite.com/d/hungary--budapest/data-science/",
+        "https://www.eventbrite.com/e/2nd-annual-conference-on-business-economics-research-ai-2027-budapest-tickets-2003335625785",
+        "https://www.eventbrite.com/e/beerup-tech-fest-2027-tickets-2004284270206"
+      ]
+    },
+    {
+      "captures": [
+        "x-mira-main"
+      ],
+      "id": "miragather_main",
+      "label": "MiraGather main",
+      "language": "en",
+      "pages_read": 1,
+      "urls": [
+        "https://miragather.com/"
+      ]
+    },
+    {
+      "captures": [
+        "x-mira-side"
+      ],
+      "id": "miragather_side",
+      "label": "MiraGather ?tab=side",
+      "language": "en",
+      "pages_read": 1,
+      "urls": [
+        "https://miragather.com/?tab=side"
+      ]
+    },
+    {
+      "captures": [
+        "x-mira-ai"
+      ],
+      "id": "miragather_ai",
+      "label": "MiraGather /ai",
+      "language": "en",
+      "pages_read": 1,
+      "urls": [
+        "https://miragather.com/ai"
+      ]
+    },
+    {
+      "captures": [
+        "x-aitinkerers",
+        "x-aitinkerers-budapest"
+      ],
+      "id": "aitinkerers",
+      "label": "AI Tinkerers",
+      "language": "en",
+      "pages_read": 2,
+      "urls": [
+        "https://aitinkerers.org/all_cities",
+        "https://budapest.aitinkerers.org"
+      ]
+    }
+  ],
+  "language_lanes": [
+    {
+      "disposition": "opened_yield",
+      "language": "hu",
+      "note": "Marketing Fesztivál prints 2027-01-28, Lurdy, Budapest and names a co-located Mesterséges Intelligencia Fesztivál; stored with relevance other. ICPL 2027 (May 7-8) is a linguistics conference and out of theme; AI Summit 2027 and Craft 2027 are already stored; AI Talks 2026 is past.",
+      "payloads_read": [
+        "https://marketingfesztival.hu/"
+      ],
+      "query": "\"mesterséges intelligencia\" Budapest 2027 konferencia",
+      "results_seen": 8,
+      "retained": [
+        "Magyar Marketing Fesztivál 2027"
+      ],
+      "theme": "ai"
+    },
+    {
+      "disposition": "search_results_only_empty",
+      "language": "hu",
+      "note": "Results are 2025-26 news, course and newsletter pages (NJSZT, Edutus, fintechzone); none prints a 2027 Budapest dated occurrence.",
+      "payloads_read": [],
+      "query": "\"gépi tanulás\" Budapest 2027 meetup esemény",
+      "results_seen": 8,
+      "retained": [],
+      "theme": "machine_learning"
+    },
+    {
+      "disposition": "search_results_only_empty",
+      "language": "hu",
+      "note": "Generic conference aggregators plus an ELTE learning/knowledge conference (Feb 2027, not data science); no organiser page printing a 2027 Budapest data-science date.",
+      "payloads_read": [],
+      "query": "\"adattudomány\" Budapest 2027 konferencia",
+      "results_seen": 8,
+      "retained": [],
+      "theme": "data_science"
+    },
+    {
+      "disposition": "search_results_only_empty",
+      "language": "hu",
+      "note": "Meetup group calendar and dev.events listing pages; no dated 2027 Budapest Web3 event printed on an organiser page. Craft 2027 and The Budapest Exchange 2027 are already stored and are not Web3 events.",
+      "payloads_read": [],
+      "query": "Web3 Budapest 2027 meetup",
+      "results_seen": 8,
+      "retained": [],
+      "theme": "web3"
+    },
+    {
+      "disposition": "opened_empty",
+      "language": "hu",
+      "note": "MoneroKon 2027 is 9-11 July 2027 in Krakow, Poland, so it is out of city; the GitHub planning issue that named Budapest (25-27 June) is stale. Portfolio Investment Day 2027 is already stored.",
+      "payloads_read": [
+        "https://monerokon.com/"
+      ],
+      "query": "kripto Budapest 2027 konferencia",
+      "results_seen": 8,
+      "retained": [],
+      "theme": "crypto"
+    },
+    {
+      "disposition": "search_results_only_empty",
+      "language": "hu",
+      "note": "ICBC 2027 (WASET) prints two different date pairs on the organiser's own pages (Aug 23-24 and Oct 11-12), so it is dropped as unreliable; WCCBDIG (1 Feb 2027) is an aggregator listing with no Budapest venue; SZMT Konferencia 2027 is an unrelated organisational-development event.",
+      "payloads_read": [],
+      "query": "blokklánc Budapest 2027 konferencia",
+      "results_seen": 8,
+      "retained": [],
+      "theme": "blockchain"
+    },
+    {
+      "disposition": "search_results_only_empty",
+      "language": "en",
+      "note": "Budapest Data+AI Forum 2027 (already stored, ML/AI) heads the results; MODELS 2027 (26 Sep-1 Oct, Danubius Hotel Helia) is a model-driven-engineering conference with AI topics, and MANUF2027 is a manufacturing conference, so neither is retained. ICAIDLML 2027 is a conference-alert listing with no venue.",
+      "payloads_read": [],
+      "query": "machine learning conference Budapest 2027",
+      "results_seen": 8,
+      "retained": [],
+      "theme": "machine_learning"
+    },
+    {
+      "disposition": "search_results_only_empty",
+      "language": "en",
+      "note": "Budapest Data+AI Forum 2027 and DevFest Budapest 2027 are already stored; WASET ICDAAIE and ICDMBDDDS list Budapest dates but publish no venue and two dates per title, so no new record.",
+      "payloads_read": [],
+      "query": "data science conference Budapest 2027",
+      "results_seen": 8,
+      "retained": [],
+      "theme": "data_science"
+    },
+    {
+      "disposition": "search_results_only_empty",
+      "language": "en",
+      "note": "Conference directories (ConferenceGrid, dev.events) and The Budapest Exchange 2027 (already stored, transport/ticketing, not Web3); no dated 2027 Budapest Web3 conference on an organiser page.",
+      "payloads_read": [],
+      "query": "web3 conference Budapest 2027",
+      "results_seen": 8,
+      "retained": [],
+      "theme": "web3"
+    },
+    {
+      "disposition": "search_results_only_empty",
+      "language": "en",
+      "note": "WASET ICBC (conflicting dates), conferenceindex aggregator and a blog list; no organiser page printing a 2027 Budapest crypto event at a venue.",
+      "payloads_read": [],
+      "query": "crypto conference Budapest 2027",
+      "results_seen": 8,
+      "retained": [],
+      "theme": "crypto"
+    }
+  ],
+  "method": "Cell = theme x lane. pages_read is the number of lane URLs actually read in this run (one shared capture serves every theme in the lane; it is not multiplied). theme_term_hits counts capture lines that carry the theme term in English or Hungarian; example_lines quotes up to two. retained_yield credits a stored event once, in the lane whose capture prints its 2027 date. Dispositions: opened_yield / opened_empty / partial_aliases_404 / payload_limited_js_shell / opened_directory_no_2027_date.",
+  "notes": [
+    "31 lane URLs were read for the six themes (54 cells); the same capture serves every theme in its lane, so the pages-read total is 31, not 54.",
+    "MiraGather main, ?tab=side and /ai return a six-line JavaScript shell (64-99 bytes of text) with no event payload; AI Tinkerers all_cities is a 281-city directory and the Budapest chapter page prints '1 recent event' with no 2027 date.",
+    "The ten language lanes above were run on 2026-11-26; snippets that printed no 2027 Budapest date/venue were not opened further, and those cells are marked search_results_only_empty rather than opened-and-empty.",
+    "retained_yield_this_run (2) is the sum credited by the r7 sources ledger to the Eventbrite and Meetup lanes (the 2nd Annual Conference on Business, Economics Research & AI 2027 and Applied AI Budapest, January 2027); the Hungarian term lane added Magyar Marketing Fesztivál 2027, credited in language_lanes. ledger_yield_all_runs (14) equals stored events (14).",
+    "lane_urls_read counts the 31 URLs in the nine lanes; the Hungarian term lane's marketingfesztival.hu page is the 32nd event-lane URL read in this run."
+  ],
+  "reconfirmed_events": [
+    "AI Summit Budapest 2027",
+    "Portfolio Biztosítás 2027 (Insurance)",
+    "Craft Conference 2027",
+    "Budapest Data+AI Forum 2027",
+    "Portfolio Vállalati Energiamenedzsment 2027",
+    "Portfolio Investment Day 2027",
+    "Startup Safari Budapest 2027",
+    "The Budapest Exchange 2027",
+    "DevFest Budapest Conference 2027",
+    "Applied AI Budapest — January 2027 edition",
+    "2nd Annual Conference on Business, Economics Research & AI, 2027",
+    "Portfolio Property Warm Up 2027",
+    "Portfolio Építőipar 2027 (Construction Industry)"
+  ],
+  "run_id": "run-20261126-bud-r7",
+  "schema": "event-matrix/1",
+  "themes": [
+    {
+      "id": "ai",
+      "label": "AI",
+      "terms": [
+        "\\bAI\\b",
+        "artificial intelligence",
+        "mesterséges intelligencia"
+      ]
+    },
+    {
+      "id": "machine_learning",
+      "label": "Machine learning",
+      "terms": [
+        "\\bML\\b",
+        "machine learning",
+        "gépi tanulás"
+      ]
+    },
+    {
+      "id": "data_science",
+      "label": "Data science",
+      "terms": [
+        "data science",
+        "data scientist",
+        "adattudomány"
+      ]
+    },
+    {
+      "id": "web3",
+      "label": "Web3",
+      "terms": [
+        "\\bweb3\\b",
+        "decentrali[sz]ed"
+      ]
+    },
+    {
+      "id": "crypto",
+      "label": "Crypto",
+      "terms": [
+        "\\bcrypto",
+        "kripto",
+        "bitcoin"
+      ]
+    },
+    {
+      "id": "blockchain",
+      "label": "Blockchain",
+      "terms": [
+        "blockchain",
+        "blokklánc"
+      ]
+    }
+  ],
+  "totals": {
+    "cells": 54,
+    "cells_opened": 30,
+    "cells_payload_limited": 18,
+    "lane_urls_read": 31,
+    "ledger_yield_all_runs": 14,
+    "new_events_this_sweep": 2,
+    "reconfirmed_events": 13,
+    "retained_yield_this_run": 2,
+    "stored_events": 14,
+    "theme_term_hits": 253
+  }
+}

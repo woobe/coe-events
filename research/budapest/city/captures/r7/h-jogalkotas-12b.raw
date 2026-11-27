@@ -1,0 +1,977 @@
+<!doctype html>
+<html lang="hu" data-ng-app="njtAppX" id="html">
+<head data-ng-non-bindable="true">
+    <base href="/">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="title" id="meta_title" content="2010. évi CXXX. törvény - Nemzeti Jogszabálytár"/>
+    <meta name="description" id="meta_description" content="2010. évi CXXX. törvény a jogalkotásról"/>
+    <title>2010. évi CXXX. törvény - Nemzeti Jogszabálytár</title>
+    <link rel="icon" type="image/png" sizes="64x64" href="/favicon.png">
+
+        <link href="/css/njtfrontend-7106b941d9605d8cbe2cf85898ebbb4f4cce489d.css?v11c6e9fe8.14119.20261116143934.2.18.5" type="text/css" rel="stylesheet"/>
+    <script>
+    function iPM() {
+        let css = "";
+        const t = ['padding', 'margin'];
+        for (let e of t) {
+            for (let i = 0; i <= 64; i += 4) {
+                css += `
+                    .${e[0]}-${i}{${e}:${i}px}
+                    .${e[0]}b-${i}{${e}-bottom:${i}px}
+                    .${e[0]}t-${i}{${e}-top:${i}px}
+                    .${e[0]}l-${i}{${e}-left:${i}px}
+                    .${e[0]}r-${i}{${e}-right:${i}px}
+                    .${e[0]}x-${i}{${e}-left:${i}px;${e}-right:${i}px}
+                    .${e[0]}y-${i}{${e}-top:${i}px;${e}-bottom:${i}px}`;
+            }
+        }
+
+        const style = document.createElement('style');
+        style.type = 'text/css';
+        style.textContent = css;
+        document.head.appendChild(style);
+    }
+    iPM();
+
+</script>        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script>
+        window.njtLoadAnalytics = function () {
+            if (window.njtAnalyticsLoaded) {
+                return;
+            }
+            window.njtAnalyticsLoaded = true;
+
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = 'https://www.googletagmanager.com/gtag/js?id=UA-28015740-1';
+            document.head.appendChild(script);
+
+            window.dataLayer = window.dataLayer || [];
+            window.gtag = function () {
+                dataLayer.push(arguments);
+            };
+            gtag('js', new Date());
+            gtag('config', 'UA-28015740-1');
+        };
+
+        if (/(?:^|;\s*)acceptCookieLaw=true(?:;|$)/.test(document.cookie)) {
+            window.njtLoadAnalytics();
+        }
+    </script>
+        </head>
+<body class="resp-body">
+<div id="loading-bar-host" aria-hidden="true"></div>
+
+<div id="menu-overlay" class="relative" style="display: none">
+    <div class="fixed"></div>
+</div>
+
+<header id="header" data-ng-controller="accountCtrl" aria-label="Az oldal fejléce">
+    <div id="top_flag_line" class="top-flag-line-fixed">
+        <div id="top_header_line"
+                >
+
+            <div id="top-bar--desktop">
+                <div class="wrapper w-1200 flex justify-between items-center">
+                    
+
+<a class="accessiblehidden" id="jumpToSearch" href="#" onclick="return njtApp.scrollToSearchForm()" hidden>Ugrás a keresőre</a>
+<a class="accessiblehidden" id="jumpToContent" href="#" onclick="return njtApp.scrollToElement('main')">Ugrás a tartalomra</a>
+<nav aria-label="Portálok" class="top-links flex flex-nowrap items-center basis-full justify-between">
+    <div class="logo">
+        <a class="flex gap-10 text-medium no-underline" onclick="njtApp.njtService.resetSearchPaths()" href="/">
+            <img alt="Nemzeti Jogszabálytár logó" src="/bundles/njtfrontend/images/layout/logo/njt-logo-header.svg?v11c6e9fe8.14119.20261116143934.2.18.5"/>
+            Nemzeti Jogszabálytár
+        </a>
+                </div>    
+    <ul id="top-menu" class="text-medium flex gap-40 justify-center basis-full" aria-label="Fejléc hivatkozások">
+        <li>
+            <a href="https://jog.gov.hu/" class="no-underline" aria-label="Magyar Jogi Információs Portál - Külső hivatkozás" target="portal">Magyar Jogi Információs Portál</a><i class="ri-external-link-line"></i>
+        </li>
+        <li>
+            <a href="https://magyarkozlony.hu/" class="no-underline" aria-label="Magyar Közlöny Portál - Külső hivatkozás" target="_blank">Magyar Közlöny Portál</a><i class="ri-external-link-line"></i>
+        </li>
+        <li>
+            <a href="https://www.cegkozlony.hu/" class="no-underline" aria-label="Céginformációs Portál - Külső hivatkozás" target="_blank">Céginformációs Portál</a><i class="ri-external-link-line"></i>
+        </li>
+        <li>
+            <a href="https://eur-lex.europa.eu/homepage.html?locale=hu" class="no-underline" aria-label="EUR-LEX - Külső hivatkozás" target="_blank" >EUR-LEX</a><i class="ri-external-link-line"></i>   
+        </li>
+    </ul>
+   
+    <div><ul id="top-right" class="flex items-center justify-center gap-8"><li><a id="help" class="block no-underline" href="/kezikonyv" target="_blank" aria-label="Súgó - Új ablakban nyílik" data-njttip data-njttipposition="below" title="Súgó"><i class="ri-question-line text-24 color-white"></i></a></li><li><button onclick="njtApp.njtService.redirectToLogin()" class="login-button button outline inverted flex justify-center items-center" data-njttip data-njttipposition="below" title="Belépés" aria-label="Belépés"><i class="ri-user-line"></i></button></li></ul></div>
+</nav>
+                </div>
+            </div>
+
+            <div id="top-bar--mobile">
+                <div class="wrapper">
+                    <div class="top-bar">
+    <div class="logo">
+        <a class="flex gap-10 text-medium no-underline" onclick="njtApp.njtService.resetSearchPaths()" href="/">
+            <img alt="Nemzeti Jogszabálytár logó" src="/bundles/njtfrontend/images/layout/logo/njt-logo-header.svg?v11c6e9fe8.14119.20261116143934.2.18.5"/>
+            <span class="w-120">Nemzeti Jogszabálytár</span>
+        </a>
+ 
+    </div>
+
+    <div class="top-bar__button-container">
+        <ul class="flex items-center justify-center gap-8">
+            <li>
+                <a class="no-underline" href="/kezikonyv" target="_blank" aria-label="Súgó - Új ablakban nyílik" data-njttip data-njttipposition="below" title="Súgó">
+                    <i class="ri-question-line text-24 color-white"></i>
+                </a>
+            </li>
+
+                            
+                <li>
+                    <button onclick="njtApp.njtService.redirectToLogin()" class="login-button button outline inverted flex justify-center items-center" data-njttip data-njttipposition="below" title="Belépés" aria-label="Belépés">
+                        <i class="ri-user-line"></i>
+                    </button>
+                </li>
+
+                <li>
+                    <button data-ng-click="toggleMobileMenu()" class="button secondary flex justify-center items-center" data-njttip data-njttipposition="below" title="Menü" aria-label="Menü">
+                        <i class="ri-menu-line"></i>
+                    </button>
+                </li>
+            
+        </ul>
+    </div>
+
+    <div class="top-bar__menu menu" id="mobile-menu" style="display: none" >
+
+        <div class="menu__row">
+            <div class="logo sidebar">
+                <a class="flex gap-10 text-medium no-underline"
+                   onclick="njtApp.njtService.resetSearchPaths()"
+                   href="/">
+                    <img alt="Nemzeti Jogszabálytár logó" src="/bundles/njtfrontend/images/layout/logo/njt-logo-header.svg?v11c6e9fe8.14119.20261116143934.2.18.5"/>
+                    <span class="w-120">Nemzeti Jogszabálytár</span>
+                </a>
+            </div>
+                        <button id="toggle-menu" data-ng-click="toggleMobileMenu(true)" data-njttip title="Bezárás" aria-label="Bezárás">
+                <i class="ri-close-line color-white text-24"></i>
+            </button>
+        </div>
+        <nav class="menu__links">
+                                        
+            <li class="cursor-pointer" onclick="njtApp.toggleMegnyitottak();">
+                <a href="#">Megnyitott jogszabályok</a>
+            </li>
+            <hr>
+
+                            <li><a href="/">Jogszabálytár</a></li>
+                        <li>
+                                                    <a aria-label="Önkormányzati rendeletek" href="/or"
+                            >
+                        Önkormányzati rendeletek
+                    </a>
+                            </li>
+            <li><a href="/justification_search">Indokolások Tára</a></li>
+            <li>
+                <a  href="/international_agreement/-/1/10">Nemzetközi szerződések</a>
+            </li>
+            <li>
+                <a href="/forditasok">Jogszabályfordítások</a>
+            </li>
+            <li>
+                <a href="/translations">Translated legislation</a>
+            </li>
+                                </nav>
+
+        <hr>
+        <nav class="menu__hyperlinks">
+            <li>
+                <a href="https://jog.gov.hu/" class="no-underline" aria-label="Magyar Jogi Információs Portál - Külső hivatkozás" target="_blank">Magyar Jogi Információs Portál</a>
+            </li>
+            <li>
+                <a href="https://magyarkozlony.hu/" class="no-underline" aria-label="Magyar Közlöny Portál - Külső hivatkozás" target="_blank">Magyar Közlöny Portál</a>
+            </li>
+            <li>
+                <a href="https://www.cegkozlony.hu/" class="no-underline" aria-label="Céginformációs Portál - Külső hivatkozás" target="_blank">Céginformációs Portál</a>
+            </li>
+            <li>
+                <a href="https://eur-lex.europa.eu/homepage.html?locale=hu" class="no-underline" aria-label="EUR-LEX - Külső hivatkozás" target="_blank" >EUR-LEX</a>
+            </li>
+        </nav>
+
+        
+    </div>
+
+</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div id="loggedin-menu-window" class="on-top-window">
+        <div class="section">
+    <div><a id="historyLink" href="/history/">Előzmények</a></div>
+    <div><a id="favouriteLink" href="/favourite/-/1">Kedvencek</a></div>
+    <div><a id="kerdoivLink" href="/elethelyzet/kerdoiv">Élethelyzet kérdőív</a></div>
+    <div><a id="elethelyzetLink" href="/elethelyzet/lista">Élethelyzet beállítás</a></div>
+        <div><a id="topicLink" href="/topic">Témakörök beállítása</a></div>
+    <div><a id="jogszabalyfigyelo" href="/jogszabalyfigyelo">Jogszabályfigyelő</a></div>
+    <div class="last"><a id="valtozasokLink" href="/valtozaskovetes/favourite/all">Változások követése</a></div>
+                <div><a id="accountLink" href="/account/modification">Beállítások</a></div>
+
+    
+    <div class="last mobile-fixed-logout"><a href="" data-ng-click="logout()">Kilépés</a></div>
+</div>
+
+
+
+
+
+
+
+    </div>
+</header><main id="main" tabindex="-1" aria-label="Az oldal tartalma">
+    <div id="orig" class="mainWrapper" data-ng-controller="origMainCtrl">
+            <div class="mainContent" id="jogszabaly-reader">
+        <div class="bigMargin">
+            <div class="action-menu-wrapper" id="operationMenu" data-ng-controller="mobileFooterCtrl"><div class="blur"><a class="accessiblehidden backToSearchLink text-small" data-ng-attr-href="{{ lastSearchPath }}">Vissza a Jogszabálykeresőre</a><div class="onlyMobile flex justify-between"><h2>Kifejezéskereső</h2><button data-ng-click="toggleOperationsMenu()" class="button subtle ri-close-line flex justify-center items-center p-0 w-32 h-32 color-link-neutral-enabled" data-njttip title="Bezárás" aria-label="Bezárás"></button></div><div class="action-menu"><div class="logo"><a class="flex gap-10 text-medium no-underline" onclick="njtApp.njtService.resetSearchPaths()" href="/"><img alt="Nemzeti Jogszabálytár logó" src="/bundles/njtfrontend/images/layout/logo/njt-logo-header.svg?v11c6e9fe8.14119.20261116143934.2.18.5"/>
+                    Nemzeti Jogszabálytár
+                </a></div><div class="tartalomjegyzekButtonContainer"><button class="tartalomjegyzekButton button outline inverted small">Oldalmenü</button></div><ul class="flex items-center h-full" role="group" aria-label="Dokumentum műveletei"><li role="none" class="searchLi soloLi input-container flex items-center gap-5 flex-1" data-ng-controller="searchController"><input type="text" class="searchInput form-field"
+                           placeholder="Keresés a szövegben"
+                           id="szokereso"
+                           data-njtinput
+                           data-ng-model="searchText"
+                           data-ng-focus="focused.searchText=true"
+                           data-ng-blur="focused.searchText=false"
+                           data-enterkeypress="searchJogszabaly()"
+                           data-ng-disabled="isSearching.left"
+                           aria-label="Szókereső"/><div class="searchButtonHolder left flex gap-6 hidden"><button role="button" aria-label="Előző találat" class="searchPrev left button outline inverted flex justify-center items-center ri-arrow-left-s-line color-icon-neutral-base w-32 h-32"></button><button role="button" aria-label="Következő találat" class="searchNext left button outline inverted flex justify-center items-center ri-arrow-right-s-line color-icon-neutral-base w-32 h-32"></button></div><button
+                            data-ng-click="searchJogszabaly()"
+                            class="onlyMobile searchWordButton button primary text search w-full justify-center"
+                            aria-label="Keresés">Keresés
+                    </button></li><li role="none"><select id="zoomCombo" class="text-16 bg-transparent border-0 mx-8 cursor-pointer color-white" data-njttip data-njttipposition="below" aria-label="Betűméret állítása" title="Betűméret állítása"><option value="50" class="color-link-neutral-enabled">50%</option><option value="75" class="color-link-neutral-enabled">75%</option><option value="90" class="color-link-neutral-enabled">90%</option><option value="100" class="color-link-neutral-enabled" selected>100%</option><option value="125" class="color-link-neutral-enabled">125%</option><option value="150" class="color-link-neutral-enabled">150%</option><option value="175" class="color-link-neutral-enabled">175%</option><option value="200" class="color-link-neutral-enabled">200%</option></select></li><li role="none" class="onlyDesktop"><a class="no-underline color-white" data-njttip data-njttipposition="below"
+                           tabindex="0" href="/wcag"
+                           aria-label="Akadálymentes nézet"
+                           title="Akadálymentes nézet"><i class="ri-accessibility-line"></i></a></li><li role="none"  class="onlyDesktop" ><a class="eliLinkBtn no-underline color-white" data-njttip data-njttipposition="below"
+                               tabindex="0" href="#"
+                               onclick="growl.modal('&lt;a href=&quot;https://njt.jog.gov.hu/eli/TV/2010/130&quot; target=&quot;_blank&quot; &gt;https://njt.jog.gov.hu/eli/TV/2010/130&lt;/a&gt;', 'ELI', 'info');"
+                               aria-label="ELI" title="ELI">ELI</a></li><li role="none"  class="onlyDesktop" ><a class="printBtn no-underline color-white" data-njttip data-njttipposition="below"
+                           tabindex="0" href="#"
+                            onclick="njtPrint.handlePrintClick();"                            aria-label="Nyomtatás" title="Nyomtatás"><i class="printBtn ri-printer-fill"></i></a></li><li role="none" class="onlyMobile navigator__button-container"><div class="navigator__item"><a class="eliLinkBtn color-white" data-njttip data-njttipposition="below"
+                                   tabindex="0" href="#"
+                                   onclick="growl.modal('&lt;a href=&quot;https://njt.jog.gov.hu/eli/TV/2010/130&quot; target=&quot;_blank&quot; &gt;https://njt.jog.gov.hu/eli/TV/2010/130&lt;/a&gt;', 'ELI', 'info');"
+                                   title="ELI">ELI</a><span>ELI</span></div><div class="navigator__item"><a class="printBtn cursor-pointer color-white"
+                           tabindex="0" href="#"
+                            onclick="njtPrint.handlePrintClick();"                            title="Nyomtatás"><i class="printBtn ri-printer-fill"></i></a></div></li></ul><div class="loginButtonContainer"><button onclick="njtApp.njtService.redirectToLogin()" class="login-button button outline inverted flex justify-center items-center" data-njttitle data-njttipposition="below" title="Belépés" aria-label="Belépés"><i class="ri-user-line"></i></button></div></div></div></div>                <div class="content wrapper jogszabaly-wrapper">
+                    <div class="jumpButtonsContainer">
+                        <button class="jumpToPreviousFutureChangedSlice button flex justify-center items-center p-0" data-njttip title="Előző megváltozó">
+                            <i class="ri-arrow-up-s-line"></i>
+                        </button>
+
+                        <button class="jumpToNextFutureChangedSlice button flex justify-center items-center p-0" data-njttip title="Következő megváltozó">
+                            <i class="ri-arrow-down-s-line"></i>
+                        </button>
+
+                        
+                            <button class="jumpToPreviousPastChangedSlice button flex justify-center items-center p-0" data-njttip title="Előző megváltozott">
+                                <i class="ri-arrow-up-s-line"></i>
+                            </button>
+
+                            <button class="jumpToNextPastChangedSlice button flex justify-center items-center p-0" data-njttip title="Következő megváltozott">
+                                <i class="ri-arrow-down-s-line"></i>
+                            </button>
+
+                                            </div>
+                                                                        <div id="sidemenu-window-left" class="sidemenu-window rounded-8" aria-label="Oldalmenü">
+    <div class="sidemenu-mobile-header flex justify-between items-center p-16">
+        <h3>Tartalomjegyzék</h3>
+        <button class="tartalomjegyzekButton button subtle ri-close-line flex justify-center items-center p-0 w-32 h-32 color-link-neutral-enabled" data-njttip title="Bezárás" aria-label="Bezárás"></button>
+    </div>
+    <ul class="tab-menu">
+        <li class="tartalom active accessible" role="link" tabindex="0">Szerkezet</li>
+            </ul>
+    <div class="tartalom-tab tab-content active">
+        <div class="tartalom-tab__holder">
+
+            <label class="tartalom-tab__label">
+            <input
+                    id="treeFilter-left"
+                    type="text"
+                    class="sidemenu-window__search"
+                    placeholder="Keresés"
+                    data-njtinput
+            />
+            </label>
+            <div id="treeContainer-left" class="tartalom-tree tree" data-tree-label="Szerkezet"></div>
+        </div>
+    </div>
+        <div class="accessiblehidden" aria-hidden="true"><span>Az oldalmenübe visszatéréshez használhatja az <strong id="accesskey_help">ALT + S</strong> billentyűket.</span></div>
+</div>                                            
+                    
+                                                            <div class="jogszabalyCtrl" data-ng-controller="documentCtrl"
+                         data-ng-init="openDocument('jogszabaly','2010-130-00-00','2010. évi CXXX. törvény','2010. évi CXXX. törvény a jogalkotásról', '1')"></div>
+                    <div class="jogszabaly                             "
+                         data-ng-non-bindable="true" id="jogszab">
+
+                        
+                        
+                                                                                    <div class="changeVersionParent flex items-center justify-center">
+                                    <button class="changeVersion flex items-center justify-center text-24" tabindex="0" href="#"
+                                            onclick="versionChooser.versionChooserClick(this)"
+                                            data-njttip title="Hatályosság választás" aria-expanded="false"
+                                            aria-controls="versionWindow">
+                                        <i class="ri-calendar-2-line"></i>
+                                    </button>
+                                </div>
+                                                        <!--i-->
+<span class="jhId" id="NR"></span><h1 id="sc2010-130-00-00-3" class="pslice jogszabalyMainTitle mainTitle">2010. évi CXXX. törvény</h1><!--i-->
+<span class="jhId" id="CI"></span><h2 id="sc2010-130-00-00-5" class="pslice jogszabalySubtitle">a jogalkotásról<sup class="fnSup" data-note-id="fnr_1">1</sup></h2><div class="hataly">2026.10.01.</div><!--i-->
+<span class="jhId" id="PR"></span><div id="sc2010-130-00-00-7" class="preambulum"><p class="AJ">Az Országgyűlés</p><p class="AJ"><a class="link" href="jogszabaly/2011-4301-02-00" data-jhid="CBT" data-type="kulso">az Alaptörvény T) cikk</a>ében foglaltak végrehajtására,</p><p class="AJ">a jogállamiság követelményeinek a jogalkotás során történő magas szintű érvényesítése érdekében,</p><p class="AJ">a jogalkotó által kitűzött szabályozási célokat hatékonyan szolgáló, megalapozott jogszabályok kidolgozásának elősegítésére, továbbá</p><p class="AJ">annak érdekében, hogy a jog megismerhetőségének feltételei összhangban álljanak a XXI. század adta lehetőségekkel,</p><p class="AJ">a következő törvényt alkotja:<sup class="fnSup" data-note-id="fnr_1082">2</sup></p></div><!--i-->
+<span class="jhId" id="FEI"></span><div id="sc2010-130-00-00-9" class="fejezet">I. Fejezet</div><!--i-->
+<div id="sc2010-130-00-00-10" class="fejezetCim"><p class="mhk-C3"><i>ÁLTALÁNOS RENDELKEZÉSEK</i></p></div><!--i-->
+<span class="jhId" id="SZ1"></span><div id="sc2010-130-00-00-13" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ1@BE1"></span><div id="sc2010-130-00-00-14" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">1. §</span> (1)</span> E törvény hatálya</p></div><span class="jhId" id="SZ1@BE1@POA"></span><div id="sc2010-130-00-00-17" class="betusPontNyito"><p><span class="jel"> a)</span> a jogszabályokra, valamint</p></div><span class="jhId" id="SZ1@BE1@POB"></span><div id="sc2010-130-00-00-20" class="betusPontNyito"><p><span class="jel"> b)</span> a normatív határozatra és normatív utasításra (a továbbiakban együtt: közjogi szervezetszabályozó eszköz)</p></div><div id="sc2010-130-00-00-1840" class="bekezdesZaro"><p>terjed ki.</p></div><!--n-->
+<span class="jhId" id="SZ1@BE2"></span><div id="sc2010-130-00-00-24" class="bekezdesNyito"><p><span class="jel"> (2)</span> E törvény rendelkezéseit</p></div><span class="jhId" id="SZ1@BE2@POA"></span><div id="sc2010-130-00-00-27" class="betusPontNyito"><p><span class="jel"> a)</span> a nemzetközi szerződést kihirdető jogszabályokra a nemzetközi szerződésekkel kapcsolatos eljárásról szóló törvényben,</p></div><span class="jhId" id="SZ1@BE2@POB"></span><div id="sc2010-130-00-00-30" class="betusPontNyito"><p><span class="jel"> b)</span><sup class="fnSup" data-note-id="fnr_1083">3</sup>  a különleges jogrendben alkotható jogszabályra a különleges jogrendben bevezethető intézkedésekről szóló törvényben</p></div><div id="sc2010-130-00-00-1866" class="bekezdesZaro"><p>foglalt eltérésekkel kell alkalmazni.</p></div><!--n-->
+<span class="jhId" id="SZ1@BE3"></span><div id="sc2010-130-00-00-34" class="bekezdesNyito"><p><span class="jel"> (3)</span><sup class="fnSup" data-note-id="fnr_1084">4</sup>  A <a class="link" data-jhid="FEIV" data-type="belso">IV. Fejezet</a> rendelkezéseit <a class="link" href="jogszabaly/2011-4301-02-00" data-type="kulso">az Alaptörvény</a> és módosítása előkészítésére is alkalmazni kell.</p></div><!--n-->
+<span class="jhId" id="SZ1@BE4"></span><div id="sc2010-130-00-00-37" class="bekezdesNyito"><p><span class="jel"> (4)</span><sup class="fnSup" data-note-id="fnr_1423">5</sup>  E törvénynek a jogszabályokra vonatkozó rendelkezéseit – a <a class="link" data-jhid="SZ2@BE5@POC" data-type="belso">2. § (5) bekezdés c)</a> és <a class="link" data-jhid="SZ2@BE5@POD" data-type="belso">d) pont</a>ja, a <a class="link" data-jhid="SZ3" data-type="belso">3–6. §</a>, a <a class="link" data-jhid="SZ13@BE1" data-type="belso">13. § (1) bekezdés</a>e, a <a class="link" data-jhid="AC4" data-type="belso">4. alcím</a>, a <a class="link" data-jhid="SZ17A" data-type="belso">17/A–20. §</a>, a <a class="link" data-jhid="SZ26@BE1" data-type="belso">26. § (1) bekezdés</a>e és a <a class="link" data-jhid="SZ28B@BE4" data-type="belso">28/B. § (4) bekezdés</a>e kivételével – a közjogi szervezetszabályozó eszközre is megfelelően alkalmazni kell.</p></div><!--i-->
+<span class="jhId" id="FEII"></span><div id="sc2010-130-00-00-40" class="fejezet">II. Fejezet</div><!--i-->
+<div id="sc2010-130-00-00-41" class="fejezetCim"><p class="mhk-C3"><i>A JOGALKOTÁS ALAPVETŐ KÖVETELMÉNYEI</i></p></div><!--i-->
+<span class="jhId" id="SZ2"></span><div id="sc2010-130-00-00-44" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ2@BE1"></span><div id="sc2010-130-00-00-45" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">2. §</span> (1)</span> A jogszabálynak a címzettek számára egyértelműen értelmezhető szabályozási tartalommal kell rendelkeznie.</p></div><!--n-->
+<span class="jhId" id="SZ2@BE2"></span><div id="sc2010-130-00-00-48" class="bekezdesNyito"><p><span class="jel"> (2)</span> Jogszabály a hatálybalépését megelőző időre nem állapíthat meg kötelezettséget, kötelezettséget nem tehet terhesebbé, valamint nem vonhat el vagy korlátozhat jogot, és nem nyilváníthat valamely magatartást jogellenessé.</p></div><!--n-->
+<span class="jhId" id="SZ2@BE3"></span><div id="sc2010-130-00-00-51" class="bekezdesNyito"><p><span class="jel"> (3)</span> A jogszabály hatálybalépésének időpontját úgy kell megállapítani, hogy elegendő idő álljon rendelkezésre a jogszabály alkalmazására való felkészülésre.</p></div><!--n-->
+<span class="jhId" id="SZ2@BE4"></span><div id="sc2010-130-00-00-54" class="bekezdesNyito"><p><span class="jel"> (4)</span> A jogszabályok megalkotásakor biztosítani kell, hogy a jogszabály</p></div><span class="jhId" id="SZ2@BE4@POA"></span><div id="sc2010-130-00-00-57" class="betusPontNyito"><p><span class="jel"> a)</span><sup class="fnSup" data-note-id="fnr_1085">6</sup>  megfeleljen <a class="link" href="jogszabaly/2011-4301-02-00" data-type="kulso">az Alaptörvény</a>ből eredő tartalmi és formai követelményeknek,</p></div><span class="jhId" id="SZ2@BE4@POB"></span><div id="sc2010-130-00-00-60" class="betusPontNyito"><p><span class="jel"> b)</span> illeszkedjen a jogrendszer egységébe,</p></div><span class="jhId" id="SZ2@BE4@POC"></span><div id="sc2010-130-00-00-63" class="betusPontNyito"><p><span class="jel"> c)</span> megfeleljen a nemzetközi jogból és az európai uniós jogból eredő kötelezettségeknek és</p></div><span class="jhId" id="SZ2@BE4@POD"></span><div id="sc2010-130-00-00-66" class="betusPontNyito"><p><span class="jel"> d)</span> megfeleljen a jogalkotás szakmai követelményeinek.</p></div><!--n-->
+<span class="jhId" id="SZ2@BE5"></span><div id="sc2010-130-00-00-1490" class="bekezdesNyito"><p><span class="jel"> (5)</span><sup class="fnSup" data-note-id="fnr_1424">7</sup>  A jogszabályok megalkotásakor biztosítani kell, hogy a jogszabály ne tartalmazzon indokolatlanul olyan rendelkezést, amely</p></div><span class="jhId" id="SZ2@BE5@POA"></span><div id="sc2010-130-00-00-1493" class="betusPontNyito"><p><span class="jel"> a)</span> a szabályozási cél eléréséhez nem feltétlenül szükséges,</p></div><span class="jhId" id="SZ2@BE5@POB"></span><div id="sc2010-130-00-00-1496" class="betusPontNyito"><p><span class="jel"> b)</span> normatív tartalommal nem rendelkezik,</p></div><span class="jhId" id="SZ2@BE5@POC"></span><div id="sc2010-130-00-00-1499" class="betusPontNyito"><p><span class="jel"> c)</span> felhatalmazás alapján olyan más jogszabályban is megalkotható, amely a jogszabállyal <a class="link" href="jogszabaly/2011-4301-02-00" data-type="kulso">az Alaptörvény</a> alapján nem lehet ellentétes, vagy</p></div><span class="jhId" id="SZ2@BE5@POD"></span><div id="sc2010-130-00-00-1502" class="betusPontNyito"><p><span class="jel"> d)</span> közjogi szervezetszabályozó eszközben is megalkotható.</p></div><!--i-->
+<span class="jhId" id="SZ3"></span><div id="sc2010-130-00-00-69" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ3@BE0"></span><div id="sc2010-130-00-00-70" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">3. §<sup class="fnSup" data-note-id="fnr_1086">8</sup> </span></span> Az azonos vagy hasonló életviszonyokat azonos vagy hasonló módon, szabályozási szintenként lehetőleg ugyanabban a jogszabályban kell szabályozni. A szabályozás nem lehet indokolatlanul párhuzamos vagy többszintű. A jogszabályban nem ismételhető meg <a class="link" href="jogszabaly/2011-4301-02-00" data-type="kulso">az Alaptörvény</a> vagy olyan jogszabály rendelkezése, amellyel a jogszabály <a class="link" href="jogszabaly/2011-4301-02-00" data-type="kulso">az Alaptörvény</a> alapján nem lehet ellentétes.</p></div><!--i-->
+<span class="jhId" id="SZ4"></span><div id="sc2010-130-00-00-73" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ4@BE0"></span><div id="sc2010-130-00-00-74" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">4. §</span></span> Ha egy tárgykört törvény szabályoz, törvényben kell rendezni az alapvető jogintézményeket és a szabályozási cél megvalósulásával összefüggő lényeges garanciákat.</p></div><!--i-->
+<span class="jhId" id="SZ5"></span><div id="sc2010-130-00-00-77" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ5@BE1"></span><div id="sc2010-130-00-00-78" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">5. §<sup class="fnSup" data-note-id="fnr_1425">9</sup> </span> (1)</span> A jogszabály alkotására adott felhatalmazásban meg kell határozni a felhatalmazás jogosultját, tárgyát és kereteit.</p></div><!--n-->
+<span class="jhId" id="SZ5@BE2"></span><div id="sc2010-130-00-00-81" class="bekezdesNyito"><p><span class="jel"> (2)</span> Nem lehet felhatalmazást adni</p></div><span class="jhId" id="SZ5@BE2@POA"></span><div id="sc2010-130-00-00-1505" class="betusPontNyito"><p><span class="jel"> a)</span> a szabályozás tárgykörébe tartozó alapvető jogintézmények, továbbá jogok és kötelezettségek alapvető szabályainak megállapítására,</p></div><span class="jhId" id="SZ5@BE2@POB"></span><div id="sc2010-130-00-00-1508" class="betusPontNyito"><p><span class="jel"> b)</span> a jogszabály egészének végrehajtására, valamint</p></div><span class="jhId" id="SZ5@BE2@POC"></span><div id="sc2010-130-00-00-1511" class="betusPontNyito"><p><span class="jel"> c)</span> olyan tárgykör szabályozására, amelyet a felhatalmazást adó jogszabály nem szabályoz.</p></div><!--n-->
+<span class="jhId" id="SZ5@BE3"></span><div id="sc2010-130-00-00-84" class="bekezdesNyito"><p><span class="jel"> (3)</span> Kötelezettség alóli mentesülés, illetve kötelezettséggel kapcsolatos kedvezmény szabályainak megalkotására – a <a class="link" data-jhid="SZ4" data-type="belso">4. §</a>-ban foglaltak sérelme nélkül – felhatalmazás adható.</p></div><!--n-->
+<span class="jhId" id="SZ5@BE4"></span><div id="sc2010-130-00-00-87" class="bekezdesNyito"><p><span class="jel"> (4)</span> A Kormány tagjának rendelet kiadására adott felhatalmazásban a felhatalmazás jogosultját feladatkör szerint kell megjelölni. Ha a Kormány tagjának felhatalmazásban adott jogalkotási jogosultsága nem önálló, a felhatalmazásban az egyetértési jog jogosultját is meg kell jelölni.</p></div><!--n-->
+<span class="jhId" id="SZ5@BE5"></span><div id="sc2010-130-00-00-1514" class="bekezdesNyito"><p><span class="jel"> (5)</span> Ha a felhatalmazás jogosultja a helyi önkormányzat képviselő-testülete, társulás esetén – ha a társulási megállapodásban meghatározott feladat- és hatáskör a felhatalmazás tárgyának szabályozására kiterjed – az önkormányzati rendelet megalkotására a társulási megállapodásban kijelölt, ennek hiányában a társulás székhelye szerinti helyi önkormányzat képviselő-testülete jogosult. Az önkormányzati rendelet megalkotásához a társulásban részt vevő helyi önkormányzat képviselő-testületének hozzájárulása szükséges.</p></div><!--n-->
+<span class="jhId" id="SZ5@BE6"></span><div id="sc2010-130-00-00-1517" class="bekezdesNyito"><p><span class="jel"> (6)</span> Ha a felhatalmazás jogosultja a helyi önkormányzat képviselő-testülete, társult képviselő-testület esetén – ha az adott ügy szabályozásáról az egyes települések képviselő-testülete a helyi önkormányzatokról szóló törvény szerint nem önállóan dönt – az önkormányzati rendelet megalkotására a társult képviselő-testület döntésének megfelelően a társulás székhelye szerinti helyi önkormányzat jogosult.</p></div><!--n-->
+<span class="jhId" id="SZ5@BE7"></span><div id="sc2010-130-00-00-1520" class="bekezdesNyito"><p><span class="jel"> (7)</span> A felhatalmazás jogosultja a jogi szabályozásra további felhatalmazást nem adhat.</p></div><!--n-->
+<span class="jhId" id="SZ5@BE8"></span><div id="sc2010-130-00-00-1523" class="bekezdesNyito"><p><span class="jel"> (8)</span> A felhatalmazás jogosultja a jogszabályt köteles megalkotni, kivéve, ha a felhatalmazást adó jogszabályból kifejezetten más következik.</p></div><!--i-->
+<span class="jhId" id="FEIII"></span><div id="sc2010-130-00-00-90" class="fejezet">III. Fejezet</div><!--i-->
+<div id="sc2010-130-00-00-91" class="fejezetCim"><p class="mhk-C3"><i>A JOGSZABÁLY HATÁLYA ÉS MÓDOSÍTÁSA</i></p></div><!--i-->
+<!--as--><span class="jhId" id="AC1"></span><div id="sc2010-130-00-00-95" class="alcim"><p class="mhk-C6"><span class="jel"> 1.</span> <b>A jogszabály területi és személyi hatálya</b></p></div><!--ae--><!--i-->
+<span class="jhId" id="SZ6"></span><div id="sc2010-130-00-00-97" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ6@BE1"></span><div id="sc2010-130-00-00-98" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">6. §<sup class="fnSup" data-note-id="fnr_1089">10</sup> </span> (1)</span><sup class="fnSup" data-note-id="fnr_1426">11</sup>  A jogszabály területi hatálya Magyarország területére, az önkormányzati rendelet területi hatálya a helyi önkormányzat közigazgatási területére terjed ki. Az önkormányzati rendelet területi hatálya az <a class="link" data-jhid="SZ5@BE5" data-type="belso">5. § (5) bekezdés</a> szerinti esetben a társulásban részt vevő helyi önkormányzatok, az <a class="link" data-jhid="SZ5@BE6" data-type="belso">5. § (6) bekezdés</a> szerinti esetben a társult képviselő-testületben részt vevő települési önkormányzatok közigazgatási területére terjed ki.</p></div><!--n-->
+<span class="jhId" id="SZ6@BE2"></span><div id="sc2010-130-00-00-101" class="bekezdesNyito"><p><span class="jel"> (2)</span> A jogszabály személyi hatálya</p></div><span class="jhId" id="SZ6@BE2@POA"></span><div id="sc2010-130-00-00-104" class="betusPontNyito"><p><span class="jel"> a)</span> Magyarország területén a természetes személyekre, jogi személyekre és jogi személyiséggel nem rendelkező szervezetekre, valamint Magyarország területén kívül a magyar állampolgárokra,</p></div><span class="jhId" id="SZ6@BE2@POB"></span><div id="sc2010-130-00-00-107" class="betusPontNyito"><p><span class="jel"> b)</span><sup class="fnSup" data-note-id="fnr_1427">12</sup>  önkormányzati rendelet esetében a helyi önkormányzat közigazgatási területén a természetes személyekre, jogi személyekre és jogi személyiséggel nem rendelkező szervezetekre, az <a class="link" data-jhid="SZ5@BE5" data-type="belso">5. § (5) bekezdés</a> szerinti esetben a társulásban részt vevő helyi önkormányzatok, az <a class="link" data-jhid="SZ5@BE6" data-type="belso">5. § (6) bekezdés</a> szerinti esetben a társult képviselő-testületben részt vevő települési önkormányzatok közigazgatási területén a természetes személyekre, jogi személyekre és jogi személyiséggel nem rendelkező szervezetekre</p></div><div id="sc2010-130-00-00-1869" class="bekezdesZaro"><p>terjed ki.</p></div><!--n-->
+<span class="jhId" id="SZ6@BE3"></span><div id="sc2010-130-00-00-111" class="bekezdesNyito"><p><span class="jel"> (3)</span><sup class="fnSup" data-note-id="fnr_1428">13</sup>  A jogszabály területi, illetve személyi hatályát a jogszabályban az <a class="link" data-jhid="SZ5@BE5" data-type="belso">5. § (5)</a> és <a class="link" data-jhid="SZ5@BE6" data-type="belso">(6) bekezdés</a> szerinti esetben, valamint akkor kell kifejezetten meghatározni, ha az az <a class="link" data-jhid="SZ6@BE1" data-type="belso">(1)</a> és <a class="link" data-jhid="SZ6@BE2" data-type="belso">(2) bekezdés</a>től eltérő területre, illetve személyi körre terjed ki.</p></div><!--i-->
+<!--as--><span class="jhId" id="AC2"></span><div id="sc2010-130-00-00-115" class="alcim"><p class="mhk-C6"><span class="jel"> 2.</span> <b>A jogszabály időbeli hatálya, módosítása és hatályon kívül helyezése</b></p></div><!--ae--><!--i-->
+<span class="jhId" id="SZ7"></span><div id="sc2010-130-00-00-117" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ7@BE1"></span><div id="sc2010-130-00-00-118" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">7. §</span> (1)</span> A jogszabályban meg kell határozni a hatálybalépésének napját, amely a jogszabály kihirdetését követő valamely nap lehet.</p></div><!--n-->
+<span class="jhId" id="SZ7@BE2"></span><div id="sc2010-130-00-00-121" class="bekezdesNyito"><p><span class="jel"> (2)</span> Ha a szabályozás célja másként nem érhető el, a jogszabály hatálybalépésének napja a kihirdetés napja is lehet, ebben az esetben a hatálybalépés időpontját órában kell meghatározni, mely nem előzheti meg a kihirdetés időpontját.</p></div><!--n-->
+<span class="jhId" id="SZ7@BE3"></span><div id="sc2010-130-00-00-124" class="bekezdesNyito"><p><span class="jel"> (3)</span> Ha a hatálybalépés naptári napja nem határozható meg, a hatálybalépés valamely jövőbeli feltétel bekövetkeztének időpontjához is köthető.</p></div><!--n-->
+<span class="jhId" id="SZ7@BE4"></span><div id="sc2010-130-00-00-127" class="bekezdesNyito"><p><span class="jel"> (4)</span> Ha a szabályozás célja másként nem érhető el, törvény rendelkezhet úgy, hogy a hatálybalépéséről külön törvény rendelkezik.</p></div><!--n-->
+<span class="jhId" id="SZ7@BE5"></span><div id="sc2010-130-00-00-130" class="bekezdesNyito"><p><span class="jel"> (5)</span> A jogszabály egyes rendelkezéseinek hatálybalépésére különböző – a jogszabály hatálybalépését követő – időpontokat is meg lehet állapítani.</p></div><!--n-->
+<span class="jhId" id="SZ7@BE6"></span><div id="sc2010-130-00-00-133" class="bekezdesNyito"><p><span class="jel"> (6)</span> A végrehajtási jogszabály a felhatalmazást tartalmazó jogszabály kihirdetésével egyidejűleg vagy azt követően, a felhatalmazó rendelkezés hatálybalépését megelőzően kihirdethető. A végrehajtási jogszabályt, jogszabályi rendelkezést a felhatalmazást adó jogszabály azon rendelkezésével egyidejűleg kell hatályba léptetni, amelynek a végrehajtására irányul, kivéve, ha a felhatalmazó rendelkezés a végrehajtási jogszabály kiadását nem teszi kötelezővé.</p></div><!--n-->
+<span class="jhId" id="SZ7@BE7"></span><div id="sc2010-130-00-00-136" class="bekezdesNyito"><p><span class="jel"> (7)</span> A jogszabály vagy jogszabályi rendelkezés – a <a class="link" data-jhid="SZ7@BE2" data-type="belso">(2) bekezdés</a>ben meghatározott eset kivételével – a hatálybalépése napjának kezdetén lép hatályba.</p></div><!--i-->
+<span class="jhId" id="SZ8"></span><div id="sc2010-130-00-00-139" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ8@BE1"></span><div id="sc2010-130-00-00-140" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">8. §</span> (1)</span><sup class="fnSup" data-note-id="fnr_1429">14</sup>  A hatályos jogszabályi rendelkezést a jogalkotói hatáskörrel rendelkező szerv vagy személy jogszabály megalkotásával, a módosítani kívánt jogszabályi rendelkezést tételesen megjelölő, a módosítást kimondó jogszabályi rendelkezéssel módosíthatja.</p></div><!--n-->
+<span class="jhId" id="SZ8@BE2"></span><div id="sc2010-130-00-00-143" class="bekezdesNyito"><p><span class="jel"> (2)</span><sup class="fnSup" data-note-id="fnr_1430">15</sup>  Nem lehet módosítani vagy – a jogszabály egészének hatályon kívül helyezése nélkül – hatályon kívül helyezni</p></div><span class="jhId" id="SZ8@BE2@POA"></span><div id="sc2010-130-00-00-1526" class="betusPontNyito"><p><span class="jel"> a)</span> a jogszabály megjelölését,</p></div><span class="jhId" id="SZ8@BE2@POB"></span><div id="sc2010-130-00-00-1529" class="betusPontNyito"><p><span class="jel"> b)</span><sup class="fnSup" data-note-id="fnr_1755">16</sup>  – az önkormányzati rendelet kivételével – a rendelet megalkotásához szükséges érvényességi kellékek felsorolását,</p></div><span class="jhId" id="SZ8@BE2@POC"></span><div id="sc2010-130-00-00-1532" class="betusPontNyito"><p><span class="jel"> c)</span> a hatályba lépett jogszabályi rendelkezés hatályba léptető rendelkezését, valamint</p></div><span class="jhId" id="SZ8@BE2@POD"></span><div id="sc2010-130-00-00-1535" class="betusPontNyito"><p><span class="jel"> d)</span> jogszabállyal – a hiteles szöveg és a kihirdetett szöveg közti eltérés, valamint fordítási hiba kivételével – a jogszabályban kihirdetett nemzetközi szerződés, a nemzetközi szerződéshez fűzött fenntartás, kifogás és nyilatkozat szövegét.</p></div><!--i-->
+<span class="jhId" id="SZ9"></span><div id="sc2010-130-00-00-146" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ9@BE1"></span><div id="sc2010-130-00-00-147" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">9. §</span> (1)</span> Nem hatályos jogszabály vagy jogszabályi rendelkezés nem módosítható vagy helyezhető hatályon kívül.</p></div><!--n-->
+<span class="jhId" id="SZ9@BE2"></span><div id="sc2010-130-00-00-150" class="bekezdesNyito"><p><span class="jel"> (2)</span><sup class="fnSup" data-note-id="fnr_1431">17</sup>  Ha a szabályozás célja másként nem érhető el, a jogalkotói hatáskörrel rendelkező szerv vagy személy jogszabályban rendelkezhet úgy, hogy a kihirdetett, de még hatályba nem lépett jogszabályi rendelkezés a kihirdetett szövegtől eltérő szöveggel lép hatályba, vagy a kihirdetett, de még hatályba nem lépett jogszabály vagy jogszabályi rendelkezés nem lép hatályba.</p></div><!--n-->
+<span class="jhId" id="SZ9@BE3"></span><div id="sc2010-130-00-00-1538" class="bekezdesNyito"><p><span class="jel"> (3)</span><sup class="fnSup" data-note-id="fnr_1432">18</sup>  A kihirdetett, de még hatályba nem lépett jogszabály vagy jogszabályi rendelkezés tartalmának a <a class="link" data-jhid="SZ9@BE2" data-type="belso">(2) bekezdés</a> szerinti megváltoztatását vagy hatályba nem lépését kimondó jogszabályi rendelkezés hatálybalépésének időpontját úgy kell meghatározni, hogy az megegyezzen azzal az időponttal, amikor a kihirdetett, de még hatályba nem lépett jogszabály vagy jogszabályi rendelkezés hatályba lépett volna.</p></div><!--i-->
+<span class="jhId" id="SZ10"></span><div id="sc2010-130-00-00-153" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ10@BE1"></span><div id="sc2010-130-00-00-154" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">10. §</span> (1)</span> A hatályos jogszabály vagy jogszabályi rendelkezés hatályát veszti</p></div><span class="jhId" id="SZ10@BE1@POA"></span><div id="sc2010-130-00-00-157" class="betusPontNyito"><p><span class="jel"> a)</span> ha a hatályon kívül helyezendő jogszabályt vagy jogszabályi rendelkezést tételesen megjelölő, a hatályon kívül helyezést kimondó jogszabályi rendelkezés hatályon kívül helyezi,</p></div><span class="jhId" id="SZ10@BE1@POB"></span><div id="sc2010-130-00-00-160" class="betusPontNyito"><p><span class="jel"> b)</span> ha a módosítandó jogszabályi rendelkezést tételesen megjelölő, annak helyébe lépését kimondó jogszabályi rendelkezés módosítja,</p></div><span class="jhId" id="SZ10@BE1@POC"></span><div id="sc2010-130-00-00-163" class="betusPontNyito"><p><span class="jel"> c)</span><sup class="fnSup" data-note-id="fnr_1433">19</sup>  a <a class="link" data-jhid="SZ12@BE2" data-type="belso">12. § (2) bekezdés</a>ében, a <a class="link" data-jhid="SZ12A@BE2" data-type="belso">12/A. § (2) bekezdés</a>ében és a <a class="link" data-jhid="SZ12B" data-type="belso">12/B. §</a>-ban meghatározottak szerint, vagy</p></div><span class="jhId" id="SZ10@BE1@POD"></span><div id="sc2010-130-00-00-166" class="betusPontNyito"><p><span class="jel"> d)</span><sup class="fnSup" data-note-id="fnr_1090">20</sup>  ha azt az Alkotmánybíróság vagy a bíróság megsemmisíti.</p></div><!--n-->
+<span class="jhId" id="SZ10@BE2"></span><div id="sc2010-130-00-00-169" class="bekezdesNyito"><p><span class="jel"> (2)</span><sup class="fnSup" data-note-id="fnr_1434">21</sup>  A hatályos jogszabályt vagy jogszabályi rendelkezést az <a class="link" data-jhid="SZ10@BE1@POA" data-type="belso">(1) bekezdés a) pont</a>ja szerint – a <a class="link" data-jhid="SZ10@BE3" data-type="belso">(3) bekezdés</a>ben meghatározott kivétellel – a hatályon kívül helyezni kívánt jogszabály vagy jogszabályi rendelkezés megalkotására hatáskörrel rendelkező szerv vagy személy helyezheti hatályon kívül.</p></div><!--n-->
+<span class="jhId" id="SZ10@BE3"></span><div id="sc2010-130-00-00-172" class="bekezdesNyito"><p><span class="jel"> (3)</span><sup class="fnSup" data-note-id="fnr_1435">22</sup>  Hatályon kívül helyezhető</p></div><span class="jhId" id="SZ10@BE3@POA"></span><div id="sc2010-130-00-00-175" class="betusPontNyito"><p><span class="jel"> a)</span> törvényben</p></div><span class="jhId" id="SZ10@BE3@POA@APAA"></span><div id="sc2010-130-00-00-1541" class="ketbetusAlPont"><p><span class="jel"> aa)</span> kormányrendelet vagy annak rendelkezése,</p></div><span class="jhId" id="SZ10@BE3@POA@APAB"></span><div id="sc2010-130-00-00-1543" class="ketbetusAlPont"><p><span class="jel"> ab)</span> a Kormány tagjának rendelete vagy annak rendelkezése – a miniszterelnök miniszterelnök-helyettest kijelölő rendelete kivételével – és</p></div><span class="jhId" id="SZ10@BE3@POA@APAC"></span><div id="sc2010-130-00-00-1545" class="ketbetusAlPont"><p><span class="jel"> ac)</span> az önálló szabályozó szerv vezetőjének rendelete vagy annak rendelkezése – a rendelet kiadásában való helyettesítésére jogosult helyettesét kijelölő rendelete kivételével –,</p></div><span class="jhId" id="SZ10@BE3@POB"></span><div id="sc2010-130-00-00-178" class="betusPontNyito"><p><span class="jel"> b)</span> kormányrendeletben – a miniszterelnök miniszterelnök-helyettest kijelölő rendelete kivételével – a Kormány tagjának rendelete vagy annak rendelkezése, ha</p></div><span class="jhId" id="SZ10@BE3@POB@APBA"></span><div id="sc2010-130-00-00-1547" class="ketbetusAlPont"><p><span class="jel"> ba)</span> a törvényben adott felhatalmazás hatályát vesztette, és a tárgykör szabályozására új felhatalmazó rendelkezést nem alkottak,</p></div><span class="jhId" id="SZ10@BE3@POB@APBB"></span><div id="sc2010-130-00-00-1549" class="ketbetusAlPont"><p><span class="jel"> bb)</span> a kormányrendeletben adott felhatalmazás hatályát vesztette, és a tárgykör szabályozására új felhatalmazó rendelkezést nem alkottak, vagy</p></div><span class="jhId" id="SZ10@BE3@POB@APBC"></span><div id="sc2010-130-00-00-1551" class="ketbetusAlPont"><p><span class="jel"> bc)</span> a tárgykör szabályozására alkotott új felhatalmazó rendelkezés kormányrendelet kiadására ad felhatalmazást.</p></div><!--n-->
+<span class="jhId" id="SZ10@BE4"></span><div id="sc2010-130-00-00-181" class="bekezdesNyito"><p><span class="jel"> (4)</span><sup class="fnSup" data-note-id="fnr_1683">23</sup>  A Kormány rendeletével hatályon kívül helyezheti az olyan kormányrendeletet vagy annak rendelkezését, amely módosítására vagy hatályon kívül helyezésére már nincs felhatalmazása a felhatalmazás hatályvesztése, vagy a tárgykör szabályozására alkotott olyan új felhatalmazó rendelkezés miatt, amely a Kormány tagjának rendelete kiadására ad felhatalmazást.</p></div><!--n-->
+<span class="jhId" id="SZ10@BE5"></span><div id="sc2010-130-00-00-184" class="bekezdesNyito"><p><span class="jel"> (5)</span><sup class="fnSup" data-note-id="fnr_1437">24</sup>  A Kormány tagja rendeletével hatályon kívül helyezheti a feladatkörébe tartozó azon miniszteri rendeletet, miniszterelnöki rendeletet vagy azok rendelkezését, amelyet felhatalmazás nélkül alkottak meg, vagy amely módosítására vagy hatályon kívül helyezésére – a felhatalmazás hatályvesztése miatt – már nincs felhatalmazása.</p></div><!--n-->
+<span class="jhId" id="SZ10@BE6"></span><div id="sc2010-130-00-00-187" class="bekezdesNyito"><p><span class="jel"> (6)</span> A hatályvesztés időpontjának meghatározása esetén rögzíteni kell a hatályvesztés naptári napját, vagy azt valamely jövőbeli feltétel bekövetkeztének időpontjához kell kötni. Ha a szabályozás célja másként nem érhető el, a hatályvesztés időpontja órában is meghatározható.</p></div><!--n-->
+<span class="jhId" id="SZ10@BE7"></span><div id="sc2010-130-00-00-190" class="bekezdesNyito"><p><span class="jel"> (7)</span> A hatályvesztés napjának meghatározása esetén a jogszabály vagy jogszabályi rendelkezés – jogszabály eltérő rendelkezése hiányában – a nap kezdetén veszti hatályát.</p></div><!--n-->
+<span class="jhId" id="SZ10@BE8"></span><div id="sc2010-130-00-00-193" class="bekezdesNyito"><p><span class="jel"> (8)</span><sup class="fnSup" data-note-id="fnr_1092">25</sup>  Az Alkotmánybíróság által megsemmisített jogszabály vagy jogszabályi rendelkezés – ha az Alkotmánybíróság a határozatában eltérően nem rendelkezik – a nap kezdetén veszti hatályát. A bíróság által megsemmisített jogszabály vagy jogszabályi rendelkezés a nap kezdetén veszti hatályát.</p></div><!--i-->
+<span class="jhId" id="SZ11"></span><div id="sc2010-130-00-00-196" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ11@BE0"></span><div id="sc2010-130-00-00-197" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">11. §</span></span> Ha jogszabály vagy jogszabályi rendelkezés hatálybalépésére vagy hatályvesztésére valamely jövőbeli feltétel bekövetkeztekor kerül sor, a feltétel bekövetkezéséről a bekövetkezés naptári napjának megjelölésével határozatot kell közzétenni, kivéve, ha a jogszabály hatálybalépése valamely más jogszabály hatálybalépéséhez kötődik. A jogszabálynak rendelkeznie kell arról, hogy a határozat Magyar Közlönyben történő közzétételére mely feladatkörrel rendelkező miniszter köteles. Önkormányzati rendelet esetén a határozatot a jegyző az önkormányzati rendelet kihirdetésére vonatkozó rendelkezések szerint teszi közzé.</p></div><!--i-->
+<span class="jhId" id="SZ12"></span><div id="sc2010-130-00-00-200" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ12@BE1"></span><div id="sc2010-130-00-00-201" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">12. §</span> (1)</span> A módosító rendelkezés és hatályon kívül helyező rendelkezés a hatálybalépéssel, vagy ha a módosító, illetve a hatályon kívül helyező rendelkezés a módosítást, illetve hatályon kívül helyezést meghatározott időponthoz vagy jövőbeli feltételhez köti, ennek az időpontnak vagy jövőbeli feltételnek a bekövetkezésével végrehajtottá válik.</p></div><!--n-->
+<span class="jhId" id="SZ12@BE2"></span><div id="sc2010-130-00-00-204" class="bekezdesNyito"><p><span class="jel"> (2)</span> A jogszabály <a class="link" data-jhid="SZ12@BE1" data-type="belso">(1) bekezdés</a> szerint végrehajtottá vált rendelkezése a végrehajtottá válást követő napon hatályát veszti.</p></div><!--n-->
+<span class="jhId" id="SZ12@BE3"></span><div id="sc2010-130-00-00-1376" class="bekezdesNyito"><p><span class="jel"> (3)</span><sup class="fnSup" data-note-id="fnr_1438">26</sup>  Az <a class="link" data-jhid="SZ12@BE1" data-type="belso">(1)</a> és a <a class="link" data-jhid="SZ12@BE2" data-type="belso">(2) bekezdés</a>t a joghatás kiváltására nem alkalmas módosító rendelkezésre és hatályon kívül helyező rendelkezésre is alkalmazni kell azzal az eltéréssel, hogy a hatályvesztés időpontjának az azt követő napot kell tekinteni, amikor e rendelkezés joghatás kiváltására alkalmassága esetén végrehajtottá vált volna.</p></div><!--i-->
+<span class="jhId" id="SZ12A"></span><div id="sc2010-130-00-00-1553" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ12A@BE1"></span><div id="sc2010-130-00-00-1554" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">12/A. §<sup class="fnSup" data-note-id="fnr_1439">27</sup> </span> (1)</span> A kihirdetett, de még hatályba nem lépett jogszabály vagy jogszabályi rendelkezés tartalmának a <a class="link" data-jhid="SZ9@BE2" data-type="belso">9. § (2) bekezdés</a>e szerinti megváltoztatását vagy hatályba nem lépését kimondó jogszabályi rendelkezés</p></div><span class="jhId" id="SZ12A@BE1@POA"></span><div id="sc2010-130-00-00-1557" class="betusPontNyito"><p><span class="jel"> a)</span> a kihirdetett szövegtől eltérő szöveggel való hatálybalépést kimondó jogszabályi rendelkezés esetén a változtatással érintett jogszabály vagy jogszabályi rendelkezés hatálybalépésének az időpontjában,</p></div><span class="jhId" id="SZ12A@BE1@POB"></span><div id="sc2010-130-00-00-1560" class="betusPontNyito"><p><span class="jel"> b)</span> a hatályba nem lépésről rendelkező jogszabályi rendelkezés esetén a változtatással érintett jogszabály vagy jogszabályi rendelkezés hatályba léptető rendelkezésében megállapított időpontban</p></div><div id="sc2010-130-00-00-1563" class="bekezdesZaro"><p>végrehajtottá válik.</p></div><!--n-->
+<span class="jhId" id="SZ12A@BE2"></span><div id="sc2010-130-00-00-1565" class="bekezdesNyito"><p><span class="jel"> (2)</span> A jogszabály <a class="link" data-jhid="SZ12A@BE1" data-type="belso">(1) bekezdés</a> szerint végrehajtottá vált rendelkezése a végrehajtottá válást követő napon hatályát veszti.</p></div><!--n-->
+<span class="jhId" id="SZ12A@BE3"></span><div id="sc2010-130-00-00-1568" class="bekezdesNyito"><p><span class="jel"> (3)</span> Az <a class="link" data-jhid="SZ12A@BE1" data-type="belso">(1)</a> és a <a class="link" data-jhid="SZ12A@BE2" data-type="belso">(2) bekezdés</a>t a joghatás kiváltására nem alkalmas, a kihirdetett, de még hatályba nem lépett jogszabály vagy jogszabályi rendelkezés tartalmának a <a class="link" data-jhid="SZ9@BE2" data-type="belso">9. § (2) bekezdés</a>e szerinti megváltoztatását vagy hatályba nem lépését kimondó jogszabályi rendelkezésre is alkalmazni kell azzal az eltéréssel, hogy a hatályvesztés időpontjának az azt követő napot kell tekinteni, amikor e rendelkezés joghatás kiváltására alkalmassága esetén végrehajtottá vált volna.</p></div><!--i-->
+<span class="jhId" id="SZ12B"></span><div id="sc2010-130-00-00-1571" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ12B@BE0"></span><div id="sc2010-130-00-00-1572" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">12/B. §<sup class="fnSup" data-note-id="fnr_1440">28</sup> </span></span> Az a jogszabály, amely a <a class="link" data-jhid="SZ12@BE2" data-type="belso">12. § (2)</a> és <a class="link" data-jhid="SZ12@BE3" data-type="belso">(3) bekezdés</a>e szerint, illetve a <a class="link" data-jhid="SZ12A@BE2" data-type="belso">12/A. § (2)</a> és <a class="link" data-jhid="SZ12A@BE3" data-type="belso">(3) bekezdés</a>e szerint hatályát vesztett rendelkezést tartalmazott, és annak hatályvesztését követően kizárólag</p></div><span class="jhId" id="SZ12B@BE0@POA"></span><div id="sc2010-130-00-00-1575" class="betusPontNyito"><p><span class="jel"> a)</span> jogszabály-megjelölést,</p></div><span class="jhId" id="SZ12B@BE0@POB"></span><div id="sc2010-130-00-00-1578" class="betusPontNyito"><p><span class="jel"> b)</span><sup class="fnSup" data-note-id="fnr_1756">29</sup>  preambulumot, illetve érvényességikellék-felsorolást,</p></div><span class="jhId" id="SZ12B@BE0@POC"></span><div id="sc2010-130-00-00-1581" class="betusPontNyito"><p><span class="jel"> c)</span> – más jogszabályra vonatkozó hatályba léptető rendelkezés kivételével – hatályba léptető rendelkezést,</p></div><span class="jhId" id="SZ12B@BE0@POD"></span><div id="sc2010-130-00-00-1584" class="betusPontNyito"><p><span class="jel"> d)</span> törvény vagy törvényi rendelkezés sarkalatosságára utaló rendelkezést,</p></div><span class="jhId" id="SZ12B@BE0@POE"></span><div id="sc2010-130-00-00-1587" class="betusPontNyito"><p><span class="jel"> e)</span> az európai uniós követelményekre utaló rendelkezést, illetve</p></div><span class="jhId" id="SZ12B@BE0@POF"></span><div id="sc2010-130-00-00-1590" class="betusPontNyito"><p><span class="jel"> f)</span> normatív tartalommal nem rendelkező szerkezetiegység-megjelölést</p></div><div id="sc2010-130-00-00-1593" class="bekezdesZaro"><p>tartalmaz, a <a class="link" data-jhid="SZ12@BE2" data-type="belso">12. § (2)</a> és <a class="link" data-jhid="SZ12@BE3" data-type="belso">(3) bekezdés</a>e, illetve a <a class="link" data-jhid="SZ12A@BE2" data-type="belso">12/A. § (2)</a> és <a class="link" data-jhid="SZ12A@BE3" data-type="belso">(3) bekezdés</a>e szerint utoljára hatályát vesztett rendelkezés hatályvesztését követő napon hatályát veszti.</p></div><!--i-->
+<span class="jhId" id="SZ13"></span><div id="sc2010-130-00-00-207" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ13@BE1"></span><div id="sc2010-130-00-00-208" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">13. §</span> (1)</span> A felhatalmazó rendelkezés hatályon kívül helyezése esetén – kivéve, ha egyidejűleg a tárgykör szabályozására azonos tartalommal új felhatalmazó rendelkezést alkottak – a hatályon kívül helyezésről rendelkező jogszabályban intézkedni kell a végrehajtási jogszabály hatályon kívül helyezéséről vagy a végrehajtási jogszabály azon rendelkezésének a hatályon kívül helyezéséről, amely a felhatalmazás végrehajtására irányul.</p></div><!--n-->
+<span class="jhId" id="SZ13@BE2"></span><div id="sc2010-130-00-00-211" class="bekezdesNyito"><p><span class="jel"> (2)</span> Ha a jogszabály minden rendelkezése végrehajtottá vált, rendelkezni kell annak hatályon kívül helyezéséről.</p></div><!--i-->
+<span class="jhId" id="SZ14"></span><div id="sc2010-130-00-00-214" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ14@BE1"></span><div id="sc2010-130-00-00-215" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">14. §<sup class="fnSup" data-note-id="fnr_1441">30</sup> </span> (1)</span> A módosító jogszabály vagy jogszabályi rendelkezés hatályon kívül helyezése, <a class="link" data-jhid="SZ12@BE2" data-type="belso">12. § (2) bekezdés</a>e vagy <a class="link" data-jhid="SZ12B" data-type="belso">12/B. §</a> szerinti hatályvesztése nem érinti az általa módosított jogszabályi rendelkezés hatályát.</p></div><!--n-->
+<span class="jhId" id="SZ14@BE2"></span><div id="sc2010-130-00-00-218" class="bekezdesNyito"><p><span class="jel"> (2)</span> Jogszabály vagy jogszabályi rendelkezés hatályon kívül helyezése, illetve <a class="link" data-jhid="SZ12@BE2" data-type="belso">12. § (2) bekezdés</a>e vagy <a class="link" data-jhid="SZ12B" data-type="belso">12/B. §</a> szerinti hatályvesztése nem eredményezi a korábban általa hatályon kívül helyezett jogszabály vagy jogszabályi rendelkezés újbóli hatálybalépését.</p></div><!--n-->
+<span class="jhId" id="SZ14@BE3"></span><div id="sc2010-130-00-00-1595" class="bekezdesNyito"><p><span class="jel"> (3)</span> Az <a class="link" data-jhid="SZ14@BE1" data-type="belso">(1)</a> és <a class="link" data-jhid="SZ14@BE2" data-type="belso">(2) bekezdés</a> a kihirdetett, de még hatályba nem lépett jogszabály vagy jogszabályi rendelkezés tartalmának a <a class="link" data-jhid="SZ9@BE2" data-type="belso">9. § (2) bekezdés</a>e szerinti megváltoztatását vagy hatályba nem lépését kimondó jogszabályra vagy jogszabályi rendelkezésre annak végrehajtottá válását követő hatályon kívül helyezése, illetve a <a class="link" data-jhid="SZ12A@BE2" data-type="belso">12/A. § (2) bekezdés</a>e vagy a <a class="link" data-jhid="SZ12B" data-type="belso">12/B. §</a> szerinti hatályvesztése esetén megfelelően alkalmazandó.</p></div><!--i-->
+<!--as--><span class="jhId" id="AC3"></span><div id="sc2010-130-00-00-222" class="alcim"><p class="mhk-C6"><span class="jel"> 3.</span> <b>A szabályozási átmenet</b></p></div><!--ae--><!--i-->
+<span class="jhId" id="SZ15"></span><div id="sc2010-130-00-00-224" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ15@BE1"></span><div id="sc2010-130-00-00-225" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">15. §</span> (1)</span> A jogszabályi rendelkezést – ha jogszabály eltérően nem rendelkezik – a hatálybalépését követően</p></div><span class="jhId" id="SZ15@BE1@POA"></span><div id="sc2010-130-00-00-228" class="betusPontNyito"><p><span class="jel"> a)</span> keletkezett tényekre és jogviszonyokra, valamint</p></div><span class="jhId" id="SZ15@BE1@POB"></span><div id="sc2010-130-00-00-231" class="betusPontNyito"><p><span class="jel"> b)</span> megkezdett eljárási cselekményekre</p></div><div id="sc2010-130-00-00-1846" class="bekezdesZaro"><p>kell alkalmazni.</p></div><!--n-->
+<span class="jhId" id="SZ15@BE2"></span><div id="sc2010-130-00-00-235" class="bekezdesNyito"><p><span class="jel"> (2)</span> A jogszabályi rendelkezést – ha jogszabály eltérően nem rendelkezik – a hatálya alatt</p></div><span class="jhId" id="SZ15@BE2@POA"></span><div id="sc2010-130-00-00-238" class="betusPontNyito"><p><span class="jel"> a)</span> keletkezett tényekre és jogviszonyokra, valamint</p></div><span class="jhId" id="SZ15@BE2@POB"></span><div id="sc2010-130-00-00-241" class="betusPontNyito"><p><span class="jel"> b)</span> megkezdett eljárási cselekményekre</p></div><div id="sc2010-130-00-00-1848" class="bekezdesZaro"><p>a jogszabályi rendelkezés hatályvesztését követően is alkalmazni kell.</p></div><!--i-->
+<span class="jhId" id="FEIV"></span><div id="sc2010-130-00-00-245" class="fejezet">IV. Fejezet</div><!--i-->
+<div id="sc2010-130-00-00-246" class="fejezetCim"><p class="mhk-C3"><i>A JOGSZABÁLYOK ELŐKÉSZÍTÉSE</i></p></div><!--i-->
+<!--as--><span class="jhId" id="AC4"></span><div id="sc2010-130-00-00-250" class="alcim"><p class="mhk-C6"><span class="jel"> 4.</span> <b>A jogszabály szakmai tartalmának és jogrendszerbe illeszkedésének biztosítása</b></p></div><!--ae--><!--i-->
+<span class="jhId" id="SZ15A"></span><div id="sc2010-130-00-00-1598" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ15A@BE0"></span><div id="sc2010-130-00-00-1599" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">15/A. §<sup class="fnSup" data-note-id="fnr_1442">31</sup> </span></span> A jogszabály előkészítőjének feladata, hogy a jogalkotás elmaradásának várható következményeit mérlegelje, és – a jogalkotás alapvető követelményei figyelembevételével – akkor tegyen javaslatot a jogszabály megalkotására, ha az a szabályozási cél eléréséhez feltétlenül szükséges.</p></div><!--i-->
+<span class="jhId" id="SZ16"></span><div id="sc2010-130-00-00-252" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ16@BE1"></span><div id="sc2010-130-00-00-253" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">16. §</span> (1)</span> A jogszabály előkészítőjének feladata – a <a class="link" data-jhid="SZ2@BE4" data-type="belso">2. § (4) bekezdés</a>ében foglalt követelmények figyelembevételével – a jogszabály szakmai tartalmának kialakítása.</p></div><!--n-->
+<span class="jhId" id="SZ16@BE2"></span><div id="sc2010-130-00-00-256" class="bekezdesNyito"><p><span class="jel"> (2)</span><sup class="fnSup" data-note-id="fnr_1443">32</sup>  A <a class="link" data-jhid="SZ2@BE4" data-type="belso">2. § (4) bekezdés</a>ében foglalt követelmények érvényesítéséről a kormányzati jogszabály-előkészítő tevékenység során a Kormány az igazságügyért felelős miniszter útján gondoskodik. E követelmények érvényre juttatása érdekében a Kormány jogszabály előkészítéséért felelős tagja</p></div><span class="jhId" id="SZ16@BE2@POA"></span><div id="sc2010-130-00-00-259" class="betusPontNyito"><p><span class="jel"> a)</span> a törvény és a kormányrendelet tervezetét az igazságügyért felelős miniszterrel egyetértésben terjeszti a Kormány elé,</p></div><span class="jhId" id="SZ16@BE2@POB"></span><div id="sc2010-130-00-00-262" class="betusPontNyito"><p><span class="jel"> b)</span><sup class="fnSup" data-note-id="fnr_1444">33</sup>  a rendeletét az igazságügyért felelős miniszter véleményének kikérését követően adja ki.</p></div><!--n-->
+<span class="jhId" id="SZ16@BE3"></span><div id="sc2010-130-00-00-265" class="bekezdesNyito"><p><span class="jel"> (3)</span><sup class="fnSup" data-note-id="fnr_1445">34</sup>  Ha a Kormány tagja rendeletének tervezetével az igazságügyért felelős miniszter alkotmányossági vagy európai uniós jogi szempontból nem ért egyet, a vitás kérdésben a Kormány jogszabály előkészítéséért felelős tagja és az igazságügyért felelős miniszter közös előterjesztése alapján a Kormány dönt.</p></div><!--n-->
+<span class="jhId" id="SZ16@BE4"></span><div id="sc2010-130-00-00-1122" class="bekezdesNyito"><p><span class="jel"> (4)</span><sup class="fnSup" data-note-id="fnr_1093">35</sup>  Az önálló szabályozó szerv vezetője a rendeletét a <a class="link" data-jhid="SZ2@BE4" data-type="belso">2. § (4) bekezdés</a>ében foglalt követelmények érvényesülése érdekében az igazságügyért felelős miniszter véleményének kikérését követően adja ki.</p></div><!--i-->
+<span class="jhId" id="SZ16A"></span><div id="sc2010-130-00-00-1602" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ16A@BE1"></span><div id="sc2010-130-00-00-1603" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">16/A. §<sup class="fnSup" data-note-id="fnr_1446">36</sup> </span> (1)</span> A jogszabály szakmai tartalmát, a jogszabály terjedelmét és a jogszabályi rendelkezés absztrakciójának mértékét a szabályozott életviszony jellegéhez igazodóan, az e törvényben meghatározott keretek között, észszerűen kell kialakítani.</p></div><!--n-->
+<span class="jhId" id="SZ16A@BE2"></span><div id="sc2010-130-00-00-1606" class="bekezdesNyito"><p><span class="jel"> (2)</span> A jogszabály szakmai tartalmát a szabályozási cél sérelme nélkül lehetőség szerint úgy kell kialakítani, hogy a jogszabály címzettjei számára egyszerűbb, gyorsabb, kevésbé költséges eljárásokat eredményezzen, továbbá érvényesüljön a jogi kötelezettségek és adminisztratív terhek számának csökkentése, illetve a jogrendszer túlszabályozottságának mérséklése.</p></div><!--n-->
+<span class="jhId" id="SZ16A@BE3"></span><div id="sc2010-130-00-00-1609" class="bekezdesNyito"><p><span class="jel"> (3)</span> A jogszabály szakmai tartalmát lehetőség szerint úgy kell kialakítani, hogy ha a jogszabály</p></div><span class="jhId" id="SZ16A@BE3@POA"></span><div id="sc2010-130-00-00-1612" class="betusPontNyito"><p><span class="jel"> a)</span> új adminisztratív kötelezettséget,</p></div><span class="jhId" id="SZ16A@BE3@POB"></span><div id="sc2010-130-00-00-1615" class="betusPontNyito"><p><span class="jel"> b)</span> új fizetési kötelezettséget, vagy</p></div><span class="jhId" id="SZ16A@BE3@POC"></span><div id="sc2010-130-00-00-1618" class="betusPontNyito"><p><span class="jel"> c)</span> egyéb módon a jogszabály címzettjeinek költségeit növelő új kötelezettséget</p></div><div id="sc2010-130-00-00-1621" class="bekezdesZaro"><p>vezet be, valamely már fennálló ilyen kötelezettség megszüntetéséről vagy arányos enyhítéséről is rendelkezni kell.</p></div><!--i-->
+<!--as--><span class="jhId" id="AC5"></span><div id="sc2010-130-00-00-269" class="alcim"><p class="mhk-C6"><span class="jel"> 5.</span> <b>Előzetes hatásvizsgálat</b></p></div><!--ae--><!--i-->
+<span class="jhId" id="SZ17"></span><div id="sc2010-130-00-00-271" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ17@BE1"></span><div id="sc2010-130-00-00-272" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">17. §</span> (1)</span><sup class="fnSup" data-note-id="fnr_1447">37</sup>  A jogszabály előkészítője – a jogszabály feltételezett hatásaihoz igazodó részletességű – előzetes hatásvizsgálat elvégzésével felméri a szabályozás várható következményeit. Az előzetes hatásvizsgálat eredményéről a Kormány által előterjesztendő törvényjavaslat, illetve kormányrendelet esetén a Kormányt, önkormányzati rendelet esetén a helyi önkormányzat képviselő-testületét tájékoztatni kell. A Kormány tagja rendeletében meghatározott esetben a közjogi szervezetszabályozó eszköz előkészítője előzetes hatásvizsgálatot végez.</p></div><!--n-->
+<span class="jhId" id="SZ17@BE2"></span><div id="sc2010-130-00-00-275" class="bekezdesNyito"><p><span class="jel"> (2)</span> A hatásvizsgálat során vizsgálni kell</p></div><span class="jhId" id="SZ17@BE2@POA"></span><div id="sc2010-130-00-00-278" class="betusPontNyito"><p><span class="jel"> a)</span> a tervezett jogszabály valamennyi jelentősnek ítélt hatását, különösen</p></div><span class="jhId" id="SZ17@BE2@POA@APAA"></span><div id="sc2010-130-00-00-281" class="ketbetusAlPont"><p><span class="jel"> aa)</span> társadalmi, gazdasági, költségvetési hatásait,</p></div><span class="jhId" id="SZ17@BE2@POA@APAB"></span><div id="sc2010-130-00-00-283" class="ketbetusAlPont"><p><span class="jel"> ab)</span> környezeti és egészségi következményeit,</p></div><span class="jhId" id="SZ17@BE2@POA@APAC"></span><div id="sc2010-130-00-00-285" class="ketbetusAlPont"><p><span class="jel"> ac)</span> adminisztratív terheket befolyásoló hatásait, valamint</p></div><span class="jhId" id="SZ17@BE2@POB"></span><div id="sc2010-130-00-00-287" class="betusPontNyito"><p><span class="jel"> b)</span> a jogszabály megalkotásának szükségességét, a jogalkotás elmaradásának várható következményeit, és</p></div><span class="jhId" id="SZ17@BE2@POC"></span><div id="sc2010-130-00-00-290" class="betusPontNyito"><p><span class="jel"> c)</span> a jogszabály alkalmazásához szükséges személyi, szervezeti, tárgyi és pénzügyi feltételeket.</p></div><!--i-->
+<span class="jhId" id="SZ17A"></span><div id="sc2010-130-00-00-1623" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ17A@BE0"></span><div id="sc2010-130-00-00-1624" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">17/A. §<sup class="fnSup" data-note-id="fnr_1448">38</sup> </span></span> A jogszabály előkészítőjének feladata, hogy az előzetes hatásvizsgálat eredményét mérlegelje, és – a jogalkotás alapvető követelményei figyelembevételével – akkor tegyen javaslatot a jogszabály megalkotására, ha az a szabályozási cél eléréséhez feltétlenül szükséges.</p></div><!--i-->
+<span class="jhId" id="SZ17B"></span><div id="sc2010-130-00-00-1709" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ17B@BE0"></span><div id="sc2010-130-00-00-1710" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">17/B. §<sup class="fnSup" data-note-id="fnr_1702">39</sup> </span></span> A Központi Statisztikai Hivatal törvény, kormányrendelet vagy miniszteri rendelet előkészítése során hivatalos statisztikai adatok szolgáltatásával közreműködik az előzetes hatásvizsgálat elvégzésében.</p></div><!--i-->
+<!--as--><span class="jhId" id="AC6"></span><div id="sc2010-130-00-00-294" class="alcim"><p><span class="jel"> 6.</span><sup class="fnSup" data-note-id="fnr_1757">40</sup>  A jogszabályok céljának meghatározása és az indokolási kötelezettség</p></div><!--ae--><!--i-->
+<span class="jhId" id="SZ18"></span><div id="sc2010-130-00-00-296" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ18@BE1"></span><div id="sc2010-130-00-00-1771" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">18. §</span> (1)</span> A jogszabály tervezete preambulumot tartalmaz, amelyben a szabályozás célját minden esetben meg kell határozni. A jogszabály tervezetének preambulumában a jogszabály előkészítője szükség szerint rögzítheti a szabályozással összefüggő azon elvi, elméleti tételeket, amelyeket a jogszabály tervezetének szerkezeti egységeiben a normatív tartalom hiánya miatt nem lehet rendezni.</p></div><!--n-->
+<span class="jhId" id="SZ18@BE2"></span><div id="sc2010-130-00-00-1774" class="bekezdesNyito"><p><span class="jel"> (2)</span> A rendelet tervezetének preambuluma az <a class="link" data-jhid="SZ18@BE1" data-type="belso">(1) bekezdés</a> szerinti tartalmi elemek mellett tartalmazza a rendelet megalkotásához szükséges, az igazságügyért felelős miniszter rendeletében meghatározott érvényességi kellékek felsorolását.</p></div><!--n-->
+<span class="jhId" id="SZ18@BE3"></span><div id="sc2010-130-00-00-1777" class="bekezdesNyito"><p><span class="jel"> (3)</span> A jogszabály tervezetének preambulumát az igazságügyért felelős miniszter rendeletében meghatározott jogszabályszerkesztési követelmények szerint kell kialakítani.</p></div><!--n-->
+<span class="jhId" id="SZ18@BE4"></span><div id="sc2010-130-00-00-1780" class="bekezdesNyito"><p><span class="jel"> (4)</span> A preambulumot a jogszabály módosítása esetén a jogszabály megváltozott tartalmának megfelelően módosítani kell, ha az a preambulum és a jogszabály rendelkezéseinek tartalmi összhangja megteremtése érdekében szükséges.</p></div><!--n-->
+<span class="jhId" id="SZ18@BE5"></span><div id="sc2010-130-00-00-1783" class="bekezdesNyito"><p><span class="jel"> (5)</span> A jogszabály tervezetéhez a jogszabály előkészítője indokolást csatol, amelyben bemutatja azokat a jogszabály normatív tartalmával összefüggő társadalmi, gazdasági, szakmai okokat, amelyek a javasolt szabályozást szükségessé teszik, továbbá ismerteti a jogi szabályozás várható hatásait, és az álláspontját az indokolás közzétételéről. A jogszabály tervezetéhez tartozó indokolásában a jogszabály előkészítője bemutathatja a szabályozással összefüggő azon részletes körülményeket, amelyek a szabályozás értelmezését segíthetik, továbbá ismertetheti a szabályozás előzményeit.</p></div><!--n-->
+<span class="jhId" id="SZ18@BE6"></span><div id="sc2010-130-00-00-1786" class="bekezdesNyito"><p><span class="jel"> (6)</span> A jogszabály tervezetéhez tartozó indokolás nyilvánosságát jogszabályban meghatározottak szerint kell biztosítani.</p></div><!--n-->
+<span class="jhId" id="SZ18@BE7"></span><div id="sc2010-130-00-00-1789" class="bekezdesNyito"><p><span class="jel"> (7)</span> A jogszabály tervezetéhez tartozó indokolás kötelező erővel nem rendelkezik.</p></div><!--n-->
+<span class="jhId" id="SZ18@BE8"></span><div id="sc2010-130-00-00-1792" class="bekezdesNyito"><p><span class="jel"> (8)</span> A jogszabály értelmezésekor figyelmen kívül kell hagyni a jogszabály tervezetéhez tartozó indokolás jogszabályszöveggel ellentétes részét.</p></div><!--i-->
+<!--as--><span class="jhId" id="AC7"></span><div id="sc2010-130-00-00-304" class="alcim"><p class="mhk-C6"><span class="jel"> 7.</span> <b>A jogszabálytervezetek véleményezése</b></p></div><!--ae--><!--i-->
+<span class="jhId" id="SZ19"></span><div id="sc2010-130-00-00-306" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ19@BE1"></span><div id="sc2010-130-00-00-307" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">19. §</span> (1)</span> Ha törvény valamely állami, helyi önkormányzati vagy más szervezet számára kifejezetten jogot biztosít arra, hogy a jogállását vagy a feladatkörét érintő jogszabályok tervezeteit véleményezhesse, a jogszabály előkészítője köteles gondoskodni arról, hogy az érintett szerv e jogával élhessen.</p></div><!--n-->
+<span class="jhId" id="SZ19@BE2"></span><div id="sc2010-130-00-00-310" class="bekezdesNyito"><p><span class="jel"> (2)</span><sup class="fnSup" data-note-id="fnr_1453">41</sup>  A jogszabály előkészítője a jogszabályok előkészítésében való társadalmi részvételről szóló törvényben<sup class="fnSup" data-note-id="fnr_1034">42</sup> meghatározottak szerint gondoskodik arról, hogy a jogszabály tervezete, valamint az ahhoz tartozó indokolás megismerhető és véleményezhető legyen.</p></div><!--n-->
+<span class="jhId" id="SZ19@BE3"></span><div id="sc2010-130-00-00-313" class="bekezdesNyito"><p><span class="jel"> (3)</span> A kormányzati jogszabály-előkészítő tevékenység során készített jogszabálytervezetek véleményezésére a Kormány ügyrendje további rendelkezéseket állapíthat meg.</p></div><!--i-->
+<!--as--><span class="jhId" id="AC8"></span><div id="sc2010-130-00-00-317" class="alcim"><p class="mhk-C6"><span class="jel"> 8.</span> <b>A jogszabálytervezetek egyeztetése az Európai Unió intézményeivel és tagállamaival</b></p></div><!--ae--><!--i-->
+<span class="jhId" id="SZ20"></span><div id="sc2010-130-00-00-319" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ20@BE1"></span><div id="sc2010-130-00-00-320" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">20. §</span> (1)</span> Ha az Európai Unió alapját képező szerződések vagy valamely uniós jogi aktus rendelkezései alapján a jogszabály tervezetét az Európai Unió egyes intézményeinek és tagállamainak, vagy az Európai Gazdasági Térségről szóló megállapodásban részes más államnak előzetesen bejelentésre vagy egyéb véleményezésre (a továbbiakban együtt: előzetes bejelentés) meg kell küldeni, az előzetes bejelentést a Kormány által rendeletben meghatározott eljárásban kell lefolytatni.</p></div><!--n-->
+<span class="jhId" id="SZ20@BE2"></span><div id="sc2010-130-00-00-323" class="bekezdesNyito"><p><span class="jel"> (2)</span><sup class="fnSup" data-note-id="fnr_1454">43</sup>  Ha az előzetes bejelentési kötelezettség alá tartozó jogszabály tervezetét nem a Kormány tagja terjesztette elő a jogalkotónak, az előterjesztő a Kormány kormányrendeletben kijelölt tagjánál kezdeményezi az előzetes bejelentési eljárás lefolytatását. A Kormány kormányrendeletben kijelölt tagja a kezdeményezésről tájékoztatja a Kormány jogszabály tárgya szerint feladatkörrel rendelkező tagját és az igazságügyért felelős minisztert.</p></div><!--n-->
+<span class="jhId" id="SZ20@BE3"></span><div id="sc2010-130-00-00-326" class="bekezdesNyito"><p><span class="jel"> (3)</span><sup class="fnSup" data-note-id="fnr_1455">44</sup>  Ha a nem a Kormány által előterjesztett törvényjavaslatot előzetes bejelentésre meg kell küldeni, és a <a class="link" data-jhid="SZ20@BE2" data-type="belso">(2) bekezdés</a> szerint az előzetes bejelentési eljárás lefolytatását nem kezdeményezték, a Kormány jogszabály tárgya szerint feladatkörrel rendelkező tagja, illetve az igazságügyért felelős miniszter – az előterjesztő és a Kormány másik tagja egyidejű tájékoztatása mellett – a Kormány kormányrendeletben kijelölt tagjánál kezdeményezi az előzetes bejelentési eljárás lefolytatását. A Kormány kormányrendeletben kijelölt tagja az előzetes bejelentési eljárás eredményéről haladéktalanul tájékoztatja az előterjesztőt, a Kormány jogszabály tárgya szerint feladatkörrel rendelkező tagját és az igazságügyért felelős minisztert.</p></div><!--n-->
+<span class="jhId" id="SZ20@BE4"></span><div id="sc2010-130-00-00-329" class="bekezdesNyito"><p><span class="jel"> (4)</span> Ha a Magyar Nemzeti Bank elnöke rendelete tervezetét előzetes bejelentésre meg kell küldeni az Európai Központi Banknak, a megküldésről a Magyar Nemzeti Bank elnöke gondoskodik.</p></div><!--n-->
+<span class="jhId" id="SZ20@BE5"></span><div id="sc2010-130-00-00-332" class="bekezdesNyito"><p><span class="jel"> (5)</span><sup class="fnSup" data-note-id="fnr_1094">45</sup>  Ha az önálló szabályozó szerv vezetője rendeletének tervezetét meg kell küldeni előzetes bejelentésre, a megküldésről az önálló szabályozó szerv vezetője gondoskodik.</p></div><!--n-->
+<span class="jhId" id="SZ20@BE6"></span><div id="sc2010-130-00-00-335" class="bekezdesNyito"><p><span class="jel"> (6)</span> Az előzetes bejelentési kötelezettség alá tartozó jogszabály az előzetes bejelentési eljárás befejezését követően alkotható meg.</p></div><!--i-->
+<span class="jhId" id="FEV"></span><div id="sc2010-130-00-00-338" class="fejezet">V. Fejezet</div><!--i-->
+<div id="sc2010-130-00-00-339" class="fejezetCim"><p class="mhk-C3"><i>A JOGRENDSZER FOLYAMATOS FELÜLVIZSGÁLATA</i></p></div><!--i-->
+<!--as--><span class="jhId" id="AC9"></span><div id="sc2010-130-00-00-343" class="alcim"><p class="mhk-C6"><span class="jel"> 9.</span> <b>Utólagos hatásvizsgálat</b></p></div><!--ae--><!--i-->
+<span class="jhId" id="SZ21"></span><div id="sc2010-130-00-00-345" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ21@BE1"></span><div id="sc2010-130-00-00-346" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">21. §</span> (1)</span><sup class="fnSup" data-note-id="fnr_1456">46</sup>  A Kormány tagja folyamatosan figyelemmel kíséri a feladatkörébe tartozó jogszabályok hatályosulását, és szükség szerint lefolytatja a jogszabályok – a <a class="link" data-jhid="SZ17@BE2" data-type="belso">17. § (2) bekezdés</a>ében meghatározott szempontok szerinti – utólagos hatásvizsgálatát, ennek során összeveti a szabályozás megalkotása idején várt hatásokat a tényleges hatásokkal.</p></div><!--n-->
+<span class="jhId" id="SZ21@BE2"></span><div id="sc2010-130-00-00-349" class="bekezdesNyito"><p><span class="jel"> (2)</span><sup class="fnSup" data-note-id="fnr_1095">47</sup>  Az <a class="link" data-jhid="SZ21@BE1" data-type="belso">(1) bekezdés</a> szerinti hatásvizsgálat lefolytatásáról az általa alkotott rendelet esetén a Magyar Nemzeti Bank elnöke, az önálló szabályozó szerv vezetője, az önkormányzati rendelet esetén a jegyző gondoskodik.</p></div><!--n-->
+<span class="jhId" id="SZ21@BE3"></span><div id="sc2010-130-00-00-1713" class="bekezdesNyito"><p><span class="jel"> (3)</span><sup class="fnSup" data-note-id="fnr_1703">48</sup>  A Központi Statisztikai Hivatal hivatalos statisztikai adatok szolgáltatásával közreműködik az <a class="link" data-jhid="SZ21@BE1" data-type="belso">(1) bekezdés</a> szerinti hatásvizsgálat elvégzésében.</p></div><!--i-->
+<!--as--><span class="jhId" id="AC10"></span><div id="sc2010-130-00-00-353" class="alcim"><p class="mhk-C6"><span class="jel"> 10.</span> <b>A jogszabályok tartalmi felülvizsgálata</b></p></div><!--ae--><!--i-->
+<span class="jhId" id="SZ22"></span><div id="sc2010-130-00-00-355" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ22@BE1"></span><div id="sc2010-130-00-00-356" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">22. §</span> (1)</span><sup class="fnSup" data-note-id="fnr_1457">49</sup>  A jogalkalmazás és az utólagos hatásvizsgálat tapasztalatait is figyelembe véve a Kormány tagja gondoskodik arról, hogy a tárgykört érintő új jogi szabályozás vagy módosítás megalkotása során, ennek hiányában e célból kiadott jogszabály keretében</p></div><span class="jhId" id="SZ22@BE1@POA"></span><div id="sc2010-130-00-00-359" class="betusPontNyito"><p><span class="jel"> a)</span> az elavult, szükségtelenné vált,</p></div><span class="jhId" id="SZ22@BE1@POB"></span><div id="sc2010-130-00-00-362" class="betusPontNyito"><p><span class="jel"> b)</span> a jogrendszer egységébe nem illeszkedő,</p></div><span class="jhId" id="SZ22@BE1@POC"></span><div id="sc2010-130-00-00-365" class="betusPontNyito"><p><span class="jel"> c)</span> a szabályozási cél sérelme nélkül egyszerűsíthető, a jogszabály címzettjei számára gyorsabb, kevésbé költséges eljárásokat eredményező szabályozással felváltható,</p></div><span class="jhId" id="SZ22@BE1@POD"></span><div id="sc2010-130-00-00-368" class="betusPontNyito"><p><span class="jel"> d)</span> a normatív tartalom nélküli, tartalmilag kiüresedett vagy egyébként alkalmazhatatlan, vagy</p></div><span class="jhId" id="SZ22@BE1@POE"></span><div id="sc2010-130-00-00-371" class="betusPontNyito"><p><span class="jel"> e)</span> az indokolatlanul párhuzamos vagy többszintű szabályozást megvalósító,</p></div><div id="sc2010-130-00-00-1852" class="bekezdesZaro"><p>a feladatkörébe tartozó jogszabályi rendelkezések hatályon kívül helyezésére, illetve megfelelő módosítására kerüljön sor.</p></div><!--n-->
+<span class="jhId" id="SZ22@BE2"></span><div id="sc2010-130-00-00-375" class="bekezdesNyito"><p><span class="jel"> (2)</span><sup class="fnSup" data-note-id="fnr_1096">50</sup>  Az <a class="link" data-jhid="SZ22@BE1" data-type="belso">(1) bekezdés</a> szerinti felülvizsgálat lefolytatásáról az általa alkotott rendelet esetén a Magyar Nemzeti Bank elnöke, az önálló szabályozó szerv vezetője, az önkormányzati rendelet esetén a jegyző gondoskodik.</p></div><!--i-->
+<span class="jhId" id="FEVI"></span><div id="sc2010-130-00-00-378" class="fejezet">VI. Fejezet</div><!--i-->
+<div id="sc2010-130-00-00-379" class="fejezetCim"><p class="mhk-C3"><i>KÖZJOGI SZERVEZETSZABÁLYOZÓ ESZKÖZÖK</i></p></div><!--i-->
+<span class="jhId" id="SZ23"></span><div id="sc2010-130-00-00-382" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ23@BE1"></span><div id="sc2010-130-00-00-383" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">23. §<sup class="fnSup" data-note-id="fnr_1097">51</sup> </span> (1)</span> Normatív határozatban szabályozhatja</p></div><span class="jhId" id="SZ23@BE1@POA"></span><div id="sc2010-130-00-00-1125" class="betusPontNyito"><p><span class="jel"> a)</span> az Országgyűlés,</p></div><span class="jhId" id="SZ23@BE1@POB"></span><div id="sc2010-130-00-00-1128" class="betusPontNyito"><p><span class="jel"> b)</span> a Kormány és más testületi központi államigazgatási szerv,</p></div><span class="jhId" id="SZ23@BE1@POC"></span><div id="sc2010-130-00-00-1131" class="betusPontNyito"><p><span class="jel"> c)</span> az Alkotmánybíróság,</p></div><span class="jhId" id="SZ23@BE1@POD"></span><div id="sc2010-130-00-00-1134" class="betusPontNyito"><p><span class="jel"> d)</span> a Költségvetési Tanács</p></div><div id="sc2010-130-00-00-1137" class="bekezdesZaro"><p>szervezetét és működését, tevékenységét, valamint cselekvési programját.</p></div><!--n-->
+<span class="jhId" id="SZ23@BE2"></span><div id="sc2010-130-00-00-386" class="bekezdesNyito"><p><span class="jel"> (2)</span> Normatív határozatban szabályozhatja a helyi önkormányzat képviselő-testülete a saját és az általa irányított szervek tevékenységét és cselekvési programját, valamint az általa irányított szervek szervezetét és működését.</p></div><!--n-->
+<span class="jhId" id="SZ23@BE3"></span><div id="sc2010-130-00-00-1139" class="bekezdesNyito"><p><span class="jel"> (3)</span> Normatív határozatban szabályozhatja a nemzetiségi önkormányzat képviselő-testülete a saját és az általa irányított szervek szervezetét és működését, tevékenységét, valamint cselekvési programját.</p></div><!--n-->
+<span class="jhId" id="SZ23@BE4"></span><div id="sc2010-130-00-00-1142" class="bekezdesNyito"><p><span class="jel"> (4)</span><sup class="fnSup" data-note-id="fnr_1871">52</sup>  Normatív utasításban szabályozhatja</p></div><span class="jhId" id="SZ23@BE4@POA"></span><div id="sc2010-130-00-00-1878" class="betusPontNyito"><p><span class="jel"> a)</span> a köztársasági elnök,</p></div><span class="jhId" id="SZ23@BE4@POB"></span><div id="sc2010-130-00-00-1881" class="betusPontNyito"><p><span class="jel"> b)</span> a miniszterelnök,</p></div><span class="jhId" id="SZ23@BE4@POC"></span><div id="sc2010-130-00-00-1884" class="betusPontNyito"><p><span class="jel"> c)</span> az <a class="link" data-jhid="SZ23@BE1@POB" data-type="belso">(1) bekezdés b) pont</a>ja szerinti központi államigazgatási szerv kivételével a központi államigazgatási szerv vezetője,</p></div><span class="jhId" id="SZ23@BE4@POD"></span><div id="sc2010-130-00-00-1887" class="betusPontNyito"><p><span class="jel"> d)</span> az Országos Bírósági Hivatal elnöke,</p></div><span class="jhId" id="SZ23@BE4@POE"></span><div id="sc2010-130-00-00-1890" class="betusPontNyito"><p><span class="jel"> e)</span> a legfőbb ügyész,</p></div><span class="jhId" id="SZ23@BE4@POF"></span><div id="sc2010-130-00-00-1893" class="betusPontNyito"><p><span class="jel"> f)</span> a Nemzeti Vagyonvisszaszerzési és Vagyonvédelmi Hivatal elnöke,</p></div><span class="jhId" id="SZ23@BE4@POG"></span><div id="sc2010-130-00-00-1896" class="betusPontNyito"><p><span class="jel"> g)</span> az alapvető jogok biztosa,</p></div><span class="jhId" id="SZ23@BE4@POH"></span><div id="sc2010-130-00-00-1899" class="betusPontNyito"><p><span class="jel"> h)</span> a Magyar Nemzeti Bank elnöke,</p></div><span class="jhId" id="SZ23@BE4@POI"></span><div id="sc2010-130-00-00-1902" class="betusPontNyito"><p><span class="jel"> i)</span> az Állami Számvevőszék elnöke,</p></div><span class="jhId" id="SZ23@BE4@POJ"></span><div id="sc2010-130-00-00-1905" class="betusPontNyito"><p><span class="jel"> j)</span><sup class="fnSup" data-note-id="fnr_1913">53</sup>  a fővárosi és megyei kormányhivatal vezetője, valamint</p></div><span class="jhId" id="SZ23@BE4@POK"></span><div id="sc2010-130-00-00-1908" class="betusPontNyito"><p><span class="jel"> k)</span><sup class="fnSup" data-note-id="fnr_1914">54</sup>  a polgármester, a főpolgármester, a megyei közgyűlés elnöke (a továbbiakban együtt: polgármester) és a jegyző</p></div><div id="sc2010-130-00-00-1911" class="bekezdesZaro"><p>a vezetése, az irányítása vagy a felügyelete alá tartozó szervek szervezetét és működését, valamint tevékenységét.</p></div><!--n-->
+<span class="jhId" id="SZ23@BE5"></span><div id="sc2010-130-00-00-1177" class="bekezdesNyito"><p><span class="jel"> (5)</span> Törvényben meghatározott tárgykörben normatív utasítást adhat ki</p></div><span class="jhId" id="SZ23@BE5@POA"></span><div id="sc2010-130-00-00-1180" class="betusPontNyito"><p><span class="jel"> a)</span> az Országgyűlés,</p></div><span class="jhId" id="SZ23@BE5@POB"></span><div id="sc2010-130-00-00-1183" class="betusPontNyito"><p><span class="jel"> b)</span> a köztársasági elnök,</p></div><span class="jhId" id="SZ23@BE5@POC"></span><div id="sc2010-130-00-00-1186" class="betusPontNyito"><p><span class="jel"> c)</span> az Alkotmánybíróság,</p></div><span class="jhId" id="SZ23@BE5@POD"></span><div id="sc2010-130-00-00-1189" class="betusPontNyito"><p><span class="jel"> d)</span> az alapvető jogok biztosa,</p></div><span class="jhId" id="SZ23@BE5@POE"></span><div id="sc2010-130-00-00-1192" class="betusPontNyito"><p><span class="jel"> e)</span> az önálló szabályozó szerv, valamint</p></div><span class="jhId" id="SZ23@BE5@POF"></span><div id="sc2010-130-00-00-1195" class="betusPontNyito"><p><span class="jel"> f)</span><sup class="fnSup" data-note-id="fnr_1410">55</sup>  a minisztérium</p></div><div id="sc2010-130-00-00-1198" class="bekezdesZaro"><p>hivatali szervezetének vezetője, amely a szerv állományába tartozó személyekre kötelező.</p></div><!--n-->
+<span class="jhId" id="SZ23@BE6"></span><div id="sc2010-130-00-00-1796" class="bekezdesNyito"><p><span class="jel"> (6)</span><sup class="fnSup" data-note-id="fnr_1758">56</sup>  Törvényben meghatározott tárgykörben normatív utasítást adhat ki a Honvéd Vezérkar főnöke, amely a honvédekre kötelező.</p></div><!--i-->
+<span class="jhId" id="SZ24"></span><div id="sc2010-130-00-00-389" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ24@BE1"></span><div id="sc2010-130-00-00-390" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">24. §</span> (1)</span> A közjogi szervezetszabályozó eszköz jogszabállyal nem lehet ellentétes. A közjogi szervezetszabályozó eszközben jogszabály rendelkezése nem ismételhető meg.</p></div><!--n-->
+<span class="jhId" id="SZ24@BE2"></span><div id="sc2010-130-00-00-393" class="bekezdesNyito"><p><span class="jel"> (2)</span> A közjogi szervezetszabályozó eszközökre vonatkozó rendelkezések nem érintik a kibocsátásukra jogosultak – más jogszabályon alapuló – egyedi határozat meghozatalára vagy egyedi utasítás adására vonatkozó jogát.</p></div><!--n-->
+<span class="jhId" id="SZ24@BE3"></span><div id="sc2010-130-00-00-396" class="bekezdesNyito"><p><span class="jel"> (3)</span> Állami szerv vagy köztestület tevékenységét és működését szabályozó – törvény alapján kiadható – más jogi eszköz jogszabállyal és közjogi szervezetszabályozó eszközzel nem lehet ellentétes.</p></div><!--i-->
+<span class="jhId" id="FEVII"></span><div id="sc2010-130-00-00-399" class="fejezet">VII. Fejezet</div><!--i-->
+<div id="sc2010-130-00-00-400" class="fejezetCim"><p class="mhk-C3"><i>A KIHIRDETÉS, A KÖZZÉTÉTEL ÉS A NEMZETI JOGSZABÁLYTÁR</i></p></div><!--i-->
+<!--as--><span class="jhId" id="AC11"></span><div id="sc2010-130-00-00-1201" class="alcim"><p><span class="jel"> 11.</span> <sup class="fnSup" data-note-id="fnr_1099">57</sup><b> Magyarország hivatalos lapja</b></p></div><!--ae--><!--i-->
+<span class="jhId" id="SZ25"></span><div id="sc2010-130-00-00-406" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ25@BE1"></span><div id="sc2010-130-00-00-407" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">25. §</span> (1)</span><sup class="fnSup" data-note-id="fnr_1100">58</sup>  Magyarország hivatalos lapja a Magyar Közlöny. A Magyar Közlönyt a kormányzati portálon történő elektronikus dokumentumként való közzététellel kell kiadni, melynek szövegét hitelesnek kell tekinteni.</p></div><!--n-->
+<span class="jhId" id="SZ25@BE2"></span><div id="sc2010-130-00-00-410" class="bekezdesNyito"><p><span class="jel"> (2)</span> Jogszabálynak a módosított, illetve a hatályukat vesztett rendelkezéseivel egységes szerkezetbe foglalt szövege (a továbbiakban: egységes szerkezetű szöveg) a Magyar Közlönyben nem tehető közzé.</p></div><!--i-->
+<span class="jhId" id="SZ25A"></span><div id="sc2010-130-00-00-1203" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ25A@BE1"></span><div id="sc2010-130-00-00-1204" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">25/A. §<sup class="fnSup" data-note-id="fnr_1101">59</sup> </span> (1)</span><sup class="fnSup" data-note-id="fnr_1458">60</sup>  A Magyar Közlöny kiadása során a Magyar Közlöny felelős szerkesztője az elektronikus dokumentumot minősített elektronikus aláírásával és olyan szolgáltató által kiadott időbélyegzővel látja el, amely e szolgáltatást minősített szolgáltatóként nyújtja. A Magyar Közlöny egyes lapszámain a megjelenés dátumát fel kell tüntetni, amely nem lehet korábbi, mint az időbélyegzőben szereplő naptári nap.</p></div><!--n-->
+<span class="jhId" id="SZ25A@BE2"></span><div id="sc2010-130-00-00-1207" class="bekezdesNyito"><p><span class="jel"> (2)</span><sup class="fnSup" data-note-id="fnr_1411">61</sup>  A Magyar Közlöny felelős szerkesztőjét és a helyettesítésére jogosult személyt az igazságügyért felelős miniszter normatív utasításban jelöli ki.</p></div><!--n-->
+<span class="jhId" id="SZ25A@BE3"></span><div id="sc2010-130-00-00-1210" class="bekezdesNyito"><p><span class="jel"> (3)</span> Az <a class="link" data-jhid="SZ25A@BE1" data-type="belso">(1) bekezdés</a>ben meghatározott elektronikus aláírás ellenőrzéséhez a Magyar Közlöny felelős szerkesztője és a helyettesítésére jogosult személy aláírásaihoz tartozó nyilvános kulcsok a kormányzati portálnak a Magyar Közlöny közzétételére szolgáló oldalán érhetőek el.</p></div><!--n-->
+<span class="jhId" id="SZ25A@BE4"></span><div id="sc2010-130-00-00-1213" class="bekezdesNyito"><p><span class="jel"> (4)</span> A Magyar Közlöny közzétett számai a kormányzati portálról nem távolíthatóak el, azok archiválására az elektronikus archiválásról szóló jogszabály rendelkezéseit kell alkalmazni.</p></div><!--n-->
+<span class="jhId" id="SZ25A@BE5"></span><div id="sc2010-130-00-00-1216" class="bekezdesNyito"><p><span class="jel"> (5)</span><sup class="fnSup" data-note-id="fnr_1684">62</sup>  A Magyar Közlöny az igazságügyért felelős miniszter rendeletében meghatározottak szerint terjeszthető. Az igazságügyért felelős miniszter rendeletében meghatározottak szerint kérelemre a Magyar Közlönyről vagy annak egy részéről papíralapú, illetve digitális oldalhű másolat készíthető, a másolat készítését az igazságügyért felelős miniszter rendelete igazgatási szolgáltatási díj megfizetéséhez kötheti.</p></div><!--n-->
+<span class="jhId" id="SZ25A@BE6"></span><div id="sc2010-130-00-00-1219" class="bekezdesNyito"><p><span class="jel"> (6)</span><sup class="fnSup" data-note-id="fnr_1685">63</sup></p></div><!--n-->
+<span class="jhId" id="SZ25A@BE7"></span><div id="sc2010-130-00-00-1222" class="bekezdesNyito"><p><span class="jel"> (7)</span><sup class="fnSup" data-note-id="fnr_1686">64</sup></p></div><!--i-->
+<!--as--><span class="jhId" id="AC12"></span><div id="sc2010-130-00-00-1637" class="alcim"><p><span class="jel"> 12.</span> <sup class="fnSup" data-note-id="fnr_1459">65</sup><b> A jogszabályok kihirdetése és a közjogi szervezetszabályozó eszközök közzététele</b></p></div><!--ae--><!--i-->
+<span class="jhId" id="SZ26"></span><div id="sc2010-130-00-00-416" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ26@BE1"></span><div id="sc2010-130-00-00-417" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">26. §</span> (1)</span> A jogszabályokat az önkormányzati rendelet kivételével a Magyar Közlönyben kell kihirdetni.</p></div><!--n-->
+<span class="jhId" id="SZ26@BE2"></span><div id="sc2010-130-00-00-420" class="bekezdesNyito"><p><span class="jel"> (2)</span><sup class="fnSup" data-note-id="fnr_1700">66</sup>  A minősített adatot nem tartalmazó közjogi szervezetszabályozó eszközt – a fővárosi és megyei kormányhivatal vezetőjének normatív utasítása, a helyi önkormányzat képviselő-testületének és a nemzetiségi önkormányzat képviselő-testületének normatív határozata, valamint a polgármester és a jegyző normatív utasítása kivételével – a Magyar Közlönyben közzé kell tenni.</p></div><!--n-->
+<span class="jhId" id="SZ26@BE3"></span><div id="sc2010-130-00-00-423" class="bekezdesNyito"><p><span class="jel"> (3)</span> A Kormány rendeletét – a Kormány döntését követően haladéktalanul – a miniszterelnök írja alá, akit e tekintetben az általa rendeletben erre kijelölt miniszterelnök-helyettes helyettesíthet.</p></div><!--n-->
+<span class="jhId" id="SZ26@BE4"></span><div id="sc2010-130-00-00-426" class="bekezdesNyito"><p><span class="jel"> (4)</span> A Kormány tagja rendelet kiadásában (aláírásában) nem helyettesíthető.</p></div><!--n-->
+<span class="jhId" id="SZ26@BE5"></span><div id="sc2010-130-00-00-429" class="bekezdesNyito"><p><span class="jel"> (5)</span><sup class="fnSup" data-note-id="fnr_1412">67</sup>  A köztársasági elnök által aláírt törvénynek, a Magyar Nemzeti Bank elnöke rendeletének, az önálló szabályozó szerv vezetője rendeletének és a <a class="link" data-jhid="SZ26@BE3" data-type="belso">(3)–(4) bekezdés</a> szerint aláírt rendeletnek a Magyar Közlönyben való kihirdetéséről – a kézhezvételt követően haladéktalanul – az igazságügyért felelős miniszter gondoskodik.</p></div><!--n-->
+<span class="jhId" id="SZ26@BE6"></span><div id="sc2010-130-00-00-432" class="bekezdesNyito"><p><span class="jel"> (6)</span><sup class="fnSup" data-note-id="fnr_1701">68</sup>  A fővárosi és megyei kormányhivatal vezetőjének normatív utasítása, a helyi önkormányzat képviselő-testületének és a nemzetiségi önkormányzat képviselő-testületének normatív határozata, valamint a polgármester és a jegyző normatív utasítása kivételével a közjogi szervezetszabályozó eszköz közzétételéről – az arra jogosult általi aláírását követően – az igazságügyért felelős miniszter a kézhezvételt követően haladéktalanul gondoskodik.</p></div><!--n-->
+<span class="jhId" id="SZ26@BE7"></span><div id="sc2010-130-00-00-435" class="bekezdesNyito"><p><span class="jel"> (7)</span><sup class="fnSup" data-note-id="fnr_1105">69</sup></p></div><!--i-->
+<!--as--><span class="jhId" id="AC13"></span><div id="sc2010-130-00-00-439" class="alcim"><p class="mhk-C6"><span class="jel"> 13.</span> <b>A jogszabályok megjelölése a kihirdetés során</b></p></div><!--ae--><!--i-->
+<span class="jhId" id="SZ27"></span><div id="sc2010-130-00-00-441" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ27@BE1"></span><div id="sc2010-130-00-00-442" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">27. §</span> (1)</span> A törvény megjelölése annak kihirdetése során magában foglalja a törvény kihirdetésének évét, sorszámát, a törvény elnevezést és a törvény címét.</p></div><!--n-->
+<span class="jhId" id="SZ27@BE2"></span><div id="sc2010-130-00-00-445" class="bekezdesNyito"><p><span class="jel"> (2)</span> Törvény kivételével a jogszabály megjelölése annak kihirdetése során magában foglalja a jogszabály megalkotójának megjelölését, a sorszámát, a kihirdetésének napját, a jogszabály elnevezését és címét.</p></div><!--n-->
+<span class="jhId" id="SZ27@BE3"></span><div id="sc2010-130-00-00-1079" class="bekezdesNyito"><p><span class="jel"> (3)</span><sup class="fnSup" data-note-id="fnr_1106">70</sup></p></div><!--i-->
+<!--as--><span class="jhId" id="AC14"></span><div id="sc2010-130-00-00-449" class="alcim"><p class="mhk-C6"><span class="jel"> 14.</span> <b>Helyesbítés</b></p></div><!--ae--><!--i-->
+<span class="jhId" id="SZ28"></span><div id="sc2010-130-00-00-451" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ28@BE1"></span><div id="sc2010-130-00-00-452" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">28. §</span> (1)</span> Ha a jogszabály Magyar Közlönyben megjelent szövege eltér a jogszabály aláírt szövegétől, a jogszabály aláírója – törvény esetén a köztársasági elnök vagy az Országgyűlés elnöke – a jogszabály hatálybalépését megelőzően, de legkésőbb a kihirdetést követő hatodik munkanapig kezdeményezi az eltérés helyesbítését (a továbbiakban: helyesbítés).</p></div><!--n-->
+<span class="jhId" id="SZ28@BE1A"></span><div id="sc2010-130-00-00-1225" class="bekezdesNyito"><p><span class="jel"> (1a)</span><sup class="fnSup" data-note-id="fnr_1107">71</sup>  A köztársasági elnöknek az <a class="link" data-jhid="SZ28@BE1" data-type="belso">(1) bekezdés</a>sel a hatáskörébe utalt döntéséhez ellenjegyzés nem szükséges.</p></div><!--n-->
+<span class="jhId" id="SZ28@BE2"></span><div id="sc2010-130-00-00-455" class="bekezdesNyito"><p><span class="jel"> (2)</span><sup class="fnSup" data-note-id="fnr_1414">72</sup>  A helyesbítésre a jogszabály hatálybalépését megelőzően, de legkésőbb a kihirdetést követő tizedik munkanapon kerülhet sor, ha az <a class="link" data-jhid="SZ28@BE1" data-type="belso">(1) bekezdés</a> szerinti eltérést az igazságügyért felelős miniszter megállapítja.</p></div><!--n-->
+<span class="jhId" id="SZ28@BE3"></span><div id="sc2010-130-00-00-458" class="bekezdesNyito"><p><span class="jel"> (3)</span><sup class="fnSup" data-note-id="fnr_1415">73</sup>  A helyesbítést a Magyar Közlönyben kell közzétenni. A közzétételről az igazságügyért felelős miniszter a kezdeményezést követően haladéktalanul gondoskodik.</p></div><!--i-->
+<!--as--><span class="jhId" id="AC14A"></span><div id="sc2010-130-00-00-1640" class="alcim"><p><span class="jel"> 14/A.</span> <sup class="fnSup" data-note-id="fnr_1460">74</sup><b> Egyes más jogi aktusok és az indokolások nyilvánossága</b></p></div><!--ae--><!--i-->
+<span class="jhId" id="SZ28A"></span><div id="sc2010-130-00-00-1231" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ28A@BE0"></span><div id="sc2010-130-00-00-1232" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">28/A. §</span></span> A Magyar Közlöny a <a class="link" data-jhid="SZ26@BE1" data-type="belso">26. § (1) bekezdés</a>ében foglaltak mellett tartalmazza</p></div><span class="jhId" id="SZ28A@BE0@POA"></span><div id="sc2010-130-00-00-1235" class="betusPontNyito"><p><span class="jel"> a)</span><sup class="fnSup" data-note-id="fnr_1401">75</sup>  az Alkotmánybíróság azon határozatait és végzéseit, amelyeknek a Magyar Közlönyben való közzétételét törvény vagy az Alkotmánybíróság elrendelte, valamint az Alkotmánybíróság teljes ülési állásfoglalásait,</p></div><span class="jhId" id="SZ28A@BE0@POB"></span><div id="sc2010-130-00-00-1238" class="betusPontNyito"><p><span class="jel"> b)</span> a jogegységi határozatokat, valamint a Kúria azon határozatait, amelyeknek a Magyar Közlönyben való közzétételét törvény felhatalmazása alapján a Kúria elrendelte,</p></div><span class="jhId" id="SZ28A@BE0@POC"></span><div id="sc2010-130-00-00-1241" class="betusPontNyito"><p><span class="jel"> c)</span><sup class="fnSup" data-note-id="fnr_1406">76</sup></p></div><span class="jhId" id="SZ28A@BE0@POD"></span><div id="sc2010-130-00-00-1244" class="betusPontNyito"><p><span class="jel"> d)</span><sup class="fnSup" data-note-id="fnr_1407">77</sup>  a minősített adatot tartalmazó, valamint az érintetteknek közvetlenül megküldött határozatok kivételével az Országgyűlés, a köztársasági elnök, a Kormány, a miniszterelnök és a Nemzeti Választási Bizottság nem normatív határozatait,</p></div><span class="jhId" id="SZ28A@BE0@POE"></span><div id="sc2010-130-00-00-1247" class="betusPontNyito"><p><span class="jel"> e)</span><sup class="fnSup" data-note-id="fnr_1461">78</sup>  a Kormány tagjainak azon nem normatív határozatait, amelyeknek hivatalos lapban való közzétételét jogszabály elrendeli, és</p></div><span class="jhId" id="SZ28A@BE0@POF"></span><div id="sc2010-130-00-00-1250" class="betusPontNyito"><p><span class="jel"> f)</span><sup class="fnSup" data-note-id="fnr_1810">79</sup>  az Országgyűlés, a Kormány és más testületi központi államigazgatási szerv, az Alkotmánybíróság és a Költségvetési Tanács minősített adatot nem tartalmazó normatív határozatait.</p></div><!--i-->
+<span class="jhId" id="SZ28B"></span><div id="sc2010-130-00-00-1253" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ28B@BE1"></span><div id="sc2010-130-00-00-1254" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">28/B. §</span> (1)</span><sup class="fnSup" data-note-id="fnr_1462">80</sup>  A Magyar Közlöny mellékletét képező Hivatalos Értesítő tartalmazza</p></div><span class="jhId" id="SZ28B@BE1@POA"></span><div id="sc2010-130-00-00-1257" class="betusPontNyito"><p><span class="jel"> a)</span><sup class="fnSup" data-note-id="fnr_1872">81</sup>  a <a class="link" data-jhid="SZ23@BE4@POA" data-type="belso">23. § (4) bekezdés a)–i) pont</a>jában és <a class="link" data-jhid="SZ23@BE5" data-type="belso">(5) bekezdés</a>ében megjelölt személyek minősített adatot nem tartalmazó normatív utasításait,</p></div><span class="jhId" id="SZ28B@BE1@POB"></span><div id="sc2010-130-00-00-1260" class="betusPontNyito"><p><span class="jel"> b)</span> azokat a közleményeket, amelyeknek a Magyar Közlönyben, illetve más hivatalos lapban való közzétételét jogszabály elrendeli vagy a közzététel kezdeményezésére jogszabály által feljogosított személy kezdeményezi, és</p></div><span class="jhId" id="SZ28B@BE1@POC"></span><div id="sc2010-130-00-00-1263" class="betusPontNyito"><p><span class="jel"> c)</span> azokat a hirdetményeket, amelyek a Magyar Közlöny hivatalos jellegéhez igazodnak és erre tekintettel azok Magyar Közlönyben való közzétételére a Magyar Közlöny felelős szerkesztője engedélyt adott.</p></div><!--n-->
+<span class="jhId" id="SZ28B@BE2"></span><div id="sc2010-130-00-00-1266" class="bekezdesNyito"><p><span class="jel"> (2)</span> Az <a class="link" data-jhid="SZ28B@BE1" data-type="belso">(1) bekezdés</a>t a Közbeszerzési Értesítőben, a Cégközlönyben és a Szellemi Tulajdon Nemzeti Hivatala hivatalos lapjában közzétenni rendelt közleményekre nem kell alkalmazni.</p></div><!--n-->
+<span class="jhId" id="SZ28B@BE3"></span><div id="sc2010-130-00-00-1269" class="bekezdesNyito"><p><span class="jel"> (3)</span> Törvény által elrendelt közzététel kivételével az <a class="link" data-jhid="SZ28B@BE1@POB" data-type="belso">(1) bekezdés b)</a> és <a class="link" data-jhid="SZ28B@BE1@POC" data-type="belso">c) pont</a>jában meghatározott közlemények és hirdetmények Magyar Közlönyben történő közzétételéért közzétételi díjat kell fizetni. A közzétételi díj mértékének meghatározása során az <a class="link" data-jhid="SZ28B@BE1@POB" data-type="belso">(1) bekezdés b) pont</a>jában foglaltak tekintetében figyelembe kell venni a közzétételt előíró jogszabály szabályozási szintjét és a közzététel gyakoriságát. A közzétételi díj mértéke az <a class="link" data-jhid="SZ28B@BE1@POC" data-type="belso">(1) bekezdés c) pont</a>jában foglaltak tekintetében nem lehet alacsonyabb az <a class="link" data-jhid="SZ28B@BE1@POB" data-type="belso">(1) bekezdés b) pont</a>jában foglaltak tekintetében meghatározott legalacsonyabb összegnél.</p></div><!--n-->
+<span class="jhId" id="SZ28B@BE4"></span><div id="sc2010-130-00-00-1642" class="bekezdesNyito"><p><span class="jel"> (4)</span><sup class="fnSup" data-note-id="fnr_1463">82</sup>  A Magyar Közlöny mellékletét képező Indokolások Tára az igazságügyért felelős miniszter rendeletében meghatározott körben és módon tartalmazza a jogszabályok tervezetéhez tartozó indokolásokat.</p></div><!--i-->
+<span class="jhId" id="SZ28C"></span><div id="sc2010-130-00-00-1272" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ28C@BE1"></span><div id="sc2010-130-00-00-1273" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">28/C. §</span> (1)</span><sup class="fnSup" data-note-id="fnr_1680">83</sup>  Az e törvényben nem említett hivatalos lapokat a Kormány tagja az erre kijelölt honlapon, az önálló szabályozó szerv, az autonóm államigazgatási szerv és a kormányzati főhivatal a honlapján történő közzététellel adja ki.</p></div><!--n-->
+<span class="jhId" id="SZ28C@BE2"></span><div id="sc2010-130-00-00-1276" class="bekezdesNyito"><p><span class="jel"> (2)</span> Az <a class="link" data-jhid="SZ28C@BE1" data-type="belso">(1) bekezdés</a> szerinti hivatalos lapban jogszabály, közjogi szervezetszabályozó eszköz és olyan közlemény tehető közzé,</p></div><span class="jhId" id="SZ28C@BE2@POA"></span><div id="sc2010-130-00-00-1279" class="betusPontNyito"><p><span class="jel"> a)</span> amely megjelent a Magyar Közlönyben,</p></div><span class="jhId" id="SZ28C@BE2@POB"></span><div id="sc2010-130-00-00-1282" class="betusPontNyito"><p><span class="jel"> b)</span> amelynek az <a class="link" data-jhid="SZ28C@BE1" data-type="belso">(1) bekezdés</a>ben meghatározott hivatalos lapban történő megjelenését jogszabály elrendeli, vagy</p></div><span class="jhId" id="SZ28C@BE2@POC"></span><div id="sc2010-130-00-00-1285" class="betusPontNyito"><p><span class="jel"> c)</span><sup class="fnSup" data-note-id="fnr_1681">84</sup>  amely a miniszter által vezetett minisztérium, a miniszter irányítása vagy felügyelete alá tartozó központi államigazgatási szerv, az önálló szabályozó szerv, az autonóm államigazgatási szerv, illetve a kormányzati főhivatal munkája szempontjából fontos.</p></div><!--n-->
+<span class="jhId" id="SZ28C@BE3"></span><div id="sc2010-130-00-00-1288" class="bekezdesNyito"><p><span class="jel"> (3)</span> A központi államigazgatási szerv az <a class="link" data-jhid="SZ28C@BE1" data-type="belso">(1) bekezdés</a> alapján több hivatalos lapot is kiadhat, ha azt ágazati jellege indokolja.</p></div><!--n-->
+<span class="jhId" id="SZ28C@BE4"></span><div id="sc2010-130-00-00-1291" class="bekezdesNyito"><p><span class="jel"> (4)</span> Az <a class="link" data-jhid="SZ28C@BE1" data-type="belso">(1) bekezdés</a> szerinti hivatalos lap oldalhű másolata nyomtatott formában akkor terjeszthető, ha a tárgyévet megelőző év június 30-án a hivatalos lap az államháztartás központi alrendszerébe tartozó költségvetési szerveken kívüli előfizetőinek száma a jogszabályban meghatározott mértéket meghaladja.</p></div><!--n-->
+<span class="jhId" id="SZ28C@BE5"></span><div id="sc2010-130-00-00-1294" class="bekezdesNyito"><p><span class="jel"> (5)</span> Az <a class="link" data-jhid="SZ28C@BE1" data-type="belso">(1) bekezdés</a> szerint kiadott hivatalos lap az azt kiadó szerv honlapjáról nem távolítható el. A szerv megszűnése esetén a közzététel kötelezettsége a szerv jogutódját terheli.</p></div><!--i-->
+<span class="jhId" id="SZ28D"></span><div id="sc2010-130-00-00-1812" class="szakasz"><p class=" mt"><span class="szakasz-jel">28/D. §<sup class="fnSup" data-note-id="fnr_1811">85</sup> </span></p></div><!--i-->
+<!--as--><span class="jhId" id="AC15"></span><div id="sc2010-130-00-00-462" class="alcim"><p class="mhk-C6"><span class="jel"> 15.</span> <b>Nemzeti Jogszabálytár</b></p></div><!--ae--><!--i-->
+<span class="jhId" id="SZ29"></span><div id="sc2010-130-00-00-464" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ29@BE1"></span><div id="sc2010-130-00-00-1297" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">29. §<sup class="fnSup" data-note-id="fnr_1696">86</sup> </span> (1)</span> A Nemzeti Jogszabálytár kormányrendeletben meghatározott tartalommal és honlapon, elektronikus közszolgáltatásként működő, bárki számára térítésmentesen hozzáférhető elektronikus jogszabálygyűjtemény, amely – kormányrendeletben meghatározottak szerint – felületet biztosít különösen <a class="link" href="jogszabaly/2011-4301-02-00" data-type="kulso">az Alaptörvény</a>, annak módosításai és a jogszabályok kihirdetett szövegének, a Magyar Közlönyben közzétett közjogi szervezetszabályozó eszközök szövegének, valamint az időállapotok szerint egységes szerkezetű szövegek közzétételére.</p></div><!--n-->
+<span class="jhId" id="SZ29@BE2"></span><div id="sc2010-130-00-00-1300" class="bekezdesNyito"><p><span class="jel"> (2)</span> A Nemzeti Jogszabálytárban való közzétételről <a class="link" href="jogszabaly/2011-4301-02-00" data-type="kulso">az Alaptörvény</a>, annak módosításai, jogszabályok és a Magyar Közlönyben közzétett közjogi szervezetszabályozó eszközök esetében az igazságügyért felelős miniszter, önkormányzati rendelet esetében a jegyző gondoskodik.</p></div><!--i-->
+<!--as--><span class="jhId" id="AC15A"></span><div id="sc2010-130-00-00-1358" class="alcim"><p><span class="jel"> 15/A.</span><sup class="fnSup" data-note-id="fnr_1355">87</sup></p></div><!--ae--><!--i-->
+<span class="jhId" id="SZ29A"></span><div id="sc2010-130-00-00-1306" class="szakasz"><p class=" mt"><span class="szakasz-jel">29/A. §</span></p></div><!--i-->
+<span class="jhId" id="FEVIII"></span><div id="sc2010-130-00-00-468" class="fejezet">VIII. Fejezet</div><!--i-->
+<div id="sc2010-130-00-00-469" class="fejezetCim"><p class="mhk-C3"><i>ZÁRÓ RENDELKEZÉSEK</i></p></div><!--i-->
+<!--as--><span class="jhId" id="AC16"></span><div id="sc2010-130-00-00-473" class="alcim"><p class="mhk-C6"><span class="jel"> 16.</span> <b>Felhatalmazó rendelkezések</b></p></div><!--ae--><!--i-->
+<span class="jhId" id="SZ30"></span><div id="sc2010-130-00-00-475" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ30@BE1"></span><div id="sc2010-130-00-00-476" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">30. §</span> (1)</span> Felhatalmazást kap a Kormány, hogy rendeletben határozza meg</p></div><span class="jhId" id="SZ30@BE1@POA"></span><div id="sc2010-130-00-00-479" class="betusPontNyito"><p><span class="jel"> a)</span> az előzetes bejelentési eljárás rendjét,</p></div><span class="jhId" id="SZ30@BE1@POB"></span><div id="sc2010-130-00-00-482" class="betusPontNyito"><p class="UJ"><span class="jel"> b)</span> az Európai Unió jogának való megfelelés érdekében szükséges jogszabály-előkészítési feladatok teljesítésének részletes szabályait, valamint<sup class="fnSup" data-note-id="fnr_1036">88</sup></p></div><span class="jhId" id="SZ30@BE1@POC"></span><div id="sc2010-130-00-00-485" class="betusPontNyito"><p><span class="jel"> c)</span><sup class="fnSup" data-note-id="fnr_1465">89</sup>  a Nemzeti Jogszabálytár tartalmát és működtetésének részletes szabályait,<sup class="fnSup" data-note-id="fnr_1112">90</sup></p></div><span class="jhId" id="SZ30@BE1@POD"></span><div id="sc2010-130-00-00-1337" class="betusPontNyito"><p><span class="jel"> d)</span><sup class="fnSup" data-note-id="fnr_1687">91</sup></p></div><!--n-->
+<span class="jhId" id="SZ30@BE2"></span><div id="sc2010-130-00-00-488" class="bekezdesNyito"><p class="UJ"><span class="jel"> (2)</span> Felhatalmazást kap az igazságügyért felelős miniszter, hogy rendeletben határozza meg a jogszabályszerkesztés részletes szabályait.<sup class="fnSup" data-note-id="fnr_1037">92</sup></p></div><!--n-->
+<span class="jhId" id="SZ30@BE3"></span><div id="sc2010-130-00-00-491" class="bekezdesNyito"><p><span class="jel"> (3)</span><sup class="fnSup" data-note-id="fnr_1420">93</sup>  Felhatalmazást kap az igazságügyért felelős miniszter, hogy rendeletben határozza meg az előzetes és az utólagos hatásvizsgálat részletes szabályait.<sup class="fnSup" data-note-id="fnr_1421">94</sup></p></div><!--n-->
+<span class="jhId" id="SZ30@BE4"></span><div id="sc2010-130-00-00-494" class="bekezdesNyito"><p><span class="jel"> (4)</span><sup class="fnSup" data-note-id="fnr_1466">95</sup>  Felhatalmazást kap az igazságügyért felelős miniszter, hogy rendeletben határozza meg</p></div><span class="jhId" id="SZ30@BE4@POA"></span><div id="sc2010-130-00-00-497" class="betusPontNyito"><p><span class="jel"> a)</span><sup class="fnSup" data-note-id="fnr_1688">96</sup>  a Magyar Közlöny kiadásának, terjesztésének, valamint a Magyar Közlönyről vagy annak egy részéről papíralapú, illetve digitális oldalhű másolat készítésének,<sup class="fnSup" data-note-id="fnr_1467">97</sup></p></div><span class="jhId" id="SZ30@BE4@POB"></span><div id="sc2010-130-00-00-500" class="betusPontNyito"><p><span class="jel"> b)</span> a kihirdetés során a jogszabályok, a közzététel során a közjogi szervezetszabályozó eszközök és egyes más jogi aktusok megjelölésének,<sup class="fnSup" data-note-id="fnr_1468">98</sup></p></div><span class="jhId" id="SZ30@BE4@POC"></span><div id="sc2010-130-00-00-1645" class="betusPontNyito"><p><span class="jel"> c)</span> a jogszabály tervezetéhez tartozó indokolások közzétételének<sup class="fnSup" data-note-id="fnr_1469">99</sup></p></div><div id="sc2010-130-00-00-1648" class="bekezdesZaro"><p>részletes szabályait.</p></div><!--n-->
+<span class="jhId" id="SZ30@BE5"></span><div id="sc2010-130-00-00-1340" class="bekezdesNyito"><p><span class="jel"> (5)</span><sup class="fnSup" data-note-id="fnr_1689">100</sup>  Felhatalmazást kap az igazságügyért felelős miniszter, hogy</p></div><span class="jhId" id="SZ30@BE5@POA"></span><div id="sc2010-130-00-00-1343" class="betusPontNyito"><p><span class="jel"> a)</span> rendeletben határozza meg az előfizetők <a class="link" data-jhid="SZ28C@BE4" data-type="belso">28/C. § (4) bekezdés</a>e szerinti számát,</p></div><span class="jhId" id="SZ30@BE5@POB"></span><div id="sc2010-130-00-00-1346" class="betusPontNyito"><p><span class="jel"> b)</span> az adópolitikáért felelős miniszter egyetértésével kiadott rendeletben határozhassa meg a Magyar Közlönyről vagy annak egy részéről papíralapú, illetve digitális oldalhű másolat készítésének igazgatási szolgáltatási díját, és</p></div><span class="jhId" id="SZ30@BE5@POC"></span><div id="sc2010-130-00-00-1349" class="betusPontNyito"><p><span class="jel"> c)</span> rendeletben határozza meg a <a class="link" data-jhid="SZ28B@BE1@POB" data-type="belso">28/B. § (1) bekezdés b)</a> és <a class="link" data-jhid="SZ28B@BE1@POC" data-type="belso">c) pont</a>ja szerinti közlemények és hirdetmények közzétételéért fizetendő közzétételi díj mértékét.</p></div><!--i-->
+<span class="jhId" id="SZ31"></span><div id="sc2010-130-00-00-504" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ31@BE1"></span><div id="sc2010-130-00-00-505" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">31. §</span> (1)</span><sup class="fnSup" data-note-id="fnr_1470">101</sup>  Felhatalmazást kap a Kormány, hogy rendeletben hatályon kívül helyezze</p></div><span class="jhId" id="SZ31@BE1@POA"></span><div id="sc2010-130-00-00-508" class="betusPontNyito"><p><span class="jel"> a)</span> a Kormány tagjának rendeletét vagy annak rendelkezését, ha</p></div><span class="jhId" id="SZ31@BE1@POA@APAA"></span><div id="sc2010-130-00-00-1650" class="ketbetusAlPont"><p><span class="jel"> aa)</span> a törvényben adott felhatalmazás hatályát vesztette, és a tárgykör szabályozására új felhatalmazó rendelkezést nem alkottak,</p></div><span class="jhId" id="SZ31@BE1@POA@APAB"></span><div id="sc2010-130-00-00-1652" class="ketbetusAlPont"><p><span class="jel"> ab)</span> a kormányrendeletben adott felhatalmazás hatályát vesztette, és a tárgykör szabályozására új felhatalmazó rendelkezést nem alkottak, vagy</p></div><span class="jhId" id="SZ31@BE1@POA@APAC"></span><div id="sc2010-130-00-00-1654" class="ketbetusAlPont"><p><span class="jel"> ac)</span> a tárgykör szabályozására alkotott új felhatalmazó rendelkezés kormányrendelet kiadására ad felhatalmazást,</p></div><span class="jhId" id="SZ31@BE1@POB"></span><div id="sc2010-130-00-00-511" class="betusPontNyito"><p><span class="jel"> b)</span><sup class="fnSup" data-note-id="fnr_1690">102</sup>  azt a kormányrendeletet vagy annak rendelkezését, amely módosítására vagy hatályon kívül helyezésére már nincs felhatalmazása</p></div><span class="jhId" id="SZ31@BE1@POB@APBA"></span><div id="sc2010-130-00-00-1692" class="ketbetusAlPont"><p><span class="jel"> ba)</span> a felhatalmazás hatályvesztése miatt, vagy</p></div><span class="jhId" id="SZ31@BE1@POB@APBB"></span><div id="sc2010-130-00-00-1694" class="ketbetusAlPont"><p><span class="jel"> bb)</span> a tárgykör szabályozására alkotott olyan új felhatalmazó rendelkezés miatt, amely a Kormány tagja rendeletének kiadására ad felhatalmazást.</p></div><!--n-->
+<span class="jhId" id="SZ31@BE2"></span><div id="sc2010-130-00-00-515" class="bekezdesNyito"><p><span class="jel"> (2)</span><sup class="fnSup" data-note-id="fnr_1471">103</sup>  Felhatalmazást kap a Kormány tagja, hogy rendeletével hatályon kívül helyezze a feladatkörébe tartozó azon miniszteri, illetve miniszterelnöki rendeletet vagy annak rendelkezését,</p></div><span class="jhId" id="SZ31@BE2@POA"></span><div id="sc2010-130-00-00-518" class="betusPontNyito"><p><span class="jel"> a)</span> amelyet felhatalmazás nélkül alkottak meg, vagy</p></div><span class="jhId" id="SZ31@BE2@POB"></span><div id="sc2010-130-00-00-521" class="betusPontNyito"><p><span class="jel"> b)</span> amely módosítására vagy hatályon kívül helyezésére – a felhatalmazás hatályvesztése miatt – nincs felhatalmazása.</p></div><!--i-->
+<!--as--><span class="jhId" id="AC17"></span><div id="sc2010-130-00-00-525" class="alcim"><p class="mhk-C6"><span class="jel"> 17.</span> <b>Hatálybalépés</b></p></div><!--ae--><!--i-->
+<span class="jhId" id="SZ32"></span><div id="sc2010-130-00-00-527" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ32@BE1"></span><div id="sc2010-130-00-00-528" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">32. §</span> (1)</span> Ez a törvény – a <a class="link" data-jhid="SZ32@BE2" data-type="belso">(2) bekezdés</a>ben foglalt kivétellel – 2011. január 1-jén lép hatályba.</p></div><!--n-->
+<span class="jhId" id="SZ32@BE2"></span><div id="sc2010-130-00-00-531" class="bekezdesNyito"><p><span class="jel"> (2)</span> A <a class="link" data-jhid="SZ29" data-type="belso">29. §</a>, <a class="link" data-jhid="SZ47" data-type="belso">47. §</a> és a <a class="link" data-jhid="SZ48@BE2" data-type="belso">48. § (2) bekezdés</a>e 2012. január 1-jén lép hatályba.</p></div><!--i-->
+<!--as--><span class="jhId" id="AC18"></span><div id="sc2010-130-00-00-535" class="alcim"><p class="mhk-C6"><span class="jel"> 18.</span> <b>Átmeneti rendelkezések</b></p></div><!--ae--><!--i-->
+<span class="jhId" id="SZ33"></span><div id="sc2010-130-00-00-537" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ33@BE1"></span><div id="sc2010-130-00-00-538" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">33. §</span> (1)</span> E törvény <a class="link" data-jhid="FEII" data-type="belso">II–IV. Fejezet</a>ét, <a class="link" data-jhid="FEVI" data-type="belso">VI. Fejezet</a>ét, valamint <a class="link" data-jhid="SZ25" data-type="belso">25–28. §</a>-át az e törvény hatálybalépését követően kihirdetett jogszabályok és közzétett közjogi szervezetszabályozó eszközök tekintetében kell alkalmazni. A <a class="link" data-jhid="SZ12" data-type="belso">12. §</a> rendelkezéseit e törvény tekintetében is alkalmazni kell.</p></div><!--n-->
+<span class="jhId" id="SZ33@BE2"></span><div id="sc2010-130-00-00-541" class="bekezdesNyito"><p><span class="jel"> (2)</span><sup class="fnSup" data-note-id="fnr_1472">104</sup>  Az e törvény hatálybalépését megelőzően kiadott együttes rendeletek módosítására és hatályon kívül helyezésére – az <a class="link" data-jhid="SZ5@BE1" data-type="belso">5. § (1)</a> és <a class="link" data-jhid="SZ5@BE4" data-type="belso">(4) bekezdés</a>e szerint – felhatalmazással rendelkező miniszter az egyetértési jog jogosultjának egyetértésével jogosult.</p></div><!--i-->
+<span class="jhId" id="SZ34"></span><div id="sc2010-130-00-00-544" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ34@BE1"></span><div id="sc2010-130-00-00-545" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">34. §</span> (1)</span> Ahol jogszabály vagy a jogalkotásról szóló <a class="link" href="jogszabaly/1987-11-00-00" data-type="kulso">1987. évi XI. törvény</a> szerinti állami irányítás egyéb jogi eszköze az „állami irányítás egyéb jogi eszköze” kifejezést tartalmazza, – ha a jogszabály eltérően nem rendelkezik – azon közjogi szervezetszabályozó eszközt is érteni kell.</p></div><!--n-->
+<span class="jhId" id="SZ34@BE2"></span><div id="sc2010-130-00-00-548" class="bekezdesNyito"><p><span class="jel"> (2)</span> A jogalkotásról szóló <a class="link" href="jogszabaly/1987-11-00-00" data-type="kulso">1987. évi XI. törvény</a></p></div><span class="jhId" id="SZ34@BE2@POA"></span><div id="sc2010-130-00-00-551" class="betusPontNyito"><p><span class="jel"> a)</span> <a class="link" href="jogszabaly/1987-11-00-00" data-jhid="SZ46@BE1" data-type="kulso">46. § (1) bekezdés</a>e alapján meghozott határozat e törvény szerinti normatív határozatnak,</p></div><span class="jhId" id="SZ34@BE2@POB"></span><div id="sc2010-130-00-00-554" class="betusPontNyito"><p><span class="jel"> b)</span> <a class="link" href="jogszabaly/1987-11-00-00" data-jhid="SZ49@BE1" data-type="kulso">49. § (1) bekezdés</a>e alapján kiadott utasítás e törvény szerinti normatív utasításnak</p></div><div id="sc2010-130-00-00-1859" class="bekezdesZaro"><p>minősül.</p></div><!--n-->
+<span class="jhId" id="SZ34@BE3"></span><div id="sc2010-130-00-00-558" class="bekezdesNyito"><p><span class="jel"> (3)</span> Ez a törvény nem érinti a hatálybalépése előtt kiadott statisztikai közlemények hatályát. Ahol jogszabály a jogalkotásról szóló <a class="link" href="jogszabaly/1987-11-00-00" data-type="kulso">1987. évi XI. törvény</a> alapján kiadott statisztikai közleményre utal, azon a Központi Statisztikai Hivatal felett felügyeletet gyakorló miniszternek a statisztikáról szóló <a class="link" href="jogszabaly/1993-46-00-00" data-jhid="SZ26@BE4" data-type="kulso">1993. évi XLVI. törvény 26. § (4) bekezdés</a>ében kapott felhatalmazás alapján az adott tárgykörben kiadott rendeletét is érteni kell, ha a jogszabályból más nem következik.</p></div><!--i-->
+<span class="jhId" id="SZ35"></span><div id="sc2010-130-00-00-564" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ35@BE0"></span><div id="sc2010-130-00-00-1389" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">35. §<sup class="fnSup" data-note-id="fnr_1373">105</sup> </span></span> E törvénynek az egyes törvényeknek és törvényi rendelkezéseknek a jogrendszer túlszabályozottságának megszüntetése érdekében szükséges technikai deregulációjáról szóló 2012. évi LXXVI. törvénnyel megállapított <a class="link" data-jhid="SZ12@BE3" data-type="belso">12. § (3) bekezdés</a>ét a 2012. augusztus 1-jén és az azt követően kihirdetett jogszabályok és közzétett közjogi szervezetszabályozó eszközök tekintetében kell alkalmazni.</p></div><!--i-->
+<span class="jhId" id="SZ36"></span><div id="sc2010-130-00-00-578" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ36@BE0"></span><div id="sc2010-130-00-00-579" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">36. §<sup class="fnSup" data-note-id="fnr_1473">106</sup> </span></span> E törvénynek a jogalkotásról szóló <a class="link" href="jogszabaly/2010-130-00-00" data-type="kulso">2010. évi CXXX. törvény</a>nek <a class="link" href="jogszabaly/2011-4301-02-00" data-type="kulso">az Alaptörvény</a> hetedik módosításával összefüggő módosításáról szóló 2019. évi II. törvénnyel megállapított <a class="link" data-jhid="SZ8@BE2" data-type="belso">8. § (2) bekezdés</a>ét, <a class="link" data-jhid="SZ9@BE3" data-type="belso">9. § (3) bekezdés</a>ét, <a class="link" data-jhid="SZ12@BE3" data-type="belso">12. § (3) bekezdés</a>ét, <a class="link" data-jhid="SZ12A" data-type="belso">12/A. §</a>-át, <a class="link" data-jhid="SZ12B" data-type="belso">12/B. §</a>-át és <a class="link" data-jhid="SZ14" data-type="belso">14. §</a>-át a 2019. március 15-ét megelőzően hatályba lépett jogszabályok, jogszabályi rendelkezések, valamint közjogi szervezetszabályozó eszközök és ezek rendelkezései tekintetében nem kell alkalmazni.</p></div><!--i-->
+<span class="jhId" id="SZ37"></span><div id="sc2010-130-00-00-1800" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ37@BE1"></span><div id="sc2010-130-00-00-1801" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">37. §<sup class="fnSup" data-note-id="fnr_1759">107</sup> </span> (1)</span> E törvénynek a jogalkotásról szóló <a class="link" href="jogszabaly/2010-130-00-00" data-type="kulso">2010. évi CXXX. törvény</a> módosításáról szóló 2024. évi XVI. törvénnyel (a továbbiakban: Módtv.) megállapított <a class="link" data-jhid="AC6" data-type="belso">6. alcím</a>ét azon jogszabálytervezetek esetében kell alkalmazni, amelyek előkészítését 2025. január 1. napján vagy azt követően kezdték meg.</p></div><!--n-->
+<span class="jhId" id="SZ37@BE2"></span><div id="sc2010-130-00-00-1804" class="bekezdesNyito"><p><span class="jel"> (2)</span> E törvénynek a Módtv.-vel megállapított <a class="link" data-jhid="AC6" data-type="belso">6. alcím</a>ét az <a class="link" data-jhid="SZ37@BE1" data-type="belso">(1) bekezdés</a>től eltérően azon jogszabálytervezetek esetében is alkalmazni lehet, amelyek előkészítését a Módtv. hatálybalépését<sup class="fnSup" data-note-id="fnr_1760">108</sup> követően kezdték meg, azzal, hogy e törvénynek a Módtv.-vel megállapított <a class="link" data-jhid="AC6" data-type="belso">6. alcím</a>e alkalmazásának mellőzése esetén e törvénynek a Módtv. hatálybalépését megelőző napon hatályos <a class="link" data-jhid="AC6" data-type="belso">6. alcím</a>ét kell alkalmazni.</p></div><!--n-->
+<span class="jhId" id="SZ37@BE3"></span><div id="sc2010-130-00-00-1807" class="bekezdesNyito"><p><span class="jel"> (3)</span> A 2025. január 1. napját megelőzően kihirdetett azon jogszabályok, amelyek preambulumot nem tartalmaznak vagy bevezető részt tartalmaznak, preambulummal történő kiegészítés céljából nem módosíthatóak.</p></div><!--i-->
+<!--as--><span class="jhId" id="AC19"></span><div id="sc2010-130-00-00-1367" class="alcim"><p><span class="jel"> 19.</span><sup class="fnSup" data-note-id="fnr_1363">109</sup></p></div><!--ae--><!--i-->
+<span class="jhId" id="SZ38"></span><div id="sc2010-130-00-00-629" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ38@BE0"></span><div id="sc2010-130-00-00-1925" class="bekezdesNyito"><p class=" mt"><span class="jel"><span class="szakasz-jel">38. §<sup class="fnSup" data-note-id="fnr_1475">110</sup> </span></span> Az Alkotmánybíróság Határozatai mint hivatalos lapnak a <a class="link" href="jogszabaly/2026-17-04-00" data-type="kulso">Magyarország Alaptörvényének tizenhetedik módosítás</a>ával összefüggésben az Alkotmánybíróság működését érintő egyes törvények módosításáról szóló <a class="link" href="jogszabaly/2026-52-00-00" data-type="kulso">2026. évi LII. törvény</a> hatálybalépését<sup class="fnSup" data-note-id="fnr_1928">111</sup> megelőzően közzétett számainak nyilvánosságát az Alkotmánybíróság honlapján továbbra is biztosítani kell, ahonnan azok nem távolíthatóak el, és archiválásukra az elektronikus archiválásról szóló jogszabály rendelkezéseit kell alkalmazni.</p></div><!--i-->
+<span class="jhId" id="SZ39"></span><div id="sc2010-130-00-00-636" class="szakasz"><p class=" mt"><span class="szakasz-jel">39. §<sup class="fnSup" data-note-id="fnr_1476">112</sup> </span></p></div><!--i-->
+<span class="jhId" id="SZ40"></span><div id="sc2010-130-00-00-665" class="szakasz"><p class=" mt"><span class="szakasz-jel">40. §<sup class="fnSup" data-note-id="fnr_1477">113</sup> </span></p></div><!--i-->
+<span class="jhId" id="SZ41"></span><div id="sc2010-130-00-00-736" class="szakasz"><p class=" mt"><span class="szakasz-jel">41. §<sup class="fnSup" data-note-id="fnr_1478">114</sup> </span></p></div><!--i-->
+<span class="jhId" id="SZ42"></span><div id="sc2010-130-00-00-749" class="szakasz"><p class=" mt"><span class="szakasz-jel">42. §<sup class="fnSup" data-note-id="fnr_1479">115</sup> </span></p></div><!--i-->
+<span class="jhId" id="SZ43"></span><div id="sc2010-130-00-00-756" class="szakasz"><p class=" mt"><span class="szakasz-jel">43. §<sup class="fnSup" data-note-id="fnr_1480">116</sup> </span></p></div><!--i-->
+<span class="jhId" id="SZ44"></span><div id="sc2010-130-00-00-763" class="szakasz"><p class=" mt"><span class="szakasz-jel">44. §<sup class="fnSup" data-note-id="fnr_1481">117</sup> </span></p></div><!--i-->
+<span class="jhId" id="SZ45"></span><div id="sc2010-130-00-00-920" class="szakasz"><p class=" mt"><span class="szakasz-jel">45. §<sup class="fnSup" data-note-id="fnr_1482">118</sup> </span></p></div><!--i-->
+<span class="jhId" id="SZ46"></span><div id="sc2010-130-00-00-930" class="szakasz"><p class=" mt"><span class="szakasz-jel">46. §<sup class="fnSup" data-note-id="fnr_1483">119</sup> </span></p></div><!--i-->
+<!--as--><span class="jhId" id="AC20"></span><div id="sc2010-130-00-00-1370" class="alcim"><p><span class="jel"> 20.</span><sup class="fnSup" data-note-id="fnr_1364">120</sup></p></div><!--ae--><!--i-->
+<span class="jhId" id="SZ47"></span><div id="sc2010-130-00-00-943" class="szakasz"><p class=" mt"><span class="szakasz-jel">47. §<sup class="fnSup" data-note-id="fnr_1352">121</sup> </span></p></div><!--i-->
+<span class="jhId" id="SZ48"></span><div id="sc2010-130-00-00-947" class="szakasz"></div><!--n-->
+<span class="jhId" id="SZ48@BE1"></span><div id="sc2010-130-00-00-948" class="bekezdesNyito"><p class="UJ mt"><span class="jel"><span class="szakasz-jel">48. §</span> (1)</span><sup class="fnSup" data-note-id="fnr_1063">122</sup></p></div><!--n-->
+<span class="jhId" id="SZ48@BE2"></span><div id="sc2010-130-00-00-951" class="bekezdesNyito"><p><span class="jel"> (2)</span><sup class="fnSup" data-note-id="fnr_1353">123</sup></p></div><!--i-->
+<span class="jhId" id="SZ49"></span><div id="sc2010-130-00-00-954" class="szakasz"><p class=" mt"><span class="szakasz-jel">49. §<sup class="fnSup" data-note-id="fnr_1484">124</sup> </span></p></div><!--i-->
+<span class="jhId" id="SZ50"></span><div id="sc2010-130-00-00-958" class="szakasz"><p class=" mt"><span class="szakasz-jel">50. §<sup class="fnSup" data-note-id="fnr_1485">125</sup> </span></p></div><!--i-->
+<span class="jhId" id="SZ51"></span><div id="sc2010-130-00-00-962" class="szakasz"><p class=" mt"><span class="szakasz-jel">51. §<sup class="fnSup" data-note-id="fnr_1486">126</sup> </span></p></div><!--i-->
+<span class="jhId" id="SZ52"></span><div id="sc2010-130-00-00-966" class="szakasz"><p class=" mt"><span class="szakasz-jel">52. §<sup class="fnSup" data-note-id="fnr_1487">127</sup> </span></p></div><!--i-->
+<span class="jhId" id="SZ53"></span><div id="sc2010-130-00-00-1009" class="szakasz"><p class=" mt"><span class="szakasz-jel">53. §<sup class="fnSup" data-note-id="fnr_1488">128</sup> </span></p></div>
+                                                        <div class="footnote" id="fnr_1"><sup>1</sup><p>A törvényt az Országgyűlés a 2010. november 22-i ülésnapján fogadta el. A kihirdetés napja: 2010. november 29.</p></div><div class="footnote" id="fnr_1082"><sup>2</sup><p>A preambulum a <a class="link" href="jogszabaly/2011-201-00-00" data-jhid="SZ377@POA" data-type="kulso">2011: CCI. törvény 377. § a) pontja</a> szerint módosított szöveg.</p></div><div class="footnote" id="fnr_1083"><sup>3</sup><p>Az 1. § (2) bekezdés b) pontja a <a class="link" href="jogszabaly/2011-201-00-00" data-jhid="SZ375@BE1" data-type="kulso">2011: CCI. törvény 375. § (1) bekezdésével</a> megállapított szöveg.</p></div><div class="footnote" id="fnr_1084"><sup>4</sup><p>Az 1. § (3) bekezdése a <a class="link" href="jogszabaly/2011-201-00-00" data-jhid="SZ375@BE2" data-type="kulso">2011: CCI. törvény 375. § (2) bekezdésével</a> megállapított szöveg.</p></div><div class="footnote" id="fnr_1423"><sup>5</sup><p>Az 1. § (4) bekezdése a <a class="link" href="jogszabaly/2019-2-00-00" data-jhid="SZ19@POA" data-type="kulso">2019: II. törvény 19. § a) pontja</a> szerint módosított szöveg.</p></div><div class="footnote" id="fnr_1085"><sup>6</sup><p>A 2. § (4) bekezdés a) pontja a <a class="link" href="jogszabaly/2011-201-00-00" data-jhid="SZ377@POB" data-type="kulso">2011: CCI. törvény 377. § b) pontja</a> szerint módosított szöveg.</p></div><div class="footnote" id="fnr_1424"><sup>7</sup><p>A 2. § (5) bekezdését a <a class="link" href="jogszabaly/2019-2-00-00" data-jhid="SZ1" data-type="kulso">2019: II. törvény 1. §-a</a> iktatta be.</p></div><div class="footnote" id="fnr_1086"><sup>8</sup><p>A 3. § a <a class="link" href="jogszabaly/2011-201-00-00" data-jhid="SZ377@POC" data-type="kulso">2011: CCI. törvény 377. § c) pontja</a> szerint módosított szöveg.</p></div><div class="footnote" id="fnr_1425"><sup>9</sup><p>Az 5. § a <a class="link" href="jogszabaly/2019-2-00-00" data-jhid="SZ2" data-type="kulso">2019: II. törvény 2. §-ával</a> megállapított szöveg.</p></div><div class="footnote" id="fnr_1089"><sup>10</sup><p>A 6. § a <a class="link" href="jogszabaly/2011-201-00-00" data-jhid="SZ375@BE4" data-type="kulso">2011: CCI. törvény 375. § (4) bekezdésével</a> megállapított szöveg.</p></div><div class="footnote" id="fnr_1426"><sup>11</sup><p>A 6. § (1) bekezdése a <a class="link" href="jogszabaly/2019-2-00-00" data-jhid="SZ19@POB" data-type="kulso">2019: II. törvény 19. § b) és c) pontja</a> szerint módosított szöveg.</p></div><div class="footnote" id="fnr_1427"><sup>12</sup><p>A 6. § (2) bekezdés b) pontja a <a class="link" href="jogszabaly/2019-2-00-00" data-jhid="SZ19@POB" data-type="kulso">2019: II. törvény 19. § b) és c) pontja</a> szerint módosított szöveg.</p></div><div class="footnote" id="fnr_1428"><sup>13</sup><p>A 6. § (3) bekezdése a <a class="link" href="jogszabaly/2019-2-00-00" data-jhid="SZ19@POB" data-type="kulso">2019: II. törvény 19. § b) és c) pontja</a> szerint módosított szöveg.</p></div><div class="footnote" id="fnr_1429"><sup>14</sup><p>A 8. § (1) bekezdése a <a class="link" href="jogszabaly/2019-2-00-00" data-jhid="SZ19@POD" data-type="kulso">2019: II. törvény 19. § d) pontja</a> szerint módosított szöveg.</p></div><div class="footnote" id="fnr_1430"><sup>15</sup><p>A 8. § (2) bekezdése a <a class="link" href="jogszabaly/2019-2-00-00" data-jhid="SZ3" data-type="kulso">2019: II. törvény 3. §-ával</a> megállapított szöveg.</p></div><div class="footnote" id="fnr_1755"><sup>16</sup><p>A 8. § (2) bekezdés b) pontja a <a class="link" href="jogszabaly/2024-16-00-00" data-jhid="SZ4@POA" data-type="kulso">2024. évi XVI. törvény 4. § a) pont</a>ja szerint módosított szöveg.</p></div><div class="footnote" id="fnr_1431"><sup>17</sup><p>A 9. § (2) bekezdése a <a class="link" href="jogszabaly/2019-2-00-00" data-jhid="SZ19@POD" data-type="kulso">2019: II. törvény 19. § d) pontja</a> szerint módosított szöveg.</p></div><div class="footnote" id="fnr_1432"><sup>18</sup><p>A 9. § (3) bekezdését a <a class="link" href="jogszabaly/2019-2-00-00" data-jhid="SZ4" data-type="kulso">2019: II. törvény 4. §-a</a> iktatta be.</p></div><div class="footnote" id="fnr_1433"><sup>19</sup><p>A 10. § (1) bekezdés c) pontja a <a class="link" href="jogszabaly/2019-2-00-00" data-jhid="SZ5" data-type="kulso">2019: II. törvény 5. §-ával</a> megállapított szöveg.</p></div><div class="footnote" id="fnr_1090"><sup>20</sup><p>A 10. § (1) bekezdés d) pontja a <a class="link" href="jogszabaly/2011-201-00-00" data-jhid="SZ375@BE5" data-type="kulso">2011: CCI. törvény 375. § (5) bekezdésével</a> megállapított szöveg.</p></div><div class="footnote" id="fnr_1434"><sup>21</sup><p>A 10. § (2) bekezdése a <a class="link" href="jogszabaly/2019-2-00-00" data-jhid="SZ19@POD" data-type="kulso">2019: II. törvény 19. § d) pontja</a> szerint módosított szöveg.</p></div><div class="footnote" id="fnr_1435"><sup>22</sup><p>A 10. § (3) bekezdése a <a class="link" href="jogszabaly/2019-2-00-00" data-jhid="SZ6" data-type="kulso">2019: II. törvény 6. §-ával</a> megállapított szöveg.</p></div><div class="footnote" id="fnr_1683"><sup>23</sup><p>A 10. § (4) bekezdése a <a class="link" href="jogszabaly/2020-165-00-00" data-jhid="SZ29" data-type="kulso">2020: CLXV. törvény 29. §-ával</a> megállapított szöveg.</p></div><div class="footnote" id="fnr_1437"><sup>24</sup><p>A 10. § (5) bekezdése a <a class="link" href="jogszabaly/2019-2-00-00" data-jhid="SZ19@POF" data-type="kulso">2019: II. törvény 19. § f) pontja</a> szerint módosított szöveg.</p></div><div class="footnote" id="fnr_1092"><sup>25</sup><p>A 10. § (8) bekezdése a <a class="link" href="jogszabaly/2011-201-00-00" data-jhid="SZ375@BE7" data-type="kulso">2011: CCI. törvény 375. § (7) bekezdésével</a> megállapított szöveg.</p></div><div class="footnote" id="fnr_1438"><sup>26</sup><p>A 12. § (3) bekezdését a <a class="link" href="jogszabaly/2012-76-00-00" data-jhid="SZ73@BE1" data-type="kulso">2012: LXXVI. törvény 73. § (1) bekezdése</a> iktatta be, szövege a <a class="link" href="jogszabaly/2019-2-00-00" data-jhid="SZ7" data-type="kulso">2019: II. törvény 7. §-ával</a> megállapított szöveg.</p></div><div class="footnote" id="fnr_1439"><sup>27</sup><p>A 12/A. §-t a <a class="link" href="jogszabaly/2019-2-00-00" data-jhid="SZ8" data-type="kulso">2019: II. törvény 8. §-a</a> iktatta be.</p></div><div class="footnote" id="fnr_1440"><sup>28</sup><p>A 12/B. §-t a <a class="link" href="jogszabaly/2019-2-00-00" data-jhid="SZ8" data-type="kulso">2019: II. törvény 8. §-a</a> iktatta be.</p></div><div class="footnote" id="fnr_1756"><sup>29</sup><p>A 12/B. § b) pontja a <a class="link" href="jogszabaly/2024-16-00-00" data-jhid="SZ4@POB" data-type="kulso">2024. évi XVI. törvény 4. § b) pont</a>ja szerint módosított szöveg.</p></div><div class="footnote" id="fnr_1441"><sup>30</sup><p>A 14. § a <a class="link" href="jogszabaly/2019-2-00-00" data-jhid="SZ9" data-type="kulso">2019: II. törvény 9. §-ával</a> megállapított szöveg.</p></div><div class="footnote" id="fnr_1442"><sup>31</sup><p>A 15/A. §-t a <a class="link" href="jogszabaly/2019-2-00-00" data-jhid="SZ10" data-type="kulso">2019: II. törvény 10. §-a</a> iktatta be.</p></div><div class="footnote" id="fnr_1443"><sup>32</sup><p>A 16. § (2) bekezdés nyitó szövegrésze a <a class="link" href="jogszabaly/2019-2-00-00" data-jhid="SZ19@POG" data-type="kulso">2019: II. törvény 19. § g) pontja</a> szerint módosított szöveg.</p></div><div class="footnote" id="fnr_1444"><sup>33</sup><p>A 16. § (2) bekezdés b) pontja a <a class="link" href="jogszabaly/2019-2-00-00" data-jhid="SZ19@POH" data-type="kulso">2019: II. törvény 19. § h) pontja</a> szerint módosított szöveg.</p></div><div class="footnote" id="fnr_1445"><sup>34</sup><p>A 16. § (3) bekezdése a <a class="link" href="jogszabaly/2019-2-00-00" data-jhid="SZ19@POG" data-type="kulso">2019: II. törvény 19. § g) és i) pontja</a> szerint módosított szöveg.</p></div><div class="footnote" id="fnr_1093"><sup>35</sup><p>A 16. § (4) bekezdését a <a class="link" href="jogszabaly/2011-201-00-00" data-jhid="SZ375@BE8" data-type="kulso">2011: CCI. törvény 375. § (8) bekezdése</a> iktatta be.</p></div><div class="footnote" id="fnr_1446"><sup>36</sup><p>A 16/A. §-t a <a class="link" href="jogszabaly/2019-2-00-00" data-jhid="SZ11" data-type="kulso">2019: II. törvény 11. §-a</a> iktatta be.</p></div><div class="footnote" id="fnr_1447"><sup>37</sup><p>A 17. § (1) bekezdése a <a class="link" href="jogszabaly/2019-2-00-00" data-jhid="SZ19@POJ" data-type="kulso">2019: II. törvény 19. § j) pontja</a> szerint módosított szöveg.</p></div><div class="footnote" id="fnr_1448"><sup>38</sup><p>A 17/A. §-t a <a class="link" href="jogszabaly/2019-2-00-00" data-jhid="SZ12" data-type="kulso">2019: II. törvény 12. §-a</a> iktatta be.</p></div><div class="footnote" id="fnr_1702"><sup>39</sup><p>A 17/B. §-t a <a class="link" href="jogszabaly/2022-30-00-00" data-jhid="SZ1" data-type="kulso">2022. évi XXX. törvény 1. §</a>-a iktatta be.</p></div><div class="footnote" id="fnr_1757"><sup>40</sup><p>A 6. alcím (18. §) a <a class="link" href="jogszabaly/2024-16-00-00" data-jhid="SZ1" data-type="kulso">2024. évi XVI. törvény 1. §</a>-ával megállapított szöveg.</p></div><div class="footnote" id="fnr_1453"><sup>41</sup><p>A 19. § (2) bekezdése a <a class="link" href="jogszabaly/2019-2-00-00" data-jhid="SZ19@POL" data-type="kulso">2019: II. törvény 19. § l) pontja</a> szerint módosított szöveg.</p></div><div class="footnote" id="fnr_1034"><sup>42</sup><p>Lásd a <a class="link" href="jogszabaly/2010-131-00-00" data-type="kulso">2010: CXXXI. törvényt</a>.</p></div><div class="footnote" id="fnr_1454"><sup>43</sup><p>A 20. § (2) bekezdése a <a class="link" href="jogszabaly/2019-2-00-00" data-jhid="SZ14" data-type="kulso">2019: II. törvény 14. §-ával</a> megállapított szöveg.</p></div><div class="footnote" id="fnr_1455"><sup>44</sup><p>A 20. § (3) bekezdése a <a class="link" href="jogszabaly/2019-2-00-00" data-jhid="SZ14" data-type="kulso">2019: II. törvény 14. §-ával</a> megállapított szöveg.</p></div><div class="footnote" id="fnr_1094"><sup>45</sup><p>A 20. § (5) bekezdése a <a class="link" href="jogszabaly/2011-201-00-00" data-jhid="SZ375@BE9" data-type="kulso">2011: CCI. törvény 375. § (9) bekezdésével</a> megállapított szöveg.</p></div><div class="footnote" id="fnr_1456"><sup>46</sup><p>A 21. § (1) bekezdése a <a class="link" href="jogszabaly/2019-2-00-00" data-jhid="SZ19@POM" data-type="kulso">2019: II. törvény 19. § m) pontja</a> szerint módosított szöveg.</p></div><div class="footnote" id="fnr_1095"><sup>47</sup><p>A 21. § (2) bekezdése a <a class="link" href="jogszabaly/2011-201-00-00" data-jhid="SZ377@POD" data-type="kulso">2011: CCI. törvény 377. § d) pontja</a> szerint módosított szöveg.</p></div><div class="footnote" id="fnr_1703"><sup>48</sup><p>A 21. § (3) bekezdését a <a class="link" href="jogszabaly/2022-30-00-00" data-jhid="SZ2" data-type="kulso">2022. évi XXX. törvény 2. §</a>-a iktatta be.</p></div><div class="footnote" id="fnr_1457"><sup>49</sup><p>A 22. § (1) bekezdés nyitó szövegrésze a <a class="link" href="jogszabaly/2019-2-00-00" data-jhid="SZ19@POM" data-type="kulso">2019: II. törvény 19. § m) pontja</a> szerint módosított szöveg.</p></div><div class="footnote" id="fnr_1096"><sup>50</sup><p>A 22. § (2) bekezdése a <a class="link" href="jogszabaly/2011-201-00-00" data-jhid="SZ377@POD" data-type="kulso">2011: CCI. törvény 377. § d) pontja</a> szerint módosított szöveg.</p></div><div class="footnote" id="fnr_1097"><sup>51</sup><p>A 23. § a <a class="link" href="jogszabaly/2011-201-00-00" data-jhid="SZ375@BE10" data-type="kulso">2011: CCI. törvény 375. § (10) bekezdésével</a> megállapított szöveg.</p></div><div class="footnote" id="fnr_1871"><sup>52</sup><p>A 23. § (4) bekezdése a <a class="link" href="jogszabaly/2026-34-00-00" data-jhid="SZ171" data-type="kulso">2026. évi XXXIV. törvény 171. §</a>-ával megállapított szöveg.</p></div><div class="footnote" id="fnr_1913"><sup>53</sup><p>A 23. § (4) bekezdés j) pontja a <a class="link" href="jogszabaly/2026-49-00-00" data-jhid="SZ81@BE0@POA" data-type="kulso">2026. évi XLIX. törvény 81. § a) pont</a>ja szerint módosított szöveg.</p></div><div class="footnote" id="fnr_1914"><sup>54</sup><p>A 23. § (4) bekezdés k) pontja a <a class="link" href="jogszabaly/2026-49-00-00" data-jhid="SZ81@BE0@POB" data-type="kulso">2026. évi XLIX. törvény 81. § b) pont</a>ja szerint módosított szöveg.</p></div><div class="footnote" id="fnr_1410"><sup>55</sup><p>A 23. § (5) bekezdés f) pontja a <a class="link" href="jogszabaly/2014-21-00-00" data-jhid="SZ46" data-type="kulso">2014: XXI. törvény 46. §-a</a> szerint módosított szöveg.</p></div><div class="footnote" id="fnr_1758"><sup>56</sup><p>A 23. § (6) bekezdését a <a class="link" href="jogszabaly/2024-16-00-00" data-jhid="SZ2" data-type="kulso">2024. évi XVI. törvény 2. §</a>-a iktatta be.</p></div><div class="footnote" id="fnr_1099"><sup>57</sup><p>A 11. alcím címe a <a class="link" href="jogszabaly/2011-201-00-00" data-jhid="SZ377@POE" data-type="kulso">2011: CCI. törvény 377. § e) pontja</a> szerint módosított szöveg.</p></div><div class="footnote" id="fnr_1100"><sup>58</sup><p>A 25. § (1) bekezdése a <a class="link" href="jogszabaly/2011-201-00-00" data-jhid="SZ377@POE" data-type="kulso">2011: CCI. törvény 377. § e) pontja</a> szerint módosított szöveg.</p></div><div class="footnote" id="fnr_1101"><sup>59</sup><p>A 25/A. §-t a <a class="link" href="jogszabaly/2011-201-00-00" data-jhid="SZ375@BE11" data-type="kulso">2011: CCI. törvény 375. § (11) bekezdése</a> iktatta be.</p></div><div class="footnote" id="fnr_1458"><sup>60</sup><p>A 25/A. § (1) bekezdése a <a class="link" href="jogszabaly/2019-2-00-00" data-jhid="SZ20@POA" data-type="kulso">2019: II. törvény 20. § a) pontja</a> szerint módosított szöveg.</p></div><div class="footnote" id="fnr_1411"><sup>61</sup><p>A 25/A. § (2) bekezdése a <a class="link" href="jogszabaly/2014-21-00-00" data-jhid="SZ45@POA" data-type="kulso">2014: XXI. törvény 45. § a) pontja</a> szerint módosított szöveg.</p></div><div class="footnote" id="fnr_1684"><sup>62</sup><p>A 25/A. § (5) bekezdése a <a class="link" href="jogszabaly/2020-165-00-00" data-jhid="SZ30" data-type="kulso">2020: CLXV. törvény 30. §-ával</a> megállapított szöveg.</p></div><div class="footnote" id="fnr_1685"><sup>63</sup><p>A 25/A. § (6) bekezdését a <a class="link" href="jogszabaly/2020-165-00-00" data-jhid="SZ35@POA" data-type="kulso">2020: CLXV. törvény 35. § a) pontja</a> hatályon kívül helyezte.</p></div><div class="footnote" id="fnr_1686"><sup>64</sup><p>A 25/A. § (7) bekezdését a <a class="link" href="jogszabaly/2020-165-00-00" data-jhid="SZ35@POA" data-type="kulso">2020: CLXV. törvény 35. § a) pontja</a> hatályon kívül helyezte.</p></div><div class="footnote" id="fnr_1459"><sup>65</sup><p>A 12. alcím címe a <a class="link" href="jogszabaly/2019-2-00-00" data-jhid="SZ19@PON" data-type="kulso">2019: II. törvény 19. § n) pontja</a> szerint módosított szöveg.</p></div><div class="footnote" id="fnr_1700"><sup>66</sup><p>A 26. § (2) bekezdése a <a class="link" href="jogszabaly/2011-201-00-00" data-jhid="SZ375@BE12" data-type="kulso">2011: CCI. törvény 375. § (12) bekezdés</a>ével megállapított, a <a class="link" href="jogszabaly/2026-49-00-00" data-jhid="SZ81@BE0@POC" data-type="kulso">2026. évi XLIX. törvény 81. § c) pont</a>ja szerint módosított szöveg.</p></div><div class="footnote" id="fnr_1412"><sup>67</sup><p>A 26. § (5) bekezdése a <a class="link" href="jogszabaly/2011-201-00-00" data-jhid="SZ377@POF" data-type="kulso">2011: CCI. törvény 377. § f) pontja</a>, a <a class="link" href="jogszabaly/2014-21-00-00" data-jhid="SZ45@POA" data-type="kulso">2014: XXI. törvény 45. § a) pontja</a> szerint módosított szöveg.</p></div><div class="footnote" id="fnr_1701"><sup>68</sup><p>A 26. § (6) bekezdése a <a class="link" href="jogszabaly/2011-201-00-00" data-jhid="SZ375@BE13" data-type="kulso">2011: CCI. törvény 375. § (13) bekezdés</a>ével megállapított, a <a class="link" href="jogszabaly/2014-21-00-00" data-jhid="SZ45@BE0@POA" data-type="kulso">2014: XXI. törvény 45. § a) pont</a>ja, a <a class="link" href="jogszabaly/2026-49-00-00" data-jhid="SZ81@BE0@POD" data-type="kulso">2026. évi XLIX. törvény 81. § d) pont</a>ja szerint módosított szöveg.</p></div><div class="footnote" id="fnr_1105"><sup>69</sup><p>A 26. § (7) bekezdését a <a class="link" href="jogszabaly/2011-201-00-00" data-jhid="SZ378" data-type="kulso">2011: CCI. törvény 378. §-a</a> hatályon kívül helyzte.</p></div><div class="footnote" id="fnr_1106"><sup>70</sup><p>A 27. § (3) bekezdését a <a class="link" href="jogszabaly/2011-38-00-00" data-jhid="SZ1" data-type="kulso">2011: XXXVIII. törvény 1. §-a</a> iktatta be, hatályon kívül helyezte a <a class="link" href="jogszabaly/2011-201-00-00" data-jhid="SZ378" data-type="kulso">2011: CCI. törvény 378. §-a</a>.</p></div><div class="footnote" id="fnr_1107"><sup>71</sup><p>A 28. § (1a) bekezdését a <a class="link" href="jogszabaly/2011-110-00-00" data-jhid="SZ27@BE4" data-type="kulso">2011: CX. törvény 27. § (4) bekezdése</a> iktatta be.</p></div><div class="footnote" id="fnr_1414"><sup>72</sup><p>A 28. § (2) bekezdése a <a class="link" href="jogszabaly/2014-21-00-00" data-jhid="SZ45@POA" data-type="kulso">2014: XXI. törvény 45. § a) pontja</a> szerint módosított szöveg.</p></div><div class="footnote" id="fnr_1415"><sup>73</sup><p>A 28. § (3) bekezdése a <a class="link" href="jogszabaly/2014-21-00-00" data-jhid="SZ45@POA" data-type="kulso">2014: XXI. törvény 45. § a) pontja</a> szerint módosított szöveg.</p></div><div class="footnote" id="fnr_1460"><sup>74</sup><p>A 14/A. alcímet (28/A–28/C. §) a <a class="link" href="jogszabaly/2011-201-00-00" data-jhid="SZ375@BE14" data-type="kulso">2011: CCI. törvény 375. § (14) bekezdése</a> iktatta be. A 14/A. alcím címe a <a class="link" href="jogszabaly/2019-2-00-00" data-jhid="SZ19@POO" data-type="kulso">2019: II. törvény 19. § o) pontja</a> szerint módosított szöveg.</p></div><div class="footnote" id="fnr_1401"><sup>75</sup><p>A 28/A. § a) pontját a <a class="link" href="jogszabaly/2025-111-00-00" data-jhid="SZ2@BE0@POA" data-type="kulso">2025. évi CXI. törvény 2. § a) pont</a>ja hatályon kívül helyezte, újonnan a <a class="link" href="jogszabaly/2026-52-00-00" data-jhid="SZ1" data-type="kulso">2026. évi LII. törvény 1. §</a>-a iktatta be.</p></div><div class="footnote" id="fnr_1406"><sup>76</sup><p>A 28/A. § c) pontját a <a class="link" href="jogszabaly/2013-207-00-00" data-jhid="SZ37@BE2" data-type="kulso">2013: CCVII. törvény 37. § (2) bekezdése</a> hatályon kívül helyezte.</p></div><div class="footnote" id="fnr_1407"><sup>77</sup><p>A 28/A. § d) pontja a <a class="link" href="jogszabaly/2013-207-00-00" data-jhid="SZ37@BE1" data-type="kulso">2013: CCVII. törvény 37. § (1) bekezdése</a> szerint módosított szöveg.</p></div><div class="footnote" id="fnr_1461"><sup>78</sup><p>A 28/A. § (1) bekezdés e) pontja a <a class="link" href="jogszabaly/2019-2-00-00" data-jhid="SZ19@POP" data-type="kulso">2019: II. törvény 19. § p) pontja</a> szerint módosított szöveg.</p></div><div class="footnote" id="fnr_1810"><sup>79</sup><p>A 28/A. § f) pontja a <a class="link" href="jogszabaly/2025-111-00-00" data-jhid="SZ2@BE0@POB" data-type="kulso">2025. évi CXI. törvény 2. § b) pont</a>ja, a <a class="link" href="jogszabaly/2026-52-00-00" data-jhid="SZ3" data-type="kulso">2026. évi LII. törvény 3. §</a>-a szerint módosított szöveg.</p></div><div class="footnote" id="fnr_1462"><sup>80</sup><p>A 28/B. § (1) bekezdés nyitó szövegrésze a <a class="link" href="jogszabaly/2019-2-00-00" data-jhid="SZ20@POB" data-type="kulso">2019: II. törvény 20. § b) pontja</a> szerint módosított szöveg.</p></div><div class="footnote" id="fnr_1872"><sup>81</sup><p>A 28/B. § (1) bekezdés a) pontja a <a class="link" href="jogszabaly/2026-34-00-00" data-jhid="SZ172" data-type="kulso">2026. évi XXXIV. törvény 172. §</a>-a szerint módosított szöveg.</p></div><div class="footnote" id="fnr_1463"><sup>82</sup><p>A 28/B. § (4) bekezdését a <a class="link" href="jogszabaly/2019-2-00-00" data-jhid="SZ15" data-type="kulso">2019: II. törvény 15. §-a</a> iktatta be.</p></div><div class="footnote" id="fnr_1680"><sup>83</sup><p>A 28/C. § (1) bekezdése a <a class="link" href="jogszabaly/2019-2-00-00" data-jhid="SZ19@POM" data-type="kulso">2019: II. törvény 19. § m) és q) pontja</a>, a <a class="link" href="jogszabaly/2019-109-00-00" data-jhid="SZ122" data-type="kulso">2019: CIX. törvény 122. §-a</a> szerint módosított szöveg.</p></div><div class="footnote" id="fnr_1681"><sup>84</sup><p>A 28/C. § (2) bekezdés c) pontja a <a class="link" href="jogszabaly/2019-109-00-00" data-jhid="SZ122" data-type="kulso">2019: CIX. törvény 122. §-a</a> szerint módosított szöveg.</p></div><div class="footnote" id="fnr_1811"><sup>85</sup><p>A 28/D. §-t a <a class="link" href="jogszabaly/2025-111-00-00" data-jhid="SZ1" data-type="kulso">2025. évi CXI. törvény 1. §</a>-a iktatta be, a <a class="link" href="jogszabaly/2026-52-00-00" data-jhid="SZ4" data-type="kulso">2026. évi LII. törvény 4. §</a>-a hatályon kívül helyezte.</p></div><div class="footnote" id="fnr_1696"><sup>86</sup><p>A 29. § a <a class="link" href="jogszabaly/2020-165-00-00" data-jhid="SZ31" data-type="kulso">2020: CLXV. törvény 31. §-ával</a> megállapított szöveg.</p></div><div class="footnote" id="fnr_1355"><sup>87</sup><p>A 15/A. alcímet (29/A. §) a <a class="link" href="jogszabaly/2011-201-00-00" data-jhid="SZ375@BE15" data-type="kulso">2011: CCI. törvény 375. § (15) bekezdése</a> iktatta be. A 15/A. alcímet (29/A. §) hatályon kívül helyezte a <a class="link" href="jogszabaly/2012-36-00-00" data-jhid="SZ160@BE2@POB" data-type="kulso">2012: XXXVI. törvény 160. § (2) bekezdés b) pontja</a>.</p></div><div class="footnote" id="fnr_1036"><sup>88</sup><p>Lásd a <a class="link" href="jogszabaly/2010-302-20-22" data-type="kulso">302/2010. (XII. 23.) Korm. rendeletet</a>.</p></div><div class="footnote" id="fnr_1465"><sup>89</sup><p>A 30. § (1) bekezdés c) pontja a <a class="link" href="jogszabaly/2011-201-00-00" data-jhid="SZ375@BE16" data-type="kulso">2011: CCI. törvény 375. § (16) bekezdésével</a> megállapított, a <a class="link" href="jogszabaly/2019-2-00-00" data-jhid="SZ19@POR" data-type="kulso">2019: II. törvény 19. § r) pontja</a> szerint módosított szöveg.</p></div><div class="footnote" id="fnr_1112"><sup>90</sup><p>Lásd a <a class="link" href="jogszabaly/2011-338-20-22" data-type="kulso">338/2011. (XII. 29.) Korm. rendeletet</a>.</p></div><div class="footnote" id="fnr_1687"><sup>91</sup><p>A 30. § (1) bekezdés d) pontját a <a class="link" href="jogszabaly/2011-201-00-00" data-jhid="SZ375@BE17" data-type="kulso">2011: CCI. törvény 375. § (17) bekezdése</a> iktatta be, hatályon kívül helyezte a <a class="link" href="jogszabaly/2020-165-00-00" data-jhid="SZ35@POB" data-type="kulso">2020: CLXV. törvény 35. § b) pontja</a>.</p></div><div class="footnote" id="fnr_1037"><sup>92</sup><p>Lásd a <a class="link" href="jogszabaly/2009-61-20-1U" data-type="kulso">61/2009. (XII. 14.) IRM rendeletet</a>.</p></div><div class="footnote" id="fnr_1420"><sup>93</sup><p>A 30. § (3) bekezdése a <a class="link" href="jogszabaly/2018-5-00-00" data-jhid="SZ25" data-type="kulso">2018: V. törvény 25. §-a</a> szerint módosított szöveg.</p></div><div class="footnote" id="fnr_1421"><sup>94</sup><p>Lásd a <a class="link" href="jogszabaly/2016-12-20-6N" data-type="kulso">12/2016. (IV. 29.) MvM rendeletet</a>.</p></div><div class="footnote" id="fnr_1466"><sup>95</sup><p>A 30. § (4) bekezdése a <a class="link" href="jogszabaly/2019-2-00-00" data-jhid="SZ16" data-type="kulso">2019: II. törvény 16. §-ával</a> megállapított szöveg.</p></div><div class="footnote" id="fnr_1688"><sup>96</sup><p>A 30. § (4) bekezdés a) pontja a <a class="link" href="jogszabaly/2020-165-00-00" data-jhid="SZ34" data-type="kulso">2020: CLXV. törvény 34. §-a</a> szerint módosított szöveg.</p></div><div class="footnote" id="fnr_1467"><sup>97</sup><p>Lásd az <a class="link" href="jogszabaly/2019-5-20-06" data-type="kulso">5/2019. (III. 13.) IM rendeletet</a>.</p></div><div class="footnote" id="fnr_1468"><sup>98</sup><p>Lásd az <a class="link" href="jogszabaly/2019-5-20-06" data-type="kulso">5/2019. (III. 13.) IM rendeletet</a>.</p></div><div class="footnote" id="fnr_1469"><sup>99</sup><p>Lásd az <a class="link" href="jogszabaly/2019-5-20-06" data-type="kulso">5/2019. (III. 13.) IM rendeletet</a>.</p></div><div class="footnote" id="fnr_1689"><sup>100</sup><p>A 30. § (5) bekezdését a <a class="link" href="jogszabaly/2011-201-00-00" data-jhid="SZ375@BE18" data-type="kulso">2011: CCI. törvény 375. § (18) bekezdése</a> iktatta be, szövege a <a class="link" href="jogszabaly/2020-165-00-00" data-jhid="SZ32" data-type="kulso">2020: CLXV. törvény 32. §-ával</a> megállapított szöveg.</p></div><div class="footnote" id="fnr_1470"><sup>101</sup><p>A 31. § (1) bekezdése a <a class="link" href="jogszabaly/2019-2-00-00" data-jhid="SZ17" data-type="kulso">2019: II. törvény 17. §-ával</a> megállapított szöveg.</p></div><div class="footnote" id="fnr_1690"><sup>102</sup><p>A 31. § (1) bekezdés b) pontja a <a class="link" href="jogszabaly/2020-165-00-00" data-jhid="SZ33" data-type="kulso">2020: CLXV. törvény 33. §-ával</a> megállapított szöveg.</p></div><div class="footnote" id="fnr_1471"><sup>103</sup><p>A 31. § (2) bekezdés nyitó szövegrésze a <a class="link" href="jogszabaly/2019-2-00-00" data-jhid="SZ19@POS" data-type="kulso">2019: II. törvény 19. § s) pontja</a> szerint módosított szöveg.</p></div><div class="footnote" id="fnr_1472"><sup>104</sup><p>A 33. § (2) bekezdése a <a class="link" href="jogszabaly/2019-2-00-00" data-jhid="SZ19@POT" data-type="kulso">2019: II. törvény 19. § t) pontja</a> szerint módosított szöveg.</p></div><div class="footnote" id="fnr_1373"><sup>105</sup><p>A 35. § a 12. § (2) bekezdése alapján hatályát vesztette, újonnan a <a class="link" href="jogszabaly/2012-76-00-00" data-jhid="SZ73@BE2" data-type="kulso">2012: LXXVI. törvény 73. § (2) bekezdése</a> iktatta be, szövege a <a class="link" href="jogszabaly/2012-114-00-00" data-jhid="SZ6" data-type="kulso">2012: CXIV. törvény 6. §-a</a> szerint módosított szöveg.</p></div><div class="footnote" id="fnr_1473"><sup>106</sup><p>A 36. §-t újonnan a <a class="link" href="jogszabaly/2019-2-00-00" data-jhid="SZ18" data-type="kulso">2019: II. törvény 18. §-a</a> iktatta be.</p></div><div class="footnote" id="fnr_1759"><sup>107</sup><p>A 37. §-t újonnan a <a class="link" href="jogszabaly/2024-16-00-00" data-jhid="SZ3" data-type="kulso">2024. évi XVI. törvény 3. §</a>-a iktatta be.</p></div><div class="footnote" id="fnr_1760"><sup>108</sup><p>A hatálybalépés időpontja 2024. július 1.</p></div><div class="footnote" id="fnr_1363"><sup>109</sup><p>A 19. alcím címét a <a class="link" href="jogszabaly/2012-76-00-00" data-jhid="SZ74" data-type="kulso">2012: LXXVI. törvény 74. §-a</a> hatályon kívül helyezte.</p></div><div class="footnote" id="fnr_1475"><sup>110</sup><p>A 38. § a 12. § (2) bekezdése alapján hatályát vesztette, újonnan a <a class="link" href="jogszabaly/2026-52-00-00" data-jhid="SZ2" data-type="kulso">2026. évi LII. törvény 2. §</a>-a iktatta be.</p></div><div class="footnote" id="fnr_1928"><sup>111</sup><p>A hatálybalépés időpontja 2026. szeptember 19.</p></div><div class="footnote" id="fnr_1476"><sup>112</sup><p>A 39. § a 12. § (2) bekezdése alapján hatályát vesztette.</p></div><div class="footnote" id="fnr_1477"><sup>113</sup><p>A 40. § a 12. § (2) bekezdése alapján hatályát vesztette.</p></div><div class="footnote" id="fnr_1478"><sup>114</sup><p>A 41. § a 12. § (2) bekezdése alapján hatályát vesztette.</p></div><div class="footnote" id="fnr_1479"><sup>115</sup><p>A 42. § a 12. § (2) bekezdése alapján hatályát vesztette.</p></div><div class="footnote" id="fnr_1480"><sup>116</sup><p>A 43. § a 12. § (2) bekezdése alapján hatályát vesztette.</p></div><div class="footnote" id="fnr_1481"><sup>117</sup><p>A 44. § a 12. § (2) bekezdése alapján hatályát vesztette.</p></div><div class="footnote" id="fnr_1482"><sup>118</sup><p>A 45. § a 12. § (2) bekezdése alapján hatályát vesztette.</p></div><div class="footnote" id="fnr_1483"><sup>119</sup><p>A 46. § a 12. § (2) bekezdése alapján hatályát vesztette.</p></div><div class="footnote" id="fnr_1364"><sup>120</sup><p>A 20. alcím címét a <a class="link" href="jogszabaly/2012-76-00-00" data-jhid="SZ74" data-type="kulso">2012: LXXVI. törvény 74. §-a</a> hatályon kívül helyezte.</p></div><div class="footnote" id="fnr_1352"><sup>121</sup><p>A 47. § a 12. § (2) bekezdése alapján hatályát vesztette.</p></div><div class="footnote" id="fnr_1063"><sup>122</sup><p>A 48. § (1) bekezdése a 12. § (2) bekezdése alapján hatályát vesztette.</p></div><div class="footnote" id="fnr_1353"><sup>123</sup><p>A 48. § (2) bekezdése a 12. § (2) bekezdése alapján hatályát vesztette.</p></div><div class="footnote" id="fnr_1484"><sup>124</sup><p>A 49. § a 12. § (2) bekezdése alapján hatályát vesztette.</p></div><div class="footnote" id="fnr_1485"><sup>125</sup><p>Az 50. § a 12. § (2) bekezdése alapján hatályát vesztette.</p></div><div class="footnote" id="fnr_1486"><sup>126</sup><p>Az 51. § a 12. § (2) bekezdése alapján hatályát vesztette.</p></div><div class="footnote" id="fnr_1487"><sup>127</sup><p>Az 52. § a 12. § (2) bekezdése alapján hatályát vesztette.</p></div><div class="footnote" id="fnr_1488"><sup>128</sup><p>Az 53. § a 12. § (2) bekezdése alapján hatályát vesztette.</p></div>
+                        
+
+                    </div>
+                    <div class="clbo"></div>
+                </div>
+        </div>
+
+        <div class="versionWindow versionWindowDefault" id="versionWindow"></div>
+
+        <div class="footnoteDisplay footnote-fixed">
+    <div class="footnoteContent">
+        <div class="footnoteText" tabindex="0"></div>
+        <button class="footnoteClose absolute top-0 right-0 button outline flex justify-center items-center w-32 h-32 p-0" tabindex="0" data-njttip title="Lábjegyzet bezárása" aria-label="Lábjegyzet bezárása">
+            <i class="footnoteClose ri-close-line"></i>
+        </button>
+    </div>
+</div>
+<div id="fake_footnote_display"></div>
+        
+        <div id="navigation_panel" style="display: none" class="navigation-panel" data-ng-controller="mobileFooterCtrl">
+            <div class="navigation-panel__header flex justify-between items-center p-16">
+                <h3> Változott rendelkezések</h3>
+                <button data-ng-click="toggleNavigationPanel()" class="button subtle ri-close-line flex justify-center items-center p-0 w-32 h-32 color-link-neutral-enabled" data-njttip title="Bezárás" aria-label="Bezárás"></button>
+            </div>
+            <div class="navigation-panel__nav-content nav-content">
+                <div class="flex flex-col gap-8">
+                    <span class="text-16"> Megváltozott</span>
+                    <div class="flex justify-evenly">
+                        <button class="jumpToPreviousPastChangedSlice prevChange button outline negative flex justify-center items-center p-0 w-32 h-32" data-njttip title="Előző megváltozott">
+                            <i class="ri-arrow-up-s-line"></i>
+                        </button>
+                        <button class="jumpToNextPastChangedSlice prevChange button outline negative flex justify-center items-center p-0 w-32 h-32" data-njttip title="Következő megváltozott">
+                            <i class="ri-arrow-down-s-line"></i>
+                        </button>
+                        <span class="noPrevChange noChange">
+                            Nincs változás
+                        </span>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-8">
+                    <span class="text-16"> Változni fog </span>
+                    <div class="flex justify-evenly">
+                        <button class="jumpToPreviousFutureChangedSlice nextChange button outline flex justify-center items-center p-0 w-32 h-32" data-njttip title="Előző megváltozó">
+                            <i class="ri-arrow-up-s-line"></i>
+                        </button>
+                        <button class="jumpToNextFutureChangedSlice nextChange button outline flex justify-center items-center p-0 w-32 h-32" data-njttip title="Következő megváltozó">
+                            <i class="ri-arrow-down-s-line"></i>
+                        </button>
+                        <span class="noNextChange noChange">
+                            Nincs változás
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="eszkoztar_panel" style="display: none" class="eszkoztar_panel " data-ng-controller="mobileFooterCtrl">
+            <div class="navigation-panel__header flex justify-between items-center p-16">
+                <h3> Eszköztár</h3>
+                <button data-ng-click="toggleEszkoztarPanel()" class="button subtle ri-close-line flex justify-center items-center p-0 w-32 h-32 color-link-neutral-enabled" data-njttip title="Bezárás" aria-label="Bezárás"></button>
+            </div>
+            <div class="eszkoztar_panel__content">
+                                                                            <div class="flex flex-col items-center justify-center">
+                        <a class="no-underline text-small" href="#"
+                           onclick="growl.modal('&lt;a href=&quot;https://njt.jog.gov.hu/eli/TV/2010/130&quot; target=&quot;_blank&quot; &gt;https://njt.jog.gov.hu/eli/TV/2010/130&lt;/a&gt;', 'ELI', 'info eli-link-modal');"
+                           data-njttip title="ELI">ELI</a>
+                    </div>
+                                <div>
+                    <div onclick="njtPrint.handlePrintClick();"
+                         class="flex flex-col items-center">
+                        <i class="ri-printer-fill text-18"></i>
+                        <span class="text-small">Nyomtatás</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="context_menu">
+            <ul>
+                <li class="context_menu__selection" onclick="exportText.configureExport();">Másolás a vágólapra</li>
+                                    <li class="context_menu__selection" onclick="njtPrint.handlePrintClick();">Nyomtatás</li>
+                                            </ul>
+        </div>
+        </div>
+        <div id="scrollbarRuler"></div>
+
+        <footer id="mobileFooter">
+            <div data-ng-controller="mobileFooterCtrl">
+    <div id="mobile-footer" >
+        <div class="m-footer-item sideMenu color-white cursor-pointer"
+             aria-expanded="false"
+             aria-controls="sidemenu-window-left">
+            <i class="ri-list-check text-16 color-white"></i>
+            <span>
+                Szerkezet
+            </span>
+        </div>
+        <div data-ng-click="toggleOperationsMenu()"
+             class="m-footer-item color-white cursor-pointer">
+            <i class="ri-file-search-line text-16 color-white"></i>
+            <span>
+                Keresés
+            </span>
+        </div>
+        <div data-ng-click="toggleMegnyitottak()"
+             class="m-footer-item color-white cursor-pointer">
+            <i class="ri-archive-stack-line text-16 color-white"></i>
+            <span>
+                Megnyitottak
+            </span>
+        </div>
+                <div data-ng-click="toggleEszkoztarPanel()"
+             class="m-footer-item color-white cursor-pointer">
+            <i class="ri-settings-5-line text-16 color-white"></i>
+            <span>
+                Eszköztár
+            </span>
+        </div>
+        <div data-ng-click="toggleNavigationPanel()"
+             class="m-footer-item color-white cursor-pointer">
+            <i class="ri-expand-up-down-line text-16 color-white"></i>
+            <span>
+                Változások
+            </span>
+        </div>
+    </div>
+</div>        </footer>
+    </div>
+
+
+    <!-- p: 2026-09-21 12:48:01, i: 2026-09-21 12:50:05 -->
+    </div>
+    <div id="dynamic" class="mainWrapper empty" style="display: none">
+        <div data-ng-view></div>
+    </div>
+        <div id="bottom_flag_line" class="bg-white">
+            <div id="sztp_banner" style="position:absolute; bottom: 50px; right: 0; display: none;">
+                <img src="/bundles/njtfrontend/images/layout/sztp.svg?v11c6e9fe8.14119.20261116143934.2.18.5" alt="Széchenyi Terv Plusz logó" style="height: 100px;"/>
+            </div>
+            <div id="bottom_black_line">
+                <div class="wrapper">
+                    <div data-ng-controller="pageBarCtrl">
+                        <div class="pageBar ng-cloak" data-ng-init="initPageBar('jogszabaly','2010-130-00-00')"><ul><li class="pager search" id="pageBarSearch"><div class="searchPopup"><div class="searchPopupBox"><a class="page or"
+                               data-ng-attr-href="{{ lastOrSearchPath }}">Önkormányzati rendeletek</a></div><div><a class="no-underline" data-ng-attr-href="{{ lastSearchPath }}"><i class="ri-search-line"></i><span class="hidden">Jogszabálykereső</span></a></div></div></li><li class="pager left items-center justify-center" id="pageBarBack" aria-label="Előző fül megjelenítése"
+                data-ng-click="changePager(-1)" data-ng-keydown="$event.keyCode === 13 && changePager(-1)"
+                data-ng-show="backForward"><i tabindex="0" class="ri-arrow-left-s-line text-24"></i></li><li class="flex items-center px-2" data-ng-repeat="page in pages" data-ng-class="[page.style, {'last':$last}]"
+                data-njttip title="<b>{{ page.title }}</b> {{ page.shortDescription }}"><div class="pagerWrapper flex-1 flex"><a class="page content-center pageTabLink" href="{{ page.url }}" data-ng-bind="page.title">{{ page.url }}</a><div><a class="no-underline text-16" tabindex="0" href="#"
+                       data-ng-click="deleteCookie(page.pageId, true, page.type, page.documentTypeForHistory)"
+                    ><i class="ri-close-line"></i></a></div></div></li><li class="pager right items-center justify-center" id="pageBarForward" aria-label="Következő fül megjelenítése"
+                data-ng-click="changePager(1)" data-ng-keydown="$event.keyCode === 13 && changePager(1)"
+                data-ng-show="backForward"><i tabindex="0" class="ri-arrow-right-s-line text-24"></i></li></ul></div>                        <div class="mobile-megnyitottak-tab">
+    <div class="megnyitottak-mobile-header flex justify-between items-center p-16">
+        <h3>Megnyitottak</h3>
+        <button class="megnyitottakCloseButton button subtle ri-close-line flex justify-center items-center p-0 w-32 h-32 color-link-neutral-enabled" data-njttip title="Bezárás" aria-label="Bezárás"></button>
+    </div>
+    <h2 class="p-16">Megnyitottak</h2>
+    <ul class="flex flex-col gap-16 px-16">
+        <li class="flex justify-between" data-ng-repeat="page in localData track by $index"
+            data-njttip title="{{ page.title }} {{ page.shortDescription }}">
+            <a class="no-underline text-16" href="{{ page.url }}"
+               data-ng-bind="page.title" onclick="njtApp.toggleMegnyitottak();">{{ page.url }}</a>
+
+            <button data-ng-click="deleteCookie($index,true)"
+                    class="button outline flex justify-center items-center w-32 h-32 p-0">
+                <i class="ri-close-line text-16"></i>
+            </button>
+        </li>
+    </ul>
+</div>
+                    </div>
+                    <div id="scrollToTop" class="absolute items-center gap-4 text-small">
+                        <button class="button secondary flex justify-center items-center p-0 ri-arrow-up-s-line h-32">
+                            <span>Lap tetejére</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div id="sticky-footer-wrapper"></div>
+</main>
+<div id="sztp_banner_mobile" style="position:fixed; right: 0; bottom: 0;z-index: 2; display: none;">
+    <img src="/bundles/njtfrontend/images/layout/sztp.svg?v11c6e9fe8.14119.20261116143934.2.18.5" alt="Széchenyi Terv Plusz logó" style="height: 100px; max-width: 100%"/></div>
+
+<footer id="mainFooter">
+    <div class="flag-separator"></div>
+    <div class="w-full flex justify-center text-small color-white">
+        <div class="text">
+            <img class="footer-logo" src="/bundles/njtfrontend/images/layout/logo/njt-logo-footer-white.svg?v11c6e9fe8.14119.20261116143934.2.18.5"
+                 alt=""/>
+            <div class="text-right">
+                <ul>
+                    <li>
+                        <a id="aboutLink"
+                           href="https://jog.gov.hu/kapcsolat"
+                           target="_blank"
+                           class="color-white">Kapcsolat</a>
+                    </li>
+                    <li>
+                        <a href="https://jog.gov.hu/felhasznalasi-feltetelek"
+                           target="_blank"
+                           class="color-white"
+                           aria-label="Felhasználási feltételek">
+                            Felhasználási feltételek
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/bundles/njtfrontend/docs/akadalymentesitesi.pdf?v11c6e9fe8.14119.20261116143934.2.18.5"
+                           target="_blank"
+                           class="color-white"
+                           aria-label="Akadálymentesítési nyilatkozat PDF dokumentum">
+                            Akadálymentesítési nyilatkozat
+                            <span class="pdf accessiblehidden">PDF</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://jog.gov.hu/adatkezelesi-tajekoztato"
+                           target="_blank"
+                           class="color-white"
+                           aria-label="Adatkezelési tájékoztató">
+                            Adatkezelési tájékoztató
+                        </a>
+                    </li>
+                    <li>
+                        <a href="static/cookie"
+                           onclick="njtOpenCookieSettings();"
+                           class="color-white"
+                           aria-label="Süti beállítások">
+                            Süti beállítások
+                        </a>
+                    </li>
+                                                        </ul>
+                <span class="text-right__text">
+                    <span data-njttip title="v11c6e9fe8.14119.20261116143934.2.18.5">©</span> A Nemzeti Jogszabálytárban elérhető szövegek tekintetében az MKIFK Magyar Közlönykiadó és Igazságügyi Fordítóközpont Zrt. minden jogot fenntart!
+                </span>
+            </div>
+        </div>
+    </div>
+    <div id="blank-clipboard-select-area">_</div>
+</footer>
+<div data-ng-controller="cookieLawCtrl" data-ng-init="init()"
+     class="cookie-law ng-cloak flex fixed w-full color-white" data-ng-show="!accepted">
+    <div class="cookie-law__holder flex flex-row justify-center items-center gap-40">
+        <div class="flex flex-row gap-8">
+            <i class="ri-information-2-fill text-24 color-white"></i>
+            <span class="text-medium color-white font-medium">
+                <span data-ng-non-bindable="true">A működéshez szükséges sütik mellett a Google Analytics statisztikai sütijeit, a munkamenet-azonosítót és a bejelentkezést csak az Ön hozzájárulásával használjuk. Döntését bármikor megváltoztathatja a lábléc „Süti beállítások” hivatkozásával.</span>
+                <span data-ng-hide="onCookiePage"><br/><span data-ng-non-bindable="true">A cookie-k kezeléséről részletesebb információt <a href="static/cookie">ide</a> kattintva olvashat.</span></span>
+            </span>
+        </div>
+        <div class="flex flex-row gap-8">
+            <button class="button primary" id="acceptButton" data-ng-if="!consentGiven"
+                    data-ng-click="acceptCookieLaw()">Elfogadom</button>
+            <button class="button primary" id="keepButton" data-ng-if="consentGiven"
+                    data-ng-click="keepCookieLaw()">Nem változtatok</button>
+            <button class="button outline inverted" id="rejectButton"
+                    data-ng-click="rejectCookieLaw()">Elutasítom</button>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    var njtConfig = {
+        cachedPageDataUrl: '/ajax/cachedPageData.json',
+        searchUrl: '/ajax/get_search_url.json',
+        onkormanyzatiSearchUrl: '/ajax/get_onkormanyzati_search_url.json',
+        justificationSearchUrl: '/ajax/get_justification_search_url.json',
+        documentTranslationSearchUrl: '/ajax/get_document_translation_search_url.json',
+        internationalAgreementSearchUrl: '/ajax/get_international_agreement_search_url.json',
+        loggerUrl: '/ajax/logger.json',
+        collectAllDocumentVersion: '/ajax/collectAllDocumentVersion.json',
+        collectDocumentVhrVersion: '/ajax/collectDocumentVhrVersion.json',
+        documentVersions: '/ajax/getDocumentVersions.json',
+        currentDocumentFromAbbr: '/ajax/getCurrentDocumentFromAbbr.json',
+        documentVersionsFromAbbr: '/ajax/getDocumentVersionsFromAbbr.json',
+        documentConfig: '/ajax/config.json',
+        tagSearch: '/ajax/tags.json',
+        getBlock: '/ajax/njtGetBlock.json',
+        searchInText: '/ajax/searchInText.json',
+        modifyAccount: '/account/registration/modify.json',
+        printWindowSkeleton: '/ajax/getPrintWindow',
+        organisationGetPrintableDatas: '/organisation/print_datas.json/',
+        simpleSearchPredict: '/ajax/simple_predict.json',
+        acceptCookieLaw: '/ajax/acl.json',
+        rejectCookieLaw: '/ajax/rcl.json',
+        analyticsId: 'UA-28015740-1',
+        getMessage: '/ajax/message.json',
+        acceptMessage: '/ajax/accept_message.json',
+        exportWindowSkeleton: '/ajax/getExportWindow',
+        acceptCookieLawName: 'acceptCookieLaw',
+        sidemenu: '/ajax/sidemenu/:id',
+        requirements: [],
+        isLoggedIn: false,
+        indokolasSearchPrefix: '𝒿',
+        onkormanyzatSearchPrefix: 'ℴ',
+        pagebarMarkArchivum: '𝒶',
+        pagebarMarkFogalomtar: '𝒻',
+        pagebarMarkElethelyzet: '𝓮',
+        pagebarMarkElethelyzetTerulet: '𝓽',
+        pagebarMarkTopic: '𝓴',
+        loadQuestion: '/elethelyzet/question',
+        getAllElethelyzet: '/elethelyzet/index',
+        lazyModeLoggedOut:  false,
+        valtozasJelzesekVersions: '/ajax/getValtozasJelzesekVersions.json',
+        getTelepulesKibocsatoByMegye: '/getTelepulesKibocsatoByMegye.json',
+        szakaszSliceType: 'SZAKASZ',
+        mellekletCimkeSliceType: 'SZAKASZ',
+        jogszabalyHighlight: '/ajax/jogszabaly_highlight',
+        getElethelyzetData: '/elethelyzet/getElethelyzetData.json',
+        getElethelyzetTeruletData: '/elethelyzet/getElethelyzetTeruletData.json',
+        getTopicSearchListForHater: '/getTopicSearchList.json',
+    };
+
+
+    
+    var njtTranslate = {
+        cancel: 'Mégsem',
+        ok: 'Rendben',
+        send: 'Küldés',
+        login: 'Belépés',
+        gazette_state: 'Közlönyállapot',
+        hatalyos: 'Hatályos',
+        meg_nem_hatalyos: 'Még nem hatályos',
+        nemIsmert: 'Nem ismert',
+        nemLepettHatalyba: 'Nem lépett hatályba',
+        closeWindowText: 'Biztosan elnavigál az oldalról?',
+        szervezetAdminCaption: 'Szervezeti adminisztrátor adatai:',
+        datepickerPlaceholder: 'éééé.hh.nn',
+        documentInfo: 'Jogszabályinfó',
+        documentSampleAddWindowTitle: 'Jogszabály adatai',
+        footnoteTitle: 'Lábjegyzetek',
+        figyelem: 'Figyelem!',
+        figyelemMessage: 'A szolgáltatások igénybevételéhez jelentkezzen be!',
+        jogszabalyLoginTitle: 'A jogszabály megtekintéséhez jelentkezzen be!',
+        jogszabalyLoginMessage: 'A hivatkozott jogszabály, jogszabályi időállapot a Nemzeti Jogszabálytár regisztrációval vagy ügyfélkapus bejelentkezéssel használható szolgáltatási szintjén érhető el [338/2011. (XII. 29.) Korm. rendelet 2. § (1) bekezdése alapján].',
+        jogszabalyMissingMessage: 'A hivatkozott jogi dokumentum nem áll rendelkezésre.',
+        sessionMessage: 'A munkamenet <span class="time"></span> múlva lejár és automatikusan ki lesz léptetve.<br>A meghosszabbításhoz kattintson a tovább gombra.',
+        csrfExpired: 'Lejárt a munkamenet, kérjük jelentkezzen be újra.',
+        orgRegistrationFileUploadError: 'Kérjük, töltse fel az aláírt regisztrációs lapot',
+        registrationHandleTitle: 'Elfogadja a regisztrációt?',
+        registrationHandleSubTitle: 'Elutasítás esetén, kérjük, adja meg a elutasítás okát. Erről a regisztráló felhasználót e-mailben értesítjük.',
+        registrationCreated: 'Sikeres regisztráció',
+        registrationModified: 'Sikeres módosítás',
+        registrationMergeError: 'Regisztrált felhasználók összefésülése sikertelen',
+        underProcessWarning: 'A jogszabály feldolgozás alatt van, a felület korlátozottan használható',
+        metaDescription: 'Magyarország hivatalos, hiteles, ingyenesen használható jogszabálygyűjteménye, az MKIFK Magyar Közlönykiadó és Igazságügyi Fordítóközpont Zrt. gondozásában',
+        metaTitle: 'Nemzeti Jogszabálytár – MKIFK Magyar Közlönykiadó és Igazságügyi Fordítóközpont Zrt.',
+        hiba: 'Hiba',
+        noResult: 'Nincs találat',
+        nemMegfelelo: 'Nem megfelelő',
+        evszam: 'évszám',
+        lekerdezesIdeje: 'Lekérdezés ideje',
+        kivonat: 'KIVONAT',
+        iratminta: 'iratminta',
+        errorNeedReload: 'HIBA! Újratöltés szükséges!',
+        beforeDeleteLawRequest: 'Biztosan törölni szeretné jogszabály igénylését?',
+        lawRequest: 'Jogszabály igénylés',
+        igen: 'Igen',
+        nem: 'Nem',
+        tablazatKinyitasa: 'Táblázat kinyitása',
+        emailCim: 'E-mail cím',
+        giveYourEmailAddress: 'Adja meg az e-mail címét',
+        informacio: 'Információ',
+        successfulModification: 'Sikeres módosítás!',
+        maganszemely: 'Magánszemély',
+        unsuccessfulExport: 'Sikertelen exportálás',
+        unsuccessfulCopy: 'Sikertelen másolás',
+        copiedToClipboard: 'Kimásolva a vágólapra',
+        documentTranslations: 'Jogszabályfordítások',
+        internationalAgreements: 'Nemzetközi szerződések',
+        kozismertJogszabalyok: 'Közismert jogszabályok',
+        registration: 'Regisztráció',
+        accountSettings: 'Fiók módosítás',
+        simpleSearch: 'Jogszabálykereső',
+        cif: 'Adott napon hatályba lépő jogszabályok',
+        expired: 'Adott napon hatályukat vesztő jogszabályok',
+        info: 'Információ',
+        justificationSearch: 'Indokolások Tára',
+        popupHeader: 'Karbantartás',
+        popupMessage: 'Tájékoztatjuk Tisztelt Felhasználóinkat, hogy technikai karbantartás miatt 2023. április 25-én 20:00-21:00 óra között a Nemzeti Jogszabálytár Ügyfélkapus bejelentkezéssel történő használatában fennakadások várhatók.',
+        clearField: 'Mező tartalmának törlése',
+        privacy: 'Adatkezelési tájékoztató',
+        loginNeedsCookieConsent: 'A bejelentkezéshez el kell fogadnia a sütik használatát.',
+        cookieConsentWithdrawLogout: 'A sütik elutasításával ki is jelentkezik. Folytatja?'
+    };
+</script>
+    <script src="/bundles/njtfrontend/datepicker/duet/duet.js?v11c6e9fe8.14119.20261116143934.2.18.5" type="text/javascript"></script>
+                            <script src="/js/m-04042633b7e29fc47a744cf0973e3db4eda5a4eb.js?v11c6e9fe8.14119.20261116143934.2.18.5" type="text/javascript"></script>
+        
+<div class="loadingFadeLayer"></div>
+</body>
+</html>
