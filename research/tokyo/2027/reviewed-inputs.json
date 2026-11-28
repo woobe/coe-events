@@ -1,0 +1,950 @@
+{
+  "city_slug": "tokyo-jp",
+  "declared_gaps": [
+    {
+      "kind": "holiday_coverage",
+      "text": "School-holiday coverage for Tokyo is the five JP:tokyo rows of pinned registry edition 3b20667d — 2026-12-26..2027-01-07, 2027-03-26..2027-04-05, 2027-07-21..2027-08-31, the single day 2027-10-01 and 2027-12-26..2028-01-07 — carried as the registry prints them, with no names attached to those rows. No other Tokyo school date (entrance-exam days, make-up days, ward or private-school variations) was verified, so the calendar is the rule default and not a full school-year map.",
+      "verified_at": "2026-11-28"
+    },
+    {
+      "kind": "events",
+      "text": "Seventeen 2027 calendar rows were merged, each organiser-confirmed in the approved bundle; the page recommends no date and none of the seventeen is booked. Declared gap: Japan Mobility Show 2027 — the organiser announces 2027-10-28..2027-11-07 at Tokyo Big Sight, the same class as the recorded CEATEC and Tokyo Game Show rows, and it is deliberately not in the array; the approved review left it for a later sweep rather than another completeness round. Unknown-date editions are also not in the array: Japan Blockchain Week 2027 (the site still shows 2026-07-01..15), PyCon JP 2027, ETHGlobal Tokyo and IVS 2027.",
+      "verified_at": "2026-11-28"
+    },
+    {
+      "kind": "cost",
+      "text": "Four of the sixteen rooms carry no USD figure: 田町グランパークカンファレンス 401, 渋谷ヒカリエ 8/CUBE, SHIBUYA QWS スクランブルホール and 富士ソフト アキバプラザ セミナールーム1. Their operator pages publish the fee only as a PDF or not at all, so the cost is unknown rather than zero, and each record carries a confirm-cost question.",
+      "verified_at": "2026-11-28"
+    },
+    {
+      "kind": "evidence",
+      "text": "Each of the sixteen room records rests on a single operator or city page for its capacity, rate, hours and equipment; no second independent source was found for any room, and the record dates say so. All sixteen records are marked needs_human_verify.",
+      "verified_at": "2026-11-28"
+    },
+    {
+      "kind": "photos",
+      "text": "Eight of the sixteen rooms carry no room photograph: 新宿アイタウン会議室, 浅草橋ヒューリック ROOM 2, 東京国際フォーラム 会議室 G402, 品川インターシティ 貸会議室5 and 貸会議室1+2, 東京虎ノ門グローバルスクエア Room A+B, TKP新宿 カンファレンスルーム4C and ベルサール六本木 Room C. The captured operator pages print rate tables, layouts, scene illustrations, building exteriors or uncaptioned images, so a withheld record with that reason is stored instead of an exterior, a look-alike or a stock image. No Wikimedia image was used: no Commons file on a captured page depicts one of these hired rooms.",
+      "verified_at": "2026-11-28"
+    },
+    {
+      "kind": "licence",
+      "text": "The three local-requirement claims record the Tokyo-level and national rules for language, alcohol and food. They do not say which licence a given venue holds, whether a 50-person private event is covered, or who would hold it: alcohol service and external catering stay unknown on every room, and one room (品川インターシティ 貸会議室5) is described by its operator as alcohol-permitted only as a room fact.",
+      "verified_at": "2026-11-28"
+    },
+    {
+      "kind": "access",
+      "text": "Eleven of the sixteen rows carry a published window that covers the 8-hour 09:00-17:00 programme and supports a closing at 18:00 (allows_to_6); the other five are unknown because their operator pages publish no hire window. No room publishes a covered 09:00-21:00 hire interval, so the 12-hour preferred programme is confirmed nowhere and the 8-hour floor is the only window the evidence supports.",
+      "verified_at": "2026-11-28"
+    },
+    {
+      "kind": "sources",
+      "text": "The five programme-wide mandatory discovery sources (Miragather x3, AI Tinkerers, the DeAI Luma feed) carry no check date in this store: the Tokyo research bundle did not record them, and the page prints that fact rather than an assumed read.",
+      "verified_at": "2026-11-28"
+    },
+    {
+      "kind": "coordinates",
+      "text": "All sixteen records are building tier: the point is the building that houses the room, taken from the saved GSI address-search response for the block address, and no room entrance was verified. The two 品川インターシティ rooms share one address and therefore one point.",
+      "verified_at": "2026-11-28"
+    }
+  ],
+  "event_context": {
+    "attendance": 50,
+    "duration_hours": 8,
+    "preferred_duration_hours": 12,
+    "soft_budget_usd": 5000.0,
+    "start_local": "09:00"
+  },
+  "holiday_registry": {
+    "host_jurisdiction_id": "JP:tokyo"
+  },
+  "local_requirements": {
+    "alcohol": {
+      "additional_sources": [
+        {
+          "capture": "captures/claim_alcohol_nta_qa03.html",
+          "source_title": "国税庁 お酒に関するQ&A（よくある質問）【販売業免許関係】Q3",
+          "source_url": "https://www.nta.go.jp/taxes/sake/qa/03b/03.htm"
+        },
+        {
+          "capture": "captures/claim_alcohol_tokyo_kokuzeicho_soudan.html",
+          "source_title": "東京国税局 酒税とお酒の免許に関するご質問やご相談等について",
+          "source_url": "https://www.nta.go.jp/about/organization/tokyo/sake/sakerui/shitsumon/index.htm"
+        }
+      ],
+      "language": "ja",
+      "quote": "博覧会場等で臨時に販売場を設けて酒類の小売を行う場合には、期限を付した酒類小売業免許を申請し、取得していただく必要があります。 … 期限付酒類小売業免許を受けるためには、原則として、販売場を開設する日の２週間前までに申請する必要がありますが、一定の要件を満たす場合には、販売場を開設する日の10日前までに届け出ることで、期限付酒類小売業免許を受けたものとして取り扱うこととしています。 … 博覧会場等で臨時に酒類を販売するときは、以下の判定表で各項目を御確認いただき、臨時販売場の … 酒場、料理店その他酒類を専ら自己の営業場で飲用に供する業を行う場合には、販売業免許は必要ありませんが、例えばテイクアウト用など、その営業場以外の場所で飲用に供されるための酒類を販売する場合には、酒税法に基づき、販売場ごとにその販売場の所在地の所轄税務署長から販売業免許を受ける必要があります。 … 東京都 … 麹町 、 日本橋 、 京橋 、 四谷 、 新宿 、 小石川 、 本郷 、 中野 、 杉並 、 荻窪 … 神田税務署 酒類指導官部門 … 芝 、 麻布 、 荏原 、 目黒 、 大森 、 雪谷 、 蒲田 、 世田谷 、 北沢 、 玉川 、 渋谷 … 品川税務署 酒類指導官部門 … 東京上野 、 本所 、 向島 、 江東西 、 江東東 、 足立 、 西新井 、 葛飾 、 江戸川北 、 江戸川南 … 浅草税務署 酒類指導官部門 … 王子 、 荒川 、 板橋 、 練馬東 、 練馬西 … 豊島税務署 酒類指導官部門 … 八王子 、 武蔵野 、 青梅 、 武蔵府中 、 町田 、 日野 、 東村山 … 立川税務署 酒類指導官部門",
+      "source_locator": "captures/claim_alcohol_nta_limited_retail.html — 国税庁 期限付酒類小売業免許について, first and second paragraphs plus the 判定表 lead-in and the 要件 list; captures/claim_alcohol_nta_qa03.html — 国税庁 お酒に関するQ&A【販売業免許関係】Q3 answer, first sentence (根拠法令等 酒税法第9条、第46条); captures/claim_alcohol_tokyo_kokuzeicho_soudan.html — 東京国税局 表2 「表１の税務署の相談等を担当する税務署（酒類指導官設置署）」, the whole 東京都 block (all five rows): 神田税務署 酒類指導官部門 for 麹町・日本橋・京橋・四谷・新宿・小石川・本郷・中野・杉並・荻窪 (ten offices, 荻窪 included); 品川税務署 酒類指導官部門 for 芝・麻布・荏原・目黒・大森・雪谷・蒲田・世田谷・北沢・玉川・渋谷; 浅草税務署 酒類指導官部門 for 東京上野・本所・向島・江東西・江東東・足立・西新井・葛飾・江戸川北・江戸川南; 豊島税務署 酒類指導官部門 for 王子・荒川・板橋・練馬東・練馬西; 立川税務署 酒類指導官部門 for 八王子・武蔵野・青梅・武蔵府中・町田・日野・東村山. The page's own lead says the 表2 desk receives the enquiries for the 表1 tax offices, so the desk is fixed by the venue's 所轄税務署 and not by a single central office. The 東京都 header, the five office lists and the 税務署 cells are table markup, so those segments were matched after tag stripping; the paragraph quotes are raw substrings of the saved bytes.",
+      "source_title": "国税庁 期限付酒類小売業免許について; 国税庁 お酒に関するQ&A【販売業免許関係】Q3; 東京国税局 酒税とお酒の免許に関するご質問やご相談等について",
+      "source_url": "https://www.nta.go.jp/taxes/sake/menkyo/tebiki/kourigyou2016/index.htm",
+      "value": {
+        "authority": "国税庁（酒税法）; for a temporary 販売場 the licensing office is その販売場の所在地の所轄税務署長, and the 東京国税局 表2 lists five 酒類指導官 desks for 東京都 — 神田・品川・浅草・豊島・立川 — each serving the 税務署 printed on its own row, so which desk answers for a venue depends on that venue's 所轄税務署, not on a single central desk.",
+        "hired_room_scope": "A hired hall is not the organiser's own 営業場, so the Q3 exemption does not settle alcohol at a hired venue; nothing on these three pages addresses a private event at a rented room.",
+        "not_established": "The pages do not say whether complimentary drinks with no sale need any licence, and they set no rule for a private, invitation-only audience.",
+        "on_premises_rule_scope": "Q3 answers only for a 酒場・料理店 that serves alcohol 専ら自己の営業場: serving it there for drinking on those premises needs no 販売業免許. Q3 itself says that selling alcohol for drinking away from those premises needs a 販売業免許 from the 所轄税務署長, one per 販売場.",
+        "quoted_rule_scope": "国税庁 states that setting up a temporary 販売場 at a 博覧会場等 to retail alcohol requires a 期限を付した酒類小売業免許 (期限付酒類小売業免許), applied for in principle at least two weeks before the sales point opens, or notified at least ten days before when the 要件 are met.",
+        "selling_needs_licence": "Selling alcohol at the event — a cash or ticket bar included — is a 酒類の小売; the 国税庁 page quoted sets the 期限付酒類小売業免許 route for a temporary 販売場 at an 博覧会場・即売会場 その他これらに類する場所. Whether a private event inside a hired hall is such a place is not established by these pages.",
+        "tokyo_desk_mapping": "東京国税局 表2 東京都, as printed: 神田税務署 — 麹町・日本橋・京橋・四谷・新宿・小石川・本郷・中野・杉並・荻窪; 品川税務署 — 芝・麻布・荏原・目黒・大森・雪谷・蒲田・世田谷・北沢・玉川・渋谷; 浅草税務署 — 東京上野・本所・向島・江東西・江東東・足立・西新井・葛飾・江戸川北・江戸川南; 豊島税務署 — 王子・荒川・板橋・練馬東・練馬西; 立川税務署 — 八王子・武蔵野・青梅・武蔵府中・町田・日野・東村山.",
+        "who_must_hold_it": "Not established by these pages: whether the venue, the caterer or the organiser holds the licence for a 50-person private event stays a venue-level question carried as a declared gap on every room."
+      },
+      "verified_at": "2026-11-28"
+    },
+    "food": {
+      "additional_sources": [
+        {
+          "capture": "captures/claim_food_tokyo_kyoka.html",
+          "source_title": "東京都保健医療局 改正食品衛生法の営業許可と届出（令和３年６月１日から施行）",
+          "source_url": "https://www.hokeniryo.metro.tokyo.lg.jp/shokuhin/kyokatodokede/index.html"
+        }
+      ],
+      "language": "ja",
+      "quote": "縁日、祭礼等の行事において、簡易な施設を設けて不特定多数の方を対象として食品提供を行う場合は、臨時営業の許可申請又は臨時出店の届出が必要となります。 … 次のフローチャートを参考に、必要となる手続を確認し、 … 行事開催場所を所管する保健所へ必ず事前にご相談ください。 … Q2 行事の参加対象が特定の方に限定されている。 … 模擬店等 … 届出の手続へ … 書類は施設工事完成予定日の10日くらい前に保健所へ提出してください。 … 営業所を所管する保健所 … 令和３年６月１日から、新たな「営業の許可制度」「営業の届出制度」が始まりました！",
+      "source_locator": "captures/claim_food_tokyo_youshiki.html — 東京都保健医療局「食品衛生の窓」営業許可・届出の概要, section 臨時営業・臨時出店 (lead sentence, the フローチャート lead-in, Q2 and its 模擬店等 branch) and section 一般営業施設での営業（許可）【新規申請】 (the 10-day sentence and 営業所を所管する保健所); captures/claim_food_tokyo_kyoka.html — 改正食品衛生法の営業許可と届出（令和３年６月１日から施行） lead sentence and page footer manager line. The Q2 and 営業所を所管する保健所 segments carry list/link markup, so those were matched after tag stripping; the rest are raw substrings of the saved bytes.",
+      "source_title": "東京都保健医療局「食品衛生の窓」 営業許可・届出の概要 and 改正食品衛生法の営業許可と届出",
+      "source_url": "https://www.hokeniryo.metro.tokyo.lg.jp/shokuhin/kyokatodokede/youshiki.html",
+      "value": {
+        "authority": "東京都保健医療局 健康安全部 食品監視課 規格基準担当; the licence counter is the 保健所 that covers the premises",
+        "event_route": "For a one-off 縁日・祭礼-style event where a simple installation serves food to an unspecified public, the city requires either a 臨時営業 licence application or a 臨時出店 notification, and tells the organiser to consult the 保健所 that covers the event venue beforehand.",
+        "fixed_premises": "A food business at a fixed premises applies for 営業許可 to the 保健所 that covers that premises (営業所を所管する保健所), submitting documents about ten days before the planned completion of the facility works.",
+        "licence": "食品衛生法に基づく営業許可（飲食店営業を含む）",
+        "limited_audience_route": "The published flowchart asks whether the event's participants are restricted to specific people; `はい` routes to the 模擬店等 届出 procedure. A 50-person private event falls in that 「参加対象が特定」 branch of the chart, not the 不特定多数 one — but the chart is a pointer to the 保健所, not a permit.",
+        "not_established": "These pages do not say who holds the licence for a private event (caterer or organiser), whether a member-only event needs any notification at all, or what the fee and lead time are for the 模擬店等 route; those stay venue-level questions."
+      },
+      "verified_at": "2026-11-28"
+    },
+    "language": {
+      "additional_sources": [
+        {
+          "capture": "captures/claim_language_tokyo_simple_ja_en.html",
+          "source_title": "TMG English — Connecting words, connecting hearts (2020-12-03, Bureau of Citizens, Culture and Sports)",
+          "source_url": "https://www.metro.tokyo.lg.jp/english/topics/2020/1203_01.html"
+        }
+      ],
+      "language": "ja",
+      "quote": "「やさしい日本語」とは、難しい言葉を言い換えるなど、相手に配慮したわかりやすい日本語のことです。 … 「やさしい日本語」は、日本語の持つ美しさや豊かさを軽視するものではなく、外国人、高齢者や障害のある人など、その人にあった言語調整を行い、多くの人に日本語を使ってわかりやすく伝えようとするものです。 … As of January 2020 there were 580,000 foreign nationals residing in Tokyo … Languages that foreigners residing in Japan can understand: Japanese 60%, English 40%",
+      "source_locator": "captures/claim_language_tokyo_yasashii.html — block 「やさしい日本語とは」 (page dated 2025-10-24), second and third paragraphs of やさしい日本語とは; captures/claim_language_tokyo_simple_ja_en.html — the 2020-12-03 TMG article body (Bureau of Citizens, Culture and Sports), sentence \"As of January 2020 there were 580,000 foreign nationals residing in Tokyo\" and the caption \"Languages that foreigners residing in Japan can understand: Japanese 60%, English 40%\". Both pages were read from the saved bytes after tag stripping and whitespace normalisation, so no line numbers are asserted.",
+      "source_title": "東京都生活文化局「やさしい日本語（にほんご）」 (updated 2025-10-24) and TMG English article \"Connecting words, connecting hearts — Preparation of a Video to Promote Simple Japanese\" (2020-12-03)",
+      "source_url": "https://www.seikatubunka.metro.tokyo.lg.jp/chiiki_tabunka/tabunka/tabunkasuishin/0000001389",
+      "value": {
+        "access_implication": "An event whose copy, signage and stage language are English-only reaches at most the 40% the TMG article records for English, and Japanese-only copy is not a universal fallback either; the city's own published answer is adjusted Japanese, not a single fixed language.",
+        "authority": "東京都 生活文化局 都民生活部 地域活動推進課 多文化共生推進担当",
+        "city_guidance": "The city defines やさしい日本語 as Japanese made easy to understand by replacing difficult words, and says the practice adjusts the language to the person — 外国人、高齢者や障害のある人など — rather than assuming one register reaches everyone.",
+        "comprehension_figures": "The same TMG article reports that among foreigners residing in Japan 60% can understand Japanese and 40% English, attributing the figures to a 2018 Tokyo International Communication Committee interview survey on information communication for foreigners residing in Tokyo.",
+        "not_established": "These pages set no obligation on a private event's language, and they do not say what share of Tokyo's foreign residents understand やさしい日本語; the figures are about comprehension of Japanese and English, not of adjusted Japanese.",
+        "resident_profile": "The Tokyo Metropolitan Government's own English article puts the number of foreign nationals residing in Tokyo at 580,000 as of January 2020."
+      },
+      "verified_at": "2026-11-28"
+    }
+  },
+  "notes": [
+    "Built from the approved research bundle research/tokyo/2027 (16 venues: 14 shortlist_ready, 2 lead; 12 communities; 17 calendar rows).",
+    "Registry: installed Asia edition 3b20667de940342954040f06d6695d490d8e27515d536969d127a0fa92bacdaf, host scope JP:tokyo, no supplement; the five JP:tokyo rows are used as they are printed.",
+    "Paired brief: 50 people, 09:00 start, 8-hour floor (09:00-17:00), 12-hour preferred (09:00-21:00), soft USD 5,000, calendar year 2027, no recommended date.",
+    "Photos: operator gallery first; 14 verified operator images across 8 rooms and 8 explicit withheld records; no Wikimedia image was used because no Commons file on a captured page depicts one of these hired rooms."
+  ],
+  "photos": {
+    "SHIBUYA QWS スクランブルホール (Scramble Hall)": [
+      {
+        "alt": "SCRAMBLE HALL, interior, operator photograph scramble_img01",
+        "alt_basis": "operator_page_caption",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 664,
+          "width": 996
+        },
+        "hotlink_ok": true,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+        "room": "SCRAMBLE HALL",
+        "room_specific": true,
+        "source_page": "https://shibuya-qws.com/space",
+        "url": "https://shibuya-qws.com/wp-content/themes/qws-2023/assets/img/about/space/scramble_img01.jpg",
+        "verified": {
+          "bytes": 542407,
+          "checked_on": "2026-11-28",
+          "content_type": "image/jpeg",
+          "status": "200"
+        },
+        "view_kind": "interior",
+        "withheld": false
+      },
+      {
+        "alt": "SCRAMBLE HALL, interior, operator photograph scramble_img02",
+        "alt_basis": "operator_page_caption",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 664,
+          "width": 996
+        },
+        "hotlink_ok": true,
+        "index": 1,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+        "room": "SCRAMBLE HALL",
+        "room_specific": true,
+        "source_page": "https://shibuya-qws.com/space",
+        "url": "https://shibuya-qws.com/wp-content/themes/qws-2023/assets/img/about/space/scramble_img02.jpg",
+        "verified": {
+          "bytes": 225631,
+          "checked_on": "2026-11-28",
+          "content_type": "image/jpeg",
+          "status": "200"
+        },
+        "view_kind": "interior",
+        "withheld": false
+      }
+    ],
+    "TKP新宿カンファレンスセンター カンファレンスルーム4C": [
+      {
+        "alt": "No photograph of this room on a captured operator page",
+        "alt_basis": "none",
+        "checked_on": "2026-11-28",
+        "hotlink_ok": null,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "placement_proof": "Withheld: the captured page prints the building exterior, a generic 会議室 thumbnail and floor maps; no photograph captioned カンファレンスルーム4C was on the page on 2026-11-28.",
+        "player_page": null,
+        "rights": null,
+        "rights_basis": "none",
+        "rights_note": "Nothing is shown rather than an exterior, a look-alike or a stock image.",
+        "room": "none",
+        "room_specific": false,
+        "source_page": "https://www.kashikaigishitsu.net/facilitys/cc-shinjuku/",
+        "url": null,
+        "verified": null,
+        "view_kind": null,
+        "withheld": true
+      }
+    ],
+    "ベルサール六本木グランドコンファレンスセンター Room C": [
+      {
+        "alt": "No photograph of this room on a captured operator page",
+        "alt_basis": "none",
+        "checked_on": "2026-11-28",
+        "hotlink_ok": null,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "placement_proof": "Withheld: the page's photographs are hash-named and uncaptioned and the only named images are the 9F floor plan, ベルサール虎ノ門, 泉ガーデンギャラリー and the ベルサール六本木 key visual; no image is captioned Room C.",
+        "player_page": null,
+        "rights": null,
+        "rights_basis": "none",
+        "rights_note": "Nothing is shown rather than an exterior, a look-alike or a stock image.",
+        "room": "none",
+        "room_specific": false,
+        "source_page": "https://www.bellesalle.co.jp/shisetsu/roppongi/bs_roppongi_cc",
+        "url": null,
+        "verified": null,
+        "view_kind": null,
+        "withheld": true
+      }
+    ],
+    "レンタルスペース Palette六本木 (81 seats)": [
+      {
+        "alt": "Palette六本木 hire room, interior, operator photograph DSC04629",
+        "alt_basis": "operator_page_caption",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 1365,
+          "width": 2048
+        },
+        "hotlink_ok": true,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+        "room": "Palette六本木 (302)",
+        "room_specific": true,
+        "source_page": "https://palette-space.com/kaigi/roppongi/",
+        "url": "https://palette-space.com/kaigi/roppongi/wp-content/uploads/2026/01/DSC04629.png",
+        "verified": {
+          "bytes": 3081792,
+          "checked_on": "2026-11-28",
+          "content_type": "image/png",
+          "status": "200"
+        },
+        "view_kind": "interior",
+        "withheld": false
+      },
+      {
+        "alt": "Palette六本木 hire room, interior, operator photograph DSC04645",
+        "alt_basis": "operator_page_caption",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 1365,
+          "width": 2048
+        },
+        "hotlink_ok": true,
+        "index": 1,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+        "room": "Palette六本木 (302)",
+        "room_specific": true,
+        "source_page": "https://palette-space.com/kaigi/roppongi/",
+        "url": "https://palette-space.com/kaigi/roppongi/wp-content/uploads/2026/01/DSC04645.jpg",
+        "verified": {
+          "bytes": 1722149,
+          "checked_on": "2026-11-28",
+          "content_type": "image/jpeg",
+          "status": "200"
+        },
+        "view_kind": "interior",
+        "withheld": false
+      }
+    ],
+    "品川インターシティ 貸会議室1+2 (combined)": [
+      {
+        "alt": "No photograph of this room on a captured operator page",
+        "alt_basis": "none",
+        "checked_on": "2026-11-28",
+        "hotlink_ok": null,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "placement_proof": "Withheld: the same conference page gives a hall-characteristic photo, a foyer shot and the building exterior; no photograph of 会議室1+2 was on a captured page on 2026-11-28.",
+        "player_page": null,
+        "rights": null,
+        "rights_basis": "none",
+        "rights_note": "Nothing is shown rather than an exterior, a look-alike or a stock image.",
+        "room": "none",
+        "room_specific": false,
+        "source_page": "https://sic-hall.com/about-conference/",
+        "url": null,
+        "verified": null,
+        "view_kind": null,
+        "withheld": true
+      }
+    ],
+    "品川インターシティ 貸会議室5 (alcohol-permitted room)": [
+      {
+        "alt": "No photograph of this room on a captured operator page",
+        "alt_basis": "none",
+        "checked_on": "2026-11-28",
+        "hotlink_ok": null,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "placement_proof": "Withheld: the captured conference page prints a hall-characteristic photo, a foyer shot and the Shinagawa Intercity exterior; no photograph of 会議室5 was on a captured page on 2026-11-28.",
+        "player_page": null,
+        "rights": null,
+        "rights_basis": "none",
+        "rights_note": "Nothing is shown rather than an exterior, a look-alike or a stock image.",
+        "room": "none",
+        "room_specific": false,
+        "source_page": "https://sic-hall.com/about-conference/",
+        "url": null,
+        "verified": null,
+        "view_kind": null,
+        "withheld": true
+      }
+    ],
+    "大手町プレイス ホール&カンファレンス カンファレンス103": [
+      {
+        "alt": "カンファレンス103, school layout with three seats per table",
+        "alt_basis": "operator_page_caption",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 960,
+          "width": 1280
+        },
+        "hotlink_ok": true,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source. The image sits in the カンファレンス103 place card on the captured 101 page (alt=\"カンファレンス103\"), not in 101's own gallery.",
+        "room": "1F カンファレンス103",
+        "room_specific": true,
+        "source_page": "https://otemachi-place-hc.jp/conference/101/",
+        "url": "https://otemachi-place-hc.jp/wp-content/uploads/sites/2/2025/04/1F_103_school3_01.jpg",
+        "verified": {
+          "bytes": 239589,
+          "checked_on": "2026-11-28",
+          "content_type": "image/jpeg",
+          "status": "200"
+        },
+        "view_kind": "interior",
+        "withheld": false
+      }
+    ],
+    "富士ソフト アキバプラザ セミナールーム1": [
+      {
+        "alt": "セミナールーム1, interior (operator caption セミナールーム1)",
+        "alt_basis": "operator_page_caption",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 400,
+          "width": 800
+        },
+        "hotlink_ok": true,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+        "room": "セミナールーム1",
+        "room_specific": true,
+        "source_page": "https://www.fsi.co.jp/akibaplaza/h_room.html",
+        "url": "https://www.fsi.co.jp/akibaplaza/img/room/sem11.jpg",
+        "verified": {
+          "bytes": 277174,
+          "checked_on": "2026-11-28",
+          "content_type": "image/jpeg",
+          "status": "200"
+        },
+        "view_kind": "interior",
+        "withheld": false
+      }
+    ],
+    "新宿アイタウン会議室 (Shinjuku i-Town Meeting Room, アイタウン・プラザ206)": [
+      {
+        "alt": "No photograph of this room on a captured operator page",
+        "alt_basis": "none",
+        "checked_on": "2026-11-28",
+        "hotlink_ok": null,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "placement_proof": "Withheld: the captured site prints 利用イメージ scene illustrations (training, meeting, seminar, webinar, negotiation, party) and equipment shots only; no photograph of アイタウン・プラザ206 was on a captured page on 2026-11-28.",
+        "player_page": null,
+        "rights": null,
+        "rights_basis": "none",
+        "rights_note": "Nothing is shown rather than an exterior, a look-alike or a stock image.",
+        "room": "none",
+        "room_specific": false,
+        "source_page": "https://shinjuku-conferenceroom.iriekando.com/",
+        "url": null,
+        "verified": null,
+        "view_kind": null,
+        "withheld": true
+      }
+    ],
+    "東京国際フォーラム 会議室 G402": [
+      {
+        "alt": "No photograph of this room on a captured operator page",
+        "alt_basis": "none",
+        "checked_on": "2026-11-28",
+        "hotlink_ok": null,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "placement_proof": "Withheld: the only G402-captioned image on the captured page is images/250-waiting-room-02.jpg (alt=\"G402\"), its 控室 (waiting room), not the conference room; the six uncaptioned 250-gallery images are not named per room.",
+        "player_page": null,
+        "rights": null,
+        "rights_basis": "none",
+        "rights_note": "Nothing is shown rather than an exterior, a look-alike or a stock image.",
+        "room": "none",
+        "room_specific": false,
+        "source_page": "https://www.t-i-forum.co.jp/organizer/facilities/conference/",
+        "url": null,
+        "verified": null,
+        "view_kind": null,
+        "withheld": true
+      }
+    ],
+    "東京虎ノ門グローバルスクエア コンファレンス Room A+B (貸切)": [
+      {
+        "alt": "No photograph of this room on a captured operator page",
+        "alt_basis": "none",
+        "checked_on": "2026-11-28",
+        "hotlink_ok": null,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "placement_proof": "Withheld: the homepage gallery is captioned 貸切できる会議室1/2/3 and the rest are building, access and catering images; no captured page names Room A+B.",
+        "player_page": null,
+        "rights": null,
+        "rights_basis": "none",
+        "rights_note": "Nothing is shown rather than an exterior, a look-alike or a stock image.",
+        "room": "none",
+        "room_specific": false,
+        "source_page": "https://tgsc.tokyo/",
+        "url": null,
+        "verified": null,
+        "view_kind": null,
+        "withheld": true
+      }
+    ],
+    "浅草橋ヒューリック カンファレンス ROOM 2": [
+      {
+        "alt": "No photograph of this room on a captured operator page",
+        "alt_basis": "none",
+        "checked_on": "2026-11-28",
+        "hotlink_ok": null,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "placement_proof": "Withheld: the captured conference price and equipment pages print a rate table, a layout sheet and a ROOM0 party-slider captioned ROOM0 01/02; no photograph captioned ROOM 2 was on a captured page on 2026-11-28.",
+        "player_page": null,
+        "rights": null,
+        "rights_basis": "none",
+        "rights_note": "Nothing is shown rather than an exterior, a look-alike or a stock image.",
+        "room": "none",
+        "room_specific": false,
+        "source_page": "https://hulic-hall.com/about-conference/price/",
+        "url": null,
+        "verified": null,
+        "view_kind": null,
+        "withheld": true
+      }
+    ],
+    "渋谷ヒカリエ 8/ CUBE (Shibuya Hikarie 8/CUBE)": [
+      {
+        "alt": "8/CUBE, interior, operator photograph hikarie8_cube_001",
+        "alt_basis": "operator_page_caption",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 640,
+          "width": 960
+        },
+        "hotlink_ok": true,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+        "room": "8/CUBE",
+        "room_specific": true,
+        "source_page": "https://www.hikarie8.com/cube",
+        "url": "https://www.hikarie8.com/hs-fs/hubfs/hikarie8_2026/assets/images/cube/hikarie8_cube_001.jpg?width=960&height=640&name=hikarie8_cube_001.jpg",
+        "verified": {
+          "bytes": 28427,
+          "checked_on": "2026-11-28",
+          "content_type": "image/jpeg",
+          "status": "200"
+        },
+        "view_kind": "interior",
+        "withheld": false
+      },
+      {
+        "alt": "8/CUBE, interior, operator photograph hikarie8_cube_002",
+        "alt_basis": "operator_page_caption",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 640,
+          "width": 960
+        },
+        "hotlink_ok": true,
+        "index": 1,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+        "room": "8/CUBE",
+        "room_specific": true,
+        "source_page": "https://www.hikarie8.com/cube",
+        "url": "https://www.hikarie8.com/hs-fs/hubfs/hikarie8_2026/assets/images/cube/hikarie8_cube_002.jpg?width=960&height=640&name=hikarie8_cube_002.jpg",
+        "verified": {
+          "bytes": 13443,
+          "checked_on": "2026-11-28",
+          "content_type": "image/jpeg",
+          "status": "200"
+        },
+        "view_kind": "interior",
+        "withheld": false
+      }
+    ],
+    "港区立産業振興センター 研修室1": [
+      {
+        "alt": "研修室1, interior, operator photograph 01.研修室１",
+        "alt_basis": "operator_page_caption",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 225,
+          "width": 300
+        },
+        "hotlink_ok": true,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source. 300x225 is the only published size; the full-size original was not linked on the captured page.",
+        "room": "研修室1",
+        "room_specific": true,
+        "source_page": "https://minato-sansin.com/another/kensyuusitu/",
+        "url": "https://minato-sansin.com/wp-content/uploads/2022/03/01.%E7%A0%94%E4%BF%AE%E5%AE%A4%EF%BC%91-300x225.jpg",
+        "verified": {
+          "bytes": 17758,
+          "checked_on": "2026-11-28",
+          "content_type": "image/jpeg",
+          "status": "200"
+        },
+        "view_kind": "interior",
+        "withheld": false
+      },
+      {
+        "alt": "研修室1, interior, operator photograph 02.研修室１",
+        "alt_basis": "operator_page_caption",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 225,
+          "width": 300
+        },
+        "hotlink_ok": true,
+        "index": 1,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source. 300x225 is the only published size; the full-size original was not linked on the captured page.",
+        "room": "研修室1",
+        "room_specific": true,
+        "source_page": "https://minato-sansin.com/another/kensyuusitu/",
+        "url": "https://minato-sansin.com/wp-content/uploads/2022/03/02.%E7%A0%94%E4%BF%AE%E5%AE%A4%EF%BC%91-300x225.jpg",
+        "verified": {
+          "bytes": 17973,
+          "checked_on": "2026-11-28",
+          "content_type": "image/jpeg",
+          "status": "200"
+        },
+        "view_kind": "interior",
+        "withheld": false
+      }
+    ],
+    "田町グランパークカンファレンス 401（控室付き）": [
+      {
+        "alt": "401 with its 控室, operator room photograph 401_01",
+        "alt_basis": "operator_page_caption",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 430,
+          "width": 650
+        },
+        "hotlink_ok": true,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+        "room": "401 + 控室",
+        "room_specific": true,
+        "source_page": "https://granpark-c.com/room-401/",
+        "url": "https://granpark-c.com/granpa/wp-content/themes/gran/assets/img/room/401_01.jpg",
+        "verified": {
+          "bytes": 183490,
+          "checked_on": "2026-11-28",
+          "content_type": "image/jpeg",
+          "status": "200"
+        },
+        "view_kind": "interior",
+        "withheld": false
+      },
+      {
+        "alt": "401 with its 控室, operator room photograph 401_02",
+        "alt_basis": "operator_page_caption",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 430,
+          "width": 650
+        },
+        "hotlink_ok": true,
+        "index": 1,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+        "room": "401 + 控室",
+        "room_specific": true,
+        "source_page": "https://granpark-c.com/room-401/",
+        "url": "https://granpark-c.com/granpa/wp-content/themes/gran/assets/img/room/401_02.jpg",
+        "verified": {
+          "bytes": 198090,
+          "checked_on": "2026-11-28",
+          "content_type": "image/jpeg",
+          "status": "200"
+        },
+        "view_kind": "interior",
+        "withheld": false
+      }
+    ],
+    "赤坂インターシティコンファレンス (AICC) Room 301": [
+      {
+        "alt": "Room 301, interior, operator photograph img_301_1",
+        "alt_basis": "operator_page_caption",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 337,
+          "width": 450
+        },
+        "hotlink_ok": true,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+        "room": "Room 301",
+        "room_specific": true,
+        "source_page": "https://aicc.tokyo/facility/301",
+        "url": "https://aicc.tokyo/facility/301/img/img_301_1.jpg",
+        "verified": {
+          "bytes": 45219,
+          "checked_on": "2026-11-28",
+          "content_type": "image/jpeg",
+          "status": "200"
+        },
+        "view_kind": "interior",
+        "withheld": false
+      },
+      {
+        "alt": "Room 301, interior, operator photograph img_301_2",
+        "alt_basis": "operator_page_caption",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 337,
+          "width": 450
+        },
+        "hotlink_ok": true,
+        "index": 1,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+        "room": "Room 301",
+        "room_specific": true,
+        "source_page": "https://aicc.tokyo/facility/301",
+        "url": "https://aicc.tokyo/facility/301/img/img_301_2.jpg",
+        "verified": {
+          "bytes": 42130,
+          "checked_on": "2026-11-28",
+          "content_type": "image/jpeg",
+          "status": "200"
+        },
+        "view_kind": "interior",
+        "withheld": false
+      }
+    ]
+  },
+  "schema_version": "city-reviewed-inputs/1",
+  "sources": [
+    {
+      "check_status": "checked",
+      "checked_on": "2026-11-28",
+      "note": "captures/claim_language_tokyo_yasashii.html — language claim source (東京都生活文化局)",
+      "title": "東京都生活文化局「やさしい日本語（にほんご）」",
+      "url": "https://www.seikatubunka.metro.tokyo.lg.jp/chiiki_tabunka/tabunka/tabunkasuishin/0000001389"
+    },
+    {
+      "check_status": "checked",
+      "checked_on": "2026-11-28",
+      "note": "captures/claim_language_tokyo_simple_ja_en.html — 580,000 foreign residents and the 60%/40% comprehension figures",
+      "title": "TMG English — Connecting words, connecting hearts (2020-12-03)",
+      "url": "https://www.metro.tokyo.lg.jp/english/topics/2020/1203_01.html"
+    },
+    {
+      "check_status": "checked",
+      "checked_on": "2026-11-28",
+      "note": "captures/claim_alcohol_nta_limited_retail.html — alcohol claim source (期限付酒類小売業免許)",
+      "title": "国税庁 期限付酒類小売業免許について",
+      "url": "https://www.nta.go.jp/taxes/sake/menkyo/tebiki/kourigyou2016/index.htm"
+    },
+    {
+      "check_status": "checked",
+      "checked_on": "2026-11-28",
+      "note": "captures/claim_alcohol_nta_qa03.html — Q3 own-premises scope, quoted so the value cannot overreach it",
+      "title": "国税庁 お酒に関するQ&A【販売業免許関係】Q3",
+      "url": "https://www.nta.go.jp/taxes/sake/qa/03b/03.htm"
+    },
+    {
+      "check_status": "checked",
+      "checked_on": "2026-11-28",
+      "note": "captures/claim_alcohol_tokyo_kokuzeicho_soudan.html — 東京都 row: the 酒類指導官 desks covering Tokyo",
+      "title": "東京国税局 酒税とお酒の免許に関するご質問やご相談等について",
+      "url": "https://www.nta.go.jp/about/organization/tokyo/sake/sakerui/shitsumon/index.htm"
+    },
+    {
+      "check_status": "checked",
+      "checked_on": "2026-11-28",
+      "note": "captures/claim_food_tokyo_youshiki.html — food claim source (臨時営業・臨時出店 + 一般営業施設)",
+      "title": "東京都保健医療局「食品衛生の窓」営業許可・届出の概要",
+      "url": "https://www.hokeniryo.metro.tokyo.lg.jp/shokuhin/kyokatodokede/youshiki.html"
+    },
+    {
+      "check_status": "checked",
+      "checked_on": "2026-11-28",
+      "note": "captures/claim_food_tokyo_kyoka.html — 改正食品衛生法の営業許可と届出, the licence/notification regime page",
+      "title": "東京都保健医療局 改正食品衛生法の営業許可と届出（令和３年６月１日から施行）",
+      "url": "https://www.hokeniryo.metro.tokyo.lg.jp/shokuhin/kyokatodokede/index.html"
+    }
+  ],
+  "venue_coordinates": {
+    "SHIBUYA QWS スクランブルホール (Scramble Hall)": {
+      "language": "ja",
+      "map_target": "渋谷スクランブルスクエア 15F, 渋谷区渋谷2-24-12",
+      "precision": "building",
+      "quote": "東京都渋谷区渋谷2-24-12 — 東京都渋谷区渋谷二丁目２４番１２号 — returned latitude 35.657951, longitude 139.702316",
+      "source_locator": "captures/geo_results.json — \"qws-shibuya\" entry (address 東京都渋谷区渋谷2-24-12; matched_title 東京都渋谷区渋谷二丁目２４番１２号; latitude 35.657951, longitude 139.702316); the same lookup is saved as captures/geo_qws-shibuya.json. GSI address-search does not return a building polygon, so the tier stays `building`.",
+      "source_url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=東京都渋谷区渋谷2-24-12",
+      "verified_at": "2026-11-28"
+    },
+    "TKP新宿カンファレンスセンター カンファレンスルーム4C": {
+      "language": "ja",
+      "map_target": "大和西新宿ビル 4-6F, 新宿区西新宿1-14-11",
+      "precision": "building",
+      "quote": "東京都新宿区西新宿1-14-11 — 東京都新宿区西新宿一丁目１４番１１号 — returned latitude 35.688766, longitude 139.696625",
+      "source_locator": "captures/geo_results.json — \"tkp-shinjuku\" entry (address 東京都新宿区西新宿1-14-11; matched_title 東京都新宿区西新宿一丁目１４番１１号; latitude 35.688766, longitude 139.696625); the same lookup is saved as captures/geo_tkp-shinjuku.json. GSI address-search does not return a building polygon, so the tier stays `building`.",
+      "source_url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=東京都新宿区西新宿1-14-11",
+      "verified_at": "2026-11-28"
+    },
+    "ベルサール六本木グランドコンファレンスセンター Room C": {
+      "language": "ja",
+      "map_target": "住友不動産六本木グランドタワー 9F, 港区六本木3-2-1",
+      "precision": "building",
+      "quote": "東京都港区六本木3-2-1 — 東京都港区六本木三丁目２番 — returned latitude 35.66449, longitude 139.737473",
+      "source_locator": "captures/geo_results.json — \"bellesalle-roppongi-grand\" entry (address 東京都港区六本木3-2-1; matched_title 東京都港区六本木三丁目２番; latitude 35.66449, longitude 139.737473); the same lookup is saved as captures/geo_bellesalle-roppongi-grand.json. GSI address-search does not return a building polygon, so the tier stays `building`.",
+      "source_url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=東京都港区六本木3-2-1",
+      "verified_at": "2026-11-28"
+    },
+    "レンタルスペース Palette六本木 (81 seats)": {
+      "language": "ja",
+      "map_target": "Palette六本木（ほうらいやビル302）, 港区六本木5-2-1",
+      "precision": "building",
+      "quote": "東京都港区六本木5-2-1 — 東京都港区六本木五丁目２番 — returned latitude 35.662334, longitude 139.733658",
+      "source_locator": "captures/geo_results.json — \"palette-roppongi\" entry (address 東京都港区六本木5-2-1; matched_title 東京都港区六本木五丁目２番; latitude 35.662334, longitude 139.733658); the same lookup is saved as captures/geo_palette-roppongi.json. GSI address-search does not return a building polygon, so the tier stays `building`.",
+      "source_url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=東京都港区六本木5-2-1",
+      "verified_at": "2026-11-28"
+    },
+    "品川インターシティ 貸会議室1+2 (combined)": {
+      "language": "ja",
+      "map_target": "品川インターシティホール B1F, 港区港南2-15-4",
+      "precision": "building",
+      "quote": "東京都港区港南2-15-4 — 東京都港区港南二丁目１５番 — returned latitude 35.626335, longitude 139.742004",
+      "source_locator": "captures/geo_results.json — \"shinagawa-intercity\" entry (address 東京都港区港南2-15-4; matched_title 東京都港区港南二丁目１５番; latitude 35.626335, longitude 139.742004); the same lookup is saved as captures/geo_shinagawa-intercity.json. GSI address-search does not return a building polygon, so the tier stays `building`.",
+      "source_url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=東京都港区港南2-15-4",
+      "verified_at": "2026-11-28"
+    },
+    "品川インターシティ 貸会議室5 (alcohol-permitted room)": {
+      "language": "ja",
+      "map_target": "品川インターシティホール B1F, 港区港南2-15-4",
+      "precision": "building",
+      "quote": "東京都港区港南2-15-4 — 東京都港区港南二丁目１５番 — returned latitude 35.626335, longitude 139.742004",
+      "source_locator": "captures/geo_results.json — \"shinagawa-intercity\" entry (address 東京都港区港南2-15-4; matched_title 東京都港区港南二丁目１５番; latitude 35.626335, longitude 139.742004); the same lookup is saved as captures/geo_shinagawa-intercity.json. GSI address-search does not return a building polygon, so the tier stays `building`.",
+      "source_url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=東京都港区港南2-15-4",
+      "verified_at": "2026-11-28"
+    },
+    "大手町プレイス ホール&カンファレンス カンファレンス103": {
+      "language": "ja",
+      "map_target": "大手町プレイス イーストタワー1F, 千代田区大手町2-3-1",
+      "precision": "building",
+      "quote": "東京都千代田区大手町2-3-1 — 東京都千代田区大手町二丁目３番 — returned latitude 35.686779, longitude 139.767426",
+      "source_locator": "captures/geo_results.json — \"otemachi-place\" entry (address 東京都千代田区大手町2-3-1; matched_title 東京都千代田区大手町二丁目３番; latitude 35.686779, longitude 139.767426); the same lookup is saved as captures/geo_otemachi-place.json. GSI address-search does not return a building polygon, so the tier stays `building`.",
+      "source_url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=東京都千代田区大手町2-3-1",
+      "verified_at": "2026-11-28"
+    },
+    "富士ソフト アキバプラザ セミナールーム1": {
+      "language": "ja",
+      "map_target": "富士ソフト アキバプラザ 6F, 千代田区神田練塀町3",
+      "precision": "building",
+      "quote": "東京都千代田区神田練塀町3 — 東京都千代田区神田練塀町３番地 — returned latitude 35.699333, longitude 139.774689",
+      "source_locator": "captures/geo_results.json — \"akiba-plaza\" entry (address 東京都千代田区神田練塀町3; matched_title 東京都千代田区神田練塀町３番地; latitude 35.699333, longitude 139.774689); the same lookup is saved as captures/geo_akiba-plaza.json. GSI address-search does not return a building polygon, so the tier stays `building`.",
+      "source_url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=東京都千代田区神田練塀町3",
+      "verified_at": "2026-11-28"
+    },
+    "新宿アイタウン会議室 (Shinjuku i-Town Meeting Room, アイタウン・プラザ206)": {
+      "language": "ja",
+      "map_target": "アイタウン・プラザ206, 新宿区西新宿6-21-1",
+      "precision": "building",
+      "quote": "東京都新宿区西新宿6-21-1 — 東京都新宿区西新宿六丁目２１番 — returned latitude 35.693653, longitude 139.687759",
+      "source_locator": "captures/geo_results.json — \"itown-shinjuku\" entry (address 東京都新宿区西新宿6-21-1; matched_title 東京都新宿区西新宿六丁目２１番; latitude 35.693653, longitude 139.687759); the same lookup is saved as captures/geo_itown-shinjuku.json. GSI address-search does not return a building polygon, so the tier stays `building`.",
+      "source_url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=東京都新宿区西新宿6-21-1",
+      "verified_at": "2026-11-28"
+    },
+    "東京国際フォーラム 会議室 G402": {
+      "language": "ja",
+      "map_target": "東京国際フォーラム ガラス棟4F, 千代田区丸の内3-5-1",
+      "precision": "building",
+      "quote": "東京都千代田区丸の内3-5-1 — 東京都千代田区丸の内三丁目５番 — returned latitude 35.676849, longitude 139.76387",
+      "source_locator": "captures/geo_results.json — \"tokyo-international-forum\" entry (address 東京都千代田区丸の内3-5-1; matched_title 東京都千代田区丸の内三丁目５番; latitude 35.676849, longitude 139.76387); the same lookup is saved as captures/geo_tokyo-international-forum.json. GSI address-search does not return a building polygon, so the tier stays `building`.",
+      "source_url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=東京都千代田区丸の内3-5-1",
+      "verified_at": "2026-11-28"
+    },
+    "東京虎ノ門グローバルスクエア コンファレンス Room A+B (貸切)": {
+      "language": "ja",
+      "map_target": "東京虎ノ門グローバルスクエア 4F, 港区虎ノ門1-3-1",
+      "precision": "building",
+      "quote": "東京都港区虎ノ門1-3-1 — 東京都港区虎ノ門一丁目３番 — returned latitude 35.669991, longitude 139.74968",
+      "source_locator": "captures/geo_results.json — \"tgsc-toranomon\" entry (address 東京都港区虎ノ門1-3-1; matched_title 東京都港区虎ノ門一丁目３番; latitude 35.669991, longitude 139.74968); the same lookup is saved as captures/geo_tgsc-toranomon.json. GSI address-search does not return a building polygon, so the tier stays `building`.",
+      "source_url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=東京都港区虎ノ門1-3-1",
+      "verified_at": "2026-11-28"
+    },
+    "浅草橋ヒューリック カンファレンス ROOM 2": {
+      "language": "ja",
+      "map_target": "浅草橋ヒューリックビル3F, 台東区浅草橋1-22-16",
+      "precision": "building",
+      "quote": "東京都台東区浅草橋1-22-16 — 東京都台東区浅草橋一丁目２２番１６号 — returned latitude 35.697903, longitude 139.784592",
+      "source_locator": "captures/geo_results.json — \"hulic-asakusabashi\" entry (address 東京都台東区浅草橋1-22-16; matched_title 東京都台東区浅草橋一丁目２２番１６号; latitude 35.697903, longitude 139.784592); the same lookup is saved as captures/geo_hulic-asakusabashi.json. GSI address-search does not return a building polygon, so the tier stays `building`.",
+      "source_url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=東京都台東区浅草橋1-22-16",
+      "verified_at": "2026-11-28"
+    },
+    "渋谷ヒカリエ 8/ CUBE (Shibuya Hikarie 8/CUBE)": {
+      "language": "ja",
+      "map_target": "渋谷ヒカリエ 8F, 渋谷区渋谷2-21-1",
+      "precision": "building",
+      "quote": "東京都渋谷区渋谷2-21-1 — 東京都渋谷区渋谷二丁目２１番１号 — returned latitude 35.659267, longitude 139.703964",
+      "source_locator": "captures/geo_results.json — \"hikarie-shibuya\" entry (address 東京都渋谷区渋谷2-21-1; matched_title 東京都渋谷区渋谷二丁目２１番１号; latitude 35.659267, longitude 139.703964); the same lookup is saved as captures/geo_hikarie-shibuya.json. GSI address-search does not return a building polygon, so the tier stays `building`.",
+      "source_url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=東京都渋谷区渋谷2-21-1",
+      "verified_at": "2026-11-28"
+    },
+    "港区立産業振興センター 研修室1": {
+      "language": "ja",
+      "map_target": "芝のつじスクエア 10F, 港区芝5-36-4",
+      "precision": "building",
+      "quote": "東京都港区芝5-36-4 — 東京都港区芝五丁目３６番 — returned latitude 35.644859, longitude 139.744904",
+      "source_locator": "captures/geo_results.json — \"minato-sangyo-shiba\" entry (address 東京都港区芝5-36-4; matched_title 東京都港区芝五丁目３６番; latitude 35.644859, longitude 139.744904); the same lookup is saved as captures/geo_minato-sangyo-shiba.json. GSI address-search does not return a building polygon, so the tier stays `building`.",
+      "source_url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=東京都港区芝5-36-4",
+      "verified_at": "2026-11-28"
+    },
+    "田町グランパークカンファレンス 401（控室付き）": {
+      "language": "ja",
+      "map_target": "田町グランパークタワー, 港区芝浦3-4-1",
+      "precision": "building",
+      "quote": "東京都港区芝浦3-4-1 — 東京都港区芝浦三丁目４番 — returned latitude 35.643463, longitude 139.746048",
+      "source_locator": "captures/geo_results.json — \"granpark-tamachi\" entry (address 東京都港区芝浦3-4-1; matched_title 東京都港区芝浦三丁目４番; latitude 35.643463, longitude 139.746048); the same lookup is saved as captures/geo_granpark-tamachi.json. GSI address-search does not return a building polygon, so the tier stays `building`.",
+      "source_url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=東京都港区芝浦3-4-1",
+      "verified_at": "2026-11-28"
+    },
+    "赤坂インターシティコンファレンス (AICC) Room 301": {
+      "language": "ja",
+      "map_target": "赤坂インターシティAIR 3F/4F, 港区赤坂1-8-1",
+      "precision": "building",
+      "quote": "東京都港区赤坂1-8-1 — 東京都港区赤坂一丁目８番 — returned latitude 35.669594, longitude 139.742661",
+      "source_locator": "captures/geo_results.json — \"aicc-akasaka\" entry (address 東京都港区赤坂1-8-1; matched_title 東京都港区赤坂一丁目８番; latitude 35.669594, longitude 139.742661); the same lookup is saved as captures/geo_aicc-akasaka.json. GSI address-search does not return a building polygon, so the tier stays `building`.",
+      "source_url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=東京都港区赤坂1-8-1",
+      "verified_at": "2026-11-28"
+    }
+  }
+}

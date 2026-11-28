@@ -1,0 +1,2057 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>&amp;BIZ conference｜&BIZ</title>
+  <meta charset="utf-8">
+  <meta name="description" content="&amp;BIZ conferenceは日本橋・八重洲エリアの三井のオフィステナント様向けの会議室です。">
+  <meta property="og:title" content="&amp;BIZ conference｜&BIZ">
+  <meta property="og:description" content="&amp;BIZ conferenceは日本橋・八重洲エリアの三井のオフィステナント様向けの会議室です。">
+  <meta property="og:url" content="https://and-biz.jp/service/conference/">
+  <meta property="og:image" content="https://and-biz.jp/assets/img/ogp.png">
+  <meta property="og:site_name" content="&BIZ">
+  <meta property="og:type" content="article">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link href='//fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <!-- <link rel="stylesheet" href="/assets/css/features.css"> -->
+  <link rel="stylesheet" href="/assets/css/other.css">
+  <link rel="stylesheet" href="/assets/css/mot_contents.css">
+  <link rel="stylesheet" href="/service/conference/css/conference.css">
+  <script src="/assets/js/jquery-1.11.2.min.js"></script>
+  <script src="/assets/js/js.cookie.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/showattention.js"></script>
+  <script src="/service/conference/js/mot_contents.js"></script>
+  <script src="/assets/js/timer.js"></script>
+  <!-- head.html -->
+  <script src="//assets.adobedtm.com/05c035d020eb682193974a42b73368b2a72c73a8/satelliteLib-6b5330c12e395a44d75e19216e9a1bd13b5ff6b7.js"></script>
+<script src="//log1.mobylog.jp/__xdtc/501097.js" charset="UTF-8"></script>
+
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.json">
+
+<!-- inc_gtm_head.html -->
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-T6P9TQS');</script>
+  <!-- End Google Tag Manager -->
+<!--/ inc_gtm_head.html-->
+  <!--/ head.html-->
+  <!-- inc_ga.html -->
+  <script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+
+"jQuery" in window && (function (url) {
+
+var dimensionData;
+
+// onclickのイベント計測で行われる設定を保存する変数
+var analyticsConfig = {'nonInteraction': 1};
+
+window.setAnalyticsEventConfig = function (bool) {
+  analyticsConfig['nonInteraction'] = bool;
+  return analyticsConfig;
+};
+
+// GAのトラッキングをします。非ログイン時はカスタムディメンションのセットをしません。
+// 引数にはAJAXの返り値が入ります
+function sendPageview () {
+  ga('create', 'UA-29524604-2', 'auto');
+  if (dimensionData) {
+    ga('set', dimensionData);
+  }
+  ga('send', 'pageview');
+}
+
+// ログイン判定
+$.ajax(url).done(function (res) {
+  if (res.status == 200 && res.data && res.data.user_id) {
+    dimensionData = {
+      "dimension1":res.data.tenant_name,
+      "dimension2":res.data.building_name,
+      "dimension3":res.data.birthday,
+      "dimension4":res.data.gender,
+      "dimension7":res.data.user_id
+    };
+
+    for (var key in dimensionData) {
+      analyticsConfig[key] = dimensionData[key];
+    }
+  }
+
+  sendPageview();
+
+}).fail(function () {
+  sendPageview();
+});
+
+}("/api/get_account.php"));
+</script>
+  <!--/ inc_ga.html-->
+</head>
+
+<body id="pagetop">
+
+  <!-- header.html -->
+  <!-- inc_gtm_body.html -->
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T6P9TQS"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+<!--/ inc_gtm_body.html-->
+
+<link rel="stylesheet" href="/assets/css/line_login.css">
+
+<div class="login-modal modal-bg"></div>
+<div class="login-content">
+    <div class="login-inner">
+        <div class="login-close"><a class="ff-Roboto" style="cursor: pointer;"><img src="/assets/img/login-close.png" width="17" height="17" alt="" />CLOSE</a></div>
+        <form id="form1" method="post" action="/api/login.php">
+            <div class="login-child">
+                <p class="name ff-Roboto">LOGIN</p>
+                <div class="line-login-area">
+                    <a href="/line/login/index.php" class="btn_line_login">LINEでログイン</a>
+                    <p class="line_login_merit_text">LINE連携していただければ<br>スムーズにログインいただけます。</p>
+                    <span class="border-line">OR</span>
+                </div>
+                <dl class="input-area">
+                    <dt class="ff-Roboto">MAIL</dt>
+                    <dd class="mail">
+                        <input type="text" name="email" id="q01" class="input w400" title="ログインメールアドレスを入力してください" placeholder="ログインメールアドレスを入力してください" />
+                        <p class="input-alert-errorTxt input-alert-errorTxt--email">このメールアドレスでの登録が存在しません。</p>
+                    </dd>
+                    <dt class="ff-Roboto">PASSWORD</dt>
+                    <dd class="pass">
+                        <input type="password" name="password" id="q02" class="input w400" title="パスワードを入力してください" placeholder="パスワードを入力してください" />
+                        <button class="password-show" type="button"></button>
+                        <p class="input-alert-errorTxt input-alert-errorTxt--pass">パスワードは半角英数字8文字以上32文字以下で、大文字小文字も見分けます。</p>
+                    </dd>
+                </dl>
+                <div class="login-box clearfix">
+                    <div class="input-alert">
+                        <div class="input-alert-inr">
+                            <p class="input-alert-count">エラーがあと<span class="input-alert-number"></span>回続くと<br>ログインができなくなります</p>
+                            <p>メールアドレスあるいは、パスワードが間違っています。<br class="d-none d-md-block">
+                                大文字・小文字の間違いがないか、全角や特殊文字を使用していないかをご確認ください。</p>
+                            <p class="input-alert-yellow">なおパスワードエラーが連続10回続きますとパスワードがロックされログインできなくなりますのでご注意ください。</p>
+                            <p class="input-alert-pass"><a href="/password/mail/">パスワードを忘れた方はこちら</a></p>
+                            <p class="input-alert-sign"><a href="/sign-up/mail/">会員登録がまだの方はこちら</a></p>
+                        </div>
+                    </div>
+                    <div class="help-select">
+                        <p><a href="/password/mail/">パスワードを忘れた方はこちら</a></p>
+                        <p><a href="/sign-up/mail/">会員登録がまだの方はこちら</a></p>
+                    </div>
+                    <div class="login">
+                        <div class="login-area">
+                            <p class="ff-Roboto"><input name="login" type="submit" class="btn_login" value="LOGIN" /></p>
+                        </div>
+                        <p class="login-auto">
+                            <input name="auto_login" type="checkbox" value="on" id="auto" /><label for="auto">次回から自動的にログイン</label>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <input type="hidden" name="target" value="" />
+        </form>
+    </div>
+</div>
+
+<header id="header-layout">
+    <div class="header-inner">
+        <div class="header-logo-wrap">
+            <h1 class="header-logo">
+                <a class="header-logo-symbol" href="/" onclick="ga('send', 'event', 'header', 'logo', this.href, {'nonInteraction':0})">
+                    <img src="/assets/img/common/header_logo.svg" alt="&BIZ 三井のオフィス">
+                </a>
+            </h1>
+            <div class="header-right-logo">
+                <a href="https://www.mitsuifudosan.co.jp/" target="_blank" onclick="ga('send', 'event', 'header', '三井不動産', this.href, {'nonInteraction': 1});">
+                    <img src="/assets/img/common/logo_header_mitsuifudosan_new.svg" alt="三井不動産">
+                </a>
+            </div>
+        </div>
+        <div class="header-nav upper-header private-list private-box pc">
+            <nav class="header-nav-menu">
+                <ul class="header-nav-menu-sub">
+                    <li class="header-nav-menu-sub_item show-pc">
+                        <a href="/about.html" class="header_icon">
+                             <div class="" onclick="ga('send', 'event', 'header', '&BIZとは', this.href, {'nonInteraction':0})">
+                                <img class="icon" src="/img/menu_icons/header_about.png">
+                                <div class="icon_title">&BIZとは</div>
+                             </div>
+                            </a>
+                    </li>
+                     <li class="header-nav-menu-sub_item show-pc">
+                        <a href="/user_guide/" class="header_icon">
+                            <div class="" onclick="ga('send', 'event', 'header', '&BIZとは', this.href, {'nonInteraction':0})">
+                                <img class="icon" src="/img/menu_icons/header_guide.png">
+                                <div class="icon_title">ご利用<br>ガイド</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="header-nav-menu-sub_item show-pc">
+                        <a href="/building-search/" class="header_icon">
+                            <div class="" onclick="ga('send', 'event', 'header', '&BIZとは', this.href, {'nonInteraction':0})">
+                                <img class="icon" src="/img/menu_icons/header_building.png">
+                                <div class="icon_title">オフィス<br>ビル検索</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="header-nav-menu-sub_item">
+                        <a href="/coupon/" class="header_icon">
+                            <div class="" onclick="ga('send', 'event', 'header', '&BIZとは', this.href, {'nonInteraction':0})">
+                                <img class="icon" src="/img/menu_icons/header_coupon.png">
+                                <div class="icon_title">クーポン</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="header-nav-menu-sub_item">
+                        <a href="/activities/" class="header_icon">
+                            <div class="" onclick="ga('send', 'event', 'header', '&BIZとは', this.href, {'nonInteraction':0})">
+                                <img class="icon" src="/img/menu_icons/header_event.png">
+                                <div class="icon_title">イベント</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li id="headerSmokingArea" class="header-nav-menu-sub_item show-pc is-login js-smoking-status-btn" style="display: none;">
+                        <a href="https://thetobacco.mebaru.blue/type1/?c=cosodomitsui" class="header_icon" target="_blank">
+                            <div class="" onclick="ga('send', 'event', 'header', '&BIZとは', this.href, {'nonInteraction':0})">
+                                <img class="icon" src="/img/menu_icons/header_smoking.png">
+                                <div class="icon_title">喫煙所<br>混雑状況</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li id="btnHeaderMSPRegistered" class="header-nav-menu-sub_item show-pc js-msp-registered" style="display: none;">
+                        <a href="/user_guide/msppoint/" class="header_icon">
+                            <div onclick="ga('send', 'event', 'header', 'MSP', this.href, {'nonInteraction':0})">
+                                <img class="icon" src="/img/menu_icons/header_msp.png">
+                                <div class="icon_title">登録済</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li id="btnHeaderMSPUnRegist" class="header-nav-menu-sub_item show-pc js-msp-unregist" style="display: none;">
+                        <a href="/user_guide/msppoint/" target="_blank" class="header_icon">
+                            <div onclick="ga('send', 'event', 'header', 'MSP', this.href, {'nonInteraction':0})">
+                                <img class="icon" src="/img/menu_icons/header_msp.png">
+                                <div class="icon_title">未登録</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li id="btnHeaderLineConnected" class="header-nav-menu-sub_item show-pc js-line-connected" style="display: none;">
+                        <a href="https://page.line.me/440zwfjj?openQrModal=true" target="_blank" class="header_icon">
+                            <div class="" onclick="ga('send', 'event', 'header', 'LINE', this.href, {'nonInteraction':0})">
+                                <img class="icon" src="/img/menu_icons/header_line.png">
+                                <div class="icon_title">連携済</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li id="btnHeaderLineUnconnected" class="header-nav-menu-sub_item show-pc js-line-unconnected" style="display: none;">
+                        <a href="https://page.line.me/440zwfjj?openQrModal=true" target="_blank" class="header_icon">
+                            <div class="" onclick="ga('send', 'event', 'header', 'LINE', this.href, {'nonInteraction':0})" >
+                                <img class="icon" src="/img/menu_icons/header_line.png">
+                                <div class="icon_title">未連携</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="header-nav-menu-sub_item js-login-show" style="display: none;">
+                        <a href="/account/" class="header_icon">
+                            <div class="" onclick="ga('send', 'event', 'header', '&BIZとは', this.href, {'nonInteraction':0})">
+                                <img class="icon" src="/img/menu_icons/header_mypage.png">
+                                <div class="icon_title">MY PAGE</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="header-nav-menu-sub_item js-login-remove login">
+                        <a href="" class="header_icon">
+                            <div class="" onclick="ga('send', 'event', 'header', 'ログイン', this.href, {'nonInteraction':0})">
+                                <img class="icon" src="/img/menu_icons/header_login.png">
+                                <div class="icon_title">ログイン</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="header-nav-menu-sub_item js-login-remove show-pc registration">
+                        <a href="/sign-up/mail/" class="header_icon">
+                            <div class="" onclick="ga('send', 'event', 'header', '会員登録', this.href, {'nonInteraction':0})">
+                                <img class="icon" src="/img/menu_icons/header_regist.png">
+                                <div class="icon_title">会員登録</div>
+                            </div>
+                        </a>
+                    </li>
+
+                </ul>
+                
+            </nav>
+
+            <div id="btn-menu-trigger" class="menu-trigger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <nav class="nav-sp-menu d-lg-none">
+                <div class="menu-btn-new">
+                    <div class="menu membership is-login">
+                        <a href="/account/" class="mypage" onclick="ga('send', 'event', 'header', 'マイページ', this.href, {'nonInteraction':0})">
+                        <div class="icon"><img src="/img/menu_icons/ico_mypage.png"></div> 
+                        <div class="page-title">MY PAGE</div>
+                        </a>
+                    </div>
+                    <div class="menu login is-not-login">
+                        <a href="" onclick="ga('send', 'event', 'header', 'ログイン', this.href, {'nonInteraction':0})">
+                        <div class="icon"><img src="/img/menu_icons/ico_login.png"></div> 
+                        <div class="page-title">ログイン</div>
+                        </a>
+                    </div>
+                    <div class="menu regist is-not-login">
+                        <a href="/sign-up/mail/" onclick="ga('send', 'event', 'header', '会員登録', this.href, {'nonInteraction':0})">
+                        <div class="icon"><img src="/img/menu_icons/ico_regist.png"></div> 
+                        <div class="page-title">会員登録</div>
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <a href="/building-search/" onclick="ga('send', 'event', 'header', '三井のオフィス一覧入居者様専用ページ', this.href, {'nonInteraction':0})">
+                        <div class="icon"><img src="/img/menu_icons/ico_building.png"></div> 
+                        <div class="page-title">三井のオフィス一覧<br>入居者様専用ページ</div>
+                        </a>
+                    </div>
+                    <div class="menu membership is-login" style="display;">
+                        <a href="/user_guide/msppoint/" onclick="ga('send', 'event', 'header', '三井ショッピングパークポイント', this.href, {'nonInteraction':0})">
+                        <div class="icon"><img src="/img/menu_icons/ico_msp.png"></div> 
+                        <div class="page-title">三井ショッピング<br>パークポイント</div>
+                        <div id="menuMSPRegistered" class="status js-msp-registered" style='display:none;'>登録済み</div>
+                        <div id="menuMSPUnRegist" class="status js-msp-unregist" style='display:none;'>未登録</div>
+                        </a>
+                    </div>
+                    <div class="menu membership is-login" style="display: none;">
+                        <a href="https://page.line.me/440zwfjj?openQrModal=true" target="_blank" onclick="ga('send', 'event', 'header', '&BIZ公式LINE', this.href, {'nonInteraction':0})">
+                        <div class="icon"><img src="/img/menu_icons/ico_line_sp.png"></div> 
+                        <div class="page-title">&BIZ公式LINE</div>
+                        <div id="menuLineconnected" class="status js-line-connected" style='display:none;'>連携済み</div>
+                        <div id="menuLineUnConnected" class="status js-line-unconnected" style='display:none;'>未連携</div>
+                        </a>
+                    </div>
+                    <div id="menuSmokingArea" class="menu membership is-login js-smoking-status-btn" style="display: none;">
+                        <a href="https://thetobacco.mebaru.blue/type1/?c=cosodomitsui" target="_blank" onclick="ga('send', 'event', 'header', '喫煙所混雑状況', this.href, {'nonInteraction':0})">
+                        <div class="icon"><img src="/img/menu_icons/ico_smoking.png"></div> 
+                        <div class="page-title">喫煙所混雑状況</div>
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <a href="/about.html" onclick="ga('send', 'event', 'header', '&BIZとは', this.href, {'nonInteraction':0})">
+                        <div class="icon"><img src="/img/menu_icons/ico_info.png"></div> 
+                        <div class="page-title">&BIZとは</div>
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <a href="/user_guide/" onclick="ga('send', 'event', 'header', 'ご利用ガイド', this.href, {'nonInteraction':0})">
+                        <div class="icon"><img src="/img/menu_icons/ico_guide.png"></div> 
+                        <div class="page-title">ご利用ガイド</div>
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <a href="/download/" onclick="ga('send', 'event', 'header', '各種サービス資料', this.href, {'nonInteraction':0})">
+                        <div class="icon"><img src="/img/menu_icons/ico_service.png"></div> 
+                        <div class="page-title">オフィス関連サービス</div>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div class="under-header" style="display: none;">
+            <div class="btn-area">
+                <a href=""></a>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- PoC: ログインポイント獲得モーダル。このHTMLがあるページだけ main.js が get_account.php に目印 point_modal=1 を付けて呼び、今付与されたら（login_point_awarded）LandingInfo.js のモーダル0が表示する -->
+<div id="login_point_modal" style="display: none;">
+    <div class="login_point_modal__inner">
+        <div class="login_point_modal__box">
+            <div class="login_point_modal__mv">
+                <img class="login_point_modal__ribbon" src="/point/login/img/modal-ribbon-login.png" alt="ログインBIZを獲得">
+                <div class="login_point_modal__mv-text">
+                    <p class="login_point_modal__lead"><span class="lg">BIZ </span><span class="sm">を </span><span class="md">獲得しました！</span></p>
+                    <p class="login_point_modal__num">
+                        <img class="login_point_modal__coin" src="/point/login/img/modal-coin.png" alt="">
+                        <span class="login_point_modal__biz"><i>+</i><b class="js-login-point-modal-biz">5</b><em>BIZ</em></span>
+                    </p>
+                </div>
+            </div>
+            <div class="login_point_modal__body">
+                <p class="login_point_modal__note">今週のログインを達成しました！<br>毎週ログインして、<br>もっとBIZを貯めましょう！</p>
+                <a class="login_point_modal__status-btn js-login-point-modal-status" href="/point/login/#plp-status">
+                    <img src="/point/login/img/modal-icon-status.png" alt="">現在のステータスを確認
+                </a>
+            </div>
+        </div>
+        <button type="button" class="login_point_modal__x js-login-point-modal-close" aria-label="閉じる"></button>
+    </div>
+</div>
+
+<!-- WSからの更新モーダル -->
+<div id="profile_update_modal" style="display: none;">
+    <div class="profile_update_modal__inner">
+        <div class="profile_update_modal__wrapper">
+            <div class="profile_update_modal__contents">
+                <div class="profile_update_modal__contents-item">
+                    <div class="profile_update_modal__logo">
+                        <img src="/assets/img/popup/logo_profile_update_pc.png" alt="" class="pc">
+                        <img src="/assets/img/popup/logo_profile_update_sp.png" alt="" class="sp">
+                    </div>
+                    <p class="profile_update_modal__txt">WORK STYLINGでご登録いただいた情報を&BIZの会員情報に更新いたしました。</p>
+                    <a href="/account/" class="profile_update_modal__btn-check">MY　PAGEを確認する</a>
+                    <div class="profile_update_modal__btn-close">閉じる</div>
+                </div>
+            </div>
+            <div class="profile_update_modal__close">
+                <img src="/assets/img/popup/btn_close_profile_update.png" alt="">
+            </div>
+        </div><!-- /.profile_update_modal__wrapper -->
+    </div><!-- /.profile_update_modal__inner -->
+</div>
+
+<!-- ご利用ガイドモーダル -->
+<div id="guest_modal" style="display: none;">
+    <div class="guest_modal__inner">
+        <div class="guest_modal__wrapper">
+            <div class="guest_modal__contents">
+                <div class="guest_modal__contents-item">
+                    <div class="guest_modal__title"><img src="/assets/img/popup/guest/guest-modal-logo.png" alt="&BIZ">は<br>『三井のオフィス』で働く方々限定の<br>プレミアムサービスです</div>
+                    <div class="guest_modal__lead">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="/assets/img/popup/guest/guest-modal-lead-sp.png">
+                            <img src="/assets/img/popup/guest/guest-modal-lead.png" alt="登録するだけで、こんな特典が使い放題！">
+                        </picture>
+                    </div>
+                    <div class="guest_modal__img">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="/assets/img/popup/guest/guest-modal-img-01-sp.png">
+                            <img src="/assets/img/popup/guest/guest-modal-img-01.png" alt="2,000以上のショップクーポン 三井ショッピングパークポイント1%増量！ ホテルリゾート特別価格優待 その他特別な情報多数！カーシェア・住宅購入・会員限定イベント">
+                        </picture>
+                    </div>
+                    <div class="guest_modal__link_btn">
+                        <a href="/about.html">詳しく見る</a>
+                    </div>
+                    <div class="guest_modal__account-buttons">
+                        <div class="guest_modal__account-buttons__item guest_modal__account-buttons__item-login login">
+                            <a href="javascript:void(0);">ログイン</a>
+                        </div>
+                        <div class="guest_modal__account-buttons__item guest_modal__account-buttons__item-register">
+                            <a href="/sign-up/mail/"><span class="sub"><img src="/assets/img/popup/guest/guest-modal-text-01.png" alt="3分で完了"></span>新規会員登録</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="close_guest_modal" class="guest_modal__close">
+                <img src="/assets/img/popup/guest/guest-modal-close.png" alt="閉じる">
+            </div>
+        </div><!-- /.guest_modal__wrapper -->
+    </div><!-- /.guest_modal__inner -->
+</div>
+
+<!-- 「その他ビル」「所属部署・部門」「興味のあるコンテンツ」設定変更モーダル -->
+<div id="profile_incomplete_modal" style="display: none;">
+    <div class="profile_incomplete_modal__inner">
+        <div class="profile_incomplete_modal__wrapper">
+            <div class="profile_incomplete_modal__contents">
+                <div class="profile_incomplete_modal__contents-item">
+                    <div class="profile_incomplete_modal__logo">
+                        <img src="/assets/img/common/mitsui_logo_only.png" alt="">
+                    </div>
+                    <p class="profile_incomplete_modal__user">
+                        <span class="profile_incomplete_modal__name" id="profile_incomplete_modal_name"></span>
+                        <span class="profile_incomplete_modal__honorific">様</span>
+                    </p>
+                    <p class="profile_incomplete_modal__tit">マイページ更新のお願い</p>
+                    <p class="profile_incomplete_modal__txt">より良いサービス提供のため、以下の項目の情報更新をお願いいたします。(所要時間約１分)</p>
+                    <ul class="profile_incomplete_modal__txt">
+                        <li class="bold" id="profile_incomplete_modal_building" style="display: none;">・現在ご入居されているビル名</li>
+                        <li class="profile_incomplete_modal_incompleteText" style="display: none;">・所属されている部署部門｜役職</li>
+                        <li class="profile_incomplete_modal_incompleteText" style="display: none;">・興味のある分野</li>
+                    </ul>
+                    <a id="profile_incomplete_modal_link" href="/account/" class="profile_incomplete_modal__btn">マイページへ進む</a>
+                </div>
+            </div>
+            <div class="profile_incomplete_modal__close">
+                <img src="/assets/img/popup/btn_close.png" alt="">
+            </div>
+        </div><!-- /.profile_incomplete_modal__wrapper -->
+    </div><!-- /.profile_incomplete_modal__inner -->
+</div>
+
+<!-- ライン特典モーダル -->
+<!-- <div class="custom_modal" id="line_bonus_modal" style="display: none;">
+    <div class="custom_modal__inner">
+        <div class="custom_modal__wrapper">
+            <div class="custom_modal__contents">
+                <div class="custom_modal__contents-item">
+                    <div class="custom_modal__img">
+                        <picture>
+                            <source media="(max-width: 768px)" srcset="/assets/img/popup/line_bonus/line-img-sp.png">
+                            <img src="/assets/img/popup/line_bonus/line-img.png" alt="最短１分で連携！&BIZ＋LINE LINE初回ID連携でもれなく！選べるギフト500円分プレゼント！※連携にはLINE公式アカウントの友だち登録が必要です giftee Box あなたのほしいが詰まってる R POINT サーティワン TULLY'S COFFEE ＋その他人気商品からえらべる！">
+                        </picture>
+                    </div>
+                    <div class="custom_modal__link_btn">
+                        <a href="https://and-biz.jp/service/campaign/detail/?event_campaign_id=714&sub_id=0">
+                            <picture>
+                                <source media="(max-width: 768px)" srcset="/assets/img/popup/line_bonus/line-btn-sp.png">
+                                <img src="/assets/img/popup/line_bonus/line-btn.png" alt="今すぐ連携する">
+                            </picture>
+                        </a>
+                    </div>
+                    <div class="custom_modal__account-buttons">
+                        <div class="custom_modal__account-buttons__item login">
+                            <a href="javascript:void(0);">
+                                <picture>
+                                    <source media="(max-width: 768px)" srcset="/assets/img/popup/modal-login-btn-sp.png">
+                                    <img src="/assets/img/popup/modal-login-btn.png" alt="ログイン">
+                                </picture>
+                            </a>
+                        </div>
+                        <div class="custom_modal__account-buttons__item">
+                            <a href="/sign-up/mail/">
+                                <picture>
+                                    <source media="(max-width: 768px)" srcset="/assets/img/popup/modal-entry-btn-sp.png">
+                                    <img src="/assets/img/popup/modal-entry-btn.png" alt="3分で完了！新規会員登録">
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="custom_modal__close" id="line_bonus_modal__close">
+                <img src="/assets/img/popup/guest/guest-modal-close.png" alt="閉じる">
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<!-- TOPページリニューアル告知モーダル -->
+<div class="simple_modal" id="top_renewal_notice_modal" style="display: none;">
+    <div class="simple_modal__inner">
+        <div class="simple_modal__wrapper">
+            <div class="simple_modal__contents">
+                <div class="simple_modal__contents-item-pc">
+                    <a class="simple_modal__img_link" href="/assets/pdf/top/top_renewal_notice_pc.pdf" target="_blank">
+                        <img src="/assets/img/popup/top_renewal_notice/top_renewal_notice_modal.png" alt="トップページリニューアルのお知らせ リニューアルのPOINT！ メニューアイコンからコンテンツを探しやすく！勤務先周辺の人気クーポンがすぐ見つかる！詳しく見る">
+                    </a>
+                </div>
+                <div class="simple_modal__contents-item-sp">
+                    <a class="simple_modal__img_link" href="/assets/pdf/top/top_renewal_notice_sp.pdf" target="_blank">
+                        <img src="/assets/img/popup/top_renewal_notice/top_renewal_notice_modal-sp.png" alt="トップページリニューアルのお知らせ リニューアルのPOINT！ メニューアイコンからコンテンツを探しやすく！勤務先周辺の人気クーポンがすぐ見つかる！詳しく見る">
+                    </a>
+                </div>
+            </div>
+            <div class="simple_modal__close" id="top_renewal_notice_modal__close">
+                <img src="/assets/img/popup/guest/guest-modal-close.png" alt="閉じる">
+            </div>
+        </div>
+    </div>
+</div>
+  <!--/ header.html-->
+
+  <div id="container">
+    <div class="maincontent-layout p-mot_contents p-mot_contents_top js-general-modal-maincontent">
+
+      <div class="p-mot_contents__nav">
+  <div class="p-mot_contents__navInner">
+    <div class="p-mot_contents__logo pc"><a href="/service/conference/"><img src="/service/conference/img/common/logo_white.svg" alt=""></a></div>
+    <div class="p-mot_contents__navList">
+      <div class="p-mot_contents__navItem item1">
+        <div class="p-mot_contents__navItemMain"><a href="javascript:void(0);">施設概要</a></div>
+        <!-- <div class="p-mot_contents__navItemMain"><a href="/service/conference/">施設概要</a></div> -->
+        <ul class="p-mot_contents__navItemSub">
+          <li><a href="/service/conference/#tokyo_midtown_yaesu">東京ミッドタウン八重洲</a></li>
+          <li><a href="/service/conference/#nihonbashi_muromachi_mitsui">日本橋室町三井タワー</a></li>
+          <li><a href="/service/conference/#nihonbashi_takashimaya_mitsui">日本橋髙島屋三井ビルディング</a></li>
+        </ul>
+      </div>
+      <div class="p-mot_contents__navItem item2">
+        <div class="p-mot_contents__navItemMain is-subNone"><a href="/service/conference/index.html#howto">ご利用いただける方・ご利用方法</a></div>
+      </div>
+      <div class="p-mot_contents__navItem item3">
+        <div class="p-mot_contents__navItemMain"><a href="javascript:void(0);">アクセス</a></div>
+        <!-- <div class="p-mot_contents__navItemMain"><a href="/service/conference/access/">アクセス</a></div> -->
+        <ul class="p-mot_contents__navItemSub">
+          <li><a href="/service/conference/access/#tokyo_midtown_yaesu">東京ミッドタウン八重洲</a></li>
+          <li><a href="/service/conference/access/#nihonbashi_muromachi_mitsui">日本橋室町三井タワー</a></li>
+          <li><a href="/service/conference/access/#nihonbashi_takashimaya_mitsui">日本橋髙島屋三井ビルディング</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="p-mot_contents__subNavList">
+      <ul>
+        <li><a href="/service/conference/terms/">ご利用規約等</a></li>
+        <li><div class="js-p-mot_contents_contact-modal-target">お問い合わせ</div></li>
+        <li><a href="/service/conference_en/">ENGLISH</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="p-mot_contents__navMenuBtn sp">
+    <div class="p-mot_contents__logo sp"><a href="/service/conference/"><img src="/service/conference/img/common/logo_white.svg" alt=""></a></div>
+    <div class="btn">
+      <img src="/service/conference/img/common/close.svg" alt="" class="close">
+      <img src="/service/conference/img/common/open.svg" alt="" class="open">
+    </div>
+  </div>
+</div>
+
+
+<div id="confirm-modal" class="confirm-modal p-mot_contents_contact js-p-mot_contents_contact-modal-selector">
+  <div class="p-mot_contents_contactInner">
+    <div class="p-mot_contents_contact__ttl">お問い合わせ</div>
+    <div class="items">
+      <div class="item">
+        <div class="name">東京ミッドタウン八重洲</div>
+        <div class="cont">
+          <div class="num">03-6262-1314</div>
+          <div class="hour">平日 ：9：00～17：00</div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="name">日本橋室町三井タワー</div>
+        <div class="cont">
+          <div class="num">03-6271-8576</div>
+          <div class="hour">平日 ：9：00～17：00</div>
+        </div>
+      </div>
+      <div class="item">
+        <div class="name">日本橋髙島屋三井ビルディング</div>
+        <div class="cont">
+          <div class="num">03-3274-3450</div>
+          <div class="hour">平日 ：9：00～17：00</div>
+        </div>
+      </div>
+    </div>
+    <div class="p-mot_contents_contact__note">
+      <ul>
+        <li>
+          ※原則、年末年始の毎年12月29日から翌年1月3日を除く
+        </li>
+        <li>
+          ※施設・設備点検等のため臨時に休館する場合を除く
+        </li>
+      </ul>
+    </div>
+  </div>
+  <span class="confirm-modal__close js-p-mot_contents_contact-modal-close">
+    <span class="confirm-modal__close-line--left"></span>
+    <span class="confirm-modal__close-line--right"></span>
+  </span>
+</div>
+
+
+      <div class="p-mot_contents__mv">
+        <div class="p-mot_contents__mvTtl">
+          多様なビジネスシーンに<br>
+          最高のパフォーマンスを
+        </div>
+        <p class="p-mot_contents__mvTxt">
+          社内会議や研修に、セミナーや講演会に、<br>
+          少人数での打合せや来客対応に―。<br>
+          オフィスの補完機能として、<br>
+          大小の会議室が様々なビジネスシーンを<br>
+          サポートします。
+        </p>
+      </div>
+
+      <div class="p-mot_contents__outline">
+        <div class="cont">
+          <h1 class="ttl">施設概要</h1>
+          <h1 class="logo"><img src="/service/conference/img/common/logo.svg" alt=""></h1>
+          <p class="desc">
+            ＆BIZ conferenceは、東京ミッドタウン八重洲、日本橋室町三井タワー、日本橋髙島屋三井ビルディングの各ビル内に設置された三井のオフィステナント様向けの会議室<sup>※</sup>です。<br>
+            100名以上収容の大会議室から数名利用の個室まで大小様々な空間を用意。会議やイベント、打合せや商談など幅広いニーズにお応えします。</p>
+          <p class="note">※2023年4月以降、全施設をご利用いただけます。</p>
+        </div>
+        <div class="map">
+          <img src="/service/conference/img/top/map_pc.png" alt="" class="pc">
+          <img src="/service/conference/img/top/map_sp.png" alt="" class="sp">
+        </div>
+      </div>
+
+      <div class="p-mot_contents__facilityHead" id="tokyo_midtown_yaesu">
+        <div class="p-mot_contents__facilityHeadInner">
+          <h2 class="p-mot_contents__facilityTtl">
+            <span class="sub">TOKYO MIDTOWN YAESU</span>
+            <span class="main">東京ミッドタウン<br class="sp">八重洲</span>
+          </h2>
+        </div>
+      </div>
+
+      <div class="p-mot_contents__facilityPic">
+        <div class="p-mot_contents__facilityPicInner">
+          <img src="/service/conference/img/top/tokyo_midtown_yaesu/pic_pc.jpg" alt="" class="pc">
+          <img src="/service/conference/img/top/tokyo_midtown_yaesu/pic_sp.jpg" alt="" class="sp">
+        </div>
+      </div>
+
+      <!-- description -->
+      <div class="p-mot_contents__cont firstItem">
+        <div class="p-mot_contents_facility__contInner">
+          <div class="p-mot_contents_facility__contInner desc">
+            <p>東京駅を一望できる開放的な空間。<br>最新鋭のマイクスピーカーを備え、<br>スムーズなリモート＆リアルのハイブリッド会議が可能です。</p>
+            <div class="points">
+              <div class="point">
+                <img src="/service/conference/img/common/icon_check.svg" alt="">
+                <p>東京駅地下直結の<br class="pc">東京ミッドタウン八重洲の<br class="pc">7階</p>
+              </div>
+              <div class="point">
+                <img src="/service/conference/img/common/icon_check.svg" alt="">
+                <p>収容人数8名～最大72名の<br class="pc">計7室の大小会議室</p>
+              </div>
+              <div class="point">
+                <img src="/service/conference/img/common/icon_check.svg" alt="">
+                <p>東京ミッドタウン八重洲ご入居企業様には、早期予約特典あり</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /description -->
+
+      <!-- floor map -->
+      <div class="p-mot_contents__cont">
+        <div class="p-mot_contents_facility__contInner floormap">
+          <div class="p-mot_contents_facility__imgSection">
+            <img src="/service/conference/img/top/tokyo_midtown_yaesu/floor_map_pc.png" alt="" class="pc">
+            <img src="/service/conference/img/top/tokyo_midtown_yaesu/floor_map_sp.png" alt="" class="sp">
+          </div>
+          <div class="link"><a href="/service/conference/access/#tokyo_midtown_yaesu">アクセスはこちら<img src="/service/conference/img/common/icon_circle_arrow.svg" alt=""></a></div>
+          <div class="link-vr-camera"><a class="external_icon-black" href="https://www.vr-view.jp/mitsui/and-biz/tmty-c/" target="_blank"><img src="/service/fitness/img/common/icon_vr_camera.svg" alt="">施設内の360度画像はこちら</a></div>
+        </div>
+      </div>
+      <!-- /floor map -->
+
+      <div class="p-mot_contents__contWd100">
+
+        <div class="p-mot_contents_facility_price">
+          <div class="p-mot_contents_facility_price__head">
+            <h2>ご利用料金<span>単位：円（税別）</span></h2>
+          </div>
+          <div class="p-mot_contents_facility_price__cont">
+            <div class="p-mot_contents_facility_price__contItem view_timer" data-end-date="2025/11/1 00:00">
+              <div class="p-mot_contents_facility_price__contInner">
+                <table class="p-mot_contents_facility_price__table">
+                  <colgroup>
+                    <col style="width: 17%;"> <!-- 1列目：ルーム -->
+                    <col style="width: 17%;"> <!-- 2列目：面積 -->
+                    <col style="width: 23%;"> <!-- 3列目：設定レイアウト -->
+                    <col style="width: 21.5%;"> <!-- 4列目：利用料 -->
+                    <col style="width: 21.5%;"> <!-- 5列目：（参考）利用料 -->
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>ルーム</th>
+                      <th>面積（㎡）</th>
+                      <th>設定レイアウト</th>
+                      <th>利用料<br>（10分あたり<br>単価）</th>
+                      <th>（参考）<br>1時間あたり<br>利用料</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Room1</th>
+                      <td>142</td>
+                      <td>スクール（72席）</td>
+                      <td>5,700</td>
+                      <td>34,200</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Room2</th>
+                      <td>133</td>
+                      <td>ロの字（42席）</td>
+                      <td>5,400</td>
+                      <td>32,400</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Room3</th>
+                      <td>94</td>
+                      <td>ロの字（30席）</td>
+                      <td>3,900</td>
+                      <td>23,400</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Room4</th>
+                      <td>37</td>
+                      <td>一（12席）</td>
+                      <td>1,600</td>
+                      <td>9,600</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Room5</th>
+                      <td>20</td>
+                      <td>一（8席）</td>
+                      <td>830</td>
+                      <td>4,980</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Room6</th>
+                      <td>38</td>
+                      <td>ロの字（12席）</td>
+                      <td>1,600</td>
+                      <td>9,600</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Room7</th>
+                      <td>16</td>
+                      <td>一（8席）</td>
+                      <td>700</td>
+                      <td>4,200</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="p-mot_contents_facility_price__contItem view_timer" data-start-date="2025/11/1 00:00">
+              <div class="p-mot_contents_facility_price__contInner">
+                <table class="p-mot_contents_facility_price__table">
+                  <colgroup>
+                    <col style="width: 17%;"> <!-- 1列目：ルーム -->
+                    <col style="width: 17%;"> <!-- 2列目：面積 -->
+                    <col style="width: 23%;"> <!-- 3列目：設定レイアウト -->
+                    <col style="width: 21.5%;"> <!-- 4列目：利用料 -->
+                    <col style="width: 21.5%;"> <!-- 5列目：（参考）利用料 -->
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>ルーム</th>
+                      <th>面積（㎡）</th>
+                      <th>設定レイアウト</th>
+                      <th>利用料<br>（10分あたり<br>単価）</th>
+                      <th>（参考）<br>1時間あたり<br>利用料</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Room1</th>
+                      <td>142</td>
+                      <td>スクール（72席）</td>
+                      <td>6,390</td>
+                      <td>38,340</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Room2</th>
+                      <td>133</td>
+                      <td>ロの字（42席）</td>
+                      <td>6,050</td>
+                      <td>36,300</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Room3</th>
+                      <td>94</td>
+                      <td>ロの字（30席）</td>
+                      <td>4,370</td>
+                      <td>26,220</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Room4</th>
+                      <td>37</td>
+                      <td>一（12席）</td>
+                      <td>1,800</td>
+                      <td>10,800</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Room5</th>
+                      <td>20</td>
+                      <td>一（8席）</td>
+                      <td>930</td>
+                      <td>5,580</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Room6</th>
+                      <td>38</td>
+                      <td>ロの字（12席）</td>
+                      <td>1,800</td>
+                      <td>10,800</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Room7</th>
+                      <td>16</td>
+                      <td>一（8席）</td>
+                      <td>790</td>
+                      <td>4,740</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="p-mot_contents_facility_price__contItem view_timer" data-end-date="2025/11/1 00:00">
+              <div class="p-mot_contents_facility_price__contInner">
+                <table class="p-mot_contents_facility_price__table">
+                  <colgroup>
+                    <col style="width: 65%;"> <!-- 1列目：ルーム -->
+                    <col style="width: 35%;"> <!-- 利用料 -->
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>ルーム</th>
+                      <th>利用料</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">カンファレンスエリア全体貸切　9:00～21:00</th>
+                      <td>1,300,000</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="p-mot_contents_facility_price__contItem view_timer" data-start-date="2025/11/1 00:00">
+              <div class="p-mot_contents_facility_price__contInner">
+                <table class="p-mot_contents_facility_price__table">
+                  <colgroup>
+                    <col style="width: 65%;"> <!-- 1列目：ルーム -->
+                    <col style="width: 35%;"> <!-- 利用料 -->
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>ルーム</th>
+                      <th>利用料</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">カンファレンスエリア全体貸切　9:00～21:00</th>
+                      <td>1,456,000</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="p-mot_contents_facility_price__caption view_timer" data-end-date="2025/11/1 00:00">
+            <h3>※2025年11月1日以降に承るご予約につきましては、新料金でのご案内を予定しております。</h3>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+      <div class="p-mot_contents__facilityHead" id="nihonbashi_muromachi_mitsui">
+        <div class="p-mot_contents__facilityHeadInner">
+          <h2 class="p-mot_contents__facilityTtl">
+            <span class="sub">NIHONBASHI MUROMACHI<br class="sp"> MITSUI TOWER</span>
+            <span class="main">日本橋室町<br class="sp">三井タワー</span>
+          </h2>
+        </div>
+      </div>
+
+      <div class="p-mot_contents__facilityPic">
+        <div class="p-mot_contents__facilityPicInner">
+          <img src="/service/conference/img/top/nihonbashi_muromachi_mitsui/pic_pc.jpg" alt="" class="pc">
+          <img src="/service/conference/img/top/nihonbashi_muromachi_mitsui/pic_sp.jpg" alt="" class="sp">
+        </div>
+      </div>
+
+      <!-- description -->
+      <div class="p-mot_contents__cont firstItem">
+        <div class="p-mot_contents_facility__contInner">
+          <div class="p-mot_contents_facility__contInner desc">
+            <p>社内会議やセミナーなどのイベント、打ち合わせや商談など幅広い用途に対応したスペースをご用意しています。</p>
+            <div class="points fac2">
+              <div class="point">
+                <img src="/service/conference/img/common/icon_check.svg" alt="">
+                <p>三越前駅、新日本橋駅より地下直結の便利な立地</p>
+              </div>
+              <div class="point">
+                <img src="/service/conference/img/common/icon_check.svg" alt="">
+                <p>収容人数6名～最大147名の計8部屋の大小会議室に加え、1～4名の個室（計8室）を併設</p>
+              </div>
+              <div class="point">
+                <img src="/service/conference/img/common/icon_check.svg" alt="">
+                <p>日本橋室町三井タワー・日本橋三井タワーご入居企業様には、早期予約特典あり</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /description -->
+
+      <!-- floor map -->
+      <div class="p-mot_contents__cont">
+        <div class="p-mot_contents_facility__contInner floormap p-mot_contents_mb">
+          <div class="p-mot_contents_facility__imgSection">
+            <img src="/service/conference/img/top/nihonbashi_muromachi_mitsui/floor_map_pc.png" alt="" class="pc">
+            <img src="/service/conference/img/top/nihonbashi_muromachi_mitsui/floor_map_sp.png" alt="" class="sp">
+          </div>
+          <div class="link"><a href="/service/conference/access/#nihonbashi_muromachi_mitsui">アクセスはこちら<img src="/service/conference/img/common/icon_circle_arrow.svg" alt=""></a></div>
+          <div class="link-vr-camera"><a class="external_icon-black" href="https://www.vr-view.jp/mitsui/and-biz/nmmt-c/" target="_blank"><img src="/service/fitness/img/common/icon_vr_camera.svg" alt="">施設内の360度画像はこちら</a></div>
+        </div>
+      </div>
+      <!-- /floor map -->
+
+      <div class="p-mot_contents__contWd100">
+
+        <div class="p-mot_contents_facility_price">
+          <div class="p-mot_contents_facility_price__head">
+            <h2>ご利用料金<span>単位：円（税別）</span></h2>
+          </div>
+          <div class="p-mot_contents_facility_price__cont">
+
+
+            <div class="p-mot_contents_facility_price__contItem view_timer" data-end-date="2025/11/1 00:00">
+              <div class="p-mot_contents_facility_price__contInner">
+                <table class="p-mot_contents_facility_price__table">
+                  <colgroup>
+                    <col style="width: 17%;"> <!-- 1列目：ルーム -->
+                    <col style="width: 17%;"> <!-- 2列目：面積 -->
+                    <col style="width: 23%;"> <!-- 3列目：設定レイアウト -->
+                    <col style="width: 21.5%;"> <!-- 4列目：利用料 -->
+                    <col style="width: 21.5%;"> <!-- 5列目：（参考）利用料 -->
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>ルーム</th>
+                      <th>面積（㎡）</th>
+                      <th>設定レイアウト</th>
+                      <th>利用料<br>（10分あたり<br>単価）</th>
+                      <th>（参考）<br>1時間あたり<br>利用料</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Room1 A+B</th>
+                      <td>196</td>
+                      <td>スクール（147席）</td>
+                      <td>7,600</td>
+                      <td>45,600</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Room1 A</th>
+                      <td>90</td>
+                      <td>スクール（54席）</td>
+                      <td>4,400</td>
+                      <td>26,400</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Room1 B</th>
+                      <td>106</td>
+                      <td>スクール（54席）</td>
+                      <td>5,100</td>
+                      <td>30,600</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Room2</th>
+                      <td>14</td>
+                      <td>一（6席）</td>
+                      <td>650</td>
+                      <td>3,900</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Room3</th>
+                      <td>14</td>
+                      <td>一（6席）</td>
+                      <td>650</td>
+                      <td>3,900</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Room4</th>
+                      <td>14</td>
+                      <td>一（6席）</td>
+                      <td>650</td>
+                      <td>3,900</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Room5</th>
+                      <td>60</td>
+                      <td>スクール（36席）</td>
+                      <td>2,600</td>
+                      <td>15,600</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Room6</th>
+                      <td>55</td>
+                      <td>ロの字（16席）</td>
+                      <td>2,300</td>
+                      <td>13,800</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Room7</th>
+                      <td>68</td>
+                      <td>スクール（36席）</td>
+                      <td>2,800</td>
+                      <td>16,800</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Room8</th>
+                      <td>82</td>
+                      <td>スクール（40席）</td>
+                      <td>3,600</td>
+                      <td>21,600</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">RoomA〜H</th>
+                      <td>—</td>
+                      <td>1名〜4名</td>
+                      <td>160</td>
+                      <td>960</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="p-mot_contents_facility_price__contItem view_timer" data-start-date="2025/11/1 00:00">
+              <div class="p-mot_contents_facility_price__contInner">
+                <table class="p-mot_contents_facility_price__table">
+                  <colgroup>
+                    <col style="width: 17%;"> <!-- 1列目：ルーム -->
+                    <col style="width: 17%;"> <!-- 2列目：面積 -->
+                    <col style="width: 23%;"> <!-- 3列目：設定レイアウト -->
+                    <col style="width: 21.5%;"> <!-- 4列目：利用料 -->
+                    <col style="width: 21.5%;"> <!-- 5列目：（参考）利用料 -->
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>ルーム</th>
+                      <th>面積（㎡）</th>
+                      <th>設定レイアウト</th>
+                      <th>利用料<br>（10分あたり<br>単価）</th>
+                      <th>（参考）<br>1時間あたり<br>利用料</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Room1 A+B</th>
+                      <td>196</td>
+                      <td>スクール（147席）</td>
+                      <td>7,600</td>
+                      <td>45,600</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Room1 A</th>
+                      <td>90</td>
+                      <td>スクール（54席）</td>
+                      <td>4,400</td>
+                      <td>26,400</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Room1 B</th>
+                      <td>106</td>
+                      <td>スクール（54席）</td>
+                      <td>5,100</td>
+                      <td>30,600</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Room2</th>
+                      <td>14</td>
+                      <td>一（6席）</td>
+                      <td>730</td>
+                      <td>4,380</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Room3</th>
+                      <td>14</td>
+                      <td>一（6席）</td>
+                      <td>730</td>
+                      <td>4,380</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Room4</th>
+                      <td>14</td>
+                      <td>一（6席）</td>
+                      <td>730</td>
+                      <td>4,380</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Room5</th>
+                      <td>60</td>
+                      <td>スクール（36席）</td>
+                      <td>2,920</td>
+                      <td>17,520</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Room6</th>
+                      <td>55</td>
+                      <td>ロの字（16席）</td>
+                      <td>2,580</td>
+                      <td>15,480</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Room7</th>
+                      <td>68</td>
+                      <td>スクール（36席）</td>
+                      <td>3,140</td>
+                      <td>18,840</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Room8</th>
+                      <td>82</td>
+                      <td>スクール（40席）</td>
+                      <td>4,040</td>
+                      <td>24,240</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">RoomA〜H</th>
+                      <td>—</td>
+                      <td>1名〜4名</td>
+                      <td>290</td>
+                      <td>1,740</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div class="p-mot_contents_facility_price__contItem view_timer" data-end-date="2025/11/1 00:00">
+              <div class="p-mot_contents_facility_price__contInner">
+                <table class="p-mot_contents_facility_price__table">
+                  <colgroup>
+                    <col style="width: 65%;"> <!-- 1列目：ルーム -->
+                    <col style="width: 35%;"> <!-- 2列目：利用料 -->
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>ルーム</th>
+                      <th>利用料</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">カンファレンスエリア 全体貸切　9:00〜21:00</th>
+                      <td>1,300,000</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Room A〜H 全体貸切　9:00〜19:00</th>
+                      <td>64,000</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="p-mot_contents_facility_price__head2_lv3">
+                <h3>Room1 レイアウト変更オプション</h3>
+              </div>
+              <div class="p-mot_contents_facility_price__contInner">
+                <table class="p-mot_contents_facility_price__table">
+                  <colgroup>
+                    <col style="width: 23%;"> <!-- 1列目 -->
+                    <col style="width: 54%;"> <!-- 2列目 -->
+                    <col style="width: 23%;"> <!-- 3列目 -->
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th colspan="2">適用条件</th>
+                      <th>オプション料金</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Room1 A+Bの<br>
+                        全面利用の場合</th>
+                      <td>設定レイアウト（スクール147席）以外<br>
+                        のレイアウトを希望される場合。</td>
+                      <td>24,000円／回</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Room1 A or Bの<br>
+                        片面利用の場合</th>
+                      <td>レイアウト調整の都合上、自動的に<br>
+                        レイアウト設定オプションが適用されます。</td>
+                      <td>24,000円／回</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="p-mot_contents_facility_price__contItem view_timer" data-start-date="2025/11/1 00:00">
+              <div class="p-mot_contents_facility_price__contInner">
+                <table class="p-mot_contents_facility_price__table">
+                  <colgroup>
+                    <col style="width: 65%;"> <!-- 1列目：ルーム -->
+                    <col style="width: 35%;"> <!-- 2列目：利用料 -->
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>ルーム</th>
+                      <th>利用料</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">カンファレンスエリア 全体貸切　9:00〜21:00</th>
+                      <td>1,456,000</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Room A〜H 全体貸切　9:00〜19:00</th>
+                      <td>115,200</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="p-mot_contents_facility_price__head2_lv3">
+                <h3>Room1 レイアウト変更オプション</h3>
+              </div>
+              <div class="p-mot_contents_facility_price__contInner">
+                <table class="p-mot_contents_facility_price__table">
+                  <colgroup>
+                    <col style="width: 23%;"> <!-- 1列目 -->
+                    <col style="width: 54%;"> <!-- 2列目 -->
+                    <col style="width: 23%;"> <!-- 3列目 -->
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th colspan="2">適用条件</th>
+                      <th>オプション料金</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Room1 A+Bの<br>
+                        全面利用</th>
+                      <td>設定レイアウト（スクール147席）以外<br>
+                        のレイアウトを希望される場合。</td>
+                      <td>24,000円／回</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Room1 A or Bの<br>
+                        片面利用</th>
+                      <td>レイアウト調整の都合上、自動的に<br>
+                        レイアウト設定オプションが適用されます。</td>
+                      <td>24,000円／回</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            
+          </div>
+          <div class="p-mot_contents_facility_price__caption view_timer" data-end-date="2025/11/1 00:00">
+            <h3>※2025年11月1日以降に承るご予約につきましては、新料金でのご案内を予定しております。</h3>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="p-mot_contents__facilityHead" id="nihonbashi_takashimaya_mitsui">
+        <div class="p-mot_contents__facilityHeadInner">
+          <h2 class="p-mot_contents__facilityTtl">
+            <span class="sub">NIHONBASHI TAKASHIMAYA<br class="sp"> MITSUI BUILDING</span>
+            <span class="main">日本橋髙島屋<br class="sp">三井ビルディング</span>
+          </h2>
+        </div>
+      </div>
+
+      <div class="p-mot_contents__facilityPic">
+        <div class="p-mot_contents__facilityPicInner">
+          <img src="/service/conference/img/top/nihonbashi_takashimaya_mitsui/pic_pc.jpg" alt="" class="pc">
+          <img src="/service/conference/img/top/nihonbashi_takashimaya_mitsui/pic_sp.jpg" alt="" class="sp">
+        </div>
+      </div>
+
+      <!-- description -->
+      <div class="p-mot_contents__cont firstItem">
+        <div class="p-mot_contents_facility__contInner">
+          <div class="p-mot_contents_facility__contInner desc">
+            <p>日本橋駅直結の抜群のアクセス。社内会議やセミナー、講演会といった各種イベント、<br>動画配信によるWebセミナーなど様々な用途に対応したスペースをご用意しています。</p>
+            <div class="points fac3">
+              <div class="point">
+                <img src="/service/conference/img/common/icon_check.svg" alt="">
+                <p>収容人数8名～最大150名の計6室の大小会議室</p>
+              </div>
+              <div class="point">
+                <img src="/service/conference/img/common/icon_check.svg" alt="">
+                <p>Webセミナーや撮影などに最適な配信スタジオを完備</p>
+              </div>
+              <div class="point">
+                <img src="/service/conference/img/common/icon_check.svg" alt="">
+                <p>日本橋髙島屋三井ビルディング・日本橋一丁目三井ビルディングご入居企業様には、早期予約特典あり</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /description -->
+
+      <!-- floor map -->
+      <div class="p-mot_contents__cont">
+        <div class="p-mot_contents_facility__contInner floormap p-mot_contents_mb">
+          <div class="p-mot_contents_facility__imgSection">
+            <img src="/service/conference/img/top/nihonbashi_takashimaya_mitsui/floor_map_pc.png" alt="" class="pc">
+            <img src="/service/conference/img/top/nihonbashi_takashimaya_mitsui/floor_map_sp.png" alt="" class="sp">
+          </div>
+          <div class="link"><a href="/service/conference/access/#nihonbashi_takashimaya_mitsui">アクセスはこちら<img src="/service/conference/img/common/icon_circle_arrow.svg" alt=""></a></div>
+          <div class="link-vr-camera"><a class="external_icon-black" href="https://www.vr-view.jp/mitsui/and-biz/ntmb-c/" target="_blank"><img src="/service/fitness/img/common/icon_vr_camera.svg" alt="">施設内の360度画像はこちら</a></div>
+        </div>
+      </div>
+      <!-- /floor map -->
+
+      <div class="p-mot_contents_info">
+        <div class="p-mot_contents__cont">
+          <div class="p-mot_contents_info__ttl">配信スタジオ</div>
+          <div class="p-mot_contents_info__inner">
+            <div class="p-mot_contents_infoBox1">
+              <div class="p-mot_contents_info__txt">
+                <p>撮影や映像配信の機材を備えたシアター式のスペースです（専用オペレーター有り）。複数登壇者による配信も可能。また、プロンプター（原稿投影機）を備え、プレゼンテーションにも最適な撮影環境です。</p>
+              </div>
+            </div>
+            <div class="p-mot_contents_infoBox2">
+              <div class="img"><img src="/service/conference/img/top/nihonbashi_takashimaya_mitsui/pic2.jpg" alt=""></div>
+            </div>
+          </div>
+          <div class="link"><a href="/service/rentalroom/rentalroom08.html">配信スタジオの詳細・ご予約はこちら<img src="/service/conference/img/common/icon_circle_arrow.svg" alt=""></a></div>
+        </div>
+      </div>
+
+      <div class="p-mot_contents__contWd100">
+
+        <div class="p-mot_contents_facility_price">
+          <div class="p-mot_contents_facility_price__head">
+            <h2>ご利用料金<span>単位：円（税別）</span></h2>
+          </div>
+          <div class="p-mot_contents_facility_price__cont">
+
+
+            <div class="p-mot_contents_facility_price__contItem view_timer" data-end-date="2025/11/1 00:00">
+              <div class="p-mot_contents_facility_price__contInner">
+                <table class="p-mot_contents_facility_price__table">
+                  <colgroup>
+                    <col style="width: 17%;"> <!-- 1列目：ルーム -->
+                    <col style="width: 17%;"> <!-- 2列目：面積 -->
+                    <col style="width: 24%;"> <!-- 3列目：設定レイアウト -->
+                    <col style="width: 21%;"> <!-- 4列目：利用料 -->
+                    <col style="width: 21%;"> <!-- 5列目：（参考）利用料 -->
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>ルーム</th>
+                      <th>面積（㎡）</th>
+                      <th>設定レイアウト</th>
+                      <th>利用料<br>（10分あたり<br>単価）</th>
+                      <th>（参考）<br>1時間あたり<br>利用料</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Room1</th>
+                      <td>86</td>
+                      <td>ロの字（36席）</td>
+                      <td>3,500</td>
+                      <td>21,000</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Room2</th>
+                      <td>86</td>
+                      <td>スクール（45席）</td>
+                      <td>3,500</td>
+                      <td>21,000</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Room3</th>
+                      <td>99</td>
+                      <td>ロの字（36席）</td>
+                      <td>4,000</td>
+                      <td>24,000</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Room4</th>
+                      <td>110</td>
+                      <td>スクール（72席）</td>
+                      <td>4,500</td>
+                      <td>27,000</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Room5 A+B</th>
+                      <td>198</td>
+                      <td>スクール（150席）</td>
+                      <td>7,600</td>
+                      <td>45,600</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Room5 A</th>
+                      <td>83</td>
+                      <td>スクール（60席）</td>
+                      <td>4,000</td>
+                      <td>24,000</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Room5 B</th>
+                      <td>115</td>
+                      <td>スクール（90席）</td>
+                      <td>5,500</td>
+                      <td>33,000</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Room6</th>
+                      <td>20</td>
+                      <td>一（8席）</td>
+                      <td>830</td>
+                      <td>4,980</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="p-mot_contents_facility_price__contItem view_timer" data-start-date="2025/11/1 00:00">
+              <div class="p-mot_contents_facility_price__contInner">
+                <table class="p-mot_contents_facility_price__table">
+                  <colgroup>
+                    <col style="width: 17%;"> <!-- 1列目：ルーム -->
+                    <col style="width: 17%;"> <!-- 2列目：面積 -->
+                    <col style="width: 24%;"> <!-- 3列目：設定レイアウト -->
+                    <col style="width: 21%;"> <!-- 4列目：利用料 -->
+                    <col style="width: 21%;"> <!-- 5列目：（参考）利用料 -->
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>ルーム</th>
+                      <th>面積（㎡）</th>
+                      <th>設定レイアウト</th>
+                      <th>利用料<br>（10分あたり<br>単価）</th>
+                      <th>（参考）<br>1時間あたり<br>利用料</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Room1</th>
+                      <td>86</td>
+                      <td>ロの字（36席）</td>
+                      <td>3,920</td>
+                      <td>23,520</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Room2</th>
+                      <td>86</td>
+                      <td>スクール（45席）</td>
+                      <td>3,920</td>
+                      <td>23,520</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Room3</th>
+                      <td>99</td>
+                      <td>ロの字（36席）</td>
+                      <td>4,480</td>
+                      <td>26,880</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Room4</th>
+                      <td>110</td>
+                      <td>スクール（72席）</td>
+                      <td>5,040</td>
+                      <td>30,240</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Room5 A+B</th>
+                      <td>198</td>
+                      <td>スクール（150席）</td>
+                      <td>7,600</td>
+                      <td>45,600</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Room5 A</th>
+                      <td>83</td>
+                      <td>スクール（60席）</td>
+                      <td>4,000</td>
+                      <td>24,000</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Room5 B</th>
+                      <td>115</td>
+                      <td>スクール（90席）</td>
+                      <td>5,500</td>
+                      <td>33,000</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Room6</th>
+                      <td>20</td>
+                      <td>一（8席）</td>
+                      <td>930</td>
+                      <td>5,580</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="p-mot_contents_facility_price__contItem view_timer" data-end-date="2025/11/1 00:00">
+              <div class="p-mot_contents_facility_price__contInner">
+                <table class="p-mot_contents_facility_price__table">
+                  <colgroup>
+                    <col style="width: 65%;"> <!-- 1列目：ルーム -->
+                    <col style="width: 35%;"> <!-- 2列目：利用料 -->
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>ルーム</th>
+                      <th>利用料</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">カンファレンスエリア全体貸切　9:00〜21:00</th>
+                      <td>1,500,000</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="p-mot_contents_facility_price__head2_lv3">
+                <h3>Room5 レイアウト変更オプション</h3>
+              </div>
+              <div class="p-mot_contents_facility_price__contInner">
+                <table class="p-mot_contents_facility_price__table">
+                  <colgroup>
+                    <col style="width: 23%;"> <!-- 1列目 -->
+                    <col style="width: 54%;"> <!-- 2列目 -->
+                    <col style="width: 23%;"> <!-- 3列目 -->
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th colspan="2">適用条件</th>
+                      <th>オプション料金</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Room5 A+Bの<br>
+                        全面利用の場合</th>
+                      <td>設定レイアウト（スクール150席）以外の<br>
+                        レイアウトを希望される場合。</td>
+                      <td>24,000円／回</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Room5 A or Bの<br>
+                        片面利用の場合</th>
+                      <td>レイアウト調整の都合上、自動的に<br>
+                        レイアウト設定オプションが適用されます。</td>
+                      <td>24,000円／回</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="p-mot_contents_facility_price__contItem view_timer" data-start-date="2025/11/1 00:00">
+              <div class="p-mot_contents_facility_price__contInner">
+                <table class="p-mot_contents_facility_price__table">
+                  <colgroup>
+                    <col style="width: 65%;"> <!-- 1列目：ルーム -->
+                    <col style="width: 35%;"> <!-- 2列目：利用料 -->
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>ルーム</th>
+                      <th>利用料</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">カンファレンスエリア全体貸切　9:00〜21:00</th>
+                      <td>1,680,000</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="p-mot_contents_facility_price__head2_lv3">
+                <h3>Room5 レイアウト変更オプション</h3>
+              </div>
+              <div class="p-mot_contents_facility_price__contInner">
+                <table class="p-mot_contents_facility_price__table">
+                  <colgroup>
+                    <col style="width: 23%;"> <!-- 1列目 -->
+                    <col style="width: 54%;"> <!-- 2列目 -->
+                    <col style="width: 23%;"> <!-- 3列目 -->
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th colspan="2">適用条件</th>
+                      <th>オプション料金</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Room5 A+Bの<br>
+                        全面利用</th>
+                      <td>設定レイアウト（スクール150席）以外の<br>
+                        レイアウトを希望される場合。</td>
+                      <td>24,000円／回</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Room5 A or Bの<br>
+                        片面利用</th>
+                      <td>レイアウト調整の都合上、自動的に<br>
+                        レイアウト設定オプションが適用されます。</td>
+                      <td>24,000円／回</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            
+
+          </div>
+          <div class="p-mot_contents_facility_price__caption view_timer" data-end-date="2025/11/1 00:00">
+            <h3>※2025年11月1日以降に承るご予約につきましては、新料金でのご案内を予定しております。</h3>
+          </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="p-mot_contents__contWd100 mt0">
+
+        <div id="howto">
+          <div class="p-mot_contents_howto__inner">
+            <h2 class="p-mot_contents_howto__ttl">ご利用いただける方・<br class="sp">ご利用方法</h2>
+            <div class="p-mot_contents_howto__section">
+              <h3>ご利用いただける方</h3>
+              <p class="txt">&BIZ conferenceは、日本橋・八重洲エリア（下記一覧参照）の三井のオフィスビルテナント様向けの施設です。</p>
+              <p class="txt blue">ご利用には法人会員登録が必要です。</p><br>
+              <p class="txt red">2023年4月以降、全施設をご利用いただけます。</p>
+              <div class="facility">
+                <h4>&BIZ conference ご利用対象ビル</h4>
+                <div class="facilityList">
+                  <ul>
+                    <li>東京ミッドタウン八重洲<span>※</span></li>
+                    <li>日本橋室町三井タワー<span>※</span></li>
+                    <li>日本橋髙島屋三井ビルディング<span>※</span></li>
+                    <li>日本橋一丁目三井ビルディング</li>
+                    <li>室町ちばぎん三井ビルディング</li>
+                    <li>日本橋三井タワー</li>
+                    <li>室町一構（三井本館）</li>
+                    <li>三井二号館</li>
+                    <li>室町東三井ビルディング</li>
+                    <li>室町古河三井ビルディング</li>
+                  </ul>
+                  <ul>
+                    <li>日本橋アステラス三井ビルディング</li>
+                    <li>OVOL日本橋ビル</li>
+                    <li>日本橋本町YSビル</li>
+                    <li>日本橋本町二丁目ビル</li>
+                    <li>日本橋本町MK-SQUARE</li>
+                    <li class="view_timer" data-start-date="2025/11/1 00:00">日本橋本町M-SQUARE</li>
+                    <li>グラントウキョウノースタワー</li>
+                    <li>日本橋アイティビル</li>
+                    <li>日本橋室町四丁目ビル</li>
+                    <li>CMビル</li>
+                  </ul>
+                </div>
+                <p class="facilityNote">※&BIZ conference所在物件</p>
+              </div>
+            </div>
+            <div class="p-mot_contents_howto__section">
+              <h3>ご利用方法</h3>
+              <p class="txt">カンファレンス（配信スタジオ除く）のご予約は下記よりお申込みください。</p>
+              <div class="btns">
+                <a href="https://www.workstyling.jp/tenant/login" class="btn external-btn" target="_blank">&BIZ conference ID <br>でのご予約の方はこちら</a>
+                <a href="https://www.workstyling.jp/login" class="btn external-btn" target="_blank">WORK STYLING ID <br>でのご予約の方はこちら</a>
+              </div>
+              <ul class="note">
+                <li>日本橋室町三井タワー「Room1A+B」、日本橋髙島屋三井ビルディング「Room5A+B」のご予約で既存レイアウトから変更を希望の場合、<br class="pc">または片面のみ（AまたはB）でご利用を希望の場合は&BIZ conference事務局（予約受付窓口）にて承ります。</li>
+              </ul>
+
+              <div class="p-mot_contents_contact pd0">
+
+                <div class="p-mot_contents_contactInner">
+                  <div class="items">
+                    <!-- <div class="item">
+                    <div class="name">東京ミッドタウン八重洲</div>
+                    <div class="cont">
+                      <div class="num"></div>
+                      <div class="hour"></div>
+                    </div>
+                  </div> -->
+                    <div class="item">
+                      <div class="name">日本橋室町三井タワー</div>
+                      <div class="cont">
+                        <div class="num">03-6271-8576</div>
+                        <div class="hour">平日 ：9：00～17：00</div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="name">日本橋髙島屋三井ビルディング</div>
+                      <div class="cont">
+                        <div class="num">03-3274-3450</div>
+                        <div class="hour">平日 ：9：00～17：00</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <ul class="note">
+                <li>配信スタジオのご予約について</li>
+                <li class="noteLv2">
+                  <span>日本橋髙島屋三井ビルディングは<a href="/service/rentalroom/rentalroom08.html">こちら</a></span>
+                </li>
+                <li>&BIZ conferenceについてのお問い合わせは<a href="javascript:void(0);" class="js-p-mot_contents_contact-modal-target">こちら</a></li>
+              </ul>
+            </div>
+          </div>
+        </div><!-- ./howto -->
+
+
+        <div class="p-mot_contents_access__bnr">
+          <a href="/service/fitness/">
+            <img src="/service/conference/img/access/bnr_768_pc.jpg" alt="" class="pc">
+            <img src="/service/conference/img/access/bnr_sp.jpg" alt="" class="sp">
+          </a>
+        </div>
+
+
+
+
+      </div><!-- /.p-mot_contents__contWd100 -->
+
+      <!-- ▲▲▲メインHTML　ここにコンテンツを記述してください▲▲▲ -->
+
+      <!-- ページトップへ戻るアイコン （不要な場合削除してください） -->
+      <div class="top-anchor">
+        <div class="top-anchor-inner">
+          <a href="#pagetop">
+            <div class="gotop ff-Roboto">Page&nbsp;Top</div>
+          </a>
+        </div>
+      </div>   
+
+      <!-- ページトップへ戻るアイコン （不要な場合削除してください） -->
+
+    </div>
+  </div>
+
+  <!-- footer.html -->
+  <footer class="footer-layout">
+    <div class="footer-top">
+        <div class="l-container">
+            <ul class="footer-list">
+                <li class="footer-list_item item01">
+                    <h2 class="logo-footer">
+                        <img src="/assets/img/common/logo_biz_mitsui.png" width="170" height="85.32" alt="三井のオフィス &BIZ">
+                    </h2>
+                    <ul class="sns-block-list">
+                        <li class="sns-block-list_item">
+                            <a href="https://page.line.me/440zwfjj?openQrModal=true" target="_blank" onclick="ga('send', 'event', 'footer', 'LINE', this.href, {'nonInteraction':0})">
+                            <img src="/assets/img/common/ico_footer_line.png" width="45" height="45" alt="LINE_icon"></a>
+                        </li>
+                        <li class="sns-block-list_item">
+                            <a href="https://www.instagram.com/andbiz31/" target="_blank" onclick="ga('send', 'event', 'footer', 'instagram', this.href, {'nonInteraction':0})">
+                            <img src="/assets/img/common/ico_footer_instagram.png" width="45" height="45" alt="instagram_icon"></a>
+                        </li>
+                    </ul>
+
+                    <nav class="global-nav-inner-list">
+                        <ul class="global-nav-inner-list global-item">
+                            <li class="global-nav-inner-list_item">
+                                <a href="https://www.mitsuifudosan.co.jp/social_media/" target="_blank" rel="noreferrer" onclick="ga('send', 'event', 'footer', '三井不動産グループソーシャルメディアポリシー', this.href, {'nonInteraction':0})">三井不動産グループ<br class="d-none d-lg-block">ソーシャルメディアポリシー</a>
+                            </li>
+                            <li class="global-nav-inner-list_item">
+                                <a href="https://www.mitsuifudosan.co.jp/privacy_policy/" target="_blank" rel="noreferrer" onclick="ga('send', 'event', 'footer', '個人情報保護方針', this.href, {'nonInteraction':0})">個人情報保護方針</a>
+                            </li>
+                            <li class="global-nav-inner-list_item">
+                                <a href="https://www.mitsuifudosan.co.jp/privacy_policy/toriatsukai/" onclick="ga('send', 'event', 'footer', '個人情報の取扱いについて', this.href, {'nonInteraction':0})">個人情報の取扱いについて</a>
+                            </li>
+                            <li class="global-nav-inner-list_item">
+                                <a href="/policy/terms_of_service.html" onclick="ga('send', 'event', 'footer', '会員規約', this.href, {'nonInteraction':0})">会員規約</a>
+                            </li>
+                            <li class="global-nav-inner-list_item">
+                                <a href="/contact/" onclick="ga('send', 'event', 'footer', 'お問い合わせ', this.href, {'nonInteraction':0})">お問い合わせ</a>
+                            </li>
+                            <li class="global-nav-inner-list_item">
+                                <a href="https://www.mitsuifudosan.co.jp/privacy_policy/cookie_accesslog/" onclick="ga('send', 'event', 'footer', 'Cookieおよびアクセスログについて', this.href, {'nonInteraction':0})">Cookieおよびアクセスログについて</a>
+                            </li>
+                            <li class="global-nav-inner-list_item">
+                                <a href="/user_guide/notice/" onclick="ga('send', 'event', 'footer', 'サイトご利用上の注意', this.href, {'nonInteraction':0})">サイトご利用上の注意</a>
+                            </li>
+                            <li class="global-nav-inner-list_item">
+                                <a href="https://www.mitsuifudosan.co.jp/privacy_policy/toriatsukai/#external" onclick="ga('send', 'event', 'footer', '利用者情報の外部送信について', this.href, {'nonInteraction':0})" target="_blank">利用者情報の外部送信について</a>
+                            </li>
+
+                            <li class="global-nav-inner-list_item">
+                                <a href="/sign-up/mail/" onclick="ga('send', 'event', 'footer', '会員登録', this.href, {'nonInteraction':0})">会員登録</a>
+                            </li>
+                            <li class="global-nav-inner-list_item is-login">
+                                <a href="/logout/" data-ga="{"gaEvent":['send', 'event', 'header', 'LOGIN', 'modal', {"nonInteraction": 0}]}" onclick="ga('send', 'event', 'footer', 'LOGOUT', this.href, {'nonInteraction':0})">ログアウト</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </li>
+                <li class="footer-list_item item02">
+                    <!--
+                    <a href="/" onclick="ga('send', 'event', 'footer', 'ホーム', this.href, {'nonInteraction':0})" class="nav-inner">
+                        <h3 class="nav-inner-title js-accordion-title-single">
+                            ホーム
+                        </h3>
+                    </a>
+                    -->
+
+                    <a href="/coupon/" onclick="ga('send', 'event', 'footer', 'ショップクーポン', this.href, {'nonInteraction':0})" class="nav-inner">
+                        <h3 class="nav-inner-title js-accordion-title-single">
+                            ショップクーポン
+                        </h3>
+                    </a>
+
+                    <a href="/activities/" onclick="ga('send', 'event', 'footer', 'イベント', this.href, {'nonInteraction':0})" class="nav-inner">
+                        <h3 class="nav-inner-title js-accordion-title-single">
+                            イベント
+                        </h3>
+                    </a>
+
+                    <a href="/service/campaign/" onclick="ga('send', 'event', 'footer', 'キャンペーン', this.href, {'nonInteraction':0})" class="nav-inner">
+                        <h3 class="nav-inner-title js-accordion-title-single">
+                            キャンペーン
+                        </h3>
+                    </a>
+
+                    <!--
+                    <a href="https://page.line.me/440zwfjj?openQrModal=true" target="_blank" onlick="ga('send', 'event', 'footer', '公式LINE', this.href, {'nonInteraction':0})" class="nav-inner">
+                        <h3 class="nav-inner-title js-accordion-title-single">
+                            公式LINE
+                        </h3>
+                    </a>
+                    -->
+
+                    <nav class="nav-inner">
+                        <h3 class="nav-inner-title js-accordion-title">
+                            <a>出張・旅行</a>
+                        </h3>
+                        <ul class="nav-inner-list">
+                            <li class="nav-inner-list_item">
+                                <a href="/31corp/" onclick="ga('send', 'event', 'footer_出張・旅行', 'ホテル＆リゾート', this.href, {'nonInteraction': 1});">ホテル＆リゾート</a>
+                            </li>
+                            <li class="nav-inner-list_item">
+                                <a href="/service/carsharing.html" onclick="ga('send', 'event', 'footer_出張・旅行', 'カーシェアリング', this.href, {'nonInteraction': 1});">カーシェアリング</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <a href="/service/mitsukete-mitsui/" onclick="ga('send', 'event', 'footer', 'すまい関連', this.href, {'nonInteraction':0})" class="nav-inner">
+                        <h3 class="nav-inner-title js-accordion-title-single">
+                            すまい関連
+                        </h3>
+                    </a>
+
+                    <a href="/column/" onclick="ga('send', 'event', 'footer', 'コラム', this.href, {'nonInteraction':0})" class="nav-inner">
+                        <h3 class="nav-inner-title js-accordion-title-single">
+                            コラム
+                        </h3>
+                    </a>
+
+                    <a href="/service/mitsui-hall-conference/" onclick="ga('send', 'event', 'footer', 'ホール・会議室', this.href, {'nonInteraction':0})" class="nav-inner">
+                        <h3 class="nav-inner-title js-accordion-title-single">
+                            ホール・会議室
+                        </h3>
+                    </a>
+
+                    <a href="/service/conference/" onclick="ga('send', 'event', 'footer', '&BIZ conference', this.href, {'nonInteraction':0})" class="nav-inner">
+                        <h3 class="nav-inner-title js-accordion-title-single">
+                            &BIZ conference
+                        </h3>
+                    </a>
+
+                    <a href="/service/lounge/" onclick="ga('send', 'event', 'footer', '&BIZ lounge', this.href, {'nonInteraction':0})" class="nav-inner">
+                        <h3 class="nav-inner-title js-accordion-title-single">
+                            &BIZ lounge
+                        </h3>
+                    </a>
+                </li>
+
+                <li class="footer-list_item item03">
+                    
+
+                    <a href="/service/fitness/" onclick="ga('send', 'event', 'footer', '&BIZ fitness', this.href, {'nonInteraction':0})" class="nav-inner">
+                        <h3 class="nav-inner-title js-accordion-title-single">
+                            &BIZ fitness
+                        </h3>
+                    </a>
+
+                    <a href="/service/workstyling-lp/" onclick="ga('send', 'event', 'footer', 'WORKSTYLING', this.href, {'nonInteraction':0})" class="nav-inner">
+                        <h3 class="nav-inner-title js-accordion-title-single">
+                            WORKSTYLING
+                        </h3>
+                    </a>
+
+                    <nav class="nav-inner">
+                        <h3 class="nav-inner-title js-accordion-title">
+                            <a>防災情報</a>
+                        </h3>
+                        <ul class="nav-inner-list">
+                            <li class="nav-inner-list_item">
+                                <a href="/bousai/" onclick="ga('send', 'event', 'footer_防災情報', '&BIZ防災', this.href, {'nonInteraction': 1});">&BIZ防災</a>
+                            </li>
+                            <li class="nav-inner-list_item">
+                                <a href="/site_info/" onclick="ga('send', 'event', 'footer_防災情報', '防災に役立つ情報', this.href, {'nonInteraction': 1});">防災に役立つ情報</a>
+                            </li>
+                            <li class="nav-inner-list_item">
+                                <a href="/safety/" onclick="ga('send', 'event', 'footer_防災情報', '『三井のオフィス』の安全への取り組み', this.href, {'nonInteraction': 1});">『三井のオフィス』の安全への取り組み</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <nav class="nav-inner">
+                        <h3 class="nav-inner-title js-accordion-title">
+                            <a>ESG</a>
+                        </h3>
+                        <ul class="nav-inner-list">
+                            <li class="nav-inner-list_item">
+                                <a href="/de-and-i/" onclick="ga('send', 'event', 'footer_ESG', '『三井のオフィス』が進めるDE&I', this.href, {'nonInteraction': 1});">『三井のオフィス』が進めるDE&I</a>
+                            </li>
+                            <li class="nav-inner-list_item">
+                                <a href="/esg/" onclick="ga('send', 'event', 'footer_ESG', '環境への取り組み', this.href, {'nonInteraction': 1});">環境への取り組み</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <a href="/download/" onclick="ga('send', 'event', 'footer', 'オフィス関連サービス', this.href, {'nonInteraction':0})" class="nav-inner">
+                        <h3 class="nav-inner-title js-accordion-title-single">
+                            オフィス関連サービス
+                        </h3>
+                    </a>
+
+                    <a href="/building-search/" onclick="ga('send', 'event', 'footer', '三井のオフィスビル検索', this.href, {'nonInteraction':0})" class="nav-inner">
+                        <h3 class="nav-inner-title js-accordion-title-single">
+                            三井のオフィスビル検索
+                        </h3>
+                    </a>
+
+                    <a href="https://www.mitsuifudosan-office.jp/" onclick="ga('send', 'event', 'footer', 'COLORFUL WORK', this.href, {'nonInteraction':0})" class="nav-inner">
+                        <h3 class="nav-inner-title js-accordion-title-single colorfulworks">
+                            COLORFUL WORK<div class="external_icon-w"></div>
+                        </h3>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="copyright d-none">
+        <p>© Mitsui Fudosan Co., Ltd. All Rights Reserved</p>
+    </div>
+</footer>
+  <!--/ footer.html-->
+
+  <!-- inc_dtm.html ！！！解析タグ：絶対に削除しないでください！！！ -->
+  <script type="text/javascript">_satellite.pageBottom();</script>
+<script type="text/javascript">
+            (function () {
+              var tagjs = document.createElement("script");
+              var s = document.getElementsByTagName("script")[0];
+              tagjs.async = true;
+              tagjs.src = "//s.yjtag.jp/tag.js#site=p1691zD";
+              s.parentNode.insertBefore(tagjs, s);
+            }());
+          </script>
+          <noscript>
+            <iframe src="//b.yjtag.jp/iframe?c=p1691zD" width="1" height="1" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+          </noscript>
+
+  <!-- inc_dtm.html ！！！解析タグ：絶対に削除しないでください！！！ -->
+
+</body>
+
+</html>

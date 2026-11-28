@@ -1,0 +1,2477 @@
+<!DOCTYPE html>
+<html lang="ja" prefix="og: http://ogp.me/ns#">
+<head>
+  <!-- Jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!-- Common JS -->
+    <script>
+    const userIp = "86.157.163.102";
+  </script>
+  <script src="/2026/scripts/common.functions.js?v=260823" type="text/javascript" charset="utf-8"></script>
+  <script src="/2026/scripts/common.log.functions.js?v=2" type="text/javascript" charset="utf-8"></script>
+  <script src="/2026/scripts/common.login.functions.js?v=2" type="text/javascript" charset="utf-8"></script>
+  <script src="/2026/scripts/external.site.api.js?v=2" type="text/javascript" charset="utf-8"></script>
+  <script src="/2026/scripts/common.config.js?v=2" type="text/javascript" charset="utf-8"></script>
+  <script src="/2026/scripts/common.login.js?v=2" type="text/javascript" charset="utf-8"></script>
+
+  <!-- Page JS -->
+  <script src="/2026/scripts/general_purpose.js?v=2"></script>
+
+  <!-- 描画後に読み込ませるJSイベント (def: onload) -->
+  <script>
+    function scripts_inHtml() {
+      // バナースライダー初期化（表示順ランダム）
+      if (typeof $.fn.slick !== 'undefined') {
+        var $bannerList = $(".top-banner-slider__list");
+        var $bannerNav = $(".top-banner-slider__nav");
+        var $bannerViewport = $(".top-banner-slider__viewport");
+        if ($bannerList.length) {
+          var items = $bannerList.children("li").detach().toArray();
+          for (var i = items.length - 1; i > 0; i--) {
+            var j = Math.floor(Math.random() * (i + 1));
+            var tmp = items[i];
+            items[i] = items[j];
+            items[j] = tmp;
+          }
+          // 1件ずつ追記して、シャッフル後の順序をそのまま DOM 順にする
+          for (var k = 0; k < items.length; k++) {
+            $bannerList.append(items[k]);
+          }
+          var itemCount = items.length;
+
+          function centerBannerTrack() {
+            var $track = $bannerList.find(".slick-track");
+            var $list = $bannerList.find(".slick-list");
+            if (!$track.length || !$list.length) return;
+            var diff = $list.width() - $track.outerWidth();
+            $track.css("margin-left", diff > 0 ? diff / 2 : 0);
+          }
+
+          /* 中央スライドの幅（バナー320px＋左右余白）。
+             コンテナが狭いときはコンテナ幅まで縮め、バナー全体が必ず収まるようにする */
+          function setBannerSlideWidth(bannerGap) {
+            var $section = $bannerList.closest(".top-banner-slider");
+            var $viewport = $bannerViewport.length ? $bannerViewport : $bannerList.closest(".top-banner-slider__viewport");
+            // viewport の padding（矢印用スペース）を除いた実際の表示領域幅
+            var viewportPadding = $viewport.length ? (parseInt($viewport.css("padding-left")) || 0) + (parseInt($viewport.css("padding-right")) || 0) : 0;
+            var containerWidth = ($bannerList.closest(".top-banner-slider__inner").width() || window.innerWidth) - viewportPadding;
+            var slideWidth = Math.min(320 + bannerGap, Math.floor(containerWidth));
+            if ($section.length) {
+              $section[0].style.setProperty("--banner-slide-w", slideWidth + "px");
+            }
+          }
+
+          function getBannerSlickOptions() {
+            var w = window.innerWidth;
+
+            if (w >= 1024 && itemCount > 3) {
+              return {
+                variableWidth: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                centerMode: false,
+                infinite: true,
+              };
+            }
+
+            /* タブレット・SP：常に1枚を中央＋左右チラ見せ。
+               中央寄せは Slick(centerMode + variableWidth)が実寸から計算する */
+            setBannerSlideWidth(w >= 768 ? 20 : 16);
+
+            return {
+              variableWidth: true,
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              centerMode: true,
+              centerPadding: "0px",
+              infinite: itemCount > 1,
+            };
+          }
+
+          function initBannerSlider() {
+            if ($bannerList.hasClass("slick-initialized")) {
+              $bannerList.off("setPosition.banner");
+              $bannerList.slick("unslick");
+            }
+            $bannerList.removeClass("top-banner-slider__list--static");
+
+            /* PC(1024px〜)で3枚以下は flex 固定。タブレット・SPは centerMode */
+            if (window.innerWidth >= 1024 && itemCount <= 3) {
+              $bannerList.addClass("top-banner-slider__list--static");
+              return;
+            }
+
+            var slickOpts = getBannerSlickOptions();
+            var isDesktopMulti = window.innerWidth >= 1024;
+
+            $bannerList.slick($.extend({
+              autoplay: itemCount > 1,
+              autoplaySpeed: 4000,
+              arrows: itemCount > 1,
+              dots: itemCount > 1,
+              appendArrows: $bannerViewport,
+              appendDots: $bannerNav,
+              prevArrow: '<button type="button" class="slick-prev top-banner-slider__arrow" aria-label="前のバナーへ"></button>',
+              nextArrow: '<button type="button" class="slick-next top-banner-slider__arrow" aria-label="次のバナーへ"></button>',
+              customPaging: function (slider, i) {
+                return '<button type="button" aria-label="' + (i + 1) + '枚目のバナーを表示"></button>';
+              },
+            }, slickOpts));
+
+            if (isDesktopMulti) {
+              $bannerList.on("setPosition.banner", centerBannerTrack);
+              centerBannerTrack();
+            }
+          }
+
+          initBannerSlider();
+          var bannerResizeTimer;
+          $(window).on("resize", function () {
+            clearTimeout(bannerResizeTimer);
+            bannerResizeTimer = setTimeout(initBannerSlider, 200);
+          });
+        }
+
+        // ceatec experience の記事スライダー（カルーセル）。
+        // 出展申込サイト(en/application/index.html)に入っているものがベース。
+        // 無限ループ＋前後の矢印で回す
+        var $expSlider = $(".experience_slider");
+
+        if ($expSlider.length && $expSlider.children().length > 0) {
+          $expSlider.slick({
+            autoplay: true,
+            autoplaySpeed: 4000,
+            speed: 600,
+            cssEase: "ease-out",
+            // カルーセル：端まで行ったら先頭へ回り続ける
+            infinite: true,
+            arrows: true,
+            appendArrows: $(".experience_slider_nav"),
+            prevArrow: '<button type="button" class="slick-prev experience_slider_arrow" aria-label="前の記事へ"></button>',
+            nextArrow: '<button type="button" class="slick-next experience_slider_arrow" aria-label="次の記事へ"></button>',
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            pauseOnHover: true,
+            dots: false,
+            responsive: [
+              { breakpoint: 1024, settings: { slidesToShow: 3 } },
+              { breakpoint: 768,  settings: { slidesToShow: 2 } },
+              { breakpoint: 500,  settings: { slidesToShow: 1 } }
+            ]
+          });
+        }
+      }
+    }
+  </script>
+
+  <title>CEATEC 2026（シーテック）公式サイト</title>
+  <!-- meta -->
+  
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<link rel="apple-touch-icon-precomposed" href="https://www.ceatec.com/2026/webclip.png">
+<meta name="author" content="CEATEC 2026" />
+
+<meta property="fb:app_id" content="329333873857274">
+<meta property="og:type" content="article" />
+<meta property="og:locale" content="ja_JP" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@ceatec" />
+
+<meta property="og:url" content="https://ceatec.com/ja/" />
+<meta name="twitter:url" content="https://ceatec.com/ja/" />
+
+<meta property="og:title" content="CEATEC 2026 ( Official Website )" />
+<meta property="og:site_name" content="CEATEC 2026 ( Official Website )" />
+<meta name="twitter:title" content="CEATEC 2026 ( Official Website )" />
+
+<meta property="og:image" content="https://www.ceatec.com/2026/asset2026/images/ogp.png" />
+<meta name="twitter:image" content="https://www.ceatec.com/2026/asset2026/images/ogp.png" />
+
+<!-- LINE Seed JP (Google Fonts)
+     NOTE: CSS内の @import だと style.css の取得完了まで開始できず直列化するため、
+     HTML側の <link> で読み込む。preconnect は gstatic への接続確立を先行させる。 -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=LINE+Seed+JP:wght@400;700;800&display=swap">
+
+<!-- Montserrat (Google Fonts, 英数字用) -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap">
+
+<link rel="stylesheet" href="/2026/asset2026/css/style.css?261013a">
+<link rel="stylesheet" href="/2026/asset2026/css/add.css?261126a">
+<link rel="stylesheet" href="/2026/asset2026/css/header-2026.css?261013a">
+<link rel="stylesheet" href="/2026/asset2026/css/footer-2026.css?261013a">
+<!-- NOTE: ヘッダー背景（波）と下層ページ共通スタイルは、個別ページに書くと
+     追加漏れ・キャッシュバスター更新漏れが起きるため、ここに集約している。
+     ページ固有の CSS だけを各ページの <head> に書くこと。 -->
+<link rel="stylesheet" href="/2026/asset2026/css/header-title-bg-2026.css?260824b">
+
+<!-- Google tag (gtag.js) 344620846-->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-8VRN0XX99F"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+
+  function gtag() {
+    dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'G-8VRN0XX99F');
+</script>
+<!-- Google Tag Manager -->
+<script>
+  (function(w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({
+      'gtm.start': new Date().getTime(),
+      event: 'gtm.js'
+    });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != 'dataLayer' ? '&l=' + l : '';
+    j.async = true;
+    j.src =
+      'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', 'GTM-NBM6WVD');
+</script>
+<!-- End Google Tag Manager -->
+
+
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+  <!-- meta -->
+  <meta name="description" content="CEATEC 2026（シーテック）公式サイト。2026年10月13日(火)～16日(金) 幕張メッセにて開催。テーマは「Transformation - 企業が、産業が、そして社会が変わる -」。" />
+  <meta name="keywords" content="ceatec,ceatec japan,CEATEC 2026,シーテック,しーてっく,Transformation,幕張メッセ,公式サイト" />
+  <link rel="stylesheet" href="/2026/asset2026/css/top.css?261126e">
+  <link rel="stylesheet" href="/2026/asset2026/css/top-mv-intro.css?260806a">
+  <style>
+    /* ==========================================================================
+       本日のセッション（講演カルーセル）
+       カードは PHP が 1 セット分を HTML で出し、ページ末尾のインライン JS が
+       複製を後ろに並べて左へ流す。JS が動かない時と「視差効果を減らす」設定の時は、
+       流さずに横スクロールで見せる
+       ========================================================================== */
+    .top-conftoday {
+      /* 背景のリングより前面に出す（バナースライダーと同じ） */
+      position: relative;
+      z-index: 2;
+      padding: 24px 0 32px;
+      --conftoday-card-w: clamp(240px, 22vw, 300px);
+      --conftoday-gap: 20px;
+    }
+    .top-conftoday__inner {
+      max-width: 1440px;
+      margin: 0 auto;
+      padding: 0 var(--pad);
+    }
+    .top-conftoday__head {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px 24px;
+    }
+    /* 会期前は見出しを出さないので、ボタンだけを右に寄せる */
+    .top-conftoday__head--noheading {
+      justify-content: flex-end;
+    }
+    .top-conftoday__title {
+      margin: 0;
+    }
+    .top-conftoday__date {
+      display: inline-block;
+      margin-left: 14px;
+      padding: 2px 12px;
+      border-radius: 999px;
+      background: var(--navy);
+      color: #fff;
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 1.6;
+      vertical-align: 0.25em;
+    }
+    .top-conftoday__actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .top-conftoday__pause {
+      /* 狭い画面で「一時／停止」と 2 行に折り返さないようにする */
+      flex-shrink: 0;
+      white-space: nowrap;
+      width: auto;
+      padding: 11px 18px;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: #fff;
+      color: var(--navy);
+      font: inherit;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.4;
+      cursor: pointer;
+    }
+    .top-conftoday__pause[hidden] {
+      display: none;
+    }
+    .top-conftoday__viewport {
+      max-width: 1440px;
+      margin: 18px auto 0;
+      padding: 8px var(--pad) 16px;
+      overflow-x: auto;
+      scrollbar-width: thin;
+    }
+    .top-conftoday.is-running .top-conftoday__viewport {
+      overflow: hidden;
+      -webkit-mask-image: linear-gradient(to right, transparent 0, #000 48px, #000 calc(100% - 48px), transparent 100%);
+              mask-image: linear-gradient(to right, transparent 0, #000 48px, #000 calc(100% - 48px), transparent 100%);
+    }
+    .top-conftoday__track {
+      display: flex;
+      width: max-content;
+    }
+    .top-conftoday.is-running .top-conftoday__track {
+      will-change: transform;
+    }
+    .top-conftoday__set {
+      display: flex;
+      flex: none;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    /* 1 セットの幅に末尾の余白まで含めるため、間隔は gap ではなく右マージンで取る */
+    .top-conftoday__item {
+      flex: 0 0 var(--conftoday-card-w);
+      width: var(--conftoday-card-w);
+      margin: 0 var(--conftoday-gap) 0 0;
+      padding: 0;
+    }
+    .top-conftoday__card {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: #fff;
+      box-shadow: 0 1px 2px rgba(10, 26, 74, 0.06), 0 6px 18px rgba(10, 26, 74, 0.08);
+      color: var(--text);
+      text-decoration: none;
+      transition: transform 0.35s cubic-bezier(0.2, 0.7, 0.2, 1), box-shadow 0.35s ease;
+    }
+    a.top-conftoday__card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 2px 4px rgba(10, 26, 74, 0.08), 0 14px 32px rgba(10, 26, 74, 0.16);
+      color: var(--text);
+    }
+    .top-conftoday__thumb {
+      position: relative;
+      display: block;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      background: #e6e9f0;
+    }
+    .top-conftoday .top-conftoday__thumb img {
+      position: absolute;
+      inset: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      max-width: none;
+      object-fit: cover;
+    }
+    .top-conftoday__badge {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      padding: 2px 9px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.92);
+      color: var(--navy);
+      font-size: 11px;
+      font-weight: 700;
+      line-height: 1.6;
+    }
+    .top-conftoday__body {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      gap: 6px;
+      padding: 12px 14px 14px;
+    }
+    .top-conftoday__meta {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 4px 8px;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+    .top-conftoday__time {
+      color: var(--navy);
+      font-weight: 700;
+      font-variant-numeric: tabular-nums;
+    }
+    /* 会期前だけ時刻の前に出す開催日（例: 10/14(水)） */
+    .top-conftoday__day {
+      color: var(--text-sub);
+      font-weight: 700;
+      font-variant-numeric: tabular-nums;
+    }
+    .top-conftoday__code {
+      padding: 1px 8px;
+      border-radius: 999px;
+      background: #e8ecf7;
+      color: var(--navy);
+      font-size: 11px;
+      font-weight: 700;
+    }
+    .top-conftoday__name {
+      display: -webkit-box;
+      min-height: calc(1.5em * 3);
+      overflow: hidden;
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 1.5;
+      overflow-wrap: anywhere;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+      line-clamp: 3;
+    }
+    .top-conftoday__place {
+      margin-top: auto;
+      overflow: hidden;
+      color: var(--text-sub);
+      font-size: 12.5px;
+      line-height: 1.5;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    @media screen and (max-width: 767px) {
+      .top-conftoday {
+        --conftoday-card-w: 72vw;
+        --conftoday-gap: 14px;
+      }
+      .top-conftoday__date {
+        margin-left: 10px;
+        font-size: 13px;
+      }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .top-conftoday__card {
+        transition: none;
+      }
+    }
+  </style>
+  <!-- Slick Slider (バナースライダー用) -->
+  <link rel="stylesheet" href="/2026/asset2026/js/slick.css">
+  <script src="/2026/asset2026/js/slick.min.js" defer></script>
+  <!-- イントロ再生判定（スライダー初期化より前に __ceatecIntroPending を確定させる）。
+       判定関数は top-mv-intro.js からも再利用する。preload もここで1本だけ挿入する。 -->
+  <script>
+  (function () {
+    var STORAGE_KEY = 'ceatec2026_mv_intro_seen';
+    var SRC_LANDSCAPE = '/2026/asset2026/movie/mv_intro_landscape.mp4';
+    var SRC_PORTRAIT = '/2026/asset2026/movie/mv_intro_portrait.mp4';
+
+    function shouldPlay() {
+      try {
+        var params = new URLSearchParams(window.location.search);
+        if (params.get('intro') === '1') {
+          try { localStorage.removeItem(STORAGE_KEY); } catch (e) {}
+          return true;
+        }
+        if (params.get('intro') === '0') return false;
+        try {
+          if (localStorage.getItem(STORAGE_KEY) === '1') return false;
+        } catch (e) {
+          // localStorage 失敗時は再生側に倒す
+        }
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return false;
+        return true;
+      } catch (e) {
+        return true;
+      }
+    }
+
+    window.ceatecMvIntroShouldPlay = shouldPlay;
+    window.__ceatecIntroPending = shouldPlay();
+
+    if (window.__ceatecIntroPending) {
+      var src = window.matchMedia('(max-width: 767px)').matches ? SRC_PORTRAIT : SRC_LANDSCAPE;
+      window.__ceatecIntroVideoSrc = src;
+      var link = document.createElement('link');
+      link.rel = 'preload';
+      link.as = 'video';
+      link.href = src;
+      document.head.appendChild(link);
+    }
+  })();
+  </script>
+</head>
+
+<body class="ja top-page">
+  
+
+<div class="header-title-2026">
+  <div class="header-title-2026__bg" aria-hidden="true">
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+    <div class="glow glow-3"></div>
+    <div class="glow glow-4"></div>
+    <div class="glow glow-5"></div>
+    <div class="glow glow-6"></div>
+    <div class="glow glow-7"></div>
+  </div>
+  <span class="header-title-2026__wave" aria-hidden="true"></span>
+
+  <!-- スクロール追従でヘッダーが position:fixed に切り替わると、その分だけ
+       .header-title-2026 の高さが詰まって下のコンテンツが飛び上がる。
+       header-2026.js がこの箱にヘッダーの高さを入れて穴埋めする -->
+  <div class="header-2026__spacer" aria-hidden="true"></div>
+
+  <header id="header" class="header-2026">
+    <div class="header-2026__inner">
+      <a href="/ja/" class="header-2026__logo">
+        <img src="https://web-asset.io/CEATEC/2026/logo-basic-w-2026.svg" alt="CEATEC 2026">
+        <span class="header-2026__logo-meta">
+          <time datetime="2026-10-13/2026-10-16">10.13-16</time>
+          <span class="header-2026__logo-venue">幕張メッセ</span>
+        </span>
+      </a>
+
+      <ul class="header-2026__nav">
+                <li class="" data-nav-section="about">
+          <a href="/ja/about/"
+             aria-haspopup="true" aria-expanded="false" aria-controls="header-dropdown-2026">About</a>
+        </li>
+                <li class="" data-nav-section="exhibition">
+          <a href="/ja/exhibition/"
+             aria-haspopup="true" aria-expanded="false" aria-controls="header-dropdown-2026">Exhibition</a>
+        </li>
+                <li class="" data-nav-section="conference">
+          <a href="/ja/conference/"
+             aria-haspopup="true" aria-expanded="false" aria-controls="header-dropdown-2026">Conference &amp; Event</a>
+        </li>
+                <li class="" data-nav-section="award">
+          <a href="/ja/award2026/"
+             aria-haspopup="true" aria-expanded="false" aria-controls="header-dropdown-2026">Award</a>
+        </li>
+                <li class="" data-nav-section="access">
+          <a href="/ja/access/"
+             aria-haspopup="true" aria-expanded="false" aria-controls="header-dropdown-2026">Access</a>
+        </li>
+                <li class="" data-nav-section="news">
+          <a href="/ja/news/"
+             aria-haspopup="true" aria-expanded="false" aria-controls="header-dropdown-2026">News</a>
+        </li>
+              </ul>
+
+      <div class="header-2026__utility">
+        <ul class="header-2026__util-links">
+          <li><a href="/ja/faq/">よくある質問</a></li>
+          <li><a href="/ja/contact/">お問い合わせ</a></li>
+        </ul>
+        <div class="header-2026__lang">
+          <a href="/ja/" class="is-current">JP</a>
+          <a href="/en/">EN</a>
+        </div>
+        <a href="https://www.ceatec.com/redirect/?callback_id=regist_link2026_ja" target="_blank" class="header-2026__cta header-2026__cta--primary btn_registration js-is_login">来場事前登録</a>
+        <a href="/ja/mypage/" class="header-2026__cta header-2026__cta--login js-is_login">ログイン</a>
+        <!-- ログイン中のみ表示。js-is_logout はログイン時だけ残るクラス（common.functions.js） -->
+        <a href="/ja/mypage/" class="header-2026__cta header-2026__cta--login js-is_logout">マイページ</a>
+        <a href="#" class="header-2026__cta header-2026__cta--login js-logout">ログアウト</a>
+      </div>
+
+      <!-- タブレット・SP用メニューボタン（1119px以下で表示） -->
+      <button type="button" class="header-2026__menubtn" aria-controls="header-drawer-2026" aria-expanded="false">
+        <span class="header-2026__menubtn-bars" aria-hidden="true"></span>
+        <span class="header-2026__menubtn-label">MENU</span>
+      </button>
+    </div>
+
+          </header>
+
+  </div>
+
+<!-- PC(1120px以上)用のホバードロップダウン。
+     .header-title-2026 の overflow:hidden と .header-2026__nav の overflow-x:auto の
+     どちらにも切られないよう、両方の外に出して position:fixed で置く。
+     表示位置(top)は header-2026.js がヘッダー下端に合わせて更新する -->
+<div class="header-dropdown-2026" id="header-dropdown-2026">
+    <div class="header-dropdown-2026__panel" data-section="about">
+    <ul class="header-dropdown-2026__list">
+            <li>
+                <a href="/ja/about/" class="">開催概要</a>
+              </li>
+            <li>
+                <a href="/ja/about/registration.html" class="">来場登録</a>
+              </li>
+            <li>
+                <a href="/ja/about/registration/mypage-features.html" class="">マイページ機能ガイド</a>
+              </li>
+            <li>
+                <a href="/ja/about/cooperation.html" class="">協力団体</a>
+              </li>
+            <li>
+                <a href="/ja/about/mediapartner.html" class="">メディアパートナー</a>
+              </li>
+            <li>
+                <a href="/ja/about/history.html" class="">CEATECの歩み</a>
+              </li>
+            <li>
+                <a href="/ja/visitor-guide/" class="">ビジターガイド</a>
+              </li>
+          </ul>
+
+          </div>
+    <div class="header-dropdown-2026__panel" data-section="exhibition">
+    <ul class="header-dropdown-2026__list">
+            <li data-third-key="0">
+                <a href="/ja/exhibition/exhibitor-list.php" class="">出展者一覧</a>
+              </li>
+            <li>
+                <a href="/ja/exhibition/exhibitor-guide.html" class="">出展者ページ機能ガイド</a>
+              </li>
+            <li>
+                <a href="/ja/exhibition/map.html" class="">会場マップ</a>
+              </li>
+            <li>
+                <a href="/ja/exhibition/" class="">展示エリア</a>
+              </li>
+            <li>
+                <a href="/ja/exhibition/general-exhibits/" class="">一般展示</a>
+              </li>
+            <li data-third-key="5">
+                <a href="/ja/exhibition/x-park/" class="">X（Transformation）パーク</a>
+              </li>
+            <li>
+                <a href="/ja/exhibition/nextgen-park/" class="">ネクストジェネレーションパーク</a>
+              </li>
+            <li data-third-key="7">
+                <a href="/ja/exhibition/global-park/" class="">グローバルパーク</a>
+              </li>
+            <li>
+                <a href="/ja/exhibition/for-students/" class="">CEATEC for Students</a>
+              </li>
+          </ul>
+
+            <div class="header-dropdown-2026__third" data-third-panel="0" hidden>
+      <ul class="header-dropdown-2026__list">
+                <li>
+                    <a href="/ja/exhibition/download_list.html" class="">資料ダウンロード一覧</a>
+                  </li>
+                <li>
+                    <a href="/ja/exhibition/movie_list.html" class="">プレゼン・デモ動画一覧</a>
+                  </li>
+                <li>
+                    <a href="/ja/exhibition/meeting_list.html" class="">ミーティング予約受付企業一覧</a>
+                  </li>
+                <li>
+                    <a href="/ja/exhibition/event_list.html" class="">出展者イベント一覧</a>
+                  </li>
+              </ul>
+    </div>
+        <div class="header-dropdown-2026__third" data-third-panel="5" hidden>
+      <ul class="header-dropdown-2026__list">
+                <li>
+                    <a href="/ja/exhibition/x-park/pavilion/life-dx.html" class="">暮らしのDXパビリオン</a>
+                  </li>
+                <li>
+                    <a href="/ja/exhibition/x-park/pavilion/digital-ocean.html" class="">海洋デジタル社会パビリオン</a>
+                  </li>
+                <li>
+                    <a href="/ja/exhibition/x-park/pavilion/space-co-creation.html" class="">宇宙共創パビリオン</a>
+                  </li>
+                <li>
+                    <a href="/ja/exhibition/x-park/pavilion/digital-mobility.html" class="">デジタル交通社会パビリオン</a>
+                  </li>
+              </ul>
+    </div>
+        <div class="header-dropdown-2026__third" data-third-panel="7" hidden>
+      <ul class="header-dropdown-2026__list">
+                <li>
+                    <a href="/ja/exhibition/global-park/tour.html" class="">Global Innovation Discovery Tour</a>
+                  </li>
+              </ul>
+    </div>
+      </div>
+    <div class="header-dropdown-2026__panel" data-section="conference">
+    <ul class="header-dropdown-2026__list">
+            <li>
+                <a href="/ja/conference/" class="">コンファレンス</a>
+              </li>
+            <li>
+                <a href="/ja/conference/session-list.html" class="">セッション一覧</a>
+              </li>
+            <li>
+                <a href="/ja/conference/search.html" class="">セッション検索</a>
+              </li>
+            <li>
+                <a href="/ja/conference/timetable.html" class="">タイムテーブル</a>
+              </li>
+            <li>
+                <a href="/ja/conference/reservation-guide.html" class="">聴講予約手順</a>
+              </li>
+            <li>
+                <a href="/ja/conference/category.html?tag=online" class="">オンラインセッション</a>
+              </li>
+            <li>
+                <a href="/ja/conference/ecodesign.html" class="">エコ＆デザインチャレンジ</a>
+              </li>
+          </ul>
+
+          </div>
+    <div class="header-dropdown-2026__panel" data-section="award">
+    <ul class="header-dropdown-2026__list">
+            <li>
+                <a href="/ja/award2026/" class="">CEATEC AWARD</a>
+              </li>
+            <li>
+                <a href="https://web-asset.io/CEATEC/2026/CEATEC2026_Featured-Guidebook_WEB.pdf" target="_blank" rel="noopener" class="">CEATEC 2026 注目展示ガイドブック (PDF)</a>
+              </li>
+          </ul>
+
+          </div>
+    <div class="header-dropdown-2026__panel" data-section="access">
+    <ul class="header-dropdown-2026__list">
+            <li>
+                <a href="/ja/access/" class="">アクセス</a>
+              </li>
+            <li>
+                <a href="/ja/access/bus.html" class="">高速バス</a>
+              </li>
+            <li>
+                <a href="/ja/access/accommodation.html" class="">宿泊情報</a>
+              </li>
+            <li>
+                <a href="/ja/access/venue-services.html" class="">会場サービス</a>
+              </li>
+          </ul>
+
+          </div>
+    <div class="header-dropdown-2026__panel" data-section="news">
+    <ul class="header-dropdown-2026__list">
+            <li>
+                <a href="/ja/news/" class="">News</a>
+              </li>
+            <li>
+                <a href="/ja/news/pressrelease_update.html" class="">出展者ページ更新情報</a>
+              </li>
+            <li>
+                <a href="/ja/news/pressrelease.html" class="">出展者プレスリリース</a>
+              </li>
+            <li>
+                <a href="/ja/news/press/" class="">報道関係者の方へ</a>
+              </li>
+            <li>
+                <a href="https://exp.ceatec.com/" target="_blank" rel="noopener" class="">ceatec experience</a>
+              </li>
+          </ul>
+
+          </div>
+  </div>
+
+<!-- タブレット・SP用ドロワーメニュー。overflow:hidden の .header-title-2026 の外に置く -->
+<div class="header-drawer-2026" id="header-drawer-2026">
+  <div class="header-drawer-2026__overlay" data-drawer-close></div>
+
+  <nav class="header-drawer-2026__panel" aria-label="メインメニュー">
+    <div class="header-drawer-2026__head">
+      <div class="header-2026__lang">
+        <a href="/ja/" class="is-current">JP</a>
+        <a href="/en/">EN</a>
+      </div>
+      <button type="button" class="header-drawer-2026__close" data-drawer-close aria-label="メニューを閉じる"></button>
+    </div>
+
+    <ul class="header-drawer-2026__nav">
+            <li class="">
+        <a href="/ja/about/" class="header-drawer-2026__section">About</a>
+        <ul class="header-drawer-2026__children">
+                    <li>
+                        <a href="/ja/about/" class="">開催概要</a>
+                                  </li>
+                    <li>
+                        <a href="/ja/about/registration.html" class="">来場登録</a>
+                                  </li>
+                    <li>
+                        <a href="/ja/about/registration/mypage-features.html" class="">マイページ機能ガイド</a>
+                                  </li>
+                    <li>
+                        <a href="/ja/about/cooperation.html" class="">協力団体</a>
+                                  </li>
+                    <li>
+                        <a href="/ja/about/mediapartner.html" class="">メディアパートナー</a>
+                                  </li>
+                    <li>
+                        <a href="/ja/about/history.html" class="">CEATECの歩み</a>
+                                  </li>
+                    <li>
+                        <a href="/ja/visitor-guide/" class="">ビジターガイド</a>
+                                  </li>
+                  </ul>
+      </li>
+            <li class="">
+        <a href="/ja/exhibition/" class="header-drawer-2026__section">Exhibition</a>
+        <ul class="header-drawer-2026__children">
+                    <li>
+                        <a href="/ja/exhibition/exhibitor-list.php" class="">出展者一覧</a>
+                                    <ul class="header-drawer-2026__grandchildren">
+                            <li>
+                                <a href="/ja/exhibition/download_list.html" class="">資料ダウンロード一覧</a>
+                              </li>
+                            <li>
+                                <a href="/ja/exhibition/movie_list.html" class="">プレゼン・デモ動画一覧</a>
+                              </li>
+                            <li>
+                                <a href="/ja/exhibition/meeting_list.html" class="">ミーティング予約受付企業一覧</a>
+                              </li>
+                            <li>
+                                <a href="/ja/exhibition/event_list.html" class="">出展者イベント一覧</a>
+                              </li>
+                          </ul>
+                      </li>
+                    <li>
+                        <a href="/ja/exhibition/exhibitor-guide.html" class="">出展者ページ機能ガイド</a>
+                                  </li>
+                    <li>
+                        <a href="/ja/exhibition/map.html" class="">会場マップ</a>
+                                  </li>
+                    <li>
+                        <a href="/ja/exhibition/" class="">展示エリア</a>
+                                  </li>
+                    <li>
+                        <a href="/ja/exhibition/general-exhibits/" class="">一般展示</a>
+                                  </li>
+                    <li>
+                        <a href="/ja/exhibition/x-park/" class="">X（Transformation）パーク</a>
+                                    <ul class="header-drawer-2026__grandchildren">
+                            <li>
+                                <a href="/ja/exhibition/x-park/pavilion/life-dx.html" class="">暮らしのDXパビリオン</a>
+                              </li>
+                            <li>
+                                <a href="/ja/exhibition/x-park/pavilion/digital-ocean.html" class="">海洋デジタル社会パビリオン</a>
+                              </li>
+                            <li>
+                                <a href="/ja/exhibition/x-park/pavilion/space-co-creation.html" class="">宇宙共創パビリオン</a>
+                              </li>
+                            <li>
+                                <a href="/ja/exhibition/x-park/pavilion/digital-mobility.html" class="">デジタル交通社会パビリオン</a>
+                              </li>
+                          </ul>
+                      </li>
+                    <li>
+                        <a href="/ja/exhibition/nextgen-park/" class="">ネクストジェネレーションパーク</a>
+                                  </li>
+                    <li>
+                        <a href="/ja/exhibition/global-park/" class="">グローバルパーク</a>
+                                    <ul class="header-drawer-2026__grandchildren">
+                            <li>
+                                <a href="/ja/exhibition/global-park/tour.html" class="">Global Innovation Discovery Tour</a>
+                              </li>
+                          </ul>
+                      </li>
+                    <li>
+                        <a href="/ja/exhibition/for-students/" class="">CEATEC for Students</a>
+                                  </li>
+                  </ul>
+      </li>
+            <li class="">
+        <a href="/ja/conference/" class="header-drawer-2026__section">Conference &amp; Event</a>
+        <ul class="header-drawer-2026__children">
+                    <li>
+                        <a href="/ja/conference/" class="">コンファレンス</a>
+                                  </li>
+                    <li>
+                        <a href="/ja/conference/session-list.html" class="">セッション一覧</a>
+                                  </li>
+                    <li>
+                        <a href="/ja/conference/search.html" class="">セッション検索</a>
+                                  </li>
+                    <li>
+                        <a href="/ja/conference/timetable.html" class="">タイムテーブル</a>
+                                  </li>
+                    <li>
+                        <a href="/ja/conference/reservation-guide.html" class="">聴講予約手順</a>
+                                  </li>
+                    <li>
+                        <a href="/ja/conference/category.html?tag=online" class="">オンラインセッション</a>
+                                  </li>
+                    <li>
+                        <a href="/ja/conference/ecodesign.html" class="">エコ＆デザインチャレンジ</a>
+                                  </li>
+                  </ul>
+      </li>
+            <li class="">
+        <a href="/ja/award2026/" class="header-drawer-2026__section">Award</a>
+        <ul class="header-drawer-2026__children">
+                    <li>
+                        <a href="/ja/award2026/" class="">CEATEC AWARD</a>
+                                  </li>
+                    <li>
+                        <a href="https://web-asset.io/CEATEC/2026/CEATEC2026_Featured-Guidebook_WEB.pdf" target="_blank" rel="noopener" class="">CEATEC 2026 注目展示ガイドブック (PDF)</a>
+                                  </li>
+                  </ul>
+      </li>
+            <li class="">
+        <a href="/ja/access/" class="header-drawer-2026__section">Access</a>
+        <ul class="header-drawer-2026__children">
+                    <li>
+                        <a href="/ja/access/" class="">アクセス</a>
+                                  </li>
+                    <li>
+                        <a href="/ja/access/bus.html" class="">高速バス</a>
+                                  </li>
+                    <li>
+                        <a href="/ja/access/accommodation.html" class="">宿泊情報</a>
+                                  </li>
+                    <li>
+                        <a href="/ja/access/venue-services.html" class="">会場サービス</a>
+                                  </li>
+                  </ul>
+      </li>
+            <li class="">
+        <a href="/ja/news/" class="header-drawer-2026__section">News</a>
+        <ul class="header-drawer-2026__children">
+                    <li>
+                        <a href="/ja/news/" class="">News</a>
+                                  </li>
+                    <li>
+                        <a href="/ja/news/pressrelease_update.html" class="">出展者ページ更新情報</a>
+                                  </li>
+                    <li>
+                        <a href="/ja/news/pressrelease.html" class="">出展者プレスリリース</a>
+                                  </li>
+                    <li>
+                        <a href="/ja/news/press/" class="">報道関係者の方へ</a>
+                                  </li>
+                    <li>
+                        <a href="https://exp.ceatec.com/" target="_blank" rel="noopener" class="">ceatec experience</a>
+                                  </li>
+                  </ul>
+      </li>
+          </ul>
+
+    <ul class="header-drawer-2026__util">
+      <li><a href="/ja/faq/">よくある質問</a></li>
+      <li><a href="/ja/contact/">お問い合わせ</a></li>
+    </ul>
+
+    <div class="header-drawer-2026__cta">
+      <a href="https://www.ceatec.com/redirect/?callback_id=regist_link2026_ja" target="_blank" class="header-2026__cta header-2026__cta--primary btn_registration js-is_login">来場事前登録</a>
+      <a href="/ja/mypage/" class="header-2026__cta header-2026__cta--login js-is_login">ログイン</a>
+      <!-- ログイン中のみ表示。js-is_logout はログイン時だけ残るクラス（common.functions.js） -->
+      <a href="/ja/mypage/" class="header-2026__cta header-2026__cta--login js-is_logout">マイページ</a>
+      <a href="#" class="header-2026__cta header-2026__cta--login js-logout">ログアウト</a>
+    </div>
+  </nav>
+</div>
+
+<script src="/2026/asset2026/js/header-2026.js?260925b" defer></script>
+
+  <main class="top-2026">
+
+    <!-- ======================================================
+         MV / メインビジュアル（スライダー）スタート
+         .top-mv 1つが1枚のスライド。増減は .top-mv を足し引きするだけでよい
+         （ページャーのドットは top-mv-slider.js が枚数ぶん生成する）
+         ====================================================== -->
+    <article class="top-mvslider" data-mv-slider>
+      <div class="top-mvslider__track">
+      
+
+
+
+
+
+
+        <section class="top-mv top-mv--photo top-mv--daily top-mv--thanks">
+                    <img class="top-mv__photo" src="https://web-asset.io/CEATEC/2026/02_ceatec2026_hall.webp" alt="" width="2000" height="1334" fetchpriority="high" decoding="async">
+                              <style>
+            .top-mv .top-mv__video.is-failed { display: none; }
+            @media (prefers-reduced-motion: reduce) { .top-mv .top-mv__video { display: none; } }
+          </style>
+          <video class="top-mv__photo top-mv__video" src="/2026/ja/images/bg_mv_movie.mp4" poster="https://web-asset.io/CEATEC/2026/02_ceatec2026_hall.webp" autoplay loop muted playsinline webkit-playsinline preload="auto" aria-hidden="true" data-mv-video></video>
+          <script>
+            (function () {
+              var v = document.querySelector('[data-mv-video]');
+              if (!v) return;
+              var fail = function () { v.pause(); v.classList.add('is-failed'); };
+              if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) { fail(); return; }
+              if (v.error) { fail(); return; }
+              v.addEventListener('error', fail);
+              var p = v.play();
+              if (p && typeof p.catch === 'function') { p.catch(fail); }
+            })();
+          </script>
+          
+          <div class="top-mv__inner">
+            <div class="top-mv__body">
+                                          
+                            <h1 class="top-mv__title"><span class="top-mv__line">ご来場いただき</span><span class="top-mv__line">誠にありがとうございました</span></h1>
+                            
+              
+              
+                            <p class="top-mv__next"><span class="top-mv__next-kicker">NEXT</span><span class="top-mv__next-title"><img src="https://web-asset.io/CEATEC/2027/logo_wht_2027.svg" alt="CEATEC 2027" width="580" height="123"></span><small><span class="top-mv__next-date">2027年10月19日<span class="top-mv__next-dow">(火)</span></span><span class="top-mv__next-date">～22日<span class="top-mv__next-dow">(金)</span></span></small></p>
+              
+                            <div class="top-mv__btns">
+                <a href="https://web-asset.io/CEATEC/2026/ceatec_2026_report.pdf" target="_blank" rel="noopener" class="btn btn_registration top-mv__btn--primary" onclick="gtag('event', 'click', {'event_category': 'links','event_label': 'TOP MV 2026 実施報告書（PDF）'});">2026 実施報告書（PDF）</a>
+                <a href="#top-digest" class="btn btn_registration top-mv__btn--sub" onclick="gtag('event', 'click', {'event_category': 'links','event_label': 'TOP MV 2026 ダイジェストムービーはこちら'});">2026 ダイジェストムービーはこちら</a>
+              </div>
+
+              
+            </div>
+
+            <figure class="top-mv__visual">
+              <img src="https://web-asset.io/CEATEC/2026/logo_2026_kv_theme.webp" alt="CEATEC 2026 Innovation for All" width="1500" height="1506">
+              <figcaption class="top-mv__dateband">
+                <span class="top-mv__dateband-year">2026年</span>
+                <time class="top-mv__dateband-main" datetime="2026-10-13/2026-10-16"><span class="top-mv__dateband-nobr">10月13日<small>(火)</small></span> - <span class="top-mv__dateband-nobr">16日<small>(金)</small></span></time>
+              </figcaption>
+              <p class="top-mv__venue-name">幕張メッセ</p>
+              <p class="top-mv__co">併催： <img src="https://web-asset.io/CEATEC/2026/jms_logo_2026_1line.svg" class="jms_logo" alt="Japan Mobility Show Bizweek 2026"></p>
+            </figure>
+          </div>
+        </section>
+
+          <!-- 2枚目：コンファレンス。10/16 17:00 以降はオンラインセッション。
+             NOTE: 修飾子 top-mv--2 / --3 は「並び順」ではなく背景の識別子で、
+             top.css 側の背景指定と対になっている。--3 = コンファレンス写真、
+             --2 = 出展の様子写真。順番を入れ替えるときは section ごと動かすだけでよく、
+             クラス名は変えないこと（変えると背景が入れ替わる） -->
+                      </div>
+    </article>
+    <!-- TOP MVスライダー END -->
+
+
+
+
+
+
+    <!-- ======================================================
+         News & Topics / テーマ・開催概要
+         背景の柔らかいリング状モーションは bg_rings.html を移植し、
+         News と Theme の2セクションで共有している
+         ====================================================== -->
+    <article class="top-newstheme">
+      <div class="top-newstheme__rings" aria-hidden="true">
+        <div class="ring ring-red-sm">
+          <div class="ring-inner">
+            <svg viewBox="0 0 180 190">
+              <defs>
+                <radialGradient id="grad-red-sm" cx="48%" cy="45%" r="62%">
+                  <stop offset="0%" stop-color="#f4aaaf" stop-opacity=".32"/>
+                  <stop offset="70%" stop-color="#f4aaaf" stop-opacity=".12"/>
+                  <stop offset="100%" stop-color="#f4aaaf" stop-opacity=".02"/>
+                </radialGradient>
+              </defs>
+              <path class="shape-fill" d="M52,10 C25,13 15,35 15,64 C15,88 22,120 43,145 C61,167 91,178 118,173 C143,168 157,149 159,123 C161,104 154,85 153,62 C151,40 145,20 123,12 C105,6 74,8 52,10 Z" fill="url(#grad-red-sm)"/>
+              <path class="shape-stroke" d="M52,10 C25,13 15,35 15,64 C15,88 22,120 43,145 C61,167 91,178 118,173 C143,168 157,149 159,123 C161,104 154,85 153,62 C151,40 145,20 123,12 C105,6 74,8 52,10 Z" fill="none" stroke="#f1a4aa" stroke-opacity=".25" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="ring ring-yellow-lg">
+          <div class="ring-inner">
+            <svg viewBox="0 0 360 350">
+              <defs>
+                <radialGradient id="grad-yellow-lg" cx="50%" cy="52%" r="62%">
+                  <stop offset="0%" stop-color="#e7d64c" stop-opacity=".38"/>
+                  <stop offset="68%" stop-color="#e7d64c" stop-opacity=".14"/>
+                  <stop offset="100%" stop-color="#e7d64c" stop-opacity=".02"/>
+                </radialGradient>
+              </defs>
+              <path class="shape-fill" d="M96,25 C54,42 29,82 19,128 C7,181 20,249 58,295 C95,338 154,351 219,344 C281,337 323,304 336,253 C347,211 341,168 337,126 C332,85 314,52 279,33 C230,6 147,5 96,25 Z" fill="url(#grad-yellow-lg)"/>
+              <path class="shape-stroke" d="M96,25 C54,42 29,82 19,128 C7,181 20,249 58,295 C95,338 154,351 219,344 C281,337 323,304 336,253 C347,211 341,168 337,126 C332,85 314,52 279,33 C230,6 147,5 96,25 Z" fill="none" stroke="#e2d553" stroke-opacity=".25" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="ring ring-green">
+          <div class="ring-inner">
+            <svg viewBox="0 0 300 250">
+              <defs>
+                <radialGradient id="grad-green" cx="38%" cy="42%" r="65%">
+                  <stop offset="0%" stop-color="#73db9a" stop-opacity=".34"/>
+                  <stop offset="70%" stop-color="#73db9a" stop-opacity=".12"/>
+                  <stop offset="100%" stop-color="#73db9a" stop-opacity=".02"/>
+                </radialGradient>
+              </defs>
+              <path class="shape-fill" d="M63,24 C29,38 12,67 7,102 C0,140 7,178 31,205 C55,231 95,243 135,243 C177,242 220,228 248,200 C278,171 285,133 278,99 C271,67 244,48 211,44 C178,39 161,19 133,17 C107,16 85,15 63,24 Z" fill="url(#grad-green)"/>
+              <path class="shape-stroke" d="M63,24 C29,38 12,67 7,102 C0,140 7,178 31,205 C55,231 95,243 135,243 C177,242 220,228 248,200 C278,171 285,133 278,99 C271,67 244,48 211,44 C178,39 161,19 133,17 C107,16 85,15 63,24 Z" fill="none" stroke="#8ce1a9" stroke-opacity=".25" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="ring ring-purple">
+          <div class="ring-inner">
+            <svg viewBox="0 0 200 125">
+              <defs>
+                <radialGradient id="grad-purple" cx="45%" cy="48%" r="60%">
+                  <stop offset="0%" stop-color="#c49dee" stop-opacity=".32"/>
+                  <stop offset="70%" stop-color="#c49dee" stop-opacity=".12"/>
+                  <stop offset="100%" stop-color="#c49dee" stop-opacity=".02"/>
+                </radialGradient>
+              </defs>
+              <path class="shape-fill" d="M50,13 C25,23 11,40 9,60 C7,81 17,101 36,113 C57,125 88,123 119,119 C148,115 172,103 183,82 C194,62 188,37 169,24 C150,12 127,11 102,8 C83,6 66,7 50,13 Z" fill="url(#grad-purple)"/>
+              <path class="shape-stroke" d="M50,13 C25,23 11,40 9,60 C7,81 17,101 36,113 C57,125 88,123 119,119 C148,115 172,103 183,82 C194,62 188,37 169,24 C150,12 127,11 102,8 C83,6 66,7 50,13 Z" fill="none" stroke="#c5a0ef" stroke-opacity=".25" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="ring ring-pink-lg">
+          <div class="ring-inner">
+            <svg viewBox="0 0 325 305">
+              <defs>
+                <radialGradient id="grad-pink-lg" cx="45%" cy="50%" r="62%">
+                  <stop offset="0%" stop-color="#ef68a5" stop-opacity=".34"/>
+                  <stop offset="68%" stop-color="#ef68a5" stop-opacity=".12"/>
+                  <stop offset="100%" stop-color="#ef68a5" stop-opacity=".02"/>
+                </radialGradient>
+              </defs>
+              <path class="shape-fill" d="M122,4 C86,10 65,32 57,67 C47,109 48,162 66,206 C83,248 118,282 167,293 C220,304 272,289 301,249 C327,212 328,157 313,115 C299,77 272,46 250,20 C232,0 198,-4 170,1 C152,4 139,2 122,4 Z" fill="url(#grad-pink-lg)"/>
+              <path class="shape-stroke" d="M122,4 C86,10 65,32 57,67 C47,109 48,162 66,206 C83,248 118,282 167,293 C220,304 272,289 301,249 C327,212 328,157 313,115 C299,77 272,46 250,20 C232,0 198,-4 170,1 C152,4 139,2 122,4 Z" fill="none" stroke="#ef61a1" stroke-opacity=".25" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="ring ring-blue-sm">
+          <div class="ring-inner">
+            <svg viewBox="0 0 190 180">
+              <defs>
+                <radialGradient id="grad-blue-sm" cx="55%" cy="48%" r="60%">
+                  <stop offset="0%" stop-color="#abc7f2" stop-opacity=".28"/>
+                  <stop offset="72%" stop-color="#abc7f2" stop-opacity=".10"/>
+                  <stop offset="100%" stop-color="#abc7f2" stop-opacity=".02"/>
+                </radialGradient>
+              </defs>
+              <path class="shape-fill" d="M64,13 C34,16 16,34 10,61 C4,88 8,121 24,144 C39,166 65,177 95,177 C127,176 155,163 169,138 C183,113 181,80 176,55 C171,28 148,15 119,14 C98,12 82,11 64,13 Z" fill="url(#grad-blue-sm)"/>
+              <path class="shape-stroke" d="M64,13 C34,16 16,34 10,61 C4,88 8,121 24,144 C39,166 65,177 95,177 C127,176 155,163 169,138 C183,113 181,80 176,55 C171,28 148,15 119,14 C98,12 82,11 64,13 Z" fill="none" stroke="#b0ccf4" stroke-opacity=".25" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="ring ring-blue-lg">
+          <div class="ring-inner">
+            <svg viewBox="0 0 330 280">
+              <defs>
+                <radialGradient id="grad-blue-lg" cx="46%" cy="52%" r="62%">
+                  <stop offset="0%" stop-color="#3ba5f6" stop-opacity=".34"/>
+                  <stop offset="68%" stop-color="#3ba5f6" stop-opacity=".12"/>
+                  <stop offset="100%" stop-color="#3ba5f6" stop-opacity=".02"/>
+                </radialGradient>
+              </defs>
+              <path class="shape-fill" d="M105,14 C68,22 41,45 29,78 C16,113 17,154 20,191 C22,223 37,249 62,263 C93,281 134,279 176,274 C214,269 249,260 279,238 C307,217 317,187 318,154 C318,118 311,79 287,52 C262,23 220,8 179,5 C151,4 129,9 105,14 Z" fill="url(#grad-blue-lg)"/>
+              <path class="shape-stroke" d="M105,14 C68,22 41,45 29,78 C16,113 17,154 20,191 C22,223 37,249 62,263 C93,281 134,279 176,274 C214,269 249,260 279,238 C307,217 317,187 318,154 C318,118 311,79 287,52 C262,23 220,8 179,5 C151,4 129,9 105,14 Z" fill="none" stroke="#30a0f4" stroke-opacity=".25" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="ring ring-orange">
+          <div class="ring-inner">
+            <svg viewBox="0 0 240 260">
+              <defs>
+                <radialGradient id="grad-orange" cx="50%" cy="48%" r="62%">
+                  <stop offset="0%" stop-color="#f1bb8b" stop-opacity=".32"/>
+                  <stop offset="70%" stop-color="#f1bb8b" stop-opacity=".12"/>
+                  <stop offset="100%" stop-color="#f1bb8b" stop-opacity=".02"/>
+                </radialGradient>
+              </defs>
+              <path class="shape-fill" d="M76,16 C45,22 25,41 18,69 C10,98 11,129 22,164 C33,197 56,227 87,242 C118,257 156,258 188,244 C219,230 235,201 238,168 C241,133 231,99 221,69 C211,40 191,20 161,14 C133,9 101,11 76,16 Z" fill="url(#grad-orange)"/>
+              <path class="shape-stroke" d="M76,16 C45,22 25,41 18,69 C10,98 11,129 22,164 C33,197 56,227 87,242 C118,257 156,258 188,244 C219,230 235,201 238,168 C241,133 231,99 221,69 C211,40 191,20 161,14 C133,9 101,11 76,16 Z" fill="none" stroke="#f1bf91" stroke-opacity=".25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+      <span class="top-ghost top-ghost--dark top-newstheme__ghost" aria-hidden="true">NEWS</span>
+
+      <!-- バナースライダー（このブロックの最上部）。11/7 0:00 以降（$top_mv_digest）は出さない。
+           無いときは下の JS も $bannerList.length で何もしない -->
+      
+      <!-- 当日コンファレンススライダー設置場所 -->
+      
+
+      <section class="top-news">
+        <div class="top-news__inner">
+          <div class="top-news__card">
+            <div class="top-news__head">
+              <h2 class="top-news__title">News</h2>
+              <a href="./news/" class="top-btn top-btn--navy top-btn--sm">View All</a>
+            </div>
+
+            <!-- 記事はお知らせ CMS（/ja/news/ と同じ API）から最新 3 件を取得する -->
+            <ul class="top-news__list">
+              <li class="top-news__item">
+                <a href="/ja/news/detail.php?id=33">
+                  <time class="top-news__date" datetime="2026-10-27">2026.10.27</time>
+                  <span class="top-news__cats">
+                    <span class="top-news__cat top-news__cat--info">お知らせ</span>
+                  </span>
+                  <span class="top-news__text">オンラインセッション視聴期間延長のお知らせ（11月6日まで）</span>
+                </a>
+              </li>
+              <li class="top-news__item">
+                <a href="/ja/news/detail.php?id=35">
+                  <time class="top-news__date" datetime="2026-10-24">2026.10.24</time>
+                  <span class="top-news__cats">
+                    <span class="top-news__cat top-news__cat--info">お知らせ</span>
+                  </span>
+                  <span class="top-news__text">緊急システムメンテナンス終了のお知らせ</span>
+                </a>
+              </li>
+              <li class="top-news__item">
+                <a href="/ja/news/detail.php?id=31">
+                  <time class="top-news__date" datetime="2026-10-16">2026.10.16</time>
+                  <span class="top-news__cats">
+                    <span class="top-news__cat top-news__cat--press">プレスリリース</span>
+                  </span>
+                  <span class="top-news__text">CEATEC 2026、盛況のうちに閉幕 会期4日間の登録来場者総数は112,373人</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+                    <section class="top-experience" aria-label="ceatec experience の最新記事">
+      <style>
+        /* News と同じブロック（top-newstheme）の中に置いたとき（11/7 以降）だけ効く。
+           白地をやめて News と同じ背景（リング）を透かし、リング（z-index: 0）より手前に出す。
+           下の余白は top-newstheme 側の padding-bottom に任せる */
+        .top-newstheme .top-experience { z-index: 2; padding-bottom: 0; background: transparent; }
+      </style>
+            <div class="top-experience__inner">
+        <h2 class="top-experience__title">
+          <img src="https://web-asset.io/CEATEC/2026/tit_exp.svg" alt="ceatec experience" loading="lazy" decoding="async">
+        </h2>
+
+        <div class="experience_slider_wrap">
+          <div class="experience_slider_inner">
+            <ul class="experience_slider">
+                            <li class="experience_slide_item">
+                <a href="https://exp.ceatec.com/related/ceatec2026-49/" target="_blank" rel="noopener" onclick="gtag('event', 'click', {'event_category': 'links','btn_position': 'TOPページ experience記事','event_label': "【CEATEC 2026】​JR東日本、ウォークスルー改札やAI窓口を展示 Suica Renaissance構想の最新施策を体験型で紹介"});">
+                  <figure class="experience_slide_img">
+                                        <img src="https://exp.ceatec.com/wp-content/uploads/2026/10/ceatecnews2026_vol49_01-1024x701.webp" alt="" loading="lazy" decoding="async">
+                                      </figure>
+                  <div class="experience_slide_text">
+                    <span class="experience_slide_name">【CEATEC 2026】​JR東日本、ウォークスルー改札やAI窓口を展示 Suica Renaissance構想の最新施策を体験型で紹介</span>
+                  </div>
+                </a>
+              </li>
+                            <li class="experience_slide_item">
+                <a href="https://exp.ceatec.com/related/ceatec2026-48/" target="_blank" rel="noopener" onclick="gtag('event', 'click', {'event_category': 'links','btn_position': 'TOPページ experience記事','event_label': "【CEATEC 2026】福岡市、天神ビッグバンが生み出す新たな福岡の未来 都市機能の強化と高付加価値なビジネスの集積で都市の成長を加速"});">
+                  <figure class="experience_slide_img">
+                                        <img src="https://exp.ceatec.com/wp-content/uploads/2026/10/ceatecnews2026_vol48_01-1024x768.webp" alt="" loading="lazy" decoding="async">
+                                      </figure>
+                  <div class="experience_slide_text">
+                    <span class="experience_slide_name">【CEATEC 2026】福岡市、天神ビッグバンが生み出す新たな福岡の未来 都市機能の強化と高付加価値なビジネスの集積で都市の成長を加速</span>
+                  </div>
+                </a>
+              </li>
+                            <li class="experience_slide_item">
+                <a href="https://exp.ceatec.com/related/ceatec2026-47/" target="_blank" rel="noopener" onclick="gtag('event', 'click', {'event_category': 'links','btn_position': 'TOPページ experience記事','event_label': "【CEATEC 2026】アビームコンサルティング　次世代の変革テーマを創出する新組織「IRI」が始動　共創ネットワークと社会実装による新たな価値創出を発信"});">
+                  <figure class="experience_slide_img">
+                                        <img src="https://exp.ceatec.com/wp-content/uploads/2026/10/ABeam_Consulting_01-1024x576.jpg" alt="" loading="lazy" decoding="async">
+                                      </figure>
+                  <div class="experience_slide_text">
+                    <span class="experience_slide_name">【CEATEC 2026】アビームコンサルティング　次世代の変革テーマを創出する新組織「IRI」が始動　共創ネットワークと社会実装による新たな価値創出を発信</span>
+                  </div>
+                </a>
+              </li>
+                            <li class="experience_slide_item">
+                <a href="https://exp.ceatec.com/related/ceatec2026-46/" target="_blank" rel="noopener" onclick="gtag('event', 'click', {'event_category': 'links','btn_position': 'TOPページ experience記事','event_label': "【CEATEC 2026】サイバートラスト株式会社×全景ソフトウェア（CHANGING）、Matter対応製品の実装から電子認証・量産まで一貫支援するトータルソリューションを展示"});">
+                  <figure class="experience_slide_img">
+                                        <img src="https://exp.ceatec.com/wp-content/uploads/2026/10/ceatecnews2026_vol46_01.webp" alt="" loading="lazy" decoding="async">
+                                      </figure>
+                  <div class="experience_slide_text">
+                    <span class="experience_slide_name">【CEATEC 2026】サイバートラスト株式会社×全景ソフトウェア（CHANGING）、Matter対応製品の実装から電子認証・量産まで一貫支援するトータルソリューションを展示</span>
+                  </div>
+                </a>
+              </li>
+                            <li class="experience_slide_item">
+                <a href="https://exp.ceatec.com/related/ceatec2026-45/" target="_blank" rel="noopener" onclick="gtag('event', 'click', {'event_category': 'links','btn_position': 'TOPページ experience記事','event_label': "【CEATEC 2026】CEATEC AWARD 2026 　主要3部門　各大臣賞の結果"});">
+                  <figure class="experience_slide_img">
+                                        <img src="https://exp.ceatec.com/wp-content/uploads/2026/10/ceatecnews2026_award_sm.png" alt="" loading="lazy" decoding="async">
+                                      </figure>
+                  <div class="experience_slide_text">
+                    <span class="experience_slide_name">【CEATEC 2026】CEATEC AWARD 2026 　主要3部門　各大臣賞の結果</span>
+                  </div>
+                </a>
+              </li>
+                            <li class="experience_slide_item">
+                <a href="https://exp.ceatec.com/related/ceatec2026-44/" target="_blank" rel="noopener" onclick="gtag('event', 'click', {'event_category': 'links','btn_position': 'TOPページ experience記事','event_label': "【CEATEC 2026】最先端AIボイスレコーダーブランド「Plaud」　高度な要約生成精度で議事録作成時間短縮へ"});">
+                  <figure class="experience_slide_img">
+                                        <img src="https://exp.ceatec.com/wp-content/uploads/2026/10/ceatecnews2026_vol44_01.webp" alt="" loading="lazy" decoding="async">
+                                      </figure>
+                  <div class="experience_slide_text">
+                    <span class="experience_slide_name">【CEATEC 2026】最先端AIボイスレコーダーブランド「Plaud」　高度な要約生成精度で議事録作成時間短縮へ</span>
+                  </div>
+                </a>
+              </li>
+                            <li class="experience_slide_item">
+                <a href="https://exp.ceatec.com/related/ceatec2026-43/" target="_blank" rel="noopener" onclick="gtag('event', 'click', {'event_category': 'links','btn_position': 'TOPページ experience記事','event_label': "【CEATEC 2026】株式会社日立製作所、フィジカルAIで描く社会インフラの進化、「AI が現実世界へ～HMAXが拓く、進化する社会インフラ～」をテーマに出展"});">
+                  <figure class="experience_slide_img">
+                                        <img src="https://exp.ceatec.com/wp-content/uploads/2026/10/ceatecnews2026_vol45_01-1024x768.webp" alt="" loading="lazy" decoding="async">
+                                      </figure>
+                  <div class="experience_slide_text">
+                    <span class="experience_slide_name">【CEATEC 2026】株式会社日立製作所、フィジカルAIで描く社会インフラの進化、「AI が現実世界へ～HMAXが拓く、進化する社会インフラ～」をテーマに出展</span>
+                  </div>
+                </a>
+              </li>
+                            <li class="experience_slide_item">
+                <a href="https://exp.ceatec.com/related/ceatec2026-42/" target="_blank" rel="noopener" onclick="gtag('event', 'click', {'event_category': 'links','btn_position': 'TOPページ experience記事','event_label': "【CEATEC 2026】doubleO、CELLTRACE: NANDメモリ復旧フォレンジック統合ソリューションを出展"});">
+                  <figure class="experience_slide_img">
+                                        <img src="https://exp.ceatec.com/wp-content/uploads/2026/10/ceatecnews2026_vol043_01.webp" alt="" loading="lazy" decoding="async">
+                                      </figure>
+                  <div class="experience_slide_text">
+                    <span class="experience_slide_name">【CEATEC 2026】doubleO、CELLTRACE: NANDメモリ復旧フォレンジック統合ソリューションを出展</span>
+                  </div>
+                </a>
+              </li>
+                            <li class="experience_slide_item">
+                <a href="https://exp.ceatec.com/related/ceatec2026-41/" target="_blank" rel="noopener" onclick="gtag('event', 'click', {'event_category': 'links','btn_position': 'TOPページ experience記事','event_label': "【CEATEC 2026】agile effect、チャット・タスク・ドキュメント・ホワイトボードを1つにする統合ワークハブ「agile effect:TM」を、2026年11月の正式提供に先立ち実機デモをCEATEC 2026に出展"});">
+                  <figure class="experience_slide_img">
+                                        <img src="https://exp.ceatec.com/wp-content/uploads/2026/10/ceatecnews2026_vol36_01.webp" alt="" loading="lazy" decoding="async">
+                                      </figure>
+                  <div class="experience_slide_text">
+                    <span class="experience_slide_name">【CEATEC 2026】agile effect、チャット・タスク・ドキュメント・ホワイトボードを1つにする統合ワークハブ「agile effect:TM」を、2026年11月の正式提供に先立ち実機デモをCEATEC 2026に出展</span>
+                  </div>
+                </a>
+              </li>
+                            <li class="experience_slide_item">
+                <a href="https://exp.ceatec.com/related/ceatec2026-40/" target="_blank" rel="noopener" onclick="gtag('event', 'click', {'event_category': 'links','btn_position': 'TOPページ experience記事','event_label': "【CEATEC 2026】アマゾン ウェブ サービス ジャパン合同会社、クラウド上でAIエージェントが、実機ロボットを動作させるフィジカルAIの仕組みをCEATEC 2026に出展"});">
+                  <figure class="experience_slide_img">
+                                        <img src="https://exp.ceatec.com/wp-content/uploads/2026/10/写真1_全景.webp" alt="" loading="lazy" decoding="async">
+                                      </figure>
+                  <div class="experience_slide_text">
+                    <span class="experience_slide_name">【CEATEC 2026】アマゾン ウェブ サービス ジャパン合同会社、クラウド上でAIエージェントが、実機ロボットを動作させるフィジカルAIの仕組みをCEATEC 2026に出展</span>
+                  </div>
+                </a>
+              </li>
+                            <li class="experience_slide_item">
+                <a href="https://exp.ceatec.com/related/ceatec2026-39/" target="_blank" rel="noopener" onclick="gtag('event', 'click', {'event_category': 'links','btn_position': 'TOPページ experience記事','event_label': "【CEATEC 2026】株式会社CoLabMix、「見る・聴く・広まる」というデザイン体験。「デジスタカード」で新たな価値を生み出す。"});">
+                  <figure class="experience_slide_img">
+                                        <img src="https://exp.ceatec.com/wp-content/uploads/2026/10/ceatecnews2026_vol41_01-1024x768.webp" alt="" loading="lazy" decoding="async">
+                                      </figure>
+                  <div class="experience_slide_text">
+                    <span class="experience_slide_name">【CEATEC 2026】株式会社CoLabMix、「見る・聴く・広まる」というデザイン体験。「デジスタカード」で新たな価値を生み出す。</span>
+                  </div>
+                </a>
+              </li>
+                            <li class="experience_slide_item">
+                <a href="https://exp.ceatec.com/related/ceatec2026-38/" target="_blank" rel="noopener" onclick="gtag('event', 'click', {'event_category': 'links','btn_position': 'TOPページ experience記事','event_label': "【CEATEC 2026】一般財団法人日欧産業協力センター、欧州16社が提案する次世代デジタルソリューションを展示"});">
+                  <figure class="experience_slide_img">
+                                        <img src="https://exp.ceatec.com/wp-content/uploads/2026/10/ceatecnews2026_vol034_01.webp" alt="" loading="lazy" decoding="async">
+                                      </figure>
+                  <div class="experience_slide_text">
+                    <span class="experience_slide_name">【CEATEC 2026】一般財団法人日欧産業協力センター、欧州16社が提案する次世代デジタルソリューションを展示</span>
+                  </div>
+                </a>
+              </li>
+                          </ul>
+          </div>
+                    <div class="experience_slider_nav"></div>
+        </div>
+
+        <div class="top-btns top-btns--center">
+          <a href="https://exp.ceatec.com/" target="_blank" rel="noopener" class="top-btn top-btn--navy" onclick="gtag('event', 'click', {'event_category': 'links','btn_position': 'TOPページ experience記事','event_label': 'ceatec experience をもっと見る'});">ceatec experience をもっと見る</a>
+        </div>
+      </div>
+          </section>
+              </article>
+
+            <section class="top-digest" id="top-digest" aria-labelledby="top-digest-title">
+      <style>
+        /* MV のボタンから飛ぶときは、サイト共通の inc.js のスムーススクロールで止まる位置が決まる。
+           scroll-margin-top は JS が動かないとき用（固定ヘッダーの下に見出しが隠れないように空ける） */
+        .top-digest { padding: 0 0 64px; background: #fff; scroll-margin-top: 96px; }
+        /* 上の薄い英字（top-ghost）は、ほかのブロック（AWARD・会場マップなど）と同じく
+           セクション上端に置き、本文は --ghost-pad だけ下げて見出しを英字の下端に重ねる。
+           見出しを英字の近くに置くため、左右の段は上揃えにする */
+        .top-2026 .top-digest__inner {
+          position: relative;
+          z-index: 2;
+          display: grid;
+          grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+          gap: 48px;
+          align-items: start;
+          max-width: 1440px;
+          margin: 0 auto;
+          padding: var(--ghost-pad) var(--pad) 0;
+        }
+        /* 折り返しで最後の行に 1〜2 文字だけ残らないようにする */
+        .top-digest .top-desc { text-wrap: pretty; }
+        /* 薄い英字は画面幅によっては右の動画の位置まで伸びる。英字の下端（--ghost-fs × 0.75）より
+           動画が上にあると英字の下が隠れるので、動画だけ --ghost-fs × 0.25 下げて英字の下から始める
+           （本文の開始位置 --ghost-pad は --ghost-fs × 0.52 以上なので、足すと必ず英字の下端を越える） */
+        .top-digest__frame { justify-self: end; width: 100%; max-width: 640px; margin-top: calc(var(--ghost-fs) * 0.25); aspect-ratio: 16 / 9; }
+        .top-digest__frame iframe { display: block; width: 100%; height: 100%; border: 0; }
+        @media screen and (max-width: 767px) {
+          .top-digest { padding: 0 0 48px; }
+          .top-2026 .top-digest__inner { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+          /* SP は動画が本文の下に来るので、英字との重なりは無い */
+          .top-digest__frame { margin-top: 0; }
+        }
+      </style>
+      <span class="top-ghost top-ghost--dark" aria-hidden="true">Digest Movie</span>
+      <div class="top-digest__inner">
+        <div class="top-digest__body">
+          <h2 class="top-label" id="top-digest-title">ダイジェストムービー</h2>
+          <p class="top-desc">幕張メッセで開催したCEATEC 2026の4日間を映像で振り返ります。<br>会場の熱気や展示の様子を、ぜひご覧ください。</p>
+        </div>
+        <div class="top-digest__frame">
+          <iframe src="https://www.youtube.com/embed/xUduX4npNFo?rel=0" title="CEATEC 2026 ダイジェストムービー" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+        
+    <!-- ======================================================
+         Exhibition / 出展者情報
+         ====================================================== -->
+    <section class="top-exhibition">
+      <span class="top-ghost top-ghost--light" aria-hidden="true">Exhibition</span>
+      <div class="top-exhibition__layout">
+        <div class="top-exhibition__inner">
+          <h3 class="top-label top-label--light">出展者情報</h3>
+          <h2 class="top-h2 top-h2--light">出展者一覧&ブース情報公開中</h2>
+          <p class="top-desc top-desc--light">
+            出展者詳細ページでは、各出展者により、出展内容をはじめ、資料や動画、ミーティング予約の受付状況、イベント情報などが日々公開・更新されています。最新情報をチェックして、共創パートナー探しや来場前の情報収集にお役立てください。
+          </p>
+          <div class="top-btns">
+            <a href="/ja/exhibition/exhibitor-list.php" class="top-btn top-btn--white top-btn--lead">出展者一覧をみる<span class="material-icons-round" aria-hidden="true">arrow_forward</span></a>
+            <a href="/ja/news/pressrelease_update.html" class="top-btn top-btn--ghost">出展者ページ更新情報</a>
+          </div>
+        </div>
+
+        <!-- 出展の様子カルーセル: 5枚を縦一列に重ね、中央を最大表示する縦回転スライドショー。
+             top-exhibition-carousel.js が2秒ごとに data-pos(-2〜2)を振り直して遷移させる -->
+        <div class="top-exhibition__carousel" data-exhibition-carousel aria-hidden="true">
+          <ul class="top-exhibition__slides">
+            <li class="top-exhibition__slide"><img src="/2026/asset2026/images/top_exhibition_carousel_racingsim.webp" alt="" loading="lazy"></li>
+            <li class="top-exhibition__slide"><img src="/2026/ja/application/about/images/img_about02_exhibit02_02.webp" alt="" loading="lazy"></li>
+            <li class="top-exhibition__slide"><img src="/2026/ja/application/about/images/achievement01.webp" alt="" loading="lazy"></li>
+            <li class="top-exhibition__slide"><img src="/2026/ja/application/about/images/achievement02.webp" alt="" loading="lazy"></li>
+            <li class="top-exhibition__slide"><img src="/2026/ja/application/about/images/img_about02_exhibit02_03.webp" alt="" loading="lazy"></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 出展者コンテンツのまとめ導線。主導線は上の「出展者一覧をみる」なので、
+           こちらは白カード＋控えめな見せ方にして優先度の差を付けている -->
+      <ul class="top-exlinks">
+        <li class="top-exlink">
+          <a href="/ja/exhibition/event_list.html">
+            <span class="material-icons-round top-exlink__icon" aria-hidden="true">calendar_month</span>
+            <span class="top-exlink__body">
+              <span class="top-exlink__en">EVENTS</span>
+              <span class="top-exlink__label">出展者イベント一覧</span>
+            </span>
+            <span class="material-icons-round top-exlink__arrow" aria-hidden="true">arrow_forward</span>
+          </a>
+        </li>
+        <li class="top-exlink">
+          <a href="/ja/exhibition/meeting_list.html">
+            <span class="material-icons-round top-exlink__icon" aria-hidden="true">groups</span>
+            <span class="top-exlink__body">
+              <span class="top-exlink__en">MEETINGS</span>
+              <span class="top-exlink__label">ミーティング予約受付企業一覧</span>
+            </span>
+            <span class="material-icons-round top-exlink__arrow" aria-hidden="true">arrow_forward</span>
+          </a>
+        </li>
+        <li class="top-exlink">
+          <a href="/ja/exhibition/movie_list.html">
+            <span class="material-icons-round top-exlink__icon" aria-hidden="true">play_circle</span>
+            <span class="top-exlink__body">
+              <span class="top-exlink__en">VIDEOS</span>
+              <span class="top-exlink__label">プレゼン・デモ動画一覧</span>
+            </span>
+            <span class="material-icons-round top-exlink__arrow" aria-hidden="true">arrow_forward</span>
+          </a>
+        </li>
+        <li class="top-exlink">
+          <a href="/ja/exhibition/download_list.html">
+            <span class="material-icons-round top-exlink__icon" aria-hidden="true">description</span>
+            <span class="top-exlink__body">
+              <span class="top-exlink__en">DOCUMENTS</span>
+              <span class="top-exlink__label">資料ダウンロード一覧</span>
+            </span>
+            <span class="material-icons-round top-exlink__arrow" aria-hidden="true">arrow_forward</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+    
+
+
+    <!-- ======================================================
+         会場マップ・展示エリア
+         ====================================================== -->
+    <section class="top-venue">
+      <span class="top-ghost top-ghost--dark" aria-hidden="true">Venue Map</span>
+
+      <div class="top-venue__inner">
+        <figure class="top-venue__map">
+          <img src="https://web-asset.io/CEATEC/2026/map_ja.svg" alt="CEATEC 2026 会場マップ" loading="lazy">
+        </figure>
+
+                <div class="top-venue__action">
+          <a href="https://go.ceatec.com/find_exhibitor_booths" target="_blank" rel="noopener" class="top-btn top-btn--navy" onclick="gtag('event', 'click', {'event_category': 'links','btn_position': 'TOPページ 会場マップ','event_label': 'TOP 会場マップ 出展者マップ検索'});"><span class="material-icons-round top-btn__micon" aria-hidden="true">search</span>出展者マップ検索</a>
+        </div>
+
+        <ul class="top-areas">
+          <li class="top-area top-area--general">
+            <h3 class="top-area__title">一般展示（General Exhibits）</h3>
+            <p class="top-area__hall"><span class="top-area__badge">Hall</span>4–8</p>
+            <p class="top-area__desc">最先端技術や多彩なソリューションが集結する、CEATECの中核展示エリア。</p>
+            <a href="/ja/exhibition/general-exhibits/" class="top-area__btn">詳細をみる</a>
+          </li>
+
+          <li class="top-area top-area--x">
+            <h3 class="top-area__title">X (Transformation) パーク</h3>
+            <p class="top-area__hall"><span class="top-area__badge">Hall</span>4–6</p>
+            <p class="top-area__desc">先端技術や社会課題への挑戦、産業・社会構造の変革が体感できます。</p>
+            <a href="/ja/exhibition/x-park/" class="top-area__btn">詳細をみる</a>
+          </li>
+
+          <li class="top-area top-area--next">
+            <h3 class="top-area__title">ネクストジェネレーションパーク</h3>
+            <p class="top-area__hall"><span class="top-area__badge">Hall</span>4</p>
+            <p class="top-area__desc">スタートアップや大学・研究機関が、未来を創る技術や研究成果を発信するエリア。</p>
+            <a href="/ja/exhibition/nextgen-park/" class="top-area__btn">詳細をみる</a>
+          </li>
+
+          <li class="top-area top-area--global">
+            <h3 class="top-area__title">グローバルパーク</h3>
+            <p class="top-area__hall"><span class="top-area__badge">Hall</span>4-5</p>
+            <p class="top-area__desc">世界各国・地域の先端技術やイノベーションに触れ、新たなビジネスと出会うエリア。</p>
+            <a href="/ja/exhibition/global-park/" class="top-area__btn">詳細をみる</a>
+          </li>
+
+          <li class="top-area top-area--conference">
+            <h3 class="top-area__title">コンファレンス</h3>
+            <p class="top-area__hall"><span class="top-area__badge top-area__badge--wide">国際会議場</span></p>
+            <p class="top-area__desc">未来へのビジョンやブランディング、共創に向けた仲間探しへのきっかけなど、多彩な登壇者とともに発信。</p>
+            <a href="/ja/conference/" class="top-area__btn">詳細をみる</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         主催者企画パビリオン / CEATEC for Students 導線
+         カード内容は X パークページ(/ja/exhibition/x-park/)の
+         .area-pavilions と同じ正本を流用している
+         ====================================================== -->
+    <section class="top-pavilions">
+      <span class="top-ghost top-ghost--dark" aria-hidden="true">Theme Pavilions by CEATEC Organizer</span>
+
+      <div class="top-pavilions__inner">
+        <h3 class="top-label">Theme Pavilions by CEATEC Organizer</h3>
+        <h2 class="top-h2">X（Transformation）パーク内で展開する4つの主催者企画パビリオン</h2>
+
+        <ul class="top-pavilion-cards">
+          <li class="top-pavilion">
+            <a href="/ja/exhibition/x-park/pavilion/life-dx.html">
+              <figure class="top-pavilion__figure">
+                <img src="https://web-asset.io/CEATEC/2026/pavilion_life_dx.webp" alt="暮らしのDXパビリオン" loading="lazy">
+              </figure>
+              <div class="top-pavilion__body">
+                <h4 class="top-pavilion__name">暮らしのDXパビリオン</h4>
+                <p class="top-pavilion__desc">スマートホームなど、個人と社会のウェルビーイングにつながる技術・サービスが集まる</p>
+                <p class="top-pavilion__more">詳細をみる<span class="material-icons-round" aria-hidden="true">arrow_forward</span></p>
+              </div>
+            </a>
+          </li>
+          <li class="top-pavilion">
+            <a href="/ja/exhibition/x-park/pavilion/digital-ocean.html">
+              <figure class="top-pavilion__figure">
+                <img src="https://web-asset.io/CEATEC/2026/pavilion_ocean_digital.webp" alt="海洋デジタル社会パビリオン" loading="lazy">
+              </figure>
+              <div class="top-pavilion__body">
+                <h4 class="top-pavilion__name">海洋デジタル社会パビリオン</h4>
+                <p class="top-pavilion__desc">AI・IoTで海洋課題に挑み、異業種との共創からブルーエコノミーの可能性を拓く</p>
+                <p class="top-pavilion__more">詳細をみる<span class="material-icons-round" aria-hidden="true">arrow_forward</span></p>
+              </div>
+            </a>
+          </li>
+          <li class="top-pavilion">
+            <a href="/ja/exhibition/x-park/pavilion/space-co-creation.html">
+              <figure class="top-pavilion__figure">
+                <img src="https://web-asset.io/CEATEC/2026/pavilion_space_dx.webp" alt="宇宙共創パビリオン" loading="lazy">
+              </figure>
+              <div class="top-pavilion__body">
+                <h4 class="top-pavilion__name">宇宙共創パビリオン</h4>
+                <p class="top-pavilion__desc">官から民へ移る宇宙開発の最前線と、Society 5.0を支えるインフラ技術が交わる</p>
+                <p class="top-pavilion__more">詳細をみる<span class="material-icons-round" aria-hidden="true">arrow_forward</span></p>
+              </div>
+            </a>
+          </li>
+          <li class="top-pavilion">
+            <a href="/ja/exhibition/x-park/pavilion/digital-mobility.html">
+              <figure class="top-pavilion__figure">
+                <img src="https://web-asset.io/CEATEC/2026/pavilion_train_dx.webp" alt="デジタル交通社会パビリオン" loading="lazy">
+              </figure>
+              <div class="top-pavilion__body">
+                <h4 class="top-pavilion__name">デジタル交通社会パビリオン</h4>
+                <p class="top-pavilion__desc">自動運転やデータ連携など、移動の進化が描く次世代の交通社会を示す</p>
+                <p class="top-pavilion__more">詳細をみる<span class="material-icons-round" aria-hidden="true">arrow_forward</span></p>
+              </div>
+            </a>
+          </li>
+        </ul>
+
+        <!-- CEATEC for Students 導線。イラストは for-students ページの既存アセットを流用 -->
+        <a href="/ja/exhibition/for-students/" class="top-students">
+          <img class="top-students__illust top-students__illust--left" src="/2026/ja/exhibition/for-students/images/sec06_img.webp" alt="" loading="lazy">
+          <span class="top-students__body">
+            <span class="top-students__en">FOR STUDENTS</span>
+            <span class="top-students__title">CEATEC for Students</span>
+            <span class="top-students__desc">教室の外で、最新テクノロジーと仕事の現場に触れる。学生向けの歩き方ガイドとおすすめ展示を紹介。</span>
+          </span>
+          <img class="top-students__illust top-students__illust--right" src="/2026/ja/exhibition/for-students/images/sec01_img.webp" alt="" loading="lazy">
+        </a>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         Conference & Event
+         ====================================================== -->
+    <section class="top-conference">
+      <span class="top-ghost top-ghost--light" aria-hidden="true">Conference</span>
+
+      <div class="top-conference__inner">
+        <div class="top-conference__head">
+          <div class="top-conference__headtext">
+            <h3 class="top-label top-label--light">コンファレンス&イベント 情報</h3>
+            <h2 class="top-h2 top-h2--light">オンラインセッション公開＆聴講予約受付中</h2>
+            <p class="top-desc top-desc--light">
+              社会・産業のTransformationをめぐる、多彩なセッションを4日間開催します。
+            </p>
+          </div>
+          <figure class="top-conference__photo">
+            <img src="https://web-asset.io/CEATEC/2026/img_feature_conference.webp" alt="CEATEC のコンファレンス会場">
+          </figure>
+        </div>
+
+        <ol class="top-pillars">
+          <li class="top-pillar is-active">
+            <p class="top-pillar__num">01</p>
+            <h3 class="top-pillar__title">Solving Social Issues<span>社会課題を解決する</span></h3>
+            <p class="top-pillar__desc">気候変動、人手不足・少子高齢化・エネルギー・医療など多様化する社会課題に、技術・産業がどう向き合うかを議論。</p>
+            <a href="/ja/conference/theme.html?tag=%E7%A4%BE%E4%BC%9A%E8%AA%B2%E9%A1%8C%E3%82%92%E8%A7%A3%E6%B1%BA%E3%81%99%E3%82%8B" class="top-pillar__link">詳細をみる<span class="material-icons-round" aria-hidden="true">arrow_forward</span></a>
+          </li>
+          <li class="top-pillar">
+            <p class="top-pillar__num">02</p>
+            <h3 class="top-pillar__title">Creating the Future<span>未来をつくる</span></h3>
+            <p class="top-pillar__desc">モビリティ・スマートシティ・宇宙・ライフサイエンスなど、新しい産業・社会の姿を構想する。</p>
+            <a href="/ja/conference/theme.html?tag=%E6%9C%AA%E6%9D%A5%E3%82%92%E3%81%A4%E3%81%8F%E3%82%8B" class="top-pillar__link">詳細をみる<span class="material-icons-round" aria-hidden="true">arrow_forward</span></a>
+          </li>
+          <li class="top-pillar">
+            <p class="top-pillar__num">03</p>
+            <h3 class="top-pillar__title">Exploring Technology<span>技術をきわめる</span></h3>
+            <p class="top-pillar__desc">生成AI・半導体・次世代通信・データクラウド基盤開発の最前線。
+</p>
+            <a href="/ja/conference/theme.html?tag=%E6%8A%80%E8%A1%93%E3%82%92%E3%81%8D%E3%82%8F%E3%82%81%E3%82%8B" class="top-pillar__link">詳細をみる<span class="material-icons-round" aria-hidden="true">arrow_forward</span></a>
+          </li>
+          <li class="top-pillar">
+            <p class="top-pillar__num">04</p>
+            <h3 class="top-pillar__title">Discovering Global Trends<span>世界のトレンドを知る</span></h3>
+            <p class="top-pillar__desc">海外動向・政策・規制・セキュリティ・地政学など、日本を取り巻く国際環境を読み解く。 </p>
+            <a href="/ja/conference/theme.html?tag=%E4%B8%96%E7%95%8C%E3%81%AE%E3%83%88%E3%83%AC%E3%83%B3%E3%83%89%E3%82%92%E7%9F%A5%E3%82%8B" class="top-pillar__link">詳細をみる<span class="material-icons-round" aria-hidden="true">arrow_forward</span></a>
+          </li>
+          <li class="top-pillar">
+            <p class="top-pillar__num">05</p>
+            <h3 class="top-pillar__title">Supporting the Next Generation<span>次世代を応援する</span></h3>
+            <p class="top-pillar__desc">スタートアップ・若手研究者・学生など、次世代の担い手を後押しする。オープンイノベーション、産学官連携など。
+</p>
+            <a href="/ja/conference/theme.html?tag=%E6%AC%A1%E4%B8%96%E4%BB%A3%E3%82%92%E5%BF%9C%E6%8F%B4%E3%81%99%E3%82%8B" class="top-pillar__link">詳細をみる<span class="material-icons-round" aria-hidden="true">arrow_forward</span></a>
+          </li>
+        </ol>
+      </div>
+
+      <!-- コンファレンスタイムライン -->
+      <div class="top-timeline">
+        <div class="top-timeline__inner">
+
+          <ol class="top-timeline__list">
+            <li class="top-timeline__item">
+              <img class="top-timeline__illust" src="https://web-asset.io/CEATEC/2026/img_ConferenceTimeline01.webp" alt="" width="500" height="390" loading="lazy">
+              <p class="top-timeline__date"><span>8月6日</span><em>(木)</em></p>
+              <p class="top-timeline__text">Conferenceテーマ<br>＆注目セッション 先行公開</p>
+            </li>
+            <li class="top-timeline__item">
+              <img class="top-timeline__illust" src="https://web-asset.io/CEATEC/2026/img_ConferenceTimeline02.webp" alt="" width="500" height="394" loading="lazy">
+              <p class="top-timeline__date"><span>8月27日</span><em>(木)</em></p>
+              <p class="top-timeline__text">聴講予約開始</p>
+            </li>
+            <li class="top-timeline__item">
+              <img class="top-timeline__illust" src="https://web-asset.io/CEATEC/2026/img_ConferenceTimeline03.webp" alt="" width="500" height="333" loading="lazy">
+              <p class="top-timeline__date"><span>9月15日</span><em>(火)</em></p>
+              <p class="top-timeline__text"><a href="./conference/category.html?tag=online" class="top-timeline__link">オンラインセッション公開開始</a></p>
+            </li>
+            <li class="top-timeline__item is-main">
+              <p class="top-timeline__date"><em>10月13日–16日</em><img class="top-timeline__illust top-timeline__illust--main" src="https://web-asset.io/CEATEC/2026/img_ConferenceTimeline04.webp" alt="" width="500" height="200" loading="lazy"></p>
+              <p class="top-timeline__text"><span>CEATEC 2026</span></p>
+            </li>
+            <li class="top-timeline__item">
+              <p class="top-timeline__date"><span>11月6日</span><em>(金)</em></p>
+              <p class="top-timeline__text">オンラインセッション<br>公開終了</p>
+            </li>
+          </ol>
+
+          
+          <div class="top-btns">
+            <a href="./conference/" class="top-btn top-btn--ghost">コンファレンス情報をみる</a>
+            <a href="./conference/session-list.html" class="top-btn top-btn--ghost">聴講予約する</a>
+            <a href="./conference/category.html?tag=online" class="top-btn top-btn--ghost">オンラインセッションをみる</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ======================================================
+         CEATEC AWARD
+         ====================================================== -->
+    <section class="top-award">
+      <span class="top-ghost top-ghost--light" aria-hidden="true">AWARD</span>
+      <div class="top-award__inner">
+        <h3 class="top-label top-label--light">CEATEC AWARD 2026</h3>
+        <h2 class="top-h2 top-h2--light">大臣賞・優秀賞ほか各カテゴリ賞を選出</h2>
+        <p class="top-desc top-desc--light">
+          CEATEC AWARDは、CEATEC 2026に出展される技術・製品・サービス等の中から、学術的・技術的観点や<br>
+          市場性・将来性等の視点から、イノベーション性が最も優れていると評価できるものを表彰する制度です。
+        </p>
+        <div class="top-btns">
+          <a href="/award/" target="_blank" rel="noopener" class="top-btn top-btn--gold">CEATEC AWARD特設サイト<span class="top-btn__ext" aria-hidden="true"></span></a>
+          <!-- 遷移先は AWARD ページ内の受賞者決定セクション(#sec00) -->
+          <a href="/ja/award2026/#sec00" class="top-btn top-btn--gold" onclick="gtag('event', 'click', {'event_category': 'links','event_label': 'TOP AWARD 受賞作品決定'});">受賞作品決定</a>
+          <!-- 遷移先は AWARD ページ内のノミネート案件セクション(#sec02) -->
+          <a href="/ja/award2026/#sec02" class="top-btn top-btn--ghost" onclick="gtag('event', 'click', {'event_category': 'links','event_label': 'TOP AWARD ノミネート案件をみる'});">ノミネート案件をみる</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         エコ＆デザインチャレンジ（日本語のみ。AWARD の下に置く）
+         ====================================================== -->
+    <section class="top-ecochallenge">
+      <span class="top-ghost top-ghost--light" aria-hidden="true">Event</span>
+      <div class="top-ecochallenge__inner">
+        <h2 class="top-label top-label--light">CEATEC エコ＆デザインチャレンジ2026</h2>
+        <p class="top-desc top-desc--light">
+          サステナビリティと創造性に富んだ展示ブースづくりを推進するため、今年も出展ブース評価制度である<br>
+          「CEATEC エコ＆デザインチャレンジ2026」を実施いたします。
+        </p>
+        <div class="top-btns">
+          <a href="/ja/conference/ecodesign.html" class="top-btn top-btn--white">詳細はこちら</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         併催 / CO-LOCATED EVENT
+         ====================================================== -->
+    <section class="top-colocated">
+      <span class="top-ghost top-ghost--dark" aria-hidden="true">CO-LOCATED EVENT</span>
+      <div class="top-colocated__inner">
+        <figure class="top-colocated__logo">
+          <img src="https://web-asset.io/CEATEC/2026/jms_logo_2026_3line.svg" alt="Japan Mobility Show Bizweek 2026">
+        </figure>
+
+        <div class="top-colocated__body">
+          <h3 class="top-label">併催</h3>
+          <h2 class="top-h2">Japan Mobility Show Bizweek 2026</h2>
+          <ul class="top-colocated__info">
+            <li><h4>会期 <span>Dates</span></h4>2026年 <strong>10月13日(火) – 16日(金)</strong> 10:00-17:00</li>
+            <li><h4>会場 <span>Venue</span></h4>幕張メッセ 2・3ホール</li>
+            <li><h4>来場方法 <span>Admission</span></h4>無料（全来場者事前登録制）</li>
+          </ul>
+          <div class="top-btns top-btns--left">
+            <a href="https://www.japan-mobility-show.com/" target="_blank" rel="noopener" class="top-btn top-btn--navy">Japan Mobility Show Bizweek 2026 公式サイト<span class="top-btn__ext" aria-hidden="true"></span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================
+         テーマ・開催概要（フッター上 / 併催ブロックの下）
+         背景の柔らかいリングは上の News ブロックと同じものを使う。
+         同じ SVG を 2 か所に置くので、こちらの id には -b を付けて重複を避けている
+         ====================================================== -->
+    <article class="top-newstheme top-newstheme--theme">
+      <div class="top-newstheme__rings" aria-hidden="true">
+        <div class="ring ring-red-sm">
+          <div class="ring-inner">
+            <svg viewBox="0 0 180 190">
+              <defs>
+                <radialGradient id="grad-red-sm-b" cx="48%" cy="45%" r="62%">
+                  <stop offset="0%" stop-color="#f4aaaf" stop-opacity=".32"/>
+                  <stop offset="70%" stop-color="#f4aaaf" stop-opacity=".12"/>
+                  <stop offset="100%" stop-color="#f4aaaf" stop-opacity=".02"/>
+                </radialGradient>
+              </defs>
+              <path class="shape-fill" d="M52,10 C25,13 15,35 15,64 C15,88 22,120 43,145 C61,167 91,178 118,173 C143,168 157,149 159,123 C161,104 154,85 153,62 C151,40 145,20 123,12 C105,6 74,8 52,10 Z" fill="url(#grad-red-sm-b)"/>
+              <path class="shape-stroke" d="M52,10 C25,13 15,35 15,64 C15,88 22,120 43,145 C61,167 91,178 118,173 C143,168 157,149 159,123 C161,104 154,85 153,62 C151,40 145,20 123,12 C105,6 74,8 52,10 Z" fill="none" stroke="#f1a4aa" stroke-opacity=".25" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="ring ring-yellow-lg">
+          <div class="ring-inner">
+            <svg viewBox="0 0 360 350">
+              <defs>
+                <radialGradient id="grad-yellow-lg-b" cx="50%" cy="52%" r="62%">
+                  <stop offset="0%" stop-color="#e7d64c" stop-opacity=".38"/>
+                  <stop offset="68%" stop-color="#e7d64c" stop-opacity=".14"/>
+                  <stop offset="100%" stop-color="#e7d64c" stop-opacity=".02"/>
+                </radialGradient>
+              </defs>
+              <path class="shape-fill" d="M96,25 C54,42 29,82 19,128 C7,181 20,249 58,295 C95,338 154,351 219,344 C281,337 323,304 336,253 C347,211 341,168 337,126 C332,85 314,52 279,33 C230,6 147,5 96,25 Z" fill="url(#grad-yellow-lg-b)"/>
+              <path class="shape-stroke" d="M96,25 C54,42 29,82 19,128 C7,181 20,249 58,295 C95,338 154,351 219,344 C281,337 323,304 336,253 C347,211 341,168 337,126 C332,85 314,52 279,33 C230,6 147,5 96,25 Z" fill="none" stroke="#e2d553" stroke-opacity=".25" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="ring ring-green">
+          <div class="ring-inner">
+            <svg viewBox="0 0 300 250">
+              <defs>
+                <radialGradient id="grad-green-b" cx="38%" cy="42%" r="65%">
+                  <stop offset="0%" stop-color="#73db9a" stop-opacity=".34"/>
+                  <stop offset="70%" stop-color="#73db9a" stop-opacity=".12"/>
+                  <stop offset="100%" stop-color="#73db9a" stop-opacity=".02"/>
+                </radialGradient>
+              </defs>
+              <path class="shape-fill" d="M63,24 C29,38 12,67 7,102 C0,140 7,178 31,205 C55,231 95,243 135,243 C177,242 220,228 248,200 C278,171 285,133 278,99 C271,67 244,48 211,44 C178,39 161,19 133,17 C107,16 85,15 63,24 Z" fill="url(#grad-green-b)"/>
+              <path class="shape-stroke" d="M63,24 C29,38 12,67 7,102 C0,140 7,178 31,205 C55,231 95,243 135,243 C177,242 220,228 248,200 C278,171 285,133 278,99 C271,67 244,48 211,44 C178,39 161,19 133,17 C107,16 85,15 63,24 Z" fill="none" stroke="#8ce1a9" stroke-opacity=".25" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="ring ring-purple">
+          <div class="ring-inner">
+            <svg viewBox="0 0 200 125">
+              <defs>
+                <radialGradient id="grad-purple-b" cx="45%" cy="48%" r="60%">
+                  <stop offset="0%" stop-color="#c49dee" stop-opacity=".32"/>
+                  <stop offset="70%" stop-color="#c49dee" stop-opacity=".12"/>
+                  <stop offset="100%" stop-color="#c49dee" stop-opacity=".02"/>
+                </radialGradient>
+              </defs>
+              <path class="shape-fill" d="M50,13 C25,23 11,40 9,60 C7,81 17,101 36,113 C57,125 88,123 119,119 C148,115 172,103 183,82 C194,62 188,37 169,24 C150,12 127,11 102,8 C83,6 66,7 50,13 Z" fill="url(#grad-purple-b)"/>
+              <path class="shape-stroke" d="M50,13 C25,23 11,40 9,60 C7,81 17,101 36,113 C57,125 88,123 119,119 C148,115 172,103 183,82 C194,62 188,37 169,24 C150,12 127,11 102,8 C83,6 66,7 50,13 Z" fill="none" stroke="#c5a0ef" stroke-opacity=".25" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="ring ring-pink-lg">
+          <div class="ring-inner">
+            <svg viewBox="0 0 325 305">
+              <defs>
+                <radialGradient id="grad-pink-lg-b" cx="45%" cy="50%" r="62%">
+                  <stop offset="0%" stop-color="#ef68a5" stop-opacity=".34"/>
+                  <stop offset="68%" stop-color="#ef68a5" stop-opacity=".12"/>
+                  <stop offset="100%" stop-color="#ef68a5" stop-opacity=".02"/>
+                </radialGradient>
+              </defs>
+              <path class="shape-fill" d="M122,4 C86,10 65,32 57,67 C47,109 48,162 66,206 C83,248 118,282 167,293 C220,304 272,289 301,249 C327,212 328,157 313,115 C299,77 272,46 250,20 C232,0 198,-4 170,1 C152,4 139,2 122,4 Z" fill="url(#grad-pink-lg-b)"/>
+              <path class="shape-stroke" d="M122,4 C86,10 65,32 57,67 C47,109 48,162 66,206 C83,248 118,282 167,293 C220,304 272,289 301,249 C327,212 328,157 313,115 C299,77 272,46 250,20 C232,0 198,-4 170,1 C152,4 139,2 122,4 Z" fill="none" stroke="#ef61a1" stroke-opacity=".25" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="ring ring-blue-sm">
+          <div class="ring-inner">
+            <svg viewBox="0 0 190 180">
+              <defs>
+                <radialGradient id="grad-blue-sm-b" cx="55%" cy="48%" r="60%">
+                  <stop offset="0%" stop-color="#abc7f2" stop-opacity=".28"/>
+                  <stop offset="72%" stop-color="#abc7f2" stop-opacity=".10"/>
+                  <stop offset="100%" stop-color="#abc7f2" stop-opacity=".02"/>
+                </radialGradient>
+              </defs>
+              <path class="shape-fill" d="M64,13 C34,16 16,34 10,61 C4,88 8,121 24,144 C39,166 65,177 95,177 C127,176 155,163 169,138 C183,113 181,80 176,55 C171,28 148,15 119,14 C98,12 82,11 64,13 Z" fill="url(#grad-blue-sm-b)"/>
+              <path class="shape-stroke" d="M64,13 C34,16 16,34 10,61 C4,88 8,121 24,144 C39,166 65,177 95,177 C127,176 155,163 169,138 C183,113 181,80 176,55 C171,28 148,15 119,14 C98,12 82,11 64,13 Z" fill="none" stroke="#b0ccf4" stroke-opacity=".25" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="ring ring-blue-lg">
+          <div class="ring-inner">
+            <svg viewBox="0 0 330 280">
+              <defs>
+                <radialGradient id="grad-blue-lg-b" cx="46%" cy="52%" r="62%">
+                  <stop offset="0%" stop-color="#3ba5f6" stop-opacity=".34"/>
+                  <stop offset="68%" stop-color="#3ba5f6" stop-opacity=".12"/>
+                  <stop offset="100%" stop-color="#3ba5f6" stop-opacity=".02"/>
+                </radialGradient>
+              </defs>
+              <path class="shape-fill" d="M105,14 C68,22 41,45 29,78 C16,113 17,154 20,191 C22,223 37,249 62,263 C93,281 134,279 176,274 C214,269 249,260 279,238 C307,217 317,187 318,154 C318,118 311,79 287,52 C262,23 220,8 179,5 C151,4 129,9 105,14 Z" fill="url(#grad-blue-lg-b)"/>
+              <path class="shape-stroke" d="M105,14 C68,22 41,45 29,78 C16,113 17,154 20,191 C22,223 37,249 62,263 C93,281 134,279 176,274 C214,269 249,260 279,238 C307,217 317,187 318,154 C318,118 311,79 287,52 C262,23 220,8 179,5 C151,4 129,9 105,14 Z" fill="none" stroke="#30a0f4" stroke-opacity=".25" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="ring ring-orange">
+          <div class="ring-inner">
+            <svg viewBox="0 0 240 260">
+              <defs>
+                <radialGradient id="grad-orange-b" cx="50%" cy="48%" r="62%">
+                  <stop offset="0%" stop-color="#f1bb8b" stop-opacity=".32"/>
+                  <stop offset="70%" stop-color="#f1bb8b" stop-opacity=".12"/>
+                  <stop offset="100%" stop-color="#f1bb8b" stop-opacity=".02"/>
+                </radialGradient>
+              </defs>
+              <path class="shape-fill" d="M76,16 C45,22 25,41 18,69 C10,98 11,129 22,164 C33,197 56,227 87,242 C118,257 156,258 188,244 C219,230 235,201 238,168 C241,133 231,99 221,69 C211,40 191,20 161,14 C133,9 101,11 76,16 Z" fill="url(#grad-orange-b)"/>
+              <path class="shape-stroke" d="M76,16 C45,22 25,41 18,69 C10,98 11,129 22,164 C33,197 56,227 87,242 C118,257 156,258 188,244 C219,230 235,201 238,168 C241,133 231,99 221,69 C211,40 191,20 161,14 C133,9 101,11 76,16 Z" fill="none" stroke="#f1bf91" stroke-opacity=".25" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <!-- テーマ / 開催概要 -->
+      <section class="top-theme">
+        <div class="top-theme__inner">
+          <h2 class="top-theme__title"><img src="https://web-asset.io/CEATEC/2026/2026_theme_ja.svg" alt="Transformation - 企業が、産業が、そして社会が変わる -"></h2>
+
+          <div class="top-theme__body">
+            <p>あらゆる産業・業種から人、技術、情報、構想が集い、分野や立場を超えた共創が生まれる。</p>
+            <p>新たな市場や産業の創出につながる出会いと議論を生み出し、未来の社会像を構想するとともに、<br>その実現に向けた一歩を踏み出す場が「CEATEC」です。</p>
+            <p>未来を変える技術と変革を体感ください。</p>
+          </div>
+
+          <ul class="top-outline top-outline--invite top-outline--icons">
+            <li class="top-outline__item">
+              <div class="top-outline__head">
+                <p class="top-outline__en" aria-hidden="true">Date</p>
+                <p class="top-outline__label">会期</p>
+              </div>
+              <div class="top-outline__visual">
+                <img class="top-outline__icon" src="https://web-asset.io/CEATEC/2026/outline_icon_date.webp" alt="" width="120" height="120">
+              </div>
+              <div class="top-outline__detail">
+                <p class="top-outline__year">2026年</p>
+                <p class="top-outline__main"><span class="top-outline__nobr">10月13日(火)</span> <span class="top-outline__nobr">– 16日(金)</span></p>
+                <p class="top-outline__note">10:00-17:00</p>
+              </div>
+            </li>
+            <li class="top-outline__item">
+              <div class="top-outline__head">
+                <p class="top-outline__en" aria-hidden="true">Venue</p>
+                <p class="top-outline__label">会場</p>
+              </div>
+              <div class="top-outline__visual">
+                <img class="top-outline__icon" src="https://web-asset.io/CEATEC/2026/outline_icon_venue.webp" alt="" width="120" height="120">
+              </div>
+              <div class="top-outline__detail">
+                <p class="top-outline__main">幕張メッセ</p>
+                <p class="top-outline__note">〒261-8550 千葉市美浜区中瀬2-1</p>
+              </div>
+              <a href="/ja/access/" class="top-outline__map">Access</a>
+            </li>
+            <li class="top-outline__item">
+              <div class="top-outline__head">
+                <p class="top-outline__en" aria-hidden="true">Admission</p>
+                <p class="top-outline__label">来場方法</p>
+              </div>
+              <div class="top-outline__visual">
+                <img class="top-outline__icon" src="https://web-asset.io/CEATEC/2026/outline_icon_admission.webp" alt="" width="120" height="120">
+              </div>
+              <div class="top-outline__detail">
+                <p class="top-outline__main">無料</p>
+                <p class="top-outline__note">（全来場者事前登録制）</p>
+              </div>
+            </li>
+            <li class="top-outline__item top-outline__item--logo">
+              <div class="top-outline__head">
+                <p class="top-outline__en" aria-hidden="true">Co-located Event</p>
+                <p class="top-outline__label">併催</p>
+              </div>
+              <div class="top-outline__visual">
+                <img class="top-outline__icon" src="https://web-asset.io/CEATEC/2026/outline_icon_colocated.webp" alt="" width="120" height="120">
+              </div>
+              <div class="top-outline__detail">
+                <a href="https://www.japan-mobility-show.com/" target="_blank" rel="noopener">
+                  <img src="https://web-asset.io/CEATEC/2026/jms_logo_2026_2line.svg" alt="Japan Mobility Show Bizweek 2026">
+                </a>
+              </div>
+            </li>
+            <li class="top-outline__item top-outline__item--invite">
+              <div class="top-outline__head">
+                <p class="top-outline__en" aria-hidden="true">Invitation</p>
+                <p class="top-outline__label">案内状</p>
+              </div>
+              <div class="top-outline__visual">
+                <img class="top-outline__icon" src="https://web-asset.io/CEATEC/2026/outline_icon_invitation.webp" alt="" width="120" height="120">
+              </div>
+              <div class="top-outline__detail">
+                <p class="top-outline__year">CEATEC 2026</p>
+                <p class="top-outline__main">デジタル案内状</p>
+              </div>
+              <a href="/ja/invitation/" class="top-outline__map" aria-label="CEATEC 2026 デジタル案内状を閲覧する">View</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </article>
+
+  </main>
+
+  <script src="/2026/asset2026/js/top-mv-slider.js?260828b" defer></script>
+  <script src="/2026/asset2026/js/top-mv-intro.js?260818a" defer></script>
+  <script>
+  /* ==========================================================================
+     本日のセッション（講演カルーセル）を流す
+     PHP が出した 1 セット分のカードの複製を後ろに並べ、列を左へ途切れなく流し続ける。
+     ・マウスを乗せる／中のリンクにフォーカスする／一時停止ボタンで、なめらかに減速して止まる
+     ・「視差効果を減らす」設定の人には流さず、横スクロールのまま見せる
+     ・画面外にある間は描画を休む
+     ========================================================================== */
+  (function () {
+    'use strict';
+
+    var SPEED = 60;       // 流れる速さ（px/秒）。40 で 1 枚約 8 秒、60 で約 5.3 秒
+    var STOP_RATE = 5;    // 減速の速さ（大きいほど早く止まる）
+    var START_RATE = 3;   // 加速の速さ
+
+    var root = document.querySelector('[data-conf-today]');
+    if (!root) return;
+    var viewport = root.querySelector('[data-conf-today-viewport]');
+    var track = root.querySelector('[data-conf-today-track]');
+    var first = root.querySelector('[data-conf-today-set]');
+    var pauseBtn = root.querySelector('[data-conf-today-pause]');
+    if (!viewport || !track || !first) return;
+
+    var reduceMq = window.matchMedia ? window.matchMedia('(prefers-reduced-motion: reduce)') : null;
+    var x = 0, setW = 0, ramp = 1, last = 0, raf = 0;
+    var running = false, visible = true;
+    var userPaused = false, hovering = false, focusing = false;
+
+    function goal() { return userPaused || hovering || focusing ? 0 : 1; }
+
+    function removeCopies() {
+      var copies = track.querySelectorAll('[data-conf-today-copy]');
+      for (var i = 0; i < copies.length; i++) copies[i].parentNode.removeChild(copies[i]);
+    }
+
+    // 複製はスクリーンリーダーとタブ移動から外す（同じ講演が何度も読まれないように）
+    function makeCopy() {
+      var c = first.cloneNode(true);
+      c.removeAttribute('data-conf-today-set');
+      c.setAttribute('data-conf-today-copy', '');
+      c.setAttribute('aria-hidden', 'true');
+      var links = c.querySelectorAll('a, button');
+      for (var i = 0; i < links.length; i++) links[i].setAttribute('tabindex', '-1');
+      return c;
+    }
+
+    function stopFrame() {
+      if (raf) cancelAnimationFrame(raf);
+      raf = 0;
+      last = 0;
+    }
+
+    function frame(t) {
+      raf = 0;
+      var dt = last ? Math.min((t - last) / 1000, 0.1) : 0;
+      last = t;
+      var g = goal();
+      ramp += (g - ramp) * (1 - Math.exp(-(g < ramp ? STOP_RATE : START_RATE) * dt));
+      if (Math.abs(g - ramp) < 0.002) ramp = g;
+      x -= SPEED * ramp * dt;
+      if (x <= -setW) x += setW;
+      track.style.transform = 'translate3d(' + x.toFixed(2) + 'px,0,0)';
+      // 止まりきったら描画を休む（再開は wake から）
+      if ((ramp === 0 && g === 0) || !visible) { last = 0; return; }
+      raf = requestAnimationFrame(frame);
+    }
+
+    function wake() {
+      if (running && visible && !raf) raf = requestAnimationFrame(frame);
+    }
+
+    function setup() {
+      var frac = setW > 0 ? x / setW : 0;   // 作り直しても流れの途中位置を保つ
+      stopFrame();
+      removeCopies();
+      track.style.transform = '';
+      running = false;
+      root.classList.remove('is-running');
+      if (pauseBtn) pauseBtn.hidden = true;
+      if (reduceMq && reduceMq.matches) return;
+
+      root.classList.add('is-running');
+      viewport.scrollLeft = 0;
+      setW = first.getBoundingClientRect().width;   // 1 セット分の幅（末尾の余白を含む）
+      if (!(setW > 0)) { root.classList.remove('is-running'); return; }
+      // 1 セット分流れた瞬間も右端まで埋まるよう「画面幅 ÷ 1 セット幅」の切り上げに 1 つ足す
+      var copies = Math.max(1, Math.ceil(viewport.clientWidth / setW) + 1);
+      for (var i = 0; i < copies; i++) track.appendChild(makeCopy());
+      x = frac * setW;
+      running = true;
+      if (pauseBtn) pauseBtn.hidden = false;
+      wake();
+    }
+
+    if (pauseBtn) {
+      pauseBtn.addEventListener('click', function () {
+        userPaused = !userPaused;
+        pauseBtn.setAttribute('aria-pressed', String(userPaused));
+        pauseBtn.textContent = userPaused ? '再生' : '一時停止';
+        wake();
+      });
+    }
+    viewport.addEventListener('pointerenter', function (e) { if (e.pointerType === 'mouse') { hovering = true; wake(); } });
+    viewport.addEventListener('pointerleave', function (e) { if (e.pointerType === 'mouse') { hovering = false; wake(); } });
+    viewport.addEventListener('focusin', function () { focusing = true; wake(); });
+    viewport.addEventListener('focusout', function () { focusing = false; viewport.scrollLeft = 0; wake(); });
+
+    var resizeTimer = 0, lastVw = viewport.clientWidth;
+    window.addEventListener('resize', function () {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(function () {
+        if (viewport.clientWidth === lastVw) return;
+        lastVw = viewport.clientWidth;
+        setup();
+      }, 200);
+    });
+    if (reduceMq) {
+      if (reduceMq.addEventListener) reduceMq.addEventListener('change', setup);
+      else if (reduceMq.addListener) reduceMq.addListener(setup);
+    }
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (entries) {
+        visible = entries[0].isIntersecting;
+        if (visible) wake();
+      }).observe(root);
+    }
+
+    setup();
+  })();
+  </script>
+  <script src="/2026/asset2026/js/top-exhibition-carousel.js?260127b" defer></script>
+  <script src="/2026/asset2026/js/top-pillars-accordion.js?260806a" defer></script>
+
+  
+
+<footer class="footer-2026">
+  <section class="footer-2026__columns">
+        <div class="footer-2026__column">
+      <h4><a href="/ja/about/">About</a></h4>
+            <ul>
+                <li>
+                    <a href="/ja/about/">開催概要</a>
+          
+                    
+                            </li>
+                <li>
+                    <a href="/ja/about/registration.html">来場登録</a>
+          
+                    
+                              <ul class="footer-2026__sublist">
+                        <li>
+                            <a href="/ja/about/registration/mypage-features.html">マイページ機能ガイド</a>
+                          </li>
+                      </ul>
+                  </li>
+                <li>
+                    <a href="/ja/about/cooperation.html">協力団体</a>
+          
+                    
+                            </li>
+                <li>
+                    <a href="/ja/about/mediapartner.html">メディアパートナー</a>
+          
+                    
+                            </li>
+                <li>
+                    <a href="/ja/about/history.html">CEATECの歩み</a>
+          
+                    
+                            </li>
+                <li class="is-spaced">
+                    <a href="/ja/visitor-guide/">ビジターガイド</a>
+          
+                    
+                            </li>
+              </ul>
+    </div>
+        <div class="footer-2026__column">
+      <h4><a href="/ja/exhibition/">Exhibition</a></h4>
+            <ul>
+                <li>
+                    <a href="/ja/exhibition/exhibitor-list.php">出展者一覧</a>
+          
+                    
+                              <ul class="footer-2026__sublist">
+                        <li>
+                            <a href="/ja/exhibition/download_list.html">資料ダウンロード一覧</a>
+                          </li>
+                        <li>
+                            <a href="/ja/exhibition/movie_list.html">プレゼン・デモ動画一覧</a>
+                          </li>
+                        <li>
+                            <a href="/ja/exhibition/meeting_list.html">ミーティング予約受付企業一覧</a>
+                          </li>
+                        <li>
+                            <a href="/ja/exhibition/event_list.html">出展者イベント一覧</a>
+                          </li>
+                      </ul>
+                  </li>
+                <li>
+                    <a href="/ja/exhibition/exhibitor-guide.html">出展者ページ機能ガイド</a>
+          
+                    
+                            </li>
+                <li>
+                    <a href="/ja/exhibition/map.html">会場マップ</a>
+          
+                    
+                            </li>
+                <li>
+                    <a href="/ja/exhibition/">展示エリア</a>
+          
+                    
+                            </li>
+                <li>
+                    <a href="/ja/exhibition/general-exhibits/">一般展示</a>
+          
+                    
+                            </li>
+                <li>
+                    <a href="/ja/exhibition/x-park/">X（Transformation）パーク</a>
+          
+                    
+                              <ul class="footer-2026__sublist">
+                        <li>
+                            <a href="/ja/exhibition/x-park/pavilion/life-dx.html">暮らしのDXパビリオン</a>
+                          </li>
+                        <li>
+                            <a href="/ja/exhibition/x-park/pavilion/digital-ocean.html">海洋デジタル社会パビリオン</a>
+                          </li>
+                        <li>
+                            <a href="/ja/exhibition/x-park/pavilion/space-co-creation.html">宇宙共創パビリオン</a>
+                          </li>
+                        <li>
+                            <a href="/ja/exhibition/x-park/pavilion/digital-mobility.html">デジタル交通社会パビリオン</a>
+                          </li>
+                      </ul>
+                  </li>
+                <li>
+                    <a href="/ja/exhibition/nextgen-park/">ネクストジェネレーションパーク</a>
+          
+                    
+                            </li>
+                <li>
+                    <a href="/ja/exhibition/global-park/">グローバルパーク</a>
+          
+                    
+                              <ul class="footer-2026__sublist">
+                        <li>
+                            <a href="/ja/exhibition/global-park/tour.html">Global Innovation Discovery Tour</a>
+                          </li>
+                      </ul>
+                  </li>
+                <li>
+                    <a href="/ja/exhibition/for-students/">CEATEC for Students</a>
+          
+                    
+                              <ul class="footer-2026__sublist">
+                        <li>
+                            <a href="/2026/download/ja/CEATEC_2026_StudentMap.pdf" target="_blank" rel="noopener">学生フレンドリーマップ (PDF)</a>
+                          </li>
+                      </ul>
+                  </li>
+              </ul>
+    </div>
+        <div class="footer-2026__column">
+      <h4><a href="/ja/conference/">Conference &amp; Event</a></h4>
+            <ul>
+                <li>
+                    <a href="/ja/conference/">コンファレンス</a>
+          
+                              <ul class="footer-2026__sublist">
+                        <li>
+              <a href="/ja/conference/theme.html?tag=%E7%A4%BE%E4%BC%9A%E8%AA%B2%E9%A1%8C%E3%82%92%E8%A7%A3%E6%B1%BA%E3%81%99%E3%82%8B">社会課題を解決する</a>
+            </li>
+                        <li>
+              <a href="/ja/conference/theme.html?tag=%E6%9C%AA%E6%9D%A5%E3%82%92%E3%81%A4%E3%81%8F%E3%82%8B">未来をつくる</a>
+            </li>
+                        <li>
+              <a href="/ja/conference/theme.html?tag=%E6%8A%80%E8%A1%93%E3%82%92%E3%81%8D%E3%82%8F%E3%82%81%E3%82%8B">技術をきわめる</a>
+            </li>
+                        <li>
+              <a href="/ja/conference/theme.html?tag=%E4%B8%96%E7%95%8C%E3%81%AE%E3%83%88%E3%83%AC%E3%83%B3%E3%83%89%E3%82%92%E7%9F%A5%E3%82%8B">世界のトレンドを知る</a>
+            </li>
+                        <li>
+              <a href="/ja/conference/theme.html?tag=%E6%AC%A1%E4%B8%96%E4%BB%A3%E3%82%92%E5%BF%9C%E6%8F%B4%E3%81%99%E3%82%8B">次世代を応援する</a>
+            </li>
+                      </ul>
+          
+                            </li>
+                <li>
+                    <a href="/ja/conference/session-list.html">セッション一覧</a>
+          
+                    
+                            </li>
+                <li>
+                    <a href="/ja/conference/search.html">セッション検索</a>
+          
+                    
+                            </li>
+                <li>
+                    <a href="/ja/conference/timetable.html">タイムテーブル</a>
+          
+                    
+                            </li>
+                <li>
+                    <a href="/ja/conference/reservation-guide.html">聴講予約手順</a>
+          
+                    
+                            </li>
+                <li>
+                    <a href="/ja/conference/category.html?tag=online">オンラインセッション</a>
+          
+                    
+                            </li>
+                <li>
+                    <a href="/ja/conference/ecodesign.html">エコ＆デザインチャレンジ</a>
+          
+                    
+                            </li>
+              </ul>
+    </div>
+        <div class="footer-2026__column">
+      <h4><a href="/ja/award2026/">Award</a></h4>
+            <ul>
+                <li>
+                    <a href="/ja/award2026/">CEATEC AWARD</a>
+          
+                    
+                            </li>
+                <li>
+                    <a href="https://web-asset.io/CEATEC/2026/CEATEC2026_Featured-Guidebook_WEB.pdf" target="_blank" rel="noopener">CEATEC 2026 注目展示ガイドブック (PDF)</a>
+          
+                    
+                            </li>
+              </ul>
+    </div>
+        <div class="footer-2026__column">
+      <h4><a href="/ja/access/">Access</a></h4>
+            <ul>
+                <li>
+                    <a href="/ja/access/">アクセス</a>
+          
+                    
+                            </li>
+                <li>
+                    <a href="/ja/access/bus.html">高速バス</a>
+          
+                    
+                            </li>
+                <li>
+                    <a href="/ja/access/accommodation.html">宿泊情報</a>
+          
+                    
+                            </li>
+                <li>
+                    <a href="/ja/access/venue-services.html">会場サービス</a>
+          
+                    
+                            </li>
+              </ul>
+    </div>
+        <div class="footer-2026__column">
+      <h4><a href="/ja/news/">News</a></h4>
+            <ul>
+                <li>
+                    <a href="/ja/news/">News</a>
+          
+                    
+                            </li>
+                <li>
+                    <a href="/ja/news/pressrelease_update.html">出展者ページ更新情報</a>
+          
+                    
+                            </li>
+                <li>
+                    <a href="/ja/news/pressrelease.html">出展者プレスリリース</a>
+          
+                    
+                            </li>
+                <li>
+                    <a href="/ja/news/press/">報道関係者の方へ</a>
+          
+                    
+                            </li>
+                <li>
+                    <a href="https://exp.ceatec.com/" target="_blank" rel="noopener">ceatec experience</a>
+          
+                    
+                            </li>
+              </ul>
+    </div>
+      </section>
+
+  <ul class="footer-2026__social">
+    <li><a href="https://twitter.com/ceatec" target="_blank" title="X"><img src="https://web-asset.io/CEATEC/2026/icon_x_b.svg" alt="X"></a></li>
+    <li><a href="https://www.instagram.com/ceatec_official/" target="_blank" title="instagram"><img src="https://web-asset.io/CEATEC/2026/icon_instagram_b.svg" alt="instagram"></a></li>
+    <li><a href="https://www.facebook.com/CEATEC.official" target="_blank" title="facebook"><img src="https://web-asset.io/CEATEC/2026/icon_facebook_b.svg" alt="facebook"></a></li>
+    <li><a href="https://www.linkedin.com/company/69190876/" target="_blank" title="LinkedIn"><img src="https://web-asset.io/CEATEC/2026/icon_LinkedIn_b.svg" alt="LinkedIn"></a></li>
+    <li><a href="https://www.youtube.com/c/CEATEC_official" title="Youtube" target="_blank"><img src="https://web-asset.io/CEATEC/2026/icon_youtube_b.svg" alt="Youtube"></a></li>
+  </ul>
+
+  <section class="footer-2026__meta">
+    <figure class="footer-2026__logo">
+      <img src="https://web-asset.io/CEATEC/2026/logo_2026_kv_theme.webp" alt="CEATEC 2026">
+    </figure>
+    <ul class="footer-2026__organizers">
+      <li>
+        <h5>主催</h5>
+        <p><a href="https://www.jeita.or.jp/japanese/" target="_blank">一般社団法人 電子情報技術産業協会</a></p>
+      </li>
+      <li>
+        <h5>共催</h5>
+        <p><a href="https://www.ciaj.or.jp/" target="_blank">一般社団法人 情報通信ネットワーク産業協会</a><br><a href="https://www.saj.or.jp/" target="_blank">一般社団法人 ソフトウェア協会</a></p>
+      </li>
+      <li>
+        <h5>運営</h5>
+        <p><a href="https://www.jesa.or.jp/" target="_blank">CEATEC 運営事務局<br>（一般社団法人日本エレクトロニクスショー協会）</a></p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="footer-2026__bottombar">
+    <ul class="footer-2026__bottomlinks">
+      <li><a href="/ja/privacy.html">プライバシーポリシー</a></li>
+      <li><a href="/ja/contact/">お問い合わせ</a></li>
+      <li><a href="/ja/news/press/">報道関係者の方へ</a></li>
+      <li><a href="/ja/application/" class="footer-2026__bottombtn">出展のご案内</a></li>
+      <li><a href="https://exb.jesa.or.jp/ceatec/admin/auth/login" target="_blank" class="footer-2026__bottombtn">出展者専用サイト</a></li>
+    </ul>
+    <p class="footer-2026__copy">Copyright 2026 CEATEC Organizing Committee All rights reserved.</p>
+  </section>
+</footer>
+
+<button type="button" id="page-top-2026" class="page-top-2026" aria-label="ページの先頭へ戻る">
+  <span class="material-icons-round" aria-hidden="true">vertical_align_top</span>
+</button>
+
+<script src="/2026/asset2026/js/page-top-2026.js?260127" defer></script>
+</body>
+</html>

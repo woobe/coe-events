@@ -1,0 +1,190 @@
+{
+  "city_slug": "tokyo-jp",
+  "counts": {
+    "communities": 12,
+    "coverage_rows": 71,
+    "declared_gaps": 9,
+    "event_shells": 6,
+    "events": 17,
+    "holiday_rows": 375,
+    "photos": 22,
+    "sources": 51,
+    "venues": 16
+  },
+  "inputs": [
+    {
+      "name": "calendar_conflicts.json",
+      "path": "research/tokyo/2027/calendar_conflicts.json",
+      "sha256": "e6ee23bdb067277263725397c95c0e26bc395a4977ff66e6b067f17593b13b61"
+    },
+    {
+      "name": "city_input.json",
+      "path": "research/tokyo/2027/city_input.json",
+      "sha256": "6cb486afc14067035fcea8fad7c82a88f25f28a906bf4da4f192a2d517287dc4"
+    },
+    {
+      "name": "communities.raw.json",
+      "path": "research/tokyo/2027/communities.raw.json",
+      "sha256": "b730dc046dde218a45a6c4d416a70fe5bcf57dc4c6e97f7f9dc8d92351fbe604"
+    },
+    {
+      "name": "venues.raw.json",
+      "path": "research/tokyo/2027/venues.raw.json",
+      "sha256": "89c8724f5a87a3653231b0f426dda152e95b9f98a2a5cc1692c372accf310992"
+    },
+    {
+      "name": "venues.shortlist.json",
+      "path": "research/tokyo/2027/venues.shortlist.json",
+      "sha256": "2494a7d9780623045ba4beb7193f4db73ed8b8dba1ccbea5c6f46dbcf18cccda"
+    }
+  ],
+  "mandatory_sources": [
+    {
+      "check_status": "not_checked",
+      "checked_on": null,
+      "url": "https://miragather.com/"
+    },
+    {
+      "check_status": "not_checked",
+      "checked_on": null,
+      "url": "https://miragather.com/?tab=side"
+    },
+    {
+      "check_status": "not_checked",
+      "checked_on": null,
+      "url": "https://miragather.com/ai"
+    },
+    {
+      "check_status": "not_checked",
+      "checked_on": null,
+      "url": "https://aitinkerers.org/all_cities"
+    },
+    {
+      "check_status": "not_checked",
+      "checked_on": null,
+      "url": "https://luma.com/decentralized_ai_events?period=past"
+    }
+  ],
+  "notes": [
+    "Built from the approved research bundle research/tokyo/2027 (16 venues: 14 shortlist_ready, 2 lead; 12 communities; 17 calendar rows).",
+    "Registry: installed Asia edition 3b20667de940342954040f06d6695d490d8e27515d536969d127a0fa92bacdaf, host scope JP:tokyo, no supplement; the five JP:tokyo rows are used as they are printed.",
+    "Paired brief: 50 people, 09:00 start, 8-hour floor (09:00-17:00), 12-hour preferred (09:00-21:00), soft USD 5,000, calendar year 2027, no recommended date.",
+    "Photos: operator gallery first; 14 verified operator images across 8 rooms and 8 explicit withheld records; no Wikimedia image was used because no Commons file on a captured page depicts one of these hired rooms."
+  ],
+  "photos": {
+    "dispositions": [
+      {
+        "disposition": "reviewed_photos",
+        "records": 2,
+        "venue_id": "tokyo-3ddf05bea305"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "tokyo-c2234d55d7a8"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "tokyo-e01cf0dd90aa"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 2,
+        "venue_id": "tokyo-320c6932d57c"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "tokyo-64457d959f92"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "tokyo-909023cc0e1a"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "tokyo-b2800bb2eb6b"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "tokyo-20684af0235f"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "tokyo-a49285d2f4c6"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "tokyo-089052f60886"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "tokyo-99fb6a13d03f"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "tokyo-cd1e0119b48b"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 2,
+        "venue_id": "tokyo-dd4cc713bbcb"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 2,
+        "venue_id": "tokyo-d413f40715b4"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 2,
+        "venue_id": "tokyo-4a683506781d"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 2,
+        "venue_id": "tokyo-b2a1102f2bf8"
+      }
+    ],
+    "note": "Only the reviewed photo records are carried.",
+    "records": 22
+  },
+  "registry": {
+    "edition_copy": "references/editions/school_holidays-3b20667d.json",
+    "host_jurisdiction_id": "JP:tokyo",
+    "path": "/home/joe/.hermes/skills/plan-event/references/school_holidays.json",
+    "sha256": "3b20667de940342954040f06d6695d490d8e27515d536969d127a0fa92bacdaf",
+    "supplement": false
+  },
+  "reviewed_inputs": {
+    "local_requirements_supplied": true,
+    "path": "/home/joe/repo_dev/coe-events/research/tokyo/2027/reviewed-inputs.json",
+    "sha256": "8916b01d5dec74fffde8cefcd18fc4d1cf7d2777d4174a2f2b5a7b794a15445c"
+  },
+  "run_id": "run-tokyo-2027-bootstrap-1",
+  "schema_version": "city-conversion-report/1",
+  "shared_url_event_shells": [
+    "tokyo-ev-005f0c6a0b94",
+    "tokyo-ev-04adec1af727",
+    "tokyo-ev-0ac8f3827db1",
+    "tokyo-ev-2a942da18a81",
+    "tokyo-ev-b2da1c863208",
+    "tokyo-ev-e966f6c50404"
+  ],
+  "updated_at": "2026-11-28T09:00:00Z",
+  "warnings": [
+    "mandatory source https://miragather.com/ has no reviewed outcome",
+    "mandatory source https://miragather.com/?tab=side has no reviewed outcome",
+    "mandatory source https://miragather.com/ai has no reviewed outcome",
+    "mandatory source https://aitinkerers.org/all_cities has no reviewed outcome",
+    "mandatory source https://luma.com/decentralized_ai_events?period=past has no reviewed outcome"
+  ]
+}
