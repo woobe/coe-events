@@ -1,0 +1,897 @@
+
+
+
+<!DOCTYPE HTML>
+<!--[if lt IE 7]><html class="lt-ie10 lt-ie9 lt-ie8 ie6" lang="ko-KR"><![endif]-->
+<!--[if IE 7]><html class="lt-ie10 lt-ie9 lt-ie8 ie7" lang="ko-KR"><![endif]-->
+<!--[if IE 8]><html class="lt-ie10 lt-ie9 ie8" lang="ko-KR"><![endif]-->
+<!--[if IE 9]><html class="lt-ie10 ie9" lang="ko-KR"><![endif]-->
+<!--[if !IE]><!--><html lang="ko-KR"><!--<![endif]-->
+
+
+
+
+
+
+<head>
+	<title>KT&amp;G상상마당</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=3.0, user-scalable=yes">
+    <meta name="keywords" content="KT&amp;G상상마당,상상마당,KT&amp;G,케이티엔지,sangsangmadang,SSMD">
+    <meta name="description" content="KT&amp;G상상마당">
+    <meta name="author" content="KT&amp;G상상마당">
+    <meta name="google-site-verification" content="RZxD3RZnk_HPiJCwUGoKDghfwUVQZ9NYSEpbdPfyAqM" /><!-- 구글서치콘솔 소유권 인증 -->
+    <meta name="naver-site-verification" content="a374c29783277c34ae3dabc80d95dbb68ace4bf3" /><!-- 네이버서치어드바이저 소유권 인증 -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="KT&amp;G상상마당">
+    <meta property="og:description" content="KT&amp;G상상마당">
+    <meta property="og:url" content="https://www.sangsangmadang.com/rental/list">
+
+
+
+
+
+    <meta name="format-detection" content="telephone=no"><!-- iOS 전화 자동연결 방지 메타태그 -->
+    <!-- Favicon -->
+    <link rel="SHORTCUT ICON" href="/resources/images/common/favicon.ico">
+    <link rel="apple-touch-icon" href="/resources/images/common/bookmark.png"><!-- 애플 아이콘 -->
+    <link rel="apple-touch-icon-precomposed" href="/resources/images/common/bookmark.png"><!-- 안드로이드,아이폰 바탕화면 아이콘 -->
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="/resources/css/fonts.css">
+    <link href="https://fonts.googleapis.com/css?family=Prompt:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/resources/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="/resources/css/common.css?v=20250422">
+    <link rel="stylesheet" type="text/css" href="/resources/css/swiper-bundle.css">
+    
+    <link rel="stylesheet" type="text/css" href="/resources/css/sub.css">
+    
+
+	
+    <script type="text/javascript" src="/resources/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/resources/js/swiper-bundle.js"></script>
+    <script type="text/javascript" src="/resources/common/js/common.js"></script>
+    <script type="text/javascript" src="/resources/js/common.js"></script>
+    <script type="text/javascript" src="/resources/js/lib/modernizr.custom.31356.js"></script>
+    
+    	<script type="text/javascript" src="/resources/js/sub.js"></script>
+	    <script type="text/javascript" src="/resources/js/scrollMagic/ScrollMagic.min.js"></script>
+	    <script type="text/javascript" src="/resources/js/scrollMagic/debug.addIndicators.min.js"></script>
+	    <script type="text/javascript" src="/resources/js/gsap/gsap.min.js"></script>
+	    <script type="text/javascript" src="/resources/js/gsap/animation.gsap.js"></script>
+	    <script type="text/javascript" src="/resources/js/gsap/TweenMax.min.js"></script>
+    
+
+    <!-- bookArea -->
+    <!--
+    <link type="text/css" rel="stylesheet" charset="utf-8" href="https://s3.ap-northeast-2.amazonaws.com/static.wingsbooking.com/html/theme/be4_theme01/_css/wings.booking.css" />
+    <script type="text/javascript" charset="utf-8" src="https://s3.ap-northeast-2.amazonaws.com/static.wingsbooking.com/html/theme/be4_theme01/_js/wings.booking.js"></script>
+    -->
+    <link type="text/css" rel="stylesheet" charset="utf-8" href="/resources/plugins/wingsbooking/css/wings.booking.css" />
+    <script type="text/javascript" charset="utf-8" src="/resources/plugins/wingsbooking/js/wings.booking.js"></script>
+    <!-- //bookArea -->
+
+    <!-- new js, css -->
+    <script src="/resources/js/renewal/common-ui.js"></script>
+    <script src="/resources/plugins/gsap/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/resources/css/style.css" />
+
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-JHPXYN92YF"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+	
+	  gtag('config', 'G-JHPXYN92YF');
+	</script>
+</head>
+<body>
+<script type="text/javascript" src="/resources/common/js/ckeditor/ckeditor.js"></script>
+
+<script type="text/javascript">
+	var spaceCd = "HD";
+	$(document).ready(function(){
+		fnSelectList(spaceCd);	//대관정보 Load
+		
+		$(".spaceBtn").on("click",function(){
+			spaceCd = $(this).parent().data("space");
+			goPage(1);
+		});
+		
+	});
+	
+	// 대관정보 조회
+	function fnSelectList(spaceCode){
+		var page = $("#page").val();
+		$("#tab_con_tit").text($('[data-space="'+spaceCode+'"').children().text());
+		ssmd_ajax("/rental/selectRentalList/"+spaceCode, {spaceCd : spaceCode, page : page}, "callback_selectList");
+	}
+	
+	function callback_selectList(res) {
+		var html = "";
+		var path = "https://www.sangsangmadang.com/feah";
+		
+		$("#conList").html("");
+		if(res.Info.list.length > 0){
+			$.each(res.Info.list, function(idx, item) {
+				
+				html = "	<li>";
+				html += "		<div class='list_thumb'>";
+				html += "			<img src='"+path+item.thumFilePath+"' alt='대관 이미지' />";
+				html += "		</div>";
+				html += "		<div class='list_thumb_ex'>";
+				html += "			<dl>";
+				html += "				<dt>"+item.facilityName+"</dt>";
+				html += "				<dd>&nbsp;</dd>";
+				html += "			</dl>";
+				html += "		</div>";
+				html += "		<div class='btn_wrap'>";
+				html += "			<a href='javascript:void(0)' onclick='fnSelectInfo("+item.coronationSeq+");' class='button type05'>상세보기</a>";
+				html += "		</div>";
+				html += "</li>";
+				
+				$("#conList").append(html);
+			});
+			
+			$("#paging_wrap").html(res.paging);
+			
+		}else{
+			$("#paging_wrap").empty();
+			$("#conList").html("<li>검색 결과가 없습니다.</li>");
+		}
+		
+	}
+	
+	// 페이지검색
+	function goPage(page) {
+		$("#page").val(page);
+		fnSelectList(spaceCd);
+	}
+	
+	// 객실 상세조회
+	function fnSelectInfo(seq){
+		ssmd_ajax("/rental/selectRentalInfo/"+seq, {seq : seq} ,"callback_selectInfo");
+	}
+	
+	function callback_selectInfo(res) {
+		
+		$("#popup1_slide").html("");
+		var path = "https://www.sangsangmadang.com/feah";
+		
+		$("#popup1_tit").text(res.info.info.facilityName);
+		
+		var deptTag = "";
+		//사업부 & 전화번호
+		deptTag += res.info.info.deptNm + "<br>" + res.info.info.inquiry		
+		//이메일
+		if(res.info.info.email != null && res.info.info.email != '') {
+			deptTag += "<br>" + res.info.info.email;
+		}
+		
+		$("#popup1_deptNm").html(deptTag);
+		
+		//신청양식
+		if(res.info.info.applyFilePath != null && res.info.info.applyFilePath != '' && typeof res.info.info.applyFilePath != "undefined") {
+			$("#modal1 .popup_section .popup_table tbody tr:eq(0)").show();
+			$("#popup1_apply").html("<a href='"+path+res.info.info.applyFilePath+"' >"+res.info.info.applyFileName+"</a>");
+		}else {
+			$("#modal1 .popup_section .popup_table tbody tr:eq(0)").hide();
+			$("#popup1_apply").html("");
+		}
+		
+		$("#popup1_slide").append("<li class='swiper-slide'><img src='"+path+res.info.info.thumFilePath+"' alt='' /></li>");
+		
+		$("#reltalFee").html(res.reltalFee);
+		
+		//안내사항
+		if(res.infodec != null && res.infodec != '') {
+			$("#modal1_1").show();
+			$("#infodec").html(res.infodec);
+		}else {
+			$("#modal1_1").hide();
+			$("#infodec").html("");
+		}
+		
+		//참고자료
+		$("#modal1 .popup_section .popup_table tbody tr:eq(2) td").html("");
+		
+		if(res.info.relatedFileList.length > 0) {
+			$("#modal1 .popup_section .popup_table tbody tr:eq(2)").show();
+			for(var i=0; i<res.info.relatedFileList.length; i++) {
+				$("#popup1_related").append("<a href='"+path+res.info.relatedFilePathList[i]+"' >"+res.info.relatedFileList[i]+"</a><br/>");	
+			}
+		}
+
+		layer_popup('modal1');
+	}
+	
+</script>
+
+<div id="wrapper" class="sub">
+
+	
+<!-- Header 영역(s) -->
+<header id="header">
+	<div class="headerWrap">
+    	
+    		
+    	
+    	
+   		<div class="logoWrap flex">
+   			<h1 class="logo">
+   				<a href="/" title="메인으로 이동">
+   					<img src="/resources/images/logo.svg" alt="상상마당로고">
+   				</a>
+   			</h1>
+   			<button type="button" class="mobileMenuBtn">메뉴</button>
+   		</div>
+   		
+   		
+   			<div class="linkWrap flex">
+   				<a href="/archive/master/list" class="link_archive">Archive</a>
+   				<a href="/calendar/list" class="link_calendar">Calendar</a>
+   			</div>
+   		
+   		
+   		<div class="areaBox flex">
+   			<ul class="areaMenu flex">
+				<li class="hongdae"><a href="/main/HD">Hongdae</a></li>
+				<li class="nonsan"><a href="/main/NS">Nonsan</a></li>
+				<li class="chuncheon"><a href="/main/CC">Chuncheon</a></li>
+				<li class="daechi"><a href="/main/DC">Daechi</a></li>
+				<li class="busan"><a href="/main/BS">Busan</a></li>
+   			</ul>
+   			<button class="search" type="button" onclick="fnFocus();">검색</button>
+   		</div>
+   		
+        <script type="text/javascript">
+		function fnFocus(){
+				window.setTimeout(function () { 
+				    document.getElementById('searchInput').focus();
+				}, 0);
+			}
+
+		$(document).ready(function(){
+		    $("#btnh_search").bind('click',function(e) {
+		        // Prevents the default action to be triggered.
+		    	e.preventDefault();
+		        if($("#searchInput").val() == ""){
+		        	alert("검색어를 입력해주세요.");
+		        }else{
+		        	searchfrm.submit();	
+		        }			    	
+		    });
+		});
+		</script>   		
+   		<div class="searchWrap">
+   			<div class="searchBox">
+   				<form name="searchfrm" method="POST" action="/search/list">
+   				<input type="text" name="searchInput" id="searchInput" placeholder="검색어를 입력해주세요" value="" />
+   				<button class="btn_search" type="button" id="btnh_search">검색</button>
+   				</form>
+   			</div>
+   		</div>
+   		
+   		<div class="menuWrap">
+	   		<ul id="menu" class="flex">
+	   			<li>
+	   				<a href="java-script:;">상상마당</a>
+	   				<button class="btn_drop" type="button"></button>
+	   				<div class="depthWrap">
+	   					<ul class="depth">
+	   						<li>
+								<a href="/main/HD">홍대</a>
+								<a href="/main/NS">논산</a>
+								<a href="/main/CC">춘천</a>
+								<a href="/main/DC">대치</a>
+								<a href="/main/BS">부산</a>
+	   						</li>
+	   					</ul>
+	   				</div>
+	   			</li>
+	   			<li>
+					<a href="java-script:;">프로그램</a>
+					<button class="btn_drop" type="button"></button>
+					<div class="depthWrap">
+						<ul class="depth">
+							<li>
+								<a href="/show/list">공연</a>
+								<a href="/movie/list">영화</a>
+								<a href="/display/list">전시</a>
+								<a href="/lec/list">교육</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a href="java-script:;">숙박·대관</a>
+					<button class="btn_drop" type="button"></button>
+					<div class="depthWrap">
+						<ul class="depth">
+							<li>
+								<a href="/rental/list">대관안내</a>
+								<a href="/stay/CC">춘천스테이</a>
+								<a href="/stay/BS">부산스테이</a>
+								<a href="/camping/list">아트캠핑빌리지</a>
+								<a href="/youth/list">문화예술교육센터</a>
+								<a href="/playing/list">부산 플레잉룸</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a href="java-script:;">F&B</a>
+					<button class="btn_drop" type="button"></button>
+					<div class="depthWrap">
+						<ul class="depth">
+							<li>
+								
+								<a href="/htmlpage/fnbPage/10">댄싱 카페인</a>
+								<a href="/htmlpage/fnbPage/11">세인트콕스</a>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li>
+					<a href="https://smartstore.naver.com/ssmd" target="_blank">디자인스퀘어</a>
+					
+				</li>
+				<li>
+					<a href="java-script:;">소식·공지</a>
+					<button class="btn_drop" type="button"></button>
+					<div class="depthWrap">
+						<ul class="depth">
+							<li>
+								<a href="/support/list">공모/지원사업</a>
+								<a href="/promotion/list">소식/이벤트</a>
+								<a href="/webzine/list">웹진</a>
+								<a href="/customer/notice/list">공지사항</a>
+								<a href="/contact/list">문의처</a>
+
+							</li>
+						</ul>
+					</div>
+				</li>
+	   		</ul>
+   		</div>
+	</div>
+	
+	
+   	<div class="nav_wrap">
+		<ul>
+			<li><a href="/">Home</a></li>
+    		
+    			
+    			
+    			
+    			
+    			
+    			
+    			
+    			
+    			
+    			
+    			
+    			
+    			
+    			
+    			
+    				<li><a href="/stay/CC">숙박·대관</a></li>
+    				<li><a href="/rental/list">대관안내</a></li>
+    			
+				
+				
+				
+				
+				
+    			
+    			
+    			
+    			
+    			
+    			
+    			
+				
+    			
+    			
+    			
+    			
+    			
+    			
+    			
+    		
+		</ul>
+	</div>
+	
+</header>
+<!--// Header 영역(e) -->
+	
+	<div id="container">
+		<div class="inner">
+			<form id="form1" name="form1" method="post">
+			<input type="hidden" id="page" name="page" value=""/>
+		
+			<div class="contents">
+				<textarea id="contents" class="ssmdEditor" style="display:none;">&lt;h2 class=&quot;page_tit&quot;&gt;대관안내&lt;/h2&gt;
+
+&lt;p class=&quot;tit_desc&quot;&gt;KT&amp;amp;G 상상마당의 각 공간을 대관 하여 사용하실 수 있습니다.&lt;/p&gt;
+
+&lt;h2 class=&quot;tab_tit&quot;&gt;대관절차&lt;/h2&gt;
+
+&lt;ul class=&quot;circleList ver3 flex&quot;&gt;
+	&lt;li&gt;&lt;span class=&quot;tit&quot;&gt;STEP 1. 예약문의&lt;/span&gt; 공간 대관이용을 위해 해당 부서로 행사일정에 대하여 사전 가능여부를 문의해 주세요.&lt;/li&gt;
+	&lt;li&gt;&lt;span class=&quot;tit&quot;&gt;STEP 2. 신청&lt;/span&gt; 대관신청서를 작성하여 담당자에게 이메일로 접수해 주세요.&lt;/li&gt;
+	&lt;li&gt;&lt;span class=&quot;tit&quot;&gt;STEP 3. 대관 심의 및 통보&lt;/span&gt; 제출해주신 신청서 및 계획서를 심의 (7일 이내)하여 대관여부를 이메일로 회신드립니다.&lt;/li&gt;
+	&lt;li&gt;&lt;span class=&quot;tit&quot;&gt;STEP 4. 계약 및 대관료 납부&lt;/span&gt; 계약체결 후 납일일정에 맞춰 대관료를 납부하셔야 합니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 class=&quot;tab_tit&quot;&gt;안내사항&lt;/h2&gt;
+
+&lt;ul class=&quot;dot infoList2 mgt&quot;&gt;
+	&lt;li&gt;사전에 협의 및 허가되지 않은 특수효과는 진행할 수 없습니다.&lt;/li&gt;
+	&lt;li&gt;행사장 내부 구조변경(책상/의자 등) 시 원상복구를 원칙으로 합니다.&lt;/li&gt;
+	&lt;li&gt;공간 내 화환반입은 금지되어 있으며 부득이 반입이 필요한 경우 자체 철거해 주셔야 합니다.&lt;/li&gt;
+	&lt;li&gt;공간의 장비 및 시설물 파손 시 그에 대한 배상 책임이 있습니다.&lt;/li&gt;
+	&lt;li class=&quot;ftred&quot;&gt;세부 사항은 내부 대관규정에 따릅니다. 신청 전 반드시 대관규정을 확인하여 주시기 바랍니다. (대관규정은 대관신청서와 함께 다운로드 할 수 있습니다.)&lt;/li&gt;
+	&lt;li class=&quot;ftred&quot;&gt;대관료는 계약체결 후 7일 이내에 입금 또는 결제하여야 합니다.&lt;/li&gt;
+	&lt;li class=&quot;ftred&quot;&gt;업체(신청자)명과 입금자명이 다른 경우 미리 알려주시기 바랍니다.&lt;/li&gt;
+&lt;/ul&gt;
+</textarea>
+			</div>
+			
+			<div class="tab_wrap">
+				<ul id="tabUl">
+					<li data-space="HD" class="on"><button type="button" class="spaceBtn">홍대</button></li>
+					<li data-space="NS"><button type="button" class="spaceBtn">논산</button></li>
+					<li data-space="CC"><button type="button" class="spaceBtn">춘천</button></li>
+					<li data-space="DC"><button type="button" class="spaceBtn">대치</button></li>
+					<li data-space="BS"><button type="button" class="spaceBtn">부산</button></li>
+				</ul>
+				<div class="tab_box">
+					<div class="tab_con_new tab_con01">
+						<!-- 대관안내 -->
+						<div class="spaceInfo_con">
+							<h3 class="tab_con_tit" id="tab_con_tit">홍대</h3>
+							<div class="tab_wrap2 flex">
+								<div class="tab_con3" style="width: 100%">
+									<div class="list_wrap">
+										<ul class="list_type07 wd33" id="conList"></ul>
+									</div>
+									
+									<!-- 페이징(s) -->
+									<div class="paging_wrap" id="paging_wrap"></div>
+									<!--// 페이징(e) -->
+								</div>
+							</div>
+						</div>
+						<!-- //대관안내 -->
+					</div>
+				</div>
+			</div>
+			</form>
+			
+		</div>
+	</div>
+	
+<script type="text/javascript">
+$(document).ready(function(){
+	
+});
+</script>
+<!-- 대관팝업 -->
+<div class="popup_wrap" id="modal1">
+	<div class="popup_content">
+		<div class="thumStay_slide swiper">
+			<ul class="swiper-wrapper" id="popup1_slide">
+				<li class="swiper-slide"><img src="/resources/images/sub/pop_slide_img.png" alt="" /></li>
+			</ul>
+		</div>
+		<div class="popup_section" id="pop_section">
+			<h2 class="popup_tit" id="popup1_tit"></h2>
+			<table class="popup_table">
+				<colgroup>
+					<col style="width:100px;" />
+					<col style="width:*" />
+				</colgroup>
+				<tbody>
+					<tr style="display:none;">
+						<th>신청양식</th>
+						<td id="popup1_apply"></td>
+					</tr>
+					<tr>
+						<th>담당부서</th>
+						<td id="popup1_deptNm"></td>
+					</tr>
+					<tr style="display:none;">
+						<th>참고자료</th>
+						<td id="popup1_related"></td>
+					</tr>
+				</tbody>
+			</table>
+			<h2 class="popup_subtit">대관료</h2>
+			<ul class="dot_list">
+				<li id="reltalFee"></li>
+			</ul>
+			<div id="modal1_1" style="display:none;">
+				<h2 class="popup_subtit">안내사항</h2>
+				<ul class="dot_list">
+					<li id="infodec"></li>
+				</ul>
+			</div>
+		</div>
+		<a href="#" class="close_btn_m close_btn"><span class="visuallyhidden">닫기</span></a>
+		<div class="popup_btn_area">
+			<button class="button type02 close_btn">닫기</button>
+		</div>
+	</div>
+</div>
+<!-- //대관팝업 -->
+
+<!-- 객실팝업 -->
+<div class="popup_wrap" id="modal2">
+	<div class="popup_content">
+		<div class="thumStay_slide swiper">
+			<ul class="swiper-wrapper" id="popup2_slide">
+				<li class="swiper-slide"><img src="/resources/images/sub/pop_slide_img2.png" alt="" /></li>
+			</ul>
+			<!-- navigation btn -->
+			<div class="swiper-scrollbar"></div>
+			<div class="thumStay-navigation">
+				<div class="swiper-button-prev">이전</div>
+				<div class="swiper-button-next">다음</div>
+			</div>
+			<!-- // navigation btn -->
+		</div>
+		<div class="popup_section">
+			<h2 class="popup_tit" id="popup2_tit"></h2>
+			<table class="popup_table">
+				<colgroup>
+					<col style="width:130px;" />
+					<col style="width:*" />
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>면적</th>
+						<td id="popup2_area"></td>
+					</tr>
+					<tr>
+						<th>투숙인원</th>
+						<td id="popup2_person_text"></td>
+					</tr>
+					<tr>
+						<th>체크인/아웃</th>
+						<td id="popup2_chek_in_out"></td>
+					</tr>
+					<tr style="display:none;">
+						<th>문의처</th>
+						<td id="popup2_inquiry"></td>
+					</tr>
+				</tbody>
+			</table>
+			<div id="desc2_1" style="display:none;">
+				<h2 class="popup_subtit">소개</h2>
+				<ul>
+					<li id="sumyDesc"></li>
+				</ul>
+			</div>
+			<div id="desc2_2" style="display:none;">
+				<h2 class="popup_subtit">어메니티</h2>
+				<ul>
+					<li id="amenity"></li>
+				</ul>
+			</div>
+			<div id="desc2_3" style="display:none;">
+				<h2 class="popup_subtit">안내사항</h2>
+				<ul>
+					<li id="infodec"></li>
+				</ul>
+			</div>
+		</div>
+		<a href="#" class="close_btn_m close_btn"><span class="visuallyhidden">닫기</span></a>    
+		<div class="popup_btn_area">
+			<button class="button type02 close_btn">닫기</button>
+		</div>
+	</div>
+</div>
+<!-- //객실팝업 -->
+
+    <!-- 강사소개 -->
+    <div class="popup_wrap" id="modal4">
+      <div class="popup_content pd0 wd_long">
+        <div class="popup_top_area">
+          <a href="#none" class="popup_close_btn close_btn"><img src="/resources/images/btn_popup_close_pc.png" alt="닫기"></a>    
+        </div>
+
+        <div class="popup_section ver2">
+          <div class="popup_intro_wrap">
+            <div class="img_area" id="img_area">
+              <img src="" alt="강사소개">
+            </div>  
+            <div class="detail_area">
+              <div class="profile_top">
+                <dl>
+                  <dt></dt>
+                  <dd></dd>
+                </dl>
+                <div class="snsWrap"><!-- 강사소개 팝업만 sns 공유 버튼 노출 -->
+                </div>
+              </div>
+              <div class="popup_info_list">
+              	
+<!--                 <dl> -->
+<!--                   <dt>학력</dt> -->
+<!--                   <dd> -->
+<!--                     <ul class="dot_list pd0"> -->
+<!--                       <li>한국예술종합학교 영상원 영화과 졸업</li> -->
+<!--                       <li>성균관대학교 불문과 졸업</li> -->
+<!--                       <li>부산 외국어 고등학교 졸업</li> -->
+<!--                     </ul> -->
+<!--                   </dd> -->
+<!--                 </dl> -->
+<!--                 <dl> -->
+<!--                   <dt>경력</dt> -->
+<!--                   <dd> -->
+<!--                     <ul class="dot_list pd0"> -->
+<!--                       <li>스튜디오 플로우 소속 드라마 메인 작가</li> -->
+<!--                       <li>사람 엔터테인먼트 소속 장편영화 작가, 연출</li> -->
+<!--                       <li>CJ ENM 10부작 드라마 시나리오 작가, 연출</li> -->
+<!--                       <li>사람 엔터테인먼트X마이크 피기스 감독 옴니버스 프로젝트 시나리오 작가</li> -->
+<!--                       <li>콘텐츠 진흥원 창의인재 동반사업 멘티 작가X어바웃 필름</li> -->
+<!--                       <li>CJ ENM 한국 영화 기획개발팀 시나리오 작가</li> -->
+<!--                       <li>장편 극영화</li> -->
+<!--                       <li>마블 <블랙팬서> 한국 액션 유닛 현장 통역 (18년 개봉)</li> -->
+<!--                       <li>장편 극영화</li> -->
+<!--                       <li>퍼펙트스톰 필름 <싱글라이더> 스크립터 (17년 개봉)</li> -->
+<!--                       <li>장편 극영화</li> -->
+<!--                       <li>광화문 시네마 <범죄의 여왕> 스트립터 (16년 개봉)</li> -->
+<!--                     </ul> -->
+<!--                   </dd> -->
+<!--                 </dl> -->
+              </div>
+            </div>  
+          </div>
+        </div>
+
+        <div class="popup_btn_area">
+          <button class="button type02 close_btn">닫기</button>
+        </div>
+      </div>
+    </div>
+    <!-- //강사소개-->
+    
+<!-- 가이드 -->
+<div class="popup_wrap" id="modal5">
+  <div class="popup_content pd0">
+    <div class="popup_top_area">
+      <a href="#none" class="popup_close_btn close_btn"><img src="/resources/images/btn_popup_close_pc.png" alt="닫기"></a>    
+    </div>
+    <div class="popup_section ver2" id="modal5_section">
+    
+    </div>
+
+    <div class="popup_btn_area" id="modal5_url">
+    </div>
+  </div>
+</div>
+<!-- //가이드 -->    
+    
+<!-- 프로그램 팝업 -->
+<div class="popup_wrap" id="modal8">
+	<div class="popup_content">
+		<div class="thumStay_slide">
+			<ul id="popup8_slide">
+				<li><img src="" alt="" /></li>
+			</ul>
+		</div>
+		<div class="popup_section">
+			<h2 class="popup_tit" id="popup8_tit"></h2>
+			<table class="popup_table">
+				<colgroup>
+					<col style="width:130px;" />
+					<col style="width:*" />
+				</colgroup>
+				<tbody>
+					<tr>
+						<th>구분</th>
+						<td id="popup8_cate"></td>
+					</tr>
+					<tr style="display:none">
+						<th>최소정원</th>
+						<td id="popup8_fixNum"></td>
+					</tr>
+					<tr style="display:none">
+						<th>교육시간</th>
+						<td id="popup8_eduTm"></td> 
+					</tr>
+				</tbody>
+			</table>
+			<h2 class="popup_subtit"></h2>
+			<ul>
+				<li id="pgmDesc"></li>
+			</ul>
+		</div>
+		<a href="#" class="close_btn_m close_btn"><span class="visuallyhidden">닫기</span></a>    
+		<div class="popup_btn_area">
+			<button class="button type02 close_btn">닫기</button>
+		</div>
+	</div>
+</div>
+<!-- //객실팝업 -->
+
+    <!-- 아카이브팝업 -->
+    <div class="popup_wrap" id="modal9">
+      <div class="popup_content ver2">
+        <div class="thumStay_slide swiper">
+          <ul class="swiper-wrapper" id="popup9_slide">
+          </ul>
+          <!-- navigation btn -->
+          <div class="swiper-scrollbar"></div>
+          <div class="thumStay-navigation">
+              <div class="swiper-button-prev">이전</div>
+              <div class="swiper-button-next">다음</div>
+          </div>
+          <!-- // navigation btn -->
+        </div>
+        <a href="#" class="close_btn_m close_btn"><spna class="visuallyhidden">닫기</spna></a>    
+        <div class="popup_btn_area">
+          <button class="button type02 close_btn">닫기</button>
+        </div>
+      </div>
+    </div>
+    <!-- //아카이브팝업 -->
+    
+    
+    
+    
+	
+
+
+
+
+<script>
+	if(gfn_osInfo().isMobile=="Y"){
+		var _AceGID=(function(){var Inf=['sangsangmadang.com','www.sangsangmadang.com,sangsangmadang.com','AZ1A44515','AM','0','NaPm,Ncisy','ALL','0']; var _CI=(!_AceGID)?[]:_AceGID.val;var _N=0;if(_CI.join('.').indexOf(Inf[3])<0){ _CI.push(Inf);  _N=_CI.length; } return {o: _N,val:_CI}; })();
+		var _AceCounter=(function(){var G=_AceGID;var _sc=document.createElement('script');var _sm=document.getElementsByTagName('script')[0];if(G.o!=0){var _A=G.val[G.o-1];var _G=(_A[0]).substr(0,_A[0].indexOf('.'));var _C=(_A[7]!='0')?(_A[2]):_A[3];var _U=(_A[5]).replace(/\,/g,'_');_sc.src=(location.protocol.indexOf('http')==0?location.protocol:'http:')+'//cr.acecounter.com/Mobile/AceCounter_'+_C+'.js?gc='+_A[2]+'&py='+_A[1]+'&up='+_U+'&rd='+(new Date().getTime());_sm.parentNode.insertBefore(_sc,_sm);return _sc.src;}})();
+	}else{
+		var _AceGID=(function(){var Inf=['gtb12.acecounter.com','8080','AI1A34073434811','AW','0','NaPm,Ncisy','ALL','0']; var _CI=(!_AceGID)?[]:_AceGID.val;var _N=0;var _T=new Image(0,0);if(_CI.join('.').indexOf(Inf[3])<0){ _T.src =( location.protocol=="https:"?"https://"+Inf[0]:"http://"+Inf[0]+":"+Inf[1]) +'/?cookie'; _CI.push(Inf);  _N=_CI.length; } return {o: _N,val:_CI}; })();
+		var _AceCounter=(function(){var G=_AceGID;var _sc=document.createElement('script');var _sm=document.getElementsByTagName('script')[0];if(G.o!=0){var _A=G.val[G.o-1];var _G=(_A[0]).substr(0,_A[0].indexOf('.'));var _C=(_A[7]!='0')?(_A[2]):_A[3];var _U=(_A[5]).replace(/\,/g,'_');_sc.src=(location.protocol.indexOf('http')==0?location.protocol:'http:')+'//cr.acecounter.com/Web/AceCounter_'+_C+'.js?gc='+_A[2]+'&py='+_A[4]+'&gd='+_G+'&gp='+_A[1]+'&up='+_U+'&rd='+(new Date().getTime());_sm.parentNode.insertBefore(_sc,_sm);return _sc.src;}})();
+	}
+</script>
+
+	<script>
+		if (document.location.protocol == 'http:') {
+			document.location.href = document.location.href.replace('http:', 'https:');
+		}
+	</script>
+
+		<footer id="footer">
+			<div class="inner">
+				<ul class="ftInfo flex">
+					<li><a href="/htmlpage/privacy">개인정보처리방침</a></li>
+					<li><a href="/htmlpage/policy">이용약관</a></li>
+					<li><a href="/contact/list">문의처</a></li>
+				</ul>
+				
+				<div class="snsBox flex">
+					<span class="copyright">Copyright©2023 KT&G Corp.All Rights Reserved.</span>
+					<div class="snsWrap flex">
+						<a href="https://www.facebook.com/ssmadang" target="_blank" class="ico_facebook">페이스북</a>
+						<a href="https://twitter.com/ssmadang" target="_blank" class="ico_twitter">트위터</a>
+						<a href="https://blog.naver.com/kssmadang" target="_blank" class="ico_blog">블로그</a>
+						<a href="https://www.instagram.com/ssmadang.official/" target="_blank" class="ico_insta">인스타그램</a>
+						<a href="https://www.youtube.com/user/ssmadang" target="_blank" class="ico_youtube">유튜브</a>
+					</div>
+				</div>
+				
+				<div class="ftMenu flex">
+					<div class="drop_down">
+						<div class="selected">
+							<a href="javascript:void(0)"><span>패밀리 사이트 바로가기</span></a>
+						</div>
+						<div class="options">
+							<ul>
+								<li><a href="https://www.ktng.com/" target="_blank">KT&G<span class="value">0</span></a></li>
+								<li><a href="https://www.sangsangplanet.com/" target="_blank">KT&G 상상플래닛<span class="value">1</span></a></li>
+								<li><a href="https://www.ktngwelfare.org/main" target="_blank">KT&G 복지재단<span class="value">2</span></a></li>
+								<li><a href="https://scholarship.ktngtogether.com/" target="_blank">KT&G 장학재단<span class="value">3</span></a></li>
+							</ul>
+						</div>
+					</div>
+					
+					<ul class="ftArea flex">
+						<li>
+							<a href="javascript:void(0);" class="name">홍대</a>
+							<div class="layer">
+								<p>
+									<a href="tel:023306200">TEL. 02-330-6200</a><br>
+									컴퍼니에스에스(주)<br>
+									서울시 마포구 어울마당로 65<br>
+									대표자 김준<br>
+									사업자등록번호 105-87-65750<br>
+									통신판매업신고 2012-서울마포-0105
+								</p>
+							</div>
+						</li>
+						<li>
+							<a href="javascript:void(0);" class="name">논산</a>
+							<div class="layer">
+								<p>
+									<a href="tel:0417346984">TEL. 041-734-6984</a><br>
+									컴퍼니에스에스(주) 논산 수련원<br>
+									충청남도 논산시 상월면 한천길 15-20<br>
+									대표자 김준<br>
+									사업자등록번호 308-85-11408<br>
+									통신판매업신고 2014-충남논산-0041<br><br>
+									<a href="tel:0417346980">TEL. 041-734-6980</a><br>
+									컴퍼니에스에스(주)논산 아트캠핑빌리지<br>
+									충청남도 논산시 상월면 한천길 15-11<br>
+									대표자 김준<br>
+									사업자등록번호 557-85-00105<br>
+									통신판매업신고 2014-충남논산-0041
+								</p>
+							</div>
+						</li>
+						<li>
+							<a href="javascript:void(0);" class="name">춘천</a>
+							<div class="layer">
+								<p>
+									<a href="tel:0338183200">TEL. 033-818-3200</a><br>
+									컴퍼니에스에스(주) 춘천 아트센터<br>
+									강원도 춘천시 스포츠타운길 399번길 25<br>
+									대표자 김준<br>
+									사업자등록번호 221-85-17600<br>
+									통신판매업신고 2016-강원춘천-0293<br><br>
+									<a href="tel:0338184200">TEL. 033-818-4200</a><br>
+									컴퍼니에스에스(주) 춘천 스테이<br>
+									강원도 춘천시 스포츠타운길 399번길 22<br>
+									대표자 김준<br>
+									사업자등록번호 221-85-17594<br>
+									통신판매업신고 2014-강원춘천-0093<br><br>
+									<a href="https://www.tripadvisor.co.kr/Hotel_Review-g608520-d6816706-Reviews-KT_G_Sangsangmadang_Chuncheon_Stay-Chuncheon_Gangwon_do.html" target="_blank">
+										<img src="/resources/images/tripadvisor.svg" alt="tripadvisor">
+									</a>
+								</p>
+							</div>
+						</li>
+						<li>
+							<a href="javascript:void(0);" class="name">대치</a>
+							<div class="layer">
+								<p>
+									<a href="tel:0234044311">TEL. 02-3404-4311</a><br>
+									컴퍼니에스에스(주) 강남<br>
+									서울시 강남구 영동대로 416, 3층<br>
+									대표자 김준<br>
+									사업자등록번호 323-85-00569<br>
+									통신판매업신고 2012-서울마포-0105
+								</p>
+							</div>
+						</li>
+						<li>
+							<a href="javascript:void(0);" class="name">부산</a>
+							<div class="layer">
+								<p>
+									<a href="tel:0518095555">TEL. 051-809-5555</a><br>
+									(주)유니원 상상마당부산<br />
+									부산광역시 부산진구 서면로 39 (부전동, KT&G 상상마당 부산)<br />
+									대표자 박지광<br />
+									사업자등록번호 539-81-03047
+								</p>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<input type="text" id="urlData" style="position:absolute;top:-9999em;" value="">
+			</div>
+			
+			<div class="btntop">
+			  <button type="button" id="TopMove" title="상단으로">
+			    <span class="btn_top">상단으로</span>
+			  </button>
+			</div>
+		</footer>
+	</body>
+</html>
+
+
+</div>

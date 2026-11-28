@@ -1,0 +1,2280 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+    var dfhI18n = {
+        saveTemporarily: '임시저장',
+        delTempData: '임시저장 삭제',
+        loadTempData: '임시저장 불러오기',
+        noTempSavedData: '임시저장된 데이터가 없습니다.',
+        existTempSavedData: '{0}에 저장된 데이터가 존재합니다.',
+        required: '반드시 입력되어야 합니다.',
+        inputOnlyNum: '숫자만 입력가능합니다.',
+        inputValidEmail: 'Email 형식에 맞게 기입하십시오.',
+        rangeLength: '{0} 글자 이상, {1} 글자 이하로 입력 해 주십시오.',
+        emailRgx : !/^([\w-\.]+@([\w-]+\.)+[\w-]{2,})?$/i,
+        emailRgxMsg : '올바른 E-mail 형식을 입력해주세요.',
+        idRgx: /[^a-z0-9-_@!*$#\.]/g,
+        idRgxMsg : '아이디는 영문 소문자와 숫자, 사용가능한 특수문자만 입력 할 수 있습니다.\n(사용가능 특수문자: -, _, @, !, *, $, #, .)',
+        idLength : [3,200],
+        idLengthMsg : '아이디는 최소 3자에서 200자 사이로 입력해주세요.',
+        idCheckSuccessMsg : '사용 가능한 아이디입니다.',
+        idCheckErrorMsg : '<안내>\n이미 등록된 사업자 등록번호 입니다.\n사무국에 문의 바랍니다.\n(E-mail. kes@gokea.org / Tel. 02-6388-6063~7)'
+    }
+</script>
+
+
+
+
+<meta property="og:locale" content="ko_KR">
+<meta itemprop="inLanguage" content="ko-kr">
+<meta name="resource-type" content="website">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+
+
+
+<meta property="og:site_name" content="[KES 2027 한국전자전]" />
+
+	
+
+
+<!-- 폰트어썸(fontawesome) 버전 변경시 아래 파일 수정하면 됨 -->
+<link href="/css/v6/all.css" rel="stylesheet">
+<link href="/css/v6/sharp-light.min.css" rel="stylesheet">
+<link href="/css/v6/sharp-regular.min.css" rel="stylesheet">
+<link href="/css/v6/sharp-solid.min.css" rel="stylesheet">
+<link href="/css/v6/sharp-thin.min.css" rel="stylesheet">
+<meta name="format-detection" content="telephone=no">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script id="mhVisitLog" src="/jsp/fair/js/visitLog.js?v=20261120b" data-q="e=700&amp;m=&amp;p=/fairDash.do&amp;pt=home&amp;hl=KOR&amp;li=0&amp;nf=0&amp;w=0" defer></script>
+
+
+
+<!-- [if IE]>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=Array.prototype.find,Promise,Object.assign"></script>
+<![endif]-->
+
+
+
+<title>[KES 2027 한국전자전]</title>
+
+<meta name="twitter:card" content="summary" />
+
+<meta name="title" content="[KES 2027 한국전자전]">
+<meta property="og:title" content="[KES 2027 한국전자전]">
+<meta name="twitter:title" content="[KES 2027 한국전자전]">
+<meta itemprop="name" content="[KES 2027 한국전자전]">
+<meta property="nate:title" content="[KES 2027 한국전자전]">
+
+<meta property="og:url" content="https://kes2026.micehub-gov.com/fairDash.do?hl=KOR">
+<meta name="twitter:url" content="https://kes2026.micehub-gov.com/fairDash.do?hl=KOR">
+<meta itemprop="url" content="https://kes2026.micehub-gov.com/fairDash.do?hl=KOR">
+<link rel="canonical" id="canonical" href="https://kes2026.micehub-gov.com/fairDash.do?hl=KOR">
+<meta property="nate:url" content="https://kes2026.micehub-gov.com/fairDash.do?hl=KOR">
+
+<meta http-equiv="content-language" content="ko">
+
+
+
+
+
+
+
+
+    <meta name="image" content="https://kes2026.micehub-gov.com">
+    <meta name="twitter:image " content="https://kes2026.micehub-gov.com">
+    <meta property="og:image" content="https://kes2026.micehub-gov.com">
+    <meta itemprop="image" content="https://kes2026.micehub-gov.com">
+    <meta itemprop="thumbnailUrl" content="https://kes2026.micehub-gov.com">
+    <link rel="image_src" link="https://kes2026.micehub-gov.com">
+
+
+<script type="application/ld+json">
+    {
+        "@context" : "https://schema.org",
+        "@type" : "WebSite",
+        "name" : "[KES 2027 한국전자전]",
+        "url" : "https://kes2026.micehub-gov.com"
+    }
+</script>
+
+
+
+<link rel="stylesheet" type="text/css" href="/jsp/fair/css/normalize.css" />
+
+<link rel="stylesheet" type="text/css" href="/jsp/fair/css/layout.css" />
+<link rel="stylesheet" type="text/css" href="/home/2026/kes2026/style.css?v=20191008_1915" />
+<link rel="stylesheet" href="/jsp/js/vue.js/hooper.css">
+<script type="text/javascript" src="/jsp/js/jquery-latest.min.js"></script>
+<script type="text/javascript" src="/_master/js/jquery-ui-1.10.2.custom.min.js"></script>
+<script type="text/javascript" src="/jsp/fair/js/common.js"></script>
+<script type="text/javascript" src="/_master/js/attach_common.js"></script>
+<script src="/jsp/js/vue.js/vue.js"></script>
+<script src="/jsp/js/vue.js/hooper.min.js"></script>
+<script src="https://unpkg.com/core-js-bundle@3.1.4/index.js"></script>
+<script src="https://unpkg.com/regenerator-runtime@0.13.3/runtime.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+
+// window.history.replaceState({}, '', window.location.origin + '/');
+
+function f_goBbs(i_fairmenuIdx,i_bbsIdx){
+	location.href="./fairBbs.do?FAIRMENU_IDX="+i_fairmenuIdx+"&BBS_IDX="+i_bbsIdx;
+}
+function f_goBbsView(i_fairmenuIdx, i_boardIdx){
+	location.href="./fairBbs.do?selAction=view&FAIRMENU_IDX="+i_fairmenuIdx+"&BOARD_IDX="+i_boardIdx;
+}
+function f_goCfairList(i_fairmenuIdx){
+	var frm = document.forms.cfairSearch;
+
+	frm.selPageNo.value = "1";
+	frm.method = "post";
+	frm.target = "";
+	frm.action = "./fairCorpList.do?FAIRMENU_IDX="+i_fairmenuIdx;
+	frm.submit();
+}
+function f_down(i_path, i_fName){
+	var frm = document.forms.frmMenu;
+
+	frm.selAction.value = "";
+	frm.fileURL.value = i_path;
+	frm.fileName.value = i_fName;
+
+	frm.method = "post";
+	frm.target = "_blank";
+	frm.action = "/jsp/download_common.jsp";
+	frm.submit();
+}
+function f_down_DashDesign(i_path, i_fName){
+	var frm = document.forms.frmDown;
+	frm.fileURL.value = i_path;
+
+	frm.fileName.value = i_fName;
+	frm.selAction.value = "";
+	frm.method = "post";
+	frm.target = "hidFrame";
+	frm.action = "/jsp/download_common.jsp";
+	frm.submit();
+}
+
+function f_down_member(i_path, i_fName){
+	
+
+	
+	alert("로그인후 다운로드 가능합니다.");
+	
+	location.href="./fairLogin.do?hl=KOR";
+	
+}
+//]]>
+
+
+</script>
+</head>
+
+<body class="KOR fair_dash main_page logged_out">
+
+<iframe name="hidFrame" id="hidFrame" style="display:none;border:0;" width="0" height="0" frameborder="0"></iframe>
+<form name="frmDown" method="post" target="">
+<input type="hidden" name="selAction" value="" />
+<input type="hidden" name="fileURL" value="" />
+<input type="hidden" name="fileName" value="" />
+
+</form>
+
+<form name="frmMenu" method="post" target="">
+<input type="hidden" name="selAction" value=""/>
+<input type="hidden" name="EX_IDX" value=""/>
+<input type="hidden" name="hl" value="KOR"/>
+<input type="hidden" name="FAIRMENU_IDX" value=""/>
+<input type="hidden" name="fileName" value=""/>
+<input type="hidden" name="fileURL" value=""/>
+</form>
+<div id="wrap">
+	<div id="userseqence-info"  style="display:none"></div>
+
+
+<!-- header.s -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+.cookiePop {position:fixed; top:0; left:0; width:100%; height:100%; z-index:9999;}
+.cookiePop .cPopBg {position:absolute; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,.7); filter:alpha(opacity=50);}
+.cookiePop .cPopWrap {position:absolute; top:50%; left:50%; display:block; width:60%; padding:2.2rem; background-color:#fff; transform:translate(-50%,-50%);}
+.cookiePop .cPopConts {overflow:hidden; color:#666; font-size:0;}
+.cookiePop .cPopConts .cPopTxt {display:inline-block; width:85%; font-size:1.15rem; line-height:1.4; vertical-align:middle; word-break:keep-all; word-wrap:break-word;}
+.cookiePop .cPopConts .lineTxt {font-weight:500; text-decoration:underline;}
+.cookiePop .cPopConts .cPopBtn {display:inline-block; width:15%; vertical-align:middle; text-align:right;}
+.cookiePop a.cPopClose {display:inline-block; padding:1rem 3rem; border:1px solid #313131; box-sizing:border-box; font-size:1.1rem; color:#fff; background-color:#313131; transition:background-color .2s;}
+.cookiePop a.cPopClose:hover {color:#000; background-color:#fff;}
+
+@media only screen and (max-width:1510px){
+	.cookiePop .cPopConts .cPopTxt, .cookiePop .cPopConts .cPopBtn {display:block; width:auto;}
+	.cookiePop .cPopConts .cPopBtn {margin-top:1.5rem; text-align:center;}
+}
+
+@media only screen and (max-width:760px){
+	.cookiePop .cPopWrap {overflow-y: scroll; width: 90% !important; max-height: 90%; padding: 1.5rem !important;}
+	.cookiePop a.cPopClose {padding: 1rem;}
+}
+
+</style>
+
+<script type="text/javascript" src="/jsp/fair/corp/js/corp_common.js"></script>
+<script type="text/javascript" src="/jsp/js/jquery.cookie.js"></script>
+<script type="text/javascript" src="/_master/js/api_server.js"></script>
+<script type="text/javascript">
+function f_goCorpList_chk(){
+
+	alert('참가신청 및 로그인후 가능합니다.');//참가신청 후 이용바랍니다.
+
+}
+function f_send_newsletter(){
+
+	var pattern = new RegExp("[A-z0-9._%+-]+@[A-z0-9.-]+\\.[A-z]{2,}");
+	var email = $("input[name='EMAIL']").val();
+	var name = $("input[name='NEWSLETTER_NAME']").val();
+	var company = $("input[name='COMPANY']").val();
+	var tel = $("input[name='NEWSLETTER_TEL']").val();
+
+	if(!pattern.test($('INPUT[name=EMAIL]').val())) {
+		alert('잘못된 이메일 형식입니다.');
+		return;
+	}
+	var dataObj = {
+		EX_IDX: '700',
+		HOMEPAGE_LANG: 'KOR',
+		EMAIL: email,
+		NAME: name,
+		TEL: tel,
+		COMPANY: company
+	};
+
+	$.ajax("/api/v1/front/subscripter/regist/", {
+		type: "post"
+		, dataType: "json"
+		, data: dataObj
+		, success: function(d){
+			if(d.result == 'success') {
+				alert('성공적으로 등록되었습니다.');
+			} else {
+				alert("Registration is failed");
+			}
+		}
+		, error: function(){
+			alert("server error!");
+		}
+	});
+}
+function f_goLibrary(){
+	var frm = document.forms.frmRegist;
+	frm.target = "";
+	frm.method = "post";
+	frm.action = $("#Library").val();
+	frm.submit();
+}
+
+
+</script>
+
+
+
+<!-- ex_top {{ --><!-- }} -->
+<!-- incBodyCommon S.-->
+
+
+
+
+
+
+
+
+<!-- incBodyCommon E.-->
+
+<div id="header_wrap"
+	 class="  ">
+<div id="header">
+	<h1 id="logo">
+		
+		<a href="/fairDash.do?hl=KOR"
+		   title="[KES 2027 한국전자전]">
+			<!-- ex_logo {{ --><img src="/home/2026/kes2026/image/logo_w_2027.png" alt="">
+<!-- }} -->
+		</a>
+
+		
+	</h1>
+
+	<!-- DashContent.header -->
+	<!-- ifac, aphrs start -->
+	
+		<!-- ex_header {{ --><script>
+	(function () {
+		// -----------------------------------------------------------
+		// 설정
+		// -----------------------------------------------------------
+		var LANG_OPTIONS = [
+			{ code: 'KOR', label: 'KOR' },
+			{ code: 'ENG', label: 'ENG' }
+		];
+
+		var MESSAGES = [
+			<!--'<a href="#">KES 2026(한국전자전) 10. 13(화) – 16(금) / COEX A, B 개최 </a>',-->
+			<!--'<a href="#">조기신청 10% 할인 마감 · 5/31까지</a>',-->
+			<!--'<a href="#">KES Innovation Awards 접수 중 - 8/14까지 </a>'-->
+		];
+		var MESSAGE_INTERVAL = 4500;
+
+		/* 스크롤 시 솔리드 전환에 사용할 어두운 버전 로고 URL */
+		var LOGO_SCROLLED_URL = '/home/2026/kes2026/image/logo_b_2027.png';
+		/* 솔리드로 전환되는 스크롤 임계값 (px) */
+		var SCROLL_SOLID_THRESHOLD = 200;
+
+		/* ---------------------------------------------------------
+			 1) GNB util (햄버거)
+			 --------------------------------------------------------- */
+		function initGnbUtil() {
+			var header = document.getElementById('header');
+			if (!header) return;
+			if (document.getElementById('gnb_util')) return;
+
+			var util = document.createElement('div');
+			util.id = 'gnb_util';
+			util.innerHTML = ''
+				+ '<button type="button" class="menu-toggle" aria-label="메뉴 열기" aria-expanded="false">'
+				+ '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" '
+				+ 'stroke-linecap="round" aria-hidden="true">'
+				+ '<path d="M3 6h18M3 12h18M3 18h18"/>'
+				+ '</svg>'
+				+ '</button>';
+			header.appendChild(util);
+
+			var wrap = document.getElementById('header_wrap');
+			var toggleBtn = util.querySelector('.menu-toggle');
+
+			toggleBtn.addEventListener('click', function () {
+				var isOpen = wrap.classList.toggle('is-menu-open');
+				this.setAttribute('aria-expanded', String(isOpen));
+				this.setAttribute('aria-label', isOpen ? '메뉴 닫기' : '메뉴 열기');
+				if (!isOpen) closeAllAccordion();
+			});
+
+			var mq = window.matchMedia('(min-width: 901px)');
+			var handleMq = function (e) {
+				if (e.matches && wrap.classList.contains('is-menu-open')) {
+					wrap.classList.remove('is-menu-open');
+					toggleBtn.setAttribute('aria-expanded', 'false');
+					toggleBtn.setAttribute('aria-label', '메뉴 열기');
+					closeAllAccordion();
+				}
+			};
+			if (mq.addEventListener) mq.addEventListener('change', handleMq);
+			else if (mq.addListener) mq.addListener(handleMq);
+		}
+
+		function closeAllAccordion() {
+			var items = document.querySelectorAll('#gnb > li.is-open');
+			Array.prototype.forEach.call(items, function (li) {
+				li.classList.remove('is-open');
+			});
+		}
+
+		/* ---------------------------------------------------------
+			 2) 상단 회전 공지
+			 --------------------------------------------------------- */
+		function initPreheaderMessages() {
+			if (!MESSAGES.length) return;
+			var ul = document.querySelector('#topMenu > ul');
+			if (!ul) return;
+			if (ul.querySelector('.preheader__messages')) return;
+
+			var li = document.createElement('li');
+			li.className = 'preheader__messages';
+			li.setAttribute('aria-live', 'polite');
+			li.setAttribute('aria-label', '주요 공지');
+
+			MESSAGES.forEach(function (html, idx) {
+				var msg = document.createElement('div');
+				msg.className = 'preheader__msg' + (idx === 0 ? ' active' : '');
+				msg.innerHTML = html;
+				li.appendChild(msg);
+			});
+
+			ul.insertBefore(li, ul.firstChild);
+
+			if (MESSAGES.length < 2) return;
+			var msgs = li.querySelectorAll('.preheader__msg');
+			var idx = 0;
+			var timer = setInterval(rotate, MESSAGE_INTERVAL);
+
+			function rotate() {
+				msgs[idx].classList.remove('active');
+				idx = (idx + 1) % msgs.length;
+				msgs[idx].classList.add('active');
+			}
+
+			li.addEventListener('mouseenter', function () { clearInterval(timer); });
+			li.addEventListener('mouseleave', function () { timer = setInterval(rotate, MESSAGE_INTERVAL); });
+		}
+
+		/* ---------------------------------------------------------
+			 3-a) tnb_lang 보장
+			 --------------------------------------------------------- */
+		function ensureLangBlock() {
+			var existing = document.querySelector('#topMenu .tnb_lang .lang');
+			if (existing) return existing;
+			var ul = document.querySelector('#topMenu > ul');
+			if (!ul) return null;
+
+			var params = new URLSearchParams(window.location.search);
+			var currentHl = (params.get('hl') || 'KOR').toUpperCase();
+
+			var li = document.createElement('li');
+			li.className = 'tnb_lang';
+			var dl = document.createElement('dl');
+			dl.className = 'lang';
+
+			var labelSpan = document.createElement('span');
+			labelSpan.textContent = '언어';
+			dl.appendChild(labelSpan);
+
+			LANG_OPTIONS.forEach(function (l) {
+				var url = new URL(window.location.href);
+				url.searchParams.set('hl', l.code);
+				var a = document.createElement('a');
+				a.href = url.pathname + url.search + url.hash;
+				a.className = l.code + (currentHl === l.code ? ' current_language' : '');
+				a.title = l.label;
+				var i = document.createElement('i');
+				i.textContent = l.label;
+				a.appendChild(i);
+				dl.appendChild(a);
+			});
+
+			li.appendChild(dl);
+			ul.appendChild(li);
+			return dl;
+		}
+
+		/* ---------------------------------------------------------
+			 3-b) 언어 드롭다운
+			 --------------------------------------------------------- */
+		function initLangDropdown() {
+			var lang = ensureLangBlock();
+			if (!lang || lang.classList.contains('is-dropdown')) return;
+
+			var links = lang.querySelectorAll('a');
+			if (links.length === 0) return;
+
+			var currentLink = lang.querySelector('a.current_language') || links[0];
+			var match = currentLink.className.match(/\b([A-Z]{3})\b/);
+			var currentLabel = match ? match[1] : (currentLink.textContent.trim() || 'KOR');
+
+			var menu = document.createElement('div');
+			menu.className = 'lang-menu';
+
+			// 코드(KOR/ENG/JPN/CHN…) → label 빠른 조회용 맵
+			var labelMap = {};
+			LANG_OPTIONS.forEach(function (o) { labelMap[o.code] = o.label; });
+
+			Array.prototype.forEach.call(links, function (a) {
+				// a.className 에서 언어 코드 추출 (예: "KOR current_language" → "KOR")
+				var codeMatch = a.className.match(/\b([A-Z]{3})\b/);
+				var code = codeMatch ? codeMatch[1] : null;
+				var label = (code && labelMap[code]) ? labelMap[code] : (code || a.textContent.trim());
+
+				// <i> 안의 풀네임("Korean", "English") → "KOR" / "ENG"로 교체
+				var i = a.querySelector('i');
+				if (i) {
+					i.textContent = label;
+				} else {
+					a.textContent = label;
+				}
+				// title 속성도 동일하게 정리 (스크린리더/툴팁)
+				a.title = label;
+
+				menu.appendChild(a);
+			});
+
+			var toggle = document.createElement('button');
+			toggle.type = 'button';
+			toggle.className = 'lang-toggle';
+			toggle.setAttribute('aria-expanded', 'false');
+			toggle.setAttribute('aria-haspopup', 'true');
+			toggle.setAttribute('aria-label', '언어 선택');
+			toggle.innerHTML =
+				'<span class="lang-toggle__label">' + currentLabel + '</span>'
+				+ '<svg class="lang-toggle__caret" viewBox="0 0 12 8" aria-hidden="true">'
+				+ '<path d="M1 1l5 5 5-5" fill="none" stroke="currentColor" '
+				+ 'stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>'
+				+ '</svg>';
+
+			lang.classList.add('is-dropdown');
+			lang.appendChild(toggle);
+			lang.appendChild(menu);
+
+			toggle.addEventListener('click', function (e) {
+				e.stopPropagation();
+				var open = lang.classList.toggle('is-open');
+				toggle.setAttribute('aria-expanded', String(open));
+			});
+
+			document.addEventListener('click', function (e) {
+				if (lang.classList.contains('is-open') && !lang.contains(e.target)) {
+					lang.classList.remove('is-open');
+					toggle.setAttribute('aria-expanded', 'false');
+				}
+			});
+
+			document.addEventListener('keydown', function (e) {
+				if (e.key === 'Escape' && lang.classList.contains('is-open')) {
+					lang.classList.remove('is-open');
+					toggle.setAttribute('aria-expanded', 'false');
+					toggle.focus();
+				}
+			});
+		}
+
+		/* ---------------------------------------------------------
+			 4) GNB 아코디언 (모바일 드로어)
+			 --------------------------------------------------------- */
+		function initGnbAccordion() {
+			var gnb = document.getElementById('gnb');
+			var wrap = document.getElementById('header_wrap');
+			if (!gnb || !wrap) return;
+
+			var items = gnb.children;
+
+			Array.prototype.forEach.call(items, function (li) {
+				var sub = null, topA = null;
+				for (var i = 0; i < li.children.length; i++) {
+					var ch = li.children[i];
+					if (ch.classList && ch.classList.contains('gnb_sub_wrap')) sub = ch;
+					if (ch.tagName === 'A') topA = ch;
+				}
+				if (!sub || !topA) return;
+
+				li.classList.add('has-sub');
+
+				topA.addEventListener('click', function (e) {
+					if (!wrap.classList.contains('is-menu-open')) return;
+					e.preventDefault();
+					var willOpen = !li.classList.contains('is-open');
+					Array.prototype.forEach.call(items, function (other) { other.classList.remove('is-open'); });
+					if (willOpen) li.classList.add('is-open');
+				});
+			});
+		}
+
+		/* ---------------------------------------------------------
+			 5) Header scroll behavior (transparent → solid)
+					- 페이지에 .hero가 있을 때만 작동 (body.is-hero-page 부여)
+					- 스크롤 위치에 따라 #header_wrap.is-solid 토글
+					- 솔리드 상태에서 로고 src를 LOGO_SCROLLED_URL로 교체
+			 --------------------------------------------------------- */
+		function initHeaderScrollSolid() {
+			var wrap = document.getElementById('header_wrap');
+			if (!wrap) return;
+
+			// .hero가 없으면 기본 솔리드 상태 그대로 유지 (서브 페이지)
+			var hero = document.querySelector('.hero');
+			if (!hero) return;
+
+			document.body.classList.add('is-hero-page');
+
+			// 로고 swap 준비
+			var logoImg = document.querySelector('#header #logo img');
+			var logoDefault = logoImg ? logoImg.getAttribute('src') : null;
+			// 화이트 버전 로고 프리로드 (스크롤 시 깜빡임 방지)
+			if (LOGO_SCROLLED_URL) {
+				var preload = new Image();
+				preload.src = LOGO_SCROLLED_URL;
+			}
+
+			var lastSolid = null;
+
+			function update() {
+				var solid = window.scrollY > SCROLL_SOLID_THRESHOLD;
+				if (solid === lastSolid) return; // 변화 없을 땐 DOM 변경 스킵
+				lastSolid = solid;
+
+				wrap.classList.toggle('is-solid', solid);
+
+				if (logoImg && logoDefault) {
+					logoImg.src = solid ? LOGO_SCROLLED_URL : logoDefault;
+				}
+			}
+
+			window.addEventListener('scroll', update, { passive: true });
+			update();
+		}
+
+		/* ---------------------------------------------------------
+	 6) sub_visual 안으로 com_subtitle 이동
+			- 형제 구조(.sub_visual + .com_subtitle)를
+				부모-자식 구조(.sub_visual > .com_subtitle)로 변경
+	 --------------------------------------------------------- */
+		function initSubVisualSubtitle() {
+			var subVisual = document.querySelector('.sub_visual');
+			if (!subVisual) return;
+
+			// 이미 안에 들어가 있으면 종료
+			if (subVisual.querySelector('.com_subtitle')) return;
+
+			// .sub_visual 밖(형제 등)에 있는 .com_subtitle 탐색
+			var subtitle = document.querySelector('.com_subtitle');
+			if (!subtitle) return;
+
+			// .sub_visual 자식으로 이동
+			subVisual.appendChild(subtitle);
+		}
+
+		/* ---------------------------------------------------------
+			 공통 부트스트랩
+			 --------------------------------------------------------- */
+		function init() {
+			initGnbUtil();
+			initPreheaderMessages();
+			initLangDropdown();
+			initGnbAccordion();
+			initHeaderScrollSolid();
+			initSubVisualSubtitle();
+		}
+
+		if (document.readyState === 'loading') {
+			document.addEventListener('DOMContentLoaded', init);
+		} else {
+			init();
+		}
+
+		
+	})();
+</script>
+
+<script src="/home/2026/kes2026/KES2026_sub.js" defer=""></script>
+<!-- }} -->
+	
+	<!-- ifac, aphrs end -->
+
+	
+		<!-- ex_header_static {{ --><!-- }} -->
+	
+	
+	<!-- TNB.s -->
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="topMenu">
+	<ul>
+		
+		
+			<li class="tnb_login"><a href="/fairLogin.do
+" title="로그인"><span data-html="N" data-key="common.login" lang="ko" class="i18n common login">로그인</span></a></li>
+			
+			
+				<li class="tnb_sign" ><a href="/fairCorp2.do?FAIRMENU_IDX=5948&hl=KOR" title="회원가입"><span data-html="N" data-key="common.signup" lang="ko" class="i18n common signup">회원가입</span></a></li>
+			
+		
+		
+		
+			<li class="tnb_sitemap"><a href="/fairSitemap.do?hl=KOR" title="사이트맵"><span data-html="N" data-key="common.sitemap" lang="ko" class="i18n common sitemap">사이트맵</span></a></li>
+		
+		
+		<li class="tnb_lang">
+			<dl class="lang">
+				<span><span data-html="N" data-key="common.language" lang="ko" class="i18n common language">언어</span></span>
+				
+				<!-- <span data-html="N" data-key="common.choose_language.kor" lang="ko" class="i18n common choose_language kor">?700-KOR-common.choose_language.kor</span> -->
+				<a href="./fairDash.do?hl=KOR" class="KOR current_language" title="Korean"><img src="/jsp/fair/img/common/top_language_icon_KOR.png" alt="" /><i>Korean</i></a>
+				
+				<!-- <span data-html="N" data-key="common.choose_language.eng" lang="ko" class="i18n common choose_language eng">?700-KOR-common.choose_language.eng</span> -->
+				<a href="./fairDash.do?hl=ENG" class="ENG " title="English"><img src="/jsp/fair/img/common/top_language_icon_ENG.png" alt="" /><i>English</i></a>
+				
+				
+			</dl>
+		</li>
+		
+	</ul>
+	
+</div>
+
+<script>
+	
+	
+</script>
+
+	<!-- TNB.e -->
+	<div id="gnb_wrap" class="">
+		<ul id="gnb"><li class="fair24341"><a href="/fairContents.do;jsessionid=8DB8F1BFF3B73C27851966F8F3E1E6E3?FAIRMENU_IDX=24342&hl=KOR" >KES</a>
+				<div class="gnb_sub_wrap">
+	<ul class="gnb_sub">
+		<span class="nav-bullet"><img src="/home/2026/kes2026/fair/img/common/gnb_sub.png" class="bgM" /></span>
+			<li class="fair24342"><a href="/fairContents.do;jsessionid=8DB8F1BFF3B73C27851966F8F3E1E6E3?FAIRMENU_IDX=24342&hl=KOR" >KES 개요</a></li>
+			<li class="fair24369"><a href="/fairContents.do;jsessionid=8DB8F1BFF3B73C27851966F8F3E1E6E3?FAIRMENU_IDX=24369&hl=KOR" >전시 주제</a></li>
+			<li class="fair24371"><a href="/fairContents.do;jsessionid=8DB8F1BFF3B73C27851966F8F3E1E6E3?FAIRMENU_IDX=24371&hl=KOR" >지난 전시회</a></li>
+	</ul>
+</div><li class="fair24373"><a href="/fairProgram.do;jsessionid=8DB8F1BFF3B73C27851966F8F3E1E6E3?FAIRMENU_IDX=24374&selAction=single_page&program_idx=164&hl=KOR" >프로그램</a>
+				<div class="gnb_sub_wrap">
+	<ul class="gnb_sub">
+		<span class="nav-bullet"><img src="/home/2026/kes2026/fair/img/common/gnb_sub.png" class="bgM" /></span>
+			<li class="fair24374"><a href="/fairProgram.do;jsessionid=8DB8F1BFF3B73C27851966F8F3E1E6E3?FAIRMENU_IDX=24374&selAction=single_page&program_idx=164&hl=KOR" >오프닝 키노트</a></li>
+			<li class="fair24375"><a href="/fairContents.do;jsessionid=8DB8F1BFF3B73C27851966F8F3E1E6E3?FAIRMENU_IDX=24375&hl=KOR" >KES Awards</a></li>
+			<li class="fair24376"><a href="/fairContents.do;jsessionid=8DB8F1BFF3B73C27851966F8F3E1E6E3?FAIRMENU_IDX=24376&hl=KOR" >KES Match</a></li>
+			<li class="fair24377"><a href="/fairProgram.do;jsessionid=8DB8F1BFF3B73C27851966F8F3E1E6E3?FAIRMENU_IDX=24377&selAction=single_page&program_idx=172&hl=KOR" >KES 컨퍼런스</a></li>
+			<li class="fair24378"><a href="/fairContents.do;jsessionid=8DB8F1BFF3B73C27851966F8F3E1E6E3?FAIRMENU_IDX=24378&hl=KOR" >Welcome KES</a></li>
+	</ul>
+</div><li class="fair24379"><a href="/fairOnline.do;jsessionid=8DB8F1BFF3B73C27851966F8F3E1E6E3?selAction=single_page&SYSTEM_IDX=232&FAIRMENU_IDX=24379&hl=KOR#/" >참가업체 검색</a>
+				<li class="fair24346"><a href="/fairContents.do;jsessionid=8DB8F1BFF3B73C27851966F8F3E1E6E3?FAIRMENU_IDX=24347&hl=KOR" >참가업체</a>
+				<div class="gnb_sub_wrap">
+	<ul class="gnb_sub">
+		<span class="nav-bullet"><img src="/home/2026/kes2026/fair/img/common/gnb_sub.png" class="bgM" /></span>
+			<li class="fair24347"><a href="/fairContents.do;jsessionid=8DB8F1BFF3B73C27851966F8F3E1E6E3?FAIRMENU_IDX=24347&hl=KOR" >참가안내</a></li>
+			<li class="fair24356 blocked"><a href="javascript: alert('준비중입니다.')" >운영 매뉴얼</a></li>
+			<li class="fair24357"><a href="/fairContents.do;jsessionid=8DB8F1BFF3B73C27851966F8F3E1E6E3?FAIRMENU_IDX=24357&hl=KOR" >스폰서십 프로그램</a></li>
+			<li class="fair24358 blocked"><a href="javascript: alert('준비중입니다.')" >참가업체 FAQ</a></li>
+	</ul>
+</div><li class="fair24343"><a href="/fairContents.do;jsessionid=8DB8F1BFF3B73C27851966F8F3E1E6E3?FAIRMENU_IDX=24344&hl=KOR" >참관객</a>
+				<div class="gnb_sub_wrap">
+	<ul class="gnb_sub">
+		<span class="nav-bullet"><img src="/home/2026/kes2026/fair/img/common/gnb_sub.png" class="bgM" /></span>
+			<li class="fair24344"><a href="/fairContents.do;jsessionid=8DB8F1BFF3B73C27851966F8F3E1E6E3?FAIRMENU_IDX=24344&hl=KOR" >참관안내</a></li>
+			<li class="fair24345"><a href="https://fd.sysforu.co.kr/2026/kes/bf/?FAIRMENU_IDX=24345&hl=KOR" >사전등록</a></li>
+			<li class="fair24380"><a href="/fairContents.do;jsessionid=8DB8F1BFF3B73C27851966F8F3E1E6E3?FAIRMENU_IDX=24380&hl=KOR" >참관객 FAQ</a></li>
+	</ul>
+</div><li class="fair24360"><a href="/fairBbs.do;jsessionid=8DB8F1BFF3B73C27851966F8F3E1E6E3?FAIRMENU_IDX=24361&BBS_IDX=3793&hl=KOR" >미디어</a>
+				<div class="gnb_sub_wrap">
+	<ul class="gnb_sub">
+		<span class="nav-bullet"><img src="/home/2026/kes2026/fair/img/common/gnb_sub.png" class="bgM" /></span>
+			<li class="fair24361"><a href="/fairBbs.do;jsessionid=8DB8F1BFF3B73C27851966F8F3E1E6E3?FAIRMENU_IDX=24361&BBS_IDX=3793&hl=KOR" >공지사항</a></li>
+			<li class="fair24381"><a href="/fairBbs.do;jsessionid=8DB8F1BFF3B73C27851966F8F3E1E6E3?FAIRMENU_IDX=24381&BBS_IDX=3798&hl=KOR" >보도자료</a></li>
+			<li class="fair24382"><a href="/fairBbs.do;jsessionid=8DB8F1BFF3B73C27851966F8F3E1E6E3?FAIRMENU_IDX=24382&BBS_IDX=3797&hl=KOR" >뉴스레터</a></li>
+			<li class="fair24362"><a href="/fairBbs.do;jsessionid=8DB8F1BFF3B73C27851966F8F3E1E6E3?FAIRMENU_IDX=24362&BBS_IDX=3794&hl=KOR" >갤러리</a></li>
+	</ul>
+</div>
+		</ul><!--//gnb-->
+	</div>
+	
+
+
+	<input type="hidden" name="Library" id="Library" value="">
+
+</div>
+</div>
+
+
+
+
+
+
+		
+<!-- header e.-->
+
+<!-- ex_main {{ -->
+
+	<!--
+  KES 2026 메인 페이지 본문 마크업
+  - 헤더/푸터는 incHeader.jsp / incFooter.jsp 에서 렌더되므로 여기엔 포함하지 않음
+  - 섹션: Hero → Why → Outcomes → Featured → Newsroom → Partners
+  - 클래스명/data-* 속성은 KES2026_main.html 시안과 동일하게 유지 (CSS/JS 호환)
+  - 이미지 경로는 /home/2026/kes2026/image/ 기준 (실제 파일 업로드 후 확인 필요)
+-->
+
+<main id="main-content">
+
+	<!-- ============ [02] HERO ============ -->
+	<section class="hero" aria-label="KES 2026 인트로">
+		<div class="hero__bg-fallback" aria-hidden="true"></div>
+		<div class="hero__video" aria-hidden="true">
+			<iframe src="https://www.youtube.com/embed/M3zl23ulJBQ?autoplay=1&mute=1&loop=1&playlist=M3zl23ulJBQ"
+				title="KES 2025 하이라이트(홈페이지)" frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+				referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		</div>
+
+		<div class="container">
+			<div class="hero__copy">
+				<!-- <h1 class="hero__title h-display1 reveal">
+					기술을 넘어 현실로,<br />
+					<span class="line2">상상을 넘어 <span class="gradient-text">움직임으로</span></span>
+				</h1> test-->
+				<ul class="hero__meta reveal" data-delay="2">
+					<!-- <li>KES 2026 <span class="sep">|</span> 57th Korea Electronics Show</li>
+					<li>2026.10.13–16</li>
+					<li>COEX Hall A,B</li> -->
+					<li>KES 2027 <span class="sep">|</span> 58th Korea Electronics Show</li>
+					<li>2027.10.12–15 <span class="sep">|</span> COEX</li>
+					<li>2027.10.20–22 <span class="sep">|</span> KINTEX</li>
+				</ul>
+				<div class="hero__actions reveal" data-delay="3">
+					<!-- <a href="/fairCorp2.do?FAIRMENU_IDX=5948&hl=KOR" class="btn btn-primary btn-lg">참가신청 →</a> -->
+					<!-- <a href="https://fd.sysforu.co.kr/2026/kes/bf/index.asp?fd_lang=KOR&" target="_blank"
+						class="btn btn-primary btn-lg">참관 사전등록 →</a> -->
+					<a href="javascript:alert('KES 2027 참가신청은 2026년 12월 오픈 예정입니다.')"
+						class="btn btn-primary btn-lg">참가 신청 →</a>
+				</div>
+			</div>
+
+			<aside class="hero__aside">
+				<!-- <div class="dday reveal" data-delay="4" aria-label="개막까지 남은 시간">
+					<div class="dday__cell">
+						<div class="dday__num tnum" id="dd-d">000</div>
+						<div class="dday__label">Days</div>
+					</div>
+					<div class="dday__cell">
+						<div class="dday__num tnum" id="dd-h">00</div>
+						<div class="dday__label">Hours</div>
+					</div>
+					<div class="dday__cell">
+						<div class="dday__num tnum" id="dd-m">00</div>
+						<div class="dday__label">Min</div>
+					</div>
+					<div class="dday__cell">
+						<div class="dday__num tnum" id="dd-s">00</div>
+						<div class="dday__label">Sec</div>
+					</div>
+				</div> -->
+
+				<div class="hero__promo reveal" data-delay="5" aria-label="KES 2026 주요 안내 배너">
+					<div class="hero__promo__track">
+						<!-- <a href="/fairCorp2.do?FAIRMENU_IDX=5948&hl=KOR" class="hero__promo__slide">
+							<img src="/home/2026/kes2026/image/main_card_img_k_01.png" draggable="false"
+								alt="KES 2026 일반 부스신청 마감 임박 - 자세히 보기" />
+						</a> -->
+						<a href="https://www.ces.tech/press-releases/ces-asia-unveiled-seoul-heads-to-kes-on-the-road-to-ces-2027"
+							class="hero__promo__slide" target="_blank">
+							<img src="/home/2026/kes2026/image/main_card_img_k_03_A.png" draggable="false"
+								alt="KES 2026에서 'CES Asia Unveiled Seoul' 공동 개최" />
+						</a>
+						<!-- <a href="/fairContents.do?FAIRMENU_IDX=24375&hl=KOR" class="hero__promo__slide">
+							<img src="/home/2026/kes2026/image/main_card_img_k_02.png" draggable="false"
+								alt="15th KES Innovation Awards 8/14(금)까지 신청 - 자세히 보기" />
+						</a> -->
+						<a href="/fairBbs.do?selAction=view&FAIRMENU_IDX=24382&BOARD_IDX=77070&BOARD_NO=165&selPageNo=1&hl=KOR" class="hero__promo__slide">
+							<img src="/home/2026/kes2026/image/banner_kor_어워즈.png" draggable="false"
+								alt="제15회 KES 2026 Innovation Awards - 자세히 보기" />
+						</a>
+						<a href="/fairProgram.do?FAIRMENU_IDX=24374&selAction=single_page&program_idx=164&hl=KOR#/" class="hero__promo__slide">
+							<img src="/home/2026/kes2026/image/banner_kor_오프닝 키노트.png" draggable="false"
+								alt="KES 2026 Opening Keynote l CES Asia Unveiled Seoul 10.13(화) 14:00 COEX 4층 401호 - 자세히 보기" />
+						</a>
+						<!-- <a href="https://kes2026.on.viskits.ai" class="hero__promo__slide" target="_blank">
+							<img src="/home/2026/kes2026/image/banner_eng_KES x VISKIT AI.png" draggable="false"
+								alt="KES 2026 x VISKIT - 제품 사진만으로 1분 만에 만드는 숏광고 - 만들러가기" />
+						</a>
+						<div class="hero__promo__slide">
+							<img src="/home/2026/kes2026/image/banner_kor_Airwallex.png" draggable="false"
+								alt="Airwallex - AI 시대, 글로벌 금융 운영의 새로운 기준 l 글로벌 비즈니스에 필요한 금융 솔루션, Airwallex 부스에서 직접 만나보세요 l COEX Hall A A671" />
+						</div>
+						<div class="hero__promo__slide">
+							<img src="/home/2026/kes2026/image/banner_kor_Similarweb.png" draggable="false"
+								alt="Similarweb" />
+						</div> -->
+					</div>
+					<div class="hero__promo__dots">
+						<button type="button" class="is-active" aria-label="1번 배너 보기"></button>
+						<button type="button" aria-label="2번 배너 보기"></button>
+						<button type="button" aria-label="3번 배너 보기"></button>
+						<!-- <button type="button" aria-label="4번 배너 보기"></button>
+						<button type="button" aria-label="5번 배너 보기"></button>
+						<button type="button" aria-label="6번 배너 보기"></button> -->
+					</div>
+				</div>
+			</aside>
+		</div>
+
+		<div class="scroll-cue" aria-hidden="true">
+			<span>scroll to explore</span>
+			<span class="chev"></span>
+		</div>
+	</section>
+
+
+	<!-- ============ [03] WHY KES 2026 ============ -->
+	<section class="section" id="why" aria-labelledby="why-h">
+		<div class="container">
+			<div class="section__head reveal">
+				<div>
+					<div class="eyebrow">Why KES</div>
+					<h2 id="why-h" class="h-h1">
+						기술이 비즈니스 성과로 이어지는<br />
+						<b>글로벌 테크 플랫폼</b>
+					</h2>
+				</div>
+			</div>
+
+			<div class="pillars">
+				<article class="pillar pillar--01 reveal" data-delay="1" tabindex="0">
+					<div class="pillar__bg" aria-hidden="true"></div>
+					<div class="pillar__overlay" aria-hidden="true"></div>
+					<div class="pillar__idx">01</div>
+					<h3 class="pillar__title">실질적 비즈니스 기회</h3>
+					<p class="pillar__tagline">국내외 핵심 기업·바이어를 연결하는 맞춤형 상담으로 파트너 발굴부터 PoC, 공동 개발까지</p>
+					<div class="pillar__detail">
+						<ul class="pillar__list">
+							<li><b>주요 바이어 참여</b> · 삼성SDS, LG화학, 현대모비스 등 주요 기업 50개사</li>
+							<li><b>상담 성과</b> · '25년 해외 약 $31M, 내수 약 133억 원 규모</li>
+							<li><b>사후 관리</b> · 추가 미팅 및 기술·사업 협력 지속 검토</li>
+						</ul>
+						<a href="/fairContents.do?FAIRMENU_IDX=24376&hl=KOR" class="pillar__more">자세히 보기</a>
+					</div>
+				</article>
+
+				<article class="pillar pillar--02 reveal" data-delay="2" tabindex="0">
+					<div class="pillar__bg" aria-hidden="true"></div>
+					<div class="pillar__overlay" aria-hidden="true"></div>
+					<div class="pillar__idx">02</div>
+					<h3 class="pillar__title">산업과 현장을 연결하는 협력 네트워크</h3>
+					<p class="pillar__tagline">기업·기관·공공이 함께 참여하는 협력 환경으로 기술 실증과 사업화, 신규 시장 진입의 토대를 마련</p>
+					<div class="pillar__detail">
+						<ul class="pillar__list">
+							<li><b>협력 환경 조성</b> · 의사결정자와 실무자가 직접 만나는 협력 구조</li>
+							<li><b>기술 실증 및 협력</b> · 정부·공공 연계 실증 기회와 이종 산업 파트너십</li>
+							<li><b>글로벌 시장 진입</b> · 주요국 대사관 및 글로벌 기관 네트워크 활용</li>
+						</ul>
+						<a href="/fairContents.do?FAIRMENU_IDX=24378&hl=KOR" class="pillar__more">자세히 보기</a>
+					</div>
+				</article>
+
+				<article class="pillar pillar--03 reveal" data-delay="3" tabindex="0">
+					<div class="pillar__bg" aria-hidden="true"></div>
+					<div class="pillar__overlay" aria-hidden="true"></div>
+					<div class="pillar__idx">03</div>
+					<h3 class="pillar__title">시장 영향력과 경쟁력 강화</h3>
+					<p class="pillar__tagline">미디어 노출과 시상 제도로 기술 경쟁력을 증명하고, 산업 리더들과 최신 인사이트를 공유</p>
+					<div class="pillar__detail">
+						<ul class="pillar__list">
+							<li><b>미디어 파급력</b> · 주요 언론·테크 매체 연간 600건 이상 보도</li>
+							<li><b>기술력 공인</b> · KES Innovation Awards 수상으로 기술력·신뢰 확보</li>
+							<li><b>인사이트 공유</b> · 글로벌 키노트로 최신 기술 트렌드·산업 인사이트</li>
+						</ul>
+						<a href="/fairContents.do?FAIRMENU_IDX=24375&hl=KOR" class="pillar__more">자세히 보기</a>
+					</div>
+				</article>
+			</div>
+
+			<!-- <div class="cta-row">
+				<a href="#" class="cta-card cta-card--navy reveal" data-delay="1">
+					<div class="cta-card__main">
+						<span class="cta-card__icon" aria-hidden="true">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+								stroke-linecap="round" stroke-linejoin="round">
+								<path d="M3 21h18M5 21V7l8-4 8 4v14" />
+								<path d="M9 9h1m4 0h1m-6 4h1m4 0h1m-6 4h1m4 0h1" />
+							</svg>
+						</span>
+						<div>
+							<div class="cta-card__title">참가 등록</div>
+							<div class="cta-card__sub">부스 신청 · 7/31까지</div>
+						</div>
+					</div>
+					<span class="cta-card__arrow">→</span>
+				</a>
+				<a href="#" class="cta-card cta-card--blue reveal" data-delay="2">
+					<div class="cta-card__main">
+						<span class="cta-card__icon" aria-hidden="true">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+								stroke-linecap="round" stroke-linejoin="round">
+								<path
+									d="M2 10c0-1.1.9-2 2-2h16c1.1 0 2 .9 2 2v2a2 2 0 1 0 0 4v2a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-2a2 2 0 1 0 0-4z" />
+								<path d="M13 8v8M9 8v8" />
+							</svg>
+						</span>
+						<div>
+							<div class="cta-card__title">참관 등록</div>
+							<div class="cta-card__sub">사전등록 1분 · 무료 셔틀</div>
+						</div>
+					</div>
+					<span class="cta-card__arrow">→</span>
+				</a>
+				<a href="#" class="cta-card cta-card--outline reveal" data-delay="3">
+					<div class="cta-card__main">
+						<span class="cta-card__icon" aria-hidden="true">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+								stroke-linecap="round" stroke-linejoin="round">
+								<path d="M3 3v18h18" />
+								<path d="M7 16V9m4 7V5m4 11v-3m4 3v-7" />
+							</svg>
+						</span>
+						<div>
+							<div class="cta-card__title">지난 전시 결과</div>
+							<div class="cta-card__sub">KES 2025 Outcomes</div>
+						</div>
+					</div>
+					<span class="cta-card__arrow">→</span>
+				</a>
+			</div> -->
+		</div>
+	</section>
+
+
+	<!-- ============ [04] OUTCOMES ============ -->
+	<section class="section outcomes" id="outcomes" aria-labelledby="oc-h">
+		<div class="container">
+			<div class="section__head reveal">
+				<div>
+					<div class="eyebrow">KES 2026 Outcomes</div>
+					<h2 id="oc-h" class="h-h1">
+						숫자로 만나는<br />
+						<b>KES 2026</b>
+					</h2>
+				</div>
+			</div>
+
+			<!-- stat row -->
+			<div class="stat-row">
+				<div class="stat reveal" data-delay="1">
+					<div><span class="stat__num count" data-target="501">0</span><span class="stat__unit">개사</span></div>
+					<div class="stat__label">참가기업</div>
+				</div>
+				<div class="stat reveal" data-delay="2">
+					<div><span class="stat__num count" data-target="1114">0</span><span class="stat__unit">부스</span></div>
+					<div class="stat__label">전시규모</div>
+				</div>
+				<div class="stat reveal" data-delay="3">
+					<div><span class="stat__num count" data-target="64525">0</span><span class="stat__unit">명</span></div>
+					<div class="stat__label">참관객</div>
+				</div>
+				<div class="stat reveal" data-delay="4">
+					<div><span class="stat__num count" data-target="741">0</span><span class="stat__unit">건</span></div>
+					<div class="stat__label">언론 보도</div>
+				</div>
+			</div>
+
+			<!-- gauge row : 2026 성과 업데이트 전까지 숨김 (AN22-229) -->
+			<!--
+			<div class="gauge-row">
+				<div class="gauge-card reveal" data-delay="1">
+					<h4>참가기업 만족도</h4>
+					<svg class="gauge-svg" width="200" height="120" viewBox="0 0 200 120" aria-hidden="true">
+						<defs>
+							<linearGradient id="g1" x1="0" y1="0" x2="1" y2="0">
+								<stop offset="0%" stop-color="#1E6BFF" />
+								<stop offset="50%" stop-color="#6A3CFF" />
+								<stop offset="100%" stop-color="#FF2D55" />
+							</linearGradient>
+						</defs>
+						<path d="M14 110 A86 86 0 0 1 186 110" stroke="rgba(255,255,255,.10)" stroke-width="14" fill="none"
+							stroke-linecap="round" />
+						<path id="gp1" d="M14 110 A86 86 0 0 1 186 110" stroke="url(#g1)" stroke-width="14" fill="none"
+							stroke-linecap="round" stroke-dasharray="270" stroke-dashoffset="270" />
+					</svg>
+					<div class="gauge-num"><span class="gauge-val" data-target="92">0</span>%</div>
+					<div class="gauge-sub">"내년에도 다시 참가하겠다" 77%</div>
+				</div>
+				<div class="gauge-card reveal" data-delay="2">
+					<h4>재참가 의향</h4>
+					<svg class="gauge-svg" width="200" height="120" viewBox="0 0 200 120" aria-hidden="true">
+						<path d="M14 110 A86 86 0 0 1 186 110" stroke="rgba(255,255,255,.10)" stroke-width="14" fill="none"
+							stroke-linecap="round" />
+						<path id="gp2" d="M14 110 A86 86 0 0 1 186 110" stroke="url(#g1)" stroke-width="14" fill="none"
+							stroke-linecap="round" stroke-dasharray="270" stroke-dashoffset="270" />
+					</svg>
+					<div class="gauge-num"><span class="gauge-val" data-target="77">0</span>%</div>
+					<div class="gauge-sub">참가성과 1위: 신규 거래선 발굴 21%</div>
+				</div>
+				<div class="gauge-card media reveal" data-delay="3">
+					<h4>미디어 노출 (글로벌)</h4>
+					<div class="gauge-num">
+						<span class="count" data-target="31">0</span>개국 · <span class="count" data-target="238">0</span>매체
+					</div>
+					<div class="gauge-sub">연 600건+ 보도 · 테크 전문매체 포함</div>
+					<svg viewBox="0 0 240 60" width="100%" height="60" aria-hidden="true">
+						<g fill="url(#g1)">
+							<rect x="0" y="40" width="14" height="20" rx="3" />
+							<rect x="20" y="30" width="14" height="30" rx="3" />
+							<rect x="40" y="18" width="14" height="42" rx="3" />
+							<rect x="60" y="26" width="14" height="34" rx="3" />
+							<rect x="80" y="10" width="14" height="50" rx="3" />
+							<rect x="100" y="20" width="14" height="40" rx="3" />
+							<rect x="120" y="6" width="14" height="54" rx="3" />
+							<rect x="140" y="14" width="14" height="46" rx="3" />
+							<rect x="160" y="8" width="14" height="52" rx="3" />
+							<rect x="180" y="22" width="14" height="38" rx="3" />
+							<rect x="200" y="4" width="14" height="56" rx="3" />
+							<rect x="220" y="16" width="14" height="44" rx="3" />
+						</g>
+					</svg>
+				</div>
+			</div>
+			-->
+
+			<!-- 출처·리포트 다운로드 : 2026 성과 업데이트 전까지 숨김 (AN22-229) -->
+			<!--
+			<div class="outcomes__footer">
+				<p class="outcomes__footnote">*출처: KES 2025 참가업체·참관객 설문조사 결과</p>
+				<a href="/home/2026/kes2026/Files/KES 2025 결과 리포트(요약).pdf" class="btn-download" download="">
+					<i class="fa-regular fa-arrow-down-to-bracket"></i>
+					2025 결과 리포트 다운로드 <!-- <span class="file">PDF · 4.2MB</span> --><!--
+				</a>
+			</div>
+			-->
+		</div>
+	</section>
+
+
+	<!-- ============ [06] NEWSROOM & SOCIAL ============ -->
+	<section class="section" id="newsroom" aria-labelledby="nr-h">
+		<div class="container">
+			<div class="newsroom">
+				<!-- 왼쪽: Explore KES 대제목 + 4가지 길 리스트 -->
+				<div class="newsroom__main">
+					<div class="section__head reveal">
+						<div>
+							<div class="eyebrow">Explore KES</div>
+							<h2 id="nr-h" class="h-h1">
+								KES, <b>더 알아보기</b>
+							</h2>
+						</div>
+					</div>
+
+					<ul class="explore-list reveal" data-delay="1">
+						<li class="explore-row">
+							<a href="/fairContents.do?FAIRMENU_IDX=24342&hl=KOR" class="explore-link">
+								<span class="explore-thumb explore-thumb--about" aria-hidden="true"></span>
+								<span class="explore-body">
+									<span class="explore-label">About KES</span>
+									<span class="explore-name">전시회 개요</span>
+									<!-- <span class="explore-sub">Show outline · History · Venue</span> -->
+								</span>
+								<span class="explore-arrow" aria-hidden="true">
+									<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+										stroke-linecap="round" stroke-linejoin="round">
+										<path d="M5 12h14" />
+										<path d="m13 6 6 6-6 6" />
+									</svg>
+								</span>
+							</a>
+						</li>
+
+						<li class="explore-row">
+							<a href="/fairContents.do?FAIRMENU_IDX=24376&hl=KOR" class="explore-link">
+								<span class="explore-thumb explore-thumb--exhibitors" aria-hidden="true"></span>
+								<span class="explore-body">
+									<span class="explore-label">For Exhibitors</span>
+									<span class="explore-name">KES Match</span>
+									<!-- <span class="explore-sub">Apply · Booth Fee · Layout</span> -->
+								</span>
+								<span class="explore-arrow" aria-hidden="true">
+									<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+										stroke-linecap="round" stroke-linejoin="round">
+										<path d="M5 12h14" />
+										<path d="m13 6 6 6-6 6" />
+									</svg>
+								</span>
+							</a>
+						</li>
+
+						<li class="explore-row">
+							<a href="/fairOnline.do?selAction=single_page&SYSTEM_IDX=232&FAIRMENU_IDX=24379&hl=KOR#/" class="explore-link">
+								<span class="explore-thumb explore-thumb--search" aria-hidden="true"></span>
+								<span class="explore-body">
+									<span class="explore-label">Exhibitor Search</span>
+									<span class="explore-name">참가업체 검색</span>
+									<!-- <span class="explore-sub">Companies · Products · Categories</span> -->
+								</span>
+								<span class="explore-arrow" aria-hidden="true">
+									<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+										stroke-linecap="round" stroke-linejoin="round">
+										<path d="M5 12h14" />
+										<path d="m13 6 6 6-6 6" />
+									</svg>
+								</span>
+							</a>
+						</li>
+
+						<li class="explore-row">
+							<a href="/fairContents.do?FAIRMENU_IDX=24378&hl=KOR" class="explore-link">
+								<span class="explore-thumb explore-thumb--visitors" aria-hidden="true"></span>
+								<span class="explore-body">
+									<span class="explore-label">For Visitors</span>
+									<span class="explore-name">Welcome KES</span>
+									<!-- <span class="explore-sub">Pre-Reg · Shuttle · Accommodation</span> -->
+								</span>
+								<span class="explore-arrow" aria-hidden="true">
+									<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+										stroke-linecap="round" stroke-linejoin="round">
+										<path d="M5 12h14" />
+										<path d="m13 6 6 6-6 6" />
+									</svg>
+								</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+
+				<!-- 오른쪽: KES on Social -->
+				<div class="newsroom__side reveal" data-delay="2">
+					<div class="newsroom__side-head">
+						<div class="eyebrow">KES on Social</div>
+						<div class="newsroom__sns" aria-label="KES SNS 바로가기">
+							<a class="news-sns-ico is-instagram" href="https://www.instagram.com/p/DYyz2krk6pX/" target="_blank"
+								rel="noopener noreferrer" aria-label="Instagram">
+								<i class="fa-brands fa-instagram"></i>
+							</a>
+							<a class="news-sns-ico is-youtube" href="https://www.youtube.com/@KESinfo" target="_blank"
+								rel="noopener noreferrer" aria-label="YouTube">
+								<i class="fa-brands fa-youtube"></i>
+							</a>
+							<a class="news-sns-ico is-linkedin" href="https://www.linkedin.com/in/kes2026/" target="_blank"
+								rel="noopener noreferrer" aria-label="LinkedIn">
+								<i class="fa-brands fa-linkedin"></i>
+							</a>
+						</div>
+					</div>
+					<article class="card sc-card">
+						<div class="elfsight-app-004b91ca-3ac5-4ddb-b4e6-e2421b42f1eb" data-elfsight-app-lazy></div>
+					</article>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- ============ [07] PARTNERS ============ -->
+	<!-- <section class="section partners" id="partners" aria-labelledby="pt-h">
+		<div class="container">
+			<div class="section__head reveal">
+				<div>
+					<div class="eyebrow">Partners</div>
+					<h2 id="pt-h" class="h-h1">함께 만드는 <b>KES 2026</b></h2>
+				</div>
+				<p>주최·후원·미디어·글로벌 파트너가 함께 합니다</p>
+			</div>
+
+			<div class="partner-group reveal">
+				<h4>주최·주관 <small>Host & Organizer</small></h4>
+				<div class="logos">
+					<div class="logo-box"><img src="/home/2026/kes2026/image/motie.jpeg" alt="산업통상자원부" /></div>
+					<div class="logo-box"><img src="/home/2026/kes2026/image/KEA.jpeg" alt="KEA 한국전자정보통신산업진흥회" /></div>
+				</div>
+			</div>
+
+			<div class="partner-group reveal" data-delay="1">
+				<h4>공식 파트너 <small>Official Partner</small></h4>
+				<div class="logos">
+					<div class="logo-box"><img src="/home/2026/kes2026/image/samsung.png" alt="SAMSUNG" /></div>
+					<div class="logo-box"><img src="/home/2026/kes2026/image/LG.jpg" alt="LG" /></div>
+					<div class="logo-box"><img src="/home/2026/kes2026/image/hyundai.png" alt="HYUNDAI" /></div>
+					<div class="logo-box"><img src="/home/2026/kes2026/image/sk.png" alt="SK" /></div>
+					<div class="logo-box"><img src="/home/2026/kes2026/image/posco.jpeg" alt="POSCO" /></div>
+					<div class="logo-box"><img src="/home/2026/kes2026/image/hanwha.jpg" alt="HANWHA" /></div>
+				</div>
+			</div>
+
+			<div class="partner-group reveal" data-delay="2">
+				<h4>글로벌 파트너 <small>Global Partner</small></h4>
+				<div class="logos">
+					<div class="logo-box">EU Pavilion</div>
+					<div class="logo-box">FKCCI · France-Korea</div>
+					<div class="logo-box">JEITA</div>
+					<div class="logo-box">CES</div>
+				</div>
+			</div>
+
+			<div class="partner-group reveal" data-delay="3">
+				<h4>미디어 파트너 <small>Media Partner</small></h4>
+				<div class="logos">
+					<div class="logo-box"><img src="/home/2026/kes2026/image/etnews.png" alt="전자신문" /></div>
+					<div class="logo-box"><img src="/home/2026/kes2026/image/dt.png" alt="디지털타임스" /></div>
+					<div class="logo-box"><img src="/home/2026/kes2026/image/zdnet.png" alt="ZDNet" /></div>
+					<div class="logo-box"><img src="/home/2026/kes2026/image/itchosun.png" alt="IT조선" /></div>
+					<div class="logo-box"><img src="/home/2026/kes2026/image/mk.jpg" alt="매일경제" /></div>
+				</div>
+			</div>
+		</div>
+	</section> -->
+
+</main>
+
+<!-- ========================================================
+     MAIN PAGE 인터랙션 스크립트
+     Reference: KES2026_main.html 하단 IIFE 모듈
+     - 헤더 관련(preheader rotation 등)은 incHeader 영역의 script가 처리
+     ======================================================== -->
+<script src="https://elfsightcdn.com/platform.js" async></script>
+<script>
+	(function () {
+		/* -----------------------------------------------------
+			 1) Reveal on scroll
+					.reveal 요소가 뷰포트에 들어오면 .in 클래스 부여 → CSS 페이드인
+			 ----------------------------------------------------- */
+		(function () {
+			var els = document.querySelectorAll('.reveal');
+			if (!els.length || !('IntersectionObserver' in window)) {
+				Array.prototype.forEach.call(els, function (el) { el.classList.add('in'); });
+				return;
+			}
+			var io = new IntersectionObserver(function (ents) {
+				ents.forEach(function (e) {
+					if (e.isIntersecting) {
+						e.target.classList.add('in');
+						io.unobserve(e.target);
+					}
+				});
+			}, { rootMargin: '0px 0px -10% 0px', threshold: 0.05 });
+			Array.prototype.forEach.call(els, function (el) { io.observe(el); });
+		})();
+
+		/* -----------------------------------------------------
+			 2) D-Day countdown
+					개막 시각: 2026-10-13 10:00 KST
+					대상: #dd-d / #dd-h / #dd-m / #dd-s
+			 ----------------------------------------------------- */
+		(function () {
+			var $d = document.getElementById('dd-d');
+			var $h = document.getElementById('dd-h');
+			var $m = document.getElementById('dd-m');
+			var $s = document.getElementById('dd-s');
+			if (!$d || !$h || !$m || !$s) return;
+
+			var target = new Date('2026-10-13T10:00:00+09:00').getTime();
+			var pad = function (n) { return String(Math.max(0, n)).padStart(2, '0'); };
+
+			function tick() {
+				var diff = Math.max(0, target - Date.now());
+				var days = Math.floor(diff / 86400000);
+				var hours = Math.floor(diff / 3600000) % 24;
+				var mins = Math.floor(diff / 60000) % 60;
+				var secs = Math.floor(diff / 1000) % 60;
+				$d.textContent = String(days);
+				$h.textContent = pad(hours);
+				$m.textContent = pad(mins);
+				$s.textContent = pad(secs);
+			}
+			tick();
+			setInterval(tick, 1000);
+		})();
+
+		/* -----------------------------------------------------
+			 2-1) 프로모 배지 D-Day
+					개막일: 2026-10-13 (KST) 기준 남은 일수
+					대상: #promo-dday → "D-XX" / 당일 "D-DAY" / 종료 "D+XX"
+			 ----------------------------------------------------- */
+		(function () {
+			var $badge = document.getElementById('promo-dday');
+			if (!$badge) return;
+
+			var MS_DAY = 86400000;
+			var KST = 9 * 3600000;
+			// KST 기준 자정을 하루 단위로 인덱싱 (뷰어 로컬 타임존과 무관)
+			function kstDayIndex(ms) { return Math.floor((ms + KST) / MS_DAY); }
+			var targetIdx = kstDayIndex(new Date('2026-07-31T00:00:00+09:00').getTime());
+
+			function update() {
+				var days = targetIdx - kstDayIndex(Date.now());
+
+				if (days > 0) {
+					$badge.textContent = 'D-' + days;
+				} else if (days === 0) {
+					$badge.textContent = 'D-DAY';
+				} else {
+					$badge.textContent = 'D+' + Math.abs(days);
+				}
+			}
+			update();
+			// 자정 경과 시 갱신되도록 1분마다 재계산
+			setInterval(update, 60000);
+		})();
+
+		/* -----------------------------------------------------
+			 2-2) 히어로 프로모 롤링 배너
+					- 3.5초 간격 자동 슬라이드(좌 방향), 마지막 → 첫 장은 클론으로 무한 순환
+					- 마우스 드래그 스와이프 / 도트 클릭으로 직접 조작, 호버 시 자동 정지
+			 ----------------------------------------------------- */
+		(function () {
+			var root = document.querySelector('.hero__promo');
+			if (!root) return;
+			var track = root.querySelector('.hero__promo__track');
+			if (!track) return;
+			var dots = root.querySelectorAll('.hero__promo__dots button');
+
+			var real = track.children.length;
+			if (real < 2) return;
+
+			var INTERVAL = 3500;
+			var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+			// 무한 순환용: 첫 슬라이드 클론을 맨 뒤에 추가 (idx 범위 0 ~ real)
+			var clone = track.children[0].cloneNode(true);
+			clone.setAttribute('aria-hidden', 'true');
+			clone.setAttribute('tabindex', '-1');
+			track.appendChild(clone);
+
+			var idx = 0, timer = null;
+			var dragging = false, moved = false, startX = 0, dx = 0, width = 0;
+
+			function paint(animate) {
+				if (!animate) track.classList.add('is-instant');
+				track.style.transform = 'translate3d(' + (-idx * 100) + '%, 0, 0)';
+				if (!animate) {
+					void track.offsetWidth; // 리플로우 강제 → 다음 변경부터 트랜지션 재개
+					track.classList.remove('is-instant');
+				}
+				var active = idx % real;
+				for (var i = 0; i < dots.length; i++) {
+					dots[i].classList[i === active ? 'add' : 'remove']('is-active');
+				}
+			}
+
+			function normalize() { if (idx >= real) { idx = 0; paint(false); } }
+
+			function go(next) {
+				if (next < 0) { idx = real; paint(false); next = real - 1; } // 클론으로 순간이동 후 되감기
+				idx = next;
+				paint(true);
+			}
+
+			// 클론까지 이동이 끝나면 티 안 나게 원본 첫 장으로 복귀
+			track.addEventListener('transitionend', function (e) {
+				if (e.target !== track || e.propertyName !== 'transform') return;
+				normalize();
+			});
+
+			function stop() { if (timer) { clearInterval(timer); timer = null; } }
+			function play() {
+				stop();
+				if (reduce) return;
+				timer = setInterval(function () { go(idx + 1); }, INTERVAL);
+			}
+
+			/* 드래그 스와이프 */
+			if ('PointerEvent' in window) {
+				var pid = null;
+
+				// 링크 네이티브 드래그가 pointercancel을 유발해 스와이프를 끊는 것 방지
+				track.addEventListener('dragstart', function (e) { e.preventDefault(); });
+
+				track.addEventListener('pointerdown', function (e) {
+					if (e.pointerType === 'mouse' && e.button !== 0) return;
+					normalize();
+					pid = e.pointerId;
+					dragging = true; moved = false;
+					startX = e.clientX; dx = 0;
+					width = root.clientWidth || 1;
+					track.classList.add('is-dragging');
+					stop();
+				});
+				// setPointerCapture를 쓰면 click이 트랙으로 리타깃되어 링크 이동이 막히므로 document에서 추적
+				document.addEventListener('pointermove', function (e) {
+					if (!dragging || e.pointerId !== pid) return;
+					dx = e.clientX - startX;
+					if (Math.abs(dx) > 5) moved = true;
+					track.style.transform = 'translate3d(calc(' + (-idx * 100) + '% + ' + dx + 'px), 0, 0)';
+				});
+				var release = function (e) {
+					if (!dragging || (e && e.pointerId !== pid)) return;
+					dragging = false; pid = null;
+					track.classList.remove('is-dragging');
+					void track.offsetWidth; // 트랜지션 복구 후 스냅
+					var threshold = Math.max(40, width * 0.15);
+					if (dx <= -threshold) go(idx + 1);
+					else if (dx >= threshold) go(idx - 1);
+					else paint(true);
+					play();
+				};
+				document.addEventListener('pointerup', release);
+				document.addEventListener('pointercancel', release);
+
+				// 끌어서 넘긴 경우에만 링크 이동 차단
+				track.addEventListener('click', function (e) {
+					if (moved) { e.preventDefault(); e.stopPropagation(); }
+				}, true);
+			}
+
+			/* 도트 직접 이동 */
+			Array.prototype.forEach.call(dots, function (dot, i) {
+				dot.addEventListener('click', function () {
+					if (idx % real === i) return;
+					normalize();
+					go(i);
+					play();
+				});
+			});
+
+			/* 호버 중에는 자동 롤링 정지 */
+			root.addEventListener('mouseenter', stop);
+			root.addEventListener('mouseleave', function () { if (!dragging) play(); });
+
+			paint(false);
+			play();
+		})();
+
+		/* -----------------------------------------------------
+			 3) Count-up animation
+					.count, .gauge-val 요소가 뷰포트에 들어올 때 data-target까지 카운트업
+			 ----------------------------------------------------- */
+		(function () {
+			var els = document.querySelectorAll('.count, .gauge-val');
+			if (!els.length) return;
+
+			var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+			var ease = function (t) { return 1 - Math.pow(1 - t, 3); };
+
+			function animate(el) {
+				var target = parseFloat(el.dataset.target);
+				if (isNaN(target)) return;
+				if (reduce) { el.textContent = target.toLocaleString(); return; }
+
+				var dur = 1400;
+				var start = performance.now();
+				function step(t) {
+					var p = Math.min(1, (t - start) / dur);
+					var val = Math.round(target * ease(p));
+					el.textContent = val.toLocaleString();
+					if (p < 1) requestAnimationFrame(step);
+				}
+				requestAnimationFrame(step);
+			}
+
+			if (!('IntersectionObserver' in window)) {
+				Array.prototype.forEach.call(els, animate);
+				return;
+			}
+			var io = new IntersectionObserver(function (ents) {
+				ents.forEach(function (e) {
+					if (e.isIntersecting) {
+						animate(e.target);
+						io.unobserve(e.target);
+					}
+				});
+			}, { threshold: 0.4 });
+			Array.prototype.forEach.call(els, function (el) { io.observe(el); });
+		})();
+
+		/* -----------------------------------------------------
+			 4) Gauges fill
+					반원 게이지(#gp1, #gp2)를 stroke-dashoffset 애니메이션으로 채움
+			 ----------------------------------------------------- */
+		(function () {
+			var target = document.querySelector('.gauge-row');
+			if (!target) return;
+
+			var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+			var ARC_LEN = 270; // 반경 86 반원 둘레
+
+			function fill(path, percent) {
+				var offset = ARC_LEN * (1 - percent / 100);
+				if (reduce) { path.style.strokeDashoffset = offset; return; }
+				path.style.transition = 'stroke-dashoffset 1.4s cubic-bezier(.22,.61,.36,1)';
+				requestAnimationFrame(function () { path.style.strokeDashoffset = offset; });
+			}
+
+			var map = [['gp1', 92], ['gp2', 77]];
+
+			function trigger() {
+				map.forEach(function (pair) {
+					var p = document.getElementById(pair[0]);
+					if (p) fill(p, pair[1]);
+				});
+			}
+
+			if (!('IntersectionObserver' in window)) { trigger(); return; }
+			var io = new IntersectionObserver(function (ents) {
+				ents.forEach(function (e) {
+					if (e.isIntersecting) { trigger(); io.disconnect(); }
+				});
+			}, { threshold: 0.3 });
+			io.observe(target);
+		})();
+	})();
+</script>
+
+<!-- }} -->
+	<script>
+    var mixin = {
+        data: function () {
+            return {
+            }
+        },
+        components: {
+            hooper: window.Hooper.Hooper,
+            slide: window.Hooper.Slide,
+            hooperNavigation: window.Hooper.Navigation,
+            hooperPagination: window.Hooper.Pagination,
+        },
+        methods: {
+            move_silde : function(topRef,bottomRef,e){
+                var event = e.path.reduce(function(to,next){
+                    if(next._prevClass && next._prevClass.indexOf("hooper-slide")!=-1){
+                        return next.__vue__;
+                    }else{
+                        return to;
+                    }
+                },{});
+                this.slide_current(topRef,bottomRef,event.index);
+            },
+            arrow_btn : function(refs,direction){
+                var last = refs.trimEnd;
+                var refsIndex = refs.slides.reduce(function(toIndex,next,index){
+                    if(next.elm.classList.contains('is-current')){
+                        return index;
+                    }else{
+                        return toIndex;
+                    }
+                },0);
+                if(refsIndex==0 && direction=='left'){
+                    if(!refs.config.infiniteScroll){
+                        return false;
+                    }
+                }else if(refsIndex==refs.slides.length-last && direction=='rigth') {
+                    if (!refs.config.infiniteScroll) {
+                        return false;
+                    }
+                }
+                if(direction=='left'){
+                    refs.slidePrev();
+                }else if(direction=='rigth'){
+                    refs.slideNext();
+                }
+            },
+            move_btn_silde : function(topRef,bottomRef,direction){
+                var bottomIndex = bottomRef.$children.reduce(function(toIndex,next){
+                    if(next.$el.classList.contains('is-current')){
+                        return next.index;
+                    }else{
+                        return toIndex;
+                    }
+                },0);
+                if(direction=='left'){
+                    if(bottomIndex!=bottomRef.$children[0].index ){
+                        bottomIndex--;
+                    }else{
+                        return false;
+                    }
+                }else if(direction=='rigth'){
+                    if(bottomIndex!=bottomRef.$children[bottomRef.$children.length-1].index){
+                        bottomIndex++;
+                    }else{
+                        return false;
+                    }
+                }
+                this.slide_current(topRef,bottomRef,bottomIndex);
+            },
+            slide_current : function(topRef,bottomRef,index){
+                if(!bottomRef.config.trimWhiteSpace){
+                    topRef.slideTo(index);
+                    bottomRef.slideTo(index);
+                }else{
+                    var trimIndex = (bottomRef.$children[bottomRef.$children.length-1].index+1)-bottomRef.trimEnd;
+                    var promise = function () {
+                        return new Promise(function (resolve, reject) {
+                            topRef.slideTo(index);
+                            bottomRef.slideTo(index);
+                            resolve(true);
+                        });
+                    }
+                    promise().then(function(){
+                        if(index>=trimIndex){
+                            for(var i=0; i< bottomRef.$children.length; i++){
+                                if(bottomRef.$children[i].$el.classList.contains("is-current")){
+                                    bottomRef.$children[i].$el.classList.toggle("is-current");
+                                }
+                            }
+                            bottomRef.$children[index].$el.classList.toggle("is-current");
+                        }
+                    })
+                }
+            },
+            getFirstImg: function(images){
+                var imgUrl = '';
+                if(Array.isArray(images) && images.length > 0 && images[0].url){
+                    imgUrl = images[0].url;
+                }
+                return imgUrl;
+            },
+        },
+        computed : {
+            isKor : function(){
+                return '<%=hl%>'=='KOR' ? true : false;
+            }
+        }
+    }
+</script>
+
+	<!-- vue.s -->
+	<script type="text/javascript">
+		var vue_main_container = document.getElementById("vue_main_container");
+		if(vue_main_container){
+			var vm = new Vue({
+				el: "#vue_main_container",
+				mixins : [mixin],
+				data: typeof this.vue_data === 'function' ? this.vue_data : function(){return{}},
+				components : this.vue_components ? this.vue_components : {},
+				methods: this.vue_methods ? this.vue_methods : {},
+				created: typeof this.vue_created === "function"  ? this.vue_created : function(){},
+				mounted : typeof this.vue_mounted === "function"  ? this.vue_mounted : function(){},
+				watch : this.vue_watch  ? this.vue_watch : {},
+				computed: this.vue_computed ? this.vue_computed : {},
+				updated : typeof this.vue_updated === "function" ? this.vue_updated : function(){},
+				beforeRouteEnter : typeof this.vue_beforeRouteEnter === "function" ? this.vue_beforeRouteEnter : function(){},
+				beforeDestroy : typeof this.vue_beforeDestroy === "function" ? this.vue_beforeDestroy : function(){}
+			})
+		}
+	</script>
+
+	<!-- vue.e -->
+
+
+
+
+
+
+
+
+
+<div id="popup_group">
+	
+</div>
+<script type="text/javascript">
+function set_cookie(name, value, expiredays) {
+	var todayDate = new Date();  
+	todayDate.setDate( todayDate.getDate() + expiredays );
+
+	var popday = new Date(todayDate.getFullYear(),todayDate.getMonth(),todayDate.getDate() + expiredays,-9,0,0);//24시 기준아닌 날짜 기준  
+	document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";";  
+}
+
+function close_divpop(frm, pop, day) {
+	var f = document.forms[frm];
+	if(f.chkbox.checked){
+		set_cookie(pop, "Y", day);
+	}
+	var $popup = $("#"+pop);
+	$popup.fadeOut(50, function(){
+		$(this).remove();
+		if(!$("#popup_group").children().length){
+			$("#popup_group").remove();
+		}
+	});
+} 
+$(function(){
+	var ck = document.cookie;
+	var lp = $(".layerPopup");
+	var hideAll = true;
+	for(var i=0;i<lp.length;i++){
+		var id = lp[i].id;
+		
+		if(ck.indexOf(id+"=Y")<0){
+			$(lp[i]).show();
+			hideAll = false;
+		} else $(lp[i]).remove();
+	 }
+	
+	 
+	if(!hideAll){
+		$("#popup_group").fadeIn(200, function(){
+			$(this).css("display","block");
+		});
+	}
+ });
+ 
+</script>
+
+
+<!-- footer.s -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 공지사항 알람/팝업 ( Notification/Alarm System )-->
+
+
+<div id="footer" data-corp-idx="">
+	<!-- 스크롤영역 -->
+	<div id="scroll">
+		<!-- ex_scroll {{ --><!-- }} -->
+		<script type="text/javascript">
+		$(function() {
+		    var ticker = function() {
+		        setTimeout(function(){
+		            $('#rolling li:first').animate( {marginLeft: '-160px'}, 1000, function(){
+		                $(this).detach().appendTo('#rolling').removeAttr('style');
+		            });
+		            ticker();
+		        }, 3000);
+		    };
+		    ticker();
+		});
+		</script>
+	</div>
+	<!-- 스크롤영역 -->	
+
+	<div class="footer">
+		<!-- ex_footer {{ --><!-- ============ [08] FOOTER ============ -->
+<footer class="site" role="contentinfo">
+	<div class="container">
+		<div class="footer__policies">
+			<a href="https://kes2026.micehub-gov.com/fairContents.do?FAIRMENU_IDX=24735&amp;hl=KOR" class="is-strong">개인정보취급방침</a>
+			<a href="https://kes2026.micehub-gov.com/fairContents.do?FAIRMENU_IDX=24741&amp;hl=KOR">이메일주소 무단수집거부</a>
+			<a href="#">사이트맵</a>
+			<a href="/fairContents.do?FAIRMENU_IDX=24527&amp;hl=KOR">오시는길</a>
+			<a href="https://www.gokea.org/core/?cid=89" target="_blank">KEA 소개</a>
+		</div>
+
+		<div class="footer__divider"></div>
+
+		<div class="footer__main">
+			<a href="/fairDash.do?hl=KOR" class="footer__logo" aria-label="KES 2027 홈으로">
+				<img class="footer__logo-img" src="/home/2026/kes2026/image/logo_w_2027.png" alt="KES 2027 한국전자전">
+			</a>
+
+			<div class="footer__text">
+				[03924] 서울시 마포구 월드컵북로54길 11 전자회관 11F &nbsp;|&nbsp; TEL. 02-6388-6063~6 &nbsp;|&nbsp; E. kes@gokea.org
+				<span class="copyright">Copyright(c) KOREA ELECTRONICS ASSOCIATION. All rights reserved.</span>
+			</div>
+
+			<!-- <div class="footer__hosts" aria-label="주최·주관">
+				<span class="host-box"><img src="/home/2026/kes2026/image/motie.jpeg" alt="산업통상자원부"></span>
+				<span class="host-box"><img src="/home/2026/kes2026/image/KEA.jpeg" alt="KEA 한국전자정보통신산업진흥회"></span>
+			</div> -->
+			<!-- <div class="footer__sns" aria-label="KES SNS 바로가기">
+				<span class="footer__sns-label">Follow us</span>
+				<a class="sns-ico" href="https://www.instagram.com/kes_gram/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+					<i class="fa-brands fa-instagram"></i>
+				</a>
+				<a class="sns-ico" href="https://www.youtube.com/@KESinfo" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+					<i class="fa-brands fa-youtube"></i>
+				</a>
+				<a class="sns-ico" href="https://www.linkedin.com/in/kes2026/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+					<i class="fa-brands fa-linkedin"></i>
+				</a>
+			</div> -->
+
+		</div>
+	</div>
+</footer>
+<!-- }} -->
+		
+			<!-- ex_footer_static {{ --><!-- }} -->
+		
+	</div>
+
+	
+
+</div><!--//footer-->
+
+
+
+	<div id="cookie_pop" class="cookiePop" style="display: none;">
+		<div class="cPopBg"></div>
+		<div class="cPopWrap">
+			<div class="cPopConts">
+				<!--content //-->
+				<p class="cPopTxt mb20">
+					
+						웹사이트를 원활하게 표시하기 위해 쿠키를 사용합니다. 쿠키란 특정 정보를 저장하기 위해 브라우저를 통해 귀하의 컴퓨터 또는 모바일장치에 저장되는 작은 단위의 데이터입니다.
+						계속 이용하려면 쿠키 사용에 동의해야 합니다.
+						쿠키에 대한 더 많은 정보를 보시려면 <a href="./fairAgree.do?hl=KOR" target=""><span class="lineTxt">개인 정보 정책</span></a>을 확인해주십시오.
+					
+				</p>
+
+				<div class="cPopBtn">
+					<a href="#" class="cPopClose">동의</a>
+				</div>
+				<!--// content-->
+			</div>
+		</div>
+	</div>
+	
+
+<script type="text/javascript">
+var localStorage_cookie = null;
+$(function(){
+	// check local storage
+	try {
+		localStorage_cookie = window.localStorage;
+		
+		var cookie_chk = localStorage_cookie.getItem("cookie_chk");
+		var expire_date = localStorage_cookie.getItem("expire_date");
+		var now_date = new Date();
+		
+		if(cookie_chk ==null||expire_date<=now_date){
+			if(expire_date<=now_date){
+				localStorage_cookie.clear();
+			}
+			var agreeLink = "./fairAgree.do?hl=KOR";
+			var url = location.href;
+			if(url.indexOf(agreeLink) === -1){
+				$('.cookiePop').fadeIn();
+			}
+		}
+		
+	} catch (e) {
+		localStorage_cookie = null;
+	}
+	
+	//저장버튼 클릭
+	$('.cPopBtn .cPopClose').on("click", function(){ 
+		var expire_date = new Date();
+		expire_date.setDate(expire_date.getDate()+365);	//365 days to expire
+		
+		localStorage_cookie.setItem("cookie_chk", "Y");
+		localStorage_cookie.setItem("expire_date", expire_date);
+
+		$('#cookie_pop').fadeOut();
+		return false;
+	}); 
+});
+</script>
+
+
+
+<script>
+
+	/**
+	 * 휴폐업 조회
+	 * @param companyNum
+	 * @param onSuccess
+	 * @param onFail
+	 */
+	function isCompanyOpen(companyNum, onSuccess, onFail){
+
+		_APIServer.POST('/api/v1/public/register/is-company-open',
+				{"corp_num": companyNum},
+				function(data) {
+					//console.log('data is', data);
+					if(data && data.result === 'success' && data.open === true)
+						onSuccess();
+					else
+						onFail(data);
+
+				},
+				function(error){
+					onFail();
+				}
+		)
+	}
+	/**
+	 *  소싱페어 비즈미팅 신청
+	 */
+	function sourcingfair_applyBizmatching(){
+
+		var _corpIdx = $('#footer').data('corp-idx');
+		if(_corpIdx> ''){
+			_APIServer.POST('/api/v0/public/apply-bizmatching', {
+				corpIdx: _corpIdx
+			}, function(data){
+				console.log(data);
+				if(data){
+					if(data.result !== 'success'){
+						alert(data['error-message']);
+					}else{
+						alert('오프라인 비즈매칭 신청이 완료되었습니다. 마이페이지로 이동합니다.');
+						var frm = document.forms.frmMenu;
+						frm.selAction.value = "V";
+						frm.target = "";
+						frm.action = "./fairCorpMyInfo2.do";
+						frm.submit();
+					}
+				}
+
+			}, function(e){
+				alert('오프라인 비즈매칭 신청 시 오류가 발생했습니다.');
+				console.error(e);
+			})
+		}else{
+			alert('로그인을 먼저 해주세요!');
+			location.href = "./fairLogin.do";
+		}
+
+		return;
+	}
+
+	var apiServerHost = 'https://api.micehub.com';
+
+	/**
+	 * ajax Wrapper 로 사용.
+	 * @type {{POST: _APIServer.POST, GET: _APIServer.GET}}
+	 * @private
+	 */
+	_APIServer = {
+		GET: function(url, onSuccess, onFail) {
+			$.ajax({
+				url: /^https?:\/\/.*$/.test(url) ? url : (apiServerHost + url),
+				
+				type: "get",
+				beforeSend: function(xhr){
+					xhr.setRequestHeader("MHX_DOMAIN", location.host);
+				},
+				success: function(data){
+					if(onSuccess !== 'undefined')
+						onSuccess(data);
+				},
+				error:function(error){
+					if(onFail !== 'undefined')
+						onFail(error);
+				}
+			});
+		},
+		POST: function (url, params, onSuccess, onFail, onBeforesend, onComplete) {
+			if (url != null) {
+
+				$.ajax({
+					url: /^https?:\/\/.*$/.test(url) ? url : (apiServerHost + url),
+					
+					type: "post",
+					beforeSend: function(xhr){
+						xhr.setRequestHeader("MHX_DOMAIN", location.host);
+						console.log('onBeforesend is', onBeforesend);
+						if(onBeforesend !== undefined)
+							onBeforesend();
+					},
+					contentType: "application/json",
+					data: JSON.stringify(params),
+					success: function (data) {
+						onSuccess(data);
+					},
+					error: function (e) {
+						onFail(e)
+					},
+					complete: function(){
+						if(onComplete !== undefined)
+							onComplete();
+					}
+				});
+			} else {
+				alert("올바른 요청이 아닙니다.");
+				return false;
+			}
+		}
+	}
+</script>
+<!-- footer e.-->
+
+
+</div><!--//wrap-->
+<!-- Brochure Download Form -->
+
+	<script type="text/javascript">
+$(function(){
+	var frm = document.forms.frmBrochure;
+	var exIdx = document.forms.frmMenu.EX_IDX.value;
+
+	if(exIdx == '286'){
+
+		$("input[name='dept']").parents("tr").show();
+		$("input[name='position']").parents("tr").show();
+	}
+})
+</script>
+<div id="brochure_download_form" style="display: none;">
+		<form name="frmBrochure" id="frmBrochure" method="post">
+			<input type="hidden" name="selAction" value="siwse_download" />
+			<input type="hidden" name="EX_IDX" value="" />
+			<input type="hidden" name="fileName" value="" />
+			<div class="notify_msg">
+					<strong>* 필수정보 입력 후 다운로드 가능합니다.</strong>
+			</div>
+			<table class="form">
+				<tr>
+					<td class="cat_def pd10">회사명<span style="color:#f00">*</span></td>
+					<td class="pd10">
+						<input type="text" name="company"/>
+					</td>
+				</tr>
+				<tr>
+					<td class="cat_def pd10">이름 <span style="color:#f00">*</span></td>
+					<td class="pd10">
+						<input type="text" name="pname" />
+					</td>
+				</tr>
+				<tr>
+					<td class="cat_def pd10">연락처<span style="color:#f00">*</span></td>
+					<td class="pd10">
+						<input type="text" name="tel" />
+					</td>
+				</tr>
+				<tr>
+					<td class="cat_def pd10">부서</td>
+					<td class="pd10">
+						<input type="text" name="dept" />
+					</td>
+				</tr>
+				<tr>
+					<td class="cat_def pd10">직위</td>
+					<td class="pd10">
+						<input type="text" name="position" />
+					</td>
+				</tr>
+				<tr>
+					<td class="cat_def pd10">Email<span style="color:#f00">*</span></td>
+					<td class="pd10">
+						<input type="text" name="email" />
+					</td>
+				</tr>
+				<tr>
+					<td class="cat_def pd10">홈페이지</td>
+					<td class="pd10">
+						<input type="text" name="website" />
+					</td>
+				</tr>
+			</table>
+			<div class="downloadAgreeTitleKor">
+				<strong class="taC">개인정보 활용 동의서</strong>
+			</div>								
+			<div class="downloadAgreeDescKor">
+				KINTEX에서 개최하는 전시회의 수요 파악과 마케팅 활동을 위해 아래와 같이 개인정보를 수집/이용하고자 합니다. 그 외 다른 목적에는 절대 사용되지 않습니다. 
+				내용을 자세히 읽으신 후 동의 여부를 결정하여 주십시오.<br><br>
+				1. 개인정보의 종류 : 기업명(회사명), 직위, 부서, 성명(이름), 핸드폰(휴대전화) 번호, 이메일 주소<br>
+				2. 수집 및 이용 목적 : 주관 전시회 수요 예측 및 마케팅 활용 목적<br>
+				3. 개인정보의 보유 및 이용 기간 : 정보통신망법 및 개인정보 보호 등에 관한 법률에 의거 개인정보 보유기간의 경과, 처리목적 달성 등 개인정보가 불필요하게 되었을 때에는 지체 없이 해당 개인정보를 파기합니다.<br><br>
+				* 개인정보의 수집 및 이용에 대해 거부할 권리가 있으나 동의 거부 시 자료 열람 및 다운로드가 제한됩니다.
+			</div>
+			
+			<div class="downloadAgreeCheck mt10 taC">
+				<label>
+					<input type="radio" name="chkBox" id="download-agree">
+					<span>예</span>
+				</label>
+				<label>
+					<input type="radio" name="chkBox" id="download-disagree" >
+					<span>아니오</span>
+				</label>
+			</div>
+			<div class="mt10 taC">
+			<a href="javascript:void(0);" class="btn_b bgM" id="brochure_download_btn">다운로드</a>
+			<a href="javascript:void(0);" class="btn_b" id="brochure_cancel_btn">취소</a>
+			</div>
+		</form>
+	</div>
+
+
+
+
+</body>
+</html>

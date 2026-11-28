@@ -1,0 +1,1197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+<title>Meeting Space,Design Lab,Rental Facility Information,Space Guide > DDP(KOR)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta http-equiv="Content-Script-Type" content="text/javascript">
+		<meta http-equiv="Content-Style-Type" content="text/css">
+		<meta http-equiv="Content-Security-Policy" content="default-src * self blob: data: gap:; style-src * self 'unsafe-inline' blob: data: gap:; script-src * 'self' 'unsafe-eval' 'unsafe-inline' blob: data: gap:; object-src * 'self' blob: data: gap:; img-src * self 'unsafe-inline' blob: data: gap:; connect-src self * 'unsafe-inline' blob: data: gap:; frame-src * self blob: data: gap:;">
+		<meta name ="google-signin-client_id" content="459159549862-s72us3ohj079quekp131c9kj8uauglb6.apps.googleusercontent.com">
+		<link rel="icon" href="/resources/favicon.ico" type="image/x-icon">
+
+<link rel="stylesheet" href="/cms/gen/css/20210629_1326309409145300.css" type="text/css" />
+<link rel="stylesheet" href="/cms/gen/css/20210629_1326268898897600.css" type="text/css" />
+<link rel="stylesheet" href="/cms/gen/css/20210629_1326240155420000.css" type="text/css" />
+<link rel="stylesheet" href="/cms/gen/css/20210629_1326210470476600.css" type="text/css" />
+<link rel="stylesheet" href="/cms/gen/css/20210629_1326167115458600.css" type="text/css" />
+<link rel="stylesheet" href="/cms/gen/css/20210629_358912781289300.css" type="text/css" />
+<link rel="stylesheet" href="/cms/gen/css/20210430_890010729554700.css" type="text/css" />
+<link rel="stylesheet" href="/cms/gen/css/20210430_889859319874600.css" type="text/css" />
+<link rel="stylesheet" href="/cms/gen/css/20210430_889790533506100.css" type="text/css" />
+<link rel="stylesheet" type="text/css" href="/var/alertify/alertify.css"/>
+<script type="text/javascript" src="/com/js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript" src="/var/alertify/alertify.js"></script>
+<script type="text/javascript" src="/cms/gen/js/20210430_890404772678800.js"></script>
+<script type="text/javascript" src="/cms/gen/js/20210430_890389692209900.js"></script>
+<script type="text/javascript" src="/cms/gen/js/20210430_890376691306900.js"></script>
+<script type="text/javascript" src="/cms/gen/js/20210430_890362602960200.js"></script>
+<script type="text/javascript" src="/cms/gen/js/20210430_890339360792600.js"></script>
+<script type="text/javascript" src="/cms/gen/js/20210430_890322549435700.js"></script>
+<script type="text/javascript" src="/cms/gen/js/20210430_890304257113900.js"></script>
+<script type="text/javascript" src="/cms/gen/js/20210430_890281037675500.js"></script>
+</head>
+<body>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YF2T28ZD4M"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+
+	function gtag() {
+		dataLayer.push(arguments);
+	}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-57082860-1');
+	gtag('config', 'G-YF2T28ZD4M');
+</script>
+
+
+
+<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+<script src="/resources/js/main-new/swiper-12.0.3.min.js"></script>
+
+
+<link rel="stylesheet" href="/resources/css/main-new/new-main-header.css">
+<link rel="stylesheet" href="/resources/css/main-new/swiper-12.0.3.min.css" />
+<script src="/resources/js/main-new/new-main-header.js"></script>
+
+<script>
+	var role = "";
+	var roleName = "";
+	var newLang = "ko";
+
+
+
+	$(document).ready(function() {
+		const { menuno } = Object.fromEntries(new URLSearchParams(window.location.search));
+        newLang = !!($('#lang').val() || '').match(/ENG/) ? 'en' : 'ko';
+    	$(this).data('lang', newLang);
+		
+		// window.console.log(menuno );
+		
+
+        if (['228', '814','817','340'].includes(menuno)) {
+            $('.line_nav_wrap').removeClass('active');
+            $('.line_nav_wrap').addClass('is-main');
+        } else {
+            $('.line_nav_wrap').addClass('active');
+			$('#main-header').addClass('locked');
+            // $('#main-header').css('height', '110px');
+        }
+
+        if (['817','340'].includes(menuno)) {
+           // newLang = ($('#lang').val() || '' ).match('/ENG/')"en";
+		   // after render 
+           $('#mypage-button').hide();
+		   $('.sub-buttons.my-page').hide();
+		   $('.full-menu-login-buttons').hide();
+
+		   // $(this).data('lang', 'en');
+        }
+	});
+</script>
+
+<input type="hidden" name="lang" id="lang" value="ENG"/>
+
+<header id="main-header" role="banner">       
+        <div class="header-container">
+            <div class="header-logo">
+                <a href="/?menuno=340">
+                    <img src="/resources/main-new/icons/ddp-logo.png" alt="DDP 로고" />
+                </a>
+            </div>
+
+            <nav class="header-nav" role="navigation" aria-label="주요 메뉴">
+                <a href="/?menuno=346" class="body-3" aria-label="DDP 안내 페이지로 이동">DDP Guide</a>
+                <a href="/?menuno=353" class="body-3" aria-label="프로그램 페이지로 이동">Program</a>
+                <a href="/?menuno=820" class="vr-badge body-3" aria-label="VR 공간안내 페이지로 이동">Space Guide<span aria-hidden="true">VR</span></a>
+                <a href="/?menuno=345" class="body-3" aria-label="고객지원 페이지로 이동">Customer Service</a>
+                <a href="/?menuno=385" class="body-3" aria-label="대관공간 페이지로 이동">Rental Facility Information</a>
+            </nav>
+
+
+        <div class="header-actions" role="toolbar" aria-label="사용자 도구">
+                <div class="header-action-wrapper sitemap-selector">
+	                <button aria-label="서울디자인재단 홈페이지로 이동" class="header-action header-action-sitemap en body-3" id="sdf-link-button">SDF
+    	                <!-- <img src="/resources/main-new/icons/icon-sdf-logo-ko.png" class="sdf-logo" alt="서울디자인재단 로고" aria-hidden="true"> --> 
+						<!-- <a href="https://seouldesign.or.kr/?menuno=150" class="sdf-link body-3" aria-label="서울디자인재단 링크">
+            	        		<span aria-hidden="true">서울디자인재단</span>
+		        	    </a>-->
+                    	<img src="/resources/main-new/icons/icon-link.png" alt="서울디자인재단 바로가기" aria-hidden="true">
+	                    <span class="sr-only">서울디자인재단 홈페이지로 이동</span>
+    	            </button>
+
+                    <div class="sdf-dropdown" role="menu" aria-label="사이트 맵 이동 선택 메뉴">
+                        <button role="menuitem" data-site="SDF" class="lang-option active">
+							 <a href="https://www.seouldesign.or.kr/?menuno=285" target="_blank" class="sdf-link body-3" aria-label="서울디자인재단 링크">
+    	        	        		<span aria-hidden="true" class="body-3">Seoul Design Foundation</span>
+	  		        	    </a>
+                        </button>
+
+                        <div class="site-map-separator"></div>
+
+                        <button role="menuitem" data-site="SDIC" class="lang-option">
+							 <a href="https://sdf-incu.or.kr/" target="_blank" class="sdf-link body-3" aria-label="서울디자인창업센터 링크">
+    	        	        		<span aria-hidden="true" class="body-3">Seoul Design Incubating Center</span>
+			        	    </a>
+                        </button>
+
+                        <div class="site-map-separator"></div>
+
+                        <button role="menuitem" data-site="SUP" class="lang-option">
+							 <a href="https://www.seoulup.or.kr/#googtrans(ko|en)"  target="_blank" class="sdf-link body-3" aria-label="서울새활용플라자 링크">
+    	        	        		<span aria-hidden="true" class="body-3">Seoul Upcycling Plaza</span>
+			        	    </a>		
+                        </button>
+
+						<div class="site-map-separator"></div>
+
+                        <button role="menuitem" data-site="WEEK" class="lang-option">
+							 <a href="https://seoul-designweek.or.kr/" target="_blank" class="sdf-link body-3" aria-label="서울디자인위크 링크">
+    	        	        		<span aria-hidden="true" class="body-3">Seoul Design Week</span>
+			        	    </a>		
+                        </button>
+
+						<div class="site-map-separator"></div>
+
+                        <button role="menuitem" data-site="WEEK" class="lang-option">
+							 <a href="http://www.seouldesignaward.or.kr/" target="_blank" class="sdf-link body-3" aria-label="서울디자인어워드 링크">
+    	        	        		<span aria-hidden="true" class="body-3">Seoul Design Award</span>
+			        	    </a>		
+                        </button>
+
+						<div class="site-map-separator"></div>
+
+                        <button role="menuitem" data-site="WEEK" class="lang-option">
+							 <a href="https://www.ddpdesignstore.org/" target="_blank" class="sdf-link body-3" aria-label="DDP Design Store 링크">
+    	        	        		<span aria-hidden="true" class="body-3">DDP Design Store</span>
+			        	    </a>		
+                        </button>
+                    </div>
+				</div>
+
+                <div class="header-action-wrapper language-selector">
+                    <button class="header-action" id="language-button" aria-label="언어 선택" aria-haspopup="true" aria-expanded="false">
+                        <img src="/resources/main-new/icons/icon-en.png" alt="언어 선택 한국어" aria-hidden="true" id="current-lang-icon">
+
+                        <img src="/resources/main-new/icons/icon-arrow-down-white.png" alt="언어 선택 영어" aria-hidden="true" class="arrow-icon">
+                        <span class="sr-only">언어 선택</span>
+                    </button>
+
+                    <div class="language-dropdown" role="menu" aria-label="언어 선택 메뉴">
+                        <button role="menuitem" data-lang="kr" class="lang-option">
+                            <img src="/resources/main-new/icons/icon-kr.png" alt="한국어">
+                        </button>
+
+                        <div class="language-separator"></div>
+
+                        <button role="menuitem" data-lang="en" class="lang-option active">
+                            <img src="/resources/main-new/icons/icon-en.png" alt="English">
+                        </button>
+                    </div>
+                </div>
+
+                <button class="header-action" id="search-button" aria-label="검색">
+                    <img src="/resources/main-new/icons/icon-search.png" alt="" aria-hidden="true">
+                    <span class="sr-only">검색</span>
+                </button>
+
+                <button class="header-action" aria-label="전체 메뉴 열기" aria-haspopup="true" aria-expanded="false">
+                    <img src="/resources/main-new/icons/icon-menu.png" alt="" aria-hidden="true">
+                    <span class="sr-only">전체 메뉴</span>
+                </button>
+            </div>
+        </div>
+		<!-- 서브 메뉴 -->
+		<div class="line_nav_wrap">
+			<div class="common_inner">
+				<nav class="sub_line_nav">
+					<ul>
+						<li class="home">
+							<a href="/?menuno=340"><span class="blind">메인홈으로 이동</span></a>
+						</li>
+						<li id="depth1_menu">
+							<a href="javascript:;">About Us</a>
+							<ul id="depth1_wrap">
+								<li id="depth_1_1_menu"><a href="/?menuno=346">DDP Guide</a></li>
+								<li id="depth_1_2_menu"><a href="/?menuno=353">Program</a></li>
+								<li id="depth_1_3_menu"><a href="/?menuno=820">Space Guide</a></li>
+								<li id="depth_1_4_menu"><a href="/?menuno=345">Customer Service</a></li>
+							</ul>
+						</li>
+						<li id="depth2_menu">
+							<a href="javascript:;">DDP 소개</a>
+							<ul id="depth2_wrap">
+								<li id="depth_2_1_menu"><a href="/?menuno=346">About Us</a></li>
+								<li id="depth_2_2_menu"><a href="/?menuno=456">DDP News</a></li>
+								<li id="depth_2_3_menu"><a href="/?menuno=350">DDP People</a></li>
+								<li id="depth_2_4_menu"><a href="/?menuno=348">Directions</a></li>
+							</ul>
+						</li>
+						<li id="depth3_menu" style="display:none;">
+							<a href="javascript:;">DDP News</a>
+							<ul id="depth3_wrap">
+								<li id="depth_3_1_menu"><a href="/?menuno=456">Notice</a></li>
+								<li id="depth_3_2_menu"><a href="/?menuno=819">Events</a></li>
+								<li id="depth_3_3_menu"><a href="/?menuno=803">Gallery</a></li>
+								<li id="depth_3_5_menu"><a href="/?menuno=360&cates=1185&boardno=52&skin=ddp_kr_3_press">Press & News</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+        <!-- 메가메뉴 -->
+        <div class="mega-menu" role="menu" aria-label="전체 메뉴">
+            <div class="mega-menu-content-left">
+                <div class="header-logo">
+                    <a href="./index.html">
+                        <img src="/resources/main-new/icons/ddp-logo.png" alt="DDP">
+                    </a>
+                </div>
+            </div>
+            <div class="mega-menu-content">
+                <!-- Column 1: DDP 소개 -->
+                <div class="mega-menu-column mega-menu-column-highlight">
+                    <div class="mega-menu-section">
+                        <a href="/?menuno=346" class="mega-menu-title body-3">About Us</a>
+                    </div>
+                    <hr class="mega-menu-divider">
+                    <div class="mega-menu-section">
+                        <a href="/?menuno=456" class="mega-menu-title body-3">DDP News</a>
+                        <ul class="mega-menu-list">
+                            <li><a href="/?menuno=456">Notice</a></li>
+                            <li><a href="/?menuno=819">Event</a></li>
+                            <li><a href="/?menuno=803">Gallery</a></li>
+                            <li><a href="/?menuno=360&cates=1185&boardno=52&skin=ddp_kr_3_press">Press & News</a></li>
+
+                        </ul>
+                    </div>
+                    <hr class="mega-menu-divider">
+                    <div class="mega-menu-section">
+                        <a href="/?menuno=350" class="mega-menu-title body-3">DDP People</a>
+                    </div>
+                    <hr class="mega-menu-divider">
+                    <div class="mega-menu-section">
+                        <a href="/?menuno=348" class="mega-menu-title body-3">Directions</a>
+                    </div>
+                    <!-- <hr class="mega-menu-divider">
+                    <div class="mega-menu-section">
+                        <a href="/?menuno=383" class="mega-menu-title body-3">Navigation</a>
+                    </div> -->
+                </div>
+
+                <!-- Column 2: 프로그램 -->
+                <div class="mega-menu-column">
+                    <div class="mega-menu-section">
+                        <a href="/?menuno=353" class="mega-menu-title body-3">All Schedules</a>
+                    </div>
+                    <hr class="mega-menu-divider">
+                    <div class="mega-menu-section">
+                        <a href="/?menuno=354" class="mega-menu-title body-3">Exhibitions</a>
+                    </div>
+                    <hr class="mega-menu-divider">
+                    <div class="mega-menu-section">
+                        <a href="/?menuno=355" class="mega-menu-title body-3">Events</a>
+                    </div>
+                    <hr class="mega-menu-divider">
+                    <div class="mega-menu-section">
+                        <a href="/?menuno=798" class="mega-menu-title body-3">Tour</a>
+                    </div>
+                    <hr class="mega-menu-divider">
+                    <div class="mega-menu-section">
+                        <a href="/?menuno=358" class="mega-menu-title body-3">Permanent</a>
+                    </div>
+                    <hr class="mega-menu-divider">
+                    <div class="mega-menu-section">
+                        <a href="/?menuno=806" class="mega-menu-title body-3">Busking</a>
+                    </div>
+                </div>
+
+                <!-- Column 3: 공간안내 -->
+                <div class="mega-menu-column">
+                    <div class="mega-menu-section">
+                        <a href="/?menuno=820" class="mega-menu-title body-3">VR Space Tour</a>
+                    </div>
+                    <hr class="mega-menu-divider">
+					<div class="mega-menu-section">
+                        <a href="/?menuno=825" class="mega-menu-title body-3">VR Wayfinding</a>
+                    </div>
+                    <hr class="mega-menu-divider">
+                    <div class="mega-menu-section">
+                        <a href="/?menuno=349" class="mega-menu-title body-3">Floor Plan</a>
+                    </div>
+                    <hr class="mega-menu-divider">
+                    <div class="mega-menu-section">
+                        <a href="/?menuno=415&cates=216&boardno=49&skin=ddp_kr_1_fnb" class="mega-menu-title body-3">Explore DDP</a>
+                        <ul class="mega-menu-list">
+                            <li><a href="/?menuno=424">DDP Design Store</a></li>
+                            <li><a href="/?menuno=415&cates=216&boardno=49&skin=ddp_kr_1_fnb">Food and Drink</a></li>
+                            <li><a href="/?menuno=415&cates=217&boardno=49&skin=ddp_kr_1_fnb">Kids cafe</a></li>
+                            <li><a href="/?menuno=415&cates=774&boardno=49&skin=ddp_kr_1_fnb">Exhibit hall and Shop</a></li>
+							<li><a href="/?menuno=828">Photo Spots</a></li>
+                        </ul>
+                    </div>
+                    <hr class="mega-menu-divider">
+                    <div class="mega-menu-section">
+                        <a href="/?menuno=417" class="mega-menu-title body-3">DDP Welcome Center</a>
+                    </div>
+                </div>
+
+                <!-- Column 4: 고객지원 -->
+                <div class="mega-menu-column">
+
+					<div class="mega-menu-section">
+                        <a href="/?menuno=345" class="mega-menu-title body-3">FAQ</a>
+                    </div>
+                    <hr class="mega-menu-divider">
+				 	<div class="mega-menu-section">
+                        <a href="/?menuno=426" class="mega-menu-title body-3">Sitemap</a>
+                    </div>
+
+                </div>
+
+                <!-- Column 5: 대관공간 -->
+                <div class="mega-menu-column">
+                    <div class="mega-menu-section">
+                        <a href="https://deep.ddp.or.kr/" class="mega-menu-title body-3" target="_blank">Rental Facility Information</a>
+                    </div>
+                    <hr class="mega-menu-divider">
+                    <div class="mega-menu-section">
+                        <a href="/?menuno=385" class="mega-menu-title body-3">View Rental Space</a>
+                        <ul class="mega-menu-list">
+                            <li><a href="/?menuno=385">Art Hall</a></li>
+                            <li><a href="/?menuno=388">Museum</a></li>
+                            <li><a href="/?menuno=677">Design Lab</a></li>
+                            <li><a href="/?menuno=389">Outdoor Space</a></li>
+                            <li><a href="/?menuno=390">Yigansumun</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="mega-menu-content-right en">
+                <div class="header-actions" role="toolbar" aria-label="사용자 도구">
+                <button aria-label="서울디자인재단 홈페이지로 이동" class="header-action header-action-sdf en" id="sdf-link-button">
+				    <!-- <img src="/resources/main-new/icons/icon-sdf-logo-ko.png" class="sdf-logo" alt="" aria-hidden="true"> --> 
+					 <a href="https://seouldesign.or.kr/?menuno=150" class="sdf-link en body-3" aria-label="서울디자인재단 링크">
+                    		<span aria-hidden="true">서울디자인재단</span>
+		            </a>
+                    <img src="/resources/main-new/icons/icon-link.png" alt="" aria-hidden="true">
+                    <span class="sr-only">서울디자인재단 홈페이지로 이동</span>
+                </button>
+
+                <div class="header-action-wrapper language-selector">
+                    <button class="header-action" id="language-button" aria-label="언어 선택" aria-haspopup="true" aria-expanded="false">
+                        <img src="/resources/main-new/icons/icon-kr.png" alt="" aria-hidden="true" id="current-lang-icon">
+                        <img src="/resources/main-new/icons/icon-arrow-down-white.png" alt="" aria-hidden="true" class="arrow-icon">
+                        <span class="sr-only">언어 선택</span>
+                    </button>
+
+                    <div class="language-dropdown" role="menu" aria-label="언어 선택 메뉴">
+                        <button role="menuitem" data-lang="kr" class="lang-option">
+                            <img src="/resources/main-new/icons/icon-kr.png" alt="한국어">
+                            <!-- <span>KR</span> -->
+                        </button>
+                        <div class="language-separator"></div>
+                        <button role="menuitem" data-lang="en" class="lang-option active">
+                            <img src="/resources/main-new/icons/icon-en.png" alt="English">
+                            <!-- <span>EN</span> -->
+                        </button>
+                    </div>
+                </div>
+
+                <button class="header-action" id="search-button" aria-label="검색">
+                    <img src="/resources/main-new/icons/icon-search.png" alt="" aria-hidden="true">
+                    <span class="sr-only">검색</span>
+                </button>
+                <button class="header-action" id="mypage-button" aria-label="마이페이지">
+                    <img src="/resources/main-new/icons/icon-my.png" alt="" aria-hidden="true">
+                    <span class="sr-only">마이페이지</span>
+                </button>
+                <button class="header-action" aria-label="전체 메뉴 열기" aria-haspopup="true" aria-expanded="false">
+                    <img src="/resources/main-new/icons/icon-menu.png" alt="" aria-hidden="true">
+                    <span class="sr-only">전체 메뉴</span>
+                </button>
+            </div>
+            </div>
+        </div>
+
+        <!-- 전체 메뉴 (햄버거 메뉴) -->
+        <div class="full-menu" role="dialog" aria-label="전체 메뉴" aria-hidden="true">
+            <div class="full-menu-overlay"></div>
+            <div class="full-menu-content">
+                <div class="full-menu-header">
+                    <button class="full-menu-close" aria-label="전체 메뉴 닫기">
+                        <img src="/resources/main-new/icons/icon-cancel.png" alt="">
+                    </button>
+
+
+                    <div class="full-menu-sub">
+                        <div class="full-menu-sub-logo header-logo">
+                            <a href="/?menuno=340">
+                                <img src="/resources/main-new/icons/ddp-logo.png" alt="DDP">
+                            </a>
+                        </div>
+
+                        <div class="full-menu-sub-buttons">
+                            <button class="sub-buttons-sdf" aria-label="서울디자인재단 홈페이지로 이동">
+                                <img src="/resources/main-new/icons/sdf-logo.png" alt="" aria-hidden="true">
+                                <img src="/resources/main-new/icons/icon-link.png" alt="" aria-hidden="true">
+                                <span class="sr-only">서울디자인재단 홈페이지로 이동</span>
+                            </button>
+
+                            <span class="separator white"></span>
+
+                            <button class="sub-buttons sub-buttons-search" aria-label="통합검색페이지로 이동">
+                                <img src="/resources/main-new/icons/icon-search.png" alt="" aria-hidden="true">
+                            </button>
+
+                            <button class="sub-buttons my-page" aria-label="마이페이지">
+                                <img src="/resources/main-new/icons/icon-my.png" alt="" aria-hidden="true">
+                            </button>
+
+                            <button class="full-menu-close sub-buttons" aria-label="전체 메뉴 닫기">
+                                <img src="/resources/main-new/icons/icon-cancel.png" alt="">
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="full-menu-login">
+                        <div class="full-menu-login-description">
+                            <p>Welcome to DDP</p>
+                        </div>
+
+                        <div class="full-menu-login-buttons">
+							<button id="login-button" class="full-menu-login-button" aria-label="로그인">
+                                로그인
+                            </button>
+
+                            <button id="join-button" class="full-menu-login-button" aria-label="회원가입">
+                                회원가입
+                            </button>
+
+                            <button id="maypage-button" class="full-menu-login-button" aria-label="마이페이지">
+                                마이페이지
+                            </button>
+
+                            <button id="logout-button" class="full-menu-login-button" aria-label="로그아웃">
+                                로그아웃
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <p class="full-menu-subtitle">ddp is operated by the Seoul Design Foundation</p>
+
+                <nav class="full-menu-nav">
+                    <!-- Column 1: DDP 소개 -->
+                    <div class="full-menu-section">
+                        <a href="/?menuno=346"><h3 class="full-menu-category body-3">DDP Guide</h3></a>
+                        <ul class="full-menu-list">
+                            <li><a href="/?menuno=346" class="body-3">About Us</a></li>
+                            <li><a href="/?menuno=456" class="body-3">DDP News</a>
+                                <ul class="full-menu-sublist">
+                                    <li><a href="/?menuno=456" class="body-4">Notice</a></li>
+                                    <li><a href="/?menuno=819" class="body-4">Events</a></li>
+                                    <li><a href="/?menuno=803" class="body-4">Gallery</a></li>
+                                    <li><a href="/?menuno=360&cates=1185&boardno=52&skin=ddp_kr_3_press" class="body-4">Press & News</a></li>
+
+                                </ul>
+                            </li>
+                            <li><a href="/?menuno=350" class="body-3">DDP People</a></li>
+                            <li><a href="/?menuno=348" class="body-3">Directions</a></li>
+                            <!-- <li><a href="/?menuno=383" class="body-3">Navigation</a></li> -->
+                        </ul>
+                    </div>
+
+                    <!-- Column 2: 프로그램 -->
+                    <div class="full-menu-section">
+                        <a href="/?menuno=353"><h3 class="full-menu-category body-3">Program</h3></a>
+                        <ul class="full-menu-list">
+                            <li><a href="/?menuno=353" class="body-3">All Schedules</a></li>
+                            <li><a href="/?menuno=354" class="body-3">Exhibitions</a></li>
+                            <li><a href="/?menuno=355" class="body-3">Events</a></li>
+                            <li><a href="/?menuno=798" class="body-3">Tour</a></li>
+                            <li><a href="/?menuno=358" class="body-3">Permanent</a></li>
+                            <li><a href="/?menuno=806" class="body-3">Busking</a></li>
+
+                        </ul>
+                    </div>
+
+                    <!-- Column 3: 공간안내 -->
+                    <div class="full-menu-section">
+                        <a href="/?menuno=820"><h3 class="full-menu-category body-3">Space Guide</h3></a>
+                        <ul class="full-menu-list">
+                            <li><a href="/?menuno=820" class="body-3">VR Space Tour</a></li>
+							<li><a href="/?menuno=825" class="body-3">VR Wayfinding</a></li>
+                            <li><a href="/?menuno=349" class="body-3">Floor Plan</a></li>
+                            <li><a href="/?menuno=415&cates=216&boardno=49&skin=ddp_kr_1_fnb" class="body-3">Explore DDP</a>
+                                <ul class="full-menu-sublist">
+                                    <li><a href="/?menuno=424" class="body-4">DDP Design Store</a></li>
+                                    <li><a href="/?menuno=415&cates=216&boardno=49&skin=ddp_kr_1_fnb" class="body-4">Food and Drink</a></li>
+                                    <li><a href="/?menuno=415&cates=217&boardno=49&skin=ddp_kr_1_fnb" class="body-4">Kids cafe</a></li>
+                                    <li><a href="/?menuno=415&cates=774&boardno=49&skin=ddp_kr_1_fnb" class="body-4">Exhibit hall and Shop</a></li>
+									<li><a href="/?menuno=828">Photo Spots</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/?menuno=417" class="body-3">DDP Welcome Center</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 4: 고객지원 -->
+                    <div class="full-menu-section">
+                        <a href="/?menuno=345"><h3 class="full-menu-category body-3">Customer Service</h3></a>
+                        <ul class="full-menu-list">
+                            <li><a href="/?menuno=345" class="body-3">FAQ</a></li>
+                            <li><a href="/?menuno=426" class="body-3">Sitemap</a></li>
+
+                        </ul>
+                    </div>
+
+                    <!-- Column 5: 대관공간 -->
+                    <div class="full-menu-section">
+                        <a href="/?menuno=385"><h3 class="full-menu-category body-3">Rental Facility Information</h3></a>
+                        <ul class="full-menu-list">
+                            <li><a href="https://deep.ddp.or.kr/" class="body-3" target="_blank">To Apply For Rent</a></li>
+                            <li><a href="/?menuno=385" class="body-3">View Rental Space</a>
+                                <ul class="full-menu-sublist">
+                                    <li><a href="/?menuno=385" class="body-4">Art Hall</a></li>
+                                    <li><a href="/?menuno=388" class="body-4">Museum</a></li>
+                                    <li><a href="/?menuno=677" class="body-4">Design Lab</a></li>
+                                    <li><a href="/?menuno=389" class="body-4">Outdoor Space</a></li>
+                                    <li><a href="/?menuno=390" class="body-4">Yigansumun</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+				<!-- full-menu 언어 선택 (하단 고정) -->
+                <div class="full-menu-language">
+                    <button class="full-menu-language-button" id="full-menu-language-button" aria-label="언어 선택" aria-haspopup="true" aria-expanded="false">
+
+                            <img src="/resources/main-new/icons/icon-en.png" alt="" aria-hidden="true" id="current-language-icon">
+                        <!-- <span class="label-lg-bold">KR</span> -->
+                        <img src="/resources/main-new/icons/icon-arrow-up.png" alt="" aria-hidden="true" class="language-arrow-icon">
+                    </button>
+
+                    <div class="full-menu-language-dropdown" role="menu" aria-label="언어 선택 메뉴">
+                        <button role="menuitem" data-lang="kr" class="full-menu-language-option">
+                            <img src="/resources/main-new/icons/icon-kr.png" alt="한국어">
+                            <!-- <span class="label-lg-bold">KR</span> -->
+                        </button>
+
+                        <!-- <div class="full-menu-language-separator"></div> -->
+
+                        <button role="menuitem" data-lang="en" class="full-menu-language-option active">
+                            <img src="/resources/main-new/icons/icon-en.png" alt="English">
+                            <!-- <span class="label-lg-bold">EN</span> -->
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap&subset=korean" rel="stylesheet">
+<script type="text/javascript">
+$(document).ready(function(){
+		$(".space_tobe #depth3_menu, #depth4_menu").show();
+
+		$(".space_tobe #depth2_menu").find("a").eq(0).html("Rental Facility Information");
+		$(".space_tobe #depth3_menu").find("a").eq(0).html("Design Lab");
+		$(".space_tobe #depth4_menu").find("a").eq(0).html("Meeting Space");
+
+		$(".space_tobe #depth3_wrap").append('<li id="depth_3_1_menu"><a href="/?menuno=385">Art Hall</a></li>');
+		$(".space_tobe #depth3_wrap").append('<li id="depth_3_2_menu"><a href="/?menuno=388">Museum</a></li>');
+		$(".space_tobe #depth3_wrap").append('<li id="depth_3_3_menu"><a href="/?menuno=677">Design Lab</a></li>');
+		$(".space_tobe #depth3_wrap").append('<li id="depth_3_4_menu"><a href="/?menuno=389">Outdoor Space</a></li>');
+		$(".space_tobe #depth3_wrap").append('<li id="depth_3_5_menu"><a href="/?menuno=390">Gallery MUN</a></li>');
+
+		$(".space_tobe #depth4_wrap").append('<li id="depth_4_1_menu"><a href="/?menuno=677">D-Soop</a></li>');
+		$(".space_tobe #depth4_wrap").append('<li id="depth_4_2_menu"><a href="/?menuno=724">Seoul-ON</a></li>');
+		$(".space_tobe #depth4_wrap").append('<li id="depth_4_3_menu"><a href="/?menuno=725">Meeting Space</a></li>');
+		$(".space_tobe #depth4_wrap").append('<li id="depth_4_4_menu"><a href="/?menuno=726">Design Showroom, Design Hall</a></li>');
+		$(".space_tobe #depth4_wrap").append('<li id="depth_4_5_menu"><a href="/?menuno=730">Designers Lounge</a></li>');
+
+});
+</script>
+
+
+
+<div id="wrap">
+	<!-- 내용 -->
+	<div class="sub_cont_wrap">
+
+		<!-- 모바일 메뉴 이동 -->
+		<div class="place_sel_wrap">
+			<div class="place_sel_inner">
+				<div class="sel_box">
+					<select>
+						<option value="385">Art Hall</option>
+						<option value="388">Museum</option>
+						<option selected="selected" value="677">Design Lab</option> 
+						<option value="389">Outdoor Space</option> 
+						<option value="390">Gallery Mun</option> 
+					</select> 
+				</div>
+				<div class="sel_box">
+					<select>
+						<option value="677">D-Soop</option>
+						<option value="724">Seoul-ON</option>
+						<option selected="selected" value="725">Meeting Space</option>
+						<option value="726">Design Showroom, Design Hall</option>
+						<option value="730">Designers Lounge</option>
+					</select> 
+				</div>
+			</div>
+		</div>
+		<!-- //모바일 메뉴 이동 -->
+
+		<div class="sub_cont_inner">
+			<h3 class="sub_cont_ttl">Meeting Space</h3>
+			<div class="facil_inner outdoor">
+				<!--<div class="rent_link_btns" style="margin-top:40px">
+					<div><a href="https://map.naver.com/v5/search/%EB%8F%99%EB%8C%80%EB%AC%B8?c=14138174.7750717,4519018.1312153,15,0,0,0,dha&amp;p=Vaq9rKvoLo-S4-LVL_45sw,99.38,0.68,80,Float" target="_blank" title="새창">View Facilities via VR</a></div>
+				</div>-->
+				
+				<!-- 크레아 -->
+				<div class="rent_space_wrap each">
+					<div class="crea_img_box">
+						<p class="img_wrap"><img alt="" src="/resources/img/intro/crea_map_new.png"></p>
+						<!-- <img src="/resources/img/intro/crea_map.jpg" alt="" class="for_web">
+						<img src="/resources/img/intro/m/m_crea_map.jpg" alt="" class="for_mob"> -->
+						<p class="txt_wrap">* Rental contact : 1833-4321</p>
+					</div>
+					<div class="clc_space_list list02 list03">
+					<ol>	
+						<li>
+							<img alt="" src="/resources/img/intro/crea_map_space_01.png">
+							<div class="clc_space_list_txt">
+								<div class="clc_space_list_txt_inner">
+									<div class="clc_space_list_txt_inner_ab">
+										<strong><span>1</span>Meeting Room 1 <i>(51㎡)</i></strong>
+										<dl>
+											<dt>3 HOUR</dt>
+											<dd>76,500</dd>
+											<dt>/ 1 DAY(11 HOUR)</dt>
+											<dd>280,500</dd>
+										</dl>
+									</div>
+								</div>
+								<p>The workshop space can hold various events, conferences, and seminars of a small group of around 20 people. It can hold small book publication celebration parties and small-size exhibitions or events.</p>
+							</div>
+						</li>
+						<li>
+							<img alt="" src="/resources/img/intro/crea_map_space_02.png">
+							<div class="clc_space_list_txt">
+								<div class="clc_space_list_txt_inner">
+									<div class="clc_space_list_txt_inner_ab">
+										<strong><span>2</span>Meeting Room 2 <i>(52㎡)</i></strong>
+										<dl>
+											<dt>1 HOUR</dt>
+											<dd>76,500</dd>
+											<dt>/ 1 DAY(11 HOUR)</dt>
+											<dd>280,500</dd>
+										</dl>
+									</div>
+								</div>
+								<p>The workshop space can hold various events, conferences, and seminars of a small group of around 20 people. It can hold small book publication celebration parties and small-size exhibitions or events.</p>
+							</div>
+						</li>
+						<li>
+							<img alt="" src="/resources/img/intro/crea_map_space_03.png">
+							<div class="clc_space_list_txt">
+								<div class="clc_space_list_txt_inner">
+									<div class="clc_space_list_txt_inner_ab">
+										<strong><span>3</span>Meeting Room 3 <i>(54㎡)</i></strong>
+										<dl>
+											<dt>3 HOUR</dt>
+											<dd>79,050</dd>
+											<dt>/ 1 DAY(11 HOUR)</dt>
+											<dd>289,850</dd>
+										</dl>
+									</div>
+								</div>
+								<p>The workshop space can hold various events, conferences, and seminars of a small group of around 20 people. It can hold small book publication celebration parties and small-size exhibitions or events.</p>
+							</div>
+						</li>
+						<li>
+							<img alt="" src="/resources/img/intro/crea_map_space_04.png">
+							<div class="clc_space_list_txt">
+								<div class="clc_space_list_txt_inner">
+									<div class="clc_space_list_txt_inner_ab">
+										<strong><span>4</span>Meeting Room 4</strong>
+									</div>
+								</div>
+								<p>Comming Soon</p>
+							</div>
+						</li>
+						<li>
+							<img alt="" src="/resources/img/intro/crea_map_space_05.png">
+							<div class="clc_space_list_txt">
+								<div class="clc_space_list_txt_inner">
+									<div class="clc_space_list_txt_inner_ab">
+										<strong><span>5</span>Meeting Room 5 <i>(12㎡)</i></strong>
+										<dl>
+											<dt>3 HOUR</dt>
+											<dd>47,310</dd>
+											<dt>/ 1 DAY(11 HOUR)</dt>
+											<dd>173,470</dd>
+										</dl>
+									</div>
+								</div>
+								<p>Room 5-7 is a meeting space that can accommodate 6 people. 
+In the private space blocked with glass in all directions, exchange your small ideas actively and develop them into bigger ones. The room is equipped with board on the wall for users to be able to write down memos and ideas.</p>
+							</div>
+						</li>
+						<li>
+							<img alt="" src="/resources/img/intro/crea_map_space_05.png">
+							<div class="clc_space_list_txt">
+								<div class="clc_space_list_txt_inner">
+									<div class="clc_space_list_txt_inner_ab">
+										<strong><span>6</span>Meeting Room 6 <i>(10㎡)</i></strong>
+										<dl>
+											<dt>3 HOUR</dt>
+											<dd>42,090</dd>
+											<dt>/ 1 DAY(11 HOUR)</dt>
+											<dd>154,330</dd>
+										</dl>
+									</div>
+								</div>
+								<p>Room 5-7 is a meeting space that can accommodate 6 people. 
+In the private space blocked with glass in all directions, exchange your small ideas actively and develop them into bigger ones. The room is equipped with board on the wall for users to be able to write down memos and ideas.</p>
+							</div>
+						</li>
+						<li>
+							<img alt="" src="/resources/img/intro/crea_map_space_05.png">
+							<div class="clc_space_list_txt">
+								<div class="clc_space_list_txt_inner">
+									<div class="clc_space_list_txt_inner_ab">
+										<strong><span>7</span>Meeting Room 7 <i>(11㎡)</i></strong>
+										<dl>
+											<dt>3 HOUR</dt>
+											<dd>43,020</dd>
+											<dt>/ 1 DAY(11 HOUR)</dt>
+											<dd>157,740</dd>
+										</dl>
+									</div>
+								</div>
+								<p>Room 5-7 is a meeting space that can accommodate 6 people. 
+In the private space blocked with glass in all directions, exchange your small ideas actively and develop them into bigger ones. The room is equipped with board on the wall for users to be able to write down memos and ideas.</p>
+							</div>
+						</li>
+						<li>
+							<img alt="" src="/resources/img/intro/crea_list_img10.jpg">
+							<div class="clc_space_list_txt">
+								<div class="clc_space_list_txt_inner">
+									<div class="clc_space_list_txt_inner_ab">
+										<strong><span>8</span>DECK LOUNGE <i>(267㎡)</i></strong>
+										<dl>
+											<dt>3 HOUR</dt>
+											<dd>260,110</dd>
+											<dt>/ 1 DAY(11 HOUR)</dt>
+											<dd>935,700</dd>
+										</dl>
+									</div>
+								</div>
+								<p>It is a bridge space where users can take a rest while looking down D-Soop in one view.</p>
+							</div>
+						</li>
+						<li>
+							<img alt="" src="/resources/img/intro/crea_map_space_open.png">
+							<div class="clc_space_list_txt">
+								<div class="clc_space_list_txt_inner">
+									<div class="clc_space_list_txt_inner_ab">
+										<strong><span>9</span>OPEN LOUNGE <i>(456㎡)</i></strong>
+										<dl>
+											<dt>3 HOUR</dt>
+											<dd>685,950</dd>
+											<dt>/ 1 DAY(11 HOUR)</dt>
+											<dd>2,515,150</dd>
+										</dl>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<img alt="" src="/resources/img/intro/crea_list_img01.jpg">
+							<div class="clc_space_list_txt">
+								<div class="clc_space_list_txt_inner">
+									<div class="clc_space_list_txt_inner_ab">
+										<strong><span>10</span>Book Seminar Room <i>(155㎡)</i></strong>
+										<dl>
+											<dt>3 HOUR</dt>
+											<dd>201,450</dd>
+											<dt>/ 1 DAY(11 HOUR)</dt>
+											<dd>738,650</dd>
+										</dl>
+									</div>
+								</div>
+								<p>The book seminar room is a workshop space that can hold seminars and conferences with bookcases as background. In a cozy mood surrounded by books, approximately 30 people can enter the space and have a meeting while sharing opinions freely.</p>
+							</div>
+						</li>
+					</ol>
+				</div>
+				<!-- //크레아 --><!-- 적용요율 -->
+				<div class="applicable_rate_tbl">
+					<a href="javascript:;">
+						<strong>Application rate</strong>
+					</a>
+					<div class="applicable_rate_tbl_wrap"> 
+						<div class="applicable_rate_tbl_inner"> 
+							<table>
+								<thead>
+									<tr>
+										<th colspan="2">Facility</th>
+										<th>Area (m2)</th>
+										<th>1-h rate (KRW)</th>
+										<th>3-h rate (KRW)</th>
+										<th>1-d rate (KRW)</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<th rowspan="2">1F</th>
+										<th>D-Soop</th>
+										<td>1,789</td>
+										<td>-</td>
+										<td>-</td>
+										<td>9,187,200</td>
+									</tr>
+										<th>Lounge A</th>
+										<td>330</td>
+										<td>-</td>
+										<td>-</td>
+										<td>1,694,676</td>
+									</tr>
+									<tr class="selected">
+										<th rowspan="12" class="no_bg">2F</th>
+										<th>Meeting Room 1</th>
+										<td>51</td>
+										<td>25,500</td>
+										<td>76,500</td>
+										<td>280,500</td>
+									</tr>
+									<tr class="selected">
+										<th>Meeting Room 2</th>
+										<td>52</td>
+										<td>25,500</td>
+										<td>76,500</td>
+										<td>280,500</td>
+									</tr>
+									<tr class="selected">
+										<th>Meeting Room 3</th>
+										<td>54</td>
+										<td>26,350</td>
+										<td>79,050</td>
+										<td>289,850</td>
+									</tr>
+									<tr class="selected">
+										<th>Meeting Room 4</th>
+										<td colspan="4">Coming soon</td>
+									</tr>
+									<tr class="selected">
+										<th>Meeting Room 5</th>
+										<td>12</td>
+										<td>15,770</td>
+										<td>47,310</td>
+										<td>173,470</td>
+									</tr>
+									<tr class="selected">
+										<th>Meeting Room 6</th>
+										<td>10</td>
+										<td>14,030</td>
+										<td>42,090</td>
+										<td>154,330</td>
+									</tr>
+									<tr class="selected">
+										<th>Meeting Room 7</th>
+										<td>11</td>
+										<td>14,340</td>
+										<td>43,020</td>
+										<td>157,740</td>
+									</tr>
+									<tr class="selected">
+										<th>Deck Lounge</th>
+										<td>267</td>
+										<td>86,700</td>
+										<td>260,100</td>
+										<td>953,700</td>
+									</tr>
+									<tr class="selected">
+										<th>Open Lounge</th>
+										<td>456</td>
+										<td>228,650</td>
+										<td>685,950</td>
+										<td>2,515,150</td>
+									</tr>
+									<tr class="selected">
+										<th>Book Seminar Room</th>
+										<td>155</td>
+										<td>67,150</td>
+										<td>201,450</td>
+										<td>738,650</td>
+									</tr>
+									<tr>
+										<th>Virtual Studio</th>
+										<td>378.22</td>
+										<td>241,000</td>
+										<td>723,000</td>
+										<td>2,651,000 </td>
+									</tr>
+									<tr>
+										<th>Video Conference Hall</th>
+										<td>114.18</td>
+										<td>73,000</td>
+										<td>219,000</td>
+										<td>803,000</td>
+									</tr>
+									<tr>
+										<th>3F</th>
+										<th>Design Hall</th>
+										<td>627.6</td>
+										<td>296,000</td>
+										<td>888,000</td>
+										<td>3,256,000</td>
+									</tr>
+									<!--<tr>
+										<th>Design Showroom</th>
+										<td>416</td>
+										<td>114,500</td>
+										<td>343,500</td>
+										<td>1,259,500</td>
+									</tr>
+									<tr>
+										<th>UD Lounge</th>
+										<td>147.42</td>
+										<td>58,000</td>
+										<td>174,000</td>
+										<td>638,000</td>
+									</tr>-->
+									<tr>
+										<th>4F</th>
+										<th>JandiSarangbang</th>
+										<td>570</td>
+										<td>271,660</td>
+										<td>814,980</td>
+										<td>	2,988,260</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<p class="applicable_rate_txt">
+							※ 1F of Design Lab is an open lounge with content for public access.<BR>
+							※ 2F & 3F of Design Lab is available for rental at a minimum of 3 hours with an hourly incremental unit
+						</p>
+					</div>
+				</div>
+				<!-- 적용요율 end -->
+			</div>
+		</div>
+	</div>
+	<!-- 내용 end -->
+	<p class="btn_top">
+		<a href="javascript:;">위로</a>
+	</p>
+</div>
+
+
+
+
+
+
+<link rel="stylesheet" href="/resources/css/main-new/new-main-footer.css">
+<script src="/resources/js/main-new/new-main-footer.js"></script>
+
+
+    <aside class="floating-buttons" id="floatingButtons" role="complementary" aria-label="빠른 이동 메뉴">
+        <a href="https://ddp.or.kr/?menuno=820" class="floating-btn vr-map-btn" aria-label="VR 지도로 이동">
+            <div style="display: flex; align-items: center; gap: 8px;">
+                <div class="vr-map-icon">
+                    <img src="/resources/main-new/icons/icon-vr.png" alt="" aria-hidden="true">
+                </div>
+                <span class="vr-map-text">VR 지도</span>
+            </div>
+            <svg width="19" height="19" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M7 17L17 7M17 7H7M17 7V17" stroke="#005EFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </a>
+
+        <button class="floating-btn scroll-btn" id="scrollTopBtn" aria-label="이전 섹션으로 이동">
+            <img src="/resources/main-new/icons/icon-arrow-top.png" alt="" aria-hidden="true">
+            <span class="sr-only">위로 이동</span>
+        </button>
+
+        <button class="floating-btn scroll-btn" id="scrollBottomBtn" aria-label="다음 섹션으로 이동">
+            <img src="/resources/main-new/icons/icon-arrow-bottom.png" alt="" aria-hidden="true">
+            <span class="sr-only">아래로 이동</span>
+        </button>
+    </aside>
+
+<div class="gnb_tweenmax" style="opacity: 1;">
+    <div class="mob_gnb_dim"></div>
+    <div class="mob_gnb_Pbtn">
+        <ul>
+            <li>
+                <span class="mob_gnb_Plus">축소됌</span>
+                <ul class="mob_gnb_cat" style="display: block;">
+                   <li class="gnb_Bus_btn">
+                        <a href="https://ddp.or.kr/?menuno=805"  title="창이동"></a>
+                        <span>버스킹 참여 모집</span>
+                    </li>
+						<li class="gnb_Des_btn">
+                        <a href="https://www.ddpdesignstore.org/" target="_blank" title="새창 열림"></a>
+                        <span>DDP <br class="mob_gnb_br">디자인스토어</span>
+                    </li>
+                    <li class="gnb_Ren_btn">
+                        <a href="https://deep.ddp.or.kr/" target="_blank" title="새창 열림"></a>
+                        <span>대관</span>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <p class="btn_top" style="opacity: 1;">
+        <a href="javascript:;">위로</a>
+    </p>
+</div>
+
+    <!-- Footer -->
+    <footer role="content-info">
+        <div class="container footer">
+            <div class="footer-top">
+                 <nav class="footer-links" aria-label="푸터 정책 메뉴">
+
+                    <a class="label-lg-bold" href="https://ddp.or.kr/?menuno=762" aria-label="개인정보처리방침">Prohibition of Unauthorized Collection of Email Addresses</a>
+                    <span class="separator" aria-hidden="true"></span>
+                    <a class="label-lg-light" href="https://ddp.or.kr/?menuno=407" aria-label="이메일무단수집거부">Contact</a>
+                    <span class="separator" aria-hidden="true"></span>
+                    <a class="label-lg-light" href="https://ddp.or.kr/?menuno=345"        aria-label="행정서비스 헌장">Customer Service</a>
+
+                </nav>
+                <div class="footer-social">
+                    <nav aria-label="소셜 미디어">
+                        <a href="https://www.instagram.com/ddp_seoul/?hl=ko" aria-label="인스타그램으로 이동" target="_blank">
+                            <img src="/resources/main-new/icons/icon-instargram.png" alt="" aria-hidden="true" style="width: 24px; height: 24px;">
+                            <span class="sr-only">인스타그램</span>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCngF8iRwHXiZjDV2vtUX18g" aria-label="유튜브로 이동" target="_blank">
+                            <img src="/resources/main-new/icons/icon-youtube.png" alt="" aria-hidden="true" style="width: 24px; height: 24px;">
+                            <span class="sr-only">유튜브</span>
+                        </a>
+                        <a href="https://m.blog.naver.com/PostList.nhn?blogId=iloveddp&tab=1" aria-label="블로그로 이동" target="_blank">
+                            <img src="/resources/main-new/icons/icon-blog.png" alt="" aria-hidden="true" style="width: 24px; height: 24px;">
+                            <span class="sr-only">블로그</span>
+                        </a>
+                        <a href="https://ko-kr.facebook.com/ddp.or.kr/" aria-label="페이스북으로 이동" target="_blank">
+                            <img src="/resources/main-new/icons/icon-facebook.png" alt="" aria-hidden="true" style="width: 24px; height: 24px;">
+                            <span class="sr-only">페이스북</span>
+                        </a>
+                    </nav>
+                    
+
+					<select class="family-site-button body-3" id="familySiteSelect" aria-label="패밀리 사이트 선택">
+                        <option class="body-3" value="" selected disabled>FAMILY SITE</option>
+                        <option class="body-3" value="https://seouldesign.or.kr/?menuno=285">Seoul Design Foundation</option>
+                        <option class="body-3" value="https://sdf-incu.or.kr/">Seoul Design Incubating Center</option>
+                        <option class="body-3" value="https://www.seoulup.or.kr/#googtrans(ko|en)">Seoul Upcycling Plaza</option>
+                        <option class="body-3" value="https://www.seoul-designweek.or.kr/">Seoul Design Week</option>
+                        <option class="body-3" value="http://www.seouldesignaward.or.kr/">Seoul Design Award</option>
+                        <option class="body-3" value="https://www.ddpdesignstore.org/">DDP Design Store</option>
+                        <option class="body-3" value="https://www.seoulindustrydesign.com/">SME Industrial Design Development Support Program</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-bottom">
+                <div class="footer-info">
+                    <div class="footer-info-logo">
+                        <img src="/resources/main-new/images/img_foot_logo.png" alt="DDP" style="width: 95px;">
+                    </div>
+
+                    <div class="footer-info-text en">
+                        <div>
+
+                            <p class="label-lg-light">Tel : +82-2-2153-0000</p>
+                        </div>
+
+                        <div>
+                            <p class="label-lg-light">Address : 281, Eulji-ro, Jung-gu, Seoul, 04566, Republic of Korea</p>
+                            <span class="separator"></span>
+                            <p class="label-lg-light">Business Registration No.: 201-82-08464</p>
+                        </div>
+                        
+						<div>
+							<p class="label-lg-light">COPYRIGHT ⓒ 2026 DDP. ALL RIGHTS RESERVED.</p>
+						</div>
+                    </div>
+                </div>
+
+				<div class="footer-seoul">
+                		<img src="/resources/main-new/images/ci-seoul-my-seoul.png" alt="Seoul" style="width: 105px;">
+						<div id='3cef96dc' style='min-width:180px; min-height:60px;display: inline-block;'></div>
+				</div>
+            </div>
+        </div>
+    </footer>
+	<!-- AceCounter 배너통합관리 : [서울디자인재단] 메인하단 (180*60) 태그 -->
+	<script><!--//<![CDATA[
+	(function() {var m3_u = 'https://delivery.acecounter.com/delivery/www/delivery/ajs.php';var m3_r = Math.floor(Math.random() * 99999999999);var m3_b = '';var cookieMatch = document.cookie.match(/ACEUACS=([^;]+)/);if(document.cookie.indexOf('ACEUACS=')>-1){ m3_b = document.cookie.substr(document.cookie.indexOf('ACEUACS=')+8,19); }if (!document.MAX_used) document.MAX_used = ',';var query = '?zoneid=949&cb=' + m3_r;if (m3_b !== '') query += '&bd=' + m3_b;if (document.MAX_used !== ',') query += '&exclude=' + document.MAX_used;var charset = document.charset || document.characterSet || '';if (charset) query += '&charset=' + document.charset;query += '&loc=' + encodeURIComponent(window.location.href);if (document.referrer) query += '&referer=' + encodeURIComponent(document.referrer);if (document.context) query += '&context=' + encodeURIComponent(document.context);if (document.mmm_fo) query += '&mmm_fo=1';var target = document.getElementById('3cef96dc');var oldWrite = document.write;document.write = function(node) { target.innerHTML += node; };var s = document.createElement('script');s.async = true;s.src = m3_u + query;s.onload = function() { document.write = oldWrite; };document.head.appendChild(s);})();
+	//]]>--></script>
+	<noscript><a href='https://delivery.acecounter.com/delivery/www/delivery/ck.php?n=3cef96dc&cb=INSERT_RANDOM_NUMBER_HERE' target='_blank' rel='noopener noreferrer'><img src='https://delivery.acecounter.com/delivery/www/delivery/avw.php?zoneid=949&cb=INSERT_RANDOM_NUMBER_HERE&n=3cef96dc' alt='' style='border:none;'></a></noscript>
+
+
+<script>
+
+
+$(document).ready(function() {
+		const { menuno } = Object.fromEntries(new URLSearchParams(window.location.search));
+		
+		// window.console.log(menuno );
+
+        if (['228', '814', '817', '340'].includes(menuno)) {
+				$('#floatingButtons').show();
+				$('.gnb_tweenmax').hide();
+        } else {
+				$('#floatingButtons').hide();
+				//$('.gnb_tweenmax').show();
+                  $('.gnb_tweenmax').css('display','none');
+
+				var controller = $.superscrollorama();
+				controller.addTween(10, TweenMax.from($('.gnb_tweenmax'), .5, {css:{opacity:0}, ease: Quad.easeOut}), 1, 100);
+				controller.addTween(10, TweenMax.to($('.gnb_tweenmax'), .5, {css:{opacity:1}, ease: Quad.easeOut}), 1, 100);
+        }
+
+		if(newLang === 'en'){
+           $('.vr-map-text').text('VR Map');
+           $('.gnb_tweenmax').hide();
+		   $('.gnb_tweenmax').css('display','none');
+        }else{}
+	});
+
+
+
+    $('.mob_gnb_Plus').on('click', function(){
+        $(this).toggleClass('on');
+        if ($('.mob_gnb_Plus').hasClass('on')) {
+                $('.mob_gnb_cat').slideToggle();
+                $('.mob_gnb_dim').fadeToggle();
+            } else {
+                $('.mob_gnb_cat').slideToggle();
+                $('.mob_gnb_dim').fadeToggle();
+            }
+    });
+</script>
+
+
+</body>
+</html>
+

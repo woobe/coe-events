@@ -1,0 +1,3675 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi"/>
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/xeicon/2/xeicon.min.css">
+
+
+<meta name="title" content="SEOUL AI HUB">
+<meta name="keywords" content="서울시 인공지능, 양재혁신지구, 양재혁신허브, R&CD, R&D 캠퍼스, 인공지능 인재, 인공지능 기업, 인공지능 스타트업, 인공지능 예비창업자, 인공지능 교육, 인공지능 지원기관, 인공지능 교총회관, 인공지능 코워킹, KAIST AI 스쿨, KAIST 인공지능 교육, KAIST 인공지능 인재양성, KAIST 양재혁신허브, KAIST AI 스타트업, 딥러닝 연구커뮤니티, 모두의연구소 딥러닝 칼리지, 모두의연구소 양재혁신허브, 모두의연구소 인공지능">
+<meta name="subject" content="SEOUL AI HUB">
+<meta name="description" content="서울시 도심형 R&D 캠퍼스의 핵심 거점 서울 AI 허브입니다. 인공지능에 특화된 인재양성과 기업육성을 지원합니다.">
+<meta name="copyright" content="">
+<meta name="author" content="">
+<meta property="og:type" content="website">
+<meta property="og:title" content="SEOUL AI HUB">
+<meta property="og:description" content="서울시 도심형 R&D 캠퍼스의 핵심 거점 서울 AI 허브입니다. 인공지능에 특화된 인재양성과 기업육성을 지원합니다.">
+<meta property="og:image" content="/img.png">
+<meta property="og:url" content="http://www.seoulaihub.kr/">
+
+
+<meta name="robots" content="all" />
+<title>서울 AI 허브</title>
+<link rel="shortcut icon" href="/fa.ico">
+<link href="/css/master02.css?time=오후 2:52:20" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/js/jquery.min.js"></script>
+<script type="text/javascript" src="/js/jquery.flexisel.js"></script>
+<script type="text/javascript" src="/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="/js/function.js?ver=2"></script>
+<script type="text/javascript" src="/js/calendar_fix.js"></script>
+<script type="text/javascript" src="/js/imagesloaded.pkgd.js"></script>
+
+<script type='text/javascript' src='/js/froala/froala_editor.pkgd.min.js'></script>
+<script type='text/javascript' src='/js/froala/languages/ko.js'></script>
+<link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css' rel='stylesheet' type='text/css' />
+<link href='/css/froala/froala_style.min.css' rel='stylesheet' type='text/css' />
+<link href='/css/froala/froala_editor.pkgd.min.css' rel='stylesheet' type='text/css' />
+
+
+
+<!--[if IE 7]>
+<link rel="stylesheet" href="/css/ie7.css" type="text/css" />
+<![endif]-->
+<!--[if IE 8]>
+<link rel="stylesheet" href="/css/ie8.css" type="text/css" />
+<![endif]-->
+
+<!-- ... -->
+<script type="text/javascript" src="/js/jquery.dotdotdot.js"></script>
+
+<script type="text/javascript">
+function goBoard()
+{
+	var obj = document.actForm;
+	obj.action = "/board/board_basic/"+arguments[0];
+
+	if(arguments[0].indexOf("/")>-1)
+		obj.action = arguments[0];
+
+	for(var i=1; i<arguments.length; i++)
+		obj[arguments[i++]].value = arguments[i];
+
+	obj.submit();
+}
+
+</script>
+
+<script type="text/javascript">
+$(function(){
+	$(".list_img").hover(function(){
+		$(this).find("img").attr("src", $(this).find("img").attr("src").split(".png").join("_on.png"));
+	}, function(){
+		$(this).find("img").attr("src", $(this).find("img").attr("src").split("_on.png").join(".png"));
+	});
+});
+</script>
+
+
+
+<style>
+/* 공통 */
+.fp-is-overflow .fp-overflow.fp-auto-height-responsive, .fp-is-overflow .fp-overflow.fp-auto-height, .fp-is-overflow > .fp-overflow{overflow-y:inherit !important}
+.flex{display:flex;}
+.wrap_quick{display:none}
+#wrap_mcon1{position: relative; width:100%;}
+#wrap_prev_mcon{margin-top:0; padding:4em 0 0 0}
+.section.page{display:table; width:100%; table-layout:fixed; background:rgb(245,245,245)}
+.mcon_wrap{display:flex; width:100%;}
+.tit_ani:hover{font-size:30px !important}
+.hover_span_more{position:absolute; top:29px; right:-19px; background:#000; color:#fff; padding:10px; box-sizing:border-box; font-size:.9rem; display:none;}
+
+.mcon_more_bt1,.mcon_more_bt1:hover {font-size:15px; color:#777777; display:inline-block; padding-right:10px; background:url('/images/main/plus.png') no-repeat right center; width:28px; height:28px;}
+
+.tit_ani0{display:inline-block; color:#333; font-weight:600; padding-right:10px; margin-bottom:10px; font-size:30px;}
+
+.fp-overflow{display:table-cell; vertical-align:middle; width:100%; height:100%;}
+.main_con2 .mcon_more_bt{top:9px;}
+.fp-watermark{display:none}
+.mcon04_con{background:none; padding:0;}
+.bg01{background:url('/images/main/bg_1.jpg') no-repeat center center; background-size:cover !important}
+.section_footer{height:30% !important}
+.section_footer > .fp-overflow{height:30%}
+.section_footer > .fp-section{height: 30% !important;}
+#wrap_footer{padding:0 !important}
+#wrap_footer .f_con:after{content:''; display:block; clear:both;}
+#wrap_footer .f_con > div.f_con_con{padding:30px 0}
+#fp-nav ul li, .fp-slidesNav ul li{width:54px !important; height:54px !important;}
+#fp-nav ul li a.active span, .fp-slidesNav ul li a.active span, #fp-nav ul li:hover a.active span, .fp-slidesNav ul li:hover a.active span{display:none !important}
+#fp-nav ul li a span, .fp-slidesNav ul li a span{background:none !important}
+#fp-nav ul li a:hover:after{position: absolute; bottom:0; right:32px; width:100%; display:flex; align-items:center; transform:translate(-32px,-16px); justify-content:flex-end; color:#333; white-space:pre}
+#fp-nav ul li:nth-child(1) a:hover:after{content:'홈';}
+/* #fp-nav ul li:nth-child(2) a:hover:after{content:'프로그램';} */
+#fp-nav ul li:nth-child(2) a:hover:after{content:'소속기업';}
+#fp-nav ul li:nth-child(3) a:hover:after{content:'허브소식';}
+#fp-nav ul li:nth-child(4) a:hover:after{content:'오시는길';}
+#fp-nav ul li:nth-child(5) a:hover:after{content:'허브소개';}
+.fp-right.fp-show-active ul li:nth-child(1) a{background:#eee url('/images/main/icon01.png') no-repeat center; border-radius:50%; background-size:60%; transition:background 0.5s;}
+/* .fp-right.fp-show-active ul li:nth-child(2) a{background:#eee url('/images/main/icon06.png') no-repeat center; border-radius:50%; background-size:60%; transition:background 0.5s;} */
+.fp-right.fp-show-active ul li:nth-child(2) a{background:#eee url('/images/main/icon04.png') no-repeat center; border-radius:50%; background-size:60%; transition:background 0.5s;}
+.fp-right.fp-show-active ul li:nth-child(3) a{background:#eee url('/images/main/icon15.png') no-repeat center; border-radius:50%; background-size:60%; transition:background 0.5s;}
+.fp-right.fp-show-active ul li:nth-child(4) a{background:#eee url('/images/main/icon05.png') no-repeat center; border-radius:50%; background-size:60%; transition:background 0.5s;}
+.fp-right.fp-show-active ul li:nth-child(5) a{background:#eee url('/images/main/icon07.png') no-repeat center; border-radius:50%; background-size:60%; transition:background 0.5s;}
+
+.fp-right.fp-show-active ul li:nth-child(1) a.active{background:#2b328d url('/images/main/icon08.png') no-repeat center; border-radius:50%; background-size:60%}
+/* .fp-right.fp-show-active ul li:nth-child(2) a.active{background:#2b328d url('/images/main/icon13.png') no-repeat center; border-radius:50%; background-size:60%} */
+.fp-right.fp-show-active ul li:nth-child(2) a.active{background:#2b328d url('/images/main/icon11.png') no-repeat center; border-radius:50%; background-size:60%}
+.fp-right.fp-show-active ul li:nth-child(3) a.active{background:#2b328d url('/images/main/icon16.png') no-repeat center; border-radius:50%; background-size:60%}
+.fp-right.fp-show-active ul li:nth-child(4) a.active{background:#2b328d url('/images/main/icon12.png') no-repeat center; border-radius:50%; background-size:60%}
+.fp-right.fp-show-active ul li:nth-child(5) a.active{background:#2b328d url('/images/main/icon14.png') no-repeat center; border-radius:50%; background-size:60%}
+
+
+@media (min-width:1310px){
+.main_con1_slide .slick-slide{width:262px !important}
+.main_con1_slide .slick-track{width:262px !important}
+}
+
+
+
+@media (max-width:1100px){
+.slick-counter::before{right:47% !important}
+ul.tab_sty01 li.current span, .tit_ani{margin-top:0 !important}
+.main_con2_03_mv iframe{width:60%}
+}
+
+@media (max-width:1024px){
+.fp-scrollable.fp-responsive .fp-is-overflow.fp-section, .fp-scrollable .fp-section, .fp-scrollable .fp-slide{min-height:auto !important; height:auto !important; }
+#wrap_prev_mcon{padding:20vw 0 10vw 0}
+}
+
+@media (max-width:991px){
+#wrap_prev_mcon{padding:12vw 0 10vw 0}
+}
+
+
+@media (max-width:900px){
+.mcon_wrap{max-width:95%; margin:0 auto;}
+.height_line{display:none !important}
+}
+
+</style>
+
+
+<style>
+
+
+@media (max-width:1026px){
+.fp-table.active .mcon_wrap{display:block;}
+.mcon_wrap{visibility:visible; display:block !important;}
+.mcon_wrap {animation:0; -webkit-animation:0;}
+}
+
+
+/* animation */
+.fp-table.active .mcon_wrap{display:block;}
+.fp-table.active .mcon_wrap:after{content:''; display:block; clear:both}
+.mcon_wrap{visibility:hidden; display:none;}
+.mcon_wrap {
+	animation-name:fadeup;
+	-webkit-animation-name:fadeup;
+	animation-duration:1s;
+	-webkit-animation-duration:1s;
+	animation-timing-function:ease-in-out;
+	visibility:visible;
+
+}
+
+@keyframes fadeup {
+	0% {
+		opacity:0;
+		transform:translateY(100%);
+	}
+	100% {
+		opacity:1;
+		transform:translateY(0%);
+	}
+}
+@-webkit-keyframes fadeup {
+	0% {
+		opacity:0;
+		-webkit-transform:translateY(-50%);
+	}
+	100% {
+		opacity:1;
+		-webkit-transform:translateY(0%);
+	}
+}
+
+
+
+</style>
+
+<!--slide js-->
+<link rel="stylesheet" type="text/css" href="/js/slick02/slick.css">
+<link rel="stylesheet" type="text/css" href="/js/slick02/slick-theme.css">
+<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+<script src="/js/slick02/slick.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+
+
+$(document).on('ready', function() {
+	if (matchMedia("screen and (min-width: 767px)").matches) {
+		  $(".regular02").slick({
+			dots: false,
+			infinite: true,
+			slidesToShow: 4,
+			slidesToScroll: 4,
+			arrows: true
+		  });
+	} else {
+		  $(".regular02").slick({
+			dots: false,
+			infinite: true,
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			arrows: true
+		  });
+	}
+
+	getCalendar(0);
+	$("#idCalendar").on("click", ".dev_pointer", function(){
+		$("#idCalendar .on").removeClass("on");
+
+		//다른날짜 클릭시 동그라미 css 삭제
+		$("#idCalendar").find(".on_bg").each( function() {
+			$(this).removeClass("on_bg");
+		});
+
+		//클릭한 동그라미 활성화
+		$(this).addClass("on_bg");
+
+		s_day = $(this).attr("data");
+		getEvent(1);
+	});
+
+	$("#cal_28").addClass("on_bg");
+
+	$("#idCalendar li").filter(function(){ return $(this).attr("data")=="28";}).trigger("click");
+
+
+});
+
+var s_year = 2026;
+var s_month = 11-1;
+var s_day = 28;
+function getCalendar(n)
+{
+	s_month += n;
+	var d = new Date(s_year, s_month, 1);
+	var lastDay = new Date(s_year, s_month+1, 1-1).getDate();
+
+	s_year = d.getFullYear();
+	s_month = d.getMonth();
+
+	$("#v_year").val(d.getFullYear());
+	$("#v_month").val(("0"+(d.getMonth()+1)).substr(-2));
+
+	$("#idCalMonthYear").html(d.getFullYear()+"<strong>"+("0"+(d.getMonth()+1)).substr(-2)+"</strong>");
+
+	var html = "";
+	var cellCount = 1;
+
+	for(var i=0; i<d.getDay(); i++)
+		html += "<li></li>";
+	cellCount += d.getDay();
+
+	for(var i=1; i<=lastDay; i++)
+		html += "<li class='dev_pointer' data='"+i+"' id='cal_"+ numFormat(i) +"'>"+"<span>"+i+"</span>"+"</li>";
+
+	$("#idCalendar").html(html);
+	getPoint();
+};
+
+//일정이 있는 날짜 포인트 찍기
+function getPoint(){
+
+	var f_year = $("#v_year").val();
+	var f_month = $("#v_month").val();
+	var msg = "";
+
+	$.ajax({
+		type : "POST",
+		url  : "/include/calData.asp",
+		async : false,
+		dataType : "text",
+		data:{
+			"f_year"  : f_year,
+			"f_month" :	f_month
+		},
+		error  : function(jqXHR, textStatus, errorThrown){
+			//console.log(jqXHR);
+			//alert(jqXHR.responseText +"\n\n"+textStatus+"\n\n"+errorThrown);
+		},
+		success  : function(msg){
+
+			var check_arr = msg;
+			if (check_arr !== ""){
+				var arrayStr = check_arr.split(",");
+
+				setTimeout(function (){
+					for ( var i = 0; i < arrayStr.length; i++ ) {
+						$("#cal_" + arrayStr[i] +"").addClass("on");
+					}
+				}, 100);
+
+			}
+
+		}
+	});
+
+
+	var check_month = $("#v_year").val() +"-"+ $("#v_month").val();
+	var today_month = "2026-11"
+	if (check_month == today_month){
+		$("#cal_28").addClass("on_bg");
+	}
+
+	//setInterval(function () {$("#cal_13").addClass("on")}, 0);
+};
+
+function getEvent(gbn){
+
+	$.ajax({
+		type : "POST",
+		url  : "/include/getEvent.asp",
+		async : false,
+		dataType : "text",
+		data:{
+			"s_year" : s_year
+			,"s_month" : s_month+1
+			,"s_day" : s_day
+			,"gbn" : gbn
+		},
+		error  : function(jqXHR, textStatus, errorThrown){
+			console.log(jqXHR);
+			alert("일정 조회 중 오류가 발생 하였습니다.");
+		},
+		success  : function(msg){
+			var strDate = s_year+"."+("0"+(s_month+1)).substr(-2)+"."+("0"+s_day).substr(-2);
+			var d = new Date(s_year, s_month, s_day);
+			strDate += " "+getWeekDay(d.getDay());
+			$(".cal_con_tit").html(strDate);
+			$("#idEvent").html(msg);
+			getPoint();
+		}
+	});
+}
+
+function changeDate(n)
+{
+	s_day = parseInt(s_day);
+
+	var d = new Date(s_year, s_month, s_day+n);
+	s_year = d.getFullYear();
+	s_month = d.getMonth();
+	s_day = d.getDate();
+
+	getEvent(1);
+};
+
+function numFormat(variable) {
+	variable = Number(variable).toString();
+	if(Number(variable) < 10 && variable.length == 1)
+	variable = "0" + variable;
+	return variable;
+}
+
+</script>
+
+
+</head>
+
+<body>
+<style>
+.pop_personal	th, .pop_personal td{font-size:12px; border:1px solid #ddd; padding:7px; box-sizing:border-box;}
+</style>
+ <div id="dim_02"></div>
+
+<script>
+$(function(){
+	$(".f_family button").click(function(){
+		$('.f_family_list').slideToggle();
+		$(this).toggleClass('on');
+		$('#dim_02').toggle();
+		});
+
+
+
+	$("#dim_02").click(function(){
+		$('.f_family_list').slideUp();
+		$('.f_family button').removeClass('on');
+		$(this).hide();
+		});
+	});
+
+
+</script>
+	 
+
+
+<div id="dim"></div>
+
+
+<div class="wrap_pop_partner">
+	<div class="fac03_pop">
+		<h3>입주절차안내</h3>
+		<a href="javascript:;" class="fac03_pop_close"><img src="/images/contents/pop_close.png" alt=""/></a>
+
+		<ul class="pop_tab_sty01">
+			<li data-tab="tab-1" class="current">입주절차</li>
+			<li data-tab="tab-2">입주유형 및 혜택</li-->
+		</ul>
+		<div id="tab-1" class="pop_tab-content current">
+			<h2 class="fac03_pop_tit">신청자격</h2>
+			<ul class="fac03_pop_list">
+				<li>모집대상/분야
+					<ul class="fac03_pop_list02">
+						<li>인공지능 관련 분야 기술 보유 및 사업을 계획 중인 (예비)창업자</li>
+						<li>인공지능 관련 분야 초기 창업자·벤처·중소기업·부설연구소</li>
+					</ul>
+				</li>
+				<li>제외대상
+					<ul class="fac03_pop_list02">
+						<li>채무불이행으로 금융기관 등의 규제대상자, 국세/지방세 체납자</li>
+						<li>중소기업창업 지원법 시행령에 따라 창업에서 제외되는 업종</li>
+						<li>기타 법령 등에서 창업지원의 제한 사유가 있다고 인정하는 자</li>
+<!-- 						<li>중소기업창업지원법에 따라 지원이 불가한 업종<br/><span class="txt_s">※ 금융 및 보험업, 부동산업, 숙박 및 음식점업, 무도장 운영업, 골프장 및 스키장 운영업,   기타 겜블링 및 베팅업, 기타 개인 서비스업</span></li> -->
+<!-- 						<li>기타 법령 등에서 창업지원의 제한 사유가 있다고 인정하는 자</li> -->
+					</ul>
+				</li>
+			</ul>
+			<h2 class="fac03_pop_tit">선정절차</h2>
+			<ul class="par_pop_flow01">
+				<li>
+					<img src="/images/contents/partner_pop_flow_img01.png" alt="" />
+					<div class="con">
+						<h3>서류평가</h3>
+						<p>제출한 서류를 바탕으로 사실관계 확인 및 사업계획서 검토</p>
+					</div>
+				</li>
+				<li>
+					<img src="/images/contents/partner_pop_flow_img02.png" alt="" />
+					<div class="con">
+						<h3>발표평가</h3>
+<!-- 						<p>15분 발표평가 +15분 질의응답 순으로 진행 <br/>(발표시간은 기관 사정에 따라 변경될 수 있음)</p>
+						 -->
+						 <p>10분 발표평가 +10분 질의응답 순으로 진행 <br/>(발표시간은 기관 사정에 따라 변경될 수 있음)</p>
+					</div>
+				</li>
+				<li>
+					<img src="/images/contents/partner_pop_flow_img03.png" alt="" />
+					<div class="con">
+						<h3>결과발표</h3>
+						<p>서울 AI 허브 홈페이지 등 게재</p>
+					</div>
+				</li>
+			</ul>
+
+
+			<h2 class="fac03_pop_tit">공고방식</h2>
+			<ul class="fac03_pop_list">
+				<li>공고기간: 기존 입주기업 졸업 및 신규 입주공간 확충 시(비정기적 모집)</li>
+				<li>공고장소: 서울 AI 허브 홈페이지 등</li>
+			</ul>
+
+
+		</div>
+
+		<div id="tab-2" class="pop_tab-content">
+			<h2 class="fac03_pop_tit">입주유형</h2>
+			<div class="partner_table">
+				<table>
+					<colgroup>
+						<col width="34%;"></col>
+						<col width="33%;"></col>
+						<col width="33%;"></col>
+					</colgroup>
+					<thead>
+						<tr>
+							<th>형태</th>
+							<th>월 임대료</th>
+							<th>월 관리비</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>개방형 사무공간</td>
+							<td>좌석당 60,000원</td>
+							<td>좌석당 9,200원</td>
+						</tr>
+						<tr>
+							<td>독립형 사무공간</td>
+							<td>월 임대료 건물별 상이</td>
+							<td>월 관리비 건물별 상이</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<p class="cau_txt">
+			※ 임대료 및 관리비는 입주 건물과 공간 유형에 따라 상이하며, 자세한 사항은 담당자에게 문의해 주시기 바랍니다. <br>
+			※ 월 임대료 및 관리비는 6개월분 선납, VAT 별도
+			</p>
+			<h2 class="fac03_pop_tit">입주혜택</h2>
+			<ul class="fac03_pop_list">
+				<li>서울 AI 허브 내 회의실, 강의실, 라운지 등 이용 가능<!-- (365일 24시간 개방) --></li>
+<!-- 				<li>전기/난방, 인터넷, 출입 및 도어락 보안 시스템 등 무상 제공</li> -->
+				<li>네트워킹, 협업 프로그램, 기업 성장 프로그램 등 집중 지원</li>
+			</ul>
+		</div>
+
+
+
+
+
+
+	</div>
+</div>
+
+
+
+
+<div class="wrap_pop pop_personal">
+	<span class="close">X</span>
+	<div>
+<h2>서울 AI 허브 개인정보처리방침</h2>
+
+서울 AI 허브는 「개인정보보호법」 등 관련 법령에 따라 이용자의 개인정보를 보호하고 이용자의 권익을 보장하기 위하여 다음과 같이 개인정보처리방침을 수립·공개합니다.이 방침은 별도 설명이 없으면 본 기관이 운영하는 전자적 서비스(홈페이지, 온라인 신청 시스템, 교육/행사 접수 시스템 등)에 적용됩니다. <br> <br>
+
+시행일자: 2018년  4월 2일 <br>
+최종변경일자: 2025년 10월 17일 <br> <br>
+
+
+제1조(개인정보의 처리 목적) <br>
+서울 AI 허브는 수집한 개인정보를 다음의 목적을 위하여 처리하며, 그 목적 범위를 초과하여 이용하지 않습니다.<br>
+1. 회원 관리 및 서비스 제공 – 본인 확인, 회원제 서비스 이용, 게시판 이용, 공지사항 전달<br>
+2. 프로그램 운영 및 참여자 관리 – AI 스타트업 지원사업, 교육·워크숍·세미나 등 신청 접수 및 결과 통보<br>
+3. 성과관리 및 통계 분석 – 사업 평가, 만족도 조사, 통계자료 작성<br>
+4. 홍보 및 정보 제공 – 뉴스레터, 행사 안내 등(동의받은 경우)<br>
+5. 민원 처리 및 소통 – 문의 응대, 불만 처리<br>
+6. 웹서비스 운영 및 보안 유지 – 접속로그 분석, 보안사고 대응<br><br>
+
+제2조(개인정보의 수집항목, 수집방법, 보유근거, 보유기간)<br>
+개인정보를 수집·이용 목적이 달성되면 지체 없이 파기하나, 관련 법령에 따라 이용자의 개인정보를 보존해야 할 필요가 있는 경우에는 다음과 같이 보유합니다.<br>
+1. 수집 항목 <br>
+- 회원가입 / 시스템 계정: 아이디, 비밀번호, 이름, 이메일, 연락처(휴대전화)<br>
+- 프로그램 신청 시: 이름, 소속/회사명, 직책, 사업자등록번호(해당 시), 이메일, 연락처<br>
+- 자동 생성정보: IP주소, 쿠키, 접속일시, 이용기록 등<br>
+2. 수집 방법<br>
+- 홈페이지 회원가입, 프로그램 신청 웹폼, 이메일, 전화, 오프라인 양식, 로그 자동 생성<br>
+3. 보유근거
+<table>
+  <thead>
+    <tr>
+      <th>구분</th>
+      <th>수집 항목</th>
+      <th>수집 방법</th>
+      <th>보유근거</th>
+      <th>보유기간</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>회원정보</td>
+      <td>아이디, 비밀번호, 이름, 이메일, 연락처</td>
+      <td>홈페이지 회원가입</td>
+      <td>정보주체 동의</td>
+      <td>회원 탈퇴 시까지</td>
+    </tr>
+    <tr>
+      <td>프로그램 신청 정보</td>
+      <td>이름, 소속, 직책, 이메일, 연락처</td>
+      <td>신청 웹폼, 이메일</td>
+      <td>정보주체 동의, 서울시 위탁사업 수행 근거</td>
+      <td>사업 종료 후 3년</td>
+    </tr>
+    <tr>
+      <td>로그기록</td>
+      <td>IP, 쿠키, 접속일시</td>
+      <td>자동 수집</td>
+      <td>통신비밀보호법</td>
+      <td>3개월</td>
+    </tr>
+    <tr>
+      <td>민원기록</td>
+      <td>이름, 연락처, 문의내용</td>
+      <td>이메일</td>
+      <td>민원 처리 기록 보존</td>
+      <td>처리 완료 후 3년</td>
+    </tr>
+  </tbody>
+</table>
+
+<br><br>
+제3조(개인정보의 제3자 제공)<br>
+서울 AI 허브는 원칙적으로 이용자의 개인정보를 제1조(개인정보의 처리 목적)에서 명시한 범위 내에서 처리하며, 이용자의 사전 동의 없이는 본래의 범위를 초과하여 처리하거나 제3자에게 제공하지 않습니다. 다만, 다음의 경우에는 개인정보를 제공할 수 있습니다. <br>
+- 이용자가 사전에 제3자 제공 및 공개에 동의한 경우<br>
+- 법률에 특별한 규정이 있거나 법령 상 의무를 준수하기 위하여 불가피한 경우<br>
+- 공공기관이 법령 등에서 정하는 소관 업무의 수행을 위하여 불가피한 경우<br>
+- 명백히 이용자 또는 제3자의 급박한 생명, 신체, 재산의 이익을 위하여 필요하다고 인정되는 경우<br>
+- 공중위생 등 공공의 안전과 안녕을 위하여 긴급히 필요한 경우<br><br>
+
+제4조(개인정보처리 위탁)<br>
+서울 AI 허브는 원활한 서비스 운영의 효율성을 위하여 다음과 같이 개인정보 처리 업무를 위탁하고 있습니다. 위탁업무의 내용이나 수탁자가 변경되는 경우, 지체 없이 본 방침을 통하여 공개합니다. <br>
+- 웹마인드 – 홈페이지 유지보수 및 서버 관리(위탁계약 종료 시까지)<br><br>
+
+제5조(정보주체의 권리, 의무 및 행사방법)<br>
+정보주체는 개인정보 열람, 정정, 삭제, 처리정지, 동의 철회를 요청할 수 있습니다. 요청은 서면, 전자우편, 전화 등으로 가능하며, 서울 AI 허브는 본인 확인 후 10일 이내에 결과를 통지합니다. 부득이한 경우에는 그 사유와 연장 기간(최대 10일)을 알려드립니다.<br><br>
+
+제6조(개인정보의 파기)<br>
+보유기간 경과 또는 처리 목적 달성 시 지체 없이 파기합니다. 다만, 다른 법령에 따라 보존해야 하는 경우에는 해당 법령에 따른 기간 동안 별도 저장 및 관리합니다.<br>
+- 전자적 파일: 복원 불가능한 기술적 방법으로 삭제<br>
+- 종이 문서: 분쇄 또는 소각
+<br><br>
+제7조(개인정보의 안전성 확보조치)<br>
+서울 AI 허브는 개인정보 보호를 위하여 접근권한 최소화, 접근통제, 암호화, 보안프로그램 운영, 정기 교육 등을 실시합니다. 또한, 개인정보보호 내부 관리계획을 수립 및 시행하고, 정기적인 자체 점검을 실시하고 있습니다. <br><br>
+
+제8조(개인정보보호 책임자)<br>
+서울 AI 허브는 개인정보를 보호하고 개인정보와 관련한 불만을 처리하며, 개인정보의 적법성과 절차의 적정성을 확보하여 이용자의 권익보호 및 공공업무의 적정한 수행을 도모하기 위하여 개인정보 보호책임자 및 분야별 책임자를 지정하고 있습니다.<br>
+
+<table>
+  <thead>
+    <tr>
+      <th>구분</th>
+      <th>수집 항목</th>
+      <th>수집 방법</th>
+      <th>보유근거</th>
+      <th>보유기간</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>회원정보</td>
+      <td>아이디, 비밀번호, 이름, 이메일, 연락처</td>
+      <td>홈페이지 회원가입</td>
+      <td>정보주체 동의</td>
+      <td>회원 탈퇴 시까지</td>
+    </tr>
+    <tr>
+      <td>프로그램 신청 정보</td>
+      <td>이름, 소속, 직책, 이메일, 연락처</td>
+      <td>신청 웹폼, 이메일</td>
+      <td>정보주체 동의, 서울시 위탁사업 수행 근거</td>
+      <td>사업 종료 후 3년</td>
+    </tr>
+    <tr>
+      <td>로그기록</td>
+      <td>IP, 쿠키, 접속일시</td>
+      <td>자동 수집</td>
+      <td>통신비밀보호법</td>
+      <td>3개월</td>
+    </tr>
+    <tr>
+      <td>민원기록</td>
+      <td>이름, 연락처, 문의내용</td>
+      <td>이메일</td>
+      <td>민원 처리 기록 보존</td>
+      <td>처리 완료 후 3년</td>
+    </tr>
+  </tbody>
+</table>
+
+<br><br>
+제9조(권익침해 구제방법) <br>
+정보주체는 다음 기관에 개인정보 침해를 신고할 수 있습니다.<br>
+- 한국인터넷진흥원 개인정보침해신고센터 (privacy.kisa.or.kr / 118)<br>
+- 개인정보분쟁조정위원회 (kopico.go.kr / 1833-6972)<br>
+- 대검찰청 사이버수사과 (spo.go.kr / 1301)<br>
+- 경찰청 사이버수사국 (ecrm.police.go.kr / 182)<br><br>
+
+제10조(개인정보 처리방침의 변경)<br>
+본 방침은 법령 또는 내부 방침 변경 시 개정될 수 있으며, 변경사항은 홈페이지를 통해 고지합니다. <br>
+개정 전 개인정보처리방침 보기<br>
+2018. 4. 2. ~2025. 10. 17. 적용<br>
+<table>
+  <thead>
+    <tr>
+      <th>구분</th>
+      <th>내용</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>개인정보처리방침 버전</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <td>최초 시행일자</td>
+      <td>2018. 4. 2.</td>
+    </tr>
+    <tr>
+      <td>최종 변경일자</td>
+      <td>2025. 10. 17.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+제11조(개인정보 국외이전)<br>
+서울 AI 허브는 개인정보를 국외로 이전하지 않습니다. 다만, 향후 국외 이전이 필요한 경우에는 개인정보보호법 제28조의 8에따라 관련 사항을 명확히 고지하고 동의를 받습니다. 
+<!-- 		<h2>개인정보 취급방침</h2>
+01. 수집하는 개인정보 항목 및 수집방법<br/>
+회원에게만 제공되는 콘텐츠를 접근하는 경우에 한하여 회원가입을 통해 신청자에 관한 개인정보를 일부 수집하고 있습니다.<br/>
+회사가 수집하는 개인정보는 다음과 같습니다.<br/><br/>
+(1) 수집항목<br/>
+· 필수 항목 : 아이디, 비밀번호, 이름, 이메일, 연락처(전화번호, 휴대폰번호)<br/>
+· 선택 항목 : 메일 수신여부, 문자 수신여부<br/><br/>
+• 또한, 서비스 이용과정이나 사업처리 과정에서 아래와 같은 정보들이 생성되어 수집될 수 있습니다.<br/>
+– 서비스 이용기록, 접속로그, 쿠키<br/><br/>
+(2) 수집방법<br/>
+회사는 다음과 같은 방법으로 개인정보를 수집할 수 있습니다.<br/>
+• 홈페이지(회원가입), 경품 행사 응모, 배송 요청, 회원정보수정, 팩스, 전화, 이용문의<br/><br/>
+02. 개인정보의 수집 및 이용목적<br/><br/>
+회사는 수집한 개인정보를 다음의 목적을 위해 활용할 수 있습니다.<br/>
+• 회원 관리<br/>
+– 회원제 서비스 이용에 따른 본인확인, 개인식별, 불량회원의 부정 이용 방지와 비인가 사용 방지, 가입 의사 확인, 연령확인, 불만처리 등 민원처리, 고지사항 전달<br/>
+– 접속 빈도 파악 또는 회원의 서비스 이용에 대한 통계<br/>
+• 서비스<br/>
+– 로그인한 회원만을 대상으로 제공되는 각종 콘텐츠 이용 및 이벤트 응모<br/>
+• 마케팅 및 광고에 활용<br/>
+– 이벤트 등 광고성 정보 전달, 이벤트 당첨 시 물품배송<br/><br/>
+– 신규 서비스 개발 및 특화, 인구통계학적 특성에 따른 서비스 제공 및 광고 게재
+– 접속 빈도 파악 또는 회원의 서비스 이용에 대한 통계<br/><br/>
+03. 수집한 개인정보의 공유 및 제공<br/>
+회사는 이용자의 개인정보를 원칙적으로 외부에 제공하지 않습니다. 다만, 아래의 경우에는 예외로 합니다.<br/>
+– 이용자들이 사전에 동의한 경우<br/>
+– 법령의 규정에 의거하거나, 수사 목적으로 법령에 정해진 절차와 방법에 따라 수사기관의 요구가 있는 경우<br/><br/>
+04. 수집한 개인정보의 보유 및 이용기간<br/>
+회사는 개인정보 수집 및 이용목적이 달성된 후에는 해당 정보를 지체 없이 파기합니다. 단, 다음의 정보에 대해서는 아래의 이유로 명시한 기간 동안 보존합니다.<br/>
+(1) 회사 내부 방침에 의한 정보보유 사유 – 회원탈퇴 시 개인정보 보존<br/>
+• 보존 항목: 이름, 아이디, 비밀번호, 이메일, 휴대전화<br/>
+• 보존 근거: 서비스 이용의 혼선 방지, 불법적 사용자에 대한 관련 기관 수사협조<br/>
+(2) 관계법령의 규정에 의하여 보존할 필요가 있는 경우 회사는 아래와 같이 관계법령에서 정한 일정한 기간 동안 회원정보를 보관하며 연장할 수 있습니다.<br/>
+• 보존 항목: 서비스 이용기록, 접속 로그, 접속 IP 정보<br/>
+• 보존 근거: 통신비밀보호법<br/><br/>
+05. 개인정보의 파기절차 및 방법<br/>
+회사는 원칙적으로 개인정보 수집 및 이용목적이 달성된 후에는 해당 정보를 지체 없이 파기합니다.<br/>
+파기절차 및 방법은 다음과 같습니다.<br/>
+• 파기절차<br/>
+– 회원님이 회원가입 등을 위해 입력하신 정보는 목적이 달성된 후 내부 방침 및 기타 관련 법령에 의한 정보보호 사유에 따라(보유 및 이용기간 참조) 일정 기간 저장된 후 파기됩니다.
+동 개인정보는 법률에 의한 경우가 아니고서는 보유되는 이외의 다른 목적으로 이용되지 않습니다.<br/>
+• 파기방법<br/>
+– 종이에 출력된 개인정보는 분쇄기로 분쇄하거나 소각을 통하여 파기합니다.<br/>
+– 전자적 파일 형태로 저장된 개인정보는 기록을 재생할 수 없는 기술적 방법을 사용하여 삭제합니다.<br/><br/>
+06. 이용자 및 법정대리인의 권리와 그 행사방법<br/>
+이용자 및 법정대리인의 권리이용자 및 법정 대리인은 언제든지 등록되어 있는 자신 혹은 당해 만 14세 미만 아동의 개인정보를 조회하거나 수정할 수 있으며 회원탈퇴를 요청할 수도 있습니다.<br/>
+이용자 혹은 만 14세 미만 아동의 개인정보 조회, 수정을 위해서는 ‘개인정보변경’(또는 ‘회원정보수정’ 등)을, 회원탈퇴(동의철회)를 위해서는 “회원탈퇴”를 클릭하여 직접 열람, 정정 또는 회원탈퇴가 가능합니다.<br/>
+혹은 개인정보관리책임자에게 서면, 전화 또는 이메일로 연락하시면 본인 확인 절차를 거친 후 지체 없이 조치하겠습니다.<br/>
+귀하가 개인정보의 오류에 대하여 정정을 요청하신 경우에는 정정을 완료하기 전까지 당해 개인정보를 이용 또는 제공하지 않습니다.<br/>
+또한 잘못된 개인정보를 제3자에게 이미 제공한 경우에는 정정 처리결과를 제3자에게 지체 없이 통지하여 정정이 이루어지도록 하겠습니다.<br/>
+회사는 이용자 혹은 법정 대리인의 요청에 의해 해지 또는 삭제된 개인정보를 “회사가 수집하는 개인정보의 보유 및 이용기간”에 명시된 바에 따라 처리하고 그 외의 용도로 열람 또는 이용할 수 없도록 처리하고 있습니다.<br/><br/>
+07. 개인정보관리책임자 또는 개인정보담당부서<br/>
+회사는 고객의 개인정보를 보호하고 개인정보와 관련한 불만을 처리하기 위하여 아래와 같이 개인정보관리책임자를 지정하고 있습니다.<br/>
+▶ 이메일 <br/>:
+귀하께서는 회사의 서비스를 이용하시며 발생하는 모든 개인정보보호 관련 민원을 개인정보관리책임자 혹은 담당부서로 신고하실 수 있습니다.<br/>
+회사는 이용자들의 신고사항에 대해 신속하게 충분한 답변을 드릴 것입니다.<br/><br/>
+08. 고지의 의무<br/>
+정부의 정책 또는 보안 기술의 변경에 따라 내용의 추가, 삭제 및 수정이 있을 시 홈페이지를 통해 고지할 것입니다.<br/><br/>
+09. 시스템 유지보수<br/>
+회사는 서비스 이행을 위해 아래와 같이 시스템 유지보수 업무를 외부 전문업체에 위탁하여 운영하고 있습니다.<br/>
+수탁업체 : <br/>
+위탁업무 : 시스템 유지보수<br/>
+개인정보취급방침 버전번호 : 1.0<br/>
+개인정보취급방침 시행일자 : 2018년 04월 02일 -->
+	</div>
+</div>
+
+<div class="wrap_pop pop_use">
+	<span class="close">X</span>
+	<div>
+		<h2>이용약관</h2>
+		제 1 장 총칙<br/><br/>
+제 1조 (목적)<br/>
+본 약관은 서비스(이하 “회사”라 한다)는 홈페이지에서 제공하는 서비스(이하 “서비스”라 한다)를 제공함에 있어 회사와 이용자의 권리, 의무 및 책임사항을 규정함을 목적으로 합니다.<br/><br/>
+제 2조 (용어의 정의)<br/><br/>
+1. 본 약관에서 사용하는 용어의 정의는 다음과 같습니다.<br/>
+‘서비스’란 회사가 이용자에게 서비스를 제공하기 위하여 컴퓨터 등 정보통신설비를 이용하여 구성한 가상의 공간을 의미하며, 서비스 자체를 의미하기도 합니다.<br/>
+‘회원(이하 “회원”이라 한다)’이란 개인정보를 제공하여 회원등록을 한 자로서 홈페이지의 정보를 지속적으로 제공받으며 홈페이지가 제공하는 서비스를 계속적으로 이용할 수 있는 자를 말합니다.<br/>
+‘아이디(이하 “ID”라 한다)’란 회원의 식별과 회원의 서비스 이용을 위하여 회원이 선정하고 회사가 승인하는 회원 고유의 계정 정보를 의미합니다.<br/>
+‘비밀번호’란 회원이 부여 받은 ID와 일치된 회원임을 확인하고, 회원의 개인정보를 보호하기 위하여 회원이 정한 문자와 숫자의 조합을 의미합니다.<br/>
+‘회원탈퇴(이하 “탈퇴”라 한다)’란 회원이 이용계약을 해지하는 것을 의미합니다.<br/><br/>
+2. 본 약관에서 사용하는 용어의 정의는 제1항에서 정하는 것을 제외하고는 관계법령 및 서비스 별 안내에서 정하는 바에 의합니다.<br/><br/>
+제 3조 (이용약관의 효력 및 변경)<br/>
+1. 회사는 본 약관의 내용을 회원이 쉽게 알 수 있도록 각 서비스 사이트의 초기 서비스화면에 게시합니다.<br/>
+2. 회사는 약관의 규제에 관한 법률, 전자거래기본법, 전자 서명법, 정보통신망 이용촉진 및 정보보호 등에 관한 법률 등 관련법을 위배하지 않는 범위에서 본 약관을 개정할 수 있습니다.<br/>
+3. 회사는 본 약관을 개정할 경우에는 적용일자 및 개정사유를 명시하여 현행 약관과 함께 회사가 제공하는 서비스 사이트의 초기 화면에 그 적용일자 7일 이전부터 적용일자 전일까지 공지합니다.<br/>
+다만, 회원에게 불리하게 약관내용을 변경하는 경우에는 최소한 30일 이상의 사전 유예기간을 두고 공지합니다. 이 경우 회사는 개정 전 내용과 개정 후 내용을 명확하게 비교하여 회원이 알기 쉽도록 표시합니다.<br/>
+4. 회원은 개정된 약관에 대해 거부할 권리가 있습니다. 회원은 개정된 약관에 동의하지 않을 경우 서비스 이용을 중단하고 회원등록을 해지할 수 있습니다.<br/>
+단, 개정된 약관의 효력 발생일 이후에도 서비스를 계속 이용할 경우에는 약관의 변경사항에 동의한 것으로 간주합니다.<br/>
+5. 변경된 약관에 대한 정보를 알지 못해 발생하는 회원 피해는 회사가 책임지지 않습니다.<br/><br/>
+제 4조 (약관 외 준칙)<br/>
+1. 본 약관은 회사가 제공하는 서비스에 관해 별도의 정책 및 운영규칙과 함께 적용됩니다.<br/>
+2. 본 약관에 명시되지 아니한 사항과 본 약관의 해석에 관하여는 관계법령에 따릅니다.<br/><br/>
+제 2 장 이용약관 체결<br/><br/>
+제 5조 (이용계약의 성립)<br/>
+1. 이용계약은 회원의 본 이용약관 내용에 대한 동의와 이용신청에 대하여 회사의 이용승낙으로 성립합니다.<br/>
+2. 본 이용약관에 대한 동의는 회원등록 당시 본 약관을 읽고 “위 서비스 약관에 동의합니다”의 대화 창에 표시를 한 후 등록하기 단추를 누름으로써 의사표시를 한 것으로 간주합니다.<br/><br/>
+제 6조 (서비스 이용 신청)<br/>
+1. 회원으로 가입하여 본 서비스를 이용하고자 하는 이용고객은 회사에서 요청하는 제반 정보(이름, 메일주소, 연락처, 주소 등)를 제공하여야 합니다.<br/>
+2. 타인의 명의(이름 및 메일주소 등)를 도용하여 이용신청을 한 회원의 모든 ID는 삭제되며, 관계법령에 따라 처벌을 받을 수 있습니다.<br/>
+3. 만 14세 미만의 아동이 회원으로 가입하기 위해서는 반드시 개인정보의 수집 및 이용목적에 대하여 충분히 숙지하고 법정대리인(부모)의 동의를 받아야 합니다.<br/>
+법정대리인의 허락을 받지 않은 14세 미만의 아동에 대해서는 회원에서 제외할 수 있습니다.<br/><br/>
+제 7조 (개인정보의 보호 및 사용)<br/>
+1. 회사는 관계법령이 정하는 바에 따라 회원등록정보를 포함한 회원의 개인정보를 보호하기 위해 노력합니다.<br/>
+회원 개인 정보의 보호 및 사용에 대해서는 관련법령 및 회사의 개인정보보호정책이 적용됩니다.<br/>
+단, 회사의 공식사이트 이외의 웹에서 링크된 사이트에서는 회사의 개인정보보호정책이 적용되지 않습니다.<br/>
+또한 회사는 회원의 귀책사유로 인해 노출된 정보에 대해서 일체의 책임을 지지 않습니다.<br/>
+2. 회사는 이용자에게 제공하는 서비스의 양적, 질적 향상을 위하여 이용자의 개인정보를 제휴사에게 제공, 공유할 수 있으며, 이 때에는 반드시 이용자의 동의를 받아 필요한 최소한의 정보를 제공, 공유하며 누구에게 어떤 목적으로 어떤 정보를 제공, 공유하는지 명시합니다.<br/>
+3. 회원은 원하는 경우 언제든 회사에 제공한 개인정보의 수집과 이용에 대한 동의를 철회할 수 있으며, 동의의 철회는 구독해지 회원 탈퇴를 하는 것으로 이루어집니다.<br/>
+4. 회사는 수탁자를 통해 개별 이벤트, 행사가 진행될 경우, 해당 이벤트 참여 신청 페이지를 통해 명시적으로 개인정보 취급위탁에 대한 회원 동의를 받도록 하겠습니다.<br/>
+5. 회사는 서비스 이행을 위해 아래와 같이 시스템 유지보수 업무를 외부 전문업체에 위탁하여 운영하고 있습니다.<br/>
+수탁업체 : ㈜마이스스타<br/>
+위탁업무 : 시스템 유지보수<br/><br/>
+제 8조 (이용신청의 승낙과 제한)<br/>
+1. 회사는 제 6조의 규정에 의거 이용신청고객에 대하여 업무 수행상 또는 기술상 지장이 없는 경우에 원칙적으로 접수순서에 따라 서비스 이용을 승낙합니다.<br/>
+2. 회사는 다음 각 호의 내용에 해당하는 경우 이용신청에 대한 승낙을 제한할 수 있고, 그 사유가 해소 될 때까지 승낙을 유보할 수 있습니다.<br/>
+i.회사의 서비스 관련 설비에 여유가 없는 경우<br/>
+ii.회사의 기술상 지장이 있는 경우<br/>
+iii.기타 회사의 사정상 필요하다고 인정되는 경우<br/>
+3. 회사는 다음 각 호의 내용에 해당하는 경우 이용신청에 대한 승낙을 하지 아니할 수도 있습니다.<br/>
+i.실명이 아니거나 타인의 명의를 이용하여 신청한 경우<br/>
+ii.이용계약 신청서의 내용을 허위로 기재한 경우<br/>
+iii.사회의 안녕과 질서, 미풍양속을 저해할 목적으로 신청한 경우<br/>
+iv.부정한 용도로 본 서비스를 이용하고자 하는 경우<br/>
+v.영리를 추구할 목적으로 본 서비스를 이용하고자 하는 경우<br/>
+vi.기타 회사가 정한 등록신청 요건이 미비된 경우<br/>
+vii.본 서비스와 경쟁관계가 있는 이용자가 신청하는 경우<br/>
+viii.기타 규정한 제반 사항을 위반하며 신청하는 경우<br/>
+4. 회사는 이용신청고객이 관계법령에서 규정하는 미성년자일 경우에 서비스 별 안내에서 정하는 바에 따라 승낙을 보류할 수 있습니다.<br/><br/>
+제 9조 (회원 아이디 부여 및 변경 등)<br/>
+1. 회사는 회원에 대하여 본 약관에 정하는 바에 따라 회원 ID를 부여합니다.<br/>
+2. 회원이 원할 경우 회원 ID는 변경이 가능하며, 이 때 새로운 회원 ID는 다른 회원의 ID와 중복되지 않아야 합니다.<br/>
+3. 회원은 해당 홈페이지로 링크된 메뉴를 통하여 자신의 개인정보를 관리할 수 있는 페이지를 열람할 수 있으며, 해당 페이지에서 언제든지 본인의 개인정보를 열람하고 수정할 수 있습니다.<br/>
+4. 회사가 제공하는 서비스의 회원 ID는 회원 본인의 동의 하에 회사가 운영하는 자사 사이트의 회원 ID와 연결될 수 있습니다.<br/>
+5. 회원 ID는 다음 각 호에 해당하는 경우에 회원 또는 회사의 요청으로 변경할 수 있습니다.<br/>
+i.회원 ID가 회원의 전화번호 또는 주민등록번호 등으로 등록되어 사생활 침해가 우려되는 경우<br/>
+ii.타인에게 혐오감을 주거나 미풍양속에 어긋나는 경우<br/>
+iii.기타 합리적인 사유가 있는 경우<br/>
+6. 회원 ID 및 비밀번호의 관리책임은 회원에게 있습니다. 이를 소홀이 관리하여 발생하는 서비스 이용상의 손해 또는 제3자에 의한 부정이용 등에 대한 책임은 회원에게 있으며 회사는 그에 대한 책임을 일절 지지 않습니다.<br/>
+7. 기타 회원개인정보 관리 및 변경에 관한 사항은 서비스 별 안내에 정하는 바에 의합니다.<br/><br/>
+제3장 계약 당사자의 의무<br/><br/>
+제 10조 (회사의 의무)<br/>
+1. 회사는 관련법과 본 약관이 금지하거나 공서양속에 반하는 행위를 하지 않으며, 본 약관이 정하는 바에 따라 지속적이고, 안정적으로 서비스를 제공하기 위하여 최선을 다하여야 합니다.<br/>
+2. 회사는 회원이 안전하게 서비스를 이용할 수 있도록 회원의 개인정보보호를 위한 보안시스템을 구축하며 개인정보 보호정책을 공시하고 준수합니다.<br/>
+3. 회사는 수신거절의 의사를 명백히 표시한 회원에 대해서는 회원이 원하지 않는 영리목적의 광고성 전자우편(이메일)을 발송하지 않습니다.<br/>
+4. 회사는 이용계약의 체결, 계약사항의 변경 및 해지 등 회원과의 계약관계절차 및 내용 등에 있어 회원에게 편의를 제공하도록 노력합니다. 회사 관리자에게 회원이 구독해지 신청메일을 보낼 경우 회원 본인임을 확인한 후 즉시 구독해지 처리를 합니다.<br/>
+5. 회사는 이용고객으로부터 제기되는 의견이나 불만이 정당하다고 객관적으로 인정될 경우에는 적절한 절차를 거쳐 즉시 처리하여야 합니다.<br/>
+다만, 즉시 처리가 곤란한 경우는 이용자에게 그 사유와 처리 일정을 통보하여야 합니다.<br/><br/>
+제 11조 (회원 ID 및 비밀번호에 대한 의무)<br/>
+1. 회사가 관계법령 및 개인정보보호정책에 의하여 그 책임을 지는 경우를 제외하고, 회원 ID와 비밀번호의 관리책임은 회원에게 있습니다.<br/>
+2. 회원은 자신의 ID 및 비밀번호를 제3자가 이용하게 해서는 안됩니다.<br/>
+3. 회원이 자신의 ID 및 비밀번호를 도용 당하거나 제3자가 사용하고 있음을 인지한 경우에는 바로 회사에 통보하고 회사의 안내가 있는 경우에는 그에 따라야 합니다.<br/>
+4. 회사는 회원이 상기 제1항, 제2항, 제3항을 위반하여 회원에게 발생한 손해에 대하여 책임을 일절 지지 않습니다.<br/><br/>
+제 12조 (회원의 의무)<br/>
+1. 회원은 본 약관에 규정하는 사항과 기타 회사가 정한 제반 규정, 서비스 이용안내 또는 공지사항 등 회사가 공지 또는 통지하는 사항 및 관계법령을 준수하여야 하며, 기타 회사의 업무에 방해가 되는 행위, 회사의 명예를 손상 시키는 행위를 하여서는 안됩니다.<br/>
+2. 회사가 관계법령 및 개인정보보호정책에 의하여 그 책임을 지는 경우를 제외하고 제11조의 관리소홀, 부정사용에 의하여 발생되는 모든 결과에 대한 책임은 회원에게 있습니다.<br/>
+3. 회원은 회사의 사전승낙 없이 서비스를 이용하여 영업활동을 할 수 없으며, 회원 간 또는 회원과 제3자 간에 서비스를 매개로 한 물품거래 및 서비스의 이용과 관련하여 기대하는 이익 등에 관하여 발생한 손해에 대하여 회사는 책임을 지지 않습니다. 이와 같은 영업활동으로 회사가 손해를 입은 경우 회원은 회사에 대하여 손해배상의 의무를 지며, 회사는 해당 회원에 대해 서비스 이용제한 및 적법한 절차를 거쳐 손해배상 등을 청구할 수 있습니다.<br/>
+4. 회원은 회사의 명시적인 동의가 없는 한 서비스의 이용권한, 기타 이용계약 상의 지위를 타인에게 양도, 증여할 수 없으며, 이를 담보로 제공할 수 없습니다.<br/>
+5. 회원은 서비스 이용과 관련하여 제22조 제1항의 각 호에 해당하는 행위를 하여서는 안됩니다.<br/>
+6. 이용자는 회원가입 신청 또는 회원정보 변경 시 모든 사항을 사실에 근거하여 작성하여야 하며, 허위 또는 타인의 정보를 등록할 경우 일체의 권리를 주장할 수 없습니다.<br/>
+7. 회원은 주소, 연락처, 전자우편 주소 등 이용계약사항이 변경된 경우에 해당 절차를 거쳐 이를 회사에 즉시 알려야 합니다.<br/>
+8. 회원은 회사 및 제 3자의 지적 재산권을 침해해서는 안됩니다.<br/>
+9. 회원은 다음 각 호에 해당하는 행위를 하여서는 안되며, 해당 행위를 하는 경우에 회사는 회원의 서비스 이용제한 및 적법 조치를 포함한 제재를 가할 수 있습니다.<br/>
+i.회원가입 신청 또는 회원정보 변경 시 허위내용을 등록하는 행위<br/>
+ii.다른 이용자의 ID, 비밀번호, 주민등록번호를 도용하는 행위<br/>
+iii.이용자 ID를 타인과 거래하는 행위<br/>
+iv.회사의 운영진, 직원 또는 관계자를 사칭하는 행위<br/>
+v.회사로부터 특별한 권리를 부여 받지 않고 회사의 클라이언트 프로그램을 변경하거나, 회사의 서버를 해킹하거나, 웹사이트 또는 게시된 정보의 일부분 또는 전체를 임의로 변경하는 행위<br/>
+vi.서비스에 위해를 가하거나 고의로 방해하는 행위<br/>
+vii.본 서비스를 통해 얻은 정보를 회사의 사전 승낙 없이 서비스 이용 외의 목적으로 복제하거나, 이를 출판 및 방송 등에 사용하거나, 제 3자에게 제공하는 행위<br/>
+viii.회사 또는 제 3자의 저작권 등 기타 지적재산권을 침해하는 내용을 전송, 게시, 전자우편 또는 기타의 방법으로 타인에게 유포하는 경우<br/>
+ix.공공질서 및 미풍양속에 위반되는 저속, 음란한 내용의 정보, 문장, 도형, 음향, 동영상을 전송, 게시, 전자우편 또는 기타의 방법으로 타인에게 유포하는 행위<br/>
+x.모욕적이거나 개인신상에 대한 내용이어서 타인의 명예나 프라이버시를 침해할 수 있는 내용을 전송, 게시, 전자우편 또는 기타의 방법으로 타인에게 유포하는 행위<br/>
+xi.다른 이용자를 희롱 또는 위협하거나, 특정 이용자에게 지속적으로 고통 또는 불편을 주는 행위<br/>
+xii.회사의 승인을 받지 않고 다른 사용자의 개인정보를 수집 또는 저장하는 행위<br/>
+xiii.범죄와 결부된다고 객관적으로 판단되는 행위<br/>
+xiv.본 약관을 포함하여 기타 회사가 정한 제반 규정 또는 이용 조건을 위반하는 행위<br/>
+xv.기타 관계법령에 위배되는 행위<br/><br/>
+제 4 장 서비스 이용<br/><br/>
+제 13조 (서비스의 제공 및 변경)<br/>
+1. 회사는 회사가 제공하는 서비스에서 진행하는 콘텐츠와 이벤트 등의 모든 서비스를 회원에게 제공합니다.<br/>
+2. 회사에서 제공하는 서비스는 기본적으로 무료입니다. 유료서비스 추가 시 사전 공지하며 이용에 대한 사항은 회사가 별도로 정한 서비스 약관 및 정책 또는 운영규칙에 따릅니다.<br/>
+3. 회사는 서비스 변경 시 그 변경될 서비스의 내용 및 제공일자를 제 14조에 정한 방법으로 회원에게 통지합니다.<br/><br/>
+제 14조 (정보의 제공 및 통지)<br/>
+1. 회사는 회원이 서비스 이용 중 필요하다고 인정되는 다양한 정보를 공지사항 혹은 전자우편 등의 방법으로 회원에게 제공할 수 있습니다.<br/>
+2. 회사는 불특정다수 회원에 대한 통지를 하는 경우 7일 이상 공지 게시판에 게시함으로써 개별 통지에 갈음할 수 있습니다.<br/><br/>
+제 15조 (게시물의 저작권 및 관리)<br/>
+1. 회사는 회원의 게시물을 소중하게 생각하며 변조, 훼손, 삭제되지 않도록 최선을 다하여 보호합니다.<br/>
+다만, 다음 각 호에 해당하는 게시물이나 자료의 경우 사전통지 없이 삭제하거나 이동 또는 등록 거부를 할 수 있으며, 해당 회원의 자격을 제한, 정지 또는 상실시킬 수 있습니다.<br/>
+i.다른 회원 또는 제3자에게 심한 모욕을 주거나 명예를 손상시키는 내용인 경우<br/>
+ii.공공질서 및 미풍양속에 위반되는 내용을 유포하거나 링크시키는 경우<br/>
+iii.불법복제 또는 해킹을 조장하는 내용인 경우<br/>
+iv.영리를 목적으로 하는 광고일 경우<br/>
+v.범죄적 행위에 결부된다고 인정되는 내용인 경우<br/>
+vi.회사나 다른 회원의 저작권 혹은 제3자의 저작권 등 기타 권리를 침해하는 내용인 경우<br/>
+vii.회사에서 규정한 게시물 원칙에 어긋나거나, 게시판 성격에 부합하지 않는 경우<br/>
+viii.스팸성 게시물인 경우<br/>
+ix.기타 관계법령에 위배된다고 판단되는 경우<br/>
+2. 회사가 작성한 저작물에 대한 저작권 및 기타 지적재산권은 회사에 귀속됩니다.<br/>
+3. 회원이 서비스 화면 내에 게시한 게시물의 저작권은 게시한 회원에게 귀속됩니다. 또한 회사는 게시자의 동의 없이 게시물을 상업적으로 이용할 수 없습니다.<br/>
+다만, 비영리 목적인 경우는 그러하지 아니하며, 또한 본 사이트 내에서의 게재권을 갖습니다.<br/>
+4. 회원은 서비스를 이용하여 취득한 정보를 회사의 사전 승낙 없이 임의가공, 판매, 복제, 송신, 출판, 배포, 방송 기타 방법에 의하여 영리목적으로 이용하거나 제3자에게 이용하게 하여서는 안됩니다.<br/><br/>
+제 16조 (광고게재 및 광고주와의 거래)<br/>
+1. 회사가 제공하는 서비스 내에 다양한 배너와 링크(Link)를 포함할 수 있으며, 이는 광고주와의 계약관계에 의하거나 제공받은 콘텐츠의 출처를 밝히기 위한 조치입니다.<br/>
+회원은 서비스 이용 시 노출되는 광고게재에 대해 동의합니다.<br/>
+2. 서비스 내에 포함되어 있는 링크를 클릭하여 타 사이트의 페이지로 옮겨갈 경우 해당 사이트의 개인정보보호정책은 회사와 무관합니다.<br/><br/>
+제 17조 (서비스 이용시간)<br/>
+1. 서비스 이용은 회사의 업무상 또는 기술상 특별한 지장이 없는 한 연중무휴, 1일 24시간 운영을 원칙으로 합니다. 다만, 회사는 시스템 정기점검, 증설 및 교체를 위해 회사가 정한 날이나 시간에 서비스를 일시 중단할 수 있으며, 예정되어 있는 작업으로 인한 서비스 일시 중단은 회사가 제공하는 서비스를 통해 사전에 공지합니다.<br/>
+2. 회사는 서비스를 일정 범위로 분할하여 각 범위 별로 이용가능시간을 별도로 지정할 수 있습니다. 다만, 이 경우 그 내용을 공지합니다.<br/><br/>
+제 18조 (서비스 제공의 중단 등)<br/>
+1. 회사는 다음 각 호의 내용에 해당하는 경우 서비스 제공의 일부 혹은 전부를 제한하거나 중단할 수 있습니다.<br/>
+i.정보통신설비의 보수 점검, 교체 및 고장 등 공사로 인한 부득이 한 경우<br/>
+ii.기간통신사업자가 전기통신서비스를 중단했을 경우<br/>
+iii.서비스 이용의 폭주 등으로 정상적인 서비스 이용에 지장이 있는 경우<br/>
+iv.국가비상사태 등 기타 불가항력적인 사유가 있는 경우<br/>
+2. 전항에 의한 서비스 중단의 경우에는 회사는 제14조에 정한 방법으로 그 사유 및 기간 등을 공지합니다. 다만, 회사가 통제할 수 없는 사유로 발생한 서비스의 중단 (시스템관리자의 고의, 과실 없는 디스크 장애, 시스템다운 등)에 대하여 사전공지가 불가능한 경우에는 예외로 합니다.
+제 19조 (회원 ID 관리)<br/>
+1. 회원 ID와 비밀번호에 관한 모든 관리책임은 회원에게 있습니다.<br/>
+2. 회사는 회원 ID에 의하여 제반 회원 관리업무를 수행하므로 회원이 ID를 변경하고자 하는 경우 회사가 인정할 만한 사유가 없는 한 ID의 변경을 제한할 수 있습니다.<br/>
+3. 회원이 등록한 회원 ID 및 비밀번호에 의하여 발생되는 사용상의 과실 또는 제3자에 의한 부정사용 등에 대한 모든 책임은 해당 이용고객에게 있습니다.<br/><br/>
+제 20조 (정보의 제공)<br/>
+1. 회사는 회원에게 서비스 이용에 필요가 있다고 인정되는 각종 정보에 대해서 전자우편이나 서신우편 등의 방법으로 회원에게 제공할 수 있습니다.<br/>
+2. 회사는 서비스 개선 및 회원 대상의 서비스 소개 등의 목적으로 회원의 동의 하에 추가적인 개인 정보를 요구할 수 있습니다.<br/><br/>
+제5장 계약해지 및 이용제한<br/><br/>
+제 21조 (계약 변경 및 해지)<br/>
+회원이 이용계약을 해지하고자 하는 경우에는 회원 본인이 사이트 내의 개인정보관리 페이지를 통해 등록해지 신청을 하여야 합니다.<br/><br/>
+제 22조 (서비스 이용 제한)<br/>
+1. 회원은 본 약관 제11조, 제12조 내용을 위반하거나 다음 각 호에 해당하는 행위를 하는 경우에 회사는 회원의 서비스 이용을 제한할 수 있습니다.<br/>
+i.미풍양속을 저해하는 비속한 ID 및 별명 사용<br/>
+ii.타 이용자에게 심한 모욕을 주거나, 서비스 이용을 방해한 경우<br/>
+iii.정보통신 윤리위원회 등 관련 공공기관의 시정 요구가 있는 경우<br/>
+iv.3개월 이상 서비스를 이용한 적이 없는 경우<br/>
+v.불법 게시물을 게재한 경우<br/>
+• 상용소프트웨어나 크랙파일을 올린 경우<br/>
+• 정보통신윤리위원회의 심의세칙 제 7조에 어긋나는 음란물을 게재한 경우<br/>
+• 반국가적 행위의 수행을 목적으로 하는 내용을 포함한 경우<br/>
+• 저작권이 있는 글을 무단 복제하거나 mp3를 게재한 경우<br/>
+vi.기타 정상적인 서비스 운영에 방해가 될 경우<br/>
+2. 상기 이용제한 규정에 따라 서비스를 이용하는 회원에게 서비스 이용에 대하여 별도 공지 없이 서비스 이용의 일시 정지, 초기화, 이용계약 해지 등을 불량이용자 처리규정에 따라 취할 수 있으며, 회원은 전항의 귀책사유로 인하여 회사나 다른 회원에게 입힌 손해를 배상할 책임이 있습니다.<br/><br/>
+제 6 장 손해배상 및 기타사항<br/><br/>
+제 23조 (손해배상)<br/>
+회사는 무료로 제공하는 서비스의 이용과 관련하여 개인정보보호정책에서 정하는 내용에 해당하지 않는 사항에 대하여는 어떠한 손해도 책임을 지지 않습니다.<br/><br/>
+제 24조 (면책조항)<br/>
+1. 회사는 천재지변, 전쟁 및 기타 불가항력, 회사의 합리적인 통제범위를 벗어난 사유로 인하여 서비스를 제공할 수 없는 경우에는 그에 대한 책임이 면제됩니다.<br/>
+2. 회사는 기간통신 사업자가 전기통신 서비스를 중지하거나 정상적으로 제공하지 아니하여 손해가 발생한 경우 책임이 면제됩니다.<br/>
+3. 회사는 서비스용 설비의 보수, 교체, 정기점검, 공사 등 부득이한 사유로 발생한 손해에 대한 책임이 면제됩니다.<br/>
+4. 회사는 이용자의 귀책사유로 인한 서비스 이용의 장애 또는 손해에 대하여 책임을 지지 않습니다.<br/>
+5. 회사는 이용자의 컴퓨터 오류에 의해 손해가 발생한 경우, 또는 회원이 신상정보 및 전자우편 주소를 부실하게 기재하여 손해가 발생한 경우 책임을 지지 않습니다.<br/>
+6. 회사는 회원이 서비스를 이용하여 기대하는 수익을 얻지 못하거나 상실한 것에 대하여 책임을 지지 않습니다.<br/><br/>
+제 25조 (분쟁의 해결)<br/>
+1. 회사와 회원은 서비스와 관련하여 발생한 분쟁을 원만하게 해결하기 위하여 필요한 노력을 합니다.<br/>
+2. 회사는 회원으로부터 제출되는 불만사항 및 의견을 우선적으로 처리합니다. 다만, 신속한 처리가 곤란한 경우에는 회원에게 그 사유와 처리일정을 즉시 통보합니다.<br/><br/>
+제 26조 (재판권 및 준거법)<br/>
+회사와 회원 간에 서비스 이용으로 발생한 분쟁에 대하여는 대한민국법을 적용하며, 본 분쟁으로 인하여 소송이 제기될 경우 민사소송법 상의 관할을 가지는 대한민국의 법원에 제기합니다.
+본 약관은 2018년 04월 02일부터 적용됩니다.
+	</div>
+</div>
+<script>
+$(function(){
+	$(".f_bt_per").click(function(){
+		$('#dim').show();
+		$('.pop_personal').show();
+
+		$(".close").click(function(){
+			$('#dim').hide();
+			$('.pop_personal').hide();
+		});
+	});
+})
+
+$(function(){
+	$(".f_bt_use").click(function(){
+		$('#dim').show();
+		$('.pop_use').show();
+
+		$(".close").click(function(){
+			$('#dim').hide();
+			$('.pop_use').hide();
+		});
+	});
+})
+
+
+</script>
+
+<!-- 접근성추가 -->
+<a href="#wrap_prev_mcon" class="sknavi">본문 바로가기</a>
+<a href="#gnb" class="sknavi2">주메뉴 바로가기</a>
+<a href="#wrap_footer" class="sknavi3">하단영역 바로가기</a>
+
+<!-- 개발팀에서 사용하는 부분 -->
+<form name="actForm">
+	<input type="hidden" name="act" value="">
+	<input type="hidden" name="bd_num" value="">
+	<input type="hidden" name="scrID" value="">
+	<input type="hidden" name="pageNum" value="">
+	<input type="hidden" name="subNum" value="">
+	<input type="hidden" name="s_cat" value="">
+</form>
+<!-- *********************************************** -->
+
+
+<div id="inner_wrap">
+
+<!-- Quick -->
+<div class="wrap_quick">
+	<ul>
+<!-- 		<li><a href="https://www.facebook.com/AIYANGJAEHUB" target="_blank"><img src="/images/common/quick_01.png" class="off"/><img src="/images/common/quick_01_on.png"  class="on"/></a></li> -->
+		<li><a href="https://www.youtube.com/channel/UC0hK-LW75qiENyZPNZanGXg?view_as=subscriber" target="_blank"><img src="/images/common/quick_02.png" class="off"/><img src="/images/common/quick_02_on.png"  class="on"/></a></li>
+		<li><a href="https://www.instagram.com/aiyangjaehub_official/" target="_blank"><img src="/images/common/quick_03.png" class="off"/><img src="/images/common/quick_03_on.png"  class="on"/></a></li>
+		<li><a href="/board/board_basic/board_list.asp?scrID=0000000170&pageNum=4&subNum=1&ssubNum=1" target="_blank"><img src="/images/common/quick_04.png" class="off"/><img src="/images/common/quick_04_on.png"  class="on"/></a></li>
+	</ul>
+</div>
+<!-- // Quick -->
+
+<!-- 라이트 햄버거메뉴 모바일 -->
+<nav id="menu" style="display: none;">
+    <div class="cate_content">
+        <div class="cate_all">
+            <ul class="nav_list">
+<li class='nav_depth1 lcd_category' id='lcd_category1' link='/board/board_basic/board_list.asp?scrID=0000000204&pageNum=2&subNum=1&ssubNum=1'><span>소속기업</span></li><li class='nav_depth2 lcd_category1 ' style='display:none;' link='/board/board_basic/board_list.asp?scrID=0000000204&pageNum=2&subNum=1&ssubNum=1'>소속기업 소식</li><li class='nav_depth2 lcd_category1 ' style='display:none;' link='https://directory.seoulaihub.kr/members'>소속기업 현황</li><li class='nav_depth2 lcd_category1 ' style='display:none;' link='/partner/partner_pop.asp?scrID=0000000220&pageNum=2&subNum=3&ssubNum=1'>입주절차 안내</li><li class='nav_depth1 lcd_category' id='lcd_category1' link='/fac/fac01_05.asp?scrID=0000000167&pageNum=3&subNum=1&ssubNum=1'><span>시설소개</span></li><li class='nav_depth2 lcd_category1 ' style='display:none;' link='/fac/fac01_05.asp?scrID=0000000167&pageNum=3&subNum=1&ssubNum=1'>시설 안내</li><li class='nav_depth2 lcd_category1 ' style='display:none;' link='/board/board_reserve/board_list.asp?scrID=0000000196&pageNum=3&subNum=2&ssubNum=1'>시설 예약</li><li class='nav_depth2 lcd_category1 ' style='display:none;' link='/board/board_reserve/board_list_check.asp?scrID=0000000178&pageNum=3&subNum=3&ssubNum=1'>시설 예약 확인 및 취소</li><li class='nav_depth1 lcd_category' id='lcd_category1' link='/board/board_basic/board_list.asp?scrID=0000000170&pageNum=4&subNum=1&ssubNum=1'><span>허브소식</span></li><li class='nav_depth2 lcd_category1 ' style='display:none;' link='/board/board_basic/board_list.asp?scrID=0000000170&pageNum=4&subNum=1&ssubNum=1'>공지사항</li><li class='nav_depth2 lcd_category1 ' style='display:none;' link='/board/board_data02/board_list.asp?scrID=0000000171&pageNum=4&subNum=2&ssubNum=1'>보도자료</li><li class='nav_depth2 lcd_category1 ' style='display:none;' link='/board/board_photo02/board_list.asp?scrID=0000000197&pageNum=4&subNum=3&ssubNum=1'>홍보영상</li><li class='nav_depth2 lcd_category1 ' style='display:none;' link='/com/com09.asp?scrID=0000000218&pageNum=4&subNum=4&ssubNum=1'>기업 소개 책자</li><li class='nav_depth2 lcd_category1 ' style='display:none;' link='/board/board_basic03/board_list.asp?scrID=0000000198&pageNum=4&subNum=5&ssubNum=1'>정부·유관기관 소식</li><li class='nav_depth2 lcd_category1 ' style='display:none;' link='/board/board_faq/board_list.asp?scrID=0000000203&pageNum=7&subNum=1&ssubNum=1'>자주묻는질문</li><li class='nav_depth1 lcd_category' id='lcd_category1' link='/com/com01.asp?scrID=0000000158&pageNum=5&subNum=1&ssubNum=1'><span>허브소개</span></li><li class='nav_depth2 lcd_category1 ' style='display:none;' link='/com/com01.asp?scrID=0000000158&pageNum=5&subNum=1&ssubNum=1'>서울 AI 허브 소개</li><li class='nav_depth2 lcd_category1 ' style='display:none;' link='/com/com07.asp?scrID=0000000207&pageNum=5&subNum=2&ssubNum=1'>센터장 인사말</li><li class='nav_depth2 lcd_category1 ' style='display:none;' link='/com/com08.asp?scrID=0000000209&pageNum=5&subNum=3&ssubNum=1'>센터 연혁</li><li class='nav_depth2 lcd_category1 ' style='display:none;' link='/com/com06.asp?scrID=0000000191&pageNum=5&subNum=4&ssubNum=1'>운영팀 소개</li><li class='nav_depth2 lcd_category1 ' style='display:none;' link='/com/com05.asp?scrID=0000000189&pageNum=5&subNum=5&ssubNum=1'>CI 소개</li><li class='nav_depth2 lcd_category1 ' style='display:none;' link='/com/com04.asp?scrID=0000000161&pageNum=5&subNum=6&ssubNum=1'>오시는길</li>
+				<li class="nav_mem"><a href="javascript:goMemLink(1);">로그인</a></li>
+				<li class="nav_mem"><a href="/mem/mem_join_intro.asp?pageNum=7&subNum=8">회원가입</a></li>
+
+				
+				<li class="nav_mem nav_lang"><a href="/eng1/index2.asp">English</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<header id="wrap_header" class="wrap_header02 ">
+
+	<div class="header_topper">
+		<div class="container">
+			<!--div class="ht_search">
+				<input type="text" placeholder="통합검색" />
+				<button>검색</button>
+			</div-->
+			<div class="tnb">
+				<ul>
+					
+					<li><a href="javascript:goMemLink(1);">로그인</a></li>
+					<li><a href="/mem/mem_join_intro.asp?pageNum=7&subNum=8">회원가입</a></li>
+
+					
+					<!--li><a href="javascript:addFavorite(this, event);">즐겨찾기</a></li-->
+					<li class="nav_lang"><a href="/eng1/index2.asp">ENGLISH</a></li>
+				</ul>
+			</div>
+			<div class="sns_icon">
+				<ul>
+<!-- 					<li><a href="https://www.facebook.com/AIYANGJAEHUB" target="_blank"><img src="/images/common/quick_01.png" class="off"/><img src="/images/common/quick_01_on.png"  class="on"/></a></li> -->
+					<li><a href="https://www.youtube.com/channel/UC0hK-LW75qiENyZPNZanGXg?view_as=subscriber" target="_blank"><img src="/images/common/quick_02.png" class="off"/><img src="/images/common/quick_02_on.png"  class="on"/></a></li>
+					<li><a href="https://www.instagram.com/seoulaihub_official/" target="_blank"><img src="/images/common/quick_03.png" class="off"/><img src="/images/common/quick_03_on.png"  class="on"/></a></li>
+					<li><a href="/board/board_basic/board_list.asp?scrID=0000000170&pageNum=4&subNum=1&ssubNum=1" target="_blank"><img src="/images/common/quick_04.png" class="off"/><img src="/images/common/quick_04_on.png"  class="on"/></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="snb_bg" style="display: none;"></div>
+	<!-- PC header -->
+	<div class="header container">
+		<h1 class="logo"><a href="/index.asp"><img src="/images/common/logo_2312.png" alt="양재R&D 혁신허브" class=""/></a></h1>
+		<nav class="gnb">
+            <ul>
+
+
+				<li class="gnb_list" id="gnb">
+                	<a href="/board/board_basic/board_list.asp?scrID=0000000204&pageNum=2&subNum=1&ssubNum=1" class="gnb_tit"><span class="hvr-underline-from-center">소속기업</span></a>
+                    <div class="gnb_bg">
+                    	<ul class="menu snb1" style="display: none;">
+
+                        	<li><a href="/board/board_basic/board_list.asp?scrID=0000000204&pageNum=2&subNum=1&ssubNum=1" ><span>소속기업 소식</span></a></li>
+
+
+
+                        	<li><a href="https://directory.seoulaihub.kr/members"  target='_blank'><span>소속기업 현황</span></a></li>
+
+
+
+                        	<li><a href="/partner/partner_pop.asp?scrID=0000000220&pageNum=2&subNum=3&ssubNum=1" ><span>입주절차 안내</span></a></li>
+
+
+
+						</ul>
+					</div>
+				</li>
+
+				<li class="gnb_list" id="gnb">
+                	<a href="/fac/fac01_05.asp?scrID=0000000167&pageNum=3&subNum=1&ssubNum=1" class="gnb_tit"><span class="hvr-underline-from-center">시설소개</span></a>
+                    <div class="gnb_bg">
+                    	<ul class="menu snb1" style="display: none;">
+
+                        	<li><a href="/fac/fac01_05.asp?scrID=0000000167&pageNum=3&subNum=1&ssubNum=1" ><span>시설 안내</span></a></li>
+
+
+
+                        	<li><a href="/board/board_reserve/board_list.asp?scrID=0000000196&pageNum=3&subNum=2&ssubNum=1" ><span>시설 예약</span></a></li>
+
+
+
+                        	<li><a href="/board/board_reserve/board_list_check.asp?scrID=0000000178&pageNum=3&subNum=3&ssubNum=1" ><span>시설 예약 확인 및 취소</span></a></li>
+
+
+
+						</ul>
+					</div>
+				</li>
+
+				<li class="gnb_list" id="gnb">
+                	<a href="/board/board_basic/board_list.asp?scrID=0000000170&pageNum=4&subNum=1&ssubNum=1" class="gnb_tit"><span class="hvr-underline-from-center">허브소식</span></a>
+                    <div class="gnb_bg">
+                    	<ul class="menu snb1" style="display: none;">
+
+                        	<li><a href="/board/board_basic/board_list.asp?scrID=0000000170&pageNum=4&subNum=1&ssubNum=1" ><span>공지사항</span></a></li>
+
+
+
+                        	<li><a href="/board/board_data02/board_list.asp?scrID=0000000171&pageNum=4&subNum=2&ssubNum=1" ><span>보도자료</span></a></li>
+
+
+
+                        	<li><a href="/board/board_photo02/board_list.asp?scrID=0000000197&pageNum=4&subNum=3&ssubNum=1" ><span>홍보영상</span></a></li>
+
+
+
+                        	<li><a href="/com/com09.asp?scrID=0000000218&pageNum=4&subNum=4&ssubNum=1" ><span>기업 소개 책자</span></a></li>
+
+
+
+                        	<li><a href="/board/board_basic03/board_list.asp?scrID=0000000198&pageNum=4&subNum=5&ssubNum=1" ><span>정부·유관기관 소식</span></a></li>
+
+
+
+                        	<li><a href="/board/board_faq/board_list.asp?scrID=0000000203&pageNum=7&subNum=1&ssubNum=1" ><span>자주묻는질문</span></a></li>
+
+
+
+						</ul>
+					</div>
+				</li>
+
+				<li class="gnb_list" id="gnb">
+                	<a href="/com/com01.asp?scrID=0000000158&pageNum=5&subNum=1&ssubNum=1" class="gnb_tit"><span class="hvr-underline-from-center">허브소개</span></a>
+                    <div class="gnb_bg">
+                    	<ul class="menu snb1" style="display: none;">
+
+                        	<li><a href="/com/com01.asp?scrID=0000000158&pageNum=5&subNum=1&ssubNum=1" ><span>서울 AI 허브 소개</span></a></li>
+
+
+
+                        	<li><a href="/com/com07.asp?scrID=0000000207&pageNum=5&subNum=2&ssubNum=1" ><span>센터장 인사말</span></a></li>
+
+
+
+                        	<li><a href="/com/com08.asp?scrID=0000000209&pageNum=5&subNum=3&ssubNum=1" ><span>센터 연혁</span></a></li>
+
+
+
+                        	<li><a href="/com/com06.asp?scrID=0000000191&pageNum=5&subNum=4&ssubNum=1" ><span>운영팀 소개</span></a></li>
+
+
+
+                        	<li><a href="/com/com05.asp?scrID=0000000189&pageNum=5&subNum=5&ssubNum=1" ><span>CI 소개</span></a></li>
+
+
+
+                        	<li><a href="/com/com04.asp?scrID=0000000161&pageNum=5&subNum=6&ssubNum=1" ><span>오시는길</span></a></li>
+
+
+
+						</ul>
+					</div>
+				</li>
+
+			</ul>
+		</nav>
+
+
+
+
+
+
+        <div class="right_menu">
+            <a href="javascript:togRightMenu();" class="menu-right">
+            	<ul>
+                    <li>menubar</li>
+                    <li>menubar</li>
+                    <li>menubar</li>
+                </ul>
+            </a>
+        </div>
+		<!--a href="javascript:();" class="ht_bt_search">검색하기</a>
+		<div class="ht_search ht_search02">
+			<input type="text" placeholder="통합검색" />
+			<button>검색</button>
+		</div-->
+	</div>
+</header>
+<!--wrap_header E-->
+
+<div id="menu_dim"></div>
+
+
+<!-- 탑버튼 -->
+<a id="top_btn" href="#" style="display: none;">TOP</a>
+
+<!-- 메뉴드롭 -->
+<script type="text/javascript">
+
+$(function(){
+	// 하나씩 나올때
+    $('.gnb_list').hover(function(){
+        $(this).addClass("active");
+     }, function(){
+        $(this).removeClass("active");
+    });
+
+
+
+
+
+	//슬라이드되는 스크립트
+	$(".gnb_list, .snb_bg").mouseenter(function(){
+		$(".menu, .snb_bg").stop();
+		$(".menu, .snb_bg").slideDown();
+		$("#menu_dim").addClass("active");
+
+		$("#wrap_header").addClass("active");
+		$(".header h1 a").addClass("on");
+	}).mouseleave(function(){
+		$(".menu, .snb_bg").stop();
+		$(".menu, .snb_bg").slideUp();
+
+		$("#wrap_header").removeClass("active");
+		$(".header h1 a").removeClass("on");
+		$("#menu_dim").removeClass("active");
+	});
+
+
+
+});
+
+</script>
+
+<script type="text/javascript">
+//모바일
+// 햄버거메뉴
+$(function() {
+
+	$('.ht_bt_search').click(function(){
+		$('.ht_search02').toggleClass('active');
+		$(this).toggleClass('active');
+	});
+
+
+	var bViewMenu = false;
+	$('.right_menu').click(function(){
+		var obj = $('#menu');
+		obj.slideToggle(200);
+		if(!bViewMenu)
+		{
+		//	$(document.body).css("overflow", "hidden");
+			$(document.body).css("overflow", "auto");
+		}else
+		{
+			$(document.body).css("overflow", "auto");
+		}
+		bViewMenu = !bViewMenu;
+	});
+});
+
+// 햄버거메뉴 카테고리 메뉴항목 클릭시 하위메뉴 토글
+$(function(){
+	var show_cate = "";
+	var toggle_val = 0;
+
+	$(".nav_depth1").on("click", function(){
+		if(typeof($(this).attr("link")) == "undefined")
+			$(this).nextUntil(".nav_depth1").slideToggle();
+		else
+		{
+			if($(this).attr("link").indexOf("http://")==0 || $(this).attr("link").indexOf("https://")==0)
+				window.open($(this).attr("link"));
+			else if($(this).attr("link").indexOf("javascript")!=0)
+				location.href = $(this).attr("link");
+			else
+				eval($(this).attr("link"));
+		}
+	});
+
+//	$(".nav_depth1").on("click", function(){
+//		$(this).nextUntil(".nav_depth1", ".nav_depth2").slideToggle();
+//	});
+
+	$(".nav_depth2").on("click", function(){
+		if(typeof($(this).attr("link")) == "undefined")
+			$(this).nextUntil(".nav_depth2", ".nav_depth3").slideToggle();
+		else
+		{
+			if($(this).attr("link").indexOf("http://")==0 || $(this).attr("link").indexOf("https://")==0)
+				window.open($(this).attr("link"));
+			else if($(this).attr("link").indexOf("javascript")!=0)
+				location.href = $(this).attr("link");
+			else
+				eval($(this).attr("link"));
+		}
+	});
+
+	$(".nav_depth3").on("click", function(){
+		location.href = $(this).attr("link");
+	});
+
+});
+
+// 햄버거막대 애니메이션
+var bRightMenu = false;
+function togRightMenu()
+{
+	if(!bRightMenu)
+	{
+		$(".right_menu li").addClass("on");
+		bRightMenu = true;
+	}else
+	{
+		$(".right_menu li").removeClass("on");
+		bRightMenu = false;
+	}
+};
+
+// 햄버거메뉴 리사이즈 숨김
+$(window).resize(function(){
+	if($(this).width()>992)
+	{
+		$('#menu').slideUp(0);
+//		$(".menu-close").css('display','none');
+//		$('.menu-right').css('display','block');
+
+		$(".right_menu li").removeClass("on");
+		bRightMenu = false;
+	}
+});
+</script>
+
+<script type="text/javascript">
+// 탑버튼
+$(function(){
+	$(window).scroll(function(){
+		// 스크롤 높이값에 실행
+		if ($(this).scrollTop() > 400) {
+			$('#top_btn').fadeIn();
+		} else {
+			$('#top_btn').fadeOut();
+		}
+
+		// 헤더 라인
+		if ($(this).scrollTop() > 1) {
+			$('#wrap_header').addClass('header_w');
+		} else {
+			$('#wrap_header').removeClass('header_w');
+		}
+	});
+
+	$("#top_btn").click(function(){
+		$('html, body').animate({
+			scrollTop : 0
+		}, 600);
+		return false;
+	});
+
+
+
+
+//	$(".nav_lang a").click(function(){
+//		alert("Preparing the homepage.");
+//	});
+
+});
+
+
+</script>
+
+
+
+
+
+
+<div id="wrap_mcon1" translate="no">
+	<div id="fullpage">
+		<section class="section page">
+			<div id="wrap_prev_mcon" >
+				<div class="section-01 scroll">
+					<style>
+#wrap_prev_mcon {margin-top:54px;}
+
+
+.wrap_prev_maincon_list{border:1px solid #ddd; border-radius:20px; padding:3em 0; background:#fff; margin-top:0 !important}
+.wrap_prev_maincon_list li{border-right:1px solid #ddd}
+.wrap_prev_maincon_list {width:100%; overflow:hidden; }
+.wrap_prev_maincon_list li {float:left; width:25%; padding:0 10px; box-sizing:border-box;}
+.wrap_prev_maincon_list li:last-child{border-right:none;}
+.wrap_prev_maincon_list li a {display:block; }
+.wrap_prev_maincon_list li a h3 {font-size:16px; color:#808093; padding-top:115px; font-weight:300; position:relative;}
+.wrap_prev_maincon_list li a h3::before {position:absolute; top:0; left:0; width:100%; height:90px; content:'';}
+.wrap_prev_maincon_list li a:hover h3::before{transform:rotateY(360deg); transition-duration:0.8s;transform:rotateY(360deg); transition-duration:0.8s;}
+
+.wrap_prev_maincon_list li a span {font-size:14px; color:#a86d87; display:inline-block; margin-top:10px; opacity:0; transition:all ease 0.3s;}
+.wrap_prev_maincon_list li a:hover span {opacity:1;}
+
+.wrap_prev_maincon_list li.ico01 a h3::before {background:url(/images/main/mcon01_ico01.png) no-repeat center 0;}
+.wrap_prev_maincon_list li.ico02 a h3::before {background:url(/images/main/mcon01_ico02.png) no-repeat center 0;}
+.wrap_prev_maincon_list li.ico03 a h3::before {background:url(/images/main/mcon01_ico03.png) no-repeat center 0;}
+.wrap_prev_maincon_list li.ico04 a h3::before {background:url(/images/main/mcon01_ico04.png) no-repeat center 0;}
+.wrap_prev_maincon_list li.ico05 a h3::before {background:url(/images/main/mcon01_ico05.png) no-repeat center 0;}
+
+.wrap_prev_maincon_list li.ico01 a:hover h3::before {background:url(/images/main/mcon01_ico01_on.png) no-repeat center 0;}
+.wrap_prev_maincon_list li.ico02 a:hover h3::before {background:url(/images/main/mcon01_ico02_on.png) no-repeat center 0;}
+.wrap_prev_maincon_list li.ico03 a:hover h3::before {background:url(/images/main/mcon01_ico03_on.png) no-repeat center 0;}
+.wrap_prev_maincon_list li.ico04 a:hover h3::before {background:url(/images/main/mcon01_ico04_on.png) no-repeat center 0;}
+.wrap_prev_maincon_list li.ico05 a:hover h3::before {background:url(/images/main/mcon01_ico05_on.png) no-repeat center 0;}
+
+
+
+.wrap_prev_maincon_list li a p {font-size:19px; color:#222; margin-top:10px;}
+
+
+
+.tit_ani01{position: relative; margin-bottom:20px; font-size:40px !important;}
+.tit_ani01:hover{font-size:40px !important}
+.tit_ani01:before{position:absolute; top:0; right:-7px; width:0; height:0; border-radius:100%; background:#f7941d; content:''; transition:all ease 0.3s;}
+.tit_ani01:hover:before{width:15px; height:15px;}
+
+
+@media (max-width:991px){
+.wrap_prev_maincon_list {margin-top:-30px;}
+.wrap_prev_maincon_list li {width:33.3%; margin-top:30px;}
+.wrap_prev_maincon_list{background:none; border:0; padding:0}
+.wrap_prev_maincon_list li{border-right:0}
+}
+
+@media (max-width:767px){
+.wrap_prev_maincon_list li {width:50%; }
+.wrap_prev_maincon_list li:nth-child(2n + 1) {clear:both;}
+.wrap_prev_maincon_list li a span {display:none!important;}
+}
+
+
+@media (max-width:620px){
+.tit_ani01{font-size:35px !important}
+}
+
+@media (max-width:550px){
+.tit_ani01{font-size:29px !important; padding-top:1em; }
+.tit_ani01:hover{font-size:29px !important}
+.tit_ani01:before{top:20px;}
+}
+
+@media (max-width:500px){
+.tit_ani01{font-size:24px !important;}
+.tit_ani01:hover{font-size:24px !important}
+}
+
+@media (max-width:450px){
+.tit_ani0:hover{font-size:27px !important}
+.tit_ani01:hover{font-size:24px !important}
+}
+
+@media (max-width:365px){
+.tit_ani01:before{display:none}
+}
+
+
+</style>
+
+
+
+<section class="container row">
+	<h2 class="tit_ani0 tit_ani01">SEOUL AI HUB KEY MENU</h2>
+
+	<ul class="wrap_prev_maincon_list">
+		<li class="ico01">
+			<a href="/com/com01.asp?scrID=0000000158&pageNum=5&subNum=1&ssubNum=1">
+				<h3>허브소개</h3>
+				<p>서울 AI 허브는 <br/>어떤 곳인가요?</p>
+				<span>자세히보기</span>
+			</a>
+		</li>
+<!-- 		<li class="ico03">
+			<a href="/board/board_program/board_list.asp?scrID=0000000163&pageNum=1&subNum=1&ssubNum=1">
+				<h3>프로그램</h3>
+				<p>다양한 프로그램들을 <br/>만나보세요!</p>
+				<span>자세히보기</span>
+			</a>
+		</li> -->
+		<li class="ico02">
+			<a href="/board/board_reserve/board_list.asp?scrID=0000000196&pageNum=3&subNum=2&ssubNum=1">
+				<h3>시설예약</h3>
+				<p>회의할 공간이 <br/>필요하신가요?</p>
+				<span>자세히보기</span>
+			</a>
+		</li>
+
+		<li class="ico04">
+			<a href="https://directory.seoulaihub.kr/members">
+				<h3>입주기업</h3>
+				<p>우리 입주기업을 <br/>소개합니다!</p>
+				<span>자세히보기</span>
+			</a>
+		</li>
+		<li class="ico05">
+			<a href="javascript:;" class="mcon01_ico05">
+				<h3>입주안내</h3>
+				<p>어떻게 입주할 수 <br/>있나요?</p>
+				<span>자세히보기</span>
+			</a>
+		</li>
+	</ul>
+</section>
+				</div>
+			</div>
+		</section>
+
+
+<!-- 		<section class="section page" style="background-color:rgb(249, 249, 249)">
+			<div class="section-02 section_scroll scroll">
+				<div class="mcon_wrap">
+					진행중인 프로그램
+					/include/main_con1.asp
+				</div>
+			</div>
+		</section> -->
+
+		<section class="section page bg01">
+			<div class="section-04 section_scroll scroll">
+				<div class="mcon_wrap">
+					<!-- 오늘의 소속기업 -->
+					<div class="main_con3">
+
+
+<script>
+$(document).ready(function() {
+var isVisible = false;
+
+$(window).on('scroll',function() {
+    if (checkVisible($('.main_con3_con'))&&!isVisible) {
+        $('.count').each(function () {
+			$(this).prop('Counter',0).animate({
+				Counter: $(this).text()
+			}, {
+				duration: 1500,
+				easing: 'swing',
+				step: function (now) {
+					$(this).text(Math.ceil(now));
+				}
+			});
+		});
+		isVisible=true;
+    }
+
+});
+
+function checkVisible( elm, eval ) {
+    eval = eval || "object visible";
+    var viewportHeight = $(window).height(), // Viewport Height
+        scrolltop = $(window).scrollTop(), // Scroll Top
+        y = $(elm).offset().top,
+        elementHeight = $(elm).height();
+
+    if (eval == "object visible") return ((y < (viewportHeight + scrolltop)) && (y > (scrolltop - elementHeight)));
+    if (eval == "above") return ((y < (viewportHeight + scrolltop)));
+}
+});
+</script>
+
+
+<style>
+.main_con3{padding:5em 0 0 0; float:left; width:100%; text-align:center;}
+.main_con3 h2{border-bottom:1px solid #333; margin:0 auto 3em auto; position: relative;}
+.main_con3 .mcon_more_bt {position:absolute; right:0; bottom:10%; transform:translateY(-10%)}
+
+.main_con3 h2 > div{position: relative; display:inline-block;}
+.main_con3 h2 > div:hover .hover_span_more{display:block}
+
+.main_con3 .mcon_n_tit {margin-bottom:20px;}
+
+
+.main_con3_con_list{display:flex; justify-content:center;}
+.main_con3_con_list > li:first-child::before{height:72%; left:197px;}
+.main_con3_con_list > li:not(:first-child)::before{height:72%; left:-1px;}
+.main_con3_con_list > li:nth-child(1){width:100%;}
+
+.main_con3_con_list > li strong.num{margin-top:10px;}
+
+
+
+/*.img_txt{height:150px; width:33em;}*/
+.img_txt{height:150px; width:50%; display:flex; flex-direction:column; align-items:flex-start !important; justify-content:space-between;}
+#toggle03 {background:none; width:10px; height:12px; border:0; font-size:0; line-height:0; text-indent:-99999999px; vertical-align:top; outline:none; cursor:pointer; margin-left:10px;}
+
+#toggle03.pause {
+    background: url(/images/main/stop1.png) no-repeat center center;
+    width: 26px;
+    height: 26px;
+}
+
+#toggle03.play {
+    background: url(/images/main/play1.png) no-repeat center center;
+    width: 26px;
+    height: 26px;
+}
+
+
+.outer{position: relative; width:50%; margin-right:1%}
+.outer > h2 > p{font-size:1.2rem; color:#666; margin-bottom:10px;}
+.main_con3_right{width:45%; margin-left:auto}
+.main_con3_right h2 {height:63px}
+/*.img_wrap{width:32em; max-width:100%; border:1px solid #000; padding:10px; margin-right:23px; box-sizing:border-box; background:#fff}*/
+.main_con3_right ul {width:100%}
+.main_con3_right ul li {width:100%; padding:15px 0;  font-weight:600; font-size:1.3em; display:flex; border-bottom:1px solid #999; align-items:center}
+ .main_con3_right ul li div {margin-left:auto; display:flex;  align-items:center}
+.main_con3_right ul li div b {font-size:2.7em; letter-spacing:-1.5px; margin:0 10px;line-height:1; color:#f7941d}
+
+
+.img_wrap{width:50%; max-width:100%; padding:10px; margin-right:23px; box-sizing:border-box; background:#fff}
+
+.item .resize{position: relative; display:block; height:0; padding-bottom:56%; box-sizing:border-box;}
+.item .resize > .re{position: absolute; left:0; right:0; top:0; bottom:0; box-sizing:border-box;}
+.bgfix{background-size:100% !important;}
+.item img{border:1px solid #000; padding:40px 60px; box-sizing:border-box; margin:10px  20px 10px 10px; }
+.item div{align-items:center; text-align:left}
+.item div p{font-size:1.2rem; font-weight:600; margin-bottom:10px;}
+.item div span{display:block; font-size:1rem;}
+.item div span:nth-of-type(1){text-overflow: ellipsis; overflow: hidden; word-break: break-word; display: -webkit-box;
+   -webkit-line-clamp: 2;  /*줄수*/
+    -webkit-box-orient: vertical; width:100% ;}
+.item div span:nth-of-type(2){border:1px solid #333; padding:10px 20px; margin-top:10px; border-radius:20px; display:inline-block;}
+.tabs {
+    padding-top:94px;
+}
+
+.tab {
+    display:none;
+}
+
+.tab.active {
+    display:block;
+}
+
+
+.buttons_tab{position: absolute; left:50%; top:20%; transform:translate(-50%,-20%); display:flex; align-items:center; width:100%; height: 47px;}
+
+.buttons_tab > button {
+font-size:1.3rem;
+font-weight:800; 
+border:0; 
+border-bottom:3px solid #000;
+width:50%;
+padding-bottom:12px;
+cursor: pointer;
+background:none;
+}
+
+.buttons_tab > button:first-child{margin-right:1em;}
+
+button.active {
+    color:#b4bd00;
+	border-bottom:3px solid #b4bd00;
+}
+
+
+.main_con3_2_slick-slider-dots .slick-dots li, .main_con3_2_slick-slider-dots .slick-dots li button, .main_con3_2_slick-slider-dots .slick-dots li button:before{width:13px; height:13px; border-radius:100%; vertical-align:top;}
+.main_con3_2_slick-slider-dots .slick-active, .main_con3_2_slick-slider-dots .slick-active button, .main_con3_2_slick-slider-dots .slick-dots li.slick-active button:before{width:30px !important; border-radius:13px}
+
+.main_con3_2_slick-slider-dots .slick-dots li.slick-active button:before{background:#090c6d}
+
+
+.main_con3_2_slick-slider-dots .slick-dots{top:auto !important; left:20%; text-align:left; width:auto;}
+
+.main_con3_2_control .buttons02{position: absolute; left:16%; bottom:-3%}
+
+.container.row{position: relative;}
+.main_con3_1_control{ display:flex; align-items:center;}
+.main_con3_1_control ul{display:flex;}
+	
+.main_con3_con_list{display:flex; flex-direction:column}
+.main_con3_con_list li{box-sizing:border-box; display:inline-block;}
+.main_con3_con_list > li:first-child:before{display:none}
+
+.main_con3_con_list div h3{color:#fff; padding:10px; font-weight:500; margin-bottom:20px; width:100%; box-sizing:border-box;}
+.main_con3_con_list div{display:flex; margin-top:20px; padding:0 10px; width:100%; box-sizing:border-box;}
+.main_con3_con_list div li{width:50%;}
+.main_con3_con_list div li:first-child{margin-right:1%;}
+.main_con3_con_list div li:last-child{margin-left:1%}
+.main_con3_con_list div li:first-child .img_bg1{background:#b4bd00}
+.main_con3_con_list div li:last-child .img_bg1{background:#a56a83}
+.main_con3_con_list div li:first-child h3{background:#b4bd00}
+.main_con3_con_list div li:last-child h3{background:#a56a83}
+.main_con3_con_list div li strong.num{display:block; text-align:center; font-size:50px; font-weight:600; line-height:1; color:#444; font-family:'Barlow', sans-serif; margin-top:10px;}
+
+
+
+.img_bg1{width:80px; height:80px; margin:0 auto; display:flex; align-items:center; justify-content:center; background:#; border-radius:50%}
+.main_con3_con_list > li > ul > li:nth-child(1) .img_bg1{background:#fbb056}
+.main_con3_con_list > li > ul > li:nth-child(2) .img_bg1{background:#0b109f}
+.main_con3_con_list > li > ul > li:nth-child(3) .img_bg1{background:#0b109f}
+.main_con3_con_list > li > ul > li:nth-child(4) .img_bg1{background:#0b109f}
+
+
+.main_con3_con_list > li:nth-child(2) .img_bg1{background:#b4bd00}
+.main_con3_con_list > li:nth-child(3) .img_bg1{background:#a56a83}
+.main_con3_con_list > li:nth-child(1) h3{background:#0b109f; color:#fff; padding:10px; font-weight:500} 
+.main_con3_con_list > li:nth-child(2) h3{background:#b4bd00; color:#fff; padding:10px; font-weight:500}
+.main_con3_con_list > li:nth-child(3) h3{background:#a56a83; color:#fff; padding:10px; font-weight:500}
+
+
+
+.main_con3_con_list {text-align:center;}
+.main_con3_con_list > li {position:relative; padding:0 10px; vertical-align:top;}
+.main_con3_con_list > li:not(:first-child)::before {position:absolute; content:''; width:1px; height:45px; background:#cccccc; left:-5px; top:55px;}
+
+.main_con3_con_list > li:first-child::before {position:absolute; content:''; width:1px; height:45px; background:#cccccc; left:135px; top:55px;}
+
+.main_con3_con_list > li strong.num {display:block; text-align:Center; font-size:50px; font-weight:600;font-family: 'Barlow', sans-serif; line-height:1;min-width:110px; color:#444}
+
+.main_con3_con_list > li span.txt {font-size:15px; color:#777777;}
+.main_con3_con_list > li ul li:last-child {padding:0 0 0 30px;}
+.main_con3_con_list > li ul li:first-child {padding:0 30px 0 0;}
+.main_con3_con_list > li h3 {font-size:18px; color:#333; margin-bottom:20px;}
+
+
+
+.slider01 .slick-slide{width:625px !important}
+
+
+
+
+
+@media (max-width:1300px){
+.slider01 .slick-slide{width:46.49vw !important; padding:0 10px; box-sizing:border-box;}
+
+}
+
+
+@media (max-width:1200px){
+.buttons_tab{top:22%; transform:translate(-50%,-22%)}
+}
+
+@media (max-width:1100px){
+.buttons_tab{top:20%; transform:translate(-50%,-20%)}
+
+.main_con3 .container{max-width:95%; margin:0 auto; padding:0;}
+.main_con3_con_list{gap:0;}
+.main_con3_con_list > li ul li:first-child{padding:0;}
+.main_con3_con_list{flex-wrap:wrap; gap:1em;}
+.main_con3_con_list > li{flex-grow:1; flex-basis:208px;}
+.main_con3_con_list > li:not(:first-child)::before{display:none;}
+.main_con3_con_list > li ul li{margin-bottom:1em;}
+.main_con3_con_list > li{margin-top:0;}
+}
+
+
+
+
+
+@media (max-width:1024px){
+.main_con3{padding:5em 0 !important;}
+
+.main_con3_con_list{width:100%;}
+.main_con3_1_control{top:6%; right:0%; transform:translate(-0%,-6%)}
+
+.main_con3 .container.row > div:nth-of-type(1){flex-direction:column;}
+.outer{width:100%; margin-bottom:7em;}
+.main_con3_right{width:100%;}
+.main_con3_2_slick-slider-dots .slick-dots{left:50%; transform:translate(-50%,-47%); top:0; bottom:47%}
+
+.main_con3_2_control .buttons02{left:40%; top:0; top:72.2%; transform:translate(-40%,-72.2%)}
+.outer{margin-right:0}
+
+
+.slider01 .slick-slide{width:93.5vw !important; padding:0; padding-top:5px;}
+}
+
+@media (max-width:900px){
+.main_con3_con_list div{padding:0;}
+.main_con3 .container, .scon{padding:0 !important}
+
+.slider01{width:auto; height:auto;}
+.main_con3_con_list > li{padding:0;}
+.main_con3_con_list > li:nth-child(1){flex-basis:100%}
+.main_con3_2_control .buttons02{left:39%; transform:translate(-39%,-72.2%)}
+
+.main_con3_right ul li {  font-size:1.4em;  }
+ .main_con3_right ul li div b {font-size:2em; }
+
+
+
+
+}
+
+@media (max-width:800px){
+.slider01 .slick-slide{padding:5px;}
+}
+
+
+@media (max-width:700px){
+.buttons_tab{top:24%; transform:translate(-50%,-18%)}
+.main_con3_2_slick-slider-dots .slick-dots{bottom:51%; transform:translate(-50%,-51%)}
+.main_con3_2_control .buttons02{left:35%; top:69.2%; transform:translate(-35%,-69.2%)}
+
+}
+
+@media (max-width:600px){
+.main_con3_2_control .buttons02{left:33%; transform:translate(-33%,-69.2%)}
+}
+
+
+
+
+@media (max-width:500px){
+.main_con3_1_control{top:4%; transform:translate(-0%,-4%)}
+.main_con3_2_control .buttons02{left:29%; transform:translate(-29%,-69.2%)}
+.item div span:nth-of-type(2){padding:5px 11px; }
+.item div span{font-size:.9rem;}
+.tabs{padding-top:84px;}
+.main_con3_con_list > li{flex-basis:160px;}
+
+.main_con3_con_list > li > ul{display:flex; justify-content:center;}
+
+.main_con3_2_slick-slider-dots .slick-dots{bottom:54%; transform:translate(-50%,-54%)}
+.main_con3_2_control .buttons02{top:66.7%; transform:translate(-29%,-66.7%)}
+
+.item div span:nth-of-type(1){width:100%;
+white-space:nowrap;
+overflow:hidden;
+text-overflow:ellipsis; display:block;}
+.img_txt{height:auto;}
+.img_wrap{width:12em;}
+}
+
+@media (max-width:450px){
+
+.tabs{padding-top:73px !important}
+
+.main_con3_con_list > li > ul{display:flex; justify-content:center; flex-wrap:wrap;}
+.main_con3_con_list > li ul li{flex-grow:1; flex-basis:50%;}
+
+.main_con3_2_slick-slider-dots .slick-dots{bottom:64%; transform:translate(-50%,-64%)}
+.main_con3_2_control .buttons02{top:58.5%; transform:translate(-29%,-58.5%)}
+.buttons_tab{top:27.3%; transform:translate(-50%,-27.3%)}
+.img_wrap{width:11.5em}
+.img_txt{width:11em;}
+.item div p{font-size:1.1rem;}
+}
+
+
+@media (max-width:430px){
+.main_con3_2_control .buttons02{left:27%; transform:translate(-27%,-58.5%)}
+}
+
+@media (max-width:400px){
+.main_con3_1_control{top:3%; transform:translate(-0%,-3%)}
+.main_con3_2_control .buttons02{left:25%; transform:translate(-25%,-61.4%)}
+}
+
+</style>
+
+
+<section class="container row">
+
+
+
+<div class="" style="display:flex">
+	<div class="outer">
+		<h2 style="margin:0 auto 1em auto">
+			<a href="/partner/partner.asp?scrID=0000000195&pageNum=2&subNum=1&ssubNum=1" class="tit_ani0">오늘의 소속기업 소개</a>
+			<div>
+				<img src="/images/main/plus.png" alt="" style="margin-bottom:14px;cursor:pointer" onclick="location.href='/partner/partner.asp?scrID=0000000195&pageNum=2&subNum=1&ssubNum=1'">
+				<span class="hover_span_more">더보기</span>
+			</div>
+			
+		</h2>
+		<p>매일 무작위로 서울 AI 허브 소속기업 10개가 보여집니다.</p>
+		<div class="buttons_tab">
+			<button class="active">입주</button>
+			<button>멤버십</button>
+		</div>
+		<div class="tabs">
+			<div class="tab active">
+				<div class="slider01">
+
+<div class='item'><div>							
+							<div class="" style="display:flex; margin-bottom:10px;">
+								<div class="img_wrap">
+									<div class="resize">
+										
+										<span class="re bgfix" style="background:url('/board_data/0000000195/00000001952025000018_file1.png') no-repeat center center;"></span>	
+																				
+									</div>
+								</div>
+								<div class="img_txt">
+									<p>DesignedAI</p>
+									<span></span>
+									<span><a href="/partner/partner_detail.asp?scrID=0000000195&pageNum=2&subNum=1&ssubNum=1&page=&bd_num=00000001952025000018&act=view">자세히 보기</a></span>
+								</div>
+							</div>
+						
+							<div class="" style="display:flex;">
+								<div class="img_wrap">
+									<div class="resize">
+										
+										<span class="re bgfix" style="background:url('/images/nologo.jpg') no-repeat center center;"></span>	
+																				
+									</div>
+								</div>
+								<div class="img_txt">
+									<p></p>
+									<span></span>
+									<span><a href="/partner/partner_detail.asp?scrID=0000000195&pageNum=2&subNum=1&ssubNum=1&page=&bd_num=00000001952025000013&act=view">자세히 보기</a></span>
+								</div>
+							</div>
+</div></div><div class='item'><div>							
+							<div class="" style="display:flex; margin-bottom:10px;">
+								<div class="img_wrap">
+									<div class="resize">
+										
+										<span class="re bgfix" style="background:url('/board_data/0000000195/00000001952023000062_file1.png') no-repeat center center;"></span>	
+																				
+									</div>
+								</div>
+								<div class="img_txt">
+									<p>(주)스튜디오프리윌루전</p>
+									<span></span>
+									<span><a href="/partner/partner_detail.asp?scrID=0000000195&pageNum=2&subNum=1&ssubNum=1&page=&bd_num=00000001952023000062&act=view">자세히 보기</a></span>
+								</div>
+							</div>
+						
+							<div class="" style="display:flex;">
+								<div class="img_wrap">
+									<div class="resize">
+										
+										<span class="re bgfix" style="background:url('/board_data/0000000195/00000001952022000038_file1.png') no-repeat center center;"></span>	
+																				
+									</div>
+								</div>
+								<div class="img_txt">
+									<p>(주)브이다임</p>
+									<span></span>
+									<span><a href="/partner/partner_detail.asp?scrID=0000000195&pageNum=2&subNum=1&ssubNum=1&page=&bd_num=00000001952022000038&act=view">자세히 보기</a></span>
+								</div>
+							</div>
+</div></div><div class='item'><div>							
+							<div class="" style="display:flex; margin-bottom:10px;">
+								<div class="img_wrap">
+									<div class="resize">
+										
+										<span class="re bgfix" style="background:url('/images/nologo.jpg') no-repeat center center;"></span>	
+																				
+									</div>
+								</div>
+								<div class="img_txt">
+									<p></p>
+									<span></span>
+									<span><a href="/partner/partner_detail.asp?scrID=0000000195&pageNum=2&subNum=1&ssubNum=1&page=&bd_num=00000001952023000063&act=view">자세히 보기</a></span>
+								</div>
+							</div>
+						
+							<div class="" style="display:flex;">
+								<div class="img_wrap">
+									<div class="resize">
+										
+										<span class="re bgfix" style="background:url('/board_data/0000000195/00000001952021000072_file1.png') no-repeat center center;"></span>	
+																				
+									</div>
+								</div>
+								<div class="img_txt">
+									<p>프리베노틱스</p>
+									<span></span>
+									<span><a href="/partner/partner_detail.asp?scrID=0000000195&pageNum=2&subNum=1&ssubNum=1&page=&bd_num=00000001952021000072&act=view">자세히 보기</a></span>
+								</div>
+							</div>
+</div></div><div class='item'><div>							
+							<div class="" style="display:flex; margin-bottom:10px;">
+								<div class="img_wrap">
+									<div class="resize">
+										
+										<span class="re bgfix" style="background:url('/board_data/0000000195/00000001952026000011_file1.png') no-repeat center center;"></span>	
+																				
+									</div>
+								</div>
+								<div class="img_txt">
+									<p>비스타로보틱스</p>
+									<span></span>
+									<span><a href="/partner/partner_detail.asp?scrID=0000000195&pageNum=2&subNum=1&ssubNum=1&page=&bd_num=00000001952026000011&act=view">자세히 보기</a></span>
+								</div>
+							</div>
+						
+							<div class="" style="display:flex;">
+								<div class="img_wrap">
+									<div class="resize">
+										
+										<span class="re bgfix" style="background:url('/board_data/0000000195/00000001952025000029_file1.png') no-repeat center center;"></span>	
+																				
+									</div>
+								</div>
+								<div class="img_txt">
+									<p>(주)인포플라</p>
+									<span></span>
+									<span><a href="/partner/partner_detail.asp?scrID=0000000195&pageNum=2&subNum=1&ssubNum=1&page=&bd_num=00000001952025000029&act=view">자세히 보기</a></span>
+								</div>
+							</div>
+</div></div><div class='item'><div>							
+							<div class="" style="display:flex; margin-bottom:10px;">
+								<div class="img_wrap">
+									<div class="resize">
+										
+										<span class="re bgfix" style="background:url('/board_data/0000000195/00000001952021000005_file1.jpg') no-repeat center center;"></span>	
+																				
+									</div>
+								</div>
+								<div class="img_txt">
+									<p>㈜트리플렛</p>
+									<span>트리플렛은 ‘새로운 인류를 디자인하자’라는 비전을 가진 Ai+IoT 전문 기업입니다.</span>
+									<span><a href="/partner/partner_detail.asp?scrID=0000000195&pageNum=2&subNum=1&ssubNum=1&page=&bd_num=00000001952021000005&act=view">자세히 보기</a></span>
+								</div>
+							</div>
+						
+							<div class="" style="display:flex;">
+								<div class="img_wrap">
+									<div class="resize">
+										
+										<span class="re bgfix" style="background:url('/board_data/0000000195/00000001952023000051_file1.png') no-repeat center center;"></span>	
+																				
+									</div>
+								</div>
+								<div class="img_txt">
+									<p>스웨번즈</p>
+									<span></span>
+									<span><a href="/partner/partner_detail.asp?scrID=0000000195&pageNum=2&subNum=1&ssubNum=1&page=&bd_num=00000001952023000051&act=view">자세히 보기</a></span>
+								</div>
+							</div>
+</div></div>			
+					
+					
+				</div>
+			</div>
+
+			<!--- 멤버쉽 -->
+
+			<div class="tab">
+				<div class="slider01">
+<div class='item'><div>							
+							<div class="" style="display:flex; margin-bottom:10px;">
+								<div class="img_wrap">
+									<div class="resize">
+										
+										<span class="re bgfix" style="background:url('/board_data/0000000195/00000001952021000031_file1.png') no-repeat center center;"></span>	
+																				
+									</div>
+								</div>
+								<div class="img_txt">
+									<p>XL8</p>
+									<span>미디어 도메인에 특화된 번역 엔진을 개발</span>
+									<span><a href="/partner/partner_detail.asp?scrID=0000000195&pageNum=2&subNum=1&ssubNum=1&page=&bd_num=00000001952021000031&act=view">자세히 보기</a></span>
+								</div>
+							</div>
+						
+							<div class="" style="display:flex;">
+								<div class="img_wrap">
+									<div class="resize">
+										
+										<span class="re bgfix" style="background:url('/board_data/0000000195/00000001952022000087_file1.png') no-repeat center center;"></span>	
+																				
+									</div>
+								</div>
+								<div class="img_txt">
+									<p>코코넛사일로㈜</p>
+									<span>화물 운송 중개 플랫폼 서비스 및  상용차 정비 중개 플랫폼 등을 개발/운영</span>
+									<span><a href="/partner/partner_detail.asp?scrID=0000000195&pageNum=2&subNum=1&ssubNum=1&page=&bd_num=00000001952022000087&act=view">자세히 보기</a></span>
+								</div>
+							</div>
+</div></div><div class='item'><div>							
+							<div class="" style="display:flex; margin-bottom:10px;">
+								<div class="img_wrap">
+									<div class="resize">
+										
+										<span class="re bgfix" style="background:url('/board_data/0000000195/00000001952021000067_file1.png') no-repeat center center;"></span>	
+																				
+									</div>
+								</div>
+								<div class="img_txt">
+									<p>메라커</p>
+									<span>휴대형 안과카메라 및 메타버스용 AI센서</span>
+									<span><a href="/partner/partner_detail.asp?scrID=0000000195&pageNum=2&subNum=1&ssubNum=1&page=&bd_num=00000001952021000067&act=view">자세히 보기</a></span>
+								</div>
+							</div>
+						
+							<div class="" style="display:flex;">
+								<div class="img_wrap">
+									<div class="resize">
+										
+										<span class="re bgfix" style="background:url('/board_data/0000000195/00000001952021000007_file1.jpg') no-repeat center center;"></span>	
+																				
+									</div>
+								</div>
+								<div class="img_txt">
+									<p>㈜스톤랩</p>
+									<span>Medical AI에 기초한 혁신적인 3P(정밀, 개인맞춤형, 예방) 진료 보조 솔루션을 만들어가고 있는 ㈜스톤랩</span>
+									<span><a href="/partner/partner_detail.asp?scrID=0000000195&pageNum=2&subNum=1&ssubNum=1&page=&bd_num=00000001952021000007&act=view">자세히 보기</a></span>
+								</div>
+							</div>
+</div></div><div class='item'><div>							
+							<div class="" style="display:flex; margin-bottom:10px;">
+								<div class="img_wrap">
+									<div class="resize">
+										
+										<span class="re bgfix" style="background:url('/board_data/0000000195/00000001952023000015_file1.png') no-repeat center center;"></span>	
+																				
+									</div>
+								</div>
+								<div class="img_txt">
+									<p>포인투테크놀로지</p>
+									<span>RF 통신 등 반도체 설계</span>
+									<span><a href="/partner/partner_detail.asp?scrID=0000000195&pageNum=2&subNum=1&ssubNum=1&page=&bd_num=00000001952023000015&act=view">자세히 보기</a></span>
+								</div>
+							</div>
+						
+							<div class="" style="display:flex;">
+								<div class="img_wrap">
+									<div class="resize">
+										
+										<span class="re bgfix" style="background:url('/board_data/0000000195/00000001952025000032_file1.png') no-repeat center center;"></span>	
+																				
+									</div>
+								</div>
+								<div class="img_txt">
+									<p>(주)비아</p>
+									<span></span>
+									<span><a href="/partner/partner_detail.asp?scrID=0000000195&pageNum=2&subNum=1&ssubNum=1&page=&bd_num=00000001952025000032&act=view">자세히 보기</a></span>
+								</div>
+							</div>
+</div></div><div class='item'><div>							
+							<div class="" style="display:flex; margin-bottom:10px;">
+								<div class="img_wrap">
+									<div class="resize">
+										
+										<span class="re bgfix" style="background:url('/board_data/0000000195/00000001952022000081_file1.png') no-repeat center center;"></span>	
+																				
+									</div>
+								</div>
+								<div class="img_txt">
+									<p>스모어톡</p>
+									<span></span>
+									<span><a href="/partner/partner_detail.asp?scrID=0000000195&pageNum=2&subNum=1&ssubNum=1&page=&bd_num=00000001952022000081&act=view">자세히 보기</a></span>
+								</div>
+							</div>
+						
+							<div class="" style="display:flex;">
+								<div class="img_wrap">
+									<div class="resize">
+										
+										<span class="re bgfix" style="background:url('/board_data/0000000195/00000001952022000027_file1.png') no-repeat center center;"></span>	
+																				
+									</div>
+								</div>
+								<div class="img_txt">
+									<p>(주)도비스튜디오</p>
+									<span>영상 컷 편집에 드는 시간을 획기적으로 단축하는 클라우드 기반 전용 컷 편집 플랫폼?'DoVie'</span>
+									<span><a href="/partner/partner_detail.asp?scrID=0000000195&pageNum=2&subNum=1&ssubNum=1&page=&bd_num=00000001952022000027&act=view">자세히 보기</a></span>
+								</div>
+							</div>
+</div></div><div class='item'><div>							
+							<div class="" style="display:flex; margin-bottom:10px;">
+								<div class="img_wrap">
+									<div class="resize">
+										
+										<span class="re bgfix" style="background:url('/board_data/0000000195/00000001952022000064_file1.png') no-repeat center center;"></span>	
+																				
+									</div>
+								</div>
+								<div class="img_txt">
+									<p>(주)코젠</p>
+									<span>(주)코젠은 인공지능과 사물인터넷 기술을 융합한 신기술 제품 개발과 연구하는 자동제어 전문회사</span>
+									<span><a href="/partner/partner_detail.asp?scrID=0000000195&pageNum=2&subNum=1&ssubNum=1&page=&bd_num=00000001952022000064&act=view">자세히 보기</a></span>
+								</div>
+							</div>
+						
+							<div class="" style="display:flex;">
+								<div class="img_wrap">
+									<div class="resize">
+										
+										<span class="re bgfix" style="background:url('/board_data/0000000195/00000001952023000018_file1.png') no-repeat center center;"></span>	
+																				
+									</div>
+								</div>
+								<div class="img_txt">
+									<p>(주)프롭웨이브</p>
+									<span>CCTV 기반 영상 분석 기술을 이용한 주차장 관리 솔루션 ‘오픈주차장’ 등</span>
+									<span><a href="/partner/partner_detail.asp?scrID=0000000195&pageNum=2&subNum=1&ssubNum=1&page=&bd_num=00000001952023000018&act=view">자세히 보기</a></span>
+								</div>
+							</div>
+</div></div>	
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+
+	<div class="main_con3_right">
+		<h2>
+			<a href="/partner/partner.asp?scrID=0000000195&pageNum=2&subNum=1&ssubNum=1" class="tit_ani0"> KEY ACHIEVEMENT </a>
+		 
+		</h2>
+		<ul>
+			<li>
+			 AI 기업 육성·지원  <div class=""> <b>554+</b> 개사</div>
+			</li>
+		    <li>
+			누적매출 <div class=""> <b>6,263</b> 억원</div>
+			</li>
+			<li>
+			투자유치 <div class=""> <b>5,797</b> 억원</div>
+			</li>
+			<li>
+			인재양성  <div class=""> <b>7,104</b> 명</div>
+			</li>
+			<li>
+			고용규모  <div class=""> <b>6,387</b> 명</div>
+			</li>
+			<li>
+			기업가치 <div class=""> 약 <b>1.5</b> 조원</div>
+			</li>
+		</ul>
+	</div>
+</div>
+
+
+
+
+<div class="main_con3_2_control">
+	<div class="main_con3_2_slick-slider-dots"></div>
+	<div class="buttons02 buttons03">
+		<button id='toggle03' class="pause">pause</button>
+	</div>
+</div>
+
+
+
+
+
+</section>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<script>
+	
+$('button').click(function(){
+    var $this = $(this);
+    var index = $this.index();
+    
+    $this.addClass('active');
+    $this.siblings('button.active').removeClass('active');
+    
+    var $outer = $this.closest('.outer');
+    var $current = $outer.find(' > .tabs > .tab.active');
+    var $post = $outer.find(' > .tabs > .tab').eq(index);
+    
+    $current.removeClass('active');
+    $post.addClass('active');
+    // 위의 코드는 탭메뉴 코드입니다.
+    
+    $('.slider01').slick('setPosition');
+    // 탭 페이지 안에서 slick 사용시 – slick이 첫페이지에 있지 않으면 slick의 첫번째 이미지가 보이지 않고 2번째 부터 도는것을 확인 할 수 있다. 해당 문제는 탭이 active가 된 후 그 페이지에 slick이 있다면 = slick의 위치를 수동으로 새로 고쳐줘야 한다.
+	
+});
+
+// 기존 처음의 slick 적용
+$('.slider01').slick({
+   centerMode: true,
+		centerPadding: '0',
+		dots: true,// 하단 paging버튼 노출 여부
+		appendDots: $('.main_con3_2_slick-slider-dots'),
+		infinite: true,// 양방향 무한 모션
+		slidesToShow: 1, //슬라이드일경우 한 화면에 보여줄 아이템수
+		slidesToScroll: 1, //슬라이드일경우 한번에 슬라이드 시킬 아이템 개수
+		speed: 500, // 슬라이드 스피드
+		autoplaySpeed:4000, // 자동플레이 스피드
+		autoplay: true,
+		arrows: false, //좌우 화살 버튼 노출 여부 ( false 시 안보임 )
+		 observer: true, 
+		 observeParents: true,
+		 variableWidth: true,
+});
+
+
+</script>
+
+
+
+
+<script>
+$(function() {
+$('#toggle03').click( function() {
+	  if ($(this).html() == 'pause'){
+		 $('.slider01').slick('slickPause')
+		 $(this).html('play')
+		 $(this).addClass('play')
+		 $(this).removeClass('pause')
+	  } else {
+		$('.slider01').slick('slickPlay')
+		$(this).html('pause')
+		$(this).addClass('pause')
+		$(this).removeClass('play')
+	  }
+	});
+
+
+	if($(".slider01 .slick-slide").length<6)
+		$(".slider01 .slick-slide").addClass("slick-active");
+	if($(".main_con3_2_slick-slider-dots .slick-dots").length<1)
+		$(".main_con3_2_control").hide();
+
+  });
+	
+
+</script>
+
+
+
+
+
+
+
+
+
+
+<script>
+	
+$('.buttons_tab button:last-child').click(function(){
+	$('.main_con3_2_slick-slider-dots > ul:first-child').css({
+		"display":"none"
+	});
+} );
+</script>
+<script>
+	
+$('.buttons_tab button:last-child').click(function(){
+	$('.main_con3_2_slick-slider-dots > ul:last-child').css({
+		"display":"block"
+	});
+} );
+</script>
+<script>
+	
+$('.buttons_tab button:first-child').click(function(){
+	$('.main_con3_2_slick-slider-dots > ul:last-child').css({
+		"display":"none"
+	});
+} );
+</script>
+
+<script>
+	
+$('.buttons_tab button:first-child').click(function(){
+	$('.main_con3_2_slick-slider-dots > ul:first-child').css({
+		"display":"block"
+	});
+} );
+</script>
+<script>
+	
+$('.buttons_tab button:first-child').ready(function(){
+	$('.main_con3_2_slick-slider-dots > ul:last-child').css({
+		"display":"none"
+	});
+} );
+</script>
+
+
+
+
+
+				</div>
+			</div>
+		</section>
+
+
+		<section class="section page" style="background-color:#fff">
+			<div class="section-03 section_scroll scroll">
+				<div class="mcon_wrap main_con2">
+					<!-- 허브소식 -->
+					<style>
+.main_con2{padding:5em 0 0 0;}
+.main_con2 h2 > div{position: relative; display:inline-block;}
+.main_con2 h2 > div:hover .hover_span_more{display:block}
+.main_con2 .container{width:100%;}
+.main_con2 .mcon_more_bt{top:51px !important;}
+
+
+
+.main_con2_1_slide_list{width:1250px !important}
+
+@media (max-width:1310px){
+.main_con2 > .container{max-width:95%; margin:0 auto; padding:0; box-sizing:border-box; min-width:auto !important}
+}
+
+
+
+
+@media (max-width:1100px){
+.main_con2 .container{ max-width:95%; margin:0 auto; padding:0}
+.main_con2 .container > div + div{margin-top:40px;}
+.main_con2 .mcon_more_bt{top:15px !important}
+
+}
+
+
+@media (max-width:1024px){
+.section-04 > .mcon_wrap{max-width:100%;}
+.main_con2{padding:5em 0 !important}
+}
+
+
+@media (max-width:900px){
+.main_con2{max-width:100%;}
+
+}
+
+</style>
+
+<div class="container row">
+	<div class="">
+		<div class="top_title flex">
+			<h2 style="margin-bottom:1em;">
+				<a href="" class="tit_ani0">허브 소식</a>
+				<div class="">
+					<img src="/images/main/plus.png" alt="" style="margin-bottom:14px; cursor:pointer" onclick="location.href='/board/board_basic/board_list.asp?scrID=0000000170&pageNum=4&subNum=1&ssubNum=1'">
+					<span class="hover_span_more">더보기</span>
+				</div>
+			</h2>
+		</div>
+		<style>
+
+.sosic_list ul li .slick-slide{margin-right:10px}
+.top_title{align-items:end; justify-content:space-between; margin-bottom:3em}
+.sosic_list .slick-slide > div{margin-right:;}
+.sosic_list ul li{width:100% !important; height:500px; background:#f5f5f5; padding:2em; box-sizing:border-box; position: relative;}
+.sosic_list ul li:hover .list_span{display:block}
+.sosic_list ul li:hover{background:#444}
+.sosic_list ul li:hover a{color:#fff}
+.sosic_list ul li:hover h2{color:#fff}
+.sosic_list ul li:hover p{color:#fff}
+.sosic_list ul li a{display:block; height:100%;}
+.sosic_list ul li a h2{font-size:1.5rem; font-weight:600; text-overflow: ellipsis; overflow: hidden; word-break: break-word; display: -webkit-box; -webkit-line-clamp: 2;  -webkit-box-orient: vertical; width:100%; margin-bottom:2em;}
+.sosic_list ul li a p{font-size:1rem; text-overflow: ellipsis;
+   overflow: hidden;
+   word-break: break-word;
+   display: -webkit-box;
+   -webkit-line-clamp: 5;  /*줄수*/
+    -webkit-box-orient: vertical;
+width:100%;}
+.sosic_list ul li a span{position: absolute; bottom:5%; left:5%; transform:translate(-5%,-5%); font-size:.9rem; font-weight:500}
+.sosic_list ul > div.on{display:block !important;}
+
+.main_con2_1_slick-slider-dots .slick-dots{display:flex; justify-content:end; right:33px; top:31px}
+
+
+
+
+.main_con2_1_more1{position: absolute; bottom:-35px; right:0; background:#2b328d; color:#fff; padding:5px 10px; box-sizing:border-box; z-index: 9999; cursor: pointer;}
+.main_con2_1_more1:hover{background:#000}
+.slick-list{padding-bottom:2.5em !important}
+
+.main_con2_1_slick-slider-dots{top:66px; right:0; width:auto;}	
+.main_con2_1_slick-slider-dots li{width:168px; margin:0; border-bottom:3px solid #000; margin-bottom:1em; padding-bottom:1em;} 
+.main_con2_1_slick-slider-dots li.slick-active{border-bottom:3px solid #f7941d}
+.main_con2_1_slick-slider-dots li button:before{background:transparent; width:163px; color:#000}
+.main_con2_1_slick-slider-dots li.slick-active button:before{color:#f7941d}
+.main_con2_1_slick-slider-dots li button:before{font-size:1.5rem; font-weight:600; font-family:'Noto Sans KR'}
+.main_con2_1_slick-slider-dots li button{height:100px; line-height:100px; width:100%;}
+.main_con2_1_slick-slider-dots li{padding-bottom:4em;}
+.list_span{position: absolute; bottom:5% !important; right:5% !important; left:auto !important; display:none; transform:translate(-5%,-5%)}
+.main_con2_1_slick-slider-dots li:nth-child(1) button:before{content:'공지사항';}
+.main_con2_1_slick-slider-dots li:nth-child(2) button:before{content:'보도자료';}
+.main_con2_1_slick-slider-dots li:nth-child(3) button:before{content:'홍보영상';}
+.main_con2_1_slick-slider-dots li:nth-child(4) button:before{content:'정부·유관기관 소식'; width:250px;}
+.main_con2_1_slick-slider-dots li:nth-child(5) button:before{content:'소속기업 소식';}
+.main_con2_1_slick-slider-dots li:nth-child(1){width:163px;}
+.main_con2_1_slick-slider-dots li:nth-child(2){width:163px;}
+.main_con2_1_slick-slider-dots li:nth-child(3){width:163px;}
+.main_con2_1_slick-slider-dots li:nth-child(4){width:252px;}
+.main_con2_1_slick-slider-dots li:nth-child(5){width:163px;}
+.main_con2_1_more1{position: absolute; bottom:-35px; right:0; background:#2b328d; color:#fff; padding:5px 10px; box-sizing:border-box; z-index: 9999; cursor: pointer;}
+.main_con2_1_more1:hover{background:#000}
+.slick-list{padding-bottom:2.5em !important}
+
+
+
+
+@media (max-width:1310px){
+.main_con2_1_slick-slider-dots .slick-dots{right:0;}
+}
+
+@media (max-width:1199px){
+.sosic_list ul li{min-width:100%;}
+.main_con2_1_slide_list{width:95vw !important}
+}
+
+@media (max-width:1025px){
+.sosic_list ul li{min-width:100%;}
+.main_con2_1_slide_list{width:100% !important}
+}
+
+@media (max-width:1200px){
+.main_con2_1_slick-slider-dots{top:112px;}
+.main_con2_1_slick-slider-dots .slick-dots{top:34px;}
+
+}
+
+
+
+
+@media (max-width:1100px){
+.main_con2_1_slick-slider-dots{top:80px;}
+}
+
+@media (max-width:1060px){
+
+
+
+.main_con2_1_slick-slider-dots li:nth-child(1){width:120px;}
+.main_con2_1_slick-slider-dots li:nth-child(2){width:120px;}
+.main_con2_1_slick-slider-dots li:nth-child(3){width:120px;}
+.main_con2_1_slick-slider-dots li:nth-child(4){width:224px;}
+.main_con2_1_slick-slider-dots li:nth-child(5){width:170px;}
+
+.main_con2_1_slick-slider-dots li:nth-child(1) button:before{width:120px;}
+.main_con2_1_slick-slider-dots li:nth-child(2) button:before{width:120px;}
+.main_con2_1_slick-slider-dots li:nth-child(3) button:before{width:120px;}
+.main_con2_1_slick-slider-dots li:nth-child(4) button:before{width:224px;}
+.main_con2_1_slick-slider-dots li:nth-child(5) button:before{width:170px;}
+}
+
+
+
+@media (max-width:904px){
+.main_con2_1_slick-slider-dots li button:before{font-size:1.3rem;}
+.main_con2_1_slick-slider-dots .slick-dots{top:58px;}
+.top_title{margin-bottom:4em;}
+.sosic_list ul li{height:350px;}
+}
+
+@media (max-width:800px){
+.main_con2_1_slick-slider-dots .slick-dots{flex-wrap:wrap;}
+.main_con2_1_slick-slider-dots .slick-dots li{flex-grow:1; flex-basis:33.333%;}
+.main_con2_1_slick-slider-dots li{padding-bottom:3em;}
+.main_con2_1_slick-slider-dots li button{height:63px; line-height:63px;}
+.top_title{margin-bottom:8em}
+.main_con2_1_slick-slider-dots li button:before{width:100% !important}
+}
+
+
+@media (max-width:600px){
+.main_con2_1_slick-slider-dots li button:before{font-size:1.1rem;}
+}
+
+@media (max-width:500px){
+.main_con2_1_slick-slider-dots li button:before{font-size:1.1rem}
+
+.main_con2_1_slick-slider-dots{top:70px;}
+.main_con2_1_more1{bottom:-32px !important}
+}
+
+
+</style>
+
+
+<div class="sosic_list main_con2_1_slide">
+	<div class="main_con2_1_slide_list">
+		<p class="main_con2_1_more1" onclick="location.href='/board/board_basic/board_list.asp?scrID=0000000170&pageNum=4&subNum=1&ssubNum=1'">더보기</p>
+		<ul class="flex">
+
+			<li class="">
+				<a href="/board/board_basic/board_detail.asp?scrID=0000000170&bd_num=00000001702026000063&act=view&pageNum=4&subNum=1&ssubNum=1">
+					<h2>[AI SEOUL FELLOW 런치톡] 7회차 강연 안내 - 소량 데이터로 만드는 비전검사 데이터와 캐릭터 이미지 </h2>
+					<p>[AI SEOUL FELLOW 런치톡] 7회차 강연 안내 -&nbsp;생성형 AI의 서비스 적용: 소량 데이터로 만드는 비전검사 데이터와 캐릭터 이미지2026년 AI SEOUL FELLOW 기술세미나 런치톡에 여러분을 초대합니다!이번 런치톡에서는 한양대학교 융합전자공학부 홍제형 교수님과 함께 「생성형 AI의 서비스 적용: 소량 데이터로 만드는 비전검사 데이터와 캐릭터 이미지」를 주제로, 적은 양의 데이터...</p>
+					<span>2026.11.27</span>
+					<span class="list_span"><img src="/images/main/plus1.png" alt=""></span>
+				</a>
+			</li>
+
+			<li class="">
+				<a href="/board/board_basic/board_detail.asp?scrID=0000000170&bd_num=00000001702026000062&act=view&pageNum=4&subNum=1&ssubNum=1">
+					<h2>2026년 서울 AI 허브 AI Frontiers Series 4회차 - 우리 기관 한글 서식, AI로 바로 편집해 보세요 </h2>
+					<p>우리 기관 한글 서식, AI로 바로 편집해 보세요 | AI Frontiers Series 4회차 교육AI로 만든 보고서 초안, 기관에서 쓰는 한글 양식에 다시 옮겨 붙이느라 번거로우셨나요?&nbsp;서울 AI 허브가 기관 지정 한글(HWP) 서식에 AI로 바로 초안을 쓰고 원하는 문단을 수정하는 무료 실습 교육을 엽니다. 공공기관 담당자, 공공사업 제안서나 결과보고서를 작성하는 기업 실무자 ...</p>
+					<span>2026.11.26</span>
+					<span class="list_span"><img src="/images/main/plus1.png" alt=""></span>
+				</a>
+			</li>
+
+			<li class="">
+				<a href="/board/board_basic/board_detail.asp?scrID=0000000170&bd_num=00000001702026000061&act=view&pageNum=4&subNum=1&ssubNum=1">
+					<h2>2026년 3차 서울 AI 허브 신규 입주기업 모집 공고(모집기간: ~ 12월 11일(금) 23:59까지) </h2>
+					<p>2026년 3차 서울 AI 허브 신규 입주기업 모집 안내&nbsp;서울시에서 설립하고 서울대학교 공학연구원이 운영하고 있는 「서울 AI 허브」에서는사무공간 제공 및 성장 지원 사업을 통하여 기업이 스케일업할 수 있도록 인공지능 분야 우수기업을 모집합니다.서울 AI 허브와 함께 성장할 기업의 많은 관심과 신청 바랍니다.- 서울 AI 허브 센터장 -[모집개요]○ 모집규모 : 최대 11개사&nbsp...</p>
+					<span>2026.11.23</span>
+					<span class="list_span"><img src="/images/main/plus1.png" alt=""></span>
+				</a>
+			</li>
+
+		</ul>
+	</div>
+	<div class="main_con2_1_slide_list">
+		<p class="main_con2_1_more1" onclick="location.href='/board/board_data02/board_list.asp?scrID=0000000171&pageNum=4&subNum=2&ssubNum=1'">더보기</p>
+		<ul class="flex">
+
+			<li class="">
+				
+				<a href="https://www.epnc.co.kr/news/articleView.html?idxno=409543" target="_blank">
+				
+					<h2>산업 현장 AI 전환 성공사례 한자리에…서울 AI 허브, AX 성과 확산 나선다 </h2>
+					<p></p>
+					<span>2026-11-24</span>
+					<span class="list_span"><img src="/images/main/plus1.png" alt=""></span>
+				</a>
+			</li>
+
+			<li class="">
+				
+				<a href="http://www.worktoday.co.kr/news/articleView.html?idxno=92427" target="_blank">
+				
+					<h2>서울 AI 허브, 신용보증기금과 ‘맞손’ … AI 스타트업 투자·금융 지원 확대 </h2>
+					<p></p>
+					<span>2026-11-21</span>
+					<span class="list_span"><img src="/images/main/plus1.png" alt=""></span>
+				</a>
+			</li>
+
+			<li class="">
+				
+				<a href="https://zdnet.co.kr/view/?no=20261120152456" target="_blank">
+				
+					<h2>서울 AI 허브, 신용보증기금과 AI 스타트업 투자 지원 확대 </h2>
+					<p></p>
+					<span>2026-11-20</span>
+					<span class="list_span"><img src="/images/main/plus1.png" alt=""></span>
+				</a>
+			</li>
+
+		</ul>
+	</div>
+	<div class="main_con2_1_slide_list">
+		<p class="main_con2_1_more1" onclick="location.href='/board/board_photo02/board_list.asp?scrID=0000000197&pageNum=4&subNum=3&ssubNum=1'">더보기</p>
+		<ul class="flex">
+
+			<li class="">				
+				<a href="/board/board_basic/board_detail.asp?scrID=0000000197&bd_num=00000001972026000008&act=view&pageNum=4&subNum=3&ssubNum=1">
+					<h2>서울 AI 허브 Cursor Hackathon Seoul vol.3 </h2>
+					<p>Instagram에서 이 게시물 보기서울 AI 허브(@seoulaihub_official)님의 공유 게시물</p>
+					<span>2026.07.21</span>
+					<span class="list_span"><img src="/images/main/plus1.png" alt=""></span>
+				</a>
+			</li>
+
+			<li class="">				
+				<a href="/board/board_basic/board_detail.asp?scrID=0000000197&bd_num=00000001972026000007&act=view&pageNum=4&subNum=3&ssubNum=1">
+					<h2>AI SEOUL 2026 현장 스케치 | 전환의 시대, AI가 현실이 되다 </h2>
+					<p>test</p>
+					<span>2026.03.06</span>
+					<span class="list_span"><img src="/images/main/plus1.png" alt=""></span>
+				</a>
+			</li>
+
+			<li class="">				
+				<a href="/board/board_basic/board_detail.asp?scrID=0000000197&bd_num=00000001972026000003&act=view&pageNum=4&subNum=3&ssubNum=1">
+					<h2>[AIFS] 서울 AI 허브 "문병로 교수" AI 강연 - 비하인드 Q&A </h2>
+					<p></p>
+					<span>2026.02.26</span>
+					<span class="list_span"><img src="/images/main/plus1.png" alt=""></span>
+				</a>
+			</li>
+
+		</ul>
+	</div>
+	<div class="main_con2_1_slide_list">
+		<p class="main_con2_1_more1" onclick="location.href='/board/board_basic03/board_list.asp?scrID=0000000198&pageNum=4&subNum=4&ssubNum=1'">더보기</p>
+		<ul class="flex">
+
+			<li class="">				
+				<a href="/board/board_basic/board_detail.asp?scrID=0000000198&bd_num=00000001982022000039&act=view&pageNum=4&subNum=4&ssubNum=1">
+					<h2>(필독★) 정부·유관기관 홍보글 게시 절차 안내 </h2>
+					<p>안녕하세요, 서울 AI 허브 입니다.유관기관이신 경우 서울 AI 허브 홈페이지의 [정부&middot;유관기관]탭에&nbsp;직접 홍보글을 작성해주시면 홍보사업팀의 승인 후 홍보글 게시를 도와드리고 있습니다.홍보 건이 있는 유관기관 관계자 분들께서는아래 절차 확인하시어 회원가입 및 홍보글 작성 부탁드립니다.① (유관기관) 기관명 / 사업자등록번호 전달 (info@seoulaihub.kr...</p>
+					<span>2022.06.30</span>
+					<span class="list_span"><img src="/images/main/plus1.png" alt=""></span>
+				</a>
+			</li>
+
+			<li class="">				
+				<a href="/board/board_basic/board_detail.asp?scrID=0000000198&bd_num=00000001982026000077&act=view&pageNum=4&subNum=4&ssubNum=1">
+					<h2>[우리금융그룹] 디노랩 2027 서울/부산/경남 스타트업 모집 (~12/6) </h2>
+					<p>우리 마음속 첫번째 금융, 우리금융그룹에서 오늘의 혁신으로 내일의 가치를 만들 스타트업을 기다립니다.▷ 접수기간: 2026.11.13.(금) ~ 2026.12.06.(일) &nbsp; &nbsp; &nbsp; * 23:59분 자동마감 되므로 마감전 제출 必▷ 모집대상:&nbsp;혁신적인 기술 또는 서비스를 보유한 기업    ※ 공고 마감일 기준 업력 7년 이내의 창업기업 (개인사업자 제외)▷&nbsp...</p>
+					<span>2026.11.16</span>
+					<span class="list_span"><img src="/images/main/plus1.png" alt=""></span>
+				</a>
+			</li>
+
+			<li class="">				
+				<a href="/board/board_basic/board_detail.asp?scrID=0000000198&bd_num=00000001982026000076&act=view&pageNum=4&subNum=4&ssubNum=1">
+					<h2>[우리금융그룹] 디노랩 서울/부산/경남 스타트업 모집 (~12/6) </h2>
+					<p>우리 마음속 첫번째 금융, 우리금융그룹에서 오늘의 혁신으로 내일의 가치를 만들 스타트업을 기다립니다.▷ 접수기간: 2026.11.13.(금) ~ 2026.12.06.(일) &nbsp; &nbsp; &nbsp; * 23:59분 자동마감 되므로 마감전 제출 必▷ 모집대상:&nbsp;혁신적인 기술 또는 서비스를 보유한 기업    ※ 공고 마감일 기준 업력 7년 이내의 창업기업 (개인사업자 제외)▷&nbsp...</p>
+					<span>2026.11.16</span>
+					<span class="list_span"><img src="/images/main/plus1.png" alt=""></span>
+				</a>
+			</li>
+
+		</ul>
+	</div>
+	<div class="main_con2_1_slide_list">
+		<p class="main_con2_1_more1" onclick="location.href='/board/board_basic03/board_list.asp?scrID=0000000204&pageNum=4&subNum=4&ssubNum=1'">더보기</p>
+		<ul class="flex">
+
+			<li class="">				
+				<a href="/board/board_basic/board_detail.asp?scrID=0000000204&bd_num=00000002042026000103&act=view&pageNum=2&subNum=2&ssubNum=1">
+					<h2>[피아스페이스] 국산 NPU·VLM으로 관제 오탐 90%↓ </h2>
+					<p></p>
+					<span>2026.11.20</span>
+					<span class="list_span"><img src="/images/main/plus1.png" alt=""></span>
+				</a>
+			</li>
+
+			<li class="">				
+				<a href="/board/board_basic/board_detail.asp?scrID=0000000204&bd_num=00000002042026000102&act=view&pageNum=2&subNum=2&ssubNum=1">
+					<h2>[에이비스] 유방암 HER2 판독 AI 연구 국제학술지 게재 </h2>
+					<p></p>
+					<span>2026.11.18</span>
+					<span class="list_span"><img src="/images/main/plus1.png" alt=""></span>
+				</a>
+			</li>
+
+			<li class="">				
+				<a href="/board/board_basic/board_detail.asp?scrID=0000000204&bd_num=00000002042026000100&act=view&pageNum=2&subNum=2&ssubNum=1">
+					<h2>[보다비] AI 대화 코칭 ‘보다톡’ 4주 무료 체험 캠페인 </h2>
+					<p></p>
+					<span>2026.11.16</span>
+					<span class="list_span"><img src="/images/main/plus1.png" alt=""></span>
+				</a>
+			</li>
+
+		</ul>
+	</div>
+</div>
+
+
+
+
+<div class="main_con2_1_control">
+	<div class="main_con2_1_slick-slider-dots">
+	</div>
+</div>
+
+
+
+
+<script>
+  $(function() {
+
+   $(".main_con2_1_slide").slick({
+		centerMode: true,
+		centerPadding: '',
+		dots: true,// 하단 paging버튼 노출 여부
+		appendDots: $('.main_con2_1_slick-slider-dots'),
+		infinite: true,// 양방향 무한 모션
+		slidesToShow: 1, //슬라이드일경우 한 화면에 보여줄 아이템수
+		slidesToScroll: 1, //슬라이드일경우 한번에 슬라이드 시킬 아이템 개수
+		speed: 500, // 슬라이드 스피드
+		autoplaySpeed:4000, // 자동플레이 스피드
+		autoplay: true,
+		arrows: false, //좌우 화살 버튼 노출 여부 ( false 시 안보임 )
+ 
+
+	});
+
+	
+
+
+
+	if($(".main_con2_1_slide .slick-slide").length<6)
+		$(".main_con2_1_slide .slick-slide").addClass("slick-active");
+	if($(".main_con2_1_slick-slider-dots .slick-dots").length<1)
+		$(".main_con2_1_control").hide();
+
+  });
+</script>
+	</div>
+</div>
+				</div>
+			</div>
+		</section>
+
+
+
+
+
+		<section class="section page" style="background-color:rgb(247, 247, 247)">
+			<div class="section-05 section_scroll scroll">
+				<div class="mcon_wrap main_con4">
+					<style>
+	
+.main_con4{padding:5em 0 0 0; width:100%; float:left; background:#f7f7f7}
+.main_con4 .container{width:100%;}
+
+.main_con4 h2{border-bottom:1px solid #333; margin:0 auto 3em auto; position: relative; text-align:center}
+.main_con4 .mcon_more_bt {position:absolute; right:0; bottom:10%; transform:translateY(-10%)}
+
+.main_con4 h2 > div{position: relative; display:inline-block;}
+.main_con4 h2 > div:hover .hover_span_more{display:block}
+
+
+
+.contact_map{align-items:center}
+.contact_map div:first-child{width:65%}
+.contact_map div:last-child{width:35%}
+
+
+
+.map_txt{padding-left:15%;}
+
+.map_txt .flex{font-size:1.2rem; font-weight:500; line-height:2; margin-bottom:1em; align-items:center; cursor: pointer; padding:10px}
+.map_txt .flex span{display:inline-block; background:#0b109f; margin-right:1em; box-sizing:border-box; border-radius:50%; width:60px; height:60px;}
+.map_txt .flex span img{max-width:100%; padding:0.6em; box-sizing:border-box;}
+
+
+.map_txt .flex:nth-child(2) span{background:#b4bd00}
+.map_txt .flex:nth-child(3) span{background:#a56a83}
+.map_txt .flex:nth-child(4) span{background:#5b89b4}
+
+
+.map_img ul li.on{display:block;}
+.map_txt .flex.on{color:#fff; background:#fbb056; padding:10px; box-sizing:border-box; border-radius:20px;}
+.map_txt .flex.on span{background:#fff}
+.map_txt .flex.on:nth-child(1) span img{content:url('/images/main/1012_icon4.png')}
+.map_txt .flex.on:nth-child(2) span img{content:url('/images/main/1012_icon2.png')}
+.map_txt .flex.on:nth-child(3) span img{content:url('/images/main/1012_icon3.png')}
+.map_txt .flex.on:nth-child(4) span img{content:url('/images/main/1012_icon1.png')}
+.map_txt .flex.on:nth-child(5) span img{content:url('/images/main/1012_icon3.png')}
+
+
+
+
+
+.map_txt p.flex.on{position: relative;}
+.map_txt p.flex.on:nth-child(1) .plus_i{display:block;}
+.map_txt p.flex.on:nth-child(2) .plus_i{display:block;}
+.map_txt p.flex.on:nth-child(3) .plus_i{display:block;}
+.map_txt p.flex.on:nth-child(4) .plus_i{display:block;}
+.map_txt p.flex.on:nth-child(5) .plus_i{display:block;}
+.plus_i{display:none; width:28px; height:28px; position: absolute; top:50%; right:5%; transform:translate(-5%,-50%);}
+.plus_i:hover{content:url('/images/main/plus.png')}
+
+
+@media (max-width:1100px){
+.main_con4 .container{ max-width:95%; margin:0 auto; padding:0}
+
+}
+
+@media (max-width:1024px){
+
+.main_con4{padding:5em 0 !important;}
+
+}
+
+
+@media (max-width:991px){
+.main_con4 .contact_map {flex-direction:column}
+.main_con4 .contact_map div:first-child{width:100%;}
+.main_con4 .contact_map div:last-child{width:100%; display:flex; margin-top:1em; flex-wrap:wrap;}
+.main_con4 .contact_map .map_txt{padding-left:0}
+.main_con4 .contact_map .map_txt .flex{flex-direction:column; width:33.33%; margin-bottom:0; padding:10px 0; text-align:center; line-height:1.4;}
+.main_con4 .contact_map .map_txt .flex.on{padding:10px 0 50px 0;}
+.main_con4 .contact_map .map_txt .flex span{margin-right:0;}
+.main_con4 .contact_map .map_txt .flex .plus_i{bottom:10%; top:auto; right:auto; left:50%; transform:translate(-50%,-10%)}
+}
+
+
+
+
+@media (max-width:900px){
+.main_con4{max-width:100%;}
+
+}
+
+
+@media (max-width:365px){
+.main_con4 h2 > div{position: relative; display:inline-block;}
+.main_con4 h2 > div:hover .hover_span_more{display:block}
+
+}
+
+
+
+
+</style>
+
+<section class="container row">
+	<h2>
+		<a href="/com/com04.asp?scrID=0000000161&pageNum=5&subNum=1&ssubNum=1&view=1" class="tit_ani0">오시는 길</a>
+		<div class="">
+			<img src="/images/main/plus.png" alt="" style="margin-bottom:14px;cursor:pointer" onclick="location.href='/com/com04.asp?scrID=0000000161&pageNum=5&subNum=1&ssubNum=1&view=1'">
+			<span class="hover_span_more">더보기</span>
+		</div>
+	</h2>
+	<div class="contact_map flex">
+		<div class="map_img">	
+			<ul>
+				<li class="on">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3166.7433616105427!2d127.02593715113969!3d37.46678093749299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca127c6329c6b%3A0x5adc86ec9850cc9d!2z7ISc7Jq47Yq567OE7IucIOyEnOy0iOq1rCDtg5zrtInroZwgMTA4!5e0!3m2!1sko!2skr!4v1665544773278!5m2!1sko!2skr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</li>
+				<li class="" style="display:none">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3166.7863097648083!2d127.02822803051579!3d37.465767025531086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca127e6a980df%3A0x33bb1acf34de9721!2z7ISc7Jq47Yq567OE7IucIOyEnOy0iOq1rCDtg5zrtInroZwgMTE0!5e0!3m2!1sko!2skr!4v1665542691418!5m2!1sko!2skr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</li>
+				<li style="display:none">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d791.726366729523!2d127.0364110292326!3d37.46295386323614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca14804850c8b%3A0x52563660d724e890!2zQUkg7JaR7J6sIO2XiOu4jCDtlZjsnbTruIzrnpzrk5w!5e0!3m2!1sko!2skr!4v1677565772315!5m2!1sko!2skr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</li>
+				<li style="display:none">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3166.778422110819!2d127.03380105113963!3d37.465953237540326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca12beb539099%3A0xab846532cf5fbbd5!2z7ISc7Jq47Yq567OE7IucIOyEnOy0iOq1rCDrp6Ttl4zroZw46ri4IDQ3!5e0!3m2!1sko!2skr!4v1665544740383!5m2!1sko!2skr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</li>
+				<li style="display:none">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x357ca0d4ee405459%3A0xf187dcd2cd2f5666!2z7ISc7Jq47Yq567OE7IucIOyEnOy0iOq1rCDslpHsnqzrjIDroZwxMuq4uCA1Ng!5e0!3m2!1sko!2skr!4v1795394786113!5m2!1sko!2skr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</li>
+			</ul>
+		</div>
+		<div class="map_txt">
+			<p class="flex on">
+				<span>
+					<img src="/images/main/1012_icon8.png" alt="">
+				</span>서울 AI 허브
+				<i class="plus_i" onclick="location.href='/com/com04.asp?scrID=0000000161&pageNum=5&subNum=2&ssubNum=1&view=4'">
+					<img src="/images/main/plus1.png" alt="">
+				</i>
+			</p>
+			
+			<p class="flex ">
+				<span>
+					<img src="/images/main/1012_icon6.png" alt="">
+				</span>한국교총
+				<i class="plus_i" onclick="location.href='/com/com04.asp?scrID=0000000161&pageNum=5&subNum=2&ssubNum=1&view=1'">
+					<img src="/images/main/plus1.png" alt="">
+				</i>
+			</p>
+			<p class="flex">
+				<span>
+					<img src="/images/main/1012_icon7.png" alt="">
+				</span>하이브랜드
+				<i class="plus_i" onclick="location.href='/com/com04.asp?scrID=0000000161&pageNum=5&subNum=2&ssubNum=1&view=2'">
+					<img src="/images/main/plus1.png" alt="">
+				</i>
+			</p>
+			<p class="flex">
+				<span>
+					<img src="/images/main/1012_icon5.png" alt="">
+				</span>희경빌딩
+				<i class="plus_i" onclick="location.href='/com/com04.asp?scrID=0000000161&pageNum=5&subNum=2&ssubNum=1&view=3'">
+					<img src="/images/main/plus1.png" alt="">
+				</i>
+			</p>
+<p class="flex">
+				<span>
+					<img src="/images/main/1012_icon7.png" alt="">
+				</span>산업 AX 혁신센터
+				<i class="plus_i" onclick="location.href='/com/com04.asp?scrID=0000000161&pageNum=5&subNum=2&ssubNum=1&view=4'">
+					<img src="/images/main/plus1.png" alt="">
+				</i>
+			</p>	
+			<p class="flex" style="display:none">
+				<span>
+					<img src="/images/main/1012_icon6.png" alt="">
+				</span>AI 지원 센터
+				<i class="plus_i" onclick="location.href='/com/com04.asp?scrID=0000000161&pageNum=5&subNum=2&ssubNum=1&view=5'">
+					<img src="/images/main/plus1.png" alt="">
+				</i>
+			</p>
+		</div>
+	</div>
+</section>
+
+
+
+<script>
+$('.map_txt p').click(function(){
+     var idx=$(this).index()
+
+     $('.map_img ul li').hide().removeClass('on')
+     $('.map_img ul li').eq(idx).show().addClass('on')
+
+     $('.map_txt p').removeClass('on')
+     $(this).addClass('on')
+})
+
+
+</script>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="section page section_footer" style="height:30%; background-color:#fff">
+			<div class="section-06 section_scroll scroll">
+				<style>
+.main_con5 h2 > div{position: relative; display:inline-block;}
+.main_con5 h2 > div:hover .hover_span_more{display:block}
+.about_h2 p{font-size:1.2rem; color:#666; margin-bottom:10px}
+
+#wrap_footer .slick-list{padding-bottom:0 !important}
+
+.about_logo{justify-content:center; margin-bottom:1em; align-items:center;}
+.about_logo img{max-width:100%; width:9em}
+.about_logo p:nth-child(2) img{width:5em}
+.about_logo p:nth-child(2){margin:0 3em;}
+
+.bro_div{display:block; text-align:center; margin-top:2em;}
+.bro_div > p{margin-bottom:20px; font-size:25px;}
+.bro_div .flex{align-items:center; justify-content:center; flex-wrap:wrap; gap:10px; max-width:900px; margin:0 auto;}
+.bro_div .flex p{border:4px solid #0b109f; border-radius:50px; background:#0b109f; width: calc(50% - 23px);}
+.bro_div .flex p:hover i{background:#0b109f; color:#fff}
+.bro_div .flex p a{display:flex; align-items:center; font-weight:600; color:#fff;}
+.bro_div .flex p a i{font-size:1.8rem; color:#0b109f; background:#fff; padding:16px; box-sizing:border-box; border-radius:50%;}
+.bro_div .flex p a span{background:none; padding:0 20px 0 10px;  text-align: left;}
+
+
+.section-06{position: relative;}
+.section-06 .about_h2{border-bottom:1px solid #333; margin:3em auto 2em auto; max-width:1310px; text-align:center; position: relative;}
+.section-06 .about_h2 a:first-child{font-size:30px; color:#333; font-weight:600; position: relative; padding-right:10px; display:inline-block;}
+.section-06 .about_h2 a:first-child:before{position: absolute; top:0; right:0; width:0; height:0; border-radius:100%; background:#f7941d; content:''; transition:all ease 0.3s; display:inline-block; }
+.section-06 .mcon_more_bt {position:absolute; right:0; bottom:9px;}
+
+
+
+@media (max-width:1310px){
+.main_con5{margin:0 auto; max-width:95%}
+}
+
+
+
+@media (max-width:900px){
+.about_h2 p{width:80%; margin:0 auto 10px auto}
+.bro_div .flex{display:block}
+.bro_div .flex p{margin-bottom:15px; width:100%}
+.bro_div .flex p a { justify-content: flex-start;}
+}
+
+@media (max-width:520px){
+.about_h2 p{width:86%; margin:0 auto 10px auto}
+
+
+}
+
+
+
+
+</style>
+
+<div class="main_con5">
+	<h2 class="about_h2">
+		<a href="/com/com01.asp?scrID=0000000158&pageNum=5&subNum=2&ssubNum=1">About</a>
+		<div class="">
+			<img src="/images/main/plus.png" alt="" style="margin-bottom:14px;cursor:pointer" onclick="location.href='/board/board_basic/board_list.asp?scrID=0000000170&amp;pageNum=4&amp;subNum=1&amp;ssubNum=1'">
+			<span class="hover_span_more">더보기</span>
+		</div>
+		<p>서울 AI 허브는 서울특별시가 조성한 세계적 인공지능 분야의 혁신 생태계의 AI 클러스터 입니다.</p>
+	</h2>
+	<div class="about_logo flex">
+		<p><img src="/images/main/about_logo2.png" alt=""></p>
+		<p><img src="/images/common/logo_2312.png" alt=""></p>
+	</div>
+	<div class="bro_div">
+		<p><strong>서울 AI 허브</strong>의 브로슈어를 다운받으시면 더욱 다양한 정보를 볼 수 있습니다.</p>
+		<div class="flex">
+			<p>
+				<a href="/down/서울 AI 허브 리플렛(국문).pdf" target="_blank" style="color:#fff; display:flex; align-items:center; font-weight:600">
+					<i class="xi xi-download"></i>
+					<span>서울 AI 허브 리플렛(국문) </span>
+				</a>
+			</p>
+			<p>
+				<a href="/down/서울 AI 허브 리플렛(영문).pdf" target="_blank" style="color:#fff; display:flex; align-items:center; font-weight:600">
+					<i class="xi xi-download"></i>
+					<span>서울 AI 허브 리플렛(영문) </span>
+				</a>
+			</p>
+			<p>
+				<a href="/down/2026-27 서울 AI 허브 기업소개책자.pdf" target="_blank" style="color:#fff; display:flex; align-items:center; font-weight:600">
+					<i class="xi xi-download"></i>
+					<span>2026-2027 기업 소개 책자 다운로드(국문)</span>
+				</a>
+			</p>
+			<p>
+				<a href="/down/2025-2026 SEOUL AI STARTUP 100.pdf" target="_blank" style="color:#fff; display:flex; align-items:center; font-weight:600">
+					<i class="xi xi-download"></i>
+					<span>2025-2026 기업 소개 책자 다운로드(영문)</span>
+				</a>
+			</p>
+<!-- 			<p>
+				<a href="/down/2024-2025 서울 인공지능 스타트업 백서.pdf" target="_blank" style="color:#fff; display:flex; align-items:center; font-weight:600">
+					<i class="xi xi-download"></i>
+					<span>2025 기업 소개 책자 다운로드(국문)</span>
+				</a>
+			</p>
+			<p>
+				<a href="/down/2025 SEOUL AI STARTUP 100.pdf" target="_blank" style="color:#fff; display:flex; align-items:center; font-weight:600">
+					<i class="xi xi-download"></i>
+					<span>2025 기업 소개 책자 다운로드(영문)</span>
+				</a>
+			</p> -->
+<!-- 			<p>
+				<a href="/down/2022_ko.pdf" target="_blank" style="color:#fff; display:flex; align-items:center; font-weight:600">
+					<i class="xi xi-download"></i>
+					<span>2022 브로슈어 다운로드 (국문)</span>
+				</a>
+			</p>
+			<p>
+				<a href="/down/companybs2022.pdf" target="_blank" style="color:#fff; display:flex; align-items:center; font-weight:600">
+					<i class="xi xi-download"></i>
+					<span>2022 기업 소개 책자 다운로드(국문)</span>
+				</a>
+			</p> -->
+			<p style="display:none">
+				<a href="/down/2022_ko.pdf" target="_blank" style="color:#fff; display:flex; align-items:center; font-weight:600">
+					<i class="xi xi-download"></i>
+					<span>2019 브로슈어 다운로드 (영문)</span>
+				</a>
+			</p>
+			<p style="display:none">
+				<i class="xi xi-download"></i>
+				<span>기업소개책자 다운로드</span>
+			</p>
+		</div>
+	</div>
+	
+</div>
+
+
+
+
+				<footer id="wrap_footer">
+					<div class="" style="background:#fff">
+						
+
+<div class="f_banner">
+	<section class="container row">
+		<section class="f_banner_slider slider">
+
+			<div class="f_banner_slider_img">
+				<a href="http://www.korea.ac.kr/mbshome/mbs/university/index.do" target="_blank" style="background:url(/board_data/0000000205/00000002052021000038_file1.png) no-repeat center center; background-size:cover" title="고려대학교"></a>
+			</div>
+
+			<div class="f_banner_slider_img">
+				<a href="https://www.idbins.com/FWMAIV5137.do" target="_blank" style="background:url(/board_data/0000000205/00000002052021000037_file1.png) no-repeat center center; background-size:cover" title="DB손해보험"></a>
+			</div>
+
+			<div class="f_banner_slider_img">
+				<a href="https://www.lignex1.com/web/kor/main.do" target="_blank" style="background:url(/board_data/0000000205/00000002052021000036_file1.png) no-repeat center center; background-size:cover" title="LIG넥스원"></a>
+			</div>
+
+			<div class="f_banner_slider_img">
+				<a href="https://modulabs.co.kr/" target="_blank" style="background:url(/board_data/0000000205/00000002052021000035_file1.png) no-repeat center center; background-size:cover" title="모두의연구소"></a>
+			</div>
+
+			<div class="f_banner_slider_img">
+				<a href="http://www.spacesallim.or.kr/space/main/index.do" target="_blank" style="background:url(/board_data/0000000205/00000002052021000033_file1.png) no-repeat center center; background-size:cover" title="스페이스살림"></a>
+			</div>
+
+			<div class="f_banner_slider_img">
+				<a href="https://www.kodit.co.kr/index.jsp" target="_blank" style="background:url(/board_data/0000000205/00000002052021000032_file1.png) no-repeat center center; background-size:cover" title="신용보증기금"></a>
+			</div>
+
+			<div class="f_banner_slider_img">
+				<a href="https://www.wooribank.com/" target="_blank" style="background:url(/board_data/0000000205/00000002052021000031_file1.png) no-repeat center center; background-size:cover" title="우리은행"></a>
+			</div>
+
+			<div class="f_banner_slider_img">
+				<a href="https://www.kita.net/" target="_blank" style="background:url(/board_data/0000000205/00000002052021000030_file1.png) no-repeat center center; background-size:cover" title="한국무역협회"></a>
+			</div>
+
+			<div class="f_banner_slider_img">
+				<a href="https://www.ibk.co.kr/" target="_blank" style="background:url(/board_data/0000000205/00000002052021000029_file1.png) no-repeat center center; background-size:cover" title="IBK 기업은행"></a>
+			</div>
+
+			<div class="f_banner_slider_img">
+				<a href="http://premierpartners.co.kr/?lang=ko" target="_blank" style="background:url(/board_data/0000000205/00000002052021000028_file1.png) no-repeat center center; background-size:cover" title="(유)프리미어 파트너스"></a>
+			</div>
+
+			<div class="f_banner_slider_img">
+				<a href="https://www.orange-business.com/en" target="_blank" style="background:url(/board_data/0000000205/00000002052021000027_file1.png) no-repeat center center; background-size:cover" title="Orange Japan Co., Ltd."></a>
+			</div>
+
+			<div class="f_banner_slider_img">
+				<a href="https://www.kmuholdings.com/index" target="_blank" style="background:url(/board_data/0000000205/00000002052021000026_file1.png) no-repeat center center; background-size:cover" title="국민대학교기술지주"></a>
+			</div>
+
+			<div class="f_banner_slider_img">
+				<a href="http://kaistventures.com/" target="_blank" style="background:url(/board_data/0000000205/00000002052021000025_file1.png) no-repeat center center; background-size:cover" title="카이스트청년창업투자지주"></a>
+			</div>
+
+			<div class="f_banner_slider_img">
+				<a href="https://innovationacademy.kr/" target="_blank" style="background:url(/board_data/0000000205/00000002052021000024_file1.png) no-repeat center center; background-size:cover" title="이노베이션아카데미"></a>
+			</div>
+
+			<div class="f_banner_slider_img">
+				<a href="https://blockchain.line.me/" target="_blank" style="background:url(/board_data/0000000205/00000002052021000023_file1.png) no-repeat center center; background-size:cover" title="라인테크플러스(LTP)"></a>
+			</div>
+
+			<div class="f_banner_slider_img">
+				<a href="https://www.kspo.or.kr/kspo/main/main.do" target="_blank" style="background:url(/board_data/0000000205/00000002052021000022_file1.png) no-repeat center center; background-size:cover" title="국민체육진흥공단"></a>
+			</div>
+
+			<div class="f_banner_slider_img">
+				<a href="https://planhventures.co.kr/" target="_blank" style="background:url(/board_data/0000000205/00000002052021000021_file1.png) no-repeat center center; background-size:cover" title="플랜에이치벤처스"></a>
+			</div>
+
+			<div class="f_banner_slider_img">
+				<a href="https://kdx.kr/main" target="_blank" style="background:url(/board_data/0000000205/00000002052021000020_file1.png) no-repeat center center; background-size:cover" title="KDX 한국데이터거래소"></a>
+			</div>
+
+			<div class="f_banner_slider_img">
+				<a href="http://www.nextrans.co.kr/" target="_blank" style="background:url(/board_data/0000000205/00000002052021000017_file1.png) no-repeat center center; background-size:cover" title="넥스트랜스"></a>
+			</div>
+
+			<div class="f_banner_slider_img">
+				<a href="https://www.seoul.go.kr/main/index.jsp" target="_blank" style="background:url(/board_data/0000000205/00000002052021000001_file1.jpg) no-repeat center center; background-size:cover" title="서울특별시"></a>
+			</div>
+
+			<div class="f_banner_slider_img">
+				<a href="https://research.kookmin.ac.kr/" target="_blank" style="background:url(/board_data/0000000205/00000002052021000002_file1.jpg) no-repeat center center; background-size:cover" title="국민대학교 산학협력단"></a>
+			</div>
+
+			<div class="f_banner_slider_img">
+				<a href="https://www.etri.re.kr/intro.html" target="_blank" style="background:url(/board_data/0000000205/00000002052021000003_file1.jpg) no-repeat center center; background-size:cover" title="한국전자통신연구원(ETRI)"></a>
+			</div>
+
+			<div class="f_banner_slider_img">
+				<a href="https://ccei.creativekorea.or.kr/seoul/main.do" target="_blank" style="background:url(/board_data/0000000205/00000002052021000010_file1.jpg) no-repeat center center; background-size:cover" title="서울창조경제혁신센터"></a>
+			</div>
+
+			<div class="f_banner_slider_img">
+				<a href="https://www.kita.net/" target="_blank" style="background:url(/board_data/0000000205/00000002052021000011_file1.jpg) no-repeat center center; background-size:cover" title="한국무역협회"></a>
+			</div>
+
+			<div class="f_banner_slider_img">
+				<a href="https://www.nonghyup.com/main/psniMain.do" target="_blank" style="background:url(/board_data/0000000205/00000002052021000013_file1.jpg) no-repeat center center; background-size:cover" title="NH농협"></a>
+			</div>
+
+		</section>
+
+		<div class="buttons" style="display:none;">
+			<button id='toggle' class="pause">pause</button>
+		</div>
+	</section>
+</div>
+
+
+
+<script>
+  $(function() {
+
+   $(".f_banner_slider").slick({
+		dots: false,// 하단 paging버튼 노출 여부
+		infinite: true,// 양방향 무한 모션
+		slidesToShow: 5, //슬라이드일경우 한 화면에 보여줄 아이템수
+		slidesToScroll: 1, //슬라이드일경우 한번에 슬라이드 시킬 아이템 개수
+		fade: false, //fade인경우
+		cssEase: 'ease-in-out', //fade인경우
+		speed: 500, // 슬라이드 스피드
+		autoplaySpeed:4000, // 자동플레이 스피드
+		autoplay: true,
+		arrows: true, //좌우 화살 버튼 노출 여부 ( false 시 안보임 )
+		responsive: [
+			{
+			  breakpoint: 991,
+			  settings: {
+				slidesToShow: 3,
+			  }
+			},
+			
+			{
+			  breakpoint: 767,
+			  settings: {
+				slidesToShow: 2
+			  }
+			}
+		  ]
+    });
+    
+
+	$('#toggle').click( function() {
+	  if ($(this).html() == 'pause'){
+		 $('.f_banner_slider').slick('slickPause')
+		 $(this).html('play') 
+		 $(this).addClass('play')
+		 $(this).removeClass('pause')
+	  } else {
+		$('.f_banner_slider').slick('slickPlay')  
+		$(this).html('pause') 
+		$(this).addClass('pause')
+		$(this).removeClass('play')
+	  }  
+	});
+
+	if($(".f_banner_slider .slick-next").length>0)
+		$(".buttons").show();
+  });
+</script>
+
+
+
+					</div>
+					<div class="">
+				      
+						<div class="f_con">
+							<div class="f_con_con">
+								<ul class="f_menu">
+									<li><a class="" href="/privacy/privacy.asp?pageNum=7&subNum=5">개인정보처리방침</a></li>
+									<li><a class="f_bt_use" href="javascript:;">이용약관</a></li>
+									<li><a href="/com/com04.asp?scrID=0000000161&pageNum=5&subNum=2&ssubNum=1">찾아오시는 길</a></li>
+								</ul>
+								<ul class="f_add">
+									<li>서울시 서초구 태봉로 108</li>
+									<li>시설 문의 : 02-2135-6892</li>
+									<li>입주 문의 : 02-2135-6814</li>
+									<li>기타 문의 : <a href="/com/com06.asp?scrID=0000000191&pageNum=5&subNum=3&ssubNum=1" style="color:#fff;font-size:1em;">서울 AI 허브</a></li><br>
+									<li>팩스 : 02.2135.6819</li>
+									<li>이메일 : info@seoulaihub.kr</li>
+								</ul>
+								<p>Copyrightⓒ  SEOUL AI HUB All rights reserved.</p>
+							</div>
+						</div> 
+
+					</div>
+				</footer>
+
+
+
+
+			</div>
+		</section>
+	</div>
+</div>
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.11/fullpage.min.js" integrity="sha512-ojnoeSkK5NDwnuW5S0ZnddobHez8Bx1yVa3RE+Cd0fGEuY/NEd4sgVF/CJ6eDtnOeLZLbTJpNFrCkUYbHS2hRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.11/fullpage.css" integrity="sha512-TzpAFfzjJAI0CY7w33tQEEIflTR3zB4kaQcCXcr+V4HmoQmXSMsQpX6z+c3lNC3XV0BeXQ6ZNb5X+sKeLP3cKA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script>
+
+new fullpage('#fullpage', {
+  sectionsColor: [''],
+ menu: '#menu',
+	lockAnchors: false,
+	anchors:['1', '2', '3', '4', '5'],
+	navigation: true,
+	navigationPosition: 'right',
+	showActiveTooltip: true,
+	slidesNavigation: false,
+	slidesNavPosition: 'bottom',
+	 responsiveWidth: 1025,
+
+
+
+});
+
+</script>
+<script type="text/javascript">
+$(document).ready(function() {
+
+	$('.mcon01_ico05').click(function(){
+		$('.wrap_pop_partner').show();
+	});
+
+
+	$('.fac03_pop_close').click(function(){
+		$('.wrap_pop_partner').hide();
+	});
+
+	$('ul.pop_tab_sty01 li').click(function(){
+		var tab_id = $(this).attr('data-tab');
+
+		$('ul.pop_tab_sty01 li').removeClass('current');
+		$('.pop_tab-content').removeClass('current');
+
+		$(this).addClass('current');
+		$("#"+tab_id).addClass('current');
+	});
+	$('ul.pop_tab_sty01 li:first').trigger("click");
+});
+</script>
+
+
+
+
+
+<script type="text/javascript">
+<!--
+function sysPopup(popupNum, popupWidth, popupHeight, popupX, popupY)
+{
+	win = window.open("/include/popup_view.asp?popup_num=" + popupNum + "&cookisitename=seoulaihub.kr", "sysPopup" + popupNum,"width=" + (Number(popupWidth) + 2) +  "px,height=" + (Number(popupHeight) + 30) +  "px,marginwidth=0,marginheight=0,toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=no,resizable=no,left=" + popupX +  ",top=" + popupY);
+	win.focus();
+}
+
+function sysPopupLayer( )
+{
+	var popup_num			=	arguments[0];
+	var popup_title			=	arguments[1];
+	var popup_file			=	arguments[2];
+	var popup_map			=	arguments[3];
+	var popup_url			=	arguments[4];
+	var popup_target		=	arguments[5];
+	var popup_content		=	arguments[6];
+	var popup_backcolor		=	arguments[7];
+	var popup_fontcolor		=	arguments[8];
+	var popup_width			=	arguments[9];
+	var popup_height		=	arguments[10];
+	var popup_pos_x			=	arguments[11];
+	var popup_pos_y			=	arguments[12];
+	var popup_favorites		=	arguments[13];
+	var popup_gubun			=	arguments[14];
+	var popup_zindex		=	arguments[16];
+
+	var html = "";
+
+
+	html += "<div id='" + popup_num + "_div' name='" + popup_num + "_div' style='position:absolute;max-width:" + popup_width + ";height:" + (Number(popup_height)+30) + ";";
+	html += "left:" + popup_pos_x + "px;top:" + (Number(popup_pos_y)+65) + "px;display:;z-index:9999;'>";
+	html += "<form name='" + popup_num + "_form'>";
+	html += "<table align='center' border='0' cellpadding='0' cellspacing='0' style='max-width:"+popup_width+"px; border-top-width: 1px;border-right-width: 1px;border-bottom-width: 1px;border-left-width: 1px;border-top-style: solid;border-right-style: solid;border-bottom-style: solid;border-left-style: solid;border-top-color: #000000;border-right-color: #000000;border-bottom-color: #000000;border-left-color: #000000;'>";
+	html += "<tr><td align = 'center' valign = 'top' bgcolor='" + popup_backcolor + "' class='fr-view'>";
+
+
+	//링크 설정
+	if(popup_url.length > 1){
+		html += "<A href='" + popup_url + "' target='" + popup_target + "'>";
+	}
+
+	//이미지출력
+	if(popup_gubun == "0000000001"){
+		html += "<img src='/board_data/popup/" + popup_file + "' border='0' usemap='#" + popup_num + "_Map'>";
+		if(popup_map.length > 1){
+			html += "<map name='" + popup_num + "_Map' id='" + popup_num + "_Map'>" + popup_map + "</map>";
+		}
+	}
+
+	//플래시 출력
+	else if(popup_gubun == "0000000002"){
+		mg_flashWrite(popup_num, '/board_data/popup/' + popup_file, popup_width, popup_height, 'transparent');
+	}
+
+	//직접입력
+	else if(popup_gubun == "0000000003"){
+		html += popup_content;
+	}
+	
+	if(popup_url.length > 1){
+		html += "</a>";
+	}
+	html += '</td></tr>';
+	html += "<tr><td style='cursor:hand' nowrap align='right' bgcolor='#FFFFFF'>";
+	html += "<p align='right'>";
+	html += "<input type='checkbox' name='chkpopup' value='checkbox'  style='border:0;' onclick=\"sysPopupClose(this.form.chkpopup,'" + popup_num + "','" + popup_favorites + "');\">";
+	html += "<font color='#999999'>오늘 이창을 다시 띄우지 않음 ";
+	html += "<a href=javascript:sysPopupClose('','" + popup_num + "','" + popup_favorites + "');>";
+	html += "[닫 기]</a>";
+	html += "</font></p>";
+	html += "</td></tr>";
+	html += '</form></table></div>';
+
+//	$("body").append(html);
+	document.write(html);
+}
+
+function setCookie( name, value, expiredays )
+{
+	var today = new Date();
+	//2시간
+	today.setTime(today.getTime() + 1000*60*60*24);
+	
+	//var today = new Date();
+	//today.setDate( today.getDate() + expiredays );
+	document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + today.toGMTString() + ";";
+}
+
+function getCookie(strName)
+{
+
+	var strArg = new String(strName + "=");	
+	var nArgLen, nCookieLen, nEnd;
+	var i = 0, j;
+	
+	nArgLen    = strArg.length;
+	nCookieLen = document.cookie.length;
+	
+	if(nCookieLen > 0) 
+	{
+	
+		while(i < nCookieLen) 
+		{
+		
+			j = i + nArgLen;
+			
+			if(document.cookie.substring(i, j) == strArg) 
+			{
+			
+				nEnd = document.cookie.indexOf (";", j);
+				
+				if(nEnd == -1) nEnd = document.cookie.length;
+				
+				return unescape(document.cookie.substring(j, nEnd));
+			 
+			}
+			
+			i = document.cookie.indexOf(" ", i) + 1;
+			if (i == 0) break;
+		}
+	}
+	
+	return("");
+}
+
+//item01 : 체크박스 속성, item02:div명, item03:즐겨찾기유무
+function sysPopupClose(item01, item02, item03)
+{
+	if(item01 != ""){
+		if ( item01.checked ) {
+			setCookie( "lcdns_popup_" + item02, "checked" ,1 );
+		}
+	}
+
+	document.getElementById(item02 + "_div").style.display = "none";
+
+	var favoriteurl="http://seoulaihub.kr";
+	var favoritetitle="서울 AI 허브"
+	
+	if(item03 == "Y"){
+		if(confirm(favoritetitle + "을 즐겨찾기 추가 하시겠습니까?")){
+			if (document.all){
+				window.external.AddFavorite(favoriteurl,favoritetitle)
+			}
+		}
+	}
+}
+//-->
+</script>
+
+
+	<script type="text/javascript">
+	<!--
+	if(getCookie( "lcdns_popup_114" ) != "checked"){
+		sysPopupLayer('114'
+						,'26년 3차 신규 입주기업 모집'
+						,''
+						,''
+						,''
+						,''
+						,'<a href="https://www.startup-plus.kr/project/PRJ007727" rel="noopener noreferrer" target="_blank"><img src="/board_data/editor_img/20261123154306_2k16u.gif" style="width: 720px;" class="fr-fic fr-dib" data-savedfilename="20261123154306_2k16u.gif" data-filename="2026_3차_서울AI허브_신규입주기업_모집_포스터(GIF)_V4.gif"></a>'
+						,'#FFFFFF'
+						,''
+						,'400'
+						,'750'
+						,'100'
+						,'100'
+						,'N'
+						,'0000000003'
+						,'0'
+						);
+	}
+	//-->
+	</script>
+
+	<script type="text/javascript">
+	<!--
+	if(getCookie( "lcdns_popup_115" ) != "checked"){
+		sysPopupLayer('115'
+						,'AIFS 4회차'
+						,''
+						,''
+						,''
+						,''
+						,'<a href="https://www.seoulaihub.kr/board/board_basic/board_detail.asp?scrID=0000000170&pageNum=4&subNum=1&ssubNum=1&page=1&bd_num=00000001702026000062&act=view&s_string=" rel="noopener noreferrer" target="_blank"><img src="http://www.seoulaihub.kr/board_data/editor_img/20261126213627_5g6gu.png" style="width: 1100px;" class="fr-fic fr-dib" data-savedfilename="20261126213627_5g6gu.png" data-filename="1795696587282.png"></a>'
+						,'#FFFFFF'
+						,''
+						,'400'
+						,'750'
+						,'600'
+						,'100'
+						,'N'
+						,'0000000003'
+						,'1'
+						);
+	}
+	//-->
+	</script>
+
+	<script type="text/javascript">
+	<!--
+	if(getCookie( "lcdns_popup_116" ) != "checked"){
+		sysPopupLayer('116'
+						,'AIFS 4회차 2'
+						,''
+						,''
+						,''
+						,''
+						,'<a href="https://www.seoulaihub.kr/board/board_basic/board_detail.asp?scrID=0000000170&pageNum=4&subNum=1&ssubNum=1&page=1&bd_num=00000001702026000062&act=view&s_string=" rel="noopener noreferrer" target="_blank"><img src="http://www.seoulaihub.kr/board_data/editor_img/20261127134628_6njfo.png" style="width: 1100px;" class="fr-fic fr-dib" data-savedfilename="20261127134628_6njfo.png" data-filename="1795754787746.png"></a>'
+						,'#FFFFFF'
+						,''
+						,'400'
+						,'750'
+						,'1100'
+						,'100'
+						,'N'
+						,'0000000003'
+						,'2'
+						);
+	}
+	//-->
+	</script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".fr-view img").css("margin", "0px");
+});
+</script>
+</body>
+</html>
+<input type="hidden" value="2026" id="v_year" />
+<input type="hidden" value="11" id="v_month" />

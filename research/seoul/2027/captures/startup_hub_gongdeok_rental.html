@@ -1,0 +1,1124 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+
+<link rel="stylesheet" href="/web/cportal/_GLOBAL/css/global.css?update=241210">
+<script src="/web/assets/js/plugins/gsap.min.js"></script>
+<script src="/assets/js/application.code.js"></script>
+
+
+
+
+
+<script>
+  
+  
+  
+  
+
+  if(navigator.userAgent.indexOf("Trident") > 0){
+    alert("스타트업 플러스는 은 Microsoft Edge, Chrome 브라우저에 최적화 되어있습니다. " +
+            "원활한 사용을 원하시면 Microsoft Edge, Chrome 브라우저를 권장합니다. 확인버튼을 누르면 Edge브라우저로 자동으로 이동됩니다.")
+    window.location = 'microsoft-edge:' + window.location.href
+  } else if(/MSIE \d |Trident.*rv:/.test(navigator.userAgent)) {
+    alert("스타트업 플러스는 Microsoft Edge, Chrome 브라우저에 최적화 되어있습니다. " +
+            "원활한 사용을 원하시면 Microsoft Edge, Chrome 브라우저를 권장합니다.  확인버튼을 누르면 Edge브라우저로 자동으로 이동됩니다.")
+    window.location = 'microsoft-edge:http:' + window.location.href
+  }
+
+  // 언어 변경할 때 <html> 태그 안에 lang="ko", lang="en" 넣어주기
+  if("kr" == "kr") { // kr -> ko로 변경하여 넣어줌
+    let krChangeKo = "kr";
+    krChangeKo = "ko";
+  }
+  document.documentElement.setAttribute("lang", "kr");
+
+  // 언어 변경 버튼 클릭 시,
+  function btnClickChangeLanguage() {
+    const lang = String(document.querySelector("text.KR tspan").innerHTML.replace(" ",""));
+    const url = new URL(document.location.href);
+    url.searchParams.set("lang", lang.toLowerCase());
+    window.location.href = url.href;
+  }
+
+  //기업 회원 체크 함수
+  function moveCompanyCheckTo(url){
+    
+    
+    alert('로그인 후 이용 가능합니다.');
+    document.forms.isLoginCheckForm.action="/cms_for_portal/process/etc/login/list.do?show_no=149&check_no=147&c_relation=245&c_relation2=830";
+    document.forms.isLoginCheckForm.return_url.value=url;
+    document.forms.isLoginCheckForm.submit();
+    
+    
+    
+    
+  }
+
+  function moveLoginCheckTo(url){
+    
+    
+    
+    alert('로그인 후 이용 가능합니다.');
+    document.forms.isLoginCheckForm.action="/cms_for_portal/process/etc/login/list.do";
+    document.forms.isLoginCheckForm.return_url.value=url;
+    document.forms.isLoginCheckForm.submit();
+    
+    
+  }
+</script>
+
+
+
+    
+    
+        
+
+
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta property="og:image" content="https://www.startup-plus.kr/web/assets/other/image/opengrape_startup.png" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
+<meta name="msapplication-TileColor" content="#ffffff" />
+<meta name="msapplication-TileImage" content="/assets/images/favicon/ms-icon-144x144.png" />
+<meta name="theme-color" content="#ffffff" />
+
+<meta name="title" content="서울창업허브 공덕">
+<meta name="description" content="서울창업허브는 우수기업을 투자자와 함께 검증 및 선발하고，창업지원 전문기관인 허브파트너와 함께 육성하여 투자 및 글로벌 진출을 지원합니다.
+
+">
+
+<title>서울창업허브 공덕</title>
+        
+
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&family=Montserrat:wght@300;400;500&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet" />
+
+
+<link rel="stylesheet" href="/web/cportal/DEFAULT/css/style.css?update=240614"/>
+
+
+<script src="/web/cportal/vendor/jquery/jquery-3.1.1.min.js"></script>
+<script src="/web/assets/js/plugins/jquery-ui.min.js"></script>
+<script src="/web/assets/plugins/input-mask/jquery.mask.min.js"></script>
+<script src="//unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="/web/assets/js/plugins/slick.min.js"></script>
+<script src="/web/assets/js/plugins/underscore-min.js"></script>
+<script src="/web/assets/js/plugins/moment.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://uicdn.toast.com/calendar/latest/toastui-calendar.ie11.min.js"></script>
+<link rel="stylesheet" href="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.css" />
+<script type="text/javascript" src="/assets/js/ckeditor5/ckeditor.js"></script>
+
+
+<script src="/web/cportal/DEFAULT/js/common.js"></script>
+<script src="/web/cportal/DEFAULT/js/main.js"></script>
+<script src="/web/assets/js/_util_common.js?update=20240718_2"></script>
+<script src="/web/assets/js/common/common.js"></script>
+<script src="/assets/js/application.util.js"></script>
+
+<script>
+    var ctsConfig = {
+        prefix : {
+            APP: 'sspmanager',
+            USERID : 'USER_ID',
+            USERINFO : 'userInfo',
+            TABINFO : 'tab'
+        },
+        // 로거 사용여부(true=>콘솔 로그 출력, false, 콘솔 로그 미출력)
+        logger: true,
+        // 콘텐츠 영역 화면 DOM ID
+        container : "#main-container",
+        // 콘텐츠 영역 자동 높이 계산 여부
+        containerAutoHeight: true,
+    }
+</script>
+
+<script src="/assets/js/application.util.js"></script>
+<script src="/web/cts/cts.datasource.js"></script>
+<script src="/web/cts/cts.list.js"></script>
+<script src="/web/cts/cts.file.js"></script>
+<script src="/web/cts/cts.paging.js"></script>
+<script src="/web/cts/cts.validator.js"></script>
+<script src="/web/cts/cts.loading.js"></script>
+<script src="/assets/js/application.component.Editor.js"></script>
+
+<script>
+    var MainObj = function(){
+
+        var centerX = $(window).width()/2;
+        var centerY = $(window).height()/2;
+
+        // background 마우스에 따른 움직임 효과
+        var marginPer = 153.2;
+        var targetVisualBg = $(".sub-visual");
+        var currIdx = 0;
+        var currTarget = targetVisualBg[currIdx];
+
+        if(targetVisualBg.length > 0) {
+            $(document.body).on('mousemove', function (e) {
+                var difX = centerX - e.pageX;
+                var difY = centerY - e.pageY;
+
+                var perX = difX / centerX * marginPer;
+                var perY = difY / centerY * marginPer;
+
+                var idx = 0;
+                if (currIdx != idx) {
+                    currIdx = idx;
+                    currTarget = targetVisualBg[currIdx];
+                }
+                moveBgItems(perX, perY);
+            });
+        }
+
+
+        function moveBgItems( perX, perY,bgPerX, bgPerY, bgDuration){
+            if( !bgPerX ) bgPerX = perX;
+            if( !bgPerY ) bgPerY = perY;
+            if( !bgDuration ) bgDuration = 1.2;
+            TweenMax.killTweensOf( targetVisualBg );
+            TweenMax.to( currTarget, bgDuration, { backgroundPosition:bgPerX + "px "+ bgPerY + "px", ease:Cubic.easeOut });
+        }
+
+
+        var posX = 0, posY = 0,prevX = 0, prevY = 0, speedRate=30;
+        function onDeviceOrientation( event ){
+
+            var sumX = isNaN( parseFloat( event.gamma ) ) ? 0 : parseFloat( event.gamma )*speedRate;
+            var sumY = isNaN( parseFloat( event.beta ) ) ? 0 : parseFloat( event.beta )*speedRate;
+
+            var perX = (centerX - sumX) / centerX;
+            var perY = (centerY - sumY) / centerY;
+
+            perX = Math.max( -6.9, Math.min( perX, 7 ) );
+            perY = Math.max( -6.9, Math.min( perY, 7 ) );
+
+            moveBgItems(perX,perY,perX*1.4,perY*1.4,1);
+        }
+
+
+        this.registOrientationEvent = function(){
+            window.addEventListener( "deviceorientation" , onDeviceOrientation );
+        }
+
+        this.removeOrientationEvent = function(){
+            window.removeEventListener( "deviceorientation" , onDeviceOrientation );
+        }
+
+
+        $(window).on('resize', function(){
+            centerX = $(window).width()/2;
+            centerY = $(window).height()/2;
+        });
+    }
+    $(document).ready(function(){
+        mainObj = new MainObj();
+    });
+</script>
+
+        </head>
+        <body>
+            
+
+
+
+
+
+<form name="isLoginCheckForm" id="isLoginCheckForm" method="POST">
+    <input type="hidden" name="return_url" value="" >
+</form>
+
+
+<!-- 헤더 -->
+<header class="header">
+    <div class="logo-area bx-max">
+
+        
+            
+            <h1 style="background:url('/api/common/download?attachFilePath=%2fold%2fcenter%2flogo22.png') 0 50% /
+             auto 100% no-repeat;cursor:pointer;" onclick="window.location.href='/'">
+                
+            </h1>
+        
+        
+        <ul class="gnb-area">
+            <li><a href="/">서울창업허브 공덕</a></li>
+            
+            <li><a href="/login" class="active">로그인</a></li>
+            
+            
+            
+            	<li><a href="https://hubgongdeok.startup-plus.kr/en">ENGLISH</a></li>
+            
+            
+            
+        </ul>
+    </div>
+
+    
+    
+    
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            <script>
+                /** 입주 전용 메뉴 들어가면 alert창*/
+                if(`false` === 'true'){
+                    
+                    
+                        alert("입주기업만 이용가능한 메뉴입니다.");
+                        location.href='/';
+                    
+                }
+            </script>
+        
+    
+        
+    
+        
+    
+        
+    
+
+    <nav class="nav-area bx-max">
+        <ul class="nav-menu clearfix">
+            
+                
+                        
+                            
+                                
+                            
+                            
+                        
+                    <li>
+                        <script>
+                            console.info("item", ctsApp.util.javaListToJson('MenuApiResponseVO(seqNo=2039, portalSeqNo=316, parentSeqNo=0, name=창업서비스, uri=/, orderNo=4, status=1, contentType=DEFAULT, residentOnly=false, subMenuList=[MenuApiResponseVO(seqNo=2044, portalSeqNo=316, parentSeqNo=2039, name=입주, uri=/project?support=MOV, orderNo=12, status=1, contentType=DEFAULT, residentOnly=false, subMenuList=null), MenuApiResponseVO(seqNo=2046, portalSeqNo=316, parentSeqNo=2039, name=액셀러레이팅, uri=/project?support=ACC, orderNo=14, status=1, contentType=DEFAULT, residentOnly=false, subMenuList=null), MenuApiResponseVO(seqNo=2049, portalSeqNo=316, parentSeqNo=2039, name=장소대관, uri=/rental/place, orderNo=22, status=1, contentType=DEFAULT, residentOnly=false, subMenuList=null)])'))</script>
+                        
+                        
+                            
+                            
+                                
+                                
+                            
+                        
+                            
+                        
+                            
+                                <a href="#" class="has-sub">창업서비스<i></i></a>
+                            
+                            
+                        
+                        <div class="nav-sub">
+                            <ul>
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                        <li>
+                                            <script>console.warn('TSET:',ctsApp.util.javaListToJson('MenuApiResponseVO(seqNo=2044, portalSeqNo=316, parentSeqNo=2039, name=입주, uri=/project?support=MOV, orderNo=12, status=1, contentType=DEFAULT, residentOnly=false, subMenuList=[])') )</script>
+                                            
+                                                
+                                                
+                                                    <a href="/project?support=MOV">입주</a>
+                                                
+                                            
+                                        </li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <script>console.warn('TSET:',ctsApp.util.javaListToJson('MenuApiResponseVO(seqNo=2046, portalSeqNo=316, parentSeqNo=2039, name=액셀러레이팅, uri=/project?support=ACC, orderNo=14, status=1, contentType=DEFAULT, residentOnly=false, subMenuList=[])') )</script>
+                                            
+                                                
+                                                
+                                                    <a href="/project?support=ACC">액셀러레이팅</a>
+                                                
+                                            
+                                        </li>
+                                    
+                                
+                                    
+                                        <li>
+                                            <script>console.warn('TSET:',ctsApp.util.javaListToJson('MenuApiResponseVO(seqNo=2049, portalSeqNo=316, parentSeqNo=2039, name=장소대관, uri=/rental/place, orderNo=22, status=1, contentType=DEFAULT, residentOnly=false, subMenuList=[])') )</script>
+                                            
+                                                
+                                                
+                                                    <a href="/rental/place">장소대관</a>
+                                                
+                                            
+                                        </li>
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                            </ul>
+                        </div>
+                    </li>
+                
+            
+                
+                        
+                            
+                                
+                            
+                            
+                        
+                    <li>
+                        <script>
+                            console.info("item", ctsApp.util.javaListToJson('MenuApiResponseVO(seqNo=2040, portalSeqNo=316, parentSeqNo=0, name=창업정보, uri=/, orderNo=6, status=1, contentType=DEFAULT, residentOnly=false, subMenuList=[MenuApiResponseVO(seqNo=2070, portalSeqNo=316, parentSeqNo=2040, name=기업정보, uri=/company, orderNo=28, status=1, contentType=DEFAULT, residentOnly=false, subMenuList=null)])'))</script>
+                        
+                        
+                            
+                            
+                                
+                                
+                            
+                        
+                            
+                        
+                            
+                                <a href="#" class="has-sub">창업정보<i></i></a>
+                            
+                            
+                        
+                        <div class="nav-sub">
+                            <ul>
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                        <li>
+                                            <script>console.warn('TSET:',ctsApp.util.javaListToJson('MenuApiResponseVO(seqNo=2070, portalSeqNo=316, parentSeqNo=2040, name=기업정보, uri=/company, orderNo=28, status=1, contentType=DEFAULT, residentOnly=false, subMenuList=[])') )</script>
+                                            
+                                                
+                                                
+                                                    <a href="/company">기업정보</a>
+                                                
+                                            
+                                        </li>
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                            </ul>
+                        </div>
+                    </li>
+                
+            
+                
+                        
+                            
+                                
+                            
+                            
+                        
+                    <li>
+                        <script>
+                            console.info("item", ctsApp.util.javaListToJson('MenuApiResponseVO(seqNo=2041, portalSeqNo=316, parentSeqNo=0, name=이용알림, uri=/, orderNo=8, status=1, contentType=DEFAULT, residentOnly=false, subMenuList=[MenuApiResponseVO(seqNo=2055, portalSeqNo=316, parentSeqNo=2041, name=공지사항, uri=/board/B000090, orderNo=34, status=1, contentType=DEFAULT, residentOnly=false, subMenuList=null)])'))</script>
+                        
+                        
+                            
+                            
+                                
+                                
+                            
+                        
+                            
+                        
+                            
+                                <a href="#" class="has-sub">이용알림<i></i></a>
+                            
+                            
+                        
+                        <div class="nav-sub">
+                            <ul>
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                        <li>
+                                            <script>console.warn('TSET:',ctsApp.util.javaListToJson('MenuApiResponseVO(seqNo=2055, portalSeqNo=316, parentSeqNo=2041, name=공지사항, uri=/board/B000090, orderNo=34, status=1, contentType=DEFAULT, residentOnly=false, subMenuList=[])') )</script>
+                                            
+                                                
+                                                
+                                                    <a href="/board/B000090">공지사항</a>
+                                                
+                                            
+                                        </li>
+                                    
+                                
+                                    
+                                
+                            </ul>
+                        </div>
+                    </li>
+                
+            
+                
+                        
+                            
+                                
+                            
+                            
+                        
+                    <li>
+                        <script>
+                            console.info("item", ctsApp.util.javaListToJson('MenuApiResponseVO(seqNo=2042, portalSeqNo=316, parentSeqNo=0, name=센터소개, uri=/, orderNo=10, status=1, contentType=DEFAULT, residentOnly=false, subMenuList=[MenuApiResponseVO(seqNo=2059, portalSeqNo=316, parentSeqNo=2042, name=센터소개, uri=/info, orderNo=42, status=1, contentType=DEFAULT, residentOnly=false, subMenuList=null)])'))</script>
+                        
+                        
+                            
+                            
+                                
+                                
+                            
+                        
+                            
+                        
+                            
+                                <a href="#" class="has-sub">센터소개<i></i></a>
+                            
+                            
+                        
+                        <div class="nav-sub">
+                            <ul>
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                
+                                    
+                                        <li>
+                                            <script>console.warn('TSET:',ctsApp.util.javaListToJson('MenuApiResponseVO(seqNo=2059, portalSeqNo=316, parentSeqNo=2042, name=센터소개, uri=/info, orderNo=42, status=1, contentType=DEFAULT, residentOnly=false, subMenuList=[])') )</script>
+                                            
+                                                
+                                                
+                                                    <a href="/info">센터소개</a>
+                                                
+                                            
+                                        </li>
+                                    
+                                
+                            </ul>
+                        </div>
+                    </li>
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+                
+            
+
+        </ul>
+    </nav>
+</header>
+<!-- //헤더 -->
+    
+    
+    
+    
+    
+    
+
+
+<script>
+    let postfixLang = "";
+</script>
+
+
+
+  
+  
+    
+    
+
+
+
+
+<!-- 바디 -->
+<div class="container bg-f9">
+    <a href="#none" id="skipToContents" aria-label="콘텐츠 시작"></a>
+    <section class="sub-visual">
+        <h2 class="hidden"></h2>
+        <div class="bx-max">
+            <p class="title">장소대관</p>
+            <p>장소대관 입니다.</p>
+        </div>
+    </section>
+    <section class="bx-max contents">
+        <h2 class="hidden">장소 목록</h2>
+        <div class="board business_notice">
+            <div class="data-header clearfix">
+                <!-- BOARD : CONTROLLER -->
+                <div class="bl_boardCtrls">
+                    <div class="bl_boardCtrls_lft">
+                        <p class="bl_boardCtrls_total">
+                            총 <strong id="totalDataCnt"></strong>개의 게시글이 있습니다.
+                        </p>
+                    </div>
+                    <div class="bl_boardCtrls_rgt">
+                        <div class="res-sort">
+                            <select data-select-cate>
+                                <option value="placeName">장소명</option>
+                                <option value="purpose">사용목적</option>
+                            </select>
+                        </div>
+                        <div class="data-search">
+                            <div>
+                                <input data-serach-input type="search" class="form-input guidetext"
+                                       autocomplete="off" aria-label="search" name="projectName" value=""
+                                       placeholder="검색어를 입력해주세요.">
+                                <button data-serach-btn aria-label="검색하기 버튼"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- //BOARD : CONTROLLER -->
+            </div>
+
+            
+            <form id="place_wrap" name="dataForm" method="GET" action="/api/rental/place/user">
+                <input type="hidden" name="sequenceNumberOfPortal" value="316">
+                <input type="hidden" name="size" value="10"/>
+                <input type="hidden" name="page" value="0"/>
+
+                <section class="res-wrap">
+                    <ul data-place-wrap class="res-thumb mb50 clearfix">
+                        <li class="res-item" data-cts-type='template/list'>
+                            <div class="thumb-box">
+                                <div class="thumb-img"
+                                     style="background-image: url('/api/common/download?attachFilePath={{firstAttachment.filePath}}')"
+                                     onclick="window.location.href='/rental/place/{{sequenceNumber}}'">
+                                    <div data-not-usable class="not-operating">
+                                        <div class="badge">
+                                            <i>미운영</i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p class="title ellip">
+                                    <a href="/rental/place/{{sequenceNumber}}">
+                                        <span>{{placeName}}</span>
+                                    </a>
+                                </p>
+                                <div class="ta-rt">
+                                    <div class="res-info">
+                                        <a href="#" class="info-portalName">{{portalName}}</a>
+                                        <a href="#" class="info-capacity">{{capacity}}명 수용가능</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="pager" data-cts-type="template/pagination">
+                        <a data-cts-type="item/prev" href="#" class="ico-prev" aria-label="이전 페이지로 이동하기"></a>
+                        <span class="page-nums" data-cts-type="item/page">
+                            <a href="#" data-cts-type="current"></a>
+                        </span>
+                        <a data-cts-type="item/next" href="#" class="ico-next" aria-label="다음 페이지로 이동하기"></a>
+                    </div>
+                </section>
+            </form>
+        </div>
+    </section>
+</div>
+<!-- //바디 -->
+  
+  
+  
+  
+  
+  
+
+
+
+<script>
+  let controller = (function () {
+    async function init() {
+      $("[data-serach-input]").on("keyup",function (e){
+        if(e.keyCode == 13){
+          setKeyword(e.target.value);
+        }
+      })
+      $("[data-serach-btn]").on("click",function (e){
+        setKeyword($("[data-serach-input]").val())
+      })
+    }
+
+    // [Datasource] 데이터소스 컴포넌트
+    let dataSource = new ctsDatasource(document.dataForm, {
+      onSuccess: function (res) {
+        //전체 갯수 표기
+        if (res && res.pagination && res.pagination.totalCount !== undefined) {
+          $("#totalDataCnt").text(res.pagination.totalCount)
+        } else {
+          $("#totalDataCnt").text("0")
+        }
+      }
+    });
+
+    // [Component] 리스트 컴포넌트
+    let dataList = new ctsList("#place_wrap", {
+      datasource: dataSource,
+      classPageActive: "active",
+      onRenderItem: function (_element, item) {
+        // 미운영 버튼 숨김
+        if (item.isUsable) {
+          _element.find("[data-not-usable]").remove();
+        }
+        return _element;
+      },
+      onRenderList: function () {
+        // 검색결과없음 처리
+        if (this.datasource && this.datasource.list[0] && this.datasource.list[0].response.contents &&
+                this.datasource.list[0].response.contents.length == 0) {
+          $('[data-place-wrap]').html(`<div class="data-none">등록된 데이터가 없습니다.</div>`);
+        }
+      },
+    });
+
+    function setKeyword(keyword){
+      let category  = $('[data-select-cate]').val() === "purpose" ? "purpose" : "placeName";
+      let other =$('[data-select-cate]').val() !== "purpose" ? "purpose" : "placeName";
+      controller.dataSource.setParam(category, keyword);
+      controller.dataSource.setParam(other, "");
+      controller.dataSource.request();
+    }
+
+    return {
+      init: init,
+      dataSource: dataSource,
+      dataList: dataList
+    }
+  })();
+
+  (async function(){
+    await controller.init()
+  })()
+</script>
+
+
+
+
+
+
+    
+        
+
+
+<!-- 푸터 -->
+<footer class="footer">
+  <div class="footer-area bx-max clearfix">
+
+    
+      
+      
+      <h2 style="filter: grayscale(1);background:url('/api/common/download?attachFilePath=%2fold%2fcenter%2flogo22.png') 0 50% / 106px auto no-repeat; background-position: top left; height:107px !important">
+
+      </h2>
+    
+    
+    <div class="bx-fl">
+      <div>
+        
+          <span>상호 : (재)서울경제진흥원</span>&nbsp;&nbsp;
+        
+        
+          <span>사업자등록번호 : <span id="siteOperBizLicenseNo"></span></span>&nbsp;&nbsp;
+        
+        
+          <span>대표자 : 박보경</span>
+        
+      </div>
+      <div>
+        
+          <span>주소 : 서울시 마포구 백범로 31길 21 서울창업허브</span>&nbsp;&nbsp;
+        
+        
+          <span>대표전화 : 0221152000</span>&nbsp;&nbsp;
+        
+        
+          <span>이메일 : startup_bi@sba.seoul.kr</span>&nbsp;&nbsp;
+        
+        
+          <span>정보책임 담당자 : 서울창업허브 공덕</span>
+        
+      </div>
+      <div>
+        <span>시스템•오류 문의 : 02-6952-3125 | help@startup-plus.kr (오전10시~오후5시 / 주말, 공휴일 휴무)</span>
+      </div>
+      <div>
+        Copyright ©All Rights Reserved.
+      </div>
+      <br/>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="bx-fr">
+      <div class="f-terms ta-rt">
+        <a href="/term">개인정보취급방법</a>
+        <a href="/term?type=2">이용약관</a>
+
+      </div>
+
+
+
+
+
+
+    </div>
+  </div>
+</footer><!-- //푸터 -->
+    
+    
+    
+    
+    
+    
+
+</body>
+<script>
+    
+        
+            $('#siteOperBizLicenseNo').text(ctsApp.util.autoHyphenValue(`1028209623`,2))
+        
+        
+    
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/web/assets/js/plugins/jquery-ui.min.js"></script>
+<div class="layer-container">
+  <div class="layer-content">
+    
+    
+    <div class="auto_logout__wrap">
+      <div class="logout_title">
+        <p>
+          <span>자동 로그아웃</span> 안내
+        </p>
+      </div>
+      <div class="logout_content">
+        <div>
+          자동 로그아웃 남은 시간: <span class="logout_time"></span>
+        </div>
+        <div>
+          고객님의 안전한 서비스 이용을 위해<br/>
+          로그인 후 약 2시간 동안 서비스 이용이 없어 로그아웃 합니다.<br/><br/>
+          로그인 시간을 연장하시겠습니까?
+        </div>
+        <div class="button__wrap">
+          <div class="logout_prepare">
+            <button class="common__button color-purple"
+                    onclick="javascript:logoutExtend()">
+              연장하기
+            </button>
+            <button class="common__button" onclick="javascript:logout()">
+              로그아웃
+            </button>
+          </div>
+          <div class="logout_ok">
+            <button class="common__button color-purple"
+                    style="padding: 17px 58px;"
+                    onclick="location.href='/cms_for_portal/process/etc/login/list.do'">
+              다시 로그인
+            </button>
+            <button class="common__button"
+                    style="padding: 17px 50px;"
+                    onclick="location.href='/'">
+              메인화면 이동
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="layer-popup-close" onclick="javascript:logoutPopupClose()"></div>
+</div>
+<script>
+  function logoutPopupOpen() {
+    document.querySelector(".layer-container").style.display = "block";
+    document.querySelector(".layer-container").style.opacity = 1;
+  }
+  function logoutPopupClose() {
+    document.querySelector(".layer-container").style.display = "none";
+    document.querySelector(".layer-container").style.opacity = 0;
+  }
+  function logoutExtend() {
+    // self.location = "/common/sessionExpend.do";
+    $.ajax({
+      type: "POST",
+      url: "/front/session/extend.jsp",
+      success: function(data) {
+        logoutPopupClose();
+        sessionTime = parseInt(7200);
+        popupView = false;
+        
+        
+        
+        
+        
+        
+        
+      },
+      fail: function (error) {
+        console.log(error)
+        self.location = "/";
+      }
+    });
+  }
+  function logout() {
+    self.location = "/logout";
+  }
+  $(function() {
+    $(".layer-container").draggable({
+      containment: '.page__index',
+      scroll: false
+    });
+  });
+</script>
+
+
+
+
+
+
+</html>
+
+
+

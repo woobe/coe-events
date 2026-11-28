@@ -1,0 +1,142 @@
+[
+  {
+    "event_name": "AI EXPO KOREA 2027 (국제인공지능대전, 10th edition)",
+    "city_slug": "seoul-kr",
+    "start_date": "2027-04-14",
+    "end_date": "2027-04-16",
+    "kind": "related",
+    "relevance": "ai",
+    "conflict_severity": "medium",
+    "source_url": "https://aiexpo.co.kr/",
+    "source_title": "AI EXPO KOREA 2027 — 4. 14(수)~16(금), COEX Hall A (aiexpo.co.kr, fetched 2026-11-28)",
+    "accessed_on": "2026-11-28",
+    "needs_human_verify": false,
+    "verification_questions": [
+      "Confirm the 2027 hall allocation and public opening hours, and assess audience overlap with a free AI×Web3 community day in the same week."
+    ],
+    "evidence": {
+      "observed_facts": "The organiser site aiexpo.co.kr (fetched 2026-11-28) prints the 2027 edition as '4. 14 (수) – 16 (금), COEX Hall A' and describes AI EXPO KOREA 2027 as the 10th edition of Korea's largest AI exhibition, noting that the 2026 edition drew 330 companies and institutions from 18 countries across 562 booths with 48,678 visitors and buyers.",
+      "inference": "A three-day AI exhibition at COEX in mid-April puts a large AI-curious audience in Gangnam that week, which is an audience-opportunity signal rather than a conflict for a separate community day."
+    }
+  },
+  {
+    "event_name": "World IT Show 2027 (월드IT쇼, WIS 2027)",
+    "city_slug": "seoul-kr",
+    "start_date": "2027-04-21",
+    "end_date": "2027-04-23",
+    "kind": "related",
+    "relevance": "ai",
+    "conflict_severity": "medium",
+    "source_url": "https://www.worlditshow.co.kr/eng/introduce/01.php",
+    "source_title": "World IT Show 2027 — Dates April 21-23, 2027, 10:00-17:00, COEX Seoul (worlditshow.co.kr, fetched 2026-11-28)",
+    "accessed_on": "2026-11-28",
+    "needs_human_verify": false,
+    "verification_questions": [
+      "Confirm the 2027 programme track for AI infrastructure and assess whether a community side event in the same week would compete for speakers or draw overflow attendance."
+    ],
+    "evidence": {
+      "observed_facts": "The official English page (worlditshow.co.kr/eng/introduce/01.php, fetched 2026-11-28) prints 'Dates April 21 - 23, 2027', '10:00-17:00' and 'Venue COEX, SEOUL, KOREA', and lists 2027 programme items including a Global ICT Trend Insight Conference, business meetings and innovation awards.",
+      "inference": "WIS is the largest Korean ICT exhibition and shares the COEX site with AI EXPO KOREA a week earlier, so April 2027 is the densest AI-adjacent fortnight in the Seoul calendar found in this sweep."
+    }
+  },
+  {
+    "event_name": "Seoul Meta Week 2027 (서울메타위크, 7th edition)",
+    "city_slug": "seoul-kr",
+    "start_date": "2027-04-29",
+    "end_date": "2027-04-30",
+    "kind": "related",
+    "relevance": "ai",
+    "conflict_severity": "high",
+    "source_url": "http://seoulmetaweek.com/en",
+    "source_title": "Seoul Meta Week 2027 — 2027. 04. 29-30, COEX Grand Ballroom (seoulmetaweek.com, fetched 2026-11-28)",
+    "accessed_on": "2026-11-28",
+    "needs_human_verify": false,
+    "verification_questions": [
+      "Confirm the 2027 programme (the 2026 edition ran two days across METACON, an AI marketing summit and a third conference) and assess audience overlap with a free community AI×Web3 day."
+    ],
+    "evidence": {
+      "observed_facts": "The organiser site (seoulmetaweek.com/en, fetched 2026-11-28) prints 'SEOUL META WEEK 2027, APRIL 29-30, COEX' and 'COEX, Grand Ballroom', describes the event as the 7th edition of Korea's AI and tech business conference and lists prior-edition speakers from Google DeepMind, NVIDIA, Samsung, Tencent, Netflix, GitHub and Anthropic.",
+      "inference": "This is the closest audience match in the calendar to a Decentralized AI Day: a Korean AI business conference in the same city, which is why severity is recorded high as an opportunity rather than as a logistics clash."
+    }
+  },
+  {
+    "event_name": "AI Summit Seoul & Expo 2027 (AIS 2027)",
+    "city_slug": "seoul-kr",
+    "start_date": "2027-08-11",
+    "end_date": "2027-08-13",
+    "kind": "related",
+    "relevance": "ai",
+    "conflict_severity": "high",
+    "source_url": "https://www.aisummitseoul.com/2027-agenda",
+    "source_title": "AI Summit Seoul & Expo 2027 — Aug 11-13, 2027, COEX Grand Ballroom & Hall B (aisummitseoul.com, fetched 2026-11-28)",
+    "accessed_on": "2026-11-28",
+    "needs_human_verify": false,
+    "verification_questions": [
+      "Confirm the 2027 agenda and ticket model, and assess whether a free community day in the same week should target the same audience or avoid it."
+    ],
+    "evidence": {
+      "observed_facts": "The 2027 agenda page (aisummitseoul.com/2027-agenda, fetched 2026-11-28) prints 'Aug 11–13, 2027 · COEX Grand Ballroom & Hall B, Seoul' and states the programme is being built around eight themes taking AI from research to deployment.",
+      "inference": "A three-day AI summit at COEX in August is the second-strongest audience opportunity in the set and sits in a month with no other verified Seoul AI event."
+    }
+  },
+  {
+    "event_name": "Physical AI EXPO KOREA 2027",
+    "city_slug": "seoul-kr",
+    "start_date": "2027-09-09",
+    "end_date": "2027-09-11",
+    "kind": "related",
+    "relevance": "ai",
+    "conflict_severity": "low",
+    "source_url": "https://p-aiexpokorea.com/en/ai-expo-english/",
+    "source_title": "Physical AI EXPO KOREA 2027 — September 9-11, 2027, Songdo Convensia Hall 4, Incheon (p-aiexpokorea.com, fetched 2026-11-28)",
+    "accessed_on": "2026-11-28",
+    "needs_human_verify": true,
+    "verification_questions": [
+      "Confirm whether the Incheon venue (Songdo Convensia) is treated as part of the Seoul metro audience for side-event planning, since it is roughly an hour from central Seoul by rail."
+    ],
+    "evidence": {
+      "observed_facts": "The organiser page (p-aiexpokorea.com/en/ai-expo-english/, fetched 2026-11-28) prints 'September 9 (Thu) – 11 (Sat), 2027', '3 days', 'Venue Songdo Convensia Hall 4' and describes the event as covering physical AI, industrial physical AI and robotics and autonomous systems.",
+      "inference": "The event is in Incheon rather than Seoul, so it is recorded at low severity: it shares the AI topic but not the city, and its audience would need to travel."
+    }
+  },
+  {
+    "event_name": "KES 2027 한국전자전 (Korea Electronics Show, COEX leg)",
+    "city_slug": "seoul-kr",
+    "start_date": "2027-10-12",
+    "end_date": "2027-10-15",
+    "kind": "related",
+    "relevance": "ai",
+    "conflict_severity": "low",
+    "source_url": "https://kes2026.micehub-gov.com/fairDash.do?hl=KOR",
+    "source_title": "KES 2027 한국전자전 — 2027.10.12-15 COEX; 2027.10.20-22 KINTEX (kes2026.micehub-gov.com, fetched 2026-11-28)",
+    "accessed_on": "2026-11-28",
+    "needs_human_verify": true,
+    "verification_questions": [
+      "Confirm which halls the COEX leg occupies in 2027 and whether the AI/robotics programme is large enough to matter for a community audience."
+    ],
+    "evidence": {
+      "observed_facts": "The KES 2027 site (kes2026.micehub-gov.com, fetched 2026-11-28) prints 'KES 2027 | 58th Korea Electronics Show 2027.10.12–15 | COEX' and '2027.10.20–22 | KINTEX', splitting the 58th edition across two venues and two weeks.",
+      "inference": "The COEX leg is the Seoul-relevant part; the KINTEX leg is in Goyang and is not recorded."
+    }
+  },
+  {
+    "event_name": "2027 코리아빌드위크 하반기 (Korea Build Week 2027, second half)",
+    "city_slug": "seoul-kr",
+    "start_date": "2027-08-04",
+    "end_date": "2027-08-07",
+    "kind": "major_other",
+    "relevance": "other",
+    "conflict_severity": "none",
+    "source_url": "https://koreabuild.co.kr/",
+    "source_title": "코리아빌드 — 2027 코리아빌드위크 8. 4(수) – 7(토) 서울 코엑스 (koreabuild.co.kr, fetched 2026-11-28)",
+    "accessed_on": "2026-11-28",
+    "needs_human_verify": true,
+    "verification_questions": [
+      "Confirm the COEX hall occupancy for 4-7 August 2027 and assess the logistics effect on hotel demand, transport and nearby venue availability in Samseong-dong."
+    ],
+    "evidence": {
+      "observed_facts": "The Korea Build Week site (koreabuild.co.kr, fetched 2026-11-28) prints '2027 코리아빌드위크 8. 4(수) – 7(토) ㅣ서울 코엑스' alongside the February KINTEX edition, describing itself as Korea's largest construction and interior exhibition with a trade and public audience.",
+      "inference": "A four-day construction expo fills COEX halls in early August, so hotel demand, transport and any COEX-based venue inquiry in that week are affected; this is a logistics flag only and says nothing about topic relevance."
+    }
+  }
+]

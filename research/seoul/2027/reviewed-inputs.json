@@ -1,0 +1,939 @@
+{
+  "city_slug": "seoul-kr",
+  "coverage_findings": [
+    {
+      "accessed_on": "2026-11-28",
+      "end_date": "2028-01-07",
+      "evidence": {
+        "note": "The 서울특별시교육청 home page (https://www.sen.go.kr/) returns a 477-byte NetFunnel queue script rather than content on this host, which is recorded as blocked evidence rather than read as an absence of a policy; the absence claimed here is the registry's, and the per-school observation comes from the 교육부 NEIS page.",
+        "observed_facts": "The registry edition 3b20667d… holds 36 jurisdiction ids including KR:seoul; a KR projection shows 20 holiday rows, every one with jurisdiction_id KR, zero rows for KR:seoul and zero coverage rows for KR:seoul. The NEIS 학사일정 open-data description lists 시도교육청명, 행정표준코드, 학교명, 학년도, 주야과정명, 학교과정명, 수업공제일명, 학사일자, 행사명, 행사내용, 학년별 행사여부, 수정일자 — i.e. rows keyed by school, not a city calendar."
+      },
+      "finding": "no_applicable_days",
+      "jurisdiction_id": "KR:seoul",
+      "kind": "school_lane_finding",
+      "needs_human_verify": true,
+      "note": "No school-holiday day is asserted for this store. The pinned registry lists KR:seoul as a curated host but carries no KR:seoul holiday row and no KR:seoul coverage row; its twenty KR rows are all jurisdiction_id KR (the 2027 관공서의 공휴일 block from the 2027년 월력요항), so host_scope_ids('KR:seoul') resolves to KR and KR:seoul and the school layer is empty. Seoul school dates are published per school through NEIS, one school year at a time, so no single authority page carries a 2027 Seoul-wide vacation calendar: the 서울특별시교육청 index served a NetFunnel queue shell at access (captures/school_sen_index_netfunnel.html, 477 bytes) and its notice list returned no 학사일정 notice page. Korea's 2027 월력요항 public dates are already stored as KR public_holiday rows; no Osaka, Tokyo or Kyoto school row was substituted.",
+      "source_edition": "plan-event school_holidays.json, installed Asia edition, sha256 3b20667de940342954040f06d6695d490d8e27515d536969d127a0fa92bacdaf",
+      "source_locator": "captures/school_kr_registry_extract.json — KR projection of that edition: jurisdiction_id_present true for KR:seoul, kr_row_count 20 with kr_row_ids ['KR'] only, kr_seoul_holiday_rows 0, kr_seoul_coverage_rows 0. The one KR coverage row is the national 2027 월력요항 public-holiday row, not a school row. captures/school_neis_schedule_api.html — 교육부_나이스(NEIS) 교육정보 개방 포털_학사일정, '설명' paragraph: '시도교육청이 제공하는 나이스 교육정보와 관련하여 교육정보 개방 포털에서 학사일정을 포함한 다양한 데이터를 서비스하는 내용을 담고 있습니다' and the (제공데이터) field list 학교명, 학년도, 학사일자, 행사명 — the 학사일정 layer is a per-school feed, not a city-wide 2027 calendar.",
+      "source_title": "교육부_나이스(NEIS) 교육정보 개방 포털_학사일정 (공공데이터포털)",
+      "source_url": "https://www.data.go.kr/data/15137088/openapi.do",
+      "start_date": "2027-01-01",
+      "verification_questions": [
+        "Confirm the 2027 학사일정 (여름방학, 겨울방학, 재량휴업일) of the specific Seoul schools whose catchment the chosen date lands in, from those schools' NEIS entries, before any date is proposed."
+      ]
+    }
+  ],
+  "declared_gaps": [
+    {
+      "kind": "school_lane",
+      "text": "School holidays for Seoul are not in the pinned registry: the installed Asia edition 3b20667d… lists KR:seoul as a curated host but carries no KR:seoul holiday row and no KR:seoul coverage row, so no school row is stored and the Seoul calendar layer carries public holidays only (20 KR rows from the 2027 월력요항). Seoul school dates are published per school through NEIS, one school year at a time; no 2027 Seoul-wide vacation calendar was found at 2026-11-28 (the 서울특별시교육청 index served a NetFunnel queue shell and its notice list returned no 학사일정 page). The dated, scoped finding is recorded in the store's coverage rows; no Osaka, Tokyo or Kyoto school row was substituted.",
+      "verified_at": "2026-11-28"
+    },
+    {
+      "kind": "licence",
+      "text": "The three local-requirement claims record Seoul's language channels, the national alcohol licensing route and Seoul's food-service permit route. None of them says which licence a given venue holds, whether a 50-person private event is covered, or who would hold it: alcohol service and external catering stay unknown on every room. Two captured venue pages do address it — the DDP organiser guide requires prior approval for food and prior discussion for any alcohol brought in, and 몽상가들 스페이스 states that food and alcohol brought in need separate consultation — but neither says who holds a licence.",
+      "verified_at": "2026-11-28"
+    },
+    {
+      "kind": "photos",
+      "text": "Six of the sixteen rooms carry operator-published room photographs (12 hotlinked images: DDP 서울-온 화상스튜디오 ×3, COEX 스튜디오 159 ×3, 마로니에공원 다목적홀 ×1, 노들섬 라이브하우스 ×3, 노들섬 노들라운지 ×1, KT&G 상상마당 라이브홀 ×1); ten keep an explicit withheld record with the reason (DDP 디자인홀, DDP 잔디사랑방, COEX 컨퍼런스룸 300, 판교 대회의실, 판교 국제회의장, 몽상가들 서브 세미나룸, 스페이스쉐어 컨퍼런스 B룸, 성공 스페이스, and COCOC 대강당 + 컨퍼런스룸 A, whose published photographs returned 200 at first check and 403 from the operator host on recheck). No Wikimedia image was used: no Commons file on a captured page depicts one of these hired rooms. The 공유누리 hall photograph is published only at 349x262 and is recorded at that size, not upscaled.",
+      "verified_at": "2026-11-28"
+    },
+    {
+      "kind": "coordinates",
+      "text": "Sixteen records sit on ten distinct points. Eight records tier building (DDP ×3, 판교 ×2, 노들섬 라이브하우스, 상상마당 빌딩, 대화빌딩), seven tier street (COCOC ×2 on the 강남대로53길 way, COEX ×2 on a 513 영동대로 point that resolves to a restaurant at that address, 몽상가들 on 8 문래북로, 노들섬 노들라운지 on the island address, 성공 스페이스 on the 왕십리로 way) and 마로니에공원 다목적홀 is area tier (the park). 성공 스페이스 stays a road-segment point after seven Nominatim and four Overpass lookups, all stored. No room entrance was verified anywhere.",
+      "verified_at": "2026-11-28"
+    },
+    {
+      "kind": "events",
+      "text": "Seven 2027 calendar rows were merged from the approved bundle; the page recommends no date and none is booked. KBW2027, UDC, Korea Fintech Week 2027, Seoul Fintech Week 2027, Seoul Fashion Week 2027 F/W and an ETH Seoul 2027 edition have no announced date, so they are carried as notes rather than rows. Three of the seven rows are AI-relevant (AI EXPO KOREA 2027, AI Summit Seoul & Expo 2027, Physical AI EXPO KOREA 2027 at Songdo); the rest are city events used as collision context.",
+      "verified_at": "2026-11-28"
+    },
+    {
+      "kind": "cost",
+      "text": "Five of the sixteen records carry no readable price (COEX 컨퍼런스룸 300, COEX 스튜디오 159, KT&G 상상마당 라이브홀, 스페이스쉐어 컨퍼런스 B룸, 성공 스페이스) and their cost is unknown rather than zero; three more record an eight-hour estimate from an hourly rate. USD figures use ECB 2026-11-27 (1 KRW = USD 0.00074912).",
+      "verified_at": "2026-11-28"
+    },
+    {
+      "kind": "sources",
+      "text": "The five programme-wide mandatory discovery sources (Miragather ×3, AI Tinkerers, the DeAI Luma feed) carry no check date in this store: the Seoul research bundle recorded no pass against them, and the page prints that fact rather than an assumed read.",
+      "verified_at": "2026-11-28"
+    }
+  ],
+  "event_context": {
+    "attendance": 50,
+    "duration_hours": 8,
+    "preferred_duration_hours": 12,
+    "soft_budget_usd": 5000.0,
+    "start_local": "09:00"
+  },
+  "holiday_registry": {
+    "host_jurisdiction_id": "KR:seoul"
+  },
+  "local_requirements": {
+    "alcohol": {
+      "additional_sources": [
+        {
+          "capture": "captures/claim_alcohol_nts_guidebook_2023.pdf",
+          "language": "ko",
+          "quote": "｢식품위생법｣에 따른 영업허가를 받은 장소에서 주류를 판매하거나(유흥음식점 면허) 백화점, 슈퍼마켓, 편의점 또는 이와 유사한 상점에서 주류를 판매(의제소매면허)하기 위하여 세무서장에게 신청하는 민원 ｢주류 면허 등에 관한 법률｣ 제5조 … ∙ 식품위생법에 따른 식품접객업 중 일반음식점, 단란주점, 유흥주점 영업에만 음주행위가 허용되므로 휴게음식점, 위탁급식 등에 대한 유흥음식점 면허는 불가(식품위생법 시행령 제21조)",
+          "source_locator": "Ⅴ. 주류 판매면허 신청 → 의제주류판매업면허, 민원개요 and the 참고 및 유의사항 bullet; and Ⅲ. 판매업면허의 행정기관 심사기준, 시행령 제8조③ with the '판매장 관할 세무서장' sentence. PDF text extracted with pypdf, then whitespace normalised the same way as the HTML captures.",
+          "source_title": "국세청 주류면허 신청 가이드북 (2023) — Ⅴ. 주류 판매면허 신청, 의제주류판매업면허",
+          "source_url": "https://www.nts.go.kr/comm/nttFileDownload.do?fileKey=219e161b1c0c6d770d5f811263e302d9"
+        }
+      ],
+      "language": "ko",
+      "quote": "제5조(주류 판매업면허) ① 주류 판매업(판매중개업 또는 접객업을 포함한다. 이하 같다)을 하려는 자는 대통령령 으로 정하는 주류 판매업의 종류별로 판매장마다 대통령령 으로 정하는 시설기준과 그 밖의 요건을 갖추어 관할 세무서장의 면허를 받아야 한다. ② 다음 각 호의 어느 하나에 해당하는 자가 대통령령 으로 정하는 바에 따라 관할 세무서장에게 주류 판매에 관한 신고를 한 경우에는 제1항에 따른 주류 판매업의 면허(이하 “주류 판매업면허”라 한다)를 받은 것으로 본다. 1. 「식품위생법」 에 따른 영업허가를 받은 장소에서 주류 판매업을 하는 자",
+      "source_locator": "captures/claim_alcohol_law_article5.html — 국가법령정보센터 조문정보 for 제5조(주류 판매업면허): ① the 판매장마다 … 관할 세무서장의 면허 sentence, ② the 신고 deeming sentence and its 제1호 (「식품위생법」 영업허가 place). Text matched after tag stripping and whitespace normalisation. The article prints no 管轄 table.",
+      "source_title": "「주류 면허 등에 관한 법률」 제5조(주류 판매업면허) [시행 2026. 7. 1.] [법률 제21716호, 2026. 6. 2., 일부개정] — 국가법령정보센터",
+      "source_url": "https://www.law.go.kr/LSW/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1031277957",
+      "value": {
+        "alcohol_at_food_premises": "국세청 prints that among 식품접객업 only 일반음식점, 단란주점 and 유흥주점 may serve alcohol; 휴게음식점 and 위탁급식 cannot hold the 유흥음식점 deemed licence. A hired hall is not itself a licensed 영업장, so whether the venue's own food licence reaches the room is a per-venue question these pages do not answer.",
+        "authority": "국세청 (the licence is granted and administered by 관할 세무서장 under 「주류 면허 등에 관한 법률」 제5조, 시행 2026-07-01; the 국세청 주류면허 신청 가이드북 restates the deemed route and the 식품접객업 categories)",
+        "competent_desk": "The competent desk is the competent tax office (관할 세무서장) for the venue address, to be confirmed. The captured pages print no district-to-office table, so this claim assigns no ward, district or venue to any particular 세무서.",
+        "deemed_route_scope": "국세청 prints that the deemed route is opened by a 「식품위생법」 영업허가 place selling alcohol — the 유흥음식점 route — and by a shop of the 백화점·슈퍼마켓·편의점 kind for 일반소매; a food business whose category does not allow drinking cannot use the 유흥음식점 route.",
+        "licensing_route": "Selling alcohol is 주류 판매업 (the law includes 판매중개업 and 접객업 in that term): a person who wants to carry it on must hold a 주류 판매업면허 for the licence type and for each 판매장, granted by 관할 세무서장. Where the place already holds a 「식품위생법」 영업허가 and sells alcohol there, a 신고 to 관할 세무서장 deems the licence granted (주류 판매업면허의 의제).",
+        "not_established": "These pages do not say who holds the licence for a private event in a hired hall, whether complimentary drinks with no sale fall under 주류 판매업, whether a hired hall can be a 판매장, what the fee and lead time are, or whether a hotel's or caterer's existing licence covers a hired room.",
+        "who_must_hold_it": "The holder is the party carrying on the 주류 판매업 at the 판매장 — in the authority's words, '주류 판매업을 하려는 자' or the 「식품위생법」 영업허가 holder that sells there. Which party that is for a 50-person private event (the venue's own F&B operation, an external caterer, or the organiser) is not settled by these pages and must be fixed in the venue contract."
+      },
+      "verified_at": "2026-11-28"
+    },
+    "food": {
+      "language": "ko",
+      "quote": "일반음식점영업 음식류 조리·판매 - 식사와 함께 부수적인 음주행위 가능 - 공연가능 … 휴게음식점영업 다(茶)류, 음식류 조리·판매 - 음주행위 불가 - 공연가능 … 허가업종 : 단란주점업, 유흥주점업 ○ 신고업종 : 휴게·일반음식점, 제과점 ○ 처리기관 : 구청(위생담당 부서) … 허가처리 기한 : 3일 … 영업의 신고수리 : 즉시 (접수 후 3시간이내 처리)",
+      "source_locator": "captures/claim_food_seoul_foodservice.html — 식품접객업 영업현황 및 신고(허가)처리 과정: the □ 영업의 종류 table rows for 일반음식점영업 / 휴게음식점영업 / 제과점영업, the 허가 및 신고대상 업종 block (허가업종, 신고업종, 처리기관 : 구청(위생담당 부서)), the 영업의 허가절차 line, 허가처리 기한 : 3일, and 영업의 신고수리 : 즉시 (접수 후 3시간이내 처리). The table cells were matched after tag stripping and whitespace normalisation, so the ' - ' separators are the page's own bullet glyphs, not added punctuation. Page banner prints 수정일 2018-11-08.",
+      "source_title": "식품접객업 영업현황 및 신고(허가)처리 과정 — 서울특별시 시민건강국 식품정책과 (수정일 2018-11-08)",
+      "source_url": "https://news.seoul.go.kr/welfare/archives/221025",
+      "value": {
+        "alcohol_with_meals": "The same table prints 일반음식점영업 as 음식류 조리·판매 with '식사와 함께 부수적인 음주행위 가능', while 휴게음식점영업 and 제과점영업 print '음주행위 불가' — the food category, not the room, decides whether drinking is allowed on the premises.",
+        "authority": "서울특별시 시민건강국 식품정책과 (담당부서 and 문의 printed on the page); the permit counter is 구청(위생담당 부서)",
+        "event_route": "Not established by this page: it publishes only the fixed-premises 영업허가/영업신고 route for a licensed 식품접객업 premises and says nothing about a 기간제 or 임시 licence for a one-off event, so no event-food route is asserted for Seoul.",
+        "fixed_premises": "The city prints that 식품접객업 splits into 허가업종 (단란주점업, 유흥주점업) and 신고업종 (휴게·일반음식점, 제과점), that the 처리기관 is 구청(위생담당 부서), that a 허가 is handled in 3 days and a 영업신고 in 3 hours, and it prints the 허가 procedure as 신청서 작성 → 접수 → 서류검토 → 현장실사 및 시설조사 → 결재 → 허가증 교부.",
+        "licence": "「식품위생법」에 따른 식품접객업 영업허가 (단란주점업·유흥주점업) 또는 영업신고 (휴게·일반음식점, 제과점)",
+        "not_established": "The page does not say who holds the licence for a private event (caterer, venue kitchen or organiser), whether a member-only event with no sale needs any notification, what the fee is, or whether a hotel's or venue kitchen's licence covers catering into a hired room; those stay venue-level questions."
+      },
+      "verified_at": "2026-11-28"
+    },
+    "language": {
+      "language": "ko",
+      "quote": "기존에 운영 중인 5개 언어(영어·중국어·일본어·베트남어·몽골어) 전화상담도 계속 이용할 수 있다. … 서울시는 외국인 시민과 관광객이 언어 장벽 없이 서울에서 생활할 수 있도록 다양한 안내 서비스를 운영하고 있다. … 명동역·홍대입구역·강남역 등 주요 지하철역 11곳에서 인공지능(AI) 실시간 통역 서비스를 운영하고 있으며, 서울 공식 관광정보 플랫폼인 ‘비짓서울(VISIT SEOUL)’에서는 다국어 관광정보를 제공한다.",
+      "source_locator": "captures/claim_language_seoul_120_multilingual.html — 120다산콜 영어 문자상담 시작…다국어 맞춤 서비스 확대!, 발행일 2026.11.05: the '5개 언어' sentence under '영어·중국어·일본어 등 5개 언어 전화상담도 운영', the '서울시는 외국인 시민과 관광객이 언어 장벽 없이…' sentence, and the '명동역·홍대입구역·강남역 등 주요 지하철역 11곳…' sentence. Text matched after tag stripping and whitespace normalisation; the five-language list and the '지원언어' box are list markup on the page and were matched the same way.",
+      "source_title": "120다산콜 영어 문자상담 시작…다국어 맞춤 서비스 확대! (내 손안에 서울, 서울특별시, 2026-11-05)",
+      "source_url": "https://mediahub.seoul.go.kr/archives/2019947",
+      "value": {
+        "authority": "서울특별시 (내 손안에 서울, the city's own newsroom, 2026-11-05); the service is run by 서울시 120다산콜재단",
+        "city_guidance": "Seoul publishes official information for non-Korean speakers through named channels rather than a single register: a five-language telephone service (영어·중국어·일본어·베트남어·몽골어), an English SMS channel, multilingual content planned for the city's own Instagram and blog channels, AI real-time interpretation at eleven major subway stations, multilingual tourist information on VISIT SEOUL, and 생활상담 at 서울글로벌센터.",
+        "event_implication": "For a private community event this is guidance, not an obligation: the city publishes no rule requiring a private event to use any particular language. Providing Korean copy with an English version follows the city's own practice and matches how the city answers a non-Korean-speaking resident.",
+        "not_established": "The release sets no obligation on a private event's language, gives no figure for how many Seoul residents read each language, and says nothing about interpretation, signage or accessibility obligations at a hired venue.",
+        "published_channels": "The quoted release names the five telephone languages, the English SMS line (02-120, weekdays 09:00-18:00), the plan to post multilingual content on the city-run Instagram and blog, AI interpretation at eleven stations, VISIT SEOUL's multilingual pages and 서울글로벌센터 counselling."
+      },
+      "verified_at": "2026-11-28"
+    }
+  },
+  "notes": [
+    "Built from the approved research bundle research/seoul/2027 (16 venues: 12 shortlist_ready, 4 lead; 14 communities; 7 calendar rows).",
+    "Registry: installed Asia edition 3b20667de940342954040f06d6695d490d8e27515d536969d127a0fa92bacdaf; KR:seoul is a curated id with no holiday rows and no coverage rows, so no supplement is declared and a reviewed school_lane_finding records the absence (KR:seoul, 2027-01-01..2028-01-07).",
+    "Paired brief: 50 people, 09:00 start, 8-hour floor (09:00-17:00), 12-hour preferred (09:00-21:00), soft USD 5,000, calendar year 2027, no recommended date.",
+    "Photos: operator gallery first; 12 hotlinked operator photographs across 6 rooms and 10 explicit withheld records (two COCOC rooms withheld after their published images returned 403 on recheck); no Wikimedia image was used.",
+    "Claims are dated 2026-11-28 and scope each value to what its quoted capture establishes; the alcohol value names only the licensing route, the holder and 'the competent tax office for the venue address, to be confirmed'."
+  ],
+  "photos": {
+    "COEX — 스튜디오 159 (Studio 159, 2F)": [
+      {
+        "alt": "Studio 159 gallery image 1 (operator gallery, no per-image caption)",
+        "alt_basis": "operator_page_gallery",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 1707,
+          "width": 2560
+        },
+        "hotlink_ok": true,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+        "room": "스튜디오 159",
+        "room_specific": true,
+        "source_page": "https://business.coex.co.kr/meeting-room/studio-159/",
+        "url": "https://business.coex.co.kr/wp-content/uploads/sites/2/2023/11/%EC%8A%A4%ED%8A%9C%EB%94%94%EC%98%A4159-1.jpg",
+        "verified": {
+          "bytes": 654294,
+          "checked_on": "2026-11-28",
+          "content_type": "image/jpeg",
+          "status": "200"
+        },
+        "view_kind": "interior",
+        "withheld": false
+      },
+      {
+        "alt": "Studio 159 gallery image 2 (operator gallery, no per-image caption)",
+        "alt_basis": "operator_page_gallery",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 1707,
+          "width": 2560
+        },
+        "hotlink_ok": true,
+        "index": 1,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+        "room": "스튜디오 159",
+        "room_specific": true,
+        "source_page": "https://business.coex.co.kr/meeting-room/studio-159/",
+        "url": "https://business.coex.co.kr/wp-content/uploads/sites/2/2023/11/COEX_CMC_011.jpg",
+        "verified": {
+          "bytes": 665691,
+          "checked_on": "2026-11-28",
+          "content_type": "image/jpeg",
+          "status": "200"
+        },
+        "view_kind": "interior",
+        "withheld": false
+      },
+      {
+        "alt": "Studio 159 gallery image 3 (operator gallery, no per-image caption)",
+        "alt_basis": "operator_page_gallery",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 568,
+          "width": 852
+        },
+        "hotlink_ok": true,
+        "index": 2,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+        "room": "스튜디오 159",
+        "room_specific": true,
+        "source_page": "https://business.coex.co.kr/meeting-room/studio-159/",
+        "url": "https://business.coex.co.kr/wp-content/uploads/sites/2/2023/12/coex159-8re.jpg",
+        "verified": {
+          "bytes": 322323,
+          "checked_on": "2026-11-28",
+          "content_type": "image/jpeg",
+          "status": "200"
+        },
+        "view_kind": "interior",
+        "withheld": false
+      }
+    ],
+    "COEX — 컨퍼런스룸 300 (Conference Room 300, 남 3F)": [
+      {
+        "alt": "No photograph identified as 컨퍼런스룸 300 on a captured operator page",
+        "alt_basis": "none",
+        "checked_on": "2026-11-28",
+        "dimensions": null,
+        "hotlink_ok": null,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": null,
+        "rights_basis": "none",
+        "rights_note": "The captured 3F page publishes a fourteen-image block gallery for 컨퍼런스룸(남) 3F with no per-image caption, and the facilities list carries only a thumbnail of that block; no captured page identifies an image as room 300 itself.",
+        "room": "컨퍼런스룸 300",
+        "room_specific": null,
+        "source_page": "https://business.coex.co.kr/meeting-room/conference-room-3f/",
+        "url": null,
+        "verified": null,
+        "view_kind": "",
+        "withheld": true
+      }
+    ],
+    "DDP 동대문디자인플라자 — 디자인랩 디자인홀 (Design Hall, 3F)": [
+      {
+        "alt": "No photograph of the Design Hall on a captured operator page",
+        "alt_basis": "none",
+        "checked_on": "2026-11-28",
+        "dimensions": null,
+        "hotlink_ok": null,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": null,
+        "rights_basis": "none",
+        "rights_note": "The captured 디자인랩 pages (deep.ddp.or.kr/introduce/c002.do price table and c003.do gallery) publish a gallery only for 서울-온 화상스튜디오; no image on a captured page is captioned or placed as the 디자인홀.",
+        "room": "디자인홀",
+        "room_specific": null,
+        "source_page": "https://deep.ddp.or.kr/introduce/c003.do",
+        "url": null,
+        "verified": null,
+        "view_kind": "",
+        "withheld": true
+      }
+    ],
+    "DDP 동대문디자인플라자 — 서울-온 화상스튜디오 (Seoul-On Studio, Design Lab 2F)": [
+      {
+        "alt": "서울-온 화상스튜디오 사진 (operator alt text)",
+        "alt_basis": "operator_page_caption",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 710,
+          "width": 1064
+        },
+        "hotlink_ok": true,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+        "room": "서울-온 화상스튜디오",
+        "room_specific": true,
+        "source_page": "https://deep.ddp.or.kr/introduce/c003.do",
+        "url": "https://deep.ddp.or.kr/deep/images/rental/zone_d_a01.jpg",
+        "verified": {
+          "bytes": 533834,
+          "checked_on": "2026-11-28",
+          "content_type": "image/jpeg",
+          "status": "200"
+        },
+        "view_kind": "interior",
+        "withheld": false
+      },
+      {
+        "alt": "서울-온 화상스튜디오 사진 (operator alt text)",
+        "alt_basis": "operator_page_caption",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 711,
+          "width": 1066
+        },
+        "hotlink_ok": true,
+        "index": 1,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+        "room": "서울-온 화상스튜디오",
+        "room_specific": true,
+        "source_page": "https://deep.ddp.or.kr/introduce/c003.do",
+        "url": "https://deep.ddp.or.kr/deep/images/rental/zone_d_a02.jpg",
+        "verified": {
+          "bytes": 409570,
+          "checked_on": "2026-11-28",
+          "content_type": "image/jpeg",
+          "status": "200"
+        },
+        "view_kind": "interior",
+        "withheld": false
+      },
+      {
+        "alt": "서울-온 화상스튜디오 사진 (operator alt text)",
+        "alt_basis": "operator_page_caption",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 677,
+          "width": 1296
+        },
+        "hotlink_ok": true,
+        "index": 2,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+        "room": "서울-온 화상스튜디오",
+        "room_specific": true,
+        "source_page": "https://deep.ddp.or.kr/introduce/c003.do",
+        "url": "https://deep.ddp.or.kr/deep/images/rental/zone_d_a03.jpg",
+        "verified": {
+          "bytes": 479730,
+          "checked_on": "2026-11-28",
+          "content_type": "image/jpeg",
+          "status": "200"
+        },
+        "view_kind": "interior",
+        "withheld": false
+      }
+    ],
+    "DDP 동대문디자인플라자 — 잔디사랑방 (Jandi-sarangbang, Design Lab 4F)": [
+      {
+        "alt": "No photograph of 잔디사랑방 on a captured operator page",
+        "alt_basis": "none",
+        "checked_on": "2026-11-28",
+        "dimensions": null,
+        "hotlink_ok": null,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": null,
+        "rights_basis": "none",
+        "rights_note": "The captured 디자인랩 pages describe 잔디사랑방 in text and price it, but neither c002.do nor c003.do carries a photograph of that room and no captured page captions one.",
+        "room": "잔디사랑방",
+        "room_specific": null,
+        "source_page": "https://deep.ddp.or.kr/introduce/c003.do",
+        "url": null,
+        "verified": null,
+        "view_kind": "",
+        "withheld": true
+      }
+    ],
+    "KT&G 상상마당 홍대 — 라이브홀 (Live Hall, B2)": [
+      {
+        "alt": "라이브홀 (operator alt text)",
+        "alt_basis": "operator_page_caption",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 909,
+          "width": 1620
+        },
+        "hotlink_ok": true,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+        "room": "라이브홀",
+        "room_specific": true,
+        "source_page": "https://www.sangsangmadang.com/main/HD",
+        "thumb_note": "1620x909 PNG served without a file extension; bytes and dimensions checked on 2026-11-28",
+        "url": "https://www.sangsangmadang.com/feah/temp/2025/202507/7eb5ab72-2561-47ee-9513-6f7e6c1b6936",
+        "verified": {
+          "bytes": 661686,
+          "checked_on": "2026-11-28",
+          "content_type": "image/png",
+          "status": "200"
+        },
+        "view_kind": "interior",
+        "withheld": false
+      }
+    ],
+    "경기창조경제혁신센터 (판교) — 국제회의장, 지하 2층": [
+      {
+        "alt": "No photograph identified as 국제회의장 on the captured operator page",
+        "alt_basis": "none",
+        "checked_on": "2026-11-28",
+        "dimensions": null,
+        "hotlink_ok": null,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": null,
+        "rights_basis": "none",
+        "rights_note": "Same capture: the page renders the 소회의실1 tab and the image groups carry no room caption, so no image is asserted as the 국제회의장.",
+        "room": "국제회의장",
+        "room_specific": null,
+        "source_page": "https://www.pangyotechnovalley.org/base/rentalManagement/facility?building=4&menuLevel=4&menuNo=3",
+        "url": null,
+        "verified": null,
+        "view_kind": "",
+        "withheld": true
+      }
+    ],
+    "경기창조경제혁신센터 (판교) — 대회의실, 10층": [
+      {
+        "alt": "No photograph identified as 대회의실 on the captured operator page",
+        "alt_basis": "none",
+        "checked_on": "2026-11-28",
+        "dimensions": null,
+        "hotlink_ok": null,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": null,
+        "rights_basis": "none",
+        "rights_note": "The captured 판교테크노밸리 facility page renders the 소회의실1 subpage and its images carry no room caption; no captured image is placed with 대회의실.",
+        "room": "대회의실",
+        "room_specific": null,
+        "source_page": "https://www.pangyotechnovalley.org/base/rentalManagement/facility?building=4&menuLevel=4&menuNo=3",
+        "url": null,
+        "verified": null,
+        "view_kind": "",
+        "withheld": true
+      }
+    ],
+    "노들섬 노들라운지 (Nodeul Lounge, 1F)": [
+      {
+        "alt": "노들라운지 gallery image (operator file name, no caption)",
+        "alt_basis": "operator_page_gallery",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 960,
+          "width": 1280
+        },
+        "hotlink_ok": true,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+        "room": "노들라운지",
+        "room_specific": true,
+        "source_page": "https://nodeul.org/facility/nodeul-lounge/",
+        "url": "https://cdn.nodeul.org/wp-content/uploads/2023/06/29230025/photo_2024-10-10_10-16-08.jpg",
+        "verified": {
+          "bytes": 174311,
+          "checked_on": "2026-11-28",
+          "content_type": "image/jpeg",
+          "status": "200"
+        },
+        "view_kind": "interior",
+        "withheld": false
+      }
+    ],
+    "노들섬 라이브하우스 (Nodeul Island Livehouse, 1F)": [
+      {
+        "alt": "라이브하우스01 (operator file name; gallery image, no caption)",
+        "alt_basis": "operator_page_gallery",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 891,
+          "width": 1920
+        },
+        "hotlink_ok": true,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+        "room": "라이브하우스",
+        "room_specific": true,
+        "source_page": "https://nodeul.org/facility/livehouse/",
+        "url": "https://cdn.nodeul.org/wp-content/uploads/2019/09/04074106/%EB%9D%BC%EC%9D%B4%EB%B8%8C%ED%95%98%EC%9A%B0%EC%8A%A401.jpg",
+        "verified": {
+          "bytes": 1046915,
+          "checked_on": "2026-11-28",
+          "content_type": "image/jpeg",
+          "status": "200"
+        },
+        "view_kind": "interior",
+        "withheld": false
+      },
+      {
+        "alt": "live-house-026 (operator file name; gallery image, no caption)",
+        "alt_basis": "operator_page_gallery",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 2000,
+          "width": 3000
+        },
+        "hotlink_ok": true,
+        "index": 1,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+        "room": "라이브하우스",
+        "room_specific": true,
+        "source_page": "https://nodeul.org/facility/livehouse/",
+        "url": "https://cdn.nodeul.org/wp-content/uploads/2023/06/05232653/live-house-026.jpg",
+        "verified": {
+          "bytes": 2240950,
+          "checked_on": "2026-11-28",
+          "content_type": "image/jpeg",
+          "status": "200"
+        },
+        "view_kind": "interior",
+        "withheld": false
+      },
+      {
+        "alt": "라이브하우스03 (operator file name; gallery image, no caption)",
+        "alt_basis": "operator_page_gallery",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 891,
+          "width": 1920
+        },
+        "hotlink_ok": true,
+        "index": 2,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+        "room": "라이브하우스",
+        "room_specific": true,
+        "source_page": "https://nodeul.org/facility/livehouse/",
+        "url": "https://cdn.nodeul.org/wp-content/uploads/2019/09/04074111/%EB%9D%BC%EC%9D%B4%EB%B8%8C%ED%95%98%EC%9A%B0%EC%8A%A403.jpg",
+        "verified": {
+          "bytes": 928076,
+          "checked_on": "2026-11-28",
+          "content_type": "image/jpeg",
+          "status": "200"
+        },
+        "view_kind": "interior",
+        "withheld": false
+      }
+    ],
+    "마로니에공원 다목적홀 (Marronnier Park Multipurpose Hall, 좋은공연안내센터 B2)": [
+      {
+        "alt": "마로니에공원 다목적홀 1 (operator alt text)",
+        "alt_basis": "operator_page_caption",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 262,
+          "width": 349
+        },
+        "hotlink_ok": true,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "공유누리 (public sharing service) publishes the photograph on the record that hires out the hall. It is hotlinked, not redistributed; the page names the hall as the source.",
+        "room": "다목적홀",
+        "room_specific": true,
+        "source_page": "https://eshare.go.kr/UserPortal/Upv/UprResrcFacl/index.do?rsrc_no=DF03O1304240",
+        "thumb_note": "349x262 is the only size 공유누리 publishes for this attachment; recorded, not upscaled",
+        "url": "https://www.eshare.go.kr/UserPortal/Upv/110218/fileDetail.do?file_sn=1&size=m",
+        "verified": {
+          "bytes": 15578,
+          "checked_on": "2026-11-28",
+          "content_type": "image/jpeg",
+          "status": "200"
+        },
+        "view_kind": "interior",
+        "withheld": false
+      }
+    ],
+    "몽상가들 스페이스 (MongSang Space, 문래) — 서브 세미나룸": [
+      {
+        "alt": "No photograph identified as 서브 세미나룸 on a captured operator page",
+        "alt_basis": "none",
+        "checked_on": "2026-11-28",
+        "dimensions": null,
+        "hotlink_ok": null,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": null,
+        "rights_basis": "none",
+        "rights_note": "The captured pricing page carries one uncaptioned image (space-08.jpg) and the home page gallery captions describe setups (60인 좌석 세팅, 북토크) rather than rooms; no captured image is identified as the 서브 세미나룸.",
+        "room": "서브 세미나룸",
+        "room_specific": null,
+        "source_page": "https://www.mongsang-space.com/pricing",
+        "url": null,
+        "verified": null,
+        "view_kind": "",
+        "withheld": true
+      }
+    ],
+    "성공 스페이스 (Seonggong Space, 성동구 왕십리)": [
+      {
+        "alt": "No photograph of the room on the captured 성동구 pages",
+        "alt_basis": "none",
+        "checked_on": "2026-11-28",
+        "dimensions": null,
+        "hotlink_ok": null,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": null,
+        "rights_basis": "none",
+        "rights_note": "The captured 신속예약 list carries only generic 추천서비스 images (alt 추천서비스 이미지1) and the detail view renders its body client-side, so no image is identified as the room.",
+        "room": "성공 스페이스",
+        "room_specific": null,
+        "source_page": "https://www.sd.go.kr/booking/selectUnityFcltyOperWebList.do?key=4837",
+        "url": null,
+        "verified": null,
+        "view_kind": "",
+        "withheld": true
+      }
+    ],
+    "스페이스쉐어 삼성역센터 — 컨퍼런스 B룸 (60명)": [
+      {
+        "alt": "No photograph of 컨퍼런스 B룸 on the captured operator pages",
+        "alt_basis": "none",
+        "checked_on": "2026-11-28",
+        "dimensions": null,
+        "hotlink_ok": null,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": null,
+        "rights_basis": "none",
+        "rights_note": "The captured 삼성역센터 pages illustrate the building exterior, a 1F room, 리젠시홀 and the lounge only; the room list page the reservation flow links to redirects to the same centre page, so no image is identified as 컨퍼런스 B룸.",
+        "room": "컨퍼런스 B룸",
+        "room_specific": null,
+        "source_page": "https://sm.spaceshare.kr/",
+        "url": null,
+        "verified": null,
+        "view_kind": "",
+        "withheld": true
+      }
+    ],
+    "한국컨퍼런스센터 (COCOC) — 대강당 (170석)": [
+      {
+        "alt": "Room photograph published but the operator host now refuses the request",
+        "alt_basis": "none",
+        "checked_on": "2026-11-28",
+        "dimensions": null,
+        "hotlink_ok": null,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": null,
+        "rights_basis": "none",
+        "rights_note": "The room index publishes a 대강당 (170명) photograph at https://www.cococ.kr/wp-content/uploads/2021/04/sel_STF6172.jpg and it returned HTTP 200, image/jpeg, 1,261,229 bytes, 1600x1070 earlier on 2026-11-28; rechecked in the same run the whole host returned HTTP 403 (text/html, 3,118 bytes, no-store, CSP default-src 'none') for the page and every image, so the image is withheld rather than hotlinked as a probable broken request.",
+        "room": "대강당",
+        "room_specific": null,
+        "source_page": "https://www.cococ.kr/",
+        "url": null,
+        "verified": null,
+        "view_kind": "",
+        "withheld": true
+      }
+    ],
+    "한국컨퍼런스센터 (COCOC) — 컨퍼런스룸 A (54석)": [
+      {
+        "alt": "Room photograph published but the operator host now refuses the request",
+        "alt_basis": "none",
+        "checked_on": "2026-11-28",
+        "dimensions": null,
+        "hotlink_ok": null,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": null,
+        "rights_basis": "none",
+        "rights_note": "The room index publishes a 컨퍼런스룸 A (54명) photograph at https://www.cococ.kr/wp-content/uploads/2021/04/B1_con_A_02.jpg and it returned HTTP 200, image/jpeg, 1,135,298 bytes, 1600x1067 earlier on 2026-11-28; the same host then answered HTTP 403 to the page and to every image, so the photograph is withheld rather than hotlinked.",
+        "room": "컨퍼런스룸 A",
+        "room_specific": null,
+        "source_page": "https://www.cococ.kr/",
+        "url": null,
+        "verified": null,
+        "view_kind": "",
+        "withheld": true
+      }
+    ]
+  },
+  "schema_version": "city-reviewed-inputs/1",
+  "sources": [
+    {
+      "check_status": "checked",
+      "checked_on": "2026-11-28",
+      "note": "captures/claim_language_seoul_120_multilingual.html — language claim source",
+      "title": "120다산콜 영어 문자상담 시작…다국어 맞춤 서비스 확대! (내 손안에 서울)",
+      "url": "https://mediahub.seoul.go.kr/archives/2019947"
+    },
+    {
+      "check_status": "checked",
+      "checked_on": "2026-11-28",
+      "note": "captures/claim_alcohol_law_article5.html — alcohol claim rule text (route, deemed route, holder)",
+      "title": "「주류 면허 등에 관한 법률」 제5조(주류 판매업면허) — 국가법령정보센터",
+      "url": "https://www.law.go.kr/LSW/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1031277957"
+    },
+    {
+      "check_status": "checked",
+      "checked_on": "2026-11-28",
+      "note": "captures/claim_alcohol_nts_guidebook_2023.pdf — 국세청 restatement of the deemed route and the 식품접객업 categories; text extracted with pypdf",
+      "title": "국세청 주류면허 신청 가이드북 (2023)",
+      "url": "https://www.nts.go.kr/comm/nttFileDownload.do?fileKey=219e161b1c0c6d770d5f811263e302d9"
+    },
+    {
+      "check_status": "checked",
+      "checked_on": "2026-11-28",
+      "note": "captures/claim_food_seoul_foodservice.html — food claim source (허가/신고 split, 처리기관, 기한)",
+      "title": "식품접객업 영업현황 및 신고(허가)처리 과정 — 서울특별시 식품정책과",
+      "url": "https://news.seoul.go.kr/welfare/archives/221025"
+    },
+    {
+      "check_status": "checked",
+      "checked_on": "2026-11-28",
+      "note": "captures/school_neis_schedule_api.html — school lane: the 학사일정 layer is a per-school feed",
+      "title": "교육부_나이스(NEIS) 교육정보 개방 포털_학사일정",
+      "url": "https://www.data.go.kr/data/15137088/openapi.do"
+    },
+    {
+      "check_status": "blocked_shell",
+      "checked_on": "2026-11-28",
+      "note": "captures/school_sen_index_netfunnel.html — 477-byte NetFunnel queue shell; recorded as blocked, not read as absence of policy",
+      "title": "서울특별시교육청 (index served a NetFunnel queue script)",
+      "url": "https://www.sen.go.kr/"
+    },
+    {
+      "check_status": "checked",
+      "checked_on": "2026-11-28",
+      "note": "captures/venue_coex_studio159.html — the room gallery used by the Studio 159 photo records",
+      "title": "코엑스 Studio 159 회의실 안내",
+      "url": "https://business.coex.co.kr/meeting-room/studio-159/"
+    },
+    {
+      "check_status": "checked",
+      "checked_on": "2026-11-28",
+      "note": "captures/venue_coex_conference3f.html — block gallery with no per-room caption; the basis for the withheld room-300 record",
+      "title": "코엑스 컨퍼런스룸(남) 3F 회의실 안내",
+      "url": "https://business.coex.co.kr/meeting-room/conference-room-3f/"
+    }
+  ],
+  "venue_coordinates": {
+    "COEX — 스튜디오 159 (Studio 159, 2F)": {
+      "language": "ko",
+      "map_target": "513 영동대로, 강남구, 서울특별시 06164",
+      "precision": "street",
+      "quote": "홍대돈부리, 513, 영동대로, 삼성동, 삼성1동, 강남구, 서울특별시, 06164, 대한민국 — returned latitude 37.5125275, longitude 127.0588489",
+      "source_locator": "captures/geo_coex.json — saved Nominatim search response; matched display name '홍대돈부리, 513, 영동대로, 삼성동, 삼성1동, 강남구, 서울특별시, 06164, 대한민국' and returned latitude 37.5125275, longitude 127.0588489; the returned element is the street at the address, not the room's building.",
+      "source_url": "https://nominatim.openstreetmap.org/search?q=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C+%EA%B0%95%EB%82%A8%EA%B5%AC+%EC%98%81%EB%8F%99%EB%8C%80%EB%A1%9C+513&format=jsonv2&limit=1",
+      "verified_at": "2026-11-28"
+    },
+    "COEX — 컨퍼런스룸 300 (Conference Room 300, 남 3F)": {
+      "language": "ko",
+      "map_target": "513 영동대로, 강남구, 서울특별시 06164",
+      "precision": "street",
+      "quote": "홍대돈부리, 513, 영동대로, 삼성동, 삼성1동, 강남구, 서울특별시, 06164, 대한민국 — returned latitude 37.5125275, longitude 127.0588489",
+      "source_locator": "captures/geo_coex.json — saved Nominatim search response; matched display name '홍대돈부리, 513, 영동대로, 삼성동, 삼성1동, 강남구, 서울특별시, 06164, 대한민국' and returned latitude 37.5125275, longitude 127.0588489; the returned element is the street at the address, not the room's building.",
+      "source_url": "https://nominatim.openstreetmap.org/search?q=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C+%EA%B0%95%EB%82%A8%EA%B5%AC+%EC%98%81%EB%8F%99%EB%8C%80%EB%A1%9C+513&format=jsonv2&limit=1",
+      "verified_at": "2026-11-28"
+    },
+    "DDP 동대문디자인플라자 — 디자인랩 디자인홀 (Design Hall, 3F)": {
+      "language": "ko",
+      "map_target": "동대문디자인플라자 (DDP), 281 을지로, 중구, 서울특별시 04566",
+      "precision": "building",
+      "quote": "동대문디자인플라자, 281, 을지로, 동대문패션타운, 을지로7가, 광희동, 중구, 서울특별시, 04566, 대한민국 — returned latitude 37.5670686, longitude 127.009899",
+      "source_locator": "captures/geo_ddp2.json — saved Nominatim search response; matched display name '동대문디자인플라자, 281, 을지로, 동대문패션타운, 을지로7가, 광희동, 중구, 서울특별시, 04566, 대한민국' and returned latitude 37.5670686, longitude 127.009899; the returned element names the building that houses the room.",
+      "source_url": "https://nominatim.openstreetmap.org/search?q=%EB%8F%99%EB%8C%80%EB%AC%B8%EB%94%94%EC%9E%90%EC%9D%B8%ED%94%8C%EB%9D%BC%EC%9E%90,+%EC%84%9C%EC%9A%B8&format=jsonv2&limit=1",
+      "verified_at": "2026-11-28"
+    },
+    "DDP 동대문디자인플라자 — 서울-온 화상스튜디오 (Seoul-On Studio, Design Lab 2F)": {
+      "language": "ko",
+      "map_target": "동대문디자인플라자 (DDP), 281 을지로, 중구, 서울특별시 04566",
+      "precision": "building",
+      "quote": "동대문디자인플라자, 281, 을지로, 동대문패션타운, 을지로7가, 광희동, 중구, 서울특별시, 04566, 대한민국 — returned latitude 37.5670686, longitude 127.009899",
+      "source_locator": "captures/geo_ddp2.json — saved Nominatim search response; matched display name '동대문디자인플라자, 281, 을지로, 동대문패션타운, 을지로7가, 광희동, 중구, 서울특별시, 04566, 대한민국' and returned latitude 37.5670686, longitude 127.009899; the returned element names the building that houses the room.",
+      "source_url": "https://nominatim.openstreetmap.org/search?q=%EB%8F%99%EB%8C%80%EB%AC%B8%EB%94%94%EC%9E%90%EC%9D%B8%ED%94%8C%EB%9D%BC%EC%9E%90,+%EC%84%9C%EC%9A%B8&format=jsonv2&limit=1",
+      "verified_at": "2026-11-28"
+    },
+    "DDP 동대문디자인플라자 — 잔디사랑방 (Jandi-sarangbang, Design Lab 4F)": {
+      "language": "ko",
+      "map_target": "동대문디자인플라자 (DDP), 281 을지로, 중구, 서울특별시 04566",
+      "precision": "building",
+      "quote": "동대문디자인플라자, 281, 을지로, 동대문패션타운, 을지로7가, 광희동, 중구, 서울특별시, 04566, 대한민국 — returned latitude 37.5670686, longitude 127.009899",
+      "source_locator": "captures/geo_ddp2.json — saved Nominatim search response; matched display name '동대문디자인플라자, 281, 을지로, 동대문패션타운, 을지로7가, 광희동, 중구, 서울특별시, 04566, 대한민국' and returned latitude 37.5670686, longitude 127.009899; the returned element names the building that houses the room.",
+      "source_url": "https://nominatim.openstreetmap.org/search?q=%EB%8F%99%EB%8C%80%EB%AC%B8%EB%94%94%EC%9E%90%EC%9D%B8%ED%94%8C%EB%9D%BC%EC%9E%90,+%EC%84%9C%EC%9A%B8&format=jsonv2&limit=1",
+      "verified_at": "2026-11-28"
+    },
+    "KT&G 상상마당 홍대 — 라이브홀 (Live Hall, B2)": {
+      "language": "ko",
+      "map_target": "KT&G 상상마당 빌딩, 65 어울마당로, 마포구, 서울특별시 04042",
+      "precision": "building",
+      "quote": "KT&G 상상마당 빌딩 (SangSang Madang), 65, 어울마당로, 홍대, 서교동, 마포구, 서울특별시, 04042, 대한민국 — returned latitude 37.5509886, longitude 126.9210678",
+      "source_locator": "captures/geo_sangsangmadang.json — saved Nominatim search response; matched display name 'KT&G 상상마당 빌딩 (SangSang Madang), 65, 어울마당로, 홍대, 서교동, 마포구, 서울특별시, 04042, 대한민국' and returned latitude 37.5509886, longitude 126.9210678; the returned element names the building that houses the room.",
+      "source_url": "https://nominatim.openstreetmap.org/search?q=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C+%EB%A7%88%ED%8F%AC%EA%B5%AC+%EC%96%B4%EC%9A%B8%EB%A7%88%EB%8B%B9%EB%A1%9C+65&format=jsonv2&limit=1",
+      "verified_at": "2026-11-28"
+    },
+    "경기창조경제혁신센터 (판교) — 국제회의장, 지하 2층": {
+      "language": "ko",
+      "map_target": "경기창조경제혁신센터, 12 대왕판교로645번길, 성남시 분당구, 경기도 13487",
+      "precision": "building",
+      "quote": "경기창조경제혁신센터, 12, 대왕판교로645번길, 삼평동, 판교, 분당구, 성남시, 경기도, 13487, 대한민국 — returned latitude 37.400339, longitude 127.1048351",
+      "source_locator": "captures/geo_pangyo.json — saved Nominatim search response; matched display name '경기창조경제혁신센터, 12, 대왕판교로645번길, 삼평동, 판교, 분당구, 성남시, 경기도, 13487, 대한민국' and returned latitude 37.400339, longitude 127.1048351; the returned element names the building that houses the room.",
+      "source_url": "https://nominatim.openstreetmap.org/search?q=%EA%B2%BD%EA%B8%B0%EB%8F%84+%EC%84%B1%EB%82%A8%EC%8B%9C+%EB%B6%84%EB%8B%B9%EA%B5%AC+%EB%8C%80%EC%99%95%ED%8C%90%EA%B5%90%EB%A1%9C645%EB%B2%88%EA%B8%B8+12&format=jsonv2&limit=1",
+      "verified_at": "2026-11-28"
+    },
+    "경기창조경제혁신센터 (판교) — 대회의실, 10층": {
+      "language": "ko",
+      "map_target": "경기창조경제혁신센터, 12 대왕판교로645번길, 성남시 분당구, 경기도 13487",
+      "precision": "building",
+      "quote": "경기창조경제혁신센터, 12, 대왕판교로645번길, 삼평동, 판교, 분당구, 성남시, 경기도, 13487, 대한민국 — returned latitude 37.400339, longitude 127.1048351",
+      "source_locator": "captures/geo_pangyo.json — saved Nominatim search response; matched display name '경기창조경제혁신센터, 12, 대왕판교로645번길, 삼평동, 판교, 분당구, 성남시, 경기도, 13487, 대한민국' and returned latitude 37.400339, longitude 127.1048351; the returned element names the building that houses the room.",
+      "source_url": "https://nominatim.openstreetmap.org/search?q=%EA%B2%BD%EA%B8%B0%EB%8F%84+%EC%84%B1%EB%82%A8%EC%8B%9C+%EB%B6%84%EB%8B%B9%EA%B5%AC+%EB%8C%80%EC%99%95%ED%8C%90%EA%B5%90%EB%A1%9C645%EB%B2%88%EA%B8%B8+12&format=jsonv2&limit=1",
+      "verified_at": "2026-11-28"
+    },
+    "노들섬 노들라운지 (Nodeul Lounge, 1F)": {
+      "language": "ko",
+      "map_target": "445 양녕로 노들섬, 용산구, 서울특별시 04427",
+      "precision": "street",
+      "quote": "노들섬 라이브하우스, 445, 양녕로, 이촌2동, 용산구, 서울특별시, 04427, 대한민국 — returned latitude 37.5181487, longitude 126.9582184",
+      "source_locator": "captures/geo_nodeul.json — saved Nominatim search response; matched display name '노들섬 라이브하우스, 445, 양녕로, 이촌2동, 용산구, 서울특별시, 04427, 대한민국' and returned latitude 37.5181487, longitude 126.9582184; the returned element is the street at the address, not the room's building.",
+      "source_url": "https://nominatim.openstreetmap.org/search?q=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C+%EC%9A%A9%EC%82%B0%EA%B5%AC+%EC%96%91%EB%85%95%EB%A1%9C+445&format=jsonv2&limit=1",
+      "verified_at": "2026-11-28"
+    },
+    "노들섬 라이브하우스 (Nodeul Island Livehouse, 1F)": {
+      "language": "ko",
+      "map_target": "445 양녕로 노들섬, 용산구, 서울특별시 04427",
+      "precision": "building",
+      "quote": "노들섬 라이브하우스, 445, 양녕로, 이촌2동, 용산구, 서울특별시, 04427, 대한민국 — returned latitude 37.5181487, longitude 126.9582184",
+      "source_locator": "captures/geo_nodeul.json — saved Nominatim search response; matched display name '노들섬 라이브하우스, 445, 양녕로, 이촌2동, 용산구, 서울특별시, 04427, 대한민국' and returned latitude 37.5181487, longitude 126.9582184; the returned element names the building that houses the room.",
+      "source_url": "https://nominatim.openstreetmap.org/search?q=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C+%EC%9A%A9%EC%82%B0%EA%B5%AC+%EC%96%91%EB%85%95%EB%A1%9C+445&format=jsonv2&limit=1",
+      "verified_at": "2026-11-28"
+    },
+    "마로니에공원 다목적홀 (Marronnier Park Multipurpose Hall, 좋은공연안내센터 B2)": {
+      "language": "ko",
+      "map_target": "마로니에공원, 104 동숭동, 종로구, 서울특별시 03087",
+      "precision": "area",
+      "quote": "마로니에공원, 104, 동숭동, 이화동, 종로구, 서울특별시, 03087, 대한민국 — returned latitude 37.5805083, longitude 127.0028444",
+      "source_locator": "captures/geo_marronnier4.json — saved Nominatim search response; matched display name '마로니에공원, 104, 동숭동, 이화동, 종로구, 서울특별시, 03087, 대한민국' and returned latitude 37.5805083, longitude 127.0028444; the returned element is the named place, not a building footprint.",
+      "source_url": "https://nominatim.openstreetmap.org/search?q=%EB%A7%88%EB%A1%9C%EB%8B%88%EC%97%90%EA%B3%B5%EC%9B%90&format=jsonv2&limit=1",
+      "verified_at": "2026-11-28"
+    },
+    "몽상가들 스페이스 (MongSang Space, 문래) — 서브 세미나룸": {
+      "language": "ko",
+      "map_target": "8 문래북로, 영등포구, 서울특별시 07279",
+      "precision": "street",
+      "quote": "라벨르, 8, 문래북로, 문래동6가, 문래동, 영등포구, 서울특별시, 07279, 대한민국 — returned latitude 37.5213537, longitude 126.8856839",
+      "source_locator": "captures/geo_mongsang.json — saved Nominatim search response; matched display name '라벨르, 8, 문래북로, 문래동6가, 문래동, 영등포구, 서울특별시, 07279, 대한민국' and returned latitude 37.5213537, longitude 126.8856839; the returned element is the street at the address, not the room's building.",
+      "source_url": "https://nominatim.openstreetmap.org/search?q=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C+%EC%98%81%EB%93%B1%ED%8F%AC%EA%B5%AC+%EB%AC%B8%EB%9E%98%EB%B6%81%EB%A1%9C+8&format=jsonv2&limit=1",
+      "verified_at": "2026-11-28"
+    },
+    "성공 스페이스 (Seonggong Space, 성동구 왕십리)": {
+      "language": "ko",
+      "map_target": "왕십리로, 성동구, 서울특별시 04751",
+      "precision": "street",
+      "quote": "왕십리로, 행당동, 행당1동, 성동구, 서울특별시, 04751, 대한민국 — returned latitude 37.5600451, longitude 127.0364011",
+      "source_locator": "captures/geo_seonggong.json — saved Nominatim search response; matched display name '왕십리로, 행당동, 행당1동, 성동구, 서울특별시, 04751, 대한민국' and returned latitude 37.5600451, longitude 127.0364011; the returned element is the street at the address, not the room's building.",
+      "source_url": "https://nominatim.openstreetmap.org/search?q=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C+%EC%84%B1%EB%8F%99%EA%B5%AC+%EC%99%95%EC%8B%AD%EB%A6%AC%EB%A1%9C+135&format=jsonv2&limit=1",
+      "verified_at": "2026-11-28"
+    },
+    "스페이스쉐어 삼성역센터 — 컨퍼런스 B룸 (60명)": {
+      "language": "ko",
+      "map_target": "대화빌딩, 20 영동대로96길, 강남구, 서울특별시 06173",
+      "precision": "building",
+      "quote": "대화빌딩, 20, 영동대로96길, 삼성동, 삼성1동, 강남구, 서울특별시, 06173, 대한민국 — returned latitude 37.51079, longitude 127.064227",
+      "source_locator": "captures/geo_spaceshare_samsung.json — saved Nominatim search response; matched display name '대화빌딩, 20, 영동대로96길, 삼성동, 삼성1동, 강남구, 서울특별시, 06173, 대한민국' and returned latitude 37.51079, longitude 127.064227; the returned element names the building that houses the room.",
+      "source_url": "https://nominatim.openstreetmap.org/search?q=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C+%EA%B0%95%EB%82%A8%EA%B5%AC+%EC%98%81%EB%8F%99%EB%8C%80%EB%A1%9C96%EA%B8%B8+20&format=jsonv2&limit=1",
+      "verified_at": "2026-11-28"
+    },
+    "한국컨퍼런스센터 (COCOC) — 대강당 (170석)": {
+      "language": "ko",
+      "map_target": "강남대로53길, 서초구, 서울특별시 06621",
+      "precision": "street",
+      "quote": "강남대로53길, 서초2동, 서초구, 서울특별시, 06621, 대한민국 — returned latitude 37.4941299, longitude 127.0274305",
+      "source_locator": "captures/geo_cococ.json — saved Nominatim search response; matched display name '강남대로53길, 서초2동, 서초구, 서울특별시, 06621, 대한민국' and returned latitude 37.4941299, longitude 127.0274305; the returned element is the street at the address, not the room's building.",
+      "source_url": "https://nominatim.openstreetmap.org/search?q=%EA%B0%95%EB%82%A8%EB%8C%80%EB%A1%9C53%EA%B8%B8+8,+%EC%84%9C%EC%B4%88%EA%B5%AC,+%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C&format=jsonv2&limit=1",
+      "verified_at": "2026-11-28"
+    },
+    "한국컨퍼런스센터 (COCOC) — 컨퍼런스룸 A (54석)": {
+      "language": "ko",
+      "map_target": "강남대로53길, 서초구, 서울특별시 06621",
+      "precision": "street",
+      "quote": "강남대로53길, 서초2동, 서초구, 서울특별시, 06621, 대한민국 — returned latitude 37.4941299, longitude 127.0274305",
+      "source_locator": "captures/geo_cococ.json — saved Nominatim search response; matched display name '강남대로53길, 서초2동, 서초구, 서울특별시, 06621, 대한민국' and returned latitude 37.4941299, longitude 127.0274305; the returned element is the street at the address, not the room's building.",
+      "source_url": "https://nominatim.openstreetmap.org/search?q=%EA%B0%95%EB%82%A8%EB%8C%80%EB%A1%9C53%EA%B8%B8+8,+%EC%84%9C%EC%B4%88%EA%B5%AC,+%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C&format=jsonv2&limit=1",
+      "verified_at": "2026-11-28"
+    }
+  }
+}

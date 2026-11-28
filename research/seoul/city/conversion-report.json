@@ -1,0 +1,184 @@
+{
+  "city_slug": "seoul-kr",
+  "counts": {
+    "communities": 14,
+    "coverage_rows": 72,
+    "declared_gaps": 7,
+    "event_shells": 0,
+    "events": 7,
+    "holiday_rows": 375,
+    "photos": 22,
+    "sources": 47,
+    "venues": 16
+  },
+  "inputs": [
+    {
+      "name": "calendar_conflicts.json",
+      "path": "research/seoul/2027/calendar_conflicts.json",
+      "sha256": "082f4f47399b4100e0ad3e79a9b6e29711e9d7bf7ad696cb2b9c170173a8bbb1"
+    },
+    {
+      "name": "city_input.json",
+      "path": "research/seoul/2027/city_input.json",
+      "sha256": "2d1b7a4bacc9f15d9e7949c8a6270bb362afd6f084fc8ca9bdbd77df638c6676"
+    },
+    {
+      "name": "communities.raw.json",
+      "path": "research/seoul/2027/communities.raw.json",
+      "sha256": "9fde54a6a439d51e6709bf22ebb68a44fe3bf654e587ec445525552a5823a15b"
+    },
+    {
+      "name": "venues.raw.json",
+      "path": "research/seoul/2027/venues.raw.json",
+      "sha256": "58171eb3aabeb7a68e470428ddff15366fd7937b7adb683e807c36f72d11e32b"
+    },
+    {
+      "name": "venues.shortlist.json",
+      "path": "research/seoul/2027/venues.shortlist.json",
+      "sha256": "03b8330536dfb55dfb6dbbcae3ed49f59357ee01bc8b97c81149e96c7c34d583"
+    }
+  ],
+  "mandatory_sources": [
+    {
+      "check_status": "not_checked",
+      "checked_on": null,
+      "url": "https://miragather.com/"
+    },
+    {
+      "check_status": "not_checked",
+      "checked_on": null,
+      "url": "https://miragather.com/?tab=side"
+    },
+    {
+      "check_status": "not_checked",
+      "checked_on": null,
+      "url": "https://miragather.com/ai"
+    },
+    {
+      "check_status": "not_checked",
+      "checked_on": null,
+      "url": "https://aitinkerers.org/all_cities"
+    },
+    {
+      "check_status": "not_checked",
+      "checked_on": null,
+      "url": "https://luma.com/decentralized_ai_events?period=past"
+    }
+  ],
+  "notes": [
+    "Built from the approved research bundle research/seoul/2027 (16 venues: 12 shortlist_ready, 4 lead; 14 communities; 7 calendar rows).",
+    "Registry: installed Asia edition 3b20667de940342954040f06d6695d490d8e27515d536969d127a0fa92bacdaf; KR:seoul is a curated id with no holiday rows and no coverage rows, so no supplement is declared and a reviewed school_lane_finding records the absence (KR:seoul, 2027-01-01..2028-01-07).",
+    "Paired brief: 50 people, 09:00 start, 8-hour floor (09:00-17:00), 12-hour preferred (09:00-21:00), soft USD 5,000, calendar year 2027, no recommended date.",
+    "Photos: operator gallery first; 12 hotlinked operator photographs across 6 rooms and 10 explicit withheld records (two COCOC rooms withheld after their published images returned 403 on recheck); no Wikimedia image was used.",
+    "Claims are dated 2026-11-28 and scope each value to what its quoted capture establishes; the alcohol value names only the licensing route, the holder and 'the competent tax office for the venue address, to be confirmed'."
+  ],
+  "photos": {
+    "dispositions": [
+      {
+        "disposition": "reviewed_photos",
+        "records": 3,
+        "venue_id": "seoul-7b9b6e41d075"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "seoul-4c5794da9262"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "seoul-384cd72e7d96"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 3,
+        "venue_id": "seoul-f57b9c10a3c8"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "seoul-a035356cf6eb"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "seoul-5eb039befc45"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "seoul-854f2bec4d33"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "seoul-b2d93ab7c404"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "seoul-19c2b0ea6e3a"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 3,
+        "venue_id": "seoul-4943a49c7ae5"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "seoul-8d438d0e91c7"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "seoul-09eee61cd181"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "seoul-21bf1d2fc41a"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "seoul-37ee9ec08db6"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "seoul-0a43772109c4"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "seoul-b1e3fc4c1553"
+      }
+    ],
+    "note": "Only the reviewed photo records are carried.",
+    "records": 22
+  },
+  "registry": {
+    "edition_copy": "references/editions/school_holidays-3b20667d.json",
+    "host_jurisdiction_id": "KR:seoul",
+    "path": "/home/joe/.hermes/skills/plan-event/references/school_holidays.json",
+    "sha256": "3b20667de940342954040f06d6695d490d8e27515d536969d127a0fa92bacdaf",
+    "supplement": false
+  },
+  "reviewed_inputs": {
+    "local_requirements_supplied": true,
+    "path": "/home/joe/repo_dev/coe-events/research/seoul/2027/reviewed-inputs.json",
+    "sha256": "7d22f164ff2ba8a52306bc9d22c2bdd981b784803a03c4e72e17b2016e29da9f"
+  },
+  "run_id": "run-seoul-2027-bootstrap-2",
+  "schema_version": "city-conversion-report/1",
+  "shared_url_event_shells": [],
+  "updated_at": "2026-11-28T13:11:54Z",
+  "warnings": [
+    "mandatory source https://miragather.com/ has no reviewed outcome",
+    "mandatory source https://miragather.com/?tab=side has no reviewed outcome",
+    "mandatory source https://miragather.com/ai has no reviewed outcome",
+    "mandatory source https://aitinkerers.org/all_cities has no reviewed outcome",
+    "mandatory source https://luma.com/decentralized_ai_events?period=past has no reviewed outcome"
+  ]
+}

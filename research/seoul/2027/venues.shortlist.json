@@ -1,0 +1,1578 @@
+{
+  "meta": {
+    "generator": "score_venues.py",
+    "schema_version": "2.4",
+    "budget_usd": 5000.0,
+    "target_attendance": 50,
+    "event_date": "2026-11-28",
+    "event_duration_hours": 8,
+    "weights": {
+      "budget_efficiency": 0.2,
+      "capacity_fit": 0.2,
+      "catering_flexibility": 0.15,
+      "recording_suitability": 0.15,
+      "booking_path": 0.1,
+      "evidence_freshness": 0.1,
+      "technical_readiness": 0.05,
+      "event_window_fit": 0.05
+    },
+    "tier_order": [
+      "eligible",
+      "shortlist_ready",
+      "lead"
+    ]
+  },
+  "eligible": [],
+  "shortlist_ready": [
+    {
+      "city_slug": "seoul-kr",
+      "accessed_on": "2026-11-28",
+      "needs_human_verify": true,
+      "cost_local_currency": "KRW",
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "name": "DDP 동대문디자인플라자 — 서울-온 화상스튜디오 (Seoul-On Studio, Design Lab 2F)",
+      "address": "서울특별시 중구 을지로 281, 디자인랩 지상 2층 (DDP Design Lab 2F, 281 Eulji-ro, Jung-gu, Seoul 04566)",
+      "capacity_comfortable": 80,
+      "capacity_basis": "venue_claim",
+      "screen_status": "confirmed",
+      "wifi_status": "unknown",
+      "catering_policy": "delivery_allowed",
+      "recording_suitability": "confirmed_good",
+      "estimated_cost_usd": 1985.92,
+      "cost_basis": "published_rate",
+      "cost_local_amount": 2651000,
+      "booking_url": "https://ddp.or.kr/?menuno=725",
+      "cost_rate_unit": "day",
+      "opening_hours": "10:00-21:00 (디자인랩 기준시간 11시간)",
+      "closing_time": "21:00",
+      "max_booking_hours": 11,
+      "event_window_status": "allows_to_6",
+      "event_window_evidence": {
+        "url": "https://deep.ddp.or.kr/introduce/c003.do",
+        "title": "DDP 대관정보서비스 — 디자인랩 대관공간안내: 대관 가능 시간 표와 디자인랩 대관료 (deep.ddp.or.kr), fetched 2026-11-28",
+        "accessed_on": "2026-11-28",
+        "claim": "The DDP 대관정보서비스 Design Lab facility page (deep.ddp.or.kr/introduce/c003.do, fetched 2026-11-28) prints the '대관 가능 시간' (rental window) table, whose rows read '컨벤션' / '08:00 ~ 20:00 (12시간)', '전시관(뮤지엄) · 갤러리문 · 이간수문전시장' / '10:00 ~ 21:00 (11시간)' and '기타 시설' / '10:00 ~ 21:00 (11시간)', with the note '※ 기준시간을 초과하여 대관하는 경우 초과 시간당 기준액의 150% 적용', directly above the 디자인랩 대관료 table that prices 서울-온 화상스튜디오 at 2,651,000 KRW for one day; a Saturday booking can therefore run to 21:00 but cannot start at 09:00."
+      },
+      "latitude": 37.5670686,
+      "longitude": 127.009899,
+      "verification_question_kinds": [
+        "wifi",
+        "availability",
+        "final_quote",
+        "booking_terms"
+      ],
+      "verification_questions": [
+        "Confirm Wi-Fi and network drops for a 50-person audience: the guide describes broadcast cabling (HDMI, E2 processor) but the DDP notice requires internet to be applied for separately.",
+        "Confirm a 2027 Saturday 10:00-21:00 booking and whether the studio can be configured as a seated 50-person venue rather than a broadcast set.",
+        "Confirm the VAT treatment of the 2,651,000 KRW one-day rate and whether an operator for the LED/sound system is included.",
+        "Confirm the alcohol rule for the room: whether serving alcohol at a private community event is permitted, whether an event liquor licence is required and who must hold it - no venue page in this set publishes an alcohol permission for a rented hall, and a cafe or restaurant licence is not evidence for the hall."
+      ],
+      "source_url": "https://ddp.or.kr/?menuno=725",
+      "source_title": "DDP 대관시설정보 — 서울-온 화상스튜디오: 378.22㎡, 일 기준 2,651,000원 (ddp.or.kr, fetched 2026-11-28)",
+      "evidence": {
+        "observed_facts": "The DDP rental page (ddp.or.kr/?menuno=725, fetched 2026-11-28) lists the 2F Seoul-On video studio at 378.22 m2 with 241,000 KRW per hour, 723,000 KRW for 3 hours and 2,651,000 KRW per day. The DDP Organizer Guide (ddp.or.kr/file/attach/DDP_EVENT_GUIDE2.pdf, fetched 2026-11-28) states the studio holds up to 80 people, has a 35m-long LED display (21m fixed plus a 14m movable section), a 4K-capable production chain, a Dante audio network, broadcast lighting, an intercom/translation room, VIP waiting room and lounge, and that talk shows, forums and lectures can be held there. The same guide gives the conference room next door a capacity of about 20. Address 281 Eulji-ro, Jung-gu, Seoul 04566. USD: ECB 2026-11-27 (EUR 1 = USD 1.0957; EUR 1 = KRW 1462.65), 1 KRW = USD 0.00074912; 2,651,000 KRW = USD 1,985.92. The DDP 대관정보서비스 Design Lab page (deep.ddp.or.kr/introduce/c003.do, fetched 2026-11-28) prints the '대관 가능 시간' table, whose rows read '컨벤션' / '08:00 ~ 20:00 (12시간)', '전시관(뮤지엄) · 갤러리문 · 이간수문전시장' / '10:00 ~ 21:00 (11시간)' and '기타 시설' / '10:00 ~ 21:00 (11시간)', with overruns at 150% of the base rate, and repeats the 디자인랩 대관료 table that prices this room.",
+        "inference": "The studio's own description is broadcast-first, but the guide explicitly allows talk shows and forums and states an 80-person capacity, so it is recorded as an event room with the strongest recording evidence in the set; the seated layout and the operator question are carried as verification.",
+        "geo": "https://nominatim.openstreetmap.org/search?q=%EB%8F%99%EB%8C%80%EB%AC%B8%EB%94%94%EC%9E%90%EC%9D%B8%ED%94%8C%EB%9D%BC%EC%9E%90%2C+%EC%84%9C%EC%9A%B8&format=jsonv2&limit=1"
+      },
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "final_quote_required"
+      ],
+      "score": 0.8506,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.6028,
+          "weight": 0.2,
+          "contribution": 0.1206
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 0.7,
+          "weight": 0.15,
+          "contribution": 0.105
+        },
+        "recording_suitability": {
+          "factor": 1.0,
+          "weight": 0.15,
+          "contribution": 0.15
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "technical_readiness": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "event_window_fit": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "total": 0.8506
+      }
+    },
+    {
+      "city_slug": "seoul-kr",
+      "accessed_on": "2026-11-28",
+      "needs_human_verify": true,
+      "cost_local_currency": "KRW",
+      "hourly_rate_usd": 131.84512,
+      "estimated_hours": 8,
+      "rate_estimate_note": "Published hourly rate 176,000 KRW (COCOC 컨퍼런스룸 A) multiplied by 8 hours for the 09:00-17:00 window; the venue publishes no eight-hour package, so this is a rate estimate and not a quote.",
+      "hourly_rate_local": 176000,
+      "rate_currency": "KRW",
+      "name": "한국컨퍼런스센터 (COCOC) — 컨퍼런스룸 A (54석)",
+      "address": "서울특별시 서초구 강남대로53길 8, B1~2F (8 Gangnam-daero 53-gil, Seocho-gu, Seoul)",
+      "capacity_comfortable": 54,
+      "capacity_basis": "venue_claim",
+      "screen_status": "confirmed",
+      "wifi_status": "confirmed",
+      "catering_policy": "in_house_available",
+      "recording_suitability": "likely_good",
+      "estimated_cost_usd": 1054.76,
+      "cost_basis": "estimated_from_rate",
+      "cost_local_amount": 1408000,
+      "booking_url": "https://www.cococ.kr/",
+      "cost_rate_unit": "hour",
+      "opening_hours": "00:00-24:00, 연중무휴 (매일)",
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "allows_to_6",
+      "event_window_evidence": {
+        "url": "https://www.cococ.kr/",
+        "title": "한국컨퍼런스센터 — 공간 안내 (cococ.kr), fetched 2026-11-28",
+        "accessed_on": "2026-11-28",
+        "claim": "The venue's room index prints 컨퍼런스룸 A (54명) at 176,000 KRW per hour and the auditorium page for the same building states daily 00:00-24:00 operation, so a room booking can extend past 18:00."
+      },
+      "latitude": 37.4941299,
+      "longitude": 127.0274305,
+      "verification_question_kinds": [
+        "final_quote",
+        "availability",
+        "room_assignment",
+        "booking_terms"
+      ],
+      "verification_questions": [
+        "Confirm the eight-hour price for 컨퍼런스룸 A: only the hourly rate (176,000 KRW) is published, so an 09:00-17:00 quote is required.",
+        "Confirm a 2027 Saturday booking and whether the room's 54-seat layout can be set cabaret-style for 50 people.",
+        "Confirm the exact room (A, 54 seats) and whether the 250-inch screen and 4K projector listed for the auditorium are also fitted in this room.",
+        "Confirm the alcohol rule for the room: whether serving alcohol at a private community event is permitted, whether an event liquor licence is required and who must hold it - no venue page in this set publishes an alcohol permission for a rented hall, and a cafe or restaurant licence is not evidence for the hall."
+      ],
+      "source_url": "https://www.cococ.kr/",
+      "source_title": "한국컨퍼런스센터 공간 안내 — 컨퍼런스룸 A (54명) 176,000원/시간; 대강당 363,000원/시간 (cococ.kr, fetched 2026-11-28)",
+      "evidence": {
+        "observed_facts": "The COCOC home page (cococ.kr, fetched 2026-11-28) lists eight rooms with capacities and hourly prices: 대강당 (170명) 363,000 KRW/h, 컨퍼런스룸 A (54명) 176,000 KRW/h, 컨퍼런스룸 B and C (30명) 110,000 KRW/h, 라운지 (40명) 220,000 KRW/h, 회의실 (12명) 33,000 KRW/h, 회의실 (4명) 14,300 KRW/h and a studio. The same page states the centre is a 2-minute walk from Gangnam station exit 5, provides large screens, beam projectors and wired/wireless microphones free of charge, and offers a separate catering service. Address: 서울시 서초구 강남대로53길 8, B1~2F. USD: ECB 2026-11-27 (EUR 1 = USD 1.0957; EUR 1 = KRW 1462.65), 1 KRW = USD 0.00074912; 176,000 KRW = USD 131.84512 per hour, 8 hours = USD 1,054.76.",
+        "inference": "A 54-seat room is the closest fit to the 50-person brief in this building; the eight-hour figure is a rate estimate because the venue publishes only hourly pricing for this room.",
+        "geo": "https://nominatim.openstreetmap.org/search?q=%EA%B0%95%EB%82%A8%EB%8C%80%EB%A1%9C53%EA%B8%B8+8%2C+%EC%84%9C%EC%B4%88%EA%B5%AC%2C+%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C&format=jsonv2&limit=1"
+      },
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "availability_unconfirmed",
+        "final_quote_required"
+      ],
+      "score": 0.8453,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.789,
+          "weight": 0.2,
+          "contribution": 0.1578
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 0.7,
+          "weight": 0.15,
+          "contribution": 0.105
+        },
+        "recording_suitability": {
+          "factor": 0.55,
+          "weight": 0.15,
+          "contribution": 0.0825
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "technical_readiness": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "event_window_fit": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "total": 0.8453
+      }
+    },
+    {
+      "city_slug": "seoul-kr",
+      "accessed_on": "2026-11-28",
+      "needs_human_verify": true,
+      "cost_local_currency": "KRW",
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "name": "경기창조경제혁신센터 (판교) — 대회의실, 10층",
+      "address": "경기도 성남시 분당구 대왕판교로645번길 12, 경기창조경제혁신센터 10층 (12, Daewangpangyo-ro 645beon-gil, Bundang-gu, Seongnam-si, Gyeonggi-do 13487)",
+      "capacity_comfortable": 68,
+      "capacity_basis": "seated",
+      "screen_status": "confirmed",
+      "wifi_status": "confirmed",
+      "catering_policy": "not_allowed",
+      "recording_suitability": "likely_good",
+      "estimated_cost_usd": 197.77,
+      "cost_basis": "published_rate",
+      "cost_local_amount": 264000,
+      "booking_url": "https://www.pangyotechnovalley.org/base/rentalManagement/facility?building=4&menuLevel=4&menuNo=3",
+      "cost_rate_unit": "day",
+      "opening_hours": "08:00-12:00 and 13:00-17:00 blocks; full day 08:00-17:00 (VAT included)",
+      "closing_time": "17:00",
+      "max_booking_hours": 8,
+      "event_window_status": "allows_to_5",
+      "event_window_evidence": {
+        "url": "https://www.pangyotechnovalley.org/base/rentalManagement/facility?building=4&menuLevel=4&menuNo=3",
+        "title": "판교테크노밸리 — 경기창조경제혁신센터 대회의실 대관 안내 (pangyotechnovalley.org), fetched 2026-11-28",
+        "accessed_on": "2026-11-28",
+        "claim": "The official rental page prints the day rate as '전일 (08:00~17:00) 264,000원' with VAT included and blocks of 08:00-12:00 and 13:00-17:00, so the room supports an event ending at 17:00 but not one running to 21:00."
+      },
+      "latitude": 37.400339,
+      "longitude": 127.1048351,
+      "verification_question_kinds": [
+        "availability",
+        "booking_terms",
+        "booking_terms"
+      ],
+      "verification_questions": [
+        "Confirm whether a 2027 Saturday can be booked: the page prints weekday consultation hours (10:00-16:00) and four-hour blocks, but does not state weekend availability.",
+        "Confirm the approval route and lead time - bookings go through the Gyeonggi sharing service with manager review within three days and prepayment within 14 days.",
+        "Confirm the alcohol rule for the room: whether serving alcohol at a private community event is permitted, whether an event liquor licence is required and who must hold it - no venue page in this set publishes an alcohol permission for a rented hall, and a cafe or restaurant licence is not evidence for the hall."
+      ],
+      "source_url": "https://www.pangyotechnovalley.org/base/rentalManagement/facility?building=4&menuLevel=4&menuNo=3",
+      "source_title": "판교테크노밸리 시설 대관 — 경기창조경제혁신센터 대회의실: 68석(146㎡), 전일 08:00-17:00 264,000원 VAT 포함, 유·무선 인터넷·빔프로젝터·스크린·마이크 (pangyotechnovalley.org, fetched 2026-11-28)",
+      "evidence": {
+        "observed_facts": "The Pangyo Techno Valley rental page (pangyotechnovalley.org, fetched 2026-11-28) prints for the 경기창조경제혁신센터 10층 대회의실: capacity 68 seats (23 table seats and 45 auxiliary seats), 146 m2, wired and wireless internet, one beam projector, screen, microphone and amplifier, a lectern console, rates of 132,000 KRW per four-hour block and 264,000 KRW for the full day 08:00-17:00 with VAT included, extension at 30%/50% surcharges, a ban on bringing in food other than bottled water, a very small car park, and '판교역 4번 출구에서 도보로 17분'. Address: 경기도 성남시 분당구 대왕판교로645번길 12. USD: ECB 2026-11-27 (EUR 1 = USD 1.0957; EUR 1 = KRW 1462.65), 1 KRW = USD 0.00074912; 264,000 KRW = USD 197.77.",
+        "inference": "At 68 seats with a 264,000 KRW day rate this is the cheapest fully evidenced room in the set, but it is in Seongnam rather than Seoul and closes at 17:00, so it only satisfies the brief's acceptable 09:00-17:00 window.",
+        "geo": "https://nominatim.openstreetmap.org/search?q=%EA%B2%BD%EA%B8%B0%EB%8F%84+%EC%84%B1%EB%82%A8%EC%8B%9C+%EB%B6%84%EB%8B%B9%EA%B5%AC+%EB%8C%80%EC%99%95%ED%8C%90%EA%B5%90%EB%A1%9C645%EB%B2%88%EA%B8%B8+12&format=jsonv2&limit=1"
+      },
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "availability_unconfirmed"
+      ],
+      "score": 0.7746,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.9604,
+          "weight": 0.2,
+          "contribution": 0.1921
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "recording_suitability": {
+          "factor": 0.55,
+          "weight": 0.15,
+          "contribution": 0.0825
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "technical_readiness": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "event_window_fit": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "total": 0.7746
+      }
+    },
+    {
+      "city_slug": "seoul-kr",
+      "accessed_on": "2026-11-28",
+      "needs_human_verify": true,
+      "cost_local_currency": "KRW",
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "name": "DDP 동대문디자인플라자 — 디자인랩 디자인홀 (Design Hall, 3F)",
+      "address": "서울특별시 중구 을지로 281, 디자인랩 지상 3층 (DDP Design Lab 3F, 281 Eulji-ro, Jung-gu, Seoul 04566)",
+      "capacity_comfortable": 110,
+      "capacity_basis": "venue_claim",
+      "screen_status": "confirmed",
+      "wifi_status": "unknown",
+      "catering_policy": "delivery_allowed",
+      "recording_suitability": "likely_good",
+      "estimated_cost_usd": 2439.13,
+      "cost_basis": "published_rate",
+      "cost_local_amount": 3256000,
+      "booking_url": "https://ddp.or.kr/?menuno=725",
+      "cost_rate_unit": "day",
+      "opening_hours": "10:00-21:00 (디자인랩 기준시간 11시간; 초과 시간당 기준액 150%)",
+      "closing_time": "21:00",
+      "max_booking_hours": 11,
+      "event_window_status": "allows_to_6",
+      "event_window_evidence": {
+        "url": "https://deep.ddp.or.kr/introduce/c003.do",
+        "title": "DDP 대관정보서비스 — 디자인랩 대관공간안내: 대관 가능 시간 표와 디자인랩 대관료 (deep.ddp.or.kr), fetched 2026-11-28",
+        "accessed_on": "2026-11-28",
+        "claim": "The DDP 대관정보서비스 Design Lab facility page (deep.ddp.or.kr/introduce/c003.do, fetched 2026-11-28) prints the '대관 가능 시간' (rental window) table, whose rows read '컨벤션' / '08:00 ~ 20:00 (12시간)', '전시관(뮤지엄) · 갤러리문 · 이간수문전시장' / '10:00 ~ 21:00 (11시간)' and '기타 시설' / '10:00 ~ 21:00 (11시간)', with the note '※ 기준시간을 초과하여 대관하는 경우 초과 시간당 기준액의 150% 적용', directly above the 디자인랩 대관료 table that prices 디자인홀 (Design Hall) at 3,256,000 KRW for a 1-day (11-hour) booking; a Saturday booking can therefore run to 21:00 but cannot start at 09:00."
+      },
+      "latitude": 37.5670686,
+      "longitude": 127.009899,
+      "verification_question_kinds": [
+        "wifi",
+        "availability",
+        "final_quote",
+        "booking_terms",
+        "booking_terms"
+      ],
+      "verification_questions": [
+        "Confirm Wi-Fi for a 50-person event: the DDP rental notice states internet use must be applied for separately by the applicant, and the Design Hall page lists no included network.",
+        "Confirm a 2027 Saturday in the Design Lab: the base window is 10:00-21:00, so a 09:00 start is not available and the 12-hour 09:00-21:00 brief cannot be met - confirm the 10:00-21:00 (11-hour) window instead.",
+        "Confirm whether the printed 3,256,000 KRW one-day rate is VAT-inclusive and whether the 3-hour/1-day rate table applies to Saturday without a weekend surcharge.",
+        "Confirm AV operation: the hall includes a 6.4m x 4m LED display, an LS9 console and d&b speakers, but the guide does not state whether an operator is included in the room rate.",
+        "Confirm the alcohol rule for the room: whether serving alcohol at a private community event is permitted, whether an event liquor licence is required and who must hold it - no venue page in this set publishes an alcohol permission for a rented hall, and a cafe or restaurant licence is not evidence for the hall."
+      ],
+      "source_url": "https://ddp.or.kr/?menuno=725",
+      "source_title": "DDP 대관시설정보 — 디자인랩 디자인홀: 수용 약 110명, 627.6㎡, 일 기준 3,256,000원, 10:00-21:00 (ddp.or.kr, fetched 2026-11-28)",
+      "evidence": {
+        "observed_facts": "The DDP rental page (ddp.or.kr/?menuno=725, fetched 2026-11-28) lists the Design Lab 3F Design Hall at 627.6 m2 with '수용인원 약 110명' and a fee table of 296,000 KRW per hour, 888,000 KRW for 3 hours and 3,256,000 KRW for one day; the DDP 대관정보서비스 Design Lab page (deep.ddp.or.kr/introduce/c003.do, fetched 2026-11-28) prints the '대관 가능 시간' table, whose '기타 시설' row gives '10:00 ~ 21:00 (11시간)', with an overrun charge of 150% of the base rate per hour. The DDP Organizer Guide PDF (ddp.or.kr/file/attach/DDP_EVENT_GUIDE2.pdf, fetched 2026-11-28) gives the room's equipment as a 6.4m x 4m LED display, an LS9 console with d&b 12S speakers and Shure radio microphones, HDMI laptop connection, tiered seating for about 30 and about 80 chairs, and repeats '수용능력 - 약 110명'. The same guide states Design Lab food brought in requires prior consultation, and the rental notice on deep.ddp.or.kr states internet use must be applied for separately. Address 281 Eulji-ro, Jung-gu, Seoul 04566. USD basis: ECB euro foreign exchange reference rates dated 2026-11-27, fetched 2026-11-28 (EUR 1 = USD 1.0957; EUR 1 = KRW 1462.65), giving 1 KRW = USD 0.00074912; 3,256,000 KRW = USD 2,439.13.",
+        "inference": "Capacity 110 is the operator's own stated figure and the LED wall plus sound console make the room the strongest recording fit in the DDP set, but the 10:00 opening means the brief's 09:00-21:00 window is not available - the record is priced on the printed 11-hour day and the missing 09:00 hour is carried as an availability question rather than assumed.",
+        "geo": "https://nominatim.openstreetmap.org/search?q=%EB%8F%99%EB%8C%80%EB%AC%B8%EB%94%94%EC%9E%90%EC%9D%B8%ED%94%8C%EB%9D%BC%EC%9E%90%2C+%EC%84%9C%EC%9A%B8&format=jsonv2&limit=1"
+      },
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "final_quote_required"
+      ],
+      "score": 0.7649,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.5122,
+          "weight": 0.2,
+          "contribution": 0.1024
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 0.7,
+          "weight": 0.15,
+          "contribution": 0.105
+        },
+        "recording_suitability": {
+          "factor": 0.55,
+          "weight": 0.15,
+          "contribution": 0.0825
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "technical_readiness": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "event_window_fit": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "total": 0.7649
+      }
+    },
+    {
+      "city_slug": "seoul-kr",
+      "accessed_on": "2026-11-28",
+      "needs_human_verify": true,
+      "cost_local_currency": null,
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "name": "COEX — 스튜디오 159 (Studio 159, 2F)",
+      "address": "서울특별시 강남구 영동대로 513, 코엑스 (513 Yeongdong-daero, Gangnam-gu, Seoul 06164)",
+      "capacity_comfortable": 100,
+      "capacity_basis": "venue_claim",
+      "screen_status": "unknown",
+      "wifi_status": "unknown",
+      "catering_policy": "unknown",
+      "recording_suitability": "confirmed_good",
+      "estimated_cost_usd": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "booking_url": "https://business.coex.co.kr/meeting-room/facilities-information/",
+      "cost_rate_unit": "unknown",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "latitude": 37.5125275,
+      "longitude": 127.0588489,
+      "verification_question_kinds": [
+        "cost_unknown",
+        "availability",
+        "screen",
+        "wifi",
+        "event_window"
+      ],
+      "verification_questions": [
+        "Confirm the Studio 159 rental price: COEX publishes no conference-room rate on its meeting-room pages.",
+        "Confirm a 2027 Saturday booking and the room's operating window, which no captured page prints.",
+        "Confirm the studio's built-in broadcast equipment for recording and live streaming and whether Wi-Fi is included.",
+        "Confirm catering and alcohol rules for a 50-person audience in a 100-seat studio.",
+        "Confirm the alcohol rule for the room: whether serving alcohol at a private community event is permitted, whether an event liquor licence is required and who must hold it - no venue page in this set publishes an alcohol permission for a rented hall, and a cafe or restaurant licence is not evidence for the hall."
+      ],
+      "source_url": "https://business.coex.co.kr/meeting-room/facilities-information/",
+      "source_title": "코엑스 회의실 시설안내 — Studio 159: 294㎡, 70~100석, 하이브리드 컨퍼런스·웨비나·쇼케이스 (business.coex.co.kr, fetched 2026-11-28)",
+      "evidence": {
+        "observed_facts": "The COEX meeting-room facilities page (fetched 2026-11-28) describes Studio 159 on 2F as 294 m2 with 70-100 theatre seats, used for online/hybrid conferences, video conferencing, webinars, YouTube filming, showcases and production presentations, and states it holds up to 100 people. The same page gives no rate, hours, AV specification or catering policy, and the COEX meeting-room rental-cost path is an inquiry form. Address: 서울특별시 강남구 영동대로 513, 코엑스 06164.",
+        "inference": "The studio's stated uses (hybrid conference, webinar, filming) make it the best recording-evidenced room at COEX even though the equipment itself is not itemised; the cost and hours are carried as open questions rather than estimated.",
+        "geo": "https://nominatim.openstreetmap.org/search?q=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C+%EA%B0%95%EB%82%A8%EA%B5%AC+%EC%98%81%EB%8F%99%EB%8C%80%EB%A1%9C+513&format=jsonv2&limit=1"
+      },
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "cost_unknown",
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "duration_unconfirmed"
+      ],
+      "score": 0.675,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.5,
+          "weight": 0.2,
+          "contribution": 0.1
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "recording_suitability": {
+          "factor": 1.0,
+          "weight": 0.15,
+          "contribution": 0.15
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "technical_readiness": {
+          "factor": 0.0,
+          "weight": 0.05,
+          "contribution": 0.0
+        },
+        "event_window_fit": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "total": 0.675
+      }
+    },
+    {
+      "city_slug": "seoul-kr",
+      "accessed_on": "2026-11-28",
+      "needs_human_verify": true,
+      "cost_local_currency": "KRW",
+      "hourly_rate_usd": 11.2368,
+      "estimated_hours": 8,
+      "rate_estimate_note": "Published rate is 30,000 KRW per two hours (VAT excluded); converted to 15,000 KRW per hour and multiplied by 8 hours for the 10:00-18:00 window inside the printed 10:00-20:00 opening. This is a rate estimate, not a quote.",
+      "hourly_rate_local": 15000,
+      "rate_currency": "KRW",
+      "name": "마로니에공원 다목적홀 (Marronnier Park Multipurpose Hall, 좋은공연안내센터 B2)",
+      "address": "서울특별시 종로구 대학로 104, 좋은공연안내센터 지하 2층 (104 Daehak-ro, Jongno-gu, Seoul 03087)",
+      "capacity_comfortable": 100,
+      "capacity_basis": "venue_claim",
+      "screen_status": "unknown",
+      "wifi_status": "unknown",
+      "catering_policy": "unknown",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": 89.89,
+      "cost_basis": "estimated_from_rate",
+      "cost_local_amount": 120000,
+      "booking_url": "https://eshare.go.kr/UserPortal/Upv/UprResrcFacl/index.do?rsrc_no=DF03O1304240",
+      "cost_rate_unit": "hour",
+      "opening_hours": "10:00-20:00 (이용시간)",
+      "closing_time": "20:00",
+      "max_booking_hours": 10,
+      "event_window_status": "allows_to_6",
+      "event_window_evidence": {
+        "url": "https://eshare.go.kr/UserPortal/Upv/UprResrcFacl/index.do?rsrc_no=DF03O1304240",
+        "title": "공유누리 — 마로니에공원 다목적홀 (eshare.go.kr), fetched 2026-11-28",
+        "accessed_on": "2026-11-28",
+        "claim": "The shared-facility record prints '이용시간 10:00 ∼ 20:00', so a booking can run past 18:00 but cannot start at 09:00."
+      },
+      "latitude": 37.5805083,
+      "longitude": 127.0028444,
+      "verification_question_kinds": [
+        "screen",
+        "wifi",
+        "availability",
+        "booking_terms",
+        "final_quote"
+      ],
+      "verification_questions": [
+        "Confirm AV: the shared-facility record lists no projector, screen, microphone or Wi-Fi, so all presentation equipment must be assumed to be brought in.",
+        "Confirm a 2027 Saturday booking and the reservation window, which the record describes as opening on the first day of each month.",
+        "Confirm the capacity rule: the record states '최대 50명(권장)~100명 이내' and places safety responsibility on the organiser, so confirm that 50 attendees are accepted and what fire-safety limit applies.",
+        "Confirm that the 30,000 KRW two-hour rate (VAT excluded) can be booked as five consecutive blocks for a 10-hour day and what the overrun charge is.",
+        "Confirm the alcohol rule for the room: whether serving alcohol at a private community event is permitted, whether an event liquor licence is required and who must hold it - no venue page in this set publishes an alcohol permission for a rented hall, and a cafe or restaurant licence is not evidence for the hall."
+      ],
+      "source_url": "https://eshare.go.kr/UserPortal/Upv/UprResrcFacl/index.do?rsrc_no=DF03O1304240",
+      "source_title": "공유누리 — 마로니에공원 다목적홀: 143㎡, 최대 50명(권장)~100명, 2시간당 30,000원 VAT 별도, 이용시간 10:00-20:00 (eshare.go.kr, fetched 2026-11-28)",
+      "evidence": {
+        "observed_facts": "The national shared-facility portal record (eshare.go.kr, rsrc_no DF03O1304240, fetched 2026-11-28) lists 마로니에공원 다목적홀 at 대학로 104 (동숭동), 좋은공연안내센터 지하 2층, provided by 종로구 문화과: 143 m2, capacity '최대 50명(권장)~100명 이내' with safety responsibility on the user, fee 30,000 KRW per two hours with VAT 10% separate, use hours 10:00-20:00, and no parking. USD: ECB 2026-11-27 (EUR 1 = USD 1.0957; EUR 1 = KRW 1462.65), 1 KRW = USD 0.00074912; 15,000 KRW per hour, 8 hours = USD 89.89.",
+        "inference": "This is the cheapest central-Seoul hall found in the sweep, but the record publishes nothing on AV, network, food or alcohol, so it is a strong price candidate with four open operational questions rather than a ready-to-book room.",
+        "geo": "https://nominatim.openstreetmap.org/search?q=%EB%A7%88%EB%A1%9C%EB%8B%88%EC%97%90%EA%B3%B5%EC%9B%90&format=jsonv2&limit=1"
+      },
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "final_quote_required"
+      ],
+      "score": 0.6464,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.982,
+          "weight": 0.2,
+          "contribution": 0.1964
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "recording_suitability": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "technical_readiness": {
+          "factor": 0.0,
+          "weight": 0.05,
+          "contribution": 0.0
+        },
+        "event_window_fit": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "total": 0.6464
+      }
+    },
+    {
+      "city_slug": "seoul-kr",
+      "accessed_on": "2026-11-28",
+      "needs_human_verify": true,
+      "cost_local_currency": "KRW",
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "name": "한국컨퍼런스센터 (COCOC) — 대강당 (170석)",
+      "address": "서울특별시 서초구 강남대로53길 8, B1~2F (8 Gangnam-daero 53-gil, Seocho-gu, Seoul)",
+      "capacity_comfortable": 170,
+      "capacity_basis": "venue_claim",
+      "screen_status": "confirmed",
+      "wifi_status": "confirmed",
+      "catering_policy": "in_house_available",
+      "recording_suitability": "likely_good",
+      "estimated_cost_usd": 1812.87,
+      "cost_basis": "published_rate",
+      "cost_local_amount": 2420000,
+      "booking_url": "https://www.cococ.kr/product/auditorium/",
+      "cost_rate_unit": "package",
+      "opening_hours": "00:00-24:00, 연중무휴 (매일)",
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "allows_to_6",
+      "event_window_evidence": {
+        "url": "https://www.cococ.kr/product/auditorium/",
+        "title": "대강당 (170명) — 한국컨퍼런스센터 상품 페이지 (cococ.kr), fetched 2026-11-28",
+        "accessed_on": "2026-11-28",
+        "claim": "The product page prints 운영시간 '매일 00:00~24:00 연중무휴', so a Saturday booking can run to 21:00 and beyond; the room has no closing-time constraint inside the calendar day."
+      },
+      "latitude": 37.4941299,
+      "longitude": 127.0274305,
+      "verification_question_kinds": [
+        "availability",
+        "final_quote",
+        "room_assignment",
+        "booking_terms"
+      ],
+      "verification_questions": [
+        "Confirm a 2027 Saturday 09:00-21:00 booking: the page states 24-hour daily operation but no booking calendar is public.",
+        "Confirm how the 2,420,000 KRW nine-hour package is applied to an eight-hour 09:00-17:00 event and whether the 363,000 KRW hourly rate applies to any hour beyond it.",
+        "Confirm the room is the 170-seat auditorium with 132 fixed theatre seats plus 8 bar seats and 30 movable chairs, and whether the movable seats can be replaced by tables for a workshop layout.",
+        "Confirm the alcohol rule for the room: whether serving alcohol at a private community event is permitted, whether an event liquor licence is required and who must hold it - no venue page in this set publishes an alcohol permission for a rented hall, and a cafe or restaurant licence is not evidence for the hall."
+      ],
+      "source_url": "https://www.cococ.kr/product/auditorium/",
+      "source_title": "대강당 (170명) — 한국컨퍼런스센터: 384㎡, 170석, 363,000원/시간, 9시간 242만원, 00:00-24:00 연중무휴 (cococ.kr, fetched 2026-11-28)",
+      "evidence": {
+        "observed_facts": "The COCOC auditorium page (cococ.kr/product/auditorium/, fetched 2026-11-28) prints 363,000 KRW per hour, a minimum booking of 2 hours, 384 m2 (117 pyeong), capacity 170 seats (132 theatre seats + 8 bar seats + 30 movable chairs), opening hours '매일 00:00~24:00 연중무휴', and a discount policy '9시간 이용 시, 242만원'. Equipment listed: 4K 8000 ANSI projector, 250-inch screen, two 60-inch ceiling monitors, three wireless handheld microphones, two pin microphones, two wired microphones, lectern, HDMI, motorised banner rails, Wi-Fi, plus a host waiting room, ticket booth and coat room. The home page states '지하철 강남역 5번 출구 도보 2분' and the footer address is 서울시 서초구 강남대로53길 8, B1~2F. USD: ECB 2026-11-27 (EUR 1 = USD 1.0957; EUR 1 = KRW 1462.65), 1 KRW = USD 0.00074912; 2,420,000 KRW = USD 1,812.87.",
+        "inference": "The nine-hour package is the only published multi-hour price, so it is recorded as a package rather than extrapolating an eight-hour figure; capacity is the venue's own seat count, well above the 50-person brief, which is why the scorer will treat it as oversized.",
+        "geo": "https://nominatim.openstreetmap.org/search?q=%EA%B0%95%EB%82%A8%EB%8C%80%EB%A1%9C53%EA%B8%B8+8%2C+%EC%84%9C%EC%B4%88%EA%B5%AC%2C+%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C&format=jsonv2&limit=1"
+      },
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "oversized_capacity",
+        "availability_unconfirmed",
+        "final_quote_required"
+      ],
+      "score": 0.615,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.6374,
+          "weight": 0.2,
+          "contribution": 0.1275
+        },
+        "capacity_fit": {
+          "factor": 0.0,
+          "weight": 0.2,
+          "contribution": 0.0
+        },
+        "catering_flexibility": {
+          "factor": 0.7,
+          "weight": 0.15,
+          "contribution": 0.105
+        },
+        "recording_suitability": {
+          "factor": 0.55,
+          "weight": 0.15,
+          "contribution": 0.0825
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "technical_readiness": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "event_window_fit": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "total": 0.615
+      }
+    },
+    {
+      "city_slug": "seoul-kr",
+      "accessed_on": "2026-11-28",
+      "needs_human_verify": true,
+      "cost_local_currency": "KRW",
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "name": "DDP 동대문디자인플라자 — 잔디사랑방 (Jandi-sarangbang, Design Lab 4F)",
+      "address": "서울특별시 중구 을지로 281, 디자인랩 지상 4층 (DDP Design Lab 4F, 281 Eulji-ro, Jung-gu, Seoul 04566)",
+      "capacity_comfortable": 150,
+      "capacity_basis": "venue_claim",
+      "screen_status": "unknown",
+      "wifi_status": "unknown",
+      "catering_policy": "in_house_available",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": 2238.37,
+      "cost_basis": "published_rate",
+      "cost_local_amount": 2988000,
+      "booking_url": "https://ddp.or.kr/?menuno=725",
+      "cost_rate_unit": "day",
+      "opening_hours": "10:00-21:00 (디자인랩 기준시간 11시간; 초과 시간당 기준액 150%)",
+      "closing_time": "21:00",
+      "max_booking_hours": 11,
+      "event_window_status": "allows_to_6",
+      "event_window_evidence": {
+        "url": "https://deep.ddp.or.kr/introduce/c003.do",
+        "title": "DDP 대관정보서비스 — 디자인랩 대관공간안내: 대관 가능 시간 표와 디자인랩 대관료 (deep.ddp.or.kr), fetched 2026-11-28",
+        "accessed_on": "2026-11-28",
+        "claim": "The DDP 대관정보서비스 Design Lab facility page (deep.ddp.or.kr/introduce/c003.do, fetched 2026-11-28) prints the '대관 가능 시간' (rental window) table, whose rows read '컨벤션' / '08:00 ~ 20:00 (12시간)', '전시관(뮤지엄) · 갤러리문 · 이간수문전시장' / '10:00 ~ 21:00 (11시간)' and '기타 시설' / '10:00 ~ 21:00 (11시간)', with the note '※ 기준시간을 초과하여 대관하는 경우 초과 시간당 기준액의 150% 적용', directly above the 디자인랩 대관료 table that prices 잔디사랑방 at 2,988,000 KRW for one day; a Saturday booking can therefore run to 21:00 but cannot start at 09:00."
+      },
+      "latitude": 37.5670686,
+      "longitude": 127.009899,
+      "verification_question_kinds": [
+        "screen",
+        "wifi",
+        "availability",
+        "final_quote",
+        "room_assignment"
+      ],
+      "verification_questions": [
+        "Confirm whether the Jandi-sarangbang has a display or screen available: the rental page lists no AV for this room and the Organizer Guide describes catering facilities rather than presentation equipment.",
+        "Confirm Wi-Fi: the DDP notice requires the applicant to apply for internet use separately.",
+        "Confirm a 2027 Saturday 10:00-21:00 booking; the 09:00 start in the brief is outside the Design Lab base window.",
+        "Confirm the exact room and whether the 2,988,000 KRW day rate is VAT-inclusive; the Organizer Guide gives 570 m2 with a stated capacity of about 150-200 persons.",
+        "Confirm the alcohol rule for the room: whether serving alcohol at a private community event is permitted, whether an event liquor licence is required and who must hold it - no venue page in this set publishes an alcohol permission for a rented hall, and a cafe or restaurant licence is not evidence for the hall."
+      ],
+      "source_url": "https://ddp.or.kr/?menuno=725",
+      "source_title": "DDP 대관시설정보 — 잔디사랑방: 570㎡, 수용 약 150~200명, 일 기준 2,988,000원 (ddp.or.kr, fetched 2026-11-28)",
+      "evidence": {
+        "observed_facts": "The DDP rental page (ddp.or.kr/?menuno=725, fetched 2026-11-28) lists the Design Lab 4F Jandi-sarangbang at 570 m2 with a fee of 271,660 KRW per hour, 814,980 KRW for 3 hours and 2,988,000 KRW per day. The DDP Organizer Guide PDF (ddp.or.kr/file/attach/DDP_EVENT_GUIDE2.pdf, fetched 2026-11-28) states the room is 570 m2, 41.0m x 25.5m, 5.5m maximum height, '수용능력 약150~200명', and that its attached facilities allow catering and food-and-drink events; it also connects directly to the grass hill above Dongdaemun History and Culture Park. Address 281 Eulji-ro, Jung-gu, Seoul 04566. USD basis: ECB 2026-11-27 rates fetched 2026-11-28 (EUR 1 = USD 1.0957; EUR 1 = KRW 1462.65), 1 KRW = USD 0.00074912; 2,988,000 KRW = USD 2,238.37. The DDP 대관정보서비스 Design Lab page (deep.ddp.or.kr/introduce/c003.do, fetched 2026-11-28) prints the '대관 가능 시간' table, whose rows read '컨벤션' / '08:00 ~ 20:00 (12시간)', '전시관(뮤지엄) · 갤러리문 · 이간수문전시장' / '10:00 ~ 21:00 (11시간)' and '기타 시설' / '10:00 ~ 21:00 (11시간)', with overruns at 150% of the base rate, and repeats the 디자인랩 대관료 table that prices this room.",
+        "inference": "The stated 150-200 range is a flat-floor capacity; 150 is recorded as the conservative end. This is the only DDP room whose guide text states catering is supported, which is why it scores better on catering than the Design Hall despite having no listed screen.",
+        "geo": "https://nominatim.openstreetmap.org/search?q=%EB%8F%99%EB%8C%80%EB%AC%B8%EB%94%94%EC%9E%90%EC%9D%B8%ED%94%8C%EB%9D%BC%EC%9E%90%2C+%EC%84%9C%EC%9A%B8&format=jsonv2&limit=1"
+      },
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "final_quote_required"
+      ],
+      "score": 0.5855,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.5523,
+          "weight": 0.2,
+          "contribution": 0.1105
+        },
+        "capacity_fit": {
+          "factor": 0.6,
+          "weight": 0.2,
+          "contribution": 0.12
+        },
+        "catering_flexibility": {
+          "factor": 0.7,
+          "weight": 0.15,
+          "contribution": 0.105
+        },
+        "recording_suitability": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "technical_readiness": {
+          "factor": 0.0,
+          "weight": 0.05,
+          "contribution": 0.0
+        },
+        "event_window_fit": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "total": 0.5855
+      }
+    },
+    {
+      "city_slug": "seoul-kr",
+      "accessed_on": "2026-11-28",
+      "needs_human_verify": true,
+      "cost_local_currency": null,
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "name": "스페이스쉐어 삼성역센터 — 컨퍼런스 B룸 (60명)",
+      "address": "서울특별시 강남구 영동대로96길 20, 대화빌딩 지하 1층 (Daehwa Building B1, 20 Yeongdong-daero 96-gil, Gangnam-gu, Seoul 06173)",
+      "capacity_comfortable": 60,
+      "capacity_basis": "venue_claim",
+      "screen_status": "unknown",
+      "wifi_status": "unknown",
+      "catering_policy": "unknown",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "booking_url": "https://spaceshare.co.kr/reservation/",
+      "cost_rate_unit": "unknown",
+      "opening_hours": "종일 09:00-18:00, 오전 09:00-12:00, 오후 13:00-18:00, 야간 19:00-22:00",
+      "closing_time": "22:00",
+      "max_booking_hours": 9,
+      "event_window_status": "allows_to_5",
+      "event_window_evidence": {
+        "url": "https://spaceshare.co.kr/reservation/",
+        "title": "스페이스쉐어 예약·견적문의 — 시간대 안내 (spaceshare.co.kr), fetched 2026-11-28",
+        "accessed_on": "2026-11-28",
+        "claim": "The booking page prints four bookable bands - 종일 09:00-18:00, 오전 09:00-12:00, 오후 13:00-18:00 and 야간 19:00-22:00 - so a nine-hour 09:00-18:00 booking is available but the standard band ends at 18:00."
+      },
+      "latitude": 37.51079,
+      "longitude": 127.064227,
+      "verification_question_kinds": [
+        "cost_unknown",
+        "screen",
+        "wifi",
+        "availability",
+        "booking_terms"
+      ],
+      "verification_questions": [
+        "Confirm the rental fee for 컨퍼런스 B룸 (60 seats): the reservation page lists rooms and capacities but the fee table is only rendered after a date is selected, and no static rate is published.",
+        "Confirm whether the 09:00-18:00 band can be extended to 21:00 by adding the 19:00-22:00 night band, and what the combined price is.",
+        "Confirm AV and Wi-Fi: the centre's marketing describes premium lecture rooms but the Samsung centre page captured today does not itemise equipment.",
+        "Confirm a 2027 Saturday booking (the page states weekend and holiday inquiries are answered on the next business day).",
+        "Confirm the alcohol rule for the room: whether serving alcohol at a private community event is permitted, whether an event liquor licence is required and who must hold it - no venue page in this set publishes an alcohol permission for a rented hall, and a cafe or restaurant licence is not evidence for the hall."
+      ],
+      "source_url": "https://spaceshare.co.kr/reservation/",
+      "source_title": "스페이스쉐어 예약·견적문의 — 삼성역센터 컨퍼런스B룸(60명), 종일 09:00-18:00 / 야간 19:00-22:00 (spaceshare.co.kr, fetched 2026-11-28)",
+      "evidence": {
+        "observed_facts": "The SpaceShare reservation page (spaceshare.co.kr/reservation/, fetched 2026-11-28) lists the Samsung station centre rooms with capacities, including 하모니홀 150, 리젠시홀 300, 갤럭시홀 200, 델피노홀 150, 컨퍼런스B룸 60 and 컨퍼런스C룸 64, and states the bookable bands as 종일 09:00-18:00, 오전 09:00-12:00, 오후 13:00-18:00 and 야간 19:00-22:00 with hourly booking not available. The centre site footer gives the address as 서울 강남구 영동대로 96길 20 대화빌딩 지하1층 and the home page places the centre two minutes from Samsung station exit 8. No static rate table is published.",
+        "inference": "SpaceShare is the largest lecture-room operator in the set by room count and the 60-seat conference B room is the closest size to the brief, but without a published rate the record cannot carry a cost; the nine-hour band ending at 18:00 is recorded as the supported window.",
+        "geo": "https://nominatim.openstreetmap.org/search?q=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C+%EA%B0%95%EB%82%A8%EA%B5%AC+%EC%98%81%EB%8F%99%EB%8C%80%EB%A1%9C96%EA%B8%B8+20&format=jsonv2&limit=1"
+      },
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "cost_unknown",
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed"
+      ],
+      "score": 0.55,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.5,
+          "weight": 0.2,
+          "contribution": 0.1
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "recording_suitability": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "technical_readiness": {
+          "factor": 0.0,
+          "weight": 0.05,
+          "contribution": 0.0
+        },
+        "event_window_fit": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "total": 0.55
+      }
+    },
+    {
+      "city_slug": "seoul-kr",
+      "accessed_on": "2026-11-28",
+      "needs_human_verify": true,
+      "cost_local_currency": null,
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "name": "성공 스페이스 (Seonggong Space, 성동구 왕십리)",
+      "address": "서울특별시 성동구 왕십리로 135, 상가동 3층 (135 Wangsimni-ro, Seongdong-gu, Seoul)",
+      "capacity_comfortable": 110,
+      "capacity_basis": "venue_claim",
+      "screen_status": "unknown",
+      "wifi_status": "unknown",
+      "catering_policy": "unknown",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "booking_url": "https://www.sd.go.kr/booking/selectUnityFcltyOperWebList.do?key=4837",
+      "cost_rate_unit": "unknown",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "latitude": 37.5600451,
+      "longitude": 127.0364011,
+      "verification_question_kinds": [
+        "cost_unknown",
+        "availability",
+        "event_window",
+        "screen",
+        "wifi"
+      ],
+      "verification_questions": [
+        "Confirm the rental fee: the Seongdong booking table marks the room '유료' but prints no amount, and the fee is handled by phone (02-2281-9445 per the family-centre record for the same system).",
+        "Confirm the capacity and room use: the table lists 110 persons under 회의실 for 성공 스페이스, but no floor plan or equipment list is published.",
+        "Confirm a 2027 Saturday booking and the operating window.",
+        "Confirm AV, Wi-Fi, catering and alcohol rules.",
+        "Confirm the alcohol rule for the room: whether serving alcohol at a private community event is permitted, whether an event liquor licence is required and who must hold it - no venue page in this set publishes an alcohol permission for a rented hall, and a cafe or restaurant licence is not evidence for the hall."
+      ],
+      "source_url": "https://www.sd.go.kr/booking/selectUnityFcltyOperWebList.do?key=4837",
+      "source_title": "성동구 신속예약 시설/공간 목록 — 성공 스페이스 (회의실, 110명, 유료, 전화) (sd.go.kr, fetched 2026-11-28)",
+      "evidence": {
+        "observed_facts": "The Seongdong district booking list (sd.go.kr/booking/selectUnityFcltyOperWebList.do?key=4837, fetched 2026-11-28) carries a row: 시설구분 회의실, 시설명 성공 스페이스, 장소 서울 성동구 왕십리로 135 상가동 3층, 이용대상 성인, 수용인원 110, 이용요금 유료, 예약방법 전화, 접수기간 2026-03-24 to 2026-12-31. The same list shows the district's small halls (성수1가제1동 다목적실 30, 성수2가제1동 50, 용답동 50) and states for the 용답동 hall that weekend and public-holiday rentals are not accepted, which is a pattern that must be checked for 성공 스페이스 rather than assumed.",
+        "inference": "This is the only Seongsu/Wangsimni-adjacent room in the set with a published headcount above 50; the district publishes no fee and no equipment, so it is carried at zero cost with a confirm-cost question rather than an estimate.",
+        "geo": "https://nominatim.openstreetmap.org/search?q=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C+%EC%84%B1%EB%8F%99%EA%B5%AC+%EC%99%95%EC%8B%AD%EB%A6%AC%EB%A1%9C+135&format=jsonv2&limit=1",
+        "geo_note": "Street-level point, not a building point. Seven Nominatim calls were made today (서울특별시 성동구 왕십리로 135 / 왕십리로 135, 성동구 / structured street=135 왕십리로 / name=성공스페이스 / 서울 성동구 왕십리로 135 / 왕십리로135 / 서울특별시 성동구 왕십리로 135 상가동) and every hit returned the 왕십리로 road way, never a building; four Overpass queries, including addr:street=왕십리로 + addr:housenumber=135 in the Seongdong bbox, returned no such building. The recorded pair is the centroid of the 왕십리로 road segment that Nominatim returns for the address query (captures/geo_seonggong.json, display_name '왕십리로, 행당동, 행당1동, 성동구, 04751'), so it locates the street, not the 상가동 entrance. Every failed lookup is captured as geo_seonggong_bldg.json, geo_seonggong_housenumber.json, geo_seonggong_structured.json, geo_seonggong_freeform2.json, geo_seonggong_freeform3.json, geo_seonggong_name.json, geo_seonggong_overpass.json, geo_seonggong_overpass_named.json, geo_seonggong_op_hnum135.json and geo_seonggong_op_street_presence.json."
+      },
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "cost_unknown",
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "duration_unconfirmed"
+      ],
+      "score": 0.525,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.5,
+          "weight": 0.2,
+          "contribution": 0.1
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "recording_suitability": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "technical_readiness": {
+          "factor": 0.0,
+          "weight": 0.05,
+          "contribution": 0.0
+        },
+        "event_window_fit": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "total": 0.525
+      }
+    },
+    {
+      "city_slug": "seoul-kr",
+      "accessed_on": "2026-11-28",
+      "needs_human_verify": true,
+      "cost_local_currency": "KRW",
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "name": "경기창조경제혁신센터 (판교) — 국제회의장, 지하 2층",
+      "address": "경기도 성남시 분당구 대왕판교로645번길 12, 경기창조경제혁신센터 지하 2층 (12, Daewangpangyo-ro 645beon-gil, Bundang-gu, Seongnam-si, Gyeonggi-do 13487)",
+      "capacity_comfortable": 540,
+      "capacity_basis": "seated",
+      "screen_status": "confirmed",
+      "wifi_status": "confirmed",
+      "catering_policy": "not_allowed",
+      "recording_suitability": "likely_good",
+      "estimated_cost_usd": 1977.68,
+      "cost_basis": "published_rate",
+      "cost_local_amount": 2640000,
+      "booking_url": "https://www.pangyotechnovalley.org/base/rentalManagement/facility?building=4&menuLevel=4&menuNo=3",
+      "cost_rate_unit": "day",
+      "opening_hours": "08:00-12:00 and 13:00-17:00 blocks; full day 08:00-17:00 (VAT included)",
+      "closing_time": "17:00",
+      "max_booking_hours": 8,
+      "event_window_status": "allows_to_5",
+      "event_window_evidence": {
+        "url": "https://www.pangyotechnovalley.org/base/rentalManagement/facility?building=4&menuLevel=4&menuNo=3",
+        "title": "판교테크노밸리 — 국제회의장 대관 안내 (pangyotechnovalley.org), fetched 2026-11-28",
+        "accessed_on": "2026-11-28",
+        "claim": "The page prints the 국제회의장 day rate as '전일 (08:00~17:00) 2,640,000원' with VAT included and blocks ending at 17:00, so the hall supports an event ending at 17:00 but not an evening finish."
+      },
+      "latitude": 37.400339,
+      "longitude": 127.1048351,
+      "verification_question_kinds": [
+        "availability",
+        "booking_terms",
+        "booking_terms"
+      ],
+      "verification_questions": [
+        "Confirm whether a 2027 Saturday can be booked and whether the 540-seat hall can be curtained or part-used for 50 attendees.",
+        "Confirm the day rate treatment and whether any discount applies to a non-commercial community event.",
+        "Confirm the alcohol rule for the room: whether serving alcohol at a private community event is permitted, whether an event liquor licence is required and who must hold it - no venue page in this set publishes an alcohol permission for a rented hall, and a cafe or restaurant licence is not evidence for the hall."
+      ],
+      "source_url": "https://www.pangyotechnovalley.org/base/rentalManagement/facility?building=4&menuLevel=4&menuNo=3",
+      "source_title": "판교테크노밸리 시설 대관 — 국제회의장: 540석(913㎡), 전일 08:00-17:00 2,640,000원 VAT 포함 (pangyotechnovalley.org, fetched 2026-11-28)",
+      "evidence": {
+        "observed_facts": "The same Pangyo Techno Valley rental page (fetched 2026-11-28) lists the basement international conference hall at 913 m2 with 540 seats, a Panasonic PT-MZ881 projector (8,000 ANSI), screen, AW-HE50S camera, microphones, tables and chairs, rates of 1,320,000 KRW per four-hour block and 2,640,000 KRW for the full day 08:00-17:00 VAT included, a food ban (bottled water excepted) and a small car park. Address: 경기도 성남시 분당구 대왕판교로645번길 12. USD: ECB 2026-11-27 (EUR 1 = USD 1.0957; EUR 1 = KRW 1462.65), 1 KRW = USD 0.00074912; 2,640,000 KRW = USD 1,977.68.",
+        "inference": "A 540-seat hall is far larger than the 50-person brief; it is retained because the price and equipment are fully published and a 2027 date may need a hall that can absorb a larger-than-expected turnout, with the oversize risk surfaced as a flag rather than hidden.",
+        "geo": "https://nominatim.openstreetmap.org/search?q=%EA%B2%BD%EA%B8%B0%EB%8F%84+%EC%84%B1%EB%82%A8%EC%8B%9C+%EB%B6%84%EB%8B%B9%EA%B5%AC+%EB%8C%80%EC%99%95%ED%8C%90%EA%B5%90%EB%A1%9C645%EB%B2%88%EA%B8%B8+12&format=jsonv2&limit=1"
+      },
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "oversized_capacity",
+        "availability_unconfirmed"
+      ],
+      "score": 0.5034,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.6045,
+          "weight": 0.2,
+          "contribution": 0.1209
+        },
+        "capacity_fit": {
+          "factor": 0.0,
+          "weight": 0.2,
+          "contribution": 0.0
+        },
+        "catering_flexibility": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "recording_suitability": {
+          "factor": 0.55,
+          "weight": 0.15,
+          "contribution": 0.0825
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "technical_readiness": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "event_window_fit": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "total": 0.5034
+      }
+    },
+    {
+      "city_slug": "seoul-kr",
+      "accessed_on": "2026-11-28",
+      "needs_human_verify": true,
+      "cost_local_currency": "KRW",
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "name": "노들섬 라이브하우스 (Nodeul Island Livehouse, 1F)",
+      "address": "서울특별시 용산구 양녕로 445 (445 Yangnyeong-ro, Yongsan-gu, Seoul 04427)",
+      "capacity_comfortable": 456,
+      "capacity_basis": "seated",
+      "screen_status": "unknown",
+      "wifi_status": "unknown",
+      "catering_policy": "unknown",
+      "recording_suitability": "likely_good",
+      "estimated_cost_usd": 2996.48,
+      "cost_basis": "published_rate",
+      "cost_local_amount": 4000000,
+      "booking_url": "https://nodeul.org/facility/livehouse/",
+      "cost_rate_unit": "day",
+      "opening_hours": "공연 대관 10:00-23:00 (준비 대관 10:00-22:00)",
+      "closing_time": "23:00",
+      "max_booking_hours": 13,
+      "event_window_status": "allows_to_6",
+      "event_window_evidence": {
+        "url": "https://nodeul.org/facility/livehouse/",
+        "title": "노들섬 라이브하우스 — 대관 안내 (nodeul.org), fetched 2026-11-28",
+        "accessed_on": "2026-11-28",
+        "claim": "The facility page prints '공연 대관 시간 : 10시 ~ 23시', so a Saturday booking can run well past 18:00 but cannot start at 09:00."
+      },
+      "latitude": 37.5181487,
+      "longitude": 126.9582184,
+      "verification_question_kinds": [
+        "availability",
+        "final_quote",
+        "screen",
+        "wifi",
+        "booking_terms"
+      ],
+      "verification_questions": [
+        "Confirm 2027 availability: the rental notice captured the same day says the 2026 second-half open call covers rentals only until 2026-10-31 and that schedules may change under the Nodeul Global Art Island project, so 2027 dates are not yet confirmed.",
+        "Confirm the VAT treatment - the fee table is marked 'VAT 별도' - and whether a 50-person event in a 456-seat hall can be priced on a reduced-area or reduced-day basis.",
+        "Confirm screen/projection and Wi-Fi: the page lists sound, lighting and instruments as included but no screen or network.",
+        "Confirm whether a community conference (not a concert) is an accepted use and whether the 4,000,000 KRW weekend performance rate applies to it.",
+        "Confirm the alcohol rule for the room: whether serving alcohol at a private community event is permitted, whether an event liquor licence is required and who must hold it - no venue page in this set publishes an alcohol permission for a rented hall, and a cafe or restaurant licence is not evidence for the hall."
+      ],
+      "source_url": "https://nodeul.org/facility/livehouse/",
+      "source_title": "노들섬 라이브하우스 — 지정좌석 456석 / 스탠딩 708석, 토·일·공휴일 1회 4,000,000원 VAT 별도, 공연 대관 10:00-23:00 (nodeul.org, fetched 2026-11-28)",
+      "evidence": {
+        "observed_facts": "The Nodeul Island livehouse page (nodeul.org/facility/livehouse/, fetched 2026-11-28) prints 1,320 m2, 456 designated seats or 708 standing, a 10:00-23:00 performance rental window (10:00-22:00 for preparation), and weekend/public-holiday rates of 4,000,000 KRW for one performance and 6,000,000 KRW for two, VAT excluded; the rate includes sound, lighting and instruments, one house manager and four ushers, dressing rooms, lobby and ticket booth. The rental guide (nodeul.org/rent-guide/, fetched 2026-11-28) states the 2026 second-half open call runs only to 2026-10-31 and that schedules may change under the Nodeul Global Art Island project, and requires applications at least four weeks before the event. Address: 서울특별시 용산구 양녕로 445, 04427. USD: ECB 2026-11-27 (EUR 1 = USD 1.0957; EUR 1 = KRW 1462.65), 1 KRW = USD 0.00074912; 4,000,000 KRW = USD 2,996.48.",
+        "inference": "A 456-seat concert hall is oversized for 50 people, and the redevelopment notice makes 2027 availability genuinely uncertain; it is retained because the price and technical package are published and it is the only riverside/performance option in the set.",
+        "geo": "https://nominatim.openstreetmap.org/search?q=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C+%EC%9A%A9%EC%82%B0%EA%B5%AC+%EC%96%91%EB%85%95%EB%A1%9C+445&format=jsonv2&limit=1"
+      },
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "oversized_capacity",
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "final_quote_required"
+      ],
+      "score": 0.4126,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.4007,
+          "weight": 0.2,
+          "contribution": 0.0801
+        },
+        "capacity_fit": {
+          "factor": 0.0,
+          "weight": 0.2,
+          "contribution": 0.0
+        },
+        "catering_flexibility": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "recording_suitability": {
+          "factor": 0.55,
+          "weight": 0.15,
+          "contribution": 0.0825
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "technical_readiness": {
+          "factor": 0.0,
+          "weight": 0.05,
+          "contribution": 0.0
+        },
+        "event_window_fit": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "total": 0.4126
+      }
+    }
+  ],
+  "lead": [
+    {
+      "city_slug": "seoul-kr",
+      "accessed_on": "2026-11-28",
+      "needs_human_verify": true,
+      "cost_local_currency": null,
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "name": "COEX — 컨퍼런스룸 300 (Conference Room 300, 남 3F)",
+      "address": "서울특별시 강남구 영동대로 513, 코엑스 (513 Yeongdong-daero, Gangnam-gu, Seoul 06164)",
+      "capacity_comfortable": 300,
+      "capacity_basis": "venue_claim",
+      "screen_status": "unknown",
+      "wifi_status": "unknown",
+      "catering_policy": "unknown",
+      "recording_suitability": "likely_good",
+      "estimated_cost_usd": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "booking_url": "https://business.coex.co.kr/meeting-room/facilities-information/",
+      "cost_rate_unit": "unknown",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "latitude": 37.5125275,
+      "longitude": 127.0588489,
+      "verification_question_kinds": [
+        "cost_unknown",
+        "capacity",
+        "availability",
+        "screen",
+        "wifi",
+        "event_window"
+      ],
+      "verification_questions": [
+        "Confirm the seat count of Conference Room 300 itself: the official page gives a 20-300 person range across the 남 3F rooms and no per-room figure, while the earlier Seoul bundle recorded 114 for this room - the two cannot both be right.",
+        "Confirm the rental price for Conference Room 300: the COEX meeting-room pages state capacities and uses but publish no room rate, and the rental-cost page covers exhibition halls only.",
+        "Confirm a 2027 Saturday booking and the operating window for 회의실 (the meeting-room pages print no opening hours).",
+        "Confirm the built-in AV in Room 300 (screen, projector, microphones, recording/streaming capability) and whether Wi-Fi is provided for attendees.",
+        "Confirm catering rules for a 50-person event in this room and whether a smaller room (20-100 seats in the same 남 3F block) would be offered instead.",
+        "Confirm the alcohol rule for the room: whether serving alcohol at a private community event is permitted, whether an event liquor licence is required and who must hold it - no venue page in this set publishes an alcohol permission for a rented hall, and a cafe or restaurant licence is not evidence for the hall."
+      ],
+      "source_url": "https://business.coex.co.kr/meeting-room/facilities-information/",
+      "source_title": "코엑스 회의실 시설안내 — 컨퍼런스룸(남) 3F: 20~300명, 40~311㎡ (business.coex.co.kr, fetched 2026-11-28)",
+      "evidence": {
+        "observed_facts": "The COEX meeting-room facilities page (business.coex.co.kr/meeting-room/facilities-information/, fetched 2026-11-28) lists 컨퍼런스룸(남) 3F as 40-311 m2 per room with a capacity of 20 to 300 persons depending on the room, and lists Studio 159 at 294 m2 with 70-100 theatre seats. The COEX rental-cost page captured the same day covers exhibition-hall rates only (per m2 per day) and prints no conference-room rate; the meeting-room section points to an inquiry form. Address: 서울특별시 강남구 영동대로 513, 코엑스 06164. No room rate, opening hours, AV list or catering policy is published on the captured pages.",
+        "inference": "COEX is the largest venue group in the set and the only one whose conference rooms are priced by inquiry; the record is therefore a lead-with-price-unknown rather than an estimate, and the 300-seat figure is the top of the published range for the 남 3F block.",
+        "geo": "https://nominatim.openstreetmap.org/search?q=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C+%EA%B0%95%EB%82%A8%EA%B5%AC+%EC%98%81%EB%8F%99%EB%8C%80%EB%A1%9C+513&format=jsonv2&limit=1"
+      },
+      "venue_tier": "lead",
+      "tier_reasons": [
+        "material verification question(s): capacity"
+      ],
+      "venue_flags": [
+        "oversized_capacity",
+        "cost_unknown",
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "duration_unconfirmed"
+      ],
+      "score": null,
+      "score_breakdown": null
+    },
+    {
+      "city_slug": "seoul-kr",
+      "accessed_on": "2026-11-28",
+      "needs_human_verify": true,
+      "cost_local_currency": null,
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "name": "KT&G 상상마당 홍대 — 라이브홀 (Live Hall, B2)",
+      "address": "서울특별시 마포구 어울마당로 65 (65 Eoulmadang-ro, Mapo-gu, Seoul 04042)",
+      "capacity_comfortable": 0,
+      "capacity_basis": "unknown",
+      "screen_status": "unknown",
+      "wifi_status": "unknown",
+      "catering_policy": "unknown",
+      "recording_suitability": "likely_good",
+      "estimated_cost_usd": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "booking_url": "https://www.sangsangmadang.com/rental/list",
+      "cost_rate_unit": "unknown",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "latitude": 37.5509886,
+      "longitude": 126.9210678,
+      "verification_question_kinds": [
+        "capacity",
+        "cost_unknown",
+        "availability",
+        "event_window",
+        "screen",
+        "wifi",
+        "booking_terms"
+      ],
+      "verification_questions": [
+        "Confirm the live hall capacity and configuration: the venue's rental page describes the application process but publishes no seat count or room data for the hall.",
+        "Confirm the rental fee: no rate is published on the rental page, which routes every request through an email application and a review.",
+        "Confirm a 2027 Saturday booking and the hall's operating window.",
+        "Confirm screen or projection provision: the rental page lists no display equipment for the hall.",
+        "Confirm Wi-Fi and network access for a 50-person audience in the hall.",
+        "Confirm AV, recording and staging provision for a 50-person seated event in a standing-capable hall.",
+        "Confirm the alcohol rule for the room: whether serving alcohol at a private community event is permitted, whether an event liquor licence is required and who must hold it - no venue page in this set publishes an alcohol permission for a rented hall, and a cafe or restaurant licence is not evidence for the hall."
+      ],
+      "source_url": "https://www.sangsangmadang.com/rental/list",
+      "source_title": "KT&G 상상마당 대관안내 — 예약문의·신청·심의·계약 4단계, 대관료 미공개 (sangsangmadang.com, fetched 2026-11-28)",
+      "evidence": {
+        "observed_facts": "The KT&G Sangsangmadang rental page (sangsangmadang.com/rental/list, fetched 2026-11-28) describes a four-step rental process (inquiry, application by email, review within seven days, contract and payment within seven days) and rules such as no unauthorised special effects, restoration of furniture, no funeral wreaths and liability for damage, but publishes no room capacity, no rate and no opening hours. The Hongdae building page gives the address 어울마당로 65 and access from Hongik University station exit 9 and Hapjeong station exit 3; the footer address is 서울시 마포구 어울마당로 65.",
+        "inference": "Sangsangmadang is a well-known Hongdae arts venue but its rental terms are inquiry-only, so the record carries no capacity and no cost; it stays a lead until the venue answers, and no figure has been estimated.",
+        "geo": "https://nominatim.openstreetmap.org/search?q=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C+%EB%A7%88%ED%8F%AC%EA%B5%AC+%EC%96%B4%EC%9A%B8%EB%A7%88%EB%8B%B9%EB%A1%9C+65&format=jsonv2&limit=1"
+      },
+      "venue_tier": "lead",
+      "tier_reasons": [
+        "material verification question(s): capacity",
+        "capacity_comfortable 0 below minimum 40"
+      ],
+      "venue_flags": [
+        "cost_unknown",
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "duration_unconfirmed"
+      ],
+      "score": null,
+      "score_breakdown": null
+    },
+    {
+      "city_slug": "seoul-kr",
+      "accessed_on": "2026-11-28",
+      "needs_human_verify": true,
+      "cost_local_currency": "KRW",
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "name": "노들섬 노들라운지 (Nodeul Lounge, 1F)",
+      "address": "서울특별시 용산구 양녕로 445 (445 Yangnyeong-ro, Yongsan-gu, Seoul 04427)",
+      "capacity_comfortable": 0,
+      "capacity_basis": "unknown",
+      "screen_status": "unknown",
+      "wifi_status": "unknown",
+      "catering_policy": "unknown",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": 1008.32,
+      "cost_basis": "published_rate",
+      "cost_local_amount": 1346000,
+      "booking_url": "https://nodeul.org/facility/nodeul-lounge/",
+      "cost_rate_unit": "day",
+      "opening_hours": "하절기 10:00-21:00, 동절기 10:00-20:00",
+      "closing_time": "21:00",
+      "max_booking_hours": 11,
+      "event_window_status": "allows_to_6",
+      "event_window_evidence": {
+        "url": "https://nodeul.org/facility/nodeul-lounge/",
+        "title": "노들섬 노들라운지 — 대관 안내 (nodeul.org), fetched 2026-11-28",
+        "accessed_on": "2026-11-28",
+        "claim": "The facility page prints the base window as '하절기 10~21시, 동절기 10~20시', so a summer Saturday booking can run past 18:00 but cannot start at 09:00."
+      },
+      "latitude": 37.5181487,
+      "longitude": 126.9582184,
+      "verification_question_kinds": [
+        "capacity",
+        "availability",
+        "final_quote",
+        "screen",
+        "wifi"
+      ],
+      "verification_questions": [
+        "Confirm the standing/seated capacity: the page states '수용인원 행사 운영에 따라 상이' (varies by event) and gives no figure, so 50-person suitability cannot be checked from the page.",
+        "Confirm 2027 availability given the Nodeul Global Art Island project and the 2026 open-call limits stated on the rental guide.",
+        "Confirm the VAT treatment (the fee table is marked 'VAT 별도') and whether the 557 m2 lounge can be part-booked.",
+        "Confirm AV, Wi-Fi and catering arrangements - the page lists no equipment or service.",
+        "Confirm the alcohol rule for the room: whether serving alcohol at a private community event is permitted, whether an event liquor licence is required and who must hold it - no venue page in this set publishes an alcohol permission for a rented hall, and a cafe or restaurant licence is not evidence for the hall."
+      ],
+      "source_url": "https://nodeul.org/facility/nodeul-lounge/",
+      "source_title": "노들섬 노들라운지 — 557㎡, 수용인원 행사 운영에 따라 상이, 토·일·공휴일 1,346,000원 VAT 별도, 하절기 10-21시 (nodeul.org, fetched 2026-11-28)",
+      "evidence": {
+        "observed_facts": "The Nodeul Lounge page (nodeul.org/facility/nodeul-lounge/, fetched 2026-11-28) prints 위치 노들섬 1F, 면적 557 m2, 수용인원 '행사 운영에 따라 상이', 부대시설 '-', a base window of 10:00-21:00 in summer and 10:00-20:00 in winter, and a fee of 1,003,000 KRW per weekday and 1,346,000 KRW per Saturday, Sunday or public holiday, VAT excluded; the busker studio and store inside the lounge cannot be rented. Address: 서울특별시 용산구 양녕로 445. USD: ECB 2026-11-27 (EUR 1 = USD 1.0957; EUR 1 = KRW 1462.65), 1 KRW = USD 0.00074912; 1,346,000 KRW = USD 1,008.32.",
+        "inference": "The 557 m2 lounge is the right scale for 50 people and the cheapest Nodeul room, but the operator publishes no headcount at all, which is a material gap for a 50-person brief and makes this a lead rather than a selectable venue.",
+        "geo": "https://nominatim.openstreetmap.org/search?q=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C+%EC%9A%A9%EC%82%B0%EA%B5%AC+%EC%96%91%EB%85%95%EB%A1%9C+445&format=jsonv2&limit=1"
+      },
+      "venue_tier": "lead",
+      "tier_reasons": [
+        "material verification question(s): capacity",
+        "capacity_comfortable 0 below minimum 40"
+      ],
+      "venue_flags": [
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "final_quote_required"
+      ],
+      "score": null,
+      "score_breakdown": null
+    },
+    {
+      "city_slug": "seoul-kr",
+      "accessed_on": "2026-11-28",
+      "needs_human_verify": true,
+      "cost_local_currency": "KRW",
+      "hourly_rate_usd": 41.2016,
+      "estimated_hours": 8,
+      "rate_estimate_note": "Published sub-seminar-room rate 55,000 KRW per hour on weekends and public holidays, multiplied by 8 hours; the main hall is quoted only on request, so this is a rate estimate for the smaller room, not a hall quote.",
+      "hourly_rate_local": 55000,
+      "rate_currency": "KRW",
+      "name": "몽상가들 스페이스 (MongSang Space, 문래) — 서브 세미나룸",
+      "address": "서울특별시 영등포구 문래북로 8, 에이스NS타워 B102호 (Ace NS Tower B102, 8 Mullae-buk-ro, Yeongdeungpo-gu, Seoul)",
+      "capacity_comfortable": 70,
+      "capacity_basis": "venue_claim",
+      "screen_status": "confirmed",
+      "wifi_status": "unknown",
+      "catering_policy": "in_house_available",
+      "recording_suitability": "likely_good",
+      "estimated_cost_usd": 329.61,
+      "cost_basis": "estimated_from_rate",
+      "cost_local_amount": 440000,
+      "booking_url": "https://www.mongsang-space.com/pricing",
+      "cost_rate_unit": "hour",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "latitude": 37.5213537,
+      "longitude": 126.8856839,
+      "verification_question_kinds": [
+        "cost",
+        "capacity",
+        "event_window",
+        "wifi",
+        "booking_terms"
+      ],
+      "verification_questions": [
+        "Confirm which room the printed rates apply to: the pricing page prints only the 서브 세미나룸 rate (44,000 KRW/h weekday, 55,000 KRW/h weekend and holidays) and states the main hall is quoted separately, while the '최대 70인' line sits under the general 이용 안내.",
+        "Confirm the capacity of the sub-seminar room and whether 50 people fit in it, or whether the main hall (previously marketed as about 80 pyeong) is required.",
+        "Confirm opening hours and whether a booking can run 09:00-21:00; no operating window is published.",
+        "Confirm Wi-Fi and the AV set (the site lists a screen, beam projector and prompters for the seminar room).",
+        "Confirm the catering and alcohol arrangement: the page states food and alcohol brought in require separate consultation, so confirm whether alcohol is permitted, who holds any licence, and what the catering minimum spend is."
+      ],
+      "source_url": "https://www.mongsang-space.com/pricing",
+      "source_title": "몽상가들 스페이스 요금 안내 — 서브 세미나룸 평일 44,000원/h, 주말·공휴일 55,000원/h, 최대 70인 (mongsang-space.com, fetched 2026-11-28)",
+      "evidence": {
+        "observed_facts": "The venue's own pricing page (mongsang-space.com/pricing, fetched 2026-11-28) prints '서브 세미나룸 평일 44,000원/h (월-목), 주말 55,000원/h (금요일, 공휴일 포함)', a catering service from 10,000 KRW per person, and a use note '최대 70인 이용 가능 (사전 문의 필수)' together with '음식물 및 주류 반입시 별도 협의 필수'. The home page states the space is in 문래동, has full soundproofing, unlimited parking, is five minutes on foot from a subway station, and provides a screen, beam projector and prompters for presentations; the footer address is 서울특별시 영등포구 문래북로8 에이스NS타워 B102호. USD: ECB 2026-11-27 (EUR 1 = USD 1.0957; EUR 1 = KRW 1462.65), 1 KRW = USD 0.00074912; 55,000 KRW = USD 41.2016 per hour, 8 hours = USD 329.61.",
+        "inference": "The previous Seoul run scored this building as its top venue on a main-hall price that is no longer published; today the only readable price is the sub-room hourly rate and the 70-person line is not tied to a specific room, so the record is priced on the sub-room estimate with the room question carried as material.",
+        "geo": "https://nominatim.openstreetmap.org/search?q=%EC%84%9C%EC%9A%B8%ED%8A%B9%EB%B3%84%EC%8B%9C+%EC%98%81%EB%93%B1%ED%8F%AC%EA%B5%AC+%EB%AC%B8%EB%9E%98%EB%B6%81%EB%A1%9C+8&format=jsonv2&limit=1"
+      },
+      "venue_tier": "lead",
+      "tier_reasons": [
+        "material verification question(s): capacity, cost"
+      ],
+      "venue_flags": [
+        "wifi_unknown",
+        "duration_unconfirmed"
+      ],
+      "score": null,
+      "score_breakdown": null
+    }
+  ]
+}
