@@ -1,0 +1,47 @@
+{
+ "city_slug": "kyoto-jp",
+ "checked_on": "2026-11-28",
+ "coverage": [
+  {
+   "kind": "public_holiday_coverage",
+   "jurisdiction_id": "JP:kyoto",
+   "start_date": "2027-01-01",
+   "end_date": "2027-12-31",
+   "finding": "national_holidays_apply",
+   "source_edition": "令和9年（2027年）の国民の祝日・休日（内閣府）",
+   "source_locator": "見出し「〇令和9年（2027年）の国民の祝日・休日」、全17行。The pinned registry carries the same 17 rows under JP and records no JP:kyoto municipal-only holiday.",
+   "source_url": "https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html",
+   "source_title": "国民の祝日について - 内閣府",
+   "accessed_on": "2026-11-28",
+   "needs_human_verify": false,
+   "verification_questions": [],
+   "note": "Kyoto City keeps the national public holidays; the pinned registry records no municipal-only Kyoto holiday, so the 17 national 2027 rows are the city's public layer and print under Japan. This row exists so the calendar classifies the JP:kyoto scope as a public scope rather than as a school board.",
+   "evidence": {
+    "observed_facts": "The captured Cabinet Office page (captures/cao_shukujitsu_2027.html) prints the 令和9年（2027年） block with 17 rows and states that the 2028 dates will be published in February 2027. The registry's JP rows copy those 17 dates."
+   }
+  },
+  {
+   "kind": "school_lane_finding",
+   "jurisdiction_id": "JP:kyoto",
+   "start_date": "2027-01-01",
+   "end_date": "2028-01-07",
+   "finding": "no_applicable_days",
+   "source_edition": "京都市立小学校、中学校、小中学校及び幼稚園の管理運営に関する規則（昭和62年12月25日 教育委規則第5号） 第3条（休業日）",
+   "source_locator": "第3条（休業日）第1項の表, 学年始休業日・夏季休業日・冬季休業日・学年末休業日 columns for 幼稚園・小学校・中学校・小中学校; 第2項から第5項 (principal-set extra holidays, 授業日 switches, 代日休業日) read for the whole span.",
+   "source_url": "http://www.edu.city.kyoto.jp/hp/chosa/reiki_honbun/x898RG00000134.html",
+   "source_title": "京都市立小学校、中学校、小中学校及び幼稚園の管理運営に関する規則（昭和62年12月25日 教育委規則第5号）",
+   "accessed_on": "2026-11-28",
+   "needs_human_verify": true,
+   "verification_questions": [
+    "Confirm that no principal-set 夏季休業日 or 冬季休業日 and no 第3条第2項 extra holiday, 授業日 switch or 代日休業日 falls inside 2027-01-01..2028-01-07 for the schools that matter to the event."
+   ],
+   "note": "No school-holiday day is asserted for this store. The pinned registry has no JP:kyoto school authority, so no registry row exists. 京都市教育委員会規則第5号 第3条 fixes only the 学年始 break (4月1日-4月7日), the 学年末 breaks (幼稚園・小学校 3月25日-3月31日, 中学校 3月21日-3月31日) and the 幼稚園 summer (7月21日-8月31日) and winter (12月24日-翌年1月6日) intervals; the 小学校 and 中学校 summer and winter dates are printed only as windows with 「校長が定める日」 and 小中学校 is left to the principal. The Board publishes the term and long-break dates one school year at a time (the 令和8年度 notice is dated 2026-04-03) and no 令和9年度 (2027/28) page existed at 2026-11-28, so the annual notice for the event year is unpublished. The Board's 令和8年度 notice already prints 小学校 学年始休業日 令和8年4月1日-4月9日 and 中学校 学年末休業日 令和9年3月20日-3月31日, so its operative dates differ from the rule's printed windows and the annual notice governs. The rule-fixed intervals are recorded in the declared gap and not stored as calendar rows; no Osaka or Tokyo school row was substituted.",
+   "evidence": {
+    "observed_facts": "The rule page prints 第3条第1項 with a four-column table. 幼稚園: 学年始 4月1日-4月7日, 夏季 7月21日-8月31日, 冬季 12月24日-翌年1月6日, 学年末 3月25日-3月31日. 小学校: 学年始 4月1日-4月7日, 夏季 and 冬季 「…までの間で校長が定める日」, 学年末 3月25日-3月31日. 中学校: 学年始 4月1日-4月7日, 夏季 and 冬季 「…までの間で校長が定める日」, 学年末 3月21日-3月31日. 小中学校: every cell 「小学校又は中学校に準じて校長が定める日」. 第3条第2項 lets a principal set further holidays, 第4項 allows a 休業日 to be switched to a 授業日 and 第5項 a 代日休業日, each with Board notification. The Board's 令和8年度 notice (captures/school_kyoto_reiwa8_schedule.html, page 236396, 2026-04-03) shows the annual publication pattern and the 令和8年度 dates, which are a different school year and are not used.",
+    "note": "The page was fetched over http:// because the https:// endpoint on www.edu.city.kyoto.jp fails certificate validation on this host (curl exit 60, incomplete chain); curl -k returned the same 141,949 bytes. The page is the Reiki-Base consolidated text and its 附則 listing was not read beyond the 第3条 block."
+   }
+  }
+ ],
+ "holidays": [],
+ "note": "Kyoto scope added because the pinned registry carries no JP:kyoto authority. It carries no holiday row: the finding in coverage records why no Kyoto school day is asserted, and the rule-fixed intervals are reported in the store's declared gap."
+}

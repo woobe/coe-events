@@ -1,0 +1,27 @@
+authority	group	term	start	end	source	locator
+city-board	kindergarten	winter	2026-12-24	2027-01-06	fy8	§1 幼稚園 / 長期休業期間 / 冬季休業日：令和8年12月24日から令和9年1月6日まで
+city-board	kindergarten	year-end	2027-03-25	2027-03-31	fy8	§1 幼稚園 / 長期休業期間 / 学年末休業日：令和9年3月25日から令和9年3月31日まで
+city-board	elementary	winter	2026-12-25	2027-01-05	fy8	§2 小学校 / 長期休業期間 / 冬季休業日：令和8年12月25日から令和9年1月5日まで
+city-board	elementary	year-end	2027-03-25	2027-03-31	fy8	§2 小学校 / 長期休業期間 / 学年末休業日：令和9年3月25日から令和9年3月31日まで
+city-board	junior-high	winter	2026-12-25	2027-01-05	fy8	§3 中学校 / 冬季休業日：令和8年12月25日から令和9年1月5日まで（西京附属・洛風の表も同じ冬季日程）
+city-board	junior-high	year-end	2027-03-20	2027-03-31	fy8	§3 中学校 / 学年末休業日：令和9年3月20日から令和9年3月31日まで（2学期制の別表は学年末日程を明記せず）
+city-board	integrated	winter	2026-12-25	2027-01-05	fy8	§4 小中学校（義務教育学校）→ §3 中学校 / 冬季休業日：令和8年12月25日から令和9年1月5日まで
+city-board	integrated	year-end	2027-03-20	2027-03-31	fy8	§4 小中学校（義務教育学校）→ §3 中学校 / 学年末休業日：令和9年3月20日から令和9年3月31日まで
+city-board	kindergarten	year-start	2027-04-01	2027-04-07	city-rule	第3条第1項の表 / 幼稚園 / 学年始休業日：4月1日から4月7日まで
+city-board	elementary	year-start	2027-04-01	2027-04-07	city-rule	第3条第1項の表 / 小学校 / 学年始休業日：4月1日から4月7日まで（FY8 notice §2 dated 2026-04-01–09; not FY9）
+city-board	junior-high	year-start	2027-04-01	2027-04-07	city-rule	第3条第1項の表 / 中学校 / 学年始休業日：4月1日から4月7日まで
+city-board	kindergarten	summer	2027-07-21	2027-08-31	city-rule	第3条第1項の表 / 幼稚園 / 夏季休業日：7月21日から8月31日まで
+city-board	kindergarten	winter	2027-12-24	2028-01-06	city-rule	第3条第1項の表 / 幼稚園 / 冬季休業日：12月24日から翌年1月6日まで
+pref-board	prefectural-junior-high	winter	2026-12-25	2027-01-07	pref-rule	第7条第1項第5号、中学校：12月25日から1月7日まで
+pref-board	prefectural-other	winter	2026-12-21	2027-01-07	pref-rule	第7条第1項第5号：12月21日から1月7日まで（中学校を除く）
+pref-board	prefectural-junior-high	year-end	2027-03-25	2027-03-31	pref-rule	第7条第1項第6号、中学校：3月25日から3月31日まで
+pref-board	prefectural-other	year-end	2027-03-21	2027-03-31	pref-rule	第7条第1項第6号：3月21日から3月31日まで（中学校を除く）
+pref-board	prefectural-junior-high	year-start	2027-04-01	2027-04-06	pref-rule	第7条第1項第3号、中学校：4月1日から4月6日まで
+pref-board	prefectural-other	year-start	2027-04-01	2027-04-07	pref-rule	第7条第1項第3号：4月1日から4月7日まで（中学校を除く）
+pref-board	prefectural-all	summer	2027-07-21	2027-08-31	pref-rule	第7条第1項第4号：7月21日から8月31日まで
+pref-board	prefectural-junior-high	winter	2027-12-25	2028-01-07	pref-rule	第7条第1項第5号、中学校：12月25日から1月7日まで
+pref-board	prefectural-other	winter	2027-12-21	2028-01-07	pref-rule	第7条第1項第5号：12月21日から1月7日まで（中学校を除く）
+city-office	office-only	office	2027-01-02	2027-01-03	city-code	第1条第1項第3号「1月2日、同月3日及び12月29日から同月31日まで」：January dates
+city-office	office-only	office	2027-12-29	2027-12-31	city-code	第1条第1項第3号「1月2日、同月3日及び12月29日から同月31日まで」：December dates
+pref-office	office-only	office	2027-01-02	2027-01-03	pref-code	第1条第1項第3号「12月29日から翌年の1月3日までの日（前号に掲げる日を除く。）」：Jan 1 excluded under item (2)
+pref-office	office-only	office	2027-12-29	2027-12-31	pref-code	第1条第1項第3号「12月29日から翌年の1月3日までの日（前号に掲げる日を除く。）」：December dates
