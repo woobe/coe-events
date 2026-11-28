@@ -1,0 +1,82 @@
+[
+ {
+  "event_name": "Japan IT Week / Japan DX & AX Week【関西】2027（第12回）",
+  "city_slug": "osaka-jp",
+  "start_date": "2027-11-17",
+  "end_date": "2027-11-19",
+  "kind": "major_other",
+  "relevance": "other",
+  "conflict_severity": "none",
+  "source_url": "https://www.japan-it.jp/hub/ja-jp.html",
+  "source_title": "【公式】Japan IT Week, Japan DX & AX Week 事務局サイト — 今後の開催スケジュール（fetched 2026-11-28）",
+  "accessed_on": "2026-11-28",
+  "needs_human_verify": true,
+  "verification_questions": [
+   "Confirm the 2027 Kansai edition dates and halls once the exhibitor manual is published, and check whether any community side events are planned around it."
+  ],
+  "evidence": {
+   "observed_facts": "The organiser hub page (japan-it.jp/hub/ja-jp.html, fetched 2026-11-28) prints the future schedule as 2027/4/7(水)～9(金), 2027/7/21(水)～23(金), 2027/9/8(水)～10(金) and 【関西展 (11月)】2027/11/17(水)～19(金) with インテックス大阪 named as the Kansai venue. The page describes the show as 日本最大のIT・DX総合展, held four times a year in Tokyo, Osaka and Nagoya. Intex Osaka sits on the Nanko waterfront in Suminoe-ku and is served by Osaka Metro Chuo line Cosmosquare and the Nanko Port Town line, so a three-day trade show concentrates transport and hotel demand on the bay area and adds congestion on the Nanko route.",
+   "inference": "This is a logistics flag rather than a topic recommendation: a multi-hall IT trade show at Intex Osaka in mid-November raises bay-area transport, hotel and taxi demand for a same-city event that week, and could also make the Osaka AI/IT audience busy with the show itself."
+  }
+ },
+ {
+  "event_name": "大阪マラソン2027（第15回）",
+  "city_slug": "osaka-jp",
+  "start_date": "2027-02-28",
+  "end_date": null,
+  "kind": "major_other",
+  "relevance": "other",
+  "conflict_severity": "none",
+  "source_url": "https://www.osaka-marathon.com/2027/info/gist/",
+  "source_title": "大阪マラソン2027大会要項（fetched 2026-11-28）",
+  "accessed_on": "2026-11-28",
+  "needs_human_verify": true,
+  "verification_questions": [
+   "Confirm the published road-closure map for 2027-02-28 and whether Nakanoshima and Honmachi venues remain reachable for the race window."
+  ],
+  "evidence": {
+   "observed_facts": "The official race outline (osaka-marathon.com/2027/info/gist/, fetched 2026-11-28) gives the date as 2027年（令和9年）2月28日（日）, a 7-hour race window 9:15開始、16:15終了, 31,970 entrants in the marathon, and a course that starts at 大阪府庁前 and finishes in 大阪城公園, passing 御堂筋 and 道頓堀. The page asks participants to use public transport and describes wave starts and road use across the city centre.",
+   "inference": "City-centre road closures, traffic restrictions and crowding along the Midosuji/Dotonbori corridor on race day make this a logistics flag for any event that weekend, especially for a venue in Nakanoshima, Honmachi or Namba."
+  }
+ },
+ {
+  "event_name": "大阪マラソンEXPO 2027（インテックス大阪 6号館）",
+  "city_slug": "osaka-jp",
+  "start_date": "2027-02-26",
+  "end_date": "2027-02-27",
+  "kind": "major_other",
+  "relevance": "other",
+  "conflict_severity": "none",
+  "source_url": "https://www.osaka-marathon.com/2027/info/gist/",
+  "source_title": "大阪マラソン2027大会要項 — 大阪マラソンEXPO2027 展示エリア（fetched 2026-11-28）",
+  "accessed_on": "2026-11-28",
+  "needs_human_verify": true,
+  "verification_questions": [
+   "Confirm the 2027 EXPO hall allocation and opening hours, and whether any public AI/tech programming runs alongside it."
+  ],
+  "evidence": {
+   "observed_facts": "The race outline (osaka-marathon.com/2027/info/gist/, fetched 2026-11-28) states that 大阪マラソンEXPO2027 occupies インテックス大阪 6号館, with runner reception on 2月26日（金）11:00〜19:00 and 2月27日（土）10:00〜18:00 and a 展示エリア open 2月26日（金）11:00〜19:30 (最終入場19:00). It covers roughly 32,000 marathon entrants plus volunteers and families over two days on the Nanko waterfront.",
+   "inference": "A two-day expo at Intex Osaka ahead of the race concentrates transport and hotel demand in the bay area on the Friday and Saturday before race day, which is a logistics consideration for a same-weekend Osaka event."
+  }
+ },
+ {
+  "event_name": "AI-ESS-16 — AI-ESS 2027 Osaka Forum on AI-Driven Education and Social Symbiosis",
+  "city_slug": "osaka-jp",
+  "start_date": "2027-09-13",
+  "end_date": "2027-09-17",
+  "kind": "related",
+  "relevance": "ai",
+  "conflict_severity": "low",
+  "source_url": "https://www.aaseconference.org/2027-events/ai-ess-16-september-13-17-2027-osaka-japan",
+  "source_title": "AI-ESS-16 Osaka 2027 | AI, Education & Social Science Conference（fetched 2026-11-28）",
+  "accessed_on": "2026-11-28",
+  "needs_human_verify": true,
+  "verification_questions": [
+   "Confirm the venue (the page prints only Osaka, Japan) and whether any practitioner or industry track is open to the public."
+  ],
+  "evidence": {
+   "observed_facts": "The organiser page (aaseconference.org, fetched 2026-11-28) prints 「AI-ESS-16 | September 13–17, 2027 | Osaka, Japan」 with the session detail Date:09/13/2027 09:00 AM - 09/17/2027 05:00 PM, Location Osaka, Japan, submission deadline 2027-07-12, early bird 2027-06-21 and registration deadline 2027-08-13, and describes an in-person forum on AI-driven education and social symbiosis.",
+   "inference": "An academic AI conference in Osaka for a working week in September: same broad AI topic but a research/education audience rather than builders, so relevance is recorded as low and the value is awareness of an overlapping AI audience and hotel demand."
+  }
+ }
+]

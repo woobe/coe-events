@@ -1,0 +1,186 @@
+{
+  "city_slug": "osaka-jp",
+  "counts": {
+    "communities": 13,
+    "coverage_rows": 71,
+    "declared_gaps": 9,
+    "event_shells": 2,
+    "events": 4,
+    "holiday_rows": 375,
+    "photos": 20,
+    "sources": 39,
+    "venues": 16
+  },
+  "inputs": [
+    {
+      "name": "calendar_conflicts.json",
+      "path": "research/osaka/2027/calendar_conflicts.json",
+      "sha256": "9190fc5864b4d421ad306988422b2c8a4cdc769adc327b462e53154cc60b0095"
+    },
+    {
+      "name": "city_input.json",
+      "path": "research/osaka/2027/city_input.json",
+      "sha256": "6560cbf3a019facae77580c7c5a7f7b91fc40e1db5d58b02e31ae57b56e9159a"
+    },
+    {
+      "name": "communities.raw.json",
+      "path": "research/osaka/2027/communities.raw.json",
+      "sha256": "09d88e6eb1cfa7f76ab1652d16c517f4c537159d26b3747805f92a89b602ef1c"
+    },
+    {
+      "name": "venues.raw.json",
+      "path": "research/osaka/2027/venues.raw.json",
+      "sha256": "456060e937a24edc5ac75089525a2c0b6fad39988fd5311413da3db18f16ccf2"
+    },
+    {
+      "name": "venues.shortlist.json",
+      "path": "research/osaka/2027/venues.shortlist.json",
+      "sha256": "10099287fbc68da40fed4a0834cc512edb925b51a6fb5d1114ea7095796526fe"
+    }
+  ],
+  "mandatory_sources": [
+    {
+      "check_status": "not_checked",
+      "checked_on": null,
+      "url": "https://miragather.com/"
+    },
+    {
+      "check_status": "not_checked",
+      "checked_on": null,
+      "url": "https://miragather.com/?tab=side"
+    },
+    {
+      "check_status": "not_checked",
+      "checked_on": null,
+      "url": "https://miragather.com/ai"
+    },
+    {
+      "check_status": "not_checked",
+      "checked_on": null,
+      "url": "https://aitinkerers.org/all_cities"
+    },
+    {
+      "check_status": "not_checked",
+      "checked_on": null,
+      "url": "https://luma.com/decentralized_ai_events?period=past"
+    }
+  ],
+  "notes": [
+    "Built from the approved research bundle research/osaka/2027 (16 shortlist_ready venues, 13 communities, 4 calendar rows).",
+    "Registry: installed Asia edition 3b20667de940342954040f06d6695d490d8e27515d536969d127a0fa92bacdaf, host scope JP:osaka, no supplement.",
+    "Paired brief: 50 people, 09:00 start, 8-hour floor (09:00-17:00), 12-hour preferred (09:00-21:00), soft USD 5,000, calendar year 2027, no recommended date.",
+    "Photos: operator gallery first; 12 verified operator images across 8 venues and 8 explicit withheld records; no Wikimedia image was used because no Commons file on a captured page depicts one of these hired rooms."
+  ],
+  "photos": {
+    "dispositions": [
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "osaka-e0952e5d9e82"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "osaka-964ade14d89d"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 2,
+        "venue_id": "osaka-ba77fd9ec407"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 2,
+        "venue_id": "osaka-ff27583d3879"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "osaka-bc0628e5e009"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "osaka-e0613083094d"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "osaka-399499946238"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 2,
+        "venue_id": "osaka-519f64cdb8c2"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "osaka-1d0e3f5fe31c"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "osaka-05ec816c4abf"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 2,
+        "venue_id": "osaka-cb8986106765"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "osaka-3b24248666c3"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "osaka-5915c626e753"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "osaka-b9871d465213"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "osaka-9428322bff86"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "osaka-6ae4db211836"
+      }
+    ],
+    "note": "Only the reviewed photo records are carried.",
+    "records": 20
+  },
+  "registry": {
+    "edition_copy": "references/editions/school_holidays-3b20667d.json",
+    "host_jurisdiction_id": "JP:osaka",
+    "path": "/home/joe/.hermes/skills/plan-event/references/school_holidays.json",
+    "sha256": "3b20667de940342954040f06d6695d490d8e27515d536969d127a0fa92bacdaf",
+    "supplement": false
+  },
+  "reviewed_inputs": {
+    "local_requirements_supplied": true,
+    "path": "/home/joe/repo_dev/coe-events/research/osaka/2027/reviewed-inputs.json",
+    "sha256": "1f04c3e3fda0acdd722b78b56d259eecc03bec3e008158ac8430cb02f8788c02"
+  },
+  "run_id": "run-osaka-2027-bootstrap-1",
+  "schema_version": "city-conversion-report/1",
+  "shared_url_event_shells": [
+    "osaka-ev-bb7523eba428",
+    "osaka-ev-bb906a0dadd5"
+  ],
+  "updated_at": "2026-11-28T08:45:00Z",
+  "warnings": [
+    "mandatory source https://miragather.com/ has no reviewed outcome",
+    "mandatory source https://miragather.com/?tab=side has no reviewed outcome",
+    "mandatory source https://miragather.com/ai has no reviewed outcome",
+    "mandatory source https://aitinkerers.org/all_cities has no reviewed outcome",
+    "mandatory source https://luma.com/decentralized_ai_events?period=past has no reviewed outcome"
+  ]
+}

@@ -1,0 +1,856 @@
+{
+  "city_slug": "osaka-jp",
+  "declared_gaps": [
+    {
+      "kind": "holiday_coverage",
+      "text": "School-holiday coverage for Osaka is the four JP:osaka rows of pinned registry edition 3b20667d — 冬季休業日 2026/27, 春季休業日 2027, 夏季休業日 2027 and 冬季休業日 2027/28, all rule-derived from 大阪市立学校管理規則 第2条の2第1項. No other Osaka school date — principal variations under 第2条の2第2項, board-designated days under 第1項第4号, entrance-exam or make-up days — was verified, so the calendar is the rule default and not a full school-year map.",
+      "verified_at": "2026-11-28"
+    },
+    {
+      "kind": "cost",
+      "text": "大阪カンファレンスセンター — 中会議室 銀杏 has no USD figure: the operator publishes the fee only as a PDF that could not be text-extracted on 2026-11-28, so the cost is unknown rather than zero.",
+      "verified_at": "2026-11-28"
+    },
+    {
+      "kind": "evidence",
+      "text": "Each of the 16 room records rests on a single operator or city page for its capacity, rate, hours and equipment; no second independent source was found for any room, and the record dates say so.",
+      "verified_at": "2026-11-28"
+    },
+    {
+      "kind": "photos",
+      "text": "8 of the 16 rooms carry no room photograph: 大阪産業創造館 会議室E, エル・おおさか 9012 and 708, the three 市民学習センター halls, 大阪商工会議所 2号会議室 and 大阪市立中央会館 ホール. The captured operator pages print tables or floor maps, not pictures of the hired room, so a withheld record with that reason is stored instead of an exterior, a look-alike or a stock image.",
+      "verified_at": "2026-11-28"
+    },
+    {
+      "kind": "licence",
+      "text": "The three local-requirement claims record the city-level rules for language, alcohol and food. They do not say which licence a given venue holds or whether a 50-person private event is covered by it: alcohol service and external catering stay unknown on every room.",
+      "verified_at": "2026-11-28"
+    },
+    {
+      "kind": "access",
+      "text": "All 16 rooms publish an all-day (終日) band, but the merged store carries the window state the approved research bundle assigned to each row (allows_to_6); no room publishes a covered 09:00-21:00 hire interval, so the 12-hour preferred programme is confirmed nowhere and the 8-hour floor is the only window the evidence supports.",
+      "verified_at": "2026-11-28"
+    },
+    {
+      "kind": "events",
+      "text": "Four 2027 calendar rows, each organiser-confirmed: Japan IT Week 関西 (2027-11-17..19), 大阪マラソン2027 (2027-02-28) and 大阪マラソンEXPO 2027 (2027-02-26..27) sharing one occurrence page, and AI-ESS-16 (2027-09-13..17). No date is recommended and none of the four is booked.",
+      "verified_at": "2026-11-28"
+    },
+    {
+      "kind": "sources",
+      "text": "The five programme-wide mandatory discovery sources (Miragather x3, AI Tinkerers, the DeAI Luma feed) carry no check date in this store: the Osaka research bundle did not record them, and the page prints that fact rather than an assumed read.",
+      "verified_at": "2026-11-28"
+    },
+    {
+      "kind": "coordinates",
+      "text": "All 16 records are building tier: the point is the building that houses the room, taken from the saved Nominatim response, and no room entrance was verified. エル・おおさか prints no street address on its access page, so its two records name the building only.",
+      "verified_at": "2026-11-28"
+    }
+  ],
+  "event_context": {
+    "attendance": 50,
+    "duration_hours": 8,
+    "preferred_duration_hours": 12,
+    "soft_budget_usd": 5000.0,
+    "start_local": "09:00"
+  },
+  "holiday_registry": {
+    "host_jurisdiction_id": "JP:osaka"
+  },
+  "local_requirements": {
+    "alcohol": {
+      "additional_sources": [
+        {
+          "capture": "captures/claim_alcohol_nta_sake_menkyo.html",
+          "source_title": "国税庁 E1-3 酒類の販売業免許の申請",
+          "source_url": "https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/sake/annai/23600071.htm"
+        }
+      ],
+      "language": "ja",
+      "quote": "Q3　自己が経営する酒場、料理店等で酒類を提供したいと考えていますが、酒類の販売業免許は必要ですか。 … A　酒場、料理店その他酒類を専ら自己の営業場で飲用に供する業を行う場合には、販売業免許は必要ありませんが、例えばテイクアウト用など、その営業場以外の場所で飲用に供されるための酒類を販売する場合には、酒税法に基づき、販売場ごとにその販売場の所在地の所轄税務署長から販売業免許を受ける必要があります。 … 酒類の販売業を行う前（期限付免許の申請については、２週間前まで） … 期限付酒類小売業免許 … ※　酒類の販売業免許を受けようとする方が博覧会場、即売会場その他これらに類する場所で臨時に販売場を設けて酒類の販売業をしようとする場合はこちらをご確認ください。",
+      "source_locator": "captures/claim_alcohol_nta_qa03.html — 「【販売業免許関係】」 Q3 question with its answer and 根拠法令等 酒税法第9条、第46条; captures/claim_alcohol_nta_sake_menkyo.html — E1-3「酒類の販売業免許の申請」, the ［提出時期］ paragraph and 添付書類 item 4「期限付酒類小売業免許」. Both pages are Shift_JIS; the quoted passages were read from the saved bytes after CP932 decoding, so no line numbers are asserted.",
+      "source_title": "国税庁 お酒に関するQ&A（よくある質問）【販売業免許関係】Q3 および E1-3 酒類の販売業免許の申請",
+      "source_url": "https://www.nta.go.jp/taxes/sake/qa/03b/03.htm",
+      "value": {
+        "authority": "国税庁（免許の所轄庁は販売場の所在地の所轄税務署長。大阪市内の販売場は所轄税務署）",
+        "hired_room_scope": "a hired public-hall room is not the organiser's own 営業場, so the Q3 exemption does not establish a no-licence answer for pouring or selling beer in it",
+        "legal_basis": "酒税法第9条、第46条; 期限付酒類小売業免許 per 国税庁 E1-3",
+        "quoted_rule_scope": "Q3 answers only for a 酒場・料理店 etc. that serves alcohol 専ら自己の営業場: serving it there for drinking on those premises needs no 酒類販売業免許",
+        "selling_needs_licence": "selling alcohol at the event — a cash or ticket bar included — is a 酒類の販売 and needs a 販売業免許 from the 所轄税務署長, one per 販売場; a sale for drinking away from the premises needs it too",
+        "temporary_counter_route": "a temporary 販売場 set up at an 博覧会場・即売会場その他これらに類する場所 falls under the 期限付酒類小売業免許 route, applied for at least two weeks before the sale starts",
+        "who_must_hold_it": "not established by these pages: whether the venue, the caterer or the organiser holds the 販売業免許 for a 50-person private event stays the venue-level question carried as a declared gap on every room"
+      },
+      "verified_at": "2026-11-28"
+    },
+    "food": {
+      "language": "ja",
+      "quote": "新しく食堂、レストラン、カフェ等の飲食店を始めたり、食品を製造、加工販売するには、食品衛生法に基づく許可が必要ですので、施設所在地を担当する生活衛生監視事務所に申請書類を持参し、許可申請手続をしてください。 … ※その他の食品関係の営業許可(露店、自動車による営業についても営業許可が必要となる場合もあります。)についても生活衛生監視事務所の窓口でご相談ください。 … ・オープン予定日の2～3週間前に手続をしてください。 … ・食品衛生責任者の資格を証する書類(調理師免許証等)",
+      "source_locator": "captures/claim_food_osaka_kyoka.html — lead paragraph (line 57), 露店 note (line 63), 申請手続 steps (lines 89 and 98); page dated 2026-11-02, page no. 537192",
+      "source_title": "大阪市：飲食店等の食品衛生法に基づく営業許可（健康局 生活衛生部 生活衛生課）",
+      "source_url": "https://www.city.osaka.lg.jp/kenko/page/0000537192.html",
+      "value": {
+        "applies_when": "opening a 食堂・レストラン・カフェ等の飲食店, or preparing, processing or selling food at a fixed facility; 露店 (street stalls) and vehicle sales may also need a licence",
+        "authority": "大阪市保健所 生活衛生監視事務所（施設所在地を管轄する窓口）",
+        "event_implication": "an event that serves food must run under a 飲食店営業許可 granted by 大阪市保健所 — held by its caterer or by the event — for the place where the food is prepared and served",
+        "lead_time": "apply two to three weeks before the planned opening date",
+        "licence": "食品衛生法に基づく営業許可 — 飲食店営業",
+        "supervisor": "the application carries the 食品衛生責任者 qualification document (e.g. 調理師免許証)"
+      },
+      "verified_at": "2026-11-28"
+    },
+    "language": {
+      "language": "ja",
+      "quote": "外国人住民は、約16人に一人の身近な存在 大阪市は、およそ16人に一人が外国人住民で、政令指定都市の中で最も多く17万人を超えています。 … 「やさしい日本語」で伝えるポイント 次のポイントを意識して、相手に伝わっているか確認しながら、ゆっくり話しましょう。 全体的にゆっくり話し、言葉ははっきり発音する。 一文を短く、区切って話す。 難しい言葉は、簡単な言葉に言い換える。 外来語（カタカナ語）はできるだけ使わない。 曖昧な表現はせずに、具体的に伝える。 方言はできるだけ使わない。",
+      "source_locator": "captures/claim_language_osaka_yasashii.html — block 「外国人住民は、約16人に一人の身近な存在」 (page lines 70-71) plus 「やさしい日本語」で伝えるポイント (lines 75-82); page dated 2026-10-14, page no. 510655",
+      "source_title": "大阪市：「やさしい日本語」で話してみませんか？（市民局 ダイバーシティ推進室 人権企画課）",
+      "source_url": "https://www.city.osaka.lg.jp/shimin/page/0000510655.html",
+      "value": {
+        "access_implication": "Japanese-only event copy and signage will not reach roughly six per cent of city residents; the city's own accommodation is plain Japanese, not an assumption that English covers it",
+        "authority": "大阪市 市民局 ダイバーシティ推進室 人権企画課",
+        "city_guidance": "the city asks people to use やさしい日本語: slow speech, one short sentence at a time, simple words, avoid katakana loanwords and dialect, be specific",
+        "resident_profile": "about 1 in 16 Osaka residents is a foreign national (more than 170,000, the most among Japan's designated cities)"
+      },
+      "verified_at": "2026-11-28"
+    }
+  },
+  "notes": [
+    "Built from the approved research bundle research/osaka/2027 (16 shortlist_ready venues, 13 communities, 4 calendar rows).",
+    "Registry: installed Asia edition 3b20667de940342954040f06d6695d490d8e27515d536969d127a0fa92bacdaf, host scope JP:osaka, no supplement.",
+    "Paired brief: 50 people, 09:00 start, 8-hour floor (09:00-17:00), 12-hour preferred (09:00-21:00), soft USD 5,000, calendar year 2027, no recommended date.",
+    "Photos: operator gallery first; 12 verified operator images across 8 venues and 8 explicit withheld records; no Wikimedia image was used because no Commons file on a captured page depicts one of these hired rooms."
+  ],
+  "photos": {
+    "エル・おおさか（大阪府立労働センター）— 本館7階 708会議室（定員117名）": [
+      {
+        "alt": "No photograph of this room on a captured operator page",
+        "alt_basis": "none",
+        "checked_on": "2026-11-28",
+        "hotlink_ok": null,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "placement_proof": "Withheld: the operator room table prints capacity, area and rate only; its access page is a map, and no photograph of 708 was on a captured page on 2026-11-28.",
+        "player_page": null,
+        "rights": null,
+        "rights_basis": "none",
+        "rights_note": "Nothing is shown rather than an exterior, a look-alike or a stock image.",
+        "room": "none",
+        "room_specific": false,
+        "source_page": "https://www.l-osaka.or.jp/meetingroom/",
+        "url": null,
+        "verified": null,
+        "view_kind": null,
+        "withheld": true
+      }
+    ],
+    "エル・おおさか（大阪府立労働センター）— 本館9階 9012会議室（定員60名）": [
+      {
+        "alt": "No photograph of this room on a captured operator page",
+        "alt_basis": "none",
+        "checked_on": "2026-11-28",
+        "hotlink_ok": null,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "placement_proof": "Withheld: the operator room table prints capacity, area and rate only; its access page is a map, and no photograph of 9012 was on a captured page on 2026-11-28.",
+        "player_page": null,
+        "rights": null,
+        "rights_basis": "none",
+        "rights_note": "Nothing is shown rather than an exterior, a look-alike or a stock image.",
+        "room": "none",
+        "room_specific": false,
+        "source_page": "https://www.l-osaka.or.jp/meetingroom/",
+        "url": null,
+        "verified": null,
+        "view_kind": null,
+        "withheld": true
+      }
+    ],
+    "マイドームおおさか — 第1・第2会議室（連結, 8F）": [
+      {
+        "alt": "8F 第1・第2会議室, school layout for 100",
+        "alt_basis": "operator_page_caption",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 660,
+          "width": 1000
+        },
+        "hotlink_ok": true,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+        "room": "第1・第2会議室 (8F)",
+        "room_specific": true,
+        "source_page": "https://www.mydome.jp/organizer/conference/01-02room",
+        "url": "https://www.mydome.jp/mdosaka/wp-content/uploads/2024/09/1__T0A0016_0102.webp",
+        "verified": {
+          "bytes": 81270,
+          "checked_on": "2026-11-28",
+          "content_type": "image/webp",
+          "status": "200"
+        },
+        "view_kind": "interior",
+        "withheld": false
+      },
+      {
+        "alt": "8F 第1・第2会議室, theatre layout for 160",
+        "alt_basis": "operator_page_caption",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 660,
+          "width": 1000
+        },
+        "hotlink_ok": true,
+        "index": 1,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+        "room": "第1・第2会議室 (8F)",
+        "room_specific": true,
+        "source_page": "https://www.mydome.jp/organizer/conference/01-02room",
+        "url": "https://www.mydome.jp/mdosaka/wp-content/uploads/2024/09/3_112A7180.webp",
+        "verified": {
+          "bytes": 102812,
+          "checked_on": "2026-11-28",
+          "content_type": "image/webp",
+          "status": "200"
+        },
+        "view_kind": "interior",
+        "withheld": false
+      }
+    ],
+    "マイドームおおさか — 第3会議室（8F）": [
+      {
+        "alt": "8F 第3会議室, school layout for 60",
+        "alt_basis": "operator_page_caption",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 660,
+          "width": 1000
+        },
+        "hotlink_ok": true,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+        "room": "第3会議室 (8F)",
+        "room_specific": true,
+        "source_page": "https://www.mydome.jp/organizer/conference/03room/",
+        "url": "https://www.mydome.jp/mdosaka/wp-content/uploads/2024/09/1__T0A0050_03.webp",
+        "verified": {
+          "bytes": 65412,
+          "checked_on": "2026-11-28",
+          "content_type": "image/webp",
+          "status": "200"
+        },
+        "view_kind": "interior",
+        "withheld": false
+      },
+      {
+        "alt": "8F 第3会議室, theatre layout for 100",
+        "alt_basis": "operator_page_caption",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 660,
+          "width": 1000
+        },
+        "hotlink_ok": true,
+        "index": 1,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+        "room": "第3会議室 (8F)",
+        "room_specific": true,
+        "source_page": "https://www.mydome.jp/organizer/conference/03room/",
+        "url": "https://www.mydome.jp/mdosaka/wp-content/uploads/2024/09/5_112A7221.webp",
+        "verified": {
+          "bytes": 69544,
+          "checked_on": "2026-11-28",
+          "content_type": "image/webp",
+          "status": "200"
+        },
+        "view_kind": "interior",
+        "withheld": false
+      }
+    ],
+    "大阪カンファレンスセンター — 中会議室 銀杏（3F, 定員90名）": [
+      {
+        "alt": "中会議室 銀杏 (3F)",
+        "alt_basis": "operator_page_caption",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 215,
+          "width": 321
+        },
+        "hotlink_ok": true,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+        "room": "中会議室 銀杏 (3F)",
+        "room_specific": true,
+        "source_page": "https://www.ih-osaka.jp/facilities/icyo.html",
+        "url": "https://www.ih-osaka.jp/facilities/img/pht_icho-.jpg",
+        "verified": {
+          "bytes": 30107,
+          "checked_on": "2026-11-28",
+          "content_type": "image/jpeg",
+          "status": "200"
+        },
+        "view_kind": "interior",
+        "withheld": false
+      }
+    ],
+    "大阪商工会議所 — B1F 2号会議室（定員50名）": [
+      {
+        "alt": "No photograph of this room on a captured operator page",
+        "alt_basis": "none",
+        "checked_on": "2026-11-28",
+        "hotlink_ok": null,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "placement_proof": "Withheld: the captured price page prints the rate table only, the room page answered 404 (captures/blocked/failed_cci_room2.html), and no photograph of 2号会議室 was read on 2026-11-28.",
+        "player_page": null,
+        "rights": null,
+        "rights_basis": "none",
+        "rights_note": "Nothing is shown rather than an exterior, a look-alike or a stock image.",
+        "room": "none",
+        "room_specific": false,
+        "source_page": "https://www.osaka.cci.or.jp/kaijou/price/",
+        "url": null,
+        "verified": null,
+        "view_kind": null,
+        "withheld": true
+      }
+    ],
+    "大阪市中央公会堂 — 中集会室（3F, 定員500名）": [
+      {
+        "alt": "中集会室 (3F)",
+        "alt_basis": "operator_page_caption",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 602,
+          "width": 1484
+        },
+        "hotlink_ok": true,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+        "room": "中集会室 (3F)",
+        "room_specific": true,
+        "source_page": "https://osaka-chuokokaido.com/ja/facilities/middle-meeting-room",
+        "url": "https://osaka-chuokokaido.com/facilities/middle-meeting-room/middle_meeting_room_introduction.webp",
+        "verified": {
+          "bytes": 194974,
+          "checked_on": "2026-11-28",
+          "content_type": "image/webp",
+          "status": "200"
+        },
+        "view_kind": "interior",
+        "withheld": false
+      }
+    ],
+    "大阪市中央公会堂 — 小集会室（3F, 定員150名）": [
+      {
+        "alt": "小集会室 (3F)",
+        "alt_basis": "operator_page_caption",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 602,
+          "width": 1484
+        },
+        "hotlink_ok": true,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+        "room": "小集会室 (3F)",
+        "room_specific": true,
+        "source_page": "https://osaka-chuokokaido.com/ja/facilities/small-meeting-room",
+        "url": "https://osaka-chuokokaido.com/facilities/small-meeting-room/small_meeting_room_introduction.webp",
+        "verified": {
+          "bytes": 196558,
+          "checked_on": "2026-11-28",
+          "content_type": "image/webp",
+          "status": "200"
+        },
+        "view_kind": "interior",
+        "withheld": false
+      },
+      {
+        "alt": "小集会室 (3F), seminar layout",
+        "alt_basis": "operator_page_caption",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 420,
+          "width": 600
+        },
+        "hotlink_ok": true,
+        "index": 1,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+        "room": "小集会室 (3F)",
+        "room_specific": true,
+        "source_page": "https://osaka-chuokokaido.com/ja/facilities/small-meeting-room",
+        "url": "https://osaka-chuokokaido.com/facilities/small-meeting-room/small_meeting_room_seminar.webp",
+        "verified": {
+          "bytes": 75556,
+          "checked_on": "2026-11-28",
+          "content_type": "image/webp",
+          "status": "200"
+        },
+        "view_kind": "interior",
+        "withheld": false
+      }
+    ],
+    "大阪市立中央会館 — ホール（定員250名）": [
+      {
+        "alt": "No photograph of this room on a captured operator page",
+        "alt_basis": "none",
+        "checked_on": "2026-11-28",
+        "hotlink_ok": null,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "placement_proof": "Withheld: the captured floor page carries 1F and 2F maps only; no photograph of the ホール was on a captured page on 2026-11-28.",
+        "player_page": null,
+        "rights": null,
+        "rights_basis": "none",
+        "rights_note": "Nothing is shown rather than an exterior, a look-alike or a stock image.",
+        "room": "none",
+        "room_specific": false,
+        "source_page": "https://www.osakacommunity.jp/chuo-kaikan/floor/",
+        "url": null,
+        "verified": null,
+        "view_kind": null,
+        "withheld": true
+      }
+    ],
+    "大阪市立総合生涯学習センター — 第1研修室（5F, 定員112名）": [
+      {
+        "alt": "No photograph of this room on a captured operator page",
+        "alt_basis": "none",
+        "checked_on": "2026-11-28",
+        "hotlink_ok": null,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "placement_proof": "Withheld: the centre page prints the room table and access maps; no photograph of 第1研修室 was on the captured page (2026-11-28).",
+        "player_page": null,
+        "rights": null,
+        "rights_basis": "none",
+        "rights_note": "Nothing is shown rather than an exterior, a look-alike or a stock image.",
+        "room": "none",
+        "room_specific": false,
+        "source_page": "https://osakademanabu.com/venues/umeda",
+        "url": null,
+        "verified": null,
+        "view_kind": null,
+        "withheld": true
+      }
+    ],
+    "大阪産業創造館 — 4F イベントホール（定員320名／スクール180名）": [
+      {
+        "alt": "4F イベントホール",
+        "alt_basis": "operator_page_caption",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 334,
+          "width": 407
+        },
+        "hotlink_ok": true,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+        "room": "4F イベントホール",
+        "room_specific": true,
+        "source_page": "https://shisetsu.sansokan.jp/rent/rent_e.html",
+        "url": "https://shisetsu.sansokan.jp/rent/img/e_main.jpg",
+        "verified": {
+          "bytes": 48439,
+          "checked_on": "2026-11-28",
+          "content_type": "image/jpeg",
+          "status": "200"
+        },
+        "view_kind": "interior",
+        "withheld": false
+      },
+      {
+        "alt": "4F イベントホール, projector and screen",
+        "alt_basis": "operator_page_caption",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 224,
+          "width": 455
+        },
+        "hotlink_ok": true,
+        "index": 1,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+        "room": "4F イベントホール",
+        "room_specific": true,
+        "source_page": "https://shisetsu.sansokan.jp/rent/rent_e.html",
+        "url": "https://shisetsu.sansokan.jp/rent/img/e_img2.jpg",
+        "verified": {
+          "bytes": 34492,
+          "checked_on": "2026-11-28",
+          "content_type": "image/jpeg",
+          "status": "200"
+        },
+        "view_kind": "interior",
+        "withheld": false
+      }
+    ],
+    "大阪産業創造館 — 6F 会議室E（定員114名）": [
+      {
+        "alt": "No photograph of this room on a captured operator page",
+        "alt_basis": "none",
+        "checked_on": "2026-11-28",
+        "hotlink_ok": null,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "placement_proof": "Withheld: the captured operator page for 会議室E is the fee table, which prints no photograph; no room page for 会議室E was captured on 2026-11-28.",
+        "player_page": null,
+        "rights": null,
+        "rights_basis": "none",
+        "rights_note": "Nothing is shown rather than an exterior, a look-alike or a stock image.",
+        "room": "none",
+        "room_specific": false,
+        "source_page": "https://shisetsu.sansokan.jp/rent/shi_list.html",
+        "url": null,
+        "verified": null,
+        "view_kind": null,
+        "withheld": true
+      }
+    ],
+    "港区民センター — ホール（6F, 定員400名）": [
+      {
+        "alt": "6F floor map: ホール",
+        "alt_basis": "operator_page_caption",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 622,
+          "width": 1007
+        },
+        "hotlink_ok": true,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+        "room": "ホール (6F)",
+        "room_specific": false,
+        "source_page": "https://www.osakacommunity.jp/minato-center/floor/",
+        "url": "https://www.osakacommunity.jp/minato-center/wp-content/uploads/sites/13/2024/03/フロアマップ6.png",
+        "verified": {
+          "bytes": 55915,
+          "checked_on": "2026-11-28",
+          "content_type": "image/png",
+          "status": "200"
+        },
+        "view_kind": "floor_plan",
+        "withheld": false
+      }
+    ],
+    "港区民センター — 第1集会室（3F, 定員114名）": [
+      {
+        "alt": "3F floor map: 第1集会室",
+        "alt_basis": "operator_page_caption",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 622,
+          "width": 1007
+        },
+        "hotlink_ok": true,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+        "room": "第1集会室 (3F)",
+        "room_specific": false,
+        "source_page": "https://www.osakacommunity.jp/minato-center/floor/",
+        "url": "https://www.osakacommunity.jp/minato-center/wp-content/uploads/sites/13/2024/03/フロアマップ3.png",
+        "verified": {
+          "bytes": 31531,
+          "checked_on": "2026-11-28",
+          "content_type": "image/png",
+          "status": "200"
+        },
+        "view_kind": "floor_plan",
+        "withheld": false
+      }
+    ],
+    "阿倍野市民学習センター — 講堂（定員150名）": [
+      {
+        "alt": "No photograph of this room on a captured operator page",
+        "alt_basis": "none",
+        "checked_on": "2026-11-28",
+        "hotlink_ok": null,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "placement_proof": "Withheld: the centre page prints the room table and a location map; it carries no photograph of the 講堂 on the captured page (2026-11-28).",
+        "player_page": null,
+        "rights": null,
+        "rights_basis": "none",
+        "rights_note": "Nothing is shown rather than an exterior, a look-alike or a stock image.",
+        "room": "none",
+        "room_specific": false,
+        "source_page": "https://osakademanabu.com/venues/abeno",
+        "url": null,
+        "verified": null,
+        "view_kind": null,
+        "withheld": true
+      }
+    ],
+    "難波市民学習センター — 講堂（4F, 定員120名）": [
+      {
+        "alt": "No photograph of this room on a captured operator page",
+        "alt_basis": "none",
+        "checked_on": "2026-11-28",
+        "hotlink_ok": null,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "placement_proof": "Withheld: the centre page prints the room table and a location map; no photograph of the 講堂 was on the captured page (2026-11-28).",
+        "player_page": null,
+        "rights": null,
+        "rights_basis": "none",
+        "rights_note": "Nothing is shown rather than an exterior, a look-alike or a stock image.",
+        "room": "none",
+        "room_specific": false,
+        "source_page": "https://osakademanabu.com/venues/namba",
+        "url": null,
+        "verified": null,
+        "view_kind": null,
+        "withheld": true
+      }
+    ]
+  },
+  "schema_version": "city-reviewed-inputs/1",
+  "sources": [
+    {
+      "check_status": "checked",
+      "checked_on": "2026-11-28",
+      "note": "captures/claim_language_osaka_yasashii.html — language claim source",
+      "title": "大阪市：「やさしい日本語」で話してみませんか？",
+      "url": "https://www.city.osaka.lg.jp/shimin/page/0000510655.html"
+    },
+    {
+      "check_status": "checked",
+      "checked_on": "2026-11-28",
+      "note": "captures/claim_food_osaka_kyoka.html — food claim source",
+      "title": "大阪市：飲食店等の食品衛生法に基づく営業許可",
+      "url": "https://www.city.osaka.lg.jp/kenko/page/0000537192.html"
+    },
+    {
+      "check_status": "checked",
+      "checked_on": "2026-11-28",
+      "note": "captures/claim_food_osaka_fee.html — 飲食店営業 16,000円 新規 / 12,800円 更新; not used in the claim value",
+      "title": "大阪市：食品衛生関係の申請手数料",
+      "url": "https://www.city.osaka.lg.jp/kenko/page/0000005787.html"
+    },
+    {
+      "check_status": "checked",
+      "checked_on": "2026-11-28",
+      "note": "captures/claim_alcohol_nta_qa03.html — alcohol claim source",
+      "title": "国税庁 お酒に関するQ&A【販売業免許関係】Q3",
+      "url": "https://www.nta.go.jp/taxes/sake/qa/03b/03.htm"
+    },
+    {
+      "check_status": "checked",
+      "checked_on": "2026-11-28",
+      "note": "captures/claim_alcohol_nta_sake_menkyo.html — application procedure page, read for the licence route",
+      "title": "国税庁 E1-3 酒類の販売業免許の申請",
+      "url": "https://www.nta.go.jp/taxes/tetsuzuki/shinsei/annai/sake/annai/23600071.htm"
+    }
+  ],
+  "venue_coordinates": {
+    "エル・おおさか（大阪府立労働センター）— 本館7階 708会議室（定員117名）": {
+      "language": "ja",
+      "map_target": "エル・おおさか, 大阪市中央区石町2丁目 (address not printed on the operator access page)",
+      "precision": "building",
+      "quote": "エル・おおさか, 骨屋町筋, 石町二丁目, 中央区, 大阪市, 大阪府, 540-0022, 日本",
+      "source_locator": "captures/geo_losaka.json — display_name of the returned object: \"エル・おおさか, 骨屋町筋, 石町二丁目, 中央区, 大阪市, 大阪府, 540-0022, 日本\"",
+      "source_url": "https://nominatim.openstreetmap.org/search?q=エル・おおさか&format=json",
+      "verified_at": "2026-11-28"
+    },
+    "エル・おおさか（大阪府立労働センター）— 本館9階 9012会議室（定員60名）": {
+      "language": "ja",
+      "map_target": "エル・おおさか, 大阪市中央区石町2丁目 (address not printed on the operator access page)",
+      "precision": "building",
+      "quote": "エル・おおさか, 骨屋町筋, 石町二丁目, 中央区, 大阪市, 大阪府, 540-0022, 日本",
+      "source_locator": "captures/geo_losaka.json — display_name of the returned object: \"エル・おおさか, 骨屋町筋, 石町二丁目, 中央区, 大阪市, 大阪府, 540-0022, 日本\"",
+      "source_url": "https://nominatim.openstreetmap.org/search?q=エル・おおさか&format=json",
+      "verified_at": "2026-11-28"
+    },
+    "マイドームおおさか — 第1・第2会議室（連結, 8F）": {
+      "language": "ja",
+      "map_target": "マイドームおおさか, 大阪市中央区本町橋2番5号 (8F)",
+      "precision": "building",
+      "quote": "マイドームおおさか, 豊後町通, 本町橋, 中央区, 大阪市, 大阪府, 540-0029, 日本",
+      "source_locator": "captures/geo_mydome.json — display_name of the returned object: \"マイドームおおさか, 豊後町通, 本町橋, 中央区, 大阪市, 大阪府, 540-0029, 日本\"",
+      "source_url": "https://nominatim.openstreetmap.org/search?q=マイドームおおさか&format=json",
+      "verified_at": "2026-11-28"
+    },
+    "マイドームおおさか — 第3会議室（8F）": {
+      "language": "ja",
+      "map_target": "マイドームおおさか, 大阪市中央区本町橋2番5号 (8F)",
+      "precision": "building",
+      "quote": "マイドームおおさか, 豊後町通, 本町橋, 中央区, 大阪市, 大阪府, 540-0029, 日本",
+      "source_locator": "captures/geo_mydome.json — display_name of the returned object: \"マイドームおおさか, 豊後町通, 本町橋, 中央区, 大阪市, 大阪府, 540-0029, 日本\"",
+      "source_url": "https://nominatim.openstreetmap.org/search?q=マイドームおおさか&format=json",
+      "verified_at": "2026-11-28"
+    },
+    "大阪カンファレンスセンター — 中会議室 銀杏（3F, 定員90名）": {
+      "language": "ja",
+      "map_target": "大阪国際交流センター, 大阪市天王寺区上本町8-2-6 (3F)",
+      "precision": "building",
+      "quote": "大阪国際交流センター, 上町筋, 上本町八丁目, 天王寺区, 大阪市, 大阪府, 543-0037, 日本",
+      "source_locator": "captures/geo_ihosaka.json — display_name of the returned object: \"大阪国際交流センター, 上町筋, 上本町八丁目, 天王寺区, 大阪市, 大阪府, 543-0037, 日本\"",
+      "source_url": "https://nominatim.openstreetmap.org/search?q=大阪国際交流センター&format=json",
+      "verified_at": "2026-11-28"
+    },
+    "大阪商工会議所 — B1F 2号会議室（定員50名）": {
+      "language": "ja",
+      "map_target": "大阪商工会議所ビル, 大阪市中央区本町橋2-8 (B1F)",
+      "precision": "building",
+      "quote": "大阪商工会議所, 松屋町筋, 本町橋, 中央区, 大阪市, 大阪府, 540-0026, 日本",
+      "source_locator": "captures/geo_cci.json — display_name of the returned object: \"大阪商工会議所, 松屋町筋, 本町橋, 中央区, 大阪市, 大阪府, 540-0026, 日本\"",
+      "source_url": "https://nominatim.openstreetmap.org/search?q=大阪商工会議所&format=json",
+      "verified_at": "2026-11-28"
+    },
+    "大阪市中央公会堂 — 中集会室（3F, 定員500名）": {
+      "language": "ja",
+      "map_target": "大阪市中央公会堂, 大阪市北区中之島1丁目1番27号 (3F)",
+      "precision": "building",
+      "quote": "大阪市中央公会堂, 27, 中之島一丁目, 北区, 大阪市, 大阪府, 530-0005, 日本",
+      "source_locator": "captures/geo_chuokokaido.json — display_name of the returned object: \"大阪市中央公会堂, 27, 中之島一丁目, 北区, 大阪市, 大阪府, 530-0005, 日本\"",
+      "source_url": "https://nominatim.openstreetmap.org/search?q=大阪市中央公会堂&format=json",
+      "verified_at": "2026-11-28"
+    },
+    "大阪市中央公会堂 — 小集会室（3F, 定員150名）": {
+      "language": "ja",
+      "map_target": "大阪市中央公会堂, 大阪市北区中之島1丁目1番27号 (3F)",
+      "precision": "building",
+      "quote": "大阪市中央公会堂, 27, 中之島一丁目, 北区, 大阪市, 大阪府, 530-0005, 日本",
+      "source_locator": "captures/geo_chuokokaido.json — display_name of the returned object: \"大阪市中央公会堂, 27, 中之島一丁目, 北区, 大阪市, 大阪府, 530-0005, 日本\"",
+      "source_url": "https://nominatim.openstreetmap.org/search?q=大阪市中央公会堂&format=json",
+      "verified_at": "2026-11-28"
+    },
+    "大阪市立中央会館 — ホール（定員250名）": {
+      "language": "ja",
+      "map_target": "大阪市立中央会館, 大阪市中央区島之内2-12-31",
+      "precision": "building",
+      "quote": "市立中央会館, 周防町筋, 島之内二丁目, 中央区, 大阪市, 大阪府, 542-0082, 日本",
+      "source_locator": "captures/geo_chuo.json — display_name of the returned object: \"市立中央会館, 周防町筋, 島之内二丁目, 中央区, 大阪市, 大阪府, 542-0082, 日本\"",
+      "source_url": "https://nominatim.openstreetmap.org/search?q=大阪市立中央会館&format=json",
+      "verified_at": "2026-11-28"
+    },
+    "大阪市立総合生涯学習センター — 第1研修室（5F, 定員112名）": {
+      "language": "ja",
+      "map_target": "大阪駅前第2ビル, 大阪市北区梅田1-2-2 (5F-6F)",
+      "precision": "building",
+      "quote": "大阪駅前第2ビル, 樋之筋, 梅田一丁目, 北区, 大阪市, 大阪府, 530-8265, 日本",
+      "source_locator": "captures/geo_manabu_umeda2.json — display_name of the returned object: \"大阪駅前第2ビル, 樋之筋, 梅田一丁目, 北区, 大阪市, 大阪府, 530-8265, 日本\"",
+      "source_url": "https://nominatim.openstreetmap.org/search?q=大阪駅前第2ビル&format=json",
+      "verified_at": "2026-11-28"
+    },
+    "大阪産業創造館 — 4F イベントホール（定員320名／スクール180名）": {
+      "language": "ja",
+      "map_target": "大阪産業創造館, 大阪市中央区本町1-4-5 (4F)",
+      "precision": "building",
+      "quote": "大阪産業創造館, 5, 本町一丁目, 中央区, 大阪市, 大阪府, 541-0053, 日本",
+      "source_locator": "captures/geo_sansokan.json — display_name of the returned object: \"大阪産業創造館, 5, 本町一丁目, 中央区, 大阪市, 大阪府, 541-0053, 日本\"",
+      "source_url": "https://nominatim.openstreetmap.org/search?q=大阪産業創造館&format=json",
+      "verified_at": "2026-11-28"
+    },
+    "大阪産業創造館 — 6F 会議室E（定員114名）": {
+      "language": "ja",
+      "map_target": "大阪産業創造館, 大阪市中央区本町1-4-5 (6F)",
+      "precision": "building",
+      "quote": "大阪産業創造館, 5, 本町一丁目, 中央区, 大阪市, 大阪府, 541-0053, 日本",
+      "source_locator": "captures/geo_sansokan.json — display_name of the returned object: \"大阪産業創造館, 5, 本町一丁目, 中央区, 大阪市, 大阪府, 541-0053, 日本\"",
+      "source_url": "https://nominatim.openstreetmap.org/search?q=大阪産業創造館&format=json",
+      "verified_at": "2026-11-28"
+    },
+    "港区民センター — ホール（6F, 定員400名）": {
+      "language": "ja",
+      "map_target": "港区土地区画整理記念・交流会館, 大阪市港区磯路1丁目 (6F)",
+      "precision": "building",
+      "quote": "港区土地区画整理記念・交流会館, 中央大通, 磯路一丁目, 港区, 大阪市, 大阪府, 552-0003, 日本",
+      "source_locator": "captures/geo_minato.json — display_name of the returned object: \"港区土地区画整理記念・交流会館, 中央大通, 磯路一丁目, 港区, 大阪市, 大阪府, 552-0003, 日本\"",
+      "source_url": "https://nominatim.openstreetmap.org/search?q=港区土地区画整理記念・交流会館&format=json",
+      "verified_at": "2026-11-28"
+    },
+    "港区民センター — 第1集会室（3F, 定員114名）": {
+      "language": "ja",
+      "map_target": "港区土地区画整理記念・交流会館, 大阪市港区磯路1丁目 (3F)",
+      "precision": "building",
+      "quote": "港区土地区画整理記念・交流会館, 中央大通, 磯路一丁目, 港区, 大阪市, 大阪府, 552-0003, 日本",
+      "source_locator": "captures/geo_minato.json — display_name of the returned object: \"港区土地区画整理記念・交流会館, 中央大通, 磯路一丁目, 港区, 大阪市, 大阪府, 552-0003, 日本\"",
+      "source_url": "https://nominatim.openstreetmap.org/search?q=港区土地区画整理記念・交流会館&format=json",
+      "verified_at": "2026-11-28"
+    },
+    "阿倍野市民学習センター — 講堂（定員150名）": {
+      "language": "ja",
+      "map_target": "阿倍野市民学習センター, 大阪市阿倍野区阿倍野筋3-10-1 あべのベルタ3階",
+      "precision": "building",
+      "quote": "阿倍野市民学習センター, あべの筋, 阿倍野筋三丁目, 阿倍野筋, 阿倍野区, 大阪市, 大阪府, 545-0052, 日本",
+      "source_locator": "captures/geo_abeno.json — display_name of the returned object: \"阿倍野市民学習センター, あべの筋, 阿倍野筋三丁目, 阿倍野筋, 阿倍野区, 大阪市, 大阪府, 545-0052, 日本\"",
+      "source_url": "https://nominatim.openstreetmap.org/search?q=阿倍野市民学習センター&format=json",
+      "verified_at": "2026-11-28"
+    },
+    "難波市民学習センター — 講堂（4F, 定員120名）": {
+      "language": "ja",
+      "map_target": "OCATビル, 大阪市浪速区湊町1-4-1 (4F)",
+      "precision": "building",
+      "quote": "OCAT, 1, 湊町一丁目, 浪速区, 大阪市, 大阪府, 556-0017, 日本",
+      "source_locator": "captures/geo_namba2.json — display_name of the returned object: \"OCAT, 1, 湊町一丁目, 浪速区, 大阪市, 大阪府, 556-0017, 日本\"",
+      "source_url": "https://nominatim.openstreetmap.org/search?q=OCAT+大阪&format=json",
+      "verified_at": "2026-11-28"
+    }
+  }
+}
