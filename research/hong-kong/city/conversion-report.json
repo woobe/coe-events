@@ -1,0 +1,183 @@
+{
+  "city_slug": "hong-kong-hk",
+  "counts": {
+    "communities": 15,
+    "coverage_rows": 72,
+    "declared_gaps": 9,
+    "event_shells": 0,
+    "events": 8,
+    "holiday_rows": 375,
+    "photos": 25,
+    "sources": 53,
+    "venues": 16
+  },
+  "inputs": [
+    {
+      "name": "calendar_conflicts.json",
+      "path": "research/hong-kong/2027/calendar_conflicts.json",
+      "sha256": "0c30f1d5e2c27aa0538cd8f7e8820e2dcb11ce8edb4ae380d171a40a6468efcd"
+    },
+    {
+      "name": "city_input.json",
+      "path": "research/hong-kong/2027/city_input.json",
+      "sha256": "f8ba3c467a6573518c1e9c4c3790218cc706fa066a4b975d05eee11e250bb1e6"
+    },
+    {
+      "name": "communities.raw.json",
+      "path": "research/hong-kong/2027/communities.raw.json",
+      "sha256": "8c0d8a2ca97e58c8a8ffe6470c3084d999c32e3a9515a94e27173da10a92b395"
+    },
+    {
+      "name": "venues.raw.json",
+      "path": "research/hong-kong/2027/venues.raw.json",
+      "sha256": "0ab021e9203bef8898d6b87ae292cbd350a60beedbf1f93b680084df8a6fabc8"
+    },
+    {
+      "name": "venues.shortlist.json",
+      "path": "research/hong-kong/2027/venues.shortlist.json",
+      "sha256": "81b02ce1fac4a45d7e5f4edb61349110495f6984771ea3e2d03dba19b859d724"
+    }
+  ],
+  "mandatory_sources": [
+    {
+      "check_status": "not_checked",
+      "checked_on": null,
+      "url": "https://miragather.com/"
+    },
+    {
+      "check_status": "not_checked",
+      "checked_on": null,
+      "url": "https://miragather.com/?tab=side"
+    },
+    {
+      "check_status": "not_checked",
+      "checked_on": null,
+      "url": "https://miragather.com/ai"
+    },
+    {
+      "check_status": "not_checked",
+      "checked_on": null,
+      "url": "https://aitinkerers.org/all_cities"
+    },
+    {
+      "check_status": "not_checked",
+      "checked_on": null,
+      "url": "https://luma.com/decentralized_ai_events?period=past"
+    }
+  ],
+  "notes": [
+    "Built from the approved research bundle research/hong-kong/2027 (16 venues: 13 shortlist_ready, 3 lead; 15 communities; 8 calendar rows).",
+    "Registry: installed Asia edition 3b20667de940342954040f06d6695d490d8e27515d536969d127a0fa92bacdaf, host scope HK, no supplement; the seventeen HK public-holiday rows and the public-holiday coverage row are used as printed, and the school lane is declared through a dated no_applicable_days finding for 2027/28.",
+    "Paired brief: 50 people, 09:00 start, 8-hour floor (09:00-17:00), 12-hour preferred (09:00-21:00), soft USD 5,000, calendar year 2027, no recommended date.",
+    "Photos: operator gallery first; 21 verified operator images across 12 venues and 4 explicit withheld records; no Wikimedia image was used because no Commons file on a captured page depicts one of these hired rooms."
+  ],
+  "photos": {
+    "dispositions": [
+      {
+        "disposition": "reviewed_photos",
+        "records": 3,
+        "venue_id": "hong-ee6c966b51f8"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 2,
+        "venue_id": "hong-73a96d3a7286"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "hong-81344dd5bb57"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "hong-773f1944d099"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "hong-866f255ce5df"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 2,
+        "venue_id": "hong-75694b274025"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "hong-dfc008180222"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "hong-8ea704120487"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "hong-ab2e192009da"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "hong-90a62c631bb1"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "hong-831467919b39"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "hong-b2cdaeb45aa4"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 2,
+        "venue_id": "hong-8894bae2ec67"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 3,
+        "venue_id": "hong-df48a342a791"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 2,
+        "venue_id": "hong-d4af0067f24f"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 2,
+        "venue_id": "hong-29eb4c1643b8"
+      }
+    ],
+    "note": "Only the reviewed photo records are carried.",
+    "records": 25
+  },
+  "registry": {
+    "edition_copy": "references/editions/school_holidays-3b20667d.json",
+    "host_jurisdiction_id": "HK",
+    "path": "/home/joe/.hermes/skills/plan-event/references/school_holidays.json",
+    "sha256": "3b20667de940342954040f06d6695d490d8e27515d536969d127a0fa92bacdaf",
+    "supplement": false
+  },
+  "reviewed_inputs": {
+    "local_requirements_supplied": true,
+    "path": "/home/joe/repo_dev/coe-events/research/hong-kong/2027/reviewed-inputs.json",
+    "sha256": "b21159ef95d315685400bb743eb69b1ced09f7f46c4a39ac3693b2b3999e517c"
+  },
+  "run_id": "run-hong-kong-2027-bootstrap-1",
+  "schema_version": "city-conversion-report/1",
+  "shared_url_event_shells": [],
+  "updated_at": "2026-11-28T12:00:00Z",
+  "warnings": [
+    "mandatory source https://miragather.com/ has no reviewed outcome",
+    "mandatory source https://miragather.com/?tab=side has no reviewed outcome",
+    "mandatory source https://miragather.com/ai has no reviewed outcome",
+    "mandatory source https://aitinkerers.org/all_cities has no reviewed outcome",
+    "mandatory source https://luma.com/decentralized_ai_events?period=past has no reviewed outcome"
+  ]
+}

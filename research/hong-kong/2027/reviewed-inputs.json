@@ -1,0 +1,1085 @@
+{
+  "schema_version": "city-reviewed-inputs/1",
+  "city_slug": "hong-kong-hk",
+  "event_context": {
+    "attendance": 50,
+    "duration_hours": 8,
+    "preferred_duration_hours": 12,
+    "soft_budget_usd": 5000.0,
+    "start_local": "09:00"
+  },
+  "holiday_registry": {
+    "host_jurisdiction_id": "HK"
+  },
+  "local_requirements": {
+    "language": {
+      "language": "en",
+      "quote": "Chinese and English are the official languages of Hong Kong. English is widely used in the Government and by the legal, professional and business sectors. Trilingual professionals who speak English, Cantonese and Putonghua play a vital role in the numerous enterprises trading in Hong Kong or doing business with Chinese Mainland and Taiwan. … Proportion of population aged 5 and over by usual spoken language: Cantonese: 88.2% Putonghua: 2.3% Other Chinese dialect: 2.8% English: 4.6% Other language: 2.1% (Results from 2021 Population Census)",
+      "source_locator": "captures/claim_language_hk_govhk_facts.html — section heading \"Language\" (line 1408) with its paragraph, and the \"Proportion of population aged 5 and over by usual spoken language\" list (lines 1409-1416, footnote \"Results from 2021 Population Census\"); the captured page prints \"Last revision date: July 2026\" and offers 繁體中文 and 简体中文 versions in its language selector",
+      "source_title": "GovHK: Hong Kong – the Facts (Language)",
+      "source_url": "https://www.gov.hk/en/about/abouthk/facts.htm",
+      "value": {
+        "authority": "GovHK, the HKSAR Government portal",
+        "official_languages": "Chinese and English are the official languages of Hong Kong",
+        "resident_language_profile": "of the population aged 5 and over, 88.2% usually speak Cantonese, 4.6% English, 2.3% Putonghua, 2.8% another Chinese dialect and 2.1% another language (2021 Population Census)",
+        "event_implication": "the majority usually speak Cantonese and the captured GovHK page offers 繁體中文 and 简体中文 versions in its language selector, so the city page carries venue names and copy in English and 中文 rather than English alone",
+        "not_established": "the page does not measure English reading ability, and no venue in this sweep published a language policy, so the working language of any single venue stays a booking-terms question"
+      },
+      "verified_at": "2026-11-28"
+    },
+    "alcohol": {
+      "language": "en",
+      "quote": "It is an offence under Section 17(3B) of the Dutiable Commodities Ordinance (Cap. 109) to sell liquor without a licence. A person convicted of the offence is liable to a fine of $1,000,000 and imprisonment for 2 years. In this connection, any person who intends to sell liquor at any premises for consumption on those premises must obtain a liquor licence issued by the Liquor Licensing Board before commencement of such business. … In general, the Liquor Licensing Board considers applications for liquor licences if the premises to which the applications relate are licensed general/light refreshment/marine restaurants (full or provisional), or likely to be licensed or provisionally licensed by the Director of Food and Environmental Hygiene. A liquor licence will be issued when the premises have been issued with a restaurant licence or a provisional restaurant licence. … The Liquor Licensing Board will also consider applications for liquor licence in respect of premises other than the afore-mentioned. For such premises not under application for or not covered by a valid restaurant licence or Certificate of Compliance … the processing time of such liquor licence applications will be longer.",
+      "source_locator": "captures/claim_alcohol_hk_llb_note.html — \"Important Notes\", first bullet (line 37), last revised 2018-09-20; captures/claim_alcohol_hk_llb_policy.html — \"Policy / New Issue\", the restaurant-licence paragraph and the \"other premises\" paragraph (line 43), last revised 2026-11-04. Both pages are published by the Liquor Licensing Board (酒牌局).",
+      "source_title": "Liquor Licensing Board (酒牌局) — Important Notes and Policy",
+      "source_url": "https://www.fehd.gov.hk/english/LLB_web/note.html",
+      "additional_sources": [
+        {
+          "capture": "captures/claim_alcohol_hk_llb_policy.html",
+          "source_title": "Liquor Licensing Board (酒牌局) — Policy",
+          "source_url": "https://www.fehd.gov.hk/english/LLB_web/policy.html"
+        }
+      ],
+      "value": {
+        "authority": "Liquor Licensing Board (酒牌局), the statutory body under the Dutiable Commodities (Liquor) Regulations (Cap. 109 sub. leg. B); FEHD provides its executive and secretarial support",
+        "licence_required_for": "any person who intends to sell liquor at any premises for consumption on those premises, before the business begins",
+        "offence": "selling liquor without a licence is an offence under s.17(3B) of the Dutiable Commodities Ordinance (Cap. 109); on conviction a fine of $1,000,000 (HKD) and imprisonment for 2 years",
+        "premises_route": "in general the Board considers premises licensed as general, light refreshment or marine restaurants (full or provisional) and issues the liquor licence once the restaurant licence is issued; it will also consider other premises, with more departments consulted and a longer processing time",
+        "not_established": "these pages do not say whether serving liquor without selling it (a free bar) needs a licence, which party — venue, caterer or organiser — must hold the licence for a 50-person private event, or whether any room in this sweep would be approved. Alcohol therefore stays a booking-terms question on every venue and no hotel bar is read as a yes"
+      },
+      "verified_at": "2026-11-28"
+    },
+    "food": {
+      "language": "en",
+      "quote": "A restaurant licence must be obtained from the DFEH for the food business which involves the sale of meals or unbottled non-alcoholic drinks other than Chinese herb tea, for consumption on the premises, but does not include a factory canteen or any business carried on by a hawker … A food factory licence must be obtained from DFEH for the food business which involves the preparation of food for sale for human consumption off the premises … operating a take-away food shop or providing catering service, etc. … A temporary food factory licence must be obtained from DFEH for the food business which involves the operation of a stall/kiosk of temporary nature for sale of heating up / warming pre-cooked food and/or cooking of pre-prepared, ready-to-cook food for human consumption off the premises in conjunction with a public function (e.g. exhibitions, shows, sports competitions, concerts, etc.) of short duration before commencement of such business. The validity period of a temporary food factory licence will not exceed 7 days.",
+      "source_locator": "captures/claim_food_hk_fehd_types.html — \"Restaurant Licence\" (line 48), \"Food Factory Licence\" (line 60) with list item \"operating a take-away food shop or providing catering service, etc.\" (line 65), and \"Temporary Food Factory Licence\" (line 78); the captured page is last revised 2026-09-29",
+      "source_title": "FEHD (食物環境衞生署) — Guide on Types of Licences Required",
+      "source_url": "https://www.fehd.gov.hk/english/licensing/Guide_on_Types_of_Licences_Required.html",
+      "value": {
+        "authority": "Food and Environmental Hygiene Department (食物環境衞生署, FEHD)",
+        "restaurant_licence": "required for a food business that sells meals or unbottled non-alcoholic drinks for consumption on the premises",
+        "food_factory_licence": "required for a food business that prepares food for sale for consumption off the premises; \"operating a take-away food shop or providing catering service\" is listed among the trades it covers",
+        "temporary_food_factory_licence": "required for a temporary stall or kiosk selling heated pre-cooked food or pre-prepared ready-to-cook food in conjunction with a public function such as an exhibition, show, sports competition or concert; valid for no more than 7 days",
+        "event_implication": "a caterer supplying the event is expected to hold a food factory licence as a \"catering service\", and a venue selling meals on its premises needs a restaurant licence",
+        "not_established": "the page does not say which licence a 50-person private event in a hired room operates under, whether food given away free counts as a sale, or which licence any venue in this sweep holds — catering stays a booking-terms question on every venue"
+      },
+      "verified_at": "2026-11-28"
+    }
+  },
+  "coverage_findings": [
+    {
+      "jurisdiction_id": "HK",
+      "kind": "school_holiday_coverage",
+      "finding": "no_applicable_days",
+      "start_date": "2027-09-01",
+      "end_date": "2028-08-31",
+      "accessed_on": "2026-11-28",
+      "verified_at": "2026-11-28",
+      "source_url": "https://www.edb.gov.hk/en/curriculum-development/resource-support/guidelines-sch-calendar/index.html",
+      "source_title": "Education Bureau — Guidelines on Drawing up the School Calendar",
+      "source_locator": "captures/coverage_school_hk_edb_index.html — the page's whole document list: \"General Holidays in the 2026/27 School Year\", \"Recommendations on making good use of learning time to enhance student learning\", \"Calculation of School Holidays and School Days in General\" and \"An Example of a Whole-day School Calendar (2026/27 School Year)\". No 2027/28 document is listed. Legacy paths re-checked the same day and 404: captures/coverage_school_hk_edb_legacy_404.html (https://www.edb.gov.hk/en/student-parents/sch-info/sch-calendar/index.html, HTTP 404, title \"Not Found - Education Bureau\"), plus https://www.edb.gov.hk/en/about-edb/publications-stat/school-calendar/index.html, and the 2027/28 attachment paths Example_school calendar_2728_E.pdf and General Holidays_2728_E.pdf, all HTTP 404.",
+      "quote": "General Holidays in the 2026/27 School Year … Calculation of School Holidays and School Days in General … An Example of a Whole-day School Calendar (2026/27 School Year)",
+      "note": "The school lane is open and publishes nothing for 2027/28. Re-checked on 2026-11-28, the Education Bureau \"Guidelines on Drawing up the School Calendar\" index lists only 2026/27 documents — the general holidays list, the learning-time note, the calculation note and \"An Example of a Whole-day School Calendar (2026/27 School Year)\" — and prints no 2027/28 example calendar or 2027/28 general-holidays list; the EDB legacy school-calendar index and the 2027/28 attachment paths return HTTP 404. Scope: this finding covers the 2027/28 school year only (2027-09-01 to 2028-08-31). It does not say the 2026/27 school year has no holidays, and the pinned registry edition carries no HK school_holiday row for any date, so the store asserts no Hong Kong school date at all and the 2027/28 school lane is declared rather than guessed.",
+      "needs_human_verify": false,
+      "verification_questions": []
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.gov.hk/en/about/abouthk/facts.htm",
+      "title": "GovHK: Hong Kong – the Facts (Language)",
+      "checked_on": "2026-11-28",
+      "check_status": "checked",
+      "note": "captures/claim_language_hk_govhk_facts.html — language claim source"
+    },
+    {
+      "url": "https://www.fehd.gov.hk/english/LLB_web/note.html",
+      "title": "Liquor Licensing Board (酒牌局) — Important Notes",
+      "checked_on": "2026-11-28",
+      "check_status": "checked",
+      "note": "captures/claim_alcohol_hk_llb_note.html — alcohol claim source"
+    },
+    {
+      "url": "https://www.fehd.gov.hk/english/LLB_web/policy.html",
+      "title": "Liquor Licensing Board (酒牌局) — Policy",
+      "checked_on": "2026-11-28",
+      "check_status": "checked",
+      "note": "captures/claim_alcohol_hk_llb_policy.html — premises route for a liquor licence"
+    },
+    {
+      "url": "https://www.fehd.gov.hk/english/licensing/Guide_on_Types_of_Licences_Required.html",
+      "title": "FEHD (食物環境衞生署) — Guide on Types of Licences Required",
+      "checked_on": "2026-11-28",
+      "check_status": "checked",
+      "note": "captures/claim_food_hk_fehd_types.html — food claim source (restaurant, food factory, temporary food factory)"
+    },
+    {
+      "url": "https://www.edb.gov.hk/en/curriculum-development/resource-support/guidelines-sch-calendar/index.html",
+      "title": "Education Bureau — Guidelines on Drawing up the School Calendar",
+      "checked_on": "2026-11-28",
+      "check_status": "checked",
+      "note": "captures/coverage_school_hk_edb_index.html — school-lane coverage finding source; lists 2026/27 documents only"
+    },
+    {
+      "url": "https://www.edb.gov.hk/en/student-parents/sch-info/sch-calendar/index.html",
+      "title": "Education Bureau — legacy school calendar index (HTTP 404)",
+      "checked_on": "2026-11-28",
+      "check_status": "failure_404",
+      "note": "captures/coverage_school_hk_edb_legacy_404.html — HTTP 404, title \"Not Found - Education Bureau\""
+    },
+    {
+      "url": "https://www.peerspace.com/s/hong-kong",
+      "title": "Peerspace Hong Kong",
+      "checked_on": "2026-11-28",
+      "check_status": "blocked",
+      "note": "captures/lane_peerspace_hong-kong_blocked_cloudflare.html — HTTP 403 and a Cloudflare challenge page; lane unreadable"
+    },
+    {
+      "url": "https://www.tagvenue.com/",
+      "title": "Tagvenue (no Hong Kong city page)",
+      "checked_on": "2026-11-28",
+      "check_status": "checked",
+      "note": "captures/lane_tagvenue_home_no_hk.html — no Hong Kong city page; /hk and /hk/hong-kong return HTTP 404"
+    },
+    {
+      "url": "https://www.eventective.com/",
+      "title": "Eventective (no Hong Kong inventory)",
+      "checked_on": "2026-11-28",
+      "check_status": "checked",
+      "note": "captures/lane_eventective_root_no_hk.html — /hong-kong/ and /search/?q=Hong+Kong return HTTP 404"
+    },
+    {
+      "url": "https://www.venuereport.com/venues/hong-kong/",
+      "title": "Venue Report Hong Kong (HTTP 403)",
+      "checked_on": "2026-11-28",
+      "check_status": "blocked",
+      "note": "captures/lane_venuereport_hong-kong_redirect_home.html — HTTP 403 to curl; headless Chromium lands on the Venue Report home page with no Hong Kong coverage"
+    }
+  ],
+  "venue_coordinates": {
+    "Garage Society — Wan Chai Event Space (Beverly House)": {
+      "language": "en",
+      "map_target": "Lockhart Road, Wan Chai (street-level point; Beverly House at 93 Lockhart Road is not pinned)",
+      "precision": "street",
+      "quote": "駱克道 Lockhart Road, 鵝頸 Bowrington, 摩利臣山 Morrison Hill, 灣仔區 Wan Chai District, 香港島 Hong Kong Island, 香港 Hong Kong, 中国",
+      "source_locator": "captures/geocode_garage_wanchai.json — display_name of the returned object: \"駱克道 Lockhart Road, 鵝頸 Bowrington, 摩利臣山 Morrison Hill, 灣仔區 Wan Chai District, 香港島 Hong Kong Island, 香港 Hong Kong, 中国\"",
+      "source_url": "https://nominatim.openstreetmap.org/search?q=93+Lockhart+Road%2C+Wan+Chai%2C+Hong+Kong&format=json&limit=1",
+      "verified_at": "2026-11-28"
+    },
+    "Garage Society — Causeway Bay Event Space (Tower 535)": {
+      "language": "en",
+      "map_target": "Tower 535, 535 Jaffe Road, Causeway Bay",
+      "precision": "building",
+      "quote": "Tower 535, 535, 謝斐道 Jaffe Road, 東角 East Point, 銅鑼灣 Causeway Bay, 灣仔區 Wan Chai District, 香港島 Hong Kong Island, 香港 Hong Kong, 中国",
+      "source_locator": "captures/geocode_garage_causewaybay.json — display_name of the returned object: \"Tower 535, 535, 謝斐道 Jaffe Road, 東角 East Point, 銅鑼灣 Causeway Bay, 灣仔區 Wan Chai District, 香港島 Hong Kong Island, 香港 Hong Kong, 中国\"",
+      "source_url": "https://nominatim.openstreetmap.org/search?q=Tower+535%2C+535+Jaffe+Road%2C+Causeway+Bay%2C+Hong+Kong&format=json&limit=1",
+      "verified_at": "2026-11-28"
+    },
+    "樹洞香港 TreeholeHK — 灣仔活動場地 AB (Wan Chai venue AB)": {
+      "language": "en",
+      "map_target": "Johnston Road, Wan Chai (street-level point; Chinachem Johnston Plaza at 178 Johnston Road is not pinned)",
+      "precision": "street",
+      "quote": "莊士敦道 Johnston Road, 鵝頸 Bowrington, 摩利臣山 Morrison Hill, 灣仔區 Wan Chai District, 香港島 Hong Kong Island, 香港 Hong Kong, 中国",
+      "source_locator": "captures/geocode_treehole_wanchai.json — display_name of the returned object: \"莊士敦道 Johnston Road, 鵝頸 Bowrington, 摩利臣山 Morrison Hill, 灣仔區 Wan Chai District, 香港島 Hong Kong Island, 香港 Hong Kong, 中国\"",
+      "source_url": "https://nominatim.openstreetmap.org/search?q=178+Johnston+Road%2C+Wan+Chai%2C+Hong+Kong&format=json&limit=1",
+      "verified_at": "2026-11-28"
+    },
+    "Igather 匯聚會議室 — 中環 E&F 特大型會議廳 (Central E&F hall)": {
+      "language": "en",
+      "map_target": "Hip Shing Hong Centre, 55 Des Voeux Road Central",
+      "precision": "building",
+      "quote": "協成行中心 Hip Shing Hong Centre, 德輔道中 Des Voeux Road Central, 政府山 Government Hill, 中環 Central, 中西區 Central and Western District, 香港島 Hong Kong Island, 香港 Hong Kong, 中国",
+      "source_locator": "captures/geocode_igather_central.json — display_name of the returned object: \"協成行中心 Hip Shing Hong Centre, 德輔道中 Des Voeux Road Central, 政府山 Government Hill, 中環 Central, 中西區 Central and Western District, 香港島 Hong Kong Island, 香港 Hong Kong, 中国\"",
+      "source_url": "https://nominatim.openstreetmap.org/search?q=Hip+Shing+Hong+Centre%2C+Des+Voeux+Road+Central%2C+Hong+Kong&format=json&limit=1",
+      "verified_at": "2026-11-28"
+    },
+    "Igather 匯聚會議室 — 觀塘 20–40 人會議室 (Kwun Tong meeting room)": {
+      "language": "en",
+      "map_target": "Hoi Yuen Road, Kwun Tong (street-level point; 49 Hoi Yuen Road is not pinned)",
+      "precision": "street",
+      "quote": "開源道 Hoi Yuen Road, 月華街區 Yuet Wah Street Area, 觀塘 Kwun Tong, 觀塘區 Kwun Tong District, 九龍 Kowloon, 香港 Hong Kong, 中国",
+      "source_locator": "captures/geocode_igather_kwuntong.json — display_name of the returned object: \"開源道 Hoi Yuen Road, 月華街區 Yuet Wah Street Area, 觀塘 Kwun Tong, 觀塘區 Kwun Tong District, 九龍 Kowloon, 香港 Hong Kong, 中国\"",
+      "source_url": "https://nominatim.openstreetmap.org/search?q=49+Hoi+Yuen+Road%2C+Kwun+Tong%2C+Kowloon%2C+Hong+Kong&format=json&limit=1",
+      "verified_at": "2026-11-28"
+    },
+    "AMO HK — 尖沙咀星光行 Unit 824-825 Room A+B (Tsim Sha Tsui)": {
+      "language": "en",
+      "map_target": "Star House, 3 Salisbury Road, Tsim Sha Tsui",
+      "precision": "building",
+      "quote": "星光行 Star House, 3, 梳士巴利道 Salisbury Road, 尖沙咀 Tsim Sha Tsui, 油尖旺區 Yau Tsim Mong District, 九龍 Kowloon, 香港 Hong Kong, 中国",
+      "source_locator": "captures/geocode_amo_tst.json — display_name of the returned object: \"星光行 Star House, 3, 梳士巴利道 Salisbury Road, 尖沙咀 Tsim Sha Tsui, 油尖旺區 Yau Tsim Mong District, 九龍 Kowloon, 香港 Hong Kong, 中国\"",
+      "source_url": "https://nominatim.openstreetmap.org/search?q=Star+House%2C+3+Salisbury+Road%2C+Tsim+Sha+Tsui%2C+Kowloon%2C+Hong+Kong&format=json&limit=1",
+      "verified_at": "2026-11-28"
+    },
+    "The Hive Kennedy Town — 8/F Studios Event Space": {
+      "language": "en",
+      "map_target": "Smithfield Road, Kennedy Town (the returned node is the children's playground on the street, not the building)",
+      "precision": "area",
+      "quote": "士美菲路兒童遊樂場 Smithfield Road Children's Playground, 堅彌地城新海旁 New Praya, Kennedy Town, 堅尼地城 Kennedy Town, 中西區 Central and Western District, 香港島 Hong Kong Island, 香港 Hong Kong, 中国",
+      "source_locator": "captures/geocode_hive_kennedytown.json — display_name of the returned object: \"士美菲路兒童遊樂場 Smithfield Road Children's Playground, 堅彌地城新海旁 New Praya, Kennedy Town, 堅尼地城 Kennedy Town, 中西區 Central and Western District, 香港島 Hong Kong Island, 香港 Hong Kong, 中国\"",
+      "source_url": "https://nominatim.openstreetmap.org/search?q=Smithfield+Road%2C+Kennedy+Town%2C+Hong+Kong&format=json&limit=1",
+      "verified_at": "2026-11-28"
+    },
+    "上環文娛中心 演講廳 (Sheung Wan Civic Centre Lecture Hall)": {
+      "language": "en",
+      "map_target": "Sheung Wan Civic Centre, 345 Queen's Road Central",
+      "precision": "building",
+      "quote": "上環文娛中心 Sheung Wan Civic Centre, 345, 皇后大道中 Queen's Road Central, 太平山 Tai Ping Shan, 上環 Sheung Wan, 中西區 Central and Western District, 香港島 Hong Kong Island, 香港 Hong Kong, 中国",
+      "source_locator": "captures/geocode_swcc.json — display_name of the returned object: \"上環文娛中心 Sheung Wan Civic Centre, 345, 皇后大道中 Queen's Road Central, 太平山 Tai Ping Shan, 上環 Sheung Wan, 中西區 Central and Western District, 香港島 Hong Kong Island, 香港 Hong Kong, 中国\"",
+      "source_url": "https://nominatim.openstreetmap.org/search?q=Sheung+Wan+Municipal+Services+Building%2C+345+Queen's+Road+Central%2C+Sheung+Wan%2C+Hong+Kong&format=json&limit=1",
+      "verified_at": "2026-11-28"
+    },
+    "Good Lab 好單位 — The Future Workshop Training Space (Lai Chi Kok)": {
+      "language": "en",
+      "map_target": "Castle Peak Road, Lai Chi Kok (street-level point; Charm Centre at 700 Castle Peak Road is not pinned)",
+      "precision": "street",
+      "quote": "青山道 Castle Peak Road, 荔枝角山 Lai Chi Kok Hill, 荔枝角 Lai Chi Kok, 深水埗區 Sham Shui Po District, 九龍 Kowloon, 香港 Hong Kong, 中国",
+      "source_locator": "captures/geocode_goodlab.json — display_name of the returned object: \"青山道 Castle Peak Road, 荔枝角山 Lai Chi Kok Hill, 荔枝角 Lai Chi Kok, 深水埗區 Sham Shui Po District, 九龍 Kowloon, 香港 Hong Kong, 中国\"",
+      "source_url": "https://nominatim.openstreetmap.org/search?q=700+Castle+Peak+Road%2C+Lai+Chi+Kok%2C+Hong+Kong&format=json&limit=1",
+      "verified_at": "2026-11-28"
+    },
+    "The Hive Wan Chai — 21/F Indoor Space, Lounge and Studio": {
+      "language": "en",
+      "map_target": "The Phoenix, 23 Luard Road, Wan Chai",
+      "precision": "building",
+      "quote": "23, 盧押道 Luard Road, 灣仔 Wan Chai, 灣仔區 Wan Chai District, 香港島 Hong Kong Island, 香港 Hong Kong, 中国",
+      "source_locator": "captures/geocode_hive_wanchai.json — display_name of the returned object: \"23, 盧押道 Luard Road, 灣仔 Wan Chai, 灣仔區 Wan Chai District, 香港島 Hong Kong Island, 香港 Hong Kong, 中国\"",
+      "source_url": "https://nominatim.openstreetmap.org/search?q=23+Luard+Road%2C+Wan+Chai%2C+Hong+Kong&format=json&limit=1",
+      "verified_at": "2026-11-28"
+    },
+    "The Wave — 8/F Event Space (Kwun Tong)": {
+      "language": "en",
+      "map_target": "Hing Yip Street, Kwun Tong (street-level point; 4 Hing Yip Street is not pinned)",
+      "precision": "street",
+      "quote": "興業街 Hing Yip Street, 裕民坊 Yue Man Square, 觀塘商貿區 Kwun Tong Business Area, 觀塘區 Kwun Tong District, 九龍 Kowloon, 香港 Hong Kong, 中国",
+      "source_locator": "captures/geocode_thewave.json — display_name of the returned object: \"興業街 Hing Yip Street, 裕民坊 Yue Man Square, 觀塘商貿區 Kwun Tong Business Area, 觀塘區 Kwun Tong District, 九龍 Kowloon, 香港 Hong Kong, 中国\"",
+      "source_url": "https://nominatim.openstreetmap.org/search?q=4+Hing+Yip+Street%2C+Kwun+Tong%2C+Kowloon%2C+Hong+Kong&format=json&limit=1",
+      "verified_at": "2026-11-28"
+    },
+    "Dream Impact 夢創成真 — 四連房間 Synergy + Dream + Impact (Lai Chi Kok)": {
+      "language": "en",
+      "map_target": "Cheung Sha Wan Road, Lai Chi Kok (street-level point; 760 Cheung Sha Wan Road is not pinned)",
+      "precision": "street",
+      "quote": "長沙灣道 Cheung Sha Wan Road, 荔枝角山 Lai Chi Kok Hill, 荔枝角 Lai Chi Kok, 深水埗區 Sham Shui Po District, 九龍 Kowloon, 香港 Hong Kong, 中国",
+      "source_locator": "captures/geocode_dreamimpact.json — display_name of the returned object: \"長沙灣道 Cheung Sha Wan Road, 荔枝角山 Lai Chi Kok Hill, 荔枝角 Lai Chi Kok, 深水埗區 Sham Shui Po District, 九龍 Kowloon, 香港 Hong Kong, 中国\"",
+      "source_url": "https://nominatim.openstreetmap.org/search?q=760+Cheung+Sha+Wan+Road%2C+Lai+Chi+Kok%2C+Kowloon%2C+Hong+Kong&format=json&limit=1",
+      "verified_at": "2026-11-28"
+    },
+    "Banyan Workspace — Event Venue (Quarry Bay)": {
+      "language": "en",
+      "map_target": "Hoi Chak Street, Quarry Bay (street-level point; Eastern Harbour Centre at 28 Hoi Chak Street is not pinned)",
+      "precision": "street",
+      "quote": "海澤街 Hoi Chak Street, 七姊妹 Tsat Tsz Mui, 鰂魚涌 Quarry Bay, 東區 Eastern District, 香港島 Hong Kong Island, 香港 Hong Kong, 中国",
+      "source_locator": "captures/geocode_banyan.json — display_name of the returned object: \"海澤街 Hoi Chak Street, 七姊妹 Tsat Tsz Mui, 鰂魚涌 Quarry Bay, 東區 Eastern District, 香港島 Hong Kong Island, 香港 Hong Kong, 中国\"",
+      "source_url": "https://nominatim.openstreetmap.org/search?q=28+Hoi+Chak+Street%2C+Quarry+Bay%2C+Hong+Kong&format=json&limit=1",
+      "verified_at": "2026-11-28"
+    },
+    "Hong Kong Science Park — Charles K. Kao Auditorium (Golden Egg)": {
+      "language": "en",
+      "map_target": "Hong Kong Science Park, Pak Shek Kok (whole-site polygon centre)",
+      "precision": "area",
+      "quote": "香港科學園 Hong Kong Science Park, 馬料水 Ma Liu Shui, 沙田區 Sha Tin District, 新界 New Territories, 香港 Hong Kong, 中国",
+      "source_locator": "captures/geocode_hkstp.json — display_name of the returned object: \"香港科學園 Hong Kong Science Park, 馬料水 Ma Liu Shui, 沙田區 Sha Tin District, 新界 New Territories, 香港 Hong Kong, 中国\"",
+      "source_url": "https://nominatim.openstreetmap.org/search?q=Hong+Kong+Science+Park%2C+Pak+Shek+Kok%2C+Sha+Tin%2C+New+Territories%2C+Hong+Kong&format=json&limit=1",
+      "verified_at": "2026-11-28"
+    },
+    "PMQ 元創方 — QUBE Multi-purpose Hall (Central)": {
+      "language": "en",
+      "map_target": "PMQ, 35 Aberdeen Street, Central",
+      "precision": "building",
+      "quote": "Glimpse PMQ, 35, 鴨巴甸街 Aberdeen Street, 蘇豪 SoHo, 上環 Sheung Wan, 中西區 Central and Western District, 香港島 Hong Kong Island, 香港 Hong Kong, 中国",
+      "source_locator": "captures/geocode_pmq.json — display_name of the returned object: \"Glimpse PMQ, 35, 鴨巴甸街 Aberdeen Street, 蘇豪 SoHo, 上環 Sheung Wan, 中西區 Central and Western District, 香港島 Hong Kong Island, 香港 Hong Kong, 中国\"",
+      "source_url": "https://nominatim.openstreetmap.org/search?q=35+Aberdeen+Street%2C+Central%2C+Hong+Kong&format=json&limit=1",
+      "verified_at": "2026-11-28"
+    },
+    "牛池灣文娛中心 演講室 (Ngau Chi Wan Civic Centre Lecture Room)": {
+      "language": "en",
+      "map_target": "Ngau Chi Wan Municipal Services Building, 11 Clear Water Bay Road",
+      "precision": "building",
+      "quote": "牛池灣市政大廈 Ngau Chi Wan Municipal Services Building, 11, 清水灣道 Clear Water Bay Road, 牛池灣 Ngau Chi Wan, 黃大仙區 Wong Tai Sin District, 九龍 Kowloon, 香港 Hong Kong, 中国",
+      "source_locator": "captures/geocode_ncwcc.json — display_name of the returned object: \"牛池灣市政大廈 Ngau Chi Wan Municipal Services Building, 11, 清水灣道 Clear Water Bay Road, 牛池灣 Ngau Chi Wan, 黃大仙區 Wong Tai Sin District, 九龍 Kowloon, 香港 Hong Kong, 中国\"",
+      "source_url": "https://nominatim.openstreetmap.org/search?q=Ngau+Chi+Wan+Municipal+Services+Building%2C+11+Clear+Water+Bay+Road%2C+Kowloon%2C+Hong+Kong&format=json&limit=1",
+      "verified_at": "2026-11-28"
+    }
+  },
+  "photos": {
+    "Garage Society — Wan Chai Event Space (Beverly House)": [
+      {
+        "alt": "Garage Society Wan Chai (Beverly House) event space with people, Lockhart Road — operator photograph \"Event space - lockhart with people 1\"",
+        "alt_basis": "operator_filename",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 1201,
+          "width": 2134
+        },
+        "hotlink_ok": true,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+        "room": "Beverly House event space (4/F)",
+        "room_specific": true,
+        "source_page": "https://www.thegaragesociety.com/service/event-space",
+        "url": "https://cdn.prod.website-files.com/687a08b2627137b9de77f22d/6927ff0d8dff4dc01e78eee3_Event%20space%20-%20lockhart%20with%20people%201.jpg",
+        "verified": {
+          "bytes": 537419,
+          "checked_on": "2026-11-28",
+          "content_type": "image/jpeg",
+          "status": "200"
+        },
+        "view_kind": "past_event",
+        "withheld": false
+      }
+    ],
+    "Garage Society — Causeway Bay Event Space (Tower 535)": [
+      {
+        "alt": "Garage Society Causeway Bay (Tower 535) event space during an event — operator photograph \"535 Events\"",
+        "alt_basis": "operator_filename",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 1536,
+          "width": 2048
+        },
+        "hotlink_ok": true,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+        "room": "Tower 535 event space (16/F)",
+        "room_specific": true,
+        "source_page": "https://www.thegaragesociety.com/service/event-space",
+        "url": "https://cdn.prod.website-files.com/687a08b2627137b9de77f22d/6abf7b0e8ff7c9ae1cdb1efa_535%20Events.jpeg",
+        "verified": {
+          "bytes": 365144,
+          "checked_on": "2026-11-28",
+          "content_type": "image/jpeg",
+          "status": "200"
+        },
+        "view_kind": "past_event",
+        "withheld": false
+      }
+    ],
+    "樹洞香港 TreeholeHK — 灣仔活動場地 AB (Wan Chai venue AB)": [
+      {
+        "alt": "TreeholeHK 灣仔活動場地 AB, interior — operator photograph AB_EventSpace_001",
+        "alt_basis": "operator_filename",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 601,
+          "width": 1024
+        },
+        "hotlink_ok": true,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+        "room": "Room AB",
+        "room_specific": true,
+        "source_page": "https://treehole.hk/wan-chai-venue-rental",
+        "url": "https://treehole.hk/wp-content/uploads/AB_EventSpace_001-3-1024x601.jpg",
+        "verified": {
+          "bytes": 133872,
+          "checked_on": "2026-11-28",
+          "content_type": "image/jpeg",
+          "status": "200"
+        },
+        "view_kind": "interior",
+        "withheld": false
+      },
+      {
+        "alt": "TreeholeHK 灣仔活動場地 AB, interior — operator photograph AB_EventSpace_002",
+        "alt_basis": "operator_filename",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 601,
+          "width": 1024
+        },
+        "hotlink_ok": true,
+        "index": 1,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+        "room": "Room AB",
+        "room_specific": true,
+        "source_page": "https://treehole.hk/wan-chai-venue-rental",
+        "url": "https://treehole.hk/wp-content/uploads/AB_EventSpace_002-3-1024x601.jpg",
+        "verified": {
+          "bytes": 126356,
+          "checked_on": "2026-11-28",
+          "content_type": "image/jpeg",
+          "status": "200"
+        },
+        "view_kind": "interior",
+        "withheld": false
+      }
+    ],
+    "Igather 匯聚會議室 — 中環 E&F 特大型會議廳 (Central E&F hall)": [
+      {
+        "alt": "中環特大型租會議室(E&F room), 100-seat layout — operator photograph \"100 seat\"",
+        "alt_basis": "operator_page_caption",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 1276,
+          "width": 1702
+        },
+        "hotlink_ok": true,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+        "room": "E&F hall",
+        "room_specific": true,
+        "source_page": "https://igather.hk/central_meeting_room.html",
+        "url": "https://igather.hk/images/meeting%20room/100%20seat.jpg",
+        "verified": {
+          "bytes": 479505,
+          "checked_on": "2026-11-28",
+          "content_type": "image/jpeg",
+          "status": "200"
+        },
+        "view_kind": "layout",
+        "withheld": false
+      }
+    ],
+    "Igather 匯聚會議室 — 觀塘 20–40 人會議室 (Kwun Tong meeting room)": [
+      {
+        "alt": "No photograph of this room on a captured operator page",
+        "alt_basis": "none",
+        "checked_on": "2026-11-28",
+        "hotlink_ok": null,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "placement_proof": "Withheld: the captured Kwun Tong page prints the 20-40-person room with its rate, but its two room photographs (img/office/small room.jpg and img/office/Conference Room_1.jpg) carry no caption for that room and one still carries the alt text 尖沙咀會議室 copied from a Tsim Sha Tsui page, so no photograph is tied to this room.",
+        "player_page": null,
+        "rights": null,
+        "rights_basis": "none",
+        "rights_note": "Nothing is shown rather than an exterior, a look-alike or a stock image.",
+        "room": "none",
+        "room_specific": false,
+        "source_page": "https://igather.com.hk/%E8%A7%80%E5%A1%98%E6%9C%83%E8%AD%B0%E5%AE%A4.html",
+        "url": null,
+        "verified": null,
+        "view_kind": null,
+        "withheld": true
+      }
+    ],
+    "AMO HK — 尖沙咀星光行 Unit 824-825 Room A+B (Tsim Sha Tsui)": [
+      {
+        "alt": "AMO Star House Unit 824-825 multi-purpose room, view 01 — operator photograph",
+        "alt_basis": "operator_filename",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 768,
+          "width": 1024
+        },
+        "hotlink_ok": true,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+        "room": "Unit 824-825 Room A+B",
+        "room_specific": true,
+        "source_page": "https://www.amohk.com/venue/",
+        "url": "https://www.amohk.com/wp-content/uploads/2026/06/Unit-824-825-Multi-purpose-Room-01-1024x768.jpg",
+        "verified": {
+          "bytes": 141079,
+          "checked_on": "2026-11-28",
+          "content_type": "image/jpeg",
+          "status": "200"
+        },
+        "view_kind": "interior",
+        "withheld": false
+      },
+      {
+        "alt": "AMO Star House Unit 824-825 multi-purpose room, view 02 — operator photograph",
+        "alt_basis": "operator_filename",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 768,
+          "width": 1024
+        },
+        "hotlink_ok": true,
+        "index": 1,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+        "room": "Unit 824-825 Room A+B",
+        "room_specific": true,
+        "source_page": "https://www.amohk.com/venue/",
+        "url": "https://www.amohk.com/wp-content/uploads/2026/06/Unit-824-825-Multi-purpose-Room-02-1024x768.jpg",
+        "verified": {
+          "bytes": 135603,
+          "checked_on": "2026-11-28",
+          "content_type": "image/jpeg",
+          "status": "200"
+        },
+        "view_kind": "interior",
+        "withheld": false
+      },
+      {
+        "alt": "AMO Star House Unit 824-825 multi-purpose room, view 03 — operator photograph",
+        "alt_basis": "operator_filename",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 768,
+          "width": 1024
+        },
+        "hotlink_ok": true,
+        "index": 2,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+        "room": "Unit 824-825 Room A+B",
+        "room_specific": true,
+        "source_page": "https://www.amohk.com/venue/",
+        "url": "https://www.amohk.com/wp-content/uploads/2026/06/Unit-824-825-Multi-purpose-Room-03-1024x768.jpg",
+        "verified": {
+          "bytes": 124151,
+          "checked_on": "2026-11-28",
+          "content_type": "image/jpeg",
+          "status": "200"
+        },
+        "view_kind": "interior",
+        "withheld": false
+      }
+    ],
+    "The Hive Kennedy Town — 8/F Studios Event Space": [
+      {
+        "alt": "The Hive Kennedy Town 8/F Studios, interior — operator page photograph in the 8/F Studios block",
+        "alt_basis": "operator_page_context",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 624,
+          "width": 868
+        },
+        "hotlink_ok": true,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+        "room": "8/F Studios",
+        "room_specific": true,
+        "source_page": "https://thehivekennedytown.com.hk/events-venue-hire/",
+        "url": "https://thehive.com/wp-content/uploads/2026/10/screenshot-2026-10-06-135854.jpg",
+        "verified": {
+          "bytes": 97291,
+          "checked_on": "2026-11-28",
+          "content_type": "image/jpeg",
+          "status": "200"
+        },
+        "view_kind": "interior",
+        "withheld": false
+      }
+    ],
+    "上環文娛中心 演講廳 (Sheung Wan Civic Centre Lecture Hall)": [
+      {
+        "alt": "上環文娛中心 演講廳, after renovation — LCSD photograph lh_5467",
+        "alt_basis": "operator_filename",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 580,
+          "width": 932
+        },
+        "hotlink_ok": true,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+        "room": "Lecture Hall",
+        "room_specific": true,
+        "source_page": "https://www.lcsd.gov.hk/tc/swcc/facilities/lecturehall.html",
+        "url": "https://www.lcsd.gov.hk/en/swcc/common/images/afrerrenovation/lh_5467.JPG",
+        "verified": {
+          "bytes": 195214,
+          "checked_on": "2026-11-28",
+          "content_type": "image/jpeg",
+          "status": "200"
+        },
+        "view_kind": "interior",
+        "withheld": false
+      },
+      {
+        "alt": "上環文娛中心 演講廳, after renovation — LCSD photograph lh_6442",
+        "alt_basis": "operator_filename",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 580,
+          "width": 932
+        },
+        "hotlink_ok": true,
+        "index": 1,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+        "room": "Lecture Hall",
+        "room_specific": true,
+        "source_page": "https://www.lcsd.gov.hk/tc/swcc/facilities/lecturehall.html",
+        "url": "https://www.lcsd.gov.hk/en/swcc/common/images/afrerrenovation/lh_6442.JPG",
+        "verified": {
+          "bytes": 196286,
+          "checked_on": "2026-11-28",
+          "content_type": "image/jpeg",
+          "status": "200"
+        },
+        "view_kind": "interior",
+        "withheld": false
+      },
+      {
+        "alt": "上環文娛中心 演講廳, after renovation — LCSD photograph lh_5473",
+        "alt_basis": "operator_filename",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 580,
+          "width": 932
+        },
+        "hotlink_ok": true,
+        "index": 2,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+        "room": "Lecture Hall",
+        "room_specific": true,
+        "source_page": "https://www.lcsd.gov.hk/tc/swcc/facilities/lecturehall.html",
+        "url": "https://www.lcsd.gov.hk/en/swcc/common/images/afrerrenovation/lh_5473.JPG",
+        "verified": {
+          "bytes": 172467,
+          "checked_on": "2026-11-28",
+          "content_type": "image/jpeg",
+          "status": "200"
+        },
+        "view_kind": "interior",
+        "withheld": false
+      }
+    ],
+    "Good Lab 好單位 — The Future Workshop Training Space (Lai Chi Kok)": [
+      {
+        "alt": "Good Lab 好單位 The Future Workshop training space, empty room — operator photograph TFW-space",
+        "alt_basis": "operator_filename",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 1920,
+          "width": 2560
+        },
+        "hotlink_ok": true,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+        "room": "The Future Workshop",
+        "room_specific": true,
+        "source_page": "https://www.goodlab.hk/service/venue-hiring",
+        "url": "https://cdn.prod.website-files.com/685a70d69377a26995943634/69b1377a3848489eddf5aa84_TFW-space-scaled.jpg",
+        "verified": {
+          "bytes": 1414753,
+          "checked_on": "2026-11-28",
+          "content_type": "image/jpeg",
+          "status": "200"
+        },
+        "view_kind": "interior",
+        "withheld": false
+      },
+      {
+        "alt": "Good Lab 好單位 The Future Workshop with people — operator photograph TFW-Space_People",
+        "alt_basis": "operator_filename",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 682,
+          "width": 1024
+        },
+        "hotlink_ok": true,
+        "index": 1,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+        "room": "The Future Workshop",
+        "room_specific": true,
+        "source_page": "https://www.goodlab.hk/service/venue-hiring",
+        "url": "https://cdn.prod.website-files.com/685a70d69377a26995943634/69b1378f4518164d2265bf0e_TFW-Space_People.jpg",
+        "verified": {
+          "bytes": 103636,
+          "checked_on": "2026-11-28",
+          "content_type": "image/jpeg",
+          "status": "200"
+        },
+        "view_kind": "past_event",
+        "withheld": false
+      }
+    ],
+    "The Hive Wan Chai — 21/F Indoor Space, Lounge and Studio": [
+      {
+        "alt": "No photograph of this room on a captured operator page",
+        "alt_basis": "none",
+        "checked_on": "2026-11-28",
+        "hotlink_ok": null,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "placement_proof": "Withheld: the captured Hong Kong locations page carries one Wan Chai image (wc-web-1-1) as the location card beside \"The Hive Wan Chai — Premier Coworking Space on Luard Road\", captioned only with the venue name; no image on the page is captioned or placed with the 21/F indoor space, lounge and studio, and the page's own gallery mixes seven other locations.",
+        "player_page": null,
+        "rights": null,
+        "rights_basis": "none",
+        "rights_note": "Nothing is shown rather than an exterior, a look-alike or a stock image.",
+        "room": "none",
+        "room_specific": false,
+        "source_page": "https://thehive.com.hk/events-venue-hire/",
+        "url": null,
+        "verified": null,
+        "view_kind": null,
+        "withheld": true
+      }
+    ],
+    "The Wave — 8/F Event Space (Kwun Tong)": [
+      {
+        "alt": "The Wave 8/F event space set up for a workshop — operator photograph EventSpace_Workshop",
+        "alt_basis": "operator_filename",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 576,
+          "width": 768
+        },
+        "hotlink_ok": true,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+        "room": "8/F Event Space",
+        "room_specific": true,
+        "source_page": "https://thewave.com.hk/services/event-space/",
+        "url": "https://thewave.com.hk/wp-content/uploads/EventSpace_Workshop.jpg",
+        "verified": {
+          "bytes": 124833,
+          "checked_on": "2026-11-28",
+          "content_type": "image/jpeg",
+          "status": "200"
+        },
+        "view_kind": "past_event",
+        "withheld": false
+      },
+      {
+        "alt": "The Wave 8/F event space set up for an exhibition — operator photograph EventSpace_Exhibition",
+        "alt_basis": "operator_filename",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 576,
+          "width": 768
+        },
+        "hotlink_ok": true,
+        "index": 1,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+        "room": "8/F Event Space",
+        "room_specific": true,
+        "source_page": "https://thewave.com.hk/services/event-space/",
+        "url": "https://thewave.com.hk/wp-content/uploads/EventSpace_Exhibition.jpg",
+        "verified": {
+          "bytes": 148396,
+          "checked_on": "2026-11-28",
+          "content_type": "image/jpeg",
+          "status": "200"
+        },
+        "view_kind": "past_event",
+        "withheld": false
+      }
+    ],
+    "Dream Impact 夢創成真 — 四連房間 Synergy + Dream + Impact (Lai Chi Kok)": [
+      {
+        "alt": "Dream Impact Synergy A/B set in theatre layout — operator og:image of the event-space page",
+        "alt_basis": "operator_page_context",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 1365,
+          "width": 2048
+        },
+        "hotlink_ok": true,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "The operator publishes this image as the og:image of the page that sells the four-room combination. It shows Synergy A/B in theatre layout — one of the four rooms booked — not the combined whole, so the record does not claim it depicts the whole combination. Hotlinked, not redistributed.",
+        "room": "Synergy A/B (one of the four rooms in the combination)",
+        "room_specific": false,
+        "source_page": "https://www.dreamimpacthk.com/event-space?lang=zh-hant",
+        "url": "https://www.dreamimpacthk.com/wp-content/uploads/DI-Synergy-AB_Theatre-1.jpg",
+        "verified": {
+          "bytes": 682885,
+          "checked_on": "2026-11-28",
+          "content_type": "image/jpeg",
+          "status": "200"
+        },
+        "view_kind": "layout",
+        "withheld": false
+      }
+    ],
+    "Banyan Workspace — Event Venue (Quarry Bay)": [
+      {
+        "alt": "Team collaboration and corporate offsite workshop in Quarry Bay workspace — operator alt text",
+        "alt_basis": "operator_page_caption",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 315,
+          "width": 444
+        },
+        "hotlink_ok": true,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+        "room": "Event venue (Quarry Bay)",
+        "room_specific": true,
+        "source_page": "https://banyanworkspace.com/event-venue-hong-kong/",
+        "url": "https://banyanworkspace.com/wp-content/uploads/2026/07/Offsites.webp",
+        "verified": {
+          "bytes": 28578,
+          "checked_on": "2026-11-28",
+          "content_type": "image/webp",
+          "status": "200"
+        },
+        "view_kind": "past_event",
+        "withheld": false
+      },
+      {
+        "alt": "Product launch and popup display setup in a modern Quarry Bay venue — operator alt text",
+        "alt_basis": "operator_page_caption",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 315,
+          "width": 444
+        },
+        "hotlink_ok": true,
+        "index": 1,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+        "room": "Event venue (Quarry Bay)",
+        "room_specific": true,
+        "source_page": "https://banyanworkspace.com/event-venue-hong-kong/",
+        "url": "https://banyanworkspace.com/wp-content/uploads/2026/07/Product-Launches.webp",
+        "verified": {
+          "bytes": 21206,
+          "checked_on": "2026-11-28",
+          "content_type": "image/webp",
+          "status": "200"
+        },
+        "view_kind": "past_event",
+        "withheld": false
+      }
+    ],
+    "PMQ 元創方 — QUBE Multi-purpose Hall (Central)": [
+      {
+        "alt": "No photograph of this room on a captured operator page",
+        "alt_basis": "none",
+        "checked_on": "2026-11-28",
+        "hotlink_ok": null,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "placement_proof": "Withheld: the captured PMQ venue page does print one QUBE photograph (event_venue_cube_20180308.jpg), but it is a 5,760 x 3,840 / 9.4 MB original that the page serves with no smaller variant; a 9 MB hotlink behind a 229 px tile was withheld as an unusable asset. The page's other images are a covered space, the Taste Library and exhibition key visuals, none of which is the QUBE hall.",
+        "player_page": null,
+        "rights": null,
+        "rights_basis": "none",
+        "rights_note": "Nothing is shown rather than an exterior, a look-alike or a stock image.",
+        "room": "none",
+        "room_specific": false,
+        "source_page": "https://www.pmq.org.hk/the-site/event-venue-rental/",
+        "url": null,
+        "verified": null,
+        "view_kind": null,
+        "withheld": true
+      }
+    ],
+    "Hong Kong Science Park — Charles K. Kao Auditorium (Golden Egg)": [
+      {
+        "alt": "No photograph of this room on a captured operator page",
+        "alt_basis": "none",
+        "checked_on": "2026-11-28",
+        "hotlink_ok": null,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "placement_proof": "Withheld: the captured MICE venue page photographs the Grand Hall, conference hall, INNO2 multi-function rooms, studio and amphitheatre; no image of the Charles K. Kao Auditorium (Golden Egg) is on the page, and the page banner is a whole-park view. No Commons file on a captured page depicts this auditorium.",
+        "player_page": null,
+        "rights": null,
+        "rights_basis": "none",
+        "rights_note": "Nothing is shown rather than an exterior, a look-alike or a stock image.",
+        "room": "none",
+        "room_specific": false,
+        "source_page": "https://www.hkstp.org/en/rental/space/mice-venue/hong-kong-science-park-mice-venues",
+        "url": null,
+        "verified": null,
+        "view_kind": null,
+        "withheld": true
+      }
+    ],
+    "牛池灣文娛中心 演講室 (Ngau Chi Wan Civic Centre Lecture Room)": [
+      {
+        "alt": "牛池灣文娛中心 演講室 — LCSD photograph \"NCWCC Lecture Room\"",
+        "alt_basis": "operator_filename",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 260,
+          "width": 408
+        },
+        "hotlink_ok": true,
+        "index": 0,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+        "room": "Lecture Room",
+        "room_specific": true,
+        "source_page": "https://www.lcsd.gov.hk/tc/ncwcc/facilities/lectureroom.html",
+        "url": "https://www.lcsd.gov.hk/en/ncwcc/common/images/template%203/Lecture%20Room/NCWCC%20Lecture%20Room.jpg",
+        "verified": {
+          "bytes": 74738,
+          "checked_on": "2026-11-28",
+          "content_type": "image/jpeg",
+          "status": "200"
+        },
+        "view_kind": "interior",
+        "withheld": false
+      },
+      {
+        "alt": "牛池灣文娛中心 演講室 — LCSD photograph \"NCWCC Lecture Room 3\"",
+        "alt_basis": "operator_filename",
+        "checked_on": "2026-11-28",
+        "dimensions": {
+          "height": 260,
+          "width": 408
+        },
+        "hotlink_ok": true,
+        "index": 1,
+        "licence": null,
+        "licence_url": null,
+        "player_page": null,
+        "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+        "rights_basis": "operator_page",
+        "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+        "room": "Lecture Room",
+        "room_specific": true,
+        "source_page": "https://www.lcsd.gov.hk/tc/ncwcc/facilities/lectureroom.html",
+        "url": "https://www.lcsd.gov.hk/en/ncwcc/common/images/template%203/Lecture%20Room/NCWCC%20Lecture%20Room%203.jpg",
+        "verified": {
+          "bytes": 49764,
+          "checked_on": "2026-11-28",
+          "content_type": "image/jpeg",
+          "status": "200"
+        },
+        "view_kind": "interior",
+        "withheld": false
+      }
+    ]
+  },
+  "declared_gaps": [
+    {
+      "kind": "holiday_coverage",
+      "text": "The HK rows of pinned registry edition 3b20667d are seventeen gazetted 2027 general holidays plus one public-holiday coverage row; they carry no school_holiday row. Re-checked 2026-11-28, the Education Bureau school-calendar index publishes only 2026/27 documents and no 2027/28 example calendar, and the EDB legacy school-calendar paths return HTTP 404 (captures/coverage_school_hk_edb_index.html, captures/coverage_school_hk_edb_legacy_404.html). The store therefore asserts no Hong Kong school date for the 2027/28 school year (2027-09-01 to 2028-08-31); it does not say the 2026/27 school year has no holidays, which this check did not establish.",
+      "verified_at": "2026-11-28"
+    },
+    {
+      "kind": "cost",
+      "text": "Eight of the sixteen venues publish no event-space rate at all — AMO, The Hive Kennedy Town, The Hive Wan Chai, Banyan Workspace, The Wave, Good Lab, PMQ and Hong Kong Science Park — so their cost is unknown rather than zero. Dream Impact's bare \"$\" is read as HKD under a stated currency assumption, and Good Lab's bare \"$\" is left unconverted because its own page declares USD. The priced rates are not one product: six are an hourly rate x 8 hours (one of them, Ngau Chi Wan, derived from the published hourly rate), Igather Central is a full-day package, and the Sheung Wan Civic Centre lecture hall is a four-hour session. On the page the five hourly-rate rooms without a recorded `estimated_hours` print their USD figure beside an \"unknown 8h\" window label; the amount is the recorded rate x 8 hours, but the record itself does not state the hours its figure covers.",
+      "verified_at": "2026-11-28"
+    },
+    {
+      "kind": "evidence",
+      "text": "Each of the sixteen room records rests on a single operator or LCSD page for its capacity, rate, hours and equipment; no second independent source was found for any room, and the record dates say so.",
+      "verified_at": "2026-11-28"
+    },
+    {
+      "kind": "photos",
+      "text": "Four of the sixteen venues carry no room photograph and store an explicit withheld record instead: Igather Kwun Tong (no image tied to the 20-40-person room), The Hive Wan Chai (only a location-card image, no caption for the 21/F space), PMQ QUBE (one 5,760 x 3,840 / 9.4 MB original with no smaller variant) and Hong Kong Science Park (no image of the Charles K. Kao Auditorium on the captured page). Dream Impact's single image shows Synergy A/B, one of the four booked rooms, not the combined whole. No Wikimedia image was used: no Commons file on a captured page depicts one of these hired rooms.",
+      "verified_at": "2026-11-28"
+    },
+    {
+      "kind": "licence",
+      "text": "The three local-requirement claims record the city-level rules for language, alcohol and food. They do not say which licence a given venue holds or whether a 50-person private event is covered by it: alcohol and catering stay booking-terms questions on every room, and the food claim records the licence types and the caterer route without deciding the event's own position.",
+      "verified_at": "2026-11-28"
+    },
+    {
+      "kind": "access",
+      "text": "Fourteen of the sixteen rooms publish no booking window at all, so the 12-hour preferred programme is confirmed nowhere. Two records (Igather Central, AMO) publish an all-day opening statement that the approved research bundle scored `allows_to_6`, and no room publishes a covered 09:00-21:00 hire interval; a 09:00 start with an 8-hour floor is the only window the evidence supports.",
+      "verified_at": "2026-11-28"
+    },
+    {
+      "kind": "events",
+      "text": "Eight 2027 calendar rows, each organiser-dated and captured: Consensus Hong Kong 2027 (2027-02-02..03), Hong Kong Web3 Festival 2027 (2027-04-19..21), AIAIS 2027 (2027-01-22..24), AI 2030 Summit Hong Kong 2027 (2027-01-25), the Standard Chartered Hong Kong Marathon 2027 (2027-01-17), Art Basel Hong Kong 2027 (2027-03-25..27), Art Central 2027 (2027-03-24..28) and the Cathay/HSBC Hong Kong Sevens 2027 (2027-04-09..11). No date is recommended and none of the eight is booked.",
+      "verified_at": "2026-11-28"
+    },
+    {
+      "kind": "sources",
+      "text": "Two mandatory discovery lanes could not be read from Hong Kong: Peerspace returned HTTP 403 with a Cloudflare challenge and Venue Report returned HTTP 403 and lands on its home page with no Hong Kong coverage; Tagvenue and Eventective have no Hong Kong inventory. The five programme-wide mandatory sources (Miragather x3, AI Tinkerers, the DeAI Luma feed) carry no check date in this store because the Hong Kong research bundle did not record them, and the page prints that fact.",
+      "verified_at": "2026-11-28"
+    },
+    {
+      "kind": "coordinates",
+      "text": "All sixteen records are building, street or area tier from the saved Nominatim response; no room entrance was verified. Seven are building-tier, seven street-tier and two area-tier: The Hive Kennedy Town sits on a playground node on Smithfield Road rather than the building at 12P Smithfield Road, and Hong Kong Science Park is a whole-site point.",
+      "verified_at": "2026-11-28"
+    }
+  ],
+  "notes": [
+    "Built from the approved research bundle research/hong-kong/2027 (16 venues: 13 shortlist_ready, 3 lead; 15 communities; 8 calendar rows).",
+    "Registry: installed Asia edition 3b20667de940342954040f06d6695d490d8e27515d536969d127a0fa92bacdaf, host scope HK, no supplement; the seventeen HK public-holiday rows and the public-holiday coverage row are used as printed, and the school lane is declared through a dated no_applicable_days finding for 2027/28.",
+    "Paired brief: 50 people, 09:00 start, 8-hour floor (09:00-17:00), 12-hour preferred (09:00-21:00), soft USD 5,000, calendar year 2027, no recommended date.",
+    "Photos: operator gallery first; 21 verified operator images across 12 venues and 4 explicit withheld records; no Wikimedia image was used because no Commons file on a captured page depicts one of these hired rooms."
+  ]
+}

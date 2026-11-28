@@ -1,0 +1,1599 @@
+{
+  "meta": {
+    "generator": "score_venues.py",
+    "schema_version": "2.4",
+    "budget_usd": 5000.0,
+    "target_attendance": 50,
+    "event_date": "2026-11-28",
+    "event_duration_hours": 8,
+    "weights": {
+      "budget_efficiency": 0.2,
+      "capacity_fit": 0.2,
+      "catering_flexibility": 0.15,
+      "recording_suitability": 0.15,
+      "booking_path": 0.1,
+      "evidence_freshness": 0.1,
+      "technical_readiness": 0.05,
+      "event_window_fit": 0.05
+    },
+    "tier_order": [
+      "eligible",
+      "shortlist_ready",
+      "lead"
+    ]
+  },
+  "eligible": [],
+  "shortlist_ready": [
+    {
+      "city_slug": "hong-kong-hk",
+      "source_type": "web",
+      "accessed_on": "2026-11-28",
+      "needs_human_verify": true,
+      "estimated_hours": null,
+      "hourly_rate_usd": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "cost_local_amount": 10000,
+      "cost_local_currency": "HKD",
+      "estimated_cost_usd": 1277.43,
+      "cost_basis": "published_rate",
+      "cost_rate_unit": "day",
+      "opening_hours": "24 hours (FAQ: 營業時間：24小時開放)",
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "allows_to_6",
+      "event_window_evidence": {
+        "url": "https://igather.hk/central_meeting_room.html",
+        "title": "中環會議室租用｜1–100人｜$200起 — Igather (fetched 2026-11-28): 營業時間：24小時開放",
+        "accessed_on": "2026-11-28",
+        "claim": "The operator's FAQ states the Central meeting rooms are open 24 hours, so a 09:00-21:00 event fits the access window."
+      },
+      "name": "Igather 匯聚會議室 — 中環 E&F 特大型會議廳 (Central E&F hall)",
+      "address": "19/F, Hip Shing Hong Centre, 55 Des Voeux Road Central, Central, Hong Kong",
+      "capacity_comfortable": 100,
+      "capacity_basis": "venue_claim",
+      "screen_status": "confirmed",
+      "wifi_status": "confirmed",
+      "catering_policy": "unknown",
+      "recording_suitability": "likely_good",
+      "booking_url": "https://igather.hk/central_meeting_room.html",
+      "latitude": 22.283457,
+      "longitude": 114.156875,
+      "verification_question_kinds": [
+        "availability",
+        "final_quote",
+        "booking_terms",
+        "room_assignment"
+      ],
+      "verification_questions": [
+        "Confirm 2027 Saturday availability of the E&F hall (60-100 people) for 09:00-21:00, and whether the HK$10,000 full-day rate covers a 12-hour day or only the standard full-day block.",
+        "Confirm the tax-inclusive total and whether any deposit or cleaning fee applies (the published rates are quoted without a tax statement).",
+        "Confirm whether alcohol may be served and whether a licence or prior approval is required (the page lists free water only).",
+        "Confirm the exact partition configuration for a 50-person event (the E&F hall is described as 60-100 people and the rate differs from the 30-40 person A&B room at HK$1,200/hour)."
+      ],
+      "source_url": "https://igather.hk/central_meeting_room.html",
+      "source_title": "中環會議室租用｜1–100人｜$200起｜中環站2分鐘 — Igather, fetched 2026-11-28: E&F 60-100 people HK$2,000/hour or HK$10,000 full day; 24-hour opening",
+      "evidence": {
+        "geo": "https://nominatim.openstreetmap.org/search?q=Hip+Shing+Hong+Centre%2C+Des+Voeux+Road+Central%2C+Hong+Kong&format=json&limit=1",
+        "observed_facts": "The Igather Central page (fetched 2026-11-28) lists the address as 香港中環德輔道中55號協成行中心19樓 (19/F, Hip Shing Hong Centre, 55 Des Voeux Road Central); room sizes and rates as 4–6人 D room HK$300/小時, 8–10人 A room HK$600/小時, 24–30人 E room HK$1,000/小時 (全天 HK$5,000), 30–40人 A&B room HK$1,200/小時 (全天 HK$6,000) and 60–100人 E&F room HK$2,000/小時 (全天 HK$10,000); included facilities as '免費提供：高速 WiFi、投影/超大螢幕、白板、白板筆、冷氣、飲用水' (free high-speed Wi-Fi, projection/large screen, whiteboard, markers, air-conditioning, drinking water) with recording and translation equipment bookable; and '營業時間：24小時開放' (open 24 hours). USD basis: HK$10,000 full-day rate x 0.12774267 = USD 1,277.43 (ECB 2026-11-27).",
+        "inference": "The full-day rate is the best-value published package in the sweep for a 60-100 person room with Wi-Fi and a screen, and 24-hour access removes the evening constraint; the 60-person minimum room size means a 50-person event would sit in a larger room than needed.",
+        "nearest_mtr": "Nearest MTR: Central Station, ~210 m straight-line from the stored coordinates (geocode_mtr_central.json 22.2819377, 114.1580765), an estimated ~3 min walk at 1.3 x straight-line / 80 m per min. The operator page does not name a station; the estimate is derived from the recorded coordinates."
+      },
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "availability_unconfirmed",
+        "final_quote_required"
+      ],
+      "score": 0.7314,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.7445,
+          "weight": 0.2,
+          "contribution": 0.1489
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "recording_suitability": {
+          "factor": 0.55,
+          "weight": 0.15,
+          "contribution": 0.0825
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "technical_readiness": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "event_window_fit": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "total": 0.7314
+      }
+    },
+    {
+      "city_slug": "hong-kong-hk",
+      "source_type": "web",
+      "accessed_on": "2026-11-28",
+      "needs_human_verify": true,
+      "estimated_hours": 8,
+      "hourly_rate_usd": 45.98736,
+      "rate_estimate_note": "Official LCSD fee table: 演講室 360元/1小時 standard rate (180元/1小時 concessionary for eligible non-profit groups). Eight hours x HK$360 = HK$2,880; HK$2,880 x 0.12774267 = USD 367.90 (ECB 2026-11-27). Excludes any equipment or service charges.",
+      "hourly_rate_local": 360,
+      "rate_currency": "HKD",
+      "cost_local_amount": 2880,
+      "cost_local_currency": "HKD",
+      "estimated_cost_usd": 367.9,
+      "cost_basis": "estimated_from_rate",
+      "cost_rate_unit": "hour",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "name": "牛池灣文娛中心 演講室 (Ngau Chi Wan Civic Centre Lecture Room)",
+      "address": "2/F, Ngau Chi Wan Municipal Services Building, 11 Clear Water Bay Road, Kowloon, Hong Kong",
+      "capacity_comfortable": 70,
+      "capacity_basis": "venue_claim",
+      "screen_status": "confirmed",
+      "wifi_status": "unknown",
+      "catering_policy": "unknown",
+      "recording_suitability": "likely_good",
+      "booking_url": "https://www.lcsd.gov.hk/tc/ncwcc/hiringarrangement/scaleofcharges.html",
+      "latitude": 22.334556,
+      "longitude": 114.209201,
+      "verification_question_kinds": [
+        "availability",
+        "event_window",
+        "wifi",
+        "final_quote",
+        "booking_terms"
+      ],
+      "verification_questions": [
+        "Confirm whether a 2027 Saturday 09:00-21:00 booking is available (LCSD processes bookings in twice-yearly rounds and prioritises arts-related applications, so availability and priority are both open).",
+        "Confirm the bookable hours and any overtime charge (the fee table prices the lecture room per hour but the captured page does not state the daily opening hours).",
+        "Confirm whether Wi-Fi is available in the lecture room (the facilities page lists an LCD projector, a basic sound system, wired and wireless microphones, a wooden floor, mirrors, a dance barre and chairs, but no Wi-Fi).",
+        "Confirm the total charge for eight hours including any equipment, microphone or technician fees, and whether a deposit applies.",
+        "Confirm whether alcohol may be served and whether a licence or prior approval is required (LCSD venue rules do not appear on the captured pages)."
+      ],
+      "source_url": "https://www.lcsd.gov.hk/tc/ncwcc/hiringarrangement/scaleofcharges.html",
+      "source_title": "牛池灣文娛中心 — 場租收費表 (Ngau Chi Wan Civic Centre hire charges), fetched 2026-11-28: 演講室 360元/1小時 standard, 180元/1小時 concessionary",
+      "evidence": {
+        "geo": "https://nominatim.openstreetmap.org/search?q=Ngau+Chi+Wan+Municipal+Services+Building%2C+11+Clear+Water+Bay+Road%2C+Kowloon%2C+Hong+Kong&format=json&limit=1",
+        "observed_facts": "The LCSD Ngau Chi Wan Civic Centre fee table (fetched 2026-11-28) prices the 演講室 at '360元/1小時' standard and '180元/1小時' concessionary for eligible registered non-profit groups, for 集會、講座、研討會、課堂、舞蹈練習、排練等 uses. The facilities page (fetched 2026-11-28) states the room is 100平方米 with '可容座位數目: 30-70 (座位數目按活動類型而定)' and lists 'LCD投影機、精簡音響系統、無線及有線話筒、木地板、全身鏡、舞蹈排練槓及座椅'. Address: 九龍清水灣道11號牛池灣市政大廈2樓. USD basis: HK$2,880 x 0.12774267 = USD 367.90 (ECB 2026-11-27).",
+        "inference": "At HK$360/hour this is the cheapest 70-seat room with a projector in the sweep, roughly a tenth of the cost of the commercial rooms, but it is a government civic-centre booking with an application round and an arts-priority allocation policy rather than a first-come online calendar.",
+        "nearest_mtr": "Nearest MTR: Choi Hung Station, ~115 m straight-line from the stored coordinates (geocode_mtr_choihung.json 22.3340444, 114.2101746), an estimated ~2 min walk at 1.3 x straight-line / 80 m per min. The LCSD page does not state transport; the estimate is derived from the recorded coordinates."
+      },
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "duration_unconfirmed"
+      ],
+      "score": 0.7178,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.9264,
+          "weight": 0.2,
+          "contribution": 0.1853
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "recording_suitability": {
+          "factor": 0.55,
+          "weight": 0.15,
+          "contribution": 0.0825
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "technical_readiness": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "event_window_fit": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "total": 0.7178
+      }
+    },
+    {
+      "city_slug": "hong-kong-hk",
+      "source_type": "web",
+      "accessed_on": "2026-11-28",
+      "needs_human_verify": true,
+      "estimated_hours": null,
+      "hourly_rate_usd": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "cost_local_amount": 5200,
+      "cost_local_currency": "HKD",
+      "estimated_cost_usd": 664.26,
+      "cost_basis": "published_rate",
+      "cost_rate_unit": "hour",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "name": "樹洞香港 TreeholeHK — 灣仔活動場地 AB (Wan Chai venue AB)",
+      "address": "4/F, Chinachem Johnston Plaza, 178 Johnston Road, Wan Chai, Hong Kong",
+      "capacity_comfortable": 50,
+      "capacity_basis": "seated",
+      "screen_status": "confirmed",
+      "wifi_status": "unknown",
+      "catering_policy": "unknown",
+      "recording_suitability": "likely_good",
+      "booking_url": "https://treehole.hk/wan-chai-venue-rental",
+      "latitude": 22.277836,
+      "longitude": 114.176874,
+      "verification_question_kinds": [
+        "final_quote",
+        "wifi",
+        "booking_terms",
+        "event_window"
+      ],
+      "verification_questions": [
+        "Confirm the tax-inclusive total for an eight-hour Saturday booking at HK$650/hour (Room AB), and whether the 30-minute billing unit applies to a whole-day hire.",
+        "Confirm whether Wi-Fi is provided (the room inventory lists a TV screen, projector, speakers, two wireless mics, a trolley speaker, audio equipment and a whiteboard, but no Wi-Fi).",
+        "Confirm whether alcohol may be served and whether a licence or prior approval is required (the page does not address alcohol).",
+        "Confirm the latest available end time on a Saturday (the page says the venue is open every day including public holidays and is billed hourly, but publishes no closing hour)."
+      ],
+      "source_url": "https://treehole.hk/wan-chai-venue-rental",
+      "source_title": "樹洞香港 TreeholeHK — 灣仔場地租用 (Wan Chai venue rental), fetched 2026-11-28: 活動場地 AB 50 seats at $650/hour, open seven days including public holidays",
+      "evidence": {
+        "geo": "https://nominatim.openstreetmap.org/search?q=178+Johnston+Road%2C+Wan+Chai%2C+Hong+Kong&format=json&limit=1",
+        "observed_facts": "The TreeholeHK venue-rental page (fetched 2026-11-28) states the Wan Chai venue is on 4/F, 178 Johnston Road, over 1,000 sq ft, split into 活動場地 A (20 seats), B (25 seats) and AB (50 seats) plus a ForestGuide room; Room AB is priced '$650 PER HOUR' with a minimum of one hour and half-hour billing; '按小時計算，半小時作單位。最低租用時限為一小時，星期一至日、公眾假期均開放' (billed hourly in half-hour units, one-hour minimum, open Monday to Sunday and public holidays); and lists the room inventory as TV screen, projector, portable speaker with two wireless mics, trolley speaker, audio equipment, up to six long tables and a whiteboard. It describes the rental as self-service ('自助形式'). USD basis: HK$5,200 (8 h x HK$650) x 0.12774267 = USD 664.26 (ECB 2026-11-27).",
+        "inference": "This is the cheapest published 50-seat room in the sweep that is explicitly open on Saturdays and public holidays, which makes it a budget benchmark rather than a premium pick; the self-service model and the absent Wi-Fi line are the trade-offs.",
+        "nearest_mtr": "Nearest MTR: Wan Chai Station, ~415 m straight-line from the stored coordinates (venue 22.277836, 114.176874; geocode_mtr_wanchai.json 22.2775843, 114.1728604), an estimated ~7 min walk at 1.3 x straight-line / 80 m per min. The operator page does not mention transport, so the station and the walk time are a coordinate estimate, not an operator claim."
+      },
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "wifi_unknown",
+        "final_quote_required",
+        "duration_unconfirmed"
+      ],
+      "score": 0.7059,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.8671,
+          "weight": 0.2,
+          "contribution": 0.1734
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "recording_suitability": {
+          "factor": 0.55,
+          "weight": 0.15,
+          "contribution": 0.0825
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "technical_readiness": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "event_window_fit": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "total": 0.7059
+      }
+    },
+    {
+      "city_slug": "hong-kong-hk",
+      "source_type": "web",
+      "accessed_on": "2026-11-28",
+      "needs_human_verify": true,
+      "estimated_hours": null,
+      "hourly_rate_usd": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "cost_local_amount": 7200,
+      "cost_local_currency": "HKD",
+      "estimated_cost_usd": 919.75,
+      "cost_basis": "published_rate",
+      "cost_rate_unit": "hour",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "name": "Igather 匯聚會議室 — 觀塘 20–40 人會議室 (Kwun Tong meeting room)",
+      "address": "49 Hoi Yuen Road, Kwun Tong, Kowloon, Hong Kong",
+      "capacity_comfortable": 40,
+      "capacity_basis": "venue_claim",
+      "screen_status": "confirmed",
+      "wifi_status": "confirmed",
+      "catering_policy": "unknown",
+      "recording_suitability": "likely_good",
+      "booking_url": "https://igather.com.hk/%E8%A7%80%E5%A1%98%E6%9C%83%E8%AD%B0%E5%AE%A4.html",
+      "latitude": 22.311814,
+      "longitude": 114.226377,
+      "verification_question_kinds": [
+        "availability",
+        "final_quote",
+        "event_window",
+        "booking_terms"
+      ],
+      "verification_questions": [
+        "Confirm 2027 Saturday availability of the 20-40 person room for 09:00-21:00 (the page publishes hourly and 10/20-hour packages but no live calendar).",
+        "Confirm the tax-inclusive total for an eight-hour Saturday booking at HK$900/hour, and whether the HK$8,000 ten-hour package is a better fit for a 12-hour day.",
+        "Confirm Saturday air-conditioning beyond 14:00: the page states central air-conditioning runs 08:30-19:00 Monday to Friday and only 08:30-14:00 on Saturday, which would not cover an afternoon or evening event.",
+        "Confirm whether alcohol may be served and whether a licence or prior approval is required (the page does not address alcohol)."
+      ],
+      "source_url": "https://igather.com.hk/%E8%A7%80%E5%A1%98%E6%9C%83%E8%AD%B0%E5%AE%A4.html",
+      "source_title": "觀塘會議室租用 — Igather, fetched 2026-11-28: 20-40 person room HK$900/hour, 10 hours HK$8,000, Saturday central air-conditioning 08:30-14:00",
+      "evidence": {
+        "geo": "https://nominatim.openstreetmap.org/search?q=49+Hoi+Yuen+Road%2C+Kwun+Tong%2C+Kowloon%2C+Hong+Kong&format=json&limit=1",
+        "observed_facts": "The Igather Kwun Tong page (fetched 2026-11-28) lists the address as 觀塘開源道49號創貿廣場; a 20-40人會議室 at HK$900/小時, HK$2,880 for a 09:00-13:00 or 14:00-18:00 block, HK$8,000 for 10 hours and HK$15,000 for 20 hours, billed in one-hour units; and '會議室使用時間：覆蓋共享辦公及辦公室區域的高速無線網路；中央空調: 星期一 至 星期五 08:30 - 19:00，星期六 08:30 - 14:00' (high-speed Wi-Fi across the shared office and office areas; central air-conditioning 08:30-19:00 Monday to Friday and 08:30-14:00 on Saturday). USD basis: HK$7,200 (8 h x HK$900) x 0.12774267 = USD 919.75 (ECB 2026-11-27).",
+        "inference": "The rate is competitive and Wi-Fi is confirmed, but the published Saturday air-conditioning window ends at 14:00, which is the single largest open question for an evening event in this record.",
+        "nearest_mtr": "Nearest MTR: Kwun Tong Station, ~115 m straight-line from the stored coordinates (geocode_mtr_kwuntong.json 22.3113908, 114.2274030), an estimated ~2 min walk at 1.3 x straight-line / 80 m per min. The operator page does not mention transport."
+      },
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "capacity_40_49",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "duration_unconfirmed"
+      ],
+      "score": 0.6607,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.816,
+          "weight": 0.2,
+          "contribution": 0.1632
+        },
+        "capacity_fit": {
+          "factor": 0.7,
+          "weight": 0.2,
+          "contribution": 0.14
+        },
+        "catering_flexibility": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "recording_suitability": {
+          "factor": 0.55,
+          "weight": 0.15,
+          "contribution": 0.0825
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "technical_readiness": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "event_window_fit": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "total": 0.6607
+      }
+    },
+    {
+      "city_slug": "hong-kong-hk",
+      "source_type": "web",
+      "accessed_on": "2026-11-28",
+      "needs_human_verify": true,
+      "estimated_hours": null,
+      "hourly_rate_usd": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "estimated_cost_usd": null,
+      "cost_basis": "unknown",
+      "cost_rate_unit": "unknown",
+      "opening_hours": "24 hours (場地特色: 24 小時開放)",
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "allows_to_6",
+      "event_window_evidence": {
+        "url": "https://www.amohk.com/venue/",
+        "title": "尖沙咀場地租用｜多用途活動空間｜AMO HK (fetched 2026-11-28): 場地特色 24 小時開放",
+        "accessed_on": "2026-11-28",
+        "claim": "The venue's own page lists '24 小時開放' among its headline features, so a 09:00-21:00 event fits the access window."
+      },
+      "name": "AMO HK — 尖沙咀星光行 Unit 824-825 Room A+B (Tsim Sha Tsui)",
+      "address": "Unit 824-825, Star House, 3 Salisbury Road, Tsim Sha Tsui, Kowloon, Hong Kong",
+      "capacity_comfortable": 50,
+      "capacity_basis": "seated",
+      "screen_status": "confirmed",
+      "wifi_status": "unknown",
+      "catering_policy": "unknown",
+      "recording_suitability": "likely_good",
+      "booking_url": "https://www.amohk.com/venue/",
+      "latitude": 22.294684,
+      "longitude": 114.169012,
+      "verification_question_kinds": [
+        "cost_unknown",
+        "wifi",
+        "booking_terms",
+        "availability"
+      ],
+      "verification_questions": [
+        "Confirm the 2027 weekend hourly rate and any minimum hire: the venue's own page publishes capacities but no price, while its Common Room booking listing (captured) shows about HK$1,100/hour for Room A+B and about HK$1,600/hour for the full 824-825 unit at weekends.",
+        "Confirm whether Wi-Fi is included (the page lists a 120-inch LED screen, four-screen synchronised playback, flexible partitions, projector equipment, microphones and a water dispenser, but no Wi-Fi).",
+        "Confirm whether alcohol may be served and whether a licence or prior approval is required (the venue lists non-alcoholic drinks only).",
+        "Confirm 2027 Saturday availability for Room A+B at 09:00-21:00 (the venue advertises 24-hour opening but publishes no calendar)."
+      ],
+      "source_url": "https://www.amohk.com/venue/",
+      "source_title": "尖沙咀場地租用｜多用途活動空間｜AMO HK, fetched 2026-11-28: Unit 824-825 Room A+B 100 theatre / 50 classroom, 120-inch LED screen, 4-screen sync, open 24 hours",
+      "evidence": {
+        "geo": "https://nominatim.openstreetmap.org/search?q=Star+House%2C+3+Salisbury+Road%2C+Tsim+Sha+Tsui%2C+Kowloon%2C+Hong+Kong&format=json&limit=1",
+        "observed_facts": "The AMO HK venue page (fetched 2026-11-28) lists '場地特色: 24 小時開放, 120寸 LED 屏幕, 4 屏同步播放, 靈活間隔'; capacities as Unit 824-825 Full House 劇院/講座形式 230人 / 課堂形式 100人, Room A 56/30, Room B 40/24, Room C 80/44, Room A+B 100/50, Room B+C 140/70, Unit 1033 130/65; and the address as 香港尖沙咀梭士巴利道星光行824-825, 及 1033 室. The page carries no price. A Common Room booking listing for the same venue (captured separately) states Room A+B 劇院 100人 / 課堂 50人 at about HK$1,100/hour at weekends and the full unit at about HK$1,600/hour at weekends, with projector, handheld and headset microphones, sound system, flipcharts, Wi-Fi, water dispenser, tables and chairs included. Cost is therefore left null with a confirm-cost question.",
+        "inference": "A 24-hour, LED-screened room one minute from Tsim Sha Tsui MTR with a 50-seat classroom layout is close to an ideal format fit; the absence of a price on the operator's own page is the only reason it is not priced here."
+      },
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "cost_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed"
+      ],
+      "score": 0.6575,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.5,
+          "weight": 0.2,
+          "contribution": 0.1
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "recording_suitability": {
+          "factor": 0.55,
+          "weight": 0.15,
+          "contribution": 0.0825
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "technical_readiness": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "event_window_fit": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "total": 0.6575
+      }
+    },
+    {
+      "city_slug": "hong-kong-hk",
+      "source_type": "web",
+      "accessed_on": "2026-11-28",
+      "needs_human_verify": true,
+      "estimated_hours": null,
+      "hourly_rate_usd": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "estimated_cost_usd": null,
+      "cost_basis": "unknown",
+      "cost_rate_unit": "unknown",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "name": "The Hive Kennedy Town — 8/F Studios Event Space",
+      "address": "6/F, Cheung Hing Industrial Building, 12P Smithfield Road, Kennedy Town, Hong Kong",
+      "capacity_comfortable": 50,
+      "capacity_basis": "seated",
+      "screen_status": "confirmed",
+      "wifi_status": "confirmed",
+      "catering_policy": "unknown",
+      "recording_suitability": "likely_good",
+      "booking_url": "https://thehivekennedytown.com.hk/events-venue-hire/",
+      "latitude": 22.283674,
+      "longitude": 114.128251,
+      "verification_question_kinds": [
+        "cost_unknown",
+        "availability",
+        "booking_terms",
+        "event_window"
+      ],
+      "verification_questions": [
+        "Confirm the 2027 hourly rate for the 8/F Studios Event Space (the page describes the room and says 'Summer-Exclusive Packages Available — Enquire now', with no rate published; an older search-engine snippet quoting HK$1,200/hour could not be found on the live page).",
+        "Confirm 2027 Saturday availability and the end time (the page describes the room as suited to 'evening and weekend events' but publishes no hours).",
+        "Confirm whether alcohol may be served and whether a licence or prior approval is required (the page does not address alcohol).",
+        "Confirm whether outside caterers are allowed (the page lists complimentary coffee and tea but no catering policy)."
+      ],
+      "source_url": "https://thehivekennedytown.com.hk/events-venue-hire/",
+      "source_title": "The Hive Kennedy Town — Events Venue Hire, fetched 2026-11-28: 8/F Studios Event Space 50 seated / 80 standing with high-speed Wi-Fi, screen projector and sound system",
+      "evidence": {
+        "geo": "https://nominatim.openstreetmap.org/search?q=Smithfield+Road%2C+Kennedy+Town%2C+Hong+Kong&format=json&limit=1",
+        "observed_facts": "The Hive Kennedy Town events page (fetched 2026-11-28) describes 'The Hive Studios Event Space — 50 seated, 80 standing. A unique space with high ceilings on 8/F. Ideal for larger evening and weekend events of all kinds. High Speed WiFi. Screen Projector & Sound System (speakers + mics). Summer-Exclusive Packages Available. Enquire now to learn more.' The only published rates on the page are for the meeting rooms ('12 seats – from $500 per Hour, 8 seats – $300 per Hour') and a day pass (HKD 300/person/day). Address: 6/F, Cheung Hing Industrial Building, 12P Smithfield Road, Kennedy Town. Cost is left null with a confirm-cost question.",
+        "inference": "Capacity, AV and Wi-Fi are all confirmed for a 50-person room, so the venue is a strong format fit, but the event-space rate has been removed from the page since the August 2026 run, which recorded HK$1,250-2,500/hour from it.",
+        "nearest_mtr": "Nearest MTR: Kennedy Town Station, ~265 m straight-line from the stored coordinates (geocode_mtr_kennedytown.json 22.2813400, 114.1277042), an estimated ~4 min walk at 1.3 x straight-line / 80 m per min; HKU Station is ~620 m. The operator page does not mention transport, so this is a coordinate estimate."
+      },
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "cost_unknown",
+        "availability_unconfirmed",
+        "duration_unconfirmed"
+      ],
+      "score": 0.6575,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.5,
+          "weight": 0.2,
+          "contribution": 0.1
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "recording_suitability": {
+          "factor": 0.55,
+          "weight": 0.15,
+          "contribution": 0.0825
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "technical_readiness": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "event_window_fit": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "total": 0.6575
+      }
+    },
+    {
+      "city_slug": "hong-kong-hk",
+      "source_type": "web",
+      "accessed_on": "2026-11-28",
+      "needs_human_verify": true,
+      "estimated_hours": null,
+      "hourly_rate_usd": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "cost_local_amount": 1330,
+      "cost_local_currency": "HKD",
+      "estimated_cost_usd": 169.9,
+      "cost_basis": "published_rate",
+      "cost_rate_unit": "event",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "name": "上環文娛中心 演講廳 (Sheung Wan Civic Centre Lecture Hall)",
+      "address": "5/F, Sheung Wan Municipal Services Building, 345 Queen's Road Central, Sheung Wan, Hong Kong",
+      "capacity_comfortable": 150,
+      "capacity_basis": "venue_claim",
+      "screen_status": "confirmed",
+      "wifi_status": "unknown",
+      "catering_policy": "unknown",
+      "recording_suitability": "likely_good",
+      "booking_url": "https://www.lcsd.gov.hk/tc/swcc/hiringinformation/scaleofhirecharges.html",
+      "latitude": 22.286154,
+      "longitude": 114.149526,
+      "verification_question_kinds": [
+        "availability",
+        "final_quote",
+        "event_window",
+        "wifi",
+        "booking_terms"
+      ],
+      "verification_questions": [
+        "Confirm the total charge for a 2027 Saturday 09:00-17:00 (or 09:00-21:00) booking: the fee table prices 演講、研討會 at 1,330元 per 4-hour session, so a longer day is a multiple of the session price plus any overtime charge.",
+        "Confirm whether a 2027 Saturday is available (LCSD allocates performance venues through booking rounds and gives arts-related programmes priority).",
+        "Confirm the bookable hours (the captured fee table does not state the daily opening hours) and whether an evening close at 21:00 is possible.",
+        "Confirm whether Wi-Fi is available in the hall (the facilities page lists raked seating, a slide projector and a projector only).",
+        "Confirm whether alcohol may be served and whether a licence or prior approval is required (LCSD venue rules do not appear on the captured pages)."
+      ],
+      "source_url": "https://www.lcsd.gov.hk/tc/swcc/hiringinformation/scaleofhirecharges.html",
+      "source_title": "上環文娛中心 — 場租收費表 (Sheung Wan Civic Centre hire charges), fetched 2026-11-28: 演講廳 1,330元/4小時 standard, 465元/4小時 concessionary; capacity 150",
+      "evidence": {
+        "geo": "https://nominatim.openstreetmap.org/search?q=Sheung+Wan+Municipal+Services+Building%2C+345+Queen's+Road+Central%2C+Sheung+Wan%2C+Hong+Kong&format=json&limit=1",
+        "observed_facts": "The LCSD Sheung Wan Civic Centre fee table (fetched 2026-11-28) prices the 演講廳 for '演講、研討會、小型表演及獨奏會等' at '1,330元/4小時' standard and '465元/4小時' concessionary, and for '日間免費講座、典禮等' at '670元/4小時'. The facilities page (fetched 2026-11-28) states '座位數目: 150', stage 6.9 m wide x 4.5 m deep, facilities '梯階式排列座位、幻燈片放映及投影機' (raked seating, slide projector and projector), '適合舉辦講座、課程、研討會及演奏會'. Address: 香港皇后大道中345號上環市政大廈5樓. USD basis: HK$1,330 (one 4-hour session) x 0.12774267 = USD 169.90 (ECB 2026-11-27); the captured fee table prices the hall in 4-hour sessions, so an 8-hour or 12-hour day would be a multiple of that session price.",
+        "inference": "A 150-seat raked lecture hall five minutes from Sheung Wan MTR at HK$1,330 per four-hour session is the strongest value-for-capacity option in the sweep, provided an arts-oriented community event can win a booking slot and a Saturday in 2027."
+      },
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "duration_unconfirmed"
+      ],
+      "score": 0.6457,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.966,
+          "weight": 0.2,
+          "contribution": 0.1932
+        },
+        "capacity_fit": {
+          "factor": 0.6,
+          "weight": 0.2,
+          "contribution": 0.12
+        },
+        "catering_flexibility": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "recording_suitability": {
+          "factor": 0.55,
+          "weight": 0.15,
+          "contribution": 0.0825
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "technical_readiness": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "event_window_fit": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "total": 0.6457
+      }
+    },
+    {
+      "city_slug": "hong-kong-hk",
+      "source_type": "web",
+      "accessed_on": "2026-11-28",
+      "needs_human_verify": true,
+      "estimated_hours": null,
+      "hourly_rate_usd": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "estimated_cost_usd": null,
+      "cost_basis": "unknown",
+      "cost_rate_unit": "unknown",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "name": "Good Lab 好單位 — The Future Workshop Training Space (Lai Chi Kok)",
+      "address": "Room 1303, Charm Centre, 700 Castle Peak Road, Lai Chi Kok, Kowloon, Hong Kong",
+      "capacity_comfortable": 50,
+      "capacity_basis": "venue_claim",
+      "screen_status": "confirmed",
+      "wifi_status": "unknown",
+      "catering_policy": "unknown",
+      "recording_suitability": "likely_good",
+      "booking_url": "https://www.goodlab.hk/service/venue-hiring",
+      "latitude": 22.338613,
+      "longitude": 114.141399,
+      "verification_question_kinds": [
+        "cost_unknown",
+        "wifi",
+        "availability",
+        "booking_terms",
+        "event_window"
+      ],
+      "verification_questions": [
+        "Confirm whether the published rate table ($900-$1,200 per hour for the 720 sq ft Training Space and $1,500-$1,800 for the 1,170 sq ft Training Space + Cafe Area) is in HKD or USD: the page prints a bare '$' and its Webflow currency setting declares USD, which would make an HK community rate implausible.",
+        "Confirm whether Wi-Fi is provided (the page lists an AV system, 12 tables, a whiteboard and a flipchart, but no Wi-Fi).",
+        "Confirm 2027 Saturday availability and whether non-office-hour rates apply (the rate table distinguishes office-hour from non-office-hour pricing but publishes no hours).",
+        "Confirm whether alcohol may be served and whether a licence or prior approval is required (the page does not address alcohol).",
+        "Confirm the bookable end time on a Saturday and whether non-office-hour pricing covers an evening close (the rate table separates office-hour and non-office-hour pricing but publishes no hours)."
+      ],
+      "source_url": "https://www.goodlab.hk/service/venue-hiring",
+      "source_title": "Venue Hiring ＠ Lai Chi Kok 荔枝角 — Good Lab 好單位, fetched 2026-11-28: Training Space max 50 persons (720 sq ft) $900-$1,200/hour, Training Space + Cafe Area max 80 persons (1,170 sq ft) $1,500-$1,800/hour",
+      "evidence": {
+        "geo": "https://nominatim.openstreetmap.org/search?q=700+Castle+Peak+Road%2C+Lai+Chi+Kok%2C+Hong+Kong&format=json&limit=1",
+        "observed_facts": "The Good Lab venue-hiring page (fetched 2026-11-28) lists 'Training Space — Approx. 720 sq ft — Max 50 persons — AV System / Table x 12 / Whiteboard and flipchart board' at 'NGO /SE Rate $900, Standard Rate $1,000' (office hour) and '$1,000 / $1,200' (non-office hour); and 'Training Space + Cafe Area — Approx. 1,170 sq ft — Max 80 persons' at '$1,500 / $1,700' (office hour) and '$1,600 / $1,800' (non-office hour). It states 'Booking hours should include the time for venue set up and tidy up' and 'All bookings require a 2-hour minimum'. The page's embedded Webflow currency setting is {\"currencyCode\":\"USD\",\"symbol\":\"$\"}. Address: 1303 Charm Centre, 700 Castle Peak Road, Kowloon. Cost is left null with a confirm-currency question.",
+        "inference": "The 50-person Training Space is the right size and its AV is described, but the currency ambiguity makes any USD conversion unsafe; this is the same open question the August 2026 run recorded, and it is still unresolved.",
+        "nearest_mtr": "Nearest MTR: Lai Chi Kok Station. The operator page states 'just 2-min walk from MTR station' in Lai Chi Kok. The stored coordinates are ~710 m straight-line from Lai Chi Kok Station (geocode_mtr_laichikok.json 22.3366732, 114.1479840), an estimated ~11-12 min walk at 1.3 x straight-line / 80 m per min, so the operator's 2-minute claim is not corroborated by the coordinates and needs confirmation on arrival."
+      },
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "cost_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "duration_unconfirmed"
+      ],
+      "score": 0.6325,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.5,
+          "weight": 0.2,
+          "contribution": 0.1
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "recording_suitability": {
+          "factor": 0.55,
+          "weight": 0.15,
+          "contribution": 0.0825
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "technical_readiness": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "event_window_fit": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "total": 0.6325
+      }
+    },
+    {
+      "city_slug": "hong-kong-hk",
+      "source_type": "web",
+      "accessed_on": "2026-11-28",
+      "needs_human_verify": true,
+      "estimated_hours": null,
+      "hourly_rate_usd": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "estimated_cost_usd": null,
+      "cost_basis": "unknown",
+      "cost_rate_unit": "unknown",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "name": "The Hive Wan Chai — 21/F Indoor Space, Lounge and Studio",
+      "address": "21/F, The Phoenix, 23 Luard Road, Wan Chai, Hong Kong",
+      "capacity_comfortable": 100,
+      "capacity_basis": "venue_claim",
+      "screen_status": "confirmed",
+      "wifi_status": "unknown",
+      "catering_policy": "unknown",
+      "recording_suitability": "likely_good",
+      "booking_url": "https://thehive.com.hk/events-venue-hire/",
+      "latitude": 22.278709,
+      "longitude": 114.171564,
+      "verification_question_kinds": [
+        "cost_unknown",
+        "wifi",
+        "availability",
+        "booking_terms",
+        "event_window"
+      ],
+      "verification_questions": [
+        "Confirm the 2027 hourly rate for the 21/F indoor space (the page publishes no event-space rate; an August 2026 reading of the same page recorded HK$2,500/hour for the indoor space and HK$1,250/hour for the combined space, and neither figure appears on the page today).",
+        "Confirm whether Wi-Fi is provided (the page lists a high-quality sound system and projectors for the indoor lounge and studio, but no Wi-Fi line).",
+        "Confirm 2027 Saturday availability and the end time (the page publishes no hours).",
+        "Confirm whether alcohol may be served and whether a licence or prior approval is required (the page does not address alcohol).",
+        "Confirm the bookable end time on a Saturday (the page describes a 21st-floor indoor space and terrace but publishes no opening hours)."
+      ],
+      "source_url": "https://thehive.com.hk/events-venue-hire/",
+      "source_title": "The Hive Wan Chai — Events Venue Hire, fetched 2026-11-28: outdoor patio, indoor lounge and studio with sound system and projectors, 'can fit 50-100 guests'",
+      "evidence": {
+        "geo": "https://nominatim.openstreetmap.org/search?q=23+Luard+Road%2C+Wan+Chai%2C+Hong+Kong&format=json&limit=1",
+        "observed_facts": "The Hive Wan Chai events page (fetched 2026-11-28) states the venue is 'located steps from Wan Chai MTR on Luard Road', describes a '21st-floor sun terrace', and lists 'Outdoor patio, Indoor lounge and studio with high quality sound system and projectors, stylish interiors that can fit 50-100 guests'. No event-space rate appears on the page. Cost is left null with a confirm-cost question.",
+        "inference": "The venue is well located and the 50-100 guest range brackets the target, but neither a rate nor a Wi-Fi statement survives on the live page, so it is a discovery lead rather than a priced comparison."
+      },
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "cost_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "duration_unconfirmed"
+      ],
+      "score": 0.6325,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.5,
+          "weight": 0.2,
+          "contribution": 0.1
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "recording_suitability": {
+          "factor": 0.55,
+          "weight": 0.15,
+          "contribution": 0.0825
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "technical_readiness": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "event_window_fit": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "total": 0.6325
+      }
+    },
+    {
+      "city_slug": "hong-kong-hk",
+      "source_type": "web",
+      "accessed_on": "2026-11-28",
+      "needs_human_verify": true,
+      "estimated_hours": null,
+      "hourly_rate_usd": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "cost_local_amount": 25600,
+      "cost_local_currency": "HKD",
+      "estimated_cost_usd": 3270.21,
+      "cost_basis": "published_rate",
+      "cost_rate_unit": "hour",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "name": "Garage Society — Wan Chai Event Space (Beverly House)",
+      "address": "4/F, Beverly House, 93 Lockhart Road, Wan Chai, Hong Kong",
+      "capacity_comfortable": 70,
+      "capacity_basis": "seated",
+      "screen_status": "confirmed",
+      "wifi_status": "confirmed",
+      "catering_policy": "unknown",
+      "recording_suitability": "likely_good",
+      "booking_url": "https://www.thegaragesociety.com/service/event-space",
+      "latitude": 22.278676,
+      "longitude": 114.177322,
+      "verification_question_kinds": [
+        "availability",
+        "final_quote",
+        "booking_terms",
+        "event_window"
+      ],
+      "verification_questions": [
+        "Confirm 2027 Saturday availability for the Wan Chai space at 09:00-21:00 (the page publishes an hourly rate and a two-hour minimum but no opening hours and no live calendar).",
+        "Confirm the tax-inclusive total for an eight-hour Saturday booking at HK$3,200/hour (the published rate does not say whether tax or service charge is included).",
+        "Confirm whether alcohol may be served and whether a licence or the venue's prior approval is required (the page does not address alcohol).",
+        "Confirm whether outside caterers are allowed and whether a catering fee applies (the page lists pantry, restroom and complimentary tea/coffee, but no catering policy)."
+      ],
+      "source_url": "https://www.thegaragesociety.com/service/event-space",
+      "source_title": "Garage Society — Event Space (Hong Kong), fetched 2026-11-28: two venues, Causeway Bay up to 40 and Wan Chai 70 seated / 100 standing, HK$2,000 and HK$3,200 per hour",
+      "evidence": {
+        "geo": "https://nominatim.openstreetmap.org/search?q=93+Lockhart+Road%2C+Wan+Chai%2C+Hong+Kong&format=json&limit=1",
+        "observed_facts": "The Garage Society event-space page (fetched 2026-11-28) states: 'Beverly House in Wan Chai seats 70 and holds 100 standing' in 2,248 sq ft on 4/F, 93 Lockhart Road, two minutes from MTR Exit A1; 'HK$3,200 per hour, with a two hour minimum'; '110 inch video wall, 55 inch touchscreen, two HD projectors, and HDMI, Chromecast and Apple TV connectivity'; 'High-speed WiFi'; 'Full A/V included — Screens, projection and wireless connectivity are part of every booking'; 'WiFi, restroom and pantry on request, plus complimentary tea, coffee and water'. The page also says the team will 'recommend the right venue and layout' after being told the date, headcount and format. USD basis: HK$25,600 (8 h x HK$3,200) x 0.12774267 = USD 3,270.21 (ECB 2026-11-27).",
+        "inference": "The Wan Chai room is the only 70-seated Hong Kong venue in this sweep that publishes both a capacity and an hourly rate on its own page, and its AV inventory is fully described; the open items are commercial (tax, alcohol, catering, hours), not physical."
+      },
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "availability_unconfirmed",
+        "final_quote_required",
+        "duration_unconfirmed"
+      ],
+      "score": 0.6267,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.346,
+          "weight": 0.2,
+          "contribution": 0.0692
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "recording_suitability": {
+          "factor": 0.55,
+          "weight": 0.15,
+          "contribution": 0.0825
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "technical_readiness": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "event_window_fit": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "total": 0.6267
+      }
+    },
+    {
+      "city_slug": "hong-kong-hk",
+      "source_type": "web",
+      "accessed_on": "2026-11-28",
+      "needs_human_verify": true,
+      "estimated_hours": null,
+      "hourly_rate_usd": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "cost_local_amount": 16000,
+      "cost_local_currency": "HKD",
+      "estimated_cost_usd": 2043.88,
+      "cost_basis": "published_rate",
+      "cost_rate_unit": "hour",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "name": "Garage Society — Causeway Bay Event Space (Tower 535)",
+      "address": "16/F, Tower 535, 535 Jaffe Road, Causeway Bay, Hong Kong",
+      "capacity_comfortable": 40,
+      "capacity_basis": "seated",
+      "screen_status": "confirmed",
+      "wifi_status": "confirmed",
+      "catering_policy": "unknown",
+      "recording_suitability": "likely_good",
+      "booking_url": "https://www.thegaragesociety.com/service/event-space",
+      "latitude": 22.281327,
+      "longitude": 114.183927,
+      "verification_question_kinds": [
+        "availability",
+        "final_quote",
+        "booking_terms",
+        "event_window"
+      ],
+      "verification_questions": [
+        "Confirm 2027 Saturday availability for the Causeway Bay space (the page publishes hourly and six-hour packages but no opening hours and no live calendar).",
+        "Confirm the tax-inclusive total for an eight-hour Saturday booking at HK$2,000/hour, and whether the HK$10,000 six-hour package can be extended to eight hours.",
+        "Confirm whether alcohol may be served and whether a licence or the venue's prior approval is required (the page does not address alcohol).",
+        "Confirm whether outside caterers are allowed and whether a catering fee applies (the page lists pantry and complimentary tea/coffee only)."
+      ],
+      "source_url": "https://www.thegaragesociety.com/service/event-space",
+      "source_title": "Garage Society — Event Space (Hong Kong), fetched 2026-11-28: Tower 535, Causeway Bay, up to 40 people in 516 sq ft, HK$2,000 per hour or HK$10,000 for six hours",
+      "evidence": {
+        "geo": "https://nominatim.openstreetmap.org/search?q=Tower+535%2C+535+Jaffe+Road%2C+Causeway+Bay%2C+Hong+Kong&format=json&limit=1",
+        "observed_facts": "The Garage Society event-space page (fetched 2026-11-28) states: '16/F, 535 Jaffe Road, two minutes from MTR Exit D1'; 'Up to 40 people in 516 sq ft, with full A/V'; 'HK$2,000 per hour, or HK$10,000 for six hours'; 'WiFi, restroom and pantry on request, plus complimentary tea, coffee and water'; and that full AV (screens, projection, wireless connectivity) is part of every booking. USD basis: HK$16,000 (8 h x HK$2,000) x 0.12774267 = USD 2,043.88 (ECB 2026-11-27).",
+        "inference": "The room is priced and fully described but seats 40, so a 50-person event would be at its ceiling; it is recorded as a capacity-40-49 option rather than a primary room."
+      },
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "capacity_40_49",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "duration_unconfirmed"
+      ],
+      "score": 0.6157,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.5912,
+          "weight": 0.2,
+          "contribution": 0.1182
+        },
+        "capacity_fit": {
+          "factor": 0.7,
+          "weight": 0.2,
+          "contribution": 0.14
+        },
+        "catering_flexibility": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "recording_suitability": {
+          "factor": 0.55,
+          "weight": 0.15,
+          "contribution": 0.0825
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "technical_readiness": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "event_window_fit": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "total": 0.6157
+      }
+    },
+    {
+      "city_slug": "hong-kong-hk",
+      "source_type": "web",
+      "accessed_on": "2026-11-28",
+      "needs_human_verify": true,
+      "estimated_hours": null,
+      "hourly_rate_usd": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "estimated_cost_usd": null,
+      "cost_basis": "unknown",
+      "cost_rate_unit": "unknown",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "name": "The Wave — 8/F Event Space (Kwun Tong)",
+      "address": "4 Hing Yip Street, Kwun Tong, Kowloon, Hong Kong",
+      "capacity_comfortable": 500,
+      "capacity_basis": "venue_claim",
+      "screen_status": "confirmed",
+      "wifi_status": "confirmed",
+      "catering_policy": "unknown",
+      "recording_suitability": "likely_good",
+      "booking_url": "https://thewave.com.hk/services/event-space/",
+      "latitude": 22.309274,
+      "longitude": 114.22516,
+      "verification_question_kinds": [
+        "cost_unknown",
+        "availability",
+        "booking_terms",
+        "room_assignment",
+        "event_window"
+      ],
+      "verification_questions": [
+        "Confirm the 2027 all-in rate for a partitioned section of the 8/F space sized for 50-150 people (the page publishes no rate and asks enquirers to call or email for a quote).",
+        "Confirm 2027 Saturday availability and the end time (the page publishes no hours).",
+        "Confirm whether alcohol may be served and whether a licence or prior approval is required (the page does not address alcohol).",
+        "Confirm which partitioned configuration and floor area would be assigned to a 50-person event, since the published range is 520-6,000 sq ft.",
+        "Confirm the bookable end time on a Saturday and whether a partitioned section can be hired from 09:00 to 21:00 (the page publishes a floor area range but no hours)."
+      ],
+      "source_url": "https://thewave.com.hk/services/event-space/",
+      "source_title": "The Wave — Event Space, fetched 2026-11-28: 520-6,000 sq ft, up to 500 people, high-speed Wi-Fi, projectors, P1.86 LED screen, quote on enquiry",
+      "evidence": {
+        "geo": "https://nominatim.openstreetmap.org/search?q=4+Hing+Yip+Street%2C+Kwun+Tong%2C+Kowloon%2C+Hong+Kong&format=json&limit=1",
+        "observed_facts": "The Wave event-space page (fetched 2026-11-28) states the venue is 'an iconic landmark in the heart of Kwun Tong', provides event spaces with 'high-speed Wi-Fi, projectors, printers and audio equipment', 'We can accommodate up to 500 people. It can be partitioned into smaller function rooms for different purposes', floor space '520 ﹣ 6,000 sq. ft.', and a 'P1.86 LED Display Screen'; it adds 'Simply call or email us with the details of your enquiry and we will quickly reply with a quote for the event space.' Address: 4 Hing Yip Street, Kwun Tong. Cost is left null with a confirm-cost question.",
+        "inference": "A 6,000 sq ft floor that partitions down to 520 sq ft could host a 50-person day, but without a published rate or room-level capacity the fit is unproven and the record stays unpriced.",
+        "nearest_mtr": "Nearest MTR: Kwun Tong Station Exit B1. The operator page gives the address as '4 Hing Yip Street, Kwun Tong, Hong Kong (MTR Exit B1)' and lists 'Short walk from MTR station' among its facilities; the stored coordinates are ~330 m straight-line from Kwun Tong Station (geocode_mtr_kwuntong.json), an estimated ~5 min walk."
+      },
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "oversized_capacity",
+        "cost_unknown",
+        "availability_unconfirmed",
+        "duration_unconfirmed"
+      ],
+      "score": 0.4575,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.5,
+          "weight": 0.2,
+          "contribution": 0.1
+        },
+        "capacity_fit": {
+          "factor": 0.0,
+          "weight": 0.2,
+          "contribution": 0.0
+        },
+        "catering_flexibility": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "recording_suitability": {
+          "factor": 0.55,
+          "weight": 0.15,
+          "contribution": 0.0825
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "technical_readiness": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "event_window_fit": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "total": 0.4575
+      }
+    },
+    {
+      "city_slug": "hong-kong-hk",
+      "source_type": "web",
+      "accessed_on": "2026-11-28",
+      "needs_human_verify": true,
+      "estimated_hours": null,
+      "hourly_rate_usd": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "cost_local_amount": 21400,
+      "cost_local_currency": "HKD",
+      "estimated_cost_usd": 2733.69,
+      "cost_basis": "published_rate",
+      "cost_rate_unit": "hour",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "name": "Dream Impact 夢創成真 — 四連房間 Synergy + Dream + Impact (Lai Chi Kok)",
+      "address": "Unit C, 4/F, 760 Cheung Sha Wan Road, Lai Chi Kok, Kowloon, Hong Kong",
+      "capacity_comfortable": 200,
+      "capacity_basis": "venue_claim",
+      "screen_status": "unknown",
+      "wifi_status": "unknown",
+      "catering_policy": "unknown",
+      "recording_suitability": "unknown",
+      "booking_url": "https://dreamimpacthk.com/event-space?lang=zh-hant",
+      "latitude": 22.337134,
+      "longitude": 114.141313,
+      "verification_question_kinds": [
+        "final_quote",
+        "screen",
+        "wifi",
+        "availability",
+        "booking_terms",
+        "event_window"
+      ],
+      "verification_questions": [
+        "Confirm the currency of the published rate table: the page prints '$2,140 / $2,415 / $2,675' per hour without an HK$ marker, and it is recorded here as HKD on the basis that this is a Hong Kong venue's Chinese-language page.",
+        "Confirm what AV is included: the captured page describes room sizes, capacities and hourly rates but does not list a projector, screen, sound system or Wi-Fi.",
+        "Confirm whether Wi-Fi is provided and whether it is included in the room rate.",
+        "Confirm 2027 Saturday availability for the four-room combination and whether the weekend rate (W) applies for the whole day.",
+        "Confirm whether alcohol may be served and whether a licence or prior approval is required (the page mentions a pantry used for wine-tasting workshops but states no licensing position).",
+        "Confirm the bookable end time on a Saturday for the four-room combination (the page prices weekday office hours as 09:00-18:00 and weekends separately, but publishes no closing hour)."
+      ],
+      "source_url": "https://dreamimpacthk.com/event-space?lang=zh-hant",
+      "source_title": "荔枝角活動場地租用｜30–200 人多用途活動空間 — Dream Impact 夢創成真, fetched 2026-11-28: 四連房間 200人, weekend rate $2,675/hour",
+      "evidence": {
+        "geo": "https://nominatim.openstreetmap.org/search?q=760+Cheung+Sha+Wan+Road%2C+Lai+Chi+Kok%2C+Kowloon%2C+Hong+Kong&format=json&limit=1",
+        "observed_facts": "The Dream Impact event-space page (fetched 2026-11-28, rendered with headless Chromium because the server returns 502 to plain requests) lists rooms and rates as: 四連房間 (Synergy + Dream + Impact), 2,000 sq ft, 可容納 200 人, 時租 標準價 $2,140 (OH) / $2,415 (NOH) / $2,675 (W) and 社創價 $1,700 / $1,950 / $2,140; Synergy Room A+B 1,200 sq ft, 100 人; Synergy Room A 800 sq ft, 60 人; Dream + Impact Room 800 sq ft, 60 人; single rooms 30 人; Pantry 500 sq ft, 30 人; 開放共享空間 350 sq ft, 30 人. The price legend defines OH as 早上9時至下午6時, NOH as 早上9前及下午6時後, and W as 週末及公眾假期. Address: 九龍荔枝角長沙灣道760號4樓C室, '3 分鐘到荔枝角地鐵站'. USD basis: HK$21,400 (8 h x HK$2,675 weekend rate) x 0.12774267 = USD 2,733.69 (ECB 2026-11-27).",
+        "inference": "This is the only social-impact venue in the sweep that publishes a distinct weekend hourly rate, and 200 seats is far more than a 50-person day needs; the missing AV and Wi-Fi lines mean the fit cannot be confirmed from the page alone.",
+        "nearest_mtr": "Nearest MTR: Lai Chi Kok Station. The operator page states it itself: an image alt/title reads '距離荔枝角地鐵站僅 3 分鐘路程' (3 minutes' walk from Lai Chi Kok MTR Station) and the asset is named '3-mins-from-Lai-Chi-Kok-MTR-Station.png'. The stored coordinates give a straight-line distance of ~688 m (geocode_mtr_laichikok.json 22.3366732, 114.1479840), which is ~11 min at 1.3 x straight-line / 80 m per min, so the operator's 3-minute claim needs confirming on arrival."
+      },
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "oversized_capacity",
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "duration_unconfirmed"
+      ],
+      "score": 0.3157,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.4533,
+          "weight": 0.2,
+          "contribution": 0.0907
+        },
+        "capacity_fit": {
+          "factor": 0.0,
+          "weight": 0.2,
+          "contribution": 0.0
+        },
+        "catering_flexibility": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "recording_suitability": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "technical_readiness": {
+          "factor": 0.0,
+          "weight": 0.05,
+          "contribution": 0.0
+        },
+        "event_window_fit": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "total": 0.3157
+      }
+    }
+  ],
+  "lead": [
+    {
+      "city_slug": "hong-kong-hk",
+      "source_type": "web",
+      "accessed_on": "2026-11-28",
+      "needs_human_verify": true,
+      "estimated_hours": null,
+      "hourly_rate_usd": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "estimated_cost_usd": null,
+      "cost_basis": "unknown",
+      "cost_rate_unit": "unknown",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "name": "Banyan Workspace — Event Venue (Quarry Bay)",
+      "address": "Suite 1204, Eastern Harbour Centre, 28 Hoi Chak Street, Quarry Bay, Hong Kong",
+      "capacity_comfortable": 60,
+      "capacity_basis": "standing",
+      "screen_status": "confirmed",
+      "wifi_status": "confirmed",
+      "catering_policy": "outside_allowed",
+      "recording_suitability": "likely_good",
+      "booking_url": "https://banyanworkspace.com/event-venue-hong-kong/",
+      "latitude": 22.289283,
+      "longitude": 114.210576,
+      "verification_question_kinds": [
+        "capacity",
+        "cost_unknown",
+        "availability",
+        "booking_terms",
+        "event_window"
+      ],
+      "verification_questions": [
+        "Confirm the seated capacity for a workshop-format 50-person event: the page states 2,500 sq ft with '20 seated, 60 standing', so 50 seated is not evidenced.",
+        "Confirm the 2027 event-space rate and any minimum spend (the live page publishes no rate, although the August 2026 run recorded HK$888/hour from a page that no longer exists at the recorded URL).",
+        "Confirm 2027 Saturday availability and whether the space can be used outside standard business hours (the FAQ asks 'Is the space accessible outside of standard business hours?' without answering it).",
+        "Confirm whether alcohol may be served and whether a licence or prior approval is required (the page allows own catering but does not mention alcohol).",
+        "Confirm the bookable end time on a Saturday, including whether the venue can be used from 09:00 to 21:00 (the FAQ asks about outside-hours access but does not publish hours)."
+      ],
+      "source_url": "https://banyanworkspace.com/event-venue-hong-kong/",
+      "source_title": "Banyan Workspace — Event Venue Hong Kong, fetched 2026-11-28: 2,500 sq ft, 20 seated / 60 standing, high-spec screens and projectors, own catering welcome",
+      "evidence": {
+        "geo": "https://nominatim.openstreetmap.org/search?q=28+Hoi+Chak+Street%2C+Quarry+Bay%2C+Hong+Kong&format=json&limit=1",
+        "observed_facts": "The Banyan Workspace event-venue page (fetched 2026-11-28) states the space is '2,500 sq ft' with '20 seated' and '60 standing', that it offers 'High-spec screens, projectors and professional sound systems', 'Complimentary coffee, tea and refreshments, with curated catering partners', and answers 'Can I arrange my own catering?' with 'You are welcome to bring your own catering, or we can introduce you to our preferred partners'. The FAQ asks 'Is the space accessible outside of standard business hours?' with no published answer. Address: Eastern Harbour Centre Suite 1204, 28 Hoi Chak Street Quarry Bay, MTR Quarry Bay Exit C. No rate appears on the page; the August 2026 URL banyanworkspace.com/corporate-events/ now returns HTTP 404.",
+        "inference": "The August 2026 run scored Banyan first in Hong Kong on a HK$888/hour rate and a 60-person capacity; the live page shows 20 seated and no rate, so the seated fit for 50 people is now an open material question and the record cannot stay a top pick."
+      },
+      "venue_tier": "lead",
+      "tier_reasons": [
+        "material verification question(s): capacity"
+      ],
+      "venue_flags": [
+        "cost_unknown",
+        "availability_unconfirmed",
+        "duration_unconfirmed"
+      ],
+      "score": null,
+      "score_breakdown": null
+    },
+    {
+      "city_slug": "hong-kong-hk",
+      "source_type": "web",
+      "accessed_on": "2026-11-28",
+      "needs_human_verify": true,
+      "estimated_hours": null,
+      "hourly_rate_usd": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "estimated_cost_usd": null,
+      "cost_basis": "unknown",
+      "cost_rate_unit": "unknown",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "name": "Hong Kong Science Park — Charles K. Kao Auditorium (Golden Egg)",
+      "address": "Hong Kong Science Park, Pak Shek Kok, Sha Tin, New Territories, Hong Kong",
+      "capacity_comfortable": 0,
+      "capacity_basis": "unknown",
+      "screen_status": "confirmed",
+      "wifi_status": "confirmed",
+      "catering_policy": "in_house_available",
+      "recording_suitability": "likely_good",
+      "booking_url": "https://www.hkstp.org/en/rental/space/mice-venue/hong-kong-science-park-mice-venues",
+      "latitude": 22.426246,
+      "longitude": 114.211275,
+      "verification_question_kinds": [
+        "capacity",
+        "cost_unknown",
+        "availability",
+        "event_window",
+        "booking_terms"
+      ],
+      "verification_questions": [
+        "Confirm the seating capacity of the Charles K. Kao Auditorium and of a meeting room sized for 50 people (the page describes the auditorium but prints no seat count).",
+        "Confirm the 2027 venue charges: HKSTP publishes a MICE rate card as a PDF download, which could not be read in this environment, so no figure is recorded.",
+        "Confirm 2027 Saturday availability and the bookable hours for a 09:00-21:00 event (HKSTP booking is by application form).",
+        "Confirm whether alcohol may be served and whether a licence or prior approval is required (the page offers catering through park outlets but states no alcohol position).",
+        "Confirm whether a community or non-tenant organisation may book MICE venues, and whether tenant sponsorship is required."
+      ],
+      "source_url": "https://www.hkstp.org/en/rental/space/mice-venue/hong-kong-science-park-mice-venues",
+      "source_title": "Hong Kong Science Park MICE Venues — HKSTP, fetched 2026-11-28: Golden Egg auditorium, meeting rooms, conference halls; Wi-Fi, screens, projectors; rate card by PDF",
+      "evidence": {
+        "geo": "https://nominatim.openstreetmap.org/search?q=Hong+Kong+Science+Park%2C+Pak+Shek+Kok%2C+Sha+Tin%2C+New+Territories%2C+Hong+Kong&format=json&limit=1",
+        "observed_facts": "The HKSTP MICE venues page (fetched 2026-11-28) describes 'the iconic Golden Egg' (Charles K. Kao Auditorium) alongside 'a diverse selection of meeting rooms, conference halls, function rooms, and boardroom meeting facilities', and states that 'all our meeting spaces are equipped with Wi-Fi, high-speed Internet, fibre-optic cabling, extensive video-conferencing options with built-in presentation screens and projectors', with catering arranged 'from the support of over 20 F&B outlets at the Park'. It publishes no seat counts on the captured page and links the charges only as a PDF rate card (hkstp_mice-rate-card.pdf), which could not be opened here.",
+        "inference": "The Science Park is the natural institutional host for a deep-tech audience in Hong Kong, but with the rate card unreadable and no seat count on the page, its tier cannot rise above lead on this evidence.",
+        "nearest_mtr": "Nearest rail: University Station (East Rail), ~1.5 km straight-line from the stored Science Park coordinates (geocode_mtr_university.json 22.4127018, 114.2105301). The operator page's own 'Transportation' section links to route options but names no station and no walk time; the park is not a practical walk from the station, so the shuttle/route needs confirmation. Recorded as a distance estimate, not a walk time."
+      },
+      "venue_tier": "lead",
+      "tier_reasons": [
+        "material verification question(s): capacity",
+        "capacity_comfortable 0 below minimum 40"
+      ],
+      "venue_flags": [
+        "cost_unknown",
+        "availability_unconfirmed",
+        "duration_unconfirmed"
+      ],
+      "score": null,
+      "score_breakdown": null
+    },
+    {
+      "city_slug": "hong-kong-hk",
+      "source_type": "web",
+      "accessed_on": "2026-11-28",
+      "needs_human_verify": true,
+      "estimated_hours": null,
+      "hourly_rate_usd": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "estimated_cost_usd": null,
+      "cost_basis": "unknown",
+      "cost_rate_unit": "unknown",
+      "opening_hours": null,
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "name": "PMQ 元創方 — QUBE Multi-purpose Hall (Central)",
+      "address": "35 Aberdeen Street, Central, Hong Kong",
+      "capacity_comfortable": 0,
+      "capacity_basis": "unknown",
+      "screen_status": "unknown",
+      "wifi_status": "unknown",
+      "catering_policy": "unknown",
+      "recording_suitability": "unknown",
+      "booking_url": "https://www.pmq.org.hk/the-site/event-venue-rental/",
+      "latitude": 22.283325,
+      "longitude": 114.151837,
+      "verification_question_kinds": [
+        "capacity",
+        "cost_unknown",
+        "availability",
+        "event_window",
+        "screen",
+        "wifi",
+        "booking_terms"
+      ],
+      "verification_questions": [
+        "Confirm the seated and standing capacity of QUBE and of the other rentable halls (the page publishes headroom of 3 m, 5 m and 5.5 m and downloadable floor plans, but no head count).",
+        "Confirm the 2027 hire charges (the page publishes no rate and routes all enquiries to a form or events@pmq.org.hk).",
+        "Confirm 2027 Saturday availability for a 09:00-21:00 booking (the page publishes no calendar).",
+        "Confirm the bookable hours and whether a hall can be used from 09:00 to 21:00 (the page publishes no opening hours).",
+        "Confirm what projection, screen and sound equipment is included in a hall hire (the page does not describe the technical inventory).",
+        "Confirm whether Wi-Fi is provided in the halls (the page does not mention Wi-Fi).",
+        "Confirm whether alcohol may be served in a hired hall and whether a licence or prior approval is required (the page does not address alcohol)."
+      ],
+      "source_url": "https://www.pmq.org.hk/the-site/event-venue-rental/",
+      "source_title": "Event Venue Rental | PMQ 元創方, fetched 2026-11-28: multi-purpose hall and event venues in SoHo with headroom 3-5.5 m, enquiry-only",
+      "evidence": {
+        "geo": "https://nominatim.openstreetmap.org/search?q=35+Aberdeen+Street%2C+Central%2C+Hong+Kong&format=json&limit=1",
+        "observed_facts": "The PMQ event-venue-rental page (fetched 2026-11-28) describes 'A Perfect Venue for Creative Happenings & Business Events right at SoHo, Central', lists a 'Multi-purpose hall', other halls with headroom of 5 m, 5.5 m and 3 m, and downloadable floor plans; it publishes no capacity figures, no rates and no technical inventory, and directs enquiries to a form or events@pmq.org.hk. Address: 35 Aberdeen Street, Central.",
+        "inference": "PMQ is the best-known creative-industry venue in Central and a plausible partner venue, but nothing on the page can support a capacity or cost claim, so it is recorded as a lead rather than a candidate.",
+        "nearest_mtr": "Nearest MTR: Sheung Wan Station, ~345 m straight-line from the stored coordinates (geocode_mtr_sheungwan.json 22.2858993, 114.1537070), an estimated ~6 min walk (uphill) at 1.3 x straight-line / 80 m per min; Central Station is ~660 m. The PMQ page does not mention transport, so this is a coordinate estimate."
+      },
+      "venue_tier": "lead",
+      "tier_reasons": [
+        "material verification question(s): capacity",
+        "capacity_comfortable 0 below minimum 40"
+      ],
+      "venue_flags": [
+        "cost_unknown",
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "duration_unconfirmed"
+      ],
+      "score": null,
+      "score_breakdown": null
+    }
+  ]
+}

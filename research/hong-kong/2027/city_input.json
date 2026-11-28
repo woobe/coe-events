@@ -1,0 +1,34 @@
+{
+  "city_slug": "hong-kong-hk",
+  "city_name": "Hong Kong",
+  "country": "Hong Kong SAR",
+  "target_date": null,
+  "date_window": null,
+  "target_attendance": 50,
+  "currency": "HKD",
+  "currency_assumptions": [
+    "Venue prices are stored in HKD (cost_local_amount / cost_local_currency = HKD). Every USD figure uses the ECB euro foreign exchange reference rates dated 2026-11-27 and fetched 2026-11-28: EUR 1 = USD 1.0957 and EUR 1 = HKD 8.5774, giving USD 1 = HKD 7.828238 and 1 HKD = USD 0.12774267. See fx_evidence_2026-11-28.md for the worked cross rate and three hand recomputations.",
+    "Where a venue publishes an hourly rate, the recorded amount is that rate x 8 hours (the acceptable 09:00-17:00 window), stated in evidence.observed_facts. Where a venue publishes a day or session package, the recorded amount is that package and cost_rate_unit says which: 'day' for Igather Central's HK$10,000 full day, 'event' for the Sheung Wan Civic Centre lecture hall's HK$1,330 four-hour session. Packages therefore differ in length, so the USD figures are prices for each venue's own published package, not hour-for-hour comparisons.",
+    "Two venues publish a bare '$' with no currency marker. Dream Impact's Chinese-language Hong Kong page is read as HKD (its rates are plausible Hong Kong rates) and carries a confirm-currency question. Good Lab's page prints a bare '$' while its embedded Webflow currency setting declares USD, so its cost is left null with a confirm-currency question rather than converted.",
+    "Venues that publish no price at all (AMO, The Hive Kennedy Town, The Hive Wan Chai, Banyan Workspace, The Wave, Good Lab, PMQ, Hong Kong Science Park) carry estimated_cost_usd null with a cost_unknown question. Null is not free and is not a rejection.",
+    "No date is selected, ranked or recommended in this run. The whole 2027 calendar year was swept; the venue set is date-independent and every venue carries its own Saturday-availability question.",
+    "Alcohol is treated as a licensing question everywhere. No venue's page in this sweep states that an event alcohol licence or permission is in place, so every record carries a booking_terms question about serving alcohol and any licence requirement; no hotel bar is read as a yes."
+  ],
+  "workflow_phase": "venue",
+  "budget_usd": 5000.0,
+  "event_duration_hours": 8,
+  "research_completed_on": "2026-11-28",
+  "open_questions": [
+    "No date is selected, ranked or recommended in this run. The sweep covered the whole 2027 calendar year; no venue field, note or question in this package proposes a date.",
+    "Hong Kong school holidays are not asserted: the HK registry authority added on 2026-11-28 covers public holidays for 2027-01-01 to 2027-12-31 only, and the school side is declared unknown in references/school_holidays.json.",
+    "Public-holiday context comes only from the HK registry rows: the seventeen gazetted 2027 general holidays are the only holiday dates this package recognises, and the registry prints 'Every Sunday' as a standing rule without expanding it into dated rows.",
+    "Fourteen of the sixteen venue candidates are on Hong Kong Island or in Kowloon East and Kowloon West; the New Territories are represented only by Hong Kong Science Park, and Cyberport could not be read (HTTP 403 to both curl and headless Chromium).",
+    "Eight Hong Kong venues publish no event-space rate at all, so half of the set cannot be compared on budget until quotes arrive. (Dream Impact is priced only under a currency assumption and is not counted among the unpriced.)",
+    "The 2027 calendar yield is announcement-limited: eight organiser-dated records, with several major Hong Kong events still unannounced (Hong Kong FinTech Week x StartmeupHK 2027, Hong Kong AI Week 2027 has a month but no dates, HKTDC's 2027 fair calendar is bot-walled, and Digital Economy Summit, Wine & Dine and Clockenflap 2027 have no organiser dates).",
+    "Nothing here is a booking, a hold, or a partner commitment. Every contact route recorded for the community map is a public page, and no co-host relationship is claimed."
+  ],
+  "recommendation": {
+    "selected_venue": null,
+    "rationale": "Run A evidence package only. No venue is selected and no date is proposed; Joe decides both from the evidence. The scorer's tiers are recorded in venues.shortlist.json with the ECB-based USD costs."
+  }
+}
