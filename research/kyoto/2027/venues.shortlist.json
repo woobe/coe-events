@@ -1,0 +1,1777 @@
+{
+  "meta": {
+    "generator": "score_venues.py",
+    "schema_version": "2.4",
+    "budget_usd": 5000.0,
+    "target_attendance": 50,
+    "event_date": "2026-11-28",
+    "event_duration_hours": 8,
+    "weights": {
+      "budget_efficiency": 0.2,
+      "capacity_fit": 0.2,
+      "catering_flexibility": 0.15,
+      "recording_suitability": 0.15,
+      "booking_path": 0.1,
+      "evidence_freshness": 0.1,
+      "technical_readiness": 0.05,
+      "event_window_fit": 0.05
+    },
+    "tier_order": [
+      "eligible",
+      "shortlist_ready",
+      "lead"
+    ]
+  },
+  "eligible": [],
+  "shortlist_ready": [
+    {
+      "name": "京都市生涯学習総合センター（京都アスニー）— 第3研修室",
+      "city_slug": "kyoto-jp",
+      "address": "〒604-8401 京都市中京区聚楽廻松下町9-2（Kyoto Asny Lifelong Learning Centre, Nakagyo-ku, Kyoto）",
+      "capacity_comfortable": 72,
+      "capacity_basis": "venue_claim",
+      "screen_status": "confirmed",
+      "wifi_status": "confirmed",
+      "catering_policy": "delivery_allowed",
+      "recording_suitability": "likely_good",
+      "estimated_cost_usd": 114.2,
+      "cost_basis": "published_rate",
+      "cost_local_amount": 18220,
+      "cost_local_currency": "JPY",
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "cost_rate_unit": "day",
+      "booking_url": "https://asny.ne.jp/room/",
+      "opening_hours": "09:00-21:00 (Sundays and public holidays close at 17:00); closed Tuesdays",
+      "closing_time": "21:00",
+      "max_booking_hours": 12,
+      "event_window_status": "allows_to_6",
+      "event_window_evidence": {
+        "url": "https://asny.ne.jp/room/",
+        "title": "京都アスニー施設（貸会場）のご案内 (official room page), fetched 2026-11-28",
+        "accessed_on": "2026-11-28",
+        "claim": "The page prints 第3研修室 day blocks inside a 09:00-21:00 opening window with a separately priced 17:00-18:00 hour, so a Saturday eight-hour or twelve-hour booking is inside the published window."
+      },
+      "verification_question_kinds": [
+        "screen",
+        "final_quote",
+        "availability"
+      ],
+      "verification_questions": [
+        "Confirm the projection screen for 第3研修室 (projector hire is priced at 3,770 yen per set; no screen is itemised).",
+        "Confirm Saturday availability and the provisional-reservation route.",
+        "Confirm the tax treatment of the 18,220 yen 午前+午後 total, which is recorded as the arithmetic sum of the two published blocks because the page prints no combined rate for this room."
+      ],
+      "source_url": "https://asny.ne.jp/room/",
+      "source_title": "京都アスニー施設（貸会場）のご案内 — fetched 2026-11-28: 第3研修室 72名, 午前 8,380円 / 午後 9,840円 / 夜間 11,200円",
+      "accessed_on": "2026-11-28",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "The Asny room page (fetched 2026-11-28) lists 第3研修室 at 72 seats with 午前 8,380 yen, 午後 9,840 yen and 夜間 11,200 yen, inside the centre's 09:00-21:00 opening hours with Tuesday closure. The page notes that the windows of 第2・第3・第4研修室 must not be opened during use, and that alcoholic drinks are prohibited on the premises. USD-equivalent conversion basis: ECB euro foreign exchange reference rates dated 2026-11-27, fetched 2026-11-28 from https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml (EUR 1 = USD 1.0957; EUR 1 = JPY 174.81), giving USD 1 = JPY 159.5418 and 1 JPY = USD 0.00626795; see fx_evidence_2026-11-28.md. Nearest station: there is no station within walking distance — reach the centre from Nijo (二条) subway/JR station by city bus 15 or 52 to the 丸太町七本松 stop and about 400 m west on foot (official access map https://asny.ne.jp/asnymap.html, captured as captures/asny_accessmap.html). Alcohol: the page prohibits alcoholic drinks on the premises (アルコール飲料類は禁じております), so the alcohol/liquor-licence question is answered 'no' rather than left open.",
+        "inference": "At 72 claimed seats and 18,220 yen for the two day blocks, this is the cheapest 50-person-capable room in the package; the missing combined-rate row is why the cost is recorded as a published-block sum rather than a package price.",
+        "geo": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E4%B8%AD%E4%BA%AC%E5%8C%BA%E8%81%9A%E6%A5%BD%E5%BB%BB%E6%9D%BE%E4%B8%8B%E7%94%BA9-2"
+      },
+      "latitude": 35.019047,
+      "longitude": 135.738464,
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "availability_unconfirmed",
+        "final_quote_required"
+      ],
+      "score": 0.8829,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.9772,
+          "weight": 0.2,
+          "contribution": 0.1954
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 0.7,
+          "weight": 0.15,
+          "contribution": 0.105
+        },
+        "recording_suitability": {
+          "factor": 0.55,
+          "weight": 0.15,
+          "contribution": 0.0825
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "technical_readiness": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "event_window_fit": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "total": 0.8829
+      }
+    },
+    {
+      "name": "京都市生涯学習総合センター（京都アスニー）— 第2研修室",
+      "city_slug": "kyoto-jp",
+      "address": "〒604-8401 京都市中京区聚楽廻松下町9-2（Kyoto Asny Lifelong Learning Centre, 9-2 Jurakumawari Matsushita-cho, Nakagyo-ku, Kyoto）",
+      "capacity_comfortable": 104,
+      "capacity_basis": "venue_claim",
+      "screen_status": "confirmed",
+      "wifi_status": "confirmed",
+      "catering_policy": "delivery_allowed",
+      "recording_suitability": "likely_good",
+      "estimated_cost_usd": 157.51,
+      "cost_basis": "published_rate",
+      "cost_local_amount": 25130,
+      "cost_local_currency": "JPY",
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "cost_rate_unit": "day",
+      "booking_url": "https://asny.ne.jp/room/",
+      "opening_hours": "09:00-21:00 (Sundays and public holidays close at 17:00); closed Tuesdays",
+      "closing_time": "21:00",
+      "max_booking_hours": 12,
+      "event_window_status": "allows_to_6",
+      "event_window_evidence": {
+        "url": "https://asny.ne.jp/room/",
+        "title": "京都アスニー施設（貸会場）のご案内 (official room page), fetched 2026-11-28",
+        "accessed_on": "2026-11-28",
+        "claim": "The official room page states opening hours of 09:00-21:00, gives 午前 09:00-12:00 / 午後 13:00-17:00 / 夜間 18:00-21:00 blocks and a rule for the 17:00-18:00 hour at two-fifths of the night rate, so a Saturday 09:00-21:00 booking is inside the published window (Sundays and holidays close at 17:00)."
+      },
+      "verification_question_kinds": [
+        "screen",
+        "final_quote",
+        "availability",
+        "booking_terms"
+      ],
+      "verification_questions": [
+        "Confirm the screen: the page prices a projector at 3,770 yen per set and a monitor at 2,510 yen per set but does not itemise a projection screen in the room.",
+        "Confirm Saturday availability and the provisional-reservation route (telephone or counter, from the first opening day six months ahead).",
+        "Confirm the total for 09:00-21:00 including the 17:00-18:00 hour charged at two-fifths of the night block (the recorded 25,130 yen covers only the 午前 and 午後 blocks).",
+        "Confirm that the room's windows must stay closed during events (the page requires it for 第2・第3・第4研修室) is acceptable for a summer event."
+      ],
+      "source_url": "https://asny.ne.jp/room/",
+      "source_title": "京都アスニー施設（貸会場）のご案内 — fetched 2026-11-28: 第2研修室 104名, 午前 11,200円 / 午後 13,930円 / 夜間 16,760円; 開館 9:00-21:00 (日祝は17:00まで), 休館日 火曜; Wi-Fi service available; アルコール飲料類は禁じています",
+      "accessed_on": "2026-11-28",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "The Kyoto Asny room page (asny.ne.jp/room/, fetched 2026-11-28) lists 第2研修室 at 104 seats with blocks 11,200 / 13,930 / 16,760 yen, opening hours 09:00-21:00 (Sundays and public holidays until 17:00), Tuesday closure, and state the centre has begun providing Wi-Fi in the rented rooms (Wi-Fi環境利用申請書). The page prices a projector at 3,770 yen per set, a monitor at 2,510 yen, a microphone at 1,250 yen, and states that deliveries from outside the first-floor restaurant must be notified in advance and that alcoholic drinks are prohibited. The 17:00-18:00 hour is charged at two-fifths of the night block; outside-hours use is one third of the afternoon rate per hour. Address 9-2 Jurakumawari Matsushita-cho, Nakagyo-ku, Kyoto 604-8401. USD-equivalent conversion basis: ECB euro foreign exchange reference rates dated 2026-11-27, fetched 2026-11-28 from https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml (EUR 1 = USD 1.0957; EUR 1 = JPY 174.81), giving USD 1 = JPY 159.5418 and 1 JPY = USD 0.00626795; see fx_evidence_2026-11-28.md. Nearest station: there is no station within walking distance — reach the centre from Nijo (二条) subway/JR station by city bus 15 or 52 to the 丸太町七本松 stop and about 400 m west on foot (official access map https://asny.ne.jp/asnymap.html, captured as captures/asny_accessmap.html). Alcohol: the page prohibits alcoholic drinks on the premises (アルコール飲料類は禁じております), so the alcohol/liquor-licence question is answered 'no' rather than left open.",
+        "inference": "Two independent facts matter for this brief: alcohol is explicitly prohibited (so the licensing question is answered 'no' rather than left open), and the 17:00-18:00 gap hour is priced separately, which means a true 12-hour booking costs more than the sum of the three blocks.",
+        "geo": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E4%B8%AD%E4%BA%AC%E5%8C%BA%E8%81%9A%E6%A5%BD%E5%BB%BB%E6%9D%BE%E4%B8%8B%E7%94%BA9-2"
+      },
+      "latitude": 35.019047,
+      "longitude": 135.738464,
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "availability_unconfirmed",
+        "final_quote_required"
+      ],
+      "score": 0.8812,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.9685,
+          "weight": 0.2,
+          "contribution": 0.1937
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 0.7,
+          "weight": 0.15,
+          "contribution": 0.105
+        },
+        "recording_suitability": {
+          "factor": 0.55,
+          "weight": 0.15,
+          "contribution": 0.0825
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "technical_readiness": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "event_window_fit": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "total": 0.8812
+      }
+    },
+    {
+      "name": "ホテルエルシエント京都八条口 — Conference Room B（カンファレンスルームB）",
+      "city_slug": "kyoto-jp",
+      "address": "〒601-8004 京都市南区東九条東山王町13（Hotel Elcient Kyoto Hachijoguchi, 13 Higashikujo Higashiyama-o-cho, Minami-ku, Kyoto）",
+      "capacity_comfortable": 72,
+      "capacity_basis": "seated",
+      "screen_status": "confirmed",
+      "wifi_status": "confirmed",
+      "catering_policy": "in_house_available",
+      "recording_suitability": "likely_good",
+      "estimated_cost_usd": 940.19,
+      "cost_basis": "published_rate",
+      "cost_local_amount": 150000,
+      "cost_local_currency": "JPY",
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "cost_rate_unit": "event",
+      "booking_url": "https://elcient.com/kyoto/conference",
+      "opening_hours": "09:00-21:00 for conference rooms",
+      "closing_time": "21:00",
+      "max_booking_hours": 12,
+      "event_window_status": "allows_to_6",
+      "event_window_evidence": {
+        "url": "https://elcient.com/kyoto/conference",
+        "title": "Conferences & Banquets | HOTEL ELCIENT Kyoto Hachijoguchi, fetched 2026-11-28",
+        "accessed_on": "2026-11-28",
+        "claim": "The hotel's conference page states room hours of 9:00-21:00 and prices a 7-hour special rate plus a per-hour overtime rate, so a 09:00-21:00 window is inside the published hours."
+      },
+      "verification_question_kinds": [
+        "final_quote",
+        "availability",
+        "booking_terms",
+        "room_assignment",
+        "booking_terms"
+      ],
+      "verification_questions": [
+        "Confirm the 09:00-17:00 total: the page prices Conference Room B at 65,000 yen for three hours, a 130,000 yen seven-hour special and 20,000 yen per overtime hour, so the recorded 150,000 yen is the seven-hour rate plus one overtime hour and is not a printed eight-hour package.",
+        "Confirm screen, projector and microphone provision for a 50-person talk (the page lists マイク, プロジェクター, プロジェクター台, スクリーン and Wi-Fi/LAN in its equipment list, with two microphones and a lectern free above 30 guests).",
+        "Confirm that outside catering is not permitted and price the in-house option if the event needs lunch (banquet menus start at 6,000 yen per person).",
+        "Confirm Saturday availability directly with the hotel sales office (the page carries a booking form, not a live calendar).",
+        "Confirm the alcohol rule for Conference Room B: whether serving alcohol at a private community event in the rented room is permitted, whether an event liquor licence is required and who must hold it — the hotel publishes no alcohol permission for the conference rooms, and the hotel bar or restaurant licence is not evidence that a rented hall may serve alcohol."
+      ],
+      "source_url": "https://elcient.com/kyoto/conference",
+      "source_title": "Conferences & Banquets | HOTEL ELCIENT Kyoto Hachijoguchi — fetched 2026-11-28: Conference Room B 127 m2, スクール72名 / ロの字36名; 3h 65,000円, 7h 130,000円, 超過 20,000円/h, 9:00-21:00, 税込",
+      "accessed_on": "2026-11-28",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "The Hotel Elcient Kyoto Hachijoguchi conference page (elcient.com/kyoto/conference, fetched 2026-11-28) lists Conference Room A (51 m2, 30 school / 24 hollow-square) and Conference Room B (127 m2, 72 school / 36 hollow-square, 60 seated for banquets, 80 standing), halls open 9:00-21:00, with Conference Room B at 65,000 yen for three hours, a 70,000-yen seven-hour special for Room A and 130,000 yen for Room B, overtime at 20,000 yen per hour for Room B, all tax-inclusive and including set-up. The equipment list includes マイク, プロジェクター, プロジェクター台, スクリーン and a Wi-Fi/LAN line; above 30 guests two microphones and a lectern are free. Address 13 Higashikujo Higashiyama-o-cho, Minami-ku, Kyoto 601-8004 (Hachijoguchi side of Kyoto Station). USD-equivalent conversion basis: ECB euro foreign exchange reference rates dated 2026-11-27, fetched 2026-11-28 from https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml (EUR 1 = USD 1.0957; EUR 1 = JPY 174.81), giving USD 1 = JPY 159.5418 and 1 JPY = USD 0.00626795; see fx_evidence_2026-11-28.md. Nearest station: JR Kyoto Station, Hachijo east exit, about 2 minutes on foot (the conference page's own site description reads 'JR京都駅 八条東口 徒歩2分', captured as captures/elcient_conference_jp.html).",
+        "inference": "This is the only hotel candidate with a published room rate for a 50-70 person seated layout and a stated 9:00-21:00 window; the recorded cost deliberately adds one overtime hour to the seven-hour special because the brief's window is eight hours, and that arithmetic is stated rather than presented as a printed package.",
+        "geo": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E5%8D%97%E5%8C%BA%E6%9D%B1%E4%B9%9D%E6%9D%A1%E6%9D%B1%E5%B1%B1%E7%8E%8B%E7%94%BA13"
+      },
+      "latitude": 34.98354,
+      "longitude": 135.761627,
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "availability_unconfirmed",
+        "final_quote_required"
+      ],
+      "score": 0.8499,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.812,
+          "weight": 0.2,
+          "contribution": 0.1624
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 0.7,
+          "weight": 0.15,
+          "contribution": 0.105
+        },
+        "recording_suitability": {
+          "factor": 0.55,
+          "weight": 0.15,
+          "contribution": 0.0825
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "technical_readiness": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "event_window_fit": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "total": 0.8499
+      }
+    },
+    {
+      "name": "kokoka 京都市国際交流会館 — Special Conference Room（特別会議室）",
+      "city_slug": "kyoto-jp",
+      "address": "〒606-8536 京都市左京区粟田口鳥居町2番地の1（kokoka Kyoto International Community House, Sakyo-ku, Kyoto 606-8536）",
+      "capacity_comfortable": 80,
+      "capacity_basis": "seated",
+      "screen_status": "unknown",
+      "wifi_status": "unknown",
+      "catering_policy": "delivery_allowed",
+      "recording_suitability": "likely_good",
+      "estimated_cost_usd": 437.5,
+      "cost_basis": "published_rate",
+      "cost_local_amount": 69800,
+      "cost_local_currency": "JPY",
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "cost_rate_unit": "day",
+      "booking_url": "https://kcif.or.jp/web/en/facilityrental/facility",
+      "opening_hours": "09:00-21:00 (no use before 09:00 or after 21:00)",
+      "closing_time": "21:00",
+      "max_booking_hours": 12,
+      "event_window_status": "allows_to_6",
+      "event_window_evidence": {
+        "url": "https://kcif.or.jp/web/en/facilityrental/facility",
+        "title": "Venues for Hire ｜ Kyoto City International Foundation (kokoka), fetched 2026-11-28",
+        "accessed_on": "2026-11-28",
+        "claim": "The Saturday/Sunday/holiday fee table lists the Special Conference Room with Morning 9:00-12:00, Afternoon 13:00-17:00 and Night 18:00-21:00 blocks and the page forbids use before 9:00 and after 21:00, so both the eight-hour and the twelve-hour Saturday windows are supported."
+      },
+      "verification_question_kinds": [
+        "screen",
+        "wifi",
+        "final_quote",
+        "availability",
+        "booking_terms"
+      ],
+      "verification_questions": [
+        "Confirm whether the Special Conference Room includes a projector and screen, or whether they are hired as equipment (the page sells equipment separately).",
+        "Confirm event Wi-Fi in the Special Conference Room.",
+        "Confirm the tax treatment of the published Saturday/Sunday/holiday rate (69,800 yen for 09:00-17:00).",
+        "Confirm Saturday availability for 2027 through the online reservation system.",
+        "Confirm the alcohol rule for the Special Conference Room: whether serving alcohol at a private community event is permitted, whether an event liquor licence is required and who must hold it — the venue publishes no alcohol permission, and an in-house cafe's licence is not evidence that a rented room may serve alcohol."
+      ],
+      "source_url": "https://kcif.or.jp/web/en/facilityrental/facility",
+      "source_title": "Venues for Hire ｜ Kyoto City International Foundation (kokoka) — fetched 2026-11-28: Special Conference Room 80 seats / 165 m2; Sat/Sun/holiday 28,300 + 41,500 + 36,500 yen",
+      "accessed_on": "2026-11-28",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "The kokoka fee table (fetched 2026-11-28) gives the Special Conference Room as 80 seats over 165 m2, described as a room with a view suited to lectures, meetings or parties, with Saturday/Sunday/holiday blocks of 28,300 yen (9:00-12:00), 41,500 yen (13:00-17:00) and 36,500 yen (18:00-21:00). A 09:00-17:00 day is therefore 69,800 yen and a 09:00-21:00 day 106,300 yen. The page prohibits use before 9:00 and after 21:00. USD-equivalent conversion basis: ECB euro foreign exchange reference rates dated 2026-11-27, fetched 2026-11-28 from https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml (EUR 1 = USD 1.0957; EUR 1 = JPY 174.81), giving USD 1 = JPY 159.5418 and 1 JPY = USD 0.00626795; see fx_evidence_2026-11-28.md. Nearest station: Keage (蹴上) on the Tozai subway line, about 6 minutes on foot (kokoka access page https://www.kcif.or.jp/web/jp/access/, captured as captures/kokoka_access.html: '京都市営地下鉄の最寄り駅から徒歩6分', and the same page's taxi instruction names 蹴上).",
+        "inference": "At 80 seats and 165 m2 this is the best-fitting kokoka room for a 50-person event: half the room area of the Event Hall, still double the target attendance, and priced 4,700 yen below the hall for the same day block.",
+        "geo": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E5%B7%A6%E4%BA%AC%E5%8C%BA%E7%B2%9F%E7%94%B0%E5%8F%A3%E9%B3%A5%E5%B1%85%E7%94%BA2-1"
+      },
+      "latitude": 35.010658,
+      "longitude": 135.787567,
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "final_quote_required"
+      ],
+      "score": 0.82,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.9125,
+          "weight": 0.2,
+          "contribution": 0.1825
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 0.7,
+          "weight": 0.15,
+          "contribution": 0.105
+        },
+        "recording_suitability": {
+          "factor": 0.55,
+          "weight": 0.15,
+          "contribution": 0.0825
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "technical_readiness": {
+          "factor": 0.0,
+          "weight": 0.05,
+          "contribution": 0.0
+        },
+        "event_window_fit": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "total": 0.82
+      }
+    },
+    {
+      "name": "京都市勧業館 みやこめっせ — 大会議室（B1F）",
+      "city_slug": "kyoto-jp",
+      "address": "〒606-8343 京都市左京区岡崎成勝寺町9-1（Miyako Messe, 9-1 Okazaki Seishoji-cho, Sakyo-ku, Kyoto）",
+      "capacity_comfortable": 120,
+      "capacity_basis": "venue_claim",
+      "screen_status": "confirmed",
+      "wifi_status": "confirmed",
+      "catering_policy": "unknown",
+      "recording_suitability": "likely_good",
+      "estimated_cost_usd": 197.88,
+      "cost_basis": "published_rate",
+      "cost_local_amount": 31570,
+      "cost_local_currency": "JPY",
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "cost_rate_unit": "day",
+      "booking_url": "https://www.miyakomesse.jp/planner/price/",
+      "opening_hours": "09:00-22:00 building access for rented rooms; day block 09:00-17:00, night block 18:00-21:00, early extension 07:00-09:00",
+      "closing_time": "22:00",
+      "max_booking_hours": 13,
+      "event_window_status": "allows_to_6",
+      "event_window_evidence": {
+        "url": "https://www.miyakomesse.jp/planner/information/conference-room-main/",
+        "title": "大会議室 | 会場案内 | 京都市勧業館みやこめっせ (official room page), fetched 2026-11-28",
+        "accessed_on": "2026-11-28",
+        "claim": "The room page prints a fee row for 大会議室 covering 午前, 午後, 夜間, 午前・午後, 午後・夜間 and the 9:00-21:00 all-day package plus 07:00-09:00 and night extensions, so a 09:00-21:00 window is published."
+      },
+      "verification_question_kinds": [
+        "final_quote",
+        "availability",
+        "booking_terms"
+      ],
+      "verification_questions": [
+        "Confirm the 大会議室 fee row (the room page prints 12,650 / 18,920 / 19,030 yen blocks and 31,570 / 37,950 / 50,600 yen packages against the 182 m2 room; confirm these are the general-public rates and not a linked-equipment surcharge).",
+        "Confirm Saturday availability and the application route (counter reception 09:00-17:00 on weekdays, or the online reservation system).",
+        "Confirm catering and alcohol policy for a community event (the price page prints no catering rule)."
+      ],
+      "source_url": "https://www.miyakomesse.jp/planner/information/conference-room-main/",
+      "source_title": "大会議室 | 京都市勧業館みやこめっせ — fetched 2026-11-28: 182 m2, 120名まで収容, included 机いす・ホワイトボード・スクリーン・案内板・空調・会議室専用無線LAN(Wi-Fi); 9:00-21:00 50,600円 (税込)",
+      "accessed_on": "2026-11-28",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "The Miyako Messe 大会議室 page (miyakomesse.jp/planner/information/conference-room-main/, fetched 2026-11-28) states the room is 182 m2 and holds up to 120 people, and that the fee includes seating for the stated capacity, a whiteboard, a screen, a notice board, electricity, air-conditioning and a room-dedicated wireless LAN (Wi-Fi). The fee row prints 午前 12,650 yen, 午後 18,920 yen, 夜間 19,030 yen, 午前・午後 31,570 yen, 午後・夜間 37,950 yen, 09:00-21:00 50,600 yen, 07:00-09:00 extension 5,390 yen and night extension 8,140 yen; the price page states rates include 10% consumption tax. Access: Higashiyama subway station, about 8 minutes on foot (official access page). USD-equivalent conversion basis: ECB euro foreign exchange reference rates dated 2026-11-27, fetched 2026-11-28 from https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml (EUR 1 = USD 1.0957; EUR 1 = JPY 174.81), giving USD 1 = JPY 159.5418 and 1 JPY = USD 0.00626795; see fx_evidence_2026-11-28.md.",
+        "inference": "This is the only candidate whose official page states both a room-dedicated Wi-Fi service and an included screen, and its 09:00-17:00 package at 31,570 yen is the second cheapest in the set; the recorded cost uses the 午前・午後 package rather than the hourly extension.",
+        "geo": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E5%B7%A6%E4%BA%AC%E5%8C%BA%E5%B2%A1%E5%B4%8E%E6%88%90%E5%8B%9D%E5%AF%BA%E7%94%BA9-1"
+      },
+      "latitude": 35.013077,
+      "longitude": 135.781433,
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "availability_unconfirmed",
+        "final_quote_required"
+      ],
+      "score": 0.7746,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.9604,
+          "weight": 0.2,
+          "contribution": 0.1921
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "recording_suitability": {
+          "factor": 0.55,
+          "weight": 0.15,
+          "contribution": 0.0825
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "technical_readiness": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "event_window_fit": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "total": 0.7746
+      }
+    },
+    {
+      "name": "ハートピア京都（京都府立総合社会福祉会館）— 第5会議室",
+      "city_slug": "kyoto-jp",
+      "address": "〒604-0874 京都市中京区竹屋町通烏丸東入る清水町375番地（Kyoto Prefectural Comprehensive Social Welfare Hall, 375 Shimizu-cho, Nakagyo-ku, Kyoto）",
+      "capacity_comfortable": 54,
+      "capacity_basis": "venue_claim",
+      "screen_status": "confirmed",
+      "wifi_status": "unknown",
+      "catering_policy": "unknown",
+      "recording_suitability": "likely_good",
+      "estimated_cost_usd": 140.34,
+      "cost_basis": "published_rate",
+      "cost_local_amount": 22390,
+      "cost_local_currency": "JPY",
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "cost_rate_unit": "day",
+      "booking_url": "https://heartpia-kyoto.jp/convention/fee.html",
+      "opening_hours": "09:00-21:00 in three blocks (09:00-12:00, 13:00-17:00, 18:00-21:00); closed 28 December - 4 January",
+      "closing_time": "21:00",
+      "max_booking_hours": 12,
+      "event_window_status": "allows_to_6",
+      "event_window_evidence": {
+        "url": "https://heartpia-kyoto.jp/convention/fee.html",
+        "title": "ハートピア京都 貸会議室ご利用料金 (official fee page), fetched 2026-11-28",
+        "accessed_on": "2026-11-28",
+        "claim": "The fee page defines blocks as 09:00-12:00, 13:00-17:00 and 18:00-21:00 and prints a continuous-use table with a 終日 (all-day) rate, so 09:00-21:00 is a published bookable window."
+      },
+      "verification_question_kinds": [
+        "screen",
+        "wifi",
+        "final_quote",
+        "availability",
+        "booking_terms"
+      ],
+      "verification_questions": [
+        "Confirm the projector arrangement: the page prices a video projector at 4,760 yen per block as an optional item and does not list a built-in screen, so confirm both a 4:3/16:9 screen and projector for slides.",
+        "Confirm Wi-Fi in 第5会議室 (the fee page lists audio, projection and lighting equipment only).",
+        "Confirm whether the printed 22,390 yen 午前・午後 rate is tax-inclusive (the page prints no consumption-tax statement).",
+        "Confirm Saturday availability and the application route (counter or telephone reservation, six months ahead).",
+        "Confirm the alcohol rule for 第5会議室: whether serving alcohol at a private community event is permitted, whether an event liquor licence is required and who must hold it — the fee page publishes no alcohol rule and the building's welfare-purpose terms may restrict it."
+      ],
+      "source_url": "https://heartpia-kyoto.jp/convention/fee.html",
+      "source_title": "ハートピア京都 貸会議室ご利用料金 — fetched 2026-11-28: 第5会議室 54名, 午前 11,500円 / 午後 13,370円 / 夜間 15,340円, 午前・午後 22,390円, 終日 36,190円; projector 4,760円/区分",
+      "accessed_on": "2026-11-28",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "The Heartpia Kyoto fee page (heartpia-kyoto.jp/convention/fee.html, fetched 2026-11-28) defines three daily blocks (午前 9:00-12:00, 午後 13:00-17:00, 夜間 18:00-21:00) and a continuous-use table. 第5会議室 is listed at 54 seats with blocks 11,500 / 13,370 / 15,340 yen and continuous rates 午前・午後 22,390 yen, 午後・夜間 25,840 yen, 終日 36,190 yen. The page prices a video projector at 4,760 yen per block, a loudspeaker system at 1,850 yen, microphones at 1,500 yen and a CD player at 1,850 yen; 第3-5会議室 carry two wireless plus two wired microphones. Closure is 28 December to 4 January only, and keys are handed over 10 minutes before the booked time. Address 375 Shimizu-cho, Takeyamachi-dori Karasuma-higashi-iru, Nakagyo-ku, Kyoto 604-0874. USD-equivalent conversion basis: ECB euro foreign exchange reference rates dated 2026-11-27, fetched 2026-11-28 from https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml (EUR 1 = USD 1.0957; EUR 1 = JPY 174.81), giving USD 1 = JPY 159.5418 and 1 JPY = USD 0.00626795; see fx_evidence_2026-11-28.md. Nearest station: Marutamachi (丸太町) on the Karasuma subway line, connected directly to the building underground (the fee page's own banner reads 地下鉄丸太町駅直結, captured as captures/heartpia_fee.html); no surface walking time is published because the link is direct.",
+        "inference": "54 claimed seats with a 36,190 yen all-day rate make this the cheapest 12-hour-capable Kyoto candidate found; the 09:00-17:00 figure of 22,390 yen is the continuous two-block discount rather than the sum of the two blocks (24,870 yen), which is how the page's own 連続利用 table reads.",
+        "geo": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E4%B8%AD%E4%BA%AC%E5%8C%BA%E6%B8%85%E6%B0%B4%E7%94%BA375"
+      },
+      "latitude": 35.016354,
+      "longitude": 135.759842,
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "final_quote_required"
+      ],
+      "score": 0.7519,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.9719,
+          "weight": 0.2,
+          "contribution": 0.1944
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "recording_suitability": {
+          "factor": 0.55,
+          "weight": 0.15,
+          "contribution": 0.0825
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "technical_readiness": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "event_window_fit": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "total": 0.7519
+      }
+    },
+    {
+      "name": "kokoka 京都市国際交流会館 — Seminar Room（セミナー室）",
+      "city_slug": "kyoto-jp",
+      "address": "〒606-8536 京都市左京区粟田口鳥居町2番地の1（kokoka Kyoto International Community House, Sakyo-ku, Kyoto 606-8536）",
+      "capacity_comfortable": 50,
+      "capacity_basis": "seated",
+      "screen_status": "no",
+      "wifi_status": "unknown",
+      "catering_policy": "delivery_allowed",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": 169.86,
+      "cost_basis": "published_rate",
+      "cost_local_amount": 27100,
+      "cost_local_currency": "JPY",
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "cost_rate_unit": "day",
+      "booking_url": "https://kcif.or.jp/web/en/facilityrental/facility",
+      "opening_hours": "09:00-21:00 (no use before 09:00 or after 21:00)",
+      "closing_time": "21:00",
+      "max_booking_hours": 12,
+      "event_window_status": "allows_to_6",
+      "event_window_evidence": {
+        "url": "https://kcif.or.jp/web/en/facilityrental/facility",
+        "title": "Venues for Hire ｜ Kyoto City International Foundation (kokoka), fetched 2026-11-28",
+        "accessed_on": "2026-11-28",
+        "claim": "The Saturday/Sunday/holiday row for the Seminar Room prices 9:00-12:00 at 11,200 yen and 13:00-17:00 at 15,900 yen, with use prohibited before 9:00 and after 21:00, so a 09:00-21:00 Saturday is inside the published window."
+      },
+      "verification_question_kinds": [
+        "screen",
+        "wifi",
+        "final_quote",
+        "availability",
+        "booking_terms"
+      ],
+      "verification_questions": [
+        "Confirm projection: the page states the Seminar Room has free audio-visual facilities (DVD players, VCRs) but explicitly that no monitor is available, so a projector and screen would have to be hired or brought.",
+        "Confirm event Wi-Fi in the Seminar Room.",
+        "Confirm the tax treatment of the 27,100 yen Saturday day rate.",
+        "Confirm Saturday availability for 2027 through the online reservation system.",
+        "Confirm the alcohol rule for the Seminar Room: whether serving alcohol at a private community event is permitted, whether an event liquor licence is required and who must hold it — the venue publishes no alcohol permission, and an in-house cafe's licence is not evidence that a rented room may serve alcohol."
+      ],
+      "source_url": "https://kcif.or.jp/web/en/facilityrental/facility",
+      "source_title": "Venues for Hire ｜ Kyoto City International Foundation (kokoka) — fetched 2026-11-28: Seminar Room 50 seats / 98 m2, free AV (DVD/VCR), 'the monitor is not available'; Sat/Sun/holiday 11,200 + 15,900 yen",
+      "accessed_on": "2026-11-28",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "The kokoka fee table (fetched 2026-11-28) lists the Seminar Room as 50 seats over 98 m2, 'for all kind of seminars', with free audio-visual facilities (DVD players, VCRs) and the warning that 'the monitor is not available'. Saturday/Sunday/holiday blocks are 11,200 yen (9:00-12:00) and 15,900 yen (13:00-17:00), i.e. 27,100 yen for 09:00-17:00 and 41,400 yen for 09:00-21:00. USD-equivalent conversion basis: ECB euro foreign exchange reference rates dated 2026-11-27, fetched 2026-11-28 from https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml (EUR 1 = USD 1.0957; EUR 1 = JPY 174.81), giving USD 1 = JPY 159.5418 and 1 JPY = USD 0.00626795; see fx_evidence_2026-11-28.md. Nearest station: Keage (蹴上) on the Tozai subway line, about 6 minutes on foot (kokoka access page https://www.kcif.or.jp/web/jp/access/, captured as captures/kokoka_access.html: '京都市営地下鉄の最寄り駅から徒歩6分', and the same page's taxi instruction names 蹴上).",
+        "inference": "Fifty seats exactly meets the target attendance with no headroom, and the page's explicit 'no monitor' statement makes the room screen-poor for a projector-led AI event; it is retained because the price is the lowest of the kokoka set and the screen question is soft.",
+        "geo": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E5%B7%A6%E4%BA%AC%E5%8C%BA%E7%B2%9F%E7%94%B0%E5%8F%A3%E9%B3%A5%E5%B1%85%E7%94%BA2-1"
+      },
+      "latitude": 35.010658,
+      "longitude": 135.787567,
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "screen_unavailable",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "final_quote_required"
+      ],
+      "score": 0.7482,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.966,
+          "weight": 0.2,
+          "contribution": 0.1932
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 0.7,
+          "weight": 0.15,
+          "contribution": 0.105
+        },
+        "recording_suitability": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "technical_readiness": {
+          "factor": 0.0,
+          "weight": 0.05,
+          "contribution": 0.0
+        },
+        "event_window_fit": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "total": 0.7482
+      }
+    },
+    {
+      "name": "kokoka 京都市国際交流会館 — Conference Rooms 1 + 2（第1・第2会議室 連結）",
+      "city_slug": "kyoto-jp",
+      "address": "〒606-8536 京都市左京区粟田口鳥居町2番地の1（kokoka Kyoto International Community House, Sakyo-ku, Kyoto 606-8536）",
+      "capacity_comfortable": 68,
+      "capacity_basis": "venue_claim",
+      "screen_status": "unknown",
+      "wifi_status": "unknown",
+      "catering_policy": "delivery_allowed",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": 173.0,
+      "cost_basis": "published_rate",
+      "cost_local_amount": 27600,
+      "cost_local_currency": "JPY",
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "cost_rate_unit": "day",
+      "booking_url": "https://kcif.or.jp/web/en/facilityrental/facility",
+      "opening_hours": "09:00-21:00 (no use before 09:00 or after 21:00)",
+      "closing_time": "21:00",
+      "max_booking_hours": 12,
+      "event_window_status": "allows_to_6",
+      "event_window_evidence": {
+        "url": "https://kcif.or.jp/web/en/facilityrental/facility",
+        "title": "Venues for Hire ｜ Kyoto City International Foundation (kokoka), fetched 2026-11-28",
+        "accessed_on": "2026-11-28",
+        "claim": "The page states the two conference rooms can be combined by removing the partition and prices each room at 5,700 yen (9:00-12:00) and 8,100 yen (13:00-17:00) on Saturdays, Sundays and holidays, with the building closed to renters before 9:00 and after 21:00."
+      },
+      "verification_question_kinds": [
+        "room_assignment",
+        "screen",
+        "wifi",
+        "final_quote",
+        "availability",
+        "booking_terms"
+      ],
+      "verification_questions": [
+        "Confirm that both rooms are free on the target Saturday and can be joined by removing the partition (the page states the partition can be removed but not that both rooms can be held together).",
+        "Confirm AV for a talk: the page sells equipment separately and lists no projector in the rooms.",
+        "Confirm event Wi-Fi in the conference rooms.",
+        "Confirm the tax treatment of the 27,600 yen combined Saturday rate.",
+        "Confirm Saturday availability for 2027 through the online reservation system.",
+        "Confirm the alcohol rule for Conference Rooms 1 + 2: whether serving alcohol at a private community event is permitted, whether an event liquor licence is required and who must hold it — the venue publishes no alcohol permission, and an in-house cafe's licence is not evidence that a rented room may serve alcohol."
+      ],
+      "source_url": "https://kcif.or.jp/web/en/facilityrental/facility",
+      "source_title": "Venues for Hire ｜ Kyoto City International Foundation (kokoka) — fetched 2026-11-28: Conference Rooms 1 and 2, each 34 seats / 63 m2, joinable; Sat/Sun/holiday 5,700 + 8,100 yen per room",
+      "accessed_on": "2026-11-28",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "The kokoka fee table (fetched 2026-11-28) lists Conference Rooms 1 and 2 as 34 seats and 63 m2 each, joinable by removing the partition, at 5,700 yen (9:00-12:00) and 8,100 yen (13:00-17:00) per room on Saturdays, Sundays and holidays. The combined 09:00-17:00 figure recorded here is 27,600 yen for both rooms; three blocks for both rooms would be 42,400 yen for 09:00-21:00. USD-equivalent conversion basis: ECB euro foreign exchange reference rates dated 2026-11-27, fetched 2026-11-28 from https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml (EUR 1 = USD 1.0957; EUR 1 = JPY 174.81), giving USD 1 = JPY 159.5418 and 1 JPY = USD 0.00626795; see fx_evidence_2026-11-28.md. Nearest station: Keage (蹴上) on the Tozai subway line, about 6 minutes on foot (kokoka access page https://www.kcif.or.jp/web/jp/access/, captured as captures/kokoka_access.html: '京都市営地下鉄の最寄り駅から徒歩6分', and the same page's taxi instruction names 蹴上).",
+        "inference": "Joining the rooms gives 68 claimed seats, just above the 50-person target, at the cheapest kokoka price; the room assignment question is material to Joe because the price depends on holding both rooms.",
+        "geo": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E5%B7%A6%E4%BA%AC%E5%8C%BA%E7%B2%9F%E7%94%B0%E5%8F%A3%E9%B3%A5%E5%B1%85%E7%94%BA2-1"
+      },
+      "latitude": 35.010658,
+      "longitude": 135.787567,
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "final_quote_required"
+      ],
+      "score": 0.7481,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.9654,
+          "weight": 0.2,
+          "contribution": 0.1931
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 0.7,
+          "weight": 0.15,
+          "contribution": 0.105
+        },
+        "recording_suitability": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "technical_readiness": {
+          "factor": 0.0,
+          "weight": 0.05,
+          "contribution": 0.0
+        },
+        "event_window_fit": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "total": 0.7481
+      }
+    },
+    {
+      "name": "ハートピア京都（京都府立総合社会福祉会館）— 大会議室",
+      "city_slug": "kyoto-jp",
+      "address": "〒604-0874 京都市中京区竹屋町通烏丸東入る清水町375番地（Kyoto Prefectural Comprehensive Social Welfare Hall, Nakagyo-ku, Kyoto）",
+      "capacity_comfortable": 120,
+      "capacity_basis": "venue_claim",
+      "screen_status": "confirmed",
+      "wifi_status": "unknown",
+      "catering_policy": "unknown",
+      "recording_suitability": "likely_good",
+      "estimated_cost_usd": 310.26,
+      "cost_basis": "published_rate",
+      "cost_local_amount": 49500,
+      "cost_local_currency": "JPY",
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "cost_rate_unit": "day",
+      "booking_url": "https://heartpia-kyoto.jp/convention/fee.html",
+      "opening_hours": "09:00-21:00 in three blocks; closed 28 December - 4 January",
+      "closing_time": "21:00",
+      "max_booking_hours": 12,
+      "event_window_status": "allows_to_6",
+      "event_window_evidence": {
+        "url": "https://heartpia-kyoto.jp/convention/fee.html",
+        "title": "ハートピア京都 貸会議室ご利用料金 (official fee page), fetched 2026-11-28",
+        "accessed_on": "2026-11-28",
+        "claim": "The continuous-use table prices 大会議室 at 午前・午後 49,500 yen and 終日 79,940 yen across the 09:00-21:00 block structure, so both the eight-hour and twelve-hour windows are published."
+      },
+      "verification_question_kinds": [
+        "screen",
+        "wifi",
+        "final_quote",
+        "availability",
+        "booking_terms"
+      ],
+      "verification_questions": [
+        "Confirm screen and projector for 120-seat staging (the page prices a video projector at 4,760 yen per block and a loudspeaker system at 1,850 yen; the hall's own screen is not itemised).",
+        "Confirm Wi-Fi in 大会議室.",
+        "Confirm the tax treatment of the 49,500 yen 午前・午後 rate.",
+        "Confirm Saturday availability; the hall is heavily booked by welfare and public-interest users.",
+        "Confirm the alcohol rule for 大会議室: whether serving alcohol at a private community event is permitted, whether an event liquor licence is required and who must hold it — the fee page publishes no alcohol rule and the building's welfare-purpose terms may restrict it."
+      ],
+      "source_url": "https://heartpia-kyoto.jp/convention/fee.html",
+      "source_title": "ハートピア京都 貸会議室ご利用料金 — fetched 2026-11-28: 大会議室 120〜200名, 午前 25,340円 / 午後 29,650円 / 夜間 33,830円, 午前・午後 49,500円, 終日 79,940円; 拡声装置必須 1,850円",
+      "accessed_on": "2026-11-28",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "The Heartpia Kyoto fee page (fetched 2026-11-28) lists 大会議室 at 120-200 seats with blocks 25,340 / 29,650 / 33,830 yen, continuous 午前・午後 49,500 yen, 午後・夜間 57,140 yen and 終日 79,940 yen. The page notes that 大会議室 and 視聴覚室 have different installed equipment and require the loudspeaker system (拡声装置 1,850 yen per block); 大会議室 takes four wireless plus four wired microphones. Hall lighting (upper/lower horizon, suspension, spot) is available for a fee. USD-equivalent conversion basis: ECB euro foreign exchange reference rates dated 2026-11-27, fetched 2026-11-28 from https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml (EUR 1 = USD 1.0957; EUR 1 = JPY 174.81), giving USD 1 = JPY 159.5418 and 1 JPY = USD 0.00626795; see fx_evidence_2026-11-28.md. Nearest station: Marutamachi (丸太町) on the Karasuma subway line, connected directly to the building underground (the fee page's own banner reads 地下鉄丸太町駅直結, captured as captures/heartpia_fee.html); no surface walking time is published because the link is direct.",
+        "inference": "The room is 2.4x the target attendance at its lower capacity bound, so the scorer will flag oversized_capacity; it is retained because a 49,500 yen 09:00-17:00 package with a 12-hour option is the strongest public-hall fallback in the set.",
+        "geo": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E4%B8%AD%E4%BA%AC%E5%8C%BA%E6%B8%85%E6%B0%B4%E7%94%BA375"
+      },
+      "latitude": 35.016354,
+      "longitude": 135.759842,
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "final_quote_required"
+      ],
+      "score": 0.7451,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.9379,
+          "weight": 0.2,
+          "contribution": 0.1876
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "recording_suitability": {
+          "factor": 0.55,
+          "weight": 0.15,
+          "contribution": 0.0825
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "technical_readiness": {
+          "factor": 0.5,
+          "weight": 0.05,
+          "contribution": 0.025
+        },
+        "event_window_fit": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "total": 0.7451
+      }
+    },
+    {
+      "name": "kokoka 京都市国際交流会館 — Event Hall（イベントホール）",
+      "city_slug": "kyoto-jp",
+      "address": "〒606-8536 京都市左京区粟田口鳥居町2番地の1（kokoka Kyoto International Community House, 2-1 Awataguchi Toriicho, Sakyo-ku, Kyoto 606-8536）",
+      "capacity_comfortable": 130,
+      "capacity_basis": "venue_claim",
+      "screen_status": "unknown",
+      "wifi_status": "unknown",
+      "catering_policy": "delivery_allowed",
+      "recording_suitability": "likely_good",
+      "estimated_cost_usd": 466.96,
+      "cost_basis": "published_rate",
+      "cost_local_amount": 74500,
+      "cost_local_currency": "JPY",
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "cost_rate_unit": "day",
+      "booking_url": "https://kcif.or.jp/web/en/facilityrental/facility",
+      "opening_hours": "09:00-21:00 (facilities cannot be used before 09:00 or after 21:00; extension limited to 30 minutes)",
+      "closing_time": "21:00",
+      "max_booking_hours": 12,
+      "event_window_status": "allows_to_6",
+      "event_window_evidence": {
+        "url": "https://kcif.or.jp/web/en/facilityrental/facility",
+        "title": "Venues for Hire ｜ Kyoto City International Foundation (kokoka), fetched 2026-11-28",
+        "accessed_on": "2026-11-28",
+        "claim": "The official English fee page prints Morning 9:00-12:00, Afternoon 13:00-17:00 and Night 18:00-21:00 blocks for Saturdays, Sundays and holidays and states that facilities cannot be used before 9:00 and after 21:00, so a 09:00-21:00 twelve-hour Saturday window is inside the published operating window."
+      },
+      "verification_question_kinds": [
+        "screen",
+        "wifi",
+        "final_quote",
+        "availability",
+        "booking_terms"
+      ],
+      "verification_questions": [
+        "Confirm AV in the Event Hall for a 50-person talk plus projection: the English page sells equipment hire separately and does not list a projector or screen as included.",
+        "Confirm whether event Wi-Fi is provided in the Event Hall (the page advertises Wi-Fi in the Interaction Lobby, not in the rented rooms).",
+        "Confirm whether the published Saturday/Sunday/holiday rates are tax-inclusive; the English and Japanese pages print the same figures without a consumption-tax statement.",
+        "Confirm date availability through the online reservation system for a Saturday in 2027 (reservations open six months ahead, first day of the month).",
+        "Confirm the alcohol rule for the Event Hall: whether serving alcohol at a private community event is permitted, whether an event liquor licence is required and who must hold it — the venue publishes no alcohol permission, and an in-house cafe's licence is not evidence that a rented hall may serve alcohol."
+      ],
+      "source_url": "https://kcif.or.jp/web/en/facilityrental/facility",
+      "source_title": "Venues for Hire ｜ Kyoto City International Foundation (kokoka) — fetched 2026-11-28: Event Hall 221 seats / 130 persons flat floor / 190 m2; Sat/Sun/holiday blocks 30,300 + 44,200 + 36,500 yen (09:00-12:00 / 13:00-17:00 / 18:00-21:00)",
+      "accessed_on": "2026-11-28",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "The kokoka Kyoto International Community House 'Venues for Hire' page (kcif.or.jp/web/en/facilityrental/facility, fetched 2026-11-28) lists nine rentable spaces with weekday and Saturday/Sunday/holiday fee blocks. The Event Hall is 190 m2 with 221 seats, or 130 persons as a flat-floor hall. Saturday/Sunday/holiday blocks are Morning 9:00-12:00 30,300 yen, Afternoon 13:00-17:00 44,200 yen, Night 18:00-21:00 36,500 yen, so a 09:00-17:00 day is 74,500 yen and a 09:00-21:00 day is 111,000 yen. The page states facilities cannot be used before 9:00 and after 21:00, extensions are limited to 30 minutes, and preparation and clearing time count inside the booked window. Address and access: 2-1 Awataguchi Toriicho, Sakyo-ku, Kyoto 606-8536, a 5-6 minute walk from Keage subway station (page 'Access'). The page also offers a drink delivery service from the in-house coffee shop for a separate fee. USD-equivalent conversion basis: ECB euro foreign exchange reference rates dated 2026-11-27, fetched 2026-11-28 from https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml (EUR 1 = USD 1.0957; EUR 1 = JPY 174.81), giving USD 1 = JPY 159.5418 and 1 JPY = USD 0.00626795; see fx_evidence_2026-11-28.md.",
+        "inference": "Capacity 130 is the venue's own flat-floor figure rather than a seating count, so a 50-person event has headroom; the same page prices the block structure, so the cost is a published rate for the 09:00-17:00 package and the 12-hour figure is stated in evidence rather than claimed as a booking.",
+        "geo": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E5%B7%A6%E4%BA%AC%E5%8C%BA%E7%B2%9F%E7%94%B0%E5%8F%A3%E9%B3%A5%E5%B1%85%E7%94%BA2-1"
+      },
+      "latitude": 35.010658,
+      "longitude": 135.787567,
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "final_quote_required"
+      ],
+      "score": 0.7388,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.9066,
+          "weight": 0.2,
+          "contribution": 0.1813
+        },
+        "capacity_fit": {
+          "factor": 0.6,
+          "weight": 0.2,
+          "contribution": 0.12
+        },
+        "catering_flexibility": {
+          "factor": 0.7,
+          "weight": 0.15,
+          "contribution": 0.105
+        },
+        "recording_suitability": {
+          "factor": 0.55,
+          "weight": 0.15,
+          "contribution": 0.0825
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "technical_readiness": {
+          "factor": 0.0,
+          "weight": 0.05,
+          "contribution": 0.0
+        },
+        "event_window_fit": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "total": 0.7388
+      }
+    },
+    {
+      "name": "ハートンホテル京都 — 嵐山（2F ホール）",
+      "city_slug": "kyoto-jp",
+      "address": "〒604-0836 京都市中京区東洞院通御池上ル船屋町405（Hearton Hotel Kyoto, 405 Funaya-cho, Nakagyo-ku, Kyoto）",
+      "capacity_comfortable": 72,
+      "capacity_basis": "seated",
+      "screen_status": "unknown",
+      "wifi_status": "unknown",
+      "catering_policy": "unknown",
+      "recording_suitability": "likely_good",
+      "estimated_cost_usd": 526.51,
+      "cost_basis": "published_rate",
+      "cost_local_amount": 84000,
+      "cost_local_currency": "JPY",
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "cost_rate_unit": "day",
+      "booking_url": "https://www.hearton.co.jp/hall/kyoto/kyo-places",
+      "opening_hours": "hourly-duration bookings 09:00-22:00; a night surcharge applies from 19:00 to 22:00",
+      "closing_time": "22:00",
+      "max_booking_hours": 12,
+      "event_window_status": "allows_to_6",
+      "event_window_evidence": {
+        "url": "https://www.hearton.co.jp/hall/kyoto/kyo-places",
+        "title": "ハートンホテル京都 ホール・貸し会議室 料金表 (official page), fetched 2026-11-28",
+        "accessed_on": "2026-11-28",
+        "claim": "The fee table prices duration bands from 1-3 hours through 10 hours and more, and states that use after 19:00 carries a separate night surcharge for 19:00-22:00, so a 09:00-21:00 Saturday booking is priced and inside the venue's operating span."
+      },
+      "verification_question_kinds": [
+        "screen",
+        "wifi",
+        "final_quote",
+        "availability",
+        "booking_terms"
+      ],
+      "verification_questions": [
+        "Confirm projector, screen and microphone provision in 嵐山 (the page prices only room hire; equipment is quoted separately by the hall).",
+        "Confirm event Wi-Fi in 嵐山.",
+        "Confirm that the 7-8 hour band (84,000 yen) is the correct band for a 09:00-17:00 booking, and that the 19:00-22:00 night surcharge is not triggered by an 09:00-21:00 booking that ends before 19:00 plus two hours.",
+        "Confirm Saturday availability and cancellation terms (the page lists 30% at 61+ days, 60% at 60-31 days, 100% inside 30 days).",
+        "Confirm the alcohol and catering rule for a community event at the hotel (a hotel bar or restaurant licence does not automatically cover a rented hall)."
+      ],
+      "source_url": "https://www.hearton.co.jp/hall/kyoto/kyo-places",
+      "source_title": "ハートンホテル京都 ホール・貸し会議室 — fetched 2026-11-28: 嵐山 3名掛けスクール72名 / 2名掛け48名 / シアター100名; 7・8時間 84,000円, 10時間以上 106,000円, 延長 11,000円/h, 夜間割増(19-22時) 2,000円, 税込",
+      "accessed_on": "2026-11-28",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "The Hearton Hotel Kyoto hall page (hearton.co.jp/hall/kyoto/kyo-places, fetched 2026-11-28) lists 嵐山 on the second floor with 72 three-seat school desks, 48 two-seat, 100 theatre and 48 hollow-square places, and a duration-based tariff: 1-3 hours 40,000 yen, 4 hours 51,000, 5 hours 62,000, 6 hours 73,000, 7-8 hours 84,000, 9 hours 95,000, 10 hours and more 106,000, overtime 11,000 yen per hour, plus a night surcharge of 2,000 yen per day for 19:00-22:00. All amounts are stated as tax-inclusive. The same page lists 宇治伏見 (1F, 100 school / 180 theatre) at 66,000 for 1-3 hours and 134,000 for 7-8 hours. Address 405 Funaya-cho, Higashi-no-toin-dori Oike-agaru, Nakagyo-ku, Kyoto 604-0836, two minutes from Karasuma Oike station exit 1. USD-equivalent conversion basis: ECB euro foreign exchange reference rates dated 2026-11-27, fetched 2026-11-28 from https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml (EUR 1 = USD 1.0957; EUR 1 = JPY 174.81), giving USD 1 = JPY 159.5418 and 1 JPY = USD 0.00626795; see fx_evidence_2026-11-28.md.",
+        "inference": "The 7-8 hour band covers the brief's eight-hour window at 84,000 yen with no night surcharge, and the 10-hour-and-more band (106,000 yen) would cover a 09:00-21:00 booking only with the 2,000 yen surcharge for the hours after 19:00.",
+        "geo": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E4%B8%AD%E4%BA%AC%E5%8C%BA%E8%88%B9%E5%B1%8B%E7%94%BA405"
+      },
+      "latitude": 35.011631,
+      "longitude": 135.760818,
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "final_quote_required"
+      ],
+      "score": 0.7114,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.8947,
+          "weight": 0.2,
+          "contribution": 0.1789
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "recording_suitability": {
+          "factor": 0.55,
+          "weight": 0.15,
+          "contribution": 0.0825
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "technical_readiness": {
+          "factor": 0.0,
+          "weight": 0.05,
+          "contribution": 0.0
+        },
+        "event_window_fit": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "total": 0.7114
+      }
+    },
+    {
+      "name": "京都リサーチパーク（KRP）西地区4号館 — ルーム2",
+      "city_slug": "kyoto-jp",
+      "address": "〒600-8815 京都市下京区中堂寺粟田町93（Kyoto Research Park West Area Building 4, 93 Chudoji Awata-cho, Shimogyo-ku, Kyoto）",
+      "capacity_comfortable": 96,
+      "capacity_basis": "seated",
+      "screen_status": "unknown",
+      "wifi_status": "unknown",
+      "catering_policy": "unknown",
+      "recording_suitability": "likely_good",
+      "estimated_cost_usd": 806.68,
+      "cost_basis": "published_rate",
+      "cost_local_amount": 128700,
+      "cost_local_currency": "JPY",
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "cost_rate_unit": "day",
+      "booking_url": "https://www.krp.co.jp/kaigi/room/price.html",
+      "opening_hours": "day block 09:00-17:00, night block 18:00-21:00; overtime charged hourly",
+      "closing_time": "21:00",
+      "max_booking_hours": 12,
+      "event_window_status": "allows_to_6",
+      "event_window_evidence": {
+        "url": "https://www.krp.co.jp/kaigi/room/price.html",
+        "title": "料金｜ホール・会議室｜京都リサーチパーク (official fee page), fetched 2026-11-28",
+        "accessed_on": "2026-11-28",
+        "claim": "The fee table defines 全日 as 09:00-17:00 and 夜間 as 18:00-21:00 with an hourly overtime rate, so a 09:00-21:00 booking is a priced combination of the two published blocks."
+      },
+      "verification_question_kinds": [
+        "screen",
+        "wifi",
+        "final_quote",
+        "availability",
+        "booking_terms"
+      ],
+      "verification_questions": [
+        "Confirm AV in ルーム2: the fee page prices rooms only and the room-detail page could not be reached today (HTTP 404 on the URL tried), so projector, screen and microphone provision is unconfirmed.",
+        "Confirm event Wi-Fi in ルーム2.",
+        "Confirm that the Saturday/Sunday/holiday 全日 rate (128,700 yen) plus the 夜間 block (28,600 yen) is the correct 09:00-21:00 total, and whether the 17:00-18:00 hour is charged as overtime.",
+        "Confirm Saturday availability through the KRP reservation desk.",
+        "Confirm the catering and alcohol rule for a community event (KRP is a research-park campus with tenant catering)."
+      ],
+      "source_url": "https://www.krp.co.jp/kaigi/room/price.html",
+      "source_title": "料金｜ホール・会議室｜京都リサーチパーク — fetched 2026-11-28: ルーム2 スクール96席 / シアター120席 / 口型48席, 146㎡, 土日祝 全日(9:00-17:00) 128,700円, 夜間(18:00-21:00) 28,600円, 時間外割増 30,800円/h, 税込",
+      "accessed_on": "2026-11-28",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "The KRP fee page (krp.co.jp/kaigi/room/price.html, fetched 2026-11-28) prints two tax-inclusive tables: East Area Building 1 (サイエンスホール, G会議室, A/B/C会議室, D/E/F会議室, アトリウム, ホワイエ) and West Area Building 4 (バズホール, ルーム1, ルーム2, ルーム2A/2B, ルーム3, ルーム4/5/6, バンケットホール). ルーム2 is 96 school seats, 120 theatre, 48 hollow-square, 146 m2, with weekday 全日 103,400 yen and Saturday/Sunday/holiday 全日 128,700 yen, night block 23,100 / 28,600 yen, overtime 30,800 yen per hour. A/B/C会議室 (42 school, 56 theatre) are 44,000 weekday and 53,900 yen weekend all-day. KRP address: 134 Chudoji Minami-machi, Shimogyo-ku, Kyoto 600-8813, with the West Area at 90-94 Chudoji Awata-cho. USD-equivalent conversion basis: ECB euro foreign exchange reference rates dated 2026-11-27, fetched 2026-11-28 from https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml (EUR 1 = USD 1.0957; EUR 1 = JPY 174.81), giving USD 1 = JPY 159.5418 and 1 JPY = USD 0.00626795; see fx_evidence_2026-11-28.md. Nearest station: JR Tanbaguchi (丹波口) on the Sagano (San'in) line, about 5 minutes west on foot (KRP access page https://www.krp.co.jp/access/, captured as captures/krp_access.html); the same page gives Kyoto Station as a bus/taxi connection.",
+        "inference": "ルーム2 is the right KRP room on capacity (96 school against the 42-seat A/B/C rooms, which are below the 50-person brief); the 09:00-17:00 figure is the recorded cost and the 12-hour combination is stated in evidence rather than added into the headline number.",
+        "geo": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E4%B8%8B%E4%BA%AC%E5%8C%BA%E4%B8%AD%E5%A0%82%E5%AF%BA%E7%B2%9F%E7%94%B0%E7%94%BA93"
+      },
+      "latitude": 34.99498,
+      "longitude": 135.738541,
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "final_quote_required"
+      ],
+      "score": 0.7002,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.8387,
+          "weight": 0.2,
+          "contribution": 0.1677
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "recording_suitability": {
+          "factor": 0.55,
+          "weight": 0.15,
+          "contribution": 0.0825
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "technical_readiness": {
+          "factor": 0.0,
+          "weight": 0.05,
+          "contribution": 0.0
+        },
+        "event_window_fit": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "total": 0.7002
+      }
+    },
+    {
+      "name": "ハートンホテル京都 — 宇治伏見（1F 大ホール）",
+      "city_slug": "kyoto-jp",
+      "address": "〒604-0836 京都市中京区東洞院通御池上ル船屋町405（Hearton Hotel Kyoto, Nakagyo-ku, Kyoto）",
+      "capacity_comfortable": 100,
+      "capacity_basis": "seated",
+      "screen_status": "unknown",
+      "wifi_status": "unknown",
+      "catering_policy": "unknown",
+      "recording_suitability": "likely_good",
+      "estimated_cost_usd": 839.91,
+      "cost_basis": "published_rate",
+      "cost_local_amount": 134000,
+      "cost_local_currency": "JPY",
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "cost_rate_unit": "day",
+      "booking_url": "https://www.hearton.co.jp/hall/kyoto/kyo-places",
+      "opening_hours": "hourly-duration bookings 09:00-22:00; night surcharge from 19:00",
+      "closing_time": "22:00",
+      "max_booking_hours": 12,
+      "event_window_status": "allows_to_6",
+      "event_window_evidence": {
+        "url": "https://www.hearton.co.jp/hall/kyoto/kyo-places",
+        "title": "ハートンホテル京都 ホール・貸し会議室 料金表 (official page), fetched 2026-11-28",
+        "accessed_on": "2026-11-28",
+        "claim": "The fee table offers 7-8 hour and 10-hour-plus duration bands for 宇治伏見 with a night surcharge for 19:00-22:00, so both an eight-hour and a twelve-hour Saturday booking are priced."
+      },
+      "verification_question_kinds": [
+        "screen",
+        "wifi",
+        "final_quote",
+        "availability",
+        "booking_terms"
+      ],
+      "verification_questions": [
+        "Confirm AV for a 50-person talk in the 180-theatre / 100-school hall (room hire only is published).",
+        "Confirm event Wi-Fi.",
+        "Confirm whether 宇治伏見 can be split so that only half the hall is charged if the final attendance is near 50.",
+        "Confirm Saturday availability and cancellation terms.",
+        "Confirm the alcohol and catering rule for a rented hall (licensing is a hotel question, not an assumption)."
+      ],
+      "source_url": "https://www.hearton.co.jp/hall/kyoto/kyo-places",
+      "source_title": "ハートンホテル京都 ホール・貸し会議室 — fetched 2026-11-28: 宇治伏見 3名掛けスクール100名 / 2名掛け68名 / シアター180名; 7・8時間 134,000円, 10時間以上 168,000円, 延長 17,000円/h, 夜間割増 3,300円, 税込",
+      "accessed_on": "2026-11-28",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "The Hearton Hotel Kyoto hall page (fetched 2026-11-28) lists 宇治伏見 on the first floor as the combined 宇治 + 伏見 hall: 100 three-seat school desks, 68 two-seat, 180 theatre, 54 hollow-square, priced at 66,000 yen for 1-3 hours, 83,000 for 4, 100,000 for 5, 117,000 for 6, 134,000 for 7-8 hours, 151,000 for 9, 168,000 for 10 hours and more, 17,000 yen per overtime hour, plus a 3,300 yen per day night surcharge for 19:00-22:00, all tax-inclusive. The page states 宇治 and 伏見 can be used separately. USD-equivalent conversion basis: ECB euro foreign exchange reference rates dated 2026-11-27, fetched 2026-11-28 from https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml (EUR 1 = USD 1.0957; EUR 1 = JPY 174.81), giving USD 1 = JPY 159.5418 and 1 JPY = USD 0.00626795; see fx_evidence_2026-11-28.md. Nearest station: Karasuma Oike (烏丸御池) on the Karasuma and Tozai subway lines, exit 1, about 2 minutes on foot (hotel access page https://www.hearton.co.jp/access/kyoto, captured as captures/hearton_access.html).",
+        "inference": "The 100-seat school layout doubles the target attendance, so the scorer will flag oversized_capacity; the split-hall option is the practical lever for a 50-person event and is carried as a verification question rather than priced.",
+        "geo": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E4%B8%AD%E4%BA%AC%E5%8C%BA%E8%88%B9%E5%B1%8B%E7%94%BA405"
+      },
+      "latitude": 35.011631,
+      "longitude": 135.760818,
+      "venue_tier": "shortlist_ready",
+      "tier_reasons": [],
+      "venue_flags": [
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "final_quote_required"
+      ],
+      "score": 0.6989,
+      "score_breakdown": {
+        "budget_efficiency": {
+          "factor": 0.832,
+          "weight": 0.2,
+          "contribution": 0.1664
+        },
+        "capacity_fit": {
+          "factor": 1.0,
+          "weight": 0.2,
+          "contribution": 0.2
+        },
+        "catering_flexibility": {
+          "factor": 0.0,
+          "weight": 0.15,
+          "contribution": 0.0
+        },
+        "recording_suitability": {
+          "factor": 0.55,
+          "weight": 0.15,
+          "contribution": 0.0825
+        },
+        "booking_path": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "evidence_freshness": {
+          "factor": 1.0,
+          "weight": 0.1,
+          "contribution": 0.1
+        },
+        "technical_readiness": {
+          "factor": 0.0,
+          "weight": 0.05,
+          "contribution": 0.0
+        },
+        "event_window_fit": {
+          "factor": 1.0,
+          "weight": 0.05,
+          "contribution": 0.05
+        },
+        "total": 0.6989
+      }
+    }
+  ],
+  "lead": [
+    {
+      "name": "FabCafe Kyoto — 2F 和室（14畳 レンタルスペース）",
+      "city_slug": "kyoto-jp",
+      "address": "〒600-8119 京都市下京区本塩竈町554（FabCafe Kyoto, 554 Hon-Shiokoya-cho, Shimogyo-ku, Kyoto）",
+      "capacity_comfortable": 0,
+      "capacity_basis": "unknown",
+      "screen_status": "unknown",
+      "wifi_status": "unknown",
+      "catering_policy": "in_house_available",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": 275.79,
+      "cost_basis": "estimated_from_rate",
+      "cost_local_amount": 44000,
+      "cost_local_currency": "JPY",
+      "hourly_rate_usd": 34.474,
+      "estimated_hours": 8,
+      "rate_estimate_note": "Published tatami-room rate of 5,500 yen per hour (tax-inclusive) multiplied by the eight-hour 09:00-17:00 window; the room's capacity is unpublished, so this is a rate estimate and not a quote.",
+      "hourly_rate_local": 5500,
+      "rate_currency": "JPY",
+      "cost_rate_unit": "hour",
+      "booking_url": "https://fabcafe.com/jp/kyoto/service/meeting-space/",
+      "opening_hours": "within FabCafe Kyoto opening hours (the page refers to the shop calendar; no event window is published)",
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "verification_question_kinds": [
+        "capacity",
+        "event_window",
+        "final_quote",
+        "screen",
+        "wifi",
+        "availability"
+      ],
+      "verification_questions": [
+        "Confirm the seated capacity of the 14-tatami room for a talk (the page prices 8畳 and 6畳 spaces and describes workshops and meetings, but publishes no headcount).",
+        "Confirm that the room can be booked for a full 09:00-17:00 Saturday day and whether evening hours are available (the page ties hire to the cafe's opening calendar).",
+        "Confirm projection and audio provision for a 50-person audience.",
+        "Confirm Wi-Fi for attendees.",
+        "Confirm the final quote for eight hours at 5,500 yen per hour including preparation and clearing time (the page states booked time includes set-up and clean-up and that staff attend the start and end).",
+        "Confirm the catering and alcohol rule (FabCafe runs a cafe; outside food and drink policies are unstated)."
+      ],
+      "source_url": "https://fabcafe.com/jp/kyoto/service/meeting-space/",
+      "source_title": "FabCafe Kyoto 2F 畳スペース — fetched 2026-11-28: 8畳 5,500円(税込)/1時間, 6畳 5,500円, 予約は1ヶ月前より, ご予約時間は準備・片付けを含む",
+      "accessed_on": "2026-11-28",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "The FabCafe Kyoto meeting-space page (fabcafe.com/jp/kyoto/service/meeting-space/, fetched 2026-11-28) describes a 14-tatami Japanese room on the second floor, bookable by groups, priced at 5,500 yen per hour tax-inclusive for the 8-tatami and 6-tatami spaces, with reservations accepted from one month ahead, booked time including set-up and clearing, one staff member present at start and end, and rubbish removal at 550 yen per 45-litre bag. The page refers to the cafe's own business calendar for opening times. Address 554 Hon-Shiokoya-cho, Shimogyo-ku, Kyoto, about 10 minutes on foot from Gojo subway station. USD-equivalent conversion basis: ECB euro foreign exchange reference rates dated 2026-11-27, fetched 2026-11-28 from https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml (EUR 1 = USD 1.0957; EUR 1 = JPY 174.81), giving USD 1 = JPY 159.5418 and 1 JPY = USD 0.00626795; see fx_evidence_2026-11-28.md.",
+        "inference": "The room is small (about 23 m2) and the operator publishes no headcount, so it cannot be scored as a 50-person venue; the hourly rate is recorded only as a rate estimate so the price context is not lost.",
+        "geo": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E4%B8%8B%E4%BA%AC%E5%8C%BA%E6%9C%AC%E5%A1%A9%E7%AB%88%E7%94%BA554"
+      },
+      "latitude": 34.995129,
+      "longitude": 135.765045,
+      "venue_tier": "lead",
+      "tier_reasons": [
+        "material verification question(s): capacity",
+        "capacity_comfortable 0 below minimum 40"
+      ],
+      "venue_flags": [
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "final_quote_required",
+        "duration_unconfirmed"
+      ],
+      "score": null,
+      "score_breakdown": null
+    },
+    {
+      "name": "Impact Hub Kyoto — 2F 会所 Event Space（西陣産業創造會舘）",
+      "city_slug": "kyoto-jp",
+      "address": "〒602-8061 京都市上京区油小路中立売西入ル甲斐守町97番地（Nishijin Sangyo Sosei Kaikan, 97 Kaifushicho, Kamigyo-ku, Kyoto）",
+      "capacity_comfortable": 70,
+      "capacity_basis": "venue_claim",
+      "screen_status": "confirmed",
+      "wifi_status": "unknown",
+      "catering_policy": "outside_allowed",
+      "recording_suitability": "likely_good",
+      "estimated_cost_usd": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "cost_rate_unit": "unknown",
+      "booking_url": "https://kyoto.impacthub.net/useourspace/",
+      "opening_hours": "Saturdays, Sundays and holidays 09:00-21:00 (weekday coworking 10:00-20:00)",
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "verification_question_kinds": [
+        "cost_unknown",
+        "source_support",
+        "event_window",
+        "wifi",
+        "availability",
+        "booking_terms",
+        "location"
+      ],
+      "verification_questions": [
+        "Confirm whether the 2F event space can still be hired for a full 09:00-21:00 Saturday (the 2025 snapshot printed weekend/holiday opening 09:00-21:00 and an event-space capacity of 60-90 seats, but that window cannot be re-verified today).",
+        "Confirm the current charge: the live fee page (kyoto.impacthub.net/useourspace/) returned no response on four attempts today (curl and headless Chromium, HTTP 000 after 45-120 seconds), so the 2025 price list must be re-confirmed with the Impact Hub office before any cost is recorded.",
+        "Confirm that the 2025-02-17 Internet Archive snapshot still describes the current offer (2F 会所 180 m2, 60-90 seats at weekends, free projector, screen, microphones and PA with reservation), since the live page could not be read today.",
+        "Confirm event Wi-Fi in the 2F 会所 space (the 2025 snapshot advertises a comfortable network in the coworking area and free projectors, screen, microphones and PA with reservation).",
+        "Confirm date availability directly with the Impact Hub Kyoto office.",
+        "Confirm the alcohol rule for the 2F 会所: whether serving alcohol at a private community event is permitted, whether an event liquor licence is required and who must hold it — the 2025 archive page publishes no alcohol rule and the live page could not be read today.",
+        "Confirm the nearest station and walking time to the 2F 会所 (the site's /access/ path timed out with zero bytes today and the 2025 archive capture names no station)."
+      ],
+      "source_url": "https://kyoto.impacthub.net/useourspace/",
+      "source_title": "会所／レンタルスペース - Impact Hub Kyoto (live page unreachable 2026-11-28; read through the Internet Archive capture of 2025-02-17): 2F 会所 180m2, 土日祝 60-90席, 9:00-21:00, プロジェクター・音響設備あり",
+      "accessed_on": "2026-11-28",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "The live Impact Hub Kyoto 'useourspace' page did not respond on 2026-11-28: four fetches (curl with browser user agent, 45 s and 120 s timeouts, and headless Chromium with a 30 s virtual-time budget) returned HTTP 000 with zero bytes, while the site root returned HTTP 200 in 0.7 s, so the timeout is specific to this path. The Internet Archive holds the only readable copy, captured 2025-02-17: 2F 会所 is 180 m2, offered as an event space of 60-90 seats at weekends and holidays, with 3F salon 108 m2, Saturday/Sunday/holiday hours 09:00-21:00, free use of projector, screen, microphone, speaker and PA with reservation, a 3F kitchen with free glassware, and a fee table with 9:00-17:00 and 13:00-21:00 weekend blocks. Address 97 Kaifushicho, Aburanokoji Nakadachiuri Nishi-iru, Kamigyo-ku, Kyoto 602-8061. No 2027-dated price could be read. USD-equivalent conversion basis: ECB euro foreign exchange reference rates dated 2026-11-27, fetched 2026-11-28 from https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml (EUR 1 = USD 1.0957; EUR 1 = JPY 174.81), giving USD 1 = JPY 159.5418 and 1 JPY = USD 0.00626795; see fx_evidence_2026-11-28.md. Nearest station: unknown — the site's /access/ path timed out with zero bytes today (HTTP 000 after 45 s), the readable 2025 archive capture names no station and the live homepage text carries no access line, so the nearest station and walking time are carried as a location question.",
+        "inference": "The prior Kyoto run scored this venue as its top candidate on the strength of a 2026-08-13 read of the same page; that read cannot be reproduced today, so the venue is retained as a lead with a material source-support question rather than carried forward as shortlist-ready on stale pricing.",
+        "geo": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=京都市上京区甲斐守町97"
+      },
+      "latitude": 35.024364,
+      "longitude": 135.753296,
+      "venue_tier": "lead",
+      "tier_reasons": [
+        "material verification question(s): location, source_support"
+      ],
+      "venue_flags": [
+        "cost_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "duration_unconfirmed"
+      ],
+      "score": null,
+      "score_breakdown": null
+    },
+    {
+      "name": "THE TERMINAL KYOTO（京町家レンタルスペース）",
+      "city_slug": "kyoto-jp",
+      "address": "〒600-8445 京都市下京区新町通仏光寺下ル岩戸山町424番地（THE TERMINAL KYOTO, 424 Iwadoyama-cho, Shimogyo-ku, Kyoto）",
+      "capacity_comfortable": 0,
+      "capacity_basis": "unknown",
+      "screen_status": "unknown",
+      "wifi_status": "unknown",
+      "catering_policy": "in_house_available",
+      "recording_suitability": "unknown",
+      "estimated_cost_usd": null,
+      "cost_basis": "unknown",
+      "cost_local_amount": null,
+      "cost_local_currency": null,
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "cost_rate_unit": "unknown",
+      "booking_url": "https://kyoto.theterminal.jp/",
+      "opening_hours": "09:00-18:00 (cafe 09:30-18:00, last order 17:00)",
+      "closing_time": null,
+      "max_booking_hours": null,
+      "event_window_status": "unknown",
+      "event_window_evidence": null,
+      "verification_question_kinds": [
+        "capacity",
+        "cost_unknown",
+        "event_window",
+        "screen",
+        "wifi",
+        "availability",
+        "booking_terms",
+        "availability"
+      ],
+      "verification_questions": [
+        "Confirm the seated capacity of the machiya for a 50-person talk plus screen (the site describes exhibition, workshop and study-session use but publishes no room capacity).",
+        "Confirm the hire fee and booking terms; the site publishes no price for private events (inquiry only).",
+        "Confirm whether the space can be hired for a full day to 21:00, since the published opening hours are 09:00-18:00 and the site does not describe evening private hire.",
+        "Confirm projection, screen and audio provision.",
+        "Confirm Wi-Fi for attendees.",
+        "Confirm food and alcohol arrangements (the site runs a cafe; whether outside catering or a licensed bar is available for a private event is unstated).",
+        "Confirm whether the whole machiya can be booked exclusively for a private day and what the cancellation terms are.",
+        "Confirm Saturday availability for a private full-day hire (the site publishes daily 09:00-18:00 hours only and states no weekday/weekend difference)."
+      ],
+      "source_url": "https://kyoto.theterminal.jp/",
+      "source_title": "THE TERMINAL KYOTO (official site), fetched 2026-11-28: 京町家 exhibition/event/seminar space, 営業時間 9:00-18:00, cafe 9:30-18:00; no capacity or hire price published",
+      "accessed_on": "2026-11-28",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "The official THE TERMINAL KYOTO site (kyoto.theterminal.jp, fetched 2026-11-28) presents a restored machiya in Shimogyo-ku used for exhibitions, events, study sessions and lessons, with a cafe and shop, opening hours 09:00-18:00 (cafe 09:30-18:00, last order 17:00), at 424 Iwadoyama-cho, Shinmachi-dori Bukkoji-sagaru, Shimogyo-ku. The site invites event proposals but publishes no room capacity, no hire fee and no equipment list. USD-equivalent conversion basis: ECB euro foreign exchange reference rates dated 2026-11-27, fetched 2026-11-28 from https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml (EUR 1 = USD 1.0957; EUR 1 = JPY 174.81), giving USD 1 = JPY 159.5418 and 1 JPY = USD 0.00626795; see fx_evidence_2026-11-28.md. Nearest station: Shijo (四条) on the Karasuma subway line, exit 6, about 6 minutes on foot; Hankyu Karasuma (烏丸) about 6 minutes on foot (access page https://kyoto.theterminal.jp/contact/#access, captured as captures/terminal_contact.html). Saturday availability: unknown — the site publishes daily 09:00-18:00 hours only and states no weekday/weekend difference or private-hire calendar, so Saturday opening and evening hire remain questions.",
+        "inference": "The machiya is a strong cultural fit for a Kyoto community day and would be distinctive for a small evening programme, but nothing in the published record supports a 50-person seated event or a 12-hour window, so it is a lead with all material fields open rather than a priced candidate.",
+        "geo": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E4%B8%8B%E4%BA%AC%E5%8C%BA%E5%B2%A9%E6%88%B8%E5%B1%B1%E7%94%BA424"
+      },
+      "latitude": 35.000706,
+      "longitude": 135.756927,
+      "venue_tier": "lead",
+      "tier_reasons": [
+        "material verification question(s): capacity",
+        "capacity_comfortable 0 below minimum 40"
+      ],
+      "venue_flags": [
+        "cost_unknown",
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "duration_unconfirmed"
+      ],
+      "score": null,
+      "score_breakdown": null
+    },
+    {
+      "name": "京都大学 百周年時計台記念館 — 国際交流ホール I（2F）",
+      "city_slug": "kyoto-jp",
+      "address": "京都市左京区吉田本町（Kyoto University Clock Tower Centennial Hall, Yoshida-honmachi, Sakyo-ku, Kyoto 606-8501）",
+      "capacity_comfortable": 100,
+      "capacity_basis": "venue_claim",
+      "screen_status": "unknown",
+      "wifi_status": "unknown",
+      "catering_policy": "unknown",
+      "recording_suitability": "likely_good",
+      "estimated_cost_usd": 536.54,
+      "cost_basis": "estimated_from_rate",
+      "cost_local_amount": 85600,
+      "cost_local_currency": "JPY",
+      "hourly_rate_usd": 67.067,
+      "estimated_hours": 8,
+      "rate_estimate_note": "Published holiday hourly rate of 10,700 yen per hour for one 国際交流ホール room multiplied by the eight-hour 09:00-17:00 window; the university's rule is that part-hours round up to a whole hour and the total is the hourly rate times the hours used.",
+      "hourly_rate_local": 10700,
+      "rate_currency": "JPY",
+      "cost_rate_unit": "hour",
+      "booking_url": "https://www.kyoto-u.ac.jp/ja/about/facilities/campus/clocktower/organizer/charge",
+      "opening_hours": "09:00-21:30 (university facility; closed 28 December - 3 January)",
+      "closing_time": "21:30",
+      "max_booking_hours": 12,
+      "event_window_status": "allows_to_6",
+      "event_window_evidence": {
+        "url": "https://www.kyoto-u.ac.jp/ja/about/facilities/campus/clocktower/organizer/riyo-sisetu/kokusai",
+        "title": "国際交流ホール | 京都大学 (official facility page), fetched 2026-11-28",
+        "accessed_on": "2026-11-28",
+        "claim": "The university's 国際交流ホール page states 収容人数等 300名 (3分割可、各室100名) and 利用・営業時間 9時～21時30分, so a single 100-seat room can be booked from 09:00 to 21:30."
+      },
+      "verification_question_kinds": [
+        "screen",
+        "wifi",
+        "other_material",
+        "final_quote",
+        "availability",
+        "booking_terms",
+        "location"
+      ],
+      "verification_questions": [
+        "Confirm eligibility: the facility page states rooms are available 'when the event matches the facility's purpose and permission is granted' (設置目的に添った行事等を行う場合、許可を得て), and the fee schedule distinguishes university-organised from other events by applying a half rate for specified categories, so an external community event's eligibility and rate class must be confirmed with the facility office before any cost is relied on.",
+        "Confirm AV: the hall page mentions screens and a lighting set for the building but does not itemise a projector for 国際交流ホール I, so projection must be confirmed.",
+        "Confirm Wi-Fi in the hall.",
+        "Confirm the 09:00-17:00 total: the fee schedule prices 国際交流ホール at 9,500 yen per hour (standard) or 10,700 yen per hour (holiday class) with part-hours rounded up, so 85,600 yen is eight hours at the holiday rate.",
+        "Confirm Saturday availability and the application deadline (applications are made to the facility office in advance).",
+        "Confirm the alcohol rule for 国際交流ホール I: whether serving alcohol at a private community event is permitted, whether an event liquor licence is required and who must hold it — the university's facility and fee pages publish no alcohol rule for the hall.",
+        "Confirm the nearest station and walking time to the clock tower (the building's access URL returned HTTP 404 today and the captured campus access page carries maps without rail or walking text)."
+      ],
+      "source_url": "https://www.kyoto-u.ac.jp/ja/about/facilities/campus/clocktower/organizer/charge",
+      "source_title": "京都大学百周年時計台記念館施設使用料 — fetched 2026-11-28: 国際交流ホール（1室あたり）9,500円/h・10,700円/h, 会議室I-IV, 消費税相当額を含む",
+      "accessed_on": "2026-11-28",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "The Kyoto University Clock Tower fee page (fetched 2026-11-28) prints a per-hour schedule: 百周年記念ホール（大ホール）35,700 / 41,600 yen per hour, 国際交流ホール（1室あたり）9,500 / 10,700 yen per hour, 会議室 I and II 3,800 / 4,400, 会議室 III 6,600 / 7,900, 会議室 IV 6,000 / 7,200, with consumption tax included and part-hours rounded up to a full hour. The facility page for 国際交流ホール states a capacity of 300 seats in three divisible rooms of 100 each and opening hours of 09:00-21:30. The building's access page places it at Yoshida-honmachi, Sakyo-ku, Kyoto. USD-equivalent conversion basis: ECB euro foreign exchange reference rates dated 2026-11-27, fetched 2026-11-28 from https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml (EUR 1 = USD 1.0957; EUR 1 = JPY 174.81), giving USD 1 = JPY 159.5418 and 1 JPY = USD 0.00626795; see fx_evidence_2026-11-28.md. Nearest station: unknown — the clock tower's own access URL (https://www.kyoto-u.ac.jp/ja/about/facilities/campus/clocktower/access) returned HTTP 404 today, the university campus access page captured today carries maps without rail or walking text, and no captured page names a station or walking time for the clock tower, so the nearest station and walking time are carried as a location question.",
+        "inference": "One of the three 100-seat rooms matches the brief exactly, and the campus location is the strongest academic-audience draw in the set; the recorded cost is an hourly-times-hours estimate, not a quote, because eligibility and rate class for an external organiser are unresolved.",
+        "geo": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E5%B7%A6%E4%BA%AC%E5%8C%BA%E5%90%89%E7%94%B0%E6%9C%AC%E7%94%BA"
+      },
+      "latitude": 35.026962,
+      "longitude": 135.781967,
+      "venue_tier": "lead",
+      "tier_reasons": [
+        "material verification question(s): location, other_material"
+      ],
+      "venue_flags": [
+        "screen_unknown",
+        "wifi_unknown",
+        "availability_unconfirmed",
+        "final_quote_required"
+      ],
+      "score": null,
+      "score_breakdown": null
+    },
+    {
+      "name": "京都府立京都学・歴彩館 — 小ホール（会議室）",
+      "city_slug": "kyoto-jp",
+      "address": "〒606-0823 京都市左京区下鴨半木町1-29（Kyoto Prefectural Library and Archives, 1-29 Shimogamo Hangi-cho, Sakyo-ku, Kyoto）",
+      "capacity_comfortable": 100,
+      "capacity_basis": "venue_claim",
+      "screen_status": "confirmed",
+      "wifi_status": "confirmed",
+      "catering_policy": "outside_allowed",
+      "recording_suitability": "confirmed_good",
+      "estimated_cost_usd": 201.83,
+      "cost_basis": "published_rate",
+      "cost_local_amount": 32200,
+      "cost_local_currency": "JPY",
+      "hourly_rate_usd": null,
+      "estimated_hours": null,
+      "rate_estimate_note": null,
+      "hourly_rate_local": null,
+      "rate_currency": null,
+      "cost_rate_unit": "day",
+      "booking_url": "https://rekisaikan.jp/organizer/",
+      "opening_hours": "weekdays 09:00-21:00; Saturdays and Sundays 09:00-17:00 (no night use at weekends); closed on public holidays and the second Wednesday",
+      "closing_time": "17:00",
+      "max_booking_hours": 8,
+      "event_window_status": "allows_to_5",
+      "event_window_evidence": {
+        "url": "https://rekisaikan.jp/cms/wp-content/themes/rekisaikan//pdf/hall/hall_annai.pdf",
+        "title": "ホール利用のご案内とお願い (official hall guide PDF), fetched 2026-11-28",
+        "accessed_on": "2026-11-28",
+        "claim": "The hall guide states that Saturday and Sunday lending closes at 17:00 so no night block is available at weekends, and prices 午前・午後 at 32,200 yen for the 小ホール, so a Saturday event can end at 17:00 but not run to 21:00."
+      },
+      "verification_question_kinds": [
+        "other_material",
+        "final_quote",
+        "availability",
+        "booking_terms",
+        "booking_terms"
+      ],
+      "verification_questions": [
+        "Confirm purpose eligibility: the guide restricts hall use to lectures and seminars connected with Kyoto's history and culture under the facility's founding purpose (京都の歴史や文化に関わる講演会やセミナー等), so an AI×Web3 community day must be accepted by the operator before the venue can be used.",
+        "Confirm that Saturday 09:00-17:00 is available and that the hall is not closed for a public holiday on the chosen weekend (public holidays are closure days).",
+        "Confirm the tax treatment of the 32,200 yen two-block rate.",
+        "Confirm the equipment fee for the video projector, screen and wireless microphones (the guide prices these separately; one wireless hand microphone is free).",
+        "Confirm the alcohol rule for 小ホール: whether serving alcohol at a private community event is permitted, whether an event liquor licence is required and who must hold it — the hall guide publishes no alcohol rule, and the venue's history-and-culture purpose may restrict it."
+      ],
+      "source_url": "https://rekisaikan.jp/cms/wp-content/themes/rekisaikan//pdf/hall/hall_annai.pdf",
+      "source_title": "ホール利用のご案内とお願い｜京都府立京都学・歴彩館 — fetched 2026-11-28: 小ホール 198.84㎡ 可動席100席, 有線LAN・Wi-Fi利用可, オンライン配信対応; 午前 15,300円 / 午後 20,400円 / 午前・午後 32,200円 / 全日 52,800円; 土日は17:00閉館",
+      "accessed_on": "2026-11-28",
+      "needs_human_verify": true,
+      "evidence": {
+        "observed_facts": "The Kyoto Prefectural Library and Archives hall guide PDF (fetched 2026-11-28) gives the 小ホール as 198.84 m2 with 100 movable seats (half-room use possible), wired LAN and Wi-Fi available, and online-streaming support, with a paid video projector. The fee table prices 午前 15,300 yen, 午後 20,400 yen, 夜間 22,950 yen, 午前・午後 32,200 yen (a 10% discount on the two blocks), 午後・夜間 39,100 yen and 全日 52,800 yen. The guide states that on Saturdays and Sundays the building closes at 17:00 so the night block cannot be used, that public holidays are closure days, and that hall use is limited to lectures and seminars related to Kyoto's history and culture; performances (興行), sales, and noise-generating activity are refused. Wi-Fi is also available through the public Japan.Free Wi-Fi KYOTO service per the site FAQ. USD-equivalent conversion basis: ECB euro foreign exchange reference rates dated 2026-11-27, fetched 2026-11-28 from https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml (EUR 1 = USD 1.0957; EUR 1 = JPY 174.81), giving USD 1 = JPY 159.5418 and 1 JPY = USD 0.00626795; see fx_evidence_2026-11-28.md. Nearest station: Kitayama (北山) on the Karasuma subway line, exit 1, about 4 minutes south on foot (rekisaikan.jp access section, captured as captures/rekisaikan_home.html: '京都市営地下鉄烏丸線 北山駅 1番出口から南へ徒歩約4分').",
+        "inference": "This is the best-evidenced room in the set for streaming (LAN, Wi-Fi and stated online-streaming support) and the only candidate that explicitly grants outside food in a designated area, but the Saturday 17:00 closure rules out the preferred 12-hour window and the purpose restriction is a material eligibility question.",
+        "geo": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E5%B7%A6%E4%BA%AC%E5%8C%BA%E4%B8%8B%E9%B4%A8%E5%8D%8A%E6%9C%A8%E7%94%BA1-29"
+      },
+      "latitude": 35.050365,
+      "longitude": 135.75975,
+      "venue_tier": "lead",
+      "tier_reasons": [
+        "material verification question(s): other_material"
+      ],
+      "venue_flags": [
+        "availability_unconfirmed",
+        "final_quote_required"
+      ],
+      "score": null,
+      "score_breakdown": null
+    }
+  ]
+}

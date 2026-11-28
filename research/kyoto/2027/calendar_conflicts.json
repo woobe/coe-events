@@ -1,0 +1,254 @@
+[
+ {
+  "event_name": "京都マラソン2027（Kyoto Marathon 2027）",
+  "city_slug": "kyoto-jp",
+  "start_date": "2027-02-21",
+  "end_date": "2027-02-21",
+  "kind": "major_other",
+  "relevance": "other",
+  "conflict_severity": "none",
+  "source_url": "https://kyoto-marathon.com/info/",
+  "source_title": "大会実施要項 | 京都マラソン2027 (official race information page), fetched 2026-11-28: 令和9年（2027年）2月21日（日）8:55 wheelchair start, 9:00 marathon start, 15:00 finish; runner check-in 19-20 February at Miyako Messe",
+  "accessed_on": "2026-11-28",
+  "needs_human_verify": true,
+  "verification_questions": [
+   "Confirm the 2027 route and the road-closure timetable with the race office (the route changes between editions and the closure list is published closer to race day).",
+   "Confirm how far the marathon's road closures reach the Karasuma/Shijo and Okazaki districts where most candidate venues sit."
+  ],
+  "evidence": {
+   "observed_facts": "The official Kyoto Marathon 2027 information page (kyoto-marathon.com/info/, fetched 2026-11-28) states the race is held on Sunday 21 February 2027, with the wheelchair race starting at 8:55 and the marathon and pair relay at 9:00, finishing at 15:00, and that runner check-in is at Miyako Messe on Friday 19 and Saturday 20 February. The start venue is Takebishi Stadium Kyoto (Nishikyogoku), per the race's own outline on the same site.",
+   "inference": "A city marathon closes road lanes and reroutes buses across the race route for most of the day, so a Saturday 20 February check-in weekend and the Sunday race itself are marathon-driven road and traffic disruption around Miyako Messe, Karasuma and the western districts; the date is retained for transport and road-access planning only."
+  }
+ },
+ {
+  "event_name": "AI博覧会 Osaka 2027（AI Expo Osaka 2027）",
+  "city_slug": "kyoto-jp",
+  "start_date": "2027-01-20",
+  "end_date": "2027-01-21",
+  "kind": "related",
+  "relevance": "ai",
+  "conflict_severity": "medium",
+  "source_url": "https://aismiley.co.jp/ai_news/aihaku_osaka_2027/",
+  "source_title": "【AI博覧会 Osaka 2027】マイドームおおさかにて2027年1月20日・1月21日に開催 (organiser AIsmiley announcement), fetched 2026-11-28",
+  "accessed_on": "2026-11-28",
+  "needs_human_verify": true,
+  "verification_questions": [
+   "Confirm the 2027 exhibitor list and conference programme, and whether a community or developer track is planned.",
+   "Assess whether the January dates pull Kansai AI engineers toward Osaka in the same week."
+  ],
+  "evidence": {
+   "observed_facts": "The organiser AIsmiley's announcement (aismiley.co.jp/ai_news/aihaku_osaka_2027/, fetched 2026-11-28) states that AI博覧会 Osaka 2027 will be held on Wednesday 20 and Thursday 21 January 2027 at MyDome Osaka, the 12th edition and the third held in Osaka, with a physical-AI robotics zone among the exhibits.",
+   "inference": "A two-day B2B AI exhibition in Osaka's business district is the nearest 2027 Kansai event with the same AI audience; it is a weekday event, so attendance overlap with a Saturday community day is limited to the companies and engineers who travel for it."
+  }
+ },
+ {
+  "event_name": "Japan IT Week 関西 2027（Japan IT Week Osaka / Kansai show）",
+  "city_slug": "kyoto-jp",
+  "start_date": "2027-11-17",
+  "end_date": "2027-11-19",
+  "kind": "related",
+  "relevance": "ai",
+  "conflict_severity": "low",
+  "source_url": "https://www.japan-it.jp/osaka/ja-jp.html",
+  "source_title": "【公式】Japan IT Week, Japan DX & AX Week｜関西展 (official show hub), fetched 2026-11-28: 2027/11/17(水)～19(金) at インテックス大阪",
+  "accessed_on": "2026-11-28",
+  "needs_human_verify": true,
+  "verification_questions": [
+   "Confirm the 2027 Kansai edition's scale and whether it includes developer or startup conference tracks.",
+   "Confirm that the November dates do not clash with a Kyoto venue booking window."
+  ],
+  "evidence": {
+   "observed_facts": "The official Japan IT Week hub page (japan-it.jp/osaka/ja-jp.html, fetched 2026-11-28) lists the 2027 show calendar with the Kansai edition (関西展) on 17-19 November 2027 at Intex Osaka, alongside the Tokyo spring (7-9 April), summer (21-23 July) and autumn (8-10 September) editions.",
+   "inference": "The Kansai edition is a large IT/DX trade fair with an AI track; it matters as the biggest 2027 Kansai AI-adjacent gathering inside the region, while its B2B exhibition format and November dates limit direct audience overlap with a free community day."
+  }
+ },
+ {
+  "event_name": "KYOTOGRAPHIE 京都国際写真祭 2027",
+  "city_slug": "kyoto-jp",
+  "start_date": "2027-04-17",
+  "end_date": "2027-05-16",
+  "kind": "major_other",
+  "relevance": "other",
+  "conflict_severity": "none",
+  "source_url": "https://kyotographie.jp/en/news/2026/18727",
+  "source_title": "News: KYOTOGRAPHIE 2027 dates announced | KYOTOGRAPHIE 京都国際写真祭 (official), fetched 2026-11-28: Saturday 17 April to Sunday 16 May 2027",
+  "accessed_on": "2026-11-28",
+  "needs_human_verify": true,
+  "verification_questions": [
+   "Confirm the 2027 exhibition venues once announced, because the festival occupies historic buildings that could also host or block a community venue.",
+   "Confirm the festival's peak visitor weeks for hotel and transport planning."
+  ],
+  "evidence": {
+   "observed_facts": "The official KYOTOGRAPHIE news page (kyotographie.jp/en/news/2026/18727, fetched 2026-11-28) announces that KYOTOGRAPHIE 2027 will run from Saturday 17 April to Sunday 16 May 2027, with theme, artists and venues to be announced later. The same festival's KG+ open-call page states the 2027 festival period as 2027-04-17 to 2027-05-16 and invites exhibitions that open at least nine days inside it.",
+   "inference": "A month-long city-wide photography festival installs exhibitions in historic buildings across central Kyoto and brings a large international visitor wave in the same weeks as the cherry-blossom tail; the effect on a Kyoto event is hotel demand, venue scarcity and crowd pressure in the central districts rather than any audience overlap."
+  }
+ },
+ {
+  "event_name": "BitSummit 2027（インディーゲーム展示会）",
+  "city_slug": "kyoto-jp",
+  "start_date": "2027-05-21",
+  "end_date": "2027-05-23",
+  "kind": "major_other",
+  "relevance": "other",
+  "conflict_severity": "none",
+  "source_url": "https://bitsummit.org/%E3%80%8Cbitsummit%E3%80%8D2027%E5%B9%B4%E3%81%AE%E9%96%8B%E5%82%AC%E6%97%A5%E7%A8%8B%E3%82%92%E7%99%BA%E8%A1%A8%EF%BC%81%E4%BD%B5%E3%81%9B%E3%81%A6%E3%80%81%E3%81%94%E6%9D%A5%E5%A0%B4%E8%80%85/",
+  "source_title": "「BitSummit」2027年の開催日程を発表！ | BitSummit (official organiser post, 24 May 2026), fetched 2026-11-28: 2027年5月21日（金）～5月23日（日）京都市勧業館みやこめっせ",
+  "accessed_on": "2026-11-28",
+  "needs_human_verify": true,
+  "verification_questions": [
+   "Confirm the 2027 floor allocation and whether any Miyako Messe conference rooms remain rentable during the show.",
+   "Confirm the expected attendance for the 2027 edition for hotel and transport planning."
+  ],
+  "evidence": {
+   "observed_facts": "The BitSummit organising committee's official post (bitsummit.org, 24 May 2026, fetched 2026-11-28) announces that the 15th BitSummit will be held over three days from Friday 21 to Sunday 23 May 2027 at Kyoto Municipal Kangyo-kan Miyako Messe, with general exhibitor applications opening around November 2026.",
+   "inference": "BitSummit occupies Miyako Messe — one of this package's candidate venues — for the whole 21-23 May weekend and draws an indie-game crowd into Okazaki; the venue is therefore unavailable, hotel and transport demand in Okazaki rises, and Miyako Messe cannot be booked for that weekend."
+  }
+ },
+ {
+  "event_name": "ワールドマスターズゲームズ2027関西（World Masters Games 2027 KANSAI）",
+  "city_slug": "kyoto-jp",
+  "start_date": "2027-05-14",
+  "end_date": "2027-05-30",
+  "kind": "major_other",
+  "relevance": "other",
+  "conflict_severity": "none",
+  "source_url": "https://wmg2027.jp/games/",
+  "source_title": "開催概要 | ワールドマスターズゲームズ2027関西 (official games outline), fetched 2026-11-28: 2027年5月14日（金）～5月30日（日）17日間, 35競技59種目, 目標参加者50,000人",
+  "accessed_on": "2026-11-28",
+  "needs_human_verify": true,
+  "verification_questions": [
+   "Confirm which Kyoto venues and districts host 2027 events, and the hotel and transport load in the 14-30 May window.",
+   "Confirm whether the 14 May opening ceremony in Okazaki closes roads or parks around Heian Jingu and Miyako Messe, and whether hotel demand peaks on that weekend."
+  ],
+  "evidence": {
+   "observed_facts": "The official games outline (wmg2027.jp/games/, fetched 2026-11-28) states that the World Masters Games 2027 KANSAI run for 17 days from Friday 14 to Sunday 30 May 2027 across the Kansai region, with 35 sports and 59 disciplines and a target of 50,000 participants (20,000 from outside Japan). The opening ceremony is on 14 May 2027 in the Okazaki area by Heian Jingu.",
+   "inference": "Seventeen days of competition with a 50,000-participant target and an opening ceremony in Okazaki puts hotel demand, transport load and crowd pressure on Kyoto across the second half of May 2027, which is the same window as several candidate weekends."
+  }
+ },
+ {
+  "event_name": "葵祭（賀茂祭）2027 — 上賀茂神社・下鴨神社",
+  "city_slug": "kyoto-jp",
+  "start_date": "2027-05-15",
+  "end_date": "2027-05-15",
+  "kind": "major_other",
+  "relevance": "other",
+  "conflict_severity": "none",
+  "source_url": "https://www.kamigamojinja.jp/",
+  "source_title": "賀茂祭（葵祭）| 上賀茂神社 (official shrine page), fetched 2026-11-28: 五月十五日 例祭, 路頭の儀 京都御所 → 下鴨神社 → 上賀茂神社",
+  "accessed_on": "2026-11-28",
+  "needs_human_verify": true,
+  "verification_questions": [
+   "Confirm the 2027 procession timetable and the road-restriction list with the shrine and Kyoto City.",
+   "Confirm whether rain postponement to 16 May 2027 is likely, which would move the disruption by a day."
+  ],
+  "evidence": {
+   "observed_facts": "The official Kamigamo Shrine site (kamigamojinja.jp, fetched 2026-11-28) states that 賀茂祭 (葵祭) is held on the fifteenth of May each year and describes the 路頭の儀 procession from the Imperial Palace via Shimogamo Shrine to Kamigamo Shrine; 15 May 2027 falls on a Saturday.",
+   "inference": "A Kyoto三大祭 festival parade that moves along the Kamo river and the northern shrine route on a Saturday brings crowd control, road restrictions and heavy bus use along the procession route, so transport and crowd planning for a 15 May 2027 weekend must account for it."
+  }
+ },
+ {
+  "event_name": "祇園祭 前祭 山鉾巡行 2027",
+  "city_slug": "kyoto-jp",
+  "start_date": "2027-07-17",
+  "end_date": "2027-07-17",
+  "kind": "major_other",
+  "relevance": "other",
+  "conflict_severity": "none",
+  "source_url": "http://gionmatsuri.or.jp/schedule",
+  "source_title": "祇園祭行事日程 | 公益財団法人祇園祭山鉾連合会 (official festival schedule), fetched 2026-11-28: 7月17日 前祭山鉾巡行（四条烏丸 9:00 出発）",
+  "accessed_on": "2026-11-28",
+  "needs_human_verify": true,
+  "verification_questions": [
+   "Confirm the 2027 procession route and street-closure timetable with the Yamaboko Rengokai.",
+   "Confirm whether venue deliveries are permitted in the Shijo-Karasuma area on 17 July 2027."
+  ],
+  "evidence": {
+   "observed_facts": "The official Gion Matsuri schedule published by the Gion Matsuri Yamaboko Rengokai (gionmatsuri.or.jp/schedule, fetched 2026-11-28) lists the 前祭山鉾巡行 on 17 July with the 神幸祭 in the evening; the festival runs from 1 to 31 July and the procession order is fixed by the くじ取り式 on 2 July. 17 July 2027 is a Saturday.",
+   "inference": "The 前祭 procession of 23 yamaboko floats starts at Shijo-Karasuma at 09:00 and moves along Shijo, Kawaramachi and Oike, closing those streets to traffic and filling the downtown grid with crowds — directly relevant to any central Kyoto venue on that Saturday."
+  }
+ },
+ {
+  "event_name": "祇園祭 後祭 山鉾巡行 2027",
+  "city_slug": "kyoto-jp",
+  "start_date": "2027-07-24",
+  "end_date": "2027-07-24",
+  "kind": "major_other",
+  "relevance": "other",
+  "conflict_severity": "none",
+  "source_url": "http://gionmatsuri.or.jp/schedule",
+  "source_title": "祇園祭行事日程 | 公益財団法人祇園祭山鉾連合会 (official festival schedule), fetched 2026-11-28: 7月24日 後祭山鉾巡行（烏丸御池 9:30 出発）, 花傘巡行",
+  "accessed_on": "2026-11-28",
+  "needs_human_verify": true,
+  "verification_questions": [
+   "Confirm the 2027 後祭 route and closure timetable, and whether the 花傘巡行 uses different streets.",
+   "Confirm venue access rules for the Karasuma-Oike area on 24 July 2027."
+  ],
+  "evidence": {
+   "observed_facts": "The official Gion Matsuri schedule (gionmatsuri.or.jp/schedule, fetched 2026-11-28) lists the 後祭山鉾巡行 on 24 July, starting from Karasuma-Oike, together with the 花傘巡行 and the 還幸祭 in the evening. 24 July 2027 is a Saturday.",
+   "inference": "The second procession closes the same central streets in reverse order on a second Saturday in July, so both 17 and 24 July 2027 carry parade-era road closures, crowd pressure and restricted vehicle access in downtown Kyoto."
+  }
+ },
+ {
+  "event_name": "京都五山送り火 2027（Gozan no Okuribi）",
+  "city_slug": "kyoto-jp",
+  "start_date": "2027-08-16",
+  "end_date": "2027-08-16",
+  "kind": "major_other",
+  "relevance": "other",
+  "conflict_severity": "none",
+  "source_url": "https://ja.kyoto.travel/event/major/okuribi",
+  "source_title": "京都五山送り火「概要・見どころ」｜【京都市公式】京都観光Navi (City of Kyoto official tourism site), fetched 2026-11-28: 開催日 8月16日, 午後8時点火, 各山とも約30分間",
+  "accessed_on": "2026-11-28",
+  "needs_human_verify": true,
+  "verification_questions": [
+   "Confirm the 2027 lighting schedule and any riverbank access restrictions published by the city, and whether crowd control or transport changes apply on 16 August 2027.",
+   "Confirm whether the 19:50-20:50 lighting blackout affects venue signage or outdoor staging."
+  ],
+  "evidence": {
+   "observed_facts": "The City of Kyoto's official tourism site (ja.kyoto.travel/event/major/okuribi, fetched 2026-11-28) states the Gozan no Okuribi are lit every year on 16 August at 20:00, with the five fires lit at five-minute intervals and burning for about 30 minutes each, and that the city asks for outdoor lights and advertising signs to be switched off between 19:50 and 20:50.",
+   "inference": "The Obon send-off fires draw large evening crowds to the Kamo river banks, the Demachiyanagi delta and the Arashiyama bridges on a mid-August evening, and the city-wide lighting blackout plus riverbank restrictions affect evening transport and outdoor gathering on 16 August 2027."
+  }
+ },
+ {
+  "event_name": "時代祭 2027（Jidai Matsuri）— 平安神宮",
+  "city_slug": "kyoto-jp",
+  "start_date": "2027-10-22",
+  "end_date": "2027-10-22",
+  "kind": "major_other",
+  "relevance": "other",
+  "conflict_severity": "none",
+  "source_url": "https://www.heianjingu.or.jp/ritual/jidaimatsuri/",
+  "source_title": "時代祭｜平安神宮 (official shrine page), fetched 2026-11-28: 毎年10月22日（雨天順延）, 神幸祭, 行列 京都御所 12:00 → 平安神宮 14:30",
+  "accessed_on": "2026-11-28",
+  "needs_human_verify": true,
+  "verification_questions": [
+   "Confirm the 2027 procession route and the road-closure list with Heian Jingu and Kyoto City.",
+   "Confirm whether a 22 October 2027 event in Okazaki would face museum-district crowding from the festival."
+  ],
+  "evidence": {
+   "observed_facts": "The official Heian Jingu page (heianjingu.or.jp/ritual/jidaimatsuri/, fetched 2026-11-28) states that the Jidai Matsuri is held every year on 22 October (postponed if raining) and describes the procession of about 2,000 people in period costume from the Imperial Palace to Heian Jingu. 22 October 2027 is a Friday.",
+   "inference": "A 2,000-person parade from the Imperial Palace along Marutamachi and Higashi-oji to Heian Jingu closes streets and concentrates crowds in the Okazaki museum district on the Friday, so a same-week venue booking in Okazaki faces road restrictions and delivery disruption."
+  }
+ },
+ {
+  "event_name": "ゴールデンウィーク 2027（Golden Week, JP national holidays）",
+  "city_slug": "kyoto-jp",
+  "start_date": "2027-04-29",
+  "end_date": "2027-05-05",
+  "kind": "major_other",
+  "relevance": "other",
+  "conflict_severity": "none",
+  "source_url": "https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html",
+  "source_title": "国民の祝日について | 内閣府 (Cabinet Office national holiday page, captured 2026-11-28 as captures/cao_shukujitsu_2027.html) — 見出し「〇令和9年（2027年）の国民の祝日・休日」: 昭和の日 4月29日, 憲法記念日 5月3日, みどりの日 5月4日, こどもの日 5月5日; the plan-event JP registry carries the same four rows under edition 令和9年（2027年）の国民の祝日・休日（内閣府） with per-row locators",
+  "accessed_on": "2026-11-28",
+  "needs_human_verify": true,
+  "verification_questions": [
+   "Confirm 2027 Golden Week travel-demand forecasts and hotel availability for the Kyoto area.",
+   "Confirm whether candidate venues apply holiday tariffs on 29 April and 3-5 May 2027."
+  ],
+  "evidence": {
+   "observed_facts": "The Cabinet Office national holiday page (https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html, fetched 2026-11-28 and captured as captures/cao_shukujitsu_2027.html) prints the 2027 block under the heading 「〇令和9年（2027年）の国民の祝日・休日」, listing 昭和の日 on 4月29日, 憲法記念日 on 5月3日, みどりの日 on 5月4日 and こどもの日 on 5月5日. The same four dates are stored in the plan-event holiday registry under edition 「令和9年（2027年）の国民の祝日・休日（内閣府）」 with per-row locators of the form 見出し「〇令和9年（2027年）の国民の祝日・休日」、行「昭和の日／4月29日」 (and the equivalent rows for 憲法記念日／5月3日, みどりの日／5月4日, こどもの日／5月5日). This record spans 29 April to 5 May 2027 so that the four holiday dates sit inside one holiday-period row. No other date in that span is asserted as a holiday.",
+   "inference": "Golden Week is the busiest domestic travel period of the Japanese year and hotel demand, train load and tourist crowding across Kyoto peak sharply, so venue and accommodation planning for any date inside 29 April-5 May 2027 must assume holiday-period transport and hotel pressure."
+  }
+ }
+]

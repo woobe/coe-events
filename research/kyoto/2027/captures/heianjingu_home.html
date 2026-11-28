@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="ja" >
+
+<head>
+	<meta charset="UTF-8" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    	
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://www.heianjingu.or.jp/wp-content/themes/heianjingu/css/style.css#202611280440">
+    
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NWW3QHMJ');</script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body  class="p-home">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NWW3QHMJ"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+	
+    <header class="l-header">
+        <div class="l-header__logo"><a href="/" class="l-header__logo-link"><img src="https://www.heianjingu.or.jp/wp-content/themes/heianjingu/images/common/logo.png" alt="平安神宮ロゴ" class="l-header__logo-img"></a></div>
+        <div class="l-header__nav">
+            <nav class="c-global-nav">
+                <ul class="c-global-nav__list">
+                    <li class="c-global-nav__item c-global-nav__item--has-child"><a href="/about/" class="c-global-nav__link">平安神宮について</a>
+                        <ul class="c-global-nav__sub-list">
+                            <li class="c-global-nav__sub-item"><a href="/about/message/" class="c-global-nav__sub-link">宮司ご挨拶</a></li>
+                            <li class="c-global-nav__sub-item"><a href="/about/inori/" class="c-global-nav__sub-link">平安の祈り</a></li>
+                            <li class="c-global-nav__sub-item"><a href="/about/history/" class="c-global-nav__sub-link">由緒・歴史</a></li>
+                            <li class="c-global-nav__sub-item"><a href="/about/sukei/" class="c-global-nav__sub-link">平安神宮崇敬会</a></li>
+                            <li class="c-global-nav__sub-item"><a href="/about/fuzoku/" class="c-global-nav__sub-link">平安神宮の附属団体</a></li>
+                        </ul>
+                    </li>
+                    <li class="c-global-nav__item c-global-nav__item--has-child"><a href="/visit/" class="c-global-nav__link">ご参拝・ご祈祷</a>
+                        <ul class="c-global-nav__sub-list c-global-nav__sub-list--long">
+                            <li class="c-global-nav__sub-item"><a href="/visit/worship/" class="c-global-nav__sub-link">ご参拝の方へ</a></li>
+                            <li class="c-global-nav__sub-item"><a href="/visit/prayer/" class="c-global-nav__sub-link">ご祈祷のご案内</a></li>
+                            <li class="c-global-nav__sub-item"><a href="/visit/amulet/" class="c-global-nav__sub-link">授与品（お神札・お守り）</a></li>
+                        </ul>
+                    </li>
+                    <li class="c-global-nav__item c-global-nav__item--has-child"><a href="/ritual/" class="c-global-nav__link">祭典・行事</a>
+                        <ul class="c-global-nav__sub-list">
+                            <li class="c-global-nav__sub-item"><a href="/ritual/annual/" class="c-global-nav__sub-link">年間行事</a></li>
+                            <li class="c-global-nav__sub-item"><a href="/ritual/jidaimatsuri/" class="c-global-nav__sub-link">時代祭</a></li>
+                            <li class="c-global-nav__sub-item"><a href="/ritual/anniversary130th/" class="c-global-nav__sub-link">平安神宮百三十年祭</a></li>
+                        </ul>
+                    </li>
+                    <li class="c-global-nav__item c-global-nav__item--has-child"><a href="/map/" class="c-global-nav__link">神宮を巡る</a>
+                        <ul class="c-global-nav__sub-list">
+                            <li class="c-global-nav__sub-item"><a href="/map/guide/" class="c-global-nav__sub-link">社殿・境内案内</a></li>
+                            <li class="c-global-nav__sub-item"><a href="/map/garden/" class="c-global-nav__sub-link">平安神宮神苑</a></li>
+                            <li class="c-global-nav__sub-item"><a href="/map/season/" class="c-global-nav__sub-link">平安神宮の四季</a></li>
+                        </ul>
+                    </li>
+                    <li class="c-global-nav__item c-global-nav__item--has-child"><a href="https://www.heianjingu.com/wedding/" class="c-global-nav__link" target="_blank"><span class="u-sp--inline">平安神宮の</span>結婚式</a>
+                        <ul class="c-global-nav__sub-list">
+                            <li class="c-global-nav__sub-item"><a href="https://www.heianjingu.com/wedding/" class="c-global-nav__sub-link" target="_blank">神前結婚式・披露宴</a></li>
+                            <li class="c-global-nav__sub-item"><a href="https://vm.crm.oiwaii-taian.com/customer/public/bridal_fair_pages/qu4oSXdUx1XAnsUYPytHVgUzCe4NcVO7/fairs" class="c-global-nav__sub-link" target="_blank">ブライダルフェア</a></li>
+                        </ul>
+                    </li>
+                    <li class="c-global-nav__item c-global-nav__item--half"><a href="/journal/" class="c-global-nav__link">平安神宮を読む</a></li>
+                    <li class="c-global-nav__item c-global-nav__item--half"><a href="/news/" class="c-global-nav__link">お知らせ</a></li>
+                    <li class="c-global-nav__item c-global-nav__item--half u-sp"><a href="#" class="c-global-nav__link">よくあるご質問</a></li>
+                    <li class="c-global-nav__item"><a href="/attention/" class="c-global-nav__link">ご来宮の皆様へ</a></li>
+                    <li class="c-global-nav__item c-global-nav__item--half"><a href="/access/" class="c-global-nav__link">アクセス</a></li>
+                    <li class="c-global-nav__item c-global-nav__item--half"><a href="/contact/" class="c-global-nav__link">お問い合わせ</a></li>
+                    <li class="c-global-nav__item c-global-nav__item--double c-global-nav__item--half u-sp"><a href="/sukei_contact/" class="c-global-nav__link">平安神宮崇敬会<br>お問い合わせ</a></li>
+                </ul>
+                <ul class="c-sns__list u-sp">
+                    <li class="c-sns__item"><a href="https://www.instagram.com/heianjingu_official/" target="_blank" class="c-sns__link"><img src="https://www.heianjingu.or.jp/wp-content/themes/heianjingu/images/common/icon-ig.svg" alt="インスタグラム公式" class="c-sns__img"></a></li>
+                    <li class="c-sns__item"><a href="https://x.com/kyotoheianjingu" target="_blank" class="c-sns__link"><img src="https://www.heianjingu.or.jp/wp-content/themes/heianjingu/images/common/icon-x.svg" alt="X公式" class="c-sns__img"></a></li>
+                </ul>
+                <div class="c-global-nav__info u-sp">〒606-8341　京都市左京区岡崎西天王町97<br>
+                    TEL：075-761-0221　/　FAX：075-761-0225</div>
+            </nav>
+            <nav class="c-language-nav">
+                <ul class="c-language-nav__list">
+                    <li class="c-language-nav__item">
+                        <div class="c-language-nav__link u-text--crimson">LANGUAGE</div>
+                        <ul class="c-language-nav__sub-list">
+                            <li class="c-language-nav__sub-item"><a href="/english/" class="c-language-nav__sub-link">English</a></li>
+                            <li class="c-language-nav__sub-item"><a href="/traditional_chinese/" class="c-language-nav__sub-link">繁體中文</a></li>
+                            <li class="c-language-nav__sub-item"><a href="/simplified_chinese/" class="c-language-nav__sub-link">简体中文</a></li>
+                            <li class="c-language-nav__sub-item"><a href="/korean/" class="c-language-nav__sub-link">한국어</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="l-menu_trigger u-text--crimson">
+                <span class="l-menu_trigger__bar"></span>
+                <span class="l-menu_trigger__bar"></span>
+                MENU
+            </div>
+        </div>
+    </header>     <div class="c-loader">
+        <img src="https://www.heianjingu.or.jp/wp-content/themes/heianjingu/images/home/loader-img2.jpg" alt="" class="c-loader__img c-loader__img2 u-ofit">
+        <img src="https://www.heianjingu.or.jp/wp-content/themes/heianjingu/images/home/loader-img.jpg" alt="" class="c-loader__img c-loader__img1 u-ofit">
+        <div class="c-loader__text">
+            <span class="c-loader__span c-loader__span1">日本文化のふるさと京都</span><br><span class="c-loader__span c-loader__span2">四海平安の祈り捧げる</span>
+        </div>
+        <div class="c-loader__title p-home__mv-title"><img src="https://www.heianjingu.or.jp/wp-content/themes/heianjingu/images/common/logo-tate.png" alt="平安神宮" class="p-home__mv-img"><span class="p-home__mv-span u-text--crimson"><br>HEIAN JINGU SHRINE</span></div>
+    </div>
+    <main class="l-main">
+        <article class="l-article">
+            <div class="p-home__mv">
+                <img src="https://www.heianjingu.or.jp/wp-content/themes/heianjingu/images/home/mv.jpg" alt="" class="p-home__img-bg u-ofit u-pc">
+                <img src="https://www.heianjingu.or.jp/wp-content/themes/heianjingu/images/home/mv-sp.jpg" alt="" class="p-home__img-bg u-ofit u-sp">
+                <h1 class="p-home__mv-title"><img src="https://www.heianjingu.or.jp/wp-content/themes/heianjingu/images/common/logo-tate.png" alt="平安神宮" class="p-home__mv-img"><span class="p-home__mv-span u-text--crimson"><br>HEIAN JINGU SHRINE</span></h1>
+                <div class="p-home__mv-role"><img src="https://www.heianjingu.or.jp/wp-content/themes/heianjingu/images/home/mv-role.svg" alt="" class="p-home__mv-role-img u-pc"><img src="https://www.heianjingu.or.jp/wp-content/themes/heianjingu/images/home/mv-role-sp.svg" alt="" class="p-home__mv-role-img u-sp"></div>
+            </div>
+            <div class="p-home__banner">
+                <a href="https://www.heianjingu.or.jp/news_list/%e3%80%90%e4%ba%ac%e9%83%bd%e9%9b%bb%e6%b0%97%e9%89%84%e9%81%93%e9%9b%bb%e8%bb%8a%ef%bc%88%e3%83%81%e3%83%b3%e3%83%81%e3%83%b3%e9%9b%bb%e8%bb%8a%ef%bc%89%e7%ab%a3%e5%b7%a5%e3%81%a8%e4%b8%80%e8%88%ac/" target="_blank">
+                <img src="https://www.heianjingu.or.jp/wp-content/themes/heianjingu/images/home/home_bunner.jpg" alt="【京都電気鉄道電車（チンチン電車）竣工と一般">
+                </a>
+            </div>
+                            <div class="p-home__notice">
+                <a href="/news_list/heianshrine130year/" target="_brank"><img src='https://www.heianjingu.or.jp/wp-content/themes/heianjingu/images/home/130banner.png' alt='平安神宮百三十年祭'></a>  
+                </div>
+            
+            <section class="c-event-list">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                                                <div class="c-event-list__item swiper-slide">
+                            <div class="c-event-list__thumb"><img src="https://www.heianjingu.or.jp/wp-content/uploads/2026/03/IMG_5156-scaled.jpg" alt="" class="c-event-list__img u-ofit"></div>
+                            <div class="c-event-list__text">
+                                <h2 class="c-event-list__title">重文・チンチン電車　今春　無料公開！！</h2>
+                                <a href="https://www.heianjingu.or.jp/news_list/%e3%80%90%e4%ba%ac%e9%83%bd%e9%9b%bb%e6%b0%97%e9%89%84%e9%81%93%e9%9b%bb%e8%bb%8a%ef%bc%88%e3%83%81%e3%83%b3%e3%83%81%e3%83%b3%e9%9b%bb%e8%bb%8a%ef%bc%89%e7%ab%a3%e5%b7%a5%e3%81%a8%e4%b8%80%e8%88%ac/" class="c-read-more">詳しく見る</a>
+                            </div>
+                        </div>
+                                                <div class="c-event-list__item swiper-slide">
+                            <div class="c-event-list__thumb"><img src="https://www.heianjingu.or.jp/wp-content/uploads/2025/01/news-img3.jpg" alt="" class="c-event-list__img u-ofit"></div>
+                            <div class="c-event-list__text">
+                                <h2 class="c-event-list__title">参拝時間のご案内</h2>
+                                <a href="https://www.heianjingu.or.jp/news_list/time/" class="c-read-more">詳しく見る</a>
+                            </div>
+                        </div>
+                                                <div class="c-event-list__item swiper-slide">
+                            <div class="c-event-list__thumb"><img src="https://www.heianjingu.or.jp/wp-content/uploads/2025/01/flowers-4004190_1920.jpg" alt="" class="c-event-list__img u-ofit"></div>
+                            <div class="c-event-list__text">
+                                <h2 class="c-event-list__title">神前結婚式・披露宴</h2>
+                                <a href="https://www.heianjingu.com/wedding/" class="c-read-more">詳しく見る</a>
+                            </div>
+                        </div>
+                                            </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </section>
+            <section class="p-home__news">
+                <div class="c-inner c-inner--small">
+                    <h2 class="c-title__common">お知らせ</h2>
+                    <div class="p-home__news-text">
+                        <ul class="c-news-list">
+                        <ul class="c-news-list">
+                                <li class="c-news-list__item">
+                                    <a href="https://www.heianjingu.or.jp/news_list/%e3%80%90%e6%96%b0%e8%aa%bf%e3%80%80%e5%a4%ab%e5%a9%a6%e5%be%a1%e5%ae%88%e3%80%91/" class="c-news-list__link">
+                                        <span class="c-news-list__date">令和8年11月11日</span>
+                                        <h2 class="c-news-list__title">【新調　夫婦御守】</h2>
+                                    </a>
+                                </li>
+                                <li class="c-news-list__item">
+                                    <a href="https://www.heianjingu.or.jp/news_list/%e3%80%90%e5%a2%83%e5%86%85%e5%b7%a5%e4%ba%8b%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b%e3%80%91/" class="c-news-list__link">
+                                        <span class="c-news-list__date">令和8年11月06日</span>
+                                        <h2 class="c-news-list__title">【境内工事のお知らせ】</h2>
+                                    </a>
+                                </li>
+                                <li class="c-news-list__item">
+                                    <a href="https://www.heianjingu.or.jp/news_list/%e3%80%90%e4%bb%a4%e5%92%8c8%e5%b9%b4%e3%80%80%e7%a7%8b%e3%80%80%e5%a4%9c%e9%96%93%e3%83%a9%e3%82%a4%e3%83%88%e3%82%a2%e3%83%83%e3%83%97%e5%ae%9f%e6%96%bd%e3%81%ae%e3%81%8a%e7%9f%a5%e3%82%89%e3%81%9b/" class="c-news-list__link">
+                                        <span class="c-news-list__date">令和8年10月11日</span>
+                                        <h2 class="c-news-list__title">【令和8年　秋　夜間ライトアップ実施のお知らせ】</h2>
+                                    </a>
+                                </li>
+ 
+
+                        </ul>
+                        <a href="/news/" class="c-read-more">お知らせ一覧を見る</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="p-home__knowledge">
+                <div class="c-inner c-inner--max">
+                    <div class="p-home__knowledge-text">
+                        <h2 class="c-title__common">平安神宮を<span class="c-title__common-span">知る</span></h2>
+                        <p class="p-home__knowledge-catch">日本文化のふるさと京都<br>
+                            伝統・文化・芸術を発信してきた<br class="u-pc">
+                            京都の繁栄の象徴</p>
+                        <p class="p-home__knowledge-p">明治28(1895)年平安遷都1100年を期に市民の総社として創建。平安京の正庁(朝堂院)を模した朱塗りの社殿が美しく平安京の雅な雰囲気が漂う。春の紅しだれ桜や初夏の花菖蒲等、四季折々に美しい景色が広がる。</p>
+                    </div>
+                    <div class="p-home__knowledge-thumb"><img src="https://www.heianjingu.or.jp/wp-content/themes/heianjingu/images/home/knowledge-bg.jpg" alt="" class="p-home__knowledge-img u-ofit"></div>
+                </div>
+            </section>
+
+            <section class="c-about-list">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="c-about-list__item swiper-slide">
+                            <div class="c-about-list__thumb"><img src="https://www.heianjingu.or.jp/wp-content/themes/heianjingu/images/home/knowledge-img.jpg" alt="" class="c-about-list__img"></div>
+                            <h3 class="c-about-list__title">宮司ご挨拶</h3>
+                            <p class="c-about-list__p">平安神宮宮司からのご挨拶をご紹介。</p>
+                            <a href="./about/message/" class="c-read-more">詳しく見る</a>
+                        </div>
+                        <div class="c-about-list__item swiper-slide">
+                            <div class="c-about-list__thumb"><img src="https://www.heianjingu.or.jp/wp-content/themes/heianjingu/images/home/knowledge-img2.jpg" alt="" class="c-about-list__img"></div>
+                            <h3 class="c-about-list__title">平安の祈り</h3>
+                            <p class="c-about-list__p">日本の悠久の歴史のなかで変わることなく伝えられてきた平安の祈り。</p>
+                            <a href="./about/inori/" class="c-read-more">詳しく見る</a>
+                        </div>
+                        <div class="c-about-list__item swiper-slide">
+                            <div class="c-about-list__thumb"><img src="https://www.heianjingu.or.jp/wp-content/themes/heianjingu/images/home/knowledge-img3.jpg" alt="" class="c-about-list__img"></div>
+                            <h3 class="c-about-list__title">由緒・歴史</h3>
+                            <p class="c-about-list__p">京都復興にかけた多くの人々の遺志を後世に伝えるために、四海平安の祈りを込めて創建。</p>
+                            <a href="./about/history/" class="c-read-more">詳しく見る</a>
+                        </div>
+                        <div class="c-about-list__item swiper-slide">
+                            <div class="c-about-list__thumb"><img src="https://www.heianjingu.or.jp/wp-content/themes/heianjingu/images/home/knowledge-img4.jpg" alt="" class="c-about-list__img"></div>
+                            <h3 class="c-about-list__title">平安神宮崇敬会</h3>
+                            <p class="c-about-list__p">平安神宮の維持保存をとおして御祭神のめざされた「平安の世」の実現にむけて日本文化を発信。</p>
+                            <a href="./about/sukei/" class="c-read-more">詳しく見る</a>
+                        </div>
+                        <div class="c-about-list__item swiper-slide">
+                            <div class="c-about-list__thumb"><img src="https://www.heianjingu.or.jp/wp-content/themes/heianjingu/images/home/knowledge-img5.jpg" alt="" class="c-about-list__img"></div>
+                            <h3 class="c-about-list__title">平安神宮の附属団体</h3>
+                            <p class="c-about-list__p">平安神宮の附属団体のご紹介。</p>
+                            <a href="./about/fuzoku/" class="c-read-more">詳しく見る</a>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="swiper-button-prev"><img src="https://www.heianjingu.or.jp/wp-content/themes/heianjingu/images/common/arrow.svg" alt="" class="swiper-button-img"></div>
+                <div class="swiper-button-next"><img src="https://www.heianjingu.or.jp/wp-content/themes/heianjingu/images/common/arrow.svg" alt="" class="swiper-button-img"></div>
+            </section>
+
+            <section class="p-home__pray">
+                <div class="c-inner c-inner--max">
+                    <div class="p-home__pray-thumb"><img src="https://www.heianjingu.or.jp/wp-content/themes/heianjingu/images/home/pray-bg.jpg" alt="" class="p-home__pray-img u-ofit"></div>
+                    <div class="p-home__pray-text">
+                        <h2 class="c-title__common--yoko"><span class="c-title__common-span">祈り</span>ご参拝・ご祈祷</h2>
+                        <ul class="c-pray-list">
+                            <li class="c-pray-list__item">
+                                <div class="c-pray-list__thumb"><img src="https://www.heianjingu.or.jp/wp-content/themes/heianjingu/images/home/pray-img.jpg" alt="" class="c-pray-list__img"></div>
+                                <div class="c-pray-list__text">
+                                    <h3 class="c-pray-list__title">ご参拝の方へ</h3>
+                                    <p class="c-pray-list__p">平安神宮へお参りなさる方々は、いつの時代もどの季節も絶えることがありません。当宮は、いつでも皆様のご参拝をお待ちしております。</p>
+                                    <a href="./visit/worship/" class="c-read-more">詳しく見る</a>
+                                </div>
+                            </li>
+                            <li class="c-pray-list__item">
+                                <div class="c-pray-list__thumb"><img src="https://www.heianjingu.or.jp/wp-content/themes/heianjingu/images/home/pray-img2.jpg" alt="" class="c-pray-list__img"></div>
+                                <div class="c-pray-list__text">
+                                    <h3 class="c-pray-list__title">ご祈祷のご案内</h3>
+                                    <p class="c-pray-list__p">初宮参りや七五三など人生の通過儀礼のお祝いや年中行事に関わりのある厄除け祈願をはじめ各種祈祷を執り行っております。</p>
+                                    <a href="./visit/prayer/" class="c-read-more">詳しく見る</a>
+                                </div>
+                            </li>
+                            <li class="c-pray-list__item">
+                                <div class="c-pray-list__thumb"><img src="https://www.heianjingu.or.jp/wp-content/themes/heianjingu/images/home/pray-img3.jpg" alt="" class="c-pray-list__img"></div>
+                                <div class="c-pray-list__text">
+                                    <h3 class="c-pray-list__title">授与品（お神札・お守り）</h3>
+                                    <p class="c-pray-list__p">平安神宮の授与品（御神札・御守）の　ご紹介。</p>
+                                    <a href="./visit/amulet/" class="c-read-more">詳しく見る</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="p-home__event">
+                <div class="c-inner">
+                    <h2 class="c-title__common">平安神宮の<span class="c-title__common-span">祭典・行事</span></h2>
+                    <ul class="c-event-menu">
+                        <li class="c-event-menu__item">
+                            <div class="c-event-menu__thumb"><img src="https://www.heianjingu.or.jp/wp-content/themes/heianjingu/images/home/event-img.jpg" alt="" class="c-event-menu__img u-ofit"></div>
+                            <a href="./ritual/annual/" class="c-read-more">年間行事</a>
+                        </li>
+                        <li class="c-event-menu__item">
+                            <div class="c-event-menu__thumb"><img src="https://www.heianjingu.or.jp/wp-content/themes/heianjingu/images/home/event-img2.jpg" alt="" class="c-event-menu__img u-ofit"></div>
+                            <a href="./ritual/jidaimatsuri/" class="c-read-more">時代祭</a>
+                        </li>
+                        <li class="c-event-menu__item">
+                            <div class="c-event-menu__thumb"><img src="https://www.heianjingu.or.jp/wp-content/themes/heianjingu/images/home/event-img3.jpg" alt="" class="c-event-menu__img u-ofit"></div>
+                            <a href="./ritual/anniversary130th/" class="c-read-more">平安神宮百三十年祭</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="p-home__around">
+                <div class="c-inner c-inner--small">
+                    <h2 class="c-title__common">平安神宮を<span class="c-title__common-span">巡る</span></h2>
+                    <p class="p-home__around-p">明治28(1895)年平安遷都1100年を期に市民の総社として創建。平安京の正庁(朝堂院)を模した朱塗りの社殿が美しく平安京の雅な雰囲気が漂う。春の紅しだれ桜や初夏の花菖蒲等、四季折々に美しい景色が広がる。</p>
+                </div>
+                <div class="c-around-list">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="c-around-list__item swiper-slide">
+                                <img src="https://www.heianjingu.or.jp/wp-content/themes/heianjingu/images/home/around-img.jpg" alt="" class="c-around-list__img u-ofit">
+                            </div>
+                            <div class="c-around-list__item swiper-slide">
+                                <img src="https://www.heianjingu.or.jp/wp-content/themes/heianjingu/images/home/around-img2.jpg" alt="" class="c-around-list__img u-ofit">
+                            </div>
+                            <div class="c-around-list__item swiper-slide">
+                                <img src="https://www.heianjingu.or.jp/wp-content/themes/heianjingu/images/home/around-img3.jpg" alt="" class="c-around-list__img u-ofit">
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"><img src="https://www.heianjingu.or.jp/wp-content/themes/heianjingu/images/common/arrow.svg" alt="" class="swiper-button-img"></div>
+                        <div class="swiper-button-next"><img src="https://www.heianjingu.or.jp/wp-content/themes/heianjingu/images/common/arrow.svg" alt="" class="swiper-button-img"></div>
+                    </div>
+                </div>
+                <ul class="c-around-menu">
+                    <li class="c-around-menu__item"><a href="./map/guide/" class="c-read-more">社殿・境内案内</a></li>
+                    <li class="c-around-menu__item"><a href="./map/garden/" class="c-read-more">平安神宮神苑</a></li>
+                    <li class="c-around-menu__item"><a href="./map/season/" class="c-read-more">平安神宮の四季</a></li>
+                </ul>
+            </section>
+                        <section class="p-home__read">
+                <div class="p-home__read-header">
+                    <h2 class="c-title__common">平安神宮を<span class="c-title__common-span">読む</span></h2>
+                    <div class="c-read-list">
+                        <div class="swiper">
+                            <div class="swiper-wrapper">
+                            
+                                <div class="c-read-list__item swiper-slide">
+                                    <div class="c-read-list__thumb"><img src="https://www.heianjingu.or.jp/wp-content/uploads/2025/12/IMG_4042_VSCO-scaled-e1765889676348.jpg" alt="" class="c-read-list__img u-ofit"></div>
+                                    <p class="c-read-list__date">令和7年12月16日</p>
+                                    <h3 class="c-read-list__title"><a href="https://www.heianjingu.or.jp/journal_list/%e5%9b%9b%e5%ad%a3%e3%81%ab%e5%91%bc%e5%bf%9c%e3%81%97%e3%80%81%e5%b8%b8%e3%81%ab%e5%a4%89%e5%ae%b9%e3%81%99%e3%82%8b%e8%90%bd%e8%91%89%e6%a8%b9/" class="c-read-more">四季に呼応し、常に変容する落葉樹</a></h3>
+                                </div>
+
+                                <div class="c-read-list__item swiper-slide">
+                                    <div class="c-read-list__thumb"><img src="https://www.heianjingu.or.jp/wp-content/uploads/2025/11/IMG_3205_VSCO-scaled-e1765889525346.jpg" alt="" class="c-read-list__img u-ofit"></div>
+                                    <p class="c-read-list__date">令和7年11月08日</p>
+                                    <h3 class="c-read-list__title"><a href="https://www.heianjingu.or.jp/journal_list/1160/" class="c-read-more">七代小川治兵衛が紡ぐ石と庭の調和</a></h3>
+                                </div>
+
+                                <div class="c-read-list__item swiper-slide">
+                                    <div class="c-read-list__thumb"><img src="https://www.heianjingu.or.jp/wp-content/uploads/2025/09/IMG_2607_VSCO-1-scaled-e1765889576974.jpg" alt="" class="c-read-list__img u-ofit"></div>
+                                    <p class="c-read-list__date">令和7年10月02日</p>
+                                    <h3 class="c-read-list__title"><a href="https://www.heianjingu.or.jp/journal_list/%e7%a5%9e%e8%8b%91%e3%81%ab%e6%81%af%e3%81%a5%e3%81%8f%e7%9f%b3%e7%87%88%e7%b1%a0%e3%81%ae%e5%a7%bf/" class="c-read-more">神苑に息づく石燈籠の姿</a></h3>
+                                </div>
+
+                                <div class="c-read-list__item swiper-slide">
+                                    <div class="c-read-list__thumb"><img src="https://www.heianjingu.or.jp/wp-content/uploads/2025/06/IMG_0968_VSCO-scaled.jpg" alt="" class="c-read-list__img u-ofit"></div>
+                                    <p class="c-read-list__date">令和7年06月25日</p>
+                                    <h3 class="c-read-list__title"><a href="https://www.heianjingu.or.jp/journal_list/%e5%a4%8f%e8%b6%8a%e3%81%ae%e5%a4%a7%e7%a5%93/" class="c-read-more">夏越の大祓と茅の輪くぐりについて</a></h3>
+                                </div>
+ 
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"><img src="https://www.heianjingu.or.jp/wp-content/themes/heianjingu/images/common/arrow.svg" alt="" class="swiper-button-img"></div>
+                        <div class="swiper-button-next"><img src="https://www.heianjingu.or.jp/wp-content/themes/heianjingu/images/common/arrow.svg" alt="" class="swiper-button-img"></div>
+                        <a href="/journal/" class="c-read-more">記事一覧を見る</a>
+                    </div>
+                </div>
+            </section>
+
+            <ul class="p-home__menu">
+                <li class="p-home__menu-item">
+                    <div class="p-home__menu-header">
+                        <h3 class="p-home__menu-title">ご来宮の皆様へ</h3>
+                    </div>
+                    <a href="/attention/" class="c-read-more">詳しく見る</a>
+                </li>
+                <li class="p-home__menu-item">
+                    <div class="p-home__menu-header">
+                        <h3 class="p-home__menu-title">神前結婚式</h3>
+                    </div>
+                    <a href="https://www.heianjingu.com/wedding/" class="c-read-more">詳しく見る</a>
+                </li>
+                <li class="p-home__menu-item">
+                    <div class="p-home__menu-header">
+                        <h3 class="p-home__menu-title">アクセス</h3>
+                    </div>
+                    <a href="/access/" class="c-read-more">詳しく見る</a>
+                </li>
+            </ul>
+
+            <div class="c-sns">
+                <div class="c-sns__wrapper">
+                    平安神宮公式SNS・チャンネル
+                    <ul class="c-sns__list">
+                        <li class="c-sns__item"><a href="https://www.instagram.com/heianjingu_official/" target="_blank" class="c-sns__link"><img src="https://www.heianjingu.or.jp/wp-content/themes/heianjingu/images/common/icon-ig.svg" alt="インスタグラム公式" class="c-sns__img"></a></li>
+                        <li class="c-sns__item"><a href="https://x.com/kyotoheianjingu" target="_blank" class="c-sns__link"><img src="https://www.heianjingu.or.jp/wp-content/themes/heianjingu/images/common/icon-x.svg" alt="X公式" class="c-sns__img"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <section class="c-footer-bnr">
+<div class="c-inner c-inner--small">
+<ul class="c-footer-bnr__list">
+<li class="c-footer-bnr__item" >
+<a href="https://heianjingu-furisode-photo.com/" class="c-footer-bnr__link" target="_blank">
+<div class="c-footer-bnr__header" style="background-size:cover!important;background:url(https://www.heianjingu.or.jp/wp-content/uploads/2025/01/footer-bnr.jpg)  no-repeat">
+<h3 class="c-footer-bnr__title">成人式前撮りプランのご案内</h3>
+</div>
+<p class="c-footer-bnr__p">一生に一度の思い出を平安神宮で残しませんか？</p>
+</a>
+</li>
+<li class="c-footer-bnr__item" >
+<a href="https://ja.kyoto.travel/" class="c-footer-bnr__link" target="_blank">
+<div class="c-footer-bnr__header" style="background-size:cover!important;background:url(https://www.heianjingu.or.jp/wp-content/uploads/2025/01/footer-bnr4.jpg)  no-repeat">
+<h3 class="c-footer-bnr__title">京都観光Navi</h3>
+</div>
+<p class="c-footer-bnr__p">京都を満喫する京都観光オフィシャルサイト</p>
+</a>
+</li>
+<li class="c-footer-bnr__item" >
+<a href="https://www.heianjingu.com/wedding/" class="c-footer-bnr__link" target="_blank">
+<div class="c-footer-bnr__header" style="background-size:cover!important;background:url(https://www.heianjingu.or.jp/wp-content/uploads/2025/01/footer-bnr5.jpg)  no-repeat">
+<h3 class="c-footer-bnr__title">平安神宮会館</h3>
+</div>
+<p class="c-footer-bnr__p">平安神宮会館での神前式・披露宴はこちら</p>
+</a>
+</li>
+</ul>
+</div>
+</section>
+            <div class="c-pankuzu">
+                <div class="c-inner">
+                    <ul class="c-pankuzu__list">
+                        <li class="c-pankuzu__item">TOP</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+    </main>
+
+ 
+ <footer class="l-footer">
+        <div class="c-inner">
+            <div class="l-footer__logo"><a href="/" class="l-footer__logo-link"><img src="https://www.heianjingu.or.jp/wp-content/themes/heianjingu/images/common/logo-yoko.png" alt="平安神宮ロゴ" class="l-footer__logo-img"></a></div>
+            <div class="l-footer__nav">
+                <ul class="c-global-nav__list">
+                    <li class="c-global-nav__item c-global-nav__item--has-child"><a href="/about/" class="c-global-nav__link">平安神宮について</a>
+                        <ul class="c-global-nav__sub-list">
+                            <li class="c-global-nav__sub-item"><a href="/about/message/" class="c-global-nav__sub-link">宮司ご挨拶</a></li>
+                            <li class="c-global-nav__sub-item"><a href="/about/inori/" class="c-global-nav__sub-link">平安の祈り</a></li>
+                            <li class="c-global-nav__sub-item"><a href="/about/history/" class="c-global-nav__sub-link">由緒・歴史</a></li>
+                            <li class="c-global-nav__sub-item"><a href="/about/sukei/" class="c-global-nav__sub-link">平安神宮崇敬会</a></li>
+                            <li class="c-global-nav__sub-item"><a href="/about/fuzoku/" class="c-global-nav__sub-link">平安神宮の附属団体</a></li>
+                        </ul>
+                    </li>
+                    <li class="c-global-nav__item c-global-nav__item--has-child"><a href="/visit/" class="c-global-nav__link">ご参拝・ご祈祷</a>
+                        <ul class="c-global-nav__sub-list c-global-nav__sub-list--long">
+                            <li class="c-global-nav__sub-item"><a href="/visit/worship/" class="c-global-nav__sub-link">ご参拝の方へ</a></li>
+                            <li class="c-global-nav__sub-item"><a href="/visit/prayer/" class="c-global-nav__sub-link">ご祈祷のご案内</a></li>
+                            <li class="c-global-nav__sub-item"><a href="/visit/amulet/" class="c-global-nav__sub-link">授与品（お神札・お守り）</a></li>
+                        </ul>
+                    </li>
+                    <li class="c-global-nav__item c-global-nav__item--has-child"><a href="/ritual/" class="c-global-nav__link">祭典・行事</a>
+                        <ul class="c-global-nav__sub-list">
+                            <li class="c-global-nav__sub-item"><a href="/ritual/annual/" class="c-global-nav__sub-link">年間行事</a></li>
+                            <li class="c-global-nav__sub-item"><a href="/ritual/jidaimatsuri/" class="c-global-nav__sub-link">時代祭</a></li>
+                            <li class="c-global-nav__sub-item"><a href="/ritual/anniversary130th/" class="c-global-nav__sub-link">平安神宮百三十年祭</a></li>
+                        </ul>
+                    </li>
+                    <li class="c-global-nav__item c-global-nav__item--has-child"><a href="/map/" class="c-global-nav__link">神宮を巡る</a>
+                        <ul class="c-global-nav__sub-list">
+                            <li class="c-global-nav__sub-item"><a href="/map/guide/" class="c-global-nav__sub-link">社殿・境内案内</a></li>
+                            <li class="c-global-nav__sub-item"><a href="/map/garden/" class="c-global-nav__sub-link">平安神宮神苑</a></li>
+                            <li class="c-global-nav__sub-item"><a href="/map/season/" class="c-global-nav__sub-link">平安神宮の四季</a></li>
+                        </ul>
+                    </li>
+                    <li class="c-global-nav__item c-global-nav__item--has-child"><a href="https://www.heianjingu.com/wedding/" class="c-global-nav__link">平安神宮の結婚式</a>
+                        <ul class="c-global-nav__sub-list">
+                            <li class="c-global-nav__sub-item"><a href="https://www.heianjingu.com/wedding/" class="c-global-nav__sub-link" target="_blank">神前結婚式・披露宴</a></li>
+                            <li class="c-global-nav__sub-item"><a href="https://vm.crm.oiwaii-taian.com/customer/public/bridal_fair_pages/qu4oSXdUx1XAnsUYPytHVgUzCe4NcVO7/fairs" class="c-global-nav__sub-link"target="_blank">ブライダルフェア</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="c-global-nav__list c-global-nav__list--column">
+                    <li class="c-global-nav__item"><a href="/journal/" class="c-global-nav__link">平安神宮を読む</a></li>
+                    <li class="c-global-nav__item"><a href="/news/" class="c-global-nav__link">お知らせ</a></li>
+                    <li class="c-global-nav__item"><a href="/attention/" class="c-global-nav__link">ご来宮の皆様へ</a></li>
+                    <li class="c-global-nav__item"><a href="/access/" class="c-global-nav__link">アクセス</a></li>
+                    <li class="c-global-nav__item"><a href="/contact/" class="c-global-nav__link">お問い合わせ</a></li>
+                    <li class="c-global-nav__item"><a href="/sukei_contact/" class="c-global-nav__link">平安神宮崇敬会<br class="u-sp">お問い合わせ</a></li>
+                    <li class="c-global-nav__item"><a href="/privacypolicy/" class="c-global-nav__link">プライバシー<br class="u-sp">ポリシー</a></li>
+                </ul>
+            </div>
+            <p class="l-footer__text">〒606-8341　京都市左京区岡崎西天王町97<br>
+                TEL：075-761-0221　/　FAX：075-761-0225</p>
+            <p class="l-footer__copyrights u-text--crimson">© HEIAN JINGU SHRINE.</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://www.heianjingu.or.jp/wp-content/themes/heianjingu/js/script.js"></script>
+
+<script>document.body.classList.remove("no-js");</script>	<script>
+	if ( -1 !== navigator.userAgent.indexOf( 'MSIE' ) || -1 !== navigator.appVersion.indexOf( 'Trident/' ) ) {
+		document.body.classList.add( 'is-IE' );
+	}
+	</script>
+			<script>
+		/(trident|msie)/i.test(navigator.userAgent)&&document.getElementById&&window.addEventListener&&window.addEventListener("hashchange",(function(){var t,e=location.hash.substring(1);/^[A-z0-9_-]+$/.test(e)&&(t=document.getElementById(e))&&(/^(?:a|select|input|button|textarea)$/i.test(t.tagName)||(t.tabIndex=-1),t.focus())}),!1);
+		</script>
+		</body>
+
+</html>

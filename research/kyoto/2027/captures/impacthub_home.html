@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="ja" class="bg4 no-js">
+
+<head>
+    <meta charset="UTF-8">
+<script>
+var gform;gform||(document.addEventListener("gform_main_scripts_loaded",function(){gform.scriptsLoaded=!0}),window.addEventListener("DOMContentLoaded",function(){gform.domLoaded=!0}),gform={domLoaded:!1,scriptsLoaded:!1,initializeOnLoaded:function(o){gform.domLoaded&&gform.scriptsLoaded?o():!gform.domLoaded&&gform.scriptsLoaded?window.addEventListener("DOMContentLoaded",o):document.addEventListener("gform_main_scripts_loaded",o)},hooks:{action:{},filter:{}},addAction:function(o,n,r,t){gform.addHook("action",o,n,r,t)},addFilter:function(o,n,r,t){gform.addHook("filter",o,n,r,t)},doAction:function(o){gform.doHook("action",o,arguments)},applyFilters:function(o){return gform.doHook("filter",o,arguments)},removeAction:function(o,n){gform.removeHook("action",o,n)},removeFilter:function(o,n,r){gform.removeHook("filter",o,n,r)},addHook:function(o,n,r,t,i){null==gform.hooks[o][n]&&(gform.hooks[o][n]=[]);var e=gform.hooks[o][n];null==i&&(i=n+"_"+e.length),gform.hooks[o][n].push({tag:i,callable:r,priority:t=null==t?10:t})},doHook:function(n,o,r){var t;if(r=Array.prototype.slice.call(r,1),null!=gform.hooks[n][o]&&((o=gform.hooks[n][o]).sort(function(o,n){return o.priority-n.priority}),o.forEach(function(o){"function"!=typeof(t=o.callable)&&(t=window[t]),"action"==n?t.apply(null,r):r[0]=t.apply(null,r)})),"filter"==n)return r[0]},removeHook:function(o,n,t,i){var r;null!=gform.hooks[o][n]&&(r=(r=gform.hooks[o][n]).filter(function(o,n,r){return!!(null!=i&&i!=o.tag||null!=t&&t!=o.priority)}),gform.hooks[o][n]=r)}});
+</script>
+
+    <meta name="viewport"
+        content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=yes" />
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <link rel="pingback" href="https://kyoto.impacthub.net/xmlrpc.php">
+    <!--[if lt IE 9]><script src="https://kyoto.impacthub.net/wp-content/themes/impact_hub_theme/js/html5.js"></script><![endif]-->
+    <title>Kyoto &#8211; Dojo for change!</title>
+<meta name='robots' content='max-image-preview:large' />
+<link rel="alternate" hreflang="ja" href="https://kyoto.impacthub.net/" />
+<link rel="alternate" hreflang="en-us" href="https://kyoto.impacthub.net/en/" />
+<link rel="alternate" hreflang="x-default" href="https://kyoto.impacthub.net/" />
+<link rel='dns-prefetch' href='//b2003181.assetcdn.net' />
+<link rel="alternate" type="application/rss+xml" title="Kyoto &raquo; フィード" href="https://kyoto.impacthub.net/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Kyoto &raquo; コメントフィード" href="https://kyoto.impacthub.net/comments/feed/" />
+<link rel="alternate" type="text/calendar" title="Kyoto &raquo; iCal フィード" href="https://kyoto.impacthub.net/event/?ical=1" />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://kyoto.impacthub.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fkyoto.impacthub.net%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://kyoto.impacthub.net/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fkyoto.impacthub.net%2F&#038;format=xml" />
+		<style>
+			.lazyload,
+			.lazyloading {
+				max-width: 100%;
+			}
+		</style>
+		<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-break:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style^=border-color],[style*=";border-color"],[style*="; border-color"]){border-style:solid}html :where([style^=border-top-color],[style*=";border-top-color"],[style*="; border-top-color"]){border-top-style:solid}html :where([style^=border-right-color],[style*=";border-right-color"],[style*="; border-right-color"]){border-right-style:solid}html :where([style^=border-bottom-color],[style*=";border-bottom-color"],[style*="; border-bottom-color"]){border-bottom-style:solid}html :where([style^=border-left-color],[style*=";border-left-color"],[style*="; border-left-color"]){border-left-style:solid}html :where([style^=border-width],[style*=";border-width"],[style*="; border-width"]){border-style:solid}html :where([style^=border-top-width],[style*=";border-top-width"],[style*="; border-top-width"]){border-top-style:solid}html :where([style^=border-right-width],[style*=";border-right-width"],[style*="; border-right-width"]){border-right-style:solid}html :where([style^=border-bottom-width],[style*=";border-bottom-width"],[style*="; border-bottom-width"]){border-bottom-style:solid}html :where([style^=border-left-width],[style*=";border-left-width"],[style*="; border-left-width"]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+</style>
+<style id="wp-block-image-inline-css">
+.wp-block-image>a,.wp-block-image>figure>a{display:inline-block}.wp-block-image img{box-sizing:border-box;height:auto;max-width:100%;vertical-align:bottom}@media not (prefers-reduced-motion){.wp-block-image img.hide{visibility:hidden}.wp-block-image img.show{animation:show-content-image .4s}}.wp-block-image[style*=border-radius] img,.wp-block-image[style*=border-radius]>a{border-radius:inherit}.wp-block-image.has-custom-border img{box-sizing:border-box}.wp-block-image.aligncenter{text-align:center}.wp-block-image.alignfull>a,.wp-block-image.alignwide>a{width:100%}.wp-block-image.alignfull img,.wp-block-image.alignwide img{height:auto;width:100%}.wp-block-image .aligncenter,.wp-block-image .alignleft,.wp-block-image .alignright,.wp-block-image.aligncenter,.wp-block-image.alignleft,.wp-block-image.alignright{display:table}.wp-block-image .aligncenter>figcaption,.wp-block-image .alignleft>figcaption,.wp-block-image .alignright>figcaption,.wp-block-image.aligncenter>figcaption,.wp-block-image.alignleft>figcaption,.wp-block-image.alignright>figcaption{caption-side:bottom;display:table-caption}.wp-block-image .alignleft{float:left;margin:.5em 1em .5em 0}.wp-block-image .alignright{float:right;margin:.5em 0 .5em 1em}.wp-block-image .aligncenter{margin-left:auto;margin-right:auto}.wp-block-image :where(figcaption){margin-bottom:1em;margin-top:.5em}.wp-block-image.is-style-circle-mask img{border-radius:9999px}@supports ((-webkit-mask-image:none) or (mask-image:none)) or (-webkit-mask-image:none){.wp-block-image.is-style-circle-mask img{border-radius:0;-webkit-mask-image:url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/></svg>');mask-image:url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/></svg>');mask-mode:alpha;-webkit-mask-position:center;mask-position:center;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:contain;mask-size:contain}}:root :where(.wp-block-image.is-style-rounded img,.wp-block-image .is-style-rounded img){border-radius:9999px}.wp-block-image figure{margin:0}.wp-lightbox-container{display:flex;flex-direction:column;position:relative}.wp-lightbox-container img{cursor:zoom-in}.wp-lightbox-container img:hover+button{opacity:1}.wp-lightbox-container button{align-items:center;backdrop-filter:blur(16px) saturate(180%);background-color:rgba(90,90,90,.25);border:none;border-radius:4px;cursor:zoom-in;display:flex;height:20px;justify-content:center;opacity:0;padding:0;position:absolute;right:16px;text-align:center;top:16px;width:20px;z-index:100}@media not (prefers-reduced-motion){.wp-lightbox-container button{transition:opacity .2s ease}}.wp-lightbox-container button:focus-visible{outline:3px auto rgba(90,90,90,.25);outline:3px auto -webkit-focus-ring-color;outline-offset:3px}.wp-lightbox-container button:hover{cursor:pointer;opacity:1}.wp-lightbox-container button:focus{opacity:1}.wp-lightbox-container button:focus,.wp-lightbox-container button:hover,.wp-lightbox-container button:not(:hover):not(:active):not(.has-background){background-color:rgba(90,90,90,.25);border:none}.wp-lightbox-overlay{box-sizing:border-box;cursor:zoom-out;height:100vh;left:0;overflow:hidden;position:fixed;top:0;visibility:hidden;width:100%;z-index:100000}.wp-lightbox-overlay .wp-lightbox-close-button{align-items:center;cursor:pointer;display:flex;font-family:inherit;gap:8px;justify-content:center;line-height:1;min-height:40px;min-width:40px;padding:0 4px;position:absolute;right:calc(env(safe-area-inset-right) + 16px);top:calc(env(safe-area-inset-top) + 16px);z-index:5000000}.wp-lightbox-overlay .wp-lightbox-close-button:focus,.wp-lightbox-overlay .wp-lightbox-close-button:hover,.wp-lightbox-overlay .wp-lightbox-close-button:not(:hover):not(:active):not(.has-background){background:none;border:none}.wp-lightbox-overlay .wp-lightbox-close-button:has(.wp-lightbox-close-text:not([hidden])) .wp-lightbox-close-icon svg{height:1em;width:1em}.wp-lightbox-overlay .wp-lightbox-close-icon svg{display:block}.wp-lightbox-overlay .wp-lightbox-navigation-button-next,.wp-lightbox-overlay .wp-lightbox-navigation-button-prev{align-items:center;bottom:16px;cursor:pointer;display:flex;font-family:inherit;gap:4px;justify-content:center;line-height:1;min-height:40px;min-width:40px;padding:0 8px;position:absolute;z-index:2000002}.wp-lightbox-overlay .wp-lightbox-navigation-button-next[hidden],.wp-lightbox-overlay .wp-lightbox-navigation-button-prev[hidden]{display:none}@media (min-width:960px){.wp-lightbox-overlay .wp-lightbox-navigation-button-next,.wp-lightbox-overlay .wp-lightbox-navigation-button-prev{bottom:50%;transform:translateY(-50%)}}.wp-lightbox-overlay .wp-lightbox-navigation-button-next:focus,.wp-lightbox-overlay .wp-lightbox-navigation-button-next:hover,.wp-lightbox-overlay .wp-lightbox-navigation-button-next:not(:hover):not(:active):not(.has-background),.wp-lightbox-overlay .wp-lightbox-navigation-button-prev:focus,.wp-lightbox-overlay .wp-lightbox-navigation-button-prev:hover,.wp-lightbox-overlay .wp-lightbox-navigation-button-prev:not(:hover):not(:active):not(.has-background){background:none;border:none;padding:0 8px}.wp-lightbox-overlay .wp-lightbox-navigation-button-next:has(.wp-lightbox-navigation-text:not([hidden])) .wp-lightbox-navigation-icon svg,.wp-lightbox-overlay .wp-lightbox-navigation-button-prev:has(.wp-lightbox-navigation-text:not([hidden])) .wp-lightbox-navigation-icon svg{display:block;height:1.5em;width:1.5em}.wp-lightbox-overlay .wp-lightbox-navigation-button-prev{left:calc(env(safe-area-inset-left) + 16px)}.wp-lightbox-overlay .wp-lightbox-navigation-button-next{right:calc(env(safe-area-inset-right) + 16px)}.wp-lightbox-overlay .wp-lightbox-navigation-icon svg{vertical-align:middle}.wp-lightbox-overlay .lightbox-image-container{height:var(--wp--lightbox-container-height);left:50%;overflow:hidden;position:absolute;top:50%;transform:translate(-50%,-50%);transform-origin:top left;width:var(--wp--lightbox-container-width);z-index:2000001}.wp-lightbox-overlay .wp-block-image{align-items:center;box-sizing:border-box;display:flex;height:100%;justify-content:center;margin:0;position:relative;transform-origin:0 0;width:100%;z-index:3000000}.wp-lightbox-overlay .wp-block-image img{height:var(--wp--lightbox-image-height);min-height:var(--wp--lightbox-image-height);min-width:var(--wp--lightbox-image-width);width:var(--wp--lightbox-image-width)}.wp-lightbox-overlay .wp-block-image figcaption{display:none}.wp-lightbox-overlay button{background:none;border:none}.wp-lightbox-overlay .scrim{background-color:#fff;height:100%;opacity:.9;position:absolute;width:100%;z-index:2000000}.wp-lightbox-overlay.active{visibility:visible}@media not (prefers-reduced-motion){.wp-lightbox-overlay.active{animation:turn-on-visibility .25s both}.wp-lightbox-overlay.active img{animation:turn-on-visibility .35s both}.wp-lightbox-overlay.show-closing-animation:not(.active){animation:turn-off-visibility .35s both}.wp-lightbox-overlay.show-closing-animation:not(.active) img{animation:turn-off-visibility .25s both}.wp-lightbox-overlay.zoom.active{animation:none;opacity:1;visibility:visible}.wp-lightbox-overlay.zoom.active .lightbox-image-container{animation:lightbox-zoom-in .4s}.wp-lightbox-overlay.zoom.active .lightbox-image-container img{animation:none}.wp-lightbox-overlay.zoom.active .scrim{animation:turn-on-visibility .4s forwards}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active){animation:none}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active) .lightbox-image-container{animation:lightbox-zoom-out .4s}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active) .lightbox-image-container img{animation:none}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active) .scrim{animation:turn-off-visibility .4s forwards}}@keyframes show-content-image{0%{visibility:hidden}99%{visibility:hidden}to{visibility:visible}}@keyframes turn-on-visibility{0%{opacity:0}to{opacity:1}}@keyframes turn-off-visibility{0%{opacity:1;visibility:visible}99%{opacity:0;visibility:visible}to{opacity:0;visibility:hidden}}@keyframes lightbox-zoom-in{0%{transform:translate(calc((-100vw + var(--wp--lightbox-scrollbar-width))/2 + var(--wp--lightbox-initial-left-position)),calc(-50vh + var(--wp--lightbox-initial-top-position))) scale(var(--wp--lightbox-scale))}to{transform:translate(-50%,-50%) scale(1)}}@keyframes lightbox-zoom-out{0%{transform:translate(-50%,-50%) scale(1);visibility:visible}99%{visibility:visible}to{transform:translate(calc((-100vw + var(--wp--lightbox-scrollbar-width))/2 + var(--wp--lightbox-initial-left-position)),calc(-50vh + var(--wp--lightbox-initial-top-position))) scale(var(--wp--lightbox-scale));visibility:hidden}}
+/*# sourceURL=https://kyoto.impacthub.net/wp-includes/blocks/image/style.min.css */
+</style>
+
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}.wp-block-button{--wp--preset--dimension--25: 25%;--wp--preset--dimension--50: 50%;--wp--preset--dimension--75: 75%;--wp--preset--dimension--100: 100%;}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel='stylesheet' id='wpml-legacy-horizontal-list-0-css' href='https://kyoto.impacthub.net/wp-content/plugins/sitepress-multilingual-cms/templates/language-switchers/legacy-list-horizontal/style.min.css?ver=1' media='all' />
+<style id="wpml-legacy-horizontal-list-0-inline-css">
+.wpml-ls-statics-shortcode_actions, .wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu, .wpml-ls-statics-shortcode_actions a {border-color:#cdcdcd;}.wpml-ls-statics-shortcode_actions a, .wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu a, .wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu a:link, .wpml-ls-statics-shortcode_actions li:not(.wpml-ls-current-language) .wpml-ls-link, .wpml-ls-statics-shortcode_actions li:not(.wpml-ls-current-language) .wpml-ls-link:link {color:#444444;background-color:#ffffff;}.wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu a:hover,.wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu a:focus, .wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu a:link:hover, .wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu a:link:focus {color:#000000;background-color:#eeeeee;}.wpml-ls-statics-shortcode_actions .wpml-ls-current-language > a {color:#444444;background-color:#ffffff;}.wpml-ls-statics-shortcode_actions .wpml-ls-current-language:hover>a, .wpml-ls-statics-shortcode_actions .wpml-ls-current-language>a:focus {color:#000000;background-color:#eeeeee;}
+/*# sourceURL=wpml-legacy-horizontal-list-0-inline-css */
+</style>
+<link rel='stylesheet' id='cms-navigation-style-base-css' href='https://kyoto.impacthub.net/wp-content/plugins/wpml-cms-nav/res/css/cms-navigation-base.css?ver=5.2.0' media='screen' />
+<link rel='stylesheet' id='cms-navigation-style-css' href='https://kyoto.impacthub.net/wp-content/plugins/wpml-cms-nav/res/css/cms-navigation.css?ver=5.2.0' media='screen' />
+<link rel='stylesheet' id='wds-css' href='https://kyoto.impacthub.net/wp-content/themes/impact_hub_child_theme/style.css?ver=7.1.5' media='all' />
+<link rel='stylesheet' id='bootstrap-css' href='https://kyoto.impacthub.net/wp-content/themes/impact_hub_theme/css/bootstrap.min.css?ver=7.1.5' media='all' />
+<link rel='stylesheet' id='owl-css' href='https://kyoto.impacthub.net/wp-content/themes/impact_hub_theme/css/owl.css?ver=7.1.5' media='all' />
+<link rel='stylesheet' id='select-css' href='https://kyoto.impacthub.net/wp-content/themes/impact_hub_theme/css/select.css?ver=7.1.5' media='all' />
+<link rel='stylesheet' id='scroll-css' href='https://kyoto.impacthub.net/wp-content/themes/impact_hub_theme/css/scroll.css?ver=7.1.5' media='all' />
+<link rel='stylesheet' id='font-css' href='https://kyoto.impacthub.net/wp-content/themes/impact_hub_theme/css/font.css?ver=7.1.5' media='all' />
+<link rel='stylesheet' id='theme-css' href='https://kyoto.impacthub.net/wp-content/themes/impact_hub_theme/css/theme.css?ver=7.1.5' media='all' />
+<link rel='stylesheet' id='js_composer_front-css' href='https://kyoto.impacthub.net/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=7.7.2' media='all' />
+<script id="jquery-core-js" src="https://kyoto.impacthub.net/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+<script id="jquery-migrate-js" src="https://kyoto.impacthub.net/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"></script>
+<script></script><link rel="https://api.w.org/" href="https://kyoto.impacthub.net/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://kyoto.impacthub.net/wp-json/wp/v2/pages/13786" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://kyoto.impacthub.net/xmlrpc.php?rsd" />
+
+<link rel="canonical" href="https://kyoto.impacthub.net/" />
+<link rel='shortlink' href='https://kyoto.impacthub.net/' />
+<meta name="generator" content="WPML ver:4.8.5 stt:1,28;" />
+<meta name="tec-api-version" content="v1"><meta name="tec-api-origin" content="https://kyoto.impacthub.net"><link rel="alternate" href="https://kyoto.impacthub.net/wp-json/tribe/events/v1/" />		<script>
+			document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+		</script>
+				<style>
+			.no-js img.lazyload {
+				display: none;
+			}
+
+			figure.wp-block-image img.lazyloading {
+				min-width: 150px;
+			}
+
+			.lazyload,
+			.lazyloading {
+				--smush-placeholder-width: 100px;
+				--smush-placeholder-bg-max-width: 120px;
+				--smush-placeholder-aspect-ratio: 1/1;
+				width: var(--smush-image-width, var(--smush-placeholder-width)) !important;
+				aspect-ratio: var(--smush-image-aspect-ratio, var(--smush-placeholder-aspect-ratio)) !important;
+			}
+
+						.lazyload, .lazyloading {
+				opacity: 0;
+			}
+
+			.lazyloaded {
+				opacity: 1;
+				transition: opacity 400ms;
+				transition-delay: 0ms;
+			}
+
+					</style>
+		<meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress."/>
+<link rel="icon" href="https://kyoto.impacthub.net/wp-content/uploads/2017/10/logo-main-1.svg" sizes="32x32" />
+<link rel="icon" href="https://kyoto.impacthub.net/wp-content/uploads/2017/10/logo-main-1.svg" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://kyoto.impacthub.net/wp-content/uploads/2017/10/logo-main-1.svg" />
+<meta name="msapplication-TileImage" content="https://kyoto.impacthub.net/wp-content/uploads/2017/10/logo-main-1.svg" />
+<script>ajax_url = "https://kyoto.impacthub.net/wp-admin/admin-ajax.php"; home_url = "https://kyoto.impacthub.net";</script>
+<style>
+    body .vc_general[class*="vc_btn"], .ih-btn {background:#D95543!important;border-color:#D95543!important;color:#fff!important; display: inline-flex;align-items: center;}
+    body .vc_general[class*="vc_btn"]:hover, .ih-btn:hover {background:#fff!important;color:#D95543!important}
+    .ih-btn svg {stroke:#fff}
+    .ih-btn:hover svg {stroke:#D95543}
+
+    body .btn2 .vc_general[class*="vc_btn"], .ih-btn.btn2 {background:#EDA46C!important;border-color:#EDA46C!important;color:#fff!important}
+    body .btn2 .vc_general[class*="vc_btn"]:hover, .ih-btn.btn2:hover {background:#fff!important;color:#EDA46C!important}
+    .ih-btn.btn2 svg {stroke:#fff}
+    .ih-btn.btn2:hover svg {stroke:#EDA46C}
+
+    body .btn3 .vc_general[class*="vc_btn"], .ih-btn.btn3 {background:#075A61!important;border-color:#075A61!important;color:#fff!important}
+    body .btn3 .vc_general[class*="vc_btn"]:hover, .ih-btn.btn3:hover {background:#fff!important;color:#075A61!important}
+    .ih-btn.btn3 svg {stroke:#fff}
+    .ih-btn.btn3:hover svg {stroke:#075A61}
+
+    body .gray > .vc_general[class*="vc_btn"], .ih-btn.btn4 {background:#404043!important;border-color:#404043!important;color:#ffffff!important}
+    body .gray > .vc_general[class*="vc_btn"]:hover, .ih-btn.btn4:hover {background:#ffffff!important;color:#404043!important}
+    .ih-btn.btn4 svg {stroke:#ffffff}
+    .ih-btn.btn4:hover svg {stroke:#404043}
+
+    .ih-btn.btn5 {background:#ffffff!important;border-color:#ffffff!important;color:#404043!important}
+    .ih-btn.btn5:hover {background:#404043!important;color:#ffffff!important}
+    .ih-btn.btn5 svg {stroke:#404043}
+    .ih-btn.btn5:hover svg {stroke:#ffffff}
+
+    
+    #header .search_a {fill:#fff}
+    #header .search_b {fill:#D95543}
+
+    #search .sbg svg {fill:#EDA46C}
+    #search input {border-color:#EDA46C;color:#fff}
+    #search input::-webkit-input-placeholder {color:#fff}
+    #search input::-moz-placeholder {color:#fff}
+    #search input:-ms-input-placeholder {color:#fff}
+    #search input:-moz-placeholder {color:#fff}
+    #search .sclose svg .close-a {fill:#fff}
+    #search .sclose svg .close-b {stroke:#EDA46C}
+    #search .sclose svg:hover .close-b {stroke:#fff}
+    #search .sclose svg:active .close-a {stroke:#fff}
+    #search .sclose svg:active .close-b {stroke:#fff}
+
+    
+    .area-actions .icon svg {fill:#075A61}
+
+    .area-member .popup .ih-btn.btn4 {background:#075A61!important;border-color:#075A61!important;color:#fff!important}
+    .area-member .popup .ih-btn.btn4:hover {background:#fff!important;color:#075A61!important}
+    .area-member .popup .ih-btn.btn4 svg {stroke:#fff}
+    .area-member .popup .ih-btn.btn4:hover svg {stroke:#075A61}
+    .area-member .popup svg .close-a {fill:#075A61}
+    .area-member .popup svg .close-b {stroke:#fff}
+    .area-member .popup svg:hover .close-a {fill:transparent}
+
+    .social svg:hover path {fill:#075A61 !important;}
+    .area-slider .item:after {background: linear-gradient( to top, #EDA46C, transparent)}
+
+        .area-gallery .addGallery {background:#ffffff!important;border-color:#ffffff!important;color:#404043!important}
+    .area-gallery .addGallery:hover {background:#404043!important;color:#ffffff!important}
+    .area-gallery .addGallery svg {stroke:#404043}
+    .area-gallery .addGallery:hover svg {stroke:#ffffff}
+    
+    .area-forms .vc-mid.bg2 .gform_wrapper .ih-btn {background:#D95543!important;border-color:#D95543!important;color:#fff!important}
+    .area-forms .vc-mid.bg2 .gform_wrapper .ih-btn:hover {background:#fff!important;color:#D95543!important}
+    .area-forms .vc-mid.bg2 .gform_wrapper .ih-btn:hover svg {stroke:#D95543!important}
+    /*.area-forms .vc-mid:first-child .validation_error {border-color:#D95543;color:#D95543}
+    .area-forms .vc-mid:last-child .validation_error {border-color:#EDA46C;color:#EDA46C}*/
+    
+    .popup .gform_wrapper .ih-btn {background:#075A61;border-color:#075A61;color:#fff}
+    .popup .gform_wrapper .ih-btn:hover {background:#fff;color:#075A61}
+
+    .bootstrap-select .dropdown-menu {background:#075A61;color:#fff !important}
+
+    button.dropdown-toggle,
+    button.dropdown-toggle:hover,
+    .gform_wrapper textarea,
+    .gform_wrapper select,
+    .gform_wrapper input {border-bottom-color:#404043 !important;}
+
+    .gform_wrapper textarea:focus,
+    .gform_wrapper select:focus,
+    .gform_wrapper input:focus {border-color:#404043 !important;}
+
+    .gform_wrapper input[type="radio"]:checked:before,
+    .gform_wrapper input[type="checkbox"]:checked:before {border-color:#404043!important;}
+    .gform_wrapper input[type="radio"]:checked:after {background:#404043!important;}
+    .gform_wrapper input[type="checkbox"]:checked:after {color:#404043!important;}
+
+    #page .bg1 {background:#D95543!important;color:#fff}
+    #page .bg2 {background:#EDA46C!important;color:#fff}
+    #page .bg3 {background:#075A61!important;color:#fff}
+    #page .bg4 {background:#404043!important;color:#ffffff}
+    #page .bg5 {background:#ffffff!important;color:#404043}
+    #page .bg6 {background:#f5f5f5!important;color:#404043}
+
+    
+
+    /* Bootstrap */
+    
+    a{color:#D95543}
+
+        .area-member .tBody .item>div{background:#D95543;color:#ffffff;}
+    .area-member .tBody .item .name>div {background:#404043 !important;>}
+    .area-member .fbtn button {background:#EDA46C !important;>;color:#D95543 !important; border-color:#EDA46C !important;}
+    .area-member .mCSB_scrollTools .mCSB_draggerContainer div {background:#EDA46C !important;}
+    .area-member .tBody .mCSB_dragger div {background:#EDA46C !important;}
+        
+
+    .btn-link{color:#D95543}
+    .dropdown-menu>.active>a,.dropdown-menu>.active>a:focus,.dropdown-menu>.active>a:hover{background-color:#D95543}
+    .nav .open>a,.nav .open>a:focus,.nav .open>a:hover{border-color:#D95543}
+    .nav-pills>li.active>a,.nav-pills>li.active>a:focus,.nav-pills>li.active>a:hover{background-color:#D95543}
+    .pagination>li>a,.pagination>li>span{color:#D95543}
+    .pagination>.active>a,.pagination>.active>a:focus,.pagination>.active>a:hover,.pagination>.active>span,.pagination>.active>span:focus,.pagination>.active>span:hover{background-color:#D95543;border-color:#D95543}
+    .list-group-item.active>.badge,.nav-pills>.active>a>.badge{color:#D95543}
+    a.thumbnail.active,a.thumbnail:focus,a.thumbnail:hover{border-color:#D95543}
+    .progress-bar{background-color:#D95543}
+    .list-group-item.active,.list-group-item.active:focus,.list-group-item.active:hover{background-color:#D95543;border-color:#D95543}
+    .pagination>li>a:focus,.pagination>li>a:hover,.pagination>li>span:focus,.pagination>li>span:hover,.btn-link:focus,.btn-link:hover,a:focus,a:hover{color:#782F25}
+
+    .bg-primary {background:#D95543}
+    a.bg-primary:focus,a.bg-primary:hover{background-color:#B44637}
+    .text-primary {color:#D95543}
+    a.text-primary:focus,a.text-primary:hover{color:#B44637}
+    .btn-primary{background-color:#D95543;border-color:#9B3C2F}
+    .btn-primary.focus,.btn-primary:focus{background-color:#9B3C2F;border-color:#782F25}
+    .btn-primary.active,.btn-primary:active,.btn-primary:hover,.open>.dropdown-toggle.btn-primary{background-color:#9B3C2F;border-color:#873529}
+    .btn-primary.active.focus,.btn-primary.active:focus,.btn-primary.active:hover,.btn-primary:active.focus,.btn-primary:active:focus,.btn-primary:active:hover,.open>.dropdown-toggle.btn-primary.focus,.open>.dropdown-toggle.btn-primary:focus,.open>.dropdown-toggle.btn-primary:hover{background-color:#873529;border-color:#782F25}
+    .btn-primary.disabled.focus,.btn-primary.disabled:focus,.btn-primary.disabled:hover,.btn-primary[disabled].focus,.btn-primary[disabled]:focus,.btn-primary[disabled]:hover,fieldset[disabled] .btn-primary.focus,fieldset[disabled] .btn-primary:focus,fieldset[disabled] .btn-primary:hover{background-color:#D95543;border-color:#9B3C2F}
+    .btn-primary .badge{color:#D95543}
+    .label-primary{background-color:#D95543}
+    .label-primary[href]:focus,.label-primary[href]:hover{background-color:#B44637}
+    .panel-primary{border-color:#D95543}
+    .panel-primary>.panel-heading{color:#fff;background-color:#D95543;border-color:#D95543}
+    .panel-primary>.panel-heading+.panel-collapse>.panel-body{border-top-color:#D95543}
+    .panel-primary>.panel-heading .badge{color:#D95543;background-color:#fff}
+    .panel-primary>.panel-footer+.panel-collapse>.panel-body{border-bottom-color:#D95543}
+</style><noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript><link rel='stylesheet' id='vc_animate-css-css' href='https://kyoto.impacthub.net/wp-content/plugins/js_composer/assets/lib/vendor/node_modules/animate.css/animate.min.css?ver=7.7.2' media='all' />
+<link rel='stylesheet' id='gforms_reset_css-css' href='https://kyoto.impacthub.net/wp-content/plugins/gravityforms/legacy/css/formreset.min.css?ver=2.7.3' media='all' />
+<link rel='stylesheet' id='gforms_formsmain_css-css' href='https://kyoto.impacthub.net/wp-content/plugins/gravityforms/legacy/css/formsmain.min.css?ver=2.7.3' media='all' />
+<link rel='stylesheet' id='gforms_ready_class_css-css' href='https://kyoto.impacthub.net/wp-content/plugins/gravityforms/legacy/css/readyclass.min.css?ver=2.7.3' media='all' />
+<link rel='stylesheet' id='gforms_browsers_css-css' href='https://kyoto.impacthub.net/wp-content/plugins/gravityforms/legacy/css/browsers.min.css?ver=2.7.3' media='all' />
+
+</head>
+
+<body class="home wp-singular page-template-default page page-id-13786 wp-theme-impact_hub_theme wp-child-theme-impact_hub_child_theme tribe-no-js wpb-js-composer js-comp-ver-7.7.2 vc_responsive">
+
+    <div id="preloader" class="v-mid" style="background:#f5f5f5">
+        <div class="vc-mid">
+            <img data-src="https://kyoto.impacthub.net/wp-content/uploads/2017/10/logo-main-1.svg" alt="Logo" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMSIgaGVpZ2h0PSIxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg==" class="lazyload">            <div class="wave" style="background:#dddddd"></div>
+        </div>
+    </div>
+
+    <div id="page">
+
+        <div id="header" class=" bg4">
+            <div class="header" >
+                <div class="container">
+
+                    <a href="https://kyoto.impacthub.net">
+			<div class="logo v-mid">
+				<div class="vc-mid img"><img data-src="https://kyoto.impacthub.net/wp-content/uploads/2021/08/WH-Kyoto-Up-and-Running-DG1.svg" alt="Logo" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMSIgaGVpZ2h0PSIxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg==" class="lazyload" data-srcset="https://kyoto.impacthub.net/wp-content/uploads//2021/08/WH-Kyoto-Up-and-Running-DG1.svg 150w, https://kyoto.impacthub.net/wp-content/uploads//2021/08/WH-Kyoto-Up-and-Running-DG1.svg 300w, https://kyoto.impacthub.net/wp-content/uploads//2021/08/WH-Kyoto-Up-and-Running-DG1.svg 1024w, https://kyoto.impacthub.net/wp-content/uploads//2021/08/WH-Kyoto-Up-and-Running-DG1.svg 1536w, https://kyoto.impacthub.net/wp-content/uploads//2021/08/WH-Kyoto-Up-and-Running-DG1.svg 2048w, https://kyoto.impacthub.net/wp-content/uploads//2021/08/WH-Kyoto-Up-and-Running-DG1.svg 182w" data-sizes="auto" data-original-sizes="(max-width: 182px) 100vw, 182px"></div>
+				<div class="vc-mid loc">Kyoto</div>
+			</div>
+			</a>
+                    <div class="pull-right">
+                        <div id="mainNav">
+                            <ul class="main"><li class="has-child "><a href="https://kyoto.impacthub.net/about-us/"  >
+				<span></span>
+			About us<i class="ar"></i></a><ul class="sub-menu"><li><a href="https://kyoto.impacthub.net/about-us/ "  >Vison</a></li><li><a href="https://kyoto.impacthub.net/about-us/inside-impact-hub/ "  >Action</a></li><li><a href="https://kyoto.impacthub.net/about-us/team/ "  >Member</a></li></ul></li><li class="has-child "><a href="https://kyoto.impacthub.net/stories-jp/"  >
+				<span></span>
+			Community<i class="ar"></i></a><ul class="sub-menu"><li><a href="https://kyoto.impacthub.net/about-us/interview/ "  >聞きたい！この人のお話</a></li><li><a href="https://kyoto.impacthub.net/stories-jp/ "  >Blog</a></li><li><a href="https://kyoto.impacthub.net/hub_library/ "  >HUB KYOTO OPEN LIBRARY</a></li><li><a href="https://kyoto.impacthub.net/communityprogram/ "  >コミュニティプログラム一覧</a></li></ul></li><li class="has-child "><a href="https://kyoto.impacthub.net/event/"  >
+				<span></span>
+			Events/Program<i class="ar"></i></a><ul class="sub-menu"><li><a href="https://kyoto.impacthub.net/event/ "  >Events</a></li><li><a href="https://kyoto.impacthub.net/event/%e3%83%aa%e3%82%b9%e3%83%88/?tribe_event_display=past&tribe_paged=1 "  >Event Archives</a></li><li><a href="https://kyoto.impacthub.net/%e3%82%b0%e3%83%ad%e3%83%bc%e3%83%90%e3%83%ab%e3%82%a4%e3%83%99%e3%83%b3%e3%83%88/ "  >Global Event</a></li></ul></li><li class="has-child "><a href="https://kyoto.impacthub.net/membership/"  >
+				<span></span>
+			会員制度／レンタル<i class="ar"></i></a><ul class="sub-menu"><li><a href="https://kyoto.impacthub.net/membership/ "  >会員制度のご案内</a></li><li><a href="https://kyoto.impacthub.net/useourspace/ "  >会所/レンタルスペース</a></li><li><a href="https://kyoto.impacthub.net/book-our-space/images/ "  >会場イメージ写真</a></li><li><a href="https://kyoto.impacthub.net/?page_id=76294 "  >Hubスペース無料お試しキャンペーンについて</a></li><li><a href="https://kyoto.impacthub.net/access/ "  >アクセス</a></li><li><a href="https://kyoto.impacthub.net/inquiry/ "  >問い合わせ / 会場見学</a></li><li><a href="https://kyoto.impacthub.net/privacy-policy/ "  >個人情報保護方針</a></li></ul></li><li class=" "><a href="https://kyoto.impacthub.net/recruit/"  >
+				<span></span>
+			Recruit<i class="ar"></i></a></li></ul>
+                            <div id="lang_area">
+<div class="lang_sel_list_horizontal wpml-ls-statics-shortcode_actions wpml-ls wpml-ls-legacy-list-horizontal" id="lang_sel_list">
+	<ul role="menu"><li class="icl-en wpml-ls-slot-shortcode_actions wpml-ls-item wpml-ls-item-en wpml-ls-first-item wpml-ls-last-item wpml-ls-item-legacy-list-horizontal" role="none">
+				<a href="https://kyoto.impacthub.net/en/" class="wpml-ls-link" role="menuitem"  aria-label="英語に切り替える" title="英語に切り替える" >
+                                                        <img
+            class="wpml-ls-flag iclflag lazyload"
+            data-src="https://b2003181.assetcdn.net/2.0/2003181/wp-content/plugins/sitepress-multilingual-cms/res/flags/en.png?lossy=2&strip=1&webp=1"
+            alt="英語"
+            width=18
+            height=12
+ data-sizes="(max-width: 18px) 100vw, 18px" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMSIgaGVpZ2h0PSIxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg==" style="--smush-placeholder-width: 18px; --smush-placeholder-aspect-ratio: 18/12;" /></a>
+			</li></ul>
+</div>
+</div>                        </div>
+                        <span class="navbg"></span>
+
+                        <img id="toggle" data-src="https://kyoto.impacthub.net/wp-content/themes/impact_hub_theme/img/nav.svg" alt="" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMSIgaGVpZ2h0PSIxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg==" class="lazyload">
+                                            </div>
+                </div>
+            </div>
+                                    
+
+            <div id="search" class="bg1">
+                <div class="sbg"><svg class="search-bg" xmlns="http://www.w3.org/2000/svg" viewBox="308 130 379.518 340"><defs><style>.search-bg{fill:#3a9b89;opacity:0.1;}</style></defs><path d="M1617.615,358l-58.007-58.007c-69.179,61.492-175.254,58.93-241.359-7.174-68.666-68.154-68.666-179.866,0-248.533A175.975,175.975,0,0,1,1351.8,18h52.5a154.175,154.175,0,0,0-71.7,40.635c-60.468,60.468-60.468,159.368,0,219.836s159.368,60.468,219.836,0,60.468-159.368,0-219.836A154.18,154.18,0,0,0,1480.738,18h52.692a174.076,174.076,0,0,1,33.353,26.286c66.617,66.1,68.666,172.179,7.174,241.359l71.741,71.742q.3.3.57.613ZM1520.663,99.118c-18.96-38.945-66.1-54.831-105.049-35.871a10.313,10.313,0,1,1-9.224-18.448,99.518,99.518,0,0,1,132.722,45.095,10.27,10.27,0,0,1-4.612,13.836,7.617,7.617,0,0,1-4.611,1.025A10.8,10.8,0,0,1,1520.663,99.118Z" transform="translate(-958.75 112)"/></svg></div>
+                <form action="https://kyoto.impacthub.net" onsubmit="return !(sr.value.trim() === '')">
+                    <div class="ih-input"><input id="sr" name="s"
+                            placeholder="Search..."></div>
+                    <button class="ih-btn btn2">show results </button>
+                    <div class="sclose"><svg xmlns="http://www.w3.org/2000/svg" viewBox="469.716 339.716 56.569 56.569"><defs><style>.close-a{fill:#fff;}.close-b{fill:none;stroke:#3a9b89;stroke-width:2px;}</style></defs><g transform="translate(2805.289 -2377.696) rotate(45)"><circle class="close-a" cx="20" cy="20" r="20" transform="translate(290 3553)"/><g transform="translate(-5.657 -5.657)"><path class="close-b" d="M0,0H20" transform="translate(305.5 3578.5)"/><path class="close-b" d="M0,0H20" transform="translate(315.5 3568.5) rotate(90)"/></g></g></svg></div>
+                </form>
+            </div>
+                    </div>
+        <div id="headBlank" class="bg6"></div>
+
+        <div id="content" role="main" class="bg6">
+
+    <div class="wpb-content-wrapper"><div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_row-no-padding"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper">
+    <div class="area-slider">
+        <div class="slider-117 owl-carousel"><div class="item lazyload" style="background-image:inherit" data-bg-image="url(https://b2003181.assetcdn.net/2.0/2003181/wp-content/uploads/2018/06/CwqQJOIUsAA3YAj-e1528953433426.jpg?lossy=2&amp;strip=1&amp;webp=1)">
+            <div class="container v-mid"><div class="vc-mid"><div class="title">The Impact Hub Community</div><p style="text-align: left;">私たちが大切にしていること</p>
+<a href="https://kyoto.impacthub.net/about-us/"><button class="ih-btn btn2">About Us</button></a></div></div>
+        </div><div class="item lazyload" style="background-image:inherit" data-bg-image="url(https://b2003181.assetcdn.net/2.0/2003181/wp-content/uploads/2018/05/unnamed-1-1.jpg?lossy=2&amp;strip=1&amp;webp=1)">
+            <div class="container v-mid"><div class="vc-mid"><div class="title">Vibrant community</div><p style="text-align: left;">Impact Hub Kyotoは、個人や組織がより良い世界を生み出すための場所です。</p>
+<a href="https://kyoto.impacthub.net/useourspace/"><button class="ih-btn btn2">Book Our Space</button></a></div></div>
+        </div><div class="item lazyload" style="background-image:inherit" data-bg-image="url(https://b2003181.assetcdn.net/2.0/2003181/wp-content/uploads/2013/10/DSC_0658-e1528953606944.jpg?lossy=2&amp;strip=1&amp;webp=1)">
+            <div class="container v-mid"><div class="vc-mid"><div class="title">Shaping the future together</div><p style="padding-left: 40px;">Impact Hub Kyotoは、個人や組織がより良い世界を生み出すための場所です。</p>
+<a href="https://kyoto.impacthub.net/membership/"><button class="ih-btn btn2">join us</button></a></div></div>
+        </div></div>
+    </div>
+    <script>
+        jQuery(document).ready(function(){
+            jQuery(".slider-117").owlCarousel({
+                autoplay: true,
+                autoplayTimeout: 10000,
+                loop: true,
+                items: 1,
+                mouseDrag: false,
+                pullDrag: false
+            });
+        });
+    </script>
+    <div class="mdls area-numbers bg3">
+		<div class="container">
+			<div class="title">Want to know what impact looks like?<div class="bg4"></div></div><div class="mod-content"><p>Let’s break it down:</p>
+</div>
+	        <div class="slider-177 owl-carousel"><div class="item">
+			<div class="v-mid lazyload" style="background-image:inherit" data-bg-image="url(https://kyoto.impacthub.net/wp-content/uploads/2017/10/continent-2.svg)">
+				<div class="vc-mid">
+					<div class="val">5</div>
+					<div class="key">connected continents</div>
+				</div>			
+			</div>
+        </div><div class="item">
+			<div class="v-mid lazyload" style="background-image:inherit" data-bg-image="url(https://kyoto.impacthub.net/wp-content/uploads/2017/10/members-1.svg)">
+				<div class="vc-mid">
+					<div class="val">16370</div>
+					<div class="key">innovative members</div>
+				</div>			
+			</div>
+        </div><div class="item">
+			<div class="v-mid lazyload" style="background-image:inherit" data-bg-image="url(https://kyoto.impacthub.net/wp-content/uploads/2017/10/locations-1.svg)">
+				<div class="vc-mid">
+					<div class="val">60+</div>
+					<div class="key">inspiring locations</div>
+				</div>			
+			</div>
+        </div><div class="item">
+			<div class="v-mid lazyload" style="background-image:inherit" data-bg-image="url(https://kyoto.impacthub.net/wp-content/uploads/2017/10/makers_c-1.svg)">
+				<div class="vc-mid">
+					<div class="val">1920</div>
+					<div class="key">value-driven makers</div>
+				</div>			
+			</div>
+        </div></div>
+    	</div>
+    </div>
+    <script>
+        jQuery(document).ready(function(){
+            jQuery(".slider-177").owlCarousel({
+            	nav: true,
+            	navText: [ "", "" ],
+                loop: true,
+                mouseDrag: false,
+                pullDrag: false,
+                responsive: {
+			        0:{ items:1 },
+			        800:{ items: 4 }
+			    }
+            });
+        });
+    </script>
+    </div></div></div></div><div class="vc_row-full-width vc_clearfix"></div><div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element" >
+		<div class="wpb_wrapper">
+			<h3><strong>コミュニティに参加し、あなたのスキルを発揮する</strong></h3>
+
+		</div>
+	</div>
+
+<div class="vc_grid-container-wrapper vc_clearfix vc_grid-animation-fadeInLeft">
+	<div class="vc_grid-container vc_clearfix wpb_content_element vc_basic_grid" data-initial-loading-animation="fadeInLeft" data-vc-grid-settings="{&quot;page_id&quot;:13786,&quot;style&quot;:&quot;all&quot;,&quot;action&quot;:&quot;vc_get_vc_grid_data&quot;,&quot;shortcode_id&quot;:&quot;1763383012957-51896ac5-aa30-1&quot;,&quot;tag&quot;:&quot;vc_basic_grid&quot;}" data-vc-request="https://kyoto.impacthub.net/wp-admin/admin-ajax.php?lang=ja" data-vc-post-id="13786" data-vc-public-nonce="e7994eba73">
+		<style data-type="vc_shortcodes-custom-css">.vc_custom_1419328927507{background-color: #f4f4f4 !important;}</style><div class="vc_grid vc_row vc_grid-gutter-20px vc_pageable-wrapper vc_hook_hover" data-vc-pageable-content="true"><div class="vc_pageable-slide-wrapper vc_clearfix" data-vc-grid-content="true"><div class="vc_grid-item vc_clearfix vc_col-sm-12"><div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block  vc_gitem-animate vc_gitem-animate-slideInRight"  data-vc-animation="slideInRight"><div class="vc_gitem-zone vc_gitem-zone-a lazyload" style="background-image:inherit;" data-bg-image="url(&#039;https://b2003181.assetcdn.net/2.0/2003181/wp-content/uploads/2021/08/31-membership_new_banner2-1024x359.jpg?lossy=2&amp;strip=1&amp;webp=1&#039;) !important"><img decoding="async" class="vc_gitem-zone-img lazyload" data-src="https://b2003181.assetcdn.net/2.0/2003181/wp-content/uploads/2021/08/31-membership_new_banner2-1024x359.jpg?lossy=2&strip=1&webp=1" alt="31-membership_new_banner2" data-srcset="https://b2003181.assetcdn.net/2.0/2003181/wp-content/uploads/2021/08/31-membership_new_banner2-1024x359.jpg?lossy=2&amp;strip=1&amp;webp=1 1024w, https://b2003181.assetcdn.net/2.0/2003181/wp-content/uploads/2021/08/31-membership_new_banner2.jpg?lossy=2&amp;strip=1&amp;webp=1 1140w, https://b2003181.assetcdn.net/2.0/2003181/wp-content/uploads/2021/08/31-membership_new_banner2.jpg?size=512x180&amp;lossy=2&amp;strip=1&amp;webp=1 512w" data-sizes="auto" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMSIgaGVpZ2h0PSIxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg==" style="--smush-placeholder-width: 1024px; --smush-placeholder-aspect-ratio: 1024/359;" data-original-sizes="(max-width: 1024px) 100vw, 1024px"><div class="vc_gitem-zone-mini"></div></div><div class="vc_gitem-zone vc_gitem-zone-b vc_custom_1419328927507 vc-gitem-zone-height-mode-auto vc_gitem-is-link"><a href="https://kyoto.impacthub.net/membership/" title="会員制度のご案内" class="vc_gitem-link vc-zone-link" ></a><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title" ><h4 style="text-align: left" >会員制度のご案内</h4></div><div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_50 vc_sep_border_width_2 vc_sep_pos_align_left vc_separator_no_text vc_sep_color_black wpb_content_element  wpb_content_element" ><span class="vc_sep_holder vc_sep_holder_l"><span class="vc_sep_line"></span></span><span class="vc_sep_holder vc_sep_holder_r"><span class="vc_sep_line"></span></span>
+</div><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_excerpt" ><p style="text-align: left" ><p>ご利用に合わせて選べる会員制度 &nbsp; Impact  [&hellip;]</p>
+</p></div></div></div></div></div></div></div><div class="vc_clearfix"></div></div></div></div>
+	</div>
+</div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-6"><div class="vc_column-inner"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element" >
+		<div class="wpb_wrapper">
+			<h3>HUBのスペースでイベントする</h3>
+
+		</div>
+	</div>
+
+<div class="vc_grid-container-wrapper vc_clearfix vc_grid-animation-fadeInRight">
+	<div class="vc_grid-container vc_clearfix wpb_content_element vc_basic_grid" data-initial-loading-animation="fadeInRight" data-vc-grid-settings="{&quot;page_id&quot;:13786,&quot;style&quot;:&quot;all&quot;,&quot;action&quot;:&quot;vc_get_vc_grid_data&quot;,&quot;shortcode_id&quot;:&quot;1763383012957-1f6b21b9-859c-7&quot;,&quot;tag&quot;:&quot;vc_basic_grid&quot;}" data-vc-request="https://kyoto.impacthub.net/wp-admin/admin-ajax.php?lang=ja" data-vc-post-id="13786" data-vc-public-nonce="e7994eba73">
+		<style data-type="vc_shortcodes-custom-css">.vc_custom_1419328927507{background-color: #f4f4f4 !important;}</style><div class="vc_grid vc_row vc_grid-gutter-20px vc_pageable-wrapper vc_hook_hover" data-vc-pageable-content="true"><div class="vc_pageable-slide-wrapper vc_clearfix" data-vc-grid-content="true"><div class="vc_grid-item vc_clearfix vc_col-sm-12"><div class="vc_grid-item-mini vc_clearfix "><div class="vc_gitem-animated-block  vc_gitem-animate vc_gitem-animate-slideInRight"  data-vc-animation="slideInRight"><div class="vc_gitem-zone vc_gitem-zone-a lazyload" style="background-image:inherit;" data-bg-image="url(&#039;https://b2003181.assetcdn.net/2.0/2003181/wp-content/uploads/2018/06/CwqQJOIUsAA3YAj-e1528953433426-1024x340.jpg?lossy=2&amp;strip=1&amp;webp=1&#039;) !important"><img decoding="async" class="vc_gitem-zone-img lazyload" data-src="https://b2003181.assetcdn.net/2.0/2003181/wp-content/uploads/2018/06/CwqQJOIUsAA3YAj-e1528953433426-1024x340.jpg?lossy=2&strip=1&webp=1" alt="会所／レンタルスペース" data-srcset="https://b2003181.assetcdn.net/2.0/2003181/wp-content/uploads/2018/06/CwqQJOIUsAA3YAj-e1528953433426-1024x340.jpg?lossy=2&amp;strip=1&amp;webp=1 1024w, https://b2003181.assetcdn.net/2.0/2003181/wp-content/uploads/2018/06/CwqQJOIUsAA3YAj-e1528953433426-300x100.jpg?lossy=2&amp;strip=1&amp;webp=1 300w, https://b2003181.assetcdn.net/2.0/2003181/wp-content/uploads/2018/06/CwqQJOIUsAA3YAj-e1528953433426-768x255.jpg?lossy=2&amp;strip=1&amp;webp=1 768w, https://b2003181.assetcdn.net/2.0/2003181/wp-content/uploads/2018/06/CwqQJOIUsAA3YAj-e1528953433426.jpg?lossy=2&amp;strip=1&amp;webp=1 1200w, https://b2003181.assetcdn.net/2.0/2003181/wp-content/uploads/2018/06/CwqQJOIUsAA3YAj-e1528953433426.jpg?size=512x170&amp;lossy=2&amp;strip=1&amp;webp=1 512w" data-sizes="auto" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMSIgaGVpZ2h0PSIxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg==" style="--smush-placeholder-width: 1024px; --smush-placeholder-aspect-ratio: 1024/340;" data-original-sizes="(max-width: 1024px) 100vw, 1024px"><div class="vc_gitem-zone-mini"></div></div><div class="vc_gitem-zone vc_gitem-zone-b vc_custom_1419328927507 vc-gitem-zone-height-mode-auto vc_gitem-is-link"><a href="https://kyoto.impacthub.net/useourspace/" title="会所／レンタルスペース" class="vc_gitem-link vc-zone-link" ></a><div class="vc_gitem-zone-mini"><div class="vc_gitem_row vc_row vc_gitem-row-position-top"><div class="vc_col-sm-12 vc_gitem-col vc_gitem-col-align-"><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_title" ><h4 style="text-align: left" >会所／レンタルスペース</h4></div><div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_50 vc_sep_border_width_2 vc_sep_pos_align_left vc_separator_no_text vc_sep_color_black wpb_content_element  wpb_content_element" ><span class="vc_sep_holder vc_sep_holder_l"><span class="vc_sep_line"></span></span><span class="vc_sep_holder vc_sep_holder_r"><span class="vc_sep_line"></span></span>
+</div><div class="vc_custom_heading vc_gitem-post-data vc_gitem-post-data-source-post_excerpt" ><p style="text-align: left" >会所のご利用について 会所のご案内 ご利用料金について 会所 [...]</p></div></div></div></div></div></div></div><div class="vc_clearfix"></div></div></div></div>
+	</div>
+</div></div></div></div></div><div class="vc_row-full-width vc_clearfix"></div><div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_row-no-padding"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner"><div class="wpb_wrapper"><div class="mdls area-forms bg3 v-mid db">
+		<div class="vc-mid"></div>
+		<div class="vc-mid bg2"><div class="af-sn af-row"><div><div class="showForm"><div class="title">お問合せはこちらから<div class="bg1"></div></div><p></p></div><script type="text/javascript"></script>
+                <div class='gf_browser_unknown gform_wrapper gform_legacy_markup_wrapper gform-theme--no-framework' data-form-theme='legacy' data-form-index='0' id='gform_wrapper_11' style='display:none'><div id='gf_11' class='gform_anchor' tabindex='-1'></div><form method='post' enctype='multipart/form-data' target='gform_ajax_frame_11' id='gform_11'  action='/#gf_11' data-formid='11' novalidate>
+                        <div class='gform-body gform_body'><ul id='gform_fields_11' class='gform_fields top_label form_sublabel_below description_above'><li id="field_11_25"  class="gfield gfield--type-section gsection field_sublabel_below gfield--no-description field_description_above gfield_visibility_visible"  data-js-reload="field_11_25"><h2 class="gsection_title">■ 問い合わせ概要（必須）</h2></li><li id="field_11_1"  class="gfield gfield--type-select gfield_contains_required field_sublabel_below gfield--no-description field_description_above hidden_label gfield_visibility_visible"  data-js-reload="field_11_1"><label class='gfield_label gform-field-label' for='input_11_1' >問い合わせ概要<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_select'><select name='input_1' id='input_11_1' class='medium gfield_select'    aria-required="true" aria-invalid="false" ><option value='コワーキングスペースについて' >コワーキングスペースについて</option><option value='レンタルスペースについて' >レンタルスペースについて</option><option value='イベントについて' >イベントについて</option><option value='会員制度について' >会員制度について</option><option value='Impact Hub について' >Impact Hub について</option><option value='起業家支援について' >起業家支援について</option><option value='その他について' >その他について</option></select></div></li><li id="field_11_23"  class="gfield gfield--type-text field_sublabel_below gfield--has-description field_description_above gfield_visibility_visible"  data-js-reload="field_11_23"><label class='gfield_label gform-field-label' for='input_11_23' >イベント名</label><div class='gfield_description' id='gfield_description_11_23'>※お問い合わせのイベント名をご記入下さい。</div><div class='ginput_container ginput_container_text'><input name='input_23' id='input_11_23' type='text' value='' class='medium'  aria-describedby="gfield_description_11_23"    aria-invalid="false"   /> </div></li><li id="field_11_26"  class="gfield gfield--type-section gsection field_sublabel_below gfield--no-description field_description_above gfield_visibility_visible"  data-js-reload="field_11_26"><h2 class="gsection_title">■ お名前　Name　（必須）</h2></li><li id="field_11_34"  class="gfield gfield--type-name field_sublabel_below gfield--no-description field_description_above gfield_visibility_visible"  data-js-reload="field_11_34"><label class='gfield_label gform-field-label gfield_label_before_complex'  >名前</label><div class='ginput_complex ginput_container ginput_container--name no_prefix has_first_name no_middle_name has_last_name no_suffix gf_name_has_2 ginput_container_name gform-grid-row' id='input_11_34'>
+                            
+                            <span id='input_11_34_3_container' class='name_first gform-grid-col gform-grid-col--size-auto' >
+                                                    <input type='text' name='input_34.3' id='input_11_34_3' value=''   aria-required='false'     />
+                                                    <label for='input_11_34_3' class='gform-field-label gform-field-label--type-sub '>名</label>
+                                                </span>
+                            
+                            <span id='input_11_34_6_container' class='name_last gform-grid-col gform-grid-col--size-auto' >
+                                                    <input type='text' name='input_34.6' id='input_11_34_6' value=''   aria-required='false'     />
+                                                    <label for='input_11_34_6' class='gform-field-label gform-field-label--type-sub '>姓</label>
+                                                </span>
+                            
+                        </div></li><li id="field_11_2"  class="gfield gfield--type-text gfield_contains_required field_sublabel_below gfield--no-description field_description_above hidden_label gfield_visibility_hidden"  data-js-reload="field_11_2"><div class='admin-hidden-markup'><i class='gform-icon gform-icon--hidden'></i><span>Hidden</span></div><label class='gfield_label gform-field-label' for='input_11_2' >お名前　Name<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_text'><input name='input_2' id='input_11_2' type='text' value='' class='medium'     aria-required="true" aria-invalid="false"   /> </div></li><li id="field_11_27"  class="gfield gfield--type-section gsection field_sublabel_below gfield--no-description field_description_above gfield_visibility_visible"  data-js-reload="field_11_27"><h2 class="gsection_title">■ 団体名　Organization</h2></li><li id="field_11_6"  class="gfield gfield--type-text field_sublabel_below gfield--no-description field_description_above hidden_label gfield_visibility_visible"  data-js-reload="field_11_6"><label class='gfield_label gform-field-label' for='input_11_6' >団体名　Organization</label><div class='ginput_container ginput_container_text'><input name='input_6' id='input_11_6' type='text' value='' class='medium'      aria-invalid="false"   /> </div></li><li id="field_11_28"  class="gfield gfield--type-section gsection field_sublabel_below gfield--no-description field_description_above gfield_visibility_visible"  data-js-reload="field_11_28"><h2 class="gsection_title">■ お電話番号　Phone Number</h2></li><li id="field_11_3"  class="gfield gfield--type-phone field_sublabel_below gfield--no-description field_description_above hidden_label gfield_visibility_visible"  data-js-reload="field_11_3"><label class='gfield_label gform-field-label' for='input_11_3' >お電話番号　Phone Number</label><div class='ginput_container ginput_container_phone'><input name='input_3' id='input_11_3' type='tel' value='' class='medium'  placeholder='お電話番号　Phone Number'  aria-invalid="false"   /></div></li><li id="field_11_33"  class="gfield gfield--type-section gsection field_sublabel_below gfield--no-description field_description_above gfield_visibility_visible"  data-js-reload="field_11_33"><h2 class="gsection_title">■ メールアドレス　Email　（必須）</h2></li><li id="field_11_4"  class="gfield gfield--type-email gfield_contains_required field_sublabel_below gfield--no-description field_description_above hidden_label gfield_visibility_visible"  data-js-reload="field_11_4"><label class='gfield_label gform-field-label' for='input_11_4' >メールアドレス　Email<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_email'>
+                            <input name='input_4' id='input_11_4' type='email' value='' class='medium'    aria-required="true" aria-invalid="false"  />
+                        </div></li><li id="field_11_29"  class="gfield gfield--type-section gsection field_sublabel_below gfield--no-description field_description_above gfield_visibility_visible"  data-js-reload="field_11_29"><h2 class="gsection_title">ニュースレター購読　Subscribe Newsletter</h2></li><li id="field_11_5"  class="gfield gfield--type-checkbox gfield--type-choice field_sublabel_below gfield--no-description field_description_above hidden_label gfield_visibility_visible"  data-js-reload="field_11_5"><label class='gfield_label gform-field-label gfield_label_before_complex'  >ニュースレター購読　Subscribe Newsletter</label><div class='ginput_container ginput_container_checkbox'><ul class='gfield_checkbox' id='input_11_5'><li class='gchoice gchoice_11_5_1'>
+								<input class='gfield-choice-input' name='input_5.1' type='checkbox'  value='ニュースレターを購読します' checked='checked' id='choice_11_5_1'   />
+								<label for='choice_11_5_1' id='label_11_5_1' class='gform-field-label gform-field-label--type-inline'>ニュースレターを購読します</label>
+							</li></ul></div></li><li id="field_11_30"  class="gfield gfield--type-section gsection field_sublabel_below gfield--no-description field_description_above gfield_visibility_visible"  data-js-reload="field_11_30"><h2 class="gsection_title">■ 問い合わせ内容　Message　（必須）</h2></li><li id="field_11_7"  class="gfield gfield--type-textarea gfield_contains_required field_sublabel_below gfield--no-description field_description_above hidden_label gfield_visibility_visible"  data-js-reload="field_11_7"><label class='gfield_label gform-field-label' for='input_11_7' >お問い合わせ内容　Message<span class="gfield_required"><span class="gfield_required gfield_required_asterisk">*</span></span></label><div class='ginput_container ginput_container_textarea'><textarea name='input_7' id='input_11_7' class='textarea medium'     aria-required="true" aria-invalid="false"   rows='10' cols='50'></textarea></div></li><li id="field_11_31"  class="gfield gfield--type-hidden gform_hidden field_sublabel_below gfield--no-description field_description_above gfield_visibility_visible"  data-js-reload="field_11_31"><div class='ginput_container ginput_container_text'><input name='input_31' id='input_11_31' type='hidden' class='gform_hidden'  aria-invalid="false" value='' /></div></li></ul></div>
+        <div class='gform_footer top_label'> <button class="ih-btn btn4" id="gform_submit_button_11">send</button> <input type='hidden' name='gform_ajax' value='form_id=11&amp;title=&amp;description=&amp;tabindex=0' />
+            <input type='hidden' class='gform_hidden' name='is_submit_11' value='1' />
+            <input type='hidden' class='gform_hidden' name='gform_submit' value='11' />
+            
+            <input type='hidden' class='gform_hidden' name='gform_unique_id' value='' />
+            <input type='hidden' class='gform_hidden' name='state_11' value='WyJbXSIsIjM3MDFhYjI5NWIxYzYxNGRiMWE3NzA2NDJlYjkxZDE0Il0=' />
+            <input type='hidden' class='gform_hidden' name='gform_target_page_number_11' id='gform_target_page_number_11' value='0' />
+            <input type='hidden' class='gform_hidden' name='gform_source_page_number_11' id='gform_source_page_number_11' value='1' />
+            <input type='hidden' name='gform_field_values' value='' />
+            
+        </div>
+                        </form>
+                        </div>
+		                <iframe style='display:none;width:0px;height:0px;' src='about:blank' name='gform_ajax_frame_11' id='gform_ajax_frame_11' title='この iframe には Gravity Forms での Ajax 処理に必要なロジックが含まれます。'></iframe>
+		                <script>
+gform.initializeOnLoaded( function() {gformInitSpinner( 11, 'https://kyoto.impacthub.net/wp-content/plugins/gravityforms/images/spinner.svg', true );jQuery('#gform_ajax_frame_11').on('load',function(){var contents = jQuery(this).contents().find('*').html();var is_postback = contents.indexOf('GF_AJAX_POSTBACK') >= 0;if(!is_postback){return;}var form_content = jQuery(this).contents().find('#gform_wrapper_11');var is_confirmation = jQuery(this).contents().find('#gform_confirmation_wrapper_11').length > 0;var is_redirect = contents.indexOf('gformRedirect(){') >= 0;var is_form = form_content.length > 0 && ! is_redirect && ! is_confirmation;var mt = parseInt(jQuery('html').css('margin-top'), 10) + parseInt(jQuery('body').css('margin-top'), 10) + 100;if(is_form){jQuery('#gform_wrapper_11').html(form_content.html());if(form_content.hasClass('gform_validation_error')){jQuery('#gform_wrapper_11').addClass('gform_validation_error');} else {jQuery('#gform_wrapper_11').removeClass('gform_validation_error');}setTimeout( function() { /* delay the scroll by 50 milliseconds to fix a bug in chrome */ jQuery(document).scrollTop(jQuery('#gform_wrapper_11').offset().top - mt); }, 50 );if(window['gformInitDatepicker']) {gformInitDatepicker();}if(window['gformInitPriceFields']) {gformInitPriceFields();}var current_page = jQuery('#gform_source_page_number_11').val();gformInitSpinner( 11, 'https://kyoto.impacthub.net/wp-content/plugins/gravityforms/images/spinner.svg', true );jQuery(document).trigger('gform_page_loaded', [11, current_page]);window['gf_submitting_11'] = false;}else if(!is_redirect){var confirmation_content = jQuery(this).contents().find('.GF_AJAX_POSTBACK').html();if(!confirmation_content){confirmation_content = contents;}setTimeout(function(){jQuery('#gform_wrapper_11').replaceWith(confirmation_content);jQuery(document).scrollTop(jQuery('#gf_11').offset().top - mt);jQuery(document).trigger('gform_confirmation_loaded', [11]);window['gf_submitting_11'] = false;wp.a11y.speak(jQuery('#gform_confirmation_message_11').text());}, 50);}else{jQuery('#gform_11').append(contents);if(window['gformRedirect']) {gformRedirect();}}jQuery(document).trigger('gform_post_render', [11, current_page]);} );} );
+</script>
+</div></div></div>
+    </div>
+    <style>
+    .area-forms .vc-mid:first-child .validation_error {border-color:#fff;color:#fff}
+    .area-forms .vc-mid:last-child .validation_error {border-color:#fff;color:#fff}
+	</style></div></div></div></div><div class="vc_row-full-width vc_clearfix"></div>
+</div>
+
+
+</div>
+
+<div id="footer" class="bg4 num-3">
+    <div class="container">
+        <div class="row">
+			<div class="col-sm-4"><a href="https://kyoto.impacthub.net">
+			<div class="logo v-mid">
+				<div class="vc-mid img"><img data-src="https://kyoto.impacthub.net/wp-content/uploads/2021/08/WH-Kyoto-Up-and-Running-DG1.svg" alt="Logo" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMSIgaGVpZ2h0PSIxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg==" class="lazyload" data-srcset="https://kyoto.impacthub.net/wp-content/uploads//2021/08/WH-Kyoto-Up-and-Running-DG1.svg 150w, https://kyoto.impacthub.net/wp-content/uploads//2021/08/WH-Kyoto-Up-and-Running-DG1.svg 300w, https://kyoto.impacthub.net/wp-content/uploads//2021/08/WH-Kyoto-Up-and-Running-DG1.svg 1024w, https://kyoto.impacthub.net/wp-content/uploads//2021/08/WH-Kyoto-Up-and-Running-DG1.svg 1536w, https://kyoto.impacthub.net/wp-content/uploads//2021/08/WH-Kyoto-Up-and-Running-DG1.svg 2048w, https://kyoto.impacthub.net/wp-content/uploads//2021/08/WH-Kyoto-Up-and-Running-DG1.svg 182w" data-sizes="auto" data-original-sizes="(max-width: 182px) 100vw, 182px"></div>
+				<div class="vc-mid loc">Kyoto</div>
+			</div>
+			</a><li id="block-4" class="widget widget_block widget_media_image">
+<div class="wp-block-image"><figure class="alignleft size-large is-resized"><a href="https://kyoto.impacthub.net/inquiry/"><img decoding="async" data-src="https://kyoto.impacthub.net/wp-content/uploads/2021/09/QA-1.svg" alt="Q&amp;A" class="wp-image-65879 lazyload" width="200" height="200" data-srcset="https://kyoto.impacthub.net/wp-content/uploads//2021/09/QA-1.svg 150w, https://kyoto.impacthub.net/wp-content/uploads//2021/09/QA-1.svg 300w, https://kyoto.impacthub.net/wp-content/uploads//2021/09/QA-1.svg 1024w, https://kyoto.impacthub.net/wp-content/uploads//2021/09/QA-1.svg 1536w, https://kyoto.impacthub.net/wp-content/uploads//2021/09/QA-1.svg 2048w, https://kyoto.impacthub.net/wp-content/uploads//2021/09/QA-1.svg 100w" data-sizes="auto" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMSIgaGVpZ2h0PSIxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg==" style="--smush-placeholder-width: 200px; --smush-placeholder-aspect-ratio: 200/200;" data-original-sizes="(max-width: 200px) 100vw, 200px" /></a><figcaption><strong>お問い合わせは<a href="https://kyoto.impacthub.net/inquiry/">こちら</a></strong></figcaption></figure></div>
+</li>
+</div><div class="col-sm-4"><li id="text-9" class="widget widget_text">			<div class="textwidget"><p>一般社団法人 Impact Hub Kyoto<br />
+〒602-8061<br />
+京都市上京区油小路中立売西入ル甲斐守町97番地<br />
+西陣産業創造會舘（旧西陣電話局）2階・3階</p>
+<p>TEL: 075-417-0115<br />
+E-mail: info(at)impacthubkyoto.net<br />
+※(at)部分を@にご変更ください。</p>
+<p>オープン時間<br />
+月～金　午前10時～午後8時<br />
+＊午後8時以降および土日祝はイベント時のみオープン</p>
+</div>
+		</li>
+</div><div class="col-sm-4"><div class="social"><a href="https://www.facebook.com/HubKyoto" target="_blank"><?xml version="1.0" encoding="UTF-8"?> <svg xmlns="http://www.w3.org/2000/svg" viewBox="3743 9450 40 40"><path d="M20,0A20,20,0,1,0,40,20,20,20,0,0,0,20,0Zm5.173,20H21.891V32h-4.5V20h-3V15.863h3l-.008-2.434C17.385,10.058,18.3,8,22.27,8h3.306v4.137H23.5c-1.546,0-1.62.576-1.62,1.653l-.008,2.072h3.717Z" transform="translate(3743 9450)"></path></svg> </a><a href="https://www.instagram.com/impacthubkyoto/?hl=ja" target="_blank"><?xml version="1.0" encoding="UTF-8"?> <svg xmlns="http://www.w3.org/2000/svg" viewBox="3923 9450 40 40"><path d="M20,0A20,20,0,1,0,40,20,19.992,19.992,0,0,0,20,0ZM14.724,29.84H9.947V15.472h4.777ZM12.335,13.512h0a2.5,2.5,0,1,1,.036-4.991,2.485,2.485,0,0,1,2.674,2.5A2.516,2.516,0,0,1,12.335,13.512ZM31.943,29.84H27.166V22.175c0-1.925-.677-3.244-2.424-3.244a2.643,2.643,0,0,0-2.46,1.747,3.051,3.051,0,0,0-.143,1.176v8.021H17.362s.071-13.012,0-14.367h4.777V17.54a4.812,4.812,0,0,1,4.314-2.389c3.137,0,5.49,2.068,5.49,6.453Z" transform="translate(3923 9450)"></path></svg> </a><a href="https://twitter.com/ImpactHub_Kyoto" target="_blank"><?xml version="1.0" encoding="UTF-8"?> <svg xmlns="http://www.w3.org/2000/svg" viewBox="3863 9450 40 40"><path d="M20,0A20,20,0,1,0,40,20,20,20,0,0,0,20,0Zm9.951,15.51.016.641A14.007,14.007,0,0,1,8.4,27.952a11.144,11.144,0,0,0,1.176.074A9.909,9.909,0,0,0,15.7,25.921,4.926,4.926,0,0,1,11.1,22.5a4.945,4.945,0,0,0,.929.082,4.812,4.812,0,0,0,1.3-.173,4.924,4.924,0,0,1-3.947-4.827v-.066a4.884,4.884,0,0,0,2.229.617,4.929,4.929,0,0,1-1.521-6.571,13.993,13.993,0,0,0,10.148,5.148,5.072,5.072,0,0,1-.132-1.118,4.928,4.928,0,0,1,8.52-3.372,10.05,10.05,0,0,0,3.125-1.192,4.955,4.955,0,0,1-2.163,2.722,9.867,9.867,0,0,0,2.829-.773A10.17,10.17,0,0,1,29.951,15.51Z" transform="translate(3863 9450)"></path></svg> </a></div><li id="block-3" class="widget widget_block widget_media_image">
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><a href="https://kyoto.impacthub.net/newsletter/"><img decoding="async" data-src="https://kyoto.impacthub.net/wp-content/uploads/2021/09/newsletter.svg" alt="" class="wp-image-65605 lazyload" width="150" height="150" data-srcset="https://kyoto.impacthub.net/wp-content/uploads//2021/09/newsletter.svg 150w, https://kyoto.impacthub.net/wp-content/uploads//2021/09/newsletter.svg 300w, https://kyoto.impacthub.net/wp-content/uploads//2021/09/newsletter.svg 1024w, https://kyoto.impacthub.net/wp-content/uploads//2021/09/newsletter.svg 1536w, https://kyoto.impacthub.net/wp-content/uploads//2021/09/newsletter.svg 2048w, https://kyoto.impacthub.net/wp-content/uploads//2021/09/newsletter.svg 50w" data-sizes="auto" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMSIgaGVpZ2h0PSIxIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjwvc3ZnPg==" style="--smush-placeholder-width: 150px; --smush-placeholder-aspect-ratio: 150/150;" data-original-sizes="(max-width: 150px) 100vw, 150px" /></a><figcaption><strong>Hubを知る</strong></figcaption></figure></div>
+</li>
+</div>        </div>
+    </div>
+</div>
+
+</div>
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/impact_hub_child_theme/*","/wp-content/themes/impact_hub_theme/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+		<script>
+		( function ( body ) {
+			'use strict';
+			body.className = body.className.replace( /\btribe-no-js\b/, 'tribe-js' );
+		} )( document.body );
+		</script>
+		<script> /* <![CDATA[ */var tribe_l10n_datatables = {"aria":{"sort_ascending":": activate to sort column ascending","sort_descending":": activate to sort column descending"},"length_menu":"Show _MENU_ entries","empty_table":"No data available in table","info":"Showing _START_ to _END_ of _TOTAL_ entries","info_empty":"Showing 0 to 0 of 0 entries","info_filtered":"(filtered from _MAX_ total entries)","zero_records":"No matching records found","search":"Search:","all_selected_text":"All items on this page were selected. ","select_all_link":"Select all pages","clear_selection":"Clear Selection.","pagination":{"all":"All","next":"Next","previous":"Previous"},"select":{"rows":{"0":"","_":": Selected %d rows","1":": Selected 1 row"}},"datepicker":{"dayNames":["\u65e5\u66dc\u65e5","\u6708\u66dc\u65e5","\u706b\u66dc\u65e5","\u6c34\u66dc\u65e5","\u6728\u66dc\u65e5","\u91d1\u66dc\u65e5","\u571f\u66dc\u65e5"],"dayNamesShort":["\u65e5","\u6708","\u706b","\u6c34","\u6728","\u91d1","\u571f"],"dayNamesMin":["\u65e5","\u6708","\u706b","\u6c34","\u6728","\u91d1","\u571f"],"monthNames":["1\u6708","2\u6708","3\u6708","4\u6708","5\u6708","6\u6708","7\u6708","8\u6708","9\u6708","10\u6708","11\u6708","12\u6708"],"monthNamesShort":["1\u6708","2\u6708","3\u6708","4\u6708","5\u6708","6\u6708","7\u6708","8\u6708","9\u6708","10\u6708","11\u6708","12\u6708"],"monthNamesMin":["1\u6708","2\u6708","3\u6708","4\u6708","5\u6708","6\u6708","7\u6708","8\u6708","9\u6708","10\u6708","11\u6708","12\u6708"],"nextText":"Next","prevText":"Prev","currentText":"Today","closeText":"Done","today":"Today","clear":"Clear"}};/* ]]> */ </script><script id="tec-user-agent-js" src="https://kyoto.impacthub.net/wp-content/plugins/the-events-calendar/common/build/js/user-agent.js?ver=da75d0bdea6dde3898df"></script>
+<script id="bootstrap-js" src="https://kyoto.impacthub.net/wp-content/themes/impact_hub_theme/js/bootstrap.min.js?ver=1"></script>
+<script id="owl-js" src="https://kyoto.impacthub.net/wp-content/themes/impact_hub_theme/js/owl.js?ver=1"></script>
+<script id="select-js" src="https://kyoto.impacthub.net/wp-content/themes/impact_hub_theme/js/select.js?ver=1"></script>
+<script id="scroll-js" src="https://kyoto.impacthub.net/wp-content/themes/impact_hub_theme/js/scroll.js?ver=1"></script>
+<script id="gallery-grid-js" src="https://kyoto.impacthub.net/wp-content/themes/impact_hub_theme/js/gallery-grid.js?ver=1"></script>
+<script id="ajax-area-js" src="https://kyoto.impacthub.net/wp-content/themes/impact_hub_theme/js/ajax.js?v=1.11&#038;ver=1"></script>
+<script id="wds-scripts-js" src="https://kyoto.impacthub.net/wp-content/themes/impact_hub_theme/js/scripts.js?ver=2.02"></script>
+<script id="smush-lazy-load-js-before">
+var smushLazyLoadOptions = {"autoResizingEnabled":true,"autoResizeOptions":{"precision":5,"skipAutoWidth":true,"cdnBaseURL":"https:\/\/b2003181.assetcdn.net\/2.0\/2003181\/"}};
+//# sourceURL=smush-lazy-load-js-before
+</script>
+<script id="smush-lazy-load-js" src="https://kyoto.impacthub.net/wp-content/plugins/wp-smush-pro/app/assets/js/smush-lazy-load.min.js?ver=4.4.0"></script>
+<script id="wpb_composer_front_js-js" src="https://kyoto.impacthub.net/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=7.7.2"></script>
+<script id="vc_grid-js-imagesloaded-js" src="https://kyoto.impacthub.net/wp-content/plugins/js_composer/assets/lib/vendor/node_modules/imagesloaded/imagesloaded.pkgd.min.js?ver=7.7.2"></script>
+<script src='https://kyoto.impacthub.net/wp-content/plugins/the-events-calendar/common/build/js/underscore-before.js'></script>
+<script id="underscore-js" src="https://kyoto.impacthub.net/wp-includes/js/underscore.min.js?ver=1.13.8"></script>
+<script src='https://kyoto.impacthub.net/wp-content/plugins/the-events-calendar/common/build/js/underscore-after.js'></script>
+<script id="vc_waypoints-js" src="https://kyoto.impacthub.net/wp-content/plugins/js_composer/assets/lib/vc/vc_waypoints/vc-waypoints.min.js?ver=7.7.2"></script>
+<script id="vc_grid-js" src="https://kyoto.impacthub.net/wp-content/plugins/js_composer/assets/js/dist/vc_grid.min.js?ver=7.7.2"></script>
+<script id="wp-dom-ready-js" src="https://kyoto.impacthub.net/wp-includes/js/dist/dom-ready.min.js?ver=3fe927cab37bf38d6a23"></script>
+<script id="wp-hooks-js" src="https://kyoto.impacthub.net/wp-includes/js/dist/hooks.min.js?ver=f0f188028580e8dc1255"></script>
+<script id="wp-i18n-js" src="https://kyoto.impacthub.net/wp-includes/js/dist/i18n.min.js?ver=1dfe7db3940c23ea9216"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+//# sourceURL=wp-i18n-js-after
+</script>
+<script id="wp-a11y-js-translations">
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", {"translation-revision-date":"2026-11-20 13:27:21+0000","generator":"GlotPress\/4.1.0","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=1; plural=0;","lang":"ja_JP"},"Notifications":["\u901a\u77e5"]}},"comment":{"reference":"wp-includes\/js\/dist\/a11y.js"}} );
+//# sourceURL=wp-a11y-js-translations
+</script>
+<script id="wp-a11y-js" src="https://kyoto.impacthub.net/wp-includes/js/dist/a11y.min.js?ver=31c6cec5a4ff7aff483d"></script>
+<script id="gform_json-js" defer='defer' src="https://kyoto.impacthub.net/wp-content/plugins/gravityforms/js/jquery.json.min.js?ver=2.7.3"></script>
+<script id="gform_gravityforms-js-extra">
+var gform_i18n = {"datepicker":{"days":{"monday":"\u6708","tuesday":"\u706b","wednesday":"\u6c34","thursday":"\u6728","friday":"\u91d1","saturday":"\u571f","sunday":"\u65e5"},"months":{"january":"1\u6708","february":"2\u6708","march":"3\u6708","april":"4\u6708","may":"5\u6708","june":"6\u6708","july":"7\u6708","august":"8\u6708","september":"9\u6708","october":"10\u6708","november":"11\u6708","december":"12\u6708"},"firstDay":1,"iconText":"\u65e5\u4ed8\u3092\u9078\u629e"}};
+var gf_legacy_multi = [];
+var gform_gravityforms = {"strings":{"invalid_file_extension":"\u3053\u306e\u30d5\u30a1\u30a4\u30eb\u30bf\u30a4\u30d7\u306f\u30b5\u30dd\u30fc\u30c8\u3057\u3066\u3044\u307e\u305b\u3093\u3002\u30b5\u30dd\u30fc\u30c8\u3057\u3066\u3044\u308b\u30d5\u30a1\u30a4\u30eb\u30bf\u30a4\u30d7:","delete_file":"\u30d5\u30a1\u30a4\u30eb\u3092\u524a\u9664","in_progress":"\u51e6\u7406\u4e2d","file_exceeds_limit":"\u30d5\u30a1\u30a4\u30eb\u30b5\u30a4\u30ba\u304c\u4e0a\u9650\u3092\u8d85\u3048\u3066\u3044\u307e\u3059\u3002","illegal_extension":"\u3053\u306e\u30d5\u30a1\u30a4\u30eb\u30bf\u30a4\u30d7\u306f\u30b5\u30dd\u30fc\u30c8\u3057\u3066\u3044\u307e\u305b\u3093\u3002","max_reached":"\u30d5\u30a1\u30a4\u30eb\u6570\u304c\u4e0a\u9650\u306b\u9054\u3057\u307e\u3057\u305f\u3002","unknown_error":"\u30b5\u30fc\u30d0\u30fc\u306b\u30d5\u30a1\u30a4\u30eb\u3092\u4fdd\u5b58\u4e2d\u306b\u554f\u984c\u304c\u3042\u308a\u307e\u3057\u305f\u3002","currently_uploading":"\u30a2\u30c3\u30d7\u30ed\u30fc\u30c9\u304c\u5b8c\u4e86\u3059\u308b\u307e\u3067\u304a\u5f85\u3061\u304f\u3060\u3055\u3044\u3002","cancel":"\u30ad\u30e3\u30f3\u30bb\u30eb","cancel_upload":"\u30a2\u30c3\u30d7\u30ed\u30fc\u30c9\u3092\u30ad\u30e3\u30f3\u30bb\u30eb","cancelled":"\u30ad\u30e3\u30f3\u30bb\u30eb\u6e08\u307f"},"vars":{"images_url":"https://kyoto.impacthub.net/wp-content/plugins/gravityforms/images"}};
+var gf_global = {"gf_currency_config":{"name":"\u65e5\u672c\u5186","symbol_left":"&#165;","symbol_right":"","symbol_padding":" ","thousand_separator":",","decimal_separator":"","decimals":0,"code":"JPY"},"base_url":"https://kyoto.impacthub.net/wp-content/plugins/gravityforms","number_formats":[],"spinnerUrl":"https://kyoto.impacthub.net/wp-content/plugins/gravityforms/images/spinner.svg","version_hash":"557e0661fc1a2336cff8d19ccff6ec49","strings":{"newRowAdded":"\u65b0\u3057\u3044\u884c\u304c\u8ffd\u52a0\u3055\u308c\u307e\u3057\u305f\u3002","rowRemoved":"\u884c\u304c\u524a\u9664\u3055\u308c\u307e\u3057\u305f","formSaved":"\u30d5\u30a9\u30fc\u30e0\u304c\u4fdd\u5b58\u3055\u308c\u307e\u3057\u305f\u3002\u30b3\u30f3\u30c6\u30f3\u30c4\u306b\u306f\u3001\u30d5\u30a9\u30fc\u30e0\u306b\u623b\u3063\u3066\u8a18\u5165\u3059\u308b\u305f\u3081\u306e\u30ea\u30f3\u30af\u304c\u542b\u307e\u308c\u3066\u3044\u307e\u3059\u3002"}};
+//# sourceURL=gform_gravityforms-js-extra
+</script>
+<script id="gform_gravityforms-js" defer='defer' src="https://kyoto.impacthub.net/wp-content/plugins/gravityforms/js/gravityforms.min.js?ver=2.7.3"></script>
+<script id="gform_conditional_logic-js-extra">
+var gf_legacy = {"is_legacy":"1"};
+//# sourceURL=gform_conditional_logic-js-extra
+</script>
+<script id="gform_conditional_logic-js" defer='defer' src="https://kyoto.impacthub.net/wp-content/plugins/gravityforms/js/conditional_logic.min.js?ver=2.7.3"></script>
+<script id="gform_placeholder-js" defer='defer' src="https://kyoto.impacthub.net/wp-content/plugins/gravityforms/js/placeholders.jquery.min.js?ver=2.7.3"></script>
+<script id="gform_gravityforms_utils-js" defer='defer' src="https://kyoto.impacthub.net/wp-content/plugins/gravityforms/assets/js/dist/utils.min.js?ver=bc402317bb1b621c1f695fe582d28717"></script>
+<script id="gform_gravityforms_theme_vendors-js" defer='defer' src="https://kyoto.impacthub.net/wp-content/plugins/gravityforms/assets/js/dist/vendor-theme.min.js?ver=79e6346cf824ee59c1f023f916789c24"></script>
+<script id="gform_gravityforms_theme-js-extra">
+var gform_theme_config = {"common":{"form":{"honeypot":{"version_hash":"557e0661fc1a2336cff8d19ccff6ec49"}}},"hmr_dev":"","public_path":"https://kyoto.impacthub.net/wp-content/plugins/gravityforms/assets/js/dist/"};
+//# sourceURL=gform_gravityforms_theme-js-extra
+</script>
+<script id="gform_gravityforms_theme-js" defer='defer' src="https://kyoto.impacthub.net/wp-content/plugins/gravityforms/assets/js/dist/scripts-theme.min.js?ver=9c9598c0c1b63e5624987254d79ea8ef"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://kyoto.impacthub.net/wp-includes/js/wp-emoji-release.min.js?ver=7.1.5"}}
+</script>
+<script type="module">
+/*! This file is auto-generated */
+var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof HTMLScriptElement))throw new Error("Element missing: "+e);const r=JSON.parse(t.text),s=(window._wpemojiSettings=r,"wpEmojiSettingsSupports"),o=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(s,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const r=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===r[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,r){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!r(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,r){let a;const s=(a="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),o=(s.textBaseline="top",s.font="600 32px Arial",{});return e.forEach(e=>{o[e]=t(s,e,n,r)}),o}function a(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}r.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(s));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(o),u.toString(),c.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"});const a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=e=>{i(n=e.data),a.terminate(),t(n)})}catch(e){}i(n=f(o,u,c,p))}t(n)}).then(e=>{for(const n in e)r.supports[n]=e[n],r.supports.everything=r.supports.everything&&r.supports[n],"flag"!==n&&(r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&r.supports[n]);var t;r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&!r.supports.flag,r.supports.everything||((t=r.source||{}).concatemoji?a(t.concatemoji):t.wpemoji&&t.twemoji&&(a(t.twemoji),a(t.wpemoji)))});
+//# sourceURL=https://kyoto.impacthub.net/wp-includes/js/wp-emoji-loader.min.js
+</script>
+<script></script><script>
+gform.initializeOnLoaded( function() { jQuery(document).on('gform_post_render', function(event, formId, currentPage){if(formId == 11) {gf_global["number_formats"][11] = {"25":{"price":false,"value":false},"1":{"price":false,"value":false},"23":{"price":false,"value":false},"26":{"price":false,"value":false},"34":{"price":false,"value":false},"2":{"price":false,"value":false},"27":{"price":false,"value":false},"6":{"price":false,"value":false},"28":{"price":false,"value":false},"3":{"price":false,"value":false},"33":{"price":false,"value":false},"4":{"price":false,"value":false},"29":{"price":false,"value":false},"5":{"price":false,"value":false},"30":{"price":false,"value":false},"7":{"price":false,"value":false},"31":{"price":false,"value":false}};if(window['jQuery']){if(!window['gf_form_conditional_logic'])window['gf_form_conditional_logic'] = new Array();window['gf_form_conditional_logic'][11] = { logic: { 23: {"field":{"actionType":"show","logicType":"all","rules":[{"fieldId":"1","operator":"is","value":"\u30a4\u30d9\u30f3\u30c8\u306b\u3064\u3044\u3066"}]},"nextButton":null,"section":""} }, dependents: { 23: [23] }, animation: 0, defaults: {"34":{"34.2":"","34.3":"","34.4":"","34.6":"","34.8":""},"5":["choice_11_5_1"]}, fields: {"25":[],"1":[23],"23":[],"26":[],"34":[],"2":[],"27":[],"6":[],"28":[],"3":[],"33":[],"4":[],"29":[],"5":[],"30":[],"7":[],"31":[]} }; if(!window['gf_number_format'])window['gf_number_format'] = 'decimal_dot';jQuery(document).ready(function(){window['gformInitPriceFields']();gf_apply_rules(11, [23], true);jQuery('#gform_wrapper_11').show();jQuery(document).trigger('gform_post_conditional_logic', [11, null, true]);} );} if(typeof Placeholders != 'undefined'){
+                        Placeholders.enable();
+                    }} } );jQuery(document).bind('gform_post_conditional_logic', function(event, formId, fields, isInit){} ) } );
+</script>
+<script>
+gform.initializeOnLoaded( function() { jQuery(document).trigger('gform_post_render', [11, 1]) } );
+</script>
+
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a6169c8ecbfabd7b',t:'MTc5NTgzOTk1Ng=='};var l=window.parent.location,o;try{o=new URL(l.origin).origin}catch(e){try{o=new URL(new URL(l.href).origin).origin}catch(e){o=''}}var u='/cdn-cgi/challenge-platform/scripts/jsd/main.js?ray=a6169c8ecbfabd7b',a=document.createElement('script');a.src=o?new URL(u,o).href:u;document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>

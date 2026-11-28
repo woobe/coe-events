@@ -1,0 +1,30 @@
+{
+ "city_slug": "kyoto-jp",
+ "city_name": "Kyoto",
+ "country": "Japan",
+ "target_date": null,
+ "date_window": null,
+ "target_attendance": 50,
+ "currency": "JPY",
+ "currency_assumptions": [
+  "Venue prices are researched and stored in JPY (cost_local_amount / cost_local_currency = JPY). The soft budget and every USD figure use the ECB euro foreign exchange reference rates dated 2026-11-27 and fetched 2026-11-28: EUR 1 = USD 1.0957 and EUR 1 = JPY 174.81, giving USD 1 = JPY 159.5418 and 1 JPY = USD 0.00626795. See fx_evidence_2026-11-28.md for the derived cross rate and three hand recomputations.",
+  "Where a venue publishes a 09:00-17:00 package, that package is the recorded amount; where it publishes only blocks (午前/午後 or 9:00-12:00/13:00-17:00), the recorded amount is the published sum or the published continuous-use rate for those blocks, and the twelve-hour figure is stated inside evidence.observed_facts rather than folded into the headline number.",
+  "Where a venue publishes only an hourly rate, the recorded amount is that rate multiplied by 8 hours and the record carries cost_basis estimated_from_rate with a final-quote question. Where no readable price exists, estimated_cost_usd is null with a cost_unknown question."
+ ],
+ "workflow_phase": "venue",
+ "budget_usd": 5000.0,
+ "research_completed_on": "2026-11-28",
+ "open_questions": [
+  "No date is selected, ranked or recommended in this run. The whole 2027 calendar year was swept without a monthly cut; the venue set is date-independent and every venue carries its own availability question.",
+  "Kyoto's market is inquiry-heavy: three of eighteen candidates carry a gap that only the venue can close - two publish no price at all (Impact Hub Kyoto, THE TERMINAL KYOTO) and two publish no headcount (THE TERMINAL KYOTO, FabCafe Kyoto), the two gaps overlapping at THE TERMINAL KYOTO - and four more publish a room rate without AV or catering terms (Hearton 嵐山, Hearton 宇治伏見, KRP ルーム2, Kyoto University 国際交流ホール). Those gaps are carried as verification questions, not as estimates.",
+  "Alcohol is an event-licence question, not a room amenity: Kyoto Asny states in its own rules that alcoholic drinks are prohibited on the premises, and its two rooms record that prohibition as the answer. The other sixteen records each carry an explicit alcohol-permission question to the venue (is serving alcohol allowed for a private community event, is an event liquor licence required, who must hold it) rather than assuming a hotel, restaurant or cafe licence covers a rented hall; the Elcient hotel record carries exactly that warning.",
+  "The school lane is unopened for Kyoto: the plan-event holiday registry carries JP, JP:osaka and JP:tokyo school authorities but no Kyoto school authority, so no Kyoto school-holiday date is asserted anywhere in this package. Only the JP national public layer is used.",
+  "IVS 2027 has no announced date: the organiser site still presents IVS2026 (1-3 July 2026, Miyako Messe and Hotel Okura Kyoto) and no 2027 edition page exists, so IVS is recorded as an unknown-date note instead of a calendar row.",
+  "The scorer records meta.event_date as the access date (2026-11-28) because no event date is supplied; that field is a technical artefact of scoring without a date and is not a recommendation anywhere in this bundle.",
+  "Nothing here is a booking, a hold, or a partner commitment. Every contact route recorded for the community map is a public page, and no co-host relationship is claimed."
+ ],
+ "recommendation": {
+  "selected_venue": null,
+  "rationale": "Run A evidence package only. No venue is selected and no date is proposed; Joe decides both from the evidence. The scorer's tiers are recorded in venues.shortlist.json with the ECB-based USD costs."
+ }
+}

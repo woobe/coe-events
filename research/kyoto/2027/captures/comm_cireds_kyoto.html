@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang='ja'>
+<head>
+<meta content='text/html;charset=UTF-8' http-equiv='content-type'>
+<meta charset='utf-8'>
+<meta content='IE=Edge,chrome=1' http-equiv='X-UA-Compatible'>
+<meta content='width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no' name='viewport'>
+<meta content='telephone=no' name='format-detection'>
+<meta content='195702240496602' property='fb:app_id'>
+<title>
+データサイエンススクール京都
+ | Doorkeeper
+</title>
+<link rel="icon" type="image/x-icon" href="https://doorkeeper.jp/assets/favicon-2e40be8f198ee3cb97dccbfbb3959374981ae0164d4f349e1787ff5f4c336af8.ico" />
+<link href='https://cireds.doorkeeper.jp/' rel='canonical'>
+<meta content='データサイエンススクール京都' property='og:title'>
+<meta content='website' property='og:type'>
+<meta content='https://doorkeeper.jp/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBd041QVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--85776273337ad7409aac1455b36621d202bd9616/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJVUU1SEJqb0dSVlE2RTNKbGMybDZaVjloYm1SZmNHRmtXd2RwQWNocEFjZz0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--69024e92b137ca88bac665325e4431e001540b8b/CIREDS.PNG' property='og:image'>
+<meta content='https://cireds.doorkeeper.jp/' property='og:url'>
+<meta content='Doorkeeper' property='og:site_name'>
+<meta name="twitter:card" content="summary">
+<meta content='@doorkeeper_jp' name='twitter:site'>
+<meta content='京都大学 国際高等教育院 附属データ科学イノベーション教育研究センター (CIREDS) 主催のデータサイエンスに関するスクール・セミナー・ワークショップなどを行います．京都大学の学生・研究者・教職員，および数理・データサイエンス教育強化拠点コンソーシアム， データ関連人材育成関西地区コンソーシアム，HeKKSaGOn参画の大学の学生・研究者を主たる対象としています．
+' name='twitter:description'>
+
+<link rel="stylesheet" href="https://doorkeeper.jp/assets/fontawesome-6d53862a62d9076af1e6640213de3ab8114672a22f11aca4a0dd505304dea878.css" media="all" />
+<link rel="stylesheet" href="https://doorkeeper.jp/assets/application-a7ca6442b36ff357134ea76775c81570b8873fe6fd80ba91fc22f78c56b3a689.css" media="all" />
+<script src="https://doorkeeper.jp/assets/application-c1754c2d24ab486eda5cc8c10bf6d9f48b9ab6dbc8b99862ea61e50774965919.js"></script>
+<script src="https://doorkeeper.jp/packs/js/app-774bc3e2b960369073bc.js" async="async"></script>
+<link rel="stylesheet" href="https://doorkeeper.jp/packs/css/app-5989d222.css" async="async" media="screen" />
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="AooxpdA8CE5edEeR1W693vUYCYTI1AJK0ri74ICVZ1NpeU830WLEDGhon5XNeIQzACo16v1ykqSsZpvC6O+bDA==" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-15834284-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-15834284-1'); // Universal Analytics property.
+ 
+    gtag('config', 'G-RCGBRG13Y4'); // Google Analytics 4 property.
+  
+</script>
+<script async='' src='https://www.googletagmanager.com/gtag/js?id=G-RCGBRG13Y4'></script>
+<script>
+  window.dataLayer = window.dataLayer || []; 
+  function gtag(){dataLayer.push(arguments);} 
+  gtag('js', new Date()); 
+  gtag('config', 'G-RCGBRG13Y4');
+</script>
+<script>
+  (function(w,d,s,l,i) {
+    w[l]=w[l]||[];
+    w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+    var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+    j.async=true;
+    j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+    f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PPDS423');
+</script>
+
+<link rel="preload" as="style" href="https://glass.io/integration/glass.min.css" onload="this.onload=null;this.rel='stylesheet'" />
+<script>
+  window.glassApiKey = 'eurZwW4nhD1V8etacAW83Att';
+  var s = document.createElement("script");
+  s.type = "text/javascript";
+  s.async = true;
+  s.src = "https://glass.io/integration/glass.min.js";
+  function load() {
+    Glass.init();
+  }
+  s.onload = load;
+  document.head.appendChild(s);
+</script>
+<script type="text/javascript">!function(e,t,n){function a(){var e=t.getElementsByTagName("script")[0],n=t.createElement("script");n.type="text/javascript",n.async=!0,n.src="https://beacon-v2.helpscout.net",e.parentNode.insertBefore(n,e)}if(e.Beacon=n=function(t,n,a){e.Beacon.readyQueue.push({method:t,options:n,data:a})},n.readyQueue=[],"complete"===t.readyState)return a();e.attachEvent?e.attachEvent("onload",a):e.addEventListener("load",a,!1)}(window,document,window.Beacon||function(){});</script>
+<script type="text/javascript">
+  window.Beacon('init', '9329d34b-d6c4-4abc-8115-ed0066b505cb')
+</script>
+
+<script>
+//<![CDATA[
+      (function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");
+      a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+
+      '//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];
+      f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){
+      var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(
+      Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:
+      d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);
+      b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};
+      i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");
+      for(g=0;g<i.length;g++)f(c,i[g]); b._i.push([a,e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
+      mixpanel.init("2d0a9fadc66f322337b0428d60907db5");
+
+//]]>
+</script></head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript>
+<iframe height='0' src='https://www.googletagmanager.com/ns.html?id=GTM-PPDS423' style='display:none;visibility:hidden' width='0'></iframe>
+</noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header class='app-header'>
+<div class='app-header-inner'>
+<div class='app-header-brand'>
+<a class="doorkeeper" href="https://www.doorkeeper.jp/"><img alt="Doorkeeper" src="https://doorkeeper.jp/assets/logo-966182d4b3e6dab86edb746a9f7681769fc3928fc73b2776bbf36e3bc18d2674.svg" /></a>
+</div>
+<div class='app-header-search'>
+<form class="search-form form" role="search" action="https://www.doorkeeper.jp/events" accept-charset="UTF-8" method="get">
+<div class='search-compact'>
+<div class='search-compact-inner'>
+<input type="text" name="q" id="q" value="" class="search-compact-field" placeholder="検索" />
+<div class='search-compact-location'>
+<select name="prefecture_id" id="prefecture_id" class="search-compact-dropdown"><option value="">全国</option><option value="hokkaido">北海道</option>
+<option value="aomori">青森</option>
+<option value="iwate">岩手</option>
+<option value="miyagi">宮城</option>
+<option value="akita">秋田</option>
+<option value="yamagata">山形</option>
+<option value="fukushima">福島</option>
+<option value="ibaraki">茨城</option>
+<option value="tochigi">栃木</option>
+<option value="gunma">群馬</option>
+<option value="saitama">埼玉</option>
+<option value="chiba">千葉</option>
+<option value="tokyo">東京</option>
+<option value="kanagawa">神奈川</option>
+<option value="niigata">新潟</option>
+<option value="toyama">富山</option>
+<option value="ishikawa">石川</option>
+<option value="fukui">福井</option>
+<option value="yamanashi">山梨</option>
+<option value="nagano">長野</option>
+<option value="gifu">岐阜</option>
+<option value="shizuoka">静岡</option>
+<option value="aichi">愛知</option>
+<option value="mie">三重</option>
+<option value="shiga">滋賀</option>
+<option value="kyoto">京都</option>
+<option value="osaka">大阪</option>
+<option value="hyogo">兵庫</option>
+<option value="nara">奈良</option>
+<option value="wakayama">和歌山</option>
+<option value="tottori">鳥取</option>
+<option value="shimane">島根</option>
+<option value="okayama">岡山</option>
+<option value="hiroshima">広島</option>
+<option value="yamaguchi">山口</option>
+<option value="tokushima">徳島</option>
+<option value="kagawa">香川</option>
+<option value="ehime">愛媛</option>
+<option value="kochi">高知</option>
+<option value="fukuoka">福岡</option>
+<option value="saga">佐賀</option>
+<option value="nagasaki">長崎</option>
+<option value="kumamoto">熊本</option>
+<option value="oita">大分</option>
+<option value="miyazaki">宮崎</option>
+<option value="kagoshima">鹿児島</option>
+<option value="okinawa">沖縄</option></select>
+</div>
+<div class='search-compact-submit'>
+<button type="submit" class="search-compact-btn"><i class="fas fa-search"></i></button>
+</div>
+</div>
+</div>
+</form>
+
+
+</div>
+<div class='app-header-nav'>
+<nav class='app-header-nav-list'>
+<div class='app-header-nav-item'><a href="tel:81505291784">050-5291-7844</a></div>
+<div class='app-header-nav-item hidden-xxs'><a class="btn btn-primary btn-block" href="https://www.doorkeeper.jp/organizers?locale=ja">主催者向け</a></div>
+<div class='app-header-nav-item hidden-xxs'><a href="https://manage.doorkeeper.jp/user/sign_up?continue=https%3A%2F%2Fcireds.doorkeeper.jp%2F">新規登録</a></div>
+<div class='app-header-nav-item'><a href="https://manage.doorkeeper.jp/user/sign_in?continue=https%3A%2F%2Fcireds.doorkeeper.jp%2F">ログイン</a></div>
+<div class='app-header-nav-item hidden-xxs'><a rel="nofollow" href="https://cireds.doorkeeper.jp/?locale=en&amp;switch_locale=true">English</a></div>
+<div class='app-header-search-mobile' style='margin-right: 0; margin-left: 20px;'>
+<button id='mobile-search-btn'>
+<i class="fas fa-search search-icon"></i>
+<i class="fas fa-times close-icon"></i>
+</button>
+</div>
+</nav>
+</div>
+</div>
+</header>
+
+
+<div class='content client-full-width'>
+<div class='client-container'>
+<div class='community-page'>
+
+<div class='community-header community-header-large'>
+<div class='community-header-inner'>
+<div class='community-header-info'>
+<div class='community-profile-picture'>
+<a href="/"><img alt="データサイエンススクール京都" src="https://doorkeeper.jp/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBd041QVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--85776273337ad7409aac1455b36621d202bd9616/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJVUU1SEJqb0dSVlE2RTNKbGMybDZaVjloYm1SZmNHRmtXd2RwQWNocEFjZz0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--69024e92b137ca88bac665325e4431e001540b8b/CIREDS.PNG" /></a>
+</div>
+<div class='community-header-large-wrap'>
+<h4 class='community-title'>
+<a href="/">データサイエンススクール京都</a>
+</h4>
+<div class='community-header-large-nav-wrap'>
+<a class="btn btn-sm btn-add-community" href="/member/new"><i class="fas fa-plus"></i> メンバーになる</a>
+<ul class='community-nav community-nav-top collapse'>
+<li class='community-nav-item'>
+<div class='dropdown'>
+<a class='dropdown-toggle community-nav-link' data-toggle='dropdown' href='#' id='eventsDropdown'>
+イベント
+<span class='caret'></span>
+</a>
+<ul class='dropdown-menu'>
+<li><a class="community-nav-link" href="/events/upcoming">開催予定イベント</a></li>
+<li><a class="community-nav-link" href="/events/past">過去のイベント</a></li>
+</ul>
+</div>
+</li>
+<li class='community-nav-item'>
+<a class="community-nav-link" href="/members">メンバー</a>
+</li>
+<li class='community-nav-item'>
+<a class="community-nav-link" href="/contact/new">お問い合わせ
+</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class='community-content'>
+<div class='community-block'>
+<div class='community-container'>
+<h4 class='community-section-title'>コミュニティについて</h4>
+<ul class='list-inline group-home-metadata'>
+<li>
+<a class="label label-full community-members-count" href="/members">2029人</a>
+</li>
+<li>
+<a class="label label-full label-link" href="https://www.doorkeeper.jp/prefectures/kyoto">京都</a>
+</li>
+<li>
+<a class="label label-link label-full" href="https://www.doorkeeper.jp/topics/data-analysis">データ解析</a>
+</li>
+</ul>
+<div class='processed-markdown'><p>京都大学 国際高等教育院 附属データ科学イノベーション教育研究センター (CIREDS) 主催のデータサイエンスに関するスクール・セミナー・ワークショップなどを行います．京都大学の学生・研究者・教職員，および数理・データサイエンス教育強化拠点コンソーシアム， データ関連人材育成関西地区コンソーシアム，HeKKSaGOn参画の大学の学生・研究者を主たる対象としています．</p>
+</div>
+</div>
+</div>
+<div class='community-block'>
+<div class='community-container'>
+<h4 class='community-section-title'>開催予定イベント</h4>
+<div class='global-event-list'>
+<div class='global-event-list-day'>
+<div class='global-event-list-date-header'>2027-01-15（金）</div>
+<div class='global-event-list-date-wrapper'><div class='calendar-block-date'>
+<div class='weekday-wrap'>
+<div class='weekday'>金</div>
+</div>
+<div class='day-wrap'>
+<div class='month'>1月</div>
+<div class='day'>15</div>
+</div>
+</div>
+</div>
+<div class='global-event-list-events-that-day'><div class='global-event events-list'>
+<time>13:30</time>
+<div class='events-list-items-wrap'>
+<div class='events-list-text-wrap'>
+<div class='client-event-registration-status'>
+<label class='label label-success'>受付中</label>
+</div>
+<div class='events-list-item-title'>
+<h3>
+<a href="https://cireds.doorkeeper.jp/events/200733"><span>データサイエンススクール 134</span>
+</a></h3>
+</div>
+<div class='events-list-item-meta'>
+<time class='events-list-item-time'>
+<span class='events-list-item-time-date'>2027年1月15日</span>
+13:30 - 16:30
+</time>
+<div class='events-list-item-meta'>
+<div class='events-list-item-venue'>
+<a class="label label-link" href="https://www.doorkeeper.jp/online/events">オンライン</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='global-event-list-day'>
+<div class='global-event-list-date-header'>2027-01-30（土）</div>
+<div class='global-event-list-date-wrapper'><div class='calendar-block-date'>
+<div class='weekday-wrap'>
+<div class='weekday'>土</div>
+</div>
+<div class='day-wrap'>
+<div class='month'>1月</div>
+<div class='day'>30</div>
+</div>
+</div>
+</div>
+<div class='global-event-list-events-that-day'><div class='global-event events-list'>
+<time>10:30</time>
+<div class='events-list-items-wrap'>
+<div class='events-list-text-wrap'>
+<div class='client-event-registration-status'>
+<label class='label label-success'>受付中</label>
+</div>
+<div class='events-list-item-title'>
+<h3>
+<a href="https://cireds.doorkeeper.jp/events/200508"><span>データサイエンススクール130</span>
+</a></h3>
+</div>
+<div class='events-list-item-meta'>
+<time class='events-list-item-time'>
+<span class='events-list-item-time-date'>2027年1月30日</span>
+10:30 - 16:00
+</time>
+<div class='events-list-item-meta'>
+<div class='events-list-item-venue'>
+<a class="label label-link" href="https://www.doorkeeper.jp/online/events">オンライン</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class='text-center' style='margin-top: 10px'>
+<div class='see-all'>
+<a class="btn btn-sm btn-default" href="/events/upcoming">開催予定イベントリスト</a>
+</div>
+</div>
+</div>
+</div>
+<div class='community-block'>
+<div class='community-container'>
+<h4 class='community-section-title'>過去のイベント</h4>
+<div class='global-event-list'>
+<div class='global-event-list-day'>
+<div class='global-event-list-date-header'>2026-09-19（土）</div>
+<div class='global-event-list-date-wrapper'><div class='calendar-block-date'>
+<div class='weekday-wrap weekday-wrap-past'>
+<div class='weekday'>土</div>
+</div>
+<div class='day-wrap'>
+<div class='month'>9月</div>
+<div class='day'>19</div>
+</div>
+</div>
+</div>
+<div class='global-event-list-events-that-day'><div class='global-event events-list'>
+<time>10:30</time>
+<div class='events-list-items-wrap'>
+<div class='events-list-text-wrap'>
+<div class='client-event-registration-status'>
+<label class='label label-danger'>受付終了</label>
+<span class='events-list-item-current-registred'>25人の参加者</span>
+</div>
+<div class='events-list-item-title'>
+<h3>
+<a href="https://cireds.doorkeeper.jp/events/197672"><span>データサイエンススクール 128</span>
+</a></h3>
+</div>
+<div class='events-list-item-meta'>
+<time class='events-list-item-time'>
+9月19日 10:30 - 9月26日 17:30
+</time>
+<div class='events-list-item-meta'>
+<div class='events-list-item-venue'>
+<span>京都市左京区吉田二本松町</span>
+<span>京都大学学術情報メディアセンター南館 201教室</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='global-event-list-day'>
+<div class='global-event-list-date-header'>2026-09-01（火）</div>
+<div class='global-event-list-date-wrapper'><div class='calendar-block-date'>
+<div class='weekday-wrap weekday-wrap-past'>
+<div class='weekday'>火</div>
+</div>
+<div class='day-wrap'>
+<div class='month'>9月</div>
+<div class='day'>01</div>
+</div>
+</div>
+</div>
+<div class='global-event-list-events-that-day'><div class='global-event events-list'>
+<time>13:00</time>
+<div class='events-list-items-wrap'>
+<div class='events-list-text-wrap'>
+<div class='client-event-registration-status'>
+<label class='label label-danger'>受付終了</label>
+<span class='events-list-item-current-registred'>45人の参加者</span>
+</div>
+<div class='events-list-item-title'>
+<h3>
+<a href="https://cireds.doorkeeper.jp/events/198133"><span>データサイエンススクール129</span>
+</a></h3>
+</div>
+<div class='events-list-item-meta'>
+<time class='events-list-item-time'>
+<span class='events-list-item-time-date'>2026年9月1日</span>
+13:00 - 16:00
+</time>
+<div class='events-list-item-meta'>
+<div class='events-list-item-venue'>
+<a class="label label-link" href="https://www.doorkeeper.jp/online/events">オンライン</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class='text-center' style='margin-top: 10px'>
+<div class='see-all'>
+<a class="btn btn-sm btn-default" href="/events/past">過去のイベントリスト</a>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+<div class='container client-after-main-container'><h4 class='after-main-content-header'>このコミュニティのメンバーが加わっている他のコミュニティ</h4>
+<div class='global-group-list' data-click-track-properties='{&quot;type&quot;:&quot;Group&quot;,&quot;page&quot;:1,&quot;source&quot;:&quot;Related&quot;}' data-click-track='Discovery result'>
+<div class='panel-grid'>
+<div class='panel-item group-panel-item'>
+<div class='group-card'>
+<a href="https://skillupai.doorkeeper.jp/"><div class='group-card-image'><img class="lazy" data-src="https://doorkeeper.jp/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBeEhBQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--5616958ef20904aee08c244daed93a8a2bebf62b/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lKYW5CbFp3WTZCa1ZVT2hOeVpYTnBlbVZmZEc5ZlptbHNiRnNIYVFKOEFXa0NCQUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--1d497945aff7cb3d798564bf892495af340f8a05/%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB_000_(4).jpeg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" /></div>
+<div class='group-card-overlay'></div>
+</a><div class='group-card-body'>
+<div class='group-card-info'>
+<div class='group-card-logo'><a href="https://skillupai.doorkeeper.jp/"><img alt="スキルアップAI" src="https://doorkeeper.jp/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBL2lRQmc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--8125ad7cbab339e0f3ce52aff302f8d7ea838452/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RTNKbGMybDZaVjloYm1SZmNHRmtXd2RwQWNocEFjZz0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--e0e57e8ab7f02a9e57804bb53ef80c2bdc861848/logo_suai_square.png" /></a></div>
+<div class='group-card-title-wrap'>
+<h3 class='group-card-title'><a href="https://skillupai.doorkeeper.jp/">スキルアップAI</a></h3>
+<small>1372人</small>
+</div>
+</div>
+<div class='list-inline'>
+<a class="label label-link" href="https://www.doorkeeper.jp/prefectures/tokyo">東京</a>
+<a class="label label-link" href="https://www.doorkeeper.jp/topics/data-analysis">データ解析</a>
+<a class="label label-link" href="https://www.doorkeeper.jp/topics/machine-learning">機械学習</a>
+<a class="label label-link" href="https://www.doorkeeper.jp/topics/python">Python</a>
+<a class="label label-link" href="https://www.doorkeeper.jp/topics/artificial-intelligence">人工知能</a>
+</div>
+</div>
+</div>
+</div>
+<div class='panel-item group-panel-item'>
+<div class='group-card'>
+<a href="https://enjoyscience.doorkeeper.jp/"><div class='group-card-image'><img class="lazy" data-src="https://doorkeeper.jp/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMGl2Qnc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--86b500de1b5060f6a6d34f100565e0b347af4f18/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RTNKbGMybDZaVjkwYjE5bWFXeHNXd2RwQW53QmFRSUVBUT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--3f14007fe4e589c7c331a310548041babd9e0a05/Gemini_Generated_Image_xc3a9bxc3a9bxc3a.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" /></div>
+<div class='group-card-overlay'></div>
+</a><div class='group-card-body'>
+<div class='group-card-info'>
+<div class='group-card-logo'><a href="https://enjoyscience.doorkeeper.jp/"><img alt="サイエンスを楽しもう" src="https://doorkeeper.jp/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBeXYrQmc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--e19295701039ebac33a44ccd04a834293b722d5e/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RTNKbGMybDZaVjloYm1SZmNHRmtXd2RwQWNocEFjZz0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--ed21893bc3f6dbb42a45b555f9878f5434977670/unnamed.jpg" /></a></div>
+<div class='group-card-title-wrap'>
+<h3 class='group-card-title'><a href="https://enjoyscience.doorkeeper.jp/">サイエンスを楽しもう</a></h3>
+<small>921人</small>
+</div>
+</div>
+<div class='list-inline'>
+<a class="label label-link" href="https://www.doorkeeper.jp/topics/robot">ロボット</a>
+<a class="label label-link" href="https://www.doorkeeper.jp/topics/artificial-intelligence">人工知能</a>
+<a class="label label-link" href="https://www.doorkeeper.jp/topics/education">教育</a>
+<a class="label label-link" href="https://www.doorkeeper.jp/topics/nature-environment">自然・環境</a>
+<a class="label label-link" href="https://www.doorkeeper.jp/topics/chat-gpt">ChatGPT</a>
+</div>
+</div>
+</div>
+</div>
+<div class='panel-item group-panel-item'>
+<div class='group-card'>
+<a href="https://techgym.doorkeeper.jp/"><div class='group-card-image'><img class="lazy" data-src="https://doorkeeper.jp/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBMHpQQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--be6b4bc1c4c70a37101df2e844affb5b6dbd7a10/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RTNKbGMybDZaVjkwYjE5bWFXeHNXd2RwQW53QmFRSUVBUT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--3f14007fe4e589c7c331a310548041babd9e0a05/IMG_1026.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" /></div>
+<div class='group-card-overlay'></div>
+</a><div class='group-card-body'>
+<div class='group-card-info'>
+<div class='group-card-logo'><a href="https://techgym.doorkeeper.jp/"><img alt="テックジムと愉快な仲間たち" src="https://doorkeeper.jp/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNlUvQmc9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--8c5dd0c80529b9f6c587234887c8944006a010a8/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RTNKbGMybDZaVjloYm1SZmNHRmtXd2RwQWNocEFjZz0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--e0e57e8ab7f02a9e57804bb53ef80c2bdc861848/1%E5%8C%97%E6%B5%B7%E9%81%93.png" /></a></div>
+<div class='group-card-title-wrap'>
+<h3 class='group-card-title'><a href="https://techgym.doorkeeper.jp/">テックジムと愉快な仲間たち</a></h3>
+<small>1268人</small>
+</div>
+</div>
+<div class='list-inline'>
+<a class="label label-link" href="https://www.doorkeeper.jp/prefectures/tokyo">東京</a>
+<a class="label label-link" href="https://www.doorkeeper.jp/topics/programming">プログラミング</a>
+<a class="label label-link" href="https://www.doorkeeper.jp/topics/entrepreneurship">起業</a>
+<a class="label label-link" href="https://www.doorkeeper.jp/topics/python">Python</a>
+<a class="label label-link" href="https://www.doorkeeper.jp/topics/artificial-intelligence">人工知能</a>
+<a class="label label-link" href="https://www.doorkeeper.jp/topics/chat-gpt">ChatGPT</a>
+</div>
+</div>
+</div>
+</div>
+<div class='panel-item group-panel-item'>
+<div class='group-card'>
+<a href="https://after-chatgpt.doorkeeper.jp/"><div class='group-card-image'><img class="lazy" data-src="https://doorkeeper.jp/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBLzd5QlE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--2e60d80de18b3ad61547dc9433026c108a9b6723/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RTNKbGMybDZaVjkwYjE5bWFXeHNXd2RwQW53QmFRSUVBUT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--60bc8a0a90ad3b03a56d4ae58afbfa092137a916/DALL%C2%B7E%202023-12-27%2019.27.42%20-%20A%20professional%20and%20sophisticated%20wallpaper%20design%20for%20a%20Zoom%20seminar%20introducing%20the%20use%20of%20Large%20Language%20Models%20(LLMs)%20in%20design.%20The%20wallpaper%20shou.png" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" /></div>
+<div class='group-card-overlay'></div>
+</a><div class='group-card-body'>
+<div class='group-card-info'>
+<div class='group-card-logo'><a href="https://after-chatgpt.doorkeeper.jp/"><img alt="超知能時代のシン・デジタル入門" src="https://doorkeeper.jp/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNzVyQ0E9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--ede21c120b33439adc2b80f4d152ae8770cfd721/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RTNKbGMybDZaVjloYm1SZmNHRmtXd2RwQWNocEFjZz0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--e0e57e8ab7f02a9e57804bb53ef80c2bdc861848/logo3.png" /></a></div>
+<div class='group-card-title-wrap'>
+<h3 class='group-card-title'><a href="https://after-chatgpt.doorkeeper.jp/">超知能時代のシン・デジタル入門</a></h3>
+<small>932人</small>
+</div>
+</div>
+<div class='list-inline'>
+<a class="label label-link" href="https://www.doorkeeper.jp/topics/marketing">マーケティング</a>
+<a class="label label-link" href="https://www.doorkeeper.jp/topics/business">ビジネス</a>
+<a class="label label-link" href="https://www.doorkeeper.jp/topics/information-technology">IT</a>
+<a class="label label-link" href="https://www.doorkeeper.jp/topics/artificial-intelligence">人工知能</a>
+<a class="label label-link" href="https://www.doorkeeper.jp/topics/chat-gpt">ChatGPT</a>
+</div>
+</div>
+</div>
+</div>
+<div class='panel-item group-panel-item'>
+<div class='group-card'>
+<a href="https://aitconsortium.doorkeeper.jp/"><div class='group-card-image'><img class="lazy" data-src="https://doorkeeper.jp/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBN0crQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--b7f0ac38045ca4fdd9e5d55c696eecb6374c5868/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJYW5CbkJqb0dSVlE2RTNKbGMybDZaVjkwYjE5bWFXeHNXd2RwQW53QmFRSUVBUT09IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--3f14007fe4e589c7c331a310548041babd9e0a05/P1030976-1.jpg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" /></div>
+<div class='group-card-overlay'></div>
+</a><div class='group-card-body'>
+<div class='group-card-info'>
+<div class='group-card-logo'><a href="https://aitconsortium.doorkeeper.jp/"><img alt="産総研人工知能技術コンソーシアム（AITeC）" src="https://doorkeeper.jp/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBeFYyQVE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--57370dec15700aa410c0e698a4b7c99c0ae609ff/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RTNKbGMybDZaVjloYm1SZmNHRmtXd2RwQWNocEFjZz0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--e0e57e8ab7f02a9e57804bb53ef80c2bdc861848/AITC.png" /></a></div>
+<div class='group-card-title-wrap'>
+<h3 class='group-card-title'><a href="https://aitconsortium.doorkeeper.jp/">産総研人工知能技術コンソーシアム（AITeC）</a></h3>
+</div>
+</div>
+<div class='list-inline'>
+<a class="label label-link" href="https://www.doorkeeper.jp/prefectures/tokyo">東京</a>
+<a class="label label-link" href="https://www.doorkeeper.jp/topics/artificial-intelligence">人工知能</a>
+</div>
+</div>
+</div>
+</div>
+<div class='panel-item group-panel-item'>
+<div class='group-card'>
+<a href="https://sustainableq.doorkeeper.jp/"><div class='group-card-image'><img class="lazy" data-src="https://doorkeeper.jp/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBNWNjQlE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--c6b9199cba672d6eaa2f9f9a7002685cabc096e0/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lKYW5CbFp3WTZCa1ZVT2hOeVpYTnBlbVZmZEc5ZlptbHNiRnNIYVFKOEFXa0NCQUU9IiwiZXhwIjpudWxsLCJwdXIiOiJ2YXJpYXRpb24ifX0=--1d497945aff7cb3d798564bf892495af340f8a05/783F930D-3C01-4DB9-BADB-75E32C721BAD.jpeg" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXYzh8+PB/AAffA0nNPuCLAAAAAElFTkSuQmCC" /></div>
+<div class='group-card-overlay'></div>
+</a><div class='group-card-body'>
+<div class='group-card-info'>
+<div class='group-card-logo'><a href="https://sustainableq.doorkeeper.jp/"><img alt="Sustainable Q" src="https://doorkeeper.jp/rails/active_storage/representations/proxy/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBOTNyQlE9PSIsImV4cCI6bnVsbCwicHVyIjoiYmxvYl9pZCJ9fQ==--c239c2ac607ef7b69290fe434dd702285fbe3f8c/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaDdCem9MWm05eWJXRjBTU0lJY0c1bkJqb0dSVlE2RTNKbGMybDZaVjloYm1SZmNHRmtXd2RwQWNocEFjZz0iLCJleHAiOm51bGwsInB1ciI6InZhcmlhdGlvbiJ9fQ==--e0e57e8ab7f02a9e57804bb53ef80c2bdc861848/Logo.png" /></a></div>
+<div class='group-card-title-wrap'>
+<h3 class='group-card-title'><a href="https://sustainableq.doorkeeper.jp/">Sustainable Q</a></h3>
+<small>616人</small>
+</div>
+</div>
+<div class='list-inline'>
+<a class="label label-link" href="https://www.doorkeeper.jp/prefectures/hiroshima">広島</a>
+<a class="label label-link" href="https://www.doorkeeper.jp/topics/entrepreneurship">起業</a>
+<a class="label label-link" href="https://www.doorkeeper.jp/topics/artificial-intelligence">人工知能</a>
+<a class="label label-link" href="https://www.doorkeeper.jp/topics/virtual-reality">VR</a>
+<a class="label label-link" href="https://www.doorkeeper.jp/topics/local-economy-and-society">地域経済と地域社会</a>
+<a class="label label-link" href="https://www.doorkeeper.jp/topics/volunteer">ボランティア</a>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+
+<footer class='app-footer compact-footer'>
+<div class='app-footer-inner'>
+<div class='app-footer-block'>
+<ul>
+<li><a href="/contact/new">主催者にお問い合わせ</a></li>
+<li><a href="https://support.doorkeeper.jp/collection/5-collection">ヘルプ</a></li>
+<li><a href="https://www.doorkeeper.jp/terms">利用規約</a></li>
+<li><a href="https://www.doorkeeper.jp/privacy">プライバシーポリシー</a></li>
+<li><a href="https://www.doorkeeper.jp/report_copyright_infringment">著作権侵害の報告について</a></li>
+<li><a rel="nofollow" href="?locale=en&amp;switch_locale=true">English</a></li>
+</ul>
+Powered by
+<a href="https://www.doorkeeper.jp/">Doorkeeper</a>
+</div>
+</div>
+</footer>
+
+<div id='jstemplates'></div>
+
+<div class='modal fade' id='modal_overlay' role='dialog' tabindex='-1'>
+<div class='modal-dialog'>
+<div class='modal-content'>
+<div class='unloaded-state'>
+<div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button><h4 class="modal-title">送信中...</h4></div>
+<div class='modal-body'>
+<div class='text-center'>
+<i class="fas fa-sync fa-spin fa-4x"></i>
+</div>
+</div>
+<div class='modal-footer'>
+<a class='btn btn-default' data-dismiss='modal' href='#'>閉じる</a>
+</div>
+</div>
+<div class='loaded-state'></div>
+</div>
+</div>
+</div>
+
+<script>
+  mixpanel.register_once({
+    'First URL': 'https://cireds.doorkeeper.jp/'
+  });
+</script>
+<script>
+//<![CDATA[
+mixpanel.track("Public Group Page", {"locale":"ja","user_signed_in":false,"group_subdomain":"cireds","group_id":10078});
+mixpanel.track("Discovery", {"type":"Group","page":1,"source":"Related"});
+//]]>
+</script></body>
+</html>
+

@@ -1,0 +1,1156 @@
+{
+ "schema_version": "city-reviewed-inputs/1",
+ "city_slug": "kyoto-jp",
+ "event_context": {
+  "attendance": 50,
+  "duration_hours": 8,
+  "preferred_duration_hours": 12,
+  "soft_budget_usd": 5000.0,
+  "start_local": "09:00"
+ },
+ "holiday_registry": {
+  "host_jurisdiction_id": "JP:kyoto",
+  "supplement": {
+   "path": "holiday-supplement.json",
+   "sha256": "db7cc8afe5d1c98a680a6f4064b5bc137d01e9bdc5ea69c3b9f18d0750312700",
+   "jurisdiction_ids": [
+    "JP:kyoto"
+   ]
+  }
+ },
+ "local_requirements": {
+  "language": {
+   "value": {
+    "authority": "京都市 総合企画局市長公室広報担当 (the contact printed on the page)",
+    "city_guidance": "京都市 defines 「やさしい日本語」 as Japanese that does not use difficult words or expressions, and publishes its 生活ガイドブック in that register for 外国人の方、障害のある方など — it adjusts the Japanese to the reader instead of assuming one register reaches everyone.",
+    "published_channels": "The same page header offers English, 한국어, 中文简体 and 中文繁體 versions alongside やさしい日本語, so the city's own published answer to a non-Japanese-speaking resident is a translated page plus adjusted Japanese.",
+    "event_implication": "For a private community event this is guidance, not an obligation: the city publishes no rule requiring a private event to use any particular language. Copy in plain Japanese with an English version follows the city's own practice; it is not a legal requirement.",
+    "not_established": "The page sets no obligation on a private event's language, gives no figure for which languages Kyoto residents understand, and does not address interpretation or signage at a hired venue."
+   },
+   "verified_at": "2026-11-28",
+   "source_url": "https://www.city.kyoto.lg.jp/sogo/page/0000250837.html",
+   "source_title": "京都市 生活ガイドブック（やさしい日本語版）総合目次 (ページ番号250837, 2019年4月26日)",
+   "source_locator": "captures/claim_language_kyoto_yasashii.html — the 「やさしい日本語」 とは definition sentence and the following このページでは… sentence under the page heading 生活ガイドブック（やさしい日本語版）総合目次 (ページ番号250837, 2019年4月26日); the language row (English 한글 中文簡体 中文繁體 やさしい日本語) in the page header; and the お問い合わせ先 footer naming 京都市 総合企画局市長公室広報担当. The sentences were matched after tag stripping and whitespace normalisation, so the spaces inside the quoted Japanese are the page's furigana markup and not typos; the language row is link markup, matched the same way.",
+   "quote": "「やさしい日本語」 とは 難しい単語 や 表現を 使わない 日本語のこと です。 … このページでは 外国人の方、 障害のある方 など にも 分かりやすい 言葉で 京都市の 暮らしに 役立つ 情報 や 防災情報 を 書いています。",
+   "language": "ja"
+  },
+  "alcohol": {
+   "value": {
+    "authority": "国税庁（酒税法）— the 期限付酒類小売業免許 route for a temporary 販売場 set up at a 博覧会場等, and the 販売業免許 rule for selling alcohol from a 販売場.",
+    "quoted_rule_scope": "国税庁 states that setting up a temporary 販売場 at a 博覧会場等 to sell alcohol at retail requires a 期限を付した酒類小売業免許 (期限付酒類小売業免許), applied for in principle at least two weeks before the sales point opens, or notified at least ten days before when the printed 要件 are met, filed with 臨時販売場の所在地の所轄税務署.",
+    "notification_route_scope": "The ten-day 届出 route is open only where the filer is a 酒類製造者又は酒類販売業者 and the venue is one that the filer, or a party closely related to the filer, does not manage or operate as the event organiser; its other printed 要件 include an event of seven days or less (or wholly/mostly ticketed), alcohol retail not the event's main purpose, dates fixed in advance, the sales point identified in the venue contract, the same product range as the filer's licence, and no delivery away from the event site.",
+    "on_premises_rule_scope": "Q3 answers only for a 酒場・料理店 serving alcohol 専ら自己の営業場: serving it there for drinking on those premises needs no 販売業免許, while selling alcohol for drinking away from those premises needs a 販売業免許 from the 所轄税務署長, one per 販売場.",
+    "hired_room_scope": "A hired hall is not the organiser's own 営業場, so the Q3 exemption does not settle alcohol at a rented venue, and nothing on these two pages addresses a private, invitation-only event in a hired room.",
+    "selling_needs_licence": "Selling alcohol at the event — a cash or ticket bar included — is a 酒類の小売, and the 販売業免許 rule printed in Q3 is the one that governs selling from a 販売場. Whether a private event inside a hired hall is a 博覧会場等 is not established by these pages.",
+    "licence_by_activity": "A 期限付き酒類小売業免許 covers a temporary 販売場 set up at a 博覧会場等, and a 販売業免許 from the 販売場の所在地の所轄税務署長, one per 販売場, covers selling alcohol from a 販売場; Q3's exemption from 販売業免許 covers only a 酒場・料理店 serving alcohol 専ら自己の営業場.",
+    "competent_desk": "The competent desk is the 所轄税務署 for the venue's address — 臨時販売場の所在地の所轄税務署 for a temporary point, 販売場の所在地の所轄税務署長 for a 販売業免許 — to be confirmed per venue. The quoted pages print no 管轄区域 table and establish no ward-to-office assignment.",
+    "who_must_hold_it": "In the authority's own terms it is held by the filer or the seller: the ten-day 届出 route requires the filer to be a 酒類製造者又は酒類販売業者, and the 販売業免許 route names the person selling from the 販売場.",
+    "not_established": "The pages do not say who holds the licence for a 50-person private event — whether the venue, the caterer or the organiser — or which 税務署 covers a given venue address. They also do not say whether complimentary drinks with no sale need any licence, whether a private invitation-only event is a 博覧会場等 for this rule, what the fees and processing time are, or what a hotel's or caterer's existing licence covers at a hired venue."
+   },
+   "verified_at": "2026-11-28",
+   "source_url": "https://www.nta.go.jp/taxes/sake/menkyo/tebiki/kourigyou2016/index.htm",
+   "source_title": "国税庁 期限付酒類小売業免許について; 国税庁 お酒に関するQ&A（よくある質問）【販売業免許関係】Q3",
+   "source_locator": "captures/claim_alcohol_nta_limited_retail.html — 国税庁 期限付酒類小売業免許について, the lead sentence, the two-week / ten-day sentence, the 所轄税務署 filing sentence and 要件 2 and 3; captures/claim_alcohol_nta_qa03.html — 国税庁 お酒に関するQ&A【販売業免許関係】Q3, the whole answer sentence. The 所轄税務署 phrase and the two 要件 lines are page text or list markup, so those segments were matched after tag stripping; the paragraph quotes are raw substrings of the saved bytes (both 国税庁 pages are Shift_JIS and the saved bytes were decoded before matching). The two pages print no 管轄区域 table, so the claim assigns no ward or venue to a particular 税務署.",
+   "quote": "博覧会場等で臨時に販売場を設けて酒類の小売を行う場合には、期限を付した酒類小売業免許を申請し、取得していただく必要があります。 … 期限付酒類小売業免許を受けるためには、原則として、販売場を開設する日の２週間前までに申請する必要がありますが、一定の要件を満たす場合には、販売場を開設する日の10日前までに届け出ることで、期限付酒類小売業免許を受けたものとして取り扱うこととしています。 … 博覧会場等で臨時に酒類を販売するときは、以下の判定表で各項目を御確認いただき、臨時販売場の 所在地の所轄税務署 に、申請書又は届出書を提出してください。 … 届出をする者が、酒類製造者又は酒類販売業者であること … 博覧会場等（届出者又は届出者と密接な関係にある者が催物等の主催者として管理、運営していない場所（施設、建物等を含む）に限る）で臨時に販売場を設け酒類の小売を行う場合であること … 酒場、料理店その他酒類を専ら自己の営業場で飲用に供する業を行う場合には、販売業免許は必要ありませんが、例えばテイクアウト用など、その営業場以外の場所で飲用に供されるための酒類を販売する場合には、酒税法に基づき、販売場ごとにその販売場の所在地の所轄税務署長から販売業免許を受ける必要があります。",
+   "language": "ja",
+   "additional_sources": [
+    {
+     "capture": "captures/claim_alcohol_nta_qa03.html",
+     "source_title": "国税庁 お酒に関するQ&A（よくある質問）【販売業免許関係】Q3",
+     "source_url": "https://www.nta.go.jp/taxes/sake/qa/03b/03.htm"
+    }
+   ]
+  },
+  "food": {
+   "value": {
+    "authority": "京都市保健所; the licence counter is 京都市医療衛生センター, reached through the 食品衛生申請等システム or in person",
+    "fixed_premises": "京都市 states that running a 飲食店 (restaurant, cafe, bar) or manufacturing and processing food for sale needs a 食品衛生法 営業許可, and prints the flow as 事前相談 → 電子又は窓口申請 → 審査（書類審査・実地調査） → 許可.",
+    "event_route": "Not established by this page: it publishes the fixed-premises 営業許可 route and says nothing about a 臨時営業 licence or 臨時出店 notification for a one-off event, so no event-food route is asserted for Kyoto.",
+    "licence": "食品衛生法に基づく営業許可（飲食店営業を含む）",
+    "not_established": "These pages do not say who holds the licence for a private event (caterer or organiser), whether a member-only event needs any notification at all, what the fee and lead time are, or whether a hotel or venue kitchen licence covers catering into a hired room; those stay venue-level questions."
+   },
+   "verified_at": "2026-11-28",
+   "source_url": "https://www.city.kyoto.lg.jp/hokenfukushi/page/0000082748.html",
+   "source_title": "京都市 営業許可申請方法 (ページ番号82748, updated 2026年7月7日)",
+   "source_locator": "captures/claim_food_kyoto_kyoka.html — 京都市 営業許可申請方法, section 新たに営業許可を受けるには（新規）: the 飲食店 licence sentence, the 手続きのおよその流れ sentence with its 事前相談 → 電子又は窓口申請 → 審査（書類審査・実地調査） → 許可 line, and step 1 事前相談 with the 施設基準 sentence and the 医療衛生センター sentence. Text matched after tag stripping and whitespace normalisation; the 医療衛生センター mentions elsewhere on the page are link markup.",
+   "quote": "飲食店（レストラン、カフェ、バーなど）を営業したり、食品を製造、加工販売（鮮魚介類、生肉など）するには、食品衛生法に基づく許可が必要です。 … 新たに営業許可を受ける手続きのおよその流れは次のとおりです。 … 事前相談 → 電子又は窓口申請 → 審査（書類審査・実地調査） → 許可 … 営業の種類によって施設基準が定められています。 … 施設の工事着工前に施設の図面を持参し医療衛生センターで、事前相談することをおすすめします。",
+   "language": "ja"
+  }
+ },
+ "venue_coordinates": {
+  "kokoka 京都市国際交流会館 — Event Hall（イベントホール）": {
+   "language": "ja",
+   "map_target": "〒606-8536 京都市左京区粟田口鳥居町2番地の1（kokoka Kyoto International Community House, 2-1 Awataguchi Toriicho, Sakyo-ku, Kyoto 606-8536）",
+   "precision": "building",
+   "quote": "〒606-8536 京都市左京区粟田口鳥居町2番地の1（kokoka Kyoto International Community House, 2-1 Awataguchi Toriicho, Sakyo-ku, Kyoto 606-8536） — returned latitude 35.010658, longitude 135.787567",
+   "source_locator": "captures/geo_kokoka.json — GSI address-search response for 〒606-8536 京都市左京区粟田口鳥居町2番地の1（kokoka Kyoto International Community House, 2-1 Awataguchi Toriicho, Sakyo-ku, Kyoto 606-8536）; matched address printed as above and returned latitude 35.010658, longitude 135.787567. GSI address search does not return a building polygon, so the tier stays `building`.",
+   "source_url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E5%B7%A6%E4%BA%AC%E5%8C%BA%E7%B2%9F%E7%94%B0%E5%8F%A3%E9%B3%A5%E5%B1%85%E7%94%BA2-1",
+   "verified_at": "2026-11-28"
+  },
+  "kokoka 京都市国際交流会館 — Special Conference Room（特別会議室）": {
+   "language": "ja",
+   "map_target": "〒606-8536 京都市左京区粟田口鳥居町2番地の1（kokoka Kyoto International Community House, Sakyo-ku, Kyoto 606-8536）",
+   "precision": "building",
+   "quote": "〒606-8536 京都市左京区粟田口鳥居町2番地の1（kokoka Kyoto International Community House, Sakyo-ku, Kyoto 606-8536） — returned latitude 35.010658, longitude 135.787567",
+   "source_locator": "captures/geo_kokoka.json — GSI address-search response for 〒606-8536 京都市左京区粟田口鳥居町2番地の1（kokoka Kyoto International Community House, Sakyo-ku, Kyoto 606-8536）; matched address printed as above and returned latitude 35.010658, longitude 135.787567. GSI address search does not return a building polygon, so the tier stays `building`.",
+   "source_url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E5%B7%A6%E4%BA%AC%E5%8C%BA%E7%B2%9F%E7%94%B0%E5%8F%A3%E9%B3%A5%E5%B1%85%E7%94%BA2-1",
+   "verified_at": "2026-11-28"
+  },
+  "kokoka 京都市国際交流会館 — Conference Rooms 1 + 2（第1・第2会議室 連結）": {
+   "language": "ja",
+   "map_target": "〒606-8536 京都市左京区粟田口鳥居町2番地の1（kokoka Kyoto International Community House, Sakyo-ku, Kyoto 606-8536）",
+   "precision": "building",
+   "quote": "〒606-8536 京都市左京区粟田口鳥居町2番地の1（kokoka Kyoto International Community House, Sakyo-ku, Kyoto 606-8536） — returned latitude 35.010658, longitude 135.787567",
+   "source_locator": "captures/geo_kokoka.json — GSI address-search response for 〒606-8536 京都市左京区粟田口鳥居町2番地の1（kokoka Kyoto International Community House, Sakyo-ku, Kyoto 606-8536）; matched address printed as above and returned latitude 35.010658, longitude 135.787567. GSI address search does not return a building polygon, so the tier stays `building`.",
+   "source_url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E5%B7%A6%E4%BA%AC%E5%8C%BA%E7%B2%9F%E7%94%B0%E5%8F%A3%E9%B3%A5%E5%B1%85%E7%94%BA2-1",
+   "verified_at": "2026-11-28"
+  },
+  "kokoka 京都市国際交流会館 — Seminar Room（セミナー室）": {
+   "language": "ja",
+   "map_target": "〒606-8536 京都市左京区粟田口鳥居町2番地の1（kokoka Kyoto International Community House, Sakyo-ku, Kyoto 606-8536）",
+   "precision": "building",
+   "quote": "〒606-8536 京都市左京区粟田口鳥居町2番地の1（kokoka Kyoto International Community House, Sakyo-ku, Kyoto 606-8536） — returned latitude 35.010658, longitude 135.787567",
+   "source_locator": "captures/geo_kokoka.json — GSI address-search response for 〒606-8536 京都市左京区粟田口鳥居町2番地の1（kokoka Kyoto International Community House, Sakyo-ku, Kyoto 606-8536）; matched address printed as above and returned latitude 35.010658, longitude 135.787567. GSI address search does not return a building polygon, so the tier stays `building`.",
+   "source_url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E5%B7%A6%E4%BA%AC%E5%8C%BA%E7%B2%9F%E7%94%B0%E5%8F%A3%E9%B3%A5%E5%B1%85%E7%94%BA2-1",
+   "verified_at": "2026-11-28"
+  },
+  "ハートピア京都（京都府立総合社会福祉会館）— 第5会議室": {
+   "language": "ja",
+   "map_target": "〒604-0874 京都市中京区竹屋町通烏丸東入る清水町375番地（Kyoto Prefectural Comprehensive Social Welfare Hall, 375 Shimizu-cho, Nakagyo-ku, Kyoto）",
+   "precision": "building",
+   "quote": "〒604-0874 京都市中京区竹屋町通烏丸東入る清水町375番地（Kyoto Prefectural Comprehensive Social Welfare Hall, 375 Shimizu-cho, Nakagyo-ku, Kyoto） — returned latitude 35.016354, longitude 135.759842",
+   "source_locator": "captures/geo_heartpia.json — GSI address-search response for 〒604-0874 京都市中京区竹屋町通烏丸東入る清水町375番地（Kyoto Prefectural Comprehensive Social Welfare Hall, 375 Shimizu-cho, Nakagyo-ku, Kyoto）; matched address printed as above and returned latitude 35.016354, longitude 135.759842. GSI address search does not return a building polygon, so the tier stays `building`.",
+   "source_url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E4%B8%AD%E4%BA%AC%E5%8C%BA%E6%B8%85%E6%B0%B4%E7%94%BA375",
+   "verified_at": "2026-11-28"
+  },
+  "ハートピア京都（京都府立総合社会福祉会館）— 大会議室": {
+   "language": "ja",
+   "map_target": "〒604-0874 京都市中京区竹屋町通烏丸東入る清水町375番地（Kyoto Prefectural Comprehensive Social Welfare Hall, Nakagyo-ku, Kyoto）",
+   "precision": "building",
+   "quote": "〒604-0874 京都市中京区竹屋町通烏丸東入る清水町375番地（Kyoto Prefectural Comprehensive Social Welfare Hall, Nakagyo-ku, Kyoto） — returned latitude 35.016354, longitude 135.759842",
+   "source_locator": "captures/geo_heartpia.json — GSI address-search response for 〒604-0874 京都市中京区竹屋町通烏丸東入る清水町375番地（Kyoto Prefectural Comprehensive Social Welfare Hall, Nakagyo-ku, Kyoto）; matched address printed as above and returned latitude 35.016354, longitude 135.759842. GSI address search does not return a building polygon, so the tier stays `building`.",
+   "source_url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E4%B8%AD%E4%BA%AC%E5%8C%BA%E6%B8%85%E6%B0%B4%E7%94%BA375",
+   "verified_at": "2026-11-28"
+  },
+  "京都市勧業館 みやこめっせ — 大会議室（B1F）": {
+   "language": "ja",
+   "map_target": "〒606-8343 京都市左京区岡崎成勝寺町9-1（Miyako Messe, 9-1 Okazaki Seishoji-cho, Sakyo-ku, Kyoto）",
+   "precision": "building",
+   "quote": "〒606-8343 京都市左京区岡崎成勝寺町9-1（Miyako Messe, 9-1 Okazaki Seishoji-cho, Sakyo-ku, Kyoto） — returned latitude 35.013077, longitude 135.781433",
+   "source_locator": "captures/geo_miyakomesse.json — GSI address-search response for 〒606-8343 京都市左京区岡崎成勝寺町9-1（Miyako Messe, 9-1 Okazaki Seishoji-cho, Sakyo-ku, Kyoto）; matched address printed as above and returned latitude 35.013077, longitude 135.781433. GSI address search does not return a building polygon, so the tier stays `building`.",
+   "source_url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E5%B7%A6%E4%BA%AC%E5%8C%BA%E5%B2%A1%E5%B4%8E%E6%88%90%E5%8B%9D%E5%AF%BA%E7%94%BA9-1",
+   "verified_at": "2026-11-28"
+  },
+  "京都市生涯学習総合センター（京都アスニー）— 第2研修室": {
+   "language": "ja",
+   "map_target": "〒604-8401 京都市中京区聚楽廻松下町9-2（Kyoto Asny Lifelong Learning Centre, 9-2 Jurakumawari Matsushita-cho, Nakagyo-ku, Kyoto）",
+   "precision": "building",
+   "quote": "〒604-8401 京都市中京区聚楽廻松下町9-2（Kyoto Asny Lifelong Learning Centre, 9-2 Jurakumawari Matsushita-cho, Nakagyo-ku, Kyoto） — returned latitude 35.019047, longitude 135.738464",
+   "source_locator": "captures/geo_asny.json — GSI address-search response for 〒604-8401 京都市中京区聚楽廻松下町9-2（Kyoto Asny Lifelong Learning Centre, 9-2 Jurakumawari Matsushita-cho, Nakagyo-ku, Kyoto）; matched address printed as above and returned latitude 35.019047, longitude 135.738464. GSI address search does not return a building polygon, so the tier stays `building`.",
+   "source_url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E4%B8%AD%E4%BA%AC%E5%8C%BA%E8%81%9A%E6%A5%BD%E5%BB%BB%E6%9D%BE%E4%B8%8B%E7%94%BA9-2",
+   "verified_at": "2026-11-28"
+  },
+  "京都市生涯学習総合センター（京都アスニー）— 第3研修室": {
+   "language": "ja",
+   "map_target": "〒604-8401 京都市中京区聚楽廻松下町9-2（Kyoto Asny Lifelong Learning Centre, Nakagyo-ku, Kyoto）",
+   "precision": "building",
+   "quote": "〒604-8401 京都市中京区聚楽廻松下町9-2（Kyoto Asny Lifelong Learning Centre, Nakagyo-ku, Kyoto） — returned latitude 35.019047, longitude 135.738464",
+   "source_locator": "captures/geo_asny.json — GSI address-search response for 〒604-8401 京都市中京区聚楽廻松下町9-2（Kyoto Asny Lifelong Learning Centre, Nakagyo-ku, Kyoto）; matched address printed as above and returned latitude 35.019047, longitude 135.738464. GSI address search does not return a building polygon, so the tier stays `building`.",
+   "source_url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E4%B8%AD%E4%BA%AC%E5%8C%BA%E8%81%9A%E6%A5%BD%E5%BB%BB%E6%9D%BE%E4%B8%8B%E7%94%BA9-2",
+   "verified_at": "2026-11-28"
+  },
+  "ホテルエルシエント京都八条口 — Conference Room B（カンファレンスルームB）": {
+   "language": "ja",
+   "map_target": "〒601-8004 京都市南区東九条東山王町13（Hotel Elcient Kyoto Hachijoguchi, 13 Higashikujo Higashiyama-o-cho, Minami-ku, Kyoto）",
+   "precision": "building",
+   "quote": "〒601-8004 京都市南区東九条東山王町13（Hotel Elcient Kyoto Hachijoguchi, 13 Higashikujo Higashiyama-o-cho, Minami-ku, Kyoto） — returned latitude 34.98354, longitude 135.761627",
+   "source_locator": "captures/geo_elcient.json — GSI address-search response for 〒601-8004 京都市南区東九条東山王町13（Hotel Elcient Kyoto Hachijoguchi, 13 Higashikujo Higashiyama-o-cho, Minami-ku, Kyoto）; matched address printed as above and returned latitude 34.98354, longitude 135.761627. GSI address search does not return a building polygon, so the tier stays `building`.",
+   "source_url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E5%8D%97%E5%8C%BA%E6%9D%B1%E4%B9%9D%E6%9D%A1%E6%9D%B1%E5%B1%B1%E7%8E%8B%E7%94%BA13",
+   "verified_at": "2026-11-28"
+  },
+  "ハートンホテル京都 — 嵐山（2F ホール）": {
+   "language": "ja",
+   "map_target": "〒604-0836 京都市中京区東洞院通御池上ル船屋町405（Hearton Hotel Kyoto, 405 Funaya-cho, Nakagyo-ku, Kyoto）",
+   "precision": "building",
+   "quote": "〒604-0836 京都市中京区東洞院通御池上ル船屋町405（Hearton Hotel Kyoto, 405 Funaya-cho, Nakagyo-ku, Kyoto） — returned latitude 35.011631, longitude 135.760818",
+   "source_locator": "captures/geo_hearton.json — GSI address-search response for 〒604-0836 京都市中京区東洞院通御池上ル船屋町405（Hearton Hotel Kyoto, 405 Funaya-cho, Nakagyo-ku, Kyoto）; matched address printed as above and returned latitude 35.011631, longitude 135.760818. GSI address search does not return a building polygon, so the tier stays `building`.",
+   "source_url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E4%B8%AD%E4%BA%AC%E5%8C%BA%E8%88%B9%E5%B1%8B%E7%94%BA405",
+   "verified_at": "2026-11-28"
+  },
+  "ハートンホテル京都 — 宇治伏見（1F 大ホール）": {
+   "language": "ja",
+   "map_target": "〒604-0836 京都市中京区東洞院通御池上ル船屋町405（Hearton Hotel Kyoto, Nakagyo-ku, Kyoto）",
+   "precision": "building",
+   "quote": "〒604-0836 京都市中京区東洞院通御池上ル船屋町405（Hearton Hotel Kyoto, Nakagyo-ku, Kyoto） — returned latitude 35.011631, longitude 135.760818",
+   "source_locator": "captures/geo_hearton.json — GSI address-search response for 〒604-0836 京都市中京区東洞院通御池上ル船屋町405（Hearton Hotel Kyoto, Nakagyo-ku, Kyoto）; matched address printed as above and returned latitude 35.011631, longitude 135.760818. GSI address search does not return a building polygon, so the tier stays `building`.",
+   "source_url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E4%B8%AD%E4%BA%AC%E5%8C%BA%E8%88%B9%E5%B1%8B%E7%94%BA405",
+   "verified_at": "2026-11-28"
+  },
+  "京都リサーチパーク（KRP）西地区4号館 — ルーム2": {
+   "language": "ja",
+   "map_target": "〒600-8815 京都市下京区中堂寺粟田町93（Kyoto Research Park West Area Building 4, 93 Chudoji Awata-cho, Shimogyo-ku, Kyoto）",
+   "precision": "building",
+   "quote": "〒600-8815 京都市下京区中堂寺粟田町93（Kyoto Research Park West Area Building 4, 93 Chudoji Awata-cho, Shimogyo-ku, Kyoto） — returned latitude 34.99498, longitude 135.738541",
+   "source_locator": "captures/geo_krp.json — GSI address-search response for 〒600-8815 京都市下京区中堂寺粟田町93（Kyoto Research Park West Area Building 4, 93 Chudoji Awata-cho, Shimogyo-ku, Kyoto）; matched address printed as above and returned latitude 34.99498, longitude 135.738541. GSI address search does not return a building polygon, so the tier stays `building`.",
+   "source_url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E4%B8%8B%E4%BA%AC%E5%8C%BA%E4%B8%AD%E5%A0%82%E5%AF%BA%E7%B2%9F%E7%94%B0%E7%94%BA93",
+   "verified_at": "2026-11-28"
+  },
+  "京都大学 百周年時計台記念館 — 国際交流ホール I（2F）": {
+   "language": "ja",
+   "map_target": "京都市左京区吉田本町（Kyoto University Clock Tower Centennial Hall, Yoshida-honmachi, Sakyo-ku, Kyoto 606-8501）",
+   "precision": "building",
+   "quote": "京都市左京区吉田本町（Kyoto University Clock Tower Centennial Hall, Yoshida-honmachi, Sakyo-ku, Kyoto 606-8501） — returned latitude 35.026962, longitude 135.781967",
+   "source_locator": "captures/geo_kyotou.json — GSI address-search response for 京都市左京区吉田本町（Kyoto University Clock Tower Centennial Hall, Yoshida-honmachi, Sakyo-ku, Kyoto 606-8501）; matched address printed as above and returned latitude 35.026962, longitude 135.781967. GSI address search does not return a building polygon, so the tier stays `building`.",
+   "source_url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E5%B7%A6%E4%BA%AC%E5%8C%BA%E5%90%89%E7%94%B0%E6%9C%AC%E7%94%BA",
+   "verified_at": "2026-11-28"
+  },
+  "京都府立京都学・歴彩館 — 小ホール（会議室）": {
+   "language": "ja",
+   "map_target": "〒606-0823 京都市左京区下鴨半木町1-29（Kyoto Prefectural Library and Archives, 1-29 Shimogamo Hangi-cho, Sakyo-ku, Kyoto）",
+   "precision": "building",
+   "quote": "〒606-0823 京都市左京区下鴨半木町1-29（Kyoto Prefectural Library and Archives, 1-29 Shimogamo Hangi-cho, Sakyo-ku, Kyoto） — returned latitude 35.050365, longitude 135.75975",
+   "source_locator": "captures/geo_rekisaikan.json — GSI address-search response for 〒606-0823 京都市左京区下鴨半木町1-29（Kyoto Prefectural Library and Archives, 1-29 Shimogamo Hangi-cho, Sakyo-ku, Kyoto）; matched address printed as above and returned latitude 35.050365, longitude 135.75975. GSI address search does not return a building polygon, so the tier stays `building`.",
+   "source_url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E5%B7%A6%E4%BA%AC%E5%8C%BA%E4%B8%8B%E9%B4%A8%E5%8D%8A%E6%9C%A8%E7%94%BA1-29",
+   "verified_at": "2026-11-28"
+  },
+  "Impact Hub Kyoto — 2F 会所 Event Space（西陣産業創造會舘）": {
+   "language": "ja",
+   "map_target": "〒602-8061 京都市上京区油小路中立売西入ル甲斐守町97番地（Nishijin Sangyo Sosei Kaikan, 97 Kaifushicho, Kamigyo-ku, Kyoto）",
+   "precision": "building",
+   "quote": "〒602-8061 京都市上京区油小路中立売西入ル甲斐守町97番地（Nishijin Sangyo Sosei Kaikan, 97 Kaifushicho, Kamigyo-ku, Kyoto） — returned latitude 35.024364, longitude 135.753296",
+   "source_locator": "captures/geo_impacthub.json — GSI address-search response for 〒602-8061 京都市上京区油小路中立売西入ル甲斐守町97番地（Nishijin Sangyo Sosei Kaikan, 97 Kaifushicho, Kamigyo-ku, Kyoto）; matched address printed as above and returned latitude 35.024364, longitude 135.753296. GSI address search does not return a building polygon, so the tier stays `building`.",
+   "source_url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=京都市上京区甲斐守町97",
+   "verified_at": "2026-11-28"
+  },
+  "THE TERMINAL KYOTO（京町家レンタルスペース）": {
+   "language": "ja",
+   "map_target": "〒600-8445 京都市下京区新町通仏光寺下ル岩戸山町424番地（THE TERMINAL KYOTO, 424 Iwadoyama-cho, Shimogyo-ku, Kyoto）",
+   "precision": "building",
+   "quote": "〒600-8445 京都市下京区新町通仏光寺下ル岩戸山町424番地（THE TERMINAL KYOTO, 424 Iwadoyama-cho, Shimogyo-ku, Kyoto） — returned latitude 35.000706, longitude 135.756927",
+   "source_locator": "captures/geo_terminal.json — GSI address-search response for 〒600-8445 京都市下京区新町通仏光寺下ル岩戸山町424番地（THE TERMINAL KYOTO, 424 Iwadoyama-cho, Shimogyo-ku, Kyoto）; matched address printed as above and returned latitude 35.000706, longitude 135.756927. GSI address search does not return a building polygon, so the tier stays `building`.",
+   "source_url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E4%B8%8B%E4%BA%AC%E5%8C%BA%E5%B2%A9%E6%88%B8%E5%B1%B1%E7%94%BA424",
+   "verified_at": "2026-11-28"
+  },
+  "FabCafe Kyoto — 2F 和室（14畳 レンタルスペース）": {
+   "language": "ja",
+   "map_target": "〒600-8119 京都市下京区本塩竈町554（FabCafe Kyoto, 554 Hon-Shiokoya-cho, Shimogyo-ku, Kyoto）",
+   "precision": "building",
+   "quote": "〒600-8119 京都市下京区本塩竈町554（FabCafe Kyoto, 554 Hon-Shiokoya-cho, Shimogyo-ku, Kyoto） — returned latitude 34.995129, longitude 135.765045",
+   "source_locator": "captures/geo_fabcafe.json — GSI address-search response for 〒600-8119 京都市下京区本塩竈町554（FabCafe Kyoto, 554 Hon-Shiokoya-cho, Shimogyo-ku, Kyoto）; matched address printed as above and returned latitude 34.995129, longitude 135.765045. GSI address search does not return a building polygon, so the tier stays `building`.",
+   "source_url": "https://msearch.gsi.go.jp/address-search/AddressSearch?q=%E4%BA%AC%E9%83%BD%E5%BA%9C%E4%BA%AC%E9%83%BD%E5%B8%82%E4%B8%8B%E4%BA%AC%E5%8C%BA%E6%9C%AC%E5%A1%A9%E7%AB%88%E7%94%BA554",
+   "verified_at": "2026-11-28"
+  }
+ },
+ "photos": {
+  "kokoka 京都市国際交流会館 — Event Hall（イベントホール）": [
+   {
+    "alt": "イベントホールイメージ (operator caption)",
+    "alt_basis": "operator_page_caption",
+    "checked_on": "2026-11-28",
+    "dimensions": {
+     "height": 464,
+     "width": 826
+    },
+    "hotlink_ok": true,
+    "index": 0,
+    "licence": null,
+    "licence_url": null,
+    "player_page": null,
+    "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+    "rights_basis": "operator_page",
+    "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+    "room": "イベントホール",
+    "room_specific": true,
+    "source_page": "https://kcif.or.jp/web/en/facilityrental/facility",
+    "url": "https://kcif.or.jp/web/assets/images/facility/facility_th01.jpg",
+    "verified": {
+     "bytes": 98919,
+     "checked_on": "2026-11-28",
+     "content_type": "image/jpeg",
+     "status": "200"
+    },
+    "view_kind": "interior",
+    "withheld": false
+   }
+  ],
+  "kokoka 京都市国際交流会館 — Special Conference Room（特別会議室）": [
+   {
+    "alt": "特別会議室イメージ (operator caption)",
+    "alt_basis": "operator_page_caption",
+    "checked_on": "2026-11-28",
+    "dimensions": {
+     "height": 464,
+     "width": 826
+    },
+    "hotlink_ok": true,
+    "index": 0,
+    "licence": null,
+    "licence_url": null,
+    "player_page": null,
+    "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+    "rights_basis": "operator_page",
+    "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+    "room": "特別会議室",
+    "room_specific": true,
+    "source_page": "https://kcif.or.jp/web/en/facilityrental/facility",
+    "url": "https://kcif.or.jp/web/assets/images/facility/facility_th02.jpg",
+    "verified": {
+     "bytes": 81840,
+     "checked_on": "2026-11-28",
+     "content_type": "image/jpeg",
+     "status": "200"
+    },
+    "view_kind": "interior",
+    "withheld": false
+   }
+  ],
+  "kokoka 京都市国際交流会館 — Conference Rooms 1 + 2（第1・第2会議室 連結）": [
+   {
+    "alt": "第1会議室／第2会議室イメージ (operator caption)",
+    "alt_basis": "operator_page_caption",
+    "checked_on": "2026-11-28",
+    "dimensions": {
+     "height": 464,
+     "width": 826
+    },
+    "hotlink_ok": true,
+    "index": 0,
+    "licence": null,
+    "licence_url": null,
+    "player_page": null,
+    "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+    "rights_basis": "operator_page",
+    "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+    "room": "第1会議室／第2会議室",
+    "room_specific": true,
+    "source_page": "https://kcif.or.jp/web/en/facilityrental/facility",
+    "url": "https://kcif.or.jp/web/assets/images/facility/facility_th03.jpg",
+    "verified": {
+     "bytes": 135184,
+     "checked_on": "2026-11-28",
+     "content_type": "image/jpeg",
+     "status": "200"
+    },
+    "view_kind": "interior",
+    "withheld": false
+   }
+  ],
+  "kokoka 京都市国際交流会館 — Seminar Room（セミナー室）": [
+   {
+    "alt": "No photograph of this room on a captured operator page",
+    "alt_basis": "none",
+    "checked_on": "2026-11-28",
+    "hotlink_ok": null,
+    "index": 0,
+    "licence": null,
+    "licence_url": null,
+    "placement_proof": "Withheld: the captured facility page illustrates イベントホール・特別会議室・第1/第2会議室・第3/第4会議室・研究室・和風別館・交流サロン only; no photograph of the セミナー室 was on the page on 2026-11-28.",
+    "player_page": null,
+    "rights": null,
+    "rights_basis": "none",
+    "rights_note": "Nothing is shown rather than an exterior, a look-alike or a stock image.",
+    "room": "none",
+    "room_specific": false,
+    "source_page": "https://kcif.or.jp/web/en/facilityrental/facility",
+    "url": null,
+    "verified": null,
+    "view_kind": null,
+    "withheld": true
+   }
+  ],
+  "ハートピア京都（京都府立総合社会福祉会館）— 第5会議室": [
+   {
+    "alt": "No photograph of this room on a captured operator page",
+    "alt_basis": "none",
+    "checked_on": "2026-11-28",
+    "hotlink_ok": null,
+    "index": 0,
+    "licence": null,
+    "licence_url": null,
+    "placement_proof": "Withheld: the captured fee page carries a logo and four banner images and no room photograph; the convention index (heartpia_convention.html) returned HTTP 403 on 2026-11-28.",
+    "player_page": null,
+    "rights": null,
+    "rights_basis": "none",
+    "rights_note": "Nothing is shown rather than an exterior, a look-alike or a stock image.",
+    "room": "none",
+    "room_specific": false,
+    "source_page": "https://heartpia-kyoto.jp/convention/fee.html",
+    "url": null,
+    "verified": null,
+    "view_kind": null,
+    "withheld": true
+   }
+  ],
+  "ハートピア京都（京都府立総合社会福祉会館）— 大会議室": [
+   {
+    "alt": "No photograph of this room on a captured operator page",
+    "alt_basis": "none",
+    "checked_on": "2026-11-28",
+    "hotlink_ok": null,
+    "index": 0,
+    "licence": null,
+    "licence_url": null,
+    "placement_proof": "Withheld: the captured fee page carries a logo and four banner images and no room photograph; the convention index (heartpia_convention.html) returned HTTP 403 on 2026-11-28.",
+    "player_page": null,
+    "rights": null,
+    "rights_basis": "none",
+    "rights_note": "Nothing is shown rather than an exterior, a look-alike or a stock image.",
+    "room": "none",
+    "room_specific": false,
+    "source_page": "https://heartpia-kyoto.jp/convention/fee.html",
+    "url": null,
+    "verified": null,
+    "view_kind": null,
+    "withheld": true
+   }
+  ],
+  "京都市勧業館 みやこめっせ — 大会議室（B1F）": [
+   {
+    "alt": "大会議室（スクリーン） (operator caption)",
+    "alt_basis": "operator_page_caption",
+    "checked_on": "2026-11-28",
+    "dimensions": {
+     "height": 4173,
+     "width": 6260
+    },
+    "hotlink_ok": true,
+    "index": 0,
+    "licence": null,
+    "licence_url": null,
+    "player_page": null,
+    "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+    "rights_basis": "operator_page",
+    "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+    "room": "大会議室",
+    "room_specific": true,
+    "source_page": "https://www.miyakomesse.jp/planner/information/conference-room-main/",
+    "url": "https://www.miyakomesse.jp/planner/assets/images/information/conference-room/conference-room_main01.jpg",
+    "verified": {
+     "bytes": 1784946,
+     "checked_on": "2026-11-28",
+     "content_type": "image/jpeg",
+     "status": "200"
+    },
+    "view_kind": "interior",
+    "withheld": false
+   },
+   {
+    "alt": "大会議室 (operator caption)",
+    "alt_basis": "operator_page_caption",
+    "checked_on": "2026-11-28",
+    "dimensions": {
+     "height": 4321,
+     "width": 6481
+    },
+    "hotlink_ok": true,
+    "index": 1,
+    "licence": null,
+    "licence_url": null,
+    "player_page": null,
+    "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+    "rights_basis": "operator_page",
+    "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+    "room": "大会議室",
+    "room_specific": true,
+    "source_page": "https://www.miyakomesse.jp/planner/information/conference-room-main/",
+    "url": "https://www.miyakomesse.jp/planner/assets/images/information/conference-room/conference-room_main04.jpg",
+    "verified": {
+     "bytes": 2108587,
+     "checked_on": "2026-11-28",
+     "content_type": "image/jpeg",
+     "status": "200"
+    },
+    "view_kind": "interior",
+    "withheld": false
+   },
+   {
+    "alt": "大会議室（ホワイトボード） (operator caption)",
+    "alt_basis": "operator_page_caption",
+    "checked_on": "2026-11-28",
+    "dimensions": {
+     "height": 4321,
+     "width": 6481
+    },
+    "hotlink_ok": true,
+    "index": 2,
+    "licence": null,
+    "licence_url": null,
+    "player_page": null,
+    "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+    "rights_basis": "operator_page",
+    "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+    "room": "大会議室",
+    "room_specific": true,
+    "source_page": "https://www.miyakomesse.jp/planner/information/conference-room-main/",
+    "url": "https://www.miyakomesse.jp/planner/assets/images/information/conference-room/conference-room_main05.jpg",
+    "verified": {
+     "bytes": 1901107,
+     "checked_on": "2026-11-28",
+     "content_type": "image/jpeg",
+     "status": "200"
+    },
+    "view_kind": "interior",
+    "withheld": false
+   },
+   {
+    "alt": "大会議室（プロジェクター投影） (operator caption)",
+    "alt_basis": "operator_page_caption",
+    "checked_on": "2026-11-28",
+    "dimensions": {
+     "height": 4391,
+     "width": 6587
+    },
+    "hotlink_ok": true,
+    "index": 3,
+    "licence": null,
+    "licence_url": null,
+    "player_page": null,
+    "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+    "rights_basis": "operator_page",
+    "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+    "room": "大会議室",
+    "room_specific": true,
+    "source_page": "https://www.miyakomesse.jp/planner/information/conference-room-main/",
+    "url": "https://www.miyakomesse.jp/planner/assets/images/information/conference-room/conference-room_main09.jpg",
+    "verified": {
+     "bytes": 1645464,
+     "checked_on": "2026-11-28",
+     "content_type": "image/jpeg",
+     "status": "200"
+    },
+    "view_kind": "interior",
+    "withheld": false
+   },
+   {
+    "alt": "配置図 (operator caption)",
+    "alt_basis": "operator_page_caption",
+    "checked_on": "2026-11-28",
+    "dimensions": {
+     "height": 1703,
+     "width": 1654
+    },
+    "hotlink_ok": true,
+    "index": 4,
+    "licence": null,
+    "licence_url": null,
+    "player_page": null,
+    "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+    "rights_basis": "operator_page",
+    "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+    "room": "大会議室",
+    "room_specific": true,
+    "source_page": "https://www.miyakomesse.jp/planner/information/conference-room-main/",
+    "url": "https://www.miyakomesse.jp/planner/assets/images/information/conference-room/conference-room_main02.gif",
+    "verified": {
+     "bytes": 312038,
+     "checked_on": "2026-11-28",
+     "content_type": "image/gif",
+     "status": "200"
+    },
+    "view_kind": "floor_plan",
+    "withheld": false
+   }
+  ],
+  "京都市生涯学習総合センター（京都アスニー）— 第2研修室": [
+   {
+    "alt": "第２研修室 (operator caption)",
+    "alt_basis": "operator_page_caption",
+    "checked_on": "2026-11-28",
+    "dimensions": {
+     "height": 900,
+     "width": 1600
+    },
+    "hotlink_ok": true,
+    "index": 0,
+    "licence": null,
+    "licence_url": null,
+    "player_page": null,
+    "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+    "rights_basis": "operator_page",
+    "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+    "room": "第２研修室",
+    "room_specific": true,
+    "source_page": "https://asny.ne.jp/room/",
+    "url": "https://asny.ne.jp/room/images/room_img/2ken/001w.jpg",
+    "verified": {
+     "bytes": 758726,
+     "checked_on": "2026-11-28",
+     "content_type": "image/jpeg",
+     "status": "200"
+    },
+    "view_kind": "interior",
+    "withheld": false
+   }
+  ],
+  "京都市生涯学習総合センター（京都アスニー）— 第3研修室": [
+   {
+    "alt": "第３研修室 (operator caption)",
+    "alt_basis": "operator_page_caption",
+    "checked_on": "2026-11-28",
+    "dimensions": {
+     "height": 900,
+     "width": 1600
+    },
+    "hotlink_ok": true,
+    "index": 0,
+    "licence": null,
+    "licence_url": null,
+    "player_page": null,
+    "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+    "rights_basis": "operator_page",
+    "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+    "room": "第３研修室",
+    "room_specific": true,
+    "source_page": "https://asny.ne.jp/room/",
+    "url": "https://asny.ne.jp/room/images/room_img/3ken/001w.jpg",
+    "verified": {
+     "bytes": 405148,
+     "checked_on": "2026-11-28",
+     "content_type": "image/jpeg",
+     "status": "200"
+    },
+    "view_kind": "interior",
+    "withheld": false
+   }
+  ],
+  "ホテルエルシエント京都八条口 — Conference Room B（カンファレンスルームB）": [
+   {
+    "alt": "カンファレンスルーム メインビジュアル (operator caption)",
+    "alt_basis": "operator_page_caption",
+    "checked_on": "2026-11-28",
+    "dimensions": {
+     "height": 2752,
+     "width": 4128
+    },
+    "hotlink_ok": true,
+    "index": 0,
+    "licence": null,
+    "licence_url": null,
+    "player_page": null,
+    "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+    "rights_basis": "operator_page",
+    "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+    "room": "カンファレンスルームA・B",
+    "room_specific": true,
+    "source_page": "https://elcient.com/kyoto/conference",
+    "url": "https://elcient.com/kyoto/images/conference/meeting-hero-classroom.webp",
+    "verified": {
+     "bytes": 8895156,
+     "checked_on": "2026-11-28",
+     "content_type": "image/webp",
+     "status": "200"
+    },
+    "view_kind": "interior",
+    "withheld": false
+   },
+   {
+    "alt": "スクール形式 平面図（カンファレンスルームA・B） (operator caption)",
+    "alt_basis": "operator_page_caption",
+    "checked_on": "2026-11-28",
+    "dimensions": {
+     "height": 900,
+     "width": 1200
+    },
+    "hotlink_ok": true,
+    "index": 1,
+    "licence": null,
+    "licence_url": null,
+    "player_page": null,
+    "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+    "rights_basis": "operator_page",
+    "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+    "room": "カンファレンスルームA・B",
+    "room_specific": true,
+    "source_page": "https://elcient.com/kyoto/conference",
+    "url": "https://elcient.com/kyoto/images/conference/layout-school.webp",
+    "verified": {
+     "bytes": 64330,
+     "checked_on": "2026-11-28",
+     "content_type": "image/webp",
+     "status": "200"
+    },
+    "view_kind": "floor_plan",
+    "withheld": false
+   },
+   {
+    "alt": "カンファレンスルーム宴会セットアップ (operator caption)",
+    "alt_basis": "operator_page_caption",
+    "checked_on": "2026-11-28",
+    "dimensions": {
+     "height": 2752,
+     "width": 4403
+    },
+    "hotlink_ok": true,
+    "index": 2,
+    "licence": null,
+    "licence_url": null,
+    "player_page": null,
+    "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+    "rights_basis": "operator_page",
+    "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+    "room": "カンファレンスルーム",
+    "room_specific": true,
+    "source_page": "https://elcient.com/kyoto/conference",
+    "url": "https://elcient.com/kyoto/images/conference/conf-banquet-classroom.webp",
+    "verified": {
+     "bytes": 9415570,
+     "checked_on": "2026-11-28",
+     "content_type": "image/webp",
+     "status": "200"
+    },
+    "view_kind": "interior",
+    "withheld": false
+   }
+  ],
+  "ハートンホテル京都 — 嵐山（2F ホール）": [
+   {
+    "alt": "嵐山 (operator caption)",
+    "alt_basis": "operator_page_caption",
+    "checked_on": "2026-11-28",
+    "dimensions": {
+     "height": 240,
+     "width": 360
+    },
+    "hotlink_ok": true,
+    "index": 0,
+    "licence": null,
+    "licence_url": null,
+    "player_page": null,
+    "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+    "rights_basis": "operator_page",
+    "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+    "room": "嵐山",
+    "room_specific": true,
+    "source_page": "https://www.hearton.co.jp/hall/kyoto/kyo-places",
+    "url": "https://www.hearton.co.jp/assets/images/hall/places/kyo_arashiyama.jpg",
+    "verified": {
+     "bytes": 45893,
+     "checked_on": "2026-11-28",
+     "content_type": "image/jpeg",
+     "status": "200"
+    },
+    "view_kind": "interior",
+    "withheld": false
+   }
+  ],
+  "ハートンホテル京都 — 宇治伏見（1F 大ホール）": [
+   {
+    "alt": "宇治伏見 (operator caption)",
+    "alt_basis": "operator_page_caption",
+    "checked_on": "2026-11-28",
+    "dimensions": {
+     "height": 240,
+     "width": 360
+    },
+    "hotlink_ok": true,
+    "index": 0,
+    "licence": null,
+    "licence_url": null,
+    "player_page": null,
+    "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+    "rights_basis": "operator_page",
+    "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+    "room": "宇治伏見",
+    "room_specific": true,
+    "source_page": "https://www.hearton.co.jp/hall/kyoto/kyo-places",
+    "url": "https://www.hearton.co.jp/assets/images/hall/places/kyo_uji-fushimi.jpg",
+    "verified": {
+     "bytes": 42760,
+     "checked_on": "2026-11-28",
+     "content_type": "image/jpeg",
+     "status": "200"
+    },
+    "view_kind": "interior",
+    "withheld": false
+   }
+  ],
+  "京都リサーチパーク（KRP）西地区4号館 — ルーム2": [
+   {
+    "alt": "ルーム2 room page photograph 1 (no caption printed)",
+    "alt_basis": "operator_page_caption",
+    "checked_on": "2026-11-28",
+    "dimensions": {
+     "height": 520,
+     "width": 780
+    },
+    "hotlink_ok": true,
+    "index": 0,
+    "licence": null,
+    "licence_url": null,
+    "player_page": null,
+    "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+    "rights_basis": "operator_page",
+    "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+    "room": "ルーム2",
+    "room_specific": true,
+    "source_page": "https://www.krp.co.jp/kaigi/room/detail/room2.html",
+    "url": "https://www.krp.co.jp/assets/img/kaigi/room/detail/room2/image01.jpg",
+    "verified": {
+     "bytes": 411949,
+     "checked_on": "2026-11-28",
+     "content_type": "image/jpeg",
+     "status": "200"
+    },
+    "view_kind": "interior",
+    "withheld": false
+   },
+   {
+    "alt": "ルーム2 room page photograph 2 (no caption printed)",
+    "alt_basis": "operator_page_caption",
+    "checked_on": "2026-11-28",
+    "dimensions": {
+     "height": 290,
+     "width": 570
+    },
+    "hotlink_ok": true,
+    "index": 1,
+    "licence": null,
+    "licence_url": null,
+    "player_page": null,
+    "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+    "rights_basis": "operator_page",
+    "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+    "room": "ルーム2",
+    "room_specific": true,
+    "source_page": "https://www.krp.co.jp/kaigi/room/detail/room2.html",
+    "url": "https://www.krp.co.jp/assets/img/kaigi/room/detail/room2/image02.jpg",
+    "verified": {
+     "bytes": 18373,
+     "checked_on": "2026-11-28",
+     "content_type": "image/jpeg",
+     "status": "200"
+    },
+    "view_kind": "interior",
+    "withheld": false
+   },
+   {
+    "alt": "ルーム2 room page photograph 3 (no caption printed)",
+    "alt_basis": "operator_page_caption",
+    "checked_on": "2026-11-28",
+    "dimensions": {
+     "height": 290,
+     "width": 570
+    },
+    "hotlink_ok": true,
+    "index": 2,
+    "licence": null,
+    "licence_url": null,
+    "player_page": null,
+    "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+    "rights_basis": "operator_page",
+    "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+    "room": "ルーム2",
+    "room_specific": true,
+    "source_page": "https://www.krp.co.jp/kaigi/room/detail/room2.html",
+    "url": "https://www.krp.co.jp/assets/img/kaigi/room/detail/room2/image03.jpg",
+    "verified": {
+     "bytes": 17849,
+     "checked_on": "2026-11-28",
+     "content_type": "image/jpeg",
+     "status": "200"
+    },
+    "view_kind": "interior",
+    "withheld": false
+   }
+  ],
+  "京都大学 百周年時計台記念館 — 国際交流ホール I（2F）": [
+   {
+    "alt": "国際交流ホール body photograph above 用途：式典、レセプション、会議、学会分科会等 (page context)",
+    "alt_basis": "operator_page_caption",
+    "checked_on": "2026-11-28",
+    "dimensions": {
+     "height": 550,
+     "width": 840
+    },
+    "hotlink_ok": true,
+    "index": 0,
+    "licence": null,
+    "licence_url": null,
+    "player_page": null,
+    "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+    "rights_basis": "operator_page",
+    "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+    "room": "国際交流ホール",
+    "room_specific": true,
+    "source_page": "https://www.kyoto-u.ac.jp/ja/about/facilities/campus/clocktower/organizer/riyo-sisetu/kokusai",
+    "url": "https://www.kyoto-u.ac.jp/sites/default/files/embed/jaclocktoweraboutdetail2014imageskokusai01.jpg",
+    "verified": {
+     "bytes": 215606,
+     "checked_on": "2026-11-28",
+     "content_type": "image/jpeg",
+     "status": "200"
+    },
+    "view_kind": "interior",
+    "withheld": false
+   }
+  ],
+  "京都府立京都学・歴彩館 — 小ホール（会議室）": [
+   {
+    "alt": "小ホール（会議室） rental block image (page context)",
+    "alt_basis": "operator_page_caption",
+    "checked_on": "2026-11-28",
+    "dimensions": {
+     "height": 394,
+     "width": 650
+    },
+    "hotlink_ok": true,
+    "index": 0,
+    "licence": null,
+    "licence_url": null,
+    "player_page": null,
+    "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+    "rights_basis": "operator_page",
+    "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+    "room": "小ホール（会議室）",
+    "room_specific": true,
+    "source_page": "https://rekisaikan.jp/",
+    "url": "https://rekisaikan.jp/cms/wp-content/themes/rekisaikan/img/home/img_rental02.png",
+    "verified": {
+     "bytes": 122721,
+     "checked_on": "2026-11-28",
+     "content_type": "image/png",
+     "status": "200"
+    },
+    "view_kind": "interior",
+    "withheld": false
+   }
+  ],
+  "Impact Hub Kyoto — 2F 会所 Event Space（西陣産業創造會舘）": [
+   {
+    "alt": "会所／レンタルスペース (operator caption)",
+    "alt_basis": "operator_page_caption",
+    "checked_on": "2026-11-28",
+    "dimensions": {
+     "height": 340,
+     "width": 1024
+    },
+    "hotlink_ok": true,
+    "index": 0,
+    "licence": null,
+    "licence_url": null,
+    "player_page": null,
+    "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+    "rights_basis": "operator_page",
+    "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+    "room": "会所／レンタルスペース",
+    "room_specific": true,
+    "source_page": "https://kyoto.impacthub.net/",
+    "url": "https://b2003181.assetcdn.net/2.0/2003181/wp-content/uploads/2018/06/CwqQJOIUsAA3YAj-e1528953433426-1024x340.jpg?lossy=2&strip=1&webp=1",
+    "verified": {
+     "bytes": 92969,
+     "checked_on": "2026-11-28",
+     "content_type": "image/jpeg",
+     "status": "200"
+    },
+    "view_kind": "interior",
+    "withheld": false
+   }
+  ],
+  "THE TERMINAL KYOTO（京町家レンタルスペース）": [
+   {
+    "alt": "ターミナル京都　展示・イベント (operator caption)",
+    "alt_basis": "operator_page_caption",
+    "checked_on": "2026-11-28",
+    "dimensions": {
+     "height": 280,
+     "width": 740
+    },
+    "hotlink_ok": true,
+    "index": 0,
+    "licence": null,
+    "licence_url": null,
+    "player_page": null,
+    "rights": "Operator-published image; hotlinked from the operator page that offers this room, not copied into the repository and no further licence claimed",
+    "rights_basis": "operator_page",
+    "rights_note": "The operator publishes this photograph on the page that sells the room. It is hotlinked, not redistributed; the page names the operator as the source.",
+    "room": "展示・イベント",
+    "room_specific": true,
+    "source_page": "https://kyoto.theterminal.jp/",
+    "url": "https://kyoto.theterminal.jp/wp-content/themes/terminal_kyoto/images/top/visual_sec_3_02.jpg",
+    "verified": {
+     "bytes": 32316,
+     "checked_on": "2026-11-28",
+     "content_type": "image/jpeg",
+     "status": "200"
+    },
+    "view_kind": "interior",
+    "withheld": false
+   }
+  ],
+  "FabCafe Kyoto — 2F 和室（14畳 レンタルスペース）": [
+   {
+    "alt": "No photograph of this room on a captured operator page",
+    "alt_basis": "none",
+    "checked_on": "2026-11-28",
+    "hotlink_ok": null,
+    "index": 0,
+    "licence": null,
+    "licence_url": null,
+    "placement_proof": "Withheld: the captured meeting-space page renders 30-pixel site-flag images for Tokyo/Fuji/Nagoya/Kyoto/Osaka/Hida/Chiba/Fukushima/Taipei and CSS backgrounds; no photograph of the 2F 和室 was identified on the page on 2026-11-28.",
+    "player_page": null,
+    "rights": null,
+    "rights_basis": "none",
+    "rights_note": "Nothing is shown rather than an exterior, a look-alike or a stock image.",
+    "room": "none",
+    "room_specific": false,
+    "source_page": "https://fabcafe.com/jp/kyoto/service/meeting-space/",
+    "url": null,
+    "verified": null,
+    "view_kind": null,
+    "withheld": true
+   }
+  ]
+ },
+ "sources": [
+  {
+   "check_status": "checked",
+   "checked_on": "2026-11-28",
+   "note": "captures/claim_language_kyoto_yasashii.html — language claim source (京都市 生活ガイドブック（やさしい日本語版）)",
+   "title": "京都市 生活ガイドブック（やさしい日本語版）総合目次",
+   "url": "https://www.city.kyoto.lg.jp/sogo/page/0000250837.html"
+  },
+  {
+   "check_status": "checked",
+   "checked_on": "2026-11-28",
+   "note": "captures/claim_alcohol_nta_limited_retail.html — alcohol claim source (期限付酒類小売業免許)",
+   "title": "国税庁 期限付酒類小売業免許について",
+   "url": "https://www.nta.go.jp/taxes/sake/menkyo/tebiki/kourigyou2016/index.htm"
+  },
+  {
+   "check_status": "checked",
+   "checked_on": "2026-11-28",
+   "note": "captures/claim_alcohol_nta_qa03.html — Q3 own-premises scope, quoted so the value cannot overreach it",
+   "title": "国税庁 お酒に関するQ&A【販売業免許関係】Q3",
+   "url": "https://www.nta.go.jp/taxes/sake/qa/03b/03.htm"
+  },
+  {
+   "check_status": "checked",
+   "checked_on": "2026-11-28",
+   "note": "captures/claim_alcohol_osaka_kokuzeicho_soudan.html — read 2026-11-28; reading evidence only, not cited in the alcohol claim: its 表2 prints tax-office names and 酒類指導官部門 desks with no 管轄区域 table, so no ward or venue assignment is drawn from it",
+   "title": "大阪国税局 酒税とお酒の免許に関するご質問やご相談等について",
+   "url": "https://www.nta.go.jp/about/organization/osaka/sake/info/info.htm"
+  },
+  {
+   "check_status": "checked",
+   "checked_on": "2026-11-28",
+   "note": "captures/claim_food_kyoto_kyoka.html — food claim source (食品衛生法 営業許可, 医療衛生センター)",
+   "title": "京都市 営業許可申請方法",
+   "url": "https://www.city.kyoto.lg.jp/hokenfukushi/page/0000082748.html"
+  },
+  {
+   "check_status": "checked",
+   "checked_on": "2026-11-28",
+   "note": "captures/cao_shukujitsu_2027.html — 令和9年（2027年）の国民の祝日 block, the 17 national rows the Kyoto public layer uses",
+   "title": "国民の祝日について - 内閣府",
+   "url": "https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html"
+  },
+  {
+   "check_status": "checked",
+   "checked_on": "2026-11-28",
+   "note": "captures/school_kyoto_kanri_kisoku.html — 第3条 休業日, the school-lane finding source",
+   "title": "京都市立小学校、中学校、小中学校及び幼稚園の管理運営に関する規則（昭和62年12月25日 教育委規則第5号）",
+   "url": "http://www.edu.city.kyoto.jp/hp/chosa/reiki_honbun/x898RG00000134.html"
+  },
+  {
+   "check_status": "checked",
+   "checked_on": "2026-11-28",
+   "note": "captures/school_kyoto_reiwa8_schedule.html — the Board's annual term/break notice (令和8年度); no 令和9年度 page existed at 2026-11-28",
+   "title": "京都市教育委員会 京都市立幼稚園、小学校、中学校、小中学校の学期及び長期休業期間（令和8年度）",
+   "url": "https://www.city.kyoto.lg.jp/kyoiku/page/0000236396.html"
+  }
+ ],
+ "coverage_findings": [
+  {
+   "kind": "public_holiday_coverage",
+   "jurisdiction_id": "JP:kyoto",
+   "start_date": "2027-01-01",
+   "end_date": "2027-12-31",
+   "finding": "national_holidays_apply",
+   "source_edition": "令和9年（2027年）の国民の祝日・休日（内閣府）",
+   "source_locator": "見出し「〇令和9年（2027年）の国民の祝日・休日」、全17行。The pinned registry carries the same 17 rows under JP and records no JP:kyoto municipal-only holiday.",
+   "source_url": "https://www8.cao.go.jp/chosei/shukujitsu/gaiyou.html",
+   "source_title": "国民の祝日について - 内閣府",
+   "accessed_on": "2026-11-28",
+   "needs_human_verify": false,
+   "verification_questions": [],
+   "note": "Kyoto City keeps the national public holidays; the pinned registry records no municipal-only Kyoto holiday, so the 17 national 2027 rows are the city's public layer and print under Japan. This row exists so the calendar classifies the JP:kyoto scope as a public scope rather than as a school board.",
+   "evidence": {
+    "observed_facts": "The captured Cabinet Office page (captures/cao_shukujitsu_2027.html) prints the 令和9年（2027年） block with 17 rows and states that the 2028 dates will be published in February 2027. The registry's JP rows copy those 17 dates."
+   }
+  },
+  {
+   "kind": "school_lane_finding",
+   "jurisdiction_id": "JP:kyoto",
+   "start_date": "2027-01-01",
+   "end_date": "2028-01-07",
+   "finding": "no_applicable_days",
+   "source_edition": "京都市立小学校、中学校、小中学校及び幼稚園の管理運営に関する規則（昭和62年12月25日 教育委規則第5号） 第3条（休業日）",
+   "source_locator": "第3条（休業日）第1項の表, 学年始休業日・夏季休業日・冬季休業日・学年末休業日 columns for 幼稚園・小学校・中学校・小中学校; 第2項から第5項 (principal-set extra holidays, 授業日 switches, 代日休業日) read for the whole span.",
+   "source_url": "http://www.edu.city.kyoto.jp/hp/chosa/reiki_honbun/x898RG00000134.html",
+   "source_title": "京都市立小学校、中学校、小中学校及び幼稚園の管理運営に関する規則（昭和62年12月25日 教育委規則第5号）",
+   "accessed_on": "2026-11-28",
+   "needs_human_verify": true,
+   "verification_questions": [
+    "Confirm that no principal-set 夏季休業日 or 冬季休業日 and no 第3条第2項 extra holiday, 授業日 switch or 代日休業日 falls inside 2027-01-01..2028-01-07 for the schools that matter to the event."
+   ],
+   "note": "No school-holiday day is asserted for this store. The pinned registry has no JP:kyoto school authority, so no registry row exists. 京都市教育委員会規則第5号 第3条 fixes only the 学年始 break (4月1日-4月7日), the 学年末 breaks (幼稚園・小学校 3月25日-3月31日, 中学校 3月21日-3月31日) and the 幼稚園 summer (7月21日-8月31日) and winter (12月24日-翌年1月6日) intervals; the 小学校 and 中学校 summer and winter dates are printed only as windows with 「校長が定める日」 and 小中学校 is left to the principal. The Board publishes the term and long-break dates one school year at a time (the 令和8年度 notice is dated 2026-04-03) and no 令和9年度 (2027/28) page existed at 2026-11-28, so the annual notice for the event year is unpublished. The Board's 令和8年度 notice already prints 小学校 学年始休業日 令和8年4月1日-4月9日 and 中学校 学年末休業日 令和9年3月20日-3月31日, so its operative dates differ from the rule's printed windows and the annual notice governs. The rule-fixed intervals are recorded in the declared gap and not stored as calendar rows; no Osaka or Tokyo school row was substituted.",
+   "evidence": {
+    "observed_facts": "The rule page prints 第3条第1項 with a four-column table. 幼稚園: 学年始 4月1日-4月7日, 夏季 7月21日-8月31日, 冬季 12月24日-翌年1月6日, 学年末 3月25日-3月31日. 小学校: 学年始 4月1日-4月7日, 夏季 and 冬季 「…までの間で校長が定める日」, 学年末 3月25日-3月31日. 中学校: 学年始 4月1日-4月7日, 夏季 and 冬季 「…までの間で校長が定める日」, 学年末 3月21日-3月31日. 小中学校: every cell 「小学校又は中学校に準じて校長が定める日」. 第3条第2項 lets a principal set further holidays, 第4項 allows a 休業日 to be switched to a 授業日 and 第5項 a 代日休業日, each with Board notification. The Board's 令和8年度 notice (captures/school_kyoto_reiwa8_schedule.html, page 236396, 2026-04-03) shows the annual publication pattern and the 令和8年度 dates, which are a different school year and are not used.",
+    "note": "The page was fetched over http:// because the https:// endpoint on www.edu.city.kyoto.jp fails certificate validation on this host (curl exit 60, incomplete chain); curl -k returned the same 141,949 bytes. The page is the Reiki-Base consolidated text and its 附則 listing was not read beyond the 第3条 block."
+   }
+  }
+ ],
+ "declared_gaps": [
+  {
+   "kind": "school_lane",
+   "text": "School holidays for Kyoto are not in the pinned registry: it lists JP, JP:osaka and JP:tokyo but no JP:kyoto (edition 3b20667d), so no school row is stored and the Kyoto calendar layer carries public holidays only. 京都市教育委員会規則第5号 第3条 does fix some intervals for every year — 学年始休業日 4月1日-4月7日, 学年末休業日 3月25日-3月31日 (幼稚園・小学校) and 3月21日-3月31日 (中学校), 幼稚園 夏季休業日 7月21日-8月31日 and 冬季休業日 12月24日-翌年1月6日 — but the 小学校 and 中学校 summer and winter dates are printed only as windows with 「校長が定める日」, 小中学校 is left entirely to the principal, and the Board's 令和8年度 notice already prints 小学校 学年始休業日 令和8年4月1日-4月9日 (the rule prints 4月1日-4月7日) and 中学校 学年末休業日 令和9年3月20日-3月31日 (the rule prints 3月21日-3月31日), so the operative annual dates can differ from the rule's windows and the annual notice, not the rule window, governs a given year. The Board publishes the term and long-break dates one school year at a time (the 令和8年度 notice is dated 2026-04-03): no 令和9年度 (2027/28) page existed at 2026-11-28. The finding is that Kyoto's school lane has no authority in the pinned registry and no published event-year notice to cite, so those rule-fixed intervals are reported here and are not asserted as calendar dates. No Osaka or Tokyo row was substituted.",
+   "verified_at": "2026-11-28"
+  },
+  {
+   "kind": "cost",
+   "text": "Two of the eighteen rooms carry no USD figure — Impact Hub Kyoto (its live fee page returned HTTP 000 on four attempts; only a 2025-02-17 archive is readable) and THE TERMINAL KYOTO (no hire price published) — so their cost is unknown rather than zero. Four more publish a room rate without AV or catering terms (ハートンホテル京都 嵐山 and 宇治伏見, KRP ルーム2, 京都大学 国際交流ホール I) and each carries a final-quote question. Sixteen USD figures use ECB 2026-11-27 (1 JPY = USD 0.00626795).",
+   "verified_at": "2026-11-28"
+  },
+  {
+   "kind": "evidence",
+   "text": "Each of the eighteen room records rests on a single operator or city page for its capacity, rate, hours and equipment; no second independent source was found for any room, and every record is marked needs_human_verify with its own verification questions.",
+   "verified_at": "2026-11-28"
+  },
+  {
+   "kind": "photos",
+   "text": "Four of the eighteen rooms carry no room photograph and keep a withheld record with the reason: kokoka セミナー室 (the captured facility page only illustrates イベントホール・特別会議室・第1/第2会議室・第3/第4会議室・研究室・和風別館・交流サロン), the two ハートピア京都 rooms (the fee page carries only banners and the convention index returned HTTP 403), and FabCafe Kyoto 2F 和室 (the captured meeting-space page renders site flags and CSS backgrounds, with no room photograph identified). The other fourteen rooms carry 22 hotlinked operator photographs with rights recorded. No Wikimedia image was used: no Commons file on a captured page depicts one of these hired rooms.",
+   "verified_at": "2026-11-28"
+  },
+  {
+   "kind": "access",
+   "text": "Fourteen rooms publish a hire interval that covers the paired 09:00-21:00 Saturday programme (kokoka ×4 to 21:00, ハートピア ×2 in three blocks to 21:00, みやこめっせ 09:00-22:00 building access with a night block to 21:00, アスニー ×2 to 21:00 except Sundays and public holidays, エルシエント to 21:00, ハートンホテル ×2 09:00-22:00, KRP day+night blocks to 21:00, 京都大学 to 21:30). One room, 京都府立京都学・歴彩館, publishes 09:00-21:00 on weekdays but closes at 17:00 on Saturdays and Sundays and is closed on public holidays, so only the 8-hour floor is evidenced there. Three rooms publish no hire window at all (Impact Hub Kyoto, THE TERMINAL KYOTO 09:00-18:00 daily hours only, FabCafe Kyoto refers to the shop calendar), so their twelve-hour fit is unknown.",
+   "verified_at": "2026-11-28"
+  },
+  {
+   "kind": "licence",
+   "text": "The three local-requirement claims record the national and Kyoto rules for language, alcohol and food. They do not say which licence a given venue holds, whether a 50-person private event is covered, or who would hold it: alcohol service and external catering stay unknown on every room, and one room (京都アスニー 第2・第3研修室) is recorded as prohibiting alcohol by its own published rule.",
+   "verified_at": "2026-11-28"
+  },
+  {
+   "kind": "events",
+   "text": "Twelve 2027 calendar rows were merged from the approved bundle; the page recommends no date and none is booked. IVS 2027 is not in the array because the organiser site still presents IVS2026 and no 2027 edition page exists. Related-event coverage is thin: two of the twelve rows are AI-relevant (AI博覧会 Osaka 2027 and Japan IT Week 関西 2027, both outside Kyoto) and the other ten are logistics-only city events.",
+   "verified_at": "2026-11-28"
+  },
+  {
+   "kind": "sources",
+   "text": "The five programme-wide mandatory discovery sources (Miragather ×3, AI Tinkerers, the DeAI Luma feed) carry no check date in this store: the Kyoto research bundle recorded no pass against them, and the page prints that fact rather than an assumed read.",
+   "verified_at": "2026-11-28"
+  },
+  {
+   "kind": "coordinates",
+   "text": "All eighteen records are building tier: the point is the building that houses the room, taken from the saved GSI address-search response for the block address, and no room entrance was verified. Twelve distinct points carry eighteen records because kokoka (×4), ハートピア (×2), アスニー (×2) and ハートンホテル (×2) each place several rooms in one building.",
+   "verified_at": "2026-11-28"
+  }
+ ],
+ "notes": [
+  "Built from the approved research bundle research/kyoto/2027 (18 venues: 13 shortlist_ready, 5 lead; 13 communities; 12 calendar rows).",
+  "Registry: installed Asia edition 3b20667de940342954040f06d6695d490d8e27515d536969d127a0fa92bacdaf; Kyoto has no JP:kyoto scope in it, so one hashed supplement declares that scope (no holiday rows) and a reviewed coverage finding records the school-lane absence; no Osaka or Tokyo row is used.",
+  "Paired brief: 50 people, 09:00 start, 8-hour floor (09:00-17:00), 12-hour preferred (09:00-21:00), soft USD 5,000, calendar year 2027, no recommended date.",
+  "Photos: operator gallery first; 22 hotlinked operator photographs across 14 rooms and 4 explicit withheld records; no Wikimedia image was used."
+ ]
+}

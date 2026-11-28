@@ -1,0 +1,196 @@
+{
+  "city_slug": "kyoto-jp",
+  "counts": {
+    "communities": 13,
+    "coverage_rows": 73,
+    "declared_gaps": 9,
+    "event_shells": 2,
+    "events": 12,
+    "holiday_rows": 375,
+    "photos": 26,
+    "sources": 49,
+    "venues": 18
+  },
+  "inputs": [
+    {
+      "name": "calendar_conflicts.json",
+      "path": "research/kyoto/2027/calendar_conflicts.json",
+      "sha256": "1ee12fcb03d42218e298f03f7bf8476fe8c0e8f41db9ed95328f2a36f1e5e33a"
+    },
+    {
+      "name": "city_input.json",
+      "path": "research/kyoto/2027/city_input.json",
+      "sha256": "072bfd347252aa99f1d128bed6587697b17313cc0768915da87b4545bd52bba1"
+    },
+    {
+      "name": "communities.raw.json",
+      "path": "research/kyoto/2027/communities.raw.json",
+      "sha256": "f1e4ff5db8ac7617b041acb0caa0797af897ca31f06dd660b448095a8a63603a"
+    },
+    {
+      "name": "venues.raw.json",
+      "path": "research/kyoto/2027/venues.raw.json",
+      "sha256": "813a8006fc3f8b6b1d4e8b78f7de0115e42a101847dfaf9bcca40d3c02b278d1"
+    },
+    {
+      "name": "venues.shortlist.json",
+      "path": "research/kyoto/2027/venues.shortlist.json",
+      "sha256": "e0da38ac5fe08386825b370ca9c2f3432f613bb932a31e9a7e10767d3af51a7c"
+    }
+  ],
+  "mandatory_sources": [
+    {
+      "check_status": "not_checked",
+      "checked_on": null,
+      "url": "https://miragather.com/"
+    },
+    {
+      "check_status": "not_checked",
+      "checked_on": null,
+      "url": "https://miragather.com/?tab=side"
+    },
+    {
+      "check_status": "not_checked",
+      "checked_on": null,
+      "url": "https://miragather.com/ai"
+    },
+    {
+      "check_status": "not_checked",
+      "checked_on": null,
+      "url": "https://aitinkerers.org/all_cities"
+    },
+    {
+      "check_status": "not_checked",
+      "checked_on": null,
+      "url": "https://luma.com/decentralized_ai_events?period=past"
+    }
+  ],
+  "notes": [
+    "Built from the approved research bundle research/kyoto/2027 (18 venues: 13 shortlist_ready, 5 lead; 13 communities; 12 calendar rows).",
+    "Registry: installed Asia edition 3b20667de940342954040f06d6695d490d8e27515d536969d127a0fa92bacdaf; Kyoto has no JP:kyoto scope in it, so one hashed supplement declares that scope (no holiday rows) and a reviewed coverage finding records the school-lane absence; no Osaka or Tokyo row is used.",
+    "Paired brief: 50 people, 09:00 start, 8-hour floor (09:00-17:00), 12-hour preferred (09:00-21:00), soft USD 5,000, calendar year 2027, no recommended date.",
+    "Photos: operator gallery first; 22 hotlinked operator photographs across 14 rooms and 4 explicit withheld records; no Wikimedia image was used."
+  ],
+  "photos": {
+    "dispositions": [
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "kyoto-c032b49a270d"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "kyoto-8863ff76fdb3"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "kyoto-ade3d7965617"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "kyoto-9394078db409"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "kyoto-95b11f34a279"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "kyoto-5f98b8a9743f"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "kyoto-c0e100fdc7f4"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "kyoto-3d5f1b442a50"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "kyoto-5d294601ece6"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "kyoto-407148db283e"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "kyoto-034ae1b4a11c"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 3,
+        "venue_id": "kyoto-f43915407528"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 3,
+        "venue_id": "kyoto-7e12284c0d1e"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "kyoto-a223ffd85871"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 5,
+        "venue_id": "kyoto-3c9f7ab43c52"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "kyoto-f12f19fad87c"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "kyoto-a736735df25a"
+      },
+      {
+        "disposition": "reviewed_photos",
+        "records": 1,
+        "venue_id": "kyoto-49df526eb46e"
+      }
+    ],
+    "note": "Only the reviewed photo records are carried.",
+    "records": 26
+  },
+  "registry": {
+    "edition_copy": "references/editions/school_holidays-3b20667d.json",
+    "host_jurisdiction_id": "JP:kyoto",
+    "path": "/home/joe/.hermes/skills/plan-event/references/school_holidays.json",
+    "sha256": "3b20667de940342954040f06d6695d490d8e27515d536969d127a0fa92bacdaf",
+    "supplement": true
+  },
+  "reviewed_inputs": {
+    "local_requirements_supplied": true,
+    "path": "/home/joe/repo_dev/coe-events/research/kyoto/2027/reviewed-inputs.json",
+    "sha256": "cdb125b2f51892111c8759fb9f8a5009321e5bff8d75a5bdc4b9db6a19bdba5f"
+  },
+  "run_id": "run-kyoto-2027-bootstrap-2",
+  "schema_version": "city-conversion-report/1",
+  "shared_url_event_shells": [
+    "kyoto-ev-70688ef4a218",
+    "kyoto-ev-d705931b39c3"
+  ],
+  "updated_at": "2026-11-28T11:10:19Z",
+  "warnings": [
+    "mandatory source https://miragather.com/ has no reviewed outcome",
+    "mandatory source https://miragather.com/?tab=side has no reviewed outcome",
+    "mandatory source https://miragather.com/ai has no reviewed outcome",
+    "mandatory source https://aitinkerers.org/all_cities has no reviewed outcome",
+    "mandatory source https://luma.com/decentralized_ai_events?period=past has no reviewed outcome"
+  ]
+}
